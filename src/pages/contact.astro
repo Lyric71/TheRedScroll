@@ -177,10 +177,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       });
 
       if (res.ok) {
-        status.textContent = 'Message sent. We\'ll get back to you within one business day.';
-        status.className = 'text-[13px] font-normal leading-[1.5] mt-[8px] text-[#14532D]';
-        form.reset();
-        generateCaptcha();
+        window.location.href = '/thank-you';
+        return;
       } else {
         const err = await res.json();
         status.textContent = err.error || 'Something went wrong. Try again.';

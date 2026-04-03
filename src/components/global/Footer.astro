@@ -26,6 +26,12 @@ const footerLinks = {
     { label: 'Contact', href: '/contact' },
     { label: 'Book a call', href: '/contact' },
   ],
+  group: [
+    { label: 'BeyondBorderGroup', href: 'https://beyondbordergroup.com' },
+    { label: 'HubStudio.ai', href: 'https://hubstudio.ai' },
+    { label: 'Nuvora Studio', href: 'https://nuvora.studio' },
+    { label: 'ChinaWebFoundry', href: 'https://chinawebfoundry.com' },
+  ],
 };
 ---
 
@@ -51,7 +57,7 @@ const footerLinks = {
 <!-- Footer -->
 <footer class="w-full bg-[#1A1A1A] pt-[108px] max-[640px]:pt-[84px] pb-[24px]">
   <div class="max-w-[1200px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px]">
-    <div class="grid grid-cols-[2fr_1fr_1fr_1fr] gap-[32px] max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 max-[640px]:gap-[32px]">
+    <div class="grid grid-cols-[2fr_1fr_1fr_1fr_1fr] gap-[32px] max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 max-[640px]:gap-[32px]">
       <!-- Brand column -->
       <div>
         <a href="/" class="inline-block">
@@ -100,6 +106,16 @@ const footerLinks = {
           </a>
         ))}
       </div>
+
+      <!-- Group column -->
+      <div>
+        <p class="text-[11px] font-medium tracking-[0.05em] uppercase text-[#CC3333] mb-[12px]">Group</p>
+        {footerLinks.group.map((link) => (
+          <a href={link.href} target="_blank" rel="noopener noreferrer" class="block text-[#FFFFFF] text-[14px] font-normal leading-[2] transition-colors duration-150 hover:text-[rgba(255,255,255,0.6)]">
+            {link.label}
+          </a>
+        ))}
+      </div>
     </div>
 
     <!-- Divider + bottom row -->
@@ -111,6 +127,9 @@ const footerLinks = {
         </a>
         <a href="/terms-of-service" class="text-[12px] text-[rgba(255,255,255,0.4)] transition-colors duration-150 hover:text-[#FFFFFF]">
           Terms &amp; conditions
+        </a>
+        <a href="/cookie-policy" class="text-[12px] text-[rgba(255,255,255,0.4)] transition-colors duration-150 hover:text-[#FFFFFF]">
+          Cookie policy
         </a>
       </div>
     </div>
