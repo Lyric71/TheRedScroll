@@ -33,37 +33,30 @@ const pillars = [
     descColor: '#5C5C5C',
   },
 ];
-
-const platformsList = 'WeChat 微信, Douyin 抖音, RedNote 小红书, Weibo 微博, Bilibili B站, Kuaishou 快手, Zhihu 知乎, Toutiao 今日头条, and more.';
-const industries = 'Beauty, luxury, hospitality, F&B, B2B, health.';
 ---
 
 <section class="mt-[96px] max-[640px]:mt-[64px]">
   <Container>
-    <!-- Top row: heading left, description + CTA right -->
-    <div class="flex items-start justify-between gap-[48px] max-[640px]:flex-col max-[640px]:gap-[16px] mb-[40px] max-[640px]:mb-[32px]">
-      <div class="max-w-[480px] shrink-0">
-        <SectionBar />
-        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A]">
-          Chinese social media is not a channel. It's an ecosystem.
-        </h2>
-      </div>
-      <div class="flex items-start gap-[32px] max-[640px]:flex-col max-[640px]:gap-[16px]">
-        <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] max-w-[400px]">
-          Audience, content, influencers, platforms, and commerce are all connected. You can't win on one without the others.
-        </p>
-        <Button variant="primary" href="/contact" class="shrink-0">Book a call</Button>
-      </div>
-    </div>
-
-    <!-- Bento grid: image left, 4 cards right in 2x2 -->
+    <!-- Bento grid: heading card + image left, 4 pillar cards right -->
     <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[16px]">
-      <!-- Left: tall image + commerce card stacked -->
+      <!-- Left column -->
       <div class="flex flex-col gap-[16px]">
-        <div class="rounded-[10px] bg-[#F7F2EE] aspect-[4/3] flex items-center justify-center overflow-hidden">
-          <span class="text-[#5C5C5C] text-[13px] font-normal">Ecosystem visual</span>
+        <!-- Heading card -->
+        <div class="bg-[#F7F2EE] rounded-[10px] p-[32px] max-[640px]:p-[24px] flex flex-col justify-between">
+          <div>
+            <SectionBar />
+            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[12px]">
+              Chinese social media is not a channel. It's an ecosystem.
+            </h2>
+            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
+              Audience, content, influencers, platforms, and commerce are all connected. You can't win on one without the others.
+            </p>
+          </div>
+          <div class="mt-[24px]">
+            <Button variant="primary" href="/contact">Book a call</Button>
+          </div>
         </div>
-        <!-- Commerce card below image -->
+        <!-- Commerce card -->
         <div class="bg-[#1A1A1A] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
           <h3 class="text-[18px] text-[#FFFFFF] font-medium leading-[1.3] mb-[8px]">
             Commerce.
@@ -74,10 +67,10 @@ const industries = 'Beauty, luxury, hospitality, F&B, B2B, health.';
         </div>
       </div>
 
-      <!-- Right: 2x2 grid of pillar cards -->
+      <!-- Right column: 2x2 pillar cards -->
       <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
         {pillars.map((pillar) => (
-          <div class="rounded-[10px] p-[24px] max-[640px]:p-[20px]" style={`background: ${pillar.bg}; border-radius: ${pillar.bg === '#1A1A1A' || pillar.bg === '#CC3333' ? '12px' : '10px'}`}>
+          <div class="p-[24px] max-[640px]:p-[20px]" style={`background: ${pillar.bg}; border-radius: ${pillar.bg === '#1A1A1A' || pillar.bg === '#CC3333' ? '12px' : '10px'}`}>
             <h3 class="text-[18px] font-medium leading-[1.3] mb-[8px]" style={`color: ${pillar.textColor}`}>
               {pillar.title}
             </h3>
@@ -86,28 +79,6 @@ const industries = 'Beauty, luxury, hospitality, F&B, B2B, health.';
             </p>
           </div>
         ))}
-      </div>
-    </div>
-
-    <!-- Stats bar -->
-    <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px] mt-[16px]">
-      <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-        <div class="flex items-baseline gap-[12px] mb-[8px]">
-          <span class="text-[28px] text-[#1A1A1A] font-medium leading-[1.2]">18</span>
-          <span class="text-[14px] text-[#5C5C5C] font-normal">platforms we actively post on</span>
-        </div>
-        <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
-          {platformsList}
-        </p>
-      </div>
-      <div class="bg-[#CC3333] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
-        <div class="flex items-baseline gap-[12px] mb-[8px]">
-          <span class="text-[28px] text-[#FFFFFF] font-medium leading-[1.2]">6</span>
-          <span class="text-[14px] text-[rgba(255,255,255,0.8)] font-normal">industries served</span>
-        </div>
-        <p class="text-[13px] text-[rgba(255,255,255,0.8)] font-normal leading-[1.5]">
-          {industries}
-        </p>
       </div>
     </div>
   </Container>
