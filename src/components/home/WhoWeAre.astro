@@ -4,9 +4,9 @@ import SectionBar from '../ui/SectionBar.astro';
 import SectionHeading from '../ui/SectionHeading.astro';
 
 const stats = [
+  { value: '20+', label: 'Years of experience' },
   { value: '18+', label: 'Platforms covered' },
-  { value: '37', label: 'Agencies analyzed' },
-  { value: '0', label: 'Offer fixed pricing' },
+  { value: 'Our own', label: 'Studio' },
 ];
 ---
 
@@ -16,16 +16,16 @@ const stats = [
       <!-- Image collage column -->
       <div class="grid grid-cols-2 grid-rows-2 gap-[12px]">
         <!-- Large image top-left spanning 1 col, 2 rows -->
-        <div class="row-span-2 rounded-[8px] bg-[#F7F2EE] aspect-[3/4] flex items-center justify-center overflow-hidden">
-          <span class="text-[#5C5C5C] text-[12px] font-normal">Team photo</span>
+        <div class="row-span-2 rounded-[8px] bg-[#F0F1F4] aspect-[3/4] overflow-hidden">
+          <img src="/images/team/china-office.png" alt="TheRedScroll China office" class="w-full h-full object-cover" />
         </div>
         <!-- Top-right image -->
-        <div class="rounded-[8px] bg-[#F7F2EE] aspect-[4/3] flex items-center justify-center overflow-hidden">
-          <span class="text-[#5C5C5C] text-[12px] font-normal">Shanghai office</span>
+        <div class="rounded-[8px] bg-[#F0F1F4] aspect-[4/3] overflow-hidden">
+          <img src="/images/team/hongkong-office.png" alt="TheRedScroll Hong Kong office" class="w-full h-full object-cover" />
         </div>
         <!-- Bottom-right image -->
-        <div class="rounded-[8px] bg-[#F7F2EE] aspect-[4/3] flex items-center justify-center overflow-hidden">
-          <span class="text-[#5C5C5C] text-[12px] font-normal">Hong Kong office</span>
+        <div class="rounded-[8px] bg-[#F0F1F4] aspect-[4/3] overflow-hidden">
+          <img src="/images/team/team-photo.png" alt="TheRedScroll team" class="w-full h-full object-cover" />
         </div>
       </div>
 

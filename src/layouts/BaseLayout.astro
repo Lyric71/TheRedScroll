@@ -9,6 +9,7 @@ interface Props {
   description: string;
   canonical?: string;
   ogImage?: string;
+  hideFooterCta?: boolean;
 }
 
 const {
@@ -16,6 +17,7 @@ const {
   description,
   canonical = Astro.url.href,
   ogImage = '/images/og-default.jpg',
+  hideFooterCta = false,
 } = Astro.props;
 
 const siteName = 'TheRedScroll';
@@ -42,6 +44,6 @@ const siteName = 'TheRedScroll';
   <body class="font-sans antialiased text-[var(--color-ink)] bg-[var(--color-white)]">
     <Header />
     <slot />
-    <Footer />
+    <Footer hideCta={hideFooterCta} />
   </body>
 </html>

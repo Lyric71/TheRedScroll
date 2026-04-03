@@ -1,0 +1,86 @@
+---
+import Container from '../ui/Container.astro';
+import SectionBar from '../ui/SectionBar.astro';
+import Button from '../ui/Button.astro';
+
+const projects = [
+  {
+    title: 'European luxury brand launch on WeChat and RedNote',
+    industry: 'Luxury',
+    platform: 'WeChat + RedNote',
+    image: '/images/hero/why-theredscroll-bg.png',
+  },
+  {
+    title: 'Douyin campaign for French beauty brand',
+    industry: 'Beauty',
+    platform: 'Douyin',
+    image: '/images/hero/getting-started-bg.png',
+  },
+  {
+    title: 'B2B lead generation on Zhihu and WeChat',
+    industry: 'B2B',
+    platform: 'Zhihu + WeChat',
+    image: '/images/hero/hero-phones-shanghai.png',
+  },
+  {
+    title: 'F&B brand social commerce on RedNote',
+    industry: 'F&B',
+    platform: 'RedNote',
+    image: '/images/hero/why-theredscroll-bg.png',
+  },
+];
+---
+
+<section class="mt-[96px] max-[640px]:mt-[64px]">
+  <Container>
+    <!-- Header row -->
+    <div class="flex items-start justify-between gap-[48px] max-[640px]:flex-col max-[640px]:gap-[16px] mb-[40px] max-[640px]:mb-[32px]">
+      <div class="max-w-[480px] shrink-0">
+        <SectionBar />
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">Featured projects</p>
+        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A]">
+          Campaigns that grow brands across China's platforms.
+        </h2>
+      </div>
+      <div class="flex items-start gap-[32px] max-[640px]:flex-col max-[640px]:gap-[16px]">
+        <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] max-w-[360px]">
+          From luxury launches to B2B lead generation. Real campaigns, real platforms, real results.
+        </p>
+        <Button variant="primary" href="/contact" class="shrink-0">See all projects</Button>
+      </div>
+    </div>
+
+    <!-- Projects grid: 4 columns -->
+    <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+      {projects.map((project) => (
+        <div class="group">
+          <!-- Image with tag overlay -->
+          <div class="relative w-full aspect-[3/4] rounded-[10px] overflow-hidden bg-[#E8E0D8]">
+            <img
+              src={project.image}
+              alt={project.title}
+              class="absolute inset-0 w-full h-full object-cover"
+              loading="lazy"
+            />
+            <!-- Industry + Platform tags -->
+            <div class="absolute top-[12px] left-[12px] flex gap-[6px]">
+              <span class="bg-[#FFFFFF] text-[#1A1A1A] text-[11px] font-medium px-[10px] py-[5px] rounded-full leading-none">
+                {project.industry}
+              </span>
+              <span class="bg-[#FFFFFF] text-[#1A1A1A] text-[11px] font-medium px-[10px] py-[5px] rounded-full leading-none">
+                {project.platform}
+              </span>
+            </div>
+          </div>
+          <!-- Title + arrow below -->
+          <div class="flex items-center justify-between gap-[12px] mt-[12px]">
+            <p class="text-[14px] text-[#1A1A1A] font-medium leading-[1.3]">
+              {project.title}
+            </p>
+            <span class="text-[#1A1A1A] text-[16px] shrink-0">&rarr;</span>
+          </div>
+        </div>
+      ))}
+    </div>
+  </Container>
+</section>

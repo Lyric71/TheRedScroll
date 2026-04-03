@@ -8,7 +8,7 @@ const services = [
     description: 'Market research. Content calendars. Always-on campaigns plus event pushes for launches, festivals, shopping holidays. Monthly reporting with numbers you can act on.',
     href: '/services/strategy-campaigns',
     cta: 'See our strategy services',
-    bg: '#F7F2EE',
+    bg: '#F0F1F4',
     iconBg: '#E8E0D8',
     textColor: '#1A1A1A',
     descColor: '#5C5C5C',
@@ -56,7 +56,7 @@ const services = [
     description: 'KOL and KOC campaigns from sourcing to final report. Live commerce on Douyin and Taobao Live. We verify every engagement number.',
     href: '/services/influencer-marketing',
     cta: 'See KOL and KOC services',
-    bg: '#F7F2EE',
+    bg: '#F0F1F4',
     iconBg: '#E8E0D8',
     textColor: '#1A1A1A',
     descColor: '#5C5C5C',
@@ -128,7 +128,7 @@ const services = [
 
       <!-- First 2 service cards (next to hero) -->
       {services.slice(0, 2).map((service) => (
-        <div class="border-none rounded-[10px] p-[24px] max-[640px]:p-[20px] flex flex-col justify-between" style={`background: ${service.bg}; border-radius: ${service.bg === '#1A1A1A' || service.bg === '#CC3333' ? '12px' : '10px'}`}>
+        <div class="border-none rounded-[10px] p-[24px] max-[640px]:p-[20px] flex flex-col justify-between service-card" data-tilt style={`background: ${service.bg}; border-radius: ${service.bg === '#1A1A1A' || service.bg === '#CC3333' ? '12px' : '10px'}`}>
           <div>
             <div class="w-[40px] h-[40px] rounded-[6px] flex items-center justify-center mb-[16px]" style={`background: ${service.iconBg}`}>
               <Fragment set:html={service.icon} />
@@ -148,7 +148,7 @@ const services = [
 
       <!-- Next row: 4 cards -->
       {services.slice(2, 6).map((service) => (
-        <div class="border-none p-[24px] max-[640px]:p-[20px] flex flex-col justify-between" style={`background: ${service.bg}; border-radius: ${service.bg === '#1A1A1A' || service.bg === '#CC3333' ? '12px' : '10px'}`}>
+        <div class="border-none p-[24px] max-[640px]:p-[20px] flex flex-col justify-between service-card" data-tilt style={`background: ${service.bg}; border-radius: ${service.bg === '#1A1A1A' || service.bg === '#CC3333' ? '12px' : '10px'}`}>
           <div>
             <div class="w-[40px] h-[40px] rounded-[6px] flex items-center justify-center mb-[16px]" style={`background: ${service.iconBg}`}>
               <Fragment set:html={service.icon} />
@@ -168,7 +168,7 @@ const services = [
 
       <!-- Last 2 service cards + CTA -->
       {services.slice(6).map((service) => (
-        <div class="border-none p-[24px] max-[640px]:p-[20px] flex flex-col justify-between" style={`background: ${service.bg}; border-radius: ${service.bg === '#1A1A1A' || service.bg === '#CC3333' ? '12px' : '10px'}`}>
+        <div class="border-none p-[24px] max-[640px]:p-[20px] flex flex-col justify-between service-card" data-tilt style={`background: ${service.bg}; border-radius: ${service.bg === '#1A1A1A' || service.bg === '#CC3333' ? '12px' : '10px'}`}>
           <div>
             <div class="w-[40px] h-[40px] rounded-[6px] flex items-center justify-center mb-[16px]" style={`background: ${service.iconBg}`}>
               <Fragment set:html={service.icon} />
@@ -201,3 +201,63 @@ const services = [
     </div>
   </Container>
 </section>
+
+<style>
+  .service-card {
+    transition: transform 0.15s ease;
+    transform-style: preserve-3d;
+    will-change: transform;
+  }
+  /* Scroll reveal initial state */
+  .service-card {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  .service-card.revealed {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+</style>
+
+<script>
+  // Tilt on hover
+  document.querySelectorAll('[data-tilt]').forEach((card) => {
+    const el = card as HTMLElement;
+
+    el.addEventListener('mousemove', (e: MouseEvent) => {
+      const rect = el.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+      const rotateX = ((y - centerY) / centerY) * -3;
+      const rotateY = ((x - centerX) / centerX) * 3;
+      el.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+    });
+
+    el.addEventListener('mouseleave', () => {
+      el.style.transform = 'perspective(800px) rotateX(0deg) rotateY(0deg) scale(1)';
+    });
+  });
+
+  // Scroll reveal with stagger
+  const cards = document.querySelectorAll('.service-card');
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const card = entry.target as HTMLElement;
+          const index = Array.from(cards).indexOf(card);
+          setTimeout(() => {
+            card.classList.add('revealed');
+          }, index * 80);
+          observer.unobserve(card);
+        }
+      });
+    },
+    { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+  );
+
+  cards.forEach((card) => observer.observe(card));
+</script>

@@ -8,14 +8,24 @@ const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 export const POST: APIRoute = async ({ request }) => {
   const resend = new Resend(import.meta.env.RESEND_API_KEY);
 
-  let body: { name?: string; email?: string; company?: string; message?: string };
+  let body: { name?: string; email?: string; company?: string; message?: string; honeypot?: string; captcha?: string; captchaAnswer?: string };
   try {
     body = await request.json();
   } catch {
     return new Response(JSON.stringify({ error: 'Invalid request body.' }), { status: 400 });
   }
 
-  const { name, email, company, message } = body;
+  const { name, email, company, message, honeypot, captcha, captchaAnswer } = body;
+
+  // Honeypot check — bots fill this hidden field
+  if (honeypot) {
+    return new Response(JSON.stringify({ success: true }), { status: 200 });
+  }
+
+  // Captcha check
+  if (!captcha || !captchaAnswer || captcha.trim() !== captchaAnswer.trim()) {
+    return new Response(JSON.stringify({ error: 'Incorrect captcha answer.' }), { status: 400 });
+  }
 
   if (!name || !email || !message) {
     return new Response(JSON.stringify({ error: 'Name, email, and message are required.' }), { status: 400 });
@@ -57,7 +67,7 @@ export const POST: APIRoute = async ({ request }) => {
 
   const { error } = await resend.emails.send({
     from: 'TheRedScroll <onboarding@resend.dev>',
-    to: 'cyril@theredscroll.com',
+    to: 'cyril.drouin@outlook.com',
     replyTo: email,
     subject: `New enquiry from ${name}${company ? ` - ${company}` : ''}`,
     html,
