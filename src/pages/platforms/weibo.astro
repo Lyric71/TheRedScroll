@@ -6,238 +6,236 @@ import SectionHeading from '../../components/ui/SectionHeading.astro';
 import Button from '../../components/ui/Button.astro';
 
 const stats = [
-  { label: 'Monthly active users', value: '350M+', image: '/images/platforms/rednote-stats/monthly-active-users.png' },
-  { label: 'Daily post views', value: '9.12B', image: '/images/platforms/rednote-stats/daily-post-views.png' },
-  { label: 'Monthly search queries', value: '1B+', image: '/images/platforms/rednote-stats/monthly-search-queries.png' },
-  { label: 'Users aged 18 to 35', value: '70%', image: '/images/platforms/rednote-stats/users-aged-18-35.png' },
-  { label: 'Content that is user-generated', value: '90%', image: '/images/platforms/rednote-stats/user-generated-content.png' },
-  { label: 'Conversion rate for global brands', value: '21.4%', image: '/images/platforms/rednote-stats/conversion-rate.png' },
-  { label: 'Avg. daily time per user', value: '55 min', image: '/images/platforms/rednote-stats/daily-time-per-user.png' },
-  { label: 'Users seeking purchase advice monthly', value: '200M+', image: '/images/platforms/rednote-stats/purchase-advice-users.png' },
+  { label: 'Monthly active users', value: '567M', image: '/images/platforms/weibo-stats/monthly-active-users.png' },
+  { label: 'Daily active users', value: '252M', image: '/images/platforms/weibo-stats/daily-active-users.png' },
+  { label: 'Mobile usage', value: '95%', image: '/images/platforms/weibo-stats/mobile-usage.png' },
+  { label: 'Ad revenue (FY2025)', value: '$1.5B', image: '/images/platforms/weibo-stats/ad-revenue.png' },
+  { label: 'Biggest age group (25–34)', value: '42%', image: '/images/platforms/weibo-stats/age-group.png' },
+  { label: 'Daily posts', value: '100M+', image: '/images/platforms/weibo-stats/daily-posts.png' },
+  { label: 'Gender split (women)', value: '51%', image: '/images/platforms/weibo-stats/gender-split.png' },
 ];
 
-const whyEssential = [
+const ecosystem = [
   {
-    title: 'It\'s China\'s purchase decision engine',
-    description: '60%+ of users start with the search bar, looking for reviews and recommendations. RedNote is the first stop before buying.',
-    image: '/images/platforms/rednote-why/purchase-decision.png',
-  },
-  {
-    title: 'Trust drives distribution',
-    description: 'The algorithm rewards authentic content and buries ads. Saves and comments matter more than likes.',
-    image: '/images/platforms/rednote-why/trust-distribution.png',
-  },
-  {
-    title: 'The audience has spending power',
-    description: 'Young, urban, affluent. Tier-1 and tier-2 cities. Willing to spend on quality.',
-    image: '/images/platforms/rednote-why/spending-power.png',
-  },
-  {
-    title: 'Social commerce is built in',
-    description: 'Find, review, demo, buy. All without leaving the app.',
-    image: '/images/platforms/rednote-why/social-commerce.png',
-  },
-];
-
-const algorithm = [
-  {
-    title: 'Staged distribution',
-    description: 'New posts reach 100 to 500 test users first. Strong engagement in the first 24 hours pushes it to thousands, then hundreds of thousands.',
-    image: '/images/platforms/rednote-algorithm/staged-distribution.png',
+    name: 'Mass awareness and PR',
+    chineseName: '品牌曝光',
+    description: 'Nothing in China generates national attention faster than a Weibo trend. Product launches, press amplification, event campaigns, crisis response.',
+    image: '/images/platforms/weibo-ecosystem/mass-awareness.png',
     bg: '#F7F2EE',
     iconBg: '#E8E0D8',
     textColor: '#1A1A1A',
     descColor: '#5C5C5C',
+    linkColor: '#CC3333',
     icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>`,
   },
   {
-    title: 'CES scoring',
-    description: 'Follows (8 pts), comments and shares (4 pts each), likes and saves (1 pt each). Deep engagement moves you up. Likes alone don\'t.',
-    image: '/images/platforms/rednote-algorithm/ces-scoring.png',
+    name: 'Trending topic campaigns',
+    chineseName: '热搜营销',
+    description: 'Ride organic trends with fast content, or run paid hashtag promotions to place your brand inside the national conversation at the right moment.',
+    image: '/images/platforms/weibo-ecosystem/trending-topics.png',
     bg: '#1A1A1A',
     iconBg: 'rgba(255,255,255,0.1)',
     textColor: '#FFFFFF',
     descColor: 'rgba(255,255,255,0.6)',
-    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 6-8"/></svg>`,
+    linkColor: '#CC3333',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>`,
   },
   {
-    title: 'Authenticity enforced',
-    description: 'Hard-sell content, fake reviews, and bot behavior get suppressed. Consistent quality posting earns higher visibility over time.',
-    image: '/images/platforms/rednote-algorithm/authenticity-enforced.png',
+    name: 'KOL and celebrity partnerships',
+    chineseName: 'KOL合作',
+    description: 'Top Weibo KOLs have tens of millions of followers. One post from the right influencer shifts awareness, credibility, and sales all at once.',
+    image: '/images/platforms/weibo-ecosystem/kol-partnerships.png',
     bg: '#CC3333',
     iconBg: 'rgba(255,255,255,0.2)',
     textColor: '#FFFFFF',
     descColor: 'rgba(255,255,255,0.8)',
-    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>`,
+    linkColor: '#FFFFFF',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
   },
   {
-    title: 'Dual engine',
-    description: 'Every note competes for Explore feed traffic (recommendations) and Search traffic (intent). Optimize for both.',
-    image: '/images/platforms/rednote-algorithm/dual-engine.png',
+    name: 'Community building',
+    chineseName: '超级话题',
+    description: 'Weibo Super Topics create branded hubs where followers post their own content, discuss products, and engage with the brand directly.',
+    image: '/images/platforms/weibo-ecosystem/community.png',
     bg: '#E8E0D8',
     iconBg: '#FFFFFF',
     textColor: '#1A1A1A',
     descColor: '#5C5C5C',
-    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>`,
+    linkColor: '#CC3333',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>`,
+  },
+  {
+    name: 'Social commerce',
+    chineseName: '社交电商',
+    description: 'Shoppable posts link to Tmall and Taobao. Live streams sync with Taobao Live for real-time selling. The distance between a Weibo post and a purchase is very short.',
+    image: '/images/platforms/weibo-ecosystem/social-commerce.png',
+    bg: '#1A1A1A',
+    iconBg: 'rgba(255,255,255,0.1)',
+    textColor: '#FFFFFF',
+    descColor: 'rgba(255,255,255,0.6)',
+    linkColor: '#CC3333',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>`,
+  },
+  {
+    name: 'Reputation management',
+    chineseName: '舆情管理',
+    description: 'People share opinions on Weibo publicly. Monitoring brand mentions, tracking competitors, and catching sentiment shifts early is not optional.',
+    image: '/images/platforms/weibo-ecosystem/reputation.png',
+    bg: '#B02D2D',
+    iconBg: 'rgba(255,255,255,0.2)',
+    textColor: '#FFFFFF',
+    descColor: 'rgba(255,255,255,0.8)',
+    linkColor: '#FFFFFF',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>`,
   },
 ];
 
 const services = [
   {
     title: 'Account setup and verification',
-    description: 'Professional Account (Blue V) registration, overseas license translation, trademark documentation, platform compliance. We deal with the paperwork so you\'re not waiting around.',
-    result: 'A live, verified RedNote account ready to publish.',
+    description: 'We register your Blue V corporate account end to end. Document prep, Chinese translation, submission, full profile buildout. International companies pay a one-time $1,000 verification fee. Approval takes 2 to 4 weeks. We handle everything.',
+    result: 'A live, verified Weibo corporate account ready to publish.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/></svg>`,
-    image: '/images/platforms/rednote-services/account-setup.png',
+    image: '/images/platforms/weibo-services/account-setup.png',
   },
   {
     title: 'Content strategy and production',
-    description: 'Content pillars, editorial calendar, platform-specific formats. AIGC visuals powered by HubStudio.ai. Real-life shoots in China. Native Chinese copywriting and cultural adaptation.',
-    result: 'Content built for how RedNote actually works, not repurposed from Instagram.',
+    description: 'Monthly content plans with brand posts, trending topic tie-ins, interactive formats, and campaign assets. Native Chinese content by native Chinese speakers. Short posts, 9-grid carousels, short video, live stream assets.',
+    result: 'Localized content built for how Weibo\'s algorithm works today.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/></svg>`,
-    image: '/images/platforms/rednote-services/content-strategy.png',
-  },
-  {
-    title: 'KOL and KOC campaigns',
-    description: 'Full-service via RedNote\'s official Pugongying platform. Influencer sourcing, fake follower detection, content co-creation, ROI reporting.',
-    result: 'Verified influencer partnerships with transparent performance data.',
-    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
-    image: '/images/platforms/rednote-services/kol-koc.png',
+    image: '/images/platforms/weibo-services/content-strategy.png',
   },
   {
     title: 'Paid advertising',
-    description: 'In-Feed Ads, Search Ads, Juguang full management, Juguang Lite, Chengfeng for e-commerce. Creative testing, bid optimization, real-time adjustments. Ad spend billed separately. No markups.',
+    description: 'Fan Headlines, Fan Tunnels, in-feed display, splash page ads, search promotion, hashtag promotion. Targeting by demographics, interests, behavior, and lookalike audiences. Weekly reporting on CPM, CPC, CPA, ROAS. Ad spend billed separately. No markups.',
     result: 'Ads that reach the right audience with transparent spend reporting.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>`,
-    image: '/images/platforms/rednote-services/paid-advertising.png',
+    image: '/images/platforms/weibo-services/paid-advertising.png',
   },
   {
-    title: 'E-commerce and live commerce',
-    description: 'In-app store setup, shoppable notes, live-streaming production. Live sessions drive 90% of RedNote\'s in-platform sales.',
-    result: 'A storefront inside RedNote where content leads directly to purchase.',
-    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>`,
-    image: '/images/platforms/rednote-services/ecommerce-live.png',
+    title: 'KOL and KOC campaigns',
+    description: 'We find, vet, negotiate, and brief influencers. Selection based on verified engagement, audience authenticity checks, niche fit, and budget. Full campaign management from creative brief to ROI report.',
+    result: 'Influencer campaigns backed by verified data, not follower counts.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
+    image: '/images/platforms/weibo-services/kol-campaigns.png',
   },
   {
-    title: 'Analytics and social listening',
-    description: 'Growth, engagement, search ranking, campaign ROI dashboards. Brand monitoring, sentiment analysis, trend detection, competitor tracking.',
-    result: 'Clear reporting on what\'s working and what needs adjustment.',
+    title: 'Hot Search and topic campaigns',
+    description: 'Topic creation, content seeding, KOL amplification, community activation, paid promotion. Built to put your brand in the national conversation when it matters most.',
+    result: 'Your brand inside China\'s most-watched trending list.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>`,
+    image: '/images/platforms/weibo-services/hot-search.png',
+  },
+  {
+    title: 'Social listening and analytics',
+    description: 'Daily monitoring of brand mentions, competitor moves, sentiment shifts, and trending conversations. Monthly reports on follower growth, engagement, content performance, ad results, KOL returns, and competitive benchmarks.',
+    result: 'Actionable reports with specific recommendations for next month.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 6-8"/></svg>`,
-    image: '/images/platforms/rednote-services/analytics-listening.png',
+    image: '/images/platforms/weibo-services/analytics.png',
   },
 ];
 
 const bestPractices = [
   {
-    title: 'Write for RedNote, not Instagram.',
-    description: 'Detailed, practical, experience-based notes win. Tutorials, honest reviews, and step-by-step guides outperform polished brand campaigns.',
+    title: 'Post every day.',
+    description: 'Once a day minimum. Three to five in growth mode. The algorithm rewards consistency.',
   },
   {
-    title: 'Nail the cover image and title.',
-    description: 'They determine whether users click. Clear, benefit-driven titles with relevant keywords. Clean, text-overlaid cover images.',
+    title: 'Lead with visuals.',
+    description: 'Use all 9 image slots. Center image gets the most attention. Short video outperforms static posts consistently.',
   },
   {
-    title: 'Optimize for search.',
-    description: 'RedNote is a search engine. Use trending keywords, write titles that match what users type, and use the platform\'s built-in hashtag recommendation tool.',
+    title: 'React fast to trends.',
+    description: 'Check the Hot Search list every morning. Publish within the hour when something relevant breaks.',
   },
   {
-    title: 'Encourage saves and comments.',
-    description: 'End notes with a question or a reason to bookmark. Saves and comments drive the CES score that controls distribution.',
+    title: 'Write tight.',
+    description: 'Posts fold after 140 characters. Strong first sentence. Clear call to action above the fold.',
   },
   {
-    title: 'Stay in the platform.',
-    description: 'RedNote penalizes external links. Keep users engaged within the app. In-app stores and internal funnels outperform redirects.',
+    title: 'Actually reply to people.',
+    description: 'The comment section is where real conversations happen. Brands that engage build loyalty much faster than brands that just broadcast.',
   },
   {
-    title: 'Post consistently.',
-    description: 'Accounts with 180+ days of consistent activity get bonus exposure. Pick your content pillars. Stick to them.',
+    title: 'Verify early.',
+    description: 'The Blue V badge builds trust, improves reach, unlocks ad tools, and protects against copycat accounts.',
   },
-];
-
-const industries = [
-  { title: 'Beauty and cosmetics', description: 'The most popular category. Reviews, tutorials, ingredient breakdowns.' },
-  { title: 'Fashion and apparel', description: 'Styling, trends, seasonal lookbooks, KOC seeding.' },
-  { title: 'Luxury', description: 'Storytelling-led content for a high-intent, affluent audience.' },
-  { title: 'Food and beverage', description: 'Restaurant reviews, recipes, product tastings.' },
-  { title: 'Travel and hospitality', description: 'Destination guides, hotel reviews. 64% of Chinese travelers use RedNote for trip planning.' },
-  { title: 'Health and wellness', description: 'Fitness, supplements, wellness tips. Fast-growing vertical.' },
-  { title: 'B2B', description: 'RedNote covers 100+ professional verticals. Decision-makers research suppliers and vendors on the platform.' },
 ];
 
 const steps = [
   {
     number: '01',
     title: 'Discovery call.',
-    description: 'Your brand, your goals, your China readiness. No pitch deck. Just the right questions.',
+    description: 'Tell us about your brand, your goals, and how ready you are for China. No pitch deck. Just the right questions.',
     icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>`,
   },
   {
     number: '02',
     title: 'Proposal.',
-    description: 'Clear scope. Fixed price. Every deliverable listed out. You see what you\'re getting and what it costs before you commit.',
+    description: 'Clear scope. Fixed price. Every deliverable listed out. No surprises.',
     icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>`,
   },
   {
     number: '03',
     title: 'Live in 2 weeks.',
-    description: 'Account setup, content strategy, first notes live. Fourteen days from signed contract to first post going live.',
+    description: 'Account live, first content published, first campaign running. Fourteen days from signed contract to first post.',
     icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>`,
   },
 ];
 
 const faqs = [
   {
-    q: 'Where is your team based?',
-    a: 'Shanghai and Hong Kong. Native Chinese speakers with real-time access to every major platform. We post on RedNote daily, run ad accounts from inside the ecosystem, and work directly with KOLs across the country. This isn\'t remote consulting. We\'re on the ground.',
+    q: 'Who actually runs our Weibo account?',
+    a: 'Our team in Shanghai and Hong Kong. Native Chinese speakers write your content, buy the ads, and deal with KOLs directly. We are not a remote agency sitting in London or New York guessing what is trending in China. We log into Weibo every morning, same timezone as your audience.',
   },
   {
-    q: 'Can my brand get on RedNote without a Chinese company?',
-    a: 'Yes. RedNote lets overseas businesses open a Professional Account (Blue V) using a translated business license and trademark docs. We take care of the paperwork, the platform submission, and the back-and-forth with RedNote\'s review team. Most accounts are live within two weeks.',
-  },
-  {
-    q: 'How long until we see results?',
-    a: 'RedNote doesn\'t reward impatience. New accounts go through an algorithm observation window, so the first 2 to 3 months are really about building your content library and training the algorithm on your category. Paid ads and KOL campaigns can bring traffic from week one while the organic side catches up.',
-  },
-  {
-    q: 'What exactly do we get each month?',
-    a: 'Everything is spelled out before you sign. Posts, videos, ad campaigns, KOL activations, reports. You review and approve content before it goes live. No gray areas. No surprise invoices showing up at month end.',
+    q: 'Can a company registered outside China open a Weibo account?',
+    a: 'Yes, and we do this regularly. Foreign companies can get a verified corporate account with a Blue V badge. You will need business registration documents translated into Chinese and a one-time $1,000 fee paid to Weibo for verification. Takes about 2 to 4 weeks to get approved. We handle the documents, translation, and back-and-forth with Weibo\'s team so you don\'t have to.',
   },
   {
     q: 'How does pricing work?',
-    a: 'One fixed monthly fee covers everything in your scope. Ad spend gets billed separately at cost, and you see every line item. We don\'t take commissions on media. The number in the proposal is the number you pay. That\'s it.',
+    a: 'Fixed scope. Fixed price. We define every deliverable before the project starts. How many posts, how many videos, which campaigns, what reporting. You see the full picture and the total cost upfront. No vague custom quotes. No hidden fees that show up three months in.',
   },
   {
-    q: 'Who creates the content, and who checks it?',
-    a: 'Strategy and copy come from our Shanghai team. AI-generated visuals are produced through HubStudio.ai, trained specifically on your brand guidelines. Photo and video shoots happen on location in China. Before anything goes live, a native Chinese editor reviews for tone, cultural fit, and platform compliance.',
+    q: 'What makes you different from other agencies doing Weibo?',
+    a: 'We are physically based in China with direct access to every platform, not running things remotely from overseas. We use AI tools (HubStudio.ai) for content production, which means faster turnaround and lower costs without cutting corners on quality. And we are the only agency we have found that offers fixed-price packages. We looked at 37 competitors. None of them do this.',
   },
   {
-    q: 'How do you find the right KOLs for our brand?',
-    a: 'Through RedNote\'s official Pugongying platform. Over 100,000 verified influencers. Every KOL we shortlist goes through audience authenticity checks, fake follower detection, engagement-quality scoring. Then we match on niche, content style, and your budget.',
+    q: 'How fast can we get going?',
+    a: 'About two weeks from signing. Account registration, profile setup, first content live, first campaign launched. Weibo\'s own verification process takes 2 to 4 weeks on their end, but we don\'t sit around waiting. We start building and posting while the Blue V badge is being processed.',
   },
   {
-    q: 'Can you run RedNote ads for a company based outside China?',
-    a: 'Yes, though there\'s a catch. RedNote\'s Juguang ad platform needs a Chinese entity to open an account. We set up and run ad accounts on behalf of overseas clients through our local structure, and you get weekly spend reports with full visibility into performance.',
+    q: 'Is all the content written in Chinese?',
+    a: 'Yes. Everything we publish on Weibo is written in Chinese by native speakers, then proofread by a second native speaker for tone and cultural accuracy. You will receive English summaries of content plans and monthly reports. If you want to review individual posts before they go live, we build that into the workflow.',
   },
   {
-    q: 'Do we need to commit for a long time?',
-    a: 'Shortest engagement is 3 months. That\'s the minimum to get past RedNote\'s algorithm ramp-up and collect enough performance data to know what\'s working. Most clients stay longer once the numbers start moving.',
+    q: 'Do we really need Weibo if we already use WeChat and RedNote?',
+    a: 'Short answer: yes. WeChat keeps content inside closed circles. RedNote is strong for product discovery. But neither lets your brand reach a mass public audience or participate in national trending conversations. If a crisis breaks, a cultural moment is blowing up, or you simply need millions of people to learn your brand name quickly, Weibo is the only platform in China that does that.',
   },
   {
-    q: 'We don\'t speak Chinese. Is that a problem?',
-    a: 'No. All client communication happens in English. Strategy calls, monthly reports, content approvals, everything. The team is fully bilingual. You focus on your brand, we handle the platform side in Chinese.',
+    q: 'How do you choose which KOLs to work with?',
+    a: 'Not by follower count. We audit real engagement rates, run fake-follower checks, analyze audience demographics, and review each KOL\'s content style against your brand. We also compare their pricing against market rates so you know you\'re getting a fair deal. Every KOL we recommend comes with the data behind the recommendation.',
+  },
+  {
+    q: 'What does reporting look like?',
+    a: 'Monthly. Each report covers follower growth, engagement rates, content performance broken down by format, ad campaign results (CPM, CPC, CPA, ROAS), KOL campaign returns, and competitive benchmarks. We end every report with clear recommendations for the following month. You also get a mid-month check-in if you\'re running active campaigns.',
+  },
+  {
+    q: 'What if we want more than just Weibo?',
+    a: 'Most of our clients do. Weibo is one of over 18 platforms we work on. We build and run campaigns across Weibo, WeChat, RedNote, Douyin, and others like Bilibili, Zhihu, or Kuaishou depending on your industry. Everything is coordinated by one team, delivered under one scope of work, and billed at one fixed price.',
   },
 ];
 ---
 
 <PageLayout
-  title="RedNote / Xiaohongshu Marketing Services | TheRedScroll"
-  description="We run RedNote accounts from Shanghai. Content strategy, KOL campaigns, paid ads, e-commerce, and analytics. Fixed scope, fixed price."
+  title="Weibo Marketing Services | TheRedScroll"
+  description="Weibo marketing services from Shanghai. Account setup, content, ads, KOL campaigns, and analytics. Fixed scope. Fixed price. 567M monthly active users."
 >
-  <!-- Hero -->
+  <!-- Hero: Dark hero banner -->
   <section class="w-full bg-[#1A1A1A] py-[80px] max-[640px]:py-[48px] relative overflow-hidden">
-    <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/rednote-hero.png')" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/weibo-hero.png')" aria-hidden="true"></div>
     <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[140px] max-[640px]:text-[80px] font-medium text-[#FFFFFF] opacity-[0.03] pointer-events-none select-none whitespace-nowrap" aria-hidden="true">
-      小红书
+      微博
     </span>
     <Container class="relative z-[1]">
       <div class="max-w-[800px] mx-auto text-center">
@@ -245,30 +243,30 @@ const faqs = [
           &larr; All platforms
         </a>
         <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">
-          RedNote marketing
+          Weibo marketing
         </p>
         <h1 class="text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] text-[#FFFFFF] mb-[8px]">
-          China's product discovery platform. 350M+ users. The first place consumers go before they buy.
+          We don't talk about Weibo strategy. We post on Weibo. Every day. From Shanghai.
         </h1>
         <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal mb-[24px]">
-          We don't talk about RedNote. We post on it. Every day. From Shanghai.
+          Weibo marketing from Shanghai. Account setup, content, ads, KOL campaigns, analytics. 567 million monthly users. Fixed scope. Fixed price. Team on the ground.
         </p>
         <Button variant="primary" href="/contact">Book a call</Button>
       </div>
     </Container>
   </section>
 
-  <!-- Stats — horizontal scroll strip -->
+  <!-- Stats section — horizontal scroll strip -->
   <section class="mt-[96px] max-[640px]:mt-[64px]">
     <Container>
       <div class="flex items-end justify-between gap-[32px] max-[640px]:flex-col max-[640px]:items-start max-[640px]:gap-[16px] mb-[32px]">
         <div class="max-w-[560px]">
           <SectionBar />
           <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[8px]">
-            Not vanity numbers. This is where buying decisions happen.
+            China's open public square. 567 million people, every month.
           </h2>
           <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
-            RedNote by the numbers.
+            Weibo by the numbers.
           </p>
         </div>
         <Button variant="primary" href="/contact" class="shrink-0">Book a call</Button>
@@ -298,68 +296,91 @@ const faqs = [
     </div>
   </section>
 
-  <!-- Why RedNote is essential -->
+  <!-- Why Weibo matters -->
   <section class="mt-[96px] max-[640px]:mt-[64px]">
     <Container>
       <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
         <div class="flex justify-center mb-[12px]">
           <SectionBar />
         </div>
-        <SectionHeading overline="Why RedNote is essential">
-          If your brand isn't on RedNote, you're invisible at the moment people decide what to buy.
+        <SectionHeading overline="Why Weibo matters">
+          Trends start here. News breaks here. Public opinion takes shape here.
         </SectionHeading>
       </div>
 
-      <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
-        {whyEssential.map((item) => (
-          <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
-            <div class="w-full aspect-[16/9] overflow-hidden">
-              <img src={item.image} alt={item.title} class="w-full h-full object-cover" loading="lazy" />
-            </div>
-            <div class="p-[24px] max-[640px]:p-[20px]">
-              <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">{item.title}</h3>
-              <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
-                {item.description}
-              </p>
-            </div>
+      <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
+          <div class="w-full aspect-[16/9] overflow-hidden">
+            <img src="/images/platforms/weibo-why/public-square.png" alt="Weibo app open showing public feed with trending posts and user discussions" class="w-full h-full object-cover" loading="lazy" />
           </div>
-        ))}
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Everything is public</h3>
+            <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
+              WeChat content stays locked inside friend circles. On Weibo, anyone can see your posts. A single product launch or a well-timed comment on a trending topic can reach millions of people who have never followed your account.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
+          <div class="w-full aspect-[16/9] overflow-hidden">
+            <img src="/images/platforms/weibo-why/hot-search.png" alt="Weibo Hot Search trending list showing top 50 topics refreshing in real time" class="w-full h-full object-cover" loading="lazy" />
+          </div>
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">The Hot Search list drives the platform</h3>
+            <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
+              It refreshes every minute. Topics that hit the top 50 get seen by hundreds of millions of users within hours. Brands that create content around those moments get organic reach that paid ads alone can't match.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
+          <div class="w-full aspect-[16/9] overflow-hidden">
+            <img src="/images/platforms/weibo-why/brand-research.png" alt="Consumer scrolling through Weibo brand page checking reviews and comments before purchasing" class="w-full h-full object-cover" loading="lazy" />
+          </div>
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Consumers research brands here</h3>
+            <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
+              Chinese shoppers search for brand names and scroll through what real users are saying. Strong presence builds trust. No presence raises red flags. Negative comments left unanswered do real damage.
+            </p>
+          </div>
+        </div>
       </div>
 
       <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] mt-[24px] text-center max-w-[680px] mx-auto">
-        RedNote (Xiaohongshu) is where Chinese consumers research products, compare brands, and make buying decisions. Social content, community trust, and in-app shopping in one platform.
+        Weibo covers the full funnel. Mass awareness through trending topics at the top. Direct sales through Tmall and Taobao Live integrations at the bottom. Few Chinese platforms do both well. Weibo does.
       </p>
     </Container>
   </section>
 
-  <!-- How the algorithm works — ServicesGrid-style cards -->
+  <!-- How Weibo helps brands grow -->
   <section class="mt-[96px] max-[640px]:mt-[64px]">
     <Container>
       <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
         <div class="flex justify-center mb-[12px]">
           <SectionBar />
         </div>
-        <SectionHeading overline="How the algorithm works">
-          Understanding distribution is the difference between 300 views and 300,000.
+        <SectionHeading overline="How Weibo helps brands grow">
+          Six ways to turn attention into revenue.
         </SectionHeading>
       </div>
 
-      <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
-        {algorithm.map((item) => (
+      <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        {ecosystem.map((item) => (
           <div
-            class="algo-card relative border-none overflow-hidden flex flex-col justify-between"
-            style={`border-radius: ${item.bg === '#1A1A1A' || item.bg === '#CC3333' ? '12px' : '10px'}`}
-            data-tilt-algo
+            class="eco-card relative border-none overflow-hidden flex flex-col justify-between"
+            style={`border-radius: ${item.bg === '#1A1A1A' || item.bg === '#CC3333' || item.bg === '#B02D2D' ? '12px' : '10px'}`}
+            data-tilt-eco
           >
-            <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out algo-bg" style={`background-image: url('${item.image}')`} aria-hidden="true"></div>
+            <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out eco-bg" style={`background-image: url('${item.image}')`} aria-hidden="true"></div>
             <div class="absolute inset-0" style={`background: ${item.bg}; opacity: 0.72`} aria-hidden="true"></div>
             <div class="relative z-[1] p-[24px] max-[640px]:p-[20px]">
               <div class="w-[40px] h-[40px] rounded-[6px] flex items-center justify-center mb-[16px]" style={`background: ${item.iconBg}`}>
                 <Fragment set:html={item.icon} />
               </div>
-              <h3 class="text-[18px] font-medium leading-[1.3] mb-[8px]" style={`color: ${item.textColor}`}>
-                {item.title}
+              <h3 class="text-[18px] font-medium leading-[1.3] mb-[4px]" style={`color: ${item.textColor}`}>
+                {item.name}
               </h3>
+              <span class="text-[12px] font-normal mb-[8px] block" style={`color: ${item.descColor}`}>{item.chineseName}</span>
               <p class="text-[13px] font-normal leading-[1.5]" style={`color: ${item.descColor}`}>
                 {item.description}
               </p>
@@ -367,24 +388,30 @@ const faqs = [
           </div>
         ))}
       </div>
+
+      <!-- Registration note -->
+      <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px] mt-[16px]">
+        <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] max-w-[680px]">
+          <span class="text-[#1A1A1A] font-medium">Verification note:</span> Foreign companies can get a verified corporate account with a Blue V badge. You will need business registration documents translated into Chinese and a one-time $1,000 fee paid to Weibo. Approval takes 2 to 4 weeks. We handle the full process.
+        </p>
+      </div>
     </Container>
   </section>
 
-  <!-- What we do on RedNote — selector + panel -->
+  <!-- What we do on Weibo -->
   <section class="mt-[96px] max-[640px]:mt-[64px]">
     <Container>
       <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
         <div class="flex justify-center mb-[12px]">
           <SectionBar />
         </div>
-        <SectionHeading overline="What we do on RedNote">
+        <SectionHeading overline="What we do on Weibo">
           Six services. Each with a clear deliverable.
         </SectionHeading>
       </div>
 
       <!-- Desktop: two-column selector + panel -->
       <div class="grid grid-cols-[340px_1fr] max-[1024px]:grid-cols-[280px_1fr] max-[768px]:hidden gap-[24px] items-stretch">
-        <!-- Left: selector list -->
         <div class="flex flex-col gap-[4px]">
           {services.map((service, i) => (
             <button
@@ -415,7 +442,6 @@ const faqs = [
           ))}
         </div>
 
-        <!-- Right: content panel -->
         <div class="relative">
           {services.map((service, i) => (
             <div
@@ -479,10 +505,10 @@ const faqs = [
             From our team on the ground
           </p>
           <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF]">
-            RedNote best practices
+            Weibo best practices
           </h2>
           <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.5] mt-[8px] max-w-[680px]">
-            We post on RedNote from China, every day. These come from doing the work.
+            We post on Weibo from China, every single day. These come from doing the work.
           </p>
         </div>
 
@@ -502,36 +528,13 @@ const faqs = [
     </Container>
   </section>
 
-  <!-- Industries -->
-  <section class="mt-[96px] max-[640px]:mt-[64px]">
-    <Container>
-      <div class="mb-[48px] max-[640px]:mb-[32px]">
-        <SectionBar />
-        <SectionHeading overline="Industries we serve on RedNote">
-          From beauty to B2B. Each vertical has its own playbook.
-        </SectionHeading>
-      </div>
-
-      <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
-        {industries.map((industry) => (
-          <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">{industry.title}</h3>
-            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5]">
-              {industry.description}
-            </p>
-          </div>
-        ))}
-      </div>
-    </Container>
-  </section>
-
   <!-- Why TheRedScroll -->
   <section class="mt-[96px] max-[640px]:mt-[64px]">
     <Container>
       <div class="mb-[48px] max-[640px]:mb-[32px]">
         <SectionBar />
         <SectionHeading overline="Why TheRedScroll">
-          We don't advise on RedNote from a different timezone.
+          We don't advise on Weibo from a different timezone.
         </SectionHeading>
       </div>
 
@@ -539,13 +542,13 @@ const faqs = [
         <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">On the ground in China</h3>
           <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5]">
-            Our team is in Shanghai. Native speakers who post on RedNote daily, with real-time access to every feature, direct KOL relationships, and the cultural instinct you only get from being here.
+            Our team is in Shanghai and Hong Kong. Native speakers who use the platform daily, with real-time access to every feature, direct KOL relationships, and the kind of cultural instinct you only get from being here.
           </p>
         </div>
         <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Fixed scope. Fixed price.</h3>
           <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5]">
-            Every deliverable gets spelled out before we start. Posts, campaigns, reports. One monthly price. No scope creep charges, no invoices you didn't expect.
+            Every deliverable gets spelled out before we start. Posts, videos, campaigns, reports. One monthly price. No scope creep charges, no invoices you didn't expect. We looked at 37 competitors. None of them do this.
           </p>
         </div>
         <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
@@ -555,9 +558,9 @@ const faqs = [
           </p>
         </div>
         <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">We know the algorithm</h3>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Full platform coverage</h3>
           <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5]">
-            CES scoring, staged distribution, search optimization. We build content strategies around how RedNote actually ranks and surfaces content, not guesswork from reading articles about it.
+            Weibo is one of over 18 platforms we work on. We plan and execute across WeChat, RedNote, Douyin, and more. One team, one scope, one price. No separate contracts for each platform.
           </p>
         </div>
       </div>
@@ -568,7 +571,6 @@ const faqs = [
   <section class="mt-[96px] max-[640px]:mt-[64px]">
     <Container>
       <div class="grid grid-cols-[340px_1fr] max-[1024px]:grid-cols-[280px_1fr] max-[768px]:grid-cols-1 gap-[48px] max-[768px]:gap-[32px]">
-        <!-- Left: heading -->
         <div>
           <div class="sticky top-[84px] max-[640px]:static">
             <SectionBar />
@@ -577,14 +579,13 @@ const faqs = [
               Frequently asked questions
             </h2>
             <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
-              Everything you need to know about running RedNote with TheRedScroll.
+              Everything you need to know about running Weibo with TheRedScroll.
             </p>
           </div>
         </div>
 
-        <!-- Right: FAQ items -->
         <div>
-          {faqs.map((faq) => (
+          {faqs.map((faq, i) => (
             <div class="border-b border-[rgba(0,0,0,0.08)]" data-faq>
               <button
                 class="w-full flex items-center justify-between py-[20px] text-left bg-transparent border-none cursor-pointer group"
@@ -610,9 +611,9 @@ const faqs = [
     </Container>
   </section>
 
-  <!-- Getting started — matches homepage HowItWorks -->
+  <!-- Getting started -->
   <section class="relative mt-[96px] max-[640px]:mt-[64px] pt-[80px] pb-[80px] max-[640px]:pt-[48px] max-[640px]:pb-[48px] overflow-hidden">
-    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero/rednote-hero.png')" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero/weibo-hero.png')" aria-hidden="true"></div>
     <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.88]" aria-hidden="true"></div>
 
     <Container class="relative z-[1]">
@@ -624,7 +625,7 @@ const faqs = [
           Getting started
         </p>
         <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF]">
-          From zero to a live RedNote account in two weeks.
+          From zero to a live Weibo account in two weeks.
         </h2>
       </div>
 
@@ -653,13 +654,12 @@ const faqs = [
         <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal mb-[12px]">See also</p>
         <div class="flex justify-center gap-[24px] flex-wrap">
           <a href="/platforms/wechat" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">WeChat marketing &rarr;</a>
+          <a href="/platforms/rednote" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">RedNote marketing &rarr;</a>
           <a href="/platforms/douyin" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Douyin marketing &rarr;</a>
-          <a href="/platforms/weibo" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Weibo marketing &rarr;</a>
         </div>
       </div>
     </Container>
   </section>
-
 <style>
   .scrollbar-hide {
     -ms-overflow-style: none;
@@ -689,44 +689,27 @@ const faqs = [
   .stat-card:hover .stat-bg {
     transform: scale(1.08);
   }
-  .algo-card:hover .algo-bg {
+  .eco-card:hover .eco-bg {
     transform: scale(1.08);
   }
 </style>
 
 <script>
-  // Stats horizontal scroll — drag to scroll + auto-scroll
+  // Stats horizontal scroll — drag to scroll
   const statsScroll = document.getElementById('stats-scroll');
   if (statsScroll) {
     let isDown = false;
     let startX: number;
     let scrollLeft: number;
-    let autoScrollId: number;
-    let userInteracted = false;
-    let autoScrollPaused = false;
 
-    // Drag to scroll
     statsScroll.addEventListener('mousedown', (e) => {
       isDown = true;
-      userInteracted = true;
-      autoScrollPaused = true;
       statsScroll.style.cursor = 'grabbing';
       startX = e.pageX - statsScroll.offsetLeft;
       scrollLeft = statsScroll.scrollLeft;
     });
-    statsScroll.addEventListener('mouseleave', () => {
-      isDown = false;
-      statsScroll.style.cursor = '';
-      // Resume auto-scroll after 3s of no interaction
-      if (userInteracted) {
-        setTimeout(() => { autoScrollPaused = false; }, 3000);
-      }
-    });
-    statsScroll.addEventListener('mouseup', () => {
-      isDown = false;
-      statsScroll.style.cursor = '';
-      setTimeout(() => { autoScrollPaused = false; }, 3000);
-    });
+    statsScroll.addEventListener('mouseleave', () => { isDown = false; statsScroll.style.cursor = ''; });
+    statsScroll.addEventListener('mouseup', () => { isDown = false; statsScroll.style.cursor = ''; });
     statsScroll.addEventListener('mousemove', (e) => {
       if (!isDown) return;
       e.preventDefault();
@@ -734,47 +717,27 @@ const faqs = [
       statsScroll.scrollLeft = scrollLeft - (x - startX);
     });
 
-    // Pause auto-scroll on touch
-    statsScroll.addEventListener('touchstart', () => { autoScrollPaused = true; }, { passive: true });
-    statsScroll.addEventListener('touchend', () => {
-      setTimeout(() => { autoScrollPaused = false; }, 3000);
-    });
+    // Auto-scroll: slow continuous scroll, pauses on hover/drag
+    let autoScrollPaused = false;
+    let autoScrollSpeed = 0.5; // px per frame
 
-    // Auto-scroll: smooth continuous scroll
-    const scrollSpeed = 0.5; // pixels per frame
+    statsScroll.addEventListener('mouseenter', () => { autoScrollPaused = true; });
+    statsScroll.addEventListener('mouseleave', () => { autoScrollPaused = false; isDown = false; statsScroll.style.cursor = ''; });
+    statsScroll.addEventListener('touchstart', () => { autoScrollPaused = true; }, { passive: true });
+    statsScroll.addEventListener('touchend', () => { autoScrollPaused = false; });
+
     function autoScroll() {
       if (!autoScrollPaused && statsScroll) {
         const maxScroll = statsScroll.scrollWidth - statsScroll.clientWidth;
-        statsScroll.scrollLeft += scrollSpeed;
+        statsScroll.scrollLeft += autoScrollSpeed;
         // Loop back to start when reaching the end
         if (statsScroll.scrollLeft >= maxScroll) {
           statsScroll.scrollLeft = 0;
         }
       }
-      autoScrollId = requestAnimationFrame(autoScroll);
+      requestAnimationFrame(autoScroll);
     }
-
-    // Start auto-scroll when section comes into view
-    const scrollObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            autoScrollId = requestAnimationFrame(autoScroll);
-            scrollObserver.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.2 }
-    );
-    scrollObserver.observe(statsScroll);
-
-    // Pause on hover (desktop)
-    statsScroll.addEventListener('mouseenter', () => { autoScrollPaused = true; });
-    statsScroll.addEventListener('mouseleave', () => {
-      if (!isDown) {
-        setTimeout(() => { autoScrollPaused = false; }, 1000);
-      }
-    });
+    requestAnimationFrame(autoScroll);
   }
 
   // Stats scroll reveal with stagger + trigger counters
@@ -868,7 +831,6 @@ const faqs = [
       const newPanel = panels[index] as HTMLElement;
       const goingDown = index > activeIndex;
 
-      // Slide out old panel
       oldPanel.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
       oldPanel.style.opacity = '0';
       oldPanel.style.transform = goingDown ? 'translateY(-20px)' : 'translateY(20px)';
@@ -878,12 +840,10 @@ const faqs = [
         oldPanel.style.transform = '';
         oldPanel.style.transition = '';
 
-        // Prepare new panel off-screen
         newPanel.style.opacity = '0';
         newPanel.style.transform = goingDown ? 'translateY(20px)' : 'translateY(-20px)';
         newPanel.style.display = '';
 
-        // Slide in new panel
         requestAnimationFrame(() => {
           newPanel.style.transition = 'opacity 0.35s ease, transform 0.35s ease';
           newPanel.style.opacity = '1';
@@ -899,8 +859,8 @@ const faqs = [
     });
   });
 
-  // Algorithm cards — tilt on hover
-  document.querySelectorAll('[data-tilt-algo]').forEach((card) => {
+  // Ecosystem cards — tilt on hover
+  document.querySelectorAll('[data-tilt-eco]').forEach((card) => {
     const el = card as HTMLElement;
     el.addEventListener('mousemove', (e: MouseEvent) => {
       const rect = el.getBoundingClientRect();
@@ -921,6 +881,7 @@ const faqs = [
   document.querySelectorAll('[data-faq]').forEach((item) => {
     const trigger = item.querySelector('[data-faq-trigger]') as HTMLButtonElement;
     const content = item.querySelector('.faq-content') as HTMLElement;
+    const chevron = item.querySelector('.faq-chevron') as SVGElement;
     if (!trigger || !content) return;
 
     trigger.addEventListener('click', () => {

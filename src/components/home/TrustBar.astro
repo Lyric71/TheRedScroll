@@ -14,11 +14,11 @@ const allLogos = [...logos, ...logos];
 <section class="py-[16px] bg-transparent overflow-hidden">
   <div class="relative w-full flex items-center justify-center min-h-[64px]">
     <!-- Fade edges -->
-    <div class="absolute left-0 top-0 bottom-0 w-[80px] bg-gradient-to-r from-[#FFFFFF] to-transparent z-[1] pointer-events-none" aria-hidden="true"></div>
-    <div class="absolute right-0 top-0 bottom-0 w-[80px] bg-gradient-to-l from-[#FFFFFF] to-transparent z-[1] pointer-events-none" aria-hidden="true"></div>
+    <div class="absolute left-0 top-0 bottom-0 w-[80px] max-[640px]:w-[40px] bg-gradient-to-r from-[#FFFFFF] to-transparent z-[1] pointer-events-none" aria-hidden="true"></div>
+    <div class="absolute right-0 top-0 bottom-0 w-[80px] max-[640px]:w-[40px] bg-gradient-to-l from-[#FFFFFF] to-transparent z-[1] pointer-events-none" aria-hidden="true"></div>
 
     <!-- Scrolling track -->
-    <div class="flex items-center gap-[60px] animate-scroll w-max">
+    <div class="flex items-center gap-[60px] max-[640px]:gap-[32px] animate-scroll w-max">
       {allLogos.map((logo) => (
         <div class="h-[32px] px-[16px] shrink-0 flex items-center justify-center bg-[#F0F1F4] rounded-[6px]">
           <span class="text-[12px] text-[#5C5C5C] font-medium whitespace-nowrap">{logo.name}</span>

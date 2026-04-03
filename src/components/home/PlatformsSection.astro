@@ -57,11 +57,11 @@ const platforms = [
           <!-- Branded visual header -->
           <div class="relative w-full aspect-[16/9] flex flex-col items-center justify-center overflow-hidden" style={`background: ${platform.brandColor}`}>
             <!-- Large Chinese character watermark -->
-            <span class="absolute text-[80px] font-medium text-[#FFFFFF] opacity-[0.08] select-none pointer-events-none" aria-hidden="true">
+            <span class="absolute text-[80px] max-[640px]:text-[56px] font-medium text-[#FFFFFF] opacity-[0.08] select-none pointer-events-none" aria-hidden="true">
               {platform.chineseName}
             </span>
             <!-- Logo -->
-            <img src={platform.logo} alt={`${platform.name} logo`} class="relative w-[64px] h-[64px] mb-[10px]" />
+            <img src={platform.logo} alt={`${platform.name} logo`} class="relative w-[64px] h-[64px] max-[640px]:w-[48px] max-[640px]:h-[48px] mb-[10px]" />
             <!-- Platform name -->
             <span class="relative text-[#FFFFFF] text-[18px] font-medium leading-none">
               {platform.name}

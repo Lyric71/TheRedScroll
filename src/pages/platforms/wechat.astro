@@ -311,7 +311,7 @@ const faqs = [
         </SectionHeading>
       </div>
 
-      <div class="grid grid-cols-3 max-[1024px]:grid-cols-3 max-[640px]:grid-cols-1 gap-[16px]">
+      <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
         <!-- Card 1: You own your audience -->
         <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
           <div class="w-full aspect-[16/9] overflow-hidden">
@@ -583,7 +583,7 @@ const faqs = [
       <div class="grid grid-cols-[340px_1fr] max-[1024px]:grid-cols-[280px_1fr] max-[768px]:grid-cols-1 gap-[48px] max-[768px]:gap-[32px]">
         <!-- Left: heading -->
         <div>
-          <div class="sticky top-[84px]">
+          <div class="sticky top-[84px] max-[640px]:static">
             <SectionBar />
             <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">FAQ</p>
             <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">
@@ -720,14 +720,38 @@ const faqs = [
       startX = e.pageX - statsScroll.offsetLeft;
       scrollLeft = statsScroll.scrollLeft;
     });
-    statsScroll.addEventListener('mouseleave', () => { isDown = false; statsScroll.style.cursor = ''; });
-    statsScroll.addEventListener('mouseup', () => { isDown = false; statsScroll.style.cursor = ''; });
+    statsScroll.addEventListener('mouseleave', () => { isDown = false; statsScroll.style.cursor = ''; resumeAuto(); });
+    statsScroll.addEventListener('mouseup', () => { isDown = false; statsScroll.style.cursor = ''; resumeAuto(); });
     statsScroll.addEventListener('mousemove', (e) => {
       if (!isDown) return;
       e.preventDefault();
       const x = e.pageX - statsScroll.offsetLeft;
       statsScroll.scrollLeft = scrollLeft - (x - startX);
     });
+
+    // Auto-scroll
+    let autoInterval: ReturnType<typeof setInterval>;
+    const scrollSpeed = 0.5;
+
+    function startAuto() {
+      autoInterval = setInterval(() => {
+        if (isDown) return;
+        statsScroll!.scrollLeft += scrollSpeed;
+        // Loop: when we reach the end, reset to start
+        if (statsScroll!.scrollLeft >= statsScroll!.scrollWidth - statsScroll!.clientWidth) {
+          statsScroll!.scrollLeft = 0;
+        }
+      }, 16);
+    }
+
+    function pauseAuto() { clearInterval(autoInterval); }
+    function resumeAuto() { pauseAuto(); startAuto(); }
+
+    statsScroll.addEventListener('mouseenter', pauseAuto);
+    statsScroll.addEventListener('touchstart', pauseAuto);
+    statsScroll.addEventListener('touchend', () => { setTimeout(resumeAuto, 2000); });
+
+    startAuto();
   }
 
   // Stats scroll reveal with stagger + trigger counters

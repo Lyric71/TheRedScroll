@@ -27,7 +27,7 @@ export const mainNav: NavItem[] = [
       { label: 'WeChat', subtitle: 'Official Accounts, Mini Programs, WeCom', href: '/platforms/wechat', icon: `<img src="/images/platforms/wechat-logo.svg" alt="WeChat" width="20" height="20" style="filter: brightness(0) invert(1);" />` },
       { label: 'RedNote / Xiaohongshu', subtitle: 'Reviews, shoppable posts, lifestyle', href: '/platforms/rednote', icon: `<img src="/images/platforms/rednote-logo.svg" alt="RedNote" width="20" height="20" style="filter: brightness(0) invert(1);" />` },
       { label: 'Douyin', subtitle: 'Short video, live commerce', href: '/platforms/douyin', icon: `<img src="/images/platforms/douyin-logo.svg" alt="Douyin" width="20" height="20" />` },
-      { label: 'Weibo', subtitle: 'Mass reach, PR, trending topics', href: '/platforms/weibo', icon: `<img src="/images/platforms/weibo-logo.svg" alt="Weibo" width="20" height="20" />` },
+      { label: 'Weibo', subtitle: 'Mass reach, PR, trending topics', href: '/platforms/weibo', icon: `<img src="/images/platforms/weibo-logo.svg" alt="Weibo" width="20" height="20" style="filter: brightness(0) invert(1);" />` },
       { label: 'Additional Platforms', subtitle: 'Bilibili, Kuaishou, Zhihu, and more', href: '/platforms', icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>` },
     ],
   },

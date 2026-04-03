@@ -50,7 +50,7 @@ const steps = [
       {steps.map((step) => (
         <div class="bg-[rgba(255,255,255,0.06)] border-[0.5px] border-[rgba(255,255,255,0.1)] rounded-[12px] p-[32px] max-[640px]:p-[24px] text-center">
           <!-- Icon circle -->
-          <div class="w-[64px] h-[64px] rounded-full bg-[rgba(255,255,255,0.08)] border-[0.5px] border-[rgba(255,255,255,0.15)] flex items-center justify-center mx-auto mb-[20px]">
+          <div class="w-[64px] h-[64px] max-[640px]:w-[48px] max-[640px]:h-[48px] rounded-full bg-[rgba(255,255,255,0.08)] border-[0.5px] border-[rgba(255,255,255,0.15)] flex items-center justify-center mx-auto mb-[20px]">
             <Fragment set:html={step.icon} />
           </div>
           <!-- Step number -->

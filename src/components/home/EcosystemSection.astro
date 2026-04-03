@@ -77,13 +77,13 @@ const pillars = [
             <div class="absolute inset-0 bg-gradient-to-t from-[rgba(26,26,26,0.95)] via-[rgba(26,26,26,0.4)] to-transparent" aria-hidden="true"></div>
 
             <!-- Content -->
-            <div class="relative z-[1] p-[28px]">
+            <div class="relative z-[1] p-[28px] max-[640px]:p-[20px]">
               <!-- Counter stat -->
               <div class="flex items-baseline gap-[6px] mb-[12px]">
-                <span class="text-[32px] text-[#FFFFFF] font-medium leading-none ecosystem-counter" data-target={pillar.stat}>0</span>
+                <span class="text-[32px] max-[640px]:text-[24px] text-[#FFFFFF] font-medium leading-none ecosystem-counter" data-target={pillar.stat}>0</span>
                 <span class="text-[12px] text-[rgba(255,255,255,0.5)] font-normal">{pillar.statLabel}</span>
               </div>
-              <h3 class="text-[20px] text-[#FFFFFF] font-medium leading-[1.3] mb-[8px]">
+              <h3 class="text-[20px] max-[640px]:text-[16px] text-[#FFFFFF] font-medium leading-[1.3] mb-[8px]">
                 {pillar.title}
               </h3>
               <p class="text-[13px] text-[rgba(255,255,255,0.75)] font-normal leading-[1.5]">
