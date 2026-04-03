@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Core colors */
+  --color-white: #FFFFFF;
+  --color-rice-paper: #F7F2EE;
+  --color-ink: #1A1A1A;
+  --color-vermillion: #CC3333;
+  --color-vermillion-hover: #B02D2D;
+  --color-stone: #5C5C5C;
+  --color-warm-gray: #E8E0D8;
+
+  /* Derived colors */
+  --color-border: rgba(0, 0, 0, 0.08);
+  --color-border-strong: rgba(0, 0, 0, 0.15);
+  --color-dark-body: rgba(255, 255, 255, 0.6);
+  --color-dark-muted: rgba(255, 255, 255, 0.4);
+  --color-dark-divider: rgba(255, 255, 255, 0.1);
+
+  /* Spacing scale */
+  --space-2xs: 2px;
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+}
+
+/* Base styles */
+body {
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Inline links */
+a {
+  color: var(--color-vermillion);
+  text-decoration: none;
+  transition: text-decoration 0.15s ease;
+}
+a:hover {
+  text-decoration: underline;
+}
