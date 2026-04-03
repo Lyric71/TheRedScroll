@@ -1,0 +1,24 @@
+---
+// Client logos. Replace src values with actual client logo files.
+const logos = [
+  { name: 'Client 1', src: '/images/clients/logo-placeholder-1.svg' },
+  { name: 'Client 2', src: '/images/clients/logo-placeholder-2.svg' },
+  { name: 'Client 3', src: '/images/clients/logo-placeholder-3.svg' },
+  { name: 'Client 4', src: '/images/clients/logo-placeholder-4.svg' },
+  { name: 'Client 5', src: '/images/clients/logo-placeholder-5.svg' },
+  { name: 'Client 6', src: '/images/clients/logo-placeholder-6.svg' },
+];
+---
+
+<section class="py-[32px] bg-transparent">
+  <div class="max-w-[1200px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] flex justify-center items-center gap-[40px] max-[640px]:gap-[24px] flex-wrap">
+    {logos.map((logo) => (
+      <img
+        src={logo.src}
+        alt={logo.name}
+        class="h-[32px] w-auto grayscale opacity-50 transition-[filter,opacity] duration-150 ease-in-out hover:grayscale-0 hover:opacity-100"
+        loading="lazy"
+      />
+    ))}
+  </div>
+</section>

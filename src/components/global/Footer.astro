@@ -1,0 +1,76 @@
+---
+const currentYear = new Date().getFullYear();
+
+const footerLinks = {
+  services: [
+    { label: 'Strategy & Analytics', href: '/services/strategy-campaigns' },
+    { label: 'Content Production', href: '/services/content-production' },
+    { label: 'Influencer Marketing', href: '/services/influencer-marketing' },
+    { label: 'Advertising', href: '/services/advertising' },
+  ],
+  discover: [
+    { label: 'About', href: '/about' },
+    { label: 'Blog', href: '/blog' },
+    { label: 'Platforms', href: '/platforms' },
+  ],
+  connect: [
+    { label: 'Contact', href: '/contact' },
+    { label: 'Book a call', href: '/contact' },
+  ],
+};
+---
+
+<footer class="w-full bg-[var(--color-ink)] pt-[48px] pb-[24px]">
+  <div class="max-w-[1200px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px]">
+    <!-- Upper grid -->
+    <div class="grid grid-cols-[2fr_1fr_1fr_1fr] gap-[32px] max-[640px]:grid-cols-1 max-[640px]:gap-[24px]">
+      <!-- Brand column -->
+      <div>
+        <a href="/" class="inline-block">
+          <img src="/images/logo/theredscroll-logo-5B-dark.svg" alt="TheRedScroll" class="h-[32px] w-auto" />
+        </a>
+        <p class="text-[var(--color-dark-muted)] text-[12px] mt-[8px]">
+          Social media marketing in China.<br />From Shanghai and Hong Kong. Every day.
+        </p>
+      </div>
+
+      <!-- Services column -->
+      <div>
+        <p class="text-[11px] font-medium tracking-[0.05em] uppercase text-[var(--color-vermillion)] mb-[12px]">Services</p>
+        {footerLinks.services.map((link) => (
+          <a href={link.href} class="block text-white text-[14px] font-normal leading-[2] no-underline hover:text-white/60 hover:no-underline transition-colors duration-150">
+            {link.label}
+          </a>
+        ))}
+      </div>
+
+      <!-- Discover column -->
+      <div>
+        <p class="text-[11px] font-medium tracking-[0.05em] uppercase text-[var(--color-vermillion)] mb-[12px]">Discover</p>
+        {footerLinks.discover.map((link) => (
+          <a href={link.href} class="block text-white text-[14px] font-normal leading-[2] no-underline hover:text-white/60 hover:no-underline transition-colors duration-150">
+            {link.label}
+          </a>
+        ))}
+      </div>
+
+      <!-- Connect column -->
+      <div>
+        <p class="text-[11px] font-medium tracking-[0.05em] uppercase text-[var(--color-vermillion)] mb-[12px]">Connect</p>
+        {footerLinks.connect.map((link) => (
+          <a href={link.href} class="block text-white text-[14px] font-normal leading-[2] no-underline hover:text-white/60 hover:no-underline transition-colors duration-150">
+            {link.label}
+          </a>
+        ))}
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-[var(--color-dark-divider)] mt-[32px] pt-[16px] flex justify-between items-center max-[640px]:flex-col max-[640px]:gap-[8px] max-[640px]:text-center">
+      <p class="text-[12px] text-[var(--color-dark-muted)]">&copy; {currentYear} TheRedScroll</p>
+      <a href="/terms-of-service" class="text-[12px] text-[var(--color-dark-muted)] no-underline hover:text-white hover:no-underline transition-colors duration-150">
+        Terms &amp; conditions
+      </a>
+    </div>
+  </div>
+</footer>

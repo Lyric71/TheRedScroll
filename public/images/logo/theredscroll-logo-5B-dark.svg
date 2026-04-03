@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 72" width="320" height="72">
+  <!-- Mark: Filled card with vermillion header band + scroll curl (dark version) -->
+  <g transform="translate(12,6)">
+    <!-- Card body: subtle white fill, white stroke -->
+    <rect x="0" y="0" width="38" height="58" rx="6" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <!-- Vermillion header band -->
+    <rect x="0" y="0" width="38" height="14" rx="6" fill="#CC3333"/>
+    <rect x="0" y="8" width="38" height="6" fill="#CC3333"/>
+    <!-- Content lines -->
+    <line x1="8" y1="24" x2="30" y2="24" stroke="rgba(255,255,255,0.2)" stroke-width="0.8" stroke-linecap="round"/>
+    <line x1="8" y1="32" x2="26" y2="32" stroke="rgba(255,255,255,0.2)" stroke-width="0.8" stroke-linecap="round"/>
+    <line x1="8" y1="40" x2="22" y2="40" stroke="rgba(255,255,255,0.2)" stroke-width="0.8" stroke-linecap="round"/>
+    <!-- Scroll curl at bottom-right -->
+    <path d="M38 46 Q44 46 44 52 Q44 58 38 58" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="68" y="42" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="500" letter-spacing="0">
+    <tspan fill="#FFFFFF">The</tspan><tspan fill="#CC3333">Red</tspan><tspan fill="#FFFFFF">Scroll</tspan>
+  </text>
+</svg>

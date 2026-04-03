@@ -1,0 +1,65 @@
+---
+import Container from '../ui/Container.astro';
+import SectionBar from '../ui/SectionBar.astro';
+import SectionHeading from '../ui/SectionHeading.astro';
+import Button from '../ui/Button.astro';
+
+const platforms = [
+  {
+    name: 'WeChat',
+    description: 'China\'s super app. Official Accounts, Moments, Mini Programs, WeCom. If you\'re going to pick just one platform in China, this is the one.',
+  },
+  {
+    name: 'RedNote / Xiaohongshu',
+    description: 'Where Chinese consumers go before they buy pretty much anything. Reviews, tutorials, shoppable posts. Think of it as China\'s version of Instagram, except people actually buy things from it.',
+  },
+  {
+    name: 'Douyin',
+    description: 'Short video meets live commerce. The reach is massive and the path from content to sale is short. Brands that crack Douyin tend to see results fast.',
+  },
+  {
+    name: 'Weibo',
+    description: 'Mass reach and PR. Trending topics, celebrity tie-ins, news cycles. When you need a brand name to travel across China quickly, this is still where it happens.',
+  },
+];
+---
+
+<section class="mt-[96px] max-[640px]:mt-[64px]">
+  <Container>
+    <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+      <div class="flex justify-center mb-[12px]">
+        <SectionBar />
+      </div>
+      <SectionHeading overline="Where we post">
+        WeChat. Douyin. RedNote. Weibo. And 14 more.
+      </SectionHeading>
+    </div>
+
+    <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+      {platforms.map((platform) => (
+        <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
+          <!-- Visual placeholder -->
+          <div class="w-full aspect-[16/9] bg-[#E8E0D8] flex items-center justify-center">
+            <span class="text-[#5C5C5C] text-[12px] font-normal">Platform visual</span>
+          </div>
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] text-[#1A1A1A] font-medium leading-[1.3] mb-[8px]">
+              {platform.name}
+            </h3>
+            <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
+              {platform.description}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] mt-[24px] text-center max-w-[680px] mx-auto">
+      Plus Bilibili, Kuaishou, Zhihu, Toutiao, Meituan, Dianping, Pinduoduo, Taobao Live, and others. Each priced as a clear add-on based on your industry.
+    </p>
+
+    <div class="mt-[24px] text-center">
+      <Button variant="secondary" href="/platforms">See all platforms</Button>
+    </div>
+  </Container>
+</section>

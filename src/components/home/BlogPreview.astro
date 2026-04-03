@@ -1,0 +1,68 @@
+---
+import Container from '../ui/Container.astro';
+import SectionBar from '../ui/SectionBar.astro';
+import SectionHeading from '../ui/SectionHeading.astro';
+import Button from '../ui/Button.astro';
+
+// Placeholder posts until blog content collection is populated
+const posts = [
+  {
+    category: 'Platforms',
+    title: 'Why RedNote is the platform brands can\'t ignore in 2026',
+    readingTime: '5 min',
+    date: 'March 2026',
+    slug: '#',
+  },
+  {
+    category: 'Strategy',
+    title: 'Douyin vs TikTok: why treating them the same costs you money',
+    readingTime: '7 min',
+    date: 'March 2026',
+    slug: '#',
+  },
+  {
+    category: 'Industry',
+    title: '0 out of 37 agencies offer fixed pricing. Here\'s why we do.',
+    readingTime: '4 min',
+    date: 'February 2026',
+    slug: '#',
+  },
+];
+---
+
+<section class="mt-[96px] max-[640px]:mt-[64px]">
+  <Container>
+    <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+      <div class="flex justify-center mb-[12px]">
+        <SectionBar />
+      </div>
+      <SectionHeading overline="Insights">
+        What we're writing about.
+      </SectionHeading>
+    </div>
+
+    <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[24px]">
+      {posts.map((post) => (
+        <a href={post.slug} class="block bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[8px] overflow-hidden transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)]">
+          <!-- Image placeholder -->
+          <div class="w-full aspect-[4/3] bg-[#F7F2EE]"></div>
+          <div class="p-[20px]">
+            <p class="text-[11px] font-medium tracking-[0.05em] uppercase text-[#CC3333] leading-[1.2] mb-[8px]">
+              {post.category}
+            </p>
+            <h3 class="text-[16px] text-[#1A1A1A] font-medium leading-[1.3] mb-[12px] line-clamp-2">
+              {post.title}
+            </h3>
+            <p class="text-[12px] text-[#5C5C5C] font-normal leading-[1.4]">
+              {post.readingTime} of reading <span class="mx-[6px] text-[#E8E0D8]">|</span> {post.date}
+            </p>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <div class="mt-[32px] text-center">
+      <Button variant="secondary" href="/blog">Read more on the blog</Button>
+    </div>
+  </Container>
+</section>

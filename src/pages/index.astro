@@ -1,15 +1,29 @@
 ---
-import PageLayout from '../layouts/PageLayout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/home/Hero.astro';
+import TrustBar from '../components/home/TrustBar.astro';
+import WhoWeAre from '../components/home/WhoWeAre.astro';
+import ServicesGrid from '../components/home/ServicesGrid.astro';
+import DifferentiatorsSection from '../components/home/DifferentiatorsSection.astro';
+import PlatformsSection from '../components/home/PlatformsSection.astro';
+import HowItWorks from '../components/home/HowItWorks.astro';
+import BlogPreview from '../components/home/BlogPreview.astro';
+import CtaSection from '../components/home/CtaSection.astro';
 ---
 
-<PageLayout
-  title="TheRedScroll — China Digital Marketing Agency"
-  description="Navigate China's digital landscape with confidence. Strategy, content, and platform expertise for brands entering the Chinese market."
+<BaseLayout
+  title="China Social Media Agency | TheRedScroll"
+  description="We grow social networks in China. Fixed scope, fixed price, team on the ground. WeChat, Douyin, RedNote, Weibo and 14 more platforms. Book a call."
 >
-  <section class="min-h-screen flex items-center justify-center">
-    <div class="text-center">
-      <h1 class="text-4xl font-medium tracking-tight sm:text-6xl">TheRedScroll</h1>
-      <p class="mt-4 text-lg text-gray-600">China Digital Marketing Agency</p>
-    </div>
-  </section>
-</PageLayout>
+  <main>
+    <Hero />
+    <TrustBar />
+    <WhoWeAre />
+    <ServicesGrid />
+    <DifferentiatorsSection />
+    <PlatformsSection />
+    <HowItWorks />
+    <BlogPreview />
+    <CtaSection />
+  </main>
+</BaseLayout>

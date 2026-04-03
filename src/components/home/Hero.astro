@@ -1,0 +1,40 @@
+---
+import Button from '../ui/Button.astro';
+---
+
+<section class="relative w-full bg-[#1A1A1A] rounded-none overflow-hidden">
+  <div class="max-w-[1200px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[140px] pb-[80px] max-[640px]:pt-[100px] max-[640px]:pb-[48px]">
+    <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[48px] max-[640px]:gap-[32px] items-center">
+      <!-- Text column -->
+      <div class="relative z-[1]">
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+          TheRedScroll
+        </p>
+        <h1 class="text-[#FFFFFF] text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] mb-[16px]">
+          We don't talk about China's platforms. We post on them.
+        </h1>
+        <p class="text-[rgba(255,255,255,0.6)] text-[16px] font-normal leading-[1.6] mb-[32px] max-w-[480px]">
+          Fixed scope. Fixed price. Team on the ground.
+        </p>
+        <div class="flex items-center gap-[12px] flex-wrap">
+          <Button variant="primary" href="/contact">Book a call</Button>
+          <Button variant="secondary-dark" href="/services">See our services</Button>
+        </div>
+      </div>
+
+      <!-- Image column -->
+      <div class="max-[640px]:order-first">
+        <div class="w-full aspect-[4/3] rounded-[8px] bg-[rgba(255,255,255,0.04)] border-[0.5px] border-[rgba(255,255,255,0.08)] flex items-center justify-center">
+          <span class="text-[rgba(255,255,255,0.3)] text-[13px] font-normal">Hero image</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Watermark -->
+  <div class="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden" aria-hidden="true">
+    <span class="text-[#FFFFFF] opacity-[0.03] text-[140px] max-[640px]:text-[80px] font-medium whitespace-nowrap">
+      TheRedScroll
+    </span>
+  </div>
+</section>

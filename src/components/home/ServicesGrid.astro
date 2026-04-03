@@ -1,0 +1,203 @@
+---
+import Button from '../ui/Button.astro';
+import Container from '../ui/Container.astro';
+
+const services = [
+  {
+    title: 'Strategy, campaigns & analytics',
+    description: 'Market research. Content calendars. Always-on campaigns plus event pushes for launches, festivals, shopping holidays. Monthly reporting with numbers you can act on.',
+    href: '/services/strategy-campaigns',
+    cta: 'See our strategy services',
+    bg: '#F7F2EE',
+    iconBg: '#E8E0D8',
+    textColor: '#1A1A1A',
+    descColor: '#5C5C5C',
+    linkColor: '#CC3333',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 6-8"/></svg>`,
+  },
+  {
+    title: 'Platforms',
+    description: 'WeChat, Douyin, RedNote, Weibo, and 14 more. We post where your audience already spends their day.',
+    href: '/platforms',
+    cta: 'Explore all 18 platforms',
+    bg: '#1A1A1A',
+    iconBg: 'rgba(255,255,255,0.1)',
+    textColor: '#FFFFFF',
+    descColor: 'rgba(255,255,255,0.6)',
+    linkColor: '#CC3333',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>`,
+  },
+  {
+    title: 'Advertising planning & buying',
+    description: 'Media planning, ad accounts, creative testing, performance reports. Ad spend billed separately. No markups. Ever.',
+    href: '/services/advertising',
+    cta: 'See ad services',
+    bg: '#E8E0D8',
+    iconBg: '#FFFFFF',
+    textColor: '#1A1A1A',
+    descColor: '#5C5C5C',
+    linkColor: '#CC3333',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>`,
+  },
+  {
+    title: 'Content production',
+    description: 'AI visuals and video through HubStudio.ai. Real shoots in China. Native copywriting with cultural proofing built in.',
+    href: '/services/content-production',
+    cta: 'See how we create content',
+    bg: '#CC3333',
+    iconBg: 'rgba(255,255,255,0.2)',
+    textColor: '#FFFFFF',
+    descColor: 'rgba(255,255,255,0.8)',
+    linkColor: '#FFFFFF',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/></svg>`,
+  },
+  {
+    title: 'Influencer marketing',
+    description: 'KOL and KOC campaigns from sourcing to final report. Live commerce on Douyin and Taobao Live. We verify every engagement number.',
+    href: '/services/influencer-marketing',
+    cta: 'See KOL and KOC services',
+    bg: '#F7F2EE',
+    iconBg: '#E8E0D8',
+    textColor: '#1A1A1A',
+    descColor: '#5C5C5C',
+    linkColor: '#CC3333',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
+  },
+  {
+    title: 'China market entry',
+    description: 'Account registration, platform verification, e-commerce setup, brand localization. New to China or rebuilding.',
+    href: '/services/market-entry',
+    cta: 'Start your China entry',
+    bg: '#1A1A1A',
+    iconBg: 'rgba(255,255,255,0.1)',
+    textColor: '#FFFFFF',
+    descColor: 'rgba(255,255,255,0.6)',
+    linkColor: '#CC3333',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>`,
+  },
+  {
+    title: 'CRM & private domain traffic',
+    description: 'WeCom, WeChat CRM, private communities, automated messaging. Build an audience you own.',
+    href: '/services/crm-private-domain',
+    cta: 'Build your private domain',
+    bg: '#E8E0D8',
+    iconBg: '#FFFFFF',
+    textColor: '#1A1A1A',
+    descColor: '#5C5C5C',
+    linkColor: '#CC3333',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>`,
+  },
+  {
+    title: 'Training & consulting',
+    description: 'Masterclasses on specific platforms. Consulting for leadership teams. Coaching for the people running your China accounts.',
+    href: '/services/training-consulting',
+    cta: 'See training options',
+    bg: '#B02D2D',
+    iconBg: 'rgba(255,255,255,0.2)',
+    textColor: '#FFFFFF',
+    descColor: 'rgba(255,255,255,0.8)',
+    linkColor: '#FFFFFF',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>`,
+  },
+];
+---
+
+<section class="mt-[96px] max-[640px]:mt-[64px]">
+  <Container>
+    <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+
+      <!-- Hero card: spans 2 cols, 2 rows -->
+      <div class="relative col-span-2 row-span-2 max-[640px]:col-span-1 max-[640px]:row-span-1 bg-[#1A1A1A] rounded-[12px] p-[32px] max-[640px]:p-[24px] flex flex-col justify-between min-h-[320px] max-[640px]:min-h-0 overflow-hidden">
+        <!-- Background image -->
+        <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/why-theredscroll-bg.png')" aria-hidden="true"></div>
+        <div class="relative z-[1]">
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">
+            What we do
+          </p>
+          <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[16px]">
+            Eight pillars to grow your social networks in China.
+          </h2>
+          <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[400px]">
+            From strategy to content production, from influencer campaigns to private domain CRM. Everything you need, under one roof.
+          </p>
+        </div>
+        <div class="relative z-[1] mt-[24px]">
+          <Button variant="secondary-dark" href="/services">Explore our services</Button>
+        </div>
+      </div>
+
+      <!-- First 2 service cards (next to hero) -->
+      {services.slice(0, 2).map((service) => (
+        <div class="border-none rounded-[10px] p-[24px] max-[640px]:p-[20px] flex flex-col justify-between" style={`background: ${service.bg}; border-radius: ${service.bg === '#1A1A1A' || service.bg === '#CC3333' ? '12px' : '10px'}`}>
+          <div>
+            <div class="w-[40px] h-[40px] rounded-[6px] flex items-center justify-center mb-[16px]" style={`background: ${service.iconBg}`}>
+              <Fragment set:html={service.icon} />
+            </div>
+            <h3 class="text-[18px] font-medium leading-[1.3] mb-[8px]" style={`color: ${service.textColor}`}>
+              {service.title}
+            </h3>
+            <p class="text-[13px] font-normal leading-[1.5]" style={`color: ${service.descColor}`}>
+              {service.description}
+            </p>
+          </div>
+          <a href={service.href} class="inline-flex items-center gap-[6px] text-[13px] font-medium mt-[16px] transition-colors duration-150" style={`color: ${service.linkColor}`}>
+            {service.cta} <span>&rarr;</span>
+          </a>
+        </div>
+      ))}
+
+      <!-- Next row: 4 cards -->
+      {services.slice(2, 6).map((service) => (
+        <div class="border-none p-[24px] max-[640px]:p-[20px] flex flex-col justify-between" style={`background: ${service.bg}; border-radius: ${service.bg === '#1A1A1A' || service.bg === '#CC3333' ? '12px' : '10px'}`}>
+          <div>
+            <div class="w-[40px] h-[40px] rounded-[6px] flex items-center justify-center mb-[16px]" style={`background: ${service.iconBg}`}>
+              <Fragment set:html={service.icon} />
+            </div>
+            <h3 class="text-[18px] font-medium leading-[1.3] mb-[8px]" style={`color: ${service.textColor}`}>
+              {service.title}
+            </h3>
+            <p class="text-[13px] font-normal leading-[1.5]" style={`color: ${service.descColor}`}>
+              {service.description}
+            </p>
+          </div>
+          <a href={service.href} class="inline-flex items-center gap-[6px] text-[13px] font-medium mt-[16px] transition-colors duration-150" style={`color: ${service.linkColor}`}>
+            {service.cta} <span>&rarr;</span>
+          </a>
+        </div>
+      ))}
+
+      <!-- Last 2 service cards + CTA -->
+      {services.slice(6).map((service) => (
+        <div class="border-none p-[24px] max-[640px]:p-[20px] flex flex-col justify-between" style={`background: ${service.bg}; border-radius: ${service.bg === '#1A1A1A' || service.bg === '#CC3333' ? '12px' : '10px'}`}>
+          <div>
+            <div class="w-[40px] h-[40px] rounded-[6px] flex items-center justify-center mb-[16px]" style={`background: ${service.iconBg}`}>
+              <Fragment set:html={service.icon} />
+            </div>
+            <h3 class="text-[18px] font-medium leading-[1.3] mb-[8px]" style={`color: ${service.textColor}`}>
+              {service.title}
+            </h3>
+            <p class="text-[13px] font-normal leading-[1.5]" style={`color: ${service.descColor}`}>
+              {service.description}
+            </p>
+          </div>
+          <a href={service.href} class="inline-flex items-center gap-[6px] text-[13px] font-medium mt-[16px] transition-colors duration-150" style={`color: ${service.linkColor}`}>
+            {service.cta} <span>&rarr;</span>
+          </a>
+        </div>
+      ))}
+
+      <!-- CTA card -->
+      <div class="col-span-2 max-[640px]:col-span-1 bg-[#CC3333] rounded-[12px] p-[32px] max-[640px]:p-[24px] flex items-center justify-between max-[640px]:flex-col max-[640px]:items-start gap-[24px]">
+        <div>
+          <h3 class="text-[18px] text-[#FFFFFF] font-medium leading-[1.3] mb-[4px]">
+            Ready to grow in China?
+          </h3>
+          <p class="text-[14px] text-[rgba(255,255,255,0.8)] font-normal leading-[1.5]">
+            One call. We'll walk you through what fits your brand.
+          </p>
+        </div>
+        <Button variant="secondary-dark" href="/contact">Book a call</Button>
+      </div>
+    </div>
+  </Container>
+</section>
