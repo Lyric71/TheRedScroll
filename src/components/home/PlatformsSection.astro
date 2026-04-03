@@ -10,6 +10,7 @@ const platforms = [
     chineseName: '微信',
     brandColor: '#07C160',
     logo: '/images/platforms/wechat-logo.svg',
+    href: '/platforms/wechat',
     description: 'China\'s super app. Official Accounts, Moments, Mini Programs, WeCom. If you\'re going to pick just one platform in China, this is the one.',
   },
   {
@@ -17,6 +18,7 @@ const platforms = [
     chineseName: '小红书',
     brandColor: '#FF2442',
     logo: '/images/platforms/rednote-logo.svg',
+    href: '/platforms/rednote',
     description: 'Where Chinese consumers go before they buy pretty much anything. Reviews, tutorials, shoppable posts. Think of it as China\'s version of Instagram, except people actually buy things from it.',
   },
   {
@@ -24,6 +26,7 @@ const platforms = [
     chineseName: '抖音',
     brandColor: '#010101',
     logo: '/images/platforms/douyin-logo.svg',
+    href: '/platforms/douyin',
     description: 'Short video meets live commerce. The reach is massive and the path from content to sale is short. Brands that crack Douyin tend to see results fast.',
   },
   {
@@ -31,12 +34,13 @@ const platforms = [
     chineseName: '微博',
     brandColor: '#E6162D',
     logo: '/images/platforms/weibo-logo.svg',
+    href: '/platforms/weibo',
     description: 'Mass reach and PR. Trending topics, celebrity tie-ins, news cycles. When you need a brand name to travel across China quickly, this is still where it happens.',
   },
 ];
 ---
 
-<section class="mt-[96px] max-[640px]:mt-[64px]">
+<section class="mt-[64px] max-[640px]:mt-[40px]">
   <Container>
     <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
       <div class="flex justify-center mb-[12px]">
@@ -49,7 +53,7 @@ const platforms = [
 
     <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
       {platforms.map((platform) => (
-        <div class="bg-[#F0F1F4] border-none rounded-[10px] overflow-hidden">
+        <a href={platform.href} class="bg-[#F0F1F4] border-none rounded-[10px] overflow-hidden block transition-[border-color] duration-150 border border-transparent hover:border-[rgba(0,0,0,0.15)]">
           <!-- Branded visual header -->
           <div class="relative w-full aspect-[16/9] flex flex-col items-center justify-center overflow-hidden" style={`background: ${platform.brandColor}`}>
             <!-- Large Chinese character watermark -->
@@ -71,7 +75,7 @@ const platforms = [
               {platform.description}
             </p>
           </div>
-        </div>
+        </a>
       ))}
     </div>
 

@@ -446,7 +446,7 @@ Used inside articles. Max 2 per article.
 
 ## 5. Iconography
 
-- No icons unless absolutely necessary for navigation (hamburger, chevron, arrow, social).
+- No icons unless absolutely necessary for navigation (hamburger, chevron, arrow, social) or platform identification in hero sections.
 - Style: line only, `1.5px` stroke, `var(--color-ink)` on light backgrounds, `#FFFFFF` on dark backgrounds.
 - No filled icons. No colored icons (except when icon sits inside a vermillion button, where it is white).
 - Library: Lucide (`https://lucide.dev`). Fallback: Phosphor light.
@@ -516,6 +516,7 @@ Used on: homepage, blog index, services index, knowledge hub, about page, career
 - Subtitle: `rgba(255, 255, 255, 0.6)` or `var(--color-vermillion)`. `14px`. `font-weight: 400`. `margin-bottom: 16px`.
 - CTA button: `.btn-primary`, centered (`margin: 0 auto` or `text-align: center`).
 - Optional decorative watermark: brand name in `#FFFFFF` at `opacity: 0.03`. `font-size: 140px` desktop / `80px` mobile. `font-weight: 500`. `position: absolute`. Centered behind the hero text. `pointer-events: none`. `user-select: none`. `overflow: hidden`. This is the only decorative background text allowed on the entire site.
+- Optional platform logo constellation (homepage only): platform SVG marks displayed at low opacity (`0.10`–`0.18`) with thin connecting lines (`#FFFFFF` at `opacity: 0.06`, `1px` stroke). Logos use `#FFFFFF` fill only (no brand colors). Positioned to the right of hero text on desktop, hidden on mobile. `pointer-events: none`. `user-select: none`. Max width: `400px`. This element is informational (communicates platform coverage), not decorative.
 - No background images. No gradients. No photography.
 
 **Style B: Article/detail hero**
@@ -581,7 +582,7 @@ These apply to every element on every page. No exceptions.
 2. **No gradients.** Flat solid colors only.
 3. **No animations** except `transition` on `background`, `color`, `border-color`, `opacity`, `transform`, and `filter`. Duration: `0.15s`. Easing: `ease`. No keyframe animations.
 4. **No border-radius above `12px`.** Values: `12px` dark sections, `10px` rice paper cards, `8px` bordered cards and images, `6px` buttons and inputs. `0` for section divider bars and full-width hero images.
-5. **No decorative elements** in the content body. Only exception: faint brand watermark in dark hero banners at `opacity: 0.03`.
+5. **No decorative elements** in the content body. Only exceptions: faint brand watermark in dark hero banners at `opacity: 0.03`, and the platform logo constellation in the homepage hero (see 7.2).
 6. **No pure black `#000000`.** Always `var(--color-ink)` / `#1A1A1A`.
 7. **No colors outside the palette.**
 8. **Vermillion is rationed.** Only for: logo/brand name, `.number-label`, `.btn-primary`, `.category-tag`, active TOC indicator, footer section titles, section divider bar, overlines inside dark sections, required field asterisks, inline links.

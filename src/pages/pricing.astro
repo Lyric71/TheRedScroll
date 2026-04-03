@@ -298,26 +298,88 @@ const addOnPlatforms = [
           </table>
         </div>
 
-        <!-- Mobile: stacked cards (shown only on mobile) -->
+        <!-- Mobile: stacked cards with full features (shown only on mobile) -->
         <div class="hidden max-[640px]:flex flex-col gap-[16px]">
-          {packages.map((pkg) => (
-            <div class:list={[
-              'rounded-[12px] p-[24px]',
-              pkg.highlighted ? 'bg-[#1A1A1A]' : 'bg-[#F0F1F4]'
-            ]}>
-              <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333] mb-[4px]">
-                {pkg.highlighted ? 'Most popular' : pkg.name}
-              </p>
-              {pkg.highlighted && <p class="text-[14px] font-medium text-[#FFFFFF] mb-[2px]">{pkg.name}</p>}
-              <p class:list={['text-[28px] font-medium leading-[1.2] mb-[4px]', pkg.highlighted ? 'text-[#FFFFFF]' : 'text-[#1A1A1A]']}>
-                {pkg.price}<span class:list={['text-[14px] font-normal', pkg.highlighted ? 'text-[rgba(255,255,255,0.5)]' : 'text-[#5C5C5C]']}>/mo</span>
-              </p>
-              <p class:list={['text-[13px] font-normal leading-[1.5] mb-[16px]', pkg.highlighted ? 'text-[rgba(255,255,255,0.6)]' : 'text-[#5C5C5C]']}>
-                {pkg.description}
-              </p>
-              <Button variant={pkg.highlighted ? 'primary' : 'secondary'} href="/contact" class="w-full justify-center">Get started</Button>
-            </div>
-          ))}
+          {packages.map((pkg) => {
+            const dark = pkg.highlighted;
+            const textPrimary = dark ? 'text-[#FFFFFF]' : 'text-[#1A1A1A]';
+            const textSecondary = dark ? 'text-[rgba(255,255,255,0.6)]' : 'text-[#5C5C5C]';
+            const borderColor = dark ? 'border-[rgba(255,255,255,0.1)]' : 'border-[rgba(0,0,0,0.06)]';
+
+            const features = [
+              { section: 'Strategy & setup', items: [
+                { label: 'Competitor study', value: pkg.strategy.competitor },
+                { label: 'Content strategy & pillars', value: pkg.strategy.contentStrategy },
+                { label: 'Monthly editorial calendar', value: pkg.strategy.editorialCalendar },
+                { label: 'Account opening & registration', value: pkg.strategy.accountOpening },
+              ]},
+              { section: 'Content', items: [
+                { label: 'WeChat', value: pkg.content.wechat },
+                { label: 'Weibo', value: pkg.content.weibo },
+                { label: 'RedNote (Xiaohongshu)', value: pkg.content.rednote },
+                { label: 'Douyin (client footage)', value: pkg.content.douyinClient },
+                { label: 'Douyin (AI-generated)', value: pkg.content.douyinAi },
+                { label: 'Total Douyin videos', value: pkg.content.douyinTotal },
+              ]},
+              { section: 'AI production', items: [
+                { label: 'AI video via HubStudio.ai', value: pkg.ai },
+                { label: 'Brief validated before production', value: pkg.ai },
+              ]},
+              { section: 'Social listening', items: [
+                { label: 'Brand mention monitoring', value: pkg.socialListening },
+                { label: 'Competitor activity tracking', value: pkg.socialListening },
+                { label: 'Monthly sentiment summary', value: pkg.socialListening },
+              ]},
+              { section: 'Support & reporting', items: [
+                { label: 'Dedicated account manager', value: pkg.support.accountManager },
+                { label: 'Chat support (Mon-Fri)', value: pkg.support.chatSupport },
+                { label: 'Monthly performance report', value: pkg.support.monthlyReport },
+                { label: 'Strategy calls', value: pkg.support.strategyCalls },
+              ]},
+            ];
+
+            return (
+              <div class:list={[
+                'rounded-[12px] p-[24px]',
+                dark ? 'bg-[#1A1A1A]' : 'bg-[#F0F1F4]'
+              ]}>
+                <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333] mb-[4px]">
+                  {dark ? 'Most popular' : pkg.name}
+                </p>
+                {dark && <p class="text-[14px] font-medium text-[#FFFFFF] mb-[2px]">{pkg.name}</p>}
+                <p class:list={['text-[28px] font-medium leading-[1.2] mb-[4px]', textPrimary]}>
+                  {pkg.price}<span class:list={['text-[14px] font-normal', textSecondary]}>/mo</span>
+                </p>
+                <p class:list={['text-[13px] font-normal leading-[1.5] mb-[20px]', textSecondary]}>
+                  {pkg.description}
+                </p>
+
+                <Button variant={dark ? 'primary' : 'secondary'} href="/contact" class="w-full justify-center">Get started</Button>
+
+                <div class="mt-[24px] flex flex-col gap-[20px]">
+                  {features.map((group) => (
+                    <div>
+                      <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333] mb-[8px]">{group.section}</p>
+                      <div class="flex flex-col">
+                        {group.items.map((item) => (
+                          <div class:list={['flex justify-between items-center py-[8px] border-b', borderColor]}>
+                            <span class:list={['text-[13px] font-normal', textPrimary]}>{item.label}</span>
+                            <span class:list={['text-[13px] font-medium shrink-0 ml-[12px]',
+                              item.value === true ? 'text-[#CC3333]' :
+                              item.value === false ? textSecondary :
+                              textPrimary
+                            ]}>
+                              {item.value === true ? '\u2713' : item.value === false ? '\u2014' : item.value}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            );
+          })}
         </div>
 
         <!-- Content specs -->

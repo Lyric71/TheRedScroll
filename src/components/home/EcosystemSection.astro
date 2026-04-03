@@ -7,87 +7,86 @@ const pillars = [
   {
     title: 'Audience.',
     description: '1 billion users. Dozens of platforms. Each one different. Find your audience first. Then pick the platform.',
-    textColor: '#FFFFFF',
-    descColor: 'rgba(255,255,255,0.85)',
+    stat: '1B+',
+    statLabel: 'users',
     image: '/images/ecosystem/audience.png',
-    gradient: 'linear-gradient(to top, rgba(26,26,26,0.9) 30%, rgba(26,26,26,0.3) 100%)',
   },
   {
     title: 'Content.',
     description: 'What works on Douyin fails on WeChat. Every platform has its own format, language, and pace. Build for each one.',
-    textColor: '#FFFFFF',
-    descColor: 'rgba(255,255,255,0.85)',
+    stat: '18+',
+    statLabel: 'platforms',
     image: '/images/ecosystem/content.png',
-    gradient: 'linear-gradient(to top, rgba(26,26,26,0.9) 30%, rgba(26,26,26,0.2) 100%)',
   },
   {
     title: 'Influencers.',
     description: 'KOLs and KOCs drive buying decisions more than ads do. Right influencer, right platform, right moment. Everything else is waste.',
-    textColor: '#FFFFFF',
-    descColor: 'rgba(255,255,255,0.85)',
+    stat: '80%',
+    statLabel: 'trust KOLs over ads',
     image: '/images/ecosystem/influencers.png',
-    gradient: 'linear-gradient(to top, rgba(204,51,51,0.95) 25%, rgba(204,51,51,0.3) 100%)',
   },
   {
     title: 'Platforms.',
     description: 'WeChat, Douyin, RedNote, Weibo, and 14 more. Algorithms change monthly. You need a team that\'s on them every day.',
-    textColor: '#FFFFFF',
-    descColor: 'rgba(255,255,255,0.85)',
+    stat: '14+',
+    statLabel: 'more platforms',
     image: '/images/ecosystem/platforms.png',
-    gradient: 'linear-gradient(to top, rgba(26,26,26,0.9) 30%, rgba(26,26,26,0.15) 100%)',
+  },
+  {
+    title: 'Commerce.',
+    description: 'Social media in China is where people buy, not just browse. Content and commerce are the same thing here.',
+    stat: '3.5T',
+    statLabel: 'RMB Douyin GMV',
+    image: '/images/ecosystem/commerce.png',
   },
 ];
 ---
 
-<section class="mt-[96px] max-[640px]:mt-[64px]">
+<section class="mt-[64px] max-[640px]:mt-[40px]">
   <Container>
-    <!-- Bento grid: heading card + image left, 4 pillar cards right -->
-    <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[16px]">
-      <!-- Left column -->
-      <div class="flex flex-col gap-[16px]">
-        <!-- Heading card -->
-        <div class="relative rounded-[10px] p-[32px] max-[640px]:p-[24px] flex flex-col justify-between overflow-hidden">
-          <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero/hero-phones-shanghai.png')" aria-hidden="true"></div>
-          <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(26,26,26,0.95) 40%, rgba(26,26,26,0.5) 100%)" aria-hidden="true"></div>
-          <div class="relative z-[1]">
-            <div class="w-[40px] h-[3px] bg-[#CC3333] rounded-none mb-[12px]"></div>
-            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[12px]">
-              Chinese social media is not a channel. It's an ecosystem.
-            </h2>
-            <p class="text-[14px] text-[rgba(255,255,255,0.7)] font-normal leading-[1.6]">
-              Audience, content, influencers, platforms, and commerce are all connected. You can't win on one without the others.
-            </p>
-          </div>
-          <div class="relative z-[1] mt-[24px]">
-            <Button variant="primary" href="/contact">Book a call</Button>
-          </div>
-        </div>
-        <!-- Commerce card -->
-        <div class="relative rounded-[12px] min-h-[180px] flex flex-col justify-end overflow-hidden">
-          <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/ecosystem/commerce.png')" aria-hidden="true"></div>
-          <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(26,26,26,0.92) 35%, rgba(26,26,26,0.3) 100%)" aria-hidden="true"></div>
-          <div class="relative z-[1] p-[24px] max-[640px]:p-[20px]">
-            <h3 class="text-[18px] text-[#FFFFFF] font-medium leading-[1.3] mb-[6px]">
-              Commerce.
-            </h3>
-            <p class="text-[14px] text-[rgba(255,255,255,0.85)] font-normal leading-[1.5]">
-              Social media in China is where people buy, not just browse. Content and commerce are the same thing here.
-            </p>
-          </div>
-        </div>
+    <!-- Header -->
+    <div class="flex items-end justify-between gap-[32px] max-[640px]:flex-col max-[640px]:items-start max-[640px]:gap-[16px] mb-[32px]">
+      <div class="max-w-[560px]">
+        <SectionBar />
+        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[8px]">
+          Chinese social media is not a channel. It's an ecosystem.
+        </h2>
+        <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
+          Audience, content, influencers, platforms, and commerce are all connected. You can't win on one without the others.
+        </p>
       </div>
+      <Button variant="primary" href="/contact" class="shrink-0">Book a call</Button>
+    </div>
+  </Container>
 
-      <!-- Right column: 2x2 pillar cards -->
-      <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
-        {pillars.map((pillar) => (
-          <div class="relative overflow-hidden rounded-[12px] min-h-[200px] flex flex-col justify-end">
-            <div class="absolute inset-0 bg-cover bg-center" style={`background-image: url('${pillar.image}')`} aria-hidden="true"></div>
-            <div class="absolute inset-0" style={`background: ${pillar.gradient}`} aria-hidden="true"></div>
-            <div class="relative z-[1] p-[24px] max-[640px]:p-[20px]">
-              <h3 class="text-[18px] font-medium leading-[1.3] mb-[6px]" style={`color: ${pillar.textColor}`}>
+  <!-- Horizontal scroll strip -->
+  <div class="relative">
+    <!-- Fade right edge -->
+    <div class="absolute right-0 top-0 bottom-0 w-[80px] bg-gradient-to-l from-[#FFFFFF] to-transparent z-[1] pointer-events-none" aria-hidden="true"></div>
+
+    <div class="overflow-x-auto scrollbar-hide" id="ecosystem-scroll">
+      <div class="flex gap-[16px] px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pb-[8px]" style="min-width: min-content;">
+        {pillars.map((pillar, i) => (
+          <div
+            class="ecosystem-card relative shrink-0 w-[360px] max-[640px]:w-[300px] h-[420px] max-[640px]:h-[360px] rounded-[12px] overflow-hidden flex flex-col justify-end cursor-grab select-none"
+            data-index={i}
+          >
+            <!-- Background image with hover zoom -->
+            <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out ecosystem-bg" style={`background-image: url('${pillar.image}')`} aria-hidden="true"></div>
+            <!-- Gradient overlay -->
+            <div class="absolute inset-0 bg-gradient-to-t from-[rgba(26,26,26,0.95)] via-[rgba(26,26,26,0.4)] to-transparent" aria-hidden="true"></div>
+
+            <!-- Content -->
+            <div class="relative z-[1] p-[28px]">
+              <!-- Counter stat -->
+              <div class="flex items-baseline gap-[6px] mb-[12px]">
+                <span class="text-[32px] text-[#FFFFFF] font-medium leading-none ecosystem-counter" data-target={pillar.stat}>0</span>
+                <span class="text-[12px] text-[rgba(255,255,255,0.5)] font-normal">{pillar.statLabel}</span>
+              </div>
+              <h3 class="text-[20px] text-[#FFFFFF] font-medium leading-[1.3] mb-[8px]">
                 {pillar.title}
               </h3>
-              <p class="text-[13px] font-normal leading-[1.5]" style={`color: ${pillar.descColor}`}>
+              <p class="text-[13px] text-[rgba(255,255,255,0.75)] font-normal leading-[1.5]">
                 {pillar.description}
               </p>
             </div>
@@ -95,5 +94,113 @@ const pillars = [
         ))}
       </div>
     </div>
-  </Container>
+  </div>
 </section>
+
+<style>
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  /* Scroll reveal initial state */
+  .ecosystem-card {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  .ecosystem-card.revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  /* Hover zoom on background */
+  .ecosystem-card:hover .ecosystem-bg {
+    transform: scale(1.08);
+  }
+</style>
+
+<script>
+  // Drag to scroll
+  const scrollContainer = document.getElementById('ecosystem-scroll');
+  if (scrollContainer) {
+    let isDown = false;
+    let startX: number;
+    let scrollLeft: number;
+
+    scrollContainer.addEventListener('mousedown', (e) => {
+      isDown = true;
+      scrollContainer.style.cursor = 'grabbing';
+      startX = e.pageX - scrollContainer.offsetLeft;
+      scrollLeft = scrollContainer.scrollLeft;
+    });
+    scrollContainer.addEventListener('mouseleave', () => { isDown = false; scrollContainer.style.cursor = ''; });
+    scrollContainer.addEventListener('mouseup', () => { isDown = false; scrollContainer.style.cursor = ''; });
+    scrollContainer.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - scrollContainer.offsetLeft;
+      scrollContainer.scrollLeft = scrollLeft - (x - startX);
+    });
+  }
+
+  // Scroll reveal with stagger + trigger counters after reveal
+  const cards = document.querySelectorAll('.ecosystem-card');
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const card = entry.target as HTMLElement;
+          const index = parseInt(card.dataset.index || '0');
+          const delay = index * 250;
+          setTimeout(() => {
+            card.classList.add('revealed');
+            // Trigger counter after card is visible
+            const counter = card.querySelector('.ecosystem-counter') as HTMLElement;
+            if (counter) {
+              setTimeout(() => {
+                animateCounter(counter, counter.dataset.target || '0');
+              }, 600);
+            }
+          }, delay);
+          revealObserver.unobserve(card);
+        }
+      });
+    },
+    { threshold: 0.05 }
+  );
+  cards.forEach((card) => revealObserver.observe(card));
+
+  function animateCounter(el: HTMLElement, target: string) {
+    // Extract number and suffix (e.g., "1B+" -> num=1, suffix="B+")
+    const match = target.match(/^([\d.]+)(.*)$/);
+    if (!match) { el.textContent = target; return; }
+
+    const endNum = parseFloat(match[1]);
+    const suffix = match[2];
+    const duration = 2500;
+    const startTime = performance.now();
+
+    function tick(now: number) {
+      const elapsed = now - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      // Ease out cubic
+      const eased = 1 - Math.pow(1 - progress, 3);
+      const current = eased * endNum;
+
+      if (endNum >= 100) {
+        el.textContent = Math.round(current) + suffix;
+      } else if (endNum >= 10) {
+        el.textContent = Math.round(current) + suffix;
+      } else {
+        el.textContent = current.toFixed(1).replace(/\.0$/, '') + suffix;
+      }
+
+      if (progress < 1) requestAnimationFrame(tick);
+      else el.textContent = target;
+    }
+
+    requestAnimationFrame(tick);
+  }
+</script>

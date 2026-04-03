@@ -1,0 +1,906 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import Container from '../../components/ui/Container.astro';
+import SectionBar from '../../components/ui/SectionBar.astro';
+import SectionHeading from '../../components/ui/SectionHeading.astro';
+import Button from '../../components/ui/Button.astro';
+
+const stats = [
+  { label: 'Monthly active users', value: '1.4B+', image: '/images/platforms/wechat-stats/monthly-active-users.png' },
+  { label: 'Users in China', value: '810M+', image: '/images/platforms/wechat-stats/users-in-china.png' },
+  { label: 'Avg. daily time per user', value: '82 min', image: '/images/platforms/wechat-stats/daily-time-per-user.png' },
+  { label: 'Mini Program monthly users', value: '945M', image: '/images/platforms/wechat-stats/mini-program-users.png' },
+  { label: 'WeChat Pay active users', value: '935M+', image: '/images/platforms/wechat-stats/wechat-pay-users.png' },
+  { label: 'Messages sent daily', value: '45B', image: '/images/platforms/wechat-stats/messages-sent-daily.png' },
+  { label: 'Official Accounts', value: '3.5M+', image: '/images/platforms/wechat-stats/official-accounts.png' },
+  { label: 'Users opening 10+ times/day', value: '60%+', image: '/images/platforms/wechat-stats/daily-opens.png' },
+];
+
+const ecosystem = [
+  {
+    name: 'Service Account',
+    chineseName: '服务号',
+    description: 'Your brand\'s home base. Custom menus, WeChat Pay, CRM tools. 4 posts per month, up to 32 articles total. The only account type foreign companies can register on their own.',
+    image: '/images/platforms/wechat-ecosystem/service-account.png',
+    bg: '#F7F2EE',
+    iconBg: '#E8E0D8',
+    textColor: '#1A1A1A',
+    descColor: '#5C5C5C',
+    linkColor: '#CC3333',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/></svg>`,
+  },
+  {
+    name: 'Mini Programs',
+    chineseName: '小程序',
+    description: 'Apps inside WeChat. No download needed. E-commerce, bookings, loyalty, games. 945M monthly users. Plugs straight into WeChat Pay.',
+    image: '/images/platforms/wechat-ecosystem/mini-programs.png',
+    bg: '#1A1A1A',
+    iconBg: 'rgba(255,255,255,0.1)',
+    textColor: '#FFFFFF',
+    descColor: 'rgba(255,255,255,0.6)',
+    linkColor: '#CC3333',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>`,
+  },
+  {
+    name: 'WeChat Channels',
+    chineseName: '视频号',
+    description: 'Short video and livestreaming. Links to your Official Account and Mini Program. Watch a video, tap through, buy. Stays inside WeChat.',
+    image: '/images/platforms/wechat-ecosystem/wechat-channels.png',
+    bg: '#CC3333',
+    iconBg: 'rgba(255,255,255,0.2)',
+    textColor: '#FFFFFF',
+    descColor: 'rgba(255,255,255,0.8)',
+    linkColor: '#FFFFFF',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>`,
+  },
+  {
+    name: 'WeChat Pay',
+    chineseName: '微信支付',
+    description: 'Mobile payments. 935M+ active users. Street food to designer bags. If you sell anything in China, you need it.',
+    image: '/images/platforms/wechat-ecosystem/wechat-pay.png',
+    bg: '#E8E0D8',
+    iconBg: '#FFFFFF',
+    textColor: '#1A1A1A',
+    descColor: '#5C5C5C',
+    linkColor: '#CC3333',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>`,
+  },
+  {
+    name: 'WeCom',
+    chineseName: '企业微信',
+    description: 'Enterprise CRM. Direct messaging, audience segments, automated outreach. Reaches 750M+ WeChat users. Most brands set it up way too late.',
+    image: '/images/platforms/wechat-ecosystem/wecom.png',
+    bg: '#1A1A1A',
+    iconBg: 'rgba(255,255,255,0.1)',
+    textColor: '#FFFFFF',
+    descColor: 'rgba(255,255,255,0.6)',
+    linkColor: '#CC3333',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>`,
+  },
+  {
+    name: 'Moments',
+    chineseName: '朋友圈',
+    description: 'Social feed where users share life updates. Brands place paid ads right in the feed. Best format for broad awareness.',
+    image: '/images/platforms/wechat-ecosystem/moments.png',
+    bg: '#B02D2D',
+    iconBg: 'rgba(255,255,255,0.2)',
+    textColor: '#FFFFFF',
+    descColor: 'rgba(255,255,255,0.8)',
+    linkColor: '#FFFFFF',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
+  },
+];
+
+const services = [
+  {
+    title: 'Account setup and verification',
+    description: 'We register your Service Account, push it through verification, set up menus, auto-replies, and brand assets. We deal with the paperwork so you\'re not waiting around.',
+    result: 'A live, verified WeChat account ready to publish.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/></svg>`,
+    image: '/images/platforms/wechat-services/account-setup.png',
+  },
+  {
+    title: 'Content strategy and production',
+    description: 'We map your content pillars, build the calendar, and produce articles, graphics, and short videos. Native Chinese speakers write everything. HubStudio.ai keeps production moving fast.',
+    result: 'Localized content your Chinese audience actually wants to read.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/></svg>`,
+    image: '/images/platforms/wechat-services/content-strategy.png',
+  },
+  {
+    title: 'Mini Program development',
+    description: 'Online stores, lead capture, loyalty programs, booking tools. Built inside WeChat, connected to Pay.',
+    result: 'A storefront that turns readers into buyers without sending them somewhere else.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>`,
+    image: '/images/platforms/wechat-services/mini-program.png',
+  },
+  {
+    title: 'WeChat advertising',
+    description: 'Media planning, creative, A/B tests, bid management, performance reports. Moments Ads, Banner Ads, Mini Program Ads. We bill ad spend at cost with no markup.',
+    result: 'Ads that reach the right audience with transparent spend reporting.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>`,
+    image: '/images/platforms/wechat-services/advertising.png',
+  },
+  {
+    title: 'WeCom and CRM',
+    description: 'Private domain setup from the start. Segmentation, welcome sequences, one-on-one outreach, group chats. This is the part most agencies skip.',
+    result: 'A customer list that no platform can take from you.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>`,
+    image: '/images/platforms/wechat-services/wecom-crm.png',
+  },
+  {
+    title: 'Channels and KOL campaigns',
+    description: 'Short video production, livestreams on WeChat Channels, plus Key Opinion Leader sourcing, vetting, and campaign management. Verified engagement data only.',
+    result: 'Content and influencer campaigns that connect back to your account and Mini Program.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>`,
+    image: '/images/platforms/wechat-services/channels-kol.png',
+  },
+];
+
+const bestPractices = [
+  {
+    title: 'Quality beats frequency, every time.',
+    description: 'Service Accounts get 4 posts a month. One article that people share is worth more than four with 30 opens.',
+  },
+  {
+    title: 'Don\'t translate. Localize.',
+    description: 'Taking your English content and running it through translation doesn\'t cut it. Start from a Chinese brief, written by someone who knows the platform.',
+  },
+  {
+    title: 'Build your Mini Program early.',
+    description: 'You don\'t need to be selling yet. A product catalog, a brand quiz, an event sign-up form. Give readers a next step after your article.',
+  },
+  {
+    title: 'Start WeCom on day one.',
+    description: 'Every follower should become a WeCom contact. Six months in, brands with a strong private domain are playing a different game.',
+  },
+  {
+    title: 'Paid and organic together.',
+    description: 'Moments Ads grow your follower count fast. But if there\'s nothing worth reading when they land, they unfollow within weeks.',
+  },
+  {
+    title: 'Think in systems, not channels.',
+    description: 'Connect your Official Account to a Mini Program, tie in WeCom for retention, use Channels for discovery. Each piece feeds the others.',
+  },
+];
+
+const steps = [
+  {
+    number: '01',
+    title: 'Discovery call.',
+    description: 'Tell us about your brand, your goals, and where you stand with China right now. No pitch deck. Just the right questions.',
+    icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>`,
+  },
+  {
+    number: '02',
+    title: 'Proposal.',
+    description: 'Clear SOW. Fixed price. Every deliverable listed out. You see what you\'re getting and what it costs before you commit.',
+    icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>`,
+  },
+  {
+    number: '03',
+    title: 'Live in 2 weeks.',
+    description: 'Onboarding, accounts set up, first content published. Fourteen days from signed contract to first post going live.',
+    icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>`,
+  },
+];
+
+const faqs = [
+  {
+    q: 'Who actually runs my WeChat account?',
+    a: 'Our team in Shanghai and Hong Kong. Native Chinese speakers who use the platform every day. You\'ll have a dedicated account manager, and behind them sits a full team: copywriters, designers, video producers, strategists. Everyone is in China. We\'re not outsourcing to freelancers or managing your account remotely from another continent.',
+  },
+  {
+    q: 'Can you set up a WeChat Official Account for a foreign company?',
+    a: 'Yes. Foreign companies can register a Service Account with an overseas business license. Takes about 1 to 2 weeks. We handle the whole process: registration, verification, configuration, so you don\'t get bogged down in Tencent\'s paperwork.',
+  },
+  {
+    q: 'Do we need a Chinese business entity?',
+    a: 'Short answer: no, not to get started. Foreign companies can open a Service Account directly. That said, a few things work better with a Chinese entity, like WeChat Pay merchant acceptance and certain ad formats. We\'ll map out what you can and can\'t do with your current setup before anything kicks off.',
+  },
+  {
+    q: 'How does pricing work?',
+    a: 'Fixed scope, fixed price. Before we begin, we spell out every deliverable: articles, videos, campaigns, reports. You pay one monthly fee. No hourly rates, no scope creep charges, no invoices you weren\'t expecting. Ad spend is always billed separately at cost. No markup.',
+  },
+  {
+    q: 'We already have a WeChat account but it\'s not going anywhere. Can you help?',
+    a: 'That\'s pretty common. We audit the account, look at what\'s working and what isn\'t, and rebuild from there. Sometimes the content just doesn\'t land. Sometimes there\'s no Mini Program, so followers read an article and then have nowhere to go. We diagnose first, then fix.',
+  },
+  {
+    q: 'How fast can we go live?',
+    a: 'Most clients go from zero to a live, publishing account in under two weeks. That covers registration, verification, setup, and first content. If you\'ve already got a verified account, we can start producing content within a few days.',
+  },
+  {
+    q: 'Do you only work with international brands?',
+    a: 'No. We work with three types of clients: international brands entering China, international brands already here, and Chinese domestic brands growing their social presence. Services are the same. Strategy changes based on where you are and what you\'re after.',
+  },
+  {
+    q: 'What makes your content production different from other agencies?',
+    a: 'Our copywriters are native Chinese speakers who write for WeChat specifically, not translators working off an English doc. On the production side, we use HubStudio.ai for visuals and video, which speeds things up and brings costs down. But creative direction and strategy are always human-led.',
+  },
+  {
+    q: 'How do you handle KOL campaigns on WeChat?',
+    a: 'We run the whole thing from sourcing to reporting. Finding the right Key Opinion Leaders, writing briefs, co-creating content, coordinating posts, tracking results. We only use verified engagement data. If a KOL\'s follower count looks inflated, we pass.',
+  },
+  {
+    q: 'How do you report on results?',
+    a: 'Monthly reports. Follower growth, article open rates, Mini Program traffic, ad performance, conversions. Real numbers, plain language. If something\'s underperforming, we tell you what\'s off and what we\'re changing.',
+  },
+];
+---
+
+<PageLayout
+  title="WeChat Marketing Services for International Brands | TheRedScroll"
+  description="We run WeChat accounts from Shanghai and Hong Kong. Official Accounts, Mini Programs, WeCom, Channels, and ads. Fixed scope, fixed price."
+>
+  <!-- Hero: Dark hero banner (Style A) -->
+  <section class="w-full bg-[#1A1A1A] py-[80px] max-[640px]:py-[48px] relative overflow-hidden">
+    <!-- Background image -->
+    <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/wechat-hero.png')" aria-hidden="true"></div>
+    <!-- Watermark -->
+    <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[140px] max-[640px]:text-[80px] font-medium text-[#FFFFFF] opacity-[0.03] pointer-events-none select-none whitespace-nowrap" aria-hidden="true">
+      微信
+    </span>
+    <Container class="relative z-[1]">
+      <div class="max-w-[800px] mx-auto text-center">
+        <a href="/platforms" class="inline-flex items-center gap-[6px] text-[13px] text-[#5C5C5C] mb-[16px] transition-colors duration-150 hover:text-[#FFFFFF]">
+          &larr; All platforms
+        </a>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">
+          WeChat marketing
+        </p>
+        <h1 class="text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] text-[#FFFFFF] mb-[8px]">
+          WeChat is where 1.4 billion people chat, pay, shop, and follow brands
+        </h1>
+        <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal mb-[24px]">
+          We run WeChat accounts from Shanghai and Hong Kong. Every day. For brands that want more followers, more engagement, and more conversions in China.
+        </p>
+        <Button variant="primary" href="/contact">Book a call</Button>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Stats section — horizontal scroll strip -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="flex items-end justify-between gap-[32px] max-[640px]:flex-col max-[640px]:items-start max-[640px]:gap-[16px] mb-[32px]">
+        <div class="max-w-[560px]">
+          <SectionBar />
+          <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[8px]">
+            Not vanity numbers. Your Chinese audience is already here.
+          </h2>
+          <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
+            WeChat by the numbers.
+          </p>
+        </div>
+        <Button variant="primary" href="/contact" class="shrink-0">Book a call</Button>
+      </div>
+    </Container>
+
+    <div class="relative">
+      <div class="absolute right-0 top-0 bottom-0 w-[80px] bg-gradient-to-l from-[#FFFFFF] to-transparent z-[1] pointer-events-none" aria-hidden="true"></div>
+
+      <div class="overflow-x-auto scrollbar-hide" id="stats-scroll">
+        <div class="flex gap-[16px] px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pb-[8px]" style="min-width: min-content;">
+          {stats.map((stat, i) => (
+            <div
+              class="stat-card relative shrink-0 w-[220px] max-[640px]:w-[180px] h-[200px] max-[640px]:h-[170px] rounded-[12px] overflow-hidden flex flex-col justify-end cursor-grab select-none"
+              data-stat-index={i}
+            >
+              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out stat-bg" style={`background-image: url('${stat.image}')`} aria-hidden="true"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-[rgba(26,26,26,0.9)] via-[rgba(26,26,26,0.4)] to-transparent" aria-hidden="true"></div>
+              <div class="relative z-[1] p-[20px]">
+                <span class="text-[32px] text-[#FFFFFF] font-medium leading-none stat-counter block mb-[4px]" data-target={stat.value}>0</span>
+                <span class="text-[12px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.4]">{stat.label}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why WeChat comes first -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]">
+          <SectionBar />
+        </div>
+        <SectionHeading overline="Why WeChat comes first">
+          Your website, email list, CRM, and payment page. All in one app.
+        </SectionHeading>
+      </div>
+
+      <div class="grid grid-cols-3 max-[1024px]:grid-cols-3 max-[640px]:grid-cols-1 gap-[16px]">
+        <!-- Card 1: You own your audience -->
+        <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
+          <div class="relative w-full aspect-[16/9] flex flex-col items-center justify-center overflow-hidden bg-[#07C160]">
+            <span class="absolute text-[80px] font-medium text-[#FFFFFF] opacity-[0.08] select-none pointer-events-none" aria-hidden="true">私域</span>
+            <svg class="relative w-[48px] h-[48px] mb-[10px]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+            <span class="relative text-[#FFFFFF] text-[18px] font-medium leading-none">You own your audience</span>
+          </div>
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
+              Douyin and RedNote are algorithm-driven. WeChat is different. Your followers are yours. You message them, sort them by behavior, build the relationship month after month. People in China call this private domain traffic: a customer list no platform can take from you.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2: Full journey in one app -->
+        <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
+          <div class="relative w-full aspect-[16/9] flex flex-col items-center justify-center overflow-hidden bg-[#1A1A1A]">
+            <span class="absolute text-[80px] font-medium text-[#FFFFFF] opacity-[0.08] select-none pointer-events-none" aria-hidden="true">闭环</span>
+            <svg class="relative w-[48px] h-[48px] mb-[10px]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/><path d="M8 12l2 2 4-4"/>
+            </svg>
+            <span class="relative text-[#FFFFFF] text-[18px] font-medium leading-none">One app, full journey</span>
+          </div>
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
+              Someone finds your brand, reads your article, opens your Mini Program store, pays with WeChat Pay, joins your loyalty group. No app switching, no broken links, no drop-off between steps.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3: Verified account -->
+        <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
+          <div class="relative w-full aspect-[16/9] flex flex-col items-center justify-center overflow-hidden bg-[#CC3333]">
+            <span class="absolute text-[80px] font-medium text-[#FFFFFF] opacity-[0.08] select-none pointer-events-none" aria-hidden="true">认证</span>
+            <svg class="relative w-[48px] h-[48px] mb-[10px]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            <span class="relative text-[#FFFFFF] text-[18px] font-medium leading-none">Verification matters</span>
+          </div>
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
+              That blue checkmark on your Official Account carries real weight. It tells Chinese consumers you went through Tencent's verification, you're a legitimate business, and you're not just testing the waters.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] mt-[24px] text-center max-w-[680px] mx-auto">
+        WeChat isn't just a messaging app. It's where people pay bills, shop, read the news, book taxis, and follow brands. Chinese consumers check WeChat before they buy. If there's no Official Account, there's no trust.
+      </p>
+    </Container>
+  </section>
+
+  <!-- Separator -->
+  <div class="mt-[48px] max-[640px]:mt-[32px] max-w-[1200px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px]">
+    <hr class="border-t border-[rgba(0,0,0,0.08)] m-0" />
+  </div>
+
+  <!-- The WeChat ecosystem -->
+  <section class="mt-[48px] max-[640px]:mt-[32px]">
+    <Container>
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]">
+          <SectionBar />
+        </div>
+        <SectionHeading overline="The WeChat ecosystem">
+          Six connected products. Know how they fit together.
+        </SectionHeading>
+      </div>
+
+      <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        {ecosystem.map((item) => (
+          <div
+            class="eco-card relative border-none overflow-hidden flex flex-col justify-between"
+            style={`border-radius: ${item.bg === '#1A1A1A' || item.bg === '#CC3333' || item.bg === '#B02D2D' ? '12px' : '10px'}`}
+            data-tilt-eco
+          >
+            <!-- Background image -->
+            <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out eco-bg" style={`background-image: url('${item.image}')`} aria-hidden="true"></div>
+            <div class="absolute inset-0" style={`background: ${item.bg}; opacity: 0.88`} aria-hidden="true"></div>
+            <!-- Content -->
+            <div class="relative z-[1] p-[24px] max-[640px]:p-[20px]">
+              <div class="w-[40px] h-[40px] rounded-[6px] flex items-center justify-center mb-[16px]" style={`background: ${item.iconBg}`}>
+                <Fragment set:html={item.icon} />
+              </div>
+              <h3 class="text-[18px] font-medium leading-[1.3] mb-[4px]" style={`color: ${item.textColor}`}>
+                {item.name}
+              </h3>
+              <span class="text-[12px] font-normal mb-[8px] block" style={`color: ${item.descColor}`}>{item.chineseName}</span>
+              <p class="text-[13px] font-normal leading-[1.5]" style={`color: ${item.descColor}`}>
+                {item.description}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- Registration note -->
+      <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px] mt-[16px]">
+        <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] max-w-[680px]">
+          <span class="text-[#1A1A1A] font-medium">Registration note:</span> Foreign companies need either a Chinese business license or a registered overseas entity to open a Service Account. Typically takes 1 to 2 weeks with the right documentation. We handle the full registration and verification process.
+        </p>
+      </div>
+    </Container>
+  </section>
+
+  <!-- What we do on WeChat -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]">
+          <SectionBar />
+        </div>
+        <SectionHeading overline="What we do on WeChat">
+          Six services. Each with a clear deliverable.
+        </SectionHeading>
+      </div>
+
+      <!-- Desktop: two-column selector + panel -->
+      <div class="grid grid-cols-[340px_1fr] max-[1024px]:grid-cols-[280px_1fr] max-[768px]:hidden gap-[24px]">
+        <!-- Left: selector list -->
+        <div class="flex flex-col gap-[4px]">
+          {services.map((service, i) => (
+            <button
+              class:list={[
+                'svc-selector flex items-center gap-[12px] px-[16px] py-[14px] rounded-[8px] text-left cursor-pointer border-none transition-all duration-300 relative',
+                i === 0 ? 'svc-selector-active' : '',
+              ]}
+              data-svc-select={i}
+              style={i === 0 ? 'background: #F7F2EE' : 'background: transparent'}
+            >
+              <div
+                class="svc-sel-indicator absolute left-0 top-[12px] bottom-[12px] w-[3px] rounded-full transition-all duration-300"
+                style={i === 0 ? 'background: #CC3333; opacity: 1' : 'background: #CC3333; opacity: 0'}
+              ></div>
+              <div
+                class="svc-sel-icon w-[36px] h-[36px] rounded-[6px] shrink-0 flex items-center justify-center transition-all duration-300"
+                style={i === 0 ? 'background: #E8E0D8; color: #CC3333' : 'background: transparent; color: #5C5C5C'}
+              >
+                <Fragment set:html={service.icon} />
+              </div>
+              <span
+                class="svc-sel-label text-[14px] font-medium leading-[1.3] transition-colors duration-300"
+                style={i === 0 ? 'color: #1A1A1A' : 'color: #5C5C5C'}
+              >
+                {service.title}
+              </span>
+            </button>
+          ))}
+        </div>
+
+        <!-- Right: content panel -->
+        <div class="relative">
+          {services.map((service, i) => (
+            <div
+              class:list={[
+                'svc-panel relative rounded-[12px] overflow-hidden transition-all duration-400',
+                i === 0 ? '' : 'absolute inset-0 opacity-0 pointer-events-none',
+              ]}
+              data-svc-panel={i}
+            >
+              <!-- Background image -->
+              <div class="absolute inset-0 bg-cover bg-center" style={`background-image: url('${service.image}')`} aria-hidden="true"></div>
+              <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.82]" aria-hidden="true"></div>
+              <!-- Content -->
+              <div class="relative z-[1] p-[40px] max-[1024px]:p-[32px]">
+                <div class="w-[48px] h-[48px] rounded-[8px] flex items-center justify-center mb-[20px] bg-[rgba(255,255,255,0.12)] text-[#FFFFFF]">
+                  <Fragment set:html={service.icon} />
+                </div>
+                <h3 class="text-[22px] font-medium leading-[1.25] mb-[12px] text-[#FFFFFF]">
+                  {service.title}
+                </h3>
+                <p class="text-[14px] font-normal leading-[1.6] mb-[24px] max-w-[480px] text-[rgba(255,255,255,0.7)]">
+                  {service.description}
+                </p>
+                <div class="inline-flex items-center gap-[8px] px-[16px] py-[10px] rounded-[6px] text-[13px] font-medium bg-[rgba(255,255,255,0.12)] text-[#FFFFFF]">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                  You get: {service.result}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Mobile: stacked cards -->
+      <div class="hidden max-[768px]:flex flex-col gap-[12px]">
+        {services.map((service) => (
+          <div class="relative rounded-[12px] overflow-hidden">
+            <div class="absolute inset-0 bg-cover bg-center" style={`background-image: url('${service.image}')`} aria-hidden="true"></div>
+            <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.82]" aria-hidden="true"></div>
+            <div class="relative z-[1] p-[24px]">
+              <div class="w-[40px] h-[40px] rounded-[6px] flex items-center justify-center mb-[12px] bg-[rgba(255,255,255,0.12)] text-[#FFFFFF]">
+                <Fragment set:html={service.icon} />
+              </div>
+              <h3 class="text-[18px] font-medium leading-[1.3] mb-[8px] text-[#FFFFFF]">
+                {service.title}
+              </h3>
+              <p class="text-[13px] font-normal leading-[1.5] mb-[12px] text-[rgba(255,255,255,0.7)]">
+                {service.description}
+              </p>
+              <p class="text-[13px] font-medium leading-[1.5] text-[#FFFFFF]">
+                You get: {service.result}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </Container>
+  </section>
+
+  <!-- Best practices (dark section - the one allowed per page) -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="bg-[#1A1A1A] rounded-[12px] py-[48px] px-[48px] max-[640px]:px-[20px] max-[640px]:py-[32px]">
+        <div class="mb-[40px] max-[640px]:mb-[32px]">
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">
+            From our team on the ground
+          </p>
+          <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF]">
+            WeChat best practices
+          </h2>
+          <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.5] mt-[8px] max-w-[680px]">
+            We run WeChat accounts from China, week in, week out. These come from doing the work.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[20px]">
+          {bestPractices.map((practice) => (
+            <div class="border-l-[3px] border-[#CC3333] pl-[16px]">
+              <h3 class="text-[16px] text-[#FFFFFF] font-medium leading-[1.3] mb-[4px]">
+                {practice.title}
+              </h3>
+              <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.5]">
+                {practice.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Why TheRedScroll -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="mb-[48px] max-[640px]:mb-[32px]">
+        <SectionBar />
+        <SectionHeading overline="Why TheRedScroll">
+          We don't advise on WeChat from a different timezone.
+        </SectionHeading>
+      </div>
+
+      <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">On the ground in China</h3>
+          <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5]">
+            Our team is in Shanghai and Hong Kong. Native speakers who use the platform daily, with real-time access to every feature, direct KOL relationships, and the kind of cultural instinct you only get from being here.
+          </p>
+        </div>
+        <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Fixed scope. Fixed price.</h3>
+          <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5]">
+            Every deliverable gets spelled out before we start. Articles, videos, campaigns, reports. One monthly price. No scope creep charges, no invoices you didn't expect.
+          </p>
+        </div>
+        <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">AI-powered production</h3>
+          <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5]">
+            We use HubStudio.ai to produce visuals, video drafts, and first-pass copy at speed. Strategy, brand voice, and creative direction are always our team. Always will be.
+          </p>
+        </div>
+        <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">One connected system</h3>
+          <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5]">
+            We wire together your Official Account, Mini Program, WeCom, Channels, and ad campaigns into one system. Running them as separate pieces doesn't work. We've seen it enough times to know.
+          </p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- FAQ -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-[340px_1fr] max-[1024px]:grid-cols-[280px_1fr] max-[768px]:grid-cols-1 gap-[48px] max-[768px]:gap-[32px]">
+        <!-- Left: heading -->
+        <div>
+          <div class="sticky top-[84px]">
+            <SectionBar />
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">FAQ</p>
+            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">
+              Frequently asked questions
+            </h2>
+            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
+              Everything you need to know about running WeChat with TheRedScroll.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right: FAQ items -->
+        <div>
+          {faqs.map((faq, i) => (
+            <div class="border-b border-[rgba(0,0,0,0.08)]" data-faq>
+              <button
+                class="w-full flex items-center justify-between py-[20px] text-left bg-transparent border-none cursor-pointer group"
+                data-faq-trigger
+                aria-expanded="false"
+              >
+                <h3 class="text-[16px] font-medium leading-[1.3] text-[#1A1A1A] group-hover:text-[#5C5C5C] transition-colors duration-150 pr-[16px]">{faq.q}</h3>
+                <svg class="w-[16px] h-[16px] shrink-0 text-[#5C5C5C] transition-transform duration-300 faq-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 6l4 4 4-4"/>
+                </svg>
+              </button>
+              <div class="faq-content overflow-hidden" style="height: 0; opacity: 0;">
+                <div class="pb-[20px]">
+                  <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
+                    {faq.a}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Getting started — matches homepage HowItWorks -->
+  <section class="relative mt-[96px] max-[640px]:mt-[64px] py-[80px] max-[640px]:py-[48px] overflow-hidden mb-[96px] max-[640px]:mb-[64px]">
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero/wechat-hero.png')" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.88]" aria-hidden="true"></div>
+
+    <Container class="relative z-[1]">
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]">
+          <div class="w-[40px] h-[3px] bg-[#CC3333] rounded-none"></div>
+        </div>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">
+          Getting started
+        </p>
+        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF]">
+          From zero to a live WeChat account in two weeks.
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-3 max-[640px]:grid-cols-1 gap-[24px] max-[640px]:gap-[16px]">
+        {steps.map((step) => (
+          <div class="bg-[rgba(255,255,255,0.06)] border-[0.5px] border-[rgba(255,255,255,0.1)] rounded-[12px] p-[32px] max-[640px]:p-[24px] text-center">
+            <div class="w-[64px] h-[64px] rounded-full bg-[rgba(255,255,255,0.08)] border-[0.5px] border-[rgba(255,255,255,0.15)] flex items-center justify-center mx-auto mb-[20px]">
+              <Fragment set:html={step.icon} />
+            </div>
+            <p class="text-[12px] font-medium text-[#CC3333] leading-none mb-[8px]">
+              Step {step.number}
+            </p>
+            <h3 class="text-[18px] text-[#FFFFFF] font-medium leading-[1.3] mb-[8px]">
+              {step.title}
+            </h3>
+            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6]">
+              {step.description}
+            </p>
+          </div>
+        ))}
+      </div>
+
+      <div class="text-center mt-[40px]">
+        <Button variant="primary" href="/contact">Book a call</Button>
+      </div>
+
+      <!-- Cross-links -->
+      <div class="mt-[48px] pt-[24px] border-t border-[rgba(255,255,255,0.1)] text-center">
+        <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal mb-[12px]">See also</p>
+        <div class="flex justify-center gap-[24px] flex-wrap">
+          <a href="/platforms/douyin" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Douyin marketing &rarr;</a>
+          <a href="/platforms/rednote" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">RedNote marketing &rarr;</a>
+          <a href="/platforms/weibo" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Weibo marketing &rarr;</a>
+        </div>
+      </div>
+    </Container>
+  </section>
+<style>
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .svc-panel {
+    transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .svc-selector:hover {
+    background: #F7F2EE !important;
+  }
+  .faq-content {
+    transition: height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+  }
+  .stat-card {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  .stat-card.revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .stat-card:hover .stat-bg {
+    transform: scale(1.08);
+  }
+  .eco-card:hover .eco-bg {
+    transform: scale(1.08);
+  }
+</style>
+
+<script>
+  // Stats horizontal scroll — drag to scroll
+  const statsScroll = document.getElementById('stats-scroll');
+  if (statsScroll) {
+    let isDown = false;
+    let startX: number;
+    let scrollLeft: number;
+
+    statsScroll.addEventListener('mousedown', (e) => {
+      isDown = true;
+      statsScroll.style.cursor = 'grabbing';
+      startX = e.pageX - statsScroll.offsetLeft;
+      scrollLeft = statsScroll.scrollLeft;
+    });
+    statsScroll.addEventListener('mouseleave', () => { isDown = false; statsScroll.style.cursor = ''; });
+    statsScroll.addEventListener('mouseup', () => { isDown = false; statsScroll.style.cursor = ''; });
+    statsScroll.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - statsScroll.offsetLeft;
+      statsScroll.scrollLeft = scrollLeft - (x - startX);
+    });
+  }
+
+  // Stats scroll reveal with stagger + trigger counters
+  const statCards = document.querySelectorAll('.stat-card');
+  const statsObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const card = entry.target as HTMLElement;
+          const index = parseInt(card.dataset.statIndex || '0');
+          const delay = index * 150;
+          setTimeout(() => {
+            card.classList.add('revealed');
+            const counter = card.querySelector('.stat-counter') as HTMLElement;
+            if (counter) {
+              setTimeout(() => {
+                animateCounter(counter, counter.dataset.target || '0');
+              }, 400);
+            }
+          }, delay);
+          statsObserver.unobserve(card);
+        }
+      });
+    },
+    { threshold: 0.05 }
+  );
+  statCards.forEach((card) => statsObserver.observe(card));
+
+  function animateCounter(el: HTMLElement, target: string) {
+    const match = target.match(/^([\d.]+)(.*)$/);
+    if (!match) { el.textContent = target; return; }
+
+    const endNum = parseFloat(match[1]);
+    const suffix = match[2];
+    const duration = 2000;
+    const startTime = performance.now();
+
+    function tick(now: number) {
+      const elapsed = now - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      const current = eased * endNum;
+
+      if (endNum >= 10) {
+        el.textContent = Math.round(current) + suffix;
+      } else {
+        el.textContent = current.toFixed(1).replace(/\.0$/, '') + suffix;
+      }
+
+      if (progress < 1) requestAnimationFrame(tick);
+      else el.textContent = target;
+    }
+
+    requestAnimationFrame(tick);
+  }
+
+  // Service selector — desktop two-column
+  const selectors = document.querySelectorAll('[data-svc-select]');
+  const panels = document.querySelectorAll('[data-svc-panel]');
+
+  selectors.forEach((sel) => {
+    sel.addEventListener('click', () => {
+      const index = parseInt((sel as HTMLElement).dataset.svcSelect || '0');
+
+      // Reset all selectors
+      selectors.forEach((s) => {
+        const el = s as HTMLElement;
+        el.style.background = 'transparent';
+        const indicator = el.querySelector('.svc-sel-indicator') as HTMLElement;
+        const icon = el.querySelector('.svc-sel-icon') as HTMLElement;
+        const label = el.querySelector('.svc-sel-label') as HTMLElement;
+        if (indicator) indicator.style.opacity = '0';
+        if (icon) { icon.style.background = 'transparent'; icon.style.color = '#5C5C5C'; }
+        if (label) label.style.color = '#5C5C5C';
+      });
+
+      // Activate clicked
+      const active = sel as HTMLElement;
+      active.style.background = '#F7F2EE';
+      const indicator = active.querySelector('.svc-sel-indicator') as HTMLElement;
+      const icon = active.querySelector('.svc-sel-icon') as HTMLElement;
+      const label = active.querySelector('.svc-sel-label') as HTMLElement;
+      if (indicator) indicator.style.opacity = '1';
+      if (icon) { icon.style.background = '#E8E0D8'; icon.style.color = '#CC3333'; }
+      if (label) label.style.color = '#1A1A1A';
+
+      // Crossfade panels
+      panels.forEach((panel, pi) => {
+        const p = panel as HTMLElement;
+        if (pi === index) {
+          p.style.opacity = '0';
+          p.classList.remove('absolute', 'pointer-events-none');
+          requestAnimationFrame(() => {
+            p.style.opacity = '1';
+          });
+        } else {
+          p.style.opacity = '0';
+          p.classList.add('absolute', 'pointer-events-none');
+        }
+      });
+    });
+  });
+
+  // Ecosystem cards — tilt on hover
+  document.querySelectorAll('[data-tilt-eco]').forEach((card) => {
+    const el = card as HTMLElement;
+    el.addEventListener('mousemove', (e: MouseEvent) => {
+      const rect = el.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+      const rotateX = ((y - centerY) / centerY) * -3;
+      const rotateY = ((x - centerX) / centerX) * 3;
+      el.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+    });
+    el.addEventListener('mouseleave', () => {
+      el.style.transform = 'perspective(800px) rotateX(0deg) rotateY(0deg) scale(1)';
+    });
+  });
+
+  // FAQ accordion
+  document.querySelectorAll('[data-faq]').forEach((item) => {
+    const trigger = item.querySelector('[data-faq-trigger]') as HTMLButtonElement;
+    const content = item.querySelector('.faq-content') as HTMLElement;
+    const chevron = item.querySelector('.faq-chevron') as SVGElement;
+    if (!trigger || !content) return;
+
+    trigger.addEventListener('click', () => {
+      const isOpen = trigger.getAttribute('aria-expanded') === 'true';
+
+      if (isOpen) {
+        content.style.height = content.scrollHeight + 'px';
+        requestAnimationFrame(() => {
+          content.style.height = '0';
+          content.style.opacity = '0';
+        });
+        trigger.setAttribute('aria-expanded', 'false');
+        const ch = trigger.querySelector('.faq-chevron') as HTMLElement;
+        if (ch) ch.style.transform = 'rotate(0deg)';
+      } else {
+        content.style.height = '0';
+        requestAnimationFrame(() => {
+          content.style.height = content.scrollHeight + 'px';
+          content.style.opacity = '1';
+        });
+        trigger.setAttribute('aria-expanded', 'true');
+        const ch = trigger.querySelector('.faq-chevron') as HTMLElement;
+        if (ch) ch.style.transform = 'rotate(180deg)';
+      }
+    });
+  });
+</script>
+</PageLayout>
