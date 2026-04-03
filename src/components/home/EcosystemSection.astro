@@ -1,27 +1,36 @@
 ---
 import Container from '../ui/Container.astro';
 import SectionBar from '../ui/SectionBar.astro';
+import Button from '../ui/Button.astro';
 
 const pillars = [
   {
     title: 'Audience.',
     description: '1 billion users. Dozens of platforms. Each one different. Find your audience first. Then pick the platform.',
+    bg: '#F7F2EE',
+    textColor: '#1A1A1A',
+    descColor: '#5C5C5C',
   },
   {
     title: 'Content.',
     description: 'What works on Douyin fails on WeChat. Every platform has its own format, language, and pace. Build for each one.',
+    bg: '#1A1A1A',
+    textColor: '#FFFFFF',
+    descColor: 'rgba(255,255,255,0.6)',
   },
   {
     title: 'Influencers.',
     description: 'KOLs and KOCs drive buying decisions more than ads do. Right influencer, right platform, right moment. Everything else is waste.',
+    bg: '#CC3333',
+    textColor: '#FFFFFF',
+    descColor: 'rgba(255,255,255,0.8)',
   },
   {
     title: 'Platforms.',
     description: 'WeChat, Douyin, RedNote, Weibo, and 14 more. Algorithms change monthly. You need a team that\'s on them every day.',
-  },
-  {
-    title: 'Commerce.',
-    description: 'Social media in China is where people buy, not just browse. Content and commerce are the same thing here.',
+    bg: '#E8E0D8',
+    textColor: '#1A1A1A',
+    descColor: '#5C5C5C',
   },
 ];
 
@@ -31,44 +40,66 @@ const industries = 'Beauty, luxury, hospitality, F&B, B2B, health.';
 
 <section class="mt-[96px] max-[640px]:mt-[64px]">
   <Container>
-    <!-- Header -->
-    <div class="max-w-[680px]">
-      <SectionBar />
-      <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[8px]">
-        Chinese social media is not a channel. It's an ecosystem.
-      </h2>
-      <p class="text-[16px] text-[#5C5C5C] font-normal leading-[1.6]">
-        Audience, content, influencers, platforms, and commerce are all connected. You can't win on one without the others.
-      </p>
+    <!-- Top row: heading left, description + CTA right -->
+    <div class="flex items-start justify-between gap-[48px] max-[640px]:flex-col max-[640px]:gap-[16px] mb-[40px] max-[640px]:mb-[32px]">
+      <div class="max-w-[480px] shrink-0">
+        <SectionBar />
+        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A]">
+          Chinese social media is not a channel. It's an ecosystem.
+        </h2>
+      </div>
+      <div class="flex items-start gap-[32px] max-[640px]:flex-col max-[640px]:gap-[16px]">
+        <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] max-w-[400px]">
+          Audience, content, influencers, platforms, and commerce are all connected. You can't win on one without the others.
+        </p>
+        <Button variant="primary" href="/contact" class="shrink-0">Book a call</Button>
+      </div>
     </div>
 
-    <!-- 5 pillar cards -->
-    <div class="grid grid-cols-5 max-[1024px]:grid-cols-3 max-[640px]:grid-cols-1 gap-[16px] mt-[40px]">
-      {pillars.map((pillar) => (
-        <div class="bg-[#F7F2EE] border-none rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] text-[#1A1A1A] font-medium leading-[1.3] mb-[8px]">
-            {pillar.title}
+    <!-- Bento grid: image left, 4 cards right in 2x2 -->
+    <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[16px]">
+      <!-- Left: tall image + commerce card stacked -->
+      <div class="flex flex-col gap-[16px]">
+        <div class="rounded-[10px] bg-[#F7F2EE] aspect-[4/3] flex items-center justify-center overflow-hidden">
+          <span class="text-[#5C5C5C] text-[13px] font-normal">Ecosystem visual</span>
+        </div>
+        <!-- Commerce card below image -->
+        <div class="bg-[#1A1A1A] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] text-[#FFFFFF] font-medium leading-[1.3] mb-[8px]">
+            Commerce.
           </h3>
-          <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
-            {pillar.description}
+          <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.5]">
+            Social media in China is where people buy, not just browse. Content and commerce are the same thing here.
           </p>
         </div>
-      ))}
+      </div>
+
+      <!-- Right: 2x2 grid of pillar cards -->
+      <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        {pillars.map((pillar) => (
+          <div class="rounded-[10px] p-[24px] max-[640px]:p-[20px]" style={`background: ${pillar.bg}; border-radius: ${pillar.bg === '#1A1A1A' || pillar.bg === '#CC3333' ? '12px' : '10px'}`}>
+            <h3 class="text-[18px] font-medium leading-[1.3] mb-[8px]" style={`color: ${pillar.textColor}`}>
+              {pillar.title}
+            </h3>
+            <p class="text-[13px] font-normal leading-[1.5]" style={`color: ${pillar.descColor}`}>
+              {pillar.description}
+            </p>
+          </div>
+        ))}
+      </div>
     </div>
 
     <!-- Stats bar -->
     <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px] mt-[16px]">
-      <!-- Platforms stat -->
-      <div class="bg-[#1A1A1A] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
+      <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
         <div class="flex items-baseline gap-[12px] mb-[8px]">
-          <span class="text-[28px] text-[#FFFFFF] font-medium leading-[1.2]">18</span>
-          <span class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal">platforms we actively post on</span>
+          <span class="text-[28px] text-[#1A1A1A] font-medium leading-[1.2]">18</span>
+          <span class="text-[14px] text-[#5C5C5C] font-normal">platforms we actively post on</span>
         </div>
-        <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal leading-[1.5]">
+        <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
           {platformsList}
         </p>
       </div>
-      <!-- Industries stat -->
       <div class="bg-[#CC3333] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
         <div class="flex items-baseline gap-[12px] mb-[8px]">
           <span class="text-[28px] text-[#FFFFFF] font-medium leading-[1.2]">6</span>
