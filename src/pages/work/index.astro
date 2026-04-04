@@ -1,0 +1,277 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import Container from '../../components/ui/Container.astro';
+import SectionBar from '../../components/ui/SectionBar.astro';
+import SectionHeading from '../../components/ui/SectionHeading.astro';
+import Button from '../../components/ui/Button.astro';
+
+const caseStudies = [
+  {
+    title: 'Viessmann: how social drove eCommerce growth in China',
+    category: 'eCommerce & Social',
+    platforms: ['Douyin', 'RedNote', 'WeCom'],
+    result: 'Consistent month-over-month online revenue growth',
+    image: '/images/clients/Viessmann/Viessman-climate-solution.avif',
+    href: '/work/viessmann',
+  },
+  {
+    title: 'Jaguar Land Rover: reaching younger consumers through social',
+    category: 'Content & UGC',
+    platforms: ['Douyin', 'RedNote', 'WeChat'],
+    result: 'Brand relevance shift with younger luxury consumers',
+    image: '/images/clients/Jaguar/Jaguar-Land-Rover.avif',
+    href: '/work/jaguar-land-rover',
+  },
+  {
+    title: 'European skincare brand launches on RedNote',
+    category: 'Market Entry',
+    platforms: ['RedNote', 'WeChat'],
+    result: '+340% follower growth in 90 days',
+    image: '/images/work/case-skincare.jpg',
+    href: '#',
+  },
+  {
+    title: 'Swiss watchmaker builds WeChat private domain',
+    category: 'CRM & Private Domain',
+    platforms: ['WeChat', 'WeCom'],
+    result: '12,000 WeCom contacts in 6 months',
+    image: '/images/work/case-watches.jpg',
+    href: '#',
+  },
+  {
+    title: 'French wine brand goes viral on Douyin',
+    category: 'Content Production',
+    platforms: ['Douyin', 'RedNote'],
+    result: '2.1M views on first campaign',
+    image: '/images/work/case-wine.jpg',
+    href: '#',
+  },
+  {
+    title: 'Australian supplement brand scales on Weibo',
+    category: 'Advertising',
+    platforms: ['Weibo', 'RedNote'],
+    result: '4.7x return on ad spend',
+    image: '/images/work/case-supplements.jpg',
+    href: '#',
+  },
+  {
+    title: 'Italian fashion house activates KOLs on RedNote',
+    category: 'Influencer Marketing',
+    platforms: ['RedNote', 'Douyin'],
+    result: '58 KOL posts, 8.3M total impressions',
+    image: '/images/work/case-fashion.jpg',
+    href: '#',
+  },
+];
+
+function shuffle<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+const shuffledStudies = shuffle(caseStudies);
+
+const categories = ['All', ...new Set(caseStudies.map((s) => s.category))];
+const allPlatforms = ['All', ...new Set(caseStudies.flatMap((s) => s.platforms))].sort((a, b) => a === 'All' ? -1 : b === 'All' ? 1 : a.localeCompare(b));
+---
+
+<PageLayout
+  title="Work | TheRedScroll"
+  description="Case studies from TheRedScroll. Real results for international brands on WeChat, RedNote, Douyin, Weibo, and more."
+  ogImage="/images/og/work.jpg"
+>
+
+  <!-- Hero -->
+  <section class="pt-[96px] pb-[64px] max-[640px]:pt-[64px] max-[640px]:pb-[40px]">
+    <Container>
+      <div class="max-w-[680px]">
+        <SectionBar />
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">
+          Case studies
+        </p>
+        <h1 class="text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[16px]">
+          The work speaks for itself.
+        </h1>
+        <p class="text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] text-[var(--color-stone)]">
+          Real campaigns. Real platforms. Real results for international brands growing in China.
+        </p>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Filters -->
+  <section class="pb-[40px] max-[640px]:pb-[24px]">
+    <Container>
+      <!-- Service filter -->
+      <div class="mb-[16px]">
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-stone)] mb-[10px]">Service</p>
+        <div class="flex flex-wrap gap-[8px]" id="filter-category">
+          {categories.map((cat) => (
+            <button
+              type="button"
+              data-filter-category={cat}
+              class:list={[
+                'filter-btn text-[13px] font-medium leading-[1] px-[16px] py-[8px] rounded-[6px] cursor-pointer transition-[background,color,border-color] duration-150',
+                cat === 'All'
+                  ? 'bg-[var(--color-ink)] text-[#FFFFFF] border border-[var(--color-ink)]'
+                  : 'bg-transparent text-[var(--color-ink)] border border-[rgba(0,0,0,0.15)] hover:border-[var(--color-ink)]'
+              ]}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
+      </div>
+      <!-- Platform filter -->
+      <div>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-stone)] mb-[10px]">Platform</p>
+        <div class="flex flex-wrap gap-[8px]" id="filter-platform">
+          {allPlatforms.map((plat) => (
+            <button
+              type="button"
+              data-filter-platform={plat}
+              class:list={[
+                'filter-btn text-[13px] font-medium leading-[1] px-[16px] py-[8px] rounded-[6px] cursor-pointer transition-[background,color,border-color] duration-150',
+                plat === 'All'
+                  ? 'bg-[var(--color-ink)] text-[#FFFFFF] border border-[var(--color-ink)]'
+                  : 'bg-transparent text-[var(--color-ink)] border border-[rgba(0,0,0,0.15)] hover:border-[var(--color-ink)]'
+              ]}
+            >
+              {plat}
+            </button>
+          ))}
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Case study grid -->
+  <section class="pb-[96px] max-[640px]:pb-[64px]">
+    <Container>
+      <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[32px] max-[640px]:gap-[24px]" id="case-study-grid">
+        {shuffledStudies.map((study) => (
+          <a
+            href={study.href}
+            data-category={study.category}
+            data-platforms={study.platforms.join(',')}
+            class="case-study-card group block bg-[var(--color-rice-paper)] rounded-[8px] overflow-hidden border border-[rgba(0,0,0,0.08)] transition-[border-color] duration-150 ease-in-out hover:border-[rgba(0,0,0,0.15)]"
+          >
+            <!-- Image -->
+            <div class="w-full aspect-[16/10] bg-[var(--color-warm-gray)] flex items-center justify-center overflow-hidden">
+              {study.image && study.href !== '#' ? (
+                <img src={study.image} alt={study.title} class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              ) : (
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(0,0,0,0.15)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                  <circle cx="8.5" cy="8.5" r="1.5"/>
+                  <polyline points="21,15 16,10 5,21"/>
+                </svg>
+              )}
+            </div>
+            <!-- Content -->
+            <div class="p-[24px] max-[640px]:p-[20px]">
+              <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">
+                {study.category}
+              </p>
+              <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">
+                {study.title}
+              </h3>
+              <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)] mb-[16px]">
+                {study.result}
+              </p>
+              <div class="flex flex-wrap gap-[8px]">
+                {study.platforms.map((platform) => (
+                  <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[rgba(0,0,0,0.04)] px-[10px] py-[4px] rounded-[4px]">
+                    {platform}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+      <!-- Empty state -->
+      <p id="no-results" class="hidden text-center text-[16px] font-normal leading-[1.6] text-[var(--color-stone)] py-[64px]">
+        No case studies match the selected filters.
+      </p>
+    </Container>
+  </section>
+
+  <!-- CTA -->
+  <section class="pb-[96px] max-[640px]:pb-[64px]">
+    <Container>
+      <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[48px] max-[640px]:p-[32px] text-center">
+        <SectionHeading overline="Ready to start?">Your brand could be the next case study.</SectionHeading>
+        <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)] max-w-[500px] mx-auto mb-[32px]">
+          Fixed scope. Fixed price. Results you can measure.
+        </p>
+        <Button variant="primary" href="/contact">Book a call</Button>
+      </div>
+    </Container>
+  </section>
+
+  <script>
+    const ACTIVE = 'bg-[var(--color-ink)] text-[#FFFFFF] border border-[var(--color-ink)]';
+    const INACTIVE = 'bg-transparent text-[var(--color-ink)] border border-[rgba(0,0,0,0.15)] hover:border-[var(--color-ink)]';
+
+    let activeCategory = 'All';
+    let activePlatform = 'All';
+
+    function setButtonState(btn: HTMLButtonElement, active: boolean) {
+      const add = active ? ACTIVE : INACTIVE;
+      const remove = active ? INACTIVE : ACTIVE;
+      remove.split(' ').forEach((c) => btn.classList.remove(c));
+      add.split(' ').forEach((c) => btn.classList.add(c));
+    }
+
+    function applyFilters() {
+      const cards = document.querySelectorAll<HTMLElement>('.case-study-card');
+      let visible = 0;
+
+      cards.forEach((card) => {
+        const cat = card.dataset.category ?? '';
+        const plats = (card.dataset.platforms ?? '').split(',');
+
+        const matchCat = activeCategory === 'All' || cat === activeCategory;
+        const matchPlat = activePlatform === 'All' || plats.includes(activePlatform);
+
+        if (matchCat && matchPlat) {
+          card.style.display = '';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      const noResults = document.getElementById('no-results');
+      if (noResults) {
+        noResults.classList.toggle('hidden', visible > 0);
+      }
+    }
+
+    document.querySelectorAll<HTMLButtonElement>('#filter-category button').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        activeCategory = btn.dataset.filterCategory ?? 'All';
+        document.querySelectorAll<HTMLButtonElement>('#filter-category button').forEach((b) => {
+          setButtonState(b, b.dataset.filterCategory === activeCategory);
+        });
+        applyFilters();
+      });
+    });
+
+    document.querySelectorAll<HTMLButtonElement>('#filter-platform button').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        activePlatform = btn.dataset.filterPlatform ?? 'All';
+        document.querySelectorAll<HTMLButtonElement>('#filter-platform button').forEach((b) => {
+          setButtonState(b, b.dataset.filterPlatform === activePlatform);
+        });
+        applyFilters();
+      });
+    });
+  </script>
+
+</PageLayout>

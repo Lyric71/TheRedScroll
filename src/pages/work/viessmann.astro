@@ -1,0 +1,232 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import Container from '../../components/ui/Container.astro';
+import SectionBar from '../../components/ui/SectionBar.astro';
+import SectionHeading from '../../components/ui/SectionHeading.astro';
+import Button from '../../components/ui/Button.astro';
+
+const services = ['Campaign', 'eCommerce', 'Influencer / KOL', 'Livestream', 'Media', 'Social'];
+const platforms = ['Douyin', 'RedNote', 'WeCom', 'Tmall', 'JD'];
+---
+
+<PageLayout
+  title="Viessmann China Social Commerce Case Study | TheRedScroll"
+  description="How Viessmann used Douyin, RedNote, and WeCom to drive eCommerce sales in China. Social media strategy, KOL campaigns, and livestream results."
+  ogImage="/images/clients/Viessmann/Viessman-climate-solution.avif"
+>
+
+  <!-- Hero -->
+  <section class="relative w-full min-h-[600px] max-[640px]:min-h-[480px] overflow-hidden">
+    <div
+      class="absolute inset-0 bg-cover bg-center bg-fixed max-[640px]:bg-scroll"
+      style="background-image: url('/images/clients/Viessmann/Viessman-climate-solution.avif')"
+      aria-hidden="true"
+    ></div>
+    <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.78]" aria-hidden="true"></div>
+
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+        Case study
+      </p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        Viessmann: how social drove eCommerce growth in China.
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        Viessmann needed social media in China to drive eCommerce sales. We built a system across Douyin, RedNote, and WeCom that delivered steady growth.
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/contact">Book a call</Button>
+        <Button variant="secondary-dark" href="#case-study">Read the case study</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meta bar -->
+  <section class="border-b border-[rgba(0,0,0,0.08)]">
+    <Container>
+      <div class="flex flex-wrap gap-[32px] max-[640px]:gap-[20px] py-[24px]">
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Client</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">Viessmann (Carrier)</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Industry</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">Climate systems</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Services</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {services.map((s) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{s}</span>
+            ))}
+          </div>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Platforms</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {platforms.map((p) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{p}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Case study content -->
+  <section id="case-study" class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <!-- The Client -->
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="The client">Heating technology since 1917. China was the hard part.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Viessmann has been building heating technology since 1917. Now part of Carrier, they sell climate systems across dozens of markets. Heating, water, air quality, renewable energy.
+            </p>
+            <p>
+              China was the hard part. They had Tmall and JD stores already, products listed, storefronts live. But traffic was thin. And in China, that's really a social media problem. Consumers find brands on social first. Then they buy. Viessmann needed content that actually got people to the store.
+            </p>
+          </div>
+        </div>
+
+        <!-- Tmall store images -->
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+            <img
+              src="/images/clients/Viessmann/Tmall-Store-Viessmann-3.png"
+              alt="Viessmann Tmall flagship store product page"
+              class="w-full rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+              loading="lazy"
+              decoding="async"
+            />
+            <img
+              src="/images/clients/Viessmann/Tmall-Store-Viessmann-6.png"
+              alt="Viessmann Tmall flagship store product listing"
+              class="w-full rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+            Viessmann's Tmall flagship store. Products were listed, but traffic was thin.
+          </p>
+        </div>
+
+        <!-- What We Did -->
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="What we did">Three platforms, each with a different job.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              We built a system connecting social platforms to Viessmann's eCommerce stores. Three platforms, each with a different job.
+            </p>
+          </div>
+        </div>
+
+        <!-- Douyin -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Douyin: where the traffic came from</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              We produced short videos about heating, but not the way an engineer would explain it. We talked about warmer homes. Lower energy bills. A house that handles winter without turning into a money pit.
+            </p>
+            <p>
+              We ran product demos and livestream sessions that sent viewers straight to the Tmall store. It worked. Douyin quickly became one of Viessmann's biggest sources of new online buyers.
+            </p>
+          </div>
+        </div>
+
+        <!-- RedNote -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">RedNote: where the research happened</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Heating systems cost real money, and people in China do serious research before committing. So we made sure Viessmann showed up in that research. Product reviews, installation guides, homeowner stories.
+            </p>
+            <p>
+              We ran KOL campaigns and seeded KOC content across the platform. The goal was simple: when someone searched "best heating system" on RedNote, Viessmann should come up with proof. Not promises.
+            </p>
+          </div>
+        </div>
+
+        <!-- WeCom -->
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">WeCom: where conversations converted</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Before buying, customers had all kinds of questions. What size system do I need? Will it work with my floor plan? Our team handled that through WeCom, in Chinese, in real time.
+            </p>
+            <p>
+              After the sale, that same thread became the service channel. Installation support, maintenance bookings, follow-ups. One conversation from first question to long-term client.
+            </p>
+          </div>
+        </div>
+
+        <!-- Second image row -->
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+            <img
+              src="/images/clients/Viessmann/Tmall-Store-Viessmann-4.png"
+              alt="Viessmann Tmall store membership and service flow"
+              class="w-full rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+              loading="lazy"
+              decoding="async"
+            />
+            <img
+              src="/images/clients/Viessmann/Tmall-Store-Viessmann-5.png"
+              alt="Viessmann brand story and history on Tmall"
+              class="w-full rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+            Viessmann's Tmall store: brand story and membership service flow.
+          </p>
+        </div>
+
+        <!-- Ground team -->
+        <div class="mb-[64px] max-[640px]:mb-[48px] bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[32px] max-[640px]:p-[24px]">
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            None of this was managed from somewhere else. Our team ran it from China. Native speakers on every platform, adjusting content week by week based on what was actually getting traction.
+          </p>
+        </div>
+
+        <!-- The Outcome -->
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="The outcome">From new storefronts to real, consistent sales channels.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Within roughly two years, Viessmann's online revenue in China was growing month over month. Tmall and JD went from new storefronts to real, consistent sales channels.
+            </p>
+            <p>
+              But the revenue is only part of it. Look at what's running underneath. Douyin fills the top of the funnel. RedNote warms up serious buyers. WeCom converts them and keeps them around. And now offline retail, distributors, even the service partners are plugged into that same loop.
+            </p>
+            <p>
+              The brief was pretty straightforward. Don't just sell online. Make every channel push in the same direction. That's what got built.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- CTA -->
+  <section class="pb-[96px] max-[640px]:pb-[64px]">
+    <Container>
+      <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[48px] max-[640px]:p-[32px] text-center">
+        <SectionHeading overline="Your turn">Want to build a social-to-commerce engine for your brand in China?</SectionHeading>
+        <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)] max-w-[500px] mx-auto mb-[32px]">
+          Fixed scope. Fixed price. Team on the ground.
+        </p>
+        <Button variant="primary" href="/contact">Book a call</Button>
+      </div>
+    </Container>
+  </section>
+
+</PageLayout>

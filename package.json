@@ -7,6 +7,9 @@
   },
   "scripts": {
     "dev": "astro dev",
+    "optimize-images": "node scripts/optimize-images.mjs",
+    "optimize-images:force": "node scripts/optimize-images.mjs --force",
+    "prebuild": "node scripts/optimize-images.mjs",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
@@ -23,6 +26,7 @@
   },
   "devDependencies": {
     "prettier": "^3.8.1",
-    "prettier-plugin-astro": "^0.14.1"
+    "prettier-plugin-astro": "^0.14.1",
+    "sharp": "^0.34.5"
   }
 }

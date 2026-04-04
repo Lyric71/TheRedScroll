@@ -5,28 +5,32 @@ import Button from '../ui/Button.astro';
 
 const projects = [
   {
-    title: 'European luxury brand launch on WeChat and RedNote',
-    industry: 'Luxury',
-    platform: 'WeChat + RedNote',
-    image: '/images/hero/why-theredscroll-bg.png',
+    title: 'Viessmann: social-to-commerce engine in China',
+    industry: 'Climate Systems',
+    platform: 'Douyin + RedNote + WeCom',
+    image: '/images/clients/Viessmann/Viessman-climate-solution.avif',
+    href: '/work/viessmann',
   },
   {
-    title: 'Douyin campaign for French beauty brand',
-    industry: 'Beauty',
-    platform: 'Douyin',
-    image: '/images/hero/getting-started-bg.png',
+    title: 'Jaguar Land Rover: reaching younger consumers',
+    industry: 'Automotive',
+    platform: 'Douyin + RedNote + WeChat',
+    image: '/images/clients/Jaguar/Jaguar-Land-Rover.avif',
+    href: '/work/jaguar-land-rover',
   },
   {
     title: 'B2B lead generation on Zhihu and WeChat',
     industry: 'B2B',
     platform: 'Zhihu + WeChat',
     image: '/images/hero/hero-phones-shanghai.png',
+    href: '#',
   },
   {
     title: 'F&B brand social commerce on RedNote',
     industry: 'F&B',
     platform: 'RedNote',
     image: '/images/hero/why-theredscroll-bg.png',
+    href: '#',
   },
 ];
 ---
@@ -46,14 +50,14 @@ const projects = [
         <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] max-w-[360px]">
           From luxury launches to B2B lead generation. Real campaigns, real platforms, real results.
         </p>
-        <Button variant="primary" href="/contact" class="shrink-0">See all projects</Button>
+        <Button variant="primary" href="/work" class="shrink-0">See all projects</Button>
       </div>
     </div>
 
     <!-- Projects grid: 4 columns -->
     <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
       {projects.map((project) => (
-        <div class="group">
+        <a href={project.href} class="group block">
           <!-- Image with tag overlay -->
           <div class="relative w-full aspect-[3/4] rounded-[10px] overflow-hidden bg-[#E8E0D8]">
             <img
@@ -61,6 +65,7 @@ const projects = [
               alt={project.title}
               class="absolute inset-0 w-full h-full object-cover"
               loading="lazy"
+              decoding="async"
             />
             <!-- Industry + Platform tags -->
             <div class="absolute top-[12px] left-[12px] flex gap-[6px]">
@@ -79,7 +84,7 @@ const projects = [
             </p>
             <span class="text-[#1A1A1A] text-[16px] shrink-0">&rarr;</span>
           </div>
-        </div>
+        </a>
       ))}
     </div>
   </Container>
