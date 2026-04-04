@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <!-- Pinduoduo overlapping shapes -->
+  <path d="M18 6c-5 0-9 4-9 9 0 3.5 2 6.5 5 8v17h3V23.5c2.8-.8 5-3 5.8-5.8C23 19 24 21 26.5 22.2V40h3V22.5c3-1.5 5-4.5 5-8 0-5-4-9-9-9-2.3 0-4.4.9-6 2.3A8.9 8.9 0 0018 6z" fill="#FFFFFF"/>
+  <circle cx="18" cy="15" r="5.5" fill="#FFFFFF"/>
+  <circle cx="30.5" cy="14" r="5" fill="#FFFFFF"/>
+  <ellipse cx="24" cy="28" rx="4" ry="3.5" fill="#FFFFFF"/>
+</svg>

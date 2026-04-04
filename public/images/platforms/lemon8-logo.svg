@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <!-- Lemon8: lemon shape with 8 -->
+  <path d="M24 4c-8 0-16 7-16 18s8 22 16 22 16-11 16-22S32 4 24 4z" fill="#FFFFFF"/>
+  <path d="M22 6c-2-2-4-3-6-2s-2 4 0 6l6-4z" fill="#FFFFFF"/>
+  <text x="24" y="30" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="500" fill="#1A1A1A">8</text>
+</svg>

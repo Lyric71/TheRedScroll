@@ -5,253 +5,332 @@ import SectionBar from '../../components/ui/SectionBar.astro';
 import SectionHeading from '../../components/ui/SectionHeading.astro';
 import Button from '../../components/ui/Button.astro';
 
-const stats = [
-  { label: 'Monthly active users', value: '567M', image: '/images/platforms/weibo-stats/monthly-active-users.png' },
-  { label: 'Daily active users', value: '252M', image: '/images/platforms/weibo-stats/daily-active-users.png' },
-  { label: 'Mobile usage', value: '95%', image: '/images/platforms/weibo-stats/mobile-usage.png' },
-  { label: 'Ad revenue (FY2025)', value: '$1.5B', image: '/images/platforms/weibo-stats/ad-revenue.png' },
-  { label: 'Biggest age group (25–34)', value: '42%', image: '/images/platforms/weibo-stats/age-group.png' },
-  { label: 'Daily posts', value: '100M+', image: '/images/platforms/weibo-stats/daily-posts.png' },
-  { label: 'Gender split (women)', value: '51%', image: '/images/platforms/weibo-stats/gender-split.png' },
-];
-
-const ecosystem = [
+const platforms = [
   {
-    name: 'Mass awareness and PR',
-    chineseName: '品牌曝光',
-    description: 'Nothing in China generates national attention faster than a Weibo trend. Product launches, press amplification, event campaigns, crisis response.',
-    image: '/images/platforms/weibo-ecosystem/mass-awareness.png',
+    name: 'Bilibili',
+    chineseName: 'B站',
+    mau: '366M',
+    audience: 'Gen Z, urban, educated. 78% under 35',
+    category: 'Video and community',
+    description: 'China\'s home for long-form video. Started in anime and gaming, now covers tech, education, beauty, automotive and just about everything else. Close to 70% of Chinese Gen Z are active here. Users don\'t scroll through quick clips. They sit down and watch. Average session: 107 minutes.',
+    detail: 'Bilibili turned profitable for the first time in 2025. Ad revenue grew 27% year over year. The danmu feature (bullet comments that scroll across the video while you watch) turns passive viewing into something closer to a shared experience.',
+    bestFor: 'Tech, gaming, education, beauty, automotive. Top formats: deep-dives, tutorials, unboxing series, collabs with UP主 (Bilibili creators).',
+    image: '/images/platforms/additional-platforms/bilibili.png',
+    logo: '/images/platforms/bilibili-logo.svg',
+    brandColor: '#00A1D6',
     bg: '#F7F2EE',
     iconBg: '#E8E0D8',
     textColor: '#1A1A1A',
     descColor: '#5C5C5C',
     linkColor: '#CC3333',
-    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>`,
   },
   {
-    name: 'Trending topic campaigns',
-    chineseName: '热搜营销',
-    description: 'Ride organic trends with fast content, or run paid hashtag promotions to place your brand inside the national conversation at the right moment.',
-    image: '/images/platforms/weibo-ecosystem/trending-topics.png',
+    name: 'Kuaishou',
+    chineseName: '快手',
+    mau: '731M',
+    audience: 'Broad. Strong in tier 3-4 cities',
+    category: 'Video and community',
+    description: '731 million monthly users. The audience skews tier 3-5 cities and values real content over polished brand videos. The "Laotie" culture (roughly: trusted friend) rewards creators who show up week after week and talk straight.',
+    detail: 'One detail most brands miss: users over 40 drive more than 47% of total e-commerce spending on the platform. That\'s a demographic most companies aren\'t even thinking about.',
+    bestFor: 'FMCG, food and beverage, agriculture, brands selling outside tier 1-2 cities. Top formats: live commerce, product demos, factory tours.',
+    image: '/images/platforms/additional-platforms/kuaishou.png',
+    logo: '/images/platforms/kuaishou-logo.svg',
+    brandColor: '#FF4906',
     bg: '#1A1A1A',
     iconBg: 'rgba(255,255,255,0.1)',
     textColor: '#FFFFFF',
     descColor: 'rgba(255,255,255,0.6)',
     linkColor: '#CC3333',
-    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>`,
   },
   {
-    name: 'KOL and celebrity partnerships',
-    chineseName: 'KOL合作',
-    description: 'Top Weibo KOLs have tens of millions of followers. One post from the right influencer shifts awareness, credibility, and sales all at once.',
-    image: '/images/platforms/weibo-ecosystem/kol-partnerships.png',
+    name: 'Zhihu',
+    chineseName: '知乎',
+    mau: '~83M',
+    audience: 'Professionals. 80%+ bachelor\'s degree',
+    category: 'Text and knowledge',
+    description: 'China\'s leading Q&A platform. Over 80% of users hold a bachelor\'s degree. 59% female as of Q2 2025. Content gets indexed by Baidu and keeps pulling traffic for months. On Douyin, a post disappears in 48 hours. On Zhihu, it compounds.',
+    detail: 'About 83 million monthly users. Smaller audience, but these are high-intent buyers who do their homework before purchasing. And 14.2 million of them pay for premium content.',
+    bestFor: 'B2B, professional services, education, tech, healthcare, luxury. Top formats: expert answers, industry analysis, case studies.',
+    image: '/images/platforms/additional-platforms/zhihu.png',
+    logo: '/images/platforms/zhihu-logo.svg',
+    brandColor: '#0066FF',
     bg: '#CC3333',
     iconBg: 'rgba(255,255,255,0.2)',
     textColor: '#FFFFFF',
     descColor: 'rgba(255,255,255,0.8)',
     linkColor: '#FFFFFF',
-    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
   },
   {
-    name: 'Community building',
-    chineseName: '超级话题',
-    description: 'Weibo Super Topics create branded hubs where followers post their own content, discuss products, and engage with the brand directly.',
-    image: '/images/platforms/weibo-ecosystem/community.png',
+    name: 'Toutiao',
+    chineseName: '今日头条',
+    mau: '410M',
+    audience: 'News readers. Ages 25-35',
+    category: 'Text and knowledge',
+    description: 'ByteDance\'s news platform. 410 million monthly users. Distributes content by interest, not follower count. A brand with zero followers can reach millions on day one if the article gets traction.',
+    detail: 'Account setup is painful and bans come fast. You need a team that already knows the rules.',
+    bestFor: 'B2B, manufacturing, tech, product launches.',
+    image: '/images/platforms/additional-platforms/toutiao.png',
+    logo: '/images/platforms/toutiao-logo.svg',
+    brandColor: '#ED1C24',
     bg: '#E8E0D8',
     iconBg: '#FFFFFF',
     textColor: '#1A1A1A',
     descColor: '#5C5C5C',
     linkColor: '#CC3333',
-    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>`,
   },
   {
-    name: 'Social commerce',
-    chineseName: '社交电商',
-    description: 'Shoppable posts link to Tmall and Taobao. Live streams sync with Taobao Live for real-time selling. The distance between a Weibo post and a purchase is very short.',
-    image: '/images/platforms/weibo-ecosystem/social-commerce.png',
+    name: 'Baidu Tieba',
+    chineseName: '百度贴吧',
+    mau: '300M',
+    audience: 'Interest-based communities',
+    category: 'Text and knowledge',
+    description: 'China\'s original forum platform. Organized by keyword, like Reddit. 300 million monthly users. Posts get indexed by Baidu, so active participation builds community trust and search rankings at the same time.',
+    detail: '',
+    bestFor: 'Consumer electronics, gaming, automotive, brands with niche fan communities.',
+    image: '/images/platforms/additional-platforms/baidu-tieba.png',
+    logo: '/images/platforms/baidu-tieba-logo.svg',
+    brandColor: '#4879BD',
+    bg: '#F7F2EE',
+    iconBg: '#E8E0D8',
+    textColor: '#1A1A1A',
+    descColor: '#5C5C5C',
+    linkColor: '#CC3333',
+  },
+  {
+    name: 'Meituan/Dianping',
+    chineseName: '美团/大众点评',
+    mau: '770M+',
+    audience: 'Food, travel, local services',
+    category: 'Commerce and lifestyle',
+    description: 'China\'s biggest local services platform. 770M+ annual users, 14.5M merchants. Dianping is where consumers check reviews before visiting any physical business. A strong profile drives foot traffic. A neglected one pushes people to the competition.',
+    detail: '',
+    bestFor: 'Hospitality, F&B, beauty, wellness, tourism, retail with physical stores.',
+    image: '/images/platforms/additional-platforms/meituan.png',
+    logo: '/images/platforms/meituan-logo.svg',
+    brandColor: '#FFD100',
     bg: '#1A1A1A',
     iconBg: 'rgba(255,255,255,0.1)',
     textColor: '#FFFFFF',
     descColor: 'rgba(255,255,255,0.6)',
     linkColor: '#CC3333',
-    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>`,
   },
   {
-    name: 'Reputation management',
-    chineseName: '舆情管理',
-    description: 'People share opinions on Weibo publicly. Monitoring brand mentions, tracking competitors, and catching sentiment shifts early is not optional.',
-    image: '/images/platforms/weibo-ecosystem/reputation.png',
+    name: 'Pinduoduo',
+    chineseName: '拼多多',
+    mau: '880M+',
+    audience: 'Value shoppers. Tier 3-4 cities',
+    category: 'Commerce and lifestyle',
+    description: 'Third-largest e-commerce platform in China. Parent company also runs Temu. 880M+ monthly users, mostly in tier 3-4 cities. Built on group buying and steep discounts. Also supports cross-border e-commerce and live commerce.',
+    detail: '',
+    bestFor: 'FMCG, consumer goods, health and beauty, cross-border. Not the right platform for luxury-first brands.',
+    image: '/images/platforms/additional-platforms/pinduoduo.png',
+    logo: '/images/platforms/pinduoduo-logo.svg',
+    brandColor: '#E02E24',
     bg: '#B02D2D',
     iconBg: 'rgba(255,255,255,0.2)',
     textColor: '#FFFFFF',
     descColor: 'rgba(255,255,255,0.8)',
     linkColor: '#FFFFFF',
-    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>`,
   },
+  {
+    name: 'Lemon8',
+    chineseName: '柠檬8',
+    mau: '23M',
+    audience: 'Lifestyle, visual content',
+    category: 'Commerce and lifestyle',
+    description: 'ByteDance\'s visual lifestyle platform. 23M users and the number keeps climbing. Think Pinterest meets RedNote, built around curated aesthetic content. The platform is newer but gaining traction fast, especially in beauty and travel verticals.',
+    detail: '',
+    bestFor: 'Beauty, fashion, food, travel, home decor. Photo-first content, carousels, product styling.',
+    image: '/images/platforms/additional-platforms/lemon8.png',
+    logo: '/images/platforms/lemon8-logo.svg',
+    brandColor: '#FFE135',
+    bg: '#E8E0D8',
+    iconBg: '#FFFFFF',
+    textColor: '#1A1A1A',
+    descColor: '#5C5C5C',
+    linkColor: '#CC3333',
+  },
+  {
+    name: 'QQ',
+    chineseName: '腾讯QQ',
+    mau: '534M',
+    audience: '91% of users aged 15-24',
+    category: 'Commerce and lifestyle',
+    description: '534M monthly users. 91% of users aged 15-24 are on it. Communities function kind of like Discord servers for the youngest slice of Chinese Gen Z. The platform also integrates gaming and music features, which keeps engagement high among students.',
+    detail: 'QQ is not WeChat. Different audience, different rules entirely.',
+    bestFor: 'Gaming, education, entertainment, youth brands.',
+    image: '/images/platforms/additional-platforms/qq.png',
+    logo: '/images/platforms/qq-logo.svg',
+    brandColor: '#12B7F5',
+    bg: '#F7F2EE',
+    iconBg: '#E8E0D8',
+    textColor: '#1A1A1A',
+    descColor: '#5C5C5C',
+    linkColor: '#CC3333',
+  },
+];
+
+const stats = [
+  { label: 'Bilibili daily session', value: '107 min', image: '/images/platforms/additional-platforms/bilibili.png' },
+  { label: 'Kuaishou MAU', value: '731M', image: '/images/platforms/additional-platforms/kuaishou.png' },
+  { label: 'Pinduoduo MAU', value: '880M+', image: '/images/platforms/additional-platforms/pinduoduo.png' },
+  { label: 'Meituan annual users', value: '770M+', image: '/images/platforms/additional-platforms/meituan.png' },
+  { label: 'QQ monthly users', value: '534M', image: '/images/platforms/additional-platforms/qq.png' },
+  { label: 'Toutiao MAU', value: '410M', image: '/images/platforms/additional-platforms/toutiao.png' },
+  { label: 'Bilibili MAU', value: '366M', image: '/images/platforms/additional-platforms/bilibili.png' },
+  { label: 'Baidu Tieba MAU', value: '300M', image: '/images/platforms/additional-platforms/baidu-tieba.png' },
+  { label: 'Zhihu MAU', value: '~83M', image: '/images/platforms/additional-platforms/zhihu.png' },
+  { label: 'Lemon8 users', value: '23M', image: '/images/platforms/additional-platforms/lemon8.png' },
 ];
 
 const services = [
   {
     title: 'Account setup and verification',
-    description: 'We register your Blue V corporate account end to end. Document prep, Chinese translation, submission, full profile buildout. International companies pay a one-time $1,000 verification fee. Approval takes 2 to 4 weeks. We handle everything.',
-    result: 'A live, verified Weibo corporate account ready to publish.',
+    description: 'Registration, verification, profile optimization. Full platform compliance. We handle the paperwork on every platform so you don\'t get stuck on forms written in Chinese.',
+    result: 'Live, verified accounts ready to publish.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/></svg>`,
-    image: '/images/platforms/weibo-services/account-setup.png',
+    image: '/images/platforms/additional-services/account-setup.png',
   },
   {
-    title: 'Content strategy and production',
-    description: 'Monthly content plans with brand posts, trending topic tie-ins, interactive formats, and campaign assets. Native Chinese content by native Chinese speakers. Short posts, 9-grid carousels, short video, live stream assets.',
-    result: 'Localized content built for how Weibo\'s algorithm works today.',
+    title: 'Content production',
+    description: 'AI-powered visuals via HubStudio.ai plus native Chinese copywriting. Strategy is human-led. Every post reviewed and approved by native speakers in China. Content gets adapted to each platform\'s format and audience.',
+    result: 'Platform-native content your audience wants to engage with.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/></svg>`,
-    image: '/images/platforms/weibo-services/content-strategy.png',
+    image: '/images/platforms/additional-services/content-production.png',
   },
   {
-    title: 'Paid advertising',
-    description: 'Fan Headlines, Fan Tunnels, in-feed display, splash page ads, search promotion, hashtag promotion. Targeting by demographics, interests, behavior, and lookalike audiences. Weekly reporting on CPM, CPC, CPA, ROAS. Ad spend billed separately. No markups.',
-    result: 'Ads that reach the right audience with transparent spend reporting.',
+    title: 'Publishing and community management',
+    description: 'Scheduled posting at platform-optimal times, comment moderation, community engagement, audience growth. Posting frequency is agreed upfront in your scope of work.',
+    result: 'Consistent presence with active community engagement.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>`,
+    image: '/images/platforms/additional-services/publishing.png',
+  },
+  {
+    title: 'Advertising',
+    description: 'Ad account setup, campaign management, creative production, performance reporting. We bill ad spend at cost with no markup.',
+    result: 'Ads that reach the right audience with transparent spend.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>`,
-    image: '/images/platforms/weibo-services/paid-advertising.png',
+    image: '/images/platforms/additional-services/advertising.png',
   },
   {
     title: 'KOL and KOC campaigns',
-    description: 'We find, vet, negotiate, and brief influencers. Selection based on verified engagement, audience authenticity checks, niche fit, and budget. Full campaign management from creative brief to ROI report.',
-    result: 'Influencer campaigns backed by verified data, not follower counts.',
+    description: 'Influencer sourcing, vetting, campaign management and ROI reporting across all platforms. UP主 on Bilibili, 达人 on Kuaishou, 大V on Zhihu. We source, vet, manage and report. Verified engagement data only.',
+    result: 'Influencer campaigns with transparent ROI reporting.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
-    image: '/images/platforms/weibo-services/kol-campaigns.png',
+    image: '/images/platforms/additional-services/kol-campaigns.png',
   },
   {
-    title: 'Hot Search and topic campaigns',
-    description: 'Topic creation, content seeding, KOL amplification, community activation, paid promotion. Built to put your brand in the national conversation when it matters most.',
-    result: 'Your brand inside China\'s most-watched trending list.',
-    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>`,
-    image: '/images/platforms/weibo-services/hot-search.png',
-  },
-  {
-    title: 'Social listening and analytics',
-    description: 'Daily monitoring of brand mentions, competitor moves, sentiment shifts, and trending conversations. Monthly reports on follower growth, engagement, content performance, ad results, KOL returns, and competitive benchmarks.',
-    result: 'Actionable reports with specific recommendations for next month.',
+    title: 'Analytics and reporting',
+    description: 'Monthly reports on growth, engagement, content performance and business-relevant KPIs. All reporting delivered in English with Chinese-language data attached for your local teams.',
+    result: 'Clear monthly reports with actionable insights.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 6-8"/></svg>`,
-    image: '/images/platforms/weibo-services/analytics.png',
+    image: '/images/platforms/additional-services/analytics.png',
   },
 ];
 
-const bestPractices = [
-  {
-    title: 'Post every day.',
-    description: 'Once a day minimum. Three to five in growth mode. The algorithm rewards consistency.',
-  },
-  {
-    title: 'Lead with visuals.',
-    description: 'Use all 9 image slots. Center image gets the most attention. Short video outperforms static posts consistently.',
-  },
-  {
-    title: 'React fast to trends.',
-    description: 'Check the Hot Search list every morning. Publish within the hour when something relevant breaks.',
-  },
-  {
-    title: 'Write tight.',
-    description: 'Posts fold after 140 characters. Strong first sentence. Clear call to action above the fold.',
-  },
-  {
-    title: 'Actually reply to people.',
-    description: 'The comment section is where real conversations happen. Brands that engage build loyalty much faster than brands that just broadcast.',
-  },
-  {
-    title: 'Verify early.',
-    description: 'The Blue V badge builds trust, improves reach, unlocks ad tools, and protects against copycat accounts.',
-  },
+const recommendations = [
+  { goal: 'Reach Gen Z with in-depth video', platforms: 'Bilibili' },
+  { goal: 'Sell to value-conscious buyers in smaller cities', platforms: 'Kuaishou, Pinduoduo' },
+  { goal: 'Build long-term search visibility', platforms: 'Zhihu, Baidu Tieba' },
+  { goal: 'Drive foot traffic to physical locations', platforms: 'Meituan/Dianping' },
+  { goal: 'Reach mass audiences with news content', platforms: 'Toutiao' },
+  { goal: 'Connect with students and gamers', platforms: 'QQ' },
+  { goal: 'Build a visual lifestyle presence', platforms: 'Lemon8' },
 ];
 
 const steps = [
   {
     number: '01',
-    title: 'Discovery call.',
-    description: 'Tell us about your brand, your goals, and how ready you are for China. No pitch deck. Just the right questions.',
+    title: 'Book a call.',
+    description: '30 minutes. Your brand, your audience, your China goals. No pitch deck. Just the right questions.',
     icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>`,
   },
   {
     number: '02',
-    title: 'Proposal.',
-    description: 'Clear scope. Fixed price. Every deliverable listed out. No surprises.',
+    title: 'Get a recommendation.',
+    description: 'We identify which platforms fit and build them into your package. Clear scope. Fixed price.',
     icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>`,
   },
   {
     number: '03',
-    title: 'Live in 2 weeks.',
-    description: 'Account live, first content published, first campaign running. Fourteen days from signed contract to first post.',
+    title: 'Launch.',
+    description: 'Account setup, first content, ongoing management. Usually within two weeks.',
     icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>`,
   },
 ];
 
 const faqs = [
   {
-    q: 'Who actually runs our Weibo account?',
-    a: 'Our team in Shanghai and Hong Kong. Native Chinese speakers write your content, buy the ads, and deal with KOLs directly. We are not a remote agency sitting in London or New York guessing what is trending in China. We log into Weibo every morning, same timezone as your audience.',
+    q: 'Who creates the content for these platforms?',
+    a: 'Native Chinese speakers in Shanghai and Hong Kong. HubStudio.ai speeds up visual production, but a human strategist builds the content plan and a native editor reviews every piece for cultural fit, tone and compliance. No post goes live without a real person signing off.',
   },
   {
-    q: 'Can a company registered outside China open a Weibo account?',
-    a: 'Yes, and we do this regularly. Foreign companies can get a verified corporate account with a Blue V badge. You will need business registration documents translated into Chinese and a one-time $1,000 fee paid to Weibo for verification. Takes about 2 to 4 weeks to get approved. We handle the documents, translation, and back-and-forth with Weibo\'s team so you don\'t have to.',
+    q: 'Do you have actual access to all 14 platforms?',
+    a: 'Yes. We log into these platforms from China every single day. Several platforms restrict features from overseas IPs. Agencies working remotely from other countries run into access issues they can\'t fix. We don\'t have that problem.',
+  },
+  {
+    q: 'How do you pick which platforms are right for my brand?',
+    a: 'We look at your industry, audience and goals. A hospitality brand needs Meituan/Dianping. A B2B tech company gets more from Zhihu and Toutiao. We recommend what fits your business, not what pads a proposal.',
+  },
+  {
+    q: 'Can I add platforms to an existing package?',
+    a: 'Yes. Any platform, any time. We add it to your scope with clear deliverables and a fixed price.',
+  },
+  {
+    q: 'What does "AI-powered content" actually mean?',
+    a: 'Strategy and editorial direction are 100% human. HubStudio.ai handles the visual side of production: product imagery, social assets, video drafts. A native editor then goes through every piece for accuracy, platform rules and brand voice. The AI makes production faster. The people on our team make sure everything is right.',
+  },
+  {
+    q: 'How do you handle content moderation rules?',
+    a: 'Every platform runs its own moderation system and they\'re all different. Bilibili flags certain keywords that Zhihu wouldn\'t care about. Toutiao bans accounts faster than most platforms. We know what gets approved and what gets your account suspended because we deal with this stuff daily.',
+  },
+  {
+    q: 'How long to get set up on a new platform?',
+    a: 'One to three weeks depending on the platform. We handle registration, verification, profile setup and first content. Most clients see their first post go live within two to three weeks.',
+  },
+  {
+    q: 'Do you run influencer campaigns on these platforms?',
+    a: 'Yes. UP主 on Bilibili, 达人 on Kuaishou, 大V on Zhihu. We source, vet, manage and report. Influencer fees quoted separately and transparently.',
+  },
+  {
+    q: 'How do you measure results?',
+    a: 'We pull data from platform backends directly, not third-party tools. Reports cover follower growth, engagement, content performance and platform-specific KPIs. For Zhihu that might mean Baidu search impressions. For Meituan, review volume and rating trends. For Kuaishou, live commerce conversions. We report on what actually moves the needle for your business.',
   },
   {
     q: 'How does pricing work?',
-    a: 'Fixed scope. Fixed price. We define every deliverable before the project starts. How many posts, how many videos, which campaigns, what reporting. You see the full picture and the total cost upfront. No vague custom quotes. No hidden fees that show up three months in.',
-  },
-  {
-    q: 'What makes you different from other agencies doing Weibo?',
-    a: 'We are physically based in China with direct access to every platform, not running things remotely from overseas. We use AI tools (HubStudio.ai) for content production, which means faster turnaround and lower costs without cutting corners on quality. And we are the only agency we have found that offers fixed-price packages. We looked at 37 competitors. None of them do this.',
-  },
-  {
-    q: 'How fast can we get going?',
-    a: 'About two weeks from signing. Account registration, profile setup, first content live, first campaign launched. Weibo\'s own verification process takes 2 to 4 weeks on their end, but we don\'t sit around waiting. We start building and posting while the Blue V badge is being processed.',
-  },
-  {
-    q: 'Is all the content written in Chinese?',
-    a: 'Yes. Everything we publish on Weibo is written in Chinese by native speakers, then proofread by a second native speaker for tone and cultural accuracy. You will receive English summaries of content plans and monthly reports. If you want to review individual posts before they go live, we build that into the workflow.',
-  },
-  {
-    q: 'Do we really need Weibo if we already use WeChat and RedNote?',
-    a: 'Short answer: yes. WeChat keeps content inside closed circles. RedNote is strong for product discovery. But neither lets your brand reach a mass public audience or participate in national trending conversations. If a crisis breaks, a cultural moment is blowing up, or you simply need millions of people to learn your brand name quickly, Weibo is the only platform in China that does that.',
-  },
-  {
-    q: 'How do you choose which KOLs to work with?',
-    a: 'Not by follower count. We audit real engagement rates, run fake-follower checks, analyze audience demographics, and review each KOL\'s content style against your brand. We also compare their pricing against market rates so you know you\'re getting a fair deal. Every KOL we recommend comes with the data behind the recommendation.',
-  },
-  {
-    q: 'What does reporting look like?',
-    a: 'Monthly. Each report covers follower growth, engagement rates, content performance broken down by format, ad campaign results (CPM, CPC, CPA, ROAS), KOL campaign returns, and competitive benchmarks. We end every report with clear recommendations for the following month. You also get a mid-month check-in if you\'re running active campaigns.',
-  },
-  {
-    q: 'What if we want more than just Weibo?',
-    a: 'Most of our clients do. Weibo is one of over 18 platforms we work on. We build and run campaigns across Weibo, WeChat, RedNote, Douyin, and others like Bilibili, Zhihu, or Kuaishou depending on your industry. Everything is coordinated by one team, delivered under one scope of work, and billed at one fixed price.',
+    a: 'Fixed scope, fixed price. Every deliverable spelled out before we begin. You pay one monthly fee per platform. No hourly rates, no scope creep charges. Ad spend is always billed separately at cost.',
   },
 ];
+
+const videoAndCommunity = platforms.filter(p => p.category === 'Video and community');
+const textAndKnowledge = platforms.filter(p => p.category === 'Text and knowledge');
+const commerceAndLifestyle = platforms.filter(p => p.category === 'Commerce and lifestyle');
 ---
 
 <PageLayout
-  title="Weibo Marketing Services | TheRedScroll"
-  description="Weibo marketing services from Shanghai. Account setup, content, ads, KOL campaigns, and analytics. Fixed scope. Fixed price. 567M monthly active users."
+  title="Additional Platforms: Bilibili, Kuaishou, Zhihu, and More | TheRedScroll"
+  description="14 platforms most agencies skip. Bilibili, Kuaishou, Zhihu, Toutiao, Meituan, Pinduoduo, and more. Fixed scope, fixed price. Team on the ground in China."
 >
   <!-- Hero: Dark hero banner -->
   <section class="w-full bg-[#1A1A1A] py-[80px] max-[640px]:py-[48px] relative overflow-hidden">
-    <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/weibo-hero.png')" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/additional-platforms-hero.png')" aria-hidden="true"></div>
     <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[140px] max-[640px]:text-[80px] font-medium text-[#FFFFFF] opacity-[0.03] pointer-events-none select-none whitespace-nowrap" aria-hidden="true">
-      微博
+      更多平台
     </span>
     <Container class="relative z-[1]">
       <div class="max-w-[800px] mx-auto text-center">
-        <a href="/platforms/others" class="inline-flex items-center gap-[6px] text-[13px] text-[#5C5C5C] mb-[16px] transition-colors duration-150 hover:text-[#FFFFFF]">
-          &larr; All platforms
-        </a>
         <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">
-          Weibo marketing
+          Beyond the big four
         </p>
         <h1 class="text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] text-[#FFFFFF] mb-[8px]">
-          We don't talk about Weibo strategy. We post on Weibo. Every day. From Shanghai.
+          14 platforms most agencies skip
         </h1>
         <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal mb-[24px]">
-          Weibo marketing from Shanghai. Account setup, content, ads, KOL campaigns, analytics. 567 million monthly users. Fixed scope. Fixed price. Team on the ground.
+          Your customers watch Bilibili for two hours straight. They check Dianping before picking a restaurant. They trust Zhihu answers over ads. They shop live on Kuaishou during the commute home. We post on all of them. Every day, from Shanghai and Hong Kong.
         </p>
-        <Button variant="primary" href="/contact">Book a call</Button>
+        <div class="flex items-center justify-center gap-[12px] flex-wrap">
+          <Button variant="primary" href="/contact">Book a call</Button>
+        </div>
       </div>
     </Container>
   </section>
@@ -263,10 +342,10 @@ const faqs = [
         <div class="max-w-[560px]">
           <SectionBar />
           <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[8px]">
-            China's open public square. 567 million people, every month.
+            Over 1.1 billion people in China use social media. They don't stick to four apps.
           </h2>
           <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
-            Weibo by the numbers.
+            The numbers across 9 additional platforms.
           </p>
         </div>
         <Button variant="primary" href="/contact" class="shrink-0">Book a call</Button>
@@ -296,76 +375,76 @@ const faqs = [
     </div>
   </section>
 
-  <!-- Why Weibo matters -->
+  <!-- Why these platforms matter -->
   <section class="mt-[96px] max-[640px]:mt-[64px]">
     <Container>
       <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
         <div class="flex justify-center mb-[12px]">
           <SectionBar />
         </div>
-        <SectionHeading overline="Why Weibo matters">
-          Trends start here. News breaks here. Public opinion takes shape here.
+        <SectionHeading overline="Why these platforms matter">
+          Most agencies stop at four. Going further takes a team on the ground.
         </SectionHeading>
       </div>
 
       <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
         <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
           <div class="w-full aspect-[16/9] overflow-hidden">
-            <img src="/images/platforms/weibo-why/public-square.png" alt="Weibo app open showing public feed with trending posts and user discussions" class="w-full h-full object-cover" loading="lazy" />
+            <img src="/images/platforms/additional-why/focused-attention.png" alt="Person watching long-form video content with full attention" class="w-full h-full object-cover" loading="lazy" />
           </div>
           <div class="p-[24px] max-[640px]:p-[20px]">
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Everything is public</h3>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Focused attention, not quick scrolls</h3>
             <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
-              WeChat content stays locked inside friend circles. On Weibo, anyone can see your posts. A single product launch or a well-timed comment on a trending topic can reach millions of people who have never followed your account.
+              Bilibili users spend 107 minutes a day on the platform. Nearly two hours of focused attention from educated consumers under 35. That's not a quick scroll. That's a captive audience.
             </p>
           </div>
         </div>
 
         <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
           <div class="w-full aspect-[16/9] overflow-hidden">
-            <img src="/images/platforms/weibo-why/hot-search.png" alt="Weibo Hot Search trending list showing top 50 topics refreshing in real time" class="w-full h-full object-cover" loading="lazy" />
+            <img src="/images/platforms/additional-why/ecommerce-power.png" alt="E-commerce packages being sorted in a Chinese logistics center" class="w-full h-full object-cover" loading="lazy" />
           </div>
           <div class="p-[24px] max-[640px]:p-[20px]">
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">The Hot Search list drives the platform</h3>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Real commerce, real volume</h3>
             <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
-              It refreshes every minute. Topics that hit the top 50 get seen by hundreds of millions of users within hours. Brands that create content around those moments get organic reach that paid ads alone can't match.
+              Kuaishou processed RMB 385 billion in e-commerce sales in Q3 2025. In one quarter. These platforms move product at a scale that most brands haven't even considered.
             </p>
           </div>
         </div>
 
         <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
           <div class="w-full aspect-[16/9] overflow-hidden">
-            <img src="/images/platforms/weibo-why/brand-research.png" alt="Consumer scrolling through Weibo brand page checking reviews and comments before purchasing" class="w-full h-full object-cover" loading="lazy" />
+            <img src="/images/platforms/additional-why/search-longevity.png" alt="Zhihu answers ranking in Baidu search results" class="w-full h-full object-cover" loading="lazy" />
           </div>
           <div class="p-[24px] max-[640px]:p-[20px]">
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Consumers research brands here</h3>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Content that compounds</h3>
             <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
-              Chinese shoppers search for brand names and scroll through what real users are saying. Strong presence builds trust. No presence raises red flags. Negative comments left unanswered do real damage.
+              Zhihu answers rank in Baidu search results for months. Sometimes years. On Douyin, a post disappears in 48 hours. On Zhihu, it keeps pulling traffic long after you publish.
             </p>
           </div>
         </div>
       </div>
 
       <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] mt-[24px] text-center max-w-[680px] mx-auto">
-        Weibo covers the full funnel. Mass awareness through trending topics at the top. Direct sales through Tmall and Taobao Live integrations at the bottom. Few Chinese platforms do both well. Weibo does.
+        Going further than four platforms takes native speakers, daily platform access, and a team that operates in the market full-time. That's us.
       </p>
     </Container>
   </section>
 
-  <!-- How Weibo helps brands grow -->
+  <!-- Video and community platforms -->
   <section class="mt-[96px] max-[640px]:mt-[64px]">
     <Container>
       <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
         <div class="flex justify-center mb-[12px]">
           <SectionBar />
         </div>
-        <SectionHeading overline="How Weibo helps brands grow">
-          Six ways to turn attention into revenue.
+        <SectionHeading overline="Video and community">
+          Long-form video, live commerce, and loyal audiences
         </SectionHeading>
       </div>
 
-      <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
-        {ecosystem.map((item) => (
+      <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        {videoAndCommunity.map((item) => (
           <div
             class="eco-card relative border-none overflow-hidden flex flex-col justify-between"
             style={`border-radius: ${item.bg === '#1A1A1A' || item.bg === '#CC3333' || item.bg === '#B02D2D' ? '12px' : '10px'}`}
@@ -374,39 +453,146 @@ const faqs = [
             <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out eco-bg" style={`background-image: url('${item.image}')`} aria-hidden="true"></div>
             <div class="absolute inset-0" style={`background: ${item.bg}; opacity: 0.72`} aria-hidden="true"></div>
             <div class="relative z-[1] p-[24px] max-[640px]:p-[20px]">
-              <div class="w-[40px] h-[40px] rounded-[6px] flex items-center justify-center mb-[16px]" style={`background: ${item.iconBg}`}>
-                <Fragment set:html={item.icon} />
+              <div class="flex items-center gap-[12px] mb-[16px]">
+                <div class="w-[40px] h-[40px] rounded-[6px] flex items-center justify-center" style={`background: ${item.iconBg}`}>
+                  <img src={item.logo} alt={`${item.name} logo`} width="20" height="20" style={item.textColor === '#FFFFFF' ? 'filter: brightness(0) invert(1);' : ''} />
+                </div>
+                <div>
+                  <h3 class="text-[18px] font-medium leading-[1.3]" style={`color: ${item.textColor}`}>
+                    {item.name}
+                  </h3>
+                  <span class="text-[12px] font-normal block" style={`color: ${item.descColor}`}>{item.chineseName} · {item.mau} MAU</span>
+                </div>
               </div>
-              <h3 class="text-[18px] font-medium leading-[1.3] mb-[4px]" style={`color: ${item.textColor}`}>
-                {item.name}
-              </h3>
-              <span class="text-[12px] font-normal mb-[8px] block" style={`color: ${item.descColor}`}>{item.chineseName}</span>
-              <p class="text-[13px] font-normal leading-[1.5]" style={`color: ${item.descColor}`}>
+              <p class="text-[13px] font-normal leading-[1.5] mb-[12px]" style={`color: ${item.descColor}`}>
                 {item.description}
+              </p>
+              {item.detail && (
+                <p class="text-[13px] font-normal leading-[1.5] mb-[12px]" style={`color: ${item.descColor}`}>
+                  {item.detail}
+                </p>
+              )}
+              <p class="text-[12px] font-medium leading-[1.5]" style={`color: ${item.linkColor}`}>
+                Best for: {item.bestFor}
               </p>
             </div>
           </div>
         ))}
       </div>
-
-      <!-- Registration note -->
-      <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px] mt-[16px]">
-        <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] max-w-[680px]">
-          <span class="text-[#1A1A1A] font-medium">Verification note:</span> Foreign companies can get a verified corporate account with a Blue V badge. You will need business registration documents translated into Chinese and a one-time $1,000 fee paid to Weibo. Approval takes 2 to 4 weeks. We handle the full process.
-        </p>
-      </div>
     </Container>
   </section>
 
-  <!-- What we do on Weibo -->
+  <!-- Text and knowledge platforms -->
   <section class="mt-[96px] max-[640px]:mt-[64px]">
     <Container>
       <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
         <div class="flex justify-center mb-[12px]">
           <SectionBar />
         </div>
-        <SectionHeading overline="What we do on Weibo">
-          Six services. Each with a clear deliverable.
+        <SectionHeading overline="Text and knowledge">
+          Q&A, news, forums. Content that ranks and compounds.
+        </SectionHeading>
+      </div>
+
+      <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        {textAndKnowledge.map((item) => (
+          <div
+            class="eco-card relative border-none overflow-hidden flex flex-col justify-between"
+            style={`border-radius: ${item.bg === '#1A1A1A' || item.bg === '#CC3333' || item.bg === '#B02D2D' ? '12px' : '10px'}`}
+            data-tilt-eco
+          >
+            <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out eco-bg" style={`background-image: url('${item.image}')`} aria-hidden="true"></div>
+            <div class="absolute inset-0" style={`background: ${item.bg}; opacity: 0.72`} aria-hidden="true"></div>
+            <div class="relative z-[1] p-[24px] max-[640px]:p-[20px]">
+              <div class="flex items-center gap-[12px] mb-[16px]">
+                <div class="w-[40px] h-[40px] rounded-[6px] flex items-center justify-center" style={`background: ${item.iconBg}`}>
+                  <img src={item.logo} alt={`${item.name} logo`} width="20" height="20" style={item.textColor === '#FFFFFF' ? 'filter: brightness(0) invert(1);' : ''} />
+                </div>
+                <div>
+                  <h3 class="text-[18px] font-medium leading-[1.3]" style={`color: ${item.textColor}`}>
+                    {item.name}
+                  </h3>
+                  <span class="text-[12px] font-normal block" style={`color: ${item.descColor}`}>{item.chineseName} · {item.mau} MAU</span>
+                </div>
+              </div>
+              <p class="text-[13px] font-normal leading-[1.5] mb-[12px]" style={`color: ${item.descColor}`}>
+                {item.description}
+              </p>
+              {item.detail && (
+                <p class="text-[13px] font-normal leading-[1.5] mb-[12px]" style={`color: ${item.descColor}`}>
+                  {item.detail}
+                </p>
+              )}
+              <p class="text-[12px] font-medium leading-[1.5]" style={`color: ${item.linkColor}`}>
+                Best for: {item.bestFor}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </Container>
+  </section>
+
+  <!-- Commerce and lifestyle platforms -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]">
+          <SectionBar />
+        </div>
+        <SectionHeading overline="Commerce and lifestyle">
+          Reviews, shopping, local services, and visual content
+        </SectionHeading>
+      </div>
+
+      <div class="grid grid-cols-2 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        {commerceAndLifestyle.map((item) => (
+          <div
+            class="eco-card relative border-none overflow-hidden flex flex-col justify-between"
+            style={`border-radius: ${item.bg === '#1A1A1A' || item.bg === '#CC3333' || item.bg === '#B02D2D' ? '12px' : '10px'}`}
+            data-tilt-eco
+          >
+            <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out eco-bg" style={`background-image: url('${item.image}')`} aria-hidden="true"></div>
+            <div class="absolute inset-0" style={`background: ${item.bg}; opacity: 0.72`} aria-hidden="true"></div>
+            <div class="relative z-[1] p-[24px] max-[640px]:p-[20px]">
+              <div class="flex items-center gap-[12px] mb-[16px]">
+                <div class="w-[40px] h-[40px] rounded-[6px] flex items-center justify-center" style={`background: ${item.iconBg}`}>
+                  <img src={item.logo} alt={`${item.name} logo`} width="20" height="20" style={item.textColor === '#FFFFFF' ? 'filter: brightness(0) invert(1);' : ''} />
+                </div>
+                <div>
+                  <h3 class="text-[18px] font-medium leading-[1.3]" style={`color: ${item.textColor}`}>
+                    {item.name}
+                  </h3>
+                  <span class="text-[12px] font-normal block" style={`color: ${item.descColor}`}>{item.chineseName} · {item.mau} MAU</span>
+                </div>
+              </div>
+              <p class="text-[13px] font-normal leading-[1.5] mb-[12px]" style={`color: ${item.descColor}`}>
+                {item.description}
+              </p>
+              {item.detail && (
+                <p class="text-[13px] font-normal leading-[1.5] mb-[12px]" style={`color: ${item.descColor}`}>
+                  {item.detail}
+                </p>
+              )}
+              <p class="text-[12px] font-medium leading-[1.5]" style={`color: ${item.linkColor}`}>
+                Best for: {item.bestFor}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </Container>
+  </section>
+
+  <!-- What we do — services -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]">
+          <SectionBar />
+        </div>
+        <SectionHeading overline="Our services">
+          Same model on every platform. Clear scope. Fixed price.
         </SectionHeading>
       </div>
 
@@ -496,30 +682,30 @@ const faqs = [
     </Container>
   </section>
 
-  <!-- Best practices (dark section) -->
+  <!-- Which platforms fit — dark section -->
   <section class="mt-[96px] max-[640px]:mt-[64px]">
     <Container>
       <div class="bg-[#1A1A1A] rounded-[12px] py-[48px] px-[48px] max-[640px]:px-[20px] max-[640px]:py-[32px]">
         <div class="mb-[40px] max-[640px]:mb-[32px]">
           <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">
-            From our team on the ground
+            Platform recommendations
           </p>
           <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF]">
-            Weibo best practices
+            Which platforms fit your brand?
           </h2>
           <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.5] mt-[8px] max-w-[680px]">
-            We post on Weibo from China, every single day. These come from doing the work.
+            These platforms work best alongside WeChat, Douyin, RedNote and Weibo. We help you build the full stack.
           </p>
         </div>
 
         <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[20px]">
-          {bestPractices.map((practice) => (
+          {recommendations.map((rec) => (
             <div class="border-l-[3px] border-[#CC3333] pl-[16px]">
               <h3 class="text-[16px] text-[#FFFFFF] font-medium leading-[1.3] mb-[4px]">
-                {practice.title}
+                {rec.goal}
               </h3>
               <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.5]">
-                {practice.description}
+                {rec.platforms}
               </p>
             </div>
           ))}
@@ -540,13 +726,13 @@ const faqs = [
               Frequently asked questions
             </h2>
             <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
-              Everything you need to know about running Weibo with TheRedScroll.
+              Everything you need to know about working with TheRedScroll on these platforms.
             </p>
           </div>
         </div>
 
         <div>
-          {faqs.map((faq, i) => (
+          {faqs.map((faq) => (
             <div class="border-b border-[rgba(0,0,0,0.08)]" data-faq>
               <button
                 class="w-full flex items-center justify-between py-[20px] text-left bg-transparent border-none cursor-pointer group"
@@ -574,7 +760,7 @@ const faqs = [
 
   <!-- Getting started -->
   <section class="relative mt-[96px] max-[640px]:mt-[64px] pt-[80px] pb-[80px] max-[640px]:pt-[48px] max-[640px]:pb-[48px] overflow-hidden">
-    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero/weibo-hero.png')" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero/additional-platforms-hero.png')" aria-hidden="true"></div>
     <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.88]" aria-hidden="true"></div>
 
     <Container class="relative z-[1]">
@@ -586,7 +772,7 @@ const faqs = [
           Getting started
         </p>
         <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF]">
-          From zero to a live Weibo account in two weeks.
+          From zero to live on any platform in two weeks.
         </h2>
       </div>
 
@@ -615,13 +801,14 @@ const faqs = [
         <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal mb-[12px]">See also</p>
         <div class="flex justify-center gap-[24px] flex-wrap">
           <a href="/platforms/wechat" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">WeChat marketing &rarr;</a>
-          <a href="/platforms/rednote" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">RedNote marketing &rarr;</a>
           <a href="/platforms/douyin" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Douyin marketing &rarr;</a>
-          <a href="/platforms/others" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Additional platforms &rarr;</a>
+          <a href="/platforms/rednote" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">RedNote marketing &rarr;</a>
+          <a href="/platforms/weibo" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Weibo marketing &rarr;</a>
         </div>
       </div>
     </Container>
   </section>
+
 <style>
   .scrollbar-hide {
     -ms-overflow-style: none;
@@ -670,8 +857,8 @@ const faqs = [
       startX = e.pageX - statsScroll.offsetLeft;
       scrollLeft = statsScroll.scrollLeft;
     });
-    statsScroll.addEventListener('mouseleave', () => { isDown = false; statsScroll.style.cursor = ''; });
-    statsScroll.addEventListener('mouseup', () => { isDown = false; statsScroll.style.cursor = ''; });
+    statsScroll.addEventListener('mouseleave', () => { isDown = false; statsScroll.style.cursor = ''; resumeAuto(); });
+    statsScroll.addEventListener('mouseup', () => { isDown = false; statsScroll.style.cursor = ''; resumeAuto(); });
     statsScroll.addEventListener('mousemove', (e) => {
       if (!isDown) return;
       e.preventDefault();
@@ -679,27 +866,27 @@ const faqs = [
       statsScroll.scrollLeft = scrollLeft - (x - startX);
     });
 
-    // Auto-scroll: slow continuous scroll, pauses on hover/drag
-    let autoScrollPaused = false;
-    let autoScrollSpeed = 0.5; // px per frame
+    let autoInterval: ReturnType<typeof setInterval>;
+    const scrollSpeed = 0.5;
 
-    statsScroll.addEventListener('mouseenter', () => { autoScrollPaused = true; });
-    statsScroll.addEventListener('mouseleave', () => { autoScrollPaused = false; isDown = false; statsScroll.style.cursor = ''; });
-    statsScroll.addEventListener('touchstart', () => { autoScrollPaused = true; }, { passive: true });
-    statsScroll.addEventListener('touchend', () => { autoScrollPaused = false; });
-
-    function autoScroll() {
-      if (!autoScrollPaused && statsScroll) {
-        const maxScroll = statsScroll.scrollWidth - statsScroll.clientWidth;
-        statsScroll.scrollLeft += autoScrollSpeed;
-        // Loop back to start when reaching the end
-        if (statsScroll.scrollLeft >= maxScroll) {
-          statsScroll.scrollLeft = 0;
+    function startAuto() {
+      autoInterval = setInterval(() => {
+        if (isDown) return;
+        statsScroll!.scrollLeft += scrollSpeed;
+        if (statsScroll!.scrollLeft >= statsScroll!.scrollWidth - statsScroll!.clientWidth) {
+          statsScroll!.scrollLeft = 0;
         }
-      }
-      requestAnimationFrame(autoScroll);
+      }, 16);
     }
-    requestAnimationFrame(autoScroll);
+
+    function pauseAuto() { clearInterval(autoInterval); }
+    function resumeAuto() { pauseAuto(); startAuto(); }
+
+    statsScroll.addEventListener('mouseenter', pauseAuto);
+    statsScroll.addEventListener('touchstart', pauseAuto);
+    statsScroll.addEventListener('touchend', () => { setTimeout(resumeAuto, 2000); });
+
+    startAuto();
   }
 
   // Stats scroll reveal with stagger + trigger counters
@@ -729,11 +916,12 @@ const faqs = [
   statCards.forEach((card) => statsObserver.observe(card));
 
   function animateCounter(el: HTMLElement, target: string) {
-    const match = target.match(/^([\d.]+)(.*)$/);
+    const match = target.match(/^([~]?)([\d.]+)(.*)$/);
     if (!match) { el.textContent = target; return; }
 
-    const endNum = parseFloat(match[1]);
-    const suffix = match[2];
+    const prefix = match[1];
+    const endNum = parseFloat(match[2]);
+    const suffix = match[3];
     const duration = 2000;
     const startTime = performance.now();
 
@@ -744,9 +932,9 @@ const faqs = [
       const current = eased * endNum;
 
       if (endNum >= 10) {
-        el.textContent = Math.round(current) + suffix;
+        el.textContent = prefix + Math.round(current) + suffix;
       } else {
-        el.textContent = current.toFixed(1).replace(/\.0$/, '') + suffix;
+        el.textContent = prefix + current.toFixed(1).replace(/\.0$/, '') + suffix;
       }
 
       if (progress < 1) requestAnimationFrame(tick);
@@ -768,7 +956,6 @@ const faqs = [
       if (index === activeIndex || isAnimating) return;
       isAnimating = true;
 
-      // Update selectors
       selectors.forEach((s) => {
         const el = s as HTMLElement;
         el.style.background = 'transparent';
@@ -843,7 +1030,6 @@ const faqs = [
   document.querySelectorAll('[data-faq]').forEach((item) => {
     const trigger = item.querySelector('[data-faq-trigger]') as HTMLButtonElement;
     const content = item.querySelector('.faq-content') as HTMLElement;
-    const chevron = item.querySelector('.faq-chevron') as SVGElement;
     if (!trigger || !content) return;
 
     trigger.addEventListener('click', () => {

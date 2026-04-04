@@ -1,11 +1,12 @@
 {
   "permissions": {
-    "additionalDirectories": [
-      "c:\\Users\\cyril\\Project\\TheRedScroll\\public\\images\\platforms"
-    ],
     "allow": [
       "Bash(node -e \"try { require\\('sharp'\\); console.log\\('sharp available'\\); } catch\\(e\\) { console.log\\('no sharp'\\); }\")",
-      "Bash(node -e \"try { require\\('canvas'\\); console.log\\('canvas available'\\); } catch\\(e\\) { console.log\\('no canvas'\\); }\")"
+      "Bash(node -e \"try { require\\('canvas'\\); console.log\\('canvas available'\\); } catch\\(e\\) { console.log\\('no canvas'\\); }\")",
+      "Bash(npm run:*)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\cyril\\Project\\TheRedScroll\\public\\images\\platforms"
     ]
   }
 }

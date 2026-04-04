@@ -6,159 +6,168 @@ import SectionHeading from '../../components/ui/SectionHeading.astro';
 import Button from '../../components/ui/Button.astro';
 
 const stats = [
-  { label: 'Monthly active users', value: '567M', image: '/images/platforms/weibo-stats/monthly-active-users.png' },
-  { label: 'Daily active users', value: '252M', image: '/images/platforms/weibo-stats/daily-active-users.png' },
-  { label: 'Mobile usage', value: '95%', image: '/images/platforms/weibo-stats/mobile-usage.png' },
-  { label: 'Ad revenue (FY2025)', value: '$1.5B', image: '/images/platforms/weibo-stats/ad-revenue.png' },
-  { label: 'Biggest age group (25–34)', value: '42%', image: '/images/platforms/weibo-stats/age-group.png' },
-  { label: 'Daily posts', value: '100M+', image: '/images/platforms/weibo-stats/daily-posts.png' },
-  { label: 'Gender split (women)', value: '51%', image: '/images/platforms/weibo-stats/gender-split.png' },
+  { label: 'Daily active users', value: '750M+', image: '/images/platforms/douyin-stats/daily-active-users.png' },
+  { label: 'Monthly active users', value: '1B+', image: '/images/platforms/douyin-stats/monthly-active-users.png' },
+  { label: 'Avg. daily time per user', value: '120 min', image: '/images/platforms/douyin-stats/daily-time.png' },
+  { label: 'E-commerce sales (2024)', value: '¥3.5T', image: '/images/platforms/douyin-stats/ecommerce-sales.png' },
+  { label: 'Year-on-year sales growth', value: '34%', image: '/images/platforms/douyin-stats/yoy-growth.png' },
+  { label: 'Live commerce sessions daily', value: '30M+', image: '/images/platforms/douyin-stats/live-commerce.png' },
+  { label: 'Content categories', value: '100+', image: '/images/platforms/douyin-stats/content-variety.png' },
+  { label: 'Creator accounts', value: '15M+', image: '/images/platforms/douyin-stats/creator-economy.png' },
 ];
 
 const ecosystem = [
   {
-    name: 'Mass awareness and PR',
-    chineseName: '品牌曝光',
-    description: 'Nothing in China generates national attention faster than a Weibo trend. Product launches, press amplification, event campaigns, crisis response.',
-    image: '/images/platforms/weibo-ecosystem/mass-awareness.png',
-    bg: '#F7F2EE',
-    iconBg: '#E8E0D8',
-    textColor: '#1A1A1A',
-    descColor: '#5C5C5C',
-    linkColor: '#CC3333',
-    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>`,
-  },
-  {
-    name: 'Trending topic campaigns',
-    chineseName: '热搜营销',
-    description: 'Ride organic trends with fast content, or run paid hashtag promotions to place your brand inside the national conversation at the right moment.',
-    image: '/images/platforms/weibo-ecosystem/trending-topics.png',
+    name: 'For You Feed',
+    chineseName: '推荐页',
+    description: 'The algorithm-driven feed where users discover content. It does not care about follower count. A brand-new account can reach millions with the right video.',
+    image: '/images/platforms/douyin-ecosystem/for-you-feed.png',
     bg: '#1A1A1A',
     iconBg: 'rgba(255,255,255,0.1)',
     textColor: '#FFFFFF',
     descColor: 'rgba(255,255,255,0.6)',
     linkColor: '#CC3333',
-    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>`,
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>`,
   },
   {
-    name: 'KOL and celebrity partnerships',
-    chineseName: 'KOL合作',
-    description: 'Top Weibo KOLs have tens of millions of followers. One post from the right influencer shifts awareness, credibility, and sales all at once.',
-    image: '/images/platforms/weibo-ecosystem/kol-partnerships.png',
+    name: 'Live Commerce',
+    chineseName: '直播电商',
+    description: 'Live selling built right into the app. Host selection, product scripting, real-time audience engagement. Some brand livestreams pull millions of viewers in a single session.',
+    image: '/images/platforms/douyin-ecosystem/live-commerce.png',
     bg: '#CC3333',
     iconBg: 'rgba(255,255,255,0.2)',
     textColor: '#FFFFFF',
     descColor: 'rgba(255,255,255,0.8)',
     linkColor: '#FFFFFF',
-    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>`,
   },
   {
-    name: 'Community building',
-    chineseName: '超级话题',
-    description: 'Weibo Super Topics create branded hubs where followers post their own content, discuss products, and engage with the brand directly.',
-    image: '/images/platforms/weibo-ecosystem/community.png',
-    bg: '#E8E0D8',
-    iconBg: '#FFFFFF',
+    name: 'Douyin Shop',
+    chineseName: '抖音商城',
+    description: 'In-app storefront where users search, browse, and buy your products. Every video and livestream drives traffic to the shop. No redirects needed.',
+    image: '/images/platforms/douyin-ecosystem/douyin-shop.png',
+    bg: '#F7F2EE',
+    iconBg: '#E8E0D8',
     textColor: '#1A1A1A',
     descColor: '#5C5C5C',
     linkColor: '#CC3333',
-    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>`,
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>`,
   },
   {
-    name: 'Social commerce',
-    chineseName: '社交电商',
-    description: 'Shoppable posts link to Tmall and Taobao. Live streams sync with Taobao Live for real-time selling. The distance between a Weibo post and a purchase is very short.',
-    image: '/images/platforms/weibo-ecosystem/social-commerce.png',
+    name: 'Ocean Engine',
+    chineseName: '巨量引擎',
+    description: 'ByteDance\'s ad platform. TopView for big launches. In-Feed Ads for clicks. Search Ads for high-intent buyers. DOU+ for testing content. Ad spend billed separately, no markups.',
+    image: '/images/platforms/douyin-ecosystem/ocean-engine.png',
     bg: '#1A1A1A',
     iconBg: 'rgba(255,255,255,0.1)',
     textColor: '#FFFFFF',
     descColor: 'rgba(255,255,255,0.6)',
     linkColor: '#CC3333',
-    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>`,
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>`,
   },
   {
-    name: 'Reputation management',
-    chineseName: '舆情管理',
-    description: 'People share opinions on Weibo publicly. Monitoring brand mentions, tracking competitors, and catching sentiment shifts early is not optional.',
-    image: '/images/platforms/weibo-ecosystem/reputation.png',
+    name: 'Xingtu',
+    chineseName: '星图',
+    description: 'Douyin\'s official KOL marketplace. We find creators, vet them for fake followers, check past campaign results and audience fit. You approve the final list before we move.',
+    image: '/images/platforms/douyin-ecosystem/xingtu.png',
+    bg: '#E8E0D8',
+    iconBg: '#FFFFFF',
+    textColor: '#1A1A1A',
+    descColor: '#5C5C5C',
+    linkColor: '#CC3333',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
+  },
+  {
+    name: 'DOU+',
+    chineseName: '抖加',
+    description: 'Content boosting tool for testing which videos resonate. Put a small budget behind a post, see how it performs with a wider audience, then scale what works.',
+    image: '/images/platforms/douyin-ecosystem/dou-plus.png',
     bg: '#B02D2D',
     iconBg: 'rgba(255,255,255,0.2)',
     textColor: '#FFFFFF',
     descColor: 'rgba(255,255,255,0.8)',
     linkColor: '#FFFFFF',
-    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>`,
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>`,
   },
 ];
 
 const services = [
   {
-    title: 'Account setup and verification',
-    description: 'We register your Blue V corporate account end to end. Document prep, Chinese translation, submission, full profile buildout. International companies pay a one-time $1,000 verification fee. Approval takes 2 to 4 weeks. We handle everything.',
-    result: 'A live, verified Weibo corporate account ready to publish.',
+    title: 'Setup and strategy',
+    description: 'We register and verify your enterprise account, handle the compliance paperwork, and build your content strategy from scratch. Content pillars, posting schedule, editorial calendar, KPI targets.',
+    result: 'A live, verified Douyin account with a clear content roadmap.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/></svg>`,
-    image: '/images/platforms/weibo-services/account-setup.png',
+    image: '/images/platforms/douyin-services/setup-strategy.png',
   },
   {
-    title: 'Content strategy and production',
-    description: 'Monthly content plans with brand posts, trending topic tie-ins, interactive formats, and campaign assets. Native Chinese content by native Chinese speakers. Short posts, 9-grid carousels, short video, live stream assets.',
-    result: 'Localized content built for how Weibo\'s algorithm works today.',
-    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/></svg>`,
-    image: '/images/platforms/weibo-services/content-strategy.png',
+    title: 'Content production',
+    description: 'Douyin-native videos produced by our China team. Product demos, lifestyle shoots, educational clips, behind-the-scenes footage, trend-driven formats, and mini-dramas. HubStudio.ai for visuals and copy drafts. Native Mandarin speakers edit every piece.',
+    result: 'Localized short-form video content that performs on Douyin.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>`,
+    image: '/images/platforms/douyin-services/content-production.png',
   },
   {
-    title: 'Paid advertising',
-    description: 'Fan Headlines, Fan Tunnels, in-feed display, splash page ads, search promotion, hashtag promotion. Targeting by demographics, interests, behavior, and lookalike audiences. Weekly reporting on CPM, CPC, CPA, ROAS. Ad spend billed separately. No markups.',
-    result: 'Ads that reach the right audience with transparent spend reporting.',
-    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>`,
-    image: '/images/platforms/weibo-services/paid-advertising.png',
+    title: 'Live commerce',
+    description: 'We plan and run live selling sessions. Host selection, product scripting, real-time audience engagement, post-session performance review. Works for product launches, seasonal campaigns, and steady sales channels.',
+    result: 'Revenue-generating livestreams that convert viewers into buyers.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>`,
+    image: '/images/platforms/douyin-services/live-commerce.png',
   },
   {
     title: 'KOL and KOC campaigns',
-    description: 'We find, vet, negotiate, and brief influencers. Selection based on verified engagement, audience authenticity checks, niche fit, and budget. Full campaign management from creative brief to ROI report.',
-    result: 'Influencer campaigns backed by verified data, not follower counts.',
-    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
-    image: '/images/platforms/weibo-services/kol-campaigns.png',
+    description: 'We find creators through Xingtu and our own network built over years on the ground. Every creator gets vetted for fake followers, past campaign results, and audience fit. You approve the final list before we move.',
+    result: 'Influencer campaigns with verified engagement and real results.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
+    image: '/images/platforms/douyin-services/kol-campaigns.png',
   },
   {
-    title: 'Hot Search and topic campaigns',
-    description: 'Topic creation, content seeding, KOL amplification, community activation, paid promotion. Built to put your brand in the national conversation when it matters most.',
-    result: 'Your brand inside China\'s most-watched trending list.',
-    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>`,
-    image: '/images/platforms/weibo-services/hot-search.png',
+    title: 'Advertising',
+    description: 'Paid campaigns through Ocean Engine. TopView for big launches. In-Feed Ads for clicks and traffic. Search Ads for high-intent buyers. DOU+ for testing. Branded Effects for user participation. Ad spend billed separately, no markups.',
+    result: 'Ads that reach the right audience with transparent spend reporting.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>`,
+    image: '/images/platforms/douyin-services/advertising.png',
   },
   {
-    title: 'Social listening and analytics',
-    description: 'Daily monitoring of brand mentions, competitor moves, sentiment shifts, and trending conversations. Monthly reports on follower growth, engagement, content performance, ad results, KOL returns, and competitive benchmarks.',
-    result: 'Actionable reports with specific recommendations for next month.',
-    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 6-8"/></svg>`,
-    image: '/images/platforms/weibo-services/analytics.png',
+    title: 'Douyin Shop',
+    description: 'In-app storefront where users search, browse, and buy your products. We handle setup, listings, pricing, and optimization. Every video and livestream we produce drives traffic to the shop.',
+    result: 'A storefront that turns viewers into customers without leaving the app.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>`,
+    image: '/images/platforms/douyin-services/douyin-shop.png',
   },
 ];
 
 const bestPractices = [
   {
-    title: 'Post every day.',
-    description: 'Once a day minimum. Three to five in growth mode. The algorithm rewards consistency.',
+    title: 'First second wins or loses.',
+    description: 'Start with motion, a question, something visual. Never open with a logo. You\'ll lose them before they even know what the video is about.',
   },
   {
-    title: 'Lead with visuals.',
-    description: 'Use all 9 image slots. Center image gets the most attention. Short video outperforms static posts consistently.',
+    title: 'Vertical only. 9:16.',
+    description: 'If it looks like a repurposed TV ad, it\'s going to underperform. Douyin is vertical-first, always.',
   },
   {
-    title: 'React fast to trends.',
-    description: 'Check the Hot Search list every morning. Publish within the hour when something relevant breaks.',
+    title: 'Three to five posts per week, minimum.',
+    description: 'The algorithm rewards consistency. Go quiet for a week, your reach drops. Simple as that.',
   },
   {
-    title: 'Write tight.',
-    description: 'Posts fold after 140 characters. Strong first sentence. Clear call to action above the fold.',
+    title: 'Watch-through rate is everything.',
+    description: 'The algorithm\'s top signal is how many people make it to the end of your video. Cut anything that doesn\'t earn the next second.',
   },
   {
-    title: 'Actually reply to people.',
-    description: 'The comment section is where real conversations happen. Brands that engage build loyalty much faster than brands that just broadcast.',
+    title: 'Trends move fast.',
+    description: 'We track trending sounds, hashtags, and formats daily. Catching a wave early can dramatically multiply reach on a single video.',
   },
   {
-    title: 'Verify early.',
-    description: 'The Blue V badge builds trust, improves reach, unlocks ad tools, and protects against copycat accounts.',
+    title: 'Sell softly.',
+    description: 'Hard sells die on Douyin. Content that actually performs educates or entertains first. Product comes second.',
+  },
+  {
+    title: 'Sound on.',
+    description: 'Douyin is not a silent-scroll platform. Music, voiceover, audio cues. They matter as much as what\'s on screen.',
+  },
+  {
+    title: 'Mandarin from scratch.',
+    description: 'Translated content underperforms badly on the platform. Our team writes all copy natively.',
   },
 ];
 
@@ -166,76 +175,78 @@ const steps = [
   {
     number: '01',
     title: 'Discovery call.',
-    description: 'Tell us about your brand, your goals, and how ready you are for China. No pitch deck. Just the right questions.',
+    description: 'Tell us about your brand, your goals, and where you stand with China right now. No pitch deck. Just the right questions.',
     icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>`,
   },
   {
     number: '02',
     title: 'Proposal.',
-    description: 'Clear scope. Fixed price. Every deliverable listed out. No surprises.',
+    description: 'Clear SOW. Fixed price. Every deliverable listed out. You see what you\'re getting and what it costs before you commit.',
     icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>`,
   },
   {
     number: '03',
     title: 'Live in 2 weeks.',
-    description: 'Account live, first content published, first campaign running. Fourteen days from signed contract to first post.',
+    description: 'Onboarding, accounts set up, first content published. Fourteen days from signed contract to first post going live.',
     icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>`,
   },
 ];
 
 const faqs = [
   {
-    q: 'Who actually runs our Weibo account?',
-    a: 'Our team in Shanghai and Hong Kong. Native Chinese speakers write your content, buy the ads, and deal with KOLs directly. We are not a remote agency sitting in London or New York guessing what is trending in China. We log into Weibo every morning, same timezone as your audience.',
+    q: 'Who runs my account?',
+    a: 'Our team in China. Native Mandarin speakers who create content and run ads on Douyin every day. You get a dedicated account manager who knows your brand.',
   },
   {
-    q: 'Can a company registered outside China open a Weibo account?',
-    a: 'Yes, and we do this regularly. Foreign companies can get a verified corporate account with a Blue V badge. You will need business registration documents translated into Chinese and a one-time $1,000 fee paid to Weibo for verification. Takes about 2 to 4 weeks to get approved. We handle the documents, translation, and back-and-forth with Weibo\'s team so you don\'t have to.',
+    q: 'Do I need a Chinese business license?',
+    a: 'Enterprise accounts need one, or an authorized agency partner. We handle both paths. You can start posting and running ads without setting up a local entity.',
   },
   {
-    q: 'How does pricing work?',
-    a: 'Fixed scope. Fixed price. We define every deliverable before the project starts. How many posts, how many videos, which campaigns, what reporting. You see the full picture and the total cost upfront. No vague custom quotes. No hidden fees that show up three months in.',
+    q: 'How is TheRedScroll different?',
+    a: 'Fixed scope, fixed price. Team on the ground in China. AI-powered production. We benchmarked 37 agencies in this space and not a single one offers fixed-price packages.',
   },
   {
-    q: 'What makes you different from other agencies doing Weibo?',
-    a: 'We are physically based in China with direct access to every platform, not running things remotely from overseas. We use AI tools (HubStudio.ai) for content production, which means faster turnaround and lower costs without cutting corners on quality. And we are the only agency we have found that offers fixed-price packages. We looked at 37 competitors. None of them do this.',
+    q: 'How long before results?',
+    a: 'Most brands see traction in 8 to 12 weeks. Paid campaigns can show results within days. It depends on the category and how aggressive you want to go.',
   },
   {
-    q: 'How fast can we get going?',
-    a: 'About two weeks from signing. Account registration, profile setup, first content live, first campaign launched. Weibo\'s own verification process takes 2 to 4 weeks on their end, but we don\'t sit around waiting. We start building and posting while the Blue V badge is being processed.',
+    q: 'How much does it cost?',
+    a: 'Fixed-price packages that spell out exactly what you get. Ad spend billed at cost, separately. No markups. Book a call and we\'ll recommend a fit.',
   },
   {
-    q: 'Is all the content written in Chinese?',
-    a: 'Yes. Everything we publish on Weibo is written in Chinese by native speakers, then proofread by a second native speaker for tone and cultural accuracy. You will receive English summaries of content plans and monthly reports. If you want to review individual posts before they go live, we build that into the workflow.',
+    q: 'Can you run ads without a Chinese entity?',
+    a: 'Foreign brands advertise on Douyin through us as an authorized agency. No local incorporation needed.',
   },
   {
-    q: 'Do we really need Weibo if we already use WeChat and RedNote?',
-    a: 'Short answer: yes. WeChat keeps content inside closed circles. RedNote is strong for product discovery. But neither lets your brand reach a mass public audience or participate in national trending conversations. If a crisis breaks, a cultural moment is blowing up, or you simply need millions of people to learn your brand name quickly, Weibo is the only platform in China that does that.',
+    q: 'What content do you produce?',
+    a: 'Product demos, lifestyle videos, tutorials, mini-dramas, KOL collaborations, livestreams. All in Mandarin, by our China team. AI tools for speed, human editing on every piece.',
   },
   {
-    q: 'How do you choose which KOLs to work with?',
-    a: 'Not by follower count. We audit real engagement rates, run fake-follower checks, analyze audience demographics, and review each KOL\'s content style against your brand. We also compare their pricing against market rates so you know you\'re getting a fair deal. Every KOL we recommend comes with the data behind the recommendation.',
+    q: 'How do you pick KOLs?',
+    a: 'Xingtu plus our own network. Every creator checked for fake followers, engagement quality, demographics, and brand fit. You approve the final list.',
   },
   {
-    q: 'What does reporting look like?',
-    a: 'Monthly. Each report covers follower growth, engagement rates, content performance broken down by format, ad campaign results (CPM, CPC, CPA, ROAS), KOL campaign returns, and competitive benchmarks. We end every report with clear recommendations for the following month. You also get a mid-month check-in if you\'re running active campaigns.',
+    q: 'Can you set up a Douyin Shop?',
+    a: 'Yes. Setup, listings, pricing, optimization. Connected to your content strategy so every video drives buyers to your products.',
   },
   {
-    q: 'What if we want more than just Weibo?',
-    a: 'Most of our clients do. Weibo is one of over 18 platforms we work on. We build and run campaigns across Weibo, WeChat, RedNote, Douyin, and others like Bilibili, Zhihu, or Kuaishou depending on your industry. Everything is coordinated by one team, delivered under one scope of work, and billed at one fixed price.',
+    q: 'What do reports look like?',
+    a: 'Monthly. Clear numbers. Follower growth, views, engagement, ad efficiency, conversions. What worked, what didn\'t, what\'s changing next.',
   },
 ];
 ---
 
 <PageLayout
-  title="Weibo Marketing Services | TheRedScroll"
-  description="Weibo marketing services from Shanghai. Account setup, content, ads, KOL campaigns, and analytics. Fixed scope. Fixed price. 567M monthly active users."
+  title="Douyin Marketing Agency | TheRedScroll"
+  description="Douyin marketing services from Shanghai. Content, ads, KOL campaigns, live commerce, and Douyin Shop setup. Fixed scope, fixed price. Book a call."
 >
   <!-- Hero: Dark hero banner -->
   <section class="w-full bg-[#1A1A1A] py-[80px] max-[640px]:py-[48px] relative overflow-hidden">
-    <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/weibo-hero.png')" aria-hidden="true"></div>
+    <!-- Background image -->
+    <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/douyin-hero.png')" aria-hidden="true"></div>
+    <!-- Watermark -->
     <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[140px] max-[640px]:text-[80px] font-medium text-[#FFFFFF] opacity-[0.03] pointer-events-none select-none whitespace-nowrap" aria-hidden="true">
-      微博
+      抖音
     </span>
     <Container class="relative z-[1]">
       <div class="max-w-[800px] mx-auto text-center">
@@ -243,13 +254,13 @@ const faqs = [
           &larr; All platforms
         </a>
         <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">
-          Weibo marketing
+          Douyin marketing
         </p>
         <h1 class="text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] text-[#FFFFFF] mb-[8px]">
-          We don't talk about Weibo strategy. We post on Weibo. Every day. From Shanghai.
+          750 million daily users. One platform. We post on it every day.
         </h1>
         <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal mb-[24px]">
-          Weibo marketing from Shanghai. Account setup, content, ads, KOL campaigns, analytics. 567 million monthly users. Fixed scope. Fixed price. Team on the ground.
+          Douyin marketing services from our team in China. Content production, advertising, KOL campaigns, live commerce, and Douyin Shop. Fixed scope, fixed price.
         </p>
         <Button variant="primary" href="/contact">Book a call</Button>
       </div>
@@ -263,10 +274,10 @@ const faqs = [
         <div class="max-w-[560px]">
           <SectionBar />
           <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[8px]">
-            China's open public square. 567 million people, every month.
+            Not vanity numbers. Your Chinese audience is already here.
           </h2>
           <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
-            Weibo by the numbers.
+            Douyin by the numbers.
           </p>
         </div>
         <Button variant="primary" href="/contact" class="shrink-0">Book a call</Button>
@@ -296,71 +307,74 @@ const faqs = [
     </div>
   </section>
 
-  <!-- Why Weibo matters -->
+  <!-- Why Douyin Matters -->
   <section class="mt-[96px] max-[640px]:mt-[64px]">
     <Container>
       <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
         <div class="flex justify-center mb-[12px]">
           <SectionBar />
         </div>
-        <SectionHeading overline="Why Weibo matters">
-          Trends start here. News breaks here. Public opinion takes shape here.
+        <SectionHeading overline="Why Douyin matters">
+          Algorithm-driven reach. Full-funnel commerce. Built-in live selling.
         </SectionHeading>
       </div>
 
       <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        <!-- Card 1: Algorithm doesn't care about follower count -->
         <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
           <div class="w-full aspect-[16/9] overflow-hidden">
-            <img src="/images/platforms/weibo-why/public-square.png" alt="Weibo app open showing public feed with trending posts and user discussions" class="w-full h-full object-cover" loading="lazy" />
+            <img src="/images/platforms/douyin-why/algorithm.png" alt="Person discovering brand content through Douyin algorithm feed" class="w-full h-full object-cover" loading="lazy" />
           </div>
           <div class="p-[24px] max-[640px]:p-[20px]">
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Everything is public</h3>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">The algorithm levels the playing field</h3>
             <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
-              WeChat content stays locked inside friend circles. On Weibo, anyone can see your posts. A single product launch or a well-timed comment on a trending topic can reach millions of people who have never followed your account.
+              Douyin's algorithm does not care about follower count. It cares about content quality. A brand-new account can reach millions with the right video. Newcomers compete from day one.
             </p>
           </div>
         </div>
 
+        <!-- Card 2: Full funnel in one app -->
         <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
           <div class="w-full aspect-[16/9] overflow-hidden">
-            <img src="/images/platforms/weibo-why/hot-search.png" alt="Weibo Hot Search trending list showing top 50 topics refreshing in real time" class="w-full h-full object-cover" loading="lazy" />
+            <img src="/images/platforms/douyin-why/full-funnel.png" alt="Douyin video to checkout shopping flow on smartphone" class="w-full h-full object-cover" loading="lazy" />
           </div>
           <div class="p-[24px] max-[640px]:p-[20px]">
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">The Hot Search list drives the platform</h3>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Discover, decide, buy. One app.</h3>
             <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
-              It refreshes every minute. Topics that hit the top 50 get seen by hundreds of millions of users within hours. Brands that create content around those moments get organic reach that paid ads alone can't match.
+              Users discover products, make decisions, and check out without ever leaving the app. No redirects, no separate website. The path from content to sale is as short as it gets.
             </p>
           </div>
         </div>
 
+        <!-- Card 3: Live commerce built in -->
         <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
           <div class="w-full aspect-[16/9] overflow-hidden">
-            <img src="/images/platforms/weibo-why/brand-research.png" alt="Consumer scrolling through Weibo brand page checking reviews and comments before purchasing" class="w-full h-full object-cover" loading="lazy" />
+            <img src="/images/platforms/douyin-why/live-built-in.png" alt="Live commerce session on Douyin with viewers and shopping cart" class="w-full h-full object-cover" loading="lazy" />
           </div>
           <div class="p-[24px] max-[640px]:p-[20px]">
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Consumers research brands here</h3>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Live commerce is built right in</h3>
             <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
-              Chinese shoppers search for brand names and scroll through what real users are saying. Strong presence builds trust. No presence raises red flags. Negative comments left unanswered do real damage.
+              Some brand livestreams pull millions of viewers in a single session. Live selling works for product launches, seasonal campaigns, and brands that want a steady sales channel on the platform.
             </p>
           </div>
         </div>
       </div>
 
       <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] mt-[24px] text-center max-w-[680px] mx-auto">
-        Weibo covers the full funnel. Mass awareness through trending topics at the top. Direct sales through Tmall and Taobao Live integrations at the bottom. Few Chinese platforms do both well. Weibo does.
+        Whether your customers are 22 or 52, first-tier city or fifth, they are spending more time on Douyin than on any other app in China. Douyin works for beauty, fashion, food, consumer electronics, home goods, hospitality, automotive, health, and B2B.
       </p>
     </Container>
   </section>
 
-  <!-- How Weibo helps brands grow -->
+  <!-- The Douyin ecosystem -->
   <section class="mt-[96px] max-[640px]:mt-[64px]">
     <Container>
       <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
         <div class="flex justify-center mb-[12px]">
           <SectionBar />
         </div>
-        <SectionHeading overline="How Weibo helps brands grow">
-          Six ways to turn attention into revenue.
+        <SectionHeading overline="The Douyin ecosystem">
+          Six tools that drive content, commerce, and growth.
         </SectionHeading>
       </div>
 
@@ -371,8 +385,10 @@ const faqs = [
             style={`border-radius: ${item.bg === '#1A1A1A' || item.bg === '#CC3333' || item.bg === '#B02D2D' ? '12px' : '10px'}`}
             data-tilt-eco
           >
+            <!-- Background image -->
             <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out eco-bg" style={`background-image: url('${item.image}')`} aria-hidden="true"></div>
             <div class="absolute inset-0" style={`background: ${item.bg}; opacity: 0.72`} aria-hidden="true"></div>
+            <!-- Content -->
             <div class="relative z-[1] p-[24px] max-[640px]:p-[20px]">
               <div class="w-[40px] h-[40px] rounded-[6px] flex items-center justify-center mb-[16px]" style={`background: ${item.iconBg}`}>
                 <Fragment set:html={item.icon} />
@@ -392,26 +408,27 @@ const faqs = [
       <!-- Registration note -->
       <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px] mt-[16px]">
         <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] max-w-[680px]">
-          <span class="text-[#1A1A1A] font-medium">Verification note:</span> Foreign companies can get a verified corporate account with a Blue V badge. You will need business registration documents translated into Chinese and a one-time $1,000 fee paid to Weibo. Approval takes 2 to 4 weeks. We handle the full process.
+          <span class="text-[#1A1A1A] font-medium">Registration note:</span> Foreign companies need either a Chinese business license or an authorized agency partner to open an enterprise account. We handle both paths so you can start posting and running ads without setting up a local entity.
         </p>
       </div>
     </Container>
   </section>
 
-  <!-- What we do on Weibo -->
+  <!-- What we do on Douyin -->
   <section class="mt-[96px] max-[640px]:mt-[64px]">
     <Container>
       <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
         <div class="flex justify-center mb-[12px]">
           <SectionBar />
         </div>
-        <SectionHeading overline="What we do on Weibo">
+        <SectionHeading overline="What we do on Douyin">
           Six services. Each with a clear deliverable.
         </SectionHeading>
       </div>
 
       <!-- Desktop: two-column selector + panel -->
       <div class="grid grid-cols-[340px_1fr] max-[1024px]:grid-cols-[280px_1fr] max-[768px]:hidden gap-[24px] items-stretch">
+        <!-- Left: selector list -->
         <div class="flex flex-col gap-[4px]">
           {services.map((service, i) => (
             <button
@@ -442,6 +459,7 @@ const faqs = [
           ))}
         </div>
 
+        <!-- Right: content panel -->
         <div class="relative">
           {services.map((service, i) => (
             <div
@@ -496,7 +514,7 @@ const faqs = [
     </Container>
   </section>
 
-  <!-- Best practices (dark section) -->
+  <!-- Best practices (dark section - the one allowed per page) -->
   <section class="mt-[96px] max-[640px]:mt-[64px]">
     <Container>
       <div class="bg-[#1A1A1A] rounded-[12px] py-[48px] px-[48px] max-[640px]:px-[20px] max-[640px]:py-[32px]">
@@ -505,10 +523,10 @@ const faqs = [
             From our team on the ground
           </p>
           <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF]">
-            Weibo best practices
+            How we create Douyin content
           </h2>
           <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.5] mt-[8px] max-w-[680px]">
-            We post on Weibo from China, every single day. These come from doing the work.
+            These are the rules our team follows on every account we run.
           </p>
         </div>
 
@@ -532,6 +550,7 @@ const faqs = [
   <section class="mt-[96px] max-[640px]:mt-[64px]">
     <Container>
       <div class="grid grid-cols-[340px_1fr] max-[1024px]:grid-cols-[280px_1fr] max-[768px]:grid-cols-1 gap-[48px] max-[768px]:gap-[32px]">
+        <!-- Left: heading -->
         <div>
           <div class="sticky top-[84px] max-[640px]:static">
             <SectionBar />
@@ -540,11 +559,12 @@ const faqs = [
               Frequently asked questions
             </h2>
             <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
-              Everything you need to know about running Weibo with TheRedScroll.
+              Everything you need to know about running Douyin with TheRedScroll.
             </p>
           </div>
         </div>
 
+        <!-- Right: FAQ items -->
         <div>
           {faqs.map((faq, i) => (
             <div class="border-b border-[rgba(0,0,0,0.08)]" data-faq>
@@ -574,7 +594,7 @@ const faqs = [
 
   <!-- Getting started -->
   <section class="relative mt-[96px] max-[640px]:mt-[64px] pt-[80px] pb-[80px] max-[640px]:pt-[48px] max-[640px]:pb-[48px] overflow-hidden">
-    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero/weibo-hero.png')" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero/douyin-hero.png')" aria-hidden="true"></div>
     <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.88]" aria-hidden="true"></div>
 
     <Container class="relative z-[1]">
@@ -586,7 +606,7 @@ const faqs = [
           Getting started
         </p>
         <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF]">
-          From zero to a live Weibo account in two weeks.
+          From zero to a live Douyin account in two weeks.
         </h2>
       </div>
 
@@ -616,7 +636,7 @@ const faqs = [
         <div class="flex justify-center gap-[24px] flex-wrap">
           <a href="/platforms/wechat" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">WeChat marketing &rarr;</a>
           <a href="/platforms/rednote" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">RedNote marketing &rarr;</a>
-          <a href="/platforms/douyin" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Douyin marketing &rarr;</a>
+          <a href="/platforms/weibo" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Weibo marketing &rarr;</a>
           <a href="/platforms/others" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Additional platforms &rarr;</a>
         </div>
       </div>
@@ -670,8 +690,8 @@ const faqs = [
       startX = e.pageX - statsScroll.offsetLeft;
       scrollLeft = statsScroll.scrollLeft;
     });
-    statsScroll.addEventListener('mouseleave', () => { isDown = false; statsScroll.style.cursor = ''; });
-    statsScroll.addEventListener('mouseup', () => { isDown = false; statsScroll.style.cursor = ''; });
+    statsScroll.addEventListener('mouseleave', () => { isDown = false; statsScroll.style.cursor = ''; resumeAuto(); });
+    statsScroll.addEventListener('mouseup', () => { isDown = false; statsScroll.style.cursor = ''; resumeAuto(); });
     statsScroll.addEventListener('mousemove', (e) => {
       if (!isDown) return;
       e.preventDefault();
@@ -679,27 +699,28 @@ const faqs = [
       statsScroll.scrollLeft = scrollLeft - (x - startX);
     });
 
-    // Auto-scroll: slow continuous scroll, pauses on hover/drag
-    let autoScrollPaused = false;
-    let autoScrollSpeed = 0.5; // px per frame
+    // Auto-scroll
+    let autoInterval: ReturnType<typeof setInterval>;
+    const scrollSpeed = 0.5;
 
-    statsScroll.addEventListener('mouseenter', () => { autoScrollPaused = true; });
-    statsScroll.addEventListener('mouseleave', () => { autoScrollPaused = false; isDown = false; statsScroll.style.cursor = ''; });
-    statsScroll.addEventListener('touchstart', () => { autoScrollPaused = true; }, { passive: true });
-    statsScroll.addEventListener('touchend', () => { autoScrollPaused = false; });
-
-    function autoScroll() {
-      if (!autoScrollPaused && statsScroll) {
-        const maxScroll = statsScroll.scrollWidth - statsScroll.clientWidth;
-        statsScroll.scrollLeft += autoScrollSpeed;
-        // Loop back to start when reaching the end
-        if (statsScroll.scrollLeft >= maxScroll) {
-          statsScroll.scrollLeft = 0;
+    function startAuto() {
+      autoInterval = setInterval(() => {
+        if (isDown) return;
+        statsScroll!.scrollLeft += scrollSpeed;
+        if (statsScroll!.scrollLeft >= statsScroll!.scrollWidth - statsScroll!.clientWidth) {
+          statsScroll!.scrollLeft = 0;
         }
-      }
-      requestAnimationFrame(autoScroll);
+      }, 16);
     }
-    requestAnimationFrame(autoScroll);
+
+    function pauseAuto() { clearInterval(autoInterval); }
+    function resumeAuto() { pauseAuto(); startAuto(); }
+
+    statsScroll.addEventListener('mouseenter', pauseAuto);
+    statsScroll.addEventListener('touchstart', pauseAuto);
+    statsScroll.addEventListener('touchend', () => { setTimeout(resumeAuto, 2000); });
+
+    startAuto();
   }
 
   // Stats scroll reveal with stagger + trigger counters

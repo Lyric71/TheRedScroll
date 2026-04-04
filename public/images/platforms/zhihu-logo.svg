@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <!-- Zhihu 知 character stylized -->
+  <path d="M5 7h19.5v3H9.1l-1.2 6.5h15.6v3H7.3L5 31h10.8l-2.4 7.5h3.4L19.5 31h5V28H11.8l.9-4.5h12.8V20h-16L10.6 14h14V10H8.2L5 7z" fill="#FFFFFF"/>
+  <path d="M27 7h3v12h6.5v3H30v8.5l8.5 9-2.2 2.2L30 35v7.5h-3V7z" fill="#FFFFFF"/>
+  <path d="M37 19h6v3h-6v-3z" fill="#FFFFFF"/>
+</svg>
