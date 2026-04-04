@@ -1,0 +1,309 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import Container from '../../components/ui/Container.astro';
+import SectionBar from '../../components/ui/SectionBar.astro';
+import SectionHeading from '../../components/ui/SectionHeading.astro';
+import Button from '../../components/ui/Button.astro';
+
+const services = ['Campaign', 'Content Production', 'Social', 'AI-Powered Content'];
+const platforms = ['WeChat', 'RedNote', 'Weibo'];
+---
+
+<PageLayout
+  title="JAC Motors China Social Media Case Study | TheRedScroll"
+  description="How JAC Motors built a real social community on WeChat, RedNote, and Weibo. AI-powered content, Olympic campaign, and global crossover results."
+  ogImage="/images/clients/JAC/JAC-Wechat-4.jpg"
+>
+
+  <!-- Hero -->
+  <section class="relative w-full min-h-[600px] max-[640px]:min-h-[480px] overflow-hidden">
+    <div
+      class="absolute inset-0 bg-cover bg-center bg-fixed max-[640px]:bg-scroll"
+      style="background-image: url('/images/clients/JAC/JAC-Wechat-4.jpg')"
+      aria-hidden="true"
+    ></div>
+    <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.72]" aria-hidden="true"></div>
+
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+        Case study
+      </p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        JAC Motors: building a social community for a Chinese auto giant.
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        JAC Motors needed more than posts. We built a community across WeChat, RedNote, and Weibo using AI-powered content that went global on its own.
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/contact">Book a call</Button>
+        <Button variant="secondary-dark" href="#case-study">Read the case study</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meta bar -->
+  <section class="border-b border-[rgba(0,0,0,0.08)]">
+    <Container>
+      <div class="flex flex-wrap gap-[32px] max-[640px]:gap-[20px] py-[24px]">
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Client</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">JAC Motors</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Industry</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">Automotive / EV</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Services</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {services.map((s) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{s}</span>
+            ))}
+          </div>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Platforms</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {platforms.map((p) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{p}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Case study content -->
+  <section id="case-study" class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <!-- The Client -->
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="The client">10 million vehicles sold. Social presence that didn't match.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              JAC is one of China's biggest car manufacturers. More than 30 years in the business, over 10 million vehicles sold worldwide. They make passenger cars, EVs, commercial trucks. Big company, serious footprint.
+            </p>
+            <p>
+              But their social media didn't reflect any of that. Content was going out on WeChat, RedNote, and Weibo regularly enough. The problem was nobody was really engaging with it. Low comments, low shares, no real sense of community.
+            </p>
+            <p>
+              For a company that size, the gap between their market position and their social presence was pretty hard to ignore.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- WeChat content — horizontal scroll -->
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <div class="flex justify-center gap-[16px] overflow-x-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] max-[640px]:justify-start pb-[8px] scrollbar-hide">
+      <img
+        src="/images/clients/JAC/JAC-Wechat.jpg"
+        alt="JAC Motors WeChat article about E30X EV launch in the UAE"
+        class="h-[480px] max-[640px]:h-[400px] w-auto shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src="/images/clients/JAC/JAC-Wechat-1.jpg"
+        alt="JAC Motors WeChat article featuring media coverage and RCEP forum"
+        class="h-[480px] max-[640px]:h-[400px] w-auto shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src="/images/clients/JAC/JAC-Wechat-2.jpg"
+        alt="JAC Motors WeChat article about J-Bot Olympic campaign"
+        class="h-[480px] max-[640px]:h-[400px] w-auto shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src="/images/clients/JAC/JAC-Wechat-3.jpg"
+        alt="JAC Motors WeChat article about Paris Olympics Chinese Red campaign"
+        class="h-[480px] max-[640px]:h-[400px] w-auto shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <Container>
+      <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+        WeChat content: product launches, Olympic campaign, and global expansion stories. Scroll to see more.
+      </p>
+    </Container>
+  </section>
+
+  <!-- What We Did -->
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="What we did">Rebuild content from scratch. Build a community that feels real.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              We took over content across all three platforms. JAC didn't just want more posts going out. They wanted to become a brand that people in the auto world actually follow. And they wanted the community around them to feel like something real. Built on trust and a shared identity.
+            </p>
+            <p>
+              So we rebuilt the content from scratch around three ideas: automotive knowledge, human stories from inside and around JAC, and actually talking with the audience instead of at them.
+            </p>
+          </div>
+        </div>
+
+        <!-- AI -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">AI was central to how we produced</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              We used HubStudio.ai to create personalized visual content at a pace that traditional production can't touch. AI also handled performance tracking across all three platforms, which meant we could see what was landing and adjust that same week.
+            </p>
+            <p>
+              Our creative team built everything platform by platform. What went on WeChat looked different from what went on RedNote. Different format, different tone, different audience.
+            </p>
+          </div>
+        </div>
+
+        <!-- Content strategy -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Content that earns attention</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              We positioned JAC as a source of real automotive knowledge. Technical breakdowns, behind-the-scenes manufacturing stories, owner spotlights showing what JAC vehicles look like in daily life. The kind of content you'd actually stop scrolling for.
+            </p>
+            <p>
+              It took a few months. But eventually the shift was obvious. Comments got longer. People started tagging friends. Shares climbed. The accounts went from feeling like a corporate broadcast to a place people came back to on their own.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- Campaign visuals — full width -->
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px] px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px]">
+      <img
+        src="/images/clients/JAC/JAC-Wechat-4.jpg"
+        alt="JAC Motors E30X campaign with Nuria Diosdado"
+        class="w-full rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src="/images/clients/JAC/JAC-Wechat-5.jpg"
+        alt="JAC Motors Iraq market launch event"
+        class="w-full rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <Container>
+      <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+        Global campaign content: E30X athlete collaboration and Iraq market launch.
+      </p>
+    </Container>
+  </section>
+
+  <!-- J-Bot Campaign -->
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="The Olympic J-Bot campaign">AI-designed mascot goes global without a global campaign.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              The J-Bot campaign is where the community work paid off in a big way. We used AI to redesign JAC's mascot into six Olympic-themed versions. The J-Bot visuals went up across WeChat, RedNote, and Weibo. The response was immediate. High engagement, high shares, organic reach well beyond JAC's existing followers.
+            </p>
+            <p>
+              What happened next wasn't part of the plan. JAC's international teams saw the J-Bot content and started reposting it on Facebook and Instagram on their own. Nobody briefed them. They just saw it working and grabbed it.
+            </p>
+            <p>
+              Content made for Chinese social platforms ended up going global without anyone planning a separate campaign for it. That doesn't happen with average creative.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- J-Bot visuals — full width -->
+  <section class="mb-[16px]">
+    <img
+      src="/images/clients/JAC/Wechat-JAC-Automobile-1.png"
+      alt="JAC J-Bot mascot in six Olympic-themed versions created with AI"
+      class="w-full"
+      loading="lazy"
+      decoding="async"
+    />
+  </section>
+
+  <!-- J-Bot Facebook post + WeChat -->
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <div class="flex justify-center gap-[16px] px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] max-[640px]:overflow-x-auto max-[640px]:justify-start scrollbar-hide">
+      <img
+        src="/images/clients/JAC/Wechat-JAC-Automobile-2.png"
+        alt="JAC Motors Global Facebook post featuring J-Bot Olympic campaign with high engagement"
+        class="h-[480px] max-[640px]:h-[400px] w-auto shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src="/images/clients/JAC/JAC-Wechat-3.jpg"
+        alt="JAC Motors WeChat article about Paris Olympics Chinese Red campaign"
+        class="h-[480px] max-[640px]:h-[400px] w-auto shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <Container>
+      <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+        The J-Bot campaign crossed over from Chinese social to JAC's global Facebook page without a separate brief.
+      </p>
+    </Container>
+  </section>
+
+  <!-- Outcome + Ground team -->
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <!-- Ground team -->
+        <div class="mb-[64px] max-[640px]:mb-[48px] bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[32px] max-[640px]:p-[24px]">
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            The campaign strengthened JAC's image as an innovative brand and connected their Chinese audience with their global one. Turns out, good community content doesn't need a passport.
+          </p>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- CTA -->
+  <section class="pb-[96px] max-[640px]:pb-[64px]">
+    <Container>
+      <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[48px] max-[640px]:p-[32px] text-center">
+        <SectionHeading overline="Your turn">Want to turn your social channels into a real community?</SectionHeading>
+        <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)] max-w-[500px] mx-auto mb-[32px]">
+          Fixed scope. Fixed price. Team on the ground.
+        </p>
+        <Button variant="primary" href="/contact">Book a call</Button>
+      </div>
+    </Container>
+  </section>
+
+  <style>
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+
+</PageLayout>
