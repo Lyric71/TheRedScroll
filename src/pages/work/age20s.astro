@@ -1,0 +1,254 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import Container from '../../components/ui/Container.astro';
+import SectionBar from '../../components/ui/SectionBar.astro';
+import SectionHeading from '../../components/ui/SectionHeading.astro';
+import Button from '../../components/ui/Button.astro';
+
+const services = ['Campaign', 'Content Production', 'Influencer / KOL', 'Social'];
+const platforms = ['RedNote', 'Douyin'];
+
+const stats = [
+  { value: '3.87M', label: 'Douyin impressions (1M target)' },
+  { value: '750K', label: 'RedNote impressions (300K target)' },
+  { value: '3.3%', label: 'ROI, above category benchmarks' },
+  { value: '4x', label: 'Over target on Douyin' },
+];
+---
+
+<PageLayout
+  title="AGE 20's Little Milk Brick China Case Study | TheRedScroll"
+  description="How AGE 20's launched the Little Milk Brick foundation in China. 3.87M Douyin impressions, 750K on RedNote, and a product nickname that went organic."
+  ogImage="/images/clients/Age20/Age20-Picture1-scaled.jpg"
+>
+
+  <!-- Hero -->
+  <section class="relative w-full min-h-[600px] max-[640px]:min-h-[480px] overflow-hidden">
+    <div
+      class="absolute inset-0 bg-cover bg-center bg-fixed max-[640px]:bg-scroll"
+      style="background-image: url('/images/clients/Age20/Age20-Picture1-scaled.jpg')"
+      aria-hidden="true"
+    ></div>
+    <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.72]" aria-hidden="true"></div>
+
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+        Case study
+      </p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        AGE 20's: the Little Milk Brick campaign in China.
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        AGE 20's needed to launch a foundation in China's crowded beauty market. The Little Milk Brick campaign delivered 4x over target on Douyin alone.
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/contact">Book a call</Button>
+        <Button variant="secondary-dark" href="#case-study">Read the case study</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meta bar -->
+  <section class="border-b border-[rgba(0,0,0,0.08)]">
+    <Container>
+      <div class="flex flex-wrap gap-[32px] max-[640px]:gap-[20px] py-[24px]">
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Client</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">AGE 20's</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Industry</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">Beauty / Cosmetics</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Services</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {services.map((s) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{s}</span>
+            ))}
+          </div>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Platforms</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {platforms.map((p) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{p}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Case study content -->
+  <section id="case-study" class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <!-- The Client -->
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="The client">Korean beauty brand. Crowded market. One shot to get the identity right.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              AGE 20's is a Korean beauty brand making professional-grade makeup for women with demanding jobs. They were launching a new cushion foundation in China: the Little Milk Brick. Milky-matte finish, 8-hour wear, dessert-inspired packaging. Strong product with a good hook.
+            </p>
+            <p>
+              The problem was standing out. China's foundation market is packed. AGE 20's needed a campaign that would position this as a premium professional choice, not just another cushion compact. This is also a campaign the brand runs annually, each year building on the last. Year one had to get the identity right.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- Campaign visuals -->
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <div class="flex justify-center gap-[16px] overflow-x-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] max-[640px]:justify-start pb-[8px] scrollbar-hide">
+      <img
+        src="/images/clients/Age20/Age20-Picture1-scaled.jpg"
+        alt="AGE 20's Little Milk Brick campaign hero visual with product packaging"
+        class="w-[280px] max-[640px]:w-[220px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src="/images/clients/Age20/Age20-Picture6.jpg"
+        alt="AGE 20's Little Milk Brick social content on RedNote and Douyin"
+        class="w-[280px] max-[640px]:w-[220px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src="/images/clients/Age20/Age20-Picture11.png"
+        alt="AGE 20's KOL campaign content and UGC results"
+        class="w-[280px] max-[640px]:w-[220px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <Container>
+      <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+        AGE 20's Little Milk Brick campaign. Product visuals, KOL content, and social assets across RedNote and Douyin.
+      </p>
+    </Container>
+  </section>
+
+  <!-- What We Did -->
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="What we did">A four-phase campaign built around one unforgettable name.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              We ran a phased campaign across RedNote and Douyin with the Little Milk Brick identity at the center.
+            </p>
+          </div>
+        </div>
+
+        <!-- The name -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">The name did a lot of the heavy lifting</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              We built the visual and verbal identity around it. The packaging became the hero across every piece of content. It gave consumers a name they would actually remember and use on their own.
+            </p>
+          </div>
+        </div>
+
+        <!-- Four phases -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Four phases, each with a job to do</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Warm-up put the Milk Brick look across official channels. Getting people familiar. Launch shifted to real workplace settings: women at desks, in meetings, commuting. All-day coverage shown in real conditions.
+            </p>
+            <p>
+              Conversion activated KOLs during peak shopping windows. Recommendations landed when buying intent was highest. Sustain amplified UGC from real customers to keep the conversation alive after launch.
+            </p>
+          </div>
+        </div>
+
+        <!-- Platform content -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Each platform got different content</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              RedNote: detailed tutorials, before-and-after transformations. Douyin: quick workplace refreshes, professional beauty tips. Fast, visual, matched to how people actually use each platform.
+            </p>
+          </div>
+        </div>
+
+        <!-- HubStudio callout -->
+        <div class="mb-[64px] max-[640px]:mb-[48px] bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[32px] max-[640px]:p-[24px]">
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            HubStudio.ai kept the content pipeline moving. Product visuals, social assets, creative variations. Faster production without cutting corners on quality.
+          </p>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- Stats grid -->
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <Container>
+      <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        {stats.map((stat) => (
+          <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[24px] text-center">
+            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[4px]">{stat.value}</p>
+            <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)]">{stat.label}</p>
+          </div>
+        ))}
+      </div>
+    </Container>
+  </section>
+
+  <!-- Outcome -->
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="The outcome">The nickname went organic. In this market, that almost never happens.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              The targets all got beaten, and by a lot. RedNote hit 750,000 impressions against a 300,000 goal. Douyin reached 3.87 million impressions versus a 1 million target. ROI came in at 3.3%, above category benchmarks.
+            </p>
+            <p>
+              But here is what really worked. The Little Milk Brick nickname went organic. Consumers started using the name in their own posts without being asked or paid. The identity we built turned into something people just used. In a market this crowded, that almost never happens on its own.
+            </p>
+            <p>
+              AGE 20's went from functional beauty brand to premium professional pick. And because the campaign runs every year, what we built in year one keeps growing.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- CTA -->
+  <section class="pb-[96px] max-[640px]:pb-[64px]">
+    <Container>
+      <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[48px] max-[640px]:p-[32px] text-center">
+        <SectionHeading overline="Your turn">Want to launch a product campaign on China's social platforms?</SectionHeading>
+        <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)] max-w-[500px] mx-auto mb-[32px]">
+          Fixed scope. Fixed price. Team on the ground.
+        </p>
+        <Button variant="primary" href="/contact">Book a call</Button>
+      </div>
+    </Container>
+  </section>
+
+  <style>
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+
+</PageLayout>

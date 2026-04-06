@@ -1,0 +1,249 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import Container from '../../components/ui/Container.astro';
+import SectionBar from '../../components/ui/SectionBar.astro';
+import SectionHeading from '../../components/ui/SectionHeading.astro';
+import Button from '../../components/ui/Button.astro';
+
+const services = ['Campaign', 'eCommerce', 'Influencer / KOL', 'Livestream', 'Media', 'Social'];
+const platforms = ['WeChat', 'RedNote', 'Weibo'];
+---
+
+<PageLayout
+  title="Mission Foods China Social Media Case Study | TheRedScroll"
+  description="How Mission Foods launched corn chips in China using WeChat, RedNote, and Weibo. Gen Z social campaigns, food pairing content, and community growth."
+  ogImage="/images/clients/MissionFoods/head-pic.jpg"
+>
+
+  <!-- Hero -->
+  <section class="relative w-full min-h-[600px] max-[640px]:min-h-[480px] overflow-hidden">
+    <div
+      class="absolute inset-0 bg-cover bg-center bg-fixed max-[640px]:bg-scroll"
+      style="background-image: url('/images/clients/MissionFoods/head-pic.jpg')"
+      aria-hidden="true"
+    ></div>
+    <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.72]" aria-hidden="true"></div>
+
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+        Case study
+      </p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        Mission Foods: launching corn chips in China through social.
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        Mission Foods needed to introduce corn chips to Chinese consumers who had never tried them. We built a social strategy that made an unknown snack category stick.
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/contact">Book a call</Button>
+        <Button variant="secondary-dark" href="#case-study">Read the case study</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meta bar -->
+  <section class="border-b border-[rgba(0,0,0,0.08)]">
+    <Container>
+      <div class="flex flex-wrap gap-[32px] max-[640px]:gap-[20px] py-[24px]">
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Client</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">Mission Foods</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Industry</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">Food / FMCG</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Services</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {services.map((s) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{s}</span>
+            ))}
+          </div>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Platforms</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {platforms.map((p) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{p}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Case study content -->
+  <section id="case-study" class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <!-- The Client -->
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="The client">A global brand launching an unknown snack category in China.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Mission Foods is a global Mexican food brand and one of the world's largest tortilla producers. In China, they were launching corn chips. Strong brand globally, but corn chips are not really a thing in China.
+            </p>
+            <p>
+              Most consumers had never tried them. Many had never heard of them. And the target was Gen Z.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- Social screenshots -->
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <div class="flex justify-center gap-[16px] overflow-x-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] max-[640px]:justify-start pb-[8px] scrollbar-hide">
+      <img
+        src="/images/clients/MissionFoods/1-1.jpg"
+        alt="Mission Foods social media content showing corn chip food pairings on Chinese platforms"
+        class="w-[340px] max-[640px]:w-[280px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src="/images/clients/MissionFoods/1-2.jpg"
+        alt="Mission Foods Gen Z snacking campaign content on RedNote and WeChat"
+        class="w-[340px] max-[640px]:w-[280px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <Container>
+      <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+        Mission Foods social content across WeChat, Weibo, and RedNote. Food pairing campaigns and Gen Z snacking moments.
+      </p>
+    </Container>
+  </section>
+
+  <!-- What We Did -->
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="What we did">Making corn chips feel local, not foreign.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              We ran social campaigns and always-on content across WeChat, Weibo, and RedNote. The whole strategy came down to one thing: corn chips would only work in China if they stopped feeling foreign.
+            </p>
+          </div>
+        </div>
+
+        <!-- Food pairing -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Food pairing content that answered the real question</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              We showed corn chips alongside Chinese food. Dipping sauces, hotpot companions, recipes mixing corn chip crunch with familiar Chinese flavors. It answered the question every consumer was thinking: how do I actually eat these?
+            </p>
+            <p>
+              The pairings felt natural and showed respect for local food culture. That is what made them work.
+            </p>
+          </div>
+        </div>
+
+        <!-- Gen Z -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Built around Gen Z snacking moments</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Casual hangouts, late-night cravings, sharing food with friends. Playful, fast, visual. The kind of stuff Gen Z saves and sends to group chats. Not brand-first. Snack-first.
+            </p>
+          </div>
+        </div>
+
+        <!-- KOLs -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">RedNote KOLs showed the product in real life</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Real kitchens, real snacking situations, genuine reactions. KOC seeding added organic volume and helped normalize corn chips as something people actually buy.
+            </p>
+          </div>
+        </div>
+
+        <!-- Halloween -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">The Halloween campaign was the standout</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Themed content around corn chips as the party snack. Costume visuals, snack platters, party setups. The timing was right. Halloween has been growing fast among Gen Z in China, and corn chips fit naturally.
+            </p>
+            <p>
+              The campaign drove a sharp spike in followers and engagement across all three platforms.
+            </p>
+          </div>
+        </div>
+
+        <!-- WeChat -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">WeChat held it all together between campaigns</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Recipes, product updates, seasonal promotions. Steady content that keeps an audience engaged even when there is no big push running.
+            </p>
+          </div>
+        </div>
+
+        <!-- Ground team callout -->
+        <div class="mb-[64px] max-[640px]:mb-[48px] bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[32px] max-[640px]:p-[24px]">
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            All produced from China by our team. Native speakers, culturally adapted content, weekly reviews on what was performing.
+          </p>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- Outcome -->
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="The outcome">The big moments mattered. What happened between them mattered more.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              The Halloween campaign pulled in the biggest numbers, with follower growth and engagement jumping above previous benchmarks.
+            </p>
+            <p>
+              What mattered more was what happened between the big moments. The always-on content kept growing the audience week after week. Recipes, deals, snacking ideas. People kept following, kept engaging.
+            </p>
+            <p>
+              Mission Foods went from launching an unknown product to building a real community around it. That is what social does when the content actually fits the market.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- CTA -->
+  <section class="pb-[96px] max-[640px]:pb-[64px]">
+    <Container>
+      <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[48px] max-[640px]:p-[32px] text-center">
+        <SectionHeading overline="Your turn">Ready to launch a product on China's social platforms?</SectionHeading>
+        <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)] max-w-[500px] mx-auto mb-[32px]">
+          Fixed scope. Fixed price. Team on the ground.
+        </p>
+        <Button variant="primary" href="/contact">Book a call</Button>
+      </div>
+    </Container>
+  </section>
+
+  <style>
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+
+</PageLayout>
