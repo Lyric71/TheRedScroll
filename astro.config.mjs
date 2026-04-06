@@ -11,7 +11,17 @@ export default defineConfig({
   adapter: vercel({
     webAnalytics: { enabled: true },
   }),
-  integrations: [sitemap()],
+  integrations: [
+    sitemap({
+      filter: (page) =>
+        !['/thank-you/', '/cookie-policy/', '/terms-of-service/', '/privacy-policy/'].some(
+          (path) => page.endsWith(path)
+        ),
+      changefreq: 'weekly',
+      priority: 0.7,
+      lastmod: new Date(),
+    }),
+  ],
   vite: {
     plugins: [tailwindcss()],
   },
