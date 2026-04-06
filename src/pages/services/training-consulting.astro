@@ -1,0 +1,268 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import Container from '../../components/ui/Container.astro';
+import SectionBar from '../../components/ui/SectionBar.astro';
+import SectionHeading from '../../components/ui/SectionHeading.astro';
+import Button from '../../components/ui/Button.astro';
+---
+
+<PageLayout
+  title="China Social Media Consulting & Training | TheRedScroll"
+  description="Strategy consulting, AIGC workshops, social listening, competitor watch, KOL audits, crisis playbooks, campaign training. Team in Shanghai."
+>
+
+  <!-- Hero — Dark hero banner -->
+  <section class="relative w-full overflow-hidden bg-[var(--color-ink)]">
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+        Training and consulting
+      </p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        Learn the market. Or let us solve a specific problem.
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        Consulting for specific challenges. Training for internal teams. Both delivered by people who work on Chinese social platforms every day.
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/contact">Book a call</Button>
+        <Button variant="secondary-dark" href="#consulting">See consulting services</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why brands need this -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[48px] max-[640px]:gap-[32px] items-start">
+        <div>
+          <SectionBar />
+          <SectionHeading overline="Why this exists">Some brands need knowledge, not more hands.</SectionHeading>
+          <div class="flex flex-col gap-[24px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Some brands aren't ready to outsource everything. They have internal teams, maybe an agency they'd rather not replace. What they need is the knowledge layer. How the platforms work in practice. What formats actually perform versus what looks good in a pitch. How AI fits into a production workflow without becoming something the team depends on but doesn't understand.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col pt-[48px] max-[640px]:pt-[0px]">
+          <div class="flex flex-col gap-[24px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Other brands have a specific problem they need solved quickly. The numbers are flat after a year of posting. They parted ways with their agency and aren't sure what went wrong. They think their KOL spend might be bloated but don't have the data to prove it.
+            </p>
+            <p class="text-[var(--color-stone)]">
+              Our team runs live campaigns daily. The advice comes from what's working this month, on the platforms we're in every day, with numbers we can actually point to.
+            </p>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Consulting vs Training callout -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[48px] max-[640px]:p-[32px_20px]">
+        <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[32px] max-[640px]:gap-[24px] text-center">
+          <div>
+            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[4px]">Consulting</p>
+            <p class="text-[13px] font-normal text-[var(--color-stone)] leading-[1.4]">For when you have a specific problem to solve. Strategy sessions, audits, competitive intelligence, crisis planning.</p>
+          </div>
+          <div>
+            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Training</p>
+            <p class="text-[13px] font-normal text-[var(--color-stone)] leading-[1.4]">For when you want your team to stop having the same problem over and over. Workshops, masterclasses, hands-on sessions.</p>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Consulting services -->
+  <section id="consulting" class="mt-[96px] max-[640px]:mt-[64px] scroll-mt-[76px]">
+    <Container>
+      <SectionBar />
+      <SectionHeading overline="Consulting">Consulting services</SectionHeading>
+
+      <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px] mt-[24px]">
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Strategy consulting</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Social media strategy, platform selection, content planning, campaign architecture, KOL strategy, social commerce, competitive positioning. Single deep-dive session or multi-week project with written deliverables. Every engagement ends with a document you can act on.</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Content and AIGC consulting</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">We audit your production workflow and figure out where AI adds speed without losing quality. Which steps can be automated. Which ones can't. Prompt frameworks, custom model training on your visual identity, tool selection. Over 53% of advertisers now use AIGC in creative production. The question isn't whether to adopt it. It's how to do it well.</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Performance audits</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">If your accounts exist but aren't delivering, we start here. Current accounts, content, engagement, ad spend, KOL partnerships, competitive position. Written report: what's working, what isn't, what to change. Use it on your own, pass it to your agency, or ask us to fix what's broken.</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Social listening</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Brand mentions, sentiment, trending conversations, competitor activity across RedNote, Douyin, WeChat, Weibo, and Zhihu. Automated tools combined with manual checks from our Shanghai team. Sarcasm in Chinese comment sections still needs a human to catch. Monthly retainer or bundled into strategy retainers.</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Competitor watch</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Monthly or quarterly reports on your top 5 to 10 competitors: content themes, posting cadence, engagement trends, KOL partnerships, ad activity, new launches. When a competitor shifts strategy or ramps up spend, we flag it so you're not the last to know.</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">KOL risk assessment</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Pre-collaboration due diligence on KOLs and celebrities. Past controversies, political sensitivities, brand conflicts, fake followers, audience quality. One to three weeks depending on depth. Small cost relative to what a bad partnership ends up costing when it plays out in public.</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- PR Crisis Playbook — dark section -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="bg-[#1A1A1A] rounded-[12px] p-[48px] max-[640px]:p-[32px_20px]">
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">Crisis planning</p>
+        <h2 class="text-[#FFFFFF] text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] mb-[16px]">The best time to build a crisis plan is before you need one.</h2>
+        <div class="max-w-[680px] flex flex-col gap-[24px]">
+          <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+            What to do if a KOL partnership backfires. How to respond if a product gets negative attention on RedNote. What the escalation path looks like if a cultural misstep goes viral on Weibo.
+          </p>
+          <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+            Monitoring triggers, response templates, escalation protocols, platform-specific guidelines. Build it once, keep it on file, pull it out when something happens. If a situation goes beyond social, we connect you with crisis PR firms who deal with that full time.
+          </p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Training programs -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <SectionBar />
+      <SectionHeading overline="Training">Training programs</SectionHeading>
+
+      <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px] mt-[24px]">
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Social media landscape</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)] mb-[16px]">For teams new to the market or needing a structured overview. Major platforms, user demographics, content formats, ad ecosystems, how everything connects. Real case studies and competitive overview for your category.</p>
+          <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)]">Half-day or full-day. In-person or remote. Best for marketing teams, C-suite, brand managers.</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">How to build and run campaigns</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)] mb-[16px]">From brief to post-campaign report. Content calendars, platform-specific production, KOL selection, ad setup, performance measurement. Participants leave with a draft campaign plan for their brand.</p>
+          <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)]">One to two days, hands-on. Best for social media managers, content teams, teams managing agency relationships.</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Integrating AIGC into content production</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)] mb-[16px]">Current AI tools for text, image, and video. Prompt engineering. Custom model training. Workflow design for volume production. Quality control. Compliance with AI content labeling rules (in effect since September 2025).</p>
+          <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)]">Half-day to full-day with live demos. Best for content producers, creative directors, production leads.</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Livestream commerce</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)] mb-[16px]">How to sell through live streaming. Platform selection (Douyin, Taobao Live, WeChat Channels). Host training, scripting, product sequencing, flash sale mechanics, real-time engagement. We break down recent top-performing sessions and what made them work.</p>
+          <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)]">Half-day with video cases and planning exercises. Best for e-commerce teams, brand managers, marketing directors.</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Case study -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[48px] max-[640px]:p-[32px_20px]">
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">Case study</p>
+        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[24px]">AIGC workshop for a global cosmetics brand</h2>
+
+        <div class="max-w-[680px] flex flex-col gap-[24px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+          <p>
+            A global cosmetics brand with a sizable marketing team in Shanghai needed 40+ content pieces per month across RedNote, Douyin, and WeChat. Their pipeline was delivering about 25 on a good month. No budget for new hires.
+          </p>
+          <p class="text-[var(--color-stone)]">
+            The team had played around with AI image generators but didn't know what was realistic at brand standard versus what was just a fun experiment. Leadership wanted a straight answer: is this a real operational tool, or is it mostly noise?
+          </p>
+          <p>
+            First we audited the production process. Roughly 60% of content was "standard" (product-on-background, simple templates, copy variations). The other 40% was "hero" content needing real shoots or KOL involvement. Then we ran a full-day workshop. 12 people. Live demos with the brand's own product images. Prompt templates for their most repeated content types. Custom model training on HubStudio.ai that produced imagery good enough to pass internal review on the first try.
+          </p>
+          <p>
+            By end of day, 8 usable assets produced right there in the room. Not mockups. Actual images that ended up in the content calendar the following week.
+          </p>
+        </div>
+
+        <!-- Results grid -->
+        <div class="grid grid-cols-4 max-[640px]:grid-cols-2 gap-[24px] mt-[32px] pt-[32px] border-t border-[rgba(0,0,0,0.08)]">
+          <div>
+            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[4px]">25 → 42</p>
+            <p class="text-[13px] font-normal text-[var(--color-stone)] leading-[1.4]">Content pieces per month. Nobody new was hired.</p>
+          </div>
+          <div>
+            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">-45%</p>
+            <p class="text-[13px] font-normal text-[var(--color-stone)] leading-[1.4]">Cost per asset.</p>
+          </div>
+          <div>
+            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[4px]">100%</p>
+            <p class="text-[13px] font-normal text-[var(--color-stone)] leading-[1.4]">Standard content shifted to AIGC.</p>
+          </div>
+          <div>
+            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[4px]">3 months</p>
+            <p class="text-[13px] font-normal text-[var(--color-stone)] leading-[1.4]">Later, the brand came back for a follow-up on AI video.</p>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- FAQ -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <SectionBar />
+      <SectionHeading overline="FAQ">Frequently asked questions</SectionHeading>
+
+      <div class="max-w-[680px] flex flex-col gap-[32px] mt-[24px]">
+        <div>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">How much does it cost?</h3>
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">Depends on scope. A single strategy session starts from a few thousand RMB. A multi-week project with deliverables runs higher. Training workshops are fixed-fee based on duration and customization. We always quote before starting. No open-ended billing.</p>
+        </div>
+        <div>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Remote training?</h3>
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">Works well for most formats. In-person is better for AIGC workshops where the hands-on part matters, but we can make remote work too.</p>
+        </div>
+        <div>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Group size?</h3>
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">Sweet spot is 6 to 15. We've run sessions with 3 people and sessions with close to 40. The format changes depending on how many people are in the room, so it's worth discussing ahead of time.</p>
+        </div>
+        <div>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Is training customized?</h3>
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">Always. Built around your category, platforms, competitors, and team skill level. We brief before every session.</p>
+        </div>
+        <div>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Can consulting become a retainer?</h3>
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">Happens all the time. Some brands move into monthly campaign management after a consulting engagement. Others prefer to check in once or twice a year and handle the rest internally. Either way works for us.</p>
+        </div>
+        <div>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Platform-specific training?</h3>
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">Douyin ad formats and campaign setup. RedNote KOC seeding and search optimization. WeChat Official Account strategy and Mini Programs. Can be standalone sessions or part of something broader.</p>
+        </div>
+        <div>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Social listening pricing?</h3>
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">Monthly retainer. Typically starts with your brand plus 3 competitors across 2 platforms. Expand from there.</p>
+        </div>
+        <div>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Crisis playbook without ever having a crisis?</h3>
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">That's honestly the best time to build one. Most brands wait until something breaks and then try to figure out what to do while the internet is already talking about them. Having the framework in place beforehand means you follow a plan instead of making one up on the spot at 11pm.</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- CTA -->
+  <section class="mt-[96px] max-[640px]:mt-[64px] mb-[0px]">
+    <div class="w-full bg-[var(--color-rice-paper)] py-[64px] max-[640px]:py-[48px] px-[48px] max-[640px]:px-[20px]">
+      <div class="max-w-[600px] mx-auto text-center">
+        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[8px]">
+          Want to discuss consulting or training?
+        </h2>
+        <p class="text-[14px] text-[var(--color-stone)] font-normal leading-[1.6] mb-[24px]">
+          Tell us the problem or the skill gap. We'll tell you what makes sense and quote before starting.
+        </p>
+        <div class="flex items-center justify-center gap-[12px] flex-wrap">
+          <Button variant="primary" href="/contact">Book a call</Button>
+          <Button variant="secondary" href="/pricing">See pricing</Button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</PageLayout>
