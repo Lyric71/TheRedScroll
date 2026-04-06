@@ -1,59 +1,21 @@
 ---
+import { getCollection } from 'astro:content';
 import PageLayout from '../layouts/PageLayout.astro';
 import Container from '../components/ui/Container.astro';
 import SectionBar from '../components/ui/SectionBar.astro';
-import SectionHeading from '../components/ui/SectionHeading.astro';
 
-const articles = [
-  {
-    category: 'Platforms',
-    title: "Why RedNote is the platform brands can't ignore in 2026",
-    excerpt: 'RedNote passed 300 million monthly active users. If your brand sells anything visual, this is where your audience is researching before they buy.',
-    readingTime: '5 min',
-    date: 'March 2026',
-    slug: '#',
-  },
-  {
-    category: 'Strategy',
-    title: 'Douyin vs TikTok: why treating them the same costs you money',
-    excerpt: 'Same parent company, different algorithms, different audiences, different content formats. Here is what actually works on Douyin.',
-    readingTime: '7 min',
-    date: 'March 2026',
-    slug: '#',
-  },
-  {
-    category: 'Industry',
-    title: "0 out of 37 agencies offer fixed pricing. Here's why we do.",
-    excerpt: 'We audited 37 China-focused agencies. Every single one uses retainer or hourly billing. We chose a different model.',
-    readingTime: '4 min',
-    date: 'February 2026',
-    slug: '#',
-  },
-  {
-    category: 'Platforms',
-    title: 'WeChat Official Accounts in 2026: what changed and what still works',
-    excerpt: 'Open rates dropped across the board, but the brands getting results are doing three things differently.',
-    readingTime: '6 min',
-    date: 'February 2026',
-    slug: '#',
-  },
-  {
-    category: 'Content',
-    title: 'AI-generated video for Douyin: what we learned after 200 posts',
-    excerpt: 'We tested AI video production across 12 brand accounts. Here are the formats that performed and the ones that flopped.',
-    readingTime: '8 min',
-    date: 'January 2026',
-    slug: '#',
-  },
-  {
-    category: 'Market Entry',
-    title: 'The real cost of entering China on social media',
-    excerpt: 'Platform registration, ICP filing, content localization, ad accounts. A breakdown of what it actually takes and what it costs.',
-    readingTime: '6 min',
-    date: 'January 2026',
-    slug: '#',
-  },
-];
+const allPosts = await getCollection('blog');
+const articles = allPosts
+  .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime())
+  .map((post) => ({
+    category: post.data.category,
+    title: post.data.title,
+    excerpt: post.data.description,
+    readingTime: `${Math.ceil(post.body!.split(/\s+/).length / 200)} min`,
+    date: new Date(post.data.publishDate).toLocaleDateString('en-US', { month: 'long', year: 'numeric' }),
+    slug: `/insights/${post.id}`,
+    featuredImage: post.data.featuredImage,
+  }));
 ---
 
 <PageLayout
@@ -86,15 +48,18 @@ const articles = [
       <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[24px]">
         {articles.map((article) => (
           <a href={article.slug} class="block bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[8px] overflow-hidden transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)]">
-            <!-- Image placeholder -->
-            <div class="w-full aspect-[4/3] bg-[var(--color-warm-gray)] flex items-center justify-center">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="rgba(0,0,0,0.15)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
-                <polyline points="14,2 14,8 20,8"/>
-                <line x1="16" y1="13" x2="8" y2="13"/>
-                <line x1="16" y1="17" x2="8" y2="17"/>
-              </svg>
-            </div>
+            {article.featuredImage ? (
+              <img src={article.featuredImage} alt={article.title} class="w-full aspect-[4/3] object-cover bg-[var(--color-warm-gray)]" loading="lazy" />
+            ) : (
+              <div class="w-full aspect-[4/3] bg-[var(--color-warm-gray)] flex items-center justify-center">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="rgba(0,0,0,0.15)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+                  <polyline points="14,2 14,8 20,8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                </svg>
+              </div>
+            )}
             <div class="p-[20px]">
               <p class="text-[11px] font-medium tracking-[0.05em] uppercase text-[var(--color-vermillion)] leading-[1.2] mb-[8px]">
                 {article.category}
