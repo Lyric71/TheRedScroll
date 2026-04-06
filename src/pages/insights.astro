@@ -6,7 +6,7 @@ import SectionBar from '../components/ui/SectionBar.astro';
 
 const allPosts = await getCollection('blog');
 const articles = allPosts
-  .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime())
+  .sort(() => Math.random() - 0.5)
   .map((post) => ({
     category: post.data.category,
     title: post.data.title,

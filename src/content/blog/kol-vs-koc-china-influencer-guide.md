@@ -8,7 +8,7 @@ author: "TheRedScroll"
 category: "Strategy"
 keywords: ["KOL", "KOC", "China influencer marketing", "influencer China", "fake followers China", "Perfect Diary", "Xiaohongshu influencer"]
 featured: true
-featuredImage: "/images/blog/kol-koc.png"
+featuredImage: "/images/blog/kol-studio-shoot.png"
 ---
 
 *Spend too much on the wrong KOL and you burn your budget. Spread too thin across KOCs and nobody notices. Here is how to get the balance right.*
@@ -28,6 +28,8 @@ In China's influencer ecosystem, the difference between KOLs and KOCs goes well 
 According to iiMedia Research, KOC influence on consumer purchasing decisions ranks just behind KOLs and well above celebrities or general internet personalities. It comes down to trust. KOC content reads like a recommendation from someone in your circle. KOL content, even when it is well made, reads like a paid endorsement.
 
 Younger consumers are especially skeptical. Gen Z audiences in China increasingly question sponsored content. That does not mean KOLs are useless. But the era of dumping your entire budget on one big name and hoping for results is mostly behind us.
+
+![A KOC filming a casual product unboxing at her kitchen table with just a phone propped on books](/images/blog/koc-unboxing-kitchen.png)
 
 ## The fake follower problem
 
@@ -58,6 +60,8 @@ The model has evolved since then. In 2025, the mid-tier layer has become the mos
 Meanwhile, the market share of top-tier mega KOLs dipped from 32% to 30%, reflecting a deliberate push by platforms toward decentralized traffic distribution.
 
 Right now, the middle of the pyramid is where the best return sits.
+
+![A whiteboard showing the influencer pyramid strategy with KOL and KOC tiers and budget allocation](/images/blog/kol-pyramid-whiteboard.png)
 
 ## How influencers get paid
 

@@ -8,7 +8,7 @@ author: "TheRedScroll"
 category: "Strategy"
 keywords: ["live commerce China", "livestream selling", "China e-commerce", "MCN China", "CPS commission", "Taobao Live", "Douyin e-commerce"]
 featured: true
-featuredImage: "/images/blog/live-commerce.png"
+featuredImage: "/images/blog/live-commerce-purchase.png"
 ---
 
 *The highest-converting sales channel in China's digital ecosystem is not a website, an app store, or a social media feed. It is a livestream.*
@@ -55,6 +55,8 @@ Live commerce runs on three players: marketplaces, influencers, and MCNs.
 
 Micro-influencers often operate independently. But for brands running paid live commerce campaigns at any real scale, MCN partnerships are the standard path.
 
+![Inside an MCN office with multiple screens showing active livestreams and a coordinator managing schedules](/images/blog/live-commerce-mcn-office.png)
+
 ## Commission models
 
 Three payment structures drive the economics. The most common is CPS (Cost Per Sale), used in 80-90% of campaigns. The influencer earns a percentage of each sale after discounts and refunds. Low-risk for brands because you only pay when someone buys.
@@ -90,6 +92,8 @@ AI digital hosts are part of the picture too. JD.com's virtual host ran a 24-hou
 > Source: CIECC, Livestream E-commerce High-Quality Development Report
 
 Same pattern across the whole industry: AI handles volume and speed. Humans handle trust.
+
+![A commission tracking dashboard showing sales volume, CPS rates, and influencer performance](/images/blog/live-commerce-dashboard.png)
 
 ## Common mistakes
 
