@@ -4,6 +4,40 @@ import Container from '../../components/ui/Container.astro';
 import SectionBar from '../../components/ui/SectionBar.astro';
 import SectionHeading from '../../components/ui/SectionHeading.astro';
 import Button from '../../components/ui/Button.astro';
+import FaqAccordion from '../../components/sections/FaqAccordion.astro';
+import GettingStarted from '../../components/sections/GettingStarted.astro';
+
+
+const faqs = [
+  { q: 'Can AI really produce content that looks good enough for premium brands?', a: 'Yes, if you train the model properly. Generic AI output looks generic. We train custom models on your brand\'s visual identity, color palette, packaging, and product photography style. The output matches your brand. Not someone else\'s.' },
+  { q: 'What percentage of content is AI vs. real-life?', a: 'Depends on the brand and the platform. For most clients, AIGC handles 60 to 70% of visual production (product images, social graphics, simple video). Real-life production covers the remaining 30 to 40% (hero videos, lifestyle content, KOL shoots).' },
+  { q: 'Do you write in Chinese or adapt from English?', a: 'We write in Chinese. Not translate. Big difference. Our copywriters are native Mandarin speakers based in Shanghai. If you provide English brand guidelines, we use those as a starting point, but the output is written for Chinese platforms from scratch.' },
+  { q: 'How do you keep up with trends?', a: 'Our social media managers are on the platforms every day. They track trending hashtags, viral formats, seasonal moments, and competitor activity. When something relevant appears, we can produce and publish a response within 24 to 48 hours.' },
+  { q: 'What if we already have global creative assets?', a: 'We can adapt them, but adaptation usually doesn\'t perform as well as locally produced content. We\'ll use your global assets where they make sense and supplement with locally produced AIGC and real-life content for the day-to-day posts.' },
+  { q: 'How many posts per month do we need?', a: 'Minimum viable presence: 8 to 12 posts per platform per month. Competitive presence: 20 to 30. That\'s just organic. Ad creatives are on top. We build a content calendar that matches your budget and goals.' },
+  { q: 'Can you produce content for multiple platforms at once?', a: 'That\'s basically the default. Most clients run two to four platforms. Each one gets its own content calendar, its own tone, and its own formats. We don\'t recycle the same post across platforms. That doesn\'t work.' },
+  { q: 'How is pricing structured?', a: 'Fixed scope, fixed price. You know the number of posts, videos, articles, and shoots included each month. Ad spend and real-life production add-ons are quoted separately and transparently.' },
+  { q: 'Who owns the content you produce?', a: 'You do. Every asset we produce, whether AIGC or real-life, belongs to your brand. Full usage rights, no licensing restrictions, no expiration dates. You can repurpose it anywhere.' },
+  { q: 'How fast can you turn around content?', a: 'AIGC assets: 2 to 3 business days from brief to delivery. Real-life shoots need 1 to 2 weeks for planning, shooting, and post-production. Trend-reactive content can go from concept to published in 24 to 48 hours when needed.' },
+];
+
+const gettingStartedSteps = [
+  {
+    title: 'Discovery call.',
+    description: 'Tell us about your brand, your platforms, and where content is falling short.',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
+  },
+  {
+    title: 'Content plan.',
+    description: 'Format recommendations, production approach, AIGC vs. real-life split, and pricing. Clear scope.',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>',
+  },
+  {
+    title: 'Live in 2 weeks.',
+    description: 'Content strategy, asset production, and first posts published. Fourteen days from signed contract.',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
+  },
+];
 ---
 
 <PageLayout
@@ -13,6 +47,7 @@ import Button from '../../components/ui/Button.astro';
 
   <!-- Hero — Dark hero banner -->
   <section class="relative w-full overflow-hidden bg-[var(--color-ink)]">
+    <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/content-production-hero.png')" aria-hidden="true"></div>
     <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
       <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
         Content production
@@ -33,35 +68,37 @@ import Button from '../../components/ui/Button.astro';
   <!-- Why content production has changed -->
   <section class="mt-[96px] max-[640px]:mt-[64px]">
     <Container>
-      <div class="max-w-[680px]">
-        <SectionBar />
-        <SectionHeading overline="The shift">Why content production has changed</SectionHeading>
-        <div class="flex flex-col gap-[24px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
-          <p>
-            AI tools can now generate visuals, draft copy, and cut video edits in minutes. For standard assets like product shots and simple motion graphics, production costs are approaching zero.
-          </p>
-          <p>
-            But when everyone can produce content cheaply, content alone stops being the differentiator. What matters now is the thinking behind it. What topic to cover. What angle to lead with. Which trend to ride and which to skip.
-          </p>
+      <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        <div class="relative col-span-2 row-span-2 max-[640px]:col-span-1 max-[640px]:row-span-1 bg-[#1A1A1A] rounded-[12px] p-[32px] max-[640px]:p-[24px] flex flex-col justify-between min-h-[320px] max-[640px]:min-h-0 overflow-hidden">
+          <svg class="absolute bottom-[-20px] right-[-20px] w-[260px] h-[260px] opacity-[0.06]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+          <div class="relative z-[1]">
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">The shift</p>
+            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[16px]">Why content production has changed</h2>
+            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[400px]">AI can now produce visuals and copy in minutes. When everyone can create cheaply, the thinking behind the content becomes the real differentiator.</p>
+          </div>
+          <div class="relative z-[1] mt-[24px]">
+            <Button variant="secondary-dark" href="#what-we-do">See what we do</Button>
+          </div>
         </div>
-      </div>
-
-      <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px] mt-[32px]">
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Tone is platform-specific</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">RedNote rewards casual, almost diary-like content. Weibo demands punchy headlines. WeChat needs depth. Douyin lives on hooks and pacing. Same voice across all four won't work.</p>
+        <div class="bg-[#F0F1F4] rounded-[10px] p-[24px] max-[640px]:p-[20px] relative overflow-hidden">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Tone is platform-specific</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">RedNote rewards casual, almost diary-like content. Weibo demands punchy headlines. WeChat needs depth. Douyin lives on hooks and pacing. Same voice across all four won't work.</p>
         </div>
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Trends move fast</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">A hashtag trending on Douyin today might be dead by next week. Your content team needs to be on the platforms daily, spotting opportunities in real time.</p>
+        <div class="bg-[#1A1A1A] rounded-[12px] p-[24px] max-[640px]:p-[20px] relative overflow-hidden">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Trends move fast</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.6)]">A hashtag trending on Douyin today might be dead by next week. Your content team needs to be on the platforms daily, spotting opportunities in real time.</p>
         </div>
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Volume is massive</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Run three or four platforms and you're looking at 30 to 50 pieces per month, plus ad creatives. No team can sustain that with traditional production alone.</p>
+        <div class="bg-[#CC3333] rounded-[12px] p-[24px] max-[640px]:p-[20px] relative overflow-hidden">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Volume is massive</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.8)]">Run three or four platforms and you're looking at 30 to 50 pieces per month, plus ad creatives. No team can sustain that with traditional production alone.</p>
         </div>
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">AI is the only way to keep up</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">AIGC (AI-Generated Content) handles the production volume. Your team handles creative direction. The thinking is human. The output speed isn't.</p>
+        <div class="bg-[#E8E0D8] rounded-[10px] p-[24px] max-[640px]:p-[20px] relative overflow-hidden">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">AI is the only way to keep up</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">AIGC handles the production volume. Your team handles creative direction. The thinking is human. The output speed isn't.</p>
         </div>
       </div>
     </Container>
@@ -72,28 +109,32 @@ import Button from '../../components/ui/Button.astro';
     <Container>
       <SectionBar />
       <SectionHeading overline="What we do">Content structure and strategy</SectionHeading>
-      <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[48px] max-[640px]:gap-[32px] items-start">
-        <div class="flex flex-col gap-[24px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)] max-w-[680px]">
-          <p>
-            The most important layer. We define content pillars, messaging framework, editorial voice, and platform-specific formats before any asset gets produced.
-          </p>
-          <p>
-            This part is 100% human-led. AI can't read a trending topic on RedNote and decide whether your brand should ride it or stay quiet. That judgment call is ours.
-          </p>
+
+      <div class="rounded-[12px] overflow-hidden mt-[24px]">
+        <img src="/images/what-we-do/content-production.png" alt="TheRedScroll team directing a content production shoot" class="w-full aspect-[5/2] max-[640px]:aspect-[16/10] object-cover" loading="lazy" decoding="async" />
+      </div>
+
+      <div class="grid grid-cols-3 max-[768px]:grid-cols-1 gap-[24px] -mt-[72px] max-[768px]:-mt-[32px] px-[32px] max-[768px]:px-[0px] relative z-[1]">
+        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[24px] border border-[rgba(0,0,0,0.08)]">
+          <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
+            <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+          </div>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Content strategy</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Content pillars, messaging framework, editorial voice, and platform-specific formats. 100% human-led. AI can't decide if your brand should ride a trending topic or stay quiet.</p>
         </div>
-        <div class="flex flex-col gap-[24px]">
-          <div>
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">AIGC images and video</h3>
-            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">
-              Powered by HubStudio.ai. AI-generated product visuals, lifestyle imagery, and short-form video. We train custom AI models on your brand identity so the output looks like yours, not generic stock. Roughly 80% faster than traditional production.
-            </p>
+        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[24px] border border-[rgba(0,0,0,0.08)]">
+          <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
+            <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
           </div>
-          <div>
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Real-life production</h3>
-            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">
-              Shot on location. In China. Behind-the-scenes footage, product unboxings with actual people, brand films, KOL (Key Opinion Leader) collaboration shoots. AI can't replicate the feel of a real person using your product in a real environment.
-            </p>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">AIGC images and video</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">AI-generated product visuals, lifestyle imagery, and short-form video. Custom models trained on your brand identity so output looks like yours. Roughly 80% faster than traditional production.</p>
+        </div>
+        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[24px] border border-[rgba(0,0,0,0.08)]">
+          <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
+            <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
           </div>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Real-life production</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Shot on location in China. Behind-the-scenes footage, product unboxings, brand films, KOL collaboration shoots. AI can't replicate a real person using your product.</p>
         </div>
       </div>
     </Container>
@@ -203,141 +244,37 @@ import Button from '../../components/ui/Button.astro';
   <!-- Case study -->
   <section class="mt-[96px] max-[640px]:mt-[64px]">
     <Container>
-      <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[48px] max-[640px]:p-[32px_20px]">
-        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">Case study</p>
-        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[24px]">AIGC + real-life production for a Japanese skincare brand</h2>
-
-        <div class="max-w-[680px] flex flex-col gap-[24px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
-          <p>
-            A Japanese skincare brand was active on RedNote and WeChat but producing only 6 posts per month across both platforms. Content was shot in Tokyo, shipped as global assets, and barely adapted for the Chinese market. Engagement was below category average. The content looked expensive but felt foreign.
-          </p>
-          <p class="text-[var(--color-stone)]">
-            The brand needed to triple their content volume without tripling their budget. They also needed content that felt native, not like translated global campaigns.
-          </p>
-          <p>
-            We split production into two tracks. Track one: AIGC. We trained a custom model on the brand's visual identity using HubStudio.ai. Within two weeks, the model could generate on-brand product imagery, lifestyle flats, and ingredient detail shots. 30+ assets per month at roughly 20% of what the brand was spending on shoots in Tokyo.
-          </p>
-          <p>
-            Track two: real-life shoots. One half-day shoot per month in Shanghai. Real people, real skincare routines, real bathrooms and vanity tables. These clips became the hero content for RedNote video notes and WeChat Channels.
-          </p>
+      <a href="/work/camper" class="block bg-[var(--color-rice-paper)] rounded-[10px] p-[48px] max-[640px]:p-[32px_20px] group">
+        <div class="flex gap-[48px] max-[768px]:flex-col items-center">
+          <div class="flex-1 min-w-0">
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[12px]">Case study</p>
+            <h3 class="text-[24px] max-[640px]:text-[20px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[12px]">Camper: growing a design brand on China's social platforms</h3>
+            <p class="text-[15px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[20px]">Design-led content grew Camper from 43,000 to 187,000 followers across Chinese social platforms. Same-store sales rose 31% in 18 months.</p>
+            <span class="text-[14px] font-medium text-[var(--color-vermillion)] group-hover:underline">View case study →</span>
+          </div>
+          <img
+            src="/images/clients/Camper/Camper-Case-Study-Hero.jpg"
+            alt="Camper brand growth on Chinese social platforms"
+            class="w-[45%] max-[768px]:w-full aspect-[16/10] object-cover rounded-[10px]"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
-
-        <!-- Results grid -->
-        <div class="grid grid-cols-4 max-[640px]:grid-cols-2 gap-[24px] mt-[32px] pt-[32px] border-t border-[rgba(0,0,0,0.08)]">
-          <div>
-            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[4px]">22</p>
-            <p class="text-[13px] font-normal text-[var(--color-stone)] leading-[1.4]">Posts per month, up from 6. Across RedNote and WeChat.</p>
-          </div>
-          <div>
-            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">-35%</p>
-            <p class="text-[13px] font-normal text-[var(--color-stone)] leading-[1.4]">Production cost decrease despite nearly 4x the output.</p>
-          </div>
-          <div>
-            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[4px]">5.8%</p>
-            <p class="text-[13px] font-normal text-[var(--color-stone)] leading-[1.4]">RedNote engagement rate, up from 2.1%.</p>
-          </div>
-          <div>
-            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[4px]">+40%</p>
-            <p class="text-[13px] font-normal text-[var(--color-stone)] leading-[1.4]">WeChat article read-through rate improvement.</p>
-          </div>
-        </div>
-      </div>
+      </a>
     </Container>
   </section>
 
-  <!-- How to get started -->
-  <section class="mt-[96px] max-[640px]:mt-[64px]">
-    <Container>
-      <SectionBar />
-      <SectionHeading overline="Get started">Ready to scale your content?</SectionHeading>
+  <GettingStarted
+    heading="From brief to first content live in two weeks."
+    steps={gettingStartedSteps}
+    backgroundImage="/images/getting-started/content-production.png"
+    crossLinks={[
+      { label: 'Strategy and campaigns', href: '/services/strategy-campaigns' },
+      { label: 'Influencer marketing', href: '/services/influencer-marketing' },
+      { label: 'Advertising', href: '/services/advertising' },
+    ]}
+  />
 
-      <div class="grid grid-cols-3 max-[640px]:grid-cols-1 gap-[16px] mt-[24px]">
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <p class="text-[12px] font-medium text-[var(--color-vermillion)] leading-none mb-[8px]">01</p>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Book a 30-minute discovery call</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Tell us about your brand, your platforms, and where content is falling short.</p>
-        </div>
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <p class="text-[12px] font-medium text-[var(--color-vermillion)] leading-none mb-[8px]">02</p>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Get a content plan</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Format recommendations, production approach, AIGC vs. real-life split, and pricing. Clear scope.</p>
-        </div>
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <p class="text-[12px] font-medium text-[var(--color-vermillion)] leading-none mb-[8px]">03</p>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">First content live within two weeks</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Content strategy, asset production, and first posts published.</p>
-        </div>
-      </div>
-    </Container>
-  </section>
-
-  <!-- FAQ -->
-  <section class="mt-[96px] max-[640px]:mt-[64px]">
-    <Container>
-      <SectionBar />
-      <SectionHeading overline="FAQ">Frequently asked questions</SectionHeading>
-
-      <div class="max-w-[680px] flex flex-col gap-[32px] mt-[24px]">
-        <div>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Can AI really produce content that looks good enough for premium brands?</h3>
-          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">Yes, if you train the model properly. Generic AI output looks generic. We train custom models on your brand's visual identity, color palette, packaging, and product photography style. The output matches your brand. Not someone else's.</p>
-        </div>
-        <div>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">What percentage of content is AI vs. real-life?</h3>
-          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">Depends on the brand and the platform. For most clients, AIGC handles 60 to 70% of visual production (product images, social graphics, simple video). Real-life production covers the remaining 30 to 40% (hero videos, lifestyle content, KOL shoots).</p>
-        </div>
-        <div>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Do you write in Chinese or adapt from English?</h3>
-          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">We write in Chinese. Not translate. Big difference. Our copywriters are native Mandarin speakers based in Shanghai. If you provide English brand guidelines, we use those as a starting point, but the output is written for Chinese platforms from scratch.</p>
-        </div>
-        <div>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">How do you keep up with trends?</h3>
-          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">Our social media managers are on the platforms every day. They track trending hashtags, viral formats, seasonal moments, and competitor activity. When something relevant appears, we can produce and publish a response within 24 to 48 hours.</p>
-        </div>
-        <div>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">What if we already have global creative assets?</h3>
-          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">We can adapt them, but adaptation usually doesn't perform as well as locally produced content. We'll use your global assets where they make sense and supplement with locally produced AIGC and real-life content for the day-to-day posts.</p>
-        </div>
-        <div>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">How many posts per month do we need?</h3>
-          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">Minimum viable presence: 8 to 12 posts per platform per month. Competitive presence: 20 to 30. That's just organic. Ad creatives are on top. We build a content calendar that matches your budget and goals.</p>
-        </div>
-        <div>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Can you produce content for multiple platforms at once?</h3>
-          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">That's basically the default. Most clients run two to four platforms. Each one gets its own content calendar, its own tone, and its own formats. We don't recycle the same post across platforms. That doesn't work.</p>
-        </div>
-        <div>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">How is pricing structured?</h3>
-          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">Fixed scope, fixed price. You know the number of posts, videos, articles, and shoots included each month. Ad spend and real-life production add-ons are quoted separately and transparently.</p>
-        </div>
-        <div>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Who owns the content you produce?</h3>
-          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">You do. Every asset we produce, whether AIGC or real-life, belongs to your brand. Full usage rights, no licensing restrictions, no expiration dates. You can repurpose it anywhere.</p>
-        </div>
-        <div>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">How fast can you turn around content?</h3>
-          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">AIGC assets: 2 to 3 business days from brief to delivery. Real-life shoots need 1 to 2 weeks for planning, shooting, and post-production. Trend-reactive content can go from concept to published in 24 to 48 hours when needed.</p>
-        </div>
-      </div>
-    </Container>
-  </section>
-
-  <!-- CTA -->
-  <section class="mt-[96px] max-[640px]:mt-[64px] mb-[0px]">
-    <div class="w-full bg-[var(--color-rice-paper)] py-[64px] max-[640px]:py-[48px] px-[48px] max-[640px]:px-[20px]">
-      <div class="max-w-[600px] mx-auto text-center">
-        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[8px]">
-          Want to talk about your content needs?
-        </h2>
-        <p class="text-[14px] text-[var(--color-stone)] font-normal leading-[1.6] mb-[24px]">
-          30-minute discovery call. Content plan with format recommendations, production approach, and pricing. First content within two weeks.
-        </p>
-        <div class="flex items-center justify-center gap-[12px] flex-wrap">
-          <Button variant="primary" href="/contact">Book a call</Button>
-          <Button variant="secondary" href="/pricing">See pricing</Button>
-        </div>
-      </div>
-    </div>
-  </section>
+  <FaqAccordion faqs={faqs} subtitle="Everything you need to know about content production with TheRedScroll." />
 
 </PageLayout>

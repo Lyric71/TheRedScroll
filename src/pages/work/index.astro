@@ -147,7 +147,7 @@ const allPlatforms = ['All', ...new Set(caseStudies.flatMap((s) => s.platforms))
               type="button"
               data-filter-category={cat}
               class:list={[
-                'filter-btn text-[13px] font-medium leading-[1] px-[16px] py-[8px] rounded-[6px] cursor-pointer transition-[background,color,border-color] duration-150',
+                'filter-btn text-[13px] font-medium leading-[1] px-[16px] py-[8px] max-[640px]:py-[12px] min-h-[44px] max-[640px]:min-h-0 rounded-[6px] cursor-pointer transition-[background,color,border-color] duration-150',
                 cat === 'All'
                   ? 'bg-[var(--color-ink)] text-[#FFFFFF] border border-[var(--color-ink)]'
                   : 'bg-transparent text-[var(--color-ink)] border border-[rgba(0,0,0,0.15)] hover:border-[var(--color-ink)]'
@@ -167,7 +167,7 @@ const allPlatforms = ['All', ...new Set(caseStudies.flatMap((s) => s.platforms))
               type="button"
               data-filter-platform={plat}
               class:list={[
-                'filter-btn text-[13px] font-medium leading-[1] px-[16px] py-[8px] rounded-[6px] cursor-pointer transition-[background,color,border-color] duration-150',
+                'filter-btn text-[13px] font-medium leading-[1] px-[16px] py-[8px] max-[640px]:py-[12px] min-h-[44px] max-[640px]:min-h-0 rounded-[6px] cursor-pointer transition-[background,color,border-color] duration-150',
                 plat === 'All'
                   ? 'bg-[var(--color-ink)] text-[#FFFFFF] border border-[var(--color-ink)]'
                   : 'bg-transparent text-[var(--color-ink)] border border-[rgba(0,0,0,0.15)] hover:border-[var(--color-ink)]'

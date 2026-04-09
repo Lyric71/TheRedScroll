@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" rx="12" fill="#F5F5F0"/>
+  <rect x="290" y="20" width="220" height="460" rx="24" fill="#1A1A1A"/>
+  <rect x="298" y="44" width="204" height="420" rx="16" fill="#FFFFFF"/>
+  <!-- Header -->
+  <rect x="298" y="44" width="204" height="36" rx="16" fill="#1A1A1A"/>
+  <text x="400" y="66" text-anchor="middle" fill="#FFFFFF" font-family="Inter,system-ui,sans-serif" font-size="10" font-weight="500">Challenge</text>
+  <!-- Banner area -->
+  <rect x="298" y="80" width="204" height="90" fill="#CC3333" opacity="0.08"/>
+  <text x="400" y="110" text-anchor="middle" fill="#CC3333" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="500">#BrandChallenge</text>
+  <rect x="345" y="120" width="110" height="7" rx="2" fill="#1A1A1A" fill-opacity="0.3"/>
+  <rect x="350" y="140" width="100" height="20" rx="10" fill="#CC3333"/>
+  <text x="400" y="154" text-anchor="middle" fill="#FFFFFF" font-family="Inter,system-ui,sans-serif" font-size="9" font-weight="500">Participate</text>
+  <!-- Stats -->
+  <rect x="310" y="178" width="180" height="24" rx="4" fill="#F8F8F8"/>
+  <text x="355" y="194" text-anchor="middle" fill="#666" font-family="Inter,system-ui,sans-serif" font-size="8">12.4M views</text>
+  <text x="445" y="194" text-anchor="middle" fill="#666" font-family="Inter,system-ui,sans-serif" font-size="8">84K videos</text>
+  <!-- Video grid -->
+  <rect x="310" y="210" width="58" height="80" rx="4" fill="#E8E0D8"/>
+  <rect x="372" y="210" width="58" height="80" rx="4" fill="#E8E0D8"/>
+  <rect x="434" y="210" width="56" height="80" rx="4" fill="#E8E0D8"/>
+  <rect x="310" y="296" width="58" height="80" rx="4" fill="#E8E0D8"/>
+  <rect x="372" y="296" width="58" height="80" rx="4" fill="#E8E0D8"/>
+  <rect x="434" y="296" width="56" height="80" rx="4" fill="#E8E0D8"/>
+  <!-- Labels -->
+  <text x="108" y="125" text-anchor="middle" fill="#CC3333" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="500">Branded hashtag</text>
+  <text x="108" y="143" text-anchor="middle" fill="#999999" font-family="Inter,system-ui,sans-serif" font-size="10">Dedicated challenge page</text>
+  <line x1="170" y1="120" x2="296" y2="120" stroke="#CC3333" stroke-width="1" stroke-dasharray="4 3" opacity="0.4"/>
+  <text x="108" y="270" text-anchor="middle" fill="#666666" font-family="Inter,system-ui,sans-serif" font-size="11">User-generated</text>
+  <text x="108" y="286" text-anchor="middle" fill="#666666" font-family="Inter,system-ui,sans-serif" font-size="11">video entries</text>
+  <text x="650" y="140" text-anchor="middle" fill="#1A1A1A" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="500">Hashtag Challenge</text>
+  <text x="650" y="162" text-anchor="middle" fill="#999999" font-family="Inter,system-ui,sans-serif" font-size="11">Branded challenge page</text>
+  <text x="650" y="180" text-anchor="middle" fill="#999999" font-family="Inter,system-ui,sans-serif" font-size="11">Organic amplification</text>
+</svg>

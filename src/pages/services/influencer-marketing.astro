@@ -4,6 +4,38 @@ import Container from '../../components/ui/Container.astro';
 import SectionBar from '../../components/ui/SectionBar.astro';
 import SectionHeading from '../../components/ui/SectionHeading.astro';
 import Button from '../../components/ui/Button.astro';
+import FaqAccordion from '../../components/sections/FaqAccordion.astro';
+import GettingStarted from '../../components/sections/GettingStarted.astro';
+
+
+const faqs = [
+  { q: 'How do you detect fake followers?', a: 'We cross-reference follower counts against engagement metrics, comment quality, and audience demographics. A creator with 200,000 followers and 50 comments per post, mostly generic emoji, that\'s a red flag. Platform tools like Xingtu and Pugongying also provide authenticated data. After a few hundred campaigns you recognize the patterns quickly.' },
+  { q: 'How many KOLs do we need?', a: 'Depends on what you\'re trying to do. Seeding campaign: 20 to 50 KOCs. Brand awareness push: 3 to 5 mid-tier KOLs. Hero product launch: one top-tier creator supported by 10 to 15 KOCs. We build the mix around your budget and goals.' },
+  { q: 'Can we approve content before it goes live?', a: 'Generally yes. We share drafts or preview content before publication. Some creators resist heavy editing because it kills authenticity, and they\'re usually right. But key messages, compliance labels, and brand guidelines always get checked.' },
+  { q: 'What\'s the difference between KOL and KOC?', a: 'KOLs are professional creators with large followings and polished content. KOCs (Key Opinion Consumers) are everyday users with smaller audiences who share genuine product experiences. KOLs drive awareness. KOCs build trust and search presence. Most campaigns need both.' },
+  { q: 'How long to launch a campaign?', a: 'Two to four weeks from brief to first post. That covers creator identification, outreach, negotiation, briefing, content production, and review. Seeding campaigns with KOCs move faster, sometimes one to two weeks.' },
+  { q: 'Can influencer content be reused as ad creative?', a: 'Sometimes. Usage rights have to be negotiated upfront. Some creators include ad usage in their fee. Others want a separate licensing payment, which can add 30 to 50% on top. We sort this out during contracting so nobody gets surprised later.' },
+  { q: 'What industries work best?', a: 'Beauty, skincare, and fashion see the strongest results because the creator ecosystem is the most developed. F&B, health and wellness, hospitality, and consumer electronics are close behind. B2B brands can also make it work, especially on WeChat and Zhihu, but the pool of relevant creators is smaller.' },
+  { q: 'Do you handle payments to creators?', a: 'The whole flow. Negotiation, contracting, payment, tax documentation. You pay us. We sort out the rest with the creators and their MCNs.' },
+];
+
+const gettingStartedSteps = [
+  {
+    title: 'Discovery call.',
+    description: 'Your brand, your goals, and the type of creators you want to work with.',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
+  },
+  {
+    title: 'KOL shortlist.',
+    description: 'Vetted creators matched to your brand, niche, and budget. Every engagement number verified.',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>',
+  },
+  {
+    title: 'First posts in 2-4 weeks.',
+    description: 'Creator outreach, briefing, content production, review, and publication.',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
+  },
+];
 ---
 
 <PageLayout
@@ -13,6 +45,7 @@ import Button from '../../components/ui/Button.astro';
 
   <!-- Hero — Dark hero banner -->
   <section class="relative w-full overflow-hidden bg-[var(--color-ink)]">
+    <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/influencer-marketing-hero.png')" aria-hidden="true"></div>
     <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
       <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
         Influencer marketing
@@ -33,32 +66,37 @@ import Button from '../../components/ui/Button.astro';
   <!-- Why influencer marketing is essential -->
   <section class="mt-[96px] max-[640px]:mt-[64px]">
     <Container>
-      <div class="max-w-[680px]">
-        <SectionBar />
-        <SectionHeading overline="The case for creators">Why influencer marketing is essential</SectionHeading>
-        <div class="flex flex-col gap-[24px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
-          <p>
-            Advertising puts your message in front of people. Influencer marketing puts your product in the hands of someone they already trust. Both matter. They do different jobs.
-          </p>
+      <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        <div class="relative col-span-2 row-span-2 max-[640px]:col-span-1 max-[640px]:row-span-1 bg-[#1A1A1A] rounded-[12px] p-[32px] max-[640px]:p-[24px] flex flex-col justify-between min-h-[320px] max-[640px]:min-h-0 overflow-hidden">
+          <svg class="absolute bottom-[-20px] right-[-20px] w-[260px] h-[260px] opacity-[0.06]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/><path d="M20.84 4.61a5.5 5.5 0 0 1-8.69 4.28"/></svg>
+          <div class="relative z-[1]">
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">The case for creators</p>
+            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[16px]">Why influencer marketing is essential</h2>
+            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[400px]">Advertising puts your message in front of people. Influencer marketing puts your product in the hands of someone they already trust.</p>
+          </div>
+          <div class="relative z-[1] mt-[24px]">
+            <Button variant="secondary-dark" href="#what-we-do">See what we do</Button>
+          </div>
         </div>
-      </div>
-
-      <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px] mt-[32px]">
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">It reaches communities, not demographics</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">A KOL's (Key Opinion Leader) followers aren't an age bracket. They're people who share interests, taste, and trust in that creator. When that person recommends a product, the audience responds in ways they wouldn't for a paid ad.</p>
+        <div class="relative overflow-hidden bg-[#F0F1F4] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">It reaches communities, not demographics</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">A KOL's followers share interests, taste, and trust. When that person recommends a product, the audience responds in ways they wouldn't for a paid ad.</p>
         </div>
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Conversion rates tend to be higher</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Brands using KOL collaborations on RedNote report conversion rates roughly 2.3x higher than traditional ad channels. On Douyin, KOL-driven product links consistently outperform brand-created ads in click-through and purchase rate.</p>
+        <div class="relative overflow-hidden bg-[#1A1A1A] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Conversion rates tend to be higher</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.6)]">Brands using KOL collaborations on RedNote report conversion rates roughly 2.3x higher than traditional ad channels.</p>
         </div>
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">The market is growing fast</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">The influencer economy is forecast to hit RMB 117 billion ($16.8 billion) by the end of 2025. Over half of advertisers already use influencer content. KOL seeding and KOL-led commerce are where the growth is concentrated.</p>
+        <div class="relative overflow-hidden bg-[#CC3333] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">The market is growing fast</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.8)]">The influencer economy is forecast to hit RMB 117 billion by the end of 2025. Over half of advertisers already use influencer content.</p>
         </div>
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">But it's incredibly time-consuming</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Finding creators, checking if their followers are real, negotiating fees, writing briefs, reviewing content, tracking results. A single campaign with 15 creators can eat up 100+ hours. Most brands can't do this well in-house.</p>
+        <div class="relative overflow-hidden bg-[#E8E0D8] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">But it's incredibly time-consuming</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">Finding creators, verifying followers, negotiating fees, reviewing content, tracking results. A single campaign with 15 creators can eat up 100+ hours.</p>
         </div>
       </div>
     </Container>
@@ -69,28 +107,32 @@ import Button from '../../components/ui/Button.astro';
     <Container>
       <SectionBar />
       <SectionHeading overline="What we do">KOL and KOC identification</SectionHeading>
-      <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[48px] max-[640px]:gap-[32px] items-start">
-        <div class="flex flex-col gap-[24px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)] max-w-[680px]">
-          <p>
-            We maintain a database of creators across Douyin, RedNote, WeChat, Weibo, Bilibili, and Kuaishou. Every creator on our list has been checked for engagement authenticity, audience quality, content style, and brand fit.
-          </p>
-          <p>
-            We use platform tools like Xingtu (Douyin) and Pugongying (RedNote) plus our own checks. We've come across accounts with 500,000 followers and a 0.1% engagement rate. That's an immediate no.
-          </p>
+
+      <div class="rounded-[12px] overflow-hidden mt-[24px]">
+        <img src="/images/what-we-do/influencer-marketing.png" alt="TheRedScroll team reviewing KOL profiles and campaign briefs" class="w-full aspect-[5/2] max-[640px]:aspect-[16/10] object-cover" loading="lazy" decoding="async" />
+      </div>
+
+      <div class="grid grid-cols-3 max-[768px]:grid-cols-1 gap-[24px] -mt-[72px] max-[768px]:-mt-[32px] px-[32px] max-[768px]:px-[0px] relative z-[1]">
+        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[24px] border border-[rgba(0,0,0,0.08)]">
+          <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
+            <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Creator identification</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Database of creators across Douyin, RedNote, WeChat, Weibo, Bilibili, and Kuaishou. Every creator checked for engagement authenticity, audience quality, content style, and brand fit.</p>
         </div>
-        <div class="flex flex-col gap-[24px]">
-          <div>
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Campaign planning and briefing</h3>
-            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">
-              Every campaign gets a brief. Objectives, key messages, content format, posting schedule, platform rules, do's and don'ts. We coordinate KOL posting schedules with your brand content calendar and any paid media running at the same time.
-            </p>
+        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[24px] border border-[rgba(0,0,0,0.08)]">
+          <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
+            <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
           </div>
-          <div>
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Negotiation and contracting</h3>
-            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">
-              We negotiate rates, usage rights, exclusivity terms, and deliverables. Listed rates and what brands actually pay can differ by 15% or more. We know what things should cost and we negotiate accordingly.
-            </p>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Campaign planning and briefing</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Every campaign gets a brief. Objectives, key messages, content format, posting schedule, platform rules. KOL schedules coordinated with your content calendar and paid media.</p>
+        </div>
+        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[24px] border border-[rgba(0,0,0,0.08)]">
+          <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
+            <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
           </div>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Negotiation and contracting</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">We negotiate rates, usage rights, exclusivity terms, and deliverables. Listed rates and what brands actually pay can differ by 15% or more. We know what things should cost.</p>
         </div>
       </div>
     </Container>
@@ -248,133 +290,38 @@ import Button from '../../components/ui/Button.astro';
   <!-- Case study -->
   <section class="mt-[96px] max-[640px]:mt-[64px]">
     <Container>
-      <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[48px] max-[640px]:p-[32px_20px]">
-        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">Case study</p>
-        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[24px]">RedNote KOC seeding for an Australian supplements brand</h2>
-
-        <div class="max-w-[680px] flex flex-col gap-[24px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
-          <p>
-            An Australian supplements brand was entering the market with a hero product (collagen powder) but zero recognition. No social accounts, no search presence, no reviews. On RedNote, if your product doesn't show up when someone searches the category, it doesn't really exist.
-          </p>
-          <p class="text-[var(--color-stone)]">
-            The brand had budget for a KOL campaign but needed search presence first. Without organic reviews already on the platform, even a great KOL post would feel like it came out of nowhere. Consumers would search the brand name, find nothing, and lose interest.
-          </p>
-          <p>
-            Phase one (weeks 1 to 4): KOC (Key Opinion Consumer) seeding. We recruited 40 micro-KOCs in the beauty and wellness space. Each got a free product plus ¥300 to ¥800 per post. The brief was simple: share an honest review, properly disclosed as gifted.
-          </p>
-          <p>
-            Phase two (weeks 5 to 8): KOL amplification. With 40+ genuine reviews now live and searchable, we brought in three mid-tier KOLs (50K to 120K followers) for sponsored video notes. We boosted the top-performing notes with Juguang ads to push reach beyond their organic audience.
-          </p>
+      <a href="/work/jaguar-land-rover" class="block bg-[var(--color-rice-paper)] rounded-[10px] p-[48px] max-[640px]:p-[32px_20px] group">
+        <div class="flex gap-[48px] max-[768px]:flex-col items-center">
+          <div class="flex-1 min-w-0">
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[12px]">Case study</p>
+            <h3 class="text-[24px] max-[640px]:text-[20px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[12px]">Jaguar Land Rover: reaching younger consumers through social</h3>
+            <p class="text-[15px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[20px]">UGC campaigns brought younger Chinese consumers into the conversation. Organic content from real users shifted brand relevance to a new generation.</p>
+            <span class="text-[14px] font-medium text-[var(--color-vermillion)] group-hover:underline">View case study →</span>
+          </div>
+          <img
+            src="/images/clients/Jaguar/Jaguar-Land-Rover.avif"
+            alt="Jaguar Land Rover social campaign in China"
+            class="w-[45%] max-[768px]:w-full aspect-[16/10] object-cover rounded-[10px]"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
-
-        <!-- Results grid -->
-        <div class="grid grid-cols-4 max-[640px]:grid-cols-2 gap-[24px] mt-[32px] pt-[32px] border-t border-[rgba(0,0,0,0.08)]">
-          <div>
-            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[4px]">36</p>
-            <p class="text-[13px] font-normal text-[var(--color-stone)] leading-[1.4]">KOC reviews indexed in RedNote search for "collagen powder" and related terms.</p>
-          </div>
-          <div>
-            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">380K</p>
-            <p class="text-[13px] font-normal text-[var(--color-stone)] leading-[1.4]">Combined views across three KOL video notes.</p>
-          </div>
-          <div>
-            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[4px]">2,400</p>
-            <p class="text-[13px] font-normal text-[var(--color-stone)] leading-[1.4]">Monthly brand searches on RedNote, up from zero.</p>
-          </div>
-          <div>
-            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[4px]">890</p>
-            <p class="text-[13px] font-normal text-[var(--color-stone)] leading-[1.4]">Product inquiries through RedNote DMs. Brand moved to a monthly retainer.</p>
-          </div>
-        </div>
-      </div>
+      </a>
     </Container>
   </section>
 
-  <!-- How to get started -->
-  <section class="mt-[96px] max-[640px]:mt-[64px]">
-    <Container>
-      <SectionBar />
-      <SectionHeading overline="Get started">Ready to launch an influencer campaign?</SectionHeading>
+  <GettingStarted
+    heading="From brief to first influencer posts in two to four weeks."
+    steps={gettingStartedSteps}
+    backgroundImage="/images/getting-started/influencer-marketing.png"
+    crossLinks={[
+      { label: 'Content production', href: '/services/content-production' },
+      { label: 'Advertising', href: '/services/advertising' },
+      { label: 'Strategy and campaigns', href: '/services/strategy-campaigns' },
+    ]}
+  />
 
-      <div class="grid grid-cols-3 max-[640px]:grid-cols-1 gap-[16px] mt-[24px]">
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <p class="text-[12px] font-medium text-[var(--color-vermillion)] leading-none mb-[8px]">01</p>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Book a 30-minute discovery call</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Tell us about your brand, your goals, and what you've tried so far.</p>
-        </div>
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <p class="text-[12px] font-medium text-[var(--color-vermillion)] leading-none mb-[8px]">02</p>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Get a KOL/KOC recommendation</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Creator profiles, pricing, and campaign structure. Clear scope and fixed management fee.</p>
-        </div>
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <p class="text-[12px] font-medium text-[var(--color-vermillion)] leading-none mb-[8px]">03</p>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">First posts within three to four weeks</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Brief, creator onboarding, content production, review, and publication.</p>
-        </div>
-      </div>
-    </Container>
-  </section>
+  <FaqAccordion faqs={faqs} subtitle="Everything you need to know about influencer marketing in China with TheRedScroll." />
 
-  <!-- FAQ -->
-  <section class="mt-[96px] max-[640px]:mt-[64px]">
-    <Container>
-      <SectionBar />
-      <SectionHeading overline="FAQ">Frequently asked questions</SectionHeading>
-
-      <div class="max-w-[680px] flex flex-col gap-[32px] mt-[24px]">
-        <div>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">How do you detect fake followers?</h3>
-          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">We cross-reference follower counts against engagement metrics, comment quality, and audience demographics. A creator with 200,000 followers and 50 comments per post, mostly generic emoji, that's a red flag. Platform tools like Xingtu and Pugongying also provide authenticated data. After a few hundred campaigns you recognize the patterns quickly.</p>
-        </div>
-        <div>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">How many KOLs do we need?</h3>
-          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">Depends on what you're trying to do. Seeding campaign: 20 to 50 KOCs. Brand awareness push: 3 to 5 mid-tier KOLs. Hero product launch: one top-tier creator supported by 10 to 15 KOCs. We build the mix around your budget and goals.</p>
-        </div>
-        <div>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Can we approve content before it goes live?</h3>
-          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">Generally yes. We share drafts or preview content before publication. Some creators resist heavy editing because it kills authenticity, and they're usually right. But key messages, compliance labels, and brand guidelines always get checked.</p>
-        </div>
-        <div>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">What's the difference between KOL and KOC?</h3>
-          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">KOLs are professional creators with large followings and polished content. KOCs (Key Opinion Consumers) are everyday users with smaller audiences who share genuine product experiences. KOLs drive awareness. KOCs build trust and search presence. Most campaigns need both.</p>
-        </div>
-        <div>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">How long to launch a campaign?</h3>
-          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">Two to four weeks from brief to first post. That covers creator identification, outreach, negotiation, briefing, content production, and review. Seeding campaigns with KOCs move faster, sometimes one to two weeks.</p>
-        </div>
-        <div>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Can influencer content be reused as ad creative?</h3>
-          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">Sometimes. Usage rights have to be negotiated upfront. Some creators include ad usage in their fee. Others want a separate licensing payment, which can add 30 to 50% on top. We sort this out during contracting so nobody gets surprised later.</p>
-        </div>
-        <div>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">What industries work best?</h3>
-          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">Beauty, skincare, and fashion see the strongest results because the creator ecosystem is the most developed. F&B, health and wellness, hospitality, and consumer electronics are close behind. B2B brands can also make it work, especially on WeChat and Zhihu, but the pool of relevant creators is smaller.</p>
-        </div>
-        <div>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Do you handle payments to creators?</h3>
-          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">The whole flow. Negotiation, contracting, payment, tax documentation. You pay us. We sort out the rest with the creators and their MCNs.</p>
-        </div>
-      </div>
-    </Container>
-  </section>
-
-  <!-- CTA -->
-  <section class="mt-[96px] max-[640px]:mt-[64px] mb-[0px]">
-    <div class="w-full bg-[var(--color-rice-paper)] py-[64px] max-[640px]:py-[48px] px-[48px] max-[640px]:px-[20px]">
-      <div class="max-w-[600px] mx-auto text-center">
-        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[8px]">
-          Want to talk about your influencer strategy?
-        </h2>
-        <p class="text-[14px] text-[var(--color-stone)] font-normal leading-[1.6] mb-[24px]">
-          30-minute discovery call. KOL/KOC recommendation with creator profiles and pricing. First posts within three to four weeks.
-        </p>
-        <div class="flex items-center justify-center gap-[12px] flex-wrap">
-          <Button variant="primary" href="/contact">Book a call</Button>
-          <Button variant="secondary" href="/pricing">See pricing</Button>
-        </div>
-      </div>
-    </div>
-  </section>
 
 </PageLayout>

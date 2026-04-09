@@ -1,0 +1,99 @@
+---
+import Container from '../ui/Container.astro';
+import SectionBar from '../ui/SectionBar.astro';
+
+interface FaqItem {
+  q: string;
+  a: string;
+}
+
+interface Props {
+  faqs: FaqItem[];
+  subtitle?: string;
+}
+
+const { faqs, subtitle = 'Everything you need to know about working with TheRedScroll.' } = Astro.props;
+---
+
+<section class="mt-[96px] max-[640px]:mt-[64px] mb-[96px] max-[640px]:mb-[64px]">
+  <Container>
+    <div class="grid grid-cols-[340px_1fr] max-[1024px]:grid-cols-[280px_1fr] max-[768px]:grid-cols-1 gap-[48px] max-[768px]:gap-[32px]">
+      <!-- Left: heading -->
+      <div>
+        <div class="sticky top-[84px] max-[640px]:static">
+          <SectionBar />
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">FAQ</p>
+          <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">
+            Frequently asked questions
+          </h2>
+          <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
+            {subtitle}
+          </p>
+        </div>
+      </div>
+
+      <!-- Right: FAQ items -->
+      <div>
+        {faqs.map((faq) => (
+          <div class="border-b border-[rgba(0,0,0,0.08)]" data-faq>
+            <button
+              class="w-full flex items-center justify-between py-[20px] text-left bg-transparent border-none cursor-pointer group"
+              data-faq-trigger
+              aria-expanded="false"
+            >
+              <h3 class="text-[16px] font-medium leading-[1.3] text-[#1A1A1A] group-hover:text-[#5C5C5C] transition-colors duration-150 pr-[16px]">{faq.q}</h3>
+              <svg class="w-[16px] h-[16px] shrink-0 text-[#5C5C5C] transition-transform duration-300 faq-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 6l4 4 4-4"/>
+              </svg>
+            </button>
+            <div class="faq-content overflow-hidden" style="height: 0; opacity: 0;">
+              <div class="pb-[20px]">
+                <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
+                  {faq.a}
+                </p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </Container>
+</section>
+
+<style>
+  .faq-content {
+    transition: height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+  }
+</style>
+
+<script>
+  document.querySelectorAll('[data-faq]').forEach((item) => {
+    const trigger = item.querySelector('[data-faq-trigger]') as HTMLButtonElement;
+    const content = item.querySelector('.faq-content') as HTMLElement;
+    if (!trigger || !content) return;
+
+    trigger.addEventListener('click', () => {
+      const isOpen = trigger.getAttribute('aria-expanded') === 'true';
+
+      if (isOpen) {
+        content.style.height = content.scrollHeight + 'px';
+        requestAnimationFrame(() => {
+          content.style.height = '0';
+          content.style.opacity = '0';
+        });
+        trigger.setAttribute('aria-expanded', 'false');
+        const ch = trigger.querySelector('.faq-chevron') as HTMLElement;
+        if (ch) ch.style.transform = 'rotate(0deg)';
+      } else {
+        content.style.height = '0';
+        requestAnimationFrame(() => {
+          content.style.height = content.scrollHeight + 'px';
+          content.style.opacity = '1';
+        });
+        trigger.setAttribute('aria-expanded', 'true');
+        const ch = trigger.querySelector('.faq-chevron') as HTMLElement;
+        if (ch) ch.style.transform = 'rotate(180deg)';
+      }
+    });
+  });
+</script>

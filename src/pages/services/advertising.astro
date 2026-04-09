@@ -4,6 +4,40 @@ import Container from '../../components/ui/Container.astro';
 import SectionBar from '../../components/ui/SectionBar.astro';
 import SectionHeading from '../../components/ui/SectionHeading.astro';
 import Button from '../../components/ui/Button.astro';
+import FaqAccordion from '../../components/sections/FaqAccordion.astro';
+import GettingStarted from '../../components/sections/GettingStarted.astro';
+
+
+const faqs = [
+  { q: 'How much budget do I need to start?', a: 'Depends on the platform. RedNote from ¥5,000. Douyin in-feed from ¥1,000/day. WeChat Moments ¥1,000/day minimum. We recommend ¥15,000 to ¥30,000/month to collect enough data for real optimization.' },
+  { q: 'Do you manage ad spend directly?', a: 'Yes. Spend goes to the platform. We don\'t mark it up. Our fee covers strategy, setup, creative, and reporting.' },
+  { q: 'How fast can we see results?', a: 'Traffic campaigns: first week. Conversions: two to three weeks of optimization. Brand awareness: 30 to 60 days.' },
+  { q: 'What if our current ads aren\'t performing?', a: 'We audit first. Campaigns, targeting, creatives, spend allocation. Then rebuild what\'s broken. Common issues: wrong format, stale creatives, targeting too broad, nobody optimizing day to day.' },
+  { q: 'Do you produce the creatives?', a: 'Yes. Video, image, copy for each platform. Creative direction is human-led. Production gets an AI boost through HubStudio.ai.' },
+  { q: 'Boosting a post vs. running a campaign?', a: 'Boosting is simple but limited. A campaign gives you precise targeting, creative testing, conversion goals, bid optimization, and ROAS tracking. The gap in results is usually significant.' },
+  { q: 'Is ROAS always the right metric?', a: 'For e-commerce and direct-response, pretty much always. For brand awareness, we switch to CPM and reach. The point is: we define what success looks like before launch, not after.' },
+  { q: 'Can we run ads on multiple platforms?', a: 'Yes, and in most cases you should. Douyin + RedNote covers awareness and discovery. WeChat retargets people who engaged elsewhere. We figure out the mix based on your goals and what you can spend.' },
+  { q: 'What about account verification?', a: 'Most platforms won\'t let you into the ad manager without it. We handle the process. Takes one to three weeks.' },
+  { q: 'How is your pricing structured?', a: 'Fixed fee for creative work. Ad spend is separate and goes straight to the platforms. No confusion there.' },
+];
+
+const gettingStartedSteps = [
+  {
+    title: 'Discovery call.',
+    description: 'Your brand, your goals, and what you\'re looking to spend. We\'ll figure out the right approach.',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
+  },
+  {
+    title: 'Media plan.',
+    description: 'Platform recommendations, budget allocation, and projected KPIs. Clear scope. Fixed management fee.',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>',
+  },
+  {
+    title: 'Ads live in 2 weeks.',
+    description: 'Account setup, creative production, and campaign launch. Daily optimization from day one.',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
+  },
+];
 ---
 
 <PageLayout
@@ -13,6 +47,7 @@ import Button from '../../components/ui/Button.astro';
 
   <!-- Hero — Dark hero banner -->
   <section class="relative w-full overflow-hidden bg-[var(--color-ink)]">
+    <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/advertising-hero.png')" aria-hidden="true"></div>
     <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
       <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
         Advertising planning and buying
@@ -33,35 +68,37 @@ import Button from '../../components/ui/Button.astro';
   <!-- Why advertising is (almost) mandatory -->
   <section class="mt-[96px] max-[640px]:mt-[64px]">
     <Container>
-      <div class="max-w-[680px]">
-        <SectionBar />
-        <SectionHeading overline="The case for paid">Why advertising is almost mandatory</SectionHeading>
-        <div class="flex flex-col gap-[24px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
-          <p>
-            Organic reach is great for building a following over time. But you can't control who sees it.
-          </p>
-          <p>
-            Your best RedNote post might get picked up by the algorithm. But it won't let you target women aged 25 to 34 in Shanghai who searched for "natural skincare" last week. Advertising does.
-          </p>
+      <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        <div class="relative col-span-2 row-span-2 max-[640px]:col-span-1 max-[640px]:row-span-1 bg-[#1A1A1A] rounded-[12px] p-[32px] max-[640px]:p-[24px] flex flex-col justify-between min-h-[320px] max-[640px]:min-h-0 overflow-hidden">
+          <svg class="absolute bottom-[-20px] right-[-20px] w-[260px] h-[260px] opacity-[0.06]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/></svg>
+          <div class="relative z-[1]">
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">The case for paid</p>
+            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[16px]">Why advertising is almost mandatory</h2>
+            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[400px]">Organic reach builds a following over time. But it can't target women aged 25 to 34 in Shanghai who searched for "natural skincare" last week. Advertising can.</p>
+          </div>
+          <div class="relative z-[1] mt-[24px]">
+            <Button variant="secondary-dark" href="#what-we-do">See what we do</Button>
+          </div>
         </div>
-      </div>
-
-      <div class="grid grid-cols-2 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px] mt-[32px]">
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">It's faster</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Organic takes months. A well-targeted campaign can drive conversions within days.</p>
+        <div class="relative overflow-hidden bg-[#F0F1F4] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">It's faster</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">Organic takes months. A well-targeted campaign can drive conversions within days.</p>
         </div>
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">It's precise</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Target by age, gender, city tier, interests, device, purchase behavior, and content interaction history. Ads go where you point them.</p>
+        <div class="relative overflow-hidden bg-[#1A1A1A] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">It's precise</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.6)]">Target by age, gender, city tier, interests, device, purchase behavior, and content interaction history. Ads go where you point them.</p>
         </div>
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">It scales</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Test with ¥5,000 on Monday and scale to ¥50,000 by Friday if the numbers work. Try doing that with organic content.</p>
+        <div class="relative overflow-hidden bg-[#CC3333] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">It scales</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.8)]">Test with ¥5,000 on Monday and scale to ¥50,000 by Friday if the numbers work. Try doing that with organic content.</p>
         </div>
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">But it's not free</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">A poorly planned campaign burns budget faster than no campaign at all. Media planning, daily optimization, and clear KPIs matter just as much as the ads themselves.</p>
+        <div class="relative overflow-hidden bg-[#E8E0D8] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">But it's not free</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">A poorly planned campaign burns budget faster than no campaign at all. Media planning, daily optimization, and clear KPIs matter just as much as the ads themselves.</p>
         </div>
       </div>
     </Container>
@@ -72,28 +109,40 @@ import Button from '../../components/ui/Button.astro';
     <Container>
       <SectionBar />
       <SectionHeading overline="What we do">Media planning</SectionHeading>
-      <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[48px] max-[640px]:gap-[32px] items-start">
-        <div class="flex flex-col gap-[24px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)] max-w-[680px]">
-          <p>
-            Before we spend a single yuan, we build the plan. Which platforms. Which formats. Which audience segments. How much per channel. What the expected cost per result looks like.
-          </p>
-          <p>
-            Half the job is knowing what not to do. Douyin TopView ads are great for mass awareness but wrong for a niche B2B audience. RedNote search ads work for product discovery but won't help if nobody's searching for your category yet.
-          </p>
+
+      <!-- Hero image -->
+      <div class="rounded-[12px] overflow-hidden mt-[24px]">
+        <img
+          src="/images/what-we-do/advertising.png"
+          alt="TheRedScroll team analyzing ad campaign performance"
+          class="w-full aspect-[5/2] max-[640px]:aspect-[16/10] object-cover"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+
+      <!-- Overlapping cards -->
+      <div class="grid grid-cols-3 max-[768px]:grid-cols-1 gap-[24px] -mt-[72px] max-[768px]:-mt-[32px] px-[32px] max-[768px]:px-[0px] relative z-[1]">
+        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[24px] border border-[rgba(0,0,0,0.08)]">
+          <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
+            <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </div>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Media planning</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Before we spend a single yuan, we build the plan. Which platforms, which formats, which audience segments, how much per channel, and what the expected cost per result looks like.</p>
         </div>
-        <div class="flex flex-col gap-[24px]">
-          <div>
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Campaign setup and daily optimization</h3>
-            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">
-              Full cycle. Account setup, creative upload, audience targeting, bid strategy, A/B testing. Daily is the key word. A creative that performed on Monday can fatigue by Thursday. A bidding strategy that worked in March might cost 40% more during 618 season.
-            </p>
+        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[24px] border border-[rgba(0,0,0,0.08)]">
+          <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
+            <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
           </div>
-          <div>
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Platform coverage</h3>
-            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">
-              We run campaigns on Ocean Engine (Douyin), Tencent Ads (WeChat), Juguang (RedNote), and Weibo Fan Tong. We've spent enough time in all of them to know where the settings that actually matter are buried.
-            </p>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Campaign setup and optimization</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Full cycle. Account setup, creative upload, audience targeting, bid strategy, A/B testing. Optimized daily. A creative that worked Monday can fatigue by Thursday.</p>
+        </div>
+        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[24px] border border-[rgba(0,0,0,0.08)]">
+          <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
+            <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
           </div>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Platform coverage</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">We run campaigns on Ocean Engine (Douyin), Tencent Ads (WeChat), Juguang (RedNote), and Weibo Fan Tong. We know where the settings that matter are buried.</p>
         </div>
       </div>
     </Container>
@@ -150,21 +199,33 @@ import Button from '../../components/ui/Button.astro';
       </p>
 
       <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Moments ads</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Native ads in users' social feed. Carousel (up to six cards), autoplay video (6-15 sec), or canvas (full-screen on tap). 122 interest sub-categories. Auction from ¥1,000/day. CPM ¥50 to ¥180 by city tier.</p>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
+          <img src="/images/ad-formats/wechat-moments-ad.svg" alt="WeChat Moments ad example" class="w-full aspect-[16/10] object-cover" loading="lazy" decoding="async" />
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Moments ads</h3>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Native ads in users' social feed. Carousel (up to six cards), autoplay video (6-15 sec), or canvas (full-screen on tap). 122 interest sub-categories. Auction from ¥1,000/day. CPM ¥50 to ¥180 by city tier.</p>
+          </div>
         </div>
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Banner ads</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Bottom or middle of Official Account articles. CPC from ¥0.5. CPM ¥15 to ¥25. Cost per new follower: ¥8 to ¥20. Most affordable format.</p>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
+          <img src="/images/ad-formats/wechat-banner-ad.svg" alt="WeChat banner ad in Official Account article" class="w-full aspect-[16/10] object-cover" loading="lazy" decoding="async" />
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Banner ads</h3>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Bottom or middle of Official Account articles. CPC from ¥0.5. CPM ¥15 to ¥25. Cost per new follower: ¥8 to ¥20. Most affordable format.</p>
+          </div>
         </div>
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Channels ads</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Video ads in WeChat's short-video feed. CPM ¥2 to ¥13. Less saturated than Moments.</p>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
+          <img src="/images/ad-formats/wechat-channels-ad.svg" alt="WeChat Channels video ad" class="w-full aspect-[16/10] object-cover" loading="lazy" decoding="async" />
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Channels ads</h3>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Video ads in WeChat's short-video feed. CPM ¥2 to ¥13. Less saturated than Moments.</p>
+          </div>
         </div>
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Search ads (搜一搜)</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Keyword-based in WeChat search results. CPC model. Growing format, still underused.</p>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
+          <img src="/images/ad-formats/wechat-search-ad.svg" alt="WeChat Search ad in search results" class="w-full aspect-[16/10] object-cover" loading="lazy" decoding="async" />
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Search ads (搜一搜)</h3>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Keyword-based in WeChat search results. CPC model. Growing format, still underused.</p>
+          </div>
         </div>
       </div>
     </Container>
@@ -177,29 +238,47 @@ import Button from '../../components/ui/Button.astro';
       <SectionHeading overline="Ad formats and pricing">Douyin (via Ocean Engine)</SectionHeading>
 
       <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">In-feed ads</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Up to 60-second video in the "For You" scroll. CPC from ¥0.2. CPM ¥10 to ¥50. Supports e-commerce links, lead forms, Douyin Shop. The main performance format.</p>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
+          <img src="/images/ad-formats/douyin-in-feed.svg" alt="Douyin in-feed ad in For You scroll" class="w-full aspect-[16/10] object-cover" loading="lazy" decoding="async" />
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">In-feed ads</h3>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Up to 60-second video in the "For You" scroll. CPC from ¥0.2. CPM ¥10 to ¥50. Supports e-commerce links, lead forms, Douyin Shop. The main performance format.</p>
+          </div>
         </div>
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">TopView</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Full-screen video at app open. 3-60 seconds, autoplay with sound. Tier 1 cities: ¥1M+/day. Minimum ¥200,000+.</p>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
+          <img src="/images/ad-formats/douyin-topview.svg" alt="Douyin TopView full-screen ad at app open" class="w-full aspect-[16/10] object-cover" loading="lazy" decoding="async" />
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">TopView</h3>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Full-screen video at app open. 3-60 seconds, autoplay with sound. Tier 1 cities: ¥1M+/day. Minimum ¥200,000+.</p>
+          </div>
         </div>
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Search ads</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Keyword-based, CPC. Captures high-intent users. Works well paired with in-feed.</p>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
+          <img src="/images/ad-formats/douyin-search-ad.svg" alt="Douyin search ad in keyword results" class="w-full aspect-[16/10] object-cover" loading="lazy" decoding="async" />
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Search ads</h3>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Keyword-based, CPC. Captures high-intent users. Works well paired with in-feed.</p>
+          </div>
         </div>
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Hashtag challenges</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">¥200,000 to ¥500,000. When they work, organic amplification dwarfs the spend. We only recommend when the concept is strong and the brand has enough audience to seed participation.</p>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
+          <img src="/images/ad-formats/douyin-hashtag-challenge.svg" alt="Douyin hashtag challenge page" class="w-full aspect-[16/10] object-cover" loading="lazy" decoding="async" />
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Hashtag challenges</h3>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">¥200,000 to ¥500,000. When they work, organic amplification dwarfs the spend. We only recommend when the concept is strong and the brand has enough audience to seed participation.</p>
+          </div>
         </div>
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Shop cards</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Direct-response units on videos linking to Douyin Shop. Conversion rates 20-30% higher than standard link ads.</p>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
+          <img src="/images/ad-formats/douyin-shop-card.svg" alt="Douyin Shop card on video" class="w-full aspect-[16/10] object-cover" loading="lazy" decoding="async" />
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Shop cards</h3>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Direct-response units on videos linking to Douyin Shop. Conversion rates 20-30% higher than standard link ads.</p>
+          </div>
         </div>
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Brand takeover</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Static image or GIF, 3-5 seconds at app open. One brand per day. High impact, high cost.</p>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
+          <img src="/images/ad-formats/douyin-brand-takeover.svg" alt="Douyin brand takeover at app open" class="w-full aspect-[16/10] object-cover" loading="lazy" decoding="async" />
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Brand takeover</h3>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Static image or GIF, 3-5 seconds at app open. One brand per day. High impact, high cost.</p>
+          </div>
         </div>
       </div>
     </Container>
@@ -212,21 +291,33 @@ import Button from '../../components/ui/Button.astro';
       <SectionHeading overline="Ad formats and pricing">RedNote / Xiaohongshu (via Juguang)</SectionHeading>
 
       <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">In-feed ads</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Sponsored notes in the discovery feed. CPM ¥10 to ¥30, roughly 10-20% of Douyin rates. CPC from ¥0.3. Min budget ¥5,000. Most cost-effective platform for product discovery as of early 2026.</p>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
+          <img src="/images/ad-formats/rednote-in-feed.svg" alt="RedNote sponsored note in discovery feed" class="w-full aspect-[16/10] object-cover" loading="lazy" decoding="async" />
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">In-feed ads</h3>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Sponsored notes in the discovery feed. CPM ¥10 to ¥30, roughly 10-20% of Douyin rates. CPC from ¥0.3. Min budget ¥5,000. Most cost-effective platform for product discovery as of early 2026.</p>
+          </div>
         </div>
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Search ads</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Boost note rankings for keywords. CPC. Over 70% of active users search daily, a stat that surprises most people.</p>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
+          <img src="/images/ad-formats/rednote-search-ad.svg" alt="RedNote search ad boosting note rankings" class="w-full aspect-[16/10] object-cover" loading="lazy" decoding="async" />
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Search ads</h3>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Boost note rankings for keywords. CPC. Over 70% of active users search daily, a stat that surprises most people.</p>
+          </div>
         </div>
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">KOL seeding (Pugongying)</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Brands pay creators for organic-looking content. Micro-KOC (Key Opinion Consumer) from ¥500/post. Mid-tier ¥5,000 to ¥30,000. Top-tier ¥50,000+.</p>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
+          <img src="/images/ad-formats/rednote-kol-seeding.svg" alt="RedNote KOL seeding via Pugongying platform" class="w-full aspect-[16/10] object-cover" loading="lazy" decoding="async" />
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">KOL seeding (Pugongying)</h3>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Brands pay creators for organic-looking content. Micro-KOC (Key Opinion Consumer) from ¥500/post. Mid-tier ¥5,000 to ¥30,000. Top-tier ¥50,000+.</p>
+          </div>
         </div>
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Brand zone and splash ads</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Brand zone: dedicated landing page in RedNote search, ¥50,000+. Splash ads: full-screen at app open, ¥50,000+. Best for major launches.</p>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
+          <img src="/images/ad-formats/rednote-brand-zone.svg" alt="RedNote brand zone landing page in search" class="w-full aspect-[16/10] object-cover" loading="lazy" decoding="async" />
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Brand zone and splash ads</h3>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Brand zone: dedicated landing page in RedNote search, ¥50,000+. Splash ads: full-screen at app open, ¥50,000+. Best for major launches.</p>
+          </div>
         </div>
       </div>
     </Container>
@@ -235,138 +326,38 @@ import Button from '../../components/ui/Button.astro';
   <!-- Case study -->
   <section class="mt-[96px] max-[640px]:mt-[64px]">
     <Container>
-      <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[48px] max-[640px]:p-[32px_20px]">
-        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">Case study</p>
-        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[24px]">Douyin ads for a French premium spirits brand</h2>
-
-        <div class="max-w-[680px] flex flex-col gap-[24px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
-          <p>
-            A French spirits brand had posted organic content on Douyin for four months. Good content, decent engagement, but no measurable sales impact. They needed to reach urban consumers aged 25 to 40 in Tier 1 and 2 cities interested in food, cocktails, and lifestyle.
-          </p>
-          <p class="text-[var(--color-stone)]">
-            The previous agency was boosting posts with small budgets and no targeting. Nobody was tracking ROAS. Nobody was optimizing daily. The money was going out, but nobody could say what it was doing.
-          </p>
-          <p>
-            We rebuilt from scratch. Three ad creatives: product lifestyle video, bartender recipe short, user testimonial. A/B tested as in-feed ads on Ocean Engine. ¥10,000/week starting budget. Optimized daily. By week three, the bartender recipe emerged as the clear winner with 2.4x higher CTR. We moved 70% of budget to that creative and its variations.
-          </p>
+      <a href="/work/age20s" class="block bg-[var(--color-rice-paper)] rounded-[10px] p-[48px] max-[640px]:p-[32px_20px] group">
+        <div class="flex gap-[48px] max-[768px]:flex-col items-center">
+          <div class="flex-1 min-w-0">
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[12px]">Case study</p>
+            <h3 class="text-[24px] max-[640px]:text-[20px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[12px]">AGE 20's: the Little Milk Brick campaign in China</h3>
+            <p class="text-[15px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[20px]">A Korean beauty brand's Douyin campaign hit 3.87 million impressions, four times over target. The product nickname went organic without paid promotion.</p>
+            <span class="text-[14px] font-medium text-[var(--color-vermillion)] group-hover:underline">View case study →</span>
+          </div>
+          <img
+            src="/images/clients/Age20/Age20-Picture1-scaled.jpg"
+            alt="AGE 20's Little Milk Brick campaign"
+            class="w-[45%] max-[768px]:w-full aspect-[16/10] object-cover rounded-[10px]"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
-
-        <!-- Results grid -->
-        <div class="grid grid-cols-4 max-[640px]:grid-cols-2 gap-[24px] mt-[32px] pt-[32px] border-t border-[rgba(0,0,0,0.08)]">
-          <div>
-            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">4.2x</p>
-            <p class="text-[13px] font-normal text-[var(--color-stone)] leading-[1.4]">ROAS over 60 days</p>
-          </div>
-          <div>
-            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[4px]">¥1.8</p>
-            <p class="text-[13px] font-normal text-[var(--color-stone)] leading-[1.4]">Average CPC, down from ¥4.5 under the previous agency</p>
-          </div>
-          <div>
-            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[4px]">340K</p>
-            <p class="text-[13px] font-normal text-[var(--color-stone)] leading-[1.4]">Views with a 3.1% CTR</p>
-          </div>
-          <div>
-            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[4px]">1,200+</p>
-            <p class="text-[13px] font-normal text-[var(--color-stone)] leading-[1.4]">Purchases through Douyin Shop. Brand tripled their ad budget after month one.</p>
-          </div>
-        </div>
-      </div>
+      </a>
     </Container>
   </section>
 
-  <!-- How to get started -->
-  <section class="mt-[96px] max-[640px]:mt-[64px]">
-    <Container>
-      <SectionBar />
-      <SectionHeading overline="Get started">Ready to start advertising?</SectionHeading>
+  <GettingStarted
+    heading="From discovery call to first ads live in two weeks."
+    steps={gettingStartedSteps}
+    backgroundImage="/images/getting-started/advertising.png"
+    crossLinks={[
+      { label: 'Strategy and campaigns', href: '/services/strategy-campaigns' },
+      { label: 'Content production', href: '/services/content-production' },
+      { label: 'Market entry', href: '/services/market-entry' },
+    ]}
+  />
 
-      <div class="grid grid-cols-3 max-[640px]:grid-cols-1 gap-[16px] mt-[24px]">
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <p class="text-[12px] font-medium text-[var(--color-vermillion)] leading-none mb-[8px]">01</p>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Book a 30-minute discovery call</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Tell us about your brand, your goals, and what you're looking to spend. We'll figure out the right approach.</p>
-        </div>
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <p class="text-[12px] font-medium text-[var(--color-vermillion)] leading-none mb-[8px]">02</p>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Get a media plan</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Platform recommendations, budget allocation, and projected KPIs. Clear scope. Fixed management fee.</p>
-        </div>
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <p class="text-[12px] font-medium text-[var(--color-vermillion)] leading-none mb-[8px]">03</p>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">First ads live within two weeks</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Account setup, creative production, and campaign launch. Daily optimization from day one.</p>
-        </div>
-      </div>
-    </Container>
-  </section>
+  <FaqAccordion faqs={faqs} subtitle="Everything you need to know about advertising in China with TheRedScroll." />
 
-  <!-- FAQ -->
-  <section class="mt-[96px] max-[640px]:mt-[64px]">
-    <Container>
-      <SectionBar />
-      <SectionHeading overline="FAQ">Frequently asked questions</SectionHeading>
-
-      <div class="max-w-[680px] flex flex-col gap-[32px] mt-[24px]">
-        <div>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">How much budget do I need to start?</h3>
-          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">Depends on the platform. RedNote from ¥5,000. Douyin in-feed from ¥1,000/day. WeChat Moments ¥1,000/day minimum. We recommend ¥15,000 to ¥30,000/month to collect enough data for real optimization.</p>
-        </div>
-        <div>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Do you manage ad spend directly?</h3>
-          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">Yes. Spend goes to the platform. We don't mark it up. Our fee covers strategy, setup, creative, and reporting.</p>
-        </div>
-        <div>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">How fast can we see results?</h3>
-          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">Traffic campaigns: first week. Conversions: two to three weeks of optimization. Brand awareness: 30 to 60 days.</p>
-        </div>
-        <div>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">What if our current ads aren't performing?</h3>
-          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">We audit first. Campaigns, targeting, creatives, spend allocation. Then rebuild what's broken. Common issues: wrong format, stale creatives, targeting too broad, nobody optimizing day to day.</p>
-        </div>
-        <div>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Do you produce the creatives?</h3>
-          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">Yes. Video, image, copy for each platform. Creative direction is human-led. Production gets an AI boost through HubStudio.ai.</p>
-        </div>
-        <div>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Boosting a post vs. running a campaign?</h3>
-          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">Boosting is simple but limited. A campaign gives you precise targeting, creative testing, conversion goals, bid optimization, and ROAS tracking. The gap in results is usually significant.</p>
-        </div>
-        <div>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Is ROAS always the right metric?</h3>
-          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">For e-commerce and direct-response, pretty much always. For brand awareness, we switch to CPM and reach. The point is: we define what success looks like before launch, not after.</p>
-        </div>
-        <div>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Can we run ads on multiple platforms?</h3>
-          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">Yes, and in most cases you should. Douyin + RedNote covers awareness and discovery. WeChat retargets people who engaged elsewhere. We figure out the mix based on your goals and what you can spend.</p>
-        </div>
-        <div>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">What about account verification?</h3>
-          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">Most platforms won't let you into the ad manager without it. We handle the process. Takes one to three weeks.</p>
-        </div>
-        <div>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">How is your pricing structured?</h3>
-          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">Fixed fee for creative work. Ad spend is separate and goes straight to the platforms. No confusion there.</p>
-        </div>
-      </div>
-    </Container>
-  </section>
-
-  <!-- CTA -->
-  <section class="mt-[96px] max-[640px]:mt-[64px] mb-[0px]">
-    <div class="w-full bg-[var(--color-rice-paper)] py-[64px] max-[640px]:py-[48px] px-[48px] max-[640px]:px-[20px]">
-      <div class="max-w-[600px] mx-auto text-center">
-        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[8px]">
-          Want to talk about your ad budget?
-        </h2>
-        <p class="text-[14px] text-[var(--color-stone)] font-normal leading-[1.6] mb-[24px]">
-          30-minute discovery call. Media plan with platform recommendations and projected KPIs. First ads live within two weeks.
-        </p>
-        <div class="flex items-center justify-center gap-[12px] flex-wrap">
-          <Button variant="primary" href="/contact">Book a call</Button>
-          <Button variant="secondary" href="/pricing">See pricing</Button>
-        </div>
-      </div>
-    </div>
-  </section>
 
 </PageLayout>

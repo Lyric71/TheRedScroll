@@ -1,0 +1,164 @@
+---
+import Container from '../ui/Container.astro';
+import SectionBar from '../ui/SectionBar.astro';
+
+interface WhyItem {
+  title: string;
+  description: string;
+}
+
+interface Props {
+  overline: string;
+  heading: string;
+  subtitle?: string;
+  backgroundImage: string;
+  items: WhyItem[];
+}
+
+const { overline, heading, subtitle, backgroundImage, items } = Astro.props;
+
+// Alternating bg colors from homepage palette
+const bgColors = ['#F0F1F4', '#E8E0D8', '#F0F1F4', '#E8E0D8'];
+---
+
+<section class="mt-[96px] max-[640px]:mt-[64px]">
+  <Container>
+    <!-- Hero card -->
+    <div class="relative bg-[#1A1A1A] rounded-[12px] p-[48px] max-[640px]:p-[32px_20px] min-h-[280px] max-[640px]:min-h-0 flex flex-col justify-end overflow-hidden mb-[8px]">
+      <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style={`background-image: url('${backgroundImage}')`} aria-hidden="true"></div>
+      <div class="relative z-[1]">
+        <SectionBar />
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">{overline}</p>
+        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[12px] max-w-[600px]">
+          {heading}
+        </h2>
+        {subtitle && (
+          <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[520px]">
+            {subtitle}
+          </p>
+        )}
+      </div>
+    </div>
+
+    <!-- Accordion items -->
+    <div class="flex flex-col gap-[8px]" data-why-accordion>
+      {items.map((item, i) => (
+        <div
+          class="why-item rounded-[10px] overflow-hidden cursor-pointer"
+          data-why-item
+          data-index={i}
+          data-bg={bgColors[i % bgColors.length]}
+          style={`background: ${bgColors[i % bgColors.length]};`}
+        >
+          <div class="flex items-center justify-between p-[24px] max-[640px]:p-[20px]" data-why-trigger>
+            <div class="flex items-center gap-[16px]">
+              <span class="why-number text-[12px] font-medium leading-none text-[var(--color-stone)]">
+                {String(i + 1).padStart(2, '0')}
+              </span>
+              <h3 class="why-title text-[18px] max-[640px]:text-[16px] font-medium leading-[1.3] text-[var(--color-ink)]">
+                {item.title}
+              </h3>
+            </div>
+            <svg class="why-chevron w-[16px] h-[16px] shrink-0 text-[var(--color-stone)]" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 6l4 4 4-4"/>
+            </svg>
+          </div>
+          <div class="why-body overflow-hidden" style="height: 0; opacity: 0;">
+            <div class="px-[24px] max-[640px]:px-[20px] pb-[24px] max-[640px]:pb-[20px] pl-[56px] max-[640px]:pl-[52px]">
+              <p class="why-desc text-[14px] font-normal leading-[1.6] text-[var(--color-stone)] max-w-[640px]">
+                {item.description}
+              </p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </Container>
+</section>
+
+<style>
+  .why-item {
+    transition: background 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .why-body {
+    transition: height 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease;
+  }
+  .why-title, .why-number, .why-desc, .why-chevron {
+    transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1), transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+</style>
+
+<script>
+  document.querySelectorAll('[data-why-accordion]').forEach((accordion) => {
+    const items = accordion.querySelectorAll('[data-why-item]') as NodeListOf<HTMLElement>;
+
+    items.forEach((item) => {
+      const trigger = item.querySelector('[data-why-trigger]') as HTMLElement;
+      if (!trigger) return;
+
+      trigger.addEventListener('click', () => {
+        const isActive = item.dataset.active === 'true';
+
+        // If clicking an already open item, close it
+        if (isActive) {
+          closeItem(item);
+          return;
+        }
+
+        // Close all others
+        items.forEach((other) => {
+          if (other.dataset.active === 'true') closeItem(other);
+        });
+
+        // Open clicked
+        openItem(item);
+      });
+    });
+
+    function closeItem(item: HTMLElement) {
+      const body = item.querySelector('.why-body') as HTMLElement;
+      const chevron = item.querySelector('.why-chevron') as HTMLElement;
+      const title = item.querySelector('.why-title') as HTMLElement;
+      const number = item.querySelector('.why-number') as HTMLElement;
+      const desc = item.querySelector('.why-desc') as HTMLElement;
+
+      item.dataset.active = 'false';
+      item.style.background = item.dataset.bg || '#F0F1F4';
+
+      if (body) {
+        body.style.height = body.scrollHeight + 'px';
+        requestAnimationFrame(() => {
+          body.style.height = '0';
+          body.style.opacity = '0';
+        });
+      }
+      if (chevron) { chevron.style.transform = 'rotate(0deg)'; chevron.style.color = ''; }
+      if (title) title.style.color = '';
+      if (number) number.style.color = '';
+      if (desc) desc.style.color = '';
+    }
+
+    function openItem(item: HTMLElement) {
+      const body = item.querySelector('.why-body') as HTMLElement;
+      const chevron = item.querySelector('.why-chevron') as HTMLElement;
+      const title = item.querySelector('.why-title') as HTMLElement;
+      const number = item.querySelector('.why-number') as HTMLElement;
+      const desc = item.querySelector('.why-desc') as HTMLElement;
+
+      item.dataset.active = 'true';
+      item.style.background = '#1A1A1A';
+
+      if (body) {
+        body.style.height = '0';
+        requestAnimationFrame(() => {
+          body.style.height = body.scrollHeight + 'px';
+          body.style.opacity = '1';
+        });
+      }
+      if (chevron) { chevron.style.transform = 'rotate(180deg)'; chevron.style.color = 'rgba(255,255,255,0.5)'; }
+      if (title) title.style.color = '#FFFFFF';
+      if (number) number.style.color = '#CC3333';
+      if (desc) desc.style.color = 'rgba(255,255,255,0.6)';
+    }
+  });
+</script>

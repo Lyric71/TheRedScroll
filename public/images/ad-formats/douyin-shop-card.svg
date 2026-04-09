@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" rx="12" fill="#F5F5F0"/>
+  <rect x="290" y="20" width="220" height="460" rx="24" fill="#1A1A1A"/>
+  <rect x="298" y="44" width="204" height="420" rx="16" fill="#000000"/>
+  <!-- Video background -->
+  <rect x="298" y="44" width="204" height="420" rx="16" fill="#1C1C1C"/>
+  <!-- Right sidebar -->
+  <circle cx="488" cy="200" r="14" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <circle cx="488" cy="240" r="14" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <circle cx="488" cy="280" r="14" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <!-- Caption -->
+  <rect x="310" y="360" width="120" height="7" rx="2" fill="rgba(255,255,255,0.6)"/>
+  <rect x="310" y="374" width="90" height="6" rx="2" fill="rgba(255,255,255,0.3)"/>
+  <!-- Shop card overlay -->
+  <rect x="310" y="394" width="180" height="56" rx="8" fill="rgba(255,255,255,0.95)" stroke="#FF6B35" stroke-width="1.5"/>
+  <!-- Product image -->
+  <rect x="318" y="402" width="40" height="40" rx="6" fill="#E8E0D8"/>
+  <!-- Product info -->
+  <rect x="366" y="404" width="80" height="7" rx="2" fill="#1A1A1A" fill-opacity="0.7"/>
+  <text x="366" y="425" fill="#CC3333" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="500">¥299</text>
+  <!-- Buy button -->
+  <rect x="440" y="410" width="42" height="22" rx="11" fill="#FF6B35"/>
+  <text x="461" y="424" text-anchor="middle" fill="#FFFFFF" font-family="Inter,system-ui,sans-serif" font-size="8" font-weight="500">Buy</text>
+  <!-- Labels -->
+  <text x="108" y="420" text-anchor="middle" fill="#CC3333" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="500">Shop card overlay</text>
+  <text x="108" y="438" text-anchor="middle" fill="#999999" font-family="Inter,system-ui,sans-serif" font-size="10">Links to Douyin Shop</text>
+  <line x1="170" y1="418" x2="308" y2="422" stroke="#CC3333" stroke-width="1" stroke-dasharray="4 3" opacity="0.4"/>
+  <text x="650" y="140" text-anchor="middle" fill="#1A1A1A" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="500">Douyin Shop Card</text>
+  <text x="650" y="162" text-anchor="middle" fill="#999999" font-family="Inter,system-ui,sans-serif" font-size="11">Product overlay on video</text>
+  <text x="650" y="180" text-anchor="middle" fill="#999999" font-family="Inter,system-ui,sans-serif" font-size="11">Direct purchase link</text>
+  <text x="650" y="198" text-anchor="middle" fill="#999999" font-family="Inter,system-ui,sans-serif" font-size="11">20-30% higher conversion</text>
+</svg>

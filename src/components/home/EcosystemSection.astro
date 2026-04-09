@@ -61,11 +61,12 @@ const pillars = [
 
   <!-- Horizontal scroll strip -->
   <div class="relative">
-    <!-- Fade right edge -->
-    <div class="absolute right-0 top-0 bottom-0 w-[80px] bg-gradient-to-l from-[#FFFFFF] to-transparent z-[1] pointer-events-none" aria-hidden="true"></div>
+    <!-- Fade edges -->
+    <div class="absolute left-0 top-0 bottom-0 w-[80px] max-[640px]:w-[40px] bg-gradient-to-r from-[#FFFFFF] to-transparent z-[1] pointer-events-none" aria-hidden="true"></div>
+    <div class="absolute right-0 top-0 bottom-0 w-[80px] max-[640px]:w-[40px] bg-gradient-to-l from-[#FFFFFF] to-transparent z-[1] pointer-events-none" aria-hidden="true"></div>
 
     <div class="overflow-x-auto scrollbar-hide" id="ecosystem-scroll">
-      <div class="flex gap-[16px] px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pb-[8px]" style="min-width: min-content;">
+      <div class="flex gap-[16px] px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pb-[8px] mx-auto max-w-[1200px]" style="min-width: min-content;">
         {pillars.map((pillar, i) => (
           <div
             class="ecosystem-card relative shrink-0 w-[360px] max-[640px]:w-[300px] h-[420px] max-[640px]:h-[360px] rounded-[12px] overflow-hidden flex flex-col justify-end cursor-grab select-none"

@@ -87,6 +87,16 @@ const formattedDate = new Date(post.data.publishDate).toLocaleDateString('en-US'
   </section>
 </BlogLayout>
 
+<script>
+  // Wrap tables in a scrollable container for mobile
+  document.querySelectorAll('.prose-article table').forEach((table) => {
+    const wrapper = document.createElement('div');
+    wrapper.className = 'table-wrap';
+    table.parentNode?.insertBefore(wrapper, table);
+    wrapper.appendChild(table);
+  });
+</script>
+
 <style is:global>
   .prose-article h2 {
     font-size: 28px;
@@ -144,10 +154,15 @@ const formattedDate = new Date(post.data.publishDate).toLocaleDateString('en-US'
   .prose-article a:hover {
     text-decoration: underline;
   }
+  .prose-article .table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 32px 0;
+  }
   .prose-article table {
     width: 100%;
     border-collapse: collapse;
-    margin: 32px 0;
+    min-width: 480px;
   }
   .prose-article th {
     font-size: 14px;

@@ -221,25 +221,28 @@ const services = [
 </style>
 
 <script>
-  // Tilt on hover
-  document.querySelectorAll('[data-tilt]').forEach((card) => {
-    const el = card as HTMLElement;
+  // Tilt on hover (desktop only — disable on touch devices)
+  const isTouchDevice = window.matchMedia('(hover: none)').matches;
+  if (!isTouchDevice) {
+    document.querySelectorAll('[data-tilt]').forEach((card) => {
+      const el = card as HTMLElement;
 
-    el.addEventListener('mousemove', (e: MouseEvent) => {
-      const rect = el.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      const centerX = rect.width / 2;
-      const centerY = rect.height / 2;
-      const rotateX = ((y - centerY) / centerY) * -3;
-      const rotateY = ((x - centerX) / centerX) * 3;
-      el.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
-    });
+      el.addEventListener('mousemove', (e: MouseEvent) => {
+        const rect = el.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const rotateX = ((y - centerY) / centerY) * -3;
+        const rotateY = ((x - centerX) / centerX) * 3;
+        el.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+      });
 
-    el.addEventListener('mouseleave', () => {
-      el.style.transform = 'perspective(800px) rotateX(0deg) rotateY(0deg) scale(1)';
+      el.addEventListener('mouseleave', () => {
+        el.style.transform = 'perspective(800px) rotateX(0deg) rotateY(0deg) scale(1)';
+      });
     });
-  });
+  }
 
   // Scroll reveal with stagger
   const cards = document.querySelectorAll('.service-card');
