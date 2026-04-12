@@ -62,7 +62,7 @@ const footerLinks = {
 
       <!-- Services column -->
       <div>
-        <p class="text-[11px] font-medium tracking-[0.05em] uppercase text-[#CC3333] mb-[12px]">{t('footer.services', lang)}</p>
+        <a href={lp('/services')} class="block text-[11px] font-medium tracking-[0.05em] uppercase text-[#CC3333] mb-[12px] transition-colors duration-150 hover:text-[#B02D2D]">{t('footer.services', lang)}</a>
         {footerLinks.services.map((link) => (
           <a href={link.href} class="block text-[#FFFFFF] text-[14px] font-normal leading-[2] max-[640px]:py-[6px] transition-colors duration-150 hover:text-[rgba(255,255,255,0.6)]">
             {link.label}

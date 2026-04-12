@@ -1,0 +1,147 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import Container from '../../components/ui/Container.astro';
+import SectionBar from '../../components/ui/SectionBar.astro';
+import Button from '../../components/ui/Button.astro';
+import GettingStarted from '../../components/sections/GettingStarted.astro';
+
+const platforms = [
+  {
+    title: 'WeChat',
+    stat: '1.4B+ monthly users',
+    description: 'Official Accounts, Mini Programs, Channels, WeCom, and WeChat Pay. The operating system for daily life in China.',
+    href: '/platforms/wechat',
+    logo: '/images/platforms/wechat-logo.svg',
+  },
+  {
+    title: 'RedNote / Xiaohongshu',
+    stat: '300M+ monthly users',
+    description: 'Reviews, shoppable posts, and lifestyle content. Where Chinese consumers research before they buy.',
+    href: '/platforms/rednote',
+    logo: '/images/platforms/rednote-logo.svg',
+  },
+  {
+    title: 'Douyin',
+    stat: '800M+ daily users',
+    description: 'Short video, livestream commerce, and in-feed ads. The fastest path from discovery to purchase in China.',
+    href: '/platforms/douyin',
+    logo: '/images/platforms/douyin-logo.svg',
+  },
+  {
+    title: 'Weibo',
+    stat: '605M+ monthly users',
+    description: 'Mass reach, PR, trending topics, and influencer campaigns. China\'s public square for brand moments.',
+    href: '/platforms/weibo',
+    logo: '/images/platforms/weibo-logo.svg',
+  },
+  {
+    title: 'Additional platforms',
+    stat: '14+ more platforms',
+    description: 'Bilibili, Kuaishou, Zhihu, Toutiao, Meituan, Dianping, Pinduoduo, QQ, and more. We cover the full landscape.',
+    href: '/platforms/others',
+    icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>`,
+  },
+];
+
+const gettingStartedSteps = [
+  {
+    title: 'Discovery call.',
+    description: 'Your brand, your goals, your China readiness. No pitch deck. Just the right questions.',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
+  },
+  {
+    title: 'Proposal.',
+    description: 'Clear scope. Fixed price. Every deliverable listed out. You see what you are getting before you commit.',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>',
+  },
+  {
+    title: 'Live in 2 weeks.',
+    description: 'Strategy delivered, campaigns configured, first content published. Two weeks from signed contract.',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
+  },
+];
+---
+
+<PageLayout
+  title="China Social Media Platforms | TheRedScroll"
+  description="WeChat, RedNote, Douyin, Weibo, and 14 more Chinese platforms. Platform guides, audience data, and what works for international brands."
+>
+
+  <!-- Hero — Dark banner -->
+  <section class="relative w-full overflow-hidden bg-[var(--color-ink)]">
+    <div class="absolute inset-0 bg-cover bg-center opacity-[0.15]" style="background-image: url('/images/hero/platforms-hero.png')" aria-hidden="true"></div>
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+        Platforms
+      </p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        The platforms where your audience already is.
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        Four major platforms. Fourteen more as add-ons. Each one works differently, and we know the rules for all of them.
+      </p>
+      <div class="flex flex-wrap justify-center gap-[12px]">
+        <Button href="/pricing" variant="primary">See pricing</Button>
+        <Button href="#all-platforms" variant="secondary-dark">Browse platforms</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Platform cards grid -->
+  <section id="all-platforms" class="py-[96px] max-[640px]:py-[64px]">
+    <Container>
+      <div class="max-w-[680px] mb-[48px]">
+        <SectionBar />
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">
+          Where we operate
+        </p>
+        <h2 class="text-[32px] max-[640px]:text-[24px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[12px]">
+          Every platform your brand needs in China.
+        </h2>
+        <p class="text-[16px] font-normal leading-[1.5] text-[var(--color-stone)]">
+          Different audiences, different formats, different rules. We run campaigns on all of them.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 max-[768px]:grid-cols-1 gap-[24px]">
+        {platforms.map((platform) => (
+          <a
+            href={platform.href}
+            class="group block bg-[var(--color-rice-paper)] rounded-[12px] p-[32px] max-[640px]:p-[24px] transition-colors duration-[0.15s] hover:bg-[#F0EAE4]"
+          >
+            <div class="w-[56px] h-[56px] rounded-[12px] bg-[var(--color-ink)] flex items-center justify-center mb-[20px]">
+              {platform.logo ? (
+                <img src={platform.logo} alt={platform.title} width="28" height="28" style="filter: brightness(0) invert(1);" />
+              ) : (
+                <span class="text-[#FFFFFF]"><Fragment set:html={platform.icon} /></span>
+              )}
+            </div>
+            <h3 class="text-[20px] max-[640px]:text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[4px]">
+              {platform.title}
+            </h3>
+            <p class="text-[13px] font-medium text-[var(--color-vermillion)] mb-[8px]">
+              {platform.stat}
+            </p>
+            <p class="text-[15px] font-normal leading-[1.5] text-[var(--color-stone)] mb-[16px]">
+              {platform.description}
+            </p>
+            <span class="inline-flex items-center gap-[6px] text-[14px] font-medium text-[var(--color-vermillion)]">
+              Learn more
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-[0.15s] group-hover:translate-x-[4px]">
+                <path d="M5 12h14"/><path d="M12 5l7 7-7 7"/>
+              </svg>
+            </span>
+          </a>
+        ))}
+      </div>
+    </Container>
+  </section>
+
+  <!-- Getting started -->
+  <GettingStarted
+    heading="From first call to live campaigns in two weeks."
+    steps={gettingStartedSteps}
+    backgroundImage="/images/team/china-office.png"
+  />
+
+</PageLayout>

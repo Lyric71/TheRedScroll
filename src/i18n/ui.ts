@@ -170,7 +170,7 @@ export const ui = {
     'nav.about.ai.sub': 'L\'IA au coeur de chaque service',
 
     // Footer
-    'footer.tagline': 'Nous developpons votre marque sur les reseaux sociaux chinois. Plus d\'abonnes. Plus d\'engagement. Plus de conversions. Perimetre fixe. Prix fixe. Sans surprises.',
+    'footer.tagline': 'On fait grandir votre marque sur les reseaux chinois. Plus d\'abonnes. Plus d\'interactions. Plus de resultats. Cadre defini. Prix fixe. Zero mauvaise surprise.',
     'footer.services': 'Services',
     'footer.discover': 'Decouvrir',
     'footer.connect': 'Contact',

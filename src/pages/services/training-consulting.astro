@@ -112,34 +112,69 @@ const gettingStartedSteps = [
         <img src="/images/what-we-do/consulting-cyril.png" alt="Cyril Drouin consulting with clients in a conference room" class="w-full aspect-[5/2] max-[640px]:aspect-[16/10] object-cover" loading="lazy" decoding="async" />
       </div>
 
-      <div class="grid grid-cols-3 max-[768px]:grid-cols-1 gap-[24px] -mt-[72px] max-[768px]:-mt-[32px] px-[32px] max-[768px]:px-[0px] relative z-[1]">
-        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Strategy consulting</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Platform selection, content planning, campaign architecture, KOL strategy, social commerce, competitive positioning. Single session or multi-week project. Every engagement ends with a document you can act on.</p>
-        </div>
-        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Content and AIGC consulting</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">We audit your production workflow and figure out where AI adds speed without losing quality. Prompt frameworks, custom model training, tool selection. The question isn't whether to adopt it. It's how.</p>
-        </div>
-        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Performance audits</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Accounts, content, engagement, ad spend, KOL partnerships, competitive position. Written report: what's working, what isn't, what to change. Use it yourself or pass it to your agency.</p>
-        </div>
-      </div>
+      <!-- Horizontal column accordion -->
+      <div class="flex gap-[2px] mt-[24px] h-[400px] max-[640px]:flex-col max-[640px]:h-auto" data-col-accordion>
 
-      <div class="grid grid-cols-3 max-[768px]:grid-cols-1 gap-[24px] mt-[24px] px-[32px] max-[768px]:px-[0px]">
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Social listening</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Brand mentions, sentiment, trending conversations, competitor activity across RedNote, Douyin, WeChat, Weibo, and Zhihu. Automated tools combined with manual checks from our Shanghai team.</p>
+        <div class="col-panel is-active rounded-l-[10px] max-[640px]:rounded-l-none max-[640px]:rounded-t-[10px]" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">Strategy consulting</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Strategy consulting</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Platform selection, content planning, campaign architecture, KOL strategy, social commerce, competitive positioning. Single session or multi-week project. Every engagement ends with a document you can act on.</p>
+          </div>
         </div>
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Competitor watch</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Monthly or quarterly reports on your top 5 to 10 competitors: content themes, posting cadence, engagement trends, KOL partnerships, ad activity, new launches.</p>
+
+        <div class="col-panel" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">Content and AIGC consulting</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Content and AIGC consulting</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">We audit your production workflow and figure out where AI adds speed without losing quality. Prompt frameworks, custom model training, tool selection. The question isn't whether to adopt it. It's how.</p>
+          </div>
         </div>
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">KOL risk assessment</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Pre-collaboration due diligence on KOLs and celebrities. Past controversies, political sensitivities, brand conflicts, fake followers, audience quality.</p>
+
+        <div class="col-panel" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">Performance audits</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Performance audits</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Accounts, content, engagement, ad spend, KOL partnerships, competitive position. Written report: what's working, what isn't, what to change. Use it yourself or pass it to your agency.</p>
+          </div>
         </div>
+
+        <div class="col-panel" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">Social listening</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Social listening</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Brand mentions, sentiment, trending conversations, competitor activity across RedNote, Douyin, WeChat, Weibo, and Zhihu. Automated tools combined with manual checks from our Shanghai team.</p>
+          </div>
+        </div>
+
+        <div class="col-panel" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">Competitor watch</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Competitor watch</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Monthly or quarterly reports on your top 5 to 10 competitors: content themes, posting cadence, engagement trends, KOL partnerships, ad activity, new launches.</p>
+          </div>
+        </div>
+
+        <div class="col-panel rounded-r-[10px] max-[640px]:rounded-r-none max-[640px]:rounded-b-[10px]" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">KOL risk assessment</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">KOL risk assessment</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Pre-collaboration due diligence on KOLs and celebrities. Past controversies, political sensitivities, brand conflicts, fake followers, audience quality.</p>
+          </div>
+        </div>
+
       </div>
     </Container>
   </section>
@@ -172,31 +207,156 @@ const gettingStartedSteps = [
         <img src="/images/what-we-do/training-liyan.png" alt="Liyan Ye leading a training workshop" class="w-full aspect-[5/2] max-[640px]:aspect-[16/10] object-cover" loading="lazy" decoding="async" />
       </div>
 
-      <div class="grid grid-cols-3 max-[768px]:grid-cols-1 gap-[24px] -mt-[72px] max-[768px]:-mt-[32px] px-[32px] max-[768px]:px-[0px] relative z-[1]">
-        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Social media landscape</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)] mb-[16px]">For teams new to the market or needing a structured overview. Major platforms, user demographics, content formats, ad ecosystems, how everything connects. Real case studies and competitive overview for your category.</p>
-          <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)]">Half-day or full-day. In-person or remote. Best for marketing teams, C-suite, brand managers.</p>
+      <!-- Horizontal column accordion -->
+      <div class="flex gap-[2px] mt-[24px] h-[400px] max-[640px]:flex-col max-[640px]:h-auto" data-col-accordion>
+
+        <div class="col-panel is-active rounded-l-[10px] max-[640px]:rounded-l-none max-[640px]:rounded-t-[10px]" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">Social media landscape</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Social media landscape</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[12px]">For teams new to the market or needing a structured overview. Major platforms, user demographics, content formats, ad ecosystems, how everything connects. Real case studies and competitive overview for your category.</p>
+            <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] opacity-[0.7]">Half-day or full-day. In-person or remote. Best for marketing teams, C-suite, brand managers.</p>
+          </div>
         </div>
-        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">How to build and run campaigns</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)] mb-[16px]">From brief to post-campaign report. Content calendars, platform-specific production, KOL selection, ad setup, performance measurement. Participants leave with a draft campaign plan for their brand.</p>
-          <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)]">One to two days, hands-on. Best for social media managers, content teams, teams managing agency relationships.</p>
+
+        <div class="col-panel" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">How to build and run campaigns</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">How to build and run campaigns</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[12px]">From brief to post-campaign report. Content calendars, platform-specific production, KOL selection, ad setup, performance measurement. Participants leave with a draft campaign plan for their brand.</p>
+            <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] opacity-[0.7]">One to two days, hands-on. Best for social media managers, content teams, teams managing agency relationships.</p>
+          </div>
         </div>
-        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Integrating AIGC into content production</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)] mb-[16px]">Current AI tools for text, image, and video. Prompt engineering. Custom model training. Workflow design for volume production. Quality control. Compliance with AI content labeling rules (in effect since September 2025).</p>
-          <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)]">Half-day to full-day with live demos. Best for content producers, creative directors, production leads.</p>
+
+        <div class="col-panel" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">Integrating AIGC into content production</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Integrating AIGC into content production</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[12px]">Current AI tools for text, image, and video. Prompt engineering. Custom model training. Workflow design for volume production. Quality control. Compliance with AI content labeling rules (in effect since September 2025).</p>
+            <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] opacity-[0.7]">Half-day to full-day with live demos. Best for content producers, creative directors, production leads.</p>
+          </div>
         </div>
+
+        <div class="col-panel rounded-r-[10px] max-[640px]:rounded-r-none max-[640px]:rounded-b-[10px]" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">Livestream commerce</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Livestream commerce</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[12px]">How to sell through live streaming. Platform selection (Douyin, Taobao Live, WeChat Channels). Host training, scripting, product sequencing, flash sale mechanics, real-time engagement. We break down recent top-performing sessions and what made them work.</p>
+            <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] opacity-[0.7]">Half-day with video cases and planning exercises. Best for e-commerce teams, brand managers, marketing directors.</p>
+          </div>
+        </div>
+
       </div>
 
-      <div class="grid grid-cols-1 max-w-[calc(33.333%-8px)] max-[768px]:max-w-full gap-[24px] mt-[24px] px-[32px] max-[768px]:px-[0px]">
-        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Livestream commerce</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)] mb-[16px]">How to sell through live streaming. Platform selection (Douyin, Taobao Live, WeChat Channels). Host training, scripting, product sequencing, flash sale mechanics, real-time engagement. We break down recent top-performing sessions and what made them work.</p>
-          <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)]">Half-day with video cases and planning exercises. Best for e-commerce teams, brand managers, marketing directors.</p>
-        </div>
-      </div>
+      <style>
+        .col-panel {
+          position: relative;
+          flex: 0 0 56px;
+          background: var(--color-rice-paper);
+          cursor: pointer;
+          overflow: hidden;
+          transition: flex 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .col-panel.is-active {
+          flex: 1 1 0%;
+          cursor: default;
+        }
+        .col-label {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          opacity: 1;
+          transition: opacity 0.3s ease;
+        }
+        .col-panel.is-active .col-label {
+          opacity: 0;
+          pointer-events: none;
+        }
+        .col-label-text {
+          writing-mode: vertical-rl;
+          text-orientation: mixed;
+          transform: rotate(180deg);
+          font-size: 14px;
+          font-weight: 500;
+          color: var(--color-ink);
+          white-space: nowrap;
+          letter-spacing: 0.02em;
+        }
+        .col-content {
+          position: absolute;
+          inset: 0;
+          padding: 32px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          opacity: 0;
+          transition: opacity 0.35s ease 0.15s;
+        }
+        .col-panel.is-active .col-content {
+          opacity: 1;
+        }
+        .col-panel.is-active::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 15%;
+          bottom: 15%;
+          width: 3px;
+          background: var(--color-vermillion);
+          border-radius: 0 2px 2px 0;
+        }
+        .col-panel:not(.is-active):hover {
+          background: var(--color-warm-gray);
+        }
+        @media (max-width: 640px) {
+          .col-panel {
+            flex: 0 0 48px;
+          }
+          .col-panel.is-active {
+            flex: 0 0 auto;
+            min-height: 200px;
+          }
+          .col-label-text {
+            writing-mode: horizontal-tb;
+            transform: none;
+            font-size: 13px;
+          }
+          .col-content {
+            position: relative;
+            padding: 20px;
+          }
+          .col-panel.is-active::before {
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            height: auto;
+          }
+        }
+      </style>
+
+      <script>
+        document.querySelectorAll('[data-col-accordion]').forEach((accordion) => {
+          const panels = accordion.querySelectorAll('[data-col-panel]');
+          panels.forEach((panel) => {
+            panel.addEventListener('click', () => {
+              if (panel.classList.contains('is-active')) return;
+              panels.forEach((p) => p.classList.remove('is-active'));
+              panel.classList.add('is-active');
+            });
+          });
+        });
+      </script>
     </Container>
   </section>
 

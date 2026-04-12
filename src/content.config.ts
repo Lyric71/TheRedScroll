@@ -48,6 +48,22 @@ const blog = defineCollection({
   }),
 });
 
+const blogFr = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/blog-fr' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    metaTitle: z.string().max(60),
+    metaDescription: z.string().max(160),
+    publishDate: z.date(),
+    author: z.string(),
+    category: z.string(),
+    keywords: z.array(z.string()),
+    featured: z.boolean().default(false),
+    featuredImage: z.string().optional(),
+  }),
+});
+
 const team = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/team' }),
   schema: z.object({
@@ -68,4 +84,4 @@ const faq = defineCollection({
   }),
 });
 
-export const collections = { services, platforms, blog, team, faq };
+export const collections = { services, platforms, blog, 'blog-fr': blogFr, team, faq };

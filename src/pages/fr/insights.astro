@@ -4,7 +4,7 @@ import PageLayout from '../../layouts/PageLayout.astro';
 import Container from '../../components/ui/Container.astro';
 import SectionBar from '../../components/ui/SectionBar.astro';
 
-const allPosts = await getCollection('blog');
+const allPosts = await getCollection('blog-fr');
 const articles = allPosts
   .sort(() => Math.random() - 0.5)
   .map((post) => ({
@@ -13,14 +13,14 @@ const articles = allPosts
     excerpt: post.data.description,
     readingTime: `${Math.ceil(post.body!.split(/\s+/).length / 200)} min`,
     date: new Date(post.data.publishDate).toLocaleDateString('fr-FR', { month: 'long', year: 'numeric' }),
-    slug: `/insights/${post.id}`,
+    slug: `/fr/insights/${post.id}`,
     featuredImage: post.data.featuredImage,
   }));
 ---
 
 <PageLayout
   title="Analyses | TheRedScroll"
-  description="Articles sur le marketing des réseaux sociaux en Chine. Actualités des plateformes, décryptages stratégiques et retours d'expérience de campagnes réelles sur WeChat, RedNote, Douyin et Weibo."
+  description="Articles sur le marketing en Chine via les réseaux sociaux. Veille sur les plateformes, analyses stratégiques et retours d'expérience terrain sur WeChat, RedNote, Douyin et Weibo."
   lang="fr"
 >
 
@@ -33,10 +33,10 @@ const articles = allPosts
           Analyses
         </p>
         <h1 class="text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[16px]">
-          Ce que nous savons des plateformes chinoises.
+          Ce que nous savons des plateformes chinoises
         </h1>
         <p class="text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] text-[var(--color-stone)]">
-          Actualités des plateformes, décryptages stratégiques et retours de campagnes réelles.
+          Veille sur les plateformes, analyses stratégiques et retours d'expérience terrain.
         </p>
       </div>
     </Container>
