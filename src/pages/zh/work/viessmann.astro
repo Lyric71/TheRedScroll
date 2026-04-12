@@ -1,0 +1,233 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+
+const services = ['营销活动', '电商', 'KOL合作', '直播', '媒体', '社交'];
+const platforms = ['Douyin', 'RedNote', 'WeCom', 'Tmall', 'JD'];
+---
+
+<PageLayout
+  title="Viessmann：中国社交电商案例 | TheRedScroll"
+  description="Viessmann如何借助Douyin、RedNote和WeCom在中国推动电商销售。社交媒体策略、KOL营销与直播带货成果。"
+  ogImage="/images/clients/Viessmann/Viessman-climate-solution.avif"
+  lang="zh"
+>
+
+  <!-- Hero -->
+  <section class="relative w-full min-h-[600px] max-[640px]:min-h-[480px] overflow-hidden">
+    <div
+      class="absolute inset-0 bg-cover bg-center bg-fixed max-[640px]:bg-scroll"
+      style="background-image: url('/images/clients/Viessmann/Viessman-climate-solution.avif')"
+      aria-hidden="true"
+    ></div>
+    <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.78]" aria-hidden="true"></div>
+
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+        客户案例
+      </p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        Viessmann：社交媒体如何驱动中国线上销售增长。
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        Viessmann需要通过中国社交媒体推动线上销售。我们在Douyin、RedNote和WeCom上搭建了完整的运营体系，实现了持续稳定的增长。
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/zh/contact">预约沟通</Button>
+        <Button variant="secondary-dark" href="#case-study">查看案例详情</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meta bar -->
+  <section class="border-b border-[rgba(0,0,0,0.08)]">
+    <Container>
+      <div class="flex flex-wrap gap-[32px] max-[640px]:gap-[20px] py-[24px]">
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">客户背景</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">Viessmann (Carrier)</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">行业</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">暖通空调</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">服务内容</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {services.map((s) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{s}</span>
+            ))}
+          </div>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">平台</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {platforms.map((p) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{p}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Case study content -->
+  <section id="case-study" class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <!-- 客户背景 -->
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="客户背景">百年暖通品牌，中国市场仍是待攻克的难题。</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Viessmann自1917年起专注于暖通系统制造。如今作为Carrier旗下品牌，产品覆盖全球数十个市场，涵盖供暖、热水、空气净化和可再生能源。
+            </p>
+            <p>
+              中国市场一直是块硬骨头。天猫和京东的旗舰店早已上线，产品齐全，店铺也在运营。但流量始终不理想。在中国，这本质上是一个社交媒体的问题。消费者先在社交平台上认识品牌，然后才会下单购买。Viessmann需要能把人引到店铺的内容。
+            </p>
+          </div>
+        </div>
+
+        <!-- Tmall store images -->
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+            <img
+              src="/images/clients/Viessmann/Tmall-Store-Viessmann-3.png"
+              alt="Viessmann天猫旗舰店产品详情页"
+              class="w-full rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+              loading="lazy"
+              decoding="async"
+            />
+            <img
+              src="/images/clients/Viessmann/Tmall-Store-Viessmann-6.png"
+              alt="Viessmann天猫旗舰店产品目录"
+              class="w-full rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+            Viessmann天猫旗舰店。产品已上架，但流量远远不够。
+          </p>
+        </div>
+
+        <!-- 服务内容 -->
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="服务内容">三大平台，各司其职。</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              我们搭建了一套连接社交平台与Viessmann电商店铺的完整体系。三个平台，每个平台承担不同的使命。
+            </p>
+          </div>
+        </div>
+
+        <!-- Douyin -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Douyin：流量入口</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              我们制作了关于暖通的短视频，但不是用工程师的方式来讲。我们讲的是更温暖的家、更低的能源账单、不让冬天变成经济负担的居住体验。
+            </p>
+            <p>
+              我们组织了产品演示和直播专场，直接导流至天猫旗舰店。效果立竿见影。Douyin迅速成为Viessmann线上新客的主要来源之一。
+            </p>
+          </div>
+        </div>
+
+        <!-- RedNote -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">RedNote：研究与决策阵地</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              暖通系统是大额消费，中国消费者在做决定前会做大量功课。所以我们确保Viessmann出现在这些搜索结果里。产品测评、安装指南、业主真实体验分享。
+            </p>
+            <p>
+              我们在平台上同时开展KOL合作和KOC内容投放。目标很简单：当有人在RedNote上搜索"最好的暖通系统"时，Viessmann必须带着实证出现，而不是空洞的承诺。
+            </p>
+          </div>
+        </div>
+
+        <!-- WeCom -->
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">WeCom：对话转化为成交的地方</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              在购买之前，客户有各种各样的问题。我家需要多大功率？和我的户型兼容吗？我们的团队通过WeCom实时用中文解答所有疑问。
+            </p>
+            <p>
+              成交之后，同一个对话窗口变成了售后服务通道。安装跟进、维保预约、定期回访。从第一个咨询到忠实客户，全程一条线。
+            </p>
+          </div>
+        </div>
+
+        <!-- Second image row -->
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+            <img
+              src="/images/clients/Viessmann/Tmall-Store-Viessmann-4.png"
+              alt="Viessmann天猫旗舰店会员体系与售后服务"
+              class="w-full rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+              loading="lazy"
+              decoding="async"
+            />
+            <img
+              src="/images/clients/Viessmann/Tmall-Store-Viessmann-5.png"
+              alt="Viessmann天猫旗舰店品牌故事"
+              class="w-full rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+            Viessmann天猫旗舰店：品牌故事与会员体系。
+          </p>
+        </div>
+
+        <!-- Ground team -->
+        <div class="mb-[64px] max-[640px]:mb-[48px] bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[32px] max-[640px]:p-[20px]">
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            这一切都不是远程操控的。我们的团队从中国本地全程管理。母语级运营人员深耕每个平台，根据实际互动数据逐周优化内容。
+          </p>
+        </div>
+
+        <!-- 项目成果 -->
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="项目成果">从展示橱窗到持续产出的销售渠道。</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              大约两年时间里，Viessmann在中国的线上营收实现了逐月增长。天猫和京东从单纯的产品展示变成了真正持续产出的销售渠道。
+            </p>
+            <p>
+              但营收只是其中一部分。看看整个体系是如何运转的。Douyin负责漏斗顶部的引流。RedNote培育有购买意向的用户。WeCom完成转化并沉淀为长期客户。如今，线下零售、经销商甚至售后服务商都已经接入这个闭环。
+            </p>
+            <p>
+              最初的要求很直接。不只是做线上销售，而是让每一个渠道都朝着同一个方向发力。这就是我们所构建的。
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- CTA -->
+  <section class="pb-[96px] max-[640px]:pb-[64px]">
+    <Container>
+      <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[48px] max-[640px]:p-[32px] text-center">
+        <SectionHeading overline="下一个就是你">想为你的品牌在中国搭建社交电商体系？</SectionHeading>
+        <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)] max-w-[500px] mx-auto mb-[32px]">
+          固定范围。固定价格。本地团队。
+        </p>
+        <Button variant="primary" href="/zh/contact">预约沟通</Button>
+      </div>
+    </Container>
+  </section>
+
+</PageLayout>

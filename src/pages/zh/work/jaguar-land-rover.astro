@@ -1,0 +1,302 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+
+const services = ['营销活动', '电商', 'KOL合作', '直播', '媒体', '社交'];
+const platforms = ['Douyin', 'RedNote', 'WeChat'];
+---
+
+<PageLayout
+  title="Jaguar Land Rover：中国社交媒体案例 | TheRedScroll"
+  description="Jaguar Land Rover如何通过Douyin、RedNote和WeChat触达中国年轻消费者。社交内容、KOL营销与UGC成果。"
+  ogImage="/images/clients/Jaguar/Jaguar-Land-Rover.avif"
+  lang="zh"
+>
+
+  <!-- Hero -->
+  <section class="relative w-full min-h-[600px] max-[640px]:min-h-[480px] overflow-hidden">
+    <div
+      class="absolute inset-0 bg-cover bg-center bg-fixed max-[640px]:bg-scroll"
+      style="background-image: url('/images/clients/Jaguar/Jaguar-Land-Rover.avif')"
+      aria-hidden="true"
+    ></div>
+    <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.78]" aria-hidden="true"></div>
+
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+        客户案例
+      </p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        Jaguar Land Rover：用社交媒体打动中国年轻消费者。
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        Jaguar Land Rover需要触达中国更年轻的购车群体。我们在Douyin、RedNote和WeChat上构建了一套社交策略，成功改变了品牌认知。
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/zh/contact">预约沟通</Button>
+        <Button variant="secondary-dark" href="#case-study">查看案例详情</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meta bar -->
+  <section class="border-b border-[rgba(0,0,0,0.08)]">
+    <Container>
+      <div class="flex flex-wrap gap-[32px] max-[640px]:gap-[20px] py-[24px]">
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">客户背景</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">Jaguar Land Rover</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">行业</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">汽车 / 奢侈品</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">服务内容</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {services.map((s) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{s}</span>
+            ))}
+          </div>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">平台</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {platforms.map((p) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{p}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Case study content -->
+  <section id="case-study" class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <!-- 客户背景 -->
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="客户背景">百年英伦设计传承。在中国，问题出在受众年龄上。</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Jaguar Land Rover打造了世界上辨识度最高的汽车之一。豪华SUV、跑车，背后是超过一个世纪的英国设计底蕴。这是一个人人都有看法的品牌。
+            </p>
+            <p>
+              在中国，问题出在年龄层上。JLR在成熟、有经济实力的买家中知名度不错。但年轻的中国消费者，也就是未来五到十年真正会购买豪华车的那群人，对它并不感冒。无论在社交媒体上还是其他地方。
+            </p>
+            <p>
+              JLR必须出现在这群人活跃的地方。而且内容必须符合他们消费内容的方式。
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- Social content — full width -->
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <img
+      src="/images/clients/Jaguar/100-JLR-1.png"
+      alt="Jaguar Land Rover中国社交媒体内容，包括Range Rover百年系列和Jaguar经典日历"
+      class="w-full"
+      loading="lazy"
+      decoding="async"
+    />
+    <Container>
+      <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+        为JLR中国受众制作的社交内容。Range Rover百年系列与Jaguar经典日历。
+      </p>
+    </Container>
+  </section>
+
+  <!-- Case study content continued -->
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <!-- 服务内容 -->
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="服务内容">让Jaguar Land Rover出现在年轻奢侈品消费者的信息流中。</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              我们在Douyin、RedNote和WeChat上部署了社交内容。所有内容都指向同一个目标：让Jaguar Land Rover出现在中国年轻奢侈品消费者的信息流中。
+            </p>
+          </div>
+        </div>
+
+        <!-- Visual content -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">视觉内容先行</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              短视频和图片系列展现JLR的设计与工程实力，专为Douyin和RedNote的内容规范量身定制。电影感、快节奏、竖屏呈现。
+            </p>
+            <p>
+              所有内容都在中国本地拍摄制作，服务于中国市场。不是全球素材的二次剪辑，而是从零开始的原创。
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- Hero video — full width single row -->
+  <section class="mb-[32px] max-[640px]:mb-[24px]">
+    <video
+      src="/images/clients/Jaguar/JLR-Video-1.mp4"
+      class="w-full"
+      muted
+      loop
+      playsinline
+      autoplay
+    ></video>
+  </section>
+
+  <!-- Douyin video content — full width -->
+  <section class="mb-[48px] max-[640px]:mb-[32px]">
+    <div class="grid grid-cols-3 max-[640px]:grid-cols-1 gap-[16px] px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px]">
+      <video
+        src="/images/clients/Jaguar/JLR-Video-2.mp4"
+        class="w-full rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        muted
+        loop
+        playsinline
+        autoplay
+      ></video>
+      <video
+        src="/images/clients/Jaguar/JLR-Video-3.mp4"
+        class="w-full rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        muted
+        loop
+        playsinline
+        autoplay
+      ></video>
+      <video
+        src="/images/clients/Jaguar/JLR-Video-4.mp4"
+        class="w-full rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        muted
+        loop
+        playsinline
+        autoplay
+      ></video>
+    </div>
+    <Container>
+      <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+        Douyin内容：电影质感、竖屏构图，在中国本地为中国市场制作。
+      </p>
+    </Container>
+  </section>
+
+  <!-- Case study content continued -->
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <!-- Brand storytelling -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">品牌叙事找到了共鸣</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              我们围绕创新、探索以及当代奢华对二三十岁年轻人的真实意义，创作了叙事型内容。微纪录片、制造工艺幕后、将车辆与真实生活体验连接的生活方式内容。
+            </p>
+            <p>
+              我们并不是要把JLR变年轻。这个品牌本身就契合新一代人对驾驶的理解。只需要把这一点展现出来。
+            </p>
+          </div>
+        </div>
+
+        <!-- UGC -->
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">用户原创内容承担了最核心的传播任务</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              我们发起了话题挑战和比赛，鼓励真实车主和爱好者创作自己的JLR内容。公路旅行、城市通勤、周末出行。效果最好的并不是制作最精良的帖子，而是那些真实、略带粗糙、一看就知道不是摆拍的瞬间。
+            </p>
+            <p>
+              这类原生内容的表现，始终优于品牌官方账号发布的任何内容。
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- Douyin screenshots — full width -->
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px] px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px]">
+      <img
+        src="/images/clients/Jaguar/JLR-3.png"
+        alt="Jaguar Land Rover Douyin短视频展示车辆动态"
+        class="w-full rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src="/images/clients/Jaguar/JLR-4.png"
+        alt="Jaguar Land Rover Douyin内容涵盖Defender、Discovery及经典车型"
+        class="w-full rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <Container>
+      <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+        Douyin短视频：产品展示、生活方式内容以及真实车主的UGC。
+      </p>
+    </Container>
+  </section>
+
+  <!-- Case study content continued -->
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <!-- Ground team -->
+        <div class="mb-[64px] max-[640px]:mb-[48px] bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[32px] max-[640px]:p-[20px]">
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            我们的团队从中国本地全程管理。内容制作、社群运营、KOL协调、每周复盘线上内容的实际表现。母语级运营，在一线做决策。
+          </p>
+        </div>
+
+        <!-- 项目成果 -->
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="项目成果">从"有知名度"到"与新受众真正相关"。</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              三个平台的互动量全线提升。粉丝增速加快，Douyin和RedNote领跑。UGC活动带来了持续的原创内容流，年轻消费者开始主动谈论Jaguar Land Rover。
+            </p>
+            <p>
+              品牌从"被认识"变成了在全新受众群体中"真正被关注"。这不只是粉丝数字的问题。这种转变能把未来的到店参观者变成未来的购车者。
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- CTA -->
+  <section class="pb-[96px] max-[640px]:pb-[64px]">
+    <Container>
+      <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[48px] max-[640px]:p-[32px] text-center">
+        <SectionHeading overline="下一个就是你">想在中国新一代消费者中拓展你的品牌影响力？</SectionHeading>
+        <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)] max-w-[500px] mx-auto mb-[32px]">
+          固定范围。固定价格。本地团队。
+        </p>
+        <Button variant="primary" href="/zh/contact">预约沟通</Button>
+      </div>
+    </Container>
+  </section>
+
+</PageLayout>

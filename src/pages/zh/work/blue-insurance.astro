@@ -1,0 +1,252 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+
+const services = ['营销活动', '设计', '媒体', '网站'];
+const platforms = ['Web', '社交媒体', '付费广告'];
+---
+
+<PageLayout
+  title="Blue Insurance香港数字化上线 | TheRedScroll"
+  description="Blue Insurance如何上线香港首家纯线上人寿保险公司。双语网站、SEO与首月10,000粉丝的营销战役。"
+  ogImage="/images/clients/Blue/Blue Insurance 1.png"
+  lang="zh"
+>
+
+  <!-- Hero -->
+  <section class="relative w-full min-h-[600px] max-[640px]:min-h-[480px] overflow-hidden">
+    <div
+      class="absolute inset-0 bg-cover bg-center bg-fixed max-[640px]:bg-scroll"
+      style="background-image: url('/images/clients/Blue/Blue Insurance 1.png')"
+      aria-hidden="true"
+    ></div>
+    <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.72]" aria-hidden="true"></div>
+
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+        客户案例
+      </p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        Blue Insurance：香港首家纯线上保险公司的网站建设与数字化上线。
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        Blue需要一个网站和一场上线营销，为香港首家完全数字化的人寿保险公司打开局面。我们同时完成了两件事，首月就获得了10,000粉丝。
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/zh/contact">预约沟通</Button>
+        <Button variant="secondary-dark" href="#case-study">查看案例详情</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meta bar -->
+  <section class="border-b border-[rgba(0,0,0,0.08)]">
+    <Container>
+      <div class="flex flex-wrap gap-[32px] max-[640px]:gap-[20px] py-[24px]">
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">客户背景</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">Blue Insurance</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">行业</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">保险 / 金融科技</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">市场</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">香港</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">服务内容</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {services.map((s) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{s}</span>
+            ))}
+          </div>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">渠道</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {platforms.map((p) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{p}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Case study content -->
+  <section id="case-study" class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <!-- 客户背景 -->
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="客户背景">香港首家纯线上人寿保险公司。没有代理人，没有纸质文件。</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Blue是香港首家完全数字化的人寿保险公司。没有代理人。客户在线回答几个问题，即时获得保障。商业模式基于一个很简单的理念：人们知道自己需要什么保险，不应该被迫经历一轮又一轮的约见和填表才能买到。
+            </p>
+            <p>
+              但Blue进入的是一个传统保险公司已经纷纷启动数字化转型的市场。"首家线上保险"这个标签还不够。Blue需要一个用户体验真正优于竞品的网站，以及一场能快速获客的营销战役。
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- Website visuals -->
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <div class="flex justify-center gap-[16px] overflow-x-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] max-[640px]:justify-start pb-[8px] scrollbar-hide">
+      <img
+        src="/images/clients/Blue/Blue Insurance 1.png"
+        alt="Blue Insurance香港网站与数字化上线营销"
+        class="w-[280px] max-[640px]:w-[220px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src="/images/clients/Blue/Blue Insurance 2.png"
+        alt="Blue Insurance双语网站桌面端与移动端"
+        class="w-[280px] max-[640px]:w-[220px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src="/images/clients/Blue/Blue Insurance 3.png"
+        alt="Blue Insurance数字营销获取粉丝与注册"
+        class="w-[280px] max-[640px]:w-[220px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <Container>
+      <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+        Blue Insurance网站。中英双语、移动端优先，为即时报价与注册而设计。
+      </p>
+    </Container>
+  </section>
+
+  <!-- 服务内容 -->
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="服务内容">网站建设与上线营销同步推进，讲究速度。</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              我们同时负责网站建设和数字化上线营销。
+            </p>
+          </div>
+        </div>
+
+        <!-- Website -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">网站必须配得上产品</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Blue卖的是简单的保险。网站也必须传递同样的感受。中英双语，大屏和手机端同样好用。页面设计刻意做到极简。没有密密麻麻的保险术语，没有复杂的导航。每一屏都引导访客完成报价或注册。
+            </p>
+          </div>
+        </div>
+
+        <!-- SEO -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">SEO从一开始就嵌入架构，而非事后补救</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              我们对内容结构、元数据和页面层级进行了优化，确保当香港用户搜索在线保险或数字化人寿保障时，Blue能够出现在搜索结果中。上线第一天就做好了搜索竞争的准备。
+            </p>
+          </div>
+        </div>
+
+        <!-- Campaign -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">营销在同一周启动</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              社交媒体和付费广告瞄准了对传统保险已经不满的消费者。核心信息围绕Blue省去的那些麻烦。不用预约、不用填表、不用看细小的附加条款。
+            </p>
+          </div>
+        </div>
+
+        <!-- Ground team callout -->
+        <div class="mb-[64px] max-[640px]:mb-[48px] bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[32px] max-[640px]:p-[20px]">
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            网站、SEO和营销战役，全部由我们在香港的本地团队协调完成。
+          </p>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- Stats grid -->
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <Container>
+      <div class="grid grid-cols-3 max-[640px]:grid-cols-1 gap-[16px]">
+        <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[24px] text-center">
+          <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[4px]">10,000</p>
+          <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)]">首月新增粉丝</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[24px] text-center">
+          <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[4px]">3,000+</p>
+          <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)]">首周邮件订阅注册</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[24px] text-center">
+          <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[4px]">双语</p>
+          <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)]">中英文全面优化</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- 项目成果 -->
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="项目成果">10,000粉丝和3,000注册。大多数创业公司还没完成上线，我们已经交付了。</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              网站上线时就做到了双语、快速且全面优化。移动端体验与桌面端同样出色，这在一个大多数人用手机比较保险产品的市场里至关重要。
+            </p>
+            <p>
+              营销效果迅速显现。首月新增10,000粉丝。首周超过3,000邮件订阅。对于一家刚创立、没有任何已有受众的保险公司来说，这些数字本身就说明了问题。香港消费者一直在等待这样的产品。
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- CTA -->
+  <section class="pb-[96px] max-[640px]:pb-[64px]">
+    <Container>
+      <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[48px] max-[640px]:p-[32px] text-center">
+        <SectionHeading overline="下一个就是你">需要在香港进行网站建设和上线营销？</SectionHeading>
+        <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)] max-w-[500px] mx-auto mb-[32px]">
+          固定范围。固定价格。本地团队。
+        </p>
+        <Button variant="primary" href="/zh/contact">预约沟通</Button>
+      </div>
+    </Container>
+  </section>
+
+  <style>
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+
+</PageLayout>

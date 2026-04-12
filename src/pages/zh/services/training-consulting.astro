@@ -1,0 +1,400 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+import FaqAccordion from '../../../components/sections/FaqAccordion.astro';
+import GettingStarted from '../../../components/sections/GettingStarted.astro';
+
+
+const faqs = [
+  { q: '费用是多少？', a: '取决于项目范围。一次性咨询从几千元人民币起步。持续数周、包含交付物的项目费用更高。培训按固定价格计费，根据时长和定制程度而定。所有项目在启动前都会提供明确报价，不会出现开放式收费。' },
+  { q: '培训可以远程进行吗？', a: '大多数形式都可以远程完成，效果很好。AIGC 工作坊因为需要实际操作，面授效果更佳，但也可以根据需要调整为线上形式。' },
+  { q: '培训适合多少人？', a: '理想人数在 6 到 15 人之间。我们做过 3 人的小班，也做过近 40 人的大班。形式会根据人数调整，建议提前沟通。' },
+  { q: '培训内容是定制的吗？', a: '每次都是。我们会围绕你的行业、平台、竞争对手和团队水平来设计课程。每次培训前都会进行详细的需求沟通。' },
+  { q: '咨询可以变成长期合作吗？', a: '很常见。一些品牌在首次咨询后转为按月执行投放。也有品牌选择每年沟通一两次，其余时间自主运营。两种方式都行得通。' },
+  { q: '有针对具体平台的培训吗？', a: '抖音广告投放与账户设置。小红书 KOC 激活与搜索优化。微信公众号运营与小程序策略。可以单独培训，也可以整合到更大的培训项目中。' },
+  { q: '社交媒体监测是怎么做的？', a: '按月订阅制。起步方案通常覆盖你的品牌和 3 个竞品，涉及 2 个平台。之后根据需要扩展。' },
+  { q: '没经历过危机就准备危机预案？', a: '这其实是最好的时机。大多数品牌都是等事情发生了才开始想对策，而那时网上已经在传播了。提前准备好框架，意味着执行预案而不是在深夜临时拼凑方案。' },
+];
+
+const gettingStartedSteps = [
+  {
+    title: '初步沟通。',
+    description: '了解你的团队、当前的不足，以及对这次合作的具体期望。',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
+  },
+  {
+    title: '定制方案。',
+    description: '形式、主题、时长和交付物。根据你的团队和目标量身定制。',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>',
+  },
+  {
+    title: '两周内开课。',
+    description: '需求沟通、课程准备、现场培训。你的团队带走的是可以直接运用的实战知识。',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
+  },
+];
+---
+
+<PageLayout
+  title="中国社交媒体咨询与培训 | TheRedScroll"
+  description="战略咨询、AIGC 工作坊、社交媒体监测、竞品分析、KOL 风险评估、危机预案、投放培训。团队位于上海。"
+  lang="zh"
+>
+
+  <!-- Hero — Dark hero banner -->
+  <section class="relative w-full overflow-hidden bg-[var(--color-ink)]">
+    <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/training-consulting-hero.png')" aria-hidden="true"></div>
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+        培训与咨询
+      </p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        读懂市场。或者把一个具体问题交给我们来解决。
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        咨询服务针对具体课题提供解答。培训服务帮助内部团队提升专业能力。所有服务均由每天深耕中国社交媒体的从业者交付。
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/zh/contact">预约沟通</Button>
+        <Button variant="secondary-dark" href="#consulting">咨询服务</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why brands need this -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        <div class="relative col-span-2 row-span-2 max-[640px]:col-span-1 max-[640px]:row-span-1 bg-[#1A1A1A] rounded-[12px] p-[32px] max-[640px]:p-[20px] flex flex-col justify-between min-h-[320px] max-[640px]:min-h-0 overflow-hidden">
+          <svg class="absolute bottom-[-20px] right-[-20px] w-[260px] h-[260px] opacity-[0.06]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          <div class="relative z-[1]">
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">这项服务存在的意义</p>
+            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[16px]">有些品牌需要的是专业能力，不是多一双手。</h2>
+            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[400px]">并非所有品牌都想把一切外包。有些品牌自己有团队，缺的是那一层专业知识。</p>
+          </div>
+          <div class="relative z-[1] mt-[24px]">
+            <Button variant="secondary-dark" href="#what-we-do">了解我们的服务</Button>
+          </div>
+        </div>
+        <div class="relative overflow-hidden bg-[#F0F1F4] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">平台认知不足</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">各平台实际的运作方式。哪些内容形式真正带来效果，而不只是在会议上听起来不错。AI 如何融入内容生产流程。</p>
+        </div>
+        <div class="relative overflow-hidden bg-[#1A1A1A] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19.439 7.85c-.049.322.059.648.289.878l1.568 1.568c.47.47.706 1.087.706 1.704s-.235 1.233-.706 1.704l-1.611 1.611a.98.98 0 0 1-.837.276c-.47-.07-.802-.48-.968-.925a2.501 2.501 0 1 0-3.214 3.214c.446.166.855.497.925.968a.979.979 0 0 1-.276.837l-1.61 1.61a2.404 2.404 0 0 1-1.705.707 2.402 2.402 0 0 1-1.704-.706l-1.568-1.568a1.026 1.026 0 0 0-.877-.29c-.493.074-.84.504-1.02.968a2.5 2.5 0 1 1-3.237-3.237c.464-.18.894-.527.967-1.02a1.026 1.026 0 0 0-.289-.877l-1.568-1.568A2.402 2.402 0 0 1 1.998 12c0-.617.236-1.234.706-1.704L4.23 8.77c.24-.24.581-.353.917-.303.515.077.877.528 1.073 1.01a2.5 2.5 0 1 0 3.259-3.259c-.482-.196-.933-.558-1.01-1.073-.05-.336.062-.676.303-.917l1.525-1.525A2.402 2.402 0 0 1 12 1.998c.617 0 1.234.236 1.704.706l1.568 1.568c.23.23.556.338.877.29.493-.074.84-.504 1.02-.969a2.5 2.5 0 1 1 3.237 3.237c-.464.18-.894.527-.967 1.02z"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">需要解决的实际问题</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.6)]">发了一年内容，数据毫无起色。刚和代理商解约。KOL 预算可能过高，但没有数据来佐证。</p>
+        </div>
+        <div class="relative overflow-hidden bg-[#CC3333] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">来自实战的判断</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.8)]">我们的团队每天都在执行投放。建议来自这个月正在生效的打法，来自我们每天都在操作的平台。</p>
+        </div>
+        <div class="relative overflow-hidden bg-[#E8E0D8] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">灵活的合作方式</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">一次性战略会议，或持续数周的项目。有些品牌之后转为按月执行，有些每年回来一次。我们配合你的节奏。</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Consulting services -->
+  <section id="consulting" class="mt-[96px] max-[640px]:mt-[64px] scroll-mt-[76px]">
+    <Container>
+      <SectionBar />
+      <SectionHeading overline="咨询">咨询服务</SectionHeading>
+
+      <div class="rounded-[12px] overflow-hidden mt-[24px]">
+        <img src="/images/what-we-do/consulting-cyril.png" alt="Cyril Drouin 在会议室与客户进行咨询" class="w-full aspect-[5/2] max-[640px]:aspect-[16/10] object-cover" loading="lazy" decoding="async" />
+      </div>
+
+      <!-- Horizontal column accordion -->
+      <div class="flex gap-[2px] mt-[24px] h-[400px] max-[640px]:flex-col max-[640px]:h-auto" data-col-accordion>
+
+        <div class="col-panel is-active rounded-l-[10px] max-[640px]:rounded-l-none max-[640px]:rounded-t-[10px]" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">战略咨询</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">战略咨询</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">平台选择、内容规划、投放架构、KOL 策略、社交电商、竞品定位。可以是一次性会议，也可以是持续数周的项目。每次合作都会输出可执行的文档。</p>
+          </div>
+        </div>
+
+        <div class="col-panel" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">内容与 AIGC 咨询</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">内容与 AIGC 咨询</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">我们审核你的内容生产流程，找到 AI 可以提升效率且不牺牲质量的环节。提示词框架、定制模型训练、工具选型。问题不再是要不要用，而是怎么用。</p>
+          </div>
+        </div>
+
+        <div class="col-panel" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">效果审计</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">效果审计</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">账号表现、内容质量、互动率、广告投入、KOL 合作、竞品对标。书面报告明确指出：哪些有效、哪些无效、哪些需要调整。可供内部执行，也可转交给你的代理商。</p>
+          </div>
+        </div>
+
+        <div class="col-panel" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">社交媒体监测</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">社交媒体监测</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">品牌提及、舆论情绪、热门话题、竞品动态，覆盖小红书、抖音、微信、微博和知乎。自动化工具加上我们上海团队的人工复核。</p>
+          </div>
+        </div>
+
+        <div class="col-panel" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">竞品分析</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">竞品分析</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">按月或按季度出具报告，覆盖你的 5 到 10 个主要竞品：内容策略、发布频率、互动趋势、KOL 合作、广告投放、近期上新动态。</p>
+          </div>
+        </div>
+
+        <div class="col-panel rounded-r-[10px] max-[640px]:rounded-r-none max-[640px]:rounded-b-[10px]" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">KOL 风险评估</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">KOL 风险评估</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">与 KOL 或明星合作前的尽职调查。历史争议、政治敏感性、品牌冲突、虚假粉丝、真实受众质量。</p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- PR Crisis Playbook — dark section -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="bg-[#1A1A1A] rounded-[12px] p-[48px] max-[640px]:p-[32px_20px]">
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">危机管理</p>
+        <h2 class="text-[#FFFFFF] text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] mb-[16px]">准备危机预案的最佳时机，是在危机发生之前。</h2>
+        <div class="max-w-[680px] flex flex-col gap-[24px]">
+          <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+            KOL 合作出了问题怎么办。产品在小红书上因为负面原因引发关注怎么应对。一次文化失误在微博上病毒式传播时该走什么流程。
+          </p>
+          <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+            监测触发机制、回应模板、升级流程、各平台应对指南。我们帮你把这些全部准备好，放在手边，在事情发生的那天直接启用。如果情况超出社交媒体的范畴，我们会为你对接专业的危机公关团队。
+          </p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Training programs -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <SectionBar />
+      <SectionHeading overline="培训">培训课程</SectionHeading>
+
+      <div class="rounded-[12px] overflow-hidden mt-[24px]">
+        <img src="/images/what-we-do/training-liyan.png" alt="Liyan Ye 主持培训工作坊" class="w-full aspect-[5/2] max-[640px]:aspect-[16/10] object-cover" loading="lazy" decoding="async" />
+      </div>
+
+      <!-- Horizontal column accordion -->
+      <div class="flex gap-[2px] mt-[24px] h-[400px] max-[640px]:flex-col max-[640px]:h-auto" data-col-accordion>
+
+        <div class="col-panel is-active rounded-l-[10px] max-[640px]:rounded-l-none max-[640px]:rounded-t-[10px]" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">社交媒体全景</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">社交媒体全景</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[12px]">适合刚进入市场或需要系统梳理的团队。主流平台、用户画像、内容形式、广告产品，以及它们之间的关联。结合实战案例和你所在行业的竞品概览。</p>
+            <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] opacity-[0.7]">半天或一天。线下或线上。推荐对象：市场团队、高管层、品牌负责人。</p>
+          </div>
+        </div>
+
+        <div class="col-panel" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">策划与执行投放</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">策划与执行投放</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[12px]">从 brief 到复盘。内容日历、平台适配制作、KOL 筛选、广告设置、效果衡量。参与者在课程结束时带走一份自己品牌的投放方案初稿。</p>
+            <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] opacity-[0.7]">一到两天，实操形式。推荐对象：社交媒体运营、内容团队、代理商管理团队。</p>
+          </div>
+        </div>
+
+        <div class="col-panel" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">AIGC 融入内容生产</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">将 AIGC 融入内容生产</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[12px]">当前主流的文字、图片和视频 AI 工具。提示词工程。定制模型训练。批量生产流程设计。质量控制。AI 生成内容标注合规（2025 年 9 月起生效的规定）。</p>
+            <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] opacity-[0.7]">半天到一天，含现场演示。推荐对象：内容制作人、创意总监、制作负责人。</p>
+          </div>
+        </div>
+
+        <div class="col-panel rounded-r-[10px] max-[640px]:rounded-r-none max-[640px]:rounded-b-[10px]" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">直播带货</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">直播带货</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[12px]">如何做好直播销售。平台选择（抖音、淘宝直播、微信视频号）。主播培训、脚本撰写、选品排序、限时促销机制、实时互动技巧。我们拆解当前表现最好的直播案例，分析成功背后的原因。</p>
+            <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] opacity-[0.7]">半天，含视频案例分析和策划练习。推荐对象：电商团队、品牌负责人、市场总监。</p>
+          </div>
+        </div>
+
+      </div>
+
+      <style>
+        .col-panel {
+          position: relative;
+          flex: 0 0 56px;
+          background: var(--color-rice-paper);
+          cursor: pointer;
+          overflow: hidden;
+          transition: flex 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .col-panel.is-active {
+          flex: 1 1 0%;
+          cursor: default;
+        }
+        .col-label {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          opacity: 1;
+          transition: opacity 0.3s ease;
+        }
+        .col-panel.is-active .col-label {
+          opacity: 0;
+          pointer-events: none;
+        }
+        .col-label-text {
+          writing-mode: vertical-rl;
+          text-orientation: mixed;
+          transform: rotate(180deg);
+          font-size: 14px;
+          font-weight: 500;
+          color: var(--color-ink);
+          white-space: nowrap;
+          letter-spacing: 0.02em;
+        }
+        .col-content {
+          position: absolute;
+          inset: 0;
+          padding: 32px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          opacity: 0;
+          transition: opacity 0.35s ease 0.15s;
+        }
+        .col-panel.is-active .col-content {
+          opacity: 1;
+        }
+        .col-panel.is-active::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 15%;
+          bottom: 15%;
+          width: 3px;
+          background: var(--color-vermillion);
+          border-radius: 0 2px 2px 0;
+        }
+        .col-panel:not(.is-active):hover {
+          background: var(--color-warm-gray);
+        }
+        @media (max-width: 640px) {
+          .col-panel {
+            flex: 0 0 48px;
+          }
+          .col-panel.is-active {
+            flex: 0 0 auto;
+            min-height: 200px;
+          }
+          .col-label-text {
+            writing-mode: horizontal-tb;
+            transform: none;
+            font-size: 13px;
+          }
+          .col-content {
+            position: relative;
+            padding: 20px;
+          }
+          .col-panel.is-active::before {
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            height: auto;
+          }
+        }
+      </style>
+
+      <script>
+        document.querySelectorAll('[data-col-accordion]').forEach((accordion) => {
+          const panels = accordion.querySelectorAll('[data-col-panel]');
+          panels.forEach((panel) => {
+            panel.addEventListener('click', () => {
+              if (panel.classList.contains('is-active')) return;
+              panels.forEach((p) => p.classList.remove('is-active'));
+              panel.classList.add('is-active');
+            });
+          });
+        });
+      </script>
+    </Container>
+  </section>
+
+  <!-- Case study -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <a href="/zh/work/langnese" class="block bg-[var(--color-rice-paper)] rounded-[10px] p-[48px] max-[640px]:p-[32px_20px] group">
+        <div class="flex gap-[48px] max-[768px]:flex-col items-center">
+          <div class="flex-1 min-w-0">
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[12px]">案例研究</p>
+            <h3 class="text-[24px] max-[640px]:text-[20px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[12px]">Langnese：重新定位德国头号蜂蜜品牌，加速拓展中国市场</h3>
+            <p class="text-[15px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[20px]">这个德国领先的蜂蜜品牌需要为中国市场打磨更精准的定位。一套九大支柱的结构化方案打开了新渠道、触达了新受众，并带动了增长势头。</p>
+            <span class="text-[14px] font-medium text-[var(--color-vermillion)] group-hover:underline">查看案例 →</span>
+          </div>
+          <img
+            src="/images/clients/Langnese/Langnese-Honey.png"
+            alt="Langnese 蜂蜜中国市场产品线"
+            class="w-[45%] max-[768px]:w-full aspect-[16/10] object-cover rounded-[10px]"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </a>
+    </Container>
+  </section>
+
+  <GettingStarted
+    heading="从第一次通话到培训交付，两周内完成。"
+    steps={gettingStartedSteps}
+    backgroundImage="/images/getting-started/training-consulting.png"
+    crossLinks={[
+      { label: '策略与投放', href: '/zh/services/strategy-campaigns' },
+      { label: '内容制作', href: '/zh/services/content-production' },
+      { label: '市场进入', href: '/zh/services/market-entry' },
+    ]}
+  />
+
+  <FaqAccordion faqs={faqs} subtitle="关于 TheRedScroll 培训与咨询服务，你需要了解的一切。" />
+
+</PageLayout>

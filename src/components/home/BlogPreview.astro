@@ -24,14 +24,19 @@ const posts = allPosts
     title: post.data.title,
     readingTime: `${Math.ceil(post.body!.split(/\s+/).length / 200)} min`,
     date: new Date(post.data.publishDate).toLocaleDateString(
-      lang === 'fr' ? 'fr-FR' : 'en-US',
+      lang === 'zh' ? 'zh-CN' : lang === 'fr' ? 'fr-FR' : 'en-US',
       { month: 'long', year: 'numeric' }
     ),
     slug: lp(`/insights/${post.id}`),
     featuredImage: post.data.featuredImage,
   }));
 
-const sectionText = lang === 'fr' ? {
+const sectionText = lang === 'zh' ? {
+  overline: '行业洞察',
+  heading: '我们最近在写些什么。',
+  readingLabel: '阅读',
+  cta: '查看更多文章',
+} : lang === 'fr' ? {
   overline: 'Publications',
   heading: 'Nos derniers articles.',
   readingLabel: 'de lecture',

@@ -1,0 +1,148 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import Button from '../../../components/ui/Button.astro';
+import GettingStarted from '../../../components/sections/GettingStarted.astro';
+
+const services = [
+  {
+    title: '策略、营销活动与数据分析',
+    description: '我们深入分析您的市场，制定完整计划，操盘营销活动，追踪真正有价值的指标。从平台选择到月度复盘，全程把控。',
+    href: '/zh/services/strategy-campaigns',
+    icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 6-8"/></svg>`,
+  },
+  {
+    title: '广告投放',
+    description: '覆盖WeChat、Douyin、RedNote、Weibo等主流平台的媒体采购。我们负责策划、投放、素材制作和持续优化。',
+    href: '/zh/services/advertising',
+    icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>`,
+  },
+  {
+    title: '内容制作',
+    description: '为每个中国社交平台量身打造视觉、视频和文案，完全符合本地调性。AI驱动生产效率，创意方向始终由人把控。',
+    href: '/zh/services/content-production',
+    icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/></svg>`,
+  },
+  {
+    title: '达人营销',
+    description: '在Douyin、RedNote、Weibo和Bilibili上开展KOL和KOC合作。从达人筛选、报价谈判、创意简报到效果追踪，全流程管理。',
+    href: '/zh/services/influencer-marketing',
+    icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
+  },
+  {
+    title: '中国市场入驻',
+    description: '开设账号、平台配置、ICP备案和本地化适配。让您的品牌在中国社交媒体上建立完整存在所需的一切。',
+    href: '/zh/services/market-entry',
+    icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>`,
+  },
+  {
+    title: 'CRM与私域运营',
+    description: '搭建WeCom体系、运营社群、设计会员忠诚计划和留存链路。将您的粉丝转化为持续复购的客户。',
+    href: '/zh/services/crm-private-domain',
+    icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>`,
+  },
+  {
+    title: '培训与咨询',
+    description: '实操工作坊、团队辅导和平台诊断。适合希望内部积累能力、不再依赖外部供应商的品牌。',
+    href: '/zh/services/training-consulting',
+    icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>`,
+  },
+];
+
+const gettingStartedSteps = [
+  {
+    title: '初次沟通',
+    description: '了解您的品牌、目标以及进入中国市场的准备程度。没有销售套路，只有关键问题。',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
+  },
+  {
+    title: '报价方案',
+    description: '范围明确，价格固定。每项交付物白纸黑字写清楚。签约前您就知道自己能得到什么。',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>',
+  },
+  {
+    title: '两周内上线',
+    description: '策略交付、营销活动搭建完毕、首批内容发布。签约后两周。',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
+  },
+];
+---
+
+<PageLayout
+  title="服务 | TheRedScroll"
+  description="为国际品牌量身定制的中国社交媒体服务。策略、内容、广告、达人营销、市场入驻、CRM和培训。固定范围，固定价格。"
+  lang="zh"
+>
+
+  <!-- Hero — Dark banner -->
+  <section class="relative w-full overflow-hidden bg-[var(--color-ink)]">
+    <div class="absolute inset-0 bg-cover bg-center opacity-[0.12]" style="background-image: url('/images/hero/services-hero.png')" aria-hidden="true"></div>
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+        我们的服务
+      </p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        品牌在中国增长所需的一切。
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        七项服务，一支团队。固定范围，固定价格，团队常驻上海。
+      </p>
+      <div class="flex flex-wrap justify-center gap-[12px]">
+        <Button href="/zh/pricing" variant="primary">查看价格</Button>
+        <Button href="#all-services" variant="secondary-dark">查看服务</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service cards grid -->
+  <section id="all-services" class="py-[96px] max-[640px]:py-[64px]">
+    <Container>
+      <div class="max-w-[680px] mb-[48px]">
+        <SectionBar />
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">
+          我们做什么
+        </p>
+        <h2 class="text-[32px] max-[640px]:text-[24px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[12px]">
+          专为中国社交平台打造的服务。
+        </h2>
+        <p class="text-[16px] font-normal leading-[1.5] text-[var(--color-stone)]">
+          每项服务可以独立使用，也可以组合搭配。您选择自己需要的。
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 max-[768px]:grid-cols-1 gap-[24px]">
+        {services.map((service) => (
+          <a
+            href={service.href}
+            class="group block bg-[var(--color-rice-paper)] rounded-[12px] p-[32px] max-[640px]:p-[24px] transition-colors duration-[0.15s] hover:bg-[#F0EAE4]"
+          >
+            <div class="w-[56px] h-[56px] rounded-[12px] bg-[var(--color-ink)] flex items-center justify-center text-[#FFFFFF] mb-[20px]">
+              <Fragment set:html={service.icon} />
+            </div>
+            <h3 class="text-[20px] max-[640px]:text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">
+              {service.title}
+            </h3>
+            <p class="text-[15px] font-normal leading-[1.5] text-[var(--color-stone)] mb-[16px]">
+              {service.description}
+            </p>
+            <span class="inline-flex items-center gap-[6px] text-[14px] font-medium text-[var(--color-vermillion)]">
+              了解更多
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-[0.15s] group-hover:translate-x-[4px]">
+                <path d="M5 12h14"/><path d="M12 5l7 7-7 7"/>
+              </svg>
+            </span>
+          </a>
+        ))}
+      </div>
+    </Container>
+  </section>
+
+  <!-- Getting started -->
+  <GettingStarted
+    heading="从首次通话到营销活动上线，两周搞定。"
+    steps={gettingStartedSteps}
+    backgroundImage="/images/team/china-office.png"
+  />
+
+</PageLayout>

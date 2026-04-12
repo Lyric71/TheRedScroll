@@ -1,0 +1,148 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import Button from '../../../components/ui/Button.astro';
+import GettingStarted from '../../../components/sections/GettingStarted.astro';
+
+const platforms = [
+  {
+    title: 'WeChat',
+    stat: '14亿+ 月活用户',
+    description: '公众号、小程序、视频号、企业微信和微信支付。这款应用贯穿中国人日常生活的每一个角落。',
+    href: '/zh/platforms/wechat',
+    logo: '/images/platforms/wechat-logo.svg',
+  },
+  {
+    title: 'RedNote / 小红书',
+    stat: '3亿+ 月活用户',
+    description: '消费者评价、带购物链接的笔记和生活方式内容。中国消费者在下单之前，首先会来这里做功课。',
+    href: '/zh/platforms/rednote',
+    logo: '/images/platforms/rednote-logo.svg',
+  },
+  {
+    title: '抖音',
+    stat: '8亿+ 日活用户',
+    description: '短视频、直播带货和信息流广告。在中国，从产品发现到购买转化，没有比这更短的路径了。',
+    href: '/zh/platforms/douyin',
+    logo: '/images/platforms/douyin-logo.svg',
+  },
+  {
+    title: '微博',
+    stat: '6.05亿+ 月活用户',
+    description: '大众传播、媒体公关、热搜话题和KOL合作。品牌造势的中国公共广场。',
+    href: '/zh/platforms/weibo',
+    logo: '/images/platforms/weibo-logo.svg',
+  },
+  {
+    title: '更多平台',
+    stat: '14+ 个补充平台',
+    description: 'Bilibili、快手、知乎、今日头条、美团、大众点评、拼多多、QQ等。我们覆盖全部阵地。',
+    href: '/zh/platforms/others',
+    icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>`,
+  },
+];
+
+const gettingStartedSteps = [
+  {
+    title: '初次沟通',
+    description: '了解您的品牌、目标以及进入中国市场的准备程度。没有推销环节，只有精准的问题。',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
+  },
+  {
+    title: '提案方案',
+    description: '范围明确，价格固定。每一项交付物都白纸黑字写清楚。签约之前，您就已经清楚将获得什么。',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>',
+  },
+  {
+    title: '两周内上线运营',
+    description: '策略交付、推广配置完毕、首批内容上线。合同签署后两周内完成。',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
+  },
+];
+---
+
+<PageLayout
+  title="中国社交媒体平台 | TheRedScroll"
+  description="WeChat、小红书、抖音、微博及14个以上中国平台。实用指南、受众数据，以及适合国际品牌的运营策略。"
+  lang="zh"
+>
+
+  <!-- Hero — Dark banner -->
+  <section class="relative w-full overflow-hidden bg-[var(--color-ink)]">
+    <div class="absolute inset-0 bg-cover bg-center opacity-[0.15]" style="background-image: url('/images/hero/platforms-hero.png')" aria-hidden="true"></div>
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+        平台
+      </p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        您的受众已经在这些平台上了。
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        四大核心平台，十四个补充平台。每一个都有自己的规则，我们全部了然于胸。
+      </p>
+      <div class="flex flex-wrap justify-center gap-[12px]">
+        <Button href="/zh/pricing" variant="primary">查看报价</Button>
+        <Button href="#all-platforms" variant="secondary-dark">了解各平台</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Platform cards grid -->
+  <section id="all-platforms" class="py-[96px] max-[640px]:py-[64px]">
+    <Container>
+      <div class="max-w-[680px] mb-[48px]">
+        <SectionBar />
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">
+          我们的服务范围
+        </p>
+        <h2 class="text-[32px] max-[640px]:text-[24px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[12px]">
+          您的品牌在中国需要的所有平台。
+        </h2>
+        <p class="text-[16px] font-normal leading-[1.5] text-[var(--color-stone)]">
+          不同的受众、不同的形式、不同的规则。我们在每一个平台上运营推广。
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 max-[768px]:grid-cols-1 gap-[24px]">
+        {platforms.map((platform) => (
+          <a
+            href={platform.href}
+            class="group block bg-[var(--color-rice-paper)] rounded-[12px] p-[32px] max-[640px]:p-[24px] transition-colors duration-[0.15s] hover:bg-[#F0EAE4]"
+          >
+            <div class="w-[56px] h-[56px] rounded-[12px] bg-[var(--color-ink)] flex items-center justify-center mb-[20px]">
+              {platform.logo ? (
+                <img src={platform.logo} alt={platform.title} width="28" height="28" style="filter: brightness(0) invert(1);" />
+              ) : (
+                <span class="text-[#FFFFFF]"><Fragment set:html={platform.icon} /></span>
+              )}
+            </div>
+            <h3 class="text-[20px] max-[640px]:text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[4px]">
+              {platform.title}
+            </h3>
+            <p class="text-[13px] font-medium text-[var(--color-vermillion)] mb-[8px]">
+              {platform.stat}
+            </p>
+            <p class="text-[15px] font-normal leading-[1.5] text-[var(--color-stone)] mb-[16px]">
+              {platform.description}
+            </p>
+            <span class="inline-flex items-center gap-[6px] text-[14px] font-medium text-[var(--color-vermillion)]">
+              了解更多
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-[0.15s] group-hover:translate-x-[4px]">
+                <path d="M5 12h14"/><path d="M12 5l7 7-7 7"/>
+              </svg>
+            </span>
+          </a>
+        ))}
+      </div>
+    </Container>
+  </section>
+
+  <!-- Getting started -->
+  <GettingStarted
+    heading="从首次沟通到推广上线，只需两周。"
+    steps={gettingStartedSteps}
+    backgroundImage="/images/team/china-office.png"
+  />
+
+</PageLayout>

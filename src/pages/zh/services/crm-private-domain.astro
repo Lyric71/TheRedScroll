@@ -1,0 +1,242 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+import FaqAccordion from '../../../components/sections/FaqAccordion.astro';
+import GettingStarted from '../../../components/sections/GettingStarted.astro';
+
+
+const faqs = [
+  { q: '没有线下门店，WeCom还有用吗？', a: '只要团队中有人在直接和客户沟通，答案就是有用。客户经理、销售代表、售后服务人员都算在内。如果你的业务完全依赖线上交易，没有任何人工互动，那可以把精力集中在小程序CRM和社群运营上。不过话说回来，大多数以为用不上WeCom的品牌，在看到实际效果后都改变了主意。' },
+  { q: '多大的用户规模才适合启动？', a: '门槛大约在2000到3000名活跃粉丝左右。低于这个数字，自动化流程搭建和社群运营的投入很难收回。超过这个规模，回报会明显加速。' },
+  { q: '私域能替代广告吗？', a: '私域能降低对广告的依赖，但不能完全取代。公域流量依然是吸引新用户的必经之路。私域的作用在于留住用户、推动复购。运营得当的品牌会让两条线并行推进，随着时间推移，对广告的依赖逐月下降。' },
+  { q: '你们使用哪些CRM工具？', a: '微信原生场景下，我们通常使用腾讯企点或纷享销客。如果品牌已经在用Salesforce、HubSpot或Dynamics，我们会搭建连接层保持数据同步。最终选择取决于你们内部现有的工具体系。' },
+  { q: '微信群和会员积分体系有什么区别？', a: '会员体系记录积分，微信群承载对话。群成员之间可以交流、分享体验、评价内容、参与活动。表现最好的品牌会把两者结合起来：CRM负责数据和自动化，社群负责人情味。' },
+  { q: '销售人员离职了怎么办？', a: '用个人微信，客户联系人会跟着员工一起消失。用WeCom，客户关系归属于企业。离职员工的客户会被重新分配，所有聊天记录完整保留，无需从头介绍。' },
+  { q: '你们如何衡量成效？', a: '留存率、复购率、客户终身价值、社群活跃度、CRM活动转化率、私域收入在总营收中的占比。所有指标按月追踪并出具报告。' },
+  { q: '只和微信有关吗？', a: '基本上是的。微信是唯一能提供完整闭环的平台：公众号、小程序、WeCom、微信群、视频号、微信支付。有些品牌会在抖音粉丝群或小红书社区做些轻量运营，但这些工具的能力相比之下还是有限的。任何认真的私域策略都从微信开始。' },
+];
+
+const gettingStartedSteps = [
+  {
+    title: '初次沟通。',
+    description: '了解你的品牌、现有用户基础，以及私域如何融入你的增长路径。',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
+  },
+  {
+    title: 'CRM方案规划。',
+    description: 'WeCom部署、社群策略、自动化流程、CRM集成方案，逐一明确范围。',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>',
+  },
+  {
+    title: '三周内上线运行。',
+    description: 'WeCom配置完成，首批社群启动，自动化流程就位。社区从第一天起就开始成形。',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
+  },
+];
+---
+
+<PageLayout
+  title="微信CRM与私域运营 | TheRedScroll"
+  description="微信CRM、WeCom配置、中国私域运营策略。社群运营、小程序CRM、客户激活。上海本地团队。"
+  lang="zh"
+>
+
+  <!-- Hero — Dark hero banner -->
+  <section class="relative w-full overflow-hidden bg-[var(--color-ink)]">
+    <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/crm-private-domain-hero.png')" aria-hidden="true"></div>
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+        CRM与私域运营
+      </p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        你的粉丝是最有价值的资产。把客户关系牢牢掌握在自己手中。
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        在微信中建立直接、长期的客户关系。不抽平台佣金，不让算法替你决定谁能看到什么。
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/zh/contact">预约沟通</Button>
+        <Button variant="secondary-dark" href="#what-we-do">了解我们的服务</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why private domain matters -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        <div class="relative col-span-2 row-span-2 max-[640px]:col-span-1 max-[640px]:row-span-1 bg-[#1A1A1A] rounded-[12px] p-[32px] max-[640px]:p-[20px] flex flex-col justify-between min-h-[320px] max-[640px]:min-h-0 overflow-hidden">
+          <svg class="absolute bottom-[-20px] right-[-20px] w-[260px] h-[260px] opacity-[0.06]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+          <div class="relative z-[1]">
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">为什么这件事很重要</p>
+            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[16px]">你只是在租用流量，平台才是真正的拥有者。</h2>
+            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[400px]">算法决定谁能看到你的内容。广告成本一夜之间涨了30%？你的触达范围缩水，却无能为力。私域运营让品牌重新掌握主动权。</p>
+          </div>
+          <div class="relative z-[1] mt-[24px]">
+            <Button variant="secondary-dark" href="#what-we-do">了解我们的服务</Button>
+          </div>
+        </div>
+        <div class="relative overflow-hidden bg-[#F0F1F4] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">客户关系归你所有</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">微信公众号粉丝、WeCom联系人、群成员、小程序用户。这些人主动选择关注你。你可以直接触达他们，无需向平台支付佣金。</p>
+        </div>
+        <div class="relative overflow-hidden bg-[#1A1A1A] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">复购不断累积</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.6)]">私域的转化率通常远超公域流量。有些品牌发现，私域客户贡献了超过85%的复购收入。</p>
+        </div>
+        <div class="relative overflow-hidden bg-[#CC3333] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 13L2 9z"/><path d="M2 9h20"/><path d="M12 22L6 9"/><path d="M12 22l6-13"/><path d="M6 3l6 6 6-6"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">单客价值显著更高</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.8)]">微信群限时抢购、WeCom一对一顾问服务、VIP优先体验、个性化推荐。规模更小的用户群，创造远超预期的价值。</p>
+        </div>
+        <div class="relative overflow-hidden bg-[#E8E0D8] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">对广告的依赖逐步降低</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">当社群达到一定规模后，私域的投产比将超过其他所有渠道。运营得当的品牌会看到广告预算逐季度递减。</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- WeChat vs WeCom — dark section -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="bg-[#1A1A1A] rounded-[12px] p-[48px] max-[640px]:p-[32px_20px]">
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">基础概念</p>
+        <h2 class="text-[#FFFFFF] text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] mb-[32px]">WeChat和WeCom：有什么区别</h2>
+        <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[24px] mb-[32px]">
+          <div>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">WeChat（微信）</h3>
+            <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+              面向大众的社交应用，13亿用户。即时通讯、朋友圈、公众号、小程序、微信支付、视频号。你的客户就生活在这里。
+            </p>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">WeCom（企业微信）</h3>
+            <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+              企业端应用，独立于微信之外。专为企业与客户沟通、团队协作而设计。它将1400万家企业与7.5亿微信用户连接在一起。
+            </p>
+          </div>
+        </div>
+        <div class="max-w-[680px] flex flex-col gap-[24px]">
+          <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+            你的团队直接在客户的个人微信中发送消息。消息出现在客户的日常对话列表里，看起来就像朋友之间的交流，而非批量推送的营销信息。
+          </p>
+          <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+            销售人员不再用个人微信添加客户，那些联系人企业既看不到，也无法追踪。他们使用隶属于公司的WeCom账号。对话有据可查，数据同步到CRM。当有人离开团队，客户关系依然留在企业内部。
+          </p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- What we do -->
+  <section id="what-we-do" class="mt-[96px] max-[640px]:mt-[64px] scroll-mt-[76px]">
+    <Container>
+      <SectionBar />
+      <SectionHeading overline="我们的服务">WeCom配置与CRM集成</SectionHeading>
+
+      <div class="rounded-[12px] overflow-hidden mt-[24px]">
+        <img src="/images/what-we-do/crm-private-domain.png" alt="TheRedScroll团队正在配置WeCom CRM流程" class="w-full aspect-[5/2] max-[640px]:aspect-[16/10] object-cover" loading="lazy" decoding="async" />
+      </div>
+
+      <div class="grid grid-cols-3 max-[768px]:grid-cols-1 gap-[24px] -mt-[72px] max-[768px]:-mt-[32px] px-[32px] max-[768px]:px-[0px] relative z-[1]">
+        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
+          <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
+            <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">WeCom部署</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">让WeCom快速上线并打通所有工具。开通账号、分配角色、对接公众号、小程序和CRM。所有客户数据汇聚在同一个地方。</p>
+        </div>
+        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
+          <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
+            <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">微信CRM与小程序</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">CRM层直接嵌入微信。客户档案、购买记录、会员等级、优惠券发放、精准推送、自动化召回，全部在一个应用内完成。</p>
+        </div>
+        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
+          <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
+            <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">私域运营策略</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">渠道选择、公域到私域的引流路径、分层触达节奏、效果衡量体系。PIPL合规从一开始就内置其中。</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Community building -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <SectionBar />
+      <SectionHeading overline="社群运营">社群搭建与持续活跃</SectionHeading>
+
+      <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px] mt-[24px]">
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <img src="/images/crm/group-segmentation.svg" alt="" class="w-full max-w-[280px] mb-[20px]" />
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">社群分层</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">按客户画像、兴趣偏好、地理位置、消费记录对群进行划分。每个群有独立的内容节奏、专属运营人员和定期活动。</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <img src="/images/crm/activations.svg" alt="" class="w-full max-w-[280px] mb-[20px]" />
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">激活运营</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">会员专属新品抢先看、群内专享价、创始人答疑、用户共创内容挑战、投票调研并以结果驱动行动。这不是群发消息，而是在对话中建立深度关系。</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <img src="/images/crm/brand-personas.svg" alt="" class="w-full max-w-[280px] mb-[20px]" />
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">品牌人设</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">有些品牌更进一步，让一个虚拟人物来运营社群。一个名字，一种语气，一段故事。群的氛围不再像官方通知，更像朋友之间的建议。执行到位的话，这是我们见过的最有力的社群手段之一。</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <img src="/images/crm/crm-automation.svg" alt="" class="w-full max-w-[280px] mb-[20px]" />
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">CRM自动化</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">向500名VIP定向推送新品首发。发起限时抢购并实时追踪转化。自动召回90天未消费的客户。一旦搭建完成，核心流程无需人工干预即可持续运转。</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Case study -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <a href="/zh/work/viessmann" class="block bg-[var(--color-rice-paper)] rounded-[10px] p-[48px] max-[640px]:p-[32px_20px] group">
+        <div class="flex gap-[48px] max-[768px]:flex-col items-center">
+          <div class="flex-1 min-w-0">
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[12px]">案例研究</p>
+            <h3 class="text-[24px] max-[640px]:text-[20px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[12px]">Viessmann：社交媒体如何驱动中国市场的电商增长</h3>
+            <p class="text-[15px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[20px]">抖音为漏斗顶部注入流量。小红书完成种草。WeCom实现转化和复购。线上营收逐月递增。</p>
+            <span class="text-[14px] font-medium text-[var(--color-vermillion)] group-hover:underline">查看案例详情 →</span>
+          </div>
+          <img
+            src="/images/clients/Viessmann/Viessman-climate-solution.avif"
+            alt="Viessmann中国气候方案"
+            class="w-[45%] max-[768px]:w-full aspect-[16/10] object-cover rounded-[10px]"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </a>
+    </Container>
+  </section>
+
+  <GettingStarted
+    heading="从零到私域上线运行，只需三周。"
+    steps={gettingStartedSteps}
+    backgroundImage="/images/getting-started/crm-private-domain.png"
+    crossLinks={[
+      { label: '策略与推广', href: '/zh/services/strategy-campaigns' },
+      { label: '市场进入', href: '/zh/services/market-entry' },
+      { label: '广告投放', href: '/zh/services/advertising' },
+    ]}
+  />
+
+  <FaqAccordion faqs={faqs} subtitle="关于CRM和私域运营，你需要了解的一切。TheRedScroll为你解答。" />
+
+
+</PageLayout>

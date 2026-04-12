@@ -2,7 +2,7 @@
 import type { NavItem } from '../../data/navigation';
 import { getLocalizedNav } from '../../i18n/navigation';
 import { t } from '../../i18n/ui';
-import { alternateUrl, localizedPath } from '../../i18n/config';
+import { alternateUrl, localizedPath, getAlternateLangs, languages } from '../../i18n/config';
 import type { Lang } from '../../i18n/config';
 import Button from '../ui/Button.astro';
 
@@ -12,10 +12,10 @@ interface Props {
 
 const { lang = 'en' } = Astro.props;
 const nav = getLocalizedNav(lang);
-const altLang = lang === 'en' ? 'fr' : 'en';
+const altLangs = getAlternateLangs(lang);
 const currentPath = Astro.url.pathname;
-const switchUrl = alternateUrl(currentPath, altLang as Lang);
 const contactHref = localizedPath('/contact', lang);
+const langLabels: Record<string, string> = { en: 'EN', fr: 'FR', zh: '中文' };
 ---
 
 <header class="fixed top-0 left-0 w-full z-[1000] h-[60px] max-[640px]:h-[52px] bg-[#1A1A1A]">
@@ -85,13 +85,17 @@ const contactHref = localizedPath('/contact', lang);
       ))}
 
       <!-- Language switcher -->
-      <a
-        href={switchUrl}
-        class="text-[rgba(255,255,255,0.5)] text-[13px] font-medium tracking-[0.03em] transition-colors duration-150 hover:text-[#FFFFFF] border-[0.5px] border-[rgba(255,255,255,0.15)] rounded-[4px] px-[8px] py-[4px]"
-        aria-label={altLang === 'fr' ? 'Voir en français' : 'Switch to English'}
-      >
-        {t('lang.switch', lang)}
-      </a>
+      <div class="flex items-center gap-[6px]">
+        {altLangs.map((al) => (
+          <a
+            href={alternateUrl(currentPath, al)}
+            class="text-[rgba(255,255,255,0.5)] text-[13px] font-medium tracking-[0.03em] transition-colors duration-150 hover:text-[#FFFFFF] border-[0.5px] border-[rgba(255,255,255,0.15)] rounded-[4px] px-[8px] py-[4px]"
+            aria-label={languages[al]}
+          >
+            {langLabels[al]}
+          </a>
+        ))}
+      </div>
 
       <Button variant="primary" href={contactHref}>
         {t('nav.bookCall', lang)}
@@ -149,12 +153,14 @@ const contactHref = localizedPath('/contact', lang);
 
   <!-- Mobile language switcher -->
   <div class="mt-[16px] pt-[16px] border-t-[0.5px] border-[rgba(255,255,255,0.1)]">
-    <a
-      href={switchUrl}
-      class="block py-[12px] min-h-[44px] flex items-center text-[rgba(255,255,255,0.5)] text-[14px] font-medium transition-colors duration-150 hover:text-[#FFFFFF]"
-    >
-      {altLang === 'fr' ? 'Français' : 'English'}
-    </a>
+    {altLangs.map((al) => (
+      <a
+        href={alternateUrl(currentPath, al)}
+        class="block py-[12px] min-h-[44px] flex items-center text-[rgba(255,255,255,0.5)] text-[14px] font-medium transition-colors duration-150 hover:text-[#FFFFFF]"
+      >
+        {languages[al]}
+      </a>
+    ))}
   </div>
 
   <div class="mt-[24px]">

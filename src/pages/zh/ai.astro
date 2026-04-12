@@ -1,0 +1,455 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import Container from '../../components/ui/Container.astro';
+import SectionBar from '../../components/ui/SectionBar.astro';
+import SectionHeading from '../../components/ui/SectionHeading.astro';
+import Button from '../../components/ui/Button.astro';
+---
+
+<PageLayout
+  title="AI改变了一切 | TheRedScroll"
+  description="人工智能贯穿我们的每一项服务、每一个平台、每一位客户。策略由人主导,创意方向亦然。AI则负责处理其余一切。"
+  lang="zh"
+>
+
+  <!-- Hero — same pattern as about page: background image + dark overlay -->
+  <section class="relative w-full min-h-[600px] max-[640px]:min-h-[500px] overflow-hidden">
+    <img
+      src="/images/ai/ai-hero.png"
+      alt=""
+      class="absolute inset-0 w-full h-full object-cover object-center"
+      aria-hidden="true"
+    />
+    <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.82]" aria-hidden="true"></div>
+
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+        AI技术
+      </p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        AI改变了一切。我们已将它融入日常工作。
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        贯穿每项服务,覆盖每个平台,服务每一位客户。
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/zh/contact">预约沟通</Button>
+        <Button variant="secondary-dark" href="#how-it-works">了解运作方式</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro — two-column, same as "Why we exist" on about page -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[48px] max-[640px]:gap-[32px] items-start">
+        <!-- Left -->
+        <div>
+          <SectionBar />
+          <SectionHeading overline="为什么选择AI">我们不谈AI概念,而是将它融入我们交付的每一项成果。</SectionHeading>
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            市场调研、社交媒体监测、数据报告、绩效分析、项目管理、文案撰写、图片与视频制作。每一项服务,每一位客户,每一天。
+          </p>
+        </div>
+        <!-- Right -->
+        <div class="flex flex-col pt-[48px] max-[640px]:pt-[0px]">
+          <div class="flex flex-col gap-[24px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)] w-full">
+            <p>
+              这不是要取代任何人,而是让每个人都能更高效地工作。AI承担重复性任务,团队则专注于真正重要的事:策略、创意和客户关系。
+            </p>
+            <p>
+              这就是"谈论AI"和"真正使用AI"之间的区别。
+            </p>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- AI does the work — two-column with SVG illustration (same as "Our mission" on about) -->
+  <section id="how-it-works" class="mt-[96px] max-[640px]:mt-[64px] scroll-mt-[76px]">
+    <Container>
+      <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[48px] max-[640px]:gap-[32px] items-center">
+        <div class="w-full bg-[#F0F1F4] rounded-[8px] p-[32px] max-[640px]:p-[20px]" aria-label="AI赋能工作流程的每一个环节">
+          <svg viewBox="0 0 440 400" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+            <!-- Title -->
+            <text x="220" y="24" text-anchor="middle" fill="#5C5C5C" font-size="10" font-weight="500" font-family="Inter, sans-serif" letter-spacing="0.05em">AI辅助工作流程</text>
+
+            <!-- Step 1: Research -->
+            <rect x="20" y="48" width="400" height="52" rx="6" fill="#FFFFFF" stroke="#E8E0D8" stroke-width="0.5" />
+            <rect x="20" y="48" width="4" height="52" rx="2" fill="#CC3333" />
+            <text x="40" y="68" fill="#CC3333" font-size="9" font-weight="500" font-family="Inter, sans-serif">01</text>
+            <text x="60" y="68" fill="#1A1A1A" font-size="11" font-weight="500" font-family="Inter, sans-serif">调研</text>
+            <text x="40" y="86" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">AI筛查数千条帖子和竞争对手账号</text>
+            <rect x="340" y="58" width="68" height="22" rx="4" fill="#CC3333" opacity="0.1" stroke="#CC3333" stroke-width="0.5" />
+            <text x="374" y="73" text-anchor="middle" fill="#CC3333" font-size="7" font-weight="500" font-family="Inter, sans-serif">以小时计,非以周计</text>
+
+            <!-- Arrow -->
+            <line x1="220" y1="100" x2="220" y2="116" stroke="#E8E0D8" stroke-width="1.5" />
+            <polygon points="215,114 220,122 225,114" fill="#E8E0D8" />
+
+            <!-- Step 2: Content -->
+            <rect x="20" y="124" width="400" height="52" rx="6" fill="#FFFFFF" stroke="#E8E0D8" stroke-width="0.5" />
+            <rect x="20" y="124" width="4" height="52" rx="2" fill="#CC3333" />
+            <text x="40" y="144" fill="#CC3333" font-size="9" font-weight="500" font-family="Inter, sans-serif">02</text>
+            <text x="60" y="144" fill="#1A1A1A" font-size="11" font-weight="500" font-family="Inter, sans-serif">内容制作</text>
+            <text x="40" y="162" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">AI撰写文案,通过HubStudio.ai生成视觉素材</text>
+            <rect x="340" y="134" width="68" height="22" rx="4" fill="#CC3333" opacity="0.1" stroke="#CC3333" stroke-width="0.5" />
+            <text x="374" y="149" text-anchor="middle" fill="#CC3333" font-size="7" font-weight="500" font-family="Inter, sans-serif">提速80%</text>
+
+            <!-- Arrow -->
+            <line x1="220" y1="176" x2="220" y2="192" stroke="#E8E0D8" stroke-width="1.5" />
+            <polygon points="215,190 220,198 225,190" fill="#E8E0D8" />
+
+            <!-- Step 3: Review (human) -->
+            <rect x="20" y="200" width="400" height="52" rx="6" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1" />
+            <rect x="20" y="200" width="4" height="52" rx="2" fill="#1A1A1A" />
+            <text x="40" y="220" fill="#1A1A1A" font-size="9" font-weight="500" font-family="Inter, sans-serif">03</text>
+            <text x="60" y="220" fill="#1A1A1A" font-size="11" font-weight="500" font-family="Inter, sans-serif">人工审核</text>
+            <text x="40" y="238" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">母语编辑润色修改,创意团队逐一审核。</text>
+            <rect x="340" y="210" width="68" height="22" rx="4" fill="#1A1A1A" opacity="0.08" stroke="#1A1A1A" stroke-width="0.5" />
+            <text x="374" y="225" text-anchor="middle" fill="#1A1A1A" font-size="7" font-weight="500" font-family="Inter, sans-serif">100%人工</text>
+
+            <!-- Arrow -->
+            <line x1="220" y1="252" x2="220" y2="268" stroke="#E8E0D8" stroke-width="1.5" />
+            <polygon points="215,266 220,274 225,266" fill="#E8E0D8" />
+
+            <!-- Step 4: Reporting -->
+            <rect x="20" y="276" width="400" height="52" rx="6" fill="#FFFFFF" stroke="#E8E0D8" stroke-width="0.5" />
+            <rect x="20" y="276" width="4" height="52" rx="2" fill="#CC3333" />
+            <text x="40" y="296" fill="#CC3333" font-size="9" font-weight="500" font-family="Inter, sans-serif">04</text>
+            <text x="60" y="296" fill="#1A1A1A" font-size="11" font-weight="500" font-family="Inter, sans-serif">数据报告</text>
+            <text x="40" y="314" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">AI汇总数据,策略师负责解读分析。</text>
+            <rect x="340" y="286" width="68" height="22" rx="4" fill="#CC3333" opacity="0.1" stroke="#CC3333" stroke-width="0.5" />
+            <text x="374" y="301" text-anchor="middle" fill="#CC3333" font-size="7" font-weight="500" font-family="Inter, sans-serif">实时数据</text>
+
+            <!-- Bottom stats -->
+            <line x1="20" y1="348" x2="420" y2="348" stroke="#E8E0D8" stroke-width="0.5" />
+
+            <g transform="translate(20, 364)">
+              <text x="0" y="12" fill="#CC3333" font-size="18" font-weight="500" font-family="Inter, sans-serif">AI</text>
+              <text x="0" y="26" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">承担大量重复工作</text>
+            </g>
+            <g transform="translate(150, 364)">
+              <text x="0" y="12" fill="#1A1A1A" font-size="18" font-weight="500" font-family="Inter, sans-serif">团队</text>
+              <text x="0" y="26" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">掌控策略与思考</text>
+            </g>
+            <g transform="translate(310, 364)">
+              <text x="0" y="12" fill="#1A1A1A" font-size="18" font-weight="500" font-family="Inter, sans-serif">100%</text>
+              <text x="0" y="26" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">人工审核把关</text>
+            </g>
+          </svg>
+        </div>
+        <div>
+          <SectionBar />
+          <SectionHeading overline="运作方式">AI负责执行,我们负责思考。</SectionHeading>
+          <div class="flex flex-col gap-[24px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              我们的社交媒体团队每天都在使用AI。那些耗时却不产生价值的重复性工作被彻底消除,只留下真正有意义的工作。
+            </p>
+            <p>
+              策略由人主导,创意方向由人把控,客户关系由人维系。AI让这三个维度更高效,因为它清除了所有障碍。
+            </p>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- AI vs Human table — two-column with SVG on right (same as "Our vision" on about, reversed) -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[48px] max-[640px]:gap-[32px] items-center">
+        <div>
+          <SectionBar />
+          <SectionHeading overline="分工明确">AI处理规模化任务,团队掌控方向。</SectionHeading>
+          <div class="flex flex-col gap-[24px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              AI用中文和英文撰写内容,我们的团队确立品牌调性和内容支柱。AI制作视觉素材和视频,团队把关创意方向,逐一审核每个元素后才发布。
+            </p>
+            <p>
+              AI将各平台绩效数据整合为结构化报告,策略师深入解读这些数据并据此调整策略。AI筛选数千名KOL(关键意见领袖)资料并识别虚假粉丝,团队最终选定合适的达人并进行商务洽谈。
+            </p>
+          </div>
+          <!-- Callout — same pattern as about page "Our vision" callout -->
+          <div class="bg-[#F0F1F4] border-l-[3px] border-[#CC3333] rounded-none p-[20px] mt-[24px]">
+            <p class="text-[16px] font-normal text-[#1A1A1A] leading-[1.6] m-0">
+              每一条内容在发布前都经过人工审核,无一例外。
+            </p>
+          </div>
+        </div>
+        <div class="w-full bg-[#F0F1F4] rounded-[8px] p-[32px] max-[640px]:p-[20px]" aria-label="AI与团队的职责分工">
+          <svg viewBox="0 0 440 420" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+            <!-- Title -->
+            <text x="220" y="24" text-anchor="middle" fill="#5C5C5C" font-size="10" font-weight="500" font-family="Inter, sans-serif" letter-spacing="0.05em">分工明细</text>
+
+            <!-- Column headers -->
+            <rect x="20" y="44" width="196" height="28" rx="4" fill="#CC3333" opacity="0.1" />
+            <text x="118" y="62" text-anchor="middle" fill="#CC3333" font-size="9" font-weight="500" font-family="Inter, sans-serif" letter-spacing="0.03em">AI负责</text>
+            <rect x="224" y="44" width="196" height="28" rx="4" fill="#1A1A1A" opacity="0.06" />
+            <text x="322" y="62" text-anchor="middle" fill="#1A1A1A" font-size="9" font-weight="500" font-family="Inter, sans-serif" letter-spacing="0.03em">团队负责</text>
+
+            <!-- Row 1 -->
+            <line x1="20" y1="84" x2="420" y2="84" stroke="#E8E0D8" stroke-width="0.5" />
+            <text x="28" y="102" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">撰写中英文内容</text>
+            <text x="232" y="102" fill="#1A1A1A" font-size="8" font-weight="500" font-family="Inter, sans-serif">确立品牌调性和内容支柱</text>
+
+            <!-- Row 2 -->
+            <line x1="20" y1="116" x2="420" y2="116" stroke="#E8E0D8" stroke-width="0.5" />
+            <text x="28" y="134" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">制作视觉素材和视频</text>
+            <text x="232" y="134" fill="#1A1A1A" font-size="8" font-weight="500" font-family="Inter, sans-serif">把关创意方向,逐一审核每个元素</text>
+
+            <!-- Row 3 -->
+            <line x1="20" y1="148" x2="420" y2="148" stroke="#E8E0D8" stroke-width="0.5" />
+            <text x="28" y="166" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">汇总各平台绩效数据</text>
+            <text x="232" y="166" fill="#1A1A1A" font-size="8" font-weight="500" font-family="Inter, sans-serif">深入解读数据并调整策略</text>
+
+            <!-- Row 4 -->
+            <line x1="20" y1="180" x2="420" y2="180" stroke="#E8E0D8" stroke-width="0.5" />
+            <text x="28" y="198" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">监控品牌提及并识别趋势</text>
+            <text x="232" y="198" fill="#1A1A1A" font-size="8" font-weight="500" font-family="Inter, sans-serif">决定利用哪些趋势以及如何利用</text>
+
+            <!-- Row 5 -->
+            <line x1="20" y1="212" x2="420" y2="212" stroke="#E8E0D8" stroke-width="0.5" />
+            <text x="28" y="230" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">跟踪进度和审批流程</text>
+            <text x="232" y="230" fill="#1A1A1A" font-size="8" font-weight="500" font-family="Inter, sans-serif">主持工作坊,提出关键问题</text>
+
+            <!-- Row 6 -->
+            <line x1="20" y1="244" x2="420" y2="244" stroke="#E8E0D8" stroke-width="0.5" />
+            <text x="28" y="262" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">筛查数千条竞品内容</text>
+            <text x="232" y="262" fill="#1A1A1A" font-size="8" font-weight="500" font-family="Inter, sans-serif">选择适合目标受众的平台</text>
+
+            <!-- Row 7 -->
+            <line x1="20" y1="276" x2="420" y2="276" stroke="#E8E0D8" stroke-width="0.5" />
+            <text x="28" y="294" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">起草月度报告初稿</text>
+            <text x="232" y="294" fill="#1A1A1A" font-size="8" font-weight="500" font-family="Inter, sans-serif">提出战略建议</text>
+
+            <!-- Row 8 -->
+            <line x1="20" y1="308" x2="420" y2="308" stroke="#E8E0D8" stroke-width="0.5" />
+            <text x="28" y="326" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">筛选KOL资料,识别虚假粉丝</text>
+            <text x="232" y="326" fill="#1A1A1A" font-size="8" font-weight="500" font-family="Inter, sans-serif">选定达人,洽谈合作</text>
+            <line x1="20" y1="340" x2="420" y2="340" stroke="#E8E0D8" stroke-width="0.5" />
+
+            <!-- Bottom summary -->
+            <g transform="translate(20, 360)">
+              <rect x="0" y="0" width="196" height="40" rx="6" fill="#CC3333" opacity="0.08" />
+              <text x="98" y="17" text-anchor="middle" fill="#CC3333" font-size="14" font-weight="500" font-family="Inter, sans-serif">速度与规模</text>
+              <text x="98" y="32" text-anchor="middle" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">批量处理、数据整合、初稿生成</text>
+            </g>
+            <g transform="translate(224, 360)">
+              <rect x="0" y="0" width="196" height="40" rx="6" fill="#1A1A1A" opacity="0.06" />
+              <text x="98" y="17" text-anchor="middle" fill="#1A1A1A" font-size="14" font-weight="500" font-family="Inter, sans-serif">判断与洞察</text>
+              <text x="98" y="32" text-anchor="middle" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">策略、文化适配、客户关系</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Better content — rice paper card, same as about page "clients who trust" stats section -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="bg-[#F0F1F4] rounded-[10px] p-[48px] max-[640px]:p-[32px]">
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[24px] text-center">高质量内容,而非机器堆砌</p>
+        <div class="grid grid-cols-3 max-[640px]:grid-cols-1 gap-[32px] max-[640px]:gap-[24px] text-center">
+          <div>
+            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[#1A1A1A] mb-[4px]">0</p>
+            <p class="text-[13px] font-normal text-[#5C5C5C] leading-[1.4]">AI生成内容直接发布的数量</p>
+          </div>
+          <div>
+            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[#1A1A1A] mb-[4px]">100%</p>
+            <p class="text-[13px] font-normal text-[#5C5C5C] leading-[1.4]">内容经人工审核</p>
+          </div>
+          <div>
+            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[#CC3333] mb-[4px]">每一篇文案</p>
+            <p class="text-[13px] font-normal text-[#5C5C5C] leading-[1.4]">均由中文母语编辑润色修改</p>
+          </div>
+        </div>
+        <div class="max-w-[680px] mx-auto mt-[32px] flex flex-col gap-[24px] text-center">
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            我们不发布低质量的AI内容。没有千篇一律的帖子,没有机械生硬的文案,没有AI生成的图片直接丢进信息流。在中国社交平台上,这是最快失去粉丝和品牌信誉的方式。
+          </p>
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">
+            AI撰写初稿,中文母语编辑逐篇润色。AI通过HubStudio.ai生成视觉素材,创意团队逐一把关每张图片。AI提取报告数据,策略师分析解读并告诉您关键要点。
+          </p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Where AI shows up — numbered cards, same as about page "Our values" grid -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <SectionBar />
+      <SectionHeading overline="应用场景">AI在哪些环节发挥作用</SectionHeading>
+
+      <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px] mt-[24px]">
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <img src="/images/ai/ai-market-research.svg" alt="市场调研示意图" class="w-full rounded-[8px] mb-[16px]" loading="lazy" decoding="async" />
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">市场调研</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">AI在数小时内完成对数千条帖子、评论和竞品账号的分析,而非耗费数周。</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <img src="/images/ai/ai-social-listening.svg" alt="社交舆情监测示意图" class="w-full rounded-[8px] mb-[16px]" loading="lazy" decoding="async" />
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">社交舆情监测</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">覆盖微信、抖音、小红书、微博等14个以上平台的持续监控。AI实时捕捉趋势变化、情感波动和品牌提及。</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <img src="/images/ai/ai-content-writing.svg" alt="内容撰写示意图" class="w-full rounded-[8px] mb-[16px]" loading="lazy" decoding="async" />
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">文案撰写</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">AI生成中英文初稿,母语编辑针对语调、文化适配和各平台格式要求进行润色调整。</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <img src="/images/ai/ai-image-video.svg" alt="图片与视频制作示意图" class="w-full rounded-[8px] mb-[16px]" loading="lazy" decoding="async" />
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">图片与视频</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">HubStudio.ai生成产品图、生活场景图和短视频。定制AI模型基于您的品牌形象训练而成,速度提升80%,成本大幅降低。</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <img src="/images/ai/ai-performance-reporting.svg" alt="绩效报告示意图" class="w-full rounded-[8px] mb-[16px]" loading="lazy" decoding="async" />
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">数据报告</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">AI将各平台数据汇总为一份清晰的集中报告。不再手动整理表格,不再等待三周才能看到结果。</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <img src="/images/ai/ai-project-management.svg" alt="项目管理示意图" class="w-full rounded-[8px] mb-[16px]" loading="lazy" decoding="async" />
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">项目管理</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">AI跟踪截止日期、内容审批和活动里程碑,确保每个环节都不遗漏。</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Budget — two-column with SVG (same as about "Our vision" section, reversed) -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[48px] max-[640px]:gap-[32px] items-center">
+        <div>
+          <SectionBar />
+          <SectionHeading overline="预算优势">AI如何优化您的预算</SectionHeading>
+          <div class="flex flex-col gap-[24px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              大多数代理机构按庞大团队的人工成本收费。我们的团队更精干,因为AI成倍放大了每个人的产出能力。
+            </p>
+            <p>
+              这就是我们能够提供固定价格套餐、范围清晰明确的原因。我们清楚交付每项服务所需的资源,因为工具是我们自己构建的。
+            </p>
+            <p class="text-[var(--color-stone)]">
+              同样的预算,您将获得更多内容、更多报告和更多策略关注。或者,同样的产出,花费更少。
+            </p>
+          </div>
+        </div>
+        <div class="w-full bg-[#F0F1F4] rounded-[8px] p-[32px] max-[640px]:p-[20px]" aria-label="成本结构对比:传统代理机构 vs TheRedScroll AI模式">
+          <svg viewBox="0 0 440 340" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+            <!-- Title -->
+            <text x="220" y="24" text-anchor="middle" fill="#5C5C5C" font-size="10" font-weight="500" font-family="Inter, sans-serif" letter-spacing="0.05em">成本结构</text>
+
+            <!-- Traditional agency -->
+            <text x="20" y="62" fill="#5C5C5C" font-size="9" font-weight="500" font-family="Inter, sans-serif" letter-spacing="0.03em">传统代理机构</text>
+
+            <!-- Stacked bar: many roles -->
+            <rect x="20" y="74" width="400" height="36" rx="6" fill="#E8E0D8" />
+            <line x1="70" y1="74" x2="70" y2="110" stroke="#FFFFFF" stroke-width="1" opacity="0.6" />
+            <line x1="135" y1="74" x2="135" y2="110" stroke="#FFFFFF" stroke-width="1" opacity="0.6" />
+            <line x1="200" y1="74" x2="200" y2="110" stroke="#FFFFFF" stroke-width="1" opacity="0.6" />
+            <line x1="270" y1="74" x2="270" y2="110" stroke="#FFFFFF" stroke-width="1" opacity="0.6" />
+            <line x1="340" y1="74" x2="340" y2="110" stroke="#FFFFFF" stroke-width="1" opacity="0.6" />
+
+            <text x="45" y="96" text-anchor="middle" fill="#5C5C5C" font-size="7" font-family="Inter, sans-serif">策划</text>
+            <text x="102" y="96" text-anchor="middle" fill="#5C5C5C" font-size="7" font-family="Inter, sans-serif">文案</text>
+            <text x="167" y="96" text-anchor="middle" fill="#5C5C5C" font-size="7" font-family="Inter, sans-serif">设计师</text>
+            <text x="235" y="96" text-anchor="middle" fill="#5C5C5C" font-size="7" font-family="Inter, sans-serif">视频剪辑</text>
+            <text x="305" y="96" text-anchor="middle" fill="#5C5C5C" font-size="7" font-family="Inter, sans-serif">项目经理</text>
+            <text x="370" y="96" text-anchor="middle" fill="#5C5C5C" font-size="7" font-family="Inter, sans-serif">客户经理</text>
+
+            <text x="420" y="126" text-anchor="end" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">每个项目按6个岗位收费</text>
+
+            <!-- Divider -->
+            <line x1="20" y1="148" x2="420" y2="148" stroke="#E8E0D8" stroke-width="0.5" />
+
+            <!-- TheRedScroll -->
+            <text x="20" y="178" fill="#CC3333" font-size="9" font-weight="500" font-family="Inter, sans-serif" letter-spacing="0.03em">THEREDSCROLL + AI</text>
+
+            <rect x="20" y="190" width="160" height="36" rx="6" fill="#CC3333" />
+            <text x="100" y="212" text-anchor="middle" fill="#FFFFFF" font-size="9" font-weight="500" font-family="Inter, sans-serif">策略师 + AI</text>
+
+            <rect x="188" y="190" width="232" height="36" rx="6" fill="#FFFFFF" stroke="#E8E0D8" stroke-width="0.5" stroke-dasharray="4 4" />
+            <text x="304" y="212" text-anchor="middle" fill="#E8E0D8" font-size="9" font-family="Inter, sans-serif">节省的成本</text>
+
+            <text x="420" y="242" text-anchor="end" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">1位资深人才,AI全程辅助</text>
+
+            <!-- Bottom stats -->
+            <line x1="20" y1="268" x2="420" y2="268" stroke="#E8E0D8" stroke-width="0.5" />
+
+            <g transform="translate(20, 284)">
+              <text x="0" y="14" fill="#1A1A1A" font-size="20" font-weight="500" font-family="Inter, sans-serif">固定</text>
+              <text x="0" y="30" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">套餐定价</text>
+            </g>
+            <g transform="translate(160, 284)">
+              <text x="0" y="14" fill="#1A1A1A" font-size="20" font-weight="500" font-family="Inter, sans-serif">清晰</text>
+              <text x="0" y="30" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">范围明确</text>
+            </g>
+            <g transform="translate(300, 284)">
+              <text x="0" y="14" fill="#CC3333" font-size="20" font-weight="500" font-family="Inter, sans-serif">更多</text>
+              <text x="0" y="30" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">同样预算,更多成果</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- The result — dark section (1 per page, same pattern as about page "What makes us different") -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="bg-[#1A1A1A] rounded-[12px] p-[48px] max-[640px]:p-[32px_20px]">
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">最终成效</p>
+        <h2 class="text-[#FFFFFF] text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] mb-[32px] max-[640px]:mb-[24px]">更多粉丝,更高互动,更强转化。</h2>
+        <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[24px]">
+          <div>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">更优质的内容,更快的速度</h3>
+            <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+              AI生成的初稿让发布频率更高、节奏更快。母语编辑确保每条内容符合平台调性,在文化层面精准到位。
+            </p>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">实时数据洞察</h3>
+            <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+              不再等三周才看到报告。AI汇总各平台数据,策略师在活动进行中即时调整优化。
+            </p>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">更精准的达人筛选</h3>
+            <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+              AI筛选数千名KOL资料并识别虚假粉丝,团队再从中选出真正契合品牌的达人并洽谈合作条件。
+            </p>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">固定价格,持续增长</h3>
+            <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+              AI让我们能在同样预算下交付更多内容、更多报告和更多策略支持。这就是我们以固定价格套餐兑现承诺的方式。
+            </p>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- CTA — same pattern as about page bottom CTA -->
+  <section class="mt-[96px] max-[640px]:mt-[64px] mb-[0px]">
+    <div class="w-full bg-[var(--color-rice-paper)] py-[64px] max-[640px]:py-[48px] px-[48px] max-[640px]:px-[20px]">
+      <div class="max-w-[600px] mx-auto text-center">
+        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[8px]">
+          想了解具体如何运作?
+        </h2>
+        <p class="text-[14px] text-[var(--color-stone)] font-normal leading-[1.6] mb-[24px]">
+          只需一通电话。我们为您展示工具、团队和实际成效。
+        </p>
+        <div class="flex items-center justify-center gap-[12px] flex-wrap">
+          <Button variant="primary" href="/zh/contact">预约沟通</Button>
+          <Button variant="secondary" href="/zh/pricing">查看价格</Button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</PageLayout>

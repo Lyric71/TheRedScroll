@@ -1,0 +1,310 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+
+const services = ['营销活动', '内容制作', '社交', 'AI内容'];
+const platforms = ['WeChat', 'RedNote', 'Weibo'];
+---
+
+<PageLayout
+  title="JAC Motors：中国社交媒体案例 | TheRedScroll"
+  description="JAC Motors如何在WeChat、RedNote和Weibo上建立真正的社交社群。AI驱动内容、奥运营销战役和国际传播力。"
+  ogImage="/images/clients/JAC/JAC-Wechat-4.jpg"
+  lang="zh"
+>
+
+  <!-- Hero -->
+  <section class="relative w-full min-h-[600px] max-[640px]:min-h-[480px] overflow-hidden">
+    <div
+      class="absolute inset-0 bg-cover bg-center bg-fixed max-[640px]:bg-scroll"
+      style="background-image: url('/images/clients/JAC/JAC-Wechat-4.jpg')"
+      aria-hidden="true"
+    ></div>
+    <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.72]" aria-hidden="true"></div>
+
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+        客户案例
+      </p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        JAC Motors：为中国汽车巨头打造社交社群。
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        JAC Motors需要的远不止发帖。我们在WeChat、RedNote和Weibo上建立了一个真正的社群，并用AI驱动的内容将影响力拓展到了中国以外。
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/zh/contact">预约沟通</Button>
+        <Button variant="secondary-dark" href="#case-study">查看案例详情</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meta bar -->
+  <section class="border-b border-[rgba(0,0,0,0.08)]">
+    <Container>
+      <div class="flex flex-wrap gap-[32px] max-[640px]:gap-[20px] py-[24px]">
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">客户背景</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">JAC Motors</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">行业</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">汽车 / 新能源</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">服务内容</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {services.map((s) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{s}</span>
+            ))}
+          </div>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">平台</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {platforms.map((p) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{p}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Case study content -->
+  <section id="case-study" class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <!-- 客户背景 -->
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="客户背景">累计销售1000万辆。社交媒体表现却远远落后。</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              JAC是中国最大的汽车制造商之一。超过30年的经营历史，全球累计销售超过1000万辆。乘用车、新能源汽车、商用车辆。规模大、实力强。
+            </p>
+            <p>
+              但他们的社交媒体完全体现不出这些。WeChat、RedNote和Weibo上的内容是在定期更新的。问题在于，几乎没有人真正互动。评论寥寥、转发极少、毫无社群感可言。
+            </p>
+            <p>
+              对于这种体量的企业来说，市场地位和社交存在之间的落差令人无法忽视。
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- WeChat content — horizontal scroll -->
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <div class="flex justify-center gap-[16px] overflow-x-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] max-[640px]:justify-start pb-[8px] scrollbar-hide">
+      <img
+        src="/images/clients/JAC/JAC-Wechat.jpg"
+        alt="JAC Motors微信公众号文章：E30X阿联酋发布"
+        class="h-[480px] max-[640px]:h-[400px] w-auto shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src="/images/clients/JAC/JAC-Wechat-1.jpg"
+        alt="JAC Motors微信公众号文章：媒体报道与RCEP论坛"
+        class="h-[480px] max-[640px]:h-[400px] w-auto shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src="/images/clients/JAC/JAC-Wechat-2.jpg"
+        alt="JAC Motors微信公众号文章：AI创作的J-Bot奥运营销"
+        class="h-[480px] max-[640px]:h-[400px] w-auto shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src="/images/clients/JAC/JAC-Wechat-3.jpg"
+        alt="JAC Motors微信公众号文章：巴黎奥运中国红主题"
+        class="h-[480px] max-[640px]:h-[400px] w-auto shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <Container>
+      <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+        微信内容：新车发布、奥运营销与全球化叙事。左右滑动查看更多。
+      </p>
+    </Container>
+  </section>
+
+  <!-- 服务内容 -->
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="服务内容">从零重建内容体系，打造真实的社群归属感。</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              我们接管了三个平台的内容运营。JAC不是想多发一些帖子，而是想成为一个汽车行业的人真正愿意关注的品牌。他们希望围绕品牌建立一个真实的社群，以信任和共同身份认同为基础。
+            </p>
+            <p>
+              因此我们从零开始重建内容，围绕三个方向展开：汽车专业知识、来自JAC内部和周边的人物故事、以及与受众的真正对话而非品牌独白。
+            </p>
+          </div>
+        </div>
+
+        <!-- AI -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">AI贯穿内容生产全流程</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              我们使用HubStudio.ai创作定制化视觉内容，产出速度远超传统制作模式。AI还负责三个平台的效果监测，让我们能够看到什么内容有效，并在同一周内完成调整。
+            </p>
+            <p>
+              我们的创意团队逐一针对每个平台定制内容。微信上的内容和RedNote上的完全不同。格式不同、语调不同、受众也不同。
+            </p>
+          </div>
+        </div>
+
+        <!-- Content strategy -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">值得驻足的内容</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              我们把JAC定位为真正的汽车知识输出者。技术解析、生产线幕后、车主真实用车故事。那种让人停下刷屏、认真看完的内容。
+            </p>
+            <p>
+              头几个月需要耐心。但变化逐渐变得明显。评论变长了。用户开始主动@好友。转发量上升。账号从企业单向广播变成了用户主动回来看的空间。
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- Campaign visuals — full width -->
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px] px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px]">
+      <img
+        src="/images/clients/JAC/JAC-Wechat-4.jpg"
+        alt="JAC Motors E30X与奥运运动员Nuria Diosdado的联名营销"
+        class="w-full rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src="/images/clients/JAC/JAC-Wechat-5.jpg"
+        alt="JAC Motors伊拉克市场发布活动"
+        class="w-full rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <Container>
+      <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+        全球化营销内容：E30X运动员联名与伊拉克市场发布。
+      </p>
+    </Container>
+  </section>
+
+  <!-- J-Bot奥运营销 -->
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="J-Bot奥运营销">一个AI设计的吉祥物，无需全球推广计划就传遍了世界。</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              J-Bot营销是社群建设真正产生回报的时刻。我们用AI将JAC的吉祥物重新设计为六个奥运主题版本。J-Bot视觉素材在WeChat、RedNote和Weibo上发布后，反响立竿见影。高互动、大量转发、有机触达远超JAC原有粉丝群。
+            </p>
+            <p>
+              接下来发生的事完全在意料之外。JAC的海外团队看到J-Bot内容后，自发地将其转发到Facebook和Instagram上。没有人要求他们这么做。他们只是看到效果好就拿去用了。
+            </p>
+            <p>
+              为中国社交平台设计的内容在没有任何独立推广计划的情况下传播到了全球。普通内容做不到这一点。
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- J-Bot visuals — full width -->
+  <section class="mb-[16px]">
+    <img
+      src="/images/clients/JAC/Wechat-JAC-Automobile-1.png"
+      alt="JAC J-Bot吉祥物六个AI创作的奥运主题版本"
+      class="w-full"
+      loading="lazy"
+      decoding="async"
+    />
+  </section>
+
+  <!-- J-Bot Facebook post + WeChat -->
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <div class="flex justify-center gap-[16px] px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] max-[640px]:overflow-x-auto max-[640px]:justify-start scrollbar-hide">
+      <img
+        src="/images/clients/JAC/Wechat-JAC-Automobile-2.png"
+        alt="JAC Motors Global Facebook帖子展示J-Bot奥运营销的高互动量"
+        class="h-[480px] max-[640px]:h-[400px] w-auto shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src="/images/clients/JAC/JAC-Wechat-3.jpg"
+        alt="JAC Motors微信公众号文章：巴黎奥运中国红主题"
+        class="h-[480px] max-[640px]:h-[400px] w-auto shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <Container>
+      <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+        J-Bot营销从中国社交平台传播到JAC的全球Facebook主页，无需单独策划。
+      </p>
+    </Container>
+  </section>
+
+  <!-- 项目成果 + Ground team -->
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <!-- Ground team -->
+        <div class="mb-[64px] max-[640px]:mb-[48px] bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[32px] max-[640px]:p-[20px]">
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            这次营销巩固了JAC作为创新品牌的形象，并在中国受众和全球受众之间架起了一座桥梁。事实证明，好的社群内容不需要护照。
+          </p>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- CTA -->
+  <section class="pb-[96px] max-[640px]:pb-[64px]">
+    <Container>
+      <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[48px] max-[640px]:p-[32px] text-center">
+        <SectionHeading overline="下一个就是你">想把你的社交媒体变成一个真正的品牌社群？</SectionHeading>
+        <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)] max-w-[500px] mx-auto mb-[32px]">
+          固定范围。固定价格。本地团队。
+        </p>
+        <Button variant="primary" href="/zh/contact">预约沟通</Button>
+      </div>
+    </Container>
+  </section>
+
+  <style>
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+
+</PageLayout>

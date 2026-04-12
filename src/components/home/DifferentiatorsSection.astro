@@ -11,7 +11,21 @@ interface Props {
 const { lang = 'en' } = Astro.props;
 const lp = (path: string) => localizedPath(path, lang);
 
-const text = lang === 'fr' ? {
+const text = lang === 'zh' ? {
+  overline: '为什么选择TheRedScroll',
+  heading: '传统代理模式已经走不通了。我们换了一种做法。',
+  problemLabel: '行业现状',
+  problemP1: '平台变化太快，内容无法简单翻译，代理机构收费不透明，效果难以衡量。',
+  problemP2: '不管你是刚进入中国、已经在中国运营，还是一个正在快速成长的本土品牌，没有合适的团队，社交媒体上的增长就是一场赌博。',
+  fixLabel: '我们的做法',
+  fixes: [
+    { title: '范围清晰。', description: '每一项交付物在签约前全部明确，没有模糊地带。' },
+    { title: '价格固定。', description: '一口价，没有隐藏费用，没有范围蔓延。我们调研了37家同行机构，没有一家能做到这一点。' },
+    { title: '团队在本地。', description: '上海和香港。母语团队。实时操作各平台，真正具备文化理解力。' },
+    { title: 'AI驱动内容。', description: '交付更快，成本更低。但策略这件事，始终由人来把控。' },
+  ],
+  cta: '预约沟通',
+} : lang === 'fr' ? {
   overline: 'Pourquoi TheRedScroll',
   heading: 'Le modele classique des agences ne marche plus. On a construit autre chose.',
   problemLabel: 'Le constat',

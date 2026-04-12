@@ -12,46 +12,62 @@ interface Props {
 const { lang = 'en' } = Astro.props;
 const lp = (path: string) => localizedPath(path, lang);
 
+const projectText: Record<string, { title: string; industry: string }> = {
+  viessmann: {
+    title: lang === 'zh' ? 'Viessmann：社交驱动的中国电商引擎' : lang === 'fr' ? 'Viessmann : quand le social genere des ventes en Chine' : 'Viessmann: social-to-commerce engine in China',
+    industry: lang === 'zh' ? '暖通系统' : lang === 'fr' ? 'Climatisation' : 'Climate Systems',
+  },
+  jlr: {
+    title: lang === 'zh' ? '捷豹路虎：社交触达年轻消费群体' : lang === 'fr' ? 'Jaguar Land Rover : capter une audience plus jeune par le social' : 'Jaguar Land Rover: reaching younger consumers',
+    industry: lang === 'zh' ? '汽车' : lang === 'fr' ? 'Automobile' : 'Automotive',
+  },
+  jac: {
+    title: lang === 'zh' ? 'JAC汽车：AI赋能社群建设' : lang === 'fr' ? 'JAC Motors : batir une communaute grace a l\'IA' : 'JAC Motors: AI-powered community building',
+    industry: lang === 'zh' ? '汽车 / 新能源' : lang === 'fr' ? 'Automobile / VE' : 'Automotive / EV',
+  },
+  iguzzini: {
+    title: lang === 'zh' ? 'iGuzzini：高端照明走向大众市场' : lang === 'fr' ? 'iGuzzini : l\'eclairage haut de gamme passe au grand public' : 'iGuzzini: luxury lighting goes consumer',
+    industry: lang === 'zh' ? '高端照明' : lang === 'fr' ? 'Eclairage haut de gamme' : 'Luxury Lighting',
+  },
+};
+
 const projects = [
   {
-    title: lang === 'fr'
-      ? 'Viessmann : quand le social genere des ventes en Chine'
-      : 'Viessmann: social-to-commerce engine in China',
-    industry: lang === 'fr' ? 'Climatisation' : 'Climate Systems',
+    title: projectText.viessmann.title,
+    industry: projectText.viessmann.industry,
     platform: 'Douyin + RedNote + WeCom',
     image: '/images/clients/Viessmann/Viessman-climate-solution.avif',
     href: lp('/work/viessmann'),
   },
   {
-    title: lang === 'fr'
-      ? 'Jaguar Land Rover : capter une audience plus jeune par le social'
-      : 'Jaguar Land Rover: reaching younger consumers',
-    industry: lang === 'fr' ? 'Automobile' : 'Automotive',
+    title: projectText.jlr.title,
+    industry: projectText.jlr.industry,
     platform: 'Douyin + RedNote + WeChat',
     image: '/images/clients/Jaguar/Jaguar-Land-Rover.avif',
     href: lp('/work/jaguar-land-rover'),
   },
   {
-    title: lang === 'fr'
-      ? 'JAC Motors : batir une communaute grace a l\'IA'
-      : 'JAC Motors: AI-powered community building',
-    industry: lang === 'fr' ? 'Automobile / VE' : 'Automotive / EV',
+    title: projectText.jac.title,
+    industry: projectText.jac.industry,
     platform: 'WeChat + RedNote + Weibo',
     image: '/images/clients/JAC/JAC-Wechat-4.jpg',
     href: lp('/work/jac-motors'),
   },
   {
-    title: lang === 'fr'
-      ? 'iGuzzini : l\'eclairage haut de gamme passe au grand public'
-      : 'iGuzzini: luxury lighting goes consumer',
-    industry: lang === 'fr' ? 'Eclairage haut de gamme' : 'Luxury Lighting',
+    title: projectText.iguzzini.title,
+    industry: projectText.iguzzini.industry,
     platform: 'WeChat + RedNote + Weibo',
     image: '/images/clients/iGuzzini/iguzzini4-1.png',
     href: lp('/work/iguzzini'),
   },
 ];
 
-const sectionText = lang === 'fr' ? {
+const sectionText = lang === 'zh' ? {
+  overline: '精选案例',
+  heading: '那些在中国社交平台上实现增长的品牌。',
+  description: '从奢侈品发布到B2B获客。真实的推广，真实的平台，可衡量的成果。',
+  cta: '查看全部案例',
+} : lang === 'fr' ? {
   overline: 'Projets',
   heading: 'Des campagnes qui font grandir les marques en Chine.',
   description: 'Du lancement haut de gamme a la generation de prospects B2B. Des campagnes reelles. Des plateformes reelles. Des resultats mesurables.',

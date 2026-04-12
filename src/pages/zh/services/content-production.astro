@@ -1,0 +1,281 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+import FaqAccordion from '../../../components/sections/FaqAccordion.astro';
+import GettingStarted from '../../../components/sections/GettingStarted.astro';
+
+
+const faqs = [
+  { q: 'AI真的能产出高端品牌级别的内容吗？', a: '可以，前提是模型训练到位。通用输出永远是通用的。我们基于您的品牌视觉、色彩体系、包装和摄影风格训练定制模型。输出结果符合您的品牌调性，不会像别人的。' },
+  { q: 'AI生成和实拍各占多少比例？', a: '因品牌和平台而异。大多数客户的AIGC覆盖60%到70%的视觉制作（产品图、社交媒体素材、短视频）。实拍占剩下的30%到40%（品牌大片、生活方式内容、达人合拍）。' },
+  { q: '你们是用中文写的还是从英文翻译的？', a: '我们直接用中文写作，不是翻译。差别一眼就能看出来。我们的文案团队是母语为普通话的写手，常驻上海。如果您提供英文版品牌指南，它们只是起点。最终文案从零开始为中国平台量身打造。' },
+  { q: '你们怎么跟上趋势？', a: '我们的运营团队每天都在平台上。监测热搜词、流行形式、季节节点和竞品动态。当机会出现时，我们能在24到48小时内完成内容制作并发布。' },
+  { q: '如果我们已经有全球统一的创意素材怎么办？', a: '我们可以做本地化适配，但通常本地化适配的效果不如本地原创内容。我们在合适的地方使用您现有的素材，用AIGC和实拍补充日常内容。' },
+  { q: '每月需要发多少内容？', a: '维持基本存在感：每个平台每月8到12篇。保持竞争力：20到30篇。这只是自然内容，广告素材另算。我们会根据您的预算和目标制定内容排期。' },
+  { q: '能同时为多个平台制作内容吗？', a: '这是我们的常态工作方式。大多数客户在两到四个平台上运营。每个平台有独立的排期、调性和格式。我们不会把同一条内容复制到不同平台。那样行不通。' },
+  { q: '价格怎么算？', a: '固定范围，固定价格。每月包含多少篇帖子、多少条视频、多少篇文章和多少次拍摄，都提前明确。广告预算和额外拍摄需求单独报价，完全透明。' },
+  { q: '制作的内容版权归谁？', a: '归您。我们制作的每一项内容，无论是AI生成还是实拍，都属于您的品牌。完整使用权，没有许可限制，没有到期日。您可以自由使用。' },
+  { q: '交付周期是多久？', a: 'AIGC视觉素材：从需求到交付2到3个工作日。实拍需要1到2周，包括筹备、拍摄和后期。追热点内容紧急时可以在24到48小时内从概念到上线。' },
+];
+
+const gettingStartedSteps = [
+  {
+    title: '初次沟通',
+    description: '介绍您的品牌、平台和当前内容遇到的问题。',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
+  },
+  {
+    title: '内容方案',
+    description: '确定格式、制作方式、AIGC与实拍配比、报价。范围从一开始就明确。',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>',
+  },
+  {
+    title: '两周内上线',
+    description: '内容策略制定、首批素材制作、首批内容发布。签约后十四天。',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
+  },
+];
+---
+
+<PageLayout
+  title="中国社交媒体内容制作 | TheRedScroll"
+  description="AIGC视觉素材、视频制作、文案撰写和文化本地化，服务WeChat、Douyin和RedNote。固定范围，AI速度。团队常驻上海。"
+  lang="zh"
+>
+
+  <!-- Hero — Dark hero banner -->
+  <section class="relative w-full overflow-hidden bg-[var(--color-ink)]">
+    <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/content-production-hero.png')" aria-hidden="true"></div>
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+        内容制作
+      </p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        内容讲什么比制作成本重要得多。
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        策略、创意方向、AIGC、实地拍摄、文案撰写和文化本地化。团队常驻上海和香港。
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/zh/contact">预约沟通</Button>
+        <Button variant="secondary-dark" href="#what-we-do">服务内容</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why content production has changed -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        <div class="relative col-span-2 row-span-2 max-[640px]:col-span-1 max-[640px]:row-span-1 bg-[#1A1A1A] rounded-[12px] p-[32px] max-[640px]:p-[20px] flex flex-col justify-between min-h-[320px] max-[640px]:min-h-0 overflow-hidden">
+          <svg class="absolute bottom-[-20px] right-[-20px] w-[260px] h-[260px] opacity-[0.06]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+          <div class="relative z-[1]">
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">转折点</p>
+            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[16px]">内容制作为什么变了</h2>
+            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[400px]">AI现在几分钟就能生成视觉素材和文字。当谁都能低成本创作时，真正拉开差距的是内容背后的思考。</p>
+          </div>
+          <div class="relative z-[1] mt-[24px]">
+            <Button variant="secondary-dark" href="#what-we-do">服务内容</Button>
+          </div>
+        </div>
+        <div class="bg-[#F0F1F4] rounded-[10px] p-[24px] max-[640px]:p-[20px] relative overflow-hidden">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">每个平台有自己的调性</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">RedNote偏向轻松、私密的分享。Weibo需要抢眼的标题。WeChat需要深度。Douyin靠开头和节奏取胜。四个平台用同一个调性，哪个也做不好。</p>
+        </div>
+        <div class="bg-[#1A1A1A] rounded-[12px] p-[24px] max-[640px]:p-[20px] relative overflow-hidden">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">趋势变化极快</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.6)]">今天在Douyin上火的热搜词下周可能就被遗忘。您的团队需要每天监测平台，在对的时机抓住机会。</p>
+        </div>
+        <div class="bg-[#CC3333] rounded-[12px] p-[24px] max-[640px]:p-[20px] relative overflow-hidden">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">内容量巨大</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.8)]">三四个平台意味着每月至少30到50条内容，还不算广告素材。仅靠传统制作方式，没有团队能消化这个量。</p>
+        </div>
+        <div class="bg-[#E8E0D8] rounded-[10px] p-[24px] max-[640px]:p-[20px] relative overflow-hidden">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">AI是跟上节奏的唯一方式</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">AIGC负责产量，团队保留创意方向的主导权。思考仍然是人做的事。提速的是制作环节。</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- What we do — Content structure & AIGC -->
+  <section id="what-we-do" class="mt-[96px] max-[640px]:mt-[64px] scroll-mt-[76px]">
+    <Container>
+      <SectionBar />
+      <SectionHeading overline="服务内容">内容体系与策略</SectionHeading>
+
+      <div class="rounded-[12px] overflow-hidden mt-[24px]">
+        <img src="/images/what-we-do/content-production.png" alt="TheRedScroll团队在内容拍摄现场" class="w-full aspect-[5/2] max-[640px]:aspect-[16/10] object-cover" loading="lazy" decoding="async" />
+      </div>
+
+      <div class="grid grid-cols-3 max-[768px]:grid-cols-1 gap-[24px] -mt-[72px] max-[768px]:-mt-[32px] px-[32px] max-[768px]:px-[0px] relative z-[1]">
+        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
+          <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
+            <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+          </div>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">内容策略</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">内容主线、信息框架、调性定义和平台专属格式。100%由人主导。AI不能判断您的品牌该不该追一个热点还是保持沉默。</p>
+        </div>
+        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
+          <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
+            <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+          </div>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">AIGC视觉与视频</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">AI生成的产品图、场景图和短视频。模型基于您的品牌视觉体系训练，确保输出真正像您的品牌。比传统制作快约80%。</p>
+        </div>
+        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
+          <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
+            <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+          </div>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">实地拍摄</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">在中国本地完成拍摄。幕后花絮、开箱视频、品牌短片、达人合拍内容。真人使用您的产品——这是AI替代不了的。</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Copywriting & Indicative pricing — dark section -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="bg-[#1A1A1A] rounded-[12px] p-[48px] max-[640px]:p-[32px_20px]">
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">文案与文化本地化</p>
+        <h2 class="text-[#FFFFFF] text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] mb-[16px]">我们不做翻译。</h2>
+        <div class="max-w-[680px] flex flex-col gap-[24px] mb-[32px]">
+          <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+            WeChat文章需要结构和深度。RedNote图文配文读起来要像朋友给你的建议。Douyin视频文字必须两秒内抓住注意力。即使产品一样，写法因平台而变。
+          </p>
+          <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+            AI写初稿，中国本地写手做文化审校和润色。对于新进入市场的品牌，我们还负责中文品牌名创作、广告语适配和核心信息改写。
+          </p>
+        </div>
+        <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[24px]">
+          <div>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">AIGC参考价格</h3>
+            <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+              10张AIGC产品图：¥2,000至¥5,000。5条社交短视频（15-30秒）：¥5,000至¥12,000。作为对比，上海一天产品摄影费用在¥8,000至¥25,000之间，一条30秒视频起步¥15,000，最高可达¥50,000。
+            </p>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">实拍参考价格</h3>
+            <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+              上海半天拍摄：¥8,000至¥15,000。全天视频拍摄含团队和后期：¥20,000至¥60,000。价格视范围、场地、出镜人员和后期制作而定。
+            </p>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Content formats by platform -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <SectionBar />
+      <SectionHeading overline="平台内容格式">Douyin</SectionHeading>
+
+      <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">短视频（15-60秒）</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">核心格式。产品演示、教程、场景化内容、追热点内容。竖屏9:16。开头两秒必须吸引人。音乐和字幕不可缺少。</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">直播</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">产品演示、问答互动、限时抢购。每场1到4小时。通过抖音商城直接产生销售。需要专业主播、实时弹幕管理和良好的选品排序。</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Douyin图文</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">最多20张图片滑动浏览。适合科普内容、分步教程、产品对比。这一格式增长迅速，美妆和护肤品牌尤其适用。</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- RedNote formats -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <SectionBar />
+      <SectionHeading overline="平台内容格式">RedNote / 小红书</SectionHeading>
+
+      <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">图文笔记</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">1到9张图片加文字描述。平台原生格式。日常照片、平铺图、使用前后对比。调性要保持真实、个人化。像日记本，不像新闻稿。</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">视频笔记</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">1到5分钟。比Douyin更有叙事空间。产品测评、日常分享、使用教程。像是真人在分享自己的体验时效果最好。</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">搜索导向笔记</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">专门为在RedNote用户搜索时出现而创作的内容。本质上是社交平台上的SEO。需要针对RedNote站内搜索引擎做关键词研究。</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- WeChat formats -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <SectionBar />
+      <SectionHeading overline="平台内容格式">WeChat</SectionHeading>
+
+      <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">公众号文章</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">长图文内容。800到2500字，配图片、嵌入视频、小程序或商城链接。适合品牌故事、产品科普和专业观点表达。</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">视频号</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">WeChat视频信息流中的竖屏短视频。1到3分钟。一个快速增长的形式。受众更小但更亲近，因为传播依托微信社交关系链。</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">小程序内容</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">产品目录、互动体验、活动落地页、会员计划。内容在小程序中呈现，通过文章、广告和二维码进行分发。</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Case study -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <a href="/zh/work/camper" class="block bg-[var(--color-rice-paper)] rounded-[10px] p-[48px] max-[640px]:p-[32px_20px] group">
+        <div class="flex gap-[48px] max-[768px]:flex-col items-center">
+          <div class="flex-1 min-w-0">
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[12px]">案例研究</p>
+            <h3 class="text-[24px] max-[640px]:text-[20px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[12px]">Camper：在中国社交平台上做大一个设计师品牌</h3>
+            <p class="text-[15px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[20px]">以设计为核心的内容策略帮助Camper在中国社交平台上从43,000增长到187,000粉丝。18个月内门店销售增长31%。</p>
+            <span class="text-[14px] font-medium text-[var(--color-vermillion)] group-hover:underline">查看案例 →</span>
+          </div>
+          <img
+            src="/images/clients/Camper/Camper-Case-Study-Hero.jpg"
+            alt="Camper品牌在中国社交平台上的增长"
+            class="w-[45%] max-[768px]:w-full aspect-[16/10] object-cover rounded-[10px]"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </a>
+    </Container>
+  </section>
+
+  <GettingStarted
+    heading="从需求确认到首批内容上线，两周搞定。"
+    steps={gettingStartedSteps}
+    backgroundImage="/images/getting-started/content-production.png"
+    crossLinks={[
+      { label: '策略与营销活动', href: '/zh/services/strategy-campaigns' },
+      { label: '达人营销', href: '/zh/services/influencer-marketing' },
+      { label: '广告投放', href: '/zh/services/advertising' },
+    ]}
+  />
+
+  <FaqAccordion faqs={faqs} subtitle="关于内容制作，最常被问到的问题。" />
+
+</PageLayout>

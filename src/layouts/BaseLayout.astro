@@ -4,7 +4,7 @@ import '../styles/fonts.css';
 import Header from '../components/global/Header.astro';
 import Footer from '../components/global/Footer.astro';
 import type { Lang } from '../i18n/config';
-import { alternateUrl } from '../i18n/config';
+import { alternateUrl, getAlternateLangs } from '../i18n/config';
 
 interface Props {
   title: string;
@@ -27,8 +27,8 @@ const {
 const siteName = 'TheRedScroll';
 const siteUrl = 'https://theredscroll.com';
 const currentPath = Astro.url.pathname;
-const altLang = lang === 'en' ? 'fr' : 'en';
-const altPath = alternateUrl(currentPath, altLang as Lang);
+const altLangs = getAlternateLangs(lang);
+const localeMap: Record<string, string> = { en: 'en_US', fr: 'fr_FR', zh: 'zh_CN' };
 ---
 
 <!doctype html>
@@ -41,15 +41,17 @@ const altPath = alternateUrl(currentPath, altLang as Lang);
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     <link rel="alternate" hreflang={lang} href={`${siteUrl}${currentPath}`} />
-    <link rel="alternate" hreflang={altLang} href={`${siteUrl}${altPath}`} />
-    <link rel="alternate" hreflang="x-default" href={`${siteUrl}${lang === 'en' ? currentPath : altPath}`} />
+    {altLangs.map((al) => (
+      <link rel="alternate" hreflang={al} href={`${siteUrl}${alternateUrl(currentPath, al)}`} />
+    ))}
+    <link rel="alternate" hreflang="x-default" href={`${siteUrl}${lang === 'en' ? currentPath : alternateUrl(currentPath, 'en')}`} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={ogImage} />
     <meta property="og:url" content={canonical} />
     <meta property="og:site_name" content={siteName} />
     <meta property="og:type" content="website" />
-    <meta property="og:locale" content={lang === 'fr' ? 'fr_FR' : 'en_US'} />
+    <meta property="og:locale" content={localeMap[lang] || 'en_US'} />
     <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/inter-500.woff2" as="font" type="font/woff2" crossorigin />
     <!-- Microsoft Clarity -->

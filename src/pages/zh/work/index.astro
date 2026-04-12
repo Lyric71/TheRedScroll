@@ -1,0 +1,310 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+
+const caseStudies = [
+  {
+    title: 'Viessmann：社交媒体如何驱动中国线上销售增长',
+    category: '电商与社交',
+    platforms: ['Douyin', 'RedNote', 'WeCom'],
+    result: '线上营收逐月稳步增长',
+    image: '/images/clients/Viessmann/Viessman-climate-solution.avif',
+    href: '/zh/work/viessmann',
+  },
+  {
+    title: 'Jaguar Land Rover：用社交媒体打动年轻消费者',
+    category: '内容与UGC',
+    platforms: ['Douyin', 'RedNote', 'WeChat'],
+    result: '品牌在年轻奢侈品消费群体中成功重塑形象',
+    image: '/images/clients/Jaguar/Jaguar-Land-Rover.avif',
+    href: '/zh/work/jaguar-land-rover',
+  },
+  {
+    title: 'JAC Motors：为中国汽车巨头打造社交社群',
+    category: '社群与AI内容',
+    platforms: ['WeChat', 'RedNote', 'Weibo'],
+    result: '一场AI驱动的奥运营销，影响力超越中国国界',
+    image: '/images/clients/JAC/JAC-Wechat-4.jpg',
+    href: '/zh/work/jac-motors',
+  },
+  {
+    title: 'iGuzzini：社交媒体如何在中国打造高端照明品牌',
+    category: '奢侈品与电商',
+    platforms: ['WeChat', 'RedNote', 'Weibo'],
+    result: '24个月内从B2B品牌蜕变为消费者认可的高端品牌',
+    image: '/images/clients/iGuzzini/iguzzini4-1.png',
+    href: '/zh/work/iguzzini',
+  },
+  {
+    title: 'Camper：在中国打造设计师鞋履品牌',
+    category: '品牌与内容',
+    platforms: ['WeChat', 'RedNote', 'Weibo'],
+    result: '粉丝从43K增至187K，门店销售增长31%，历时18个月',
+    image: '/images/clients/Camper/Camper-Case-Study-Hero.jpg',
+    href: '/zh/work/camper',
+  },
+  {
+    title: 'Mission Foods：通过社交媒体在中国推出玉米片',
+    category: '营销与社交',
+    platforms: ['WeChat', 'RedNote', 'Weibo'],
+    result: '从零认知的品类到持续增长的活跃社群',
+    image: '/images/clients/MissionFoods/head-pic.jpg',
+    href: '/zh/work/mission-foods',
+  },
+  {
+    title: 'Marriott：一场创造数百万销售额的超级品牌日',
+    category: '营销与电商',
+    platforms: ['WeChat', 'Weibo', 'Tmall'],
+    result: '天猫销售额达数百万，Bonvoy新增数十万会员',
+    image: '/images/clients/Marriott/Marriot-campaign-SBD-KV.jpg',
+    href: '/zh/work/marriott',
+  },
+  {
+    title: 'Master Martini：在亚洲打造专业烘焙师社群',
+    category: '社群与社交',
+    platforms: ['Instagram', 'Facebook'],
+    result: '从B2B品牌成长为覆盖5个市场的专业烘焙师首选社群',
+    image: '/images/clients/MasterMartini/MasterMartini1.webp',
+    href: '/zh/work/master-martini',
+  },
+  {
+    title: 'Blue Insurance：香港首家纯线上保险公司的数字化上线',
+    category: '网站与营销',
+    platforms: ['Web', 'Social Media'],
+    result: '首月10,000粉丝，首周3,000+邮件订阅',
+    image: '/images/clients/Blue/Blue Insurance 1.png',
+    href: '/zh/work/blue-insurance',
+  },
+  {
+    title: 'AGE 20\'s：小奶砖中国营销战役',
+    category: '营销与内容',
+    platforms: ['RedNote', 'Douyin'],
+    result: '抖音曝光387万次（目标的4倍），昵称自发传播',
+    image: '/images/clients/Age20/Age20-Picture1-scaled.jpg',
+    href: '/zh/work/age20s',
+  },
+  {
+    title: 'Langnese：重新定位德国第一蜂蜜品牌，助力中国市场增长',
+    category: '咨询与策略',
+    platforms: ['RedNote', 'Douyin', 'WeChat', 'Tmall'],
+    result: '九大增长支柱框架打开了全新渠道与受众',
+    image: '/images/clients/Langnese/Langnese-Honey.png',
+    href: '/zh/work/langnese',
+  },
+];
+
+function shuffle<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+const shuffledStudies = shuffle(caseStudies);
+
+const categories = ['全部', ...new Set(caseStudies.map((s) => s.category))];
+const allPlatforms = ['全部', ...new Set(caseStudies.flatMap((s) => s.platforms))].sort((a, b) => a === '全部' ? -1 : b === '全部' ? 1 : a.localeCompare(b));
+---
+
+<PageLayout
+  title="项目案例 | TheRedScroll"
+  description="TheRedScroll客户案例。国际品牌在WeChat、RedNote、Douyin、Weibo等平台上取得的真实成果。"
+  ogImage="/images/og/work.jpg"
+  lang="zh"
+>
+
+  <!-- Hero -->
+  <section class="pt-[96px] pb-[64px] max-[640px]:pt-[64px] max-[640px]:pb-[40px]">
+    <Container>
+      <div class="max-w-[680px]">
+        <SectionBar />
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">
+          客户案例
+        </p>
+        <h1 class="text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[16px]">
+          用结果说话。
+        </h1>
+        <p class="text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] text-[var(--color-stone)]">
+          真实的营销战役。真实的平台运营。国际品牌在中国市场取得的实际成果。
+        </p>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Filters -->
+  <section class="pb-[40px] max-[640px]:pb-[24px]">
+    <Container>
+      <!-- Service filter -->
+      <div class="mb-[16px]">
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-stone)] mb-[10px]">服务类型</p>
+        <div class="flex flex-wrap gap-[8px]" id="filter-category">
+          {categories.map((cat) => (
+            <button
+              type="button"
+              data-filter-category={cat}
+              class:list={[
+                'filter-btn text-[13px] font-medium leading-[1] px-[16px] py-[8px] max-[640px]:py-[12px] min-h-[44px] max-[640px]:min-h-0 rounded-[6px] cursor-pointer transition-[background,color,border-color] duration-150',
+                cat === '全部'
+                  ? 'bg-[var(--color-ink)] text-[#FFFFFF] border border-[var(--color-ink)]'
+                  : 'bg-transparent text-[var(--color-ink)] border border-[rgba(0,0,0,0.15)] hover:border-[var(--color-ink)]'
+              ]}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
+      </div>
+      <!-- Platform filter -->
+      <div>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-stone)] mb-[10px]">平台</p>
+        <div class="flex flex-wrap gap-[8px]" id="filter-platform">
+          {allPlatforms.map((plat) => (
+            <button
+              type="button"
+              data-filter-platform={plat}
+              class:list={[
+                'filter-btn text-[13px] font-medium leading-[1] px-[16px] py-[8px] max-[640px]:py-[12px] min-h-[44px] max-[640px]:min-h-0 rounded-[6px] cursor-pointer transition-[background,color,border-color] duration-150',
+                plat === '全部'
+                  ? 'bg-[var(--color-ink)] text-[#FFFFFF] border border-[var(--color-ink)]'
+                  : 'bg-transparent text-[var(--color-ink)] border border-[rgba(0,0,0,0.15)] hover:border-[var(--color-ink)]'
+              ]}
+            >
+              {plat}
+            </button>
+          ))}
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Case study grid -->
+  <section class="pb-[96px] max-[640px]:pb-[64px]">
+    <Container>
+      <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[32px] max-[640px]:gap-[24px]" id="case-study-grid">
+        {shuffledStudies.map((study) => (
+          <a
+            href={study.href}
+            data-category={study.category}
+            data-platforms={study.platforms.join(',')}
+            class="case-study-card group block bg-[var(--color-rice-paper)] rounded-[8px] overflow-hidden border border-[rgba(0,0,0,0.08)] transition-[border-color] duration-150 ease-in-out hover:border-[rgba(0,0,0,0.15)]"
+          >
+            <!-- Image -->
+            <div class="w-full aspect-[16/10] bg-[var(--color-warm-gray)] flex items-center justify-center overflow-hidden">
+              {study.image && study.href !== '#' ? (
+                <img src={study.image} alt={study.title} class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              ) : (
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(0,0,0,0.15)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                  <circle cx="8.5" cy="8.5" r="1.5"/>
+                  <polyline points="21,15 16,10 5,21"/>
+                </svg>
+              )}
+            </div>
+            <!-- Content -->
+            <div class="p-[24px] max-[640px]:p-[20px]">
+              <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">
+                {study.category}
+              </p>
+              <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">
+                {study.title}
+              </h3>
+              <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)] mb-[16px]">
+                {study.result}
+              </p>
+              <div class="flex flex-wrap gap-[8px]">
+                {study.platforms.map((platform) => (
+                  <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[rgba(0,0,0,0.04)] px-[10px] py-[4px] rounded-[4px]">
+                    {platform}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+      <!-- Empty state -->
+      <p id="no-results" class="hidden text-center text-[16px] font-normal leading-[1.6] text-[var(--color-stone)] py-[64px]">
+        没有符合当前筛选条件的案例。
+      </p>
+    </Container>
+  </section>
+
+  <!-- CTA -->
+  <section class="pb-[96px] max-[640px]:pb-[64px]">
+    <Container>
+      <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[48px] max-[640px]:p-[32px_20px] text-center">
+        <SectionHeading overline="下一个就是你">你的品牌，也可以成为下一个成功案例。</SectionHeading>
+        <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)] max-w-[500px] mx-auto mb-[32px]">
+          固定范围。固定价格。可衡量的成果。
+        </p>
+        <Button variant="primary" href="/zh/contact">预约沟通</Button>
+      </div>
+    </Container>
+  </section>
+
+  <script>
+    const ACTIVE = 'bg-[var(--color-ink)] text-[#FFFFFF] border border-[var(--color-ink)]';
+    const INACTIVE = 'bg-transparent text-[var(--color-ink)] border border-[rgba(0,0,0,0.15)] hover:border-[var(--color-ink)]';
+
+    let activeCategory = '全部';
+    let activePlatform = '全部';
+
+    function setButtonState(btn: HTMLButtonElement, active: boolean) {
+      const add = active ? ACTIVE : INACTIVE;
+      const remove = active ? INACTIVE : ACTIVE;
+      remove.split(' ').forEach((c) => btn.classList.remove(c));
+      add.split(' ').forEach((c) => btn.classList.add(c));
+    }
+
+    function applyFilters() {
+      const cards = document.querySelectorAll<HTMLElement>('.case-study-card');
+      let visible = 0;
+
+      cards.forEach((card) => {
+        const cat = card.dataset.category ?? '';
+        const plats = (card.dataset.platforms ?? '').split(',');
+
+        const matchCat = activeCategory === '全部' || cat === activeCategory;
+        const matchPlat = activePlatform === '全部' || plats.includes(activePlatform);
+
+        if (matchCat && matchPlat) {
+          card.style.display = '';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      const noResults = document.getElementById('no-results');
+      if (noResults) {
+        noResults.classList.toggle('hidden', visible > 0);
+      }
+    }
+
+    document.querySelectorAll<HTMLButtonElement>('#filter-category button').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        activeCategory = btn.dataset.filterCategory ?? '全部';
+        document.querySelectorAll<HTMLButtonElement>('#filter-category button').forEach((b) => {
+          setButtonState(b, b.dataset.filterCategory === activeCategory);
+        });
+        applyFilters();
+      });
+    });
+
+    document.querySelectorAll<HTMLButtonElement>('#filter-platform button').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        activePlatform = btn.dataset.filterPlatform ?? '全部';
+        document.querySelectorAll<HTMLButtonElement>('#filter-platform button').forEach((b) => {
+          setButtonState(b, b.dataset.filterPlatform === activePlatform);
+        });
+        applyFilters();
+      });
+    });
+  </script>
+
+</PageLayout>

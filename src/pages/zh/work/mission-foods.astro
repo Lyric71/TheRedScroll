@@ -1,0 +1,250 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+
+const services = ['营销活动', '电商', 'KOL合作', '直播', '媒体', '社交'];
+const platforms = ['WeChat', 'RedNote', 'Weibo'];
+---
+
+<PageLayout
+  title="Mission Foods：中国社交媒体案例 | TheRedScroll"
+  description="Mission Foods如何通过WeChat、RedNote和Weibo在中国推出玉米片。Z世代社交营销、美食搭配内容与社群增长。"
+  ogImage="/images/clients/MissionFoods/head-pic.jpg"
+  lang="zh"
+>
+
+  <!-- Hero -->
+  <section class="relative w-full min-h-[600px] max-[640px]:min-h-[480px] overflow-hidden">
+    <div
+      class="absolute inset-0 bg-cover bg-center bg-fixed max-[640px]:bg-scroll"
+      style="background-image: url('/images/clients/MissionFoods/head-pic.jpg')"
+      aria-hidden="true"
+    ></div>
+    <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.72]" aria-hidden="true"></div>
+
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+        客户案例
+      </p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        Mission Foods：通过社交媒体在中国推出玉米片。
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        Mission Foods需要让从未吃过玉米片的中国消费者认识这个产品。我们打造了一套社交策略，成功引入了一个全新的零食品类。
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/zh/contact">预约沟通</Button>
+        <Button variant="secondary-dark" href="#case-study">查看案例详情</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meta bar -->
+  <section class="border-b border-[rgba(0,0,0,0.08)]">
+    <Container>
+      <div class="flex flex-wrap gap-[32px] max-[640px]:gap-[20px] py-[24px]">
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">客户背景</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">Mission Foods</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">行业</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">食品 / 快消</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">服务内容</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {services.map((s) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{s}</span>
+            ))}
+          </div>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">平台</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {platforms.map((p) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{p}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Case study content -->
+  <section id="case-study" class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <!-- 客户背景 -->
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="客户背景">一个全球品牌，在中国推出一个全新的零食品类。</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Mission Foods是全球知名的墨西哥食品品牌，也是世界上最大的玉米饼生产商之一。他们在中国推出的产品是玉米片。品牌在国际市场上实力雄厚，但玉米片在中国人的零食习惯中根本不存在。
+            </p>
+            <p>
+              大多数消费者从未尝过。很多人甚至从未听说过。而目标受众是Z世代。
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- Social screenshots -->
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <div class="flex justify-center gap-[16px] overflow-x-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] max-[640px]:justify-start pb-[8px] scrollbar-hide">
+      <img
+        src="/images/clients/MissionFoods/1-1.jpg"
+        alt="Mission Foods中国社交平台美食搭配内容"
+        class="w-[340px] max-[640px]:w-[280px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src="/images/clients/MissionFoods/1-2.jpg"
+        alt="Mission Foods RedNote和WeChat上的Z世代零食营销内容"
+        class="w-[340px] max-[640px]:w-[280px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <Container>
+      <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+        Mission Foods在WeChat、Weibo和RedNote上的社交内容。美食搭配营销与Z世代零食场景。
+      </p>
+    </Container>
+  </section>
+
+  <!-- 服务内容 -->
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="服务内容">让玉米片变得本土化，而不是"洋气"。</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              我们在WeChat、Weibo和RedNote上运营社交营销和日常内容。整个策略基于一个核心原则：玉米片在中国只有不再显得"外国"的那天才能成功。
+            </p>
+          </div>
+        </div>
+
+        <!-- Food pairing -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">美食搭配内容回答了消费者真正想知道的问题</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              我们展示玉米片搭配中国菜的场景。蘸酱、火锅伴侣、把玉米片的酥脆口感与中国人熟悉的味道结合的创意食谱。这回答了每个消费者心中的疑问：这东西到底怎么吃？
+            </p>
+            <p>
+              搭配方式既自然又尊重当地饮食文化。这正是它们有效的原因。
+            </p>
+          </div>
+        </div>
+
+        <!-- Gen Z -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">围绕Z世代的零食时刻设计内容</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              轻松的聚会、深夜的嘴馋、和朋友分享的时刻。好玩、快节奏、视觉化。那种Z世代会收藏然后发到群聊里的内容。不以品牌为中心，而是以零食为中心。
+            </p>
+          </div>
+        </div>
+
+        <!-- KOLs -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">RedNote KOL展示真实的产品使用场景</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              真实的厨房、真实的吃零食时刻、真实的反应。KOC内容增加了原生传播量，帮助将玉米片变成了人们真正会购买的产品。
+            </p>
+          </div>
+        </div>
+
+        <!-- Halloween -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">万圣节营销是全年的高光时刻</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              主题内容将玉米片定位为派对必备零食。变装造型、拼盘摆放、聚会场景。时机恰到好处。万圣节在中国Z世代群体中正迅速走红，而玉米片完美融入了这个场景。
+            </p>
+            <p>
+              这波营销在三个平台上同时引发了粉丝和互动的显著增长。
+            </p>
+          </div>
+        </div>
+
+        <!-- WeChat -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">WeChat在营销间歇期保持了关注度</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              食谱、新品上架、季节性优惠。在没有大型营销活动运行的时候，常规内容持续维持着受众的关注。
+            </p>
+          </div>
+        </div>
+
+        <!-- Ground team callout -->
+        <div class="mb-[64px] max-[640px]:mb-[48px] bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[32px] max-[640px]:p-[20px]">
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            所有内容均由我们在中国的团队制作。母语运营、文化适配内容、每周效果复盘。
+          </p>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- 项目成果 -->
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="项目成果">爆发时刻很重要。爆发之间发生的事更重要。</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              万圣节营销创造了最好的数据表现，粉丝增长和互动量都超出了此前的所有基准。
+            </p>
+            <p>
+              但更重要的是两次爆发之间发生的事。日常内容推动受众每周都在增长。食谱、优惠、零食创意。人们持续关注、持续互动。
+            </p>
+            <p>
+              Mission Foods从推出一个陌生的产品，发展到围绕它建立了一个真正的社群。当内容真正适配市场时，社交媒体就能做到这一点。
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- CTA -->
+  <section class="pb-[96px] max-[640px]:pb-[64px]">
+    <Container>
+      <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[48px] max-[640px]:p-[32px] text-center">
+        <SectionHeading overline="下一个就是你">想在中国社交平台上发布新产品？</SectionHeading>
+        <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)] max-w-[500px] mx-auto mb-[32px]">
+          固定范围。固定价格。本地团队。
+        </p>
+        <Button variant="primary" href="/zh/contact">预约沟通</Button>
+      </div>
+    </Container>
+  </section>
+
+  <style>
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+
+</PageLayout>

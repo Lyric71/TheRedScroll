@@ -1,0 +1,259 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+
+const services = ['品牌体验', '营销活动', '电商', 'KOL合作', '直播', '媒体', '社交'];
+const platforms = ['WeChat', 'RedNote', 'Weibo', 'Tmall'];
+---
+
+<PageLayout
+  title="iGuzzini：中国社交媒体案例 | TheRedScroll"
+  description="iGuzzini如何通过WeChat、RedNote和Weibo触达中国高端消费者。社交策略、KOL合作与24个月的持续增长。"
+  ogImage="/images/clients/iGuzzini/iguzzini4-1.png"
+  lang="zh"
+>
+
+  <!-- Hero -->
+  <section class="relative w-full min-h-[600px] max-[640px]:min-h-[480px] overflow-hidden">
+    <div
+      class="absolute inset-0 bg-cover bg-center bg-fixed max-[640px]:bg-scroll"
+      style="background-image: url('/images/clients/iGuzzini/iguzzini4-1.png')"
+      aria-hidden="true"
+    ></div>
+    <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.72]" aria-hidden="true"></div>
+
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+        客户案例
+      </p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        iGuzzini：社交媒体如何在中国打造高端照明品牌。
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        iGuzzini在中国建筑师圈子里有口碑，但普通消费者几乎不知道它。我们通过社交媒体运营，将一个B2B品牌转变为消费者认可的高端品牌。
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/zh/contact">预约沟通</Button>
+        <Button variant="secondary-dark" href="#case-study">查看案例详情</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meta bar -->
+  <section class="border-b border-[rgba(0,0,0,0.08)]">
+    <Container>
+      <div class="flex flex-wrap gap-[32px] max-[640px]:gap-[20px] py-[24px]">
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">客户背景</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">iGuzzini</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">行业</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">高端照明 / 设计</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">服务内容</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {services.map((s) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{s}</span>
+            ))}
+          </div>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">平台</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {platforms.map((p) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{p}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Case study content -->
+  <section id="case-study" class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <!-- 客户背景 -->
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="客户背景">建筑师认识iGuzzini。消费者不认识。</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              iGuzzini自1959年起专注于建筑照明设计。博物馆、酒店、公共空间、高端住宅。这是那种建筑师会在项目图纸上指名使用的品牌。在设计界，它的分量举足轻重。
+            </p>
+            <p>
+              在中国，这种知名度范围太窄。建筑师认识iGuzzini，但消费者不认识。品牌想触达的是真正会为自己的住宅或项目购买高端灯具的人群。不只是指定品牌的设计师，更包括那些对设计有追求、愿意为品质买单的终端决策者。
+            </p>
+            <p>
+              让这个项目格外有挑战性的是：没有人会在RedNote上随手搜"吊灯"。大多数人买灯具是通过施工方或室内设计师代为选购。所以我们需要激发消费者对一种他们甚至不知道可以直接购买的产品的兴趣。
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- Product visuals — side by side, matched height -->
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <Container>
+      <div class="flex gap-[16px] items-center max-[640px]:flex-col">
+        <img
+          src="/images/clients/iGuzzini/iGuzzini-Image-Front-Case-Study.png"
+          alt="iGuzzini Sinolo无线台灯，中国市场产品展示"
+          class="h-[320px] max-[640px]:h-auto max-[640px]:w-full w-auto shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+          loading="lazy"
+          decoding="async"
+        />
+        <img
+          src="/images/clients/iGuzzini/iGuzzini-Image-3-Case-Study.png"
+          alt="iGuzzini Conero吊灯产品展示"
+          class="h-[320px] max-[640px]:h-auto max-[640px]:w-full w-auto min-w-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+      <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+        社交产品内容：Sinolo无线台灯与Conero吊灯，为WeChat和RedNote定制。
+      </p>
+    </Container>
+  </section>
+
+  <!-- 服务内容 -->
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="服务内容">三大平台，服务同一目标。</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              我们负责iGuzzini在WeChat、RedNote和Weibo上的社交内容运营。所有工作由我们在中国的团队全程制作和管理。
+            </p>
+          </div>
+        </div>
+
+        <!-- WeChat -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">WeChat作为品牌主阵地</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              项目展示、设计师合作、新品发布。让iGuzzini的灯光在真实场景中呈现。酒店、画廊、私人住宅。内容引导人们去思考好的灯光能为空间带来什么，而不是让他们在目录里挑灯具。
+            </p>
+          </div>
+        </div>
+
+        <!-- RedNote -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">RedNote：最难攻克也最关键的平台</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              我们与室内设计师、空间设计师和家装KOL合作，将iGuzzini融入真实项目。用户收藏的笔记会被转发给施工方，作为选品参考。设计领域的微型KOC合作则建立了大量的原生口碑。
+            </p>
+            <p>
+              Weibo为我们提供了更广泛的曝光。营销活动发布、设计行业动态、建筑话题内容。这让品牌出现在那些并不专门寻找照明品牌的人面前。
+            </p>
+          </div>
+        </div>
+
+        <!-- Livestream -->
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">直播被证明是最理想的内容形式</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              安装好的灯具和照片里的完全是两回事。我们的直播展示灯具在真实空间中的表现，讲解设计理念背后的思考，并实时回答观众提问。亲眼看到灯光在空间中的实际效果，这才是真正抓住注意力的关键。
+            </p>
+            <p>
+              HubStudio.ai保障了内容的产出节奏。产品视觉、场景图、社交素材。当你需要同时为三个平台生产不同内容时，这个能力至关重要。
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- Product banners + Tmall store -->
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <Container>
+      <div class="flex flex-col gap-[16px]">
+        <img
+          src="/images/clients/iGuzzini/iguzzini4-1.png"
+          alt="iGuzzini Whisper系列中国电商营销视觉"
+          class="w-full rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+          loading="lazy"
+          decoding="async"
+        />
+        <img
+          src="/images/clients/iGuzzini/iguzzini5-1.png"
+          alt="iGuzzini Portonovo无线台灯系列"
+          class="w-full rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+          loading="lazy"
+          decoding="async"
+        />
+        <div class="flex justify-center mt-[16px]">
+          <img
+            src="/images/clients/iGuzzini/iGuzzini-Tmall-Part-1-scaled-1.webp"
+            alt="iGuzzini天猫旗舰店产品详情与热销排名"
+            class="w-full max-w-[360px] max-[640px]:max-w-[280px] rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </div>
+      <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+        电商视觉与天猫旗舰店。在消费者进入购买页面之前，社交媒体已经完成了最重要的铺垫。
+      </p>
+    </Container>
+  </section>
+
+  <!-- 项目成果 -->
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="项目成果">24个月，从专业圈层走进高端消费者视野。</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              24个月内，iGuzzini从一个仅在专业圈子里被知晓的名字，转变为中国高端消费者真正认识的品牌。来自设计师和终端消费者的互动逐月增长。
+            </p>
+            <p>
+              天猫的销售数据印证了这一点。成绩不错，增长稳定。但店铺之所以有效，是因为社交渠道提前完成了种草工作。消费者之所以购买，是因为他们在WeChat上关注了品牌，在RedNote上几周前收藏了一篇笔记，或者看过一场直播，亲眼见到产品在真实客厅中的效果。
+            </p>
+          </div>
+        </div>
+
+        <!-- Callout -->
+        <div class="mb-[64px] max-[640px]:mb-[48px] bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[32px] max-[640px]:p-[20px]">
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            品牌不只是在一个新市场上亮了相，更是让中国高端消费者重新思考了购买灯具的方式。这比看起来要难得多。
+          </p>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- CTA -->
+  <section class="pb-[96px] max-[640px]:pb-[64px]">
+    <Container>
+      <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[48px] max-[640px]:p-[32px] text-center">
+        <SectionHeading overline="下一个就是你">想在中国社交媒体上打造一个高端品牌形象？</SectionHeading>
+        <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)] max-w-[500px] mx-auto mb-[32px]">
+          固定范围。固定价格。本地团队。
+        </p>
+        <Button variant="primary" href="/zh/contact">预约沟通</Button>
+      </div>
+    </Container>
+  </section>
+
+</PageLayout>

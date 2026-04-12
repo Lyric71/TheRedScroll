@@ -1,0 +1,266 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+
+const services = ['营销活动', '内容制作', 'KOL合作', '社交'];
+const platforms = ['WeChat', 'RedNote', 'Weibo'];
+
+const stats = [
+  { value: '43K → 187K', label: '18个月粉丝增长' },
+  { value: '4.7%', label: '互动率（原先1.2%）' },
+  { value: '38%', label: '电商流量来自RedNote' },
+  { value: '+31%', label: '门店同比销售增长' },
+];
+---
+
+<PageLayout
+  title="Camper：中国社交媒体案例 | TheRedScroll"
+  description="Camper如何在WeChat、RedNote和Weibo上从43K粉丝增长到187K。社交策略助力门店销售增长31%。"
+  ogImage="/images/clients/Camper/Camper-Case-Study-Hero.jpg"
+  lang="zh"
+>
+
+  <!-- Hero -->
+  <section class="relative w-full min-h-[600px] max-[640px]:min-h-[480px] overflow-hidden">
+    <div
+      class="absolute inset-0 bg-cover bg-center bg-fixed max-[640px]:bg-scroll"
+      style="background-image: url('/images/clients/Camper/Camper-Case-Study-Hero.jpg')"
+      aria-hidden="true"
+    ></div>
+    <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.72]" aria-hidden="true"></div>
+
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+        客户案例
+      </p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        Camper：在中国社交平台上打造设计师鞋履品牌。
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        Camper需要在中国实现社交增长，但不能背离其设计基因。我们在18个月内将粉丝翻了四倍，门店销售增长了31%。
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/zh/contact">预约沟通</Button>
+        <Button variant="secondary-dark" href="#case-study">查看案例详情</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meta bar -->
+  <section class="border-b border-[rgba(0,0,0,0.08)]">
+    <Container>
+      <div class="flex flex-wrap gap-[32px] max-[640px]:gap-[20px] py-[24px]">
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">客户背景</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">Camper</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">行业</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">时尚 / 鞋履</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">服务内容</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {services.map((s) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{s}</span>
+            ))}
+          </div>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">平台</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {platforms.map((p) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{p}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Case study content -->
+  <section id="case-study" class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <!-- 客户背景 -->
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="客户背景">来自马略卡岛的鞋履品牌，始于1975年。中国社交表现停滞不前。</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Camper自1975年起在马略卡岛制鞋。独特的设计语言、地中海的工艺传统，舒适优先于潮流。
+            </p>
+            <p>
+              在中国，品牌在WeChat、Weibo和RedNote上共有43,000粉丝，互动率仅1.2%。一线城市有实体门店，但社交媒体没有为门店带来客流。品牌需要增长，但不能以牺牲格调为代价。Camper的设计DNA必须贯穿每一条内容。不做促销轰炸，不发千篇一律的生活方式图片。
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- Social screenshots — horizontal scroll -->
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <div class="flex justify-center gap-[16px] overflow-x-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] max-[640px]:justify-start pb-[8px] scrollbar-hide">
+      <img
+        src="/images/clients/Camper/2e9bc97593dbe520397f52be0fb8e584.jpg"
+        alt="Camper小红书官方账号，19.3K粉丝"
+        class="w-[240px] max-[640px]:w-[200px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src="/images/clients/Camper/3721890f3b2783008e73034b5b06b315.jpg"
+        alt="Camper微信公众号文章与内容"
+        class="w-[240px] max-[640px]:w-[200px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src="/images/clients/Camper/4bccf3f158a489f020e0a273f13c19ab.jpg"
+        alt="Camper x Issey Miyake联名微信推文"
+        class="w-[240px] max-[640px]:w-[200px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src="/images/clients/Camper/b2a4eecb0f6665ce6c27c35983d5e7fb.jpg"
+        alt="Camper Pix London系列RedNote KOL内容"
+        class="w-[240px] max-[640px]:w-[200px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <Container>
+      <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+        Camper在RedNote和WeChat上的社交内容。KOL合作、品牌叙事与设计师联名。
+      </p>
+    </Container>
+  </section>
+
+  <!-- 服务内容 -->
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="服务内容">围绕Camper的核心价值构建内容。</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Camper在中国的目标受众是注重设计的职业人群，大约28到45岁。这不是会对硬广做出反应的人群。所以我们围绕Camper值得关注的理由来构建内容：设计故事、艺术联名、以及中国城市居民穿这些鞋的真实方式。
+            </p>
+          </div>
+        </div>
+
+        <!-- RedNote -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">RedNote：我们投入精力最多的平台</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              我们与建筑、家居和创意行业的微型KOL合作。内容深入讲解每款鞋的设计初衷。用料、工艺、设计理念。这样吸引到的受众比常规时尚KOL合作少，但互动质量明显更高。
+            </p>
+          </div>
+        </div>
+
+        <!-- WeChat -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">WeChat：长线品牌叙事</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              在马略卡岛工坊拍摄的微纪录片。Camper设计和制造过程的幕后故事。内容足够有深度，让人有持续关注的理由。
+            </p>
+          </div>
+        </div>
+
+        <!-- Weibo -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Weibo：激发讨论</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              一场关于"鞋子应该为舒适而设计还是为美观而设计"的讨论持续了三天，产生了数千条评论。
+            </p>
+          </div>
+        </div>
+
+        <!-- Ground team -->
+        <div class="mb-[64px] max-[640px]:mb-[48px] bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[32px] max-[640px]:p-[20px]">
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            我们的团队从中国本地全程管理。母语运营、针对每个平台定制内容、每周复盘分析什么有效什么需要调整。
+          </p>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- Stats grid -->
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <Container>
+      <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        {stats.map((stat) => (
+          <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[24px] text-center">
+            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[4px]">{stat.value}</p>
+            <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)]">{stat.label}</p>
+          </div>
+        ))}
+      </div>
+    </Container>
+  </section>
+
+  <!-- 项目成果 -->
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="项目成果">头几个月增长缓慢。然后开始加速。</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              18个月内，粉丝从43,000增长到187,000。互动率从1.2%提升到4.7%，远超鞋履行业平均水平。
+            </p>
+            <p>
+              RedNote是最大的惊喜。虽然粉丝基数最小，但这个平台贡献了38%的电商流量。受众更精准，购买意向更强。
+            </p>
+            <p>
+              效果也体现在了线下门店。同店同比销售增长31%。客户留存率提升22%。人均年购买频次从1.3次提升到2.1次。
+            </p>
+          </div>
+        </div>
+
+        <!-- Organic callout -->
+        <div class="mb-[64px] max-[640px]:mb-[48px] bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[32px] max-[640px]:p-[20px]">
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            三位RedNote合作博主在付费合作结束后继续自发发布Camper相关内容。没有合同、没有brief，纯粹因为喜欢这双鞋。这种事情不是在营销计划里能安排出来的。
+          </p>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- CTA -->
+  <section class="pb-[96px] max-[640px]:pb-[64px]">
+    <Container>
+      <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[48px] max-[640px]:p-[32px] text-center">
+        <SectionHeading overline="下一个就是你">想在中国社交媒体上打造一个高端品牌？</SectionHeading>
+        <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)] max-w-[500px] mx-auto mb-[32px]">
+          固定范围。固定价格。本地团队。
+        </p>
+        <Button variant="primary" href="/zh/contact">预约沟通</Button>
+      </div>
+    </Container>
+  </section>
+
+  <style>
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+
+</PageLayout>

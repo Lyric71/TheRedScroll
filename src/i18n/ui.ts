@@ -243,11 +243,131 @@ export const ui = {
     // Language
     'lang.switch': 'EN',
   },
+
+  zh: {
+    // Navigation
+    'nav.services': '服务',
+    'nav.platforms': '平台',
+    'nav.work': '案例',
+    'nav.about': '关于我们',
+    'nav.pricing': '价格',
+    'nav.insights': '行业洞察',
+    'nav.bookCall': '预约沟通',
+    'nav.viewAll': '查看全部',
+
+    // Service names & subtitles
+    'nav.services.strategy': '策略、推广与数据分析',
+    'nav.services.strategy.sub': '市场调研、内容日历、数据报告',
+    'nav.services.advertising': '广告投放',
+    'nav.services.advertising.sub': '媒介策划与采购',
+    'nav.services.content': '内容制作',
+    'nav.services.content.sub': 'AI视觉、视频、本土化文案',
+    'nav.services.influencer': '达人营销',
+    'nav.services.influencer.sub': 'KOL与KOC推广',
+    'nav.services.marketEntry': '中国市场准入',
+    'nav.services.marketEntry.sub': '注册、开户、本地化',
+    'nav.services.crm': 'CRM与私域流量',
+    'nav.services.crm.sub': '企业微信、社群、用户留存',
+    'nav.services.training': '培训与咨询',
+    'nav.services.training.sub': '专项课程、高管顾问、运营辅导',
+
+    // Platform names & subtitles
+    'nav.platforms.wechat': '微信',
+    'nav.platforms.wechat.sub': '公众号、小程序、企业微信',
+    'nav.platforms.rednote': '小红书',
+    'nav.platforms.rednote.sub': '种草笔记、好物推荐、生活方式',
+    'nav.platforms.douyin': '抖音',
+    'nav.platforms.douyin.sub': '短视频、直播带货',
+    'nav.platforms.weibo': '微博',
+    'nav.platforms.weibo.sub': '大众传播、公关、热搜话题',
+    'nav.platforms.others': '更多平台',
+    'nav.platforms.others.sub': 'B站、快手、知乎等14个平台',
+
+    // About sub-nav
+    'nav.about.team': '团队介绍',
+    'nav.about.team.sub': '上海与香港',
+    'nav.about.ai': 'AI技术',
+    'nav.about.ai.sub': 'AI如何赋能每项服务',
+
+    // Footer
+    'footer.tagline': '助力品牌在中国社交平台上持续增长。更多粉丝，更高互动，更强转化。明确范围，固定价格，没有意外。',
+    'footer.services': '服务',
+    'footer.discover': '探索',
+    'footer.connect': '联系我们',
+    'footer.group': '集团',
+    'footer.rights': '版权所有。',
+    'footer.privacy': '隐私政策',
+    'footer.terms': '服务条款',
+    'footer.cookies': 'Cookie政策',
+    'footer.contact': '联系我们',
+    'footer.strategyAnalytics': '策略与分析',
+    'footer.contentProduction': '内容制作',
+    'footer.influencerMarketing': '达人营销',
+    'footer.advertising': '广告投放',
+    'footer.chinaMarketEntry': '中国市场准入',
+    'footer.crmPrivateDomain': 'CRM与私域',
+    'footer.trainingConsulting': '培训与咨询',
+    'footer.about': '关于我们',
+    'footer.platforms': '平台',
+    'footer.pricing': '价格',
+    'footer.insights': '行业洞察',
+    'footer.bookCall': '预约沟通',
+
+    // Common CTAs & labels
+    'cta.bookCall': '预约沟通',
+    'cta.readCaseStudy': '查看案例详情',
+    'cta.backToHome': '返回首页',
+    'cta.sendMessage': '发送消息',
+    'cta.sending': '发送中...',
+    'cta.seeServices': '查看服务',
+    'cta.learnMore': '了解更多',
+
+    // Common section labels
+    'section.caseStudy': '客户案例',
+    'section.theClient': '客户背景',
+    'section.whatWeDid': '服务内容',
+    'section.theOutcome': '项目成果',
+    'section.yourTurn': '下一个就是你',
+
+    // Common phrases
+    'common.fixedScope': '明确范围。固定价格。本地团队。',
+    'common.readingTime': '阅读时间',
+
+    // Form labels
+    'form.firstName': '名',
+    'form.lastName': '姓',
+    'form.email': '邮箱',
+    'form.company': '公司',
+    'form.website': '网站',
+    'form.message': '请简要描述您的项目',
+    'form.placeholder.firstName': '名',
+    'form.placeholder.lastName': '姓',
+    'form.placeholder.email': 'you@company.com',
+    'form.placeholder.company': '公司名称',
+    'form.placeholder.website': 'https://yourcompany.com',
+    'form.placeholder.message': '您对哪些平台感兴趣？在中国市场有哪些目标？',
+    'form.captcha': '请计算',
+    'form.captchaPlaceholder': '您的答案',
+    'form.networkError': '网络异常，请检查连接后重试。',
+    'form.genericError': '出了点问题，请稍后再试。',
+
+    // Getting started steps
+    'steps.step1.title': '初步沟通',
+    'steps.step2.title': '方案报价',
+    'steps.step3.title': '两周内上线',
+
+    // Work page
+    'work.all': '全部',
+    'work.noResults': '没有找到符合筛选条件的案例。',
+
+    // Language
+    'lang.switch': 'EN',
+  },
 } as const;
 
 export type UIKey = keyof typeof ui.en;
 
 /** Get a UI translation string. */
-export function t(key: UIKey, lang: 'en' | 'fr' = 'en'): string {
+export function t(key: UIKey, lang: 'en' | 'fr' | 'zh' = 'en'): string {
   return ui[lang][key] ?? ui.en[key] ?? key;
 }
