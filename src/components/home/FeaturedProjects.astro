@@ -14,19 +14,19 @@ const lp = (path: string) => localizedPath(path, lang);
 
 const projectText: Record<string, { title: string; industry: string }> = {
   viessmann: {
-    title: lang === 'zh' ? 'Viessmann：社交驱动的中国电商引擎' : lang === 'fr' ? 'Viessmann : quand le social genere des ventes en Chine' : 'Viessmann: social-to-commerce engine in China',
-    industry: lang === 'zh' ? '暖通系统' : lang === 'fr' ? 'Climatisation' : 'Climate Systems',
+    title: lang === 'zh' ? 'Viessmann：社媒把流量直接引到成交' : lang === 'fr' ? 'Viessmann : quand le social genere des ventes en Chine' : 'Viessmann: social-to-commerce engine in China',
+    industry: lang === 'zh' ? '暖通' : lang === 'fr' ? 'Climatisation' : 'Climate Systems',
   },
   jlr: {
-    title: lang === 'zh' ? '捷豹路虎：社交触达年轻消费群体' : lang === 'fr' ? 'Jaguar Land Rover : capter une audience plus jeune par le social' : 'Jaguar Land Rover: reaching younger consumers',
+    title: lang === 'zh' ? '捷豹路虎：用社媒抓住更年轻的买家' : lang === 'fr' ? 'Jaguar Land Rover : capter une audience plus jeune par le social' : 'Jaguar Land Rover: reaching younger consumers',
     industry: lang === 'zh' ? '汽车' : lang === 'fr' ? 'Automobile' : 'Automotive',
   },
   jac: {
-    title: lang === 'zh' ? 'JAC汽车：AI赋能社群建设' : lang === 'fr' ? 'JAC Motors : batir une communaute grace a l\'IA' : 'JAC Motors: AI-powered community building',
+    title: lang === 'zh' ? 'JAC江淮：AI帮着把用户社群做起来' : lang === 'fr' ? 'JAC Motors : batir une communaute grace a l\'IA' : 'JAC Motors: AI-powered community building',
     industry: lang === 'zh' ? '汽车 / 新能源' : lang === 'fr' ? 'Automobile / VE' : 'Automotive / EV',
   },
   iguzzini: {
-    title: lang === 'zh' ? 'iGuzzini：高端照明走向大众市场' : lang === 'fr' ? 'iGuzzini : l\'eclairage haut de gamme passe au grand public' : 'iGuzzini: luxury lighting goes consumer',
+    title: lang === 'zh' ? 'iGuzzini：高端照明走进大众视野' : lang === 'fr' ? 'iGuzzini : l\'eclairage haut de gamme passe au grand public' : 'iGuzzini: luxury lighting goes consumer',
     industry: lang === 'zh' ? '高端照明' : lang === 'fr' ? 'Eclairage haut de gamme' : 'Luxury Lighting',
   },
 };
@@ -64,9 +64,9 @@ const projects = [
 
 const sectionText = lang === 'zh' ? {
   overline: '精选案例',
-  heading: '那些在中国社交平台上实现增长的品牌。',
-  description: '从奢侈品发布到B2B获客。真实的推广，真实的平台，可衡量的成果。',
-  cta: '查看全部案例',
+  heading: '这些品牌，在中国社媒上跑出来了。',
+  description: '从奢侈品新品发布到B2B获客。真实的项目，真实的平台，可以核对的数据。',
+  cta: '看全部案例',
 } : lang === 'fr' ? {
   overline: 'Projets',
   heading: 'Des campagnes qui font grandir les marques en Chine.',

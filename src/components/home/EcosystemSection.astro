@@ -14,33 +14,33 @@ const lp = (path: string) => localizedPath(path, lang);
 
 const pillars = lang === 'zh' ? [
   {
-    title: '受众。',
-    description: '超过十亿用户，数十个平台，各有各的玩法。先找到你的受众，再选平台。顺序不能反。',
+    title: '人群。',
+    description: '十亿多用户，十几个平台，每一个的玩法都不一样。先想清楚人在哪，再谈上哪个平台。顺序反了就是浪费钱。',
     stat: '1B+', statLabel: '用户',
     image: '/images/ecosystem/audience.png',
   },
   {
     title: '内容。',
-    description: '在抖音能火的内容，放到微信上未必有人看。每个平台有自己的语言、节奏和规则，必须逐一适配。',
+    description: '抖音能刷爆的东西，搬到微信上可能连打开率都没有。每个平台有自己的语感和节奏，一套内容打天下这事儿行不通。',
     stat: '18+', statLabel: '平台',
     image: '/images/ecosystem/content.png',
   },
   {
     title: '达人。',
-    description: 'KOL和KOC对消费决策的影响力远超广告本身。选对人、选对平台、选对时机，其余的都是浪费。',
-    stat: '80%', statLabel: '信任KOL胜过广告',
+    description: 'KOL、KOC对购买决策的影响，比硬广早就要大得多。人选对、平台对、时间对，剩下的才是预算的事。',
+    stat: '80%', statLabel: '更信KOL',
     image: '/images/ecosystem/influencers.png',
   },
   {
     title: '平台。',
-    description: '微信、抖音、小红书、微博，外加14个其他主流平台。算法每个月都在变，你需要一支天天泡在上面的团队。',
+    description: '微信、抖音、小红书、微博，再加14个主流和垂直平台。算法基本上每个月都在动，得有人天天盯。',
     stat: '14+', statLabel: '更多平台',
     image: '/images/ecosystem/platforms.png',
   },
   {
     title: '电商。',
-    description: '在中国，社交媒体就是购物场。消费者不只是浏览，而是直接下单。内容即商业，二者合一。',
-    stat: '3.5T', statLabel: '人民币 抖音GMV',
+    description: '在国内，社媒本身就是货架。用户不只是看，是看完直接下单。内容和生意早就是一回事。',
+    stat: '3.5T', statLabel: '抖音GMV（元）',
     image: '/images/ecosystem/commerce.png',
   },
 ] : lang === 'fr' ? [
@@ -108,9 +108,9 @@ const pillars = lang === 'zh' ? [
 ];
 
 const sectionText = lang === 'zh' ? {
-  heading: '中国社交媒体不是一个渠道，而是一个完整的生态。',
-  sub: '受众、内容、达人、平台与电商环环相扣。单点突破行不通，必须全盘打通。',
-  cta: '预约沟通',
+  heading: '中国社媒不是一个渠道，是一整个生态。',
+  sub: '人群、内容、达人、平台、电商，环环都扣着。单点发力做不起来，得整条链路跑通。',
+  cta: '预约通话',
 } : lang === 'fr' ? {
   heading: 'Les reseaux sociaux chinois, ce n\'est pas un canal. C\'est un monde a part entiere.',
   sub: 'Audience, contenu, influenceurs, plateformes et commerce. Tout est lie. On ne gagne pas sur un axe sans maitriser les autres.',

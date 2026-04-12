@@ -12,19 +12,19 @@ const { lang = 'en' } = Astro.props;
 const lp = (path: string) => localizedPath(path, lang);
 
 const text = lang === 'zh' ? {
-  overline: '为什么选择TheRedScroll',
-  heading: '传统代理模式已经走不通了。我们换了一种做法。',
-  problemLabel: '行业现状',
-  problemP1: '平台变化太快，内容无法简单翻译，代理机构收费不透明，效果难以衡量。',
-  problemP2: '不管你是刚进入中国、已经在中国运营，还是一个正在快速成长的本土品牌，没有合适的团队，社交媒体上的增长就是一场赌博。',
+  overline: '为什么选TheRedScroll',
+  heading: '老一套代理模式早就不灵了。我们换了个玩法。',
+  problemLabel: '现在的问题',
+  problemP1: '平台跑得比代理快，内容硬翻译一套不管用，收费不透明，效果也说不清楚。',
+  problemP2: '不管你是刚把中国社媒重新拎起来做的，还是做了很久但一直找不到节奏的，没有靠谱的团队，社媒增长基本上就是在赌运气。',
   fixLabel: '我们的做法',
   fixes: [
-    { title: '范围清晰。', description: '每一项交付物在签约前全部明确，没有模糊地带。' },
-    { title: '价格固定。', description: '一口价，没有隐藏费用，没有范围蔓延。我们调研了37家同行机构，没有一家能做到这一点。' },
-    { title: '团队在本地。', description: '上海和香港。母语团队。实时操作各平台，真正具备文化理解力。' },
-    { title: 'AI驱动内容。', description: '交付更快，成本更低。但策略这件事，始终由人来把控。' },
+    { title: '范围写清楚。', description: '每一项交付物在签合同前就全部写明白，没有模糊地带。' },
+    { title: '一口价。', description: '一个价钱，不加项、不变动、不二次报价。市面上37家同行调研下来，这一条没人做到。' },
+    { title: '团队在本地。', description: '人在上海、香港。本地团队，实时操作平台，文化这事儿不用翻译。' },
+    { title: 'AI做内容。', description: '产出更快，成本更低。但策略这块，始终是人在拍板。' },
   ],
-  cta: '预约沟通',
+  cta: '预约通话',
 } : lang === 'fr' ? {
   overline: 'Pourquoi TheRedScroll',
   heading: 'Le modele classique des agences ne marche plus. On a construit autre chose.',

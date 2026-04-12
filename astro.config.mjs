@@ -15,7 +15,8 @@ export default defineConfig({
     sitemap({
       filter: (page) =>
         !['/thank-you/', '/cookie-policy/', '/terms-of-service/', '/privacy-policy/',
-          '/fr/thank-you/', '/fr/cookie-policy/', '/fr/terms-of-service/', '/fr/privacy-policy/'].some(
+          '/fr/thank-you/', '/fr/cookie-policy/', '/fr/terms-of-service/', '/fr/privacy-policy/',
+          '/zh/thank-you/', '/zh/cookie-policy/', '/zh/terms-of-service/', '/zh/privacy-policy/'].some(
           (path) => page.endsWith(path)
         ),
       changefreq: 'weekly',
@@ -26,6 +27,7 @@ export default defineConfig({
         locales: {
           en: 'en',
           fr: 'fr',
+          zh: 'zh',
         },
       },
     }),
