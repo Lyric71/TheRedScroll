@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 200" fill="none">
+  <!-- Brand persona as a character hosting a group chat -->
+
+  <!-- Character avatar — large, central -->
+  <circle cx="80" cy="65" r="35" stroke="#E8E0D8" stroke-width="1.5" fill="none"/>
+  <circle cx="80" cy="55" r="14" stroke="#1A1A1A" stroke-width="1.5" fill="none"/>
+  <!-- Eyes -->
+  <circle cx="75" cy="53" r="2" fill="#1A1A1A"/>
+  <circle cx="85" cy="53" r="2" fill="#1A1A1A"/>
+  <!-- Friendly smile -->
+  <path d="M73 59 Q80 66 87 59" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  <!-- Body suggestion -->
+  <path d="M60 85 Q80 75 100 85" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Name tag -->
+  <rect x="45" y="105" width="70" height="22" rx="6" stroke="#CC3333" stroke-width="1.2" fill="none"/>
+  <line x1="58" y1="114" x2="78" y2="114" stroke="#CC3333" stroke-width="2" stroke-linecap="round"/>
+  <line x1="82" y1="114" x2="102" y2="114" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Backstory lines beneath -->
+  <line x1="45" y1="138" x2="115" y2="138" stroke="#E8E0D8" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="45" y1="148" x2="100" y2="148" stroke="#E8E0D8" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="45" y1="158" x2="85" y2="158" stroke="#E8E0D8" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Chat conversation flowing from persona -->
+  <!-- Persona message -->
+  <rect x="140" y="15" width="130" height="40" rx="8" stroke="#CC3333" stroke-width="1.2" fill="none"/>
+  <path d="M140 35 L130 40 L140 42" stroke="#CC3333" stroke-width="1.2" fill="none" stroke-linejoin="round"/>
+  <line x1="155" y1="30" x2="220" y2="30" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="155" y1="40" x2="200" y2="40" stroke="#5C5C5C" stroke-width="1" stroke-linecap="round"/>
+
+  <!-- User reply 1 -->
+  <rect x="160" y="65" width="100" height="30" rx="8" stroke="#E8E0D8" stroke-width="1.2" fill="none"/>
+  <line x1="175" y1="78" x2="230" y2="78" stroke="#5C5C5C" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="175" y1="86" x2="210" y2="86" stroke="#E8E0D8" stroke-width="1" stroke-linecap="round"/>
+
+  <!-- Persona reply -->
+  <rect x="140" y="105" width="130" height="35" rx="8" stroke="#CC3333" stroke-width="1.2" fill="none"/>
+  <path d="M140 120 L130 125 L140 127" stroke="#CC3333" stroke-width="1.2" fill="none" stroke-linejoin="round"/>
+  <line x1="155" y1="118" x2="240" y2="118" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="155" y1="128" x2="215" y2="128" stroke="#5C5C5C" stroke-width="1" stroke-linecap="round"/>
+
+  <!-- User reply 2 -->
+  <rect x="170" y="150" width="100" height="30" rx="8" stroke="#E8E0D8" stroke-width="1.2" fill="none"/>
+  <line x1="185" y1="163" x2="240" y2="163" stroke="#5C5C5C" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="185" y1="171" x2="225" y2="171" stroke="#E8E0D8" stroke-width="1" stroke-linecap="round"/>
+
+  <!-- Hearts / positive reactions -->
+  <path d="M252 160 C252 158 250 156 248 158 C246 156 244 158 244 160 C244 163 248 165 248 165 C248 165 252 163 252 160Z" fill="#CC3333" opacity="0.4"/>
+  <path d="M265 148 C265 146.5 263.5 145 262 146.5 C260.5 145 259 146.5 259 148 C259 150 262 152 262 152 C262 152 265 150 265 148Z" fill="#CC3333" opacity="0.25"/>
+
+  <!-- "feels like a friend" warmth indicator -->
+  <text x="45" y="185" font-family="Inter, sans-serif" font-size="9" font-weight="500" fill="#5C5C5C" letter-spacing="0.03em" opacity="0.6">Voice. Name. Backstory.</text>
+</svg>

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 200" fill="none">
+  <!-- Large segmented grid — showing groups being sorted -->
+
+  <!-- Segment box 1 — top left -->
+  <rect x="10" y="10" width="125" height="85" rx="8" stroke="#E8E0D8" stroke-width="1.5" fill="none"/>
+  <text x="30" y="30" font-family="Inter, sans-serif" font-size="9" font-weight="500" fill="#5C5C5C" letter-spacing="0.05em">INTEREST</text>
+  <!-- Row of people dots -->
+  <circle cx="35" cy="50" r="6" fill="#1A1A1A" opacity="0.15"/>
+  <circle cx="35" cy="50" r="3" fill="#1A1A1A" opacity="0.5"/>
+  <circle cx="55" cy="50" r="6" fill="#1A1A1A" opacity="0.15"/>
+  <circle cx="55" cy="50" r="3" fill="#1A1A1A" opacity="0.5"/>
+  <circle cx="75" cy="50" r="6" fill="#1A1A1A" opacity="0.15"/>
+  <circle cx="75" cy="50" r="3" fill="#1A1A1A" opacity="0.5"/>
+  <circle cx="95" cy="50" r="6" fill="#1A1A1A" opacity="0.15"/>
+  <circle cx="95" cy="50" r="3" fill="#1A1A1A" opacity="0.5"/>
+  <!-- Content cadence lines -->
+  <line x1="30" y1="70" x2="80" y2="70" stroke="#E8E0D8" stroke-width="2" stroke-linecap="round"/>
+  <line x1="30" y1="78" x2="60" y2="78" stroke="#E8E0D8" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Segment box 2 — top right -->
+  <rect x="145" y="10" width="125" height="85" rx="8" stroke="#E8E0D8" stroke-width="1.5" fill="none"/>
+  <text x="165" y="30" font-family="Inter, sans-serif" font-size="9" font-weight="500" fill="#5C5C5C" letter-spacing="0.05em">GEOGRAPHY</text>
+  <circle cx="170" cy="50" r="6" fill="#CC3333" opacity="0.15"/>
+  <circle cx="170" cy="50" r="3" fill="#CC3333" opacity="0.6"/>
+  <circle cx="190" cy="50" r="6" fill="#CC3333" opacity="0.15"/>
+  <circle cx="190" cy="50" r="3" fill="#CC3333" opacity="0.6"/>
+  <circle cx="210" cy="50" r="6" fill="#CC3333" opacity="0.15"/>
+  <circle cx="210" cy="50" r="3" fill="#CC3333" opacity="0.6"/>
+  <line x1="165" y1="70" x2="215" y2="70" stroke="#E8E0D8" stroke-width="2" stroke-linecap="round"/>
+  <line x1="165" y1="78" x2="195" y2="78" stroke="#E8E0D8" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Segment box 3 — bottom left -->
+  <rect x="10" y="105" width="125" height="85" rx="8" stroke="#E8E0D8" stroke-width="1.5" fill="none"/>
+  <text x="30" y="125" font-family="Inter, sans-serif" font-size="9" font-weight="500" fill="#5C5C5C" letter-spacing="0.05em">PURCHASE</text>
+  <circle cx="35" cy="145" r="6" fill="#1A1A1A" opacity="0.15"/>
+  <circle cx="35" cy="145" r="3" fill="#1A1A1A" opacity="0.5"/>
+  <circle cx="55" cy="145" r="6" fill="#1A1A1A" opacity="0.15"/>
+  <circle cx="55" cy="145" r="3" fill="#1A1A1A" opacity="0.5"/>
+  <line x1="30" y1="165" x2="80" y2="165" stroke="#E8E0D8" stroke-width="2" stroke-linecap="round"/>
+  <line x1="30" y1="173" x2="60" y2="173" stroke="#E8E0D8" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Segment box 4 — bottom right -->
+  <rect x="145" y="105" width="125" height="85" rx="8" stroke="#E8E0D8" stroke-width="1.5" fill="none"/>
+  <text x="165" y="125" font-family="Inter, sans-serif" font-size="9" font-weight="500" fill="#5C5C5C" letter-spacing="0.05em">VIP</text>
+  <circle cx="170" cy="145" r="6" fill="#CC3333" opacity="0.15"/>
+  <circle cx="170" cy="145" r="3" fill="#CC3333" opacity="0.6"/>
+  <circle cx="190" cy="145" r="6" fill="#CC3333" opacity="0.15"/>
+  <circle cx="190" cy="145" r="3" fill="#CC3333" opacity="0.6"/>
+  <circle cx="210" cy="145" r="6" fill="#CC3333" opacity="0.15"/>
+  <circle cx="210" cy="145" r="3" fill="#CC3333" opacity="0.6"/>
+  <circle cx="230" cy="145" r="6" fill="#CC3333" opacity="0.15"/>
+  <circle cx="230" cy="145" r="3" fill="#CC3333" opacity="0.6"/>
+  <circle cx="250" cy="145" r="6" fill="#CC3333" opacity="0.15"/>
+  <circle cx="250" cy="145" r="3" fill="#CC3333" opacity="0.6"/>
+  <line x1="165" y1="165" x2="245" y2="165" stroke="#E8E0D8" stroke-width="2" stroke-linecap="round"/>
+  <line x1="165" y1="173" x2="210" y2="173" stroke="#E8E0D8" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Sorting arrows from center -->
+  <path d="M140 50 L145 50" stroke="#5C5C5C" stroke-width="1" stroke-dasharray="3 2" stroke-linecap="round"/>
+  <path d="M140 150 L145 150" stroke="#5C5C5C" stroke-width="1" stroke-dasharray="3 2" stroke-linecap="round"/>
+</svg>
