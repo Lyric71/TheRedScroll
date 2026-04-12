@@ -9,38 +9,38 @@ import GettingStarted from '../../../components/sections/GettingStarted.astro';
 
 
 const faqs = [
-  { q: '没有线下门店，WeCom还有用吗？', a: '只要团队中有人在直接和客户沟通，答案就是有用。客户经理、销售代表、售后服务人员都算在内。如果你的业务完全依赖线上交易，没有任何人工互动，那可以把精力集中在小程序CRM和社群运营上。不过话说回来，大多数以为用不上WeCom的品牌，在看到实际效果后都改变了主意。' },
-  { q: '多大的用户规模才适合启动？', a: '门槛大约在2000到3000名活跃粉丝左右。低于这个数字，自动化流程搭建和社群运营的投入很难收回。超过这个规模，回报会明显加速。' },
-  { q: '私域能替代广告吗？', a: '私域能降低对广告的依赖，但不能完全取代。公域流量依然是吸引新用户的必经之路。私域的作用在于留住用户、推动复购。运营得当的品牌会让两条线并行推进，随着时间推移，对广告的依赖逐月下降。' },
-  { q: '你们使用哪些CRM工具？', a: '微信原生场景下，我们通常使用腾讯企点或纷享销客。如果品牌已经在用Salesforce、HubSpot或Dynamics，我们会搭建连接层保持数据同步。最终选择取决于你们内部现有的工具体系。' },
-  { q: '微信群和会员积分体系有什么区别？', a: '会员体系记录积分，微信群承载对话。群成员之间可以交流、分享体验、评价内容、参与活动。表现最好的品牌会把两者结合起来：CRM负责数据和自动化，社群负责人情味。' },
-  { q: '销售人员离职了怎么办？', a: '用个人微信，客户联系人会跟着员工一起消失。用WeCom，客户关系归属于企业。离职员工的客户会被重新分配，所有聊天记录完整保留，无需从头介绍。' },
-  { q: '你们如何衡量成效？', a: '留存率、复购率、客户终身价值、社群活跃度、CRM活动转化率、私域收入在总营收中的占比。所有指标按月追踪并出具报告。' },
-  { q: '只和微信有关吗？', a: '基本上是的。微信是唯一能提供完整闭环的平台：公众号、小程序、WeCom、微信群、视频号、微信支付。有些品牌会在抖音粉丝群或小红书社区做些轻量运营，但这些工具的能力相比之下还是有限的。任何认真的私域策略都从微信开始。' },
+  { q: '没有线下门店，企微还有用吗？', a: '只要团队里有人直接跟客户沟通，就有用。客户经理、销售、售后都算。如果业务完全是纯线上、没有人工互动，那精力可以集中在小程序CRM和社群上。但说句实在话，大部分一开始觉得"用不上企微"的品牌，真跑起来之后基本都会改口。' },
+  { q: '多大的用户量才值得开始做？', a: '门槛大概在2000到3000活跃粉丝。低于这个数，自动化和社群运营的投入很难回本。过了这条线，回报会明显加速。' },
+  { q: '私域能替代广告吗？', a: '能降低对广告的依赖，但完全替代做不到。公域流量依然是拉新的必经之路。私域主要是留存和复购。跑得好的品牌会让两条线并行，对广告的依赖一个月一个月往下走。' },
+  { q: '你们用什么CRM工具？', a: '微信原生场景下我们一般用腾讯企点或纷享销客。如果品牌本身已经在用Salesforce、HubSpot或Dynamics，我们会搭一层连接器做数据同步。最终用什么，看你们内部现有的工具体系。' },
+  { q: '微信群和会员积分体系有什么区别？', a: '会员体系记录积分，微信群承载对话。群里的成员之间可以交流、分享体验、晒评价、参加活动。真正跑得起来的品牌是两头一起上：CRM管数据和自动化，社群管人情味。' },
+  { q: '销售离职了怎么办？', a: '用个人微信，客户会跟员工一起走。用企微，客户关系归企业。离职后客户可以重新分配，历史聊天记录完整保留，不用从头介绍自己。' },
+  { q: '效果怎么衡量？', a: '留存率、复购率、客户终身价值（LTV）、社群活跃度、CRM动作转化率、私域营收占总营收的比例。每个月出报告。' },
+  { q: '只围绕微信吗？', a: '基本上是的。微信是唯一一个能跑完整闭环的平台：公众号、小程序、企微、社群、视频号、微信支付。有些品牌会在抖音粉丝群或小红书社区上做一点轻量运营，但这些工具的能力差一截。认真做私域，都是从微信开始。' },
 ];
 
 const gettingStartedSteps = [
   {
-    title: '初次沟通。',
-    description: '了解你的品牌、现有用户基础，以及私域如何融入你的增长路径。',
+    title: '先聊聊。',
+    description: '看看你的品牌、现有用户基础，以及私域在你的增长路径里怎么卡位。',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
   },
   {
-    title: 'CRM方案规划。',
-    description: 'WeCom部署、社群策略、自动化流程、CRM集成方案，逐一明确范围。',
+    title: 'CRM方案。',
+    description: '企微部署、社群策略、自动化触达、CRM集成——每一项范围都写清楚。',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>',
   },
   {
-    title: '三周内上线运行。',
-    description: 'WeCom配置完成，首批社群启动，自动化流程就位。社区从第一天起就开始成形。',
+    title: '三周上线。',
+    description: '企微配置完成，首批社群拉起来，自动化就位。社区从第一天就开始成形。',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
   },
 ];
 ---
 
 <PageLayout
-  title="微信CRM与私域运营 | TheRedScroll"
-  description="微信CRM、WeCom配置、中国私域运营策略。社群运营、小程序CRM、客户激活。上海本地团队。"
+  title="微信CRM与私域 | TheRedScroll"
+  description="微信CRM、企微部署、私域策略。社群运营、小程序CRM、用户激活。上海本地团队。"
   lang="zh"
 >
 
@@ -49,17 +49,17 @@ const gettingStartedSteps = [
     <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/crm-private-domain-hero.png')" aria-hidden="true"></div>
     <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
       <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
-        CRM与私域运营
+        CRM与私域
       </p>
       <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
-        你的粉丝是最有价值的资产。把客户关系牢牢掌握在自己手中。
+        粉丝是你最值钱的资产。把客户关系握在自己手里。
       </h1>
       <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
-        在微信中建立直接、长期的客户关系。不抽平台佣金，不让算法替你决定谁能看到什么。
+        在微信里做直接、长期的客户关系。不被平台抽点，不让算法替你决定谁能看见什么。
       </p>
       <div class="flex items-center justify-center gap-[12px] flex-wrap">
-        <Button variant="primary" href="/zh/contact">预约沟通</Button>
-        <Button variant="secondary-dark" href="#what-we-do">了解我们的服务</Button>
+        <Button variant="primary" href="/zh/contact">预约通话</Button>
+        <Button variant="secondary-dark" href="#what-we-do">看看我们的服务</Button>
       </div>
     </div>
   </section>
@@ -225,7 +225,7 @@ const gettingStartedSteps = [
     </Container>
   </section>
 
-  <GettingStarted
+  <GettingStarted lang="zh"
     heading="从零到私域上线运行，只需三周。"
     steps={gettingStartedSteps}
     backgroundImage="/images/getting-started/crm-private-domain.png"
@@ -236,7 +236,7 @@ const gettingStartedSteps = [
     ]}
   />
 
-  <FaqAccordion faqs={faqs} subtitle="关于CRM和私域运营，你需要了解的一切。TheRedScroll为你解答。" />
+  <FaqAccordion lang="zh" faqs={faqs} subtitle="关于CRM和私域运营，你需要了解的一切。TheRedScroll为你解答。" />
 
 
 </PageLayout>

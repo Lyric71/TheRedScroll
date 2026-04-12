@@ -9,30 +9,30 @@ import GettingStarted from '../../../components/sections/GettingStarted.astro';
 
 
 const faqs = [
-  { q: '如何识别虚假粉丝？', a: '我们会交叉比对粉丝数、互动率、评论质量和受众画像。一个号称20万粉丝的创作者，每条内容只有50条评论，且大多是无意义的表情符号——这就是明显的信号。星图、蒲公英等平台自带的工具也能提供经过认证的数据。做过几百场活动之后，可疑的账号基本一眼就能看出来。' },
-  { q: '一场活动需要多少KOL？', a: '取决于你想达成什么目标。做铺量种草：20到50个KOC。做品牌认知：3到5个中腰部KOL通常就够了。做重磅产品首发：一个头部创作者搭配10到15个KOC。具体配比根据预算和优先级来调整。' },
-  { q: '内容发布前可以审核吗？', a: '绝大多数情况下可以。我们会在发布前分享草稿或预览。有些创作者不接受过多修改，因为那会破坏内容的自然感。说实话，他们说得没错。不过核心信息、合规标注和品牌规范，我们一定会在发布前逐一确认。' },
-  { q: 'KOL和KOC有什么区别？', a: 'KOL是专业创作者，拥有较大的粉丝基数，制作精良的内容。KOC（关键意见消费者）是普通消费者，粉丝较少，自发分享产品使用体验。简单来说，KOL带来曝光，KOC建立信任并提升搜索可见度。大多数活动两者都需要。' },
-  { q: '从启动到上线需要多久？', a: '通常从确定方案到首条内容发布需要两到四周。这段时间涵盖创作者筛选、洽谈、商务谈判、创意策划、内容制作和审核。KOC铺量型活动推进更快，有时一到两周即可。' },
-  { q: '创作者的内容可以用于投放广告吗？', a: '可以，但不是默认的。内容二次使用权需要提前谈好。部分创作者的报价中包含广告授权。另一部分则需要单独购买授权，费用可能增加30%到50%。我们会在合同阶段就把这些条款理清楚，避免后续出现意外。' },
-  { q: '哪些行业效果最好？', a: '美妆、护肤和时尚排在最前面，原因很简单——创作者资源最丰富。食品饮料、健康与养生、酒店旅游和消费电子紧随其后。B2B品牌也能从中获益，尤其在WeChat和知乎上，只是可用的创作者池相对更窄。' },
-  { q: '你们负责创作者的付款吗？', a: '全程负责。商务谈判、合同签订、款项支付、税务凭证。你付给我们，其余的事情我们跟创作者和MCN直接对接。' },
+  { q: '怎么识别假粉？', a: '交叉比对粉丝数、互动率、评论质量、受众画像。一个号称20万粉的博主，每条内容只有50条评论，而且大部分是表情包——这就是很明显的信号。星图、蒲公英等平台的官方工具也能给到认证数据。做过几百场项目之后，可疑账号基本一眼就能看出来。' },
+  { q: '一场campaign要用多少KOL？', a: '看目标。铺量种草：20到50个KOC。品牌认知：3到5个中腰部通常够了。重磅新品首发：一个头部加10到15个KOC。具体看预算和优先级怎么排。' },
+  { q: '发布之前可以审稿吗？', a: '大多数情况可以。我们会在发布前把草稿或预览给到你。有些博主不接受太多修改，因为改多了就没有"自然感"了——说实话这一点他们也有道理。但核心信息、合规标注、品牌规范这些我们一定会在发布前一条一条过。' },
+  { q: 'KOL和KOC有啥区别？', a: 'KOL是专业博主，粉丝量大，内容做得精。KOC（关键意见消费者）是普通用户，粉丝少，自发分享使用体验。简单说：KOL给你曝光，KOC给你信任和搜索可见度。大多数campaign两者都要。' },
+  { q: '从启动到上线要多久？', a: '一般两到四周，从方案确定到首条内容发出。这段时间涵盖选人、对接、商务、创意、制作、审核。KOC铺量型项目更快，有时候一到两周就能跑起来。' },
+  { q: 'KOL的内容能用在广告投放里吗？', a: '能，但这不是默认权限。二次使用权要提前谈好。部分博主的报价里包含广告授权，另外一部分要单独买授权，费用大概会多出30%到50%。我们在合同阶段就会把这些条款理清楚，不让你后面踩坑。' },
+  { q: '哪些行业效果最好？', a: '美妆、护肤、时尚最靠前，原因简单——博主资源最丰富。食品饮料、健康养生、酒旅、消费电子紧随其后。B2B品牌也能跑起来，尤其在微信和知乎上，只是博主池子相对窄一些。' },
+  { q: '你们负责给KOL打款吗？', a: '全程负责。商务谈判、合同、打款、发票、税务。你把钱付给我们，剩下的事我们跟博主和MCN对接。' },
 ];
 
 const gettingStartedSteps = [
   {
-    title: '初次沟通',
-    description: '了解您的品牌、目标以及您需要的创作者类型。',
+    title: '先聊聊',
+    description: '说说你的品牌、目标，以及你想要什么类型的博主。',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
   },
   {
     title: 'KOL候选名单',
-    description: '经过验证的创作者，根据您的品牌、行业和预算精准匹配。每一项数据都经过核实。',
+    description: '按品牌、行业、预算匹配候选博主。每一项数据我们都会核过一遍。',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>',
   },
   {
-    title: '2到4周内首批内容上线',
-    description: '创作者对接、创意策划、内容制作、审核与发布。',
+    title: '2到4周内首条内容上线',
+    description: '对接博主、创意brief、制作、审稿、发布。',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
   },
 ];
@@ -40,8 +40,8 @@ const gettingStartedSteps = [
 
 <PageLayout
   lang="zh"
-  title="中国KOL与KOC营销服务 | TheRedScroll"
-  description="在Douyin、RedNote和WeChat上开展达人营销活动。创作者筛选、直播带货、活动管理。范围明确，团队常驻上海。"
+  title="中国KOL与KOC项目 | TheRedScroll"
+  description="抖音、小红书、微信上的达人项目。选人、直播带货、全流程管理。范围写清楚，团队常驻上海。"
 >
 
   <!-- Hero — Dark hero banner -->
@@ -52,13 +52,13 @@ const gettingStartedSteps = [
         达人营销
       </p>
       <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
-        一个对的创作者为品牌发声，胜过任何广告。
+        一个对的博主替品牌开口，比再多的硬广都有用。
       </h1>
       <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
-        我们筛选合适的KOL和KOC，逐一验证，明确创意方向，管理全程合作，并用数据衡量真实回报。上海与香港双城执行。
+        我们帮你选KOL和KOC、一个一个核数据、定创意方向、跑全流程、用数据算真实回报。上海和香港两地执行。
       </p>
       <div class="flex items-center justify-center gap-[12px] flex-wrap">
-        <Button variant="primary" href="/zh/contact">预约沟通</Button>
+        <Button variant="primary" href="/zh/contact">预约通话</Button>
         <Button variant="secondary-dark" href="#ce-que-nous-faisons">我们的服务</Button>
       </div>
     </div>
@@ -71,9 +71,9 @@ const gettingStartedSteps = [
         <div class="relative col-span-2 row-span-2 max-[640px]:col-span-1 max-[640px]:row-span-1 bg-[#1A1A1A] rounded-[12px] p-[32px] max-[640px]:p-[20px] flex flex-col justify-between min-h-[320px] max-[640px]:min-h-0 overflow-hidden">
           <svg class="absolute bottom-[-20px] right-[-20px] w-[260px] h-[260px] opacity-[0.06]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/><path d="M20.84 4.61a5.5 5.5 0 0 1-8.69 4.28"/></svg>
           <div class="relative z-[1]">
-            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">创作者的力量</p>
-            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[16px]">达人营销为什么已经不可或缺</h2>
-            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[400px]">广告把信息推到人们面前。达人营销把产品放到他们信任的人手中。效果完全不同。</p>
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">达人的力量</p>
+            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[16px]">达人营销现在基本上是必选</h2>
+            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[400px]">广告是把信息推到用户面前。达人是把产品放进他们信任的人手里。两件事根本不是一回事。</p>
           </div>
           <div class="relative z-[1] mt-[24px]">
             <Button variant="secondary-dark" href="#ce-que-nous-faisons">我们的服务</Button>
@@ -81,23 +81,23 @@ const gettingStartedSteps = [
         </div>
         <div class="relative overflow-hidden bg-[#F0F1F4] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">触达的是社群，不是泛化的目标人群</h3>
-          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">KOL的粉丝有共同的品味、兴趣以及对博主的信任。当这个人推荐一款产品时，粉丝的反应和看到一条普通广告完全不同。</p>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">触达的是社群，不是泛人群</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">KOL的粉丝有共同的审美、兴趣、以及对博主本身的信任。博主推荐一个产品，粉丝的反应跟刷到一条硬广完全不一样。</p>
         </div>
         <div class="relative overflow-hidden bg-[#1A1A1A] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">转化率显著更高</h3>
-          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.6)]">与KOL在RedNote上合作的品牌，观察到的转化率大约是传统广告渠道的2.3倍。</p>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">转化率明显更高</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.6)]">在小红书上跟KOL合作的品牌，观察到的转化率大概是传统广告渠道的2.3倍。</p>
         </div>
         <div class="relative overflow-hidden bg-[#CC3333] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
-          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">一个仍在快速增长的市场</h3>
-          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.8)]">中国达人营销市场规模预计在2025年底突破1170亿元人民币。超过一半的广告主已经在使用这一渠道。</p>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">市场还在涨</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.8)]">国内达人营销市场规模预计2025年底突破1170亿元。一半以上的广告主已经在用这个渠道。</p>
         </div>
         <div class="relative overflow-hidden bg-[#E8E0D8] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">但执行工作量极大</h3>
-          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">找到合适的人、验证粉丝真实性、谈判价格、逐条审核内容、追踪效果。一场15个创作者参与的活动，轻松超过100小时的工作量。</p>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">但执行工作量是真的大</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">找合适的人、核粉丝真实性、谈价、逐条审稿、追效果。15个博主的一场campaign，轻松就是100小时以上的工作量。</p>
         </div>
       </div>
     </Container>
@@ -107,7 +107,7 @@ const gettingStartedSteps = [
   <section id="ce-que-nous-faisons" class="mt-[96px] max-[640px]:mt-[64px] scroll-mt-[76px]">
     <Container>
       <SectionBar />
-      <SectionHeading overline="我们的服务">KOL与KOC筛选</SectionHeading>
+      <SectionHeading overline="我们做的事">KOL与KOC筛选</SectionHeading>
 
       <div class="rounded-[12px] overflow-hidden mt-[24px]">
         <img src="/images/what-we-do/influencer-kol-douyin.png" alt="手机屏幕展示Douyin上的创作者视频流" class="w-full aspect-[5/2] max-[640px]:aspect-[16/10] object-cover" loading="lazy" decoding="async" />
@@ -118,22 +118,22 @@ const gettingStartedSteps = [
           <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
             <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">创作者发掘</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">我们在Douyin、RedNote、WeChat、Weibo、Bilibili和快手上拥有创作者数据库。每个账号都经过严格筛查：互动真实性、受众构成、内容风格与品牌契合度。</p>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">发掘博主</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">我们自己维护着抖音、小红书、微信、微博、B站、快手上的博主库。每个账号都要过几道筛：互动真实性、粉丝画像、内容风格跟品牌搭不搭。</p>
         </div>
         <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
           <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
             <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
           </div>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">策划与活动筹备</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">每场活动都从明确的需求文档开始。目标、核心信息、内容形式、发布排期、平台特殊要求。KOL的发布节奏与品牌的内容规划和付费推广同步协调。</p>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">策划和准备</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">每一场campaign都先有一份干净的brief：目标、核心信息、内容形式、排期、平台专属要求。KOL的发布节奏跟品牌自己的内容规划和付费投放是同步调起来的。</p>
         </div>
         <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
           <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
             <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
           </div>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">商务谈判与签约</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">我们负责价格谈判、内容授权、排他条款和交付清单。报价与实际成交价之间的差距经常超过15%。我们清楚合理的价格区间。</p>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">商务谈判</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">我们负责谈价、谈授权、谈排他、确认交付清单。首次报价跟实际成交价之间经常差出15%以上。合理价格区间在哪，我们心里有数。</p>
         </div>
       </div>
     </Container>
@@ -144,35 +144,35 @@ const gettingStartedSteps = [
     <Container>
       <div class="bg-[#1A1A1A] rounded-[12px] p-[48px] max-[640px]:p-[32px_20px]">
         <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">全流程覆盖</p>
-        <h2 class="text-[#FFFFFF] text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] mb-[16px]">从直播带货到合规把控，再到效果复盘</h2>
+        <h2 class="text-[#FFFFFF] text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] mb-[16px]">从直播带货、合规、到结案复盘</h2>
         <div class="max-w-[680px] flex flex-col gap-[24px] mb-[32px]">
           <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
-            直播带货在中国是一个真正的销售渠道。一场Douyin或淘宝直播可以在几个小时内产生数千笔订单。我们负责主播选择、选品策划、脚本撰写、实时弹幕管理以及直播后复盘。
+            直播带货在国内是一个真正的销售渠道。一场抖音或淘宝直播几个小时就能跑出几千单。我们负责主播选择、选品、脚本、弹幕管理，以及直播后的数据复盘。
           </p>
         </div>
         <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[24px]">
           <div>
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">合规与标注要求</h3>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">合规和标注</h3>
             <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
-              商业推广内容受中国广告法监管。RedNote要求明确标注商业合作。Douyin会对未申报的推广内容进行标记。我们确保每条发布内容符合平台规则和现行广告法规。
+              商业推广内容受国内广告法监管。小红书要求明确标注商业合作，抖音会自动对未申报的推广内容打标。我们保证每一条发出去的内容符合平台规则和现行广告法。
             </p>
           </div>
           <div>
             <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">效果衡量</h3>
             <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
-              所有数据都会追踪。曝光量、互动率、点击量、转化率、单次效果成本。活动复盘报告帮助判断哪些创作者值得继续合作、哪些应该淘汰、下次该尝试谁。创作者的选择基于数据，而非感觉。
+              数据全部追踪。曝光、互动、点击、转化、单次成本。结案报告帮你判断哪个博主值得继续合作、哪个要淘汰、下一次再试谁。选人靠数据，不靠感觉。
             </p>
           </div>
           <div>
             <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">直播带货</h3>
             <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
-              对于已开通Douyin小店的品牌，我们可以组织与商品链接直连的直播场次。主播选择、选品策划、实时弹幕管理、直播复盘。佣金制模式意味着风险由主播共同承担。
+              已经开了抖音小店的品牌，我们可以组织直接挂商品链接的直播场次。主播、选品、实时弹幕、直播后复盘。佣金制意味着风险主播一起扛。
             </p>
           </div>
           <div>
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">款项结算</h3>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">打款结算</h3>
             <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
-              商务谈判、合同签署、款项支付、税务凭证。你付给我们，其余的事我们跟创作者和MCN直接对接。固定费用、销售佣金、产品置换或混合模式，视具体活动而定。
+              商务、合同、打款、税票。你付给我们，其余的跟博主和MCN都由我们直接对接。固定费用、销售佣金、产品置换、或者几种混合——按项目定。
             </p>
           </div>
         </div>
@@ -186,16 +186,16 @@ const gettingStartedSteps = [
       <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[48px] max-[640px]:gap-[32px] items-center">
         <div>
           <SectionBar />
-          <SectionHeading overline="了解行业生态">什么是MCN？</SectionHeading>
+          <SectionHeading overline="行业生态">MCN到底是什么</SectionHeading>
           <div class="flex flex-col gap-[24px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
             <p>
-              MCN，全称Multi-Channel Network。通俗理解，就是内容创作者的经纪公司。MCN与KOL和KOC签约，为他们管理内容制作、商业合作和流量变现。
+              MCN（Multi-Channel Network），通俗讲就是博主的经纪公司。MCN跟KOL、KOC签约，帮他们管内容、接商单、做变现。
             </p>
             <p>
-              截至2025年，中国已有约29000家注册MCN机构。这些机构负责培训创作者、制作内容、协调直播带货的运营流程，并确保合规。Douyin和RedNote上不少头部创作者都曾隶属于某家MCN。
+              截至2025年，国内注册的MCN大概有29000家。这些机构负责培训博主、制作内容、跑直播带货的运营流程、并确保合规。抖音和小红书上不少头部博主都签在某家MCN底下。
             </p>
             <p>
-              当你想与中腰部及以上级别的KOL合作时，对接的几乎都是他们背后的MCN。我们与Douyin、RedNote和WeChat上的主要MCN保持着长期合作关系。这意味着更快的响应速度、触达档期紧张的创作者的机会，以及非冷启动状态下才能拿到的价格条件。
+              当你想跟中腰部以上的KOL合作，对接的基本上都是他们背后的MCN。我们跟抖音、小红书、微信上主要的MCN都保持长期合作关系。这意味着响应更快，能接触到档期紧的博主，以及冷启动状态下拿不到的价格条件。
             </p>
           </div>
         </div>
@@ -212,9 +212,9 @@ const gettingStartedSteps = [
       <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[48px] max-[640px]:gap-[32px] items-center mb-[48px] max-[640px]:mb-[32px]">
         <div>
           <SectionBar />
-          <SectionHeading overline="价格参考">RedNote / 小红书</SectionHeading>
+          <SectionHeading overline="价格参考">小红书</SectionHeading>
           <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">
-            价格取决于粉丝数、互动率、内容形式、行业以及是否有排他条款。以下区间为2026年第一季度的市场实际水平，不构成报价。
+            价格看粉丝数、互动率、内容形式、行业、是否带排他。下面是2026年Q1的市场大致区间，只是给你感觉，不是正式报价。
           </p>
         </div>
         <div class="flex items-center justify-center">
@@ -249,7 +249,7 @@ const gettingStartedSteps = [
       <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[48px] max-[640px]:gap-[32px] items-center mb-[48px] max-[640px]:mb-[32px]">
         <div>
           <SectionBar />
-          <SectionHeading overline="价格参考">Douyin</SectionHeading>
+          <SectionHeading overline="价格参考">抖音</SectionHeading>
         </div>
         <div class="flex items-center justify-center">
           <img src="/images/platforms/douyin-services/kol-campaigns.png" alt="Douyin上的KOL活动创作者" class="w-full max-w-[420px] rounded-[10px]" loading="lazy" decoding="async" />
@@ -283,7 +283,7 @@ const gettingStartedSteps = [
       <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[48px] max-[640px]:gap-[32px] items-center mb-[48px] max-[640px]:mb-[32px]">
         <div>
           <SectionBar />
-          <SectionHeading overline="价格参考">WeChat</SectionHeading>
+          <SectionHeading overline="价格参考">微信</SectionHeading>
         </div>
         <div class="flex items-center justify-center">
           <img src="/images/platforms/wechat-services/channels-kol.png" alt="WeChat视频号上的KOL创作者" class="w-full max-w-[420px] rounded-[10px]" loading="lazy" decoding="async" />
@@ -309,10 +309,10 @@ const gettingStartedSteps = [
       <a href="/zh/work/jaguar-land-rover" class="block bg-[var(--color-rice-paper)] rounded-[10px] p-[48px] max-[640px]:p-[32px_20px] group">
         <div class="flex gap-[48px] max-[768px]:flex-col items-center">
           <div class="flex-1 min-w-0">
-            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[12px]">案例研究</p>
-            <h3 class="text-[24px] max-[640px]:text-[20px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[12px]">Jaguar Land Rover：用社交媒体触达年轻消费者</h3>
-            <p class="text-[15px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[20px]">用户生成内容活动成功让中国年轻消费者加入了品牌对话。真实用户产出的内容帮助Jaguar Land Rover在新一代消费者中重新建立了品牌认知。</p>
-            <span class="text-[14px] font-medium text-[var(--color-vermillion)] group-hover:underline">查看案例 →</span>
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[12px]">客户案例</p>
+            <h3 class="text-[24px] max-[640px]:text-[20px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[12px]">捷豹路虎：用社媒抓住更年轻的用户</h3>
+            <p class="text-[15px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[20px]">一场UGC项目，把国内年轻消费者拉进了品牌对话。真实用户产出的内容帮捷豹路虎在新一代人群里重新建立了品牌存在感。</p>
+            <span class="text-[14px] font-medium text-[var(--color-vermillion)] group-hover:underline">看案例 →</span>
           </div>
           <img
             src="/images/clients/Jaguar/Jaguar-Land-Rover.avif"
@@ -326,18 +326,18 @@ const gettingStartedSteps = [
     </Container>
   </section>
 
-  <GettingStarted
-    heading="从确定方案到首批内容上线，两到四周。"
+  <GettingStarted lang="zh"
+    heading="从方案确定到首条内容上线，两到四周。"
     steps={gettingStartedSteps}
     backgroundImage="/images/getting-started/influencer-marketing.png"
     crossLinks={[
       { label: '内容制作', href: '/zh/services/content-production' },
       { label: '广告投放', href: '/zh/services/advertising' },
-      { label: '策略与营销活动', href: '/zh/services/strategy-campaigns' },
+      { label: '策略与campaign', href: '/zh/services/strategy-campaigns' },
     ]}
   />
 
-  <FaqAccordion faqs={faqs} subtitle="关于中国达人营销，客户最常问的问题。" />
+  <FaqAccordion lang="zh" faqs={faqs} subtitle="客户最常问的几个问题。" />
 
 
 </PageLayout>

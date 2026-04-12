@@ -7,44 +7,44 @@ import GettingStarted from '../../../components/sections/GettingStarted.astro';
 
 const services = [
   {
-    title: '策略、营销活动与数据分析',
-    description: '我们深入分析您的市场，制定完整计划，操盘营销活动，追踪真正有价值的指标。从平台选择到月度复盘，全程把控。',
+    title: '策略、推广与数据',
+    description: '我们帮你把市场吃透、把计划定下来、把campaign跑起来，然后只盯那些真正值得看的指标。从选平台到每月复盘，全程对接。',
     href: '/zh/services/strategy-campaigns',
     icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 6-8"/></svg>`,
   },
   {
     title: '广告投放',
-    description: '覆盖WeChat、Douyin、RedNote、Weibo等主流平台的媒体采购。我们负责策划、投放、素材制作和持续优化。',
+    description: '覆盖微信、抖音、小红书、微博等主流平台的媒介采买。策划、投放、素材、持续优化，全程由我们包。',
     href: '/zh/services/advertising',
     icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>`,
   },
   {
     title: '内容制作',
-    description: '为每个中国社交平台量身打造视觉、视频和文案，完全符合本地调性。AI驱动生产效率，创意方向始终由人把控。',
+    description: '为每个中国社媒平台出视觉、视频和文案。本地调性，平台感不用多说。AI负责产能，创意方向始终在人手里。',
     href: '/zh/services/content-production',
     icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/></svg>`,
   },
   {
     title: '达人营销',
-    description: '在Douyin、RedNote、Weibo和Bilibili上开展KOL和KOC合作。从达人筛选、报价谈判、创意简报到效果追踪，全流程管理。',
+    description: '在抖音、小红书、微博、B站上做KOL和KOC项目。选人、谈价、写brief、跟进执行、结案报告，全流程在我们这边。',
     href: '/zh/services/influencer-marketing',
     icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
   },
   {
-    title: '中国市场入驻',
-    description: '开设账号、平台配置、ICP备案和本地化适配。让您的品牌在中国社交媒体上建立完整存在所需的一切。',
+    title: '中国市场进入',
+    description: '账号开户、平台认证、ICP备案、本地化。要在中国社媒上把架子搭起来，这套基础全包。',
     href: '/zh/services/market-entry',
     icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>`,
   },
   {
-    title: 'CRM与私域运营',
-    description: '搭建WeCom体系、运营社群、设计会员忠诚计划和留存链路。将您的粉丝转化为持续复购的客户。',
+    title: 'CRM与私域',
+    description: '搭企业微信体系、运营社群、设计会员体系和留存链路。把粉丝转成会持续复购的用户。',
     href: '/zh/services/crm-private-domain',
     icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>`,
   },
   {
     title: '培训与咨询',
-    description: '实操工作坊、团队辅导和平台诊断。适合希望内部积累能力、不再依赖外部供应商的品牌。',
+    description: '实操工作坊、团队辅导、平台诊断。适合想把能力内化、不愿意长期依赖外部代理的品牌。',
     href: '/zh/services/training-consulting',
     icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>`,
   },
@@ -52,18 +52,18 @@ const services = [
 
 const gettingStartedSteps = [
   {
-    title: '初次沟通',
-    description: '了解您的品牌、目标以及进入中国市场的准备程度。没有销售套路，只有关键问题。',
+    title: '先聊聊',
+    description: '了解一下你的品牌、目标、现在的状态。不跑销售流程，就问该问的问题。',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
   },
   {
-    title: '报价方案',
-    description: '范围明确，价格固定。每项交付物白纸黑字写清楚。签约前您就知道自己能得到什么。',
+    title: '方案报价',
+    description: '范围写清楚，一口价。每一项交付物白纸黑字列出来。签之前你就知道能拿到什么。',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>',
   },
   {
-    title: '两周内上线',
-    description: '策略交付、营销活动搭建完毕、首批内容发布。签约后两周。',
+    title: '两周上线',
+    description: '策略、账号、首批内容，签合同后两周全部落地。',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
   },
 ];
@@ -71,7 +71,7 @@ const gettingStartedSteps = [
 
 <PageLayout
   title="服务 | TheRedScroll"
-  description="为国际品牌量身定制的中国社交媒体服务。策略、内容、广告、达人营销、市场入驻、CRM和培训。固定范围，固定价格。"
+  description="针对中国社媒的全套服务：策略、内容、广告、达人、市场进入、CRM、培训。范围写清楚，一口价。"
   lang="zh"
 >
 
@@ -83,14 +83,14 @@ const gettingStartedSteps = [
         我们的服务
       </p>
       <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
-        品牌在中国增长所需的一切。
+        在中国社媒做增长，这里面你要的都有。
       </h1>
       <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
-        七项服务，一支团队。固定范围，固定价格，团队常驻上海。
+        七项服务，一支团队。范围清楚、一口价，人就在上海。
       </p>
       <div class="flex flex-wrap justify-center gap-[12px]">
-        <Button href="/zh/pricing" variant="primary">查看价格</Button>
-        <Button href="#all-services" variant="secondary-dark">查看服务</Button>
+        <Button href="/zh/pricing" variant="primary">看看价格</Button>
+        <Button href="#all-services" variant="secondary-dark">看看服务</Button>
       </div>
     </div>
   </section>
@@ -101,13 +101,13 @@ const gettingStartedSteps = [
       <div class="max-w-[680px] mb-[48px]">
         <SectionBar />
         <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">
-          我们做什么
+          我们做的事
         </p>
         <h2 class="text-[32px] max-[640px]:text-[24px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[12px]">
-          专为中国社交平台打造的服务。
+          专门针对中国社媒的服务。
         </h2>
         <p class="text-[16px] font-normal leading-[1.5] text-[var(--color-stone)]">
-          每项服务可以独立使用，也可以组合搭配。您选择自己需要的。
+          每项服务可以单用，也可以打包一起上。你挑自己用得上的。
         </p>
       </div>
 
@@ -127,7 +127,7 @@ const gettingStartedSteps = [
               {service.description}
             </p>
             <span class="inline-flex items-center gap-[6px] text-[14px] font-medium text-[var(--color-vermillion)]">
-              了解更多
+              看详情
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-[0.15s] group-hover:translate-x-[4px]">
                 <path d="M5 12h14"/><path d="M12 5l7 7-7 7"/>
               </svg>
@@ -139,8 +139,8 @@ const gettingStartedSteps = [
   </section>
 
   <!-- Getting started -->
-  <GettingStarted
-    heading="从首次通话到营销活动上线，两周搞定。"
+  <GettingStarted lang="zh"
+    heading="从第一次通话到内容上线，两周搞定。"
     steps={gettingStartedSteps}
     backgroundImage="/images/team/china-office.png"
   />

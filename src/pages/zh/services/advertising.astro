@@ -9,40 +9,40 @@ import GettingStarted from '../../../components/sections/GettingStarted.astro';
 
 
 const faqs = [
-  { q: '起步预算大概需要多少？', a: '因平台而异。RedNote最低¥5,000起。Douyin信息流广告至少¥1,000/天。WeChat朋友圈同样¥1,000/天起。我们建议每月¥15,000到¥30,000，这样才有足够数据进行优化。' },
-  { q: '广告预算是你们直接管理吗？', a: '是的。费用直接充值到平台账户。我们不从中抽取任何佣金。服务费覆盖策略制定、账户搭建、素材设计和效果报告。' },
-  { q: '多久能看到效果？', a: '流量通常第一周就能看到。转化需要两到三周的调优。品牌认知则需要30到60天。' },
-  { q: '我们现有的广告效果不好，怎么办？', a: '我们先做诊断。审查投放计划、定向、素材、预算分配，然后针对性重建。最常见的问题是：格式不对、素材跑太久没换、定向太宽泛，以及没人做日常优化。' },
-  { q: '你们也做广告素材吗？', a: '是的。视频、图片、文案，每个平台定制。创意方向由团队把控，制作效率通过AI和HubStudio.ai提升。' },
-  { q: '推广帖子还是做正式广告投放？', a: '推广帖子操作快但能力有限。正式投放可以精准定向、素材测试、设置转化目标、管理出价策略并追踪广告回报率。效果差距往往非常明显。' },
-  { q: 'ROAS永远是最好的衡量指标吗？', a: '对电商和直接转化来说，绝大多数情况下是的。品牌认知则看千次曝光成本和覆盖人数。关键是在投放前就达成共识——什么叫"成功"，而不是事后再定义。' },
-  { q: '可以同时在多个平台投放吗？', a: '可以，而且通常效果更好。Douyin和RedNote负责发现和认知，WeChat可以针对已经互动过的用户做再营销。我们根据您的目标和预算确定最佳组合。' },
-  { q: '广告账户认证怎么办？', a: '大多数平台在账户认证完成前不允许使用广告管理后台。我们全程处理认证流程，通常需要一到三周。' },
-  { q: '服务费怎么计算？', a: '策略制定和管理工作收取固定服务费。广告预算单独计费，直接支付给平台。没有灰色地带。' },
+  { q: '起步预算大概要多少？', a: '看平台。小红书最低¥5,000起。抖音信息流至少¥1,000/天。微信朋友圈同样¥1,000/天起步。一般建议月预算¥15,000到¥30,000，这样优化的数据量才够。' },
+  { q: '广告预算是你们直接管吗？', a: '是。钱直接充到平台账户，我们不抽点，不收任何佣金。服务费覆盖策略、开户、素材、报告这几块。' },
+  { q: '多久能看到效果？', a: '流量一般第一周就有。转化需要两到三周跑调优。品牌认知要30到60天。' },
+  { q: '我们现在跑的广告效果不好怎么办？', a: '先做诊断。看投放计划、定向、素材、预算分配，然后针对性重搭。最常见的几个问题：格式选错、素材跑太久没换、定向太宽、没人做日常优化。' },
+  { q: '你们做广告素材吗？', a: '做。视频、图、文案，每个平台单独出。创意方向由团队拿，产能靠AI和HubStudio.ai。' },
+  { q: '推广帖子还是做正式投放？', a: '推广帖子快但能力有限。正式投放能做精准定向、素材AB测、转化目标、出价策略、ROAS追踪。效果差距通常肉眼可见。' },
+  { q: 'ROAS永远是最好的衡量指标吗？', a: '电商、直接转化这类，绝大多数情况下是。品牌认知更看CPM和覆盖人数。关键是投放之前就把"什么叫成功"定下来，不要事后再找借口。' },
+  { q: '可以多平台同时投吗？', a: '可以，而且通常组合起来更有效。抖音和小红书负责发现和认知，微信做已互动用户的再营销。我们根据目标和预算定组合。' },
+  { q: '广告账户认证怎么走？', a: '大多数平台必须先过认证才能用广告后台。我们全程处理，一般一到三周。' },
+  { q: '服务费怎么算？', a: '策略和日常管理收一个固定服务费。广告预算单独计费，直接付给平台。没有灰色地带。' },
 ];
 
 const gettingStartedSteps = [
   {
-    title: '初次沟通',
-    description: '了解您的品牌、目标和预算规划。我们一起确定最佳方案。',
+    title: '先聊聊',
+    description: '说说品牌、目标、预算规划。我们一起定下一步怎么走。',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
   },
   {
-    title: '媒体计划',
-    description: '平台选择、预算分配、预估指标。范围明确，管理费固定。',
+    title: '媒介计划',
+    description: '平台、预算分配、预估指标。范围写清楚，管理费固定。',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>',
   },
   {
-    title: '两周内广告上线',
-    description: '开户、素材制作、投放启动。优化从第一天开始。',
+    title: '两周广告上线',
+    description: '开户、出素材、投放启动。第一天就开始优化。',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
   },
 ];
 ---
 
 <PageLayout
-  title="中国社交媒体广告投放 | TheRedScroll"
-  description="WeChat、Douyin和RedNote广告采购与优化。固定管理费，广告预算透明。团队常驻上海。"
+  title="中国社媒广告投放 | TheRedScroll"
+  description="微信、抖音、小红书广告采买和优化。固定管理费，预算直接透明地付给平台。团队常驻上海。"
   lang="zh"
 >
 
@@ -51,16 +51,16 @@ const gettingStartedSteps = [
     <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/advertising-hero.png')" aria-hidden="true"></div>
     <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
       <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
-        媒体采购与广告投放
+        媒介采买与广告投放
       </p>
       <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
-        触达对的人，而非更多人。
+        触达对的人，不是更多人。
       </h1>
       <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
-        我们在WeChat、Douyin、RedNote和Weibo上为您策划、采购和优化广告投放。固定管理费，媒体预算完全透明。
+        我们在微信、抖音、小红书、微博上帮你做策划、采买和优化。固定管理费，预算单独走账，彻底透明。
       </p>
       <div class="flex items-center justify-center gap-[12px] flex-wrap">
-        <Button variant="primary" href="/zh/contact">预约沟通</Button>
+        <Button variant="primary" href="/zh/contact">预约通话</Button>
         <Button variant="secondary-dark" href="#what-we-do">查看服务</Button>
       </div>
     </div>
@@ -74,8 +74,8 @@ const gettingStartedSteps = [
           <svg class="absolute bottom-[-20px] right-[-20px] w-[260px] h-[260px] opacity-[0.06]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/></svg>
           <div class="relative z-[1]">
             <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">为什么要投广告</p>
-            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[16px]">广告投放已近乎必选项</h2>
-            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[400px]">自然流量可以慢慢积累受众，但它无法精准锁定上海25-34岁、上周搜索过"天然护肤"的女性。广告可以。</p>
+            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[16px]">投放基本上已经是必选项</h2>
+            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[400px]">自然流量可以慢慢积累用户，但它没法精准圈出"上海25-34岁、上周搜过‘天然护肤’的女性"这种人群。广告可以。</p>
           </div>
           <div class="relative z-[1] mt-[24px]">
             <Button variant="secondary-dark" href="#what-we-do">查看服务</Button>
@@ -84,22 +84,22 @@ const gettingStartedSteps = [
         <div class="relative overflow-hidden bg-[#F0F1F4] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
           <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">速度</h3>
-          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">自然内容需要几个月才能见效。一个精准的广告投放几天内就能带来销售。</p>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">自然流量要几个月才能跑出结果。一条准的投放，几天就能带来成交。</p>
         </div>
         <div class="relative overflow-hidden bg-[#1A1A1A] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/></svg>
-          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">精准度</h3>
-          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.6)]">按年龄、性别、城市等级、兴趣标签、设备类型、消费习惯、浏览记录精准定向。广告投放到您指定的人群。</p>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">精准</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.6)]">按年龄、性别、城市等级、兴趣标签、设备、消费习惯、浏览记录定向。广告只去你要的那群人。</p>
         </div>
         <div class="relative overflow-hidden bg-[#CC3333] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
-          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">可扩展</h3>
-          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.8)]">周一用¥5,000测试。数据跑得好，周五直接加到¥50,000。自然内容做不到这一点。</p>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">可放量</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.8)]">周一用¥5,000试水，数据好周五直接拉到¥50,000。自然流量给不了这个能力。</p>
         </div>
         <div class="relative overflow-hidden bg-[#E8E0D8] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
           <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">但也有代价</h3>
-          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">一个糟糕的广告计划烧钱比不投广告还快。媒体计划、日常优化和清晰的指标，跟广告素材本身一样重要。</p>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">一个糟糕的投放，烧钱比不投还快。媒介计划、日常优化、清晰的指标，这几样跟素材本身一样重要。</p>
         </div>
       </div>
     </Container>
@@ -109,7 +109,7 @@ const gettingStartedSteps = [
   <section id="what-we-do" class="mt-[96px] max-[640px]:mt-[64px] scroll-mt-[76px]">
     <Container>
       <SectionBar />
-      <SectionHeading overline="服务内容">媒体策划</SectionHeading>
+      <SectionHeading overline="我们做的事">媒介策划</SectionHeading>
 
       <!-- Hero image -->
       <div class="rounded-[12px] overflow-hidden mt-[24px]">
@@ -128,22 +128,22 @@ const gettingStartedSteps = [
           <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
             <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
           </div>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">媒体策划</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">花一分钱之前先把框架搭好。选哪些平台、用什么形式、定向什么人群、每个渠道分配多少预算、每个结果可以预期多少成本。</p>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">媒介策划</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">钱没花之前先把框架搭好。哪个平台、什么格式、定向什么人群、每个渠道分多少预算、每一次结果的成本可以预期在什么区间。</p>
         </div>
         <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
           <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
             <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
           </div>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">投放搭建与优化</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">全流程管理。开户、上传素材、设定定向、出价策略、AB测试。每日优化。周一跑得好的素材到周四可能就疲了。</p>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">搭建与优化</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">全流程管。开户、上传素材、定向、出价策略、AB测试。每天调。周一跑得好的素材，周四可能就疲了。</p>
         </div>
         <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
           <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
             <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
           </div>
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">全平台覆盖</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">我们在巨量引擎（Douyin）、腾讯广告（WeChat）、聚光平台（RedNote）和微博粉丝通上运营广告。我们熟悉那些真正起作用的深层设置。</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">我们在巨量引擎（抖音）、腾讯广告（微信）、聚光平台（小红书）、粉丝通（微博）上跑广告。那些真正起作用的深层设置，我们都熟。</p>
         </div>
       </div>
     </Container>
@@ -154,35 +154,35 @@ const gettingStartedSteps = [
     <Container>
       <div class="bg-[#1A1A1A] rounded-[12px] p-[48px] max-[640px]:p-[32px_20px]">
         <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">全流程服务</p>
-        <h2 class="text-[#FFFFFF] text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] mb-[16px]">从素材设计到效果追踪，包括合规审查</h2>
+        <h2 class="text-[#FFFFFF] text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] mb-[16px]">从素材到效果追踪，合规也一起包</h2>
         <div class="max-w-[680px] flex flex-col gap-[24px] mb-[32px]">
           <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
-            看起来像广告的广告没人看。看起来像原生内容的广告才有人看。我们为每个平台定制素材，并在效果衰减前及时更换。AI帮助我们消化大量制作需求，创意方向始终由团队掌控。
+            一看就是广告的广告没人看。看起来像原生内容的广告才有人看。我们按每个平台的调性出素材，效果开始疲的时候及时换。AI帮我们吃下产能，创意方向始终在团队手里。
           </p>
         </div>
         <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[24px]">
           <div>
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">再营销与自定义人群</h3>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">再营销和自定义人群</h3>
             <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
-              有人看了50%的Douyin视频没有点击？我们用不同角度再触达。有人浏览了您的小程序但没下单？我们推送召回广告。在RedNote上，我们可以基于与特定笔记互动过或搜索过特定关键词的用户构建人群包。这往往是回报率最高的投放方式。
+              抖音视频看了一半没点击？换个角度再触达一次。浏览过你的小程序但没下单？推一条召回广告。小红书上我们还能基于跟特定笔记互动过或搜过特定关键词的用户去圈人群包。这通常是ROI最高的那一块。
             </p>
           </div>
           <div>
             <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">合规与广告审核</h3>
             <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
-              每个平台都有自己的审核规则。某些行业有投放限制，某些品类甚至被禁止。我们在投放前做好合规检查、管理审核流程，并在您投入预算之前告知行业限制。
+              每个平台一套审核规则，有的行业受限，有的品类直接禁投。我们在投放之前就把合规跑一遍，行业限制该说的先说，钱没砸进去就让你知道雷在哪儿。
             </p>
           </div>
           <div>
             <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">效果报告</h3>
             <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
-              广告回报率（ROAS）是核心指标。我们同时追踪CPC、CPM、CTR、CPA、转化率和展示频次。投放期间每周出报告，月度汇总。对于大预算客户，提供实时数据看板。
+              ROAS是核心。CPC、CPM、CTR、CPA、转化率、展示频次我们一起盯。投放期每周出报告，月底汇总。大预算客户上实时看板。
             </p>
           </div>
           <div>
             <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">预算透明</h3>
             <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
-              广告预算单独计费。不抽佣，不在媒体采购上收取隐形费用。每一分钱花在哪里，清清楚楚。
+              广告预算单独走账。不抽点，媒介采买没有任何隐性费用。每一笔钱花到哪儿，清清楚楚。
             </p>
           </div>
         </div>
@@ -194,9 +194,9 @@ const gettingStartedSteps = [
   <section class="mt-[96px] max-[640px]:mt-[64px]">
     <Container>
       <SectionBar />
-      <SectionHeading overline="广告形式与参考价格">WeChat（腾讯广告）</SectionHeading>
+      <SectionHeading overline="广告形式与参考价格">微信（腾讯广告）</SectionHeading>
       <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)] mb-[24px] max-w-[680px]">
-        以下价格基于2026年第一季度数据和我们的实际投放经验，仅供预算参考，不构成报价。
+        以下价格基于2026年Q1数据和我们自己的投放经验，只是给你预算感，不等于正式报价。
       </p>
 
       <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
@@ -347,7 +347,7 @@ const gettingStartedSteps = [
     </Container>
   </section>
 
-  <GettingStarted
+  <GettingStarted lang="zh"
     heading="从初次沟通到广告上线，两周搞定。"
     steps={gettingStartedSteps}
     backgroundImage="/images/getting-started/advertising.png"
@@ -358,7 +358,7 @@ const gettingStartedSteps = [
     ]}
   />
 
-  <FaqAccordion faqs={faqs} subtitle="关于中国市场广告投放，您想了解的常见问题。" />
+  <FaqAccordion lang="zh" faqs={faqs} subtitle="关于中国市场广告投放，您想了解的常见问题。" />
 
 
 </PageLayout>

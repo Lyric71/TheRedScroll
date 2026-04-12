@@ -10,9 +10,11 @@ interface FaqItem {
 interface Props {
   faqs: FaqItem[];
   subtitle?: string;
+  lang?: 'en' | 'fr' | 'zh';
 }
 
-const { faqs, subtitle = 'Everything you need to know about working with TheRedScroll.' } = Astro.props;
+const { faqs, subtitle = 'Everything you need to know about working with TheRedScroll.', lang = 'en' } = Astro.props;
+const heading = lang === 'zh' ? '常见问题' : lang === 'fr' ? 'Questions frequentes' : 'Frequently asked questions';
 ---
 
 <section class="mt-[96px] max-[640px]:mt-[64px] mb-[96px] max-[640px]:mb-[64px]">
@@ -24,7 +26,7 @@ const { faqs, subtitle = 'Everything you need to know about working with TheRedS
           <SectionBar />
           <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">FAQ</p>
           <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">
-            Frequently asked questions
+            {heading}
           </h2>
           <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
             {subtitle}

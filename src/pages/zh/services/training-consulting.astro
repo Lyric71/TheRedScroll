@@ -9,38 +9,38 @@ import GettingStarted from '../../../components/sections/GettingStarted.astro';
 
 
 const faqs = [
-  { q: '费用是多少？', a: '取决于项目范围。一次性咨询从几千元人民币起步。持续数周、包含交付物的项目费用更高。培训按固定价格计费，根据时长和定制程度而定。所有项目在启动前都会提供明确报价，不会出现开放式收费。' },
-  { q: '培训可以远程进行吗？', a: '大多数形式都可以远程完成，效果很好。AIGC 工作坊因为需要实际操作，面授效果更佳，但也可以根据需要调整为线上形式。' },
-  { q: '培训适合多少人？', a: '理想人数在 6 到 15 人之间。我们做过 3 人的小班，也做过近 40 人的大班。形式会根据人数调整，建议提前沟通。' },
-  { q: '培训内容是定制的吗？', a: '每次都是。我们会围绕你的行业、平台、竞争对手和团队水平来设计课程。每次培训前都会进行详细的需求沟通。' },
-  { q: '咨询可以变成长期合作吗？', a: '很常见。一些品牌在首次咨询后转为按月执行投放。也有品牌选择每年沟通一两次，其余时间自主运营。两种方式都行得通。' },
-  { q: '有针对具体平台的培训吗？', a: '抖音广告投放与账户设置。小红书 KOC 激活与搜索优化。微信公众号运营与小程序策略。可以单独培训，也可以整合到更大的培训项目中。' },
-  { q: '社交媒体监测是怎么做的？', a: '按月订阅制。起步方案通常覆盖你的品牌和 3 个竞品，涉及 2 个平台。之后根据需要扩展。' },
-  { q: '没经历过危机就准备危机预案？', a: '这其实是最好的时机。大多数品牌都是等事情发生了才开始想对策，而那时网上已经在传播了。提前准备好框架，意味着执行预案而不是在深夜临时拼凑方案。' },
+  { q: '多少钱？', a: '看项目范围。一次性咨询从几千元起步。持续数周、带交付物的项目费用更高。培训按固定价格算，看时长和定制程度。所有项目启动前给明确报价，不做开放式收费。' },
+  { q: '培训可以远程吗？', a: '大多数形式远程就能跑，效果也不错。AIGC工作坊因为要动手，面授效果会好一些，但也能按需调成线上。' },
+  { q: '培训一次多少人合适？', a: '理想的是6到15人。做过3个人的小班，也做过接近40人的大班。形式会按人数调，建议提前对一下。' },
+  { q: '课程是定制的吗？', a: '每一次都是。我们按你的行业、平台、对手、团队水平去设计。每次开课前都有一次详细的需求沟通。' },
+  { q: '咨询能转成长期合作吗？', a: '很常见。有的品牌咨询完就切成按月的执行投放。也有的每年沟通一两次，其余时间自己跑。两种模式都行。' },
+  { q: '有没有按平台的专项培训？', a: '抖音广告投放与账户搭建。小红书KOC激活和搜索优化。微信公众号运营和小程序策略。这些可以单开，也可以打包进更大的培训项目。' },
+  { q: '社媒监测是怎么做的？', a: '按月订阅。起步方案一般覆盖你的品牌加3个对手，2个平台。后面按需扩展。' },
+  { q: '没出过事，为什么要先做危机预案？', a: '没出事的时候正是做的最佳时机。大部分品牌都是事情已经发生了才开始想怎么办，那个时候舆论已经在往外传了。提前把框架备好，意味着出事的时候你是在"执行预案"，不是半夜拉人拼方案。' },
 ];
 
 const gettingStartedSteps = [
   {
-    title: '初步沟通。',
-    description: '了解你的团队、当前的不足，以及对这次合作的具体期望。',
+    title: '先聊聊。',
+    description: '看看你的团队现在卡在哪、对这次合作具体想要什么。',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
   },
   {
     title: '定制方案。',
-    description: '形式、主题、时长和交付物。根据你的团队和目标量身定制。',
+    description: '形式、主题、时长、交付物。按你的团队和目标单独定。',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>',
   },
   {
-    title: '两周内开课。',
-    description: '需求沟通、课程准备、现场培训。你的团队带走的是可以直接运用的实战知识。',
+    title: '两周开课。',
+    description: '需求对接、课程准备、现场授课。你的团队带走的是能马上用的东西。',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
   },
 ];
 ---
 
 <PageLayout
-  title="中国社交媒体咨询与培训 | TheRedScroll"
-  description="战略咨询、AIGC 工作坊、社交媒体监测、竞品分析、KOL 风险评估、危机预案、投放培训。团队位于上海。"
+  title="中国社媒培训与咨询 | TheRedScroll"
+  description="战略咨询、AIGC工作坊、社媒监测、竞品分析、KOL风险评估、危机预案、投放培训。团队在上海。"
   lang="zh"
 >
 
@@ -52,14 +52,14 @@ const gettingStartedSteps = [
         培训与咨询
       </p>
       <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
-        读懂市场。或者把一个具体问题交给我们来解决。
+        把市场吃透。或者把一个具体问题直接交给我们解决。
       </h1>
       <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
-        咨询服务针对具体课题提供解答。培训服务帮助内部团队提升专业能力。所有服务均由每天深耕中国社交媒体的从业者交付。
+        咨询针对具体问题给答案。培训帮你的团队把能力补起来。授课的都是每天还在一线做中国社媒的人。
       </p>
       <div class="flex items-center justify-center gap-[12px] flex-wrap">
-        <Button variant="primary" href="/zh/contact">预约沟通</Button>
-        <Button variant="secondary-dark" href="#consulting">咨询服务</Button>
+        <Button variant="primary" href="/zh/contact">预约通话</Button>
+        <Button variant="secondary-dark" href="#consulting">看咨询服务</Button>
       </div>
     </div>
   </section>
@@ -71,9 +71,9 @@ const gettingStartedSteps = [
         <div class="relative col-span-2 row-span-2 max-[640px]:col-span-1 max-[640px]:row-span-1 bg-[#1A1A1A] rounded-[12px] p-[32px] max-[640px]:p-[20px] flex flex-col justify-between min-h-[320px] max-[640px]:min-h-0 overflow-hidden">
           <svg class="absolute bottom-[-20px] right-[-20px] w-[260px] h-[260px] opacity-[0.06]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
           <div class="relative z-[1]">
-            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">这项服务存在的意义</p>
-            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[16px]">有些品牌需要的是专业能力，不是多一双手。</h2>
-            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[400px]">并非所有品牌都想把一切外包。有些品牌自己有团队，缺的是那一层专业知识。</p>
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">为什么有这项服务</p>
+            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[16px]">有些品牌要的是专业能力，不是多一双手。</h2>
+            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[400px]">不是所有品牌都想什么都外包。有些品牌自己有团队，缺的只是那一层专业经验。</p>
           </div>
           <div class="relative z-[1] mt-[24px]">
             <Button variant="secondary-dark" href="#what-we-do">了解我们的服务</Button>
@@ -384,7 +384,7 @@ const gettingStartedSteps = [
     </Container>
   </section>
 
-  <GettingStarted
+  <GettingStarted lang="zh"
     heading="从第一次通话到培训交付，两周内完成。"
     steps={gettingStartedSteps}
     backgroundImage="/images/getting-started/training-consulting.png"
@@ -395,6 +395,6 @@ const gettingStartedSteps = [
     ]}
   />
 
-  <FaqAccordion faqs={faqs} subtitle="关于 TheRedScroll 培训与咨询服务，你需要了解的一切。" />
+  <FaqAccordion lang="zh" faqs={faqs} subtitle="关于 TheRedScroll 培训与咨询服务，你需要了解的一切。" />
 
 </PageLayout>
