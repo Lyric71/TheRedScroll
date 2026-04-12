@@ -20,11 +20,81 @@ const styles = `${baseStyles} ${variants[variant]} ${className}`;
 ---
 
 {href ? (
-  <a href={href} class={styles}>
-    <slot />
+  <a href={href} class={styles} data-btn>
+    <span class="btn-label"><slot /></span>
   </a>
 ) : (
-  <button type={type} class={styles}>
-    <slot />
+  <button type={type} class={styles} data-btn>
+    <span class="btn-label"><slot /></span>
   </button>
 )}
+
+<style>
+  [data-btn] {
+    position: relative;
+    overflow: hidden;
+    will-change: transform;
+  }
+  .btn-label {
+    position: relative;
+    z-index: 1;
+    pointer-events: none;
+  }
+  .btn-ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(0);
+    pointer-events: none;
+  }
+  [data-btn].secondary .btn-ripple,
+  [data-btn]:not([class*="bg-[#CC3333]"]):not([class*="secondary-dark"]) .btn-ripple {
+    background: rgba(0, 0, 0, 0.06);
+  }
+</style>
+
+<script>
+  function initButtons() {
+    document.querySelectorAll<HTMLElement>('[data-btn]').forEach((btn) => {
+      if (btn.dataset.btnInit) return;
+      btn.dataset.btnInit = '1';
+
+      // Magnetic hover: button shifts slightly toward cursor
+      btn.addEventListener('mousemove', (e: MouseEvent) => {
+        const rect = btn.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        btn.style.transform = `translate(${x * 0.15}px, ${y * 0.25}px)`;
+      });
+
+      btn.addEventListener('mouseleave', () => {
+        btn.style.transform = '';
+        btn.style.transition = 'transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+        setTimeout(() => { btn.style.transition = ''; }, 400);
+      });
+
+      // Ripple on click
+      btn.addEventListener('click', (e: MouseEvent) => {
+        const rect = btn.getBoundingClientRect();
+        const size = Math.max(rect.width, rect.height) * 2;
+        const ripple = document.createElement('span');
+        ripple.className = 'btn-ripple';
+        ripple.style.width = ripple.style.height = size + 'px';
+        ripple.style.left = (e.clientX - rect.left - size / 2) + 'px';
+        ripple.style.top = (e.clientY - rect.top - size / 2) + 'px';
+        ripple.style.transition = 'transform 0.5s ease-out, opacity 0.4s ease-out 0.1s';
+        btn.appendChild(ripple);
+
+        requestAnimationFrame(() => {
+          ripple.style.transform = 'scale(1)';
+          ripple.style.opacity = '0';
+        });
+
+        setTimeout(() => ripple.remove(), 600);
+      });
+    });
+  }
+
+  initButtons();
+  document.addEventListener('astro:after-swap', initButtons);
+</script>
