@@ -1,8 +1,23 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
+import { copyFileSync, existsSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
 import tailwindcss from '@tailwindcss/vite';
 import vercel from '@astrojs/vercel';
 import sitemap from '@astrojs/sitemap';
+
+/** @type {import('astro').AstroIntegration} */
+const sitemapAlias = {
+  name: 'sitemap-alias',
+  hooks: {
+    'astro:build:done': ({ dir }) => {
+      const outDir = fileURLToPath(dir);
+      const src = `${outDir}/sitemap-0.xml`;
+      const dest = `${outDir}/sitemap.xml`;
+      if (existsSync(src)) copyFileSync(src, dest);
+    },
+  },
+};
 
 // https://astro.build/config
 export default defineConfig({
@@ -31,6 +46,7 @@ export default defineConfig({
         },
       },
     }),
+    sitemapAlias,
   ],
   vite: {
     plugins: [tailwindcss()],
