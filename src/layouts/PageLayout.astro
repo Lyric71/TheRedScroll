@@ -1,17 +1,19 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import type { Lang } from '../i18n/config';
 
 interface Props {
   title: string;
   description: string;
   canonical?: string;
   ogImage?: string;
+  lang?: Lang;
 }
 
-const { title, description, canonical, ogImage } = Astro.props;
+const { title, description, canonical, ogImage, lang = 'en' } = Astro.props;
 ---
 
-<BaseLayout title={title} description={description} canonical={canonical} ogImage={ogImage}>
+<BaseLayout title={title} description={description} canonical={canonical} ogImage={ogImage} lang={lang}>
   <main class="pt-[60px] max-[640px]:pt-[52px]">
     <slot />
   </main>

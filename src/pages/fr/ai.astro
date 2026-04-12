@@ -1,0 +1,455 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import Container from '../../components/ui/Container.astro';
+import SectionBar from '../../components/ui/SectionBar.astro';
+import SectionHeading from '../../components/ui/SectionHeading.astro';
+import Button from '../../components/ui/Button.astro';
+---
+
+<PageLayout
+  title="L'IA a tout changé | TheRedScroll"
+  description="Nous intégrons l'IA dans chaque service, chaque plateforme, chaque client. La stratégie est humaine. La direction créative est humaine. L'IA dégage le terrain pour tout le reste."
+  lang="fr"
+>
+
+  <!-- Hero — same pattern as about page: background image + dark overlay -->
+  <section class="relative w-full min-h-[600px] max-[640px]:min-h-[500px] overflow-hidden">
+    <img
+      src="/images/ai/ai-hero.png"
+      alt=""
+      class="absolute inset-0 w-full h-full object-cover object-center"
+      aria-hidden="true"
+    />
+    <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.82]" aria-hidden="true"></div>
+
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+        Notre IA
+      </p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        L'IA a tout changé. Nous l'utilisons chaque jour.
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        Intégrée dans chaque service. Chaque plateforme. Chaque client.
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/fr/contact">Prendre rendez-vous</Button>
+        <Button variant="secondary-dark" href="#how-it-works">Voir comment ça fonctionne</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro — two-column, same as "Why we exist" on about page -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[48px] max-[640px]:gap-[32px] items-start">
+        <!-- Left -->
+        <div>
+          <SectionBar />
+          <SectionHeading overline="Pourquoi l'IA">Nous ne parlons pas d'IA. Nous l'intégrons dans tout ce que nous faisons.</SectionHeading>
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            Études de marché, veille sociale, reporting, analyse de performance, pilotage de projets, rédaction de contenu, production d'images, production vidéo. Chaque service. Chaque client. Chaque jour.
+          </p>
+        </div>
+        <!-- Right -->
+        <div class="flex flex-col pt-[48px] max-[640px]:pt-[0px]">
+          <div class="flex flex-col gap-[24px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)] w-full">
+            <p>
+              Il ne s'agit pas de remplacer les gens. Il s'agit de les rendre meilleurs. L'IA élimine le travail répétitif pour que notre équipe se concentre sur ce qui compte vraiment : la stratégie, la direction créative et la relation client.
+            </p>
+            <p>
+              C'est toute la différence entre parler d'IA et s'en servir au quotidien.
+            </p>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- AI does the work — two-column with SVG illustration (same as "Our mission" on about) -->
+  <section id="how-it-works" class="mt-[96px] max-[640px]:mt-[64px] scroll-mt-[76px]">
+    <Container>
+      <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[48px] max-[640px]:gap-[32px] items-center">
+        <div class="w-full bg-[#F0F1F4] rounded-[8px] p-[32px] max-[640px]:p-[20px]" aria-label="L'IA renforce chaque étape du flux de travail">
+          <svg viewBox="0 0 440 400" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+            <!-- Title -->
+            <text x="220" y="24" text-anchor="middle" fill="#5C5C5C" font-size="10" font-weight="500" font-family="Inter, sans-serif" letter-spacing="0.05em">FLUX DE TRAVAIL AUGMENTÉ PAR L'IA</text>
+
+            <!-- Step 1: Research -->
+            <rect x="20" y="48" width="400" height="52" rx="6" fill="#FFFFFF" stroke="#E8E0D8" stroke-width="0.5" />
+            <rect x="20" y="48" width="4" height="52" rx="2" fill="#CC3333" />
+            <text x="40" y="68" fill="#CC3333" font-size="9" font-weight="500" font-family="Inter, sans-serif">01</text>
+            <text x="60" y="68" fill="#1A1A1A" font-size="11" font-weight="500" font-family="Inter, sans-serif">Recherche</text>
+            <text x="40" y="86" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">L'IA analyse des milliers de posts et de comptes concurrents</text>
+            <rect x="340" y="58" width="68" height="22" rx="4" fill="#CC3333" opacity="0.1" stroke="#CC3333" stroke-width="0.5" />
+            <text x="374" y="73" text-anchor="middle" fill="#CC3333" font-size="7" font-weight="500" font-family="Inter, sans-serif">En heures, pas en semaines</text>
+
+            <!-- Arrow -->
+            <line x1="220" y1="100" x2="220" y2="116" stroke="#E8E0D8" stroke-width="1.5" />
+            <polygon points="215,114 220,122 225,114" fill="#E8E0D8" />
+
+            <!-- Step 2: Content -->
+            <rect x="20" y="124" width="400" height="52" rx="6" fill="#FFFFFF" stroke="#E8E0D8" stroke-width="0.5" />
+            <rect x="20" y="124" width="4" height="52" rx="2" fill="#CC3333" />
+            <text x="40" y="144" fill="#CC3333" font-size="9" font-weight="500" font-family="Inter, sans-serif">02</text>
+            <text x="60" y="144" fill="#1A1A1A" font-size="11" font-weight="500" font-family="Inter, sans-serif">Création de contenu</text>
+            <text x="40" y="162" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">L'IA rédige les textes, génère les visuels via HubStudio.ai</text>
+            <rect x="340" y="134" width="68" height="22" rx="4" fill="#CC3333" opacity="0.1" stroke="#CC3333" stroke-width="0.5" />
+            <text x="374" y="149" text-anchor="middle" fill="#CC3333" font-size="7" font-weight="500" font-family="Inter, sans-serif">80% plus rapide</text>
+
+            <!-- Arrow -->
+            <line x1="220" y1="176" x2="220" y2="192" stroke="#E8E0D8" stroke-width="1.5" />
+            <polygon points="215,190 220,198 225,190" fill="#E8E0D8" />
+
+            <!-- Step 3: Review (human) -->
+            <rect x="20" y="200" width="400" height="52" rx="6" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1" />
+            <rect x="20" y="200" width="4" height="52" rx="2" fill="#1A1A1A" />
+            <text x="40" y="220" fill="#1A1A1A" font-size="9" font-weight="500" font-family="Inter, sans-serif">03</text>
+            <text x="60" y="220" fill="#1A1A1A" font-size="11" font-weight="500" font-family="Inter, sans-serif">Relecture humaine</text>
+            <text x="40" y="238" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">Les rédacteurs natifs affinent. L'équipe créative valide chaque contenu.</text>
+            <rect x="340" y="210" width="68" height="22" rx="4" fill="#1A1A1A" opacity="0.08" stroke="#1A1A1A" stroke-width="0.5" />
+            <text x="374" y="225" text-anchor="middle" fill="#1A1A1A" font-size="7" font-weight="500" font-family="Inter, sans-serif">100% humain</text>
+
+            <!-- Arrow -->
+            <line x1="220" y1="252" x2="220" y2="268" stroke="#E8E0D8" stroke-width="1.5" />
+            <polygon points="215,266 220,274 225,266" fill="#E8E0D8" />
+
+            <!-- Step 4: Reporting -->
+            <rect x="20" y="276" width="400" height="52" rx="6" fill="#FFFFFF" stroke="#E8E0D8" stroke-width="0.5" />
+            <rect x="20" y="276" width="4" height="52" rx="2" fill="#CC3333" />
+            <text x="40" y="296" fill="#CC3333" font-size="9" font-weight="500" font-family="Inter, sans-serif">04</text>
+            <text x="60" y="296" fill="#1A1A1A" font-size="11" font-weight="500" font-family="Inter, sans-serif">Reporting</text>
+            <text x="40" y="314" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">L'IA compile les données. Les stratèges interprètent et recommandent.</text>
+            <rect x="340" y="286" width="68" height="22" rx="4" fill="#CC3333" opacity="0.1" stroke="#CC3333" stroke-width="0.5" />
+            <text x="374" y="301" text-anchor="middle" fill="#CC3333" font-size="7" font-weight="500" font-family="Inter, sans-serif">Données en temps réel</text>
+
+            <!-- Bottom stats -->
+            <line x1="20" y1="348" x2="420" y2="348" stroke="#E8E0D8" stroke-width="0.5" />
+
+            <g transform="translate(20, 364)">
+              <text x="0" y="12" fill="#CC3333" font-size="18" font-weight="500" font-family="Inter, sans-serif">IA</text>
+              <text x="0" y="26" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">absorbe le volume</text>
+            </g>
+            <g transform="translate(150, 364)">
+              <text x="0" y="12" fill="#1A1A1A" font-size="18" font-weight="500" font-family="Inter, sans-serif">Humains</text>
+              <text x="0" y="26" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">assurent la réflexion</text>
+            </g>
+            <g transform="translate(310, 364)">
+              <text x="0" y="12" fill="#1A1A1A" font-size="18" font-weight="500" font-family="Inter, sans-serif">100%</text>
+              <text x="0" y="26" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">relu par des humains</text>
+            </g>
+          </svg>
+        </div>
+        <div>
+          <SectionBar />
+          <SectionHeading overline="Comment ça fonctionne">L'IA fait le travail. Nous faisons la réflexion.</SectionHeading>
+          <div class="flex flex-col gap-[24px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Nos responsables réseaux sociaux sont augmentés par l'IA. Les tâches répétitives et chronophages disparaissent. Ce qui reste, c'est le travail qui compte le plus.
+            </p>
+            <p>
+              La stratégie est humaine. La direction créative est humaine. La relation client est humaine. L'IA rend ces trois dimensions meilleures en dégageant tout le reste du chemin.
+            </p>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- AI vs Human table — two-column with SVG on right (same as "Our vision" on about, reversed) -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[48px] max-[640px]:gap-[32px] items-center">
+        <div>
+          <SectionBar />
+          <SectionHeading overline="Répartition des rôles">L'IA absorbe le volume. Les humains assurent la réflexion.</SectionHeading>
+          <div class="flex flex-col gap-[24px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              L'IA rédige les textes en chinois et en anglais. Notre équipe définit votre voix de marque et vos piliers de contenu. L'IA génère des visuels produits et des vidéos. Notre équipe fixe la direction créative et valide chaque contenu.
+            </p>
+            <p>
+              L'IA compile les données de performance dans des rapports. Nos stratèges interprètent ces données et ajustent votre stratégie. L'IA passe au crible des milliers de profils KOL (Key Opinion Leader) et repère les faux abonnés. Notre équipe sélectionne les influenceurs pertinents et négocie les conditions.
+            </p>
+          </div>
+          <!-- Callout — same pattern as about page "Our vision" callout -->
+          <div class="bg-[#F0F1F4] border-l-[3px] border-[#CC3333] rounded-none p-[20px] mt-[24px]">
+            <p class="text-[16px] font-normal text-[#1A1A1A] leading-[1.6] m-0">
+              Chaque contenu est relu par un humain avant d'être publié. Sans aucune exception.
+            </p>
+          </div>
+        </div>
+        <div class="w-full bg-[#F0F1F4] rounded-[8px] p-[32px] max-[640px]:p-[20px]" aria-label="Répartition des responsabilités entre l'IA et l'humain">
+          <svg viewBox="0 0 440 420" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+            <!-- Title -->
+            <text x="220" y="24" text-anchor="middle" fill="#5C5C5C" font-size="10" font-weight="500" font-family="Inter, sans-serif" letter-spacing="0.05em">QUI FAIT QUOI</text>
+
+            <!-- Column headers -->
+            <rect x="20" y="44" width="196" height="28" rx="4" fill="#CC3333" opacity="0.1" />
+            <text x="118" y="62" text-anchor="middle" fill="#CC3333" font-size="9" font-weight="500" font-family="Inter, sans-serif" letter-spacing="0.03em">L'IA S'EN CHARGE</text>
+            <rect x="224" y="44" width="196" height="28" rx="4" fill="#1A1A1A" opacity="0.06" />
+            <text x="322" y="62" text-anchor="middle" fill="#1A1A1A" font-size="9" font-weight="500" font-family="Inter, sans-serif" letter-spacing="0.03em">NOTRE ÉQUIPE S'EN CHARGE</text>
+
+            <!-- Row 1 -->
+            <line x1="20" y1="84" x2="420" y2="84" stroke="#E8E0D8" stroke-width="0.5" />
+            <text x="28" y="102" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">Rédige les textes en chinois et en anglais</text>
+            <text x="232" y="102" fill="#1A1A1A" font-size="8" font-weight="500" font-family="Inter, sans-serif">Définit la voix de marque et les piliers de contenu</text>
+
+            <!-- Row 2 -->
+            <line x1="20" y1="116" x2="420" y2="116" stroke="#E8E0D8" stroke-width="0.5" />
+            <text x="28" y="134" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">Génère les visuels produits et les vidéos</text>
+            <text x="232" y="134" fill="#1A1A1A" font-size="8" font-weight="500" font-family="Inter, sans-serif">Fixe la direction créative, valide chaque contenu</text>
+
+            <!-- Row 3 -->
+            <line x1="20" y1="148" x2="420" y2="148" stroke="#E8E0D8" stroke-width="0.5" />
+            <text x="28" y="166" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">Compile les données de performance dans des rapports</text>
+            <text x="232" y="166" fill="#1A1A1A" font-size="8" font-weight="500" font-family="Inter, sans-serif">Interprète les données et ajuste votre stratégie</text>
+
+            <!-- Row 4 -->
+            <line x1="20" y1="180" x2="420" y2="180" stroke="#E8E0D8" stroke-width="0.5" />
+            <text x="28" y="198" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">Surveille les mentions de marque et les tendances</text>
+            <text x="232" y="198" fill="#1A1A1A" font-size="8" font-weight="500" font-family="Inter, sans-serif">Décide quoi exploiter et comment réagir</text>
+
+            <!-- Row 5 -->
+            <line x1="20" y1="212" x2="420" y2="212" stroke="#E8E0D8" stroke-width="0.5" />
+            <text x="28" y="230" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">Suit les délais et les validations de contenu</text>
+            <text x="232" y="230" fill="#1A1A1A" font-size="8" font-weight="500" font-family="Inter, sans-serif">Anime les ateliers et pose les questions difficiles</text>
+
+            <!-- Row 6 -->
+            <line x1="20" y1="244" x2="420" y2="244" stroke="#E8E0D8" stroke-width="0.5" />
+            <text x="28" y="262" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">Analyse des milliers de posts concurrents</text>
+            <text x="232" y="262" fill="#1A1A1A" font-size="8" font-weight="500" font-family="Inter, sans-serif">Choisit les plateformes adaptées à votre audience</text>
+
+            <!-- Row 7 -->
+            <line x1="20" y1="276" x2="420" y2="276" stroke="#E8E0D8" stroke-width="0.5" />
+            <text x="28" y="294" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">Produit les premières ébauches des rapports mensuels</text>
+            <text x="232" y="294" fill="#1A1A1A" font-size="8" font-weight="500" font-family="Inter, sans-serif">Rédige les recommandations stratégiques</text>
+
+            <!-- Row 8 -->
+            <line x1="20" y1="308" x2="420" y2="308" stroke="#E8E0D8" stroke-width="0.5" />
+            <text x="28" y="326" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">Passe au crible les profils KOL, repère les faux abonnés</text>
+            <text x="232" y="326" fill="#1A1A1A" font-size="8" font-weight="500" font-family="Inter, sans-serif">Sélectionne les bons influenceurs, négocie</text>
+            <line x1="20" y1="340" x2="420" y2="340" stroke="#E8E0D8" stroke-width="0.5" />
+
+            <!-- Bottom summary -->
+            <g transform="translate(20, 360)">
+              <rect x="0" y="0" width="196" height="40" rx="6" fill="#CC3333" opacity="0.08" />
+              <text x="98" y="17" text-anchor="middle" fill="#CC3333" font-size="14" font-weight="500" font-family="Inter, sans-serif">Rapidité et volume</text>
+              <text x="98" y="32" text-anchor="middle" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">Volume, données, premières ébauches</text>
+            </g>
+            <g transform="translate(224, 360)">
+              <rect x="0" y="0" width="196" height="40" rx="6" fill="#1A1A1A" opacity="0.06" />
+              <text x="98" y="17" text-anchor="middle" fill="#1A1A1A" font-size="14" font-weight="500" font-family="Inter, sans-serif">Jugement et sensibilité</text>
+              <text x="98" y="32" text-anchor="middle" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">Stratégie, nuances, relations</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Better content — rice paper card, same as about page "clients who trust" stats section -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="bg-[#F0F1F4] rounded-[10px] p-[48px] max-[640px]:p-[32px]">
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[24px] text-center">Du meilleur contenu. Pas du contenu factice.</p>
+        <div class="grid grid-cols-3 max-[640px]:grid-cols-1 gap-[32px] max-[640px]:gap-[24px] text-center">
+          <div>
+            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[#1A1A1A] mb-[4px]">0</p>
+            <p class="text-[13px] font-normal text-[#5C5C5C] leading-[1.4]">Posts IA génériques publiés</p>
+          </div>
+          <div>
+            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[#1A1A1A] mb-[4px]">100%</p>
+            <p class="text-[13px] font-normal text-[#5C5C5C] leading-[1.4]">Du contenu relu par un humain</p>
+          </div>
+          <div>
+            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[#CC3333] mb-[4px]">Chaque contenu</p>
+            <p class="text-[13px] font-normal text-[#5C5C5C] leading-[1.4]">Des rédacteurs chinois natifs affinent chaque texte</p>
+          </div>
+        </div>
+        <div class="max-w-[680px] mx-auto mt-[32px] flex flex-col gap-[24px] text-center">
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            Nous ne publions pas de contenu IA factice. Pas de posts génériques. Pas de légendes robotiques. Pas d'images IA évidentes déversées dans un fil d'actualité. C'est le moyen le plus rapide de perdre des abonnés et toute crédibilité sur les plateformes chinoises.
+          </p>
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">
+            L'IA rédige les textes. Des rédacteurs chinois natifs les affinent. L'IA génère des visuels produits via HubStudio.ai. Notre équipe créative passe en revue chaque image. L'IA extrait les données pour les rapports. Nos stratèges les interprètent et vous expliquent ce qu'elles signifient.
+          </p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Where AI shows up — numbered cards, same as about page "Our values" grid -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <SectionBar />
+      <SectionHeading overline="Applications">Où l'IA intervient dans notre travail</SectionHeading>
+
+      <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px] mt-[24px]">
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <img src="/images/ai/ai-market-research.svg" alt="Illustration études de marché" class="w-full rounded-[8px] mb-[16px]" loading="lazy" decoding="async" />
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Études de marché</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">L'IA analyse des milliers de posts, de commentaires et de comptes concurrents en quelques heures. Pas en plusieurs semaines.</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <img src="/images/ai/ai-social-listening.svg" alt="Illustration veille sociale" class="w-full rounded-[8px] mb-[16px]" loading="lazy" decoding="async" />
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Veille sociale</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Surveillance en temps réel sur WeChat, Douyin, RedNote, Weibo et 14 autres plateformes. L'IA repère les tendances, les variations de sentiment et les mentions de marque au fil de l'eau.</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <img src="/images/ai/ai-content-writing.svg" alt="Illustration rédaction de contenu" class="w-full rounded-[8px] mb-[16px]" loading="lazy" decoding="async" />
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Rédaction de contenu</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">L'IA produit les premières ébauches en chinois et en anglais. Des rédacteurs natifs retravaillent le ton, le contexte culturel et le format propre à chaque plateforme.</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <img src="/images/ai/ai-image-video.svg" alt="Illustration production image et vidéo" class="w-full rounded-[8px] mb-[16px]" loading="lazy" decoding="async" />
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Production image et vidéo</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">HubStudio.ai génère des visuels produits, des images lifestyle et des vidéos courtes. Des modèles IA sur mesure, entraînés sur votre identité de marque. 80% plus rapide. Une fraction du coût.</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <img src="/images/ai/ai-performance-reporting.svg" alt="Illustration reporting de performance" class="w-full rounded-[8px] mb-[16px]" loading="lazy" decoding="async" />
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Reporting de performance</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">L'IA compile les données de toutes les plateformes dans un rapport clair et unique. Plus de tableurs manuels. Plus de délais de trois semaines.</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <img src="/images/ai/ai-project-management.svg" alt="Illustration pilotage de projets" class="w-full rounded-[8px] mb-[16px]" loading="lazy" decoding="async" />
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Pilotage de projets</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">L'IA suit les délais, les validations de contenu et les jalons de campagne pour que rien ne passe entre les mailles du filet.</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Budget — two-column with SVG (same as about "Our vision" section, reversed) -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[48px] max-[640px]:gap-[32px] items-center">
+        <div>
+          <SectionBar />
+          <SectionHeading overline="Votre budget">Pourquoi c'est important pour votre budget</SectionHeading>
+          <div class="flex flex-col gap-[24px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              La plupart des agences facturent de grandes équipes qui travaillent manuellement. Nous fonctionnons avec des équipes plus réduites parce que l'IA démultiplie ce que chaque personne peut accomplir.
+            </p>
+            <p>
+              C'est ainsi que nous proposons des forfaits à prix fixe avec un périmètre clair. Nous savons exactement ce qu'il faut pour livrer, parce que nous avons construit les systèmes qui nous permettent de le faire efficacement.
+            </p>
+            <p class="text-[var(--color-stone)]">
+              Vous obtenez plus de contenu, plus de reporting et plus d'attention stratégique pour le même budget. Ou le même volume pour moins cher.
+            </p>
+          </div>
+        </div>
+        <div class="w-full bg-[#F0F1F4] rounded-[8px] p-[32px] max-[640px]:p-[20px]" aria-label="Comparaison des coûts : agence traditionnelle contre TheRedScroll avec IA">
+          <svg viewBox="0 0 440 340" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+            <!-- Title -->
+            <text x="220" y="24" text-anchor="middle" fill="#5C5C5C" font-size="10" font-weight="500" font-family="Inter, sans-serif" letter-spacing="0.05em">STRUCTURE DES COÛTS</text>
+
+            <!-- Traditional agency -->
+            <text x="20" y="62" fill="#5C5C5C" font-size="9" font-weight="500" font-family="Inter, sans-serif" letter-spacing="0.03em">AGENCE TRADITIONNELLE</text>
+
+            <!-- Stacked bar: many roles -->
+            <rect x="20" y="74" width="400" height="36" rx="6" fill="#E8E0D8" />
+            <line x1="70" y1="74" x2="70" y2="110" stroke="#FFFFFF" stroke-width="1" opacity="0.6" />
+            <line x1="135" y1="74" x2="135" y2="110" stroke="#FFFFFF" stroke-width="1" opacity="0.6" />
+            <line x1="200" y1="74" x2="200" y2="110" stroke="#FFFFFF" stroke-width="1" opacity="0.6" />
+            <line x1="270" y1="74" x2="270" y2="110" stroke="#FFFFFF" stroke-width="1" opacity="0.6" />
+            <line x1="340" y1="74" x2="340" y2="110" stroke="#FFFFFF" stroke-width="1" opacity="0.6" />
+
+            <text x="45" y="96" text-anchor="middle" fill="#5C5C5C" font-size="7" font-family="Inter, sans-serif">Planneur</text>
+            <text x="102" y="96" text-anchor="middle" fill="#5C5C5C" font-size="7" font-family="Inter, sans-serif">Rédacteur</text>
+            <text x="167" y="96" text-anchor="middle" fill="#5C5C5C" font-size="7" font-family="Inter, sans-serif">Designer</text>
+            <text x="235" y="96" text-anchor="middle" fill="#5C5C5C" font-size="7" font-family="Inter, sans-serif">Monteur vidéo</text>
+            <text x="305" y="96" text-anchor="middle" fill="#5C5C5C" font-size="7" font-family="Inter, sans-serif">Chef de projet</text>
+            <text x="370" y="96" text-anchor="middle" fill="#5C5C5C" font-size="7" font-family="Inter, sans-serif">Resp. compte</text>
+
+            <text x="420" y="126" text-anchor="end" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">6 postes facturables par projet</text>
+
+            <!-- Divider -->
+            <line x1="20" y1="148" x2="420" y2="148" stroke="#E8E0D8" stroke-width="0.5" />
+
+            <!-- TheRedScroll -->
+            <text x="20" y="178" fill="#CC3333" font-size="9" font-weight="500" font-family="Inter, sans-serif" letter-spacing="0.03em">THEREDSCROLL + IA</text>
+
+            <rect x="20" y="190" width="160" height="36" rx="6" fill="#CC3333" />
+            <text x="100" y="212" text-anchor="middle" fill="#FFFFFF" font-size="9" font-weight="500" font-family="Inter, sans-serif">Stratège + IA</text>
+
+            <rect x="188" y="190" width="232" height="36" rx="6" fill="#FFFFFF" stroke="#E8E0D8" stroke-width="0.5" stroke-dasharray="4 4" />
+            <text x="304" y="212" text-anchor="middle" fill="#E8E0D8" font-size="9" font-family="Inter, sans-serif">Économie réalisée</text>
+
+            <text x="420" y="242" text-anchor="end" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">1 profil senior, augmenté par l'IA</text>
+
+            <!-- Bottom stats -->
+            <line x1="20" y1="268" x2="420" y2="268" stroke="#E8E0D8" stroke-width="0.5" />
+
+            <g transform="translate(20, 284)">
+              <text x="0" y="14" fill="#1A1A1A" font-size="20" font-weight="500" font-family="Inter, sans-serif">Fixe</text>
+              <text x="0" y="30" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">prix par forfait</text>
+            </g>
+            <g transform="translate(160, 284)">
+              <text x="0" y="14" fill="#1A1A1A" font-size="20" font-weight="500" font-family="Inter, sans-serif">Clair</text>
+              <text x="0" y="30" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">périmètre défini</text>
+            </g>
+            <g transform="translate(300, 284)">
+              <text x="0" y="14" fill="#CC3333" font-size="20" font-weight="500" font-family="Inter, sans-serif">Plus</text>
+              <text x="0" y="30" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">de résultats pour le même budget</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- The result — dark section (1 per page, same pattern as about page "What makes us different") -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="bg-[#1A1A1A] rounded-[12px] p-[48px] max-[640px]:p-[32px_20px]">
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">Le résultat</p>
+        <h2 class="text-[#FFFFFF] text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] mb-[32px] max-[640px]:mb-[24px]">Plus d'abonnés. Plus d'engagement. Plus de conversions.</h2>
+        <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[24px]">
+          <div>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Un meilleur contenu, plus vite</h3>
+            <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+              Les premières ébauches générées par IA permettent de publier plus de contenu, plus souvent. Des rédacteurs natifs s'assurent que chaque post est adapté à la plateforme et culturellement juste.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Des données qui bougent en temps réel</h3>
+            <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+              Fini d'attendre trois semaines pour un rapport. L'IA compile les données de performance de chaque plateforme pour que nos stratèges ajustent vos campagnes pendant qu'elles tournent encore.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Une sélection d'influenceurs plus fine</h3>
+            <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+              L'IA passe au crible des milliers de profils KOL et repère les faux abonnés avant que notre équipe ne sélectionne les influenceurs pertinents pour votre marque et négocie les conditions.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Prix fixe, plus de résultats</h3>
+            <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+              L'IA nous permet de livrer plus de contenu, plus de reporting et plus d'attention stratégique pour le même budget. C'est comme ça que nous proposons des forfaits à prix fixe qui tiennent leurs promesses.
+            </p>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- CTA — same pattern as about page bottom CTA -->
+  <section class="mt-[96px] max-[640px]:mt-[64px] mb-[0px]">
+    <div class="w-full bg-[var(--color-rice-paper)] py-[64px] max-[640px]:py-[48px] px-[48px] max-[640px]:px-[20px]">
+      <div class="max-w-[600px] mx-auto text-center">
+        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[8px]">
+          Vous voulez voir comment ça fonctionne ?
+        </h2>
+        <p class="text-[14px] text-[var(--color-stone)] font-normal leading-[1.6] mb-[24px]">
+          Un seul appel. Nous vous présentons les outils IA, l'équipe et les résultats.
+        </p>
+        <div class="flex items-center justify-center gap-[12px] flex-wrap">
+          <Button variant="primary" href="/fr/contact">Prendre rendez-vous</Button>
+          <Button variant="secondary" href="/fr/pricing">Voir les tarifs</Button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</PageLayout>

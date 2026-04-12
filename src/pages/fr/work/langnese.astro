@@ -1,0 +1,260 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+
+const services = ['Consulting', 'Strategy', 'Social', 'Content'];
+const platforms = ['RedNote', 'Douyin', 'WeChat', 'Tmall'];
+---
+
+<PageLayout
+  title="Langnese consulting Chine | TheRedScroll"
+  description="Comment TheRedScroll a repositionne la premiere marque de miel allemande pour croitre en Chine. Etude consommateur, nouveau positionnement et strategie sociale adaptee aux plateformes chinoises."
+  ogImage="/images/clients/Langnese/Langnese-Honey.png"
+  lang="fr"
+>
+
+  <!-- Hero -->
+  <section class="relative w-full min-h-[600px] max-[640px]:min-h-[480px] overflow-hidden">
+    <div
+      class="absolute inset-0 bg-cover bg-center bg-fixed max-[640px]:bg-scroll"
+      style="background-image: url('/images/clients/Langnese/Langnese-Honey.png')"
+      aria-hidden="true"
+    ></div>
+    <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.72]" aria-hidden="true"></div>
+
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+        Etude de cas
+      </p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        Langnese : repositionner la premiere marque de miel allemande pour croitre en Chine.
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        Langnese voulait croitre en Chine. Nous avons mene une etude consommateur, reconstruit le positionnement et concu une strategie sociale qui a ouvert de nouveaux canaux et de nouvelles audiences.
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/fr/contact">Prendre rendez-vous</Button>
+        <Button variant="secondary-dark" href="#case-study">Lire l'etude de cas</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meta bar -->
+  <section class="border-b border-[rgba(0,0,0,0.08)]">
+    <Container>
+      <div class="flex flex-wrap gap-[32px] max-[640px]:gap-[20px] py-[24px]">
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Le client</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">Langnese</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Secteur</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">Agroalimentaire / Grande consommation</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Services</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {services.map((s) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{s}</span>
+            ))}
+          </div>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Plateformes</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {platforms.map((p) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{p}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Case study content -->
+  <section id="case-study" class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <!-- The Client -->
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="Le client">Plus de 100 ans d'existence. Prete a croitre en Chine.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Langnese est la premiere marque de miel en Allemagne. Plus d'un siecle d'histoire. En Chine, la distribution etait en place, les lineaires acquis, les relations avec les distributeurs etablies.
+            </p>
+            <p>
+              Mais la marque savait qu'elle pouvait faire plus. L'opportunite etait la. Il fallait un positionnement plus affute et une strategie sociale construite pour les consommateurs chinois.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- Visuals -->
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <div class="flex justify-center gap-[16px] overflow-x-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] max-[640px]:justify-start pb-[8px] scrollbar-hide">
+      <img
+        src="/images/clients/Langnese/Langnese-Honey.png"
+        alt="Gamme de produits de miel Langnese pour le marche chinois"
+        class="w-[280px] max-[640px]:w-[220px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src="/images/clients/Langnese/Langnese-Douyin-Livestream.jpg"
+        alt="Session de livestream Langnese sur Douyin presentant les produits de miel"
+        class="w-[280px] max-[640px]:w-[220px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src="/images/clients/Langnese/Langnese-Tmall-2.png"
+        alt="Page de la boutique Langnese sur Tmall avec le nouveau positionnement de marque"
+        class="w-[280px] max-[640px]:w-[220px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <Container>
+      <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+        Langnese en Chine. Gamme de produits, livestream Douyin et boutique Tmall.
+      </p>
+    </Container>
+  </section>
+
+  <!-- What We Found -->
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="Ce que nous avons constate">Le marche avait change. Langnese vendait de la meme facon depuis des annees.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Nous avons tout passe au crible. Cartographie de la distribution de l'import jusqu'au rayon. Analyse de la presence des marques chinoises de miel sur RedNote, Douyin, WeChat et Tmall. Etude consommateur dans les villes de premier et deuxieme rang.
+            </p>
+            <p>
+              Dans les villes de premier rang, le discours generique sur la sante ne fonctionnait plus. Toutes les marques de miel parlent de sante. Les concurrents locaux s'etaient affutes sur le packaging, les prix et le contenu social. Dans les villes de deuxieme rang, les consommateurs ne comprenaient pas pourquoi payer plus cher pour du miel importe quand les marques locales coutent deux fois moins.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- What We Did -->
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="Notre intervention">Neuf piliers de croissance. Concus pour etre deployes immediatement.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Nous avons elabore un cadre couvrant le repositionnement, la distribution, les formats produit et le contenu social. Neuf piliers de croissance au total.
+            </p>
+          </div>
+        </div>
+
+        <!-- Consumer groups -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Des segments de consommateurs que personne n'adressait</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Jeunes actifs qui mettent du miel dans leur cafe ou leurs smoothies. Parents a la recherche d'alternatives naturelles au sucre. Amateurs de cuisine qui utilisent le miel comme ingredient. Chaque groupe a recu des occasions de consommation specifiques, ancrees dans son quotidien.
+            </p>
+          </div>
+        </div>
+
+        <!-- Repositioning -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Un repositionnement autour d'arguments de vente concrets</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Plus question de mettre "qualite allemande" en titre. Des raisons concretes, liees a des usages precis. Pourquoi tel profil aromatique fonctionne dans certaines recettes. Pourquoi la texture se comporte differemment dans les boissons chaudes. Des arguments de vente reels, pas des claims sur le pays d'origine.
+            </p>
+          </div>
+        </div>
+
+        <!-- Social strategy -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Strategie sociale reconstruite plateforme par plateforme</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              RedNote pour l'integration dans les recettes et les routines quotidiennes. Douyin pour des demonstrations rapides de nouveaux usages. WeChat pour le storytelling de marque. L'objectif n'etait pas de rappeler aux gens que Langnese existe. C'etait de changer leur facon de penser au miel au quotidien.
+            </p>
+          </div>
+        </div>
+
+        <!-- Distribution + formats -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Nouveaux circuits et nouveaux formats produit</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Nous avons ouvert de nouveaux circuits de distribution dans des regions ou la marque etait absente. Et recommande de nouveaux formats produit : formats reduits pour l'essai, portions individuelles pour le bureau, packaging repense pour communiquer le nouveau positionnement en rayon.
+            </p>
+          </div>
+        </div>
+
+        <!-- Callout -->
+        <div class="mb-[64px] max-[640px]:mb-[48px] bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[32px] max-[640px]:p-[20px]">
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            Les neuf piliers ont ete valides par la marque et le distributeur, concus pour etre deployes immediatement.
+          </p>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- Outcome -->
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="Les resultats">Nouveau positionnement. Nouveaux canaux. Nouvelle croissance.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Le repositionnement a fonctionne. De nouveaux circuits se sont ouverts. Les distributeurs se sont mobilises.
+            </p>
+            <p>
+              Les distributeurs l'ont vu dans les chiffres. Langnese a cesse d'etre "ce miel allemand cher" pour s'inviter dans les smoothies du matin, la patisserie du week-end et les gouters des enfants. Des raisons d'achat reelles, ancrees dans le quotidien des consommateurs.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- CTA -->
+  <section class="pb-[96px] max-[640px]:pb-[64px]">
+    <Container>
+      <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[48px] max-[640px]:p-[32px] text-center">
+        <SectionHeading overline="A votre tour">Besoin d'un accompagnement strategique pour votre marque en Chine ?</SectionHeading>
+        <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)] max-w-[500px] mx-auto mb-[32px]">
+          Perimetre fixe. Prix fixe. Equipe sur place.
+        </p>
+        <Button variant="primary" href="/fr/contact">Prendre rendez-vous</Button>
+      </div>
+    </Container>
+  </section>
+
+  <style>
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+
+</PageLayout>

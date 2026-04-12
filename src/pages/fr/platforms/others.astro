@@ -1,0 +1,1061 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+
+const platforms = [
+  {
+    name: 'Bilibili',
+    chineseName: 'B站',
+    mau: '366M',
+    audience: 'Gen Z, urbains, diplomes. 78 % ont moins de 35 ans',
+    category: 'Video et communaute',
+    description: 'La reference chinoise de la video longue. Ne au croisement de l\'anime et du gaming, Bilibili couvre desormais la tech, l\'education, la beaute, l\'automobile et bien d\'autres secteurs. Pres de 70 % de la Gen Z chinoise y est active. Les utilisateurs ne scrollent pas des clips de quelques secondes. Ils s\'installent et regardent. Duree moyenne de session : 107 minutes.',
+    detail: 'Bilibili a atteint la rentabilite pour la premiere fois en 2025. Les revenus publicitaires ont progresse de 27 % en glissement annuel. La fonctionnalite danmu (commentaires qui defilent en surimpression pendant la lecture) transforme le visionnage passif en une experience quasi collective.',
+    bestFor: 'Tech, gaming, education, beaute, automobile. Formats phares : analyses approfondies, tutoriels, series d\'unboxing, collaborations avec des UP主 (createurs Bilibili).',
+    image: '/images/platforms/additional-platforms/bilibili.png',
+    logo: '/images/platforms/bilibili-logo.svg',
+    brandColor: '#00A1D6',
+    bg: '#F7F2EE',
+    iconBg: '#E8E0D8',
+    textColor: '#1A1A1A',
+    descColor: '#5C5C5C',
+    linkColor: '#CC3333',
+  },
+  {
+    name: 'Kuaishou',
+    chineseName: '快手',
+    mau: '731M',
+    audience: 'Large. Forte presence dans les villes de rang 3-4',
+    category: 'Video et communaute',
+    description: '731 millions d\'utilisateurs mensuels. L\'audience penche vers les villes de rang 3 a 5 et privilegia le contenu authentique aux videos de marque trop lisses. La culture "Laotie" (en gros : ami de confiance) recompense les createurs qui publient regulierement et parlent sans filtre.',
+    detail: 'Un detail que la plupart des marques ignorent : les utilisateurs de plus de 40 ans representent plus de 47 % des depenses totales en e-commerce sur la plateforme. C\'est un segment demographique auquel la plupart des entreprises ne pensent meme pas.',
+    bestFor: 'Grande consommation, agroalimentaire, agriculture, marques qui vendent au-dela des villes de rang 1-2. Formats phares : live commerce, demonstrations produit, visites d\'usine.',
+    image: '/images/platforms/additional-platforms/kuaishou.png',
+    logo: '/images/platforms/kuaishou-logo.svg',
+    brandColor: '#FF4906',
+    bg: '#1A1A1A',
+    iconBg: 'rgba(255,255,255,0.1)',
+    textColor: '#FFFFFF',
+    descColor: 'rgba(255,255,255,0.6)',
+    linkColor: '#CC3333',
+  },
+  {
+    name: 'Zhihu',
+    chineseName: '知乎',
+    mau: '~83M',
+    audience: 'Professionnels. Plus de 80 % titulaires d\'une licence',
+    category: 'Texte et savoir',
+    description: 'La premiere plateforme de questions-reponses en Chine. Plus de 80 % des utilisateurs sont diplomes du superieur. 59 % de femmes au T2 2025. Le contenu est indexe par Baidu et continue de generer du trafic pendant des mois. Sur Douyin, une publication disparait en 48 heures. Sur Zhihu, elle se capitalise.',
+    detail: 'Environ 83 millions d\'utilisateurs mensuels. Une audience plus restreinte, mais ce sont des acheteurs intentionnistes qui font leurs recherches avant de passer a l\'achat. Et 14,2 millions d\'entre eux paient pour du contenu premium.',
+    bestFor: 'B2B, services professionnels, education, tech, sante, luxe. Formats phares : reponses d\'experts, analyses sectorielles, etudes de cas.',
+    image: '/images/platforms/additional-platforms/zhihu.png',
+    logo: '/images/platforms/zhihu-logo.svg',
+    brandColor: '#0066FF',
+    bg: '#CC3333',
+    iconBg: 'rgba(255,255,255,0.2)',
+    textColor: '#FFFFFF',
+    descColor: 'rgba(255,255,255,0.8)',
+    linkColor: '#FFFFFF',
+  },
+  {
+    name: 'Toutiao',
+    chineseName: '今日头条',
+    mau: '410M',
+    audience: 'Lecteurs d\'actualite. 25-35 ans',
+    category: 'Texte et savoir',
+    description: 'La plateforme d\'actualites de ByteDance. 410 millions d\'utilisateurs mensuels. Le contenu est distribue par centre d\'interet, pas par nombre d\'abonnes. Une marque avec zero abonne peut toucher des millions de personnes des le premier jour si l\'article trouve son public.',
+    detail: 'La creation de compte est laborieuse et les suspensions tombent vite. Il faut une equipe qui connait deja les regles du jeu.',
+    bestFor: 'B2B, industrie, tech, lancements de produits.',
+    image: '/images/platforms/additional-platforms/toutiao.png',
+    logo: '/images/platforms/toutiao-logo.svg',
+    brandColor: '#ED1C24',
+    bg: '#E8E0D8',
+    iconBg: '#FFFFFF',
+    textColor: '#1A1A1A',
+    descColor: '#5C5C5C',
+    linkColor: '#CC3333',
+  },
+  {
+    name: 'Baidu Tieba',
+    chineseName: '百度贴吧',
+    mau: '300M',
+    audience: 'Communautes thematiques',
+    category: 'Texte et savoir',
+    description: 'Le forum historique chinois. Organise par mot-cle, a la maniere de Reddit. 300 millions d\'utilisateurs mensuels. Les publications sont indexees par Baidu : une participation active renforce a la fois la confiance communautaire et le referencement.',
+    detail: '',
+    bestFor: 'Electronique grand public, gaming, automobile, marques avec des communautes de niche.',
+    image: '/images/platforms/additional-platforms/baidu-tieba.png',
+    logo: '/images/platforms/baidu-tieba-logo.svg',
+    brandColor: '#4879BD',
+    bg: '#F7F2EE',
+    iconBg: '#E8E0D8',
+    textColor: '#1A1A1A',
+    descColor: '#5C5C5C',
+    linkColor: '#CC3333',
+  },
+  {
+    name: 'Meituan/Dianping',
+    chineseName: '美团/大众点评',
+    mau: '770M+',
+    audience: 'Restauration, voyage, services de proximite',
+    category: 'Commerce et lifestyle',
+    description: 'La plus grande plateforme de services locaux en Chine. Plus de 770 millions d\'utilisateurs annuels, 14,5 millions de commercants. Dianping est l\'endroit ou les consommateurs consultent les avis avant de se rendre dans un commerce. Un profil soigne genere du trafic en boutique. Un profil neglige pousse les clients vers la concurrence.',
+    detail: '',
+    bestFor: 'Hotellerie, restauration, beaute, bien-etre, tourisme, commerce physique.',
+    image: '/images/platforms/additional-platforms/meituan.png',
+    logo: '/images/platforms/meituan-logo.svg',
+    brandColor: '#FFD100',
+    bg: '#1A1A1A',
+    iconBg: 'rgba(255,255,255,0.1)',
+    textColor: '#FFFFFF',
+    descColor: 'rgba(255,255,255,0.6)',
+    linkColor: '#CC3333',
+  },
+  {
+    name: 'Pinduoduo',
+    chineseName: '拼多多',
+    mau: '880M+',
+    audience: 'Acheteurs sensibles au prix. Villes de rang 3-4',
+    category: 'Commerce et lifestyle',
+    description: 'Troisieme plateforme e-commerce en Chine. La maison mere opere egalement Temu. Plus de 880 millions d\'utilisateurs mensuels, principalement dans les villes de rang 3-4. Construit autour de l\'achat groupe et des remises importantes. La plateforme propose aussi le e-commerce transfrontalier et le live commerce.',
+    detail: '',
+    bestFor: 'Grande consommation, biens de consommation, sante et beaute, transfrontalier. Pas adapte aux marques positionnees luxe.',
+    image: '/images/platforms/additional-platforms/pinduoduo.png',
+    logo: '/images/platforms/pinduoduo-logo.svg',
+    brandColor: '#E02E24',
+    bg: '#B02D2D',
+    iconBg: 'rgba(255,255,255,0.2)',
+    textColor: '#FFFFFF',
+    descColor: 'rgba(255,255,255,0.8)',
+    linkColor: '#FFFFFF',
+  },
+  {
+    name: 'Lemon8',
+    chineseName: '柠檬8',
+    mau: '23M',
+    audience: 'Lifestyle, contenu visuel',
+    category: 'Commerce et lifestyle',
+    description: 'La plateforme lifestyle visuelle de ByteDance. 23 millions d\'utilisateurs, un chiffre en constante progression. Imaginez Pinterest croisant RedNote, construit autour d\'un contenu esthetique soigne. La plateforme est recente mais gagne rapidement du terrain, en particulier dans la beaute et le voyage.',
+    detail: '',
+    bestFor: 'Beaute, mode, gastronomie, voyage, decoration. Contenu photo avant tout, carrousels, mise en scene produit.',
+    image: '/images/platforms/additional-platforms/lemon8.png',
+    logo: '/images/platforms/lemon8-logo.svg',
+    brandColor: '#FFE135',
+    bg: '#E8E0D8',
+    iconBg: '#FFFFFF',
+    textColor: '#1A1A1A',
+    descColor: '#5C5C5C',
+    linkColor: '#CC3333',
+  },
+  {
+    name: 'QQ',
+    chineseName: '腾讯QQ',
+    mau: '534M',
+    audience: '91 % des utilisateurs ont entre 15 et 24 ans',
+    category: 'Commerce et lifestyle',
+    description: '534 millions d\'utilisateurs mensuels. 91 % des 15-24 ans y sont presents. Les communautes fonctionnent un peu comme des serveurs Discord pour la tranche la plus jeune de la Gen Z chinoise. La plateforme integre aussi des fonctionnalites de gaming et de musique, ce qui maintient un fort engagement chez les etudiants.',
+    detail: 'QQ n\'est pas WeChat. Public different, regles completement differentes.',
+    bestFor: 'Gaming, education, divertissement, marques jeunes.',
+    image: '/images/platforms/additional-platforms/qq.png',
+    logo: '/images/platforms/qq-logo.svg',
+    brandColor: '#12B7F5',
+    bg: '#F7F2EE',
+    iconBg: '#E8E0D8',
+    textColor: '#1A1A1A',
+    descColor: '#5C5C5C',
+    linkColor: '#CC3333',
+  },
+];
+
+const stats = [
+  { label: 'Session quotidienne Bilibili', value: '107 min', image: '/images/platforms/additional-platforms/bilibili.png' },
+  { label: 'MAU Kuaishou', value: '731M', image: '/images/platforms/additional-platforms/kuaishou.png' },
+  { label: 'MAU Pinduoduo', value: '880M+', image: '/images/platforms/additional-platforms/pinduoduo.png' },
+  { label: 'Utilisateurs annuels Meituan', value: '770M+', image: '/images/platforms/additional-platforms/meituan.png' },
+  { label: 'Utilisateurs mensuels QQ', value: '534M', image: '/images/platforms/additional-platforms/qq.png' },
+  { label: 'MAU Toutiao', value: '410M', image: '/images/platforms/additional-platforms/toutiao.png' },
+  { label: 'MAU Bilibili', value: '366M', image: '/images/platforms/additional-platforms/bilibili.png' },
+  { label: 'MAU Baidu Tieba', value: '300M', image: '/images/platforms/additional-platforms/baidu-tieba.png' },
+  { label: 'MAU Zhihu', value: '~83M', image: '/images/platforms/additional-platforms/zhihu.png' },
+  { label: 'Utilisateurs Lemon8', value: '23M', image: '/images/platforms/additional-platforms/lemon8.png' },
+];
+
+const services = [
+  {
+    title: 'Creation et verification de comptes',
+    description: 'Inscription, verification, optimisation du profil. Conformite totale avec chaque plateforme. Nous traitons toute la paperasse administrative pour que vous ne restiez pas bloque sur des formulaires rediges en chinois.',
+    result: 'Comptes verifies et operationnels, prets a publier.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/></svg>`,
+    image: '/images/platforms/additional-services/account-setup.png',
+  },
+  {
+    title: 'Production de contenu',
+    description: 'Visuels assistes par IA via HubStudio.ai et redaction native en chinois. La strategie reste pilotee par des humains. Chaque publication est relue et validee par des locuteurs natifs en Chine. Le contenu est adapte au format et a l\'audience de chaque plateforme.',
+    result: 'Du contenu natif avec lequel votre audience a envie d\'interagir.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/></svg>`,
+    image: '/images/platforms/additional-services/content-production.png',
+  },
+  {
+    title: 'Publication et gestion de communaute',
+    description: 'Publication programmee aux horaires optimaux, moderation des commentaires, animation de communaute, croissance de l\'audience. La frequence de publication est definie en amont dans votre perimetre de travail.',
+    result: 'Presence reguliere avec un engagement communautaire actif.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>`,
+    image: '/images/platforms/additional-services/publishing.png',
+  },
+  {
+    title: 'Publicite',
+    description: 'Creation de comptes publicitaires, gestion de campagnes, production de creations, reporting de performance. Les depenses publicitaires sont facturees au cout reel, sans marge.',
+    result: 'Des publicites qui touchent la bonne audience avec des depenses transparentes.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>`,
+    image: '/images/platforms/additional-services/advertising.png',
+  },
+  {
+    title: 'Campagnes KOL et KOC',
+    description: 'Sourcing d\'influenceurs, verification, pilotage de campagne et reporting ROI sur toutes les plateformes. UP主 sur Bilibili, 达人 sur Kuaishou, 大V sur Zhihu. Nous sourcons, verifions, pilotons et reportons. Donnees d\'engagement verifiees uniquement.',
+    result: 'Campagnes d\'influence avec un reporting ROI transparent.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
+    image: '/images/platforms/additional-services/kol-campaigns.png',
+  },
+  {
+    title: 'Analytique et reporting',
+    description: 'Rapports mensuels sur la croissance, l\'engagement, la performance des contenus et les KPI pertinents pour votre activite. Tous les rapports sont livres en anglais avec les donnees en chinois jointes pour vos equipes locales.',
+    result: 'Des rapports mensuels clairs avec des recommandations actionnables.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 6-8"/></svg>`,
+    image: '/images/platforms/additional-services/analytics.png',
+  },
+];
+
+const recommendations = [
+  { goal: 'Toucher la Gen Z avec de la video longue', platforms: 'Bilibili' },
+  { goal: 'Vendre aux acheteurs sensibles au prix dans les villes moyennes', platforms: 'Kuaishou, Pinduoduo' },
+  { goal: 'Construire une visibilite durable sur les moteurs de recherche', platforms: 'Zhihu, Baidu Tieba' },
+  { goal: 'Generer du trafic en point de vente physique', platforms: 'Meituan/Dianping' },
+  { goal: 'Toucher des audiences de masse avec du contenu d\'actualite', platforms: 'Toutiao' },
+  { goal: 'Atteindre les etudiants et les gamers', platforms: 'QQ' },
+  { goal: 'Developper une presence lifestyle visuelle', platforms: 'Lemon8' },
+];
+
+const steps = [
+  {
+    number: '01',
+    title: 'Prendre rendez-vous.',
+    description: '30 minutes. Votre marque, votre audience, vos objectifs en Chine. Pas de presentation commerciale. Juste les bonnes questions.',
+    icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>`,
+  },
+  {
+    number: '02',
+    title: 'Recevoir une recommandation.',
+    description: 'Nous identifions les plateformes adaptees et les integrons a votre forfait. Perimetre clair. Prix fixe.',
+    icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>`,
+  },
+  {
+    number: '03',
+    title: 'Lancement.',
+    description: 'Creation de comptes, premiers contenus, gestion continue. En general, sous deux semaines.',
+    icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>`,
+  },
+];
+
+const faqs = [
+  {
+    q: 'Qui produit le contenu pour ces plateformes ?',
+    a: 'Des locuteurs natifs chinois bases a Shanghai et Hong Kong. HubStudio.ai accelere la production visuelle, mais un strategiste humain elabore le plan de contenu et un redacteur natif relit chaque piece pour s\'assurer de la pertinence culturelle, du ton et de la conformite. Aucune publication ne passe en ligne sans validation par une personne reelle.',
+  },
+  {
+    q: 'Avez-vous reellement acces aux 14 plateformes ?',
+    a: 'Oui. Nous nous connectons a ces plateformes depuis la Chine tous les jours. Plusieurs plateformes restreignent certaines fonctionnalites depuis des adresses IP etrangeres. Les agences qui travaillent a distance depuis d\'autres pays se heurtent a des problemes d\'acces qu\'elles ne peuvent pas resoudre. Nous n\'avons pas cette contrainte.',
+  },
+  {
+    q: 'Comment choisissez-vous les plateformes adaptees a ma marque ?',
+    a: 'Nous analysons votre secteur, votre audience et vos objectifs. Une marque dans l\'hotellerie a besoin de Meituan/Dianping. Une entreprise B2B tech tirera davantage de Zhihu et Toutiao. Nous recommandons ce qui correspond a votre activite, pas ce qui gonfle une proposition commerciale.',
+  },
+  {
+    q: 'Puis-je ajouter des plateformes a un forfait existant ?',
+    a: 'Oui. N\'importe quelle plateforme, a tout moment. Nous l\'ajoutons a votre perimetre avec des livrables clairs et un prix fixe.',
+  },
+  {
+    q: 'Que signifie concretement "contenu assiste par IA" ?',
+    a: 'La strategie et la direction editoriale sont 100 % humaines. HubStudio.ai prend en charge le volet visuel de la production : images produit, visuels pour les reseaux sociaux, maquettes video. Un redacteur natif passe ensuite chaque piece en revue pour verifier la precision, la conformite aux regles de la plateforme et la coherence avec la voix de marque. L\'IA accelere la production. Les membres de notre equipe s\'assurent que tout est juste.',
+  },
+  {
+    q: 'Comment gerez-vous les regles de moderation de contenu ?',
+    a: 'Chaque plateforme applique son propre systeme de moderation et ils sont tous differents. Bilibili signale certains mots-cles que Zhihu ignorerait. Toutiao suspend des comptes plus rapidement que la plupart des plateformes. Nous savons ce qui passe et ce qui entraine une suspension, parce que nous traitons ces sujets au quotidien.',
+  },
+  {
+    q: 'Combien de temps faut-il pour etre operationnel sur une nouvelle plateforme ?',
+    a: 'Une a trois semaines selon la plateforme. Nous gerons l\'inscription, la verification, la configuration du profil et les premiers contenus. La plupart des clients voient leur premiere publication en ligne sous deux a trois semaines.',
+  },
+  {
+    q: 'Menez-vous des campagnes d\'influence sur ces plateformes ?',
+    a: 'Oui. UP主 sur Bilibili, 达人 sur Kuaishou, 大V sur Zhihu. Nous sourcons, verifions, pilotons et reportons. Les honoraires d\'influenceurs sont factures separement et en toute transparence.',
+  },
+  {
+    q: 'Comment mesurez-vous les resultats ?',
+    a: 'Nous extrayons les donnees directement depuis les backends des plateformes, pas depuis des outils tiers. Les rapports couvrent la croissance des abonnes, l\'engagement, la performance des contenus et les KPI propres a chaque plateforme. Pour Zhihu, ce sera par exemple les impressions dans les resultats Baidu. Pour Meituan, le volume d\'avis et l\'evolution des notes. Pour Kuaishou, les conversions en live commerce. Nous reportons sur ce qui fait reellement avancer votre activite.',
+  },
+  {
+    q: 'Comment fonctionne la tarification ?',
+    a: 'Perimetre fixe, prix fixe. Chaque livrable est detaille avant le demarrage. Vous payez un forfait mensuel par plateforme. Pas de tarif horaire, pas de facturation supplementaire pour des depassements de perimetre. Les depenses publicitaires sont toujours facturees separement, au cout reel.',
+  },
+];
+
+const videoAndCommunity = platforms.filter(p => p.category === 'Video et communaute');
+const textAndKnowledge = platforms.filter(p => p.category === 'Texte et savoir');
+const commerceAndLifestyle = platforms.filter(p => p.category === 'Commerce et lifestyle');
+---
+
+<PageLayout
+  title="Plateformes complementaires : Bilibili, Kuaishou, Zhihu et plus | TheRedScroll"
+  description="14 plateformes que la plupart des agences ignorent. Bilibili, Kuaishou, Zhihu, Toutiao, Meituan, Pinduoduo et d'autres. Perimetre fixe, prix fixe. Equipe sur le terrain en Chine."
+  lang="fr"
+>
+  <!-- Hero: Dark hero banner -->
+  <section class="w-full bg-[#1A1A1A] py-[80px] max-[640px]:py-[48px] relative overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/additional-platforms-hero.png')" aria-hidden="true"></div>
+    <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[140px] max-[640px]:text-[80px] font-medium text-[#FFFFFF] opacity-[0.03] pointer-events-none select-none whitespace-nowrap" aria-hidden="true">
+      更多平台
+    </span>
+    <Container class="relative z-[1]">
+      <div class="max-w-[800px] mx-auto text-center">
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">
+          Au-dela des quatre grandes
+        </p>
+        <h1 class="text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] text-[#FFFFFF] mb-[8px]">
+          14 plateformes que la plupart des agences ignorent
+        </h1>
+        <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal mb-[24px]">
+          Vos clients regardent Bilibili pendant deux heures d'affilee. Ils consultent Dianping avant de choisir un restaurant. Ils font davantage confiance aux reponses sur Zhihu qu'a la publicite. Ils achetent en live sur Kuaishou dans le metro. Nous publions sur toutes ces plateformes. Chaque jour, depuis Shanghai et Hong Kong.
+        </p>
+        <div class="flex items-center justify-center gap-[12px] flex-wrap">
+          <Button variant="primary" href="/fr/contact">Prendre rendez-vous</Button>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Stats section — horizontal scroll strip -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="flex items-end justify-between gap-[32px] max-[640px]:flex-col max-[640px]:items-start max-[640px]:gap-[16px] mb-[32px]">
+        <div class="max-w-[560px]">
+          <SectionBar />
+          <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[8px]">
+            Plus de 1,1 milliard de Chinois utilisent les reseaux sociaux. Ils ne se limitent pas a quatre applications.
+          </h2>
+          <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
+            Les chiffres cles sur 9 plateformes supplementaires.
+          </p>
+        </div>
+        <Button variant="primary" href="/fr/contact" class="shrink-0">Prendre rendez-vous</Button>
+      </div>
+    </Container>
+
+    <div class="relative">
+      <div class="absolute right-0 top-0 bottom-0 w-[80px] bg-gradient-to-l from-[#FFFFFF] to-transparent z-[1] pointer-events-none" aria-hidden="true"></div>
+
+      <div class="overflow-x-auto scrollbar-hide" id="stats-scroll">
+        <div class="flex gap-[16px] px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pb-[8px]" style="min-width: min-content;">
+          {stats.map((stat, i) => (
+            <div
+              class="stat-card relative shrink-0 w-[220px] max-[640px]:w-[180px] h-[200px] max-[640px]:h-[170px] rounded-[12px] overflow-hidden flex flex-col justify-end cursor-grab select-none"
+              data-stat-index={i}
+            >
+              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out stat-bg" style={`background-image: url('${stat.image}')`} aria-hidden="true"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-[rgba(26,26,26,0.9)] via-[rgba(26,26,26,0.4)] to-transparent" aria-hidden="true"></div>
+              <div class="relative z-[1] p-[20px]">
+                <span class="text-[32px] text-[#FFFFFF] font-medium leading-none stat-counter block mb-[4px]" data-target={stat.value}>0</span>
+                <span class="text-[12px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.4]">{stat.label}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why these platforms matter -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]">
+          <SectionBar />
+        </div>
+        <SectionHeading overline="Pourquoi ces plateformes comptent">
+          La plupart des agences s'arretent a quatre. Aller plus loin exige une equipe sur le terrain.
+        </SectionHeading>
+      </div>
+
+      <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
+          <div class="w-full aspect-[16/9] overflow-hidden">
+            <img src="/images/platforms/additional-why/focused-attention.png" alt="Personne regardant du contenu video long format avec une attention soutenue" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+          </div>
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Une attention soutenue, pas du scroll rapide</h3>
+            <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
+              Les utilisateurs de Bilibili passent 107 minutes par jour sur la plateforme. Pres de deux heures d'attention soutenue de la part de consommateurs diplomes de moins de 35 ans. Ce n'est pas du scroll rapide. C'est une audience captive.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
+          <div class="w-full aspect-[16/9] overflow-hidden">
+            <img src="/images/platforms/additional-why/ecommerce-power.png" alt="Colis e-commerce en cours de tri dans un centre logistique chinois" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+          </div>
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Du commerce reel, des volumes reels</h3>
+            <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
+              Kuaishou a traite 385 milliards de RMB de ventes e-commerce au T3 2025. En un seul trimestre. Ces plateformes deplacent des volumes de produits a une echelle que la plupart des marques n'ont meme pas envisagee.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
+          <div class="w-full aspect-[16/9] overflow-hidden">
+            <img src="/images/platforms/additional-why/search-longevity.png" alt="Reponses Zhihu classees dans les resultats de recherche Baidu" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+          </div>
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Du contenu qui se capitalise</h3>
+            <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
+              Les reponses Zhihu se classent dans les resultats de recherche Baidu pendant des mois. Parfois des annees. Sur Douyin, une publication disparait en 48 heures. Sur Zhihu, elle continue de generer du trafic bien apres sa mise en ligne.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] mt-[24px] text-center max-w-[680px] mx-auto">
+        Aller au-dela de quatre plateformes necessite des locuteurs natifs, un acces quotidien aux plateformes et une equipe qui opere sur le marche a temps plein. C'est exactement notre cas.
+      </p>
+    </Container>
+  </section>
+
+  <!-- Video and community platforms -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]">
+          <SectionBar />
+        </div>
+        <SectionHeading overline="Video et communaute">
+          Video longue, live commerce et audiences fideles
+        </SectionHeading>
+      </div>
+
+      <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        {videoAndCommunity.map((item) => (
+          <div
+            class="eco-card relative border-none overflow-hidden flex flex-col justify-between"
+            style={`border-radius: ${item.bg === '#1A1A1A' || item.bg === '#CC3333' || item.bg === '#B02D2D' ? '12px' : '10px'}`}
+            data-tilt-eco
+          >
+            <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out eco-bg" style={`background-image: url('${item.image}')`} aria-hidden="true"></div>
+            <div class="absolute inset-0" style={`background: ${item.bg}; opacity: 0.72`} aria-hidden="true"></div>
+            <div class="relative z-[1] p-[24px] max-[640px]:p-[20px]">
+              <div class="flex items-center gap-[12px] mb-[16px]">
+                <div class="w-[40px] h-[40px] rounded-[6px] flex items-center justify-center" style={`background: ${item.iconBg}`}>
+                  <img src={item.logo} alt={`Logo ${item.name}`} width="20" height="20" style={item.textColor === '#FFFFFF' ? 'filter: brightness(0) invert(1);' : ''} />
+                </div>
+                <div>
+                  <h3 class="text-[18px] font-medium leading-[1.3]" style={`color: ${item.textColor}`}>
+                    {item.name}
+                  </h3>
+                  <span class="text-[12px] font-normal block" style={`color: ${item.descColor}`}>{item.chineseName} · {item.mau} MAU</span>
+                </div>
+              </div>
+              <p class="text-[13px] font-normal leading-[1.5] mb-[12px]" style={`color: ${item.descColor}`}>
+                {item.description}
+              </p>
+              {item.detail && (
+                <p class="text-[13px] font-normal leading-[1.5] mb-[12px]" style={`color: ${item.descColor}`}>
+                  {item.detail}
+                </p>
+              )}
+              <p class="text-[12px] font-medium leading-[1.5]" style={`color: ${item.linkColor}`}>
+                Ideal pour : {item.bestFor}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </Container>
+  </section>
+
+  <!-- Text and knowledge platforms -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]">
+          <SectionBar />
+        </div>
+        <SectionHeading overline="Texte et savoir">
+          Questions-reponses, actualites, forums. Du contenu qui se reference et se capitalise.
+        </SectionHeading>
+      </div>
+
+      <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        {textAndKnowledge.map((item) => (
+          <div
+            class="eco-card relative border-none overflow-hidden flex flex-col justify-between"
+            style={`border-radius: ${item.bg === '#1A1A1A' || item.bg === '#CC3333' || item.bg === '#B02D2D' ? '12px' : '10px'}`}
+            data-tilt-eco
+          >
+            <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out eco-bg" style={`background-image: url('${item.image}')`} aria-hidden="true"></div>
+            <div class="absolute inset-0" style={`background: ${item.bg}; opacity: 0.72`} aria-hidden="true"></div>
+            <div class="relative z-[1] p-[24px] max-[640px]:p-[20px]">
+              <div class="flex items-center gap-[12px] mb-[16px]">
+                <div class="w-[40px] h-[40px] rounded-[6px] flex items-center justify-center" style={`background: ${item.iconBg}`}>
+                  <img src={item.logo} alt={`Logo ${item.name}`} width="20" height="20" style={item.textColor === '#FFFFFF' ? 'filter: brightness(0) invert(1);' : ''} />
+                </div>
+                <div>
+                  <h3 class="text-[18px] font-medium leading-[1.3]" style={`color: ${item.textColor}`}>
+                    {item.name}
+                  </h3>
+                  <span class="text-[12px] font-normal block" style={`color: ${item.descColor}`}>{item.chineseName} · {item.mau} MAU</span>
+                </div>
+              </div>
+              <p class="text-[13px] font-normal leading-[1.5] mb-[12px]" style={`color: ${item.descColor}`}>
+                {item.description}
+              </p>
+              {item.detail && (
+                <p class="text-[13px] font-normal leading-[1.5] mb-[12px]" style={`color: ${item.descColor}`}>
+                  {item.detail}
+                </p>
+              )}
+              <p class="text-[12px] font-medium leading-[1.5]" style={`color: ${item.linkColor}`}>
+                Ideal pour : {item.bestFor}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </Container>
+  </section>
+
+  <!-- Commerce and lifestyle platforms -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]">
+          <SectionBar />
+        </div>
+        <SectionHeading overline="Commerce et lifestyle">
+          Avis, shopping, services locaux et contenu visuel
+        </SectionHeading>
+      </div>
+
+      <div class="grid grid-cols-2 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        {commerceAndLifestyle.map((item) => (
+          <div
+            class="eco-card relative border-none overflow-hidden flex flex-col justify-between"
+            style={`border-radius: ${item.bg === '#1A1A1A' || item.bg === '#CC3333' || item.bg === '#B02D2D' ? '12px' : '10px'}`}
+            data-tilt-eco
+          >
+            <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out eco-bg" style={`background-image: url('${item.image}')`} aria-hidden="true"></div>
+            <div class="absolute inset-0" style={`background: ${item.bg}; opacity: 0.72`} aria-hidden="true"></div>
+            <div class="relative z-[1] p-[24px] max-[640px]:p-[20px]">
+              <div class="flex items-center gap-[12px] mb-[16px]">
+                <div class="w-[40px] h-[40px] rounded-[6px] flex items-center justify-center" style={`background: ${item.iconBg}`}>
+                  <img src={item.logo} alt={`Logo ${item.name}`} width="20" height="20" style={item.textColor === '#FFFFFF' ? 'filter: brightness(0) invert(1);' : ''} />
+                </div>
+                <div>
+                  <h3 class="text-[18px] font-medium leading-[1.3]" style={`color: ${item.textColor}`}>
+                    {item.name}
+                  </h3>
+                  <span class="text-[12px] font-normal block" style={`color: ${item.descColor}`}>{item.chineseName} · {item.mau} MAU</span>
+                </div>
+              </div>
+              <p class="text-[13px] font-normal leading-[1.5] mb-[12px]" style={`color: ${item.descColor}`}>
+                {item.description}
+              </p>
+              {item.detail && (
+                <p class="text-[13px] font-normal leading-[1.5] mb-[12px]" style={`color: ${item.descColor}`}>
+                  {item.detail}
+                </p>
+              )}
+              <p class="text-[12px] font-medium leading-[1.5]" style={`color: ${item.linkColor}`}>
+                Ideal pour : {item.bestFor}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </Container>
+  </section>
+
+  <!-- What we do — services -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]">
+          <SectionBar />
+        </div>
+        <SectionHeading overline="Nos services">
+          Le meme modele sur chaque plateforme. Perimetre clair. Prix fixe.
+        </SectionHeading>
+      </div>
+
+      <!-- Desktop: two-column selector + panel -->
+      <div class="grid grid-cols-[340px_1fr] max-[1024px]:grid-cols-[280px_1fr] max-[768px]:hidden gap-[24px] items-stretch">
+        <div class="flex flex-col gap-[4px]">
+          {services.map((service, i) => (
+            <button
+              class:list={[
+                'svc-selector flex items-center gap-[12px] px-[16px] py-[14px] rounded-[8px] text-left cursor-pointer border-none transition-all duration-300 relative',
+                i === 0 ? 'svc-selector-active' : '',
+              ]}
+              data-svc-select={i}
+              style={i === 0 ? 'background: #F7F2EE' : 'background: transparent'}
+            >
+              <div
+                class="svc-sel-indicator absolute left-0 top-[12px] bottom-[12px] w-[3px] rounded-full transition-all duration-300"
+                style={i === 0 ? 'background: #CC3333; opacity: 1' : 'background: #CC3333; opacity: 0'}
+              ></div>
+              <div
+                class="svc-sel-icon w-[36px] h-[36px] rounded-[6px] shrink-0 flex items-center justify-center transition-all duration-300"
+                style={i === 0 ? 'background: #E8E0D8; color: #CC3333' : 'background: transparent; color: #5C5C5C'}
+              >
+                <Fragment set:html={service.icon} />
+              </div>
+              <span
+                class="svc-sel-label text-[14px] font-medium leading-[1.3] transition-colors duration-300"
+                style={i === 0 ? 'color: #1A1A1A' : 'color: #5C5C5C'}
+              >
+                {service.title}
+              </span>
+            </button>
+          ))}
+        </div>
+
+        <div class="relative">
+          {services.map((service, i) => (
+            <div
+              class="svc-panel relative rounded-[12px] overflow-hidden h-full"
+              data-svc-panel={i}
+              style={i === 0 ? '' : 'display: none;'}
+            >
+              <div class="absolute inset-0 bg-cover bg-center" style={`background-image: url('${service.image}')`} aria-hidden="true"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-[rgba(26,26,26,0.95)] via-[rgba(26,26,26,0.6)] to-[rgba(26,26,26,0.15)]" aria-hidden="true"></div>
+              <div class="relative z-[1] p-[32px] max-[1024px]:p-[24px] h-full flex flex-col justify-end">
+                <h3 class="text-[22px] font-medium leading-[1.25] mb-[8px] text-[#FFFFFF]">
+                  {service.title}
+                </h3>
+                <p class="text-[14px] font-normal leading-[1.6] text-[rgba(255,255,255,0.7)] mb-[16px]">
+                  {service.description}
+                </p>
+                <div class="flex items-center gap-[8px] pt-[12px] border-t border-[rgba(255,255,255,0.15)]">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                  <p class="text-[13px] font-medium leading-[1.5] text-[#FFFFFF]">
+                    {service.result}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Mobile: stacked cards -->
+      <div class="hidden max-[768px]:flex flex-col gap-[12px]">
+        {services.map((service) => (
+          <div class="relative rounded-[12px] overflow-hidden">
+            <div class="absolute inset-0 bg-cover bg-center" style={`background-image: url('${service.image}')`} aria-hidden="true"></div>
+            <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.82]" aria-hidden="true"></div>
+            <div class="relative z-[1] p-[24px]">
+              <div class="w-[40px] h-[40px] rounded-[6px] flex items-center justify-center mb-[12px] bg-[rgba(255,255,255,0.12)] text-[#FFFFFF]">
+                <Fragment set:html={service.icon} />
+              </div>
+              <h3 class="text-[18px] font-medium leading-[1.3] mb-[8px] text-[#FFFFFF]">
+                {service.title}
+              </h3>
+              <p class="text-[13px] font-normal leading-[1.5] mb-[12px] text-[rgba(255,255,255,0.7)]">
+                {service.description}
+              </p>
+              <p class="text-[13px] font-medium leading-[1.5] text-[#FFFFFF]">
+                Resultat : {service.result}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </Container>
+  </section>
+
+  <!-- Which platforms fit — dark section -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="bg-[#1A1A1A] rounded-[12px] py-[48px] px-[48px] max-[640px]:px-[20px] max-[640px]:py-[32px]">
+        <div class="mb-[40px] max-[640px]:mb-[32px]">
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">
+            Recommandations par plateforme
+          </p>
+          <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF]">
+            Quelles plateformes pour votre marque ?
+          </h2>
+          <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.5] mt-[8px] max-w-[680px]">
+            Ces plateformes fonctionnent au mieux en complement de WeChat, Douyin, RedNote et Weibo. Nous vous aidons a construire le dispositif complet.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[20px]">
+          {recommendations.map((rec) => (
+            <div class="border-l-[3px] border-[#CC3333] pl-[16px]">
+              <h3 class="text-[16px] text-[#FFFFFF] font-medium leading-[1.3] mb-[4px]">
+                {rec.goal}
+              </h3>
+              <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.5]">
+                {rec.platforms}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- FAQ -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-[340px_1fr] max-[1024px]:grid-cols-[280px_1fr] max-[768px]:grid-cols-1 gap-[48px] max-[768px]:gap-[32px]">
+        <div>
+          <div class="sticky top-[84px] max-[640px]:static">
+            <SectionBar />
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">FAQ</p>
+            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">
+              Questions frequentes
+            </h2>
+            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
+              Tout ce qu'il faut savoir pour travailler avec TheRedScroll sur ces plateformes.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          {faqs.map((faq) => (
+            <div class="border-b border-[rgba(0,0,0,0.08)]" data-faq>
+              <button
+                class="w-full flex items-center justify-between py-[20px] text-left bg-transparent border-none cursor-pointer group"
+                data-faq-trigger
+                aria-expanded="false"
+              >
+                <h3 class="text-[16px] font-medium leading-[1.3] text-[#1A1A1A] group-hover:text-[#5C5C5C] transition-colors duration-150 pr-[16px]">{faq.q}</h3>
+                <svg class="w-[16px] h-[16px] shrink-0 text-[#5C5C5C] transition-transform duration-300 faq-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 6l4 4 4-4"/>
+                </svg>
+              </button>
+              <div class="faq-content overflow-hidden" style="height: 0; opacity: 0;">
+                <div class="pb-[20px]">
+                  <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
+                    {faq.a}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Getting started -->
+  <section class="relative mt-[96px] max-[640px]:mt-[64px] pt-[80px] pb-[80px] max-[640px]:pt-[48px] max-[640px]:pb-[48px] overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero/additional-platforms-hero.png')" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.88]" aria-hidden="true"></div>
+
+    <Container class="relative z-[1]">
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]">
+          <div class="w-[40px] h-[3px] bg-[#CC3333] rounded-none"></div>
+        </div>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">
+          Pour commencer
+        </p>
+        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF]">
+          De zero a operationnel sur n'importe quelle plateforme en deux semaines.
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-3 max-[640px]:grid-cols-1 gap-[24px] max-[640px]:gap-[16px]">
+        {steps.map((step) => (
+          <div class="bg-[rgba(255,255,255,0.06)] border-[0.5px] border-[rgba(255,255,255,0.1)] rounded-[12px] p-[32px] max-[640px]:p-[20px] text-center">
+            <div class="w-[64px] h-[64px] rounded-full bg-[rgba(255,255,255,0.08)] border-[0.5px] border-[rgba(255,255,255,0.15)] flex items-center justify-center mx-auto mb-[20px]">
+              <Fragment set:html={step.icon} />
+            </div>
+            <h3 class="text-[18px] text-[#FFFFFF] font-medium leading-[1.3] mb-[8px]">
+              {step.title}
+            </h3>
+            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6]">
+              {step.description}
+            </p>
+          </div>
+        ))}
+      </div>
+
+      <div class="text-center mt-[40px]">
+        <Button variant="primary" href="/fr/contact">Prendre rendez-vous</Button>
+      </div>
+
+      <!-- Cross-links -->
+      <div class="mt-[48px] pt-[24px] border-t border-[rgba(255,255,255,0.1)] text-center">
+        <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal mb-[12px]">Voir aussi</p>
+        <div class="flex justify-center gap-[24px] flex-wrap">
+          <a href="/fr/platforms/wechat" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Marketing WeChat &rarr;</a>
+          <a href="/fr/platforms/douyin" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Marketing Douyin &rarr;</a>
+          <a href="/fr/platforms/rednote" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Marketing RedNote &rarr;</a>
+          <a href="/fr/platforms/weibo" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Marketing Weibo &rarr;</a>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+<style>
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .svc-panel {
+    transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .svc-selector:hover {
+    background: #F7F2EE !important;
+  }
+  .faq-content {
+    transition: height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+  }
+  .stat-card {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  .stat-card.revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .stat-card:hover .stat-bg {
+    transform: scale(1.08);
+  }
+  .eco-card:hover .eco-bg {
+    transform: scale(1.08);
+  }
+</style>
+
+<script>
+  // Stats horizontal scroll — drag to scroll
+  const statsScroll = document.getElementById('stats-scroll');
+  if (statsScroll) {
+    let isDown = false;
+    let startX: number;
+    let scrollLeft: number;
+
+    statsScroll.addEventListener('mousedown', (e) => {
+      isDown = true;
+      statsScroll.style.cursor = 'grabbing';
+      startX = e.pageX - statsScroll.offsetLeft;
+      scrollLeft = statsScroll.scrollLeft;
+    });
+    statsScroll.addEventListener('mouseleave', () => { isDown = false; statsScroll.style.cursor = ''; resumeAuto(); });
+    statsScroll.addEventListener('mouseup', () => { isDown = false; statsScroll.style.cursor = ''; resumeAuto(); });
+    statsScroll.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - statsScroll.offsetLeft;
+      statsScroll.scrollLeft = scrollLeft - (x - startX);
+    });
+
+    let autoInterval: ReturnType<typeof setInterval>;
+    const scrollSpeed = 0.5;
+
+    function startAuto() {
+      autoInterval = setInterval(() => {
+        if (isDown) return;
+        statsScroll!.scrollLeft += scrollSpeed;
+        if (statsScroll!.scrollLeft >= statsScroll!.scrollWidth - statsScroll!.clientWidth) {
+          statsScroll!.scrollLeft = 0;
+        }
+      }, 16);
+    }
+
+    function pauseAuto() { clearInterval(autoInterval); }
+    function resumeAuto() { pauseAuto(); startAuto(); }
+
+    statsScroll.addEventListener('mouseenter', pauseAuto);
+    statsScroll.addEventListener('touchstart', pauseAuto);
+    statsScroll.addEventListener('touchend', () => { setTimeout(resumeAuto, 2000); });
+
+    startAuto();
+  }
+
+  // Stats scroll reveal with stagger + trigger counters
+  const statCards = document.querySelectorAll('.stat-card');
+  const statsObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const card = entry.target as HTMLElement;
+          const index = parseInt(card.dataset.statIndex || '0');
+          const delay = index * 150;
+          setTimeout(() => {
+            card.classList.add('revealed');
+            const counter = card.querySelector('.stat-counter') as HTMLElement;
+            if (counter) {
+              setTimeout(() => {
+                animateCounter(counter, counter.dataset.target || '0');
+              }, 400);
+            }
+          }, delay);
+          statsObserver.unobserve(card);
+        }
+      });
+    },
+    { threshold: 0.05 }
+  );
+  statCards.forEach((card) => statsObserver.observe(card));
+
+  function animateCounter(el: HTMLElement, target: string) {
+    const match = target.match(/^([~]?)([\d.]+)(.*)$/);
+    if (!match) { el.textContent = target; return; }
+
+    const prefix = match[1];
+    const endNum = parseFloat(match[2]);
+    const suffix = match[3];
+    const duration = 2000;
+    const startTime = performance.now();
+
+    function tick(now: number) {
+      const elapsed = now - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      const current = eased * endNum;
+
+      if (endNum >= 10) {
+        el.textContent = prefix + Math.round(current) + suffix;
+      } else {
+        el.textContent = prefix + current.toFixed(1).replace(/\.0$/, '') + suffix;
+      }
+
+      if (progress < 1) requestAnimationFrame(tick);
+      else el.textContent = target;
+    }
+
+    requestAnimationFrame(tick);
+  }
+
+  // Service selector — desktop two-column
+  const selectors = document.querySelectorAll('[data-svc-select]');
+  const panels = document.querySelectorAll('[data-svc-panel]');
+  let activeIndex = 0;
+  let isAnimating = false;
+
+  selectors.forEach((sel) => {
+    sel.addEventListener('click', () => {
+      const index = parseInt((sel as HTMLElement).dataset.svcSelect || '0');
+      if (index === activeIndex || isAnimating) return;
+      isAnimating = true;
+
+      selectors.forEach((s) => {
+        const el = s as HTMLElement;
+        el.style.background = 'transparent';
+        const ind = el.querySelector('.svc-sel-indicator') as HTMLElement;
+        const ico = el.querySelector('.svc-sel-icon') as HTMLElement;
+        const lbl = el.querySelector('.svc-sel-label') as HTMLElement;
+        if (ind) ind.style.opacity = '0';
+        if (ico) { ico.style.background = 'transparent'; ico.style.color = '#5C5C5C'; }
+        if (lbl) lbl.style.color = '#5C5C5C';
+      });
+
+      const active = sel as HTMLElement;
+      active.style.background = '#F7F2EE';
+      const ind = active.querySelector('.svc-sel-indicator') as HTMLElement;
+      const ico = active.querySelector('.svc-sel-icon') as HTMLElement;
+      const lbl = active.querySelector('.svc-sel-label') as HTMLElement;
+      if (ind) ind.style.opacity = '1';
+      if (ico) { ico.style.background = '#E8E0D8'; ico.style.color = '#CC3333'; }
+      if (lbl) lbl.style.color = '#1A1A1A';
+
+      const oldPanel = panels[activeIndex] as HTMLElement;
+      const newPanel = panels[index] as HTMLElement;
+      const goingDown = index > activeIndex;
+
+      oldPanel.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+      oldPanel.style.opacity = '0';
+      oldPanel.style.transform = goingDown ? 'translateY(-20px)' : 'translateY(20px)';
+
+      setTimeout(() => {
+        oldPanel.style.display = 'none';
+        oldPanel.style.transform = '';
+        oldPanel.style.transition = '';
+
+        newPanel.style.opacity = '0';
+        newPanel.style.transform = goingDown ? 'translateY(20px)' : 'translateY(-20px)';
+        newPanel.style.display = '';
+
+        requestAnimationFrame(() => {
+          newPanel.style.transition = 'opacity 0.35s ease, transform 0.35s ease';
+          newPanel.style.opacity = '1';
+          newPanel.style.transform = 'translateY(0)';
+
+          setTimeout(() => {
+            newPanel.style.transition = '';
+            activeIndex = index;
+            isAnimating = false;
+          }, 350);
+        });
+      }, 280);
+    });
+  });
+
+  // Ecosystem cards — tilt on hover
+  document.querySelectorAll('[data-tilt-eco]').forEach((card) => {
+    const el = card as HTMLElement;
+    el.addEventListener('mousemove', (e: MouseEvent) => {
+      const rect = el.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+      const rotateX = ((y - centerY) / centerY) * -3;
+      const rotateY = ((x - centerX) / centerX) * 3;
+      el.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+    });
+    el.addEventListener('mouseleave', () => {
+      el.style.transform = 'perspective(800px) rotateX(0deg) rotateY(0deg) scale(1)';
+    });
+  });
+
+  // FAQ accordion
+  document.querySelectorAll('[data-faq]').forEach((item) => {
+    const trigger = item.querySelector('[data-faq-trigger]') as HTMLButtonElement;
+    const content = item.querySelector('.faq-content') as HTMLElement;
+    if (!trigger || !content) return;
+
+    trigger.addEventListener('click', () => {
+      const isOpen = trigger.getAttribute('aria-expanded') === 'true';
+
+      if (isOpen) {
+        content.style.height = content.scrollHeight + 'px';
+        requestAnimationFrame(() => {
+          content.style.height = '0';
+          content.style.opacity = '0';
+        });
+        trigger.setAttribute('aria-expanded', 'false');
+        const ch = trigger.querySelector('.faq-chevron') as HTMLElement;
+        if (ch) ch.style.transform = 'rotate(0deg)';
+      } else {
+        content.style.height = '0';
+        requestAnimationFrame(() => {
+          content.style.height = content.scrollHeight + 'px';
+          content.style.opacity = '1';
+        });
+        trigger.setAttribute('aria-expanded', 'true');
+        const ch = trigger.querySelector('.faq-chevron') as HTMLElement;
+        if (ch) ch.style.transform = 'rotate(180deg)';
+      }
+    });
+  });
+</script>
+</PageLayout>

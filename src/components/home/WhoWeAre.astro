@@ -2,12 +2,40 @@
 import Container from '../ui/Container.astro';
 import SectionBar from '../ui/SectionBar.astro';
 import SectionHeading from '../ui/SectionHeading.astro';
+import type { Lang } from '../../i18n/config';
 
-const stats = [
-  { value: '20+', label: 'Years of experience' },
-  { value: '18+', label: 'Platforms covered' },
-  { value: 'Our own', label: 'Studio' },
-];
+interface Props {
+  lang?: Lang;
+}
+
+const { lang = 'en' } = Astro.props;
+
+const text = {
+  en: {
+    overline: 'About TheRedScroll',
+    heading: 'We grow social networks in China. From the ground.',
+    p1: 'TheRedScroll is a social media agency built for China. We work from Shanghai and Hong Kong, inside the platforms, every single day.',
+    p2: 'Our team is native Chinese speakers. They live on WeChat, Douyin, RedNote, and Weibo the same way your audience does. When a trending topic breaks on Weibo at 9 AM Beijing time, we\'re already on it.',
+    p3: 'We serve three types of clients: international brands entering China for the first time, international brands already operating in China who want better results, and Chinese brands growing their domestic social presence.',
+    stats: [
+      { value: '20+', label: 'Years of experience' },
+      { value: '18+', label: 'Platforms covered' },
+      { value: 'Our own', label: 'Studio' },
+    ],
+  },
+  fr: {
+    overline: 'A propos de TheRedScroll',
+    heading: 'Nous developpons vos reseaux sociaux en Chine. Depuis le terrain.',
+    p1: 'TheRedScroll est une agence de reseaux sociaux concue pour la Chine. Nous travaillons depuis Shanghai et Hong Kong, au coeur des plateformes, chaque jour.',
+    p2: 'Notre equipe est composee de locuteurs natifs chinois. Ils vivent sur WeChat, Douyin, RedNote et Weibo comme votre audience. Quand un sujet explose sur Weibo a 9 heures du matin, heure de Pekin, nous sommes deja dessus.',
+    p3: 'Nous accompagnons trois types de clients : les marques internationales qui arrivent en Chine pour la premiere fois, celles qui y sont deja presentes et veulent de meilleurs resultats, et les marques chinoises qui veulent renforcer leur presence sociale.',
+    stats: [
+      { value: '20+', label: 'Annees d\'experience' },
+      { value: '18+', label: 'Plateformes couvertes' },
+      { value: 'Notre propre', label: 'Studio' },
+    ],
+  },
+}[lang];
 ---
 
 <section class="mt-[64px] max-[640px]:mt-[40px]">
@@ -17,43 +45,43 @@ const stats = [
       <div class="grid grid-cols-2 grid-rows-2 gap-[12px]">
         <!-- Large image top-left spanning 1 col, 2 rows -->
         <div class="row-span-2 rounded-[8px] bg-[#F0F1F4] aspect-[3/4] overflow-hidden">
-          <img src="/images/team/china-office.png" alt="TheRedScroll China office" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+          <img src="/images/team/china-office.png" alt={lang === 'fr' ? 'Bureau TheRedScroll en Chine' : 'TheRedScroll China office'} class="w-full h-full object-cover" loading="lazy" decoding="async" />
         </div>
         <!-- Top-right image -->
         <div class="rounded-[8px] bg-[#F0F1F4] aspect-[4/3] overflow-hidden">
-          <img src="/images/team/hongkong-office.png" alt="TheRedScroll Hong Kong office" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+          <img src="/images/team/hongkong-office.png" alt={lang === 'fr' ? 'Bureau TheRedScroll a Hong Kong' : 'TheRedScroll Hong Kong office'} class="w-full h-full object-cover" loading="lazy" decoding="async" />
         </div>
         <!-- Bottom-right image -->
         <div class="rounded-[8px] bg-[#F0F1F4] aspect-[4/3] overflow-hidden">
-          <img src="/images/team/team-photo.png" alt="TheRedScroll team" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+          <img src="/images/team/team-photo.png" alt={lang === 'fr' ? 'Equipe TheRedScroll' : 'TheRedScroll team'} class="w-full h-full object-cover" loading="lazy" decoding="async" />
         </div>
       </div>
 
       <!-- Text column -->
       <div>
         <SectionBar />
-        <SectionHeading overline="About TheRedScroll">
-          We grow social networks in China. From the ground.
+        <SectionHeading overline={text.overline}>
+          {text.heading}
         </SectionHeading>
         <div class="mt-[24px]">
           <p class="text-[16px] text-[#1A1A1A] font-normal leading-[1.6] mb-[24px]">
-            TheRedScroll is a social media agency built for China. We work from Shanghai and Hong Kong, inside the platforms, every single day.
+            {text.p1}
           </p>
           <p class="text-[16px] text-[#1A1A1A] font-normal leading-[1.6] mb-[24px]">
-            Our team is native Chinese speakers. They live on WeChat, Douyin, RedNote, and Weibo the same way your audience does. When a trending topic breaks on Weibo at 9 AM Beijing time, we're already on it.
+            {text.p2}
           </p>
           <p class="text-[16px] text-[#1A1A1A] font-normal leading-[1.6]">
-            We serve three types of clients: international brands entering China for the first time, international brands already operating in China who want better results, and Chinese brands growing their domestic social presence.
+            {text.p3}
           </p>
         </div>
 
         <!-- Stats row -->
         <div class="flex items-start gap-[0px] mt-[32px]">
-          {stats.map((stat, i) => (
+          {text.stats.map((stat, i) => (
             <div class:list={[
               'text-center flex-1',
               i > 0 && 'border-l border-[#E8E0D8] pl-[24px] max-[640px]:pl-[16px]',
-              i < stats.length - 1 && 'pr-[24px] max-[640px]:pr-[16px]',
+              i < text.stats.length - 1 && 'pr-[24px] max-[640px]:pr-[16px]',
             ]}>
               <p class="text-[28px] max-[640px]:text-[22px] text-[#1A1A1A] font-medium leading-[1.2]">{stat.value}</p>
               <p class="text-[13px] max-[640px]:text-[11px] text-[#5C5C5C] font-normal mt-[4px] leading-[1.3]">{stat.label}</p>

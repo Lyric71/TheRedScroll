@@ -1,0 +1,310 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+
+const services = ['Campagne', 'Production de contenu', 'Social', 'Contenu propulse par l\'IA'];
+const platforms = ['WeChat', 'RedNote', 'Weibo'];
+---
+
+<PageLayout
+  title="JAC Motors : etude de cas social media en Chine | TheRedScroll"
+  description="Comment JAC Motors a bati une vraie communaute sociale sur WeChat, RedNote et Weibo. Contenu propulse par l'IA, campagne olympique et rayonnement international."
+  ogImage="/images/clients/JAC/JAC-Wechat-4.jpg"
+  lang="fr"
+>
+
+  <!-- Hero -->
+  <section class="relative w-full min-h-[600px] max-[640px]:min-h-[480px] overflow-hidden">
+    <div
+      class="absolute inset-0 bg-cover bg-center bg-fixed max-[640px]:bg-scroll"
+      style="background-image: url('/images/clients/JAC/JAC-Wechat-4.jpg')"
+      aria-hidden="true"
+    ></div>
+    <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.72]" aria-hidden="true"></div>
+
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+        Etude de cas
+      </p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        JAC Motors : construire une communaute sociale pour un geant de l'automobile chinois.
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        JAC Motors avait besoin de bien plus que des publications. Nous avons bati une communaute sur WeChat, RedNote et Weibo avec du contenu propulse par l'IA qui a depasse les frontieres chinoises.
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/fr/contact">Prendre rendez-vous</Button>
+        <Button variant="secondary-dark" href="#case-study">Lire l'etude de cas</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meta bar -->
+  <section class="border-b border-[rgba(0,0,0,0.08)]">
+    <Container>
+      <div class="flex flex-wrap gap-[32px] max-[640px]:gap-[20px] py-[24px]">
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Le client</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">JAC Motors</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Secteur</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">Automobile / VE</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Services</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {services.map((s) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{s}</span>
+            ))}
+          </div>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Plateformes</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {platforms.map((p) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{p}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Case study content -->
+  <section id="case-study" class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <!-- Le client -->
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="Le client">10 millions de vehicules vendus. Une presence sociale qui ne suivait pas.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              JAC est l'un des plus grands constructeurs automobiles chinois. Plus de 30 ans d'activite, plus de 10 millions de vehicules vendus dans le monde. Voitures particulieres, vehicules electriques, camions utilitaires. Une entreprise de grande envergure, une empreinte serieuse.
+            </p>
+            <p>
+              Mais leur presence sur les reseaux sociaux ne refletait rien de tout cela. Du contenu etait publie regulierement sur WeChat, RedNote et Weibo. Le probleme, c'est que personne n'interagissait vraiment. Peu de commentaires, peu de partages, aucun sentiment de communaute.
+            </p>
+            <p>
+              Pour une entreprise de cette taille, l'ecart entre leur position sur le marche et leur presence sociale etait difficile a ignorer.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- WeChat content — horizontal scroll -->
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <div class="flex justify-center gap-[16px] overflow-x-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] max-[640px]:justify-start pb-[8px] scrollbar-hide">
+      <img
+        src="/images/clients/JAC/JAC-Wechat.jpg"
+        alt="Article WeChat de JAC Motors sur le lancement du E30X aux Emirats arabes unis"
+        class="h-[480px] max-[640px]:h-[400px] w-auto shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src="/images/clients/JAC/JAC-Wechat-1.jpg"
+        alt="Article WeChat de JAC Motors sur la couverture mediatique et le forum RCEP"
+        class="h-[480px] max-[640px]:h-[400px] w-auto shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src="/images/clients/JAC/JAC-Wechat-2.jpg"
+        alt="Article WeChat de JAC Motors sur la campagne olympique J-Bot"
+        class="h-[480px] max-[640px]:h-[400px] w-auto shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src="/images/clients/JAC/JAC-Wechat-3.jpg"
+        alt="Article WeChat de JAC Motors sur la campagne Rouge chinois des Jeux de Paris"
+        class="h-[480px] max-[640px]:h-[400px] w-auto shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <Container>
+      <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+        Contenu WeChat : lancements produits, campagne olympique et recits d'expansion internationale. Faites defiler pour voir la suite.
+      </p>
+    </Container>
+  </section>
+
+  <!-- Notre intervention -->
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="Notre intervention">Reconstruire le contenu de zero. Batir une communaute qui sonne vrai.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Nous avons repris le contenu sur les trois plateformes. JAC ne voulait pas simplement publier davantage. Ils voulaient devenir une marque que les gens du secteur automobile suivent vraiment. Et ils voulaient que la communaute autour d'eux ait quelque chose d'authentique. Batie sur la confiance et une identite partagee.
+            </p>
+            <p>
+              Nous avons donc reconstruit le contenu de zero autour de trois axes : le savoir automobile, les histoires humaines venues de l'interieur et de l'entourage de JAC, et un vrai dialogue avec l'audience au lieu d'un monologue de marque.
+            </p>
+          </div>
+        </div>
+
+        <!-- IA -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">L'IA au coeur de notre production</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Nous avons utilise HubStudio.ai pour creer du contenu visuel personnalise a un rythme que la production traditionnelle ne peut pas atteindre. L'IA a egalement pris en charge le suivi des performances sur les trois plateformes, ce qui nous permettait de voir ce qui fonctionnait et d'ajuster dans la meme semaine.
+            </p>
+            <p>
+              Notre equipe creative a construit chaque contenu plateforme par plateforme. Ce qui allait sur WeChat etait different de ce qui allait sur RedNote. Format different, ton different, audience differente.
+            </p>
+          </div>
+        </div>
+
+        <!-- Content strategy -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Du contenu qui merite l'attention</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Nous avons positionne JAC comme une source de vrai savoir automobile. Analyses techniques, coulisses de la fabrication, portraits de proprietaires montrant les vehicules JAC dans la vie quotidienne. Le genre de contenu pour lequel on s'arrete de defiler.
+            </p>
+            <p>
+              Il a fallu quelques mois. Mais le changement est devenu evident. Les commentaires se sont allonges. Les gens ont commence a identifier leurs amis. Les partages ont grimpe. Les comptes sont passes d'une diffusion corporate a un espace ou les gens revenaient d'eux-memes.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- Campaign visuals — full width -->
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px] px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px]">
+      <img
+        src="/images/clients/JAC/JAC-Wechat-4.jpg"
+        alt="Campagne JAC Motors E30X avec Nuria Diosdado"
+        class="w-full rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src="/images/clients/JAC/JAC-Wechat-5.jpg"
+        alt="Evenement de lancement JAC Motors sur le marche irakien"
+        class="w-full rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <Container>
+      <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+        Contenu de campagne internationale : collaboration athlete E30X et lancement sur le marche irakien.
+      </p>
+    </Container>
+  </section>
+
+  <!-- Campagne J-Bot -->
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="La campagne olympique J-Bot">Une mascotte concue par IA qui a fait le tour du monde sans campagne mondiale.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              La campagne J-Bot est le moment ou le travail communautaire a vraiment paye. Nous avons utilise l'IA pour redesigner la mascotte de JAC en six versions thematiques olympiques. Les visuels J-Bot ont ete publies sur WeChat, RedNote et Weibo. La reponse a ete immediate. Fort engagement, nombreux partages, portee organique bien au-dela des abonnes existants de JAC.
+            </p>
+            <p>
+              Ce qui s'est passe ensuite n'etait pas prevu. Les equipes internationales de JAC ont vu le contenu J-Bot et ont commence a le republier sur Facebook et Instagram de leur propre initiative. Personne ne leur avait demande. Ils ont simplement vu que cela fonctionnait et l'ont repris.
+            </p>
+            <p>
+              Du contenu conçu pour les plateformes sociales chinoises s'est retrouve a rayonner dans le monde entier sans que personne n'ait prevu une campagne separee. Cela n'arrive pas avec du contenu ordinaire.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- J-Bot visuals — full width -->
+  <section class="mb-[16px]">
+    <img
+      src="/images/clients/JAC/Wechat-JAC-Automobile-1.png"
+      alt="Mascotte J-Bot de JAC en six versions thematiques olympiques creees par IA"
+      class="w-full"
+      loading="lazy"
+      decoding="async"
+    />
+  </section>
+
+  <!-- J-Bot Facebook post + WeChat -->
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <div class="flex justify-center gap-[16px] px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] max-[640px]:overflow-x-auto max-[640px]:justify-start scrollbar-hide">
+      <img
+        src="/images/clients/JAC/Wechat-JAC-Automobile-2.png"
+        alt="Publication Facebook de JAC Motors Global presentant la campagne olympique J-Bot avec fort engagement"
+        class="h-[480px] max-[640px]:h-[400px] w-auto shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src="/images/clients/JAC/JAC-Wechat-3.jpg"
+        alt="Article WeChat de JAC Motors sur la campagne Rouge chinois des Jeux de Paris"
+        class="h-[480px] max-[640px]:h-[400px] w-auto shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <Container>
+      <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+        La campagne J-Bot est passee des reseaux sociaux chinois a la page Facebook mondiale de JAC sans brief distinct.
+      </p>
+    </Container>
+  </section>
+
+  <!-- Resultats + Ground team -->
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <!-- Ground team -->
+        <div class="mb-[64px] max-[640px]:mb-[48px] bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[32px] max-[640px]:p-[20px]">
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            La campagne a renforce l'image de JAC comme marque innovante et a cree un pont entre leur audience chinoise et leur audience mondiale. Il s'avere que le bon contenu communautaire n'a pas besoin de passeport.
+          </p>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- CTA -->
+  <section class="pb-[96px] max-[640px]:pb-[64px]">
+    <Container>
+      <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[48px] max-[640px]:p-[32px] text-center">
+        <SectionHeading overline="A votre tour">Vous souhaitez transformer vos reseaux sociaux en veritable communaute ?</SectionHeading>
+        <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)] max-w-[500px] mx-auto mb-[32px]">
+          Perimetre fixe. Prix fixe. Equipe sur place.
+        </p>
+        <Button variant="primary" href="/fr/contact">Prendre rendez-vous</Button>
+      </div>
+    </Container>
+  </section>
+
+  <style>
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+
+</PageLayout>

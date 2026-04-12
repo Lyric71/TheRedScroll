@@ -1,25 +1,35 @@
 ---
+import { t } from '../../i18n/ui';
+import { localizedPath } from '../../i18n/config';
+import type { Lang } from '../../i18n/config';
+
+interface Props {
+  lang?: Lang;
+}
+
+const { lang = 'en' } = Astro.props;
+const lp = (path: string) => localizedPath(path, lang);
 const currentYear = new Date().getFullYear();
 
 const footerLinks = {
   services: [
-    { label: 'Strategy & Analytics', href: '/services/strategy-campaigns' },
-    { label: 'Content Production', href: '/services/content-production' },
-    { label: 'Influencer Marketing', href: '/services/influencer-marketing' },
-    { label: 'Advertising', href: '/services/advertising' },
-    { label: 'China Market Entry', href: '/services/market-entry' },
-    { label: 'CRM & Private Domain', href: '/services/crm-private-domain' },
-    { label: 'Training & Consulting', href: '/services/training-consulting' },
+    { label: t('footer.strategyAnalytics', lang), href: lp('/services/strategy-campaigns') },
+    { label: t('footer.contentProduction', lang), href: lp('/services/content-production') },
+    { label: t('footer.influencerMarketing', lang), href: lp('/services/influencer-marketing') },
+    { label: t('footer.advertising', lang), href: lp('/services/advertising') },
+    { label: t('footer.chinaMarketEntry', lang), href: lp('/services/market-entry') },
+    { label: t('footer.crmPrivateDomain', lang), href: lp('/services/crm-private-domain') },
+    { label: t('footer.trainingConsulting', lang), href: lp('/services/training-consulting') },
   ],
   discover: [
-    { label: 'About', href: '/about' },
-    { label: 'Platforms', href: '/platforms/others' },
-    { label: 'Pricing', href: '/pricing' },
-    { label: 'Insights', href: '/insights' },
+    { label: t('footer.about', lang), href: lp('/about') },
+    { label: t('footer.platforms', lang), href: lp('/platforms/others') },
+    { label: t('footer.pricing', lang), href: lp('/pricing') },
+    { label: t('footer.insights', lang), href: lp('/insights') },
   ],
   connect: [
-    { label: 'Contact', href: '/contact' },
-    { label: 'Book a call', href: '/contact' },
+    { label: t('footer.contact', lang), href: lp('/contact') },
+    { label: t('footer.bookCall', lang), href: lp('/contact') },
   ],
   group: [
     { label: 'BeyondBorderGroup', href: 'https://beyondbordergroup.com' },
@@ -36,11 +46,11 @@ const footerLinks = {
     <div class="grid grid-cols-[2fr_1fr_1fr_1fr_1fr] gap-[32px] max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 max-[640px]:gap-[32px]">
       <!-- Brand column -->
       <div>
-        <a href="/" class="inline-block">
+        <a href={lp('/')} class="inline-block">
           <img src="/images/logo/theredscroll-logo-5B-dark.svg" alt="TheRedScroll" class="h-[36px] w-auto" loading="lazy" decoding="async" />
         </a>
         <p class="text-[rgba(255,255,255,0.4)] text-[13px] mt-[12px] leading-[1.6] max-w-[280px]">
-          We grow your brand on China's social platforms. More followers. More engagement. More conversions. Fixed scope. Fixed price. No surprises.
+          {t('footer.tagline', lang)}
         </p>
         <!-- Social icons -->
         <div class="flex gap-[8px] mt-[24px]">
@@ -52,7 +62,7 @@ const footerLinks = {
 
       <!-- Services column -->
       <div>
-        <p class="text-[11px] font-medium tracking-[0.05em] uppercase text-[#CC3333] mb-[12px]">Services</p>
+        <p class="text-[11px] font-medium tracking-[0.05em] uppercase text-[#CC3333] mb-[12px]">{t('footer.services', lang)}</p>
         {footerLinks.services.map((link) => (
           <a href={link.href} class="block text-[#FFFFFF] text-[14px] font-normal leading-[2] max-[640px]:py-[6px] transition-colors duration-150 hover:text-[rgba(255,255,255,0.6)]">
             {link.label}
@@ -62,7 +72,7 @@ const footerLinks = {
 
       <!-- Discover column -->
       <div>
-        <p class="text-[11px] font-medium tracking-[0.05em] uppercase text-[#CC3333] mb-[12px]">Discover</p>
+        <p class="text-[11px] font-medium tracking-[0.05em] uppercase text-[#CC3333] mb-[12px]">{t('footer.discover', lang)}</p>
         {footerLinks.discover.map((link) => (
           <a href={link.href} class="block text-[#FFFFFF] text-[14px] font-normal leading-[2] max-[640px]:py-[6px] transition-colors duration-150 hover:text-[rgba(255,255,255,0.6)]">
             {link.label}
@@ -72,7 +82,7 @@ const footerLinks = {
 
       <!-- Connect column -->
       <div>
-        <p class="text-[11px] font-medium tracking-[0.05em] uppercase text-[#CC3333] mb-[12px]">Connect</p>
+        <p class="text-[11px] font-medium tracking-[0.05em] uppercase text-[#CC3333] mb-[12px]">{t('footer.connect', lang)}</p>
         {footerLinks.connect.map((link) => (
           <a href={link.href} class="block text-[#FFFFFF] text-[14px] font-normal leading-[2] max-[640px]:py-[6px] transition-colors duration-150 hover:text-[rgba(255,255,255,0.6)]">
             {link.label}
@@ -82,7 +92,7 @@ const footerLinks = {
 
       <!-- Group column -->
       <div>
-        <p class="text-[11px] font-medium tracking-[0.05em] uppercase text-[#CC3333] mb-[12px]">Group</p>
+        <p class="text-[11px] font-medium tracking-[0.05em] uppercase text-[#CC3333] mb-[12px]">{t('footer.group', lang)}</p>
         {footerLinks.group.map((link) => (
           <a href={link.href} target="_blank" rel="noopener noreferrer" class="block text-[#FFFFFF] text-[14px] font-normal leading-[2] max-[640px]:py-[6px] transition-colors duration-150 hover:text-[rgba(255,255,255,0.6)]">
             {link.label}
@@ -93,16 +103,16 @@ const footerLinks = {
 
     <!-- Divider + bottom row -->
     <div class="border-t border-[rgba(255,255,255,0.1)] mt-[32px] pt-[16px] flex justify-between items-center max-[640px]:flex-col max-[640px]:gap-[8px] max-[640px]:text-center">
-      <p class="text-[12px] text-[rgba(255,255,255,0.4)]">&copy; {currentYear} TheRedScroll. All rights reserved.</p>
+      <p class="text-[12px] text-[rgba(255,255,255,0.4)]">&copy; {currentYear} TheRedScroll. {t('footer.rights', lang)}</p>
       <div class="flex gap-[16px] max-[640px]:gap-[12px]">
-        <a href="/privacy-policy" class="text-[12px] text-[rgba(255,255,255,0.4)] transition-colors duration-150 hover:text-[#FFFFFF] py-[8px]">
-          Privacy policy
+        <a href={lp('/privacy-policy')} class="text-[12px] text-[rgba(255,255,255,0.4)] transition-colors duration-150 hover:text-[#FFFFFF] py-[8px]">
+          {t('footer.privacy', lang)}
         </a>
-        <a href="/terms-of-service" class="text-[12px] text-[rgba(255,255,255,0.4)] transition-colors duration-150 hover:text-[#FFFFFF] py-[8px]">
-          Terms &amp; conditions
+        <a href={lp('/terms-of-service')} class="text-[12px] text-[rgba(255,255,255,0.4)] transition-colors duration-150 hover:text-[#FFFFFF] py-[8px]">
+          {t('footer.terms', lang)}
         </a>
-        <a href="/cookie-policy" class="text-[12px] text-[rgba(255,255,255,0.4)] transition-colors duration-150 hover:text-[#FFFFFF] py-[8px]">
-          Cookie policy
+        <a href={lp('/cookie-policy')} class="text-[12px] text-[rgba(255,255,255,0.4)] transition-colors duration-150 hover:text-[#FFFFFF] py-[8px]">
+          {t('footer.cookies', lang)}
         </a>
       </div>
     </div>

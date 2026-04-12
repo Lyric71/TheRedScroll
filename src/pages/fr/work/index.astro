@@ -1,0 +1,310 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+
+const caseStudies = [
+  {
+    title: 'Viessmann : comment le social a propulse les ventes en ligne en Chine',
+    category: 'eCommerce & Social',
+    platforms: ['Douyin', 'RedNote', 'WeCom'],
+    result: 'Croissance reguliere du chiffre d\'affaires en ligne, mois apres mois',
+    image: '/images/clients/Viessmann/Viessman-climate-solution.avif',
+    href: '/fr/work/viessmann',
+  },
+  {
+    title: 'Jaguar Land Rover : capter une audience plus jeune par le social',
+    category: 'Contenu & UGC',
+    platforms: ['Douyin', 'RedNote', 'WeChat'],
+    result: 'Repositionnement de la marque aupres des jeunes consommateurs du luxe',
+    image: '/images/clients/Jaguar/Jaguar-Land-Rover.avif',
+    href: '/fr/work/jaguar-land-rover',
+  },
+  {
+    title: 'JAC Motors : construire une communaute sociale pour un geant de l\'automobile chinois',
+    category: 'Communaute & Contenu IA',
+    platforms: ['WeChat', 'RedNote', 'Weibo'],
+    result: 'Une campagne olympique propulsee par l\'IA qui a depasse les frontieres chinoises',
+    image: '/images/clients/JAC/JAC-Wechat-4.jpg',
+    href: '/fr/work/jac-motors',
+  },
+  {
+    title: 'iGuzzini : comment le social a bati une marque de luxe en eclairage en Chine',
+    category: 'Luxe & eCommerce',
+    platforms: ['WeChat', 'RedNote', 'Weibo'],
+    result: 'D\'un nom B2B a une marque de luxe reconnue des consommateurs en 24 mois',
+    image: '/images/clients/iGuzzini/iguzzini4-1.png',
+    href: '/fr/work/iguzzini',
+  },
+  {
+    title: 'Camper : developper une marque de design en Chine',
+    category: 'Marque & Contenu',
+    platforms: ['WeChat', 'RedNote', 'Weibo'],
+    result: 'De 43K a 187K abonnes, +31 % de ventes en boutique en 18 mois',
+    image: '/images/clients/Camper/Camper-Case-Study-Hero.jpg',
+    href: '/fr/work/camper',
+  },
+  {
+    title: 'Mission Foods : lancer les chips de mais en Chine par le social',
+    category: 'Campagne & Social',
+    platforms: ['WeChat', 'RedNote', 'Weibo'],
+    result: 'D\'une categorie inconnue a une communaute en croissance grace au contenu permanent',
+    image: '/images/clients/MissionFoods/head-pic.jpg',
+    href: '/fr/work/mission-foods',
+  },
+  {
+    title: 'Marriott : une campagne Super Brand Day qui a genere des millions',
+    category: 'Campagne & eCommerce',
+    platforms: ['WeChat', 'Weibo', 'Tmall'],
+    result: 'Des millions de ventes sur Tmall et des centaines de milliers de nouveaux membres Bonvoy',
+    image: '/images/clients/Marriott/Marriot-campaign-SBD-KV.jpg',
+    href: '/fr/work/marriott',
+  },
+  {
+    title: 'Master Martini : federer une communaute de chefs a travers l\'Asie',
+    category: 'Communaute & Social',
+    platforms: ['Instagram', 'Facebook'],
+    result: 'D\'une marque B2B a la communaute de reference pour les chefs professionnels sur 5 marches',
+    image: '/images/clients/MasterMartini/MasterMartini1.webp',
+    href: '/fr/work/master-martini',
+  },
+  {
+    title: 'Blue Insurance : lancement digital du premier assureur en ligne de Hong Kong',
+    category: 'Site web & Campagne',
+    platforms: ['Web', 'Social Media'],
+    result: '10 000 abonnes le premier mois, 3 000+ inscriptions newsletter la premiere semaine',
+    image: '/images/clients/Blue/Blue Insurance 1.png',
+    href: '/fr/work/blue-insurance',
+  },
+  {
+    title: 'AGE 20\'s : la campagne Little Milk Brick en Chine',
+    category: 'Campagne & Contenu',
+    platforms: ['RedNote', 'Douyin'],
+    result: '3,87 M d\'impressions Douyin (4x l\'objectif), le surnom est devenu organique',
+    image: '/images/clients/Age20/Age20-Picture1-scaled.jpg',
+    href: '/fr/work/age20s',
+  },
+  {
+    title: 'Langnese : repositionner le premier miel allemand pour croitre en Chine',
+    category: 'Conseil & Strategie',
+    platforms: ['RedNote', 'Douyin', 'WeChat', 'Tmall'],
+    result: 'Un cadre de repositionnement en neuf piliers a ouvert de nouveaux canaux et de nouvelles audiences',
+    image: '/images/clients/Langnese/Langnese-Honey.png',
+    href: '/fr/work/langnese',
+  },
+];
+
+function shuffle<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+const shuffledStudies = shuffle(caseStudies);
+
+const categories = ['Tout', ...new Set(caseStudies.map((s) => s.category))];
+const allPlatforms = ['Tout', ...new Set(caseStudies.flatMap((s) => s.platforms))].sort((a, b) => a === 'Tout' ? -1 : b === 'Tout' ? 1 : a.localeCompare(b));
+---
+
+<PageLayout
+  title="Nos realisations | TheRedScroll"
+  description="Etudes de cas TheRedScroll. Des resultats concrets pour des marques internationales sur WeChat, RedNote, Douyin, Weibo et d'autres plateformes."
+  ogImage="/images/og/work.jpg"
+  lang="fr"
+>
+
+  <!-- Hero -->
+  <section class="pt-[96px] pb-[64px] max-[640px]:pt-[64px] max-[640px]:pb-[40px]">
+    <Container>
+      <div class="max-w-[680px]">
+        <SectionBar />
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">
+          Etudes de cas
+        </p>
+        <h1 class="text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[16px]">
+          Les resultats parlent d'eux-memes.
+        </h1>
+        <p class="text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] text-[var(--color-stone)]">
+          Des campagnes reelles. Des plateformes reelles. Des resultats concrets pour des marques internationales qui se developpent en Chine.
+        </p>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Filters -->
+  <section class="pb-[40px] max-[640px]:pb-[24px]">
+    <Container>
+      <!-- Service filter -->
+      <div class="mb-[16px]">
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-stone)] mb-[10px]">Service</p>
+        <div class="flex flex-wrap gap-[8px]" id="filter-category">
+          {categories.map((cat) => (
+            <button
+              type="button"
+              data-filter-category={cat}
+              class:list={[
+                'filter-btn text-[13px] font-medium leading-[1] px-[16px] py-[8px] max-[640px]:py-[12px] min-h-[44px] max-[640px]:min-h-0 rounded-[6px] cursor-pointer transition-[background,color,border-color] duration-150',
+                cat === 'Tout'
+                  ? 'bg-[var(--color-ink)] text-[#FFFFFF] border border-[var(--color-ink)]'
+                  : 'bg-transparent text-[var(--color-ink)] border border-[rgba(0,0,0,0.15)] hover:border-[var(--color-ink)]'
+              ]}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
+      </div>
+      <!-- Platform filter -->
+      <div>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-stone)] mb-[10px]">Plateforme</p>
+        <div class="flex flex-wrap gap-[8px]" id="filter-platform">
+          {allPlatforms.map((plat) => (
+            <button
+              type="button"
+              data-filter-platform={plat}
+              class:list={[
+                'filter-btn text-[13px] font-medium leading-[1] px-[16px] py-[8px] max-[640px]:py-[12px] min-h-[44px] max-[640px]:min-h-0 rounded-[6px] cursor-pointer transition-[background,color,border-color] duration-150',
+                plat === 'Tout'
+                  ? 'bg-[var(--color-ink)] text-[#FFFFFF] border border-[var(--color-ink)]'
+                  : 'bg-transparent text-[var(--color-ink)] border border-[rgba(0,0,0,0.15)] hover:border-[var(--color-ink)]'
+              ]}
+            >
+              {plat}
+            </button>
+          ))}
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Case study grid -->
+  <section class="pb-[96px] max-[640px]:pb-[64px]">
+    <Container>
+      <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[32px] max-[640px]:gap-[24px]" id="case-study-grid">
+        {shuffledStudies.map((study) => (
+          <a
+            href={study.href}
+            data-category={study.category}
+            data-platforms={study.platforms.join(',')}
+            class="case-study-card group block bg-[var(--color-rice-paper)] rounded-[8px] overflow-hidden border border-[rgba(0,0,0,0.08)] transition-[border-color] duration-150 ease-in-out hover:border-[rgba(0,0,0,0.15)]"
+          >
+            <!-- Image -->
+            <div class="w-full aspect-[16/10] bg-[var(--color-warm-gray)] flex items-center justify-center overflow-hidden">
+              {study.image && study.href !== '#' ? (
+                <img src={study.image} alt={study.title} class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              ) : (
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(0,0,0,0.15)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                  <circle cx="8.5" cy="8.5" r="1.5"/>
+                  <polyline points="21,15 16,10 5,21"/>
+                </svg>
+              )}
+            </div>
+            <!-- Content -->
+            <div class="p-[24px] max-[640px]:p-[20px]">
+              <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">
+                {study.category}
+              </p>
+              <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">
+                {study.title}
+              </h3>
+              <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)] mb-[16px]">
+                {study.result}
+              </p>
+              <div class="flex flex-wrap gap-[8px]">
+                {study.platforms.map((platform) => (
+                  <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[rgba(0,0,0,0.04)] px-[10px] py-[4px] rounded-[4px]">
+                    {platform}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+      <!-- Empty state -->
+      <p id="no-results" class="hidden text-center text-[16px] font-normal leading-[1.6] text-[var(--color-stone)] py-[64px]">
+        Aucune etude de cas ne correspond aux filtres selectionnes.
+      </p>
+    </Container>
+  </section>
+
+  <!-- CTA -->
+  <section class="pb-[96px] max-[640px]:pb-[64px]">
+    <Container>
+      <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[48px] max-[640px]:p-[32px_20px] text-center">
+        <SectionHeading overline="A votre tour">Votre marque pourrait etre la prochaine etude de cas.</SectionHeading>
+        <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)] max-w-[500px] mx-auto mb-[32px]">
+          Perimetre fixe. Prix fixe. Des resultats mesurables.
+        </p>
+        <Button variant="primary" href="/fr/contact">Prendre rendez-vous</Button>
+      </div>
+    </Container>
+  </section>
+
+  <script>
+    const ACTIVE = 'bg-[var(--color-ink)] text-[#FFFFFF] border border-[var(--color-ink)]';
+    const INACTIVE = 'bg-transparent text-[var(--color-ink)] border border-[rgba(0,0,0,0.15)] hover:border-[var(--color-ink)]';
+
+    let activeCategory = 'Tout';
+    let activePlatform = 'Tout';
+
+    function setButtonState(btn: HTMLButtonElement, active: boolean) {
+      const add = active ? ACTIVE : INACTIVE;
+      const remove = active ? INACTIVE : ACTIVE;
+      remove.split(' ').forEach((c) => btn.classList.remove(c));
+      add.split(' ').forEach((c) => btn.classList.add(c));
+    }
+
+    function applyFilters() {
+      const cards = document.querySelectorAll<HTMLElement>('.case-study-card');
+      let visible = 0;
+
+      cards.forEach((card) => {
+        const cat = card.dataset.category ?? '';
+        const plats = (card.dataset.platforms ?? '').split(',');
+
+        const matchCat = activeCategory === 'Tout' || cat === activeCategory;
+        const matchPlat = activePlatform === 'Tout' || plats.includes(activePlatform);
+
+        if (matchCat && matchPlat) {
+          card.style.display = '';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      const noResults = document.getElementById('no-results');
+      if (noResults) {
+        noResults.classList.toggle('hidden', visible > 0);
+      }
+    }
+
+    document.querySelectorAll<HTMLButtonElement>('#filter-category button').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        activeCategory = btn.dataset.filterCategory ?? 'Tout';
+        document.querySelectorAll<HTMLButtonElement>('#filter-category button').forEach((b) => {
+          setButtonState(b, b.dataset.filterCategory === activeCategory);
+        });
+        applyFilters();
+      });
+    });
+
+    document.querySelectorAll<HTMLButtonElement>('#filter-platform button').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        activePlatform = btn.dataset.filterPlatform ?? 'Tout';
+        document.querySelectorAll<HTMLButtonElement>('#filter-platform button').forEach((b) => {
+          setButtonState(b, b.dataset.filterPlatform === activePlatform);
+        });
+        applyFilters();
+      });
+    });
+  </script>
+
+</PageLayout>

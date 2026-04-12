@@ -1,0 +1,416 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+import FaqAccordion from '../../../components/sections/FaqAccordion.astro';
+import GettingStarted from '../../../components/sections/GettingStarted.astro';
+
+
+const faqs = [
+  { q: 'Combien de temps dure la phase stratégique ?', a: 'Cela dépend du périmètre, mais en général deux à quatre semaines. Notre équipe fait cela au quotidien, les choses avancent vite.' },
+  { q: 'Travaillez-vous uniquement avec des marques nouvelles sur le marché ?', a: 'Non. Des marques qui entrent sur le marché, des marques déjà actives qui veulent de meilleurs résultats, et des marques locales qui développent leur présence sociale. Trois points de départ différents, même niveau d\'exigence.' },
+  { q: 'Peut-on commencer avec une seule plateforme ?', a: 'Oui, et honnêtement, c\'est ce que nous recommandons souvent. Concentrez votre budget, comprenez ce qui fonctionne, construisez une traction avant d\'élargir.' },
+  { q: 'Quelles plateformes couvrez-vous ?', a: 'WeChat, Douyin, RedNote et Weibo dans toutes les formules. Bilibili, Zhihu, Kuaishou, Toutiao, Meituan, Dianping, et neuf autres en option.' },
+  { q: 'Comment fonctionne la tarification ?', a: 'Périmètre fixe. Prix fixe. Liste claire de livrables et un tarif mensuel unique. Les dépenses publicitaires sont facturées séparément. Pas de frais cachés, pas de surprises.' },
+  { q: 'En quoi vos analyses diffèrent-elles d\'un tableau de bord classique ?', a: 'Suivi de performance multiplateforme, benchmarks concurrentiels, données d\'engagement par contenu. Et nous transformons tout cela en recommandations, pas seulement en graphiques.' },
+  { q: 'Gérez-vous aussi la création de contenu, ou uniquement la stratégie ?', a: 'La stratégie et les campagnes relèvent de ce service. La production de contenu (visuels, vidéo, rédaction) est un service distinct, mais les deux fonctionnent de concert. Votre stratégie définit ce qui est produit.' },
+  { q: 'À quelle fréquence la stratégie est-elle mise à jour ?', a: 'Au minimum chaque mois. Chaque trimestre, nous allons plus loin avec un recalibrage des KPI, un benchmark concurrentiel actualisé et une revue du mix de plateformes.' },
+  { q: 'Pouvez-vous travailler en parallèle de notre équipe interne ou de notre agence actuelle ?', a: 'Certains clients veulent que nous pilotions tout. D\'autres préfèrent recevoir la stratégie de notre part et gérer l\'exécution en interne. Quel que soit le mode de collaboration qui a du sens, nous nous adaptons.' },
+  { q: 'Et si nos comptes sociaux existent déjà mais ne performent pas ?', a: 'Nous commençons par un audit. Comptes existants, contenu, engagement, positionnement concurrentiel. Ensuite, nous construisons une stratégie révisée à partir de ce que les données montrent réellement. Parfois le problème vient du mix de plateformes. Parfois du contenu lui-même, de la fréquence de publication ou du timing. Nous identifions la faille avant de modifier quoi que ce soit.' },
+];
+
+const gettingStartedSteps = [
+  {
+    title: 'Appel découverte.',
+    description: 'Votre marque, vos objectifs, votre maturité sur le marché chinois. Pas de présentation commerciale. Juste les bonnes questions.',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
+  },
+  {
+    title: 'Proposition.',
+    description: 'Périmètre clair. Prix fixe. Chaque livrable détaillé. Vous savez ce que vous obtenez avant de vous engager.',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>',
+  },
+  {
+    title: 'En ligne sous 2 semaines.',
+    description: 'Stratégie livrée, campagnes configurées, premiers contenus publiés. Deux semaines après la signature du contrat.',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
+  },
+];
+---
+
+<PageLayout
+  title="Stratégie réseaux sociaux et campagnes en Chine | TheRedScroll"
+  description="Stratégie social media, gestion de campagnes et analytics pour les marques en Chine. Périmètre fixe. Prix fixe. Équipe sur place à Shanghai."
+  lang="fr"
+>
+
+  <!-- Hero — Dark hero banner -->
+  <section class="relative w-full overflow-hidden bg-[var(--color-ink)]">
+    <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/strategy-campaigns-hero.png')" aria-hidden="true"></div>
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+        Stratégie, campagnes et analytics
+      </p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        Le bon plan. Les bonnes plateformes. Les bons chiffres.
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        Nous étudions votre marché, construisons votre plan, pilotons vos campagnes et mesurons ce qui compte. Depuis Shanghai et Hong Kong.
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/fr/contact">Prendre rendez-vous</Button>
+        <Button variant="secondary-dark" href="#what-we-do">Ce que nous faisons</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem intro -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[48px] max-[640px]:gap-[32px] items-center">
+        <div>
+          <SectionBar />
+          <SectionHeading overline="Le problème">La plupart des marques publient sans plan.</SectionHeading>
+          <div class="flex flex-col gap-[24px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Elles choisissent les plateformes au feeling, publient quand elles ont le temps, et regardent les chiffres une fois par trimestre. Parfois moins.
+            </p>
+            <p>
+              Une vraie stratégie part d'un tout autre endroit. Quelles plateformes correspondent à votre secteur. Ce que font vos concurrents et où ils échouent. Quels formats de contenu génèrent des résultats. Et comment savoir si tout cela fonctionne.
+            </p>
+            <p>
+              Nous construisons des stratégies en partant de zéro. Des données de marché réelles. Une analyse concurrentielle réelle. Une connaissance réelle des plateformes. Puis nous pilotons les campagnes nous-mêmes, chaque jour.
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center justify-center">
+          <img src="/images/strategy-compass.svg" alt="Boussole sans aiguille, une stratégie sans direction" class="w-full max-w-[320px]" loading="lazy" />
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Why you need a platform-specific strategy -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        <!-- Hero card: 2 cols, 2 rows -->
+        <div class="relative col-span-2 row-span-2 max-[640px]:col-span-1 max-[640px]:row-span-1 bg-[#1A1A1A] rounded-[12px] p-[32px] max-[640px]:p-[20px] flex flex-col justify-between min-h-[320px] max-[640px]:min-h-0 overflow-hidden">
+          <svg class="absolute bottom-[-20px] right-[-20px] w-[260px] h-[260px] opacity-[0.06]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 6-8"/><circle cx="7" cy="16" r="1.5"/><circle cx="11" cy="8" r="1.5"/><circle cx="15" cy="12" r="1.5"/><circle cx="21" cy="4" r="1.5"/></svg>
+          <div class="relative z-[1]">
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Pourquoi c'est important</p>
+            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[16px]">Pourquoi vous avez besoin d'une stratégie par plateforme</h2>
+            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[400px]">Chaque plateforme a son propre public, ses propres formats et son propre algorithme. Une approche unique sur toutes gaspille votre budget et rate des opportunités.</p>
+          </div>
+          <div class="relative z-[1] mt-[24px]">
+            <Button variant="secondary-dark" href="#what-we-do">Ce que nous faisons</Button>
+          </div>
+        </div>
+        <!-- Cards -->
+        <div class="bg-[#F0F1F4] rounded-[10px] p-[24px] max-[640px]:p-[20px] relative overflow-hidden">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="8" height="8" rx="1"/><rect x="14" y="3" width="8" height="8" rx="1"/><rect x="2" y="13" width="8" height="8" rx="1"/><rect x="14" y="13" width="8" height="8" rx="1"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Chaque plateforme a ses propres règles</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">WeChat, Douyin, RedNote et Weibo ont des formats de contenu, des systèmes publicitaires et des attentes utilisateurs différents. Mauvaise plateforme, budget gaspillé.</p>
+        </div>
+        <div class="bg-[#1A1A1A] rounded-[12px] p-[24px] max-[640px]:p-[20px] relative overflow-hidden">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M7 7l3.5 9M17 7l-3.5 9"/><path d="M7 6h10"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">L'audience circule entre les plateformes</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.6)]">Les consommateurs se renseignent sur RedNote, suivent les marques sur WeChat, regardent les démonstrations produit sur Douyin et consultent les avis sur Weibo.</p>
+        </div>
+        <div class="bg-[#CC3333] rounded-[12px] p-[24px] max-[640px]:p-[20px] relative overflow-hidden">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">La concurrence est déjà en place</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.8)]">Vos concurrents publient chaque jour, lancent des campagnes d'influence et achètent de la publicité. Sans stratégie claire, vous dépensez à l'aveugle.</p>
+        </div>
+        <div class="bg-[#E8E0D8] rounded-[10px] p-[24px] max-[640px]:p-[20px] relative overflow-hidden">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Tout bouge très vite</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">Les algorithmes changent sans préavis. De nouveaux formats publicitaires apparaissent tous les quelques mois. Une stratégie qui marchait en janvier peut ne plus fonctionner en avril.</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- What we do — Market & Competitor Research -->
+  <section id="what-we-do" class="mt-[96px] max-[640px]:mt-[64px] scroll-mt-[76px]">
+    <Container>
+      <SectionBar />
+      <SectionHeading overline="Ce que nous faisons">Étude de marché et analyse concurrentielle</SectionHeading>
+
+      <div class="rounded-[12px] overflow-hidden mt-[24px]">
+        <img src="/images/what-we-do/strategy-campaigns.png" alt="L'équipe TheRedScroll analysant les données stratégiques et concurrentielles" class="w-full aspect-[5/2] max-[640px]:aspect-[16/10] object-cover" loading="lazy" decoding="async" />
+      </div>
+
+      <div class="grid grid-cols-3 max-[768px]:grid-cols-1 gap-[24px] -mt-[72px] max-[768px]:-mt-[32px] px-[32px] max-[768px]:px-[0px] relative z-[1]">
+        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
+          <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
+            <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Analyse concurrentielle</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Nous cartographions les comptes sociaux de vos concurrents sur chaque grande plateforme. Nombre d'abonnés, fréquence de publication, taux d'engagement, thématiques de contenu, stratégies publicitaires. Une analyse sur mesure, pas un rapport type.</p>
+        </div>
+        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
+          <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
+            <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          </div>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Sélection des plateformes</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Toutes les marques n'ont pas besoin de toutes les plateformes. La beauté commence sur RedNote. Le B2B passe par WeChat et Zhihu. La mode gagne en visibilité sur Douyin. Nous choisissons les bonnes pour votre secteur.</p>
+        </div>
+        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
+          <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
+            <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Stratégie de contenu et calendrier</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Piliers de contenu, cadre de messages, ton éditorial par plateforme. Sujets, formats, calendrier de publication. Chaque plateforme dispose de son propre calendrier, actualisé chaque mois en fonction des performances.</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Creative & Planning — dark section (1 per page) -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="bg-[#1A1A1A] rounded-[12px] p-[48px] max-[640px]:p-[32px_20px]">
+        <div class="grid grid-cols-[1fr_1px_1fr] max-[640px]:grid-cols-1 gap-[48px] max-[640px]:gap-[32px]">
+          <!-- Col 1: heading + intro -->
+          <div>
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">Création et planification</p>
+            <h2 class="text-[#FFFFFF] text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] mb-[24px]">La partie qui compte vraiment le plus.</h2>
+            <div class="flex flex-col gap-[24px]">
+              <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+                L'IA a transformé la production de contenu. Visuels, montages vidéo, ébauches de texte : tout peut être produit plus vite et à moindre coût qu'il y a encore un an. Les coûts de production tendent vers zéro.
+              </p>
+              <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+                Ce changement rend la planification créative plus importante. Pas moins. Quand n'importe qui peut produire du contenu en masse, les marques qui gagnent sont celles qui ont de meilleures idées et une direction créative plus affûtée. L'asset n'est plus la partie difficile. Savoir quoi produire, pourquoi c'est pertinent et comment tout s'articule : voilà le vrai défi. Et c'est encore un travail humain.
+              </p>
+            </div>
+          </div>
+          <!-- Vertical separator -->
+          <div class="flex items-center max-[640px]:hidden">
+            <div class="w-[1px] h-[60%] bg-[var(--color-vermillion)]"></div>
+          </div>
+          <!-- Col 2: service details -->
+          <div class="flex flex-col gap-[32px]">
+            <div>
+              <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Direction créative</h3>
+              <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+                Nous développons des briefs créatifs pour chaque campagne. Direction visuelle, ton, spécifications de format, références natives à la plateforme. Chaque brief est construit autour de ce qui performe réellement sur la plateforme cible. Nous étudions les contenus les plus performants dans votre catégorie, sélectionnons des références parmi les publications tendances et analysons quel contenu KOL (Key Opinion Leader) génère de l'engagement en ce moment.
+              </p>
+            </div>
+            <div>
+              <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Orchestration de campagnes</h3>
+              <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+                Une campagne n'est pas une collection de publications. C'est une action coordonnée entre contenu, influenceurs, médias payants et engagement communautaire. Nos social media managers coordonnent les calendriers de publication des KOL avec les sorties de contenu de marque, alignent le paid media avec la dynamique organique, et réallouent les ressources en cours de campagne quand quelque chose décolle ou fait un flop.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Day-to-day + KPI + Analytics — service cards -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <SectionBar />
+      <SectionHeading overline="Exécution">Opérations quotidiennes et reporting</SectionHeading>
+
+      <!-- Horizontal column accordion -->
+      <div class="flex gap-[2px] mt-[24px] h-[400px] max-[640px]:flex-col max-[640px]:h-auto" data-col-accordion>
+
+        <div class="col-panel is-active rounded-l-[10px] max-[640px]:rounded-l-none max-[640px]:rounded-t-[10px]" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">Gestion des comptes</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Gestion des comptes</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Nous gérons le travail quotidien sur WeChat, Douyin, RedNote, Weibo et 14 autres plateformes. Publication de contenu, engagement communautaire, gestion des commentaires, veille des tendances. Vous n'avez pas besoin de recruter une équipe locale.</p>
+          </div>
+        </div>
+
+        <div class="col-panel" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">Campagnes et activations</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Campagnes et activations</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Campagnes saisonnières, lancements produit, activations événementielles et opérations multiplateformes. Brief clair, KPI définis, calendrier, bilan post-campagne.</p>
+          </div>
+        </div>
+
+        <div class="col-panel" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">Cadre de KPI et objectifs</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Cadre de KPI et objectifs</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Des objectifs mesurables dès le premier jour. Croissance des abonnés, taux d'engagement, vues vidéo, taux de clic, conversions. Les KPI sont liés aux résultats business. Pas aux métriques de vanité. Revue mensuelle, recalibrage trimestriel.</p>
+          </div>
+        </div>
+
+        <div class="col-panel rounded-r-[10px] max-[640px]:rounded-r-none max-[640px]:rounded-b-[10px]" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">Analytics et reporting</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Analytics et reporting</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Les rapports mensuels couvrent la croissance des abonnés, les taux d'engagement, la performance du contenu, l'efficacité des dépenses publicitaires et le benchmark concurrentiel. Suivi multiplateforme, données d'engagement par contenu et recommandations. Pas seulement des graphiques.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <style>
+        .col-panel {
+          position: relative;
+          flex: 0 0 56px;
+          background: var(--color-rice-paper);
+          cursor: pointer;
+          overflow: hidden;
+          transition: flex 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .col-panel.is-active {
+          flex: 1 1 0%;
+          cursor: default;
+        }
+
+        /* Vertical rotated label — visible when collapsed */
+        .col-label {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          opacity: 1;
+          transition: opacity 0.3s ease;
+        }
+        .col-panel.is-active .col-label {
+          opacity: 0;
+          pointer-events: none;
+        }
+        .col-label-text {
+          writing-mode: vertical-rl;
+          text-orientation: mixed;
+          transform: rotate(180deg);
+          font-size: 14px;
+          font-weight: 500;
+          color: var(--color-ink);
+          white-space: nowrap;
+          letter-spacing: 0.02em;
+        }
+
+        /* Expanded content */
+        .col-content {
+          position: absolute;
+          inset: 0;
+          padding: 32px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          opacity: 0;
+          transition: opacity 0.35s ease 0.15s;
+        }
+        .col-panel.is-active .col-content {
+          opacity: 1;
+        }
+
+        /* Vermillion left accent on active panel */
+        .col-panel.is-active::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 15%;
+          bottom: 15%;
+          width: 3px;
+          background: var(--color-vermillion);
+          border-radius: 0 2px 2px 0;
+        }
+
+        /* Hover state for collapsed panels */
+        .col-panel:not(.is-active):hover {
+          background: var(--color-warm-gray);
+        }
+
+        /* Mobile: stack vertically */
+        @media (max-width: 640px) {
+          .col-panel {
+            flex: 0 0 48px;
+          }
+          .col-panel.is-active {
+            flex: 0 0 auto;
+            min-height: 200px;
+          }
+          .col-label-text {
+            writing-mode: horizontal-tb;
+            transform: none;
+            font-size: 13px;
+          }
+          .col-content {
+            position: relative;
+            padding: 20px;
+          }
+          .col-panel.is-active::before {
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            height: auto;
+          }
+        }
+      </style>
+
+      <script>
+        document.querySelectorAll('[data-col-accordion]').forEach((accordion) => {
+          const panels = accordion.querySelectorAll('[data-col-panel]');
+          panels.forEach((panel) => {
+            panel.addEventListener('click', () => {
+              if (panel.classList.contains('is-active')) return;
+              panels.forEach((p) => p.classList.remove('is-active'));
+              panel.classList.add('is-active');
+            });
+          });
+        });
+      </script>
+    </Container>
+  </section>
+
+  <!-- Case study -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <a href="/fr/work/marriott" class="block bg-[var(--color-rice-paper)] rounded-[10px] p-[48px] max-[640px]:p-[32px_20px] group">
+        <div class="flex gap-[48px] max-[768px]:flex-col items-center">
+          <div class="flex-1 min-w-0">
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[12px]">Étude de cas</p>
+            <h3 class="text-[24px] max-[640px]:text-[20px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[12px]">Marriott : une campagne Super Brand Day qui a généré des millions</h3>
+            <p class="text-[15px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[20px]">Le premier Alibaba Super Brand Day de Marriott a généré des millions de ventes sur Tmall et des centaines de milliers de nouveaux membres Bonvoy en quelques jours.</p>
+            <span class="text-[14px] font-medium text-[var(--color-vermillion)] group-hover:underline">Lire l'étude de cas →</span>
+          </div>
+          <img
+            src="/images/clients/Marriott/Marriot-campaign-SBD-KV.jpg"
+            alt="Campagne Marriott Super Brand Day"
+            class="w-[45%] max-[768px]:w-full aspect-[16/10] object-cover rounded-[10px]"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </a>
+    </Container>
+  </section>
+
+  <GettingStarted
+    heading="Du premier appel aux campagnes en ligne sous deux semaines."
+    steps={gettingStartedSteps}
+    backgroundImage="/images/getting-started/strategy-campaigns.png"
+    crossLinks={[
+      { label: 'Production de contenu', href: '/fr/services/content-production' },
+      { label: 'Publicité', href: '/fr/services/advertising' },
+      { label: 'Marketing d\'influence', href: '/fr/services/influencer-marketing' },
+    ]}
+  />
+
+  <FaqAccordion faqs={faqs} subtitle="Tout ce qu'il faut savoir sur la stratégie et les campagnes avec TheRedScroll." />
+
+
+</PageLayout>

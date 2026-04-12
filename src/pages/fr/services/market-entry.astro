@@ -1,0 +1,321 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+import FaqAccordion from '../../../components/sections/FaqAccordion.astro';
+import GettingStarted from '../../../components/sections/GettingStarted.astro';
+
+
+const faqs = [
+  { q: 'Faut-il creer une entite locale pour commencer a vendre ?', a: 'Non. Le e-commerce transfrontalier permet de vendre via Douyin Shop, les Mini Programs WeChat et les boutiques RedNote sans creer de societe en Chine continentale. Il vous faudra une licence commerciale a Hong Kong ou a l\'etranger, ainsi qu\'un partenaire logistique disposant d\'un acces aux entrepots sous douane. Nous mettons tout cela en place pour vous.' },
+  { q: 'Quel budget faut-il prevoir ?', a: 'Une entree par les reseaux sociaux peut demarrer a partir de ¥15 000 a ¥30 000/mois, couvrant la creation des comptes, la production de contenu et l\'activation de KOC. Ajoutez ¥10 000 a ¥20 000/mois de publicite si vous souhaitez accelerer. A titre de comparaison, Tmall Global exige generalement plus de ¥100 000 en frais d\'installation et de depot avant meme la premiere vente.' },
+  { q: 'Faut-il renoncer completement a Tmall et JD ?', a: 'Non, pas definitivement. Ces deux plateformes sont redoutables une fois que votre marque beneficie d\'une reconnaissance et d\'une demande reguliere. Mais y lancer ses premiers pas sans presence sur les reseaux sociaux se traduit generalement par des depenses elevees et un faible retour. Construisez d\'abord votre notoriete via les canaux sociaux, puis etendez-vous aux marketplaces quand les chiffres le justifient.' },
+  { q: 'Au bout de combien de temps peut-on esperer des ventes ?', a: 'En vendant via Douyin Shop ou un Mini Program WeChat, les premieres commandes peuvent arriver sous 30 a 60 jours. Un volume recurrent se met generalement en place en 90 a 120 jours, au fur et a mesure que la bibliotheque de contenu et la base d\'avis se remplissent.' },
+  { q: 'Quelles categories fonctionnent le mieux pour une entree par les reseaux sociaux ?', a: 'Beaute, soins de la peau, complements alimentaires, agroalimentaire, mode, art de vivre. Tout ce qui est visuel, commentable et propice au storytelling gagne en traction plus vite sur RedNote et Douyin. Les produits B2B et industriels empruntent un autre chemin, generalement via WeChat et Zhihu. Certaines categories comme les cosmetiques, l\'alimentaire et les complements sante sont soumises a des exigences d\'enregistrement a l\'importation, ce qui peut ajouter 3 a 6 mois au calendrier. Nous le signalons des le depart.' },
+  { q: 'Pouvez-vous aider pour l\'enregistrement produit et la conformite ?', a: 'Nous couvrons le volet reseaux sociaux et commerce. Pour l\'enregistrement des produits (CFDA pour les cosmetiques, homologation des produits de sante, licences d\'importation alimentaire), nous travaillons avec des partenaires conformite specialises. Nous coordonnons le processus et vous informons d\'emblee des exigences propres a votre categorie.' },
+  { q: 'Et si notre produit est deja sur Tmall mais ne performe pas ?', a: 'En general, le probleme ne vient pas de la fiche produit elle-meme, mais de l\'absence de presence sociale pour y diriger du trafic. Nous auditons votre situation et recommandons le plus souvent d\'ajouter une couche sociale : avis sur RedNote, contenu sur Douyin, CRM sur WeChat. Les resultats sur les marketplaces tendent a s\'ameliorer quand les consommateurs peuvent trouver votre marque en dehors de la marketplace.' },
+  { q: 'Gerez-vous la logistique et l\'expedition ?', a: 'Pas directement. Nous travaillons avec des prestataires logistiques transfrontaliers et des operateurs d\'entrepots sous douane etablis. Nous prenons en charge la configuration des plateformes et du commerce. Eux s\'occupent de l\'expedition. Et nous assurons la coordination entre les deux pour que vous n\'ayez pas a jongler seul avec plusieurs prestataires.' },
+  { q: 'Comment les consommateurs chinois decouvrent-ils les marques etrangeres ?', a: 'Par les reseaux sociaux, massivement. Les donnees de 2025 montrent que 42 % des jeunes consommateurs cherchent d\'abord sur Douyin lorsqu\'ils s\'interessent a un produit, 30 % se rendent sur RedNote, et seulement 17 % commencent par Baidu. La decouverte se fait desormais dans les applications sociales, plus sur les moteurs de recherche.' },
+  { q: 'Peut-on vendre en RMB depuis l\'etranger ?', a: 'Oui, les plateformes gerent tout cela. Les consommateurs paient en RMB. Vous etes rembourse dans votre devise locale via le processus de reglement de la plateforme. Les Mini Programs WeChat et Douyin Shop prennent tous deux en charge ce fonctionnement.' },
+];
+
+const gettingStartedSteps = [
+  {
+    title: 'Appel decouverte.',
+    description: 'Votre marque, votre produit, votre degre de preparation pour la Chine. Pas de presentation commerciale. Juste les bonnes questions.',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
+  },
+  {
+    title: 'Plan d\'entree.',
+    description: 'Selection des plateformes, creation des comptes, strategie de contenu et infrastructure commerciale. Perimetre clair, prix fixe.',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>',
+  },
+  {
+    title: 'En ligne sous 30 jours.',
+    description: 'Comptes verifies, premiers contenus publies, infrastructure commerciale prete a recevoir des commandes.',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
+  },
+];
+---
+
+<PageLayout
+  title="Entree sur le marche chinois via le social commerce | TheRedScroll"
+  description="Entrez sur le marche chinois par le social commerce. Creation de comptes, localisation de marque, Douyin Shop, Mini Programs WeChat. Equipe sur place a Shanghai."
+  lang="fr"
+>
+
+  <!-- Hero — Dark hero banner -->
+  <section class="relative w-full overflow-hidden bg-[var(--color-ink)]">
+    <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/market-entry-hero.png')" aria-hidden="true"></div>
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+        Accompagnement entree sur le marche chinois
+      </p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        Mettre votre produit en ligne ne suffit pas. Si personne ne vous connait, personne n'achete.
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        Entrez sur le marche par les reseaux sociaux. Plus rapide, moins couteux et plus facile a tester qu'un lancement classique sur marketplace.
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/fr/contact">Prendre rendez-vous</Button>
+        <Button variant="secondary-dark" href="#what-we-do">Decouvrir nos services</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why social media comes first -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        <div class="relative col-span-2 row-span-2 max-[640px]:col-span-1 max-[640px]:row-span-1 bg-[#1A1A1A] rounded-[12px] p-[32px] max-[640px]:p-[20px] flex flex-col justify-between min-h-[320px] max-[640px]:min-h-0 overflow-hidden">
+          <svg class="absolute bottom-[-20px] right-[-20px] w-[260px] h-[260px] opacity-[0.06]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <div class="relative z-[1]">
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Le probleme</p>
+            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[16px]">La plupart des marques partent du mauvais endroit.</h2>
+            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[400px]">La plupart des marques pensent que l'entree sur le marche commence par Tmall ou JD. Il y a cinq ans, ca pouvait fonctionner. Aujourd'hui, ce n'est vraiment plus le cas. Les reseaux sociaux doivent passer en premier.</p>
+          </div>
+          <div class="relative z-[1] mt-[24px]">
+            <Button variant="secondary-dark" href="#what-we-do">Decouvrir nos services</Button>
+          </div>
+        </div>
+        <div class="relative overflow-hidden bg-[#F0F1F4] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Pas de preuve sociale, pas de ventes</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">Vous ouvrez une boutique Tmall. Vos produits sont en ligne. Mais personne ne cherche votre marque, parce que personne n'en a entendu parler. Zero avis. Zero commande.</p>
+        </div>
+        <div class="relative overflow-hidden bg-[#1A1A1A] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">La decouverte passe par le social</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.6)]">Les consommateurs consultent RedNote avant d'acheter. Ils cherchent des demos sur Douyin. Ils cherchent votre WeChat. Ils ne trouvent rien. Ils achetent chez une marque qui, elle, apparait.</p>
+        </div>
+        <div class="relative overflow-hidden bg-[#CC3333] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Les reseaux sociaux doivent passer en premier</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.8)]">Il faut que les gens sachent que votre marque existe avant d'investir dans une boutique phare Tmall. Le social construit la notoriete qui fait fonctionner les marketplaces.</p>
+        </div>
+        <div class="relative overflow-hidden bg-[#E8E0D8] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Les couts marketplace grimpent vite</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">Tmall Global exige generalement plus de ¥100 000 en frais d'installation et de depot avant la moindre vente. Une approche par les reseaux sociaux demarre a partir de ¥15 000/mois.</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Social commerce changes the equation — dark section -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="bg-[#1A1A1A] rounded-[12px] p-[48px] max-[640px]:p-[32px_20px]">
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">Social commerce</p>
+        <h2 class="text-[#FFFFFF] text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] mb-[16px]">Les plateformes sociales ne servent plus qu'a la notoriete. Elles vendent aussi.</h2>
+        <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5] max-w-[680px] mb-[32px]">
+          Vous pouvez entrer sur le marche par le social commerce d'abord. Tester vos produits, construire une audience, collecter de vraies donnees de ventes et prouver qu'il y a de la demande avant d'assumer les couts et la complexite d'une operation marketplace complete.
+        </p>
+        <div class="grid grid-cols-3 max-[640px]:grid-cols-1 gap-[24px]">
+          <div>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Douyin</h3>
+            <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+              3 500 milliards de RMB de ventes e-commerce en 2024. L'utilisateur decouvre un produit dans une video, clique sur un lien, achete sans quitter l'application. Troisieme canal e-commerce par volume de transactions.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">RedNote</h3>
+            <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+              Achats integres, boutiques de marque et live shopping. Un consommateur peut passer d'un avis de KOC (Key Opinion Consumer) au paiement en moins de 30 secondes.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Mini Programs WeChat</h3>
+            <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+              Des boutiques e-commerce completes a l'interieur de WeChat. Catalogue produit, paiement, suivi de commande, fidelisation. Le nombre de marchands Mini Shop actifs a double en 2024, avec un volume de transactions en hausse de 200 % sur un an.
+            </p>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- It's cheaper to start on social -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[48px] max-[640px]:p-[32px_20px]">
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[24px] text-center">Comparaison des couts</p>
+        <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[32px] max-[640px]:gap-[24px] text-center">
+          <div>
+            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[4px]">¥100 000+</p>
+            <p class="text-[13px] font-normal text-[var(--color-stone)] leading-[1.4]">Installation Tmall Global : caution, frais annuels, design de boutique et budget publicitaire minimum avant meme d'avoir vendu quoi que ce soit.</p>
+          </div>
+          <div>
+            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">¥15 000 a ¥30 000/mois</p>
+            <p class="text-[13px] font-normal text-[var(--color-stone)] leading-[1.4]">Entree par le social : creation de comptes, production de contenu et activation de KOC. Tester l'adequation produit-marche avec de vrais consommateurs et de vrais retours.</p>
+          </div>
+        </div>
+        <div class="max-w-[680px] mx-auto mt-[32px]">
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)] text-center">
+            Cela ne veut pas dire qu'il faut oublier les marketplaces. Juste que les reseaux sociaux doivent venir en premier. Ce sont eux qui construisent la notoriete et la confiance dont les ventes sur marketplace finissent par dependre.
+          </p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- What we do -->
+  <section id="what-we-do" class="mt-[96px] max-[640px]:mt-[64px] scroll-mt-[76px]">
+    <Container>
+      <SectionBar />
+      <SectionHeading overline="Nos services">Etude de marche et creation de comptes</SectionHeading>
+
+      <div class="rounded-[12px] overflow-hidden mt-[24px]">
+        <img src="/images/what-we-do/market-entry.png" alt="L'equipe TheRedScroll preparant une entree sur le marche avec un client" class="w-full aspect-[5/2] max-[640px]:aspect-[16/10] object-cover" loading="lazy" decoding="async" />
+      </div>
+
+      <div class="grid grid-cols-3 max-[768px]:grid-cols-1 gap-[24px] -mt-[72px] max-[768px]:-mt-[32px] px-[32px] max-[768px]:px-[0px] relative z-[1]">
+        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
+          <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
+            <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Etude de marche</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Nous etudions votre categorie avant toute chose. Qui vend des produits similaires, sur quelles plateformes, quels contenus fonctionnent, comment les prix sont positionnes et ou se trouvent les opportunites.</p>
+        </div>
+        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
+          <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
+            <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="16 11 18 13 22 9"/></svg>
+          </div>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Creation et verification des comptes</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Nous enregistrons et verifions vos comptes de marque sur toutes les plateformes pertinentes. WeChat, RedNote, Douyin, Weibo. Chacune a son propre processus de verification, entierement pris en charge par notre equipe.</p>
+        </div>
+        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
+          <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
+            <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Localisation de marque</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Choix du nom chinois, adaptation de l'identite visuelle, recommandations packaging et cadres de communication pour chaque plateforme. L'enregistrement de la marque demarre rapidement pendant que les activites sociales avancent.</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Social commerce integration — cards -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <SectionBar />
+      <SectionHeading overline="Commerce">Integration social commerce</SectionHeading>
+
+      <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px] mt-[24px]">
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
+          <img src="/images/platforms/douyin-services/douyin-shop.png" alt="Page produit Douyin Shop sur un smartphone" class="w-full aspect-[16/9] object-cover" loading="lazy" decoding="async" />
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Douyin Shop</h3>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Vente transfrontaliere sans entite locale. Les produits sont lies aux videos courtes et aux live streams, reduisant l'ecart entre decouverte et achat a presque rien.</p>
+          </div>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
+          <img src="/images/platforms/wechat-ecosystem/mini-programs.png" alt="Boutique Mini Program WeChat sur un smartphone" class="w-full aspect-[16/9] object-cover" loading="lazy" decoding="async" />
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Boutiques Mini Program WeChat</h3>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Votre propre vitrine a l'interieur de WeChat. Paiement transfrontalier, catalogue produit, gestion des commandes. Connectee a votre compte officiel et distribuable via des articles, des publicites et des QR codes.</p>
+          </div>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
+          <img src="/images/platforms/rednote-why/social-commerce.png" alt="Experience d'achat integree sur RedNote" class="w-full aspect-[16/9] object-cover" loading="lazy" decoding="async" />
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Boutiques integrees RedNote</h3>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Fiches produit directement liees a vos publications et au contenu KOL. Ideal pour les marques beaute, lifestyle et mode.</p>
+          </div>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
+          <img src="/images/platforms/additional-why/ecommerce-power.png" alt="Entrepot de logistique transfrontaliere" class="w-full aspect-[16/9] object-cover" loading="lazy" decoding="async" />
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Logistique transfrontaliere</h3>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Entrepots sous douane et prestataires logistiques transfrontaliers gerent l'expedition. Pas besoin d'entite locale ni de stock sur place pour commencer. Nous vous mettons en relation avec les bons prestataires selon votre categorie de produits et vos volumes d'expedition.</p>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Launch strategy -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[48px] max-[640px]:gap-[32px] items-center">
+        <div>
+          <SectionBar />
+          <SectionHeading overline="Execution">Strategie et execution du lancement</SectionHeading>
+          <div class="flex flex-col gap-[24px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Nous elaborons un plan de lancement sur 90 jours. Selection des plateformes, strategie de contenu, feuille de route d'activation KOC, repartition du budget publicitaire, indicateurs cles a chaque etape.
+            </p>
+            <p>
+              Puis nous executons. Production de contenu, gestion des comptes, coordination des influenceurs, campagnes publicitaires, reporting hebdomadaire. Tout ce qui doit se passer dans les trois premiers mois pour passer de zero a quelque chose de concret.
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center justify-center">
+          <svg class="w-full max-w-[320px]" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Outer circle -->
+            <circle cx="160" cy="160" r="140" stroke="#1A1A1A" stroke-width="1" stroke-dasharray="4 4" opacity="0.15"/>
+            <!-- Inner circle -->
+            <circle cx="160" cy="160" r="90" stroke="#1A1A1A" stroke-width="1" stroke-dasharray="4 4" opacity="0.1"/>
+            <!-- 90-day arc -->
+            <path d="M160 20 A140 140 0 0 1 300 160" stroke="#CC3333" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+            <!-- Milestone dots -->
+            <circle cx="160" cy="20" r="6" fill="#CC3333" opacity="0.8"/>
+            <circle cx="245" cy="62" r="6" fill="#CC3333" opacity="0.5"/>
+            <circle cx="300" cy="160" r="6" fill="#CC3333" opacity="0.3"/>
+            <!-- Center target -->
+            <circle cx="160" cy="160" r="8" fill="none" stroke="#1A1A1A" stroke-width="1.5" opacity="0.3"/>
+            <circle cx="160" cy="160" r="3" fill="#1A1A1A" opacity="0.3"/>
+            <!-- Connecting lines to center -->
+            <line x1="160" y1="26" x2="160" y2="152" stroke="#1A1A1A" stroke-width="0.5" stroke-dasharray="3 3" opacity="0.1"/>
+            <line x1="245" y1="62" x2="163" y2="157" stroke="#1A1A1A" stroke-width="0.5" stroke-dasharray="3 3" opacity="0.1"/>
+            <!-- Labels -->
+            <text x="160" y="10" text-anchor="middle" font-size="10" font-weight="500" fill="#1A1A1A" opacity="0.5">Jour 1</text>
+            <text x="268" y="56" text-anchor="middle" font-size="10" font-weight="500" fill="#1A1A1A" opacity="0.5">Jour 30</text>
+            <text x="320" y="155" text-anchor="end" font-size="10" font-weight="500" fill="#1A1A1A" opacity="0.5">Jour 90</text>
+          </svg>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Case study -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <a href="/fr/work/mission-foods" class="block bg-[var(--color-rice-paper)] rounded-[10px] p-[48px] max-[640px]:p-[32px_20px] group">
+        <div class="flex gap-[48px] max-[768px]:flex-col items-center">
+          <div class="flex-1 min-w-0">
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[12px]">Etude de cas</p>
+            <h3 class="text-[24px] max-[640px]:text-[20px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[12px]">Mission Foods : lancer les tortilla chips en Chine par les reseaux sociaux</h3>
+            <p class="text-[15px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[20px]">Une marque alimentaire mondiale a lance une categorie de snack inconnue en Chine. Du contenu social-first sur WeChat, RedNote et Weibo a construit une vraie communaute a partir de zero.</p>
+            <span class="text-[14px] font-medium text-[var(--color-vermillion)] group-hover:underline">Voir l'etude de cas →</span>
+          </div>
+          <img
+            src="/images/clients/MissionFoods/head-pic.jpg"
+            alt="Lancement des tortilla chips Mission Foods en Chine"
+            class="w-[45%] max-[768px]:w-full aspect-[16/10] object-cover rounded-[10px]"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </a>
+    </Container>
+  </section>
+
+  <GettingStarted
+    heading="De zero a une presence sociale active en 30 jours."
+    steps={gettingStartedSteps}
+    backgroundImage="/images/getting-started/market-entry.png"
+    crossLinks={[
+      { label: 'Strategie et campagnes', href: '/fr/services/strategy-campaigns' },
+      { label: 'Production de contenu', href: '/fr/services/content-production' },
+      { label: 'CRM et domaine prive', href: '/fr/services/crm-private-domain' },
+    ]}
+  />
+
+  <FaqAccordion faqs={faqs} subtitle="Tout ce que vous devez savoir sur l'entree sur le marche chinois avec TheRedScroll." />
+
+
+</PageLayout>

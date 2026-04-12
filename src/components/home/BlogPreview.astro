@@ -3,8 +3,17 @@ import Container from '../ui/Container.astro';
 import SectionBar from '../ui/SectionBar.astro';
 import SectionHeading from '../ui/SectionHeading.astro';
 import Button from '../ui/Button.astro';
+import type { Lang } from '../../i18n/config';
+import { localizedPath } from '../../i18n/config';
 
 import { getCollection } from 'astro:content';
+
+interface Props {
+  lang?: Lang;
+}
+
+const { lang = 'en' } = Astro.props;
+const lp = (path: string) => localizedPath(path, lang);
 
 const allPosts = await getCollection('blog');
 const posts = allPosts
@@ -14,10 +23,25 @@ const posts = allPosts
     category: post.data.category,
     title: post.data.title,
     readingTime: `${Math.ceil(post.body!.split(/\s+/).length / 200)} min`,
-    date: new Date(post.data.publishDate).toLocaleDateString('en-US', { month: 'long', year: 'numeric' }),
-    slug: `/insights/${post.id}`,
+    date: new Date(post.data.publishDate).toLocaleDateString(
+      lang === 'fr' ? 'fr-FR' : 'en-US',
+      { month: 'long', year: 'numeric' }
+    ),
+    slug: lp(`/insights/${post.id}`),
     featuredImage: post.data.featuredImage,
   }));
+
+const sectionText = lang === 'fr' ? {
+  overline: 'Publications',
+  heading: 'Ce que nous ecrivons en ce moment.',
+  readingLabel: 'de lecture',
+  cta: 'Lire plus de publications',
+} : {
+  overline: 'Insights',
+  heading: 'What we\'re writing about.',
+  readingLabel: 'of reading',
+  cta: 'Read more insights',
+};
 ---
 
 <section class="mt-[64px] max-[640px]:mt-[40px] pb-[96px] max-[640px]:pb-[64px]">
@@ -26,8 +50,8 @@ const posts = allPosts
       <div class="flex justify-center mb-[12px]">
         <SectionBar />
       </div>
-      <SectionHeading overline="Insights">
-        What we're writing about.
+      <SectionHeading overline={sectionText.overline}>
+        {sectionText.heading}
       </SectionHeading>
     </div>
 
@@ -47,7 +71,7 @@ const posts = allPosts
               {post.title}
             </h3>
             <p class="text-[12px] text-[#5C5C5C] font-normal leading-[1.4]">
-              {post.readingTime} of reading <span class="mx-[6px] text-[#E8E0D8]">|</span> {post.date}
+              {post.readingTime} {sectionText.readingLabel} <span class="mx-[6px] text-[#E8E0D8]">|</span> {post.date}
             </p>
           </div>
         </a>
@@ -55,7 +79,7 @@ const posts = allPosts
     </div>
 
     <div class="mt-[32px] text-center">
-      <Button variant="secondary" href="/insights">Read more insights</Button>
+      <Button variant="secondary" href={lp('/insights')}>{sectionText.cta}</Button>
     </div>
   </Container>
 </section>

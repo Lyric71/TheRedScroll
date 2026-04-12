@@ -1,0 +1,250 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+
+const services = ['Campagne', 'eCommerce', 'Influenceur / KOL', 'Livestream', 'Media', 'Social'];
+const platforms = ['WeChat', 'RedNote', 'Weibo'];
+---
+
+<PageLayout
+  title="Mission Foods : etude de cas social media en Chine | TheRedScroll"
+  description="Comment Mission Foods a lance les chips de mais en Chine via WeChat, RedNote et Weibo. Campagnes sociales Gen Z, contenu d'accords culinaires et croissance communautaire."
+  ogImage="/images/clients/MissionFoods/head-pic.jpg"
+  lang="fr"
+>
+
+  <!-- Hero -->
+  <section class="relative w-full min-h-[600px] max-[640px]:min-h-[480px] overflow-hidden">
+    <div
+      class="absolute inset-0 bg-cover bg-center bg-fixed max-[640px]:bg-scroll"
+      style="background-image: url('/images/clients/MissionFoods/head-pic.jpg')"
+      aria-hidden="true"
+    ></div>
+    <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.72]" aria-hidden="true"></div>
+
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+        Etude de cas
+      </p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        Mission Foods : lancer les chips de mais en Chine par le social.
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        Mission Foods devait faire decouvrir les chips de mais a des consommateurs chinois qui n'en avaient jamais goute. Nous avons bati une strategie sociale qui a installe une categorie de snack inconnue.
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/fr/contact">Prendre rendez-vous</Button>
+        <Button variant="secondary-dark" href="#case-study">Lire l'etude de cas</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meta bar -->
+  <section class="border-b border-[rgba(0,0,0,0.08)]">
+    <Container>
+      <div class="flex flex-wrap gap-[32px] max-[640px]:gap-[20px] py-[24px]">
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Le client</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">Mission Foods</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Secteur</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">Agroalimentaire / Grande consommation</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Services</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {services.map((s) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{s}</span>
+            ))}
+          </div>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Plateformes</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {platforms.map((p) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{p}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Case study content -->
+  <section id="case-study" class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <!-- Le client -->
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="Le client">Une marque mondiale qui lance une categorie de snack inconnue en Chine.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Mission Foods est une marque mondiale d'alimentation mexicaine et l'un des plus grands producteurs de tortillas au monde. En Chine, ils lançaient les chips de mais. Une marque solide a l'echelle internationale, mais les chips de mais n'existent tout simplement pas dans les habitudes chinoises.
+            </p>
+            <p>
+              La plupart des consommateurs n'en avaient jamais goute. Beaucoup n'en avaient jamais entendu parler. Et la cible, c'etait la Gen Z.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- Social screenshots -->
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <div class="flex justify-center gap-[16px] overflow-x-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] max-[640px]:justify-start pb-[8px] scrollbar-hide">
+      <img
+        src="/images/clients/MissionFoods/1-1.jpg"
+        alt="Contenu social Mission Foods montrant des accords culinaires avec chips de mais sur les plateformes chinoises"
+        class="w-[340px] max-[640px]:w-[280px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src="/images/clients/MissionFoods/1-2.jpg"
+        alt="Contenu de campagne snacking Gen Z de Mission Foods sur RedNote et WeChat"
+        class="w-[340px] max-[640px]:w-[280px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <Container>
+      <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+        Contenu social Mission Foods sur WeChat, Weibo et RedNote. Campagnes d'accords culinaires et moments snacking Gen Z.
+      </p>
+    </Container>
+  </section>
+
+  <!-- Notre intervention -->
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="Notre intervention">Rendre les chips de mais locales, pas etrangeres.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Nous avons mene des campagnes sociales et du contenu permanent sur WeChat, Weibo et RedNote. Toute la strategie reposait sur un principe : les chips de mais ne fonctionneraient en Chine que le jour ou elles cesseraient de paraitre etrangeres.
+            </p>
+          </div>
+        </div>
+
+        <!-- Food pairing -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Du contenu d'accords culinaires qui repondait a la vraie question</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Nous avons montre les chips de mais aux cotes de plats chinois. Sauces d'accompagnement, compagnon de fondue chinoise, recettes mariant le croquant des chips a des saveurs chinoises familieres. Cela repondait a la question que chaque consommateur se posait : comment est-ce qu'on mange ça, concretement ?
+            </p>
+            <p>
+              Les accords paraissaient naturels et respectaient la culture culinaire locale. C'est ce qui les a rendus efficaces.
+            </p>
+          </div>
+        </div>
+
+        <!-- Gen Z -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Concu autour des moments snacking de la Gen Z</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Soirees decontractees, envies nocturnes, partage entre amis. Ludique, rapide, visuel. Le genre de contenu que la Gen Z enregistre et envoie dans les conversations de groupe. Pas centre sur la marque. Centre sur le snack.
+            </p>
+          </div>
+        </div>
+
+        <!-- KOLs -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Les KOL RedNote ont montre le produit dans la vraie vie</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              De vraies cuisines, de vrais moments de grignotage, des reactions authentiques. Le contenu KOC a ajoute un volume organique et a contribue a normaliser les chips de mais comme un produit que les gens achetent vraiment.
+            </p>
+          </div>
+        </div>
+
+        <!-- Halloween -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">La campagne Halloween a ete le temps fort</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Du contenu thematique presentant les chips de mais comme le snack de soiree par excellence. Visuels de costumes, plateaux d'aperitifs, mises en scene de fetes. Le timing etait ideal. Halloween prend de l'ampleur rapidement chez la Gen Z chinoise, et les chips de mais s'y integraient naturellement.
+            </p>
+            <p>
+              La campagne a provoque un pic marque de nouveaux abonnes et d'engagement sur les trois plateformes.
+            </p>
+          </div>
+        </div>
+
+        <!-- WeChat -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">WeChat a assure la continuite entre les campagnes</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Recettes, nouveautes produit, promotions saisonnieres. Du contenu regulier qui maintient l'attention d'une audience meme quand aucune campagne majeure ne tourne.
+            </p>
+          </div>
+        </div>
+
+        <!-- Ground team callout -->
+        <div class="mb-[64px] max-[640px]:mb-[48px] bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[32px] max-[640px]:p-[20px]">
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            L'ensemble a ete produit depuis la Chine par notre equipe. Locuteurs natifs, contenu adapte culturellement, revues hebdomadaires sur les performances.
+          </p>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- Les resultats -->
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="Les resultats">Les temps forts ont compte. Ce qui s'est passe entre eux a compte davantage.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              La campagne Halloween a genere les meilleurs chiffres, avec une croissance des abonnes et un engagement au-dessus des references precedentes.
+            </p>
+            <p>
+              Ce qui a compte davantage, c'est ce qui s'est passe entre les temps forts. Le contenu permanent a fait grandir l'audience semaine apres semaine. Recettes, offres, idees snacking. Les gens continuaient a s'abonner, continuaient a interagir.
+            </p>
+            <p>
+              Mission Foods est passe du lancement d'un produit inconnu a la construction d'une vraie communaute autour de celui-ci. C'est ce que le social accomplit quand le contenu correspond vraiment au marche.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- CTA -->
+  <section class="pb-[96px] max-[640px]:pb-[64px]">
+    <Container>
+      <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[48px] max-[640px]:p-[32px] text-center">
+        <SectionHeading overline="A votre tour">Vous souhaitez lancer un produit sur les plateformes sociales chinoises ?</SectionHeading>
+        <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)] max-w-[500px] mx-auto mb-[32px]">
+          Perimetre fixe. Prix fixe. Equipe sur place.
+        </p>
+        <Button variant="primary" href="/fr/contact">Prendre rendez-vous</Button>
+      </div>
+    </Container>
+  </section>
+
+  <style>
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+
+</PageLayout>

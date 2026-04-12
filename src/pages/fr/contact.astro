@@ -1,0 +1,199 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Contact | TheRedScroll"
+  description="Contactez TheRedScroll. Prenez rendez-vous ou parlez-nous de votre projet. Bureaux a Shanghai et Hong Kong."
+  hideFooterCta={true}
+  lang="fr"
+>
+  <main class="pt-[60px] max-[640px]:pt-[52px]">
+
+    <!-- Contact: dark section with info + form -->
+    <section class="relative w-full bg-[#1A1A1A] py-[80px] max-[640px]:py-[48px] px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] overflow-hidden">
+      <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero/contact-bg.png')" aria-hidden="true"></div>
+      <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.75]" aria-hidden="true"></div>
+      <div class="relative z-[1] max-w-[1200px] mx-auto">
+        <!-- Title -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">Contact</p>
+          <h1 class="text-[#FFFFFF] text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] mb-[8px]">
+            Parlons du developpement de votre marque en Chine.
+          </h1>
+          <p class="text-[rgba(255,255,255,0.6)] text-[16px] font-normal leading-[1.6] max-w-[480px]">
+            Prenez rendez-vous, posez une question ou presentez-nous votre projet. Nous repondons sous un jour ouvre.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-[1fr_1fr] max-[1024px]:grid-cols-1 gap-[64px] max-[640px]:gap-[48px] items-start">
+
+          <!-- Left: Contact form card -->
+          <div class="bg-[#FFFFFF] rounded-[10px] p-[32px] max-[640px]:p-[20px] max-[1024px]:order-1">
+            <h2 class="text-[18px] text-[#1A1A1A] font-medium leading-[1.3] mb-[24px]">Parlez-nous de votre projet</h2>
+
+            <form id="contact-form" class="flex flex-col gap-[16px]">
+              <!-- Name row -->
+              <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[12px]">
+                <div>
+                  <label class="block text-[13px] font-normal text-[#5C5C5C] mb-[4px]">Prenom <span class="text-[#CC3333]">*</span></label>
+                  <input type="text" name="firstName" required class="block w-full h-[44px] px-[12px] text-[14px] font-normal text-[#1A1A1A] bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[6px] outline-none transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)] focus:border-[#1A1A1A] placeholder:text-[#5C5C5C] placeholder:opacity-60" placeholder="Prenom" />
+                </div>
+                <div>
+                  <label class="block text-[13px] font-normal text-[#5C5C5C] mb-[4px]">Nom <span class="text-[#CC3333]">*</span></label>
+                  <input type="text" name="lastName" required class="block w-full h-[44px] px-[12px] text-[14px] font-normal text-[#1A1A1A] bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[6px] outline-none transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)] focus:border-[#1A1A1A] placeholder:text-[#5C5C5C] placeholder:opacity-60" placeholder="Nom" />
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div>
+                <label class="block text-[13px] font-normal text-[#5C5C5C] mb-[4px]">Adresse e-mail <span class="text-[#CC3333]">*</span></label>
+                <input type="email" name="email" required class="block w-full h-[44px] px-[12px] text-[14px] font-normal text-[#1A1A1A] bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[6px] outline-none transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)] focus:border-[#1A1A1A] placeholder:text-[#5C5C5C] placeholder:opacity-60" placeholder="vous@entreprise.com" />
+              </div>
+
+              <!-- Company -->
+              <div>
+                <label class="block text-[13px] font-normal text-[#5C5C5C] mb-[4px]">Entreprise <span class="text-[#CC3333]">*</span></label>
+                <input type="text" name="company" required class="block w-full h-[44px] px-[12px] text-[14px] font-normal text-[#1A1A1A] bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[6px] outline-none transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)] focus:border-[#1A1A1A] placeholder:text-[#5C5C5C] placeholder:opacity-60" placeholder="Nom de l'entreprise" />
+              </div>
+
+              <!-- Website -->
+              <div>
+                <label class="block text-[13px] font-normal text-[#5C5C5C] mb-[4px]">Site web</label>
+                <input type="url" name="website" class="block w-full h-[44px] px-[12px] text-[14px] font-normal text-[#1A1A1A] bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[6px] outline-none transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)] focus:border-[#1A1A1A] placeholder:text-[#5C5C5C] placeholder:opacity-60" placeholder="https://votreentreprise.com" />
+              </div>
+
+              <!-- Message -->
+              <div>
+                <label class="block text-[13px] font-normal text-[#5C5C5C] mb-[4px]">Parlez-nous de votre projet <span class="text-[#CC3333]">*</span></label>
+                <textarea name="message" required rows="5" class="block w-full px-[12px] py-[12px] text-[14px] font-normal text-[#1A1A1A] bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[6px] outline-none transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)] focus:border-[#1A1A1A] placeholder:text-[#5C5C5C] placeholder:opacity-60 resize-vertical leading-[1.5] min-h-[120px]" placeholder="Quelles plateformes vous interessent ? Quels sont vos objectifs en Chine ?"></textarea>
+              </div>
+
+              <!-- Honeypot — hidden from humans, bots fill it -->
+              <div class="absolute opacity-0 h-0 w-0 overflow-hidden" aria-hidden="true" tabindex="-1">
+                <label for="website_url">Website URL</label>
+                <input type="text" name="website_url" id="website_url" autocomplete="off" tabindex="-1" />
+              </div>
+
+              <!-- Captcha -->
+              <div>
+                <label id="captcha-label" class="block text-[13px] font-normal text-[#5C5C5C] mb-[4px]"></label>
+                <input type="text" name="captcha" id="captcha-input" required inputmode="numeric" class="block w-full h-[44px] px-[12px] text-[14px] font-normal text-[#1A1A1A] bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[6px] outline-none transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)] focus:border-[#1A1A1A] placeholder:text-[#5C5C5C] placeholder:opacity-60" placeholder="Votre reponse" />
+                <input type="hidden" name="captcha_answer" id="captcha-answer" />
+              </div>
+
+              <!-- Submit -->
+              <div class="flex justify-end mt-[8px]">
+                <button type="submit" id="submit-btn" class="inline-flex items-center justify-center h-[44px] px-[28px] text-[14px] font-medium leading-none text-[#FFFFFF] bg-[#CC3333] rounded-[6px] border-none cursor-pointer transition-[background] duration-150 hover:bg-[#B02D2D] active:scale-[0.98]">
+                  Envoyer le message
+                </button>
+              </div>
+
+              <!-- Status message -->
+              <div id="form-status" class="hidden text-[13px] font-normal leading-[1.5] mt-[8px]"></div>
+            </form>
+          </div>
+
+          <!-- Right: Contact info -->
+          <div class="max-[1024px]:order-2">
+            <!-- Email -->
+            <div class="mb-[32px]">
+              <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333] mb-[8px]">E-mail</p>
+              <a href="mailto:hello@beyondbordergroup.com" class="text-[16px] text-[#FFFFFF] font-medium transition-colors duration-150 hover:text-[rgba(255,255,255,0.6)] break-all">
+                hello@beyondbordergroup.com
+              </a>
+            </div>
+
+            <!-- Response time -->
+            <div class="mb-[32px]">
+              <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333] mb-[8px]">Delai de reponse</p>
+              <p class="text-[14px] text-[#FFFFFF] font-normal leading-[1.6]">
+                Sous 24 heures, du lundi au vendredi
+              </p>
+            </div>
+
+            <!-- Shanghai office -->
+            <div class="mb-[32px]">
+              <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333] mb-[8px]">Shanghai, Chine</p>
+              <p class="text-[14px] text-[#FFFFFF] font-normal leading-[1.6]">
+                Trinity Plaza, 19e etage, Changshou Road 868, district de Putuo, Shanghai, Chine
+              </p>
+              <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal leading-[1.6] mt-[4px]">
+                中港汇大厦, 上海市普陀区长寿路868号19楼
+              </p>
+            </div>
+
+            <!-- Hong Kong office -->
+            <div>
+              <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333] mb-[8px]">Hong Kong</p>
+              <p class="text-[14px] text-[#FFFFFF] font-normal leading-[1.6]">
+                806 Capitol Center, 5-19 Jardine's Bazaar, Causeway Bay, Hong Kong
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+</BaseLayout>
+
+<script>
+  const form = document.getElementById('contact-form') as HTMLFormElement;
+  const status = document.getElementById('form-status');
+  const submitBtn = document.getElementById('submit-btn');
+  const captchaLabel = document.getElementById('captcha-label');
+  const captchaAnswer = document.getElementById('captcha-answer') as HTMLInputElement;
+
+  function generateCaptcha() {
+    const a = Math.floor(Math.random() * 9) + 1;
+    const b = Math.floor(Math.random() * 9) + 1;
+    if (captchaLabel) captchaLabel.textContent = `Combien font ${a} + ${b} ? *`;
+    if (captchaAnswer) captchaAnswer.value = String(a + b);
+  }
+
+  generateCaptcha();
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (!status || !submitBtn) return;
+
+    submitBtn.textContent = 'Envoi en cours...';
+    submitBtn.setAttribute('disabled', 'true');
+
+    const data = new FormData(form);
+    const body = {
+      name: `${data.get('firstName')} ${data.get('lastName')}`,
+      email: data.get('email'),
+      company: data.get('company'),
+      message: `Website: ${data.get('website') || 'N/A'}\n\n${data.get('message')}`,
+      honeypot: data.get('website_url'),
+      captcha: data.get('captcha'),
+      captchaAnswer: data.get('captcha_answer'),
+    };
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body),
+      });
+
+      if (res.ok) {
+        window.location.href = '/fr/thank-you';
+        return;
+      } else {
+        const err = await res.json();
+        status.textContent = err.error || 'Une erreur est survenue. Veuillez reessayer.';
+        status.className = 'text-[13px] font-normal leading-[1.5] mt-[8px] text-[#CC3333]';
+      }
+    } catch {
+      status.textContent = 'Erreur de connexion. Verifiez votre reseau et reessayez.';
+      status.className = 'text-[13px] font-normal leading-[1.5] mt-[8px] text-[#CC3333]';
+    }
+
+    submitBtn.textContent = 'Envoyer le message';
+    submitBtn.removeAttribute('disabled');
+  });
+</script>

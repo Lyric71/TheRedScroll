@@ -1,0 +1,581 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+
+const stats = [
+  { label: 'Utilisateurs actifs mensuels', value: '567M', image: '/images/platforms/weibo-stats/monthly-active-users.png' },
+  { label: 'Utilisateurs actifs quotidiens', value: '252M', image: '/images/platforms/weibo-stats/daily-active-users.png' },
+  { label: 'Utilisation mobile', value: '95%', image: '/images/platforms/weibo-stats/mobile-usage.png' },
+  { label: 'Revenus publicitaires (2025)', value: '$1.5B', image: '/images/platforms/weibo-stats/ad-revenue.png' },
+  { label: 'Tranche d\'age principale (25-34)', value: '42%', image: '/images/platforms/weibo-stats/age-group.png' },
+  { label: 'Publications quotidiennes', value: '100M+', image: '/images/platforms/weibo-stats/daily-posts.png' },
+  { label: 'Repartition par genre (femmes)', value: '51%', image: '/images/platforms/weibo-stats/gender-split.png' },
+];
+
+const ecosystem = [
+  {
+    name: 'Notoriete et relations presse',
+    chineseName: '品牌曝光',
+    description: 'Rien en Chine ne genere une attention nationale plus vite qu\'une tendance Weibo. Lancements produits, amplification presse, campagnes evenementielles, gestion de crise.',
+    image: '/images/platforms/weibo-ecosystem/mass-awareness.png',
+    bg: '#F7F2EE',
+    iconBg: '#E8E0D8',
+    textColor: '#1A1A1A',
+    descColor: '#5C5C5C',
+    linkColor: '#CC3333',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>`,
+  },
+  {
+    name: 'Campagnes de sujets tendance',
+    chineseName: '热搜营销',
+    description: 'Surfez sur les tendances organiques avec du contenu reactif, ou lancez des promotions de hashtags sponsorises pour inserer votre marque dans la conversation nationale au bon moment.',
+    image: '/images/platforms/weibo-ecosystem/trending-topics.png',
+    bg: '#1A1A1A',
+    iconBg: 'rgba(255,255,255,0.1)',
+    textColor: '#FFFFFF',
+    descColor: 'rgba(255,255,255,0.6)',
+    linkColor: '#CC3333',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>`,
+  },
+  {
+    name: 'Partenariats KOL et celebrities',
+    chineseName: 'KOL合作',
+    description: 'Les meilleurs KOL de Weibo comptent des dizaines de millions d\'abonnes. Un seul post du bon influenceur peut faire evoluer la notoriete, la credibilite et les ventes en meme temps.',
+    image: '/images/platforms/weibo-ecosystem/kol-partnerships.png',
+    bg: '#CC3333',
+    iconBg: 'rgba(255,255,255,0.2)',
+    textColor: '#FFFFFF',
+    descColor: 'rgba(255,255,255,0.8)',
+    linkColor: '#FFFFFF',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
+  },
+  {
+    name: 'Animation de communaute',
+    chineseName: '超级话题',
+    description: 'Les Super Topics de Weibo creent des espaces de marque ou les abonnes publient leur propre contenu, echangent sur les produits et interagissent directement avec la marque.',
+    image: '/images/platforms/weibo-ecosystem/community.png',
+    bg: '#E8E0D8',
+    iconBg: '#FFFFFF',
+    textColor: '#1A1A1A',
+    descColor: '#5C5C5C',
+    linkColor: '#CC3333',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>`,
+  },
+  {
+    name: 'Commerce social',
+    chineseName: '社交电商',
+    description: 'Les publications achetables renvoient vers Tmall et Taobao. Les livestreams se synchronisent avec Taobao Live pour la vente en temps reel. La distance entre un post Weibo et un achat est tres courte.',
+    image: '/images/platforms/weibo-ecosystem/social-commerce.png',
+    bg: '#1A1A1A',
+    iconBg: 'rgba(255,255,255,0.1)',
+    textColor: '#FFFFFF',
+    descColor: 'rgba(255,255,255,0.6)',
+    linkColor: '#CC3333',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>`,
+  },
+  {
+    name: 'Gestion de la reputation',
+    chineseName: '舆情管理',
+    description: 'Les gens partagent leurs opinions sur Weibo publiquement. Surveiller les mentions de marque, suivre la concurrence et detecter les changements de sentiment tot n\'est pas optionnel.',
+    image: '/images/platforms/weibo-ecosystem/reputation.png',
+    bg: '#B02D2D',
+    iconBg: 'rgba(255,255,255,0.2)',
+    textColor: '#FFFFFF',
+    descColor: 'rgba(255,255,255,0.8)',
+    linkColor: '#FFFFFF',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>`,
+  },
+];
+
+const services = [
+  {
+    title: 'Creation de compte et verification',
+    description: 'Nous enregistrons votre compte entreprise Blue V de bout en bout. Preparation des documents, traduction chinoise, soumission, creation complete du profil. Les entreprises internationales paient des frais de verification uniques de 1 000 $. L\'approbation prend 2 a 4 semaines. Nous gerons tout.',
+    result: 'Un compte entreprise Weibo verifie, pret a publier.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/></svg>`,
+    image: '/images/platforms/weibo-services/account-setup.png',
+  },
+  {
+    title: 'Strategie de contenu et production',
+    description: 'Plans de contenu mensuels avec publications de marque, rebonds sur les sujets tendance, formats interactifs et assets de campagne. Du contenu chinois natif par des locuteurs natifs. Posts courts, carrousels 9 images, video courte, assets livestream.',
+    result: 'Du contenu localise concu pour l\'algorithme actuel de Weibo.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/></svg>`,
+    image: '/images/platforms/weibo-services/content-strategy.png',
+  },
+  {
+    title: 'Publicite payante',
+    description: 'Fan Headlines, Fan Tunnels, display in-feed, splash page ads, promotion de recherche, promotion de hashtag. Ciblage par donnees demographiques, centres d\'interet, comportement et audiences similaires. Reporting hebdomadaire CPM, CPC, CPA, ROAS. Budget publicitaire facture separement. Sans marge.',
+    result: 'Des publicites qui touchent la bonne audience avec un reporting transparent des depenses.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>`,
+    image: '/images/platforms/weibo-services/paid-advertising.png',
+  },
+  {
+    title: 'Campagnes KOL et KOC',
+    description: 'Nous trouvons, verifions, negocions et briefons les influenceurs. Selection basee sur l\'engagement verifie, le controle d\'authenticite de l\'audience, l\'adequation sectorielle et le budget. Gestion complete de la campagne, du brief creatif au rapport de ROI.',
+    result: 'Des campagnes d\'influence appuyees sur des donnees verifiees, pas sur le nombre d\'abonnes.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
+    image: '/images/platforms/weibo-services/kol-campaigns.png',
+  },
+  {
+    title: 'Hot Search et campagnes de sujets',
+    description: 'Creation de sujet, seeding de contenu, amplification KOL, activation de communaute, promotion payante. Concu pour inserer votre marque dans la conversation nationale au moment opportun.',
+    result: 'Votre marque dans le classement des tendances les plus suivies de Chine.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>`,
+    image: '/images/platforms/weibo-services/hot-search.png',
+  },
+  {
+    title: 'Veille sociale et analytique',
+    description: 'Surveillance quotidienne des mentions de marque, des mouvements concurrentiels, des variations de sentiment et des conversations tendance. Rapports mensuels sur la croissance des abonnes, l\'engagement, la performance du contenu, les resultats publicitaires, le retour sur investissement KOL et les benchmarks concurrentiels.',
+    result: 'Des rapports operationnels avec des recommandations concretes pour le mois suivant.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 6-8"/></svg>`,
+    image: '/images/platforms/weibo-services/analytics.png',
+  },
+];
+
+const bestPractices = [
+  {
+    title: 'Publiez chaque jour.',
+    description: 'Une fois par jour minimum. Trois a cinq en phase de croissance. L\'algorithme recompense la regularite.',
+  },
+  {
+    title: 'Privilegiez les visuels.',
+    description: 'Utilisez les 9 emplacements d\'images. L\'image centrale attire le plus l\'attention. La video courte surpasse systematiquement les publications statiques.',
+  },
+  {
+    title: 'Reagissez vite aux tendances.',
+    description: 'Consultez la Hot Search chaque matin. Publiez dans l\'heure quand un sujet pertinent emerge.',
+  },
+  {
+    title: 'Ecrivez concis.',
+    description: 'Les posts sont tronques apres 140 caracteres. Premiere phrase percutante. Appel a l\'action visible avant le pli.',
+  },
+  {
+    title: 'Repondez vraiment aux gens.',
+    description: 'La section commentaires est l\'endroit ou les vraies conversations se deroulent. Les marques qui interagissent construisent leur fidelite bien plus vite que celles qui se contentent de diffuser.',
+  },
+  {
+    title: 'Faites-vous verifier tot.',
+    description: 'Le badge Blue V renforce la confiance, ameliore la portee, deverrouille les outils publicitaires et protege contre les comptes imitateurs.',
+  },
+];
+
+const steps = [
+  {
+    number: '01',
+    title: 'Appel decouverte.',
+    description: 'Parlez-nous de votre marque, de vos objectifs et de votre degre de preparation pour la Chine. Pas de presentation commerciale. Juste les bonnes questions.',
+    icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>`,
+  },
+  {
+    number: '02',
+    title: 'Proposition.',
+    description: 'Un perimetre clair. Un prix fixe. Chaque livrable detaille. Aucune surprise.',
+    icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>`,
+  },
+  {
+    number: '03',
+    title: 'En ligne en 2 semaines.',
+    description: 'Compte actif, premier contenu publie, premiere campagne lancee. Quatorze jours entre la signature du contrat et la premiere publication.',
+    icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>`,
+  },
+];
+
+const faqs = [
+  {
+    q: 'Qui gere concretement notre compte Weibo ?',
+    a: 'Notre equipe a Shanghai et Hong Kong. Des locuteurs natifs chinois qui redigent votre contenu, achetent les publicites et negocient directement avec les KOL. Nous ne sommes pas une agence travaillant a distance depuis Londres ou New York en devinant ce qui est tendance en Chine. Nous nous connectons a Weibo chaque matin, dans le meme fuseau horaire que votre audience.',
+  },
+  {
+    q: 'Une entreprise enregistree hors de Chine peut-elle ouvrir un compte Weibo ?',
+    a: 'Oui, et nous le faisons regulierement. Les entreprises etrangeres peuvent obtenir un compte entreprise verifie avec un badge Blue V. Il vous faudra des documents d\'immatriculation traduits en chinois et des frais uniques de 1 000 $ verses a Weibo pour la verification. L\'approbation prend environ 2 a 4 semaines. Nous gerons les documents, la traduction et les echanges avec l\'equipe Weibo pour que vous n\'ayez pas a vous en occuper.',
+  },
+  {
+    q: 'Comment fonctionne la tarification ?',
+    a: 'Perimetre fixe. Prix fixe. Nous definissons chaque livrable avant le demarrage du projet. Combien de posts, combien de videos, quelles campagnes, quel reporting. Vous voyez l\'ensemble et le cout total des le depart. Pas de devis vagues. Pas de frais caches qui apparaissent trois mois plus tard.',
+  },
+  {
+    q: 'Qu\'est-ce qui vous differencie des autres agences sur Weibo ?',
+    a: 'Nous sommes physiquement bases en Chine avec un acces direct a chaque plateforme, pas en gestion a distance depuis l\'etranger. Nous utilisons des outils IA (HubStudio.ai) pour la production de contenu, ce qui signifie des delais plus courts et des couts reduits sans sacrifier la qualite. Et nous sommes la seule agence que nous avons trouvee qui propose des forfaits a prix fixe. Nous avons analyse 37 concurrents. Aucun ne le fait.',
+  },
+  {
+    q: 'En combien de temps peut-on demarrer ?',
+    a: 'Environ deux semaines apres la signature. Enregistrement du compte, configuration du profil, premier contenu publie, premiere campagne lancee. Le processus de verification Weibo prend 2 a 4 semaines de leur cote, mais nous ne restons pas les bras croises. Nous commencons a construire et a publier pendant que le badge Blue V est en cours de traitement.',
+  },
+  {
+    q: 'Tout le contenu est-il redige en chinois ?',
+    a: 'Oui. Tout ce que nous publions sur Weibo est ecrit en chinois par des locuteurs natifs, puis relu par un second locuteur natif pour le ton et la justesse culturelle. Vous recevez des resumes en anglais des plans de contenu et des rapports mensuels. Si vous souhaitez valider chaque publication avant sa mise en ligne, nous integrons cette etape au processus.',
+  },
+  {
+    q: 'A-t-on vraiment besoin de Weibo si nous utilisons deja WeChat et RedNote ?',
+    a: 'Reponse courte : oui. WeChat maintient le contenu a l\'interieur de cercles fermes. RedNote est solide pour la decouverte de produits. Mais ni l\'un ni l\'autre ne permet a votre marque de toucher une audience publique de masse ou de participer aux conversations tendance nationales. Si une crise eclate, si un moment culturel prend de l\'ampleur, ou si vous avez simplement besoin que des millions de personnes apprennent le nom de votre marque rapidement, Weibo est la seule plateforme en Chine qui le permet.',
+  },
+  {
+    q: 'Comment selectionnez-vous les KOL ?',
+    a: 'Pas par le nombre d\'abonnes. Nous auditons les taux d\'engagement reels, effectuons des controles de faux abonnes, analysons les donnees demographiques de l\'audience et examinons le style de contenu de chaque KOL par rapport a votre marque. Nous comparons egalement leurs tarifs aux prix du marche pour que vous sachiez que vous obtenez un prix juste. Chaque KOL recommande est accompagne des donnees justifiant la recommandation.',
+  },
+  {
+    q: 'A quoi ressemblent les rapports ?',
+    a: 'Mensuels. Chaque rapport couvre la croissance des abonnes, les taux d\'engagement, la performance du contenu par format, les resultats des campagnes publicitaires (CPM, CPC, CPA, ROAS), le retour sur investissement des campagnes KOL et les benchmarks concurrentiels. Nous terminons chaque rapport par des recommandations claires pour le mois suivant. Vous beneficiez aussi d\'un point a mi-parcours si des campagnes actives sont en cours.',
+  },
+  {
+    q: 'Et si nous voulons aller au-dela de Weibo ?',
+    a: 'La plupart de nos clients le font. Weibo est l\'une des plus de 18 plateformes sur lesquelles nous intervenons. Nous concevons et gerons des campagnes sur Weibo, WeChat, RedNote, Douyin et d\'autres comme Bilibili, Zhihu ou Kuaishou selon votre secteur. Tout est coordonne par une seule equipe, livre dans un seul cahier des charges et facture a un prix fixe unique.',
+  },
+];
+---
+
+<PageLayout
+  title="Services Marketing Weibo | TheRedScroll"
+  description="Services marketing Weibo depuis Shanghai. Creation de compte, contenu, publicite, campagnes KOL et analytique. Perimetre fixe. Prix fixe. 567M d'utilisateurs actifs mensuels."
+  lang="fr"
+>
+  <!-- Hero: Dark hero banner -->
+  <section class="w-full bg-[#1A1A1A] py-[80px] max-[640px]:py-[48px] relative overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/weibo-hero.png')" aria-hidden="true"></div>
+    <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[140px] max-[640px]:text-[80px] font-medium text-[#FFFFFF] opacity-[0.03] pointer-events-none select-none whitespace-nowrap" aria-hidden="true">
+      微博
+    </span>
+    <Container class="relative z-[1]">
+      <div class="max-w-[800px] mx-auto text-center">
+        <a href="/fr/platforms/others" class="inline-flex items-center gap-[6px] text-[13px] text-[#5C5C5C] mb-[16px] transition-colors duration-150 hover:text-[#FFFFFF]">
+          &larr; Toutes les plateformes
+        </a>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">
+          Marketing Weibo
+        </p>
+        <h1 class="text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] text-[#FFFFFF] mb-[8px]">
+          Nous ne parlons pas de strategie Weibo. Nous publions sur Weibo. Chaque jour. Depuis Shanghai.
+        </h1>
+        <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal mb-[24px]">
+          Marketing Weibo depuis Shanghai. Creation de compte, contenu, publicite, campagnes KOL, analytique. 567 millions d'utilisateurs mensuels. Perimetre fixe. Prix fixe. Equipe sur le terrain.
+        </p>
+        <Button variant="primary" href="/fr/contact">Prendre rendez-vous</Button>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Stats section -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="flex items-end justify-between gap-[32px] max-[640px]:flex-col max-[640px]:items-start max-[640px]:gap-[16px] mb-[32px]">
+        <div class="max-w-[560px]">
+          <SectionBar />
+          <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[8px]">
+            La place publique ouverte de la Chine. 567 millions de personnes, chaque mois.
+          </h2>
+          <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
+            Weibo en chiffres.
+          </p>
+        </div>
+        <Button variant="primary" href="/fr/contact" class="shrink-0">Prendre rendez-vous</Button>
+      </div>
+    </Container>
+
+    <div class="relative">
+      <div class="absolute right-0 top-0 bottom-0 w-[80px] bg-gradient-to-l from-[#FFFFFF] to-transparent z-[1] pointer-events-none" aria-hidden="true"></div>
+      <div class="overflow-x-auto scrollbar-hide" id="stats-scroll">
+        <div class="flex gap-[16px] px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pb-[8px]" style="min-width: min-content;">
+          {stats.map((stat, i) => (
+            <div class="stat-card relative shrink-0 w-[220px] max-[640px]:w-[180px] h-[200px] max-[640px]:h-[170px] rounded-[12px] overflow-hidden flex flex-col justify-end cursor-grab select-none" data-stat-index={i}>
+              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out stat-bg" style={`background-image: url('${stat.image}')`} aria-hidden="true"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-[rgba(26,26,26,0.9)] via-[rgba(26,26,26,0.4)] to-transparent" aria-hidden="true"></div>
+              <div class="relative z-[1] p-[20px]">
+                <span class="text-[32px] text-[#FFFFFF] font-medium leading-none stat-counter block mb-[4px]" data-target={stat.value}>0</span>
+                <span class="text-[12px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.4]">{stat.label}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Weibo matters -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]">
+          <SectionBar />
+        </div>
+        <SectionHeading overline="Pourquoi Weibo compte">
+          Les tendances naissent ici. L'actualite eclate ici. L'opinion publique se forme ici.
+        </SectionHeading>
+      </div>
+
+      <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
+          <div class="w-full aspect-[16/9] overflow-hidden">
+            <img src="/images/platforms/weibo-why/public-square.png" alt="Application Weibo ouverte montrant le fil public avec des publications tendance et des discussions" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+          </div>
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Tout est public</h3>
+            <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
+              Le contenu WeChat reste confine aux cercles d'amis. Sur Weibo, tout le monde peut voir vos publications. Un seul lancement produit ou un commentaire bien place sur un sujet tendance peut toucher des millions de personnes qui n'ont jamais suivi votre compte.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
+          <div class="w-full aspect-[16/9] overflow-hidden">
+            <img src="/images/platforms/weibo-why/hot-search.png" alt="Classement Hot Search de Weibo montrant les 50 sujets tendance se rafraichissant en temps reel" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+          </div>
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">La Hot Search pilote la plateforme</h3>
+            <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
+              Elle se rafraichit chaque minute. Les sujets qui entrent dans le top 50 sont vus par des centaines de millions d'utilisateurs en quelques heures. Les marques qui creent du contenu autour de ces moments obtiennent une portee organique que la publicite payante seule ne peut egalir.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
+          <div class="w-full aspect-[16/9] overflow-hidden">
+            <img src="/images/platforms/weibo-why/brand-research.png" alt="Consommateur parcourant la page de marque Weibo en consultant avis et commentaires avant achat" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+          </div>
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Les consommateurs recherchent les marques ici</h3>
+            <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
+              Les acheteurs chinois recherchent des noms de marques et font defiler ce que disent les vrais utilisateurs. Une presence solide inspire confiance. Une absence souleve des questions. Des commentaires negatifs laisses sans reponse font de reels degats.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] mt-[24px] text-center max-w-[680px] mx-auto">
+        Weibo couvre l'ensemble du parcours. Notoriete de masse via les sujets tendance en haut du funnel. Ventes directes via les integrations Tmall et Taobao Live en bas. Peu de plateformes chinoises font bien les deux. Weibo, si.
+      </p>
+    </Container>
+  </section>
+
+  <!-- How Weibo helps brands grow -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]">
+          <SectionBar />
+        </div>
+        <SectionHeading overline="Comment Weibo aide les marques a croitre">
+          Six leviers pour transformer l'attention en revenus.
+        </SectionHeading>
+      </div>
+
+      <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        {ecosystem.map((item) => (
+          <div class="eco-card relative border-none overflow-hidden flex flex-col justify-between" style={`border-radius: ${item.bg === '#1A1A1A' || item.bg === '#CC3333' || item.bg === '#B02D2D' ? '12px' : '10px'}`} data-tilt-eco>
+            <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out eco-bg" style={`background-image: url('${item.image}')`} aria-hidden="true"></div>
+            <div class="absolute inset-0" style={`background: ${item.bg}; opacity: 0.72`} aria-hidden="true"></div>
+            <div class="relative z-[1] p-[24px] max-[640px]:p-[20px]">
+              <div class="w-[40px] h-[40px] rounded-[6px] flex items-center justify-center mb-[16px]" style={`background: ${item.iconBg}`}>
+                <Fragment set:html={item.icon} />
+              </div>
+              <h3 class="text-[18px] font-medium leading-[1.3] mb-[4px]" style={`color: ${item.textColor}`}>{item.name}</h3>
+              <span class="text-[12px] font-normal mb-[8px] block" style={`color: ${item.descColor}`}>{item.chineseName}</span>
+              <p class="text-[13px] font-normal leading-[1.5]" style={`color: ${item.descColor}`}>{item.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px] mt-[16px]">
+        <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] max-w-[680px]">
+          <span class="text-[#1A1A1A] font-medium">Note de verification :</span> Les entreprises etrangeres peuvent obtenir un compte entreprise verifie avec un badge Blue V. Il vous faudra des documents d'immatriculation traduits en chinois et des frais uniques de 1 000 $ verses a Weibo. L'approbation prend 2 a 4 semaines. Nous gerons l'ensemble du processus.
+        </p>
+      </div>
+    </Container>
+  </section>
+
+  <!-- What we do on Weibo -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]">
+          <SectionBar />
+        </div>
+        <SectionHeading overline="Ce que nous faisons sur Weibo">
+          Six services. Chacun avec un livrable precis.
+        </SectionHeading>
+      </div>
+
+      <div class="grid grid-cols-[340px_1fr] max-[1024px]:grid-cols-[280px_1fr] max-[768px]:hidden gap-[24px] items-stretch">
+        <div class="flex flex-col gap-[4px]">
+          {services.map((service, i) => (
+            <button class:list={['svc-selector flex items-center gap-[12px] px-[16px] py-[14px] rounded-[8px] text-left cursor-pointer border-none transition-all duration-300 relative', i === 0 ? 'svc-selector-active' : '']} data-svc-select={i} style={i === 0 ? 'background: #F7F2EE' : 'background: transparent'}>
+              <div class="svc-sel-indicator absolute left-0 top-[12px] bottom-[12px] w-[3px] rounded-full transition-all duration-300" style={i === 0 ? 'background: #CC3333; opacity: 1' : 'background: #CC3333; opacity: 0'}></div>
+              <div class="svc-sel-icon w-[36px] h-[36px] rounded-[6px] shrink-0 flex items-center justify-center transition-all duration-300" style={i === 0 ? 'background: #E8E0D8; color: #CC3333' : 'background: transparent; color: #5C5C5C'}>
+                <Fragment set:html={service.icon} />
+              </div>
+              <span class="svc-sel-label text-[14px] font-medium leading-[1.3] transition-colors duration-300" style={i === 0 ? 'color: #1A1A1A' : 'color: #5C5C5C'}>{service.title}</span>
+            </button>
+          ))}
+        </div>
+
+        <div class="relative">
+          {services.map((service, i) => (
+            <div class="svc-panel relative rounded-[12px] overflow-hidden h-full" data-svc-panel={i} style={i === 0 ? '' : 'display: none;'}>
+              <div class="absolute inset-0 bg-cover bg-center" style={`background-image: url('${service.image}')`} aria-hidden="true"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-[rgba(26,26,26,0.95)] via-[rgba(26,26,26,0.6)] to-[rgba(26,26,26,0.15)]" aria-hidden="true"></div>
+              <div class="relative z-[1] p-[32px] max-[1024px]:p-[24px] h-full flex flex-col justify-end">
+                <h3 class="text-[22px] font-medium leading-[1.25] mb-[8px] text-[#FFFFFF]">{service.title}</h3>
+                <p class="text-[14px] font-normal leading-[1.6] text-[rgba(255,255,255,0.7)] mb-[16px]">{service.description}</p>
+                <div class="flex items-center gap-[8px] pt-[12px] border-t border-[rgba(255,255,255,0.15)]">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                  <p class="text-[13px] font-medium leading-[1.5] text-[#FFFFFF]">{service.result}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div class="hidden max-[768px]:flex flex-col gap-[12px]">
+        {services.map((service) => (
+          <div class="relative rounded-[12px] overflow-hidden">
+            <div class="absolute inset-0 bg-cover bg-center" style={`background-image: url('${service.image}')`} aria-hidden="true"></div>
+            <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.82]" aria-hidden="true"></div>
+            <div class="relative z-[1] p-[24px]">
+              <div class="w-[40px] h-[40px] rounded-[6px] flex items-center justify-center mb-[12px] bg-[rgba(255,255,255,0.12)] text-[#FFFFFF]">
+                <Fragment set:html={service.icon} />
+              </div>
+              <h3 class="text-[18px] font-medium leading-[1.3] mb-[8px] text-[#FFFFFF]">{service.title}</h3>
+              <p class="text-[13px] font-normal leading-[1.5] mb-[12px] text-[rgba(255,255,255,0.7)]">{service.description}</p>
+              <p class="text-[13px] font-medium leading-[1.5] text-[#FFFFFF]">Vous obtenez : {service.result}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </Container>
+  </section>
+
+  <!-- Best practices -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="bg-[#1A1A1A] rounded-[12px] py-[48px] px-[48px] max-[640px]:px-[20px] max-[640px]:py-[32px]">
+        <div class="mb-[40px] max-[640px]:mb-[32px]">
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">Par notre equipe sur le terrain</p>
+          <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF]">Bonnes pratiques Weibo</h2>
+          <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.5] mt-[8px] max-w-[680px]">Nous publions sur Weibo depuis la Chine, chaque jour sans exception. Ce qui suit vient de la pratique quotidienne.</p>
+        </div>
+        <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[20px]">
+          {bestPractices.map((practice) => (
+            <div class="border-l-[3px] border-[#CC3333] pl-[16px]">
+              <h3 class="text-[16px] text-[#FFFFFF] font-medium leading-[1.3] mb-[4px]">{practice.title}</h3>
+              <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.5]">{practice.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- FAQ -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-[340px_1fr] max-[1024px]:grid-cols-[280px_1fr] max-[768px]:grid-cols-1 gap-[48px] max-[768px]:gap-[32px]">
+        <div>
+          <div class="sticky top-[84px] max-[640px]:static">
+            <SectionBar />
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">FAQ</p>
+            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">Questions frequentes</h2>
+            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">Tout ce que vous devez savoir pour travailler sur Weibo avec TheRedScroll.</p>
+          </div>
+        </div>
+        <div>
+          {faqs.map((faq, i) => (
+            <div class="border-b border-[rgba(0,0,0,0.08)]" data-faq>
+              <button class="w-full flex items-center justify-between py-[20px] text-left bg-transparent border-none cursor-pointer group" data-faq-trigger aria-expanded="false">
+                <h3 class="text-[16px] font-medium leading-[1.3] text-[#1A1A1A] group-hover:text-[#5C5C5C] transition-colors duration-150 pr-[16px]">{faq.q}</h3>
+                <svg class="w-[16px] h-[16px] shrink-0 text-[#5C5C5C] transition-transform duration-300 faq-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6l4 4 4-4"/></svg>
+              </button>
+              <div class="faq-content overflow-hidden" style="height: 0; opacity: 0;">
+                <div class="pb-[20px]">
+                  <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">{faq.a}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Getting started -->
+  <section class="relative mt-[96px] max-[640px]:mt-[64px] pt-[80px] pb-[80px] max-[640px]:pt-[48px] max-[640px]:pb-[48px] overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero/weibo-hero.png')" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.88]" aria-hidden="true"></div>
+
+    <Container class="relative z-[1]">
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]">
+          <div class="w-[40px] h-[3px] bg-[#CC3333] rounded-none"></div>
+        </div>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">Pour commencer</p>
+        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF]">De zero a un compte Weibo actif en deux semaines.</h2>
+      </div>
+
+      <div class="grid grid-cols-3 max-[640px]:grid-cols-1 gap-[24px] max-[640px]:gap-[16px]">
+        {steps.map((step) => (
+          <div class="bg-[rgba(255,255,255,0.06)] border-[0.5px] border-[rgba(255,255,255,0.1)] rounded-[12px] p-[32px] max-[640px]:p-[20px] text-center">
+            <div class="w-[64px] h-[64px] rounded-full bg-[rgba(255,255,255,0.08)] border-[0.5px] border-[rgba(255,255,255,0.15)] flex items-center justify-center mx-auto mb-[20px]">
+              <Fragment set:html={step.icon} />
+            </div>
+            <h3 class="text-[18px] text-[#FFFFFF] font-medium leading-[1.3] mb-[8px]">{step.title}</h3>
+            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6]">{step.description}</p>
+          </div>
+        ))}
+      </div>
+
+      <div class="text-center mt-[40px]">
+        <Button variant="primary" href="/fr/contact">Prendre rendez-vous</Button>
+      </div>
+
+      <div class="mt-[48px] pt-[24px] border-t border-[rgba(255,255,255,0.1)] text-center">
+        <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal mb-[12px]">Voir aussi</p>
+        <div class="flex justify-center gap-[24px] flex-wrap">
+          <a href="/fr/platforms/wechat" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Marketing WeChat &rarr;</a>
+          <a href="/fr/platforms/rednote" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Marketing RedNote &rarr;</a>
+          <a href="/fr/platforms/douyin" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Marketing Douyin &rarr;</a>
+          <a href="/fr/platforms/others" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Autres plateformes &rarr;</a>
+        </div>
+      </div>
+    </Container>
+  </section>
+<style>
+  .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+  .svc-panel { transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1); }
+  .svc-selector:hover { background: #F7F2EE !important; }
+  .faq-content { transition: height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease; }
+  .stat-card { opacity: 0; transform: translateY(32px); transition: opacity 1s ease, transform 1s ease; }
+  .stat-card.revealed { opacity: 1; transform: translateY(0); }
+  .stat-card:hover .stat-bg { transform: scale(1.08); }
+  .eco-card:hover .eco-bg { transform: scale(1.08); }
+</style>
+
+<script>
+  const statsScroll = document.getElementById('stats-scroll');
+  if (statsScroll) {
+    let isDown = false; let startX: number; let scrollLeft: number;
+    statsScroll.addEventListener('mousedown', (e) => { isDown = true; statsScroll.style.cursor = 'grabbing'; startX = e.pageX - statsScroll.offsetLeft; scrollLeft = statsScroll.scrollLeft; });
+    statsScroll.addEventListener('mouseleave', () => { isDown = false; statsScroll.style.cursor = ''; });
+    statsScroll.addEventListener('mouseup', () => { isDown = false; statsScroll.style.cursor = ''; });
+    statsScroll.addEventListener('mousemove', (e) => { if (!isDown) return; e.preventDefault(); const x = e.pageX - statsScroll.offsetLeft; statsScroll.scrollLeft = scrollLeft - (x - startX); });
+    let autoScrollPaused = false; let autoScrollSpeed = 0.5;
+    statsScroll.addEventListener('mouseenter', () => { autoScrollPaused = true; });
+    statsScroll.addEventListener('mouseleave', () => { autoScrollPaused = false; isDown = false; statsScroll.style.cursor = ''; });
+    statsScroll.addEventListener('touchstart', () => { autoScrollPaused = true; }, { passive: true });
+    statsScroll.addEventListener('touchend', () => { autoScrollPaused = false; });
+    function autoScroll() { if (!autoScrollPaused && statsScroll) { const maxScroll = statsScroll.scrollWidth - statsScroll.clientWidth; statsScroll.scrollLeft += autoScrollSpeed; if (statsScroll.scrollLeft >= maxScroll) { statsScroll.scrollLeft = 0; } } requestAnimationFrame(autoScroll); }
+    requestAnimationFrame(autoScroll);
+  }
+  const statCards = document.querySelectorAll('.stat-card');
+  const statsObserver = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) { const card = entry.target as HTMLElement; const index = parseInt(card.dataset.statIndex || '0'); const delay = index * 150; setTimeout(() => { card.classList.add('revealed'); const counter = card.querySelector('.stat-counter') as HTMLElement; if (counter) { setTimeout(() => { animateCounter(counter, counter.dataset.target || '0'); }, 400); } }, delay); statsObserver.unobserve(card); } }); }, { threshold: 0.05 });
+  statCards.forEach((card) => statsObserver.observe(card));
+  function animateCounter(el: HTMLElement, target: string) { const match = target.match(/^([\d.]+)(.*)$/); if (!match) { el.textContent = target; return; } const endNum = parseFloat(match[1]); const suffix = match[2]; const duration = 2000; const startTime = performance.now(); function tick(now: number) { const elapsed = now - startTime; const progress = Math.min(elapsed / duration, 1); const eased = 1 - Math.pow(1 - progress, 3); const current = eased * endNum; if (endNum >= 10) { el.textContent = Math.round(current) + suffix; } else { el.textContent = current.toFixed(1).replace(/\.0$/, '') + suffix; } if (progress < 1) requestAnimationFrame(tick); else el.textContent = target; } requestAnimationFrame(tick); }
+  const selectors = document.querySelectorAll('[data-svc-select]'); const panels = document.querySelectorAll('[data-svc-panel]'); let activeIndex = 0; let isAnimating = false;
+  selectors.forEach((sel) => { sel.addEventListener('click', () => { const index = parseInt((sel as HTMLElement).dataset.svcSelect || '0'); if (index === activeIndex || isAnimating) return; isAnimating = true; selectors.forEach((s) => { const el = s as HTMLElement; el.style.background = 'transparent'; const ind = el.querySelector('.svc-sel-indicator') as HTMLElement; const ico = el.querySelector('.svc-sel-icon') as HTMLElement; const lbl = el.querySelector('.svc-sel-label') as HTMLElement; if (ind) ind.style.opacity = '0'; if (ico) { ico.style.background = 'transparent'; ico.style.color = '#5C5C5C'; } if (lbl) lbl.style.color = '#5C5C5C'; }); const active = sel as HTMLElement; active.style.background = '#F7F2EE'; const ind = active.querySelector('.svc-sel-indicator') as HTMLElement; const ico = active.querySelector('.svc-sel-icon') as HTMLElement; const lbl = active.querySelector('.svc-sel-label') as HTMLElement; if (ind) ind.style.opacity = '1'; if (ico) { ico.style.background = '#E8E0D8'; ico.style.color = '#CC3333'; } if (lbl) lbl.style.color = '#1A1A1A'; const oldPanel = panels[activeIndex] as HTMLElement; const newPanel = panels[index] as HTMLElement; const goingDown = index > activeIndex; oldPanel.style.transition = 'opacity 0.3s ease, transform 0.3s ease'; oldPanel.style.opacity = '0'; oldPanel.style.transform = goingDown ? 'translateY(-20px)' : 'translateY(20px)'; setTimeout(() => { oldPanel.style.display = 'none'; oldPanel.style.transform = ''; oldPanel.style.transition = ''; newPanel.style.opacity = '0'; newPanel.style.transform = goingDown ? 'translateY(20px)' : 'translateY(-20px)'; newPanel.style.display = ''; requestAnimationFrame(() => { newPanel.style.transition = 'opacity 0.35s ease, transform 0.35s ease'; newPanel.style.opacity = '1'; newPanel.style.transform = 'translateY(0)'; setTimeout(() => { newPanel.style.transition = ''; activeIndex = index; isAnimating = false; }, 350); }); }, 280); }); });
+  document.querySelectorAll('[data-tilt-eco]').forEach((card) => { const el = card as HTMLElement; el.addEventListener('mousemove', (e: MouseEvent) => { const rect = el.getBoundingClientRect(); const x = e.clientX - rect.left; const y = e.clientY - rect.top; const centerX = rect.width / 2; const centerY = rect.height / 2; const rotateX = ((y - centerY) / centerY) * -3; const rotateY = ((x - centerX) / centerX) * 3; el.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`; }); el.addEventListener('mouseleave', () => { el.style.transform = 'perspective(800px) rotateX(0deg) rotateY(0deg) scale(1)'; }); });
+  document.querySelectorAll('[data-faq]').forEach((item) => { const trigger = item.querySelector('[data-faq-trigger]') as HTMLButtonElement; const content = item.querySelector('.faq-content') as HTMLElement; if (!trigger || !content) return; trigger.addEventListener('click', () => { const isOpen = trigger.getAttribute('aria-expanded') === 'true'; if (isOpen) { content.style.height = content.scrollHeight + 'px'; requestAnimationFrame(() => { content.style.height = '0'; content.style.opacity = '0'; }); trigger.setAttribute('aria-expanded', 'false'); const ch = trigger.querySelector('.faq-chevron') as HTMLElement; if (ch) ch.style.transform = 'rotate(0deg)'; } else { content.style.height = '0'; requestAnimationFrame(() => { content.style.height = content.scrollHeight + 'px'; content.style.opacity = '1'; }); trigger.setAttribute('aria-expanded', 'true'); const ch = trigger.querySelector('.faq-chevron') as HTMLElement; if (ch) ch.style.transform = 'rotate(180deg)'; } }); });
+</script>
+</PageLayout>

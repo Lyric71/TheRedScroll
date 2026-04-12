@@ -2,44 +2,89 @@
 import Container from '../ui/Container.astro';
 import SectionBar from '../ui/SectionBar.astro';
 import Button from '../ui/Button.astro';
+import type { Lang } from '../../i18n/config';
+import { localizedPath } from '../../i18n/config';
 
-const pillars = [
+interface Props {
+  lang?: Lang;
+}
+
+const { lang = 'en' } = Astro.props;
+const lp = (path: string) => localizedPath(path, lang);
+
+const pillars = lang === 'fr' ? [
+  {
+    title: 'Audience.',
+    description: '1 milliard d\'utilisateurs. Des dizaines de plateformes. Chacune differente. Trouvez votre audience d\'abord. Choisissez la plateforme ensuite.',
+    stat: '1B+', statLabel: 'utilisateurs',
+    image: '/images/ecosystem/audience.png',
+  },
+  {
+    title: 'Contenu.',
+    description: 'Ce qui fonctionne sur Douyin echoue sur WeChat. Chaque plateforme a son propre format, son langage, son rythme. Construisez pour chacune.',
+    stat: '18+', statLabel: 'plateformes',
+    image: '/images/ecosystem/content.png',
+  },
+  {
+    title: 'Influenceurs.',
+    description: 'Les KOL et KOC influencent les decisions d\'achat davantage que la publicite. Le bon influenceur, la bonne plateforme, le bon moment. Tout le reste est du gaspillage.',
+    stat: '80%', statLabel: 'font confiance aux KOL',
+    image: '/images/ecosystem/influencers.png',
+  },
+  {
+    title: 'Plateformes.',
+    description: 'WeChat, Douyin, RedNote, Weibo, et 14 autres. Les algorithmes changent chaque mois. Il vous faut une equipe qui les pratique au quotidien.',
+    stat: '14+', statLabel: 'autres plateformes',
+    image: '/images/ecosystem/platforms.png',
+  },
+  {
+    title: 'Commerce.',
+    description: 'En Chine, les reseaux sociaux sont un lieu d\'achat, pas seulement de consultation. Contenu et commerce ne font qu\'un ici.',
+    stat: '3.5T', statLabel: 'RMB GMV Douyin',
+    image: '/images/ecosystem/commerce.png',
+  },
+] : [
   {
     title: 'Audience.',
     description: '1 billion users. Dozens of platforms. Each one different. Find your audience first. Then pick the platform.',
-    stat: '1B+',
-    statLabel: 'users',
+    stat: '1B+', statLabel: 'users',
     image: '/images/ecosystem/audience.png',
   },
   {
     title: 'Content.',
     description: 'What works on Douyin fails on WeChat. Every platform has its own format, language, and pace. Build for each one.',
-    stat: '18+',
-    statLabel: 'platforms',
+    stat: '18+', statLabel: 'platforms',
     image: '/images/ecosystem/content.png',
   },
   {
     title: 'Influencers.',
     description: 'KOLs and KOCs drive buying decisions more than ads do. Right influencer, right platform, right moment. Everything else is waste.',
-    stat: '80%',
-    statLabel: 'trust KOLs over ads',
+    stat: '80%', statLabel: 'trust KOLs over ads',
     image: '/images/ecosystem/influencers.png',
   },
   {
     title: 'Platforms.',
     description: 'WeChat, Douyin, RedNote, Weibo, and 14 more. Algorithms change monthly. You need a team that\'s on them every day.',
-    stat: '14+',
-    statLabel: 'more platforms',
+    stat: '14+', statLabel: 'more platforms',
     image: '/images/ecosystem/platforms.png',
   },
   {
     title: 'Commerce.',
     description: 'Social media in China is where people buy, not just browse. Content and commerce are the same thing here.',
-    stat: '3.5T',
-    statLabel: 'RMB Douyin GMV',
+    stat: '3.5T', statLabel: 'RMB Douyin GMV',
     image: '/images/ecosystem/commerce.png',
   },
 ];
+
+const sectionText = lang === 'fr' ? {
+  heading: 'Les reseaux sociaux chinois ne sont pas un canal. C\'est tout un univers.',
+  sub: 'Audience, contenu, influenceurs, plateformes et commerce sont tous lies. Impossible de gagner sur l\'un sans maitriser les autres.',
+  cta: 'Prendre rendez-vous',
+} : {
+  heading: 'Chinese social media is not a channel. It\'s an ecosystem.',
+  sub: 'Audience, content, influencers, platforms, and commerce are all connected. You can\'t win on one without the others.',
+  cta: 'Book a call',
+};
 ---
 
 <section class="mt-[64px] max-[640px]:mt-[40px]">
@@ -49,13 +94,13 @@ const pillars = [
       <div class="max-w-[560px]">
         <SectionBar />
         <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[8px]">
-          Chinese social media is not a channel. It's an ecosystem.
+          {sectionText.heading}
         </h2>
         <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
-          Audience, content, influencers, platforms, and commerce are all connected. You can't win on one without the others.
+          {sectionText.sub}
         </p>
       </div>
-      <Button variant="primary" href="/contact" class="shrink-0">Book a call</Button>
+      <Button variant="primary" href={lp('/contact')} class="shrink-0">{sectionText.cta}</Button>
     </div>
   </Container>
 

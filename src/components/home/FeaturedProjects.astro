@@ -2,37 +2,66 @@
 import Container from '../ui/Container.astro';
 import SectionBar from '../ui/SectionBar.astro';
 import Button from '../ui/Button.astro';
+import type { Lang } from '../../i18n/config';
+import { localizedPath } from '../../i18n/config';
+
+interface Props {
+  lang?: Lang;
+}
+
+const { lang = 'en' } = Astro.props;
+const lp = (path: string) => localizedPath(path, lang);
 
 const projects = [
   {
-    title: 'Viessmann: social-to-commerce engine in China',
-    industry: 'Climate Systems',
+    title: lang === 'fr'
+      ? 'Viessmann : de la visibilite sociale a la vente en Chine'
+      : 'Viessmann: social-to-commerce engine in China',
+    industry: lang === 'fr' ? 'Systemes climatiques' : 'Climate Systems',
     platform: 'Douyin + RedNote + WeCom',
     image: '/images/clients/Viessmann/Viessman-climate-solution.avif',
-    href: '/work/viessmann',
+    href: lp('/work/viessmann'),
   },
   {
-    title: 'Jaguar Land Rover: reaching younger consumers',
-    industry: 'Automotive',
+    title: lang === 'fr'
+      ? 'Jaguar Land Rover : toucher une audience plus jeune'
+      : 'Jaguar Land Rover: reaching younger consumers',
+    industry: lang === 'fr' ? 'Automobile' : 'Automotive',
     platform: 'Douyin + RedNote + WeChat',
     image: '/images/clients/Jaguar/Jaguar-Land-Rover.avif',
-    href: '/work/jaguar-land-rover',
+    href: lp('/work/jaguar-land-rover'),
   },
   {
-    title: 'JAC Motors: AI-powered community building',
-    industry: 'Automotive / EV',
+    title: lang === 'fr'
+      ? 'JAC Motors : communaute alimentee par l\'IA'
+      : 'JAC Motors: AI-powered community building',
+    industry: lang === 'fr' ? 'Automobile / VE' : 'Automotive / EV',
     platform: 'WeChat + RedNote + Weibo',
     image: '/images/clients/JAC/JAC-Wechat-4.jpg',
-    href: '/work/jac-motors',
+    href: lp('/work/jac-motors'),
   },
   {
-    title: 'iGuzzini: luxury lighting goes consumer',
-    industry: 'Luxury Lighting',
+    title: lang === 'fr'
+      ? 'iGuzzini : l\'eclairage de luxe s\'ouvre au grand public'
+      : 'iGuzzini: luxury lighting goes consumer',
+    industry: lang === 'fr' ? 'Eclairage haut de gamme' : 'Luxury Lighting',
     platform: 'WeChat + RedNote + Weibo',
     image: '/images/clients/iGuzzini/iguzzini4-1.png',
-    href: '/work/iguzzini',
+    href: lp('/work/iguzzini'),
   },
 ];
+
+const sectionText = lang === 'fr' ? {
+  overline: 'Projets en vedette',
+  heading: 'Des campagnes qui font grandir les marques sur les plateformes chinoises.',
+  description: 'Du lancement de produits haut de gamme a la generation de prospects B2B. Des campagnes reelles, des plateformes reelles, des resultats reels.',
+  cta: 'Voir tous les projets',
+} : {
+  overline: 'Featured projects',
+  heading: 'Campaigns that grow brands across China\'s platforms.',
+  description: 'From luxury launches to B2B lead generation. Real campaigns, real platforms, real results.',
+  cta: 'See all projects',
+};
 ---
 
 <section class="mt-[64px] max-[640px]:mt-[40px]">
@@ -41,16 +70,16 @@ const projects = [
     <div class="flex items-start justify-between gap-[48px] max-[640px]:flex-col max-[640px]:gap-[16px] mb-[40px] max-[640px]:mb-[32px]">
       <div class="max-w-[480px] shrink-0">
         <SectionBar />
-        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">Featured projects</p>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">{sectionText.overline}</p>
         <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A]">
-          Campaigns that grow brands across China's platforms.
+          {sectionText.heading}
         </h2>
       </div>
       <div class="flex items-start gap-[32px] max-[640px]:flex-col max-[640px]:gap-[16px]">
         <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] max-w-[360px]">
-          From luxury launches to B2B lead generation. Real campaigns, real platforms, real results.
+          {sectionText.description}
         </p>
-        <Button variant="primary" href="/work" class="shrink-0">See all projects</Button>
+        <Button variant="primary" href={lp('/work')} class="shrink-0">{sectionText.cta}</Button>
       </div>
     </div>
 

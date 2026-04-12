@@ -3,41 +3,71 @@ import Container from '../ui/Container.astro';
 import SectionBar from '../ui/SectionBar.astro';
 import SectionHeading from '../ui/SectionHeading.astro';
 import Button from '../ui/Button.astro';
+import type { Lang } from '../../i18n/config';
+import { localizedPath } from '../../i18n/config';
 
-const platforms = [
+interface Props {
+  lang?: Lang;
+}
+
+const { lang = 'en' } = Astro.props;
+const lp = (path: string) => localizedPath(path, lang);
+
+const platforms = lang === 'fr' ? [
   {
-    name: 'WeChat',
-    chineseName: '微信',
-    brandColor: '#07C160',
-    logo: '/images/platforms/wechat-logo.svg',
-    href: '/platforms/wechat',
+    name: 'WeChat', chineseName: '微信', brandColor: '#07C160',
+    logo: '/images/platforms/wechat-logo.svg', href: lp('/platforms/wechat'),
+    description: 'La super-application chinoise. Comptes officiels, Moments, Mini Programs, WeCom. Si vous ne deviez choisir qu\'une seule plateforme en Chine, c\'est celle-ci.',
+  },
+  {
+    name: 'RedNote', chineseName: '小红书', brandColor: '#FF2442',
+    logo: '/images/platforms/rednote-logo.svg', href: lp('/platforms/rednote'),
+    description: 'L\'endroit ou les consommateurs chinois se renseignent avant d\'acheter quoi que ce soit. Avis, tutoriels, publications marchandes. Une sorte d\'Instagram chinois, sauf que les gens y achetent vraiment.',
+  },
+  {
+    name: 'Douyin', chineseName: '抖音', brandColor: '#010101',
+    logo: '/images/platforms/douyin-logo.svg', href: lp('/platforms/douyin'),
+    description: 'La video courte rencontre le commerce en direct. La portee est massive et le chemin entre le contenu et la vente est court. Les marques qui maitrisent Douyin voient des resultats rapidement.',
+  },
+  {
+    name: 'Weibo', chineseName: '微博', brandColor: '#E6162D',
+    logo: '/images/platforms/weibo-logo.svg', href: lp('/platforms/weibo'),
+    description: 'Audience de masse et relations publiques. Sujets tendance, collaborations avec des celebrites, cycles d\'actualite. Quand il faut faire connaitre une marque partout en Chine, c\'est encore ici que ca se passe.',
+  },
+] : [
+  {
+    name: 'WeChat', chineseName: '微信', brandColor: '#07C160',
+    logo: '/images/platforms/wechat-logo.svg', href: lp('/platforms/wechat'),
     description: 'China\'s super app. Official Accounts, Moments, Mini Programs, WeCom. If you\'re going to pick just one platform in China, this is the one.',
   },
   {
-    name: 'RedNote',
-    chineseName: '小红书',
-    brandColor: '#FF2442',
-    logo: '/images/platforms/rednote-logo.svg',
-    href: '/platforms/rednote',
+    name: 'RedNote', chineseName: '小红书', brandColor: '#FF2442',
+    logo: '/images/platforms/rednote-logo.svg', href: lp('/platforms/rednote'),
     description: 'Where Chinese consumers go before they buy pretty much anything. Reviews, tutorials, shoppable posts. Think of it as China\'s version of Instagram, except people actually buy things from it.',
   },
   {
-    name: 'Douyin',
-    chineseName: '抖音',
-    brandColor: '#010101',
-    logo: '/images/platforms/douyin-logo.svg',
-    href: '/platforms/douyin',
+    name: 'Douyin', chineseName: '抖音', brandColor: '#010101',
+    logo: '/images/platforms/douyin-logo.svg', href: lp('/platforms/douyin'),
     description: 'Short video meets live commerce. The reach is massive and the path from content to sale is short. Brands that crack Douyin tend to see results fast.',
   },
   {
-    name: 'Weibo',
-    chineseName: '微博',
-    brandColor: '#E6162D',
-    logo: '/images/platforms/weibo-logo.svg',
-    href: '/platforms/weibo',
+    name: 'Weibo', chineseName: '微博', brandColor: '#E6162D',
+    logo: '/images/platforms/weibo-logo.svg', href: lp('/platforms/weibo'),
     description: 'Mass reach and PR. Trending topics, celebrity tie-ins, news cycles. When you need a brand name to travel across China quickly, this is still where it happens.',
   },
 ];
+
+const sectionText = lang === 'fr' ? {
+  overline: 'Ou nous publions',
+  heading: 'WeChat. Douyin. RedNote. Weibo. Et 14 autres.',
+  note: 'Ainsi que Bilibili, Kuaishou, Zhihu, Toutiao, Meituan, Dianping, Pinduoduo, Taobao Live, et d\'autres encore. Chacune tarifee comme un complement clair selon votre secteur.',
+  cta: 'Voir toutes les plateformes',
+} : {
+  overline: 'Where we post',
+  heading: 'WeChat. Douyin. RedNote. Weibo. And 14 more.',
+  note: 'Plus Bilibili, Kuaishou, Zhihu, Toutiao, Meituan, Dianping, Pinduoduo, Taobao Live, and others. Each priced as a clear add-on based on your industry.',
+  cta: 'See all platforms',
+};
 ---
 
 <section class="mt-[64px] max-[640px]:mt-[40px]">
@@ -46,8 +76,8 @@ const platforms = [
       <div class="flex justify-center mb-[12px]">
         <SectionBar />
       </div>
-      <SectionHeading overline="Where we post">
-        WeChat. Douyin. RedNote. Weibo. And 14 more.
+      <SectionHeading overline={sectionText.overline}>
+        {sectionText.heading}
       </SectionHeading>
     </div>
 
@@ -80,11 +110,11 @@ const platforms = [
     </div>
 
     <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] mt-[24px] text-center max-w-[680px] mx-auto">
-      Plus Bilibili, Kuaishou, Zhihu, Toutiao, Meituan, Dianping, Pinduoduo, Taobao Live, and others. Each priced as a clear add-on based on your industry.
+      {sectionText.note}
     </p>
 
     <div class="mt-[24px] text-center">
-      <Button variant="secondary" href="/platforms/others">See all platforms</Button>
+      <Button variant="secondary" href={lp('/platforms/others')}>{sectionText.cta}</Button>
     </div>
   </Container>
 </section>

@@ -1,19 +1,33 @@
 ---
-import { mainNav } from '../../data/navigation';
 import type { NavItem } from '../../data/navigation';
+import { getLocalizedNav } from '../../i18n/navigation';
+import { t } from '../../i18n/ui';
+import { alternateUrl, localizedPath } from '../../i18n/config';
+import type { Lang } from '../../i18n/config';
 import Button from '../ui/Button.astro';
+
+interface Props {
+  lang?: Lang;
+}
+
+const { lang = 'en' } = Astro.props;
+const nav = getLocalizedNav(lang);
+const altLang = lang === 'en' ? 'fr' : 'en';
+const currentPath = Astro.url.pathname;
+const switchUrl = alternateUrl(currentPath, altLang as Lang);
+const contactHref = localizedPath('/contact', lang);
 ---
 
-<header class="fixed top-0 left-0 w-full z-[1000] h-[60px] bg-[#1A1A1A]">
+<header class="fixed top-0 left-0 w-full z-[1000] h-[60px] max-[640px]:h-[52px] bg-[#1A1A1A]">
   <nav class="max-w-[1200px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] flex items-center justify-between h-full">
     <!-- Logo -->
-    <a href="/" class="flex items-center shrink-0">
+    <a href={localizedPath('/', lang)} class="flex items-center shrink-0">
       <img src="/images/logo/theredscroll-logo-5B-dark.svg" alt="TheRedScroll" class="h-[44px] w-auto" decoding="async" />
     </a>
 
     <!-- Desktop nav -->
     <div class="hidden min-[641px]:flex items-center gap-[32px]">
-      {mainNav.map((link) => (
+      {nav.map((link) => (
         link.children ? (
           <div class="relative" data-dropdown>
             <button
@@ -45,7 +59,7 @@ import Button from '../ui/Button.astro';
                           {child.label}
                         </span>
                         <span class="block text-[rgba(255,255,255,0.4)] text-[12px] font-normal leading-[1.4]">
-                          {child.subtitle || 'Learn more'}
+                          {child.subtitle || t('cta.learnMore', lang)}
                         </span>
                       </div>
                     </a>
@@ -54,7 +68,7 @@ import Button from '../ui/Button.astro';
                 <!-- Footer link to parent page -->
                 <div class="mt-[24px] pt-[16px] border-t-[0.5px] border-[rgba(255,255,255,0.1)]">
                   <a href={link.href} class="text-[#CC3333] text-[13px] font-medium transition-colors duration-150 hover:text-[#B02D2D]">
-                    View all {link.label.toLowerCase()} &rarr;
+                    {t('nav.viewAll', lang)} {link.label.toLowerCase()} &rarr;
                   </a>
                 </div>
               </div>
@@ -69,8 +83,18 @@ import Button from '../ui/Button.astro';
           </a>
         )
       ))}
-      <Button variant="primary" href="/contact">
-        Book a call
+
+      <!-- Language switcher -->
+      <a
+        href={switchUrl}
+        class="text-[rgba(255,255,255,0.5)] text-[13px] font-medium tracking-[0.03em] transition-colors duration-150 hover:text-[#FFFFFF] border-[0.5px] border-[rgba(255,255,255,0.15)] rounded-[4px] px-[8px] py-[4px]"
+        aria-label={altLang === 'fr' ? 'Voir en français' : 'Switch to English'}
+      >
+        {t('lang.switch', lang)}
+      </a>
+
+      <Button variant="primary" href={contactHref}>
+        {t('nav.bookCall', lang)}
       </Button>
     </div>
 
@@ -91,7 +115,7 @@ import Button from '../ui/Button.astro';
 <div id="mobile-overlay" class="fixed inset-0 bg-[rgba(0,0,0,0.5)] z-[1000] hidden" aria-hidden="true"></div>
 
 <!-- Mobile slide-in panel -->
-<div id="mobile-panel" class="fixed top-0 right-0 w-[280px] h-screen bg-[#1A1A1A] z-[1001] translate-x-full transition-transform duration-[250ms] ease-in-out pt-[72px] px-[20px] pb-[20px] overflow-y-auto">
+<div id="mobile-panel" class="fixed top-0 right-0 w-[280px] h-screen bg-[#1A1A1A] z-[1001] translate-x-full transition-transform duration-[250ms] ease-in-out pt-[64px] px-[20px] pb-[20px] overflow-y-auto">
   <button
     id="mobile-menu-close"
     class="absolute top-[20px] right-[20px] text-[#FFFFFF] text-[20px] leading-none cursor-pointer bg-transparent border-none w-[44px] h-[44px] flex items-center justify-center"
@@ -100,7 +124,7 @@ import Button from '../ui/Button.astro';
     &#x2715;
   </button>
 
-  {mainNav.map((link) => (
+  {nav.map((link) => (
     <div>
       <a
         href={link.href}
@@ -123,8 +147,18 @@ import Button from '../ui/Button.astro';
     </div>
   ))}
 
+  <!-- Mobile language switcher -->
+  <div class="mt-[16px] pt-[16px] border-t-[0.5px] border-[rgba(255,255,255,0.1)]">
+    <a
+      href={switchUrl}
+      class="block py-[12px] min-h-[44px] flex items-center text-[rgba(255,255,255,0.5)] text-[14px] font-medium transition-colors duration-150 hover:text-[#FFFFFF]"
+    >
+      {altLang === 'fr' ? 'Français' : 'English'}
+    </a>
+  </div>
+
   <div class="mt-[24px]">
-    <Button variant="primary" href="/contact">Book a call</Button>
+    <Button variant="primary" href={contactHref}>{t('nav.bookCall', lang)}</Button>
   </div>
 </div>
 

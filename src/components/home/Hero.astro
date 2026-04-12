@@ -1,5 +1,31 @@
 ---
 import Button from '../ui/Button.astro';
+import type { Lang } from '../../i18n/config';
+import { localizedPath } from '../../i18n/config';
+
+interface Props {
+  lang?: Lang;
+}
+
+const { lang = 'en' } = Astro.props;
+const lp = (path: string) => localizedPath(path, lang);
+
+const text = {
+  en: {
+    headline: 'We grow your brand on China\'s social platforms.',
+    sub: 'More followers. More engagement. More conversions.',
+    tagline: 'Fixed scope. Fixed price. No surprises.',
+    cta1: 'Book a call',
+    cta2: 'See our services',
+  },
+  fr: {
+    headline: 'Nous developpons votre marque sur les reseaux sociaux chinois.',
+    sub: 'Plus d\'abonnes. Plus d\'engagement. Plus de conversions.',
+    tagline: 'Perimetre fixe. Prix fixe. Sans surprises.',
+    cta1: 'Prendre rendez-vous',
+    cta2: 'Voir nos services',
+  },
+}[lang];
 ---
 
 <section class="relative w-full min-h-[600px] max-[640px]:min-h-[500px] overflow-hidden">
@@ -21,17 +47,17 @@ import Button from '../ui/Button.astro';
           TheRedScroll
         </p>
         <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
-          More followers. More engagement. More conversions.
+          {text.headline}
         </h1>
         <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[12px]">
-          On every platform that matters.
+          {text.sub}
         </p>
         <p class="text-[rgba(255,255,255,0.4)] text-[14px] font-normal leading-[1.6] mb-[40px]">
-          Fixed scope. Fixed price. Team on the ground.
+          {text.tagline}
         </p>
         <div class="flex items-center gap-[12px] flex-wrap">
-          <Button variant="primary" href="/contact">Book a call</Button>
-          <Button variant="secondary-dark" href="/services">See our services</Button>
+          <Button variant="primary" href={lp('/contact')}>{text.cta1}</Button>
+          <Button variant="secondary-dark" href={lp('/services')}>{text.cta2}</Button>
         </div>
       </div>
 
