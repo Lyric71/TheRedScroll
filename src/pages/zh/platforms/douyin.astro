@@ -6,21 +6,21 @@ import SectionHeading from '../../../components/ui/SectionHeading.astro';
 import Button from '../../../components/ui/Button.astro';
 
 const stats = [
-  { label: 'Utilisateurs actifs quotidiens', value: '750M+', image: '/images/platforms/douyin-stats/daily-active-users.png' },
-  { label: 'Utilisateurs actifs mensuels', value: '1B+', image: '/images/platforms/douyin-stats/monthly-active-users.png' },
-  { label: 'Temps moyen par jour et par utilisateur', value: '120 min', image: '/images/platforms/douyin-stats/daily-time.png' },
-  { label: 'Ventes e-commerce (2024)', value: '¥3.5T', image: '/images/platforms/douyin-stats/ecommerce-sales.png' },
-  { label: 'Croissance annuelle des ventes', value: '34%', image: '/images/platforms/douyin-stats/yoy-growth.png' },
-  { label: 'Sessions de live commerce par jour', value: '30M+', image: '/images/platforms/douyin-stats/live-commerce.png' },
-  { label: 'Categories de contenu', value: '100+', image: '/images/platforms/douyin-stats/content-variety.png' },
-  { label: 'Comptes de createurs', value: '15M+', image: '/images/platforms/douyin-stats/creator-economy.png' },
+  { label: '日活用户', value: '750M+', image: '/images/platforms/douyin-stats/daily-active-users.png' },
+  { label: '月活用户', value: '1B+', image: '/images/platforms/douyin-stats/monthly-active-users.png' },
+  { label: '人均日使用时长', value: '120 min', image: '/images/platforms/douyin-stats/daily-time.png' },
+  { label: '电商GMV（2024）', value: '¥3.5T', image: '/images/platforms/douyin-stats/ecommerce-sales.png' },
+  { label: '电商同比增速', value: '34%', image: '/images/platforms/douyin-stats/yoy-growth.png' },
+  { label: '日均直播场次', value: '30M+', image: '/images/platforms/douyin-stats/live-commerce.png' },
+  { label: '内容品类数', value: '100+', image: '/images/platforms/douyin-stats/content-variety.png' },
+  { label: '创作者账号数', value: '15M+', image: '/images/platforms/douyin-stats/creator-economy.png' },
 ];
 
 const ecosystem = [
   {
-    name: 'For You Feed',
-    chineseName: '推荐页',
-    description: 'Le fil de recommandation pilote par l\'algorithme. Le nombre d\'abonnes n\'y change rien. Un compte tout neuf peut atteindre des millions de vues avec la bonne video.',
+    name: '推荐页',
+    chineseName: 'For You Feed',
+    description: '算法驱动的推荐流。跟粉丝数关系不大。一个全新的账号，只要一条对的视频就能跑到几百万播放。',
     image: '/images/platforms/douyin-ecosystem/for-you-feed.png',
     bg: '#1A1A1A',
     iconBg: 'rgba(255,255,255,0.1)',
@@ -30,9 +30,9 @@ const ecosystem = [
     icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>`,
   },
   {
-    name: 'Live Commerce',
-    chineseName: '直播电商',
-    description: 'La vente en direct integree a l\'application. Selection de l\'animateur, script produit, interaction en temps reel avec l\'audience. Certaines marques attirent des millions de spectateurs en une seule session.',
+    name: '直播电商',
+    chineseName: 'Live Commerce',
+    description: 'App内嵌的直播销售。选主播、写脚本、实时跟观众互动。一些品牌一场直播能拉到几百万观众。',
     image: '/images/platforms/douyin-ecosystem/live-commerce.png',
     bg: '#CC3333',
     iconBg: 'rgba(255,255,255,0.2)',
@@ -42,9 +42,9 @@ const ecosystem = [
     icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>`,
   },
   {
-    name: 'Douyin Shop',
-    chineseName: '抖音商城',
-    description: 'La boutique integree ou les utilisateurs recherchent, parcourent et achetent vos produits. Chaque video et chaque live redirige le trafic vers la boutique. Aucune redirection externe.',
+    name: '抖音商城',
+    chineseName: 'Douyin Shop',
+    description: '平台内嵌店铺，用户在这里搜、浏览、下单。每一条视频、每一场直播都能给店铺引流，不用跳转到外站。',
     image: '/images/platforms/douyin-ecosystem/douyin-shop.png',
     bg: '#F7F2EE',
     iconBg: '#E8E0D8',
@@ -54,9 +54,9 @@ const ecosystem = [
     icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>`,
   },
   {
-    name: 'Ocean Engine',
-    chineseName: '巨量引擎',
-    description: 'La plateforme publicitaire de ByteDance. TopView pour les grands lancements. In-Feed Ads pour le trafic. Search Ads pour les acheteurs a forte intention. DOU+ pour tester le contenu. Budget publicitaire facture separement, sans marge.',
+    name: '巨量引擎',
+    chineseName: 'Ocean Engine',
+    description: '字节跳动的广告平台。TopView做大型发布。信息流广告拉流量。搜索广告抓高意向买家。DOU+用来测内容。广告预算单独结算，不加点。',
     image: '/images/platforms/douyin-ecosystem/ocean-engine.png',
     bg: '#1A1A1A',
     iconBg: 'rgba(255,255,255,0.1)',
@@ -66,9 +66,9 @@ const ecosystem = [
     icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>`,
   },
   {
-    name: 'Xingtu',
-    chineseName: '星图',
-    description: 'La place de marche officielle de KOL sur Douyin. Nous trouvons les createurs, verifions leurs faux abonnes, analysons leurs campagnes passees et la correspondance avec votre audience. Vous validez la liste finale avant toute action.',
+    name: '星图',
+    chineseName: 'Xingtu',
+    description: '抖音官方的KOL交易平台。我们在上面选人、核假粉、看历史项目数据和目标人群匹配度。最终名单你确认过之后再执行。',
     image: '/images/platforms/douyin-ecosystem/xingtu.png',
     bg: '#E8E0D8',
     iconBg: '#FFFFFF',
@@ -78,9 +78,9 @@ const ecosystem = [
     icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
   },
   {
-    name: 'DOU+',
-    chineseName: '抖加',
-    description: 'L\'outil de promotion de contenu pour tester quelles videos resonnent. Investissez un petit budget sur une publication, observez sa performance aupres d\'une audience elargie, puis accelerez ce qui fonctionne.',
+    name: 'DOU+（抖加）',
+    chineseName: 'DOU+',
+    description: '内容加热工具，用来测哪条视频能跑出来。先用一点小预算推一条内容，看它在更大人群里的表现，然后把表现好的那条直接放量。',
     image: '/images/platforms/douyin-ecosystem/dou-plus.png',
     bg: '#B02D2D',
     iconBg: 'rgba(255,255,255,0.2)',
@@ -93,44 +93,44 @@ const ecosystem = [
 
 const services = [
   {
-    title: 'Creation de compte et strategie',
-    description: 'Nous enregistrons et verifions votre compte entreprise, traitons les formalites de conformite et construisons votre strategie de contenu de zero. Piliers editoriaux, calendrier de publication, planning editorial, objectifs KPI.',
-    result: 'Un compte Douyin verifie et actif avec une feuille de route claire.',
+    title: '开户和策略',
+    description: '我们注册、认证你的企业号，处理合规相关的手续，从零开始搭内容策略。内容主线、发布日历、排期、KPI目标。',
+    result: '一个已认证、能开始跑的抖音账号，还有一份清楚的路线图。',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/></svg>`,
     image: '/images/platforms/douyin-services/setup-strategy.png',
   },
   {
-    title: 'Production de contenu',
-    description: 'Des videos natives Douyin produites par notre equipe en Chine. Demos produit, tournages lifestyle, clips pedagogiques, coulisses, formats tendance et mini-dramas. HubStudio.ai pour les visuels et les brouillons de texte. Des locuteurs natifs mandarins revoient chaque piece.',
-    result: 'Du contenu video court et localise, concu pour performer sur Douyin.',
+    title: '内容制作',
+    description: '本地团队做原生抖音视频。产品演示、生活方式、教程、幕后花絮、追热点、小剧情。HubStudio.ai出视觉和文案初稿，本地中文写手一条一条过。',
+    result: '为抖音量身做的、能跑得起来的短视频内容。',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>`,
     image: '/images/platforms/douyin-services/content-production.png',
   },
   {
-    title: 'Live commerce',
-    description: 'Nous concevons et animons des sessions de vente en direct. Selection de l\'animateur, script produit, interaction en temps reel avec l\'audience, bilan de performance apres chaque session. Adapte aux lancements de produits, aux campagnes saisonnieres et aux canaux de vente reguliers.',
-    result: 'Des livestreams generateurs de revenus qui convertissent les spectateurs en acheteurs.',
+    title: '直播带货',
+    description: '我们策划并执行直播场次。主播选择、选品脚本、弹幕互动、直播后复盘。适合新品发布、节日档、或者当做长期销售渠道。',
+    result: '能真正跑出GMV的直播，把观众变成下单的人。',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>`,
     image: '/images/platforms/douyin-services/live-commerce.png',
   },
   {
-    title: 'Campagnes KOL et KOC',
-    description: 'Nous trouvons des createurs via Xingtu et notre propre reseau, construit au fil des annees sur le terrain. Chaque createur est verifie : faux abonnes, resultats de campagnes passees, correspondance avec votre audience. Vous validez la liste finale avant toute action.',
-    result: 'Des campagnes d\'influence avec un engagement verifie et des resultats concrets.',
+    title: 'KOL与KOC项目',
+    description: '我们通过星图和自己多年攒下来的博主网络找人。每个博主都要核一遍：假粉、历史项目数据、跟你目标人群的匹配度。最终名单你确认过之后再执行。',
+    result: '真实互动数据可核的达人项目，带来实打实的结果。',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
     image: '/images/platforms/douyin-services/kol-campaigns.png',
   },
   {
-    title: 'Publicite',
-    description: 'Campagnes payantes via Ocean Engine. TopView pour les grands lancements. In-Feed Ads pour le trafic et les clics. Search Ads pour les acheteurs a forte intention. DOU+ pour les tests. Branded Effects pour l\'engagement utilisateur. Budget publicitaire facture separement, sans marge.',
-    result: 'Des publicites qui touchent la bonne audience avec un reporting transparent des depenses.',
+    title: '广告投放',
+    description: '通过巨量引擎跑投放。TopView做大型发布，信息流广告拉流量和点击，搜索广告抓高意向买家，DOU+用来测试，品牌贴纸拉互动。广告预算单独走账，不加点。',
+    result: '精准触达目标人群，钱花到哪一分都清楚。',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>`,
     image: '/images/platforms/douyin-services/advertising.png',
   },
   {
-    title: 'Douyin Shop',
-    description: 'La boutique integree ou les utilisateurs recherchent, parcourent et achetent vos produits. Nous gerons la creation, les fiches produits, la tarification et l\'optimisation. Chaque video et chaque live que nous produisons redirige le trafic vers la boutique.',
-    result: 'Une boutique qui transforme les spectateurs en clients sans quitter l\'application.',
+    title: '抖音小店',
+    description: '平台内嵌的店铺，用户在这里搜、浏览、下单。我们负责开店、商品详情、定价、优化。我们做的每一条视频、每一场直播都会往店里引流。',
+    result: '把看视频的人变成不离开App就下单的客户。',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>`,
     image: '/images/platforms/douyin-services/douyin-shop.png',
   },
@@ -138,107 +138,107 @@ const services = [
 
 const bestPractices = [
   {
-    title: 'La premiere seconde decide de tout.',
-    description: 'Commencez par du mouvement, une question, un element visuel fort. N\'ouvrez jamais avec un logo. Vous perdrez l\'audience avant meme qu\'elle sache de quoi parle la video.',
+    title: '前一秒决定一切',
+    description: '开头就上动作、问题或者有冲击力的视觉。永远不要拿logo开场——用户还没搞清楚这条视频在讲什么就已经划走了。',
   },
   {
-    title: 'Vertical uniquement. 9:16.',
-    description: 'Si ca ressemble a une pub TV recyclee, les performances seront mauvaises. Douyin est vertical d\'abord, toujours.',
+    title: '只拍竖屏。9:16',
+    description: '一看就像是TVC回收利用的那种内容，数据会非常难看。抖音永远是竖屏优先。',
   },
   {
-    title: 'Trois a cinq publications par semaine, minimum.',
-    description: 'L\'algorithme recompense la regularite. Une semaine de silence et votre portee chute. C\'est aussi simple que ca.',
+    title: '一周至少3到5条',
+    description: '算法奖励稳定更新。停更一周，曝光就会掉。就是这么直接。',
   },
   {
-    title: 'Le taux de visionnage complet est primordial.',
-    description: 'Le signal numero un de l\'algorithme, c\'est le nombre de personnes qui regardent votre video jusqu\'au bout. Supprimez tout ce qui ne justifie pas la seconde suivante.',
+    title: '完播率最重要',
+    description: '算法最看重的信号就是有多少人把你的视频看到最后。每一个片段都要问：这一秒是不是还有理由让人继续看？',
   },
   {
-    title: 'Les tendances evoluent vite.',
-    description: 'Nous suivons quotidiennement les sons, hashtags et formats en vogue. Attraper une tendance tot peut multiplier considerablement la portee d\'une seule video.',
+    title: '热点更新很快',
+    description: '我们每天都在看当下在火的BGM、话题、形式。早一点抓住一个趋势，单条视频的曝光可能翻好几倍。',
   },
   {
-    title: 'Vendez en douceur.',
-    description: 'La vente agressive ne fonctionne pas sur Douyin. Le contenu qui performe informe ou divertit d\'abord. Le produit vient en second.',
+    title: '软卖，不硬推',
+    description: '硬卖在抖音上不吃香。能跑起来的内容都是先提供信息或娱乐，产品放在第二位。',
   },
   {
-    title: 'Le son est indispensable.',
-    description: 'Douyin n\'est pas une plateforme ou l\'on scrolle en silence. Musique, voix off, signaux sonores : ils comptent autant que ce qui apparait a l\'ecran.',
+    title: '音频跟画面一样重要',
+    description: '抖音不是一个静音滑动的平台。BGM、旁白、音效——跟画面同等重要。',
   },
   {
-    title: 'Du mandarin des le depart.',
-    description: 'Le contenu traduit performe mal sur la plateforme. Notre equipe redige tous les textes en mandarin natif.',
+    title: '一开始就用中文写',
+    description: '翻译的内容在这个平台上跑不起来。我们的团队所有文案都用本地中文直接写。',
   },
 ];
 
 const steps = [
   {
     number: '01',
-    title: 'Appel decouverte.',
-    description: 'Parlez-nous de votre marque, de vos objectifs et de votre position actuelle en Chine. Pas de presentation commerciale. Juste les bonnes questions.',
+    title: '先聊聊。',
+    description: '说说你的品牌、目标、以及现在在中国市场的状态。不用准备PPT，就是问该问的问题。',
     icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>`,
   },
   {
     number: '02',
-    title: 'Proposition.',
-    description: 'Un cahier des charges clair. Un prix fixe. Chaque livrable detaille. Vous savez ce que vous obtenez et combien cela coute avant de vous engager.',
+    title: '方案报价。',
+    description: 'SOW写清楚，一口价，每项交付物逐条列出来。你在签字之前就知道能拿到什么、要花多少钱。',
     icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>`,
   },
   {
     number: '03',
-    title: 'En ligne en 2 semaines.',
-    description: 'Onboarding, comptes configures, premier contenu publie. Quatorze jours entre la signature du contrat et la premiere publication.',
+    title: '两周上线。',
+    description: '对接、开户、搭账号、发首条内容。从合同签完到第一条视频推出来，差不多14天。',
     icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>`,
   },
 ];
 
 const faqs = [
   {
-    q: 'Qui gere notre compte ?',
-    a: 'Notre equipe en Chine. Des locuteurs natifs mandarins qui creent du contenu et gerent des campagnes publicitaires sur Douyin au quotidien. Vous disposez d\'un responsable de compte dedie qui connait votre marque.',
+    q: '具体是谁运营我们的账号？',
+    a: '我们自己的团队，人在中国。本地中文写手，每天都在抖音上做内容和广告。你会有一个专属的客户经理对接，他熟悉你的品牌。',
   },
   {
-    q: 'Faut-il une licence commerciale chinoise ?',
-    a: 'Les comptes entreprise necessitent soit une licence commerciale chinoise, soit un partenaire agence autorise. Nous gerons les deux cas. Vous pouvez commencer a publier et a diffuser des publicites sans creer d\'entite locale.',
+    q: '必须有中国营业执照吗？',
+    a: '企业号需要中国营业执照，或者通过一家授权代理商开。两种情况我们都能处理。不用在本地注册实体，你也能开始发布和跑广告。',
   },
   {
-    q: 'Qu\'est-ce qui differencie TheRedScroll ?',
-    a: 'Perimetre fixe, prix fixe. Une equipe sur le terrain en Chine. Une production assistee par l\'IA. Nous avons analyse 37 agences dans ce secteur et aucune ne propose de forfaits a prix fixe.',
+    q: 'TheRedScroll跟别家有什么不一样？',
+    a: '范围写死、一口价。团队常驻中国。AI辅助制作。这个行业的37家同行我们都看过，没有一家做一口价套餐的。',
   },
   {
-    q: 'Combien de temps avant de voir des resultats ?',
-    a: 'La plupart des marques constatent une traction en 8 a 12 semaines. Les campagnes payantes peuvent montrer des resultats en quelques jours. Cela depend de la categorie et du niveau d\'agressivite souhaite.',
+    q: '多久能见到结果？',
+    a: '大多数品牌8到12周就能看到起势。付费广告几天内就能看到数据。具体看品类，也看你想用多激进的打法。',
   },
   {
-    q: 'Quel est le cout ?',
-    a: 'Des forfaits a prix fixe qui detaillent exactement ce que vous obtenez. Le budget publicitaire est facture au cout reel, separement. Aucune marge. Prenez rendez-vous et nous vous recommanderons la formule adaptee.',
+    q: '价格怎么算？',
+    a: '一口价套餐，每一项交付都写清楚。广告预算单独走账，按实际成本算，不加点。先聊一下，我们推荐适合你的方案。',
   },
   {
-    q: 'Peut-on diffuser des publicites sans entite chinoise ?',
-    a: 'Les marques internationales font de la publicite sur Douyin par notre intermediaire en tant qu\'agence autorisee. Aucune incorporation locale requise.',
+    q: '没有中国实体能跑广告吗？',
+    a: '海外品牌可以通过我们作为授权代理在抖音上投广告。不用在本地注册实体。',
   },
   {
-    q: 'Quel type de contenu produisez-vous ?',
-    a: 'Demos produit, videos lifestyle, tutoriels, mini-dramas, collaborations KOL, livestreams. Le tout en mandarin, par notre equipe en Chine. Des outils IA pour la rapidite, une revision humaine sur chaque piece.',
+    q: '你们做什么类型的内容？',
+    a: '产品演示、生活方式、教程、小剧情、KOL合作、直播。全部用中文，由我们在中国的团队做。AI工具负责产能，每一条内容都有人过。',
   },
   {
-    q: 'Comment selectionnez-vous les KOL ?',
-    a: 'Via Xingtu et notre propre reseau. Chaque createur est controle sur les faux abonnes, la qualite de l\'engagement, les donnees demographiques et l\'adequation avec la marque. Vous validez la liste finale.',
+    q: '怎么选KOL？',
+    a: '通过星图和我们自己的博主网络。每个人都要核假粉、互动质量、粉丝画像、跟品牌的匹配度。最终名单你确认过之后再执行。',
   },
   {
-    q: 'Pouvez-vous creer un Douyin Shop ?',
-    a: 'Oui. Creation, fiches produits, tarification, optimisation. Connecte a votre strategie de contenu pour que chaque video redirige les acheteurs vers vos produits.',
+    q: '你们能帮我开抖音小店吗？',
+    a: '可以。开店、商品详情、定价、优化。跟你的内容策略打通，让每一条视频都能把用户往店里带。',
   },
   {
-    q: 'A quoi ressemblent les rapports ?',
-    a: 'Mensuels. Des chiffres clairs. Croissance des abonnes, vues, engagement, efficacite publicitaire, conversions. Ce qui a fonctionne, ce qui n\'a pas fonctionne, ce qui change le mois suivant.',
+    q: '报告长什么样？',
+    a: '每月出报告，数据干净。涨粉、播放、互动、广告效率、转化。哪些跑起来了、哪些没跑起来、下一个月要调什么，都会告诉你。',
   },
 ];
 ---
 
 <PageLayout
-  title="Agence Marketing Douyin | TheRedScroll"
-  description="Services marketing Douyin depuis Shanghai. Contenu, publicite, campagnes KOL, live commerce et creation de Douyin Shop. Perimetre fixe, prix fixe. Prendre rendez-vous."
+  title="抖音营销服务 | TheRedScroll"
+  description="从上海团队出发的抖音营销服务。内容、广告、达人项目、直播带货、小店搭建。范围写死，一口价。预约通话。"
   lang="zh"
 >
   <!-- Hero: Dark hero banner -->
@@ -252,18 +252,18 @@ const faqs = [
     <Container class="relative z-[1]">
       <div class="max-w-[800px] mx-auto text-center">
         <a href="/zh/platforms/others" class="inline-flex items-center gap-[6px] text-[13px] text-[#5C5C5C] mb-[16px] transition-colors duration-150 hover:text-[#FFFFFF]">
-          &larr; Toutes les plateformes
+          &larr; 全部平台
         </a>
         <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">
-          Marketing Douyin
+          抖音营销
         </p>
         <h1 class="text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] text-[#FFFFFF] mb-[8px]">
-          750 millions d'utilisateurs quotidiens. Une seule plateforme. Nous y publions chaque jour.
+          7.5亿日活用户。一个平台。我们每天都在上面发内容。
         </h1>
         <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal mb-[24px]">
-          Services marketing Douyin depuis notre equipe en Chine. Production de contenu, publicite, campagnes KOL, live commerce et Douyin Shop. Perimetre fixe, prix fixe.
+          由我们的本地团队提供的抖音营销服务：内容制作、广告投放、KOL项目、直播带货、抖音小店。范围写死，一口价。
         </p>
-        <Button variant="primary" href="/zh/contact">Prendre rendez-vous</Button>
+        <Button variant="primary" href="/zh/contact">预约通话</Button>
       </div>
     </Container>
   </section>
@@ -275,13 +275,13 @@ const faqs = [
         <div class="max-w-[560px]">
           <SectionBar />
           <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[8px]">
-            Pas des chiffres creux. Votre audience chinoise est deja la.
+            不是给董事会看的虚数。你的用户早就在这里。
           </h2>
           <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
-            Douyin en chiffres.
+            抖音，用数据说话。
           </p>
         </div>
-        <Button variant="primary" href="/zh/contact" class="shrink-0">Prendre rendez-vous</Button>
+        <Button variant="primary" href="/zh/contact" class="shrink-0">预约通话</Button>
       </div>
     </Container>
 
@@ -315,8 +315,8 @@ const faqs = [
         <div class="flex justify-center mb-[12px]">
           <SectionBar />
         </div>
-        <SectionHeading overline="Pourquoi Douyin compte">
-          Portee algorithmique. Commerce integre. Vente en direct native.
+        <SectionHeading overline="为什么抖音重要">
+          算法流量。内嵌电商。原生直播带货。
         </SectionHeading>
       </div>
 
@@ -324,12 +324,12 @@ const faqs = [
         <!-- Card 1: L'algorithme ne regarde pas le nombre d'abonnes -->
         <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
           <div class="w-full aspect-[16/9] overflow-hidden">
-            <img src="/images/platforms/douyin-why/algorithm.png" alt="Utilisateur decouvrant du contenu de marque via le fil algorithmique de Douyin" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+            <img src="/images/platforms/douyin-why/algorithm.png" alt="用户通过抖音推荐流发现品牌内容" class="w-full h-full object-cover" loading="lazy" decoding="async" />
           </div>
           <div class="p-[24px] max-[640px]:p-[20px]">
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">L'algorithme met tout le monde au meme niveau</h3>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">算法面前大家是平等的</h3>
             <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
-              L'algorithme de Douyin ne tient pas compte du nombre d'abonnes. Il s'interesse a la qualite du contenu. Un compte tout neuf peut atteindre des millions de vues avec la bonne video. Les nouveaux entrants sont en competition des le premier jour.
+              抖音的算法不看你有多少粉丝，只看内容质量。一个全新的账号，一条对的视频就能跑到几百万播放。新账号第一天就能跟大号一起竞争。
             </p>
           </div>
         </div>
@@ -337,12 +337,12 @@ const faqs = [
         <!-- Card 2: Tout le parcours dans une seule application -->
         <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
           <div class="w-full aspect-[16/9] overflow-hidden">
-            <img src="/images/platforms/douyin-why/full-funnel.png" alt="Parcours d'achat Douyin de la video au paiement sur smartphone" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+            <img src="/images/platforms/douyin-why/full-funnel.png" alt="抖音从视频到支付的完整购买路径" class="w-full h-full object-cover" loading="lazy" decoding="async" />
           </div>
           <div class="p-[24px] max-[640px]:p-[20px]">
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Decouvrir, decider, acheter. Une seule application.</h3>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">发现、决策、下单，全在一个App里</h3>
             <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
-              Les utilisateurs decouvrent des produits, prennent leur decision et finalisent l'achat sans jamais quitter l'application. Pas de redirection, pas de site externe. Le chemin du contenu a la vente est aussi court que possible.
+              用户在这里发现产品、做决定、下单付款，全程不用跳出App。没有跳转，没有外部网站。从内容到销售的路径短得不能再短了。
             </p>
           </div>
         </div>
@@ -350,19 +350,19 @@ const faqs = [
         <!-- Card 3: Le live commerce est integre -->
         <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
           <div class="w-full aspect-[16/9] overflow-hidden">
-            <img src="/images/platforms/douyin-why/live-built-in.png" alt="Session de live commerce sur Douyin avec spectateurs et panier d'achat" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+            <img src="/images/platforms/douyin-why/live-built-in.png" alt="抖音直播带货场景，显示观众和购物车" class="w-full h-full object-cover" loading="lazy" decoding="async" />
           </div>
           <div class="p-[24px] max-[640px]:p-[20px]">
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Le live commerce est natif</h3>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">直播带货是原生功能</h3>
             <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
-              Certains livestreams de marques attirent des millions de spectateurs en une seule session. La vente en direct fonctionne pour les lancements de produits, les campagnes saisonnieres et les marques qui veulent un canal de vente regulier sur la plateforme.
+              有些品牌一场直播就能拉到几百万观众。直播带货适合新品发布、节日档、或者把它当作长期稳定的销售渠道。
             </p>
           </div>
         </div>
       </div>
 
       <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] mt-[24px] text-center max-w-[680px] mx-auto">
-        Que vos clients aient 22 ou 52 ans, qu'ils vivent dans une ville de premier rang ou de cinquieme rang, ils passent plus de temps sur Douyin que sur toute autre application en Chine. Douyin fonctionne pour la beaute, la mode, l'alimentaire, l'electronique grand public, la maison, l'hotellerie, l'automobile, la sante et le B2B.
+        22岁还是52岁，一线城市还是五线城市——在国内，用户在抖音上花的时间比任何一个App都多。美妆、时尚、食品、消费电子、家居、酒旅、汽车、健康、B2B，这个平台都能跑起来。
       </p>
     </Container>
   </section>
@@ -374,8 +374,8 @@ const faqs = [
         <div class="flex justify-center mb-[12px]">
           <SectionBar />
         </div>
-        <SectionHeading overline="L'ecosysteme Douyin">
-          Six outils qui alimentent le contenu, le commerce et la croissance.
+        <SectionHeading overline="抖音生态">
+          六个互相咬合的工具，支撑内容、电商和增长。
         </SectionHeading>
       </div>
 
@@ -409,7 +409,7 @@ const faqs = [
       <!-- Registration note -->
       <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px] mt-[16px]">
         <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] max-w-[680px]">
-          <span class="text-[#1A1A1A] font-medium">Note d'inscription :</span> Les entreprises etrangeres ont besoin d'une licence commerciale chinoise ou d'un partenaire agence autorise pour ouvrir un compte entreprise. Nous gerons les deux cas pour que vous puissiez publier et diffuser des publicites sans creer d'entite locale.
+          <span class="text-[#1A1A1A] font-medium">关于注册：</span>海外企业需要一张中国营业执照，或者通过授权代理商，才能开企业号。两种情况我们都能处理，你不用在本地注册实体就能开始发布和投广告。
         </p>
       </div>
     </Container>
@@ -422,8 +422,8 @@ const faqs = [
         <div class="flex justify-center mb-[12px]">
           <SectionBar />
         </div>
-        <SectionHeading overline="Ce que nous faisons sur Douyin">
-          Six services. Chacun avec un livrable precis.
+        <SectionHeading overline="我们在抖音上做的事">
+          六项服务。每一项都有具体的交付物。
         </SectionHeading>
       </div>
 
@@ -506,7 +506,7 @@ const faqs = [
                 {service.description}
               </p>
               <p class="text-[13px] font-medium leading-[1.5] text-[#FFFFFF]">
-                Vous obtenez : {service.result}
+                交付：{service.result}
               </p>
             </div>
           </div>
@@ -521,13 +521,13 @@ const faqs = [
       <div class="bg-[#1A1A1A] rounded-[12px] py-[48px] px-[48px] max-[640px]:px-[20px] max-[640px]:py-[32px]">
         <div class="mb-[40px] max-[640px]:mb-[32px]">
           <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">
-            Par notre equipe sur le terrain
+            本地团队经验
           </p>
           <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF]">
-            Comment nous creons du contenu Douyin
+            我们做抖音内容的几个基本原则
           </h2>
           <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.5] mt-[8px] max-w-[680px]">
-            Ce sont les regles que notre equipe applique sur chaque compte que nous gerons.
+            下面这几条，是我们团队在每一个客户账号上都会遵守的规则。
           </p>
         </div>
 
@@ -557,10 +557,10 @@ const faqs = [
             <SectionBar />
             <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">FAQ</p>
             <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">
-              Questions frequentes
+              常见问题
             </h2>
             <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
-              Tout ce que vous devez savoir pour travailler sur Douyin avec TheRedScroll.
+              跟TheRedScroll合作做抖音运营，你可能会想知道的几件事。
             </p>
           </div>
         </div>
@@ -604,10 +604,10 @@ const faqs = [
           <div class="w-[40px] h-[3px] bg-[#CC3333] rounded-none"></div>
         </div>
         <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">
-          Pour commencer
+          合作流程
         </p>
         <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF]">
-          De zero a un compte Douyin actif en deux semaines.
+          从零到一个能跑起来的抖音账号，两周搞定。
         </h2>
       </div>
 
@@ -628,17 +628,17 @@ const faqs = [
       </div>
 
       <div class="text-center mt-[40px]">
-        <Button variant="primary" href="/zh/contact">Prendre rendez-vous</Button>
+        <Button variant="primary" href="/zh/contact">预约通话</Button>
       </div>
 
       <!-- Cross-links -->
       <div class="mt-[48px] pt-[24px] border-t border-[rgba(255,255,255,0.1)] text-center">
-        <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal mb-[12px]">Voir aussi</p>
+        <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal mb-[12px]">也可以看看</p>
         <div class="flex justify-center gap-[24px] flex-wrap">
-          <a href="/zh/platforms/wechat" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Marketing WeChat &rarr;</a>
-          <a href="/zh/platforms/rednote" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Marketing RedNote &rarr;</a>
-          <a href="/zh/platforms/weibo" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Marketing Weibo &rarr;</a>
-          <a href="/zh/platforms/others" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Autres plateformes &rarr;</a>
+          <a href="/zh/platforms/wechat" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">微信营销 &rarr;</a>
+          <a href="/zh/platforms/rednote" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">小红书营销 &rarr;</a>
+          <a href="/zh/platforms/weibo" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">微博营销 &rarr;</a>
+          <a href="/zh/platforms/others" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">更多平台 &rarr;</a>
         </div>
       </div>
     </Container>
