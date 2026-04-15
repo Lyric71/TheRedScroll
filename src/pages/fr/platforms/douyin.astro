@@ -8,9 +8,9 @@ import Button from '../../../components/ui/Button.astro';
 const stats = [
   { label: 'Utilisateurs actifs chaque jour', value: '750M+', image: '/images/platforms/douyin-stats/daily-active-users.png' },
   { label: 'Utilisateurs actifs chaque mois', value: '1B+', image: '/images/platforms/douyin-stats/monthly-active-users.png' },
-  { label: 'Temps passé par utilisateur et par jour', value: '120 min', image: '/images/platforms/douyin-stats/daily-time.png' },
+  { label: 'Temps passé chaque jour, par personne', value: '120 min', image: '/images/platforms/douyin-stats/daily-time.png' },
   { label: 'Volume e-commerce annuel (2024)', value: '¥3.5T', image: '/images/platforms/douyin-stats/ecommerce-sales.png' },
-  { label: 'Progression annuelle des ventes', value: '34%', image: '/images/platforms/douyin-stats/yoy-growth.png' },
+  { label: 'Progression des ventes sur un an', value: '34%', image: '/images/platforms/douyin-stats/yoy-growth.png' },
   { label: 'Lives marchands diffusés chaque jour', value: '30M+', image: '/images/platforms/douyin-stats/live-commerce.png' },
   { label: 'Catégories de contenu recensées', value: '100+', image: '/images/platforms/douyin-stats/content-variety.png' },
   { label: 'Comptes de créateurs actifs', value: '15M+', image: '/images/platforms/douyin-stats/creator-economy.png' },
@@ -20,7 +20,7 @@ const ecosystem = [
   {
     name: 'For You Feed',
     chineseName: '推荐页',
-    description: 'Le fil de recommandation piloté par l\'algorithme. Le nombre d\'abonnés ne pèse quasiment rien dans la balance. Un compte ouvert la veille peut franchir le million de vues avec la bonne vidéo.',
+    description: 'Le fil de recommandation piloté par l\'algorithme. Le nombre d\'abonnés ne pèse quasiment rien dans la balance. Un compte ouvert la veille peut franchir le million de vues avec la bonne vidéo, sans exagérer.',
     image: '/images/platforms/douyin-ecosystem/for-you-feed.png',
     bg: '#1A1A1A',
     iconBg: 'rgba(255,255,255,0.1)',
@@ -32,7 +32,7 @@ const ecosystem = [
   {
     name: 'Live Commerce',
     chineseName: '直播电商',
-    description: 'La vente en direct, intégrée au cœur de l\'application. Choix de l\'animateur, écriture du script produit, interaction en temps réel avec le public. Certaines marques réunissent plusieurs millions de spectateurs sur un seul live.',
+    description: 'La vente en direct, au cœur même de l\'appli. Choix de l\'animateur, écriture du conducteur produit, interaction en temps réel avec le public. Certaines marques rassemblent plusieurs millions de spectateurs sur un seul live.',
     image: '/images/platforms/douyin-ecosystem/live-commerce.png',
     bg: '#CC3333',
     iconBg: 'rgba(255,255,255,0.2)',
@@ -44,7 +44,7 @@ const ecosystem = [
   {
     name: 'Douyin Shop',
     chineseName: '抖音商城',
-    description: 'La boutique intégrée où les utilisateurs cherchent, parcourent et achètent vos produits. Chaque vidéo et chaque live renvoie directement vers la fiche produit. Plus aucune sortie d\'application.',
+    description: 'La boutique intégrée où les utilisateurs cherchent, parcourent et achètent vos produits. Chaque vidéo et chaque live renvoie directement à la fiche produit. Plus aucune sortie d\'appli.',
     image: '/images/platforms/douyin-ecosystem/douyin-shop.png',
     bg: '#F7F2EE',
     iconBg: '#E8E0D8',
@@ -56,7 +56,7 @@ const ecosystem = [
   {
     name: 'Ocean Engine',
     chineseName: '巨量引擎',
-    description: 'La régie publicitaire de ByteDance. TopView pour les grands lancements. In-Feed Ads pour le trafic quotidien. Search Ads pour les acheteurs à forte intention. DOU+ pour tester le contenu. Budget média facturé au coût réel, sans marge cachée.',
+    description: 'La régie publicitaire de ByteDance. TopView pour les grands lancements, In-Feed Ads pour le trafic quotidien, Search Ads pour les acheteurs déjà en intention, DOU+ pour tester le contenu. Budget média refacturé au coût réel, sans marge cachée.',
     image: '/images/platforms/douyin-ecosystem/ocean-engine.png',
     bg: '#1A1A1A',
     iconBg: 'rgba(255,255,255,0.1)',
@@ -68,7 +68,7 @@ const ecosystem = [
   {
     name: 'Xingtu',
     chineseName: '星图',
-    description: 'La place de marché officielle des KOL sur Douyin. Nous repérons les créateurs, traquons les faux abonnés, épluchons leurs campagnes passées et vérifions leur affinité avec votre audience. Vous validez la sélection finale avant tout engagement.',
+    description: 'La place de marché officielle des KOL sur Douyin. Nous sourçons les créateurs, débusquons les faux abonnés, épluchons leurs campagnes passées et jaugeons leur affinité avec votre audience. Vous validez la sélection finale avant tout engagement.',
     image: '/images/platforms/douyin-ecosystem/xingtu.png',
     bg: '#E8E0D8',
     iconBg: '#FFFFFF',
@@ -80,7 +80,7 @@ const ecosystem = [
   {
     name: 'DOU+',
     chineseName: '抖加',
-    description: 'L\'outil maison de boost de contenu, idéal pour identifier les vidéos qui prennent. On injecte un petit budget sur une publication, on observe ses performances auprès d\'un public élargi, puis on accélère ce qui fonctionne.',
+    description: 'L\'outil maison pour booster une vidéo et détecter celles qui prennent. On pose un petit budget sur une publication, on regarde comment elle tient face à un public élargi, puis on appuie sur l\'accélérateur là où ça fonctionne.',
     image: '/images/platforms/douyin-ecosystem/dou-plus.png',
     bg: '#B02D2D',
     iconBg: 'rgba(255,255,255,0.2)',
@@ -94,15 +94,15 @@ const ecosystem = [
 const services = [
   {
     title: 'Ouverture de compte et stratégie',
-    description: 'Nous ouvrons et certifions votre compte entreprise, prenons en charge les formalités de conformité et bâtissons votre stratégie éditoriale de A à Z. Piliers de contenu, calendrier de publication, rythme hebdomadaire, objectifs chiffrés.',
+    description: 'Nous ouvrons et certifions votre compte entreprise, prenons en main les formalités de conformité et bâtissons votre stratégie éditoriale de A à Z. Piliers de contenu, calendrier de publication, cadence hebdomadaire, objectifs chiffrés.',
     result: 'Un compte Douyin certifié, actif, avec une feuille de route limpide.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/></svg>`,
     image: '/images/platforms/douyin-services/setup-strategy.png',
   },
   {
     title: 'Production de contenu',
-    description: 'Des vidéos pensées pour Douyin, tournées par notre équipe sur place en Chine. Démos produit, séquences lifestyle, capsules pédagogiques, coulisses, formats tendance et mini-dramas. HubStudio.ai prend en charge les visuels et les premiers jets de texte. Nos rédacteurs chinois natifs relisent chaque livrable.',
-    result: 'Des vidéos courtes, localisées, calibrées pour performer sur Douyin.',
+    description: 'Des vidéos pensées pour Douyin, tournées par notre équipe sur place en Chine. Démos produit, séquences lifestyle, capsules pédagogiques, coulisses, formats dans l\'air du temps, mini-dramas. HubStudio.ai gère les visuels et les premiers jets de texte. Nos rédacteurs chinois natifs repassent derrière, sur chaque livrable.',
+    result: 'Des vidéos courtes, locales, calibrées pour performer sur Douyin.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>`,
     image: '/images/platforms/douyin-services/content-production.png',
   },
