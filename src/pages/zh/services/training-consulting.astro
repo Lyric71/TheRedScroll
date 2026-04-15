@@ -9,38 +9,38 @@ import GettingStarted from '../../../components/sections/GettingStarted.astro';
 
 
 const faqs = [
-  { q: '多少钱？', a: '看项目范围。一次性咨询从几千元起步。持续数周、带交付物的项目费用更高。培训按固定价格算，看时长和定制程度。所有项目启动前给明确报价，不做开放式收费。' },
-  { q: '培训可以远程吗？', a: '大多数形式远程就能跑，效果也不错。AIGC工作坊因为要动手，面授效果会好一些，但也能按需调成线上。' },
-  { q: '培训一次多少人合适？', a: '理想的是6到15人。做过3个人的小班，也做过接近40人的大班。形式会按人数调，建议提前对一下。' },
-  { q: '课程是定制的吗？', a: '每一次都是。我们按你的行业、平台、对手、团队水平去设计。每次开课前都有一次详细的需求沟通。' },
-  { q: '咨询能转成长期合作吗？', a: '很常见。有的品牌咨询完就切成按月的执行投放。也有的每年沟通一两次，其余时间自己跑。两种模式都行。' },
-  { q: '有没有按平台的专项培训？', a: '抖音广告投放与账户搭建。小红书KOC激活和搜索优化。微信公众号运营和小程序策略。这些可以单开，也可以打包进更大的培训项目。' },
-  { q: '社媒监测是怎么做的？', a: '按月订阅。起步方案一般覆盖你的品牌加3个对手，2个平台。后面按需扩展。' },
-  { q: '没出过事，为什么要先做危机预案？', a: '没出事的时候正是做的最佳时机。大部分品牌都是事情已经发生了才开始想怎么办，那个时候舆论已经在往外传了。提前把框架备好，意味着出事的时候你是在"执行预案"，不是半夜拉人拼方案。' },
+  { q: '大概要花多少钱？', a: '看项目范围。一次性的咨询会议，几千元起步。持续数周、带交付物的项目费用更高。培训按固定价格算，看时长和定制程度。所有项目启动之前都会给出明确报价，不做开放式收费。' },
+  { q: '培训能不能线上做？', a: '大部分课程线上跑起来效果也不错。AIGC工作坊因为要动手，面授的效果会更好一些，但也可以按需要改成线上。' },
+  { q: '培训一次多少人合适？', a: '最理想的是6到15人。我们做过3个人的小班，也做过接近40人的大班。形式会根据人数调整，建议开课前先对一下。' },
+  { q: '课程都是定制的吗？', a: '每一次都是。我们会根据你的行业、主战平台、对手情况和团队水平重新设计。每次开课之前，都会做一次详细的需求沟通。' },
+  { q: '咨询能转成长期合作吗？', a: '这种情况挺常见的。有的品牌咨询完就直接切成按月的执行投放；也有的每年回来沟通一两次，其余时间自己跑。两种模式都行。' },
+  { q: '你们有分平台的专项培训吗？', a: '抖音广告投放和账户搭建；小红书KOC激活和搜索优化；微信公众号运营和小程序策略。这些可以单独开，也可以打包放进更大的培训项目里。' },
+  { q: '社媒监测具体是怎么跑的？', a: '按月订阅。起步方案一般覆盖你自己的品牌加3个对手，跑2个平台，之后再按需要扩展。' },
+  { q: '还没出过事，为什么要先做危机预案？', a: '还没出事的时候，正是做预案最好的时候。大多数品牌都是等事情已经发生了才开始想办法，那个时候舆论已经在往外蔓延。提前把框架备好，意味着真出事的那天你是在"执行预案"，而不是半夜把人拉起来现拼方案。' },
 ];
 
 const gettingStartedSteps = [
   {
-    title: '先聊聊。',
-    description: '看看你的团队现在卡在哪、对这次合作具体想要什么。',
+    title: '先聊一聊',
+    description: '看看你的团队眼下卡在哪儿，这次合作具体想拿到什么。',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
   },
   {
-    title: '定制方案。',
-    description: '形式、主题、时长、交付物。按你的团队和目标单独定。',
+    title: '定制方案',
+    description: '形式、主题、时长、交付物，全部按你的团队和目标单独定。',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>',
   },
   {
-    title: '两周开课。',
-    description: '需求对接、课程准备、现场授课。你的团队带走的是能马上用的东西。',
+    title: '两周开课',
+    description: '需求对接、课程准备、现场授课。学员带走的都是立刻能用上的东西。',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
   },
 ];
 ---
 
 <PageLayout
-  title="中国社媒培训与咨询 | TheRedScroll"
-  description="战略咨询、AIGC工作坊、社媒监测、竞品分析、KOL风险评估、危机预案、投放培训。团队在上海。"
+  title="中国社媒培训和咨询 | TheRedScroll"
+  description="战略咨询、AIGC工作坊、社媒监测、竞品分析、KOL风险尽调、危机预案、投放培训。团队驻扎上海。"
   lang="zh"
 >
 
@@ -49,17 +49,17 @@ const gettingStartedSteps = [
     <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/training-consulting-hero.png')" aria-hidden="true"></div>
     <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
       <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
-        培训与咨询
+        培训和咨询
       </p>
       <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
-        把市场吃透。或者把一个具体问题直接交给我们解决。
+        把市场吃透，或者，把一个具体的问题直接丢给我们处理。
       </h1>
       <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
-        咨询针对具体问题给答案。培训帮你的团队把能力补起来。授课的都是每天还在一线做中国社媒的人。
+        咨询针对具体的问题给答案，培训帮你的团队把能力补起来。上课的，都是每天还在一线跑中国社媒的人。
       </p>
       <div class="flex items-center justify-center gap-[12px] flex-wrap">
         <Button variant="primary" href="/zh/contact">预约通话</Button>
-        <Button variant="secondary-dark" href="#consulting">看咨询服务</Button>
+        <Button variant="secondary-dark" href="#consulting">看看咨询服务</Button>
       </div>
     </div>
   </section>
@@ -72,8 +72,8 @@ const gettingStartedSteps = [
           <svg class="absolute bottom-[-20px] right-[-20px] w-[260px] h-[260px] opacity-[0.06]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
           <div class="relative z-[1]">
             <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">为什么有这项服务</p>
-            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[16px]">有些品牌要的是专业能力，不是多一双手。</h2>
-            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[400px]">不是所有品牌都想什么都外包。有些品牌自己有团队，缺的只是那一层专业经验。</p>
+            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[16px]">有些品牌要的是经验，不是多雇一双手。</h2>
+            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[400px]">不是每个品牌都想把活儿全包出去。有些品牌自己有团队，缺的只是那一层专业判断和经验。</p>
           </div>
           <div class="relative z-[1] mt-[24px]">
             <Button variant="secondary-dark" href="#what-we-do">了解我们的服务</Button>
@@ -81,23 +81,23 @@ const gettingStartedSteps = [
         </div>
         <div class="relative overflow-hidden bg-[#F0F1F4] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">平台真的怎么跑</h3>
-          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">每个平台实际怎么运作。什么内容形式是真有效，而不是会议室里听起来很顺的那些。AI怎么塞进内容生产流程里。</p>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">平台实际怎么跑</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">每个平台在现实里到底是怎么运作的。什么内容形式真正起作用——不是会议室里听着顺耳的那些。AI又该怎么塞进内容生产的流程里。</p>
         </div>
         <div class="relative overflow-hidden bg-[#1A1A1A] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19.439 7.85c-.049.322.059.648.289.878l1.568 1.568c.47.47.706 1.087.706 1.704s-.235 1.233-.706 1.704l-1.611 1.611a.98.98 0 0 1-.837.276c-.47-.07-.802-.48-.968-.925a2.501 2.501 0 1 0-3.214 3.214c.446.166.855.497.925.968a.979.979 0 0 1-.276.837l-1.61 1.61a2.404 2.404 0 0 1-1.705.707 2.402 2.402 0 0 1-1.704-.706l-1.568-1.568a1.026 1.026 0 0 0-.877-.29c-.493.074-.84.504-1.02.968a2.5 2.5 0 1 1-3.237-3.237c.464-.18.894-.527.967-1.02a1.026 1.026 0 0 0-.289-.877l-1.568-1.568A2.402 2.402 0 0 1 1.998 12c0-.617.236-1.234.706-1.704L4.23 8.77c.24-.24.581-.353.917-.303.515.077.877.528 1.073 1.01a2.5 2.5 0 1 0 3.259-3.259c-.482-.196-.933-.558-1.01-1.073-.05-.336.062-.676.303-.917l1.525-1.525A2.402 2.402 0 0 1 12 1.998c.617 0 1.234.236 1.704.706l1.568 1.568c.23.23.556.338.877.29.493-.074.84-.504 1.02-.969a2.5 2.5 0 1 1 3.237 3.237c-.464.18-.894.527-.967 1.02z"/></svg>
-          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">手里有具体的问题</h3>
-          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.6)]">发了一整年内容，数据毫无起色。刚跟代理商分手。KOL预算可能砸太多了，但没有数据可以证实。</p>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">手上拿着一个具体问题</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.6)]">发了整整一年的内容，数据毫无起色。刚跟代理商分手。KOL预算似乎砸太多了，但又拿不出数据来证明。</p>
         </div>
         <div class="relative overflow-hidden bg-[#CC3333] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
-          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">结论来自一线</h3>
-          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.8)]">我们的团队每天都在一线跑投放。给你的建议来自这个月还在起效的打法，来自我们自己每天还在操作的平台。</p>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">结论全部来自一线</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.8)]">我们的团队每天都在一线跑投放。给你的建议，来自这个月还在起效的打法，来自我们自己每天都在操作的那些平台。</p>
         </div>
         <div class="relative overflow-hidden bg-[#E8E0D8] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">合作方式够灵活</h3>
-          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">一次性的战略会议也行，连跑几周的项目也行。有的品牌后面改成按月执行，也有的一年回来一两次。你定节奏，我们跟。</p>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">合作方式很灵活</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">可以只开一次战略会议，也可以连着跑几周一个项目。有的品牌后来直接切成按月执行，也有的每年回来一两次。节奏你定，我们跟。</p>
         </div>
       </div>
     </Container>
@@ -122,17 +122,17 @@ const gettingStartedSteps = [
           </div>
           <div class="col-content">
             <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">战略咨询</h3>
-            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">怎么选平台、内容怎么排、投放架构怎么搭、KOL策略怎么定、社交电商怎么切、对手怎么打。可以是一次性会议，也可以是跑几周的项目。每次合作结束都有能直接动手的文档交给你。</p>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">平台怎么选、内容怎么排、投放架构怎么搭、KOL策略怎么定、社交电商从哪儿切入、对手该怎么打。可以是一次性的战略会议，也可以是跑几周的项目。每次合作结束，都会交给你一份能直接上手的文档。</p>
           </div>
         </div>
 
         <div class="col-panel" data-col-panel>
           <div class="col-label">
-            <span class="col-label-text">内容与 AIGC 咨询</span>
+            <span class="col-label-text">内容和AIGC咨询</span>
           </div>
           <div class="col-content">
-            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">内容与AIGC咨询</h3>
-            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">我们把你的内容生产流程过一遍，找出AI能提速、但又不会拉低质量的环节。提示词框架、定制模型训练、工具怎么选。问题已经不是要不要用AI，而是怎么用。</p>
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">内容和AIGC咨询</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">把你现在的内容生产流程从头过一遍，找出哪些环节AI可以提速，但又不会把质量拉下来。提示词框架、定制模型训练、工具挑选。眼下的问题已经不是要不要用AI，而是该怎么用。</p>
           </div>
         </div>
 
@@ -142,37 +142,37 @@ const gettingStartedSteps = [
           </div>
           <div class="col-content">
             <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">效果审计</h3>
-            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">账号表现、内容质量、互动率、广告投入、KOL合作、竞品对标。一份书面报告白纸黑字写清楚：哪块有效、哪块没用、哪块要调。自己团队直接上手也行，转交给代理商也行。</p>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">账号表现、内容质量、互动率、广告投入、KOL合作、竞品对标——全部过一遍。最后一份书面报告白纸黑字写清楚：哪块有效、哪块没用、哪块得调。你的团队直接上手也行，转交给代理商也行。</p>
           </div>
         </div>
 
         <div class="col-panel" data-col-panel>
           <div class="col-label">
-            <span class="col-label-text">社交媒体监测</span>
+            <span class="col-label-text">社媒监测</span>
           </div>
           <div class="col-content">
             <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">社媒监测</h3>
-            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">品牌提及、舆情走向、热门话题、对手动作，覆盖小红书、抖音、微信、微博、知乎。自动化工具加上海团队的人工复核，一起跑。</p>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">品牌提及、舆情走向、热门话题、对手动作，覆盖小红书、抖音、微信、微博、知乎。自动化工具加上海团队的人工复核，两头一起跑。</p>
           </div>
         </div>
 
         <div class="col-panel" data-col-panel>
           <div class="col-label">
-            <span class="col-label-text">竞品分析</span>
+            <span class="col-label-text">竞品拆解</span>
           </div>
           <div class="col-content">
-            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">竞品分析</h3>
-            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">按月或按季度出报告，覆盖你5到10个主要对手：内容打法、发布频率、互动趋势、KOL合作、广告投放、最近在上哪些新品。</p>
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">竞品拆解</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">按月或按季度出一份报告，覆盖你5到10家主要对手：内容打法、发布频率、互动走势、KOL合作、广告投放，最近上了什么新品——一项不落。</p>
           </div>
         </div>
 
         <div class="col-panel rounded-r-[10px] max-[640px]:rounded-r-none max-[640px]:rounded-b-[10px]" data-col-panel>
           <div class="col-label">
-            <span class="col-label-text">KOL风险排查</span>
+            <span class="col-label-text">KOL风险尽调</span>
           </div>
           <div class="col-content">
-            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">KOL风险排查</h3>
-            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">跟KOL或明星合作之前先做尽调。历史争议、政治敏感度、品牌冲突、假粉、真实受众画像。一条一条过。</p>
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">KOL风险尽调</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">在跟KOL或明星签约之前先做一轮尽调。历史争议、政治敏感度、品牌冲突、假粉、真实受众画像——一条一条过完再拍板。</p>
           </div>
         </div>
 
@@ -184,14 +184,14 @@ const gettingStartedSteps = [
   <section class="mt-[96px] max-[640px]:mt-[64px]">
     <Container>
       <div class="bg-[#1A1A1A] rounded-[12px] p-[48px] max-[640px]:p-[32px_20px]">
-        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">危机管理</p>
-        <h2 class="text-[#FFFFFF] text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] mb-[16px]">做危机预案最好的时间，是还没出事的时候。</h2>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">危机应对</p>
+        <h2 class="text-[#FFFFFF] text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] mb-[16px]">做危机预案，最好的时机就是还没出事的时候。</h2>
         <div class="max-w-[680px] flex flex-col gap-[24px]">
           <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
-            KOL合作翻车了怎么办。产品在小红书上被负面带节奏怎么接。一次文化失误在微博上开始扩散，该按什么流程走。
+            合作的KOL翻车了怎么办？产品在小红书上被带节奏，怎么接？一次文化失误开始在微博上蔓延，又该按哪一套流程走？
           </p>
           <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
-            监测触发机制、回应模板、升级流程、各平台的应对动作。我们提前帮你全部准备好放在手边，出事那天直接启用，不用半夜再拼方案。如果事情已经超出社媒范围，我们会帮你对接专业的危机公关团队。
+            监测触发机制、回应模板、升级流程、各平台对应的动作，我们提前帮你全部准备好放在手边。真出事那天直接启用，不用半夜再把人拉起来现拼方案。一旦事情已经超出社媒范围，我们还会帮你对接专业的危机公关团队。
           </p>
         </div>
       </div>
@@ -213,33 +213,33 @@ const gettingStartedSteps = [
 
         <div class="col-panel is-active rounded-l-[10px] max-[640px]:rounded-l-none max-[640px]:rounded-t-[10px]" data-col-panel>
           <div class="col-label">
-            <span class="col-label-text">社交媒体全景</span>
+            <span class="col-label-text">中国社媒全景</span>
           </div>
           <div class="col-content">
             <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">中国社媒全景</h3>
-            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[12px]">适合刚进入中国市场、或者想把现有认知系统梳一遍的团队。主流平台、用户画像、内容形式、广告产品，以及它们互相之间怎么联动。带实战案例和你这个行业的竞品速览。</p>
-            <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] opacity-[0.7]">半天或一天。线下、线上都可以。适合：市场团队、高管层、品牌负责人。</p>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[12px]">适合刚进中国市场，或者想把现有认知系统性梳一遍的团队。主流平台、用户画像、内容形式、广告产品，以及这几样之间怎么互相带动。课上带实战案例，还会顺便把你所在行业的对手速览过一遍。</p>
+            <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] opacity-[0.7]">半天或一天，线下线上都行。适合：市场团队、管理层、品牌负责人。</p>
           </div>
         </div>
 
         <div class="col-panel" data-col-panel>
           <div class="col-label">
-            <span class="col-label-text">策划与执行投放</span>
+            <span class="col-label-text">Campaign策划和执行</span>
           </div>
           <div class="col-content">
-            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">campaign策划和执行</h3>
-            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[12px]">从brief到复盘。内容日历、各平台的制作适配、KOL筛选、广告搭建、效果衡量。课程结束那天，学员手上会带走一份自己品牌的campaign方案初稿。</p>
-            <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] opacity-[0.7]">一到两天，实操形式。适合：社媒运营、内容团队、代理商对接团队。</p>
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Campaign策划和执行</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[12px]">从brief一直到最后复盘。内容日历、各平台的制作适配、KOL筛选、广告搭建、效果衡量。课程结束那天，每个学员手上都会带走一份自己品牌的Campaign方案初稿。</p>
+            <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] opacity-[0.7]">一到两天，实操为主。适合：社媒运营、内容团队、代理商对接团队。</p>
           </div>
         </div>
 
         <div class="col-panel" data-col-panel>
           <div class="col-label">
-            <span class="col-label-text">AIGC 融入内容生产</span>
+            <span class="col-label-text">AIGC融入内容生产</span>
           </div>
           <div class="col-content">
-            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">把AIGC塞进内容生产</h3>
-            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[12px]">目前主流的文字、图片、视频AI工具。提示词工程。定制模型训练。批量生产流程怎么搭。怎么控质量。AI生成内容的标注合规（2025年9月起生效的规定）。</p>
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">把AIGC接进内容生产流程</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[12px]">目前主流的文字、图片、视频AI工具。提示词工程。定制模型训练。批量生产流程怎么搭，质量怎么控。还有AI生成内容的标注合规（2025年9月起生效的规定）。</p>
             <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] opacity-[0.7]">半天到一天，带现场演示。适合：内容制作人、创意总监、制作负责人。</p>
           </div>
         </div>
@@ -250,8 +250,8 @@ const gettingStartedSteps = [
           </div>
           <div class="col-content">
             <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">直播带货</h3>
-            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[12px]">直播到底怎么做才赚钱。平台怎么选（抖音、淘宝直播、微信视频号）。主播训练、脚本怎么写、选品怎么排、限时促销怎么设、弹幕互动怎么接。我们把当前跑得最好的直播案例拆开讲，顺着数据看是什么在起作用。</p>
-            <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] opacity-[0.7]">半天，带视频案例拆解和策划练习。适合：电商团队、品牌负责人、市场总监。</p>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[12px]">直播到底怎么做才能赚钱。平台怎么选（抖音、淘宝直播、微信视频号）。主播怎么培养、脚本怎么写、选品怎么排、限时促销怎么设、弹幕怎么接。我们会把当前跑得最好的直播案例一个个拆开讲，顺着数据去看，到底是什么在起作用。</p>
+            <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] opacity-[0.7]">半天，含视频案例拆解和策划练习。适合：电商团队、品牌负责人、市场总监。</p>
           </div>
         </div>
 
@@ -368,8 +368,8 @@ const gettingStartedSteps = [
         <div class="flex gap-[48px] max-[768px]:flex-col items-center">
           <div class="flex-1 min-w-0">
             <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[12px]">客户案例</p>
-            <h3 class="text-[24px] max-[640px]:text-[20px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[12px]">Langnese：给德国头号蜂蜜品牌重新定位，加速打开中国市场</h3>
-            <p class="text-[15px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[20px]">这个德国头部蜂蜜品牌要在中国市场把定位重新磨一遍。一套九大支柱的结构化方案让它打开了新渠道、触达了新人群，也把增长势头带了起来。</p>
+            <h3 class="text-[24px] max-[640px]:text-[20px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[12px]">Langnese：替德国头号蜂蜜品牌重新定位，加速打入中国市场</h3>
+            <p class="text-[15px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[20px]">这家德国头部蜂蜜品牌要在中国市场把定位重新磨一遍。一套围绕九大支柱展开的结构化方案，帮它打开了新渠道、触达了新人群，也把增长势头真正带了起来。</p>
             <span class="text-[14px] font-medium text-[var(--color-vermillion)] group-hover:underline">看案例 →</span>
           </div>
           <img
@@ -385,16 +385,16 @@ const gettingStartedSteps = [
   </section>
 
   <GettingStarted lang="zh"
-    heading="从第一次通话到培训交付，两周内完成。"
+    heading="从第一次通话，到培训正式交付，两周之内搞定。"
     steps={gettingStartedSteps}
     backgroundImage="/images/getting-started/training-consulting.png"
     crossLinks={[
-      { label: '策略与投放', href: '/zh/services/strategy-campaigns' },
+      { label: '策略和Campaign执行', href: '/zh/services/strategy-campaigns' },
       { label: '内容制作', href: '/zh/services/content-production' },
-      { label: '市场进入', href: '/zh/services/market-entry' },
+      { label: '达人营销', href: '/zh/services/influencer-marketing' },
     ]}
   />
 
-  <FaqAccordion lang="zh" faqs={faqs} subtitle="关于培训与咨询，大家最常问的几个问题。" />
+  <FaqAccordion lang="zh" faqs={faqs} subtitle="关于培训和咨询，客户问得最多的几个问题。" />
 
 </PageLayout>

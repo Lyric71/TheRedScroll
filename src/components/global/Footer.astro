@@ -11,16 +11,20 @@ const { lang = 'en' } = Astro.props;
 const lp = (path: string) => localizedPath(path, lang);
 const currentYear = new Date().getFullYear();
 
+const services = [
+  { label: t('footer.strategyAnalytics', lang), href: lp('/services/strategy-campaigns') },
+  { label: t('footer.contentProduction', lang), href: lp('/services/content-production') },
+  { label: t('footer.influencerMarketing', lang), href: lp('/services/influencer-marketing') },
+  { label: t('footer.advertising', lang), href: lp('/services/advertising') },
+  { label: t('footer.crmPrivateDomain', lang), href: lp('/services/crm-private-domain') },
+  { label: t('footer.trainingConsulting', lang), href: lp('/services/training-consulting') },
+];
+if (lang !== 'zh') {
+  services.splice(4, 0, { label: t('footer.chinaMarketEntry', lang), href: lp('/services/market-entry') });
+}
+
 const footerLinks = {
-  services: [
-    { label: t('footer.strategyAnalytics', lang), href: lp('/services/strategy-campaigns') },
-    { label: t('footer.contentProduction', lang), href: lp('/services/content-production') },
-    { label: t('footer.influencerMarketing', lang), href: lp('/services/influencer-marketing') },
-    { label: t('footer.advertising', lang), href: lp('/services/advertising') },
-    { label: t('footer.chinaMarketEntry', lang), href: lp('/services/market-entry') },
-    { label: t('footer.crmPrivateDomain', lang), href: lp('/services/crm-private-domain') },
-    { label: t('footer.trainingConsulting', lang), href: lp('/services/training-consulting') },
-  ],
+  services,
   discover: [
     { label: t('footer.about', lang), href: lp('/about') },
     { label: t('footer.platforms', lang), href: lp('/platforms/others') },

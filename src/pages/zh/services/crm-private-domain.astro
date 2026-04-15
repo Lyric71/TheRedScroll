@@ -9,38 +9,38 @@ import GettingStarted from '../../../components/sections/GettingStarted.astro';
 
 
 const faqs = [
-  { q: '没有线下门店，企微还有用吗？', a: '只要团队里有人直接跟客户沟通，就有用。客户经理、销售、售后都算。如果业务完全是纯线上、没有人工互动，那精力可以集中在小程序CRM和社群上。但说句实在话，大部分一开始觉得"用不上企微"的品牌，真跑起来之后基本都会改口。' },
-  { q: '多大的用户量才值得开始做？', a: '门槛大概在2000到3000活跃粉丝。低于这个数，自动化和社群运营的投入很难回本。过了这条线，回报会明显加速。' },
-  { q: '私域能替代广告吗？', a: '能降低对广告的依赖，但完全替代做不到。公域流量依然是拉新的必经之路。私域主要是留存和复购。跑得好的品牌会让两条线并行，对广告的依赖一个月一个月往下走。' },
-  { q: '你们用什么CRM工具？', a: '微信原生场景下我们一般用腾讯企点或纷享销客。如果品牌本身已经在用Salesforce、HubSpot或Dynamics，我们会搭一层连接器做数据同步。最终用什么，看你们内部现有的工具体系。' },
-  { q: '微信群和会员积分体系有什么区别？', a: '会员体系记录积分，微信群承载对话。群里的成员之间可以交流、分享体验、晒评价、参加活动。真正跑得起来的品牌是两头一起上：CRM管数据和自动化，社群管人情味。' },
-  { q: '销售离职了怎么办？', a: '用个人微信，客户会跟员工一起走。用企微，客户关系归企业。离职后客户可以重新分配，历史聊天记录完整保留，不用从头介绍自己。' },
-  { q: '效果怎么衡量？', a: '留存率、复购率、客户终身价值（LTV）、社群活跃度、CRM动作转化率、私域营收占总营收的比例。每个月出报告。' },
-  { q: '只围绕微信吗？', a: '基本上是的。微信是唯一一个能跑完整闭环的平台：公众号、小程序、企微、社群、视频号、微信支付。有些品牌会在抖音粉丝群或小红书社区上做一点轻量运营，但这些工具的能力差一截。认真做私域，都是从微信开始。' },
+  { q: '没有线下门店，企业微信还用得上吗？', a: '只要团队里有人直接跟客户沟通，就用得上。客户经理、销售、售后这些岗位都算。如果业务完全是纯线上、没有人工互动，那精力可以集中在小程序CRM和社群上。但说句实在话，大多数一开始觉得"用不上企微"的品牌，真跑起来之后基本都会改口。' },
+  { q: '用户量要做到多大才值得动手？', a: '门槛大概在2,000到3,000个活跃粉丝。低于这个数，自动化和社群运营的投入很难回本。过了这条线，回报会明显加速。' },
+  { q: '做私域是不是就不用投广告了？', a: '能明显降低对广告的依赖，但完全替代做不到。公域流量依然是拉新的必经之路，私域主要承担留存和复购。跑得好的品牌是两条线并行——广告预算会一个季度一个季度往下走。' },
+  { q: '你们用的是哪套CRM工具？', a: '微信原生的场景，我们一般用腾讯企点或纷享销客。如果品牌本身已经在用Salesforce、HubSpot或Dynamics，我们会搭一层连接器做数据同步。最终用什么，还是看你们内部现有的工具体系。' },
+  { q: '微信群和会员积分体系有什么区别？', a: '会员体系负责记录积分，微信群承载的是对话。群里的成员之间可以交流、分享体验、晒评价、参加活动。真正跑得起来的品牌两头都要上：CRM管数据和自动化，社群管人情味。' },
+  { q: '销售离职了，客户会跟着走吗？', a: '用个人微信，客户多半会跟员工一起走。用企业微信就不会——客户关系归公司。销售离职后，客户可以直接重新分配，历史聊天记录完整保留，不用从头自我介绍。' },
+  { q: '效果怎么衡量？', a: '留存率、复购率、客户终身价值（LTV）、社群活跃度、CRM动作转化率，以及私域营收在总营收里的占比。每个月出一次报告。' },
+  { q: '这一块只做微信吗？', a: '基本上是的。微信是唯一一个能把公众号、小程序、企业微信、社群、视频号、微信支付全部串起来跑闭环的平台。有些品牌会在抖音粉丝群或小红书社区上做一点轻量运营，但这些工具的能力还差一截。真要认真做私域，都是从微信起手。' },
 ];
 
 const gettingStartedSteps = [
   {
-    title: '先聊聊。',
-    description: '看看你的品牌、现有用户基础，以及私域在你的增长路径里怎么卡位。',
+    title: '先聊一聊',
+    description: '看看你的品牌、现有的用户基础，以及私域在你的增长路径里到底该扮演什么角色。',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
   },
   {
-    title: 'CRM方案。',
-    description: '企微部署、社群策略、自动化触达、CRM集成——每一项范围都写清楚。',
+    title: 'CRM方案',
+    description: '企业微信部署、社群策略、自动化触达、CRM打通——每一项的范围都写得清清楚楚。',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>',
   },
   {
-    title: '三周上线。',
-    description: '企微配置完成，首批社群拉起来，自动化就位。社区从第一天就开始成形。',
+    title: '三周上线',
+    description: '企业微信配置完成、首批社群拉起来、自动化就位。社群从第一天起就开始成形。',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
   },
 ];
 ---
 
 <PageLayout
-  title="微信CRM与私域 | TheRedScroll"
-  description="微信CRM、企微部署、私域策略。社群运营、小程序CRM、用户激活。上海本地团队。"
+  title="微信CRM和私域运营 | TheRedScroll"
+  description="微信CRM、企业微信部署、私域策略。社群运营、小程序CRM、用户激活。上海本地团队。"
   lang="zh"
 >
 
@@ -49,17 +49,17 @@ const gettingStartedSteps = [
     <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/crm-private-domain-hero.png')" aria-hidden="true"></div>
     <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
       <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
-        CRM与私域
+        CRM和私域
       </p>
       <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
-        粉丝是你最值钱的资产。把客户关系握在自己手里。
+        粉丝，才是你最值钱的资产。客户关系，自己握在手里。
       </h1>
       <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
-        在微信里做直接、长期的客户关系。不被平台抽点，不让算法替你决定谁能看见什么。
+        在微信里跟客户建立直接、长期的关系。不被平台抽点，也不让算法替你决定谁能看到什么。
       </p>
       <div class="flex items-center justify-center gap-[12px] flex-wrap">
         <Button variant="primary" href="/zh/contact">预约通话</Button>
-        <Button variant="secondary-dark" href="#what-we-do">看看我们的服务</Button>
+        <Button variant="secondary-dark" href="#what-we-do">看看我们做什么</Button>
       </div>
     </div>
   </section>
@@ -71,9 +71,9 @@ const gettingStartedSteps = [
         <div class="relative col-span-2 row-span-2 max-[640px]:col-span-1 max-[640px]:row-span-1 bg-[#1A1A1A] rounded-[12px] p-[32px] max-[640px]:p-[20px] flex flex-col justify-between min-h-[320px] max-[640px]:min-h-0 overflow-hidden">
           <svg class="absolute bottom-[-20px] right-[-20px] w-[260px] h-[260px] opacity-[0.06]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
           <div class="relative z-[1]">
-            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">为什么这事重要</p>
-            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[16px]">流量不是你的，是平台租给你的。</h2>
-            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[400px]">谁能看到你的内容，算法说了算。广告成本一夜涨30%？你的触达直接缩水，一点办法都没有。私域是把主动权拿回到自己手里。</p>
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">为什么这事要紧</p>
+            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[16px]">流量不是你的，是平台"租"给你的。</h2>
+            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[400px]">谁能看到你的内容，算法说了算。广告成本一夜涨三成？你的触达直接缩水，毫无办法。私域，就是把主动权重新拿回自己手里。</p>
           </div>
           <div class="relative z-[1] mt-[24px]">
             <Button variant="secondary-dark" href="#what-we-do">了解我们的服务</Button>
@@ -82,22 +82,22 @@ const gettingStartedSteps = [
         <div class="relative overflow-hidden bg-[#F0F1F4] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
           <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">客户是你自己的</h3>
-          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">公众号粉丝、企微联系人、群成员、小程序用户——这些人是主动选了你。想触达他们，不用再给平台交一遍佣金。</p>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">公众号粉丝、企业微信联系人、群成员、小程序用户——这些人是自己主动选了你。想再触达他们，不用再给平台交一遍买路钱。</p>
         </div>
         <div class="relative overflow-hidden bg-[#1A1A1A] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
-          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">复购一单一单堆起来</h3>
-          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.6)]">私域的转化率普遍比公域高出一大截。一些品牌跑下来，85%以上的复购都来自私域用户。</p>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">复购是一单一单堆出来的</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.6)]">私域的转化率普遍比公域高出一大截。有些品牌跑到后面，85%以上的复购都来自私域用户。</p>
         </div>
         <div class="relative overflow-hidden bg-[#CC3333] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 13L2 9z"/><path d="M2 9h20"/><path d="M12 22L6 9"/><path d="M12 22l6-13"/><path d="M6 3l6 6 6-6"/></svg>
-          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">单个客户的价值高出一截</h3>
-          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.8)]">群内限时秒杀、企微一对一顾问、VIP尝鲜、个性化推荐。人数不多，但每一个都创造出超出预期的生意。</p>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">单个客户的价值明显更高</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.8)]">群内限时秒杀、企业微信一对一顾问、VIP提前尝鲜、个性化推荐。人数可能不多，但每一位都能做出远超预期的生意。</p>
         </div>
         <div class="relative overflow-hidden bg-[#E8E0D8] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg>
           <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">广告预算一个季度比一个季度少</h3>
-          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">社群到了一定规模，私域的投产比会压过所有其他渠道。做得顺手的品牌，广告预算是一个季度一个季度往下走的。</p>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">社群一旦做到一定规模，私域的投产比会压过其他所有渠道。跑得顺手的品牌，广告预算就是一个季度一个季度地往下走。</p>
         </div>
       </div>
     </Container>
@@ -108,27 +108,27 @@ const gettingStartedSteps = [
     <Container>
       <div class="bg-[#1A1A1A] rounded-[12px] p-[48px] max-[640px]:p-[32px_20px]">
         <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">基础概念</p>
-        <h2 class="text-[#FFFFFF] text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] mb-[32px]">微信和WeCom：有什么区别</h2>
+        <h2 class="text-[#FFFFFF] text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] mb-[32px]">微信和企业微信：到底有什么区别</h2>
         <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[24px] mb-[32px]">
           <div>
             <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">微信</h3>
             <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
-              面向普通用户的社交App，13亿用户。聊天、朋友圈、公众号、小程序、微信支付、视频号。你的客户每天都在里面。
+              面向普通用户的社交App，用户规模超过13亿。聊天、朋友圈、公众号、小程序、微信支付、视频号，一应俱全。你的客户每天都在里面。
             </p>
           </div>
           <div>
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">WeCom（企业微信）</h3>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">企业微信</h3>
             <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
-              一套独立的企业端App，专门给企业跟客户沟通、团队协作用的。把1400万家企业和7.5亿微信用户串在一起。
+              独立的企业端App，专门用来做企业和客户的沟通、以及团队内部协作。目前已经把1,400万家企业和7.5亿微信用户串在了一起。
             </p>
           </div>
         </div>
         <div class="max-w-[680px] flex flex-col gap-[24px]">
           <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
-            你的团队可以直接把消息发到客户的个人微信里。消息就躺在客户日常的聊天列表里，看起来跟朋友之间发来一句话没什么两样，不是那种一眼能看出来是群发的广告。
+            你的团队可以直接把消息发到客户的个人微信里。消息就落在客户日常的聊天列表里，看起来就像朋友发来的一句话，不是那种一眼就能看出来的群发广告。
           </p>
           <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
-            销售不再用个人微信加客户——那样的联系人公司既看不到也管不了。换成企微账号之后，聊天记录留痕、数据同步进CRM。哪天销售离职，客户关系还留在公司里。
+            销售不再拿个人微信加客户——那样的联系人公司既看不到也留不住。换成企业微信账号之后，聊天记录自动留痕，数据同步进CRM。哪天销售离职了，客户关系也还牢牢留在公司。
           </p>
         </div>
       </div>
@@ -139,10 +139,10 @@ const gettingStartedSteps = [
   <section id="what-we-do" class="mt-[96px] max-[640px]:mt-[64px] scroll-mt-[76px]">
     <Container>
       <SectionBar />
-      <SectionHeading overline="我们的服务">WeCom配置与CRM集成</SectionHeading>
+      <SectionHeading overline="我们做的事">企业微信配置和CRM打通</SectionHeading>
 
       <div class="rounded-[12px] overflow-hidden mt-[24px]">
-        <img src="/images/what-we-do/crm-private-domain.png" alt="TheRedScroll团队正在配置WeCom CRM流程" class="w-full aspect-[5/2] max-[640px]:aspect-[16/10] object-cover" loading="lazy" decoding="async" />
+        <img src="/images/what-we-do/crm-private-domain.png" alt="TheRedScroll团队正在配置企业微信和CRM流程" class="w-full aspect-[5/2] max-[640px]:aspect-[16/10] object-cover" loading="lazy" decoding="async" />
       </div>
 
       <div class="grid grid-cols-3 max-[768px]:grid-cols-1 gap-[24px] -mt-[72px] max-[768px]:-mt-[32px] px-[32px] max-[768px]:px-[0px] relative z-[1]">
@@ -150,22 +150,22 @@ const gettingStartedSteps = [
           <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
             <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
           </div>
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">企微部署</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">把企微快速搭起来，工具全部打通。开账号、分角色、接公众号、接小程序、接CRM。所有客户数据落到同一个地方。</p>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">企业微信部署</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">把企业微信快速搭起来，工具之间全部打通。开账号、分角色、接公众号、接小程序、接CRM。所有客户数据，最后都落到同一个地方。</p>
         </div>
         <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
           <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
             <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
           </div>
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">微信CRM和小程序</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">CRM这一层直接嵌进微信里。客户档案、购买记录、会员等级、优惠券发放、精准推送、自动化召回，全在一个App里跑完。</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">CRM这一层直接嵌进微信里。客户档案、购买记录、会员等级、优惠券发放、精准推送、自动化召回——全都在一个App里跑完。</p>
         </div>
         <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
           <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
             <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">私域运营策略</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">选什么渠道、公域怎么往私域引、分层怎么触达、效果怎么看。PIPL合规第一天就搭进去。</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">渠道怎么选、公域流量怎么往私域引、用户分层怎么触达、效果怎么看。个人信息保护法（PIPL）的合规，从第一天就搭进去。</p>
         </div>
       </div>
     </Container>
@@ -175,28 +175,28 @@ const gettingStartedSteps = [
   <section class="mt-[96px] max-[640px]:mt-[64px]">
     <Container>
       <SectionBar />
-      <SectionHeading overline="社群运营">社群搭建与持续活跃</SectionHeading>
+      <SectionHeading overline="社群运营">把社群搭起来，再一直养活</SectionHeading>
 
       <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px] mt-[24px]">
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <img src="/images/crm/group-segmentation.svg" alt="" class="w-full max-w-[280px] mb-[20px]" />
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">社群分层</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">按画像、兴趣、城市、消费记录把群拆开。每个群各自的内容节奏、专属运营、固定活动，不混着跑。</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">按画像、兴趣、城市、消费记录把群拆开。每个群都有自己的内容节奏、专属运营、固定活动，不混着跑。</p>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <img src="/images/crm/activations.svg" alt="" class="w-full max-w-[280px] mb-[20px]" />
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">激活运营</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">会员专享的新品尝鲜、群内独家价、创始人答疑、用户共创挑战、投票调研再按结果动手。这不是群发消息，是靠对话一步步养关系。</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">会员专享的新品尝鲜、群内独家价、创始人亲自答疑、用户共创挑战，再到投票调研、拿到结果之后立刻动手。这不是简单的群发，是靠一轮一轮的对话把关系养起来。</p>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <img src="/images/crm/brand-personas.svg" alt="" class="w-full max-w-[280px] mb-[20px]" />
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">品牌人设</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">有一些品牌更进一步，让一个虚拟人物来运营社群。一个名字、一种语气、一段故事。群里的氛围不像官方通知，更像朋友给你支招。做得到位，这是我们见过最吃香的社群打法之一。</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">有些品牌会更进一步——让一个虚拟人物来运营社群。一个名字、一种语气、一段故事。群里的氛围不像官方通知，更像朋友顺手给你支招。玩得到位，这是我们见过最吃得开的社群打法之一。</p>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <img src="/images/crm/crm-automation.svg" alt="" class="w-full max-w-[280px] mb-[20px]" />
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">CRM自动化</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">给500个VIP定向推新品首发。发起限时秒杀，实时盯转化。90天没消费的客户自动召回。一次搭好，核心流程就能一直跑，不用人盯。</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">给500位VIP定向推新品首发。发起限时秒杀，实时盯着转化。90天没消费的客户自动召回。搭好一次，核心流程就能一直跑下去，不用有人专门盯着。</p>
         </div>
       </div>
     </Container>
@@ -209,13 +209,13 @@ const gettingStartedSteps = [
         <div class="flex gap-[48px] max-[768px]:flex-col items-center">
           <div class="flex-1 min-w-0">
             <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[12px]">客户案例</p>
-            <h3 class="text-[24px] max-[640px]:text-[20px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[12px]">Viessmann：用社媒把国内电商生意推起来</h3>
-            <p class="text-[15px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[20px]">抖音负责在漏斗最上层拉流量。小红书完成种草。企微把转化和复购接住。线上营收一个月比一个月高。</p>
+            <h3 class="text-[24px] max-[640px]:text-[20px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[12px]">Viessmann：靠社媒把国内电商生意做起来</h3>
+            <p class="text-[15px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[20px]">抖音负责在漏斗最上端拉流量，小红书完成种草，企业微信在末端把转化和复购接住。整个链路跑通之后，线上营收一个月比一个月高。</p>
             <span class="text-[14px] font-medium text-[var(--color-vermillion)] group-hover:underline">看案例 →</span>
           </div>
           <img
             src="/images/clients/Viessmann/Viessman-climate-solution.avif"
-            alt="Viessmann中国气候方案"
+            alt="Viessmann中国气候产品线"
             class="w-[45%] max-[768px]:w-full aspect-[16/10] object-cover rounded-[10px]"
             loading="lazy"
             decoding="async"
@@ -226,17 +226,17 @@ const gettingStartedSteps = [
   </section>
 
   <GettingStarted lang="zh"
-    heading="从零到私域上线运行，只需三周。"
+    heading="从零起步，到私域正式跑起来，三周就够。"
     steps={gettingStartedSteps}
     backgroundImage="/images/getting-started/crm-private-domain.png"
     crossLinks={[
-      { label: '策略与推广', href: '/zh/services/strategy-campaigns' },
-      { label: '市场进入', href: '/zh/services/market-entry' },
+      { label: '策略和Campaign执行', href: '/zh/services/strategy-campaigns' },
+      { label: '达人营销', href: '/zh/services/influencer-marketing' },
       { label: '广告投放', href: '/zh/services/advertising' },
     ]}
   />
 
-  <FaqAccordion lang="zh" faqs={faqs} subtitle="关于CRM和私域，大家最常问的几个问题。" />
+  <FaqAccordion lang="zh" faqs={faqs} subtitle="关于CRM和私域，客户问得最多的几个问题。" />
 
 
 </PageLayout>

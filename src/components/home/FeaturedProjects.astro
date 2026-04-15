@@ -12,22 +12,26 @@ interface Props {
 const { lang = 'en' } = Astro.props;
 const lp = (path: string) => localizedPath(path, lang);
 
-const projectText: Record<string, { title: string; industry: string }> = {
+const projectText: Record<string, { title: string; industry: string; platform?: string }> = {
   viessmann: {
-    title: lang === 'zh' ? 'Viessmann：社交流量直接通向订单' : lang === 'fr' ? 'Viessmann : quand le social génère des ventes en Chine' : 'Viessmann: social-to-commerce engine in China',
+    title: lang === 'zh' ? 'Viessmann：把社媒流量直接做成订单' : lang === 'fr' ? 'Viessmann : quand le social génère des ventes en Chine' : 'Viessmann: social-to-commerce engine in China',
     industry: lang === 'zh' ? '暖通系统' : lang === 'fr' ? 'Climatisation' : 'Climate Systems',
+    platform: lang === 'zh' ? '抖音 + 小红书 + 企业微信' : undefined,
   },
   jlr: {
-    title: lang === 'zh' ? '捷豹路虎：用社交打动更年轻的用户' : lang === 'fr' ? 'Jaguar Land Rover : toucher une audience plus jeune sur le social' : 'Jaguar Land Rover: reaching younger consumers',
+    title: lang === 'zh' ? '捷豹路虎：用社媒打动更年轻的用户' : lang === 'fr' ? 'Jaguar Land Rover : toucher une audience plus jeune sur le social' : 'Jaguar Land Rover: reaching younger consumers',
     industry: lang === 'zh' ? '汽车' : lang === 'fr' ? 'Automobile' : 'Automotive',
+    platform: lang === 'zh' ? '抖音 + 小红书 + 微信' : undefined,
   },
   jac: {
-    title: lang === 'zh' ? 'JAC 江淮：用 AI 把车主社群做起来' : lang === 'fr' ? 'JAC Motors : bâtir une communauté grâce à l\'IA' : 'JAC Motors: AI-powered community building',
+    title: lang === 'zh' ? 'JAC 江淮：靠 AI 把车主社群真正做起来' : lang === 'fr' ? 'JAC Motors : bâtir une communauté grâce à l\'IA' : 'JAC Motors: AI-powered community building',
     industry: lang === 'zh' ? '汽车 / 新能源' : lang === 'fr' ? 'Automobile / VE' : 'Automotive / EV',
+    platform: lang === 'zh' ? '微信 + 小红书 + 微博' : undefined,
   },
   iguzzini: {
-    title: lang === 'zh' ? 'iGuzzini：高端照明走进大众视野' : lang === 'fr' ? 'iGuzzini : l\'éclairage haut de gamme s\'ouvre au grand public' : 'iGuzzini: luxury lighting goes consumer',
+    title: lang === 'zh' ? 'iGuzzini：让高端照明走进大众视野' : lang === 'fr' ? 'iGuzzini : l\'éclairage haut de gamme s\'ouvre au grand public' : 'iGuzzini: luxury lighting goes consumer',
     industry: lang === 'zh' ? '高端照明' : lang === 'fr' ? 'Éclairage haut de gamme' : 'Luxury Lighting',
+    platform: lang === 'zh' ? '微信 + 小红书 + 微博' : undefined,
   },
 };
 
@@ -35,28 +39,28 @@ const projects = [
   {
     title: projectText.viessmann.title,
     industry: projectText.viessmann.industry,
-    platform: 'Douyin + RedNote + WeCom',
+    platform: projectText.viessmann.platform ?? 'Douyin + RedNote + WeCom',
     image: '/images/clients/Viessmann/Viessman-climate-solution.avif',
     href: lp('/work/viessmann'),
   },
   {
     title: projectText.jlr.title,
     industry: projectText.jlr.industry,
-    platform: 'Douyin + RedNote + WeChat',
+    platform: projectText.jlr.platform ?? 'Douyin + RedNote + WeChat',
     image: '/images/clients/Jaguar/Jaguar-Land-Rover.avif',
     href: lp('/work/jaguar-land-rover'),
   },
   {
     title: projectText.jac.title,
     industry: projectText.jac.industry,
-    platform: 'WeChat + RedNote + Weibo',
+    platform: projectText.jac.platform ?? 'WeChat + RedNote + Weibo',
     image: '/images/clients/JAC/JAC-Wechat-4.jpg',
     href: lp('/work/jac-motors'),
   },
   {
     title: projectText.iguzzini.title,
     industry: projectText.iguzzini.industry,
-    platform: 'WeChat + RedNote + Weibo',
+    platform: projectText.iguzzini.platform ?? 'WeChat + RedNote + Weibo',
     image: '/images/clients/iGuzzini/iguzzini4-1.png',
     href: lp('/work/iguzzini'),
   },
@@ -64,9 +68,9 @@ const projects = [
 
 const sectionText = lang === 'zh' ? {
   overline: '精选案例',
-  heading: '这些品牌，在中国社交平台上真正跑了起来。',
-  description: '从奢侈品新品发布到 B2B 获客，真实的项目、真实的平台、可核查的数据。',
-  cta: '看全部案例',
+  heading: '这些品牌，已经在中国社媒真正跑出了结果。',
+  description: '从奢侈品新品发布到 B2B 获客，真实的项目、真实的平台、可核验的数据。',
+  cta: '查看全部案例',
 } : lang === 'fr' ? {
   overline: 'Projets',
   heading: 'Des campagnes qui font grandir les marques en Chine.',

@@ -7,20 +7,24 @@ import type { Lang } from './config';
 export function getLocalizedNav(lang: Lang): NavItem[] {
   const lp = (path: string) => localizedPath(path, lang);
 
+  const serviceChildren: NavItem[] = [
+    { label: t('nav.services.strategy', lang), subtitle: t('nav.services.strategy.sub', lang), href: lp('/services/strategy-campaigns'), icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 6-8"/></svg>` },
+    { label: t('nav.services.advertising', lang), subtitle: t('nav.services.advertising.sub', lang), href: lp('/services/advertising'), icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>` },
+    { label: t('nav.services.content', lang), subtitle: t('nav.services.content.sub', lang), href: lp('/services/content-production'), icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/></svg>` },
+    { label: t('nav.services.influencer', lang), subtitle: t('nav.services.influencer.sub', lang), href: lp('/services/influencer-marketing'), icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>` },
+    { label: t('nav.services.crm', lang), subtitle: t('nav.services.crm.sub', lang), href: lp('/services/crm-private-domain'), icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>` },
+    { label: t('nav.services.training', lang), subtitle: t('nav.services.training.sub', lang), href: lp('/services/training-consulting'), icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>` },
+  ];
+  if (lang !== 'zh') {
+    serviceChildren.splice(4, 0, { label: t('nav.services.marketEntry', lang), subtitle: t('nav.services.marketEntry.sub', lang), href: lp('/services/market-entry'), icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>` });
+  }
+
   return [
     {
       label: t('nav.services', lang),
       href: lp('/services'),
       viewAllLabel: t('nav.viewAll.services', lang),
-      children: [
-        { label: t('nav.services.strategy', lang), subtitle: t('nav.services.strategy.sub', lang), href: lp('/services/strategy-campaigns'), icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 6-8"/></svg>` },
-        { label: t('nav.services.advertising', lang), subtitle: t('nav.services.advertising.sub', lang), href: lp('/services/advertising'), icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>` },
-        { label: t('nav.services.content', lang), subtitle: t('nav.services.content.sub', lang), href: lp('/services/content-production'), icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/></svg>` },
-        { label: t('nav.services.influencer', lang), subtitle: t('nav.services.influencer.sub', lang), href: lp('/services/influencer-marketing'), icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>` },
-        { label: t('nav.services.marketEntry', lang), subtitle: t('nav.services.marketEntry.sub', lang), href: lp('/services/market-entry'), icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>` },
-        { label: t('nav.services.crm', lang), subtitle: t('nav.services.crm.sub', lang), href: lp('/services/crm-private-domain'), icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>` },
-        { label: t('nav.services.training', lang), subtitle: t('nav.services.training.sub', lang), href: lp('/services/training-consulting'), icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>` },
-      ],
+      children: serviceChildren,
     },
     {
       label: t('nav.platforms', lang),

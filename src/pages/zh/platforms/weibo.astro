@@ -8,18 +8,18 @@ import Button from '../../../components/ui/Button.astro';
 const stats = [
   { label: '月活用户', value: '567M', image: '/images/platforms/weibo-stats/monthly-active-users.png' },
   { label: '日活用户', value: '252M', image: '/images/platforms/weibo-stats/daily-active-users.png' },
-  { label: '移动端使用占比', value: '95%', image: '/images/platforms/weibo-stats/mobile-usage.png' },
+  { label: '移动端占比', value: '95%', image: '/images/platforms/weibo-stats/mobile-usage.png' },
   { label: '广告收入（2025）', value: '$1.5B', image: '/images/platforms/weibo-stats/ad-revenue.png' },
-  { label: '核心年龄段（25-34）', value: '42%', image: '/images/platforms/weibo-stats/age-group.png' },
+  { label: '25至34岁用户', value: '42%', image: '/images/platforms/weibo-stats/age-group.png' },
   { label: '日均发博量', value: '100M+', image: '/images/platforms/weibo-stats/daily-posts.png' },
   { label: '女性用户占比', value: '51%', image: '/images/platforms/weibo-stats/gender-split.png' },
 ];
 
 const ecosystem = [
   {
-    name: '大众曝光和公关',
+    name: '全民曝光和公关',
     chineseName: '品牌曝光',
-    description: '在中国，没有什么比一条微博热搜更能在短时间内把全国的注意力拉到品牌身上。新品发布、媒体放大、事件营销、危机公关，都要靠它。',
+    description: '一条热搜，半天之内把全国人的眼球都拉过来。新品首发、媒体接力、事件引爆、危机灭火，微博是唯一能扛下这几件事的地方。',
     image: '/images/platforms/weibo-ecosystem/mass-awareness.png',
     bg: '#F7F2EE',
     iconBg: '#E8E0D8',
@@ -31,7 +31,7 @@ const ecosystem = [
   {
     name: '热搜营销',
     chineseName: 'Hot Search',
-    description: '用反应够快的内容去蹭自然热搜，或者直接投付费话题，让品牌在关键时刻出现在全国性的讨论里。',
+    description: '蹭一个正在飞的自然热搜，或直接砸一个付费话题。当全国人都在聊同一件事，你的品牌要么在场，要么缺席。',
     image: '/images/platforms/weibo-ecosystem/trending-topics.png',
     bg: '#1A1A1A',
     iconBg: 'rgba(255,255,255,0.1)',
@@ -43,7 +43,7 @@ const ecosystem = [
   {
     name: 'KOL和明星合作',
     chineseName: 'KOL合作',
-    description: '微博头部KOL动辄千万粉丝。找对一位博主发一条博文，就能同时拉动认知、信任和销售。',
+    description: '微博头部大V动辄千万粉丝。挑对人，一条博文就能同时把认知、信任、销量三件事一起拉起来。',
     image: '/images/platforms/weibo-ecosystem/kol-partnerships.png',
     bg: '#CC3333',
     iconBg: 'rgba(255,255,255,0.2)',
@@ -53,9 +53,9 @@ const ecosystem = [
     icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
   },
   {
-    name: '超级话题社群',
+    name: '超话社群',
     chineseName: '超级话题',
-    description: '超级话题给品牌一个专属阵地。粉丝在里面发自己的内容、讨论产品，也能直接跟品牌对话。',
+    description: '超话是品牌的专属主场。粉丝在里面发内容、聊产品、晒同款，也能直接跟官方对话。',
     image: '/images/platforms/weibo-ecosystem/community.png',
     bg: '#E8E0D8',
     iconBg: '#FFFFFF',
@@ -67,7 +67,7 @@ const ecosystem = [
   {
     name: '社交电商',
     chineseName: 'Social Commerce',
-    description: '带购物链接的博文可以直接跳转到天猫、淘宝。直播跟淘宝直播打通，边看边买。从一条博文到下单，路径很短。',
+    description: '博文挂链直跳天猫、淘宝。直播接入淘宝直播，边看边下单。从刷到博文到点击付款，中间几乎没有断点。',
     image: '/images/platforms/weibo-ecosystem/social-commerce.png',
     bg: '#1A1A1A',
     iconBg: 'rgba(255,255,255,0.1)',
@@ -79,7 +79,7 @@ const ecosystem = [
   {
     name: '舆情管理',
     chineseName: 'Reputation',
-    description: '用户在微博上毫不遮掩地表达观点。实时监测品牌提及、跟踪对手动向、提前发现情绪拐点，这件事不是可选项。',
+    description: '微博用户说话从来不客气。盯住每一次品牌提及、每一个情绪拐点、每一个对手动作，这件事没得商量。',
     image: '/images/platforms/weibo-ecosystem/reputation.png',
     bg: '#B02D2D',
     iconBg: 'rgba(255,255,255,0.2)',
@@ -92,44 +92,44 @@ const ecosystem = [
 
 const services = [
   {
-    title: '开户和认证',
-    description: '从头到尾帮你把企业蓝V账号搭起来。材料准备、中文翻译、资料递交、主页完整搭建。海外企业需要向微博一次性缴纳1000美元认证费，审批周期2到4周。所有流程我们全程包办。',
-    result: '一个已认证、随时可以开始发博的微博企业号。',
+    title: '开户和蓝V认证',
+    description: '从零把你的企业蓝V账号搭起来。材料整理、中文翻译、资料递交、主页完整搭建，一条龙。海外企业向微博一次性支付1000美元认证费，审批2到4周。中间所有脏活我们全包。',
+    result: '一个已认证、随时能发第一条博文的微博企业号。',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/></svg>`,
     image: '/images/platforms/weibo-services/account-setup.png',
   },
   {
     title: '内容策略和制作',
-    description: '月度内容排期，涵盖品牌博文、蹭热搜的反应内容、互动形式、活动素材。全部由本地中文写手操刀，产出短博文、九宫格图片、短视频、直播素材。',
-    result: '对得上微博当下算法的本地内容。',
+    description: '月度内容排期一次讲清楚：品牌日常博文、蹭热搜的快反内容、互动玩法、活动物料。全部由上海本地写手亲手做，交付短博文、九宫格、短视频、直播素材。',
+    result: '踩准当月微博算法、一看就是国内人写的内容。',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/></svg>`,
     image: '/images/platforms/weibo-services/content-strategy.png',
   },
   {
     title: '付费投放',
-    description: '粉丝头条、粉丝通、信息流展示、开屏广告、搜索推广、话题推广。支持按人口属性、兴趣、行为、相似人群做定向。CPM、CPC、CPA、ROAS每周出一版报告。广告预算按原价走账，不加点。',
-    result: '精准打到目标人群，每一块钱都花得明明白白。',
+    description: '粉丝头条、粉丝通、信息流、开屏、搜索广告、话题推广都会打。定向可以按人群画像、兴趣、行为、Lookalike走。CPM、CPC、CPA、ROAS每周一份报告。预算全部按原价走账，不加点。',
+    result: '精准打到该看到的人，每一块钱都交代得一清二楚。',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>`,
     image: '/images/platforms/weibo-services/paid-advertising.png',
   },
   {
     title: 'KOL和KOC合作',
-    description: '选人、核假粉、谈判、写brief全由我们来做。选人标准是真实互动率、粉丝真实性、行业匹配度和预算。从创意brief到结案报告，一条线跑到底。',
-    result: '靠真实数据挑出来的达人合作，不靠粉丝数说话。',
+    description: '选人、查假粉、谈价、写brief，全部我们来。挑人看四件事：真实互动率、粉丝真实度、行业匹配、预算。从创意brief到结案报告一口气跑完。',
+    result: '按真实数据挑出来的达人组合，不是看粉丝数凑出来的名单。',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
     image: '/images/platforms/weibo-services/kol-campaigns.png',
   },
   {
     title: '热搜和话题营销',
-    description: '话题策划、内容铺设、KOL放大、社群激活、付费加热。目标只有一个：让品牌在对的时机挤进全国性的讨论里。',
-    result: '品牌登上全国热搜榜。',
+    description: '话题策划、内容铺垫、KOL接力、社群发酵、付费加热，五件事一起推。目标就一条：在对的时间点，把品牌塞进全国人都在聊的那场讨论里。',
+    result: '品牌词冲上全国热搜榜。',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>`,
     image: '/images/platforms/weibo-services/hot-search.png',
   },
   {
     title: '舆情和数据分析',
-    description: '每日监测品牌提及、对手动向、情绪变化、热点话题。月报覆盖涨粉、互动、内容表现、广告数据、KOL ROI、竞品对比。',
-    result: '一份可以直接指导下个月打法的实战报告。',
+    description: '每天盯四件事：品牌提及、对手动作、情绪波动、热点走向。月报把涨粉、互动、内容表现、广告数据、KOL ROI、竞品对照全部装进一份文档。',
+    result: '一份下个月照着打就能跑的实战报告。',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 6-8"/></svg>`,
     image: '/images/platforms/weibo-services/analytics.png',
   },
@@ -137,48 +137,48 @@ const services = [
 
 const bestPractices = [
   {
-    title: '每天都要发',
-    description: '至少保持日更一条。冲量期每天3到5条。算法奖励持续更新的账号。',
+    title: '发博别停',
+    description: '至少一天一条。大活动期间每天3到5条。微博算法只认勤快的账号，懒一天掉一天权重。',
   },
   {
-    title: '视觉优先',
-    description: '九宫格九个图位全部用满，中间那张最抢眼。短视频的表现永远比纯图文更吃香。',
+    title: '画面先行',
+    description: '九宫格九个位子要塞满，C位那张最抢眼。短视频的数据永远比纯图文漂亮。',
   },
   {
     title: '蹭热搜要快',
-    description: '每天第一件事是刷一眼热搜榜。相关话题一冒头，一小时内必须出内容。',
+    description: '每天上班第一件事：刷热搜榜。相关话题一露头，一小时内内容必须上线。慢了就是别人的。',
   },
   {
     title: '博文写短',
-    description: '博文超过140字就会被折叠。第一句必须有力。CTA要放在折叠线之前。',
+    description: '超过140字就被折叠。第一句话要能勾住人。CTA必须卡在折叠线之前。',
   },
   {
-    title: '认真回评论',
-    description: '真正的对话都发生在评论区。肯跟用户互动的品牌，粘性涨得比只顾自说自话的品牌快得多。',
+    title: '评论区必须回',
+    description: '真正的戏都在评论区。愿意接梗、认真回复的品牌，粘性起得比那些只管自己发博的品牌快得多。',
   },
   {
-    title: '认证尽早做',
-    description: '蓝V认证能带来信任背书、提升曝光、解锁广告工具，还能防假冒账号。',
+    title: '蓝V越早越好',
+    description: '蓝V一认，信任背书到位、曝光权重拉起、广告后台解锁，顺带堵住山寨号冒名。',
   },
 ];
 
 const steps = [
   {
     number: '01',
-    title: '先聊一聊',
-    description: '聊你的品牌、目标、以及你对中国市场的准备。不用做PPT，我们只问该问的问题。',
+    title: '先聊一次',
+    description: '聊品牌、聊目标、聊你对中国市场到底准备了多少。不用做PPT，我们只问该问的问题。',
     icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>`,
   },
   {
     number: '02',
     title: '方案和报价',
-    description: '范围写明，一口价，每一项交付物逐条列出。没有意外。',
+    description: '范围白纸黑字，一口价，每一项交付逐条列清。过程里不会冒出任何额外账单。',
     icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>`,
   },
   {
     number: '03',
-    title: '两周内上线',
-    description: '账号搭建、首条内容上线、首场campaign启动。从合同签完到首条内容推出，14天。',
+    title: '两周内跑起来',
+    description: '账号搭完、首批内容上线、第一场campaign启动。合同签完到第一条博文发出去，14天。',
     icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>`,
   },
 ];
@@ -186,50 +186,50 @@ const steps = [
 const faqs = [
   {
     q: '到底是谁在帮我们运营微博？',
-    a: '是我们自己在上海和香港的团队。本地中文写手，负责写内容、跑广告、直接对接KOL。我们不是那种坐在伦敦或纽约猜中国热点的远程代运营。每天早上打开微博，我们跟你的用户在同一个时区。',
+    a: '我们自己，在上海和香港的团队。本地写手负责写内容、跑广告、直接对KOL。不是那种坐在伦敦或纽约猜国内热点的远程代运营。每天早上打开微博，我们跟你的用户在同一个时区。',
   },
   {
-    q: '境外注册的企业也能开微博账号吗？',
-    a: '可以，我们经常做。海外企业可以申请企业蓝V认证，流程是把营业执照翻译成中文，再向微博缴纳1000美元一次性认证费。审批大约2到4周。资料准备、翻译、跟微博审核团队的沟通，我们全包。',
+    q: '境外注册的公司也能开微博账号吗？',
+    a: '可以，我们手上天天在做。海外企业走企业蓝V通道：营业执照翻成中文，向微博支付1000美元一次性认证费，审批2到4周。材料、翻译、跟微博审核团队打电话，我们一条龙包办。',
   },
   {
     q: '价格怎么算？',
-    a: '范围写明，一口价。项目启动之前每一项交付都定好：多少条博文、多少条视频、哪些campaign、出什么报告。你一开始就看到总价。没有模糊报价，也不会在三个月后冒出隐性账单。',
+    a: '范围白纸黑字，一口价。项目启动前把每一项都写死：多少条博文、多少条视频、哪些campaign、出哪几份报告。第一天就看到总价。没有模糊报价，三个月后也不会突然冒出隐性账单。',
   },
   {
     q: '你们做微博跟其他代理有什么不一样？',
-    a: '人在中国，每一个平台都是第一手操作，不做远程遥控。内容生产用自研的AI工具HubStudio.ai，所以交付更快、成本更低，质量不打折。此外，我们系统研究过市面上37家同类型代理，提供固定一口价套餐的，只有我们。',
+    a: '人在中国，每个平台都是我们自己第一手在跑，不做远程遥控。内容用自研AI工具HubStudio.ai，交付更快、成本更低，质量不打折。我们把市面上37家同类代理排了一遍，愿意给固定一口价套餐的，只有我们。',
   },
   {
     q: '多久能跑起来？',
-    a: '签合同后大约两周。账号注册、主页配置、首批内容、首场campaign启动。微博那边的认证审核本身要2到4周，但我们不会干等。蓝V认证流程走的时候，我们同步搭内容、开始发布。',
+    a: '合同签完两周左右。账号注册、主页配齐、首批内容上线、第一场campaign启动。蓝V审核微博那边要2到4周，我们不干等。审核在走的同时，内容同步搭起来、发起来。',
   },
   {
-    q: '所有内容都是用中文写的吗？',
-    a: '是的。发到微博上的每一条内容，都由本地中文写手直接撰写，再由另一位本地写手复核语气和文化适配。我们会给你英文版的内容计划和月报摘要。如果你希望每条内容发布前都过目一次，也可以把这一步加进流程。',
+    q: '所有内容都是中文写的吗？',
+    a: '是。发到微博的每一条都由本地写手直接写，再由另一位本地写手校对语气和文化梗。我们会给你英文版的内容排期和月报摘要。想在发布前每条都过目一次，也可以在流程里加上这一步。',
   },
   {
-    q: '我们已经在做微信和小红书了，还需要做微博吗？',
-    a: '简短回答：需要。微信的内容被锁在熟人圈里。小红书擅长产品发现。这两个平台都没法让品牌直接触达公众，也接不到全国性的热点讨论。出现危机、文化事件发酵，或者你需要让几百万人在短时间内记住你的品牌名，微博是国内唯一能做到的平台。',
+    q: '我们已经在做微信和小红书了，还要不要做微博？',
+    a: '一句话：要。微信被锁在熟人圈里。小红书擅长产品种草。这两个都没法让品牌直接面向大众，也接不住全国性的热点讨论。一旦出危机、文化事件发酵，或者你要在几天内让几百万人记住品牌名，国内只有微博扛得住这件事。',
   },
   {
     q: '你们怎么挑KOL？',
-    a: '不看粉丝数。我们核实真实互动率、假粉比例、粉丝画像，再把每位KOL的内容风格和你的品牌对照一遍。价格也会对标市场价，让你知道这一笔花得公道。每一个推荐的KOL都附数据佐证。',
+    a: '不看粉丝数。我们查真实互动率、假粉比例、粉丝画像，再把每个人的内容调性跟你的品牌对照一遍。价格拿市场价对标，让你知道这笔钱花得不冤。每一个推荐的KOL背后都有数据支撑。',
     },
   {
     q: '报告长什么样？',
-    a: '每月一份。内容涵盖涨粉、互动率、按形式拆分的内容效果、广告数据（CPM、CPC、CPA、ROAS）、KOL项目ROI、竞品对比。结尾会给出下个月的具体建议。有campaign在跑时，中途还会插一次阶段性复盘。',
+    a: '每月一份。涨粉、互动率、按形式拆分的内容效果、广告数据（CPM、CPC、CPA、ROAS）、KOL项目ROI、竞品对照，一次讲完。结尾直接给下个月该怎么打的具体建议。有campaign在跑时，中途会多加一次阶段性复盘。',
   },
   {
     q: '如果我们想做的不止微博一个平台呢？',
-    a: '大部分客户都是这样。微博只是我们服务的18个以上平台之一。微博、微信、小红书、抖音，以及B站、知乎、快手这类按行业挑的平台，我们都在做。统一一个团队协调，一份SOW，一个一口价。',
+    a: '大部分客户都是这样。微博只是我们服务的18个平台之一。微博、微信、小红书、抖音是主战场，B站、知乎、快手这些按行业选打。一个团队统一协调，一份SOW，一个一口价。',
   },
 ];
 ---
 
 <PageLayout
   title="微博营销服务 | TheRedScroll"
-  description="我们在上海做微博营销。开户、内容、广告、KOL合作、数据分析。范围写明，一口价。5.67亿月活用户。"
+  description="上海本地团队跑微博。开户、内容、广告、KOL合作、舆情分析。范围写死，一口价。5.67亿月活。"
   lang="zh"
 >
   <!-- Hero: Dark hero banner -->
@@ -247,10 +247,10 @@ const faqs = [
           微博营销
         </p>
         <h1 class="text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] text-[#FFFFFF] mb-[8px]">
-          我们不止谈微博策略，我们每天都在微博上发内容。人就在上海。
+          我们不光讲微博打法。我们人在上海，每天都在发博。
         </h1>
         <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal mb-[24px]">
-          从上海本地运营的微博营销：开户、内容、广告、KOL合作、数据分析。5.67亿月活。范围写明，一口价，团队就在一线。
+          上海本地团队跑微博：开户、内容、广告、KOL、舆情分析。5.67亿月活。范围写死，一口价，人就在一线。
         </p>
         <Button variant="primary" href="/zh/contact">预约通话</Button>
       </div>
@@ -264,10 +264,10 @@ const faqs = [
         <div class="max-w-[560px]">
           <SectionBar />
           <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[8px]">
-            中国的公共广场。每个月5.67亿人。
+            中国的公共广场。每个月5.67亿人同时在场。
           </h2>
           <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
-            微博，数据自己会说话。
+            微博的体量，数据自己讲得比谁都清楚。
           </p>
         </div>
         <Button variant="primary" href="/zh/contact" class="shrink-0">预约通话</Button>
@@ -300,8 +300,8 @@ const faqs = [
         <div class="flex justify-center mb-[12px]">
           <SectionBar />
         </div>
-        <SectionHeading overline="微博为什么重要">
-          趋势在这里诞生，新闻在这里爆发，舆论在这里成形。
+        <SectionHeading overline="微博为什么还重要">
+          潮流从这里起，新闻在这里炸，舆论在这里定型。
         </SectionHeading>
       </div>
 
@@ -313,7 +313,7 @@ const faqs = [
           <div class="p-[24px] max-[640px]:p-[20px]">
             <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">一切都是公开的</h3>
             <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
-              微信的内容被锁在熟人圈里。微博上，每个人都能看见你的博文。一次新品发布、一条蹭对了热点的评论，就能触达几百万从未关注过你的用户。
+              微信的内容锁在熟人圈。微博不一样，每条博文所有人都能看到。一次新品首发、一条蹭准的热点评论，就能触达几百万从没听过你品牌的人。
             </p>
           </div>
         </div>
@@ -323,9 +323,9 @@ const faqs = [
             <img src="/images/platforms/weibo-why/hot-search.png" alt="微博热搜榜显示前50个话题实时刷新" class="w-full h-full object-cover" loading="lazy" decoding="async" />
           </div>
           <div class="p-[24px] max-[640px]:p-[20px]">
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">热搜带动整个平台</h3>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">热搜带着整个平台跑</h3>
             <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
-              热搜榜每分钟都在刷新。挤进前50的话题，几个小时内就能被数亿人看到。懂得围绕这些节点做内容的品牌，拿到的自然曝光是纯付费广告怎么都买不来的。
+              热搜榜每分钟都在换血。挤进前50的话题，几小时之内就能被几亿人刷到。会围着热搜做内容的品牌，拿到的自然曝光是纯付费广告砸多少钱都换不来的。
             </p>
           </div>
         </div>
@@ -335,16 +335,16 @@ const faqs = [
             <img src="/images/platforms/weibo-why/brand-research.png" alt="消费者在微博品牌页浏览评论和评价，下单前做决定" class="w-full h-full object-cover" loading="lazy" decoding="async" />
           </div>
           <div class="p-[24px] max-[640px]:p-[20px]">
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">消费者会来这里搜品牌</h3>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">消费者买之前先来搜你</h3>
             <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
-              买家会搜品牌名，翻看真实用户怎么评价。扎实的日常运营带来信任，空白账号只会让人起疑。没人回应的负面评论，杀伤力是实打实的。
+              下单之前，消费者会搜品牌名、翻真实用户怎么说。日常运营扎实的账号有人信，空白账号只会让人起疑。没人理的差评，杀伤力是实打实的。
             </p>
           </div>
         </div>
       </div>
 
       <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] mt-[24px] text-center max-w-[680px] mx-auto">
-        微博覆盖完整链路：上游是热搜带来的大众曝光，下游是跟天猫、淘宝直播打通的直接成交。国内能把这两端都做好的平台不多，微博是其中一个。
+        微博一头连着热搜带来的全民曝光，一头连着跟天猫、淘宝直播直通的下单入口。国内能把两头同时吃下的平台不多，微博是其中一个。
       </p>
     </Container>
   </section>
@@ -357,7 +357,7 @@ const faqs = [
           <SectionBar />
         </div>
         <SectionHeading overline="微博怎么帮品牌起量">
-          六个杠杆，把注意力变成真金白银。
+          六个杠杆，把注意力一路推到成交。
         </SectionHeading>
       </div>
 
@@ -380,7 +380,7 @@ const faqs = [
 
       <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px] mt-[16px]">
         <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] max-w-[680px]">
-          <span class="text-[#1A1A1A] font-medium">关于认证：</span>海外企业可以申请企业蓝V认证，流程是把营业执照翻译成中文，再向微博一次性支付1000美元认证费。审批周期大约2到4周。整个流程我们全程包办。
+          <span class="text-[#1A1A1A] font-medium">关于蓝V认证：</span>海外企业可以申请企业蓝V。营业执照翻成中文，向微博一次性支付1000美元认证费，审批2到4周。整套流程我们全包。
         </p>
       </div>
     </Container>
@@ -394,7 +394,7 @@ const faqs = [
           <SectionBar />
         </div>
         <SectionHeading overline="我们在微博上做什么">
-          六项服务，每一项都有明确的交付物。
+          六项服务，每一项都写死交付。
         </SectionHeading>
       </div>
 
@@ -440,7 +440,7 @@ const faqs = [
               </div>
               <h3 class="text-[18px] font-medium leading-[1.3] mb-[8px] text-[#FFFFFF]">{service.title}</h3>
               <p class="text-[13px] font-normal leading-[1.5] mb-[12px] text-[rgba(255,255,255,0.7)]">{service.description}</p>
-              <p class="text-[13px] font-medium leading-[1.5] text-[#FFFFFF]">交付：{service.result}</p>
+              <p class="text-[13px] font-medium leading-[1.5] text-[#FFFFFF]">交付成果：{service.result}</p>
             </div>
           </div>
         ))}
@@ -453,9 +453,9 @@ const faqs = [
     <Container>
       <div class="bg-[#1A1A1A] rounded-[12px] py-[48px] px-[48px] max-[640px]:px-[20px] max-[640px]:py-[32px]">
         <div class="mb-[40px] max-[640px]:mb-[32px]">
-          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">本地团队经验</p>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">一线团队心得</p>
           <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF]">跑微博的几条硬规矩</h2>
-          <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.5] mt-[8px] max-w-[680px]">我们每天都在国内发微博，没断过。下面这几条都是一线跑出来的经验。</p>
+          <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.5] mt-[8px] max-w-[680px]">人在国内，每天都在发博，一天没断过。下面这几条都是亲手跑出来的经验，不是书上抄的。</p>
         </div>
         <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[20px]">
           {bestPractices.map((practice) => (
@@ -478,7 +478,7 @@ const faqs = [
             <SectionBar />
             <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">FAQ</p>
             <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">常见问题</h2>
-            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">跟TheRedScroll合作做微博，你可能想先弄清楚的几件事。</p>
+            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">找TheRedScroll做微博，签合同之前你会想先弄清楚的几件事。</p>
           </div>
         </div>
         <div>
@@ -511,7 +511,7 @@ const faqs = [
           <div class="w-[40px] h-[3px] bg-[#CC3333] rounded-none"></div>
         </div>
         <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">合作流程</p>
-        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF]">从零到一个能跑起来的微博账号，两周搞定</h2>
+        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF]">从零到一个真正在跑的微博账号，两周拿下</h2>
       </div>
 
       <div class="grid grid-cols-3 max-[640px]:grid-cols-1 gap-[24px] max-[640px]:gap-[16px]">
@@ -531,7 +531,7 @@ const faqs = [
       </div>
 
       <div class="mt-[48px] pt-[24px] border-t border-[rgba(255,255,255,0.1)] text-center">
-        <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal mb-[12px]">也可以看看</p>
+        <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal mb-[12px]">你可能也想看</p>
         <div class="flex justify-center gap-[24px] flex-wrap">
           <a href="/zh/platforms/wechat" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">微信营销 &rarr;</a>
           <a href="/zh/platforms/rednote" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">小红书营销 &rarr;</a>
