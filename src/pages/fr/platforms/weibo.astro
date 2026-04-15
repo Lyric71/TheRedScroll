@@ -6,20 +6,20 @@ import SectionHeading from '../../../components/ui/SectionHeading.astro';
 import Button from '../../../components/ui/Button.astro';
 
 const stats = [
-  { label: 'Utilisateurs actifs mensuels', value: '567M', image: '/images/platforms/weibo-stats/monthly-active-users.png' },
-  { label: 'Utilisateurs actifs quotidiens', value: '252M', image: '/images/platforms/weibo-stats/daily-active-users.png' },
-  { label: 'Utilisation mobile', value: '95%', image: '/images/platforms/weibo-stats/mobile-usage.png' },
-  { label: 'Revenus publicitaires (2025)', value: '$1.5B', image: '/images/platforms/weibo-stats/ad-revenue.png' },
-  { label: 'Tranche d\'age principale (25-34)', value: '42%', image: '/images/platforms/weibo-stats/age-group.png' },
-  { label: 'Publications quotidiennes', value: '100M+', image: '/images/platforms/weibo-stats/daily-posts.png' },
-  { label: 'Repartition par genre (femmes)', value: '51%', image: '/images/platforms/weibo-stats/gender-split.png' },
+  { label: 'Utilisateurs actifs par mois', value: '567M', image: '/images/platforms/weibo-stats/monthly-active-users.png' },
+  { label: 'Utilisateurs actifs par jour', value: '252M', image: '/images/platforms/weibo-stats/daily-active-users.png' },
+  { label: 'Part du trafic mobile', value: '95%', image: '/images/platforms/weibo-stats/mobile-usage.png' },
+  { label: 'Recettes publicitaires en 2025', value: '$1.5B', image: '/images/platforms/weibo-stats/ad-revenue.png' },
+  { label: 'Cœur d\'audience, les 25-34 ans', value: '42%', image: '/images/platforms/weibo-stats/age-group.png' },
+  { label: 'Publications par jour', value: '100M+', image: '/images/platforms/weibo-stats/daily-posts.png' },
+  { label: 'Part des utilisatrices', value: '51%', image: '/images/platforms/weibo-stats/gender-split.png' },
 ];
 
 const ecosystem = [
   {
-    name: 'Notoriete et relations presse',
+    name: 'Notoriété et relations presse',
     chineseName: '品牌曝光',
-    description: 'Rien en Chine ne genere une attention nationale plus vite qu\'une tendance Weibo. Lancements produits, amplification presse, campagnes evenementielles, gestion de crise.',
+    description: 'Aucune plateforme chinoise ne déclenche plus vite une attention nationale qu\'une tendance sur Weibo. Lancements produits, retombées presse, dispositifs événementiels, gestion de crise.',
     image: '/images/platforms/weibo-ecosystem/mass-awareness.png',
     bg: '#F7F2EE',
     iconBg: '#E8E0D8',
@@ -29,9 +29,9 @@ const ecosystem = [
     icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>`,
   },
   {
-    name: 'Campagnes de sujets tendance',
+    name: 'Campagnes sur les sujets tendance',
     chineseName: '热搜营销',
-    description: 'Surfez sur les tendances organiques avec du contenu reactif, ou lancez des promotions de hashtags sponsorises pour inserer votre marque dans la conversation nationale au bon moment.',
+    description: 'Saisissez les tendances organiques avec un contenu réactif, ou achetez des hashtags sponsorisés pour greffer la marque sur la conversation nationale au bon moment.',
     image: '/images/platforms/weibo-ecosystem/trending-topics.png',
     bg: '#1A1A1A',
     iconBg: 'rgba(255,255,255,0.1)',
@@ -41,9 +41,9 @@ const ecosystem = [
     icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>`,
   },
   {
-    name: 'Partenariats KOL et celebrities',
+    name: 'Collaborations avec KOL et célébrités',
     chineseName: 'KOL合作',
-    description: 'Les meilleurs KOL de Weibo comptent des dizaines de millions d\'abonnes. Un seul post du bon influenceur peut faire evoluer la notoriete, la credibilite et les ventes en meme temps.',
+    description: 'Les principaux KOL de Weibo rassemblent des dizaines de millions d\'abonnés. Une publication du bon relais fait bouger la notoriété, la crédibilité et les ventes d\'un seul coup.',
     image: '/images/platforms/weibo-ecosystem/kol-partnerships.png',
     bg: '#CC3333',
     iconBg: 'rgba(255,255,255,0.2)',
@@ -53,9 +53,9 @@ const ecosystem = [
     icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
   },
   {
-    name: 'Animation de communaute',
+    name: 'Animation de communauté',
     chineseName: '超级话题',
-    description: 'Les Super Topics de Weibo creent des espaces de marque ou les abonnes publient leur propre contenu, echangent sur les produits et interagissent directement avec la marque.',
+    description: 'Les Super Topics de Weibo ouvrent aux marques des espaces dédiés où les abonnés publient leurs propres contenus, commentent les produits et dialoguent directement avec la marque.',
     image: '/images/platforms/weibo-ecosystem/community.png',
     bg: '#E8E0D8',
     iconBg: '#FFFFFF',
@@ -67,7 +67,7 @@ const ecosystem = [
   {
     name: 'Commerce social',
     chineseName: '社交电商',
-    description: 'Les publications achetables renvoient vers Tmall et Taobao. Les livestreams se synchronisent avec Taobao Live pour la vente en temps reel. La distance entre un post Weibo et un achat est tres courte.',
+    description: 'Les publications shoppables redirigent vers Tmall et Taobao. Les livestreams se branchent sur Taobao Live pour la vente en direct. Entre un post Weibo et un acte d\'achat, la distance est minime.',
     image: '/images/platforms/weibo-ecosystem/social-commerce.png',
     bg: '#1A1A1A',
     iconBg: 'rgba(255,255,255,0.1)',
@@ -77,9 +77,9 @@ const ecosystem = [
     icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>`,
   },
   {
-    name: 'Gestion de la reputation',
+    name: 'Veille de réputation',
     chineseName: '舆情管理',
-    description: 'Les gens partagent leurs opinions sur Weibo publiquement. Surveiller les mentions de marque, suivre la concurrence et detecter les changements de sentiment tot n\'est pas optionnel.',
+    description: 'Sur Weibo, les opinions se disent en place publique. Surveiller les mentions de marque, suivre la concurrence et détecter tôt les bascules de sentiment n\'est pas une option.',
     image: '/images/platforms/weibo-ecosystem/reputation.png',
     bg: '#B02D2D',
     iconBg: 'rgba(255,255,255,0.2)',
@@ -92,44 +92,44 @@ const ecosystem = [
 
 const services = [
   {
-    title: 'Creation de compte et verification',
-    description: 'Nous enregistrons votre compte entreprise Blue V de bout en bout. Preparation des documents, traduction chinoise, soumission, creation complete du profil. Les entreprises internationales paient des frais de verification uniques de 1 000 $. L\'approbation prend 2 a 4 semaines. Nous gerons tout.',
-    result: 'Un compte entreprise Weibo verifie, pret a publier.',
+    title: 'Ouverture et vérification du compte',
+    description: 'Nous prenons en charge l\'ouverture complète de votre compte entreprise V bleu. Dossier, traduction en chinois, dépôt, habillage du profil. Les sociétés étrangères s\'acquittent de frais de vérification uniques de 1 000 dollars auprès de Weibo. L\'instruction dure de deux à quatre semaines. Nous nous occupons de tout.',
+    result: 'Un compte entreprise Weibo vérifié, prêt à publier.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/></svg>`,
     image: '/images/platforms/weibo-services/account-setup.png',
   },
   {
-    title: 'Strategie de contenu et production',
-    description: 'Plans de contenu mensuels avec publications de marque, rebonds sur les sujets tendance, formats interactifs et assets de campagne. Du contenu chinois natif par des locuteurs natifs. Posts courts, carrousels 9 images, video courte, assets livestream.',
-    result: 'Du contenu localise concu pour l\'algorithme actuel de Weibo.',
+    title: 'Stratégie éditoriale et production',
+    description: 'Plans éditoriaux mensuels : publications de marque, rebonds sur l\'actualité, formats interactifs, assets de campagne. Contenus rédigés en chinois par des rédacteurs chinois natifs. Posts courts, carrousels neuf images, vidéo courte, assets pour livestreams.',
+    result: 'Des contenus localisés, calibrés pour l\'algorithme actuel de Weibo.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/></svg>`,
     image: '/images/platforms/weibo-services/content-strategy.png',
   },
   {
-    title: 'Publicite payante',
-    description: 'Fan Headlines, Fan Tunnels, display in-feed, splash page ads, promotion de recherche, promotion de hashtag. Ciblage par donnees demographiques, centres d\'interet, comportement et audiences similaires. Reporting hebdomadaire CPM, CPC, CPA, ROAS. Budget publicitaire facture separement. Sans marge.',
-    result: 'Des publicites qui touchent la bonne audience avec un reporting transparent des depenses.',
+    title: 'Publicité payante',
+    description: 'Fan Headlines, Fan Tunnels, display in-feed, splash ads, promotion de recherche, promotion de hashtag. Ciblage par données démographiques, centres d\'intérêt, comportements et audiences similaires. Reporting hebdomadaire CPM, CPC, CPA, ROAS. Budget média facturé à part, sans marge ajoutée.',
+    result: 'Des campagnes qui touchent la bonne audience, avec un suivi transparent des dépenses.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>`,
     image: '/images/platforms/weibo-services/paid-advertising.png',
   },
   {
     title: 'Campagnes KOL et KOC',
-    description: 'Nous trouvons, verifions, negocions et briefons les influenceurs. Selection basee sur l\'engagement verifie, le controle d\'authenticite de l\'audience, l\'adequation sectorielle et le budget. Gestion complete de la campagne, du brief creatif au rapport de ROI.',
-    result: 'Des campagnes d\'influence appuyees sur des donnees verifiees, pas sur le nombre d\'abonnes.',
+    description: 'Sourcing, vérification, négociation et brief des relais d\'influence. Sélection adossée à l\'engagement réel, au contrôle d\'authenticité de l\'audience, à la pertinence sectorielle et au budget. Pilotage complet, du brief créatif au bilan ROI.',
+    result: 'Des campagnes d\'influence adossées à des données vérifiées, pas à un compteur d\'abonnés.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
     image: '/images/platforms/weibo-services/kol-campaigns.png',
   },
   {
-    title: 'Hot Search et campagnes de sujets',
-    description: 'Creation de sujet, seeding de contenu, amplification KOL, activation de communaute, promotion payante. Concu pour inserer votre marque dans la conversation nationale au moment opportun.',
-    result: 'Votre marque dans le classement des tendances les plus suivies de Chine.',
+    title: 'Hot Search et campagnes de topics',
+    description: 'Création du sujet, seeding éditorial, relais KOL, activation communautaire, amplification payante. Conçu pour placer la marque dans la conversation nationale à l\'instant opportun.',
+    result: 'Votre marque dans le classement des tendances les plus suivies du pays.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>`,
     image: '/images/platforms/weibo-services/hot-search.png',
   },
   {
     title: 'Veille sociale et analytique',
-    description: 'Surveillance quotidienne des mentions de marque, des mouvements concurrentiels, des variations de sentiment et des conversations tendance. Rapports mensuels sur la croissance des abonnes, l\'engagement, la performance du contenu, les resultats publicitaires, le retour sur investissement KOL et les benchmarks concurrentiels.',
-    result: 'Des rapports operationnels avec des recommandations concretes pour le mois suivant.',
+    description: 'Suivi quotidien des mentions de marque, des mouvements de la concurrence, des basculements de sentiment et des conversations tendance. Bilans mensuels détaillés : croissance des abonnés, engagement, performance par format, résultats médias, retour sur investissement KOL et repères concurrentiels.',
+    result: 'Des rapports opérationnels assortis de recommandations concrètes pour le mois suivant.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 6-8"/></svg>`,
     image: '/images/platforms/weibo-services/analytics.png',
   },
@@ -137,99 +137,99 @@ const services = [
 
 const bestPractices = [
   {
-    title: 'Publiez chaque jour.',
-    description: 'Une fois par jour minimum. Trois a cinq en phase de croissance. L\'algorithme recompense la regularite.',
+    title: 'Publiez tous les jours.',
+    description: 'Une publication par jour au minimum. Trois à cinq en phase de croissance. L\'algorithme récompense la constance.',
   },
   {
-    title: 'Privilegiez les visuels.',
-    description: 'Utilisez les 9 emplacements d\'images. L\'image centrale attire le plus l\'attention. La video courte surpasse systematiquement les publications statiques.',
+    title: 'Misez tout sur le visuel.',
+    description: 'Exploitez les neuf emplacements d\'images. L\'image centrale capte l\'œil en priorité. La vidéo courte surpasse systématiquement les publications statiques.',
   },
   {
-    title: 'Reagissez vite aux tendances.',
-    description: 'Consultez la Hot Search chaque matin. Publiez dans l\'heure quand un sujet pertinent emerge.',
+    title: 'Réagissez à l\'actualité sans tarder.',
+    description: 'Consultez la Hot Search chaque matin. Publiez dans l\'heure dès qu\'un sujet pertinent sort.',
   },
   {
-    title: 'Ecrivez concis.',
-    description: 'Les posts sont tronques apres 140 caracteres. Premiere phrase percutante. Appel a l\'action visible avant le pli.',
+    title: 'Écrivez court.',
+    description: 'Les publications sont tronquées au-delà de 140 caractères. Soignez la première phrase. Placez l\'appel à l\'action avant la ligne de coupe.',
   },
   {
-    title: 'Repondez vraiment aux gens.',
-    description: 'La section commentaires est l\'endroit ou les vraies conversations se deroulent. Les marques qui interagissent construisent leur fidelite bien plus vite que celles qui se contentent de diffuser.',
+    title: 'Répondez aux gens, vraiment.',
+    description: 'Les vraies conversations se nouent dans les commentaires. Les marques qui dialoguent fidélisent bien plus vite que celles qui se contentent de diffuser.',
   },
   {
-    title: 'Faites-vous verifier tot.',
-    description: 'Le badge Blue V renforce la confiance, ameliore la portee, deverrouille les outils publicitaires et protege contre les comptes imitateurs.',
+    title: 'Faites-vous vérifier rapidement.',
+    description: 'Le badge V bleu consolide la confiance, pousse la portée, ouvre les outils publicitaires et vous protège des comptes imitateurs.',
   },
 ];
 
 const steps = [
   {
     number: '01',
-    title: 'Appel decouverte.',
-    description: 'Parlez-nous de votre marque, de vos objectifs et de votre degre de preparation pour la Chine. Pas de presentation commerciale. Juste les bonnes questions.',
+    title: 'Appel de cadrage.',
+    description: 'Parlez-nous de votre marque, de vos objectifs et de votre niveau de préparation pour la Chine. Pas de baratin commercial. Les bonnes questions, rien d\'autre.',
     icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>`,
   },
   {
     number: '02',
-    title: 'Proposition.',
-    description: 'Un perimetre clair. Un prix fixe. Chaque livrable detaille. Aucune surprise.',
+    title: 'Proposition commerciale.',
+    description: 'Un périmètre net. Un prix ferme. Chaque livrable détaillé. Aucune mauvaise surprise.',
     icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>`,
   },
   {
     number: '03',
-    title: 'En ligne en 2 semaines.',
-    description: 'Compte actif, premier contenu publie, premiere campagne lancee. Quatorze jours entre la signature du contrat et la premiere publication.',
+    title: 'En ligne en deux semaines.',
+    description: 'Compte actif, premiers contenus publiés, première campagne lancée. Quatorze jours entre la signature du contrat et la première publication.',
     icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>`,
   },
 ];
 
 const faqs = [
   {
-    q: 'Qui gere concretement notre compte Weibo ?',
-    a: 'Notre equipe a Shanghai et Hong Kong. Des locuteurs natifs chinois qui redigent votre contenu, achetent les publicites et negocient directement avec les KOL. Nous ne sommes pas une agence travaillant a distance depuis Londres ou New York en devinant ce qui est tendance en Chine. Nous nous connectons a Weibo chaque matin, dans le meme fuseau horaire que votre audience.',
+    q: 'Qui pilote concrètement notre compte Weibo ?',
+    a: 'Notre équipe à Shanghai et Hong Kong. Des rédacteurs chinois natifs rédigent vos contenus, achètent les espaces publicitaires et négocient en direct avec les KOL. Nous ne sommes pas une agence pilotée à distance depuis Londres ou New York, à deviner ce qui se passe en Chine. Nous nous connectons à Weibo chaque matin, dans le même fuseau horaire que votre audience.',
   },
   {
-    q: 'Une entreprise enregistree hors de Chine peut-elle ouvrir un compte Weibo ?',
-    a: 'Oui, et nous le faisons regulierement. Les entreprises etrangeres peuvent obtenir un compte entreprise verifie avec un badge Blue V. Il vous faudra des documents d\'immatriculation traduits en chinois et des frais uniques de 1 000 $ verses a Weibo pour la verification. L\'approbation prend environ 2 a 4 semaines. Nous gerons les documents, la traduction et les echanges avec l\'equipe Weibo pour que vous n\'ayez pas a vous en occuper.',
+    q: 'Une société immatriculée hors de Chine peut-elle ouvrir un compte Weibo ?',
+    a: 'Oui, et nous le faisons régulièrement. Les sociétés étrangères peuvent obtenir un compte entreprise vérifié avec badge V bleu. Il faut produire des statuts traduits en chinois et régler des frais de vérification uniques de 1 000 dollars à Weibo. L\'instruction dure environ deux à quatre semaines. Nous prenons en charge le dossier, la traduction et les échanges avec Weibo pour vous décharger de ces démarches.',
   },
   {
     q: 'Comment fonctionne la tarification ?',
-    a: 'Perimetre fixe. Prix fixe. Nous definissons chaque livrable avant le demarrage du projet. Combien de posts, combien de videos, quelles campagnes, quel reporting. Vous voyez l\'ensemble et le cout total des le depart. Pas de devis vagues. Pas de frais caches qui apparaissent trois mois plus tard.',
+    a: 'Périmètre fixe. Prix ferme. Nous définissons chaque livrable avant le lancement. Combien de publications, combien de vidéos, quelles campagnes, quel reporting. Vous voyez l\'ensemble et le coût total dès le départ. Pas de devis flou. Pas de frais surgis trois mois plus tard.',
   },
   {
-    q: 'Qu\'est-ce qui vous differencie des autres agences sur Weibo ?',
-    a: 'Nous sommes physiquement bases en Chine avec un acces direct a chaque plateforme, pas en gestion a distance depuis l\'etranger. Nous utilisons des outils IA (HubStudio.ai) pour la production de contenu, ce qui signifie des delais plus courts et des couts reduits sans sacrifier la qualite. Et nous sommes la seule agence que nous avons trouvee qui propose des forfaits a prix fixe. Nous avons analyse 37 concurrents. Aucun ne le fait.',
+    q: 'Qu\'est-ce qui vous distingue des autres agences sur Weibo ?',
+    a: 'Nous sommes physiquement implantés en Chine, avec un accès direct à chaque plateforme, pas en pilotage à distance depuis l\'étranger. Nous nous appuyons sur des outils d\'IA (HubStudio.ai) pour la production de contenu, ce qui compresse les délais et les coûts sans céder sur la qualité. Et nous sommes la seule agence que nous ayons repérée à proposer des forfaits à prix ferme. Nous en avons passé 37 au crible. Aucune ne le fait.',
   },
   {
-    q: 'En combien de temps peut-on demarrer ?',
-    a: 'Environ deux semaines apres la signature. Enregistrement du compte, configuration du profil, premier contenu publie, premiere campagne lancee. Le processus de verification Weibo prend 2 a 4 semaines de leur cote, mais nous ne restons pas les bras croises. Nous commencons a construire et a publier pendant que le badge Blue V est en cours de traitement.',
+    q: 'Sous combien de temps peut-on démarrer ?',
+    a: 'Environ deux semaines après la signature. Ouverture du compte, habillage du profil, premiers contenus publiés, première campagne lancée. La vérification Weibo demande deux à quatre semaines de leur côté, mais nous ne restons pas les bras croisés. Nous construisons et publions pendant que le badge V bleu chemine dans leurs services.',
   },
   {
-    q: 'Tout le contenu est-il redige en chinois ?',
-    a: 'Oui. Tout ce que nous publions sur Weibo est ecrit en chinois par des locuteurs natifs, puis relu par un second locuteur natif pour le ton et la justesse culturelle. Vous recevez des resumes en anglais des plans de contenu et des rapports mensuels. Si vous souhaitez valider chaque publication avant sa mise en ligne, nous integrons cette etape au processus.',
+    q: 'Tous les contenus sont-ils rédigés en chinois ?',
+    a: 'Oui. Tout ce que nous publions sur Weibo est écrit en chinois par des rédacteurs chinois natifs, puis relu par un second rédacteur natif pour vérifier le ton et la justesse culturelle. Vous recevez des synthèses en anglais des plans éditoriaux et des bilans mensuels. Si vous souhaitez valider chaque publication avant mise en ligne, nous intégrons cette étape au circuit.',
   },
   {
-    q: 'A-t-on vraiment besoin de Weibo si nous utilisons deja WeChat et RedNote ?',
-    a: 'Reponse courte : oui. WeChat maintient le contenu a l\'interieur de cercles fermes. RedNote est solide pour la decouverte de produits. Mais ni l\'un ni l\'autre ne permet a votre marque de toucher une audience publique de masse ou de participer aux conversations tendance nationales. Si une crise eclate, si un moment culturel prend de l\'ampleur, ou si vous avez simplement besoin que des millions de personnes apprennent le nom de votre marque rapidement, Weibo est la seule plateforme en Chine qui le permet.',
+    q: 'Avons-nous vraiment besoin de Weibo si nous utilisons déjà WeChat et RedNote ?',
+    a: 'En un mot, oui. WeChat cantonne les contenus à des cercles fermés. RedNote excelle pour la découverte produit. Mais ni l\'un ni l\'autre ne permet à votre marque de s\'adresser à une audience publique de masse ni d\'entrer dans les conversations tendance du pays. En cas de crise, de moment culturel qui s\'emballe, ou pour que des millions de personnes découvrent votre nom en quelques heures, Weibo est la seule plateforme en Chine qui le permet.',
   },
   {
-    q: 'Comment selectionnez-vous les KOL ?',
-    a: 'Pas par le nombre d\'abonnes. Nous auditons les taux d\'engagement reels, effectuons des controles de faux abonnes, analysons les donnees demographiques de l\'audience et examinons le style de contenu de chaque KOL par rapport a votre marque. Nous comparons egalement leurs tarifs aux prix du marche pour que vous sachiez que vous obtenez un prix juste. Chaque KOL recommande est accompagne des donnees justifiant la recommandation.',
+    q: 'Comment sélectionnez-vous les KOL ?',
+    a: 'Pas au nombre d\'abonnés. Nous auditons les taux d\'engagement réels, traquons les faux abonnés, analysons le profil démographique de l\'audience et confrontons le style éditorial de chaque KOL à votre marque. Nous comparons aussi leurs tarifs aux prix du marché pour garantir que vous payez le juste prix. Chaque recommandation est livrée avec les données qui la justifient.',
   },
   {
-    q: 'A quoi ressemblent les rapports ?',
-    a: 'Mensuels. Chaque rapport couvre la croissance des abonnes, les taux d\'engagement, la performance du contenu par format, les resultats des campagnes publicitaires (CPM, CPC, CPA, ROAS), le retour sur investissement des campagnes KOL et les benchmarks concurrentiels. Nous terminons chaque rapport par des recommandations claires pour le mois suivant. Vous beneficiez aussi d\'un point a mi-parcours si des campagnes actives sont en cours.',
+    q: 'À quoi ressemblent les bilans ?',
+    a: 'Mensuels. Chaque bilan couvre la croissance des abonnés, les taux d\'engagement, la performance des contenus par format, les résultats des campagnes médias (CPM, CPC, CPA, ROAS), le retour sur investissement des campagnes KOL et les repères concurrentiels. Nous concluons par des recommandations claires pour le mois suivant. Un point à mi-parcours s\'ajoute dès qu\'une campagne est en cours.',
   },
   {
-    q: 'Et si nous voulons aller au-dela de Weibo ?',
-    a: 'La plupart de nos clients le font. Weibo est l\'une des plus de 18 plateformes sur lesquelles nous intervenons. Nous concevons et gerons des campagnes sur Weibo, WeChat, RedNote, Douyin et d\'autres comme Bilibili, Zhihu ou Kuaishou selon votre secteur. Tout est coordonne par une seule equipe, livre dans un seul cahier des charges et facture a un prix fixe unique.',
+    q: 'Et si nous voulons aller au-delà de Weibo ?',
+    a: 'La plupart de nos clients le font. Weibo est l\'une des 18 plateformes et plus sur lesquelles nous intervenons. Nous concevons et pilotons des campagnes sur Weibo, WeChat, RedNote, Douyin et d\'autres comme Bilibili, Zhihu ou Kuaishou selon votre secteur. Tout est coordonné par une seule équipe, consigné dans un seul cahier des charges et facturé sous un unique prix ferme.',
   },
 ];
 ---
 
 <PageLayout
-  title="Services Marketing Weibo | TheRedScroll"
-  description="Services marketing Weibo depuis Shanghai. Creation de compte, contenu, publicite, campagnes KOL et analytique. Perimetre fixe. Prix fixe. 567M d'utilisateurs actifs mensuels."
+  title="Marketing Weibo, piloté depuis Shanghai | TheRedScroll"
+  description="Marketing Weibo piloté depuis Shanghai. Ouverture de compte, contenu, publicité, campagnes KOL et analytique. Périmètre fixe. Prix ferme. 567 millions d'utilisateurs actifs chaque mois."
   lang="fr"
 >
   <!-- Hero: Dark hero banner -->
@@ -241,16 +241,16 @@ const faqs = [
     <Container class="relative z-[1]">
       <div class="max-w-[800px] mx-auto text-center">
         <a href="/fr/platforms/others" class="inline-flex items-center gap-[6px] text-[13px] text-[#5C5C5C] mb-[16px] transition-colors duration-150 hover:text-[#FFFFFF]">
-          &larr; Toutes les plateformes
+          &larr; Voir toutes les plateformes
         </a>
         <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">
           Marketing Weibo
         </p>
         <h1 class="text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] text-[#FFFFFF] mb-[8px]">
-          Nous ne parlons pas de strategie Weibo. Nous publions sur Weibo. Chaque jour. Depuis Shanghai.
+          Nous ne disserterons pas sur Weibo. Nous y publions. Chaque jour. Depuis Shanghai.
         </h1>
         <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal mb-[24px]">
-          Marketing Weibo depuis Shanghai. Creation de compte, contenu, publicite, campagnes KOL, analytique. 567 millions d'utilisateurs mensuels. Perimetre fixe. Prix fixe. Equipe sur le terrain.
+          Marketing Weibo piloté depuis Shanghai. Ouverture de compte, contenu, publicité, campagnes KOL, analytique. 567 millions d'utilisateurs chaque mois. Périmètre fixe. Prix ferme. Équipe sur le terrain.
         </p>
         <Button variant="primary" href="/fr/contact">Prendre rendez-vous</Button>
       </div>
@@ -264,7 +264,7 @@ const faqs = [
         <div class="max-w-[560px]">
           <SectionBar />
           <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[8px]">
-            La place publique ouverte de la Chine. 567 millions de personnes, chaque mois.
+            La place publique de la Chine, 567 millions de personnes chaque mois.
           </h2>
           <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
             Weibo en chiffres.
@@ -301,50 +301,50 @@ const faqs = [
           <SectionBar />
         </div>
         <SectionHeading overline="Pourquoi Weibo compte">
-          Les tendances naissent ici. L'actualite eclate ici. L'opinion publique se forme ici.
+          Les tendances y naissent. L'actualité y éclate. L'opinion publique s'y façonne.
         </SectionHeading>
       </div>
 
       <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
         <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
           <div class="w-full aspect-[16/9] overflow-hidden">
-            <img src="/images/platforms/weibo-why/public-square.png" alt="Application Weibo ouverte montrant le fil public avec des publications tendance et des discussions" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+            <img src="/images/platforms/weibo-why/public-square.png" alt="Application Weibo affichant le fil public avec publications tendance et discussions" class="w-full h-full object-cover" loading="lazy" decoding="async" />
           </div>
           <div class="p-[24px] max-[640px]:p-[20px]">
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Tout est public</h3>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Tout se joue en public</h3>
             <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
-              Le contenu WeChat reste confine aux cercles d'amis. Sur Weibo, tout le monde peut voir vos publications. Un seul lancement produit ou un commentaire bien place sur un sujet tendance peut toucher des millions de personnes qui n'ont jamais suivi votre compte.
+              Sur WeChat, le contenu reste confiné aux cercles d'amis. Sur Weibo, tout le monde voit vos publications. Un lancement produit ou une saillie bien placée sur un sujet tendance peut atteindre des millions de personnes qui ne vous suivent même pas.
             </p>
           </div>
         </div>
 
         <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
           <div class="w-full aspect-[16/9] overflow-hidden">
-            <img src="/images/platforms/weibo-why/hot-search.png" alt="Classement Hot Search de Weibo montrant les 50 sujets tendance se rafraichissant en temps reel" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+            <img src="/images/platforms/weibo-why/hot-search.png" alt="Classement Hot Search de Weibo avec les cinquante sujets tendance rafraîchis en temps réel" class="w-full h-full object-cover" loading="lazy" decoding="async" />
           </div>
           <div class="p-[24px] max-[640px]:p-[20px]">
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">La Hot Search pilote la plateforme</h3>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">La Hot Search commande la plateforme</h3>
             <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
-              Elle se rafraichit chaque minute. Les sujets qui entrent dans le top 50 sont vus par des centaines de millions d'utilisateurs en quelques heures. Les marques qui creent du contenu autour de ces moments obtiennent une portee organique que la publicite payante seule ne peut egalir.
+              Elle se rafraîchit minute par minute. Un sujet qui entre dans le top 50 est vu par des centaines de millions d'utilisateurs en quelques heures. Les marques qui greffent leur contenu sur ces moments récoltent une portée organique qu'aucun budget média ne saurait acheter.
             </p>
           </div>
         </div>
 
         <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
           <div class="w-full aspect-[16/9] overflow-hidden">
-            <img src="/images/platforms/weibo-why/brand-research.png" alt="Consommateur parcourant la page de marque Weibo en consultant avis et commentaires avant achat" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+            <img src="/images/platforms/weibo-why/brand-research.png" alt="Consommatrice parcourant la page de marque sur Weibo, consultant avis et commentaires avant achat" class="w-full h-full object-cover" loading="lazy" decoding="async" />
           </div>
           <div class="p-[24px] max-[640px]:p-[20px]">
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Les consommateurs recherchent les marques ici</h3>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Les consommateurs y enquêtent sur les marques</h3>
             <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
-              Les acheteurs chinois recherchent des noms de marques et font defiler ce que disent les vrais utilisateurs. Une presence solide inspire confiance. Une absence souleve des questions. Des commentaires negatifs laisses sans reponse font de reels degats.
+              Les acheteurs chinois tapent un nom de marque et font défiler ce qu'en disent les vrais utilisateurs. Une présence solide inspire confiance. Une absence sème le doute. Des commentaires négatifs laissés sans réponse font de vrais dégâts.
             </p>
           </div>
         </div>
       </div>
 
       <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] mt-[24px] text-center max-w-[680px] mx-auto">
-        Weibo couvre l'ensemble du parcours. Notoriete de masse via les sujets tendance en haut du funnel. Ventes directes via les integrations Tmall et Taobao Live en bas. Peu de plateformes chinoises font bien les deux. Weibo, si.
+        Weibo couvre tout l'entonnoir. Notoriété de masse par les sujets tendance en haut, ventes directes par les passerelles Tmall et Taobao Live en bas. Rares sont les plateformes chinoises qui réussissent les deux. Weibo, oui.
       </p>
     </Container>
   </section>
@@ -356,8 +356,8 @@ const faqs = [
         <div class="flex justify-center mb-[12px]">
           <SectionBar />
         </div>
-        <SectionHeading overline="Comment Weibo aide les marques a croitre">
-          Six leviers pour transformer l'attention en revenus.
+        <SectionHeading overline="Comment Weibo fait grandir les marques">
+          Six leviers pour convertir l'attention en chiffre d'affaires.
         </SectionHeading>
       </div>
 
@@ -380,7 +380,7 @@ const faqs = [
 
       <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px] mt-[16px]">
         <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] max-w-[680px]">
-          <span class="text-[#1A1A1A] font-medium">Note de verification :</span> Les entreprises etrangeres peuvent obtenir un compte entreprise verifie avec un badge Blue V. Il vous faudra des documents d'immatriculation traduits en chinois et des frais uniques de 1 000 $ verses a Weibo. L'approbation prend 2 a 4 semaines. Nous gerons l'ensemble du processus.
+          <span class="text-[#1A1A1A] font-medium">À propos de la vérification :</span> les sociétés étrangères peuvent obtenir un compte entreprise vérifié avec badge V bleu. Il faut produire des statuts traduits en chinois et régler des frais uniques de 1 000 dollars à Weibo. L'instruction dure deux à quatre semaines. Nous prenons en charge l'ensemble des démarches.
         </p>
       </div>
     </Container>
@@ -394,7 +394,7 @@ const faqs = [
           <SectionBar />
         </div>
         <SectionHeading overline="Ce que nous faisons sur Weibo">
-          Six services. Chacun avec un livrable precis.
+          Six prestations. Chacune avec un livrable précis.
         </SectionHeading>
       </div>
 
@@ -440,7 +440,7 @@ const faqs = [
               </div>
               <h3 class="text-[18px] font-medium leading-[1.3] mb-[8px] text-[#FFFFFF]">{service.title}</h3>
               <p class="text-[13px] font-normal leading-[1.5] mb-[12px] text-[rgba(255,255,255,0.7)]">{service.description}</p>
-              <p class="text-[13px] font-medium leading-[1.5] text-[#FFFFFF]">Vous obtenez : {service.result}</p>
+              <p class="text-[13px] font-medium leading-[1.5] text-[#FFFFFF]">Résultat : {service.result}</p>
             </div>
           </div>
         ))}
@@ -453,9 +453,9 @@ const faqs = [
     <Container>
       <div class="bg-[#1A1A1A] rounded-[12px] py-[48px] px-[48px] max-[640px]:px-[20px] max-[640px]:py-[32px]">
         <div class="mb-[40px] max-[640px]:mb-[32px]">
-          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">Par notre equipe sur le terrain</p>
-          <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF]">Bonnes pratiques Weibo</h2>
-          <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.5] mt-[8px] max-w-[680px]">Nous publions sur Weibo depuis la Chine, chaque jour sans exception. Ce qui suit vient de la pratique quotidienne.</p>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">Par notre équipe sur le terrain</p>
+          <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF]">Les bonnes pratiques sur Weibo</h2>
+          <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.5] mt-[8px] max-w-[680px]">Nous publions sur Weibo depuis la Chine, tous les jours, sans exception. Ce qui suit tient de la pratique quotidienne.</p>
         </div>
         <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[20px]">
           {bestPractices.map((practice) => (
@@ -477,8 +477,8 @@ const faqs = [
           <div class="sticky top-[84px] max-[640px]:static">
             <SectionBar />
             <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">FAQ</p>
-            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">Questions frequentes</h2>
-            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">Tout ce que vous devez savoir pour travailler sur Weibo avec TheRedScroll.</p>
+            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">Questions fréquentes</h2>
+            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">Ce qu'il faut savoir avant de travailler sur Weibo avec TheRedScroll.</p>
           </div>
         </div>
         <div>
@@ -510,8 +510,8 @@ const faqs = [
         <div class="flex justify-center mb-[12px]">
           <div class="w-[40px] h-[3px] bg-[#CC3333] rounded-none"></div>
         </div>
-        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">Pour commencer</p>
-        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF]">De zero a un compte Weibo actif en deux semaines.</h2>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">Pour démarrer</p>
+        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF]">De zéro à un compte Weibo actif en deux semaines.</h2>
       </div>
 
       <div class="grid grid-cols-3 max-[640px]:grid-cols-1 gap-[24px] max-[640px]:gap-[16px]">
@@ -531,7 +531,7 @@ const faqs = [
       </div>
 
       <div class="mt-[48px] pt-[24px] border-t border-[rgba(255,255,255,0.1)] text-center">
-        <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal mb-[12px]">Voir aussi</p>
+        <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal mb-[12px]">À lire également</p>
         <div class="flex justify-center gap-[24px] flex-wrap">
           <a href="/fr/platforms/wechat" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Marketing WeChat &rarr;</a>
           <a href="/fr/platforms/rednote" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Marketing RedNote &rarr;</a>

@@ -6,15 +6,15 @@ import SectionBar from '../../components/ui/SectionBar.astro';
 
 const packages = [
   {
-    name: 'Launch',
-    price: '¥25,600',
-    description: '覆盖四大主流平台的基础档，发布节奏稳扎稳打。',
+    name: 'Start',
+    price: '¥25,000',
+    description: '四大平台齐开，发布节奏稳定，基础档起步。',
     highlighted: false,
     strategy: {
-      competitor: '第1个月',
+      competitor: '首月完成',
       contentStrategy: true,
       editorialCalendar: true,
-      accountOpening: '按需开通',
+      accountOpening: '按需配置',
     },
     content: {
       wechat: '1篇文章/周',
@@ -34,15 +34,15 @@ const packages = [
     },
   },
   {
-    name: 'Scale',
-    price: '¥37,600',
-    description: '加上AI视频，内容产能直接翻三倍，发布频率明显拉起来。',
+    name: 'Grow',
+    price: '¥37,000',
+    description: '加上AI视频，产能翻三倍，发布频率明显提速。',
     highlighted: true,
     strategy: {
-      competitor: '第1个月',
+      competitor: '首月完成',
       contentStrategy: true,
       editorialCalendar: true,
-      accountOpening: '按需开通',
+      accountOpening: '按需配置',
     },
     content: {
       wechat: '1篇文章/周',
@@ -58,19 +58,19 @@ const packages = [
       accountManager: true,
       chatSupport: true,
       monthlyReport: true,
-      strategyCalls: '每周一次',
+      strategyCalls: '每周1次',
     },
   },
   {
-    name: 'Command',
-    price: '¥46,100',
-    description: '全平台高频发布，舆情实时盯着，出事随时响应。',
+    name: 'Lead',
+    price: '¥46,000',
+    description: '全平台高频发布，舆情实时盯，突发情况随叫随到。',
     highlighted: false,
     strategy: {
-      competitor: '第1个月',
+      competitor: '首月完成',
       contentStrategy: true,
       editorialCalendar: true,
-      accountOpening: '按需开通',
+      accountOpening: '按需配置',
     },
     content: {
       wechat: '1篇文章/周',
@@ -86,30 +86,30 @@ const packages = [
       accountManager: true,
       chatSupport: true,
       monthlyReport: true,
-      strategyCalls: '随时沟通',
+      strategyCalls: '随叫随到',
     },
   },
 ];
 
 const addOnPlatforms = [
 { category: '图文平台', items: [
-    { name: '知乎（深度文章）', price: '¥615/篇' },
-    { name: '知乎（短回答）', price: '¥310/篇' },
-    { name: '今日头条（资讯文章）', price: '¥445/篇' },
-    { name: '百度贴吧（帖子）', price: '¥275/条' },
+    { name: '知乎深度长文', price: '¥615/篇' },
+    { name: '知乎短回答', price: '¥310/篇' },
+    { name: '今日头条资讯', price: '¥445/篇' },
+    { name: '百度贴吧发帖', price: '¥275/条' },
   ]},
   { category: '电商与生活方式', items: [
-    { name: '美团/大众点评', price: '¥685/月' },
-    { name: '拼多多（产品页）', price: '¥515/条' },
-    { name: 'Lemon8（生活方式内容）', price: '¥340/条' },
-    { name: 'QQ（社群内容）', price: '¥240/条' },
+    { name: '美团、大众点评', price: '¥685/月' },
+    { name: '拼多多产品页', price: '¥515/条' },
+    { name: 'Lemon8生活内容', price: '¥340/条' },
+    { name: 'QQ社群内容', price: '¥240/条' },
   ]},
 ];
 ---
 
 <BaseLayout
   title="价格方案 | TheRedScroll"
-  description="价格写在明面上。WeChat、Douyin、RedNote、Weibo的中国社媒服务。起步价¥25,600/月。"
+  description="价格全摆明面。微信、抖音、小红书、微博一站打理。起步¥25,000/月。"
   lang="zh"
 >
   <main class="pt-[60px] max-[640px]:pt-[52px]">
@@ -120,10 +120,10 @@ const addOnPlatforms = [
       <div class="relative z-[1] max-w-[800px] mx-auto text-center">
         <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">价格方案</p>
         <h1 class="text-[#FFFFFF] text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] mb-[8px]">
-          范围清楚、一口价、不留后手。
+          范围写明白，一口价，不藏猫腻。
         </h1>
         <p class="text-[rgba(255,255,255,0.6)] text-[16px] font-normal leading-[1.6]">
-          价格以人民币计，税前。所有方案最低签6个月。
+          报价人民币、税前。所有方案最低签6个月。
         </p>
       </div>
     </section>
@@ -133,7 +133,7 @@ const addOnPlatforms = [
       <Container>
         <div class="text-center mb-[48px]">
           <div class="flex justify-center mb-[12px]"><SectionBar /></div>
-          <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A]">服务档位</h2>
+          <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A]">三档方案</h2>
         </div>
 
         <!-- Desktop comparison table -->
@@ -143,85 +143,85 @@ const addOnPlatforms = [
               <tr>
                 <th class="w-[280px] p-[16px] align-bottom"></th>
                 <th class="p-[20px] align-bottom text-center bg-[#F0F1F4] rounded-tl-[10px]">
-                  <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#5C5C5C] mb-[4px]">Launch</p>
-                  <p class="text-[28px] text-[#1A1A1A] font-medium leading-[1.2]">¥25,600<span class="text-[14px] text-[#5C5C5C] font-normal">/月</span></p>
-                  <Button variant="secondary" href="/zh/contact" class="mt-[16px] w-full justify-center text-[13px]">开始</Button>
+                  <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#5C5C5C] mb-[4px]">Start</p>
+                  <p class="text-[28px] text-[#1A1A1A] font-medium leading-[1.2]">¥25,000<span class="text-[14px] text-[#5C5C5C] font-normal">/月</span></p>
+                  <Button variant="secondary" href="/zh/contact" class="mt-[16px] w-full justify-center text-[13px]">立即开始</Button>
                 </th>
                 <th class="p-[20px] align-bottom text-center bg-[#F0F1F4] relative border-x-[3px] border-[#CC3333]">
                   <div class="absolute top-0 left-[-3px] right-[-3px] h-[3px] bg-[#CC3333]"></div>
-                  <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333] mb-[4px]">最常选</p>
-                  <p class="text-[28px] text-[#1A1A1A] font-medium leading-[1.2]">¥37,600<span class="text-[14px] text-[#5C5C5C] font-normal">/月</span></p>
-                  <Button variant="primary" href="/zh/contact" class="mt-[16px] w-full justify-center text-[13px]">开始</Button>
+                  <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333] mb-[4px]">Grow</p>
+                  <p class="text-[28px] text-[#1A1A1A] font-medium leading-[1.2]">¥37,000<span class="text-[14px] text-[#5C5C5C] font-normal">/月</span></p>
+                  <Button variant="primary" href="/zh/contact" class="mt-[16px] w-full justify-center text-[13px]">立即开始</Button>
                 </th>
                 <th class="p-[20px] align-bottom text-center bg-[#F0F1F4] rounded-tr-[10px]">
-                  <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#5C5C5C] mb-[4px]">Command</p>
-                  <p class="text-[28px] text-[#1A1A1A] font-medium leading-[1.2]">¥46,100<span class="text-[14px] text-[#5C5C5C] font-normal">/月</span></p>
-                  <Button variant="secondary" href="/zh/contact" class="mt-[16px] w-full justify-center text-[13px]">开始</Button>
+                  <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#5C5C5C] mb-[4px]">Lead</p>
+                  <p class="text-[28px] text-[#1A1A1A] font-medium leading-[1.2]">¥46,000<span class="text-[14px] text-[#5C5C5C] font-normal">/月</span></p>
+                  <Button variant="secondary" href="/zh/contact" class="mt-[16px] w-full justify-center text-[13px]">立即开始</Button>
                 </th>
               </tr>
             </thead>
             <tbody>
               <!-- Section: Strategy & Setup -->
-              <tr><td colspan="4" class="pt-[32px] pb-[8px] px-[16px]"><p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333]">策略与部署</p></td></tr>
+              <tr><td colspan="4" class="pt-[32px] pb-[8px] px-[16px]"><p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333]">策略与启动</p></td></tr>
               <tr class="border-b border-[rgba(0,0,0,0.06)]">
-                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">竞品分析</td>
-                <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center">第1个月</td>
-                <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center border-x-[3px] border-[#CC3333]">第1个月</td>
-                <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center">第1个月</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">竞品调研</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center">首月完成</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center border-x-[3px] border-[#CC3333]">首月完成</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center">首月完成</td>
               </tr>
               <tr class="border-b border-[rgba(0,0,0,0.06)]">
-                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">内容策略与选题方向</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">内容策略与选题</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] text-center">&#10003;</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] text-center border-x-[3px] border-[#CC3333]">&#10003;</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] text-center">&#10003;</td>
               </tr>
               <tr class="border-b border-[rgba(0,0,0,0.06)]">
-                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">月度编辑日历</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">月度发布日历</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] text-center">&#10003;</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] text-center border-x-[3px] border-[#CC3333]">&#10003;</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] text-center">&#10003;</td>
               </tr>
               <tr class="border-b border-[rgba(0,0,0,0.06)]">
-                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">账号开设与配置</td>
-                <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center">按需开通</td>
-                <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center border-x-[3px] border-[#CC3333]">按需开通</td>
-                <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center">按需开通</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">账号开通与搭建</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center">按需配置</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center border-x-[3px] border-[#CC3333]">按需配置</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center">按需配置</td>
               </tr>
 
               <!-- Section: Content -->
               <tr><td colspan="4" class="pt-[32px] pb-[8px] px-[16px]"><p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333]">内容</p></td></tr>
               <tr class="border-b border-[rgba(0,0,0,0.06)]">
-                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">WeChat</td>
-                <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center">1篇文章/周</td>
-                <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center border-x-[3px] border-[#CC3333]">1篇文章/周</td>
-                <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center">1篇文章/周</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">微信</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center">1篇/周</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center border-x-[3px] border-[#CC3333]">1篇/周</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center">1篇/周</td>
               </tr>
               <tr class="border-b border-[rgba(0,0,0,0.06)]">
-                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">Weibo</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">微博</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center">1条/周</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A] font-medium text-center border-x-[3px] border-[#CC3333]">3条/周</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] font-medium text-center">7条/周</td>
               </tr>
               <tr class="border-b border-[rgba(0,0,0,0.06)]">
-                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">RedNote (小红书)</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">小红书</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center">1条/周</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A] font-medium text-center border-x-[3px] border-[#CC3333]">3条/周</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] font-medium text-center">5条/周</td>
               </tr>
               <tr class="border-b border-[rgba(0,0,0,0.06)]">
-                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">Douyin（客户提供视频）</td>
-                <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center">1条视频/周</td>
-                <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center border-x-[3px] border-[#CC3333]">1条视频/周</td>
-                <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] font-medium text-center">2条视频/周</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">抖音（客户素材剪辑）</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center">1条/周</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center border-x-[3px] border-[#CC3333]">1条/周</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] font-medium text-center">2条/周</td>
               </tr>
               <tr class="border-b border-[rgba(0,0,0,0.06)]">
-                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">Douyin（AI视频，15秒以内）</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">抖音（AI生成，15秒内）</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center">—</td>
-                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A] font-medium text-center border-x-[3px] border-[#CC3333]">1条视频/周</td>
-                <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] font-medium text-center">2条视频/周</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A] font-medium text-center border-x-[3px] border-[#CC3333]">1条/周</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] font-medium text-center">2条/周</td>
               </tr>
               <tr class="border-b border-[rgba(0,0,0,0.06)] bg-[#F0F1F4]">
-                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A] font-medium">Douyin 合计</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A] font-medium">抖音合计</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A] font-medium text-center">1条/周</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A] font-medium text-center border-x-[3px] border-[#CC3333]">2条/周</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] font-medium text-center">4条/周</td>
@@ -230,13 +230,13 @@ const addOnPlatforms = [
               <!-- Section: AI Production -->
               <tr><td colspan="4" class="pt-[32px] pb-[8px] px-[16px]"><p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333]">AI制作</p></td></tr>
               <tr class="border-b border-[rgba(0,0,0,0.06)]">
-                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">通过HubStudio.ai生成AI视频</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">HubStudio.ai生成短视频</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center">—</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] text-center border-x-[3px] border-[#CC3333]">&#10003;</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] text-center">&#10003;</td>
               </tr>
               <tr class="border-b border-[rgba(0,0,0,0.06)]">
-                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">拍摄前创意简报确认</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">拍前创意brief过审</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center">—</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] text-center border-x-[3px] border-[#CC3333]">&#10003;</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] text-center">&#10003;</td>
@@ -245,26 +245,26 @@ const addOnPlatforms = [
               <!-- Section: Social Listening -->
               <tr><td colspan="4" class="pt-[32px] pb-[8px] px-[16px]"><p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333]">舆情监控</p></td></tr>
               <tr class="border-b border-[rgba(0,0,0,0.06)]">
-                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">品牌提及追踪</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">品牌口碑跟踪</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center">—</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center border-x-[3px] border-[#CC3333]">—</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] text-center">&#10003;</td>
               </tr>
               <tr class="border-b border-[rgba(0,0,0,0.06)]">
-                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">竞品动态监测</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">竞品动态盯梢</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center">—</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center border-x-[3px] border-[#CC3333]">—</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] text-center">&#10003;</td>
               </tr>
               <tr class="border-b border-[rgba(0,0,0,0.06)]">
-                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">月度口碑分析报告</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">月度舆情分析报告</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center">—</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center border-x-[3px] border-[#CC3333]">—</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] text-center">&#10003;</td>
               </tr>
 
               <!-- Section: Support & Reporting -->
-              <tr><td colspan="4" class="pt-[32px] pb-[8px] px-[16px]"><p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333]">支持与报告</p></td></tr>
+              <tr><td colspan="4" class="pt-[32px] pb-[8px] px-[16px]"><p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333]">服务与汇报</p></td></tr>
               <tr class="border-b border-[rgba(0,0,0,0.06)]">
                 <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">专属客户经理</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] text-center">&#10003;</td>
@@ -272,22 +272,22 @@ const addOnPlatforms = [
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] text-center">&#10003;</td>
               </tr>
               <tr class="border-b border-[rgba(0,0,0,0.06)]">
-                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">在线消息支持（周一至周五）</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">工作日在线消息答疑</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] text-center">&#10003;</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] text-center border-x-[3px] border-[#CC3333]">&#10003;</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] text-center">&#10003;</td>
               </tr>
               <tr class="border-b border-[rgba(0,0,0,0.06)]">
-                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">月度绩效报告</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">月度数据复盘</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] text-center">&#10003;</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] text-center border-x-[3px] border-[#CC3333]">&#10003;</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] text-center">&#10003;</td>
               </tr>
               <tr>
-                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">策略沟通会</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">策略对齐会</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center">每月1次</td>
-                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A] font-medium text-center border-x-[3px] border-[#CC3333]">每周一次</td>
-                <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] font-medium text-center">随时沟通</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A] font-medium text-center border-x-[3px] border-[#CC3333]">每周1次</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] font-medium text-center">随叫随到</td>
               </tr>
             </tbody>
           </table>
@@ -302,34 +302,34 @@ const addOnPlatforms = [
             const borderColor = dark ? 'border-[rgba(255,255,255,0.1)]' : 'border-[rgba(0,0,0,0.06)]';
 
             const features = [
-              { section: '策略与部署', items: [
-                { label: '竞品分析', value: pkg.strategy.competitor },
-                { label: '内容策略与选题方向', value: pkg.strategy.contentStrategy },
-                { label: '月度编辑日历', value: pkg.strategy.editorialCalendar },
-                { label: '账号开设与配置', value: pkg.strategy.accountOpening },
+              { section: '策略与启动', items: [
+                { label: '竞品调研', value: pkg.strategy.competitor },
+                { label: '内容策略与选题', value: pkg.strategy.contentStrategy },
+                { label: '月度发布日历', value: pkg.strategy.editorialCalendar },
+                { label: '账号开通与搭建', value: pkg.strategy.accountOpening },
               ]},
               { section: '内容', items: [
-                { label: 'WeChat', value: pkg.content.wechat },
-                { label: 'Weibo', value: pkg.content.weibo },
-                { label: 'RedNote (小红书)', value: pkg.content.rednote },
-                { label: 'Douyin（客户提供视频）', value: pkg.content.douyinClient },
-                { label: 'Douyin（AI视频）', value: pkg.content.douyinAi },
-                { label: 'Douyin 合计', value: pkg.content.douyinTotal },
+                { label: '微信', value: pkg.content.wechat },
+                { label: '微博', value: pkg.content.weibo },
+                { label: '小红书', value: pkg.content.rednote },
+                { label: '抖音（客户素材剪辑）', value: pkg.content.douyinClient },
+                { label: '抖音（AI生成）', value: pkg.content.douyinAi },
+                { label: '抖音合计', value: pkg.content.douyinTotal },
               ]},
               { section: 'AI制作', items: [
-                { label: '通过HubStudio.ai生成AI视频', value: pkg.ai },
-                { label: '拍摄前创意简报确认', value: pkg.ai },
+                { label: 'HubStudio.ai生成短视频', value: pkg.ai },
+                { label: '拍前创意brief过审', value: pkg.ai },
               ]},
               { section: '舆情监控', items: [
-                { label: '品牌提及追踪', value: pkg.socialListening },
-                { label: '竞品动态监测', value: pkg.socialListening },
-                { label: '月度口碑分析报告', value: pkg.socialListening },
+                { label: '品牌口碑跟踪', value: pkg.socialListening },
+                { label: '竞品动态盯梢', value: pkg.socialListening },
+                { label: '月度舆情分析报告', value: pkg.socialListening },
               ]},
-              { section: '支持与报告', items: [
+              { section: '服务与汇报', items: [
                 { label: '专属客户经理', value: pkg.support.accountManager },
-                { label: '在线消息支持（周一至周五）', value: pkg.support.chatSupport },
-                { label: '月度绩效报告', value: pkg.support.monthlyReport },
-                { label: '策略沟通会', value: pkg.support.strategyCalls },
+                { label: '工作日在线消息答疑', value: pkg.support.chatSupport },
+                { label: '月度数据复盘', value: pkg.support.monthlyReport },
+                { label: '策略对齐会', value: pkg.support.strategyCalls },
               ]},
             ];
 
@@ -339,9 +339,8 @@ const addOnPlatforms = [
                 dark ? 'bg-[#1A1A1A]' : 'bg-[#F0F1F4]'
               ]}>
                 <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333] mb-[4px]">
-                  {dark ? '最常选' : pkg.name}
+                  {pkg.name}
                 </p>
-                {dark && <p class="text-[14px] font-medium text-[#FFFFFF] mb-[2px]">{pkg.name}</p>}
                 <p class:list={['text-[28px] font-medium leading-[1.2] mb-[4px]', textPrimary]}>
                   {pkg.price}<span class:list={['text-[14px] font-normal', textSecondary]}>/月</span>
                 </p>
@@ -349,7 +348,7 @@ const addOnPlatforms = [
                   {pkg.description}
                 </p>
 
-                <Button variant={dark ? 'primary' : 'secondary'} href="/zh/contact" class="w-full justify-center">开始</Button>
+                <Button variant={dark ? 'primary' : 'secondary'} href="/zh/contact" class="w-full justify-center">立即开始</Button>
 
                 <div class="mt-[24px] flex flex-col gap-[20px]">
                   {features.map((group) => (
@@ -381,10 +380,10 @@ const addOnPlatforms = [
         <div class="mt-[48px] max-w-[680px]">
           <h3 class="text-[18px] text-[#1A1A1A] font-medium leading-[1.3] mb-[16px]">内容规格</h3>
           <div class="text-[14px] text-[#5C5C5C] font-normal leading-[1.8]">
-            <p><span class="font-medium text-[#1A1A1A]">WeChat文章：</span>1500字以内，配3张图</p>
-            <p><span class="font-medium text-[#1A1A1A]">Weibo微博：</span>300字以内，配1张图</p>
-            <p><span class="font-medium text-[#1A1A1A]">小红书笔记：</span>500字以内，配6张图（轮播）</p>
-            <p><span class="font-medium text-[#1A1A1A]">抖音视频：</span>60秒以内。客户方提供的视频由我们剪辑、加字幕。AI生成视频限时15秒，拍前需先过一遍创意brief。</p>
+            <p><span class="font-medium text-[#1A1A1A]">微信推文：</span>1500字以内，配3张图。</p>
+            <p><span class="font-medium text-[#1A1A1A]">微博：</span>300字以内，配1张图。</p>
+            <p><span class="font-medium text-[#1A1A1A]">小红书笔记：</span>500字以内，6张轮播图。</p>
+            <p><span class="font-medium text-[#1A1A1A]">抖音视频：</span>60秒以内。客户自有素材，我们负责剪辑和字幕。AI生成视频限15秒，拍前先过创意brief。</p>
           </div>
         </div>
       </Container>
@@ -394,9 +393,9 @@ const addOnPlatforms = [
     <section class="mt-[96px] max-[640px]:mt-[64px]">
       <Container>
         <SectionBar />
-        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[8px]">可加的平台</h2>
+        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[8px]">可加平台</h2>
         <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] mb-[32px] max-w-[680px]">
-          可以叠加到任意方案里，按月收费。每个平台每月至少4条。价格已经包含文案、图/视频制作、发布全流程。
+          按月叠加到任意方案。每个平台每月起4条。报价含文案、图文/视频制作、发布。
         </p>
 
         <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
@@ -423,13 +422,13 @@ const addOnPlatforms = [
         <SectionBar />
         <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[8px]">视频制作</h2>
         <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] mb-[32px] max-w-[680px]">
-          AI短视频，出片快、质感够。
+          AI短视频，速度快，质感稳。
         </p>
 
         <div class="bg-[#F0F1F4] rounded-[10px] p-[24px] max-[640px]:p-[20px] max-w-[480px]">
           <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333] mb-[16px]">AI视频</p>
           <div class="flex justify-between items-start gap-[12px]">
-            <span class="text-[13px] text-[#1A1A1A] font-normal leading-[1.4]">短视频（15秒以内）</span>
+            <span class="text-[13px] text-[#1A1A1A] font-normal leading-[1.4]">短视频（15秒内）</span>
             <span class="text-[13px] text-[#1A1A1A] font-medium leading-[1.4] shrink-0">¥2,050起</span>
           </div>
           <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.6] mt-[12px]">
@@ -446,7 +445,7 @@ const addOnPlatforms = [
           <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333] mb-[8px]">广告投放</p>
           <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[8px]">中国平台媒介采买</h2>
           <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] mb-[32px] max-w-[680px]">
-            媒介预算单独走账，透明公开，直接付给平台方。最低签3个月。开户费：¥10,250。
+            媒介预算单独走账，全程透明，直付平台方。最低签3个月，开户费¥10,250。
           </p>
 
           <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
@@ -454,28 +453,28 @@ const addOnPlatforms = [
               <p class="text-[14px] text-[rgba(255,255,255,0.5)] font-normal mb-[8px]">月预算低于¥102,500</p>
               <p class="text-[28px] text-[#FFFFFF] font-medium leading-[1.2] mb-[16px]">¥10,250<span class="text-[14px] text-[rgba(255,255,255,0.5)] font-normal">/月</span></p>
               <div class="text-[13px] text-[rgba(255,255,255,0.6)] font-normal leading-[2]">
-                <p>全链路广告策略</p>
-                <p>不限广告组、不限广告数</p>
-                <p>不限次数顾问支持</p>
-                <p>定制数据报告</p>
-                <p>创意指导</p>
+                <p>全链路投放策略</p>
+                <p>广告组、广告数量不限</p>
+                <p>顾问答疑不设次数</p>
+                <p>定制数据报表</p>
+                <p>创意方向把关</p>
               </div>
             </div>
             <div class="bg-[#CC3333] rounded-[12px] p-[24px]">
               <p class="text-[14px] text-[rgba(255,255,255,0.7)] font-normal mb-[8px]">月预算超过¥102,500</p>
               <p class="text-[28px] text-[#FFFFFF] font-medium leading-[1.2] mb-[16px]">6–10%<span class="text-[14px] text-[rgba(255,255,255,0.7)] font-normal"> 预算占比</span></p>
               <div class="text-[13px] text-[rgba(255,255,255,0.8)] font-normal leading-[2]">
-                <p>基础方案全部包含，另加：</p>
+                <p>基础方案全含，另加：</p>
                 <p>每周视频复盘</p>
                 <p>效果归因分析</p>
-                <p>精细人群定向</p>
-                <p>费率递减</p>
+                <p>精准人群定向</p>
+                <p>费率阶梯下调</p>
               </div>
             </div>
           </div>
 
           <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal mt-[24px]">
-            覆盖平台：微信广告、抖音广告、小红书广告、微博广告、百度SEM/PPC、B站广告、快手广告。
+            覆盖平台：微信、抖音、小红书、微博、百度SEM/PPC、B站、快手。
           </p>
         </div>
       </Container>
@@ -485,24 +484,24 @@ const addOnPlatforms = [
     <section class="mt-[96px] max-[640px]:mt-[64px]">
       <Container>
         <SectionBar />
-        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[32px]">其他可加的服务</h2>
+        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[32px]">更多可加服务</h2>
 
         <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
           <!-- Influencer -->
           <div class="bg-[#F0F1F4] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
             <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333] mb-[8px]">达人营销</p>
-            <h3 class="text-[18px] text-[#1A1A1A] font-medium leading-[1.3] mb-[8px]">KOL与KOC项目</h3>
+            <h3 class="text-[18px] text-[#1A1A1A] font-medium leading-[1.3] mb-[8px]">KOL、KOC项目</h3>
             <p class="text-[28px] text-[#1A1A1A] font-medium leading-[1.2] mb-[8px]">15–25%<span class="text-[14px] text-[#5C5C5C] font-normal"> 达人预算占比</span></p>
             <div class="text-[13px] text-[#5C5C5C] font-normal leading-[1.8]">
-              <p>达人筛选、资质核查、价格谈判、撰写brief、全流程对接、效果复盘。</p>
-              <p class="mt-[8px]">预算超过¥341,500收15%，常规20%，¥68,300以下的小项目25%。</p>
+              <p>选号、资质审核、议价、brief撰写、全程对接、效果复盘。</p>
+              <p class="mt-[8px]">预算¥341,500以上收15%，常规收20%，¥68,300以内的小项目收25%。</p>
             </div>
           </div>
 
           <!-- Training -->
           <div class="bg-[#E8E0D8] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
             <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333] mb-[8px]">培训</p>
-            <h3 class="text-[18px] text-[#1A1A1A] font-medium leading-[1.3] mb-[16px]">定制工作坊与培训课程</h3>
+            <h3 class="text-[18px] text-[#1A1A1A] font-medium leading-[1.3] mb-[16px]">定制工作坊、培训课程</h3>
             <div class="flex flex-col gap-[12px]">
               <div class="flex justify-between items-start">
                 <span class="text-[13px] text-[#1A1A1A] font-normal">工作坊（2小时）</span>
@@ -514,7 +513,7 @@ const addOnPlatforms = [
               </div>
             </div>
             <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.6] mt-[16px]">
-              各平台拆解、内容策略、社交电商、达人投放、数据分析。授课可中可英，线上或现场都行。
+              平台拆解、内容策略、社交电商、达人投放、数据分析。中英文授课皆可，线上或到场都行。
             </p>
           </div>
 
@@ -522,16 +521,16 @@ const addOnPlatforms = [
           <div class="bg-[#F0F1F4] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
             <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333] mb-[8px]">咨询</p>
             <h3 class="text-[18px] text-[#1A1A1A] font-medium leading-[1.3] mb-[8px]">按需咨询</h3>
-            <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.6] mb-[16px]">按项目范围和周期报价。</p>
+            <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.6] mb-[16px]">按项目范围、周期单独报价。</p>
             <Button variant="secondary" href="/zh/contact">聊聊</Button>
           </div>
 
           <!-- CRM -->
           <div class="bg-[#1A1A1A] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
             <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333] mb-[8px]">CRM与私域</p>
-            <h3 class="text-[18px] text-[#FFFFFF] font-medium leading-[1.3] mb-[8px]">搭一份真正属于你的用户资产</h3>
+            <h3 class="text-[18px] text-[#FFFFFF] font-medium leading-[1.3] mb-[8px]">把用户真正握在自己手里</h3>
             <p class="text-[13px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] mb-[16px]">
-              企微搭建、微信CRM打通、社群运营、私域体系、会员小程序开发。按项目报价。
+              企微部署、微信CRM对接、社群运营、私域体系、会员小程序开发。按项目报价。
             </p>
             <Button variant="secondary-dark" href="/zh/contact">聊聊</Button>
           </div>
@@ -546,14 +545,14 @@ const addOnPlatforms = [
           <div class="max-w-[560px]">
             <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[rgba(255,255,255,0.7)] mb-[8px]">内容制作</p>
             <h3 class="text-[22px] max-[640px]:text-[18px] font-medium leading-[1.25] text-[#FFFFFF] mb-[8px]">
-              本地摄影和视频拍摄。
+              本地摄影、视频拍摄。
             </h3>
             <p class="text-[14px] text-[rgba(255,255,255,0.8)] font-normal leading-[1.6]">
-              产品图、品牌片、KOL联拍。报价看项目范围、拍摄地、团队配置、交付清单。brief确认之后，一般2到3周能出片。
+              产品图、品牌片、达人联拍。报价根据项目范围、拍摄地、团队配置、交付物而定。brief确认后2到3周出片。
             </p>
           </div>
           <a href="/zh/contact" class="inline-flex items-center justify-center h-[44px] px-[28px] text-[14px] font-medium leading-none rounded-[6px] cursor-pointer bg-[#FFFFFF] text-[#1A1A1A] shrink-0 transition-[background] duration-150 hover:bg-[#F0F1F4] active:scale-[0.98]">
-            要报价 &rarr;
+            索取报价 &rarr;
           </a>
         </div>
       </Container>
@@ -563,13 +562,13 @@ const addOnPlatforms = [
     <section class="mt-[96px] max-[640px]:mt-[64px] mb-[96px] max-[640px]:mb-[64px]">
       <Container>
         <div class="max-w-[680px]">
-          <h3 class="text-[18px] text-[#1A1A1A] font-medium leading-[1.3] mb-[16px]">几点说明</h3>
+          <h3 class="text-[18px] text-[#1A1A1A] font-medium leading-[1.3] mb-[16px]">几条须知</h3>
           <div class="text-[14px] text-[#5C5C5C] font-normal leading-[1.8]">
-            <p>价格一律人民币、税前。具体税率按开票主体（上海或香港）的当地规则走。汇率按1美元=6.83人民币计。</p>
-            <p>按月预付。</p>
-            <p>上线节奏：签约后两周内完成开户、上首批内容。</p>
-            <p>可加的平台按列表价叠加到任意方案里。</p>
-            <p>需求超出标准方案的，可以单独谈定制方案。<a href="/zh/contact" class="text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">预约通话</a>。</p>
+            <p>所有报价均为人民币、税前。具体税率按开票主体（上海或香港）的当地规定。汇率按1美元=6.83人民币换算。</p>
+            <p>月度预付。</p>
+            <p>上线节奏：签约后两周内开通账号、发出首批内容。</p>
+            <p>可加平台按列表价叠加到任意方案。</p>
+            <p>超出标准范围的需求，单独谈定制方案。<a href="/zh/contact" class="text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">预约通话</a>。</p>
           </div>
         </div>
       </Container>

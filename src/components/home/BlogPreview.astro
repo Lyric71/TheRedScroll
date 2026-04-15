@@ -15,7 +15,8 @@ interface Props {
 const { lang = 'en' } = Astro.props;
 const lp = (path: string) => localizedPath(path, lang);
 
-const allPosts = await getCollection('blog');
+const collectionName = lang === 'fr' ? 'blog-fr' : lang === 'zh' ? 'blog-zh' : 'blog';
+const allPosts = await getCollection(collectionName);
 const posts = allPosts
   .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime())
   .slice(0, 3)
@@ -32,8 +33,8 @@ const posts = allPosts
   }));
 
 const sectionText = lang === 'zh' ? {
-  overline: '行业观察',
-  heading: '我们最近在琢磨的事。',
+  overline: '观察',
+  heading: '我们最近在研究的事。',
   readingLabel: '阅读',
   cta: '看更多文章',
 } : lang === 'fr' ? {

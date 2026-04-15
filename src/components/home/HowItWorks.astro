@@ -41,40 +41,40 @@ const text = {
     steps: [
       {
         number: '01',
-        title: 'Appel decouverte.',
-        description: '30 minutes. On discute de votre marque, de vos objectifs, de votre niveau de preparation pour la Chine. Pas de presentation commerciale. Les bonnes questions, tout simplement.',
+        title: 'Appel découverte.',
+        description: '30 minutes. On parle de votre marque, de vos objectifs et de votre préparation pour la Chine. Pas de présentation commerciale. Juste les bonnes questions.',
       },
       {
         number: '02',
         title: 'Proposition.',
-        description: 'Cahier des charges clair. Prix fixe. Chaque livrable detaille. Vous voyez ce que vous obtenez et ce que ca coute avant de vous engager.',
+        description: 'Cahier des charges clair. Prix fixe. Chaque livrable détaillé. Vous voyez ce que vous obtenez et ce que ça coûte avant de vous engager.',
       },
       {
         number: '03',
         title: 'En ligne sous 2 semaines.',
-        description: 'Integration, creation des comptes, premiere publication. Quatorze jours entre la signature et la mise en ligne du premier contenu.',
+        description: 'Intégration, création des comptes, première publication. Quatorze jours entre la signature et la mise en ligne du premier contenu.',
       },
     ],
   },
   zh: {
     overline: '合作流程',
-    heading: '一通电话，一份方案，一口价。',
+    heading: '一通电话。一份方案。一口报价。',
     cta: '预约通话',
     steps: [
       {
         number: '01',
-        title: '先聊聊。',
-        description: '三十分钟。我们想搞清楚你的品牌、目标、现在的状态。不放PPT，也不走流程，就是问该问的问题。',
+        title: '电话沟通。',
+        description: '30 分钟，聊你的品牌、目标，以及现在的准备情况。没有 PPT，也不走流程，只问该问的问题。',
       },
       {
         number: '02',
-        title: '方案报价。',
-        description: 'SOW写得清清楚楚，一口价，每一项交付物都逐条列出来。你在签字之前就知道能拿到什么、要花多少钱。',
+        title: '方案与报价。',
+        description: '清晰的 SOW，固定报价，每一项交付都逐条列出。你在签字之前，就知道自己能拿到什么、要花多少钱。',
       },
       {
         number: '03',
-        title: '两周上线。',
-        description: '对接、开户、搭账号、出第一批内容。从合同签完到首条内容推出来，差不多14天。',
+        title: '两周内上线。',
+        description: '对接、开户、搭账号、发布第一批内容。从合同签完到首条内容上线，14 天。',
       },
     ],
   },
@@ -116,7 +116,7 @@ const icons = [
           </div>
           <!-- Step number -->
           <p class="text-[12px] font-medium text-[#CC3333] leading-none mb-[8px]">
-            {lang === 'zh' ? '第' : lang === 'fr' ? 'Etape' : 'Step'} {step.number} {lang === 'zh' ? '步' : ''}
+            {lang === 'zh' ? '第' : lang === 'fr' ? 'Étape' : 'Step'} {step.number} {lang === 'zh' ? '步' : ''}
           </p>
           <h3 class="text-[18px] text-[#FFFFFF] font-medium leading-[1.3] mb-[8px]">
             {step.title}

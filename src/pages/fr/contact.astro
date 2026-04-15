@@ -4,7 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <BaseLayout
   title="Contact | TheRedScroll"
-  description="Contactez TheRedScroll. Prenez rendez-vous ou parlez-nous de votre projet. Bureaux a Shanghai et Hong Kong."
+  description="Prenez rendez-vous avec TheRedScroll. Nos équipes à Shanghai et Hong Kong vous répondent sous un jour ouvré."
   hideFooterCta={true}
   lang="fr"
 >
@@ -19,10 +19,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         <div class="mb-[48px] max-[640px]:mb-[32px]">
           <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">Contact</p>
           <h1 class="text-[#FFFFFF] text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] mb-[8px]">
-            Parlons du developpement de votre marque en Chine.
+            Votre marque, cap sur la Chine.
           </h1>
           <p class="text-[rgba(255,255,255,0.6)] text-[16px] font-normal leading-[1.6] max-w-[480px]">
-            Prenez rendez-vous, posez une question ou presentez-nous votre projet. Nous repondons sous un jour ouvre.
+            Prenez rendez-vous, posez-nous une question ou racontez-nous votre projet. Réponse sous un jour ouvré.
           </p>
         </div>
 
@@ -30,14 +30,14 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
           <!-- Left: Contact form card -->
           <div class="bg-[#FFFFFF] rounded-[10px] p-[32px] max-[640px]:p-[20px] max-[1024px]:order-1">
-            <h2 class="text-[18px] text-[#1A1A1A] font-medium leading-[1.3] mb-[24px]">Parlez-nous de votre projet</h2>
+            <h2 class="text-[18px] text-[#1A1A1A] font-medium leading-[1.3] mb-[24px]">Racontez-nous votre projet</h2>
 
             <form id="contact-form" class="flex flex-col gap-[16px]">
               <!-- Name row -->
               <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[12px]">
                 <div>
-                  <label class="block text-[13px] font-normal text-[#5C5C5C] mb-[4px]">Prenom <span class="text-[#CC3333]">*</span></label>
-                  <input type="text" name="firstName" required class="block w-full h-[44px] px-[12px] text-[14px] font-normal text-[#1A1A1A] bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[6px] outline-none transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)] focus:border-[#1A1A1A] placeholder:text-[#5C5C5C] placeholder:opacity-60" placeholder="Prenom" />
+                  <label class="block text-[13px] font-normal text-[#5C5C5C] mb-[4px]">Prénom <span class="text-[#CC3333]">*</span></label>
+                  <input type="text" name="firstName" required class="block w-full h-[44px] px-[12px] text-[14px] font-normal text-[#1A1A1A] bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[6px] outline-none transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)] focus:border-[#1A1A1A] placeholder:text-[#5C5C5C] placeholder:opacity-60" placeholder="Prénom" />
                 </div>
                 <div>
                   <label class="block text-[13px] font-normal text-[#5C5C5C] mb-[4px]">Nom <span class="text-[#CC3333]">*</span></label>
@@ -54,19 +54,19 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
               <!-- Company -->
               <div>
                 <label class="block text-[13px] font-normal text-[#5C5C5C] mb-[4px]">Entreprise <span class="text-[#CC3333]">*</span></label>
-                <input type="text" name="company" required class="block w-full h-[44px] px-[12px] text-[14px] font-normal text-[#1A1A1A] bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[6px] outline-none transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)] focus:border-[#1A1A1A] placeholder:text-[#5C5C5C] placeholder:opacity-60" placeholder="Nom de l'entreprise" />
+                <input type="text" name="company" required class="block w-full h-[44px] px-[12px] text-[14px] font-normal text-[#1A1A1A] bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[6px] outline-none transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)] focus:border-[#1A1A1A] placeholder:text-[#5C5C5C] placeholder:opacity-60" placeholder="Nom de votre entreprise" />
               </div>
 
               <!-- Website -->
               <div>
-                <label class="block text-[13px] font-normal text-[#5C5C5C] mb-[4px]">Site web</label>
+                <label class="block text-[13px] font-normal text-[#5C5C5C] mb-[4px]">Site internet</label>
                 <input type="url" name="website" class="block w-full h-[44px] px-[12px] text-[14px] font-normal text-[#1A1A1A] bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[6px] outline-none transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)] focus:border-[#1A1A1A] placeholder:text-[#5C5C5C] placeholder:opacity-60" placeholder="https://votreentreprise.com" />
               </div>
 
               <!-- Message -->
               <div>
-                <label class="block text-[13px] font-normal text-[#5C5C5C] mb-[4px]">Parlez-nous de votre projet <span class="text-[#CC3333]">*</span></label>
-                <textarea name="message" required rows="5" class="block w-full px-[12px] py-[12px] text-[14px] font-normal text-[#1A1A1A] bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[6px] outline-none transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)] focus:border-[#1A1A1A] placeholder:text-[#5C5C5C] placeholder:opacity-60 resize-vertical leading-[1.5] min-h-[120px]" placeholder="Quelles plateformes vous interessent ? Quels sont vos objectifs en Chine ?"></textarea>
+                <label class="block text-[13px] font-normal text-[#5C5C5C] mb-[4px]">Votre projet <span class="text-[#CC3333]">*</span></label>
+                <textarea name="message" required rows="5" class="block w-full px-[12px] py-[12px] text-[14px] font-normal text-[#1A1A1A] bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[6px] outline-none transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)] focus:border-[#1A1A1A] placeholder:text-[#5C5C5C] placeholder:opacity-60 resize-vertical leading-[1.5] min-h-[120px]" placeholder="Quelles plateformes visez-vous ? Quels sont vos objectifs sur le marché chinois ?"></textarea>
               </div>
 
               <!-- Honeypot — hidden from humans, bots fill it -->
@@ -78,7 +78,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
               <!-- Captcha -->
               <div>
                 <label id="captcha-label" class="block text-[13px] font-normal text-[#5C5C5C] mb-[4px]"></label>
-                <input type="text" name="captcha" id="captcha-input" required inputmode="numeric" class="block w-full h-[44px] px-[12px] text-[14px] font-normal text-[#1A1A1A] bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[6px] outline-none transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)] focus:border-[#1A1A1A] placeholder:text-[#5C5C5C] placeholder:opacity-60" placeholder="Votre reponse" />
+                <input type="text" name="captcha" id="captcha-input" required inputmode="numeric" class="block w-full h-[44px] px-[12px] text-[14px] font-normal text-[#1A1A1A] bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[6px] outline-none transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)] focus:border-[#1A1A1A] placeholder:text-[#5C5C5C] placeholder:opacity-60" placeholder="Votre réponse" />
                 <input type="hidden" name="captcha_answer" id="captcha-answer" />
               </div>
 
@@ -106,9 +106,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
             <!-- Response time -->
             <div class="mb-[32px]">
-              <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333] mb-[8px]">Delai de reponse</p>
+              <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333] mb-[8px]">Temps de réponse</p>
               <p class="text-[14px] text-[#FFFFFF] font-normal leading-[1.6]">
-                Sous 24 heures, du lundi au vendredi
+                Sous 24 heures, du lundi au vendredi.
               </p>
             </div>
 
@@ -116,7 +116,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             <div class="mb-[32px]">
               <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333] mb-[8px]">Shanghai, Chine</p>
               <p class="text-[14px] text-[#FFFFFF] font-normal leading-[1.6]">
-                Trinity Plaza, 19e etage, Changshou Road 868, district de Putuo, Shanghai, Chine
+                Trinity Plaza, 19e étage, 868 Changshou Road, district de Putuo, Shanghai
               </p>
               <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal leading-[1.6] mt-[4px]">
                 中港汇大厦, 上海市普陀区长寿路868号19楼
@@ -185,11 +185,11 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         return;
       } else {
         const err = await res.json();
-        status.textContent = err.error || 'Une erreur est survenue. Veuillez reessayer.';
+        status.textContent = err.error || 'Un problème est survenu. Merci de réessayer.';
         status.className = 'text-[13px] font-normal leading-[1.5] mt-[8px] text-[#CC3333]';
       }
     } catch {
-      status.textContent = 'Erreur de connexion. Verifiez votre reseau et reessayez.';
+      status.textContent = 'Connexion impossible. Vérifiez votre réseau, puis réessayez.';
       status.className = 'text-[13px] font-normal leading-[1.5] mt-[8px] text-[#CC3333]';
     }
 

@@ -9,30 +9,30 @@ import GettingStarted from '../../../components/sections/GettingStarted.astro';
 
 
 const faqs = [
-  { q: 'WeCom est-il utile sans réseau de boutiques ?', a: 'Dès qu\'une personne de votre équipe échange directement avec des clients, la réponse est oui. Responsables de comptes, commerciaux, service après-vente. Si votre activité repose uniquement sur du commerce en ligne sans aucun contact humain, vous pouvez concentrer vos efforts sur le CRM via Mini Program et les groupes communautaires. Cela dit, la plupart des marques qui pensaient s\'en passer changent d\'avis une fois qu\'elles voient les résultats concrets.' },
-  { q: 'À partir de quelle taille d\'audience peut-on se lancer ?', a: 'Le seuil se situe autour de 2 000 à 3 000 abonnés actifs. En dessous, le travail de mise en place des automatisations et d\'animation de groupes reste difficile à rentabiliser. Au-delà, les retours s\'accélèrent de façon assez nette.' },
-  { q: 'Le domaine privé peut-il se substituer à la publicité ?', a: 'Il en réduit le poids, mais ne la fait pas disparaître. Le trafic public reste indispensable pour attirer de nouveaux profils. Le domaine privé, c\'est là où vous les retenez et où vous les amenez à racheter. Les marques qui s\'y prennent bien font tourner les deux canaux en parallèle, et constatent que leur dépendance publicitaire recule au fil des mois.' },
-  { q: 'Quels outils CRM utilisez-vous ?', a: 'Tencent Qidian ou Fxiaoke pour tout ce qui est natif WeChat. Pour les marques déjà équipées de Salesforce, HubSpot ou Dynamics, on installe une couche de connexion qui maintient l\'ensemble synchronisé. Le bon choix dépend vraiment de ce que vous utilisez déjà en interne.' },
-  { q: 'Quelle différence entre un groupe WeChat et un programme de fidélité ?', a: 'Un programme de fidélité, ça comptabilise des points. Un groupe WeChat, c\'est une conversation. Les membres se parlent entre eux, partagent leurs retours d\'expérience, réagissent au contenu, participent aux opérations. Les dispositifs les plus performants associent les deux : le CRM prend en charge les données et l\'automatisation, les groupes assurent la dimension humaine.' },
-  { q: 'Que se passe-t-il quand un commercial quitte l\'entreprise ?', a: 'Avec un compte WeChat personnel, les contacts disparaissent en même temps que le collaborateur. Avec WeCom, ils restent rattachés à l\'entreprise. Les clients sont réattribués avec l\'intégralité de l\'historique des échanges. Aucune présentation gênante à recommencer.' },
-  { q: 'Comment mesurez-vous la réussite ?', a: 'Taux de rétention, taux de réachat, valeur vie client, niveau d\'engagement dans les groupes, taux de conversion des campagnes CRM, part du domaine privé dans le chiffre d\'affaires global. L\'ensemble est suivi et fait l\'objet d\'un rapport mensuel.' },
-  { q: 'Cela ne concerne que WeChat ?', a: 'Pour l\'essentiel, oui. WeChat reste la seule plateforme à proposer une boucle complète : comptes officiels, Mini Programs, WeCom, groupes, Channels, Pay. Certaines marques mènent des actions plus légères sur les groupes de fans Douyin ou les communautés RedNote, mais ces outils restent limités en comparaison. Toute stratégie sérieuse de domaine privé démarre sur WeChat.' },
+  { q: 'WeCom est-il utile sans réseau de boutiques ?', a: 'Dès qu\'un membre de votre équipe échange directement avec des clients, la réponse est oui. Commerciaux, responsables de comptes, service après-vente : tous concernés. Si votre activité est 100 % e-commerce sans aucun contact humain, vous pouvez concentrer vos efforts sur le CRM via Mini Program et les groupes communautaires. Cela dit, la plupart des marques qui pensaient pouvoir s\'en passer changent d\'avis dès qu\'elles voient les premiers résultats.' },
+  { q: 'À partir de quelle taille d\'audience peut-on se lancer ?', a: 'Le seuil se situe autour de 2 000 à 3 000 abonnés actifs. En dessous, le travail de mise en place des automatisations et d\'animation de groupes reste difficile à rentabiliser. Au-delà, les retours décollent nettement.' },
+  { q: 'Le domaine privé peut-il remplacer la publicité ?', a: 'Il en allège le poids, sans la faire disparaître. Le trafic public reste indispensable pour capter de nouveaux profils. Le domaine privé, lui, c\'est là où vous les retenez et les ramenez au panier. Les marques qui s\'y prennent bien font tourner les deux en parallèle, et voient leur dépendance publicitaire reculer mois après mois.' },
+  { q: 'Quels outils CRM utilisez-vous ?', a: 'Tencent Qidian ou Fxiaoke pour tout ce qui est natif WeChat. Pour les marques déjà équipées de Salesforce, HubSpot ou Dynamics, nous installons une couche de connexion qui maintient tout synchronisé. Le bon choix dépend surtout de ce qui tourne déjà en interne chez vous.' },
+  { q: 'Groupe WeChat ou programme de fidélité, quelle différence ?', a: 'Un programme de fidélité compte des points. Un groupe WeChat, lui, entretient une conversation. Les membres se parlent entre eux, partagent leurs retours, réagissent au contenu, participent aux opérations. Les dispositifs les plus efficaces articulent les deux : le CRM encaisse les données et l\'automatisation, les groupes portent la dimension humaine.' },
+  { q: 'Que se passe-t-il quand un commercial quitte l\'entreprise ?', a: 'Sur un compte WeChat personnel, les contacts partent avec le collaborateur. Sur WeCom, ils restent rattachés à la société. Les clients sont réattribués avec tout l\'historique d\'échange. Aucune présentation gênante à refaire.' },
+  { q: 'Comment mesurez-vous la réussite ?', a: 'Taux de rétention, taux de réachat, valeur vie client, engagement dans les groupes, taux de conversion des campagnes CRM, part du domaine privé dans le chiffre d\'affaires global. Tout est suivi et remonte dans un rapport mensuel.' },
+  { q: 'Tout cela ne concerne que WeChat ?', a: 'Pour l\'essentiel, oui. WeChat est la seule plateforme à proposer une boucle complète : Comptes Officiels, Mini Programs, WeCom, groupes, Channels, Pay. Certaines marques mènent des actions plus légères sur les groupes de fans Douyin ou les communautés RedNote, mais les outils y restent limités. Toute stratégie sérieuse de domaine privé part de WeChat.' },
 ];
 
 const gettingStartedSteps = [
   {
     title: 'Premier échange.',
-    description: 'Votre marque, votre audience actuelle, et comment le domaine privé s\'inscrit dans votre trajectoire de croissance.',
+    description: 'Votre marque, votre audience actuelle, et la place du domaine privé dans votre trajectoire de croissance.',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
   },
   {
     title: 'Cadrage CRM.',
-    description: 'Mise en place de WeCom, stratégie de groupes, flux d\'automatisation, plan d\'intégration CRM. Périmètre défini.',
+    description: 'Mise en place de WeCom, stratégie de groupes, flux d\'automatisation, plan d\'intégration CRM. Périmètre posé noir sur blanc.',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>',
   },
   {
     title: 'En production sous trois semaines.',
-    description: 'WeCom configuré, premiers groupes actifs, automatisations en place. La communauté commence à prendre forme dès le premier jour.',
+    description: 'WeCom configuré, premiers groupes actifs, automatisations branchées. La communauté commence à prendre forme dès le premier jour.',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
   },
 ];
@@ -40,7 +40,7 @@ const gettingStartedSteps = [
 
 <PageLayout
   title="CRM WeChat et domaine privé | TheRedScroll"
-  description="CRM WeChat, configuration WeCom, stratégie de domaine privé en Chine. Animation de communauté, CRM Mini Program, activation client. Équipe basée à Shanghai."
+  description="CRM WeChat, configuration WeCom, stratégie de domaine privé en Chine. Animation de communauté, CRM Mini Program, activation client. Une équipe basée à Shanghai."
   lang="fr"
 >
 
@@ -55,11 +55,11 @@ const gettingStartedSteps = [
         Vos abonnés sont votre actif le plus précieux. Gardez la main sur la relation.
       </h1>
       <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
-        Construisez des relations clients directes, durables, dans WeChat. Sans commission de plateforme. Sans algorithme qui décide à votre place qui voit quoi.
+        Bâtissez des relations clients directes et durables, à l'intérieur de WeChat. Sans commission de plateforme. Sans algorithme qui choisit à votre place qui voit quoi.
       </p>
       <div class="flex items-center justify-center gap-[12px] flex-wrap">
         <Button variant="primary" href="/fr/contact">Prendre rendez-vous</Button>
-        <Button variant="secondary-dark" href="#what-we-do">Découvrir nos services</Button>
+        <Button variant="secondary-dark" href="#what-we-do">Nos Services</Button>
       </div>
     </div>
   </section>
@@ -71,33 +71,33 @@ const gettingStartedSteps = [
         <div class="relative col-span-2 row-span-2 max-[640px]:col-span-1 max-[640px]:row-span-1 bg-[#1A1A1A] rounded-[12px] p-[32px] max-[640px]:p-[20px] flex flex-col justify-between min-h-[320px] max-[640px]:min-h-0 overflow-hidden">
           <svg class="absolute bottom-[-20px] right-[-20px] w-[260px] h-[260px] opacity-[0.06]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
           <div class="relative z-[1]">
-            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Pourquoi c'est important</p>
-            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[16px]">Vous louez l'audience. C'est la plateforme qui la possède.</h2>
-            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[400px]">L'algorithme décide qui voit votre contenu. Les coûts publicitaires grimpent de 30 % du jour au lendemain ? Votre portée se réduit et vous n'y pouvez rien. Le domaine privé remet la marque aux commandes.</p>
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Pourquoi ça compte</p>
+            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[16px]">Vous louez l'audience. La plateforme, elle, en reste propriétaire.</h2>
+            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[400px]">L'algorithme décide qui voit votre contenu. Les coûts publicitaires grimpent de 30 % du jour au lendemain ? Votre portée fond, et vous ne pouvez rien y faire. Le domaine privé remet la marque aux commandes.</p>
           </div>
           <div class="relative z-[1] mt-[24px]">
-            <Button variant="secondary-dark" href="#what-we-do">Découvrir nos services</Button>
+            <Button variant="secondary-dark" href="#what-we-do">Nos Services</Button>
           </div>
         </div>
         <div class="relative overflow-hidden bg-[#F0F1F4] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
           <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">La relation vous appartient</h3>
-          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">Abonnés WeChat, contacts WeCom, membres de groupes, utilisateurs de Mini Programs. Ces personnes ont fait le choix de vous suivre. Vous les touchez en direct, sans reverser de commission à la plateforme.</p>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">Abonnés WeChat, contacts WeCom, membres de groupes, utilisateurs de Mini Programs. Ces personnes ont choisi de vous suivre. Vous leur parlez en direct, sans reverser la moindre commission à la plateforme.</p>
         </div>
         <div class="relative overflow-hidden bg-[#1A1A1A] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
           <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Les réachats s'accumulent</h3>
-          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.6)]">En domaine privé, les taux de conversion dépassent régulièrement ceux du trafic public. Certaines marques constatent que leurs clients en domaine privé génèrent plus de 85 % des ventes récurrentes.</p>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.6)]">En domaine privé, les taux de conversion dépassent régulièrement ceux du trafic public. Certaines marques voient leurs clients privés générer plus de 85 % des ventes récurrentes.</p>
         </div>
         <div class="relative overflow-hidden bg-[#CC3333] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 13L2 9z"/><path d="M2 9h20"/><path d="M12 22L6 9"/><path d="M12 22l6-13"/><path d="M6 3l6 6 6-6"/></svg>
           <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Une valeur par tête bien supérieure</h3>
-          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.8)]">Ventes flash dans les groupes WeChat. Conseil individualisé via WeCom. Accès prioritaire pour les VIP. Recommandations sur mesure. Des audiences plus restreintes, mais une valeur nettement plus élevée.</p>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.8)]">Ventes flash dans les groupes WeChat. Conseil personnalisé via WeCom. Accès prioritaire pour les VIP. Recommandations sur mesure. Des audiences plus restreintes, pour une valeur bien plus élevée.</p>
         </div>
         <div class="relative overflow-hidden bg-[#E8E0D8] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg>
           <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">La dépendance publicitaire recule avec le temps</h3>
-          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">Une fois que la communauté atteint une certaine taille, la rentabilité dépasse celle de tous les autres canaux. Les marques qui s'y prennent bien voient leurs budgets publicitaires diminuer trimestre après trimestre.</p>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">Passée une certaine taille, la communauté dépasse en rentabilité tous les autres canaux. Les marques qui s'y prennent bien voient leurs budgets publicitaires fondre trimestre après trimestre.</p>
         </div>
       </div>
     </Container>
@@ -108,27 +108,27 @@ const gettingStartedSteps = [
     <Container>
       <div class="bg-[#1A1A1A] rounded-[12px] p-[48px] max-[640px]:p-[32px_20px]">
         <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">Les fondamentaux</p>
-        <h2 class="text-[#FFFFFF] text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] mb-[32px]">WeChat et WeCom : quelle différence</h2>
+        <h2 class="text-[#FFFFFF] text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] mb-[32px]">WeChat et WeCom, où passe la frontière</h2>
         <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[24px] mb-[32px]">
           <div>
             <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">WeChat (微信)</h3>
             <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
-              L'application grand public. 1,3 milliard d'utilisateurs. Messagerie, Moments, comptes officiels, Mini Programs, WeChat Pay, Channels. C'est là que vivent vos clients.
+              L'application grand public. 1,3 milliard d'utilisateurs. Messagerie, Moments, Comptes Officiels, Mini Programs, WeChat Pay, Channels. C'est là que vivent vos clients au quotidien.
             </p>
           </div>
           <div>
             <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">WeCom (企业微信)</h3>
             <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
-              Le versant professionnel. Une application à part, conçue pour permettre aux entreprises de communiquer avec leurs clients et de piloter leurs équipes. Elle relie 14 millions d'organisations à 750 millions d'utilisateurs WeChat.
+              Son versant professionnel. Une application à part, pensée pour que les entreprises échangent avec leurs clients et pilotent leurs équipes. Elle relie 14 millions d'organisations à 750 millions d'utilisateurs WeChat.
             </p>
           </div>
         </div>
         <div class="max-w-[680px] flex flex-col gap-[24px]">
           <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
-            Votre équipe écrit aux clients directement dans leur WeChat personnel. Le message apparaît dans la liste de conversations habituelle. Ça ressemble à un échange entre connaissances. Pas à un envoi promotionnel de masse.
+            Votre équipe écrit aux clients directement dans leur WeChat personnel. Le message arrive dans la liste de conversations habituelle. On dirait un échange entre connaissances, pas un envoi promotionnel de masse.
           </p>
           <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
-            Les commerciaux n'échangent plus leurs contacts WeChat personnels, que l'entreprise ne peut ni consulter ni suivre. Ils utilisent des identifiants WeCom rattachés à la société. Les conversations sont tracées. Les données remontent dans le CRM. Et quand quelqu'un quitte l'équipe, les relations clients restent dans l'entreprise.
+            Fini le temps où les commerciaux échangeaient leurs contacts WeChat personnels, invisibles pour l'entreprise. Ils utilisent désormais des identifiants WeCom rattachés à la société. Les conversations sont tracées, les données remontent dans le CRM, et quand quelqu'un quitte l'équipe, la relation client reste dans la maison.
           </p>
         </div>
       </div>
@@ -139,7 +139,7 @@ const gettingStartedSteps = [
   <section id="what-we-do" class="mt-[96px] max-[640px]:mt-[64px] scroll-mt-[76px]">
     <Container>
       <SectionBar />
-      <SectionHeading overline="Nos services">Configuration WeCom et intégration CRM</SectionHeading>
+      <SectionHeading overline="Nos Services">Configuration WeCom et intégration CRM</SectionHeading>
 
       <div class="rounded-[12px] overflow-hidden mt-[24px]">
         <img src="/images/what-we-do/crm-private-domain.png" alt="L'équipe TheRedScroll en train de configurer les flux CRM WeCom" class="w-full aspect-[5/2] max-[640px]:aspect-[16/10] object-cover" loading="lazy" decoding="async" />
@@ -151,21 +151,21 @@ const gettingStartedSteps = [
             <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
           </div>
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Mise en place de WeCom</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Rendre WeCom opérationnel et le connecter à l'ensemble de vos outils. Création du compte, attribution des rôles, raccordement au compte officiel, au Mini Program et au CRM. Toutes les données clients réunies au même endroit.</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Rendre WeCom opérationnel et le connecter à l'ensemble de vos outils. Création du compte, attribution des rôles, raccordement au Compte Officiel, au Mini Program et au CRM. Toutes les données clients réunies au même endroit.</p>
         </div>
         <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
           <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
             <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
           </div>
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">CRM WeChat et Mini Program</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">La couche CRM s'intègre directement dans WeChat. Fiches clients, historique d'achats, niveaux de fidélité, distribution de bons, messages ciblés, relances automatiques. Le tout dans une seule application.</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Le CRM s'intègre directement dans WeChat. Fiches clients, historique d'achats, niveaux de fidélité, distribution de bons, messages ciblés, relances automatiques. Tout tient dans une seule application.</p>
         </div>
         <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
           <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
             <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Stratégie de domaine privé</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Choix des canaux, parcours du trafic public vers les canaux privés, rythme de publication par segment, cadre de mesure. La conformité PIPL est intégrée dès le départ.</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Choix des canaux, passerelles du trafic public vers le privé, rythme de publication par segment, cadre de mesure. La conformité PIPL est intégrée dès le départ.</p>
         </div>
       </div>
     </Container>
@@ -181,22 +181,22 @@ const gettingStartedSteps = [
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <img src="/images/crm/group-segmentation.svg" alt="" class="w-full max-w-[280px] mb-[20px]" />
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Segmentation des groupes</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Les groupes sont découpés par profil client, centre d'intérêt, zone géographique, historique d'achat. Chacun a son rythme de contenu, son animateur dédié et ses opérations régulières.</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Les groupes sont découpés par profil client, centre d'intérêt, zone géographique, historique d'achat. Chacun avance à son propre rythme, avec son animateur dédié et ses opérations régulières.</p>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <img src="/images/crm/activations.svg" alt="" class="w-full max-w-[280px] mb-[20px]" />
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Opérations d'activation</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Avant-premières réservées aux membres, tarifs exclusifs au groupe, sessions de questions-réponses avec les fondateurs, défis de contenu créé par les utilisateurs, sondages dont les résultats débouchent sur du concret. On ne parle pas d'envois en masse. On parle d'échanges qui construisent une relation de fond.</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Avant-premières réservées aux membres, tarifs exclusifs au groupe, sessions de questions-réponses avec les fondateurs, concours de contenu créés par les utilisateurs, sondages dont les résultats débouchent sur du concret. Ce ne sont pas des envois en masse. Ce sont des échanges qui construisent une relation de fond.</p>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <img src="/images/crm/brand-personas.svg" alt="" class="w-full max-w-[280px] mb-[20px]" />
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Personnages de marque</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Certaines marques poussent le concept plus loin en confiant l'animation du groupe à un personnage fictif. Un prénom, un ton, une histoire. Le groupe perd son côté institutionnel et se rapproche du conseil d'un proche. Quand c'est bien exécuté, c'est l'un des leviers communautaires les plus puissants que l'on ait observés.</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Certaines marques vont plus loin et confient l'animation du groupe à un personnage fictif. Un prénom, un ton, une histoire. Le groupe perd son côté institutionnel et se rapproche du conseil d'une amie. Bien exécuté, c'est l'un des leviers communautaires les plus puissants que nous ayons vus à l'œuvre.</p>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <img src="/images/crm/crm-automation.svg" alt="" class="w-full max-w-[280px] mb-[20px]" />
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Automatisation CRM</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Diffuser une offre ciblée à 500 VIP pour un lancement en avant-première. Lancer une vente éclair et suivre les conversions en temps réel. Relancer les clients qui n'ont rien acheté depuis 90 jours. Une fois que tout est en place, l'essentiel tourne sans intervention humaine.</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Pousser une offre ciblée à 500 VIP pour un lancement en avant-première. Déclencher une vente éclair et suivre les conversions minute par minute. Relancer les clients silencieux depuis 90 jours. Une fois le dispositif en place, l'essentiel tourne sans intervention humaine.</p>
         </div>
       </div>
     </Container>
@@ -210,7 +210,7 @@ const gettingStartedSteps = [
           <div class="flex-1 min-w-0">
             <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[12px]">Étude de cas</p>
             <h3 class="text-[24px] max-[640px]:text-[20px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[12px]">Viessmann : quand les réseaux sociaux tirent la croissance e-commerce en Chine</h3>
-            <p class="text-[15px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[20px]">Douyin a nourri le haut de l'entonnoir. RedNote a préparé les acheteurs. WeCom les a convertis et fidélisés. Le chiffre d'affaires en ligne a progressé mois après mois.</p>
+            <p class="text-[15px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[20px]">Douyin a alimenté le haut de l'entonnoir. RedNote a préparé les acheteurs. WeCom les a convertis et fidélisés. Le chiffre d'affaires en ligne a progressé mois après mois.</p>
             <span class="text-[14px] font-medium text-[var(--color-vermillion)] group-hover:underline">Voir l'étude de cas →</span>
           </div>
           <img
@@ -226,7 +226,7 @@ const gettingStartedSteps = [
   </section>
 
   <GettingStarted
-    heading="De zéro à un domaine privé opérationnel en trois semaines."
+    heading="De zéro à un domaine privé opérationnel, trois semaines suffisent."
     steps={gettingStartedSteps}
     backgroundImage="/images/getting-started/crm-private-domain.png"
     crossLinks={[
@@ -236,7 +236,7 @@ const gettingStartedSteps = [
     ]}
   />
 
-  <FaqAccordion faqs={faqs} subtitle="Tout ce qu'il faut savoir sur le CRM et le domaine privé avec TheRedScroll." />
+  <FaqAccordion faqs={faqs} subtitle="Tout ce qu'il faut savoir avant de construire votre CRM et votre domaine privé avec TheRedScroll." />
 
 
 </PageLayout>

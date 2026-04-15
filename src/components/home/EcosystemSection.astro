@@ -15,62 +15,62 @@ const lp = (path: string) => localizedPath(path, lang);
 const pillars = lang === 'zh' ? [
   {
     title: '人群。',
-    description: '十亿多用户，十几个平台，每一个的玩法都不一样。先想清楚人在哪，再谈上哪个平台。顺序反了就是浪费钱。',
+    description: '十亿用户，几十个平台，每一个玩法都不一样。先搞清楚人在哪，再决定去哪个平台。顺序反了，钱就白花。',
     stat: '1B+', statLabel: '用户',
     image: '/images/ecosystem/audience.png',
   },
   {
     title: '内容。',
-    description: '抖音能刷爆的东西，搬到微信上可能连打开率都没有。每个平台有自己的语感和节奏，一套内容打天下这事儿行不通。',
+    description: '抖音上刷爆的内容，放到微信可能没人点开。每个平台有自己的语感、节奏、格式，一套内容通吃行不通。',
     stat: '18+', statLabel: '平台',
     image: '/images/ecosystem/content.png',
   },
   {
     title: '达人。',
-    description: 'KOL、KOC对购买决策的影响，比硬广早就要大得多。人选对、平台对、时间对，剩下的才是预算的事。',
-    stat: '80%', statLabel: '更信KOL',
+    description: 'KOL 和 KOC 对购买决策的影响力，早就超过硬广。人选对、平台对、时机对，剩下的才是预算问题。',
+    stat: '80%', statLabel: '用户更信 KOL',
     image: '/images/ecosystem/influencers.png',
   },
   {
     title: '平台。',
-    description: '微信、抖音、小红书、微博，再加14个主流和垂直平台。算法基本上每个月都在动，得有人天天盯。',
-    stat: '14+', statLabel: '更多平台',
+    description: '微信、抖音、小红书、微博，再加 14 个主流和垂类平台。算法几乎月月更新，需要有人天天盯。',
+    stat: '14+', statLabel: '其他平台',
     image: '/images/ecosystem/platforms.png',
   },
   {
     title: '电商。',
-    description: '在国内，社媒本身就是货架。用户不只是看，是看完直接下单。内容和生意早就是一回事。',
-    stat: '3.5T', statLabel: '抖音GMV（元）',
+    description: '在中国，社交平台就是货架。用户不只是逛，刷着刷着就下单。内容和生意，本来就是一回事。',
+    stat: '3.5T', statLabel: '抖音 GMV（元）',
     image: '/images/ecosystem/commerce.png',
   },
 ] : lang === 'fr' ? [
   {
     title: 'Audience.',
-    description: 'Un milliard d\'utilisateurs. Des dizaines de plateformes. Toutes differentes. Il faut d\'abord trouver votre audience. Le choix de la plateforme vient apres.',
+    description: 'Un milliard d\'utilisateurs. Des dizaines de plateformes. Toutes différentes. Trouvez d\'abord votre audience. Le choix de la plateforme vient ensuite.',
     stat: '1B+', statLabel: 'utilisateurs',
     image: '/images/ecosystem/audience.png',
   },
   {
     title: 'Contenu.',
-    description: 'Ce qui marche sur Douyin ne marche pas sur WeChat. Chaque plateforme a ses codes, son langage, son rythme. On construit pour chacune d\'entre elles.',
+    description: 'Ce qui cartonne sur Douyin tombe à plat sur WeChat. Chaque plateforme a ses codes, sa langue, son rythme. On crée pour chacune.',
     stat: '18+', statLabel: 'plateformes',
     image: '/images/ecosystem/content.png',
   },
   {
     title: 'Influenceurs.',
-    description: 'Les KOL et KOC pesent plus sur la decision d\'achat que n\'importe quelle publicite. Le bon profil, la bonne plateforme, le bon moment. Le reste c\'est de l\'argent perdu.',
+    description: 'Les KOL et KOC pèsent plus sur l\'achat que n\'importe quelle publicité. Le bon profil, la bonne plateforme, le bon moment. Le reste, c\'est du gâchis.',
     stat: '80%', statLabel: 'font confiance aux KOL',
     image: '/images/ecosystem/influencers.png',
   },
   {
     title: 'Plateformes.',
-    description: 'WeChat, Douyin, RedNote, Weibo, et 14 autres. Les algorithmes bougent tous les mois. Il faut une equipe qui les pratique au quotidien.',
+    description: 'WeChat, Douyin, RedNote, Weibo et 14 autres. Les algorithmes changent chaque mois. Il faut une équipe qui les pratique au quotidien.',
     stat: '14+', statLabel: 'autres plateformes',
     image: '/images/ecosystem/platforms.png',
   },
   {
     title: 'Commerce.',
-    description: 'En Chine, on achete directement sur les reseaux sociaux. Ce n\'est pas un lieu de consultation, c\'est un lieu de vente. Contenu et commerce ne font qu\'un.',
+    description: 'En Chine, on achète directement sur les réseaux sociaux. Ce n\'est pas un lieu de consultation, c\'est un lieu de vente. Contenu et commerce ne font qu\'un.',
     stat: '3.5T', statLabel: 'RMB GMV Douyin',
     image: '/images/ecosystem/commerce.png',
   },
@@ -108,12 +108,12 @@ const pillars = lang === 'zh' ? [
 ];
 
 const sectionText = lang === 'zh' ? {
-  heading: '中国社媒不是一个渠道，是一整个生态。',
-  sub: '人群、内容、达人、平台、电商，环环都扣着。单点发力做不起来，得整条链路跑通。',
+  heading: '中国社交平台不是一个渠道，而是一整套体系。',
+  sub: '人群、内容、达人、平台、电商，环环相扣。单点发力做不起来，要一条链路一起跑通。',
   cta: '预约通话',
 } : lang === 'fr' ? {
-  heading: 'Les reseaux sociaux chinois, ce n\'est pas un canal. C\'est un monde a part entiere.',
-  sub: 'Audience, contenu, influenceurs, plateformes et commerce. Tout est lie. On ne gagne pas sur un axe sans maitriser les autres.',
+  heading: 'Les réseaux sociaux chinois ne sont pas un canal. C\'est un monde à part entière.',
+  sub: 'Audience, contenu, influenceurs, plateformes et commerce. Tout est lié. On ne gagne pas sur un axe sans tenir les autres.',
   cta: 'Prendre rendez-vous',
 } : {
   heading: 'Chinese social media is not a channel. It\'s an ecosystem.',

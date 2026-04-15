@@ -11,6 +11,7 @@ export function getLocalizedNav(lang: Lang): NavItem[] {
     {
       label: t('nav.services', lang),
       href: lp('/services'),
+      viewAllLabel: t('nav.viewAll.services', lang),
       children: [
         { label: t('nav.services.strategy', lang), subtitle: t('nav.services.strategy.sub', lang), href: lp('/services/strategy-campaigns'), icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 6-8"/></svg>` },
         { label: t('nav.services.advertising', lang), subtitle: t('nav.services.advertising.sub', lang), href: lp('/services/advertising'), icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>` },
@@ -24,6 +25,7 @@ export function getLocalizedNav(lang: Lang): NavItem[] {
     {
       label: t('nav.platforms', lang),
       href: lp('/platforms'),
+      viewAllLabel: t('nav.viewAll.platforms', lang),
       children: [
         { label: t('nav.platforms.wechat', lang), subtitle: t('nav.platforms.wechat.sub', lang), href: lp('/platforms/wechat'), icon: `<img src="/images/platforms/wechat-logo.svg" alt="WeChat" width="20" height="20" style="filter: brightness(0) invert(1);" />` },
         { label: t('nav.platforms.rednote', lang), subtitle: t('nav.platforms.rednote.sub', lang), href: lp('/platforms/rednote'), icon: `<img src="/images/platforms/rednote-logo.svg" alt="RedNote" width="20" height="20" style="filter: brightness(0) invert(1);" />` },
@@ -36,6 +38,7 @@ export function getLocalizedNav(lang: Lang): NavItem[] {
     {
       label: t('nav.about', lang),
       href: lp('/about'),
+      viewAllLabel: t('nav.viewAll.about', lang),
       children: [
         { label: t('nav.about.team', lang), subtitle: t('nav.about.team.sub', lang), href: lp('/about#team'), icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>` },
         { label: t('nav.about.ai', lang), subtitle: t('nav.about.ai.sub', lang), href: lp('/ai'), icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4v2a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4z"/><path d="M16 14H8a4 4 0 0 0-4 4v2h16v-2a4 4 0 0 0-4-4z"/><circle cx="8" cy="6" r="1"/><circle cx="16" cy="6" r="1"/></svg>` },

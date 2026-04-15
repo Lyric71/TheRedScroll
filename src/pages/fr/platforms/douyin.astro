@@ -6,21 +6,21 @@ import SectionHeading from '../../../components/ui/SectionHeading.astro';
 import Button from '../../../components/ui/Button.astro';
 
 const stats = [
-  { label: 'Utilisateurs actifs quotidiens', value: '750M+', image: '/images/platforms/douyin-stats/daily-active-users.png' },
-  { label: 'Utilisateurs actifs mensuels', value: '1B+', image: '/images/platforms/douyin-stats/monthly-active-users.png' },
-  { label: 'Temps moyen par jour et par utilisateur', value: '120 min', image: '/images/platforms/douyin-stats/daily-time.png' },
-  { label: 'Ventes e-commerce (2024)', value: '¥3.5T', image: '/images/platforms/douyin-stats/ecommerce-sales.png' },
-  { label: 'Croissance annuelle des ventes', value: '34%', image: '/images/platforms/douyin-stats/yoy-growth.png' },
-  { label: 'Sessions de live commerce par jour', value: '30M+', image: '/images/platforms/douyin-stats/live-commerce.png' },
-  { label: 'Categories de contenu', value: '100+', image: '/images/platforms/douyin-stats/content-variety.png' },
-  { label: 'Comptes de createurs', value: '15M+', image: '/images/platforms/douyin-stats/creator-economy.png' },
+  { label: 'Utilisateurs actifs chaque jour', value: '750M+', image: '/images/platforms/douyin-stats/daily-active-users.png' },
+  { label: 'Utilisateurs actifs chaque mois', value: '1B+', image: '/images/platforms/douyin-stats/monthly-active-users.png' },
+  { label: 'Temps passé par utilisateur et par jour', value: '120 min', image: '/images/platforms/douyin-stats/daily-time.png' },
+  { label: 'Volume e-commerce annuel (2024)', value: '¥3.5T', image: '/images/platforms/douyin-stats/ecommerce-sales.png' },
+  { label: 'Progression annuelle des ventes', value: '34%', image: '/images/platforms/douyin-stats/yoy-growth.png' },
+  { label: 'Lives marchands diffusés chaque jour', value: '30M+', image: '/images/platforms/douyin-stats/live-commerce.png' },
+  { label: 'Catégories de contenu recensées', value: '100+', image: '/images/platforms/douyin-stats/content-variety.png' },
+  { label: 'Comptes de créateurs actifs', value: '15M+', image: '/images/platforms/douyin-stats/creator-economy.png' },
 ];
 
 const ecosystem = [
   {
     name: 'For You Feed',
     chineseName: '推荐页',
-    description: 'Le fil de recommandation pilote par l\'algorithme. Le nombre d\'abonnes n\'y change rien. Un compte tout neuf peut atteindre des millions de vues avec la bonne video.',
+    description: 'Le fil de recommandation piloté par l\'algorithme. Le nombre d\'abonnés ne pèse quasiment rien dans la balance. Un compte ouvert la veille peut franchir le million de vues avec la bonne vidéo.',
     image: '/images/platforms/douyin-ecosystem/for-you-feed.png',
     bg: '#1A1A1A',
     iconBg: 'rgba(255,255,255,0.1)',
@@ -32,7 +32,7 @@ const ecosystem = [
   {
     name: 'Live Commerce',
     chineseName: '直播电商',
-    description: 'La vente en direct integree a l\'application. Selection de l\'animateur, script produit, interaction en temps reel avec l\'audience. Certaines marques attirent des millions de spectateurs en une seule session.',
+    description: 'La vente en direct, intégrée au cœur de l\'application. Choix de l\'animateur, écriture du script produit, interaction en temps réel avec le public. Certaines marques réunissent plusieurs millions de spectateurs sur un seul live.',
     image: '/images/platforms/douyin-ecosystem/live-commerce.png',
     bg: '#CC3333',
     iconBg: 'rgba(255,255,255,0.2)',
@@ -44,7 +44,7 @@ const ecosystem = [
   {
     name: 'Douyin Shop',
     chineseName: '抖音商城',
-    description: 'La boutique integree ou les utilisateurs recherchent, parcourent et achetent vos produits. Chaque video et chaque live redirige le trafic vers la boutique. Aucune redirection externe.',
+    description: 'La boutique intégrée où les utilisateurs cherchent, parcourent et achètent vos produits. Chaque vidéo et chaque live renvoie directement vers la fiche produit. Plus aucune sortie d\'application.',
     image: '/images/platforms/douyin-ecosystem/douyin-shop.png',
     bg: '#F7F2EE',
     iconBg: '#E8E0D8',
@@ -56,7 +56,7 @@ const ecosystem = [
   {
     name: 'Ocean Engine',
     chineseName: '巨量引擎',
-    description: 'La plateforme publicitaire de ByteDance. TopView pour les grands lancements. In-Feed Ads pour le trafic. Search Ads pour les acheteurs a forte intention. DOU+ pour tester le contenu. Budget publicitaire facture separement, sans marge.',
+    description: 'La régie publicitaire de ByteDance. TopView pour les grands lancements. In-Feed Ads pour le trafic quotidien. Search Ads pour les acheteurs à forte intention. DOU+ pour tester le contenu. Budget média facturé au coût réel, sans marge cachée.',
     image: '/images/platforms/douyin-ecosystem/ocean-engine.png',
     bg: '#1A1A1A',
     iconBg: 'rgba(255,255,255,0.1)',
@@ -68,7 +68,7 @@ const ecosystem = [
   {
     name: 'Xingtu',
     chineseName: '星图',
-    description: 'La place de marche officielle de KOL sur Douyin. Nous trouvons les createurs, verifions leurs faux abonnes, analysons leurs campagnes passees et la correspondance avec votre audience. Vous validez la liste finale avant toute action.',
+    description: 'La place de marché officielle des KOL sur Douyin. Nous repérons les créateurs, traquons les faux abonnés, épluchons leurs campagnes passées et vérifions leur affinité avec votre audience. Vous validez la sélection finale avant tout engagement.',
     image: '/images/platforms/douyin-ecosystem/xingtu.png',
     bg: '#E8E0D8',
     iconBg: '#FFFFFF',
@@ -80,7 +80,7 @@ const ecosystem = [
   {
     name: 'DOU+',
     chineseName: '抖加',
-    description: 'L\'outil de promotion de contenu pour tester quelles videos resonnent. Investissez un petit budget sur une publication, observez sa performance aupres d\'une audience elargie, puis accelerez ce qui fonctionne.',
+    description: 'L\'outil maison de boost de contenu, idéal pour identifier les vidéos qui prennent. On injecte un petit budget sur une publication, on observe ses performances auprès d\'un public élargi, puis on accélère ce qui fonctionne.',
     image: '/images/platforms/douyin-ecosystem/dou-plus.png',
     bg: '#B02D2D',
     iconBg: 'rgba(255,255,255,0.2)',
@@ -93,44 +93,44 @@ const ecosystem = [
 
 const services = [
   {
-    title: 'Creation de compte et strategie',
-    description: 'Nous enregistrons et verifions votre compte entreprise, traitons les formalites de conformite et construisons votre strategie de contenu de zero. Piliers editoriaux, calendrier de publication, planning editorial, objectifs KPI.',
-    result: 'Un compte Douyin verifie et actif avec une feuille de route claire.',
+    title: 'Ouverture de compte et stratégie',
+    description: 'Nous ouvrons et certifions votre compte entreprise, prenons en charge les formalités de conformité et bâtissons votre stratégie éditoriale de A à Z. Piliers de contenu, calendrier de publication, rythme hebdomadaire, objectifs chiffrés.',
+    result: 'Un compte Douyin certifié, actif, avec une feuille de route limpide.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/></svg>`,
     image: '/images/platforms/douyin-services/setup-strategy.png',
   },
   {
     title: 'Production de contenu',
-    description: 'Des videos natives Douyin produites par notre equipe en Chine. Demos produit, tournages lifestyle, clips pedagogiques, coulisses, formats tendance et mini-dramas. HubStudio.ai pour les visuels et les brouillons de texte. Des locuteurs natifs mandarins revoient chaque piece.',
-    result: 'Du contenu video court et localise, concu pour performer sur Douyin.',
+    description: 'Des vidéos pensées pour Douyin, tournées par notre équipe sur place en Chine. Démos produit, séquences lifestyle, capsules pédagogiques, coulisses, formats tendance et mini-dramas. HubStudio.ai prend en charge les visuels et les premiers jets de texte. Nos rédacteurs chinois natifs relisent chaque livrable.',
+    result: 'Des vidéos courtes, localisées, calibrées pour performer sur Douyin.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>`,
     image: '/images/platforms/douyin-services/content-production.png',
   },
   {
     title: 'Live commerce',
-    description: 'Nous concevons et animons des sessions de vente en direct. Selection de l\'animateur, script produit, interaction en temps reel avec l\'audience, bilan de performance apres chaque session. Adapte aux lancements de produits, aux campagnes saisonnieres et aux canaux de vente reguliers.',
-    result: 'Des livestreams generateurs de revenus qui convertissent les spectateurs en acheteurs.',
+    description: 'Nous concevons et pilotons vos lives marchands de bout en bout. Choix de l\'animateur, script produit, interaction en temps réel avec le public, bilan chiffré après chaque diffusion. Adapté aux lancements, aux temps forts saisonniers et aux ventes récurrentes.',
+    result: 'Des lives qui génèrent du chiffre et transforment les spectateurs en acheteurs.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>`,
     image: '/images/platforms/douyin-services/live-commerce.png',
   },
   {
     title: 'Campagnes KOL et KOC',
-    description: 'Nous trouvons des createurs via Xingtu et notre propre reseau, construit au fil des annees sur le terrain. Chaque createur est verifie : faux abonnes, resultats de campagnes passees, correspondance avec votre audience. Vous validez la liste finale avant toute action.',
-    result: 'Des campagnes d\'influence avec un engagement verifie et des resultats concrets.',
+    description: 'Nous dénichons les créateurs via Xingtu et notre réseau, tissé année après année sur le terrain. Chaque profil passe au crible : faux abonnés, performances des campagnes précédentes, affinité avec votre public. Vous validez la sélection finale avant tout engagement.',
+    result: 'Des campagnes d\'influence à l\'engagement vérifié, avec des résultats tangibles.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
     image: '/images/platforms/douyin-services/kol-campaigns.png',
   },
   {
-    title: 'Publicite',
-    description: 'Campagnes payantes via Ocean Engine. TopView pour les grands lancements. In-Feed Ads pour le trafic et les clics. Search Ads pour les acheteurs a forte intention. DOU+ pour les tests. Branded Effects pour l\'engagement utilisateur. Budget publicitaire facture separement, sans marge.',
-    result: 'Des publicites qui touchent la bonne audience avec un reporting transparent des depenses.',
+    title: 'Publicité',
+    description: 'Campagnes payantes sur Ocean Engine. TopView pour les grands lancements. In-Feed Ads pour le trafic au quotidien. Search Ads pour les acheteurs à forte intention. DOU+ pour les tests. Branded Effects pour faire participer les utilisateurs. Budget média facturé au coût réel, sans marge cachée.',
+    result: 'Des campagnes qui touchent le bon public, avec un reporting transparent des dépenses.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>`,
     image: '/images/platforms/douyin-services/advertising.png',
   },
   {
     title: 'Douyin Shop',
-    description: 'La boutique integree ou les utilisateurs recherchent, parcourent et achetent vos produits. Nous gerons la creation, les fiches produits, la tarification et l\'optimisation. Chaque video et chaque live que nous produisons redirige le trafic vers la boutique.',
-    result: 'Une boutique qui transforme les spectateurs en clients sans quitter l\'application.',
+    description: 'La boutique intégrée où les utilisateurs cherchent, parcourent et achètent vos produits. Nous prenons en charge la mise en place, les fiches produit, le pricing et l\'optimisation continue. Chaque vidéo et chaque live que nous produisons renvoie vers votre boutique.',
+    result: 'Une boutique qui transforme les spectateurs en clients, sans jamais quitter l\'application.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>`,
     image: '/images/platforms/douyin-services/douyin-shop.png',
   },
@@ -138,107 +138,107 @@ const services = [
 
 const bestPractices = [
   {
-    title: 'La premiere seconde decide de tout.',
-    description: 'Commencez par du mouvement, une question, un element visuel fort. N\'ouvrez jamais avec un logo. Vous perdrez l\'audience avant meme qu\'elle sache de quoi parle la video.',
+    title: 'La première seconde fait tout le travail.',
+    description: 'Ouvrez par du mouvement, une question ou un visuel qui frappe. Jamais par un logo. Vous perdez le spectateur avant même qu\'il ait compris de quoi il s\'agit.',
   },
   {
-    title: 'Vertical uniquement. 9:16.',
-    description: 'Si ca ressemble a une pub TV recyclee, les performances seront mauvaises. Douyin est vertical d\'abord, toujours.',
+    title: 'Vertical, toujours. Format 9:16.',
+    description: 'Si la vidéo sent la pub TV recyclée, les chiffres sont sans appel. Douyin est vertical avant tout, sans exception.',
   },
   {
-    title: 'Trois a cinq publications par semaine, minimum.',
-    description: 'L\'algorithme recompense la regularite. Une semaine de silence et votre portee chute. C\'est aussi simple que ca.',
+    title: 'Trois à cinq publications par semaine, au minimum.',
+    description: 'L\'algorithme récompense la régularité. Une semaine de silence, et la portée s\'effondre. C\'est aussi mécanique que ça.',
   },
   {
-    title: 'Le taux de visionnage complet est primordial.',
-    description: 'Le signal numero un de l\'algorithme, c\'est le nombre de personnes qui regardent votre video jusqu\'au bout. Supprimez tout ce qui ne justifie pas la seconde suivante.',
+    title: 'Le taux de visionnage jusqu\'au bout est le signal roi.',
+    description: 'Le premier critère de l\'algorithme, c\'est la proportion de spectateurs qui tiennent jusqu\'à la fin. Coupez tout ce qui ne mérite pas la seconde suivante.',
   },
   {
-    title: 'Les tendances evoluent vite.',
-    description: 'Nous suivons quotidiennement les sons, hashtags et formats en vogue. Attraper une tendance tot peut multiplier considerablement la portee d\'une seule video.',
+    title: 'Les tendances filent à toute allure.',
+    description: 'Nous scrutons chaque matin les sons, hashtags et formats qui montent. Attraper une tendance à son démarrage peut décupler, voire centupler la portée d\'une vidéo.',
   },
   {
-    title: 'Vendez en douceur.',
-    description: 'La vente agressive ne fonctionne pas sur Douyin. Le contenu qui performe informe ou divertit d\'abord. Le produit vient en second.',
+    title: 'Vendez sans forcer la main.',
+    description: 'La vente frontale ne prend pas sur Douyin. Le contenu qui marche informe ou divertit d\'abord. Le produit arrive ensuite, et seulement ensuite.',
   },
   {
-    title: 'Le son est indispensable.',
-    description: 'Douyin n\'est pas une plateforme ou l\'on scrolle en silence. Musique, voix off, signaux sonores : ils comptent autant que ce qui apparait a l\'ecran.',
+    title: 'Le son n\'est jamais accessoire.',
+    description: 'On ne scrolle pas Douyin en silence. Musique, voix off et signatures sonores pèsent autant que l\'image à l\'écran.',
   },
   {
-    title: 'Du mandarin des le depart.',
-    description: 'Le contenu traduit performe mal sur la plateforme. Notre equipe redige tous les textes en mandarin natif.',
+    title: 'Du mandarin dès la première ligne.',
+    description: 'Un contenu simplement traduit ne décolle pas. Nos rédacteurs chinois natifs écrivent chaque texte directement en mandarin.',
   },
 ];
 
 const steps = [
   {
     number: '01',
-    title: 'Appel decouverte.',
-    description: 'Parlez-nous de votre marque, de vos objectifs et de votre position actuelle en Chine. Pas de presentation commerciale. Juste les bonnes questions.',
+    title: 'Appel de découverte.',
+    description: 'Parlez-nous de votre marque, de vos objectifs et de votre position actuelle en Chine. Pas de baratin commercial. Juste les bonnes questions, et rien d\'autre.',
     icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>`,
   },
   {
     number: '02',
     title: 'Proposition.',
-    description: 'Un cahier des charges clair. Un prix fixe. Chaque livrable detaille. Vous savez ce que vous obtenez et combien cela coute avant de vous engager.',
+    description: 'Un cahier des charges net. Un prix arrêté. Chaque livrable détaillé noir sur blanc. Vous savez exactement ce que vous obtenez, et à quel coût, avant de signer.',
     icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>`,
   },
   {
     number: '03',
-    title: 'En ligne en 2 semaines.',
-    description: 'Onboarding, comptes configures, premier contenu publie. Quatorze jours entre la signature du contrat et la premiere publication.',
+    title: 'En ligne en deux semaines.',
+    description: 'Intégration, comptes configurés, première vidéo publiée. Quatorze jours entre la signature du contrat et la première mise en ligne.',
     icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>`,
   },
 ];
 
 const faqs = [
   {
-    q: 'Qui gere notre compte ?',
-    a: 'Notre equipe en Chine. Des locuteurs natifs mandarins qui creent du contenu et gerent des campagnes publicitaires sur Douyin au quotidien. Vous disposez d\'un responsable de compte dedie qui connait votre marque.',
+    q: 'Qui pilote notre compte au quotidien ?',
+    a: 'Notre équipe basée en Chine. Des rédacteurs chinois natifs qui produisent du contenu et pilotent des campagnes publicitaires sur Douyin tous les jours. Vous avez un responsable de compte dédié, qui connaît votre marque sur le bout des doigts.',
   },
   {
-    q: 'Faut-il une licence commerciale chinoise ?',
-    a: 'Les comptes entreprise necessitent soit une licence commerciale chinoise, soit un partenaire agence autorise. Nous gerons les deux cas. Vous pouvez commencer a publier et a diffuser des publicites sans creer d\'entite locale.',
+    q: 'Faut-il détenir une licence commerciale chinoise ?',
+    a: 'Pour ouvrir un compte entreprise, il faut soit une licence commerciale chinoise, soit passer par une agence autorisée. Nous couvrons les deux cas de figure. Vous pouvez publier et diffuser des publicités sans créer d\'entité locale.',
   },
   {
-    q: 'Qu\'est-ce qui differencie TheRedScroll ?',
-    a: 'Perimetre fixe, prix fixe. Une equipe sur le terrain en Chine. Une production assistee par l\'IA. Nous avons analyse 37 agences dans ce secteur et aucune ne propose de forfaits a prix fixe.',
+    q: 'Qu\'est-ce qui distingue TheRedScroll ?',
+    a: 'Périmètre arrêté, prix arrêté. Une équipe sur le terrain en Chine. Une production assistée par l\'IA. Nous avons passé 37 agences du secteur au crible. Aucune ne propose de forfaits à prix fixe.',
   },
   {
-    q: 'Combien de temps avant de voir des resultats ?',
-    a: 'La plupart des marques constatent une traction en 8 a 12 semaines. Les campagnes payantes peuvent montrer des resultats en quelques jours. Cela depend de la categorie et du niveau d\'agressivite souhaite.',
+    q: 'Au bout de combien de temps voit-on des résultats ?',
+    a: 'La plupart des marques observent une traction au bout de huit à douze semaines. Les campagnes payantes, elles, peuvent livrer leurs premiers résultats en quelques jours. Tout dépend de la catégorie et du niveau d\'ambition.',
   },
   {
-    q: 'Quel est le cout ?',
-    a: 'Des forfaits a prix fixe qui detaillent exactement ce que vous obtenez. Le budget publicitaire est facture au cout reel, separement. Aucune marge. Prenez rendez-vous et nous vous recommanderons la formule adaptee.',
+    q: 'Quel est le tarif ?',
+    a: 'Des forfaits à prix fixe qui détaillent précisément ce que vous obtenez. Le budget média est facturé au coût réel, à part. Aucune marge cachée. Prenez rendez-vous, nous vous recommanderons la formule la plus adaptée.',
   },
   {
-    q: 'Peut-on diffuser des publicites sans entite chinoise ?',
-    a: 'Les marques internationales font de la publicite sur Douyin par notre intermediaire en tant qu\'agence autorisee. Aucune incorporation locale requise.',
+    q: 'Peut-on diffuser des publicités sans entité juridique en Chine ?',
+    a: 'Les marques internationales diffusent leurs publicités sur Douyin via notre structure, en qualité d\'agence autorisée. Aucune création d\'entité locale n\'est requise.',
   },
   {
-    q: 'Quel type de contenu produisez-vous ?',
-    a: 'Demos produit, videos lifestyle, tutoriels, mini-dramas, collaborations KOL, livestreams. Le tout en mandarin, par notre equipe en Chine. Des outils IA pour la rapidite, une revision humaine sur chaque piece.',
+    q: 'Quels types de contenu produisez-vous ?',
+    a: 'Démos produit, vidéos lifestyle, tutoriels, mini-dramas, collaborations KOL, lives marchands. Le tout en mandarin, par notre équipe sur place en Chine. Les outils d\'IA pour la cadence, une relecture humaine sur chaque livrable.',
   },
   {
-    q: 'Comment selectionnez-vous les KOL ?',
-    a: 'Via Xingtu et notre propre reseau. Chaque createur est controle sur les faux abonnes, la qualite de l\'engagement, les donnees demographiques et l\'adequation avec la marque. Vous validez la liste finale.',
+    q: 'Comment sélectionnez-vous les KOL ?',
+    a: 'Via Xingtu et notre propre réseau. Chaque créateur est passé au crible : faux abonnés, qualité de l\'engagement, données démographiques, affinité avec la marque. Vous validez la sélection finale.',
   },
   {
-    q: 'Pouvez-vous creer un Douyin Shop ?',
-    a: 'Oui. Creation, fiches produits, tarification, optimisation. Connecte a votre strategie de contenu pour que chaque video redirige les acheteurs vers vos produits.',
+    q: 'Pouvez-vous monter un Douyin Shop ?',
+    a: 'Oui. Mise en place, fiches produit, pricing, optimisation continue. Le tout branché sur votre stratégie éditoriale, pour que chaque vidéo renvoie les acheteurs vers vos produits.',
   },
   {
-    q: 'A quoi ressemblent les rapports ?',
-    a: 'Mensuels. Des chiffres clairs. Croissance des abonnes, vues, engagement, efficacite publicitaire, conversions. Ce qui a fonctionne, ce qui n\'a pas fonctionne, ce qui change le mois suivant.',
+    q: 'À quoi ressemblent vos rapports ?',
+    a: 'Mensuels. Des chiffres limpides. Croissance des abonnés, vues, engagement, efficacité publicitaire, conversions. Ce qui a marché, ce qui n\'a pas marché, ce que l\'on change le mois suivant.',
   },
 ];
 ---
 
 <PageLayout
-  title="Agence Marketing Douyin | TheRedScroll"
-  description="Services marketing Douyin depuis Shanghai. Contenu, publicite, campagnes KOL, live commerce et creation de Douyin Shop. Perimetre fixe, prix fixe. Prendre rendez-vous."
+  title="Agence marketing Douyin | TheRedScroll"
+  description="Marketing Douyin piloté depuis Shanghai. Production de contenu, publicité, campagnes KOL, live commerce et Douyin Shop. Périmètre arrêté, prix arrêté. Prenez rendez-vous."
   lang="fr"
 >
   <!-- Hero: Dark hero banner -->
@@ -258,10 +258,10 @@ const faqs = [
           Marketing Douyin
         </p>
         <h1 class="text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] text-[#FFFFFF] mb-[8px]">
-          750 millions d'utilisateurs quotidiens. Une seule plateforme. Nous y publions chaque jour.
+          750 millions d'utilisateurs chaque jour. Une seule plateforme. Nous y publions tous les matins.
         </h1>
         <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal mb-[24px]">
-          Services marketing Douyin depuis notre equipe en Chine. Production de contenu, publicite, campagnes KOL, live commerce et Douyin Shop. Perimetre fixe, prix fixe.
+          Marketing Douyin piloté par notre équipe sur place en Chine. Production de contenu, publicité, campagnes KOL, live commerce et Douyin Shop. Périmètre arrêté, prix arrêté.
         </p>
         <Button variant="primary" href="/fr/contact">Prendre rendez-vous</Button>
       </div>
@@ -275,10 +275,10 @@ const faqs = [
         <div class="max-w-[560px]">
           <SectionBar />
           <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[8px]">
-            Pas des chiffres creux. Votre audience chinoise est deja la.
+            Pas des chiffres en l'air. Votre public chinois est déjà sur l'application.
           </h2>
           <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
-            Douyin en chiffres.
+            Douyin en quelques chiffres.
           </p>
         </div>
         <Button variant="primary" href="/fr/contact" class="shrink-0">Prendre rendez-vous</Button>
@@ -316,7 +316,7 @@ const faqs = [
           <SectionBar />
         </div>
         <SectionHeading overline="Pourquoi Douyin compte">
-          Portee algorithmique. Commerce integre. Vente en direct native.
+          Portée algorithmique. Commerce intégré. Vente en direct nativement.
         </SectionHeading>
       </div>
 
@@ -324,12 +324,12 @@ const faqs = [
         <!-- Card 1: L'algorithme ne regarde pas le nombre d'abonnes -->
         <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
           <div class="w-full aspect-[16/9] overflow-hidden">
-            <img src="/images/platforms/douyin-why/algorithm.png" alt="Utilisateur decouvrant du contenu de marque via le fil algorithmique de Douyin" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+            <img src="/images/platforms/douyin-why/algorithm.png" alt="Utilisatrice découvrant du contenu de marque dans le fil algorithmique de Douyin" class="w-full h-full object-cover" loading="lazy" decoding="async" />
           </div>
           <div class="p-[24px] max-[640px]:p-[20px]">
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">L'algorithme met tout le monde au meme niveau</h3>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">L'algorithme remet tout le monde sur la même ligne de départ</h3>
             <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
-              L'algorithme de Douyin ne tient pas compte du nombre d'abonnes. Il s'interesse a la qualite du contenu. Un compte tout neuf peut atteindre des millions de vues avec la bonne video. Les nouveaux entrants sont en competition des le premier jour.
+              L'algorithme de Douyin se moque du nombre d'abonnés. Il juge la qualité du contenu. Un compte ouvert la veille peut franchir le million de vues avec la bonne vidéo. Les nouveaux entrants jouent à armes égales dès le premier jour.
             </p>
           </div>
         </div>
@@ -337,12 +337,12 @@ const faqs = [
         <!-- Card 2: Tout le parcours dans une seule application -->
         <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
           <div class="w-full aspect-[16/9] overflow-hidden">
-            <img src="/images/platforms/douyin-why/full-funnel.png" alt="Parcours d'achat Douyin de la video au paiement sur smartphone" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+            <img src="/images/platforms/douyin-why/full-funnel.png" alt="Parcours d'achat Douyin, de la vidéo au paiement sur smartphone" class="w-full h-full object-cover" loading="lazy" decoding="async" />
           </div>
           <div class="p-[24px] max-[640px]:p-[20px]">
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Decouvrir, decider, acheter. Une seule application.</h3>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Découvrir, décider, acheter. Sans jamais sortir de l'app.</h3>
             <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
-              Les utilisateurs decouvrent des produits, prennent leur decision et finalisent l'achat sans jamais quitter l'application. Pas de redirection, pas de site externe. Le chemin du contenu a la vente est aussi court que possible.
+              L'utilisateur tombe sur un produit, se décide et passe commande sans jamais quitter l'application. Aucune redirection, aucun site externe. Le chemin du contenu à la vente est ramené à son strict minimum.
             </p>
           </div>
         </div>
@@ -350,19 +350,19 @@ const faqs = [
         <!-- Card 3: Le live commerce est integre -->
         <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
           <div class="w-full aspect-[16/9] overflow-hidden">
-            <img src="/images/platforms/douyin-why/live-built-in.png" alt="Session de live commerce sur Douyin avec spectateurs et panier d'achat" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+            <img src="/images/platforms/douyin-why/live-built-in.png" alt="Live commerce Douyin avec spectateurs et panier d'achat à l'écran" class="w-full h-full object-cover" loading="lazy" decoding="async" />
           </div>
           <div class="p-[24px] max-[640px]:p-[20px]">
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Le live commerce est natif</h3>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Le live commerce est dans l'ADN de la plateforme</h3>
             <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
-              Certains livestreams de marques attirent des millions de spectateurs en une seule session. La vente en direct fonctionne pour les lancements de produits, les campagnes saisonnieres et les marques qui veulent un canal de vente regulier sur la plateforme.
+              Certains lives de marque rassemblent plusieurs millions de spectateurs en une seule diffusion. La vente en direct convient aux lancements, aux temps forts saisonniers et aux marques qui cherchent un canal de vente récurrent.
             </p>
           </div>
         </div>
       </div>
 
       <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] mt-[24px] text-center max-w-[680px] mx-auto">
-        Que vos clients aient 22 ou 52 ans, qu'ils vivent dans une ville de premier rang ou de cinquieme rang, ils passent plus de temps sur Douyin que sur toute autre application en Chine. Douyin fonctionne pour la beaute, la mode, l'alimentaire, l'electronique grand public, la maison, l'hotellerie, l'automobile, la sante et le B2B.
+        Que vos clients aient 22 ou 52 ans, qu'ils habitent une mégapole de premier rang ou une ville de cinquième rang, ils passent plus de temps sur Douyin que sur n'importe quelle autre application en Chine. Douyin fonctionne pour la beauté, la mode, l'agroalimentaire, l'électronique grand public, la maison, l'hôtellerie, l'automobile, la santé et le B2B.
       </p>
     </Container>
   </section>
@@ -374,8 +374,8 @@ const faqs = [
         <div class="flex justify-center mb-[12px]">
           <SectionBar />
         </div>
-        <SectionHeading overline="L'ecosysteme Douyin">
-          Six outils qui alimentent le contenu, le commerce et la croissance.
+        <SectionHeading overline="L'environnement Douyin">
+          Six briques qui font tourner contenu, commerce et croissance.
         </SectionHeading>
       </div>
 
@@ -409,7 +409,7 @@ const faqs = [
       <!-- Registration note -->
       <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px] mt-[16px]">
         <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] max-w-[680px]">
-          <span class="text-[#1A1A1A] font-medium">Note d'inscription :</span> Les entreprises etrangeres ont besoin d'une licence commerciale chinoise ou d'un partenaire agence autorise pour ouvrir un compte entreprise. Nous gerons les deux cas pour que vous puissiez publier et diffuser des publicites sans creer d'entite locale.
+          <span class="text-[#1A1A1A] font-medium">À propos de l'inscription :</span> les entreprises étrangères doivent disposer d'une licence commerciale chinoise ou passer par une agence autorisée pour ouvrir un compte entreprise. Nous couvrons les deux cas, afin que vous puissiez publier et diffuser des publicités sans créer d'entité locale.
         </p>
       </div>
     </Container>
@@ -423,7 +423,7 @@ const faqs = [
           <SectionBar />
         </div>
         <SectionHeading overline="Ce que nous faisons sur Douyin">
-          Six services. Chacun avec un livrable precis.
+          Six prestations. Chacune avec un livrable précis.
         </SectionHeading>
       </div>
 
@@ -506,7 +506,7 @@ const faqs = [
                 {service.description}
               </p>
               <p class="text-[13px] font-medium leading-[1.5] text-[#FFFFFF]">
-                Vous obtenez : {service.result}
+                Ce que vous obtenez : {service.result}
               </p>
             </div>
           </div>
@@ -521,13 +521,13 @@ const faqs = [
       <div class="bg-[#1A1A1A] rounded-[12px] py-[48px] px-[48px] max-[640px]:px-[20px] max-[640px]:py-[32px]">
         <div class="mb-[40px] max-[640px]:mb-[32px]">
           <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">
-            Par notre equipe sur le terrain
+            Par notre équipe sur le terrain
           </p>
           <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF]">
-            Comment nous creons du contenu Douyin
+            Notre méthode de production de contenu Douyin
           </h2>
           <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.5] mt-[8px] max-w-[680px]">
-            Ce sont les regles que notre equipe applique sur chaque compte que nous gerons.
+            Voici les règles que notre équipe applique sur chaque compte qu'elle pilote.
           </p>
         </div>
 
@@ -557,10 +557,10 @@ const faqs = [
             <SectionBar />
             <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">FAQ</p>
             <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">
-              Questions frequentes
+              Questions fréquentes
             </h2>
             <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
-              Tout ce que vous devez savoir pour travailler sur Douyin avec TheRedScroll.
+              L'essentiel à savoir avant de se lancer sur Douyin avec TheRedScroll.
             </p>
           </div>
         </div>
@@ -604,10 +604,10 @@ const faqs = [
           <div class="w-[40px] h-[3px] bg-[#CC3333] rounded-none"></div>
         </div>
         <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">
-          Pour commencer
+          Pour démarrer
         </p>
         <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF]">
-          De zero a un compte Douyin actif en deux semaines.
+          De la page blanche à un compte Douyin actif en deux semaines.
         </h2>
       </div>
 

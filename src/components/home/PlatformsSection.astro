@@ -17,43 +17,43 @@ const platforms = lang === 'zh' ? [
   {
     name: 'WeChat', chineseName: '微信', brandColor: '#07C160',
     logo: '/images/platforms/wechat-logo.svg', href: lp('/platforms/wechat'),
-    description: '国民超级App。公众号、朋友圈、小程序、企业微信，一套生态。如果你只能选一个平台重仓，那就是它。',
+    description: '中国国民级超级 App。公众号、朋友圈、小程序、企业微信，一应俱全。如果只能在中国重仓一个平台，就是它。',
   },
   {
     name: 'RedNote', chineseName: '小红书', brandColor: '#FF2442',
     logo: '/images/platforms/rednote-logo.svg', href: lp('/platforms/rednote'),
-    description: '用户买东西前都要来翻一圈的地方。测评、攻略、种草。决策链路短，真出单。',
+    description: '用户下单之前都会来这里翻一圈。测评、攻略、种草笔记，决策链路短，转化是真的。',
   },
   {
     name: 'Douyin', chineseName: '抖音', brandColor: '#010101',
     logo: '/images/platforms/douyin-logo.svg', href: lp('/platforms/douyin'),
-    description: '短视频和直播电商的交汇点。流量够大，内容到成交的路径够短。跑得通的品牌，基本上几个月就能看见结果。',
+    description: '短视频加直播电商的主战场。流量盘大，从看到买之间的路径极短。跑得顺的品牌，几个月就能看到结果。',
   },
   {
     name: 'Weibo', chineseName: '微博', brandColor: '#E6162D',
     logo: '/images/platforms/weibo-logo.svg', href: lp('/platforms/weibo'),
-    description: '大众传播和公关阵地。热搜、明星合作、舆情。想让品牌名字在短时间内传到全国，微博还是那个最快的选项。',
+    description: '大众传播与公关主场。热搜、明星合作、话题舆情。要让品牌名在短时间传遍全国，微博依旧是最快的选择。',
   },
 ] : lang === 'fr' ? [
   {
     name: 'WeChat', chineseName: '微信', brandColor: '#07C160',
     logo: '/images/platforms/wechat-logo.svg', href: lp('/platforms/wechat'),
-    description: 'La super-application chinoise. Comptes officiels, Moments, Mini Programs, WeCom. S\'il ne fallait choisir qu\'une seule plateforme en Chine, ce serait celle-la.',
+    description: 'La super-application chinoise. Comptes officiels, Moments, Mini Programs, WeCom. S\'il ne fallait choisir qu\'une seule plateforme en Chine, ce serait celle-là.',
   },
   {
     name: 'RedNote', chineseName: '小红书', brandColor: '#FF2442',
     logo: '/images/platforms/rednote-logo.svg', href: lp('/platforms/rednote'),
-    description: 'C\'est la que les consommateurs chinois se renseignent avant d\'acheter. Avis, tutoriels, publications marchandes. On compare souvent a Instagram, sauf qu\'ici les gens achetent pour de vrai.',
+    description: 'C\'est là que les consommateurs chinois se renseignent avant d\'acheter. Avis, tutoriels, publications marchandes. Souvent comparée à Instagram, sauf qu\'ici les gens achètent vraiment.',
   },
   {
     name: 'Douyin', chineseName: '抖音', brandColor: '#010101',
     logo: '/images/platforms/douyin-logo.svg', href: lp('/platforms/douyin'),
-    description: 'La video courte croise le commerce en direct. La portee est considerable et le chemin entre un contenu et une vente, tres court. Les marques qui maitrisent Douyin obtiennent des resultats vite.',
+    description: 'La vidéo courte croise le commerce en direct. La portée est considérable, le chemin entre un contenu et une vente très court. Les marques qui maîtrisent Douyin voient des résultats vite.',
   },
   {
     name: 'Weibo', chineseName: '微博', brandColor: '#E6162D',
     logo: '/images/platforms/weibo-logo.svg', href: lp('/platforms/weibo'),
-    description: 'Audience de masse et relations presse. Sujets en tendance, partenariats avec des celebrites, cycles d\'actualite. Pour faire connaitre une marque dans toute la Chine, ca reste le passage oblige.',
+    description: 'Audience de masse et relations presse. Sujets en tendance, partenariats avec des célébrités, cycles d\'actualité. Pour faire connaître une marque dans toute la Chine, ça reste le passage obligé.',
   },
 ] : [
   {
@@ -79,14 +79,14 @@ const platforms = lang === 'zh' ? [
 ];
 
 const sectionText = lang === 'zh' ? {
-  overline: '我们在运营的平台',
-  heading: '微信、抖音、小红书、微博，再加14个。',
-  note: '还有B站、快手、知乎、今日头条、美团、大众点评、拼多多、淘宝直播等等。每个平台按你所在的行业单独报价，不打包、不模糊。',
+  overline: '我们发布的平台',
+  heading: '微信、抖音、小红书、微博，再加 14 个。',
+  note: '另有 B 站、快手、知乎、今日头条、美团、大众点评、拼多多、淘宝直播等。每个平台按你所在的行业单独报价，清清楚楚、明明白白。',
   cta: '看全部平台',
 } : lang === 'fr' ? {
-  overline: 'Ou on publie',
+  overline: 'Où on publie',
   heading: 'WeChat. Douyin. RedNote. Weibo. Et 14 autres.',
-  note: 'Ainsi que Bilibili, Kuaishou, Zhihu, Toutiao, Meituan, Dianping, Pinduoduo, Taobao Live, entre autres. Chacune tarifee comme un complement a la carte, selon votre secteur.',
+  note: 'Ainsi que Bilibili, Kuaishou, Zhihu, Toutiao, Meituan, Dianping, Pinduoduo, Taobao Live, entre autres. Chacune tarifée comme un complément à la carte, selon votre secteur.',
   cta: 'Voir toutes les plateformes',
 } : {
   overline: 'Where we post',

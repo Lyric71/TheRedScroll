@@ -8,7 +8,7 @@ interface Props {
 
 const { variant = 'primary', href, type = 'button', class: className = '' } = Astro.props;
 
-const baseStyles = 'btn-fx inline-flex items-center justify-center h-[44px] px-[28px] text-[14px] font-medium leading-none tracking-normal rounded-[6px] cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2';
+const baseStyles = 'btn inline-flex items-center justify-center h-[44px] px-[28px] text-[14px] font-medium leading-none tracking-normal rounded-[6px] cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2';
 
 const variants = {
   primary: 'btn-primary bg-[#CC3333] text-[#FFFFFF] border-none focus-visible:outline-[#CC3333]',
@@ -20,73 +20,29 @@ const styles = `${baseStyles} ${variants[variant]} ${className}`;
 ---
 
 {href ? (
-  <a href={href} class={styles}>
-    <span class="btn-text"><slot /></span>
-  </a>
+  <a href={href} class={styles}><slot /></a>
 ) : (
-  <button type={type} class={styles}>
-    <span class="btn-text"><slot /></span>
-  </button>
+  <button type={type} class={styles}><slot /></button>
 )}
 
 <style>
-  /* Base button effect */
-  .btn-fx {
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-  }
-  .btn-fx:hover {
-    transform: translateY(-2px);
-  }
-  .btn-fx:active {
-    transform: translateY(0) scale(0.97);
-    transition-duration: 0.1s;
+  .btn {
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
   }
 
-  /* Text layer */
-  .btn-text {
-    position: relative;
-    z-index: 1;
-    pointer-events: none;
-    transition: letter-spacing 0.3s ease;
-  }
-  .btn-fx:hover .btn-text {
-    letter-spacing: 0.04em;
+  .btn-primary:hover {
+    background-color: #1A1A1A;
   }
 
-  /* Sweep overlay — slides in from left on hover */
-  .btn-fx::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    transform: scaleX(0);
-    transform-origin: left center;
-    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-    pointer-events: none;
-  }
-  .btn-fx:hover::after {
-    transform: scaleX(1);
-  }
-
-  /* Primary: darker sweep */
-  .btn-primary::after {
-    background: rgba(0, 0, 0, 0.1);
-  }
-
-  /* Secondary: subtle fill sweep */
-  .btn-secondary::after {
-    background: rgba(0, 0, 0, 0.04);
-  }
   .btn-secondary:hover {
-    border-color: var(--color-warm-gray);
+    background-color: #1A1A1A;
+    border-color: #1A1A1A;
+    color: #FFFFFF;
   }
 
-  /* Secondary dark: light sweep */
-  .btn-secondary-dark::after {
-    background: rgba(255, 255, 255, 0.08);
-  }
   .btn-secondary-dark:hover {
-    border-color: rgba(255, 255, 255, 0.5);
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    color: #1A1A1A;
   }
 </style>

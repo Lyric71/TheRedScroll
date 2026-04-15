@@ -4,7 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <BaseLayout
   title="联系我们 | TheRedScroll"
-  description="联系TheRedScroll。预约通话，或者直接说说你的项目。办公室在上海和香港。"
+  description="想把品牌做进中国社媒？约一次通话，或直接把项目发给我们。上海、香港两地办公，工作日 24 小时内回复。"
   hideFooterCta={true}
   lang="zh"
 >
@@ -19,10 +19,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         <div class="mb-[48px] max-[640px]:mb-[32px]">
           <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">联系我们</p>
           <h1 class="text-[#FFFFFF] text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] mb-[8px]">
-            聊聊你在中国社媒上要怎么做大。
+            你的品牌，下一步在中国社媒落地。
           </h1>
           <p class="text-[rgba(255,255,255,0.6)] text-[16px] font-normal leading-[1.6] max-w-[480px]">
-            预约通话、有问题直接问、或者介绍一下你的项目。我们一个工作日内回你。
+            约一次通话，把问题和项目说给我们听。工作日 24 小时内回复，绝不拖延。
           </p>
         </div>
 
@@ -30,7 +30,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
           <!-- Left: Contact form card -->
           <div class="bg-[#FFFFFF] rounded-[10px] p-[32px] max-[640px]:p-[20px] max-[1024px]:order-1">
-            <h2 class="text-[18px] text-[#1A1A1A] font-medium leading-[1.3] mb-[24px]">简单说说你的项目</h2>
+            <h2 class="text-[18px] text-[#1A1A1A] font-medium leading-[1.3] mb-[24px]">把你的项目讲给我们听</h2>
 
             <form id="contact-form" class="flex flex-col gap-[16px]">
               <!-- Name row -->
@@ -54,7 +54,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
               <!-- Company -->
               <div>
                 <label class="block text-[13px] font-normal text-[#5C5C5C] mb-[4px]">公司 <span class="text-[#CC3333]">*</span></label>
-                <input type="text" name="company" required class="block w-full h-[44px] px-[12px] text-[14px] font-normal text-[#1A1A1A] bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[6px] outline-none transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)] focus:border-[#1A1A1A] placeholder:text-[#5C5C5C] placeholder:opacity-60" placeholder="公司名称" />
+                <input type="text" name="company" required class="block w-full h-[44px] px-[12px] text-[14px] font-normal text-[#1A1A1A] bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[6px] outline-none transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)] focus:border-[#1A1A1A] placeholder:text-[#5C5C5C] placeholder:opacity-60" placeholder="公司名" />
               </div>
 
               <!-- Website -->
@@ -65,8 +65,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
               <!-- Message -->
               <div>
-                <label class="block text-[13px] font-normal text-[#5C5C5C] mb-[4px]">简单说说你的项目 <span class="text-[#CC3333]">*</span></label>
-                <textarea name="message" required rows="5" class="block w-full px-[12px] py-[12px] text-[14px] font-normal text-[#1A1A1A] bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[6px] outline-none transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)] focus:border-[#1A1A1A] placeholder:text-[#5C5C5C] placeholder:opacity-60 resize-vertical leading-[1.5] min-h-[120px]" placeholder="对哪些平台感兴趣？在中国社媒上的目标是什么？"></textarea>
+                <label class="block text-[13px] font-normal text-[#5C5C5C] mb-[4px]">项目简介 <span class="text-[#CC3333]">*</span></label>
+                <textarea name="message" required rows="5" class="block w-full px-[12px] py-[12px] text-[14px] font-normal text-[#1A1A1A] bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[6px] outline-none transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)] focus:border-[#1A1A1A] placeholder:text-[#5C5C5C] placeholder:opacity-60 resize-vertical leading-[1.5] min-h-[120px]" placeholder="打算先做哪些平台？在中国的目标是什么？"></textarea>
               </div>
 
               <!-- Honeypot — hidden from humans, bots fill it -->
@@ -106,9 +106,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
             <!-- Response time -->
             <div class="mb-[32px]">
-              <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333] mb-[8px]">回复时间</p>
+              <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333] mb-[8px]">回复速度</p>
               <p class="text-[14px] text-[#FFFFFF] font-normal leading-[1.6]">
-                一个工作日内回
+                工作日 24 小时内必回
               </p>
             </div>
 
@@ -185,11 +185,11 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         return;
       } else {
         const err = await res.json();
-        status.textContent = err.error || '出了点问题，再试一次。';
+        status.textContent = err.error || '发送失败，请稍后再试。';
         status.className = 'text-[13px] font-normal leading-[1.5] mt-[8px] text-[#CC3333]';
       }
     } catch {
-      status.textContent = '网络出了点问题，检查下连接再试。';
+      status.textContent = '网络连接异常，请检查后重试。';
       status.className = 'text-[13px] font-normal leading-[1.5] mt-[8px] text-[#CC3333]';
     }
 

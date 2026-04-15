@@ -4,7 +4,7 @@ import PageLayout from '../../layouts/PageLayout.astro';
 import Container from '../../components/ui/Container.astro';
 import SectionBar from '../../components/ui/SectionBar.astro';
 
-const allPosts = await getCollection('blog');
+const allPosts = await getCollection('blog-zh');
 const articles = allPosts
   .sort(() => Math.random() - 0.5)
   .map((post) => ({
@@ -20,7 +20,7 @@ const articles = allPosts
 
 <PageLayout
   title="行业观察 | TheRedScroll"
-  description="我们对中国社媒营销的观察、思考和一线经验。微信、小红书、抖音、微博的实战笔记。"
+  description="中国社媒营销的一线观察与实战笔记。微信、小红书、抖音、微博,我们怎么做、怎么想。"
   lang="zh"
 >
 
@@ -33,10 +33,10 @@ const articles = allPosts
           行业观察
         </p>
         <h1 class="text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[16px]">
-          我们在中国社媒上看到的、踩过的、想通的事
+          我们在中国社媒上看到的、踩过的、想明白的事
         </h1>
         <p class="text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] text-[var(--color-stone)]">
-          平台的动向、策略的拆解、一线真正跑出来的经验。
+          平台的新动向,策略的拆解,一线跑出来的真经验。
         </p>
       </div>
     </Container>
@@ -71,7 +71,7 @@ const articles = allPosts
                 {article.excerpt}
               </p>
               <p class="text-[12px] text-[var(--color-stone)] font-normal leading-[1.4]">
-                阅读 {article.readingTime} <span class="mx-[6px] text-[var(--color-warm-gray)]">|</span> {article.date}
+                阅读约 {article.readingTime} <span class="mx-[6px] text-[var(--color-warm-gray)]">|</span> {article.date}
               </p>
             </div>
           </a>

@@ -4,6 +4,7 @@ export interface NavItem {
   icon?: string;
   subtitle?: string;
   children?: NavItem[];
+  viewAllLabel?: string;
 }
 
 export const mainNav: NavItem[] = [
