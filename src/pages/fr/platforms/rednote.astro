@@ -6,35 +6,35 @@ import SectionHeading from '../../../components/ui/SectionHeading.astro';
 import Button from '../../../components/ui/Button.astro';
 
 const stats = [
-  { label: 'Utilisateurs actifs mensuels', value: '350M+', image: '/images/platforms/rednote-stats/monthly-active-users.png' },
-  { label: 'Vues quotidiennes de publications', value: '9.12B', image: '/images/platforms/rednote-stats/daily-post-views.png' },
-  { label: 'Requêtes de recherche par mois', value: '1B+', image: '/images/platforms/rednote-stats/monthly-search-queries.png' },
-  { label: 'Utilisateurs âgés de 18 à 35 ans', value: '70%', image: '/images/platforms/rednote-stats/users-aged-18-35.png' },
-  { label: 'Part du contenu produit par les utilisateurs', value: '90%', image: '/images/platforms/rednote-stats/user-generated-content.png' },
-  { label: 'Taux de conversion des marques internationales', value: '21.4%', image: '/images/platforms/rednote-stats/conversion-rate.png' },
-  { label: 'Temps passé chaque jour par utilisateur', value: '55 min', image: '/images/platforms/rednote-stats/daily-time-per-user.png' },
-  { label: 'Utilisateurs qui cherchent des conseils d\'achat chaque mois', value: '200M+', image: '/images/platforms/rednote-stats/purchase-advice-users.png' },
+  { label: 'Utilisateurs actifs chaque mois', value: '350M+', image: '/images/platforms/rednote-stats/monthly-active-users.png' },
+  { label: 'Vues de notes par jour', value: '9.12B', image: '/images/platforms/rednote-stats/daily-post-views.png' },
+  { label: 'Recherches effectuées chaque mois', value: '1B+', image: '/images/platforms/rednote-stats/monthly-search-queries.png' },
+  { label: 'Des utilisateurs ont entre 18 et 35 ans', value: '70%', image: '/images/platforms/rednote-stats/users-aged-18-35.png' },
+  { label: 'Du contenu créé par les utilisateurs eux-mêmes', value: '90%', image: '/images/platforms/rednote-stats/user-generated-content.png' },
+  { label: 'Taux de conversion pour les marques étrangères', value: '21.4%', image: '/images/platforms/rednote-stats/conversion-rate.png' },
+  { label: 'Minutes passées sur la plateforme chaque jour', value: '55 min', image: '/images/platforms/rednote-stats/daily-time-per-user.png' },
+  { label: 'Utilisateurs en quête de conseils d\'achat chaque mois', value: '200M+', image: '/images/platforms/rednote-stats/purchase-advice-users.png' },
 ];
 
 const whyEssential = [
   {
-    title: 'Le moteur des décisions d\'achat chinoises',
-    description: 'Plus de 60 % des utilisateurs attaquent par la barre de recherche, en quête d\'avis et de recommandations. Avant tout achat, RedNote reste le premier réflexe.',
+    title: 'Là où les Chinois prennent leurs décisions d\'achat',
+    description: 'Plus de 60 % des utilisateurs ouvrent la barre de recherche en premier. Ils cherchent des avis, des retours d\'expérience. RedNote, c\'est leur premier réflexe avant d\'acheter.',
     image: '/images/platforms/rednote-why/purchase-decision.png',
   },
   {
-    title: 'Sans confiance, pas de visibilité',
-    description: 'L\'algorithme récompense l\'authenticité et sanctionne la publicité déguisée. Sauvegardes et commentaires pèsent bien plus lourd que les simples "j\'aime".',
+    title: 'La confiance avant tout le reste',
+    description: 'L\'algorithme prime l\'authenticité et pénalise la pub déguisée. Une sauvegarde ou un commentaire pèse infiniment plus qu\'un simple "j\'aime".',
     image: '/images/platforms/rednote-why/trust-distribution.png',
   },
   {
-    title: 'Une audience au portefeuille garni',
-    description: 'Jeune, urbaine, aisée. Ancrée dans les villes de rang 1 et 2. Prête à payer la qualité.',
+    title: 'Une audience qui a les moyens de ses envies',
+    description: 'Jeune, urbaine, aisée. Concentrée dans les villes de rang 1 et 2. Elle sait ce qu\'elle veut et elle a de quoi payer.',
     image: '/images/platforms/rednote-why/spending-power.png',
   },
   {
-    title: 'Un commerce social qui tient tout le parcours',
-    description: 'Découvrir, comparer, tester, acheter. Tout se joue à l\'intérieur de l\'appli, d\'un bout à l\'autre.',
+    title: 'Du contenu à l\'achat, sans sortir de l\'appli',
+    description: 'Découvrir, comparer, tester, acheter. Tout le parcours se déroule à l\'intérieur. Aucune redirection, aucune friction.',
     image: '/images/platforms/rednote-why/social-commerce.png',
   },
 ];
@@ -42,7 +42,7 @@ const whyEssential = [
 const algorithm = [
   {
     title: 'Une diffusion par paliers',
-    description: 'Chaque nouvelle note est d\'abord testée auprès de 100 à 500 utilisateurs. Si l\'engagement décolle dans les 24 heures, la plateforme propulse le contenu vers des milliers, puis des centaines de milliers de vues, par étapes successives.',
+    description: 'Chaque nouvelle note est d\'abord exposée à 100 à 500 utilisateurs. Si l\'engagement décolle dans les 24 heures, la plateforme élargit la diffusion, par vagues successives, jusqu\'à des centaines de milliers de vues.',
     image: '/images/platforms/rednote-algorithm/staged-distribution.png',
     bg: '#F7F2EE',
     iconBg: '#E8E0D8',
@@ -52,7 +52,7 @@ const algorithm = [
   },
   {
     title: 'Le score CES',
-    description: 'Abonnements, 8 points. Commentaires et partages, 4 points chacun. "J\'aime" et sauvegardes, 1 point chacun. Seul l\'engagement profond fait décoller une note. Les "j\'aime" à eux seuls ne pèsent pas grand-chose.',
+    description: 'Un abonnement vaut 8 points. Un commentaire ou un partage, 4. Un "j\'aime" ou une sauvegarde, 1. Ce qui compte, c\'est l\'engagement profond. Accumuler des "j\'aime" ne mène nulle part.',
     image: '/images/platforms/rednote-algorithm/ces-scoring.png',
     bg: '#1A1A1A',
     iconBg: 'rgba(255,255,255,0.1)',
@@ -61,8 +61,8 @@ const algorithm = [
     icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 6-8"/></svg>`,
   },
   {
-    title: 'L\'authenticité, règle absolue',
-    description: 'Contenu trop commercial, faux avis, comportements automatisés : tout cela est sanctionné sans ménagement. Publier avec régularité et exigence reste la seule voie vers une visibilité qui dure.',
+    title: 'L\'authenticité comme règle du jeu',
+    description: 'Contenu trop commercial, faux avis, automatisation : la plateforme sanctionne sans prévenir. La seule visibilité qui tient dans le temps, c\'est celle que l\'on construit note après note, avec rigueur.',
     image: '/images/platforms/rednote-algorithm/authenticity-enforced.png',
     bg: '#CC3333',
     iconBg: 'rgba(255,255,255,0.2)',
@@ -71,8 +71,8 @@ const algorithm = [
     icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>`,
   },
   {
-    title: 'Un double moteur',
-    description: 'Chaque note joue sur deux tableaux : le fil Explorer qui recommande et la Recherche qui capte l\'intention. Les deux s\'optimisent ensemble, jamais l\'un sans l\'autre.',
+    title: 'Deux moteurs, une seule stratégie',
+    description: 'Chaque note travaille sur deux fronts : le fil Explorer qui recommande et la Recherche qui capte l\'intention d\'achat. L\'un nourrit l\'autre. On ne choisit pas entre les deux.',
     image: '/images/platforms/rednote-algorithm/dual-engine.png',
     bg: '#E8E0D8',
     iconBg: '#FFFFFF',
@@ -85,43 +85,43 @@ const algorithm = [
 const services = [
   {
     title: 'Ouverture et vérification du compte',
-    description: 'Inscription au Compte Professionnel (Blue V), traduction de la licence commerciale, dossier de marque, mise en conformité. Nous avalons la paperasse pour vous épargner les mois d\'attente.',
+    description: 'Inscription au Compte Professionnel (Blue V), traduction de la licence commerciale, constitution du dossier de marque, mise en conformité. Nous gérons la paperasse pour vous épargner des mois d\'attente.',
     result: 'Un compte RedNote vérifié, actif et prêt à publier.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/></svg>`,
     image: '/images/platforms/rednote-services/account-setup.png',
   },
   {
     title: 'Stratégie et production éditoriale',
-    description: 'Piliers éditoriaux, calendrier de parution, formats taillés pour la plateforme. Visuels générés avec HubStudio.ai. Tournages en conditions réelles sur le sol chinois. Rédaction en mandarin par nos rédacteurs chinois natifs, avec une vraie adaptation culturelle.',
-    result: 'Du contenu pensé pour la mécanique de RedNote, loin du simple recyclage d\'Instagram.',
+    description: 'Piliers éditoriaux, calendrier de parution, formats conçus pour la plateforme. Visuels produits avec HubStudio.ai. Tournages en Chine. Rédaction en mandarin par des natifs, avec une adaptation culturelle véritable.',
+    result: 'Du contenu pensé pour la mécanique de RedNote, pas pour Instagram.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/></svg>`,
     image: '/images/platforms/rednote-services/content-strategy.png',
   },
   {
     title: 'Campagnes KOL et KOC',
-    description: 'Un service complet via Pugongying, la plateforme officielle de RedNote. Sourcing des créateurs, traque des faux abonnés, co-création de contenu, reporting détaillé du ROI.',
-    result: 'Des collaborations avec des créateurs vérifiés et des chiffres de performance sans zone d\'ombre.',
+    description: 'Prise en charge complète via Pugongying, la régie officielle de RedNote. Sélection des créateurs, détection des faux abonnés, co-création de contenu, reporting précis du ROI.',
+    result: 'Des collaborations avec des créateurs vérifiés et des résultats sans zone d\'ombre.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
     image: '/images/platforms/rednote-services/kol-koc.png',
   },
   {
     title: 'Publicité payante',
-    description: 'In-Feed Ads, Search Ads, pilotage intégral de Juguang, Juguang Lite et Chengfeng côté e-commerce. Tests créatifs, optimisation des enchères, arbitrages en temps réel. Le budget média est facturé à part, sans la moindre majoration.',
-    result: 'Des campagnes qui tombent sur la bonne audience, avec un reporting de dépenses à livre ouvert.',
+    description: 'In-Feed Ads, Search Ads, pilotage complet de Juguang, Juguang Lite et Chengfeng côté e-commerce. Tests créatifs, ajustement des enchères, arbitrages en temps réel. Le budget média est facturé à part, au prix coûtant.',
+    result: 'Des campagnes ciblées, avec un reporting de dépenses à livre ouvert.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>`,
     image: '/images/platforms/rednote-services/paid-advertising.png',
   },
   {
     title: 'E-commerce et live commerce',
-    description: 'Configuration de la boutique in-app, notes interactives avec liens d\'achat, production des sessions en direct. Le live commerce pèse 90 % des ventes réalisées sans quitter RedNote.',
-    result: 'Une vitrine intégrée à RedNote, où le contenu mène le visiteur jusqu\'au panier.',
+    description: 'Mise en place de la boutique in-app, notes interactives avec liens d\'achat, production des sessions en direct. Le live commerce représente 90 % des ventes réalisées sans quitter RedNote.',
+    result: 'Une boutique intégrée à RedNote, où chaque note conduit l\'utilisateur jusqu\'au panier.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>`,
     image: '/images/platforms/rednote-services/ecommerce-live.png',
   },
   {
-    title: 'Analytique et veille sociale',
-    description: 'Tableaux de bord sur la croissance, l\'engagement, le classement dans les recherches, le ROI des campagnes. Surveillance de marque, analyse de sentiment, détection des tendances, suivi du terrain concurrentiel.',
-    result: 'Des rapports nets sur ce qui fonctionne et sur ce qui mérite d\'être ajusté.',
+    title: 'Analytique et veille',
+    description: 'Tableaux de bord sur la croissance, l\'engagement, le positionnement dans les recherches et le ROI des campagnes. Surveillance de marque, analyse de sentiment, détection de tendances, lecture du terrain concurrentiel.',
+    result: 'Des rapports nets sur ce qui fonctionne, et sur ce qui demande à être corrigé.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 6-8"/></svg>`,
     image: '/images/platforms/rednote-services/analytics-listening.png',
   },
@@ -130,108 +130,108 @@ const services = [
 const bestPractices = [
   {
     title: 'Écrivez pour RedNote, pas pour Instagram.',
-    description: 'Les notes détaillées, utiles, nourries d\'expérience sortent du lot. Tutoriels, avis francs et guides pas à pas surclassent largement les campagnes de marque trop léchées.',
+    description: 'Les notes denses, utiles, ancrées dans le vécu sortent du lot. Tutoriels, avis honnêtes et guides pratiques écrasent les campagnes de marque trop polies.',
   },
   {
-    title: 'Soignez l\'image de couverture et le titre.',
-    description: 'Tout se joue dans cet instant précis, entre le clic et le passage au suivant. Titres limpides, centrés sur le bénéfice, avec les bons mots-clés. Visuels nets, texte en surimpression compris.',
+    title: 'Soignez la couverture et le titre.',
+    description: 'Tout se joue dans les premières secondes. Titre clair, orienté bénéfice, avec les mots-clés qui comptent. Visuel propre, texte en surimpression lisible.',
   },
   {
-    title: 'Pensez recherche.',
-    description: 'RedNote fonctionne comme un moteur de recherche. Exploitez les mots-clés qui montent, calez vos titres sur les requêtes réelles et appuyez-vous sur l\'outil de suggestion de hashtags intégré à la plateforme.',
+    title: 'Pensez moteur de recherche.',
+    description: 'RedNote se comporte comme Google pour les achats. Repérez les mots-clés en hausse, calquez vos titres sur les vraies requêtes, exploitez l\'outil de suggestion de hashtags natif.',
   },
   {
-    title: 'Poussez aux sauvegardes et aux commentaires.',
-    description: 'Terminez chaque note par une question ou par une bonne raison de la garder en favori. Sauvegardes et commentaires nourrissent le score CES qui pilote la diffusion.',
+    title: 'Provoquez les sauvegardes et les commentaires.',
+    description: 'Terminez chaque note par une question ou une raison de la mettre en favori. Ces deux actions nourrissent le score CES qui commande la diffusion.',
   },
   {
-    title: 'Ne quittez jamais la plateforme.',
-    description: 'RedNote sanctionne les liens sortants. Gardez les utilisateurs dans l\'appli. Les boutiques in-app et les parcours internes convertissent bien mieux que les redirections externes.',
+    title: 'Restez dans l\'appli.',
+    description: 'RedNote pénalise les liens sortants. Maintenez l\'utilisateur à l\'intérieur. Une boutique in-app convertit bien mieux qu\'une redirection vers un site externe.',
   },
   {
-    title: 'Publiez avec régularité.',
-    description: 'Les comptes actifs plus de 180 jours d\'affilée profitent d\'un bonus de visibilité. Choisissez vos piliers éditoriaux, puis tenez la cadence sans faiblir.',
+    title: 'Tenez la cadence.',
+    description: 'Au-delà de 180 jours d\'activité continue, la plateforme accorde un bonus de visibilité. Définissez vos piliers éditoriaux, puis publiez sans vous arrêter.',
   },
 ];
 
 const industries = [
-  { title: 'Beauté et cosmétiques', description: 'La catégorie reine de la plateforme. Avis, tutoriels, décryptage d\'ingrédients.' },
-  { title: 'Mode et prêt-à-porter', description: 'Conseils de style, tendances, lookbooks saisonniers, seeding KOC.' },
-  { title: 'Luxe', description: 'Récits de marque ciselés pour une audience aisée, déjà à deux doigts de passer à l\'achat.' },
-  { title: 'Alimentation et boissons', description: 'Critiques de restaurants, recettes, dégustations en direct.' },
+  { title: 'Beauté et cosmétiques', description: 'La catégorie dominante de la plateforme. Avis produits, tutoriels de maquillage, décryptage d\'ingrédients.' },
+  { title: 'Mode et prêt-à-porter', description: 'Conseils de style, tendances du moment, lookbooks saisonniers, campagnes de seeding KOC.' },
+  { title: 'Luxe', description: 'Récits de marque ciselés pour une audience aisée, souvent à un pas de passer à l\'achat.' },
+  { title: 'Alimentation et boissons', description: 'Critiques de restaurants, recettes, dégustations filmées en direct.' },
   { title: 'Voyage et hôtellerie', description: 'Guides de destination, avis d\'hôtels. 64 % des voyageurs chinois préparent leur séjour sur RedNote.' },
-  { title: 'Santé et bien-être', description: 'Fitness, compléments alimentaires, conseils santé. Un secteur en pleine effervescence.' },
-  { title: 'B2B', description: 'Plus de 100 secteurs professionnels présents sur RedNote. Les décideurs y repèrent leurs fournisseurs et prestataires.' },
+  { title: 'Santé et bien-être', description: 'Fitness, compléments, conseils santé. L\'un des secteurs qui progresse le plus vite.' },
+  { title: 'B2B', description: 'Plus de 100 filières professionnelles représentées sur RedNote. Les décideurs s\'en servent pour identifier fournisseurs et prestataires.' },
 ];
 
 const steps = [
   {
     number: '01',
     title: 'Appel de cadrage.',
-    description: 'Votre marque, vos objectifs, votre degré de préparation au marché chinois. Pas de pitch commercial, seulement les bonnes questions.',
+    description: 'On parle de votre marque, de vos objectifs, de votre degré de préparation au marché chinois. Pas de discours commercial. Juste les bonnes questions.',
     icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>`,
   },
   {
     number: '02',
     title: 'Proposition commerciale.',
-    description: 'Périmètre arrêté, prix ferme, chaque livrable détaillé noir sur blanc. Vous savez exactement ce que vous obtenez, et ce que cela vous coûte, avant même d\'avoir signé.',
+    description: 'Périmètre fixé, prix ferme, chaque livrable détaillé noir sur blanc. Avant même de signer, vous savez exactement ce que vous obtenez et ce que ça vous coûte.',
     icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>`,
   },
   {
     number: '03',
     title: 'En ligne sous 2 semaines.',
-    description: 'Ouverture du compte, stratégie éditoriale, premières notes publiées. Quinze jours entre la signature et la parution de votre toute première note.',
+    description: 'Compte ouvert, stratégie posée, premières notes publiées. Quinze jours séparent la signature de votre toute première publication.',
     icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>`,
   },
 ];
 
 const faqs = [
   {
-    q: 'Où est basée votre équipe ?',
-    a: 'À Shanghai et à Hong Kong. Des rédacteurs chinois natifs, avec un accès en temps réel à toutes les grandes plateformes. Nous publions sur RedNote au quotidien, pilotons les comptes publicitaires depuis l\'intérieur de la plateforme et collaborons directement avec des KOL dans tout le pays. Ce n\'est pas du conseil à distance : nous sommes sur le terrain.',
+    q: 'Où se trouve votre équipe ?',
+    a: 'À Shanghai et à Hong Kong. Des rédacteurs chinois natifs, connectés en permanence aux grandes plateformes. Nous publions sur RedNote chaque jour, pilotons les comptes publicitaires depuis l\'intérieur et travaillons directement avec des KOL partout en Chine. Ce n\'est pas du conseil à distance.',
   },
   {
-    q: 'Peut-on investir RedNote sans entité juridique en Chine ?',
-    a: 'Oui. RedNote autorise les entreprises étrangères à ouvrir un Compte Professionnel (Blue V) sur la base d\'une licence commerciale traduite et d\'un dossier de marque. Nous orchestrons les formalités, le dépôt sur la plateforme et les échanges avec l\'équipe de validation de RedNote. La plupart des comptes sont opérationnels en moins de deux semaines.',
+    q: 'Peut-on être présent sur RedNote sans entité juridique en Chine ?',
+    a: 'Oui. RedNote permet aux entreprises étrangères d\'ouvrir un Compte Professionnel (Blue V) sur la base d\'une licence commerciale traduite et d\'un dossier de marque. Nous prenons en charge les formalités, le dépôt sur la plateforme et les échanges avec l\'équipe de validation de RedNote. La plupart des comptes sont actifs en moins de deux semaines.',
   },
   {
-    q: 'Au bout de combien de temps voit-on des résultats ?',
-    a: 'RedNote ne récompense pas la précipitation. Chaque nouveau compte traverse une phase d\'observation par l\'algorithme. Les deux à trois premiers mois servent à bâtir votre bibliothèque de contenus et à éduquer la plateforme sur votre catégorie. La publicité payante et les campagnes KOL peuvent, elles, générer du trafic dès la première semaine, le temps que la croissance organique prenne le relais.',
+    q: 'Au bout de combien de temps les résultats arrivent-ils ?',
+    a: 'RedNote ne récompense pas la précipitation. Chaque nouveau compte passe d\'abord par une phase d\'observation algorithmique. Les deux ou trois premiers mois permettent de construire votre catalogue de contenus et d\'apprendre à la plateforme qui vous êtes. La publicité payante et les campagnes KOL, elles, peuvent générer du trafic dès la première semaine, le temps que la croissance organique prenne le relais.',
   },
   {
     q: 'Que recevons-nous concrètement chaque mois ?',
-    a: 'Tout est noir sur blanc avant la signature. Publications, vidéos, campagnes publicitaires, activations KOL, rapports. Vous relisez et validez chaque contenu avant sa mise en ligne. Pas de zone grise. Pas de facture surprise en fin de mois.',
+    a: 'Tout est contractualisé avant la signature. Notes, vidéos, campagnes publicitaires, activations KOL, rapports mensuels. Vous relisez et validez chaque contenu avant sa mise en ligne. Pas de zone grise. Pas de mauvaise surprise en fin de mois.',
   },
   {
-    q: 'Comment se construit la tarification ?',
-    a: 'Un forfait mensuel fixe couvre l\'intégralité du périmètre convenu. Le budget média est facturé à part, au prix coûtant, et chaque ligne de dépense reste visible. Nous ne prenons aucune commission sur les achats média. Le montant inscrit dans la proposition, c\'est exactement celui que vous payez. Rien de plus.',
+    q: 'Comment fonctionne la tarification ?',
+    a: 'Un forfait mensuel fixe couvre l\'ensemble du périmètre convenu. Le budget média est facturé séparément, au prix coûtant, avec chaque ligne de dépense visible. Nous ne prenons aucune commission sur les achats média. Le montant de la proposition est le montant que vous payez.',
   },
   {
-    q: 'Qui produit le contenu, et qui le contrôle ?',
-    a: 'La stratégie et la rédaction sont l\'affaire de notre équipe basée à Shanghai. Les visuels générés par IA passent par HubStudio.ai, entraîné spécifiquement sur les lignes directrices de votre marque. Les prises de vue photo et vidéo se font en Chine même. Avant chaque publication, un éditeur chinois natif passe le contenu au crible : ton, pertinence culturelle, conformité à la plateforme.',
+    q: 'Qui produit le contenu, et qui en assure le contrôle ?',
+    a: 'La stratégie et la rédaction sont assurées par notre équipe de Shanghai. Les visuels générés par IA passent par HubStudio.ai, entraîné sur les lignes directrices de votre marque. Les prises de vue photo et vidéo sont réalisées en Chine. Avant chaque publication, un éditeur natif vérifie le contenu : ton, pertinence culturelle, conformité à la plateforme.',
   },
   {
-    q: 'Comment dénichez-vous les bons KOL pour notre marque ?',
-    a: 'Via Pugongying, la plateforme officielle de RedNote, qui référence plus de 100 000 créateurs vérifiés. Chaque KOL présélectionné passe par une vérification de l\'authenticité de son audience, une détection des faux abonnés et une évaluation de la qualité de son engagement. Nous croisons ensuite niche, ton éditorial et budget.',
+    q: 'Comment sélectionnez-vous les KOL pour notre marque ?',
+    a: 'Via Pugongying, la régie officielle de RedNote, qui référence plus de 100 000 créateurs vérifiés. Chaque KOL présélectionné fait l\'objet d\'une vérification d\'audience, d\'une détection de faux abonnés et d\'une évaluation de la qualité de l\'engagement. Nous croisons ensuite niche, ligne éditoriale et budget.',
   },
   {
     q: 'Pouvez-vous activer de la publicité RedNote pour une entreprise basée hors de Chine ?',
-    a: 'Oui, à une condition près. La régie Juguang de RedNote exige une entité juridique chinoise pour ouvrir un compte. Nous créons et pilotons donc les comptes publicitaires pour le compte de nos clients étrangers via notre structure locale. Vous recevez un rapport de dépenses hebdomadaire et une visibilité totale sur les performances.',
+    a: 'Oui, sous une condition. La régie Juguang de RedNote requiert une entité juridique chinoise pour ouvrir un compte publicitaire. Nous créons et pilotons ces comptes pour le compte de nos clients étrangers via notre structure locale. Vous recevez un rapport hebdomadaire et une visibilité totale sur les performances.',
   },
   {
-    q: 'Faut-il s\'engager sur une longue durée ?',
-    a: 'L\'engagement plancher est fixé à 3 mois. C\'est le minimum pour franchir la phase de rodage de l\'algorithme RedNote et réunir assez de données pour comprendre ce qui fonctionne vraiment. La plupart des clients prolongent dès que les courbes commencent à bouger.',
+    q: 'Quelle est la durée minimale d\'engagement ?',
+    a: 'Trois mois. C\'est le temps nécessaire pour traverser la phase de rodage de l\'algorithme et accumuler assez de données pour comprendre ce qui fonctionne. La plupart des clients prolongent dès que les premières courbes commencent à bouger.',
   },
   {
-    q: 'Nous ne parlons pas chinois. Est-ce un obstacle ?',
-    a: 'Aucunement. Toute la relation client se déroule en anglais. Appels stratégiques, rapports mensuels, validations de contenu, tout y passe. L\'équipe est entièrement bilingue. Vous gardez le cap sur votre marque, nous pilotons la plateforme en chinois.',
+    q: 'Nous ne parlons pas chinois. Est-ce un problème ?',
+    a: 'Non. Toute la relation client se déroule en anglais : appels stratégiques, rapports mensuels, validations de contenu. L\'équipe est entièrement bilingue. Vous vous concentrez sur votre marque, nous nous occupons de la plateforme.',
   },
 ];
 ---
 
 <PageLayout
   title="Agence marketing RedNote / Xiaohongshu | TheRedScroll"
-  description="Nous pilotons des comptes RedNote depuis Shanghai. Stratégie éditoriale, campagnes KOL, publicité payante, e-commerce et analytique. Périmètre ferme, prix ferme."
+  description="TheRedScroll pilote des comptes RedNote depuis Shanghai. Stratégie éditoriale, campagnes KOL, publicité payante, e-commerce, analytique. Périmètre clair, prix ferme."
   lang="fr"
 >
   <!-- Hero -->
@@ -249,10 +249,10 @@ const faqs = [
           Marketing RedNote
         </p>
         <h1 class="text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] text-[#FFFFFF] mb-[8px]">
-          La plateforme chinoise de la découverte produit. Plus de 350 millions d'utilisateurs. Le premier réflexe avant d'acheter.
+          La plateforme chinoise de la découverte produit. 350 millions d'utilisateurs. Le premier réflexe avant d'acheter.
         </h1>
         <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal mb-[24px]">
-          Nous ne parlons pas de RedNote. Nous y publions, chaque jour, depuis Shanghai.
+          Nous ne parlons pas de RedNote depuis l'extérieur. Nous y publions chaque jour, depuis Shanghai.
         </p>
         <Button variant="primary" href="/fr/contact">Prendre rendez-vous</Button>
       </div>
@@ -266,10 +266,10 @@ const faqs = [
         <div class="max-w-[560px]">
           <SectionBar />
           <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[8px]">
-            Ce ne sont pas des chiffres pour épater la galerie. C'est ici que se tranchent les décisions d'achat.
+            Ce ne sont pas des chiffres pour impressionner. C'est là que les décisions d'achat se prennent.
           </h2>
           <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
-            RedNote en quelques chiffres.
+            RedNote en chiffres.
           </p>
         </div>
         <Button variant="primary" href="/fr/contact" class="shrink-0">Prendre rendez-vous</Button>
@@ -307,7 +307,7 @@ const faqs = [
           <SectionBar />
         </div>
         <SectionHeading overline="Pourquoi RedNote est incontournable">
-          Sans présence sur RedNote, votre marque disparaît pile à l'instant où le consommateur chinois choisit ce qu'il va acheter.
+          Sans présence sur RedNote, votre marque est absente au moment précis où le consommateur chinois décide ce qu'il va acheter.
         </SectionHeading>
       </div>
 
@@ -328,7 +328,7 @@ const faqs = [
       </div>
 
       <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] mt-[24px] text-center max-w-[680px] mx-auto">
-        RedNote, ou Xiaohongshu, c'est l'endroit où les consommateurs chinois se renseignent, comparent les marques et arrêtent leurs décisions d'achat. Contenu social, confiance communautaire, commerce in-app, le tout réuni sur une seule plateforme.
+        RedNote, ou Xiaohongshu, c'est là que les consommateurs chinois se renseignent, comparent et tranchent. Contenu communautaire, confiance entre pairs, commerce in-app : tout coexiste sur une seule plateforme.
       </p>
     </Container>
   </section>
@@ -341,7 +341,7 @@ const faqs = [
           <SectionBar />
         </div>
         <SectionHeading overline="Comment fonctionne l'algorithme">
-          Comprendre la mécanique de diffusion, c'est tout l'écart entre 300 vues et 300 000.
+          Comprendre la mécanique de diffusion, c'est la différence entre 300 vues et 300 000.
         </SectionHeading>
       </div>
 
@@ -379,7 +379,7 @@ const faqs = [
           <SectionBar />
         </div>
         <SectionHeading overline="Ce que nous faisons sur RedNote">
-          Six prestations, chacune adossée à un livrable concret.
+          Six prestations. Chacune avec un livrable précis, pas une promesse.
         </SectionHeading>
       </div>
 
@@ -477,13 +477,13 @@ const faqs = [
       <div class="bg-[#1A1A1A] rounded-[12px] py-[48px] px-[48px] max-[640px]:px-[20px] max-[640px]:py-[32px]">
         <div class="mb-[40px] max-[640px]:mb-[32px]">
           <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">
-            Remontées du terrain
+            Du terrain, pas du manuel
           </p>
           <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF]">
-            Les bonnes pratiques sur RedNote
+            Ce qui fonctionne vraiment sur RedNote
           </h2>
           <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.5] mt-[8px] max-w-[680px]">
-            Nous publions sur RedNote depuis la Chine, jour après jour. Ces conseils sortent de la pratique quotidienne, pas d'une note de synthèse.
+            Nous publions sur RedNote depuis la Chine, chaque jour. Ces observations viennent de la pratique, pas d'un rapport de cabinet.
           </p>
         </div>
 
@@ -508,8 +508,8 @@ const faqs = [
     <Container>
       <div class="mb-[48px] max-[640px]:mb-[32px]">
         <SectionBar />
-        <SectionHeading overline="Les secteurs que nous accompagnons sur RedNote">
-          De la beauté au B2B. Chaque secteur impose sa propre stratégie, sans exception.
+        <SectionHeading overline="Les secteurs que nous traitons sur RedNote">
+          De la beauté au B2B. Chaque secteur a ses propres codes, et chacun exige une stratégie distincte.
         </SectionHeading>
       </div>
 
@@ -539,7 +539,7 @@ const faqs = [
               Questions fréquentes
             </h2>
             <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
-              Tout ce qu'il faut savoir avant de lancer votre marque sur RedNote avec TheRedScroll.
+              Ce que nos clients nous demandent avant de démarrer sur RedNote avec TheRedScroll.
             </p>
           </div>
         </div>
@@ -586,7 +586,7 @@ const faqs = [
           Pour démarrer
         </p>
         <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF]">
-          De zéro à un compte RedNote actif, deux semaines suffisent.
+          De zéro à un compte RedNote opérationnel. Deux semaines suffisent.
         </h2>
       </div>
 
