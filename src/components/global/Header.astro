@@ -26,7 +26,7 @@ const langLabels: Record<string, string> = { en: 'EN', fr: 'FR', zh: '中文' };
     </a>
 
     <!-- Desktop nav -->
-    <div class="hidden min-[641px]:flex items-center gap-[32px]">
+    <div class="hidden min-[1024px]:flex items-center gap-[16px] xl:gap-[24px] 2xl:gap-[32px]">
       {nav.map((link) => (
         link.children ? (
           <div class="relative" data-dropdown>
@@ -97,7 +97,7 @@ const langLabels: Record<string, string> = { en: 'EN', fr: 'FR', zh: '中文' };
         ))}
       </div>
 
-      <Button variant="primary" href={contactHref}>
+      <Button variant="primary" href={contactHref} class="whitespace-nowrap !px-[18px] xl:!px-[24px] 2xl:!px-[28px]">
         {t('nav.bookCall', lang)}
       </Button>
     </div>
@@ -105,7 +105,7 @@ const langLabels: Record<string, string> = { en: 'EN', fr: 'FR', zh: '中文' };
     <!-- Mobile hamburger -->
     <button
       id="mobile-menu-toggle"
-      class="min-[641px]:hidden flex flex-col justify-center gap-[6px] w-[44px] h-[44px] items-center cursor-pointer bg-transparent border-none p-[12px]"
+      class="min-[1024px]:hidden flex flex-col justify-center gap-[6px] w-[44px] h-[44px] items-center cursor-pointer bg-transparent border-none p-[12px]"
       aria-label="Open menu"
     >
       <span class="block w-full h-[2px] bg-[#FFFFFF] rounded-full"></span>
