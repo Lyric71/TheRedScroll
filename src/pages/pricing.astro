@@ -114,7 +114,7 @@ const addOnPlatforms = [
   <main class="pt-[60px] max-[640px]:pt-[52px]">
 
     <!-- Hero -->
-    <section class="relative w-full bg-[#1A1A1A] rounded-none overflow-hidden py-[80px] max-[640px]:py-[48px] px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px]">
+    <section class="relative w-full bg-[#1A1A1A] rounded-none overflow-hidden py-[80px] max-[1024px]:py-[64px] max-[640px]:py-[48px] px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px]">
       <div class="absolute inset-0 bg-cover bg-center opacity-[0.15]" style="background-image: url('/images/hero/pricing-bg.png')" aria-hidden="true"></div>
       <div class="relative z-[1] max-w-[800px] mx-auto text-center">
         <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">Pricing</p>
@@ -136,7 +136,7 @@ const addOnPlatforms = [
         </div>
 
         <!-- Desktop comparison table -->
-        <div class="max-[640px]:hidden overflow-x-auto">
+        <div class="max-[1024px]:hidden overflow-x-auto">
           <table class="w-full border-collapse">
             <thead>
               <tr>
@@ -293,7 +293,7 @@ const addOnPlatforms = [
         </div>
 
         <!-- Mobile: stacked cards with full features (shown only on mobile) -->
-        <div class="hidden max-[640px]:flex flex-col gap-[16px]">
+        <div class="hidden max-[1024px]:flex flex-col gap-[16px]">
           {packages.map((pkg) => {
             const dark = pkg.highlighted;
             const textPrimary = dark ? 'text-[#FFFFFF]' : 'text-[#1A1A1A]';
@@ -441,7 +441,7 @@ const addOnPlatforms = [
     <!-- Advertising -->
     <section class="mt-[96px] max-[640px]:mt-[64px]">
       <Container>
-        <div class="bg-[#1A1A1A] rounded-[12px] p-[48px] max-[640px]:p-[20px]">
+        <div class="bg-[#1A1A1A] rounded-[12px] p-[48px] max-[1024px]:p-[32px] max-[640px]:p-[20px]">
           <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333] mb-[8px]">Advertising</p>
           <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[8px]">China platform ads</h2>
           <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] mb-[32px] max-w-[680px]">
@@ -541,7 +541,7 @@ const addOnPlatforms = [
     <!-- Content Production -->
     <section class="mt-[96px] max-[640px]:mt-[64px]">
       <Container>
-        <div class="bg-[#CC3333] rounded-[12px] p-[48px] max-[640px]:p-[20px] flex items-center justify-between max-[640px]:flex-col max-[640px]:items-start gap-[32px]">
+        <div class="bg-[#CC3333] rounded-[12px] p-[48px] max-[1024px]:p-[32px] max-[640px]:p-[20px] flex items-center justify-between max-[640px]:flex-col max-[640px]:items-start gap-[32px]">
           <div class="max-w-[560px]">
             <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[rgba(255,255,255,0.7)] mb-[8px]">Content production</p>
             <h3 class="text-[22px] max-[640px]:text-[18px] font-medium leading-[1.25] text-[#FFFFFF] mb-[8px]">

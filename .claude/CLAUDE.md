@@ -27,6 +27,21 @@ Key constraints from the guide:
 - Never publish package tier names or specific prices in public content
 - Every piece of content must pass the expertise test (section 3.3)
 
+## MANDATORY: Translation Guide
+**Read `TRANSLATION_GUIDE.md` at the project root before editing, drafting, translating, or fixing any non-English content.**
+Applies to anything under `src/pages/fr/`, `src/pages/zh/` (and `src/pages/de/`, `src/pages/es/` once live), all non-English strings in `src/i18n/`, and every non-English alt text, meta description, button label, error message, or blog post. No exceptions.
+
+Key constraints from the guide:
+- Start from the existing locale page, never retranslate the full page from English
+- Two-step process for any new or rewritten section: humanized translation, then mandatory native rewrite in-language
+- Native journalistic register per language (Le Monde for FR, 财经 / 36氪 for ZH, El País for ES, FAZ / Handelsblatt for DE)
+- Diacritics are mandatory: French accents (é è ê à ç…), Spanish ñ + ¿ ¡, German ß + umlauts
+- ZH uses full-width punctuation 。 ， ： ； inside Chinese sentences
+- Never use em dashes (U+2014) in any locale, including English
+- Brand and product names stay canonical (TheRedScroll stays TheRedScroll in every locale)
+- Single-locale default: copy edits apply only to the file referenced. Offer "Want me to propagate this to FR/ZH (and DE/ES once live)?" but never propagate without explicit approval. This overrides the auto-memory "always update translations" rule for content changes; shared infrastructure (CSS, components, config) still applies to all locales by nature
+- Slugs under non-English locales must be in the target language, lowercase, hyphenated, diacritics stripped. Never silently rename an existing slug, always flag and propose a redirect plan
+
 ## Tech Stack
 - **Framework:** Astro 5.x (static site generation)
 - **Styling:** Tailwind CSS 4.x

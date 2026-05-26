@@ -11,7 +11,21 @@ interface Props {
 const { lang = 'en' } = Astro.props;
 const lp = (path: string) => localizedPath(path, lang);
 
-const text = lang === 'zh' ? {
+const text = lang === 'de' ? {
+  overline: 'Warum TheRedScroll',
+  heading: 'Das klassische Agenturmodell hat ausgedient. Wir machen es anders.',
+  problemLabel: 'Der Befund',
+  problemP1: 'Plattformen ziehen davon. Übersetzte Inhalte bleiben hängen. Agenturen rechnen hoch und erklären wenig. Performance lässt sich kaum sauber messen.',
+  problemP2: 'Ob Sie zum ersten Mal nach China gehen, schon im Markt sind oder als chinesische Marke skalieren wollen: ohne das richtige Team bleibt Wachstum in den sozialen Netzwerken Glückssache.',
+  fixLabel: 'Unsere Antwort',
+  fixes: [
+    { title: 'Klar definierter Umfang.', description: 'Jedes Deliverable steht vor Vertragsschluss fest. Keine Grauzonen.' },
+    { title: 'Fester Preis.', description: 'Ein Preis. Keine versteckten Kosten, kein Scope-Creep. Von 37 verglichenen Agenturen tut das keine einzige.' },
+    { title: 'Team vor Ort.', description: 'Shanghai und Hongkong. Muttersprachler. Direkter Plattform-Zugriff. Kulturelle Lesart aus erster Hand.' },
+    { title: 'KI für die Produktion, Köpfe für die Entscheidung.', description: 'Schnellere Auslieferung. Niedrigere Kosten. Die Strategie liegt zu 100 Prozent in menschlicher Hand.' },
+  ],
+  cta: 'Gespräch vereinbaren',
+} : lang === 'zh' ? {
   overline: '为什么选 TheRedScroll',
   heading: '传统代理那一套早就跟不上了。我们换了另一条路。',
   problemLabel: '问题在哪',
@@ -25,18 +39,32 @@ const text = lang === 'zh' ? {
     { title: 'AI 负责产能，人负责判断', description: '出片更快、成本更低。策略判断始终留在人手上。' },
   ],
   cta: '预约通话',
+} : lang === 'es' ? {
+  overline: 'Por qué TheRedScroll',
+  heading: 'El modelo clásico de agencia ya no aguanta. Hemos cambiado la regla.',
+  problemLabel: 'El problema',
+  problemP1: 'Las plataformas corren. Los contenidos traducidos tropiezan. Las agencias cobran caro y explican poco. Los resultados se miden a duras penas.',
+  problemP2: 'Da igual si aterriza por primera vez en China, si ya está en el país, o si es una marca china escalando: sin un equipo a la altura, el crecimiento en redes es lotería.',
+  fixLabel: 'Cómo lo resolvemos',
+  fixes: [
+    { title: 'Alcance por escrito.', description: 'Cada entregable se cierra antes de firmar. Sin zonas grises.' },
+    { title: 'Precio cerrado.', description: 'Un precio. Sin extras, sin desvíos. De las 37 agencias que hemos analizado, ninguna lo ofrece.' },
+    { title: 'Equipo sobre el terreno.', description: 'Shanghái y Hong Kong. Nativos. Acceso directo a las plataformas. Lectura cultural de primera mano.' },
+    { title: 'IA para producir, personas para decidir.', description: 'Más rapidez, menos coste. La estrategia siempre la marca el equipo humano.' },
+  ],
+  cta: 'Reservar una llamada',
 } : lang === 'fr' ? {
   overline: 'Pourquoi TheRedScroll',
-  heading: 'Le modèle classique des agences ne marche plus. On a construit autre chose.',
+  heading: 'Le modèle classique des agences a vécu. Nous en proposons un autre.',
   problemLabel: 'Le constat',
-  problemP1: 'Les plateformes bougent vite. Le contenu ne se traduit pas. Les agences coûtent cher et restent opaques. Les résultats sont difficiles à mesurer.',
-  problemP2: 'Que vous débarquiez en Chine, que vous y soyez déjà installé ou que vous soyez une marque chinoise en pleine croissance, grandir sur les réseaux sans la bonne équipe relève du pari.',
-  fixLabel: 'Ce qu\'on fait autrement',
+  problemP1: 'Les plateformes avancent vite. Les contenus traduits trébuchent. Les agences facturent beaucoup et expliquent peu. La performance se laisse difficilement mesurer.',
+  problemP2: 'Première implantation en Chine, marque déjà sur place ou enseigne chinoise en pleine accélération : sans la bonne équipe, la croissance sociale relève du pari.',
+  fixLabel: 'Notre réponse',
   fixes: [
-    { title: 'Un cadre clair.', description: 'Chaque livrable est défini avant la signature. Pas de zone grise.' },
-    { title: 'Un prix fixe.', description: 'Un seul prix. Pas de frais cachés. Pas de dépassement. Sur les 37 agences que nous avons étudiées, aucune ne propose cela.' },
-    { title: 'Une équipe sur place.', description: 'Shanghai et Hong Kong. Sinophones natifs. Accès en temps réel aux plateformes. Maîtrise culturelle réelle.' },
-    { title: 'Du contenu augmenté par l\'IA.', description: 'Production plus rapide. Coûts en baisse. La stratégie, elle, reste 100 % humaine.' },
+    { title: 'Un cadre précis.', description: 'Chaque livrable est arrêté avant signature. Aucune zone grise.' },
+    { title: 'Un tarif ferme.', description: 'Un seul prix. Aucun frais caché, aucune dérive. Sur les 37 agences que nous avons étudiées, aucune ne s\'y engage.' },
+    { title: 'Une équipe locale.', description: 'Shanghai et Hong Kong. Locuteurs natifs. Accès direct aux plateformes. Compétence culturelle de premier rang.' },
+    { title: 'L\'IA comme accélérateur.', description: 'Production accélérée, coûts allégés. La décision stratégique demeure entièrement entre les mains de nos consultants.' },
   ],
   cta: 'Prendre rendez-vous',
 } : {
@@ -58,7 +86,7 @@ const text = lang === 'zh' ? {
 
 <section class="mt-[64px] max-[640px]:mt-[40px]">
   <Container>
-    <div class="relative rounded-[12px] py-[48px] px-[48px] max-[640px]:px-[20px] max-[640px]:py-[32px] overflow-hidden bg-[#1A1A1A]">
+    <div class="relative rounded-[12px] py-[48px] px-[48px] max-[1024px]:px-[32px] max-[1024px]:py-[40px] max-[640px]:px-[20px] max-[640px]:py-[32px] overflow-hidden bg-[#1A1A1A]">
       <!-- Background image -->
       <div class="absolute inset-0 bg-cover bg-center opacity-[0.15]" style="background-image: url('/images/hero/why-theredscroll-bg.png')" aria-hidden="true"></div>
       <div class="relative z-[1]">

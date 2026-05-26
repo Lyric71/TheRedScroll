@@ -12,7 +12,38 @@ interface Props {
 const { lang = 'en' } = Astro.props;
 const lp = (path: string) => localizedPath(path, lang);
 
-const pillars = lang === 'zh' ? [
+const pillars = lang === 'de' ? [
+  {
+    title: 'Zielgruppe.',
+    description: 'Eine Milliarde Nutzer, verteilt auf Dutzende Plattformen, jede mit eigenen Regeln. Erst die Zielgruppe definieren, dann den Kanal wählen. In umgekehrter Reihenfolge wird es teuer.',
+    stat: '1B+', statLabel: 'Nutzer',
+    image: '/images/ecosystem/audience.png',
+  },
+  {
+    title: 'Content.',
+    description: 'Was auf Douyin viral geht, geht auf WeChat unter. Jede Plattform hat ihren eigenen Takt und ihre eigene Sprache. Wir produzieren für jede einzeln.',
+    stat: '18+', statLabel: 'Plattformen',
+    image: '/images/ecosystem/content.png',
+  },
+  {
+    title: 'Influencer.',
+    description: 'KOLs und KOCs steuern Kaufentscheidungen sicherer als klassische Werbung. Richtiges Profil, richtige Plattform, richtiger Zeitpunkt. Der Rest verpufft.',
+    stat: '80%', statLabel: 'vertrauen KOLs',
+    image: '/images/ecosystem/influencers.png',
+  },
+  {
+    title: 'Plattformen.',
+    description: 'WeChat, Douyin, RedNote, Weibo, dazu vierzehn weitere Netzwerke. Die Algorithmen ändern sich Monat für Monat. Wer mithalten will, braucht ein Team, das täglich dranbleibt.',
+    stat: '14+', statLabel: 'weitere Plattformen',
+    image: '/images/ecosystem/platforms.png',
+  },
+  {
+    title: 'Commerce.',
+    description: 'In China wird gekauft, ohne den Feed zu verlassen. Soziale Netzwerke dienen nicht der Produktentdeckung, sondern dem Verkauf. Content macht direkt die Kasse.',
+    stat: '3.5T', statLabel: 'RMB GMV Douyin',
+    image: '/images/ecosystem/commerce.png',
+  },
+] : lang === 'zh' ? [
   {
     title: '人群',
     description: '十亿用户散在几十个平台，每个圈层都有自己的规则。先把人找准，再挑战场。顺序反了，预算白烧。',
@@ -46,31 +77,31 @@ const pillars = lang === 'zh' ? [
 ] : lang === 'fr' ? [
   {
     title: 'Audience.',
-    description: 'Un milliard d\'utilisateurs. Des dizaines de plateformes. Toutes différentes. Trouvez d\'abord votre audience. Le choix de la plateforme vient ensuite.',
+    description: 'Un milliard d\'internautes répartis sur des dizaines de plateformes, chacune avec ses codes. La cible se définit avant le canal. L\'inverse coûte cher.',
     stat: '1B+', statLabel: 'utilisateurs',
     image: '/images/ecosystem/audience.png',
   },
   {
     title: 'Contenu.',
-    description: 'Ce qui cartonne sur Douyin tombe à plat sur WeChat. Chaque plateforme a ses codes, sa langue, son rythme. On crée pour chacune.',
+    description: 'Un format viral sur Douyin passe inaperçu sur WeChat. Chaque plateforme impose son rythme et son écriture. Nous produisons sur mesure pour chacune.',
     stat: '18+', statLabel: 'plateformes',
     image: '/images/ecosystem/content.png',
   },
   {
     title: 'Influenceurs.',
-    description: 'Les KOL et KOC pèsent plus sur l\'achat que n\'importe quelle publicité. Le bon profil, la bonne plateforme, le bon moment. Le reste, c\'est du gâchis.',
+    description: 'Les KOL et les KOC orientent la décision d\'achat plus sûrement que la publicité classique. Bon profil, bonne plateforme, bon moment. Le reste relève du gaspillage.',
     stat: '80%', statLabel: 'font confiance aux KOL',
     image: '/images/ecosystem/influencers.png',
   },
   {
     title: 'Plateformes.',
-    description: 'WeChat, Douyin, RedNote, Weibo et 14 autres. Les algorithmes changent chaque mois. Il faut une équipe qui les pratique au quotidien.',
+    description: 'WeChat, Douyin, RedNote, Weibo, plus quatorze autres réseaux. Les algorithmes évoluent chaque mois. Suivre cette cadence exige une équipe présente au jour le jour.',
     stat: '14+', statLabel: 'autres plateformes',
     image: '/images/ecosystem/platforms.png',
   },
   {
     title: 'Commerce.',
-    description: 'En Chine, on achète directement sur les réseaux sociaux. Ce n\'est pas un lieu de consultation, c\'est un lieu de vente. Contenu et commerce ne font qu\'un.',
+    description: 'En Chine, l\'achat se conclut sans quitter le fil. Les réseaux sociaux ne servent pas à découvrir un produit, ils servent à le vendre. Le contenu fait directement la caisse.',
     stat: '3.5T', statLabel: 'RMB GMV Douyin',
     image: '/images/ecosystem/commerce.png',
   },
@@ -107,13 +138,21 @@ const pillars = lang === 'zh' ? [
   },
 ];
 
-const sectionText = lang === 'zh' ? {
+const sectionText = lang === 'de' ? {
+  heading: 'Chinas soziale Netzwerke sind kein Kanal. Sie sind ein eigenes Ökosystem.',
+  sub: 'Zielgruppe, Content, Influencer, Plattformen, Commerce: alles greift ineinander. Auf einer Achse allein gewinnt niemand.',
+  cta: 'Gespräch vereinbaren',
+} : lang === 'es' ? {
+  heading: 'Las redes sociales chinas no son un canal. Son un ecosistema entero.',
+  sub: 'Audiencia, contenido, influencers, plataformas y comercio se sostienen mutuamente. Ningún eje funciona por separado.',
+  cta: 'Reservar una llamada',
+} : lang === 'zh' ? {
   heading: '中国社媒不是一个渠道，而是一整套生意。',
   sub: '人群、内容、达人、平台、电商，五环相扣。单点猛砸做不起来，整条链路必须一起跑。',
   cta: '预约通话',
 } : lang === 'fr' ? {
-  heading: 'Les réseaux sociaux chinois ne sont pas un canal. C\'est un monde à part entière.',
-  sub: 'Audience, contenu, influenceurs, plateformes et commerce. Tout est lié. On ne gagne pas sur un axe sans tenir les autres.',
+  heading: 'Les réseaux sociaux chinois ne forment pas un canal. Ils dessinent un écosystème entier.',
+  sub: 'Audience, contenu, influenceurs, plateformes, commerce : tout se tient. Aucun axe ne fonctionne sans les autres.',
   cta: 'Prendre rendez-vous',
 } : {
   heading: 'Chinese social media is not a channel. It\'s an ecosystem.',

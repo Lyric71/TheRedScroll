@@ -19,11 +19,11 @@ const text = {
     cta2: 'See our services',
   },
   fr: {
-    headline: 'On fait grandir votre marque sur les réseaux chinois.',
-    sub: 'Plus d\'abonnés. Plus d\'interactions. Plus de résultats.',
-    tagline: 'Cadre défini. Prix fixe. Aucune mauvaise surprise.',
+    headline: 'Votre marque s\'installe sur les réseaux sociaux chinois.',
+    sub: 'Une audience qui s\'élargit. Des conversations qui prennent. Des ventes qui suivent.',
+    tagline: 'Périmètre verrouillé, tarif convenu d\'emblée, aucun extra en cours de route.',
     cta1: 'Prendre rendez-vous',
-    cta2: 'Découvrir nos services',
+    cta2: 'Voir nos services',
   },
   zh: {
     headline: '中国社媒这件事，我们替你把品牌做起来。',
@@ -31,6 +31,20 @@ const text = {
     tagline: '范围写进合同，一口价到底，不会再来第二张账单。',
     cta1: '预约通话',
     cta2: '查看服务',
+  },
+  de: {
+    headline: 'Ihre Marke wird in Chinas sozialen Netzwerken sichtbar.',
+    sub: 'Reichweite, die wächst. Communities, die mitreden. Verkäufe, die ankommen.',
+    tagline: 'Klar definierter Umfang, von Anfang an festgelegter Preis, unterwegs keine Nachforderungen.',
+    cta1: 'Gespräch vereinbaren',
+    cta2: 'Leistungen ansehen',
+  },
+  es: {
+    headline: 'Su marca toma posición en las redes sociales chinas.',
+    sub: 'Una audiencia que se amplía. Conversaciones que prenden. Ventas que llegan.',
+    tagline: 'Alcance cerrado, tarifa pactada desde el inicio, sin extras por el camino.',
+    cta1: 'Reservar una llamada',
+    cta2: 'Ver nuestros servicios',
   },
 }[lang];
 ---
@@ -46,14 +60,14 @@ const text = {
   <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.82]" aria-hidden="true"></div>
 
   <!-- Content -->
-  <div class="relative z-[1] max-w-[1200px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[640px]:pt-[112px] max-[640px]:pb-[56px]">
+  <div class="relative z-[1] max-w-[1200px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[1024px]:pt-[128px] max-[1024px]:pb-[72px] max-[640px]:pt-[112px] max-[640px]:pb-[56px]">
     <div class="grid grid-cols-[1fr_1fr] max-[1024px]:grid-cols-1 gap-[48px] items-center">
       <!-- Left: text -->
       <div>
         <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
           TheRedScroll
         </p>
-        <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        <h1 class="text-[#FFFFFF] text-[48px] max-[1024px]:text-[40px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
           {text.headline}
         </h1>
         <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[12px]">

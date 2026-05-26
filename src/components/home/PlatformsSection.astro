@@ -13,7 +13,28 @@ interface Props {
 const { lang = 'en' } = Astro.props;
 const lp = (path: string) => localizedPath(path, lang);
 
-const platforms = lang === 'zh' ? [
+const platforms = lang === 'de' ? [
+  {
+    name: 'WeChat', chineseName: '微信', brandColor: '#07C160',
+    logo: '/images/platforms/wechat-logo.svg', href: lp('/platforms/wechat'),
+    description: 'Die Super-App, ohne die in China kein Tag vergeht. Official Accounts, Moments, Mini Programs, WeCom. Wer sich auf eine einzige Plattform festlegen müsste, käme an dieser nicht vorbei.',
+  },
+  {
+    name: 'RedNote', chineseName: '小红书', brandColor: '#FF2442',
+    logo: '/images/platforms/rednote-logo.svg', href: lp('/platforms/rednote'),
+    description: 'Das Notizbuch, in das chinesische Konsumenten vor fast jedem Kauf schauen. Reviews, Tutorials, Shopping-Posts. Erinnert an Instagram, nur dass hier tatsächlich gekauft wird.',
+  },
+  {
+    name: 'Douyin', chineseName: '抖音', brandColor: '#010101',
+    logo: '/images/platforms/douyin-logo.svg', href: lp('/platforms/douyin'),
+    description: 'Kurzvideo trifft Live-Commerce. Riesige Reichweite, kurzer Weg vom Inhalt zum Kauf. Marken, die den Algorithmus knacken, sehen Ergebnisse binnen weniger Wochen.',
+  },
+  {
+    name: 'Weibo', chineseName: '微博', brandColor: '#E6162D',
+    logo: '/images/platforms/weibo-logo.svg', href: lp('/platforms/weibo'),
+    description: 'Bühne für Massenreichweite und PR. Trendthemen, Celebrity-Kooperationen, Nachrichtenzyklen. Wenn ein Markenname binnen Stunden quer durchs Land soll, führt der Weg nach wie vor über Weibo.',
+  },
+] : lang === 'zh' ? [
   {
     name: '微信', chineseName: '国民超级应用', brandColor: '#07C160',
     logo: '/images/platforms/wechat-logo.svg', href: lp('/platforms/wechat'),
@@ -34,26 +55,47 @@ const platforms = lang === 'zh' ? [
     logo: '/images/platforms/weibo-logo.svg', href: lp('/platforms/weibo'),
     description: '大众传播和公关的主阵地。热搜、明星合作、话题舆情，要让品牌名一夜传遍全国，至今没有比微博更快的平台。',
   },
-] : lang === 'fr' ? [
+] : lang === 'es' ? [
   {
     name: 'WeChat', chineseName: '微信', brandColor: '#07C160',
     logo: '/images/platforms/wechat-logo.svg', href: lp('/platforms/wechat'),
-    description: 'La super-application chinoise. Comptes officiels, Moments, Mini Programs, WeCom. S\'il ne fallait choisir qu\'une seule plateforme en Chine, ce serait celle-là.',
+    description: 'La superapp que marca el día a día en China. Cuentas oficiales, Moments, Mini Programs, WeCom. Si solo cabe una plataforma, es esta.',
   },
   {
     name: 'RedNote', chineseName: '小红书', brandColor: '#FF2442',
     logo: '/images/platforms/rednote-logo.svg', href: lp('/platforms/rednote'),
-    description: 'C\'est là que les consommateurs chinois se renseignent avant d\'acheter. Avis, tutoriels, publications marchandes. Souvent comparée à Instagram, sauf qu\'ici les gens achètent vraiment.',
+    description: 'El cuaderno donde el consumidor chino mira antes de comprar prácticamente cualquier cosa. Reseñas, tutoriales, posts shoppable. Suena a Instagram, pero aquí la conversión es real.',
   },
   {
     name: 'Douyin', chineseName: '抖音', brandColor: '#010101',
     logo: '/images/platforms/douyin-logo.svg', href: lp('/platforms/douyin'),
-    description: 'La vidéo courte croise le commerce en direct. La portée est considérable, le chemin entre un contenu et une vente très court. Les marques qui maîtrisent Douyin voient des résultats vite.',
+    description: 'Vídeo corto y live commerce, mismo tablero. Alcance masivo, camino corto del contenido a la venta. Las marcas que pillan el algoritmo ven resultados en pocas semanas.',
   },
   {
     name: 'Weibo', chineseName: '微博', brandColor: '#E6162D',
     logo: '/images/platforms/weibo-logo.svg', href: lp('/platforms/weibo'),
-    description: 'Audience de masse et relations presse. Sujets en tendance, partenariats avec des célébrités, cycles d\'actualité. Pour faire connaître une marque dans toute la Chine, ça reste le passage obligé.',
+    description: 'La plaza pública de la opinión y de las relaciones públicas. Trending topics, alianzas con famosos, ciclos de noticia. Para que un nombre cruce China en horas, sigue siendo Weibo.',
+  },
+] : lang === 'fr' ? [
+  {
+    name: 'WeChat', chineseName: '微信', brandColor: '#07C160',
+    logo: '/images/platforms/wechat-logo.svg', href: lp('/platforms/wechat'),
+    description: 'La super-application qui rythme la vie des Chinois. Comptes officiels, Moments, Mini-Programmes, WeCom. Une seule plateforme à retenir : ce serait celle-ci.',
+  },
+  {
+    name: 'RedNote', chineseName: '小红书', brandColor: '#FF2442',
+    logo: '/images/platforms/rednote-logo.svg', href: lp('/platforms/rednote'),
+    description: 'Le carnet consulté par les consommateurs chinois avant chaque achat. Avis, tutoriels, publications marchandes. Souvent rapprochée d\'Instagram, mais la conversion y est bien réelle.',
+  },
+  {
+    name: 'Douyin', chineseName: '抖音', brandColor: '#010101',
+    logo: '/images/platforms/douyin-logo.svg', href: lp('/platforms/douyin'),
+    description: 'Le terrain de jeu de la vidéo courte et du commerce en direct. Portée massive et chemin éclair du contenu à la vente. Les marques qui apprivoisent l\'algorithme voient les résultats arriver en quelques semaines.',
+  },
+  {
+    name: 'Weibo', chineseName: '微博', brandColor: '#E6162D',
+    logo: '/images/platforms/weibo-logo.svg', href: lp('/platforms/weibo'),
+    description: 'Le grand carrefour de l\'opinion publique et des relations presse. Tendances, partenariats avec des personnalités, cycles d\'actualité. Pour qu\'un nom se propage d\'un bout à l\'autre du pays, le passage par Weibo reste obligé.',
   },
 ] : [
   {
@@ -78,15 +120,25 @@ const platforms = lang === 'zh' ? [
   },
 ];
 
-const sectionText = lang === 'zh' ? {
+const sectionText = lang === 'de' ? {
+  overline: 'Wo wir senden',
+  heading: 'WeChat. Douyin. RedNote. Weibo. Und vierzehn weitere.',
+  note: 'Dazu Bilibili, Kuaishou, Zhihu, Toutiao, Meituan, Dianping, Pinduoduo, Taobao Live und weitere. Jede Plattform mit eigenem, klar ausgewiesenem Preis, abgestimmt auf Ihre Branche.',
+  cta: 'Alle Plattformen ansehen',
+} : lang === 'zh' ? {
   overline: '我们发布的平台',
   heading: '微信、抖音、小红书、微博，另加 14 个。',
   note: '此外还有 B站、快手、知乎、今日头条、美团、大众点评、拼多多、淘宝直播等。每个平台按你的行业单独报价，清清楚楚一口价。',
   cta: '查看全部平台',
+} : lang === 'es' ? {
+  overline: 'Dónde publicamos',
+  heading: 'WeChat. Douyin. RedNote. Weibo. Y catorce más.',
+  note: 'Bilibili, Kuaishou, Zhihu, Toutiao, Meituan, Dianping, Pinduoduo, Taobao Live, entre otras. Cada plataforma se tarifa por separado, según el sector, con precios claros.',
+  cta: 'Ver todas las plataformas',
 } : lang === 'fr' ? {
-  overline: 'Où on publie',
-  heading: 'WeChat. Douyin. RedNote. Weibo. Et 14 autres.',
-  note: 'Ainsi que Bilibili, Kuaishou, Zhihu, Toutiao, Meituan, Dianping, Pinduoduo, Taobao Live, entre autres. Chacune tarifée comme un complément à la carte, selon votre secteur.',
+  overline: 'Nos terrains d\'activation',
+  heading: 'WeChat. Douyin. RedNote. Weibo. Et quatorze autres.',
+  note: 'Auxquels s\'ajoutent Bilibili, Kuaishou, Zhihu, Toutiao, Meituan, Dianping, Pinduoduo, Taobao Live, entre autres. Chacune est tarifée séparément, à la carte, en fonction de votre secteur.',
   cta: 'Voir toutes les plateformes',
 } : {
   overline: 'Where we post',

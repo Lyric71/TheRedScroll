@@ -1,5 +1,21 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { mainNav } from '../data/navigation';
+
+const servicesNav = mainNav.find((item) => item.label === 'Services');
+const platformsNav = mainNav.find((item) => item.label === 'Platforms');
+
+const services = (servicesNav?.children ?? []).map((s) => s.label);
+const platforms = (platformsNav?.children ?? []).map((p) =>
+  p.label === 'Additional Platforms' ? 'Other (Bilibili, Kuaishou, Zhihu…)' : p.label,
+);
+
+const budgets = [
+  'Under 5,000 USD',
+  '5,000 to 15,000 USD',
+  '15,000 to 30,000 USD',
+  'Over 30,000 USD',
+];
 ---
 
 <BaseLayout
@@ -10,7 +26,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <main class="pt-[60px] max-[640px]:pt-[52px]">
 
     <!-- Contact: dark section with info + form -->
-    <section class="relative w-full bg-[#1A1A1A] py-[80px] max-[640px]:py-[48px] px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] overflow-hidden">
+    <section class="relative w-full bg-[#1A1A1A] py-[80px] max-[1024px]:py-[64px] max-[640px]:py-[48px] px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] overflow-hidden">
       <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero/contact-bg.png')" aria-hidden="true"></div>
       <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.75]" aria-hidden="true"></div>
       <div class="relative z-[1] max-w-[1200px] mx-auto">
@@ -62,10 +78,49 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                 <input type="url" name="website" class="block w-full h-[44px] px-[12px] text-[14px] font-normal text-[#1A1A1A] bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[6px] outline-none transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)] focus:border-[#1A1A1A] placeholder:text-[#5C5C5C] placeholder:opacity-60" placeholder="https://yourcompany.com" />
               </div>
 
+              <!-- Services -->
+              <fieldset class="border-0 p-0 m-0">
+                <legend class="block text-[13px] font-normal text-[#5C5C5C] mb-[8px]">Services you're interested in</legend>
+                <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-x-[12px] gap-y-[8px]">
+                  {services.map((service) => (
+                    <label class="flex items-center gap-[8px] text-[13px] font-normal text-[#1A1A1A] leading-[1.4] cursor-pointer">
+                      <input type="checkbox" name="services" value={service} class="w-[16px] h-[16px] accent-[#CC3333] cursor-pointer flex-shrink-0" />
+                      <span>{service}</span>
+                    </label>
+                  ))}
+                </div>
+              </fieldset>
+
+              <!-- Platforms -->
+              <fieldset class="border-0 p-0 m-0">
+                <legend class="block text-[13px] font-normal text-[#5C5C5C] mb-[8px]">Platforms you're interested in</legend>
+                <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-x-[12px] gap-y-[8px]">
+                  {platforms.map((platform) => (
+                    <label class="flex items-center gap-[8px] text-[13px] font-normal text-[#1A1A1A] leading-[1.4] cursor-pointer">
+                      <input type="checkbox" name="platforms" value={platform} class="w-[16px] h-[16px] accent-[#CC3333] cursor-pointer flex-shrink-0" />
+                      <span>{platform}</span>
+                    </label>
+                  ))}
+                </div>
+              </fieldset>
+
+              <!-- Budget -->
+              <fieldset class="border-0 p-0 m-0">
+                <legend class="block text-[13px] font-normal text-[#5C5C5C] mb-[8px]">Estimated budget</legend>
+                <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-x-[12px] gap-y-[8px]">
+                  {budgets.map((budget) => (
+                    <label class="flex items-center gap-[8px] text-[13px] font-normal text-[#1A1A1A] leading-[1.4] cursor-pointer">
+                      <input type="radio" name="budget" value={budget} class="w-[16px] h-[16px] accent-[#CC3333] cursor-pointer flex-shrink-0" />
+                      <span>{budget}</span>
+                    </label>
+                  ))}
+                </div>
+              </fieldset>
+
               <!-- Message -->
               <div>
                 <label class="block text-[13px] font-normal text-[#5C5C5C] mb-[4px]">Tell us about your project <span class="text-[#CC3333]">*</span></label>
-                <textarea name="message" required rows="5" class="block w-full px-[12px] py-[12px] text-[14px] font-normal text-[#1A1A1A] bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[6px] outline-none transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)] focus:border-[#1A1A1A] placeholder:text-[#5C5C5C] placeholder:opacity-60 resize-vertical leading-[1.5] min-h-[120px]" placeholder="What platforms are you interested in? What are your goals in China?"></textarea>
+                <textarea name="message" required rows="5" class="block w-full px-[12px] py-[12px] text-[14px] font-normal text-[#1A1A1A] bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[6px] outline-none transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)] focus:border-[#1A1A1A] placeholder:text-[#5C5C5C] placeholder:opacity-60 resize-vertical leading-[1.5] min-h-[120px]" placeholder="What are your goals in China? Timing, audience, anything we should know."></textarea>
               </div>
 
               <!-- Honeypot — hidden from humans, bots fill it -->
@@ -162,11 +217,24 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     submitBtn.setAttribute('disabled', 'true');
 
     const data = new FormData(form);
+    const selectedServices = data.getAll('services').join(', ') || 'None selected';
+    const selectedPlatforms = data.getAll('platforms').join(', ') || 'None selected';
+    const selectedBudget = data.get('budget') || 'Not specified';
+
+    const composedMessage = [
+      `Website: ${data.get('website') || 'N/A'}`,
+      `Services: ${selectedServices}`,
+      `Platforms: ${selectedPlatforms}`,
+      `Budget: ${selectedBudget}`,
+      '',
+      data.get('message'),
+    ].join('\n');
+
     const body = {
       name: `${data.get('firstName')} ${data.get('lastName')}`,
       email: data.get('email'),
       company: data.get('company'),
-      message: `Website: ${data.get('website') || 'N/A'}\n\n${data.get('message')}`,
+      message: composedMessage,
       honeypot: data.get('website_url'),
       captcha: data.get('captcha'),
       captchaAnswer: data.get('captcha_answer'),

@@ -1,0 +1,335 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+import FaqAccordion from '../../../components/sections/FaqAccordion.astro';
+import GettingStarted from '../../../components/sections/GettingStarted.astro';
+
+
+const faqs = [
+  { q: '¿Cómo detectan a los seguidores falsos?', a: 'Cruzamos número de seguidores con tasa de interacción, calidad de los comentarios y composición de la audiencia. Un creador con 200.000 seguidores que solo cosecha 50 comentarios por publicación, casi todos emojis sin sustancia, es una señal clara. Las herramientas propias de las plataformas, como Xingtu o Pugongying, dan también datos certificados. Después de cientos de campañas, los perfiles dudosos se ven a la primera.' },
+  { q: '¿Cuántos KOL hacen falta?', a: 'Depende del objetivo. Campañas de difusión: de 20 a 50 KOC. Construcción de notoriedad: 3 a 5 KOL de tamaño medio suelen bastar. Lanzamiento de un producto estrella: un creador top con 10 a 15 KOC de apoyo. La dosis se ajusta al presupuesto y a las prioridades.' },
+  { q: '¿Se pueden revisar los contenidos antes de publicar?', a: 'En la mayoría de los casos, sí. Compartimos borradores o preestrenos antes de la publicación. Algunos creadores se resisten a retoques excesivos porque rompen la naturalidad del relato. Y, francamente, suelen tener razón. Los mensajes clave, las menciones legales y las pautas de marca, en cambio, sí se verifican siempre antes del aire.' },
+  { q: '¿Qué diferencia hay entre KOL y KOC?', a: 'Los KOL son creadores profesionales con audiencia amplia y contenido cuidado. Los KOC (Key Opinion Consumers) son consumidores normales con comunidad más pequeña que comparten su experiencia de producto de forma espontánea. En la práctica, los KOL aportan visibilidad. Los KOC instalan confianza y anclan la marca en los resultados de búsqueda. La mayoría de campañas necesitan ambos.' },
+  { q: '¿En cuánto tiempo se lanza una campaña?', a: 'Calcule entre dos y cuatro semanas del brief a la primera publicación. Ahí entra identificación de creadores, primer contacto, negociación, encuadre creativo, producción y revisión. Las campañas de difusión con KOC avanzan más rápido, a veces en una o dos semanas.' },
+  { q: '¿Se puede reutilizar el contenido de los creadores como publicidad?', a: 'Se puede, pero no se da por hecho. Los derechos de uso se negocian al principio. Algunos creadores incluyen la reutilización publicitaria en su tarifa base. Otros cobran una licencia aparte, que puede suponer un 30 o 50 % más. Lo aclaramos siempre en la fase contractual, para evitar sorpresas a medio camino.' },
+  { q: '¿Qué sectores funcionan mejor?', a: 'Belleza, cuidado de la piel y moda van por delante, simplemente porque el banco de creadores es el más amplio. Alimentación, salud y bienestar, hostelería y electrónica de consumo siguen muy de cerca. Las marcas B2B también pueden sacar partido, sobre todo en WeChat y Zhihu, aunque el reservorio de creadores pertinentes sea más estrecho.' },
+  { q: '¿Gestionan los pagos a los creadores?', a: 'De la A a la Z. Negociación, contrato, pago, justificantes fiscales. Usted nos paga a nosotros y nos ocupamos del resto con los creadores y sus MCN.' },
+];
+
+const gettingStartedSteps = [
+  {
+    title: 'Primer contacto.',
+    description: 'Encuadramos su marca, sus objetivos y el perfil de creadores que encaja con su público.',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
+  },
+  {
+    title: 'Preselección de KOL.',
+    description: 'Creadores verificados, ajustados a su marca, su sector y su bolsillo. Cada cifra de audiencia pasa por el filtro.',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>',
+  },
+  {
+    title: 'Primeras publicaciones en 2 a 4 semanas.',
+    description: 'Contacto con creadores, encuadre, producción, revisión y publicación.',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
+  },
+];
+---
+
+<PageLayout
+  lang="es"
+  title="Agencia de KOL y KOC en China | TheRedScroll"
+  description="Campañas con influencers en Douyin, RedNote y WeChat. Identificación de creadores, venta en directo, gestión de campaña. Alcance cerrado, equipo en Shanghái."
+>
+
+  <section class="relative w-full overflow-hidden bg-[var(--color-ink)]">
+    <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/influencer-marketing-hero.png')" aria-hidden="true"></div>
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[1024px]:pt-[128px] max-[1024px]:pb-[72px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+        Marketing de influencers
+      </p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[1024px]:text-[40px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        Un buen creador hablando de su marca pesa más que una campaña entera de publicidad.
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        Identificamos a los KOL y KOC adecuados, los verificamos, los briefamos, dirigimos la relación y medimos lo que la campaña realmente produjo. Desde Shanghái y Hong Kong.
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/es/contacto">Contacto</Button>
+        <Button variant="secondary-dark" href="#que-hacemos">Servicios</Button>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        <div class="relative col-span-2 row-span-2 max-[640px]:col-span-1 max-[640px]:row-span-1 bg-[#1A1A1A] rounded-[12px] p-[32px] max-[640px]:p-[20px] flex flex-col justify-between min-h-[320px] max-[640px]:min-h-0 overflow-hidden">
+          <svg class="absolute bottom-[-20px] right-[-20px] w-[260px] h-[260px] opacity-[0.06]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/><path d="M20.84 4.61a5.5 5.5 0 0 1-8.69 4.28"/></svg>
+          <div class="relative z-[1]">
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">El peso de los creadores</p>
+            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[16px]">Por qué los influencers han pasado a ser ineludibles</h2>
+            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[400px]">La publicidad expone su mensaje a la mirada del consumidor. La influencia coloca su producto en manos de alguien a quien ya escuchan. El tipo de encuentro no tiene nada que ver.</p>
+          </div>
+          <div class="relative z-[1] mt-[24px]">
+            <Button variant="secondary-dark" href="#que-hacemos">Servicios</Button>
+          </div>
+        </div>
+        <div class="relative overflow-hidden bg-[#F0F1F4] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Se habla a comunidades, no a targets</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">Los seguidores de un KOL comparten gustos, intereses y, sobre todo, un vínculo de confianza. Cuando ese creador recomienda un producto, la reacción no tiene nada que ver con la de un anuncio convencional.</p>
+        </div>
+        <div class="relative overflow-hidden bg-[#1A1A1A] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Tasas de conversión muy superiores</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.6)]">Las marcas que colaboran con KOL en RedNote observan tasas de conversión unas 2,3 veces mayores que las de los canales publicitarios clásicos.</p>
+        </div>
+        <div class="relative overflow-hidden bg-[#CC3333] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Un mercado que no se desacelera</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.8)]">Se espera que el mercado de la influencia en China supere los 117.000 millones de euros a finales de 2025. Más de un anunciante de cada dos ya lo usa.</p>
+        </div>
+        <div class="relative overflow-hidden bg-[#E8E0D8] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Pero es trabajo de hormiga</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">Encontrar a los perfiles adecuados, comprobar la autenticidad de los seguidores, negociar tarifas, revisar cada pieza, seguir los resultados. Una campaña con 15 creadores se va fácilmente por encima de las 100 horas de trabajo.</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <section id="que-hacemos" class="mt-[96px] max-[640px]:mt-[64px] scroll-mt-[76px]">
+    <Container>
+      <SectionBar />
+      <SectionHeading overline="Servicios">Identificación de KOL y KOC</SectionHeading>
+
+      <div class="rounded-[12px] overflow-hidden mt-[24px]">
+        <img src="/images/what-we-do/influencer-kol-douyin.png" alt="Teléfono mostrando el feed de Douyin con contenido de creadores chinos" class="w-full aspect-[5/2] max-[640px]:aspect-[16/10] object-cover" loading="lazy" decoding="async" />
+      </div>
+
+      <div class="grid grid-cols-3 max-[768px]:grid-cols-1 gap-[24px] -mt-[72px] max-[768px]:-mt-[32px] px-[32px] max-[768px]:px-[0px] relative z-[1]">
+        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
+          <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
+            <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Búsqueda de creadores</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Trabajamos con una base de creadores en Douyin, RedNote, WeChat, Weibo, Bilibili y Kuaishou. Cada perfil pasa por el filtro: autenticidad de la interacción, composición de la audiencia, tono y afinidad con la marca.</p>
+        </div>
+        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
+          <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
+            <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Encuadre y preparación de campaña</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Cada campaña arranca con un brief preciso. Objetivos, mensajes a transmitir, formato del contenido, calendario de publicación, restricciones propias de cada plataforma. Alineamos el calendario de los KOL con su línea editorial y sus campañas de pago.</p>
+        </div>
+        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
+          <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
+            <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Negociación y contratación</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Negociamos tarifas, derechos de uso, cláusulas de exclusividad y entregables. La diferencia entre el precio publicado y el precio real suele superar el 15 %. Nos sabemos las tarifas de memoria.</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="bg-[#1A1A1A] rounded-[12px] p-[48px] max-[1024px]:p-[32px] max-[640px]:p-[32px_20px]">
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">Cobertura completa</p>
+        <h2 class="text-[#FFFFFF] text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] mb-[16px]">De la venta en directo al cumplimiento, sin perder de vista los resultados</h2>
+        <div class="max-w-[680px] flex flex-col gap-[24px] mb-[32px]">
+          <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+            La venta en directo es un canal de distribución de pleno derecho en China. Una sola sesión en Douyin o Taobao Live puede generar miles de pedidos en pocas horas. Asumimos la elección del presentador, el encuadre de producto, la redacción del guion, la moderación del chat en tiempo real y el balance en caliente.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[24px]">
+          <div>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Cumplimiento y menciones obligatorias</h3>
+            <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+              Los contenidos patrocinados están regulados por la ley de publicidad china. RedNote exige avisos claros sobre el carácter comercial. Douyin señala las promociones sin declarar. Verificamos que cada publicación cumpla las reglas de la plataforma y la normativa vigente.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Medición de resultados</h3>
+            <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+              Lo medimos todo. Impresiones, tasa de interacción, clics, conversiones, coste por resultado. Los balances dicen con quién seguir, a quién descartar y a quién probar la próxima vez. La selección de creadores se afina con cifras, no a ojo.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Venta en directo</h3>
+            <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+              Para marcas con Douyin Shop, montamos sesiones conectadas directamente a sus fichas de producto. Elección del presentador, encuadre de producto, moderación del chat en directo, balance en caliente. El modelo a comisión reparte parte del riesgo con el presentador.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Gestión de pagos</h3>
+            <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+              Negociación, contrato, pago, justificantes fiscales. Usted nos paga, nosotros gestionamos lo demás con los creadores y sus MCN. Cuota fija, comisión por ventas, intercambio de producto o fórmula mixta: según la campaña.
+            </p>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[48px] max-[640px]:gap-[32px] items-center">
+        <div>
+          <SectionBar />
+          <SectionHeading overline="Conocer el terreno">¿Qué es exactamente un MCN?</SectionHeading>
+          <div class="flex flex-col gap-[24px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              MCN viene de Multi-Channel Network. En la práctica, es el equivalente a una agencia de talento, pero del lado de los creadores de contenido. Los MCN firman con KOL y KOC y luego pilotan su producción, sus colaboraciones comerciales y la monetización de la audiencia.
+            </p>
+            <p>
+              En 2025 se contaban unos 29.000 MCN registrados en China. Estas estructuras forman a los creadores, producen sus contenidos, orquestan la logística de la venta en directo y velan por el cumplimiento normativo. Una buena parte de los creadores más seguidos de Douyin y RedNote ha pasado por un MCN en algún momento.
+            </p>
+            <p>
+              En cuanto se apunta a un KOL de tamaño medio o mayor, casi siempre se negocia con su MCN. Mantenemos relación regular con los principales MCN de Douyin, RedNote y WeChat. Resultado: respuestas más rápidas, acceso a creadores con agendas a tope y condiciones de tarifa que no se consiguen llamando en frío.
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center justify-center">
+          <img src="/images/ecosystem/influencers.png" alt="Red de MCN e influencers en China" class="w-full max-w-[320px]" loading="lazy" />
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[48px] max-[640px]:gap-[32px] items-center mb-[48px] max-[640px]:mb-[32px]">
+        <div>
+          <SectionBar />
+          <SectionHeading overline="Órdenes de magnitud">RedNote / Xiaohongshu</SectionHeading>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">
+            Los precios dependen del número de seguidores, la tasa de interacción, el formato, el sector y posibles exclusividades. Los rangos que siguen reflejan las tarifas vistas en el primer trimestre de 2026. No son presupuestos cerrados.
+          </p>
+        </div>
+        <div class="flex items-center justify-center">
+          <img src="/images/platforms/rednote-services/kol-koc.png" alt="Creadores KOL y KOC en RedNote" class="w-full max-w-[420px] rounded-[10px]" loading="lazy" decoding="async" />
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Nano-KOC (menos de 5.000 seguidores)</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">De 100 a 500 € por publicación, o simple envío de producto. Pensado para campañas de difusión que apuestan por el volumen para ocupar resultados de búsqueda.</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Micro-KOC (de 5.000 a 20.000)</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">De 500 a 3.000 € por publicación. Tasas de interacción a menudo altas. Perfecto para reseñas creíbles y boca a oreja espontáneo.</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">KOL de tamaño medio (de 20.000 a 100.000)</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">De 3.000 a 15.000 € por publicación. El tramo más interesante para la mayoría de campañas. Buen alcance, credibilidad real y un coste por interacción razonable.</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Grandes KOL (más de 100.000)</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">De 15.000 a 80.000 € por publicación, y subiendo. Los creadores de belleza y lujo cobran de media un 50 % más que las demás categorías. Las notas en vídeo salen entre un 20 y un 30 % más caras que las de foto.</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[48px] max-[640px]:gap-[32px] items-center mb-[48px] max-[640px]:mb-[32px]">
+        <div>
+          <SectionBar />
+          <SectionHeading overline="Órdenes de magnitud">Douyin</SectionHeading>
+        </div>
+        <div class="flex items-center justify-center">
+          <img src="/images/platforms/douyin-services/kol-campaigns.png" alt="Creadores de campañas KOL en Douyin" class="w-full max-w-[420px] rounded-[10px]" loading="lazy" decoding="async" />
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Pequeños creadores (menos de 50.000)</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">De 1.000 a 5.000 € por vídeo. Buenos para demos de producto y tutoriales.</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">KOL de tamaño medio (de 50.000 a 500.000)</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">De 5.000 a 30.000 € por vídeo. Demoledores para asentar notoriedad y empujar tráfico a su Douyin Shop.</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Grandes KOL (más de 500.000)</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">De 30.000 a 200.000 € por vídeo, y subiendo. Las verdaderas locomotoras de campaña. Suelen ir asociados a sesiones de venta en directo.</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Presentadores de venta en directo</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Cuota base, más un 20 a 40 % de comisión sobre ventas. Un buen presentador despacha decenas de miles de unidades en una sola sesión.</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[48px] max-[640px]:gap-[32px] items-center mb-[48px] max-[640px]:mb-[32px]">
+        <div>
+          <SectionBar />
+          <SectionHeading overline="Órdenes de magnitud">WeChat</SectionHeading>
+        </div>
+        <div class="flex items-center justify-center">
+          <img src="/images/platforms/wechat-services/channels-kol.png" alt="Creadores KOL en WeChat Channels" class="w-full max-w-[420px] rounded-[10px]" loading="lazy" decoding="async" />
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">KOL en Cuentas Oficiales (artículos)</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">De 5.000 a 50.000 € por artículo, y subiendo, según la media de lecturas. El orden de magnitud ronda 1 € por lectura. Es la plataforma más cara por impresión, pero la audiencia es distinta. La atención es más sostenida y más cualitativa.</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">KOL en Channels (vídeo)</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">De 3.000 a 20.000 € por vídeo. Un formato aún joven. Las tarifas están menos estabilizadas que en Douyin, pero el mercado se mueve rápido.</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <a href="/es/proyectos/jaguar-land-rover" class="block bg-[var(--color-rice-paper)] rounded-[10px] p-[48px] max-[1024px]:p-[32px] max-[640px]:p-[32px_20px] group">
+        <div class="flex gap-[48px] max-[768px]:flex-col items-center">
+          <div class="flex-1 min-w-0">
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[12px]">Caso de éxito</p>
+            <h3 class="text-[24px] max-[640px]:text-[20px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[12px]">Jaguar Land Rover: recuperar a los consumidores jóvenes en redes</h3>
+            <p class="text-[15px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[20px]">Campañas basadas en contenido de usuarios devolvieron a los jóvenes consumidores chinos a la conversación de marca. Un contenido sincero, producido por clientes reales, que reposicionó a Jaguar Land Rover ante una nueva generación.</p>
+            <span class="text-[14px] font-medium text-[var(--color-vermillion)] group-hover:underline">Ver el caso →</span>
+          </div>
+          <img
+            src="/images/clients/Jaguar/Jaguar-Land-Rover.avif"
+            alt="Campaña de redes sociales de Jaguar Land Rover en China"
+            class="w-[45%] max-[768px]:w-full aspect-[16/10] object-cover rounded-[10px]"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </a>
+    </Container>
+  </section>
+
+  <GettingStarted
+    lang="es"
+    heading="Del brief a las primeras publicaciones, de dos a cuatro semanas."
+    steps={gettingStartedSteps}
+    backgroundImage="/images/getting-started/influencer-marketing.png"
+    crossLinks={[
+      { label: 'Producción de contenidos', href: '/es/servicios/produccion-contenido' },
+      { label: 'Publicidad', href: '/es/servicios/publicidad' },
+      { label: 'Estrategia y campañas', href: '/es/servicios/estrategia-campanas' },
+    ]}
+  />
+
+  <FaqAccordion lang="es" faqs={faqs} subtitle="Las preguntas que más se repiten sobre la influencia en China." />
+
+
+</PageLayout>

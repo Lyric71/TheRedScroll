@@ -11,7 +11,7 @@ interface Props {
 const { lang = 'en' } = Astro.props;
 const lp = (path: string) => localizedPath(path, lang);
 
-const text = {
+const textByLang = {
   en: {
     overline: 'Getting started',
     heading: 'One call. One proposal. One price.',
@@ -35,24 +35,24 @@ const text = {
     ],
   },
   fr: {
-    overline: 'Pour commencer',
-    heading: 'Un appel. Une proposition. Un prix.',
+    overline: 'Démarrer',
+    heading: 'Un appel. Une proposition. Un tarif.',
     cta: 'Prendre rendez-vous',
     steps: [
       {
         number: '01',
-        title: 'Appel découverte.',
-        description: '30 minutes. On parle de votre marque, de vos objectifs et de votre préparation pour la Chine. Pas de présentation commerciale. Juste les bonnes questions.',
+        title: 'Échange préliminaire.',
+        description: 'Trente minutes pour cerner votre marque, vos objectifs et votre niveau de préparation à la Chine. Aucune présentation commerciale, uniquement les questions qui comptent.',
       },
       {
         number: '02',
-        title: 'Proposition.',
-        description: 'Cahier des charges clair. Prix fixe. Chaque livrable détaillé. Vous voyez ce que vous obtenez et ce que ça coûte avant de vous engager.',
+        title: 'Proposition chiffrée.',
+        description: 'Cahier des charges détaillé, tarif arrêté, livrables ligne à ligne. Avant toute signature, vous savez précisément ce que vous obtenez et combien cela coûte.',
       },
       {
         number: '03',
-        title: 'En ligne sous 2 semaines.',
-        description: 'Intégration, création des comptes, première publication. Quatorze jours entre la signature et la mise en ligne du premier contenu.',
+        title: 'Lancement en deux semaines.',
+        description: 'Intégration, ouverture des comptes, première publication. Quatorze jours s\'écoulent entre la signature et la mise en ligne du premier contenu.',
       },
     ],
   },
@@ -78,7 +78,52 @@ const text = {
       },
     ],
   },
-}[lang];
+  de: {
+    overline: 'So legen wir los',
+    heading: 'Ein Gespräch. Ein Angebot. Ein Preis.',
+    cta: 'Gespräch vereinbaren',
+    steps: [
+      {
+        number: '01',
+        title: 'Erstgespräch.',
+        description: 'Dreißig Minuten. Wir sprechen über Ihre Marke, Ihre Ziele und Ihren Reifegrad für China. Keine Pitch-Deck-Show. Nur die Fragen, die zählen.',
+      },
+      {
+        number: '02',
+        title: 'Angebot.',
+        description: 'Klares SOW. Fester Preis. Jedes Deliverable schriftlich. Bevor Sie unterschreiben, wissen Sie genau, was Sie bekommen und was es kostet.',
+      },
+      {
+        number: '03',
+        title: 'In zwei Wochen live.',
+        description: 'Onboarding, Kontoeinrichtung, erster Content veröffentlicht. Vierzehn Tage zwischen unterschriebenem Vertrag und erster Veröffentlichung.',
+      },
+    ],
+  },
+  es: {
+    overline: 'Cómo empezamos',
+    heading: 'Una llamada. Una propuesta. Un precio.',
+    cta: 'Reservar una llamada',
+    steps: [
+      {
+        number: '01',
+        title: 'Llamada inicial.',
+        description: 'Treinta minutos. Hablamos de la marca, de los objetivos y de hasta dónde llega su preparación para China. Sin PowerPoint. Solo las preguntas que hacen falta.',
+      },
+      {
+        number: '02',
+        title: 'Propuesta.',
+        description: 'SOW claro. Precio cerrado. Cada entregable, sobre la mesa. Antes de firmar nada, sabe exactamente qué recibe y cuánto cuesta.',
+      },
+      {
+        number: '03',
+        title: 'En marcha en dos semanas.',
+        description: 'Onboarding, apertura de cuentas, primera publicación al aire. Catorce días entre la firma y el primer contenido en plataforma.',
+      },
+    ],
+  },
+};
+const text = (textByLang as Record<string, typeof textByLang.en>)[lang] ?? textByLang.en;
 
 const icons = [
   `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>`,
@@ -87,7 +132,7 @@ const icons = [
 ];
 ---
 
-<section class="relative mt-[64px] max-[640px]:mt-[40px] py-[80px] max-[640px]:py-[48px] overflow-hidden">
+<section class="relative mt-[64px] max-[640px]:mt-[40px] py-[80px] max-[1024px]:py-[64px] max-[640px]:py-[48px] overflow-hidden">
   <!-- Background image -->
   <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero/getting-started-bg.png')" aria-hidden="true"></div>
   <!-- Dark overlay for readability -->
@@ -116,7 +161,7 @@ const icons = [
           </div>
           <!-- Step number -->
           <p class="text-[12px] font-medium text-[#CC3333] leading-none mb-[8px]">
-            {lang === 'zh' ? '第' : lang === 'fr' ? 'Étape' : 'Step'} {step.number} {lang === 'zh' ? '步' : ''}
+            {lang === 'zh' ? '第' : lang === 'fr' ? 'Étape' : lang === 'es' ? 'Paso' : lang === 'de' ? 'Schritt' : 'Step'} {step.number} {lang === 'zh' ? '步' : ''}
           </p>
           <h3 class="text-[18px] text-[#FFFFFF] font-medium leading-[1.3] mb-[8px]">
             {step.title}

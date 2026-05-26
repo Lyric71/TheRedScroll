@@ -1,5 +1,30 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const services = [
+  'Stratégie, campagnes et mesure',
+  'Publicité',
+  'Production de contenus',
+  "Marketing d'influence",
+  'Lancement en Chine',
+  'CRM et audience propriétaire',
+  'Formation et conseil',
+];
+
+const platforms = [
+  'WeChat',
+  'RedNote / Xiaohongshu',
+  'Douyin',
+  'Weibo',
+  'Autres plateformes (Bilibili, Kuaishou, Zhihu…)',
+];
+
+const budgets = [
+  'Moins de 5 000 USD',
+  '5 000 à 15 000 USD',
+  '15 000 à 30 000 USD',
+  'Plus de 30 000 USD',
+];
 ---
 
 <BaseLayout
@@ -11,7 +36,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <main class="pt-[60px] max-[640px]:pt-[52px]">
 
     <!-- Contact: dark section with info + form -->
-    <section class="relative w-full bg-[#1A1A1A] py-[80px] max-[640px]:py-[48px] px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] overflow-hidden">
+    <section class="relative w-full bg-[#1A1A1A] py-[80px] max-[1024px]:py-[64px] max-[640px]:py-[48px] px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] overflow-hidden">
       <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero/contact-bg.png')" aria-hidden="true"></div>
       <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.75]" aria-hidden="true"></div>
       <div class="relative z-[1] max-w-[1200px] mx-auto">
@@ -19,10 +44,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         <div class="mb-[48px] max-[640px]:mb-[32px]">
           <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">Contact</p>
           <h1 class="text-[#FFFFFF] text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] mb-[8px]">
-            Votre marque, cap sur la Chine.
+            Votre marque met le cap sur la Chine.
           </h1>
           <p class="text-[rgba(255,255,255,0.6)] text-[16px] font-normal leading-[1.6] max-w-[480px]">
-            Prenez rendez-vous, posez-nous une question ou racontez-nous votre projet. Réponse sous un jour ouvré.
+            Prenez rendez-vous, soumettez une question, présentez votre projet. Vous recevez une réponse sous un jour ouvré.
           </p>
         </div>
 
@@ -30,7 +55,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
           <!-- Left: Contact form card -->
           <div class="bg-[#FFFFFF] rounded-[10px] p-[32px] max-[640px]:p-[20px] max-[1024px]:order-1">
-            <h2 class="text-[18px] text-[#1A1A1A] font-medium leading-[1.3] mb-[24px]">Racontez-nous votre projet</h2>
+            <h2 class="text-[18px] text-[#1A1A1A] font-medium leading-[1.3] mb-[24px]">Présentez-nous votre projet</h2>
 
             <form id="contact-form" class="flex flex-col gap-[16px]">
               <!-- Name row -->
@@ -63,10 +88,49 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
                 <input type="url" name="website" class="block w-full h-[44px] px-[12px] text-[14px] font-normal text-[#1A1A1A] bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[6px] outline-none transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)] focus:border-[#1A1A1A] placeholder:text-[#5C5C5C] placeholder:opacity-60" placeholder="https://votreentreprise.com" />
               </div>
 
+              <!-- Services -->
+              <fieldset class="border-0 p-0 m-0">
+                <legend class="block text-[13px] font-normal text-[#5C5C5C] mb-[8px]">Services qui vous intéressent</legend>
+                <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-x-[12px] gap-y-[8px]">
+                  {services.map((service) => (
+                    <label class="flex items-center gap-[8px] text-[13px] font-normal text-[#1A1A1A] leading-[1.4] cursor-pointer">
+                      <input type="checkbox" name="services" value={service} class="w-[16px] h-[16px] accent-[#CC3333] cursor-pointer flex-shrink-0" />
+                      <span>{service}</span>
+                    </label>
+                  ))}
+                </div>
+              </fieldset>
+
+              <!-- Platforms -->
+              <fieldset class="border-0 p-0 m-0">
+                <legend class="block text-[13px] font-normal text-[#5C5C5C] mb-[8px]">Plateformes ciblées</legend>
+                <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-x-[12px] gap-y-[8px]">
+                  {platforms.map((platform) => (
+                    <label class="flex items-center gap-[8px] text-[13px] font-normal text-[#1A1A1A] leading-[1.4] cursor-pointer">
+                      <input type="checkbox" name="platforms" value={platform} class="w-[16px] h-[16px] accent-[#CC3333] cursor-pointer flex-shrink-0" />
+                      <span>{platform}</span>
+                    </label>
+                  ))}
+                </div>
+              </fieldset>
+
+              <!-- Budget -->
+              <fieldset class="border-0 p-0 m-0">
+                <legend class="block text-[13px] font-normal text-[#5C5C5C] mb-[8px]">Budget estimé</legend>
+                <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-x-[12px] gap-y-[8px]">
+                  {budgets.map((budget) => (
+                    <label class="flex items-center gap-[8px] text-[13px] font-normal text-[#1A1A1A] leading-[1.4] cursor-pointer">
+                      <input type="radio" name="budget" value={budget} class="w-[16px] h-[16px] accent-[#CC3333] cursor-pointer flex-shrink-0" />
+                      <span>{budget}</span>
+                    </label>
+                  ))}
+                </div>
+              </fieldset>
+
               <!-- Message -->
               <div>
                 <label class="block text-[13px] font-normal text-[#5C5C5C] mb-[4px]">Votre projet <span class="text-[#CC3333]">*</span></label>
-                <textarea name="message" required rows="5" class="block w-full px-[12px] py-[12px] text-[14px] font-normal text-[#1A1A1A] bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[6px] outline-none transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)] focus:border-[#1A1A1A] placeholder:text-[#5C5C5C] placeholder:opacity-60 resize-vertical leading-[1.5] min-h-[120px]" placeholder="Quelles plateformes visez-vous ? Quels sont vos objectifs sur le marché chinois ?"></textarea>
+                <textarea name="message" required rows="5" class="block w-full px-[12px] py-[12px] text-[14px] font-normal text-[#1A1A1A] bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[6px] outline-none transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)] focus:border-[#1A1A1A] placeholder:text-[#5C5C5C] placeholder:opacity-60 resize-vertical leading-[1.5] min-h-[120px]" placeholder="Quels sont vos objectifs en Chine ? Calendrier, audience cible, tout ce que nous devons savoir."></textarea>
               </div>
 
               <!-- Honeypot — hidden from humans, bots fill it -->
@@ -163,11 +227,24 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     submitBtn.setAttribute('disabled', 'true');
 
     const data = new FormData(form);
+    const selectedServices = data.getAll('services').join(', ') || 'Aucun service sélectionné';
+    const selectedPlatforms = data.getAll('platforms').join(', ') || 'Aucune plateforme sélectionnée';
+    const selectedBudget = data.get('budget') || 'Non précisé';
+
+    const composedMessage = [
+      `Site internet : ${data.get('website') || 'N/A'}`,
+      `Services : ${selectedServices}`,
+      `Plateformes : ${selectedPlatforms}`,
+      `Budget : ${selectedBudget}`,
+      '',
+      data.get('message'),
+    ].join('\n');
+
     const body = {
       name: `${data.get('firstName')} ${data.get('lastName')}`,
       email: data.get('email'),
       company: data.get('company'),
-      message: `Website: ${data.get('website') || 'N/A'}\n\n${data.get('message')}`,
+      message: composedMessage,
       honeypot: data.get('website_url'),
       captcha: data.get('captcha'),
       captchaAnswer: data.get('captcha_answer'),

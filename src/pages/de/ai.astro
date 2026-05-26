@@ -1,0 +1,426 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import Container from '../../components/ui/Container.astro';
+import SectionBar from '../../components/ui/SectionBar.astro';
+import SectionHeading from '../../components/ui/SectionHeading.astro';
+import Button from '../../components/ui/Button.astro';
+---
+
+<PageLayout
+  title="KI verändert das Spiel | TheRedScroll"
+  description="Künstliche Intelligenz steckt in jeder unserer Leistungen, auf jeder Plattform, für jeden Kunden. Strategie bleibt menschlich. Kreativleitung ebenso. Alles andere übernimmt die KI."
+  lang="de"
+>
+
+  <!-- Hero -->
+  <section class="relative w-full min-h-[600px] max-[640px]:min-h-[500px] overflow-hidden">
+    <img
+      src="/images/ai/ai-hero.png"
+      alt=""
+      class="absolute inset-0 w-full h-full object-cover object-center"
+      aria-hidden="true"
+    />
+    <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.82]" aria-hidden="true"></div>
+
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[1024px]:pt-[128px] max-[1024px]:pb-[72px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+        Unsere KI
+      </p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[1024px]:text-[40px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        KI hat alles verschoben. Wir haben sie in unseren Alltag eingebaut.
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        In jeder unserer Leistungen. Auf jeder Plattform. Für jeden Kunden.
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/de/contact">Gespräch vereinbaren</Button>
+        <Button variant="secondary-dark" href="#how-it-works">Arbeitsweise ansehen</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[48px] max-[640px]:gap-[32px] items-start">
+        <div>
+          <SectionBar />
+          <SectionHeading overline="Warum KI">Bei uns ist KI keine Erzählung. Sie ist Arbeitsweise.</SectionHeading>
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            Marktanalyse, Social Listening, Reporting, Performance-Auswertung, Projektsteuerung, Redaktion, Bild- und Video-Produktion. In jedem Mandat, für jeden Kunden, Tag für Tag.
+          </p>
+        </div>
+        <div class="flex flex-col pt-[48px] max-[640px]:pt-[0px]">
+          <div class="flex flex-col gap-[24px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)] w-full">
+            <p>
+              Es geht nicht darum, jemanden zu ersetzen. Es geht darum, besser zu arbeiten. KI nimmt repetitive Aufgaben ab; unser Team konzentriert sich auf das Wesentliche: Strategie, Kreation, Kundenbeziehung.
+            </p>
+            <p>
+              Genau hier zeigt sich der Unterschied: zwischen denen, die über KI reden, und denen, die sie täglich einsetzen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- AI does the work -->
+  <section id="how-it-works" class="mt-[96px] max-[640px]:mt-[64px] scroll-mt-[76px]">
+    <Container>
+      <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[48px] max-[640px]:gap-[32px] items-center">
+        <div class="w-full bg-[#F0F1F4] rounded-[8px] p-[32px] max-[640px]:p-[20px]" aria-label="KI verstärkt jeden Schritt im Workflow">
+          <svg viewBox="0 0 440 400" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+            <text x="220" y="24" text-anchor="middle" fill="#5C5C5C" font-size="10" font-weight="500" font-family="Inter, sans-serif" letter-spacing="0.05em">KI-GESTÜTZTER WORKFLOW</text>
+
+            <rect x="20" y="48" width="400" height="52" rx="6" fill="#FFFFFF" stroke="#E8E0D8" stroke-width="0.5" />
+            <rect x="20" y="48" width="4" height="52" rx="2" fill="#CC3333" />
+            <text x="40" y="68" fill="#CC3333" font-size="9" font-weight="500" font-family="Inter, sans-serif">01</text>
+            <text x="60" y="68" fill="#1A1A1A" font-size="11" font-weight="500" font-family="Inter, sans-serif">Recherche</text>
+            <text x="40" y="86" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">KI sichtet Tausende Beiträge und Wettbewerbskonten</text>
+            <rect x="340" y="58" width="68" height="22" rx="4" fill="#CC3333" opacity="0.1" stroke="#CC3333" stroke-width="0.5" />
+            <text x="374" y="73" text-anchor="middle" fill="#CC3333" font-size="7" font-weight="500" font-family="Inter, sans-serif">Stunden, nicht Wochen</text>
+
+            <line x1="220" y1="100" x2="220" y2="116" stroke="#E8E0D8" stroke-width="1.5" />
+            <polygon points="215,114 220,122 225,114" fill="#E8E0D8" />
+
+            <rect x="20" y="124" width="400" height="52" rx="6" fill="#FFFFFF" stroke="#E8E0D8" stroke-width="0.5" />
+            <rect x="20" y="124" width="4" height="52" rx="2" fill="#CC3333" />
+            <text x="40" y="144" fill="#CC3333" font-size="9" font-weight="500" font-family="Inter, sans-serif">02</text>
+            <text x="60" y="144" fill="#1A1A1A" font-size="11" font-weight="500" font-family="Inter, sans-serif">Content-Produktion</text>
+            <text x="40" y="162" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">KI schreibt Texte, erzeugt Visuals über HubStudio.ai</text>
+            <rect x="340" y="134" width="68" height="22" rx="4" fill="#CC3333" opacity="0.1" stroke="#CC3333" stroke-width="0.5" />
+            <text x="374" y="149" text-anchor="middle" fill="#CC3333" font-size="7" font-weight="500" font-family="Inter, sans-serif">80 % schneller</text>
+
+            <line x1="220" y1="176" x2="220" y2="192" stroke="#E8E0D8" stroke-width="1.5" />
+            <polygon points="215,190 220,198 225,190" fill="#E8E0D8" />
+
+            <rect x="20" y="200" width="400" height="52" rx="6" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1" />
+            <rect x="20" y="200" width="4" height="52" rx="2" fill="#1A1A1A" />
+            <text x="40" y="220" fill="#1A1A1A" font-size="9" font-weight="500" font-family="Inter, sans-serif">03</text>
+            <text x="60" y="220" fill="#1A1A1A" font-size="11" font-weight="500" font-family="Inter, sans-serif">Menschliche Endredaktion</text>
+            <text x="40" y="238" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">Muttersprachler überarbeiten. Kreativteam gibt frei.</text>
+            <rect x="340" y="210" width="68" height="22" rx="4" fill="#1A1A1A" opacity="0.08" stroke="#1A1A1A" stroke-width="0.5" />
+            <text x="374" y="225" text-anchor="middle" fill="#1A1A1A" font-size="7" font-weight="500" font-family="Inter, sans-serif">100 % menschlich</text>
+
+            <line x1="220" y1="252" x2="220" y2="268" stroke="#E8E0D8" stroke-width="1.5" />
+            <polygon points="215,266 220,274 225,266" fill="#E8E0D8" />
+
+            <rect x="20" y="276" width="400" height="52" rx="6" fill="#FFFFFF" stroke="#E8E0D8" stroke-width="0.5" />
+            <rect x="20" y="276" width="4" height="52" rx="2" fill="#CC3333" />
+            <text x="40" y="296" fill="#CC3333" font-size="9" font-weight="500" font-family="Inter, sans-serif">04</text>
+            <text x="60" y="296" fill="#1A1A1A" font-size="11" font-weight="500" font-family="Inter, sans-serif">Reporting</text>
+            <text x="40" y="314" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">KI bündelt Daten. Strategen lesen sie aus.</text>
+            <rect x="340" y="286" width="68" height="22" rx="4" fill="#CC3333" opacity="0.1" stroke="#CC3333" stroke-width="0.5" />
+            <text x="374" y="301" text-anchor="middle" fill="#CC3333" font-size="7" font-weight="500" font-family="Inter, sans-serif">Echtzeit-Daten</text>
+
+            <line x1="20" y1="348" x2="420" y2="348" stroke="#E8E0D8" stroke-width="0.5" />
+
+            <g transform="translate(20, 364)">
+              <text x="0" y="12" fill="#CC3333" font-size="18" font-weight="500" font-family="Inter, sans-serif">KI</text>
+              <text x="0" y="26" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">trägt das Volumen</text>
+            </g>
+            <g transform="translate(150, 364)">
+              <text x="0" y="12" fill="#1A1A1A" font-size="18" font-weight="500" font-family="Inter, sans-serif">Menschen</text>
+              <text x="0" y="26" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">behalten die Denkarbeit</text>
+            </g>
+            <g transform="translate(310, 364)">
+              <text x="0" y="12" fill="#1A1A1A" font-size="18" font-weight="500" font-family="Inter, sans-serif">100 %</text>
+              <text x="0" y="26" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">menschlich gegengelesen</text>
+            </g>
+          </svg>
+        </div>
+        <div>
+          <SectionBar />
+          <SectionHeading overline="So funktioniert es">Die Produktion an die KI. Die Denkarbeit zu uns.</SectionHeading>
+          <div class="flex flex-col gap-[24px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Unsere Social-Media-Verantwortlichen arbeiten Hand in Hand mit der KI. Repetitive Aufgaben, die Zeit kosten ohne Wert zu schaffen, fallen weg. Übrig bleibt die Arbeit, auf die es ankommt.
+            </p>
+            <p>
+              Strategie bleibt menschlich. Kreativleitung ebenso. Die Kundenbeziehung auch. KI verstärkt nur die Reichweite, indem sie alles aus dem Weg räumt, was den Weg verstellt.
+            </p>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- AI vs Human table -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[48px] max-[640px]:gap-[32px] items-center">
+        <div>
+          <SectionBar />
+          <SectionHeading overline="Wer macht was">Der KI das Volumen. Dem Menschen das Urteil.</SectionHeading>
+          <div class="flex flex-col gap-[24px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              KI schreibt auf Chinesisch wie auf Englisch. Unser Team legt das Fundament: Markenstimme, redaktionelle Eckpfeiler. KI produziert Visuals und Videos; unser Team entscheidet über die Kreativrichtung und gibt jedes Element vor der Veröffentlichung frei.
+            </p>
+            <p>
+              KI bündelt Performance-Daten in strukturierten Reports. Unsere Strategen lesen sie aus und steuern Ihre Strategie entsprechend nach. KI sichtet Tausende KOL-Profile und entlarvt Fake-Follower. Unser Team wählt die richtigen Influencer aus und verhandelt die Verträge.
+            </p>
+          </div>
+          <div class="bg-[#F0F1F4] border-l-[3px] border-[#CC3333] rounded-none p-[20px] mt-[24px]">
+            <p class="text-[16px] font-normal text-[#1A1A1A] leading-[1.6] m-0">
+              Jeder Content wird vor Veröffentlichung von einem Menschen gegengelesen. Ohne Ausnahme.
+            </p>
+          </div>
+        </div>
+        <div class="w-full bg-[#F0F1F4] rounded-[8px] p-[32px] max-[640px]:p-[20px]" aria-label="Aufgabenteilung zwischen KI und Mensch">
+          <svg viewBox="0 0 440 420" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+            <text x="220" y="24" text-anchor="middle" fill="#5C5C5C" font-size="10" font-weight="500" font-family="Inter, sans-serif" letter-spacing="0.05em">WER MACHT WAS</text>
+
+            <rect x="20" y="44" width="196" height="28" rx="4" fill="#CC3333" opacity="0.1" />
+            <text x="118" y="62" text-anchor="middle" fill="#CC3333" font-size="9" font-weight="500" font-family="Inter, sans-serif" letter-spacing="0.03em">KI ÜBERNIMMT</text>
+            <rect x="224" y="44" width="196" height="28" rx="4" fill="#1A1A1A" opacity="0.06" />
+            <text x="322" y="62" text-anchor="middle" fill="#1A1A1A" font-size="9" font-weight="500" font-family="Inter, sans-serif" letter-spacing="0.03em">UNSER TEAM ÜBERNIMMT</text>
+
+            <line x1="20" y1="84" x2="420" y2="84" stroke="#E8E0D8" stroke-width="0.5" />
+            <text x="28" y="102" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">Schreibt auf Chinesisch und Englisch</text>
+            <text x="232" y="102" fill="#1A1A1A" font-size="8" font-weight="500" font-family="Inter, sans-serif">Legt Markenstimme und Content-Säulen fest</text>
+
+            <line x1="20" y1="116" x2="420" y2="116" stroke="#E8E0D8" stroke-width="0.5" />
+            <text x="28" y="134" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">Erzeugt Visuals und Videos</text>
+            <text x="232" y="134" fill="#1A1A1A" font-size="8" font-weight="500" font-family="Inter, sans-serif">Entscheidet die Kreativrichtung, gibt jedes Element frei</text>
+
+            <line x1="20" y1="148" x2="420" y2="148" stroke="#E8E0D8" stroke-width="0.5" />
+            <text x="28" y="166" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">Bündelt Performance-Daten</text>
+            <text x="232" y="166" fill="#1A1A1A" font-size="8" font-weight="500" font-family="Inter, sans-serif">Liest die Zahlen aus und justiert die Strategie</text>
+
+            <line x1="20" y1="180" x2="420" y2="180" stroke="#E8E0D8" stroke-width="0.5" />
+            <text x="28" y="198" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">Beobachtet Mentions und erkennt Trends</text>
+            <text x="232" y="198" fill="#1A1A1A" font-size="8" font-weight="500" font-family="Inter, sans-serif">Entscheidet, was aufzugreifen ist und wie</text>
+
+            <line x1="20" y1="212" x2="420" y2="212" stroke="#E8E0D8" stroke-width="0.5" />
+            <text x="28" y="230" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">Verfolgt Termine und Freigaben</text>
+            <text x="232" y="230" fill="#1A1A1A" font-size="8" font-weight="500" font-family="Inter, sans-serif">Leitet Workshops, stellt die richtigen Fragen</text>
+
+            <line x1="20" y1="244" x2="420" y2="244" stroke="#E8E0D8" stroke-width="0.5" />
+            <text x="28" y="262" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">Sichtet Tausende Wettbewerbsbeiträge</text>
+            <text x="232" y="262" fill="#1A1A1A" font-size="8" font-weight="500" font-family="Inter, sans-serif">Wählt Plattformen passend zur Zielgruppe</text>
+
+            <line x1="20" y1="276" x2="420" y2="276" stroke="#E8E0D8" stroke-width="0.5" />
+            <text x="28" y="294" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">Schreibt erste Versionen monatlicher Reports</text>
+            <text x="232" y="294" fill="#1A1A1A" font-size="8" font-weight="500" font-family="Inter, sans-serif">Formuliert die strategischen Empfehlungen</text>
+
+            <line x1="20" y1="308" x2="420" y2="308" stroke="#E8E0D8" stroke-width="0.5" />
+            <text x="28" y="326" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">Filtert KOL-Profile, entlarvt Fake-Follower</text>
+            <text x="232" y="326" fill="#1A1A1A" font-size="8" font-weight="500" font-family="Inter, sans-serif">Wählt Influencer aus, verhandelt Verträge</text>
+            <line x1="20" y1="340" x2="420" y2="340" stroke="#E8E0D8" stroke-width="0.5" />
+
+            <g transform="translate(20, 360)">
+              <rect x="0" y="0" width="196" height="40" rx="6" fill="#CC3333" opacity="0.08" />
+              <text x="98" y="17" text-anchor="middle" fill="#CC3333" font-size="14" font-weight="500" font-family="Inter, sans-serif">Tempo und Volumen</text>
+              <text x="98" y="32" text-anchor="middle" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">Volumen, Daten, erste Entwürfe</text>
+            </g>
+            <g transform="translate(224, 360)">
+              <rect x="0" y="0" width="196" height="40" rx="6" fill="#1A1A1A" opacity="0.06" />
+              <text x="98" y="17" text-anchor="middle" fill="#1A1A1A" font-size="14" font-weight="500" font-family="Inter, sans-serif">Urteil und Gespür</text>
+              <text x="98" y="32" text-anchor="middle" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">Strategie, Nuancen, Beziehungen</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Better content -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="bg-[#F0F1F4] rounded-[10px] p-[48px] max-[1024px]:p-[32px]">
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[24px] text-center">Qualitäts-Content. Niemals Content von der Stange.</p>
+        <div class="grid grid-cols-3 max-[640px]:grid-cols-1 gap-[32px] max-[640px]:gap-[24px] text-center">
+          <div>
+            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[#1A1A1A] mb-[4px]">0</p>
+            <p class="text-[13px] font-normal text-[#5C5C5C] leading-[1.4]">Generische KI-Inhalte veröffentlicht</p>
+          </div>
+          <div>
+            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[#1A1A1A] mb-[4px]">100 %</p>
+            <p class="text-[13px] font-normal text-[#5C5C5C] leading-[1.4]">Inhalte menschlich gegengelesen</p>
+          </div>
+          <div>
+            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[#CC3333] mb-[4px]">Jeder Text</p>
+            <p class="text-[13px] font-normal text-[#5C5C5C] leading-[1.4]">Überarbeitet von chinesischen Muttersprachlern</p>
+          </div>
+        </div>
+        <div class="max-w-[680px] mx-auto mt-[32px] flex flex-col gap-[24px] text-center">
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            Wir veröffentlichen niemals Billig-KI-Content. Keine generischen Posts, keine mechanischen Captions, keine künstlich wirkenden Bilder, die in einen Feed gekippt werden. Auf chinesischen Plattformen ist das der sicherste Weg, Follower und Glaubwürdigkeit zu verlieren.
+          </p>
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)]">
+            KI schreibt; chinesische Muttersprachler überarbeiten jeden Text. KI erzeugt Visuals über HubStudio.ai; unser Kreativteam prüft jedes Bild. KI extrahiert Daten; unsere Strategen analysieren sie und ziehen klare Schlüsse.
+          </p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Where AI shows up -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <SectionBar />
+      <SectionHeading overline="Anwendungsfelder">Wo KI konkret im Einsatz ist</SectionHeading>
+
+      <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px] mt-[24px]">
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <img src="/images/ai/ai-market-research.svg" alt="Illustration Marktanalyse" class="w-full rounded-[8px] mb-[16px]" loading="lazy" decoding="async" />
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Marktanalyse</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">KI durchforstet Tausende Beiträge, Kommentare und Wettbewerbskonten in wenigen Stunden. Früher dauerte das Wochen.</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <img src="/images/ai/ai-social-listening.svg" alt="Illustration Social Listening" class="w-full rounded-[8px] mb-[16px]" loading="lazy" decoding="async" />
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Social Listening</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Permanente Überwachung auf WeChat, Douyin, RedNote, Weibo und vierzehn weiteren Plattformen. KI erkennt schwache Signale, erfasst Stimmungsverschiebungen und verfolgt Markennennungen in Echtzeit.</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <img src="/images/ai/ai-content-writing.svg" alt="Illustration Redaktion" class="w-full rounded-[8px] mb-[16px]" loading="lazy" decoding="async" />
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Redaktion</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">KI liefert erste Versionen auf Chinesisch und Englisch. Muttersprachliche Redakteure überarbeiten danach Ton, kulturelle Referenzen und die Codes der jeweiligen Plattform.</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <img src="/images/ai/ai-image-video.svg" alt="Illustration Bild- und Video-Produktion" class="w-full rounded-[8px] mb-[16px]" loading="lazy" decoding="async" />
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Bild und Video</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">HubStudio.ai erzeugt Ihre Produktvisuals, Lifestyle-Bilder und Kurzvideos. KI-Modelle, individuell auf Ihre Markenidentität trainiert. Achtzig Prozent schneller, zu einem Bruchteil der Kosten.</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <img src="/images/ai/ai-performance-reporting.svg" alt="Illustration Performance-Reporting" class="w-full rounded-[8px] mb-[16px]" loading="lazy" decoding="async" />
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Reporting</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">KI fasst die Daten aller Plattformen in einem klaren, einheitlichen Report zusammen. Schluss mit handgepflegten Tabellen, Schluss mit drei Wochen Wartezeit.</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <img src="/images/ai/ai-project-management.svg" alt="Illustration Projektsteuerung" class="w-full rounded-[8px] mb-[16px]" loading="lazy" decoding="async" />
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Projektsteuerung</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">KI verfolgt Termine, Content-Freigaben und Kampagnen-Meilensteine. Nichts rutscht mehr durch.</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Budget -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[48px] max-[640px]:gap-[32px] items-center">
+        <div>
+          <SectionBar />
+          <SectionHeading overline="Ihr Budget">Was sich für Ihr Budget konkret ändert</SectionHeading>
+          <div class="flex flex-col gap-[24px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Die meisten Agenturen verrechnen große Teams, die alles per Hand erledigen. Wir arbeiten mit schlanken Strukturen, weil KI das verstärkt, was jede einzelne Person leisten kann.
+            </p>
+            <p>
+              So können wir Pakete mit festem Preis und klarem Umfang anbieten. Wir wissen genau, was es braucht, weil wir die Werkzeuge selbst gebaut haben.
+            </p>
+            <p class="text-[var(--color-stone)]">
+              Sie bekommen mehr Content, mehr Reporting und mehr strategische Aufmerksamkeit für dasselbe Budget. Oder umgekehrt: dasselbe Volumen zu geringeren Kosten.
+            </p>
+          </div>
+        </div>
+        <div class="w-full bg-[#F0F1F4] rounded-[8px] p-[32px] max-[640px]:p-[20px]" aria-label="Kostenvergleich: klassische Agentur gegen TheRedScroll mit KI">
+          <svg viewBox="0 0 440 340" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+            <text x="220" y="24" text-anchor="middle" fill="#5C5C5C" font-size="10" font-weight="500" font-family="Inter, sans-serif" letter-spacing="0.05em">KOSTENSTRUKTUR</text>
+
+            <text x="20" y="62" fill="#5C5C5C" font-size="9" font-weight="500" font-family="Inter, sans-serif" letter-spacing="0.03em">KLASSISCHE AGENTUR</text>
+
+            <rect x="20" y="74" width="400" height="36" rx="6" fill="#E8E0D8" />
+            <line x1="70" y1="74" x2="70" y2="110" stroke="#FFFFFF" stroke-width="1" opacity="0.6" />
+            <line x1="135" y1="74" x2="135" y2="110" stroke="#FFFFFF" stroke-width="1" opacity="0.6" />
+            <line x1="200" y1="74" x2="200" y2="110" stroke="#FFFFFF" stroke-width="1" opacity="0.6" />
+            <line x1="270" y1="74" x2="270" y2="110" stroke="#FFFFFF" stroke-width="1" opacity="0.6" />
+            <line x1="340" y1="74" x2="340" y2="110" stroke="#FFFFFF" stroke-width="1" opacity="0.6" />
+
+            <text x="45" y="96" text-anchor="middle" fill="#5C5C5C" font-size="7" font-family="Inter, sans-serif">Planner</text>
+            <text x="102" y="96" text-anchor="middle" fill="#5C5C5C" font-size="7" font-family="Inter, sans-serif">Texter</text>
+            <text x="167" y="96" text-anchor="middle" fill="#5C5C5C" font-size="7" font-family="Inter, sans-serif">Grafiker</text>
+            <text x="235" y="96" text-anchor="middle" fill="#5C5C5C" font-size="7" font-family="Inter, sans-serif">Video-Cutter</text>
+            <text x="305" y="96" text-anchor="middle" fill="#5C5C5C" font-size="7" font-family="Inter, sans-serif">Projektleiter</text>
+            <text x="370" y="96" text-anchor="middle" fill="#5C5C5C" font-size="7" font-family="Inter, sans-serif">Account-Lead</text>
+
+            <text x="420" y="126" text-anchor="end" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">6 Rollen je Projekt verrechnet</text>
+
+            <line x1="20" y1="148" x2="420" y2="148" stroke="#E8E0D8" stroke-width="0.5" />
+
+            <text x="20" y="178" fill="#CC3333" font-size="9" font-weight="500" font-family="Inter, sans-serif" letter-spacing="0.03em">THEREDSCROLL + KI</text>
+
+            <rect x="20" y="190" width="160" height="36" rx="6" fill="#CC3333" />
+            <text x="100" y="212" text-anchor="middle" fill="#FFFFFF" font-size="9" font-weight="500" font-family="Inter, sans-serif">Stratege + KI</text>
+
+            <rect x="188" y="190" width="232" height="36" rx="6" fill="#FFFFFF" stroke="#E8E0D8" stroke-width="0.5" stroke-dasharray="4 4" />
+            <text x="304" y="212" text-anchor="middle" fill="#E8E0D8" font-size="9" font-family="Inter, sans-serif">Eingesparte Kosten</text>
+
+            <text x="420" y="242" text-anchor="end" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">1 Senior-Profil, KI-gestützt</text>
+
+            <line x1="20" y1="268" x2="420" y2="268" stroke="#E8E0D8" stroke-width="0.5" />
+
+            <g transform="translate(20, 284)">
+              <text x="0" y="14" fill="#1A1A1A" font-size="20" font-weight="500" font-family="Inter, sans-serif">Fest</text>
+              <text x="0" y="30" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">Preis je Paket</text>
+            </g>
+            <g transform="translate(160, 284)">
+              <text x="0" y="14" fill="#1A1A1A" font-size="20" font-weight="500" font-family="Inter, sans-serif">Klar</text>
+              <text x="0" y="30" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">definierter Umfang</text>
+            </g>
+            <g transform="translate(300, 284)">
+              <text x="0" y="14" fill="#CC3333" font-size="20" font-weight="500" font-family="Inter, sans-serif">Mehr</text>
+              <text x="0" y="30" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">Ergebnis für gleiches Budget</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- The result -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="bg-[#1A1A1A] rounded-[12px] p-[48px] max-[1024px]:p-[32px] max-[640px]:p-[32px_20px]">
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">Das Ergebnis</p>
+        <h2 class="text-[#FFFFFF] text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] mb-[32px] max-[640px]:mb-[24px]">Mehr Follower. Mehr Interaktion. Mehr Conversions.</h2>
+        <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[24px]">
+          <div>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Besserer Content, schneller</h3>
+            <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+              KI-Entwürfe ermöglichen mehr Veröffentlichungen, in kürzeren Abständen. Muttersprachliche Redakteure sorgen dafür, dass jeder Post den Codes der Plattform folgt und kulturell stimmig klingt.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Daten in Echtzeit</h3>
+            <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+              Schluss mit drei Wochen Wartezeit auf einen Report. KI bündelt die Zahlen aller Plattformen und unsere Strategen justieren Ihre Kampagnen nach, während sie noch laufen.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Präzisere Influencer-Auswahl</h3>
+            <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+              KI sortiert Tausende KOL-Profile und entlarvt Fake-Follower. Unser Team behält am Ende nur die, die wirklich zu Ihrer Marke passen, und verhandelt die Konditionen.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Fester Preis, bessere Ergebnisse</h3>
+            <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+              KI lässt uns mehr Content, mehr Reports und mehr strategische Betreuung für dasselbe Budget liefern. So halten wir unsere Zusage des festen Preises.
+            </p>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- CTA -->
+  <section class="mt-[96px] max-[640px]:mt-[64px] mb-[0px]">
+    <div class="w-full bg-[var(--color-rice-paper)] py-[64px] max-[1024px]:py-[56px] max-[640px]:py-[48px] px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px]">
+      <div class="max-w-[600px] mx-auto text-center">
+        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[8px]">
+          Sie wollen sehen, wie das in der Praxis funktioniert?
+        </h2>
+        <p class="text-[14px] text-[var(--color-stone)] font-normal leading-[1.6] mb-[24px]">
+          Ein Gespräch reicht. Wir zeigen Ihnen die Werkzeuge, das Team und die Ergebnisse.
+        </p>
+        <div class="flex items-center justify-center gap-[12px] flex-wrap">
+          <Button variant="primary" href="/de/contact">Gespräch vereinbaren</Button>
+          <Button variant="secondary" href="/de/pricing">Preise ansehen</Button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</PageLayout>

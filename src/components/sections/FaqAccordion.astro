@@ -10,16 +10,16 @@ interface FaqItem {
 interface Props {
   faqs: FaqItem[];
   subtitle?: string;
-  lang?: 'en' | 'fr' | 'zh';
+  lang?: 'en' | 'fr' | 'zh' | 'es' | 'de';
 }
 
 const { faqs, subtitle = 'Everything you need to know about working with TheRedScroll.', lang = 'en' } = Astro.props;
-const heading = lang === 'zh' ? '常见问题' : lang === 'fr' ? 'Questions fréquentes' : 'Frequently asked questions';
+const heading = lang === 'zh' ? '常见问题' : lang === 'fr' ? 'Questions fréquentes' : lang === 'es' ? 'Preguntas frecuentes' : lang === 'de' ? 'Häufige Fragen' : 'Frequently asked questions';
 ---
 
 <section class="mt-[96px] max-[640px]:mt-[64px] mb-[96px] max-[640px]:mb-[64px]">
   <Container>
-    <div class="grid grid-cols-[340px_1fr] max-[1024px]:grid-cols-[280px_1fr] max-[768px]:grid-cols-1 gap-[48px] max-[768px]:gap-[32px]">
+    <div class="grid grid-cols-[340px_1fr] max-[1024px]:grid-cols-1 gap-[48px] max-[1024px]:gap-[32px]">
       <!-- Left: heading -->
       <div>
         <div class="sticky top-[84px] max-[640px]:static">

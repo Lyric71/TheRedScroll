@@ -22,19 +22,19 @@ import Button from '../../components/ui/Button.astro';
     />
     <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.82]" aria-hidden="true"></div>
 
-    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[1024px]:pt-[128px] max-[1024px]:pb-[72px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
       <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
         Notre IA
       </p>
-      <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
-        L'IA a tout changé. Nous en avons fait notre quotidien.
+      <h1 class="text-[#FFFFFF] text-[48px] max-[1024px]:text-[40px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        L'IA a tout déplacé. Nous l'avons intégrée à notre quotidien.
       </h1>
       <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
         Dans chacun de nos métiers. Sur chaque plateforme. Pour chaque client.
       </p>
       <div class="flex items-center justify-center gap-[12px] flex-wrap">
         <Button variant="primary" href="/fr/contact">Prendre rendez-vous</Button>
-        <Button variant="secondary-dark" href="#how-it-works">Voir comment ça fonctionne</Button>
+        <Button variant="secondary-dark" href="#how-it-works">Voir le mode opératoire</Button>
       </div>
     </div>
   </section>
@@ -48,17 +48,17 @@ import Button from '../../components/ui/Button.astro';
           <SectionBar />
           <SectionHeading overline="Pourquoi l'IA">Chez nous, l'IA n'est pas un discours. C'est une méthode de travail.</SectionHeading>
           <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
-            Études de marché, veille sociale, reporting, analyse de performance, gestion de projet, rédaction, production d'images et de vidéos. Pour chaque mission. Pour chaque client. Au quotidien.
+            Études de marché, veille conversationnelle, reporting, analyse de performance, gestion de projet, rédaction, production d'images et de vidéos. Pour chaque mission, pour chaque client, au quotidien.
           </p>
         </div>
         <!-- Right -->
         <div class="flex flex-col pt-[48px] max-[640px]:pt-[0px]">
           <div class="flex flex-col gap-[24px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)] w-full">
             <p>
-              Il ne s'agit pas de remplacer qui que ce soit, mais de permettre à chacun de mieux travailler. L'IA absorbe les tâches répétitives ; notre équipe se consacre à l'essentiel : la stratégie, la création, la relation client.
+              Aucune intention de remplacer qui que ce soit. L'enjeu reste de mieux travailler. L'IA absorbe les tâches répétitives ; notre équipe se concentre sur l'essentiel : stratégie, création, relation client.
             </p>
             <p>
-              Toute la différence, c'est celle qui sépare ceux qui parlent de l'IA de ceux qui s'en servent vraiment.
+              La distinction se fait là : entre ceux qui parlent de l'IA et ceux qui s'en servent quotidiennement.
             </p>
           </div>
         </div>
@@ -250,7 +250,7 @@ import Button from '../../components/ui/Button.astro';
   <!-- Better content — rice paper card, same as about page "clients who trust" stats section -->
   <section class="mt-[96px] max-[640px]:mt-[64px]">
     <Container>
-      <div class="bg-[#F0F1F4] rounded-[10px] p-[48px] max-[640px]:p-[32px]">
+      <div class="bg-[#F0F1F4] rounded-[10px] p-[48px] max-[1024px]:p-[32px]">
         <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[24px] text-center">Du contenu de qualité. Jamais de contenu au rabais.</p>
         <div class="grid grid-cols-3 max-[640px]:grid-cols-1 gap-[32px] max-[640px]:gap-[24px] text-center">
           <div>
@@ -401,7 +401,7 @@ import Button from '../../components/ui/Button.astro';
   <!-- The result — dark section (1 per page, same pattern as about page "What makes us different") -->
   <section class="mt-[96px] max-[640px]:mt-[64px]">
     <Container>
-      <div class="bg-[#1A1A1A] rounded-[12px] p-[48px] max-[640px]:p-[32px_20px]">
+      <div class="bg-[#1A1A1A] rounded-[12px] p-[48px] max-[1024px]:p-[32px] max-[640px]:p-[32px_20px]">
         <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">Le résultat</p>
         <h2 class="text-[#FFFFFF] text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] mb-[32px] max-[640px]:mb-[24px]">Plus d'abonnés. Plus d'engagement. Plus de conversions.</h2>
         <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[24px]">
@@ -436,7 +436,7 @@ import Button from '../../components/ui/Button.astro';
 
   <!-- CTA — same pattern as about page bottom CTA -->
   <section class="mt-[96px] max-[640px]:mt-[64px] mb-[0px]">
-    <div class="w-full bg-[var(--color-rice-paper)] py-[64px] max-[640px]:py-[48px] px-[48px] max-[640px]:px-[20px]">
+    <div class="w-full bg-[var(--color-rice-paper)] py-[64px] max-[1024px]:py-[56px] max-[640px]:py-[48px] px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px]">
       <div class="max-w-[600px] mx-auto text-center">
         <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[8px]">
           Envie de voir comment cela fonctionne ?

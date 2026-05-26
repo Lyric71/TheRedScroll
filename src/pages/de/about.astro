@@ -1,0 +1,588 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import Container from '../../components/ui/Container.astro';
+import SectionBar from '../../components/ui/SectionBar.astro';
+import SectionHeading from '../../components/ui/SectionHeading.astro';
+import Button from '../../components/ui/Button.astro';
+---
+
+<PageLayout
+  title="Über uns | TheRedScroll"
+  description="TheRedScroll ist eine Social-Media-Agentur mit Sitz in China. Klarer Umfang, fester Preis, Team vor Ort. Zwischen Shanghai und Hongkong, Tag für Tag."
+  lang="de"
+>
+
+  <!-- Hero -->
+  <section class="relative w-full min-h-[600px] max-[640px]:min-h-[500px] overflow-hidden">
+    <div
+      class="absolute inset-0 bg-cover bg-center bg-fixed max-[640px]:bg-scroll"
+      style="background-image: url('/images/team/team-photo.png')"
+      aria-hidden="true"
+    ></div>
+    <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.82]" aria-hidden="true"></div>
+
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[1024px]:pt-[128px] max-[1024px]:pb-[72px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+        Über uns
+      </p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[1024px]:text-[40px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        Die Menschen, die Ihre Marke in China tragen.
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        Fünfundzwanzig Jahre Erfahrung auf dem Markt. Ein erfahrenes Team. Keine Subunternehmer.
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/de/contact">Gespräch vereinbaren</Button>
+        <Button variant="secondary-dark" href="#leadership">Das Team kennenlernen</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why we exist -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[48px] max-[640px]:gap-[32px] items-start">
+        <div>
+          <SectionBar />
+          <SectionHeading overline="Warum es uns gibt">Die meisten Agenturen verkaufen Strategie. Die Umsetzung landet anschließend bei Teams, die Douyin noch nie geöffnet haben.</SectionHeading>
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            Eine glanzvolle Präsentation, ein paar Sätze, die gut klingen. Dahinter ein Junior-Team, das die Codes von RedNote nicht kennt und denselben Inhalt auf jede Plattform kippt. Sechs Monate später kann niemand mehr sagen, wo das Budget hingewandert ist.
+          </p>
+        </div>
+        <div class="flex flex-col items-end pt-[48px] max-[640px]:pt-[0px]">
+          <div class="flex flex-col gap-[24px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)] mb-[32px] w-full">
+            <p>
+              TheRedScroll haben wir gegründet, um mit diesem Muster zu brechen. Bei uns veröffentlichen jene, die die Strategie entwickeln, auch den Content. Der Preis steht fest, die Ergebnisse sind messbar.
+            </p>
+            <p>
+              Konkrete Arbeit, sichtbar auf den Plattformen, jeden Tag, aus China heraus.
+            </p>
+          </div>
+          <div class="flex items-center gap-[16px]">
+            <img
+              src="/images/team/Cyril-Drouin-Signature-Transparent.png"
+              alt="Unterschrift von Cyril Drouin"
+              width="100"
+              height="60"
+              class="shrink-0"
+              style="width: 100px; height: auto; filter: brightness(0) saturate(100%) invert(23%) sepia(95%) saturate(2068%) hue-rotate(346deg) brightness(89%) contrast(89%);"
+              loading="lazy"
+              decoding="async"
+            />
+            <div>
+              <p class="text-[14px] font-medium text-[var(--color-ink)] leading-[1.4]">Cyril Drouin</p>
+              <p class="text-[13px] font-normal text-[var(--color-stone)] leading-[1.4]">Gründer und CEO, TheRedScroll</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Our mission -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[48px] max-[640px]:gap-[32px] items-center">
+        <div class="w-full bg-[#F0F1F4] rounded-[8px] p-[32px] max-[640px]:p-[20px]" aria-label="Telefon-Bildschirme mit Wachstum in chinesischen sozialen Netzwerken">
+          <svg viewBox="0 0 480 400" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+            <g transform="translate(20, 40)">
+              <rect x="0" y="0" width="130" height="240" rx="16" fill="#1A1A1A" />
+              <rect x="4" y="4" width="122" height="232" rx="14" fill="#FFFFFF" />
+              <rect x="4" y="4" width="122" height="28" rx="14" fill="#1A1A1A" />
+              <circle cx="65" cy="18" r="4" fill="#333" />
+              <text x="65" y="50" text-anchor="middle" fill="#1A1A1A" font-size="9" font-weight="500" font-family="Inter, sans-serif">Douyin</text>
+              <rect x="14" y="60" width="102" height="70" rx="6" fill="#F7F2EE" />
+              <text x="14" y="150" fill="#5C5C5C" font-size="7" font-family="Inter, sans-serif">Follower</text>
+              <text x="14" y="163" fill="#1A1A1A" font-size="11" font-weight="500" font-family="Inter, sans-serif">127,4K</text>
+              <polyline points="14,210 34,200 54,195 74,185 94,175 116,160" stroke="#CC3333" stroke-width="2" fill="none" stroke-linecap="round" />
+              <circle cx="116" cy="160" r="3" fill="#CC3333" />
+              <text x="80" y="224" fill="#CC3333" font-size="8" font-weight="500" font-family="Inter, sans-serif">+34%</text>
+            </g>
+
+            <g transform="translate(175, 10)">
+              <rect x="0" y="0" width="130" height="260" rx="16" fill="#1A1A1A" />
+              <rect x="4" y="4" width="122" height="252" rx="14" fill="#FFFFFF" />
+              <rect x="4" y="4" width="122" height="28" rx="14" fill="#07C160" />
+              <text x="65" y="22" text-anchor="middle" fill="#FFFFFF" font-size="8" font-weight="500" font-family="Inter, sans-serif">WeChat</text>
+              <rect x="14" y="42" width="102" height="50" rx="6" fill="#F7F2EE" />
+              <rect x="14" y="100" width="102" height="50" rx="6" fill="#F7F2EE" />
+              <text x="14" y="172" fill="#5C5C5C" font-size="7" font-family="Inter, sans-serif">Artikelaufrufe</text>
+              <text x="14" y="185" fill="#1A1A1A" font-size="11" font-weight="500" font-family="Inter, sans-serif">89,2K</text>
+              <text x="14" y="205" fill="#5C5C5C" font-size="7" font-family="Inter, sans-serif">Engagement</text>
+              <text x="14" y="218" fill="#1A1A1A" font-size="11" font-weight="500" font-family="Inter, sans-serif">12,8%</text>
+              <polyline points="14,248 34,244 54,238 74,230 94,220 116,208" stroke="#07C160" stroke-width="2" fill="none" stroke-linecap="round" />
+              <circle cx="116" cy="208" r="3" fill="#07C160" />
+            </g>
+
+            <g transform="translate(330, 50)">
+              <rect x="0" y="0" width="130" height="240" rx="16" fill="#1A1A1A" />
+              <rect x="4" y="4" width="122" height="232" rx="14" fill="#FFFFFF" />
+              <rect x="4" y="4" width="122" height="28" rx="14" fill="#FF2442" />
+              <text x="65" y="22" text-anchor="middle" fill="#FFFFFF" font-size="8" font-weight="500" font-family="Inter, sans-serif">RedNote</text>
+              <rect x="14" y="40" width="48" height="48" rx="4" fill="#F7F2EE" />
+              <rect x="68" y="40" width="48" height="48" rx="4" fill="#F7F2EE" />
+              <rect x="14" y="94" width="48" height="48" rx="4" fill="#F7F2EE" />
+              <rect x="68" y="94" width="48" height="48" rx="4" fill="#F7F2EE" />
+              <text x="14" y="162" fill="#5C5C5C" font-size="7" font-family="Inter, sans-serif">Follower</text>
+              <text x="14" y="175" fill="#1A1A1A" font-size="11" font-weight="500" font-family="Inter, sans-serif">56,1K</text>
+              <polyline points="14,220 34,215 54,208 74,198 94,188 116,172" stroke="#FF2442" stroke-width="2" fill="none" stroke-linecap="round" />
+              <circle cx="116" cy="172" r="3" fill="#FF2442" />
+              <text x="80" y="230" fill="#FF2442" font-size="8" font-weight="500" font-family="Inter, sans-serif">+52%</text>
+            </g>
+
+            <g class="mission-badge mission-badge-1">
+              <rect x="145" y="290" width="90" height="28" rx="6" fill="#1A1A1A" />
+              <text x="190" y="308" text-anchor="middle" fill="#FFFFFF" font-size="8" font-weight="500" font-family="Inter, sans-serif">+2,4K heute</text>
+            </g>
+            <g class="mission-badge mission-badge-2">
+              <rect x="260" y="300" width="100" height="28" rx="6" fill="#CC3333" />
+              <text x="310" y="318" text-anchor="middle" fill="#FFFFFF" font-size="8" font-weight="500" font-family="Inter, sans-serif">Conversions +41%</text>
+            </g>
+            <g class="mission-badge mission-badge-3">
+              <rect x="50" y="310" width="84" height="28" rx="6" fill="#07C160" />
+              <text x="92" y="328" text-anchor="middle" fill="#FFFFFF" font-size="8" font-weight="500" font-family="Inter, sans-serif">89,2K Aufrufe</text>
+            </g>
+          </svg>
+        </div>
+        <div>
+          <SectionBar />
+          <SectionHeading overline="Unsere Mission">Marken auf Chinas sozialen Netzwerken zum Wachsen bringen.</SectionHeading>
+          <div class="flex flex-col gap-[24px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Nicht für eine weitere schicke Folie, sondern für greifbare Ergebnisse: Follower, Interaktion, Conversions.
+            </p>
+            <p>
+              Chinas Plattformen sind übersättigt und teuer. Lokale Marken beherrschen ihre Codes im Detail. Diesen Vorsprung aus dem Ausland aufzuholen, ist die eigentliche Herausforderung. Wir nehmen sie an: mit klar definiertem Umfang, festem Preis und einem Team, das täglich auf diesen Plattformen lebt.
+            </p>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Our vision -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[48px] max-[640px]:gap-[32px] items-center">
+        <div>
+          <SectionBar />
+          <SectionHeading overline="Unsere Vision">Ein guter Social-Media-Verantwortlicher, mit KI ausgestattet, kommt weiter als das alte Agenturmodell.</SectionHeading>
+          <div class="flex flex-col gap-[24px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Das klassische Modell summiert Rollen: Strategen, Texter, Grafiker, Projektleiter. Jede Stunde wird verrechnet. Gut die Hälfte hat noch nie etwas auf Douyin veröffentlicht.
+            </p>
+            <p>
+              Wir stützen uns auf HubStudio.ai für die Content-Produktion, Visuals und ersten Textversionen. Was früher eine Woche dauerte, ist an einem Tag erledigt. Strategie und kulturelle Lesart bleiben aber vollständig in der Hand unseres Teams. Daran wird auch keine Tool-Evolution etwas ändern.
+            </p>
+          </div>
+          <div class="bg-[#F0F1F4] border-l-[3px] border-[#CC3333] rounded-none p-[20px] mt-[24px]">
+            <p class="text-[16px] font-normal text-[#1A1A1A] leading-[1.6] m-0">
+              2025 hat der chinesische AIGC-Markt die Marke von 25,7 Milliarden Euro überschritten, getragen von 60 Prozent jährlichem Wachstum. Mehr als jeder zweite chinesische Werbetreibende setzt heute KI in der kreativen Produktion ein. Quelle: Marktdaten 2025.
+            </p>
+          </div>
+        </div>
+        <div class="w-full bg-[#F0F1F4] rounded-[8px] p-[32px] max-[640px]:p-[20px]" aria-label="Vergleich der Durchlaufzeit: altes Agenturmodell gegen TheRedScroll mit KI">
+          <svg viewBox="0 0 440 380" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+            <text x="220" y="24" text-anchor="middle" fill="#5C5C5C" font-size="10" font-weight="500" font-family="Inter, sans-serif" letter-spacing="0.05em">DURCHLAUFZEIT</text>
+
+            <text x="20" y="62" fill="#5C5C5C" font-size="9" font-weight="500" font-family="Inter, sans-serif" letter-spacing="0.03em">ALTES AGENTURMODELL</text>
+
+            <rect x="20" y="74" width="400" height="36" rx="6" fill="#E8E0D8" />
+
+            <line x1="100" y1="74" x2="100" y2="110" stroke="#FFFFFF" stroke-width="1" opacity="0.6" />
+            <line x1="180" y1="74" x2="180" y2="110" stroke="#FFFFFF" stroke-width="1" opacity="0.6" />
+            <line x1="260" y1="74" x2="260" y2="110" stroke="#FFFFFF" stroke-width="1" opacity="0.6" />
+            <line x1="340" y1="74" x2="340" y2="110" stroke="#FFFFFF" stroke-width="1" opacity="0.6" />
+
+            <text x="60" y="96" text-anchor="middle" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">Wo. 1</text>
+            <text x="140" y="96" text-anchor="middle" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">Wo. 2</text>
+            <text x="220" y="96" text-anchor="middle" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">Wo. 3</text>
+            <text x="300" y="96" text-anchor="middle" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">Wo. 4</text>
+            <text x="380" y="96" text-anchor="middle" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">Wo. 5</text>
+
+            <g transform="translate(20, 122)">
+              <rect x="0" y="0" width="76" height="22" rx="4" fill="#FFFFFF" stroke="#E8E0D8" stroke-width="0.5" />
+              <text x="38" y="14" text-anchor="middle" fill="#5C5C5C" font-size="7" font-family="Inter, sans-serif">Planner</text>
+
+              <rect x="82" y="0" width="76" height="22" rx="4" fill="#FFFFFF" stroke="#E8E0D8" stroke-width="0.5" />
+              <text x="120" y="14" text-anchor="middle" fill="#5C5C5C" font-size="7" font-family="Inter, sans-serif">Texter</text>
+
+              <rect x="164" y="0" width="76" height="22" rx="4" fill="#FFFFFF" stroke="#E8E0D8" stroke-width="0.5" />
+              <text x="202" y="14" text-anchor="middle" fill="#5C5C5C" font-size="7" font-family="Inter, sans-serif">Designer</text>
+
+              <rect x="246" y="0" width="76" height="22" rx="4" fill="#FFFFFF" stroke="#E8E0D8" stroke-width="0.5" />
+              <text x="284" y="14" text-anchor="middle" fill="#5C5C5C" font-size="7" font-family="Inter, sans-serif">Projektleiter</text>
+
+              <rect x="328" y="0" width="76" height="22" rx="4" fill="#FFFFFF" stroke="#E8E0D8" stroke-width="0.5" />
+              <text x="366" y="14" text-anchor="middle" fill="#5C5C5C" font-size="7" font-family="Inter, sans-serif">Account-Lead</text>
+            </g>
+
+            <line x1="20" y1="168" x2="420" y2="168" stroke="#E8E0D8" stroke-width="0.5" />
+
+            <text x="20" y="198" fill="#CC3333" font-size="9" font-weight="500" font-family="Inter, sans-serif" letter-spacing="0.03em">THEREDSCROLL + KI</text>
+
+            <rect x="20" y="210" width="80" height="36" rx="6" fill="#CC3333" class="vision-bar" />
+            <rect x="100" y="210" width="320" height="36" rx="6" fill="#FFFFFF" stroke="#E8E0D8" stroke-width="0.5" stroke-dasharray="4 4" />
+
+            <text x="60" y="232" text-anchor="middle" fill="#FFFFFF" font-size="9" font-weight="500" font-family="Inter, sans-serif">1 Tag</text>
+
+            <text x="260" y="232" text-anchor="middle" fill="#E8E0D8" font-size="9" font-family="Inter, sans-serif">Gewonnene Zeit</text>
+
+            <g transform="translate(20, 258)">
+              <rect x="0" y="0" width="110" height="22" rx="4" fill="#CC3333" opacity="0.1" stroke="#CC3333" stroke-width="0.5" />
+              <text x="55" y="14" text-anchor="middle" fill="#CC3333" font-size="7" font-weight="500" font-family="Inter, sans-serif">Stratege vor Ort</text>
+
+              <rect x="118" y="0" width="80" height="22" rx="4" fill="#1A1A1A" opacity="0.05" stroke="#1A1A1A" stroke-width="0.5" />
+              <text x="158" y="14" text-anchor="middle" fill="#1A1A1A" font-size="7" font-weight="500" font-family="Inter, sans-serif">HubStudio.ai</text>
+            </g>
+
+            <line x1="20" y1="304" x2="420" y2="304" stroke="#E8E0D8" stroke-width="0.5" />
+
+            <g transform="translate(20, 320)">
+              <text x="0" y="12" fill="#1A1A1A" font-size="20" font-weight="500" font-family="Inter, sans-serif">5x</text>
+              <text x="0" y="26" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">schneller</text>
+            </g>
+            <g transform="translate(140, 320)">
+              <text x="0" y="12" fill="#1A1A1A" font-size="20" font-weight="500" font-family="Inter, sans-serif">80%</text>
+              <text x="0" y="26" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">weniger abrechenbare Rollen</text>
+            </g>
+            <g transform="translate(290, 320)">
+              <text x="0" y="12" fill="#CC3333" font-size="20" font-weight="500" font-family="Inter, sans-serif">100%</text>
+              <text x="0" y="26" fill="#5C5C5C" font-size="8" font-family="Inter, sans-serif">Strategie menschlich getragen</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Leadership -->
+  <section id="leadership" class="mt-[96px] max-[640px]:mt-[64px] scroll-mt-[76px]">
+    <Container>
+      <SectionBar />
+      <SectionHeading overline="Leitung">Die Gesichter hinter TheRedScroll.</SectionHeading>
+      <div class="grid grid-cols-3 max-[640px]:grid-cols-1 gap-[16px] mt-[24px]">
+        <div class="leader-card bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
+          <img src="/images/team/Cyil-Drouin.jpg" alt="Cyril Drouin" class="w-full aspect-[3/4] object-cover object-top" loading="lazy" decoding="async" />
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[4px]">Cyril Drouin</h3>
+            <p class="text-[14px] font-normal text-[var(--color-stone)] leading-[1.5] mb-[12px]">Gründer und CEO</p>
+            <p class="text-[14px] font-normal text-[var(--color-stone)] leading-[1.5]">
+              Fünfundzwanzig Jahre in Digital, Werbung und Commerce. Zuvor CEO von Publicis Commerce and Performance Marketing für China und Nordasien.
+            </p>
+          </div>
+        </div>
+        <div class="leader-card bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
+          <img src="/images/team/Echo-peng.jpg" alt="Echo Peng" class="w-full aspect-[3/4] object-cover object-top" loading="lazy" decoding="async" />
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[4px]">Echo Peng</h3>
+            <p class="text-[14px] font-normal text-[var(--color-stone)] leading-[1.5] mb-[12px]">Senior-Direktorin</p>
+            <p class="text-[14px] font-normal text-[var(--color-stone)] leading-[1.5]">
+              Achtzehn Jahre in Online-Commerce und Digital in China. Zuvor Operations Director bei Publicis China.
+            </p>
+          </div>
+        </div>
+        <div class="leader-card bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
+          <img src="/images/team/Liyan-Ye.jpg" alt="Liyan Ye" class="w-full aspect-[3/4] object-cover object-top" loading="lazy" decoding="async" />
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[4px]">Liyan Ye</h3>
+            <p class="text-[14px] font-normal text-[var(--color-stone)] leading-[1.5] mb-[12px]">Senior-Direktorin</p>
+            <p class="text-[14px] font-normal text-[var(--color-stone)] leading-[1.5]">
+              Zwanzig Jahre Marketing-Erfahrung bei Fortune-500-Unternehmen in China.
+            </p>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Our team -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[48px] max-[640px]:gap-[32px] items-center">
+        <div>
+          <SectionBar />
+          <SectionHeading overline="Unser Team">Ehemalige Führungskräfte internationaler Agenturen, Plattform-Strategen, die täglich veröffentlichen.</SectionHeading>
+          <div class="flex flex-col gap-[24px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Strategen, die jeden Tag auf WeChat, Douyin, RedNote und Weibo posten. Content-Verantwortliche, die die Redaktionspläne Dutzender Marken in China gesteuert haben. Die meisten machen das seit mehr als zehn Jahren.
+            </p>
+            <p>
+              Wer Ihre redaktionelle Roadmap entwirft, sorgt auch dafür, dass der Content erscheint und performt. Keine Lücke zwischen dem, was auf dem Papier steht, und dem, was online geht.
+            </p>
+            <p>
+              Wir haben Beauty-Marken auf RedNote gestartet, Food-Communities auf WeChat aufgebaut und Automobil-Audiences auf Douyin strukturiert.
+            </p>
+          </div>
+        </div>
+        <img
+          src="/images/team/china-office.png"
+          alt="TheRedScroll-Büro in China"
+          class="w-full rounded-[8px] object-cover"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+    </Container>
+  </section>
+
+  <!-- Clients who trust our expertise -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="bg-[#F0F1F4] rounded-[10px] p-[48px] max-[1024px]:p-[32px]">
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[24px] text-center">Sie vertrauen uns</p>
+        <div id="stats-grid" class="grid grid-cols-4 max-[640px]:grid-cols-2 gap-[32px] max-[640px]:gap-[24px] text-center">
+          <div>
+            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[#1A1A1A] mb-[4px]" data-target="35" data-suffix="+">0</p>
+            <p class="text-[13px] font-normal text-[#5C5C5C] leading-[1.4]">Begleitete Marken</p>
+          </div>
+          <div>
+            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[#1A1A1A] mb-[4px]" data-target="500" data-suffix="M+">0</p>
+            <p class="text-[13px] font-normal text-[#5C5C5C] leading-[1.4]">EUR GMV im Online-Handel</p>
+          </div>
+          <div>
+            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[#1A1A1A] mb-[4px]" data-target="150" data-suffix="+">0</p>
+            <p class="text-[13px] font-normal text-[#5C5C5C] leading-[1.4]">Umgesetzte Kampagnen</p>
+          </div>
+          <div>
+            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[#1A1A1A] mb-[4px]" data-target="20" data-suffix="+">0</p>
+            <p class="text-[13px] font-normal text-[#5C5C5C] leading-[1.4]">Beratungsmandate</p>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Client logos -->
+  <section class="mt-[48px] max-[640px]:mt-[32px]">
+    <Container>
+      <div class="grid grid-cols-4 max-[1024px]:grid-cols-3 max-[640px]:grid-cols-2 gap-[12px]">
+        {[
+          'a2', 'Bacardi', 'BandO', 'Blue Insurance', 'Bowers and Wilkins', 'Cherry',
+          'Cigna', 'Codex', 'Costa', 'Danone', 'Electrolux', 'Estee Lauder',
+          'Eucerin', 'Ferrero', 'Gucci', 'Heineken', 'Honor', 'Huawei',
+          'iflyteklogo-2', 'iGuzzini', 'JAC', 'Kerry Food', 'KraftHeinz', 'Lavazza',
+          'logo-camper', 'LogoIntoYou', 'MagPie', 'Malteserrs', 'Marriot', 'Martina Pro',
+          'Mission Food', 'Nescafe', 'P&G', 'Pigeon', 'Pilot', 'ROC',
+          'Russel Athletic', 'Sanofi', 'Scarlett Blue', 'Shu uemura', 'Valio', 'Viessmann',
+        ].map((name) => (
+          <div class="logo-card flex items-center justify-center bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[8px] aspect-[3/2] px-[20px] cursor-pointer">
+            <img
+              src={`/images/clients/Logo/${name}.png`}
+              alt={name}
+              style="height: 72px; width: auto;"
+              class="logo-img object-contain opacity-40 grayscale"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        ))}
+      </div>
+    </Container>
+  </section>
+
+  <!-- Our values -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <SectionBar />
+      <SectionHeading overline="Unsere Werte">Die Überzeugungen, die jede unserer Entscheidungen leiten.</SectionHeading>
+      <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-x-[48px] gap-y-[0px] mt-[24px]">
+        <div class="pt-[24px] pb-[32px]">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="mb-[16px]">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" />
+          </svg>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Verantwortung hat ein Gesicht</h3>
+          <p class="text-[14px] font-normal text-[#5C5C5C] leading-[1.6]">
+            Jedes Projekt trägt einen Namen. Nicht den einer Abteilung, sondern den einer Person.
+          </p>
+        </div>
+        <div class="pt-[24px] pb-[32px]">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="mb-[16px]">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+          </svg>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Der Mensch zuerst</h3>
+          <p class="text-[14px] font-normal text-[#5C5C5C] leading-[1.6]">
+            KI beschleunigt unseren Takt, aber die Identität der Agentur ruht auf den Menschen. Technologie dient dem Menschen, niemals umgekehrt.
+          </p>
+        </div>
+        <div class="pt-[24px] pb-[32px]">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="mb-[16px]">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+          </svg>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Klartext</h3>
+          <p class="text-[14px] font-normal text-[#5C5C5C] leading-[1.6]">
+            Wenn eine Kampagne nicht zündet, sagen wir es Ihnen. Ein offenes Gespräch heute ist immer mehr wert als ein enttäuschter Kunde in sechs Monaten.
+          </p>
+        </div>
+        <div class="pt-[24px] pb-[32px]">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="mb-[16px]">
+            <circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" />
+          </svg>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Weniger Disziplinen, mehr Tiefe</h3>
+          <p class="text-[14px] font-normal text-[#5C5C5C] leading-[1.6]">
+            Chinas soziale Netzwerke sind unser einziges Metier. Keine PR, keine Web-Entwicklung, kein Eventgeschäft. Genau diese Konzentration macht uns gut.
+          </p>
+        </div>
+        <div class="col-span-2 max-[640px]:col-span-1 max-w-[50%] max-[640px]:max-w-full pt-[24px] pb-[32px]">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="mb-[16px]">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" /><line x1="16" y1="2" x2="16" y2="6" /><line x1="8" y1="2" x2="8" y2="6" /><line x1="3" y1="10" x2="21" y2="10" /><path d="m9 16 2 2 4-4" />
+          </svg>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Jeden Monat liefern, ohne Ausflüchte</h3>
+          <p class="text-[14px] font-normal text-[#5C5C5C] leading-[1.6]">
+            Ein fester Preis verlangt, dass jeder Monat zählt. Bleiben die Ergebnisse aus, sprechen die Zahlen. Für Sie wie für uns.
+          </p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- What makes us different -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="bg-[#1A1A1A] rounded-[12px] p-[48px] max-[1024px]:p-[32px] max-[640px]:p-[32px_20px]">
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">Was uns unterscheidet</p>
+        <h2 class="text-[#FFFFFF] text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] mb-[32px] max-[640px]:mb-[24px]">Fünf Gründe, aus denen Marken uns ihr China-Geschäft anvertrauen.</h2>
+        <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[24px]">
+          <div>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Klar definierter Umfang. Fester Preis. Keine Ausnahmen.</h3>
+            <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+              Wir haben 37 Agenturen unserer Branche untersucht. Keine davon bietet ein Paket zum festen Preis: alle arbeiten mit individuellen Angeboten, samt schwammigen Deliverables. Unsere Entscheidung verläuft strikt in die andere Richtung.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Wir nehmen nur Mandate an, die zu gewinnen sind.</h3>
+            <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+              Können wir Ihre Social-Präsenz in China nicht weiterbringen, sagen wir es vorab, vor jeder Unterschrift. Ihre Ergebnisse zählen mehr als die Länge unserer Kundenliste.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Wir arbeiten in China, nicht von dessen Rand aus.</h3>
+            <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+              Wenn RedNote über Nacht den Algorithmus dreht oder ein Douyin-Format um neun Uhr morgens hochgeht, erreicht uns die Information nicht mit Stunden Verspätung. Wir sind bereits am Steuer.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">KI fürs Volumen. Mensch fürs Urteil.</h3>
+            <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+              Wir setzen HubStudio.ai für Content-Produktion und Visuals ein. Strategie, kulturelles Fingerspitzengefühl und Kundenbeziehung bleiben bei Menschen, die China genau kennen.
+            </p>
+          </div>
+          <div class="col-span-2 max-[640px]:col-span-1">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Fünfundzwanzig Jahre Netzwerk.</h3>
+            <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5] max-w-[680px]">
+              Influencer-Agenturen, die ihre Creator wirklich auswählen. Konkrete Ansprechpartner innerhalb der Plattformen, erreichbar, wenn sich die Regeln ändern. Dieses Gespür dafür, was funktioniert, baut sich nur über lange Jahre vor Ort auf.
+            </p>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- CTA -->
+  <section class="mt-[96px] max-[640px]:mt-[64px] mb-[0px]">
+    <div class="w-full bg-[var(--color-rice-paper)] py-[64px] max-[1024px]:py-[56px] max-[640px]:py-[48px] px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px]">
+      <div class="max-w-[600px] mx-auto text-center">
+        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[8px]">
+          Sprechen wir.
+        </h2>
+        <p class="text-[14px] text-[var(--color-stone)] font-normal leading-[1.6] mb-[24px]">
+          Ein Gespräch reicht. Wir zeigen Ihnen unsere Methode, den Preis und unsere tatsächliche Schlagkraft für Ihre Marke.
+        </p>
+        <div class="flex items-center justify-center gap-[12px] flex-wrap">
+          <Button variant="primary" href="/de/contact">Gespräch vereinbaren</Button>
+          <Button variant="secondary" href="/de/pricing">Preise ansehen</Button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</PageLayout>
+
+<script>
+  function animateCounters() {
+    const counters = document.querySelectorAll('#stats-grid [data-target]');
+    counters.forEach((el) => {
+      const target = parseInt(el.getAttribute('data-target') || '0', 10);
+      const suffix = el.getAttribute('data-suffix') || '';
+      const duration = 1500;
+      const start = performance.now();
+
+      function update(now: number) {
+        const elapsed = now - start;
+        const progress = Math.min(elapsed / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const current = Math.round(eased * target);
+        el.textContent = current + suffix;
+        if (progress < 1) requestAnimationFrame(update);
+      }
+
+      requestAnimationFrame(update);
+    });
+  }
+
+  const statsGrid = document.getElementById('stats-grid');
+  if (statsGrid) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            animateCounters();
+            observer.disconnect();
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+    observer.observe(statsGrid);
+  }
+
+  document.querySelectorAll('.logo-card').forEach((card) => {
+    const img = card.querySelector('.logo-img') as HTMLElement;
+    if (!img) return;
+
+    card.addEventListener('mouseenter', () => {
+      img.style.transition = 'transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease';
+      img.style.transform = 'scale(1.15)';
+      img.style.filter = 'grayscale(0)';
+      img.style.opacity = '1';
+      (card as HTMLElement).style.transition = 'border-color 0.3s ease';
+      (card as HTMLElement).style.borderColor = 'rgba(0,0,0,0.15)';
+    });
+
+    card.addEventListener('mouseleave', () => {
+      img.style.transform = 'scale(1)';
+      img.style.filter = 'grayscale(100%)';
+      img.style.opacity = '0.4';
+      (card as HTMLElement).style.borderColor = 'rgba(0,0,0,0.08)';
+    });
+  });
+
+  document.querySelectorAll('.leader-card').forEach((card) => {
+    const img = card.querySelector('img') as HTMLElement;
+    if (!img) return;
+
+    img.style.transition = 'transform 0.4s ease';
+
+    card.addEventListener('mouseenter', () => {
+      img.style.transform = 'scale(1.05)';
+    });
+
+    card.addEventListener('mouseleave', () => {
+      img.style.transform = 'scale(1)';
+    });
+  });
+</script>
+
+<style>
+  .mission-badge {
+    animation: badgeFloat 3s ease-in-out infinite;
+  }
+  .mission-badge-1 { animation-delay: 0s; }
+  .mission-badge-2 { animation-delay: -1s; }
+  .mission-badge-3 { animation-delay: -2s; }
+
+  @keyframes badgeFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+  }
+</style>

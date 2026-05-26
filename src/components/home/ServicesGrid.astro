@@ -11,7 +11,72 @@ interface Props {
 const { lang = 'en' } = Astro.props;
 const lp = (path: string) => localizedPath(path, lang);
 
-const services = lang === 'zh' ? [
+const services = lang === 'de' ? [
+  {
+    title: 'Strategie, Kampagnen und Analytics',
+    description: 'Marktanalyse, Redaktionspläne, Dauerbetrieb plus Event-Spitzen für Launches, Feiertage und Shopping-Festivals. Monatliches Reporting mit Zahlen, mit denen sich arbeiten lässt.',
+    href: lp('/services/strategy-campaigns'),
+    cta: 'Strategie-Leistungen ansehen',
+    bg: '#F0F1F4', iconBg: '#E8E0D8', textColor: '#1A1A1A', descColor: '#5C5C5C', linkColor: '#CC3333',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 6-8"/></svg>`,
+  },
+  {
+    title: 'Plattformen',
+    description: 'WeChat, Douyin, RedNote, Weibo und 14 weitere. Wir senden dort, wo Ihre Zielgruppe ohnehin den Tag verbringt.',
+    href: lp('/platforms/others'),
+    cta: 'Alle 18 Plattformen ansehen',
+    bg: '#1A1A1A', iconBg: 'rgba(255,255,255,0.1)', textColor: '#FFFFFF', descColor: 'rgba(255,255,255,0.6)', linkColor: '#CC3333',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>`,
+  },
+  {
+    title: 'Mediaplanung und Einkauf',
+    description: 'Mediaplan, Werbekonten, Kreativ-Tests, Performance-Reports. Mediabudget wird separat abgerechnet. Keine Aufschläge. Niemals.',
+    href: lp('/services/advertising'),
+    cta: 'Werbeleistungen ansehen',
+    bg: '#E8E0D8', iconBg: '#FFFFFF', textColor: '#1A1A1A', descColor: '#5C5C5C', linkColor: '#CC3333',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>`,
+  },
+  {
+    title: 'Content-Produktion',
+    description: 'KI-Visuals und Video über HubStudio.ai. Echte Drehs in China. Texte in Muttersprache mit integrierter Kulturprüfung.',
+    href: lp('/services/content-production'),
+    cta: 'So produzieren wir',
+    bg: '#CC3333', iconBg: 'rgba(255,255,255,0.2)', textColor: '#FFFFFF', descColor: 'rgba(255,255,255,0.8)', linkColor: '#FFFFFF',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/></svg>`,
+  },
+  {
+    title: 'Influencer-Marketing',
+    description: 'KOL- und KOC-Kampagnen vom Sourcing bis zum Abschlussbericht. Live-Commerce auf Douyin und Taobao Live. Jede Engagement-Zahl prüfen wir selbst.',
+    href: lp('/services/influencer-marketing'),
+    cta: 'KOL- und KOC-Leistungen',
+    bg: '#F0F1F4', iconBg: '#E8E0D8', textColor: '#1A1A1A', descColor: '#5C5C5C', linkColor: '#CC3333',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
+  },
+  {
+    title: 'Markteintritt China',
+    description: 'Kontenregistrierung, Plattform-Verifizierung, E-Commerce-Setup, Markenlokalisierung. Erstes Mal in China oder Neustart.',
+    href: lp('/services/market-entry'),
+    cta: 'Markteintritt starten',
+    bg: '#1A1A1A', iconBg: 'rgba(255,255,255,0.1)', textColor: '#FFFFFF', descColor: 'rgba(255,255,255,0.6)', linkColor: '#CC3333',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>`,
+  },
+  {
+    title: 'CRM und Private-Domain',
+    description: 'WeCom, WeChat-CRM, private Communities, automatisierte Ansprache. Eine Audience aufbauen, die wirklich Ihnen gehört.',
+    href: lp('/services/crm-private-domain'),
+    cta: 'Private Domain aufbauen',
+    bg: '#E8E0D8', iconBg: '#FFFFFF', textColor: '#1A1A1A', descColor: '#5C5C5C', linkColor: '#CC3333',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>`,
+  },
+  {
+    title: 'Training und Beratung',
+    description: 'Masterclasses zu einzelnen Plattformen. Beratung für die Geschäftsführung. Coaching für die Teams, die Ihre China-Konten täglich betreuen.',
+    href: lp('/services/training-consulting'),
+    cta: 'Trainingsangebot ansehen',
+    bg: '#B02D2D', iconBg: 'rgba(255,255,255,0.2)', textColor: '#FFFFFF', descColor: 'rgba(255,255,255,0.8)', linkColor: '#FFFFFF',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>`,
+  },
+] : lang === 'zh' ? [
   {
     title: '策略、活动与数据',
     description: '市场调研、内容日历、日常运营，新品、节日、大促各有各的节奏。每月一份可直接落地的数据报告，不是做给董事会看的 PPT。',
@@ -76,10 +141,75 @@ const services = lang === 'zh' ? [
     bg: '#B02D2D', iconBg: 'rgba(255,255,255,0.2)', textColor: '#FFFFFF', descColor: 'rgba(255,255,255,0.8)', linkColor: '#FFFFFF',
     icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>`,
   },
+] : lang === 'es' ? [
+  {
+    title: 'Estrategia, campañas y analítica',
+    description: 'Investigación de mercado. Calendarios editoriales. Always-on con picos para lanzamientos, festividades y grandes promociones. Reporting mensual con cifras útiles, no diapositivas decorativas.',
+    href: lp('/services/strategy-campaigns'),
+    cta: 'Ver servicios de estrategia',
+    bg: '#F0F1F4', iconBg: '#E8E0D8', textColor: '#1A1A1A', descColor: '#5C5C5C', linkColor: '#CC3333',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 6-8"/></svg>`,
+  },
+  {
+    title: 'Plataformas',
+    description: 'WeChat, Douyin, RedNote, Weibo y catorce más. Publicamos donde su audiencia ya pasa el día.',
+    href: lp('/platforms/others'),
+    cta: 'Ver las 18 plataformas',
+    bg: '#1A1A1A', iconBg: 'rgba(255,255,255,0.1)', textColor: '#FFFFFF', descColor: 'rgba(255,255,255,0.6)', linkColor: '#CC3333',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>`,
+  },
+  {
+    title: 'Plan de medios y compra',
+    description: 'Plan de medios, apertura de cuentas, test creativo, lecturas de rendimiento. La inversión publicitaria se factura aparte. Sin comisiones ocultas. Nunca.',
+    href: lp('/services/advertising'),
+    cta: 'Ver servicios de publicidad',
+    bg: '#E8E0D8', iconBg: '#FFFFFF', textColor: '#1A1A1A', descColor: '#5C5C5C', linkColor: '#CC3333',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>`,
+  },
+  {
+    title: 'Producción de contenidos',
+    description: 'Visuales y vídeo con IA a través de HubStudio.ai. Rodajes reales en China. Copywriting nativo con revisión cultural integrada.',
+    href: lp('/services/content-production'),
+    cta: 'Cómo creamos contenido',
+    bg: '#CC3333', iconBg: 'rgba(255,255,255,0.2)', textColor: '#FFFFFF', descColor: 'rgba(255,255,255,0.8)', linkColor: '#FFFFFF',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/></svg>`,
+  },
+  {
+    title: 'Marketing de influencers',
+    description: 'Campañas con KOL y KOC de principio a fin: búsqueda, contratación, ejecución, informe. Live commerce en Douyin y Taobao Live. Verificamos cada cifra de interacción.',
+    href: lp('/services/influencer-marketing'),
+    cta: 'Ver servicios KOL y KOC',
+    bg: '#F0F1F4', iconBg: '#E8E0D8', textColor: '#1A1A1A', descColor: '#5C5C5C', linkColor: '#CC3333',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
+  },
+  {
+    title: 'Entrada al mercado chino',
+    description: 'Registro de cuentas, verificación en plataformas, montaje de e-commerce, localización de marca. Para quien aterriza por primera vez o quien empieza de cero.',
+    href: lp('/services/market-entry'),
+    cta: 'Empezar la entrada en China',
+    bg: '#1A1A1A', iconBg: 'rgba(255,255,255,0.1)', textColor: '#FFFFFF', descColor: 'rgba(255,255,255,0.6)', linkColor: '#CC3333',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>`,
+  },
+  {
+    title: 'CRM y tráfico privado',
+    description: 'WeCom, CRM en WeChat, comunidades privadas, automatización de mensajes. Una audiencia que de verdad le pertenece.',
+    href: lp('/services/crm-private-domain'),
+    cta: 'Montar su dominio privado',
+    bg: '#E8E0D8', iconBg: '#FFFFFF', textColor: '#1A1A1A', descColor: '#5C5C5C', linkColor: '#CC3333',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>`,
+  },
+  {
+    title: 'Formación y consultoría',
+    description: 'Masterclasses por plataforma. Consultoría para comités de dirección. Acompañamiento individual para los equipos que gestionan sus cuentas chinas.',
+    href: lp('/services/training-consulting'),
+    cta: 'Ver formaciones',
+    bg: '#B02D2D', iconBg: 'rgba(255,255,255,0.2)', textColor: '#FFFFFF', descColor: 'rgba(255,255,255,0.8)', linkColor: '#FFFFFF',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>`,
+  },
 ] : lang === 'fr' ? [
   {
     title: 'Stratégie, campagnes et analyse',
-    description: 'Étude de marché. Calendrier éditorial. Campagnes en continu et coups d\'accélérateur sur les lancements, les fêtes et les temps forts. Reporting mensuel avec des chiffres sur lesquels agir.',
+    description: 'Étude de marché, calendrier éditorial, pilotage en continu, accélérations sur les lancements, les fêtes et les grandes soldes. Reporting mensuel pensé pour la décision, pas pour la galerie.',
     href: lp('/services/strategy-campaigns'),
     cta: 'Voir nos services stratégie',
     bg: '#F0F1F4', iconBg: '#E8E0D8', textColor: '#1A1A1A', descColor: '#5C5C5C', linkColor: '#CC3333',
@@ -87,7 +217,7 @@ const services = lang === 'zh' ? [
   },
   {
     title: 'Plateformes',
-    description: 'WeChat, Douyin, RedNote, Weibo et 14 autres. On publie là où votre audience passe ses journées.',
+    description: 'WeChat, Douyin, RedNote, Weibo et quatorze autres réseaux. Nous publions là où vos clients passent réellement leurs journées.',
     href: lp('/platforms/others'),
     cta: 'Découvrir les 18 plateformes',
     bg: '#1A1A1A', iconBg: 'rgba(255,255,255,0.1)', textColor: '#FFFFFF', descColor: 'rgba(255,255,255,0.6)', linkColor: '#CC3333',
@@ -95,7 +225,7 @@ const services = lang === 'zh' ? [
   },
   {
     title: 'Achat et plan média',
-    description: 'Plan média, comptes publicitaires, tests créatifs, bilans de performance. Les dépenses média sont facturées à part. Aucune commission. Jamais.',
+    description: 'Plan média, ouverture des comptes publicitaires, tests créatifs, lectures de performance. L\'investissement média est refacturé à l\'euro près. Aucune commission, en aucune circonstance.',
     href: lp('/services/advertising'),
     cta: 'Voir nos services pub',
     bg: '#E8E0D8', iconBg: '#FFFFFF', textColor: '#1A1A1A', descColor: '#5C5C5C', linkColor: '#CC3333',
@@ -103,7 +233,7 @@ const services = lang === 'zh' ? [
   },
   {
     title: 'Production de contenu',
-    description: 'Visuels et vidéos par IA via HubStudio.ai. Tournages sur place en Chine. Rédaction en chinois natif avec relecture culturelle intégrée.',
+    description: 'Visuels et vidéos générés par IA via HubStudio.ai, tournages réels conduits en Chine, copywriting en mandarin natif, contrôle culturel assuré en interne.',
     href: lp('/services/content-production'),
     cta: 'Voir notre production',
     bg: '#CC3333', iconBg: 'rgba(255,255,255,0.2)', textColor: '#FFFFFF', descColor: 'rgba(255,255,255,0.8)', linkColor: '#FFFFFF',
@@ -111,7 +241,7 @@ const services = lang === 'zh' ? [
   },
   {
     title: 'Marketing d\'influence',
-    description: 'Campagnes KOL et KOC, du sourcing au bilan final. Commerce en direct sur Douyin et Taobao Live. On vérifie chaque chiffre nous-mêmes.',
+    description: 'Campagnes KOL et KOC menées du sourcing jusqu\'au bilan. Vente en direct sur Douyin et Taobao Live. Chaque chiffre d\'engagement passe par notre vérification interne.',
     href: lp('/services/influencer-marketing'),
     cta: 'Voir nos services KOL et KOC',
     bg: '#F0F1F4', iconBg: '#E8E0D8', textColor: '#1A1A1A', descColor: '#5C5C5C', linkColor: '#CC3333',
@@ -119,7 +249,7 @@ const services = lang === 'zh' ? [
   },
   {
     title: 'Entrée sur le marché chinois',
-    description: 'Ouverture de comptes, certification des plateformes, mise en place du e-commerce, adaptation de la marque. Que vous arriviez ou que vous repartiez de zéro.',
+    description: 'Ouverture des comptes, certifications, mise en place de l\'e-commerce, adaptation de la marque. Première implantation ou repartir d\'une feuille blanche, nous prenons le dossier de bout en bout.',
     href: lp('/services/market-entry'),
     cta: 'Préparer votre arrivée en Chine',
     bg: '#1A1A1A', iconBg: 'rgba(255,255,255,0.1)', textColor: '#FFFFFF', descColor: 'rgba(255,255,255,0.6)', linkColor: '#CC3333',
@@ -127,7 +257,7 @@ const services = lang === 'zh' ? [
   },
   {
     title: 'CRM et trafic privé',
-    description: 'WeCom, CRM WeChat, communautés privées, envois automatisés. Construisez une audience qui vous appartient vraiment.',
+    description: 'WeCom, CRM WeChat, communautés privées, scénarios d\'envois automatisés. Vous reprenez la main sur une audience qui vous appartient.',
     href: lp('/services/crm-private-domain'),
     cta: 'Créer votre domaine privé',
     bg: '#E8E0D8', iconBg: '#FFFFFF', textColor: '#1A1A1A', descColor: '#5C5C5C', linkColor: '#CC3333',
@@ -135,7 +265,7 @@ const services = lang === 'zh' ? [
   },
   {
     title: 'Formation et conseil',
-    description: 'Formations ciblées par plateforme. Conseil aux équipes de direction. Accompagnement pour ceux qui pilotent vos comptes chinois au quotidien.',
+    description: 'Formations dédiées à chaque plateforme. Conseil stratégique pour les comités de direction. Accompagnement individuel des équipes qui animent vos comptes chinois.',
     href: lp('/services/training-consulting'),
     cta: 'Voir nos formations',
     bg: '#B02D2D', iconBg: 'rgba(255,255,255,0.2)', textColor: '#FFFFFF', descColor: 'rgba(255,255,255,0.8)', linkColor: '#FFFFFF',
@@ -208,7 +338,23 @@ const services = lang === 'zh' ? [
   },
 ];
 
-const heroText = lang === 'zh' ? {
+const heroText = lang === 'de' ? {
+  overline: 'Was wir machen',
+  heading: 'Acht Bereiche, ein Ziel: Ihre Marke in Chinas sozialen Netzwerken nach vorn bringen.',
+  description: 'Von der Strategie bis zur Content-Produktion, von Influencer-Kampagnen bis zum CRM im privaten Bereich. Das gesamte Spielfeld aus einer Hand.',
+  cta: 'Leistungen ansehen',
+  ctaReady: 'Bereit, in China loszulegen?',
+  ctaReadySub: 'Ein Gespräch reicht, um abzustecken, was zu Ihrer Marke passt.',
+  ctaBtn: 'Gespräch vereinbaren',
+} : lang === 'es' ? {
+  overline: 'Lo que hacemos',
+  heading: 'Ocho pilares, un mismo objetivo: hacer crecer su marca en las redes sociales chinas.',
+  description: 'De la estrategia a la producción de contenido, de las campañas con influencers al CRM privado. Todo el dispositivo bajo una sola dirección.',
+  cta: 'Ver nuestros servicios',
+  ctaReady: '¿Listo para arrancar en China?',
+  ctaReadySub: 'Basta una llamada para definir lo que encaja con su marca.',
+  ctaBtn: 'Reservar una llamada',
+} : lang === 'zh' ? {
   overline: '我们在做什么',
   heading: '八条能力，撑起中国社媒一整盘生意。',
   description: '从策略到内容，从达人营销到私域 CRM。做中国社媒要用的手牌，这里都齐了。',
@@ -217,12 +363,12 @@ const heroText = lang === 'zh' ? {
   ctaReadySub: '一通电话，我们帮你把路线理清楚。',
   ctaBtn: '预约通话',
 } : lang === 'fr' ? {
-  overline: 'Ce qu\'on fait',
-  heading: 'Huit piliers pour développer vos réseaux en Chine.',
-  description: 'De la stratégie à la production de contenu, des campagnes d\'influence au CRM privé. Tout ce qu\'il faut, sous un même toit.',
+  overline: 'Notre métier',
+  heading: 'Huit piliers, un même objectif : faire grandir votre marque sur les réseaux chinois.',
+  description: 'De la stratégie à la production de contenu, des campagnes d\'influence au CRM privé : l\'ensemble du dispositif réuni sous une même direction.',
   cta: 'Découvrir nos services',
-  ctaReady: 'Prêt à vous lancer en Chine ?',
-  ctaReadySub: 'Un appel. On vous explique ce qui correspond à votre marque.',
+  ctaReady: 'Prêt à passer à l\'action en Chine ?',
+  ctaReadySub: 'Un appel suffit pour cadrer ce qui correspond vraiment à votre marque.',
   ctaBtn: 'Prendre rendez-vous',
 } : {
   overline: 'What we do',

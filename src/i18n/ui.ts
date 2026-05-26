@@ -134,15 +134,15 @@ export const ui = {
     'nav.work': 'Réalisations',
     'nav.about': 'L\'agence',
     'nav.pricing': 'Tarifs',
-    'nav.insights': 'Publications',
+    'nav.insights': 'Analyses',
     'nav.bookCall': 'Prendre rendez-vous',
-    'nav.viewAll': 'Voir tout',
+    'nav.viewAll': 'Tout voir',
     'nav.viewAll.services': 'Tous les services',
     'nav.viewAll.platforms': 'Toutes les plateformes',
     'nav.viewAll.about': 'Découvrir l\'agence',
 
     // Service names & subtitles
-    'nav.services.strategy': 'Stratégie, campagnes et data',
+    'nav.services.strategy': 'Stratégie, campagnes et analyse',
     'nav.services.strategy.sub': 'Études, calendriers éditoriaux, reporting',
     'nav.services.advertising': 'Publicité',
     'nav.services.advertising.sub': 'Plan média et achat d\'espace',
@@ -155,28 +155,28 @@ export const ui = {
     'nav.services.crm': 'CRM et trafic privé',
     'nav.services.crm.sub': 'WeCom, communautés, fidélisation',
     'nav.services.training': 'Formation et conseil',
-    'nav.services.training.sub': 'Masterclass, coaching, audits',
+    'nav.services.training.sub': 'Masterclasses, coaching, audits',
 
     // Platform names & subtitles
     'nav.platforms.wechat': 'WeChat',
-    'nav.platforms.wechat.sub': 'Comptes officiels, Mini Programs, WeCom',
+    'nav.platforms.wechat.sub': 'Comptes officiels, Mini-Programmes, WeCom',
     'nav.platforms.rednote': 'RedNote / Xiaohongshu',
-    'nav.platforms.rednote.sub': 'Avis, publications shoppables, art de vivre',
+    'nav.platforms.rednote.sub': 'Avis, publications marchandes, art de vivre',
     'nav.platforms.douyin': 'Douyin',
-    'nav.platforms.douyin.sub': 'Vidéo courte, live commerce',
+    'nav.platforms.douyin.sub': 'Vidéo courte, commerce en direct',
     'nav.platforms.weibo': 'Weibo',
     'nav.platforms.weibo.sub': 'Grande audience, relations presse, tendances',
     'nav.platforms.others': 'Autres plateformes',
-    'nav.platforms.others.sub': 'Bilibili, Kuaishou, Zhihu et 14 autres',
+    'nav.platforms.others.sub': 'Bilibili, Kuaishou, Zhihu et quatorze autres',
 
     // About sub-nav
     'nav.about.team': 'L\'équipe',
     'nav.about.team.sub': 'Shanghai et Hong Kong',
     'nav.about.ai': 'Notre IA',
-    'nav.about.ai.sub': 'L\'IA au cœur de chaque service',
+    'nav.about.ai.sub': 'L\'IA au cœur de chaque prestation',
 
     // Footer
-    'footer.tagline': 'Nous faisons grandir votre marque sur les réseaux sociaux chinois. Plus d\'abonnés, plus d\'engagement, plus de ventes. Périmètre défini, prix fixe, zéro mauvaise surprise.',
+    'footer.tagline': 'Nous faisons grandir votre marque sur les réseaux sociaux chinois. Plus d\'abonnés, plus d\'engagement, plus de ventes. Périmètre arrêté, tarif ferme, aucun extra à attendre.',
     'footer.services': 'Services',
     'footer.discover': 'Explorer',
     'footer.connect': 'Nous écrire',
@@ -186,7 +186,7 @@ export const ui = {
     'footer.terms': 'Conditions générales',
     'footer.cookies': 'Cookies',
     'footer.contact': 'Contact',
-    'footer.strategyAnalytics': 'Stratégie et data',
+    'footer.strategyAnalytics': 'Stratégie et analyse',
     'footer.contentProduction': 'Production de contenu',
     'footer.influencerMarketing': 'Marketing d\'influence',
     'footer.advertising': 'Publicité',
@@ -196,7 +196,7 @@ export const ui = {
     'footer.about': 'L\'agence',
     'footer.platforms': 'Plateformes',
     'footer.pricing': 'Tarifs',
-    'footer.insights': 'Publications',
+    'footer.insights': 'Analyses',
     'footer.bookCall': 'Prendre rendez-vous',
 
     // Common CTAs & labels
@@ -205,7 +205,7 @@ export const ui = {
     'cta.backToHome': 'Retour à l\'accueil',
     'cta.sendMessage': 'Envoyer le message',
     'cta.sending': 'Envoi en cours…',
-    'cta.seeServices': 'Découvrir nos services',
+    'cta.seeServices': 'Voir nos services',
     'cta.learnMore': 'En savoir plus',
 
     // Common section labels
@@ -216,7 +216,7 @@ export const ui = {
     'section.yourTurn': 'À votre tour',
 
     // Common phrases
-    'common.fixedScope': 'Périmètre fixe. Prix fixe. Équipe sur place.',
+    'common.fixedScope': 'Périmètre arrêté. Tarif ferme. Équipe sur place.',
     'common.readingTime': 'de lecture',
 
     // Form labels
@@ -225,17 +225,17 @@ export const ui = {
     'form.email': 'Adresse e-mail',
     'form.company': 'Entreprise',
     'form.website': 'Site internet',
-    'form.message': 'Racontez-nous votre projet',
+    'form.message': 'Présentez-nous votre projet',
     'form.placeholder.firstName': 'Prénom',
     'form.placeholder.lastName': 'Nom',
     'form.placeholder.email': 'vous@entreprise.com',
     'form.placeholder.company': 'Nom de votre entreprise',
     'form.placeholder.website': 'https://votreentreprise.com',
-    'form.placeholder.message': 'Quelles plateformes visez-vous ? Quels sont vos objectifs sur le marché chinois ?',
+    'form.placeholder.message': 'Quelles plateformes ciblez-vous ? Quels objectifs poursuivez-vous sur le marché chinois ?',
     'form.captcha': 'Combien font',
     'form.captchaPlaceholder': 'Votre réponse',
     'form.networkError': 'Connexion impossible. Vérifiez votre réseau, puis réessayez.',
-    'form.genericError': 'Un problème est survenu. Merci de réessayer.',
+    'form.genericError': 'Un incident est survenu. Merci de réessayer.',
 
     // Getting started steps
     'steps.step1.title': 'Appel découverte',
@@ -370,11 +370,258 @@ export const ui = {
     // Language
     'lang.switch': 'EN',
   },
+
+  es: {
+    // Navigation
+    'nav.services': 'Servicios',
+    'nav.platforms': 'Plataformas',
+    'nav.work': 'Proyectos',
+    'nav.about': 'La agencia',
+    'nav.pricing': 'Precios',
+    'nav.insights': 'Análisis',
+    'nav.bookCall': 'Reservar una llamada',
+    'nav.viewAll': 'Ver todo',
+    'nav.viewAll.services': 'Todos los servicios',
+    'nav.viewAll.platforms': 'Todas las plataformas',
+    'nav.viewAll.about': 'Conocer la agencia',
+
+    // Service names & subtitles
+    'nav.services.strategy': 'Estrategia, campañas y analítica',
+    'nav.services.strategy.sub': 'Estudios, calendarios y reporting',
+    'nav.services.advertising': 'Publicidad',
+    'nav.services.advertising.sub': 'Plan de medios y compra',
+    'nav.services.content': 'Producción de contenidos',
+    'nav.services.content.sub': 'Visuales con IA, vídeo y copy local',
+    'nav.services.influencer': 'Marketing de influencers',
+    'nav.services.influencer.sub': 'Campañas con KOL y KOC',
+    'nav.services.marketEntry': 'Entrada al mercado chino',
+    'nav.services.marketEntry.sub': 'Registro, apertura y localización',
+    'nav.services.crm': 'CRM y tráfico privado',
+    'nav.services.crm.sub': 'WeCom, grupos y fidelización',
+    'nav.services.training': 'Formación y consultoría',
+    'nav.services.training.sub': 'Masterclasses, coaching y auditorías',
+
+    // Platform names & subtitles
+    'nav.platforms.wechat': 'WeChat',
+    'nav.platforms.wechat.sub': 'Cuentas oficiales, Mini Programs, WeCom',
+    'nav.platforms.rednote': 'RedNote / Xiaohongshu',
+    'nav.platforms.rednote.sub': 'Reseñas, posts shoppable y estilo de vida',
+    'nav.platforms.douyin': 'Douyin',
+    'nav.platforms.douyin.sub': 'Vídeo corto y live commerce',
+    'nav.platforms.weibo': 'Weibo',
+    'nav.platforms.weibo.sub': 'Gran alcance, PR y trending topics',
+    'nav.platforms.others': 'Otras plataformas',
+    'nav.platforms.others.sub': 'Bilibili, Kuaishou, Zhihu y 14 más',
+
+    // About sub-nav
+    'nav.about.team': 'El equipo',
+    'nav.about.team.sub': 'Shanghái y Hong Kong',
+    'nav.about.ai': 'Nuestra IA',
+    'nav.about.ai.sub': 'La IA en cada servicio',
+
+    // Footer
+    'footer.tagline': 'Hacemos crecer su marca en las redes sociales chinas. Más seguidores, más interacción, más conversiones. Alcance fijo, precio cerrado, sin sorpresas.',
+    'footer.services': 'Servicios',
+    'footer.discover': 'Descubrir',
+    'footer.connect': 'Contacto',
+    'footer.group': 'El grupo',
+    'footer.rights': 'Todos los derechos reservados.',
+    'footer.privacy': 'Privacidad',
+    'footer.terms': 'Condiciones generales',
+    'footer.cookies': 'Cookies',
+    'footer.contact': 'Contacto',
+    'footer.strategyAnalytics': 'Estrategia y analítica',
+    'footer.contentProduction': 'Producción de contenidos',
+    'footer.influencerMarketing': 'Marketing de influencers',
+    'footer.advertising': 'Publicidad',
+    'footer.chinaMarketEntry': 'Entrada al mercado chino',
+    'footer.crmPrivateDomain': 'CRM y tráfico privado',
+    'footer.trainingConsulting': 'Formación y consultoría',
+    'footer.about': 'La agencia',
+    'footer.platforms': 'Plataformas',
+    'footer.pricing': 'Precios',
+    'footer.insights': 'Análisis',
+    'footer.bookCall': 'Reservar una llamada',
+
+    // Common CTAs & labels
+    'cta.bookCall': 'Reservar una llamada',
+    'cta.readCaseStudy': 'Leer el caso',
+    'cta.backToHome': 'Volver al inicio',
+    'cta.sendMessage': 'Enviar mensaje',
+    'cta.sending': 'Enviando…',
+    'cta.seeServices': 'Ver los servicios',
+    'cta.learnMore': 'Saber más',
+
+    // Common section labels
+    'section.caseStudy': 'Caso de éxito',
+    'section.theClient': 'El cliente',
+    'section.whatWeDid': 'Lo que hicimos',
+    'section.theOutcome': 'El resultado',
+    'section.yourTurn': 'Te toca',
+
+    // Common phrases
+    'common.fixedScope': 'Alcance cerrado. Precio fijo. Equipo sobre el terreno.',
+    'common.readingTime': 'de lectura',
+
+    // Form labels
+    'form.firstName': 'Nombre',
+    'form.lastName': 'Apellidos',
+    'form.email': 'Correo electrónico',
+    'form.company': 'Empresa',
+    'form.website': 'Web',
+    'form.message': 'Cuéntenos su proyecto',
+    'form.placeholder.firstName': 'Nombre',
+    'form.placeholder.lastName': 'Apellidos',
+    'form.placeholder.email': 'usted@empresa.com',
+    'form.placeholder.company': 'Nombre de la empresa',
+    'form.placeholder.website': 'https://suempresa.com',
+    'form.placeholder.message': '¿Qué plataformas le interesan? ¿Qué objetivos persigue en China?',
+    'form.captcha': 'Cuánto suma',
+    'form.captchaPlaceholder': 'Su respuesta',
+    'form.networkError': 'Sin conexión. Compruebe la red y vuelva a intentarlo.',
+    'form.genericError': 'Ha ocurrido un problema. Inténtelo de nuevo.',
+
+    // Getting started steps
+    'steps.step1.title': 'Llamada inicial',
+    'steps.step2.title': 'Propuesta',
+    'steps.step3.title': 'En dos semanas, en marcha',
+
+    // Work page
+    'work.all': 'Todos',
+    'work.noResults': 'Ningún caso coincide con esos filtros.',
+
+    // Language
+    'lang.switch': 'EN',
+  },
+
+  de: {
+    // Navigation
+    'nav.services': 'Leistungen',
+    'nav.platforms': 'Plattformen',
+    'nav.work': 'Referenzen',
+    'nav.about': 'Agentur',
+    'nav.pricing': 'Preise',
+    'nav.insights': 'Analysen',
+    'nav.bookCall': 'Gespräch vereinbaren',
+    'nav.viewAll': 'Alle ansehen',
+    'nav.viewAll.services': 'Alle Leistungen',
+    'nav.viewAll.platforms': 'Alle Plattformen',
+    'nav.viewAll.about': 'Über die Agentur',
+
+    // Service names & subtitles
+    'nav.services.strategy': 'Strategie, Kampagnen und Analytics',
+    'nav.services.strategy.sub': 'Marktforschung, Redaktionspläne, Reporting',
+    'nav.services.advertising': 'Mediaplanung',
+    'nav.services.advertising.sub': 'Mediaplanung und Einkauf',
+    'nav.services.content': 'Content-Produktion',
+    'nav.services.content.sub': 'KI-Visuals, Video, Texte vor Ort',
+    'nav.services.influencer': 'Influencer-Marketing',
+    'nav.services.influencer.sub': 'Kampagnen mit KOLs und KOCs',
+    'nav.services.marketEntry': 'Markteintritt China',
+    'nav.services.marketEntry.sub': 'Registrierung, Setup, Lokalisierung',
+    'nav.services.crm': 'CRM und Private-Domain',
+    'nav.services.crm.sub': 'WeCom, Communities, Kundenbindung',
+    'nav.services.training': 'Training und Beratung',
+    'nav.services.training.sub': 'Masterclasses, Coaching, Audits',
+
+    // Platform names & subtitles
+    'nav.platforms.wechat': 'WeChat',
+    'nav.platforms.wechat.sub': 'Official Accounts, Mini Programs, WeCom',
+    'nav.platforms.rednote': 'RedNote / Xiaohongshu',
+    'nav.platforms.rednote.sub': 'Reviews, Shopping-Posts, Lifestyle',
+    'nav.platforms.douyin': 'Douyin',
+    'nav.platforms.douyin.sub': 'Kurzvideo und Live-Commerce',
+    'nav.platforms.weibo': 'Weibo',
+    'nav.platforms.weibo.sub': 'Reichweite, PR, Trendthemen',
+    'nav.platforms.others': 'Weitere Plattformen',
+    'nav.platforms.others.sub': 'Bilibili, Kuaishou, Zhihu und 14 weitere',
+
+    // About sub-nav
+    'nav.about.team': 'Unser Team',
+    'nav.about.team.sub': 'Shanghai und Hongkong',
+    'nav.about.ai': 'Unsere KI',
+    'nav.about.ai.sub': 'Wie KI jede Leistung trägt',
+
+    // Footer
+    'footer.tagline': 'Wir bringen Ihre Marke auf Chinas Social-Media-Plattformen voran. Mehr Follower. Mehr Interaktion. Mehr Conversions. Klarer Umfang, fester Preis, keine Überraschungen.',
+    'footer.services': 'Leistungen',
+    'footer.discover': 'Entdecken',
+    'footer.connect': 'Kontakt',
+    'footer.group': 'Gruppe',
+    'footer.rights': 'Alle Rechte vorbehalten.',
+    'footer.privacy': 'Datenschutz',
+    'footer.terms': 'AGB',
+    'footer.cookies': 'Cookie-Richtlinie',
+    'footer.contact': 'Kontakt',
+    'footer.strategyAnalytics': 'Strategie und Analytics',
+    'footer.contentProduction': 'Content-Produktion',
+    'footer.influencerMarketing': 'Influencer-Marketing',
+    'footer.advertising': 'Mediaplanung',
+    'footer.chinaMarketEntry': 'Markteintritt China',
+    'footer.crmPrivateDomain': 'CRM und Private-Domain',
+    'footer.trainingConsulting': 'Training und Beratung',
+    'footer.about': 'Agentur',
+    'footer.platforms': 'Plattformen',
+    'footer.pricing': 'Preise',
+    'footer.insights': 'Analysen',
+    'footer.bookCall': 'Gespräch vereinbaren',
+
+    // Common CTAs & labels
+    'cta.bookCall': 'Gespräch vereinbaren',
+    'cta.readCaseStudy': 'Case lesen',
+    'cta.backToHome': 'Zurück zur Startseite',
+    'cta.sendMessage': 'Nachricht senden',
+    'cta.sending': 'Wird gesendet…',
+    'cta.seeServices': 'Leistungen ansehen',
+    'cta.learnMore': 'Mehr erfahren',
+
+    // Common section labels
+    'section.caseStudy': 'Case Study',
+    'section.theClient': 'Der Kunde',
+    'section.whatWeDid': 'Was wir gemacht haben',
+    'section.theOutcome': 'Das Ergebnis',
+    'section.yourTurn': 'Sie sind dran',
+
+    // Common phrases
+    'common.fixedScope': 'Klarer Umfang. Fester Preis. Team vor Ort.',
+    'common.readingTime': 'Lesezeit',
+
+    // Form labels
+    'form.firstName': 'Vorname',
+    'form.lastName': 'Nachname',
+    'form.email': 'E-Mail',
+    'form.company': 'Unternehmen',
+    'form.website': 'Website',
+    'form.message': 'Erzählen Sie uns von Ihrem Projekt',
+    'form.placeholder.firstName': 'Vorname',
+    'form.placeholder.lastName': 'Nachname',
+    'form.placeholder.email': 'sie@unternehmen.com',
+    'form.placeholder.company': 'Name Ihres Unternehmens',
+    'form.placeholder.website': 'https://ihrunternehmen.com',
+    'form.placeholder.message': 'Welche Plattformen interessieren Sie? Was möchten Sie in China erreichen?',
+    'form.captcha': 'Wie viel ist',
+    'form.captchaPlaceholder': 'Ihre Antwort',
+    'form.networkError': 'Netzwerkfehler. Bitte Verbindung prüfen und erneut versuchen.',
+    'form.genericError': 'Etwas ist schiefgelaufen. Bitte erneut versuchen.',
+
+    // Getting started steps
+    'steps.step1.title': 'Erstgespräch',
+    'steps.step2.title': 'Angebot',
+    'steps.step3.title': 'In zwei Wochen live',
+
+    // Work page
+    'work.all': 'Alle',
+    'work.noResults': 'Keine Case Studies für diese Filter.',
+
+    // Language
+    'lang.switch': 'EN',
+  },
 } as const;
 
 export type UIKey = keyof typeof ui.en;
+export type UILang = keyof typeof ui;
 
 /** Get a UI translation string. */
-export function t(key: UIKey, lang: 'en' | 'fr' | 'zh' = 'en'): string {
-  return ui[lang][key] ?? ui.en[key] ?? key;
+export function t(key: UIKey, lang: UILang = 'en'): string {
+  return (ui[lang] as Record<string, string>)[key] ?? ui.en[key] ?? key;
 }

@@ -1,0 +1,393 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+import FaqAccordion from '../../../components/sections/FaqAccordion.astro';
+import GettingStarted from '../../../components/sections/GettingStarted.astro';
+
+
+const faqs = [
+  { q: '¿Cuál es la tarifa?', a: 'Depende del alcance. Una sesión de consultoría puntual arranca en unos pocos miles de euros. Un proyecto a varias semanas con entregables incluidos cuesta más. Los talleres de formación se facturan por paquete, según duración y nivel de personalización. En todo caso, hay presupuesto antes de arrancar. Cero facturación abierta.' },
+  { q: '¿La formación puede ser a distancia?', a: 'En la mayoría de formatos, funciona muy bien. El presencial es preferible en talleres de AIGC, donde la práctica marca la diferencia, pero el remoto es perfectamente viable.' },
+  { q: '¿Qué tamaño de grupo?', a: 'Lo ideal está entre 6 y 15 participantes. Hemos hecho sesiones de 3 y de casi 40. El formato se adapta al número: lo hablamos antes.' },
+  { q: '¿La formación es a medida?', a: 'Siempre. Cada sesión se construye en torno a su sector, sus plataformas, sus competidores y el nivel de su equipo. Antes hay un briefing.' },
+  { q: '¿La consultoría puede convertirse en acompañamiento recurrente?', a: 'Es frecuente. Algunas marcas pasan al pilotaje mensual de sus campañas después de una primera misión. Otras prefieren una revisión una o dos veces al año y mantienen el resto en casa. Los dos esquemas funcionan.' },
+  { q: '¿Hay formaciones por plataforma?', a: 'Sí. Formatos publicitarios y configuración de campañas en Douyin. Activación de KOC y posicionamiento en RedNote. Estrategia de Cuenta Oficial de WeChat y Mini Programs. En sesiones independientes o dentro de un programa más amplio.' },
+  { q: '¿Cómo funciona la escucha social?', a: 'Por suscripción mensual. El punto de partida suele cubrir su marca y tres competidores en dos plataformas. Luego se amplía según necesidad.' },
+  { q: '¿Tiene sentido preparar un plan de crisis sin haber vivido una?', a: 'Justo es el momento de hacerlo. La mayoría de marcas espera a que estalle el incidente y entonces busca qué hacer mientras internet ya se ha apoderado del tema. Tener un marco preparado significa desplegar un plan en lugar de improvisar a las 23:00.' },
+];
+
+const gettingStartedSteps = [
+  {
+    title: 'Llamada inicial.',
+    description: 'Su equipo, sus puntos de fricción y lo que espera, en concreto, del trabajo conjunto.',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
+  },
+  {
+    title: 'Propuesta a medida.',
+    description: 'Formato, temas, duración, entregables. Calibrado para su equipo y sus objetivos.',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>',
+  },
+  {
+    title: 'Sesiones en dos semanas.',
+    description: 'Briefing, preparación, impartición. El equipo sale con competencias directamente aplicables.',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
+  },
+];
+---
+
+<PageLayout
+  title="Consultoría y formación de redes sociales en China | TheRedScroll"
+  description="Consultoría estratégica, talleres AIGC, escucha social, vigilancia competitiva, auditorías KOL, planes de crisis, formación de campañas. Equipo en Shanghái."
+  lang="es"
+>
+
+  <section class="relative w-full overflow-hidden bg-[var(--color-ink)]">
+    <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/training-consulting-hero.png')" aria-hidden="true"></div>
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+        Formación y consultoría
+      </p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        Hacerse con el mercado chino, o pasarnos un asunto concreto que destrabar.
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        Consultoría para decisiones puntuales. Formación para que sus equipos suban el nivel. Todo lo lleva gente que vive en las redes sociales chinas cada día.
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/es/contacto">Reservar una llamada</Button>
+        <Button variant="secondary-dark" href="#consultoria">Servicios</Button>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        <div class="relative col-span-2 row-span-2 max-[640px]:col-span-1 max-[640px]:row-span-1 bg-[#1A1A1A] rounded-[12px] p-[32px] max-[640px]:p-[20px] flex flex-col justify-between min-h-[320px] max-[640px]:min-h-0 overflow-hidden">
+          <svg class="absolute bottom-[-20px] right-[-20px] w-[260px] h-[260px] opacity-[0.06]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          <div class="relative z-[1]">
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Por qué existe este servicio</p>
+            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[16px]">Algunas marcas buscan experiencia, no manos extra.</h2>
+            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[400px]">No todas las marcas quieren externalizar. Algunas ya tienen sus equipos. Lo que les falta es la capa de experiencia.</p>
+          </div>
+          <div class="relative z-[1] mt-[24px]">
+            <Button variant="secondary-dark" href="#consultoria">Servicios</Button>
+          </div>
+        </div>
+        <div class="relative overflow-hidden bg-[#F0F1F4] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Lagunas de plataforma</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">Cómo funcionan de verdad las plataformas. Qué formatos dan resultados reales, más allá de lo que suena bien en reunión. Cómo enchufar la IA a una cadena de producción.</p>
+        </div>
+        <div class="relative overflow-hidden bg-[#1A1A1A] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19.439 7.85c-.049.322.059.648.289.878l1.568 1.568c.47.47.706 1.087.706 1.704s-.235 1.233-.706 1.704l-1.611 1.611a.98.98 0 0 1-.837.276c-.47-.07-.802-.48-.968-.925a2.501 2.501 0 1 0-3.214 3.214c.446.166.855.497.925.968a.979.979 0 0 1-.276.837l-1.61 1.61a2.404 2.404 0 0 1-1.705.707 2.402 2.402 0 0 1-1.704-.706l-1.568-1.568a1.026 1.026 0 0 0-.877-.29c-.493.074-.84.504-1.02.968a2.5 2.5 0 1 1-3.237-3.237c.464-.18.894-.527.967-1.02a1.026 1.026 0 0 0-.289-.877l-1.568-1.568A2.402 2.402 0 0 1 1.998 12c0-.617.236-1.234.706-1.704L4.23 8.77c.24-.24.581-.353.917-.303.515.077.877.528 1.073 1.01a2.5 2.5 0 1 0 3.259-3.259c-.482-.196-.933-.558-1.01-1.073-.05-.336.062-.676.303-.917l1.525-1.525A2.402 2.402 0 0 1 12 1.998c.617 0 1.234.236 1.704.706l1.568 1.568c.23.23.556.338.877.29.493-.074.84-.504 1.02-.969a2.5 2.5 0 1 1 3.237 3.237c-.464.18-.894.527-.967 1.02z"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Problemas concretos por resolver</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.6)]">Indicadores planos tras un año publicando. Ruptura con una agencia. Un presupuesto de KOL probablemente sobredimensionado, pero sin datos que lo prueben.</p>
+        </div>
+        <div class="relative overflow-hidden bg-[#CC3333] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Una opinión de profesionales</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.8)]">Nuestro equipo pilota campañas a diario. Nuestras recomendaciones salen de lo que está funcionando este mes, en las plataformas en las que trabajamos cada día.</p>
+        </div>
+        <div class="relative overflow-hidden bg-[#E8E0D8] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Un marco flexible</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">Una sesión estratégica puntual o un proyecto de varias semanas. Algunas marcas encadenan luego un acompañamiento mensual. Otras vuelven una vez al año. Nos amoldamos a su ritmo.</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <section id="consultoria" class="mt-[96px] max-[640px]:mt-[64px] scroll-mt-[76px]">
+    <Container>
+      <SectionBar />
+      <SectionHeading overline="Consultoría">Nuestras misiones de consultoría</SectionHeading>
+
+      <div class="rounded-[12px] overflow-hidden mt-[24px]">
+        <img src="/images/what-we-do/consulting-cyril.png" alt="Cyril Drouin en consultoría con clientes en una sala de reuniones" class="w-full aspect-[5/2] max-[640px]:aspect-[16/10] object-cover" loading="lazy" decoding="async" />
+      </div>
+
+      <div class="flex gap-[2px] mt-[24px] h-[400px] max-[640px]:flex-col max-[640px]:h-auto" data-col-accordion>
+
+        <div class="col-panel is-active rounded-l-[10px] max-[640px]:rounded-l-none max-[640px]:rounded-t-[10px]" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">Consultoría estratégica</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Consultoría estratégica</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Elección de plataformas, planificación editorial, arquitectura de campaña, estrategia con KOL, social commerce, posicionamiento frente a la competencia. En sesión puntual o en un proyecto de varias semanas. Cada misión termina en un documento directamente aplicable.</p>
+          </div>
+        </div>
+
+        <div class="col-panel" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">Consultoría de contenido y AIGC</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Consultoría de contenido y AIGC</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Auditamos su cadena de producción y vemos dónde la IA acelera el trabajo sin recortar calidad. Marcos de prompts, entrenamiento de modelos a medida, elección de herramientas. La pregunta ya no es si pasar a IA, sino cómo.</p>
+          </div>
+        </div>
+
+        <div class="col-panel" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">Auditorías de rendimiento</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Auditorías de rendimiento</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Cuentas, contenidos, tasas de interacción, gasto publicitario, colaboraciones con KOL, posicionamiento competitivo. Un informe escrito: qué funciona, qué falla y qué corregir. Para usar en casa o entregar a su agencia.</p>
+          </div>
+        </div>
+
+        <div class="col-panel" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">Escucha social</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Escucha social</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Menciones de marca, tono de las conversaciones, temas que suben, actividad de la competencia en RedNote, Douyin, WeChat, Weibo y Zhihu. Herramientas automáticas más comprobaciones manuales por nuestro equipo de Shanghái.</p>
+          </div>
+        </div>
+
+        <div class="col-panel" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">Vigilancia competitiva</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Vigilancia competitiva</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Informes mensuales o trimestrales sobre sus 5 a 10 competidores principales: líneas editoriales, cadencia de publicación, dinámica de interacción, colaboraciones KOL, actividad publicitaria, lanzamientos recientes.</p>
+          </div>
+        </div>
+
+        <div class="col-panel rounded-r-[10px] max-[640px]:rounded-r-none max-[640px]:rounded-b-[10px]" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">Evaluación de riesgo KOL</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Evaluación de riesgo KOL</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Verificación previa antes de cualquier colaboración con un KOL o una celebridad. Controversias pasadas, sensibilidades políticas, conflictos de marca, seguidores falsos, calidad real de la audiencia.</p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="bg-[#1A1A1A] rounded-[12px] p-[48px] max-[640px]:p-[32px_20px]">
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">Gestión de crisis</p>
+        <h2 class="text-[#FFFFFF] text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] mb-[16px]">El mejor momento para preparar un plan de crisis es antes de necesitarlo.</h2>
+        <div class="max-w-[680px] flex flex-col gap-[24px]">
+          <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+            Qué hacer cuando una colaboración con un KOL descarrila. Cómo reaccionar si un producto llama la atención por los motivos equivocados en RedNote. Qué circuito de escalada activar si un patinazo cultural se vuelve viral en Weibo.
+          </p>
+          <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+            Alertas de escucha, plantillas de respuesta, protocolos de escalada, pautas por plataforma. Montamos el dispositivo de una vez, usted lo guarda a mano y lo saca el día que algo ocurre. Si la situación supera lo que se resuelve en redes, le ponemos en contacto con despachos de gestión de crisis especializados.
+          </p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <SectionBar />
+      <SectionHeading overline="Formación">Programas de formación</SectionHeading>
+
+      <div class="rounded-[12px] overflow-hidden mt-[24px]">
+        <img src="/images/what-we-do/training-liyan.png" alt="Liyan Ye impartiendo un taller de formación" class="w-full aspect-[5/2] max-[640px]:aspect-[16/10] object-cover" loading="lazy" decoding="async" />
+      </div>
+
+      <div class="flex gap-[2px] mt-[24px] h-[400px] max-[640px]:flex-col max-[640px]:h-auto" data-col-accordion>
+
+        <div class="col-panel is-active rounded-l-[10px] max-[640px]:rounded-l-none max-[640px]:rounded-t-[10px]" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">Panorama de redes sociales</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Panorama de redes sociales</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[12px]">Para equipos que aterrizan en el mercado o quieren una vista estructurada. Plataformas clave, perfiles de usuario, formatos de contenido, dispositivos publicitarios y cómo se articula todo. Casos del terreno y panorama competitivo para su sector.</p>
+            <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] opacity-[0.7]">Media jornada o jornada completa. Presencial o remoto. Para equipos de marketing, dirección general, responsables de marca.</p>
+          </div>
+        </div>
+
+        <div class="col-panel" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">Montar y pilotar campañas</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Montar y pilotar campañas</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[12px]">Del brief al balance postcampaña. Calendarios editoriales, producción calibrada por plataforma, selección de KOL, configuración publicitaria, medición de resultados. Los participantes salen con un borrador de plan de campaña para su marca.</p>
+            <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] opacity-[0.7]">Uno o dos días en formato práctico. Para responsables de redes, equipos de contenido y equipos que gestionan una relación de agencia.</p>
+          </div>
+        </div>
+
+        <div class="col-panel" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">Integrar el AIGC</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Integrar el AIGC en la producción de contenido</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[12px]">Las herramientas de IA del momento para texto, imagen y vídeo. Ingeniería de prompts. Entrenamiento de modelos a medida. Diseño de flujos de producción en volumen. Control de calidad. Cumplimiento de las normas de etiquetado de contenido generado por IA (en vigor desde septiembre de 2025).</p>
+            <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] opacity-[0.7]">De media jornada a jornada completa, con demostraciones en directo. Para productores de contenido, directores artísticos, responsables de producción.</p>
+          </div>
+        </div>
+
+        <div class="col-panel rounded-r-[10px] max-[640px]:rounded-r-none max-[640px]:rounded-b-[10px]" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">Venta en directo</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Venta en directo</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[12px]">Cómo vender en directo. Elección de plataforma (Douyin, Taobao Live, WeChat Channels). Formación de presentadores, redacción de guiones, secuenciación de productos, mecánicas de venta flash, interacción en tiempo real. Desmenuzamos las sesiones más rentables del momento y por qué funcionan.</p>
+            <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] opacity-[0.7]">Media jornada con vídeos de casos y ejercicios de planificación. Para equipos de e-commerce, responsables de marca, directores de marketing.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <style>
+        .col-panel {
+          position: relative;
+          flex: 0 0 56px;
+          background: var(--color-rice-paper);
+          cursor: pointer;
+          overflow: hidden;
+          transition: flex 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .col-panel.is-active {
+          flex: 1 1 0%;
+          cursor: default;
+        }
+        .col-label {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          opacity: 1;
+          transition: opacity 0.3s ease;
+        }
+        .col-panel.is-active .col-label {
+          opacity: 0;
+          pointer-events: none;
+        }
+        .col-label-text {
+          writing-mode: vertical-rl;
+          text-orientation: mixed;
+          transform: rotate(180deg);
+          font-size: 14px;
+          font-weight: 500;
+          color: var(--color-ink);
+          white-space: nowrap;
+          letter-spacing: 0.02em;
+        }
+        .col-content {
+          position: absolute;
+          inset: 0;
+          padding: 32px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          opacity: 0;
+          transition: opacity 0.35s ease 0.15s;
+        }
+        .col-panel.is-active .col-content {
+          opacity: 1;
+        }
+        .col-panel.is-active::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 15%;
+          bottom: 15%;
+          width: 3px;
+          background: var(--color-vermillion);
+          border-radius: 0 2px 2px 0;
+        }
+        .col-panel:not(.is-active):hover {
+          background: var(--color-warm-gray);
+        }
+        @media (max-width: 640px) {
+          .col-panel {
+            flex: 0 0 48px;
+          }
+          .col-panel.is-active {
+            flex: 0 0 auto;
+            min-height: 200px;
+          }
+          .col-label-text {
+            writing-mode: horizontal-tb;
+            transform: none;
+            font-size: 13px;
+          }
+          .col-content {
+            position: relative;
+            padding: 20px;
+          }
+          .col-panel.is-active::before {
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            height: auto;
+          }
+        }
+      </style>
+
+      <script>
+        document.querySelectorAll('[data-col-accordion]').forEach((accordion) => {
+          const panels = accordion.querySelectorAll('[data-col-panel]');
+          panels.forEach((panel) => {
+            panel.addEventListener('click', () => {
+              if (panel.classList.contains('is-active')) return;
+              panels.forEach((p) => p.classList.remove('is-active'));
+              panel.classList.add('is-active');
+            });
+          });
+        });
+      </script>
+    </Container>
+  </section>
+
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <a href="/es/proyectos/langnese" class="block bg-[var(--color-rice-paper)] rounded-[10px] p-[48px] max-[640px]:p-[32px_20px] group">
+        <div class="flex gap-[48px] max-[768px]:flex-col items-center">
+          <div class="flex-1 min-w-0">
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[12px]">Caso de éxito</p>
+            <h3 class="text-[24px] max-[640px]:text-[20px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[12px]">Langnese: reposicionar la primera miel alemana para acelerar en China</h3>
+            <p class="text-[15px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[20px]">La marca número uno de miel en Alemania necesitaba un posicionamiento más afilado para el mercado chino. Un marco estructurado en nueve pilares abrió nuevos canales, nuevas audiencias y una dinámica real de crecimiento.</p>
+            <span class="text-[14px] font-medium text-[var(--color-vermillion)] group-hover:underline">Ver el caso →</span>
+          </div>
+          <img
+            src="/images/clients/Langnese/Langnese-Honey.png"
+            alt="Gama de mieles Langnese para el mercado chino"
+            class="w-[45%] max-[768px]:w-full aspect-[16/10] object-cover rounded-[10px]"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </a>
+    </Container>
+  </section>
+
+  <GettingStarted
+    lang="es"
+    heading="De la primera llamada a la formación entregada, dos semanas bastan."
+    steps={gettingStartedSteps}
+    backgroundImage="/images/getting-started/training-consulting.png"
+    crossLinks={[
+      { label: 'Estrategia y campañas', href: '/es/servicios/estrategia-campanas' },
+      { label: 'Producción de contenidos', href: '/es/servicios/produccion-contenido' },
+      { label: 'Entrada al mercado', href: '/es/servicios/entrada-mercado' },
+    ]}
+  />
+
+  <FaqAccordion lang="es" faqs={faqs} subtitle="Todo lo que conviene saber antes de pedir a TheRedScroll una consultoría o una formación." />
+
+</PageLayout>

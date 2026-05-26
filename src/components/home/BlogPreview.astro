@@ -17,6 +17,8 @@ const lp = (path: string) => localizedPath(path, lang);
 
 const collectionName = lang === 'fr' ? 'blog-fr' : lang === 'zh' ? 'blog-zh' : 'blog';
 const allPosts = await getCollection(collectionName);
+// For locales without a routed insights folder yet, link to the English route so cards never 404.
+const insightsHasLocaleRoute = lang === 'en' || lang === 'fr' || lang === 'zh';
 const posts = allPosts
   .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime())
   .slice(0, 3)
@@ -25,23 +27,33 @@ const posts = allPosts
     title: post.data.title,
     readingTime: `${Math.ceil(post.body!.split(/\s+/).length / 200)} min`,
     date: new Date(post.data.publishDate).toLocaleDateString(
-      lang === 'zh' ? 'zh-CN' : lang === 'fr' ? 'fr-FR' : 'en-US',
+      lang === 'zh' ? 'zh-CN' : lang === 'fr' ? 'fr-FR' : lang === 'es' ? 'es-ES' : lang === 'de' ? 'de-DE' : 'en-US',
       { month: 'long', year: 'numeric' }
     ),
-    slug: lp(`/insights/${post.id}`),
+    slug: insightsHasLocaleRoute ? lp(`/insights/${post.id}`) : `/insights/${post.id}`,
     featuredImage: post.data.featuredImage,
   }));
 
-const sectionText = lang === 'zh' ? {
+const sectionText = lang === 'de' ? {
+  overline: 'Analysen',
+  heading: 'Was uns dieser Tage beschäftigt.',
+  readingLabel: 'Lesezeit',
+  cta: 'Weitere Analysen lesen',
+} : lang === 'zh' ? {
   overline: '行业洞察',
   heading: '我们最近在研究的几件事。',
   readingLabel: '阅读',
   cta: '查看更多文章',
 } : lang === 'fr' ? {
-  overline: 'Publications',
-  heading: 'Nos derniers articles.',
+  overline: 'Analyses',
+  heading: 'Nos dernières analyses sur le marché chinois.',
   readingLabel: 'de lecture',
-  cta: 'Lire toutes nos publications',
+  cta: 'Toutes nos analyses',
+} : lang === 'es' ? {
+  overline: 'Análisis',
+  heading: 'En qué estamos pensando estos días.',
+  readingLabel: 'de lectura',
+  cta: 'Ver más análisis',
 } : {
   overline: 'Insights',
   heading: 'What we\'re writing about.',

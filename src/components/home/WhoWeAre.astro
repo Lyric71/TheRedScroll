@@ -10,7 +10,7 @@ interface Props {
 
 const { lang = 'en' } = Astro.props;
 
-const text = {
+const textByLang = {
   en: {
     overline: 'About TheRedScroll',
     heading: 'We grow social networks in China. From the ground.',
@@ -25,14 +25,14 @@ const text = {
   },
   fr: {
     overline: 'À propos de TheRedScroll',
-    heading: 'On développe vos réseaux sociaux en Chine. Depuis le terrain.',
-    p1: 'TheRedScroll est une agence pensée pour la Chine. On travaille depuis Shanghai et Hong Kong, au cœur des plateformes, tous les jours.',
-    p2: 'Notre équipe est chinoise. Elle vit sur WeChat, Douyin, RedNote et Weibo comme votre audience. Quand un sujet explose sur Weibo à 9h heure de Pékin, on est déjà dessus.',
-    p3: 'On accompagne trois profils. Les marques internationales qui arrivent en Chine. Celles qui y sont déjà et veulent de meilleurs résultats. Les marques chinoises qui veulent muscler leur présence sociale.',
+    heading: 'Nous bâtissons votre présence sociale en Chine. Sur le terrain, jamais à distance.',
+    p1: 'TheRedScroll est une agence dédiée au marché chinois. Nos bureaux de Shanghai et de Hong Kong opèrent à l\'intérieur même des plateformes, sept jours sur sept.',
+    p2: 'L\'équipe est entièrement sinophone. Elle évolue sur WeChat, Douyin, RedNote et Weibo dans les mêmes usages que votre audience. Un sujet émerge sur Weibo à 9 heures à Pékin : nous sommes déjà mobilisés.',
+    p3: 'Trois profils de clients nous sollicitent. Les marques internationales qui entrent pour la première fois en Chine. Celles, déjà présentes, qui cherchent une performance supérieure. Et les marques chinoises décidées à franchir un palier sur leurs réseaux domestiques.',
     stats: [
-      { value: '20+', label: 'Ans d\'expérience' },
-      { value: '18+', label: 'Plateformes couvertes' },
-      { value: 'Notre propre', label: 'Studio' },
+      { value: '20+', label: 'années d\'expérience' },
+      { value: '18+', label: 'plateformes couvertes' },
+      { value: 'Notre propre', label: 'studio' },
     ],
   },
   zh: {
@@ -47,7 +47,32 @@ const text = {
       { value: '自有', label: '内容工作室' },
     ],
   },
-}[lang];
+  de: {
+    overline: 'Über TheRedScroll',
+    heading: 'Wir bauen Reichweite in Chinas sozialen Netzwerken auf. Von innen heraus.',
+    p1: 'TheRedScroll ist eine Social-Media-Agentur, die ausschließlich für China gemacht ist. Wir arbeiten aus Shanghai und Hongkong, mitten in den Plattformen, jeden Tag.',
+    p2: 'Das Team besteht aus chinesischen Muttersprachlern. Sie bewegen sich auf WeChat, Douyin, RedNote und Weibo wie Ihre Zielgruppe. Wenn morgens um neun Uhr Pekinger Zeit ein Thema auf Weibo hochgeht, sind wir längst dran.',
+    p3: 'Wir arbeiten für drei Profile: internationale Marken, die zum ersten Mal nach China gehen. Marken, die bereits vor Ort sind und mehr Performance suchen. Und chinesische Marken, die ihre Social-Reichweite auf das nächste Level heben wollen.',
+    stats: [
+      { value: '20+', label: 'Jahre Erfahrung' },
+      { value: '18+', label: 'Plattformen abgedeckt' },
+      { value: 'Eigenes', label: 'Studio' },
+    ],
+  },
+  es: {
+    overline: 'Sobre TheRedScroll',
+    heading: 'Hacemos crecer las redes sociales en China. Desde dentro.',
+    p1: 'TheRedScroll es una agencia de social media construida para China. Operamos desde Shanghái y Hong Kong, dentro de las plataformas, cada día.',
+    p2: 'El equipo es nativo chino. Vive en WeChat, Douyin, RedNote y Weibo igual que su audiencia. Cuando una tendencia salta en Weibo a las nueve de la mañana en Pekín, nosotros ya estamos encima.',
+    p3: 'Trabajamos con tres tipos de cliente: marcas internacionales que aterrizan en China por primera vez, marcas internacionales que ya operan en el país y quieren resultados de otro nivel, y marcas chinas que buscan dar un salto en sus redes domésticas.',
+    stats: [
+      { value: '20+', label: 'años de experiencia' },
+      { value: '18+', label: 'plataformas cubiertas' },
+      { value: 'Estudio', label: 'propio' },
+    ],
+  },
+};
+const text = (textByLang as Record<string, typeof textByLang.en>)[lang] ?? textByLang.en;
 ---
 
 <section class="mt-[64px] max-[640px]:mt-[40px]">
@@ -57,15 +82,15 @@ const text = {
       <div class="grid grid-cols-2 grid-rows-2 gap-[12px]">
         <!-- Large image top-left spanning 1 col, 2 rows -->
         <div class="row-span-2 rounded-[8px] bg-[#F0F1F4] aspect-[3/4] overflow-hidden">
-          <img src="/images/team/china-office.png" alt={lang === 'fr' ? 'Bureau TheRedScroll en Chine' : lang === 'zh' ? 'TheRedScroll中国办公室' : 'TheRedScroll China office'} class="w-full h-full object-cover" loading="lazy" decoding="async" />
+          <img src="/images/team/china-office.png" alt={lang === 'fr' ? 'Bureau TheRedScroll en Chine' : lang === 'zh' ? 'TheRedScroll中国办公室' : lang === 'es' ? 'Oficina de TheRedScroll en China' : lang === 'de' ? 'TheRedScroll-Büro in China' : 'TheRedScroll China office'} class="w-full h-full object-cover" loading="lazy" decoding="async" />
         </div>
         <!-- Top-right image -->
         <div class="rounded-[8px] bg-[#F0F1F4] aspect-[4/3] overflow-hidden">
-          <img src="/images/team/hongkong-office.png" alt={lang === 'fr' ? 'Bureau TheRedScroll à Hong Kong' : lang === 'zh' ? 'TheRedScroll香港办公室' : 'TheRedScroll Hong Kong office'} class="w-full h-full object-cover" loading="lazy" decoding="async" />
+          <img src="/images/team/hongkong-office.png" alt={lang === 'fr' ? 'Bureau TheRedScroll à Hong Kong' : lang === 'zh' ? 'TheRedScroll香港办公室' : lang === 'es' ? 'Oficina de TheRedScroll en Hong Kong' : lang === 'de' ? 'TheRedScroll-Büro in Hongkong' : 'TheRedScroll Hong Kong office'} class="w-full h-full object-cover" loading="lazy" decoding="async" />
         </div>
         <!-- Bottom-right image -->
         <div class="rounded-[8px] bg-[#F0F1F4] aspect-[4/3] overflow-hidden">
-          <img src="/images/team/team-photo.png" alt={lang === 'fr' ? 'Équipe TheRedScroll' : lang === 'zh' ? 'TheRedScroll团队' : 'TheRedScroll team'} class="w-full h-full object-cover" loading="lazy" decoding="async" />
+          <img src="/images/team/team-photo.png" alt={lang === 'fr' ? 'Équipe TheRedScroll' : lang === 'zh' ? 'TheRedScroll团队' : lang === 'es' ? 'Equipo de TheRedScroll' : lang === 'de' ? 'TheRedScroll-Team' : 'TheRedScroll team'} class="w-full h-full object-cover" loading="lazy" decoding="async" />
         </div>
       </div>
 

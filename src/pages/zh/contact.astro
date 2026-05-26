@@ -1,5 +1,30 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const services = [
+  '策略和Campaign执行',
+  '广告投放',
+  '内容制作',
+  '达人营销',
+  '中国市场进入',
+  'CRM和私域',
+  '培训和咨询',
+];
+
+const platforms = [
+  '微信',
+  '小红书',
+  '抖音',
+  '微博',
+  '其他平台（B站、快手、知乎…）',
+];
+
+const budgets = [
+  '5,000 美元以下',
+  '5,000 至 15,000 美元',
+  '15,000 至 30,000 美元',
+  '30,000 美元以上',
+];
 ---
 
 <BaseLayout
@@ -11,7 +36,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <main class="pt-[60px] max-[640px]:pt-[52px]">
 
     <!-- Contact: dark section with info + form -->
-    <section class="relative w-full bg-[#1A1A1A] py-[80px] max-[640px]:py-[48px] px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] overflow-hidden">
+    <section class="relative w-full bg-[#1A1A1A] py-[80px] max-[1024px]:py-[64px] max-[640px]:py-[48px] px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] overflow-hidden">
       <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero/contact-bg.png')" aria-hidden="true"></div>
       <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.75]" aria-hidden="true"></div>
       <div class="relative z-[1] max-w-[1200px] mx-auto">
@@ -63,10 +88,49 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
                 <input type="url" name="website" class="block w-full h-[44px] px-[12px] text-[14px] font-normal text-[#1A1A1A] bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[6px] outline-none transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)] focus:border-[#1A1A1A] placeholder:text-[#5C5C5C] placeholder:opacity-60" placeholder="https://yourcompany.com" />
               </div>
 
+              <!-- Services -->
+              <fieldset class="border-0 p-0 m-0">
+                <legend class="block text-[13px] font-normal text-[#5C5C5C] mb-[8px]">感兴趣的服务</legend>
+                <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-x-[12px] gap-y-[8px]">
+                  {services.map((service) => (
+                    <label class="flex items-center gap-[8px] text-[13px] font-normal text-[#1A1A1A] leading-[1.4] cursor-pointer">
+                      <input type="checkbox" name="services" value={service} class="w-[16px] h-[16px] accent-[#CC3333] cursor-pointer flex-shrink-0" />
+                      <span>{service}</span>
+                    </label>
+                  ))}
+                </div>
+              </fieldset>
+
+              <!-- Platforms -->
+              <fieldset class="border-0 p-0 m-0">
+                <legend class="block text-[13px] font-normal text-[#5C5C5C] mb-[8px]">感兴趣的平台</legend>
+                <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-x-[12px] gap-y-[8px]">
+                  {platforms.map((platform) => (
+                    <label class="flex items-center gap-[8px] text-[13px] font-normal text-[#1A1A1A] leading-[1.4] cursor-pointer">
+                      <input type="checkbox" name="platforms" value={platform} class="w-[16px] h-[16px] accent-[#CC3333] cursor-pointer flex-shrink-0" />
+                      <span>{platform}</span>
+                    </label>
+                  ))}
+                </div>
+              </fieldset>
+
+              <!-- Budget -->
+              <fieldset class="border-0 p-0 m-0">
+                <legend class="block text-[13px] font-normal text-[#5C5C5C] mb-[8px]">预算范围</legend>
+                <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-x-[12px] gap-y-[8px]">
+                  {budgets.map((budget) => (
+                    <label class="flex items-center gap-[8px] text-[13px] font-normal text-[#1A1A1A] leading-[1.4] cursor-pointer">
+                      <input type="radio" name="budget" value={budget} class="w-[16px] h-[16px] accent-[#CC3333] cursor-pointer flex-shrink-0" />
+                      <span>{budget}</span>
+                    </label>
+                  ))}
+                </div>
+              </fieldset>
+
               <!-- Message -->
               <div>
                 <label class="block text-[13px] font-normal text-[#5C5C5C] mb-[4px]">项目简介 <span class="text-[#CC3333]">*</span></label>
-                <textarea name="message" required rows="5" class="block w-full px-[12px] py-[12px] text-[14px] font-normal text-[#1A1A1A] bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[6px] outline-none transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)] focus:border-[#1A1A1A] placeholder:text-[#5C5C5C] placeholder:opacity-60 resize-vertical leading-[1.5] min-h-[120px]" placeholder="打算先做哪些平台？在中国的目标是什么？"></textarea>
+                <textarea name="message" required rows="5" class="block w-full px-[12px] py-[12px] text-[14px] font-normal text-[#1A1A1A] bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[6px] outline-none transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)] focus:border-[#1A1A1A] placeholder:text-[#5C5C5C] placeholder:opacity-60 resize-vertical leading-[1.5] min-h-[120px]" placeholder="在中国的目标是什么？时间节点、目标人群、任何我们需要知道的信息。"></textarea>
               </div>
 
               <!-- Honeypot — hidden from humans, bots fill it -->
@@ -163,11 +227,24 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     submitBtn.setAttribute('disabled', 'true');
 
     const data = new FormData(form);
+    const selectedServices = data.getAll('services').join('、') || '未选择';
+    const selectedPlatforms = data.getAll('platforms').join('、') || '未选择';
+    const selectedBudget = data.get('budget') || '未填写';
+
+    const composedMessage = [
+      `网站：${data.get('website') || 'N/A'}`,
+      `服务：${selectedServices}`,
+      `平台：${selectedPlatforms}`,
+      `预算：${selectedBudget}`,
+      '',
+      data.get('message'),
+    ].join('\n');
+
     const body = {
       name: `${data.get('firstName')} ${data.get('lastName')}`,
       email: data.get('email'),
       company: data.get('company'),
-      message: `Website: ${data.get('website') || 'N/A'}\n\n${data.get('message')}`,
+      message: composedMessage,
       honeypot: data.get('website_url'),
       captcha: data.get('captcha'),
       captchaAnswer: data.get('captcha_answer'),

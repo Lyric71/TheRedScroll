@@ -18,17 +18,17 @@ interface Props {
   steps: Step[];
   backgroundImage: string;
   crossLinks?: CrossLink[];
-  lang?: 'en' | 'fr' | 'zh';
+  lang?: 'en' | 'fr' | 'zh' | 'es' | 'de';
 }
 
 const { heading, steps, backgroundImage, crossLinks = [], lang = 'en' } = Astro.props;
-const overline = lang === 'zh' ? '合作流程' : lang === 'fr' ? 'Pour commencer' : 'Getting started';
-const bookCall = lang === 'zh' ? '预约通话' : lang === 'fr' ? 'Prendre rendez-vous' : 'Book a call';
-const seeAlso = lang === 'zh' ? '也可以看看' : lang === 'fr' ? 'À voir aussi' : 'See also';
-const contactHref = lang === 'zh' ? '/zh/contact' : lang === 'fr' ? '/fr/contact' : '/contact';
+const overline = lang === 'zh' ? '合作流程' : lang === 'fr' ? 'Pour commencer' : lang === 'es' ? 'Cómo empezamos' : lang === 'de' ? 'So legen wir los' : 'Getting started';
+const bookCall = lang === 'zh' ? '预约通话' : lang === 'fr' ? 'Prendre rendez-vous' : lang === 'es' ? 'Reservar una llamada' : lang === 'de' ? 'Gespräch vereinbaren' : 'Book a call';
+const seeAlso = lang === 'zh' ? '也可以看看' : lang === 'fr' ? 'À voir aussi' : lang === 'es' ? 'Ver también' : lang === 'de' ? 'Auch interessant' : 'See also';
+const contactHref = lang === 'zh' ? '/zh/contact' : lang === 'fr' ? '/fr/contact' : lang === 'es' ? '/es/contacto' : lang === 'de' ? '/de/contact' : '/contact';
 ---
 
-<section class="relative mt-[96px] max-[640px]:mt-[64px] pt-[80px] pb-[80px] max-[640px]:pt-[48px] max-[640px]:pb-[48px] overflow-hidden">
+<section class="relative mt-[96px] max-[640px]:mt-[64px] pt-[80px] pb-[80px] max-[1024px]:pt-[64px] max-[1024px]:pb-[64px] max-[640px]:pt-[48px] max-[640px]:pb-[48px] overflow-hidden">
   <div class="absolute inset-0 bg-cover bg-center" style={`background-image: url('${backgroundImage}')`} aria-hidden="true"></div>
   <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.88]" aria-hidden="true"></div>
 

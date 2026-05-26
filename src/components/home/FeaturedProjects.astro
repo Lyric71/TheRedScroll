@@ -14,23 +14,23 @@ const lp = (path: string) => localizedPath(path, lang);
 
 const projectText: Record<string, { title: string; industry: string; platform?: string }> = {
   viessmann: {
-    title: lang === 'zh' ? 'Viessmann：把社媒流量直接做成订单' : lang === 'fr' ? 'Viessmann : quand le social génère des ventes en Chine' : 'Viessmann: social-to-commerce engine in China',
-    industry: lang === 'zh' ? '暖通系统' : lang === 'fr' ? 'Climatisation' : 'Climate Systems',
+    title: lang === 'de' ? 'Viessmann: vom Social-Inhalt direkt in den Verkaufstrichter' : lang === 'zh' ? 'Viessmann：把社媒流量直接做成订单' : lang === 'fr' ? 'Viessmann : du contenu social au tunnel de vente, en direct' : lang === 'es' ? 'Viessmann: del social al pedido, sin escalas' : 'Viessmann: social-to-commerce engine in China',
+    industry: lang === 'de' ? 'Klimasysteme' : lang === 'zh' ? '暖通系统' : lang === 'fr' ? 'Climatisation' : lang === 'es' ? 'Climatización' : 'Climate Systems',
     platform: lang === 'zh' ? '抖音 + 小红书 + 企业微信' : undefined,
   },
   jlr: {
-    title: lang === 'zh' ? '捷豹路虎：用社媒打动更年轻的用户' : lang === 'fr' ? 'Jaguar Land Rover : toucher une audience plus jeune sur le social' : 'Jaguar Land Rover: reaching younger consumers',
-    industry: lang === 'zh' ? '汽车' : lang === 'fr' ? 'Automobile' : 'Automotive',
+    title: lang === 'de' ? 'Jaguar Land Rover: jüngere Kunden in den sozialen Netzwerken erreichen' : lang === 'zh' ? '捷豹路虎：用社媒打动更年轻的用户' : lang === 'fr' ? 'Jaguar Land Rover : capter une clientèle plus jeune sur les réseaux' : lang === 'es' ? 'Jaguar Land Rover: conectar con un público más joven' : 'Jaguar Land Rover: reaching younger consumers',
+    industry: lang === 'de' ? 'Automobil' : lang === 'zh' ? '汽车' : lang === 'fr' ? 'Automobile' : lang === 'es' ? 'Automoción' : 'Automotive',
     platform: lang === 'zh' ? '抖音 + 小红书 + 微信' : undefined,
   },
   jac: {
-    title: lang === 'zh' ? 'JAC 江淮：靠 AI 把车主社群真正做起来' : lang === 'fr' ? 'JAC Motors : bâtir une communauté grâce à l\'IA' : 'JAC Motors: AI-powered community building',
-    industry: lang === 'zh' ? '汽车 / 新能源' : lang === 'fr' ? 'Automobile / VE' : 'Automotive / EV',
+    title: lang === 'de' ? 'JAC Motors: eine Community, mit KI aufgebaut' : lang === 'zh' ? 'JAC 江淮：靠 AI 把车主社群真正做起来' : lang === 'fr' ? 'JAC Motors : structurer une communauté propulsée par l\'IA' : lang === 'es' ? 'JAC Motors: una comunidad construida con IA' : 'JAC Motors: AI-powered community building',
+    industry: lang === 'de' ? 'Automobil / E-Mobilität' : lang === 'zh' ? '汽车 / 新能源' : lang === 'fr' ? 'Automobile / VE' : lang === 'es' ? 'Automoción / VE' : 'Automotive / EV',
     platform: lang === 'zh' ? '微信 + 小红书 + 微博' : undefined,
   },
   iguzzini: {
-    title: lang === 'zh' ? 'iGuzzini：让高端照明走进大众视野' : lang === 'fr' ? 'iGuzzini : l\'éclairage haut de gamme s\'ouvre au grand public' : 'iGuzzini: luxury lighting goes consumer',
-    industry: lang === 'zh' ? '高端照明' : lang === 'fr' ? 'Éclairage haut de gamme' : 'Luxury Lighting',
+    title: lang === 'de' ? 'iGuzzini: hochwertige Beleuchtung trifft auf ein breiteres Publikum' : lang === 'zh' ? 'iGuzzini：让高端照明走进大众视野' : lang === 'fr' ? 'iGuzzini : ouvrir l\'éclairage haut de gamme à un public élargi' : lang === 'es' ? 'iGuzzini: la iluminación de alta gama se abre al gran público' : 'iGuzzini: luxury lighting goes consumer',
+    industry: lang === 'de' ? 'Premium-Beleuchtung' : lang === 'zh' ? '高端照明' : lang === 'fr' ? 'Éclairage haut de gamme' : lang === 'es' ? 'Iluminación de alta gama' : 'Luxury Lighting',
     platform: lang === 'zh' ? '微信 + 小红书 + 微博' : undefined,
   },
 };
@@ -66,15 +66,25 @@ const projects = [
   },
 ];
 
-const sectionText = lang === 'zh' ? {
+const sectionText = lang === 'de' ? {
+  overline: 'Ausgewählte Projekte',
+  heading: 'Kampagnen, die Marken in Chinas Plattformen verankern.',
+  description: 'Vom Luxus-Launch bis zur B2B-Leadgenerierung. Echte Kampagnen, echte Plattformen, nachweisbare Ergebnisse.',
+  cta: 'Alle Projekte ansehen',
+} : lang === 'zh' ? {
   overline: '精选案例',
   heading: '这些品牌，已经在中国社媒真正跑出了结果。',
   description: '从奢侈品新品发布到 B2B 获客，真实的项目、真实的平台、可核验的数据。',
   cta: '查看全部案例',
+} : lang === 'es' ? {
+  overline: 'Proyectos destacados',
+  heading: 'Campañas que asientan marcas en las redes sociales chinas.',
+  description: 'Desde lanzamientos de lujo hasta generación de leads B2B. Campañas reales, plataformas reales, resultados verificables.',
+  cta: 'Ver todos los proyectos',
 } : lang === 'fr' ? {
-  overline: 'Projets',
-  heading: 'Des campagnes qui font grandir les marques en Chine.',
-  description: 'Du lancement haut de gamme à la génération de prospects B2B. Des campagnes réelles. Des plateformes réelles. Des résultats mesurables.',
+  overline: 'Nos références',
+  heading: 'Des campagnes qui installent durablement les marques sur les réseaux chinois.',
+  description: 'Du lancement haut de gamme jusqu\'à l\'acquisition de prospects B2B. Des campagnes menées dans le réel, sur des plateformes identifiables, aux résultats vérifiables.',
   cta: 'Voir tous les projets',
 } : {
   overline: 'Featured projects',
