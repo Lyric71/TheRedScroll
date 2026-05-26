@@ -32,7 +32,7 @@ const sitemapAlias = {
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://theredscroll.com',
+  site: 'https://www.theredscroll.com',
   output: 'static',
   adapter: vercel({
     webAnalytics: { enabled: true },

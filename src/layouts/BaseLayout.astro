@@ -27,7 +27,7 @@ const {
 } = Astro.props;
 
 const siteName = 'TheRedScroll';
-const siteUrl = 'https://theredscroll.com';
+const siteUrl = 'https://www.theredscroll.com';
 const currentPath = Astro.url.pathname;
 const altLangs = getAvailableAlternateLangs(lang);
 const localeMap: Record<string, string> = { en: 'en_US', fr: 'fr_FR', zh: 'zh_CN', es: 'es_ES', de: 'de_DE' };
@@ -98,11 +98,17 @@ const orgSchema = {
       addressCountry: 'HK',
     },
   ],
-  founder: {
-    '@type': 'Person',
-    name: 'Cyril Drouin',
-    jobTitle: 'Founder',
-  },
+  founder: { '@id': `${siteUrl}/#founder` },
+};
+
+const founderSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  '@id': `${siteUrl}/#founder`,
+  name: 'Cyril Drouin',
+  jobTitle: 'Founder and CEO',
+  worksFor: { '@id': `${siteUrl}/#organization` },
+  url: `${siteUrl}/about`,
 };
 
 const websiteSchema = isHomepage ? {
@@ -127,7 +133,7 @@ const breadcrumbSchema = breadcrumbs.length > 1 ? {
 } : null;
 
 const pageSchemas: Record<string, unknown>[] = Array.isArray(schema) ? schema : schema ? [schema] : [];
-const allSchemas = [orgSchema, websiteSchema, breadcrumbSchema, ...pageSchemas].filter(Boolean) as Record<string, unknown>[];
+const allSchemas = [orgSchema, founderSchema, websiteSchema, breadcrumbSchema, ...pageSchemas].filter(Boolean) as Record<string, unknown>[];
 ---
 
 <!doctype html>

@@ -32,4 +32,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://theredscroll.com/sitemap-index.xml
+Sitemap: https://www.theredscroll.com/sitemap-index.xml
