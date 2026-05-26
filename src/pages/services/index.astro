@@ -5,6 +5,8 @@ import SectionBar from '../../components/ui/SectionBar.astro';
 import Button from '../../components/ui/Button.astro';
 import GettingStarted from '../../components/sections/GettingStarted.astro';
 
+const SITE_URL = 'https://www.theredscroll.com';
+
 const services = [
   {
     title: 'Strategy, Campaigns & Analytics',
@@ -50,6 +52,27 @@ const services = [
   },
 ];
 
+const servicesCollectionSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': `${SITE_URL}/services/#collectionpage`,
+  name: 'Services for brands in China',
+  url: `${SITE_URL}/services/`,
+  description: 'Strategy, content, advertising, influencer marketing, market entry, CRM, and training services for brands operating in China.',
+  isPartOf: { '@id': `${SITE_URL}/#website` },
+  publisher: { '@id': `${SITE_URL}/#organization` },
+  inLanguage: 'en',
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListElement: services.map((s, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `${SITE_URL}${s.href}/`,
+      name: s.title,
+    })),
+  },
+};
+
 const gettingStartedSteps = [
   {
     title: 'Discovery call.',
@@ -72,6 +95,7 @@ const gettingStartedSteps = [
 <PageLayout
   title="Services | TheRedScroll"
   description="Social media services for brands in China. Strategy, content, advertising, influencer marketing, market entry, CRM, and training. Fixed scope, fixed price."
+  schema={servicesCollectionSchema}
 >
 
   <!-- Hero — Dark banner -->

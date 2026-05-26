@@ -71,7 +71,7 @@ function buildBreadcrumbs(pathname: string): { name: string; url: string }[] {
       .split('-')
       .map((w) => brandCasing[w.toLowerCase()] ?? w.charAt(0).toUpperCase() + w.slice(1))
       .join(' ');
-    crumbs.push({ name, url: `${siteUrl}${acc}` });
+    crumbs.push({ name, url: `${siteUrl}${acc}/` });
   }
   return crumbs;
 }
@@ -99,6 +99,9 @@ const orgSchema = {
     },
   ],
   founder: { '@id': `${siteUrl}/#founder` },
+  sameAs: [
+    'https://www.linkedin.com/company/theredscroll',
+  ],
 };
 
 const founderSchema = {
@@ -108,7 +111,10 @@ const founderSchema = {
   name: 'Cyril Drouin',
   jobTitle: 'Founder and CEO',
   worksFor: { '@id': `${siteUrl}/#organization` },
-  url: `${siteUrl}/about`,
+  url: `${siteUrl}/about/`,
+  sameAs: [
+    'https://www.linkedin.com/in/cyrildrouin',
+  ],
 };
 
 const websiteSchema = isHomepage ? {
@@ -118,7 +124,7 @@ const websiteSchema = isHomepage ? {
   url: siteUrl,
   name: siteName,
   publisher: { '@id': `${siteUrl}/#organization` },
-  inLanguage: ['en', 'fr-FR', 'zh-Hans'],
+  inLanguage: ['en', 'fr', 'zh-Hans', 'es', 'de'],
 } : null;
 
 const breadcrumbSchema = breadcrumbs.length > 1 ? {
@@ -159,6 +165,9 @@ const allSchemas = [orgSchema, founderSchema, websiteSchema, breadcrumbSchema, .
     <meta property="og:locale" content={localeMap[lang] || 'en_US'} />
     <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/inter-500.woff2" as="font" type="font/woff2" crossorigin />
+    {isHomepage && (
+      <link rel="preload" href="/images/hero/hero-phones-shanghai.png" as="image" fetchpriority="high" />
+    )}
     {allSchemas.map((s) => (
       <script type="application/ld+json" is:inline set:html={JSON.stringify(s)} />
     ))}

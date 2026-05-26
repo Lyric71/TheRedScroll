@@ -3,6 +3,7 @@ import { getCollection, render } from 'astro:content';
 import BlogLayout from '../../layouts/BlogLayout.astro';
 import Container from '../../components/ui/Container.astro';
 import SectionBar from '../../components/ui/SectionBar.astro';
+import KeyFacts from '../../components/sections/KeyFacts.astro';
 import { articleSchema } from '../../lib/schema';
 
 export async function getStaticPaths() {
@@ -23,13 +24,18 @@ const formattedDate = new Date(post.data.publishDate).toLocaleDateString('en-US'
   day: 'numeric',
 });
 
+const publishedIso = new Date(post.data.publishDate).toISOString();
+const modifiedSource = (post.data as { updatedDate?: Date }).updatedDate ?? post.data.publishDate;
+const modifiedIso = new Date(modifiedSource).toISOString();
+
 const postSchema = articleSchema({
   type: 'BlogPosting',
   headline: post.data.title,
   description: post.data.metaDescription,
-  url: `/insights/${post.id}`,
+  url: `/insights/${post.id}/`,
   image: post.data.featuredImage,
-  datePublished: new Date(post.data.publishDate).toISOString(),
+  datePublished: publishedIso,
+  dateModified: modifiedIso,
   authorName: post.data.author,
 });
 ---
@@ -83,6 +89,9 @@ const postSchema = articleSchema({
   <section class="pt-[48px] pb-[96px] max-[640px]:pb-[64px]">
     <Container>
       <div class="max-w-[680px] mx-auto prose-article">
+        {post.data.keyFacts && post.data.keyFacts.length > 0 && (
+          <KeyFacts facts={post.data.keyFacts} />
+        )}
         <Content />
       </div>
 

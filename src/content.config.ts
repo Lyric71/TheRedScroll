@@ -40,11 +40,13 @@ const blog = defineCollection({
     metaTitle: z.string().max(60),
     metaDescription: z.string().max(155),
     publishDate: z.date(),
+    updatedDate: z.date().optional(),
     author: z.string(),
     category: z.string(),
     keywords: z.array(z.string()),
     featured: z.boolean().default(false),
     featuredImage: z.string().optional(),
+    keyFacts: z.array(z.string()).optional(),
   }),
 });
 
@@ -56,11 +58,13 @@ const blogFr = defineCollection({
     metaTitle: z.string().max(60),
     metaDescription: z.string().max(160),
     publishDate: z.date(),
+    updatedDate: z.date().optional(),
     author: z.string(),
     category: z.string(),
     keywords: z.array(z.string()),
     featured: z.boolean().default(false),
     featuredImage: z.string().optional(),
+    keyFacts: z.array(z.string()).optional(),
   }),
 });
 
@@ -72,11 +76,13 @@ const blogZh = defineCollection({
     metaTitle: z.string().max(60),
     metaDescription: z.string().max(160),
     publishDate: z.date(),
+    updatedDate: z.date().optional(),
     author: z.string(),
     category: z.string(),
     keywords: z.array(z.string()),
     featured: z.boolean().default(false),
     featuredImage: z.string().optional(),
+    keyFacts: z.array(z.string()).optional(),
   }),
 });
 
@@ -88,11 +94,13 @@ const blogDe = defineCollection({
     metaTitle: z.string().max(60),
     metaDescription: z.string().max(160),
     publishDate: z.date(),
+    updatedDate: z.date().optional(),
     author: z.string(),
     category: z.string(),
     keywords: z.array(z.string()),
     featured: z.boolean().default(false),
     featuredImage: z.string().optional(),
+    keyFacts: z.array(z.string()).optional(),
   }),
 });
 
@@ -104,11 +112,13 @@ const blogEs = defineCollection({
     metaTitle: z.string().max(60),
     metaDescription: z.string().max(160),
     publishDate: z.date(),
+    updatedDate: z.date().optional(),
     author: z.string(),
     category: z.string(),
     keywords: z.array(z.string()),
     featured: z.boolean().default(false),
     featuredImage: z.string().optional(),
+    keyFacts: z.array(z.string()).optional(),
   }),
 });
 

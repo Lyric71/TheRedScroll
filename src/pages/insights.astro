@@ -4,6 +4,8 @@ import PageLayout from '../layouts/PageLayout.astro';
 import Container from '../components/ui/Container.astro';
 import SectionBar from '../components/ui/SectionBar.astro';
 
+const SITE_URL = 'https://www.theredscroll.com';
+
 const allPosts = await getCollection('blog');
 const articles = allPosts
   .sort(() => Math.random() - 0.5)
@@ -13,15 +15,38 @@ const articles = allPosts
     excerpt: post.data.description,
     readingTime: `${Math.ceil(post.body!.split(/\s+/).length / 200)} min`,
     date: new Date(post.data.publishDate).toLocaleDateString('en-US', { month: 'long', year: 'numeric' }),
-    slug: `/insights/${post.id}`,
+    slug: `/insights/${post.id}/`,
     featuredImage: post.data.featuredImage,
+    publishDate: post.data.publishDate,
   }));
+
+const collectionSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': `${SITE_URL}/insights/#collectionpage`,
+  name: 'China Social Media Insights and Guides',
+  url: `${SITE_URL}/insights/`,
+  description: 'Practical guides and analysis on China social media platforms from the TheRedScroll team.',
+  isPartOf: { '@id': `${SITE_URL}/#website` },
+  publisher: { '@id': `${SITE_URL}/#organization` },
+  inLanguage: 'en',
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListElement: articles.slice(0, 20).map((a, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `${SITE_URL}${a.slug}`,
+      name: a.title,
+    })),
+  },
+};
 ---
 
 <PageLayout
   title="China Social Media Insights and Guides | TheRedScroll"
   description="Articles on China social media marketing. Platform updates, strategy breakdowns, and lessons from real campaigns on WeChat, RedNote, Douyin, and Weibo."
   ogImage="/images/og/insights.jpg"
+  schema={collectionSchema}
 >
 
   <!-- Hero -->
@@ -49,7 +74,7 @@ const articles = allPosts
         {articles.map((article) => (
           <a href={article.slug} class="block bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[8px] overflow-hidden transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)]">
             {article.featuredImage ? (
-              <img src={article.featuredImage} alt={article.title} class="w-full aspect-[4/3] object-cover bg-[var(--color-warm-gray)]" loading="lazy" />
+              <img src={article.featuredImage} alt={article.title} width="800" height="600" class="w-full aspect-[4/3] object-cover bg-[var(--color-warm-gray)]" loading="lazy" decoding="async" />
             ) : (
               <div class="w-full aspect-[4/3] bg-[var(--color-warm-gray)] flex items-center justify-center">
                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="rgba(0,0,0,0.15)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">

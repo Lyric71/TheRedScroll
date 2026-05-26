@@ -1,5 +1,6 @@
-const SITE_URL = 'https://theredscroll.com';
+const SITE_URL = 'https://www.theredscroll.com';
 const ORG_ID = `${SITE_URL}/#organization`;
+const FOUNDER_ID = `${SITE_URL}/#founder`;
 
 export interface FaqItem {
   q: string;
@@ -49,11 +50,19 @@ export interface ArticleSchemaOpts {
   image?: string;
   datePublished?: string;
   dateModified?: string;
+  /** Name of a human author. If omitted or equal to the brand name, the founder
+   *  Person @id is used instead so the author entity resolves to a real person. */
   authorName?: string;
   type?: 'Article' | 'BlogPosting' | 'NewsArticle';
 }
 
 export function articleSchema(opts: ArticleSchemaOpts): Record<string, unknown> {
+  // Brand name as author is invalid for Person/Article schema. Resolve to the
+  // founder entity so Google's E-E-A-T parser sees a real Person.
+  const namedAuthor = opts.authorName && opts.authorName !== 'TheRedScroll' ? opts.authorName : null;
+  const author = namedAuthor
+    ? { '@type': 'Person', name: namedAuthor, '@id': FOUNDER_ID }
+    : { '@id': FOUNDER_ID };
   return {
     '@context': 'https://schema.org',
     '@type': opts.type ?? 'Article',
@@ -63,11 +72,7 @@ export function articleSchema(opts: ArticleSchemaOpts): Record<string, unknown> 
     ...(opts.image && { image: opts.image.startsWith('http') ? opts.image : `${SITE_URL}${opts.image}` }),
     ...(opts.datePublished && { datePublished: opts.datePublished }),
     ...(opts.dateModified && { dateModified: opts.dateModified }),
-    author: {
-      '@type': opts.authorName ? 'Person' : 'Organization',
-      name: opts.authorName ?? 'TheRedScroll',
-      ...(opts.authorName ? {} : { '@id': ORG_ID }),
-    },
+    author,
     publisher: { '@id': ORG_ID },
   };
 }

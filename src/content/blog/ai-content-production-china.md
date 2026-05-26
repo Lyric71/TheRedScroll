@@ -11,7 +11,7 @@ featured: true
 featuredImage: "/images/blog/aigc-content-factory.png"
 ---
 
-*Over half of Chinese advertisers already use AI to create content. The market is growing at 60% a year. Here is what that means for your brand.*
+*More than half of Chinese advertisers already use AI to create content. The market is on track to grow more than tenfold by 2028, from 25.7 billion yuan in 2025 to 276.7 billion yuan (Weiboyi and China Advertising Association). Here is what that means for your brand.*
 
 ## The numbers behind the shift
 

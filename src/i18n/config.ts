@@ -11,12 +11,11 @@ export const defaultLang: Lang = 'en';
 
 /**
  * Locales whose pages are live in production. Hreflang emission and the
- * language switcher must only reference URLs that resolve — declaring an
- * alternate that 404s breaks the international SEO signal.
- *
- * Add 'es' and 'de' here once those locales are fully translated and committed.
+ * language switcher must only reference URLs that resolve. Declaring an
+ * alternate that 404s breaks the international SEO signal for the whole
+ * cluster, so this list must mirror the pages actually built under src/pages.
  */
-export const availableLangs: readonly Lang[] = ['en', 'fr', 'zh'] as const;
+export const availableLangs: readonly Lang[] = ['en', 'fr', 'zh', 'es', 'de'] as const;
 
 /**
  * BCP 47 codes for hreflang / html lang attributes. Routing keys stay short

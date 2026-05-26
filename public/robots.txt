@@ -33,3 +33,6 @@ User-agent: CCBot
 Allow: /
 
 Sitemap: https://www.theredscroll.com/sitemap-index.xml
+
+# IndexNow key (Bing, Yandex, Naver, Seznam)
+# Key file: https://www.theredscroll.com/2025f93e911e587ed9023d01cec1ce56.txt
