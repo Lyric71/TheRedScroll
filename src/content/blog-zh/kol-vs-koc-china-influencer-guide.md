@@ -9,6 +9,12 @@ category: "策略"
 keywords: ["KOL", "KOC", "中国达人营销", "中国网红营销", "虚假粉丝", "完美日记", "小红书达人"]
 featured: true
 featuredImage: "/images/blog/kol-studio-shoot.png"
+keyFacts:
+  - "KOL，意见领袖（Key Opinion Leader），粉丝量大的达人，主要用于做声量、做品牌认知。"
+  - "KOC，普通消费者意见领袖（Key Opinion Consumer），粉丝在1000到10万之间的素人，用于做信任、做转化。"
+  - "中国头部KOL单条报价50万到500万元；KOC单条一般在200到5000元之间。"
+  - "完美日记的打法是每次上新围绕产品堆1位头部KOL、10位腰部KOL、1000位KOC同时打。"
+  - "刷量和虚假互动在中国仍然普遍。签约前用艾媒、央视新闻和平台后台数据交叉核对。"
 ---
 
 *选错一个大KOL，预算立刻烧光。撒一堆小KOC，又没人注意。真正的关键是怎么把比例调对。*

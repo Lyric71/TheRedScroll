@@ -11,7 +11,7 @@ featured: true
 featuredImage: "/images/blog/aigc-content-factory.png"
 ---
 
-*Más de la mitad de los anunciantes chinos ya utiliza la IA para crear contenido. El mercado crece al 60 % anual. Esto es lo que significa para su marca.*
+*Más de la mitad de los anunciantes chinos ya utiliza la IA para crear contenido. El mercado va camino de multiplicarse por más de diez de aquí a 2028, pasando de 25.700 millones de yuanes en 2025 a 276.700 millones (Weiboyi y la Asociación China de Publicidad). Esto es lo que significa para su marca.*
 
 ## Las cifras detrás del giro
 

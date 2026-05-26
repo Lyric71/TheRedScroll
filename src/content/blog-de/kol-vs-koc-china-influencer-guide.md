@@ -9,6 +9,12 @@ category: "Strategie"
 keywords: ["KOL", "KOC", "Influencer-Marketing China", "Influencer China", "Fake Follower China", "Perfect Diary", "Xiaohongshu Influencer"]
 featured: true
 featuredImage: "/images/blog/kol-studio-shoot.png"
+keyFacts:
+  - "KOL steht für Key Opinion Leader: Influencer mit großer Reichweite, eingesetzt für Sichtbarkeit und Markenbekanntheit."
+  - "KOC steht für Key Opinion Consumer: Alltagsnutzer mit 1.000 bis 100.000 Followern, eingesetzt für Vertrauen und Conversion."
+  - "Top-KOL in China kosten 500.000 bis 5 Millionen Yuan pro Post; KOC liegen meist bei 200 bis 5.000 Yuan pro Post."
+  - "Perfect Diary baute sein Wachstum auf, indem es bei jedem Launch 1 Head-KOL, 10 mittlere KOL und 1.000 KOC parallel aktivierte."
+  - "Fake Follower und Bot-Engagement sind in China weiterhin verbreitet. Vor jedem Vertrag mit iiMedia, CCTV News und Plattform-Analytics gegenprüfen."
 ---
 
 *Wer auf den falschen KOL setzt, verbrennt sein Budget. Wer KOC ohne Plan streut, garantiert sich die Unsichtbarkeit. Es kommt auf die Dosierung an.*

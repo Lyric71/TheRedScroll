@@ -9,6 +9,12 @@ category: "平台"
 keywords: ["WeCom", "企业微信", "私域流量", "中国营销", "微信企业", "中国CRM", "WeCom 5.0"]
 featured: true
 featuredImage: "/images/blog/wecom-split-screen.png"
+keyFacts:
+  - "WeCom（企业微信）是腾讯在微信生态里的企业端通讯平台，2020年之前叫企业微信（WeChat Work）。"
+  - "活跃用户超过1.8亿，超过1400万家企业用它跑日常运营（腾讯副总裁，WeCom 5.0发布会，2025年8月）。"
+  - "WeCom直接打通7.5亿以上的微信用户，企业可以在微信生态里直接和客户沟通，不用切换App。"
+  - "目前是中国第二大商用办公App，仅次于钉钉（QuestMobile，新浪财经引用，2025年8月）。"
+  - "对在中国的品牌来说，WeCom是私域流量、客户服务和复购沉淀的标准工具。"
 ---
 
 *嵌在微信里、却被多数品牌忽略的那个企业工具。*

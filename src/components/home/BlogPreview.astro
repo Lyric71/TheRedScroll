@@ -30,7 +30,7 @@ const posts = allPosts
       lang === 'zh' ? 'zh-CN' : lang === 'fr' ? 'fr-FR' : lang === 'es' ? 'es-ES' : lang === 'de' ? 'de-DE' : 'en-US',
       { month: 'long', year: 'numeric' }
     ),
-    slug: insightsHasLocaleRoute ? `${lp('/insights')}/${post.id}` : `/insights/${post.id}`,
+    slug: insightsHasLocaleRoute ? `${lp('/insights')}${post.id}/` : `/insights/${post.id}/`,
     featuredImage: post.data.featuredImage,
   }));
 

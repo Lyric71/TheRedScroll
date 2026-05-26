@@ -9,6 +9,12 @@ category: "Plataformas"
 keywords: ["WeCom", "WeChat Work", "tráfico privado", "marketing China", "WeChat empresa", "CRM China", "WeCom 5.0"]
 featured: true
 featuredImage: "/images/blog/wecom-split-screen.png"
+keyFacts:
+  - "WeCom es la plataforma de comunicación corporativa de Tencent, integrada en el ecosistema de WeChat. Antes de 2020 se llamaba WeChat Work."
+  - "Más de 180 millones de personas usan WeCom de forma activa y más de 14 millones de empresas lo emplean en su operativa diaria (VP de Tencent, lanzamiento de WeCom 5.0, agosto de 2025)."
+  - "WeCom conecta directamente con más de 750 millones de usuarios de WeChat, lo que permite a las marcas hablar con sus clientes sin salir del ecosistema WeChat."
+  - "Es ya la segunda app profesional más utilizada en China, solo por detrás de DingTalk (QuestMobile vía Sina Finance, agosto de 2025)."
+  - "Para las marcas activas en China, WeCom es la herramienta de referencia para tráfico privado, atención al cliente y retención dentro de WeChat."
 ---
 
 *La herramienta profesional integrada en WeChat de la que la inmensa mayoría de las marcas extranjeras ni siquiera ha oído hablar.*

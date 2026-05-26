@@ -93,26 +93,51 @@ function splitTail(path: string): [string, string] {
   return idx >= 0 ? [path.slice(0, idx), path.slice(idx)] : [path, ''];
 }
 
+/** Slug-map lookup keys are stored without trailing slashes, but callers may
+ *  pass paths with or without one (since `trailingSlash: 'always'` is now the
+ *  global convention). Normalize before lookup, then restore the trailing
+ *  slash if the input had one. */
 function applySlugMap(path: string, lang: Lang): string {
   if (lang !== 'es') return path;
   const [base, tail] = splitTail(path);
-  return (esSlugMap[base] ?? base) + tail;
+  const hadTrailingSlash = base.length > 1 && base.endsWith('/');
+  const lookupKey = hadTrailingSlash ? base.slice(0, -1) : base;
+  const mapped = esSlugMap[lookupKey] ?? lookupKey;
+  return mapped + (hadTrailingSlash ? '/' : '') + tail;
 }
 
 function reverseSlugMap(path: string): string {
   const [base, tail] = splitTail(path);
-  return (esSlugMapReverse[base] ?? base) + tail;
+  const hadTrailingSlash = base.length > 1 && base.endsWith('/');
+  const lookupKey = hadTrailingSlash ? base.slice(0, -1) : base;
+  const mapped = esSlugMapReverse[lookupKey] ?? lookupKey;
+  return mapped + (hadTrailingSlash ? '/' : '') + tail;
 }
 
-/** Build a localized path. English stays at root, other languages get a prefix. */
+/** Append a trailing slash to a path unless it points to a file (has an
+ *  extension) or already ends in `/`, `?`, or `#`. Keeps paths canonical
+ *  under `trailingSlash: 'always'`. */
+function withTrailingSlash(path: string): string {
+  if (path.endsWith('/')) return path;
+  const [base, tail] = (() => {
+    const m = path.match(/^([^?#]*)([?#].*)?$/);
+    return m ? [m[1] || '', m[2] || ''] : [path, ''];
+  })();
+  if (/\.[a-z0-9]{2,5}$/i.test(base)) return path;
+  return `${base}/${tail}`;
+}
+
+/** Build a localized path. English stays at root, other languages get a prefix.
+ *  Always returns a trailing-slash URL to match `trailingSlash: 'always'`. */
 export function localizedPath(path: string, lang: Lang): string {
   const clean = path.startsWith('/') ? path : `/${path}`;
   const mapped = applySlugMap(clean, lang);
-  if (lang === defaultLang) return mapped;
-  return `/${lang}${mapped}`;
+  const localized = lang === defaultLang ? mapped : `/${lang}${mapped}`;
+  return withTrailingSlash(localized);
 }
 
-/** Get the alternate-language version of the current path. */
+/** Get the alternate-language version of the current path. Always returns
+ *  a trailing-slash URL because `localizedPath()` enforces it. */
 export function alternateUrl(currentPath: string, targetLang: Lang): string {
   const match = currentPath.match(/^\/(fr|zh|es|de)(\/.*)?$/);
   const currentLang: Lang = match ? (match[1] as Lang) : 'en';

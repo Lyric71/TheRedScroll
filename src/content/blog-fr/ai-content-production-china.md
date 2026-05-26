@@ -11,7 +11,7 @@ featured: true
 featuredImage: "/images/blog/aigc-content-factory.png"
 ---
 
-*Plus d'un annonceur chinois sur deux produit déjà ses contenus à l'aide de l'IA. Le marché progresse de 60 % par an. Votre marque, elle, a sans doute pris du retard.*
+*Plus d'un annonceur chinois sur deux produit déjà ses contenus à l'aide de l'IA. Le marché devrait être multiplié par plus de dix d'ici 2028, passant de 25,7 milliards de yuans en 2025 à 276,7 milliards (Weiboyi et l'Association chinoise de la publicité). Votre marque, elle, a sans doute pris du retard.*
 
 ## Les chiffres
 

@@ -11,7 +11,7 @@ featured: true
 featuredImage: "/images/blog/aigc-content-factory.png"
 ---
 
-*Mehr als jeder zweite chinesische Werbetreibende produziert seine Inhalte bereits mit Hilfe von KI. Der Markt wächst um 60 Prozent pro Jahr. Ihre Marke dürfte den Anschluss verpasst haben.*
+*Mehr als jeder zweite chinesische Werbetreibende produziert seine Inhalte bereits mit Hilfe von KI. Der Markt dürfte sich bis 2028 mehr als verzehnfachen, von 25,7 Milliarden Yuan im Jahr 2025 auf 276,7 Milliarden Yuan (Weiboyi und Chinesischer Werbeverband). Ihre Marke dürfte den Anschluss verpasst haben.*
 
 ## Die Zahlen
 
