@@ -10,6 +10,32 @@ export type Lang = keyof typeof languages;
 export const defaultLang: Lang = 'en';
 
 /**
+ * Locales whose pages are live in production. Hreflang emission and the
+ * language switcher must only reference URLs that resolve — declaring an
+ * alternate that 404s breaks the international SEO signal.
+ *
+ * Add 'es' and 'de' here once those locales are fully translated and committed.
+ */
+export const availableLangs: readonly Lang[] = ['en', 'fr', 'zh'] as const;
+
+/**
+ * BCP 47 codes for hreflang / html lang attributes. Routing keys stay short
+ * ('zh') for URL ergonomics; emitted tags use the script-specific form
+ * ('zh-Hans' for Simplified Chinese) so crawlers index the right variant.
+ */
+const hreflangCodes: Record<Lang, string> = {
+  en: 'en',
+  fr: 'fr',
+  zh: 'zh-Hans',
+  es: 'es',
+  de: 'de',
+};
+
+export function hreflangCode(lang: Lang): string {
+  return hreflangCodes[lang];
+}
+
+/**
  * Per-locale slug map: maps English paths to localized paths.
  * Only ES uses Spanish slugs; FR/ZH/DE continue to use English slugs at their prefix.
  * Keys must be exact English paths (with leading slash, no trailing slash, no anchors).
@@ -108,4 +134,9 @@ export function getLangFromPath(path: string): Lang {
 /** Get all alternate languages (excluding the current one). */
 export function getAlternateLangs(currentLang: Lang): Lang[] {
   return (Object.keys(languages) as Lang[]).filter(l => l !== currentLang);
+}
+
+/** Like getAlternateLangs but only returns locales whose pages are live. */
+export function getAvailableAlternateLangs(currentLang: Lang): Lang[] {
+  return availableLangs.filter(l => l !== currentLang);
 }

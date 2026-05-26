@@ -6,6 +6,7 @@ import SectionHeading from '../../components/ui/SectionHeading.astro';
 import Button from '../../components/ui/Button.astro';
 import FaqAccordion from '../../components/sections/FaqAccordion.astro';
 import GettingStarted from '../../components/sections/GettingStarted.astro';
+import { faqPageSchema, serviceSchema } from '../../lib/schema';
 
 
 const faqs = [
@@ -41,6 +42,15 @@ const gettingStartedSteps = [
 <PageLayout
   title="China KOL & KOC Influencer Agency | TheRedScroll"
   description="KOL and KOC campaigns on Douyin, RedNote, WeChat. Creator vetting, live commerce, campaign management. Fixed scope. Team in Shanghai."
+  schema={[
+    serviceSchema({
+      name: 'China KOL and KOC Influencer Marketing',
+      description: 'KOL and KOC influencer campaigns on Douyin, RedNote, WeChat, and Weibo. Creator vetting with verified engagement data, live commerce production, and campaign management.',
+      url: '/services/influencer-marketing',
+      serviceType: 'Influencer Marketing',
+    }),
+    faqPageSchema(faqs),
+  ]}
 >
 
   <!-- Hero — Dark hero banner -->

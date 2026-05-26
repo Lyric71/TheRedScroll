@@ -1,0 +1,211 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+
+const services = ['Kampagne', 'Design', 'Medien', 'Website'];
+const platforms = ['Web', 'Social Media', 'Paid Ads'];
+---
+
+<PageLayout
+  title="Blue Insurance: digitaler Launch in Hongkong | TheRedScroll"
+  description="Wie Blue Insurance den ersten 100 % digitalen Lebensversicherer Hongkongs gelauncht hat: zweisprachige Website, SEO und eine Kampagne, die im ersten Monat 10.000 Follower einbrachte."
+  ogImage="/images/clients/Blue/Blue Insurance 1.png"
+  lang="de"
+>
+
+  <section class="relative w-full min-h-[600px] max-[640px]:min-h-[480px] overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center bg-fixed max-[640px]:bg-scroll" style="background-image: url('/images/clients/Blue/Blue Insurance 1.png')" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.72]" aria-hidden="true"></div>
+
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[1024px]:pt-[128px] max-[1024px]:pb-[72px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">Case Study</p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[1024px]:text-[40px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        Blue Insurance: der digitale Launch des ersten vollständig digitalen Lebensversicherers Hongkongs.
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        Blue wollte eine Website und eine Launch-Kampagne für den ersten 100 % digitalen Lebensversicherer Hongkongs. Wir haben beides geliefert und im ersten Monat 10.000 Follower geholt.
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/de/contact">Gespräch vereinbaren</Button>
+        <Button variant="secondary-dark" href="#case-study">Case Study lesen</Button>
+      </div>
+    </div>
+  </section>
+
+  <section class="border-b border-[rgba(0,0,0,0.08)]">
+    <Container>
+      <div class="flex flex-wrap gap-[32px] max-[640px]:gap-[20px] py-[24px]">
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Kunde</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">Blue Insurance</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Branche</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">Versicherung / Fintech</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Markt</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">Hongkong</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Leistungen</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {services.map((s) => (<span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{s}</span>))}
+          </div>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Kanäle</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {platforms.map((p) => (<span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{p}</span>))}
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <section id="case-study" class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="Kunde">Der erste vollständig digitale Lebensversicherer Hongkongs. Kein Vermittler, keine Bürokratie.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Blue ist der erste 100 % digitale Lebensversicherer Hongkongs. Kein Vermittler. Wenige Fragen online genügen, um die Police direkt im Anschluss zu erhalten. Das Prinzip ist klar: wissen, welche Versicherung man braucht, ohne Termine und Formulare aneinanderzureihen.
+            </p>
+            <p>
+              Blue kam jedoch auf einen Markt, in dem die etablierten Versicherer den digitalen Wendepunkt bereits eingeleitet hatten. Der Status des ersten Online-Akteurs reichte nicht mehr. Es brauchte eine Website, die deutlich einfacher war als die der Konkurrenz, und eine Kampagne, die schnell Leads erzeugt.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <div class="flex justify-center gap-[16px] overflow-x-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] max-[640px]:justify-start pb-[8px] scrollbar-hide">
+      <img src="/images/clients/Blue/Blue Insurance 1.png" alt="Blue-Insurance-Website und digitale Launch-Kampagne in Hongkong" class="w-[280px] max-[640px]:w-[220px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]" loading="lazy" decoding="async" />
+      <img src="/images/clients/Blue/Blue Insurance 2.png" alt="Zweisprachige Blue-Insurance-Website auf Desktop und Mobile" class="w-[280px] max-[640px]:w-[220px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]" loading="lazy" decoding="async" />
+      <img src="/images/clients/Blue/Blue Insurance 3.png" alt="Blue-Insurance-Digitalkampagne mit Follower-Aufbau und Anmeldungen" class="w-[280px] max-[640px]:w-[220px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]" loading="lazy" decoding="async" />
+    </div>
+    <Container>
+      <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+        Die Blue-Insurance-Website. Zweisprachig, mobile-first gedacht, gemacht für sofortige Angebote und Anmeldungen.
+      </p>
+    </Container>
+  </section>
+
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="Was wir gemacht haben">Website und Launch-Kampagne, beides auf Tempo gebaut.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Wir haben den Site-Bau und die digitale Launch-Kampagne parallel geführt.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Die Website musste dem Produkt gerecht werden</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Blue verkauft eine einfache Versicherung. Die Website musste dasselbe Versprechen verkörpern. Zweisprachig Chinesisch-Englisch, flüssig auf Mobile wie auf großem Bildschirm. Bewusst aufgeräumtes Layout. Kein Block aus Versicherungsjargon. Keine verschachtelte Navigation. Jeder Screen führt zurück zu einem Angebot oder einer Anmeldung.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">SEO in die Architektur eingebaut, nicht obendrauf gesetzt</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Content, Metadaten und Sitemap wurden so konzipiert, dass Blue auftaucht, sobald ein Hongkonger eine Online-Versicherung oder eine papierlose Lebenspolice sucht. Bereit, ab Tag eins die Suche zu verteidigen.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Die Kampagne startete in derselben Woche</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Social Media und Paid Ads zielten auf Konsumenten, die von klassischer Versicherung genug hatten. Die Botschaft drehte sich um das, was Blue weglässt: Termine, Formulare und das Kleingedruckte am Vertragsende.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-[64px] max-[640px]:mb-[48px] bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[32px] max-[640px]:p-[20px]">
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            Site, SEO und Kampagne, das Ganze gesteuert von unserem Team vor Ort in Hongkong.
+          </p>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <Container>
+      <div class="grid grid-cols-3 max-[640px]:grid-cols-1 gap-[16px]">
+        <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[24px] text-center">
+          <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[4px]">10.000</p>
+          <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)]">Neue Follower im ersten Monat</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[24px] text-center">
+          <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[4px]">3.000+</p>
+          <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)]">Newsletter-Anmeldungen in einer Woche</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[24px] text-center">
+          <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[4px]">Zweisprachig</p>
+          <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)]">Chinesisch und Englisch, für beide optimiert</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="Ergebnisse">10.000 Follower und 3.000 Anmeldungen, bevor die meisten Start-ups ihren Launch abgeschlossen haben.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Die Website ging zweisprachig live, schnell, auf allen Geräten optimiert. Das Mobile-Erlebnis konnte mit dem Desktop mithalten. Auf einem Markt, auf dem Versicherungen vom Handy aus verglichen werden, zählt diese Balance.
+            </p>
+            <p>
+              Die Ergebnisse kamen schnell: 10.000 neue Follower im ersten Monat, mehr als 3.000 Newsletter-Anmeldungen in einer Woche. Für einen gerade gestarteten Versicherer ohne vorher aufgebaute Audience sagen die Zahlen einiges. Die Hongkonger haben auf dieses Angebot gewartet.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <section class="pb-[96px] max-[640px]:pb-[64px]">
+    <Container>
+      <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[48px] max-[1024px]:p-[32px] text-center">
+        <SectionHeading overline="Sie sind dran">Website und Launch-Kampagne in Hongkong gesucht?</SectionHeading>
+        <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)] max-w-[500px] mx-auto mb-[32px]">
+          Klarer Umfang. Fester Preis. Team vor Ort.
+        </p>
+        <Button variant="primary" href="/de/contact">Gespräch vereinbaren</Button>
+      </div>
+    </Container>
+  </section>
+
+  <style>
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+
+</PageLayout>

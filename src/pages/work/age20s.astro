@@ -4,6 +4,7 @@ import Container from '../../components/ui/Container.astro';
 import SectionBar from '../../components/ui/SectionBar.astro';
 import SectionHeading from '../../components/ui/SectionHeading.astro';
 import Button from '../../components/ui/Button.astro';
+import { caseStudySchema } from '../../lib/schema';
 
 const services = ['Campaign', 'Content Production', 'Influencer / KOL', 'Social'];
 const platforms = ['RedNote', 'Douyin'];
@@ -20,6 +21,15 @@ const stats = [
   title="AGE 20's Little Milk Brick China Case Study | TheRedScroll"
   description="How AGE 20's launched the Little Milk Brick foundation in China. 3.87M Douyin impressions, 750K on RedNote, and a product nickname that went organic."
   ogImage="/images/clients/Age20/Age20-Picture1-scaled.jpg"
+  schema={caseStudySchema({
+    clientName: 'AGE 20\'s',
+    headline: 'AGE 20\'s: launching Little Milk Brick foundation in China',
+    description: 'How AGE 20\'s launched its Little Milk Brick foundation in China, hitting 3.87M Douyin impressions and 750K on RedNote with an organic product nickname.',
+    url: '/work/age20s',
+    image: '/images/clients/Age20/Age20-Picture1-scaled.jpg',
+    industry: 'Beauty / Cosmetics',
+    platforms,
+  })}
 >
 
   <!-- Hero -->

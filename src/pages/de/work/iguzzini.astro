@@ -1,0 +1,218 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+
+const services = ['Markenerlebnis', 'Kampagne', 'eCommerce', 'Influencer / KOL', 'Livestream', 'Medien', 'Social'];
+const platforms = ['WeChat', 'RedNote', 'Weibo', 'Tmall'];
+---
+
+<PageLayout
+  title="iGuzzini: Social-Media-Case-Study China | TheRedScroll"
+  description="Wie iGuzzini WeChat, RedNote und Weibo eingesetzt hat, um die chinesischen Luxus-Konsumenten zu erreichen. Social-Strategie, KOL-Kampagnen und 24 Monate stetiges Wachstum."
+  ogImage="/images/clients/iGuzzini/iguzzini4-1.png"
+  lang="de"
+>
+
+  <!-- Hero -->
+  <section class="relative w-full min-h-[600px] max-[640px]:min-h-[480px] overflow-hidden">
+    <div
+      class="absolute inset-0 bg-cover bg-center bg-fixed max-[640px]:bg-scroll"
+      style="background-image: url('/images/clients/iGuzzini/iguzzini4-1.png')"
+      aria-hidden="true"
+    ></div>
+    <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.72]" aria-hidden="true"></div>
+
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[1024px]:pt-[128px] max-[1024px]:pb-[72px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+        Case Study
+      </p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[1024px]:text-[40px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        iGuzzini: wie Social eine Premium-Beleuchtungsmarke beim chinesischen Endkunden ankommen lässt.
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        In China war iGuzzini bei Architekten ein Begriff, beim Endkunden unsichtbar. Wir haben eine Social-Präsenz aufgebaut, die eine B2B-Marke in den Konsumenten-Luxus überführt hat.
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/de/contact">Gespräch vereinbaren</Button>
+        <Button variant="secondary-dark" href="#case-study">Case Study lesen</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meta bar -->
+  <section class="border-b border-[rgba(0,0,0,0.08)]">
+    <Container>
+      <div class="flex flex-wrap gap-[32px] max-[640px]:gap-[20px] py-[24px]">
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Kunde</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">iGuzzini</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Branche</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">Premium-Beleuchtung / Design</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Leistungen</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {services.map((s) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{s}</span>
+            ))}
+          </div>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Plattformen</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {platforms.map((p) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{p}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <section id="case-study" class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="Kunde">Die Architekten kannten iGuzzini. Das Publikum nicht.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              iGuzzini gestaltet seit 1959 Architekturleuchten. Museen, Hotels, öffentliche Räume, Premium-Residenzen. Der Typ Produkt, den Architekten namentlich in ihre Pläne schreiben. In der Design-Welt zählt die Marke.
+            </p>
+            <p>
+              In China blieb dieser Ruf auf eng gezogene Kreise begrenzt. Architekten kannten iGuzzini, die Konsumenten nicht. Die Marke wollte jene erreichen, die hochwertige Beleuchtung tatsächlich für ihre Wohnung oder ihre Projekte kaufen: nicht nur die Empfehler, sondern die Entscheider mit Designgespür und Bereitschaft, Qualität zu zahlen.
+            </p>
+            <p>
+              Die Schwierigkeit lag in einem präzisen Punkt: niemand scrollt RedNote auf der Suche nach einer Pendelleuchte. Die meisten Konsumenten wählen ihre Beleuchtung über einen vertrauten Handwerker oder Innenarchitekten. Es galt also Begehren für einen Kauf zu wecken, von dem die Konsumenten nicht einmal wussten, dass er direkt stattfinden kann.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <Container>
+      <div class="flex gap-[16px] items-center max-[640px]:flex-col">
+        <img src="/images/clients/iGuzzini/iGuzzini-Image-Front-Case-Study.png" alt="Kabellose iGuzzini-Sinolo-Tischleuchte, Produktinszenierung für den chinesischen Markt" class="h-[320px] max-[640px]:h-auto max-[640px]:w-full w-auto shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]" loading="lazy" decoding="async" />
+        <img src="/images/clients/iGuzzini/iGuzzini-Image-3-Case-Study.png" alt="iGuzzini-Conero-Pendelleuchte, Produktinszenierung" class="h-[320px] max-[640px]:h-auto max-[640px]:w-full w-auto min-w-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]" loading="lazy" decoding="async" />
+      </div>
+      <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+        Social-Content auf Produktebene: kabellose Sinolo-Tischleuchte und Conero-Pendelleuchte, gemacht für WeChat und RedNote.
+      </p>
+    </Container>
+  </section>
+
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="Was wir gemacht haben">Drei Plattformen, ein gemeinsamer Kurs.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Wir haben den Social-Content von iGuzzini auf WeChat, RedNote und Weibo gesteuert. Alles produziert und koordiniert von unserem Team vor Ort in China.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">WeChat als Heimathafen</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Projektstudien, Designer-Kooperationen, Produkt-Launches. iGuzzini-Beleuchtung in echten Orten: Hotels, Galerien, Privatresidenzen. Inhalte, die danach fragen lassen, was sorgfältig gestaltetes Licht einem Raum beibringt, statt nur die Erscheinung einer einzelnen Leuchte im Katalog zu zeigen.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">RedNote: das anspruchsvollste und das entscheidende Feld</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Wir haben mit Innenarchitekten, Designern und auf Renovierung spezialisierten KOLs zusammengearbeitet, um iGuzzini in echte Projekte einzubauen. Beiträge, die gespeichert, an Handwerker weitergereicht, als Referenz herangezogen wurden. KOC-Content, getragen von Mikro-Influencern aus dem Design, hat in der Breite organische Glaubwürdigkeit aufgebaut.
+            </p>
+            <p>
+              Weibo öffnete größere Reichweite: Kampagnen-Launches, Design-Events, Trend-Inhalte zur Architektur. Der Name lief an Nutzern vorbei, die nicht aktiv nach einer Beleuchtungsmarke suchten.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Livestream als ideales Format</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Eine installierte Leuchte ist nicht mit einer Fotografie vergleichbar. Unsere Lives präsentierten die Stücke in echten Innenräumen, legten den Designgedanken offen, beantworteten Fragen live. Licht im Raum bei der Arbeit zu sehen: das hielt die Aufmerksamkeit.
+            </p>
+            <p>
+              HubStudio.ai hat den Produktionstakt gehalten: Produkt-Visuals, Lifestyle-Bilder, Social-Content. Wenn drei Plattformen parallel beliefert werden müssen, macht das den Unterschied.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <Container>
+      <div class="flex flex-col gap-[16px]">
+        <img src="/images/clients/iGuzzini/iguzzini4-1.png" alt="iGuzzini-Whisper-Kampagnenvisual für eCommerce in China" class="w-full rounded-[8px] border border-[rgba(0,0,0,0.08)]" loading="lazy" decoding="async" />
+        <img src="/images/clients/iGuzzini/iguzzini5-1.png" alt="iGuzzini-Portonovo-Sortiment kabelloser Tischleuchten" class="w-full rounded-[8px] border border-[rgba(0,0,0,0.08)]" loading="lazy" decoding="async" />
+        <div class="flex justify-center mt-[16px]">
+          <img src="/images/clients/iGuzzini/iGuzzini-Tmall-Part-1-scaled-1.webp" alt="Offizieller iGuzzini-Shop auf Tmall mit Produktdetails und Bestseller-Listen" class="w-full max-w-[360px] max-[640px]:max-w-[280px] rounded-[8px] border border-[rgba(0,0,0,0.08)]" loading="lazy" decoding="async" />
+        </div>
+      </div>
+      <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+        eCommerce-Visuals und der offizielle Tmall-Shop. Das Social hatte den Großteil der Reise vor dem Zahlungsschritt bereitet.
+      </p>
+    </Container>
+  </section>
+
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="Ergebnisse">Von Fachkreisen zum Luxus-Publikum, in vierundzwanzig Monaten.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              In vierundzwanzig Monaten ist iGuzzini von einem Namen, der den Fachkreisen vorbehalten war, zu einer beim Luxus-Konsumenten Chinas anerkannten Marke geworden. Das Engagement von Designern wie von Privatkäufern für die eigene Wohnung zieht Monat für Monat an.
+            </p>
+            <p>
+              Die Tmall-Verkäufe haben es bestätigt: solide Zahlen, kontinuierliches Wachstum. Der Shop hat aber nur funktioniert, weil die Social-Kanäle den Boden bereitet hatten. Käufer kamen zum Kauf, weil sie der Marke auf WeChat folgten, weil sie ein paar Wochen zuvor eine RedNote-Note gespeichert hatten oder weil sie einen Livestream verfolgt hatten, der das Produkt exakt im Wohnzimmer zeigt.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-[64px] max-[640px]:mb-[48px] bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[32px] max-[640px]:p-[20px]">
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            Die Marke ist nicht nur auf einem neuen Markt aufgetaucht. Sie hat verschoben, wie Chinas Luxus-Konsumenten den Kauf von Beleuchtung denken. Die Übung ist anspruchsvoller, als sie aussieht.
+          </p>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <section class="pb-[96px] max-[640px]:pb-[64px]">
+    <Container>
+      <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[48px] max-[1024px]:p-[32px] text-center">
+        <SectionHeading overline="Sie sind dran">Sie wollen eine Luxusmarke auf Chinas sozialen Netzwerken aufbauen?</SectionHeading>
+        <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)] max-w-[500px] mx-auto mb-[32px]">
+          Klarer Umfang. Fester Preis. Team vor Ort.
+        </p>
+        <Button variant="primary" href="/de/contact">Gespräch vereinbaren</Button>
+      </div>
+    </Container>
+  </section>
+
+</PageLayout>

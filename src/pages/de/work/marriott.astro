@@ -1,0 +1,194 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+
+const services = ['Kampagne', 'eCommerce', 'Influencer / KOL', 'Medien', 'Social'];
+const platforms = ['WeChat', 'Weibo', 'Tmall'];
+---
+
+<PageLayout
+  title="Marriott Super Brand Day in China | TheRedScroll"
+  description="Wie Marriott seinen ersten Super Brand Day in China orchestriert hat. Social, Media, eCommerce und KOL-Aktivierung für Millionenumsätze auf Tmall und Bonvoy-Anmeldungen."
+  ogImage="/images/clients/Marriott/Marriot-campaign-SBD-KV.jpg"
+  lang="de"
+>
+
+  <section class="relative w-full min-h-[600px] max-[640px]:min-h-[480px] overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center bg-fixed max-[640px]:bg-scroll" style="background-image: url('/images/clients/Marriott/Marriot-campaign-SBD-KV.jpg')" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.72]" aria-hidden="true"></div>
+
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[1024px]:pt-[128px] max-[1024px]:pb-[72px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">Case Study</p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[1024px]:text-[40px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        Marriott: ein Super Brand Day in Millionenhöhe.
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        Marriott orchestrierte seinen ersten Super Brand Day in China. Wir haben die gesamte Kampagne gesteuert und Millionen an Tmall-Umsatz ausgelöst.
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/de/contact">Gespräch vereinbaren</Button>
+        <Button variant="secondary-dark" href="#case-study">Case Study lesen</Button>
+      </div>
+    </div>
+  </section>
+
+  <section class="border-b border-[rgba(0,0,0,0.08)]">
+    <Container>
+      <div class="flex flex-wrap gap-[32px] max-[640px]:gap-[20px] py-[24px]">
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Kunde</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">Marriott International</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Branche</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">Hotellerie / Reise</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Leistungen</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {services.map((s) => (<span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{s}</span>))}
+          </div>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Plattformen</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {platforms.map((p) => (<span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{p}</span>))}
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <section id="case-study" class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="Kunde">Neuntausend Häuser weltweit. Erster Super Brand Day in China.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Marriott betreibt mehr als 9.000 Hotels unter rund dreißig Marken. Weltweite Bekanntheit, Präsenz überall. In China rivalisiert die Gruppe mit den lokalen Hotelketten um zahlungskräftige Reisende.
+            </p>
+            <p>
+              Das Ziel: Direktverkäufe generieren, Anmeldungen für das Loyalty-Programm Marriott Bonvoy hochfahren, die Positionierung bei Chinas ausgabefreudigsten Konsumenten festigen. Das Vehikel: Alibabas Super Brand Day. Marriott hatte noch nie einen orchestriert. Maximale Sichtbarkeit, gewaltiger Traffic, voller Druck. Kein Anlauf möglich: am Tag X musste alles stehen.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <div class="flex justify-center gap-[16px] overflow-x-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] max-[640px]:justify-start pb-[8px] scrollbar-hide">
+      <img src="/images/clients/Marriott/campaign-SBD-Marriot-1.png" alt="Marriott-Super-Brand-Day-Kampagnenvisuals auf Tmall" class="w-[280px] max-[640px]:w-[220px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]" loading="lazy" decoding="async" />
+      <img src="/images/clients/Marriott/campaign-SBD-Marriot-2.png" alt="Promotionsinhalt zur Marriott Black Card für den Super Brand Day" class="w-[280px] max-[640px]:w-[220px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]" loading="lazy" decoding="async" />
+      <img src="/images/clients/Marriott/Campaign-SBD-Marriot-3.jpg" alt="Marriott-Super-Brand-Day-Social-Media- und Media-Visuals" class="w-[280px] max-[640px]:w-[220px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]" loading="lazy" decoding="async" />
+    </div>
+    <Container>
+      <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+        Marriott-Super-Brand-Day-Kampagnenvisuals. Black-Card-Angebot, Tmall-Shop und Social-Content.
+      </p>
+    </Container>
+  </section>
+
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="Was wir gemacht haben">Eine integrierte Kampagne mit einem Ziel: vom ersten Tag an verkaufen.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Wir haben die Kampagne über die gesamte Kette übernommen.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Die Black Card machte das Angebot verkäuflich</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Wir haben die Kampagne rund um eine exklusive Marriott Black Card mit internationalen Privilegien gebaut. Eine limitierte Edition gewährte Übernachtungen und Dinner in den schönsten Häusern der Gruppe. Statt einer klassischen Awareness-Kampagne haben wir den Konsumenten etwas Konkretes zum Kaufen vorgesetzt.
+            </p>
+            <p>
+              Bei Alibaba zielten exklusive Media-Platzierungen auf die hochwertigen Konsumenten. Außerhalb davon haben Celebrity-Support, Medienberichterstattung und physische Events Begehren und Glaubwürdigkeit gespeist.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Lange Vorlaufzeit um ein kurzes Event</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              WeChat, Weibo und auf Reise spezialisierte KOLs hielten die Erwartung mehrere Wochen vor dem Launch hoch. Der Content rückte die Black-Card-Exklusivität und das echte Erlebnis eines Marriott-Aufenthalts in den Mittelpunkt.
+            </p>
+            <p>
+              Am Tag des Super Brand Day war die Audience vorbereitet. Der Influencer-Content hielt die Energie über die gesamte Kampagnenlaufzeit am Leben.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Die Tmall-Seite schloss den Weg</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Social, Media, KOL, PR: alles lief auf dieselbe eCommerce-Seite zu, auf der Konsumenten die Karte erwarben und Bonvoy in einer einzigen Transaktion beitraten.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-[64px] max-[640px]:mb-[48px] bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[32px] max-[640px]:p-[20px]">
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            Unser Team hat alles aus China koordiniert: Kreation, Mediaeinkauf, Influencer-Steuerung, Echtzeit-Entscheidungen am Tag X zur Nachjustierung des Dispositivs.
+          </p>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="Ergebnisse">Mehrere Millionen Umsatz. Hunderttausende neue Bonvoy-Mitglieder.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Marriotts erster Super Brand Day brachte Tmall-Umsätze in Millionenhöhe. Hunderttausende neue Mitglieder kamen zu Bonvoy. Die Marke geht mit deutlich gestärkter Position bei wohlhabenden chinesischen Reisenden heraus.
+            </p>
+            <p>
+              Die Zahlen belegen es. Wenn Media, Social, eCommerce und Boden in China im selben Schritt voranlaufen, kann eine internationale Hotelkette in wenigen Tagen erhebliche Einnahmen herausholen.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <section class="pb-[96px] max-[640px]:pb-[64px]">
+    <Container>
+      <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[48px] max-[1024px]:p-[32px] text-center">
+        <SectionHeading overline="Sie sind dran">Sie wollen in China eine groß angelegte Kampagne fahren?</SectionHeading>
+        <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)] max-w-[500px] mx-auto mb-[32px]">
+          Klarer Umfang. Fester Preis. Team vor Ort.
+        </p>
+        <Button variant="primary" href="/de/contact">Gespräch vereinbaren</Button>
+      </div>
+    </Container>
+  </section>
+
+  <style>
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+
+</PageLayout>

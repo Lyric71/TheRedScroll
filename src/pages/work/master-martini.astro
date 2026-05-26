@@ -4,6 +4,7 @@ import Container from '../../components/ui/Container.astro';
 import SectionBar from '../../components/ui/SectionBar.astro';
 import SectionHeading from '../../components/ui/SectionHeading.astro';
 import Button from '../../components/ui/Button.astro';
+import { caseStudySchema } from '../../lib/schema';
 
 const services = ['Campaign', 'Design', 'Influencer / KOL', 'Media', 'Social'];
 const platforms = ['Instagram', 'Facebook'];
@@ -13,6 +14,15 @@ const platforms = ['Instagram', 'Facebook'];
   title="Master Martini Asia Social Media Case Study | TheRedScroll"
   description="How Master Martini built a professional chef community across five Asian markets on Instagram and Facebook. Recipe content, live demos, and UGC results."
   ogImage="/images/clients/MasterMartini/MasterMartini1.webp"
+  schema={caseStudySchema({
+    clientName: 'Master Martini',
+    headline: 'Master Martini: building a professional chef community across Asia',
+    description: 'How Master Martini built a professional chef community across five Asian markets on Instagram and Facebook with recipe content, live demos, and UGC.',
+    url: '/work/master-martini',
+    image: '/images/clients/MasterMartini/MasterMartini1.webp',
+    industry: 'Foodservice / B2B',
+    platforms,
+  })}
 >
 
   <!-- Hero -->

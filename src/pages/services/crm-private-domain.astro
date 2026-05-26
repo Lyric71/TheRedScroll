@@ -6,6 +6,7 @@ import SectionHeading from '../../components/ui/SectionHeading.astro';
 import Button from '../../components/ui/Button.astro';
 import FaqAccordion from '../../components/sections/FaqAccordion.astro';
 import GettingStarted from '../../components/sections/GettingStarted.astro';
+import { faqPageSchema, serviceSchema } from '../../lib/schema';
 
 
 const faqs = [
@@ -41,6 +42,15 @@ const gettingStartedSteps = [
 <PageLayout
   title="WeChat CRM & Private Domain Traffic | TheRedScroll"
   description="WeChat CRM, WeCom setup, private domain strategy for China. Community management, Mini Program CRM, customer activation. Shanghai team."
+  schema={[
+    serviceSchema({
+      name: 'WeChat CRM and Private Domain Traffic',
+      description: 'WeChat CRM, WeCom enterprise setup, community management, Mini Program CRM, and private domain strategy for brands in China.',
+      url: '/services/crm-private-domain',
+      serviceType: 'Customer Relationship Management',
+    }),
+    faqPageSchema(faqs),
+  ]}
 >
 
   <!-- Hero — Dark hero banner -->

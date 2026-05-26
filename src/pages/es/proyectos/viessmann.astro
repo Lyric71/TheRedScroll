@@ -1,0 +1,190 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+
+const services = ['Campaña', 'eCommerce', 'Influencer / KOL', 'Livestream', 'Medios', 'Social'];
+const platforms = ['Douyin', 'RedNote', 'WeCom', 'Tmall', 'JD'];
+---
+
+<PageLayout
+  title="Viessmann: caso de social commerce en China | TheRedScroll"
+  description="Cómo Viessmann usó Douyin, RedNote y WeCom para generar ventas de e-commerce en China. Estrategia social, campañas KOL y resultados de livestream."
+  ogImage="/images/clients/Viessmann/Viessman-climate-solution.avif"
+  lang="es"
+>
+
+  <section class="relative w-full min-h-[600px] max-[640px]:min-h-[480px] overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center bg-fixed max-[640px]:bg-scroll" style="background-image: url('/images/clients/Viessmann/Viessman-climate-solution.avif')" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.78]" aria-hidden="true"></div>
+
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[1024px]:pt-[128px] max-[1024px]:pb-[72px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">Caso de éxito</p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[1024px]:text-[40px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        Viessmann: cuando las redes sociales se convierten en motor directo de ventas online en China.
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        Viessmann quería que las redes sociales chinas alimentaran sus ventas online. Montamos un dispositivo en Douyin, RedNote y WeCom que instaló un crecimiento sostenido.
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/es/contacto">Reservar una llamada</Button>
+        <Button variant="secondary-dark" href="#caso">Leer el caso</Button>
+      </div>
+    </div>
+  </section>
+
+  <section class="border-b border-[rgba(0,0,0,0.08)]">
+    <Container>
+      <div class="flex flex-wrap gap-[32px] max-[640px]:gap-[20px] py-[24px]">
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">El cliente</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">Viessmann (Carrier)</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Sector</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">Sistemas de climatización</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Servicios</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {services.map((s) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{s}</span>
+            ))}
+          </div>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Plataformas</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {platforms.map((p) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{p}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <section id="caso" class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="El cliente">Especialista en calefacción desde 1917. China seguía pendiente.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Viessmann diseña sistemas de calefacción desde 1917. Ahora filial de Carrier, la empresa comercializa equipos de climatización en decenas de mercados: calefacción, agua caliente, calidad del aire, energías renovables.
+            </p>
+            <p>
+              China seguía siendo un terreno duro. Las tiendas en Tmall y JD ya estaban abiertas, los productos online, los escaparates listos. Pero no llegaba el tráfico. En China, el recorrido empieza en las redes sociales: ahí se descubren las marcas antes de pasar a la compra. Viessmann necesitaba contenidos capaces de traer visitantes hasta las tiendas.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+            <img src="/images/clients/Viessmann/Tmall-Store-Viessmann-3.png" alt="Página de producto de la tienda oficial Viessmann en Tmall" class="w-full rounded-[8px] border border-[rgba(0,0,0,0.08)]" loading="lazy" decoding="async" />
+            <img src="/images/clients/Viessmann/Tmall-Store-Viessmann-6.png" alt="Catálogo de productos de la tienda Viessmann en Tmall" class="w-full rounded-[8px] border border-[rgba(0,0,0,0.08)]" loading="lazy" decoding="async" />
+          </div>
+          <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+            La tienda de Viessmann en Tmall. Los productos estaban online, pero el tráfico no llegaba.
+          </p>
+        </div>
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="Lo que hicimos">Tres plataformas, tres roles bien distintos.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Montamos un dispositivo que conecta las redes sociales con las tiendas de e-commerce de Viessmann. Tres plataformas, cada una con una misión precisa.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Douyin: la fuente de tráfico</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Produjimos vídeos cortos sobre calefacción, sin adoptar el tono de un ingeniero. El relato giraba en torno a interiores más cálidos, facturas energéticas más ligeras y una vivienda que cruza el invierno sin convertirse en un pozo financiero.
+            </p>
+            <p>
+              Organizamos demostraciones de producto y livestreams que redirigían directamente a la tienda de Tmall. La mecánica funcionó. Douyin se convirtió rápido en una de las primeras fuentes de nuevos compradores online para Viessmann.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">RedNote: el terreno de la investigación</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Un sistema de calefacción supone un presupuesto importante, y el consumidor chino hace una investigación a fondo antes de comprometerse. Hicimos, por tanto, que Viessmann apareciera en esas búsquedas: reseñas de producto, guías de instalación, testimonios de propietarios.
+            </p>
+            <p>
+              Pilotamos campañas con KOL y distribuimos contenido de KOC en toda la plataforma. El objetivo era claro: ante cada búsqueda «mejor sistema de calefacción» en RedNote, Viessmann tenía que aparecer con pruebas, no con promesas.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">WeCom: donde las conversaciones se convierten en ventas</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Antes de la compra, los clientes formulaban decenas de preguntas. ¿Qué potencia para mi vivienda? ¿Es compatible con mi instalación actual? Nuestro equipo respondía por WeCom, en chino, en tiempo real.
+            </p>
+            <p>
+              Después de la venta, el mismo hilo pasaba a hacer de canal de servicio. Seguimiento de instalación, cita de mantenimiento, recordatorios. Una sola conversación, de la primera duda al cliente fidelizado.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+            <img src="/images/clients/Viessmann/Tmall-Store-Viessmann-4.png" alt="Recorrido de membresía y servicio de la tienda Viessmann en Tmall" class="w-full rounded-[8px] border border-[rgba(0,0,0,0.08)]" loading="lazy" decoding="async" />
+            <img src="/images/clients/Viessmann/Tmall-Store-Viessmann-5.png" alt="Historia de la marca Viessmann en su tienda Tmall" class="w-full rounded-[8px] border border-[rgba(0,0,0,0.08)]" loading="lazy" decoding="async" />
+          </div>
+          <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+            La tienda Tmall de Viessmann: historia de marca y recorrido de membresía.
+          </p>
+        </div>
+
+        <div class="mb-[64px] max-[640px]:mb-[48px] bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[32px] max-[640px]:p-[20px]">
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            Ningún pilotaje a distancia. Nuestro equipo lo llevó todo desde China. Nativos en cada plataforma, ajustando el contenido semana a semana según lo que generaba resultados reales.
+          </p>
+        </div>
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="Los resultados">De simples escaparates a canales de venta regulares.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              En dos años, la facturación online de Viessmann en China crece mes a mes. Tmall y JD dejaron de ser meros escaparates para convertirse en canales de venta regulares.
+            </p>
+            <p>
+              La facturación, sin embargo, no lo dice todo. La mecánica se lee por debajo. Douyin alimenta la parte alta del embudo. RedNote prepara al comprador informado. WeCom convierte y fideliza. Hoy, la tienda física, los distribuidores e incluso los técnicos de servicio participan en el mismo bucle.
+            </p>
+            <p>
+              El brief cabía en una frase: que no se trate de vender online sin más, sino de que cada canal empuje en la misma dirección. El dispositivo está construido sobre ese principio.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <section class="pb-[96px] max-[640px]:pb-[64px]">
+    <Container>
+      <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[48px] max-[1024px]:p-[32px] text-center">
+        <SectionHeading overline="Le toca">¿Quiere conectar sus redes sociales con sus ventas online en China?</SectionHeading>
+        <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)] max-w-[500px] mx-auto mb-[32px]">
+          Alcance cerrado. Precio firme. Equipo sobre el terreno.
+        </p>
+        <Button variant="primary" href="/es/contacto">Reservar una llamada</Button>
+      </div>
+    </Container>
+  </section>
+
+</PageLayout>

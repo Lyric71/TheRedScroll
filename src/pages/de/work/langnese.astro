@@ -1,0 +1,218 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+
+const services = ['Beratung', 'Strategie', 'Social', 'Content'];
+const platforms = ['RedNote', 'Douyin', 'WeChat', 'Tmall'];
+---
+
+<PageLayout
+  title="Langnese China-Beratung | TheRedScroll"
+  description="Wie TheRedScroll Deutschlands führende Honigmarke für das Wachstum in China neu positioniert hat. Verbraucherstudie, neue Positionierung und plattformgerechte Social-Strategie."
+  ogImage="/images/clients/Langnese/Langnese-Honey.png"
+  lang="de"
+>
+
+  <section class="relative w-full min-h-[600px] max-[640px]:min-h-[480px] overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center bg-fixed max-[640px]:bg-scroll" style="background-image: url('/images/clients/Langnese/Langnese-Honey.png')" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.72]" aria-hidden="true"></div>
+
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[1024px]:pt-[128px] max-[1024px]:pb-[72px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">Case Study</p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[1024px]:text-[40px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        Langnese: Deutschlands führenden Honig für China neu positioniert.
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        Langnese wollte in China auf die nächste Stufe. Wir haben eine Verbraucherstudie geführt, die Positionierung neu aufgesetzt und eine Social-Strategie gebaut, die neue Kanäle und neue Audiences erschlossen hat.
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/de/contact">Gespräch vereinbaren</Button>
+        <Button variant="secondary-dark" href="#case-study">Case Study lesen</Button>
+      </div>
+    </div>
+  </section>
+
+  <section class="border-b border-[rgba(0,0,0,0.08)]">
+    <Container>
+      <div class="flex flex-wrap gap-[32px] max-[640px]:gap-[20px] py-[24px]">
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Kunde</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">Langnese</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Branche</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">Food / Konsumgüter</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Leistungen</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {services.map((s) => (<span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{s}</span>))}
+          </div>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Plattformen</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {platforms.map((p) => (<span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{p}</span>))}
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <section id="case-study" class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="Kunde">Über ein Jahrhundert Geschichte. Bereit, in China eine Stufe weiterzugehen.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Langnese ist Deutschlands führende Honigmarke. Über ein Jahrhundert Geschichte. In China stand die Distribution, die Regalplätze waren da, die Beziehungen zu den Verteilern saßen.
+            </p>
+            <p>
+              Die Marke wusste, dass mehr drin war. Die Gelegenheit war vorhanden. Es galt, die Positionierung zu schärfen und eine Social-Strategie zu bauen, die für chinesische Konsumenten gedacht ist.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <div class="flex justify-center gap-[16px] overflow-x-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] max-[640px]:justify-start pb-[8px] scrollbar-hide">
+      <img src="/images/clients/Langnese/Langnese-Honey.png" alt="Langnese-Honigsortiment für den chinesischen Markt" class="w-[280px] max-[640px]:w-[220px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]" loading="lazy" decoding="async" />
+      <img src="/images/clients/Langnese/Langnese-Douyin-Livestream.jpg" alt="Langnese-Livestream-Session auf Douyin mit Vorstellung der Honigprodukte" class="w-[280px] max-[640px]:w-[220px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]" loading="lazy" decoding="async" />
+      <img src="/images/clients/Langnese/Langnese-Tmall-2.png" alt="Langnese-Shopseite auf Tmall mit neuer Markenpositionierung" class="w-[280px] max-[640px]:w-[220px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]" loading="lazy" decoding="async" />
+    </div>
+    <Container>
+      <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+        Langnese in China. Produktsortiment, Douyin-Livestream und Tmall-Shop.
+      </p>
+    </Container>
+  </section>
+
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="Was wir festgestellt haben">Der Markt hatte sich verschoben. Langnese vermarktete seit Jahren unverändert.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Wir haben alles durchgekämmt: die Distribution vom Import bis zum Regal kartiert, die Präsenz chinesischer Honigmarken auf RedNote, Douyin, WeChat und Tmall analysiert, eine Konsumentenstudie in Tier-1- und Tier-2-Städten geführt.
+            </p>
+            <p>
+              In den großen Städten reichte die generische Gesundheits-Erzählung nicht mehr. Jede Honigmarke spricht dort von Gesundheit. Lokale Wettbewerber hatten Verpackung, Preis und Social-Content geschärft. In Tier-2-Städten erkannten die Konsumenten den Mehrwert eines importierten Honigs zum doppelten Preis lokaler Marken nicht.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="Was wir gemacht haben">Neun Wachstumssäulen. Bereit zum Ausrollen.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Wir haben einen Rahmen gebaut, der Neupositionierung, Distribution, Produktformate und Social-Content abdeckt. Insgesamt neun Wachstumssäulen.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Konsumentensegmente, die niemand ansprach</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Junge Berufstätige, die Kaffee oder Smoothies mit Honig süßen. Eltern, die nach einer natürlichen Zuckeralternative suchen. Foodies, die mit Honig kochen. Jedem Segment haben wir präzise Verzehranlässe zugeordnet, fest in seinem Alltag verankert.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Eine Neupositionierung auf konkreten Argumenten</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Weg von „deutscher Qualität" als Aufhänger. Konkrete Gründe, gebunden an präzise Verwendungen. Wie ein bestimmtes Aromaprofil bestimmte Rezepte aufwertet. Wie sich die Textur in heißen Getränken verhält. Echte Kaufgründe, statt nur einer Flagge auf dem Etikett.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Eine neu aufgesetzte Social-Strategie, Plattform für Plattform</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              RedNote, um sich in Rezepten und Alltagsritualen einzuladen. Douyin für schnelle Demos neuer Anwendungen. WeChat für die Markenerzählung. Das Ziel war nicht, die Konsumenten daran zu erinnern, dass Langnese existiert, sondern ihren Blick auf Honig im Alltag zu verschieben.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Neue Vertriebswege, neue Produktformate</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Wir haben neue Vertriebswege in Regionen geöffnet, in denen die Marke fehlte. Und neue Produktformate empfohlen: kleine Gläser zum Probieren, Einzelportionen fürs Büro, neu gedachte Verpackung, die die neue Positionierung im Regal trägt.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-[64px] max-[640px]:mb-[48px] bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[32px] max-[640px]:p-[20px]">
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            Die neun Säulen wurden von Marke und Distributor abgenommen, bereit zum Ausrollen, sobald die Freigabe vorlag.
+          </p>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="Ergebnisse">Neue Positionierung. Neue Kanäle. Neues Wachstum.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Die Neupositionierung trug. Neue Vertriebswege öffneten sich. Die Distributoren zogen mit.
+            </p>
+            <p>
+              Die Zahlen sprechen für sich. Langnese ist nicht mehr „dieser zu teure deutsche Honig", sondern findet seinen Platz im Morgen-Smoothie, in der Wochenend-Patisserie und in der Kindervesper. Echte Kaufgründe, im Alltag verankert.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <section class="pb-[96px] max-[640px]:pb-[64px]">
+    <Container>
+      <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[48px] max-[1024px]:p-[32px] text-center">
+        <SectionHeading overline="Sie sind dran">Strategische Begleitung für Ihre Marke in China gesucht?</SectionHeading>
+        <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)] max-w-[500px] mx-auto mb-[32px]">
+          Klarer Umfang. Fester Preis. Team vor Ort.
+        </p>
+        <Button variant="primary" href="/de/contact">Gespräch vereinbaren</Button>
+      </div>
+    </Container>
+  </section>
+
+  <style>
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+
+</PageLayout>

@@ -6,6 +6,7 @@ import SectionHeading from '../../components/ui/SectionHeading.astro';
 import Button from '../../components/ui/Button.astro';
 import FaqAccordion from '../../components/sections/FaqAccordion.astro';
 import GettingStarted from '../../components/sections/GettingStarted.astro';
+import { faqPageSchema, serviceSchema } from '../../lib/schema';
 
 
 const faqs = [
@@ -43,6 +44,15 @@ const gettingStartedSteps = [
 <PageLayout
   title="China Social Media Strategy & Campaigns | TheRedScroll"
   description="Social media strategy, campaign management, and analytics for brands in China. Fixed scope, fixed price. Team on the ground in Shanghai."
+  schema={[
+    serviceSchema({
+      name: 'China Social Media Strategy and Campaigns',
+      description: 'Social media strategy, campaign management, and analytics for brands operating in China. Platform selection, content frameworks, and reporting tied to business outcomes.',
+      url: '/services/strategy-campaigns',
+      serviceType: 'Marketing Strategy',
+    }),
+    faqPageSchema(faqs),
+  ]}
 >
 
   <!-- Hero — Dark hero banner -->

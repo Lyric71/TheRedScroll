@@ -4,6 +4,7 @@ import Container from '../../components/ui/Container.astro';
 import SectionBar from '../../components/ui/SectionBar.astro';
 import SectionHeading from '../../components/ui/SectionHeading.astro';
 import Button from '../../components/ui/Button.astro';
+import { caseStudySchema } from '../../lib/schema';
 
 const services = ['Campaign', 'Content Production', 'Social', 'AI-Powered Content'];
 const platforms = ['WeChat', 'RedNote', 'Weibo'];
@@ -13,6 +14,15 @@ const platforms = ['WeChat', 'RedNote', 'Weibo'];
   title="JAC Motors China Social Media Case Study | TheRedScroll"
   description="How JAC Motors built a real social community on WeChat, RedNote, and Weibo. AI-powered content, Olympic campaign, and global crossover results."
   ogImage="/images/clients/JAC/JAC-Wechat-4.jpg"
+  schema={caseStudySchema({
+    clientName: 'JAC Motors',
+    headline: 'JAC Motors: building a real social community at scale',
+    description: 'How JAC Motors built a real social community on WeChat, RedNote, and Weibo via AI-powered content, an Olympic campaign, and global crossover.',
+    url: '/work/jac-motors',
+    image: '/images/clients/JAC/JAC-Wechat-4.jpg',
+    industry: 'Automotive',
+    platforms,
+  })}
 >
 
   <!-- Hero -->

@@ -1,0 +1,222 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+
+const services = ['Campaña', 'Producción de contenidos', 'Influencer / KOL', 'Social'];
+const platforms = ['WeChat', 'RedNote', 'Weibo'];
+
+const stats = [
+  { value: '43K → 187K', label: 'Seguidores en 18 meses' },
+  { value: '4,7 %', label: 'Tasa de interacción (frente al 1,2 %)' },
+  { value: '38 %', label: 'Tráfico de eCommerce vía RedNote' },
+  { value: '+31 %', label: 'Ventas en tienda interanuales' },
+];
+---
+
+<PageLayout
+  title="Camper: caso de social media en China | TheRedScroll"
+  description="Cómo Camper pasó de 43.000 a 187.000 seguidores en WeChat, RedNote y Weibo. Una estrategia social que llevó las ventas en tienda al +31 % en ciudades chinas."
+  ogImage="/images/clients/Camper/Camper-Case-Study-Hero.jpg"
+  lang="es"
+>
+
+  <section class="relative w-full min-h-[600px] max-[640px]:min-h-[480px] overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center bg-fixed max-[640px]:bg-scroll" style="background-image: url('/images/clients/Camper/Camper-Case-Study-Hero.jpg')" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.72]" aria-hidden="true"></div>
+
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[1024px]:pt-[128px] max-[1024px]:pb-[72px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">Caso de éxito</p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[1024px]:text-[40px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        Camper: asentar una marca de diseño en las redes sociales chinas.
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        Camper quería crecer en social en China sin ceder un milímetro en su identidad de diseño. Cuadruplicamos los seguidores y llevamos las ventas en tienda al +31 % en dieciocho meses.
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/es/contacto">Reservar una llamada</Button>
+        <Button variant="secondary-dark" href="#caso">Leer el caso</Button>
+      </div>
+    </div>
+  </section>
+
+  <section class="border-b border-[rgba(0,0,0,0.08)]">
+    <Container>
+      <div class="flex flex-wrap gap-[32px] max-[640px]:gap-[20px] py-[24px]">
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">El cliente</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">Camper</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Sector</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">Moda / Calzado</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Servicios</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {services.map((s) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{s}</span>
+            ))}
+          </div>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Plataformas</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {platforms.map((p) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{p}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <section id="caso" class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="El cliente">Zapatos nacidos en Mallorca en 1975. En China, el social no acompañaba.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Camper fabrica zapatos en Mallorca desde 1975. Diseño singular, oficio mediterráneo, el confort antes que la moda.
+            </p>
+            <p>
+              En China, la marca sumaba WeChat, Weibo y RedNote en 43.000 seguidores totales y una interacción del 1,2 %. Tenía tiendas en las grandes ciudades, pero las redes no llevaban gente al local. Camper quería crecer sin renunciar a lo esencial: la identidad de diseño tenía que impregnar cada pieza, sin promociones agresivas y sin publicaciones lifestyle intercambiables.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <div class="flex justify-center gap-[16px] overflow-x-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] max-[640px]:justify-start pb-[8px] scrollbar-hide">
+      <img src="/images/clients/Camper/2e9bc97593dbe520397f52be0fb8e584.jpg" alt="Cuenta oficial de Camper en RedNote con 19,3K seguidores" class="w-[240px] max-[640px]:w-[200px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]" loading="lazy" decoding="async" />
+      <img src="/images/clients/Camper/3721890f3b2783008e73034b5b06b315.jpg" alt="Cuenta oficial de Camper en WeChat con artículos y contenido" class="w-[240px] max-[640px]:w-[200px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]" loading="lazy" decoding="async" />
+      <img src="/images/clients/Camper/4bccf3f158a489f020e0a273f13c19ab.jpg" alt="Artículo de WeChat sobre la colaboración Camper x Issey Miyake" class="w-[240px] max-[640px]:w-[200px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]" loading="lazy" decoding="async" />
+      <img src="/images/clients/Camper/b2a4eecb0f6665ce6c27c35983d5e7fb.jpg" alt="Campaña Camper Pix London en RedNote con contenido KOL" class="w-[240px] max-[640px]:w-[200px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]" loading="lazy" decoding="async" />
+    </div>
+    <Container>
+      <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+        La presencia social de Camper en RedNote y WeChat. Colaboraciones con KOL, relatos de marca y alianzas con diseñadores.
+      </p>
+    </Container>
+  </section>
+
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="Lo que hicimos">Contenido construido sobre lo que hace a Camper digna de seguirse.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              El público chino de Camper: profesionales sensibles al diseño, de 28 a 45 años. Una audiencia que sale corriendo ante el enfoque comercial frontal. Por eso construimos el contenido alrededor de lo que hace a Camper digna de seguirse: relatos de diseño, colaboraciones artísticas, la forma real en que estos zapatos se llevan en las ciudades chinas.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">RedNote: nuestro principal terreno de juego</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Colaboramos con microinfluencers del mundo de la arquitectura, el interiorismo y los oficios creativos. El contenido profundizaba en la razón de ser de cada modelo: materiales, construcción, intención de diseño. Una audiencia más estrecha que la de una campaña de influencers de moda clásica, pero con una interacción claramente superior.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">WeChat: el relato de largo recorrido</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Minidocumentales rodados en los talleres de Mallorca. Detrás de cámaras del diseño y la fabricación. Material lo bastante rico para justificar la suscripción a la larga.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Weibo: el terreno de la conversación</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Un debate lanzado sobre la pregunta de siempre (diseñar un zapato por confort o por estética) aguantó tres días y reunió miles de comentarios.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-[64px] max-[640px]:mb-[48px] bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[32px] max-[640px]:p-[20px]">
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            Nuestro equipo lo pilotó todo desde China. Nativos, contenido calibrado para cada plataforma, reunión semanal para decidir qué generaba resultados.
+          </p>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <Container>
+      <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        {stats.map((stat) => (
+          <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[24px] text-center">
+            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[4px]">{stat.value}</p>
+            <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)]">{stat.label}</p>
+          </div>
+        ))}
+      </div>
+    </Container>
+  </section>
+
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="Los resultados">Una subida progresiva y luego la aceleración.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              En dieciocho meses, los seguidores pasaron de 43.000 a 187.000. La interacción sube del 1,2 % al 4,7 %, muy por encima de las medias del sector del calzado.
+            </p>
+            <p>
+              RedNote es la verdadera sorpresa. Con la base de seguidores más pequeña, la plataforma genera el 38 % del tráfico total de e-commerce. Audiencia más estrecha, intención de compra más alta.
+            </p>
+            <p>
+              El efecto se nota también en tienda. Las ventas a perímetro constante crecen un 31 % interanual. La fidelización sube un 22 %. La frecuencia de compra pasa de 1,3 a 2,1 por cliente y año.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-[64px] max-[640px]:mb-[48px] bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[32px] max-[640px]:p-[20px]">
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            Tres creadores de RedNote siguieron publicando sobre Camper tras el final de las campañas pagadas. Sin contrato, sin brief. Les gustaban los zapatos, sin más. Esa prolongación no se pide.
+          </p>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <section class="pb-[96px] max-[640px]:pb-[64px]">
+    <Container>
+      <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[48px] max-[1024px]:p-[32px] text-center">
+        <SectionHeading overline="Le toca">¿Quiere hacer crecer una marca premium en las redes sociales chinas?</SectionHeading>
+        <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)] max-w-[500px] mx-auto mb-[32px]">
+          Alcance cerrado. Precio firme. Equipo sobre el terreno.
+        </p>
+        <Button variant="primary" href="/es/contacto">Reservar una llamada</Button>
+      </div>
+    </Container>
+  </section>
+
+  <style>
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+
+</PageLayout>

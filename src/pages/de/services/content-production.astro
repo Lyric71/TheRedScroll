@@ -1,0 +1,282 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+import FaqAccordion from '../../../components/sections/FaqAccordion.astro';
+import GettingStarted from '../../../components/sections/GettingStarted.astro';
+
+
+const faqs = [
+  { q: 'Kann KI wirklich Content auf Premium-Niveau erzeugen?', a: 'Ja, sofern das Modell sauber trainiert ist. Generische Ausgaben bleiben generisch, daran ändert nichts. Wir trainieren maßgeschneiderte Modelle anhand Ihrer visuellen Identität, Ihrer Farben, Verpackungen und Ihres Fotostils. Das Ergebnis sieht nach Ihrer Marke aus. Nicht nach irgendeiner anderen.' },
+  { q: 'Wie viel Content ist KI-generiert, wie viel echt gedreht?', a: 'Hängt von Marke und Plattform ab. Bei den meisten Kunden deckt AIGC 60 bis 70 % der visuellen Produktion ab: Produktfotos, Visuals für die Netzwerke, Kurzvideos. Echtes Drehmaterial macht die übrigen 30 bis 40 % aus: Hero-Videos, Alltagsszenen, Aufnahmen mit Creatorn.' },
+  { q: 'Schreiben Sie auf Chinesisch oder übersetzen Sie aus dem Englischen?', a: 'Wir schreiben direkt auf Chinesisch. Das ist keine Übersetzung, und der Unterschied ist sofort sichtbar. Unsere Redakteure sind chinesische Muttersprachler mit Sitz in Shanghai. Wenn Sie uns Ihre Markenleitlinien auf Englisch übergeben, dienen sie als Fundament. Der finale Text aber entsteht für chinesische Plattformen, auf einem weißen Blatt.' },
+  { q: 'Wie verfolgen Sie Trends?', a: 'Unsere Community-Verantwortlichen leben jeden Tag auf den Plattformen. Sie erkennen aufkommende Keywords, kursierende Formate, saisonale Höhepunkte und das, was die Wettbewerber tun. Öffnet sich ein Zeitfenster, können wir innerhalb von 24 bis 48 Stunden produzieren und veröffentlichen.' },
+  { q: 'Was, wenn wir bereits globale Creative-Assets haben?', a: 'Wir können sie adaptieren, eine Adaption liefert in der Regel jedoch schlechtere Ergebnisse als lokal gedachter Content. Wir nutzen Ihre bestehenden Visuals dort, wo sie tragen, und ergänzen für den Alltag mit AIGC und echten Drehs.' },
+  { q: 'Wie viele Veröffentlichungen pro Monat sind sinnvoll?', a: 'Für eine Minimalpräsenz: 8 bis 12 Veröffentlichungen pro Plattform und Monat. Für eine wirklich wettbewerbsfähige Präsenz: 20 bis 30. Und das ist nur der organische Content. Werbecreatives kommen obenauf. Wir bauen einen Redaktionsplan, der zu Ihrem Budget und Ihren Zielen passt.' },
+  { q: 'Können Sie Content für mehrere Plattformen parallel produzieren?', a: 'Das ist unsere Standardarbeitsweise. Die meisten Kunden sind auf zwei bis vier Plattformen unterwegs. Jede hat ihren eigenen Kalender, ihren eigenen Ton, ihre eigenen Formate. Denselben Beitrag von Plattform zu Plattform zu recyceln, funktioniert schlicht nicht.' },
+  { q: 'Wie wird abgerechnet?', a: 'Klarer Umfang, fester Preis. Sie wissen von Anfang an, wie viele Posts, Videos, Artikel und Drehs pro Monat enthalten sind. Mediabudget und Zusatzdrehs werden separat und transparent angeboten.' },
+  { q: 'Wem gehört der produzierte Content?', a: 'Ihnen. Alles, was wir produzieren, KI-generiert oder echt gedreht, gehört Ihrer Marke. Vollumfängliche Nutzungsrechte, keine Lizenzeinschränkungen, kein Verfallsdatum. Sie machen damit, was Sie wollen.' },
+  { q: 'Wie lange dauert die Lieferung?', a: 'Für AIGC-Visuals: 2 bis 3 Werktage vom Briefing bis zur Auslieferung. Echte Drehs brauchen 1 bis 2 Wochen, Vorbereitung, Dreh und Postproduktion eingerechnet. Bei Trend-Content schaffen wir vom Konzept bis zum Live-Gang 24 bis 48 Stunden, wenn es sein muss.' },
+];
+
+const gettingStartedSteps = [
+  {
+    title: 'Erstgespräch.',
+    description: 'Erzählen Sie uns von Ihrer Marke, Ihren Plattformen und davon, was am aktuellen Content hakt.',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
+  },
+  {
+    title: 'Content-Plan.',
+    description: 'Formatwahl, Produktionsmethode, Mischverhältnis AIGC und echte Drehs, Preisstruktur. Der Umfang steht von Anfang an.',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>',
+  },
+  {
+    title: 'In zwei Wochen live.',
+    description: 'Redaktionsstrategie, Produktion der ersten Visuals, erste Veröffentlichungen. Vierzehn Tage nach Vertragsschluss.',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
+  },
+];
+---
+
+<PageLayout
+  title="Content-Produktion für Chinas soziale Netzwerke | TheRedScroll"
+  description="AIGC-Visuals, Videoproduktion, Redaktion und kulturelle Anpassung für WeChat, Douyin und RedNote. Klarer Umfang, KI-Tempo. Team in Shanghai."
+  lang="de"
+>
+
+  <!-- Hero -->
+  <section class="relative w-full overflow-hidden bg-[var(--color-ink)]">
+    <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/content-production-hero.png')" aria-hidden="true"></div>
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[1024px]:pt-[128px] max-[1024px]:pb-[72px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+        Content-Produktion
+      </p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[1024px]:text-[40px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        Die Erzählung schlägt heute die Produktionskosten.
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        Strategie, Kreativrichtung, AIGC, Drehs vor Ort, Redaktion und kulturelle Anpassung. Aus Shanghai und Hongkong, ohne Zwischenstation.
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/de/contact">Gespräch vereinbaren</Button>
+        <Button variant="secondary-dark" href="#what-we-do">Unsere Leistungen</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why content production has changed -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        <div class="relative col-span-2 row-span-2 max-[640px]:col-span-1 max-[640px]:row-span-1 bg-[#1A1A1A] rounded-[12px] p-[32px] max-[640px]:p-[20px] flex flex-col justify-between min-h-[320px] max-[640px]:min-h-0 overflow-hidden">
+          <svg class="absolute bottom-[-20px] right-[-20px] w-[260px] h-[260px] opacity-[0.06]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+          <div class="relative z-[1]">
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Die Wende</p>
+            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[16px]">Warum sich die Content-Produktion grundlegend verändert hat</h2>
+            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[400px]">KI erzeugt Visuals und Texte heute in Minuten. Wenn jeder günstig produzieren kann, entscheidet die Denkarbeit davor über den Abstand.</p>
+          </div>
+          <div class="relative z-[1] mt-[24px]">
+            <Button variant="secondary-dark" href="#what-we-do">Unsere Leistungen</Button>
+          </div>
+        </div>
+        <div class="bg-[#F0F1F4] rounded-[10px] p-[24px] max-[640px]:p-[20px] relative overflow-hidden">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Jede Plattform spricht ihre eigene Sprache</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">RedNote mag entspannte, fast vertrauliche Inhalte. Weibo verlangt zugespitzte Headlines. WeChat erwartet Tiefe. Douyin lebt vom Aufhänger und vom Rhythmus. Einen einzigen Ton auf alle vier zu legen, führt nirgendwohin.</p>
+        </div>
+        <div class="bg-[#1A1A1A] rounded-[12px] p-[24px] max-[640px]:p-[20px] relative overflow-hidden">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Trends verfliegen schnell</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.6)]">Ein Keyword, das am Dienstag auf Douyin trägt, kann eine Woche später verpufft sein. Das Team muss im Takt der Plattformen leben, um die Zeitfenster zu erwischen.</p>
+        </div>
+        <div class="bg-[#CC3333] rounded-[12px] p-[24px] max-[640px]:p-[20px] relative overflow-hidden">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Die Volumina werden gewaltig</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.8)]">Drei bis vier Plattformen bedeuten mindestens 30 bis 50 Inhalte pro Monat, Werbecreatives nicht eingerechnet. Diesen Takt hält kein Team mit reiner Handarbeit.</p>
+        </div>
+        <div class="bg-[#E8E0D8] rounded-[10px] p-[24px] max-[640px]:p-[20px] relative overflow-hidden">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">KI hält als Einzige den Takt</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">AIGC fängt das Volumen ab. Ihr Team behält die Kreativrichtung. Das Denken bleibt menschlich. Nur die Ausführungsgeschwindigkeit nicht mehr.</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- What we do — Content structure & AIGC -->
+  <section id="what-we-do" class="mt-[96px] max-[640px]:mt-[64px] scroll-mt-[76px]">
+    <Container>
+      <SectionBar />
+      <SectionHeading overline="Unsere Leistungen">Content-Organisation und Strategie</SectionHeading>
+
+      <div class="rounded-[12px] overflow-hidden mt-[24px]">
+        <img src="/images/what-we-do/content-production.png" alt="Das TheRedScroll-Team bei einem Content-Dreh" class="w-full aspect-[5/2] max-[640px]:aspect-[16/10] object-cover" loading="lazy" decoding="async" />
+      </div>
+
+      <div class="grid grid-cols-3 max-[768px]:grid-cols-1 gap-[24px] -mt-[72px] max-[768px]:-mt-[32px] px-[32px] max-[768px]:px-[0px] relative z-[1]">
+        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
+          <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
+            <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+          </div>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Redaktionsstrategie</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Content-Säulen, redaktioneller Rahmen, Tonalität, plattformspezifische Formate. Zu 100 % menschlich gesteuert. KI kann nicht entscheiden, ob sie einen Trend aufgreifen oder schweigen soll.</p>
+        </div>
+        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
+          <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
+            <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+          </div>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">AIGC-Visuals und Videos</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Produktfotos, Lifestyle-Bilder und Kurzvideos, KI-generiert. Die Modelle werden auf Ihre Markenidentität trainiert, der Output sieht wirklich nach Ihnen aus. Rund 80 % schneller als klassische Produktion.</p>
+        </div>
+        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
+          <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
+            <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+          </div>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Drehs vor Ort</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Gedreht vor Ort in China. Backstage, Unboxing, Brand-Filme, Aufnahmen mit Creatorn. KI ersetzt niemals eine echte Person, die Ihr Produkt tatsächlich benutzt.</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Copywriting & Indicative pricing -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="bg-[#1A1A1A] rounded-[12px] p-[48px] max-[1024px]:p-[32px] max-[640px]:p-[32px_20px]">
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">Redaktion und kulturelle Anpassung</p>
+        <h2 class="text-[#FFFFFF] text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] mb-[16px]">Bei uns wird nicht übersetzt. Es wird geschrieben.</h2>
+        <div class="max-w-[680px] flex flex-col gap-[24px] mb-[32px]">
+          <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+            Ein WeChat-Artikel verlangt Struktur und Tiefe. Eine RedNote-Caption liest sich wie ein Tipp einer Freundin. Ein eingeblendeter Douyin-Text muss in zwei Sekunden den Blick fangen. Die Schreibweise ändert sich von Plattform zu Plattform, selbst wenn das Produkt dasselbe bleibt.
+          </p>
+          <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+            KI liefert einen ersten Entwurf. Chinesische Muttersprachler überarbeiten den Text und passen ihn kulturell an. Für Marken, die neu in den Markt eintreten, übernehmen wir auch die Entwicklung des chinesischen Namens, die Anpassung von Claims und das Neuschreiben der Kernbotschaften.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[24px]">
+          <div>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Richtpreise AIGC</h3>
+            <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+              10 AIGC-Produktfotos: 2.000 bis 5.000 €. 5 Kurzvideos für die Netzwerke (15 bis 30 Sek.): 5.000 bis 12.000 €. Zum Vergleich: ein Produkt-Shooting in Shanghai startet bei 8.000 € und reicht bis 25.000 € pro Tag. Ein 30-Sekunden-Video beginnt bei 15.000 € und kann 50.000 € erreichen.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Richtpreise echter Dreh</h3>
+            <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+              Halbtages-Shooting in Shanghai: 8.000 bis 15.000 €. Voller Drehtag mit Team und Schnitt: 20.000 bis 60.000 €. Der Preis variiert je nach Umfang, Ort, Beteiligten und Umfang der Postproduktion.
+            </p>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Content formats by platform — Douyin -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <SectionBar />
+      <SectionHeading overline="Formate nach Plattform">Douyin</SectionHeading>
+
+      <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Kurzvideo (15 bis 60 Sek.)</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Das Königsformat. Produktdemos, Tutorials, Inszenierungen, Trend-Content. Hochformat 9:16. Der Aufhänger muss in den ersten zwei Sekunden zünden. Musik und Untertitel sind Pflicht.</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Livestream</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Produktdemos, Q-and-A-Sessions, Flash Sales. Lives von 1 bis 4 Stunden. Direktverkäufe über den Douyin-Shop, sofern ein erfahrener Moderator, ein in Echtzeit betreuter Chat und eine saubere Produktinszenierung zusammenkommen.</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Douyin-Karussell</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Bis zu 20 Bilder zum Durchblättern. Ideal für didaktische Inhalte, Schritt-für-Schritt-Guides, Produktvergleiche. Format im Aufwind, besonders bei Beauty- und Pflegemarken.</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- RedNote formats -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <SectionBar />
+      <SectionHeading overline="Formate nach Plattform">RedNote / Xiaohongshu</SectionHeading>
+
+      <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Foto-Notes</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">1 bis 9 Bilder und eine Caption. Das native Format der Plattform. Alltagsfotos, Flatlays, Vorher-Nachher. Der Ton bleibt persönlich und ehrlich. Eher Tagebuch als Pressemitteilung.</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Video-Notes</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">1 bis 5 Minuten. Mehr Raum zum Erzählen als auf Douyin. Produkt-Reviews, Routine-Videos, Tutorials. Wirkt vor allem dann, wenn man das Gefühl hat, jemandem zuzuhören, der eine ehrliche Erfahrung teilt.</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Search-orientierte Notes</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Content, geschnitten auf Sichtbarkeit in den Suchergebnissen, sobald ein RedNote-Nutzer eine Anfrage stellt. SEO, angewandt auf soziale Netzwerke. Das beginnt mit einer Keyword-Recherche in der internen RedNote-Suche.</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- WeChat formats -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <SectionBar />
+      <SectionHeading overline="Formate nach Plattform">WeChat</SectionHeading>
+
+      <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Official-Account-Artikel</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Langform. 800 bis 2.500 Wörter mit Bildern, eingebettetem Video und Links zu Mini Programs oder Shops. Gemacht für Markenerzählung, Produktwissen und Expertenstimme.</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Channels-Videos</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Kurze Hochformat-Videos im WeChat-Videofeed. 1 bis 3 Minuten. Ein Format im Aufwind. Die Audience ist kleiner, aber näher: das Teilen geschieht innerhalb des WeChat-Freundeskreises.</p>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Mini-Program-Inhalte</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Produktkataloge, interaktive Erlebnisse, Event-Seiten, Loyalty-Programme. Der Content lebt im Mini Program und verbreitet sich über Artikel, Werbung und QR-Codes.</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Case study -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <a href="/de/work/camper" class="block bg-[var(--color-rice-paper)] rounded-[10px] p-[48px] max-[1024px]:p-[32px] max-[640px]:p-[32px_20px] group">
+        <div class="flex gap-[48px] max-[768px]:flex-col items-center">
+          <div class="flex-1 min-w-0">
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[12px]">Case Study</p>
+            <h3 class="text-[24px] max-[640px]:text-[20px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[12px]">Camper: eine Design-Marke auf Chinas sozialen Netzwerken</h3>
+            <p class="text-[15px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[20px]">Design-fokussierter Content brachte Camper von 43.000 auf 187.000 Follower auf Chinas Plattformen. Die Verkäufe im Laden legten in 18 Monaten um 31 % zu.</p>
+            <span class="text-[14px] font-medium text-[var(--color-vermillion)] group-hover:underline">Case Study lesen →</span>
+          </div>
+          <img
+            src="/images/clients/Camper/Camper-Case-Study-Hero.jpg"
+            alt="Wachstum der Marke Camper auf chinesischen Social-Media-Plattformen"
+            class="w-[45%] max-[768px]:w-full aspect-[16/10] object-cover rounded-[10px]"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </a>
+    </Container>
+  </section>
+
+  <GettingStarted
+    lang="de"
+    heading="Vom Briefing bis zu den ersten veröffentlichten Inhalten vergehen zwei Wochen."
+    steps={gettingStartedSteps}
+    backgroundImage="/images/getting-started/content-production.png"
+    crossLinks={[
+      { label: 'Strategie und Kampagnen', href: '/de/services/strategy-campaigns' },
+      { label: 'Influencer-Marketing', href: '/de/services/influencer-marketing' },
+      { label: 'Werbung', href: '/de/services/advertising' },
+    ]}
+  />
+
+  <FaqAccordion lang="de" faqs={faqs} subtitle="Die häufigsten Fragen rund um Content-Produktion." />
+
+</PageLayout>

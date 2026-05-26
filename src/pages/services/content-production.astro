@@ -6,6 +6,7 @@ import SectionHeading from '../../components/ui/SectionHeading.astro';
 import Button from '../../components/ui/Button.astro';
 import FaqAccordion from '../../components/sections/FaqAccordion.astro';
 import GettingStarted from '../../components/sections/GettingStarted.astro';
+import { faqPageSchema, serviceSchema } from '../../lib/schema';
 
 
 const faqs = [
@@ -43,6 +44,15 @@ const gettingStartedSteps = [
 <PageLayout
   title="China Social Media Content Production | TheRedScroll"
   description="AIGC images, video production, copywriting, and localization for WeChat, Douyin, and RedNote. Fixed scope. AI-powered speed. Team in Shanghai."
+  schema={[
+    serviceSchema({
+      name: 'China Social Media Content Production',
+      description: 'AIGC images, video production, native Chinese copywriting, and content localization for WeChat, Douyin, RedNote, and Weibo via HubStudio.ai.',
+      url: '/services/content-production',
+      serviceType: 'Content Production',
+    }),
+    faqPageSchema(faqs),
+  ]}
 >
 
   <!-- Hero — Dark hero banner -->

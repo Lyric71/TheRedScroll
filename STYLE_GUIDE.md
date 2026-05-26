@@ -91,6 +91,14 @@ International brands located outside of China that want to grow their social med
 ### 3.3 The Expertise Test
 Before publishing any content, ask: "Does this prove we know China's platforms, or does it just say we do?"
 
+### 3.3.1 Allowed Domain Terms
+
+Some words read as agency-jargon in most contexts but carry technical meaning in ours. They are allowed only when used precisely.
+
+| Term | Allowed Use | Banned Use |
+|---|---|---|
+| Ecosystem | A specific platform's interconnected products (e.g. "the WeChat ecosystem of Service Accounts, Mini Programs, WeCom, Pay"). The China social commerce stack, where audience, content, influencers, platforms, and commerce sit on the same surface. | "Digital ecosystem," "ecosystem of partners," "our ecosystem of solutions." If the sentence works after removing the word, remove it. |
+
 ### 3.4 Words and Phrases That Are Banned
 
 | Banned | Use Instead |
@@ -101,7 +109,6 @@ Before publishing any content, ask: "Does this prove we know China's platforms, 
 | Brand awareness / visibility | More followers, more engagement, more conversions |
 | Holistic | [Be specific about what's included] |
 | Synergy / synergies | [Delete the sentence] |
-| Ecosystem | Platforms, market |
 | Digital landscape | [Delete the sentence and start over] |
 | Unlock / unleash | Grow, build, launch |
 | Cutting-edge | [Name the specific technology] |

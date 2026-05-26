@@ -4,6 +4,7 @@ import Container from '../../components/ui/Container.astro';
 import SectionBar from '../../components/ui/SectionBar.astro';
 import SectionHeading from '../../components/ui/SectionHeading.astro';
 import Button from '../../components/ui/Button.astro';
+import { caseStudySchema } from '../../lib/schema';
 
 const services = ['Campaign', 'Design', 'Media', 'Website'];
 const platforms = ['Web', 'Social Media', 'Paid Ads'];
@@ -13,6 +14,15 @@ const platforms = ['Web', 'Social Media', 'Paid Ads'];
   title="Blue Insurance Hong Kong Digital Launch Case | TheRedScroll"
   description="How Blue Insurance launched Hong Kong's first digital life insurer with a bilingual website, SEO, and a campaign that drove 10K followers in one month."
   ogImage="/images/clients/Blue/Blue Insurance 1.png"
+  schema={caseStudySchema({
+    clientName: 'Blue Insurance',
+    headline: 'Blue Insurance: launching Hong Kong\'s first digital life insurer',
+    description: 'How Blue Insurance launched Hong Kong\'s first digital life insurer with a bilingual website, SEO, and a campaign that drove 10K followers in one month.',
+    url: '/work/blue-insurance',
+    image: '/images/clients/Blue/Blue Insurance 1.png',
+    industry: 'Insurance / FinTech',
+    platforms,
+  })}
 >
 
   <!-- Hero -->

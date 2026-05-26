@@ -1,5 +1,7 @@
 ---
 import PageLayout from '../../layouts/PageLayout.astro';
+import UpdatedDate from '../../components/ui/UpdatedDate.astro';
+import { faqPageSchema, serviceSchema } from '../../lib/schema';
 import Container from '../../components/ui/Container.astro';
 import SectionBar from '../../components/ui/SectionBar.astro';
 import SectionHeading from '../../components/ui/SectionHeading.astro';
@@ -310,6 +312,15 @@ const commerceAndLifestyle = platforms.filter(p => p.category === 'Commerce and 
 <PageLayout
   title="Additional Platforms: Bilibili, Kuaishou, Zhihu, and More | TheRedScroll"
   description="14 platforms most agencies skip. Bilibili, Kuaishou, Zhihu, Toutiao, Meituan, Pinduoduo, and more. Fixed scope, fixed price. Team on the ground in China."
+  schema={[
+    serviceSchema({
+      name: 'Additional China Platform Marketing',
+      description: 'Marketing services for Bilibili, Kuaishou, Zhihu, Toutiao, Meituan, Pinduoduo and other Chinese platforms most agencies do not cover.',
+      url: '/platforms/others',
+      serviceType: 'Social Media Marketing',
+    }),
+    faqPageSchema(faqs),
+  ]}
 >
   <!-- Hero: Dark hero banner -->
   <section class="w-full bg-[#1A1A1A] py-[80px] max-[640px]:py-[48px] relative overflow-hidden">
@@ -322,6 +333,7 @@ const commerceAndLifestyle = platforms.filter(p => p.category === 'Commerce and 
         <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">
           Beyond the big four
         </p>
+        <UpdatedDate date="May 2026" variant="light" class="mb-[8px]" />
         <h1 class="text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] text-[#FFFFFF] mb-[8px]">
           14 platforms most agencies skip
         </h1>
@@ -365,7 +377,7 @@ const commerceAndLifestyle = platforms.filter(p => p.category === 'Commerce and 
               <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out stat-bg" style={`background-image: url('${stat.image}')`} aria-hidden="true"></div>
               <div class="absolute inset-0 bg-gradient-to-t from-[rgba(26,26,26,0.9)] via-[rgba(26,26,26,0.4)] to-transparent" aria-hidden="true"></div>
               <div class="relative z-[1] p-[20px]">
-                <span class="text-[32px] text-[#FFFFFF] font-medium leading-none stat-counter block mb-[4px]" data-target={stat.value}>0</span>
+                <span class="text-[32px] text-[#FFFFFF] font-medium leading-none stat-counter block mb-[4px]" data-target={stat.value}>{stat.value}</span>
                 <span class="text-[12px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.4]">{stat.label}</span>
               </div>
             </div>
@@ -890,6 +902,9 @@ const commerceAndLifestyle = platforms.filter(p => p.category === 'Commerce and 
   }
 
   // Stats scroll reveal with stagger + trigger counters
+  document.querySelectorAll<HTMLElement>('.stat-counter').forEach((el) => {
+    el.textContent = '0';
+  });
   const statCards = document.querySelectorAll('.stat-card');
   const statsObserver = new IntersectionObserver(
     (entries) => {

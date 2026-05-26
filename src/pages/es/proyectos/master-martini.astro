@@ -1,0 +1,208 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+
+const services = ['Campaña', 'Diseño', 'Influencer / KOL', 'Medios', 'Social'];
+const platforms = ['Instagram', 'Facebook'];
+---
+
+<PageLayout
+  title="Master Martini, redes sociales en Asia | TheRedScroll"
+  description="Cómo Master Martini construyó una comunidad de chefs profesionales en cinco mercados asiáticos vía Instagram y Facebook. Recetas, demos en directo y contenido de usuario."
+  ogImage="/images/clients/MasterMartini/MasterMartini1.webp"
+  lang="es"
+>
+
+  <section class="relative w-full min-h-[600px] max-[640px]:min-h-[480px] overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center bg-fixed max-[640px]:bg-scroll" style="background-image: url('/images/clients/MasterMartini/MasterMartini1.webp')" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.72]" aria-hidden="true"></div>
+
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[1024px]:pt-[128px] max-[1024px]:pb-[72px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">Caso de éxito</p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[1024px]:text-[40px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        Master Martini: una comunidad de chefs a escala asiática en las redes sociales.
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        Master Martini tenía que llegar a chefs profesionales en cinco mercados asiáticos. Convertimos sus cuentas sociales en una comunidad que aceleró las ventas.
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/es/contacto">Reservar una llamada</Button>
+        <Button variant="secondary-dark" href="#caso">Leer el caso</Button>
+      </div>
+    </div>
+  </section>
+
+  <section class="border-b border-[rgba(0,0,0,0.08)]">
+    <Container>
+      <div class="flex flex-wrap gap-[32px] max-[640px]:gap-[20px] py-[24px]">
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">El cliente</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">Master Martini</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Sector</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">Alimentación / Ingredientes B2B</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Servicios</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {services.map((s) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{s}</span>
+            ))}
+          </div>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Plataformas</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {platforms.map((p) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{p}</span>
+            ))}
+          </div>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Mercados</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">Malasia, Hong Kong, Singapur, Indonesia, Tailandia</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <section id="caso" class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="El cliente">Ingredientes para pastelería profesional. Cinco mercados. Un reto social muy concreto.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Master Martini abastece a panaderos y pasteleros profesionales desde 1982. Ingredientes, productos semielaborados, productos acabados. El tipo de referencias que aparecen en las cocinas profesionales, nunca en el lineal del supermercado.
+            </p>
+            <p>
+              La marca ya tenía cuentas en cinco mercados: Malasia, Hong Kong, Singapur, Indonesia y Tailandia. Dinamizar una audiencia social en torno a ingredientes de pastelería B2B es un oficio aparte. Los chefs no pasan el día buscando marcas de ingredientes en redes. Y cuando siguen alguna, esperan fondo, técnica probada, nunca publicidad bien envuelta.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <div class="flex justify-center gap-[16px] overflow-x-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] max-[640px]:justify-start pb-[8px] scrollbar-hide">
+      <img src="/images/clients/MasterMartini/MasterMartini1.webp" alt="Contenido de pastelería profesional Master Martini en Instagram" class="w-[280px] max-[640px]:w-[220px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]" loading="lazy" decoding="async" />
+      <img src="/images/clients/MasterMartini/masterMartini2.jpg" alt="Recetas y demostraciones de chefs Master Martini en mercados asiáticos" class="w-[280px] max-[640px]:w-[220px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]" loading="lazy" decoding="async" />
+      <img src="/images/clients/MasterMartini/Mastermartini3.png" alt="Campaña de contenido de usuario Master Martini con chefs profesionales" class="w-[280px] max-[640px]:w-[220px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]" loading="lazy" decoding="async" />
+    </div>
+    <Container>
+      <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+        Contenido social Master Martini en cinco mercados asiáticos. Fotos de recetas, demostraciones de chefs y campañas de contenido de usuario.
+      </p>
+    </Container>
+  </section>
+
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="Lo que hicimos">Contenido que el chef quería seguir de verdad.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Pilotamos las cuentas de Instagram y Facebook de Master Martini en los cinco mercados. El enfoque combinaba recetas, demostraciones en directo, talleres y campañas de contenido de usuario.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Las recetas como base editorial</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Pasos claros, fotografías y vídeos cuidados. Un acabado a la altura del oficio que invita al pastelero a pensar que podrá llevarlo a la cocina al día siguiente.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Lives con pasteleros de prestigio para asentar confianza</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Los chefs demostraban técnicas con los ingredientes Master Martini, respondían a las preguntas del público y detallaban lo que importa de verdad a un profesional: proporciones, temperaturas, momentos críticos.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Los concursos UGC convirtieron a los clientes en creadores</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Los chefs subían platos hechos con productos Master Martini, acompañados de un hashtag de marca. Profesionales reales, cocinas reales, resultados verificables. Ese contenido pesa entre pares.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Talleres para ir más allá</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Nuevas técnicas de pastelería, tendencias emergentes, aplicaciones concretas. Los talleres atrajeron a chefs en busca de novedad. Muchos acabaron probando productos que ni sabían que existían.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-[64px] max-[640px]:mb-[48px] bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[32px] max-[640px]:p-[20px]">
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            Cinco mercados, cinco enfoques. El contenido para Indonesia no se parecía en nada al de Hong Kong. Idiomas distintos, tradiciones culinarias distintas, chefs locales distintos puestos en primer plano. Ningún feed duplicado entre las cinco cuentas.
+          </p>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="Los resultados">De cuentas de marketing a un lugar donde el chef aprende y comparte.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              La notoriedad de la marca crece en los cinco mercados. Los seguidores suben en ambas plataformas. Y, sobre todo, las consultas y los pedidos acompañan: los chefs que consumían el contenido empiezan a comprar.
+            </p>
+            <p>
+              El contenido también se desbordó de los cinco mercados de origen. Los chefs compartían las publicaciones con colegas de países vecinos y el alcance de Master Martini llegó a regiones con distribución pequeña.
+            </p>
+            <p>
+              Con el tiempo, las cuentas dejaron de ser meros canales de marketing y se convirtieron en un lugar donde los panaderos y pasteleros de Asia venían a aprender, enseñar su trabajo y hablar entre pares. Master Martini se instaló en el centro de esa comunidad.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <section class="pb-[96px] max-[640px]:pb-[64px]">
+    <Container>
+      <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[48px] max-[1024px]:p-[32px] text-center">
+        <SectionHeading overline="Le toca">¿Quiere construir una comunidad profesional en torno a su marca en Asia?</SectionHeading>
+        <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)] max-w-[500px] mx-auto mb-[32px]">
+          Alcance cerrado. Precio firme. Equipo sobre el terreno.
+        </p>
+        <Button variant="primary" href="/es/contacto">Reservar una llamada</Button>
+      </div>
+    </Container>
+  </section>
+
+  <style>
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+
+</PageLayout>

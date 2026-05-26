@@ -4,6 +4,7 @@ import Container from '../../../components/ui/Container.astro';
 import SectionBar from '../../../components/ui/SectionBar.astro';
 import SectionHeading from '../../../components/ui/SectionHeading.astro';
 import Button from '../../../components/ui/Button.astro';
+import UpdatedDate from '../../../components/ui/UpdatedDate.astro';
 import FaqAccordion from '../../../components/sections/FaqAccordion.astro';
 import GettingStarted from '../../../components/sections/GettingStarted.astro';
 
@@ -53,11 +54,12 @@ const gettingStartedSteps = [
       <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
         Entrée sur le marché chinois
       </p>
+      <UpdatedDate lang="fr" date="mai 2026" variant="light" class="mb-[12px]" />
       <h1 class="text-[#FFFFFF] text-[48px] max-[1024px]:text-[40px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
-        Référencer un produit ne suffit pas. Tant que la notoriété fait défaut, les ventes ne décollent pas.
+        Référencer un produit ne suffit pas. À défaut de notoriété, les ventes ne décollent jamais.
       </h1>
       <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
-        Entrez sur le marché par les réseaux sociaux : plus rapide, moins coûteux et beaucoup plus simple à éprouver qu'un lancement classique sur une place de marché.
+        Entrez sur le marché par les réseaux sociaux : plus rapide, moins coûteux et bien plus simple à éprouver qu'un lancement classique sur une place de marché.
       </p>
       <div class="flex items-center justify-center gap-[12px] flex-wrap">
         <Button variant="primary" href="/fr/contact">Prendre rendez-vous</Button>

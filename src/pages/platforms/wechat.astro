@@ -4,6 +4,8 @@ import Container from '../../components/ui/Container.astro';
 import SectionBar from '../../components/ui/SectionBar.astro';
 import SectionHeading from '../../components/ui/SectionHeading.astro';
 import Button from '../../components/ui/Button.astro';
+import UpdatedDate from '../../components/ui/UpdatedDate.astro';
+import { faqPageSchema, serviceSchema } from '../../lib/schema';
 
 const stats = [
   { label: 'Monthly active users', value: '1.4B+', image: '/images/platforms/wechat-stats/monthly-active-users.png' },
@@ -226,11 +228,22 @@ const faqs = [
     a: 'Monthly reports. Follower growth, article open rates, Mini Program traffic, ad performance, conversions. Real numbers, plain language. If something\'s underperforming, we tell you what\'s off and what we\'re changing.',
   },
 ];
+
+const pageSchemas = [
+  serviceSchema({
+    name: 'WeChat Marketing Services',
+    description: 'WeChat Official Account management, Mini Program development, WeCom CRM, Channels, and paid advertising for international brands in China.',
+    url: '/platforms/wechat',
+    serviceType: 'Social Media Marketing',
+  }),
+  faqPageSchema(faqs),
+];
 ---
 
 <PageLayout
   title="WeChat Marketing Services for International Brands | TheRedScroll"
   description="We run WeChat accounts from Shanghai and Hong Kong. Official Accounts, Mini Programs, WeCom, Channels, and ads. Fixed scope, fixed price."
+  schema={pageSchemas}
 >
   <!-- Hero: Dark hero banner (Style A) -->
   <section class="w-full bg-[#1A1A1A] py-[80px] max-[640px]:py-[48px] relative overflow-hidden">
@@ -248,6 +261,7 @@ const faqs = [
         <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">
           WeChat marketing
         </p>
+        <UpdatedDate date="May 2026" variant="light" class="mb-[8px]" />
         <h1 class="text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] text-[#FFFFFF] mb-[8px]">
           WeChat is where 1.4 billion people chat, pay, shop, and follow brands
         </h1>
@@ -289,7 +303,7 @@ const faqs = [
               <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out stat-bg" style={`background-image: url('${stat.image}')`} aria-hidden="true"></div>
               <div class="absolute inset-0 bg-gradient-to-t from-[rgba(26,26,26,0.9)] via-[rgba(26,26,26,0.4)] to-transparent" aria-hidden="true"></div>
               <div class="relative z-[1] p-[20px]">
-                <span class="text-[32px] text-[#FFFFFF] font-medium leading-none stat-counter block mb-[4px]" data-target={stat.value}>0</span>
+                <span class="text-[32px] text-[#FFFFFF] font-medium leading-none stat-counter block mb-[4px]" data-target={stat.value}>{stat.value}</span>
                 <span class="text-[12px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.4]">{stat.label}</span>
               </div>
             </div>
@@ -366,7 +380,7 @@ const faqs = [
           <SectionBar />
         </div>
         <SectionHeading overline="The WeChat ecosystem">
-          Six connected products. Know how they fit together.
+          How do WeChat's six products work together for brands?
         </SectionHeading>
       </div>
 
@@ -717,6 +731,12 @@ const faqs = [
 
     startAuto();
   }
+
+  // Reset counters to 0 before animation. Static HTML renders the real value
+  // for crawlers; JS resets here so the count-up animation can play.
+  document.querySelectorAll<HTMLElement>('.stat-counter').forEach((el) => {
+    el.textContent = '0';
+  });
 
   // Stats scroll reveal with stagger + trigger counters
   const statCards = document.querySelectorAll('.stat-card');

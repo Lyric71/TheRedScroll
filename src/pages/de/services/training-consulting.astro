@@ -1,0 +1,398 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+import FaqAccordion from '../../../components/sections/FaqAccordion.astro';
+import GettingStarted from '../../../components/sections/GettingStarted.astro';
+
+
+const faqs = [
+  { q: 'Was kostet das?', a: 'Hängt vom Umfang ab. Eine punktuelle Beratungssession beginnt im niedrigen vierstelligen Bereich. Ein über mehrere Wochen laufendes Projekt mit Deliverables kostet mehr. Trainings werden zum Pauschalpreis abgerechnet, je nach Dauer und Individualisierungsgrad. In jedem Fall liegt vor dem Start ein konkretes Angebot. Keine offene Abrechnung.' },
+  { q: 'Geht Training auch remote?', a: 'Für die meisten Formate sehr gut. Präsenz bleibt bei AIGC-Workshops vorzuziehen, wo die Praxis den Unterschied macht, doch Remote ist absolut machbar.' },
+  { q: 'Welche Gruppengröße?', a: 'Optimal sind 6 bis 15 Teilnehmer. Wir haben Sessions mit 3 wie mit fast 40 Personen geleitet. Das Format passen wir an der Gruppengröße aus: am besten vorab abstimmen.' },
+  { q: 'Sind die Trainings maßgeschneidert?', a: 'Jedes Mal. Wir bauen jede Session um Ihre Branche, Ihre Plattformen, Ihre Wettbewerber und den Stand Ihres Teams herum. Ein Vorbriefing geht der Sitzung stets voraus.' },
+  { q: 'Kann aus der Beratung eine laufende Begleitung werden?', a: 'Häufig. Manche Marken wechseln nach einem ersten Mandat in eine monatliche Kampagnensteuerung. Andere bevorzugen ein bis zwei Punkte pro Jahr und halten den Rest intern. Beide Schemata funktionieren.' },
+  { q: 'Gibt es plattformspezifische Trainings?', a: 'Ja. Werbeformate und Kampagnen-Setup auf Douyin. KOC-Aktivierung und Suchplatzierung auf RedNote. Official-Account-Strategie und Mini Programs auf WeChat. Als eigenständige Sessions oder eingebettet in ein größeres Programm.' },
+  { q: 'Wie funktioniert das Social Listening?', a: 'Im monatlichen Abo. Der Einstiegspunkt deckt in der Regel Ihre Marke und drei Wettbewerber auf zwei Plattformen ab. Erweiterung nach Bedarf.' },
+  { q: 'Macht ein Krisenplan ohne je erlebte Krise Sinn?', a: 'Genau das ist der richtige Moment. Die meisten Marken warten, bis ein Vorfall hochkocht, und suchen dann, was zu tun ist, während sich das Internet schon damit beschäftigt. Einen vorbereiteten Rahmen zu haben, heißt einen Plan ablaufen zu lassen, statt um 23 Uhr zu improvisieren.' },
+];
+
+const gettingStartedSteps = [
+  {
+    title: 'Erstgespräch.',
+    description: 'Ihr Team, seine Reibungspunkte und das, was Sie konkret vom Mandat erwarten.',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
+  },
+  {
+    title: 'Maßgeschneidertes Angebot.',
+    description: 'Format, Themen, Dauer, Deliverables. Auf Ihr Team und Ihre Ziele zugeschnitten.',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>',
+  },
+  {
+    title: 'Sessions in zwei Wochen.',
+    description: 'Briefing, Vorbereitung, Durchführung. Ihr Team geht mit direkt einsetzbaren Kompetenzen zurück an die Arbeit.',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
+  },
+];
+---
+
+<PageLayout
+  title="Beratung und Training Social Media China | TheRedScroll"
+  description="Strategieberatung, AIGC-Workshops, Social Listening, Wettbewerbsbeobachtung, KOL-Audits, Krisenpläne, Kampagnen-Trainings. Team in Shanghai."
+  lang="de"
+>
+
+  <!-- Hero -->
+  <section class="relative w-full overflow-hidden bg-[var(--color-ink)]">
+    <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/training-consulting-hero.png')" aria-hidden="true"></div>
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[1024px]:pt-[128px] max-[1024px]:pb-[72px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+        Training und Beratung
+      </p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[1024px]:text-[40px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        Den chinesischen Markt selbst beherrschen oder uns einen konkreten Fall lösen lassen.
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        Beratung für gezielte Entscheidungen. Training, damit Ihre Teams in der Tiefe besser werden. Beides von Praktikern, die täglich im Takt der chinesischen sozialen Netzwerke arbeiten.
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/de/contact">Gespräch vereinbaren</Button>
+        <Button variant="secondary-dark" href="#consulting">Unsere Leistungen</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why brands need this -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        <div class="relative col-span-2 row-span-2 max-[640px]:col-span-1 max-[640px]:row-span-1 bg-[#1A1A1A] rounded-[12px] p-[32px] max-[640px]:p-[20px] flex flex-col justify-between min-h-[320px] max-[640px]:min-h-0 overflow-hidden">
+          <svg class="absolute bottom-[-20px] right-[-20px] w-[260px] h-[260px] opacity-[0.06]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          <div class="relative z-[1]">
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Warum dieses Angebot</p>
+            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[16px]">Manche Marken suchen Expertise, keine zusätzlichen Hände.</h2>
+            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[400px]">Nicht jede Marke will outsourcen. Manche haben ihre Teams längst. Was fehlt, ist die Expertise-Schicht.</p>
+          </div>
+          <div class="relative z-[1] mt-[24px]">
+            <Button variant="secondary-dark" href="#what-we-do">Unsere Leistungen</Button>
+          </div>
+        </div>
+        <div class="relative overflow-hidden bg-[#F0F1F4] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Lücken auf den Plattformen</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">Wie die Plattformen wirklich ticken. Welche Formate tatsächlich Ergebnisse bringen, jenseits dessen, was in Meetings gut klingt. Wie sich KI in eine Produktionskette einklinken lässt.</p>
+        </div>
+        <div class="relative overflow-hidden bg-[#1A1A1A] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19.439 7.85c-.049.322.059.648.289.878l1.568 1.568c.47.47.706 1.087.706 1.704s-.235 1.233-.706 1.704l-1.611 1.611a.98.98 0 0 1-.837.276c-.47-.07-.802-.48-.968-.925a2.501 2.501 0 1 0-3.214 3.214c.446.166.855.497.925.968a.979.979 0 0 1-.276.837l-1.61 1.61a2.404 2.404 0 0 1-1.705.707 2.402 2.402 0 0 1-1.704-.706l-1.568-1.568a1.026 1.026 0 0 0-.877-.29c-.493.074-.84.504-1.02.968a2.5 2.5 0 1 1-3.237-3.237c.464-.18.894-.527.967-1.02a1.026 1.026 0 0 0-.289-.877l-1.568-1.568A2.402 2.402 0 0 1 1.998 12c0-.617.236-1.234.706-1.704L4.23 8.77c.24-.24.581-.353.917-.303.515.077.877.528 1.073 1.01a2.5 2.5 0 1 0 3.259-3.259c-.482-.196-.933-.558-1.01-1.073-.05-.336.062-.676.303-.917l1.525-1.525A2.402 2.402 0 0 1 12 1.998c.617 0 1.234.236 1.704.706l1.568 1.568c.23.23.556.338.877.29.493-.074.84-.504 1.02-.969a2.5 2.5 0 1 1 3.237 3.237c-.464.18-.894.527-.967 1.02z"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Konkrete Probleme</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.6)]">Kennzahlen, die nach einem Jahr Posten nicht mehr klettern. Ein Bruch mit der Agentur. Ein KOL-Budget, vielleicht überdimensioniert, ohne Daten zum Beleg.</p>
+        </div>
+        <div class="relative overflow-hidden bg-[#CC3333] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Eine Praktiker-Sicht</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.8)]">Unser Team steuert Kampagnen Tag für Tag. Unsere Empfehlungen stammen aus dem, was diesen Monat funktioniert, auf den Plattformen, auf denen wir tatsächlich arbeiten.</p>
+        </div>
+        <div class="relative overflow-hidden bg-[#E8E0D8] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Ein flexibler Rahmen</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">Eine punktuelle Strategie-Session oder ein mehrwöchiges Projekt. Manche Marken hängen anschließend ein monatliches Mandat dran. Andere kommen einmal im Jahr. Wir richten uns nach Ihrem Takt.</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Consulting services -->
+  <section id="consulting" class="mt-[96px] max-[640px]:mt-[64px] scroll-mt-[76px]">
+    <Container>
+      <SectionBar />
+      <SectionHeading overline="Beratung">Unsere Beratungsmandate</SectionHeading>
+
+      <div class="rounded-[12px] overflow-hidden mt-[24px]">
+        <img src="/images/what-we-do/consulting-cyril.png" alt="Cyril Drouin im Beratungsgespräch mit Kunden in einem Meetingraum" class="w-full aspect-[5/2] max-[640px]:aspect-[16/10] object-cover" loading="lazy" decoding="async" />
+      </div>
+
+      <div class="flex gap-[2px] mt-[24px] h-[400px] max-[640px]:flex-col max-[640px]:h-auto" data-col-accordion>
+
+        <div class="col-panel is-active rounded-l-[10px] max-[640px]:rounded-l-none max-[640px]:rounded-t-[10px]" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">Strategieberatung</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Strategieberatung</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Plattformwahl, redaktionelle Planung, Kampagnenarchitektur, KOL-Strategie, Social Commerce, Positionierung gegenüber dem Wettbewerb. In punktueller Session oder über ein mehrwöchiges Projekt. Jedes Mandat endet mit einem direkt einsetzbaren Dokument.</p>
+          </div>
+        </div>
+
+        <div class="col-panel" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">Content- und AIGC-Beratung</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Content- und AIGC-Beratung</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Wir auditieren Ihre Produktionskette und identifizieren, wo KI das Tempo erhöht, ohne die Qualität zu beschneiden. Prompt-Frameworks, individuelles Modelltraining, Tool-Auswahl. Die Frage lautet nicht mehr, ob, sondern wie.</p>
+          </div>
+        </div>
+
+        <div class="col-panel" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">Performance-Audits</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Performance-Audits</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Konten, Inhalte, Engagement-Raten, Werbeausgaben, KOL-Kooperationen, Wettbewerbsposition. Ein schriftlicher Bericht: was funktioniert, wo es klemmt, was zu korrigieren ist. Für die interne Steuerung oder als Vorgabe an Ihre Agentur.</p>
+          </div>
+        </div>
+
+        <div class="col-panel" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">Social Listening</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Social Listening</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Markennennungen, Tonalität der Konversationen, aufkommende Themen, Wettbewerbsaktivität auf RedNote, Douyin, WeChat, Weibo und Zhihu. Automatisierte Tools, ergänzt durch manuelle Prüfung unseres Teams in Shanghai.</p>
+          </div>
+        </div>
+
+        <div class="col-panel" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">Wettbewerbsbeobachtung</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Wettbewerbsbeobachtung</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Monatliche oder quartalsweise Berichte zu Ihren 5 bis 10 wichtigsten Wettbewerbern: redaktionelle Linien, Veröffentlichungstakt, Engagement-Dynamik, KOL-Kooperationen, Werbeaktivitäten, jüngste Launches.</p>
+          </div>
+        </div>
+
+        <div class="col-panel rounded-r-[10px] max-[640px]:rounded-r-none max-[640px]:rounded-b-[10px]" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">KOL-Risikoprüfung</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">KOL-Risikoprüfung</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Vorabprüfung vor jeder Zusammenarbeit mit einem KOL oder einer Celebrity. Frühere Kontroversen, politische Sensibilitäten, Markenkonflikte, Fake-Follower, tatsächliche Audience-Qualität.</p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- PR Crisis Playbook -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="bg-[#1A1A1A] rounded-[12px] p-[48px] max-[1024px]:p-[32px] max-[640px]:p-[32px_20px]">
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">Krisenmanagement</p>
+        <h2 class="text-[#FFFFFF] text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] mb-[16px]">Der beste Zeitpunkt für einen Krisenplan ist, bevor man ihn braucht.</h2>
+        <div class="max-w-[680px] flex flex-col gap-[24px]">
+          <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+            Was tun, wenn eine KOL-Kooperation aus dem Ruder läuft. Wie reagieren, wenn ein Produkt auf RedNote aus den falschen Gründen Aufmerksamkeit zieht. Welche Eskalationsschiene aktivieren, wenn ein kultureller Fauxpas auf Weibo viral geht.
+          </p>
+          <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+            Monitoring-Trigger, Antwortvorlagen, Eskalationsprotokolle, plattformspezifische Vorgaben. Wir richten das Dispositiv einmal sauber ein, Sie halten es griffbereit und ziehen es am Tag X. Wenn die Lage den Rahmen der sozialen Netzwerke sprengt, vermitteln wir an Krisenagenturen, die genau dafür da sind.
+          </p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Training programs -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <SectionBar />
+      <SectionHeading overline="Training">Trainingsprogramme</SectionHeading>
+
+      <div class="rounded-[12px] overflow-hidden mt-[24px]">
+        <img src="/images/what-we-do/training-liyan.png" alt="Liyan Ye leitet einen Trainingsworkshop" class="w-full aspect-[5/2] max-[640px]:aspect-[16/10] object-cover" loading="lazy" decoding="async" />
+      </div>
+
+      <div class="flex gap-[2px] mt-[24px] h-[400px] max-[640px]:flex-col max-[640px]:h-auto" data-col-accordion>
+
+        <div class="col-panel is-active rounded-l-[10px] max-[640px]:rounded-l-none max-[640px]:rounded-t-[10px]" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">Überblick über die sozialen Netzwerke</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Überblick über die sozialen Netzwerke</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[12px]">Für Teams, die in den Markt einsteigen, oder für alle, die eine strukturierte Gesamtansicht wollen. Wichtige Plattformen, Nutzerprofile, Content-Formate, Werbeinstrumente und wie das alles zusammengreift. Praxis-Cases aus dem Feld und ein Wettbewerbsüberblick für Ihre Branche.</p>
+            <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] opacity-[0.7]">Halbtags oder ganztags. Präsenz oder Remote. Für Marketingteams, Geschäftsführung, Markenverantwortliche.</p>
+          </div>
+        </div>
+
+        <div class="col-panel" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">Kampagnen aufsetzen und steuern</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Kampagnen aufsetzen und steuern</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[12px]">Vom Briefing bis zur Nachbetrachtung. Redaktionspläne, plattformgerechte Produktion, KOL-Auswahl, Werbe-Setup, Ergebnismessung. Die Teilnehmer verlassen den Raum mit einem Rohentwurf eines Kampagnenplans für die eigene Marke.</p>
+            <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] opacity-[0.7]">Ein bis zwei Tage, Praxisformat. Für Social-Media-Verantwortliche, Content-Teams, Teams in Agenturbeziehungen.</p>
+          </div>
+        </div>
+
+        <div class="col-panel" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">AIGC integrieren</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">AIGC in die Content-Produktion integrieren</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[12px]">Die aktuellen KI-Tools für Text, Bild und Video. Prompt Engineering. Training eigener Modelle. Aufbau von Produktionsstrecken in Volumen. Qualitätskontrolle. Einhaltung der Kennzeichnungspflicht für KI-Inhalte (seit September 2025 in Kraft).</p>
+            <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] opacity-[0.7]">Halb- bis ganztags, mit Live-Demos. Für Content-Produzenten, Art Director, Produktionsleitung.</p>
+          </div>
+        </div>
+
+        <div class="col-panel rounded-r-[10px] max-[640px]:rounded-r-none max-[640px]:rounded-b-[10px]" data-col-panel>
+          <div class="col-label">
+            <span class="col-label-text">Live-Commerce</span>
+          </div>
+          <div class="col-content">
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Live-Commerce</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[12px]">Wie man live verkauft. Plattformwahl (Douyin, Taobao Live, WeChat Channels). Host-Training, Skripterstellung, Produktdramaturgie, Flash-Sale-Mechaniken, Echtzeit-Interaktion. Wir sezieren die derzeit erfolgreichsten Sessions und das, was sie zum Erfolg gemacht hat.</p>
+            <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] opacity-[0.7]">Halbtags mit Video-Cases und Planungs-Übungen. Für E-Commerce-Teams, Markenverantwortliche, Marketing-Direktoren.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <style>
+        .col-panel {
+          position: relative;
+          flex: 0 0 56px;
+          background: var(--color-rice-paper);
+          cursor: pointer;
+          overflow: hidden;
+          transition: flex 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .col-panel.is-active {
+          flex: 1 1 0%;
+          cursor: default;
+        }
+        .col-label {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          opacity: 1;
+          transition: opacity 0.3s ease;
+        }
+        .col-panel.is-active .col-label {
+          opacity: 0;
+          pointer-events: none;
+        }
+        .col-label-text {
+          writing-mode: vertical-rl;
+          text-orientation: mixed;
+          transform: rotate(180deg);
+          font-size: 14px;
+          font-weight: 500;
+          color: var(--color-ink);
+          white-space: nowrap;
+          letter-spacing: 0.02em;
+        }
+        .col-content {
+          position: absolute;
+          inset: 0;
+          padding: 32px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          opacity: 0;
+          transition: opacity 0.35s ease 0.15s;
+        }
+        .col-panel.is-active .col-content {
+          opacity: 1;
+        }
+        .col-panel.is-active::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 15%;
+          bottom: 15%;
+          width: 3px;
+          background: var(--color-vermillion);
+          border-radius: 0 2px 2px 0;
+        }
+        .col-panel:not(.is-active):hover {
+          background: var(--color-warm-gray);
+        }
+        @media (max-width: 640px) {
+          .col-panel {
+            flex: 0 0 48px;
+          }
+          .col-panel.is-active {
+            flex: 0 0 auto;
+            min-height: 200px;
+          }
+          .col-label-text {
+            writing-mode: horizontal-tb;
+            transform: none;
+            font-size: 13px;
+          }
+          .col-content {
+            position: relative;
+            padding: 20px;
+          }
+          .col-panel.is-active::before {
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            height: auto;
+          }
+        }
+      </style>
+
+      <script>
+        document.querySelectorAll('[data-col-accordion]').forEach((accordion) => {
+          const panels = accordion.querySelectorAll('[data-col-panel]');
+          panels.forEach((panel) => {
+            panel.addEventListener('click', () => {
+              if (panel.classList.contains('is-active')) return;
+              panels.forEach((p) => p.classList.remove('is-active'));
+              panel.classList.add('is-active');
+            });
+          });
+        });
+      </script>
+    </Container>
+  </section>
+
+  <!-- Case study -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <a href="/de/work/langnese" class="block bg-[var(--color-rice-paper)] rounded-[10px] p-[48px] max-[1024px]:p-[32px] max-[640px]:p-[32px_20px] group">
+        <div class="flex gap-[48px] max-[768px]:flex-col items-center">
+          <div class="flex-1 min-w-0">
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[12px]">Case Study</p>
+            <h3 class="text-[24px] max-[640px]:text-[20px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[12px]">Langnese: Deutschlands führende Honigmarke für China neu positioniert</h3>
+            <p class="text-[15px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[20px]">Die in Deutschland führende Honigmarke brauchte eine schärfere Positionierung für den chinesischen Markt. Ein in neun Säulen strukturierter Rahmen erschloss neue Kanäle, neue Zielgruppen und eine echte Wachstumsdynamik.</p>
+            <span class="text-[14px] font-medium text-[var(--color-vermillion)] group-hover:underline">Case Study lesen →</span>
+          </div>
+          <img
+            src="/images/clients/Langnese/Langnese-Honey.png"
+            alt="Langnese-Honigsortiment für den chinesischen Markt"
+            class="w-[45%] max-[768px]:w-full aspect-[16/10] object-cover rounded-[10px]"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </a>
+    </Container>
+  </section>
+
+  <GettingStarted
+    lang="de"
+    heading="Vom ersten Anruf bis zur ausgelieferten Schulung: zwei Wochen."
+    steps={gettingStartedSteps}
+    backgroundImage="/images/getting-started/training-consulting.png"
+    crossLinks={[
+      { label: 'Strategie und Kampagnen', href: '/de/services/strategy-campaigns' },
+      { label: 'Content-Produktion', href: '/de/services/content-production' },
+      { label: 'Markteintritt', href: '/de/services/market-entry' },
+    ]}
+  />
+
+  <FaqAccordion lang="de" faqs={faqs} subtitle="Alles, was Sie wissen sollten, bevor Sie TheRedScroll für ein Beratungs- oder Trainingsmandat ansprechen." />
+</PageLayout>

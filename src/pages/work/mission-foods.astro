@@ -4,6 +4,7 @@ import Container from '../../components/ui/Container.astro';
 import SectionBar from '../../components/ui/SectionBar.astro';
 import SectionHeading from '../../components/ui/SectionHeading.astro';
 import Button from '../../components/ui/Button.astro';
+import { caseStudySchema } from '../../lib/schema';
 
 const services = ['Campaign', 'eCommerce', 'Influencer / KOL', 'Livestream', 'Media', 'Social'];
 const platforms = ['WeChat', 'RedNote', 'Weibo'];
@@ -13,6 +14,15 @@ const platforms = ['WeChat', 'RedNote', 'Weibo'];
   title="Mission Foods China Social Media Case Study | TheRedScroll"
   description="How Mission Foods launched corn chips in China using WeChat, RedNote, and Weibo. Gen Z social campaigns, food pairing content, and community growth."
   ogImage="/images/clients/MissionFoods/head-pic.jpg"
+  schema={caseStudySchema({
+    clientName: 'Mission Foods',
+    headline: 'Mission Foods: launching an unfamiliar food category in China',
+    description: 'How Mission Foods launched corn chips into the Chinese market via WeChat, RedNote, and Weibo with Gen Z social campaigns and food pairing content.',
+    url: '/work/mission-foods',
+    image: '/images/clients/MissionFoods/head-pic.jpg',
+    industry: 'Food / FMCG',
+    platforms,
+  })}
 >
 
   <!-- Hero -->

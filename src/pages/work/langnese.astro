@@ -4,6 +4,7 @@ import Container from '../../components/ui/Container.astro';
 import SectionBar from '../../components/ui/SectionBar.astro';
 import SectionHeading from '../../components/ui/SectionHeading.astro';
 import Button from '../../components/ui/Button.astro';
+import { caseStudySchema } from '../../lib/schema';
 
 const services = ['Consulting', 'Strategy', 'Social', 'Content'];
 const platforms = ['RedNote', 'Douyin', 'WeChat', 'Tmall'];
@@ -13,6 +14,15 @@ const platforms = ['RedNote', 'Douyin', 'WeChat', 'Tmall'];
   title="Langnese China Consulting Case Study | TheRedScroll"
   description="How TheRedScroll repositioned Germany's top honey brand for growth in China. Consumer research, new positioning, and a social strategy built for Chinese platforms."
   ogImage="/images/clients/Langnese/Langnese-Honey.png"
+  schema={caseStudySchema({
+    clientName: 'Langnese',
+    headline: 'Langnese: repositioning a German honey brand for China',
+    description: 'How TheRedScroll repositioned Germany\'s top honey brand for growth in China through consumer research, new positioning, and a social strategy built for Chinese platforms.',
+    url: '/work/langnese',
+    image: '/images/clients/Langnese/Langnese-Honey.png',
+    industry: 'Food / FMCG',
+    platforms,
+  })}
 >
 
   <!-- Hero -->

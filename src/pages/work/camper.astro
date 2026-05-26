@@ -4,6 +4,7 @@ import Container from '../../components/ui/Container.astro';
 import SectionBar from '../../components/ui/SectionBar.astro';
 import SectionHeading from '../../components/ui/SectionHeading.astro';
 import Button from '../../components/ui/Button.astro';
+import { caseStudySchema } from '../../lib/schema';
 
 const services = ['Campaign', 'Content Production', 'Influencer / KOL', 'Social'];
 const platforms = ['WeChat', 'RedNote', 'Weibo'];
@@ -20,6 +21,15 @@ const stats = [
   title="Camper China Social Media Case Study | TheRedScroll"
   description="How Camper grew from 43K to 187K followers on WeChat, RedNote, and Weibo. Social strategy that drove 31% same-store sales growth in Chinese cities."
   ogImage="/images/clients/Camper/Camper-Case-Study-Hero.jpg"
+  schema={caseStudySchema({
+    clientName: 'Camper',
+    headline: 'Camper: growing a design brand on China\'s social platforms',
+    description: 'Camper grew from 43K to 187K followers on WeChat, RedNote, and Weibo, driving 31% same-store sales growth across 18 months.',
+    url: '/work/camper',
+    image: '/images/clients/Camper/Camper-Case-Study-Hero.jpg',
+    industry: 'Fashion / Footwear',
+    platforms,
+  })}
 >
 
   <!-- Hero -->

@@ -74,34 +74,65 @@ const pillars = lang === 'de' ? [
     stat: '3.5T', statLabel: '抖音 GMV（元）',
     image: '/images/ecosystem/commerce.png',
   },
+] : lang === 'es' ? [
+  {
+    title: 'Audiencia.',
+    description: 'Mil millones de usuarios repartidos en decenas de plataformas, cada una con sus códigos. Primero el público, después el canal. Hacerlo al revés sale caro.',
+    stat: '1B+', statLabel: 'usuarios',
+    image: '/images/ecosystem/audience.png',
+  },
+  {
+    title: 'Contenido.',
+    description: 'Lo que arrasa en Douyin pasa inadvertido en WeChat. Cada plataforma impone su ritmo y su lenguaje. Producimos pieza a pieza para cada una.',
+    stat: '18+', statLabel: 'plataformas',
+    image: '/images/ecosystem/content.png',
+  },
+  {
+    title: 'Influencers.',
+    description: 'Los KOL y los KOC mueven la decisión de compra más que la publicidad clásica. Perfil adecuado, plataforma adecuada, momento adecuado. Lo demás se evapora.',
+    stat: '80%', statLabel: 'confía en los KOL',
+    image: '/images/ecosystem/influencers.png',
+  },
+  {
+    title: 'Plataformas.',
+    description: 'WeChat, Douyin, RedNote, Weibo y catorce redes más. Los algoritmos cambian de mes en mes. Aguantar el pulso exige un equipo encima a diario.',
+    stat: '14+', statLabel: 'plataformas más',
+    image: '/images/ecosystem/platforms.png',
+  },
+  {
+    title: 'Comercio.',
+    description: 'En China la compra se cierra sin salir del feed. Las redes sociales no sirven para descubrir productos, sirven para venderlos. El contenido es la caja.',
+    stat: '3.5T', statLabel: 'RMB GMV Douyin',
+    image: '/images/ecosystem/commerce.png',
+  },
 ] : lang === 'fr' ? [
   {
     title: 'Audience.',
-    description: 'Un milliard d\'internautes répartis sur des dizaines de plateformes, chacune avec ses codes. La cible se définit avant le canal. L\'inverse coûte cher.',
+    description: 'Un milliard d\'internautes éparpillés sur des dizaines de plateformes, chacune avec ses propres codes. La cible précède le canal ; l\'ordre inverse coûte cher.',
     stat: '1B+', statLabel: 'utilisateurs',
     image: '/images/ecosystem/audience.png',
   },
   {
     title: 'Contenu.',
-    description: 'Un format viral sur Douyin passe inaperçu sur WeChat. Chaque plateforme impose son rythme et son écriture. Nous produisons sur mesure pour chacune.',
+    description: 'Un format viral sur Douyin passe inaperçu sur WeChat. Chaque plateforme impose son tempo et son écriture. Nous produisons à la mesure de chacune.',
     stat: '18+', statLabel: 'plateformes',
     image: '/images/ecosystem/content.png',
   },
   {
     title: 'Influenceurs.',
-    description: 'Les KOL et les KOC orientent la décision d\'achat plus sûrement que la publicité classique. Bon profil, bonne plateforme, bon moment. Le reste relève du gaspillage.',
+    description: 'Les KOL et les KOC orientent la décision d\'achat avec une force que la publicité classique n\'égale pas. Bon profil, bonne plateforme, bon moment ; le reste relève du gaspillage.',
     stat: '80%', statLabel: 'font confiance aux KOL',
     image: '/images/ecosystem/influencers.png',
   },
   {
     title: 'Plateformes.',
-    description: 'WeChat, Douyin, RedNote, Weibo, plus quatorze autres réseaux. Les algorithmes évoluent chaque mois. Suivre cette cadence exige une équipe présente au jour le jour.',
+    description: 'WeChat, Douyin, RedNote, Weibo, et quatorze autres réseaux. Les algorithmes se redéfinissent chaque mois. Tenir cette cadence suppose une équipe présente au jour le jour.',
     stat: '14+', statLabel: 'autres plateformes',
     image: '/images/ecosystem/platforms.png',
   },
   {
     title: 'Commerce.',
-    description: 'En Chine, l\'achat se conclut sans quitter le fil. Les réseaux sociaux ne servent pas à découvrir un produit, ils servent à le vendre. Le contenu fait directement la caisse.',
+    description: 'En Chine, la transaction se boucle sans quitter le fil. Les réseaux sociaux ne servent pas à découvrir un produit, ils servent à le vendre. Le contenu se confond avec la caisse.',
     stat: '3.5T', statLabel: 'RMB GMV Douyin',
     image: '/images/ecosystem/commerce.png',
   },
@@ -143,16 +174,16 @@ const sectionText = lang === 'de' ? {
   sub: 'Zielgruppe, Content, Influencer, Plattformen, Commerce: alles greift ineinander. Auf einer Achse allein gewinnt niemand.',
   cta: 'Gespräch vereinbaren',
 } : lang === 'es' ? {
-  heading: 'Las redes sociales chinas no son un canal. Son un ecosistema entero.',
-  sub: 'Audiencia, contenido, influencers, plataformas y comercio se sostienen mutuamente. Ningún eje funciona por separado.',
+  heading: 'Las redes sociales chinas no son un canal. Son toda una industria.',
+  sub: 'Audiencia, contenido, influencers, plataformas y venta van engranados. Si falta una pieza, no gira la rueda.',
   cta: 'Reservar una llamada',
 } : lang === 'zh' ? {
   heading: '中国社媒不是一个渠道，而是一整套生意。',
   sub: '人群、内容、达人、平台、电商，五环相扣。单点猛砸做不起来，整条链路必须一起跑。',
   cta: '预约通话',
 } : lang === 'fr' ? {
-  heading: 'Les réseaux sociaux chinois ne forment pas un canal. Ils dessinent un écosystème entier.',
-  sub: 'Audience, contenu, influenceurs, plateformes, commerce : tout se tient. Aucun axe ne fonctionne sans les autres.',
+  heading: 'Les réseaux sociaux chinois ne forment pas un canal. Ils dessinent un écosystème à part entière.',
+  sub: 'Audience, contenu, influenceurs, plateformes, commerce : chaque maillon dépend des autres. Aucun axe ne tient seul.',
   cta: 'Prendre rendez-vous',
 } : {
   heading: 'Chinese social media is not a channel. It\'s an ecosystem.',
@@ -200,7 +231,7 @@ const sectionText = lang === 'de' ? {
             <div class="relative z-[1] p-[28px] max-[640px]:p-[20px]">
               <!-- Counter stat -->
               <div class="flex items-baseline gap-[6px] mb-[12px]">
-                <span class="text-[32px] max-[640px]:text-[24px] text-[#FFFFFF] font-medium leading-none ecosystem-counter" data-target={pillar.stat}>0</span>
+                <span class="text-[32px] max-[640px]:text-[24px] text-[#FFFFFF] font-medium leading-none ecosystem-counter" data-target={pillar.stat}>{pillar.stat}</span>
                 <span class="text-[12px] text-[rgba(255,255,255,0.5)] font-normal">{pillar.statLabel}</span>
               </div>
               <h3 class="text-[20px] max-[640px]:text-[16px] text-[#FFFFFF] font-medium leading-[1.3] mb-[8px]">
@@ -242,6 +273,12 @@ const sectionText = lang === 'de' ? {
 </style>
 
 <script>
+  // Reset counters to 0 before animation. Static HTML renders the real target value
+  // so crawlers see the actual number; JS overrides to 0 here for the count-up effect.
+  document.querySelectorAll<HTMLElement>('.ecosystem-counter').forEach((el) => {
+    el.textContent = '0';
+  });
+
   // Drag to scroll
   const scrollContainer = document.getElementById('ecosystem-scroll');
   if (scrollContainer) {

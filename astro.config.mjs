@@ -6,6 +6,17 @@ import tailwindcss from '@tailwindcss/vite';
 import vercel from '@astrojs/vercel';
 import sitemap from '@astrojs/sitemap';
 
+// Must mirror availableLangs in src/i18n/config.ts. When a locale is added
+// here, also add it to availableLangs (and vice versa) so hreflang emission
+// and sitemap inclusion stay in sync.
+const AVAILABLE_LOCALES = ['en', 'fr', 'zh'];
+const localeGatePattern = new RegExp(`^/(?!${AVAILABLE_LOCALES.filter((l) => l !== 'en').join('|')}/)[a-z]{2}/`);
+/** @param {string} page */
+const sitemapLocaleFilter = (page) => {
+  const path = page.replace(/^https?:\/\/[^/]+/, '') || '/';
+  return !localeGatePattern.test(path);
+};
+
 /** @type {import('astro').AstroIntegration} */
 const sitemapAlias = {
   name: 'sitemap-alias',
@@ -28,12 +39,15 @@ export default defineConfig({
   }),
   integrations: [
     sitemap({
-      filter: (page) =>
-        !['/thank-you/', '/cookie-policy/', '/terms-of-service/', '/privacy-policy/',
+      filter: (page) => {
+        if (!sitemapLocaleFilter(page)) return false;
+        const lowValuePaths = [
+          '/thank-you/', '/cookie-policy/', '/terms-of-service/', '/privacy-policy/',
           '/fr/thank-you/', '/fr/cookie-policy/', '/fr/terms-of-service/', '/fr/privacy-policy/',
-          '/zh/thank-you/', '/zh/cookie-policy/', '/zh/terms-of-service/', '/zh/privacy-policy/'].some(
-          (path) => page.endsWith(path)
-        ),
+          '/zh/thank-you/', '/zh/cookie-policy/', '/zh/terms-of-service/', '/zh/privacy-policy/',
+        ];
+        return !lowValuePaths.some((path) => page.endsWith(path));
+      },
       changefreq: 'weekly',
       priority: 0.7,
       lastmod: new Date(),
@@ -42,7 +56,7 @@ export default defineConfig({
         locales: {
           en: 'en',
           fr: 'fr',
-          zh: 'zh',
+          zh: 'zh-Hans',
         },
       },
     }),

@@ -1,0 +1,28 @@
+---
+import type { Lang } from '../../i18n/config';
+
+interface Props {
+  date: string;
+  variant?: 'light' | 'dark';
+  lang?: Lang;
+  class?: string;
+}
+
+const { date, variant = 'dark', lang = 'en', class: className = '' } = Astro.props;
+
+const colorClass = variant === 'light' ? 'text-[rgba(255,255,255,0.55)]' : 'text-[#8A8580]';
+
+const labels: Record<Lang, (d: string) => string> = {
+  en: (d) => `Updated ${d}`,
+  fr: (d) => `Mis à jour en ${d}`,
+  zh: (d) => `更新于 ${d}`,
+  de: (d) => `Aktualisiert ${d}`,
+  es: (d) => `Actualizado en ${d}`,
+};
+
+const renderLabel = labels[lang] ?? labels.en;
+---
+
+<p class={`text-[11px] font-normal tracking-[0.02em] leading-[1.2] ${colorClass} ${className}`}>
+  {renderLabel(date)}
+</p>

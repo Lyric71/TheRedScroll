@@ -4,6 +4,7 @@ import Container from '../../components/ui/Container.astro';
 import SectionBar from '../../components/ui/SectionBar.astro';
 import SectionHeading from '../../components/ui/SectionHeading.astro';
 import Button from '../../components/ui/Button.astro';
+import { caseStudySchema } from '../../lib/schema';
 
 const services = ['Campaign', 'eCommerce', 'Influencer / KOL', 'Livestream', 'Media', 'Social'];
 const platforms = ['Douyin', 'RedNote', 'WeCom', 'Tmall', 'JD'];
@@ -13,6 +14,15 @@ const platforms = ['Douyin', 'RedNote', 'WeCom', 'Tmall', 'JD'];
   title="Viessmann China Social Commerce Case Study | TheRedScroll"
   description="How Viessmann used Douyin, RedNote, and WeCom to drive eCommerce sales in China. Social media strategy, KOL campaigns, and livestream results."
   ogImage="/images/clients/Viessmann/Viessman-climate-solution.avif"
+  schema={caseStudySchema({
+    clientName: 'Viessmann',
+    headline: 'Viessmann: turning social into a social commerce funnel in China',
+    description: 'How Viessmann used Douyin, RedNote, and WeCom to drive eCommerce sales in China through social media strategy, KOL campaigns, and livestream activation.',
+    url: '/work/viessmann',
+    image: '/images/clients/Viessmann/Viessman-climate-solution.avif',
+    industry: 'Climate Solutions / Home Appliances',
+    platforms,
+  })}
 >
 
   <!-- Hero -->

@@ -1,0 +1,671 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+
+const platforms = [
+  {
+    name: 'Bilibili',
+    chineseName: 'B站',
+    mau: '366M',
+    audience: 'GenZ urbana y con estudios. El 78 % tiene menos de 35 años',
+    category: 'Vídeo y comunidad',
+    description: 'La gran referencia china del vídeo largo. Nacida en el mundo del anime y los videojuegos, Bilibili se ha extendido a tech, educación, belleza y automoción. Siete de cada diez jóvenes chinos tienen cuenta. Aquí no se hace scroll a clips en bucle. Uno se sienta y mira. Duración mediana de una sesión: 107 minutos.',
+    detail: 'Bilibili tuvo sus primeros beneficios en 2025. Los ingresos publicitarios subieron un 27 % interanual. El danmu, esos comentarios que se superponen al vídeo en tiempo real, convierte el visionado en una experiencia casi colectiva.',
+    bestFor: 'Tech, videojuegos, educación, belleza, automoción. Formatos potentes: análisis a fondo, tutoriales, series de unboxing, colaboraciones con UP主 (los creadores nativos de Bilibili).',
+    image: '/images/platforms/additional-platforms/bilibili.png',
+    logo: '/images/platforms/bilibili-logo.svg',
+    brandColor: '#00A1D6',
+    bg: '#F7F2EE', iconBg: '#E8E0D8', textColor: '#1A1A1A', descColor: '#5C5C5C', linkColor: '#CC3333',
+  },
+  {
+    name: 'Kuaishou',
+    chineseName: '快手',
+    mau: '731M',
+    audience: 'Muy amplia. Gran presencia en ciudades de tercer y cuarto nivel',
+    category: 'Vídeo y comunidad',
+    description: 'La China de las provincias, 731 millones de usuarios al mes. La audiencia vive sobre todo en ciudades de niveles 3 a 5 y rehúye los vídeos de marca demasiado pulidos. La cultura Laotie, literalmente «el viejo colega», premia a los creadores que publican con regularidad y hablan sin artificio.',
+    detail: 'Una cifra que pocas marcas extranjeras tienen vista: los mayores de 40 años representan el 47 % del gasto e-commerce en Kuaishou. Un segmento entero que el mercado internacional casi ignora.',
+    bestFor: 'Gran consumo, alimentación, agricultura, marcas que apuntan más allá de las metrópolis de primer y segundo nivel. Formatos potentes: live commerce, demos de producto, visitas a fábrica.',
+    image: '/images/platforms/additional-platforms/kuaishou.png',
+    logo: '/images/platforms/kuaishou-logo.svg',
+    brandColor: '#FF4906',
+    bg: '#1A1A1A', iconBg: 'rgba(255,255,255,0.1)', textColor: '#FFFFFF', descColor: 'rgba(255,255,255,0.6)', linkColor: '#CC3333',
+  },
+  {
+    name: 'Zhihu',
+    chineseName: '知乎',
+    mau: '~83M',
+    audience: 'Mandos y profesionales. Más del 80 % con estudios superiores',
+    category: 'Texto y conocimiento',
+    description: 'El Quora chino, primera plataforma de preguntas y respuestas del país. Más del 80 % de sus usuarios tiene estudios superiores. En el segundo trimestre de 2025, el 59 % son mujeres. El contenido lo indexa Baidu y sigue generando tráfico meses después de su publicación. En Douyin un post desaparece en 48 horas. En Zhihu se valoriza con el tiempo.',
+    detail: 'Unos 83 millones de usuarios al mes. Audiencia más estrecha, pero lectores que se meten a fondo antes de sacar la tarjeta. De ellos, 14,2 millones pagan por contenido premium.',
+    bestFor: 'B2B, servicios profesionales, educación, tech, salud, lujo. Formatos potentes: respuestas de experto, análisis sectoriales, casos de estudio.',
+    image: '/images/platforms/additional-platforms/zhihu.png',
+    logo: '/images/platforms/zhihu-logo.svg',
+    brandColor: '#0066FF',
+    bg: '#CC3333', iconBg: 'rgba(255,255,255,0.2)', textColor: '#FFFFFF', descColor: 'rgba(255,255,255,0.8)', linkColor: '#FFFFFF',
+  },
+  {
+    name: 'Toutiao',
+    chineseName: '今日头条',
+    mau: '410M',
+    audience: 'Lectores de actualidad. De 25 a 35 años',
+    category: 'Texto y conocimiento',
+    description: 'La app de noticias algorítmica de ByteDance, 410 millones de usuarios al mes. El feed se construye por interés, no por número de seguidores. Una marca sin un solo seguidor puede llegar a millones de lectores con su primer artículo, si encuentra a su público.',
+    detail: 'Abrir cuenta se juega en los detalles, y las suspensiones llegan rápido. Hace falta un equipo que ya conozca las reglas antes de empezar.',
+    bestFor: 'B2B, industria, tech, lanzamientos de producto.',
+    image: '/images/platforms/additional-platforms/toutiao.png',
+    logo: '/images/platforms/toutiao-logo.svg',
+    brandColor: '#ED1C24',
+    bg: '#E8E0D8', iconBg: '#FFFFFF', textColor: '#1A1A1A', descColor: '#5C5C5C', linkColor: '#CC3333',
+  },
+  {
+    name: 'Baidu Tieba',
+    chineseName: '百度贴吧',
+    mau: '300M',
+    audience: 'Comunidades temáticas muy activas',
+    category: 'Texto y conocimiento',
+    description: 'Uno de los foros más antiguos de China, directamente vinculado al buscador dominante. Organizado por palabra clave, al estilo de Reddit, reúne 300 millones de usuarios al mes. Cada hilo lo indexa Baidu: una presencia activa construye a la vez la confianza de la comunidad y la visibilidad orgánica.',
+    detail: '',
+    bestFor: 'Electrónica de consumo, videojuegos, automoción, marcas con comunidades de nicho.',
+    image: '/images/platforms/additional-platforms/baidu-tieba.png',
+    logo: '/images/platforms/baidu-tieba-logo.svg',
+    brandColor: '#4879BD',
+    bg: '#F7F2EE', iconBg: '#E8E0D8', textColor: '#1A1A1A', descColor: '#5C5C5C', linkColor: '#CC3333',
+  },
+  {
+    name: 'Meituan/Dianping',
+    chineseName: '美团/大众点评',
+    mau: '770M+',
+    audience: 'Restauración, viajes y servicios de proximidad',
+    category: 'Comercio y lifestyle',
+    description: 'La primera plataforma de servicios locales en China. Más de 770 millones de usuarios al año, 14,5 millones de comercios listados. Dianping es el reflejo natural antes de abrir la puerta de un restaurante o de un hotel. Un perfil cuidado trae clientes. Un perfil descuidado los manda al de al lado.',
+    detail: '',
+    bestFor: 'Hostelería, restauración, belleza, bienestar, turismo, puntos de venta físicos.',
+    image: '/images/platforms/additional-platforms/meituan.png',
+    logo: '/images/platforms/meituan-logo.svg',
+    brandColor: '#FFD100',
+    bg: '#1A1A1A', iconBg: 'rgba(255,255,255,0.1)', textColor: '#FFFFFF', descColor: 'rgba(255,255,255,0.6)', linkColor: '#CC3333',
+  },
+  {
+    name: 'Pinduoduo',
+    chineseName: '拼多多',
+    mau: '880M+',
+    audience: 'Compradores atentos al precio. Ciudades de tercer y cuarto nivel',
+    category: 'Comercio y lifestyle',
+    description: 'El tercer gigante del e-commerce chino, bajo la matriz de Temu. Más de 880 millones de usuarios al mes, en su mayoría en ciudades de tercer y cuarto nivel. El modelo se basa en la compra grupal y los descuentos sin rodeos. La plataforma también ofrece comercio transfronterizo y live commerce.',
+    detail: '',
+    bestFor: 'Gran consumo, productos del día a día, salud y belleza, transfronterizo. A evitar para marcas posicionadas en lujo.',
+    image: '/images/platforms/additional-platforms/pinduoduo.png',
+    logo: '/images/platforms/pinduoduo-logo.svg',
+    brandColor: '#E02E24',
+    bg: '#B02D2D', iconBg: 'rgba(255,255,255,0.2)', textColor: '#FFFFFF', descColor: 'rgba(255,255,255,0.8)', linkColor: '#FFFFFF',
+  },
+  {
+    name: 'Lemon8',
+    chineseName: '柠檬8',
+    mau: '23M',
+    audience: 'Lifestyle y contenido visual cuidado',
+    category: 'Comercio y lifestyle',
+    description: 'La apuesta lifestyle visual de ByteDance. 23 millones de usuarios, curva que sube rápido. Imagine un cruce entre Pinterest y RedNote, totalmente centrado en la imagen cuidada. La plataforma es joven, pero gana terreno cada mes, sobre todo en belleza y viajes.',
+    detail: '',
+    bestFor: 'Belleza, moda, gastronomía, viajes, decoración. La foto manda. Carruseles y bodegones de producto.',
+    image: '/images/platforms/additional-platforms/lemon8.png',
+    logo: '/images/platforms/lemon8-logo.svg',
+    brandColor: '#FFE135',
+    bg: '#E8E0D8', iconBg: '#FFFFFF', textColor: '#1A1A1A', descColor: '#5C5C5C', linkColor: '#CC3333',
+  },
+  {
+    name: 'QQ',
+    chineseName: '腾讯QQ',
+    mau: '534M',
+    audience: 'El 91 % de los 15 a 24 años tiene cuenta',
+    category: 'Comercio y lifestyle',
+    description: '534 millones de usuarios al mes y nueve de cada diez adolescentes o jóvenes adultos chinos están registrados. Los grupos de QQ funcionan como servidores de Discord para la franja más joven de la Gen Z china. La plataforma integra también videojuegos y música, lo que alimenta una interacción altísima en estudiantes de secundaria y universidad.',
+    detail: 'QQ no es WeChat. Otro público, otros códigos, otras reglas.',
+    bestFor: 'Videojuegos, educación, entretenimiento, marcas que hablan a los jóvenes.',
+    image: '/images/platforms/additional-platforms/qq.png',
+    logo: '/images/platforms/qq-logo.svg',
+    brandColor: '#12B7F5',
+    bg: '#F7F2EE', iconBg: '#E8E0D8', textColor: '#1A1A1A', descColor: '#5C5C5C', linkColor: '#CC3333',
+  },
+];
+
+const stats = [
+  { label: 'Sesión diaria en Bilibili', value: '107 min', image: '/images/platforms/additional-platforms/bilibili.png' },
+  { label: 'Usuarios mensuales de Kuaishou', value: '731M', image: '/images/platforms/additional-platforms/kuaishou.png' },
+  { label: 'Usuarios mensuales de Pinduoduo', value: '880M+', image: '/images/platforms/additional-platforms/pinduoduo.png' },
+  { label: 'Usuarios anuales de Meituan', value: '770M+', image: '/images/platforms/additional-platforms/meituan.png' },
+  { label: 'Usuarios mensuales de QQ', value: '534M', image: '/images/platforms/additional-platforms/qq.png' },
+  { label: 'Usuarios mensuales de Toutiao', value: '410M', image: '/images/platforms/additional-platforms/toutiao.png' },
+  { label: 'Usuarios mensuales de Bilibili', value: '366M', image: '/images/platforms/additional-platforms/bilibili.png' },
+  { label: 'Usuarios mensuales de Baidu Tieba', value: '300M', image: '/images/platforms/additional-platforms/baidu-tieba.png' },
+  { label: 'Usuarios mensuales de Zhihu', value: '~83M', image: '/images/platforms/additional-platforms/zhihu.png' },
+  { label: 'Usuarios de Lemon8', value: '23M', image: '/images/platforms/additional-platforms/lemon8.png' },
+];
+
+const services = [
+  {
+    title: 'Apertura y verificación de cuentas',
+    description: 'Registro, verificación, optimización del perfil, cumplimiento con las reglas de cada plataforma. Llevamos todos los trámites administrativos; usted no tiene que descifrar formularios en mandarín.',
+    result: 'Cuentas verificadas, configuradas y listas para publicar.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/></svg>`,
+    image: '/images/platforms/additional-services/account-setup.png',
+  },
+  {
+    title: 'Producción de contenido',
+    description: 'Visuales acelerados por IA con HubStudio.ai, redacción en chino por nativos. La dirección editorial sigue siendo humana. Cada publicación se revisa y valida desde China. El contenido está pensado para el formato y la audiencia propios de cada plataforma.',
+    result: 'Contenido nativo que su audiencia quiere leer, comentar y compartir.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/></svg>`,
+    image: '/images/platforms/additional-services/content-production.png',
+  },
+  {
+    title: 'Publicación y dinamización de comunidad',
+    description: 'Subida en las franjas que convierten, moderación de comentarios, dinamización de comunidad, crecimiento de seguidores. La cadencia de publicación se fija de antemano, dentro de un alcance de trabajo claro.',
+    result: 'Una presencia regular y una comunidad que se expresa.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>`,
+    image: '/images/platforms/additional-services/publishing.png',
+  },
+  {
+    title: 'Campañas publicitarias',
+    description: 'Apertura de cuentas publicitarias, gestión de campaña, producción de creatividades, reporting de rendimiento. La inversión de medios se factura a coste real, sin margen oculto.',
+    result: 'Campañas que llegan al público correcto. Inversión publicitaria con total transparencia.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>`,
+    image: '/images/platforms/additional-services/advertising.png',
+  },
+  {
+    title: 'Campañas con KOL y KOC',
+    description: 'Búsqueda de influencers, verificación de perfiles, gestión de campaña y reporting de ROI en todas las plataformas. UP主 en Bilibili, 达人 en Kuaishou, 大V en Zhihu. Identificamos, verificamos, pilotamos y rendimos cuentas. Solo cifras de interacción autenticadas.',
+    result: 'Campañas de influencia con un reporting de ROI sin ambigüedad.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
+    image: '/images/platforms/additional-services/kol-campaigns.png',
+  },
+  {
+    title: 'Medición y reporting',
+    description: 'Informes mensuales sobre crecimiento de seguidores, interacción, rendimiento de contenido e indicadores útiles para su negocio. Todos los informes se entregan en inglés, con datos chinos como anexo para sus equipos sobre el terreno.',
+    result: 'Un informe mensual legible, con recomendaciones concretas.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 6-8"/></svg>`,
+    image: '/images/platforms/additional-services/analytics.png',
+  },
+];
+
+const recommendations = [
+  { goal: 'Captar a la Gen Z china con vídeo largo', platforms: 'Bilibili' },
+  { goal: 'Vender a los compradores que comparan precio en ciudades medianas', platforms: 'Kuaishou, Pinduoduo' },
+  { goal: 'Asentar una visibilidad duradera en los buscadores', platforms: 'Zhihu, Baidu Tieba' },
+  { goal: 'Llevar clientes a sus puntos de venta físicos', platforms: 'Meituan/Dianping' },
+  { goal: 'Llegar a una audiencia amplia con contenido de actualidad', platforms: 'Toutiao' },
+  { goal: 'Llegar a estudiantes de secundaria, universidad y gamers', platforms: 'QQ' },
+  { goal: 'Construir una presencia lifestyle apoyada en imagen', platforms: 'Lemon8' },
+];
+
+const steps = [
+  {
+    number: '01',
+    title: 'Reservar una llamada.',
+    description: 'Treinta minutos para encuadrar su marca, su audiencia y sus objetivos en China. Sin discurso comercial, solo las preguntas que cuentan.',
+    icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>`,
+  },
+  {
+    number: '02',
+    title: 'Recibir una recomendación.',
+    description: 'Seleccionamos las plataformas adecuadas para su marca y las integramos en su paquete. Alcance cerrado, precio fijo.',
+    icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>`,
+  },
+  {
+    number: '03',
+    title: 'Lanzamiento.',
+    description: 'Apertura de cuentas, primeros contenidos, gestión diaria. La mayoría de clientes está al aire en menos de dos semanas.',
+    icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>`,
+  },
+];
+
+const faqs = [
+  { q: '¿Quién produce el contenido para estas plataformas?', a: 'Redactores chinos nativos con base en Shanghái y Hong Kong. HubStudio.ai acelera la producción visual, pero un estratega humano construye el plan editorial y un redactor nativo revisa cada pieza para verificar el encaje cultural, el tono y el cumplimiento. Nada sale al aire sin validación humana.' },
+  { q: '¿Tienen acceso real a las catorce plataformas?', a: 'Sí. Nos conectamos a esas plataformas desde China cada día. Varias bloquean funciones a las IP extranjeras. Las agencias que pilotan a distancia chocan con restricciones que no saben sortear. No es nuestro caso.' },
+  { q: '¿Cómo eligen las plataformas adecuadas para mi marca?', a: 'Partimos de su sector, su audiencia y sus objetivos. Una cadena hotelera necesita Meituan y Dianping. Una empresa B2B tech sacará más de Zhihu y Toutiao. Recomendamos lo que sirve a su negocio, no lo que infla la propuesta.' },
+  { q: '¿Puedo añadir plataformas a un paquete existente?', a: 'Sí. Cualquier plataforma, en cualquier momento. La integramos en su alcance con entregables precisos y precio fijo.' },
+  { q: '¿Qué significa, en concreto, «contenido asistido por IA»?', a: 'La estrategia y la dirección editorial siguen siendo enteramente humanas. HubStudio.ai entra en lo visual: fotos de producto, visuales para redes, maquetas de vídeo. Después, un redactor nativo revisa cada contenido para verificar exactitud, cumplimiento de las reglas de la plataforma y coherencia con la voz de marca. La IA acelera. Nuestros equipos garantizan la calidad.' },
+  { q: '¿Cómo gestionan las reglas de moderación?', a: 'Cada plataforma tiene su sistema de moderación y ninguno se parece a otro. Bilibili marca palabras clave que Zhihu deja pasar. Toutiao suspende cuentas más rápido que casi todas las demás. Sabemos qué pasa y qué vale una suspensión porque lo trabajamos a diario.' },
+  { q: '¿Cuánto se tarda en estar operativo en una nueva plataforma?', a: 'Entre una y tres semanas según la plataforma. Nos ocupamos del registro, la verificación, la configuración del perfil y los primeros contenidos. La mayoría de clientes ve su primera publicación al aire en dos o tres semanas.' },
+  { q: '¿Hacen campañas de influencia en estas plataformas?', a: 'Sí. UP主 en Bilibili, 达人 en Kuaishou, 大V en Zhihu. Identificamos, verificamos, pilotamos y rendimos cuentas. Los honorarios de los creadores se facturan aparte, con total transparencia.' },
+  { q: '¿Cómo miden los resultados?', a: 'Extraemos los datos directamente de los back-offices de las plataformas, no de herramientas de terceros. Los informes cubren crecimiento de seguidores, interacción, rendimiento de contenido e indicadores propios de cada plataforma. Para Zhihu serán las impresiones en los resultados de Baidu. Para Meituan, el volumen de reseñas y la evolución de la nota. Para Kuaishou, las conversiones en live commerce. Reportamos lo que de verdad mueve el negocio.' },
+  { q: '¿Cómo funciona la tarificación?', a: 'Alcance cerrado, precio fijo. Cada entregable se detalla antes del arranque. Paga una cuota mensual por plataforma. Sin tarifa por hora, sin desbordes facturados aparte. La inversión de medios se factura siempre por separado, a coste real.' },
+];
+
+const videoAndCommunity = platforms.filter(p => p.category === 'Vídeo y comunidad');
+const textAndKnowledge = platforms.filter(p => p.category === 'Texto y conocimiento');
+const commerceAndLifestyle = platforms.filter(p => p.category === 'Comercio y lifestyle');
+---
+
+<PageLayout
+  title="Plataformas complementarias: Bilibili, Kuaishou, Zhihu y más | TheRedScroll"
+  description="Catorce plataformas chinas que la mayoría de agencias ignora. Bilibili, Kuaishou, Zhihu, Toutiao, Meituan, Pinduoduo y más. Alcance cerrado, precio fijo. Equipo sobre el terreno en China."
+  lang="es"
+>
+  <section class="w-full bg-[#1A1A1A] py-[80px] max-[640px]:py-[48px] relative overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/additional-platforms-hero.png')" aria-hidden="true"></div>
+    <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[140px] max-[640px]:text-[80px] font-medium text-[#FFFFFF] opacity-[0.03] pointer-events-none select-none whitespace-nowrap" aria-hidden="true">
+      更多平台
+    </span>
+    <Container class="relative z-[1]">
+      <div class="max-w-[800px] mx-auto text-center">
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">
+          Más allá de las cuatro grandes
+        </p>
+        <h1 class="text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] text-[#FFFFFF] mb-[8px]">
+          Catorce plataformas que la mayoría de agencias deja fuera
+        </h1>
+        <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal mb-[24px]">
+          Sus clientes ven Bilibili dos horas seguidas, consultan Dianping antes de elegir restaurante, dan más crédito a una respuesta de Zhihu que a un anuncio, compran en directo en Kuaishou en el metro. Publicamos en cada una de ellas, cada día, desde Shanghái y Hong Kong.
+        </p>
+        <div class="flex items-center justify-center gap-[12px] flex-wrap">
+          <Button variant="primary" href="/es/contacto">Reservar una llamada</Button>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="flex items-end justify-between gap-[32px] max-[640px]:flex-col max-[640px]:items-start max-[640px]:gap-[16px] mb-[32px]">
+        <div class="max-w-[560px]">
+          <SectionBar />
+          <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[8px]">
+            Más de 1.100 millones de chinos están en redes sociales. Ninguno se limita a cuatro apps.
+          </h2>
+          <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
+            Datos clave de nueve plataformas más.
+          </p>
+        </div>
+        <Button variant="primary" href="/es/contacto" class="shrink-0">Reservar una llamada</Button>
+      </div>
+    </Container>
+
+    <div class="relative">
+      <div class="absolute right-0 top-0 bottom-0 w-[80px] bg-gradient-to-l from-[#FFFFFF] to-transparent z-[1] pointer-events-none" aria-hidden="true"></div>
+      <div class="overflow-x-auto scrollbar-hide" id="stats-scroll">
+        <div class="flex gap-[16px] px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pb-[8px]" style="min-width: min-content;">
+          {stats.map((stat, i) => (
+            <div class="stat-card relative shrink-0 w-[220px] max-[640px]:w-[180px] h-[200px] max-[640px]:h-[170px] rounded-[12px] overflow-hidden flex flex-col justify-end cursor-grab select-none" data-stat-index={i}>
+              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out stat-bg" style={`background-image: url('${stat.image}')`} aria-hidden="true"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-[rgba(26,26,26,0.9)] via-[rgba(26,26,26,0.4)] to-transparent" aria-hidden="true"></div>
+              <div class="relative z-[1] p-[20px]">
+                <span class="text-[32px] text-[#FFFFFF] font-medium leading-none stat-counter block mb-[4px]" data-target={stat.value}>0</span>
+                <span class="text-[12px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.4]">{stat.label}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]">
+          <SectionBar />
+        </div>
+        <SectionHeading overline="Por qué importan estas plataformas">
+          La mayoría de agencias se queda en cuatro. Ir más allá exige equipo sobre el terreno.
+        </SectionHeading>
+      </div>
+
+      <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
+          <div class="w-full aspect-[16/9] overflow-hidden">
+            <img src="/images/platforms/additional-why/focused-attention.png" alt="Joven adulto chino viendo un vídeo largo con atención sostenida" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+          </div>
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Atención sostenida, no scroll frenético</h3>
+            <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
+              Los usuarios de Bilibili pasan 107 minutos al día en la plataforma. Casi dos horas de atención concentrada de jóvenes con estudios de menos de 35 años. No es scroll. Es audiencia cautiva.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
+          <div class="w-full aspect-[16/9] overflow-hidden">
+            <img src="/images/platforms/additional-why/ecommerce-power.png" alt="Paquetes de e-commerce clasificados en un centro logístico chino" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+          </div>
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Comercio real, volúmenes reales</h3>
+            <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
+              Kuaishou registró 385.000 millones de euros en ventas online en el tercer trimestre de 2025, en un solo trimestre. Estas plataformas mueven volúmenes a una escala que la mayoría de marcas extranjeras aún no ha calibrado.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
+          <div class="w-full aspect-[16/9] overflow-hidden">
+            <img src="/images/platforms/additional-why/search-longevity.png" alt="Respuestas de Zhihu posicionadas en los resultados de búsqueda de Baidu" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+          </div>
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Contenido que se capitaliza</h3>
+            <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">
+              Las respuestas de Zhihu mantienen su sitio en los resultados de Baidu durante meses, a veces años. En Douyin un post desaparece en 48 horas. En Zhihu sigue generando tráfico mucho después de publicarse.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] mt-[24px] text-center max-w-[680px] mx-auto">
+        Cubrir estas plataformas exige redactores chinos nativos, acceso diario a los back-offices y un equipo que opera en el mercado a tiempo completo. Es exactamente nuestro caso.
+      </p>
+    </Container>
+  </section>
+
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]">
+          <SectionBar />
+        </div>
+        <SectionHeading overline="Vídeo y comunidad">
+          Vídeo largo, live commerce, comunidades que vuelven.
+        </SectionHeading>
+      </div>
+
+      <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        {videoAndCommunity.map((item) => (
+          <div class="eco-card relative border-none overflow-hidden flex flex-col justify-between" style={`border-radius: ${item.bg === '#1A1A1A' || item.bg === '#CC3333' || item.bg === '#B02D2D' ? '12px' : '10px'}`} data-tilt-eco>
+            <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out eco-bg" style={`background-image: url('${item.image}')`} aria-hidden="true"></div>
+            <div class="absolute inset-0" style={`background: ${item.bg}; opacity: 0.72`} aria-hidden="true"></div>
+            <div class="relative z-[1] p-[24px] max-[640px]:p-[20px]">
+              <div class="flex items-center gap-[12px] mb-[16px]">
+                <div class="w-[40px] h-[40px] rounded-[6px] flex items-center justify-center" style={`background: ${item.iconBg}`}>
+                  <img src={item.logo} alt={`Logo ${item.name}`} width="20" height="20" style={item.textColor === '#FFFFFF' ? 'filter: brightness(0) invert(1);' : ''} />
+                </div>
+                <div>
+                  <h3 class="text-[18px] font-medium leading-[1.3]" style={`color: ${item.textColor}`}>{item.name}</h3>
+                  <span class="text-[12px] font-normal block" style={`color: ${item.descColor}`}>{item.chineseName} · {item.mau} usuarios/mes</span>
+                </div>
+              </div>
+              <p class="text-[13px] font-normal leading-[1.5] mb-[12px]" style={`color: ${item.descColor}`}>{item.description}</p>
+              {item.detail && (<p class="text-[13px] font-normal leading-[1.5] mb-[12px]" style={`color: ${item.descColor}`}>{item.detail}</p>)}
+              <p class="text-[12px] font-medium leading-[1.5]" style={`color: ${item.linkColor}`}>Mejor para: {item.bestFor}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </Container>
+  </section>
+
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]">
+          <SectionBar />
+        </div>
+        <SectionHeading overline="Texto y conocimiento">
+          Preguntas y respuestas, actualidad algorítmica, foros. Contenido que se indexa y se capitaliza en el tiempo.
+        </SectionHeading>
+      </div>
+
+      <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        {textAndKnowledge.map((item) => (
+          <div class="eco-card relative border-none overflow-hidden flex flex-col justify-between" style={`border-radius: ${item.bg === '#1A1A1A' || item.bg === '#CC3333' || item.bg === '#B02D2D' ? '12px' : '10px'}`} data-tilt-eco>
+            <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out eco-bg" style={`background-image: url('${item.image}')`} aria-hidden="true"></div>
+            <div class="absolute inset-0" style={`background: ${item.bg}; opacity: 0.72`} aria-hidden="true"></div>
+            <div class="relative z-[1] p-[24px] max-[640px]:p-[20px]">
+              <div class="flex items-center gap-[12px] mb-[16px]">
+                <div class="w-[40px] h-[40px] rounded-[6px] flex items-center justify-center" style={`background: ${item.iconBg}`}>
+                  <img src={item.logo} alt={`Logo ${item.name}`} width="20" height="20" style={item.textColor === '#FFFFFF' ? 'filter: brightness(0) invert(1);' : ''} />
+                </div>
+                <div>
+                  <h3 class="text-[18px] font-medium leading-[1.3]" style={`color: ${item.textColor}`}>{item.name}</h3>
+                  <span class="text-[12px] font-normal block" style={`color: ${item.descColor}`}>{item.chineseName} · {item.mau} usuarios/mes</span>
+                </div>
+              </div>
+              <p class="text-[13px] font-normal leading-[1.5] mb-[12px]" style={`color: ${item.descColor}`}>{item.description}</p>
+              {item.detail && (<p class="text-[13px] font-normal leading-[1.5] mb-[12px]" style={`color: ${item.descColor}`}>{item.detail}</p>)}
+              <p class="text-[12px] font-medium leading-[1.5]" style={`color: ${item.linkColor}`}>Mejor para: {item.bestFor}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </Container>
+  </section>
+
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]">
+          <SectionBar />
+        </div>
+        <SectionHeading overline="Comercio y lifestyle">
+          Reseñas de cliente, shopping, servicios de proximidad y contenido visual.
+        </SectionHeading>
+      </div>
+
+      <div class="grid grid-cols-2 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        {commerceAndLifestyle.map((item) => (
+          <div class="eco-card relative border-none overflow-hidden flex flex-col justify-between" style={`border-radius: ${item.bg === '#1A1A1A' || item.bg === '#CC3333' || item.bg === '#B02D2D' ? '12px' : '10px'}`} data-tilt-eco>
+            <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out eco-bg" style={`background-image: url('${item.image}')`} aria-hidden="true"></div>
+            <div class="absolute inset-0" style={`background: ${item.bg}; opacity: 0.72`} aria-hidden="true"></div>
+            <div class="relative z-[1] p-[24px] max-[640px]:p-[20px]">
+              <div class="flex items-center gap-[12px] mb-[16px]">
+                <div class="w-[40px] h-[40px] rounded-[6px] flex items-center justify-center" style={`background: ${item.iconBg}`}>
+                  <img src={item.logo} alt={`Logo ${item.name}`} width="20" height="20" style={item.textColor === '#FFFFFF' ? 'filter: brightness(0) invert(1);' : ''} />
+                </div>
+                <div>
+                  <h3 class="text-[18px] font-medium leading-[1.3]" style={`color: ${item.textColor}`}>{item.name}</h3>
+                  <span class="text-[12px] font-normal block" style={`color: ${item.descColor}`}>{item.chineseName} · {item.mau} usuarios/mes</span>
+                </div>
+              </div>
+              <p class="text-[13px] font-normal leading-[1.5] mb-[12px]" style={`color: ${item.descColor}`}>{item.description}</p>
+              {item.detail && (<p class="text-[13px] font-normal leading-[1.5] mb-[12px]" style={`color: ${item.descColor}`}>{item.detail}</p>)}
+              <p class="text-[12px] font-medium leading-[1.5]" style={`color: ${item.linkColor}`}>Mejor para: {item.bestFor}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </Container>
+  </section>
+
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]">
+          <SectionBar />
+        </div>
+        <SectionHeading overline="Nuestros servicios">
+          Una forma de trabajar idéntica en cada plataforma. Alcance cerrado, precio fijo.
+        </SectionHeading>
+      </div>
+
+      <div class="grid grid-cols-[340px_1fr] max-[1024px]:grid-cols-[280px_1fr] max-[768px]:hidden gap-[24px] items-stretch">
+        <div class="flex flex-col gap-[4px]">
+          {services.map((service, i) => (
+            <button class:list={['svc-selector flex items-center gap-[12px] px-[16px] py-[14px] rounded-[8px] text-left cursor-pointer border-none transition-all duration-300 relative', i === 0 ? 'svc-selector-active' : '']} data-svc-select={i} style={i === 0 ? 'background: #F7F2EE' : 'background: transparent'}>
+              <div class="svc-sel-indicator absolute left-0 top-[12px] bottom-[12px] w-[3px] rounded-full transition-all duration-300" style={i === 0 ? 'background: #CC3333; opacity: 1' : 'background: #CC3333; opacity: 0'}></div>
+              <div class="svc-sel-icon w-[36px] h-[36px] rounded-[6px] shrink-0 flex items-center justify-center transition-all duration-300" style={i === 0 ? 'background: #E8E0D8; color: #CC3333' : 'background: transparent; color: #5C5C5C'}>
+                <Fragment set:html={service.icon} />
+              </div>
+              <span class="svc-sel-label text-[14px] font-medium leading-[1.3] transition-colors duration-300" style={i === 0 ? 'color: #1A1A1A' : 'color: #5C5C5C'}>{service.title}</span>
+            </button>
+          ))}
+        </div>
+
+        <div class="relative">
+          {services.map((service, i) => (
+            <div class="svc-panel relative rounded-[12px] overflow-hidden h-full" data-svc-panel={i} style={i === 0 ? '' : 'display: none;'}>
+              <div class="absolute inset-0 bg-cover bg-center" style={`background-image: url('${service.image}')`} aria-hidden="true"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-[rgba(26,26,26,0.95)] via-[rgba(26,26,26,0.6)] to-[rgba(26,26,26,0.15)]" aria-hidden="true"></div>
+              <div class="relative z-[1] p-[32px] max-[1024px]:p-[24px] h-full flex flex-col justify-end">
+                <h3 class="text-[22px] font-medium leading-[1.25] mb-[8px] text-[#FFFFFF]">{service.title}</h3>
+                <p class="text-[14px] font-normal leading-[1.6] text-[rgba(255,255,255,0.7)] mb-[16px]">{service.description}</p>
+                <div class="flex items-center gap-[8px] pt-[12px] border-t border-[rgba(255,255,255,0.15)]">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                  <p class="text-[13px] font-medium leading-[1.5] text-[#FFFFFF]">{service.result}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div class="hidden max-[768px]:flex flex-col gap-[12px]">
+        {services.map((service) => (
+          <div class="relative rounded-[12px] overflow-hidden">
+            <div class="absolute inset-0 bg-cover bg-center" style={`background-image: url('${service.image}')`} aria-hidden="true"></div>
+            <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.82]" aria-hidden="true"></div>
+            <div class="relative z-[1] p-[24px]">
+              <div class="w-[40px] h-[40px] rounded-[6px] flex items-center justify-center mb-[12px] bg-[rgba(255,255,255,0.12)] text-[#FFFFFF]">
+                <Fragment set:html={service.icon} />
+              </div>
+              <h3 class="text-[18px] font-medium leading-[1.3] mb-[8px] text-[#FFFFFF]">{service.title}</h3>
+              <p class="text-[13px] font-normal leading-[1.5] mb-[12px] text-[rgba(255,255,255,0.7)]">{service.description}</p>
+              <p class="text-[13px] font-medium leading-[1.5] text-[#FFFFFF]">Resultado: {service.result}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </Container>
+  </section>
+
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="bg-[#1A1A1A] rounded-[12px] py-[48px] px-[48px] max-[1024px]:px-[32px] max-[1024px]:py-[40px] max-[640px]:px-[20px] max-[640px]:py-[32px]">
+        <div class="mb-[40px] max-[640px]:mb-[32px]">
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">
+            Qué plataforma según objetivo
+          </p>
+          <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF]">
+            Lo que aconsejamos, según hacia dónde quiera ir
+          </h2>
+        </div>
+        <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[20px]">
+          {recommendations.map((rec) => (
+            <div class="border-l-[3px] border-[#CC3333] pl-[16px]">
+              <h3 class="text-[16px] text-[#FFFFFF] font-medium leading-[1.3] mb-[4px]">{rec.goal}</h3>
+              <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.5]">{rec.platforms}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-[340px_1fr] max-[1024px]:grid-cols-[280px_1fr] max-[768px]:grid-cols-1 gap-[48px] max-[768px]:gap-[32px]">
+        <div>
+          <div class="sticky top-[84px] max-[640px]:static">
+            <SectionBar />
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">FAQ</p>
+            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">
+              Preguntas frecuentes
+            </h2>
+            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
+              Lo que conviene saber antes de extender su presencia a estas plataformas con TheRedScroll.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          {faqs.map((faq) => (
+            <div class="border-b border-[rgba(0,0,0,0.08)]" data-faq>
+              <button class="w-full flex items-center justify-between py-[20px] text-left bg-transparent border-none cursor-pointer group" data-faq-trigger aria-expanded="false">
+                <h3 class="text-[16px] font-medium leading-[1.3] text-[#1A1A1A] group-hover:text-[#5C5C5C] transition-colors duration-150 pr-[16px]">{faq.q}</h3>
+                <svg class="w-[16px] h-[16px] shrink-0 text-[#5C5C5C] transition-transform duration-300 faq-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6l4 4 4-4"/></svg>
+              </button>
+              <div class="faq-content overflow-hidden" style="height: 0; opacity: 0;">
+                <div class="pb-[20px]">
+                  <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">{faq.a}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <section class="relative mt-[96px] max-[640px]:mt-[64px] pt-[80px] pb-[80px] max-[1024px]:pt-[64px] max-[1024px]:pb-[64px] max-[640px]:pt-[48px] max-[640px]:pb-[48px] overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero/additional-platforms-hero.png')" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.88]" aria-hidden="true"></div>
+
+    <Container class="relative z-[1]">
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]">
+          <div class="w-[40px] h-[3px] bg-[#CC3333] rounded-none"></div>
+        </div>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">
+          Para empezar
+        </p>
+        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF]">
+          De cero a una presencia activa en estas plataformas. Bastan dos semanas.
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-3 max-[640px]:grid-cols-1 gap-[24px] max-[640px]:gap-[16px]">
+        {steps.map((step) => (
+          <div class="bg-[rgba(255,255,255,0.06)] border-[0.5px] border-[rgba(255,255,255,0.1)] rounded-[12px] p-[32px] max-[640px]:p-[20px] text-center">
+            <div class="w-[64px] h-[64px] rounded-full bg-[rgba(255,255,255,0.08)] border-[0.5px] border-[rgba(255,255,255,0.15)] flex items-center justify-center mx-auto mb-[20px]">
+              <Fragment set:html={step.icon} />
+            </div>
+            <h3 class="text-[18px] text-[#FFFFFF] font-medium leading-[1.3] mb-[8px]">{step.title}</h3>
+            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6]">{step.description}</p>
+          </div>
+        ))}
+      </div>
+
+      <div class="text-center mt-[40px]">
+        <Button variant="primary" href="/es/contacto">Reservar una llamada</Button>
+      </div>
+
+      <div class="mt-[48px] pt-[24px] border-t border-[rgba(255,255,255,0.1)] text-center">
+        <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal mb-[12px]">También de interés</p>
+        <div class="flex justify-center gap-[24px] flex-wrap">
+          <a href="/es/plataformas/wechat" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Marketing WeChat &rarr;</a>
+          <a href="/es/plataformas/rednote" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Marketing RedNote &rarr;</a>
+          <a href="/es/plataformas/douyin" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Marketing Douyin &rarr;</a>
+          <a href="/es/plataformas/weibo" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Marketing Weibo &rarr;</a>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+<style>
+  .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+  .svc-panel { transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1); }
+  .svc-selector:hover { background: #F7F2EE !important; }
+  .faq-content { transition: height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease; }
+  .stat-card { opacity: 0; transform: translateY(32px); transition: opacity 1s ease, transform 1s ease; }
+  .stat-card.revealed { opacity: 1; transform: translateY(0); }
+  .stat-card:hover .stat-bg { transform: scale(1.08); }
+  .eco-card:hover .eco-bg { transform: scale(1.08); }
+</style>
+
+<script>
+  const statsScroll = document.getElementById('stats-scroll');
+  if (statsScroll) {
+    let isDown = false; let startX: number; let scrollLeft: number; let autoScrollPaused = false;
+    statsScroll.addEventListener('mousedown', (e) => { isDown = true; autoScrollPaused = true; statsScroll.style.cursor = 'grabbing'; startX = e.pageX - statsScroll.offsetLeft; scrollLeft = statsScroll.scrollLeft; });
+    statsScroll.addEventListener('mouseleave', () => { isDown = false; statsScroll.style.cursor = ''; setTimeout(() => { autoScrollPaused = false; }, 1000); });
+    statsScroll.addEventListener('mouseup', () => { isDown = false; statsScroll.style.cursor = ''; setTimeout(() => { autoScrollPaused = false; }, 3000); });
+    statsScroll.addEventListener('mousemove', (e) => { if (!isDown) return; e.preventDefault(); const x = e.pageX - statsScroll.offsetLeft; statsScroll.scrollLeft = scrollLeft - (x - startX); });
+    statsScroll.addEventListener('touchstart', () => { autoScrollPaused = true; }, { passive: true });
+    statsScroll.addEventListener('touchend', () => { setTimeout(() => { autoScrollPaused = false; }, 3000); });
+    const scrollSpeed = 0.5;
+    function autoScroll() { if (!autoScrollPaused && statsScroll) { const maxScroll = statsScroll.scrollWidth - statsScroll.clientWidth; statsScroll.scrollLeft += scrollSpeed; if (statsScroll.scrollLeft >= maxScroll) { statsScroll.scrollLeft = 0; } } requestAnimationFrame(autoScroll); }
+    const scrollObserver = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) { requestAnimationFrame(autoScroll); scrollObserver.unobserve(entry.target); } }); }, { threshold: 0.2 });
+    scrollObserver.observe(statsScroll);
+    statsScroll.addEventListener('mouseenter', () => { autoScrollPaused = true; });
+  }
+  const statCards = document.querySelectorAll('.stat-card');
+  const statsObserver = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) { const card = entry.target as HTMLElement; const index = parseInt(card.dataset.statIndex || '0'); const delay = index * 150; setTimeout(() => { card.classList.add('revealed'); const counter = card.querySelector('.stat-counter') as HTMLElement; if (counter) { setTimeout(() => { animateCounter(counter, counter.dataset.target || '0'); }, 400); } }, delay); statsObserver.unobserve(card); } }); }, { threshold: 0.05 });
+  statCards.forEach((card) => statsObserver.observe(card));
+  function animateCounter(el: HTMLElement, target: string) { const match = target.match(/^([\d.]+)(.*)$/); if (!match) { el.textContent = target; return; } const endNum = parseFloat(match[1]); const suffix = match[2]; const duration = 2000; const startTime = performance.now(); function tick(now: number) { const elapsed = now - startTime; const progress = Math.min(elapsed / duration, 1); const eased = 1 - Math.pow(1 - progress, 3); const current = eased * endNum; if (endNum >= 10) { el.textContent = Math.round(current) + suffix; } else { el.textContent = current.toFixed(1).replace(/\.0$/, '') + suffix; } if (progress < 1) requestAnimationFrame(tick); else el.textContent = target; } requestAnimationFrame(tick); }
+  const selectors = document.querySelectorAll('[data-svc-select]'); const panels = document.querySelectorAll('[data-svc-panel]'); let activeIndex = 0; let isAnimating = false;
+  selectors.forEach((sel) => { sel.addEventListener('click', () => { const index = parseInt((sel as HTMLElement).dataset.svcSelect || '0'); if (index === activeIndex || isAnimating) return; isAnimating = true; selectors.forEach((s) => { const el = s as HTMLElement; el.style.background = 'transparent'; const ind = el.querySelector('.svc-sel-indicator') as HTMLElement; const ico = el.querySelector('.svc-sel-icon') as HTMLElement; const lbl = el.querySelector('.svc-sel-label') as HTMLElement; if (ind) ind.style.opacity = '0'; if (ico) { ico.style.background = 'transparent'; ico.style.color = '#5C5C5C'; } if (lbl) lbl.style.color = '#5C5C5C'; }); const active = sel as HTMLElement; active.style.background = '#F7F2EE'; const ind = active.querySelector('.svc-sel-indicator') as HTMLElement; const ico = active.querySelector('.svc-sel-icon') as HTMLElement; const lbl = active.querySelector('.svc-sel-label') as HTMLElement; if (ind) ind.style.opacity = '1'; if (ico) { ico.style.background = '#E8E0D8'; ico.style.color = '#CC3333'; } if (lbl) lbl.style.color = '#1A1A1A'; const oldPanel = panels[activeIndex] as HTMLElement; const newPanel = panels[index] as HTMLElement; const goingDown = index > activeIndex; oldPanel.style.transition = 'opacity 0.3s ease, transform 0.3s ease'; oldPanel.style.opacity = '0'; oldPanel.style.transform = goingDown ? 'translateY(-20px)' : 'translateY(20px)'; setTimeout(() => { oldPanel.style.display = 'none'; oldPanel.style.transform = ''; oldPanel.style.transition = ''; newPanel.style.opacity = '0'; newPanel.style.transform = goingDown ? 'translateY(20px)' : 'translateY(-20px)'; newPanel.style.display = ''; requestAnimationFrame(() => { newPanel.style.transition = 'opacity 0.35s ease, transform 0.35s ease'; newPanel.style.opacity = '1'; newPanel.style.transform = 'translateY(0)'; setTimeout(() => { newPanel.style.transition = ''; activeIndex = index; isAnimating = false; }, 350); }); }, 280); }); });
+  document.querySelectorAll('[data-tilt-eco]').forEach((card) => { const el = card as HTMLElement; el.addEventListener('mousemove', (e: MouseEvent) => { const rect = el.getBoundingClientRect(); const x = e.clientX - rect.left; const y = e.clientY - rect.top; const centerX = rect.width / 2; const centerY = rect.height / 2; const rotateX = ((y - centerY) / centerY) * -3; const rotateY = ((x - centerX) / centerX) * 3; el.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`; }); el.addEventListener('mouseleave', () => { el.style.transform = 'perspective(800px) rotateX(0deg) rotateY(0deg) scale(1)'; }); });
+  document.querySelectorAll('[data-faq]').forEach((item) => { const trigger = item.querySelector('[data-faq-trigger]') as HTMLButtonElement; const content = item.querySelector('.faq-content') as HTMLElement; if (!trigger || !content) return; trigger.addEventListener('click', () => { const isOpen = trigger.getAttribute('aria-expanded') === 'true'; if (isOpen) { content.style.height = content.scrollHeight + 'px'; requestAnimationFrame(() => { content.style.height = '0'; content.style.opacity = '0'; }); trigger.setAttribute('aria-expanded', 'false'); const ch = trigger.querySelector('.faq-chevron') as HTMLElement; if (ch) ch.style.transform = 'rotate(0deg)'; } else { content.style.height = '0'; requestAnimationFrame(() => { content.style.height = content.scrollHeight + 'px'; content.style.opacity = '1'; }); trigger.setAttribute('aria-expanded', 'true'); const ch = trigger.querySelector('.faq-chevron') as HTMLElement; if (ch) ch.style.transform = 'rotate(180deg)'; } }); });
+</script>
+</PageLayout>

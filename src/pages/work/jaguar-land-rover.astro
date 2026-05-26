@@ -4,6 +4,7 @@ import Container from '../../components/ui/Container.astro';
 import SectionBar from '../../components/ui/SectionBar.astro';
 import SectionHeading from '../../components/ui/SectionHeading.astro';
 import Button from '../../components/ui/Button.astro';
+import { caseStudySchema } from '../../lib/schema';
 
 const services = ['Campaign', 'eCommerce', 'Influencer / KOL', 'Livestream', 'Media', 'Social'];
 const platforms = ['Douyin', 'RedNote', 'WeChat'];
@@ -13,6 +14,15 @@ const platforms = ['Douyin', 'RedNote', 'WeChat'];
   title="JLR China Social Media Case Study | TheRedScroll"
   description="How Jaguar Land Rover used Douyin, RedNote, and WeChat to reach younger Chinese consumers. Social content, KOL campaigns, and UGC results."
   ogImage="/images/clients/Jaguar/Jaguar-Land-Rover.avif"
+  schema={caseStudySchema({
+    clientName: 'Jaguar Land Rover',
+    headline: 'Jaguar Land Rover: reaching younger Chinese consumers through social',
+    description: 'How JLR shifted its brand relevance with younger Chinese consumers using Douyin, RedNote, and WeChat with a UGC-led approach.',
+    url: '/work/jaguar-land-rover',
+    image: '/images/clients/Jaguar/Jaguar-Land-Rover.avif',
+    industry: 'Luxury Automotive',
+    platforms,
+  })}
 >
 
   <!-- Hero -->

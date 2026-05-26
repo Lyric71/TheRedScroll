@@ -1,5 +1,7 @@
 ---
 import PageLayout from '../../layouts/PageLayout.astro';
+import UpdatedDate from '../../components/ui/UpdatedDate.astro';
+import { faqPageSchema, serviceSchema } from '../../lib/schema';
 import Container from '../../components/ui/Container.astro';
 import SectionBar from '../../components/ui/SectionBar.astro';
 import SectionHeading from '../../components/ui/SectionHeading.astro';
@@ -43,6 +45,15 @@ const gettingStartedSteps = [
 <PageLayout
   title="China Market Entry via Social Commerce | TheRedScroll"
   description="Enter the market through social commerce. Account setup, brand localization, Douyin Shop, WeChat Mini Programs. Team on the ground in Shanghai."
+  schema={[
+    serviceSchema({
+      name: 'China Market Entry via Social Commerce',
+      description: 'Account setup, brand localization, social commerce integration via Douyin Shop and WeChat Mini Programs, and 90-day launch execution for brands entering China.',
+      url: '/services/market-entry',
+      serviceType: 'Marketing Strategy and Consulting',
+    }),
+    faqPageSchema(faqs),
+  ]}
 >
 
   <!-- Hero — Dark hero banner -->
@@ -52,6 +63,7 @@ const gettingStartedSteps = [
       <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
         China market entry support
       </p>
+      <UpdatedDate date="May 2026" variant="light" class="mb-[12px]" />
       <h1 class="text-[#FFFFFF] text-[48px] max-[1024px]:text-[40px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
         Listing your product isn't enough. If nobody knows you exist, nobody buys.
       </h1>

@@ -4,7 +4,7 @@ import '../styles/fonts.css';
 import Header from '../components/global/Header.astro';
 import Footer from '../components/global/Footer.astro';
 import type { Lang } from '../i18n/config';
-import { alternateUrl, getAlternateLangs } from '../i18n/config';
+import { alternateUrl, getAvailableAlternateLangs, hreflangCode } from '../i18n/config';
 
 interface Props {
   title: string;
@@ -13,6 +13,7 @@ interface Props {
   ogImage?: string;
   lang?: Lang;
   hideFooterCta?: boolean;
+  schema?: Record<string, unknown> | Record<string, unknown>[];
 }
 
 const {
@@ -22,17 +23,115 @@ const {
   ogImage = '/images/og-default.jpg',
   lang = 'en',
   hideFooterCta = false,
+  schema,
 } = Astro.props;
 
 const siteName = 'TheRedScroll';
 const siteUrl = 'https://theredscroll.com';
 const currentPath = Astro.url.pathname;
-const altLangs = getAlternateLangs(lang);
+const altLangs = getAvailableAlternateLangs(lang);
 const localeMap: Record<string, string> = { en: 'en_US', fr: 'fr_FR', zh: 'zh_CN', es: 'es_ES', de: 'de_DE' };
+const htmlLang = hreflangCode(lang);
+
+// Homepage detection: '/', '/fr/', '/zh/', '/es/', '/de/' (with or without trailing slash)
+const isHomepage = /^\/(fr|zh|es|de)?\/?$/.test(currentPath);
+
+// BreadcrumbList for non-home pages, generated from the URL path
+function buildBreadcrumbs(pathname: string): { name: string; url: string }[] {
+  const segments = pathname.replace(/^\/+|\/+$/g, '').split('/').filter(Boolean);
+  if (segments.length === 0) return [];
+  const locales = new Set(['fr', 'zh', 'es', 'de']);
+  const crumbs: { name: string; url: string }[] = [];
+  let acc = '';
+  // Home crumb (locale-aware)
+  if (locales.has(segments[0])) {
+    acc = `/${segments[0]}`;
+    crumbs.push({ name: 'Home', url: `${siteUrl}${acc}/` });
+    segments.shift();
+  } else {
+    crumbs.push({ name: 'Home', url: `${siteUrl}/` });
+  }
+  const brandCasing: Record<string, string> = {
+    wechat: 'WeChat',
+    rednote: 'RedNote',
+    douyin: 'Douyin',
+    weibo: 'Weibo',
+    wecom: 'WeCom',
+    kol: 'KOL',
+    koc: 'KOC',
+    aigc: 'AIGC',
+    crm: 'CRM',
+    ai: 'AI',
+    jac: 'JAC',
+    iguzzini: 'iGuzzini',
+  };
+  for (const seg of segments) {
+    acc += `/${seg}`;
+    const name = seg
+      .split('-')
+      .map((w) => brandCasing[w.toLowerCase()] ?? w.charAt(0).toUpperCase() + w.slice(1))
+      .join(' ');
+    crumbs.push({ name, url: `${siteUrl}${acc}` });
+  }
+  return crumbs;
+}
+const breadcrumbs = buildBreadcrumbs(currentPath);
+
+const orgSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  '@id': `${siteUrl}/#organization`,
+  name: siteName,
+  url: siteUrl,
+  logo: `${siteUrl}/images/logo/theredscroll-logo-5B-mark-only.svg`,
+  description: 'China social media agency. We grow Western brands on WeChat, Douyin, RedNote, Weibo, and 14 more platforms. Fixed scope, fixed price, team in Shanghai and Hong Kong.',
+  areaServed: ['CN', 'HK'],
+  address: [
+    {
+      '@type': 'PostalAddress',
+      addressLocality: 'Shanghai',
+      addressCountry: 'CN',
+    },
+    {
+      '@type': 'PostalAddress',
+      addressLocality: 'Hong Kong',
+      addressCountry: 'HK',
+    },
+  ],
+  founder: {
+    '@type': 'Person',
+    name: 'Cyril Drouin',
+    jobTitle: 'Founder',
+  },
+};
+
+const websiteSchema = isHomepage ? {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': `${siteUrl}/#website`,
+  url: siteUrl,
+  name: siteName,
+  publisher: { '@id': `${siteUrl}/#organization` },
+  inLanguage: ['en', 'fr-FR', 'zh-Hans'],
+} : null;
+
+const breadcrumbSchema = breadcrumbs.length > 1 ? {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: breadcrumbs.map((c, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: c.name,
+    item: c.url,
+  })),
+} : null;
+
+const pageSchemas: Record<string, unknown>[] = Array.isArray(schema) ? schema : schema ? [schema] : [];
+const allSchemas = [orgSchema, websiteSchema, breadcrumbSchema, ...pageSchemas].filter(Boolean) as Record<string, unknown>[];
 ---
 
 <!doctype html>
-<html lang={lang}>
+<html lang={htmlLang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,9 +139,9 @@ const localeMap: Record<string, string> = { en: 'en_US', fr: 'fr_FR', zh: 'zh_CN
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
-    <link rel="alternate" hreflang={lang} href={`${siteUrl}${currentPath}`} />
+    <link rel="alternate" hreflang={hreflangCode(lang)} href={`${siteUrl}${currentPath}`} />
     {altLangs.map((al) => (
-      <link rel="alternate" hreflang={al} href={`${siteUrl}${alternateUrl(currentPath, al)}`} />
+      <link rel="alternate" hreflang={hreflangCode(al)} href={`${siteUrl}${alternateUrl(currentPath, al)}`} />
     ))}
     <link rel="alternate" hreflang="x-default" href={`${siteUrl}${lang === 'en' ? currentPath : alternateUrl(currentPath, 'en')}`} />
     <meta property="og:title" content={title} />
@@ -54,13 +153,18 @@ const localeMap: Record<string, string> = { en: 'en_US', fr: 'fr_FR', zh: 'zh_CN
     <meta property="og:locale" content={localeMap[lang] || 'en_US'} />
     <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/inter-500.woff2" as="font" type="font/woff2" crossorigin />
-    <!-- Microsoft Clarity -->
+    {allSchemas.map((s) => (
+      <script type="application/ld+json" is:inline set:html={JSON.stringify(s)} />
+    ))}
+    <!-- Microsoft Clarity (deferred to post-load to protect LCP/INP) -->
     <script is:inline>
-      (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window, document, "clarity", "script", "wahimcnpm5");
+      window.addEventListener('load', function () {
+        (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "wahimcnpm5");
+      });
     </script>
   </head>
   <body class="font-sans antialiased text-[var(--color-ink)] bg-[var(--color-white)]">

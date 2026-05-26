@@ -8,12 +8,13 @@ interface Props {
   canonical?: string;
   ogImage?: string;
   lang?: Lang;
+  schema?: Record<string, unknown> | Record<string, unknown>[];
 }
 
-const { title, description, canonical, ogImage, lang = 'en' } = Astro.props;
+const { title, description, canonical, ogImage, lang = 'en', schema } = Astro.props;
 ---
 
-<BaseLayout title={title} description={description} canonical={canonical} ogImage={ogImage} lang={lang}>
+<BaseLayout title={title} description={description} canonical={canonical} ogImage={ogImage} lang={lang} schema={schema}>
   <main>
     <article>
       <slot />

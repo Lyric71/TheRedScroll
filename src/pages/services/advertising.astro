@@ -6,6 +6,7 @@ import SectionHeading from '../../components/ui/SectionHeading.astro';
 import Button from '../../components/ui/Button.astro';
 import FaqAccordion from '../../components/sections/FaqAccordion.astro';
 import GettingStarted from '../../components/sections/GettingStarted.astro';
+import { faqPageSchema, serviceSchema } from '../../lib/schema';
 
 
 const faqs = [
@@ -43,6 +44,15 @@ const gettingStartedSteps = [
 <PageLayout
   title="China Social Media Ads | TheRedScroll Agency"
   description="Ad planning, buying, and daily optimization across WeChat, Douyin, and RedNote. Fixed management fee. Transparent ad spend. Team in Shanghai."
+  schema={[
+    serviceSchema({
+      name: 'China Social Media Advertising',
+      description: 'Paid advertising planning, buying, and daily optimization across WeChat, Douyin, RedNote, and Weibo. Fixed management fee with transparent media spend.',
+      url: '/services/advertising',
+      serviceType: 'Digital Advertising',
+    }),
+    faqPageSchema(faqs),
+  ]}
 >
 
   <!-- Hero — Dark hero banner -->

@@ -1,0 +1,340 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+import UpdatedDate from '../../../components/ui/UpdatedDate.astro';
+
+const stats = [
+  { label: 'Täglich aktiv', value: '750M+', image: '/images/platforms/douyin-stats/daily-active-users.png' },
+  { label: 'Monatlich aktiv', value: '1B+', image: '/images/platforms/douyin-stats/monthly-active-users.png' },
+  { label: 'Minuten pro Person und Tag', value: '120 min', image: '/images/platforms/douyin-stats/daily-time.png' },
+  { label: 'eCommerce-Volumen 2024', value: '€3.5T', image: '/images/platforms/douyin-stats/ecommerce-sales.png' },
+  { label: 'Umsatzwachstum im Jahresvergleich', value: '34%', image: '/images/platforms/douyin-stats/yoy-growth.png' },
+  { label: 'Verkaufs-Livestreams pro Tag', value: '30M+', image: '/images/platforms/douyin-stats/live-commerce.png' },
+  { label: 'Content-Kategorien', value: '100+', image: '/images/platforms/douyin-stats/content-variety.png' },
+  { label: 'Aktive Creator', value: '15M+', image: '/images/platforms/douyin-stats/creator-economy.png' },
+];
+
+const ecosystem = [
+  { name: 'For You Feed', chineseName: '推荐页', description: 'Der algorithmusgetriebene Feed. Follower-Zahlen spielen kaum eine Rolle. Ein gestern gestartetes Konto kann mit dem richtigen Video die Million Views knacken.', image: '/images/platforms/douyin-ecosystem/for-you-feed.png', bg: '#1A1A1A', iconBg: 'rgba(255,255,255,0.1)', textColor: '#FFFFFF', descColor: 'rgba(255,255,255,0.6)', linkColor: '#CC3333', icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>` },
+  { name: 'Live Commerce', chineseName: '直播电商', description: 'Verkauf live, nativ in der App. Host, Produkt-Skript, Echtzeit-Interaktion mit den Zuschauern. Manche Marken bringen mehrere Millionen Menschen in einen einzigen Stream.', image: '/images/platforms/douyin-ecosystem/live-commerce.png', bg: '#CC3333', iconBg: 'rgba(255,255,255,0.2)', textColor: '#FFFFFF', descColor: 'rgba(255,255,255,0.8)', linkColor: '#FFFFFF', icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>` },
+  { name: 'Douyin Shop', chineseName: '抖音商城', description: 'Der native Shop in der App. Nutzer suchen, vergleichen und kaufen, ohne Douyin zu verlassen. Jedes Video und jeder Livestream verlinkt direkt zur Produktseite.', image: '/images/platforms/douyin-ecosystem/douyin-shop.png', bg: '#F7F2EE', iconBg: '#E8E0D8', textColor: '#1A1A1A', descColor: '#5C5C5C', linkColor: '#CC3333', icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>` },
+  { name: 'Ocean Engine', chineseName: '巨量引擎', description: 'ByteDances Werbeplattform. TopView für große Launches, In-Feed Ads für täglichen Traffic, Search Ads für kaufbereite Nutzer, DOU+ zum Validieren von Inhalten. Budget zum echten Preis durchgereicht, ohne versteckte Marge.', image: '/images/platforms/douyin-ecosystem/ocean-engine.png', bg: '#1A1A1A', iconBg: 'rgba(255,255,255,0.1)', textColor: '#FFFFFF', descColor: 'rgba(255,255,255,0.6)', linkColor: '#CC3333', icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>` },
+  { name: 'Xingtu', chineseName: '星图', description: 'Der offizielle Creator-Marktplatz auf Douyin. Wir identifizieren passende Profile, jagen Fake-Follower, prüfen frühere Kampagnen. Sie geben die Auswahl frei, bevor irgendetwas anläuft.', image: '/images/platforms/douyin-ecosystem/xingtu.png', bg: '#E8E0D8', iconBg: '#FFFFFF', textColor: '#1A1A1A', descColor: '#5C5C5C', linkColor: '#CC3333', icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>` },
+  { name: 'DOU+', chineseName: '抖加', description: 'Das native Tool, um ein Video auf einer breiteren Audience zu testen. Ein kleines Budget genügt für die ersten Signale. Zieht die Reaktion an, beschleunigen wir; sonst wechseln wir das Asset.', image: '/images/platforms/douyin-ecosystem/dou-plus.png', bg: '#B02D2D', iconBg: 'rgba(255,255,255,0.2)', textColor: '#FFFFFF', descColor: 'rgba(255,255,255,0.8)', linkColor: '#FFFFFF', icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>` },
+];
+
+const services = [
+  { title: 'Konteneröffnung und Strategie', description: 'Wir eröffnen und zertifizieren Ihr Unternehmenskonto, regeln die Compliance-Formalitäten und bauen Ihre Redaktionsstrategie. Content-Säulen, Kalender, Wochentakt, Zielwerte.', result: 'Ein zertifiziertes, einsatzbereites Douyin-Konto mit präzisem Fahrplan.', icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/></svg>`, image: '/images/platforms/douyin-services/setup-strategy.png' },
+  { title: 'Content-Produktion', description: 'Für Douyin gemachte Videos, gedreht von unserem Team in China. Produktdemos, Lifestyle-Sequenzen, Tutorials, Backstage, Mini-Dramas. HubStudio.ai übernimmt Visuals und erste Drafts. Unsere Muttersprachler gehen jeden Output gegen.', result: 'Kurzvideos, lokal gedacht, auf Douyin zugeschnitten.', icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>`, image: '/images/platforms/douyin-services/content-production.png' },
+  { title: 'Live Commerce', description: 'Wir bereiten Ihre Verkaufs-Livestreams vor und moderieren sie. Host-Auswahl, Produkt-Skript, Echtzeit-Interaktion mit der Audience, gezielte Auswertung nach jedem Stream. Gedacht für Launches, Höhepunkte und wiederkehrende Verkäufe.', result: 'Livestreams, die Zuschauer in Käufer verwandeln.', icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>`, image: '/images/platforms/douyin-services/live-commerce.png' },
+  { title: 'KOL- und KOC-Kampagnen', description: 'Wir identifizieren Creator über Xingtu und unser über die Jahre gepflegtes Feldnetzwerk. Jedes Profil wird durchleuchtet: Fake-Follower, Kampagnenhistorie, Markenpassung. Sie geben die Auswahl frei, bevor wir starten.', result: 'Influencer-Kampagnen mit echtem Engagement und messbaren Ergebnissen.', icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`, image: '/images/platforms/douyin-services/kol-campaigns.png' },
+  { title: 'Werbung', description: 'Werbung über Ocean Engine, ByteDances Plattform. TopView für große Launches, In-Feed Ads für täglichen Traffic, Search Ads für kaufbereite Nutzer, DOU+ zum Testen, Branded Effects zur Community-Aktivierung. Budget zum echten Preis weitergegeben.', result: 'Zielgerichtete Kampagnen mit transparentem Zeilen-Reporting.', icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>`, image: '/images/platforms/douyin-services/advertising.png' },
+  { title: 'Douyin Shop', description: 'Ihr Shop in der App, mit allem anderen verbunden. Wir übernehmen Setup, Produktseiten, Pricing und laufende Optimierung. Jedes Video und jeder Livestream, den wir produzieren, führt direkt zu Ihren Produkten.', result: 'Ein Shop, der Zuschauer reibungslos zu Kunden macht.', icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>`, image: '/images/platforms/douyin-services/douyin-shop.png' },
+];
+
+const bestPractices = [
+  { title: 'Alles entscheidet sich in der ersten Sekunde.', description: 'Öffnen Sie mit Bewegung, einer Frage, einem Visual, das den Blick hält. Niemals mit einem Logo. Der Zuschauer steigt aus, bevor er die Botschaft erfasst hat.' },
+  { title: 'Vertikal, ohne Ausnahme. Format 9:16.', description: 'Ein Video, das nach recyceltem TV-Spot aussieht, findet kein Publikum. Douyin wird vertikal konsumiert, ohne Diskussion.' },
+  { title: 'Drei bis fünf Veröffentlichungen pro Woche, mindestens.', description: 'Der Algorithmus belohnt Konstanz. Eine Woche Pause und die Reichweite bricht spürbar ein.' },
+  { title: 'Die vollständige Ansicht bleibt das entscheidende Signal.', description: 'Der Algorithmus misst zuerst den Anteil der Zuschauer, die bis zum Ende dranbleiben. Jede Sekunde, die die nächste nicht verdient, gehört geschnitten.' },
+  { title: 'Trends halten nur einen Moment.', description: 'Wir verfolgen jeden Morgen aufkommende Sounds, Hashtags und Formate. Einen Trend zu Beginn zu erwischen, vervielfacht die Reichweite manchmal um das Zehn-, manchmal Hundertfache.' },
+  { title: 'Das Produkt kommt nach dem Interesse, nie davor.', description: 'Frontaler Verkauf funktioniert auf Douyin nicht. Was zieht, informiert zuerst, unterhält manchmal. Das Produkt folgt, in dieser Reihenfolge.' },
+  { title: 'Der Ton wiegt so schwer wie das Bild.', description: 'Douyin wird nicht stumm geschaut. Musik, Voice-over, klangliche Signatur: alles ebenso entscheidend wie das, was auf dem Bildschirm läuft.' },
+  { title: 'Auf Mandarin verfasst, niemals übersetzt.', description: 'Aus dem Englischen übersetzter Content hebt nicht ab. Unsere Muttersprachler schreiben direkt auf Mandarin, in einem Register, das stimmt.' },
+];
+
+const steps = [
+  { number: '01', title: 'Erstgespräch.', description: 'Sie stellen uns Ihre Marke, Ihre Ziele und Ihre aktuelle Lage in China vor. Kein Verkaufspitch, nur die richtigen Fragen.', icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>` },
+  { number: '02', title: 'Angebot.', description: 'Präziser Umfang, fester Preis. Jedes Deliverable schriftlich detailliert. Sie wissen, was Sie bekommen, bevor Sie unterschreiben.', icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>` },
+  { number: '03', title: 'In zwei Wochen live.', description: 'Konten konfiguriert, erstes Video veröffentlicht. Fünfzehn Tage zwischen Unterschrift und Go-Live.', icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>` },
+];
+
+const faqs = [
+  { q: 'Wer steuert unser Konto im Alltag?', a: 'Unser Team in China. Muttersprachliche Redakteure, die jeden Tag Content auf Douyin produzieren und Kampagnen steuern. Ein dedizierter Account-Lead kennt Ihre Marke in der Tiefe.' },
+  { q: 'Braucht es eine chinesische Geschäftslizenz?', a: 'Für ein Unternehmenskonto braucht es entweder eine chinesische Lizenz oder den Weg über eine autorisierte Agentur. Wir decken beide Fälle ab. Sie können posten und Werbung ausspielen, ohne eine lokale Einheit zu gründen.' },
+  { q: 'Was unterscheidet TheRedScroll?', a: 'Klarer Umfang, fester Preis. Team vor Ort in China. KI-gestützte Produktion, gegengelesen von Muttersprachlern. Wir haben 37 Agenturen der Branche analysiert: keine bietet Festpreis-Pakete.' },
+  { q: 'Wie lange bis zu Ergebnissen?', a: 'Die meisten Marken sehen erste Traktion zwischen acht und zwölf Wochen. Paid-Kampagnen können in wenigen Tagen liefern. Hängt von Kategorie und Ambitionsniveau ab.' },
+  { q: 'Was kostet es?', a: 'Festpreis-Pakete mit aufgeschlüsselten Deliverables. Mediabudget wird separat zum echten Preis abgerechnet. Keine versteckte Marge. Vereinbaren Sie ein Gespräch, wir lotsen Sie zum passenden Modell.' },
+  { q: 'Können wir ohne Einheit in China werben?', a: 'Ja. Internationale Marken werben über unsere Struktur, als autorisierte Agentur. Keine lokale Einheit erforderlich.' },
+  { q: 'Welche Content-Formate produzieren Sie?', a: 'Produktdemos, Lifestyle-Videos, Tutorials, Mini-Dramas, KOL-Kooperationen, Verkaufs-Livestreams. Alles auf Mandarin, von unserem Team in China. KI hält den Takt, ein menschliches Auge gibt jedes Deliverable frei.' },
+  { q: 'Wie wählen Sie die KOLs aus?', a: 'Über Xingtu und unser eigenes Netzwerk. Jeder Creator wird durchleuchtet: Fake-Follower, Engagement-Qualität, demografische Daten, Markenpassung. Sie geben die finale Liste frei. Nichts läuft ohne Ihre Zustimmung.' },
+  { q: 'Können Sie einen Douyin Shop aufsetzen?', a: 'Ja. Einrichtung, Produktseiten, Pricing, laufende Optimierung. Alles verzahnt mit Ihrer Content-Strategie, damit jedes Video zu Ihren Produkten führt.' },
+  { q: 'Wie sehen Ihre Berichte aus?', a: 'Monatlich. Klare Zahlen. Follower, Views, Engagement, ROAS, Conversions. Was funktioniert hat, was nicht, was wir im nächsten Monat justieren.' },
+];
+---
+
+<PageLayout
+  title="Douyin-Marketing aus Shanghai gesteuert | TheRedScroll"
+  description="Douyin-Marketing aus Shanghai gesteuert. Konteneröffnung, Content, Werbung, Live Commerce, KOL-Kampagnen. Klarer Umfang, fester Preis. 750 Millionen täglich aktive Nutzer."
+  lang="de"
+>
+  <section class="w-full bg-[#1A1A1A] py-[80px] max-[640px]:py-[48px] relative overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/douyin-hero.png')" aria-hidden="true"></div>
+    <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[140px] max-[640px]:text-[80px] font-medium text-[#FFFFFF] opacity-[0.03] pointer-events-none select-none whitespace-nowrap" aria-hidden="true">抖音</span>
+    <Container class="relative z-[1]">
+      <div class="max-w-[800px] mx-auto text-center">
+        <a href="/de/platforms/others" class="inline-flex items-center gap-[6px] text-[13px] text-[#5C5C5C] mb-[16px] transition-colors duration-150 hover:text-[#FFFFFF]">&larr; Alle Plattformen</a>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">Douyin-Marketing</p>
+        <UpdatedDate lang="de" date="Mai 2026" variant="light" class="mb-[8px]" />
+        <h1 class="text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] text-[#FFFFFF] mb-[8px]">750 Millionen tägliche Nutzer. Eine Plattform. Wir posten dort jeden Tag.</h1>
+        <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal mb-[24px]">Douyin-Marketing aus Shanghai gesteuert. Konteneröffnung, Content, Werbung, Live Commerce, KOL-Kampagnen. Klarer Umfang, fester Preis, Team vor Ort.</p>
+        <Button variant="primary" href="/de/contact">Gespräch vereinbaren</Button>
+      </div>
+    </Container>
+  </section>
+
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="flex items-end justify-between gap-[32px] max-[640px]:flex-col max-[640px]:items-start max-[640px]:gap-[16px] mb-[32px]">
+        <div class="max-w-[560px]">
+          <SectionBar />
+          <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[8px]">Mehr als eine Kurzvideo-App. Chinas wichtigster eCommerce-Kanal.</h2>
+          <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">Douyin in Zahlen.</p>
+        </div>
+        <Button variant="primary" href="/de/contact" class="shrink-0">Gespräch vereinbaren</Button>
+      </div>
+    </Container>
+    <div class="relative">
+      <div class="absolute right-0 top-0 bottom-0 w-[80px] bg-gradient-to-l from-[#FFFFFF] to-transparent z-[1] pointer-events-none" aria-hidden="true"></div>
+      <div class="overflow-x-auto scrollbar-hide" id="stats-scroll">
+        <div class="flex gap-[16px] px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pb-[8px]" style="min-width: min-content;">
+          {stats.map((stat, i) => (
+            <div class="stat-card relative shrink-0 w-[220px] max-[640px]:w-[180px] h-[200px] max-[640px]:h-[170px] rounded-[12px] overflow-hidden flex flex-col justify-end cursor-grab select-none" data-stat-index={i}>
+              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out stat-bg" style={`background-image: url('${stat.image}')`} aria-hidden="true"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-[rgba(26,26,26,0.9)] via-[rgba(26,26,26,0.4)] to-transparent" aria-hidden="true"></div>
+              <div class="relative z-[1] p-[20px]">
+                <span class="text-[32px] text-[#FFFFFF] font-medium leading-none stat-counter block mb-[4px]" data-target={stat.value}>0</span>
+                <span class="text-[12px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.4]">{stat.label}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]"><SectionBar /></div>
+        <SectionHeading overline="Warum Douyin zählt">Algorithmus, Content, Commerce. Auf Douyin spielt alles zusammen.</SectionHeading>
+      </div>
+      <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
+          <div class="w-full aspect-[16/9] overflow-hidden"><img src="/images/platforms/douyin-why/algorithm.png" alt="Douyin-For-You-Feed-Algorithmus" class="w-full h-full object-cover" loading="lazy" decoding="async" /></div>
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Der schnellste Algorithmus Chinas</h3>
+            <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">Die Follower-Zahl spielt kaum eine Rolle. Ein gestern gestartetes Konto kann morgen Millionen Views haben. Der Algorithmus zeigt Inhalte den Nutzern, die sie sehen wollen, nicht denen, die der Marke folgen.</p>
+          </div>
+        </div>
+        <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
+          <div class="w-full aspect-[16/9] overflow-hidden"><img src="/images/platforms/douyin-why/commerce.png" alt="In-App-Commerce auf Douyin mit Produktverkäufen via Livestream" class="w-full h-full object-cover" loading="lazy" decoding="async" /></div>
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Commerce in die App eingebaut</h3>
+            <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">Vom Video zum Kauf in unter 30 Sekunden. Douyin Shop, Live Commerce, Produktkarten in Videos. Konsumenten verlassen die App nicht, um zu kaufen.</p>
+          </div>
+        </div>
+        <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
+          <div class="w-full aspect-[16/9] overflow-hidden"><img src="/images/platforms/douyin-why/creator.png" alt="Creator und Trends auf Douyin" class="w-full h-full object-cover" loading="lazy" decoding="async" /></div>
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Creator und Trends im Sekundentakt</h3>
+            <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">15 Millionen aktive Creator. Trends, die in Stunden hochkommen. Marken, die mit dem richtigen Sound oder Format einsteigen, multiplizieren die Reichweite ohne Mehrkosten.</p>
+          </div>
+        </div>
+      </div>
+      <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] mt-[24px] text-center max-w-[680px] mx-auto">Douyin ist kein TikTok-Klon. Es ist die Schwesterplattform, mit eigenem Algorithmus, eigenem Werbesystem und einem voll integrierten eCommerce-Backend. In China ist es der Kanal mit der kürzesten Strecke vom Content zum Umsatz.</p>
+    </Container>
+  </section>
+
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]"><SectionBar /></div>
+        <SectionHeading overline="Das Douyin-Ökosystem">Wie greifen die sechs Bausteine für Marken ineinander?</SectionHeading>
+      </div>
+      <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        {ecosystem.map((item) => (
+          <div class="eco-card relative border-none overflow-hidden flex flex-col justify-between" style={`border-radius: ${item.bg === '#1A1A1A' || item.bg === '#CC3333' || item.bg === '#B02D2D' ? '12px' : '10px'}`} data-tilt-eco>
+            <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out eco-bg" style={`background-image: url('${item.image}')`} aria-hidden="true"></div>
+            <div class="absolute inset-0" style={`background: ${item.bg}; opacity: 0.72`} aria-hidden="true"></div>
+            <div class="relative z-[1] p-[24px] max-[640px]:p-[20px]">
+              <div class="w-[40px] h-[40px] rounded-[6px] flex items-center justify-center mb-[16px]" style={`background: ${item.iconBg}`}><Fragment set:html={item.icon} /></div>
+              <h3 class="text-[18px] font-medium leading-[1.3] mb-[4px]" style={`color: ${item.textColor}`}>{item.name}</h3>
+              <span class="text-[12px] font-normal mb-[8px] block" style={`color: ${item.descColor}`}>{item.chineseName}</span>
+              <p class="text-[13px] font-normal leading-[1.5]" style={`color: ${item.descColor}`}>{item.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </Container>
+  </section>
+
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]"><SectionBar /></div>
+        <SectionHeading overline="Was wir auf Douyin machen">Sechs Leistungen, jede an ein konkretes Deliverable gebunden.</SectionHeading>
+      </div>
+      <div class="grid grid-cols-[340px_1fr] max-[1024px]:grid-cols-[280px_1fr] max-[768px]:hidden gap-[24px] items-stretch">
+        <div class="flex flex-col gap-[4px]">
+          {services.map((service, i) => (
+            <button class:list={['svc-selector flex items-center gap-[12px] px-[16px] py-[14px] rounded-[8px] text-left cursor-pointer border-none transition-all duration-300 relative', i === 0 ? 'svc-selector-active' : '']} data-svc-select={i} style={i === 0 ? 'background: #F7F2EE' : 'background: transparent'}>
+              <div class="svc-sel-indicator absolute left-0 top-[12px] bottom-[12px] w-[3px] rounded-full transition-all duration-300" style={i === 0 ? 'background: #CC3333; opacity: 1' : 'background: #CC3333; opacity: 0'}></div>
+              <div class="svc-sel-icon w-[36px] h-[36px] rounded-[6px] shrink-0 flex items-center justify-center transition-all duration-300" style={i === 0 ? 'background: #E8E0D8; color: #CC3333' : 'background: transparent; color: #5C5C5C'}><Fragment set:html={service.icon} /></div>
+              <span class="svc-sel-label text-[14px] font-medium leading-[1.3] transition-colors duration-300" style={i === 0 ? 'color: #1A1A1A' : 'color: #5C5C5C'}>{service.title}</span>
+            </button>
+          ))}
+        </div>
+        <div class="relative">
+          {services.map((service, i) => (
+            <div class="svc-panel relative rounded-[12px] overflow-hidden h-full" data-svc-panel={i} style={i === 0 ? '' : 'display: none;'}>
+              <div class="absolute inset-0 bg-cover bg-center" style={`background-image: url('${service.image}')`} aria-hidden="true"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-[rgba(26,26,26,0.95)] via-[rgba(26,26,26,0.6)] to-[rgba(26,26,26,0.15)]" aria-hidden="true"></div>
+              <div class="relative z-[1] p-[32px] max-[1024px]:p-[24px] h-full flex flex-col justify-end">
+                <h3 class="text-[22px] font-medium leading-[1.25] mb-[8px] text-[#FFFFFF]">{service.title}</h3>
+                <p class="text-[14px] font-normal leading-[1.6] text-[rgba(255,255,255,0.7)] mb-[16px]">{service.description}</p>
+                <div class="flex items-center gap-[8px] pt-[12px] border-t border-[rgba(255,255,255,0.15)]">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                  <p class="text-[13px] font-medium leading-[1.5] text-[#FFFFFF]">{service.result}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div class="hidden max-[768px]:flex flex-col gap-[12px]">
+        {services.map((service) => (
+          <div class="relative rounded-[12px] overflow-hidden">
+            <div class="absolute inset-0 bg-cover bg-center" style={`background-image: url('${service.image}')`} aria-hidden="true"></div>
+            <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.82]" aria-hidden="true"></div>
+            <div class="relative z-[1] p-[24px]">
+              <div class="w-[40px] h-[40px] rounded-[6px] flex items-center justify-center mb-[12px] bg-[rgba(255,255,255,0.12)] text-[#FFFFFF]"><Fragment set:html={service.icon} /></div>
+              <h3 class="text-[18px] font-medium leading-[1.3] mb-[8px] text-[#FFFFFF]">{service.title}</h3>
+              <p class="text-[13px] font-normal leading-[1.5] mb-[12px] text-[rgba(255,255,255,0.7)]">{service.description}</p>
+              <p class="text-[13px] font-medium leading-[1.5] text-[#FFFFFF]">Ergebnis: {service.result}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </Container>
+  </section>
+
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="bg-[#1A1A1A] rounded-[12px] py-[48px] px-[48px] max-[1024px]:px-[32px] max-[1024px]:py-[40px] max-[640px]:px-[20px] max-[640px]:py-[32px]">
+        <div class="mb-[40px] max-[640px]:mb-[32px]">
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">Von unserem Team vor Ort</p>
+          <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF]">Was auf Douyin wirklich funktioniert</h2>
+          <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.5] mt-[8px] max-w-[680px]">Wir produzieren und schalten täglich aus China. Was folgt, kommt aus der Praxis, nicht aus der Theorie.</p>
+        </div>
+        <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[20px]">
+          {bestPractices.map((practice) => (
+            <div class="border-l-[3px] border-[#CC3333] pl-[16px]">
+              <h3 class="text-[16px] text-[#FFFFFF] font-medium leading-[1.3] mb-[4px]">{practice.title}</h3>
+              <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.5]">{practice.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-[340px_1fr] max-[1024px]:grid-cols-[280px_1fr] max-[768px]:grid-cols-1 gap-[48px] max-[768px]:gap-[32px]">
+        <div>
+          <div class="sticky top-[84px] max-[640px]:static">
+            <SectionBar />
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">FAQ</p>
+            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">Häufige Fragen</h2>
+            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">Was Sie wissen sollten, bevor Sie mit TheRedScroll auf Douyin starten.</p>
+          </div>
+        </div>
+        <div>
+          {faqs.map((faq) => (
+            <div class="border-b border-[rgba(0,0,0,0.08)]" data-faq>
+              <button class="w-full flex items-center justify-between py-[20px] text-left bg-transparent border-none cursor-pointer group" data-faq-trigger aria-expanded="false">
+                <h3 class="text-[16px] font-medium leading-[1.3] text-[#1A1A1A] group-hover:text-[#5C5C5C] transition-colors duration-150 pr-[16px]">{faq.q}</h3>
+                <svg class="w-[16px] h-[16px] shrink-0 text-[#5C5C5C] transition-transform duration-300 faq-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6l4 4 4-4"/></svg>
+              </button>
+              <div class="faq-content overflow-hidden" style="height: 0; opacity: 0;">
+                <div class="pb-[20px]"><p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">{faq.a}</p></div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <section class="relative mt-[96px] max-[640px]:mt-[64px] pt-[80px] pb-[80px] max-[1024px]:pt-[64px] max-[1024px]:pb-[64px] max-[640px]:pt-[48px] max-[640px]:pb-[48px] overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero/douyin-hero.png')" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.88]" aria-hidden="true"></div>
+    <Container class="relative z-[1]">
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]"><div class="w-[40px] h-[3px] bg-[#CC3333] rounded-none"></div></div>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">So legen wir los</p>
+        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF]">Von null zu einem aktiven Douyin-Konto in zwei Wochen.</h2>
+      </div>
+      <div class="grid grid-cols-3 max-[640px]:grid-cols-1 gap-[24px] max-[640px]:gap-[16px]">
+        {steps.map((step) => (
+          <div class="bg-[rgba(255,255,255,0.06)] border-[0.5px] border-[rgba(255,255,255,0.1)] rounded-[12px] p-[32px] max-[640px]:p-[20px] text-center">
+            <div class="w-[64px] h-[64px] rounded-full bg-[rgba(255,255,255,0.08)] border-[0.5px] border-[rgba(255,255,255,0.15)] flex items-center justify-center mx-auto mb-[20px]"><Fragment set:html={step.icon} /></div>
+            <h3 class="text-[18px] text-[#FFFFFF] font-medium leading-[1.3] mb-[8px]">{step.title}</h3>
+            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6]">{step.description}</p>
+          </div>
+        ))}
+      </div>
+      <div class="text-center mt-[40px]"><Button variant="primary" href="/de/contact">Gespräch vereinbaren</Button></div>
+      <div class="mt-[48px] pt-[24px] border-t border-[rgba(255,255,255,0.1)] text-center">
+        <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal mb-[12px]">Auch lesenswert</p>
+        <div class="flex justify-center gap-[24px] flex-wrap">
+          <a href="/de/platforms/wechat" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">WeChat-Marketing &rarr;</a>
+          <a href="/de/platforms/rednote" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">RedNote-Marketing &rarr;</a>
+          <a href="/de/platforms/weibo" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Weibo-Marketing &rarr;</a>
+          <a href="/de/platforms/others" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Weitere Plattformen &rarr;</a>
+        </div>
+      </div>
+    </Container>
+  </section>
+<style>
+  .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+  .svc-panel { transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1); }
+  .svc-selector:hover { background: #F7F2EE !important; }
+  .faq-content { transition: height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease; }
+  .stat-card { opacity: 0; transform: translateY(32px); transition: opacity 1s ease, transform 1s ease; }
+  .stat-card.revealed { opacity: 1; transform: translateY(0); }
+  .stat-card:hover .stat-bg { transform: scale(1.08); }
+  .eco-card:hover .eco-bg { transform: scale(1.08); }
+</style>
+
+<script>
+  const statsScroll = document.getElementById('stats-scroll');
+  if (statsScroll) {
+    let isDown = false; let startX: number; let scrollLeft: number;
+    statsScroll.addEventListener('mousedown', (e) => { isDown = true; statsScroll.style.cursor = 'grabbing'; startX = e.pageX - statsScroll.offsetLeft; scrollLeft = statsScroll.scrollLeft; });
+    statsScroll.addEventListener('mouseleave', () => { isDown = false; statsScroll.style.cursor = ''; });
+    statsScroll.addEventListener('mouseup', () => { isDown = false; statsScroll.style.cursor = ''; });
+    statsScroll.addEventListener('mousemove', (e) => { if (!isDown) return; e.preventDefault(); const x = e.pageX - statsScroll.offsetLeft; statsScroll.scrollLeft = scrollLeft - (x - startX); });
+    let autoScrollPaused = false; let autoScrollSpeed = 0.5;
+    statsScroll.addEventListener('mouseenter', () => { autoScrollPaused = true; });
+    statsScroll.addEventListener('mouseleave', () => { autoScrollPaused = false; isDown = false; statsScroll.style.cursor = ''; });
+    statsScroll.addEventListener('touchstart', () => { autoScrollPaused = true; }, { passive: true });
+    statsScroll.addEventListener('touchend', () => { autoScrollPaused = false; });
+    function autoScroll() { if (!autoScrollPaused && statsScroll) { const maxScroll = statsScroll.scrollWidth - statsScroll.clientWidth; statsScroll.scrollLeft += autoScrollSpeed; if (statsScroll.scrollLeft >= maxScroll) { statsScroll.scrollLeft = 0; } } requestAnimationFrame(autoScroll); }
+    requestAnimationFrame(autoScroll);
+  }
+  const statCards = document.querySelectorAll('.stat-card');
+  const statsObserver = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) { const card = entry.target as HTMLElement; const index = parseInt(card.dataset.statIndex || '0'); const delay = index * 150; setTimeout(() => { card.classList.add('revealed'); const counter = card.querySelector('.stat-counter') as HTMLElement; if (counter) { setTimeout(() => { animateCounter(counter, counter.dataset.target || '0'); }, 400); } }, delay); statsObserver.unobserve(card); } }); }, { threshold: 0.05 });
+  statCards.forEach((card) => statsObserver.observe(card));
+  function animateCounter(el: HTMLElement, target: string) { const match = target.match(/^([\d.]+)(.*)$/); if (!match) { el.textContent = target; return; } const endNum = parseFloat(match[1]); const suffix = match[2]; const duration = 2000; const startTime = performance.now(); function tick(now: number) { const elapsed = now - startTime; const progress = Math.min(elapsed / duration, 1); const eased = 1 - Math.pow(1 - progress, 3); const current = eased * endNum; if (endNum >= 10) { el.textContent = Math.round(current) + suffix; } else { el.textContent = current.toFixed(1).replace(/\.0$/, '') + suffix; } if (progress < 1) requestAnimationFrame(tick); else el.textContent = target; } requestAnimationFrame(tick); }
+  const selectors = document.querySelectorAll('[data-svc-select]'); const panels = document.querySelectorAll('[data-svc-panel]'); let activeIndex = 0; let isAnimating = false;
+  selectors.forEach((sel) => { sel.addEventListener('click', () => { const index = parseInt((sel as HTMLElement).dataset.svcSelect || '0'); if (index === activeIndex || isAnimating) return; isAnimating = true; selectors.forEach((s) => { const el = s as HTMLElement; el.style.background = 'transparent'; const ind = el.querySelector('.svc-sel-indicator') as HTMLElement; const ico = el.querySelector('.svc-sel-icon') as HTMLElement; const lbl = el.querySelector('.svc-sel-label') as HTMLElement; if (ind) ind.style.opacity = '0'; if (ico) { ico.style.background = 'transparent'; ico.style.color = '#5C5C5C'; } if (lbl) lbl.style.color = '#5C5C5C'; }); const active = sel as HTMLElement; active.style.background = '#F7F2EE'; const ind = active.querySelector('.svc-sel-indicator') as HTMLElement; const ico = active.querySelector('.svc-sel-icon') as HTMLElement; const lbl = active.querySelector('.svc-sel-label') as HTMLElement; if (ind) ind.style.opacity = '1'; if (ico) { ico.style.background = '#E8E0D8'; ico.style.color = '#CC3333'; } if (lbl) lbl.style.color = '#1A1A1A'; const oldPanel = panels[activeIndex] as HTMLElement; const newPanel = panels[index] as HTMLElement; const goingDown = index > activeIndex; oldPanel.style.transition = 'opacity 0.3s ease, transform 0.3s ease'; oldPanel.style.opacity = '0'; oldPanel.style.transform = goingDown ? 'translateY(-20px)' : 'translateY(20px)'; setTimeout(() => { oldPanel.style.display = 'none'; oldPanel.style.transform = ''; oldPanel.style.transition = ''; newPanel.style.opacity = '0'; newPanel.style.transform = goingDown ? 'translateY(20px)' : 'translateY(-20px)'; newPanel.style.display = ''; requestAnimationFrame(() => { newPanel.style.transition = 'opacity 0.35s ease, transform 0.35s ease'; newPanel.style.opacity = '1'; newPanel.style.transform = 'translateY(0)'; setTimeout(() => { newPanel.style.transition = ''; activeIndex = index; isAnimating = false; }, 350); }); }, 280); }); });
+  document.querySelectorAll('[data-tilt-eco]').forEach((card) => { const el = card as HTMLElement; el.addEventListener('mousemove', (e: MouseEvent) => { const rect = el.getBoundingClientRect(); const x = e.clientX - rect.left; const y = e.clientY - rect.top; const centerX = rect.width / 2; const centerY = rect.height / 2; const rotateX = ((y - centerY) / centerY) * -3; const rotateY = ((x - centerX) / centerX) * 3; el.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`; }); el.addEventListener('mouseleave', () => { el.style.transform = 'perspective(800px) rotateX(0deg) rotateY(0deg) scale(1)'; }); });
+  document.querySelectorAll('[data-faq]').forEach((item) => { const trigger = item.querySelector('[data-faq-trigger]') as HTMLButtonElement; const content = item.querySelector('.faq-content') as HTMLElement; if (!trigger || !content) return; trigger.addEventListener('click', () => { const isOpen = trigger.getAttribute('aria-expanded') === 'true'; if (isOpen) { content.style.height = content.scrollHeight + 'px'; requestAnimationFrame(() => { content.style.height = '0'; content.style.opacity = '0'; }); trigger.setAttribute('aria-expanded', 'false'); const ch = trigger.querySelector('.faq-chevron') as HTMLElement; if (ch) ch.style.transform = 'rotate(0deg)'; } else { content.style.height = '0'; requestAnimationFrame(() => { content.style.height = content.scrollHeight + 'px'; content.style.opacity = '1'; }); trigger.setAttribute('aria-expanded', 'true'); const ch = trigger.querySelector('.faq-chevron') as HTMLElement; if (ch) ch.style.transform = 'rotate(180deg)'; } }); });
+</script>
+</PageLayout>

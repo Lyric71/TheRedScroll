@@ -4,6 +4,7 @@ import Container from '../../components/ui/Container.astro';
 import SectionBar from '../../components/ui/SectionBar.astro';
 import SectionHeading from '../../components/ui/SectionHeading.astro';
 import Button from '../../components/ui/Button.astro';
+import { caseStudySchema } from '../../lib/schema';
 
 const services = ['Campaign', 'eCommerce', 'Influencer / KOL', 'Media', 'Social'];
 const platforms = ['WeChat', 'Weibo', 'Tmall'];
@@ -13,6 +14,15 @@ const platforms = ['WeChat', 'Weibo', 'Tmall'];
   title="Marriott China Super Brand Day Case Study | TheRedScroll"
   description="How Marriott ran its first Super Brand Day in China. Social, media, eCommerce, and KOL activation that drove millions in Tmall sales and Bonvoy signups."
   ogImage="/images/clients/Marriott/Marriot-campaign-SBD-KV.jpg"
+  schema={caseStudySchema({
+    clientName: 'Marriott',
+    headline: 'Marriott: running its first Super Brand Day in China',
+    description: 'How Marriott ran its first Super Brand Day in China combining social, media, eCommerce, and KOL activation to drive Tmall sales and Bonvoy signups.',
+    url: '/work/marriott',
+    image: '/images/clients/Marriott/Marriot-campaign-SBD-KV.jpg',
+    industry: 'Hospitality',
+    platforms,
+  })}
 >
 
   <!-- Hero -->

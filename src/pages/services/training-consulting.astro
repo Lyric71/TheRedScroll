@@ -6,6 +6,7 @@ import SectionHeading from '../../components/ui/SectionHeading.astro';
 import Button from '../../components/ui/Button.astro';
 import FaqAccordion from '../../components/sections/FaqAccordion.astro';
 import GettingStarted from '../../components/sections/GettingStarted.astro';
+import { faqPageSchema, serviceSchema } from '../../lib/schema';
 
 
 const faqs = [
@@ -41,6 +42,15 @@ const gettingStartedSteps = [
 <PageLayout
   title="China Social Media Consulting & Training | TheRedScroll"
   description="Strategy consulting, AIGC workshops, social listening, competitor watch, KOL audits, crisis playbooks, campaign training. Team in Shanghai."
+  schema={[
+    serviceSchema({
+      name: 'China Social Media Training and Consulting',
+      description: 'Strategy consulting, AIGC workshops, social listening setup, competitor monitoring, KOL audits, crisis playbooks, and team training for marketing teams working in China.',
+      url: '/services/training-consulting',
+      serviceType: 'Consulting',
+    }),
+    faqPageSchema(faqs),
+  ]}
 >
 
   <!-- Hero — Dark hero banner -->

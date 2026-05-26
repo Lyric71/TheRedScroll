@@ -1,0 +1,574 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+import UpdatedDate from '../../../components/ui/UpdatedDate.astro';
+
+const stats = [
+  { label: 'Usuarios activos al mes', value: '350M+', image: '/images/platforms/rednote-stats/monthly-active-users.png' },
+  { label: 'Visualizaciones de notas al día', value: '9.12B', image: '/images/platforms/rednote-stats/daily-post-views.png' },
+  { label: 'Búsquedas al mes', value: '1B+', image: '/images/platforms/rednote-stats/monthly-search-queries.png' },
+  { label: 'De usuarios entre 18 y 35 años', value: '70%', image: '/images/platforms/rednote-stats/users-aged-18-35.png' },
+  { label: 'De contenido creado por los propios usuarios', value: '90%', image: '/images/platforms/rednote-stats/user-generated-content.png' },
+  { label: 'Tasa de conversión para marcas extranjeras', value: '21.4%', image: '/images/platforms/rednote-stats/conversion-rate.png' },
+  { label: 'Minutos en la plataforma al día', value: '55 min', image: '/images/platforms/rednote-stats/daily-time-per-user.png' },
+  { label: 'Usuarios buscando consejos de compra al mes', value: '200M+', image: '/images/platforms/rednote-stats/purchase-advice-users.png' },
+];
+
+const whyEssential = [
+  {
+    title: 'Donde el consumidor chino decide su compra',
+    description: 'Más del 60 % de los usuarios abre primero la barra de búsqueda. Buscan reseñas, experiencias reales. RedNote es su primer reflejo antes de comprar.',
+    image: '/images/platforms/rednote-why/purchase-decision.png',
+  },
+  {
+    title: 'La confianza por encima de todo',
+    description: 'El algoritmo premia la autenticidad y penaliza la publicidad encubierta. Un guardado o un comentario pesa muchísimo más que un simple «me gusta».',
+    image: '/images/platforms/rednote-why/trust-distribution.png',
+  },
+  {
+    title: 'Una audiencia con poder de gasto',
+    description: 'Joven, urbana, con poder adquisitivo. Concentrada en ciudades de primer y segundo nivel. Sabe lo que quiere y tiene con qué pagarlo.',
+    image: '/images/platforms/rednote-why/spending-power.png',
+  },
+  {
+    title: 'Del contenido a la compra, sin salir de la app',
+    description: 'Descubrir, comparar, probar, comprar. Todo el recorrido ocurre dentro. Sin redirecciones, sin fricción.',
+    image: '/images/platforms/rednote-why/social-commerce.png',
+  },
+];
+
+const algorithm = [
+  {
+    title: 'Distribución por capas',
+    description: 'Cada nota nueva se expone primero a 100-500 usuarios. Si la interacción despega en 24 horas, la plataforma amplía la distribución en oleadas, hasta cientos de miles de visualizaciones.',
+    image: '/images/platforms/rednote-algorithm/staged-distribution.png',
+    bg: '#F7F2EE', iconBg: '#E8E0D8', textColor: '#1A1A1A', descColor: '#5C5C5C',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>`,
+  },
+  {
+    title: 'El score CES',
+    description: 'Un alta de seguidor vale 8 puntos. Un comentario o un share, 4. Un «me gusta» o un guardado, 1. Lo que cuenta es la interacción profunda. Acumular «me gusta» no lleva a nada.',
+    image: '/images/platforms/rednote-algorithm/ces-scoring.png',
+    bg: '#1A1A1A', iconBg: 'rgba(255,255,255,0.1)', textColor: '#FFFFFF', descColor: 'rgba(255,255,255,0.6)',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 6-8"/></svg>`,
+  },
+  {
+    title: 'La autenticidad como regla del juego',
+    description: 'Contenido demasiado comercial, reseñas falsas, automatización: la plataforma sanciona sin avisar. La única visibilidad que aguanta en el tiempo es la que se construye nota a nota, con rigor.',
+    image: '/images/platforms/rednote-algorithm/authenticity-enforced.png',
+    bg: '#CC3333', iconBg: 'rgba(255,255,255,0.2)', textColor: '#FFFFFF', descColor: 'rgba(255,255,255,0.8)',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>`,
+  },
+  {
+    title: 'Dos motores, una sola estrategia',
+    description: 'Cada nota trabaja en dos frentes: el feed Explorar, que recomienda, y la Búsqueda, que capta la intención de compra. Uno alimenta al otro. No se elige entre los dos.',
+    image: '/images/platforms/rednote-algorithm/dual-engine.png',
+    bg: '#E8E0D8', iconBg: '#FFFFFF', textColor: '#1A1A1A', descColor: '#5C5C5C',
+    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>`,
+  },
+];
+
+const services = [
+  {
+    title: 'Apertura y verificación de cuenta',
+    description: 'Alta de la Cuenta Profesional (Blue V), traducción de la licencia comercial, expediente de marca, cumplimiento. Llevamos todos los trámites y le ahorramos varios meses de plazo.',
+    result: 'Una cuenta RedNote verificada, activa y lista para publicar.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/></svg>`,
+    image: '/images/platforms/rednote-services/account-setup.png',
+  },
+  {
+    title: 'Estrategia y producción editorial',
+    description: 'Pilares editoriales, calendario de publicación, formatos diseñados para la plataforma. Visuales producidos con HubStudio.ai. Rodajes en China. Redacción en mandarín por nativos, con adaptación cultural real.',
+    result: 'Contenido pensado para la mecánica de RedNote, no para Instagram.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/></svg>`,
+    image: '/images/platforms/rednote-services/content-strategy.png',
+  },
+  {
+    title: 'Campañas con KOL y KOC',
+    description: 'Gestión completa vía Pugongying, la herramienta oficial de RedNote. Selección de creadores, detección de seguidores falsos, cocreación de contenido y reporting preciso del ROI.',
+    result: 'Colaboraciones con creadores verificados y resultados sin zonas oscuras.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
+    image: '/images/platforms/rednote-services/kol-koc.png',
+  },
+  {
+    title: 'Publicidad de pago',
+    description: 'In-Feed Ads, Search Ads y pilotaje completo de Juguang, Juguang Lite y Chengfeng para e-commerce. Test creativo, ajuste de pujas, decisiones en tiempo real. El presupuesto de medios se factura aparte, a coste real.',
+    result: 'Campañas segmentadas con un reporting de gasto a libro abierto.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>`,
+    image: '/images/platforms/rednote-services/paid-advertising.png',
+  },
+  {
+    title: 'E-commerce y live commerce',
+    description: 'Montaje de la tienda in-app, notas interactivas con enlaces de compra, producción de sesiones en directo. El live commerce representa el 90 % de las ventas hechas sin salir de RedNote.',
+    result: 'Una tienda integrada en RedNote, donde cada nota lleva al carrito.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>`,
+    image: '/images/platforms/rednote-services/ecommerce-live.png',
+  },
+  {
+    title: 'Analítica y escucha',
+    description: 'Paneles de crecimiento, interacción, posicionamiento en búsquedas y ROI de campaña. Vigilancia de marca, análisis de sentimiento, detección de tendencias, lectura del terreno competitivo.',
+    result: 'Informes nítidos sobre lo que funciona y lo que toca corregir.',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 6-8"/></svg>`,
+    image: '/images/platforms/rednote-services/analytics-listening.png',
+  },
+];
+
+const bestPractices = [
+  {
+    title: 'Escriba para RedNote, no para Instagram.',
+    description: 'Las notas densas, útiles, ancladas en la experiencia destacan. Tutoriales, reseñas honestas y guías prácticas barren a la campaña de marca demasiado pulida.',
+  },
+  {
+    title: 'Cuide la portada y el titular.',
+    description: 'Todo se juega en los primeros segundos. Titular claro, orientado al beneficio, con las palabras clave que cuentan. Visual limpio, texto superpuesto legible.',
+  },
+  {
+    title: 'Piense como motor de búsqueda.',
+    description: 'RedNote se comporta como Google para la compra. Detecte las palabras clave al alza, calque sus titulares a las búsquedas reales, use el sugeridor de hashtags nativo.',
+  },
+  {
+    title: 'Provoque guardados y comentarios.',
+    description: 'Termine cada nota con una pregunta o un motivo para guardarla. Las dos acciones alimentan el CES, que decide la distribución.',
+  },
+  {
+    title: 'Quédese dentro de la app.',
+    description: 'RedNote penaliza los enlaces salientes. Mantenga al usuario dentro. Una tienda in-app convierte mucho más que una redirección externa.',
+  },
+  {
+    title: 'Mantenga el ritmo.',
+    description: 'Más allá de los 180 días de actividad continua, la plataforma concede un bonus de visibilidad. Defina sus pilares y publique sin parar.',
+  },
+];
+
+const industries = [
+  { title: 'Belleza y cosmética', description: 'La categoría dominante de la plataforma. Reseñas de producto, tutoriales de maquillaje, lecturas de ingredientes.' },
+  { title: 'Moda y prêt-à-porter', description: 'Consejos de estilo, tendencias del momento, lookbooks estacionales, campañas de seeding con KOC.' },
+  { title: 'Lujo', description: 'Relatos de marca cuidados para una audiencia acomodada, a menudo a un paso de la compra.' },
+  { title: 'Alimentación y bebidas', description: 'Críticas de restaurantes, recetas, catas grabadas en directo.' },
+  { title: 'Viajes y hostelería', description: 'Guías de destino, reseñas de hoteles. El 64 % de los viajeros chinos prepara su viaje en RedNote.' },
+  { title: 'Salud y bienestar', description: 'Fitness, suplementos, consejos de salud. Uno de los sectores que más crece.' },
+  { title: 'B2B', description: 'Más de 100 sectores profesionales en RedNote. Los decisores la usan para identificar proveedores.' },
+];
+
+const steps = [
+  {
+    number: '01',
+    title: 'Llamada de encuadre.',
+    description: 'Hablamos de su marca, sus objetivos, su nivel de preparación para el mercado chino. Sin discurso comercial, solo las preguntas que cuentan.',
+    icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>`,
+  },
+  {
+    number: '02',
+    title: 'Propuesta comercial.',
+    description: 'Alcance cerrado, precio firme, cada entregable por escrito. Antes de firmar sabe exactamente lo que recibe y lo que cuesta.',
+    icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>`,
+  },
+  {
+    number: '03',
+    title: 'Al aire en dos semanas.',
+    description: 'Cuenta abierta, estrategia montada, primeras notas publicadas. Quince días entre la firma y la primera publicación.',
+    icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>`,
+  },
+];
+
+const faqs = [
+  {
+    q: '¿Dónde está su equipo?',
+    a: 'En Shanghái y Hong Kong. Redactores chinos nativos conectados en permanencia a las grandes plataformas. Publicamos en RedNote cada día, gestionamos las cuentas publicitarias desde dentro y trabajamos directamente con KOL por toda China. No es consultoría a distancia.',
+  },
+  {
+    q: '¿Se puede estar en RedNote sin entidad jurídica en China?',
+    a: 'Sí. RedNote permite a las empresas extranjeras abrir una Cuenta Profesional (Blue V) con una licencia comercial traducida y un expediente de marca. Llevamos los trámites, la presentación en la plataforma y la interlocución con el equipo de validación de RedNote. La mayoría de cuentas están activas en menos de dos semanas.',
+  },
+  {
+    q: '¿En cuánto tiempo llegan los resultados?',
+    a: 'RedNote no premia las prisas. Toda cuenta nueva pasa primero por una fase de observación algorítmica. Los dos o tres primeros meses sirven para construir su catálogo de contenidos y enseñar a la plataforma quién es usted. La publicidad de pago y las campañas con KOL pueden generar tráfico desde la primera semana, mientras el crecimiento orgánico toma el relevo.',
+  },
+  {
+    q: '¿Qué recibimos cada mes, en concreto?',
+    a: 'Todo se contractualiza antes de la firma. Notas, vídeos, campañas publicitarias, activaciones KOL, informes mensuales. Usted revisa y valida cada contenido antes de la publicación. Sin zonas grises. Sin sorpresas a fin de mes.',
+  },
+  {
+    q: '¿Cómo funciona la tarificación?',
+    a: 'Una cuota mensual fija cubre el alcance acordado. El presupuesto de medios se factura aparte, a coste real, con cada línea de gasto visible. No tomamos comisión sobre la compra de medios. El importe de la propuesta es el importe que paga.',
+  },
+  {
+    q: '¿Quién produce el contenido y quién lo controla?',
+    a: 'La estrategia y la redacción las lleva nuestro equipo de Shanghái. Los visuales generados por IA pasan por HubStudio.ai, entrenado con sus pautas de marca. Las sesiones de foto y vídeo se realizan en China. Antes de cada publicación, un editor nativo revisa el contenido: tono, encaje cultural y conformidad con la plataforma.',
+  },
+  {
+    q: '¿Cómo seleccionan a los KOL para nuestra marca?',
+    a: 'Vía Pugongying, la herramienta oficial de RedNote, que indexa a más de 100.000 creadores verificados. Cada KOL preseleccionado pasa por verificación de audiencia, detección de seguidores falsos y evaluación de la calidad de interacción. Luego cruzamos nicho, línea editorial y presupuesto.',
+  },
+  {
+    q: '¿Pueden activar publicidad en RedNote para una empresa fuera de China?',
+    a: 'Sí, con una condición. La herramienta Juguang de RedNote exige una entidad china para abrir cuenta publicitaria. Creamos y operamos esas cuentas en nombre de clientes extranjeros a través de nuestra estructura local. Usted recibe un informe semanal y visibilidad total del rendimiento.',
+  },
+  {
+    q: '¿Cuál es la duración mínima de compromiso?',
+    a: 'Tres meses. Es el tiempo necesario para superar la fase de rodaje del algoritmo y acumular datos suficientes para entender qué funciona. La mayoría de clientes prolonga en cuanto las primeras curvas empiezan a moverse.',
+  },
+  {
+    q: 'No hablamos chino. ¿Es un problema?',
+    a: 'No. Toda la relación con el cliente se desarrolla en inglés: llamadas estratégicas, informes mensuales, validaciones de contenido. El equipo es íntegramente bilingüe. Usted se centra en su marca, nosotros nos ocupamos de la plataforma.',
+  },
+];
+---
+
+<PageLayout
+  title="Agencia de marketing RedNote / Xiaohongshu | TheRedScroll"
+  description="TheRedScroll pilota cuentas RedNote desde Shanghái. Estrategia editorial, campañas con KOL, publicidad de pago, e-commerce, analítica. Alcance claro, precio firme."
+  lang="es"
+>
+  <section class="w-full bg-[#1A1A1A] py-[80px] max-[640px]:py-[48px] relative overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/rednote-hero.png')" aria-hidden="true"></div>
+    <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[140px] max-[640px]:text-[80px] font-medium text-[#FFFFFF] opacity-[0.03] pointer-events-none select-none whitespace-nowrap" aria-hidden="true">
+      小红书
+    </span>
+    <Container class="relative z-[1]">
+      <div class="max-w-[800px] mx-auto text-center">
+        <a href="/es/plataformas/otras" class="inline-flex items-center gap-[6px] text-[13px] text-[#5C5C5C] mb-[16px] transition-colors duration-150 hover:text-[#FFFFFF]">
+          &larr; Todas las plataformas
+        </a>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">
+          Marketing RedNote
+        </p>
+        <UpdatedDate lang="es" date="mayo de 2026" variant="light" class="mb-[8px]" />
+        <h1 class="text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] text-[#FFFFFF] mb-[8px]">
+          La plataforma china del descubrimiento de producto. 350 millones de usuarios. El primer reflejo antes de cada compra.
+        </h1>
+        <p class="text-[14px] text-[rgba(255,255,255,0.85)] font-normal leading-[1.6] mb-[12px]">
+          RedNote, conocida en China como Xiaohongshu (小红书 / Pequeño libro rojo), es la plataforma de social commerce donde los consumidores chinos investigan productos antes de comprar. El 70 % de los usuarios tiene entre 18 y 35 años, vive en ciudades de primer y segundo nivel y cuenta con un poder adquisitivo superior a la media.
+        </p>
+        <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal mb-[24px]">
+          No miramos RedNote desde fuera. Publicamos aquí cada día, desde Shanghái.
+        </p>
+        <Button variant="primary" href="/es/contacto">Reservar una llamada</Button>
+      </div>
+    </Container>
+  </section>
+
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="flex items-end justify-between gap-[32px] max-[640px]:flex-col max-[640px]:items-start max-[640px]:gap-[16px] mb-[32px]">
+        <div class="max-w-[560px]">
+          <SectionBar />
+          <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[8px]">
+            No son cifras para impresionar. Aquí se toman las decisiones de compra.
+          </h2>
+          <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
+            RedNote en cifras.
+          </p>
+        </div>
+        <Button variant="primary" href="/es/contacto" class="shrink-0">Reservar una llamada</Button>
+      </div>
+    </Container>
+
+    <div class="relative">
+      <div class="absolute right-0 top-0 bottom-0 w-[80px] bg-gradient-to-l from-[#FFFFFF] to-transparent z-[1] pointer-events-none" aria-hidden="true"></div>
+      <div class="overflow-x-auto scrollbar-hide" id="stats-scroll">
+        <div class="flex gap-[16px] px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pb-[8px]" style="min-width: min-content;">
+          {stats.map((stat, i) => (
+            <div class="stat-card relative shrink-0 w-[220px] max-[640px]:w-[180px] h-[200px] max-[640px]:h-[170px] rounded-[12px] overflow-hidden flex flex-col justify-end cursor-grab select-none" data-stat-index={i}>
+              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out stat-bg" style={`background-image: url('${stat.image}')`} aria-hidden="true"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-[rgba(26,26,26,0.9)] via-[rgba(26,26,26,0.4)] to-transparent" aria-hidden="true"></div>
+              <div class="relative z-[1] p-[20px]">
+                <span class="text-[32px] text-[#FFFFFF] font-medium leading-none stat-counter block mb-[4px]" data-target={stat.value}>0</span>
+                <span class="text-[12px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.4]">{stat.label}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]">
+          <SectionBar />
+        </div>
+        <SectionHeading overline="Por qué RedNote es imprescindible">
+          Sin presencia en RedNote, su marca está ausente justo cuando el consumidor chino decide qué va a comprar.
+        </SectionHeading>
+      </div>
+
+      <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        {whyEssential.map((item) => (
+          <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
+            <div class="w-full aspect-[16/9] overflow-hidden">
+              <img src={item.image} alt={item.title} class="w-full h-full object-cover" loading="lazy" decoding="async" />
+            </div>
+            <div class="p-[24px] max-[640px]:p-[20px]">
+              <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">{item.title}</h3>
+              <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.5]">{item.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] mt-[24px] text-center max-w-[680px] mx-auto">
+        RedNote, o Xiaohongshu, es donde el consumidor chino se informa, compara y decide. Contenido comunitario, confianza entre pares, comercio in-app: todo coexiste en una sola plataforma.
+      </p>
+    </Container>
+  </section>
+
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]">
+          <SectionBar />
+        </div>
+        <SectionHeading overline="Cómo funciona el algoritmo">
+          ¿Cómo decide el algoritmo de RedNote qué mostrar?
+        </SectionHeading>
+      </div>
+
+      <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        {algorithm.map((item) => (
+          <div class="algo-card relative border-none overflow-hidden flex flex-col justify-between" style={`border-radius: ${item.bg === '#1A1A1A' || item.bg === '#CC3333' ? '12px' : '10px'}`} data-tilt-algo>
+            <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out algo-bg" style={`background-image: url('${item.image}')`} aria-hidden="true"></div>
+            <div class="absolute inset-0" style={`background: ${item.bg}; opacity: 0.72`} aria-hidden="true"></div>
+            <div class="relative z-[1] p-[24px] max-[640px]:p-[20px]">
+              <div class="w-[40px] h-[40px] rounded-[6px] flex items-center justify-center mb-[16px]" style={`background: ${item.iconBg}`}>
+                <Fragment set:html={item.icon} />
+              </div>
+              <h3 class="text-[18px] font-medium leading-[1.3] mb-[8px]" style={`color: ${item.textColor}`}>{item.title}</h3>
+              <p class="text-[13px] font-normal leading-[1.5]" style={`color: ${item.descColor}`}>{item.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </Container>
+  </section>
+
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]">
+          <SectionBar />
+        </div>
+        <SectionHeading overline="Lo que hacemos en RedNote">
+          Seis servicios. Cada uno con un entregable preciso, no una promesa.
+        </SectionHeading>
+      </div>
+
+      <div class="grid grid-cols-[340px_1fr] max-[1024px]:grid-cols-[280px_1fr] max-[768px]:hidden gap-[24px] items-stretch">
+        <div class="flex flex-col gap-[4px]">
+          {services.map((service, i) => (
+            <button class:list={['svc-selector flex items-center gap-[12px] px-[16px] py-[14px] rounded-[8px] text-left cursor-pointer border-none transition-all duration-300 relative', i === 0 ? 'svc-selector-active' : '']} data-svc-select={i} style={i === 0 ? 'background: #F7F2EE' : 'background: transparent'}>
+              <div class="svc-sel-indicator absolute left-0 top-[12px] bottom-[12px] w-[3px] rounded-full transition-all duration-300" style={i === 0 ? 'background: #CC3333; opacity: 1' : 'background: #CC3333; opacity: 0'}></div>
+              <div class="svc-sel-icon w-[36px] h-[36px] rounded-[6px] shrink-0 flex items-center justify-center transition-all duration-300" style={i === 0 ? 'background: #E8E0D8; color: #CC3333' : 'background: transparent; color: #5C5C5C'}>
+                <Fragment set:html={service.icon} />
+              </div>
+              <span class="svc-sel-label text-[14px] font-medium leading-[1.3] transition-colors duration-300" style={i === 0 ? 'color: #1A1A1A' : 'color: #5C5C5C'}>{service.title}</span>
+            </button>
+          ))}
+        </div>
+
+        <div class="relative">
+          {services.map((service, i) => (
+            <div class="svc-panel relative rounded-[12px] overflow-hidden h-full" data-svc-panel={i} style={i === 0 ? '' : 'display: none;'}>
+              <div class="absolute inset-0 bg-cover bg-center" style={`background-image: url('${service.image}')`} aria-hidden="true"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-[rgba(26,26,26,0.95)] via-[rgba(26,26,26,0.6)] to-[rgba(26,26,26,0.15)]" aria-hidden="true"></div>
+              <div class="relative z-[1] p-[32px] max-[1024px]:p-[24px] h-full flex flex-col justify-end">
+                <h3 class="text-[22px] font-medium leading-[1.25] mb-[8px] text-[#FFFFFF]">{service.title}</h3>
+                <p class="text-[14px] font-normal leading-[1.6] text-[rgba(255,255,255,0.7)] mb-[16px]">{service.description}</p>
+                <div class="flex items-center gap-[8px] pt-[12px] border-t border-[rgba(255,255,255,0.15)]">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                  <p class="text-[13px] font-medium leading-[1.5] text-[#FFFFFF]">{service.result}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div class="hidden max-[768px]:flex flex-col gap-[12px]">
+        {services.map((service) => (
+          <div class="relative rounded-[12px] overflow-hidden">
+            <div class="absolute inset-0 bg-cover bg-center" style={`background-image: url('${service.image}')`} aria-hidden="true"></div>
+            <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.82]" aria-hidden="true"></div>
+            <div class="relative z-[1] p-[24px]">
+              <div class="w-[40px] h-[40px] rounded-[6px] flex items-center justify-center mb-[12px] bg-[rgba(255,255,255,0.12)] text-[#FFFFFF]">
+                <Fragment set:html={service.icon} />
+              </div>
+              <h3 class="text-[18px] font-medium leading-[1.3] mb-[8px] text-[#FFFFFF]">{service.title}</h3>
+              <p class="text-[13px] font-normal leading-[1.5] mb-[12px] text-[rgba(255,255,255,0.7)]">{service.description}</p>
+              <p class="text-[13px] font-medium leading-[1.5] text-[#FFFFFF]">Resultado: {service.result}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </Container>
+  </section>
+
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="bg-[#1A1A1A] rounded-[12px] py-[48px] px-[48px] max-[1024px]:px-[32px] max-[1024px]:py-[40px] max-[640px]:px-[20px] max-[640px]:py-[32px]">
+        <div class="mb-[40px] max-[640px]:mb-[32px]">
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">
+            Del terreno, no del manual
+          </p>
+          <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF]">
+            Lo que de verdad funciona en RedNote
+          </h2>
+          <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.5] mt-[8px] max-w-[680px]">
+            Publicamos en RedNote desde China, cada día. Estas observaciones vienen de la práctica, no de un informe de consultora.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[20px]">
+          {bestPractices.map((practice) => (
+            <div class="border-l-[3px] border-[#CC3333] pl-[16px]">
+              <h3 class="text-[16px] text-[#FFFFFF] font-medium leading-[1.3] mb-[4px]">{practice.title}</h3>
+              <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.5]">{practice.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="mb-[48px] max-[640px]:mb-[32px]">
+        <SectionBar />
+        <SectionHeading overline="Sectores que trabajamos en RedNote">
+          De la belleza al B2B. Cada sector tiene sus códigos y cada uno exige una estrategia distinta.
+        </SectionHeading>
+      </div>
+
+      <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        {industries.map((industry) => (
+          <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">{industry.title}</h3>
+            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5]">{industry.description}</p>
+          </div>
+        ))}
+      </div>
+    </Container>
+  </section>
+
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-[340px_1fr] max-[1024px]:grid-cols-[280px_1fr] max-[768px]:grid-cols-1 gap-[48px] max-[768px]:gap-[32px]">
+        <div>
+          <div class="sticky top-[84px] max-[640px]:static">
+            <SectionBar />
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">FAQ</p>
+            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">
+              Preguntas frecuentes
+            </h2>
+            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
+              Lo que nuestros clientes preguntan antes de empezar en RedNote con TheRedScroll.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          {faqs.map((faq) => (
+            <div class="border-b border-[rgba(0,0,0,0.08)]" data-faq>
+              <button class="w-full flex items-center justify-between py-[20px] text-left bg-transparent border-none cursor-pointer group" data-faq-trigger aria-expanded="false">
+                <h3 class="text-[16px] font-medium leading-[1.3] text-[#1A1A1A] group-hover:text-[#5C5C5C] transition-colors duration-150 pr-[16px]">{faq.q}</h3>
+                <svg class="w-[16px] h-[16px] shrink-0 text-[#5C5C5C] transition-transform duration-300 faq-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6l4 4 4-4"/></svg>
+              </button>
+              <div class="faq-content overflow-hidden" style="height: 0; opacity: 0;">
+                <div class="pb-[20px]">
+                  <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">{faq.a}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <section class="relative mt-[96px] max-[640px]:mt-[64px] pt-[80px] pb-[80px] max-[1024px]:pt-[64px] max-[1024px]:pb-[64px] max-[640px]:pt-[48px] max-[640px]:pb-[48px] overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero/rednote-hero.png')" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.88]" aria-hidden="true"></div>
+
+    <Container class="relative z-[1]">
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]">
+          <div class="w-[40px] h-[3px] bg-[#CC3333] rounded-none"></div>
+        </div>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">
+          Para empezar
+        </p>
+        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF]">
+          De cero a una cuenta RedNote operativa. Bastan dos semanas.
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-3 max-[640px]:grid-cols-1 gap-[24px] max-[640px]:gap-[16px]">
+        {steps.map((step) => (
+          <div class="bg-[rgba(255,255,255,0.06)] border-[0.5px] border-[rgba(255,255,255,0.1)] rounded-[12px] p-[32px] max-[640px]:p-[20px] text-center">
+            <div class="w-[64px] h-[64px] rounded-full bg-[rgba(255,255,255,0.08)] border-[0.5px] border-[rgba(255,255,255,0.15)] flex items-center justify-center mx-auto mb-[20px]">
+              <Fragment set:html={step.icon} />
+            </div>
+            <h3 class="text-[18px] text-[#FFFFFF] font-medium leading-[1.3] mb-[8px]">{step.title}</h3>
+            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6]">{step.description}</p>
+          </div>
+        ))}
+      </div>
+
+      <div class="text-center mt-[40px]">
+        <Button variant="primary" href="/es/contacto">Reservar una llamada</Button>
+      </div>
+
+      <div class="mt-[48px] pt-[24px] border-t border-[rgba(255,255,255,0.1)] text-center">
+        <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal mb-[12px]">También de interés</p>
+        <div class="flex justify-center gap-[24px] flex-wrap">
+          <a href="/es/plataformas/wechat" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Marketing WeChat &rarr;</a>
+          <a href="/es/plataformas/douyin" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Marketing Douyin &rarr;</a>
+          <a href="/es/plataformas/weibo" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Marketing Weibo &rarr;</a>
+          <a href="/es/plataformas/otras" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Otras plataformas &rarr;</a>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+<style>
+  .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+  .svc-panel { transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1); }
+  .svc-selector:hover { background: #F7F2EE !important; }
+  .faq-content { transition: height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease; }
+  .stat-card { opacity: 0; transform: translateY(32px); transition: opacity 1s ease, transform 1s ease; }
+  .stat-card.revealed { opacity: 1; transform: translateY(0); }
+  .stat-card:hover .stat-bg { transform: scale(1.08); }
+  .algo-card:hover .algo-bg { transform: scale(1.08); }
+</style>
+
+<script>
+  const statsScroll = document.getElementById('stats-scroll');
+  if (statsScroll) {
+    let isDown = false; let startX: number; let scrollLeft: number; let autoScrollPaused = false;
+    statsScroll.addEventListener('mousedown', (e) => { isDown = true; autoScrollPaused = true; statsScroll.style.cursor = 'grabbing'; startX = e.pageX - statsScroll.offsetLeft; scrollLeft = statsScroll.scrollLeft; });
+    statsScroll.addEventListener('mouseleave', () => { isDown = false; statsScroll.style.cursor = ''; setTimeout(() => { autoScrollPaused = false; }, 1000); });
+    statsScroll.addEventListener('mouseup', () => { isDown = false; statsScroll.style.cursor = ''; setTimeout(() => { autoScrollPaused = false; }, 3000); });
+    statsScroll.addEventListener('mousemove', (e) => { if (!isDown) return; e.preventDefault(); const x = e.pageX - statsScroll.offsetLeft; statsScroll.scrollLeft = scrollLeft - (x - startX); });
+    statsScroll.addEventListener('touchstart', () => { autoScrollPaused = true; }, { passive: true });
+    statsScroll.addEventListener('touchend', () => { setTimeout(() => { autoScrollPaused = false; }, 3000); });
+    const scrollSpeed = 0.5;
+    function autoScroll() { if (!autoScrollPaused && statsScroll) { const maxScroll = statsScroll.scrollWidth - statsScroll.clientWidth; statsScroll.scrollLeft += scrollSpeed; if (statsScroll.scrollLeft >= maxScroll) { statsScroll.scrollLeft = 0; } } requestAnimationFrame(autoScroll); }
+    const scrollObserver = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) { requestAnimationFrame(autoScroll); scrollObserver.unobserve(entry.target); } }); }, { threshold: 0.2 });
+    scrollObserver.observe(statsScroll);
+    statsScroll.addEventListener('mouseenter', () => { autoScrollPaused = true; });
+  }
+  const statCards = document.querySelectorAll('.stat-card');
+  const statsObserver = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) { const card = entry.target as HTMLElement; const index = parseInt(card.dataset.statIndex || '0'); const delay = index * 150; setTimeout(() => { card.classList.add('revealed'); const counter = card.querySelector('.stat-counter') as HTMLElement; if (counter) { setTimeout(() => { animateCounter(counter, counter.dataset.target || '0'); }, 400); } }, delay); statsObserver.unobserve(card); } }); }, { threshold: 0.05 });
+  statCards.forEach((card) => statsObserver.observe(card));
+  function animateCounter(el: HTMLElement, target: string) { const match = target.match(/^([\d.]+)(.*)$/); if (!match) { el.textContent = target; return; } const endNum = parseFloat(match[1]); const suffix = match[2]; const duration = 2000; const startTime = performance.now(); function tick(now: number) { const elapsed = now - startTime; const progress = Math.min(elapsed / duration, 1); const eased = 1 - Math.pow(1 - progress, 3); const current = eased * endNum; if (endNum >= 10) { el.textContent = Math.round(current) + suffix; } else { el.textContent = current.toFixed(1).replace(/\.0$/, '') + suffix; } if (progress < 1) requestAnimationFrame(tick); else el.textContent = target; } requestAnimationFrame(tick); }
+  const selectors = document.querySelectorAll('[data-svc-select]'); const panels = document.querySelectorAll('[data-svc-panel]'); let activeIndex = 0; let isAnimating = false;
+  selectors.forEach((sel) => { sel.addEventListener('click', () => { const index = parseInt((sel as HTMLElement).dataset.svcSelect || '0'); if (index === activeIndex || isAnimating) return; isAnimating = true; selectors.forEach((s) => { const el = s as HTMLElement; el.style.background = 'transparent'; const ind = el.querySelector('.svc-sel-indicator') as HTMLElement; const ico = el.querySelector('.svc-sel-icon') as HTMLElement; const lbl = el.querySelector('.svc-sel-label') as HTMLElement; if (ind) ind.style.opacity = '0'; if (ico) { ico.style.background = 'transparent'; ico.style.color = '#5C5C5C'; } if (lbl) lbl.style.color = '#5C5C5C'; }); const active = sel as HTMLElement; active.style.background = '#F7F2EE'; const ind = active.querySelector('.svc-sel-indicator') as HTMLElement; const ico = active.querySelector('.svc-sel-icon') as HTMLElement; const lbl = active.querySelector('.svc-sel-label') as HTMLElement; if (ind) ind.style.opacity = '1'; if (ico) { ico.style.background = '#E8E0D8'; ico.style.color = '#CC3333'; } if (lbl) lbl.style.color = '#1A1A1A'; const oldPanel = panels[activeIndex] as HTMLElement; const newPanel = panels[index] as HTMLElement; const goingDown = index > activeIndex; oldPanel.style.transition = 'opacity 0.3s ease, transform 0.3s ease'; oldPanel.style.opacity = '0'; oldPanel.style.transform = goingDown ? 'translateY(-20px)' : 'translateY(20px)'; setTimeout(() => { oldPanel.style.display = 'none'; oldPanel.style.transform = ''; oldPanel.style.transition = ''; newPanel.style.opacity = '0'; newPanel.style.transform = goingDown ? 'translateY(20px)' : 'translateY(-20px)'; newPanel.style.display = ''; requestAnimationFrame(() => { newPanel.style.transition = 'opacity 0.35s ease, transform 0.35s ease'; newPanel.style.opacity = '1'; newPanel.style.transform = 'translateY(0)'; setTimeout(() => { newPanel.style.transition = ''; activeIndex = index; isAnimating = false; }, 350); }); }, 280); }); });
+  document.querySelectorAll('[data-tilt-algo]').forEach((card) => { const el = card as HTMLElement; el.addEventListener('mousemove', (e: MouseEvent) => { const rect = el.getBoundingClientRect(); const x = e.clientX - rect.left; const y = e.clientY - rect.top; const centerX = rect.width / 2; const centerY = rect.height / 2; const rotateX = ((y - centerY) / centerY) * -3; const rotateY = ((x - centerX) / centerX) * 3; el.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`; }); el.addEventListener('mouseleave', () => { el.style.transform = 'perspective(800px) rotateX(0deg) rotateY(0deg) scale(1)'; }); });
+  document.querySelectorAll('[data-faq]').forEach((item) => { const trigger = item.querySelector('[data-faq-trigger]') as HTMLButtonElement; const content = item.querySelector('.faq-content') as HTMLElement; if (!trigger || !content) return; trigger.addEventListener('click', () => { const isOpen = trigger.getAttribute('aria-expanded') === 'true'; if (isOpen) { content.style.height = content.scrollHeight + 'px'; requestAnimationFrame(() => { content.style.height = '0'; content.style.opacity = '0'; }); trigger.setAttribute('aria-expanded', 'false'); const ch = trigger.querySelector('.faq-chevron') as HTMLElement; if (ch) ch.style.transform = 'rotate(0deg)'; } else { content.style.height = '0'; requestAnimationFrame(() => { content.style.height = content.scrollHeight + 'px'; content.style.opacity = '1'; }); trigger.setAttribute('aria-expanded', 'true'); const ch = trigger.querySelector('.faq-chevron') as HTMLElement; if (ch) ch.style.transform = 'rotate(180deg)'; } }); });
+</script>
+</PageLayout>

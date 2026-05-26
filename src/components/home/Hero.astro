@@ -17,13 +17,21 @@ const text = {
     tagline: 'Fixed scope. Fixed price. No surprises.',
     cta1: 'Book a call',
     cta2: 'See our services',
+    proof: 'Recent: Camper grew from 43K to 187K followers and lifted same-store sales 31% in 18 months.',
+    proofHref: '/work/camper',
+    proofCta: 'Read the case',
+    proofOverline: 'Recent client outcome',
   },
   fr: {
-    headline: 'Votre marque s\'installe sur les réseaux sociaux chinois.',
-    sub: 'Une audience qui s\'élargit. Des conversations qui prennent. Des ventes qui suivent.',
-    tagline: 'Périmètre verrouillé, tarif convenu d\'emblée, aucun extra en cours de route.',
+    headline: 'Votre marque prend racine sur les réseaux sociaux chinois.',
+    sub: 'L\'audience grandit, les conversations s\'engagent, les ventes s\'enchaînent.',
+    tagline: 'Périmètre verrouillé, tarif convenu d\'emblée, aucun extra ne s\'invitera en cours de route.',
     cta1: 'Prendre rendez-vous',
     cta2: 'Voir nos services',
+    proof: 'Récemment : Camper est passé de 43 000 à 187 000 abonnés et a vu ses ventes en magasin progresser de 31 % en 18 mois.',
+    proofHref: '/work/camper',
+    proofCta: 'Voir le cas',
+    proofOverline: 'Résultat client récent',
   },
   zh: {
     headline: '中国社媒这件事，我们替你把品牌做起来。',
@@ -31,6 +39,10 @@ const text = {
     tagline: '范围写进合同，一口价到底，不会再来第二张账单。',
     cta1: '预约通话',
     cta2: '查看服务',
+    proof: '近期案例：Camper 在 18 个月里把粉丝从 4.3 万做到 18.7 万，门店同店销售提升 31%。',
+    proofHref: '/work/camper',
+    proofCta: '查看案例',
+    proofOverline: '近期客户成果',
   },
   de: {
     headline: 'Ihre Marke wird in Chinas sozialen Netzwerken sichtbar.',
@@ -38,13 +50,21 @@ const text = {
     tagline: 'Klar definierter Umfang, von Anfang an festgelegter Preis, unterwegs keine Nachforderungen.',
     cta1: 'Gespräch vereinbaren',
     cta2: 'Leistungen ansehen',
+    proof: 'Aktuell: Camper wuchs von 43.000 auf 187.000 Follower und steigerte den Same-Store-Umsatz binnen 18 Monaten um 31 %.',
+    proofHref: '/work/camper',
+    proofCta: 'Fall lesen',
+    proofOverline: 'Aktuelles Kundenergebnis',
   },
   es: {
-    headline: 'Su marca toma posición en las redes sociales chinas.',
-    sub: 'Una audiencia que se amplía. Conversaciones que prenden. Ventas que llegan.',
-    tagline: 'Alcance cerrado, tarifa pactada desde el inicio, sin extras por el camino.',
+    headline: 'Hacemos crecer su marca en las redes sociales chinas.',
+    sub: 'Crece la audiencia. Arde la conversación. Entran las ventas.',
+    tagline: 'Alcance cerrado. Precio fijo. Sin sorpresas.',
     cta1: 'Reservar una llamada',
     cta2: 'Ver nuestros servicios',
+    proof: 'Reciente: Camper pasó de 43.000 a 187.000 seguidores y elevó sus ventas en tienda un 31 % en 18 meses.',
+    proofHref: '/work/camper',
+    proofCta: 'Leer el caso',
+    proofOverline: 'Último resultado de cliente',
   },
 }[lang];
 ---
@@ -80,6 +100,21 @@ const text = {
           <Button variant="primary" href={lp('/contact')}>{text.cta1}</Button>
           <Button variant="secondary-dark" href={lp('/services')}>{text.cta2}</Button>
         </div>
+        {text.proof && (
+          <div class="mt-[32px] pt-[24px] border-t border-[rgba(255,255,255,0.1)] max-w-[520px]">
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[6px]">
+              {text.proofOverline}
+            </p>
+            <p class="text-[rgba(255,255,255,0.85)] text-[14px] font-normal leading-[1.5]">
+              {text.proof}
+            </p>
+            {text.proofHref && text.proofCta && (
+              <a href={lp(text.proofHref)} class="inline-flex items-center gap-[4px] text-[13px] font-medium text-[#FFFFFF] mt-[8px] transition-colors duration-150 hover:text-[#CC3333]">
+                {text.proofCta} <span aria-hidden="true">&rarr;</span>
+              </a>
+            )}
+          </div>
+        )}
       </div>
 
       <!-- Right: platform logos SVG -->

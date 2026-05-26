@@ -1,5 +1,7 @@
 ---
 import PageLayout from '../../layouts/PageLayout.astro';
+import UpdatedDate from '../../components/ui/UpdatedDate.astro';
+import { faqPageSchema, serviceSchema } from '../../lib/schema';
 import Container from '../../components/ui/Container.astro';
 import SectionBar from '../../components/ui/SectionBar.astro';
 import SectionHeading from '../../components/ui/SectionHeading.astro';
@@ -232,6 +234,15 @@ const faqs = [
 <PageLayout
   title="RedNote / Xiaohongshu Marketing Services | TheRedScroll"
   description="We run RedNote accounts from Shanghai. Content strategy, KOL campaigns, paid ads, e-commerce, and analytics. Fixed scope, fixed price."
+  schema={[
+    serviceSchema({
+      name: 'RedNote (Xiaohongshu) Marketing Services',
+      description: 'RedNote / Xiaohongshu account management, content strategy, KOL and KOC campaigns, paid advertising, and social commerce for international brands in China.',
+      url: '/platforms/rednote',
+      serviceType: 'Social Media Marketing',
+    }),
+    faqPageSchema(faqs),
+  ]}
 >
   <!-- Hero -->
   <section class="w-full bg-[#1A1A1A] py-[80px] max-[640px]:py-[48px] relative overflow-hidden">
@@ -247,9 +258,13 @@ const faqs = [
         <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">
           RedNote marketing
         </p>
+        <UpdatedDate date="May 2026" variant="light" class="mb-[8px]" />
         <h1 class="text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] text-[#FFFFFF] mb-[8px]">
           China's product discovery platform. 350M+ users. The first place consumers go before they buy.
         </h1>
+        <p class="text-[14px] text-[rgba(255,255,255,0.85)] font-normal leading-[1.6] mb-[12px]">
+          RedNote, known in Chinese as Xiaohongshu (小红书 / Little Red Book), is the social commerce platform where Chinese consumers research products before they buy. 70% of users are aged 18 to 35, in tier-1 and tier-2 cities, with above-average spending power.
+        </p>
         <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal mb-[24px]">
           We don't talk about RedNote. We post on it. Every day. From Shanghai.
         </p>
@@ -288,7 +303,7 @@ const faqs = [
               <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out stat-bg" style={`background-image: url('${stat.image}')`} aria-hidden="true"></div>
               <div class="absolute inset-0 bg-gradient-to-t from-[rgba(26,26,26,0.9)] via-[rgba(26,26,26,0.4)] to-transparent" aria-hidden="true"></div>
               <div class="relative z-[1] p-[20px]">
-                <span class="text-[32px] text-[#FFFFFF] font-medium leading-none stat-counter block mb-[4px]" data-target={stat.value}>0</span>
+                <span class="text-[32px] text-[#FFFFFF] font-medium leading-none stat-counter block mb-[4px]" data-target={stat.value}>{stat.value}</span>
                 <span class="text-[12px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.4]">{stat.label}</span>
               </div>
             </div>
@@ -340,7 +355,7 @@ const faqs = [
           <SectionBar />
         </div>
         <SectionHeading overline="How the algorithm works">
-          Understanding distribution is the difference between 300 views and 300,000.
+          How does the RedNote algorithm decide what to show?
         </SectionHeading>
       </div>
 
@@ -740,6 +755,9 @@ const faqs = [
   }
 
   // Stats scroll reveal with stagger + trigger counters
+  document.querySelectorAll<HTMLElement>('.stat-counter').forEach((el) => {
+    el.textContent = '0';
+  });
   const statCards = document.querySelectorAll('.stat-card');
   const statsObserver = new IntersectionObserver(
     (entries) => {
