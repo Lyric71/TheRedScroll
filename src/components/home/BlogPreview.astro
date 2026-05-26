@@ -15,10 +15,10 @@ interface Props {
 const { lang = 'en' } = Astro.props;
 const lp = (path: string) => localizedPath(path, lang);
 
-const collectionName = lang === 'fr' ? 'blog-fr' : lang === 'zh' ? 'blog-zh' : 'blog';
+const collectionName = lang === 'fr' ? 'blog-fr' : lang === 'zh' ? 'blog-zh' : lang === 'es' ? 'blog-es' : 'blog';
 const allPosts = await getCollection(collectionName);
 // For locales without a routed insights folder yet, link to the English route so cards never 404.
-const insightsHasLocaleRoute = lang === 'en' || lang === 'fr' || lang === 'zh';
+const insightsHasLocaleRoute = lang === 'en' || lang === 'fr' || lang === 'zh' || lang === 'es';
 const posts = allPosts
   .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime())
   .slice(0, 3)
@@ -30,7 +30,7 @@ const posts = allPosts
       lang === 'zh' ? 'zh-CN' : lang === 'fr' ? 'fr-FR' : lang === 'es' ? 'es-ES' : lang === 'de' ? 'de-DE' : 'en-US',
       { month: 'long', year: 'numeric' }
     ),
-    slug: insightsHasLocaleRoute ? lp(`/insights/${post.id}`) : `/insights/${post.id}`,
+    slug: insightsHasLocaleRoute ? `${lp('/insights')}/${post.id}` : `/insights/${post.id}`,
     featuredImage: post.data.featuredImage,
   }));
 

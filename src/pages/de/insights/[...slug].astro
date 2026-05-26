@@ -5,7 +5,7 @@ import Container from '../../../components/ui/Container.astro';
 import SectionBar from '../../../components/ui/SectionBar.astro';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog-es');
+  const posts = await getCollection('blog-de');
   return posts.map((post) => ({
     params: { slug: post.id },
     props: { post },
@@ -16,7 +16,7 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 
 const readingTime = Math.ceil((post.body || '').split(/\s+/).length / 200);
-const formattedDate = new Date(post.data.publishDate).toLocaleDateString('es-ES', {
+const formattedDate = new Date(post.data.publishDate).toLocaleDateString('de-DE', {
   year: 'numeric',
   month: 'long',
   day: 'numeric',
@@ -27,13 +27,14 @@ const formattedDate = new Date(post.data.publishDate).toLocaleDateString('es-ES'
   title={`${post.data.title} | TheRedScroll`}
   description={post.data.metaDescription}
   ogImage={post.data.featuredImage}
-  lang="es"
+  lang="de"
 >
+  <!-- Hero -->
   <section class="pt-[92px] pb-[0px] max-[640px]:pt-[72px]">
     <Container>
       <div class="max-w-[680px] mx-auto">
-        <a href="/es/analisis" class="inline-flex items-center gap-[6px] text-[13px] font-normal text-[var(--color-stone)] no-underline hover:text-[var(--color-ink)] mb-[16px] transition-colors duration-150">
-          &#8592; Volver
+        <a href="/de/insights" class="inline-flex items-center gap-[6px] text-[13px] font-normal text-[var(--color-stone)] no-underline hover:text-[var(--color-ink)] mb-[16px] transition-colors duration-150">
+          &#8592; Zurück
         </a>
         <div class="flex items-center mb-[12px]">
           <SectionBar />
@@ -45,7 +46,7 @@ const formattedDate = new Date(post.data.publishDate).toLocaleDateString('es-ES'
           {post.data.title}
         </h1>
         <div class="flex items-center gap-[8px] flex-wrap text-[12px] font-normal text-[var(--color-stone)] leading-[1.4]">
-          <span>{readingTime} min de lectura</span>
+          <span>{readingTime} Min. Lesezeit</span>
           <span class="text-[var(--color-warm-gray)]">|</span>
           <span>{formattedDate}</span>
         </div>
@@ -53,6 +54,7 @@ const formattedDate = new Date(post.data.publishDate).toLocaleDateString('es-ES'
     </Container>
   </section>
 
+  <!-- Featured image -->
   {post.data.featuredImage && (
     <section class="mt-[24px]">
       <Container>
@@ -66,18 +68,20 @@ const formattedDate = new Date(post.data.publishDate).toLocaleDateString('es-ES'
     </section>
   )}
 
+  <!-- Article body -->
   <section class="pt-[48px] pb-[96px] max-[640px]:pb-[64px]">
     <Container>
       <div class="max-w-[680px] mx-auto prose-article">
         <Content />
       </div>
 
+      <!-- CTA -->
       <div class="max-w-[680px] mx-auto mt-[48px] pt-[32px] border-t-[0.5px] border-[var(--color-border)]">
         <p class="text-[16px] font-normal text-[var(--color-ink)] leading-[1.6] mb-[16px]">
-          ¿Necesita ayuda para hacer crecer su marca en China?
+          Brauchen Sie Unterstützung beim Aufbau Ihrer Marke in China?
         </p>
-        <a href="/es/contacto" class="inline-flex items-center justify-center h-[44px] px-[28px] bg-[var(--color-vermillion)] text-[#FFFFFF] text-[14px] font-medium leading-[1] no-underline rounded-[6px] transition-[background] duration-150 hover:bg-[var(--color-vermillion-hover)] active:scale-[0.98]">
-          Reservar una llamada
+        <a href="/de/contact" class="inline-flex items-center justify-center h-[44px] px-[28px] bg-[var(--color-vermillion)] text-[#FFFFFF] text-[14px] font-medium leading-[1] no-underline rounded-[6px] transition-[background] duration-150 hover:bg-[var(--color-vermillion-hover)] active:scale-[0.98]">
+          Termin vereinbaren
         </a>
       </div>
     </Container>
@@ -85,6 +89,7 @@ const formattedDate = new Date(post.data.publishDate).toLocaleDateString('es-ES'
 </BlogLayout>
 
 <script>
+  // Wrap tables in a scrollable container for mobile
   document.querySelectorAll('.prose-article table').forEach((table) => {
     const wrapper = document.createElement('div');
     wrapper.className = 'table-wrap';

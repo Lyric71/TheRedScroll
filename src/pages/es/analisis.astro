@@ -4,8 +4,7 @@ import PageLayout from '../../layouts/PageLayout.astro';
 import Container from '../../components/ui/Container.astro';
 import SectionBar from '../../components/ui/SectionBar.astro';
 
-// Fall back to English blog until a blog-es collection exists.
-const allPosts = await getCollection('blog');
+const allPosts = await getCollection('blog-es');
 const articles = allPosts
   .sort(() => Math.random() - 0.5)
   .map((post) => ({
@@ -14,7 +13,7 @@ const articles = allPosts
     excerpt: post.data.description,
     readingTime: `${Math.ceil(post.body!.split(/\s+/).length / 200)} min`,
     date: new Date(post.data.publishDate).toLocaleDateString('es-ES', { month: 'long', year: 'numeric' }),
-    slug: `/insights/${post.id}`,
+    slug: `/es/analisis/${post.id}`,
     featuredImage: post.data.featuredImage,
   }));
 ---
