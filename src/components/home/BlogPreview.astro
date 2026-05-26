@@ -15,10 +15,10 @@ interface Props {
 const { lang = 'en' } = Astro.props;
 const lp = (path: string) => localizedPath(path, lang);
 
-const collectionName = lang === 'fr' ? 'blog-fr' : lang === 'zh' ? 'blog-zh' : lang === 'es' ? 'blog-es' : 'blog';
+const collectionName = lang === 'fr' ? 'blog-fr' : lang === 'zh' ? 'blog-zh' : lang === 'es' ? 'blog-es' : lang === 'de' ? 'blog-de' : 'blog';
 const allPosts = await getCollection(collectionName);
 // For locales without a routed insights folder yet, link to the English route so cards never 404.
-const insightsHasLocaleRoute = lang === 'en' || lang === 'fr' || lang === 'zh' || lang === 'es';
+const insightsHasLocaleRoute = lang === 'en' || lang === 'fr' || lang === 'zh' || lang === 'es' || lang === 'de';
 const posts = allPosts
   .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime())
   .slice(0, 3)

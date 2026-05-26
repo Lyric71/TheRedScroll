@@ -23,7 +23,7 @@ interface Props {
 
 const { heading, steps, backgroundImage, crossLinks = [], lang = 'en' } = Astro.props;
 const overline = lang === 'zh' ? '合作流程' : lang === 'fr' ? 'Pour commencer' : lang === 'es' ? 'Cómo empezamos' : lang === 'de' ? 'So legen wir los' : 'Getting started';
-const bookCall = lang === 'zh' ? '预约通话' : lang === 'fr' ? 'Prendre rendez-vous' : lang === 'es' ? 'Reservar una llamada' : lang === 'de' ? 'Gespräch vereinbaren' : 'Book a call';
+const bookCall = lang === 'zh' ? '预约通话' : lang === 'fr' ? 'Prendre rendez-vous' : lang === 'es' ? 'Agendar una llamada' : lang === 'de' ? 'Gespräch vereinbaren' : 'Book a call';
 const seeAlso = lang === 'zh' ? '也可以看看' : lang === 'fr' ? 'À voir aussi' : lang === 'es' ? 'Ver también' : lang === 'de' ? 'Auch interessant' : 'See also';
 const contactHref = lang === 'zh' ? '/zh/contact' : lang === 'fr' ? '/fr/contact' : lang === 'es' ? '/es/contacto' : lang === 'de' ? '/de/contact' : '/contact';
 ---

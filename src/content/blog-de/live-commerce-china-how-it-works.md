@@ -11,7 +11,7 @@ featured: true
 featuredImage: "/images/blog/live-commerce-purchase.png"
 ---
 
-*Der leistungsstärkste Verkaufskanal des chinesischen Digitalen ist weder eine Website noch ein App-Store noch ein Feed. Es ist ein Live-Videostream.*
+*Der leistungsstärkste Verkaufskanal in Chinas Digitalwirtschaft ist weder eine Website noch ein App-Store noch ein Feed. Es ist ein Live-Videostream.*
 
 ## Ein Markt von 4.900 Milliarden Yuan
 

@@ -60,7 +60,7 @@ Video kostet bei gleichem Einblendungsvolumen 30 bis 50 Prozent mehr als Bild. Z
 
 ### CPC: Bezahlung je Klick
 
-Das bevorzugte Modell für Article Ads und Mini-Program-Banner. Die Untergrenze ist niedrig: rund 0,5 Yuan pro Klick am Artikelende. In den Moments sieht es anders aus: 2 bis 20 Yuan, je nach Targeting-Tiefe und Wettbewerb um die Zielgruppe. Zur Einordnung: Baidu Search verrechnet im Schnitt 2 bis 15 Yuan pro Klick. Der Unterschied? Ein WeChat-Klick kommt aus einem sozialen Kontext, ein Baidu-Klick aus aktiver Suche. Beide lassen sich nicht über den gleichen Kamm scheren.
+Das bevorzugte Modell für Article Ads und Mini-Program-Banner. Die Untergrenze ist niedrig: rund 0,5 Yuan pro Klick am Artikelende. In den Moments sieht es anders aus: 2 bis 20 Yuan, je nach Targeting-Tiefe und Wettbewerb um die Zielgruppe. Zur Einordnung: Baidu Search verrechnet im Schnitt 2 bis 15 Yuan pro Klick. Der Unterschied? Ein WeChat-Klick kommt aus einem sozialen Kontext, ein Baidu-Klick aus aktiver Suche. Beide lassen sich nicht über einen Kamm scheren.
 
 > Quelle: Yiban, Zhihu
 

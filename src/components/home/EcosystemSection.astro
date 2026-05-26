@@ -15,31 +15,31 @@ const lp = (path: string) => localizedPath(path, lang);
 const pillars = lang === 'de' ? [
   {
     title: 'Zielgruppe.',
-    description: 'Eine Milliarde Nutzer, verteilt auf Dutzende Plattformen, jede mit eigenen Regeln. Erst die Zielgruppe definieren, dann den Kanal wählen. In umgekehrter Reihenfolge wird es teuer.',
+    description: 'Eine Milliarde Nutzer, verteilt auf Dutzende Plattformen, jede mit eigenen Spielregeln. Erst die Zielgruppe schärfen, dann den Kanal wählen. Andersherum wird es teuer.',
     stat: '1B+', statLabel: 'Nutzer',
     image: '/images/ecosystem/audience.png',
   },
   {
-    title: 'Content.',
-    description: 'Was auf Douyin viral geht, geht auf WeChat unter. Jede Plattform hat ihren eigenen Takt und ihre eigene Sprache. Wir produzieren für jede einzeln.',
+    title: 'Inhalte.',
+    description: 'Was auf Douyin viral geht, fällt auf WeChat durch. Jede Plattform hat ihren eigenen Takt, ihre eigene Tonlage. Wir produzieren für jede getrennt.',
     stat: '18+', statLabel: 'Plattformen',
     image: '/images/ecosystem/content.png',
   },
   {
     title: 'Influencer.',
-    description: 'KOLs und KOCs steuern Kaufentscheidungen sicherer als klassische Werbung. Richtiges Profil, richtige Plattform, richtiger Zeitpunkt. Der Rest verpufft.',
+    description: 'KOLs und KOCs prägen die Kaufentscheidung verlässlicher als klassische Werbung. Passendes Profil, passende Plattform, passender Moment. Alles andere verpufft.',
     stat: '80%', statLabel: 'vertrauen KOLs',
     image: '/images/ecosystem/influencers.png',
   },
   {
     title: 'Plattformen.',
-    description: 'WeChat, Douyin, RedNote, Weibo, dazu vierzehn weitere Netzwerke. Die Algorithmen ändern sich Monat für Monat. Wer mithalten will, braucht ein Team, das täglich dranbleibt.',
+    description: 'WeChat, Douyin, RedNote, Weibo. Dazu vierzehn weitere Netzwerke. Die Algorithmen drehen sich Monat für Monat. Wer Schritt halten will, braucht ein Team, das täglich am Ball bleibt.',
     stat: '14+', statLabel: 'weitere Plattformen',
     image: '/images/ecosystem/platforms.png',
   },
   {
     title: 'Commerce.',
-    description: 'In China wird gekauft, ohne den Feed zu verlassen. Soziale Netzwerke dienen nicht der Produktentdeckung, sondern dem Verkauf. Content macht direkt die Kasse.',
+    description: 'In China wird gekauft, ohne den Feed zu verlassen. Soziale Netzwerke sind hier keine Schaufenster, sondern Kassen. Der Inhalt selbst schreibt Umsatz.',
     stat: '3.5T', statLabel: 'RMB GMV Douyin',
     image: '/images/ecosystem/commerce.png',
   },
@@ -77,31 +77,31 @@ const pillars = lang === 'de' ? [
 ] : lang === 'es' ? [
   {
     title: 'Audiencia.',
-    description: 'Mil millones de usuarios repartidos en decenas de plataformas, cada una con sus códigos. Primero el público, después el canal. Hacerlo al revés sale caro.',
+    description: 'Mil millones de usuarios, decenas de plataformas, cada cual con sus códigos. Primero el público; después, el canal. Si invierte el orden, el dinero se evapora.',
     stat: '1B+', statLabel: 'usuarios',
     image: '/images/ecosystem/audience.png',
   },
   {
     title: 'Contenido.',
-    description: 'Lo que arrasa en Douyin pasa inadvertido en WeChat. Cada plataforma impone su ritmo y su lenguaje. Producimos pieza a pieza para cada una.',
+    description: 'Lo que arrasa en Douyin pasa desapercibido en WeChat. Cada plataforma impone su ritmo y su lenguaje. Producimos a medida, una por una.',
     stat: '18+', statLabel: 'plataformas',
     image: '/images/ecosystem/content.png',
   },
   {
     title: 'Influencers.',
-    description: 'Los KOL y los KOC mueven la decisión de compra más que la publicidad clásica. Perfil adecuado, plataforma adecuada, momento adecuado. Lo demás se evapora.',
+    description: 'KOL y KOC empujan la decisión de compra mucho más que el anuncio clásico. Perfil acertado, plataforma acertada, momento acertado. Lo demás, dinero tirado.',
     stat: '80%', statLabel: 'confía en los KOL',
     image: '/images/ecosystem/influencers.png',
   },
   {
     title: 'Plataformas.',
-    description: 'WeChat, Douyin, RedNote, Weibo y catorce redes más. Los algoritmos cambian de mes en mes. Aguantar el pulso exige un equipo encima a diario.',
+    description: 'WeChat, Douyin, RedNote, Weibo y catorce redes más. Los algoritmos cambian cada mes. Seguirles el paso exige un equipo encima, todos los días.',
     stat: '14+', statLabel: 'plataformas más',
     image: '/images/ecosystem/platforms.png',
   },
   {
     title: 'Comercio.',
-    description: 'En China la compra se cierra sin salir del feed. Las redes sociales no sirven para descubrir productos, sirven para venderlos. El contenido es la caja.',
+    description: 'En China se compra sin salir del feed. Las redes no sirven para descubrir productos: sirven para venderlos. El contenido es la caja registradora.',
     stat: '3.5T', statLabel: 'RMB GMV Douyin',
     image: '/images/ecosystem/commerce.png',
   },
@@ -170,13 +170,13 @@ const pillars = lang === 'de' ? [
 ];
 
 const sectionText = lang === 'de' ? {
-  heading: 'Chinas soziale Netzwerke sind kein Kanal. Sie sind ein eigenes Ökosystem.',
-  sub: 'Zielgruppe, Content, Influencer, Plattformen, Commerce: alles greift ineinander. Auf einer Achse allein gewinnt niemand.',
+  heading: 'Chinas soziale Netzwerke sind kein Kanal, sondern ein eigener Markt.',
+  sub: 'Zielgruppe, Inhalte, Influencer, Plattformen, Commerce: alles greift ineinander. Auf einer Achse allein gewinnt hier niemand.',
   cta: 'Gespräch vereinbaren',
 } : lang === 'es' ? {
-  heading: 'Las redes sociales chinas no son un canal. Son toda una industria.',
-  sub: 'Audiencia, contenido, influencers, plataformas y venta van engranados. Si falta una pieza, no gira la rueda.',
-  cta: 'Reservar una llamada',
+  heading: 'Las redes sociales chinas no son un canal: son toda una industria.',
+  sub: 'Audiencia, contenido, influencers, plataformas y venta forman un engranaje. Si falla una pieza, la rueda se para.',
+  cta: 'Agendar una llamada',
 } : lang === 'zh' ? {
   heading: '中国社媒不是一个渠道，而是一整套生意。',
   sub: '人群、内容、达人、平台、电商，五环相扣。单点猛砸做不起来，整条链路必须一起跑。',

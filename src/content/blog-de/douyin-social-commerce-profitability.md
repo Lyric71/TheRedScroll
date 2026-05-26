@@ -13,11 +13,11 @@ featuredImage: "/images/blog/douyin-control-room.png"
 
 *Die meisten Marken verlieren auf Douyin Geld, bevor sie welches verdienen. Trotzdem bietet kein anderer Kanal einer internationalen Marke, die den chinesischen Markt erkunden will, so viel Reichweite zu einem so geringen Einstiegspreis.*
 
-## Warum die Rentabilität ein Mirage bleibt
+## Warum die Rentabilität ein Trugbild bleibt
 
 > Die meisten Marken schreiben auf Douyin im ersten Jahr keine schwarze Zahl. Auch große chinesische Konzerne mit erheblichen Budgets nicht.
 
-Nehmen wir Bluemoon, einen Schwergewichtler im Haushaltsreinigerbereich. Eine Analyse auf Zhihu zeigt: Die Marke arbeitete mit über 3.000 Influencern zusammen und investierte 40 Millionen Yuan in bezahlten Traffic. Der Return blieb unter null. Baixiang, die patriotisch aufgeladene Instant-Nudel-Marke, zieht die gleiche Bilanz: viel Geld ausgegeben, wenig zurückbekommen.
+Nehmen wir Bluemoon, ein Schwergewicht unter Chinas Haushaltsreinigern. Eine Analyse auf Zhihu zeigt: Die Marke arbeitete mit über 3.000 Influencern zusammen und investierte 40 Millionen Yuan in bezahlten Traffic. Die Rendite blieb unter null. Baixiang, die patriotisch aufgeladene Instant-Nudel-Marke, zieht die gleiche Bilanz: viel Geld ausgegeben, wenig zurückbekommen.
 
 Woran liegt das? Die Antwort steckt in der Modellarchitektur.
 

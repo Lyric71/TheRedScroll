@@ -1,4 +1,4 @@
----
+﻿---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Container from '../../components/ui/Container.astro';
 import Button from '../../components/ui/Button.astro';
@@ -36,7 +36,7 @@ const packages = [
   {
     name: 'Grow',
     price: '5.500 €',
-    description: 'Triple de volumen, vídeo con IA y una cadencia de publicación mucho más sostenida.',
+    description: 'Triplica el volumen, suma vídeo con IA y eleva la cadencia de publicación.',
     highlighted: true,
     strategy: {
       competitor: 'Mes 1',
@@ -108,7 +108,7 @@ const addOnPlatforms = [
 ---
 
 <BaseLayout
-  title="Paquetes precio cerrado para social en China | TheRedScroll"
+  title="Precios cerrados para social media en China | TheRedScroll"
   description="Paquetes claros y precios cerrados para marketing en redes sociales chinas: WeChat, Douyin, RedNote, Weibo. Desde 3.750 € al mes."
   lang="es"
 >
@@ -119,10 +119,10 @@ const addOnPlatforms = [
       <div class="relative z-[1] max-w-[800px] mx-auto text-center">
         <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">Precios</p>
         <h1 class="text-[#FFFFFF] text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] mb-[8px]">
-          Alcance cerrado. Precio firme. Cero extras.
+          Alcance cerrado. Precio fijo. Cero extras.
         </h1>
         <p class="text-[rgba(255,255,255,0.6)] text-[16px] font-normal leading-[1.6]">
-          Precios en euros, antes de impuestos. Compromiso a seis meses en todos los paquetes.
+          Precios en euros, sin impuestos. Compromiso a seis meses en todos los paquetes.
         </p>
       </div>
     </section>
@@ -222,7 +222,7 @@ const addOnPlatforms = [
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] font-medium text-center">4/sem.</td>
               </tr>
 
-              <tr><td colspan="4" class="pt-[32px] pb-[8px] px-[16px]"><p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333]">Producción IA</p></td></tr>
+              <tr><td colspan="4" class="pt-[32px] pb-[8px] px-[16px]"><p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333]">Producción con IA</p></td></tr>
               <tr class="border-b border-[rgba(0,0,0,0.06)]">
                 <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">Vídeo generado por IA con HubStudio.ai</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center">—</td>
@@ -256,7 +256,7 @@ const addOnPlatforms = [
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] text-center">&#10003;</td>
               </tr>
 
-              <tr><td colspan="4" class="pt-[32px] pb-[8px] px-[16px]"><p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333]">Acompañamiento y reporting</p></td></tr>
+              <tr><td colspan="4" class="pt-[32px] pb-[8px] px-[16px]"><p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333]">Acompañamiento e informes</p></td></tr>
               <tr class="border-b border-[rgba(0,0,0,0.06)]">
                 <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">Interlocutor dedicado</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] text-center">&#10003;</td>
@@ -277,7 +277,7 @@ const addOnPlatforms = [
               </tr>
               <tr>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">Reuniones estratégicas</td>
-                <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center">1 vez al mes</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center">Una al mes</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A] font-medium text-center border-x-[3px] border-[#CC3333]">Cada semana</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] font-medium text-center">A demanda</td>
               </tr>
@@ -307,7 +307,7 @@ const addOnPlatforms = [
                 { label: 'Douyin (vídeo IA)', value: pkg.content.douyinAi },
                 { label: 'Total Douyin', value: pkg.content.douyinTotal },
               ]},
-              { section: 'Producción IA', items: [
+              { section: 'Producción con IA', items: [
                 { label: 'Vídeo generado por IA con HubStudio.ai', value: pkg.ai },
                 { label: 'Validación del brief antes de producir', value: pkg.ai },
               ]},
@@ -316,7 +316,7 @@ const addOnPlatforms = [
                 { label: 'Vigilancia de la competencia', value: pkg.socialListening },
                 { label: 'Balance mensual de imagen', value: pkg.socialListening },
               ]},
-              { section: 'Acompañamiento y reporting', items: [
+              { section: 'Acompañamiento e informes', items: [
                 { label: 'Interlocutor dedicado', value: pkg.support.accountManager },
                 { label: 'Soporte por chat (lun.-vie.)', value: pkg.support.chatSupport },
                 { label: 'Informe mensual de rendimiento', value: pkg.support.monthlyReport },
@@ -384,7 +384,7 @@ const addOnPlatforms = [
         <SectionBar />
         <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[8px]">Plataformas opcionales</h2>
         <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] mb-[32px] max-w-[680px]">
-          Se acumulan a cualquier paquete con facturación mensual. Mínimo cuatro posts al mes por plataforma. Los precios cubren redacción, adaptación local, montaje de imagen o vídeo y publicación.
+          Se suman a cualquier paquete con facturación mensual. Mínimo cuatro posts al mes por plataforma. Los precios cubren redacción, adaptación local, montaje de imagen o vídeo y publicación.
         </p>
 
         <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
@@ -474,7 +474,7 @@ const addOnPlatforms = [
 
         <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
           <div class="bg-[#F0F1F4] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-            <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333] mb-[8px]">Marketing de influencers</p>
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333] mb-[8px]">Marketing de influencia</p>
             <h3 class="text-[18px] text-[#1A1A1A] font-medium leading-[1.3] mb-[8px]">Campañas con KOL y KOC</h3>
             <p class="text-[28px] text-[#1A1A1A] font-medium leading-[1.2] mb-[8px]">Del 15 al 25 %<span class="text-[14px] text-[#5C5C5C] font-normal"> del presupuesto de influencers</span></p>
             <div class="text-[13px] text-[#5C5C5C] font-normal leading-[1.8]">
@@ -497,20 +497,20 @@ const addOnPlatforms = [
               </div>
             </div>
             <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.6] mt-[16px]">
-              Profundización por plataforma, estrategia de contenido, social commerce, campañas con KOL, analítica. En inglés o en chino mandarín. Por videollamada o presencial.
+              Inmersión por plataforma, estrategia de contenido, social commerce, campañas con KOL, analítica. En inglés o en chino mandarín. Por videollamada o presencial.
             </p>
           </div>
 
           <div class="bg-[#F0F1F4] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
             <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333] mb-[8px]">Consultoría</p>
-            <h3 class="text-[18px] text-[#1A1A1A] font-medium leading-[1.3] mb-[8px]">Experiencia bajo demanda</h3>
+            <h3 class="text-[18px] text-[#1A1A1A] font-medium leading-[1.3] mb-[8px]">Experiencia a demanda</h3>
             <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.6] mb-[16px]">Presupuesto a medida según alcance y duración.</p>
             <Button variant="secondary" href="/es/contacto">Hablemos</Button>
           </div>
 
           <div class="bg-[#1A1A1A] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
             <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333] mb-[8px]">CRM y tráfico privado</p>
-            <h3 class="text-[18px] text-[#FFFFFF] font-medium leading-[1.3] mb-[8px]">Construya una audiencia que sea suya</h3>
+            <h3 class="text-[18px] text-[#FFFFFF] font-medium leading-[1.3] mb-[8px]">Una audiencia que sea suya</h3>
             <p class="text-[13px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] mb-[16px]">
               Implantación de WeCom, integración con el CRM de WeChat, dinamización de comunidades, circuitos de tráfico privado, Mini Programs de fidelización. Presupuesto a medida.
             </p>
@@ -548,7 +548,7 @@ const addOnPlatforms = [
             <p>Facturación mensual, pago por adelantado.</p>
             <p>Arranque: apertura de cuentas y primeras publicaciones en menos de dos semanas tras la firma.</p>
             <p>Las plataformas opcionales se añaden a cualquier paquete al precio unitario indicado.</p>
-            <p>Hay paquetes a medida para necesidades que se salen del marco estándar. <a href="/es/contacto" class="text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Reservar una llamada</a>.</p>
+            <p>Hay paquetes a medida para necesidades que se salen del marco estándar. <a href="/es/contacto" class="text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Agendar una llamada</a>.</p>
           </div>
         </div>
       </Container>
