@@ -8,7 +8,7 @@ author: "TheRedScroll"
 category: "Contenido"
 keywords: ["AIGC", "producción IA", "marketing China", "Douyin", "WeChat", "RedNote", "vídeo IA", "automatización contenido"]
 featured: true
-featuredImage: "/images/blog/aigc-content-factory.png"
+featuredImage: "/images/blog/aigc-content-factory.webp"
 ---
 
 *Más de la mitad de los anunciantes chinos ya utiliza la IA para crear contenido. El mercado va camino de multiplicarse por más de diez de aquí a 2028, pasando de 25.700 millones de yuanes en 2025 a 276.700 millones (Weiboyi y la Asociación China de Publicidad). Esto es lo que significa para su marca.*
@@ -31,7 +31,7 @@ Los datos recogidos en la revisión sobre marketing con IA de Douban en 2026 ind
 
 Una rebaja de coste así cambia, sin más, lo que es económicamente viable para marcas de cualquier tamaño.
 
-![Una herramienta de generación de contenido con IA mostrando una cuadrícula de imágenes lifestyle de producto para selección por lotes](/images/blog/aigc-batch-grid.png)
+![Una herramienta de generación de contenido con IA mostrando una cuadrícula de imágenes lifestyle de producto para selección por lotes](/images/blog/aigc-batch-grid.webp)
 
 **Volumen.** Plataformas como Douyin, RedNote y WeChat Channels premian la frecuencia de publicación. Los algoritmos favorecen a las cuentas que se mantienen activas. La IA ofrece a las marcas una manera de sostener ese ritmo sin agotar a su equipo de contenidos. Una empresa de gran consumo levantó una biblioteca íntegra de vídeos de producto generados con IA y, recombinando esos clips, produjo cientos de variantes para distintas campañas y audiencias.
 
@@ -73,7 +73,7 @@ Como señalaba iResearch en su informe de 2025 sobre IA y medios de internet, la
 
 > Fuente: iResearch, Informe sectorial chino sobre IA y medios de internet 2025
 
-![Un panel de plataforma de contenido con IA mostrando los activos generados, el coste por activo y la distribución por plataforma](/images/blog/aigc-dashboard.png)
+![Un panel de plataforma de contenido con IA mostrando los activos generados, el coste por activo y la distribución por plataforma](/images/blog/aigc-dashboard.webp)
 
 ## Hacia dónde va
 

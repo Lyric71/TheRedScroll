@@ -8,7 +8,7 @@ author: "TheRedScroll"
 category: "Strategie"
 keywords: ["Livestream-Shopping", "E-Commerce China", "Douyin Live", "Tmall Live", "Social Commerce China", "Live-Verkauf China", "Konsumentenverhalten China"]
 featured: true
-featuredImage: "/images/blog/livestream-douyin-couch.png"
+featuredImage: "/images/blog/livestream-douyin-couch.webp"
 ---
 
 *Sechshundert Millionen Chinesen kaufen heute im Livestream. 5.800 Milliarden Yuan in 2024. Um zu verstehen, was passiert, muss man sich in den Käufer hineinversetzen.*
@@ -43,7 +43,7 @@ Die Zuschauer stellen ihre Fragen im Chat, der Host antwortet sofort. Fällt es 
 
 > Quelle: Commercial Economy Research; Cankao Wang, 2025
 
-![Eine Büroangestellte verfolgt während ihrer Mittagspause eine Tmall-Live-Verkaufssitzung](/images/blog/livestream-tmall-lunch.png)
+![Eine Büroangestellte verfolgt während ihrer Mittagspause eine Tmall-Live-Verkaufssitzung](/images/blog/livestream-tmall-lunch.webp)
 
 ### 3. Die Preise sind tatsächlich niedriger
 
@@ -63,7 +63,7 @@ Wenn hunderte Menschen unter Ihren Augen dasselbe Produkt kaufen und sich der Ch
 
 > Quelle: Tsinghua SEM, Studie zur Entstehung von Impulskäufen im Livestream
 
-![Eine junge Frau entdeckt während eines RedNote-Livestreams Beauty-Produkte, von ihrem Bett aus](/images/blog/livestream-rednote-bed.png)
+![Eine junge Frau entdeckt während eines RedNote-Livestreams Beauty-Produkte, von ihrem Bett aus](/images/blog/livestream-rednote-bed.webp)
 
 ## Wer zuschaut
 

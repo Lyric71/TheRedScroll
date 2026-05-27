@@ -8,7 +8,7 @@ author: "TheRedScroll"
 category: "Strategie"
 keywords: ["Live Commerce China", "Livestream Verkauf", "E-Commerce China", "MCN China", "CPS-Provision", "Taobao Live", "Douyin Commerce"]
 featured: true
-featuredImage: "/images/blog/live-commerce-purchase.png"
+featuredImage: "/images/blog/live-commerce-purchase.webp"
 ---
 
 *Der leistungsstärkste Verkaufskanal in Chinas Digitalwirtschaft ist weder eine Website noch ein App-Store noch ein Feed. Es ist ein Live-Videostream.*
@@ -51,7 +51,7 @@ Der Abstand ist groß genug, um zu erklären, warum Live Commerce den Influencer
 
 Mikro-Influencer arbeiten meist unabhängig. Sobald aber eine Marke bezahlte Kampagnen in nennenswertem Umfang fährt, wird der Weg über ein MCN nahezu unvermeidbar.
 
-![Innenraum eines MCN-Büros mit mehreren Monitoren, die laufende Livestreams zeigen, und einem Koordinator, der die Sendepläne steuert](/images/blog/live-commerce-mcn-office.png)
+![Innenraum eines MCN-Büros mit mehreren Monitoren, die laufende Livestreams zeigen, und einem Koordinator, der die Sendepläne steuert](/images/blog/live-commerce-mcn-office.webp)
 
 ## Vergütungsmodelle
 
@@ -89,7 +89,7 @@ Virtuelle Hosts kommen ebenfalls voran. Der virtuelle Host von JD.com hat einen 
 
 Die Aufgabenverteilung ist klar: Die KI übernimmt Volumen und Takt, der Mensch hält das Vertrauen.
 
-![Ein Provisionstracking-Dashboard zeigt Verkaufsvolumen, CPS-Raten und Influencer-Leistung](/images/blog/live-commerce-dashboard.png)
+![Ein Provisionstracking-Dashboard zeigt Verkaufsvolumen, CPS-Raten und Influencer-Leistung](/images/blog/live-commerce-dashboard.webp)
 
 ## Die klassischen Fehler
 

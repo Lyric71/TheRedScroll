@@ -8,7 +8,7 @@ author: "TheRedScroll"
 category: "Plattformen"
 keywords: ["Douyin", "Douyin Commerce", "Social Commerce China", "Douyin Profitabilität", "Markteintritt China", "Live Commerce", "Douyin ROI"]
 featured: true
-featuredImage: "/images/blog/douyin-control-room.png"
+featuredImage: "/images/blog/douyin-control-room.webp"
 ---
 
 *Die meisten Marken verlieren auf Douyin Geld, bevor sie welches verdienen. Trotzdem bietet kein anderer Kanal einer internationalen Marke, die den chinesischen Markt erkunden will, so viel Reichweite zu einem so geringen Einstiegspreis.*
@@ -32,7 +32,7 @@ Woran liegt das? Die Antwort steckt in der Modellarchitektur.
 
 > Quelle: Qinggua Media, Digitaling, Ebrun, Youzan
 
-![Eine Konsumentin verfolgt auf ihrem Smartphone einen Douyin-Live-Verkauf](/images/blog/douyin-phone-buyer.png)
+![Eine Konsumentin verfolgt auf ihrem Smartphone einen Douyin-Live-Verkauf](/images/blog/douyin-phone-buyer.webp)
 
 ## Warum trotzdem dort hin
 
@@ -54,7 +54,7 @@ Douyin ist der kürzeste Weg zum chinesischen Konsumenten. Und sehr wahrscheinli
 
 > Eine solche Marktkenntnis, bei einem Marktforschungsinstitut beauftragt, kostet zehntausende Euro. Auf Douyin bekommen Sie sie als Nebenertrag des Verkaufs.
 
-![Eine Douyin-KOL filmt einen Produkttest in ihrer Wohnung](/images/blog/douyin-kol-showcase.png)
+![Eine Douyin-KOL filmt einen Produkttest in ihrer Wohnung](/images/blog/douyin-kol-showcase.webp)
 
 ## Wie kluge Marken vorgehen
 

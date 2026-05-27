@@ -8,7 +8,7 @@ author: "TheRedScroll"
 category: "平台"
 keywords: ["抖音", "抖音电商", "中国社交电商", "抖音盈利", "中国市场进入", "直播电商", "抖音ROI"]
 featured: true
-featuredImage: "/images/blog/douyin-control-room.png"
+featuredImage: "/images/blog/douyin-control-room.webp"
 ---
 
 *大多数品牌在抖音上是先亏钱，才谈得上赚钱。但对想试水中国的国际品牌来说，没有哪个渠道能用这么低的门槛换来这么大的覆盖。*
@@ -32,7 +32,7 @@ featuredImage: "/images/blog/douyin-control-room.png"
 
 > 来源：青瓜传媒、Digitaling、亿邦动力、有赞
 
-![一位消费者正在手机上看抖音直播购物](/images/blog/douyin-phone-buyer.png)
+![一位消费者正在手机上看抖音直播购物](/images/blog/douyin-phone-buyer.webp)
 
 ## 为什么还是值得做
 
@@ -54,7 +54,7 @@ featuredImage: "/images/blog/douyin-control-room.png"
 
 > 传统调研公司给你同样的东西，要花几万美金。在抖音，这是你卖货的副产品。
 
-![一位抖音达人在自家公寓里拍产品测评](/images/blog/douyin-kol-showcase.png)
+![一位抖音达人在自家公寓里拍产品测评](/images/blog/douyin-kol-showcase.webp)
 
 ## 聪明的品牌怎么看抖音
 

@@ -8,7 +8,7 @@ author: "TheRedScroll"
 category: "Platforms"
 keywords: ["Douyin", "Douyin ecommerce", "China social commerce", "Douyin profitability", "China market entry", "livestream commerce", "Douyin ROI"]
 featured: true
-featuredImage: "/images/blog/douyin-control-room.png"
+featuredImage: "/images/blog/douyin-control-room.webp"
 ---
 
 *Most brands lose money on Douyin before they make it. But for international brands testing China, no other channel gives you this much reach at this low a cost of entry.*
@@ -32,7 +32,7 @@ So what is going on? A few things.
 
 > Source: Qinggua Media, Digitaling, Ebrun, Youzan
 
-![A consumer watching a Douyin livestream shopping session on her phone](/images/blog/douyin-phone-buyer.png)
+![A consumer watching a Douyin livestream shopping session on her phone](/images/blog/douyin-phone-buyer.webp)
 
 ## Why it is still worth it
 
@@ -54,7 +54,7 @@ All of that said, Douyin remains the fastest way into China's consumer market wi
 
 > That kind of market intelligence would cost tens of thousands of dollars through a traditional research firm. On Douyin, you get it as a byproduct of selling.
 
-![A Douyin KOL filming a product review in her apartment](/images/blog/douyin-kol-showcase.png)
+![A Douyin KOL filming a product review in her apartment](/images/blog/douyin-kol-showcase.webp)
 
 ## The bigger picture: how smart brands think about Douyin
 

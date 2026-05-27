@@ -8,7 +8,7 @@ author: "TheRedScroll"
 category: "内容"
 keywords: ["AIGC", "AI内容生产", "中国营销", "抖音", "微信", "小红书", "AI视频", "内容自动化"]
 featured: true
-featuredImage: "/images/blog/aigc-content-factory.png"
+featuredImage: "/images/blog/aigc-content-factory.webp"
 ---
 
 *一半以上的中国广告主已经在用AI做内容。市场预计到2028年规模将从2025年的257亿元增长到2767亿元，三年翻十倍（微播易联合中国广告协会）。这意味着什么，品牌该怎么看。*
@@ -31,7 +31,7 @@ featuredImage: "/images/blog/aigc-content-factory.png"
 
 这种成本降幅，对任何体量的品牌都是一次洗牌。
 
-![AI内容生成工具显示产品生活方式图片网格，可批量选择](/images/blog/aigc-batch-grid.png)
+![AI内容生成工具显示产品生活方式图片网格，可批量选择](/images/blog/aigc-batch-grid.webp)
 
 **量。** 抖音、小红书、视频号都在奖励更新频次。算法偏爱活跃账号。AI让品牌能保住发布节奏，又不把内容团队熬垮。某消费品公司干脆用AI搭了一个产品视频素材库，之后不断重组片段，给不同活动、不同人群产出上百个版本。
 
@@ -73,7 +73,7 @@ featuredImage: "/images/blog/aigc-content-factory.png"
 
 > 来源：艾瑞咨询，《2025年中国AI与互联网媒体行业研究报告》
 
-![AI内容平台仪表盘，显示生成素材数量、单条成本和平台分发](/images/blog/aigc-dashboard.png)
+![AI内容平台仪表盘，显示生成素材数量、单条成本和平台分发](/images/blog/aigc-dashboard.webp)
 
 ## 接下来会怎么走
 

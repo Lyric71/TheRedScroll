@@ -8,7 +8,7 @@ author: "TheRedScroll"
 category: "Stratégie"
 keywords: ["vente en direct Chine", "livestream vente", "commerce en ligne Chine", "MCN Chine", "commission CPS", "Taobao Live", "Douyin commerce"]
 featured: true
-featuredImage: "/images/blog/live-commerce-purchase.png"
+featuredImage: "/images/blog/live-commerce-purchase.webp"
 ---
 
 *Le canal de vente le plus performant du numérique chinois n'est ni un site web, ni une boutique d'application, ni un fil d'actualité. C'est une diffusion vidéo en direct.*
@@ -51,7 +51,7 @@ L'écart est suffisamment large pour expliquer pourquoi le direct domine aujourd
 
 Les micro-influenceurs, eux, opèrent le plus souvent en indépendants. Mais dès qu'une marque souhaite mener des campagnes payantes d'une certaine ampleur, le passage par un MCN devient presque incontournable.
 
-![L'intérieur d'un bureau de MCN avec plusieurs écrans montrant des directs actifs et un coordinateur gérant les plannings](/images/blog/live-commerce-mcn-office.png)
+![L'intérieur d'un bureau de MCN avec plusieurs écrans montrant des directs actifs et un coordinateur gérant les plannings](/images/blog/live-commerce-mcn-office.webp)
 
 ## Comment ça se rémunère
 
@@ -89,7 +89,7 @@ Les animateurs virtuels, eux aussi, progressent. Celui de JD.com a tenu une diff
 
 Le partage des rôles est limpide : l'IA prend en charge le volume et la cadence, l'humain garde la confiance.
 
-![Un tableau de bord de suivi des commissions montrant le volume de ventes, les taux CPS et les performances des influenceurs](/images/blog/live-commerce-dashboard.png)
+![Un tableau de bord de suivi des commissions montrant le volume de ventes, les taux CPS et les performances des influenceurs](/images/blog/live-commerce-dashboard.webp)
 
 ## Les erreurs classiques
 

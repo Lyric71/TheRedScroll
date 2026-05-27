@@ -8,7 +8,7 @@ author: "TheRedScroll"
 category: "Strategie"
 keywords: ["KOL", "KOC", "Influencer-Marketing China", "Influencer China", "Fake Follower China", "Perfect Diary", "Xiaohongshu Influencer"]
 featured: true
-featuredImage: "/images/blog/kol-studio-shoot.png"
+featuredImage: "/images/blog/kol-studio-shoot.webp"
 keyFacts:
   - "KOL steht für Key Opinion Leader: Influencer mit großer Reichweite, eingesetzt für Sichtbarkeit und Markenbekanntheit."
   - "KOC steht für Key Opinion Consumer: Alltagsnutzer mit 1.000 bis 100.000 Followern, eingesetzt für Vertrauen und Conversion."
@@ -35,7 +35,7 @@ Laut iiMedia Research wiegen KOC bei Kaufentscheidungen chinesischer Konsumenten
 
 Die chinesische GenZ ist gegenüber Sponsored Content besonders wachsam geworden. KOL haben nichts von ihrer Bedeutung verloren, im Gegenteil. Doch die Zeit, in der eine Marke ihr gesamtes Budget auf einen einzigen Namen setzen konnte und alles weitere sich von selbst ergab, ist vorbei.
 
-![Eine KOC filmt in ihrer Küche ein zwangloses Produkt-Unboxing, das Smartphone auf Büchern aufgebockt](/images/blog/koc-unboxing-kitchen.png)
+![Eine KOC filmt in ihrer Küche ein zwangloses Produkt-Unboxing, das Smartphone auf Büchern aufgebockt](/images/blog/koc-unboxing-kitchen.webp)
 
 ## Das Problem der gefälschten Follower
 
@@ -67,7 +67,7 @@ Die Mega-KOL gehen von 32 auf 30 Prozent zurück. Die Plattformen verteilen den 
 
 Der beste Ertrag steckt heute in der Mitte der Pyramide.
 
-![Ein Whiteboard zeigt die Pyramidenstrategie der Influencer-Aussteuerung mit KOL- und KOC-Ebenen und Budgetverteilung](/images/blog/kol-pyramid-whiteboard.png)
+![Ein Whiteboard zeigt die Pyramidenstrategie der Influencer-Aussteuerung mit KOL- und KOC-Ebenen und Budgetverteilung](/images/blog/kol-pyramid-whiteboard.webp)
 
 ## Die Vergütung
 

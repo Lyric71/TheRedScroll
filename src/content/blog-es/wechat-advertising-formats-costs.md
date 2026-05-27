@@ -8,7 +8,7 @@ author: "TheRedScroll"
 category: "Plataformas"
 keywords: ["publicidad WeChat", "ads WeChat Moments", "ads WeChat Channels", "Tencent Ads", "publicidad China", "CPM WeChat", "formatos publicidad WeChat"]
 featured: true
-featuredImage: "/images/blog/wechat-moments-ad.png"
+featuredImage: "/images/blog/wechat-moments-ad.webp"
 ---
 
 *Seis emplazamientos, tres modelos de precio y un mínimo de inversión que hace tropezar a la mayoría de las marcas internacionales. Una guía práctica del sistema publicitario de WeChat.*
@@ -36,7 +36,7 @@ WeChat ofrece seis posiciones de anuncio repartidas por el ecosistema. Cada una 
 | Búsqueda | Resultados por palabra clave en la búsqueda de WeChat | Segmentación por intención, defensa de marca |
 | Top Stories | En el feed curado de contenido | Descubrimiento de artículo, promoción de contenido |
 
-![Un anuncio en vídeo de WeChat Channels reproduciéndose en el feed entre contenido orgánico de creadores](/images/blog/wechat-channels-ad.png)
+![Un anuncio en vídeo de WeChat Channels reproduciéndose en el feed entre contenido orgánico de creadores](/images/blog/wechat-channels-ad.webp)
 
 Channels es el formato a vigilar. Los usuarios activos al día en WeChat Channels superaron los 800 millones en 2025, según los datos de Tencent, y los ingresos publicitarios de Channels crecieron un 60 % interanual en 2024. Sigue, además, infravalorado en precio frente a Moments, lo que lo convierte en una buena opción para marcas que buscan alcance en vídeo sin asumir presupuestos al nivel de Moments.
 
@@ -88,7 +88,7 @@ Para una marca internacional que está probando aguas, el modelo de puja a 1.000
 
 La promoción local a 300 yuanes al día es la entrada más barata, pero funciona únicamente para campañas con geolocalización a 3-5 km de una ubicación física. Sirve para restaurantes, tiendas o salas de eventos. No para campañas nacionales de marca.
 
-![Un artículo de Cuenta Oficial de WeChat con un banner al pie de la página](/images/blog/wechat-article-ad.png)
+![Un artículo de Cuenta Oficial de WeChat con un banner al pie de la página](/images/blog/wechat-article-ad.webp)
 
 ## Lo que nadie le cuenta
 

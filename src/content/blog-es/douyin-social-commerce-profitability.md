@@ -8,7 +8,7 @@ author: "TheRedScroll"
 category: "Plataformas"
 keywords: ["Douyin", "Douyin ecommerce", "social commerce China", "rentabilidad Douyin", "entrada mercado China", "livestream commerce", "ROI Douyin"]
 featured: true
-featuredImage: "/images/blog/douyin-control-room.png"
+featuredImage: "/images/blog/douyin-control-room.webp"
 ---
 
 *La mayoría de las marcas pierde dinero en Douyin antes de empezar a ganarlo. Pero, para una marca internacional que pone a prueba China, ningún otro canal ofrece tanto alcance a un coste de entrada tan bajo.*
@@ -32,7 +32,7 @@ Según un análisis publicado en Zhihu, Bluemoon, uno de los gigantes del país 
 
 > Fuentes: Qinggua Media, Digitaling, Ebrun, Youzan
 
-![Una consumidora viendo una sesión de livestream shopping de Douyin desde el móvil](/images/blog/douyin-phone-buyer.png)
+![Una consumidora viendo una sesión de livestream shopping de Douyin desde el móvil](/images/blog/douyin-phone-buyer.webp)
 
 ## Por qué, aun así, vale la pena
 
@@ -54,7 +54,7 @@ Con todo eso encima, Douyin sigue siendo la vía más rápida para entrar en el 
 
 > Ese tipo de inteligencia de mercado costaría decenas de miles de dólares pasados por una consultora tradicional. En Douyin se obtiene como subproducto de la venta.
 
-![Un KOL de Douyin grabando una reseña de producto en su salón](/images/blog/douyin-kol-showcase.png)
+![Un KOL de Douyin grabando una reseña de producto en su salón](/images/blog/douyin-kol-showcase.webp)
 
 ## El cuadro grande: cómo enfocan Douyin las marcas listas
 

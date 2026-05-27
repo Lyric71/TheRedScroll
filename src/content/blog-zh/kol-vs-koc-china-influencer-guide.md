@@ -8,7 +8,7 @@ author: "TheRedScroll"
 category: "策略"
 keywords: ["KOL", "KOC", "中国达人营销", "中国网红营销", "虚假粉丝", "完美日记", "小红书达人"]
 featured: true
-featuredImage: "/images/blog/kol-studio-shoot.png"
+featuredImage: "/images/blog/kol-studio-shoot.webp"
 keyFacts:
   - "KOL，意见领袖（Key Opinion Leader），粉丝量大的达人，主要用于做声量、做品牌认知。"
   - "KOC，普通消费者意见领袖（Key Opinion Consumer），粉丝在1000到10万之间的素人，用于做信任、做转化。"
@@ -35,7 +35,7 @@ KOC全称Key Opinion Consumer，关键意见消费者。就是普通用户，粉
 
 年轻一代尤其敏感。中国的Z世代越来越不信种草稿。这不代表KOL没用了。但"一把预算砸一个大号就能出效果"的年代已经过去了。
 
-![一位KOC在厨房桌上用架在书本上的手机做开箱](/images/blog/koc-unboxing-kitchen.png)
+![一位KOC在厨房桌上用架在书本上的手机做开箱](/images/blog/koc-unboxing-kitchen.webp)
 
 ## 虚假粉丝这件事
 
@@ -67,7 +67,7 @@ KOC全称Key Opinion Consumer，关键意见消费者。就是普通用户，粉
 
 现在最能打的一层，就是金字塔的腰部。
 
-![白板上画着达人金字塔：KOL和KOC分层以及预算分配](/images/blog/kol-pyramid-whiteboard.png)
+![白板上画着达人金字塔：KOL和KOC分层以及预算分配](/images/blog/kol-pyramid-whiteboard.webp)
 
 ## 达人怎么收钱
 

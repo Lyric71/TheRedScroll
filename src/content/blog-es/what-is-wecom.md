@@ -8,7 +8,7 @@ author: "TheRedScroll"
 category: "Plataformas"
 keywords: ["WeCom", "WeChat Work", "tráfico privado", "marketing China", "WeChat empresa", "CRM China", "WeCom 5.0"]
 featured: true
-featuredImage: "/images/blog/wecom-split-screen.png"
+featuredImage: "/images/blog/wecom-split-screen.webp"
 keyFacts:
   - "WeCom es la plataforma de comunicación corporativa de Tencent, integrada en el ecosistema de WeChat. Antes de 2020 se llamaba WeChat Work."
   - "Más de 180 millones de personas usan WeCom de forma activa y más de 14 millones de empresas lo emplean en su operativa diaria (VP de Tencent, lanzamiento de WeCom 5.0, agosto de 2025)."
@@ -43,7 +43,7 @@ Para una marca internacional aún en fase de construcción, perder a un gestor c
 
 WeCom da la vuelta a la ecuación. Todos los contactos quedan colgados de la cuenta corporativa. Las conversaciones se archivan y se traspasan. Cuando un empleado se marcha, su cartera entera pasa, de forma automática, al compañero que toma el relevo.
 
-![Un comercial usando WeCom para escribir a un cliente desde un punto de venta](/images/blog/wecom-sales-associate.png)
+![Un comercial usando WeCom para escribir a un cliente desde un punto de venta](/images/blog/wecom-sales-associate.webp)
 
 A todo esto se suma un efecto de credibilidad que suele subestimarse. Cuando un cliente añade un contacto WeCom, le aparece el nombre verificado de la empresa y el cargo del empleado. Para una marca extranjera todavía desconocida en China, esa forma de legitimidad cuesta conseguir por otra vía.
 
@@ -64,7 +64,7 @@ En el último año, el equipo de WeCom ha entregado doce actualizaciones de vers
 
 > Fuente: Sina Finance, informe sobre el lanzamiento de WeCom 5.0, agosto de 2025
 
-![Una publicación de marca de WeCom apareciendo de forma natural en el feed de Moments de un cliente](/images/blog/wecom-moments-scroll.png)
+![Una publicación de marca de WeCom apareciendo de forma natural en el feed de Moments de un cliente](/images/blog/wecom-moments-scroll.webp)
 
 Blancpain, por citar un ejemplo, ha conectado WeCom con su CRM para articular en un mismo dispositivo el programa de fidelización, las cuentas oficiales y la atención al cliente en boutique. El tipo de arquitectura que convierte una presencia china hasta entonces dispersa en algo que se capitaliza con el tiempo.
 

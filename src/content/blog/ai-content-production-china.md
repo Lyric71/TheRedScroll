@@ -8,7 +8,7 @@ author: "TheRedScroll"
 category: "Content"
 keywords: ["AIGC", "AI content production", "China marketing", "Douyin", "WeChat", "RedNote", "AI video", "content automation"]
 featured: true
-featuredImage: "/images/blog/aigc-content-factory.png"
+featuredImage: "/images/blog/aigc-content-factory.webp"
 ---
 
 *More than half of Chinese advertisers already use AI to create content. The market is on track to grow more than tenfold by 2028, from 25.7 billion yuan in 2025 to 276.7 billion yuan (Weiboyi and China Advertising Association). Here is what that means for your brand.*
@@ -31,7 +31,7 @@ So where are the gains showing up?
 
 That kind of cost reduction changes what is economically possible for brands of any size.
 
-![An AI content generation tool displaying a grid of product lifestyle images for batch selection](/images/blog/aigc-batch-grid.png)
+![An AI content generation tool displaying a grid of product lifestyle images for batch selection](/images/blog/aigc-batch-grid.webp)
 
 **Volume.** Platforms like Douyin, RedNote, and WeChat Channels all reward posting frequency. The algorithms favor accounts that stay active. AI gives brands a way to keep that posting pace without exhausting their content teams. One consumer goods company built an entire AI-generated product video library, then recombined clips to produce hundreds of variations for different campaigns and audiences.
 
@@ -73,7 +73,7 @@ As iResearch noted in their 2025 report on AI and internet media, content produc
 
 > Source: iResearch, 2025 China AI and Internet Media Industry Research Report
 
-![An AI content platform dashboard showing assets generated, cost per asset, and platform distribution](/images/blog/aigc-dashboard.png)
+![An AI content platform dashboard showing assets generated, cost per asset, and platform distribution](/images/blog/aigc-dashboard.webp)
 
 ## Where this is going
 

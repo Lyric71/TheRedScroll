@@ -8,7 +8,7 @@ author: "TheRedScroll"
 category: "Plattformen"
 keywords: ["WeCom", "WeChat Work", "Private Traffic", "Marketing China", "WeChat Enterprise", "CRM China", "WeCom 5.0"]
 featured: true
-featuredImage: "/images/blog/wecom-split-screen.png"
+featuredImage: "/images/blog/wecom-split-screen.webp"
 keyFacts:
   - "WeCom ist Tencents Plattform für Unternehmenskommunikation innerhalb des WeChat-Ökosystems. Bis 2020 hieß sie WeChat Work."
   - "Über 180 Millionen Menschen nutzen WeCom aktiv. Mehr als 14 Millionen Unternehmen steuern ihr Tagesgeschäft darüber (Tencent VP, WeCom 5.0 Launch, August 2025)."
@@ -43,7 +43,7 @@ Für eine internationale Marke im Aufbau bedeutet der Verlust eines wichtigen Ac
 
 WeCom verschiebt diese Logik grundlegend. Alle Kontakte hängen am Unternehmenskonto. Gespräche sind archiviert und übertragbar. Verlässt jemand das Unternehmen, geht das gesamte Kundenportfolio automatisch an seinen Nachfolger.
 
-![Ein Vertriebsmitarbeiter schreibt aus dem Ladengeschäft über WeCom eine Nachricht an einen Kunden](/images/blog/wecom-sales-associate.png)
+![Ein Vertriebsmitarbeiter schreibt aus dem Ladengeschäft über WeCom eine Nachricht an einen Kunden](/images/blog/wecom-sales-associate.webp)
 
 Hinzu kommt ein Glaubwürdigkeitseffekt, der häufig unterschätzt wird. Fügt ein Kunde einen WeCom-Kontakt hinzu, sieht er einen verifizierten Unternehmensnamen und eine Funktionsbezeichnung. Für eine ausländische Marke, die chinesischen Konsumenten noch unbekannt ist, lässt sich diese Form von Legitimität sonst kaum erzeugen.
 
@@ -64,7 +64,7 @@ Im vergangenen Jahr hat das WeCom-Team zwölf Updates und mehr als 1.700 Funktio
 
 > Quelle: Sina Finance, Launch-Bericht WeCom 5.0, August 2025
 
-![Ein WeCom-Markenpost erscheint nahtlos im Moments-Feed eines Kunden](/images/blog/wecom-moments-scroll.png)
+![Ein WeCom-Markenpost erscheint nahtlos im Moments-Feed eines Kunden](/images/blog/wecom-moments-scroll.webp)
 
 Blancpain hat WeCom etwa an sein CRM angebunden, um Treueprogramm, Official Accounts und Boutique-Beziehungen in einem System zu verknüpfen. Die Art von Architektur, die eine bisher verstreute China-Präsenz in etwas Belastbares verwandelt.
 

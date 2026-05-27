@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import '../styles/fonts.css';
+import Analytics from '@vercel/analytics/astro';
 import Header from '../components/global/Header.astro';
 import Footer from '../components/global/Footer.astro';
 import type { Lang } from '../i18n/config';
@@ -166,7 +167,7 @@ const allSchemas = [orgSchema, founderSchema, websiteSchema, breadcrumbSchema, .
     <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/inter-500.woff2" as="font" type="font/woff2" crossorigin />
     {isHomepage && (
-      <link rel="preload" href="/images/hero/hero-phones-shanghai.png" as="image" fetchpriority="high" />
+      <link rel="preload" href="/images/hero/hero-phones-shanghai.webp" as="image" fetchpriority="high" />
     )}
     {allSchemas.map((s) => (
       <script type="application/ld+json" is:inline set:html={JSON.stringify(s)} />
@@ -186,5 +187,6 @@ const allSchemas = [orgSchema, founderSchema, websiteSchema, breadcrumbSchema, .
     <Header lang={lang} />
     <slot />
     <Footer lang={lang} />
+    <Analytics />
   </body>
 </html>

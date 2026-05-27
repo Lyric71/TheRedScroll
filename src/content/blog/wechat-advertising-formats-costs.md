@@ -8,7 +8,7 @@ author: "TheRedScroll"
 category: "Platforms"
 keywords: ["WeChat advertising", "WeChat Moments ads", "WeChat Channels ads", "Tencent Ads", "China advertising", "WeChat CPM", "WeChat ad formats"]
 featured: true
-featuredImage: "/images/blog/wechat-moments-ad.png"
+featuredImage: "/images/blog/wechat-moments-ad.webp"
 ---
 
 *Six placements, three pricing models, and a minimum spend that trips up most international brands. A practical guide to WeChat's ad system.*
@@ -36,7 +36,7 @@ WeChat offers six advertising positions. They are spread across the ecosystem an
 | Search Ads | Keyword results in WeChat Search | Intent-based targeting, brand protection |
 | Top Stories Ads | In the curated content feed | Article discovery, content promotion |
 
-![A WeChat Channels video ad playing in-feed between organic creator content](/images/blog/wechat-channels-ad.png)
+![A WeChat Channels video ad playing in-feed between organic creator content](/images/blog/wechat-channels-ad.webp)
 
 Channels is the one to watch. Daily active users on WeChat Channels exceeded 800 million in 2025 according to Tencent's own reporting, and Channels ad revenue grew 60% year-over-year in 2024. It is still relatively underpriced compared to Moments, which makes it a strong option for brands looking for video reach without Moments-level budgets.
 
@@ -88,7 +88,7 @@ For international brands testing the waters, the bidding model at 1,000 yuan per
 
 Local promotion at 300 yuan per day is the cheapest entry point but only works for geo-targeted campaigns within 3-5 km of a physical location. Good for restaurants, retail stores, or event venues. Not useful for national brand campaigns.
 
-![A WeChat Official Account article with a banner ad at the bottom of the page](/images/blog/wechat-article-ad.png)
+![A WeChat Official Account article with a banner ad at the bottom of the page](/images/blog/wechat-article-ad.webp)
 
 ## Practical things nobody tells you
 

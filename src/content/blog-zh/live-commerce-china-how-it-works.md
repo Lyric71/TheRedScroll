@@ -8,7 +8,7 @@ author: "TheRedScroll"
 category: "策略"
 keywords: ["中国直播电商", "直播带货", "中国电商", "中国MCN", "CPS分成", "淘宝直播", "抖音电商"]
 featured: true
-featuredImage: "/images/blog/live-commerce-purchase.png"
+featuredImage: "/images/blog/live-commerce-purchase.webp"
 ---
 
 *在中国的数字生态里，转化率最高的销售渠道不是官网，不是应用商店，也不是社交信息流。是一场直播。*
@@ -55,7 +55,7 @@ featuredImage: "/images/blog/live-commerce-purchase.png"
 
 微小达人常常单打独斗。但任何稍有规模的付费直播campaign，MCN合作都是主流路径。
 
-![MCN办公室里，多个屏幕正在监控同时进行的直播，协调人员在调度排期](/images/blog/live-commerce-mcn-office.png)
+![MCN办公室里，多个屏幕正在监控同时进行的直播，协调人员在调度排期](/images/blog/live-commerce-mcn-office.webp)
 
 ## 分佣模式
 
@@ -93,7 +93,7 @@ AI数字人主播也正在入场。京东的虚拟主播在一场24小时健康�
 
 整个行业都是同一个规律：AI负责量和速度，人负责信任。
 
-![分佣跟踪仪表盘：销售额、CPS比例和达人表现](/images/blog/live-commerce-dashboard.png)
+![分佣跟踪仪表盘：销售额、CPS比例和达人表现](/images/blog/live-commerce-dashboard.webp)
 
 ## 常见的坑
 

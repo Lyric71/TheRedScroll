@@ -8,7 +8,7 @@ author: "TheRedScroll"
 category: "Stratégie"
 keywords: ["achat en direct", "commerce en ligne Chine", "Douyin direct", "Tmall live", "commerce social Chine", "vente en direct Chine", "comportement consommateur Chine"]
 featured: true
-featuredImage: "/images/blog/livestream-douyin-couch.png"
+featuredImage: "/images/blog/livestream-douyin-couch.webp"
 ---
 
 *Six cents millions de Chinois achètent aujourd'hui en direct vidéo. 5 800 milliards de yuans en 2024. Pour comprendre ce qui se joue, il faut se mettre dans la peau de l'acheteur.*
@@ -43,7 +43,7 @@ Les spectateurs posent leurs questions dans le fil de discussion, l'animateur r�
 
 > Source : Commercial Economy Research ; Cankao Wang, 2025
 
-![Une employée de bureau regardant une session de vente Tmall Live pendant sa pause déjeuner](/images/blog/livestream-tmall-lunch.png)
+![Une employée de bureau regardant une session de vente Tmall Live pendant sa pause déjeuner](/images/blog/livestream-tmall-lunch.webp)
 
 ### 3. Les prix y sont vraiment plus bas
 
@@ -63,7 +63,7 @@ Lorsque des centaines de personnes achètent le même produit sous vos yeux et q
 
 > Source : Tsinghua SEM, étude sur les mécanismes de formation de l'achat impulsif en direct
 
-![Une jeune femme découvrant des produits de beauté lors d'un direct RedNote, installée sur son lit](/images/blog/livestream-rednote-bed.png)
+![Une jeune femme découvrant des produits de beauté lors d'un direct RedNote, installée sur son lit](/images/blog/livestream-rednote-bed.webp)
 
 ## Qui regarde
 

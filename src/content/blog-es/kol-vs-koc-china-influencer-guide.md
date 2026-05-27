@@ -8,7 +8,7 @@ author: "TheRedScroll"
 category: "Estrategia"
 keywords: ["KOL", "KOC", "influencer marketing China", "influencer China", "seguidores falsos China", "Perfect Diary", "influencer Xiaohongshu"]
 featured: true
-featuredImage: "/images/blog/kol-studio-shoot.png"
+featuredImage: "/images/blog/kol-studio-shoot.webp"
 keyFacts:
   - "KOL son las siglas de Key Opinion Leader: influencers con gran audiencia, útiles para alcance y notoriedad de marca."
   - "KOC son las siglas de Key Opinion Consumer: usuarios cotidianos con entre 1.000 y 100.000 seguidores, útiles para confianza y conversión."
@@ -35,7 +35,7 @@ Según iiMedia Research, la influencia del KOC en la decisión de compra del con
 
 Los consumidores jóvenes son especialmente escépticos. La Gen Z china pone cada vez más en duda el contenido patrocinado. Eso no quiere decir que los KOL no sirvan. Pero la era de volcar todo el presupuesto en un gran nombre y cruzar los dedos quedó, en buena medida, atrás.
 
-![Una KOC grabando un unboxing informal en la mesa de su cocina, con el móvil apoyado sobre unos libros](/images/blog/koc-unboxing-kitchen.png)
+![Una KOC grabando un unboxing informal en la mesa de su cocina, con el móvil apoyado sobre unos libros](/images/blog/koc-unboxing-kitchen.webp)
 
 ## El problema de los seguidores falsos
 
@@ -67,7 +67,7 @@ A la vez, la cuota de mercado de los mega-KOL top cayó del 32 % al 30 %, reflej
 
 Hoy por hoy, el centro de la pirámide es donde está el mejor retorno.
 
-![Una pizarra con la estrategia de pirámide de influencers, con las capas KOL y KOC y la asignación de presupuesto](/images/blog/kol-pyramid-whiteboard.png)
+![Una pizarra con la estrategia de pirámide de influencers, con las capas KOL y KOC y la asignación de presupuesto](/images/blog/kol-pyramid-whiteboard.webp)
 
 ## Cómo cobran los influencers
 

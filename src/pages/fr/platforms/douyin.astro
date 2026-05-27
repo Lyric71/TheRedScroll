@@ -7,14 +7,14 @@ import Button from '../../../components/ui/Button.astro';
 import UpdatedDate from '../../../components/ui/UpdatedDate.astro';
 
 const stats = [
-  { label: 'Actifs par jour', value: '750M+', image: '/images/platforms/douyin-stats/daily-active-users.png' },
-  { label: 'Actifs par mois', value: '1B+', image: '/images/platforms/douyin-stats/monthly-active-users.png' },
-  { label: 'Minutes par jour et par personne', value: '120 min', image: '/images/platforms/douyin-stats/daily-time.png' },
-  { label: 'Volume e-commerce 2024', value: '€3.5T', image: '/images/platforms/douyin-stats/ecommerce-sales.png' },
-  { label: 'Croissance des ventes sur un an', value: '34%', image: '/images/platforms/douyin-stats/yoy-growth.png' },
-  { label: 'Lives marchands par jour', value: '30M+', image: '/images/platforms/douyin-stats/live-commerce.png' },
-  { label: 'Catégories de contenu', value: '100+', image: '/images/platforms/douyin-stats/content-variety.png' },
-  { label: 'Créateurs actifs', value: '15M+', image: '/images/platforms/douyin-stats/creator-economy.png' },
+  { label: 'Actifs par jour', value: '750M+', image: '/images/platforms/douyin-stats/daily-active-users.webp' },
+  { label: 'Actifs par mois', value: '1B+', image: '/images/platforms/douyin-stats/monthly-active-users.webp' },
+  { label: 'Minutes par jour et par personne', value: '120 min', image: '/images/platforms/douyin-stats/daily-time.webp' },
+  { label: 'Volume e-commerce 2024', value: '€3.5T', image: '/images/platforms/douyin-stats/ecommerce-sales.webp' },
+  { label: 'Croissance des ventes sur un an', value: '34%', image: '/images/platforms/douyin-stats/yoy-growth.webp' },
+  { label: 'Lives marchands par jour', value: '30M+', image: '/images/platforms/douyin-stats/live-commerce.webp' },
+  { label: 'Catégories de contenu', value: '100+', image: '/images/platforms/douyin-stats/content-variety.webp' },
+  { label: 'Créateurs actifs', value: '15M+', image: '/images/platforms/douyin-stats/creator-economy.webp' },
 ];
 
 const ecosystem = [
@@ -22,7 +22,7 @@ const ecosystem = [
     name: 'For You Feed',
     chineseName: '推荐页',
     description: 'Le fil piloté par l\'algorithme. Le nombre d\'abonnés ne compte presque pas. Un compte lancé la veille peut franchir le million de vues avec la bonne vidéo.',
-    image: '/images/platforms/douyin-ecosystem/for-you-feed.png',
+    image: '/images/platforms/douyin-ecosystem/for-you-feed.webp',
     bg: '#1A1A1A',
     iconBg: 'rgba(255,255,255,0.1)',
     textColor: '#FFFFFF',
@@ -34,7 +34,7 @@ const ecosystem = [
     name: 'Live Commerce',
     chineseName: '直播电商',
     description: 'Le live marchand, natif dans l\'appli. Animateur, conducteur produit, interaction avec les spectateurs en direct. Certaines marques réunissent plusieurs millions de personnes sur un seul live.',
-    image: '/images/platforms/douyin-ecosystem/live-commerce.png',
+    image: '/images/platforms/douyin-ecosystem/live-commerce.webp',
     bg: '#CC3333',
     iconBg: 'rgba(255,255,255,0.2)',
     textColor: '#FFFFFF',
@@ -46,7 +46,7 @@ const ecosystem = [
     name: 'Douyin Shop',
     chineseName: '抖音商城',
     description: 'La boutique native dans l\'appli. Les utilisateurs cherchent, comparent et achètent sans jamais quitter Douyin. Chaque vidéo et chaque live renvoie directement à la fiche produit.',
-    image: '/images/platforms/douyin-ecosystem/douyin-shop.png',
+    image: '/images/platforms/douyin-ecosystem/douyin-shop.webp',
     bg: '#F7F2EE',
     iconBg: '#E8E0D8',
     textColor: '#1A1A1A',
@@ -58,7 +58,7 @@ const ecosystem = [
     name: 'Ocean Engine',
     chineseName: '巨量引擎',
     description: 'La régie de ByteDance. TopView pour les grands lancements, In-Feed Ads pour le trafic quotidien, Search Ads pour les acheteurs déjà en intention d\'achat, DOU+ pour valider un contenu. Budget refacturé au coût réel, sans marge cachée.',
-    image: '/images/platforms/douyin-ecosystem/ocean-engine.png',
+    image: '/images/platforms/douyin-ecosystem/ocean-engine.webp',
     bg: '#1A1A1A',
     iconBg: 'rgba(255,255,255,0.1)',
     textColor: '#FFFFFF',
@@ -70,7 +70,7 @@ const ecosystem = [
     name: 'Xingtu',
     chineseName: '星图',
     description: 'La place de marché officielle des créateurs sur Douyin. Nous identifions les profils pertinents, débusquons les faux abonnés, passons leurs campagnes passées au crible. Vous validez avant tout engagement.',
-    image: '/images/platforms/douyin-ecosystem/xingtu.png',
+    image: '/images/platforms/douyin-ecosystem/xingtu.webp',
     bg: '#E8E0D8',
     iconBg: '#FFFFFF',
     textColor: '#1A1A1A',
@@ -82,7 +82,7 @@ const ecosystem = [
     name: 'DOU+',
     chineseName: '抖加',
     description: 'L\'outil natif pour tester une vidéo sur une audience élargie. Un budget réduit suffit pour lire les premiers signaux. Lorsque la traction se confirme, on accélère ; à défaut, on bascule sur autre chose.',
-    image: '/images/platforms/douyin-ecosystem/dou-plus.png',
+    image: '/images/platforms/douyin-ecosystem/dou-plus.webp',
     bg: '#B02D2D',
     iconBg: 'rgba(255,255,255,0.2)',
     textColor: '#FFFFFF',
@@ -98,42 +98,42 @@ const services = [
     description: 'Nous ouvrons et certifions votre compte entreprise, traitons les formalités de conformité et construisons votre stratégie éditoriale. Piliers de contenu, calendrier, cadence hebdomadaire, objectifs chiffrés.',
     result: 'Un compte Douyin certifié, opérationnel, avec une feuille de route précise.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/></svg>`,
-    image: '/images/platforms/douyin-services/setup-strategy.png',
+    image: '/images/platforms/douyin-services/setup-strategy.webp',
   },
   {
     title: 'Production de contenu',
     description: 'Des vidéos conçues pour Douyin, tournées par notre équipe en Chine. Démos produit, séquences lifestyle, tutoriels, coulisses, mini-dramas. HubStudio.ai prend en charge les visuels et les premiers jets. Nos rédacteurs natifs repassent sur chaque livrable.',
     result: 'Des vidéos courtes, locales, taillées pour Douyin.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>`,
-    image: '/images/platforms/douyin-services/content-production.png',
+    image: '/images/platforms/douyin-services/content-production.webp',
   },
   {
     title: 'Live commerce',
     description: 'Nous préparons et animons vos lives marchands. Choix de l\'animateur, conducteur produit, interaction en direct avec l\'audience, bilan chiffré après chaque diffusion. Conçu pour les lancements, les temps forts et les ventes récurrentes.',
     result: 'Des lives qui convertissent les spectateurs en acheteurs.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>`,
-    image: '/images/platforms/douyin-services/live-commerce.png',
+    image: '/images/platforms/douyin-services/live-commerce.webp',
   },
   {
     title: 'Campagnes KOL et KOC',
     description: 'Nous identifions les créateurs via Xingtu et notre réseau terrain, construit sur le long terme. Chaque profil est ausculté : faux abonnés, historique de campagnes, affinité avec votre marque. Vous validez la sélection avant tout engagement.',
     result: 'Des campagnes d\'influence avec un engagement réel et des résultats mesurables.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
-    image: '/images/platforms/douyin-services/kol-campaigns.png',
+    image: '/images/platforms/douyin-services/kol-campaigns.webp',
   },
   {
     title: 'Publicité',
     description: 'Publicité sur Ocean Engine, la régie de ByteDance. TopView pour les grands lancements, In-Feed Ads pour le trafic quotidien, Search Ads pour capter les acheteurs en intention, DOU+ pour tester, Branded Effects pour engager la communauté. Budget refacturé au coût réel.',
     result: 'Des campagnes ciblées, avec un reporting transparent ligne par ligne.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>`,
-    image: '/images/platforms/douyin-services/advertising.png',
+    image: '/images/platforms/douyin-services/advertising.webp',
   },
   {
     title: 'Douyin Shop',
     description: 'Votre boutique dans l\'appli, reliée à tout le reste. Nous gérons l\'installation, les fiches produit, le pricing et l\'optimisation au fil du temps. Chaque vidéo et chaque live que nous produisons renvoie directement vers vos produits.',
     result: 'Une boutique qui transforme les spectateurs en clients, sans friction.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>`,
-    image: '/images/platforms/douyin-services/douyin-shop.png',
+    image: '/images/platforms/douyin-services/douyin-shop.webp',
   },
 ];
 
@@ -245,7 +245,7 @@ const faqs = [
   <!-- Hero: Dark hero banner -->
   <section class="w-full bg-[#1A1A1A] py-[80px] max-[640px]:py-[48px] relative overflow-hidden">
     <!-- Background image -->
-    <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/douyin-hero.png')" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/douyin-hero.webp')" aria-hidden="true"></div>
     <!-- Watermark -->
     <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[140px] max-[640px]:text-[80px] font-medium text-[#FFFFFF] opacity-[0.03] pointer-events-none select-none whitespace-nowrap" aria-hidden="true">
       抖音
@@ -326,7 +326,7 @@ const faqs = [
         <!-- Card 1: L'algorithme ne regarde pas le nombre d'abonnes -->
         <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
           <div class="w-full aspect-[16/9] overflow-hidden">
-            <img src="/images/platforms/douyin-why/algorithm.png" alt="Utilisatrice découvrant du contenu de marque dans le fil algorithmique de Douyin" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+            <img src="/images/platforms/douyin-why/algorithm.webp" alt="Utilisatrice découvrant du contenu de marque dans le fil algorithmique de Douyin" class="w-full h-full object-cover" loading="lazy" decoding="async" />
           </div>
           <div class="p-[24px] max-[640px]:p-[20px]">
             <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">L'algorithme se passe du nombre d'abonnés</h3>
@@ -339,7 +339,7 @@ const faqs = [
         <!-- Card 2: Tout le parcours dans une seule application -->
         <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
           <div class="w-full aspect-[16/9] overflow-hidden">
-            <img src="/images/platforms/douyin-why/full-funnel.png" alt="Parcours d'achat Douyin, de la vidéo au paiement sur smartphone" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+            <img src="/images/platforms/douyin-why/full-funnel.webp" alt="Parcours d'achat Douyin, de la vidéo au paiement sur smartphone" class="w-full h-full object-cover" loading="lazy" decoding="async" />
           </div>
           <div class="p-[24px] max-[640px]:p-[20px]">
             <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Découverte, décision, achat. Une seule application.</h3>
@@ -352,7 +352,7 @@ const faqs = [
         <!-- Card 3: Le live commerce est integre -->
         <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
           <div class="w-full aspect-[16/9] overflow-hidden">
-            <img src="/images/platforms/douyin-why/live-built-in.png" alt="Live commerce Douyin avec spectateurs et panier d'achat à l'écran" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+            <img src="/images/platforms/douyin-why/live-built-in.webp" alt="Live commerce Douyin avec spectateurs et panier d'achat à l'écran" class="w-full h-full object-cover" loading="lazy" decoding="async" />
           </div>
           <div class="p-[24px] max-[640px]:p-[20px]">
             <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Le live commerce constitue le cœur de la plateforme</h3>
@@ -597,7 +597,7 @@ const faqs = [
 
   <!-- Getting started -->
   <section class="relative mt-[96px] max-[640px]:mt-[64px] pt-[80px] pb-[80px] max-[1024px]:pt-[64px] max-[1024px]:pb-[64px] max-[640px]:pt-[48px] max-[640px]:pb-[48px] overflow-hidden">
-    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero/douyin-hero.png')" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero/douyin-hero.webp')" aria-hidden="true"></div>
     <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.88]" aria-hidden="true"></div>
 
     <Container class="relative z-[1]">

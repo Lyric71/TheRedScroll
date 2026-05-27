@@ -8,7 +8,7 @@ author: "TheRedScroll"
 category: "平台"
 keywords: ["WeCom", "企业微信", "私域流量", "中国营销", "微信企业", "中国CRM", "WeCom 5.0"]
 featured: true
-featuredImage: "/images/blog/wecom-split-screen.png"
+featuredImage: "/images/blog/wecom-split-screen.webp"
 keyFacts:
   - "WeCom（企业微信）是腾讯在微信生态里的企业端通讯平台，2020年之前叫企业微信（WeChat Work）。"
   - "活跃用户超过1.8亿，超过1400万家企业用它跑日常运营（腾讯副总裁，WeCom 5.0发布会，2025年8月）。"
@@ -43,7 +43,7 @@ WeCom是腾讯的企业沟通平台。2020年之前叫"企业微信"。它活在
 
 WeCom把主动权交回到公司手上。所有客户都挂在企业账号下。聊天记录全部留痕、可交接。员工离职，整个客户名册自动转移给接手的人。
 
-![一位门店销售在零售店里通过WeCom直接给顾客发消息](/images/blog/wecom-sales-associate.png)
+![一位门店销售在零售店里通过WeCom直接给顾客发消息](/images/blog/wecom-sales-associate.webp)
 
 还有一层信任的价值。客户加上WeCom好友时，看到的是经过认证的公司名称和员工职位。对中国消费者没听过的国际品牌来说，这种可信度很难从别的渠道拿到。
 
@@ -64,7 +64,7 @@ WeCom覆盖的东西很多，但品牌日常真正会用的就这几块。
 
 > 来源：新浪财经，WeCom 5.0发布会报道，2025年8月
 
-![品牌通过WeCom发布的内容，自然出现在客户的微信朋友圈信息流里](/images/blog/wecom-moments-scroll.png)
+![品牌通过WeCom发布的内容，自然出现在客户的微信朋友圈信息流里](/images/blog/wecom-moments-scroll.webp)
 
 宝珀这类品牌已经把WeCom和自己的CRM打通，把会员体系、公众号、门店服务串成一套系统。这才是把分散的中国布局变成能持续复利的打法。
 

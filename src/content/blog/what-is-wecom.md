@@ -8,7 +8,7 @@ author: "TheRedScroll"
 category: "Platforms"
 keywords: ["WeCom", "WeChat Work", "private domain traffic", "China marketing", "WeChat enterprise", "CRM China", "WeCom 5.0"]
 featured: true
-featuredImage: "/images/blog/wecom-split-screen.png"
+featuredImage: "/images/blog/wecom-split-screen.webp"
 keyFacts:
   - "WeCom is Tencent's enterprise communication platform inside the WeChat ecosystem. Before 2020, it was called WeChat Work."
   - "Over 180 million people use WeCom actively. More than 14 million companies run their daily operations on it (Tencent VP, WeCom 5.0 launch, August 2025)."
@@ -43,7 +43,7 @@ This is not a small risk. It happens all the time. For international brands stil
 
 WeCom puts the company in control. All contacts sit under the corporate account. Conversations are logged and transferable. When someone leaves, their entire client portfolio moves to the next person automatically.
 
-![A sales associate using WeCom to message a customer directly from a retail store](/images/blog/wecom-sales-associate.png)
+![A sales associate using WeCom to message a customer directly from a retail store](/images/blog/wecom-sales-associate.webp)
 
 There is also a trust element. When a customer adds a WeCom contact, they see a verified company name and employee title. For international brands that Chinese consumers have not heard of, that kind of credibility is hard to get any other way.
 
@@ -64,7 +64,7 @@ Over the past year, the WeCom team shipped 12 version updates and more than 1,70
 
 > Source: Sina Finance, WeCom 5.0 launch report, August 2025
 
-![A WeCom brand post appearing naturally in a customer's WeChat Moments feed](/images/blog/wecom-moments-scroll.png)
+![A WeCom brand post appearing naturally in a customer's WeChat Moments feed](/images/blog/wecom-moments-scroll.webp)
 
 Brands like Blancpain already use WeCom integrated with their CRM to connect loyalty programs, Official Accounts, and in-store clienteling into one system. That is the kind of setup that turns a scattered China presence into something that actually compounds.
 

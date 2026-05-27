@@ -8,7 +8,7 @@ author: "TheRedScroll"
 category: "平台"
 keywords: ["微信广告", "朋友圈广告", "视频号广告", "腾讯广告", "中国广告", "微信CPM", "微信广告形式"]
 featured: true
-featuredImage: "/images/blog/wechat-moments-ad.png"
+featuredImage: "/images/blog/wechat-moments-ad.webp"
 ---
 
 *六个位置、三种计价方式、再加一个会把多数国际品牌拦在门外的最低预算。一份实战指南。*
@@ -36,7 +36,7 @@ featuredImage: "/images/blog/wechat-moments-ad.png"
 | 搜一搜广告 | 微信搜索的关键词结果 | 意图型定向、品牌词保护 |
 | 看一看广告 | 看一看推荐信息流 | 文章分发、内容推广 |
 
-![一条视频号信息流广告夹在创作者自然内容中间播放](/images/blog/wechat-channels-ad.png)
+![一条视频号信息流广告夹在创作者自然内容中间播放](/images/blog/wechat-channels-ad.webp)
 
 视频号是真正要盯紧的那个。根据腾讯官方数据，2025年视频号日活突破8亿，2024年视频号广告收入同比增长60%。目前相较朋友圈仍然明显被低估，对想要视频声量但又没有朋友圈级预算的品牌来说，是一个非常值得切入的位置。
 
@@ -88,7 +88,7 @@ featuredImage: "/images/blog/wechat-moments-ad.png"
 
 本地推广一天300元是最低的入口，但只适合离实体位置3-5公里范围内的地理定向。餐厅、零售店、活动现场合适，全国性品牌campaign用不上。
 
-![一条微信公众号文章底部的横幅广告](/images/blog/wechat-article-ad.png)
+![一条微信公众号文章底部的横幅广告](/images/blog/wechat-article-ad.webp)
 
 ## 没人告诉你的几个细节
 

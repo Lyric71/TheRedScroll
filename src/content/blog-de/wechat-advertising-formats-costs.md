@@ -8,7 +8,7 @@ author: "TheRedScroll"
 category: "Plattformen"
 keywords: ["WeChat-Werbung", "WeChat Moments Ads", "WeChat Channels Ads", "Tencent Ads", "Werbung China", "WeChat CPM", "WeChat Werbeformate"]
 featured: true
-featuredImage: "/images/blog/wechat-moments-ad.png"
+featuredImage: "/images/blog/wechat-moments-ad.webp"
 ---
 
 *Sechs Werbeplätze, drei Preismodelle und ein Mindestbudget, das viele Marken überrascht.*
@@ -36,7 +36,7 @@ Sechs Positionen, verteilt über das Ökosystem. Jede erfüllt eine leicht ander
 | Search | Treffer in der WeChat-Suche | Intentions-Targeting, Markenschutz |
 | Top Stories | Im redaktionell kuratierten Feed | Artikelentdeckung, Content-Promotion |
 
-![Ein WeChat-Channels-Videoanzeigenplatz erscheint im Feed zwischen Creator-Inhalten](/images/blog/wechat-channels-ad.png)
+![Ein WeChat-Channels-Videoanzeigenplatz erscheint im Feed zwischen Creator-Inhalten](/images/blog/wechat-channels-ad.webp)
 
 Das Format, das man im Blick behalten sollte, sind Channels. Mehr als 800 Millionen aktive Nutzer täglich im Jahr 2025, nach Angaben von Tencent. Die Werbeerlöse legten 2024 binnen Jahresfrist um 60 Prozent zu. Die Preise liegen weiterhin spürbar unter denen der Moments. Für Marken, die Video-Reichweite suchen, ohne Moments-Budgets zu spielen, ist das derzeit sehr wahrscheinlich das interessanteste Format.
 
@@ -88,7 +88,7 @@ Wer das Terrain antastet, fährt mit dem Bietverfahren zu 1.000 Yuan Tagesbudget
 
 Die lokale Werbung zu 300 Yuan pro Tag ist die günstigste Option, deckt aber nur einen Radius von 3 bis 5 Kilometern um einen physischen Standort ab. Restaurants, Geschäfte, Veranstaltungsorte. Für nationale Bekanntheit ist das nicht das richtige Format.
 
-![Ein WeChat-Artikel in einem Official Account mit einer Werbebannerplatzierung am Seitenende](/images/blog/wechat-article-ad.png)
+![Ein WeChat-Artikel in einem Official Account mit einer Werbebannerplatzierung am Seitenende](/images/blog/wechat-article-ad.webp)
 
 ## Was man Ihnen selten sagt
 

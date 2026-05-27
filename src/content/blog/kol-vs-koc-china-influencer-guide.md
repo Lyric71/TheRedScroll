@@ -8,7 +8,7 @@ author: "TheRedScroll"
 category: "Strategy"
 keywords: ["KOL", "KOC", "China influencer marketing", "influencer China", "fake followers China", "Perfect Diary", "Xiaohongshu influencer"]
 featured: true
-featuredImage: "/images/blog/kol-studio-shoot.png"
+featuredImage: "/images/blog/kol-studio-shoot.webp"
 keyFacts:
   - "KOL stands for Key Opinion Leader: large-following influencers used for reach and brand awareness."
   - "KOC stands for Key Opinion Consumer: everyday users with 1,000 to 100,000 followers, used for trust and conversion."
@@ -35,7 +35,7 @@ According to iiMedia Research, KOC influence on consumer purchasing decisions ra
 
 Younger consumers are especially skeptical. Gen Z audiences in China increasingly question sponsored content. That does not mean KOLs are useless. But the era of dumping your entire budget on one big name and hoping for results is mostly behind us.
 
-![A KOC filming a casual product unboxing at her kitchen table with just a phone propped on books](/images/blog/koc-unboxing-kitchen.png)
+![A KOC filming a casual product unboxing at her kitchen table with just a phone propped on books](/images/blog/koc-unboxing-kitchen.webp)
 
 ## The fake follower problem
 
@@ -67,7 +67,7 @@ Meanwhile, the market share of top-tier mega KOLs dipped from 32% to 30%, reflec
 
 Right now, the middle of the pyramid is where the best return sits.
 
-![A whiteboard showing the influencer pyramid strategy with KOL and KOC tiers and budget allocation](/images/blog/kol-pyramid-whiteboard.png)
+![A whiteboard showing the influencer pyramid strategy with KOL and KOC tiers and budget allocation](/images/blog/kol-pyramid-whiteboard.webp)
 
 ## How influencers get paid
 

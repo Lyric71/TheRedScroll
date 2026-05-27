@@ -8,7 +8,7 @@ author: "TheRedScroll"
 category: "Content"
 keywords: ["AIGC", "KI-Content-Produktion", "Marketing China", "Douyin", "WeChat", "RedNote", "KI-Video", "Content-Automatisierung"]
 featured: true
-featuredImage: "/images/blog/aigc-content-factory.png"
+featuredImage: "/images/blog/aigc-content-factory.webp"
 ---
 
 *Mehr als jeder zweite chinesische Werbetreibende produziert seine Inhalte bereits mit Hilfe von KI. Der Markt dürfte sich bis 2028 mehr als verzehnfachen, von 25,7 Milliarden Yuan im Jahr 2025 auf 276,7 Milliarden Yuan (Weiboyi und Chinesischer Werbeverband). Ihre Marke dürfte den Anschluss verpasst haben.*
@@ -31,7 +31,7 @@ Im Kern drei Dimensionen.
 
 Für eine Marke mittlerer Größe verschiebt dieses neue Kosten-Nutzen-Verhältnis das gesamte Bild. Formate, die bisher unerreichbar waren, rücken auf einmal in den Bereich des Machbaren.
 
-![Ein KI-Tool zur Content-Erzeugung zeigt eine Rasteransicht produzierter Visuals zur Stapelauswahl](/images/blog/aigc-batch-grid.png)
+![Ein KI-Tool zur Content-Erzeugung zeigt eine Rasteransicht produzierter Visuals zur Stapelauswahl](/images/blog/aigc-batch-grid.webp)
 
 **Volumen.** Douyin, RedNote, WeChat Channels: Diese drei Plattformen begünstigen von ihrer Architektur her Konten, die häufig publizieren. Wer weniger publiziert, verschwindet schneller. KI hilft, die Frequenz zu halten, ohne die Teams zu erschöpfen. Ein Konsumgüterhersteller hat auf diese Weise eine ganze Bibliothek KI-generierter Produktvideos aufgebaut und die Sequenzen anschließend zu hunderten Varianten neu kombiniert, kampagnen- und zielgruppenscharf.
 
@@ -73,7 +73,7 @@ iResearch bringt es im Bericht 2025 auf den Punkt: Die Content-Produktion in Chi
 
 > Quelle: iResearch, Bericht 2025 zur KI- und Digitalmedienindustrie in China
 
-![Ein Dashboard einer KI-Content-Plattform zeigt erzeugte Assets, Stückkosten und die Verteilung nach Plattform](/images/blog/aigc-dashboard.png)
+![Ein Dashboard einer KI-Content-Plattform zeigt erzeugte Assets, Stückkosten und die Verteilung nach Plattform](/images/blog/aigc-dashboard.webp)
 
 ## Wie es weitergeht
 

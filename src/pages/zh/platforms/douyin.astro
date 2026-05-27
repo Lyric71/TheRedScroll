@@ -7,14 +7,14 @@ import Button from '../../../components/ui/Button.astro';
 import UpdatedDate from '../../../components/ui/UpdatedDate.astro';
 
 const stats = [
-  { label: '日活用户', value: '750M+', image: '/images/platforms/douyin-stats/daily-active-users.png' },
-  { label: '月活用户', value: '1B+', image: '/images/platforms/douyin-stats/monthly-active-users.png' },
-  { label: '人均日使用时长', value: '120 min', image: '/images/platforms/douyin-stats/daily-time.png' },
-  { label: '电商GMV（2024）', value: '¥3.5T', image: '/images/platforms/douyin-stats/ecommerce-sales.png' },
-  { label: '电商同比增速', value: '34%', image: '/images/platforms/douyin-stats/yoy-growth.png' },
-  { label: '日均直播场次', value: '30M+', image: '/images/platforms/douyin-stats/live-commerce.png' },
-  { label: '内容品类数', value: '100+', image: '/images/platforms/douyin-stats/content-variety.png' },
-  { label: '创作者账号数', value: '15M+', image: '/images/platforms/douyin-stats/creator-economy.png' },
+  { label: '日活用户', value: '750M+', image: '/images/platforms/douyin-stats/daily-active-users.webp' },
+  { label: '月活用户', value: '1B+', image: '/images/platforms/douyin-stats/monthly-active-users.webp' },
+  { label: '人均日使用时长', value: '120 min', image: '/images/platforms/douyin-stats/daily-time.webp' },
+  { label: '电商GMV（2024）', value: '¥3.5T', image: '/images/platforms/douyin-stats/ecommerce-sales.webp' },
+  { label: '电商同比增速', value: '34%', image: '/images/platforms/douyin-stats/yoy-growth.webp' },
+  { label: '日均直播场次', value: '30M+', image: '/images/platforms/douyin-stats/live-commerce.webp' },
+  { label: '内容品类数', value: '100+', image: '/images/platforms/douyin-stats/content-variety.webp' },
+  { label: '创作者账号数', value: '15M+', image: '/images/platforms/douyin-stats/creator-economy.webp' },
 ];
 
 const ecosystem = [
@@ -22,7 +22,7 @@ const ecosystem = [
     name: '推荐页',
     chineseName: 'For You Feed',
     description: '算法说了算，粉丝数不重要。一条内容踩中算法口味，新号一夜冲几百万播放。',
-    image: '/images/platforms/douyin-ecosystem/for-you-feed.png',
+    image: '/images/platforms/douyin-ecosystem/for-you-feed.webp',
     bg: '#1A1A1A',
     iconBg: 'rgba(255,255,255,0.1)',
     textColor: '#FFFFFF',
@@ -34,7 +34,7 @@ const ecosystem = [
     name: '直播电商',
     chineseName: 'Live Commerce',
     description: '直播带货原生长在App里。选主播、磨脚本、刷弹幕，头部品牌一场直播几百万人在线。',
-    image: '/images/platforms/douyin-ecosystem/live-commerce.png',
+    image: '/images/platforms/douyin-ecosystem/live-commerce.webp',
     bg: '#CC3333',
     iconBg: 'rgba(255,255,255,0.2)',
     textColor: '#FFFFFF',
@@ -46,7 +46,7 @@ const ecosystem = [
     name: '抖音商城',
     chineseName: 'Douyin Shop',
     description: '抖音App里的原生店铺。搜索、浏览、下单一条龙。视频和直播都能往店里灌流量，不跳外链。',
-    image: '/images/platforms/douyin-ecosystem/douyin-shop.png',
+    image: '/images/platforms/douyin-ecosystem/douyin-shop.webp',
     bg: '#F7F2EE',
     iconBg: '#E8E0D8',
     textColor: '#1A1A1A',
@@ -58,7 +58,7 @@ const ecosystem = [
     name: '巨量引擎',
     chineseName: 'Ocean Engine',
     description: '字节跳动的广告中台。TopView砸新品，信息流拉量，搜索广告抓高意向人群，DOU+先跑内容测款。预算走你自己账户，我们一分不加。',
-    image: '/images/platforms/douyin-ecosystem/ocean-engine.png',
+    image: '/images/platforms/douyin-ecosystem/ocean-engine.webp',
     bg: '#1A1A1A',
     iconBg: 'rgba(255,255,255,0.1)',
     textColor: '#FFFFFF',
@@ -70,7 +70,7 @@ const ecosystem = [
     name: '星图',
     chineseName: 'Xingtu',
     description: '抖音官方的达人交易平台。我们在上面挑人、查水号、扒历史案例、核粉丝画像，每一个都过一遍。最终名单你点头我们才动手。',
-    image: '/images/platforms/douyin-ecosystem/xingtu.png',
+    image: '/images/platforms/douyin-ecosystem/xingtu.webp',
     bg: '#E8E0D8',
     iconBg: '#FFFFFF',
     textColor: '#1A1A1A',
@@ -82,7 +82,7 @@ const ecosystem = [
     name: 'DOU+（抖加）',
     chineseName: 'DOU+',
     description: '单条内容的加热器。小预算先推一条看反应，数据亮眼就直接放量，跑不动就换下一条。',
-    image: '/images/platforms/douyin-ecosystem/dou-plus.png',
+    image: '/images/platforms/douyin-ecosystem/dou-plus.webp',
     bg: '#B02D2D',
     iconBg: 'rgba(255,255,255,0.2)',
     textColor: '#FFFFFF',
@@ -98,41 +98,41 @@ const services = [
     description: '企业号注册、蓝V认证、合规手续全套我们包办。内容主线、发布日历、排期节奏、KPI目标，一条一条写清楚。',
     result: '一个认证通过、立刻能发内容的抖音账号，配一份路线图。',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/></svg>`,
-    image: '/images/platforms/douyin-services/setup-strategy.png',
+    image: '/images/platforms/douyin-services/setup-strategy.webp',
   },
   {
     title: '内容制作',
     description: '本地团队拍原生短视频。产品演示、生活方式、教程、幕后、热点跟风、小剧情都能拍。HubStudio.ai出视觉和初稿，本地中文写手每条必过一遍。',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>`,
-    image: '/images/platforms/douyin-services/content-production.png',
+    image: '/images/platforms/douyin-services/content-production.webp',
   },
   {
     title: '直播带货',
     description: '一场直播从策划到落地全包。选主播、定选品、磨脚本、实时刷弹幕、播后复盘数据。新品发布、节日大促、常态销售通路都能跑。',
     result: '真能跑出GMV的直播，把看客变成买家。',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>`,
-    image: '/images/platforms/douyin-services/live-commerce.png',
+    image: '/images/platforms/douyin-services/live-commerce.webp',
   },
   {
     title: 'KOL和KOC项目',
     description: '星图加上我们自己多年积累的达人池两条腿走路。每个博主都过筛：查水号、扒历史数据、核粉丝画像、判断品牌契合度。最终名单你点头再动。',
     result: '互动数据真实可核的达人项目，结果看得见。',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
-    image: '/images/platforms/douyin-services/kol-campaigns.png',
+    image: '/images/platforms/douyin-services/kol-campaigns.webp',
   },
   {
     title: '广告投放',
     description: '走巨量引擎跑投放。TopView砸新品，信息流拉量和点击，搜索广告抓高意向人群，DOU+先测款，品牌贴纸拉互动。预算走你自己账户，我们一分不加。',
     result: '目标人群精准触达，每一分钱落在哪一清二楚。',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>`,
-    image: '/images/platforms/douyin-services/advertising.png',
+    image: '/images/platforms/douyin-services/advertising.webp',
   },
   {
     title: '抖音小店',
     description: '抖音App里的原生店铺。用户直接搜、直接看、直接下单。从开店、商品详情、定价到持续优化我们全包。我们做的每条视频、每场直播都往店里灌流量。',
     result: '看视频的人直接在抖音里下单，不用跳去别处。',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>`,
-    image: '/images/platforms/douyin-services/douyin-shop.png',
+    image: '/images/platforms/douyin-services/douyin-shop.webp',
   },
 ];
 
@@ -244,7 +244,7 @@ const faqs = [
   <!-- Hero: Dark hero banner -->
   <section class="w-full bg-[#1A1A1A] py-[80px] max-[640px]:py-[48px] relative overflow-hidden">
     <!-- Background image -->
-    <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/douyin-hero.png')" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/douyin-hero.webp')" aria-hidden="true"></div>
     <!-- Watermark -->
     <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[140px] max-[640px]:text-[80px] font-medium text-[#FFFFFF] opacity-[0.03] pointer-events-none select-none whitespace-nowrap" aria-hidden="true">
       抖音
@@ -325,7 +325,7 @@ const faqs = [
         <!-- Card 1: L'algorithme ne regarde pas le nombre d'abonnes -->
         <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
           <div class="w-full aspect-[16/9] overflow-hidden">
-            <img src="/images/platforms/douyin-why/algorithm.png" alt="用户通过抖音推荐流发现品牌内容" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+            <img src="/images/platforms/douyin-why/algorithm.webp" alt="用户通过抖音推荐流发现品牌内容" class="w-full h-full object-cover" loading="lazy" decoding="async" />
           </div>
           <div class="p-[24px] max-[640px]:p-[20px]">
             <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">算法面前人人平等</h3>
@@ -338,7 +338,7 @@ const faqs = [
         <!-- Card 2: Tout le parcours dans une seule application -->
         <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
           <div class="w-full aspect-[16/9] overflow-hidden">
-            <img src="/images/platforms/douyin-why/full-funnel.png" alt="抖音从视频到支付的完整购买路径" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+            <img src="/images/platforms/douyin-why/full-funnel.webp" alt="抖音从视频到支付的完整购买路径" class="w-full h-full object-cover" loading="lazy" decoding="async" />
           </div>
           <div class="p-[24px] max-[640px]:p-[20px]">
             <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">发现、心动、下单，一个App全包</h3>
@@ -351,7 +351,7 @@ const faqs = [
         <!-- Card 3: Le live commerce est integre -->
         <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
           <div class="w-full aspect-[16/9] overflow-hidden">
-            <img src="/images/platforms/douyin-why/live-built-in.png" alt="抖音直播带货场景，显示观众和购物车" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+            <img src="/images/platforms/douyin-why/live-built-in.webp" alt="抖音直播带货场景，显示观众和购物车" class="w-full h-full object-cover" loading="lazy" decoding="async" />
           </div>
           <div class="p-[24px] max-[640px]:p-[20px]">
             <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">直播带货是原生能力</h3>
@@ -596,7 +596,7 @@ const faqs = [
 
   <!-- Getting started -->
   <section class="relative mt-[96px] max-[640px]:mt-[64px] pt-[80px] pb-[80px] max-[1024px]:pt-[64px] max-[1024px]:pb-[64px] max-[640px]:pt-[48px] max-[640px]:pb-[48px] overflow-hidden">
-    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero/douyin-hero.png')" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero/douyin-hero.webp')" aria-hidden="true"></div>
     <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.88]" aria-hidden="true"></div>
 
     <Container class="relative z-[1]">

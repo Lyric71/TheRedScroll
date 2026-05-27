@@ -8,7 +8,7 @@ author: "TheRedScroll"
 category: "Plateformes"
 keywords: ["publicité WeChat", "WeChat Moments ads", "WeChat Channels ads", "Tencent Ads", "publicité Chine", "CPM WeChat", "formats publicitaires WeChat"]
 featured: true
-featuredImage: "/images/blog/wechat-moments-ad.png"
+featuredImage: "/images/blog/wechat-moments-ad.webp"
 ---
 
 *Six emplacements, trois modèles de tarification, et un budget minimum qui prend beaucoup de marques de court.*
@@ -36,7 +36,7 @@ Six positions au total, dispersées dans l'écosystème. Chacune remplit un rôl
 | Recherche | Résultats de mots-clés dans la recherche WeChat | Ciblage par intention, protection de marque |
 | Top Stories | Au sein du fil éditorialisé | Découverte d'articles, promotion de contenu |
 
-![Une publicité vidéo WeChat Channels insérée dans le fil entre des contenus de créateurs](/images/blog/wechat-channels-ad.png)
+![Une publicité vidéo WeChat Channels insérée dans le fil entre des contenus de créateurs](/images/blog/wechat-channels-ad.webp)
 
 Le format à surveiller de près, c'est Channels. Plus de 800 millions d'utilisateurs actifs par jour en 2025, selon Tencent. Son chiffre d'affaires publicitaire a progressé de 60 % sur un an en 2024. Et les tarifs y demeurent sensiblement inférieurs à ceux des Moments. Pour une marque qui cherche de la portée vidéo sans s'aligner sur les budgets Moments, c'est très probablement le format le plus intéressant du moment.
 
@@ -88,7 +88,7 @@ Pour tâter le terrain, le mode enchères à 1 000 yuans par jour est bien plus 
 
 La promotion locale à 300 yuans par jour constitue l'option la moins coûteuse, mais elle ne couvre qu'un rayon de 3 à 5 km autour d'un point de vente physique. Restaurants, boutiques, lieux d'événements. Pour une notoriété d'envergure nationale, ce n'est pas le bon format.
 
-![Un article de compte officiel WeChat avec une bannière publicitaire en bas de page](/images/blog/wechat-article-ad.png)
+![Un article de compte officiel WeChat avec une bannière publicitaire en bas de page](/images/blog/wechat-article-ad.webp)
 
 ## Ce qu'on oublie de vous dire
 

@@ -8,7 +8,7 @@ author: "TheRedScroll"
 category: "Stratégie"
 keywords: ["KOL", "KOC", "marketing d'influence Chine", "influenceur Chine", "faux abonnés Chine", "Perfect Diary", "influenceur Xiaohongshu"]
 featured: true
-featuredImage: "/images/blog/kol-studio-shoot.png"
+featuredImage: "/images/blog/kol-studio-shoot.webp"
 keyFacts:
   - "KOL signifie Key Opinion Leader : influenceurs à large audience, mobilisés pour la portée et la notoriété de marque."
   - "KOC signifie Key Opinion Consumer : utilisateurs ordinaires (1 000 à 100 000 abonnés), mobilisés pour la confiance et la conversion."
@@ -35,7 +35,7 @@ D'après iiMedia Research, les KOC pèsent presque autant que les KOL dans les d
 
 La génération Z chinoise est devenue particulièrement rétive au contenu sponsorisé. Les KOL n'ont rien perdu de leur utilité, tant s'en faut. Mais le temps où l'on pouvait miser tout son budget sur un seul nom en espérant que cela suffise est bel et bien révolu.
 
-![Une KOC filmant un déballage de produit décontracté dans sa cuisine, téléphone posé sur des livres](/images/blog/koc-unboxing-kitchen.png)
+![Une KOC filmant un déballage de produit décontracté dans sa cuisine, téléphone posé sur des livres](/images/blog/koc-unboxing-kitchen.webp)
 
 ## Le fléau des faux abonnés
 
@@ -67,7 +67,7 @@ Les méga-KOL, eux, voient leur part glisser de 32 à 30 %. Les plateformes, dé
 
 Aujourd'hui, le meilleur rendement se niche au cœur de la pyramide.
 
-![Un tableau blanc montrant la stratégie pyramidale des influenceurs avec les niveaux KOL et KOC et la répartition budgétaire](/images/blog/kol-pyramid-whiteboard.png)
+![Un tableau blanc montrant la stratégie pyramidale des influenceurs avec les niveaux KOL et KOC et la répartition budgétaire](/images/blog/kol-pyramid-whiteboard.webp)
 
 ## La rémunération
 

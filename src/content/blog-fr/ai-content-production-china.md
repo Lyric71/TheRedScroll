@@ -8,7 +8,7 @@ author: "TheRedScroll"
 category: "Contenu"
 keywords: ["AIGC", "production contenu IA", "marketing Chine", "Douyin", "WeChat", "RedNote", "vidéo IA", "automatisation contenu"]
 featured: true
-featuredImage: "/images/blog/aigc-content-factory.png"
+featuredImage: "/images/blog/aigc-content-factory.webp"
 ---
 
 *Plus d'un annonceur chinois sur deux produit déjà ses contenus à l'aide de l'IA. Le marché devrait être multiplié par plus de dix d'ici 2028, passant de 25,7 milliards de yuans en 2025 à 276,7 milliards (Weiboyi et l'Association chinoise de la publicité). Votre marque, elle, a sans doute pris du retard.*
@@ -31,7 +31,7 @@ Trois dimensions, principalement.
 
 Pour une marque de taille intermédiaire, ce nouveau rapport coût-efficacité rebat les cartes. Des formats jusque-là inaccessibles tombent soudain à portée de budget.
 
-![Un outil de génération de contenu par IA affichant une grille de visuels produits pour une sélection par lots](/images/blog/aigc-batch-grid.png)
+![Un outil de génération de contenu par IA affichant une grille de visuels produits pour une sélection par lots](/images/blog/aigc-batch-grid.webp)
 
 **Le volume.** Douyin, RedNote, WeChat Channels : ces trois plateformes favorisent, par construction, les comptes qui publient souvent. Moins l'on publie, plus vite l'on disparaît. L'IA permet de soutenir la cadence sans épuiser les équipes. Un fabricant de biens de grande consommation a ainsi bâti toute une bibliothèque de vidéos produits générées par IA, avant de recombiner les séquences pour en tirer des centaines de variantes, chacune calibrée campagne par campagne, audience par audience.
 
@@ -73,7 +73,7 @@ iResearch le formule parfaitement dans son rapport 2025 : la production de conte
 
 > Source : iResearch, rapport 2025 sur l'IA et l'industrie des médias numériques en Chine
 
-![Un tableau de bord de plateforme de contenu IA présentant les ressources générées, le coût par élément et la ventilation par plateforme](/images/blog/aigc-dashboard.png)
+![Un tableau de bord de plateforme de contenu IA présentant les ressources générées, le coût par élément et la ventilation par plateforme](/images/blog/aigc-dashboard.webp)
 
 ## La suite
 

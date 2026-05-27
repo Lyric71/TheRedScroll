@@ -8,7 +8,7 @@ author: "TheRedScroll"
 category: "Plateformes"
 keywords: ["Douyin", "Douyin commerce", "commerce social Chine", "rentabilité Douyin", "entrée marché Chine", "commerce en direct", "ROI Douyin"]
 featured: true
-featuredImage: "/images/blog/douyin-control-room.png"
+featuredImage: "/images/blog/douyin-control-room.webp"
 ---
 
 *La plupart des marques perdent de l'argent sur Douyin avant d'en gagner. Et pourtant, pour une marque internationale qui veut sonder la Chine, aucun autre canal n'offre autant de portée pour un ticket d'entrée aussi léger.*
@@ -32,7 +32,7 @@ Pourquoi donc ? La réponse tient à la structure même du modèle.
 
 > Source : Qinggua Media, Digitaling, Ebrun, Youzan
 
-![Une consommatrice regardant une session de vente en direct sur Douyin sur son téléphone](/images/blog/douyin-phone-buyer.png)
+![Une consommatrice regardant une session de vente en direct sur Douyin sur son téléphone](/images/blog/douyin-phone-buyer.webp)
 
 ## Pourquoi y aller malgré tout
 
@@ -54,7 +54,7 @@ Douyin demeure le chemin le plus court vers le consommateur chinois. Et, très p
 
 > Une telle connaissance du marché, commandée à un institut d'études, coûterait des dizaines de milliers d'euros. Sur Douyin, vous l'obtenez comme un bénéfice secondaire de la vente.
 
-![Une KOL Douyin filmant un test produit dans son appartement](/images/blog/douyin-kol-showcase.png)
+![Une KOL Douyin filmant un test produit dans son appartement](/images/blog/douyin-kol-showcase.webp)
 
 ## Comment les marques avisées s'y prennent
 

@@ -8,7 +8,7 @@ author: "TheRedScroll"
 category: "策略"
 keywords: ["直播购物", "中国电商", "抖音直播", "天猫直播", "中国社交电商", "直播电商", "中国消费行为"]
 featured: true
-featuredImage: "/images/blog/livestream-douyin-couch.png"
+featuredImage: "/images/blog/livestream-douyin-couch.webp"
 ---
 
 *将近6亿中国消费者正在通过直播间下单。2024年市场交易规模达到5.8万亿元。想看清楚它是怎么跑起来的，必须站到买家那一边。*
@@ -43,7 +43,7 @@ featuredImage: "/images/blog/livestream-douyin-couch.png"
 
 > 来源：商业经济研究；参考网，2025
 
-![一位上班族午休时间在看天猫直播](/images/blog/livestream-tmall-lunch.png)
+![一位上班族午休时间在看天猫直播](/images/blog/livestream-tmall-lunch.webp)
 
 ### 3. 价格是真的便宜
 
@@ -63,7 +63,7 @@ featuredImage: "/images/blog/livestream-douyin-couch.png"
 
 > 来源：清华大学经济管理学院，《直播消费行为冲动形成机制研究》
 
-![一位年轻女性正在床上通过小红书直播发现美妆产品](/images/blog/livestream-rednote-bed.png)
+![一位年轻女性正在床上通过小红书直播发现美妆产品](/images/blog/livestream-rednote-bed.webp)
 
 ## 谁在看
 

@@ -7,14 +7,14 @@ import Button from '../../../components/ui/Button.astro';
 import UpdatedDate from '../../../components/ui/UpdatedDate.astro';
 
 const stats = [
-  { label: 'Activos cada mes', value: '1.4B+', image: '/images/platforms/wechat-stats/monthly-active-users.png' },
-  { label: 'En China continental', value: '810M+', image: '/images/platforms/wechat-stats/users-in-china.png' },
-  { label: 'Tiempo diario por usuario', value: '82 min', image: '/images/platforms/wechat-stats/daily-time-per-user.png' },
-  { label: 'Usan Mini Programs cada mes', value: '945M', image: '/images/platforms/wechat-stats/mini-program-users.png' },
-  { label: 'Pagan con WeChat Pay', value: '935M+', image: '/images/platforms/wechat-stats/wechat-pay-users.png' },
-  { label: 'Mensajes al día', value: '45B', image: '/images/platforms/wechat-stats/messages-sent-daily.png' },
-  { label: 'Cuentas oficiales activas', value: '3.5M+', image: '/images/platforms/wechat-stats/official-accounts.png' },
-  { label: 'Abren la app más de diez veces al día', value: '60%+', image: '/images/platforms/wechat-stats/daily-opens.png' },
+  { label: 'Activos cada mes', value: '1.4B+', image: '/images/platforms/wechat-stats/monthly-active-users.webp' },
+  { label: 'En China continental', value: '810M+', image: '/images/platforms/wechat-stats/users-in-china.webp' },
+  { label: 'Tiempo diario por usuario', value: '82 min', image: '/images/platforms/wechat-stats/daily-time-per-user.webp' },
+  { label: 'Usan Mini Programs cada mes', value: '945M', image: '/images/platforms/wechat-stats/mini-program-users.webp' },
+  { label: 'Pagan con WeChat Pay', value: '935M+', image: '/images/platforms/wechat-stats/wechat-pay-users.webp' },
+  { label: 'Mensajes al día', value: '45B', image: '/images/platforms/wechat-stats/messages-sent-daily.webp' },
+  { label: 'Cuentas oficiales activas', value: '3.5M+', image: '/images/platforms/wechat-stats/official-accounts.webp' },
+  { label: 'Abren la app más de diez veces al día', value: '60%+', image: '/images/platforms/wechat-stats/daily-opens.webp' },
 ];
 
 const ecosystem = [
@@ -22,7 +22,7 @@ const ecosystem = [
     name: 'Service Account',
     chineseName: '服务号',
     description: 'Su escaparate oficial en China. Menús a medida, pago integrado, herramientas de CRM. Cuatro envíos al mes y hasta treinta y dos artículos en total. El único tipo de cuenta que una empresa extranjera puede abrir sin entidad local.',
-    image: '/images/platforms/wechat-ecosystem/service-account.png',
+    image: '/images/platforms/wechat-ecosystem/service-account.webp',
     bg: '#F7F2EE', iconBg: '#E8E0D8', textColor: '#1A1A1A', descColor: '#5C5C5C', linkColor: '#CC3333',
     icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/></svg>`,
   },
@@ -30,7 +30,7 @@ const ecosystem = [
     name: 'Mini Programs',
     chineseName: '小程序',
     description: 'Aplicaciones embebidas dentro de WeChat. Sin descargas. E-commerce, reservas, fidelización, juegos. 945 millones de usuarios al mes. Conectadas directamente a WeChat Pay.',
-    image: '/images/platforms/wechat-ecosystem/mini-programs.png',
+    image: '/images/platforms/wechat-ecosystem/mini-programs.webp',
     bg: '#1A1A1A', iconBg: 'rgba(255,255,255,0.1)', textColor: '#FFFFFF', descColor: 'rgba(255,255,255,0.6)', linkColor: '#CC3333',
     icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>`,
   },
@@ -38,7 +38,7 @@ const ecosystem = [
     name: 'WeChat Channels',
     chineseName: '视频号',
     description: 'Vídeo corto y emisión en directo. Conectada a su Cuenta Oficial y a su Mini Program. Ver, tocar, comprar: todo se juega sin salir de WeChat.',
-    image: '/images/platforms/wechat-ecosystem/wechat-channels.png',
+    image: '/images/platforms/wechat-ecosystem/wechat-channels.webp',
     bg: '#CC3333', iconBg: 'rgba(255,255,255,0.2)', textColor: '#FFFFFF', descColor: 'rgba(255,255,255,0.8)', linkColor: '#FFFFFF',
     icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>`,
   },
@@ -46,7 +46,7 @@ const ecosystem = [
     name: 'WeChat Pay',
     chineseName: '微信支付',
     description: 'El pago móvil, sin equivalente. Más de 935 millones de usuarios activos. Del vendedor ambulante a la casa de lujo, pasar por WeChat Pay es obligatorio. Vender en China sin esta herramienta es impensable.',
-    image: '/images/platforms/wechat-ecosystem/wechat-pay.png',
+    image: '/images/platforms/wechat-ecosystem/wechat-pay.webp',
     bg: '#E8E0D8', iconBg: '#FFFFFF', textColor: '#1A1A1A', descColor: '#5C5C5C', linkColor: '#CC3333',
     icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>`,
   },
@@ -54,7 +54,7 @@ const ecosystem = [
     name: 'WeCom',
     chineseName: '企业微信',
     description: 'El CRM de Tencent. Mensajería directa, segmentación al detalle, recordatorios automáticos. 750 millones de usuarios de WeChat al alcance. Las marcas que tardan en adoptarlo acaban arrepintiéndose.',
-    image: '/images/platforms/wechat-ecosystem/wecom.png',
+    image: '/images/platforms/wechat-ecosystem/wecom.webp',
     bg: '#1A1A1A', iconBg: 'rgba(255,255,255,0.1)', textColor: '#FFFFFF', descColor: 'rgba(255,255,255,0.6)', linkColor: '#CC3333',
     icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>`,
   },
@@ -62,7 +62,7 @@ const ecosystem = [
     name: 'Moments',
     chineseName: '朋友圈',
     description: 'El feed donde los chinos cuentan su día a día. Las marcas se cuelan ahí con anuncios nativos integrados en el flujo. Posiblemente la palanca más potente para asentar notoriedad.',
-    image: '/images/platforms/wechat-ecosystem/moments.png',
+    image: '/images/platforms/wechat-ecosystem/moments.webp',
     bg: '#B02D2D', iconBg: 'rgba(255,255,255,0.2)', textColor: '#FFFFFF', descColor: 'rgba(255,255,255,0.8)', linkColor: '#FFFFFF',
     icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
   },
@@ -74,42 +74,42 @@ const services = [
     description: 'Registro de la Service Account, proceso de verificación, configuración de menús, respuestas automáticas e identidad visual. Asumimos todas las gestiones y le ahorramos varias semanas de plazo.',
     result: 'Una cuenta WeChat verificada, operativa, lista para publicar.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/></svg>`,
-    image: '/images/platforms/wechat-services/account-setup.png',
+    image: '/images/platforms/wechat-services/account-setup.webp',
   },
   {
     title: 'Estrategia y producción de contenido',
     description: 'Pilares editoriales, calendario de publicación, artículos, visuales, vídeos cortos. La escritura corre a cargo de chinos nativos. HubStudio.ai nos permite sostener el ritmo.',
     result: 'Contenidos pensados para China, diseñados para leerse hasta el final.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/></svg>`,
-    image: '/images/platforms/wechat-services/content-strategy.png',
+    image: '/images/platforms/wechat-services/content-strategy.webp',
   },
   {
     title: 'Desarrollo de Mini Programs',
     description: 'Tiendas online, formularios de contacto, programas de fidelización, herramientas de reserva. Construidos en WeChat, enchufados a WeChat Pay.',
     result: 'Un escaparate que convierte lectores en compradores sin que salgan de la app.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>`,
-    image: '/images/platforms/wechat-services/mini-program.png',
+    image: '/images/platforms/wechat-services/mini-program.webp',
   },
   {
     title: 'Publicidad en WeChat',
     description: 'Planificación de medios, creatividades, test A/B, pilotaje de pujas, reporting. Moments Ads, Banner Ads, Mini Program Ads. La inversión de medios se factura a coste real, sin ningún margen oculto.',
     result: 'Campañas que llegan a la audiencia adecuada y un reporting sin zonas oscuras.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>`,
-    image: '/images/platforms/wechat-services/advertising.png',
+    image: '/images/platforms/wechat-services/advertising.webp',
   },
   {
     title: 'WeCom y CRM',
     description: 'El tráfico privado se construye desde el primer día. Segmentación, secuencias de bienvenida, recordatorios personalizados, dinamización de grupos. El ladrillo que la mayoría de agencias descuida.',
     result: 'Una base de clientes que le pertenece y que ninguna plataforma puede quitarle.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>`,
-    image: '/images/platforms/wechat-services/wecom-crm.png',
+    image: '/images/platforms/wechat-services/wecom-crm.webp',
   },
   {
     title: 'WeChat Channels y campañas KOL',
     description: 'Producción de vídeos cortos, lives en Channels, búsqueda y pilotaje de campañas con Key Opinion Leaders. Solo se cuentan las cifras de interacción verificadas.',
     result: 'Contenido en vídeo y campañas de influencia conectadas a su Cuenta Oficial y a su Mini Program.',
     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>`,
-    image: '/images/platforms/wechat-services/channels-kol.png',
+    image: '/images/platforms/wechat-services/channels-kol.webp',
   },
 ];
 
@@ -211,7 +211,7 @@ const faqs = [
   lang="es"
 >
   <section class="w-full bg-[#1A1A1A] py-[80px] max-[640px]:py-[48px] relative overflow-hidden">
-    <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/wechat-hero.png')" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/wechat-hero.webp')" aria-hidden="true"></div>
     <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[140px] max-[640px]:text-[80px] font-medium text-[#FFFFFF] opacity-[0.03] pointer-events-none select-none whitespace-nowrap" aria-hidden="true">
       微信
     </span>
@@ -284,7 +284,7 @@ const faqs = [
       <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
         <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
           <div class="w-full aspect-[16/9] overflow-hidden">
-            <img src="/images/platforms/wechat-why/own-audience.png" alt="Usuario consultando sus seguidores de WeChat en el móvil" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+            <img src="/images/platforms/wechat-why/own-audience.webp" alt="Usuario consultando sus seguidores de WeChat en el móvil" class="w-full h-full object-cover" loading="lazy" decoding="async" />
           </div>
           <div class="p-[24px] max-[640px]:p-[20px]">
             <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Su audiencia le pertenece</h3>
@@ -296,7 +296,7 @@ const faqs = [
 
         <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
           <div class="w-full aspect-[16/9] overflow-hidden">
-            <img src="/images/platforms/wechat-why/full-journey.png" alt="Cliente cerrando una compra vía un Mini Program de WeChat" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+            <img src="/images/platforms/wechat-why/full-journey.webp" alt="Cliente cerrando una compra vía un Mini Program de WeChat" class="w-full h-full object-cover" loading="lazy" decoding="async" />
           </div>
           <div class="p-[24px] max-[640px]:p-[20px]">
             <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Todo el recorrido en una sola app</h3>
@@ -308,7 +308,7 @@ const faqs = [
 
         <div class="bg-[#F7F2EE] border-none rounded-[10px] overflow-hidden">
           <div class="w-full aspect-[16/9] overflow-hidden">
-            <img src="/images/platforms/wechat-why/verification.png" alt="Escaparate de marca con código QR de cuenta verificada WeChat" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+            <img src="/images/platforms/wechat-why/verification.webp" alt="Escaparate de marca con código QR de cuenta verificada WeChat" class="w-full h-full object-cover" loading="lazy" decoding="async" />
           </div>
           <div class="p-[24px] max-[640px]:p-[20px]">
             <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">La verificación marca la diferencia</h3>
@@ -485,7 +485,7 @@ const faqs = [
   </section>
 
   <section class="relative mt-[96px] max-[640px]:mt-[64px] pt-[80px] pb-[80px] max-[1024px]:pt-[64px] max-[1024px]:pb-[64px] max-[640px]:pt-[48px] max-[640px]:pb-[48px] overflow-hidden">
-    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero/wechat-hero.png')" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero/wechat-hero.webp')" aria-hidden="true"></div>
     <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.88]" aria-hidden="true"></div>
 
     <Container class="relative z-[1]">

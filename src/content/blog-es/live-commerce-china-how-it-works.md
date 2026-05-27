@@ -8,7 +8,7 @@ author: "TheRedScroll"
 category: "Estrategia"
 keywords: ["live commerce China", "venta livestream", "e-commerce China", "MCN China", "comisión CPS", "Taobao Live", "e-commerce Douyin"]
 featured: true
-featuredImage: "/images/blog/live-commerce-purchase.png"
+featuredImage: "/images/blog/live-commerce-purchase.webp"
 ---
 
 *El canal de venta de mayor conversión del ecosistema digital chino no es una web, ni una tienda de aplicaciones, ni un feed social. Es una emisión en directo.*
@@ -55,7 +55,7 @@ El live commerce se sostiene sobre tres actores: marketplaces, influencers y MCN
 
 Los microinfluencers suelen operar por su cuenta. Pero, para una marca que mueve campañas de pago en live commerce a una escala real, la colaboración con una MCN es la vía habitual.
 
-![Una oficina de MCN con varias pantallas mostrando livestreams activos y un coordinador gestionando agendas](/images/blog/live-commerce-mcn-office.png)
+![Una oficina de MCN con varias pantallas mostrando livestreams activos y un coordinador gestionando agendas](/images/blog/live-commerce-mcn-office.webp)
 
 ## Modelos de comisión
 
@@ -93,7 +93,7 @@ Los presentadores digitales también están en la foto. El presentador virtual d
 
 El patrón se repite en todo el sector: la IA cubre volumen y velocidad. Las personas, la confianza.
 
-![Un panel de seguimiento de comisiones mostrando volumen de ventas, tasas de CPS y rendimiento por influencer](/images/blog/live-commerce-dashboard.png)
+![Un panel de seguimiento de comisiones mostrando volumen de ventas, tasas de CPS y rendimiento por influencer](/images/blog/live-commerce-dashboard.webp)
 
 ## Errores frecuentes
 
