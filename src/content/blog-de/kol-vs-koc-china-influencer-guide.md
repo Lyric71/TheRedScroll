@@ -47,13 +47,13 @@ Ein MCN-Verantwortlicher hat gegenüber Rancaijing eingeräumt: In seiner Agentu
 
 Einen Post über die 100.000-Views-Schwelle zu schieben kostet zuweilen unter 1.000 Yuan. Für eine Marke, die mehrere zehntausend Yuan in eine Kampagne steckt, ist das Risiko alles andere als abstrakt. Es kommt permanent vor.
 
-Was wirklich zählt: Interaktionsrate, Kommentarqualität, demografische Zusammensetzung des Publikums und reale Kaufverhalten. Die Follower-Zahl ganz oben im Profil sagt wenig aus.
+Was wirklich zählt: Interaktionsrate, Kommentarqualität, demografische Zusammensetzung des Publikums und reales Kaufverhalten. Die Follower-Zahl ganz oben im Profil sagt wenig aus.
 
 Auf Werkzeugseite liefern Pugongying auf Xiaohongshu und Xingtu auf Douyin Authentizitätsindikatoren, sofern man die offiziellen Kanäle nutzt. In der Praxis bleiben außerhalb der Plattformen ausgehandelte Deals ohne Verifizierung üblich.
 
 ## KOL und KOC kombinieren: das Pyramidenmodell
 
-Was in China funktioniert, ruht auf einer Schichtung. Im Fachjargon spricht man vom „Pyramidenmodell".
+Was in China funktioniert, ruht auf einer Schichtung. Im Fachjargon spricht man vom „Pyramidenmodell“.
 
 Perfect Diary hat diese Architektur um 2020–2021 populär gemacht. Daten von GrowthBox zufolge verteilte die Marke ihre Influencer-Investitionen auf Xiaohongshu damals so: 1 Prominenter, 1 Spitzen-KOL, 3 hochrangige Creator, 46 Mittelfeld-Stimmen, 100 Aufsteiger und 150 KOC.
 

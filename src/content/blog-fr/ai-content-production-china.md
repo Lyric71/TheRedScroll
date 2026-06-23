@@ -59,9 +59,9 @@ Sur Douyin, Friso s'est associé aux outils créatifs IA de Volcengine pour conc
 
 ## Et pour les marques internationales ?
 
-La production de contenu demeure l'éternel goulet d'étranglement du marketing en Chine. Adapter les visuels, caler les shootings, boucler les validations, publier sur quatre ou cinq plateformes de front : chaque étape engloutit du temps et du budget. L'IA allège les deux.
+La production de contenu demeure l'éternel goulet d'étranglement du marketing en Chine. Adapter les visuels, caler les séances photo, boucler les validations, publier sur quatre ou cinq plateformes de front : chaque étape engloutit du temps et du budget. L'IA allège les deux.
 
-Un exemple concret. Un shooting produit complet à Shanghai ? Un modèle d'IA entraîné à l'identité visuelle de la marque fait le travail dix fois plus vite. Un texte qu'un rédacteur natif mettait une journée à ciseler sort en quelques minutes, avant qu'un éditeur humain ne vienne l'affiner. Les rapports de campagne hebdomadaires, hier chronophages, tombent désormais dans la nuit.
+Un exemple concret. Une séance photo produit complète à Shanghai ? Un modèle d'IA entraîné à l'identité visuelle de la marque fait le travail dix fois plus vite. Un texte qu'un rédacteur natif mettait une journée à ciseler sort en quelques minutes, avant qu'un éditeur humain ne vienne l'affiner. Les rapports de campagne hebdomadaires, hier chronophages, tombent désormais dans la nuit.
 
 Le véritable gain, pourtant, est ailleurs.
 

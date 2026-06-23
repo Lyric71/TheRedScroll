@@ -1,0 +1,109 @@
+[vite] connected.
+[2m22:15:25[22m [34m[types][39m Generated [2m1ms[22m
+[vite] connected.
+[2m22:15:26[22m [34m[content][39m Syncing content
+[33m[1m22:15:26[22m [WARN] [glob-loader][39m No files found matching "**/*.md" in directory "src\content\platforms"
+[33m[1m22:15:26[22m [WARN] [glob-loader][39m No files found matching "**/*.md" in directory "src\content\services"
+[33m[1m22:15:26[22m [WARN] [glob-loader][39m No files found matching "**/*.md" in directory "src\content\faq"
+[33m[1m22:15:26[22m [WARN] [glob-loader][39m No files found matching "**/*.md" in directory "src\content\team"
+[2m22:15:26[22m [34m[content][39m Synced content
+[42m[1m astro [22m[49m [32mv6.1.3[39m [2mready in[22m 4975 [2mms[22m
+[2m┃[22m Local    [36mhttp://127.0.0.1:4322/[39m
+[2m22:15:26[22m [32mwatching for file changes...[39m
+[2m22:15:28[22m [34m[200][39m / [2m282ms[22m
+[2m22:15:31[22m [34m[200][39m / [2m14ms[22m
+[2m22:16:50[22m [34m[200][39m /fr/ [2m63ms[22m
+[2m22:20:18[22m [34m[200][39m /es/ [2m55ms[22m
+[2m22:20:20[22m [34m[200][39m /de/ [2m44ms[22m
+[2m22:20:23[22m [34m[200][39m /fr/ [2m16ms[22m
+[2m22:22:09[22m [34m[watch][39m /src/components/home/Hero.astro?astro&type=style&index=0&lang.css, /src/styles/global.css
+[2m22:22:10[22m [34m[200][39m /fr/ [2m32ms[22m
+[2m22:22:11[22m [34m[watch][39m /src/components/home/Hero.astro?astro&type=style&index=0&lang.css, /src/styles/global.css
+[2m22:22:11[22m [34m[200][39m /fr/ [2m60ms[22m
+[2m22:24:33[22m [34m[watch][39m /src/components/home/Hero.astro?astro&type=style&index=0&lang.css, /src/styles/global.css
+[2m22:24:33[22m [34m[200][39m /fr/ [2m48ms[22m
+[2m22:25:31[22m [34m[watch][39m /src/components/home/Hero.astro?astro&type=style&index=0&lang.css, /src/styles/global.css
+[2m22:25:32[22m [34m[200][39m /fr/ [2m56ms[22m
+[vite] program reload
+[vite] An error happened during full reload
+Failed to load url astro:server-app.js (resolved id: astro:server-app.js). Does the file exist?
+Error: Failed to load url astro:server-app.js (resolved id: astro:server-app.js). Does the file exist?
+    at loadAndTransform (file:///C:/Users/cyril/Project/TheRedScroll/node_modules/vite/dist/node/chunks/config.js:22663:33)
+[vite] program reload
+[2m22:25:45[22m [34m[200][39m /fr/ [2m280ms[22m
+[2m22:25:45[22m [34m[200][39m /fr/ [2m76ms[22m
+[vite] program reload
+[2m22:25:51[22m [34m[200][39m /fr/ [2m46ms[22m
+[2m22:27:03[22m [34m[watch][39m /src/components/home/Hero.astro?astro&type=style&index=0&lang.css, /src/styles/global.css
+[2m22:27:03[22m [34m[200][39m /fr/ [2m43ms[22m
+[2m22:27:04[22m [34m[watch][39m /src/components/home/Hero.astro?astro&type=style&index=0&lang.css, /src/styles/global.css
+[2m22:27:04[22m [34m[200][39m /fr/ [2m55ms[22m
+[2m22:27:17[22m [34m[watch][39m src/components/home/EcosystemSection.astro
+[2m22:27:17[22m [34m[200][39m /fr/ [2m37ms[22m
+[2m22:27:19[22m [34m[watch][39m src/components/home/EcosystemSection.astro
+[2m22:27:19[22m [34m[200][39m /fr/ [2m33ms[22m
+[2m22:27:33[22m [34m[watch][39m src/components/home/ServicesGrid.astro
+[2m22:27:33[22m [34m[200][39m /fr/ [2m47ms[22m
+[2m22:27:36[22m [34m[watch][39m src/components/home/ServicesGrid.astro
+[2m22:27:36[22m [34m[200][39m /fr/ [2m41ms[22m
+[2m22:27:37[22m [34m[watch][39m src/components/home/ServicesGrid.astro
+[2m22:27:37[22m [34m[200][39m /fr/ [2m32ms[22m
+[2m22:27:48[22m [34m[watch][39m /src/styles/global.css
+[2m22:27:48[22m [34m[200][39m /fr/ [2m43ms[22m
+[2m22:27:50[22m [34m[watch][39m /src/styles/global.css
+[2m22:27:51[22m [34m[200][39m /fr/ [2m53ms[22m
+[2m22:28:07[22m [34m[watch][39m /src/styles/global.css
+[2m22:28:07[22m [34m[200][39m /fr/ [2m59ms[22m
+[2m22:28:08[22m [34m[watch][39m /src/styles/global.css
+[2m22:28:08[22m [34m[200][39m /fr/ [2m48ms[22m
+[2m22:28:27[22m [34m[watch][39m /src/styles/global.css
+[2m22:28:28[22m [34m[200][39m /fr/ [2m62ms[22m
+[2m22:29:34[22m [34m[watch][39m /src/styles/global.css
+[2m22:29:34[22m [34m[200][39m /fr/ [2m47ms[22m
+[2m22:30:19[22m [34m[watch][39m /src/components/home/Hero.astro?astro&type=style&index=0&lang.css, /src/styles/global.css
+[2m22:30:19[22m [34m[200][39m /fr/ [2m50ms[22m
+[2m22:30:20[22m [34m[watch][39m /src/styles/global.css
+[2m22:30:21[22m [34m[200][39m /fr/ [2m34ms[22m
+[2m22:30:24[22m [34m[watch][39m /src/styles/global.css
+[2m22:30:24[22m [34m[200][39m /fr/ [2m42ms[22m
+[2m22:30:25[22m [34m[watch][39m /src/styles/global.css
+[2m22:30:26[22m [34m[200][39m /fr/ [2m37ms[22m
+[2m22:30:49[22m [34m[watch][39m src/components/home/ServicesGrid.astro
+[2m22:30:49[22m [34m[200][39m /fr/ [2m87ms[22m
+[2m22:30:51[22m [34m[watch][39m /src/styles/global.css
+[2m22:30:51[22m [34m[200][39m /fr/ [2m41ms[22m
+[2m22:31:39[22m [34m[200][39m /es/ [2m95ms[22m
+[vite] program reload
+[2m22:32:15[22m [34m[200][39m /es/ [2m53ms[22m
+[vite] program reload
+[2m22:32:18[22m [34m[200][39m /es/ [2m99ms[22m
+[vite] program reload
+[2m22:32:34[22m [34m[200][39m /es/ [2m83ms[22m
+[vite] program reload
+[2m22:32:36[22m [34m[200][39m /es/ [2m64ms[22m
+[vite] program reload
+[2m22:33:13[22m [34m[200][39m /es/ [2m142ms[22m
+[vite] program reload
+[2m22:34:18[22m [34m[200][39m /es/ [2m52ms[22m
+[vite] program reload
+[2m22:34:20[22m [34m[200][39m /es/ [2m74ms[22m
+[vite] program reload
+[2m22:34:21[22m [34m[200][39m /es/ [2m53ms[22m
+[vite] program reload
+[2m22:34:45[22m [34m[200][39m /es/ [2m91ms[22m
+[vite] program reload
+[2m22:34:46[22m [34m[200][39m /es/ [2m58ms[22m
+[vite] program reload
+[vite] program reload
+[2m22:35:45[22m [34m[200][39m /es/ [2m271ms[22m
+[2m22:35:45[22m [34m[200][39m /es/ [2m142ms[22m
+[vite] program reload
+[2m22:35:52[22m [34m[200][39m /es/ [2m59ms[22m
+[2m22:35:52[22m [34m[glob-loader][39m Reloaded data from [32mai-content-production-china.md[39m
+[2m22:35:52[22m [34m[200][39m /es/ [2m69ms[22m
+[vite] program reload
+[2m22:36:07[22m [34m[glob-loader][39m Reloaded data from [32mai-content-production-china.md[39m
+[2m22:36:07[22m [34m[200][39m /es/ [2m59ms[22m
+[2m22:36:07[22m [34m[watch][39m /src/styles/global.css
+[2m22:36:07[22m [34m[200][39m /es/ [2m141ms[22m
+[2m22:36:08[22m [34m[200][39m /es/ [2m9ms[22m

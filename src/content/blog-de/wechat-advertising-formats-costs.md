@@ -30,7 +30,7 @@ Sechs Positionen, verteilt über das Ökosystem. Jede erfüllt eine leicht ander
 | Platzierung | Wo sie erscheint | Wofür sie gedacht ist |
 |---|---|---|
 | Moments | Im persönlichen Feed des Nutzers, gestaltet wie ein Beitrag eines Freundes | Bekanntheit, Produktlaunches, große Kampagnen |
-| Official Accounts | Unter Artikeln, in der Artikelmitte, als Vorroll-Video | Conversion über Inhalte, Abonnentengewinnung |
+| Official Accounts | Unter Artikeln, in der Artikelmitte, als Pre-Roll-Video | Conversion über Inhalte, Abonnentengewinnung |
 | Mini Programs | Banner, Interstitials, Rewarded Video in Mini Programs | E-Commerce, Downloads, Games |
 | Channels | Video im Feed von WeChat Channels | Video-Reichweite, Livestream-Promotion, Produktentdeckung |
 | Search | Treffer in der WeChat-Suche | Intentions-Targeting, Markenschutz |
@@ -92,7 +92,7 @@ Die lokale Werbung zu 300 Yuan pro Tag ist die günstigste Option, deckt aber nu
 
 ## Was man Ihnen selten sagt
 
-**Die kreative Freigabe ist streng.** Und zeitaufwendig. WeChat lehnt überzogene Aussagen, ungesourcte Statistiken, Gesundheitsversprechen ohne behördliche Zertifizierung sowie jede Aufforderung zum Teilen oder Weiterleiten kategorisch ab. Planen Sie ein bis zwei Werktage ein. Wer das nicht im Zeitplan hat, riskiert das Launch-Fenster.
+**Die kreative Freigabe ist streng.** Und zeitaufwendig. WeChat lehnt überzogene Aussagen, unbelegte Statistiken, Gesundheitsversprechen ohne behördliche Zertifizierung sowie jede Aufforderung zum Teilen oder Weiterleiten kategorisch ab. Planen Sie ein bis zwei Werktage ein. Wer das nicht im Zeitplan hat, riskiert das Launch-Fenster.
 
 **Ihre Anzeigen konkurrieren mit echten Menschen.** Es ist kein Werbebanner auf einer Website. Ihre Anzeige steht zwischen dem Foto vom Sohn eines Freundes und dem Urlaub eines Kollegen. Wenn sie nicht ins Bild passt, wird sie übersehen.
 

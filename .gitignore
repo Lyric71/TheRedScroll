@@ -26,3 +26,13 @@ pnpm-debug.log*
 
 # image optimization manifest
 scripts/.image-manifest.json
+
+# audit / report artifacts (regenerable, do not commit)
+.lighthouse-*.json
+lh-*.json
+*.lighthouse.json
+
+# scratch / temp dumps
+.tmp/
+tmp_*
+/*.html

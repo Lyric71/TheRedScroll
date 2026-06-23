@@ -13,8 +13,8 @@ keyFacts:
   - "KOL signifie Key Opinion Leader : influenceurs à large audience, mobilisés pour la portée et la notoriété de marque."
   - "KOC signifie Key Opinion Consumer : utilisateurs ordinaires (1 000 à 100 000 abonnés), mobilisés pour la confiance et la conversion."
   - "Les KOL de premier rang en Chine se monnaient entre 500 000 et 5 millions de yuans par publication ; un KOC coûte généralement entre 200 et 5 000 yuans."
-  - "Perfect Diary a construit sa croissance en empilant 1 head KOL, 10 KOL intermédiaires et 1 000 KOC à chaque lancement produit."
-  - "Les faux abonnés et l'engagement automatisé restent répandus en Chine. Vérifiez via iiMedia, CCTV News et les analytics des plateformes avant tout contrat."
+  - "Perfect Diary a construit sa croissance en empilant 1 KOL de tête, 10 KOL intermédiaires et 1 000 KOC à chaque lancement produit."
+  - "Les faux abonnés et l'engagement automatisé restent répandus en Chine. Vérifiez via iiMedia, CCTV News et les statistiques des plateformes avant tout contrat."
 ---
 
 *Miser gros sur le mauvais KOL, c'est un budget qui part en fumée. S'éparpiller sur des KOC sans feuille de route, c'est la garantie de l'invisibilité. Tout l'enjeu tient au dosage.*

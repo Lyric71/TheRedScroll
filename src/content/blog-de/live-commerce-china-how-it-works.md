@@ -27,7 +27,7 @@ Zur Einordnung: Der klassische E-Commerce liegt bei 0,5 bis 1,5 Prozent Konversi
 
 ## Der Konversionsmotor
 
-Produktdemonstration, Q&A und Flash-Sale laufen simultan. Der Host stellt den Artikel vor, beantwortet Fragen der Zuschauer in Echtzeit und ruft einen Preis aus, der nur für die Dauer des Streams gilt.
+Produktdemonstration, Fragerunde und Flash-Sale laufen simultan. Der Host stellt den Artikel vor, beantwortet Fragen der Zuschauer in Echtzeit und ruft einen Preis aus, der nur für die Dauer des Streams gilt.
 
 Die Leute kaufen im Moment. Nicht später. Ein Host, dem sie vertrauen, andere Käufer, die unter ihren Augen bestellen, ein Preis, der mit dem Stream verfällt: Diese Kombination erzeugt eine Kaufdynamik, die kein Produktdatenblatt erreicht.
 
@@ -103,7 +103,7 @@ Auch die Einsätze sind gestiegen. Beim Double 11 2025 haben Marken pro Hauptses
 
 > Quelle: 100EC.cn
 
-Der markeneigene Livestream gewinnt an Boden. Marken-eigene Streams standen beim Double 11 2025 für 40 Prozent des gesamten Volumens, acht Punkte mehr als 2024. Anta, L'Oréal, Xiaomi: interne Teams von über 50 Personen, täglich auf Sendung. Manche erzielen über ihre eigenen Streams mehr Umsatz als über sämtliche KOL-Kooperationen.
+Der markeneigene Livestream gewinnt an Boden. Markeneigene Streams standen beim Double 11 2025 für 40 Prozent des gesamten Volumens, acht Punkte mehr als 2024. Anta, L'Oréal, Xiaomi: interne Teams von über 50 Personen, täglich auf Sendung. Manche erzielen über ihre eigenen Streams mehr Umsatz als über sämtliche KOL-Kooperationen.
 
 Ein Nebenprojekt liefert Nebenergebnisse. Eine Regel, die kaum Ausnahmen kennt.
 

@@ -17,6 +17,8 @@ export const ui = {
     'nav.viewAll.services': 'All services',
     'nav.viewAll.platforms': 'All platforms',
     'nav.viewAll.about': 'About the agency',
+    'nav.openMenu': 'Open menu',
+    'nav.closeMenu': 'Close menu',
 
     // Service names & subtitles
     'nav.services.strategy': 'Strategy, Campaigns & Analytics',
@@ -140,10 +142,12 @@ export const ui = {
     'nav.viewAll.services': 'Tous les services',
     'nav.viewAll.platforms': 'Toutes les plateformes',
     'nav.viewAll.about': 'Découvrir l\'agence',
+    'nav.openMenu': 'Ouvrir le menu',
+    'nav.closeMenu': 'Fermer le menu',
 
     // Service names & subtitles
     'nav.services.strategy': 'Stratégie, campagnes et analyse',
-    'nav.services.strategy.sub': 'Études, calendriers éditoriaux, reporting',
+    'nav.services.strategy.sub': 'Études, calendriers éditoriaux, rapports',
     'nav.services.advertising': 'Publicité',
     'nav.services.advertising.sub': 'Plan média et achat d\'espace',
     'nav.services.content': 'Production de contenu',
@@ -176,7 +180,7 @@ export const ui = {
     'nav.about.ai.sub': 'L\'IA au cœur de chaque prestation',
 
     // Footer
-    'footer.tagline': 'Nous faisons grandir votre marque sur les réseaux sociaux chinois. Plus d\'abonnés, plus d\'engagement, plus de ventes. Périmètre arrêté, tarif ferme, aucun extra à attendre.',
+    'footer.tagline': 'Nous faisons grandir votre marque sur les réseaux sociaux chinois. Plus d\'abonnés, plus d\'engagement, plus de ventes. Périmètre arrêté, tarif ferme, aucune surprise.',
     'footer.services': 'Services',
     'footer.discover': 'Explorer',
     'footer.connect': 'Nous écrire',
@@ -263,6 +267,8 @@ export const ui = {
     'nav.viewAll.services': '看全部服务',
     'nav.viewAll.platforms': '看全部平台',
     'nav.viewAll.about': '走进TheRedScroll',
+    'nav.openMenu': '打开菜单',
+    'nav.closeMenu': '关闭菜单',
 
     // Service names & subtitles
     'nav.services.strategy': '策略和Campaign执行',
@@ -384,6 +390,8 @@ export const ui = {
     'nav.viewAll.services': 'Todos los servicios',
     'nav.viewAll.platforms': 'Todas las plataformas',
     'nav.viewAll.about': 'Sobre la agencia',
+    'nav.openMenu': 'Abrir menú',
+    'nav.closeMenu': 'Cerrar menú',
 
     // Service names & subtitles
     'nav.services.strategy': 'Estrategia, campañas y analítica',
@@ -391,7 +399,7 @@ export const ui = {
     'nav.services.advertising': 'Publicidad',
     'nav.services.advertising.sub': 'Planificación y compra de medios',
     'nav.services.content': 'Producción de contenidos',
-    'nav.services.content.sub': 'Visuales con IA, vídeo y copy local',
+    'nav.services.content.sub': 'Visuales con IA, vídeo y textos locales',
     'nav.services.influencer': 'Marketing de influencia',
     'nav.services.influencer.sub': 'Campañas con KOL y KOC',
     'nav.services.marketEntry': 'Entrada al mercado chino',
@@ -405,7 +413,7 @@ export const ui = {
     'nav.platforms.wechat': 'WeChat',
     'nav.platforms.wechat.sub': 'Cuentas oficiales, Mini Programs, WeCom',
     'nav.platforms.rednote': 'RedNote / Xiaohongshu',
-    'nav.platforms.rednote.sub': 'Reseñas, publicaciones con compra y lifestyle',
+    'nav.platforms.rednote.sub': 'Reseñas, publicaciones con compra y estilo de vida',
     'nav.platforms.douyin': 'Douyin',
     'nav.platforms.douyin.sub': 'Vídeo corto y comercio en directo',
     'nav.platforms.weibo': 'Weibo',
@@ -420,7 +428,7 @@ export const ui = {
     'nav.about.ai.sub': 'La IA en cada servicio',
 
     // Footer
-    'footer.tagline': 'Hacemos crecer su marca en las redes sociales chinas. Más seguidores, más conversación, más ventas. Alcance cerrado, precio fijo, sin sorpresas.',
+    'footer.tagline': 'Hacemos crecer su marca en las redes sociales de China. Más seguidores, más conversación, más ventas. Alcance cerrado, precio fijo y cero sorpresas.',
     'footer.services': 'Servicios',
     'footer.discover': 'Descubrir',
     'footer.connect': 'Contacto',
@@ -507,6 +515,8 @@ export const ui = {
     'nav.viewAll.services': 'Alle Leistungen',
     'nav.viewAll.platforms': 'Alle Plattformen',
     'nav.viewAll.about': 'Über die Agentur',
+    'nav.openMenu': 'Menü öffnen',
+    'nav.closeMenu': 'Menü schließen',
 
     // Service names & subtitles
     'nav.services.strategy': 'Strategie, Kampagnen, Analytics',
@@ -611,7 +621,7 @@ export const ui = {
 
     // Work page
     'work.all': 'Alle',
-    'work.noResults': 'Für diese Filter liegen keine Fallstudien vor.',
+    'work.noResults': 'Für diese Auswahl liegen keine Fallstudien vor.',
 
     // Language
     'lang.switch': 'EN',

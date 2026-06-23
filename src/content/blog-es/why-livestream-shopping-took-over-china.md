@@ -90,6 +90,6 @@ Entender la cabeza del comprador es el primer paso. Quiere ver el producto demos
 
 Para las marcas chinas, la oportunidad está en hacerlo mejor que el resto. El formato es familiar, pero la mayoría sigue emitiendo livestreams genéricos y de poco esfuerzo. Las que invierten en calidad del presentador, en estrategia de contenido y en seguimiento en tráfico privado son las que se despegan.
 
-Para las marcas internacionales, la oportunidad es el acceso. El livestream permite probar productos, recoger feedback real del consumidor y construir confianza a una velocidad que ningún otro canal en China alcanza hoy.
+Para las marcas internacionales, la oportunidad es el acceso. El livestream permite probar productos, recoger la opinión real del consumidor y construir confianza a una velocidad que ningún otro canal en China alcanza hoy.
 
 > Un livestream bien hecho cubre todas esas necesidades de una vez. Una ficha de producto estática no se acerca. Y por eso este formato sigue creciendo.

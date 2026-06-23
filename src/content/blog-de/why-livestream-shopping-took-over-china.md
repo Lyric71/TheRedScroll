@@ -29,7 +29,7 @@ Das ist keine Modeerscheinung. Das ist eine strukturelle Verschiebung im Kaufver
 
 ## Fünf Gründe für die Käufervorliebe
 
-Die häufigste Erklärung lautet: „Es unterhält." Stimmt teilweise. Doch wenn Unterhaltung allein reichte, würden die Leute zuschauen, ohne zu kaufen.
+Die häufigste Erklärung lautet: „Es unterhält.“ Stimmt teilweise. Doch wenn Unterhaltung allein reichte, würden die Leute zuschauen, ohne zu kaufen.
 
 ### 1. Das Produkt ist wirklich sichtbar
 
@@ -59,7 +59,7 @@ Laut der Erhebung der China Consumers Association geben fast 70 Prozent der Live
 
 ### 5. Sozialer Beleg, in Echtzeit
 
-Wenn hunderte Menschen unter Ihren Augen dasselbe Produkt kaufen und sich der Chat mit „gerade bestellt" und „letztes Mal bekommen, top" füllt, verändert sich Ihr Verhältnis zum Kaufbutton. Eine Studie der Tsinghua-Universität hat herausgearbeitet, dass diese „Einkaufsatmosphäre" im Live-Studio, ein Gemisch aus sichtbaren Transaktionen und Peer-Kommentaren, als eigenständiger Impulskaufmotor wirkt. Flash-Verkäufe, Countdowns, in Echtzeit angezeigte Volumina: Klassischer E-Commerce kann diese Dynamik nicht herstellen.
+Wenn hunderte Menschen unter Ihren Augen dasselbe Produkt kaufen und sich der Chat mit „gerade bestellt“ und „letztes Mal bekommen, top“ füllt, verändert sich Ihr Verhältnis zum Kaufbutton. Eine Studie der Tsinghua-Universität hat herausgearbeitet, dass diese „Einkaufsatmosphäre“ im Live-Studio, ein Gemisch aus sichtbaren Transaktionen und Peer-Kommentaren, als eigenständiger Impulskaufmotor wirkt. Flash-Verkäufe, Countdowns, in Echtzeit angezeigte Volumina: Klassischer E-Commerce kann diese Dynamik nicht herstellen.
 
 > Quelle: Tsinghua SEM, Studie zur Entstehung von Impulskäufen im Livestream
 
@@ -88,7 +88,7 @@ Ob chinesische Marke, etablierte internationale Marke oder Neueinsteiger im Test
 
 Die Haltung des Käufers liegt in fünf Erwartungen. Das Produkt vorgeführt sehen. Eine Frage stellen und in der Sekunde eine Antwort erhalten. Weniger zahlen als beim Durchblättern des Datenblatts. Demjenigen vertrauen, der verkauft. Und andere zugleich kaufen sehen.
 
-**Für chinesische Marken.** Das Format ist vertraut. Trotzdem bleiben die meisten Streams generisch und lieblos. Wer in Hostqualität, Editorialstrategie und Private-Traffic-Anschluss investiert, zieht den Abstand auf.
+**Für chinesische Marken.** Das Format ist vertraut. Trotzdem bleiben die meisten Streams generisch und lieblos. Wer in Hostqualität, Redaktionsstrategie und Private-Traffic-Anschluss investiert, zieht den Abstand auf.
 
 **Für internationale Marken.** Live bietet die Möglichkeit, Produkte zu testen, konkretes Feedback einzuholen und Vertrauen schneller aufzubauen als auf irgendeinem anderen heute verfügbaren China-Kanal.
 

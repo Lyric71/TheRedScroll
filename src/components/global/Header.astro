@@ -134,7 +134,7 @@ const langFlags: Record<string, string> = {
     <button
       id="mobile-menu-toggle"
       class="min-[1024px]:hidden flex flex-col justify-center gap-[6px] w-[44px] h-[44px] items-center cursor-pointer bg-transparent border-none p-[12px]"
-      aria-label="Open menu"
+      aria-label={t('nav.openMenu', lang)}
     >
       <span class="block w-full h-[2px] bg-[#FFFFFF] rounded-full"></span>
       <span class="block w-full h-[2px] bg-[#FFFFFF] rounded-full"></span>
@@ -151,7 +151,7 @@ const langFlags: Record<string, string> = {
   <button
     id="mobile-menu-close"
     class="absolute top-[20px] right-[20px] text-[#FFFFFF] text-[20px] leading-none cursor-pointer bg-transparent border-none w-[44px] h-[44px] flex items-center justify-center"
-    aria-label="Close menu"
+    aria-label={t('nav.closeMenu', lang)}
   >
     &#x2715;
   </button>

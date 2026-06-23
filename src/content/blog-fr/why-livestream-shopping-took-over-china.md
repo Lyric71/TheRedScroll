@@ -17,7 +17,7 @@ featuredImage: "/images/blog/livestream-douyin-couch.webp"
 
 La vente en direct en Chine a quitté le terrain de la niche depuis longtemps.
 
-iResearch estime le marché à 5 800 milliards de yuans en 2024. Le taux de pénétration est passé de 4,9 % en 2019 à 37,8 % en 2024 — soit près de 600 millions d'acheteurs réguliers. Rien qu'en 2023, les plateformes chinoises ont accueilli plus de 110 millions de sessions de vente en direct, avec plus de 70 millions de produits présentés et 2,7 millions d'animateurs actifs.
+iResearch estime le marché à 5 800 milliards de yuans en 2024. Le taux de pénétration est passé de 4,9 % en 2019 à 37,8 % en 2024, soit près de 600 millions d'acheteurs réguliers. Rien qu'en 2023, les plateformes chinoises ont accueilli plus de 110 millions de sessions de vente en direct, avec plus de 70 millions de produits présentés et 2,7 millions d'animateurs actifs.
 
 > Source : CIECC, rapport 2024 sur le développement de la vente en direct
 

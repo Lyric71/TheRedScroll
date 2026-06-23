@@ -31,7 +31,7 @@ Los datos recogidos en la revisión sobre marketing con IA de Douban en 2026 ind
 
 Una rebaja de coste así cambia, sin más, lo que es económicamente viable para marcas de cualquier tamaño.
 
-![Una herramienta de generación de contenido con IA mostrando una cuadrícula de imágenes lifestyle de producto para selección por lotes](/images/blog/aigc-batch-grid.webp)
+![Una herramienta de generación de contenido con IA mostrando una cuadrícula de imágenes de estilo de vida de producto para selección por lotes](/images/blog/aigc-batch-grid.webp)
 
 **Volumen.** Plataformas como Douyin, RedNote y WeChat Channels premian la frecuencia de publicación. Los algoritmos favorecen a las cuentas que se mantienen activas. La IA ofrece a las marcas una manera de sostener ese ritmo sin agotar a su equipo de contenidos. Una empresa de gran consumo levantó una biblioteca íntegra de vídeos de producto generados con IA y, recombinando esos clips, produjo cientos de variantes para distintas campañas y audiencias.
 
@@ -49,7 +49,7 @@ Los mejores resultados los firman las marcas que tratan la IA como una herramien
 |---|---|---|
 | Tomson and Hancock | Una película de marca íntegramente realizada con IA | Viral en Douyin y WeChat. Los usuarios dijeron que ese era exactamente el aspecto que debía tener el contenido con IA. |
 | Lenovo | Guerreros de terracota animados hablando en dialecto shaanxi para la campaña de vuelta al cole | Interacción alta y compartido en cadena por las plataformas sociales. |
-| Museo del Palacio | La IA dio vida a piezas patrimoniales en un especial de Año Nuevo Lunar | Un 96 % de feedback positivo del público. |
+| Museo del Palacio | La IA dio vida a piezas patrimoniales en un especial de Año Nuevo Lunar | Un 96 % de valoraciones positivas del público. |
 
 > Fuente: Douban, Informe de casos de marketing con IA 2026
 

@@ -11,7 +11,7 @@ const articles = allPosts
     category: post.data.category,
     title: post.data.title,
     excerpt: post.data.description,
-    readingTime: `${Math.ceil(post.body!.split(/\s+/).length / 200)} min`,
+    readingTime: `${Math.ceil(post.body!.split(/\s+/).length / 200)} Min.`,
     date: new Date(post.data.publishDate).toLocaleDateString('de-DE', { month: 'long', year: 'numeric' }),
     slug: `/de/insights/${post.id}`,
     featuredImage: post.data.featuredImage,
