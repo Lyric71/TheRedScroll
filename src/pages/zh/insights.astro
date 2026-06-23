@@ -11,7 +11,7 @@ const articles = allPosts
     category: post.data.category,
     title: post.data.title,
     excerpt: post.data.description,
-    readingTime: `${Math.ceil(post.body!.split(/\s+/).length / 200)} min`,
+    readingTime: `${Math.ceil(post.body!.split(/\s+/).length / 200)} 分钟`,
     date: new Date(post.data.publishDate).toLocaleDateString('zh-CN', { month: 'long', year: 'numeric' }),
     slug: `/zh/insights/${post.id}`,
     featuredImage: post.data.featuredImage,
@@ -20,7 +20,7 @@ const articles = allPosts
 
 <PageLayout
   title="中国社媒洞察与指南 | TheRedScroll"
-  description="中国社媒营销的一线观察与实战笔记。微信、小红书、抖音、微博,我们怎么做、怎么想。"
+  description="中国社媒营销的一线观察与实战笔记。微信、小红书、抖音、微博，我们怎么做、怎么想。"
   lang="zh"
 >
 
@@ -33,10 +33,10 @@ const articles = allPosts
           行业观察
         </p>
         <h1 class="text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[16px]">
-          我们在中国社媒上看到的、踩过的、想明白的事
+          我们在中国社媒上看到的、踩过的、想透的事
         </h1>
         <p class="text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] text-[var(--color-stone)]">
-          平台的新动向,策略的拆解,一线跑出来的真经验。
+          平台的新动向、策略的拆解，一线跑出来的真经验。
         </p>
       </div>
     </Container>
