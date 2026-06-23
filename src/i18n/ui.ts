@@ -271,7 +271,7 @@ export const ui = {
     'nav.closeMenu': '关闭菜单',
 
     // Service names & subtitles
-    'nav.services.strategy': '策略和Campaign执行',
+    'nav.services.strategy': '策略与营销战役',
     'nav.services.strategy.sub': '市场调研、内容排期、月度复盘',
     'nav.services.advertising': '广告投放',
     'nav.services.advertising.sub': '媒介策划与买量执行',
@@ -303,7 +303,7 @@ export const ui = {
     'nav.about.ai.sub': 'AI如何贯穿每一项服务',
 
     // Footer
-    'footer.tagline': '中国社媒，我们帮你把品牌做大。粉丝、互动、转化，一起涨。范围透明，一口价，后面没有任何隐藏账单。',
+    'footer.tagline': '在中国社媒上，我们帮你把品牌做大。粉丝、互动、转化，一起往上走。范围透明，一口价，账单后面没有任何夹带。',
     'footer.services': '服务',
     'footer.discover': '逛一逛',
     'footer.connect': '联系我们',
@@ -313,7 +313,7 @@ export const ui = {
     'footer.terms': '服务条款',
     'footer.cookies': 'Cookie政策',
     'footer.contact': '联系我们',
-    'footer.strategyAnalytics': '策略和Campaign执行',
+    'footer.strategyAnalytics': '策略与营销战役',
     'footer.contentProduction': '内容制作',
     'footer.influencerMarketing': '达人营销',
     'footer.advertising': '广告投放',

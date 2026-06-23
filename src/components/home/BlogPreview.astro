@@ -25,7 +25,7 @@ const posts = allPosts
   .map((post) => ({
     category: post.data.category,
     title: post.data.title,
-    readingTime: `${Math.ceil(post.body!.split(/\s+/).length / 200)} min`,
+    readingTime: `${Math.ceil(post.body!.split(/\s+/).length / 200)} ${lang === 'zh' ? '分钟' : 'min'}`,
     date: new Date(post.data.publishDate).toLocaleDateString(
       lang === 'zh' ? 'zh-CN' : lang === 'fr' ? 'fr-FR' : lang === 'es' ? 'es-ES' : lang === 'de' ? 'de-DE' : 'en-US',
       { month: 'long', year: 'numeric' }
@@ -41,9 +41,9 @@ const sectionText = lang === 'de' ? {
   cta: 'Weitere Analysen lesen',
 } : lang === 'zh' ? {
   overline: '行业洞察',
-  heading: '我们最近在研究的几件事。',
+  heading: '我们最近在琢磨的几件事。',
   readingLabel: '阅读',
-  cta: '查看更多文章',
+  cta: '读更多洞察',
 } : lang === 'fr' ? {
   overline: 'Analyses',
   heading: 'Nos dernières lectures du marché chinois.',

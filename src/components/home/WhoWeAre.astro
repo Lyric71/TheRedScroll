@@ -37,10 +37,10 @@ const textByLang = {
   },
   zh: {
     overline: '关于 TheRedScroll',
-    heading: '中国社媒的增长，靠的是一支常驻本地的团队。',
-    p1: 'TheRedScroll 是一家专做中国社交媒体的代理。我们在微信、抖音、小红书、微博，以及另外 14 个中国平台上为品牌做增长。上海和香港两地办公，团队每天在平台上做内容，不是隔着别的时区看后台。',
-    p2: '团队成员全是土生土长的中国人，和你的用户一起刷微信、抖音、小红书、微博。北京时间早上九点一条热搜冒头，我们这边已经在跟进。',
-    p3: '我们只服务三类客户。第一次进入中国市场的国际品牌。已经在国内但希望做得更好的国际品牌。想把国内社媒做到下一个量级的本土品牌。每个项目按固定范围、固定价格执行，启动前先把方案谈清楚。2026 年 4 月，我们盘点了行业里 37 家代理，没有一家用同一种方式做事。',
+    heading: '在中国社媒做增长，靠的是一支常驻本地的团队。',
+    p1: 'TheRedScroll 是一家只做中国社交媒体的代理。我们在微信、抖音、小红书、微博，再加另外 14 个中国平台上，替品牌做增长。上海、香港两地办公，团队天天泡在平台上做内容，而不是隔着几个时区盯后台。',
+    p2: '团队全是土生土长的中国人，跟你的用户一样，天天泡在微信、抖音、小红书、微博上。北京时间早上九点一条热搜刚冒头，我们这边早就盯上了。',
+    p3: '我们只服务三类客户：头一回进中国市场的国际品牌；已经在国内、却想做出更好成绩的国际品牌；想把国内社媒推上一个量级的本土品牌。每个项目都按固定范围、固定价格来，启动前先把方案谈清楚。2026 年 4 月，我们盘点了这一行的 37 家代理，没有一家是同样的做法。',
     stats: [
       { value: '20+', label: '年行业经验' },
       { value: '18+', label: '覆盖平台' },
@@ -82,15 +82,15 @@ const text = (textByLang as Record<string, typeof textByLang.en>)[lang] ?? textB
       <div class="grid grid-cols-2 grid-rows-2 gap-[12px]">
         <!-- Large image top-left spanning 1 col, 2 rows -->
         <div class="row-span-2 rounded-[8px] bg-[#F0F1F4] aspect-[3/4] overflow-hidden">
-          <img src="/images/team/china-office.webp" alt={lang === 'fr' ? 'Bureau TheRedScroll en Chine' : lang === 'zh' ? 'TheRedScroll中国办公室' : lang === 'es' ? 'Oficina de TheRedScroll en China' : lang === 'de' ? 'TheRedScroll-Büro in China' : 'TheRedScroll China office'} width="600" height="800" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+          <img src="/images/team/china-office.webp" alt={lang === 'fr' ? 'Bureau TheRedScroll en Chine' : lang === 'zh' ? 'TheRedScroll 中国办公室' : lang === 'es' ? 'Oficina de TheRedScroll en China' : lang === 'de' ? 'TheRedScroll-Büro in China' : 'TheRedScroll China office'} width="600" height="800" class="w-full h-full object-cover" loading="lazy" decoding="async" />
         </div>
         <!-- Top-right image -->
         <div class="rounded-[8px] bg-[#F0F1F4] aspect-[4/3] overflow-hidden">
-          <img src="/images/team/hongkong-office.webp" alt={lang === 'fr' ? 'Bureau TheRedScroll à Hong Kong' : lang === 'zh' ? 'TheRedScroll香港办公室' : lang === 'es' ? 'Oficina de TheRedScroll en Hong Kong' : lang === 'de' ? 'TheRedScroll-Büro in Hongkong' : 'TheRedScroll Hong Kong office'} width="800" height="600" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+          <img src="/images/team/hongkong-office.webp" alt={lang === 'fr' ? 'Bureau TheRedScroll à Hong Kong' : lang === 'zh' ? 'TheRedScroll 香港办公室' : lang === 'es' ? 'Oficina de TheRedScroll en Hong Kong' : lang === 'de' ? 'TheRedScroll-Büro in Hongkong' : 'TheRedScroll Hong Kong office'} width="800" height="600" class="w-full h-full object-cover" loading="lazy" decoding="async" />
         </div>
         <!-- Bottom-right image -->
         <div class="rounded-[8px] bg-[#F0F1F4] aspect-[4/3] overflow-hidden">
-          <img src="/images/team/team-photo.webp" alt={lang === 'fr' ? 'Équipe TheRedScroll' : lang === 'zh' ? 'TheRedScroll团队' : lang === 'es' ? 'Equipo de TheRedScroll' : lang === 'de' ? 'TheRedScroll-Team' : 'TheRedScroll team'} width="800" height="600" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+          <img src="/images/team/team-photo.webp" alt={lang === 'fr' ? 'Équipe TheRedScroll' : lang === 'zh' ? 'TheRedScroll 团队' : lang === 'es' ? 'Equipo de TheRedScroll' : lang === 'de' ? 'TheRedScroll-Team' : 'TheRedScroll team'} width="800" height="600" class="w-full h-full object-cover" loading="lazy" decoding="async" />
         </div>
       </div>
 

@@ -9,14 +9,14 @@ import GettingStarted from '../../../components/sections/GettingStarted.astro';
 
 
 const faqs = [
-  { q: '怎么识别假粉丝？', a: '交叉比对粉丝数、互动率、评论质量和粉丝画像。一个号称20万粉的博主，每条笔记只有50条评论，大多数还是表情包——这就是很明显的信号。星图、蒲公英这些官方工具也能给到一部分认证数据。做过几百个项目之后，可疑账号基本一眼就能看出来。' },
-  { q: '一场Campaign一般要用多少个KOL？', a: '看目标。铺量种草：20到50个KOC。品牌认知：3到5个中腰部通常就够了。重磅新品首发：一个头部加10到15个KOC起步。具体怎么搭，看预算和优先级怎么排。' },
-  { q: '发布之前我们能不能审稿？', a: '大多数情况可以。我们会在发布前把草稿或预览先发给你。有些博主不太能接受大幅改动，因为一改多，内容就失了"自然感"——说实话这一点他们也有道理。但核心信息、合规标注、品牌规范这些，我们一定会在发布前一条一条过。' },
-  { q: 'KOL和KOC到底有什么区别？', a: 'KOL是专业博主，粉丝量大，内容做得精。KOC（关键意见消费者）就是普通用户，粉丝不多，但会自发分享使用体验。一句话：KOL负责给你曝光，KOC负责给你信任和搜索可见度。多数Campaign两者都要一起用。' },
-  { q: '从立项到首条内容上线，大概要多久？', a: '一般两到四周——从方案敲定，到首条内容发出。这段时间里包括选人、对接、商务、创意、制作、审稿。KOC铺量型项目还能更快，有时候一到两周就跑起来了。' },
+  { q: '怎么识别假粉丝？', a: '交叉比对粉丝数、互动率、评论质量和粉丝画像。一个号称 20 万粉的博主，每条笔记只有 50 条评论，大多数还是表情包，这就是很明显的信号。星图、蒲公英这些官方工具也能给到一部分认证数据。做过几百个项目之后，可疑账号基本一眼就能看出来。' },
+  { q: '一场营销战役一般要用多少个 KOL？', a: '看目标。铺量种草：20 到 50 个 KOC。品牌认知：3 到 5 个中腰部通常就够了。重磅新品首发：一个头部加 10 到 15 个 KOC 起步。具体怎么搭，看预算和优先级怎么排。' },
+  { q: '发布之前我们能不能审稿？', a: '大多数情况可以。我们会在发布前把草稿或预览先发给你。有些博主不太能接受大幅改动，因为一改多，内容就失了"自然感"，说实话这一点他们也有道理。但核心信息、合规标注、品牌规范这些，我们一定会在发布前一条一条过。' },
+  { q: 'KOL 和 KOC 到底有什么区别？', a: 'KOL 是专业博主，粉丝量大，内容做得精。KOC（关键意见消费者）就是普通用户，粉丝不多，但会自发分享使用体验。一句话：KOL 负责给你曝光，KOC 负责给你信任和搜索可见度。多数营销战役两者都要一起用。' },
+  { q: '从立项到首条内容上线，大概要多久？', a: '一般两到四周：从方案敲定，到首条内容发出。这段时间里包括选人、对接、商务、创意、制作、审稿。KOC 铺量型项目还能更快，有时候一到两周就跑起来了。' },
   { q: 'KOL的内容，我们能不能拿去做广告投放？', a: '可以，但这不是默认就有的权限。二次使用权必须提前谈。一部分博主的报价里本身就含广告授权，另一部分要单独买授权，费用通常会贵出30%到50%。我们在签合同阶段就会把这些条款理清楚，不会让你后面踩坑。' },
-  { q: '哪些行业跑达人营销效果最好？', a: '美妆、护肤、时尚最靠前，原因很简单——博主资源最丰富。食品饮料、健康养生、酒旅、消费电子紧随其后。B2B品牌也能跑，尤其在微信和知乎上，只是博主池子相对窄一些。' },
-  { q: 'KOL这边的打款，是你们走账吗？', a: '全程由我们负责。商务谈判、合同、打款、发票、税务都走我们。你把钱付给我们，剩下跟博主和MCN的事情都由我们直接对接。' },
+  { q: '哪些行业跑达人营销效果最好？', a: '美妆、护肤、时尚最靠前，原因很简单：博主资源最丰富。食品饮料、健康养生、酒旅、消费电子紧随其后。B2B 品牌也能跑，尤其在微信和知乎上，只是博主池子相对窄一些。' },
+  { q: 'KOL 这边的打款，是你们走账吗？', a: '全程由我们负责。商务谈判、合同、打款、发票、税务都走我们。你把钱付给我们，剩下跟博主和 MCN 的事情都由我们直接对接。' },
 ];
 
 const gettingStartedSteps = [
@@ -55,7 +55,7 @@ const gettingStartedSteps = [
         一个对的博主替品牌说一句话，比砸多少硬广都管用。
       </h1>
       <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
-        选KOL和KOC、一个一个核数据、定创意方向、跑全流程，最后再用数据算出真实回报——这一整条链路，由我们来做。团队在上海和香港两地。
+        选 KOL 和 KOC、一个一个核数据、定创意方向、跑全流程，最后再用数据算出真实回报，这一整条链路，由我们来做。团队在上海和香港两地。
       </p>
       <div class="flex items-center justify-center gap-[12px] flex-wrap">
         <Button variant="primary" href="/zh/contact/">预约通话</Button>
@@ -87,7 +87,7 @@ const gettingStartedSteps = [
         <div class="relative overflow-hidden bg-[#1A1A1A] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
           <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">转化率明显更高</h3>
-          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.6)]">在小红书上跟KOL合作的品牌，实际观察到的转化率，大约是传统广告渠道的2.3倍。</p>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.6)]">在小红书上跟 KOL 合作的品牌，实际观察到的转化率，大约是传统广告渠道的 2.3 倍。</p>
         </div>
         <div class="relative overflow-hidden bg-[#CC3333] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
@@ -97,7 +97,7 @@ const gettingStartedSteps = [
         <div class="relative overflow-hidden bg-[#E8E0D8] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
           <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">但执行工作量是真的大</h3>
-          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">找合适的人、核粉丝真实性、谈价、一条一条审稿、追踪效果。一场15位博主的Campaign，工作量轻轻松松就上100个小时。</p>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">找合适的人、核粉丝真实性、谈价、一条一条审稿、追踪效果。一场 15 位博主的营销战役，工作量轻轻松松就上 100 个小时。</p>
         </div>
       </div>
     </Container>
@@ -126,7 +126,7 @@ const gettingStartedSteps = [
             <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
           </div>
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">策划和准备</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">每一场Campaign开跑前，先出一份清晰的brief：目标、核心信息、内容形式、排期、各平台各自的要求，全都写明白。KOL的发布节奏，会跟品牌自己的内容规划和付费投放对齐同步。</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">每一场营销战役开跑前，先出一份清晰的 brief：目标、核心信息、内容形式、排期、各平台各自的要求，全都写明白。KOL 的发布节奏，会跟品牌自己的内容规划和付费投放对齐同步。</p>
         </div>
         <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
           <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
@@ -233,7 +233,7 @@ const gettingStartedSteps = [
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">中腰部KOL（20,000到100,000粉丝）</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">每篇¥3,000到¥15,000。对大多数Campaign来说，性价比是最高的那一档。覆盖面够广、可信度也够，单次互动的成本合理。</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">每篇 ¥3,000 到 ¥15,000。对大多数营销战役来说，性价比是最高的那一档。覆盖面够广、可信度也够，单次互动的成本合理。</p>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">头部KOL（100,000粉丝以上）</h3>
@@ -252,7 +252,7 @@ const gettingStartedSteps = [
           <SectionHeading overline="价格参考">抖音</SectionHeading>
         </div>
         <div class="flex items-center justify-center">
-          <img src="/images/platforms/douyin-services/kol-campaigns.webp" alt="抖音上跑Campaign的KOL博主" class="w-full max-w-[420px] rounded-[10px]" loading="lazy" decoding="async" />
+          <img src="/images/platforms/douyin-services/kol-campaigns.webp" alt="抖音上跑营销战役的 KOL 博主" class="w-full max-w-[420px] rounded-[10px]" loading="lazy" decoding="async" />
         </div>
       </div>
 
@@ -267,7 +267,7 @@ const gettingStartedSteps = [
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">头部KOL（500,000粉丝以上）</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">每条视频¥30,000到¥200,000及以上。这一档是整场Campaign的核心引擎，通常会跟直播带货场次联动起来做。</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">每条视频 ¥30,000 到 ¥200,000 及以上。这一档是整场营销战役的核心引擎，通常会跟直播带货场次联动起来做。</p>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">直播带货主播</h3>
@@ -293,7 +293,7 @@ const gettingStartedSteps = [
       <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">公众号KOL（图文）</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">每篇¥5,000到¥50,000及以上，具体看平均阅读量。大致的基准是每次阅读¥1。单次曝光成本在各大平台里最高，但这里的受众完全是另一回事——注意力更集中，质量也更高。</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">每篇 ¥5,000 到 ¥50,000 及以上，具体看平均阅读量。大致的基准是每次阅读 ¥1。单次曝光成本在各大平台里最高，但这里的受众完全是另一回事：注意力更集中，质量也更高。</p>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">视频号KOL（视频）</h3>
@@ -316,7 +316,7 @@ const gettingStartedSteps = [
           </div>
           <img
             src="/images/clients/Jaguar/Jaguar-Land-Rover.avif"
-            alt="捷豹路虎中国社媒Campaign主视觉"
+            alt="捷豹路虎中国社媒营销战役主视觉"
             class="w-[45%] max-[768px]:w-full aspect-[16/10] object-cover rounded-[10px]"
             loading="lazy"
             decoding="async"
@@ -333,7 +333,7 @@ const gettingStartedSteps = [
     crossLinks={[
       { label: '内容制作', href: '/zh/services/content-production' },
       { label: '广告投放', href: '/zh/services/advertising' },
-      { label: '策略和Campaign执行', href: '/zh/services/strategy-campaigns' },
+      { label: '策略与营销战役', href: '/zh/services/strategy-campaigns' },
     ]}
   />
 
