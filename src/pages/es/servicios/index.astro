@@ -1,4 +1,4 @@
-﻿---
+---
 import PageLayout from '../../../layouts/PageLayout.astro';
 import Container from '../../../components/ui/Container.astro';
 import SectionBar from '../../../components/ui/SectionBar.astro';
@@ -8,43 +8,43 @@ import GettingStarted from '../../../components/sections/GettingStarted.astro';
 const services = [
   {
     title: 'Estrategia, campañas y medición',
-    description: 'Del análisis del mercado a la lectura de los indicadores, pasando por el rumbo estratégico y la gestión de las campañas. De la elección de plataformas al balance mensual, un único interlocutor lo coordina todo.',
+    description: 'Del análisis del mercado a la lectura de los indicadores, con la estrategia y las campañas de por medio. De la elección de plataformas al balance mensual, un solo interlocutor lo coordina todo.',
     href: '/es/servicios/estrategia-campanas',
     icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 6-8"/></svg>`,
   },
   {
     title: 'Publicidad',
-    description: 'Compra de medios en WeChat, Douyin, RedNote, Weibo y más allá. Planificación, compra, creatividad y optimización: gestionamos los cuatro eslabones.',
+    description: 'Compra de medios en WeChat, Douyin, RedNote, Weibo y otras. Planificación, compra, creatividad y optimización: nos ocupamos de los cuatro eslabones.',
     href: '/es/servicios/publicidad',
     icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>`,
   },
   {
     title: 'Producción de contenidos',
-    description: 'Visuales, vídeos y textos calibrados para los códigos de cada plataforma. La IA absorbe el volumen; la dirección artística sigue en nuestras manos.',
+    description: 'Visuales, vídeos y textos ajustados a los códigos de cada plataforma. La IA asume el volumen; la dirección artística sigue en nuestras manos.',
     href: '/es/servicios/produccion-contenido',
     icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/></svg>`,
   },
   {
     title: 'Marketing de influencia',
-    description: 'Campañas con KOL y KOC en Douyin, RedNote, Weibo y Bilibili. Búsqueda de perfiles, negociación de tarifas, briefs creativos, medición del impacto.',
+    description: 'Campañas con KOL y KOC en Douyin, RedNote, Weibo y Bilibili. Selección de perfiles, negociación de tarifas, briefs creativos y medición del impacto.',
     href: '/es/servicios/marketing-influencia',
     icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
   },
   {
     title: 'Entrada al mercado chino',
-    description: 'Apertura de cuentas, configuración de plataformas, registro ICP, adaptación local. Todo lo necesario para existir en las redes sociales chinas.',
+    description: 'Apertura de cuentas, configuración de plataformas, registro ICP y adaptación local. Todo lo que hace falta para existir en las redes sociales chinas.',
     href: '/es/servicios/entrada-mercado',
     icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>`,
   },
   {
     title: 'CRM y audiencia propia',
-    description: 'Implantación de WeCom, dinamización de grupos, programas de fidelización, rutas de retención. Sus seguidores se convierten en compradores recurrentes.',
+    description: 'Implantación de WeCom, dinamización de grupos, programas de fidelización y vías de retención. Sus seguidores se convierten en compradores que repiten.',
     href: '/es/servicios/crm-dominio-privado',
     icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>`,
   },
   {
     title: 'Formación y consultoría',
-    description: 'Talleres prácticos, acompañamiento del equipo, auditorías de plataforma. Pensado para marcas que quieren internalizar el oficio sin quedar atadas a un proveedor.',
+    description: 'Talleres prácticos, acompañamiento del equipo y auditorías de plataforma. Para marcas que quieren hacer suyo el oficio sin atarse a un proveedor.',
     href: '/es/servicios/formacion-consultoria',
     icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>`,
   },
@@ -53,17 +53,17 @@ const services = [
 const gettingStartedSteps = [
   {
     title: 'Primer contacto.',
-    description: 'Su marca, sus objetivos, su grado de preparación para el mercado chino. Cero discurso comercial: solo las preguntas que hacen falta desde el primer minuto.',
+    description: 'Su marca, sus objetivos y cómo de preparada está para el mercado chino. Sin discurso comercial: solo las preguntas que importan desde el primer minuto.',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
   },
   {
     title: 'Propuesta.',
-    description: 'Alcance cerrado, precio fijo, cada entregable por escrito. Sabrá exactamente lo que recibe antes de firmar.',
+    description: 'Circuito cerrado, precio fijo y cada entregable por escrito. Sabrá con exactitud qué recibe antes de firmar.',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>',
   },
   {
     title: 'En marcha en dos semanas.',
-    description: 'Estrategia entregada, campañas montadas, primeros contenidos publicados. Quince días después de la firma, la operación está rodando.',
+    description: 'Estrategia entregada, campañas montadas y primeros contenidos publicados. Quince días después de la firma, la operación ya rueda.',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
   },
 ];
@@ -71,7 +71,7 @@ const gettingStartedSteps = [
 
 <PageLayout
   title="Servicios | TheRedScroll"
-  description="Redes sociales chinas para marcas internacionales. Estrategia, contenidos, publicidad, influencers, lanzamiento, CRM, formación. Alcance cerrado, precio fijo."
+  description="Sus redes sociales chinas de principio a fin: estrategia, contenido, publicidad, influencers, entrada al mercado, CRM y formación. Circuito cerrado y precio fijo."
   lang="es"
 >
 
@@ -82,10 +82,10 @@ const gettingStartedSteps = [
         Servicios
       </p>
       <h1 class="text-[#FFFFFF] text-[48px] max-[1024px]:text-[40px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
-        Todo lo necesario para implantar su marca en las redes sociales chinas.
+        Todo lo que su marca necesita para abrirse paso en las redes sociales chinas.
       </h1>
       <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
-        Siete servicios, un único equipo. Alcance cerrado, precio fijo, interlocutores con nombre propio en Shanghái.
+        Siete servicios y un solo equipo. Circuito cerrado, precio fijo e interlocutores con nombre y apellido en Shanghái.
       </p>
       <div class="flex flex-wrap justify-center gap-[12px]">
         <Button href="/es/precios/" variant="primary">Ver precios</Button>
@@ -102,10 +102,10 @@ const gettingStartedSteps = [
           Servicios
         </p>
         <h2 class="text-[32px] max-[640px]:text-[24px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[12px]">
-          Servicios pensados para las redes sociales chinas.
+          Servicios concebidos para las redes sociales chinas.
         </h2>
         <p class="text-[16px] font-normal leading-[1.5] text-[var(--color-stone)]">
-          Cada servicio se sostiene por sí solo o se combina con los demás. Tome solo lo que necesite.
+          Cada servicio funciona por sí solo o se combina con los demás. Tome solo lo que necesite.
         </p>
       </div>
 
@@ -137,7 +137,7 @@ const gettingStartedSteps = [
   </section>
 
   <GettingStarted
-    heading="De la primera llamada a las campañas en marcha, bastan dos semanas."
+    heading="De la primera llamada a las campañas en marcha, dos semanas."
     steps={gettingStartedSteps}
     backgroundImage="/images/team/china-office.webp"
   />

@@ -27,11 +27,11 @@ Zur Einordnung: Der klassische E-Commerce liegt bei 0,5 bis 1,5 Prozent Konversi
 
 ## Der Konversionsmotor
 
-Produktdemonstration, Fragerunde und Flash-Sale laufen simultan. Der Host stellt den Artikel vor, beantwortet Fragen der Zuschauer in Echtzeit und ruft einen Preis aus, der nur für die Dauer des Streams gilt.
+Produktdemonstration, Fragerunde und Blitzverkauf laufen gleichzeitig. Der Host stellt den Artikel vor, beantwortet Fragen der Zuschauer in Echtzeit und ruft einen Preis aus, der nur für die Dauer des Streams gilt.
 
 Die Leute kaufen im Moment. Nicht später. Ein Host, dem sie vertrauen, andere Käufer, die unter ihren Augen bestellen, ein Preis, der mit dem Stream verfällt: Diese Kombination erzeugt eine Kaufdynamik, die kein Produktdatenblatt erreicht.
 
-Im Mittel konvertiert Live Commerce zwischen 3 und 8 Prozent. Die besten Hosts überschreiten regelmäßig 10 bis 15 Prozent. Kurzvideos mit Produkttests? Eher 1,5 bis 3 Prozent. Klassische Social-Posts? 0,5 bis 1,5 Prozent.
+Im Mittel konvertiert Live Commerce zwischen 3 und 8 Prozent. Die besten Hosts überschreiten regelmäßig 10 bis 15 Prozent. Kurzvideos mit Produkttests? Eher 1,5 bis 3 Prozent. Klassische Beiträge in den sozialen Netzwerken? 0,5 bis 1,5 Prozent.
 
 > Beim Double 11 2025 hat die Beauty-Kategorie besonders deutliche Werte geliefert. Streams rund um Wirkstoffe, moderiert von Hosts mit Medizin- oder Chemieausbildung, ließen den Verkauf gezielter Wirkstoffpflege um 55 Prozent steigen.
 
@@ -41,7 +41,7 @@ Der Abstand ist groß genug, um zu erklären, warum Live Commerce den Influencer
 
 ## Drei Akteure, ein System
 
-**Die Marktplätze.** Taobao, JD.com, Douyin E-Commerce, Kuaishou. Sie liefern die Infrastruktur: Transaktionsabwicklung, Logistik und Creator-Plattformen, die Influencer rekrutieren, klassifizieren und labeln.
+**Die Marktplätze.** Taobao, JD.com, Douyin E-Commerce, Kuaishou. Sie liefern die Infrastruktur: Transaktionsabwicklung, Logistik und Creator-Plattformen, die Influencer rekrutieren, klassifizieren und etikettieren.
 
 **Die Influencer.** Das gesamte Spektrum, vom Mega-KOL mit zweistelligen Millionen-Followerzahlen bis zum Mikro-Creator mit kaum 10.000. Sie stehen vor der Kamera.
 
@@ -71,7 +71,7 @@ Provisionssätze nach Kategorie:
 | Elektronik und Technologie | 3–8 % |
 | Luxus | 5–15 % (zuzüglich Festpauschale) |
 
-Taobao Union und Douyin Select Alliance automatisieren Tracking und Auszahlungen. Servicegebühr: rund 10 Prozent.
+Taobao Union und Douyin Select Alliance automatisieren die Nachverfolgung und Auszahlungen. Servicegebühr: rund 10 Prozent.
 
 ## KI im Hintergrund
 
@@ -81,7 +81,7 @@ Ein Fall, von Chinabaogao berichtet: Eine Beauty-Hostin nutzte eine KI-generiert
 
 Wo wirklich Zeit verfliegt, ist die Skript-Vorbereitung. Ein Stream über 80 Produkte braucht rund 24 Stunden Redaktionszeit. KI-Werkzeuge erstellen heute Argumentationsketten, Compliance-Prüfungen und kreative Varianten in einem Bruchteil. In der Praxis greifen die meisten aktiven Live-Studios in China darauf zurück, zumindest für einen Teil der Vorbereitung.
 
-Virtuelle Hosts kommen ebenfalls voran. Der virtuelle Host von JD.com hat einen 24-Stunden-Stream mit Gesundheitsprodukten durchgezogen und 22,6 Prozent Konversion erreicht. Diese digitalen Hosts glänzen vor allem in Nachtschichten und bei standardisierten Vorführungen. Die Prime Time bleibt Menschen vorbehalten.
+Virtuelle Hosts kommen ebenfalls voran. Der virtuelle Host von JD.com hat einen 24-Stunden-Stream mit Gesundheitsprodukten durchgezogen und 22,6 Prozent Konversion erreicht. Diese digitalen Hosts glänzen vor allem in Nachtschichten und bei standardisierten Vorführungen. Die Hauptsendezeit bleibt Menschen vorbehalten.
 
 > Allein auf Kuaishou erreichen KI-generierte Kreativinhalte inzwischen über 30 Millionen Aufrufe pro Tag.
 
@@ -89,7 +89,7 @@ Virtuelle Hosts kommen ebenfalls voran. Der virtuelle Host von JD.com hat einen 
 
 Die Aufgabenverteilung ist klar: Die KI übernimmt Volumen und Takt, der Mensch hält das Vertrauen.
 
-![Ein Provisionstracking-Dashboard zeigt Verkaufsvolumen, CPS-Raten und Influencer-Leistung](/images/blog/live-commerce-dashboard.webp)
+![Ein Dashboard zur Provisionsnachverfolgung zeigt Verkaufsvolumen, CPS-Raten und Influencer-Leistung](/images/blog/live-commerce-dashboard.webp)
 
 ## Die klassischen Fehler
 
@@ -109,6 +109,6 @@ Ein Nebenprojekt liefert Nebenergebnisse. Eine Regel, die kaum Ausnahmen kennt.
 
 ## Was bleibt
 
-Live Commerce ist Chinas stärkster Konversionskanal. Und der anspruchsvollste. Influencer, MCN, Marktplatz, Provision, Content, Mediabudget zur Saalfüllung: Alles muss ineinandergreifen.
+Live Commerce ist Chinas stärkster Konversionskanal. Und der anspruchsvollste. Influencer, MCN, Marktplatz, Provision, Inhalte, Mediabudget zur Saalfüllung: Alles muss ineinandergreifen.
 
 Für Marken, die in China Umsatz machen wollen, stellt sich nicht mehr die Frage des Ob. Hier wird das Geld verdient.

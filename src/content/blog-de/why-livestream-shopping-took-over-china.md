@@ -17,7 +17,7 @@ featuredImage: "/images/blog/livestream-douyin-couch.webp"
 
 Live Commerce in China hat das Nischengebiet längst hinter sich gelassen.
 
-iResearch schätzt den Markt 2024 auf 5.800 Milliarden Yuan. Die Durchdringung stieg von 4,9 Prozent im Jahr 2019 auf 37,8 Prozent 2024, also auf knapp 600 Millionen regelmäßige Käufer. Allein 2023 fanden auf chinesischen Plattformen über 110 Millionen Live-Verkaufssessions statt, mit mehr als 70 Millionen vorgestellten Produkten und 2,7 Millionen aktiven Hosts.
+iResearch schätzt den Markt 2024 auf 5.800 Milliarden Yuan. Die Durchdringung stieg von 4,9 Prozent im Jahr 2019 auf 37,8 Prozent 2024, also auf knapp 600 Millionen regelmäßige Käufer. Allein 2023 fanden auf chinesischen Plattformen über 110 Millionen Live-Verkaufssitzungen statt, mit mehr als 70 Millionen vorgestellten Produkten und 2,7 Millionen aktiven Hosts.
 
 > Quelle: CIECC, Bericht 2024 zur Entwicklung des Live Commerce
 
@@ -47,7 +47,7 @@ Die Zuschauer stellen ihre Fragen im Chat, der Host antwortet sofort. Fällt es 
 
 ### 3. Die Preise sind tatsächlich niedriger
 
-Es ist nicht bloß ein Eindruck. Marken gewähren Live-exklusive Rabatte, Bundles und befristete Gutscheine, die auf dem regulären Datenblatt nicht zu finden sind. Beim 618-Festival 2024 erreichten die Live-Verkäufe 206,8 Milliarden Yuan, ein Plus von 12,1 Prozent gegenüber dem Vorjahr. Ein erheblicher Teil dieses Wachstums geht auf Käufer zurück, die auf die Live-Angebote gewartet haben, bevor sie zugriffen.
+Es ist nicht bloß ein Eindruck. Marken gewähren Live-exklusive Rabatte, Pakete und befristete Gutscheine, die auf dem regulären Datenblatt nicht zu finden sind. Beim 618-Festival 2024 erreichten die Live-Verkäufe 206,8 Milliarden Yuan, ein Plus von 12,1 Prozent gegenüber dem Vorjahr. Ein erheblicher Teil dieses Wachstums geht auf Käufer zurück, die auf die Live-Angebote gewartet haben, bevor sie zugriffen.
 
 > Quelle: iiMedia Research
 
@@ -59,11 +59,11 @@ Laut der Erhebung der China Consumers Association geben fast 70 Prozent der Live
 
 ### 5. Sozialer Beleg, in Echtzeit
 
-Wenn hunderte Menschen unter Ihren Augen dasselbe Produkt kaufen und sich der Chat mit „gerade bestellt“ und „letztes Mal bekommen, top“ füllt, verändert sich Ihr Verhältnis zum Kaufbutton. Eine Studie der Tsinghua-Universität hat herausgearbeitet, dass diese „Einkaufsatmosphäre“ im Live-Studio, ein Gemisch aus sichtbaren Transaktionen und Peer-Kommentaren, als eigenständiger Impulskaufmotor wirkt. Flash-Verkäufe, Countdowns, in Echtzeit angezeigte Volumina: Klassischer E-Commerce kann diese Dynamik nicht herstellen.
+Wenn hunderte Menschen unter Ihren Augen dasselbe Produkt kaufen und sich der Chat mit „gerade bestellt“ und „letztes Mal bekommen, top“ füllt, verändert sich Ihr Verhältnis zum Kaufknopf. Eine Studie der Tsinghua-Universität hat herausgearbeitet, dass diese „Einkaufsatmosphäre“ im Live-Studio, ein Gemisch aus sichtbaren Transaktionen und Kommentaren anderer Käufer, als eigenständiger Impulskaufmotor wirkt. Blitzverkäufe, Countdowns, in Echtzeit angezeigte Volumina: Klassischer E-Commerce kann diese Dynamik nicht herstellen.
 
 > Quelle: Tsinghua SEM, Studie zur Entstehung von Impulskäufen im Livestream
 
-![Eine junge Frau entdeckt während eines RedNote-Livestreams Beauty-Produkte, von ihrem Bett aus](/images/blog/livestream-rednote-bed.webp)
+![Eine junge Frau entdeckt während eines RedNote-Livestreams Kosmetikprodukte, von ihrem Bett aus](/images/blog/livestream-rednote-bed.webp)
 
 ## Wer zuschaut
 
@@ -74,7 +74,7 @@ Wenn hunderte Menschen unter Ihren Augen dasselbe Produkt kaufen und sich der Ch
 | Wohnort | 47,6 % in Tier-1-Städten; starkes Wachstum in Tier-3- und Tier-4-Städten |
 | Frequenz | 55,2 % kaufen mindestens einmal pro Monat; 90,8 % im gleitenden Quartal |
 | Sehgewohnheiten | 69,57 % sind langjährige regelmäßige Zuschauer; 4 bis 5 Sitzungen pro Tag im Schnitt |
-| Kaufabsicht | 52,5 % surfen mit einer groben Idee; 32 % haben einen konkreten Kauf im Kopf |
+| Kaufabsicht | 52,5 % stöbern mit einer groben Idee; 32 % haben einen konkreten Kauf im Kopf |
 
 > Quelle: iiMedia Research; China Consumers Association
 
@@ -84,12 +84,12 @@ Ein Punkt verdient Aufmerksamkeit: Das Publikum altert. Konsumenten über 50 ste
 
 ## Was das für Marken bedeutet
 
-Ob chinesische Marke, etablierte internationale Marke oder Neueinsteiger im Test: Live Commerce ist keine Option mehr unter mehreren. Es ist der erste Konversionskanal des chinesischen E-Commerce.
+Ob chinesische Marke, etablierte internationale Marke oder Neueinsteiger im Test: Live Commerce ist keine Option mehr unter mehreren. Es ist der erste Abschlusskanal des chinesischen E-Commerce.
 
 Die Haltung des Käufers liegt in fünf Erwartungen. Das Produkt vorgeführt sehen. Eine Frage stellen und in der Sekunde eine Antwort erhalten. Weniger zahlen als beim Durchblättern des Datenblatts. Demjenigen vertrauen, der verkauft. Und andere zugleich kaufen sehen.
 
-**Für chinesische Marken.** Das Format ist vertraut. Trotzdem bleiben die meisten Streams generisch und lieblos. Wer in Hostqualität, Redaktionsstrategie und Private-Traffic-Anschluss investiert, zieht den Abstand auf.
+**Für chinesische Marken.** Das Format ist vertraut. Trotzdem bleiben die meisten Streams austauschbar und lieblos. Wer in Hostqualität, Redaktionsstrategie und Private-Traffic-Anschluss investiert, zieht den Abstand auf.
 
-**Für internationale Marken.** Live bietet die Möglichkeit, Produkte zu testen, konkretes Feedback einzuholen und Vertrauen schneller aufzubauen als auf irgendeinem anderen heute verfügbaren China-Kanal.
+**Für internationale Marken.** Live bietet die Möglichkeit, Produkte zu testen, konkrete Rückmeldungen einzuholen und Vertrauen schneller aufzubauen als auf irgendeinem anderen heute verfügbaren China-Kanal.
 
 > Ein gut geführter Stream beantwortet alle fünf Erwartungen auf einmal. Keine Produktseite kommt auch nur in die Nähe.

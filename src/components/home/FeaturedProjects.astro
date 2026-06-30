@@ -14,22 +14,22 @@ const lp = (path: string) => localizedPath(path, lang);
 
 const projectText: Record<string, { title: string; industry: string; platform?: string }> = {
   viessmann: {
-    title: lang === 'de' ? 'Viessmann: Social-Inhalte, die direkt zur Bestellung führen' : lang === 'zh' ? 'Viessmann：社媒流量，直接变订单' : lang === 'fr' ? 'Viessmann : le social, moteur direct des ventes en ligne' : lang === 'es' ? 'Viessmann: del contenido social al pedido, sin rodeos' : 'Viessmann: social-to-commerce engine in China',
+    title: lang === 'de' ? 'Viessmann: Social-Inhalte, die direkt zur Bestellung führen' : lang === 'zh' ? 'Viessmann：社媒流量，直接变订单' : lang === 'fr' ? 'Viessmann : quand le social nourrit directement les ventes en ligne' : lang === 'es' ? 'Viessmann: del contenido social al pedido, sin rodeos' : 'Viessmann: social-to-commerce engine in China',
     industry: lang === 'de' ? 'Klimatechnik' : lang === 'zh' ? '暖通系统' : lang === 'fr' ? 'Climatisation' : lang === 'es' ? 'Climatización' : 'Climate Systems',
     platform: lang === 'zh' ? '抖音 + 小红书 + 企业微信' : undefined,
   },
   jlr: {
-    title: lang === 'de' ? 'Jaguar Land Rover: jüngere Kunden im sozialen Netz erreichen' : lang === 'zh' ? '捷豹路虎：用社媒抓住更年轻的买家' : lang === 'fr' ? 'Jaguar Land Rover : capter une clientèle plus jeune sur les réseaux' : lang === 'es' ? 'Jaguar Land Rover: conectar con un público más joven' : 'Jaguar Land Rover: reaching younger consumers',
+    title: lang === 'de' ? 'Jaguar Land Rover: jüngere Kunden im sozialen Netz erreichen' : lang === 'zh' ? '捷豹路虎：用社媒抓住更年轻的买家' : lang === 'fr' ? 'Jaguar Land Rover : aller chercher une clientèle plus jeune sur les réseaux' : lang === 'es' ? 'Jaguar Land Rover: conectar con un público más joven' : 'Jaguar Land Rover: reaching younger consumers',
     industry: lang === 'de' ? 'Automobil' : lang === 'zh' ? '汽车' : lang === 'fr' ? 'Automobile' : lang === 'es' ? 'Automoción' : 'Automotive',
     platform: lang === 'zh' ? '抖音 + 小红书 + 微信' : undefined,
   },
   jac: {
-    title: lang === 'de' ? 'JAC Motors: eine Community, von KI mit aufgebaut' : lang === 'zh' ? 'JAC 江淮：用 AI 把车主社群真正盘活' : lang === 'fr' ? 'JAC Motors : structurer une communauté propulsée par l\'IA' : lang === 'es' ? 'JAC Motors: una comunidad construida con IA' : 'JAC Motors: AI-powered community building',
+    title: lang === 'de' ? 'JAC Motors: eine Community, von KI mit aufgebaut' : lang === 'zh' ? 'JAC 江淮：用 AI 把车主社群真正盘活' : lang === 'fr' ? 'JAC Motors : une communauté de marque bâtie avec l’IA' : lang === 'es' ? 'JAC Motors: una comunidad construida con IA' : 'JAC Motors: AI-powered community building',
     industry: lang === 'de' ? 'Automobil und E-Mobilität' : lang === 'zh' ? '汽车 / 新能源' : lang === 'fr' ? 'Automobile / VE' : lang === 'es' ? 'Automoción / VE' : 'Automotive / EV',
     platform: lang === 'zh' ? '微信 + 小红书 + 微博' : undefined,
   },
   iguzzini: {
-    title: lang === 'de' ? 'iGuzzini: hochwertige Beleuchtung für ein breiteres Publikum' : lang === 'zh' ? 'iGuzzini：让高端照明，走进大众视野' : lang === 'fr' ? 'iGuzzini : ouvrir l\'éclairage haut de gamme à un public élargi' : lang === 'es' ? 'iGuzzini: la iluminación de alta gama llega al gran público' : 'iGuzzini: luxury lighting goes consumer',
+    title: lang === 'de' ? 'iGuzzini: hochwertige Beleuchtung für ein breiteres Publikum' : lang === 'zh' ? 'iGuzzini：让高端照明，走进大众视野' : lang === 'fr' ? 'iGuzzini : faire entrer l’éclairage haut de gamme dans le grand public' : lang === 'es' ? 'iGuzzini: la iluminación de alta gama llega al gran público' : 'iGuzzini: luxury lighting goes consumer',
     industry: lang === 'de' ? 'Premium-Beleuchtung' : lang === 'zh' ? '高端照明' : lang === 'fr' ? 'Éclairage haut de gamme' : lang === 'es' ? 'Iluminación de alta gama' : 'Luxury Lighting',
     platform: lang === 'zh' ? '微信 + 小红书 + 微博' : undefined,
   },
@@ -84,7 +84,7 @@ const sectionText = lang === 'de' ? {
 } : lang === 'fr' ? {
   overline: 'Nos références',
   heading: 'Des campagnes qui installent durablement les marques sur les réseaux chinois.',
-  description: 'Du lancement haut de gamme à l\'acquisition de prospects B2B. Des campagnes concrètes, sur de vraies plateformes, aux résultats vérifiables.',
+  description: 'Du lancement haut de gamme à l’acquisition de prospects B2B. Des campagnes concrètes, de vraies plateformes, des résultats vérifiables.',
   cta: 'Voir tous les projets',
 } : {
   overline: 'Featured projects',

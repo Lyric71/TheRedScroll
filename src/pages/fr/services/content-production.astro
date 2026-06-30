@@ -9,16 +9,16 @@ import GettingStarted from '../../../components/sections/GettingStarted.astro';
 
 
 const faqs = [
-  { q: 'L\'IA peut-elle vraiment produire du contenu à la hauteur d\'une marque haut de gamme ?', a: 'Oui, à condition de bien former le modèle. Un rendu générique restera générique, quoi qu\'il arrive. Nous entraînons des modèles sur mesure à partir de votre identité visuelle, de vos couleurs, de vos packagings et de votre style photographique. Le résultat ressemble à votre marque. Pas à une autre.' },
-  { q: 'Quelle part du contenu est générée par IA, quelle part est tournée en réel ?', a: 'Tout dépend de la marque et de la plateforme. Chez la plupart de nos clients, l\'AIGC couvre 60 à 70 % de la production visuelle : photos produit, visuels pour les réseaux, vidéos courtes. Le tournage en conditions réelles représente les 30 à 40 % restants : vidéos phares, contenu de vie quotidienne, captations avec des créateurs.' },
-  { q: 'Rédigez-vous en chinois ou traduisez-vous depuis l\'anglais ?', a: 'Nous rédigeons directement en chinois. Ce n\'est pas de la traduction, et la différence saute aux yeux. Nos rédacteurs sont des mandarinophones natifs basés à Shanghai. Si vous nous confiez vos lignes directrices de marque en anglais, elles servent de socle. Mais l\'écriture finale est pensée pour les plateformes chinoises, à partir d\'une page blanche.' },
-  { q: 'Comment suivez-vous les tendances ?', a: 'Nos responsables de communauté vivent sur les plateformes chaque jour. Ils repèrent les mots-clés en vogue, les formats qui circulent, les temps forts saisonniers et ce que font les concurrents. Quand une fenêtre s\'ouvre, nous savons produire et publier un contenu en 24 à 48 heures.' },
-  { q: 'Et si nous avons déjà des visuels créatifs conçus pour le marché mondial ?', a: 'Nous savons les adapter, mais une adaptation donne généralement de moins bons résultats qu\'un contenu pensé pour le marché local. Nous réutilisons vos visuels existants là où ils tiennent la route, puis nous complétons avec de l\'AIGC et du tournage réel pour les publications du quotidien.' },
-  { q: 'Combien de publications par mois prévoir ?', a: 'Pour une présence minimale : 8 à 12 publications par plateforme et par mois. Pour une présence réellement concurrentielle : 20 à 30. Et ce n\'est que le contenu organique. Les créations publicitaires s\'ajoutent par-dessus. Nous bâtissons un calendrier éditorial calibré à votre budget et à vos objectifs.' },
-  { q: 'Pouvez-vous produire du contenu pour plusieurs plateformes à la fois ?', a: 'C\'est notre mode de travail habituel. La plupart de nos clients sont présents sur deux à quatre plateformes. Chacune a son calendrier, son ton et ses formats propres. Recycler la même publication d\'une plateforme à l\'autre ne fonctionne tout simplement pas.' },
-  { q: 'Comment sont calculés les tarifs ?', a: 'Périmètre défini, prix fixe. Vous savez dès le départ combien de publications, de vidéos, d\'articles et de tournages sont inclus chaque mois. Le budget publicitaire et les tournages supplémentaires font l\'objet de devis séparés, en toute transparence.' },
-  { q: 'À qui appartient le contenu produit ?', a: 'À vous. Tout ce que nous produisons, généré par IA ou tourné en réel, appartient à votre marque. Droits d\'utilisation complets, aucune restriction de licence, aucune date d\'expiration. Vous en faites ce que bon vous semble.' },
-  { q: 'Quels sont vos délais de livraison ?', a: 'Pour les visuels AIGC : 2 à 3 jours ouvrés du cahier des charges à la livraison. Les tournages réels demandent 1 à 2 semaines, préparation, tournage et post-production compris. Pour du contenu qui rebondit sur une tendance, nous savons passer du concept à la mise en ligne en 24 à 48 heures quand il le faut.' },
+  { q: 'L’IA peut-elle vraiment produire du contenu à la hauteur d’une marque haut de gamme ?', a: 'Oui, à condition de bien former le modèle. Un rendu générique restera générique, quoi qu’il arrive. Nous entraînons des modèles sur mesure à partir de votre identité visuelle, de vos couleurs, de vos packagings et de votre style photographique. Le résultat ressemble à votre marque. Pas à une autre.' },
+  { q: 'Quelle part du contenu est générée par IA, quelle part est tournée en réel ?', a: 'Tout dépend de la marque et de la plateforme. Chez la plupart de nos clients, l’AIGC couvre 60 à 70 % de la production visuelle : photos produit, visuels pour les réseaux, vidéos courtes. Le tournage en conditions réelles représente les 30 à 40 % restants : vidéos phares, contenu de vie quotidienne, captations avec des créateurs.' },
+  { q: 'Rédigez-vous en chinois ou traduisez-vous depuis l’anglais ?', a: 'Nous rédigeons directement en chinois. Ce n’est pas de la traduction, et la différence saute aux yeux. Nos rédacteurs sont des mandarinophones natifs basés à Shanghai. Si vous nous confiez vos lignes directrices de marque en anglais, elles servent de socle. Mais l’écriture finale est pensée pour les plateformes chinoises, à partir d’une page blanche.' },
+  { q: 'Comment suivez-vous les tendances ?', a: 'Nos responsables de communauté vivent sur les plateformes chaque jour. Ils repèrent les mots-clés en vogue, les formats qui circulent, les temps forts saisonniers et ce que font les concurrents. Quand une fenêtre s’ouvre, nous savons produire et publier un contenu en 24 à 48 heures.' },
+  { q: 'Et si nous avons déjà des visuels créatifs conçus pour le marché mondial ?', a: 'Nous savons les adapter, mais une adaptation donne généralement de moins bons résultats qu’un contenu pensé pour le marché local. Nous réutilisons vos visuels existants là où ils tiennent la route, puis nous complétons avec de l’AIGC et du tournage réel pour les publications du quotidien.' },
+  { q: 'Combien de publications par mois prévoir ?', a: 'Pour une présence minimale : 8 à 12 publications par plateforme et par mois. Pour une présence réellement concurrentielle : 20 à 30. Et ce n’est que le contenu organique. Les créations publicitaires s’ajoutent par-dessus. Nous bâtissons un calendrier éditorial calibré à votre budget et à vos objectifs.' },
+  { q: 'Pouvez-vous produire du contenu pour plusieurs plateformes à la fois ?', a: 'C’est notre mode de travail habituel. La plupart de nos clients sont présents sur deux à quatre plateformes. Chacune a son calendrier, son ton et ses formats propres. Recycler la même publication d’une plateforme à l’autre ne fonctionne tout simplement pas.' },
+  { q: 'Comment sont calculés les tarifs ?', a: 'Périmètre défini, prix fixe. Vous savez dès le départ combien de publications, de vidéos, d’articles et de tournages sont inclus chaque mois. Le budget publicitaire et les tournages supplémentaires font l’objet de devis séparés, en toute transparence.' },
+  { q: 'À qui appartient le contenu produit ?', a: 'À vous. Tout ce que nous produisons, généré par IA ou tourné en réel, appartient à votre marque. Droits d’utilisation complets, aucune restriction de licence, aucune date d’expiration. Vous en faites ce que bon vous semble.' },
+  { q: 'Quels sont vos délais de livraison ?', a: 'Pour les visuels AIGC : 2 à 3 jours ouvrés du cahier des charges à la livraison. Les tournages réels demandent 1 à 2 semaines, préparation, tournage et post-production compris. Pour du contenu qui rebondit sur une tendance, nous savons passer du concept à la mise en ligne en 24 à 48 heures quand il le faut.' },
 ];
 
 const gettingStartedSteps = [
@@ -54,10 +54,10 @@ const gettingStartedSteps = [
         Production de contenu
       </p>
       <h1 class="text-[#FFFFFF] text-[48px] max-[1024px]:text-[40px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
-        Le récit l'emporte désormais sur le coût de production.
+        Le récit l’emporte désormais sur le coût de production.
       </h1>
       <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
-        Stratégie, direction artistique, AIGC, tournages sur le terrain, rédaction et adaptation culturelle. Depuis Shanghai et Hong Kong, sans relais intermédiaire.
+        Stratégie, direction artistique, AIGC, tournages sur le terrain, rédaction et adaptation culturelle. Tout depuis Shanghai et Hong Kong, sans intermédiaire.
       </p>
       <div class="flex items-center justify-center gap-[12px] flex-wrap">
         <Button variant="primary" href="/fr/contact/">Prendre rendez-vous</Button>
@@ -75,7 +75,7 @@ const gettingStartedSteps = [
           <div class="relative z-[1]">
             <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Le tournant</p>
             <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[16px]">Pourquoi la production de contenu a changé de visage</h2>
-            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[400px]">L'IA sait désormais fabriquer visuels et textes en quelques minutes. Quand n'importe qui peut produire à moindre coût, c'est la réflexion en amont qui creuse l'écart.</p>
+            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[400px]">L’IA sait désormais fabriquer visuels et textes en quelques minutes. Quand n’importe qui peut produire à moindre coût, c’est la réflexion en amont qui creuse l’écart.</p>
           </div>
           <div class="relative z-[1] mt-[24px]">
             <Button variant="secondary-dark" href="#what-we-do">Nos services</Button>
@@ -84,22 +84,22 @@ const gettingStartedSteps = [
         <div class="bg-[#F0F1F4] rounded-[10px] p-[24px] max-[640px]:p-[20px] relative overflow-hidden">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
           <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Chaque plateforme parle sa propre langue</h3>
-          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">RedNote affectionne le contenu décontracté, presque confidentiel. Weibo réclame des titres percutants. WeChat exige de la profondeur. Douyin repose sur l'accroche et le rythme. Plaquer un ton unique sur les quatre ne mène nulle part.</p>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">RedNote affectionne le contenu décontracté, presque confidentiel. Weibo réclame des titres percutants. WeChat exige de la profondeur. Douyin repose sur l’accroche et le rythme. Plaquer un ton unique sur les quatre ne mène nulle part.</p>
         </div>
         <div class="bg-[#1A1A1A] rounded-[12px] p-[24px] max-[640px]:p-[20px] relative overflow-hidden">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
-          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Les tendances s'évaporent vite</h3>
-          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.6)]">Un mot-clé porteur sur Douyin un mardi peut s'effacer dès la semaine suivante. L'équipe doit vivre au rythme des plateformes pour saisir les occasions.</p>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Les tendances s’évaporent vite</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.6)]">Un mot-clé porteur sur Douyin un mardi peut s’effacer dès la semaine suivante. L’équipe doit vivre au rythme des plateformes pour saisir les occasions.</p>
         </div>
         <div class="bg-[#CC3333] rounded-[12px] p-[24px] max-[640px]:p-[20px] relative overflow-hidden">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
           <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Les volumes deviennent colossaux</h3>
-          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.8)]">Trois à quatre plateformes représentent au minimum 30 à 50 contenus par mois, sans compter les créations publicitaires. Aucune équipe ne tient cette cadence avec une production exclusivement classique.</p>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.8)]">Trois ou quatre plateformes, c’est déjà 30 à 50 contenus par mois, créations publicitaires non comprises. Aucune équipe ne tient ce rythme en production 100 % classique.</p>
         </div>
         <div class="bg-[#E8E0D8] rounded-[10px] p-[24px] max-[640px]:p-[20px] relative overflow-hidden">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
-          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">L'IA, seule à suivre la cadence</h3>
-          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">L'AIGC encaisse le volume. Votre équipe garde la main sur la direction artistique. La réflexion reste humaine. Seule la vitesse d'exécution a cessé de l'être.</p>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">L’IA, seule à suivre la cadence</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">L’AIGC encaisse le volume. Votre équipe garde la main sur la direction artistique. La réflexion reste humaine. Seule la vitesse d’exécution a cessé de l’être.</p>
         </div>
       </div>
     </Container>
@@ -112,7 +112,7 @@ const gettingStartedSteps = [
       <SectionHeading overline="Nos Services">Organisation du contenu et stratégie</SectionHeading>
 
       <div class="rounded-[12px] overflow-hidden mt-[24px]">
-        <img src="/images/what-we-do/content-production.webp" alt="L'équipe TheRedScroll sur un tournage de contenu" class="w-full aspect-[5/2] max-[640px]:aspect-[16/10] object-cover" loading="lazy" decoding="async" />
+        <img src="/images/what-we-do/content-production.webp" alt="L’équipe TheRedScroll sur un tournage de contenu" class="w-full aspect-[5/2] max-[640px]:aspect-[16/10] object-cover" loading="lazy" decoding="async" />
       </div>
 
       <div class="grid grid-cols-3 max-[768px]:grid-cols-1 gap-[24px] -mt-[72px] max-[768px]:-mt-[32px] px-[32px] max-[768px]:px-[0px] relative z-[1]">
@@ -121,21 +121,21 @@ const gettingStartedSteps = [
             <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
           </div>
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Stratégie éditoriale</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Axes de contenu, cadre rédactionnel, ton éditorial, formats calibrés pour chaque plateforme. 100 % piloté par des humains. L'IA ne sait pas trancher entre surfer sur une tendance ou se taire.</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Axes de contenu, cadre rédactionnel, ton éditorial, formats calibrés pour chaque plateforme. 100 % piloté par des humains. L’IA ne sait pas trancher entre surfer sur une tendance ou se taire.</p>
         </div>
         <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
           <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
             <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
           </div>
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Visuels et vidéos AIGC</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Photos produit, images de mise en situation et vidéos courtes générées par IA. Les modèles sont entraînés sur votre identité de marque, pour un rendu qui vous ressemble vraiment. Environ 80 % plus rapide qu'une production classique.</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Photos produit, images de mise en situation et vidéos courtes générées par IA. Les modèles sont entraînés sur votre identité de marque, pour un rendu qui vous ressemble vraiment. Environ 80 % plus rapide qu’une production classique.</p>
         </div>
         <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
           <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
             <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
           </div>
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Tournages sur le terrain</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Filmé sur place, en Chine. Coulisses, unboxing, films de marque, captations avec des créateurs d'influence. L'IA ne remplacera jamais une vraie personne qui se sert de votre produit.</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Filmé sur place, en Chine. Coulisses, unboxing, films de marque, captations avec des créateurs d’influence. L’IA ne remplacera jamais une vraie personne qui se sert de votre produit.</p>
         </div>
       </div>
     </Container>
@@ -149,23 +149,23 @@ const gettingStartedSteps = [
         <h2 class="text-[#FFFFFF] text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] mb-[16px]">Ici, on ne traduit pas. On écrit.</h2>
         <div class="max-w-[680px] flex flex-col gap-[24px] mb-[32px]">
           <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
-            Un article WeChat demande de la structure et de la profondeur. Une légende sur RedNote se lit comme un conseil glissé par une amie. Un texte incrusté sur Douyin doit attraper l'œil en deux secondes. L'écriture change d'une plateforme à l'autre, même quand le produit, lui, ne change pas.
+            Un article WeChat demande de la structure et de la profondeur. Une légende sur RedNote se lit comme un conseil glissé par une amie. Un texte incrusté sur Douyin doit attraper l’œil en deux secondes. L’écriture change d’une plateforme à l’autre, même quand le produit, lui, ne change pas.
           </p>
           <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
-            L'IA rédige une première ébauche. Des rédacteurs chinois natifs reprennent ensuite le texte et le retravaillent culturellement. Pour les marques qui arrivent sur le marché, nous prenons aussi en charge la création du nom chinois, l'adaptation des accroches et la réécriture des messages clés.
+            L’IA pose une première ébauche. Des rédacteurs chinois natifs reprennent le texte et le retravaillent dans sa dimension culturelle. Pour les marques qui débarquent, nous créons aussi le nom chinois, adaptons les accroches et réécrivons les messages clés.
           </p>
         </div>
         <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[24px]">
           <div>
             <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Tarifs indicatifs AIGC</h3>
             <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
-              10 photos produit AIGC : 2 000 à 5 000 €. 5 vidéos courtes pour les réseaux (15 à 30 sec) : 5 000 à 12 000 €. Pour comparaison, une séance photo produit à Shanghai démarre à 8 000 € et grimpe jusqu'à 25 000 € la journée. Une vidéo de 30 secondes part de 15 000 € et peut atteindre 50 000 €.
+              10 photos produit AIGC : 2 000 à 5 000 €. 5 vidéos courtes pour les réseaux (15 à 30 sec) : 5 000 à 12 000 €. Pour comparaison, une séance photo produit à Shanghai démarre à 8 000 € et grimpe jusqu’à 25 000 € la journée. Une vidéo de 30 secondes part de 15 000 € et peut atteindre 50 000 €.
             </p>
           </div>
           <div>
             <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Tarifs indicatifs tournage réel</h3>
             <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
-              Demi-journée photo à Shanghai : 8 000 à 15 000 €. Journée complète de tournage vidéo avec équipe et montage : 20 000 à 60 000 €. Le prix varie selon le périmètre, le lieu, les intervenants et l'ampleur de la post-production.
+              Demi-journée photo à Shanghai : 8 000 à 15 000 €. Journée complète de tournage vidéo avec équipe et montage : 20 000 à 60 000 €. Le prix varie selon le périmètre, le lieu, les intervenants et l’ampleur de la post-production.
             </p>
           </div>
         </div>
@@ -182,15 +182,15 @@ const gettingStartedSteps = [
       <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Vidéo courte (15 à 60 sec)</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Le format roi. Démonstrations produit, tutoriels, mises en situation, contenus qui surfent sur les tendances. Format vertical 9:16. L'accroche doit percuter dès les deux premières secondes. Musique et sous-titres, non négociables.</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Le format roi. Démonstrations produit, tutoriels, mises en situation, contenus qui surfent sur les tendances. Format vertical 9:16. L’accroche doit percuter dès les deux premières secondes. Musique et sous-titres, non négociables.</p>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Diffusion en direct</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Démonstrations produit, sessions de questions-réponses, ventes éclair. Des lives de 1 à 4 heures. Des ventes directes via la boutique Douyin, à condition d'avoir un animateur aguerri, un fil de discussion suivi en temps réel et une bonne coordination sur la présentation des produits.</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Démonstrations produit, sessions de questions-réponses, ventes éclair. Des lives de 1 à 4 heures. Des ventes directes via la boutique Douyin, à condition d’avoir un animateur aguerri, un fil de discussion suivi en temps réel et une bonne coordination sur la présentation des produits.</p>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Carrousel Douyin</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Jusqu'à 20 images à faire défiler. Idéal pour du contenu pédagogique, des guides pas à pas, des comparatifs produit. Ce format gagne du terrain, en particulier chez les marques de beauté et de soin.</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Jusqu’à 20 images à faire défiler. Idéal pour du contenu pédagogique, des guides pas à pas, des comparatifs produit. Ce format gagne du terrain, en particulier chez les marques de beauté et de soin.</p>
         </div>
       </div>
     </Container>
@@ -205,15 +205,15 @@ const gettingStartedSteps = [
       <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Notes photo</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">1 à 9 images et une légende. C'est le format natif de la plateforme. Photos du quotidien, compositions à plat, avant-après. Le ton doit rester personnel et sincère. Pensez carnet de bord, pas communiqué de presse.</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">1 à 9 images et une légende. C’est le format natif de la plateforme. Photos du quotidien, compositions à plat, avant-après. Le ton doit rester personnel et sincère. Pensez carnet de bord, pas communiqué de presse.</p>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Notes vidéo</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">De 1 à 5 minutes. Plus de place pour raconter qu'avec Douyin. Avis produit, vidéos de routine, tutoriels. Ça fonctionne surtout quand on a l'impression d'écouter quelqu'un partager une expérience sincère.</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">De 1 à 5 minutes. Plus de place pour raconter qu’avec Douyin. Avis produit, vidéos de routine, tutoriels. Ça fonctionne surtout quand on a l’impression d’écouter quelqu’un partager une expérience sincère.</p>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Notes pensées pour la recherche</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Du contenu taillé pour ressortir dans les résultats dès qu'un utilisateur de RedNote tape une requête. Du référencement appliqué aux réseaux sociaux, en somme. Cela passe par une étude des mots-clés du moteur de recherche interne de RedNote.</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Du contenu taillé pour ressortir dans les résultats dès qu’un utilisateur de RedNote tape une requête. Du référencement appliqué aux réseaux sociaux, en somme. Cela passe par une étude des mots-clés du moteur de recherche interne de RedNote.</p>
         </div>
       </div>
     </Container>
@@ -228,15 +228,15 @@ const gettingStartedSteps = [
       <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Articles de Compte Officiel</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Contenu long. De 800 à 2 500 mots, avec images, vidéo intégrée et liens vers des Mini Programs ou des boutiques. Taillé pour le récit de marque, la pédagogie produit et les prises de parole d'expertise.</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Contenu long. De 800 à 2 500 mots, avec images, vidéo intégrée et liens vers des Mini Programs ou des boutiques. Taillé pour le récit de marque, la pédagogie produit et les prises de parole d’expertise.</p>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Vidéos Channels</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Vidéos verticales courtes diffusées dans le fil vidéo de WeChat. De 1 à 3 minutes. Un format en plein essor. L'audience y est plus restreinte, mais plus proche : le partage se fait au sein même du cercle social WeChat.</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Vidéos verticales courtes diffusées dans le fil vidéo de WeChat. De 1 à 3 minutes. Un format en plein essor. L’audience y est plus restreinte, mais plus proche : le partage se fait au sein même du cercle social WeChat.</p>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Contenu Mini Program</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Catalogues produit, expériences interactives, pages dédiées à des événements, programmes de fidélité. Le contenu vit à l'intérieur du Mini Program et se diffuse via les articles, la publicité et les QR codes.</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Catalogues produit, expériences interactives, pages dédiées à des événements, programmes de fidélité. Le contenu vit à l’intérieur du Mini Program et se diffuse via les articles, la publicité et les QR codes.</p>
         </div>
       </div>
     </Container>
@@ -249,9 +249,9 @@ const gettingStartedSteps = [
         <div class="flex gap-[48px] max-[768px]:flex-col items-center">
           <div class="flex-1 min-w-0">
             <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[12px]">Étude de cas</p>
-            <h3 class="text-[24px] max-[640px]:text-[20px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[12px]">Camper : faire grandir une marque de design sur les réseaux chinois</h3>
-            <p class="text-[15px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[20px]">Un contenu centré sur le design a fait passer Camper de 43 000 à 187 000 abonnés sur les plateformes sociales chinoises. Les ventes en boutique ont progressé de 31 % en 18 mois.</p>
-            <span class="text-[14px] font-medium text-[var(--color-vermillion)] group-hover:underline">Voir l'étude de cas →</span>
+            <h3 class="text-[24px] max-[640px]:text-[20px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[12px]">Camper : faire grandir une marque de design sur les réseaux chinois</h3>
+            <p class="text-[15px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[20px]">Un contenu centré sur le design a fait passer Camper de 43 000 à 187 000 abonnés sur les plateformes sociales chinoises. Les ventes en boutique ont progressé de 31 % en 18 mois.</p>
+            <span class="text-[14px] font-medium text-[var(--color-vermillion)] group-hover:underline">Voir l’étude de cas →</span>
           </div>
           <img
             src="/images/clients/Camper/Camper-Case-Study-Hero.jpg"
@@ -271,7 +271,7 @@ const gettingStartedSteps = [
     backgroundImage="/images/getting-started/content-production.webp"
     crossLinks={[
       { label: 'Stratégie et campagnes', href: '/fr/services/strategy-campaigns' },
-      { label: 'Marketing d\'influence', href: '/fr/services/influencer-marketing' },
+      { label: 'Marketing d’influence', href: '/fr/services/influencer-marketing' },
       { label: 'Publicité en ligne', href: '/fr/services/advertising' },
     ]}
   />

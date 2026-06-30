@@ -9,13 +9,13 @@ import GettingStarted from '../../../components/sections/GettingStarted.astro';
 
 
 const faqs = [
-  { q: '¿Cuál es la tarifa?', a: 'Depende del alcance. Una sesión de consultoría puntual arranca en unos pocos miles de euros. Un proyecto a varias semanas con entregables incluidos cuesta más. Los talleres de formación se facturan por paquete, según duración y nivel de personalización. En todo caso, hay presupuesto antes de arrancar. Cero facturación abierta.' },
+  { q: '¿Cuál es la tarifa?', a: 'Depende del alcance. Una sesión de consultoría puntual arranca en unos pocos miles de euros. Un proyecto a varias semanas con entregables incluidos cuesta más. Los talleres de formación se facturan por paquete, según duración y nivel de personalización. En todo caso, hay presupuesto antes de arrancar. Sin facturación abierta.' },
   { q: '¿La formación puede ser a distancia?', a: 'En la mayoría de formatos, funciona muy bien. El presencial es preferible en talleres de AIGC, donde la práctica marca la diferencia, pero el remoto es perfectamente viable.' },
   { q: '¿Qué tamaño de grupo?', a: 'Lo ideal está entre 6 y 15 participantes. Hemos hecho sesiones de 3 y de casi 40. El formato se adapta al número: lo hablamos antes.' },
-  { q: '¿La formación es a medida?', a: 'Siempre. Cada sesión se construye en torno a su sector, sus plataformas, sus competidores y el nivel de su equipo. Antes hay un briefing.' },
-  { q: '¿La consultoría puede convertirse en acompañamiento recurrente?', a: 'Es frecuente. Algunas marcas pasan al pilotaje mensual de sus campañas después de una primera misión. Otras prefieren una revisión una o dos veces al año y mantienen el resto en casa. Los dos esquemas funcionan.' },
+  { q: '¿La formación es a medida?', a: 'Siempre. Cada sesión se diseña en torno a su sector, sus plataformas, sus competidores y el nivel de su equipo. Antes hay un briefing.' },
+  { q: '¿La consultoría puede convertirse en acompañamiento recurrente?', a: 'Es frecuente. Algunas marcas pasan al seguimiento mensual de sus campañas después de una primera misión. Otras prefieren una revisión una o dos veces al año y mantienen el resto en casa. Los dos esquemas funcionan.' },
   { q: '¿Hay formaciones por plataforma?', a: 'Sí. Formatos publicitarios y configuración de campañas en Douyin. Activación de KOC y posicionamiento en RedNote. Estrategia de Cuenta Oficial de WeChat y Mini Programs. En sesiones independientes o dentro de un programa más amplio.' },
-  { q: '¿Cómo funciona la escucha social?', a: 'Por suscripción mensual. El punto de partida suele cubrir su marca y tres competidores en dos plataformas. Luego se amplía según necesidad.' },
+  { q: '¿Cómo funciona la escucha social?', a: 'Por suscripción mensual. El punto de partida suele cubrir su marca y tres competidores en dos plataformas. Luego se amplía según haga falta.' },
   { q: '¿Tiene sentido preparar un plan de crisis sin haber vivido una?', a: 'Justo es el momento de hacerlo. La mayoría de marcas espera a que estalle el incidente y entonces busca qué hacer mientras internet ya se ha apoderado del tema. Tener un marco preparado significa desplegar un plan en lugar de improvisar a las 23:00.' },
 ];
 
@@ -27,12 +27,12 @@ const gettingStartedSteps = [
   },
   {
     title: 'Propuesta a medida.',
-    description: 'Formato, temas, duración, entregables. Calibrado para su equipo y sus objetivos.',
+    description: 'Formato, temas, duración y entregables. Calibrado para su equipo y sus objetivos.',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>',
   },
   {
     title: 'Sesiones en dos semanas.',
-    description: 'Briefing, preparación, impartición. El equipo sale con competencias directamente aplicables.',
+    description: 'Briefing, preparación e impartición. El equipo sale con competencias directamente aplicables.',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
   },
 ];
@@ -40,7 +40,7 @@ const gettingStartedSteps = [
 
 <PageLayout
   title="Consultoría y formación de redes sociales en China | TheRedScroll"
-  description="Consultoría estratégica, talleres AIGC, escucha social, vigilancia competitiva, auditorías KOL, planes de crisis, formación de campañas. Equipo en Shanghái."
+  description="Consultoría estratégica, talleres AIGC, escucha social, vigilancia competitiva, auditorías KOL, planes de crisis y formación de campañas. Equipo propio en Shanghái."
   lang="es"
 >
 
@@ -51,7 +51,7 @@ const gettingStartedSteps = [
         Formación y consultoría
       </p>
       <h1 class="text-[#FFFFFF] text-[48px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
-        Dominar el mercado chino, o encargarnos un asunto concreto que necesite desbloqueo.
+        Dominar el mercado chino, o confiarnos un asunto puntual que haya que desatascar.
       </h1>
       <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
         Consultoría para decisiones puntuales. Formación para que sus equipos suban de nivel. Todo lo lleva gente que pisa las redes sociales chinas a diario.
@@ -79,7 +79,7 @@ const gettingStartedSteps = [
         </div>
         <div class="relative overflow-hidden bg-[#F0F1F4] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Lagunas de plataforma</h3>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Lagunas en las plataformas</h3>
           <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">Cómo funcionan de verdad las plataformas. Qué formatos dan resultados reales, más allá de lo que suena bien en reunión. Cómo enchufar la IA a una cadena de producción.</p>
         </div>
         <div class="relative overflow-hidden bg-[#1A1A1A] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
@@ -90,7 +90,7 @@ const gettingStartedSteps = [
         <div class="relative overflow-hidden bg-[#CC3333] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
           <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Una opinión de profesionales</h3>
-          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.8)]">Nuestro equipo pilota campañas a diario. Nuestras recomendaciones salen de lo que está funcionando este mes, en las plataformas en las que trabajamos cada día.</p>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.8)]">Nuestro equipo dirige campañas a diario. Nuestras recomendaciones salen de lo que está funcionando este mes, en las plataformas en las que trabajamos cada día.</p>
         </div>
         <div class="relative overflow-hidden bg-[#E8E0D8] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
@@ -118,7 +118,7 @@ const gettingStartedSteps = [
           </div>
           <div class="col-content">
             <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Consultoría estratégica</h3>
-            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Elección de plataformas, planificación editorial, arquitectura de campaña, estrategia con KOL, social commerce, posicionamiento frente a la competencia. En sesión puntual o en un proyecto de varias semanas. Cada misión termina en un documento directamente aplicable.</p>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Elección de plataformas, planificación editorial, arquitectura de campaña, estrategia con KOL, social commerce y posicionamiento frente a la competencia. En sesión puntual o en un proyecto de varias semanas. Cada misión termina en un documento directamente aplicable.</p>
           </div>
         </div>
 
@@ -128,7 +128,7 @@ const gettingStartedSteps = [
           </div>
           <div class="col-content">
             <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Consultoría de contenido y AIGC</h3>
-            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Auditamos su cadena de producción y vemos dónde la IA acelera el trabajo sin recortar calidad. Marcos de prompts, entrenamiento de modelos a medida, elección de herramientas. La pregunta ya no es si pasar a IA, sino cómo.</p>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Auditamos su cadena de producción y vemos dónde la IA acelera el trabajo sin recortar calidad. Marcos de prompts, entrenamiento de modelos a medida y elección de herramientas. La pregunta ya no es si pasar a IA, sino cómo.</p>
           </div>
         </div>
 
@@ -138,7 +138,7 @@ const gettingStartedSteps = [
           </div>
           <div class="col-content">
             <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Auditorías de rendimiento</h3>
-            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Cuentas, contenidos, tasas de interacción, gasto publicitario, colaboraciones con KOL, posicionamiento competitivo. Un informe escrito: qué funciona, qué falla y qué corregir. Para usar en casa o entregar a su agencia.</p>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Cuentas, contenidos, tasas de interacción, gasto publicitario, colaboraciones con KOL y posicionamiento competitivo. Un informe escrito: qué funciona, qué falla y qué corregir. Para usar en casa o entregar a su agencia.</p>
           </div>
         </div>
 
@@ -148,7 +148,7 @@ const gettingStartedSteps = [
           </div>
           <div class="col-content">
             <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Escucha social</h3>
-            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Menciones de marca, tono de las conversaciones, temas que suben, actividad de la competencia en RedNote, Douyin, WeChat, Weibo y Zhihu. Herramientas automáticas más comprobaciones manuales por nuestro equipo de Shanghái.</p>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Menciones de marca, tono de las conversaciones, temas que suben y actividad de la competencia en RedNote, Douyin, WeChat, Weibo y Zhihu. Herramientas automáticas más comprobaciones manuales por nuestro equipo de Shanghái.</p>
           </div>
         </div>
 
@@ -158,7 +158,7 @@ const gettingStartedSteps = [
           </div>
           <div class="col-content">
             <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Vigilancia competitiva</h3>
-            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Informes mensuales o trimestrales sobre sus 5 a 10 competidores principales: líneas editoriales, cadencia de publicación, dinámica de interacción, colaboraciones KOL, actividad publicitaria, lanzamientos recientes.</p>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Informes mensuales o trimestrales sobre sus 5 a 10 competidores principales: líneas editoriales, cadencia de publicación, dinámica de interacción, colaboraciones KOL, actividad publicitaria y lanzamientos recientes.</p>
           </div>
         </div>
 
@@ -168,7 +168,7 @@ const gettingStartedSteps = [
           </div>
           <div class="col-content">
             <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Evaluación de riesgo KOL</h3>
-            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Verificación previa antes de cualquier colaboración con un KOL o una celebridad. Controversias pasadas, sensibilidades políticas, conflictos de marca, seguidores falsos, calidad real de la audiencia.</p>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Verificación previa antes de cualquier colaboración con un KOL o una celebridad. Controversias pasadas, sensibilidades políticas, conflictos de marca, seguidores falsos y calidad real de la audiencia.</p>
           </div>
         </div>
 
@@ -186,7 +186,7 @@ const gettingStartedSteps = [
             Qué hacer cuando una colaboración con un KOL descarrila. Cómo reaccionar si un producto llama la atención por los motivos equivocados en RedNote. Qué circuito de escalada activar si un patinazo cultural se vuelve viral en Weibo.
           </p>
           <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
-            Alertas de escucha, plantillas de respuesta, protocolos de escalada, pautas por plataforma. Montamos el dispositivo de una vez, usted lo guarda a mano y lo saca el día que algo ocurre. Si la situación supera lo que se resuelve en redes, le ponemos en contacto con despachos de gestión de crisis especializados.
+            Alertas de escucha, plantillas de respuesta, protocolos de escalada y pautas por plataforma. Montamos el sistema de una vez, usted lo guarda a mano y lo saca el día que algo ocurre. Si la situación supera lo que se resuelve en redes, le ponemos en contacto con despachos de gestión de crisis especializados.
           </p>
         </div>
       </div>
@@ -210,18 +210,18 @@ const gettingStartedSteps = [
           </div>
           <div class="col-content">
             <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Panorama de redes sociales</h3>
-            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[12px]">Para equipos que aterrizan en el mercado o quieren una vista estructurada. Plataformas clave, perfiles de usuario, formatos de contenido, dispositivos publicitarios y cómo se articula todo. Casos del terreno y panorama competitivo para su sector.</p>
-            <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] opacity-[0.7]">Media jornada o jornada completa. Presencial o remoto. Para equipos de marketing, dirección general, responsables de marca.</p>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[12px]">Para equipos que aterrizan en el mercado o quieren una visión estructurada. Plataformas clave, perfiles de usuario, formatos de contenido, formatos publicitarios y cómo se articula todo. Casos del terreno y panorama competitivo para su sector.</p>
+            <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] opacity-[0.7]">Media jornada o jornada completa. Presencial o remoto. Para equipos de marketing, dirección general y responsables de marca.</p>
           </div>
         </div>
 
         <div class="col-panel" data-col-panel>
           <div class="col-label">
-            <span class="col-label-text">Montar y pilotar campañas</span>
+            <span class="col-label-text">Montar y dirigir campañas</span>
           </div>
           <div class="col-content">
-            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Montar y pilotar campañas</h3>
-            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[12px]">Del brief al balance postcampaña. Calendarios editoriales, producción calibrada por plataforma, selección de KOL, configuración publicitaria, medición de resultados. Los participantes salen con un borrador de plan de campaña para su marca.</p>
+            <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Montar y dirigir campañas</h3>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[12px]">Del brief al balance postcampaña. Calendarios editoriales, producción calibrada por plataforma, selección de KOL, configuración publicitaria y medición de resultados. Los participantes salen con un borrador de plan de campaña para su marca.</p>
             <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] opacity-[0.7]">Uno o dos días en formato práctico. Para responsables de redes, equipos de contenido y equipos que gestionan una relación de agencia.</p>
           </div>
         </div>
@@ -233,7 +233,7 @@ const gettingStartedSteps = [
           <div class="col-content">
             <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Integrar el AIGC en la producción de contenido</h3>
             <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[12px]">Las herramientas de IA del momento para texto, imagen y vídeo. Ingeniería de prompts. Entrenamiento de modelos a medida. Diseño de flujos de producción en volumen. Control de calidad. Cumplimiento de las normas de etiquetado de contenido generado por IA (en vigor desde septiembre de 2025).</p>
-            <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] opacity-[0.7]">De media jornada a jornada completa, con demostraciones en directo. Para productores de contenido, directores artísticos, responsables de producción.</p>
+            <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] opacity-[0.7]">De media jornada a jornada completa, con demostraciones en directo. Para productores de contenido, directores artísticos y responsables de producción.</p>
           </div>
         </div>
 
@@ -243,8 +243,8 @@ const gettingStartedSteps = [
           </div>
           <div class="col-content">
             <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Venta en directo</h3>
-            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[12px]">Cómo vender en directo. Elección de plataforma (Douyin, Taobao Live, WeChat Channels). Formación de presentadores, redacción de guiones, secuenciación de productos, mecánicas de venta relámpago, interacción en tiempo real. Desmenuzamos las sesiones más rentables del momento y por qué funcionan.</p>
-            <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] opacity-[0.7]">Media jornada con vídeos de casos y ejercicios de planificación. Para equipos de e-commerce, responsables de marca, directores de marketing.</p>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[12px]">Cómo vender en directo. Elección de plataforma (Douyin, Taobao Live, WeChat Channels). Formación de presentadores, redacción de guiones, secuenciación de productos, mecánicas de venta relámpago e interacción en tiempo real. Desmenuzamos las sesiones más rentables del momento y por qué funcionan.</p>
+            <p class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] opacity-[0.7]">Media jornada con vídeos de casos y ejercicios de planificación. Para equipos de e-commerce, responsables de marca y directores de marketing.</p>
           </div>
         </div>
 
@@ -378,7 +378,7 @@ const gettingStartedSteps = [
 
   <GettingStarted
     lang="es"
-    heading="De la primera llamada a la formación entregada, dos semanas bastan."
+    heading="De la primera llamada a la formación entregada, dos semanas."
     steps={gettingStartedSteps}
     backgroundImage="/images/getting-started/training-consulting.webp"
     crossLinks={[

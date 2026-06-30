@@ -9,13 +9,13 @@ import GettingStarted from '../../../components/sections/GettingStarted.astro';
 
 
 const faqs = [
-  { q: '起步预算大概要准备多少？', a: '看平台。小红书最低¥5,000起投；抖音信息流每天至少¥1,000；微信朋友圈也是¥1,000/天起步。我们一般建议月预算做到¥15,000到¥30,000，这样才有足够的数据量去跑优化。' },
+  { q: '起步预算大概要准备多少？', a: '看平台。小红书最低 ¥5,000 起投；抖音信息流每天至少 ¥1,000；微信朋友圈也是 ¥1,000/天 起步。我们一般建议月预算做到 ¥15,000 到 ¥30,000，这样才有足够的数据量去跑优化。' },
   { q: '广告预算是你们代收代投的吗？', a: '不是。钱你直接充到平台账户，我们一分不抽，也没有任何返点。我们收的服务费，只包含策略、开户、素材和报告这几块。' },
-  { q: '多久能看到效果？', a: '流量一般第一周就会起来。转化要两到三周跑调优。品牌认知得靠30到60天慢慢打。' },
+  { q: '多久能看到效果？', a: '流量一般第一周就会起来。转化要两到三周边跑边调。品牌认知得靠 30 到 60 天慢慢打。' },
   { q: '我们现在的投放没起色，你们能接手吗？', a: '可以。先做一次诊断：把投放计划、定向、素材、预算分配全过一遍，再针对性地重搭。最常见的几个病根：广告形式选错、素材跑太久没换、定向放太宽、没人每天盯着优化。' },
-  { q: '广告素材是你们自己做吗？', a: '是的。视频、图片、文案，每个平台单独出一套。创意方向由团队来拿，产能靠AI和HubStudio.ai顶上去。' },
-  { q: '推热门帖子和做正式投放，差别大吗？', a: '推帖子快，但能做的就那么多。正式投放可以做精准定向、素材AB测试、转化目标、出价策略、ROAS追踪。两者的效果差距，基本一眼就能看出来。' },
-  { q: 'ROAS是不是永远是最核心的指标？', a: '电商和直接转化类，大多数情况下是。品牌认知阶段更应该看CPM和覆盖人数。关键是投放之前就把"什么叫成功"定清楚，事后别再找借口。' },
+  { q: '广告素材是你们自己做吗？', a: '是的。视频、图片、文案，每个平台单独出一套。创意方向由团队拍板，产能靠 AI 和 HubStudio.ai 顶上去。' },
+  { q: '推热门帖子和做正式投放，差别大吗？', a: '推帖子快，但能做的就那么多。正式投放能做精准定向、素材 A/B 测试、转化目标、出价策略、ROAS 追踪。两者的效果差距，基本一眼就看得出来。' },
+  { q: 'ROAS是不是永远是最核心的指标？', a: '电商和直接转化类，大多数情况下是。品牌认知阶段更该看 CPM 和覆盖人数。关键是投放之前就把“什么叫成功”定清楚，事后别再找借口。' },
   { q: '能同时在几个平台一起投吗？', a: '可以，而且组合起来往往更有效。抖音和小红书负责种草和曝光，微信用来做已互动用户的再营销。具体怎么搭，根据你的目标和预算来。' },
   { q: '广告账户认证流程是怎样的？', a: '大多数平台必须先过认证，才能用广告后台。全套流程我们来处理，一般一到三周走完。' },
   { q: '你们服务费是怎么算的？', a: '策略和日常运营收一个固定服务费。广告预算单独计费，直接付给平台。账目上没有任何灰色地带。' },
@@ -75,7 +75,7 @@ const gettingStartedSteps = [
           <div class="relative z-[1]">
             <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">为什么要投广告</p>
             <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[16px]">投放，现在基本已经绕不开了</h2>
-            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[400px]">自然流量可以慢慢养出用户，但它圈不出"上海、25到34岁、上周刚搜过’天然护肤’的女性"这样一群人。广告可以。</p>
+            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[400px]">自然流量可以慢慢养出用户，但它圈不出“上海、25 到 34 岁、上周刚搜过‘天然护肤’的女性”这样一群人。广告可以。</p>
           </div>
           <div class="relative z-[1] mt-[24px]">
             <Button variant="secondary-dark" href="#what-we-do">查看服务</Button>
@@ -164,7 +164,7 @@ const gettingStartedSteps = [
           <div>
             <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">再营销和人群包</h3>
             <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
-              抖音视频看到一半就划走？换个角度再打一次。逛过你的小程序但没下单？推一条召回广告。小红书这边，还能根据谁跟特定笔记互动过、谁搜过哪个关键词，去圈出对应的人群包。这一块的ROI，通常是整个投放里最高的。
+              抖音视频看到一半就划走？换个角度再打一次。逛过你的小程序但没下单？推一条召回广告。小红书这边，还能根据谁跟特定笔记互动过、谁搜过哪个关键词，去圈出对应的人群包。这一块的 ROI，通常是整个投放里最高的。
             </p>
           </div>
           <div>
@@ -176,7 +176,7 @@ const gettingStartedSteps = [
           <div>
             <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">效果报告</h3>
             <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
-              核心盯的是ROAS。CPC、CPM、CTR、CPA、转化率、展示频次，这几个一块儿看。投放期每周一份报告，月底做一次汇总。预算大的客户，直接开实时看板。
+              核心盯的是 ROAS，同时一并看 CPC、CPM、CTR、CPA、转化率和展示频次。投放期每周一份报告，月底做一次汇总。预算大的客户，直接开实时看板。
             </p>
           </div>
           <div>
@@ -196,7 +196,7 @@ const gettingStartedSteps = [
       <SectionBar />
       <SectionHeading overline="广告形式和参考价位">微信（腾讯广告）</SectionHeading>
       <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)] mb-[24px] max-w-[680px]">
-        以下价位参考的是2026年Q1的市场数据和我们自己的投放经验。目的是给你一个预算量级的概念，不是正式报价。
+        以下价位参考的是 2026 年 Q1 的市场数据和我们自己的投放经验。目的是给你一个预算量级的概念，不是正式报价。
       </p>
 
       <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
@@ -204,28 +204,28 @@ const gettingStartedSteps = [
           <img src="/images/ad-formats/wechat-moments-ad.svg" alt="微信朋友圈广告示例" class="w-full aspect-[16/10] object-cover" loading="lazy" decoding="async" />
           <div class="p-[24px] max-[640px]:p-[20px]">
             <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">朋友圈广告</h3>
-            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">朋友圈信息流里的原生广告。图文轮播最多六张卡片，自动播放视频6到15秒，也可以点开全屏。122个兴趣子类可以拿来定向，竞价起投¥1,000/天。CPM根据城市等级在¥50到¥180之间。</p>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">朋友圈信息流里的原生广告。图文轮播最多六张卡片，自动播放视频 6 到 15 秒，也可以点开全屏。122 个兴趣子类可以拿来定向，竞价起投 ¥1,000/天。CPM 根据城市等级在 ¥50 到 ¥180 之间。</p>
           </div>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
           <img src="/images/ad-formats/wechat-banner-ad.svg" alt="微信公众号文章内的横幅广告" class="w-full aspect-[16/10] object-cover" loading="lazy" decoding="async" />
           <div class="p-[24px] max-[640px]:p-[20px]">
             <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">横幅广告</h3>
-            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">展示在公众号文章的底部或中段。CPC低至¥0.5，CPM在¥15到¥25之间。拉一个新关注的成本大概¥8到¥20。是门槛最低的一种形式。</p>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">展示在公众号文章的底部或中段。CPC 低至 ¥0.5，CPM 在 ¥15 到 ¥25 之间。拉一个新关注的成本大概 ¥8 到 ¥20。是门槛最低的一种形式。</p>
           </div>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
           <img src="/images/ad-formats/wechat-channels-ad.svg" alt="微信视频号中的视频广告" class="w-full aspect-[16/10] object-cover" loading="lazy" decoding="async" />
           <div class="p-[24px] max-[640px]:p-[20px]">
             <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">视频号广告</h3>
-            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">投在微信视频号信息流里的短视频广告。CPM区间¥2到¥13，竞争远没有朋友圈激烈。</p>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">投在微信视频号信息流里的短视频广告。CPM 区间 ¥2 到 ¥13，竞争远没朋友圈激烈。</p>
           </div>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
           <img src="/images/ad-formats/wechat-search-ad.svg" alt="微信搜一搜搜索结果中的广告" class="w-full aspect-[16/10] object-cover" loading="lazy" decoding="async" />
           <div class="p-[24px] max-[640px]:p-[20px]">
             <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">搜一搜广告</h3>
-            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">按关键词在微信"搜一搜"的结果里做竞价排名，按点击付费。增长很快，但目前远远没跑满。</p>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">按关键词在微信“搜一搜”的结果里做竞价排名，按点击付费。增长很快，但目前远远没跑满。</p>
           </div>
         </div>
       </div>
@@ -243,14 +243,14 @@ const gettingStartedSteps = [
           <img src="/images/ad-formats/douyin-in-feed.svg" alt="抖音推荐页信息流视频广告" class="w-full aspect-[16/10] object-cover" loading="lazy" decoding="async" />
           <div class="p-[24px] max-[640px]:p-[20px]">
             <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">信息流广告</h3>
-            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">投在"推荐"页的视频广告，最长60秒。CPC低至¥0.2，CPM在¥10到¥50之间。支持挂商品链接、收集表单和跳抖音商城。抖音效果广告的主打形式。</p>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">投在“推荐”页的视频广告，最长 60 秒。CPC 低至 ¥0.2，CPM 在 ¥10 到 ¥50 之间。支持挂商品链接、收集表单和跳抖音商城。抖音效果广告的主打形式。</p>
           </div>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
           <img src="/images/ad-formats/douyin-topview.svg" alt="抖音开屏TopView全屏广告" class="w-full aspect-[16/10] object-cover" loading="lazy" decoding="async" />
           <div class="p-[24px] max-[640px]:p-[20px]">
             <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">TopView</h3>
-            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">用户打开抖音之后看到的第一屏全屏视频，3到60秒，有声自动播放。一线城市一天的费用能冲到¥100万以上，入门门槛¥20万起。</p>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">用户打开抖音后看到的第一屏全屏视频，3 到 60 秒，有声自动播放。一线城市一天的费用能冲到 ¥100 万以上，入门门槛 ¥20 万起。</p>
           </div>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
@@ -264,21 +264,21 @@ const gettingStartedSteps = [
           <img src="/images/ad-formats/douyin-hashtag-challenge.svg" alt="抖音话题挑战赛页面" class="w-full aspect-[16/10] object-cover" loading="lazy" decoding="async" />
           <div class="p-[24px] max-[640px]:p-[20px]">
             <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">话题挑战赛</h3>
-            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">¥20万到¥50万。一旦引爆，自然传播带来的曝光会远远超过最初的投入。但只有创意扎实、品牌本身已经有足够粉丝基础来带动起步时，我们才会建议做。</p>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">¥20 万到 ¥50 万。一旦引爆，自然传播带来的曝光会远远超过最初的投入。但只有创意扎实、品牌本身已有足够粉丝基础来带动起步时，我们才会建议做。</p>
           </div>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
           <img src="/images/ad-formats/douyin-shop-card.svg" alt="抖音视频中嵌入的商城商品卡片" class="w-full aspect-[16/10] object-cover" loading="lazy" decoding="async" />
           <div class="p-[24px] max-[640px]:p-[20px]">
             <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">商城商品卡</h3>
-            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">嵌在视频里的一键购买形式，直接跳转到抖音商城。转化率比普通跳转型广告高出20%到30%。</p>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">嵌在视频里的一键购买形式，直接跳转到抖音商城。转化率比普通跳转型广告高出 20% 到 30%。</p>
           </div>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
           <img src="/images/ad-formats/douyin-brand-takeover.svg" alt="抖音品牌开屏广告" class="w-full aspect-[16/10] object-cover" loading="lazy" decoding="async" />
           <div class="p-[24px] max-[640px]:p-[20px]">
             <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">品牌开屏</h3>
-            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">打开App时出现的静态图或GIF，展示3到5秒。一天只接一个品牌，视觉冲击力强，费用也相应较高。</p>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">打开 App 时出现的静态图或 GIF，展示 3 到 5 秒。一天只接一个品牌，视觉冲击力强，费用也相应较高。</p>
           </div>
         </div>
       </div>
@@ -296,7 +296,7 @@ const gettingStartedSteps = [
           <img src="/images/ad-formats/rednote-in-feed.svg" alt="小红书发现页中的赞助笔记" class="w-full aspect-[16/10] object-cover" loading="lazy" decoding="async" />
           <div class="p-[24px] max-[640px]:p-[20px]">
             <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">信息流广告</h3>
-            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">以赞助笔记的形式出现在发现页。CPM¥10到¥30，大约只有抖音的10%到20%。CPC低至¥0.3，起投¥5,000。截至2026年初，这是种草类广告里性价比最高的平台。</p>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">以赞助笔记的形式出现在发现页。CPM ¥10 到 ¥30，大约只有抖音的 10% 到 20%。CPC 低至 ¥0.3，起投 ¥5,000。截至 2026 年初，这是种草类广告里性价比最高的平台。</p>
           </div>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
@@ -310,14 +310,14 @@ const gettingStartedSteps = [
           <img src="/images/ad-formats/rednote-kol-seeding.svg" alt="小红书蒲公英平台的达人种草" class="w-full aspect-[16/10] object-cover" loading="lazy" decoding="async" />
           <div class="p-[24px] max-[640px]:p-[20px]">
             <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">达人种草（蒲公英）</h3>
-            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">品牌付费，让达人产出看起来像真实分享的内容。素人博主一篇¥500起；中腰部达人¥5,000到¥30,000；头部达人¥50,000起。</p>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">品牌付费，让达人产出看起来像真实分享的内容。素人博主一篇 ¥500 起；中腰部达人 ¥5,000 到 ¥30,000；头部达人 ¥50,000 起。</p>
           </div>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
           <img src="/images/ad-formats/rednote-brand-zone.svg" alt="小红书搜索结果中的品牌专区" class="w-full aspect-[16/10] object-cover" loading="lazy" decoding="async" />
           <div class="p-[24px] max-[640px]:p-[20px]">
             <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">品牌专区和开屏</h3>
-            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">品牌专区：在小红书搜索里为你开一个品牌专属页面，¥50,000起。开屏广告：用户打开App时的全屏展示，¥50,000起。建议留到重要节点再用。</p>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">品牌专区：在小红书搜索里为你开一个品牌专属页面，¥50,000 起。开屏广告：用户打开 App 时的全屏展示，¥50,000 起。建议留到重要节点再用。</p>
           </div>
         </div>
       </div>
@@ -332,7 +332,7 @@ const gettingStartedSteps = [
           <div class="flex-1 min-w-0">
             <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[12px]">客户案例</p>
             <h3 class="text-[24px] max-[640px]:text-[20px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[12px]">AGE 20's：「小奶砖」中国市场推广战役</h3>
-            <p class="text-[15px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[20px]">这个韩国美妆品牌的抖音投放跑出387万次曝光，是原定目标的四倍。「小奶砖」这个产品昵称完全靠自然传播起来，没有投一分钱推广。</p>
+            <p class="text-[15px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[20px]">这个韩国美妆品牌的抖音投放跑出 387 万次曝光，是原定目标的四倍。「小奶砖」这个产品昵称完全靠自然传播起来，没投一分钱推广。</p>
             <span class="text-[14px] font-medium text-[var(--color-vermillion)] group-hover:underline">看案例 →</span>
           </div>
           <img

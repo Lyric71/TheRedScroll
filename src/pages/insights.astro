@@ -8,7 +8,7 @@ const SITE_URL = 'https://www.theredscroll.com';
 
 const allPosts = await getCollection('blog');
 const articles = allPosts
-  .sort(() => Math.random() - 0.5)
+  .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime())
   .map((post) => ({
     category: post.data.category,
     title: post.data.title,

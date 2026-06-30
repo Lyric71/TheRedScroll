@@ -9,32 +9,32 @@ import GettingStarted from '../../../components/sections/GettingStarted.astro';
 
 
 const faqs = [
-  { q: 'AI 真的做得出高端品牌水准的内容吗？', a: '做得出，前提是模型训练得到位。通用模型出的东西就是通用的，一眼就能看穿。我们会基于你的品牌视觉体系、色彩、包装、摄影风格去训练专属模型，产出的东西带着你自己的样子，不会跟别人撞脸。' },
-  { q: 'AIGC 和实拍的比例大概是多少？', a: '看品牌，也看平台。多数客户的视觉产能里，AIGC 占 60% 到 70%（产品图、社媒素材、短视频），剩下 30% 到 40% 走实拍（品牌大片、生活方式、达人联拍）。' },
-  { q: '中文内容是直接写的，还是从英文翻过来的？', a: '直接用中文写，不是翻译过来的。两者的差别，一眼就能看出来。文案团队全是中文母语写手，驻扎上海。你那边的英文品牌指南只是起点参考，真正的中文稿我们会从零开始、为国内平台量身写。' },
-  { q: '你们是怎么蹭热点的？', a: '运营团队每天都泡在平台上，盯热搜词、盯新格式、盯节日节点、盯对手动向。机会一冒头，24到48小时之内就能把内容做出来、发出去。' },
-  { q: '我们本来就有一套全球的创意素材，能接着用吗？', a: '可以做本地化适配。但说实话，适配出来的效果通常比不上本地原创。我们会在合适的场景里用你原有的素材，日常内容则靠 AIGC 和本地拍摄补上。' },
-  { q: '一个月大概要发多少内容？', a: '只是刷个存在感：每个平台每月8到12条。想真正有竞争力：20到30条。这里说的只是自然内容，广告素材不算在内。我们会根据你的预算和目标，定一套合适的节奏。' },
-  { q: '能同时跑几个平台吗？', a: '这就是我们日常的做法。大部分客户同时运营两到四个平台，每个平台都有一套独立的节奏、语气和格式。把同一条内容一模一样地照搬到所有平台，那种做法我们不做，没用。' },
-  { q: '收费是怎么定的？', a: '一口价，范围写死。每个月出多少条帖子、多少条视频、多少篇文章、多少次拍摄，全都提前列清楚。广告预算和额外拍摄另外报价，一样是透明的。' },
-  { q: '做出来的内容版权归谁？', a: '归你。我们产出的所有内容，不管是 AIGC 还是实拍，完整使用权都归品牌方。没有授权限制，也没有到期时间。' },
-  { q: '交付周期大概多久？', a: 'AIGC 素材：从需求到交付 2 到 3 个工作日。实拍一到两周，包含前期、拍摄和后期。蹭热点的内容在紧急情况下，可以做到 24 到 48 小时从想法到上线。' },
+  { q: 'AI 真的做得出高端品牌水准的内容吗？', a: '做得出，前提是模型训练到位。通用模型出的就是通用货，一眼就能看穿。我们会拿你的品牌视觉体系、配色、包装和摄影风格去训练专属模型，产出的东西带着你自己的样子，不会和别人撞脸。' },
+  { q: 'AIGC 和实拍的比例大概是多少？', a: '要看品牌，也看平台。多数客户的视觉产能里，AIGC 占 60% 到 70%（产品图、社媒素材、短视频），其余 30% 到 40% 走实拍（品牌大片、生活方式、达人联拍）。' },
+  { q: '中文内容是直接写的，还是从英文翻过来的？', a: '直接用中文写，不是翻过来的。这两者的差别，一眼就看得出来。文案团队全是中文母语写手，常驻上海。你那边的英文品牌指南只作起点参考，真正的中文稿我们从零写起，为国内平台量身打磨。' },
+  { q: '你们是怎么蹭热点的？', a: '运营团队每天都泡在平台上，盯热搜词、盯新玩法、盯节日节点、盯对手动向。机会一冒头，24 到 48 小时内就能把内容做出来、发出去。' },
+  { q: '我们本来就有一套全球的创意素材，能接着用吗？', a: '可以做本地化适配。但说实话，适配出来的效果通常不如本地原创。我们会在合适的场景沿用你现有的素材，日常内容则靠 AIGC 和本地拍摄补上。' },
+  { q: '一个月大概要发多少内容？', a: '只想刷个存在感：每个平台每月 8 到 12 条。想真正有竞争力：20 到 30 条。这里说的都是自然内容，不含广告素材。我们会按你的预算和目标，定一套合适的节奏。' },
+  { q: '能同时跑几个平台吗？', a: '这正是我们的日常。大部分客户同时运营两到四个平台，每个平台都有各自的节奏、语气和格式。把同一条内容原封不动照搬到所有平台，这种做法我们不碰，没用。' },
+  { q: '收费是怎么定的？', a: '一口价，范围写死。每月出多少条帖子、多少条视频、多少篇文章、多少次拍摄，全都提前列清楚。广告预算和额外拍摄另行报价，同样透明。' },
+  { q: '做出来的内容版权归谁？', a: '归你。我们产出的全部内容，无论 AIGC 还是实拍，完整使用权都归品牌方。没有授权限制，也没有到期时间。' },
+  { q: '交付周期大概多久？', a: 'AIGC 素材：从需求到交付 2 到 3 个工作日。实拍一到两周，含前期、拍摄和后期。蹭热点的内容在紧急情况下，能做到 24 到 48 小时从想法到上线。' },
 ];
 
 const gettingStartedSteps = [
   {
     title: '先聊一聊',
-    description: '聊聊你的品牌、主要在哪些平台上跑、眼下内容到底卡在哪儿。',
+    description: '聊聊你的品牌、主要在哪些平台上跑、眼下内容卡在哪儿。',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
   },
   {
     title: '内容方案',
-    description: '敲定内容格式、制作方式、AIGC和实拍的配比，再出一份明确的报价。范围一开始就写得清清楚楚。',
+    description: '敲定内容形式、制作方式、AIGC 和实拍的配比，再出一份清楚的报价。范围一开始就写得明明白白。',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>',
   },
   {
     title: '两周上线',
-    description: '内容策略定稿、首批素材制作完成、首批内容正式上线。合同签完14天内全部搞定。',
+    description: '内容策略定稿、首批素材做完、首批内容正式上线。合同一签，14 天内全部搞定。',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
   },
 ];
@@ -42,7 +42,7 @@ const gettingStartedSteps = [
 
 <PageLayout
   title="中国社媒内容制作 | TheRedScroll"
-  description="AIGC 视觉、视频制作、文案、文化本地化。覆盖微信、抖音、小红书。范围写死，跑的是 AI 的速度。团队驻扎上海。"
+  description="AIGC 视觉、视频制作、文案、文化本地化，覆盖微信、抖音、小红书。范围写死，跑出 AI 的速度。团队驻扎上海。"
   lang="zh"
 >
 
@@ -75,7 +75,7 @@ const gettingStartedSteps = [
           <div class="relative z-[1]">
             <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">转折点</p>
             <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[16px]">内容制作这件事，已经彻底变了</h2>
-            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[400px]">AI 现在几分钟就能出视觉、出文字。当所有人都能用很低的成本批量出内容的时候，真正拉开差距的，是内容背后的那一套判断。</p>
+            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[400px]">AI 如今几分钟就能出视觉、出文字。当谁都能用极低的成本批量产内容，真正拉开差距的，是内容背后的那套判断。</p>
           </div>
           <div class="relative z-[1] mt-[24px]">
             <Button variant="secondary-dark" href="#what-we-do">服务内容</Button>
@@ -84,17 +84,17 @@ const gettingStartedSteps = [
         <div class="bg-[#F0F1F4] rounded-[10px] p-[24px] max-[640px]:p-[20px] relative overflow-hidden">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
           <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">每个平台的调性都不一样</h3>
-          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">小红书偏轻松、偏私密。微博要抓眼的标题。微信讲究深度。抖音看的是开头和节奏。四个平台套用同一种语气，哪个都跑不出来。</p>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">小红书偏轻松、偏私密；微博要抓眼球的标题；微信讲究深度；抖音拼的是开头和节奏。四个平台套同一种语气，哪个都跑不起来。</p>
         </div>
         <div class="bg-[#1A1A1A] rounded-[12px] p-[24px] max-[640px]:p-[20px] relative overflow-hidden">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
           <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">趋势翻得太快</h3>
-          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.6)]">今天在抖音上爆的热搜词，下周可能连个水花都翻不起来。得有人天天盯着平台，在窗口期抓准节点。</p>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.6)]">今天在抖音爆的热搜词，下周可能连水花都翻不起。得有人天天盯着平台，在窗口期内抓准节点。</p>
         </div>
         <div class="bg-[#CC3333] rounded-[12px] p-[24px] max-[640px]:p-[20px] relative overflow-hidden">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
           <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">量实在太大</h3>
-          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.8)]">三到四个平台同时跑，一个月至少要出 30 到 50 条内容，广告素材还没算进去。单靠传统的制作方式，没有哪支团队吃得下这个量。</p>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.8)]">三到四个平台同时跑，一个月至少 30 到 50 条内容，广告素材还没算。单靠传统制作方式，没哪支团队吃得下这个量。</p>
         </div>
         <div class="bg-[#E8E0D8] rounded-[10px] p-[24px] max-[640px]:p-[20px] relative overflow-hidden">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
@@ -121,14 +121,14 @@ const gettingStartedSteps = [
             <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
           </div>
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">内容策略</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">内容主线、信息框架、语气调性、各平台各自的格式。这一块 100% 由人来拍板。一个热点该不该追，AI 回答不了你这个问题。</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">内容主线、信息框架、语气调性，还有各平台各自的格式。这一块 100% 由人拍板。一个热点该不该追，AI 给不了你答案。</p>
         </div>
         <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
           <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
             <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
           </div>
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">AIGC视觉和视频</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">AI 生成的产品图、场景图和短视频。模型都是基于你的品牌视觉体系训练出来的，出来的东西带着你自己的样子。比起传统制作，大概快 80%。</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">AI 生成的产品图、场景图和短视频。模型都按你的品牌视觉体系训练，产出带着你自己的样子。比传统制作大约快 80%。</p>
         </div>
         <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
           <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
@@ -152,20 +152,20 @@ const gettingStartedSteps = [
             微信公众号文章要讲结构、要有深度。小红书的图文配文读起来得像朋友在给你支招。抖音视频前两秒抓不住人，后面就白搭了。产品可能是同一个，但四个平台的写法完全不一样。
           </p>
           <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
-            AI 先出初稿，本地写手负责文化这一关和改稿。如果是刚进中国的品牌，连中文品牌名、slogan、核心信息的改写，也一并做。
+            AI 先出初稿，本地写手把文化这一关、负责改稿。如果是刚进中国的品牌，中文品牌名、slogan 和核心信息的改写，也一并做。
           </p>
         </div>
         <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[24px]">
           <div>
             <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">AIGC参考价位</h3>
             <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
-              10张AIGC产品图¥2,000到¥5,000。5条社交短视频（15到30秒）¥5,000到¥12,000。做个对比：上海一天的传统产品摄影大概在¥8,000到¥25,000之间，一条30秒视频起步¥15,000，高的能冲到¥50,000。
+              10 张 AIGC 产品图 ¥2,000 到 ¥5,000。5 条社交短视频（15 到 30 秒）¥5,000 到 ¥12,000。做个对比：上海一天的传统产品摄影大概在 ¥8,000 到 ¥25,000 之间，一条 30 秒视频起步 ¥15,000，高的能冲到 ¥50,000。
             </p>
           </div>
           <div>
             <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">实拍参考价位</h3>
             <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
-              上海半天的拍摄¥8,000到¥15,000。一整天的视频拍摄（含团队和后期）¥20,000到¥60,000。具体还要看拍摄范围、场地、出镜人和后期工作量。
+              上海半天的拍摄 ¥8,000 到 ¥15,000。一整天的视频拍摄（含团队和后期）¥20,000 到 ¥60,000。具体还要看拍摄范围、场地、出镜人和后期工作量。
             </p>
           </div>
         </div>
@@ -182,15 +182,15 @@ const gettingStartedSteps = [
       <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">短视频（15到60秒）</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">抖音的核心形式。产品演示、教程、场景化、蹭热点都靠这个。9:16竖屏，前两秒最关键，音乐和字幕是标配。</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">抖音的核心形式。产品演示、教程、场景化、蹭热点都靠它。9:16 竖屏，前两秒最关键，音乐和字幕是标配。</p>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">直播</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">产品演示、答疑互动、限时秒杀。一场通常1到4小时，走抖音商城直接成交。专业主播、弹幕互动、选品节奏，这三样缺一不可。</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">产品演示、答疑互动、限时秒杀。一场通常 1 到 4 小时，走抖音商城直接成交。专业主播、弹幕互动、选品节奏，这三样缺一不可。</p>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">抖音图文</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">最多20张图，滑动浏览。适合做科普、分步教程、产品对比。这个形式最近涨得很快，美妆和护肤品牌尤其吃这一套。</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">最多 20 张图，滑动浏览。适合科普、分步教程、产品对比。这个形式最近涨得很快，美妆和护肤品牌尤其吃这一套。</p>
         </div>
       </div>
     </Container>
@@ -209,7 +209,7 @@ const gettingStartedSteps = [
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">视频笔记</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">1到5分钟。比抖音多了很多叙事空间。测评、日常记录、教程类都合适。拍得像真人在分享自己的真实体验，效果是最好的。</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">1 到 5 分钟。比抖音多出不少叙事空间。测评、日常记录、教程都合适。拍得像真人在分享真实体验，效果最好。</p>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">搜索向笔记</h3>
@@ -228,11 +228,11 @@ const gettingStartedSteps = [
       <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">公众号文章</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">长图文形式。800到2500字，可以配图、嵌视频、挂小程序或商城链接。品牌故事、产品科普、专业观点，都适合放在这里。</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">长图文形式。800 到 2500 字，可配图、嵌视频、挂小程序或商城链接。品牌故事、产品科普、专业观点，都适合放在这里。</p>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">视频号</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">微信自己的竖屏短视频，1到3分钟。眼下还在快速成长。受众规模不如抖音大，但走的是熟人社交关系链，离用户更近。</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">微信自家的竖屏短视频，1 到 3 分钟，眼下还在快速成长。受众规模不如抖音，但走的是熟人社交关系链，离用户更近。</p>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">小程序内容</h3>
@@ -250,7 +250,7 @@ const gettingStartedSteps = [
           <div class="flex-1 min-w-0">
             <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[12px]">客户案例</p>
             <h3 class="text-[24px] max-[640px]:text-[20px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[12px]">Camper：把一个设计师品牌在中国社媒做起来</h3>
-            <p class="text-[15px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[20px]">一套以设计为核心的内容策略，把Camper在中国社媒的粉丝从43,000一路做到了187,000。与此同时，18个月里的门店销售增长了31%。</p>
+            <p class="text-[15px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[20px]">一套以设计为核心的内容策略，把 Camper 在中国社媒的粉丝从 43,000 做到了 187,000。同期，18 个月里的门店销售增长了 31%。</p>
             <span class="text-[14px] font-medium text-[var(--color-vermillion)] group-hover:underline">看案例 →</span>
           </div>
           <img

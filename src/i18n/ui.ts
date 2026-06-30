@@ -134,14 +134,14 @@ export const ui = {
     'nav.services': 'Services',
     'nav.platforms': 'Plateformes',
     'nav.work': 'Réalisations',
-    'nav.about': 'L\'agence',
+    'nav.about': 'L’agence',
     'nav.pricing': 'Tarifs',
     'nav.insights': 'Analyses',
     'nav.bookCall': 'Prendre rendez-vous',
     'nav.viewAll': 'Tout voir',
     'nav.viewAll.services': 'Tous les services',
     'nav.viewAll.platforms': 'Toutes les plateformes',
-    'nav.viewAll.about': 'Découvrir l\'agence',
+    'nav.viewAll.about': 'Découvrir l’agence',
     'nav.openMenu': 'Ouvrir le menu',
     'nav.closeMenu': 'Fermer le menu',
 
@@ -149,10 +149,10 @@ export const ui = {
     'nav.services.strategy': 'Stratégie, campagnes et analyse',
     'nav.services.strategy.sub': 'Études, calendriers éditoriaux, rapports',
     'nav.services.advertising': 'Publicité',
-    'nav.services.advertising.sub': 'Plan média et achat d\'espace',
+    'nav.services.advertising.sub': 'Plan média et achat d’espace',
     'nav.services.content': 'Production de contenu',
     'nav.services.content.sub': 'Visuels IA, vidéo, rédaction native',
-    'nav.services.influencer': 'Marketing d\'influence',
+    'nav.services.influencer': 'Marketing d’influence',
     'nav.services.influencer.sub': 'Campagnes KOL et KOC',
     'nav.services.marketEntry': 'Entrée sur le marché chinois',
     'nav.services.marketEntry.sub': 'Enregistrement, ouverture de comptes, localisation',
@@ -174,13 +174,13 @@ export const ui = {
     'nav.platforms.others.sub': 'Bilibili, Kuaishou, Zhihu et quatorze autres',
 
     // About sub-nav
-    'nav.about.team': 'L\'équipe',
+    'nav.about.team': 'L’équipe',
     'nav.about.team.sub': 'Shanghai et Hong Kong',
     'nav.about.ai': 'Notre IA',
-    'nav.about.ai.sub': 'L\'IA au cœur de chaque prestation',
+    'nav.about.ai.sub': 'L’IA au cœur de chaque prestation',
 
     // Footer
-    'footer.tagline': 'Nous faisons grandir votre marque sur les réseaux sociaux chinois. Plus d\'abonnés, plus d\'engagement, plus de ventes. Périmètre arrêté, tarif ferme, aucune surprise.',
+    'footer.tagline': 'Nous développons votre marque sur les réseaux sociaux chinois. Plus d’abonnés, plus d’engagement, plus de ventes. Périmètre défini, prix fixe, aucune surprise.',
     'footer.services': 'Services',
     'footer.discover': 'Explorer',
     'footer.connect': 'Nous écrire',
@@ -192,12 +192,12 @@ export const ui = {
     'footer.contact': 'Contact',
     'footer.strategyAnalytics': 'Stratégie et analyse',
     'footer.contentProduction': 'Production de contenu',
-    'footer.influencerMarketing': 'Marketing d\'influence',
+    'footer.influencerMarketing': 'Marketing d’influence',
     'footer.advertising': 'Publicité',
     'footer.chinaMarketEntry': 'Entrée sur le marché chinois',
     'footer.crmPrivateDomain': 'CRM et trafic privé',
     'footer.trainingConsulting': 'Formation et conseil',
-    'footer.about': 'L\'agence',
+    'footer.about': 'L’agence',
     'footer.platforms': 'Plateformes',
     'footer.pricing': 'Tarifs',
     'footer.insights': 'Analyses',
@@ -205,8 +205,8 @@ export const ui = {
 
     // Common CTAs & labels
     'cta.bookCall': 'Prendre rendez-vous',
-    'cta.readCaseStudy': 'Lire l\'étude de cas',
-    'cta.backToHome': 'Retour à l\'accueil',
+    'cta.readCaseStudy': 'Lire l’étude de cas',
+    'cta.backToHome': 'Retour à l’accueil',
     'cta.sendMessage': 'Envoyer le message',
     'cta.sending': 'Envoi en cours…',
     'cta.seeServices': 'Voir nos services',
@@ -220,7 +220,7 @@ export const ui = {
     'section.yourTurn': 'À votre tour',
 
     // Common phrases
-    'common.fixedScope': 'Périmètre arrêté. Tarif ferme. Équipe sur place.',
+    'common.fixedScope': 'Périmètre défini. Prix fixe. Équipe en Chine.',
     'common.readingTime': 'de lecture',
 
     // Form labels
@@ -235,7 +235,7 @@ export const ui = {
     'form.placeholder.email': 'vous@entreprise.com',
     'form.placeholder.company': 'Nom de votre entreprise',
     'form.placeholder.website': 'https://votreentreprise.com',
-    'form.placeholder.message': 'Quelles plateformes ciblez-vous ? Quels objectifs poursuivez-vous sur le marché chinois ?',
+    'form.placeholder.message': 'Quelles plateformes ciblez-vous ? Quels objectifs poursuivez-vous sur le marché chinois ?',
     'form.captcha': 'Combien font',
     'form.captchaPlaceholder': 'Votre réponse',
     'form.networkError': 'Connexion impossible. Vérifiez votre réseau, puis réessayez.',
@@ -428,7 +428,7 @@ export const ui = {
     'nav.about.ai.sub': 'La IA en cada servicio',
 
     // Footer
-    'footer.tagline': 'Hacemos crecer su marca en las redes sociales de China. Más seguidores, más conversación, más ventas. Alcance cerrado, precio fijo y cero sorpresas.',
+    'footer.tagline': 'Hacemos crecer su marca en las redes sociales de China. Más seguidores, más conversación, más ventas. Circuito cerrado, precio fijo y cero sorpresas.',
     'footer.services': 'Servicios',
     'footer.discover': 'Descubrir',
     'footer.connect': 'Contacto',
@@ -468,7 +468,7 @@ export const ui = {
     'section.yourTurn': 'Su turno',
 
     // Common phrases
-    'common.fixedScope': 'Alcance cerrado. Precio fijo. Equipo sobre el terreno.',
+    'common.fixedScope': 'Circuito cerrado. Precio fijo. Equipo sobre el terreno.',
     'common.readingTime': 'de lectura',
 
     // Form labels

@@ -31,7 +31,7 @@ Im Kern drei Dimensionen.
 
 Für eine Marke mittlerer Größe verschiebt dieses neue Kosten-Nutzen-Verhältnis das gesamte Bild. Formate, die bisher unerreichbar waren, rücken auf einmal in den Bereich des Machbaren.
 
-![Ein KI-Tool zur Content-Erzeugung zeigt eine Rasteransicht produzierter Visuals zur Stapelauswahl](/images/blog/aigc-batch-grid.webp)
+![Ein KI-Werkzeug zur Inhaltserzeugung zeigt eine Rasteransicht produzierter Bilder zur Stapelauswahl](/images/blog/aigc-batch-grid.webp)
 
 **Volumen.** Douyin, RedNote, WeChat Channels: Diese drei Plattformen begünstigen von ihrer Architektur her Konten, die häufig publizieren. Wer weniger publiziert, verschwindet schneller. KI hilft, die Frequenz zu halten, ohne die Teams zu erschöpfen. Ein Konsumgüterhersteller hat auf diese Weise eine ganze Bibliothek KI-generierter Produktvideos aufgebaut und die Sequenzen anschließend zu hunderten Varianten neu kombiniert, kampagnen- und zielgruppenscharf.
 
@@ -53,15 +53,15 @@ Marken, die wirklich etwas herausholen, behandeln KI als das, was sie ist: ein k
 
 > Quelle: Douban, Bericht 2026 zu Fallstudien des KI-Marketings
 
-Auf Douyin hat Friso mit den kreativen KI-Werkzeugen von Volcengine Markenfilter entwickelt. Der Mechanismus wirkt schlicht: Nutzer spielen mit dem Filter, posten das Ergebnis, der Traffic fließt anschließend in Livestream und Markenshop. Klingt unscheinbar und entfaltet doch eine bemerkenswerte Wirkung.
+Auf Douyin hat Friso mit den kreativen KI-Werkzeugen von Volcengine Markenfilter entwickelt. Der Mechanismus wirkt schlicht: Nutzer spielen mit dem Filter, posten das Ergebnis, der Besucherstrom fließt anschließend in Livestream und Markenshop. Klingt unscheinbar und entfaltet doch eine bemerkenswerte Wirkung.
 
 > Quelle: iFenxi, Bericht 2025 zu AIGC-Anwendungspraxis, mit Verweis auf den Fall Volcengine
 
 ## Und für internationale Marken?
 
-Die Content-Produktion ist der klassische Engpass im China-Marketing. Visuals anpassen, Shootings koordinieren, Freigaben einholen, parallel auf vier oder fünf Plattformen veröffentlichen: Jeder Schritt frisst Zeit und Budget. KI entlastet an beiden Stellen.
+Die Produktion von Inhalten ist der klassische Engpass im China-Marketing. Bilder anpassen, Fotoproduktionen koordinieren, Freigaben einholen, parallel auf vier oder fünf Plattformen veröffentlichen: Jeder Schritt frisst Zeit und Budget. KI entlastet an beiden Stellen.
 
-Ein konkretes Beispiel. Ein komplettes Produkt-Shooting in Shanghai? Ein auf die visuelle Identität der Marke trainiertes KI-Modell erledigt die Arbeit zehnmal schneller. Ein Text, an dem ein muttersprachlicher Redakteur einen Tag gefeilt hat, ist in wenigen Minuten verfügbar, bevor ein menschlicher Redakteur ihn schärft. Wöchentliche Kampagnenberichte, früher Zeitfresser, laufen heute über Nacht.
+Ein konkretes Beispiel. Eine komplette Produktfotografie in Shanghai? Ein auf die visuelle Identität der Marke trainiertes KI-Modell erledigt die Arbeit zehnmal schneller. Ein Text, an dem ein muttersprachlicher Redakteur einen Tag gefeilt hat, ist in wenigen Minuten verfügbar, bevor ein menschlicher Redakteur ihn schärft. Wöchentliche Kampagnenberichte, früher Zeitfresser, laufen heute über Nacht.
 
 Der eigentliche Hebel liegt jedoch woanders.
 
@@ -69,14 +69,14 @@ Der eigentliche Hebel liegt jedoch woanders.
 
 KI übernimmt die Wiederholung. Die kreativen Entscheidungen bleiben in menschlicher Hand.
 
-iResearch bringt es im Bericht 2025 auf den Punkt: Die Content-Produktion in China verlässt das Reich der Fachleute und wird zu einem deutlich offeneren Feld. Ein Briefing, ein KI-Werkzeug, und es kann losgehen. Die professionelle Ebene ist damit nicht verschwunden, doch die Eintrittshürde ist eingebrochen.
+iResearch bringt es im Bericht 2025 auf den Punkt: Die Produktion von Inhalten in China verlässt das Reich der Fachleute und wird zu einem deutlich offeneren Feld. Eine kurze Vorgabe, ein KI-Werkzeug, und es kann losgehen. Die professionelle Ebene ist damit nicht verschwunden, doch die Eintrittshürde ist eingebrochen.
 
 > Quelle: iResearch, Bericht 2025 zur KI- und Digitalmedienindustrie in China
 
-![Ein Dashboard einer KI-Content-Plattform zeigt erzeugte Assets, Stückkosten und die Verteilung nach Plattform](/images/blog/aigc-dashboard.webp)
+![Ein Dashboard einer KI-Content-Plattform zeigt erzeugte Inhalte, Stückkosten und die Verteilung nach Plattform](/images/blog/aigc-dashboard.webp)
 
 ## Wie es weitergeht
 
-Douyin, WeChat, Baidu, Alibaba: Jede große chinesische Plattform hat inzwischen ihre eigenen kreativen KI-Werkzeuge. Die Infrastruktur steht. Und die Adoption beschleunigt sich.
+Douyin, WeChat, Baidu, Alibaba: Jede große chinesische Plattform hat inzwischen ihre eigenen kreativen KI-Werkzeuge. Die Infrastruktur steht. Und die Verbreitung beschleunigt sich.
 
-> Für internationale Marken in China ist KI-Content kein Erkundungsthema mehr, sondern der neue Marktstandard.
+> Für internationale Marken in China sind KI-Inhalte kein Erkundungsthema mehr, sondern der neue Marktstandard.

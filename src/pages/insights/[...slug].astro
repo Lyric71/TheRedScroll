@@ -15,7 +15,12 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
-const { Content } = await render(post);
+const { Content, headings } = await render(post);
+
+// Table of contents — top-level (h2) and their h3 children
+const toc = headings.filter((h) => h.depth === 2 || h.depth === 3);
+
+const hasHeroImage = Boolean(post.data.featuredImage);
 
 const readingTime = Math.ceil((post.body || '').split(/\s+/).length / 200);
 const formattedDate = new Date(post.data.publishDate).toLocaleDateString('en-US', {
@@ -47,62 +52,123 @@ const postSchema = articleSchema({
   schema={postSchema}
 >
   <!-- Hero -->
-  <section class="pt-[92px] pb-[0px] max-[640px]:pt-[72px]">
+  <section
+    class:list={[
+      'relative isolate overflow-hidden border-b-[0.5px] pt-[140px] pb-[64px] max-[640px]:pt-[108px] max-[640px]:pb-[44px]',
+      hasHeroImage ? 'border-[rgba(255,255,255,0.12)]' : 'bg-[var(--color-rice-paper)] border-[var(--color-border)]',
+    ]}
+  >
+    {hasHeroImage && (
+      <>
+        <img
+          src={post.data.featuredImage}
+          alt={post.data.title}
+          class="absolute inset-0 -z-20 w-full h-full object-cover"
+          loading="eager"
+        />
+        <div class="absolute inset-0 -z-10 bg-[rgba(26,26,26,0.74)]"></div>
+      </>
+    )}
     <Container>
-      <div class="max-w-[680px] mx-auto">
-        <a href="/insights/" class="inline-flex items-center gap-[6px] text-[13px] font-normal text-[var(--color-stone)] no-underline hover:text-[var(--color-ink)] mb-[16px] transition-colors duration-150">
-          &#8592; Return
+      <div class="max-w-[760px] mx-auto">
+        <a
+          href="/insights/"
+          class:list={[
+            'inline-flex items-center gap-[6px] text-[13px] font-normal no-underline mb-[24px] transition-colors duration-150',
+            hasHeroImage ? 'text-[rgba(255,255,255,0.72)] hover:text-[#FFFFFF]' : 'text-[var(--color-stone)] hover:text-[var(--color-ink)]',
+          ]}
+        >
+          &#8592; All insights
         </a>
-        <div class="flex items-center mb-[12px]">
+        <div class="flex items-center gap-[12px] mb-[20px]">
           <SectionBar />
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)]">
+            {post.data.category}
+          </p>
         </div>
-        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">
-          {post.data.category}
-        </p>
-        <h1 class="text-[32px] max-[640px]:text-[24px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[8px]">
+        <h1
+          class:list={[
+            'text-[42px] max-[1024px]:text-[36px] max-[640px]:text-[28px] font-medium leading-[1.15] tracking-[-0.01em] mb-[20px]',
+            hasHeroImage ? 'text-[#FFFFFF]' : 'text-[var(--color-ink)]',
+          ]}
+        >
           {post.data.title}
         </h1>
-        <div class="flex items-center gap-[8px] flex-wrap text-[12px] font-normal text-[var(--color-stone)] leading-[1.4]">
-          <span>{readingTime} min of reading</span>
-          <span class="text-[var(--color-warm-gray)]">|</span>
+        <p
+          class:list={[
+            'text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[24px] max-w-[640px]',
+            hasHeroImage ? 'text-[rgba(255,255,255,0.82)]' : 'text-[var(--color-stone)]',
+          ]}
+        >
+          {post.data.description}
+        </p>
+        <div
+          class:list={[
+            'flex items-center gap-[10px] flex-wrap text-[13px] font-normal leading-[1.4] pt-[20px] border-t-[0.5px]',
+            hasHeroImage ? 'text-[rgba(255,255,255,0.72)] border-[rgba(255,255,255,0.18)]' : 'text-[var(--color-stone)] border-[var(--color-border)]',
+          ]}
+        >
+          <span class:list={['font-medium', hasHeroImage ? 'text-[#FFFFFF]' : 'text-[var(--color-ink)]']}>{post.data.author}</span>
+          <span class:list={[hasHeroImage ? 'text-[rgba(255,255,255,0.4)]' : 'text-[var(--color-warm-gray)]']}>|</span>
+          <span>{readingTime} min read</span>
+          <span class:list={[hasHeroImage ? 'text-[rgba(255,255,255,0.4)]' : 'text-[var(--color-warm-gray)]']}>|</span>
           <span>{formattedDate}</span>
         </div>
       </div>
     </Container>
   </section>
 
-  <!-- Featured image -->
-  {post.data.featuredImage && (
-    <section class="mt-[24px]">
-      <Container>
-        <img
-          src={post.data.featuredImage}
-          alt={post.data.title}
-          class="w-full aspect-[16/9] object-cover rounded-[0px] block"
-          loading="eager"
-        />
-      </Container>
-    </section>
-  )}
-
   <!-- Article body -->
-  <section class="pt-[48px] pb-[96px] max-[640px]:pb-[64px]">
+  <section class="pt-[56px] pb-[96px] max-[640px]:pt-[40px] max-[640px]:pb-[64px]">
     <Container>
-      <div class="max-w-[680px] mx-auto prose-article">
-        {post.data.keyFacts && post.data.keyFacts.length > 0 && (
-          <KeyFacts facts={post.data.keyFacts} />
-        )}
-        <Content />
-      </div>
+      <div class="grid grid-cols-[240px_minmax(0,720px)] justify-center gap-[64px] max-[1024px]:block max-[1024px]:max-w-[720px] max-[1024px]:mx-auto">
 
-      <!-- CTA -->
-      <div class="max-w-[680px] mx-auto mt-[48px] pt-[32px] border-t-[0.5px] border-[var(--color-border)]">
-        <p class="text-[16px] font-normal text-[var(--color-ink)] leading-[1.6] mb-[16px]">
-          Need help setting up WeCom for your brand in China?
-        </p>
-        <a href="/contact/" class="inline-flex items-center justify-center h-[44px] px-[28px] bg-[var(--color-vermillion)] text-[#FFFFFF] text-[14px] font-medium leading-[1] no-underline rounded-[6px] transition-[background] duration-150 hover:bg-[var(--color-vermillion-hover)] active:scale-[0.98]">
-          Book a call
-        </a>
+        <!-- Table of contents -->
+        {toc.length > 0 && (
+          <aside class="max-[1024px]:hidden">
+            <nav aria-label="Table of contents" class="sticky top-[100px]" id="toc">
+              <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-stone)] mb-[16px]">
+                On this page
+              </p>
+              <ul class="flex flex-col gap-[2px] border-l-[0.5px] border-[var(--color-border)]">
+                {toc.map((h) => (
+                  <li>
+                    <a
+                      href={`#${h.slug}`}
+                      data-toc-link={h.slug}
+                      class:list={[
+                        'toc-link block text-[13px] font-normal leading-[1.4] py-[6px] -ml-[0.5px] border-l-[1.5px] border-transparent text-[var(--color-stone)] no-underline transition-colors duration-150 hover:text-[var(--color-ink)]',
+                        h.depth === 2 ? 'pl-[16px]' : 'pl-[28px]',
+                      ]}
+                    >
+                      {h.text}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </aside>
+        )}
+
+        <!-- Content -->
+        <div class="min-w-0">
+          <div class="prose-article">
+            {post.data.keyFacts && post.data.keyFacts.length > 0 && (
+              <KeyFacts facts={post.data.keyFacts} />
+            )}
+            <Content />
+          </div>
+
+          <!-- CTA -->
+          <div class="mt-[48px] pt-[32px] border-t-[0.5px] border-[var(--color-border)]">
+            <p class="text-[16px] font-normal text-[var(--color-ink)] leading-[1.6] mb-[16px]">
+              Want to grow your brand on China's social platforms?
+            </p>
+            <a href="/contact/" class="inline-flex items-center justify-center h-[44px] px-[28px] bg-[var(--color-vermillion)] text-[#FFFFFF] text-[14px] font-medium leading-[1] no-underline rounded-[6px] transition-[background] duration-150 hover:bg-[var(--color-vermillion-hover)] active:scale-[0.98]">
+              Book a call
+            </a>
+          </div>
+        </div>
       </div>
     </Container>
   </section>
@@ -116,9 +182,54 @@ const postSchema = articleSchema({
     table.parentNode?.insertBefore(wrapper, table);
     wrapper.appendChild(table);
   });
+
+  // Highlight the table-of-contents entry for the section in view
+  const tocLinks = Array.from(
+    document.querySelectorAll<HTMLAnchorElement>('[data-toc-link]')
+  );
+  if (tocLinks.length > 0) {
+    const linkBySlug = new Map(
+      tocLinks.map((link) => [link.dataset.tocLink, link])
+    );
+    const headingEls = tocLinks
+      .map((link) => document.getElementById(link.dataset.tocLink ?? ''))
+      .filter((el): el is HTMLElement => el !== null);
+
+    let activeSlug = '';
+    const setActive = (slug: string) => {
+      if (slug === activeSlug) return;
+      linkBySlug.get(activeSlug)?.classList.remove('active');
+      linkBySlug.get(slug)?.classList.add('active');
+      activeSlug = slug;
+    };
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+        if (visible.length > 0) {
+          setActive(visible[0].target.id);
+        }
+      },
+      { rootMargin: '-100px 0px -70% 0px', threshold: 0 }
+    );
+
+    headingEls.forEach((el) => observer.observe(el));
+  }
 </script>
 
 <style is:global>
+  /* Offset anchored headings so they clear the fixed header */
+  .prose-article h2[id],
+  .prose-article h3[id] {
+    scroll-margin-top: 100px;
+  }
+  .toc-link.active {
+    color: var(--color-vermillion);
+    border-left-color: var(--color-vermillion);
+  }
+
   .prose-article h2 {
     font-size: 28px;
     font-weight: 500;

@@ -10,15 +10,15 @@ import GettingStarted from '../../../components/sections/GettingStarted.astro';
 
 const faqs = [
   { q: '¿Qué presupuesto hace falta para empezar?', a: 'Depende de la plataforma. RedNote arranca en 5.000 €. En Douyin, calcule al menos 1.000 € al día para anuncios en feed. En WeChat Moments, mismo suelo: 1.000 € al día. En la práctica recomendamos entre 15.000 y 30.000 € al mes, el umbral para acumular suficientes datos y afinar las campañas de verdad.' },
-  { q: '¿Gestionan ustedes los presupuestos publicitarios?', a: 'Sí. La inversión va directa a las plataformas. No cobramos comisión. Nuestros honorarios cubren estrategia, montaje, creatividades y reporting.' },
+  { q: '¿Gestionan ustedes los presupuestos publicitarios?', a: 'Sí. La inversión va directa a las plataformas. No cobramos comisión. Nuestros honorarios cubren estrategia, montaje, creatividades e informes.' },
   { q: '¿En cuánto tiempo se ven resultados?', a: 'En tráfico, normalmente desde la primera semana. Las conversiones piden dos o tres semanas de ajustes. En notoriedad, calcule entre 30 y 60 días.' },
   { q: 'Nuestras campañas actuales no rinden. ¿Qué hacemos?', a: 'Empezamos siempre con una auditoría: campañas, segmentación, creatividades, reparto del presupuesto. Después corregimos lo que no funciona. Las causas más comunes: formato equivocado, creatividades quemadas, segmentación demasiado amplia y, sobre todo, falta de optimización diaria.' },
-  { q: '¿Producen ustedes los visuales y los vídeos?', a: 'Sí. Vídeo, imagen, copy: todo calibrado a cada plataforma. La dirección artística la dirige el equipo. La producción la acelera la IA con HubStudio.ai.' },
-  { q: '¿Impulsar una publicación o montar una campaña en condiciones?', a: 'Promocionar un post puntual es rápido, pero se queda corto enseguida. Una campaña estructurada permite segmentación fina, test creativo, objetivos de conversión, una estrategia real de pujas y seguimiento del retorno publicitario. La diferencia de resultados suele ser enorme.' },
+  { q: '¿Producen ustedes los visuales y los vídeos?', a: 'Sí. Vídeo, imagen, copy: todo calibrado a cada plataforma. La dirección artística corre a cargo del equipo. La producción la acelera la IA con HubStudio.ai.' },
+  { q: '¿Impulsar una publicación o montar una campaña en condiciones?', a: 'Promocionar una publicación puntual es rápido, pero se queda corto enseguida. Una campaña estructurada permite segmentación fina, test creativo, objetivos de conversión, una estrategia real de pujas y seguimiento del retorno publicitario. La diferencia de resultados suele ser enorme.' },
   { q: '¿El ROAS sigue siendo el indicador clave?', a: 'En venta online y respuesta directa, sí, nueve de cada diez veces. En notoriedad cambiamos a coste por mil impresiones y alcance. Lo importante es acordar antes qué cuenta como éxito, no después de lanzar.' },
   { q: '¿Se puede emitir a la vez en varias plataformas?', a: 'Sí. Y a menudo es lo que toca. Douyin y RedNote cubren descubrimiento y notoriedad. WeChat permite reimpactar a quienes ya han interactuado en otro sitio. Cuadramos la combinación según objetivos y capacidad de inversión.' },
   { q: '¿Y la verificación de las cuentas publicitarias?', a: 'La mayoría de plataformas bloquea el gestor de anuncios hasta que la cuenta está verificada. Nos ocupamos del trámite completo. Entre una y tres semanas.' },
-  { q: '¿Cómo se calculan sus honorarios?', a: 'Honorarios fijos por diseño y gestión. El presupuesto publicitario va por separado, directo a las plataformas. Cero zonas grises.' },
+  { q: '¿Cómo se calculan sus honorarios?', a: 'Honorarios fijos por diseño y gestión. El presupuesto publicitario va por separado, directo a las plataformas. Sin zonas grises.' },
 ];
 
 const gettingStartedSteps = [
@@ -29,12 +29,12 @@ const gettingStartedSteps = [
   },
   {
     title: 'Plan de medios.',
-    description: 'Elección de plataformas, reparto del presupuesto, indicadores previstos. Alcance claro, honorarios de gestión fijos.',
+    description: 'Elección de plataformas, reparto del presupuesto e indicadores previstos. Alcance claro, honorarios de gestión fijos.',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>',
   },
   {
     title: 'Sus anuncios al aire en dos semanas.',
-    description: 'Apertura de cuentas, producción de visuales, lanzamiento. La optimización arranca desde el día uno.',
+    description: 'Apertura de cuentas, producción de visuales y lanzamiento. La optimización arranca desde el día uno.',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
   },
 ];
@@ -42,7 +42,7 @@ const gettingStartedSteps = [
 
 <PageLayout
   title="Publicidad en redes sociales chinas | TheRedScroll"
-  description="Compra de medios y optimización publicitaria en WeChat, Douyin y RedNote. Honorarios fijos, presupuesto publicitario transparente. Equipo en Shanghái."
+  description="Compra de medios y optimización en WeChat, Douyin, RedNote y Weibo. Honorarios fijos e inversión publicitaria transparente. Equipo propio en Shanghái."
   lang="es"
 >
 
@@ -53,10 +53,10 @@ const gettingStartedSteps = [
         Compra de medios y publicidad
       </p>
       <h1 class="text-[#FFFFFF] text-[48px] max-[1024px]:text-[40px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
-        Llegar a la audiencia adecuada, no solo a más audiencia.
+        Llegar al público adecuado, no solo a más público.
       </h1>
       <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
-        Planificamos, compramos y optimizamos sus campañas publicitarias en WeChat, Douyin, RedNote y Weibo. Honorarios de gestión fijos, inversión en medios con total transparencia.
+        Planificamos, compramos y optimizamos sus campañas publicitarias en WeChat, Douyin, RedNote y Weibo. Honorarios de gestión fijos e inversión en medios totalmente transparente.
       </p>
       <div class="flex items-center justify-center gap-[12px] flex-wrap">
         <Button variant="primary" href="/es/contacto/">Agendar una llamada</Button>
@@ -73,7 +73,7 @@ const gettingStartedSteps = [
           <div class="relative z-[1]">
             <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Por qué pagar</p>
             <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[16px]">La publicidad ya casi no es opcional</h2>
-            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[400px]">La visibilidad orgánica construye audiencia con el tiempo. Lo que no sabe hacer es llegar a las jóvenes de Shanghái de 25 a 34 años que buscaron «cuidado natural» la semana pasada. La publicidad sí.</p>
+            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[400px]">La visibilidad orgánica va creando audiencia con el tiempo. Lo que no sabe hacer es llegar a las jóvenes de Shanghái de 25 a 34 años que buscaron «cuidado natural» la semana pasada. La publicidad sí.</p>
           </div>
           <div class="relative z-[1] mt-[24px]">
             <Button variant="secondary-dark" href="#que-hacemos">Servicios</Button>
@@ -87,7 +87,7 @@ const gettingStartedSteps = [
         <div class="relative overflow-hidden bg-[#1A1A1A] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/></svg>
           <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Precisión</h3>
-          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.6)]">Segmentamos por edad, sexo, nivel de ciudad, intereses, tipo de dispositivo, hábitos de compra, historial de navegación. Sus anuncios aparecen exactamente donde usted decida.</p>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.6)]">Segmentamos por edad, sexo, nivel de ciudad, intereses, tipo de dispositivo, hábitos de compra e historial de navegación. Sus anuncios aparecen exactamente donde usted decida.</p>
         </div>
         <div class="relative overflow-hidden bg-[#CC3333] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
@@ -97,7 +97,7 @@ const gettingStartedSteps = [
         <div class="relative overflow-hidden bg-[#E8E0D8] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
           <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Pero la contrapartida es real</h3>
-          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">Una campaña mal pensada quema presupuesto más rápido que no tener campaña. Planificación de medios, optimización diaria e indicadores claros pesan tanto como los propios anuncios.</p>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">Una campaña mal pensada quema presupuesto más rápido que no anunciarse. Planificación de medios, optimización diaria e indicadores claros pesan tanto como los propios anuncios.</p>
         </div>
       </div>
     </Container>
@@ -124,14 +124,14 @@ const gettingStartedSteps = [
             <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
           </div>
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Planificación de medios</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Antes de gastar un euro, definimos el marco. Qué plataformas, qué formatos, qué perfiles de audiencia, cuánto a cada canal y qué coste por resultado puede aspirar a tener.</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Antes de gastar un euro, definimos el marco. Qué plataformas, qué formatos, qué perfiles de audiencia, cuánto a cada canal y a qué coste por resultado puede aspirar.</p>
         </div>
         <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
           <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
             <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
           </div>
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Montaje y optimización de campañas</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">De principio a fin. Apertura de cuentas, envío de creatividades, segmentación, estrategia de pujas, test A/B. Optimización diaria. Una creatividad que rinde el lunes puede gastarse el jueves.</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">De principio a fin. Apertura de cuentas, envío de creatividades, segmentación, estrategia de pujas y test A/B. Optimización diaria. Una creatividad que rinde el lunes puede gastarse el jueves.</p>
         </div>
         <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
           <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
@@ -151,20 +151,20 @@ const gettingStartedSteps = [
         <h2 class="text-[#FFFFFF] text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] mb-[16px]">De la creatividad al seguimiento, con la conformidad incluida</h2>
         <div class="max-w-[680px] flex flex-col gap-[24px] mb-[32px]">
           <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
-            Un anuncio que parece un anuncio no lo mira nadie. El que se parece a contenido nativo, en cambio, engancha. Diseñamos creatividades calibradas al formato propio de cada plataforma y las renovamos antes de que el rendimiento baje. La IA absorbe el volumen de producción. La dirección artística la mantiene nuestro equipo.
+            Un anuncio que parece un anuncio no lo mira nadie. El que se parece a contenido nativo, en cambio, engancha. Diseñamos creatividades calibradas al formato propio de cada plataforma y las renovamos antes de que el rendimiento baje. La IA asume el volumen de producción. La dirección artística la mantiene nuestro equipo.
           </p>
         </div>
         <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[24px]">
           <div>
             <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Retargeting y audiencias a medida</h3>
             <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
-              ¿Alguien vio medio vídeo en Douyin y no hizo clic? Le impactamos con otro ángulo. ¿Un usuario pasó por su Mini Program sin comprar? Lo recuperamos con otro gancho. En RedNote construimos audiencias con quienes interactuaron con notas concretas o buscaron ciertos términos. Suele ser donde el ROAS más sube.
+              ¿Alguien vio medio vídeo en Douyin y no hizo clic? Le impactamos con otro ángulo. ¿Un usuario pasó por su Mini Program sin comprar? Lo recuperamos con otro gancho. En RedNote creamos audiencias con quienes interactuaron con notas concretas o buscaron ciertos términos. Suele ser donde el ROAS más sube.
             </p>
           </div>
           <div>
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Conformidad y validación de anuncios</h3>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Conformidad y revisión de anuncios</h3>
             <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
-              Cada plataforma tiene sus normas de validación. Algunos sectores están restringidos, otros directamente prohibidos. Nos encargamos de las comprobaciones de conformidad por adelantado, del proceso de aprobación y avisamos de las limitaciones sectoriales antes de que se invierta un solo euro.
+              Cada plataforma tiene sus normas de revisión. Algunos sectores están restringidos, otros directamente prohibidos. Nos ocupamos de las comprobaciones de conformidad por adelantado, del proceso de aprobación y avisamos de las limitaciones sectoriales antes de que se invierta un solo euro.
             </p>
           </div>
           <div>
@@ -176,7 +176,7 @@ const gettingStartedSteps = [
           <div>
             <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Presupuesto transparente</h3>
             <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
-              El presupuesto publicitario se factura aparte. Sin comisiones. Sin extras ocultos en la compra de medios. Ve exactamente adónde va cada euro.
+              El presupuesto publicitario se factura aparte. Sin comisiones. Sin extras ocultos en la compra de medios. Sabe exactamente adónde va cada euro.
             </p>
           </div>
         </div>
@@ -189,7 +189,7 @@ const gettingStartedSteps = [
       <SectionBar />
       <SectionHeading overline="Formatos y tarifas orientativas">WeChat (vía Tencent Ads)</SectionHeading>
       <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)] mb-[24px] max-w-[680px]">
-        Las tarifas siguientes se basan en datos del primer trimestre de 2026 y en nuestras propias referencias. Sirven para encuadrar el presupuesto. No son presupuestos cerrados.
+        Las tarifas que siguen se basan en datos del primer trimestre de 2026 y en nuestras propias referencias. Sirven para encuadrar el presupuesto. No son presupuestos cerrados.
       </p>
 
       <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
@@ -235,7 +235,7 @@ const gettingStartedSteps = [
           <img src="/images/ad-formats/douyin-in-feed.svg" alt="Anuncio de vídeo en el feed Para Ti de Douyin" class="w-full aspect-[16/10] object-cover" loading="lazy" decoding="async" />
           <div class="p-[24px] max-[640px]:p-[20px]">
             <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Anuncios en feed</h3>
-            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Vídeo de hasta 60 segundos en el feed «Para Ti». Coste por clic desde 0,2 €. Coste por mil entre 10 y 50 €. Compatible con enlaces de compra, formularios de captación y Douyin Shop. El formato estrella para resultados.</p>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Vídeo de hasta 60 segundos en el feed «Para Ti». Coste por clic desde 0,2 €. Coste por mil entre 10 y 50 €. Compatible con enlaces de compra, formularios de captación y Douyin Shop. El formato estrella para conseguir resultados.</p>
           </div>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
@@ -301,7 +301,7 @@ const gettingStartedSteps = [
           <img src="/images/ad-formats/rednote-kol-seeding.svg" alt="Product seeding con creadores en RedNote vía Pugongying" class="w-full aspect-[16/10] object-cover" loading="lazy" decoding="async" />
           <div class="p-[24px] max-[640px]:p-[20px]">
             <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Seeding con creadores (Pugongying)</h3>
-            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Las marcas pagan a creadores por contenidos con apariencia espontánea. Microprescriptores desde 500 € por post. Creadores intermedios entre 5.000 y 30.000 €. Top: 50.000 € y mucho más.</p>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Las marcas pagan a creadores por contenidos con apariencia espontánea. Microprescriptores desde 500 € por publicación. Creadores intermedios entre 5.000 y 30.000 €. Top: 50.000 € y mucho más.</p>
           </div>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
@@ -339,7 +339,7 @@ const gettingStartedSteps = [
 
   <GettingStarted
     lang="es"
-    heading="Del primer contacto a los anuncios al aire, bastan dos semanas."
+    heading="Del primer contacto a los anuncios al aire, dos semanas."
     steps={gettingStartedSteps}
     backgroundImage="/images/getting-started/advertising.webp"
     crossLinks={[

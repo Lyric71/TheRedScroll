@@ -1,4 +1,4 @@
-﻿---
+---
 import PageLayout from '../../../layouts/PageLayout.astro';
 import Container from '../../../components/ui/Container.astro';
 import SectionBar from '../../../components/ui/SectionBar.astro';
@@ -13,12 +13,12 @@ const faqs = [
   { q: '¿Solo trabajan con marcas en fase de lanzamiento?', a: 'No. Trabajamos tres perfiles: marcas que aterrizan en China, marcas ya instaladas que quieren mejores resultados y marcas locales que buscan ganar terreno en redes. Tres puntos de partida distintos, una misma exigencia.' },
   { q: '¿Se puede empezar con una sola plataforma?', a: 'Sí, y suele ser nuestra recomendación. Concentrar recursos, identificar qué funciona, asentar una dinámica y, después, ampliar.' },
   { q: '¿Qué plataformas cubren?', a: 'WeChat, Douyin, RedNote y Weibo están incluidos en todos los paquetes. Bilibili, Zhihu, Kuaishou, Toutiao, Meituan, Dianping y otras nueve plataformas están disponibles como opciones.' },
-  { q: '¿Cómo se estructuran los precios?', a: 'Alcance cerrado, precio fijo. Lista de entregables y cuota mensual única. El gasto publicitario se factura aparte. Sin extras ocultos ni desviaciones a mitad de contrato.' },
-  { q: '¿En qué se diferencia su análisis de un panel típico?', a: 'Seguimiento de rendimiento multiplataforma, comparativas competitivas detalladas, datos de interacción contenido a contenido. Y, sobre todo, traducimos esas cifras en recomendaciones que se pueden aplicar. No simples gráficas.' },
+  { q: '¿Cómo se estructuran los precios?', a: 'Circuito cerrado, precio fijo. Lista de entregables y cuota mensual única. El gasto publicitario se factura aparte. Sin extras ocultos ni desviaciones a mitad de contrato.' },
+  { q: '¿En qué se diferencia su análisis de un panel típico?', a: 'Seguimiento de rendimiento multiplataforma, comparativas competitivas detalladas y datos de interacción contenido por contenido. Y, sobre todo, traducimos esas cifras en recomendaciones que se pueden aplicar. No simples gráficas.' },
   { q: '¿Gestionan también la producción de contenido o solo la estrategia?', a: 'La estrategia y las campañas entran en este servicio. La producción (visuales, vídeos, redacción) es un servicio aparte, pero ambos van de la mano: la estrategia marca lo que se produce.' },
-  { q: '¿Con qué frecuencia se revisa la estrategia?', a: 'Como mínimo una vez al mes. Cada trimestre vamos más a fondo: recalibrado de indicadores, actualización del comparativo competitivo, revisión de las plataformas elegidas.' },
+  { q: '¿Con qué frecuencia se revisa la estrategia?', a: 'Como mínimo una vez al mes. Cada trimestre vamos más a fondo: recalibrado de indicadores, actualización del comparativo competitivo y revisión de las plataformas elegidas.' },
   { q: '¿Pueden trabajar en paralelo con nuestro equipo interno o nuestra agencia actual?', a: 'Algunos clientes nos dejan toda la operación. Otros solo nos piden la estrategia y mantienen la ejecución en casa. Nos adaptamos al modelo organizativo que prefiera.' },
-  { q: '¿Y si ya tenemos cuentas pero no producen resultados?', a: 'Empezamos con una auditoría: cuentas existentes, contenidos publicados, interacción, posición frente a la competencia. Luego construimos una estrategia revisada a partir de lo que dicen los datos. A veces el problema está en la elección de plataforma. Otras, en el propio contenido, en la cadencia o en el calendario editorial. Identificamos el punto débil antes de mover nada.' },
+  { q: '¿Y si ya tenemos cuentas pero no producen resultados?', a: 'Empezamos con una auditoría: cuentas existentes, contenidos publicados, interacción y posición frente a la competencia. Luego trazamos una estrategia revisada a partir de lo que dicen los datos. A veces el problema está en la elección de plataforma. Otras, en el propio contenido, en la cadencia o en el calendario editorial. Identificamos el punto débil antes de mover nada.' },
 ];
 
 const gettingStartedSteps = [
@@ -29,12 +29,12 @@ const gettingStartedSteps = [
   },
   {
     title: 'Propuesta.',
-    description: 'Alcance cerrado, precio fijo, cada entregable detallado. Sabe exactamente lo que recibe antes de firmar.',
+    description: 'Circuito cerrado, precio fijo, cada entregable detallado. Sabe con exactitud qué recibe antes de firmar.',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>',
   },
   {
     title: 'En marcha en dos semanas.',
-    description: 'Estrategia entregada, campañas montadas, primeros contenidos publicados. Dos semanas después de la firma.',
+    description: 'Estrategia entregada, campañas montadas y primeros contenidos publicados. Dos semanas después de la firma.',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
   },
 ];
@@ -42,7 +42,7 @@ const gettingStartedSteps = [
 
 <PageLayout
   title="Estrategia de redes sociales y campañas en China | TheRedScroll"
-  description="Estrategia de redes sociales, dirección de campañas y medición para marcas presentes en China. Alcance cerrado, precio fijo. Equipo en Shanghái."
+  description="Estrategia de redes sociales, dirección de campañas y medición para marcas presentes en China. Circuito cerrado y precio fijo. Equipo propio en Shanghái."
   lang="es"
 >
 
@@ -56,7 +56,7 @@ const gettingStartedSteps = [
         La estrategia adecuada. Las plataformas adecuadas. Las cifras que tocan.
       </h1>
       <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
-        Analizamos su mercado, construimos el plan, dirigimos las campañas y medimos lo que de verdad importa. Desde Shanghái y Hong Kong.
+        Analizamos su mercado, trazamos el plan, dirigimos las campañas y medimos lo que de verdad importa. Desde Shanghái y Hong Kong.
       </p>
       <div class="flex items-center justify-center gap-[12px] flex-wrap">
         <Button variant="primary" href="/es/contacto/">Agendar una llamada</Button>
@@ -70,7 +70,7 @@ const gettingStartedSteps = [
       <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[48px] max-[640px]:gap-[32px] items-center">
         <div>
           <SectionBar />
-          <SectionHeading overline="El diagnóstico">La mayoría de las marcas publica sin un plan de conjunto.</SectionHeading>
+          <SectionHeading overline="El diagnóstico">La mayoría de las marcas publica sin una visión de conjunto.</SectionHeading>
           <div class="flex flex-col gap-[24px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
             <p>
               Eligen las plataformas a ojo, publican cuando encuentran un hueco y solo miran las cifras una vez al trimestre. A veces menos.
@@ -79,7 +79,7 @@ const gettingStartedSteps = [
               Una estrategia seria parte de otras premisas: qué plataformas encajan con su sector, qué hacen sus competidores y dónde patinan, qué formatos rinden, cómo comprobar con cifras que la maquinaria funciona.
             </p>
             <p>
-              Cada estrategia la construimos desde cero. Datos de mercado reales, análisis competitivo a fondo, conocimiento diario de las plataformas. Las campañas las dirigimos en casa, sin intermediarios.
+              Cada estrategia la diseñamos desde cero. Datos de mercado reales, análisis competitivo a fondo, conocimiento diario de las plataformas. Las campañas las dirigimos en casa, sin intermediarios.
             </p>
           </div>
         </div>
@@ -143,7 +143,7 @@ const gettingStartedSteps = [
             <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
           </div>
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Análisis competitivo</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Cartografiamos las cuentas de su competencia en cada plataforma importante. Seguidores, cadencia de publicación, tasa de interacción, líneas editoriales, inversión publicitaria. Un análisis calibrado a su marca, nunca un informe genérico.</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Cartografiamos las cuentas de su competencia en cada plataforma importante. Seguidores, cadencia de publicación, tasa de interacción, líneas editoriales e inversión publicitaria. Un análisis calibrado a su marca, nunca un informe genérico.</p>
         </div>
         <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
           <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
@@ -157,7 +157,7 @@ const gettingStartedSteps = [
             <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
           </div>
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">Estrategia editorial y calendario</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Pilares de contenido, líneas de discurso, tono adaptado a cada plataforma. Temas, formatos, ritmo de publicación. Cada plataforma con su calendario, reajustado cada mes según resultados.</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">Pilares de contenido, líneas de discurso, tono adaptado a cada plataforma. Temas, formatos y ritmo de publicación. Cada plataforma con su calendario, reajustado cada mes según resultados.</p>
         </div>
       </div>
     </Container>
@@ -186,7 +186,7 @@ const gettingStartedSteps = [
             <div>
               <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">Dirección creativa</h3>
               <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
-                Redactamos un brief creativo para cada campaña. Dirección visual, tono, restricciones de formato, referencias específicas de cada plataforma. Cada brief se apoya en lo que de verdad funciona en la plataforma objetivo. Diseccionamos los contenidos mejor posicionados de su categoría, tomamos referencias de los posts con mejor rendimiento e identificamos los contenidos de KOL (Key Opinion Leader) que captan la atención en ese momento.
+                Redactamos un brief creativo para cada campaña. Dirección visual, tono, restricciones de formato y referencias específicas de cada plataforma. Cada brief se apoya en lo que de verdad funciona en la plataforma objetivo. Diseccionamos los contenidos mejor posicionados de su categoría, tomamos referencias de las publicaciones con mejor rendimiento e identificamos los contenidos de KOL (Key Opinion Leader) que captan la atención en ese momento.
               </p>
             </div>
             <div>
@@ -214,7 +214,7 @@ const gettingStartedSteps = [
           </div>
           <div class="col-content">
             <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Gestión de cuentas</h3>
-            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Llevamos la operación diaria en WeChat, Douyin, RedNote, Weibo y catorce plataformas más. Publicación, dinamización de comunidad, moderación de comentarios, seguimiento de tendencias. Se ahorra el montaje de un equipo local.</p>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Llevamos la operación diaria en WeChat, Douyin, RedNote, Weibo y catorce plataformas más. Publicación, dinamización de comunidad, moderación de comentarios y seguimiento de tendencias. Se ahorra el montaje de un equipo local.</p>
           </div>
         </div>
 
@@ -224,7 +224,7 @@ const gettingStartedSteps = [
           </div>
           <div class="col-content">
             <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Campañas y activaciones especiales</h3>
-            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Campañas estacionales, lanzamientos de producto, activaciones de evento, aceleraciones multiplataforma. Brief preciso, indicadores cerrados, planificación inversa, balance detallado al cierre.</p>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Campañas estacionales, lanzamientos de producto, activaciones de evento y aceleraciones multiplataforma. Brief preciso, indicadores cerrados, planificación a la inversa y balance detallado al cierre.</p>
           </div>
         </div>
 
@@ -234,7 +234,7 @@ const gettingStartedSteps = [
           </div>
           <div class="col-content">
             <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Indicadores y objetivos</h3>
-            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Objetivos medibles desde el primer día. Crecimiento de seguidores, tasa de interacción, visualizaciones de vídeo, tasa de clic, conversiones. Indicadores anclados a resultados concretos, nunca a cifras de escaparate. Revisión mensual, recalibrado trimestral.</p>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Objetivos medibles desde el primer día. Crecimiento de seguidores, tasa de interacción, visualizaciones de vídeo, tasa de clic y conversiones. Indicadores anclados a resultados concretos, nunca a cifras de escaparate. Revisión mensual, recalibrado trimestral.</p>
           </div>
         </div>
 
@@ -244,7 +244,7 @@ const gettingStartedSteps = [
           </div>
           <div class="col-content">
             <h3 class="text-[20px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Análisis e informes</h3>
-            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Los informes mensuales cubren crecimiento de seguidores, tasas de interacción, rendimiento por contenido, retorno de la inversión publicitaria y comparativa competitiva. Seguimiento multiplataforma, datos de interacción detallados, recomendaciones incluidas. No simples gráficas.</p>
+            <p class="text-[14px] font-normal leading-[1.6] text-[var(--color-stone)]">Los informes mensuales cubren crecimiento de seguidores, tasas de interacción, rendimiento por contenido, retorno de la inversión publicitaria y comparativa competitiva. Seguimiento multiplataforma, datos de interacción detallados y recomendaciones incluidas. No simples gráficas.</p>
           </div>
         </div>
 
@@ -378,7 +378,7 @@ const gettingStartedSteps = [
 
   <GettingStarted
     lang="es"
-    heading="De la primera llamada a las campañas en marcha, bastan dos semanas."
+    heading="De la primera llamada a las campañas en marcha, dos semanas."
     steps={gettingStartedSteps}
     backgroundImage="/images/getting-started/strategy-campaigns.webp"
     crossLinks={[

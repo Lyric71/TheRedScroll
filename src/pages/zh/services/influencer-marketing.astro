@@ -9,12 +9,12 @@ import GettingStarted from '../../../components/sections/GettingStarted.astro';
 
 
 const faqs = [
-  { q: '怎么识别假粉丝？', a: '交叉比对粉丝数、互动率、评论质量和粉丝画像。一个号称 20 万粉的博主，每条笔记只有 50 条评论，大多数还是表情包，这就是很明显的信号。星图、蒲公英这些官方工具也能给到一部分认证数据。做过几百个项目之后，可疑账号基本一眼就能看出来。' },
-  { q: '一场营销战役一般要用多少个 KOL？', a: '看目标。铺量种草：20 到 50 个 KOC。品牌认知：3 到 5 个中腰部通常就够了。重磅新品首发：一个头部加 10 到 15 个 KOC 起步。具体怎么搭，看预算和优先级怎么排。' },
-  { q: '发布之前我们能不能审稿？', a: '大多数情况可以。我们会在发布前把草稿或预览先发给你。有些博主不太能接受大幅改动，因为一改多，内容就失了"自然感"，说实话这一点他们也有道理。但核心信息、合规标注、品牌规范这些，我们一定会在发布前一条一条过。' },
+  { q: '怎么识别假粉丝？', a: '交叉比对粉丝数、互动率、评论质量和粉丝画像。一个号称 20 万粉的博主，每条笔记只有 50 条评论，大半还是表情包，这信号就很明显了。星图、蒲公英这些官方工具也能给一部分认证数据。做过几百个项目，可疑账号基本一眼就能认出来。' },
+  { q: '一场营销战役一般要用多少个 KOL？', a: '看目标。铺量种草：20 到 50 个 KOC。打品牌认知：3 到 5 个中腰部通常就够。重磅新品首发：一个头部加 10 到 15 个 KOC 起步。具体怎么搭，看预算和优先级怎么排。' },
+  { q: '发布之前我们能不能审稿？', a: '大多数情况可以。我们会在发布前把草稿或预览先发给你。有些博主不太接受大改，因为改多了，内容就失了那股“自然感”，说实话这一点也有道理。但核心信息、合规标注、品牌规范这些，我们一定会在发布前逐条过。' },
   { q: 'KOL 和 KOC 到底有什么区别？', a: 'KOL 是专业博主，粉丝量大，内容做得精。KOC（关键意见消费者）就是普通用户，粉丝不多，但会自发分享使用体验。一句话：KOL 负责给你曝光，KOC 负责给你信任和搜索可见度。多数营销战役两者都要一起用。' },
   { q: '从立项到首条内容上线，大概要多久？', a: '一般两到四周：从方案敲定，到首条内容发出。这段时间里包括选人、对接、商务、创意、制作、审稿。KOC 铺量型项目还能更快，有时候一到两周就跑起来了。' },
-  { q: 'KOL的内容，我们能不能拿去做广告投放？', a: '可以，但这不是默认就有的权限。二次使用权必须提前谈。一部分博主的报价里本身就含广告授权，另一部分要单独买授权，费用通常会贵出30%到50%。我们在签合同阶段就会把这些条款理清楚，不会让你后面踩坑。' },
+  { q: 'KOL的内容，我们能不能拿去做广告投放？', a: '可以，但这不是默认就有的权限，二次使用权必须提前谈。一部分博主的报价里本身就含广告授权，另一部分要单独买，费用通常会贵出 30% 到 50%。我们在签合同阶段就把这些条款理清楚，不会让你后面踩坑。' },
   { q: '哪些行业跑达人营销效果最好？', a: '美妆、护肤、时尚最靠前，原因很简单：博主资源最丰富。食品饮料、健康养生、酒旅、消费电子紧随其后。B2B 品牌也能跑，尤其在微信和知乎上，只是博主池子相对窄一些。' },
   { q: 'KOL 这边的打款，是你们走账吗？', a: '全程由我们负责。商务谈判、合同、打款、发票、税务都走我们。你把钱付给我们，剩下跟博主和 MCN 的事情都由我们直接对接。' },
 ];
@@ -32,7 +32,7 @@ const gettingStartedSteps = [
   },
   {
     title: '2到4周首条内容上线',
-    description: '博主对接、创意brief、内容制作、审稿、发布，全部串下来。',
+    description: '博主对接、创意 brief、内容制作、审稿、发布，全程串下来。',
     icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
   },
 ];
@@ -41,7 +41,7 @@ const gettingStartedSteps = [
 <PageLayout
   lang="zh"
   title="中国KOL和KOC达人营销 | TheRedScroll"
-  description="抖音、小红书、微信上的达人营销。选人、直播带货、全流程执行。范围写清楚，团队驻扎上海。"
+  description="抖音、小红书、微信上的达人营销。选人、直播带货到全流程执行。范围写清楚，团队驻扎上海。"
 >
 
   <!-- Hero — Dark hero banner -->
@@ -92,7 +92,7 @@ const gettingStartedSteps = [
         <div class="relative overflow-hidden bg-[#CC3333] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
           <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">市场还在涨</h3>
-          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.8)]">国内达人营销的市场规模，预计到2025年底将突破1,170亿元。超过一半的广告主，已经把这个渠道用起来了。</p>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.8)]">国内达人营销的市场规模，预计到 2025 年底将突破 1,170 亿元。超过半数的广告主，已经把这个渠道用了起来。</p>
         </div>
         <div class="relative overflow-hidden bg-[#E8E0D8] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
@@ -133,7 +133,7 @@ const gettingStartedSteps = [
             <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
           </div>
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">商务谈判</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">我们出面谈价、谈授权、谈排他、确认交付清单。首次报价和实际成交价之间，经常能差出15%以上。哪儿才是合理区间，我们心里有数。</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">我们出面谈价、谈授权、谈排他、确认交付清单。首次报价和实际成交价之间，经常能差出 15% 以上。哪儿才是合理区间，我们心里有数。</p>
         </div>
       </div>
     </Container>
@@ -192,7 +192,7 @@ const gettingStartedSteps = [
               MCN（Multi-Channel Network），说白了就是博主的经纪公司。MCN和KOL、KOC签约，帮他们打理内容、接商单、做变现。
             </p>
             <p>
-              截至2025年，国内注册的MCN大概有29,000家。这些机构负责培养博主、制作内容、跑直播带货的运营流程，同时也把合规这一块顶上。抖音和小红书上不少头部博主，背后都签着一家MCN。
+              截至 2025 年，国内注册的 MCN 大约有 29,000 家。这些机构负责培养博主、制作内容、运营直播带货，同时也把合规这一块顶上。抖音和小红书上不少头部博主，背后都签着一家 MCN。
             </p>
             <p>
               想跟中腰部以上的KOL合作，对接的基本都是他们背后的MCN。我们跟抖音、小红书、微信上主要的几家MCN都保持着长期合作关系。这意味着响应更快，能约到档期紧的博主，也能谈下那些从零开始接触时根本拿不到的价格和条件。
@@ -214,7 +214,7 @@ const gettingStartedSteps = [
           <SectionBar />
           <SectionHeading overline="价格参考">小红书</SectionHeading>
           <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">
-            价格主要看粉丝数、互动率、内容形式、行业，以及是否带排他权。下面是2026年Q1的市场大致区间，目的是给你一个量级感，不是正式报价。
+            价格主要看粉丝数、互动率、内容形式、行业，以及是否带排他权。下面是 2026 年 Q1 的市场大致区间，目的是给你一个量级感，不是正式报价。
           </p>
         </div>
         <div class="flex items-center justify-center">
@@ -224,20 +224,20 @@ const gettingStartedSteps = [
 
       <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">素人KOC（5,000粉丝以下）</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">每篇¥100到¥500，或者走产品置换。适合用大量笔记铺满搜索结果的种草型项目。</p>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">素人 KOC（5,000 粉丝以下）</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">每篇 ¥100 到 ¥500，或走产品置换。适合用大量笔记铺满搜索结果的种草型项目。</p>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">小型KOC（5,000到20,000粉丝）</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">每篇¥500到¥3,000。互动率通常更高一些。最适合产出可信的产品评测和自然流传的口碑。</p>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">小型 KOC（5,000 到 20,000 粉丝）</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">每篇 ¥500 到 ¥3,000。互动率通常更高一些。最适合产出可信的产品评测和自然流传的口碑。</p>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">中腰部KOL（20,000到100,000粉丝）</h3>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">中腰部 KOL（20,000 到 100,000 粉丝）</h3>
           <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">每篇 ¥3,000 到 ¥15,000。对大多数营销战役来说，性价比是最高的那一档。覆盖面够广、可信度也够，单次互动的成本合理。</p>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">头部KOL（100,000粉丝以上）</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">每篇¥15,000到¥80,000及以上。美妆和奢侈品类博主一般还要再溢价50%左右。视频笔记的报价比图文笔记贵20%到30%。</p>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">头部 KOL（100,000 粉丝以上）</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">每篇 ¥15,000 到 ¥80,000 及以上。美妆和奢侈品类博主一般还要再溢价 50% 左右。视频笔记比图文笔记贵 20% 到 30%。</p>
         </div>
       </div>
     </Container>
@@ -258,20 +258,20 @@ const gettingStartedSteps = [
 
       <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">小型创作者（50,000粉丝以下）</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">每条视频¥1,000到¥5,000。适合做产品演示和教程类的内容。</p>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">小型创作者（50,000 粉丝以下）</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">每条视频 ¥1,000 到 ¥5,000。适合做产品演示和教程类内容。</p>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">中腰部KOL（50,000到500,000粉丝）</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">每条视频¥5,000到¥30,000。适合打品牌认知，也适合给抖音小店引流。</p>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">中腰部 KOL（50,000 到 500,000 粉丝）</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">每条视频 ¥5,000 到 ¥30,000。适合打品牌认知，也适合给抖音小店引流。</p>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">头部KOL（500,000粉丝以上）</h3>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">头部 KOL（500,000 粉丝以上）</h3>
           <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">每条视频 ¥30,000 到 ¥200,000 及以上。这一档是整场营销战役的核心引擎，通常会跟直播带货场次联动起来做。</p>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
           <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">直播带货主播</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">基础坑位费外加20%到40%的销售佣金。一位好主播，一场直播就能卖出几万件货。</p>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">基础坑位费，外加 20% 到 40% 的销售佣金。一位好主播，一场直播就能卖出几万件货。</p>
         </div>
       </div>
     </Container>
@@ -296,8 +296,8 @@ const gettingStartedSteps = [
           <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">每篇 ¥5,000 到 ¥50,000 及以上，具体看平均阅读量。大致的基准是每次阅读 ¥1。单次曝光成本在各大平台里最高，但这里的受众完全是另一回事：注意力更集中，质量也更高。</p>
         </div>
         <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">视频号KOL（视频）</h3>
-          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">每条视频¥3,000到¥20,000。视频号还是一种比较年轻的形式，价格体系不像抖音那样成熟，但整个市场正在很快地变化。</p>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">视频号 KOL（视频）</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">每条视频 ¥3,000 到 ¥20,000。视频号还是一种比较年轻的形式，价格体系不像抖音那样成熟，但整个市场正在快速变化。</p>
         </div>
       </div>
     </Container>

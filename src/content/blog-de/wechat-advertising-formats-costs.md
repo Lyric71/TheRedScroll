@@ -29,14 +29,14 @@ Sechs Positionen, verteilt über das Ökosystem. Jede erfüllt eine leicht ander
 
 | Platzierung | Wo sie erscheint | Wofür sie gedacht ist |
 |---|---|---|
-| Moments | Im persönlichen Feed des Nutzers, gestaltet wie ein Beitrag eines Freundes | Bekanntheit, Produktlaunches, große Kampagnen |
-| Official Accounts | Unter Artikeln, in der Artikelmitte, als Pre-Roll-Video | Conversion über Inhalte, Abonnentengewinnung |
-| Mini Programs | Banner, Interstitials, Rewarded Video in Mini Programs | E-Commerce, Downloads, Games |
-| Channels | Video im Feed von WeChat Channels | Video-Reichweite, Livestream-Promotion, Produktentdeckung |
+| Moments | Im persönlichen Feed des Nutzers, gestaltet wie ein Beitrag eines Freundes | Bekanntheit, Produkteinführungen, große Kampagnen |
+| Official Accounts | Unter Artikeln, in der Artikelmitte, als Pre-Roll-Video | Abschluss über Inhalte, Abonnentengewinnung |
+| Mini Programs | Banner, Interstitials, Rewarded Video in Mini Programs | E-Commerce, Downloads, Spiele |
+| Channels | Video im Feed von WeChat Channels | Video-Reichweite, Bewerbung von Livestreams, Produktentdeckung |
 | Search | Treffer in der WeChat-Suche | Intentions-Targeting, Markenschutz |
-| Top Stories | Im redaktionell kuratierten Feed | Artikelentdeckung, Content-Promotion |
+| Top Stories | Im redaktionell kuratierten Feed | Artikelentdeckung, Bewerbung von Inhalten |
 
-![Ein WeChat-Channels-Videoanzeigenplatz erscheint im Feed zwischen Creator-Inhalten](/images/blog/wechat-channels-ad.webp)
+![Ein WeChat-Channels-Videoanzeigenplatz erscheint im Feed zwischen Inhalten der Creator](/images/blog/wechat-channels-ad.webp)
 
 Das Format, das man im Blick behalten sollte, sind Channels. Mehr als 800 Millionen aktive Nutzer täglich im Jahr 2025, nach Angaben von Tencent. Die Werbeerlöse legten 2024 binnen Jahresfrist um 60 Prozent zu. Die Preise liegen weiterhin spürbar unter denen der Moments. Für Marken, die Video-Reichweite suchen, ohne Moments-Budgets zu spielen, ist das derzeit sehr wahrscheinlich das interessanteste Format.
 
@@ -54,9 +54,9 @@ Das verbreitetste Modell für Moments und Bekanntheitskampagnen. Die Tarife schw
 | Schlüsselstädte (Guangzhou, Shenzhen, Chengdu, Hangzhou und 18 weitere) | rund 100 Yuan pro tausend | 60 bis 200 Yuan pro tausend |
 | Übrige Städte | rund 50 Yuan pro tausend | 30 bis 200 Yuan pro tausend |
 
-Video kostet bei gleichem Einblendungsvolumen 30 bis 50 Prozent mehr als Bild. Zur Einordnung: Der CPM für bezahlten Douyin-Traffic über Ocean Engine bewegt sich zwischen 30 und 60 Yuan, betrifft jedoch die Verstärkung bestehender Inhalte, nicht ein natives Placement im persönlichen Feed. Der höhere Moments-CPM rechtfertigt sich, weil man einen Platz in einem intimen sozialen Feed kauft, mit Vertrauenssignalen, die anderswo nicht zu haben sind.
+Video kostet bei gleichem Einblendungsvolumen 30 bis 50 Prozent mehr als Bild. Zur Einordnung: Der CPM für bezahlte Douyin-Reichweite über Ocean Engine bewegt sich zwischen 30 und 60 Yuan, betrifft jedoch die Verstärkung bestehender Inhalte, nicht eine native Platzierung im persönlichen Feed. Der höhere Moments-CPM rechtfertigt sich, weil man einen Platz in einem intimen sozialen Feed kauft, mit Vertrauenssignalen, die anderswo nicht zu haben sind.
 
-> Quelle: Zhihu, Branchenreferenzen
+> Quelle: Zhihu, Branchenwerte
 
 ### CPC: Bezahlung je Klick
 
@@ -80,7 +80,7 @@ An dieser Stelle staunen Marken oft. Die Mindestbeträge hängen vollständig vo
 | Bietverfahren | 1.000 Yuan Aufladung, 1.000 Yuan Tagesbudget |
 | Lokale Werbung | 300 Yuan pro Tag (rund 40 €) |
 
-Die 50.000 Yuan im Direkteinkauf gelten als Format für Großoperationen. Hier reserviert man garantierte Einblendungen zwischen einem und 28 Tagen im Voraus: Produktlaunches, saisonale Kampagnen, Events. Man zahlt, die Sichtbarkeit ist gesichert.
+Die 50.000 Yuan im Direkteinkauf gelten als Format für Großoperationen. Hier reserviert man garantierte Einblendungen zwischen einem und 28 Tagen im Voraus: Produkteinführungen, saisonale Kampagnen, Veranstaltungen. Man zahlt, die Sichtbarkeit ist gesichert.
 
 > Quelle: Niaoge Biji, Digitaling
 
@@ -92,13 +92,13 @@ Die lokale Werbung zu 300 Yuan pro Tag ist die günstigste Option, deckt aber nu
 
 ## Was man Ihnen selten sagt
 
-**Die kreative Freigabe ist streng.** Und zeitaufwendig. WeChat lehnt überzogene Aussagen, unbelegte Statistiken, Gesundheitsversprechen ohne behördliche Zertifizierung sowie jede Aufforderung zum Teilen oder Weiterleiten kategorisch ab. Planen Sie ein bis zwei Werktage ein. Wer das nicht im Zeitplan hat, riskiert das Launch-Fenster.
+**Die kreative Freigabe ist streng.** Und zeitaufwendig. WeChat lehnt überzogene Aussagen, unbelegte Statistiken, Gesundheitsversprechen ohne behördliche Zertifizierung sowie jede Aufforderung zum Teilen oder Weiterleiten kategorisch ab. Planen Sie ein bis zwei Werktage ein. Wer das nicht im Zeitplan hat, riskiert das Startfenster.
 
 **Ihre Anzeigen konkurrieren mit echten Menschen.** Es ist kein Werbebanner auf einer Website. Ihre Anzeige steht zwischen dem Foto vom Sohn eines Freundes und dem Urlaub eines Kollegen. Wenn sie nicht ins Bild passt, wird sie übersehen.
 
-**Drei Visual-Wechsel pro Monat, nicht mehr.** Jede Änderung läuft erneut durch die Freigabe. Halten Sie Ihre Motive im Voraus bereit.
+**Drei Motivwechsel pro Monat, nicht mehr.** Jede Änderung läuft erneut durch die Freigabe. Halten Sie Ihre Motive im Voraus bereit.
 
-**Die Prime Time kostet.** Gebote zwischen 19 und 21 Uhr liegen 20 bis 40 Prozent über den Tagesrandstunden. Bei knappem Budget zuerst die Tagesfenster testen.
+**Die Hauptzeit kostet.** Gebote zwischen 19 und 21 Uhr liegen 20 bis 40 Prozent über den Tagesrandstunden. Bei knappem Budget zuerst die Tagesfenster testen.
 
 > Quelle: Aiyong Tech
 
@@ -106,6 +106,6 @@ Die lokale Werbung zu 300 Yuan pro Tag ist die günstigste Option, deckt aber nu
 
 > WeChat-Werbung ist nicht billig. Aber um chinesische Konsumenten in einer Vertrauensumgebung zu erreichen, gibt es nichts Vergleichbares.
 
-Moments für Bekanntheit. Official Accounts für Conversion über Inhalte. Channels für Video-Reichweite zu vertretbarem Preis. Search für jene, die schon eine Idee im Kopf haben. Sie testen im Bietverfahren, sie wechseln in den Direkteinkauf, sobald die Daten stehen.
+Moments für Bekanntheit. Official Accounts für den Abschluss über Inhalte. Channels für Video-Reichweite zu vertretbarem Preis. Search für jene, die schon eine Idee im Kopf haben. Sie testen im Bietverfahren, sie wechseln in den Direkteinkauf, sobald die Daten stehen.
 
 Die Preise sind nicht geschenkt. Doch das System ist von außen undurchsichtiger, als es bei näherem Hinsehen ist.

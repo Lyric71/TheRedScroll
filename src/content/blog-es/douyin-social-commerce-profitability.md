@@ -1,8 +1,8 @@
 ---
-title: "Social commerce en Douyin: difícil dejar ganancias, sigue siendo la mejor puerta de entrada"
-description: "La mayoría de las marcas pierde dinero en Douyin durante el primer año. Pero ninguna otra plataforma da acceso a 800 millones de consumidores chinos a esta velocidad."
-metaTitle: "¿Da beneficio Douyin? Lo que las marcas deben saber"
-metaDescription: "La mayoría de marcas pierde dinero en Douyin. Coste alto, devoluciones por encima del 60 %, ROI ajustado. Sigue siendo la vía más rápida para probar China."
+title: "Social commerce en Douyin: cuesta dar beneficio, pero sigue siendo la mejor puerta de entrada a China"
+description: "Casi todas las marcas pierden dinero en Douyin el primer año. Pero ninguna otra plataforma abre la puerta a 800 millones de consumidores chinos tan rápido."
+metaTitle: "¿Es rentable Douyin? Lo que su marca debe saber"
+metaDescription: "Casi todas las marcas pierden dinero en Douyin: coste alto, devoluciones del 60 %, ROI al límite. Y, aun así, la vía más rápida para tantear China."
 publishDate: 2026-04-06
 author: "TheRedScroll"
 category: "Plataformas"
@@ -11,24 +11,24 @@ featured: true
 featuredImage: "/images/blog/douyin-control-room.webp"
 ---
 
-*La mayoría de las marcas pierde dinero en Douyin antes de empezar a ganarlo. Pero, para una marca internacional que pone a prueba China, ningún otro canal ofrece tanto alcance a un coste de entrada tan bajo.*
+*Casi todas las marcas pierden dinero en Douyin antes de verle el primer beneficio. Pero, para una marca extranjera que tantea China, ningún otro canal ofrece tanto alcance por un billete de entrada tan barato.*
 
 ## Por qué cuesta tanto rentabilizar
 
-> La mayoría de las marcas no gana dinero en Douyin durante el primer año. Y eso incluye a grandes empresas chinas con presupuestos serios.
+> Casi ninguna marca gana dinero en Douyin el primer año. Tampoco las grandes empresas chinas con presupuestos de sobra.
 
-Según un análisis publicado en Zhihu, Bluemoon, uno de los gigantes del país en hogar, trabajó con más de 3.000 influencers e inyectó 40 millones de yuanes en tráfico de pago. El ROI no llegó a cuadrar. Baixiang, la marca de fideos que explotó en clave «patriótica», topó con el mismo problema. Mucha inversión, poco retorno.
+Lo contaba un análisis de Zhihu: Bluemoon, uno de los gigantes chinos de la limpieza del hogar, se alió con más de 3.000 influencers y metió 40 millones de yuanes en tráfico de pago. Las cuentas no salieron. A Baixiang, la marca de fideos que estalló al calor del sentimiento patriótico, le pasó lo mismo. Mucho gasto, poco retorno.
 
-¿Qué está pasando? Varias cosas a la vez.
+¿Por qué? Por varias cosas a la vez.
 
 ### El desglose de costes
 
 | Partida de coste | Cómo se ve |
 |---|---|
-| Inversión publicitaria | Si quiere tráfico, hay que pagarlo. El CPM del contenido orgánico de KOL ronda los 200-300 yuanes. La amplificación pagada vía Ocean Engine baja a 30-60 yuanes, pero hace falta volumen para mover producto. |
-| ROI de contenido | El ROI del contenido KOL sin impulso pagado está hoy por debajo de 0,3 en la mayoría de las categorías. Por cada yuan invertido en contenido de influencer, el retorno directo no llega a 30 céntimos. |
-| Tasa de devoluciones | En moda, las devoluciones promedian el 65 %. Un propietario de marca contaba que de cada diez pedidos, seis o siete vuelven. Cada uno cuesta unos 8 yuanes en embalaje y reenvío, y eso antes del dinero gastado en publicidad. |
-| Comisiones de plataforma | Tasas técnicas: 2-5 %. Comisiones de influencer: 20-50 %. Encima, seguro de envío, fianzas e inversión publicitaria. |
+| Inversión publicitaria | El tráfico se paga, no se regala. El CPM del contenido orgánico de KOL ronda los 200-300 yuanes; la amplificación de pago por Ocean Engine baja a 30-60, pero hay que mover volumen para vender. |
+| ROI de contenido | Sin empuje de pago, el ROI del contenido KOL no llega a 0,3 en casi ninguna categoría. Por cada yuan puesto en un influencer, vuelven menos de 30 céntimos. |
+| Tasa de devoluciones | En moda se devuelve, de media, el 65 %. Un dueño de marca lo resumía así: de cada diez pedidos, seis o siete vuelven. Cada uno cuesta unos 8 yuanes en embalaje y reenvío, y eso sin contar la publicidad. |
+| Comisiones de plataforma | Tasa técnica del 2-5 %. Comisión del influencer, del 20-50 %. Y, encima, seguro de envío, fianzas y publicidad. |
 
 > Fuentes: Qinggua Media, Digitaling, Ebrun, Youzan
 
@@ -36,38 +36,38 @@ Según un análisis publicado en Zhihu, Bluemoon, uno de los gigantes del país 
 
 ## Por qué, aun así, vale la pena
 
-Con todo eso encima, Douyin sigue siendo la vía más rápida para entrar en el mercado de consumo chino con el menor compromiso inicial.
+Aun cargando con todo eso, Douyin sigue siendo la forma más rápida de entrar en el consumo chino jugándose lo mínimo de salida.
 
-**Frente a Tmall Global**, donde una marca necesita registro ICP, logística de almacén en zona franca, fianza y cuotas anuales recurrentes antes de despachar un solo producto, Douyin permite arrancar con contenido. Unos cuantos vídeos cortos, una pequeña campaña de seeding con KOC y una tienda básica de Douyin. Y poco más. Los nuevos comerciantes reciben exención total de comisiones durante el primer mes.
+**Frente a Tmall Global**, que exige registro ICP, almacén en zona franca, fianza y cuotas anuales antes de despachar la primera unidad, Douyin deja arrancar con contenido. Unos vídeos cortos, una pequeña campaña de seeding con KOC y una tienda básica. Poco más. Y el primer mes, el comerciante nuevo no paga comisiones.
 
 > Fuente: Ebrun, citado en Sina Finance
 
-**El alcance no tiene rival.** 800 millones de usuarios activos al día. El GMV de Douyin rozó los 3,5 billones de yuanes en 2024, con un crecimiento interanual del 35 %, y representa hoy aproximadamente el 24 % del e-commerce chino.
+**El alcance no tiene rival.** 800 millones de usuarios activos al día. En 2024, el GMV de Douyin rozó los 3,5 billones de yuanes, un 35 % más que el año anterior, y supone ya cerca del 24 % del comercio electrónico chino.
 
 > Fuente: Sina Finance, citando previsiones de Goldman Sachs
 
-**La plataforma baja el suelo de coste.** Douyin introdujo nueve políticas de apoyo al comerciante en 2025. Cerca de cien categorías cuentan ya con comisiones reducidas o nulas. Los reembolsos de inversión publicitaria se aplican a los pedidos íntegramente devueltos. A agosto de 2025, Douyin había devuelto a sus comerciantes más de 19.000 millones de yuanes en subsidios.
+**La plataforma rebaja el suelo de coste.** En 2025, Douyin sacó nueve medidas de apoyo al comerciante. Cerca de cien categorías disfrutan ya de comisiones reducidas o a cero. Si un pedido se devuelve entero, Douyin reembolsa también la publicidad. Hasta agosto de 2025, Douyin había devuelto a sus comerciantes más de 19.000 millones de yuanes en ayudas.
 
 > Fuente: 36Kr
 
-**El valor real es de inteligencia de mercado.** Aunque no haya beneficios en el tercer mes, la marca se lleva información en vivo sobre su producto, su precio y su posicionamiento.
+**El verdadero premio es la información.** Aunque al tercer mes no haya beneficio, la marca se lleva datos en directo sobre su producto, su precio y su sitio en el mercado.
 
-> Ese tipo de inteligencia de mercado costaría decenas de miles de dólares pasados por una consultora tradicional. En Douyin se obtiene como subproducto de la venta.
+> Esa lectura de mercado, encargada a una consultora clásica, costaría decenas de miles de dólares. En Douyin cae sola, como subproducto de vender.
 
 ![Un KOL de Douyin grabando una reseña de producto en su salón](/images/blog/douyin-kol-showcase.webp)
 
-## El cuadro grande: cómo enfocan Douyin las marcas listas
+## La foto completa: cómo plantean Douyin las marcas que saben
 
-Las marcas que de verdad hacen funcionar Douyin no lo miran como un canal del que sacar beneficio. Lo usan como puerta de entrada a China.
+Las marcas que de verdad le sacan partido a Douyin no lo ven como un canal del que ordeñar beneficio. Lo usan de puerta de entrada a China.
 
-El esquema es algo así. Invertir en Douyin para construir notoriedad y probar la demanda. Dejar que el contenido de KOL genere volumen de búsqueda en RedNote y WeChat. Después, el equipo desplaza al cliente interesado hacia canales propios como WeCom, donde se le contacta de forma gratuita y se construyen compras recurrentes sin volver a pagar publicidad. Un juego más largo, pero las unidades económicas son completamente distintas a partir de ese momento.
+El plan, a grandes rasgos, es este. Se invierte en Douyin para hacer ruido y medir la demanda. Se deja que el contenido de los KOL dispare las búsquedas en RedNote y WeChat. Y luego el equipo se lleva al cliente interesado a canales propios, como WeCom, donde contactarlo no cuesta nada y las compras se repiten sin volver a pagar publicidad. Un partido más largo, sí, pero a partir de ahí las cuentas cambian por completo.
 
-Las marcas que miden el ROI de Douyin de manera aislada acaban siempre decepcionadas. Las que siguen el recorrido completo del cliente, desde el primer vídeo en Douyin hasta la quinta compra en WeCom, son las que ven cómo cuadran las cifras.
+Quien mide el ROI de Douyin por separado acaba siempre decepcionado. Quien sigue el recorrido entero del cliente, del primer vídeo en Douyin a la quinta compra en WeCom, es quien ve cuadrar los números.
 
 ## En resumen
 
-> Douyin no es un atajo a la rentabilidad. Es un atajo al acceso de mercado.
+> Douyin no es un atajo hacia el beneficio. Es un atajo hacia el mercado.
 
-Para una marca internacional que quiera saber si su producto tiene cabida en China, no hay nada más rápido.
+Para una marca extranjera que quiera saber si su producto encaja en China, no hay nada más rápido.
 
-Presupueste la inversión publicitaria. Calcule las devoluciones. Trate Douyin como lo que es: la manera más barata de averiguar si China quiere lo que usted vende. Y si la respuesta es sí, lo sabrá enseguida.
+Reserve presupuesto para publicidad. Cuente con las devoluciones. Y trate Douyin por lo que es: la forma más barata de averiguar si China quiere lo que usted vende. Si la respuesta es sí, lo sabrá pronto.
