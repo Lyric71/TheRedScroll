@@ -106,7 +106,7 @@ La mezcla adecuada depende de dónde se arranque.
 
 Las que llegan por primera vez a China suelen rendir mejor empezando con seeding de KOC en Xiaohongshu. Envío de producto, reseñas sinceras, vídeos cortos auténticos. Levantar una base de prueba orgánica antes de gastar fuerte en KOL. Es, además, la forma más barata de ver qué mensaje cala.
 
-Las ya asentadas en China que quieran crecer deberían concentrar el tiro en dos o tres KOL de gama media de su categoría. Campañas con un brief claro, no publicaciones sueltas. Son los que mejor relación coste-conversión ofrecen ahora mismo.
+Las ya asentadas en China que quieran crecer deberían concentrar el tiro en dos o tres KOL de gama media de su categoría. Campañas con una pauta clara, no publicaciones sueltas. Son los que mejor relación coste-conversión ofrecen ahora mismo.
 
 Las que van a por todas deberían montar la pirámide completa y empezar a invertir en emisión propia. Esa mezcla de alcance externo y live commerce de marca es lo que mejor funciona de cara a 2026.
 

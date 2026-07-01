@@ -1,6 +1,6 @@
 ---
-title: "China's Social Media Platforms: A Guide for Foreign Brands in 2026"
-description: "WeChat, Douyin, RedNote, Weibo, and a dozen more Chinese platforms. A clear, current guide for foreign brands deciding where to build in China in 2026."
+title: "China's Social Media Platforms: A Guide for Brands in 2026"
+description: "WeChat, Douyin, RedNote, Weibo, and a dozen more Chinese platforms. A clear, current guide to being present, finding influence, and publishing in China in 2026."
 metaTitle: "China Social Media Platforms: 2026 Brand Guide"
 metaDescription: "A 2026 guide to China's social media platforms for foreign brands. Real user numbers, commerce features, and where to start. From the ground."
 publishDate: 2026-06-30

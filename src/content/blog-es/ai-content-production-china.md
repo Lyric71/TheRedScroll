@@ -69,7 +69,7 @@ Y entonces llega el efecto dominó.
 
 La IA se traga la tarea repetitiva. Las decisiones creativas siguen en manos de quien conoce el mercado.
 
-Como apuntaba iResearch en su informe de 2025 sobre IA y medios digitales, producir contenido en China ha dejado de ser cosa de especialistas para volverse mucho más accesible. Lo que antes exigía un equipo creativo al completo puede arrancar hoy con un brief y una herramienta de IA. El oficio profesional sigue contando, pero la barrera para sacar contenido bueno y rápido se ha desplomado.
+Como apuntaba iResearch en su informe de 2025 sobre IA y medios digitales, producir contenido en China ha dejado de ser cosa de especialistas para volverse mucho más accesible. Lo que antes exigía un equipo creativo al completo puede arrancar hoy con una pauta y una herramienta de IA. El oficio profesional sigue contando, pero la barrera para sacar contenido bueno y rápido se ha desplomado.
 
 > Fuente: iResearch, Informe sectorial chino sobre IA y medios de internet 2025
 

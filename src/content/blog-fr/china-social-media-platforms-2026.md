@@ -1,6 +1,6 @@
 ---
-title: "Réseaux sociaux chinois : le guide 2026 des marques étrangères"
-description: "WeChat, Douyin, RedNote, Weibo et une dizaine d’autres plateformes chinoises. Un guide clair et à jour pour les marques étrangères qui choisissent où s’implanter en Chine en 2026."
+title: "Réseaux sociaux chinois : le guide 2026 des marques"
+description: "WeChat, Douyin, RedNote, Weibo et une dizaine d’autres plateformes chinoises. Un guide clair et à jour pour être présent, gagner en influence et publier en Chine en 2026."
 metaTitle: "Réseaux sociaux chinois : guide 2026 des marques"
 metaDescription: "Le guide 2026 des réseaux sociaux chinois pour les marques étrangères. Chiffres réels, ressorts de la vente et conseils pour démarrer. Vu du terrain."
 publishDate: 2026-06-30
@@ -29,9 +29,9 @@ Ce guide passe en revue les plateformes qui comptent. D’abord les quatre grand
 
 ## Le marché en bref
 
-Le marché publicitaire chinois continue de croître, mais la croissance facile est derrière nous. Les marques cherchent désormais la précision, plus seulement la portée. La vidéo courte, le commerce en ligne et le social captent l’argent.
+Le marché publicitaire chinois continue de croître, mais la croissance facile est derrière nous. Les marques cherchent désormais la précision, plus seulement la portée. La vidéo courte, l’e-commerce et les réseaux sociaux concentrent les budgets.
 
-L’IA infuse partout. Le marché chinois de l’AIGC a atteint environ 25,7 milliards de yuans en 2025, soit près de 3,5 milliards de dollars, et il progresse de plus de 50 % par an. Plus de la moitié des annonceurs chinois s’en servent désormais quelque part dans leur création.
+L’IA infuse partout. Le marché chinois de l’AIGC a atteint environ 25,7 milliards de yuans en 2025, soit près de 3,5 milliards de dollars, et il progresse de plus de 50 % par an. Plus de la moitié des annonceurs chinois y recourent désormais à un moment ou un autre de leur création.
 
 > 2025年中国AIGC核心产业规模约257亿元，预计2027年迎来增速拐点。
 >
@@ -43,7 +43,7 @@ Un principe commande tout le reste : les plateformes referment leurs boucles. D�
 
 Le social chinois n’est donc pas un canal d’appoint qu’on greffe plus tard. Pour la plupart des marques, c’est la voie principale par laquelle le consommateur chinois les rencontrera un jour.
 
-Nous pilotons ces plateformes pour des marques au quotidien. Ce qui suit relève d’une vue de terrain, pas d’un manuel.
+Nous pilotons ces plateformes pour des marques au quotidien. Ce qui suit tient du terrain, pas du manuel.
 
 ## WeChat (微信) : le système d’exploitation du quotidien
 
@@ -75,13 +75,13 @@ Si vous vendez à d’autres entreprises, WeChat reste votre canal le plus puiss
 
 ![Illustration d’une vidéo courte avec un lien d’achat intégré au fil](/images/blog/douyin-shoppable-video.webp)
 
-La plupart des gens connaissent Douyin comme l’application dont est née TikTok. En Chine, c’est tout autre chose : l’une des machines à vendre les plus puissantes du monde.
+La plupart des gens connaissent Douyin comme l’application dont est née TikTok. En Chine, c’est tout autre chose : l’un des moteurs de vente les plus puissants du monde.
 
 Les bilans sectoriels situent Douyin entre 750 et 766 millions d’utilisateurs actifs mensuels, et près de 587 millions par jour. On l’ouvre pour se divertir, on le quitte après avoir acheté. Le moteur de recommandation pousse le contenu par centre d’intérêt : une petite marque, avec le bon clip, touche vite une audience énorme.
 
 Ce qui sépare Douyin de la vidéo courte occidentale, c’est le paiement. Les liens produits sont logés dans la vidéo. Les ventes en direct tournent toute la journée. Le spectateur passe du visionnage à l’achat en quelques secondes, sans jamais quitter le fil.
 
-Le commerce y est colossal. Le volume d’affaires e-commerce de Douyin était en passe de dépasser les 4 000 milliards de yuans en 2025, soit environ 550 milliards de dollars, en hausse de plus de 30 % sur un an. Bien au-delà du marché du commerce en ligne dans son ensemble. Signe de cette force d’attraction, Apple a ouvert une boutique phare sur Douyin en 2025, sa première sur une plateforme chinoise hors Tmall.
+Le commerce y est colossal. Le volume d’affaires e-commerce de Douyin était en passe de dépasser les 4 000 milliards de yuans en 2025, soit environ 550 milliards de dollars, en hausse de plus de 30 % sur un an. Loin devant le reste du e-commerce. Signe de cette force d’attraction, Apple a ouvert une boutique phare sur Douyin en 2025, sa première sur une plateforme chinoise hors Tmall.
 
 Quelques points à retenir pour 2026 :
 
@@ -103,7 +103,7 @@ Douyin convient surtout aux marques B2C de la beauté, de la mode, de l’alimen
 
 ![Illustration d’une grille de notes d’avis lifestyle façon RedNote](/images/blog/rednote-notes-grid.webp)
 
-Avant le moindre achat, beaucoup de consommateurs chinois passent d’abord par RedNote. Aussi appelée Xiaohongshu, RED ou Little Red Book, l’application est devenue la machine à confiance du pays.
+Avant le moindre achat, beaucoup de consommateurs chinois passent d’abord par RedNote. Aussi appelée Xiaohongshu, RED ou Little Red Book, l’application est devenue le moteur de confiance du pays.
 
 Fin 2025, elle dépassait 350 millions d’utilisateurs actifs mensuels, avec plus de 74 minutes passées par jour dans l’application. L’audience est jeune et urbaine, majoritairement féminine, même si les hommes y arrivent un peu plus chaque année. Environ 54 % des utilisateurs ont moins de 30 ans. On y publie des notes sincères, des avis et des tutoriels en beauté, mode, voyage, maison et cuisine.
 
@@ -149,9 +149,9 @@ La force de Bilibili, c’est la profondeur. Les créateurs réalisent des vidé
 
 ## Kuaishou (快手) : portée populaire et commerce de confiance
 
-Kuaishou rivalise avec Douyin sur la vidéo courte, mais l’ambiance diffère. Le contenu y est plus brut, plus personnel, ancré dans la vie de tous les jours. Sa force se trouve dans les villes des rangs inférieurs et les campagnes chinoises, où il s’enracine en profondeur.
+Kuaishou rivalise avec Douyin sur la vidéo courte, mais l’ambiance diffère. Le contenu y est plus brut, plus personnel, ancré dans la vie de tous les jours. Son fief, c’est la Chine des petites villes et des campagnes, où il s’enracine en profondeur.
 
-Plus d’un cinquième de ses utilisateurs ont passé 50 ans. Bien plus de la moitié vivent dans des villes de troisième rang et des localités plus petites. Pour des produits attentifs au prix, et pour des publics que les plateformes des grandes villes touchent à peine, cette portée vaut de l’or.
+Plus d’un cinquième de ses utilisateurs ont plus de 50 ans. Bien plus de la moitié vivent dans des villes de troisième rang et des localités plus petites. Pour des produits attentifs au prix, et pour des publics que les plateformes des grandes villes touchent à peine, cette portée vaut de l’or.
 
 Kuaishou fonctionne sur ce qu’il appelle le « commerce de confiance ». Créateurs et spectateurs nouent des liens réels, et la vente en direct convertit fort sur les produits locaux, l’artisanat et les articles pratiques. Le volume d’affaires de son e-commerce a atteint 1 390 milliards de yuans en 2024 et a continué de grimper tout au long de 2025. Les courts feuilletons y ont aussi explosé, drainant d’énormes audiences quotidiennes.
 
@@ -159,7 +159,7 @@ Kuaishou fonctionne sur ce qu’il appelle le « commerce de confiance ». Créa
 
 Pour des réponses détaillées et fiables, les internautes chinois vont sur Zhihu, le Quora du pays. Le public, ce sont des professionnels et des universitaires, plus des amateurs sérieux qui maîtrisent leur sujet sur le bout des doigts.
 
-La plateforme compte environ 80 à 100 millions d’utilisateurs actifs mensuels, sur une base très diplômée. Les marques n’y gagnent pas en diffusant des publicités. Elles gagnent en répondant bien aux questions. Une bonne réponse devient un actif durable qui se positionne et bâtit de l’autorité pendant des années. Zhihu domine sur la technologie, la finance, l’éducation et l’automobile, toute catégorie où l’acheteur fait ses devoirs avant de s’engager.
+La plateforme compte environ 80 à 100 millions d’utilisateurs actifs mensuels, sur une base très diplômée. Les marques n’y gagnent pas en diffusant des publicités. Elles gagnent en répondant bien aux questions. Une bonne réponse devient un actif durable qui se positionne et bâtit de l’autorité pendant des années. Zhihu domine sur la technologie, la finance, l’éducation et l’automobile, toute catégorie où l’acheteur se renseigne à fond avant de s’engager.
 
 ## Toutiao (今日头条) : contenu et portée
 
@@ -187,7 +187,7 @@ Trois choses font trébucher presque tous les nouveaux venus.
 
 **Vous devez vous faire vérifier.** Les marques étrangères peuvent tenir des comptes officiels et diffuser des publicités, mais pas dès le premier jour. Les plateformes réclament d’abord des documents juridiques et une vérification d’entreprise, et certaines configurations exigent en plus un dépôt ICP. Anticipez : cela prend plus de temps qu’on ne l’imagine.
 
-**Vous ne pouvez pas vous contenter de traduire.** Reprendre une campagne mondiale en changeant juste la langue ne prend presque jamais. Le contenu doit être pensé pour la plateforme et la culture dès le départ : argot local, fêtes locales, humour local. Une campagne occidentale traduite mot à mot sonne étrangère, et les publics chinois le repèrent aussitôt.
+**Vous ne pouvez pas vous contenter de traduire.** Reprendre une campagne mondiale en changeant juste la langue ne fonctionne presque jamais. Le contenu doit être pensé pour la plateforme et la culture dès le départ : argot local, fêtes locales, humour local. Une campagne occidentale traduite mot à mot sonne étrangère, et les publics chinois le repèrent aussitôt.
 
 Et les règles bougent sans cesse. De nouvelles mesures de supervision du commerce en direct sont entrées en vigueur le 1er février 2026, resserrant le contrôle des ventes en livestream et des agences qui les orchestrent. Les plateformes exigent désormais que tout contenu généré par IA soit signalé. Les règles sur les données, sous le régime de la PIPL, sont strictes : les données personnelles doivent en général rester sur des serveurs chinois agréés. Rien de tout cela n’est une raison de rester à l’écart. C’est une raison d’avoir quelqu’un sur place pour en assurer le suivi.
 
@@ -199,7 +199,7 @@ Et les règles bougent sans cesse. De nouvelles mesures de supervision du commer
 
 ![Illustration opposant la production de contenu par l’IA aux décisions stratégiques humaines](/images/blog/ai-produces-humans-decide.webp)
 
-L’IA est désormais au cœur du marketing en Chine, plus à côté. Douyin, à lui seul, a intercepté plus de 840 000 contenus publicitaires truqués par IA sur un seul trimestre de 2025, signe du volume de contenu IA en circulation. Plus de la moitié des annonceurs chinois recourent à l’IA dans leur création.
+L’IA est désormais au cœur du marketing chinois, et non plus à la marge. Douyin, à lui seul, a intercepté plus de 840 000 contenus publicitaires truqués par IA sur un seul trimestre de 2025, signe du volume de contenu IA en circulation. Plus de la moitié des annonceurs chinois recourent à l’IA dans leur création.
 
 Mais ce que l’IA gère, c’est la vitesse. Le jugement, lui, reste humain. Quelles plateformes choisir, quels créateurs croire, quelle histoire raconter, quand une campagne marche et quand il faut changer de cap. Une machine peut sortir cent posts. Elle ne sait toujours pas vous dire lequel votre audience croira.
 

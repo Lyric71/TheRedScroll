@@ -25,7 +25,7 @@ En el Doble 11 de 2025, los directos divulgativos crecieron un 180 % interanual.
 
 > Fuente: 100EC.cn, Informe de datos Doble 11 2025
 
-Navegar por una tienda online al uso convierte entre el 0,5 y el 1,5 %. El directo va, por tanto, seis veces más rápido.
+Navegar por una tienda en línea al uso convierte entre el 0,5 y el 1,5 %. El directo va, por tanto, seis veces más rápido.
 
 ## Por qué convierte
 

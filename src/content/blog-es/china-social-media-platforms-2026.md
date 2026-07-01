@@ -1,6 +1,6 @@
 ---
-title: "Las plataformas sociales de China: guía para marcas extranjeras en 2026"
-description: "WeChat, Douyin, RedNote, Weibo y una docena más de plataformas chinas. Una guía clara y actual para que las marcas extranjeras decidan por dónde empezar en China en 2026."
+title: "Las plataformas sociales de China: guía para marcas en 2026"
+description: "WeChat, Douyin, RedNote, Weibo y una docena más de plataformas chinas. Una guía clara y actual para estar presente, ganar influencia y publicar en China en 2026."
 metaTitle: "Plataformas sociales de China: guía 2026"
 metaDescription: "Guía 2026 de las plataformas sociales de China para marcas extranjeras. Cifras de usuarios reales, funciones de venta y por dónde empezar. Desde dentro."
 publishDate: 2026-06-30
@@ -29,9 +29,9 @@ Esta guía repasa las plataformas que importan. Primero las cuatro grandes, a fo
 
 ## El mercado en breve
 
-El mercado publicitario de internet en China sigue creciendo, pero el crecimiento fácil se acabó. Las marcas ya no persiguen alcance a secas, sino precisión. El dinero va al vídeo corto, al comercio electrónico y a lo social.
+El mercado publicitario de internet en China sigue creciendo, pero el crecimiento fácil se acabó. Las marcas ya no persiguen alcance a secas, sino precisión. El dinero va al vídeo corto, al comercio electrónico y a las redes sociales.
 
-La IA está metida en todo ello. El mercado chino de AIGC rondó los 25.700 millones de yuanes en 2025, unos 3.500 millones de dólares, y crece a más del 50 % anual. Más de la mitad de los anunciantes chinos ya usa IA en algún punto de su trabajo creativo.
+La IA lo impregna todo. El mercado chino de AIGC rondó los 25.700 millones de yuanes en 2025, unos 3.500 millones de dólares, y crece a más del 50 % anual. Más de la mitad de los anunciantes chinos ya usa IA en algún punto de su trabajo creativo.
 
 > 2025年中国AIGC核心产业规模约257亿元，预计2027年迎来增速拐点。
 >
@@ -63,7 +63,7 @@ Las piezas que importan:
 
 **Video Channels (视频号).** El feed de vídeo corto de WeChat se ha convertido en un gigante por derecho propio, con más de 800 millones de usuarios mensuales y unos 1.500 millones de búsquedas diarias. Capta el 92,9 % de su tráfico dentro del propio ecosistema WeChat, de modo que un vídeo puede calentar al espectador antes de pasarlo a su cuenta oficial o a su tienda. Su comercio sube rápido: el GMV de 2025 se estima cerca de los 600.000 millones de yuanes.
 
-Y luego está WeCom y el dominio privado, 私域, hacia donde se mueve ahora buena parte del dinero más fino. A medida que comprar atención en las plataformas abiertas se encarece, las marcas atraen a sus clientes a grupos de chat privados y conversaciones uno a uno que de verdad les pertenecen. Menos exposición al algoritmo. Más valor a lo largo de la vida del cliente.
+Y luego está WeCom y el dominio privado, 私域, hacia donde se mueve ahora buena parte del dinero inteligente. A medida que comprar atención en las plataformas abiertas se encarece, las marcas atraen a sus clientes a grupos de chat privados y conversaciones uno a uno que de verdad les pertenecen. Menos exposición al algoritmo. Más valor a lo largo de la vida del cliente.
 
 Si vende a otras empresas, WeChat sigue siendo su canal más fuerte. El comprador B2B chino espera encontrarlo ahí, y una cuenta oficial seria aporta más credibilidad que la web más pulida.
 
@@ -149,7 +149,7 @@ La fuerza de Bilibili está en la profundidad. Los creadores hacen vídeos largo
 
 ## Kuaishou (快手): alcance popular y comercio de confianza
 
-Kuaishou compite con Douyin en vídeo corto, pero el aire es distinto. El contenido es más crudo, más personal, anclado en lo cotidiano. Su fuerte son las ciudades de menor rango y las zonas rurales de China, donde cala hondo.
+Kuaishou compite con Douyin en vídeo corto, pero el aire es distinto. El contenido es más crudo, más personal, anclado en lo cotidiano. Su fuerte es la China de las ciudades pequeñas y las zonas rurales, donde cala hondo.
 
 Más de una quinta parte de sus usuarios pasa de los 50 años. Bastante más de la mitad vive en ciudades de tercer nivel y pueblos pequeños. Para productos orientados al valor, y para públicos que las plataformas de las grandes ciudades apenas tocan, ese alcance vale mucho.
 

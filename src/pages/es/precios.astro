@@ -18,8 +18,8 @@ const packages = [
     },
     content: {
       wechat: '1 artículo/sem.',
-      weibo: '1 post/sem.',
-      rednote: '1 post/sem.',
+      weibo: '1 publicación/sem.',
+      rednote: '1 publicación/sem.',
       douyinClient: '1 vídeo/sem.',
       douyinAi: false,
       douyinTotal: '1/sem.',
@@ -46,8 +46,8 @@ const packages = [
     },
     content: {
       wechat: '1 artículo/sem.',
-      weibo: '3 posts/sem.',
-      rednote: '3 posts/sem.',
+      weibo: '3 publicaciones/sem.',
+      rednote: '3 publicaciones/sem.',
       douyinClient: '1 vídeo/sem.',
       douyinAi: '1 vídeo/sem.',
       douyinTotal: '2/sem.',
@@ -64,7 +64,7 @@ const packages = [
   {
     name: 'Lead',
     price: '6.750 €',
-    description: 'Cobertura completa. Publicaciones diarias. Escucha social en continuo. Capacidad de reacción total.',
+    description: 'Cobertura completa. Publicaciones diarias. Escucha social permanente. Capacidad de reacción total.',
     highlighted: false,
     strategy: {
       competitor: 'Mes 1',
@@ -74,8 +74,8 @@ const packages = [
     },
     content: {
       wechat: '1 artículo/sem.',
-      weibo: '7 posts/sem.',
-      rednote: '5 posts/sem.',
+      weibo: '7 publicaciones/sem.',
+      rednote: '5 publicaciones/sem.',
       douyinClient: '2 vídeos/sem.',
       douyinAi: '2 vídeos/sem.',
       douyinTotal: '4/sem.',
@@ -96,20 +96,20 @@ const addOnPlatforms = [
     { name: 'Zhihu (artículo de fondo)', price: '90 €/artículo' },
     { name: 'Zhihu (respuesta breve)', price: '45 €/artículo' },
     { name: 'Toutiao (actualidad)', price: '65 €/artículo' },
-    { name: 'Baidu Tieba (mensaje de foro)', price: '40 €/post' },
+    { name: 'Baidu Tieba (mensaje de foro)', price: '40 €/publicación' },
   ]},
   { category: 'Comercio y estilo de vida', items: [
     { name: 'Meituan / Dianping', price: '100 €/mes' },
-    { name: 'Pinduoduo (ficha de producto)', price: '75 €/post' },
-    { name: 'Lemon8 (post de estilo de vida)', price: '50 €/post' },
-    { name: 'QQ (mensaje comunitario)', price: '35 €/post' },
+    { name: 'Pinduoduo (ficha de producto)', price: '75 €/publicación' },
+    { name: 'Lemon8 (publicación de estilo de vida)', price: '50 €/publicación' },
+    { name: 'QQ (mensaje comunitario)', price: '35 €/publicación' },
   ]},
 ];
 ---
 
 <BaseLayout
-  title="Precios cerrados para social media en China | TheRedScroll"
-  description="Paquetes claros y precios cerrados para marketing en redes sociales chinas: WeChat, Douyin, RedNote, Weibo. Desde 3.750 € al mes."
+  title="Precios cerrados para redes sociales en China | TheRedScroll"
+  description="Paquetes claros y precios cerrados para el marketing en las redes sociales chinas: WeChat, Douyin, RedNote, Weibo. Desde 3.750 € al mes."
   lang="es"
 >
   <main class="pt-[60px] max-[640px]:pt-[52px]">
@@ -119,7 +119,7 @@ const addOnPlatforms = [
       <div class="relative z-[1] max-w-[800px] mx-auto text-center">
         <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">Precios</p>
         <h1 class="text-[#FFFFFF] text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] mb-[8px]">
-          Circuito cerrado. Precio fijo. Cero extras.
+          Circuito cerrado. Precio fijo. Sin extras.
         </h1>
         <p class="text-[rgba(255,255,255,0.6)] text-[16px] font-normal leading-[1.6]">
           Precios en euros, sin impuestos. Compromiso a seis meses en todos los paquetes.
@@ -193,15 +193,15 @@ const addOnPlatforms = [
               </tr>
               <tr class="border-b border-[rgba(0,0,0,0.06)]">
                 <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">Weibo</td>
-                <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center">1 post/sem.</td>
-                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A] font-medium text-center border-x-[3px] border-[#CC3333]">3 posts/sem.</td>
-                <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] font-medium text-center">7 posts/sem.</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center">1 publicación/sem.</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A] font-medium text-center border-x-[3px] border-[#CC3333]">3 publicaciones/sem.</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] font-medium text-center">7 publicaciones/sem.</td>
               </tr>
               <tr class="border-b border-[rgba(0,0,0,0.06)]">
                 <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">RedNote (Xiaohongshu)</td>
-                <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center">1 post/sem.</td>
-                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A] font-medium text-center border-x-[3px] border-[#CC3333]">3 posts/sem.</td>
-                <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] font-medium text-center">5 posts/sem.</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center">1 publicación/sem.</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A] font-medium text-center border-x-[3px] border-[#CC3333]">3 publicaciones/sem.</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] font-medium text-center">5 publicaciones/sem.</td>
               </tr>
               <tr class="border-b border-[rgba(0,0,0,0.06)]">
                 <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">Douyin (vídeo aportado por el cliente)</td>
@@ -230,7 +230,7 @@ const addOnPlatforms = [
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] text-center">&#10003;</td>
               </tr>
               <tr class="border-b border-[rgba(0,0,0,0.06)]">
-                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">Validación del brief antes de producir</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">Validación de la pauta antes de producir</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#5C5C5C] text-center"><span aria-label="No incluido">No</span></td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] text-center border-x-[3px] border-[#CC3333]">&#10003;</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] text-center">&#10003;</td>
@@ -258,13 +258,13 @@ const addOnPlatforms = [
 
               <tr><td colspan="4" class="pt-[32px] pb-[8px] px-[16px]"><p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333]">Acompañamiento e informes</p></td></tr>
               <tr class="border-b border-[rgba(0,0,0,0.06)]">
-                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">Interlocutor dedicado</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">Interlocutor asignado</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] text-center">&#10003;</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] text-center border-x-[3px] border-[#CC3333]">&#10003;</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] text-center">&#10003;</td>
               </tr>
               <tr class="border-b border-[rgba(0,0,0,0.06)]">
-                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">Soporte por chat (lun.-vie.)</td>
+                <td class="py-[12px] px-[16px] text-[13px] text-[#1A1A1A]">Asistencia por chat (lun.-vie.)</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] text-center">&#10003;</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] text-center border-x-[3px] border-[#CC3333]">&#10003;</td>
                 <td class="py-[12px] px-[16px] text-[13px] text-[#CC3333] text-center">&#10003;</td>
@@ -309,7 +309,7 @@ const addOnPlatforms = [
               ]},
               { section: 'Producción con IA', items: [
                 { label: 'Vídeo generado por IA con HubStudio.ai', value: pkg.ai },
-                { label: 'Validación del brief antes de producir', value: pkg.ai },
+                { label: 'Validación de la pauta antes de producir', value: pkg.ai },
               ]},
               { section: 'Escucha social', items: [
                 { label: 'Seguimiento de menciones de marca', value: pkg.socialListening },
@@ -317,8 +317,8 @@ const addOnPlatforms = [
                 { label: 'Balance mensual de imagen', value: pkg.socialListening },
               ]},
               { section: 'Acompañamiento e informes', items: [
-                { label: 'Interlocutor dedicado', value: pkg.support.accountManager },
-                { label: 'Soporte por chat (lun.-vie.)', value: pkg.support.chatSupport },
+                { label: 'Interlocutor asignado', value: pkg.support.accountManager },
+                { label: 'Asistencia por chat (lun.-vie.)', value: pkg.support.chatSupport },
                 { label: 'Informe mensual de rendimiento', value: pkg.support.monthlyReport },
                 { label: 'Reuniones estratégicas', value: pkg.support.strategyCalls },
               ]},
@@ -370,10 +370,10 @@ const addOnPlatforms = [
         <div class="mt-[48px] max-w-[680px]">
           <h3 class="text-[18px] text-[#1A1A1A] font-medium leading-[1.3] mb-[16px]">Detalle de formatos</h3>
           <div class="text-[14px] text-[#5C5C5C] font-normal leading-[1.8]">
-            <p><span class="font-medium text-[#1A1A1A]">Artículos WeChat:</span> 1.500 caracteres chinos máximo, con tres visuales.</p>
-            <p><span class="font-medium text-[#1A1A1A]">Posts Weibo:</span> 300 caracteres chinos máximo, con un visual.</p>
-            <p><span class="font-medium text-[#1A1A1A]">Posts RedNote:</span> 500 caracteres chinos máximo, con seis visuales (carrusel).</p>
-            <p><span class="font-medium text-[#1A1A1A]">Vídeos Douyin:</span> 60 segundos máximo. Los vídeos del cliente los montamos y subtitulamos nosotros. Los vídeos generados por IA se limitan a 15 segundos, con brief validado previamente.</p>
+            <p><span class="font-medium text-[#1A1A1A]">Artículos WeChat:</span> 1.500 caracteres chinos máximo, con tres imágenes.</p>
+            <p><span class="font-medium text-[#1A1A1A]">Publicaciones Weibo:</span> 300 caracteres chinos máximo, con una imagen.</p>
+            <p><span class="font-medium text-[#1A1A1A]">Publicaciones RedNote:</span> 500 caracteres chinos máximo, con seis imágenes (carrusel).</p>
+            <p><span class="font-medium text-[#1A1A1A]">Vídeos Douyin:</span> 60 segundos máximo. Los vídeos del cliente los montamos y subtitulamos nosotros. Los vídeos generados por IA se limitan a 15 segundos, con la pauta validada previamente.</p>
           </div>
         </div>
       </Container>
@@ -384,7 +384,7 @@ const addOnPlatforms = [
         <SectionBar />
         <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[8px]">Plataformas opcionales</h2>
         <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] mb-[32px] max-w-[680px]">
-          Se suman a cualquier paquete con facturación mensual. Mínimo cuatro posts al mes por plataforma. Los precios cubren redacción, adaptación local, montaje de imagen o vídeo y publicación.
+          Se suman a cualquier paquete con facturación mensual. Mínimo cuatro publicaciones al mes por plataforma. Los precios cubren redacción, adaptación local, montaje de imagen o vídeo y publicación.
         </p>
 
         <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
@@ -476,9 +476,9 @@ const addOnPlatforms = [
           <div class="bg-[#F0F1F4] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
             <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333] mb-[8px]">Marketing de influencia</p>
             <h3 class="text-[18px] text-[#1A1A1A] font-medium leading-[1.3] mb-[8px]">Campañas con KOL y KOC</h3>
-            <p class="text-[28px] text-[#1A1A1A] font-medium leading-[1.2] mb-[8px]">Del 15 al 25 %<span class="text-[14px] text-[#5C5C5C] font-normal"> del presupuesto de influencers</span></p>
+            <p class="text-[28px] text-[#1A1A1A] font-medium leading-[1.2] mb-[8px]">Del 15 al 25 %<span class="text-[14px] text-[#5C5C5C] font-normal"> del presupuesto de influencia</span></p>
             <div class="text-[13px] text-[#5C5C5C] font-normal leading-[1.8]">
-              <p>Identificación de perfiles, verificación, negociación, redacción de briefs, coordinación de campañas, balance de rendimiento.</p>
+              <p>Identificación de perfiles, verificación, negociación, redacción de pautas, coordinación de campañas, balance de rendimiento.</p>
               <p class="mt-[8px]">15 % por encima de 50.000 €. 20 % en tarifa estándar. 25 % en microcampañas por debajo de 10.000 €.</p>
             </div>
           </div>
@@ -497,7 +497,7 @@ const addOnPlatforms = [
               </div>
             </div>
             <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.6] mt-[16px]">
-              Inmersión por plataforma, estrategia de contenido, social commerce, campañas con KOL, analítica. En inglés o en chino mandarín. Por videollamada o presencial.
+              Inmersión por plataforma, estrategia de contenido, comercio social, campañas con KOL, analítica. En inglés o en chino mandarín. Por videollamada o presencial.
             </p>
           </div>
 
@@ -529,7 +529,7 @@ const addOnPlatforms = [
               Rodajes de foto y vídeo en China.
             </h3>
             <p class="text-[14px] text-[rgba(255,255,255,0.8)] font-normal leading-[1.6]">
-              Fotografía de producto, films de marca, rodajes con KOL. Presupuesto adaptado al alcance, la localización, el equipo y los entregables. Plazo habitual: dos o tres semanas tras validar el brief.
+              Fotografía de producto, vídeos de marca, rodajes con KOL. Presupuesto adaptado al alcance, la localización, el equipo y los entregables. Plazo habitual: dos o tres semanas tras validar la pauta.
             </p>
           </div>
           <a href="/es/contacto/" class="inline-flex items-center justify-center h-[44px] px-[28px] text-[14px] font-medium leading-none rounded-[6px] cursor-pointer bg-[#FFFFFF] text-[#1A1A1A] shrink-0 transition-[background] duration-150 hover:bg-[#F0F1F4] active:scale-[0.98]">

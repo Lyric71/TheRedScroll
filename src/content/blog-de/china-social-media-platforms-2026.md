@@ -1,6 +1,6 @@
 ---
-title: "Chinas Social-Media-Plattformen: ein Leitfaden für ausländische Marken 2026"
-description: "WeChat, Douyin, RedNote, Weibo und ein Dutzend weiterer chinesischer Plattformen. Ein klarer, aktueller Leitfaden für ausländische Marken, die 2026 entscheiden, wo sie in China aufbauen."
+title: "Chinas Social-Media-Plattformen: ein Leitfaden für Marken 2026"
+description: "WeChat, Douyin, RedNote, Weibo und ein Dutzend weiterer chinesischer Plattformen. Ein klarer, aktueller Leitfaden, um 2026 in China präsent zu sein, Einfluss zu gewinnen und zu publizieren."
 metaTitle: "Chinas Social-Media-Plattformen 2026"
 metaDescription: "Ein Leitfaden 2026 zu Chinas Social-Media-Plattformen für ausländische Marken. Echte Nutzerzahlen, Commerce-Funktionen und der richtige Einstieg. Vor Ort."
 publishDate: 2026-06-30
@@ -31,7 +31,7 @@ Dieser Leitfaden führt durch die Plattformen, auf die es ankommt. Zuerst die gr
 
 Chinas Markt für Online-Werbung wächst weiter, doch das einfache Wachstum ist vorbei. Marken jagen heute Präzision, nicht mehr bloß Reichweite. Das Geld fließt in Kurzvideo, E-Commerce und soziale Netzwerke.
 
-KI steckt in allem drin. Chinas AIGC-Markt erreichte 2025 rund 25,7 Milliarden RMB, etwa 3,5 Milliarden US-Dollar, und wächst um mehr als 50 Prozent im Jahr. Über die Hälfte der chinesischen Werbetreibenden setzt KI inzwischen irgendwo in der kreativen Arbeit ein.
+KI durchdringt alles. Chinas AIGC-Markt erreichte 2025 rund 25,7 Milliarden RMB, etwa 3,5 Milliarden US-Dollar, und wächst um mehr als 50 Prozent im Jahr. Über die Hälfte der chinesischen Werbetreibenden setzt KI inzwischen irgendwo in der kreativen Arbeit ein.
 
 > 2025年中国AIGC核心产业规模约257亿元，预计2027年迎来增速拐点。
 >
@@ -103,7 +103,7 @@ Douyin eignet sich am besten für B2C-Marken in Beauty, Mode, Food, Reise und Un
 
 ![Illustration eines RedNote-typischen Rasters aus Lifestyle-Erfahrungsberichten](/images/blog/rednote-notes-grid.webp)
 
-Bevor viele chinesische Käufer überhaupt etwas erwerben, schauen sie zuerst auf RedNote. Auch Xiaohongshu, RED oder Little Red Book genannt, ist die Plattform zur Vertrauensmaschine des Landes geworden.
+Bevor viele chinesische Käufer überhaupt etwas erwerben, schauen sie zuerst auf RedNote. Auch Xiaohongshu, RED oder Little Red Book genannt, ist die Plattform zur Vertrauensinstanz des Landes geworden.
 
 Bis Ende 2025 überstiegen die monatlich aktiven Nutzer 350 Millionen, die tägliche Verweildauer lag bei über 74 Minuten. Das Publikum ist jung und urban, überwiegend weiblich, doch Jahr für Jahr kommen mehr Männer dazu. Rund 54 Prozent der Nutzer sind unter 30. Sie posten ehrliche Notizen, Bewertungen und Anleitungen quer durch Beauty, Mode, Reise, Wohnen und Food.
 
