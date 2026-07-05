@@ -98,6 +98,10 @@ export interface CaseStudyOpts {
 
 export function caseStudySchema(opts: CaseStudyOpts): Record<string, unknown> {
   const fullUrl = canonicalUrl(opts.url);
+  // Google's structured-data image formats are JPG/PNG/WebP — AVIF is not
+  // documented as supported. A WebP sibling is generated for every case-study
+  // hero, so serve that to the schema even when the on-page <img> uses AVIF.
+  const schemaImage = opts.image?.replace(/\.avif(?=$|[?#])/i, '.webp');
   return {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -105,7 +109,7 @@ export function caseStudySchema(opts: CaseStudyOpts): Record<string, unknown> {
     headline: opts.headline,
     description: opts.description,
     url: fullUrl,
-    ...(opts.image && { image: opts.image.startsWith('http') ? opts.image : `${SITE_URL}${opts.image}` }),
+    ...(schemaImage && { image: schemaImage.startsWith('http') ? schemaImage : `${SITE_URL}${schemaImage}` }),
     about: {
       '@type': 'Organization',
       name: opts.clientName,

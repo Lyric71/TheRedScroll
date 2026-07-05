@@ -93,6 +93,28 @@ function splitTail(path: string): [string, string] {
   return idx >= 0 ? [path.slice(0, idx), path.slice(idx)] : [path, ''];
 }
 
+/** Translate a path against a slug map, falling back to the longest matching
+ *  parent-segment prefix when there is no exact key. This is what lets dynamic
+ *  child routes inherit their section's localized slug: `/insights` is mapped
+ *  to `/analisis`, so `/insights/<article>` (never enumerated in the map)
+ *  resolves to `/analisis/<article>`. Without the prefix fallback, blog
+ *  articles emitted hreflang alternates pointing at the untranslated
+ *  `/es/insights/...` segment, which 404s. Prefix matches only at segment
+ *  boundaries so `/insights` can never partially match `/insights-foo`. */
+function mapPath(map: Record<string, string>, key: string): string {
+  const direct = map[key];
+  if (direct) return direct;
+  let bestFrom = '';
+  let bestTo = '';
+  for (const [from, to] of Object.entries(map)) {
+    if ((key === from || key.startsWith(`${from}/`)) && from.length > bestFrom.length) {
+      bestFrom = from;
+      bestTo = to;
+    }
+  }
+  return bestFrom ? bestTo + key.slice(bestFrom.length) : key;
+}
+
 /** Slug-map lookup keys are stored without trailing slashes, but callers may
  *  pass paths with or without one (since `trailingSlash: 'always'` is now the
  *  global convention). Normalize before lookup, then restore the trailing
@@ -102,7 +124,7 @@ function applySlugMap(path: string, lang: Lang): string {
   const [base, tail] = splitTail(path);
   const hadTrailingSlash = base.length > 1 && base.endsWith('/');
   const lookupKey = hadTrailingSlash ? base.slice(0, -1) : base;
-  const mapped = esSlugMap[lookupKey] ?? lookupKey;
+  const mapped = mapPath(esSlugMap, lookupKey);
   return mapped + (hadTrailingSlash ? '/' : '') + tail;
 }
 
@@ -110,7 +132,7 @@ function reverseSlugMap(path: string): string {
   const [base, tail] = splitTail(path);
   const hadTrailingSlash = base.length > 1 && base.endsWith('/');
   const lookupKey = hadTrailingSlash ? base.slice(0, -1) : base;
-  const mapped = esSlugMapReverse[lookupKey] ?? lookupKey;
+  const mapped = mapPath(esSlugMapReverse, lookupKey);
   return mapped + (hadTrailingSlash ? '/' : '') + tail;
 }
 

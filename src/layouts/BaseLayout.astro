@@ -15,6 +15,17 @@ interface Props {
   lang?: Lang;
   hideFooterCta?: boolean;
   schema?: Record<string, unknown> | Record<string, unknown>[];
+  /** `og:type` for the page. Articles (blog posts, case studies) should pass
+   *  'article' so social/AI parsers treat them as dated content, not a site. */
+  ogType?: string;
+  /** ISO 8601 timestamps emitted as article:published_time / :modified_time
+   *  when ogType is 'article'. */
+  publishedTime?: string;
+  modifiedTime?: string;
+  /** Locales this specific page is NOT translated into. Their hreflang
+   *  alternates are suppressed so we never emit a link to a 404 (a single dead
+   *  alternate invalidates the whole cluster for Google). */
+  omitLocales?: Lang[];
 }
 
 const {
@@ -25,12 +36,16 @@ const {
   lang = 'en',
   hideFooterCta = false,
   schema,
+  ogType,
+  publishedTime,
+  modifiedTime,
+  omitLocales = [],
 } = Astro.props;
 
 const siteName = 'TheRedScroll';
 const siteUrl = 'https://www.theredscroll.com';
 const currentPath = Astro.url.pathname;
-const altLangs = getAvailableAlternateLangs(lang);
+const altLangs = getAvailableAlternateLangs(lang).filter((l) => !omitLocales.includes(l));
 const localeMap: Record<string, string> = { en: 'en_US', fr: 'fr_FR', zh: 'zh_CN', es: 'es_ES', de: 'de_DE' };
 const htmlLang = hreflangCode(lang);
 const ogImageUrl = new URL(ogImage, siteUrl).href;
@@ -85,9 +100,23 @@ const orgSchema = {
   '@id': `${siteUrl}/#organization`,
   name: siteName,
   url: siteUrl,
-  logo: `${siteUrl}/images/logo/theredscroll-logo-5B-mark-only.svg`,
+  // Google's Organization/logo rich result only accepts raster formats
+  // (JPG/PNG/WebP); an SVG here is silently ignored. Use a 512x512 PNG.
+  logo: {
+    '@type': 'ImageObject',
+    url: `${siteUrl}/images/logo/theredscroll-logo-mark-512.png`,
+    width: 512,
+    height: 512,
+  },
   description: 'China social media agency. We grow Western brands on WeChat, Douyin, RedNote, Weibo, and 14 more platforms. Fixed scope, fixed price, team in Shanghai and Hong Kong.',
   areaServed: ['CN', 'HK'],
+  contactPoint: {
+    '@type': 'ContactPoint',
+    contactType: 'sales',
+    url: `${siteUrl}/contact/`,
+    areaServed: ['CN', 'HK'],
+    availableLanguage: ['English', 'French', 'Chinese', 'Spanish', 'German'],
+  },
   address: [
     {
       '@type': 'PostalAddress',
@@ -142,6 +171,13 @@ const breadcrumbSchema = breadcrumbs.length > 1 ? {
 
 const pageSchemas: Record<string, unknown>[] = Array.isArray(schema) ? schema : schema ? [schema] : [];
 const allSchemas = [orgSchema, founderSchema, websiteSchema, breadcrumbSchema, ...pageSchemas].filter(Boolean) as Record<string, unknown>[];
+
+// Default og:type to 'article' whenever the page ships Article/BlogPosting
+// structured data (blog posts, case studies), so social/AI parsers treat it as
+// dated content. An explicit ogType prop always wins.
+const articleTypes = new Set(['Article', 'BlogPosting', 'NewsArticle']);
+const hasArticleSchema = pageSchemas.some((s) => articleTypes.has(s['@type'] as string));
+const resolvedOgType = ogType ?? (hasArticleSchema ? 'article' : 'website');
 ---
 
 <!doctype html>
@@ -163,7 +199,13 @@ const allSchemas = [orgSchema, founderSchema, websiteSchema, breadcrumbSchema, .
     <meta property="og:image" content={ogImageUrl} />
     <meta property="og:url" content={canonical} />
     <meta property="og:site_name" content={siteName} />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={resolvedOgType} />
+    {resolvedOgType === 'article' && publishedTime && (
+      <meta property="article:published_time" content={publishedTime} />
+    )}
+    {resolvedOgType === 'article' && modifiedTime && (
+      <meta property="article:modified_time" content={modifiedTime} />
+    )}
     <meta property="og:locale" content={localeMap[lang] || 'en_US'} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />

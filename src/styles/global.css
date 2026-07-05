@@ -119,3 +119,11 @@
     }
   }
 }
+
+/* Neutralize parallax backgrounds (Tailwind's `bg-fixed`). `background-attachment:
+   fixed` forces a full-viewport repaint on every scroll frame, which depresses
+   INP on mid-range hardware. It was already disabled on small screens; this
+   drops it everywhere so the background scrolls normally. */
+.bg-fixed {
+  background-attachment: scroll !important;
+}

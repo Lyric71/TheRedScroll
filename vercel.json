@@ -4,6 +4,14 @@
   "outputDirectory": "dist",
   "trailingSlash": true,
   "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "theredscroll.com" }],
+      "destination": "https://www.theredscroll.com/:path*",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",

@@ -50,6 +50,8 @@ const postSchema = articleSchema({
   description={post.data.metaDescription}
   ogImage={post.data.featuredImage}
   schema={postSchema}
+  publishedTime={publishedIso}
+  modifiedTime={modifiedIso}
 >
   <!-- Hero -->
   <section
