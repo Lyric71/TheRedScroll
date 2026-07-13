@@ -5,6 +5,7 @@ metaTitle: "Lohnt sich Douyin? Was für Marken zählt"
 metaDescription: "Die meisten Marken machen auf Douyin Verlust: hohe Kosten, Retourenquoten über 60 %. Trotzdem der schnellste Weg in den chinesischen Markt."
 publishDate: 2026-04-06
 author: "TheRedScroll"
+platforms: ["douyin"]
 category: "Plattformen"
 keywords: ["Douyin", "Douyin Commerce", "Social Commerce China", "Douyin Profitabilität", "Markteintritt China", "Live Commerce", "Douyin ROI"]
 featured: true

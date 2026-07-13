@@ -5,6 +5,7 @@ metaTitle: "¿Es rentable Douyin? Lo que su marca debe saber"
 metaDescription: "Casi todas las marcas pierden dinero en Douyin: coste alto, devoluciones del 60 %, ROI al límite. Y, aun así, la vía más rápida para tantear China."
 publishDate: 2026-04-06
 author: "TheRedScroll"
+platforms: ["douyin"]
 category: "Plataformas"
 keywords: ["Douyin", "Douyin ecommerce", "social commerce China", "rentabilidad Douyin", "entrada mercado China", "livestream commerce", "ROI Douyin"]
 featured: true

@@ -5,6 +5,7 @@ metaTitle: "Por qué triunfa el livestream shopping en China"
 metaDescription: "El livestream e-commerce chino alcanzó los 5,8 billones de yuanes en 2024. Cinco razones por las que el consumidor chino se decanta por comprar en directo."
 publishDate: 2026-04-04
 author: "TheRedScroll"
+platforms: ["douyin", "rednote"]
 category: "Estrategia"
 keywords: ["livestream shopping", "e-commerce China", "livestream Douyin", "Tmall Live", "social commerce China", "venta en directo", "consumidor China"]
 featured: true

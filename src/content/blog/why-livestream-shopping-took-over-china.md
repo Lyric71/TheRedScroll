@@ -5,6 +5,7 @@ metaTitle: "Why livestream shopping works so well in China"
 metaDescription: "China's livestream e-commerce market hit 5.8 trillion yuan in 2024. Here are the five reasons Chinese shoppers prefer buying through livestreams."
 publishDate: 2026-04-04
 author: "TheRedScroll"
+platforms: ["douyin", "rednote"]
 category: "Strategy"
 keywords: ["livestream shopping", "China e-commerce", "Douyin livestream", "Tmall live", "social commerce China", "livestream e-commerce", "China consumer behavior"]
 featured: true

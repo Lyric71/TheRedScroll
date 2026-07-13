@@ -5,6 +5,7 @@ metaTitle: "WeChat-Werbung: Formate und Preise"
 metaDescription: "Sechs Werbeplätze, drei Preismodelle. Kosten je Format und konkrete Hinweise für die erste WeChat-Kampagne."
 publishDate: 2026-04-05
 author: "TheRedScroll"
+platforms: ["wechat"]
 category: "Plattformen"
 keywords: ["WeChat-Werbung", "WeChat Moments Ads", "WeChat Channels Ads", "Tencent Ads", "Werbung China", "WeChat CPM", "WeChat Werbeformate"]
 featured: true

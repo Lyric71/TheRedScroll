@@ -5,6 +5,7 @@ metaTitle: "抖音电商到底赚不赚钱：一篇算清的账"
 metaDescription: "广告贵、退货率超六成、ROI压不动，多数品牌在抖音都先亏钱。但要进中国市场，没有比它更快的入口。"
 publishDate: 2026-04-06
 author: "TheRedScroll"
+platforms: ["douyin"]
 category: "平台"
 keywords: ["抖音", "抖音电商", "中国社交电商", "抖音盈利", "中国市场进入", "直播电商", "抖音ROI"]
 featured: true

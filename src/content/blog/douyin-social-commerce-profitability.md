@@ -5,6 +5,7 @@ metaTitle: "Is Douyin profitable? What brands need to know"
 metaDescription: "Most brands lose money on Douyin. High ad costs, return rates above 60%, thin ROI. But it is still the fastest way to test the China market."
 publishDate: 2026-04-06
 author: "TheRedScroll"
+platforms: ["douyin"]
 category: "Platforms"
 keywords: ["Douyin", "Douyin ecommerce", "China social commerce", "Douyin profitability", "China market entry", "livestream commerce", "Douyin ROI"]
 featured: true

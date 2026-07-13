@@ -5,6 +5,7 @@ metaTitle: "KI-Content auf Chinas Plattformen"
 metaDescription: "Mehr als jeder zweite Werbetreibende in China nutzt KI für seine Inhalte. Wie AIGC das Marketing auf Douyin, WeChat und RedNote neu prägt."
 publishDate: 2026-04-06
 author: "TheRedScroll"
+platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Content"
 keywords: ["AIGC", "KI-Content-Produktion", "Marketing China", "Douyin", "WeChat", "RedNote", "KI-Video", "Content-Automatisierung"]
 featured: true

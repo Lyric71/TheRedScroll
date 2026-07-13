@@ -5,6 +5,7 @@ metaTitle: "Publicité WeChat : formats et tarifs"
 metaDescription: "Six emplacements publicitaires, trois modèles tarifaires. Coûts par format et conseils concrets pour lancer une première campagne WeChat."
 publishDate: 2026-04-05
 author: "TheRedScroll"
+platforms: ["wechat"]
 category: "Plateformes"
 keywords: ["publicité WeChat", "WeChat Moments ads", "WeChat Channels ads", "Tencent Ads", "publicité Chine", "CPM WeChat", "formats publicitaires WeChat"]
 featured: true

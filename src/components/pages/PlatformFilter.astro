@@ -1,0 +1,65 @@
+---
+interface Props {
+  allLabel: string;
+  ariaLabel: string;
+  platforms: { value: string; label: string }[];
+}
+
+const { allLabel, ariaLabel, platforms } = Astro.props;
+---
+
+<nav class="platform-filter w-full bg-[#FFFFFF] border-b-[0.5px] border-[rgba(0,0,0,0.08)] mb-[32px]" aria-label={ariaLabel}>
+  <div class="flex flex-wrap gap-x-[24px]">
+    <button type="button" data-platform="all" aria-pressed="true">{allLabel}</button>
+    {platforms.map((platform) => (
+      <button type="button" data-platform={platform.value} aria-pressed="false">{platform.label}</button>
+    ))}
+  </div>
+</nav>
+
+<style>
+  .platform-filter button {
+    padding: 16px 0 14px 0;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    line-height: 1.2;
+    color: var(--color-stone);
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    transition: color 0.15s ease, border-color 0.15s ease;
+  }
+  .platform-filter button:hover {
+    color: var(--color-ink);
+  }
+  .platform-filter button:focus-visible {
+    outline: 2px solid var(--color-vermillion);
+    outline-offset: 2px;
+  }
+  .platform-filter button[aria-pressed='true'] {
+    color: var(--color-ink);
+    border-bottom-color: var(--color-vermillion);
+  }
+</style>
+
+<script>
+  const filter = document.querySelector('.platform-filter');
+  if (filter) {
+    const buttons = filter.querySelectorAll<HTMLButtonElement>('button[data-platform]');
+    const cards = document.querySelectorAll<HTMLElement>('[data-insight-card]');
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const selected = button.dataset.platform ?? 'all';
+        buttons.forEach((b) => b.setAttribute('aria-pressed', String(b === button)));
+        cards.forEach((card) => {
+          const cardPlatforms = (card.dataset.platforms ?? '').split(' ');
+          const visible = selected === 'all' || cardPlatforms.includes(selected);
+          card.style.display = visible ? '' : 'none';
+        });
+      });
+    });
+  }
+</script>

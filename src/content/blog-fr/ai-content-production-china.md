@@ -5,6 +5,7 @@ metaTitle: "Le contenu IA sur les plateformes chinoises"
 metaDescription: "Plus d’un annonceur chinois sur deux s’appuie sur l’IA pour produire ses contenus. Comment l’AIGC redessine le marketing sur Douyin, WeChat et RedNote."
 publishDate: 2026-04-06
 author: "TheRedScroll"
+platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Contenu"
 keywords: ["AIGC", "production contenu IA", "marketing Chine", "Douyin", "WeChat", "RedNote", "vidéo IA", "automatisation contenu"]
 featured: true

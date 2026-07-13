@@ -5,6 +5,7 @@ metaTitle: "Live commerce in China explained"
 metaDescription: "Live commerce drives 65-70% of influencer sales in China. Conversion rates, commissions, MCNs, and what brands should know before spending."
 publishDate: 2026-04-02
 author: "TheRedScroll"
+platforms: ["douyin"]
 category: "Strategy"
 keywords: ["live commerce China", "livestream selling", "China e-commerce", "MCN China", "CPS commission", "Taobao Live", "Douyin e-commerce"]
 featured: true

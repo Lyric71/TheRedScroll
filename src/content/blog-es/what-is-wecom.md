@@ -5,6 +5,7 @@ metaTitle: "WeCom: guía para marcas en China"
 metaDescription: "WeCom es la herramienta profesional de Tencent integrada en WeChat. Funciones, tráfico privado y por qué toda marca en China lo necesita."
 publishDate: 2026-04-06
 author: "TheRedScroll"
+platforms: ["wechat"]
 category: "Plataformas"
 keywords: ["WeCom", "WeChat Work", "tráfico privado", "marketing China", "WeChat empresa", "CRM China", "WeCom 5.0"]
 featured: true

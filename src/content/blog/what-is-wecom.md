@@ -5,6 +5,7 @@ metaTitle: "What is WeCom? A guide for brands in China"
 metaDescription: "WeCom is Tencent's business tool inside WeChat. Learn what it does, how private domain traffic works, and why brands in China need it."
 publishDate: 2026-04-06
 author: "TheRedScroll"
+platforms: ["wechat"]
 category: "Platforms"
 keywords: ["WeCom", "WeChat Work", "private domain traffic", "China marketing", "WeChat enterprise", "CRM China", "WeCom 5.0"]
 featured: true

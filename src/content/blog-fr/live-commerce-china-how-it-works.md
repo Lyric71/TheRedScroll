@@ -5,6 +5,7 @@ metaTitle: "La vente en direct en Chine, décryptée"
 metaDescription: "La vente en direct génère 65 à 70 % des ventes d’influenceurs en Chine. Taux de conversion, commissions, MCN : voici ce qu’il faut en retenir."
 publishDate: 2026-04-02
 author: "TheRedScroll"
+platforms: ["douyin"]
 category: "Stratégie"
 keywords: ["vente en direct Chine", "livestream vente", "commerce en ligne Chine", "MCN Chine", "commission CPS", "Taobao Live", "Douyin commerce"]
 featured: true

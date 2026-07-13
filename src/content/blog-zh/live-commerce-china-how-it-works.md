@@ -5,6 +5,7 @@ metaTitle: "中国直播电商，一文讲透怎么玩"
 metaDescription: "直播电商占了中国达人带货销售的65-70%。转化率、分佣、MCN，以及品牌投放前该懂的事。"
 publishDate: 2026-04-02
 author: "TheRedScroll"
+platforms: ["douyin"]
 category: "策略"
 keywords: ["中国直播电商", "直播带货", "中国电商", "中国MCN", "CPS分成", "淘宝直播", "抖音电商"]
 featured: true

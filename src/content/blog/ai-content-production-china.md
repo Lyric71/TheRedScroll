@@ -5,6 +5,7 @@ metaTitle: "AI content production for China's platforms"
 metaDescription: "Over 53% of Chinese advertisers use AI for content production. How AIGC is reshaping social media marketing on Douyin, WeChat, and RedNote."
 publishDate: 2026-04-06
 author: "TheRedScroll"
+platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Content"
 keywords: ["AIGC", "AI content production", "China marketing", "Douyin", "WeChat", "RedNote", "AI video", "content automation"]
 featured: true

@@ -5,6 +5,7 @@ metaTitle: "KOL vs KOC China: influencer guide"
 metaDescription: "KOL or KOC? Commission models, fake follower risks, and the pyramid approach that works. A practical guide for brands in China."
 publishDate: 2026-04-03
 author: "TheRedScroll"
+platforms: ["rednote"]
 category: "Strategy"
 keywords: ["KOL", "KOC", "China influencer marketing", "influencer China", "fake followers China", "Perfect Diary", "Xiaohongshu influencer"]
 featured: true

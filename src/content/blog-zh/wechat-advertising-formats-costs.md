@@ -5,6 +5,7 @@ metaTitle: "微信广告：形式全解与真实价格"
 metaDescription: "微信广告六种形式、三种计价。每个位置花多少钱，国际品牌头一次投放该怎么排？"
 publishDate: 2026-04-05
 author: "TheRedScroll"
+platforms: ["wechat"]
 category: "平台"
 keywords: ["微信广告", "朋友圈广告", "视频号广告", "腾讯广告", "中国广告", "微信CPM", "微信广告形式"]
 featured: true

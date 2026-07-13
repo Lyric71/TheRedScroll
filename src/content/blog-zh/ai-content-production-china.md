@@ -5,6 +5,7 @@ metaTitle: "AIGC内容生产：写给中国品牌的实战指南"
 metaDescription: "逾五成中国广告主已把AIGC用进内容生产。一文看懂AI如何重写抖音、微信、小红书的社交营销。"
 publishDate: 2026-04-06
 author: "TheRedScroll"
+platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "内容"
 keywords: ["AIGC", "AI内容生产", "中国营销", "抖音", "微信", "小红书", "AI视频", "内容自动化"]
 featured: true

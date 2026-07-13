@@ -16,6 +16,10 @@ pnpm-debug.log*
 # environment variables
 .env
 .env.production
+.env.linkedin
+
+# linkedin api token
+scripts/linkedin/.token.json
 
 # macOS-specific files
 .DS_Store

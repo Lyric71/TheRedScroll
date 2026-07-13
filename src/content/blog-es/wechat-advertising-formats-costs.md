@@ -5,6 +5,7 @@ metaTitle: "Anuncios en WeChat: formatos y precios"
 metaDescription: "WeChat tiene seis formatos de anuncio y tres modelos de precio. Cuánto cuesta cada emplazamiento y cómo plantear la primera campaña en China."
 publishDate: 2026-04-05
 author: "TheRedScroll"
+platforms: ["wechat"]
 category: "Plataformas"
 keywords: ["publicidad WeChat", "ads WeChat Moments", "ads WeChat Channels", "Tencent Ads", "publicidad China", "CPM WeChat", "formatos publicidad WeChat"]
 featured: true

@@ -5,6 +5,7 @@ metaTitle: "Warum Livestream-Shopping in China so funktioniert"
 metaDescription: "5.800 Milliarden Yuan in 2024. Fünf Gründe, warum chinesische Konsumenten heute lieber im Livestream kaufen."
 publishDate: 2026-04-04
 author: "TheRedScroll"
+platforms: ["douyin", "rednote"]
 category: "Strategie"
 keywords: ["Livestream-Shopping", "E-Commerce China", "Douyin Live", "Tmall Live", "Social Commerce China", "Live-Verkauf China", "Konsumentenverhalten China"]
 featured: true

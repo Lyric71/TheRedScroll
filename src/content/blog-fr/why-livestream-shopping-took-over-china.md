@@ -5,6 +5,7 @@ metaTitle: "Pourquoi l’achat en direct fonctionne si bien en Chine"
 metaDescription: "5 800 milliards de yuans en 2024. Cinq raisons pour lesquelles les consommateurs chinois préfèrent désormais acheter en direct."
 publishDate: 2026-04-04
 author: "TheRedScroll"
+platforms: ["douyin", "rednote"]
 category: "Stratégie"
 keywords: ["achat en direct", "commerce en ligne Chine", "Douyin direct", "Tmall live", "commerce social Chine", "vente en direct Chine", "comportement consommateur Chine"]
 featured: true

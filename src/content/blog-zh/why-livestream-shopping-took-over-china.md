@@ -5,6 +5,7 @@ metaTitle: "直播购物为什么在中国这么吃香"
 metaDescription: "2024年中国直播电商规模达5.8万亿元。站在消费者角度，看他们为什么更愿意在直播间下单。"
 publishDate: 2026-04-04
 author: "TheRedScroll"
+platforms: ["douyin", "rednote"]
 category: "策略"
 keywords: ["直播购物", "中国电商", "抖音直播", "天猫直播", "中国社交电商", "直播电商", "中国消费行为"]
 featured: true

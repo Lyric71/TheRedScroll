@@ -5,6 +5,7 @@ metaTitle: "Plataformas sociales de China: guía 2026"
 metaDescription: "Guía 2026 de las plataformas sociales de China para marcas extranjeras. Cifras de usuarios reales, funciones de venta y por dónde empezar. Desde dentro."
 publishDate: 2026-06-30
 author: "TheRedScroll"
+platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Plataformas"
 keywords: ["redes sociales China", "WeChat", "Douyin", "RedNote", "Xiaohongshu", "Weibo", "entrada mercado China", "social commerce China"]
 featured: true

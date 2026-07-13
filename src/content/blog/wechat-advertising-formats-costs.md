@@ -5,6 +5,7 @@ metaTitle: "WeChat ads: every format and what they cost"
 metaDescription: "WeChat has six ad formats and three pricing models. Here is what each placement costs and how international brands should plan their first campaign."
 publishDate: 2026-04-05
 author: "TheRedScroll"
+platforms: ["wechat"]
 category: "Platforms"
 keywords: ["WeChat advertising", "WeChat Moments ads", "WeChat Channels ads", "Tencent Ads", "China advertising", "WeChat CPM", "WeChat ad formats"]
 featured: true

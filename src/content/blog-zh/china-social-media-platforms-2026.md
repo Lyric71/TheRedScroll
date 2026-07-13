@@ -5,6 +5,7 @@ metaTitle: "2026中国社交媒体平台：出海品牌指南"
 metaDescription: "2026年中国社交媒体平台全景指南。真实用户规模、电商打法、从哪起步，全部来自一线实操，写给出海品牌。"
 publishDate: 2026-06-30
 author: "TheRedScroll"
+platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "平台"
 keywords: ["中国社交媒体", "微信", "抖音", "小红书", "微博", "中国市场进入", "中国社交电商"]
 featured: true

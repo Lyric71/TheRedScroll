@@ -5,6 +5,7 @@ metaTitle: "KOL与KOC怎么选：中国达人投放实战"
 metaDescription: "KOL还是KOC？分佣怎么算、刷量怎么防、金字塔怎么搭。写给在中国做市场的品牌。"
 publishDate: 2026-04-03
 author: "TheRedScroll"
+platforms: ["rednote"]
 category: "策略"
 keywords: ["KOL", "KOC", "中国达人营销", "中国网红营销", "虚假粉丝", "完美日记", "小红书达人"]
 featured: true

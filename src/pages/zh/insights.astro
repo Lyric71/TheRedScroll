@@ -3,12 +3,14 @@ import { getCollection } from 'astro:content';
 import PageLayout from '../../layouts/PageLayout.astro';
 import Container from '../../components/ui/Container.astro';
 import SectionBar from '../../components/ui/SectionBar.astro';
+import PlatformFilter from '../../components/pages/PlatformFilter.astro';
 
 const allPosts = await getCollection('blog-zh');
 const articles = allPosts
   .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime())
   .map((post) => ({
     category: post.data.category,
+    platforms: post.data.platforms ?? [],
     title: post.data.title,
     excerpt: post.data.description,
     readingTime: `${Math.ceil(post.body!.split(/\s+/).length / 200)} 分钟`,
@@ -16,6 +18,15 @@ const articles = allPosts
     slug: `/zh/insights/${post.id}`,
     featuredImage: post.data.featuredImage,
   }));
+
+const PLATFORM_LABELS = [
+  { value: 'wechat', label: '微信 WeChat' },
+  { value: 'rednote', label: '小红书 RedNote' },
+  { value: 'douyin', label: '抖音 Douyin' },
+  { value: 'weibo', label: '微博 Weibo' },
+];
+const presentPlatforms = new Set<string>(articles.flatMap((a) => a.platforms));
+const platformOptions = PLATFORM_LABELS.filter((p) => presentPlatforms.has(p.value));
 ---
 
 <PageLayout
@@ -35,19 +46,20 @@ const articles = allPosts
         <h1 class="text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[16px]">
           我们在中国社媒上看到的、踩过的、想透的事
         </h1>
-        <p class="text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] text-[var(--color-stone)]">
-          平台的新动向、策略的拆解，一线跑出来的真经验。
-        </p>
       </div>
+      <p class="text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] text-[var(--color-stone)]">
+        平台的新动向、策略的拆解，一线跑出来的真经验。
+      </p>
     </Container>
   </section>
 
   <!-- Articles grid -->
   <section class="pb-[96px] max-[640px]:pb-[64px]">
     <Container>
+      <PlatformFilter allLabel="全部" ariaLabel="按平台筛选文章" platforms={platformOptions} />
       <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[24px]">
         {articles.map((article) => (
-          <a href={article.slug} class="block bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[8px] overflow-hidden transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)]">
+          <a href={article.slug} data-insight-card data-platforms={article.platforms.join(' ')} class="block bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[8px] overflow-hidden transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)]">
             {article.featuredImage ? (
               <img src={article.featuredImage} alt={article.title} class="w-full aspect-[4/3] object-cover bg-[var(--color-warm-gray)]" loading="lazy" />
             ) : (

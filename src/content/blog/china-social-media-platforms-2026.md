@@ -5,6 +5,7 @@ metaTitle: "China Social Media Platforms: 2026 Brand Guide"
 metaDescription: "A 2026 guide to China's social media platforms for foreign brands. Real user numbers, commerce features, and where to start. From the ground."
 publishDate: 2026-06-30
 author: "TheRedScroll"
+platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Platforms"
 keywords: ["China social media", "WeChat", "Douyin", "RedNote", "Xiaohongshu", "Weibo", "China market entry", "China social commerce"]
 featured: true

@@ -5,6 +5,7 @@ metaTitle: "Live Commerce in China verstanden"
 metaDescription: "Live Commerce generiert 65 bis 70 % der Influencer-Verkäufe in China. Conversion-Raten, Provisionen, MCN: Das Wesentliche im Überblick."
 publishDate: 2026-04-02
 author: "TheRedScroll"
+platforms: ["douyin"]
 category: "Strategie"
 keywords: ["Live Commerce China", "Livestream Verkauf", "E-Commerce China", "MCN China", "CPS-Provision", "Taobao Live", "Douyin Commerce"]
 featured: true

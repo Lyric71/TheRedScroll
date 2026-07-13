@@ -5,6 +5,7 @@ metaTitle: "一文看懂WeCom：品牌做中国的必修课"
 metaDescription: "WeCom是腾讯嵌在微信里的企业端工具。它能做什么、私域怎么跑、为什么做中国的品牌都离不开它。"
 publishDate: 2026-04-06
 author: "TheRedScroll"
+platforms: ["wechat"]
 category: "平台"
 keywords: ["WeCom", "企业微信", "私域流量", "中国营销", "微信企业", "中国CRM", "WeCom 5.0"]
 featured: true

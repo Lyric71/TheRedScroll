@@ -5,6 +5,7 @@ metaTitle: "Réseaux sociaux chinois : guide 2026 des marques"
 metaDescription: "Le guide 2026 des réseaux sociaux chinois pour les marques étrangères. Chiffres réels, ressorts de la vente et conseils pour démarrer. Vu du terrain."
 publishDate: 2026-06-30
 author: "TheRedScroll"
+platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Plateformes"
 keywords: ["réseaux sociaux Chine", "WeChat", "Douyin", "RedNote", "Xiaohongshu", "Weibo", "entrée marché chinois", "commerce social Chine"]
 featured: true
