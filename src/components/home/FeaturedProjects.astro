@@ -41,6 +41,8 @@ const projects = [
     industry: projectText.viessmann.industry,
     platform: projectText.viessmann.platform ?? 'Douyin + RedNote + WeCom',
     image: '/images/clients/Viessmann/Viessman-climate-solution.avif',
+    width: 1280,
+    height: 720,
     href: lp('/work/viessmann'),
   },
   {
@@ -48,13 +50,17 @@ const projects = [
     industry: projectText.jlr.industry,
     platform: projectText.jlr.platform ?? 'Douyin + RedNote + WeChat',
     image: '/images/clients/Jaguar/Jaguar-Land-Rover.avif',
+    width: 1280,
+    height: 720,
     href: lp('/work/jaguar-land-rover'),
   },
   {
     title: projectText.jac.title,
     industry: projectText.jac.industry,
     platform: projectText.jac.platform ?? 'WeChat + RedNote + Weibo',
-    image: '/images/clients/JAC/JAC-Wechat-4.jpg',
+    image: '/images/clients/JAC/JAC-Wechat-4.webp',
+    width: 605,
+    height: 340,
     href: lp('/work/jac-motors'),
   },
   {
@@ -62,6 +68,8 @@ const projects = [
     industry: projectText.iguzzini.industry,
     platform: projectText.iguzzini.platform ?? 'WeChat + RedNote + Weibo',
     image: '/images/clients/iGuzzini/iguzzini4-1.webp',
+    width: 1200,
+    height: 668,
     href: lp('/work/iguzzini'),
   },
 ];
@@ -122,6 +130,8 @@ const sectionText = lang === 'de' ? {
             <img
               src={project.image}
               alt={project.title}
+              width={project.width}
+              height={project.height}
               class="absolute inset-0 w-full h-full object-cover"
               loading="lazy"
               decoding="async"

@@ -1,6 +1,6 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
-import { copyFileSync, existsSync, statSync } from 'node:fs';
+import { existsSync, readFileSync, statSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import tailwindcss from '@tailwindcss/vite';
@@ -37,15 +37,54 @@ const sitemapLocaleFilter = (page) => {
 // so we never emit an hreflang alternate that 404s.
 const builtPaths = new Set();
 
-/** Resolve a URL back to the source file that produced it, then use that
- *  file's mtime for lastmod. Falls back to the build date when no file maps
- *  cleanly (eg. dynamic routes whose source is harder to locate). */
+/** Resolve a URL back to the source that produced it and derive a real
+ *  lastmod from it. Content-collection posts (the /insights/ and /es/analisis/
+ *  trees) use their frontmatter `updatedDate`/`publishDate`, which survives CI
+ *  checkouts. Static .astro routes fall back to file mtime, then build date.
+ *  Note: on fresh CI clones mtime equals checkout time, so frontmatter is the
+ *  only reliable per-page freshness signal — hence the collection lookup. */
 const srcRoot = fileURLToPath(new URL('./src/pages', import.meta.url));
+const contentRoot = fileURLToPath(new URL('./src/content', import.meta.url));
 const buildDate = new Date();
+
+/** Map a URL path to the content-collection markdown file behind it, if any.
+ *  Mirrors the route trees: /insights/<slug>/ → blog, /fr/insights/ → blog-fr,
+ *  /zh/insights/ → blog-zh, /de/insights/ → blog-de, /es/analisis/ → blog-es. */
+const blogRoutePatterns = [
+  { re: /^\/insights\/([^/]+)\/?$/, dir: 'blog' },
+  { re: /^\/fr\/insights\/([^/]+)\/?$/, dir: 'blog-fr' },
+  { re: /^\/zh\/insights\/([^/]+)\/?$/, dir: 'blog-zh' },
+  { re: /^\/de\/insights\/([^/]+)\/?$/, dir: 'blog-de' },
+  { re: /^\/es\/analisis\/([^/]+)\/?$/, dir: 'blog-es' },
+];
+
+/** @param {string} urlPath */
+const frontmatterDateForPath = (urlPath) => {
+  for (const { re, dir } of blogRoutePatterns) {
+    const m = urlPath.match(re);
+    if (!m) continue;
+    for (const ext of ['.md', '.mdx']) {
+      const file = path.join(contentRoot, dir, `${m[1]}${ext}`);
+      if (!existsSync(file)) continue;
+      const head = readFileSync(file, 'utf8').slice(0, 2000);
+      const dateMatch =
+        head.match(/^updatedDate:\s*["']?(\d{4}-\d{2}-\d{2})/m) ??
+        head.match(/^publishDate:\s*["']?(\d{4}-\d{2}-\d{2})/m);
+      if (dateMatch) {
+        const d = new Date(dateMatch[1]);
+        if (!Number.isNaN(d.getTime())) return d;
+      }
+    }
+  }
+  return null;
+};
+
 /** @param {string} pageUrl */
 const lastmodForPage = (pageUrl) => {
   try {
     const urlPath = pageUrl.replace(/^https?:\/\/[^/]+/, '') || '/';
+    const fmDate = frontmatterDateForPath(urlPath);
+    if (fmDate) return fmDate;
     const cleaned = urlPath.replace(/\/$/, '') || '/index';
     const candidates = [
       path.join(srcRoot, `${cleaned}.astro`),
@@ -58,19 +97,6 @@ const lastmodForPage = (pageUrl) => {
     // fall through
   }
   return buildDate;
-};
-
-/** @type {import('astro').AstroIntegration} */
-const sitemapAlias = {
-  name: 'sitemap-alias',
-  hooks: {
-    'astro:build:done': ({ dir }) => {
-      const outDir = fileURLToPath(dir);
-      const src = `${outDir}/sitemap-0.xml`;
-      const dest = `${outDir}/sitemap.xml`;
-      if (existsSync(src)) copyFileSync(src, dest);
-    },
-  },
 };
 
 // https://astro.build/config
@@ -130,7 +156,6 @@ export default defineConfig({
         };
       },
     }),
-    sitemapAlias,
   ],
   vite: {
     plugins: [tailwindcss()],

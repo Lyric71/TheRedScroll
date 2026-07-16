@@ -3,6 +3,19 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Container from '../components/ui/Container.astro';
 import Button from '../components/ui/Button.astro';
 import SectionBar from '../components/ui/SectionBar.astro';
+import FaqAccordion from '../components/sections/FaqAccordion.astro';
+import { faqPageSchema } from '../lib/schema';
+
+// Answers restate commitments already published on this page (contract terms,
+// onboarding, add-ons). No new pricing facts are introduced here.
+const faqs = [
+  { q: 'What does fixed scope, fixed price mean?', a: 'Your deliverables are written into the contract. So is the monthly price. You know what you get and what you pay before we start. No hourly billing, no scope drift, no surprise invoices.' },
+  { q: 'Is there a minimum contract length?', a: 'Yes. All packages run on a 6-month minimum contract. Building an audience on Chinese platforms takes consistent posting over months, not weeks.' },
+  { q: 'What are the payment terms?', a: 'Monthly in advance. Prices exclude tax. Local taxes apply based on the billing entity, Shanghai or Hong Kong.' },
+  { q: 'How fast can we start?', a: 'Account setup and first content go live within 2 weeks of contract signing. If your accounts need registration or verification, we handle that during onboarding.' },
+  { q: 'Can we add more platforms later?', a: 'Yes. Add-on platforms like Zhihu, Toutiao, and Lemon8 can be added to any package at per-post rates. You can adjust the mix as you learn what works.' },
+  { q: 'What if none of the packages fit?', a: 'We build custom packages for non-standard scope. Book a call and tell us what you need.' },
+];
 
 const packages = [
   {
@@ -110,6 +123,7 @@ const addOnPlatforms = [
 <BaseLayout
   title="Fixed-Price Packages for China Social Media | TheRedScroll"
   description="Fixed scope, fixed price packages for China social media marketing. WeChat, Douyin, RedNote, Weibo. From $3,750/month."
+  schema={faqPageSchema(faqs)}
 >
   <main class="pt-[60px] max-[640px]:pt-[52px]">
 
@@ -573,6 +587,9 @@ const addOnPlatforms = [
         </div>
       </Container>
     </section>
+
+    <!-- FAQ -->
+    <FaqAccordion faqs={faqs} subtitle="How the packages, contracts, and billing work." />
 
   </main>
 </BaseLayout>

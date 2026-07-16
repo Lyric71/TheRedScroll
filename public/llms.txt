@@ -1,5 +1,7 @@
 # TheRedScroll
 
+Last updated: 2026-07-16
+
 > TheRedScroll is a China social media agency based in Shanghai and Hong Kong. We help Western brands grow on WeChat, Douyin, RedNote (Xiaohongshu), Weibo, and 14 other Chinese social platforms, on a fixed scope and a fixed price.
 
 Founded by Cyril Drouin, former CEO of Publicis Commerce and Performance Marketing China and North Asia. We also work with Chinese brands scaling their domestic social presence.
@@ -24,19 +26,23 @@ Founded by Cyril Drouin, former CEO of Publicis Commerce and Performance Marketi
 - [Douyin marketing](https://www.theredscroll.com/platforms/douyin/): Content, accounts, and paid media
 - [RedNote (Xiaohongshu) marketing](https://www.theredscroll.com/platforms/rednote/): Content strategy and stores
 - [Weibo marketing](https://www.theredscroll.com/platforms/weibo/): Account management and campaigns
+- [AI content production](https://www.theredscroll.com/ai/): How we use AI in content production
+- [Work and case studies](https://www.theredscroll.com/work/): Client projects and results
 - [Insights and guides](https://www.theredscroll.com/insights/): Long-form guides on China social
 - [Pricing](https://www.theredscroll.com/pricing/): Fixed-scope, fixed-price model
 - [Contact](https://www.theredscroll.com/contact/): Book a call
 
 ## Published guides
 
-- [KOL vs KOC in China](https://www.theredscroll.com/insights/kol-vs-koc-china-influencer-guide/): How the two influencer types differ
-- [Douyin social commerce](https://www.theredscroll.com/insights/douyin-social-commerce-profitability/): Profitability on Douyin Shop
-- [WeChat advertising formats and costs](https://www.theredscroll.com/insights/wechat-advertising-formats-costs/): Ad formats and pricing
-- [How live commerce works in China](https://www.theredscroll.com/insights/live-commerce-china-how-it-works/): The mechanics of live shopping
-- [Why livestream shopping took over China](https://www.theredscroll.com/insights/why-livestream-shopping-took-over-china/): Market context and history
-- [AI content production in China](https://www.theredscroll.com/insights/ai-content-production-china/): AI-generated visuals and video
-- [What is WeCom](https://www.theredscroll.com/insights/what-is-wecom/): WeChat Work for private domain CRM
+- [China social media platforms in 2026](https://www.theredscroll.com/insights/china-social-media-platforms-2026/): The platform landscape, user numbers, and where to invest (published 2026-06-30)
+- [The content mix that works in China](https://www.theredscroll.com/insights/content-mix-china/): What to post, how often, per platform (published 2026-07-13)
+- [KOL vs KOC in China](https://www.theredscroll.com/insights/kol-vs-koc-china-influencer-guide/): How the two influencer types differ (published 2026-04-03)
+- [Douyin social commerce](https://www.theredscroll.com/insights/douyin-social-commerce-profitability/): Profitability on Douyin Shop (published 2026-04-06)
+- [WeChat advertising formats and costs](https://www.theredscroll.com/insights/wechat-advertising-formats-costs/): Ad formats and pricing (published 2026-04-05)
+- [How live commerce works in China](https://www.theredscroll.com/insights/live-commerce-china-how-it-works/): The mechanics of live shopping (published 2026-04-02)
+- [Why livestream shopping took over China](https://www.theredscroll.com/insights/why-livestream-shopping-took-over-china/): Market context and history (published 2026-04-04)
+- [AI content production in China](https://www.theredscroll.com/insights/ai-content-production-china/): AI-generated visuals and video (published 2026-04-06)
+- [What is WeCom](https://www.theredscroll.com/insights/what-is-wecom/): WeChat Work for private domain CRM (published 2026-04-06)
 
 ## Localized versions
 

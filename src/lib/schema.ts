@@ -72,12 +72,16 @@ export function articleSchema(opts: ArticleSchemaOpts): Record<string, unknown> 
   const author = namedAuthor
     ? { '@type': 'Person', name: namedAuthor, '@id': FOUNDER_ID }
     : { '@id': FOUNDER_ID };
+  const fullUrl = canonicalUrl(opts.url);
   return {
     '@context': 'https://schema.org',
     '@type': opts.type ?? 'Article',
     headline: opts.headline,
     description: opts.description,
-    url: canonicalUrl(opts.url),
+    url: fullUrl,
+    // Google's Article guidelines recommend mainEntityOfPage pointing at the
+    // canonical page URL so the article disambiguates from syndicated copies.
+    mainEntityOfPage: { '@type': 'WebPage', '@id': fullUrl },
     ...(opts.image && { image: opts.image.startsWith('http') ? opts.image : `${SITE_URL}${opts.image}` }),
     ...(opts.datePublished && { datePublished: opts.datePublished }),
     ...(opts.dateModified && { dateModified: opts.dateModified }),
@@ -109,6 +113,7 @@ export function caseStudySchema(opts: CaseStudyOpts): Record<string, unknown> {
     headline: opts.headline,
     description: opts.description,
     url: fullUrl,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': fullUrl },
     ...(schemaImage && { image: schemaImage.startsWith('http') ? schemaImage : `${SITE_URL}${schemaImage}` }),
     about: {
       '@type': 'Organization',

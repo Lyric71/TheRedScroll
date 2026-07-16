@@ -1,0 +1,333 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import UpdatedDate from '../../../components/ui/UpdatedDate.astro';
+import { faqPageSchema, serviceSchema } from '../../../lib/schema';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+import FaqAccordion from '../../../components/sections/FaqAccordion.astro';
+import GettingStarted from '../../../components/sections/GettingStarted.astro';
+
+
+const faqs = [
+  { q: '开卖之前必须先在中国设公司吗？', a: '不用。走跨境电商模式，抖音商城、微信小程序、小红书店铺都能直接卖，不需要境内公司。你需要一张香港或海外的营业执照，再找一家有保税仓资源的物流服务商。这些我们都会帮你落实到位。' },
+  { q: '大概要准备多少预算？', a: '社媒先行的打法，每月 ¥15,000 到 ¥30,000 就能起步，涵盖账号开设、内容制作和 KOC 种草。想跑得再快一点，每月再加 ¥10,000 到 ¥20,000 的广告投放。对比一下天猫国际：光开店和保证金通常就要 ¥100,000 以上，那时候你还一单都没卖出去。' },
+  { q: '天猫和京东是不是可以完全不做？', a: '不是，只是不急。等品牌有了认知、需求稳定下来，这两个平台的能量非常大。但在没有社媒声量托底的情况下先上平台，结局多半是钱花了不少、回报没见几个。先靠社媒把认知做起来，等数据撑得住了，再扩到电商平台。' },
+  { q: '多久能看到销量？', a: '走抖音商城或微信小程序，最快 30 到 60 天就能出首单。想做到可复制的稳定销量，一般要 90 到 120 天，等内容库和评价基础慢慢攒起来。' },
+  { q: '哪些品类最适合社媒先行？', a: '美妆、护肤、保健品、食品饮料、时尚、生活方式。凡是好看、好测评、有故事可讲的产品，在小红书和抖音上起量最快。B2B 和工业品走的是另一条路，主要靠微信和知乎。还有一点要注意：化妆品、食品、保健品这类产品涉及进口注册，周期可能多出 3 到 6 个月。这些坑我们会提前挑明。' },
+  { q: '产品注册和合规你们管吗？', a: '我们负责社媒和电商这一侧。产品注册（化妆品备案、保健品审批、食品进口许可）由我们长期合作的专业合规机构来做。整个流程我们来协调，你的品类需要备齐什么，一开始就给你讲清楚。' },
+  { q: '产品已经在天猫上架了，但一直卖不动，怎么办？', a: '问题通常不出在店铺本身，而是没有社媒声量往店里导流。我们会先做一轮诊断，通常的建议是补上社媒这一层：小红书种草、抖音内容、微信 CRM。一旦消费者能在平台之外搜到你的品牌，店铺的数据往往就上来了。' },
+  { q: '物流和发货你们做吗？', a: '不直接做。我们和成熟的跨境物流服务商、保税仓运营方长期合作。平台和电商链路我们搭，履约发货他们管，中间的衔接由我们来协调，你不用自己同时对接好几家供应商。' },
+  { q: '中国消费者是怎么发现新的海外品牌的？', a: '绝大多数靠社媒。2025 年的数据显示，年轻消费者找产品时，42% 先搜抖音，30% 上小红书，只有 17% 从百度开始。发现品牌这件事，如今发生在社交 App 里，而不是搜索引擎上。' },
+  { q: '公司在海外，能收人民币吗？', a: '能，这一块平台全包了。消费者用人民币付款，你走平台结算，拿到手的是本地货币。微信小程序和抖音商城都支持这套流程。' },
+];
+
+const gettingStartedSteps = [
+  {
+    title: '先聊一聊',
+    description: '聊聊你的品牌、你的产品，以及进中国的准备做到了哪一步。没有推销话术，只问该问的问题。',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
+  },
+  {
+    title: '进入方案',
+    description: '选平台、开账号、定内容策略、搭电商链路。范围写清楚，价格一口价。',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>',
+  },
+  {
+    title: '30 天上线',
+    description: '账号认证到位、首批内容发出、电商链路随时可以接单。',
+    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
+  },
+];
+---
+
+<PageLayout
+  title="社交电商切入中国市场 | TheRedScroll"
+  description="从社交电商切入中国市场。账号开设、品牌本地化、抖音商城、微信小程序。团队驻扎上海。"
+  lang="zh"
+  schema={[
+    serviceSchema({
+      name: '社交电商切入中国市场',
+      description: '账号开设、品牌本地化、抖音商城和微信小程序的社交电商对接，以及 90 天上市执行，服务进入中国市场的品牌。',
+      url: '/zh/services/market-entry',
+      serviceType: 'Marketing Strategy and Consulting',
+    }),
+    faqPageSchema(faqs),
+  ]}
+>
+
+  <!-- Hero — Dark hero banner -->
+  <section class="relative w-full overflow-hidden bg-[var(--color-ink)]">
+    <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/market-entry-hero.webp')" aria-hidden="true"></div>
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[1024px]:pt-[128px] max-[1024px]:pb-[72px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+        进入中国市场
+      </p>
+      <UpdatedDate lang="zh" date="2026 年 7 月" variant="light" class="mb-[12px]" />
+      <h1 class="text-[#FFFFFF] text-[48px] max-[1024px]:text-[40px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        货架上有你的产品还不够。没人知道你是谁，就没人下单。
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        从社交媒体切入中国市场。比传统的电商平台开店更快、更省钱，也更容易试出真需求。
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/zh/contact/">预约通话</Button>
+        <Button variant="secondary-dark" href="#what-we-do">服务内容</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why social media comes first -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        <div class="relative col-span-2 row-span-2 max-[640px]:col-span-1 max-[640px]:row-span-1 bg-[#1A1A1A] rounded-[12px] p-[32px] max-[640px]:p-[20px] flex flex-col justify-between min-h-[320px] max-[640px]:min-h-0 overflow-hidden">
+          <svg class="absolute bottom-[-20px] right-[-20px] w-[260px] h-[260px] opacity-[0.06]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <div class="relative z-[1]">
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">问题出在哪</p>
+            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[16px]">多数品牌，第一步就走错了。</h2>
+            <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[400px]">一提进中国，多数品牌想到的就是去天猫或京东开店。五年前这条路还走得通，现在真的走不通了。社媒才是第一步。</p>
+          </div>
+          <div class="relative z-[1] mt-[24px]">
+            <Button variant="secondary-dark" href="#what-we-do">服务内容</Button>
+          </div>
+        </div>
+        <div class="relative overflow-hidden bg-[#F0F1F4] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">没有口碑，就没有销量</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">天猫店开了，产品也上架了。可没人搜你的品牌，因为没人听说过你。零评价，零订单。</p>
+        </div>
+        <div class="relative overflow-hidden bg-[#1A1A1A] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">消费者在社媒上发现品牌</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.6)]">下单前先刷小红书，想看演示就搜抖音，顺手还要找找你的微信。结果什么都搜不到。单子，就下给了那个搜得到的牌子。</p>
+        </div>
+        <div class="relative overflow-hidden bg-[#CC3333] rounded-[12px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.1]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">社媒必须走在前面</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[rgba(255,255,255,0.8)]">先让人知道你的品牌，再去砸天猫旗舰店。电商平台能不能跑起来，靠的就是社媒攒下的这份认知。</p>
+        </div>
+        <div class="relative overflow-hidden bg-[#E8E0D8] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] opacity-[0.07]" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          <h3 class="relative z-[1] text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">平台开店的账单涨得飞快</h3>
+          <p class="text-[13px] font-normal leading-[1.5] text-[var(--color-stone)]">天猫国际光开店，保证金加各项费用通常就要 ¥100,000 以上，一单还没卖出去。社媒先行的打法，每月 ¥15,000 起步。</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Social commerce changes the equation — dark section -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="bg-[#1A1A1A] rounded-[12px] p-[48px] max-[1024px]:p-[32px] max-[640px]:p-[32px_20px]">
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">社交电商</p>
+        <h2 class="text-[#FFFFFF] text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] mb-[16px]">社交平台早就不只是种草渠道了，它们直接卖货。</h2>
+        <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5] max-w-[680px] mb-[32px]">
+          完全可以先从社交电商切入：测产品、攒粉丝、拿到真实的销售数据，先确认需求真实存在，再去背整套电商平台运营的成本和复杂度。
+        </p>
+        <div class="grid grid-cols-3 max-[640px]:grid-cols-1 gap-[24px]">
+          <div>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">抖音</h3>
+            <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+              2024 年电商成交额 3.5 万亿元。用户在视频里看到产品，点一下链接，不出 App 就完成购买。按成交额算，已经是全国第三大电商渠道。
+            </p>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">小红书</h3>
+            <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+              支持站内购买、品牌店铺和直播带货。消费者从看完一篇 KOC（关键意见消费者）种草笔记到付款下单，用不了 30 秒。
+            </p>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#FFFFFF] mb-[8px]">微信小程序</h3>
+            <p class="text-[14px] font-normal text-[rgba(255,255,255,0.6)] leading-[1.5]">
+              开在微信里的完整电商店铺：商品目录、支付、订单跟踪、会员体系一应俱全。2024 年微信小店的活跃商家翻了一倍，总 GMV 同比涨了 200%。
+            </p>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- It's cheaper to start on social -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="bg-[var(--color-rice-paper)] rounded-[10px] p-[48px] max-[1024px]:p-[32px] max-[640px]:p-[32px_20px]">
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[24px] text-center">成本对比</p>
+        <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[32px] max-[640px]:gap-[24px] text-center">
+          <div>
+            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[4px]">¥100,000 以上</p>
+            <p class="text-[13px] font-normal text-[var(--color-stone)] leading-[1.4]">天猫国际开店成本：保证金、年费、店铺设计，再加最低广告投入。一单没卖，钱先掏出去了。</p>
+          </div>
+          <div>
+            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">每月 ¥15,000 到 ¥30,000</p>
+            <p class="text-[13px] font-normal text-[var(--color-stone)] leading-[1.4]">社媒先行：账号开设、内容制作、KOC 种草。用真实用户的真实反馈，验证产品和市场到底合不合拍。</p>
+          </div>
+        </div>
+        <div class="max-w-[680px] mx-auto mt-[32px]">
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)] text-center">
+            这不是说电商平台可以不做，而是社媒要放在前面。平台上的销量，靠的就是社媒攒下的认知和信任。
+          </p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- What we do -->
+  <section id="what-we-do" class="mt-[96px] max-[640px]:mt-[64px] scroll-mt-[76px]">
+    <Container>
+      <SectionBar />
+      <SectionHeading overline="我们做的事">市场调研和账号开设</SectionHeading>
+
+      <div class="rounded-[12px] overflow-hidden mt-[24px]">
+        <img src="/images/what-we-do/market-entry.webp" alt="TheRedScroll团队和客户一起规划市场进入方案" class="w-full aspect-[5/2] max-[640px]:aspect-[16/10] object-cover" loading="lazy" decoding="async" />
+      </div>
+
+      <div class="grid grid-cols-3 max-[768px]:grid-cols-1 gap-[24px] -mt-[72px] max-[768px]:-mt-[32px] px-[32px] max-[768px]:px-[0px] relative z-[1]">
+        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
+          <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
+            <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">市场调研</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">动手之前先摸底你的品类：谁在卖类似的产品、用什么平台、什么内容跑得动、价格怎么定，以及空档留在哪儿。</p>
+        </div>
+        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
+          <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
+            <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="16 11 18 13 22 9"/></svg>
+          </div>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">账号开设和认证</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">在所有相关平台注册并认证你的品牌账号。微信、小红书、抖音、微博，每家的认证流程都不一样，全程由我们的团队打理。</p>
+        </div>
+        <div class="bg-white rounded-[10px] p-[32px] max-[640px]:p-[20px] border border-[rgba(0,0,0,0.08)]">
+          <div class="w-[48px] h-[48px] rounded-full bg-[var(--color-warm-gray)] flex items-center justify-center mb-[16px]">
+            <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">品牌本地化</h3>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">中文品牌命名、视觉体系适配、包装建议，以及各平台的信息框架。商标注册尽早启动，社媒同步往前推，两条线互不耽误。</p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Social commerce integration — cards -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <SectionBar />
+      <SectionHeading overline="电商">社交电商对接</SectionHeading>
+
+      <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px] mt-[24px]">
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
+          <img src="/images/platforms/douyin-services/douyin-shop.webp" alt="手机上的抖音商城商品页" class="w-full aspect-[16/9] object-cover" loading="lazy" decoding="async" />
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">抖音商城</h3>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">不设境内公司也能做跨境销售。商品直接挂在短视频和直播间里，从看到到下单，中间几乎没有环节。</p>
+          </div>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
+          <img src="/images/platforms/wechat-ecosystem/mini-programs.webp" alt="手机上的微信小程序店铺" class="w-full aspect-[16/9] object-cover" loading="lazy" decoding="async" />
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">微信小程序店铺</h3>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">开在微信里的自有店铺：跨境支付、商品目录、订单管理。和公众号打通，靠文章、广告和二维码分发出去。</p>
+          </div>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
+          <img src="/images/platforms/rednote-why/social-commerce.webp" alt="小红书站内购物体验" class="w-full aspect-[16/9] object-cover" loading="lazy" decoding="async" />
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">小红书店铺</h3>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">商品直接挂在你的笔记和达人内容上。美妆、生活方式和时尚类品牌尤其合适。</p>
+          </div>
+        </div>
+        <div class="bg-[var(--color-rice-paper)] rounded-[10px] overflow-hidden">
+          <img src="/images/platforms/additional-why/ecommerce-power.webp" alt="跨境物流保税仓" class="w-full aspect-[16/9] object-cover" loading="lazy" decoding="async" />
+          <div class="p-[24px] max-[640px]:p-[20px]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[8px]">跨境物流</h3>
+            <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)]">履约发货交给保税仓和跨境物流服务商。起步阶段不需要境内公司，也不用在国内备货。我们会按你的品类和发货量，对接筛选过的本地运营商。</p>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Launch strategy -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-[1fr_1fr] max-[640px]:grid-cols-1 gap-[48px] max-[640px]:gap-[32px] items-center">
+        <div>
+          <SectionBar />
+          <SectionHeading overline="落地执行">上市策略和执行</SectionHeading>
+          <div class="flex flex-col gap-[24px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              我们先做一份 90 天上市计划：选平台、定内容策略、排 KOC 种草节奏、分广告预算、设阶段性 KPI。
+            </p>
+            <p>
+              然后就是跑起来。内容制作、账号运营、达人协调、广告投放、每周复盘。头三个月该做的每一件事，把品牌从零带到真正能跑的状态。
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center justify-center">
+          <svg class="w-full max-w-[320px]" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Outer circle -->
+            <circle cx="160" cy="160" r="140" stroke="#1A1A1A" stroke-width="1" stroke-dasharray="4 4" opacity="0.15"/>
+            <!-- Inner circle -->
+            <circle cx="160" cy="160" r="90" stroke="#1A1A1A" stroke-width="1" stroke-dasharray="4 4" opacity="0.1"/>
+            <!-- 90-day arc -->
+            <path d="M160 20 A140 140 0 0 1 300 160" stroke="#CC3333" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+            <!-- Milestone dots -->
+            <circle cx="160" cy="20" r="6" fill="#CC3333" opacity="0.8"/>
+            <circle cx="245" cy="62" r="6" fill="#CC3333" opacity="0.5"/>
+            <circle cx="300" cy="160" r="6" fill="#CC3333" opacity="0.3"/>
+            <!-- Center target -->
+            <circle cx="160" cy="160" r="8" fill="none" stroke="#1A1A1A" stroke-width="1.5" opacity="0.3"/>
+            <circle cx="160" cy="160" r="3" fill="#1A1A1A" opacity="0.3"/>
+            <!-- Connecting lines to center -->
+            <line x1="160" y1="26" x2="160" y2="152" stroke="#1A1A1A" stroke-width="0.5" stroke-dasharray="3 3" opacity="0.1"/>
+            <line x1="245" y1="62" x2="163" y2="157" stroke="#1A1A1A" stroke-width="0.5" stroke-dasharray="3 3" opacity="0.1"/>
+            <!-- Labels -->
+            <text x="160" y="10" text-anchor="middle" font-size="10" font-weight="500" fill="#1A1A1A" opacity="0.5">第 1 天</text>
+            <text x="268" y="56" text-anchor="middle" font-size="10" font-weight="500" fill="#1A1A1A" opacity="0.5">第 30 天</text>
+            <text x="320" y="155" text-anchor="end" font-size="10" font-weight="500" fill="#1A1A1A" opacity="0.5">第 90 天</text>
+          </svg>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Case study -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <a href="/zh/work/mission-foods/" class="block bg-[var(--color-rice-paper)] rounded-[10px] p-[48px] max-[1024px]:p-[32px] max-[640px]:p-[32px_20px] group">
+        <div class="flex gap-[48px] max-[768px]:flex-col items-center">
+          <div class="flex-1 min-w-0">
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[12px]">客户案例</p>
+            <h3 class="text-[24px] max-[640px]:text-[20px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[12px]">Mission Foods：用社媒把玉米片带进中国市场</h3>
+            <p class="text-[15px] font-normal leading-[1.6] text-[var(--color-stone)] mb-[20px]">一个全球食品品牌，在中国推一个没人认识的零食品类。靠微信、小红书和微博上的社媒内容，从零认知做出了一个真实的社群。</p>
+            <span class="text-[14px] font-medium text-[var(--color-vermillion)] group-hover:underline">看案例 →</span>
+          </div>
+          <img
+            src="/images/clients/MissionFoods/head-pic.jpg"
+            alt="Mission Foods玉米片在中国上市"
+            class="w-[45%] max-[768px]:w-full aspect-[16/10] object-cover rounded-[10px]"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </a>
+    </Container>
+  </section>
+
+  <GettingStarted lang="zh"
+    heading="30 天，从零做出一个正式上线的社媒阵地。"
+    steps={gettingStartedSteps}
+    backgroundImage="/images/getting-started/market-entry.webp"
+    crossLinks={[
+      { label: '策略与营销战役', href: '/zh/services/strategy-campaigns' },
+      { label: '内容制作', href: '/zh/services/content-production' },
+      { label: 'CRM 与私域', href: '/zh/services/crm-private-domain' },
+    ]}
+  />
+
+  <FaqAccordion lang="zh" faqs={faqs} subtitle="关于和 TheRedScroll 一起进入中国市场，你想知道的都在这儿。" />
+
+
+</PageLayout>

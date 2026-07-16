@@ -94,6 +94,25 @@ function buildBreadcrumbs(pathname: string): { name: string; url: string }[] {
 }
 const breadcrumbs = buildBreadcrumbs(currentPath);
 
+// Schema descriptions localized per page language. Google does not require
+// schema text to match the page language, but language-matched descriptions
+// improve locale-specific rich results and AI retrieval. Copy follows
+// TRANSLATION_GUIDE.md register per locale.
+const orgDescriptions: Record<Lang, string> = {
+  en: 'China social media agency. We grow Western brands on WeChat, Douyin, RedNote, Weibo, and 14 more platforms. Fixed scope, fixed price, team in Shanghai and Hong Kong.',
+  fr: 'Agence social media Chine. Nous développons les marques occidentales sur WeChat, Douyin, RedNote, Weibo et 14 autres plateformes. Périmètre défini, prix fixe, équipes à Shanghai et Hong Kong.',
+  zh: '中国社交媒体代理机构。我们帮助西方品牌在微信、抖音、小红书、微博以及另外 14 个平台上增长。范围写进合同，价格一口价，团队常驻上海与香港。',
+  es: 'Agencia de redes sociales en China. Hacemos crecer marcas occidentales en WeChat, Douyin, RedNote, Weibo y 14 plataformas más. Alcance definido, precio fijo, equipo en Shanghái y Hong Kong.',
+  de: 'Social-Media-Agentur für China. Wir lassen westliche Marken auf WeChat, Douyin, RedNote, Weibo und 14 weiteren Plattformen wachsen. Fester Umfang, fester Preis, Teams in Shanghai und Hongkong.',
+};
+const founderJobTitles: Record<Lang, string> = {
+  en: 'Founder and CEO',
+  fr: 'Fondateur et CEO',
+  zh: '创始人兼首席执行官',
+  es: 'Fundador y CEO',
+  de: 'Gründer und CEO',
+};
+
 const orgSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
@@ -108,7 +127,7 @@ const orgSchema = {
     width: 512,
     height: 512,
   },
-  description: 'China social media agency. We grow Western brands on WeChat, Douyin, RedNote, Weibo, and 14 more platforms. Fixed scope, fixed price, team in Shanghai and Hong Kong.',
+  description: orgDescriptions[lang],
   areaServed: ['CN', 'HK'],
   contactPoint: {
     '@type': 'ContactPoint',
@@ -140,9 +159,11 @@ const founderSchema = {
   '@type': 'Person',
   '@id': `${siteUrl}/#founder`,
   name: 'Cyril Drouin',
-  jobTitle: 'Founder and CEO',
+  jobTitle: founderJobTitles[lang],
   worksFor: { '@id': `${siteUrl}/#organization` },
   url: `${siteUrl}/about/`,
+  // Recommended for E-E-A-T / Knowledge Panel image eligibility.
+  image: `${siteUrl}/images/team/Cyil-Drouin.jpg`,
   sameAs: [
     'https://www.linkedin.com/in/cyrildrouin',
   ],
@@ -214,11 +235,19 @@ const resolvedOgType = ogType ?? (hasArticleSchema ? 'article' : 'website');
     <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/inter-500.woff2" as="font" type="font/woff2" crossorigin />
     {isHomepage && (
-      <link rel="preload" href="/images/hero/hero-phones-shanghai.webp" as="image" fetchpriority="high" />
+      <>
+        {/* Media-scoped preloads so mobile pulls the smaller hero variant.
+            Must mirror the breakpoint in Hero.astro's .hero-bg media query. */}
+        <link rel="preload" href="/images/hero/hero-phones-shanghai-640.webp" as="image" fetchpriority="high" media="(max-width: 640px)" />
+        <link rel="preload" href="/images/hero/hero-phones-shanghai.webp" as="image" fetchpriority="high" media="(min-width: 640.1px)" />
+      </>
     )}
     {allSchemas.map((s) => (
       <script type="application/ld+json" is:inline set:html={JSON.stringify(s)} />
     ))}
+    <!-- GA4 via first-party country gate: /ga.js returns the gtag bootstrap
+         outside CN and an empty stub for CN visitors (see src/pages/ga.js.ts) -->
+    <script is:inline async src="/ga.js"></script>
     <!-- Microsoft Clarity (deferred to post-load to protect LCP/INP) -->
     <script is:inline>
       window.addEventListener('load', function () {

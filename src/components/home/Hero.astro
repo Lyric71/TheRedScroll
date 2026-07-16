@@ -70,10 +70,10 @@ const text = {
 ---
 
 <section class="relative w-full min-h-[600px] max-[640px]:min-h-[500px] overflow-hidden">
-  <!-- Fixed parallax background image -->
+  <!-- Fixed parallax background image (responsive variant on mobile; the
+       media query below must mirror the preload breakpoint in BaseLayout) -->
   <div
-    class="absolute inset-0 bg-cover bg-center bg-fixed max-[640px]:bg-scroll"
-    style="background-image: url('/images/hero/hero-phones-shanghai.webp')"
+    class="hero-bg absolute inset-0 bg-cover bg-center bg-fixed max-[640px]:bg-scroll"
     aria-hidden="true"
   ></div>
   <!-- Dark overlay -->
@@ -188,49 +188,15 @@ const text = {
 </section>
 
 <style>
-  .hero-logo {
-    animation: heroFloat 5s ease-in-out infinite;
+  /* No keyframe animations per DESIGN_GUIDE.md; the hero SVG is static.
+     Removing the infinite animations also eliminates recurring main-thread
+     paint work that competed with input handling (INP). */
+  .hero-bg {
+    background-image: url('/images/hero/hero-phones-shanghai.webp');
   }
-  .hero-logo-1 { animation-delay: 0s; }
-  .hero-logo-2 { animation-delay: -1.25s; }
-  .hero-logo-3 { animation-delay: -2.5s; }
-  .hero-logo-4 { animation-delay: -3.75s; }
-
-  @keyframes heroFloat {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-8px); }
-  }
-
-  .hero-ring {
-    animation: ringRotate 30s linear infinite;
-    transform-origin: 240px 240px;
-  }
-
-  @keyframes ringRotate {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-  }
-
-  .hero-ring-inner {
-    animation: ringRotate 20s linear infinite reverse;
-    transform-origin: 240px 240px;
-  }
-
-  .hero-center-dot {
-    animation: centerPulse 3s ease-in-out infinite;
-  }
-
-  @keyframes centerPulse {
-    0%, 100% { opacity: 0.3; r: 6; }
-    50% { opacity: 0.6; r: 8; }
-  }
-
-  .hero-line {
-    animation: lineGlow 4s ease-in-out infinite;
-  }
-
-  @keyframes lineGlow {
-    0%, 100% { stroke-opacity: 0.06; }
-    50% { stroke-opacity: 0.18; }
+  @media (max-width: 640px) {
+    .hero-bg {
+      background-image: url('/images/hero/hero-phones-shanghai-640.webp');
+    }
   }
 </style>
