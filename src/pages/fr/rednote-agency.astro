@@ -1,223 +1,238 @@
 ---
-import PageLayout from '../layouts/PageLayout.astro';
-import Container from '../components/ui/Container.astro';
-import Button from '../components/ui/Button.astro';
-import { faqPageSchema, serviceSchema } from '../lib/schema';
+import PageLayout from '../../layouts/PageLayout.astro';
+import Container from '../../components/ui/Container.astro';
+import Button from '../../components/ui/Button.astro';
 
 const heroStats = [
-  { value: 1.4, decimals: 1, suffix: 'B', label: 'monthly active users' },
-  { value: 945, decimals: 0, suffix: 'M', label: 'Mini Program users' },
-  { value: 18, decimals: 0, suffix: '', label: 'Chinese platforms covered' },
-  { value: 4, decimals: 0, suffix: ' weeks', label: 'from contract to first post' },
+  { value: 350, decimals: 0, suffix: 'M+', label: 'utilisateurs actifs chaque mois' },
+  { value: 1, decimals: 0, suffix: 'B+', label: 'recherches lancées chaque mois' },
+  { value: 70, decimals: 0, suffix: '%', label: 'des utilisateurs ont de 18 à 35 ans' },
+  { value: 2, decimals: 0, suffix: ' semaines', label: 'entre la signature et la première note publiée' },
 ];
 
-const scopeItems = [
-  { label: 'Official Account setup and verification', href: '/platforms/wechat/' },
-  { label: 'Content written by native Chinese speakers', href: '/services/content-production/' },
-  { label: 'Moments Ads, Official Account Ads, Mini Program Ads', href: '/services/advertising/' },
-  { label: 'Mini Programs and WeChat e-commerce', href: '/platforms/wechat/' },
-  { label: 'WeCom CRM and private domain traffic', href: '/services/crm-private-domain/' },
+const platformNames = [
+  { name: '小红书 (Xiǎohóngshū)', detail: 'Le nom officiel en Chine. On le romanise en Xiaohongshu, parfois Xiao Hong Shu.' },
+  { name: 'Little Red Book', detail: 'La traduction littérale de 小红书 en anglais.' },
+  { name: 'RED', detail: 'L’ancienne identité internationale de la plateforme. La presse l’emploie encore.' },
+  { name: 'RedNote', detail: 'Le nom anglais officiel depuis janvier 2025. Celui que nous retenons ici.' },
 ];
 
 const services = [
   {
     glyph: '号',
-    title: 'Official Account setup and verification',
-    tag: 'Live in 1 to 2 weeks',
+    title: 'Ouverture et vérification du compte',
+    tag: 'Opérationnel en deux semaines',
     description:
-      'We register your Service Account, prepare Tencent\'s paperwork, and push it through verification. Menus, auto-replies, and brand assets included. Most accounts go live within 1 to 2 weeks.',
-    deliverables: ['Registration', 'Tencent verification', 'Menus and auto-replies', 'Brand assets'],
-    image: '/images/wechat-agency/service-setup.webp',
-    imageAlt: 'Phone on a desk next to business registration documents, showing a verified WeChat Official Account brand profile',
+      'Enregistrement du Professional Account (企业号, Blue V), traduction de votre licence commerciale, constitution du dossier de marque déposée. Nous suivons le dossier jusqu’au feu vert de la plateforme. La plupart des comptes ouvrent en moins de deux semaines.',
+    deliverables: ['Professional Account', 'Vérification Blue V', 'Traduction de la licence', 'Validation plateforme'],
+    image: '/images/platforms/rednote-services/account-setup.webp',
+    imageAlt: 'Profil Professional Account RedNote vérifié avec badge Blue V sur un téléphone, posé près de documents d’immatriculation',
   },
   {
-    glyph: '文',
-    title: 'Content and CRM',
-    tag: 'Native Chinese copywriters',
+    glyph: '达',
+    title: 'Campagnes KOL et KOC',
+    tag: 'Des créateurs vérifiés sur Pugongying',
     description:
-      'Content pillars, editorial calendar, articles, graphics, and video. Native Chinese copywriters, not translators. Every follower flows into WeCom so you build a customer list no platform can take from you.',
-    deliverables: ['Editorial calendar', 'Articles', 'Graphics and video', 'WeCom setup'],
-    image: '/images/wechat-agency/service-content.webp',
-    imageAlt: 'Editorial desk with a phone showing a branded WeChat Official Account article being scrolled',
+      'Nous montons les campagnes KOL (Key Opinion Leader) et KOC (Key Opinion Consumer) sur Pugongying, la place de marché d’influence officielle. Plus de 100 000 créateurs vérifiés. Chaque présélection passe au crible de la détection des faux abonnés.',
+    deliverables: ['Présélections KOL', 'Seeding KOC', 'Détection des faux abonnés', 'Rapport de campagne'],
+    image: '/images/platforms/rednote-services/kol-koc.webp',
+    imageAlt: 'Créatrice filmant une note d’avis produit dans le cadre d’une campagne KOL RedNote',
+  },
+  {
+    glyph: '记',
+    title: 'Création de contenu et localisation',
+    tag: 'Écrit en mandarin, jamais traduit',
+    description:
+      'Notes (笔记), vidéos et visuels rédigés directement en mandarin, sans détour par l’anglais. Visuels AIGC produits avec HubStudio.ai, tournages en conditions réelles en Chine. Chaque contenu vise le grass-planting (种草), le bouche-à-oreille qui irrigue toute la plateforme.',
+    deliverables: ['Notes et vidéos', 'Visuels AIGC', 'Tournages en Chine', 'Contenus grass-planting'],
+    image: '/images/platforms/rednote-services/content-strategy.webp',
+    imageAlt: 'Poste de travail éditorial, un téléphone affiche une note RedNote rédigée en mandarin',
   },
   {
     glyph: '广',
-    title: 'WeChat advertising',
-    tag: 'Ad spend at cost, no markup',
+    title: 'Publicité payante',
+    tag: 'Budget média facturé au coût réel',
     description:
-      'Media planning, creative, A/B tests, and bid work across Moments Ads, Official Account Ads, and Mini Program Ads. Ad spend is billed at cost. No markup, ever.',
-    deliverables: ['Media plan', 'Ad creative', 'A/B tests', 'Bid management'],
-    image: '/images/wechat-agency/service-ads.webp',
-    imageAlt: 'Hand holding a phone in a cafe, showing a sponsored brand ad inside the WeChat Moments feed',
+      'In-Feed Ads (信息流广告), Search Ads et Brand Ads via la régie Juguang. Nous testons les créations, pilotons les enchères et ajustons en continu. Le budget média est refacturé au coût réel, sans la moindre marge.',
+    deliverables: ['In-Feed Ads', 'Search Ads', 'Brand Ads', 'Tests créatifs'],
+    image: '/images/platforms/rednote-services/paid-advertising.webp',
+    imageAlt: 'Publicité In-Feed sponsorisée affichée dans la grille de découverte RedNote sur un téléphone',
   },
   {
     glyph: '店',
-    title: 'Mini Programs and e-commerce',
-    tag: '945M monthly users',
+    title: 'E-commerce et boutique intégrée',
+    tag: 'Du contenu au panier, sans quitter l’appli',
     description:
-      'Stores, lead capture, bookings, and loyalty programs built inside WeChat and connected to WeChat Pay. 945M people use Mini Programs every month. Your readers get a next step that converts.',
-    deliverables: ['Storefront', 'WeChat Pay', 'Lead capture', 'Loyalty programs'],
-    image: '/images/wechat-agency/service-miniprogram.webp',
-    imageAlt: 'Two phones side by side showing a WeChat Mini Program storefront and a WeChat Pay payment success screen',
+      'Ouverture de la boutique dans l’appli, notes achetables, production de live commerce. Les sessions en direct pèsent 90 % des ventes internes de la plateforme. Le contenu conduit à l’achat sans jamais sortir de l’appli.',
+    deliverables: ['Boutique dans l’appli', 'Notes achetables', 'Sessions en direct', 'Dispositif transfrontalier'],
+    image: '/images/platforms/rednote-services/ecommerce-live.webp',
+    imageAlt: 'Session de live commerce RedNote sur un téléphone, boutique produit intégrée affichée à côté',
   },
   {
-    glyph: '播',
-    title: 'KOL and cross-promotion campaigns',
-    tag: 'Verified engagement data only',
+    glyph: '数',
+    title: 'Reporting et analyse',
+    tag: 'Des rapports en anglais clair',
     description:
-      'Key Opinion Leader (KOL) sourcing, vetting, briefs, and reporting. We only work with verified engagement data. If a follower count looks inflated, we pass.',
-    deliverables: ['KOL sourcing', 'Vetting', 'Campaign briefs', 'Reporting'],
-    image: '/images/wechat-agency/service-kol.webp',
-    imageAlt: 'Content creator filming a product video, with a phone showing a WeChat Channels live stream',
+      'Croissance des abonnés, engagement, positions de recherche, ROI des campagnes : tout tient dans un rapport mensuel unique, rédigé en anglais clair. La veille sociale suit les mentions de marque, le sentiment et les mouvements des concurrents.',
+    deliverables: ['Croissance et engagement', 'Positions de recherche', 'ROI des campagnes', 'Veille sociale'],
+    image: '/images/platforms/rednote-services/analytics-listening.webp',
+    imageAlt: 'Tableau de bord RedNote sur ordinateur portable : croissance des abonnés, engagement et positions de recherche',
   },
 ];
 
-const segments = [
+const industries = [
   {
-    title: 'B2C retail and luxury',
-    description: 'Chinese consumers check WeChat before they buy. We build the Official Account, content, and Mini Program store that close that loop.',
-    icon: '<path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/>',
+    title: 'Beauté et cosmétiques',
+    description: 'La catégorie reine de la plateforme. Avis produits, tutoriels, décryptage d’ingrédients.',
+    icon: '<path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/>',
   },
   {
-    title: 'B2B and industrial',
-    description: 'Long sales cycles need a follow-up channel. WeChat articles plus WeCom outreach turn trade-show contacts into pipeline.',
-    icon: '<path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1"/><path d="M12 18h1"/><path d="M7 18h1"/>',
+    title: 'Mode et habillement',
+    description: 'Conseils de style, lookbooks de saison, campagnes de seeding KOC.',
+    icon: '<path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/>',
   },
   {
-    title: 'Tourism and education',
-    description: 'Chinese travelers and students research on WeChat months before they commit. We keep your brand in that conversation.',
+    title: 'Alimentation et boissons',
+    description: 'Critiques de restaurants, recettes, dégustations produit.',
+    icon: '<path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/>',
+  },
+  {
+    title: 'Voyage et tourisme',
+    description: 'Guides de destination, avis d’hôtels. 64 % des voyageurs chinois préparent leur séjour sur RedNote.',
     icon: '<path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/>',
   },
   {
-    title: 'Cross-border e-commerce',
-    description: 'Sell to China without a Chinese entity. Mini Program storefronts and cross-border WeChat Pay make it possible.',
-    icon: '<circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/>',
+    title: 'Luxe',
+    description: 'Des récits de marque pour une clientèle aisée, souvent à un pas de l’achat.',
+    icon: '<path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/>',
+  },
+  {
+    title: 'Santé et bien-être',
+    description: 'Fitness, compléments alimentaires, conseils bien-être. Un secteur en pleine accélération.',
+    icon: '<path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/>',
   },
 ];
 
 const pillars = [
   {
-    title: 'Clear SOW',
-    description: 'Every deliverable is defined upfront. Articles, videos, campaigns, reports. You know exactly what you get each month.',
+    title: 'Un périmètre noir sur blanc',
+    description: 'Le SOW, le périmètre de travail, fixe chaque livrable dès le départ. Notes, vidéos, activations KOL, campagnes, rapports. Vous savez, mois après mois, ce qui vous sera livré.',
   },
   {
-    title: 'Fixed price, no surprises',
-    description: 'One price per package. No hourly rates, no scope creep charges, no invoices you weren\'t expecting.',
+    title: 'Un prix ferme, sans surprise',
+    description: 'Un tarif par formule. Ni taux horaire, ni facturation au dépassement, ni ligne inattendue en fin de mois.',
   },
   {
-    title: 'AI-powered content production',
-    description: 'Visuals and video powered by HubStudio.ai, which keeps costs down and output fast. Strategy is 100% human-led.',
+    title: 'Des contenus produits avec l’IA',
+    description: 'Visuels et vidéos réalisés avec HubStudio.ai : des coûts tenus, une cadence soutenue. La stratégie, elle, reste entièrement humaine.',
   },
   {
-    title: 'Team on the ground',
-    description: 'Shanghai and Hong Kong. Native speakers who use WeChat every day, with direct KOL relationships and real-time platform access.',
+    title: 'Une équipe sur le terrain',
+    description: 'Shanghai et Hong Kong. Des bilingues natifs qui publient sur RedNote tous les jours, avec des relations KOL en direct et un accès permanent à la plateforme.',
   },
 ];
 
 const steps = [
   {
-    title: 'Discovery call',
-    description: '30 minutes. Tell us about your brand, your goals, and where you stand with China right now. No pitch deck.',
+    title: 'Audit et stratégie',
+    description:
+      'Trente minutes d’appel découverte, puis un audit de votre catégorie : mots-clés recherchés, comptes concurrents, angles de contenu délaissés. Vous recevez une proposition à prix ferme, livrable par livrable.',
   },
   {
-    title: 'Proposal',
-    description: 'Clear SOW. Fixed price. Every deliverable listed out. You see what you\'re getting and what it costs before you commit.',
+    title: 'Compte et premiers contenus',
+    description:
+      'Nous déposons le dossier du Professional Account, posons vos piliers éditoriaux et produisons la première série de notes. En ligne deux semaines après la signature.',
   },
   {
-    title: 'Live in 4 weeks',
-    description: 'Onboarding, account setup, verification, and first content published. Four weeks from signed contract to first post.',
+    title: 'Lancement et activation KOL',
+    description:
+      'Une cadence de publication régulière apprend votre catégorie à l’algorithme. Le seeding KOC et quelques appuis payants amènent du trafic pendant que l’organique s’installe.',
+  },
+  {
+    title: 'Optimisation et montée en puissance',
+    description:
+      'Nous lisons les données d’engagement CES et les positions de recherche. Ce qui cale s’arrête, ce qui convertit reçoit davantage de moyens.',
   },
 ];
 
 const caseStudies = [
   {
-    client: 'JAC Motors',
-    image: '/images/clients/JAC/JAC-Wechat-4.webp',
-    imageAlt: 'JAC Motors WeChat content produced by TheRedScroll',
-    metric: '10M',
-    metricLabel: 'vehicles sold, community rebuilt',
-    summary: 'A Chinese auto giant with 10 million vehicles sold and a quiet social presence. We rebuilt the community across WeChat, RedNote, and Weibo with AI-powered content.',
-    href: '/work/jac-motors/',
-  },
-  {
-    client: 'Mission Foods',
-    image: '/images/clients/MissionFoods/head-pic.jpg',
-    imageAlt: 'Mission Foods campaign visual for the China launch',
-    metric: 'Gen Z',
-    metricLabel: 'campaigns for a new food category',
-    summary: 'Launching corn chips, an unfamiliar food category, in China. Gen Z campaigns and food pairing content across WeChat, RedNote, and Weibo.',
-    href: '/work/mission-foods/',
+    client: 'AGE 20\'s',
+    image: '/images/clients/Age20/Age20-Picture11.webp',
+    imageAlt: 'Visuel de la campagne RedNote du fond de teint Little Milk Brick d’AGE 20’s',
+    metric: '750K',
+    metricLabel: 'impressions, pour 300K visées',
+    summary: 'Une marque de beauté coréenne lance son fond de teint Little Milk Brick en Chine. La campagne RedNote signe 750K impressions pour 300K visées. Le surnom du produit a pris tout seul.',
+    href: '/fr/work/age20s/',
   },
   {
     client: 'Camper',
     image: '/images/clients/Camper/Camper-Case-Study-Hero.jpg',
-    imageAlt: 'Camper footwear campaign visual for China social media',
-    metric: '187K',
-    metricLabel: 'followers, up from 43K in 18 months',
-    summary: 'A European footwear brand that grew from 43K to 187K followers in 18 months, with engagement up from 1.2% to 4.7% and same-store sales up 31% year over year.',
-    href: '/work/camper/',
+    imageAlt: 'Visuel de la campagne Camper sur les réseaux sociaux chinois',
+    metric: '38%',
+    metricLabel: 'du trafic e-commerce venu de la plus petite audience',
+    summary: 'Une marque de chaussures européenne passée de 43K à 187K abonnés en dix-huit mois. RedNote restait sa plus petite audience et apportait pourtant 38 % du trafic e-commerce.',
+    href: '/fr/work/camper/',
+  },
+  {
+    client: 'Mission Foods',
+    image: '/images/clients/MissionFoods/head-pic.jpg',
+    imageAlt: 'Visuel de la campagne Mission Foods pour le lancement en Chine',
+    metric: 'Gen Z',
+    metricLabel: 'ciblée pour une catégorie alimentaire inconnue en Chine',
+    summary: 'Introduire les chips de maïs, une catégorie que la Chine ignorait. Les KOL RedNote ont montré le produit en situation, et les accords culinaires l’ont rendu familier.',
+    href: '/fr/work/mission-foods/',
   },
 ];
 
 const faqs = [
   {
-    q: 'Do I need a China business license to open a WeChat Official Account?',
-    a: 'No. Foreign companies can register a WeChat Service Account with an overseas business license. You need company registration documents, a legal representative\'s ID, and proof of brand ownership. A Chinese entity only becomes necessary for Subscription accounts, domestic WeChat Pay merchant status, and some ad formats.',
+    q: 'Xiaohongshu, RedNote, Little Red Book : parle-t-on de la même appli ?',
+    a: 'Oui. Xiaohongshu (小红书) est le nom chinois officiel, Little Red Book sa traduction littérale. À l’international, la société s’est longtemps appelée RED, puis a adopté RedNote comme nom anglais officiel en janvier 2025. Xiao Hong Shu n’est que la transcription pinyin en trois mots. Une appli, un algorithme, une audience.',
   },
   {
-    q: 'What is the difference between a Subscription and a Service account?',
-    a: 'Subscription accounts publish daily but sit in a folded inbox and are only available to Chinese entities. Service Accounts publish 4 times per month, land directly in the chat list, and support custom menus, WeChat Pay, and CRM tools. Service Accounts are the only type foreign companies can register on their own, and for most brands they are the better choice anyway.',
+    q: 'Une marque étrangère peut-elle vendre sur Xiaohongshu ?',
+    a: 'Oui. Une licence commerciale traduite et un dossier de marque déposée suffisent pour ouvrir un Professional Account (Blue V), sans entité chinoise. Le programme e-commerce transfrontalier permet en plus de tenir une boutique dans l’appli et d’expédier depuis l’étranger. Nous prenons en charge le dossier, la boutique et la validation par la plateforme.',
   },
   {
-    q: 'How much does WeChat marketing cost?',
-    a: 'Two budgets matter. Agency work: we quote a fixed monthly price against a clear scope of work, so you know every deliverable and the full cost before you sign. Ad spend: Moments Ads run on auction bidding with entry budgets around RMB 1,000 per day, while premium scheduled placements start near RMB 50,000 per campaign. Ad spend is always billed separately at cost, with no markup.',
+    q: 'Combien coûte le marketing sur Xiaohongshu ?',
+    a: 'Trois budgets à distinguer. Les honoraires d’agence : un prix mensuel ferme, adossé à un périmètre précis, le tout connu avant la signature. Le budget média : facturé à part, au coût réel, via la régie Juguang, sans marge. Les cachets KOL : très variables selon le palier d’abonnés et la catégorie, refacturés sans marge cachée, données d’engagement vérifiées à l’appui.',
   },
   {
-    q: 'How long does account setup and verification take?',
-    a: 'With complete documents, registration and Tencent verification take 1 to 2 weeks. Missing or inconsistent paperwork is the most common cause of delays, so we review everything before submission. If you already have a verified account, we can start publishing within days.',
+    q: 'Quand arrivent les premiers résultats ?',
+    a: 'La plateforme ne récompense pas la précipitation. Tout nouveau compte traverse une fenêtre d’observation de l’algorithme. Les deux ou trois premiers mois servent à constituer votre bibliothèque de contenus et à habituer l’algorithme à votre catégorie. Publicité et campagnes KOL peuvent amener du trafic dès la première semaine, en attendant que l’organique prenne le relais. Notre engagement minimal de trois mois tient précisément à cela.',
   },
   {
-    q: 'Can you run WeChat if I have no team in China?',
-    a: 'Yes. That is the most common setup for our clients. Our team in Shanghai and Hong Kong runs your account day to day: strategy, content, publishing, community replies, ads, and monthly reporting in plain English. You get a dedicated account manager and full visibility, without hiring anyone in China.',
+    q: 'Faut-il une licence commerciale ou une entité chinoise ?',
+    a: 'Pas pour le compte : une licence commerciale étrangère traduite suffit pour un Professional Account. La publicité fait exception. La régie Juguang exige une entité chinoise pour ouvrir un compte publicitaire. Nous opérons ces comptes pour nos clients étrangers via notre structure locale, avec rapports de dépenses hebdomadaires et visibilité complète.',
   },
   {
-    q: 'Who owns the WeChat account and its followers?',
-    a: 'You do. The account is registered under your company name with your own documents. We operate it on your behalf. If we ever part ways, you keep the account, the followers, and the full content archive.',
+    q: 'Qui utilise RedNote, et pour quoi faire ?',
+    a: 'Quelque 350 millions de personnes s’y connectent chaque mois. Le cœur d’audience est jeune, urbain, féminin à près de 70 %, doté d’un vrai pouvoir d’achat. RedNote leur sert de moteur de recherche d’expériences produit : quoi acheter, où partir, ce qui tient ses promesses. C’est cette intention d’achat qui pousse les marques orientées conversion à commencer ici.',
   },
   {
-    q: 'Can you take over an existing WeChat account?',
-    a: 'Yes. We start with an audit: verification status, follower quality, content history, and compliance risks. Then we fix what needs fixing and take over publishing. Most handovers are complete within a week, with no downtime for your followers.',
+    q: 'RedNote ou Douyin : lequel pour ma marque ?',
+    a: 'Les deux plateformes ne jouent pas le même rôle. Douyin mise sur la vidéo de divertissement et un fil algorithmique rapide, taillé pour la portée et l’achat d’impulsion. RedNote avance au rythme de la recherche : on s’y renseigne avant d’acheter, et une bonne note draine du trafic des mois durant. Beauté, mode, voyage : les catégories à forte considération démarrent le plus souvent sur RedNote. Beaucoup de marques finissent par mener les deux de front.',
   },
   {
-    q: 'Should I start with WeChat or with RedNote and Douyin?',
-    a: 'It depends on your goal. WeChat is where Chinese consumers read, ask questions, and buy, so it works as your home base. RedNote and Douyin are discovery platforms that bring new audiences in. Most of our clients run WeChat as the hub and add discovery platforms around it.',
+    q: 'Comment fonctionnent les campagnes KOL et KOC sur RedNote ?',
+    a: 'Toute collaboration payante passe par Pugongying, la place de marché officielle de la plateforme ; réserver en dehors expose au retrait des contenus. Nous présélectionnons des créateurs aux données d’audience vérifiées, puis prenons en charge briefs, contrats, paiements et bilan par publication. Sur RedNote, des dizaines d’avis de petits KOC pèsent souvent plus qu’un post de célébrité.',
   },
   {
-    q: 'What is private domain traffic and why does it matter?',
-    a: 'Private domain traffic means followers you can reach directly, without paying for ads each time. In practice, it means moving WeChat followers into WeCom groups and 1-to-1 chats. You own that list. An algorithm change can never take it away from you.',
+    q: 'Peut-on publier en anglais ?',
+    a: 'Les utilisateurs chinois cherchent en chinois : une note en anglais ne remonte presque jamais. Tout ce que nous publions est écrit directement en mandarin par notre équipe de Shanghai, jamais traduit. L’anglais ne touche que la petite communauté étrangère arrivée début 2025. Pour vendre en Chine, RedNote reste une plateforme en mandarin.',
   },
   {
-    q: 'How do you report performance?',
-    a: 'One monthly report in plain English. It covers follower growth, article reads, engagement, ad spend at cost, and leads or sales where tracking allows. You also get a dedicated account manager you can message any time with questions.',
+    q: 'Qu’est-ce qui fait le succès d’une note sur RedNote ?',
+    a: 'Des mots-clés de recherche dans le titre, une couverture qui accroche et une première personne qui sonne comme une vraie recommandation. L’algorithme étouffe les discours trop commerciaux, et la publicité non déclarée risque le retrait. Nous déclarons donc chaque note commerciale dans les règles de la plateforme. Chaque publication repose sur un plan de mots-clés, dont nous suivons le positionnement.',
   },
-];
-
-const pageSchemas = [
-  serviceSchema({
-    name: 'WeChat Agency Services',
-    description:
-      'Full-service WeChat agency for international brands: Official Account setup and verification, content, advertising, Mini Programs, and WeCom CRM.',
-    url: '/wechat-agency',
-    serviceType: 'Social Media Marketing',
-  }),
-  faqPageSchema(faqs),
 ];
 ---
 
 <PageLayout
-  title="WeChat Agency for Brands Growing in China | TheRedScroll"
-  description="A full-service WeChat agency in Shanghai and Hong Kong. Official Account setup, content, ads, Mini Programs, and CRM. Fixed scope, fixed price."
-  schema={pageSchemas}
+  title="Agence RedNote | Marketing Xiaohongshu (Little Red Book)"
+  description="Faites grandir votre marque sur RedNote (Xiaohongshu, Little Red Book) : KOL, contenus et publicité pilotés depuis Shanghai. Prix ferme, périmètre écrit."
+  lang="fr"
 >
   <!-- The red thread: scroll progress -->
   <div class="red-thread" data-thread aria-hidden="true"></div>
@@ -229,35 +244,34 @@ const pageSchemas = [
       aria-hidden="true"
       data-parallax="0.1"
     >
-      微信
+      小红书
     </span>
     <Container class="relative z-[1]">
       <div class="grid grid-cols-[1.05fr_0.95fr] max-[900px]:grid-cols-1 gap-[56px] max-[900px]:gap-[24px] items-center pt-[88px] pb-[72px] max-[640px]:pt-[48px] max-[640px]:pb-[48px]">
         <div>
           <p class="flex items-center gap-[10px] mb-[20px]" data-hero-reveal style="--d: 0ms">
-            <span class="seal" aria-hidden="true">微</span>
-            <img src="/images/platforms/wechat-logo.svg" alt="" width="22" height="22" class="block" aria-hidden="true" />
-            <span class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333]">WeChat agency</span>
+            <span class="seal" aria-hidden="true">红</span>
+            <span class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333]">Agence RedNote</span>
           </p>
           <h1 class="hero-title text-[#FFFFFF] mb-[20px]" data-hero-reveal style="--d: 80ms">
-            The WeChat agency for brands growing in China
+            Agence marketing RedNote (Xiaohongshu / Little Red Book)
           </h1>
           <p class="text-[17px] max-[640px]:text-[15px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[460px] mb-[32px]" data-hero-reveal style="--d: 160ms">
-            Official Account setup, content, advertising, Mini Programs, and CRM. Run from Shanghai and Hong Kong, every day. Fixed scope. Fixed price.
+            Une plateforme, quatre noms, plus de 350 M d’utilisateurs chaque mois. Nous pilotons campagnes KOL, contenus, publicité et commerce social pour les marques occidentales. Depuis Shanghai, au quotidien. Périmètre écrit, prix ferme.
           </p>
           <div class="flex items-center gap-[12px] flex-wrap mb-[12px]" data-hero-reveal style="--d: 240ms">
-            <Button variant="primary" href="/contact/">Book a call</Button>
-            <Button variant="secondary-dark" href="#results">See the results</Button>
+            <Button variant="primary" href="/fr/contact/">Prendre rendez-vous</Button>
+            <Button variant="secondary-dark" href="#results">Voir les résultats</Button>
           </div>
           <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal" data-hero-reveal style="--d: 300ms">
-            A 30-minute call. No pitch deck.
+            Trente minutes de conversation. Pas de discours commercial.
           </p>
         </div>
 
         <div class="relative max-w-[500px] mx-auto w-full max-[900px]:max-w-[380px]" data-hero-reveal style="--d: 200ms">
           <img
-            src="/images/wechat-agency/hero-phones-blend.webp"
-            alt="Two phones showing real WeChat screens: the Moments feed with a sponsored brand ad, and a WeChat Pay payment success screen"
+            src="/images/rednote-agency/hero-phones-blend.webp"
+            alt="Deux téléphones montrant l’appli RedNote telle quelle : la grille de découverte des notes et une note d’avis produit"
             width="665"
             height="672"
             class="hero-float w-full h-auto block"
@@ -285,52 +299,56 @@ const pageSchemas = [
       <figure class="m-0 bg-[#F7F2EE] rounded-[10px] p-[40px] max-[1024px]:p-[28px] max-[640px]:p-[20px] grid grid-cols-[0.9fr_1.1fr] max-[768px]:grid-cols-1 gap-[40px] max-[768px]:gap-[24px] items-center" data-reveal>
         <div>
           <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
-            Why WeChat comes first
+            Pourquoi tout commence sur RedNote
           </p>
           <p class="manifesto" data-manifesto>
-            In China, WeChat is not an app. It is the internet. Your customers chat, read, shop, and pay without ever leaving it. A brand that is not on WeChat is <span class="manifesto-hl">invisible</span> to them.
+            En Chine, un achat commence par une recherche sur RedNote. 350 millions de personnes y lisent des avis réels avant de dépenser. La publicité n’y gagne pas la partie. La <span class="manifesto-hl">confiance</span>, oui. Nous écrivons les notes, les avis et les voix de créateurs qui la bâtissent.
           </p>
         </div>
         <div>
           <img
-            src="/images/wechat-agency/ecosystem-banner-tight.webp"
-            alt="Three phones side by side showing the three sides of WeChat: the Moments feed, an Official Account article, and a WeChat Pay payment success screen"
+            src="/images/rednote-agency/ecosystem-banner-tight.webp"
+            alt="Trois téléphones qui retracent le parcours RedNote : grille de découverte, note d’avis produit, résultats de recherche"
             width="1000"
             height="580"
             loading="lazy"
             class="w-full h-auto block rounded-[8px]"
           />
           <figcaption class="text-[13px] text-[#5C5C5C] font-normal leading-[1.4] mt-[12px] text-center">
-            One app, three jobs: social feed, publishing channel, and payment.
+            Une seule appli pour trois usages : découvrir, lire des avis sincères, chercher.
           </figcaption>
         </div>
       </figure>
 
       <div class="grid grid-cols-2 max-[768px]:grid-cols-1 gap-[48px] max-[768px]:gap-[32px] items-start mt-[64px] max-[640px]:mt-[40px]">
         <div data-reveal>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">
+            Qu’est-ce que RedNote
+          </p>
           <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">
-            One agency for the whole WeChat ecosystem
+            Xiaohongshu, Little Red Book, RED, RedNote : de quoi parle-t-on
           </h2>
           <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[#1A1A1A] max-w-[560px]">
             <p>
-              A WeChat agency registers your account, produces your content, runs your ads, and builds your Mini Program. Doing this in-house means hiring native speakers, learning Tencent's rules, and buying ads through a Chinese account.
+              RedNote (小红书 / Xiaohongshu) est la plateforme où la Chine découvre les produits. Plus de 350 M d’utilisateurs actifs chaque mois, plus d’un milliard de recherches mensuelles. Et 90 % des contenus viennent des utilisateurs, pas des marques (mai 2026).
             </p>
             <p>
-              Most brands get further, faster, with a specialist. We're that specialist. We post on <a href="/platforms/wechat/" class="text-[#CC3333] hover:underline">WeChat</a> every day, from inside China.
+              70 % des utilisateurs ont de 18 à 35 ans. Ce sont surtout des femmes des villes de premier et deuxième rang, au pouvoir d’achat supérieur à la moyenne. Elles viennent se renseigner avant d’acheter. Avis, tutoriels et recommandations sincères pèsent ici plus que partout ailleurs en Chine.
+            </p>
+            <p>
+              Pour le dire simplement : Douyin divertit les consommateurs chinois, WeChat fidélise les clients des marques, et <a href="/fr/platforms/rednote/" class="text-[#CC3333] hover:underline">RedNote</a> décide des achats.
             </p>
           </div>
         </div>
         <div class="bg-[#F7F2EE] rounded-[10px] p-[28px] max-[640px]:p-[20px]" data-reveal style="--d: 120ms">
           <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
-            Scope at a glance
+            Pourquoi tant de noms pour une seule appli
           </p>
-          <ul class="flex flex-col list-none m-0 p-0">
-            {scopeItems.map((item, i) => (
-              <li class:list={[i > 0 && 'border-t border-[#E8E0D8]']}>
-                <a href={item.href} class="group flex items-center justify-between gap-[12px] py-[14px] no-underline">
-                  <span class="text-[14px] font-normal leading-[1.5] text-[#1A1A1A] group-hover:text-[#CC3333] transition-colors duration-150">{item.label}</span>
-                  <span class="scope-arrow text-[14px] text-[#CC3333]" aria-hidden="true">&rarr;</span>
-                </a>
+          <ul class="flex flex-col gap-[14px] list-none m-0 p-0">
+            {platformNames.map((item) => (
+              <li>
+                <p class="text-[14px] font-medium leading-[1.4] text-[#1A1A1A] m-0">{item.name}</p>
+                <p class="text-[13px] font-normal leading-[1.5] text-[#5C5C5C] m-0 mt-[2px]">{item.detail}</p>
               </li>
             ))}
           </ul>
@@ -347,12 +365,12 @@ const pageSchemas = [
         <div>
           <div class="sticky top-[104px] max-[900px]:static">
             <div class="mb-[32px] max-[900px]:mb-[8px]" data-reveal>
-              <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Our WeChat marketing services</p>
+              <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Nos prestations marketing RedNote</p>
               <h2 class="text-[32px] max-[640px]:text-[24px] font-medium leading-[1.15] tracking-[-0.01em] text-[#1A1A1A] mb-[12px]">
-                Five services. Each with a clear deliverable.
+                Six prestations, des livrables précis.
               </h2>
               <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] max-w-[420px] m-0">
-                Everything is listed in your scope of work before you sign. No vague retainers.
+                Tout est écrit dans le périmètre de travail avant la signature. Rien de flou.
               </p>
             </div>
             <div class="svc-frame relative max-[900px]:hidden">
@@ -391,7 +409,7 @@ const pageSchemas = [
               </div>
               <h3 class="text-[22px] max-[640px]:text-[19px] font-medium leading-[1.25] text-[#1A1A1A] mb-[10px]">{service.title}</h3>
               <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.65] max-w-[480px] mb-[16px]">{service.description}</p>
-              <ul class="flex flex-wrap gap-[8px] list-none m-0 p-0" aria-label={`${service.title}: deliverables`}>
+              <ul class="flex flex-wrap gap-[8px] list-none m-0 p-0" aria-label={`${service.title} : livrables`}>
                 {service.deliverables.map((d) => (
                   <li class="text-[12px] font-normal leading-none text-[#1A1A1A] bg-[#F7F2EE] border-[0.5px] border-[#E8E0D8] rounded-[6px] px-[10px] py-[7px]">{d}</li>
                 ))}
@@ -408,9 +426,9 @@ const pageSchemas = [
           ))}
           <div class="py-[16px] flex items-center justify-between gap-[16px] flex-wrap" data-reveal>
             <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] m-0 max-w-[420px]">
-              <span class="text-[#1A1A1A] font-medium">Need more than WeChat?</span> We also grow brands on RedNote, Douyin, Weibo, and 14 more platforms.
+              <span class="text-[#1A1A1A] font-medium">Une seule plateforme ne suffit pas ?</span> Nous faisons aussi grandir les marques sur WeChat, Douyin, Weibo et 14 autres.
             </p>
-            <a href="/platforms/others/" class="text-[14px] text-[#CC3333] font-medium shrink-0 hover:underline">All platforms &rarr;</a>
+            <a href="/fr/platforms/others/" class="text-[14px] text-[#CC3333] font-medium shrink-0 hover:underline">Toutes les plateformes &rarr;</a>
           </div>
         </div>
       </div>
@@ -422,15 +440,15 @@ const pageSchemas = [
     <Container>
       <div class="flex items-end justify-between gap-[32px] max-[640px]:flex-col max-[640px]:items-start max-[640px]:gap-[16px] mb-[40px] max-[640px]:mb-[24px]" data-reveal>
         <div class="max-w-[560px]">
-          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Case studies</p>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Études de cas</p>
           <h2 class="text-[36px] max-[640px]:text-[24px] font-medium leading-[1.15] tracking-[-0.01em] text-[#1A1A1A] mb-[8px]">
-            Results from the ground
+            Des résultats mesurés sur le terrain
           </h2>
           <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
-            Real clients, real numbers, all verifiable in the full case studies.
+            De vrais clients, de vrais chiffres, tous vérifiables dans les études de cas complètes.
           </p>
         </div>
-        <a href="/work/" class="text-[14px] text-[#CC3333] font-medium shrink-0 hover:underline">All case studies &rarr;</a>
+        <a href="/fr/work/" class="text-[14px] text-[#CC3333] font-medium shrink-0 hover:underline">Toutes les études de cas &rarr;</a>
       </div>
 
       <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[24px] max-[640px]:gap-[16px]">
@@ -451,7 +469,7 @@ const pageSchemas = [
               <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.4] mb-[20px]">{cs.metricLabel}</p>
               <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">{cs.client}</h3>
               <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] mb-[20px]">{cs.summary}</p>
-              <span class="text-[14px] text-[#CC3333] font-medium mt-auto inline-flex items-center gap-[6px]">Read the case study <span class="cs-arrow" aria-hidden="true">&rarr;</span></span>
+              <span class="text-[14px] text-[#CC3333] font-medium mt-auto inline-flex items-center gap-[6px]">Lire l’étude de cas <span class="cs-arrow" aria-hidden="true">&rarr;</span></span>
             </div>
           </a>
         ))}
@@ -463,26 +481,20 @@ const pageSchemas = [
   <section class="mt-[128px] max-[640px]:mt-[72px]">
     <Container>
       <div class="mb-[40px] max-[640px]:mb-[24px] max-w-[680px]" data-reveal>
-        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Who we help</p>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Qui nous accompagnons</p>
         <h2 class="text-[36px] max-[640px]:text-[24px] font-medium leading-[1.15] tracking-[-0.01em] text-[#1A1A1A]">
-          Built for brands entering or growing in China
+          Les secteurs qui réussissent sur RedNote
         </h2>
       </div>
 
-      <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
-        {segments.map((segment, i) => (
+      <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        {industries.map((industry, i) => (
           <div class="lift-card bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[8px] p-[24px] max-[640px]:p-[20px]" data-reveal style={`--d: ${i * 80}ms`}>
-            <svg class="mb-[16px]" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" set:html={segment.icon} />
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">{segment.title}</h3>
-            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5]">{segment.description}</p>
+            <svg class="mb-[16px]" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" set:html={industry.icon} />
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">{industry.title}</h3>
+            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5]">{industry.description}</p>
           </div>
         ))}
-      </div>
-
-      <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px] mt-[16px]" data-reveal>
-        <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] max-w-[680px]">
-          <span class="text-[#1A1A1A] font-medium">No Chinese entity? No problem.</span> We work with brands that have a WFOE and brands that don't. If you're starting from zero, our <a href="/services/market-entry/" class="text-[#CC3333] hover:underline">China market entry service</a> covers registration, setup, and localization.
-        </p>
       </div>
     </Container>
   </section>
@@ -493,10 +505,13 @@ const pageSchemas = [
       <div class="bg-[#F7F2EE] rounded-[10px] p-[48px] max-[1024px]:p-[32px] max-[640px]:p-[20px]">
         <div class="grid grid-cols-[300px_1fr] max-[900px]:grid-cols-1 gap-[48px] max-[900px]:gap-[24px]">
           <div data-reveal>
-            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Why TheRedScroll</p>
-            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A]">
-              Four reasons brands choose us
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Pourquoi TheRedScroll</p>
+            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">
+              Quatre raisons de travailler avec nous
             </h2>
+            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] m-0">
+              Nous avons passé 37 agences de marketing en Chine au crible. 0 sur 37 affiche des formules à prix ferme. Moins de 3 sur 37 produisent leurs contenus avec l’IA. Nous faisons l’inverse. (Analyse concurrentielle TheRedScroll, avril 2026.)
+            </p>
           </div>
           <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-x-[40px] gap-y-[32px] max-[640px]:gap-y-[24px]">
             {pillars.map((pillar, i) => (
@@ -516,16 +531,16 @@ const pageSchemas = [
   <section class="mt-[128px] max-[640px]:mt-[72px]">
     <Container>
       <div class="text-center mb-[56px] max-[640px]:mb-[32px]" data-reveal>
-        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Our process</p>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Notre méthode</p>
         <h2 class="text-[36px] max-[640px]:text-[24px] font-medium leading-[1.15] tracking-[-0.01em] text-[#1A1A1A]">
-          From first call to first post in 4 weeks
+          Du premier appel à un dispositif RedNote qui tourne
         </h2>
       </div>
 
       <div class="proc relative" data-proc>
         <span class="proc-rail absolute top-[5px] left-0 right-0 h-[2px] bg-[#E8E0D8] max-[768px]:hidden" aria-hidden="true"></span>
         <span class="proc-fill absolute top-[5px] left-0 h-[2px] bg-[#CC3333] max-[768px]:hidden" aria-hidden="true" data-proc-fill></span>
-        <div class="grid grid-cols-3 max-[768px]:grid-cols-1 gap-[40px] max-[768px]:gap-[28px]">
+        <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[768px]:grid-cols-1 gap-[40px] max-[768px]:gap-[28px]">
           {steps.map((step, i) => (
             <div class="relative" data-reveal style={`--d: ${i * 140}ms`}>
               <span class="proc-dot block w-[12px] h-[12px] rounded-full bg-[#CC3333] mb-[20px] max-[768px]:mb-[12px] relative z-[1]" aria-hidden="true"></span>
@@ -537,7 +552,7 @@ const pageSchemas = [
       </div>
 
       <div class="text-center mt-[48px] max-[640px]:mt-[32px]" data-reveal>
-        <Button variant="primary" href="/contact/">Book a call</Button>
+        <Button variant="primary" href="/fr/contact/">Prendre rendez-vous</Button>
       </div>
     </Container>
   </section>
@@ -546,39 +561,48 @@ const pageSchemas = [
   <section class="mt-[128px] max-[640px]:mt-[72px]">
     <Container>
       <div class="mb-[40px] max-[640px]:mb-[24px] max-w-[680px]" data-reveal>
-        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">What to budget</p>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Quel budget prévoir</p>
         <h2 class="text-[36px] max-[640px]:text-[24px] font-medium leading-[1.15] tracking-[-0.01em] text-[#1A1A1A] mb-[8px]">
-          WeChat advertising costs, without the mystery
+          Les coûts RedNote, posés à plat
         </h2>
         <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
-          Two budgets matter: what you pay the agency and what you pay Tencent for ads. Most agencies blur the two. We keep them separate.
+          Trois lignes de dépense : les honoraires de l’agence, la publicité versée à la plateforme, les cachets des créateurs. Beaucoup d’agences mélangent tout. Nous tenons trois comptes séparés.
         </p>
       </div>
 
-      <div class="grid grid-cols-2 max-[768px]:grid-cols-1 gap-[16px]">
+      <div class="grid grid-cols-3 max-[768px]:grid-cols-1 gap-[16px]">
         <div class="bg-[#F7F2EE] rounded-[10px] p-[32px] max-[640px]:p-[20px]" data-reveal>
-          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Paid to us</p>
-          <h3 class="text-[20px] font-medium leading-[1.3] text-[#1A1A1A] mb-[16px]">Agency fees</h3>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Versé à l’agence</p>
+          <h3 class="text-[20px] font-medium leading-[1.3] text-[#1A1A1A] mb-[16px]">Honoraires d’agence</h3>
           <ul class="flex flex-col gap-[10px] list-none m-0 p-0">
-            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>One fixed monthly price against a clear scope of work</li>
-            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Every article, video, campaign, and report listed before you sign</li>
-            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>No hourly billing, no scope creep charges</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Un prix mensuel ferme, adossé à un périmètre de travail précis</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Chaque note, vidéo, campagne et rapport listé avant la signature</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Ni facturation horaire, ni frais de dépassement</li>
           </ul>
         </div>
         <div class="bg-[#F7F2EE] rounded-[10px] p-[32px] max-[640px]:p-[20px]" data-reveal style="--d: 120ms">
-          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Paid to Tencent</p>
-          <h3 class="text-[20px] font-medium leading-[1.3] text-[#1A1A1A] mb-[16px]">Ad spend</h3>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Versé à la plateforme</p>
+          <h3 class="text-[20px] font-medium leading-[1.3] text-[#1A1A1A] mb-[16px]">Budget média</h3>
           <ul class="flex flex-col gap-[10px] list-none m-0 p-0">
-            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Moments Ads: auction bidding from around RMB 1,000 per day</li>
-            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Premium scheduled Moments placements from near RMB 50,000 per campaign</li>
-            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Billed at cost, no markup, every number in your monthly report</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Transite par la régie publicitaire Juguang</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Facturé au coût réel, sans marge ni commission média</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Rapports de dépenses chaque semaine, chaque chiffre visible</li>
+          </ul>
+        </div>
+        <div class="bg-[#F7F2EE] rounded-[10px] p-[32px] max-[640px]:p-[20px]" data-reveal style="--d: 240ms">
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Versé aux créateurs</p>
+          <h3 class="text-[20px] font-medium leading-[1.3] text-[#1A1A1A] mb-[16px]">Cachets KOL</h3>
+          <ul class="flex flex-col gap-[10px] list-none m-0 p-0">
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Des montants très variables selon le palier d’abonnés et la catégorie</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Refacturés à l’identique, sans marge cachée</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Chaque réservation adossée à des données d’engagement vérifiées</li>
           </ul>
         </div>
       </div>
 
       <div class="bg-[#F7F2EE] border-l-[3px] border-[#CC3333] p-[20px] mt-[16px]" data-reveal>
         <p class="text-[16px] font-normal leading-[1.6] text-[#1A1A1A] m-0">
-          A useful rule: don't start paid Moments campaigns until your account has content worth landing on. Followers gained from ads unfollow within weeks if the feed is empty.
+          La plateforme ne récompense pas la précipitation. Les deux ou trois premiers mois construisent votre bibliothèque de contenus et apprennent votre catégorie à l’algorithme. Ne dépensez rien en publicité ni en KOL avant d’avoir 15 à 20 notes solides. Sur RedNote, on vérifie toujours le profil avant de croire une recommandation.
         </p>
       </div>
     </Container>
@@ -592,10 +616,10 @@ const pageSchemas = [
           <div class="sticky top-[104px] max-[768px]:static" data-reveal>
             <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">FAQ</p>
             <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">
-              Questions brands ask before hiring a WeChat agency
+              Ce que les marques demandent avant de choisir une agence RedNote
             </h2>
             <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
-              More detail on the platform itself is on our <a href="/platforms/wechat/" class="text-[#CC3333] hover:underline">WeChat marketing page</a>.
+              Le fonctionnement de la plateforme est détaillé sur notre <a href="/fr/platforms/rednote/" class="text-[#CC3333] hover:underline">page marketing RedNote</a>.
             </p>
           </div>
         </div>
@@ -632,32 +656,32 @@ const pageSchemas = [
   <!-- ============ FINAL CTA (ink bookend, full bleed) ============ -->
   <section class="mt-[128px] max-[640px]:mt-[72px] w-full bg-[#1A1A1A] border-b border-[rgba(255,255,255,0.1)] relative overflow-hidden">
     <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[200px] max-[640px]:text-[90px] font-medium text-[#FFFFFF] opacity-[0.03] pointer-events-none select-none whitespace-nowrap" aria-hidden="true">
-      微信
+      小红书
     </span>
     <Container class="relative z-[1]">
       <div class="py-[96px] max-[640px]:py-[56px] text-center">
         <p class="flex items-center justify-center gap-[10px] mb-[20px]" data-reveal>
-          <span class="seal" aria-hidden="true">微</span>
-          <span class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333]">Start your WeChat strategy</span>
+          <span class="seal" aria-hidden="true">红</span>
+          <span class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333]">Lancez-vous sur RedNote</span>
         </p>
         <h2 class="text-[40px] max-[640px]:text-[26px] font-medium leading-[1.15] tracking-[-0.01em] text-[#FFFFFF] max-w-[720px] mx-auto mb-[16px]" data-reveal style="--d: 80ms">
-          Your Chinese audience is on WeChat today. Your brand should be too.
+          Les consommateurs chinois cherchent déjà dans votre catégorie. Donnez-leur des notes qui méritent d’être trouvées.
         </h2>
         <p class="text-[15px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[520px] mx-auto mb-[32px]" data-reveal style="--d: 160ms">
-          A 30-minute call. We'll tell you what your brand can do on WeChat with your current setup, and what it would take. No pitch deck.
+          Trente minutes de conversation. Nous vous dirons ce que votre marque peut obtenir sur RedNote avec vos moyens actuels, et ce qu’il faudrait pour viser plus haut. Pas de discours commercial.
         </p>
         <div data-reveal style="--d: 240ms">
-          <Button variant="primary" href="/contact/">Book a call</Button>
+          <Button variant="primary" href="/fr/contact/">Prendre rendez-vous</Button>
         </div>
 
         <div class="mt-[56px] pt-[24px] border-t border-[rgba(255,255,255,0.1)]" data-reveal style="--d: 300ms">
-          <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal mb-[12px]">See also</p>
+          <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal mb-[12px]">Voir aussi</p>
           <div class="flex justify-center gap-[24px] flex-wrap">
-            <a href="/platforms/wechat/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">WeChat marketing &rarr;</a>
-            <a href="/services/market-entry/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">China market entry &rarr;</a>
-            <a href="/platforms/rednote/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">RedNote marketing &rarr;</a>
-            <a href="/platforms/douyin/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Douyin marketing &rarr;</a>
-            <a href="/platforms/weibo/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Weibo marketing &rarr;</a>
+            <a href="/fr/platforms/rednote/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Marketing RedNote &rarr;</a>
+            <a href="/fr/services/market-entry/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Entrée sur le marché chinois &rarr;</a>
+            <a href="/fr/platforms/wechat/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Marketing WeChat &rarr;</a>
+            <a href="/fr/platforms/douyin/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Marketing Douyin &rarr;</a>
+            <a href="/fr/platforms/weibo/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Marketing Weibo &rarr;</a>
           </div>
         </div>
       </div>
@@ -971,7 +995,7 @@ const pageSchemas = [
 
     // --- Count-up numbers ---
     const formatCount = (value: number, decimals: number) =>
-      value.toLocaleString('en-US', { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
+      value.toLocaleString('fr-FR', { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
 
     const animateCount = (el: HTMLElement) => {
       const target = parseFloat(el.dataset.count || '0');

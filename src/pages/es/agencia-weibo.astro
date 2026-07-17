@@ -1,131 +1,183 @@
 ---
-import PageLayout from '../layouts/PageLayout.astro';
-import Container from '../components/ui/Container.astro';
-import Button from '../components/ui/Button.astro';
-import { faqPageSchema, serviceSchema } from '../lib/schema';
+import PageLayout from '../../layouts/PageLayout.astro';
+import Container from '../../components/ui/Container.astro';
+import Button from '../../components/ui/Button.astro';
 
 const heroStats = [
-  { value: 1.4, decimals: 1, suffix: 'B', label: 'monthly active users' },
-  { value: 945, decimals: 0, suffix: 'M', label: 'Mini Program users' },
-  { value: 18, decimals: 0, suffix: '', label: 'Chinese platforms covered' },
-  { value: 4, decimals: 0, suffix: ' weeks', label: 'from contract to first post' },
+  { value: 567, decimals: 0, suffix: 'M', label: 'usuarios activos al mes' },
+  { value: 140, decimals: 0, suffix: '', label: 'caracteres antes de que el texto se trunque' },
+  { value: 2, decimals: 0, suffix: ' semanas', label: 'del contrato a la primera publicación' },
+  { value: 6, decimals: 0, suffix: '', label: 'servicios en un solo alcance de trabajo' },
 ];
 
 const scopeItems = [
-  { label: 'Official Account setup and verification', href: '/platforms/wechat/' },
-  { label: 'Content written by native Chinese speakers', href: '/services/content-production/' },
-  { label: 'Moments Ads, Official Account Ads, Mini Program Ads', href: '/services/advertising/' },
-  { label: 'Mini Programs and WeChat e-commerce', href: '/platforms/wechat/' },
-  { label: 'WeCom CRM and private domain traffic', href: '/services/crm-private-domain/' },
+  { label: 'Apertura de cuenta corporativa y verificación Blue V', href: '/es/plataformas/weibo/' },
+  { label: 'Contenido escrito por redactores chinos nativos', href: '/es/servicios/produccion-contenido/' },
+  { label: 'Fan Headlines, Fan Tunnel, display y anuncios de búsqueda', href: '/es/servicios/publicidad/' },
+  { label: 'Campañas con KOL y celebridades, con datos verificados', href: '/es/servicios/marketing-influencia/' },
+  { label: 'Campañas de Hot Search y Super Topics', href: '/es/plataformas/weibo/' },
 ];
 
 const services = [
   {
     glyph: '号',
-    title: 'Official Account setup and verification',
-    tag: 'Live in 1 to 2 weeks',
+    title: 'Apertura de cuenta y verificación Blue V',
+    tag: 'Verificada en 2 a 4 semanas',
     description:
-      'We register your Service Account, prepare Tencent\'s paperwork, and push it through verification. Menus, auto-replies, and brand assets included. Most accounts go live within 1 to 2 weeks.',
-    deliverables: ['Registration', 'Tencent verification', 'Menus and auto-replies', 'Brand assets'],
-    image: '/images/wechat-agency/service-setup.webp',
-    imageAlt: 'Phone on a desk next to business registration documents, showing a verified WeChat Official Account brand profile',
+      'Registramos su cuenta corporativa, traducimos sus documentos al chino y llevamos la verificación hasta el final. Weibo cobra a las empresas internacionales una tasa única de 1.000 dólares. La aprobación tarda de 2 a 4 semanas. Nos ocupamos de todo.',
+    deliverables: ['Cuenta corporativa', 'Traducción de documentos', 'Verificación Blue V', 'Construcción del perfil'],
+    image: '/images/platforms/weibo-services/account-setup.webp',
+    imageAlt: 'Teléfono con un perfil corporativo verificado de Weibo con insignia Blue V, junto a documentos de registro mercantil',
   },
   {
     glyph: '文',
-    title: 'Content and CRM',
-    tag: 'Native Chinese copywriters',
+    title: 'Estrategia de contenido y redacción en chino',
+    tag: 'Redactores chinos nativos',
     description:
-      'Content pillars, editorial calendar, articles, graphics, and video. Native Chinese copywriters, not translators. Every follower flows into WeCom so you build a customer list no platform can take from you.',
-    deliverables: ['Editorial calendar', 'Articles', 'Graphics and video', 'WeCom setup'],
-    image: '/images/wechat-agency/service-content.webp',
-    imageAlt: 'Editorial desk with a phone showing a branded WeChat Official Account article being scrolled',
+      'Planes de contenido mensuales, publicaciones diarias, carruseles de 9 imágenes y vídeo corto. Escrito en chino por nativos, no por traductores. El texto se trunca a partir de 140 caracteres, así que la primera frase tiene que ganarse el clic.',
+    deliverables: ['Planes mensuales de contenido', 'Publicaciones diarias', 'Carruseles de 9 imágenes', 'Vídeo corto'],
+    image: '/images/platforms/weibo-services/content-strategy.webp',
+    imageAlt: 'Mesa de redacción con un teléfono que muestra un post de marca en Weibo con un carrusel de 9 fotos',
   },
   {
     glyph: '广',
-    title: 'WeChat advertising',
-    tag: 'Ad spend at cost, no markup',
+    title: 'Publicidad de pago en Weibo',
+    tag: 'Inversión facturada a coste, sin margen',
     description:
-      'Media planning, creative, A/B tests, and bid work across Moments Ads, Official Account Ads, and Mini Program Ads. Ad spend is billed at cost. No markup, ever.',
-    deliverables: ['Media plan', 'Ad creative', 'A/B tests', 'Bid management'],
-    image: '/images/wechat-agency/service-ads.webp',
-    imageAlt: 'Hand holding a phone in a cafe, showing a sponsored brand ad inside the WeChat Moments feed',
+      'Fan Headlines (粉丝头条), Fan Tunnel (粉丝通), display en el feed, anuncios de apertura, promoción en búsqueda y promoción de hashtags. Segmentación por demografía, intereses y comportamiento. La inversión se factura a coste real. Sin margen, nunca.',
+    deliverables: ['Fan Headlines', 'Fan Tunnel', 'Display y apertura', 'Promoción en búsqueda'],
+    image: '/images/platforms/weibo-services/paid-advertising.webp',
+    imageAlt: 'Mano sosteniendo un teléfono con un post de marca patrocinado dentro del feed público de Weibo',
   },
   {
-    glyph: '店',
-    title: 'Mini Programs and e-commerce',
-    tag: '945M monthly users',
+    glyph: '达',
+    title: 'Campañas con KOL e influencers',
+    tag: 'Solo datos de interacción verificados',
     description:
-      'Stores, lead capture, bookings, and loyalty programs built inside WeChat and connected to WeChat Pay. 945M people use Mini Programs every month. Your readers get a next step that converts.',
-    deliverables: ['Storefront', 'WeChat Pay', 'Lead capture', 'Loyalty programs'],
-    image: '/images/wechat-agency/service-miniprogram.webp',
-    imageAlt: 'Two phones side by side showing a WeChat Mini Program storefront and a WeChat Pay payment success screen',
+      'Búsqueda de Key Opinion Leaders (KOL), verificación, briefs, negociación e informes. Auditamos la interacción real y pasamos controles de seguidores falsos antes de recomendar a nadie. El número de seguidores, por sí solo, nunca decide la selección.',
+    deliverables: ['Búsqueda de KOL', 'Verificación y briefs', 'Negociación', 'Informes'],
+    image: '/images/platforms/weibo-services/kol-campaigns.webp',
+    imageAlt: 'Creador de contenido grabando un vídeo de producto, con un teléfono que muestra un post KOL de Weibo y sus cifras de interacción',
   },
   {
-    glyph: '播',
-    title: 'KOL and cross-promotion campaigns',
-    tag: 'Verified engagement data only',
+    glyph: '评',
+    title: 'Gestión de comunidad y atención al cliente',
+    tag: 'Seguimiento diario',
     description:
-      'Key Opinion Leader (KOL) sourcing, vetting, briefs, and reporting. We only work with verified engagement data. If a follower count looks inflated, we pass.',
-    deliverables: ['KOL sourcing', 'Vetting', 'Campaign briefs', 'Reporting'],
-    image: '/images/wechat-agency/service-kol.webp',
-    imageAlt: 'Content creator filming a product video, with a phone showing a WeChat Channels live stream',
+      'Weibo se juega en los comentarios. Respondemos allí y en los mensajes directos, seguimos las menciones de marca a diario y avisamos de los giros de sentimiento antes de que se conviertan en un problema.',
+    deliverables: ['Respuestas a comentarios', 'Mensajes directos', 'Seguimiento de menciones', 'Alertas de sentimiento'],
+    image: '/images/platforms/weibo-ecosystem/community.webp',
+    imageAlt: 'Teléfono con una sección de comentarios animada bajo un post de marca en Weibo, con respuestas de la cuenta verificada',
+  },
+  {
+    glyph: '数',
+    title: 'Analítica e informe mensual',
+    tag: 'Informes en lenguaje claro',
+    description:
+      'Crecimiento de seguidores, interacción por formato, resultados publicitarios (CPM, CPC, CPA, ROAS), retorno de los KOL y comparativas con la competencia. Cada informe cierra con recomendaciones concretas para el mes siguiente, en lenguaje claro.',
+    deliverables: ['Crecimiento e interacción', 'Resultados publicitarios', 'Retorno de los KOL', 'Comparativas competitivas'],
+    image: '/images/platforms/weibo-services/analytics.webp',
+    imageAlt: 'Portátil con un panel de rendimiento de Weibo: crecimiento de seguidores y gráficos de interacción',
+  },
+];
+
+const platformRows = [
+  {
+    platform: 'Weibo',
+    href: '/es/plataformas/weibo/',
+    bestFor: 'Notoriedad masiva, relaciones públicas, temas del momento',
+    style: 'Feed público. Posts cortos, hashtags, Hot Search',
+    startIf: 'Necesita que China conozca su nombre cuanto antes',
+  },
+  {
+    platform: 'WeChat',
+    href: '/es/plataformas/wechat/',
+    bestFor: 'Retención, CRM, atención al cliente',
+    style: 'Círculos cerrados. Artículos largos, Mini Programs',
+    startIf: 'Ya tiene clientes chinos a los que fidelizar',
+  },
+  {
+    platform: 'RedNote',
+    href: '/es/plataformas/rednote/',
+    bestFor: 'Descubrimiento de producto, reseñas, estilo de vida',
+    style: 'Guiado por la búsqueda. Notas en foto y vídeo',
+    startIf: 'Vende productos que la gente investiga antes de comprar',
+  },
+  {
+    platform: 'Douyin',
+    href: '/es/plataformas/douyin/',
+    bestFor: 'Alcance en vídeo corto, comercio en directo',
+    style: 'Feed algorítmico. Vídeo corto de entretenimiento',
+    startIf: 'Puede producir vídeo que compita por la atención',
   },
 ];
 
 const segments = [
   {
-    title: 'B2C retail and luxury',
-    description: 'Chinese consumers check WeChat before they buy. We build the Official Account, content, and Mini Program store that close that loop.',
-    icon: '<path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/>',
+    title: 'Lujo y gran consumo',
+    description: 'El consumidor chino busca los nombres de marca en Weibo antes de comprar. Una presencia verificada sólida genera confianza. La ausencia levanta sospechas.',
+    icon: '<path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/>',
   },
   {
-    title: 'B2B and industrial',
-    description: 'Long sales cycles need a follow-up channel. WeChat articles plus WeCom outreach turn trade-show contacts into pipeline.',
-    icon: '<path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1"/><path d="M12 18h1"/><path d="M7 18h1"/>',
-  },
-  {
-    title: 'Tourism and education',
-    description: 'Chinese travelers and students research on WeChat months before they commit. We keep your brand in that conversation.',
+    title: 'Turismo y educación',
+    description: 'Viajeros y estudiantes chinos investigan destinos y escuelas en Weibo meses antes de decidirse. Mantenemos su marca dentro de esa conversación.',
     icon: '<path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/>',
   },
   {
-    title: 'Cross-border e-commerce',
-    description: 'Sell to China without a Chinese entity. Mini Program storefronts and cross-border WeChat Pay make it possible.',
-    icon: '<circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/>',
+    title: 'Alimentación y e-commerce',
+    description: 'Los posts comprables enlazan con Tmall y Taobao. Los directos se sincronizan con Taobao Live. Entre un post de Weibo y la compra median unos pocos clics.',
+    icon: '<path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/>',
+  },
+  {
+    title: 'Tecnología de consumo y B2B',
+    description: 'Lanzamientos de producto, amplificación de relaciones públicas y gestión de reputación. Cuando millones de personas tienen que conocer su nombre en poco tiempo, Weibo es el canal.',
+    icon: '<rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/>',
   },
 ];
 
 const pillars = [
   {
-    title: 'Clear SOW',
-    description: 'Every deliverable is defined upfront. Articles, videos, campaigns, reports. You know exactly what you get each month.',
+    title: 'SOW claro',
+    description: 'Cada entregable queda definido desde el inicio en el SOW, el «alcance de trabajo». Publicaciones, vídeos, campañas, informes. Sabe con exactitud qué recibe cada mes.',
   },
   {
-    title: 'Fixed price, no surprises',
-    description: 'One price per package. No hourly rates, no scope creep charges, no invoices you weren\'t expecting.',
+    title: 'Precio fijo, sin sorpresas',
+    description: 'Un precio por paquete. Sin tarifas por hora, sin extras por cambios de alcance, sin facturas inesperadas.',
   },
   {
-    title: 'AI-powered content production',
-    description: 'Visuals and video powered by HubStudio.ai, which keeps costs down and output fast. Strategy is 100% human-led.',
+    title: 'Producción de contenido con IA',
+    description: 'Imágenes y vídeo con HubStudio.ai, que abarata costes y acelera la producción. La estrategia es 100% humana.',
   },
   {
-    title: 'Team on the ground',
-    description: 'Shanghai and Hong Kong. Native speakers who use WeChat every day, with direct KOL relationships and real-time platform access.',
+    title: 'Equipo sobre el terreno',
+    description: 'Shanghái y Hong Kong. Nativos que repasan el Hot Search cada mañana y tratan a diario con los KOL.',
   },
 ];
 
 const steps = [
   {
-    title: 'Discovery call',
-    description: '30 minutes. Tell us about your brand, your goals, and where you stand with China right now. No pitch deck.',
+    title: 'Auditoría y estrategia',
+    description: 'Semana 1. Revisamos su marca, sus competidores en Weibo y sus objetivos. Recibe una estrategia de contenido y un alcance de trabajo claro.',
   },
   {
-    title: 'Proposal',
-    description: 'Clear SOW. Fixed price. Every deliverable listed out. You see what you\'re getting and what it costs before you commit.',
+    title: 'Apertura y verificación',
+    description: 'Semanas 1 a 4. Registramos la cuenta y presentamos la verificación Blue V. No esperamos a la insignia. La construcción del perfil arranca de inmediato.',
   },
   {
-    title: 'Live in 4 weeks',
-    description: 'Onboarding, account setup, verification, and first content published. Four weeks from signed contract to first post.',
+    title: 'Calendario de contenido',
+    description: 'Semana 2. El primer mes de publicaciones planificado, redactado y diseñado. Usted lo revisa todo antes de que salga.',
+  },
+  {
+    title: 'Lanzamiento',
+    description: 'Semana 2. Primeras publicaciones en el aire, primera campaña en marcha. Catorce días entre la firma y la primera publicación.',
+  },
+  {
+    title: 'Optimización',
+    description: 'En continuo. Medimos qué funciona por formato y por tema, reaccionamos a las tendencias en menos de una hora y ajustamos las pujas cada semana.',
+  },
+  {
+    title: 'Informe',
+    description: 'Mensual. Crecimiento, interacción, resultados publicitarios, retorno de los KOL y comparativas. Más un punto de control a mitad de mes durante las campañas activas.',
   },
 ];
 
@@ -133,91 +185,64 @@ const caseStudies = [
   {
     client: 'JAC Motors',
     image: '/images/clients/JAC/JAC-Wechat-4.webp',
-    imageAlt: 'JAC Motors WeChat content produced by TheRedScroll',
+    imageAlt: 'Contenido de JAC Motors en redes sociales producido por TheRedScroll',
     metric: '10M',
-    metricLabel: 'vehicles sold, community rebuilt',
-    summary: 'A Chinese auto giant with 10 million vehicles sold and a quiet social presence. We rebuilt the community across WeChat, RedNote, and Weibo with AI-powered content.',
-    href: '/work/jac-motors/',
+    metricLabel: 'vehículos vendidos, comunidad reconstruida',
+    summary: 'Un gigante chino del automóvil con 10 millones de vehículos vendidos y una presencia social apagada. Reconstruimos la comunidad en Weibo, WeChat y RedNote con contenido producido con IA.',
+    href: '/es/proyectos/jac-motors/',
   },
   {
     client: 'Mission Foods',
     image: '/images/clients/MissionFoods/head-pic.jpg',
-    imageAlt: 'Mission Foods campaign visual for the China launch',
+    imageAlt: 'Imagen de la campaña de Mission Foods para su lanzamiento en China',
     metric: 'Gen Z',
-    metricLabel: 'campaigns for a new food category',
-    summary: 'Launching corn chips, an unfamiliar food category, in China. Gen Z campaigns and food pairing content across WeChat, RedNote, and Weibo.',
-    href: '/work/mission-foods/',
+    metricLabel: 'campañas para una categoría de alimentación nueva',
+    summary: 'Lanzar los chips de maíz, una categoría desconocida, en China. Campañas para la Gen Z y contenido de maridaje en Weibo, WeChat y RedNote.',
+    href: '/es/proyectos/mission-foods/',
   },
   {
     client: 'Camper',
     image: '/images/clients/Camper/Camper-Case-Study-Hero.jpg',
-    imageAlt: 'Camper footwear campaign visual for China social media',
+    imageAlt: 'Imagen de la campaña de calzado Camper para las redes sociales chinas',
     metric: '187K',
-    metricLabel: 'followers, up from 43K in 18 months',
-    summary: 'A European footwear brand that grew from 43K to 187K followers in 18 months, with engagement up from 1.2% to 4.7% and same-store sales up 31% year over year.',
-    href: '/work/camper/',
+    metricLabel: 'seguidores, desde 43K en 18 meses',
+    summary: 'Una marca europea de calzado que pasó de 43.000 a 187.000 seguidores en 18 meses. La interacción subió del 1,2% al 4,7% y las ventas comparables crecieron un 31% en un año.',
+    href: '/es/proyectos/camper/',
   },
 ];
 
 const faqs = [
   {
-    q: 'Do I need a China business license to open a WeChat Official Account?',
-    a: 'No. Foreign companies can register a WeChat Service Account with an overseas business license. You need company registration documents, a legal representative\'s ID, and proof of brand ownership. A Chinese entity only becomes necessary for Subscription accounts, domestic WeChat Pay merchant status, and some ad formats.',
+    q: '¿Cuánto cuesta una agencia Weibo?',
+    a: 'Hay dos presupuestos en juego. El trabajo de agencia: proponemos un precio mensual fijo ligado a un alcance de trabajo claro. Cada entregable y el coste total quedan a la vista antes de firmar. Analizamos 37 agencias de marketing en China en abril de 2026 y 0 de 37 ofrecen paquetes a precio fijo. Nosotros sí. La inversión publicitaria: se paga a Weibo aparte y se factura a coste real, sin margen. Fan Headlines es la puerta de entrada barata; los emplazamientos en Hot Search ocupan el tramo premium.',
   },
   {
-    q: 'What is the difference between a Subscription and a Service account?',
-    a: 'Subscription accounts publish daily but sit in a folded inbox and are only available to Chinese entities. Service Accounts publish 4 times per month, land directly in the chat list, and support custom menus, WeChat Pay, and CRM tools. Service Accounts are the only type foreign companies can register on their own, and for most brands they are the better choice anyway.',
+    q: '¿Puede una empresa extranjera abrir una cuenta de Weibo?',
+    a: 'Sí, y lo hacemos con regularidad. Las empresas extranjeras pueden obtener una cuenta corporativa verificada con insignia Blue V. Hacen falta los documentos de registro mercantil traducidos al chino y una tasa única de verificación de 1.000 dólares que se paga a Weibo. Preparamos los documentos, gestionamos la traducción y tratamos con el equipo de verificación de Weibo para que usted no tenga que hacerlo.',
   },
   {
-    q: 'How much does WeChat marketing cost?',
-    a: 'Two budgets matter. Agency work: we quote a fixed monthly price against a clear scope of work, so you know every deliverable and the full cost before you sign. Ad spend: Moments Ads run on auction bidding with entry budgets around RMB 1,000 per day, while premium scheduled placements start near RMB 50,000 per campaign. Ad spend is always billed separately at cost, with no markup.',
+    q: '¿Cuánto tarda la verificación de Weibo?',
+    a: 'De 2 a 4 semanas con el expediente completo. Un expediente incompleto o incoherente es la causa más habitual de retraso, así que lo revisamos todo antes de presentarlo. Tampoco nos quedamos de brazos cruzados: la construcción del perfil y la producción de contenido arrancan mientras la insignia Blue V se tramita.',
   },
   {
-    q: 'How long does account setup and verification take?',
-    a: 'With complete documents, registration and Tencent verification take 1 to 2 weeks. Missing or inconsistent paperwork is the most common cause of delays, so we review everything before submission. If you already have a verified account, we can start publishing within days.',
+    q: '¿Necesito una licencia comercial china para Weibo?',
+    a: 'No. Un registro mercantil extranjero basta para una cuenta corporativa verificada. No necesita entidad china, ni cuenta bancaria china, ni licencia ICP para operar una cuenta de Weibo. La entidad china solo cobra sentido más adelante, para integraciones de e-commerce doméstico. Nuestro servicio de entrada al mercado chino cubre ese camino cuando llegue el momento.',
   },
   {
-    q: 'Can you run WeChat if I have no team in China?',
-    a: 'Yes. That is the most common setup for our clients. Our team in Shanghai and Hong Kong runs your account day to day: strategy, content, publishing, community replies, ads, and monthly reporting in plain English. You get a dedicated account manager and full visibility, without hiring anyone in China.',
+    q: 'Weibo o WeChat: ¿por cuál empiezo?',
+    a: 'Depende del objetivo. Weibo es la plaza pública de China: 567 millones de usuarios al mes, temas del momento y publicaciones que cualquiera puede ver. Construye notoriedad rápido. WeChat es cerrado: el contenido circula en círculos privados, lo que lo hace mejor para la retención y el CRM. Las marcas que entran en China suelen empezar por Weibo para ganar alcance y sumar WeChat cuando ya hay una audiencia que fidelizar. La mayoría de nuestros clientes opera ambos.',
   },
   {
-    q: 'Who owns the WeChat account and its followers?',
-    a: 'You do. The account is registered under your company name with your own documents. We operate it on your behalf. If we ever part ways, you keep the account, the followers, and the full content archive.',
+    q: '¿Cómo miden el éxito de una campaña en Weibo?',
+    a: 'Con arreglo a los objetivos fijados en su alcance de trabajo. Los informes mensuales cubren el crecimiento de seguidores, las tasas de interacción, el rendimiento por formato, los resultados publicitarios (CPM, CPC, CPA, ROAS), el retorno de las campañas KOL y las comparativas con la competencia. Cada informe cierra con recomendaciones concretas para el mes siguiente. Además, hay un punto de control a mitad de mes durante las campañas activas.',
   },
-  {
-    q: 'Can you take over an existing WeChat account?',
-    a: 'Yes. We start with an audit: verification status, follower quality, content history, and compliance risks. Then we fix what needs fixing and take over publishing. Most handovers are complete within a week, with no downtime for your followers.',
-  },
-  {
-    q: 'Should I start with WeChat or with RedNote and Douyin?',
-    a: 'It depends on your goal. WeChat is where Chinese consumers read, ask questions, and buy, so it works as your home base. RedNote and Douyin are discovery platforms that bring new audiences in. Most of our clients run WeChat as the hub and add discovery platforms around it.',
-  },
-  {
-    q: 'What is private domain traffic and why does it matter?',
-    a: 'Private domain traffic means followers you can reach directly, without paying for ads each time. In practice, it means moving WeChat followers into WeCom groups and 1-to-1 chats. You own that list. An algorithm change can never take it away from you.',
-  },
-  {
-    q: 'How do you report performance?',
-    a: 'One monthly report in plain English. It covers follower growth, article reads, engagement, ad spend at cost, and leads or sales where tracking allows. You also get a dedicated account manager you can message any time with questions.',
-  },
-];
-
-const pageSchemas = [
-  serviceSchema({
-    name: 'WeChat Agency Services',
-    description:
-      'Full-service WeChat agency for international brands: Official Account setup and verification, content, advertising, Mini Programs, and WeCom CRM.',
-    url: '/wechat-agency',
-    serviceType: 'Social Media Marketing',
-  }),
-  faqPageSchema(faqs),
 ];
 ---
 
 <PageLayout
-  title="WeChat Agency for Brands Growing in China | TheRedScroll"
-  description="A full-service WeChat agency in Shanghai and Hong Kong. Official Account setup, content, ads, Mini Programs, and CRM. Fixed scope, fixed price."
-  schema={pageSchemas}
+  title="Agencia Weibo para marcas que entran en China | TheRedScroll"
+  description="Agencia Weibo integral en Shanghái y Hong Kong. Verificación Blue V, contenido, anuncios y campañas KOL para marcas que entran en China. Circuito cerrado, precio fijo."
+  lang="es"
 >
   <!-- The red thread: scroll progress -->
   <div class="red-thread" data-thread aria-hidden="true"></div>
@@ -229,35 +254,34 @@ const pageSchemas = [
       aria-hidden="true"
       data-parallax="0.1"
     >
-      微信
+      微博
     </span>
     <Container class="relative z-[1]">
       <div class="grid grid-cols-[1.05fr_0.95fr] max-[900px]:grid-cols-1 gap-[56px] max-[900px]:gap-[24px] items-center pt-[88px] pb-[72px] max-[640px]:pt-[48px] max-[640px]:pb-[48px]">
         <div>
           <p class="flex items-center gap-[10px] mb-[20px]" data-hero-reveal style="--d: 0ms">
-            <span class="seal" aria-hidden="true">微</span>
-            <img src="/images/platforms/wechat-logo.svg" alt="" width="22" height="22" class="block" aria-hidden="true" />
-            <span class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333]">WeChat agency</span>
+            <span class="seal" aria-hidden="true">博</span>
+            <span class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333]">Agencia Weibo</span>
           </p>
           <h1 class="hero-title text-[#FFFFFF] mb-[20px]" data-hero-reveal style="--d: 80ms">
-            The WeChat agency for brands growing in China
+            La agencia Weibo para las marcas que entran en China
           </h1>
           <p class="text-[17px] max-[640px]:text-[15px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[460px] mb-[32px]" data-hero-reveal style="--d: 160ms">
-            Official Account setup, content, advertising, Mini Programs, and CRM. Run from Shanghai and Hong Kong, every day. Fixed scope. Fixed price.
+            Apertura de cuenta, verificación Blue V, contenido, publicidad y campañas KOL. Gestionado a diario desde Shanghái y Hong Kong. Circuito cerrado. Precio fijo.
           </p>
           <div class="flex items-center gap-[12px] flex-wrap mb-[12px]" data-hero-reveal style="--d: 240ms">
-            <Button variant="primary" href="/contact/">Book a call</Button>
-            <Button variant="secondary-dark" href="#results">See the results</Button>
+            <Button variant="primary" href="/es/contacto/">Agendar una llamada</Button>
+            <Button variant="secondary-dark" href="#results">Ver los resultados</Button>
           </div>
           <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal" data-hero-reveal style="--d: 300ms">
-            A 30-minute call. No pitch deck.
+            Una llamada de 30 minutos. Sin discurso comercial.
           </p>
         </div>
 
         <div class="relative max-w-[500px] mx-auto w-full max-[900px]:max-w-[380px]" data-hero-reveal style="--d: 200ms">
           <img
-            src="/images/wechat-agency/hero-phones-blend.webp"
-            alt="Two phones showing real WeChat screens: the Moments feed with a sponsored brand ad, and a WeChat Pay payment success screen"
+            src="/images/weibo-agency/hero-phones-blend.webp"
+            alt="Dos teléfonos con la app real de Weibo: el feed público y la lista de tendencias de Hot Search"
             width="665"
             height="672"
             class="hero-float w-full h-auto block"
@@ -285,23 +309,23 @@ const pageSchemas = [
       <figure class="m-0 bg-[#F7F2EE] rounded-[10px] p-[40px] max-[1024px]:p-[28px] max-[640px]:p-[20px] grid grid-cols-[0.9fr_1.1fr] max-[768px]:grid-cols-1 gap-[40px] max-[768px]:gap-[24px] items-center" data-reveal>
         <div>
           <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
-            Why WeChat comes first
+            Por qué importa Weibo
           </p>
           <p class="manifesto" data-manifesto>
-            In China, WeChat is not an app. It is the internet. Your customers chat, read, shop, and pay without ever leaving it. A brand that is not on WeChat is <span class="manifesto-hl">invisible</span> to them.
+            Weibo es la plaza pública de China. 567 millones de personas miran cada mes lo que allí es tendencia. Las reputaciones se hacen y se deshacen en horas. Si su marca no participa en la conversación, otro la está <span class="manifesto-hl">escribiendo</span> por usted.
           </p>
         </div>
         <div>
           <img
-            src="/images/wechat-agency/ecosystem-banner-tight.webp"
-            alt="Three phones side by side showing the three sides of WeChat: the Moments feed, an Official Account article, and a WeChat Pay payment success screen"
+            src="/images/weibo-agency/ecosystem-banner-tight.webp"
+            alt="Tres teléfonos con las tres caras de Weibo: el feed público, la lista de Hot Search y un perfil de marca verificado"
             width="1000"
             height="580"
             loading="lazy"
             class="w-full h-auto block rounded-[8px]"
           />
           <figcaption class="text-[13px] text-[#5C5C5C] font-normal leading-[1.4] mt-[12px] text-center">
-            One app, three jobs: social feed, publishing channel, and payment.
+            Una app, tres funciones: feed público, temas del momento y reputación de marca.
           </figcaption>
         </div>
       </figure>
@@ -309,20 +333,23 @@ const pageSchemas = [
       <div class="grid grid-cols-2 max-[768px]:grid-cols-1 gap-[48px] max-[768px]:gap-[32px] items-start mt-[64px] max-[640px]:mt-[40px]">
         <div data-reveal>
           <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">
-            One agency for the whole WeChat ecosystem
+            Una sola agencia para todo el tablero de Weibo
           </h2>
           <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[#1A1A1A] max-w-[560px]">
             <p>
-              A WeChat agency registers your account, produces your content, runs your ads, and builds your Mini Program. Doing this in-house means hiring native speakers, learning Tencent's rules, and buying ads through a Chinese account.
+              Weibo tiene 567 millones de usuarios activos al mes y 252 millones al día (mayo de 2026). Es donde nacen las tendencias, donde estallan las noticias y donde el consumidor chino investiga las marcas antes de comprar.
             </p>
             <p>
-              Most brands get further, faster, with a specialist. We're that specialist. We post on <a href="/platforms/wechat/" class="text-[#CC3333] hover:underline">WeChat</a> every day, from inside China.
+              Una agencia Weibo registra y verifica su cuenta corporativa, escribe su contenido en chino, compra sus anuncios y gestiona sus campañas KOL. Hacerlo por su cuenta implica contratar redactores nativos, aprender el ritmo del Hot Search y lidiar con el papeleo de la verificación. La mayoría de las marcas llega más lejos, y más rápido, con un especialista.
+            </p>
+            <p>
+              Somos ese especialista. Publicamos en <a href="/es/plataformas/weibo/" class="text-[#CC3333] hover:underline">Weibo</a> cada día, desde dentro de China.
             </p>
           </div>
         </div>
         <div class="bg-[#F7F2EE] rounded-[10px] p-[28px] max-[640px]:p-[20px]" data-reveal style="--d: 120ms">
           <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
-            Scope at a glance
+            El alcance, de un vistazo
           </p>
           <ul class="flex flex-col list-none m-0 p-0">
             {scopeItems.map((item, i) => (
@@ -347,12 +374,12 @@ const pageSchemas = [
         <div>
           <div class="sticky top-[104px] max-[900px]:static">
             <div class="mb-[32px] max-[900px]:mb-[8px]" data-reveal>
-              <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Our WeChat marketing services</p>
+              <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Nuestros servicios de marketing en Weibo</p>
               <h2 class="text-[32px] max-[640px]:text-[24px] font-medium leading-[1.15] tracking-[-0.01em] text-[#1A1A1A] mb-[12px]">
-                Five services. Each with a clear deliverable.
+                Seis servicios. Cada uno con un entregable concreto.
               </h2>
               <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] max-w-[420px] m-0">
-                Everything is listed in your scope of work before you sign. No vague retainers.
+                Todo figura en su alcance de trabajo antes de firmar. Sin letra pequeña.
               </p>
             </div>
             <div class="svc-frame relative max-[900px]:hidden">
@@ -391,7 +418,7 @@ const pageSchemas = [
               </div>
               <h3 class="text-[22px] max-[640px]:text-[19px] font-medium leading-[1.25] text-[#1A1A1A] mb-[10px]">{service.title}</h3>
               <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.65] max-w-[480px] mb-[16px]">{service.description}</p>
-              <ul class="flex flex-wrap gap-[8px] list-none m-0 p-0" aria-label={`${service.title}: deliverables`}>
+              <ul class="flex flex-wrap gap-[8px] list-none m-0 p-0" aria-label={`${service.title}: entregables`}>
                 {service.deliverables.map((d) => (
                   <li class="text-[12px] font-normal leading-none text-[#1A1A1A] bg-[#F7F2EE] border-[0.5px] border-[#E8E0D8] rounded-[6px] px-[10px] py-[7px]">{d}</li>
                 ))}
@@ -408,12 +435,59 @@ const pageSchemas = [
           ))}
           <div class="py-[16px] flex items-center justify-between gap-[16px] flex-wrap" data-reveal>
             <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] m-0 max-w-[420px]">
-              <span class="text-[#1A1A1A] font-medium">Need more than WeChat?</span> We also grow brands on RedNote, Douyin, Weibo, and 14 more platforms.
+              <span class="text-[#1A1A1A] font-medium">¿Necesita más que Weibo?</span> También hacemos crecer marcas en WeChat, RedNote, Douyin y 14 plataformas más.
             </p>
-            <a href="/platforms/others/" class="text-[14px] text-[#CC3333] font-medium shrink-0 hover:underline">All platforms &rarr;</a>
+            <a href="/es/plataformas/otras/" class="text-[14px] text-[#CC3333] font-medium shrink-0 hover:underline">Todas las plataformas &rarr;</a>
           </div>
         </div>
       </div>
+    </Container>
+  </section>
+
+  <!-- ============ PLATFORM FIT ============ -->
+  <section class="mt-[128px] max-[640px]:mt-[72px]">
+    <Container>
+      <div class="mb-[40px] max-[640px]:mb-[24px] max-w-[680px]" data-reveal>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Dónde encaja Weibo</p>
+        <h2 class="text-[36px] max-[640px]:text-[24px] font-medium leading-[1.15] tracking-[-0.01em] text-[#1A1A1A] mb-[8px]">
+          Weibo frente a WeChat, RedNote y Douyin
+        </h2>
+        <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
+          Cada plataforma cumple una función distinta. Weibo es la única pensada para la conversación abierta a escala nacional.
+        </p>
+      </div>
+
+      <div class="bg-[#F7F2EE] rounded-[10px] p-[32px] max-[640px]:p-[20px]" data-reveal>
+        <div class="grid grid-cols-[140px_1fr_1.1fr_1.1fr] gap-[24px] pb-[14px] max-[768px]:hidden" aria-hidden="true">
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#5C5C5C] m-0">Plataforma</p>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#5C5C5C] m-0">Ideal para</p>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#5C5C5C] m-0">Estilo</p>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#5C5C5C] m-0">Empiece aquí si</p>
+        </div>
+        {platformRows.map((row) => (
+          <div class="grid grid-cols-[140px_1fr_1.1fr_1.1fr] max-[768px]:grid-cols-1 gap-[24px] max-[768px]:gap-[8px] py-[18px] max-[768px]:py-[20px] border-t border-[#E8E0D8]">
+            <p class="m-0">
+              <a href={row.href} class="text-[16px] font-medium leading-[1.4] text-[#1A1A1A] hover:text-[#CC3333] transition-colors duration-150 no-underline">{row.platform}</a>
+            </p>
+            <p class="m-0 text-[14px] text-[#1A1A1A] font-normal leading-[1.5]">
+              <span class="hidden max-[768px]:block text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#5C5C5C] mb-[2px]">Ideal para</span>
+              {row.bestFor}
+            </p>
+            <p class="m-0 text-[14px] text-[#5C5C5C] font-normal leading-[1.5]">
+              <span class="hidden max-[768px]:block text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#5C5C5C] mb-[2px]">Estilo</span>
+              {row.style}
+            </p>
+            <p class="m-0 text-[14px] text-[#5C5C5C] font-normal leading-[1.5]">
+              <span class="hidden max-[768px]:block text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#5C5C5C] mb-[2px]">Empiece aquí si</span>
+              {row.startIf}
+            </p>
+          </div>
+        ))}
+      </div>
+
+      <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] mt-[24px] max-w-[680px]" data-reveal>
+        La mayoría de las marcas no elige una sola. Una secuencia habitual: Weibo para la notoriedad, RedNote para la investigación de producto, WeChat para la retención. Nosotros las gestionamos todas bajo un mismo alcance de trabajo.
+      </p>
     </Container>
   </section>
 
@@ -422,15 +496,15 @@ const pageSchemas = [
     <Container>
       <div class="flex items-end justify-between gap-[32px] max-[640px]:flex-col max-[640px]:items-start max-[640px]:gap-[16px] mb-[40px] max-[640px]:mb-[24px]" data-reveal>
         <div class="max-w-[560px]">
-          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Case studies</p>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Casos de estudio</p>
           <h2 class="text-[36px] max-[640px]:text-[24px] font-medium leading-[1.15] tracking-[-0.01em] text-[#1A1A1A] mb-[8px]">
-            Results from the ground
+            Resultados sobre el terreno
           </h2>
           <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
-            Real clients, real numbers, all verifiable in the full case studies.
+            Clientes reales, cifras reales, todo verificable en los casos completos.
           </p>
         </div>
-        <a href="/work/" class="text-[14px] text-[#CC3333] font-medium shrink-0 hover:underline">All case studies &rarr;</a>
+        <a href="/es/proyectos/" class="text-[14px] text-[#CC3333] font-medium shrink-0 hover:underline">Todos los casos &rarr;</a>
       </div>
 
       <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[24px] max-[640px]:gap-[16px]">
@@ -451,7 +525,7 @@ const pageSchemas = [
               <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.4] mb-[20px]">{cs.metricLabel}</p>
               <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">{cs.client}</h3>
               <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] mb-[20px]">{cs.summary}</p>
-              <span class="text-[14px] text-[#CC3333] font-medium mt-auto inline-flex items-center gap-[6px]">Read the case study <span class="cs-arrow" aria-hidden="true">&rarr;</span></span>
+              <span class="text-[14px] text-[#CC3333] font-medium mt-auto inline-flex items-center gap-[6px]">Leer el caso completo <span class="cs-arrow" aria-hidden="true">&rarr;</span></span>
             </div>
           </a>
         ))}
@@ -463,9 +537,9 @@ const pageSchemas = [
   <section class="mt-[128px] max-[640px]:mt-[72px]">
     <Container>
       <div class="mb-[40px] max-[640px]:mb-[24px] max-w-[680px]" data-reveal>
-        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Who we help</p>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">A quién ayudamos</p>
         <h2 class="text-[36px] max-[640px]:text-[24px] font-medium leading-[1.15] tracking-[-0.01em] text-[#1A1A1A]">
-          Built for brands entering or growing in China
+          Pensado para marcas que necesitan que China conozca su nombre
         </h2>
       </div>
 
@@ -481,7 +555,7 @@ const pageSchemas = [
 
       <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px] mt-[16px]" data-reveal>
         <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] max-w-[680px]">
-          <span class="text-[#1A1A1A] font-medium">No Chinese entity? No problem.</span> We work with brands that have a WFOE and brands that don't. If you're starting from zero, our <a href="/services/market-entry/" class="text-[#CC3333] hover:underline">China market entry service</a> covers registration, setup, and localization.
+          <span class="text-[#1A1A1A] font-medium">¿Todavía sin presencia en China? No pasa nada.</span> Un registro mercantil extranjero basta para abrir y verificar una cuenta de Weibo. Si parte de cero, nuestro <a href="/es/servicios/entrada-mercado/" class="text-[#CC3333] hover:underline">servicio de entrada al mercado chino</a> cubre el registro, la puesta en marcha y la localización.
         </p>
       </div>
     </Container>
@@ -493,10 +567,13 @@ const pageSchemas = [
       <div class="bg-[#F7F2EE] rounded-[10px] p-[48px] max-[1024px]:p-[32px] max-[640px]:p-[20px]">
         <div class="grid grid-cols-[300px_1fr] max-[900px]:grid-cols-1 gap-[48px] max-[900px]:gap-[24px]">
           <div data-reveal>
-            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Why TheRedScroll</p>
-            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A]">
-              Four reasons brands choose us
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Por qué TheRedScroll</p>
+            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">
+              Cuatro razones por las que las marcas nos eligen
             </h2>
+            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] m-0">
+              Analizamos 37 agencias de marketing en China en abril de 2026. 0 de 37 ofrecen paquetes a precio fijo. El 100% presenta presupuestos a medida con entregables difusos. Nosotros trabajamos de otra manera.
+            </p>
           </div>
           <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-x-[40px] gap-y-[32px] max-[640px]:gap-y-[24px]">
             {pillars.map((pillar, i) => (
@@ -516,16 +593,19 @@ const pageSchemas = [
   <section class="mt-[128px] max-[640px]:mt-[72px]">
     <Container>
       <div class="text-center mb-[56px] max-[640px]:mb-[32px]" data-reveal>
-        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Our process</p>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Nuestro proceso</p>
         <h2 class="text-[36px] max-[640px]:text-[24px] font-medium leading-[1.15] tracking-[-0.01em] text-[#1A1A1A]">
-          From first call to first post in 4 weeks
+          De la primera llamada a la primera publicación en 2 semanas
         </h2>
+        <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] max-w-[680px] mx-auto mt-[12px]">
+          Seis etapas, cada una con su calendario. La verificación avanza en segundo plano; el resto no espera.
+        </p>
       </div>
 
       <div class="proc relative" data-proc>
-        <span class="proc-rail absolute top-[5px] left-0 right-0 h-[2px] bg-[#E8E0D8] max-[768px]:hidden" aria-hidden="true"></span>
-        <span class="proc-fill absolute top-[5px] left-0 h-[2px] bg-[#CC3333] max-[768px]:hidden" aria-hidden="true" data-proc-fill></span>
-        <div class="grid grid-cols-3 max-[768px]:grid-cols-1 gap-[40px] max-[768px]:gap-[28px]">
+        <span class="proc-rail absolute top-[5px] left-0 right-0 h-[2px] bg-[#E8E0D8] max-[1024px]:hidden" aria-hidden="true"></span>
+        <span class="proc-fill absolute top-[5px] left-0 h-[2px] bg-[#CC3333] max-[1024px]:hidden" aria-hidden="true" data-proc-fill></span>
+        <div class="grid grid-cols-6 max-[1024px]:grid-cols-3 max-[640px]:grid-cols-1 gap-[40px] max-[1024px]:gap-[28px]">
           {steps.map((step, i) => (
             <div class="relative" data-reveal style={`--d: ${i * 140}ms`}>
               <span class="proc-dot block w-[12px] h-[12px] rounded-full bg-[#CC3333] mb-[20px] max-[768px]:mb-[12px] relative z-[1]" aria-hidden="true"></span>
@@ -537,7 +617,7 @@ const pageSchemas = [
       </div>
 
       <div class="text-center mt-[48px] max-[640px]:mt-[32px]" data-reveal>
-        <Button variant="primary" href="/contact/">Book a call</Button>
+        <Button variant="primary" href="/es/contacto/">Agendar una llamada</Button>
       </div>
     </Container>
   </section>
@@ -546,39 +626,54 @@ const pageSchemas = [
   <section class="mt-[128px] max-[640px]:mt-[72px]">
     <Container>
       <div class="mb-[40px] max-[640px]:mb-[24px] max-w-[680px]" data-reveal>
-        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">What to budget</p>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Qué presupuesto prever</p>
         <h2 class="text-[36px] max-[640px]:text-[24px] font-medium leading-[1.15] tracking-[-0.01em] text-[#1A1A1A] mb-[8px]">
-          WeChat advertising costs, without the mystery
+          Los costes de Weibo, sin misterio
         </h2>
         <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
-          Two budgets matter: what you pay the agency and what you pay Tencent for ads. Most agencies blur the two. We keep them separate.
+          Hay dos presupuestos en juego: lo que paga a la agencia y lo que paga a Weibo. La mayoría de las agencias los mezcla. Nosotros los mantenemos separados.
         </p>
       </div>
 
       <div class="grid grid-cols-2 max-[768px]:grid-cols-1 gap-[16px]">
         <div class="bg-[#F7F2EE] rounded-[10px] p-[32px] max-[640px]:p-[20px]" data-reveal>
-          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Paid to us</p>
-          <h3 class="text-[20px] font-medium leading-[1.3] text-[#1A1A1A] mb-[16px]">Agency fees</h3>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Para la agencia</p>
+          <h3 class="text-[20px] font-medium leading-[1.3] text-[#1A1A1A] mb-[16px]">Honorarios de agencia</h3>
           <ul class="flex flex-col gap-[10px] list-none m-0 p-0">
-            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>One fixed monthly price against a clear scope of work</li>
-            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Every article, video, campaign, and report listed before you sign</li>
-            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>No hourly billing, no scope creep charges</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Un precio mensual fijo ligado a un alcance de trabajo claro</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Cada entregable listado antes de firmar</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Sin facturación por horas, sin extras por cambios de alcance</li>
           </ul>
         </div>
         <div class="bg-[#F7F2EE] rounded-[10px] p-[32px] max-[640px]:p-[20px]" data-reveal style="--d: 120ms">
-          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Paid to Tencent</p>
-          <h3 class="text-[20px] font-medium leading-[1.3] text-[#1A1A1A] mb-[16px]">Ad spend</h3>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Para Weibo</p>
+          <h3 class="text-[20px] font-medium leading-[1.3] text-[#1A1A1A] mb-[16px]">Plataforma e inversión publicitaria</h3>
           <ul class="flex flex-col gap-[10px] list-none m-0 p-0">
-            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Moments Ads: auction bidding from around RMB 1,000 per day</li>
-            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Premium scheduled Moments placements from near RMB 50,000 per campaign</li>
-            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Billed at cost, no markup, every number in your monthly report</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Una tasa única de verificación Blue V de 1.000 dólares</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Fan Headlines como puerta de entrada barata, Hot Search en el tramo premium</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Inversión facturada a coste real, sin margen, cada cifra en su informe mensual</li>
           </ul>
+        </div>
+      </div>
+
+      <div class="bg-[#F7F2EE] rounded-[10px] p-[32px] max-[640px]:p-[20px] mt-[16px]" data-reveal>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">Adónde va el dinero de los anuncios</p>
+        <div class="flex flex-col gap-[12px] text-[14px] text-[#5C5C5C] font-normal leading-[1.6] max-w-[680px]">
+          <p class="m-0">
+            <span class="text-[#1A1A1A] font-medium">Fan Headlines (粉丝头条).</span> Fija un post en lo alto del feed de sus seguidores. La forma más barata de asegurar que su mejor contenido se vea de verdad. Útil para probar qué funciona.
+          </p>
+          <p class="m-0">
+            <span class="text-[#1A1A1A] font-medium">Fan Tunnel (粉丝通).</span> El principal sistema de anuncios de rendimiento de Weibo. Muestra sus publicaciones a usuarios que aún no le siguen, segmentados por demografía, intereses, comportamiento y audiencias similares. No compre alcance en Fan Tunnel hasta que su feed tenga contenido a la altura.
+          </p>
+          <p class="m-0">
+            <span class="text-[#1A1A1A] font-medium">Display, apertura y búsqueda.</span> Formatos display en el feed, anuncios a pantalla completa al abrir la app, promoción en búsqueda y promoción de hashtags. Los emplazamientos junto al Hot Search se pagan a precio premium.
+          </p>
         </div>
       </div>
 
       <div class="bg-[#F7F2EE] border-l-[3px] border-[#CC3333] p-[20px] mt-[16px]" data-reveal>
         <p class="text-[16px] font-normal leading-[1.6] text-[#1A1A1A] m-0">
-          A useful rule: don't start paid Moments campaigns until your account has content worth landing on. Followers gained from ads unfollow within weeks if the feed is empty.
+          Una presencia verificada sólida genera confianza. La ausencia levanta sospechas. El consumidor chino busca los nombres de marca en Weibo antes de comprar.
         </p>
       </div>
     </Container>
@@ -592,10 +687,10 @@ const pageSchemas = [
           <div class="sticky top-[104px] max-[768px]:static" data-reveal>
             <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">FAQ</p>
             <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">
-              Questions brands ask before hiring a WeChat agency
+              Lo que preguntan las marcas antes de contratar una agencia Weibo
             </h2>
             <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
-              More detail on the platform itself is on our <a href="/platforms/wechat/" class="text-[#CC3333] hover:underline">WeChat marketing page</a>.
+              Más detalle sobre la plataforma en nuestra <a href="/es/plataformas/weibo/" class="text-[#CC3333] hover:underline">página de marketing en Weibo</a>.
             </p>
           </div>
         </div>
@@ -632,32 +727,32 @@ const pageSchemas = [
   <!-- ============ FINAL CTA (ink bookend, full bleed) ============ -->
   <section class="mt-[128px] max-[640px]:mt-[72px] w-full bg-[#1A1A1A] border-b border-[rgba(255,255,255,0.1)] relative overflow-hidden">
     <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[200px] max-[640px]:text-[90px] font-medium text-[#FFFFFF] opacity-[0.03] pointer-events-none select-none whitespace-nowrap" aria-hidden="true">
-      微信
+      微博
     </span>
     <Container class="relative z-[1]">
       <div class="py-[96px] max-[640px]:py-[56px] text-center">
         <p class="flex items-center justify-center gap-[10px] mb-[20px]" data-reveal>
-          <span class="seal" aria-hidden="true">微</span>
-          <span class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333]">Start your WeChat strategy</span>
+          <span class="seal" aria-hidden="true">博</span>
+          <span class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333]">Arranque su estrategia en Weibo</span>
         </p>
         <h2 class="text-[40px] max-[640px]:text-[26px] font-medium leading-[1.15] tracking-[-0.01em] text-[#FFFFFF] max-w-[720px] mx-auto mb-[16px]" data-reveal style="--d: 80ms">
-          Your Chinese audience is on WeChat today. Your brand should be too.
+          La conversación de China pasa hoy por Weibo. Súmese como marca verificada.
         </h2>
         <p class="text-[15px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[520px] mx-auto mb-[32px]" data-reveal style="--d: 160ms">
-          A 30-minute call. We'll tell you what your brand can do on WeChat with your current setup, and what it would take. No pitch deck.
+          Una llamada de 30 minutos. Le diremos qué puede hacer su marca en Weibo con su estructura actual, y qué haría falta. Sin discurso comercial.
         </p>
         <div data-reveal style="--d: 240ms">
-          <Button variant="primary" href="/contact/">Book a call</Button>
+          <Button variant="primary" href="/es/contacto/">Agendar una llamada</Button>
         </div>
 
         <div class="mt-[56px] pt-[24px] border-t border-[rgba(255,255,255,0.1)]" data-reveal style="--d: 300ms">
-          <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal mb-[12px]">See also</p>
+          <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal mb-[12px]">También de interés</p>
           <div class="flex justify-center gap-[24px] flex-wrap">
-            <a href="/platforms/wechat/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">WeChat marketing &rarr;</a>
-            <a href="/services/market-entry/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">China market entry &rarr;</a>
-            <a href="/platforms/rednote/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">RedNote marketing &rarr;</a>
-            <a href="/platforms/douyin/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Douyin marketing &rarr;</a>
-            <a href="/platforms/weibo/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Weibo marketing &rarr;</a>
+            <a href="/es/plataformas/weibo/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Marketing Weibo &rarr;</a>
+            <a href="/es/servicios/entrada-mercado/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Entrada al mercado chino &rarr;</a>
+            <a href="/es/plataformas/wechat/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Marketing WeChat &rarr;</a>
+            <a href="/es/plataformas/rednote/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Marketing RedNote &rarr;</a>
+            <a href="/es/plataformas/douyin/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Marketing Douyin &rarr;</a>
           </div>
         </div>
       </div>
@@ -971,7 +1066,7 @@ const pageSchemas = [
 
     // --- Count-up numbers ---
     const formatCount = (value: number, decimals: number) =>
-      value.toLocaleString('en-US', { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
+      value.toLocaleString('es-ES', { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
 
     const animateCount = (el: HTMLElement) => {
       const target = parseFloat(el.dataset.count || '0');

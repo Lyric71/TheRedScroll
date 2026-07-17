@@ -1,131 +1,130 @@
 ---
-import PageLayout from '../layouts/PageLayout.astro';
-import Container from '../components/ui/Container.astro';
-import Button from '../components/ui/Button.astro';
-import { faqPageSchema, serviceSchema } from '../lib/schema';
+import PageLayout from '../../layouts/PageLayout.astro';
+import Container from '../../components/ui/Container.astro';
+import Button from '../../components/ui/Button.astro';
 
 const heroStats = [
-  { value: 1.4, decimals: 1, suffix: 'B', label: 'monthly active users' },
-  { value: 945, decimals: 0, suffix: 'M', label: 'Mini Program users' },
-  { value: 18, decimals: 0, suffix: '', label: 'Chinese platforms covered' },
-  { value: 4, decimals: 0, suffix: ' weeks', label: 'from contract to first post' },
+  { value: 14, decimals: 0, suffix: '亿', label: '全球月活' },
+  { value: 9.45, decimals: 2, suffix: '亿', label: '小程序月活' },
+  { value: 18, decimals: 0, suffix: ' 个', label: '同时运营的中国平台' },
+  { value: 4, decimals: 0, suffix: ' 周', label: '从签约到内容首发' },
 ];
 
 const scopeItems = [
-  { label: 'Official Account setup and verification', href: '/platforms/wechat/' },
-  { label: 'Content written by native Chinese speakers', href: '/services/content-production/' },
-  { label: 'Moments Ads, Official Account Ads, Mini Program Ads', href: '/services/advertising/' },
-  { label: 'Mini Programs and WeChat e-commerce', href: '/platforms/wechat/' },
-  { label: 'WeCom CRM and private domain traffic', href: '/services/crm-private-domain/' },
+  { label: '公众号注册与认证', href: '/zh/platforms/wechat/' },
+  { label: '本地中文写手原创内容', href: '/zh/services/content-production/' },
+  { label: '朋友圈广告、公众号广告、小程序广告', href: '/zh/services/advertising/' },
+  { label: '小程序与微信电商', href: '/zh/platforms/wechat/' },
+  { label: '企业微信 CRM 与私域流量', href: '/zh/services/crm-private-domain/' },
 ];
 
 const services = [
   {
     glyph: '号',
-    title: 'Official Account setup and verification',
-    tag: 'Live in 1 to 2 weeks',
+    title: '公众号注册与认证',
+    tag: '1 到 2 周上线',
     description:
-      'We register your Service Account, prepare Tencent\'s paperwork, and push it through verification. Menus, auto-replies, and brand assets included. Most accounts go live within 1 to 2 weeks.',
-    deliverables: ['Registration', 'Tencent verification', 'Menus and auto-replies', 'Brand assets'],
+      '注册服务号、备齐认证材料、盯着腾讯把审核走完，全程我们来。菜单、自动回复、品牌素材一次配齐。多数账号 1 到 2 周开出来。',
+    deliverables: ['服务号注册', '腾讯认证', '菜单与自动回复', '品牌素材'],
     image: '/images/wechat-agency/service-setup.webp',
-    imageAlt: 'Phone on a desk next to business registration documents, showing a verified WeChat Official Account brand profile',
+    imageAlt: '手机与公司注册文件并排摆在桌面，屏幕上是一个完成认证的微信公众号品牌主页',
   },
   {
     glyph: '文',
-    title: 'Content and CRM',
-    tag: 'Native Chinese copywriters',
+    title: '内容与 CRM',
+    tag: '本地中文写手',
     description:
-      'Content pillars, editorial calendar, articles, graphics, and video. Native Chinese copywriters, not translators. Every follower flows into WeCom so you build a customer list no platform can take from you.',
-    deliverables: ['Editorial calendar', 'Articles', 'Graphics and video', 'WeCom setup'],
+      '内容主轴、排期、图文、视觉、视频，一套班子做完。稿子由本地中文写手从零写起，不走翻译。每个新关注都导进企业微信，攒出一份任何平台都收不走的客户名单。',
+    deliverables: ['内容排期表', '图文推送', '视觉与视频', '企微搭建'],
     image: '/images/wechat-agency/service-content.webp',
-    imageAlt: 'Editorial desk with a phone showing a branded WeChat Official Account article being scrolled',
+    imageAlt: '编辑台上的手机屏幕正划过一篇品牌微信公众号推文',
   },
   {
     glyph: '广',
-    title: 'WeChat advertising',
-    tag: 'Ad spend at cost, no markup',
+    title: '微信广告投放',
+    tag: '广告费原价结算，零加价',
     description:
-      'Media planning, creative, A/B tests, and bid work across Moments Ads, Official Account Ads, and Mini Program Ads. Ad spend is billed at cost. No markup, ever.',
-    deliverables: ['Media plan', 'Ad creative', 'A/B tests', 'Bid management'],
+      '媒介排期、素材创作、A/B 测试、出价调优，朋友圈广告、公众号广告、小程序广告全覆盖。广告费按腾讯原价结算，我们一分不加。',
+    deliverables: ['媒介计划', '广告素材', 'A/B 测试', '出价管理'],
     image: '/images/wechat-agency/service-ads.webp',
-    imageAlt: 'Hand holding a phone in a cafe, showing a sponsored brand ad inside the WeChat Moments feed',
+    imageAlt: '咖啡馆内手持手机，朋友圈信息流里插着一条品牌赞助广告',
   },
   {
     glyph: '店',
-    title: 'Mini Programs and e-commerce',
-    tag: '945M monthly users',
+    title: '小程序与电商',
+    tag: '9.45 亿月活用户',
     description:
-      'Stores, lead capture, bookings, and loyalty programs built inside WeChat and connected to WeChat Pay. 945M people use Mini Programs every month. Your readers get a next step that converts.',
-    deliverables: ['Storefront', 'WeChat Pay', 'Lead capture', 'Loyalty programs'],
+      '商城、留资、预约、会员体系，全部搭进微信，直连微信支付。小程序每月有 9.45 亿人在用。读者看完内容，顺手就能走到下一步。',
+    deliverables: ['线上商城', '微信支付', '留资表单', '会员体系'],
     image: '/images/wechat-agency/service-miniprogram.webp',
-    imageAlt: 'Two phones side by side showing a WeChat Mini Program storefront and a WeChat Pay payment success screen',
+    imageAlt: '两台手机并排，一台是微信小程序商城，一台是微信支付付款成功页',
   },
   {
     glyph: '播',
-    title: 'KOL and cross-promotion campaigns',
-    tag: 'Verified engagement data only',
+    title: 'KOL 与联合推广',
+    tag: '互动数据必须查得实',
     description:
-      'Key Opinion Leader (KOL) sourcing, vetting, briefs, and reporting. We only work with verified engagement data. If a follower count looks inflated, we pass.',
-    deliverables: ['KOL sourcing', 'Vetting', 'Campaign briefs', 'Reporting'],
+      '选人、评估、brief、复盘，KOL 项目整条链路我们跑。互动数据要经得起核对。粉丝明显掺水的账号，我们不碰。',
+    deliverables: ['KOL 选人', '账号评估', '投放 brief', '效果报告'],
     image: '/images/wechat-agency/service-kol.webp',
-    imageAlt: 'Content creator filming a product video, with a phone showing a WeChat Channels live stream',
+    imageAlt: '创作者正在拍产品视频，一旁的手机开着微信视频号直播',
   },
 ];
 
 const segments = [
   {
-    title: 'B2C retail and luxury',
-    description: 'Chinese consumers check WeChat before they buy. We build the Official Account, content, and Mini Program store that close that loop.',
+    title: 'B2C 零售与奢侈品',
+    description: '中国消费者下单前，先上微信查一圈。公众号、内容、小程序商城，这条转化链我们替你搭齐。',
     icon: '<path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/>',
   },
   {
-    title: 'B2B and industrial',
-    description: 'Long sales cycles need a follow-up channel. WeChat articles plus WeCom outreach turn trade-show contacts into pipeline.',
+    title: 'B2B 与工业',
+    description: '销售周期越长，越需要一条能持续跟进的通道。公众号文章配企微触达，展会上换来的名片才会变成线索。',
     icon: '<path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1"/><path d="M12 18h1"/><path d="M7 18h1"/>',
   },
   {
-    title: 'Tourism and education',
-    description: 'Chinese travelers and students research on WeChat months before they commit. We keep your brand in that conversation.',
+    title: '旅游与教育',
+    description: '中国游客和留学生，出发前几个月就在微信上做攻略。我们让品牌一直待在他们的视线里。',
     icon: '<path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/>',
   },
   {
-    title: 'Cross-border e-commerce',
-    description: 'Sell to China without a Chinese entity. Mini Program storefronts and cross-border WeChat Pay make it possible.',
+    title: '跨境电商',
+    description: '没有中国主体，一样能把货卖进中国。小程序商城配跨境微信支付，这条路我们已经替客户走通。',
     icon: '<circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/>',
   },
 ];
 
 const pillars = [
   {
-    title: 'Clear SOW',
-    description: 'Every deliverable is defined upfront. Articles, videos, campaigns, reports. You know exactly what you get each month.',
+    title: 'SOW 写明白',
+    description: '每项交付提前定死：文章几篇、视频几条、项目几个、报告几份。每个月拿到手的东西，一目了然。',
   },
   {
-    title: 'Fixed price, no surprises',
-    description: 'One price per package. No hourly rates, no scope creep charges, no invoices you weren\'t expecting.',
+    title: '价格固定，没有意外',
+    description: '一个套餐一个价。不按工时跳表，不收加项费，月底不会冒出一张看不懂的账单。',
   },
   {
-    title: 'AI-powered content production',
-    description: 'Visuals and video powered by HubStudio.ai, which keeps costs down and output fast. Strategy is 100% human-led.',
+    title: 'AI 加持的内容产能',
+    description: '视觉和视频交给 HubStudio.ai，产量上得去，成本压得住。方向和策略，始终由人拍板。',
   },
   {
-    title: 'Team on the ground',
-    description: 'Shanghai and Hong Kong. Native speakers who use WeChat every day, with direct KOL relationships and real-time platform access.',
+    title: '团队就在中国',
+    description: '上海加香港。母语团队天天泡在微信里，一线 KOL 资源和平台入口都握在手上。',
   },
 ];
 
 const steps = [
   {
-    title: 'Discovery call',
-    description: '30 minutes. Tell us about your brand, your goals, and where you stand with China right now. No pitch deck.',
+    title: '先聊一次',
+    description: '30 分钟，聊品牌、聊目标、聊你在中国市场走到了哪一步。没有推销 PPT。',
   },
   {
-    title: 'Proposal',
-    description: 'Clear SOW. Fixed price. Every deliverable listed out. You see what you\'re getting and what it costs before you commit.',
+    title: '报方案',
+    description: 'SOW 写明白，价格锁死，交付物一条条列清。签字之前，你就知道花多少钱、拿到什么。',
   },
   {
-    title: 'Live in 4 weeks',
-    description: 'Onboarding, account setup, verification, and first content published. Four weeks from signed contract to first post.',
+    title: '4 周上线',
+    description: '对接、开户、认证、首批内容发出。从合同落笔到第一条推文，4 周。',
   },
 ];
 
@@ -133,91 +132,80 @@ const caseStudies = [
   {
     client: 'JAC Motors',
     image: '/images/clients/JAC/JAC-Wechat-4.webp',
-    imageAlt: 'JAC Motors WeChat content produced by TheRedScroll',
-    metric: '10M',
-    metricLabel: 'vehicles sold, community rebuilt',
-    summary: 'A Chinese auto giant with 10 million vehicles sold and a quiet social presence. We rebuilt the community across WeChat, RedNote, and Weibo with AI-powered content.',
-    href: '/work/jac-motors/',
+    imageAlt: 'TheRedScroll 为 JAC Motors 运营的微信内容画面',
+    metric: '1000万',
+    metricLabel: '辆整车卖出，用户社区从零重建',
+    summary: '一家累计销量 1000 万辆的中国车企，社媒上却几乎没有声音。我们用 AI 加持的内容产线，在微信、小红书和微博上把它的用户社区重新建了起来。',
+    href: '/zh/work/jac-motors/',
   },
   {
     client: 'Mission Foods',
     image: '/images/clients/MissionFoods/head-pic.jpg',
-    imageAlt: 'Mission Foods campaign visual for the China launch',
-    metric: 'Gen Z',
-    metricLabel: 'campaigns for a new food category',
-    summary: 'Launching corn chips, an unfamiliar food category, in China. Gen Z campaigns and food pairing content across WeChat, RedNote, and Weibo.',
-    href: '/work/mission-foods/',
+    imageAlt: 'Mission Foods 中国上市战役主视觉',
+    metric: 'Z 世代',
+    metricLabel: '替一个陌生食品品类打开市场',
+    summary: '玉米片在中国是个陌生品类。我们面向 Z 世代做传播，配上食物搭配内容，把微信、小红书和微博一起铺开。',
+    href: '/zh/work/mission-foods/',
   },
   {
     client: 'Camper',
     image: '/images/clients/Camper/Camper-Case-Study-Hero.jpg',
-    imageAlt: 'Camper footwear campaign visual for China social media',
-    metric: '187K',
-    metricLabel: 'followers, up from 43K in 18 months',
-    summary: 'A European footwear brand that grew from 43K to 187K followers in 18 months, with engagement up from 1.2% to 4.7% and same-store sales up 31% year over year.',
-    href: '/work/camper/',
+    imageAlt: 'Camper 鞋履品牌中国社媒战役主视觉',
+    metric: '18.7万',
+    metricLabel: '粉丝，18 个月前还是 4.3 万',
+    summary: '这家欧洲鞋履品牌，18 个月里粉丝从 4.3 万做到 18.7 万，互动率从 1.2% 拉到 4.7%，同店销售同比多了 31%。',
+    href: '/zh/work/camper/',
   },
 ];
 
 const faqs = [
   {
-    q: 'Do I need a China business license to open a WeChat Official Account?',
-    a: 'No. Foreign companies can register a WeChat Service Account with an overseas business license. You need company registration documents, a legal representative\'s ID, and proof of brand ownership. A Chinese entity only becomes necessary for Subscription accounts, domestic WeChat Pay merchant status, and some ad formats.',
+    q: '开公众号，一定要有中国营业执照吗？',
+    a: '不需要。海外公司凭海外营业执照就能注册服务号。要备的材料有三样：公司注册文件、法人身份证明、品牌所有权证明。真正要求中国主体的，只有订阅号、国内微信支付商户资质和部分广告形式。',
   },
   {
-    q: 'What is the difference between a Subscription and a Service account?',
-    a: 'Subscription accounts publish daily but sit in a folded inbox and are only available to Chinese entities. Service Accounts publish 4 times per month, land directly in the chat list, and support custom menus, WeChat Pay, and CRM tools. Service Accounts are the only type foreign companies can register on their own, and for most brands they are the better choice anyway.',
+    q: '订阅号和服务号，差别在哪？',
+    a: '订阅号天天能发，但被折叠进订阅消息栏，而且只对中国主体开放。服务号每月推送 4 次，直接进聊天列表，能挂自定义菜单、微信支付和 CRM 工具。海外公司自己能注册的只有服务号。对多数品牌来说，服务号本来就是更合适的选择。',
   },
   {
-    q: 'How much does WeChat marketing cost?',
-    a: 'Two budgets matter. Agency work: we quote a fixed monthly price against a clear scope of work, so you know every deliverable and the full cost before you sign. Ad spend: Moments Ads run on auction bidding with entry budgets around RMB 1,000 per day, while premium scheduled placements start near RMB 50,000 per campaign. Ad spend is always billed separately at cost, with no markup.',
+    q: '微信营销的预算怎么算？',
+    a: '要分两笔看。一笔是代理费：我们按写明的工作范围收固定月费，签约前每项交付和总价都摆在台面上。另一笔是广告费：朋友圈广告走竞价，起步预算大约每天 1,000 元人民币；排期类优质广告位每档约 50,000 元人民币起。广告费永远单独结算，按原价走，零加价。',
   },
   {
-    q: 'How long does account setup and verification take?',
-    a: 'With complete documents, registration and Tencent verification take 1 to 2 weeks. Missing or inconsistent paperwork is the most common cause of delays, so we review everything before submission. If you already have a verified account, we can start publishing within days.',
+    q: '开户加认证要多长时间？',
+    a: '材料齐的话，注册加腾讯认证 1 到 2 周。最耽误事的是材料缺项或前后对不上，所以提交前我们会把全部文件先过一遍。已经有认证账号的，几天内就能开始发内容。',
   },
   {
-    q: 'Can you run WeChat if I have no team in China?',
-    a: 'Yes. That is the most common setup for our clients. Our team in Shanghai and Hong Kong runs your account day to day: strategy, content, publishing, community replies, ads, and monthly reporting in plain English. You get a dedicated account manager and full visibility, without hiring anyone in China.',
+    q: '我们在中国没有团队，能整盘交给你们吗？',
+    a: '能，这也是我们客户里最典型的一种。上海和香港的团队每天替你把号跑起来：策略、内容、发布、评论区回复、广告，每月再交一份英文报告。你对接一位专属客户经理，全程透明，不用在中国多招一个人。',
   },
   {
-    q: 'Who owns the WeChat account and its followers?',
-    a: 'You do. The account is registered under your company name with your own documents. We operate it on your behalf. If we ever part ways, you keep the account, the followers, and the full content archive.',
+    q: '账号和粉丝到底归谁？',
+    a: '归你。账号以你的公司名义、用你的材料注册，我们只负责运营。合作哪天结束，账号、粉丝和全部内容存档都留在你手里。',
   },
   {
-    q: 'Can you take over an existing WeChat account?',
-    a: 'Yes. We start with an audit: verification status, follower quality, content history, and compliance risks. Then we fix what needs fixing and take over publishing. Most handovers are complete within a week, with no downtime for your followers.',
+    q: '手上已有微信账号，能直接接手吗？',
+    a: '能。先审计一轮：认证状态、粉丝质量、内容历史、合规风险。该补的补完，再接过发布工作。多数交接一周内走完，粉丝那头毫无察觉。',
   },
   {
-    q: 'Should I start with WeChat or with RedNote and Douyin?',
-    a: 'It depends on your goal. WeChat is where Chinese consumers read, ask questions, and buy, so it works as your home base. RedNote and Douyin are discovery platforms that bring new audiences in. Most of our clients run WeChat as the hub and add discovery platforms around it.',
+    q: '先做微信，还是先做小红书、抖音？',
+    a: '看你要什么。中国消费者在微信上阅读、提问、下单，它适合当大本营。小红书和抖音是负责拉新的发现型平台。我们多数客户的布阵：微信坐镇中枢，发现型平台在外围引流。',
   },
   {
-    q: 'What is private domain traffic and why does it matter?',
-    a: 'Private domain traffic means followers you can reach directly, without paying for ads each time. In practice, it means moving WeChat followers into WeCom groups and 1-to-1 chats. You own that list. An algorithm change can never take it away from you.',
+    q: '私域流量是什么，为什么绕不开？',
+    a: '私域流量，指那批你能直接触达、不用每次掏广告费的粉丝。做法很实在：把微信粉丝沉淀进企微社群和 1 对 1 会话。这份名单归你，算法再怎么改也收不走。',
   },
   {
-    q: 'How do you report performance?',
-    a: 'One monthly report in plain English. It covers follower growth, article reads, engagement, ad spend at cost, and leads or sales where tracking allows. You also get a dedicated account manager you can message any time with questions.',
+    q: '效果怎么向我们汇报？',
+    a: '每月一份说人话的报告：涨粉、阅读、互动、按原价列明的广告花费，以及可追踪的线索或销售。有问题，随时给你的专属客户经理留言。',
   },
-];
-
-const pageSchemas = [
-  serviceSchema({
-    name: 'WeChat Agency Services',
-    description:
-      'Full-service WeChat agency for international brands: Official Account setup and verification, content, advertising, Mini Programs, and WeCom CRM.',
-    url: '/wechat-agency',
-    serviceType: 'Social Media Marketing',
-  }),
-  faqPageSchema(faqs),
 ];
 ---
 
 <PageLayout
-  title="WeChat Agency for Brands Growing in China | TheRedScroll"
-  description="A full-service WeChat agency in Shanghai and Hong Kong. Official Account setup, content, ads, Mini Programs, and CRM. Fixed scope, fixed price."
-  schema={pageSchemas}
+  title="微信代运营，团队常驻上海与香港 | TheRedScroll"
+  description="微信全案代运营：公众号注册、内容、广告投放、小程序、CRM。团队常驻上海和香港。范围写明，价格固定。"
+  lang="zh"
 >
   <!-- The red thread: scroll progress -->
   <div class="red-thread" data-thread aria-hidden="true"></div>
@@ -236,28 +224,27 @@ const pageSchemas = [
         <div>
           <p class="flex items-center gap-[10px] mb-[20px]" data-hero-reveal style="--d: 0ms">
             <span class="seal" aria-hidden="true">微</span>
-            <img src="/images/platforms/wechat-logo.svg" alt="" width="22" height="22" class="block" aria-hidden="true" />
-            <span class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333]">WeChat agency</span>
+            <span class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333]">微信代运营</span>
           </p>
           <h1 class="hero-title text-[#FFFFFF] mb-[20px]" data-hero-reveal style="--d: 80ms">
-            The WeChat agency for brands growing in China
+            中国市场的增长，从把微信做扎实开始。
           </h1>
           <p class="text-[17px] max-[640px]:text-[15px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[460px] mb-[32px]" data-hero-reveal style="--d: 160ms">
-            Official Account setup, content, advertising, Mini Programs, and CRM. Run from Shanghai and Hong Kong, every day. Fixed scope. Fixed price.
+            公众号注册、内容、广告投放、小程序、CRM。团队常驻上海和香港，每天在一线操盘。范围写明，价格固定。
           </p>
           <div class="flex items-center gap-[12px] flex-wrap mb-[12px]" data-hero-reveal style="--d: 240ms">
-            <Button variant="primary" href="/contact/">Book a call</Button>
-            <Button variant="secondary-dark" href="#results">See the results</Button>
+            <Button variant="primary" href="/zh/contact/">预约通话</Button>
+            <Button variant="secondary-dark" href="#results">查看成果</Button>
           </div>
           <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal" data-hero-reveal style="--d: 300ms">
-            A 30-minute call. No pitch deck.
+            30 分钟通话，不放推销 PPT。
           </p>
         </div>
 
         <div class="relative max-w-[500px] mx-auto w-full max-[900px]:max-w-[380px]" data-hero-reveal style="--d: 200ms">
           <img
             src="/images/wechat-agency/hero-phones-blend.webp"
-            alt="Two phones showing real WeChat screens: the Moments feed with a sponsored brand ad, and a WeChat Pay payment success screen"
+            alt="两台手机展示真实微信界面：一条插在朋友圈信息流里的品牌赞助广告，和一个微信支付付款成功页"
             width="665"
             height="672"
             class="hero-float w-full h-auto block"
@@ -285,23 +272,23 @@ const pageSchemas = [
       <figure class="m-0 bg-[#F7F2EE] rounded-[10px] p-[40px] max-[1024px]:p-[28px] max-[640px]:p-[20px] grid grid-cols-[0.9fr_1.1fr] max-[768px]:grid-cols-1 gap-[40px] max-[768px]:gap-[24px] items-center" data-reveal>
         <div>
           <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
-            Why WeChat comes first
+            为什么先做微信
           </p>
           <p class="manifesto" data-manifesto>
-            In China, WeChat is not an app. It is the internet. Your customers chat, read, shop, and pay without ever leaving it. A brand that is not on WeChat is <span class="manifesto-hl">invisible</span> to them.
+            在中国，微信不是一个 App，它就是互联网本身。聊天、阅读、购物、付款，你的客户一步都不用离开。品牌不在微信上，在他们眼里就是<span class="manifesto-hl">隐形</span>的。
           </p>
         </div>
         <div>
           <img
             src="/images/wechat-agency/ecosystem-banner-tight.webp"
-            alt="Three phones side by side showing the three sides of WeChat: the Moments feed, an Official Account article, and a WeChat Pay payment success screen"
+            alt="三台手机并排展示微信的三个面向：朋友圈信息流、公众号文章、微信支付支付成功页面"
             width="1000"
             height="580"
             loading="lazy"
             class="w-full h-auto block rounded-[8px]"
           />
           <figcaption class="text-[13px] text-[#5C5C5C] font-normal leading-[1.4] mt-[12px] text-center">
-            One app, three jobs: social feed, publishing channel, and payment.
+            一个 App，三副面孔：社交信息流、内容渠道、支付工具。
           </figcaption>
         </div>
       </figure>
@@ -309,20 +296,20 @@ const pageSchemas = [
       <div class="grid grid-cols-2 max-[768px]:grid-cols-1 gap-[48px] max-[768px]:gap-[32px] items-start mt-[64px] max-[640px]:mt-[40px]">
         <div data-reveal>
           <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">
-            One agency for the whole WeChat ecosystem
+            一支团队，管起整个微信矩阵
           </h2>
           <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[#1A1A1A] max-w-[560px]">
             <p>
-              A WeChat agency registers your account, produces your content, runs your ads, and builds your Mini Program. Doing this in-house means hiring native speakers, learning Tencent's rules, and buying ads through a Chinese account.
+              一家微信代运营公司，要替你开账号、做内容、投广告、搭小程序。这些事自己上手，等于要招一支母语团队、吃透腾讯的规则、再通过中国账户去买广告。
             </p>
             <p>
-              Most brands get further, faster, with a specialist. We're that specialist. We post on <a href="/platforms/wechat/" class="text-[#CC3333] hover:underline">WeChat</a> every day, from inside China.
+              多数品牌把这摊事交给专业团队，走得更快，也走得更稳。我们就是这样一支团队，人在中国，每天都在<a href="/zh/platforms/wechat/" class="text-[#CC3333] hover:underline">微信</a>上发内容。
             </p>
           </div>
         </div>
         <div class="bg-[#F7F2EE] rounded-[10px] p-[28px] max-[640px]:p-[20px]" data-reveal style="--d: 120ms">
           <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
-            Scope at a glance
+            服务范围一览
           </p>
           <ul class="flex flex-col list-none m-0 p-0">
             {scopeItems.map((item, i) => (
@@ -347,12 +334,12 @@ const pageSchemas = [
         <div>
           <div class="sticky top-[104px] max-[900px]:static">
             <div class="mb-[32px] max-[900px]:mb-[8px]" data-reveal>
-              <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Our WeChat marketing services</p>
+              <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">微信营销服务</p>
               <h2 class="text-[32px] max-[640px]:text-[24px] font-medium leading-[1.15] tracking-[-0.01em] text-[#1A1A1A] mb-[12px]">
-                Five services. Each with a clear deliverable.
+                五项服务，每项交付都落在纸面上。
               </h2>
               <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] max-w-[420px] m-0">
-                Everything is listed in your scope of work before you sign. No vague retainers.
+                签约前，全部条目写进你的工作范围。月费里没有模糊地带。
               </p>
             </div>
             <div class="svc-frame relative max-[900px]:hidden">
@@ -391,7 +378,7 @@ const pageSchemas = [
               </div>
               <h3 class="text-[22px] max-[640px]:text-[19px] font-medium leading-[1.25] text-[#1A1A1A] mb-[10px]">{service.title}</h3>
               <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.65] max-w-[480px] mb-[16px]">{service.description}</p>
-              <ul class="flex flex-wrap gap-[8px] list-none m-0 p-0" aria-label={`${service.title}: deliverables`}>
+              <ul class="flex flex-wrap gap-[8px] list-none m-0 p-0" aria-label={`${service.title}：交付内容`}>
                 {service.deliverables.map((d) => (
                   <li class="text-[12px] font-normal leading-none text-[#1A1A1A] bg-[#F7F2EE] border-[0.5px] border-[#E8E0D8] rounded-[6px] px-[10px] py-[7px]">{d}</li>
                 ))}
@@ -408,9 +395,9 @@ const pageSchemas = [
           ))}
           <div class="py-[16px] flex items-center justify-between gap-[16px] flex-wrap" data-reveal>
             <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] m-0 max-w-[420px]">
-              <span class="text-[#1A1A1A] font-medium">Need more than WeChat?</span> We also grow brands on RedNote, Douyin, Weibo, and 14 more platforms.
+              <span class="text-[#1A1A1A] font-medium">不止想做微信？</span>小红书、抖音、微博，再加 14 个平台，我们都在跑。
             </p>
-            <a href="/platforms/others/" class="text-[14px] text-[#CC3333] font-medium shrink-0 hover:underline">All platforms &rarr;</a>
+            <a href="/zh/platforms/others/" class="text-[14px] text-[#CC3333] font-medium shrink-0 hover:underline">全部平台 &rarr;</a>
           </div>
         </div>
       </div>
@@ -422,15 +409,15 @@ const pageSchemas = [
     <Container>
       <div class="flex items-end justify-between gap-[32px] max-[640px]:flex-col max-[640px]:items-start max-[640px]:gap-[16px] mb-[40px] max-[640px]:mb-[24px]" data-reveal>
         <div class="max-w-[560px]">
-          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Case studies</p>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">客户案例</p>
           <h2 class="text-[36px] max-[640px]:text-[24px] font-medium leading-[1.15] tracking-[-0.01em] text-[#1A1A1A] mb-[8px]">
-            Results from the ground
+            实打实跑出来的数字
           </h2>
           <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
-            Real clients, real numbers, all verifiable in the full case studies.
+            真实客户、真实数字，翻开完整案例都对得上。
           </p>
         </div>
-        <a href="/work/" class="text-[14px] text-[#CC3333] font-medium shrink-0 hover:underline">All case studies &rarr;</a>
+        <a href="/zh/work/" class="text-[14px] text-[#CC3333] font-medium shrink-0 hover:underline">全部案例 &rarr;</a>
       </div>
 
       <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[24px] max-[640px]:gap-[16px]">
@@ -451,7 +438,7 @@ const pageSchemas = [
               <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.4] mb-[20px]">{cs.metricLabel}</p>
               <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">{cs.client}</h3>
               <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] mb-[20px]">{cs.summary}</p>
-              <span class="text-[14px] text-[#CC3333] font-medium mt-auto inline-flex items-center gap-[6px]">Read the case study <span class="cs-arrow" aria-hidden="true">&rarr;</span></span>
+              <span class="text-[14px] text-[#CC3333] font-medium mt-auto inline-flex items-center gap-[6px]">看完整案例 <span class="cs-arrow" aria-hidden="true">&rarr;</span></span>
             </div>
           </a>
         ))}
@@ -463,9 +450,9 @@ const pageSchemas = [
   <section class="mt-[128px] max-[640px]:mt-[72px]">
     <Container>
       <div class="mb-[40px] max-[640px]:mb-[24px] max-w-[680px]" data-reveal>
-        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Who we help</p>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">我们服务谁</p>
         <h2 class="text-[36px] max-[640px]:text-[24px] font-medium leading-[1.15] tracking-[-0.01em] text-[#1A1A1A]">
-          Built for brands entering or growing in China
+          刚进中国的品牌，深耕中国的品牌，我们都接
         </h2>
       </div>
 
@@ -481,7 +468,7 @@ const pageSchemas = [
 
       <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px] mt-[16px]" data-reveal>
         <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] max-w-[680px]">
-          <span class="text-[#1A1A1A] font-medium">No Chinese entity? No problem.</span> We work with brands that have a WFOE and brands that don't. If you're starting from zero, our <a href="/services/market-entry/" class="text-[#CC3333] hover:underline">China market entry service</a> covers registration, setup, and localization.
+          <span class="text-[#1A1A1A] font-medium">没有中国主体？不碍事。</span>有 WFOE 的品牌我们接，没有 WFOE 的照样接。从零起步的话，我们的<a href="/zh/services/market-entry/" class="text-[#CC3333] hover:underline">中国市场进入服务</a>把注册、开户、本地化一并办齐。
         </p>
       </div>
     </Container>
@@ -493,9 +480,9 @@ const pageSchemas = [
       <div class="bg-[#F7F2EE] rounded-[10px] p-[48px] max-[1024px]:p-[32px] max-[640px]:p-[20px]">
         <div class="grid grid-cols-[300px_1fr] max-[900px]:grid-cols-1 gap-[48px] max-[900px]:gap-[24px]">
           <div data-reveal>
-            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Why TheRedScroll</p>
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">为什么选 TheRedScroll</p>
             <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A]">
-              Four reasons brands choose us
+              客户留下来的四个理由
             </h2>
           </div>
           <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-x-[40px] gap-y-[32px] max-[640px]:gap-y-[24px]">
@@ -516,9 +503,9 @@ const pageSchemas = [
   <section class="mt-[128px] max-[640px]:mt-[72px]">
     <Container>
       <div class="text-center mb-[56px] max-[640px]:mb-[32px]" data-reveal>
-        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Our process</p>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">合作流程</p>
         <h2 class="text-[36px] max-[640px]:text-[24px] font-medium leading-[1.15] tracking-[-0.01em] text-[#1A1A1A]">
-          From first call to first post in 4 weeks
+          从第一通电话到第一条推文，4 周。
         </h2>
       </div>
 
@@ -537,7 +524,7 @@ const pageSchemas = [
       </div>
 
       <div class="text-center mt-[48px] max-[640px]:mt-[32px]" data-reveal>
-        <Button variant="primary" href="/contact/">Book a call</Button>
+        <Button variant="primary" href="/zh/contact/">预约通话</Button>
       </div>
     </Container>
   </section>
@@ -546,39 +533,39 @@ const pageSchemas = [
   <section class="mt-[128px] max-[640px]:mt-[72px]">
     <Container>
       <div class="mb-[40px] max-[640px]:mb-[24px] max-w-[680px]" data-reveal>
-        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">What to budget</p>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">预算怎么花</p>
         <h2 class="text-[36px] max-[640px]:text-[24px] font-medium leading-[1.15] tracking-[-0.01em] text-[#1A1A1A] mb-[8px]">
-          WeChat advertising costs, without the mystery
+          微信广告要花多少钱，摊开算一遍
         </h2>
         <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
-          Two budgets matter: what you pay the agency and what you pay Tencent for ads. Most agencies blur the two. We keep them separate.
+          一笔付给代理，一笔付给腾讯，性质完全不同。多数代理把两笔搅成一团，我们分开记。
         </p>
       </div>
 
       <div class="grid grid-cols-2 max-[768px]:grid-cols-1 gap-[16px]">
         <div class="bg-[#F7F2EE] rounded-[10px] p-[32px] max-[640px]:p-[20px]" data-reveal>
-          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Paid to us</p>
-          <h3 class="text-[20px] font-medium leading-[1.3] text-[#1A1A1A] mb-[16px]">Agency fees</h3>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">付给我们</p>
+          <h3 class="text-[20px] font-medium leading-[1.3] text-[#1A1A1A] mb-[16px]">代理服务费</h3>
           <ul class="flex flex-col gap-[10px] list-none m-0 p-0">
-            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>One fixed monthly price against a clear scope of work</li>
-            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Every article, video, campaign, and report listed before you sign</li>
-            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>No hourly billing, no scope creep charges</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>按写明的工作范围，收一个固定月费</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>文章、视频、项目、报告，签约前逐项列清</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>不按工时跳表，不收超范围加项费</li>
           </ul>
         </div>
         <div class="bg-[#F7F2EE] rounded-[10px] p-[32px] max-[640px]:p-[20px]" data-reveal style="--d: 120ms">
-          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Paid to Tencent</p>
-          <h3 class="text-[20px] font-medium leading-[1.3] text-[#1A1A1A] mb-[16px]">Ad spend</h3>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">付给腾讯</p>
+          <h3 class="text-[20px] font-medium leading-[1.3] text-[#1A1A1A] mb-[16px]">广告费</h3>
           <ul class="flex flex-col gap-[10px] list-none m-0 p-0">
-            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Moments Ads: auction bidding from around RMB 1,000 per day</li>
-            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Premium scheduled Moments placements from near RMB 50,000 per campaign</li>
-            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Billed at cost, no markup, every number in your monthly report</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>朋友圈广告走竞价，日预算约 1,000 元人民币起</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>排期类优质广告位，每档约 50,000 元人民币起</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>原价结算，零加价，每一笔都进月报</li>
           </ul>
         </div>
       </div>
 
       <div class="bg-[#F7F2EE] border-l-[3px] border-[#CC3333] p-[20px] mt-[16px]" data-reveal>
         <p class="text-[16px] font-normal leading-[1.6] text-[#1A1A1A] m-0">
-          A useful rule: don't start paid Moments campaigns until your account has content worth landing on. Followers gained from ads unfollow within weeks if the feed is empty.
+          一条实战经验：账号里还没攒下值得看的内容，先别开朋友圈付费投放。广告拉来的粉丝点进主页，看到一片空白，几周内就会取关。
         </p>
       </div>
     </Container>
@@ -592,10 +579,10 @@ const pageSchemas = [
           <div class="sticky top-[104px] max-[768px]:static" data-reveal>
             <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">FAQ</p>
             <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">
-              Questions brands ask before hiring a WeChat agency
+              选微信代运营之前，客户最常问的十个问题
             </h2>
             <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
-              More detail on the platform itself is on our <a href="/platforms/wechat/" class="text-[#CC3333] hover:underline">WeChat marketing page</a>.
+              想更了解平台本身，可以看我们的<a href="/zh/platforms/wechat/" class="text-[#CC3333] hover:underline">微信营销页面</a>。
             </p>
           </div>
         </div>
@@ -638,26 +625,26 @@ const pageSchemas = [
       <div class="py-[96px] max-[640px]:py-[56px] text-center">
         <p class="flex items-center justify-center gap-[10px] mb-[20px]" data-reveal>
           <span class="seal" aria-hidden="true">微</span>
-          <span class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333]">Start your WeChat strategy</span>
+          <span class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333]">把微信策略跑起来</span>
         </p>
         <h2 class="text-[40px] max-[640px]:text-[26px] font-medium leading-[1.15] tracking-[-0.01em] text-[#FFFFFF] max-w-[720px] mx-auto mb-[16px]" data-reveal style="--d: 80ms">
-          Your Chinese audience is on WeChat today. Your brand should be too.
+          你的中国客户此刻就在微信上，你的品牌不该缺席。
         </h2>
         <p class="text-[15px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[520px] mx-auto mb-[32px]" data-reveal style="--d: 160ms">
-          A 30-minute call. We'll tell you what your brand can do on WeChat with your current setup, and what it would take. No pitch deck.
+          30 分钟通话，把话说清楚：以你现在的条件，微信上能做到哪一步，还缺什么。没有推销 PPT。
         </p>
         <div data-reveal style="--d: 240ms">
-          <Button variant="primary" href="/contact/">Book a call</Button>
+          <Button variant="primary" href="/zh/contact/">预约通话</Button>
         </div>
 
         <div class="mt-[56px] pt-[24px] border-t border-[rgba(255,255,255,0.1)]" data-reveal style="--d: 300ms">
-          <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal mb-[12px]">See also</p>
+          <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal mb-[12px]">延伸阅读</p>
           <div class="flex justify-center gap-[24px] flex-wrap">
-            <a href="/platforms/wechat/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">WeChat marketing &rarr;</a>
-            <a href="/services/market-entry/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">China market entry &rarr;</a>
-            <a href="/platforms/rednote/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">RedNote marketing &rarr;</a>
-            <a href="/platforms/douyin/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Douyin marketing &rarr;</a>
-            <a href="/platforms/weibo/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Weibo marketing &rarr;</a>
+            <a href="/zh/platforms/wechat/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">微信营销 &rarr;</a>
+            <a href="/zh/services/market-entry/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">中国市场进入 &rarr;</a>
+            <a href="/zh/platforms/rednote/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">小红书营销 &rarr;</a>
+            <a href="/zh/platforms/douyin/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">抖音营销 &rarr;</a>
+            <a href="/zh/platforms/weibo/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">微博营销 &rarr;</a>
           </div>
         </div>
       </div>
@@ -1038,10 +1025,14 @@ const pageSchemas = [
             if (/^\s+$/.test(part) || part === '') {
               frag.appendChild(document.createTextNode(part));
             } else {
-              const span = document.createElement('span');
-              span.className = 'w';
-              span.textContent = part;
-              frag.appendChild(span);
+              // CJK text has no spaces; reveal it character by character
+              const pieces = /[一-鿿　-〿＀-￯]/.test(part) ? Array.from(part) : [part];
+              pieces.forEach((piece) => {
+                const span = document.createElement('span');
+                span.className = 'w';
+                span.textContent = piece;
+                frag.appendChild(span);
+              });
             }
           });
           node.parentNode?.replaceChild(frag, node);

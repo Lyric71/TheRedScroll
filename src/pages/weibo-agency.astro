@@ -1,10 +1,15 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
 import Container from '../components/ui/Container.astro';
-import SectionBar from '../components/ui/SectionBar.astro';
-import SectionHeading from '../components/ui/SectionHeading.astro';
 import Button from '../components/ui/Button.astro';
 import { faqPageSchema, serviceSchema } from '../lib/schema';
+
+const heroStats = [
+  { value: 567, decimals: 0, suffix: 'M', label: 'monthly active users' },
+  { value: 140, decimals: 0, suffix: '', label: 'characters before a post folds' },
+  { value: 2, decimals: 0, suffix: ' weeks', label: 'from contract to first post' },
+  { value: 6, decimals: 0, suffix: '', label: 'services in one scope of work' },
+];
 
 const scopeItems = [
   { label: 'Corporate account setup and Blue V verification', href: '/platforms/weibo/' },
@@ -16,111 +21,64 @@ const scopeItems = [
 
 const services = [
   {
-    number: '01',
+    glyph: '号',
     title: 'Account setup and Blue V verification',
+    tag: 'Verified in 2 to 4 weeks',
     description:
       'We register your corporate account, translate your documents into Chinese, and push verification through. Weibo charges international companies a one-time $1,000 fee. Approval takes 2 to 4 weeks. We handle all of it.',
+    deliverables: ['Corporate account', 'Document translation', 'Blue V verification', 'Profile buildout'],
+    image: '/images/platforms/weibo-services/account-setup.webp',
+    imageAlt: 'Phone showing a verified Weibo corporate profile with a Blue V badge, next to business registration documents',
   },
   {
-    number: '02',
+    glyph: '文',
     title: 'Content strategy and Chinese copywriting',
+    tag: 'Native Chinese copywriters',
     description:
       'Monthly content plans, daily posts, 9-grid carousels, and short video. Written in Chinese by native speakers, not translators. Posts fold after 140 characters, so every first sentence has to earn the tap.',
+    deliverables: ['Monthly content plans', 'Daily posts', '9-grid carousels', 'Short video'],
+    image: '/images/platforms/weibo-services/content-strategy.webp',
+    imageAlt: 'Editorial desk with a phone showing a branded Weibo post with a 9-grid photo carousel',
   },
   {
-    number: '03',
+    glyph: '广',
     title: 'Weibo paid advertising',
+    tag: 'Ad spend at cost, no markup',
     description:
       'Fan Headlines (粉丝头条), Fan Tunnel (粉丝通), in-feed display, splash ads, search promotion, and hashtag promotion. Targeting by demographics, interests, and behavior. Ad spend is billed at cost. No markup, ever.',
+    deliverables: ['Fan Headlines', 'Fan Tunnel', 'Display and splash', 'Search promotion'],
+    image: '/images/platforms/weibo-services/paid-advertising.webp',
+    imageAlt: 'Hand holding a phone showing a sponsored brand post inside the Weibo public feed',
   },
   {
-    number: '04',
+    glyph: '达',
     title: 'KOL and influencer campaigns',
+    tag: 'Verified engagement data only',
     description:
       'Key Opinion Leader (KOL) sourcing, vetting, briefs, negotiation, and reporting. We audit real engagement and run fake-follower checks before we recommend anyone. Follower counts alone never make the shortlist.',
+    deliverables: ['KOL sourcing', 'Vetting and briefs', 'Negotiation', 'Reporting'],
+    image: '/images/platforms/weibo-services/kol-campaigns.webp',
+    imageAlt: 'Content creator filming a product video, with a phone showing a Weibo KOL post and its engagement numbers',
   },
   {
-    number: '05',
+    glyph: '评',
     title: 'Community management and customer service',
+    tag: 'Daily monitoring',
     description:
       'The comment section is where Weibo actually happens. We reply to comments, answer direct messages, monitor brand mentions daily, and flag sentiment shifts before they become problems.',
+    deliverables: ['Comment replies', 'Direct messages', 'Mention monitoring', 'Sentiment flags'],
+    image: '/images/platforms/weibo-ecosystem/community.webp',
+    imageAlt: 'Phone showing a lively Weibo comment section under a brand post, with replies from the verified account',
   },
   {
-    number: '06',
+    glyph: '数',
     title: 'Analytics and monthly reporting',
+    tag: 'Plain-English reporting',
     description:
       'Follower growth, engagement by format, ad results (CPM, CPC, CPA, ROAS), KOL returns, and competitive benchmarks. Every report ends with clear recommendations for next month, in plain English.',
-  },
-];
-
-const segments = [
-  {
-    title: 'Luxury and consumer brands',
-    description: 'Chinese consumers search brand names on Weibo before they buy. A strong verified presence builds trust. No presence raises red flags.',
-  },
-  {
-    title: 'Tourism and education',
-    description: 'Chinese travelers and students research destinations and schools on Weibo months before they commit. We keep your brand in that conversation.',
-  },
-  {
-    title: 'F&B and e-commerce',
-    description: 'Shoppable posts link to Tmall and Taobao. Live streams sync with Taobao Live. The distance between a Weibo post and a purchase is short.',
-  },
-  {
-    title: 'Consumer tech and B2B',
-    description: 'Product launches, PR amplification, and reputation management. When you need millions of people to learn your name fast, Weibo is the channel.',
-  },
-];
-
-const pillars = [
-  {
-    title: 'Clear SOW',
-    description: 'Every deliverable is defined upfront. Posts, videos, campaigns, reports. You know exactly what you get each month.',
-  },
-  {
-    title: 'Fixed price, no surprises',
-    description: 'One price per package. No hourly rates, no scope creep charges, no invoices you weren\'t expecting.',
-  },
-  {
-    title: 'AI-powered content production',
-    description: 'Visuals and video powered by HubStudio.ai, which keeps costs down and output fast. Strategy is 100% human-led.',
-  },
-  {
-    title: 'Team on the ground',
-    description: 'Shanghai and Hong Kong. Native speakers who check the Hot Search list every morning, with direct KOL relationships.',
-  },
-];
-
-const steps = [
-  {
-    number: '01',
-    title: 'Audit and strategy.',
-    description: 'Week 1. We review your brand, your competitors on Weibo, and your goals. You get a content strategy and a clear scope of work.',
-  },
-  {
-    number: '02',
-    title: 'Account setup and verification.',
-    description: 'Weeks 1 to 4. We register the account and submit Blue V verification. We don\'t wait for the badge. Profile buildout starts immediately.',
-  },
-  {
-    number: '03',
-    title: 'Content calendar.',
-    description: 'Week 2. First month of posts planned, written, and designed. You review everything before it goes live.',
-  },
-  {
-    number: '04',
-    title: 'Launch.',
-    description: 'Week 2. First posts published, first campaign running. Fourteen days from signed contract to first post.',
-  },
-  {
-    number: '05',
-    title: 'Optimize.',
-    description: 'Ongoing. We track what works by format and topic, react to trends within the hour, and adjust ad bids weekly.',
-  },
-  {
-    number: '06',
-    title: 'Report.',
-    description: 'Monthly. Growth, engagement, ad results, KOL returns, and benchmarks. Plus a mid-month check-in during active campaigns.',
+    deliverables: ['Growth and engagement', 'Ad results', 'KOL returns', 'Competitive benchmarks'],
+    image: '/images/platforms/weibo-services/analytics.webp',
+    imageAlt: 'Laptop showing a Weibo performance dashboard with follower growth and engagement charts',
   },
 ];
 
@@ -155,19 +113,100 @@ const platformRows = [
   },
 ];
 
+const segments = [
+  {
+    title: 'Luxury and consumer brands',
+    description: 'Chinese consumers search brand names on Weibo before they buy. A strong verified presence builds trust. No presence raises red flags.',
+    icon: '<path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/>',
+  },
+  {
+    title: 'Tourism and education',
+    description: 'Chinese travelers and students research destinations and schools on Weibo months before they commit. We keep your brand in that conversation.',
+    icon: '<path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/>',
+  },
+  {
+    title: 'F&B and e-commerce',
+    description: 'Shoppable posts link to Tmall and Taobao. Live streams sync with Taobao Live. The distance between a Weibo post and a purchase is short.',
+    icon: '<path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/>',
+  },
+  {
+    title: 'Consumer tech and B2B',
+    description: 'Product launches, PR amplification, and reputation management. When you need millions of people to learn your name fast, Weibo is the channel.',
+    icon: '<rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/>',
+  },
+];
+
+const pillars = [
+  {
+    title: 'Clear SOW',
+    description: 'Every deliverable is defined upfront. Posts, videos, campaigns, reports. You know exactly what you get each month.',
+  },
+  {
+    title: 'Fixed price, no surprises',
+    description: 'One price per package. No hourly rates, no scope creep charges, no invoices you weren\'t expecting.',
+  },
+  {
+    title: 'AI-powered content production',
+    description: 'Visuals and video powered by HubStudio.ai, which keeps costs down and output fast. Strategy is 100% human-led.',
+  },
+  {
+    title: 'Team on the ground',
+    description: 'Shanghai and Hong Kong. Native speakers who check the Hot Search list every morning, with direct KOL relationships.',
+  },
+];
+
+const steps = [
+  {
+    title: 'Audit and strategy',
+    description: 'Week 1. We review your brand, your competitors on Weibo, and your goals. You get a content strategy and a clear scope of work.',
+  },
+  {
+    title: 'Account setup and verification',
+    description: 'Weeks 1 to 4. We register the account and submit Blue V verification. We don\'t wait for the badge. Profile buildout starts immediately.',
+  },
+  {
+    title: 'Content calendar',
+    description: 'Week 2. First month of posts planned, written, and designed. You review everything before it goes live.',
+  },
+  {
+    title: 'Launch',
+    description: 'Week 2. First posts published, first campaign running. Fourteen days from signed contract to first post.',
+  },
+  {
+    title: 'Optimize',
+    description: 'Ongoing. We track what works by format and topic, react to trends within the hour, and adjust ad bids weekly.',
+  },
+  {
+    title: 'Report',
+    description: 'Monthly. Growth, engagement, ad results, KOL returns, and benchmarks. Plus a mid-month check-in during active campaigns.',
+  },
+];
+
 const caseStudies = [
   {
     client: 'JAC Motors',
+    image: '/images/clients/JAC/JAC-Wechat-4.webp',
+    imageAlt: 'JAC Motors social media content produced by TheRedScroll',
+    metric: '10M',
+    metricLabel: 'vehicles sold, community rebuilt',
     summary: 'A Chinese auto giant with 10 million vehicles sold and a quiet social presence. We rebuilt the community across Weibo, WeChat, and RedNote with AI-powered content.',
     href: '/work/jac-motors/',
   },
   {
     client: 'Mission Foods',
+    image: '/images/clients/MissionFoods/head-pic.jpg',
+    imageAlt: 'Mission Foods campaign visual for the China launch',
+    metric: 'Gen Z',
+    metricLabel: 'campaigns for a new food category',
     summary: 'Launching corn chips, an unfamiliar food category, in China. Gen Z campaigns and food pairing content across Weibo, WeChat, and RedNote.',
     href: '/work/mission-foods/',
   },
   {
     client: 'Camper',
+    image: '/images/clients/Camper/Camper-Case-Study-Hero.jpg',
+    imageAlt: 'Camper footwear campaign visual for China social media',
+    metric: '187K',
+    metricLabel: 'followers, up from 43K in 18 months',
     summary: 'A European footwear brand that grew from 43K to 187K followers in 18 months, with engagement up from 1.2% to 4.7% and same-store sales up 31% year over year.',
     href: '/work/camper/',
   },
@@ -198,6 +237,22 @@ const faqs = [
     q: 'How do you measure Weibo campaign success?',
     a: 'Against the goals we set in your scope of work. Monthly reports cover follower growth, engagement rates, content performance by format, ad campaign results (CPM, CPC, CPA, ROAS), KOL campaign returns, and competitive benchmarks. Every report ends with specific recommendations for the following month. You also get a mid-month check-in during active campaigns.',
   },
+  {
+    q: 'What ad formats does Weibo offer?',
+    a: 'The main ones are Fan Headlines to boost posts, Fan Tunnel for interest-based targeting beyond your followers, display placements, and Hot Search or topic placements at the premium end. We match the format to the goal: Fan Tunnel for growth, Hot Search for launches. All ad spend is billed at cost.',
+  },
+  {
+    q: 'How do KOL campaigns work on Weibo?',
+    a: 'Bookings run through Weibo\'s official channels, so audience and engagement data is verified before any money moves. Weibo suits celebrity and top-tier KOL moments that put a brand into public conversation, backed by vertical KOLs for credibility. We handle selection, briefing, contracts, and per-post reporting.',
+  },
+  {
+    q: 'Is Weibo still relevant for brands in 2026?',
+    a: 'Yes. Weibo is where China\'s public conversation happens: 567 million monthly users, trending topics, and open comment threads that media report on. Launches, brand announcements, and celebrity campaigns still break on Weibo first. It will not replace a sales channel, but for visibility and credibility it has no substitute.',
+  },
+  {
+    q: 'What happens if we get negative comments on Weibo?',
+    a: 'We watch for it daily. Community management includes comment moderation, a response playbook agreed with you upfront, and same-day escalation when something could spread. Most issues fade when a brand answers fast and in the right tone. For a real crisis, we put a response plan in front of you within hours.',
+  },
 ];
 
 const pageSchemas = [
@@ -216,40 +271,100 @@ const pageSchemas = [
   title="Weibo Agency for Brands Entering China | TheRedScroll"
   description="A full-service Weibo agency in Shanghai and Hong Kong. Blue V setup, content, ads, and KOL campaigns for brands entering China. Fixed scope, fixed price."
   schema={pageSchemas}
-  omitLocales={['fr', 'zh', 'de', 'es']}
 >
-  <!-- Hero: Dark hero banner (Style A) -->
-  <section class="w-full bg-[#1A1A1A] py-[80px] max-[640px]:py-[48px] relative overflow-hidden">
-    <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/weibo-hero.webp')" aria-hidden="true"></div>
-    <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[140px] max-[640px]:text-[80px] font-medium text-[#FFFFFF] opacity-[0.03] pointer-events-none select-none whitespace-nowrap" aria-hidden="true">
+  <!-- The red thread: scroll progress -->
+  <div class="red-thread" data-thread aria-hidden="true"></div>
+
+  <!-- ============ HERO (ink bookend) ============ -->
+  <section class="w-full bg-[#1A1A1A] relative overflow-hidden">
+    <span
+      class="hero-watermark absolute top-[6%] right-[-30px] z-[2] text-[240px] max-[640px]:text-[110px] font-medium text-[#FFFFFF] opacity-[0.03] pointer-events-none select-none whitespace-nowrap leading-none"
+      aria-hidden="true"
+      data-parallax="0.1"
+    >
       微博
     </span>
     <Container class="relative z-[1]">
-      <div class="max-w-[800px] mx-auto text-center">
-        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">
-          Weibo agency
-        </p>
-        <h1 class="text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] text-[#FFFFFF] mb-[8px]">
-          The Weibo agency for brands entering China
-        </h1>
-        <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal mb-[24px]">
-          Account setup, Blue V verification, content, advertising, and KOL campaigns. Run from Shanghai and Hong Kong, every day. Fixed scope. Fixed price.
-        </p>
-        <Button variant="primary" href="/contact/">Book a call</Button>
+      <div class="grid grid-cols-[1.05fr_0.95fr] max-[900px]:grid-cols-1 gap-[56px] max-[900px]:gap-[24px] items-center pt-[88px] pb-[72px] max-[640px]:pt-[48px] max-[640px]:pb-[48px]">
+        <div>
+          <p class="flex items-center gap-[10px] mb-[20px]" data-hero-reveal style="--d: 0ms">
+            <span class="seal" aria-hidden="true">博</span>
+            <img src="/images/platforms/weibo-logo.svg" alt="" width="22" height="22" class="block" aria-hidden="true" />
+            <span class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333]">Weibo agency</span>
+          </p>
+          <h1 class="hero-title text-[#FFFFFF] mb-[20px]" data-hero-reveal style="--d: 80ms">
+            The Weibo agency for brands entering China
+          </h1>
+          <p class="text-[17px] max-[640px]:text-[15px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[460px] mb-[32px]" data-hero-reveal style="--d: 160ms">
+            Account setup, Blue V verification, content, advertising, and KOL campaigns. Run from Shanghai and Hong Kong, every day. Fixed scope. Fixed price.
+          </p>
+          <div class="flex items-center gap-[12px] flex-wrap mb-[12px]" data-hero-reveal style="--d: 240ms">
+            <Button variant="primary" href="/contact/">Book a call</Button>
+            <Button variant="secondary-dark" href="#results">See the results</Button>
+          </div>
+          <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal" data-hero-reveal style="--d: 300ms">
+            A 30-minute call. No pitch deck.
+          </p>
+        </div>
+
+        <div class="relative max-w-[500px] mx-auto w-full max-[900px]:max-w-[380px]" data-hero-reveal style="--d: 200ms">
+          <img
+            src="/images/weibo-agency/hero-phones-blend.webp"
+            alt="Two phones showing the real Weibo app: the public feed and the Hot Search trending list"
+            width="665"
+            height="672"
+            class="hero-float w-full h-auto block"
+            fetchpriority="high"
+          />
+        </div>
+      </div>
+
+      <div class="grid grid-cols-4 max-[900px]:grid-cols-2 gap-[24px] max-[640px]:gap-[16px] border-t border-[rgba(255,255,255,0.1)] py-[32px] max-[640px]:py-[24px]" data-hero-reveal style="--d: 360ms">
+        {heroStats.map((stat) => (
+          <div>
+            <p class="text-[32px] max-[640px]:text-[26px] font-medium leading-[1.1] text-[#FFFFFF] mb-[4px] tabular-nums">
+              <span data-count={stat.value} data-decimals={stat.decimals}>0</span><span>{stat.suffix}</span>
+            </p>
+            <p class="text-[12px] text-[rgba(255,255,255,0.4)] font-normal leading-[1.4]">{stat.label}</p>
+          </div>
+        ))}
       </div>
     </Container>
   </section>
 
-  <!-- What a Weibo agency does -->
-  <section class="mt-[96px] max-[640px]:mt-[64px]">
+  <!-- ============ MANIFESTO + ECOSYSTEM (one blended block) ============ -->
+  <section class="mt-[96px] max-[640px]:mt-[56px]">
     <Container>
-      <div class="grid grid-cols-2 max-[768px]:grid-cols-1 gap-[48px] max-[768px]:gap-[32px] items-start">
+      <figure class="m-0 bg-[#F7F2EE] rounded-[10px] p-[40px] max-[1024px]:p-[28px] max-[640px]:p-[20px] grid grid-cols-[0.9fr_1.1fr] max-[768px]:grid-cols-1 gap-[40px] max-[768px]:gap-[24px] items-center" data-reveal>
         <div>
-          <SectionBar />
-          <SectionHeading overline="What a Weibo agency does">
-            China's public square, run for you
-          </SectionHeading>
-          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[#1A1A1A] max-w-[680px] mt-[16px]">
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+            Why Weibo matters
+          </p>
+          <p class="manifesto" data-manifesto>
+            Weibo is China's public square. 567 million people watch what trends there every month. Reputations are made in hours. If your brand is not part of the conversation, someone else is <span class="manifesto-hl">writing it</span> for you.
+          </p>
+        </div>
+        <div>
+          <img
+            src="/images/weibo-agency/ecosystem-banner-tight.webp"
+            alt="Three phones showing the three sides of Weibo: the public feed, the Hot Search list, and a verified brand profile"
+            width="1000"
+            height="580"
+            loading="lazy"
+            class="w-full h-auto block rounded-[8px]"
+          />
+          <figcaption class="text-[13px] text-[#5C5C5C] font-normal leading-[1.4] mt-[12px] text-center">
+            One app, three jobs: public feed, trending topics, and brand reputation.
+          </figcaption>
+        </div>
+      </figure>
+
+      <div class="grid grid-cols-2 max-[768px]:grid-cols-1 gap-[48px] max-[768px]:gap-[32px] items-start mt-[64px] max-[640px]:mt-[40px]">
+        <div data-reveal>
+          <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">
+            One agency for the whole Weibo playbook
+          </h2>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[#1A1A1A] max-w-[560px]">
             <p>
               Weibo has 567 million monthly active users and 252 million daily active users (May 2026). It's where trends start, news breaks, and Chinese consumers research brands before they buy.
             </p>
@@ -261,15 +376,17 @@ const pageSchemas = [
             </p>
           </div>
         </div>
-        <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+        <div class="bg-[#F7F2EE] rounded-[10px] p-[28px] max-[640px]:p-[20px]" data-reveal style="--d: 120ms">
           <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
             Scope at a glance
           </p>
-          <ul class="flex flex-col gap-[12px] list-none m-0 p-0">
-            {scopeItems.map((item) => (
-              <li class="flex items-start gap-[10px]">
-                <svg class="shrink-0 mt-[3px]" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
-                <a href={item.href} class="text-[14px] font-normal leading-[1.5] text-[#1A1A1A] hover:text-[#CC3333] transition-colors duration-150">{item.label}</a>
+          <ul class="flex flex-col list-none m-0 p-0">
+            {scopeItems.map((item, i) => (
+              <li class:list={[i > 0 && 'border-t border-[#E8E0D8]']}>
+                <a href={item.href} class="group flex items-center justify-between gap-[12px] py-[14px] no-underline">
+                  <span class="text-[14px] font-normal leading-[1.5] text-[#1A1A1A] group-hover:text-[#CC3333] transition-colors duration-150">{item.label}</span>
+                  <span class="scope-arrow text-[14px] text-[#CC3333]" aria-hidden="true">&rarr;</span>
+                </a>
               </li>
             ))}
           </ul>
@@ -278,208 +395,138 @@ const pageSchemas = [
     </Container>
   </section>
 
-  <!-- Our Weibo agency services -->
-  <section class="mt-[96px] max-[640px]:mt-[64px]">
+  <!-- ============ SERVICES (rice-paper band, sticky scrollytelling) ============ -->
+  <section class="mt-[128px] max-[640px]:mt-[72px] w-full bg-[#F7F2EE] py-[96px] max-[640px]:py-[56px]">
     <Container>
-      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
-        <div class="flex justify-center mb-[12px]">
-          <SectionBar />
-        </div>
-        <SectionHeading overline="Our Weibo agency services">
-          Six services. Each with a clear deliverable.
-        </SectionHeading>
-      </div>
-
-      <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
-        {services.map((service) => (
-          <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-            <p class="text-[12px] font-medium text-[#CC3333] leading-none mb-[8px]">{service.number}</p>
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">{service.title}</h3>
-            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5]">{service.description}</p>
-          </div>
-        ))}
-      </div>
-
-      <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px] mt-[16px]">
-        <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] max-w-[680px]">
-          <span class="text-[#1A1A1A] font-medium">Need more than Weibo?</span> We also grow brands on <a href="/platforms/wechat/" class="text-[#CC3333] hover:underline">WeChat</a>, <a href="/platforms/rednote/" class="text-[#CC3333] hover:underline">RedNote</a>, <a href="/platforms/douyin/" class="text-[#CC3333] hover:underline">Douyin</a>, and <a href="/platforms/others/" class="text-[#CC3333] hover:underline">14 more platforms</a>. One team, one strategy, one report.
-        </p>
-      </div>
-    </Container>
-  </section>
-
-  <!-- Who we help -->
-  <section class="mt-[96px] max-[640px]:mt-[64px]">
-    <Container>
-      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
-        <div class="flex justify-center mb-[12px]">
-          <SectionBar />
-        </div>
-        <SectionHeading overline="Who we help">
-          Built for brands entering or growing in China
-        </SectionHeading>
-      </div>
-
-      <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
-        {segments.map((segment) => (
-          <div class="bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[8px] p-[24px] max-[640px]:p-[20px] transition-colors duration-150 hover:border-[rgba(0,0,0,0.15)]">
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">{segment.title}</h3>
-            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5]">{segment.description}</p>
-          </div>
-        ))}
-      </div>
-
-      <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px] mt-[16px]">
-        <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] max-w-[680px]">
-          <span class="text-[#1A1A1A] font-medium">No China presence yet? That's fine.</span> An overseas business registration is enough to open and verify a Weibo account. If you're starting from zero, our <a href="/services/market-entry/" class="text-[#CC3333] hover:underline">China market entry service</a> covers registration, setup, and localization.
-        </p>
-      </div>
-    </Container>
-  </section>
-
-  <!-- Why TheRedScroll -->
-  <section class="mt-[96px] max-[640px]:mt-[64px]">
-    <Container>
-      <div class="grid grid-cols-[340px_1fr] max-[1024px]:grid-cols-[280px_1fr] max-[768px]:grid-cols-1 gap-[48px] max-[768px]:gap-[32px]">
+      <div class="grid grid-cols-[1fr_1fr] max-[900px]:grid-cols-1 gap-[64px] max-[1024px]:gap-[40px]" data-svc>
+        <!-- Sticky header + media panel -->
         <div>
-          <div class="sticky top-[84px] max-[640px]:static">
-            <SectionBar />
-            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">Why TheRedScroll</p>
-            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">
-              We analyzed 37 China marketing agencies. 0 out of 37 offer fixed-price packages.
-            </h2>
-            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
-              100% quote custom prices with unclear deliverables. Fewer than 3 out of 37 use AI for content production. We do things differently. (TheRedScroll competitive analysis, April 2026.)
-            </p>
+          <div class="sticky top-[104px] max-[900px]:static">
+            <div class="mb-[32px] max-[900px]:mb-[8px]" data-reveal>
+              <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Our Weibo marketing services</p>
+              <h2 class="text-[32px] max-[640px]:text-[24px] font-medium leading-[1.15] tracking-[-0.01em] text-[#1A1A1A] mb-[12px]">
+                Six services. Each with a clear deliverable.
+              </h2>
+              <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] max-w-[420px] m-0">
+                Everything is listed in your scope of work before you sign. No vague retainers.
+              </p>
+            </div>
+            <div class="svc-frame relative max-[900px]:hidden">
+              <div class="relative w-full aspect-[1344/570] rounded-[10px] overflow-hidden bg-[#FFFFFF]">
+                {services.map((service, i) => (
+                  <img
+                    src={service.image}
+                    alt={service.imageAlt}
+                    width="1344"
+                    height="570"
+                    loading={i === 0 ? 'eager' : 'lazy'}
+                    class:list={['svc-img absolute inset-0 w-full h-full object-cover', i === 0 && 'is-active']}
+                    data-svc-img={i}
+                  />
+                ))}
+              </div>
+            </div>
+            <div class="flex items-center gap-[16px] mt-[24px] max-[900px]:hidden">
+              <div class="flex gap-[6px] grow" aria-hidden="true">
+                {services.map((_, i) => (
+                  <span class:list={['svc-tick', i === 0 && 'is-active']} data-svc-tick={i}></span>
+                ))}
+              </div>
+              <p class="text-[13px] text-[#5C5C5C] font-normal leading-none m-0 shrink-0" data-svc-caption aria-hidden="true">{services[0].title}</p>
+            </div>
           </div>
         </div>
-        <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
-          {pillars.map((pillar) => (
-            <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-              <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">{pillar.title}</h3>
-              <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5]">{pillar.description}</p>
+
+        <!-- Scrolling step cards -->
+        <div class="flex flex-col gap-[16px]">
+          {services.map((service, i) => (
+            <div class:list={['svc-step bg-[#FFFFFF] rounded-[10px] p-[32px] max-[640px]:p-[20px]', i === 0 && 'is-active']} data-svc-step={i}>
+              <div class="flex items-center gap-[12px] mb-[16px]">
+                <span class="svc-seal" aria-hidden="true">{service.glyph}</span>
+                <span class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333]">{service.tag}</span>
+              </div>
+              <h3 class="text-[22px] max-[640px]:text-[19px] font-medium leading-[1.25] text-[#1A1A1A] mb-[10px]">{service.title}</h3>
+              <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.65] max-w-[480px] mb-[16px]">{service.description}</p>
+              <ul class="flex flex-wrap gap-[8px] list-none m-0 p-0" aria-label={`${service.title}: deliverables`}>
+                {service.deliverables.map((d) => (
+                  <li class="text-[12px] font-normal leading-none text-[#1A1A1A] bg-[#F7F2EE] border-[0.5px] border-[#E8E0D8] rounded-[6px] px-[10px] py-[7px]">{d}</li>
+                ))}
+              </ul>
+              <img
+                src={service.image}
+                alt={service.imageAlt}
+                width="1344"
+                height="570"
+                loading="lazy"
+                class="hidden max-[900px]:block w-full h-auto rounded-[8px] mt-[16px]"
+              />
             </div>
           ))}
-        </div>
-      </div>
-    </Container>
-  </section>
-
-  <!-- Our process -->
-  <section class="mt-[96px] max-[640px]:mt-[64px]">
-    <Container>
-      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
-        <div class="flex justify-center mb-[12px]">
-          <SectionBar />
-        </div>
-        <SectionHeading overline="Our Weibo marketing process">
-          From first call to first post in 2 weeks
-        </SectionHeading>
-        <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] max-w-[680px] mx-auto mt-[8px]">
-          Six stages, each with a timeline. Verification runs in the background while everything else moves.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
-        {steps.map((step) => (
-          <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-            <p class="text-[12px] font-medium text-[#CC3333] leading-none mb-[8px]">{step.number}</p>
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">{step.title}</h3>
-            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">{step.description}</p>
+          <div class="py-[16px] flex items-center justify-between gap-[16px] flex-wrap" data-reveal>
+            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] m-0 max-w-[420px]">
+              <span class="text-[#1A1A1A] font-medium">Need more than Weibo?</span> We also grow brands on WeChat, RedNote, Douyin, and 14 more platforms.
+            </p>
+            <a href="/platforms/others/" class="text-[14px] text-[#CC3333] font-medium shrink-0 hover:underline">All platforms &rarr;</a>
           </div>
-        ))}
-      </div>
-
-      <div class="text-center mt-[40px]">
-        <Button variant="primary" href="/contact/">Book a call</Button>
+        </div>
       </div>
     </Container>
   </section>
 
-  <!-- Weibo vs other platforms -->
-  <section class="mt-[96px] max-[640px]:mt-[64px]">
+  <!-- ============ PLATFORM FIT ============ -->
+  <section class="mt-[128px] max-[640px]:mt-[72px]">
     <Container>
-      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
-        <div class="flex justify-center mb-[12px]">
-          <SectionBar />
-        </div>
-        <SectionHeading overline="Weibo vs other Chinese platforms">
-          Where Weibo fits next to WeChat, RedNote, and Douyin
-        </SectionHeading>
-        <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] max-w-[680px] mx-auto mt-[8px]">
+      <div class="mb-[40px] max-[640px]:mb-[24px] max-w-[680px]" data-reveal>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Where Weibo fits</p>
+        <h2 class="text-[36px] max-[640px]:text-[24px] font-medium leading-[1.15] tracking-[-0.01em] text-[#1A1A1A] mb-[8px]">
+          Weibo next to WeChat, RedNote, and Douyin
+        </h2>
+        <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
           Each platform does a different job. Weibo is the only one built for open, national-scale conversation.
         </p>
       </div>
 
-      <div class="overflow-x-auto">
-        <table class="w-full min-w-[720px] border-collapse text-left">
-          <thead>
-            <tr class="border-b border-[rgba(0,0,0,0.15)]">
-              <th class="py-[14px] pr-[16px] text-[11px] font-medium uppercase tracking-[0.05em] text-[#5C5C5C]">Platform</th>
-              <th class="py-[14px] pr-[16px] text-[11px] font-medium uppercase tracking-[0.05em] text-[#5C5C5C]">Best for</th>
-              <th class="py-[14px] pr-[16px] text-[11px] font-medium uppercase tracking-[0.05em] text-[#5C5C5C]">Content style</th>
-              <th class="py-[14px] text-[11px] font-medium uppercase tracking-[0.05em] text-[#5C5C5C]">Start here if</th>
-            </tr>
-          </thead>
-          <tbody>
-            {platformRows.map((row) => (
-              <tr class="border-b border-[rgba(0,0,0,0.08)]">
-                <td class="py-[16px] pr-[16px] align-top">
-                  <a href={row.href} class="text-[14px] font-medium text-[#CC3333] hover:underline">{row.platform}</a>
-                </td>
-                <td class="py-[16px] pr-[16px] align-top text-[14px] text-[#1A1A1A] font-normal leading-[1.5]">{row.bestFor}</td>
-                <td class="py-[16px] pr-[16px] align-top text-[14px] text-[#5C5C5C] font-normal leading-[1.5]">{row.style}</td>
-                <td class="py-[16px] align-top text-[14px] text-[#5C5C5C] font-normal leading-[1.5]">{row.startIf}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+      <div class="bg-[#F7F2EE] rounded-[10px] p-[32px] max-[640px]:p-[20px]" data-reveal>
+        <div class="grid grid-cols-[140px_1fr_1.1fr_1.1fr] gap-[24px] pb-[14px] max-[768px]:hidden" aria-hidden="true">
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#5C5C5C] m-0">Platform</p>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#5C5C5C] m-0">Best for</p>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#5C5C5C] m-0">Style</p>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#5C5C5C] m-0">Start here if</p>
+        </div>
+        {platformRows.map((row) => (
+          <div class="grid grid-cols-[140px_1fr_1.1fr_1.1fr] max-[768px]:grid-cols-1 gap-[24px] max-[768px]:gap-[8px] py-[18px] max-[768px]:py-[20px] border-t border-[#E8E0D8]">
+            <p class="m-0">
+              <a href={row.href} class="text-[16px] font-medium leading-[1.4] text-[#1A1A1A] hover:text-[#CC3333] transition-colors duration-150 no-underline">{row.platform}</a>
+            </p>
+            <p class="m-0 text-[14px] text-[#1A1A1A] font-normal leading-[1.5]">
+              <span class="hidden max-[768px]:block text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#5C5C5C] mb-[2px]">Best for</span>
+              {row.bestFor}
+            </p>
+            <p class="m-0 text-[14px] text-[#5C5C5C] font-normal leading-[1.5]">
+              <span class="hidden max-[768px]:block text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#5C5C5C] mb-[2px]">Style</span>
+              {row.style}
+            </p>
+            <p class="m-0 text-[14px] text-[#5C5C5C] font-normal leading-[1.5]">
+              <span class="hidden max-[768px]:block text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#5C5C5C] mb-[2px]">Start here if</span>
+              {row.startIf}
+            </p>
+          </div>
+        ))}
       </div>
 
-      <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] mt-[24px] max-w-[680px] mx-auto text-center">
+      <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] mt-[24px] max-w-[680px]" data-reveal>
         Most brands don't pick one. A common sequence: Weibo for awareness, RedNote for product research, WeChat for retention. We run all of them under one scope of work.
       </p>
     </Container>
   </section>
 
-  <!-- Weibo advertising options -->
-  <section class="mt-[96px] max-[640px]:mt-[64px]">
+  <!-- ============ CASE STUDIES ============ -->
+  <section id="results" class="mt-[128px] max-[640px]:mt-[72px] scroll-mt-[80px]">
     <Container>
-      <div class="max-w-[680px]">
-        <SectionBar />
-        <SectionHeading overline="Weibo advertising options">
-          Weibo ad formats, without the mystery
-        </SectionHeading>
-        <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[#1A1A1A] mt-[16px]">
-          <p>
-            <span class="font-medium">Fan Headlines (粉丝头条).</span> Pins a post to the top of your followers' feeds. The cheapest way to make sure your best content actually gets seen. Good for testing what resonates.
-          </p>
-          <p>
-            <span class="font-medium">Fan Tunnel (粉丝通).</span> Weibo's main performance ad system. Puts your posts in front of non-followers, targeted by demographics, interests, behavior, and lookalike audiences.
-          </p>
-          <p>
-            <span class="font-medium">Display, splash, and search.</span> In-feed display units, full-screen splash ads on app open, search promotion, and hashtag promotion. Premium placements around Hot Search carry premium prices.
-          </p>
-          <p>
-            <span class="font-medium">How billing works.</span> Ad spend goes to Weibo, not to us. It's billed at cost with no markup, and every number shows up in your monthly report with CPM, CPC, CPA, and ROAS.
-          </p>
-        </div>
-        <div class="bg-[#F7F2EE] border-l-[3px] border-[#CC3333] p-[20px] mt-[32px]">
-          <p class="text-[16px] font-normal leading-[1.6] text-[#1A1A1A] m-0">
-            A useful rule: don't buy Fan Tunnel reach until your feed has content worth landing on. Followers gained from ads unfollow within weeks if the account looks empty.
-          </p>
-        </div>
-      </div>
-    </Container>
-  </section>
-
-  <!-- Case studies -->
-  <section class="mt-[96px] max-[640px]:mt-[64px]">
-    <Container>
-      <div class="flex items-end justify-between gap-[32px] max-[640px]:flex-col max-[640px]:items-start max-[640px]:gap-[16px] mb-[32px]">
+      <div class="flex items-end justify-between gap-[32px] max-[640px]:flex-col max-[640px]:items-start max-[640px]:gap-[16px] mb-[40px] max-[640px]:mb-[24px]" data-reveal>
         <div class="max-w-[560px]">
-          <SectionBar />
-          <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[8px]">
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Case studies</p>
+          <h2 class="text-[36px] max-[640px]:text-[24px] font-medium leading-[1.15] tracking-[-0.01em] text-[#1A1A1A] mb-[8px]">
             Results from the ground
           </h2>
           <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
@@ -490,26 +537,184 @@ const pageSchemas = [
       </div>
 
       <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[24px] max-[640px]:gap-[16px]">
-        {caseStudies.map((cs) => (
-          <a href={cs.href} class="bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[8px] p-[24px] max-[640px]:p-[20px] block no-underline transition-colors duration-150 hover:border-[rgba(0,0,0,0.15)]">
-            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">Case study</p>
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">{cs.client}</h3>
-            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] mb-[12px]">{cs.summary}</p>
-            <span class="text-[14px] text-[#CC3333] font-medium">Read the case study &rarr;</span>
+        {caseStudies.map((cs, i) => (
+          <a href={cs.href} class="cs-card group bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[8px] overflow-hidden flex flex-col no-underline" data-reveal style={`--d: ${i * 100}ms`}>
+            <div class="overflow-hidden relative">
+              <img
+                src={cs.image}
+                alt={cs.imageAlt}
+                width="800"
+                height="450"
+                loading="lazy"
+                class="cs-img w-full h-[200px] max-[640px]:h-[180px] object-cover block"
+              />
+            </div>
+            <div class="p-[28px] max-[640px]:p-[20px] flex flex-col grow">
+              <p class="text-[40px] max-[640px]:text-[32px] font-medium leading-none text-[#1A1A1A] mb-[4px] tabular-nums">{cs.metric}</p>
+              <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.4] mb-[20px]">{cs.metricLabel}</p>
+              <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">{cs.client}</h3>
+              <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] mb-[20px]">{cs.summary}</p>
+              <span class="text-[14px] text-[#CC3333] font-medium mt-auto inline-flex items-center gap-[6px]">Read the case study <span class="cs-arrow" aria-hidden="true">&rarr;</span></span>
+            </div>
           </a>
         ))}
       </div>
     </Container>
   </section>
 
-  <!-- FAQ -->
-  <section class="mt-[96px] max-[640px]:mt-[64px]">
+  <!-- ============ WHO WE HELP ============ -->
+  <section class="mt-[128px] max-[640px]:mt-[72px]">
+    <Container>
+      <div class="mb-[40px] max-[640px]:mb-[24px] max-w-[680px]" data-reveal>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Who we help</p>
+        <h2 class="text-[36px] max-[640px]:text-[24px] font-medium leading-[1.15] tracking-[-0.01em] text-[#1A1A1A]">
+          Built for brands that need China to know their name
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        {segments.map((segment, i) => (
+          <div class="lift-card bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[8px] p-[24px] max-[640px]:p-[20px]" data-reveal style={`--d: ${i * 80}ms`}>
+            <svg class="mb-[16px]" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" set:html={segment.icon} />
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">{segment.title}</h3>
+            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5]">{segment.description}</p>
+          </div>
+        ))}
+      </div>
+
+      <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px] mt-[16px]" data-reveal>
+        <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] max-w-[680px]">
+          <span class="text-[#1A1A1A] font-medium">No China presence yet? That's fine.</span> An overseas business registration is enough to open and verify a Weibo account. If you're starting from zero, our <a href="/services/market-entry/" class="text-[#CC3333] hover:underline">China market entry service</a> covers registration, setup, and localization.
+        </p>
+      </div>
+    </Container>
+  </section>
+
+  <!-- ============ WHY US ============ -->
+  <section class="mt-[128px] max-[640px]:mt-[72px]">
+    <Container>
+      <div class="bg-[#F7F2EE] rounded-[10px] p-[48px] max-[1024px]:p-[32px] max-[640px]:p-[20px]">
+        <div class="grid grid-cols-[300px_1fr] max-[900px]:grid-cols-1 gap-[48px] max-[900px]:gap-[24px]">
+          <div data-reveal>
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Why TheRedScroll</p>
+            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">
+              Four reasons brands choose us
+            </h2>
+            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] m-0">
+              We analyzed 37 China marketing agencies in April 2026. 0 out of 37 offer fixed-price packages. 100% quote custom prices with unclear deliverables. We do things differently.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-x-[40px] gap-y-[32px] max-[640px]:gap-y-[24px]">
+            {pillars.map((pillar, i) => (
+              <div class="pillar-card" data-reveal style={`--d: ${i * 80}ms`}>
+                <span class="pillar-bar block w-[24px] h-[3px] bg-[#CC3333] mb-[14px]" aria-hidden="true"></span>
+                <h3 class="text-[17px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">{pillar.title}</h3>
+                <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] m-0">{pillar.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- ============ PROCESS (drawn line, no numbers) ============ -->
+  <section class="mt-[128px] max-[640px]:mt-[72px]">
+    <Container>
+      <div class="text-center mb-[56px] max-[640px]:mb-[32px]" data-reveal>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Our process</p>
+        <h2 class="text-[36px] max-[640px]:text-[24px] font-medium leading-[1.15] tracking-[-0.01em] text-[#1A1A1A]">
+          From first call to first post in 2 weeks
+        </h2>
+        <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] max-w-[680px] mx-auto mt-[12px]">
+          Six stages, each with a timeline. Verification runs in the background while everything else moves.
+        </p>
+      </div>
+
+      <div class="proc relative" data-proc>
+        <span class="proc-rail absolute top-[5px] left-0 right-0 h-[2px] bg-[#E8E0D8] max-[1024px]:hidden" aria-hidden="true"></span>
+        <span class="proc-fill absolute top-[5px] left-0 h-[2px] bg-[#CC3333] max-[1024px]:hidden" aria-hidden="true" data-proc-fill></span>
+        <div class="grid grid-cols-6 max-[1024px]:grid-cols-3 max-[640px]:grid-cols-1 gap-[40px] max-[1024px]:gap-[28px]">
+          {steps.map((step, i) => (
+            <div class="relative" data-reveal style={`--d: ${i * 140}ms`}>
+              <span class="proc-dot block w-[12px] h-[12px] rounded-full bg-[#CC3333] mb-[20px] max-[768px]:mb-[12px] relative z-[1]" aria-hidden="true"></span>
+              <h3 class="text-[20px] max-[640px]:text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">{step.title}</h3>
+              <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] max-w-[320px]">{step.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div class="text-center mt-[48px] max-[640px]:mt-[32px]" data-reveal>
+        <Button variant="primary" href="/contact/">Book a call</Button>
+      </div>
+    </Container>
+  </section>
+
+  <!-- ============ BUDGET TRANSPARENCY ============ -->
+  <section class="mt-[128px] max-[640px]:mt-[72px]">
+    <Container>
+      <div class="mb-[40px] max-[640px]:mb-[24px] max-w-[680px]" data-reveal>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">What to budget</p>
+        <h2 class="text-[36px] max-[640px]:text-[24px] font-medium leading-[1.15] tracking-[-0.01em] text-[#1A1A1A] mb-[8px]">
+          Weibo costs, without the mystery
+        </h2>
+        <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
+          Two budgets matter: what you pay the agency and what you pay Weibo. Most agencies blur the two. We keep them separate.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 max-[768px]:grid-cols-1 gap-[16px]">
+        <div class="bg-[#F7F2EE] rounded-[10px] p-[32px] max-[640px]:p-[20px]" data-reveal>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Paid to us</p>
+          <h3 class="text-[20px] font-medium leading-[1.3] text-[#1A1A1A] mb-[16px]">Agency fees</h3>
+          <ul class="flex flex-col gap-[10px] list-none m-0 p-0">
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>One fixed monthly price against a clear scope of work</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Every deliverable listed before you sign</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>No hourly billing, no scope creep charges</li>
+          </ul>
+        </div>
+        <div class="bg-[#F7F2EE] rounded-[10px] p-[32px] max-[640px]:p-[20px]" data-reveal style="--d: 120ms">
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Paid to Weibo</p>
+          <h3 class="text-[20px] font-medium leading-[1.3] text-[#1A1A1A] mb-[16px]">Platform and ad spend</h3>
+          <ul class="flex flex-col gap-[10px] list-none m-0 p-0">
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>A one-time $1,000 Blue V verification fee</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Fan Headlines at the low-cost entry point, Hot Search at the premium end</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Ad spend billed at cost, no markup, every number in your monthly report</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-[#F7F2EE] rounded-[10px] p-[32px] max-[640px]:p-[20px] mt-[16px]" data-reveal>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">Where the ad money goes</p>
+        <div class="flex flex-col gap-[12px] text-[14px] text-[#5C5C5C] font-normal leading-[1.6] max-w-[680px]">
+          <p class="m-0">
+            <span class="text-[#1A1A1A] font-medium">Fan Headlines (粉丝头条).</span> Pins a post to the top of your followers' feeds. The cheapest way to make sure your best content actually gets seen. Good for testing what resonates.
+          </p>
+          <p class="m-0">
+            <span class="text-[#1A1A1A] font-medium">Fan Tunnel (粉丝通).</span> Weibo's main performance ad system. Puts your posts in front of non-followers, targeted by demographics, interests, behavior, and lookalike audiences. Don't buy Fan Tunnel reach until your feed has content worth landing on.
+          </p>
+          <p class="m-0">
+            <span class="text-[#1A1A1A] font-medium">Display, splash, and search.</span> In-feed display units, full-screen splash ads on app open, search promotion, and hashtag promotion. Premium placements around Hot Search carry premium prices.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-[#F7F2EE] border-l-[3px] border-[#CC3333] p-[20px] mt-[16px]" data-reveal>
+        <p class="text-[16px] font-normal leading-[1.6] text-[#1A1A1A] m-0">
+          A strong verified presence builds trust. No presence raises red flags. Chinese consumers search brand names on Weibo before they buy.
+        </p>
+      </div>
+    </Container>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="mt-[128px] max-[640px]:mt-[72px]">
     <Container>
       <div class="grid grid-cols-[340px_1fr] max-[1024px]:grid-cols-[280px_1fr] max-[768px]:grid-cols-1 gap-[48px] max-[768px]:gap-[32px]">
         <div>
-          <div class="sticky top-[84px] max-[640px]:static">
-            <SectionBar />
-            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">FAQ</p>
+          <div class="sticky top-[104px] max-[768px]:static" data-reveal>
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">FAQ</p>
             <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">
               Questions brands ask before hiring a Weibo agency
             </h2>
@@ -519,22 +724,24 @@ const pageSchemas = [
           </div>
         </div>
 
-        <div>
+        <div data-reveal style="--d: 120ms">
           {faqs.map((faq) => (
             <div class="border-b border-[rgba(0,0,0,0.08)]" data-faq>
-              <button
-                class="w-full flex items-center justify-between py-[20px] text-left bg-transparent border-none cursor-pointer group"
-                data-faq-trigger
-                aria-expanded="false"
-              >
-                <h3 class="text-[16px] font-medium leading-[1.3] text-[#1A1A1A] group-hover:text-[#5C5C5C] transition-colors duration-150 pr-[16px]">{faq.q}</h3>
-                <svg class="w-[16px] h-[16px] shrink-0 text-[#5C5C5C] transition-transform duration-300 faq-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M4 6l4 4 4-4"/>
-                </svg>
-              </button>
+              <h3 class="m-0">
+                <button
+                  class="faq-trigger w-full flex items-center justify-between py-[20px] text-left bg-transparent border-none cursor-pointer group"
+                  data-faq-trigger
+                  aria-expanded="false"
+                >
+                  <span class="text-[16px] font-medium leading-[1.4] text-[#1A1A1A] group-hover:text-[#CC3333] transition-colors duration-150 pr-[16px]">{faq.q}</span>
+                  <svg class="w-[16px] h-[16px] shrink-0 text-[#5C5C5C] transition-transform duration-300 faq-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 6l4 4 4-4"/>
+                  </svg>
+                </button>
+              </h3>
               <div class="faq-content overflow-hidden" style="height: 0; opacity: 0;">
                 <div class="pb-[20px]">
-                  <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
+                  <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] max-w-[620px]">
                     {faq.a}
                   </p>
                 </div>
@@ -546,27 +753,33 @@ const pageSchemas = [
     </Container>
   </section>
 
-  <!-- CTA: dark section (the one allowed per page) -->
-  <section class="mt-[96px] max-[640px]:mt-[64px] mb-[96px] max-[640px]:mb-[64px]">
-    <Container>
-      <div class="bg-[#1A1A1A] rounded-[12px] py-[48px] px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] max-[640px]:py-[32px] text-center">
-        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">
-          Start your Weibo strategy
+  <!-- ============ FINAL CTA (ink bookend, full bleed) ============ -->
+  <section class="mt-[128px] max-[640px]:mt-[72px] w-full bg-[#1A1A1A] border-b border-[rgba(255,255,255,0.1)] relative overflow-hidden">
+    <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[200px] max-[640px]:text-[90px] font-medium text-[#FFFFFF] opacity-[0.03] pointer-events-none select-none whitespace-nowrap" aria-hidden="true">
+      微博
+    </span>
+    <Container class="relative z-[1]">
+      <div class="py-[96px] max-[640px]:py-[56px] text-center">
+        <p class="flex items-center justify-center gap-[10px] mb-[20px]" data-reveal>
+          <span class="seal" aria-hidden="true">博</span>
+          <span class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333]">Start your Weibo strategy</span>
         </p>
-        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[8px]">
-          252 million people open Weibo every day. Your brand should be there.
+        <h2 class="text-[40px] max-[640px]:text-[26px] font-medium leading-[1.15] tracking-[-0.01em] text-[#FFFFFF] max-w-[720px] mx-auto mb-[16px]" data-reveal style="--d: 80ms">
+          China's conversation is happening on Weibo today. Join it as a verified brand.
         </h2>
-        <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[560px] mx-auto mb-[24px]">
+        <p class="text-[15px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[520px] mx-auto mb-[32px]" data-reveal style="--d: 160ms">
           A 30-minute call. We'll tell you what your brand can do on Weibo with your current setup, and what it would take. No pitch deck.
         </p>
-        <Button variant="primary" href="/contact/">Book a call</Button>
+        <div data-reveal style="--d: 240ms">
+          <Button variant="primary" href="/contact/">Book a call</Button>
+        </div>
 
-        <div class="mt-[40px] pt-[24px] border-t border-[rgba(255,255,255,0.1)]">
+        <div class="mt-[56px] pt-[24px] border-t border-[rgba(255,255,255,0.1)]" data-reveal style="--d: 300ms">
           <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal mb-[12px]">See also</p>
           <div class="flex justify-center gap-[24px] flex-wrap">
             <a href="/platforms/weibo/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Weibo marketing &rarr;</a>
-            <a href="/wechat-agency/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">WeChat agency &rarr;</a>
             <a href="/services/market-entry/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">China market entry &rarr;</a>
+            <a href="/platforms/wechat/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">WeChat marketing &rarr;</a>
             <a href="/platforms/rednote/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">RedNote marketing &rarr;</a>
             <a href="/platforms/douyin/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Douyin marketing &rarr;</a>
           </div>
@@ -576,13 +789,472 @@ const pageSchemas = [
   </section>
 
   <style>
+    /* ---------- Signature: the red thread ---------- */
+    .red-thread {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: #CC3333;
+      transform: scaleX(0);
+      transform-origin: left;
+      z-index: 1100;
+      pointer-events: none;
+    }
+
+    /* ---------- Seal mark ---------- */
+    .seal {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      border: 1.5px solid #CC3333;
+      border-radius: 4px;
+      color: #CC3333;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 1;
+    }
+
+    /* ---------- Hero ---------- */
+    .hero-title {
+      font-size: clamp(40px, 5.4vw, 72px);
+      font-weight: 500;
+      line-height: 1.06;
+      letter-spacing: -0.025em;
+    }
+    .hero-float {
+      animation: heroFloat 7s ease-in-out infinite alternate;
+    }
+    @keyframes heroFloat {
+      from { transform: translateY(0); }
+      to { transform: translateY(-10px); }
+    }
+    [data-hero-reveal] {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+      transition-delay: var(--d, 0ms);
+    }
+    [data-hero-reveal].is-in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ---------- Manifesto ---------- */
+    .manifesto {
+      font-size: clamp(18px, 1.9vw, 24px);
+      font-weight: 500;
+      line-height: 1.4;
+      letter-spacing: -0.01em;
+      color: #1A1A1A;
+      margin: 0;
+    }
+    .manifesto .w {
+      opacity: 0.12;
+      transition: opacity 0.3s ease;
+    }
+    .manifesto .w.is-on {
+      opacity: 1;
+    }
+    .manifesto-hl {
+      color: #CC3333;
+    }
+
+    /* ---------- Scroll reveal ---------- */
+    [data-reveal] {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+      transition-delay: var(--d, 0ms);
+    }
+    [data-reveal].is-in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ---------- Scope arrows ---------- */
+    .scope-arrow {
+      opacity: 0;
+      transform: translateX(-6px);
+      transition: opacity 0.15s ease, transform 0.15s ease;
+    }
+    a:hover .scope-arrow,
+    a:focus-visible .scope-arrow {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* ---------- Services scrollytelling ---------- */
+    /* Print-offset frame: a vermillion outline registered slightly off the media card */
+    .svc-frame {
+      isolation: isolate;
+    }
+    .svc-frame::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border: 1.5px solid #CC3333;
+      border-radius: 10px;
+      transform: translate(10px, 10px);
+      z-index: -1;
+      pointer-events: none;
+    }
+    .svc-img {
+      opacity: 0;
+      transform: scale(1);
+      transition: opacity 0.45s ease, transform 6s ease;
+    }
+    .svc-img.is-active {
+      opacity: 1;
+      transform: scale(1.04);
+    }
+    .svc-tick {
+      display: block;
+      height: 3px;
+      flex: 1;
+      background: #E8E0D8;
+      transition: background 0.3s ease;
+    }
+    .svc-tick.is-active {
+      background: #CC3333;
+    }
+    .svc-seal {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border: 1.5px solid #CC3333;
+      border-radius: 6px;
+      color: #CC3333;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    .svc-step {
+      border: 0.5px solid rgba(0, 0, 0, 0.08);
+      transition: opacity 0.3s ease, border-color 0.3s ease;
+    }
+    @media (min-width: 901px) {
+      .svc-step { opacity: 0.45; }
+      .svc-step.is-active { opacity: 1; border-color: rgba(0, 0, 0, 0.15); }
+      .svc-step.is-active .svc-seal { background: #CC3333; color: #FFFFFF; }
+    }
+
+    /* ---------- Cards ---------- */
+    .lift-card {
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    .lift-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(0, 0, 0, 0.15);
+    }
+    .cs-card {
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    .cs-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(0, 0, 0, 0.15);
+    }
+    .cs-arrow {
+      display: inline-block;
+      transition: transform 0.2s ease;
+    }
+    .cs-card:hover .cs-arrow {
+      transform: translateX(4px);
+    }
+    .cs-img {
+      transition: transform 0.3s ease;
+    }
+    .cs-card:hover .cs-img {
+      transform: scale(1.03);
+    }
+    .pillar-bar {
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+    .pillar-card:hover .pillar-bar {
+      transform: scaleX(1.75);
+    }
+
+    /* ---------- Process line ---------- */
+    .proc-fill {
+      width: 0;
+      transition: width 1.2s ease;
+    }
+    .proc.is-in .proc-fill {
+      width: 100%;
+    }
+
+    /* ---------- FAQ ---------- */
     .faq-content {
       transition: height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+    }
+
+    /* ---------- Quality floor: focus + smooth scroll ---------- */
+    .cs-card:focus-visible,
+    .faq-trigger:focus-visible {
+      outline: 2px solid #CC3333;
+      outline-offset: 2px;
+    }
+    :global(html) {
+      scroll-behavior: smooth;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      :global(html) {
+        scroll-behavior: auto;
+      }
+    }
+
+    /* ---------- Reduced motion ---------- */
+    @media (prefers-reduced-motion: reduce) {
+      [data-hero-reveal],
+      [data-reveal] {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+      }
+      .hero-float {
+        animation: none;
+      }
+      .manifesto .w {
+        opacity: 1 !important;
+        transition: none;
+      }
+      .svc-step {
+        opacity: 1 !important;
+      }
+      .svc-img,
+      .svc-img.is-active {
+        transform: none;
+        transition: opacity 0.45s ease;
+      }
+      .proc-fill {
+        transition: none;
+      }
+      .proc .proc-fill {
+        width: 100%;
+      }
+      .lift-card:hover,
+      .cs-card:hover {
+        transform: none;
+      }
     }
   </style>
 
   <script>
-    // FAQ accordion
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // --- Hero load-in ---
+    requestAnimationFrame(() => {
+      document.querySelectorAll('[data-hero-reveal]').forEach((el) => el.classList.add('is-in'));
+    });
+
+    // --- The red thread: scroll progress ---
+    const thread = document.querySelector('[data-thread]') as HTMLElement | null;
+    if (thread) {
+      let threadTick = false;
+      const drawThread = () => {
+        const doc = document.documentElement;
+        const max = doc.scrollHeight - window.innerHeight;
+        const p = max > 0 ? Math.min(window.scrollY / max, 1) : 0;
+        thread.style.transform = `scaleX(${p})`;
+        threadTick = false;
+      };
+      window.addEventListener('scroll', () => {
+        if (!threadTick) {
+          threadTick = true;
+          requestAnimationFrame(drawThread);
+        }
+      }, { passive: true });
+      drawThread();
+    }
+
+    // --- Scroll reveal ---
+    const revealEls = document.querySelectorAll('[data-reveal]');
+    if (reducedMotion) {
+      revealEls.forEach((el) => el.classList.add('is-in'));
+    } else {
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-in');
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
+      );
+      revealEls.forEach((el) => revealObserver.observe(el));
+    }
+
+    // --- Count-up numbers ---
+    const formatCount = (value: number, decimals: number) =>
+      value.toLocaleString('en-US', { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
+
+    const animateCount = (el: HTMLElement) => {
+      const target = parseFloat(el.dataset.count || '0');
+      const decimals = parseInt(el.dataset.decimals || '0', 10);
+      if (reducedMotion) {
+        el.textContent = formatCount(target, decimals);
+        return;
+      }
+      const duration = 1400;
+      let t0: number | null = null;
+      const tick = (now: number) => {
+        if (t0 === null) t0 = now;
+        const p = Math.min((now - t0) / duration, 1);
+        const eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = formatCount(target * eased, decimals);
+        if (p < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    };
+
+    const countObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            animateCount(entry.target as HTMLElement);
+            countObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+    document.querySelectorAll('[data-count]').forEach((el) => countObserver.observe(el));
+
+    // --- Hero watermark parallax ---
+    const parallaxEls = Array.from(document.querySelectorAll('[data-parallax]')) as HTMLElement[];
+    if (!reducedMotion && parallaxEls.length) {
+      let ticking = false;
+      const applyParallax = () => {
+        const y = window.scrollY;
+        parallaxEls.forEach((el) => {
+          if (y < window.innerHeight * 1.2) {
+            const speed = parseFloat(el.dataset.parallax || '0');
+            el.style.transform = `translateY(${y * speed}px)`;
+          }
+        });
+        ticking = false;
+      };
+      window.addEventListener('scroll', () => {
+        if (!ticking) {
+          ticking = true;
+          requestAnimationFrame(applyParallax);
+        }
+      }, { passive: true });
+    }
+
+    // --- Manifesto: word-by-word reveal ---
+    const manifesto = document.querySelector('[data-manifesto]') as HTMLElement | null;
+    if (manifesto) {
+      // Wrap each word in a span, preserving the highlight span
+      const wrapWords = (node: Node) => {
+        if (node.nodeType === Node.TEXT_NODE) {
+          const frag = document.createDocumentFragment();
+          (node.textContent || '').split(/(\s+)/).forEach((part) => {
+            if (/^\s+$/.test(part) || part === '') {
+              frag.appendChild(document.createTextNode(part));
+            } else {
+              const span = document.createElement('span');
+              span.className = 'w';
+              span.textContent = part;
+              frag.appendChild(span);
+            }
+          });
+          node.parentNode?.replaceChild(frag, node);
+        } else if (node.nodeType === Node.ELEMENT_NODE) {
+          Array.from(node.childNodes).forEach(wrapWords);
+        }
+      };
+      Array.from(manifesto.childNodes).forEach(wrapWords);
+      const words = Array.from(manifesto.querySelectorAll('.w')) as HTMLElement[];
+
+      if (reducedMotion) {
+        words.forEach((w) => w.classList.add('is-on'));
+      } else {
+        let mTick = false;
+        const drawManifesto = () => {
+          const rect = manifesto.getBoundingClientRect();
+          const viewH = window.innerHeight;
+          // 0 when the block enters the lower third, 1 when its bottom passes the middle
+          const start = viewH * 0.85;
+          const end = viewH * 0.35;
+          const p = Math.min(Math.max((start - rect.top) / (start - end), 0), 1);
+          const active = Math.floor(p * words.length);
+          words.forEach((w, i) => w.classList.toggle('is-on', i < active));
+          mTick = false;
+        };
+        window.addEventListener('scroll', () => {
+          if (!mTick) {
+            mTick = true;
+            requestAnimationFrame(drawManifesto);
+          }
+        }, { passive: true });
+        drawManifesto();
+      }
+    }
+
+    // --- Services scrollytelling ---
+    const svcSteps = Array.from(document.querySelectorAll('[data-svc-step]')) as HTMLElement[];
+    const svcImgs = Array.from(document.querySelectorAll('[data-svc-img]')) as HTMLElement[];
+    const svcTicks = Array.from(document.querySelectorAll('[data-svc-tick]')) as HTMLElement[];
+    const svcCaption = document.querySelector('[data-svc-caption]') as HTMLElement | null;
+    if (svcSteps.length && svcImgs.length) {
+      const setActive = (index: string | undefined) => {
+        svcImgs.forEach((img) => img.classList.toggle('is-active', img.dataset.svcImg === index));
+        svcTicks.forEach((tick) => tick.classList.toggle('is-active', tick.dataset.svcTick === index));
+        svcSteps.forEach((step) => {
+          const on = step.dataset.svcStep === index;
+          step.classList.toggle('is-active', on);
+          if (on && svcCaption) {
+            const heading = step.querySelector('h3');
+            if (heading) svcCaption.textContent = heading.textContent;
+          }
+        });
+      };
+      setActive('0');
+      const stepObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              setActive((entry.target as HTMLElement).dataset.svcStep);
+            }
+          });
+        },
+        { rootMargin: '-45% 0px -45% 0px', threshold: 0 }
+      );
+      svcSteps.forEach((step) => stepObserver.observe(step));
+    }
+
+    // --- Process line draw ---
+    const proc = document.querySelector('[data-proc]') as HTMLElement | null;
+    if (proc) {
+      if (reducedMotion) {
+        proc.classList.add('is-in');
+      } else {
+        const procObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                proc.classList.add('is-in');
+                procObserver.unobserve(proc);
+              }
+            });
+          },
+          { threshold: 0.3 }
+        );
+        procObserver.observe(proc);
+      }
+    }
+
+    // --- FAQ accordion ---
     document.querySelectorAll('[data-faq]').forEach((item) => {
       const trigger = item.querySelector('[data-faq-trigger]') as HTMLButtonElement;
       const content = item.querySelector('.faq-content') as HTMLElement;

@@ -1,223 +1,225 @@
 ---
-import PageLayout from '../layouts/PageLayout.astro';
-import Container from '../components/ui/Container.astro';
-import Button from '../components/ui/Button.astro';
-import { faqPageSchema, serviceSchema } from '../lib/schema';
+import PageLayout from '../../layouts/PageLayout.astro';
+import Container from '../../components/ui/Container.astro';
+import Button from '../../components/ui/Button.astro';
 
 const heroStats = [
-  { value: 1.4, decimals: 1, suffix: 'B', label: 'monthly active users' },
-  { value: 945, decimals: 0, suffix: 'M', label: 'Mini Program users' },
-  { value: 18, decimals: 0, suffix: '', label: 'Chinese platforms covered' },
-  { value: 4, decimals: 0, suffix: ' weeks', label: 'from contract to first post' },
+  { value: 750, decimals: 0, suffix: ' Mio.', label: 'täglich aktive Nutzer' },
+  { value: 120, decimals: 0, suffix: ' Min.', label: 'durchschnittliche Nutzungsdauer pro Tag' },
+  { value: 3.5, decimals: 1, suffix: ' Bio.', label: 'RMB eCommerce-Umsatz pro Jahr' },
+  { value: 2, decimals: 0, suffix: ' Wochen', label: 'von der Unterschrift bis zum ersten Content' },
 ];
 
 const scopeItems = [
-  { label: 'Official Account setup and verification', href: '/platforms/wechat/' },
-  { label: 'Content written by native Chinese speakers', href: '/services/content-production/' },
-  { label: 'Moments Ads, Official Account Ads, Mini Program Ads', href: '/services/advertising/' },
-  { label: 'Mini Programs and WeChat e-commerce', href: '/platforms/wechat/' },
-  { label: 'WeCom CRM and private domain traffic', href: '/services/crm-private-domain/' },
+  { label: 'Konteneinrichtung und Blue-V-Verifizierung', href: '/de/platforms/douyin/' },
+  { label: 'Kurzvideo-Produktion von Mandarin-Muttersprachlern', href: '/de/services/content-production/' },
+  { label: 'KOL- und KOC-Kampagnen über Xingtu', href: '/de/services/influencer-marketing/' },
+  { label: 'Werbung über Ocean Engine', href: '/de/services/advertising/' },
+  { label: 'Livestream-Commerce und Douyin Shop', href: '/de/platforms/douyin/' },
 ];
 
 const services = [
   {
     glyph: '号',
-    title: 'Official Account setup and verification',
-    tag: 'Live in 1 to 2 weeks',
+    title: 'Konteneinrichtung und Verifizierung',
+    tag: 'Live und verifiziert',
     description:
-      'We register your Service Account, prepare Tencent\'s paperwork, and push it through verification. Menus, auto-replies, and brand assets included. Most accounts go live within 1 to 2 weeks.',
-    deliverables: ['Registration', 'Tencent verification', 'Menus and auto-replies', 'Brand assets'],
-    image: '/images/wechat-agency/service-setup.webp',
-    imageAlt: 'Phone on a desk next to business registration documents, showing a verified WeChat Official Account brand profile',
+      'Wir registrieren Ihr Unternehmenskonto und führen es durch die Blue-V-Verifizierung. Ausländische Unternehmen brauchen dafür eine chinesische Geschäftslizenz oder eine autorisierte Agentur. Beide Wege decken wir ab. Sie starten ohne eigene Gesellschaft in China.',
+    deliverables: ['Unternehmenskonto', 'Blue-V-Verifizierung', 'Beratung zum Lizenzweg', 'Kontenübergabe'],
+    image: '/images/platforms/douyin-services/setup-strategy.webp',
+    imageAlt: 'Telefon mit dem Profil eines verifizierten Douyin-Unternehmenskontos neben Registrierungsunterlagen',
   },
   {
-    glyph: '文',
-    title: 'Content and CRM',
-    tag: 'Native Chinese copywriters',
+    glyph: '视',
+    title: 'Content-Strategie und Videoproduktion',
+    tag: 'Video von Mandarin-Muttersprachlern',
     description:
-      'Content pillars, editorial calendar, articles, graphics, and video. Native Chinese copywriters, not translators. Every follower flows into WeCom so you build a customer list no platform can take from you.',
-    deliverables: ['Editorial calendar', 'Articles', 'Graphics and video', 'WeCom setup'],
-    image: '/images/wechat-agency/service-content.webp',
-    imageAlt: 'Editorial desk with a phone showing a branded WeChat Official Account article being scrolled',
+      'Kurzvideos, wie Douyin sie belohnt, produziert von unserem Team in China. Produktdemos, Tutorials, Trendformate und Mini-Dramen. HubStudio.ai beschleunigt die Produktion. Geschrieben und geschnitten wird jedes Stück von Mandarin-Muttersprachlern.',
+    deliverables: ['Content-Strategie', 'Kurzvideo-Produktion', 'Trendformate', 'Mini-Dramen'],
+    image: '/images/platforms/douyin-services/content-production.webp',
+    imageAlt: 'Schnittplatz mit einem Telefon, auf dem ein vertikales Douyin-Kurzvideo in Produktion ist',
+  },
+  {
+    glyph: '达',
+    title: 'KOL- und KOC-Kampagnen',
+    tag: 'Verifizierte Creator über Xingtu',
+    description:
+      'Wir buchen KOL (Key Opinion Leaders) und KOC (Key Opinion Consumers) über Xingtu, den offiziellen Creator-Marktplatz von Douyin, und über unser eigenes Netzwerk. Jeden Creator prüfen wir auf gekaufte Follower und Zielgruppenpassung. Die finale Liste geben Sie frei.',
+    deliverables: ['KOL-Auswahl', 'KOC-Seeding', 'Prüfung auf gekaufte Follower', 'Kampagnen-Reporting'],
+    image: '/images/platforms/douyin-services/kol-campaigns.webp',
+    imageAlt: 'Content-Creator beim Dreh eines Produktvideos für eine Douyin-KOL-Kampagne',
   },
   {
     glyph: '广',
-    title: 'WeChat advertising',
-    tag: 'Ad spend at cost, no markup',
+    title: 'Bezahlte Werbung über Ocean Engine',
+    tag: 'Mediabudget zum echten Preis, ohne Marge',
     description:
-      'Media planning, creative, A/B tests, and bid work across Moments Ads, Official Account Ads, and Mini Program Ads. Ad spend is billed at cost. No markup, ever.',
-    deliverables: ['Media plan', 'Ad creative', 'A/B tests', 'Bid management'],
-    image: '/images/wechat-agency/service-ads.webp',
-    imageAlt: 'Hand holding a phone in a cafe, showing a sponsored brand ad inside the WeChat Moments feed',
-  },
-  {
-    glyph: '店',
-    title: 'Mini Programs and e-commerce',
-    tag: '945M monthly users',
-    description:
-      'Stores, lead capture, bookings, and loyalty programs built inside WeChat and connected to WeChat Pay. 945M people use Mini Programs every month. Your readers get a next step that converts.',
-    deliverables: ['Storefront', 'WeChat Pay', 'Lead capture', 'Loyalty programs'],
-    image: '/images/wechat-agency/service-miniprogram.webp',
-    imageAlt: 'Two phones side by side showing a WeChat Mini Program storefront and a WeChat Pay payment success screen',
+      'Ocean Engine (巨量引擎) ist die Werbeplattform von ByteDance für Douyin. TopView für Markteinführungen. In-Feed Ads für Traffic. Search Ads für kaufbereite Nutzer. DOU+ zum Testen von Inhalten. Das Mediabudget rechnen wir zum echten Preis ab, ohne Aufschläge.',
+    deliverables: ['TopView', 'In-Feed Ads', 'Search Ads', 'DOU+-Boosts'],
+    image: '/images/platforms/douyin-services/advertising.webp',
+    imageAlt: 'Telefon mit einer gesponserten In-Feed-Markenanzeige im Douyin-Video-Feed',
   },
   {
     glyph: '播',
-    title: 'KOL and cross-promotion campaigns',
-    tag: 'Verified engagement data only',
+    title: 'Livestream und Douyin Shop',
+    tag: 'Live-Commerce fest eingebaut',
     description:
-      'Key Opinion Leader (KOL) sourcing, vetting, briefs, and reporting. We only work with verified engagement data. If a follower count looks inflated, we pass.',
-    deliverables: ['KOL sourcing', 'Vetting', 'Campaign briefs', 'Reporting'],
-    image: '/images/wechat-agency/service-kol.webp',
-    imageAlt: 'Content creator filming a product video, with a phone showing a WeChat Channels live stream',
+      'Live-Commerce gehört auf Douyin zum Kerngeschäft. Wir planen Live-Verkaufsformate und setzen sie um: Hosts, Produkt-Skripte, Moderation in Echtzeit. Ihren Douyin Shop (抖音小店) richten wir ein und optimieren ihn laufend.',
+    deliverables: ['Livestream-Planung', 'Host-Auswahl', 'Produkt-Skripte', 'Douyin-Shop-Einrichtung'],
+    image: '/images/platforms/douyin-services/live-commerce.webp',
+    imageAlt: 'Host präsentiert Produkte vor der Kamera während eines Douyin-Livestream-Verkaufsformats',
+  },
+  {
+    glyph: '数',
+    title: 'Analyse, Reporting und Optimierung',
+    tag: 'Ein Bericht pro Monat',
+    description:
+      'Ein Monatsbericht mit klaren Zahlen: Follower-Wachstum, Aufrufe, Engagement-Rate, Werbeeffizienz, dazu GMV und ROAS, sobald der Verkauf läuft. Was funktioniert hat, was nicht, was sich im Folgemonat ändert.',
+    deliverables: ['Follower-Wachstum', 'Engagement-Rate', 'GMV und ROAS', 'Plan für den Folgemonat'],
+    image: '/images/blog/douyin-control-room.webp',
+    imageAlt: 'Kontrollraum-Bildschirme mit Douyin-Follower-Wachstum, Engagement und Verkaufszahlen',
   },
 ];
 
 const segments = [
   {
-    title: 'B2C retail and luxury',
-    description: 'Chinese consumers check WeChat before they buy. We build the Official Account, content, and Mini Program store that close that loop.',
-    icon: '<path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/>',
+    title: 'Beauty und Mode',
+    description: 'Beauty und Mode funktionieren auf Douyin. Kurze Demos, Tutorials und Creator-Reviews wecken die Nachfrage, gekauft wird direkt in der App.',
+    icon: '<path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/>',
   },
   {
-    title: 'B2B and industrial',
-    description: 'Long sales cycles need a follow-up channel. WeChat articles plus WeCom outreach turn trade-show contacts into pipeline.',
-    icon: '<path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1"/><path d="M12 18h1"/><path d="M7 18h1"/>',
+    title: 'Lebensmittel und Getränke',
+    description: 'Essen funktioniert auf Douyin. Schnelle Demos und Verkostungsformate machen aus Zuschauern Erstkäufer, im Feed und im Livestream.',
+    icon: '<path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/>',
   },
   {
-    title: 'Tourism and education',
-    description: 'Chinese travelers and students research on WeChat months before they commit. We keep your brand in that conversation.',
-    icon: '<path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/>',
+    title: 'Unterhaltungselektronik und Wohnen',
+    description: 'Elektronik und Haushaltswaren funktionieren auf Douyin. Produktdemos zeigen den Nutzen in Sekunden, genau das belohnt der Algorithmus.',
+    icon: '<rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/>',
   },
   {
-    title: 'Cross-border e-commerce',
-    description: 'Sell to China without a Chinese entity. Mini Program storefronts and cross-border WeChat Pay make it possible.',
-    icon: '<circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/>',
+    title: 'Hotellerie, Automobil und B2B',
+    description: 'Hotellerie, Automobil, Gesundheit und B2B funktionieren auf Douyin ebenfalls. Millionenstadt oder Provinz, 22 oder 52 Jahre alt: Ihre chinesische Zielgruppe ist längst dort.',
+    icon: '<path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/>',
   },
 ];
 
 const pillars = [
   {
-    title: 'Clear SOW',
-    description: 'Every deliverable is defined upfront. Articles, videos, campaigns, reports. You know exactly what you get each month.',
+    title: 'Team vor Ort',
+    description: 'Shanghai und Hongkong. Mandarin-Muttersprachler, die täglich auf Douyin veröffentlichen, keine Berater, die die Plattform nur aus Präsentationen kennen.',
   },
   {
-    title: 'Fixed price, no surprises',
-    description: 'One price per package. No hourly rates, no scope creep charges, no invoices you weren\'t expecting.',
+    title: 'Klarer Leistungsumfang, Festpreis',
+    description: 'Im April 2026 haben wir 37 Agenturen verglichen. 0 von 37 bieten Festpreispakete. Wir schon. Jede Leistung ist vorab definiert.',
   },
   {
-    title: 'AI-powered content production',
-    description: 'Visuals and video powered by HubStudio.ai, which keeps costs down and output fast. Strategy is 100% human-led.',
+    title: 'Kundenbetreuung auf Englisch',
+    description: 'Ein fester Ansprechpartner, der Ihre Marke kennt. Klare Kommunikation auf Englisch, Content in muttersprachlichem Mandarin.',
   },
   {
-    title: 'Team on the ground',
-    description: 'Shanghai and Hong Kong. Native speakers who use WeChat every day, with direct KOL relationships and real-time platform access.',
+    title: 'Compliance inklusive',
+    description: 'Lizenzwege, Kontoverifizierung, Content-Regeln und Anzeigenprüfung. Wir kümmern uns um die Formalitäten, damit Ihre Kampagnen nicht ins Stocken geraten.',
   },
 ];
 
 const steps = [
   {
-    title: 'Discovery call',
-    description: '30 minutes. Tell us about your brand, your goals, and where you stand with China right now. No pitch deck.',
+    title: 'Audit',
+    description:
+      'Wir prüfen Ihre Kategorie auf Douyin. Wettbewerber, Content-Formate, Preispunkte und was der Algorithmus in Ihrem Segment gerade belohnt.',
   },
   {
-    title: 'Proposal',
-    description: 'Clear SOW. Fixed price. Every deliverable listed out. You see what you\'re getting and what it costs before you commit.',
+    title: 'Strategie',
+    description:
+      'Redaktionelle Säulen, Veröffentlichungsplan, KOL-Shortlist, Werbeplan und KPI-Ziele. Alles steht in einem klaren SOW mit Festpreis.',
   },
   {
-    title: 'Live in 4 weeks',
-    description: 'Onboarding, account setup, verification, and first content published. Four weeks from signed contract to first post.',
+    title: 'Lokalisierung',
+    description:
+      'Übersetzt wird nichts. Unser Mandarin-Team entwickelt Ihre Inhalte von Grund auf für chinesische Zuschauer. Übersetzter Content fällt auf Douyin deutlich ab.',
+  },
+  {
+    title: 'Start',
+    description:
+      'Konto verifiziert, erster Content binnen zwei Wochen nach Unterschrift live. Ihr Ansprechpartner arbeitet mit Ihnen auf Englisch. Chinesischkenntnisse brauchen Sie keine.',
+  },
+  {
+    title: 'Skalierung',
+    description:
+      'Wir verstärken, was funktioniert. Erfolgreiche Formate bekommen über DOU+ und Ocean Engine mehr Budget. Schwache Formate streichen wir. Monatsberichte halten alles fest.',
   },
 ];
 
 const caseStudies = [
   {
-    client: 'JAC Motors',
-    image: '/images/clients/JAC/JAC-Wechat-4.webp',
-    imageAlt: 'JAC Motors WeChat content produced by TheRedScroll',
-    metric: '10M',
-    metricLabel: 'vehicles sold, community rebuilt',
-    summary: 'A Chinese auto giant with 10 million vehicles sold and a quiet social presence. We rebuilt the community across WeChat, RedNote, and Weibo with AI-powered content.',
-    href: '/work/jac-motors/',
+    client: "AGE 20's",
+    image: '/images/clients/Age20/Age20-Picture1-scaled.jpg',
+    imageAlt: "Kampagnenmotiv von AGE 20's für den Foundation-Start in China",
+    metric: '3.87M',
+    metricLabel: 'Douyin-Impressionen bei einem Ziel von 1 Mio.',
+    summary: 'Koreanische Beauty-Marke beim Foundation-Start in China. Die Kampagne kam auf 3,87 Millionen Douyin-Impressionen, angepeilt war eine Million. Der Spitzname des Produkts verbreitete sich von allein.',
+    href: '/de/work/age20s/',
   },
   {
-    client: 'Mission Foods',
-    image: '/images/clients/MissionFoods/head-pic.jpg',
-    imageAlt: 'Mission Foods campaign visual for the China launch',
-    metric: 'Gen Z',
-    metricLabel: 'campaigns for a new food category',
-    summary: 'Launching corn chips, an unfamiliar food category, in China. Gen Z campaigns and food pairing content across WeChat, RedNote, and Weibo.',
-    href: '/work/mission-foods/',
-  },
-  {
-    client: 'Camper',
-    image: '/images/clients/Camper/Camper-Case-Study-Hero.jpg',
-    imageAlt: 'Camper footwear campaign visual for China social media',
-    metric: '187K',
-    metricLabel: 'followers, up from 43K in 18 months',
-    summary: 'A European footwear brand that grew from 43K to 187K followers in 18 months, with engagement up from 1.2% to 4.7% and same-store sales up 31% year over year.',
-    href: '/work/camper/',
+    client: 'Langnese',
+    image: '/images/clients/Langnese/Langnese-Douyin-Livestream.jpg',
+    imageAlt: 'Langnese-Honig in einem Douyin-Livestream-Verkaufsformat',
+    metric: 'Live',
+    metricLabel: 'Livestream-Commerce für eine Traditionsmarke',
+    summary: 'Deutsche Honigmarke, für chinesische Konsumenten neu positioniert. Douyin-Livestreams und schnelle Demo-Videos zeigten neue Verwendungen des Produkts, der Verkauf lief über Tmall.',
+    href: '/de/work/langnese/',
   },
 ];
 
 const faqs = [
   {
-    q: 'Do I need a China business license to open a WeChat Official Account?',
-    a: 'No. Foreign companies can register a WeChat Service Account with an overseas business license. You need company registration documents, a legal representative\'s ID, and proof of brand ownership. A Chinese entity only becomes necessary for Subscription accounts, domestic WeChat Pay merchant status, and some ad formats.',
+    q: 'Dürfen ausländische Unternehmen auf Douyin werben?',
+    a: 'Ja. Ausländische Marken werben auf Douyin über eine autorisierte Agentur wie TheRedScroll. Wir eröffnen das Konto, steuern die Anzeigen über Ocean Engine und rechnen das Mediabudget zum echten Preis ab. Eine lokale Gesellschaft ist nicht nötig.',
   },
   {
-    q: 'What is the difference between a Subscription and a Service account?',
-    a: 'Subscription accounts publish daily but sit in a folded inbox and are only available to Chinese entities. Service Accounts publish 4 times per month, land directly in the chat list, and support custom menus, WeChat Pay, and CRM tools. Service Accounts are the only type foreign companies can register on their own, and for most brands they are the better choice anyway.',
+    q: 'Brauchen wir eine chinesische Geschäftslizenz oder eine WFOE?',
+    a: 'Für den Start nicht. Unternehmenskonten brauchen eine chinesische Geschäftslizenz oder eine autorisierte Agentur, und den Agenturweg decken wir ab. Für den Verkauf über Douyin Shop gibt es Cross-Border-Optionen für Marken ohne chinesische Gesellschaft. Das passende Setup empfehlen wir im ersten Gespräch.',
   },
   {
-    q: 'How much does WeChat marketing cost?',
-    a: 'Two budgets matter. Agency work: we quote a fixed monthly price against a clear scope of work, so you know every deliverable and the full cost before you sign. Ad spend: Moments Ads run on auction bidding with entry budgets around RMB 1,000 per day, while premium scheduled placements start near RMB 50,000 per campaign. Ad spend is always billed separately at cost, with no markup.',
+    q: 'Was kostet eine Douyin-Agentur?',
+    a: 'Die meisten Agenturen nennen individuelle Preise und lassen die Leistungen im Vagen. Wir arbeiten mit Festpreispaketen, die jede Leistung vorab auflisten. Das Mediabudget auf Ocean Engine wird separat abgerechnet, zum echten Preis, ohne Aufschläge. Vereinbaren Sie ein Gespräch, wir empfehlen ein Paket für Ihr Budget.',
   },
   {
-    q: 'How long does account setup and verification take?',
-    a: 'With complete documents, registration and Tencent verification take 1 to 2 weeks. Missing or inconsistent paperwork is the most common cause of delays, so we review everything before submission. If you already have a verified account, we can start publishing within days.',
+    q: 'Worin unterscheidet sich Douyin für Werbetreibende von TikTok?',
+    a: 'Es sind zwei getrennte Apps von ByteDance ohne jede inhaltliche Überschneidung. Douyin bedient Festlandchina und läuft über Ocean Engine, die eigene Werbeplattform. Der In-App-Handel reicht auf Douyin deutlich tiefer: Shops, Livestream-Verkauf und Bezahlung, ohne die App zu verlassen. Eine TikTok-Strategie lässt sich nicht übertragen.',
   },
   {
-    q: 'Can you run WeChat if I have no team in China?',
-    a: 'Yes. That is the most common setup for our clients. Our team in Shanghai and Hong Kong runs your account day to day: strategy, content, publishing, community replies, ads, and monthly reporting in plain English. You get a dedicated account manager and full visibility, without hiring anyone in China.',
+    q: 'Wie schnell sehen wir Ergebnisse?',
+    a: 'Bezahlte Kampagnen können binnen Tagen wirken. Organische Reichweite braucht in der Regel acht bis zwölf Wochen konsequenten Publizierens. Der Algorithmus belohnt Sehdauer und Beständigkeit, drei bis fünf Beiträge pro Woche sind daher unser Minimum.',
   },
   {
-    q: 'Who owns the WeChat account and its followers?',
-    a: 'You do. The account is registered under your company name with your own documents. We operate it on your behalf. If we ever part ways, you keep the account, the followers, and the full content archive.',
+    q: 'Können wir unsere TikTok-Videos auf Douyin wiederverwenden?',
+    a: 'In der Regel nicht. Douyin erkennt Re-Uploads mit Wasserzeichen und drosselt ihre Reichweite. Die Zuschauer erwarten Mandarin, lokale Trends und lokale Formate. Ein starkes Konzept adaptieren wir gelegentlich, das Video selbst entsteht aber neu, eigens für das chinesische Publikum.',
   },
   {
-    q: 'Can you take over an existing WeChat account?',
-    a: 'Yes. We start with an audit: verification status, follower quality, content history, and compliance risks. Then we fix what needs fixing and take over publishing. Most handovers are complete within a week, with no downtime for your followers.',
+    q: 'Wie laufen KOL-Kampagnen auf Douyin ab?',
+    a: 'Wir buchen Creator über Xingtu, die offizielle ByteDance-Plattform, jede Buchung stützt sich also auf verifizierte Audience- und Engagement-Daten. Ausgewählt wird nach Passung und Leistung, nicht nach Followerzahl. Briefing, Verträge, Bezahlung und Nutzungsrechte laufen über uns. Mehrere kleinere KOCs schlagen oft einen einzelnen großen Namen.',
   },
   {
-    q: 'Should I start with WeChat or with RedNote and Douyin?',
-    a: 'It depends on your goal. WeChat is where Chinese consumers read, ask questions, and buy, so it works as your home base. RedNote and Douyin are discovery platforms that bring new audiences in. Most of our clients run WeChat as the hub and add discovery platforms around it.',
+    q: 'Wie funktioniert Douyin Shop für ausländische Marken?',
+    a: 'Douyin betreibt ein Cross-Border-Programm für Marken ohne chinesische Gesellschaft. Sie verkaufen über einen Cross-Border-Store und versenden aus einem Zolllager oder aus dem Ausland. Kategorien, Kautionen und geforderte Unterlagen unterscheiden sich, daher klären wir die Voraussetzungen, bevor wir den Shop aufbauen. Livestreams und Kurzvideos führen anschließend direkt zum Checkout.',
   },
   {
-    q: 'What is private domain traffic and why does it matter?',
-    a: 'Private domain traffic means followers you can reach directly, without paying for ads each time. In practice, it means moving WeChat followers into WeCom groups and 1-to-1 chats. You own that list. An algorithm change can never take it away from you.',
+    q: 'Brauchen wir Chinesischkenntnisse im Team?',
+    a: 'Nein. Ihr fester Ansprechpartner arbeitet mit Ihnen auf Englisch: Strategie, Freigaben, Berichte. Die gesamte Arbeit auf Chinesisch übernimmt unser muttersprachliches Team, von Skripten und Untertiteln bis zu Antworten in den Kommentaren. Sie geben englische Zusammenfassungen frei, keine chinesischen Originaldokumente.',
   },
   {
-    q: 'How do you report performance?',
-    a: 'One monthly report in plain English. It covers follower growth, article reads, engagement, ad spend at cost, and leads or sales where tracking allows. You also get a dedicated account manager you can message any time with questions.',
+    q: 'Wie messen Sie den Erfolg einer Douyin-Kampagne?',
+    a: 'An den Zielen aus Ihrem Leistungsumfang. Monatsberichte erfassen Aufrufe, Sehdauer, Followerwachstum, Engagement, Anzeigenergebnisse aus Ocean Engine und, wo relevant, Livestream-Verkäufe. Jeder Bericht schließt mit Empfehlungen für den Folgemonat. Formate, die nicht liefern, werden gestrichen, nicht verteidigt.',
   },
-];
-
-const pageSchemas = [
-  serviceSchema({
-    name: 'WeChat Agency Services',
-    description:
-      'Full-service WeChat agency for international brands: Official Account setup and verification, content, advertising, Mini Programs, and WeCom CRM.',
-    url: '/wechat-agency',
-    serviceType: 'Social Media Marketing',
-  }),
-  faqPageSchema(faqs),
 ];
 ---
 
 <PageLayout
-  title="WeChat Agency for Brands Growing in China | TheRedScroll"
-  description="A full-service WeChat agency in Shanghai and Hong Kong. Official Account setup, content, ads, Mini Programs, and CRM. Fixed scope, fixed price."
-  schema={pageSchemas}
+  title="Douyin-Agentur für internationale Marken | TheRedScroll"
+  description="Full-Service-Douyin-Agentur: Konteneinrichtung, Content, KOL-Kampagnen, Ocean-Engine-Werbung und Livestream-Commerce. Klarer Leistungsumfang, Festpreis."
+  lang="de"
 >
   <!-- The red thread: scroll progress -->
   <div class="red-thread" data-thread aria-hidden="true"></div>
@@ -229,35 +231,34 @@ const pageSchemas = [
       aria-hidden="true"
       data-parallax="0.1"
     >
-      微信
+      抖音
     </span>
     <Container class="relative z-[1]">
       <div class="grid grid-cols-[1.05fr_0.95fr] max-[900px]:grid-cols-1 gap-[56px] max-[900px]:gap-[24px] items-center pt-[88px] pb-[72px] max-[640px]:pt-[48px] max-[640px]:pb-[48px]">
         <div>
           <p class="flex items-center gap-[10px] mb-[20px]" data-hero-reveal style="--d: 0ms">
-            <span class="seal" aria-hidden="true">微</span>
-            <img src="/images/platforms/wechat-logo.svg" alt="" width="22" height="22" class="block" aria-hidden="true" />
-            <span class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333]">WeChat agency</span>
+            <span class="seal" aria-hidden="true">抖</span>
+            <span class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333]">Douyin-Agentur</span>
           </p>
           <h1 class="hero-title text-[#FFFFFF] mb-[20px]" data-hero-reveal style="--d: 80ms">
-            The WeChat agency for brands growing in China
+            Douyin-Agentur: Ihre Marke auf Chinas größter Kurzvideo-Plattform
           </h1>
           <p class="text-[17px] max-[640px]:text-[15px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[460px] mb-[32px]" data-hero-reveal style="--d: 160ms">
-            Official Account setup, content, advertising, Mini Programs, and CRM. Run from Shanghai and Hong Kong, every day. Fixed scope. Fixed price.
+            Konteneinrichtung, Content, KOL-Kampagnen, Ocean-Engine-Werbung und Livestream-Commerce. Gesteuert von unserem Team in Shanghai und Hongkong. Klarer Leistungsumfang, Festpreis.
           </p>
           <div class="flex items-center gap-[12px] flex-wrap mb-[12px]" data-hero-reveal style="--d: 240ms">
-            <Button variant="primary" href="/contact/">Book a call</Button>
-            <Button variant="secondary-dark" href="#results">See the results</Button>
+            <Button variant="primary" href="/de/contact/">Gespräch vereinbaren</Button>
+            <Button variant="secondary-dark" href="#results">Ergebnisse ansehen</Button>
           </div>
           <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal" data-hero-reveal style="--d: 300ms">
-            A 30-minute call. No pitch deck.
+            Ein Gespräch von 30 Minuten. Ohne Verkaufsfolien.
           </p>
         </div>
 
         <div class="relative max-w-[500px] mx-auto w-full max-[900px]:max-w-[380px]" data-hero-reveal style="--d: 200ms">
           <img
-            src="/images/wechat-agency/hero-phones-blend.webp"
-            alt="Two phones showing real WeChat screens: the Moments feed with a sponsored brand ad, and a WeChat Pay payment success screen"
+            src="/images/douyin-agency/hero-phones-blend.webp"
+            alt="Zwei Telefone mit echten Douyin-Ansichten: ein vertikaler Kurzvideo-Feed mit Produktkarte und ein Livestream-Verkaufsformat"
             width="665"
             height="672"
             class="hero-float w-full h-auto block"
@@ -285,23 +286,23 @@ const pageSchemas = [
       <figure class="m-0 bg-[#F7F2EE] rounded-[10px] p-[40px] max-[1024px]:p-[28px] max-[640px]:p-[20px] grid grid-cols-[0.9fr_1.1fr] max-[768px]:grid-cols-1 gap-[40px] max-[768px]:gap-[24px] items-center" data-reveal>
         <div>
           <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
-            Why WeChat comes first
+            Warum Douyin zählt
           </p>
           <p class="manifesto" data-manifesto>
-            In China, WeChat is not an app. It is the internet. Your customers chat, read, shop, and pay without ever leaving it. A brand that is not on WeChat is <span class="manifesto-hl">invisible</span> to them.
+            Douyin ist nicht TikTok. Es ist Chinas Kurzvideo-Ökonomie. 750 Millionen Menschen schauen, shoppen und bezahlen, ohne die App je zu verlassen. Steht Ihre Marke nicht im Feed, steht dort Ihr <span class="manifesto-hl">Wettbewerber</span>.
           </p>
         </div>
         <div>
           <img
-            src="/images/wechat-agency/ecosystem-banner-tight.webp"
-            alt="Three phones side by side showing the three sides of WeChat: the Moments feed, an Official Account article, and a WeChat Pay payment success screen"
+            src="/images/douyin-agency/ecosystem-banner-tight.webp"
+            alt="Drei Telefone mit den drei Seiten von Douyin: der Video-Feed, ein Livestream-Verkaufsformat und eine Douyin-Shop-Produktseite"
             width="1000"
             height="580"
             loading="lazy"
             class="w-full h-auto block rounded-[8px]"
           />
           <figcaption class="text-[13px] text-[#5C5C5C] font-normal leading-[1.4] mt-[12px] text-center">
-            One app, three jobs: social feed, publishing channel, and payment.
+            Eine App, drei Aufgaben: Unterhaltungs-Feed, Livestream-Kanal und Kasse.
           </figcaption>
         </div>
       </figure>
@@ -309,20 +310,23 @@ const pageSchemas = [
       <div class="grid grid-cols-2 max-[768px]:grid-cols-1 gap-[48px] max-[768px]:gap-[32px] items-start mt-[64px] max-[640px]:mt-[40px]">
         <div data-reveal>
           <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">
-            One agency for the whole WeChat ecosystem
+            Douyin-Leistungen für Marken auf dem Weg nach China
           </h2>
           <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[#1A1A1A] max-w-[560px]">
             <p>
-              A WeChat agency registers your account, produces your content, runs your ads, and builds your Mini Program. Doing this in-house means hiring native speakers, learning Tencent's rules, and buying ads through a Chinese account.
+              Douyin (抖音) erreicht täglich 750 Millionen Menschen in China. Ihre Kunden sind dort. Ihre Wettbewerber womöglich auch schon.
             </p>
             <p>
-              Most brands get further, faster, with a specialist. We're that specialist. We post on <a href="/platforms/wechat/" class="text-[#CC3333] hover:underline">WeChat</a> every day, from inside China.
+              TheRedScroll ist eine Social-Media-Agentur mit Sitz in China. Wir eröffnen Douyin-Konten für ausländische Marken und produzieren Videos in muttersprachlichem Mandarin. Dazu kommen KOL-Kampagnen, Werbung über Ocean Engine und der Verkauf über Livestream und Douyin Shop.
+            </p>
+            <p>
+              Jedes Mandat hat einen klaren SOW, den Leistungsumfang, und einen Festpreis. Sie wissen vor der Unterschrift, was Sie bekommen und was es kostet.
             </p>
           </div>
         </div>
         <div class="bg-[#F7F2EE] rounded-[10px] p-[28px] max-[640px]:p-[20px]" data-reveal style="--d: 120ms">
           <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
-            Scope at a glance
+            Leistungsumfang im Überblick
           </p>
           <ul class="flex flex-col list-none m-0 p-0">
             {scopeItems.map((item, i) => (
@@ -347,12 +351,12 @@ const pageSchemas = [
         <div>
           <div class="sticky top-[104px] max-[900px]:static">
             <div class="mb-[32px] max-[900px]:mb-[8px]" data-reveal>
-              <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Our WeChat marketing services</p>
+              <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Unsere Douyin-Leistungen</p>
               <h2 class="text-[32px] max-[640px]:text-[24px] font-medium leading-[1.15] tracking-[-0.01em] text-[#1A1A1A] mb-[12px]">
-                Five services. Each with a clear deliverable.
+                Sechs Leistungen. Jede mit einem klaren Ergebnis.
               </h2>
               <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] max-w-[420px] m-0">
-                Everything is listed in your scope of work before you sign. No vague retainers.
+                Alles steht vor der Unterschrift im Leistungsumfang. Keine vagen Pauschalverträge.
               </p>
             </div>
             <div class="svc-frame relative max-[900px]:hidden">
@@ -391,7 +395,7 @@ const pageSchemas = [
               </div>
               <h3 class="text-[22px] max-[640px]:text-[19px] font-medium leading-[1.25] text-[#1A1A1A] mb-[10px]">{service.title}</h3>
               <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.65] max-w-[480px] mb-[16px]">{service.description}</p>
-              <ul class="flex flex-wrap gap-[8px] list-none m-0 p-0" aria-label={`${service.title}: deliverables`}>
+              <ul class="flex flex-wrap gap-[8px] list-none m-0 p-0" aria-label={`${service.title}: Leistungen`}>
                 {service.deliverables.map((d) => (
                   <li class="text-[12px] font-normal leading-none text-[#1A1A1A] bg-[#F7F2EE] border-[0.5px] border-[#E8E0D8] rounded-[6px] px-[10px] py-[7px]">{d}</li>
                 ))}
@@ -408,9 +412,9 @@ const pageSchemas = [
           ))}
           <div class="py-[16px] flex items-center justify-between gap-[16px] flex-wrap" data-reveal>
             <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] m-0 max-w-[420px]">
-              <span class="text-[#1A1A1A] font-medium">Need more than WeChat?</span> We also grow brands on RedNote, Douyin, Weibo, and 14 more platforms.
+              <span class="text-[#1A1A1A] font-medium">Mehr als Douyin gefragt?</span> Die meisten unserer Kunden kombinieren es mit RedNote und WeChat.
             </p>
-            <a href="/platforms/others/" class="text-[14px] text-[#CC3333] font-medium shrink-0 hover:underline">All platforms &rarr;</a>
+            <a href="/de/platforms/others/" class="text-[14px] text-[#CC3333] font-medium shrink-0 hover:underline">Alle Plattformen &rarr;</a>
           </div>
         </div>
       </div>
@@ -422,18 +426,18 @@ const pageSchemas = [
     <Container>
       <div class="flex items-end justify-between gap-[32px] max-[640px]:flex-col max-[640px]:items-start max-[640px]:gap-[16px] mb-[40px] max-[640px]:mb-[24px]" data-reveal>
         <div class="max-w-[560px]">
-          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Case studies</p>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Fallstudien</p>
           <h2 class="text-[36px] max-[640px]:text-[24px] font-medium leading-[1.15] tracking-[-0.01em] text-[#1A1A1A] mb-[8px]">
-            Results from the ground
+            Ergebnisse aus der Praxis
           </h2>
           <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
-            Real clients, real numbers, all verifiable in the full case studies.
+            Echte Kunden, echte Zahlen, nachprüfbar in den vollständigen Fallstudien.
           </p>
         </div>
-        <a href="/work/" class="text-[14px] text-[#CC3333] font-medium shrink-0 hover:underline">All case studies &rarr;</a>
+        <a href="/de/work/" class="text-[14px] text-[#CC3333] font-medium shrink-0 hover:underline">Alle Fallstudien &rarr;</a>
       </div>
 
-      <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[24px] max-[640px]:gap-[16px]">
+      <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[24px] max-[640px]:gap-[16px]">
         {caseStudies.map((cs, i) => (
           <a href={cs.href} class="cs-card group bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[8px] overflow-hidden flex flex-col no-underline" data-reveal style={`--d: ${i * 100}ms`}>
             <div class="overflow-hidden relative">
@@ -451,7 +455,7 @@ const pageSchemas = [
               <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.4] mb-[20px]">{cs.metricLabel}</p>
               <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">{cs.client}</h3>
               <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] mb-[20px]">{cs.summary}</p>
-              <span class="text-[14px] text-[#CC3333] font-medium mt-auto inline-flex items-center gap-[6px]">Read the case study <span class="cs-arrow" aria-hidden="true">&rarr;</span></span>
+              <span class="text-[14px] text-[#CC3333] font-medium mt-auto inline-flex items-center gap-[6px]">Zur Fallstudie <span class="cs-arrow" aria-hidden="true">&rarr;</span></span>
             </div>
           </a>
         ))}
@@ -463,9 +467,9 @@ const pageSchemas = [
   <section class="mt-[128px] max-[640px]:mt-[72px]">
     <Container>
       <div class="mb-[40px] max-[640px]:mb-[24px] max-w-[680px]" data-reveal>
-        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Who we help</p>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Für wen wir arbeiten</p>
         <h2 class="text-[36px] max-[640px]:text-[24px] font-medium leading-[1.15] tracking-[-0.01em] text-[#1A1A1A]">
-          Built for brands entering or growing in China
+          Für wen sich Douyin lohnt
         </h2>
       </div>
 
@@ -480,8 +484,11 @@ const pageSchemas = [
       </div>
 
       <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px] mt-[16px]" data-reveal>
+        <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] max-w-[680px] mb-[12px]">
+          <span class="text-[#1A1A1A] font-medium">Douyin ist nicht TikTok International.</span> Gleicher Mutterkonzern, zwei getrennte Apps. Inhalte, Konten und Anzeigen wandern nicht hinüber. Douyin bedient China. TikTok den Rest der Welt.
+        </p>
         <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] max-w-[680px]">
-          <span class="text-[#1A1A1A] font-medium">No Chinese entity? No problem.</span> We work with brands that have a WFOE and brands that don't. If you're starting from zero, our <a href="/services/market-entry/" class="text-[#CC3333] hover:underline">China market entry service</a> covers registration, setup, and localization.
+          Der größere Unterschied ist der Handel. Douyin-Nutzer entdecken, entscheiden und kaufen, ohne die App zu verlassen. Shops, Livestream-Verkauf und Bezahlung sind fest eingebaut. TikTok holt da noch auf.
         </p>
       </div>
     </Container>
@@ -493,9 +500,9 @@ const pageSchemas = [
       <div class="bg-[#F7F2EE] rounded-[10px] p-[48px] max-[1024px]:p-[32px] max-[640px]:p-[20px]">
         <div class="grid grid-cols-[300px_1fr] max-[900px]:grid-cols-1 gap-[48px] max-[900px]:gap-[24px]">
           <div data-reveal>
-            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Why TheRedScroll</p>
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Warum TheRedScroll</p>
             <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A]">
-              Four reasons brands choose us
+              Vier Gründe, warum Marken sich für uns entscheiden
             </h2>
           </div>
           <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-x-[40px] gap-y-[32px] max-[640px]:gap-y-[24px]">
@@ -516,16 +523,19 @@ const pageSchemas = [
   <section class="mt-[128px] max-[640px]:mt-[72px]">
     <Container>
       <div class="text-center mb-[56px] max-[640px]:mb-[32px]" data-reveal>
-        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Our process</p>
-        <h2 class="text-[36px] max-[640px]:text-[24px] font-medium leading-[1.15] tracking-[-0.01em] text-[#1A1A1A]">
-          From first call to first post in 4 weeks
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">So arbeiten wir</p>
+        <h2 class="text-[36px] max-[640px]:text-[24px] font-medium leading-[1.15] tracking-[-0.01em] text-[#1A1A1A] mb-[12px]">
+          Unser Douyin-Prozess, vom Audit bis zur Skalierung
         </h2>
+        <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] max-w-[560px] mx-auto m-0">
+          Sie brauchen weder Chinesischkenntnisse noch ein Büro in China. Sie arbeiten mit einem Ansprechpartner auf Englisch. Unser Team in China erledigt den Rest.
+        </p>
       </div>
 
       <div class="proc relative" data-proc>
-        <span class="proc-rail absolute top-[5px] left-0 right-0 h-[2px] bg-[#E8E0D8] max-[768px]:hidden" aria-hidden="true"></span>
-        <span class="proc-fill absolute top-[5px] left-0 h-[2px] bg-[#CC3333] max-[768px]:hidden" aria-hidden="true" data-proc-fill></span>
-        <div class="grid grid-cols-3 max-[768px]:grid-cols-1 gap-[40px] max-[768px]:gap-[28px]">
+        <span class="proc-rail absolute top-[5px] left-0 right-0 h-[2px] bg-[#E8E0D8] max-[1024px]:hidden" aria-hidden="true"></span>
+        <span class="proc-fill absolute top-[5px] left-0 h-[2px] bg-[#CC3333] max-[1024px]:hidden" aria-hidden="true" data-proc-fill></span>
+        <div class="grid grid-cols-5 max-[1024px]:grid-cols-2 max-[768px]:grid-cols-1 gap-[40px] max-[768px]:gap-[28px]">
           {steps.map((step, i) => (
             <div class="relative" data-reveal style={`--d: ${i * 140}ms`}>
               <span class="proc-dot block w-[12px] h-[12px] rounded-full bg-[#CC3333] mb-[20px] max-[768px]:mb-[12px] relative z-[1]" aria-hidden="true"></span>
@@ -537,7 +547,7 @@ const pageSchemas = [
       </div>
 
       <div class="text-center mt-[48px] max-[640px]:mt-[32px]" data-reveal>
-        <Button variant="primary" href="/contact/">Book a call</Button>
+        <Button variant="primary" href="/de/contact/">Gespräch vereinbaren</Button>
       </div>
     </Container>
   </section>
@@ -546,39 +556,42 @@ const pageSchemas = [
   <section class="mt-[128px] max-[640px]:mt-[72px]">
     <Container>
       <div class="mb-[40px] max-[640px]:mb-[24px] max-w-[680px]" data-reveal>
-        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">What to budget</p>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Womit Sie rechnen sollten</p>
         <h2 class="text-[36px] max-[640px]:text-[24px] font-medium leading-[1.15] tracking-[-0.01em] text-[#1A1A1A] mb-[8px]">
-          WeChat advertising costs, without the mystery
+          Was eine Douyin-Agentur kostet und wie Mandate aufgebaut sind
         </h2>
         <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
-          Two budgets matter: what you pay the agency and what you pay Tencent for ads. Most agencies blur the two. We keep them separate.
+          Was die meisten Agenturen Ihnen nicht sagen: ihren Preis. Im April 2026 haben wir 37 Agenturen verglichen. 100 Prozent arbeiten mit individuellen Angeboten. 0 von 37 veröffentlichen Festpreispakete.
         </p>
       </div>
 
       <div class="grid grid-cols-2 max-[768px]:grid-cols-1 gap-[16px]">
         <div class="bg-[#F7F2EE] rounded-[10px] p-[32px] max-[640px]:p-[20px]" data-reveal>
-          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Paid to us</p>
-          <h3 class="text-[20px] font-medium leading-[1.3] text-[#1A1A1A] mb-[16px]">Agency fees</h3>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">An uns</p>
+          <h3 class="text-[20px] font-medium leading-[1.3] text-[#1A1A1A] mb-[16px]">Agenturhonorar</h3>
           <ul class="flex flex-col gap-[10px] list-none m-0 p-0">
-            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>One fixed monthly price against a clear scope of work</li>
-            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Every article, video, campaign, and report listed before you sign</li>
-            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>No hourly billing, no scope creep charges</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Festpreis und schriftlicher Leistungsumfang für jedes Paket</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Laufendes Wachstum als Monatspauschale, Markteinführungen als Projekte</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Jede Leistung vor der Unterschrift aufgelistet</li>
           </ul>
         </div>
         <div class="bg-[#F7F2EE] rounded-[10px] p-[32px] max-[640px]:p-[20px]" data-reveal style="--d: 120ms">
-          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Paid to Tencent</p>
-          <h3 class="text-[20px] font-medium leading-[1.3] text-[#1A1A1A] mb-[16px]">Ad spend</h3>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">An ByteDance</p>
+          <h3 class="text-[20px] font-medium leading-[1.3] text-[#1A1A1A] mb-[16px]">Mediabudget für Ocean Engine</h3>
           <ul class="flex flex-col gap-[10px] list-none m-0 p-0">
-            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Moments Ads: auction bidding from around RMB 1,000 per day</li>
-            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Premium scheduled Moments placements from near RMB 50,000 per campaign</li>
-            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Billed at cost, no markup, every number in your monthly report</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>TopView für Markteinführungen, In-Feed für Traffic</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Search Ads für kaufbereite Nutzer, DOU+ zum Testen</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Abgerechnet zum echten Preis, ohne Aufschläge, volle Transparenz</li>
           </ul>
         </div>
       </div>
 
       <div class="bg-[#F7F2EE] border-l-[3px] border-[#CC3333] p-[20px] mt-[16px]" data-reveal>
         <p class="text-[16px] font-normal leading-[1.6] text-[#1A1A1A] m-0">
-          A useful rule: don't start paid Moments campaigns until your account has content worth landing on. Followers gained from ads unfollow within weeks if the feed is empty.
+          Die Einstiegshürden sind niedriger, als die meisten Marken erwarten. Für Beiträge und Anzeigen braucht es keine chinesische Gesellschaft.
+        </p>
+        <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] m-0 mt-[8px]">
+          Wie unsere Pakete aufgebaut sind, zeigt die <a href="/de/pricing/" class="text-[#CC3333] hover:underline">Preisseite</a>. Oder Sie vereinbaren ein Gespräch für eine Empfehlung.
         </p>
       </div>
     </Container>
@@ -592,10 +605,10 @@ const pageSchemas = [
           <div class="sticky top-[104px] max-[768px]:static" data-reveal>
             <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">FAQ</p>
             <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">
-              Questions brands ask before hiring a WeChat agency
+              Was Marken fragen, bevor sie eine Douyin-Agentur beauftragen
             </h2>
             <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
-              More detail on the platform itself is on our <a href="/platforms/wechat/" class="text-[#CC3333] hover:underline">WeChat marketing page</a>.
+              Mehr zur Plattform selbst steht auf unserer <a href="/de/platforms/douyin/" class="text-[#CC3333] hover:underline">Douyin-Marketing-Seite</a>.
             </p>
           </div>
         </div>
@@ -632,32 +645,31 @@ const pageSchemas = [
   <!-- ============ FINAL CTA (ink bookend, full bleed) ============ -->
   <section class="mt-[128px] max-[640px]:mt-[72px] w-full bg-[#1A1A1A] border-b border-[rgba(255,255,255,0.1)] relative overflow-hidden">
     <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[200px] max-[640px]:text-[90px] font-medium text-[#FFFFFF] opacity-[0.03] pointer-events-none select-none whitespace-nowrap" aria-hidden="true">
-      微信
+      抖音
     </span>
     <Container class="relative z-[1]">
       <div class="py-[96px] max-[640px]:py-[56px] text-center">
         <p class="flex items-center justify-center gap-[10px] mb-[20px]" data-reveal>
-          <span class="seal" aria-hidden="true">微</span>
-          <span class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333]">Start your WeChat strategy</span>
+          <span class="seal" aria-hidden="true">抖</span>
+          <span class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333]">Jetzt starten</span>
         </p>
         <h2 class="text-[40px] max-[640px]:text-[26px] font-medium leading-[1.15] tracking-[-0.01em] text-[#FFFFFF] max-w-[720px] mx-auto mb-[16px]" data-reveal style="--d: 80ms">
-          Your Chinese audience is on WeChat today. Your brand should be too.
+          Vereinbaren Sie Ihr Douyin-Strategiegespräch
         </h2>
         <p class="text-[15px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[520px] mx-auto mb-[32px]" data-reveal style="--d: 160ms">
-          A 30-minute call. We'll tell you what your brand can do on WeChat with your current setup, and what it would take. No pitch deck.
+          30 Minuten. Erzählen Sie uns von Ihrer Marke und Ihren Zielen für China. Am Ende wissen Sie, ob Douyin zu Ihnen passt. Wenn ja, folgt ein Angebot zum Festpreis.
         </p>
         <div data-reveal style="--d: 240ms">
-          <Button variant="primary" href="/contact/">Book a call</Button>
+          <Button variant="primary" href="/de/contact/">Gespräch vereinbaren</Button>
         </div>
 
         <div class="mt-[56px] pt-[24px] border-t border-[rgba(255,255,255,0.1)]" data-reveal style="--d: 300ms">
-          <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal mb-[12px]">See also</p>
+          <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal mb-[12px]">Auch lesenswert</p>
           <div class="flex justify-center gap-[24px] flex-wrap">
-            <a href="/platforms/wechat/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">WeChat marketing &rarr;</a>
-            <a href="/services/market-entry/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">China market entry &rarr;</a>
-            <a href="/platforms/rednote/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">RedNote marketing &rarr;</a>
-            <a href="/platforms/douyin/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Douyin marketing &rarr;</a>
-            <a href="/platforms/weibo/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Weibo marketing &rarr;</a>
+            <a href="/de/platforms/douyin/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Douyin-Marketing &rarr;</a>
+            <a href="/de/services/influencer-marketing/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Influencer-Marketing &rarr;</a>
+            <a href="/de/services/advertising/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Werbung &rarr;</a>
+            <a href="/de/services/market-entry/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Markteintritt China &rarr;</a>
           </div>
         </div>
       </div>
@@ -971,7 +983,7 @@ const pageSchemas = [
 
     // --- Count-up numbers ---
     const formatCount = (value: number, decimals: number) =>
-      value.toLocaleString('en-US', { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
+      value.toLocaleString('de-DE', { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
 
     const animateCount = (el: HTMLElement) => {
       const target = parseFloat(el.dataset.count || '0');

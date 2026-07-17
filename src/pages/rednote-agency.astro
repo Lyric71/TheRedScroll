@@ -1,10 +1,15 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
 import Container from '../components/ui/Container.astro';
-import SectionBar from '../components/ui/SectionBar.astro';
-import SectionHeading from '../components/ui/SectionHeading.astro';
 import Button from '../components/ui/Button.astro';
 import { faqPageSchema, serviceSchema } from '../lib/schema';
+
+const heroStats = [
+  { value: 350, decimals: 0, suffix: 'M+', label: 'monthly active users' },
+  { value: 1, decimals: 0, suffix: 'B+', label: 'searches every month' },
+  { value: 70, decimals: 0, suffix: '%', label: 'of users aged 18 to 35' },
+  { value: 2, decimals: 0, suffix: ' weeks', label: 'from signing to first note live' },
+];
 
 const platformNames = [
   { name: '小红书 (Xiǎohóngshū)', detail: 'The official Chinese name. Romanized as Xiaohongshu or Xiao Hong Shu.' },
@@ -15,40 +20,97 @@ const platformNames = [
 
 const services = [
   {
-    number: '01',
+    glyph: '号',
     title: 'Account setup and verification',
+    tag: 'Live within 2 weeks',
     description:
       'We register your Professional Account (企业号, Blue V), translate your overseas business license, prepare trademark documents, and push everything through platform review. Most accounts are live within 2 weeks.',
+    deliverables: ['Professional Account', 'Blue V verification', 'License translation', 'Platform review'],
+    image: '/images/platforms/rednote-services/account-setup.webp',
+    imageAlt: 'Phone showing a verified RedNote Professional Account profile with a Blue V badge, next to business registration documents',
   },
   {
-    number: '02',
+    glyph: '达',
     title: 'KOL and KOC campaigns',
+    tag: 'Verified creators via Pugongying',
     description:
       'Key Opinion Leader (KOL) and Key Opinion Consumer (KOC) campaigns run through Pugongying, the platform\'s official influencer marketplace. Over 100,000 verified creators, with fake follower detection on every shortlist.',
+    deliverables: ['KOL shortlists', 'KOC seeding', 'Fake-follower checks', 'Campaign reporting'],
+    image: '/images/platforms/rednote-services/kol-koc.webp',
+    imageAlt: 'Content creator filming a product review note for a RedNote KOL campaign',
   },
   {
-    number: '03',
+    glyph: '记',
     title: 'Content creation and localization',
+    tag: 'Native Mandarin, not translation',
     description:
       'Notes (笔记), video, and imagery written in native Mandarin, not translated from English. AIGC visuals powered by HubStudio.ai. Real-life shoots in China. Content built for grass-planting (种草), the platform\'s word-of-mouth culture.',
+    deliverables: ['Notes and video', 'AIGC visuals', 'Real-life shoots', 'Grass-planting content'],
+    image: '/images/platforms/rednote-services/content-strategy.webp',
+    imageAlt: 'Editorial desk with a phone showing a RedNote note being drafted in Mandarin',
   },
   {
-    number: '04',
+    glyph: '广',
     title: 'Paid advertising',
+    tag: 'Ad spend at cost, no markup',
     description:
       'In-Feed Ads (信息流广告), Search Ads, and Brand Ads through the Juguang ad platform. Creative testing, bid work, and real-time adjustments. Ad spend is billed at cost. No markup, ever.',
+    deliverables: ['In-Feed Ads', 'Search Ads', 'Brand Ads', 'Creative testing'],
+    image: '/images/platforms/rednote-services/paid-advertising.webp',
+    imageAlt: 'Phone showing a sponsored In-Feed ad inside the RedNote discovery grid',
   },
   {
-    number: '05',
+    glyph: '店',
     title: 'E-commerce and store integration',
+    tag: 'Live commerce built in',
     description:
       'In-app store setup, shoppable notes, and live commerce production. Live sessions drive 90% of the platform\'s in-app sales, so content leads straight to purchase without leaving the app.',
+    deliverables: ['In-app store', 'Shoppable notes', 'Live sessions', 'Cross-border setup'],
+    image: '/images/platforms/rednote-services/ecommerce-live.webp',
+    imageAlt: 'Phone showing a RedNote live commerce session next to an in-app product store',
   },
   {
-    number: '06',
+    glyph: '数',
     title: 'Reporting and analytics',
+    tag: 'Plain-English reporting',
     description:
       'Follower growth, engagement, search rankings, and campaign ROI in one monthly report, in plain English. Social listening covers brand mentions, sentiment, and competitor moves.',
+    deliverables: ['Growth and engagement', 'Search rankings', 'Campaign ROI', 'Social listening'],
+    image: '/images/platforms/rednote-services/analytics-listening.webp',
+    imageAlt: 'Laptop dashboard showing RedNote follower growth, engagement, and search ranking analytics',
+  },
+];
+
+const industries = [
+  {
+    title: 'Beauty and cosmetics',
+    description: 'The platform\'s biggest category. Reviews, tutorials, and ingredient breakdowns.',
+    icon: '<path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/>',
+  },
+  {
+    title: 'Fashion and apparel',
+    description: 'Styling content, seasonal lookbooks, and KOC seeding.',
+    icon: '<path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/>',
+  },
+  {
+    title: 'Food and beverage',
+    description: 'Restaurant reviews, recipes, and product tastings.',
+    icon: '<path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/>',
+  },
+  {
+    title: 'Travel and tourism',
+    description: 'Destination guides and hotel reviews. 64% of Chinese travelers use RedNote for trip planning.',
+    icon: '<path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/>',
+  },
+  {
+    title: 'Luxury',
+    description: 'Storytelling-led content for a high-intent, affluent audience.',
+    icon: '<path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/>',
+  },
+  {
+    title: 'Health and wellness',
+    description: 'Fitness, supplements, and wellness tips. A fast-growing vertical.',
+    icon: '<path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/>',
   },
 ];
 
@@ -73,25 +135,21 @@ const pillars = [
 
 const steps = [
   {
-    number: '01',
     title: 'Audit and strategy',
     description:
       'A 30-minute discovery call, then a category audit: search keywords, competitor accounts, and content gaps. You get a fixed-price proposal with every deliverable listed.',
   },
   {
-    number: '02',
     title: 'Account and content setup',
     description:
       'We handle the Professional Account paperwork, define your content pillars, and produce the first batch of notes. Live within 2 weeks of signing.',
   },
   {
-    number: '03',
     title: 'Launch and KOL activation',
     description:
       'A steady publishing cadence trains the algorithm on your category. KOC seeding and paid boosts bring traffic while the organic side ramps up.',
   },
   {
-    number: '04',
     title: 'Optimize and scale',
     description:
       'We track CES engagement data and search rankings, cut what stalls, and double down on the formats and keywords that convert.',
@@ -101,28 +159,31 @@ const steps = [
 const caseStudies = [
   {
     client: 'AGE 20\'s',
+    image: '/images/clients/Age20/Age20-Picture11.webp',
+    imageAlt: 'AGE 20\'s Little Milk Brick foundation campaign visual for RedNote',
+    metric: '750K',
+    metricLabel: 'impressions against a 300K target',
     summary: 'A Korean beauty brand launching its Little Milk Brick foundation in China. The RedNote campaign hit 750K impressions against a 300K target, and the product nickname went organic.',
     href: '/work/age20s/',
   },
   {
     client: 'Camper',
+    image: '/images/clients/Camper/Camper-Case-Study-Hero.jpg',
+    imageAlt: 'Camper footwear campaign visual for China social media',
+    metric: '38%',
+    metricLabel: 'of e-commerce traffic from the smallest audience',
     summary: 'A European footwear brand that grew from 43K to 187K followers in 18 months. RedNote had the smallest audience but drove 38% of all e-commerce traffic.',
     href: '/work/camper/',
   },
   {
     client: 'Mission Foods',
+    image: '/images/clients/MissionFoods/head-pic.jpg',
+    imageAlt: 'Mission Foods campaign visual for the China launch',
+    metric: 'Gen Z',
+    metricLabel: 'campaigns for a new food category',
     summary: 'Launching corn chips, an unfamiliar category, in China. RedNote KOLs showed the product in real life, and food pairing content made it feel local.',
     href: '/work/mission-foods/',
   },
-];
-
-const industries = [
-  { title: 'Beauty and cosmetics', description: 'The platform\'s biggest category. Reviews, tutorials, and ingredient breakdowns.' },
-  { title: 'Fashion and apparel', description: 'Styling content, seasonal lookbooks, and KOC seeding.' },
-  { title: 'Food and beverage', description: 'Restaurant reviews, recipes, and product tastings.' },
-  { title: 'Travel and tourism', description: 'Destination guides and hotel reviews. 64% of Chinese travelers use RedNote for trip planning.' },
-  { title: 'Luxury', description: 'Storytelling-led content for a high-intent, affluent audience.' },
-  { title: 'Health and wellness', description: 'Fitness, supplements, and wellness tips. A fast-growing vertical.' },
 ];
 
 const faqs = [
@@ -146,6 +207,26 @@ const faqs = [
     q: 'Do we need a Chinese business license or entity?',
     a: 'Not for the account. A translated overseas business license is enough for a Professional Account. Paid advertising is the exception: the Juguang ad platform requires a Chinese entity to open an ad account. We run ad accounts on behalf of overseas clients through our local structure, with weekly spend reports and full visibility.',
   },
+  {
+    q: 'Who uses RedNote, and what do they use it for?',
+    a: 'Around 350 million people use RedNote every month. The core audience is young, urban, and roughly 70 percent female, with strong spending power. They treat it as a search engine for real product experiences: what to buy, where to travel, what actually works. That purchase intent is why conversion-focused brands start here.',
+  },
+  {
+    q: 'RedNote or Douyin: which is right for my brand?',
+    a: 'They do different jobs. Douyin is entertainment video with a fast algorithmic feed, built for reach and impulse buys. RedNote is slower and search-driven: people research before they buy, and a good note keeps bringing traffic for months. High-consideration categories like beauty, fashion, and travel usually start on RedNote. Many brands end up running both.',
+  },
+  {
+    q: 'How do KOL and KOC campaigns work on RedNote?',
+    a: 'Paid creator work runs through Pugongying, the platform\'s official influencer marketplace. Bookings made outside it risk content takedowns. We shortlist creators with verified audience data, then handle briefs, contracts, payments, and per-post reporting. On RedNote, dozens of small KOC reviews often beat one celebrity post.',
+  },
+  {
+    q: 'Can our content be in English?',
+    a: 'Chinese users search in Chinese, so English notes barely surface. Everything we publish is written natively in Mandarin by our Shanghai team, not translated. English only reaches the small overseas audience that joined in early 2025. For selling in China, it stays a Mandarin platform.',
+  },
+  {
+    q: 'What makes a note perform on RedNote?',
+    a: 'Search keywords in the title, a strong cover image, and a first-person voice that reads like a real recommendation. Hard-sell copy gets muted by the algorithm, and undeclared ads risk takedowns, so we declare commercial notes properly through the platform. Every note we publish is built around a keyword plan, and we track which ones rank.',
+  },
 ];
 
 const pageSchemas = [
@@ -164,40 +245,103 @@ const pageSchemas = [
   title="RedNote Agency | Xiaohongshu (Little Red Book) Marketing"
   description="Grow your brand on RedNote (Xiaohongshu / Little Red Book). We run KOL, content, and ad campaigns from Shanghai. Fixed scope, fixed price. Book a call."
   schema={pageSchemas}
-  omitLocales={['fr', 'zh', 'de', 'es']}
 >
-  <!-- Hero: Dark hero banner (Style A) -->
-  <section class="w-full bg-[#1A1A1A] py-[80px] max-[640px]:py-[48px] relative overflow-hidden">
-    <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/rednote-hero.webp')" aria-hidden="true"></div>
-    <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[140px] max-[640px]:text-[80px] font-medium text-[#FFFFFF] opacity-[0.03] pointer-events-none select-none whitespace-nowrap" aria-hidden="true">
+  <!-- The red thread: scroll progress -->
+  <div class="red-thread" data-thread aria-hidden="true"></div>
+
+  <!-- ============ HERO (ink bookend) ============ -->
+  <section class="w-full bg-[#1A1A1A] relative overflow-hidden">
+    <span
+      class="hero-watermark absolute top-[6%] right-[-30px] z-[2] text-[240px] max-[640px]:text-[110px] font-medium text-[#FFFFFF] opacity-[0.03] pointer-events-none select-none whitespace-nowrap leading-none"
+      aria-hidden="true"
+      data-parallax="0.1"
+    >
       小红书
     </span>
     <Container class="relative z-[1]">
-      <div class="max-w-[800px] mx-auto text-center">
-        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">
-          RedNote agency
-        </p>
-        <h1 class="text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] text-[#FFFFFF] mb-[8px]">
-          RedNote (Xiaohongshu / Little Red Book) marketing agency
-        </h1>
-        <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal mb-[24px]">
-          One platform, three names, 350M+ monthly users. We run KOL campaigns, content, ads, and social commerce on RedNote for Western brands. From Shanghai, every day. Fixed scope. Fixed price.
-        </p>
-        <Button variant="primary" href="/contact/">Book a call</Button>
+      <div class="grid grid-cols-[1.05fr_0.95fr] max-[900px]:grid-cols-1 gap-[56px] max-[900px]:gap-[24px] items-center pt-[88px] pb-[72px] max-[640px]:pt-[48px] max-[640px]:pb-[48px]">
+        <div>
+          <p class="flex items-center gap-[10px] mb-[20px]" data-hero-reveal style="--d: 0ms">
+            <span class="seal" aria-hidden="true">红</span>
+            <img src="/images/platforms/rednote-logo.svg" alt="" width="22" height="22" class="block" aria-hidden="true" />
+            <span class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333]">RedNote agency</span>
+          </p>
+          <h1 class="hero-title text-[#FFFFFF] mb-[20px]" data-hero-reveal style="--d: 80ms">
+            RedNote (Xiaohongshu / Little Red Book) marketing agency
+          </h1>
+          <p class="text-[17px] max-[640px]:text-[15px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[460px] mb-[32px]" data-hero-reveal style="--d: 160ms">
+            One platform, four names, 350M+ monthly users. We run KOL campaigns, content, ads, and social commerce on RedNote for Western brands. From Shanghai, every day. Fixed scope. Fixed price.
+          </p>
+          <div class="flex items-center gap-[12px] flex-wrap mb-[12px]" data-hero-reveal style="--d: 240ms">
+            <Button variant="primary" href="/contact/">Book a call</Button>
+            <Button variant="secondary-dark" href="#results">See the results</Button>
+          </div>
+          <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal" data-hero-reveal style="--d: 300ms">
+            A 30-minute call. No pitch deck.
+          </p>
+        </div>
+
+        <div class="relative max-w-[500px] mx-auto w-full max-[900px]:max-w-[380px]" data-hero-reveal style="--d: 200ms">
+          <img
+            src="/images/rednote-agency/hero-phones-blend.webp"
+            alt="Two phones showing the real RedNote app: the note discovery grid and a single product review note"
+            width="665"
+            height="672"
+            class="hero-float w-full h-auto block"
+            fetchpriority="high"
+          />
+        </div>
+      </div>
+
+      <div class="grid grid-cols-4 max-[900px]:grid-cols-2 gap-[24px] max-[640px]:gap-[16px] border-t border-[rgba(255,255,255,0.1)] py-[32px] max-[640px]:py-[24px]" data-hero-reveal style="--d: 360ms">
+        {heroStats.map((stat) => (
+          <div>
+            <p class="text-[32px] max-[640px]:text-[26px] font-medium leading-[1.1] text-[#FFFFFF] mb-[4px] tabular-nums">
+              <span data-count={stat.value} data-decimals={stat.decimals}>0</span><span>{stat.suffix}</span>
+            </p>
+            <p class="text-[12px] text-[rgba(255,255,255,0.4)] font-normal leading-[1.4]">{stat.label}</p>
+          </div>
+        ))}
       </div>
     </Container>
   </section>
 
-  <!-- What is Xiaohongshu -->
-  <section class="mt-[96px] max-[640px]:mt-[64px]">
+  <!-- ============ MANIFESTO + ECOSYSTEM (one blended block) ============ -->
+  <section class="mt-[96px] max-[640px]:mt-[56px]">
     <Container>
-      <div class="grid grid-cols-2 max-[768px]:grid-cols-1 gap-[48px] max-[768px]:gap-[32px] items-start">
+      <figure class="m-0 bg-[#F7F2EE] rounded-[10px] p-[40px] max-[1024px]:p-[28px] max-[640px]:p-[20px] grid grid-cols-[0.9fr_1.1fr] max-[768px]:grid-cols-1 gap-[40px] max-[768px]:gap-[24px] items-center" data-reveal>
         <div>
-          <SectionBar />
-          <SectionHeading overline="What is RedNote">
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+            Why RedNote comes first for discovery
+          </p>
+          <p class="manifesto" data-manifesto>
+            In China, buying starts with a search on RedNote. 350 million people check real reviews before they spend. Ads do not win here. <span class="manifesto-hl">Trust</span> does. We build the notes, reviews, and creator voices that earn it.
+          </p>
+        </div>
+        <div>
+          <img
+            src="/images/rednote-agency/ecosystem-banner-tight.webp"
+            alt="Three phones showing the RedNote journey: the discovery grid, a product review note, and search results"
+            width="1000"
+            height="580"
+            loading="lazy"
+            class="w-full h-auto block rounded-[8px]"
+          />
+          <figcaption class="text-[13px] text-[#5C5C5C] font-normal leading-[1.4] mt-[12px] text-center">
+            One app, three jobs: discovery feed, honest reviews, and search.
+          </figcaption>
+        </div>
+      </figure>
+
+      <div class="grid grid-cols-2 max-[768px]:grid-cols-1 gap-[48px] max-[768px]:gap-[32px] items-start mt-[64px] max-[640px]:mt-[40px]">
+        <div data-reveal>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">
+            What is RedNote
+          </p>
+          <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">
             Xiaohongshu, Little Red Book, RED, and RedNote explained
-          </SectionHeading>
-          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[#1A1A1A] max-w-[680px] mt-[16px]">
+          </h2>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[#1A1A1A] max-w-[560px]">
             <p>
               RedNote (小红书 / Xiaohongshu) is China's product discovery platform. 350M+ monthly active users, 1B+ searches per month, and 90% of content created by users, not brands (May 2026).
             </p>
@@ -209,7 +353,7 @@ const pageSchemas = [
             </p>
           </div>
         </div>
-        <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+        <div class="bg-[#F7F2EE] rounded-[10px] p-[28px] max-[640px]:p-[20px]" data-reveal style="--d: 120ms">
           <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
             Why the platform has so many names
           </p>
@@ -226,99 +370,91 @@ const pageSchemas = [
     </Container>
   </section>
 
-  <!-- Our Xiaohongshu marketing services -->
-  <section class="mt-[96px] max-[640px]:mt-[64px]">
+  <!-- ============ SERVICES (rice-paper band, sticky scrollytelling) ============ -->
+  <section class="mt-[128px] max-[640px]:mt-[72px] w-full bg-[#F7F2EE] py-[96px] max-[640px]:py-[56px]">
     <Container>
-      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
-        <div class="flex justify-center mb-[12px]">
-          <SectionBar />
-        </div>
-        <SectionHeading overline="Our RedNote marketing services">
-          Six services. Each with a clear deliverable.
-        </SectionHeading>
-      </div>
-
-      <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
-        {services.map((service) => (
-          <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-            <p class="text-[12px] font-medium text-[#CC3333] leading-none mb-[8px]">{service.number}</p>
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">{service.title}</h3>
-            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5]">{service.description}</p>
-          </div>
-        ))}
-      </div>
-
-      <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px] mt-[16px]">
-        <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] max-w-[680px]">
-          <span class="text-[#1A1A1A] font-medium">Need more than one platform?</span> We also grow brands on <a href="/platforms/wechat/" class="text-[#CC3333] hover:underline">WeChat</a>, <a href="/platforms/douyin/" class="text-[#CC3333] hover:underline">Douyin</a>, Weibo, and 14 more. One team, one strategy, one report.
-        </p>
-      </div>
-    </Container>
-  </section>
-
-  <!-- Why TheRedScroll -->
-  <section class="mt-[96px] max-[640px]:mt-[64px]">
-    <Container>
-      <div class="grid grid-cols-[340px_1fr] max-[1024px]:grid-cols-[280px_1fr] max-[768px]:grid-cols-1 gap-[48px] max-[768px]:gap-[32px]">
+      <div class="grid grid-cols-[1fr_1fr] max-[900px]:grid-cols-1 gap-[64px] max-[1024px]:gap-[40px]" data-svc>
+        <!-- Sticky header + media panel -->
         <div>
-          <div class="sticky top-[84px] max-[640px]:static">
-            <SectionBar />
-            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">Why TheRedScroll</p>
-            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">
-              We analyzed 37 China marketing agencies. 0 out of 37 offer fixed-price packages.
-            </h2>
-            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
-              100% quote custom prices with unclear deliverables. Fewer than 3 out of 37 use AI for content production. We do things differently. (TheRedScroll competitive analysis, April 2026.)
-            </p>
+          <div class="sticky top-[104px] max-[900px]:static">
+            <div class="mb-[32px] max-[900px]:mb-[8px]" data-reveal>
+              <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Our RedNote marketing services</p>
+              <h2 class="text-[32px] max-[640px]:text-[24px] font-medium leading-[1.15] tracking-[-0.01em] text-[#1A1A1A] mb-[12px]">
+                Six services. Each with a clear deliverable.
+              </h2>
+              <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] max-w-[420px] m-0">
+                Everything is listed in your scope of work before you sign. No vague retainers.
+              </p>
+            </div>
+            <div class="svc-frame relative max-[900px]:hidden">
+              <div class="relative w-full aspect-[1344/570] rounded-[10px] overflow-hidden bg-[#FFFFFF]">
+                {services.map((service, i) => (
+                  <img
+                    src={service.image}
+                    alt={service.imageAlt}
+                    width="1344"
+                    height="570"
+                    loading={i === 0 ? 'eager' : 'lazy'}
+                    class:list={['svc-img absolute inset-0 w-full h-full object-cover', i === 0 && 'is-active']}
+                    data-svc-img={i}
+                  />
+                ))}
+              </div>
+            </div>
+            <div class="flex items-center gap-[16px] mt-[24px] max-[900px]:hidden">
+              <div class="flex gap-[6px] grow" aria-hidden="true">
+                {services.map((_, i) => (
+                  <span class:list={['svc-tick', i === 0 && 'is-active']} data-svc-tick={i}></span>
+                ))}
+              </div>
+              <p class="text-[13px] text-[#5C5C5C] font-normal leading-none m-0 shrink-0" data-svc-caption aria-hidden="true">{services[0].title}</p>
+            </div>
           </div>
         </div>
-        <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
-          {pillars.map((pillar) => (
-            <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-              <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">{pillar.title}</h3>
-              <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5]">{pillar.description}</p>
+
+        <!-- Scrolling step cards -->
+        <div class="flex flex-col gap-[16px]">
+          {services.map((service, i) => (
+            <div class:list={['svc-step bg-[#FFFFFF] rounded-[10px] p-[32px] max-[640px]:p-[20px]', i === 0 && 'is-active']} data-svc-step={i}>
+              <div class="flex items-center gap-[12px] mb-[16px]">
+                <span class="svc-seal" aria-hidden="true">{service.glyph}</span>
+                <span class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333]">{service.tag}</span>
+              </div>
+              <h3 class="text-[22px] max-[640px]:text-[19px] font-medium leading-[1.25] text-[#1A1A1A] mb-[10px]">{service.title}</h3>
+              <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.65] max-w-[480px] mb-[16px]">{service.description}</p>
+              <ul class="flex flex-wrap gap-[8px] list-none m-0 p-0" aria-label={`${service.title}: deliverables`}>
+                {service.deliverables.map((d) => (
+                  <li class="text-[12px] font-normal leading-none text-[#1A1A1A] bg-[#F7F2EE] border-[0.5px] border-[#E8E0D8] rounded-[6px] px-[10px] py-[7px]">{d}</li>
+                ))}
+              </ul>
+              <img
+                src={service.image}
+                alt={service.imageAlt}
+                width="1344"
+                height="570"
+                loading="lazy"
+                class="hidden max-[900px]:block w-full h-auto rounded-[8px] mt-[16px]"
+              />
             </div>
           ))}
-        </div>
-      </div>
-    </Container>
-  </section>
-
-  <!-- Our process -->
-  <section class="mt-[96px] max-[640px]:mt-[64px]">
-    <Container>
-      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
-        <div class="flex justify-center mb-[12px]">
-          <SectionBar />
-        </div>
-        <SectionHeading overline="Our process">
-          From strategy to scale in 4 steps
-        </SectionHeading>
-      </div>
-
-      <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
-        {steps.map((step) => (
-          <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
-            <p class="text-[12px] font-medium text-[#CC3333] leading-none mb-[8px]">{step.number}</p>
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">{step.title}</h3>
-            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">{step.description}</p>
+          <div class="py-[16px] flex items-center justify-between gap-[16px] flex-wrap" data-reveal>
+            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] m-0 max-w-[420px]">
+              <span class="text-[#1A1A1A] font-medium">Need more than one platform?</span> We also grow brands on WeChat, Douyin, Weibo, and 14 more.
+            </p>
+            <a href="/platforms/others/" class="text-[14px] text-[#CC3333] font-medium shrink-0 hover:underline">All platforms &rarr;</a>
           </div>
-        ))}
-      </div>
-
-      <div class="text-center mt-[40px]">
-        <Button variant="primary" href="/contact/">Book a call</Button>
+        </div>
       </div>
     </Container>
   </section>
 
-  <!-- Case studies -->
-  <section class="mt-[96px] max-[640px]:mt-[64px]">
+  <!-- ============ CASE STUDIES ============ -->
+  <section id="results" class="mt-[128px] max-[640px]:mt-[72px] scroll-mt-[80px]">
     <Container>
-      <div class="flex items-end justify-between gap-[32px] max-[640px]:flex-col max-[640px]:items-start max-[640px]:gap-[16px] mb-[32px]">
+      <div class="flex items-end justify-between gap-[32px] max-[640px]:flex-col max-[640px]:items-start max-[640px]:gap-[16px] mb-[40px] max-[640px]:mb-[24px]" data-reveal>
         <div class="max-w-[560px]">
-          <SectionBar />
-          <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[8px]">
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Case studies</p>
+          <h2 class="text-[36px] max-[640px]:text-[24px] font-medium leading-[1.15] tracking-[-0.01em] text-[#1A1A1A] mb-[8px]">
             Results from the ground
           </h2>
           <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
@@ -329,33 +465,45 @@ const pageSchemas = [
       </div>
 
       <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[24px] max-[640px]:gap-[16px]">
-        {caseStudies.map((cs) => (
-          <a href={cs.href} class="bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[8px] p-[24px] max-[640px]:p-[20px] block no-underline transition-colors duration-150 hover:border-[rgba(0,0,0,0.15)]">
-            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">Case study</p>
-            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">{cs.client}</h3>
-            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] mb-[12px]">{cs.summary}</p>
-            <span class="text-[14px] text-[#CC3333] font-medium">Read the case study &rarr;</span>
+        {caseStudies.map((cs, i) => (
+          <a href={cs.href} class="cs-card group bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[8px] overflow-hidden flex flex-col no-underline" data-reveal style={`--d: ${i * 100}ms`}>
+            <div class="overflow-hidden relative">
+              <img
+                src={cs.image}
+                alt={cs.imageAlt}
+                width="800"
+                height="450"
+                loading="lazy"
+                class="cs-img w-full h-[200px] max-[640px]:h-[180px] object-cover block"
+              />
+            </div>
+            <div class="p-[28px] max-[640px]:p-[20px] flex flex-col grow">
+              <p class="text-[40px] max-[640px]:text-[32px] font-medium leading-none text-[#1A1A1A] mb-[4px] tabular-nums">{cs.metric}</p>
+              <p class="text-[13px] text-[#5C5C5C] font-normal leading-[1.4] mb-[20px]">{cs.metricLabel}</p>
+              <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">{cs.client}</h3>
+              <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] mb-[20px]">{cs.summary}</p>
+              <span class="text-[14px] text-[#CC3333] font-medium mt-auto inline-flex items-center gap-[6px]">Read the case study <span class="cs-arrow" aria-hidden="true">&rarr;</span></span>
+            </div>
           </a>
         ))}
       </div>
     </Container>
   </section>
 
-  <!-- Industries we serve -->
-  <section class="mt-[96px] max-[640px]:mt-[64px]">
+  <!-- ============ WHO WE HELP ============ -->
+  <section class="mt-[128px] max-[640px]:mt-[72px]">
     <Container>
-      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
-        <div class="flex justify-center mb-[12px]">
-          <SectionBar />
-        </div>
-        <SectionHeading overline="Industries we serve">
-          From beauty to travel. Each vertical has its own playbook.
-        </SectionHeading>
+      <div class="mb-[40px] max-[640px]:mb-[24px] max-w-[680px]" data-reveal>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Who we help</p>
+        <h2 class="text-[36px] max-[640px]:text-[24px] font-medium leading-[1.15] tracking-[-0.01em] text-[#1A1A1A]">
+          Industries that perform on RedNote
+        </h2>
       </div>
 
       <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
-        {industries.map((industry) => (
-          <div class="bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[8px] p-[24px] max-[640px]:p-[20px] transition-colors duration-150 hover:border-[rgba(0,0,0,0.15)]">
+        {industries.map((industry, i) => (
+          <div class="lift-card bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[8px] p-[24px] max-[640px]:p-[20px]" data-reveal style={`--d: ${i * 80}ms`}>
+            <svg class="mb-[16px]" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" set:html={industry.icon} />
             <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">{industry.title}</h3>
             <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5]">{industry.description}</p>
           </div>
@@ -364,48 +512,122 @@ const pageSchemas = [
     </Container>
   </section>
 
-  <!-- Pricing and engagement models -->
-  <section class="mt-[96px] max-[640px]:mt-[64px]">
+  <!-- ============ WHY US ============ -->
+  <section class="mt-[128px] max-[640px]:mt-[72px]">
     <Container>
-      <div class="max-w-[680px]">
-        <SectionBar />
-        <SectionHeading overline="Pricing and engagement models">
-          What working with us costs, without the mystery
-        </SectionHeading>
-        <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[#1A1A1A] mt-[16px]">
-          <p>
-            Three budgets matter on RedNote: the agency fee, ad spend, and KOL fees. Most agencies blur all three. We keep them separate.
-          </p>
-          <p>
-            <span class="font-medium">Agency fees.</span> One fixed monthly price against a clear scope of work. Every note, video, campaign, and report is listed before you sign. No hourly billing, no scope creep charges.
-          </p>
-          <p>
-            <span class="font-medium">Ad spend.</span> Billed at cost through the Juguang platform. No markup, no media commission. You see every number in your monthly report.
-          </p>
-          <p>
-            <span class="font-medium">KOL fees.</span> Passed through transparently. Every creator we book comes with verified engagement data, so you know what you're paying for.
-          </p>
-          <p>
-            Minimum engagement is 3 months. That's what it takes to get past the algorithm's observation window and collect enough data to know what's working. See <a href="/pricing/" class="text-[#CC3333] hover:underline">our pricing page</a> for how packages work.
-          </p>
-        </div>
-        <div class="bg-[#F7F2EE] border-l-[3px] border-[#CC3333] p-[20px] mt-[32px]">
-          <p class="text-[16px] font-normal leading-[1.6] text-[#1A1A1A] m-0">
-            A useful rule: don't spend on ads or KOLs until your account has 15 to 20 solid notes. RedNote users always check the profile before they trust a recommendation.
-          </p>
+      <div class="bg-[#F7F2EE] rounded-[10px] p-[48px] max-[1024px]:p-[32px] max-[640px]:p-[20px]">
+        <div class="grid grid-cols-[300px_1fr] max-[900px]:grid-cols-1 gap-[48px] max-[900px]:gap-[24px]">
+          <div data-reveal>
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Why TheRedScroll</p>
+            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">
+              Four reasons brands choose us
+            </h2>
+            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] m-0">
+              We analyzed 37 China marketing agencies. 0 out of 37 offer fixed-price packages. Fewer than 3 out of 37 use AI for content production. We do things differently. (TheRedScroll competitive analysis, April 2026.)
+            </p>
+          </div>
+          <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-x-[40px] gap-y-[32px] max-[640px]:gap-y-[24px]">
+            {pillars.map((pillar, i) => (
+              <div class="pillar-card" data-reveal style={`--d: ${i * 80}ms`}>
+                <span class="pillar-bar block w-[24px] h-[3px] bg-[#CC3333] mb-[14px]" aria-hidden="true"></span>
+                <h3 class="text-[17px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">{pillar.title}</h3>
+                <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] m-0">{pillar.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </Container>
   </section>
 
-  <!-- FAQ -->
-  <section class="mt-[96px] max-[640px]:mt-[64px]">
+  <!-- ============ PROCESS (drawn line, no numbers) ============ -->
+  <section class="mt-[128px] max-[640px]:mt-[72px]">
+    <Container>
+      <div class="text-center mb-[56px] max-[640px]:mb-[32px]" data-reveal>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Our process</p>
+        <h2 class="text-[36px] max-[640px]:text-[24px] font-medium leading-[1.15] tracking-[-0.01em] text-[#1A1A1A]">
+          From first call to a working RedNote engine
+        </h2>
+      </div>
+
+      <div class="proc relative" data-proc>
+        <span class="proc-rail absolute top-[5px] left-0 right-0 h-[2px] bg-[#E8E0D8] max-[768px]:hidden" aria-hidden="true"></span>
+        <span class="proc-fill absolute top-[5px] left-0 h-[2px] bg-[#CC3333] max-[768px]:hidden" aria-hidden="true" data-proc-fill></span>
+        <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[768px]:grid-cols-1 gap-[40px] max-[768px]:gap-[28px]">
+          {steps.map((step, i) => (
+            <div class="relative" data-reveal style={`--d: ${i * 140}ms`}>
+              <span class="proc-dot block w-[12px] h-[12px] rounded-full bg-[#CC3333] mb-[20px] max-[768px]:mb-[12px] relative z-[1]" aria-hidden="true"></span>
+              <h3 class="text-[20px] max-[640px]:text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">{step.title}</h3>
+              <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] max-w-[320px]">{step.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div class="text-center mt-[48px] max-[640px]:mt-[32px]" data-reveal>
+        <Button variant="primary" href="/contact/">Book a call</Button>
+      </div>
+    </Container>
+  </section>
+
+  <!-- ============ BUDGET TRANSPARENCY ============ -->
+  <section class="mt-[128px] max-[640px]:mt-[72px]">
+    <Container>
+      <div class="mb-[40px] max-[640px]:mb-[24px] max-w-[680px]" data-reveal>
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">What to budget</p>
+        <h2 class="text-[36px] max-[640px]:text-[24px] font-medium leading-[1.15] tracking-[-0.01em] text-[#1A1A1A] mb-[8px]">
+          RedNote costs, without the mystery
+        </h2>
+        <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
+          Three budgets matter: what you pay the agency, what you pay the platform for ads, and what you pay creators. Most agencies blur all three. We keep them separate.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-3 max-[768px]:grid-cols-1 gap-[16px]">
+        <div class="bg-[#F7F2EE] rounded-[10px] p-[32px] max-[640px]:p-[20px]" data-reveal>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Paid to us</p>
+          <h3 class="text-[20px] font-medium leading-[1.3] text-[#1A1A1A] mb-[16px]">Agency fees</h3>
+          <ul class="flex flex-col gap-[10px] list-none m-0 p-0">
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>One fixed monthly price against a clear scope of work</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Every note, video, campaign, and report listed before you sign</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>No hourly billing, no scope creep charges</li>
+          </ul>
+        </div>
+        <div class="bg-[#F7F2EE] rounded-[10px] p-[32px] max-[640px]:p-[20px]" data-reveal style="--d: 120ms">
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Paid to the platform</p>
+          <h3 class="text-[20px] font-medium leading-[1.3] text-[#1A1A1A] mb-[16px]">Ad spend</h3>
+          <ul class="flex flex-col gap-[10px] list-none m-0 p-0">
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Runs through the Juguang ad platform</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Billed at cost, no markup, no media commission</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Weekly spend reports, every number visible</li>
+          </ul>
+        </div>
+        <div class="bg-[#F7F2EE] rounded-[10px] p-[32px] max-[640px]:p-[20px]" data-reveal style="--d: 240ms">
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">Paid to creators</p>
+          <h3 class="text-[20px] font-medium leading-[1.3] text-[#1A1A1A] mb-[16px]">KOL fees</h3>
+          <ul class="flex flex-col gap-[10px] list-none m-0 p-0">
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Fees vary widely by follower tier and category</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Passed through transparently, no hidden margin</li>
+            <li class="flex items-start gap-[10px] text-[14px] text-[#5C5C5C] leading-[1.5]"><span class="text-[#CC3333] mt-[1px]" aria-hidden="true">&rarr;</span>Verified engagement data behind every booking</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-[#F7F2EE] border-l-[3px] border-[#CC3333] p-[20px] mt-[16px]" data-reveal>
+        <p class="text-[16px] font-normal leading-[1.6] text-[#1A1A1A] m-0">
+          The platform doesn't reward impatience: the first 2 to 3 months build your content library and train the algorithm on your category. And don't spend on ads or KOLs until your account has 15 to 20 solid notes, because RedNote users always check the profile before they trust a recommendation.
+        </p>
+      </div>
+    </Container>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="mt-[128px] max-[640px]:mt-[72px]">
     <Container>
       <div class="grid grid-cols-[340px_1fr] max-[1024px]:grid-cols-[280px_1fr] max-[768px]:grid-cols-1 gap-[48px] max-[768px]:gap-[32px]">
         <div>
-          <div class="sticky top-[84px] max-[640px]:static">
-            <SectionBar />
-            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">FAQ</p>
+          <div class="sticky top-[104px] max-[768px]:static" data-reveal>
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[12px]">FAQ</p>
             <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">
               Questions brands ask before hiring a RedNote agency
             </h2>
@@ -415,22 +637,24 @@ const pageSchemas = [
           </div>
         </div>
 
-        <div>
+        <div data-reveal style="--d: 120ms">
           {faqs.map((faq) => (
             <div class="border-b border-[rgba(0,0,0,0.08)]" data-faq>
-              <button
-                class="w-full flex items-center justify-between py-[20px] text-left bg-transparent border-none cursor-pointer group"
-                data-faq-trigger
-                aria-expanded="false"
-              >
-                <h3 class="text-[16px] font-medium leading-[1.3] text-[#1A1A1A] group-hover:text-[#5C5C5C] transition-colors duration-150 pr-[16px]">{faq.q}</h3>
-                <svg class="w-[16px] h-[16px] shrink-0 text-[#5C5C5C] transition-transform duration-300 faq-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M4 6l4 4 4-4"/>
-                </svg>
-              </button>
+              <h3 class="m-0">
+                <button
+                  class="faq-trigger w-full flex items-center justify-between py-[20px] text-left bg-transparent border-none cursor-pointer group"
+                  data-faq-trigger
+                  aria-expanded="false"
+                >
+                  <span class="text-[16px] font-medium leading-[1.4] text-[#1A1A1A] group-hover:text-[#CC3333] transition-colors duration-150 pr-[16px]">{faq.q}</span>
+                  <svg class="w-[16px] h-[16px] shrink-0 text-[#5C5C5C] transition-transform duration-300 faq-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 6l4 4 4-4"/>
+                  </svg>
+                </button>
+              </h3>
               <div class="faq-content overflow-hidden" style="height: 0; opacity: 0;">
                 <div class="pb-[20px]">
-                  <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
+                  <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] max-w-[620px]">
                     {faq.a}
                   </p>
                 </div>
@@ -442,29 +666,35 @@ const pageSchemas = [
     </Container>
   </section>
 
-  <!-- CTA: dark section (the one allowed per page) -->
-  <section class="mt-[96px] max-[640px]:mt-[64px] mb-[96px] max-[640px]:mb-[64px]">
-    <Container>
-      <div class="bg-[#1A1A1A] rounded-[12px] py-[48px] px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] max-[640px]:py-[32px] text-center">
-        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">
-          Start your RedNote strategy
+  <!-- ============ FINAL CTA (ink bookend, full bleed) ============ -->
+  <section class="mt-[128px] max-[640px]:mt-[72px] w-full bg-[#1A1A1A] border-b border-[rgba(255,255,255,0.1)] relative overflow-hidden">
+    <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[200px] max-[640px]:text-[90px] font-medium text-[#FFFFFF] opacity-[0.03] pointer-events-none select-none whitespace-nowrap" aria-hidden="true">
+      小红书
+    </span>
+    <Container class="relative z-[1]">
+      <div class="py-[96px] max-[640px]:py-[56px] text-center">
+        <p class="flex items-center justify-center gap-[10px] mb-[20px]" data-reveal>
+          <span class="seal" aria-hidden="true">红</span>
+          <span class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333]">Start your RedNote strategy</span>
         </p>
-        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[8px]">
-          200M+ people ask RedNote for purchase advice every month. Be part of the answer.
+        <h2 class="text-[40px] max-[640px]:text-[26px] font-medium leading-[1.15] tracking-[-0.01em] text-[#FFFFFF] max-w-[720px] mx-auto mb-[16px]" data-reveal style="--d: 80ms">
+          Chinese consumers are already searching your category. Give them notes worth finding.
         </h2>
-        <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[560px] mx-auto mb-[24px]">
+        <p class="text-[15px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[520px] mx-auto mb-[32px]" data-reveal style="--d: 160ms">
           A 30-minute call. We'll tell you what your brand can do on RedNote with your current setup, and what it would take. No pitch deck.
         </p>
-        <Button variant="primary" href="/contact/">Book a call</Button>
+        <div data-reveal style="--d: 240ms">
+          <Button variant="primary" href="/contact/">Book a call</Button>
+        </div>
 
-        <div class="mt-[40px] pt-[24px] border-t border-[rgba(255,255,255,0.1)]">
+        <div class="mt-[56px] pt-[24px] border-t border-[rgba(255,255,255,0.1)]" data-reveal style="--d: 300ms">
           <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal mb-[12px]">See also</p>
           <div class="flex justify-center gap-[24px] flex-wrap">
             <a href="/platforms/rednote/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">RedNote marketing &rarr;</a>
-            <a href="/services/influencer-marketing/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Influencer marketing &rarr;</a>
-            <a href="/wechat-agency/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">WeChat agency &rarr;</a>
-            <a href="/platforms/douyin/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Douyin marketing &rarr;</a>
             <a href="/services/market-entry/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">China market entry &rarr;</a>
+            <a href="/platforms/wechat/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">WeChat marketing &rarr;</a>
+            <a href="/platforms/douyin/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Douyin marketing &rarr;</a>
+            <a href="/platforms/weibo/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Weibo marketing &rarr;</a>
           </div>
         </div>
       </div>
@@ -472,13 +702,472 @@ const pageSchemas = [
   </section>
 
   <style>
+    /* ---------- Signature: the red thread ---------- */
+    .red-thread {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: #CC3333;
+      transform: scaleX(0);
+      transform-origin: left;
+      z-index: 1100;
+      pointer-events: none;
+    }
+
+    /* ---------- Seal mark ---------- */
+    .seal {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      border: 1.5px solid #CC3333;
+      border-radius: 4px;
+      color: #CC3333;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 1;
+    }
+
+    /* ---------- Hero ---------- */
+    .hero-title {
+      font-size: clamp(40px, 5.4vw, 72px);
+      font-weight: 500;
+      line-height: 1.06;
+      letter-spacing: -0.025em;
+    }
+    .hero-float {
+      animation: heroFloat 7s ease-in-out infinite alternate;
+    }
+    @keyframes heroFloat {
+      from { transform: translateY(0); }
+      to { transform: translateY(-10px); }
+    }
+    [data-hero-reveal] {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+      transition-delay: var(--d, 0ms);
+    }
+    [data-hero-reveal].is-in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ---------- Manifesto ---------- */
+    .manifesto {
+      font-size: clamp(18px, 1.9vw, 24px);
+      font-weight: 500;
+      line-height: 1.4;
+      letter-spacing: -0.01em;
+      color: #1A1A1A;
+      margin: 0;
+    }
+    .manifesto .w {
+      opacity: 0.12;
+      transition: opacity 0.3s ease;
+    }
+    .manifesto .w.is-on {
+      opacity: 1;
+    }
+    .manifesto-hl {
+      color: #CC3333;
+    }
+
+    /* ---------- Scroll reveal ---------- */
+    [data-reveal] {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+      transition-delay: var(--d, 0ms);
+    }
+    [data-reveal].is-in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ---------- Scope arrows ---------- */
+    .scope-arrow {
+      opacity: 0;
+      transform: translateX(-6px);
+      transition: opacity 0.15s ease, transform 0.15s ease;
+    }
+    a:hover .scope-arrow,
+    a:focus-visible .scope-arrow {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* ---------- Services scrollytelling ---------- */
+    /* Print-offset frame: a vermillion outline registered slightly off the media card */
+    .svc-frame {
+      isolation: isolate;
+    }
+    .svc-frame::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border: 1.5px solid #CC3333;
+      border-radius: 10px;
+      transform: translate(10px, 10px);
+      z-index: -1;
+      pointer-events: none;
+    }
+    .svc-img {
+      opacity: 0;
+      transform: scale(1);
+      transition: opacity 0.45s ease, transform 6s ease;
+    }
+    .svc-img.is-active {
+      opacity: 1;
+      transform: scale(1.04);
+    }
+    .svc-tick {
+      display: block;
+      height: 3px;
+      flex: 1;
+      background: #E8E0D8;
+      transition: background 0.3s ease;
+    }
+    .svc-tick.is-active {
+      background: #CC3333;
+    }
+    .svc-seal {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border: 1.5px solid #CC3333;
+      border-radius: 6px;
+      color: #CC3333;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    .svc-step {
+      border: 0.5px solid rgba(0, 0, 0, 0.08);
+      transition: opacity 0.3s ease, border-color 0.3s ease;
+    }
+    @media (min-width: 901px) {
+      .svc-step { opacity: 0.45; }
+      .svc-step.is-active { opacity: 1; border-color: rgba(0, 0, 0, 0.15); }
+      .svc-step.is-active .svc-seal { background: #CC3333; color: #FFFFFF; }
+    }
+
+    /* ---------- Cards ---------- */
+    .lift-card {
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    .lift-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(0, 0, 0, 0.15);
+    }
+    .cs-card {
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    .cs-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(0, 0, 0, 0.15);
+    }
+    .cs-arrow {
+      display: inline-block;
+      transition: transform 0.2s ease;
+    }
+    .cs-card:hover .cs-arrow {
+      transform: translateX(4px);
+    }
+    .cs-img {
+      transition: transform 0.3s ease;
+    }
+    .cs-card:hover .cs-img {
+      transform: scale(1.03);
+    }
+    .pillar-bar {
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+    .pillar-card:hover .pillar-bar {
+      transform: scaleX(1.75);
+    }
+
+    /* ---------- Process line ---------- */
+    .proc-fill {
+      width: 0;
+      transition: width 1.2s ease;
+    }
+    .proc.is-in .proc-fill {
+      width: 100%;
+    }
+
+    /* ---------- FAQ ---------- */
     .faq-content {
       transition: height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+    }
+
+    /* ---------- Quality floor: focus + smooth scroll ---------- */
+    .cs-card:focus-visible,
+    .faq-trigger:focus-visible {
+      outline: 2px solid #CC3333;
+      outline-offset: 2px;
+    }
+    :global(html) {
+      scroll-behavior: smooth;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      :global(html) {
+        scroll-behavior: auto;
+      }
+    }
+
+    /* ---------- Reduced motion ---------- */
+    @media (prefers-reduced-motion: reduce) {
+      [data-hero-reveal],
+      [data-reveal] {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+      }
+      .hero-float {
+        animation: none;
+      }
+      .manifesto .w {
+        opacity: 1 !important;
+        transition: none;
+      }
+      .svc-step {
+        opacity: 1 !important;
+      }
+      .svc-img,
+      .svc-img.is-active {
+        transform: none;
+        transition: opacity 0.45s ease;
+      }
+      .proc-fill {
+        transition: none;
+      }
+      .proc .proc-fill {
+        width: 100%;
+      }
+      .lift-card:hover,
+      .cs-card:hover {
+        transform: none;
+      }
     }
   </style>
 
   <script>
-    // FAQ accordion
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // --- Hero load-in ---
+    requestAnimationFrame(() => {
+      document.querySelectorAll('[data-hero-reveal]').forEach((el) => el.classList.add('is-in'));
+    });
+
+    // --- The red thread: scroll progress ---
+    const thread = document.querySelector('[data-thread]') as HTMLElement | null;
+    if (thread) {
+      let threadTick = false;
+      const drawThread = () => {
+        const doc = document.documentElement;
+        const max = doc.scrollHeight - window.innerHeight;
+        const p = max > 0 ? Math.min(window.scrollY / max, 1) : 0;
+        thread.style.transform = `scaleX(${p})`;
+        threadTick = false;
+      };
+      window.addEventListener('scroll', () => {
+        if (!threadTick) {
+          threadTick = true;
+          requestAnimationFrame(drawThread);
+        }
+      }, { passive: true });
+      drawThread();
+    }
+
+    // --- Scroll reveal ---
+    const revealEls = document.querySelectorAll('[data-reveal]');
+    if (reducedMotion) {
+      revealEls.forEach((el) => el.classList.add('is-in'));
+    } else {
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-in');
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
+      );
+      revealEls.forEach((el) => revealObserver.observe(el));
+    }
+
+    // --- Count-up numbers ---
+    const formatCount = (value: number, decimals: number) =>
+      value.toLocaleString('en-US', { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
+
+    const animateCount = (el: HTMLElement) => {
+      const target = parseFloat(el.dataset.count || '0');
+      const decimals = parseInt(el.dataset.decimals || '0', 10);
+      if (reducedMotion) {
+        el.textContent = formatCount(target, decimals);
+        return;
+      }
+      const duration = 1400;
+      let t0: number | null = null;
+      const tick = (now: number) => {
+        if (t0 === null) t0 = now;
+        const p = Math.min((now - t0) / duration, 1);
+        const eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = formatCount(target * eased, decimals);
+        if (p < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    };
+
+    const countObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            animateCount(entry.target as HTMLElement);
+            countObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+    document.querySelectorAll('[data-count]').forEach((el) => countObserver.observe(el));
+
+    // --- Hero watermark parallax ---
+    const parallaxEls = Array.from(document.querySelectorAll('[data-parallax]')) as HTMLElement[];
+    if (!reducedMotion && parallaxEls.length) {
+      let ticking = false;
+      const applyParallax = () => {
+        const y = window.scrollY;
+        parallaxEls.forEach((el) => {
+          if (y < window.innerHeight * 1.2) {
+            const speed = parseFloat(el.dataset.parallax || '0');
+            el.style.transform = `translateY(${y * speed}px)`;
+          }
+        });
+        ticking = false;
+      };
+      window.addEventListener('scroll', () => {
+        if (!ticking) {
+          ticking = true;
+          requestAnimationFrame(applyParallax);
+        }
+      }, { passive: true });
+    }
+
+    // --- Manifesto: word-by-word reveal ---
+    const manifesto = document.querySelector('[data-manifesto]') as HTMLElement | null;
+    if (manifesto) {
+      // Wrap each word in a span, preserving the highlight span
+      const wrapWords = (node: Node) => {
+        if (node.nodeType === Node.TEXT_NODE) {
+          const frag = document.createDocumentFragment();
+          (node.textContent || '').split(/(\s+)/).forEach((part) => {
+            if (/^\s+$/.test(part) || part === '') {
+              frag.appendChild(document.createTextNode(part));
+            } else {
+              const span = document.createElement('span');
+              span.className = 'w';
+              span.textContent = part;
+              frag.appendChild(span);
+            }
+          });
+          node.parentNode?.replaceChild(frag, node);
+        } else if (node.nodeType === Node.ELEMENT_NODE) {
+          Array.from(node.childNodes).forEach(wrapWords);
+        }
+      };
+      Array.from(manifesto.childNodes).forEach(wrapWords);
+      const words = Array.from(manifesto.querySelectorAll('.w')) as HTMLElement[];
+
+      if (reducedMotion) {
+        words.forEach((w) => w.classList.add('is-on'));
+      } else {
+        let mTick = false;
+        const drawManifesto = () => {
+          const rect = manifesto.getBoundingClientRect();
+          const viewH = window.innerHeight;
+          // 0 when the block enters the lower third, 1 when its bottom passes the middle
+          const start = viewH * 0.85;
+          const end = viewH * 0.35;
+          const p = Math.min(Math.max((start - rect.top) / (start - end), 0), 1);
+          const active = Math.floor(p * words.length);
+          words.forEach((w, i) => w.classList.toggle('is-on', i < active));
+          mTick = false;
+        };
+        window.addEventListener('scroll', () => {
+          if (!mTick) {
+            mTick = true;
+            requestAnimationFrame(drawManifesto);
+          }
+        }, { passive: true });
+        drawManifesto();
+      }
+    }
+
+    // --- Services scrollytelling ---
+    const svcSteps = Array.from(document.querySelectorAll('[data-svc-step]')) as HTMLElement[];
+    const svcImgs = Array.from(document.querySelectorAll('[data-svc-img]')) as HTMLElement[];
+    const svcTicks = Array.from(document.querySelectorAll('[data-svc-tick]')) as HTMLElement[];
+    const svcCaption = document.querySelector('[data-svc-caption]') as HTMLElement | null;
+    if (svcSteps.length && svcImgs.length) {
+      const setActive = (index: string | undefined) => {
+        svcImgs.forEach((img) => img.classList.toggle('is-active', img.dataset.svcImg === index));
+        svcTicks.forEach((tick) => tick.classList.toggle('is-active', tick.dataset.svcTick === index));
+        svcSteps.forEach((step) => {
+          const on = step.dataset.svcStep === index;
+          step.classList.toggle('is-active', on);
+          if (on && svcCaption) {
+            const heading = step.querySelector('h3');
+            if (heading) svcCaption.textContent = heading.textContent;
+          }
+        });
+      };
+      setActive('0');
+      const stepObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              setActive((entry.target as HTMLElement).dataset.svcStep);
+            }
+          });
+        },
+        { rootMargin: '-45% 0px -45% 0px', threshold: 0 }
+      );
+      svcSteps.forEach((step) => stepObserver.observe(step));
+    }
+
+    // --- Process line draw ---
+    const proc = document.querySelector('[data-proc]') as HTMLElement | null;
+    if (proc) {
+      if (reducedMotion) {
+        proc.classList.add('is-in');
+      } else {
+        const procObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                proc.classList.add('is-in');
+                procObserver.unobserve(proc);
+              }
+            });
+          },
+          { threshold: 0.3 }
+        );
+        procObserver.observe(proc);
+      }
+    }
+
+    // --- FAQ accordion ---
     document.querySelectorAll('[data-faq]').forEach((item) => {
       const trigger = item.querySelector('[data-faq-trigger]') as HTMLButtonElement;
       const content = item.querySelector('.faq-content') as HTMLElement;
