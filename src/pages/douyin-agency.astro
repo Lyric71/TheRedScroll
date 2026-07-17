@@ -1,0 +1,477 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import UpdatedDate from '../components/ui/UpdatedDate.astro';
+import { faqPageSchema, serviceSchema } from '../lib/schema';
+import Container from '../components/ui/Container.astro';
+import SectionBar from '../components/ui/SectionBar.astro';
+import SectionHeading from '../components/ui/SectionHeading.astro';
+import Button from '../components/ui/Button.astro';
+
+const services = [
+  {
+    title: 'Account setup and verification',
+    description:
+      'We register and verify your enterprise account, including blue V verification. Foreign companies need a Chinese business license or an authorized agency. We handle both paths, so you can start without a local entity.',
+    result: 'A live, verified Douyin account ready to publish.',
+  },
+  {
+    title: 'Content strategy and video production',
+    description:
+      'Douyin-native short video produced by our team in China. Product demos, tutorials, trend formats, and mini-dramas. HubStudio.ai speeds up production. Native Mandarin speakers write and edit every piece.',
+    result: 'Vertical video content built for the Douyin algorithm.',
+  },
+  {
+    title: 'KOL and KOC campaigns',
+    description:
+      'KOL (Key Opinion Leader) and KOC (Key Opinion Consumer) campaigns sourced through Xingtu, Douyin\'s official creator marketplace, plus our own network. Every creator is vetted for fake followers and audience fit. You approve the final list.',
+    result: 'Influencer campaigns with verified engagement.',
+  },
+  {
+    title: 'Paid advertising via Ocean Engine',
+    description:
+      'Ocean Engine (巨量引擎) is ByteDance\'s ad platform for Douyin. TopView for launches. In-Feed Ads for traffic. Search Ads for high-intent buyers. DOU+ for testing content. Ad spend is billed at cost, no markups.',
+    result: 'Ads that reach the right audience with transparent spend.',
+  },
+  {
+    title: 'Livestream and Douyin Shop',
+    description:
+      'Live commerce is built into Douyin. We plan and run live selling sessions: host selection, product scripting, real-time engagement. We also set up and optimize your Douyin Shop (抖音小店) storefront.',
+    result: 'Livestreams and a storefront that convert viewers into buyers.',
+  },
+  {
+    title: 'Analytics, reporting, and optimization',
+    description:
+      'Monthly reports with clear numbers. Follower growth, views, engagement rate, ad efficiency, GMV, and ROAS where commerce is live. What worked, what didn\'t, and what changes next month.',
+    result: 'One report a month you can put in front of your board.',
+  },
+];
+
+const steps = [
+  {
+    number: '01',
+    title: 'Audit',
+    description:
+      'We review your category on Douyin. Competitors, content formats, price points, and what the algorithm rewards in your vertical right now.',
+  },
+  {
+    number: '02',
+    title: 'Strategy',
+    description:
+      'Content pillars, posting schedule, KOL shortlist, ad plan, and KPI targets. Everything written into a clear SOW (Scope of Work) with a fixed price.',
+  },
+  {
+    number: '03',
+    title: 'Localization',
+    description:
+      'Nothing gets translated. Our Mandarin-native team creates your content from scratch for Chinese viewers. Translated content underperforms badly on Douyin.',
+  },
+  {
+    number: '04',
+    title: 'Launch',
+    description:
+      'Account verified, first content live within 2 weeks of signing. Your account manager works with you in English. No Chinese language skills needed on your side.',
+  },
+  {
+    number: '05',
+    title: 'Scale',
+    description:
+      'We double down on what performs. Winning formats get more budget through DOU+ and Ocean Engine. Underperformers get cut. Monthly reports track it all.',
+  },
+];
+
+const differentiators = [
+  {
+    title: 'Team on the ground',
+    description: 'Shanghai and Hong Kong. Native Mandarin speakers who post on Douyin every day, not consultants who read about it.',
+  },
+  {
+    title: 'Fixed scope, fixed price',
+    description: 'We benchmarked 37 agencies in April 2026. 0 out of 37 offer fixed-price packages. We do. Every deliverable is defined upfront.',
+  },
+  {
+    title: 'English-language account management',
+    description: 'One dedicated account manager who knows your brand. You get clear communication in English and content in native Mandarin.',
+  },
+  {
+    title: 'Compliance handled',
+    description: 'Business license paths, account verification, content rules, and ad review. We deal with the paperwork so your campaigns don\'t stall.',
+  },
+];
+
+const faqs = [
+  {
+    q: 'Can foreign companies advertise on Douyin?',
+    a: 'Yes. Foreign brands advertise on Douyin through an authorized agency like TheRedScroll. We open the account, run the ads through Ocean Engine, and bill ad spend at cost. No local incorporation needed.',
+  },
+  {
+    q: 'Do I need a Chinese business license or a WFOE?',
+    a: 'Not to start. Enterprise accounts need a Chinese business license or an authorized agency, and we cover the agency path. For selling through Douyin Shop, cross-border options exist for brands without a Chinese entity. We recommend the right setup on the first call.',
+  },
+  {
+    q: 'How much does a Douyin agency cost?',
+    a: 'Most agencies quote custom prices with unclear deliverables. We work with fixed-price packages that list every deliverable upfront. Ad spend on Ocean Engine is billed separately, at cost, with no markups. Book a call and we\'ll recommend a fit for your budget.',
+  },
+  {
+    q: 'How is Douyin different from TikTok for advertisers?',
+    a: 'They are separate apps run by ByteDance with zero content crossover. Douyin serves mainland China and runs on Ocean Engine, its own ad platform. In-app commerce is far deeper on Douyin: shops, livestream selling, and checkout without leaving the app. A TikTok strategy does not transfer.',
+  },
+  {
+    q: 'How long until we see results?',
+    a: 'Paid campaigns can show results within days. Organic traction usually takes 8 to 12 weeks of consistent posting. The algorithm rewards watch-through rate and consistency, so 3 to 5 posts per week is the minimum we run.',
+  },
+];
+---
+
+<PageLayout
+  title="Douyin Agency for Global Brands | TheRedScroll"
+  description="Full-service Douyin agency for global brands: account setup, content, KOL campaigns, Ocean Engine ads, and livestream commerce. Book a call."
+  omitLocales={['fr', 'zh', 'es', 'de']}
+  schema={[
+    serviceSchema({
+      name: 'Douyin Agency Services',
+      description:
+        'Douyin agency for global brands entering China. Account setup and verification, short-video content production, KOL and KOC campaigns, Ocean Engine advertising, livestream commerce, and Douyin Shop.',
+      url: '/douyin-agency',
+      serviceType: 'Social Media Marketing',
+    }),
+    faqPageSchema(faqs),
+  ]}
+>
+  <!-- Hero: Dark hero banner -->
+  <section class="w-full bg-[#1A1A1A] py-[80px] max-[640px]:py-[48px] relative overflow-hidden">
+    <span
+      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[140px] max-[640px]:text-[80px] font-medium text-[#FFFFFF] opacity-[0.03] pointer-events-none select-none whitespace-nowrap"
+      aria-hidden="true"
+    >
+      抖音
+    </span>
+    <Container class="relative z-[1]">
+      <div class="max-w-[800px] mx-auto text-center">
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">
+          Douyin agency
+        </p>
+        <UpdatedDate date="July 2026" variant="light" class="mb-[8px]" />
+        <h1 class="text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] text-[#FFFFFF] mb-[8px]">
+          Douyin agency: grow your brand on China's #1 short-video platform
+        </h1>
+        <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal mb-[24px]">
+          Account setup, content, KOL campaigns, Ocean Engine ads, and livestream commerce. Run by our team in Shanghai and Hong Kong. Fixed scope, fixed price.
+        </p>
+        <Button variant="primary" href="/contact/">Book a call</Button>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Intro -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="max-w-[680px]">
+        <SectionBar />
+        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">
+          Douyin agency services for brands entering China
+        </h2>
+        <p class="text-[16px] text-[#1A1A1A] font-normal leading-[1.6] mb-[24px]">
+          Douyin (抖音) reaches 750 million people in China every day. Your customers are on it. Your competitors may already be too.
+        </p>
+        <p class="text-[16px] text-[#1A1A1A] font-normal leading-[1.6] mb-[24px]">
+          TheRedScroll is a China-based social media agency. We open Douyin accounts for foreign brands, produce Mandarin-native video, run KOL campaigns, buy ads through Ocean Engine, and sell through livestreams and Douyin Shop.
+        </p>
+        <p class="text-[16px] text-[#1A1A1A] font-normal leading-[1.6] mb-[24px]">
+          Every engagement has a clear SOW and a fixed price. You know what you get and what it costs before you sign.
+        </p>
+        <Button variant="primary" href="/contact/">Book a call</Button>
+      </div>
+    </Container>
+  </section>
+
+  <!-- What is Douyin -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="mb-[24px]">
+        <SectionBar />
+        <SectionHeading overline="The platform">
+          What is Douyin and why it matters for your brand
+        </SectionHeading>
+      </div>
+      <div class="max-w-[680px] mb-[32px]">
+        <p class="text-[16px] text-[#1A1A1A] font-normal leading-[1.6]">
+          Douyin is ByteDance's short-video platform for mainland China. As of 2024 it counts over 1 billion monthly users and drove ¥3.5 trillion in e-commerce sales. Users spend around 120 minutes a day on the app.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Douyin vs. TikTok</h3>
+          <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] mb-[12px]">
+            Same parent company, two separate apps. Content, accounts, and ads do not cross over. Douyin serves China. TikTok serves everyone else.
+          </p>
+          <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
+            The bigger difference is commerce. Douyin users discover, decide, and buy without leaving the app. Shops, livestream selling, and checkout are all built in. TikTok is still catching up to that.
+          </p>
+        </div>
+        <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Who should invest in Douyin</h3>
+          <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] mb-[12px]">
+            Beauty, fashion, food, consumer electronics, home goods, hospitality, automotive, health, and B2B all perform on Douyin. First-tier city or fifth, age 22 or 52, your Chinese audience is already there.
+          </p>
+          <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
+            One more reason to start now: the algorithm does not care about follower count. A brand-new account can reach millions with the right video.
+          </p>
+        </div>
+      </div>
+
+      <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] mt-[24px] max-w-[680px]">
+        Want the full platform breakdown, stats, and ecosystem tools? See our
+        <a href="/platforms/douyin/" class="text-[#CC3333] hover:underline">Douyin marketing page</a>.
+      </p>
+    </Container>
+  </section>
+
+  <!-- Services -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]">
+          <SectionBar />
+        </div>
+        <SectionHeading overline="What we do">
+          Our Douyin agency services
+        </SectionHeading>
+      </div>
+
+      <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        {services.map((service, i) => (
+          <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+            <p class="text-[12px] font-medium text-[#CC3333] leading-none mb-[8px]">
+              {String(i + 1).padStart(2, '0')}
+            </p>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">{service.title}</h3>
+            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] mb-[12px]">{service.description}</p>
+            <p class="text-[13px] font-medium leading-[1.5] text-[#1A1A1A]">You get: {service.result}</p>
+          </div>
+        ))}
+      </div>
+
+      <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] mt-[24px] max-w-[680px]">
+        Douyin rarely works alone. Most of our clients pair it with
+        <a href="/platforms/rednote/" class="text-[#CC3333] hover:underline">RedNote</a> and
+        <a href="/platforms/wechat/" class="text-[#CC3333] hover:underline">WeChat</a>, or start with
+        <a href="/services/market-entry/" class="text-[#CC3333] hover:underline">China market entry support</a>.
+      </p>
+    </Container>
+  </section>
+
+  <!-- Process -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="mb-[24px]">
+        <SectionBar />
+        <SectionHeading overline="How we work">
+          Our Douyin process, from audit to scale
+        </SectionHeading>
+      </div>
+      <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] mb-[32px] max-w-[680px]">
+        You don't need Chinese language skills or a China office. You work with one account manager in English. Our team in China does the rest.
+      </p>
+
+      <div class="grid grid-cols-5 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        {steps.map((step) => (
+          <div class="border-t-[3px] border-[#E8E0D8] pt-[16px]">
+            <p class="text-[12px] font-medium text-[#CC3333] leading-none mb-[8px]">{step.number}</p>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">{step.title}</h3>
+            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">{step.description}</p>
+          </div>
+        ))}
+      </div>
+    </Container>
+  </section>
+
+  <!-- Why TheRedScroll -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]">
+          <SectionBar />
+        </div>
+        <SectionHeading overline="Why TheRedScroll">
+          Why choose TheRedScroll as your Douyin agency
+        </SectionHeading>
+      </div>
+
+      <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[20px]">
+        {differentiators.map((item) => (
+          <div class="border-l-[3px] border-[#CC3333] pl-[16px]">
+            <h3 class="text-[16px] font-medium leading-[1.3] text-[#1A1A1A] mb-[4px]">{item.title}</h3>
+            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">{item.description}</p>
+          </div>
+        ))}
+      </div>
+    </Container>
+  </section>
+
+  <!-- Case studies -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="mb-[24px]">
+        <SectionBar />
+        <SectionHeading overline="Proof">
+          Case studies and results on Douyin
+        </SectionHeading>
+      </div>
+
+      <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        <a href="/work/age20s/" class="block bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px] no-underline hover:no-underline group">
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333] mb-[8px]">Beauty</p>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">AGE 20's: 4x over target on Douyin</h3>
+          <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] mb-[12px]">
+            Korean beauty brand launching a foundation in China. The campaign hit 3.87 million Douyin impressions against a 1 million target, with a product nickname that went organic.
+          </p>
+          <span class="text-[14px] font-medium text-[#CC3333]">Read the case study &rarr;</span>
+        </a>
+        <a href="/work/langnese/" class="block bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px] no-underline hover:no-underline group">
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333] mb-[8px]">Food</p>
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">Langnese: livestream commerce for a heritage brand</h3>
+          <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] mb-[12px]">
+            German honey brand repositioned for Chinese consumers. Douyin livestreams and quick-demo videos changed how people use the product, connected to Tmall sales.
+          </p>
+          <span class="text-[14px] font-medium text-[#CC3333]">Read the case study &rarr;</span>
+        </a>
+      </div>
+
+      <div class="text-center mt-[24px]">
+        <Button variant="secondary" href="/work/">See our work</Button>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Costs -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="max-w-[680px]">
+        <SectionBar />
+        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">
+          Douyin agency costs and how engagements work
+        </h2>
+        <p class="text-[16px] text-[#1A1A1A] font-normal leading-[1.6] mb-[24px]">
+          Here's what most agencies won't tell you: their price. We benchmarked 37 agencies in April 2026. 100% use custom quoting. 0 out of 37 publish fixed-price packages.
+        </p>
+        <p class="text-[16px] text-[#1A1A1A] font-normal leading-[1.6] mb-[24px]">
+          We work differently. Every package has a fixed price and a written SOW. Ongoing growth runs on a monthly retainer. Launches and campaigns can run as projects. Ad spend through Ocean Engine is billed separately, at cost, with no markups.
+        </p>
+        <p class="text-[16px] text-[#1A1A1A] font-normal leading-[1.6] mb-[24px]">
+          Entry requirements are lighter than most brands expect. No Chinese entity is needed to start posting and running ads. See our
+          <a href="/pricing/" class="text-[#CC3333] hover:underline">pricing page</a> for how packages are structured, or book a call for a recommendation.
+        </p>
+        <Button variant="primary" href="/contact/">Get your proposal</Button>
+      </div>
+    </Container>
+  </section>
+
+  <!-- FAQ -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-[340px_1fr] max-[1024px]:grid-cols-[280px_1fr] max-[768px]:grid-cols-1 gap-[48px] max-[768px]:gap-[32px]">
+        <div>
+          <div class="sticky top-[84px] max-[640px]:static">
+            <SectionBar />
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">FAQ</p>
+            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">
+              Frequently asked questions
+            </h2>
+            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
+              What brands ask before hiring a Douyin agency.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          {faqs.map((faq) => (
+            <div class="border-b border-[rgba(0,0,0,0.08)]" data-faq>
+              <button
+                class="w-full flex items-center justify-between py-[20px] text-left bg-transparent border-none cursor-pointer group"
+                data-faq-trigger
+                aria-expanded="false"
+              >
+                <h3 class="text-[16px] font-medium leading-[1.3] text-[#1A1A1A] group-hover:text-[#5C5C5C] transition-colors duration-150 pr-[16px]">{faq.q}</h3>
+                <svg class="w-[16px] h-[16px] shrink-0 text-[#5C5C5C] transition-transform duration-300 faq-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 6l4 4 4-4"/>
+                </svg>
+              </button>
+              <div class="faq-content overflow-hidden" style="height: 0; opacity: 0;">
+                <div class="pb-[20px]">
+                  <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">{faq.a}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Closing CTA (the one dark section in the body) -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="bg-[#1A1A1A] rounded-[12px] py-[48px] px-[48px] max-[640px]:px-[20px] max-[640px]:py-[32px] text-center">
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">
+          Get started
+        </p>
+        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[8px]">
+          Book your Douyin strategy call
+        </h2>
+        <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[560px] mx-auto mb-[24px]">
+          30 minutes. Tell us about your brand and your goals for China. You'll leave with a clear read on whether Douyin fits, and a fixed-price proposal follows if it does.
+        </p>
+        <Button variant="primary" href="/contact/">Book a call</Button>
+
+        <div class="mt-[40px] pt-[24px] border-t border-[rgba(255,255,255,0.1)]">
+          <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal mb-[12px]">See also</p>
+          <div class="flex justify-center gap-[24px] flex-wrap">
+            <a href="/platforms/douyin/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Douyin marketing &rarr;</a>
+            <a href="/services/influencer-marketing/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Influencer marketing &rarr;</a>
+            <a href="/services/advertising/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Advertising &rarr;</a>
+            <a href="/services/market-entry/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">China market entry &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+<style>
+  .faq-content {
+    transition: height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+  }
+</style>
+
+<script>
+  // FAQ accordion
+  document.querySelectorAll('[data-faq]').forEach((item) => {
+    const trigger = item.querySelector('[data-faq-trigger]') as HTMLButtonElement;
+    const content = item.querySelector('.faq-content') as HTMLElement;
+    if (!trigger || !content) return;
+
+    trigger.addEventListener('click', () => {
+      const isOpen = trigger.getAttribute('aria-expanded') === 'true';
+      const chevron = trigger.querySelector('.faq-chevron') as HTMLElement;
+
+      if (isOpen) {
+        content.style.height = content.scrollHeight + 'px';
+        requestAnimationFrame(() => {
+          content.style.height = '0';
+          content.style.opacity = '0';
+        });
+        trigger.setAttribute('aria-expanded', 'false');
+        if (chevron) chevron.style.transform = 'rotate(0deg)';
+      } else {
+        content.style.height = '0';
+        requestAnimationFrame(() => {
+          content.style.height = content.scrollHeight + 'px';
+          content.style.opacity = '1';
+        });
+        trigger.setAttribute('aria-expanded', 'true');
+        if (chevron) chevron.style.transform = 'rotate(180deg)';
+      }
+    });
+  });
+</script>
+</PageLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Bearing Bridge Compass logo: bearingbridge.com bridge mark, a compass rose
+     set behind it, and the "Compass" wordmark. Mark paths are reproduced
+     verbatim from the bearingbridge.com horizontal logo. -->
+<svg width="100%" height="100%" viewBox="0 0 2380 575" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <!-- Compass rose, sits in the background behind the mark -->
+    <g>
+        <circle cx="325.5" cy="281.3" r="240" fill="none" stroke="rgb(7,39,94)" stroke-width="5" opacity="0.22"/>
+        <circle cx="325.5" cy="281.3" r="200" fill="none" stroke="rgb(7,39,94)" stroke-width="2.5" opacity="0.16"/>
+        <!-- Eight-point compass star -->
+        <path d="M325.5,81.3 L392.7,214.1 L525.5,281.3 L392.7,348.5 L325.5,481.3 L258.3,348.5 L125.5,281.3 L258.3,214.1 Z" fill="rgb(7,39,94)" opacity="0.13"/>
+        <!-- North needle accent in brand cyan -->
+        <path d="M325.5,81.3 L355,267 L296,267 Z" fill="rgb(0,161,233)" opacity="0.32"/>
+        <circle cx="325.5" cy="281.3" r="14" fill="rgb(7,39,94)" opacity="0.2"/>
+    </g>
+    <!-- Left graphical mark (verbatim from the bearingbridge.com logo) -->
+    <g transform="matrix(1,0,0,1,-1798.627917,-598.5725)">
+        <g transform="matrix(4.166667,0,0,4.166667,0,0)">
+            <g transform="matrix(1,0,0,1,550.878,248.1821)">
+                <path d="M0,-50.755C-43.426,-50.755 -82.723,-34.598 -112.521,-7.532C-110.808,-4.33 -109.77,-2.436 -108.236,0C-76.875,-30.064 -34.69,-48.165 12.184,-48.165C21.631,-48.165 28.009,-48.444 37.048,-47C24.247,-50.125 13.764,-50.755 0,-50.755" style="fill:rgb(0,161,233);fill-rule:nonzero;"/>
+            </g>
+        </g>
+        <g transform="matrix(4.166667,0,0,4.166667,0,0)">
+            <g transform="matrix(1,0,0,1,475.897,216.9611)">
+                <path d="M4.57,-40.906L-7.701,-40.906C-7.701,-40.906 -6.676,-40.317 -5.764,-39.394L-5.764,-13.974L-5.796,-5.593L-9.666,0C-3.982,-3.338 2.604,-6.48 2.604,-6.48L2.632,-39.437C3.419,-40.277 4.57,-40.906 4.57,-40.906Z" style="fill:rgb(7,39,94);fill-rule:nonzero;"/>
+            </g>
+        </g>
+        <g transform="matrix(4.166667,0,0,4.166667,0,0)">
+            <g transform="matrix(1,0,0,1,440.5757,177.1696)">
+                <path d="M0,33.99C0,13.126 10.778,-5.01 27.102,-15.509C28.447,-14.181 29.562,-12.183 29.562,-12.183L29.562,-17.017L29.566,-17.02L29.566,-26.956C6.772,-16.026 -8.905,6.982 -8.905,33.99C-8.905,43.575 -6.895,52.687 -3.293,60.946C-0.772,59.089 1.557,56.981 3.826,54.824C1.361,48.349 0,41.33 0,33.99" style="fill:rgb(7,39,94);fill-rule:nonzero;"/>
+            </g>
+        </g>
+        <g transform="matrix(4.166667,0,0,4.166667,0,0)">
+            <g transform="matrix(1,0,0,1,470.0206,238.1766)">
+                <path d="M0,23.898C-10.149,18.147 -16.647,9.855 -19.312,5.995L-26.026,11.98C-11.561,32.422 8.525,37.25 8.525,37.25L8.525,-13.352L0,-8.345L0,23.898Z" style="fill:rgb(7,39,94);fill-rule:nonzero;"/>
+            </g>
+        </g>
+        <g transform="matrix(4.166667,0,0,4.166667,0,0)">
+            <g transform="matrix(1,0,0,1,566.1856,278.6405)">
+                <path d="M0,-75.354C-0.722,-75.383 -3.395,-75.35 -3.699,-75.354L-8.901,-75.204C-8.525,-72.534 -8.4,-70.254 -8.4,-67.481C-8.4,-51.463 -14.833,-36.953 -25.248,-26.374C-23.909,-30.389 -23.204,-34.641 -23.204,-39.019C-23.204,-53.197 -30.639,-64.969 -42.315,-70.783L-48.972,-69.121L-47.462,-68.288C-36.644,-61.846 -30.716,-50.513 -30.716,-39.019C-30.716,-30.156 -34.428,-21.212 -40.812,-15.058C-48.696,-11.111 -57.587,-8.876 -67.005,-8.876C-70.391,-8.876 -73.395,-9.103 -76.362,-9.62C-78.019,-11.259 -79.268,-13.827 -79.268,-13.827L-79.268,-8.881L-79.266,-8.881L-79.266,-1.108C-75.286,-0.362 -71.311,0.029 -67.005,0.029C-29.72,0.029 0.505,-30.197 0.505,-67.481C0.505,-70.264 0.328,-72.66 0,-75.354" style="fill:rgb(7,39,94);fill-rule:nonzero;"/>
+            </g>
+        </g>
+        <g transform="matrix(4.166667,0,0,4.166667,0,0)">
+            <g transform="matrix(1,0,0,1,518.6055,162.7074)">
+                <path d="M0,16.794C0,24.499 -3.331,31.367 -6.558,35.844L3.695,33.814C5.153,31.264 8.432,27.789 8.432,17.979C8.432,4.891 1.733,-4.501 -9.277,-9.27C13.304,-5.317 30.604,11.173 36.792,31.927L46.082,32.259C38.567,2.793 12.581,-19.05 -19.448,-19.05C-26.657,-19.05 -33.615,-17.858 -40.129,-15.766L-40.129,-6.359C-40.127,-6.36 -40.125,-6.36 -40.123,-6.361L-40.123,-2.164C-40.123,-2.164 -38.613,-5.645 -36.827,-7.478C-31.912,-9.003 -26.703,-9.932 -21.339,-10.108C-8.56,-6.891 0,3.572 0,16.794" style="fill:rgb(7,39,94);fill-rule:nonzero;"/>
+            </g>
+        </g>
+    </g>
+    <!-- Wordmark -->
+    <text x="740" y="286" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="372" letter-spacing="-6" fill="rgb(7,39,94)">Compass</text>
+    <!-- Sub-wordmark: sized to span the full width of "Compass", brand cyan -->
+    <text x="740" y="508" font-family="Arial, Helvetica, sans-serif" font-weight="600" font-size="188" letter-spacing="0.5" fill="rgb(0,161,233)">by Bearing Bridge</text>
+</svg>

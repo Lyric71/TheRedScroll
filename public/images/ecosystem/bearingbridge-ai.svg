@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="6 17 206 34" role="img" aria-label="BearingBridge AI">
+  <!-- The group's skewed bar mark (from bearingbridge.ai favicon) -->
+  <path d="M18 21 H28 L20 47 H10 Z" fill="#1BCDE8"/>
+  <!-- Lowercase wordmark: "bearingbridge" dark + "ai" cyan -->
+  <text x="38" y="41.5"
+    font-family="'Inter','Segoe UI','Helvetica Neue',Arial,sans-serif"
+    font-size="22" font-weight="600" letter-spacing="-0.5"
+    fill="#141416">bearingbridge<tspan dx="4" fill="#06b6d4">ai</tspan></text>
+</svg>

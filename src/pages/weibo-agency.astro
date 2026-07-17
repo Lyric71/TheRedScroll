@@ -1,0 +1,615 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import Container from '../components/ui/Container.astro';
+import SectionBar from '../components/ui/SectionBar.astro';
+import SectionHeading from '../components/ui/SectionHeading.astro';
+import Button from '../components/ui/Button.astro';
+import { faqPageSchema, serviceSchema } from '../lib/schema';
+
+const scopeItems = [
+  { label: 'Corporate account setup and Blue V verification', href: '/platforms/weibo/' },
+  { label: 'Content written by native Chinese speakers', href: '/services/content-production/' },
+  { label: 'Fan Headlines, Fan Tunnel, display, and search ads', href: '/services/advertising/' },
+  { label: 'KOL and celebrity campaigns with verified data', href: '/services/influencer-marketing/' },
+  { label: 'Hot Search and Super Topic campaigns', href: '/platforms/weibo/' },
+];
+
+const services = [
+  {
+    number: '01',
+    title: 'Account setup and Blue V verification',
+    description:
+      'We register your corporate account, translate your documents into Chinese, and push verification through. Weibo charges international companies a one-time $1,000 fee. Approval takes 2 to 4 weeks. We handle all of it.',
+  },
+  {
+    number: '02',
+    title: 'Content strategy and Chinese copywriting',
+    description:
+      'Monthly content plans, daily posts, 9-grid carousels, and short video. Written in Chinese by native speakers, not translators. Posts fold after 140 characters, so every first sentence has to earn the tap.',
+  },
+  {
+    number: '03',
+    title: 'Weibo paid advertising',
+    description:
+      'Fan Headlines (粉丝头条), Fan Tunnel (粉丝通), in-feed display, splash ads, search promotion, and hashtag promotion. Targeting by demographics, interests, and behavior. Ad spend is billed at cost. No markup, ever.',
+  },
+  {
+    number: '04',
+    title: 'KOL and influencer campaigns',
+    description:
+      'Key Opinion Leader (KOL) sourcing, vetting, briefs, negotiation, and reporting. We audit real engagement and run fake-follower checks before we recommend anyone. Follower counts alone never make the shortlist.',
+  },
+  {
+    number: '05',
+    title: 'Community management and customer service',
+    description:
+      'The comment section is where Weibo actually happens. We reply to comments, answer direct messages, monitor brand mentions daily, and flag sentiment shifts before they become problems.',
+  },
+  {
+    number: '06',
+    title: 'Analytics and monthly reporting',
+    description:
+      'Follower growth, engagement by format, ad results (CPM, CPC, CPA, ROAS), KOL returns, and competitive benchmarks. Every report ends with clear recommendations for next month, in plain English.',
+  },
+];
+
+const segments = [
+  {
+    title: 'Luxury and consumer brands',
+    description: 'Chinese consumers search brand names on Weibo before they buy. A strong verified presence builds trust. No presence raises red flags.',
+  },
+  {
+    title: 'Tourism and education',
+    description: 'Chinese travelers and students research destinations and schools on Weibo months before they commit. We keep your brand in that conversation.',
+  },
+  {
+    title: 'F&B and e-commerce',
+    description: 'Shoppable posts link to Tmall and Taobao. Live streams sync with Taobao Live. The distance between a Weibo post and a purchase is short.',
+  },
+  {
+    title: 'Consumer tech and B2B',
+    description: 'Product launches, PR amplification, and reputation management. When you need millions of people to learn your name fast, Weibo is the channel.',
+  },
+];
+
+const pillars = [
+  {
+    title: 'Clear SOW',
+    description: 'Every deliverable is defined upfront. Posts, videos, campaigns, reports. You know exactly what you get each month.',
+  },
+  {
+    title: 'Fixed price, no surprises',
+    description: 'One price per package. No hourly rates, no scope creep charges, no invoices you weren\'t expecting.',
+  },
+  {
+    title: 'AI-powered content production',
+    description: 'Visuals and video powered by HubStudio.ai, which keeps costs down and output fast. Strategy is 100% human-led.',
+  },
+  {
+    title: 'Team on the ground',
+    description: 'Shanghai and Hong Kong. Native speakers who check the Hot Search list every morning, with direct KOL relationships.',
+  },
+];
+
+const steps = [
+  {
+    number: '01',
+    title: 'Audit and strategy.',
+    description: 'Week 1. We review your brand, your competitors on Weibo, and your goals. You get a content strategy and a clear scope of work.',
+  },
+  {
+    number: '02',
+    title: 'Account setup and verification.',
+    description: 'Weeks 1 to 4. We register the account and submit Blue V verification. We don\'t wait for the badge. Profile buildout starts immediately.',
+  },
+  {
+    number: '03',
+    title: 'Content calendar.',
+    description: 'Week 2. First month of posts planned, written, and designed. You review everything before it goes live.',
+  },
+  {
+    number: '04',
+    title: 'Launch.',
+    description: 'Week 2. First posts published, first campaign running. Fourteen days from signed contract to first post.',
+  },
+  {
+    number: '05',
+    title: 'Optimize.',
+    description: 'Ongoing. We track what works by format and topic, react to trends within the hour, and adjust ad bids weekly.',
+  },
+  {
+    number: '06',
+    title: 'Report.',
+    description: 'Monthly. Growth, engagement, ad results, KOL returns, and benchmarks. Plus a mid-month check-in during active campaigns.',
+  },
+];
+
+const platformRows = [
+  {
+    platform: 'Weibo',
+    href: '/platforms/weibo/',
+    bestFor: 'Mass awareness, PR, trending topics',
+    style: 'Public feed. Short posts, hashtags, Hot Search',
+    startIf: 'You need China to learn your brand name fast',
+  },
+  {
+    platform: 'WeChat',
+    href: '/platforms/wechat/',
+    bestFor: 'Retention, CRM, customer service',
+    style: 'Closed circles. Long articles, Mini Programs',
+    startIf: 'You already have Chinese customers to keep',
+  },
+  {
+    platform: 'RedNote',
+    href: '/platforms/rednote/',
+    bestFor: 'Product discovery, reviews, lifestyle',
+    style: 'Search-driven. Photo and video notes',
+    startIf: 'You sell products people research before buying',
+  },
+  {
+    platform: 'Douyin',
+    href: '/platforms/douyin/',
+    bestFor: 'Short video reach, live commerce',
+    style: 'Algorithm feed. Entertaining short video',
+    startIf: 'You can produce video that competes for attention',
+  },
+];
+
+const caseStudies = [
+  {
+    client: 'JAC Motors',
+    summary: 'A Chinese auto giant with 10 million vehicles sold and a quiet social presence. We rebuilt the community across Weibo, WeChat, and RedNote with AI-powered content.',
+    href: '/work/jac-motors/',
+  },
+  {
+    client: 'Mission Foods',
+    summary: 'Launching corn chips, an unfamiliar food category, in China. Gen Z campaigns and food pairing content across Weibo, WeChat, and RedNote.',
+    href: '/work/mission-foods/',
+  },
+  {
+    client: 'Camper',
+    summary: 'A European footwear brand that grew from 43K to 187K followers in 18 months, with engagement up from 1.2% to 4.7% and same-store sales up 31% year over year.',
+    href: '/work/camper/',
+  },
+];
+
+const faqs = [
+  {
+    q: 'How much does a Weibo agency cost?',
+    a: 'Two budgets matter. Agency work: we quote a fixed monthly price against a clear scope of work, so you see every deliverable and the full cost before you sign. We analyzed 37 China marketing agencies in April 2026 and 0 out of 37 offer fixed-price packages. We do. Ad spend: paid to Weibo separately and billed at cost, with no markup. Fan Headlines are the low-cost entry point, while Hot Search placements sit at the premium end.',
+  },
+  {
+    q: 'Can a foreign company open a Weibo account?',
+    a: 'Yes, and we do this regularly. Foreign companies can get a verified corporate account with a Blue V badge. You need business registration documents translated into Chinese and a one-time $1,000 verification fee paid to Weibo. We prepare the documents, handle the translation, and deal with Weibo\'s verification team so you don\'t have to.',
+  },
+  {
+    q: 'How long does Weibo verification take?',
+    a: 'About 2 to 4 weeks with complete documents. Missing or inconsistent paperwork is the most common cause of delays, so we review everything before submission. We don\'t sit around waiting either. Profile buildout and content production start while the Blue V badge is being processed.',
+  },
+  {
+    q: 'Do I need a Chinese business license for Weibo?',
+    a: 'No. An overseas business registration is enough for a verified corporate account. You don\'t need a Chinese entity, a Chinese bank account, or an ICP license to run a Weibo account. A Chinese entity only becomes relevant later, for things like domestic e-commerce integrations. Our China market entry service covers that path when you\'re ready.',
+  },
+  {
+    q: 'Weibo vs WeChat: which should I start with?',
+    a: 'It depends on your goal. Weibo is China\'s open public square: 567 million monthly users, trending topics, and posts anyone can see. It builds awareness fast. WeChat is closed: content circulates inside private circles, which makes it better for retention and CRM. Brands entering China usually start with Weibo for reach, then add WeChat once there\'s an audience worth keeping. Most of our clients run both.',
+  },
+  {
+    q: 'How do you measure Weibo campaign success?',
+    a: 'Against the goals we set in your scope of work. Monthly reports cover follower growth, engagement rates, content performance by format, ad campaign results (CPM, CPC, CPA, ROAS), KOL campaign returns, and competitive benchmarks. Every report ends with specific recommendations for the following month. You also get a mid-month check-in during active campaigns.',
+  },
+];
+
+const pageSchemas = [
+  serviceSchema({
+    name: 'Weibo Agency Services',
+    description:
+      'Full-service Weibo agency for international brands: corporate account setup and Blue V verification, content, paid advertising, KOL campaigns, and reporting.',
+    url: '/weibo-agency',
+    serviceType: 'Social Media Marketing',
+  }),
+  faqPageSchema(faqs),
+];
+---
+
+<PageLayout
+  title="Weibo Agency for Brands Entering China | TheRedScroll"
+  description="A full-service Weibo agency in Shanghai and Hong Kong. Blue V setup, content, ads, and KOL campaigns for brands entering China. Fixed scope, fixed price."
+  schema={pageSchemas}
+  omitLocales={['fr', 'zh', 'de', 'es']}
+>
+  <!-- Hero: Dark hero banner (Style A) -->
+  <section class="w-full bg-[#1A1A1A] py-[80px] max-[640px]:py-[48px] relative overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center opacity-[0.2]" style="background-image: url('/images/hero/weibo-hero.webp')" aria-hidden="true"></div>
+    <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[140px] max-[640px]:text-[80px] font-medium text-[#FFFFFF] opacity-[0.03] pointer-events-none select-none whitespace-nowrap" aria-hidden="true">
+      微博
+    </span>
+    <Container class="relative z-[1]">
+      <div class="max-w-[800px] mx-auto text-center">
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">
+          Weibo agency
+        </p>
+        <h1 class="text-[40px] max-[640px]:text-[28px] font-medium leading-[1.2] text-[#FFFFFF] mb-[8px]">
+          The Weibo agency for brands entering China
+        </h1>
+        <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal mb-[24px]">
+          Account setup, Blue V verification, content, advertising, and KOL campaigns. Run from Shanghai and Hong Kong, every day. Fixed scope. Fixed price.
+        </p>
+        <Button variant="primary" href="/contact/">Book a call</Button>
+      </div>
+    </Container>
+  </section>
+
+  <!-- What a Weibo agency does -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-2 max-[768px]:grid-cols-1 gap-[48px] max-[768px]:gap-[32px] items-start">
+        <div>
+          <SectionBar />
+          <SectionHeading overline="What a Weibo agency does">
+            China's public square, run for you
+          </SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[#1A1A1A] max-w-[680px] mt-[16px]">
+            <p>
+              Weibo has 567 million monthly active users and 252 million daily active users (May 2026). It's where trends start, news breaks, and Chinese consumers research brands before they buy.
+            </p>
+            <p>
+              A Weibo agency registers and verifies your corporate account, writes your content in Chinese, buys your ads, and runs your KOL campaigns. Doing this in-house means hiring native speakers, learning the Hot Search rhythm, and navigating verification paperwork. Most brands get further, faster, with a specialist.
+            </p>
+            <p>
+              We're that specialist. We post on <a href="/platforms/weibo/" class="text-[#CC3333] hover:underline">Weibo</a> every day, from inside China.
+            </p>
+          </div>
+        </div>
+        <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+            Scope at a glance
+          </p>
+          <ul class="flex flex-col gap-[12px] list-none m-0 p-0">
+            {scopeItems.map((item) => (
+              <li class="flex items-start gap-[10px]">
+                <svg class="shrink-0 mt-[3px]" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#CC3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                <a href={item.href} class="text-[14px] font-normal leading-[1.5] text-[#1A1A1A] hover:text-[#CC3333] transition-colors duration-150">{item.label}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Our Weibo agency services -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]">
+          <SectionBar />
+        </div>
+        <SectionHeading overline="Our Weibo agency services">
+          Six services. Each with a clear deliverable.
+        </SectionHeading>
+      </div>
+
+      <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        {services.map((service) => (
+          <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+            <p class="text-[12px] font-medium text-[#CC3333] leading-none mb-[8px]">{service.number}</p>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">{service.title}</h3>
+            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5]">{service.description}</p>
+          </div>
+        ))}
+      </div>
+
+      <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px] mt-[16px]">
+        <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] max-w-[680px]">
+          <span class="text-[#1A1A1A] font-medium">Need more than Weibo?</span> We also grow brands on <a href="/platforms/wechat/" class="text-[#CC3333] hover:underline">WeChat</a>, <a href="/platforms/rednote/" class="text-[#CC3333] hover:underline">RedNote</a>, <a href="/platforms/douyin/" class="text-[#CC3333] hover:underline">Douyin</a>, and <a href="/platforms/others/" class="text-[#CC3333] hover:underline">14 more platforms</a>. One team, one strategy, one report.
+        </p>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Who we help -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]">
+          <SectionBar />
+        </div>
+        <SectionHeading overline="Who we help">
+          Built for brands entering or growing in China
+        </SectionHeading>
+      </div>
+
+      <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        {segments.map((segment) => (
+          <div class="bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[8px] p-[24px] max-[640px]:p-[20px] transition-colors duration-150 hover:border-[rgba(0,0,0,0.15)]">
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">{segment.title}</h3>
+            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5]">{segment.description}</p>
+          </div>
+        ))}
+      </div>
+
+      <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px] mt-[16px]">
+        <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] max-w-[680px]">
+          <span class="text-[#1A1A1A] font-medium">No China presence yet? That's fine.</span> An overseas business registration is enough to open and verify a Weibo account. If you're starting from zero, our <a href="/services/market-entry/" class="text-[#CC3333] hover:underline">China market entry service</a> covers registration, setup, and localization.
+        </p>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Why TheRedScroll -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-[340px_1fr] max-[1024px]:grid-cols-[280px_1fr] max-[768px]:grid-cols-1 gap-[48px] max-[768px]:gap-[32px]">
+        <div>
+          <div class="sticky top-[84px] max-[640px]:static">
+            <SectionBar />
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">Why TheRedScroll</p>
+            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">
+              We analyzed 37 China marketing agencies. 0 out of 37 offer fixed-price packages.
+            </h2>
+            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
+              100% quote custom prices with unclear deliverables. Fewer than 3 out of 37 use AI for content production. We do things differently. (TheRedScroll competitive analysis, April 2026.)
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+          {pillars.map((pillar) => (
+            <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+              <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">{pillar.title}</h3>
+              <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5]">{pillar.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Our process -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]">
+          <SectionBar />
+        </div>
+        <SectionHeading overline="Our Weibo marketing process">
+          From first call to first post in 2 weeks
+        </SectionHeading>
+        <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] max-w-[680px] mx-auto mt-[8px]">
+          Six stages, each with a timeline. Verification runs in the background while everything else moves.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        {steps.map((step) => (
+          <div class="bg-[#F7F2EE] rounded-[10px] p-[24px] max-[640px]:p-[20px]">
+            <p class="text-[12px] font-medium text-[#CC3333] leading-none mb-[8px]">{step.number}</p>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">{step.title}</h3>
+            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">{step.description}</p>
+          </div>
+        ))}
+      </div>
+
+      <div class="text-center mt-[40px]">
+        <Button variant="primary" href="/contact/">Book a call</Button>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Weibo vs other platforms -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="text-center mb-[48px] max-[640px]:mb-[32px]">
+        <div class="flex justify-center mb-[12px]">
+          <SectionBar />
+        </div>
+        <SectionHeading overline="Weibo vs other Chinese platforms">
+          Where Weibo fits next to WeChat, RedNote, and Douyin
+        </SectionHeading>
+        <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6] max-w-[680px] mx-auto mt-[8px]">
+          Each platform does a different job. Weibo is the only one built for open, national-scale conversation.
+        </p>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full min-w-[720px] border-collapse text-left">
+          <thead>
+            <tr class="border-b border-[rgba(0,0,0,0.15)]">
+              <th class="py-[14px] pr-[16px] text-[11px] font-medium uppercase tracking-[0.05em] text-[#5C5C5C]">Platform</th>
+              <th class="py-[14px] pr-[16px] text-[11px] font-medium uppercase tracking-[0.05em] text-[#5C5C5C]">Best for</th>
+              <th class="py-[14px] pr-[16px] text-[11px] font-medium uppercase tracking-[0.05em] text-[#5C5C5C]">Content style</th>
+              <th class="py-[14px] text-[11px] font-medium uppercase tracking-[0.05em] text-[#5C5C5C]">Start here if</th>
+            </tr>
+          </thead>
+          <tbody>
+            {platformRows.map((row) => (
+              <tr class="border-b border-[rgba(0,0,0,0.08)]">
+                <td class="py-[16px] pr-[16px] align-top">
+                  <a href={row.href} class="text-[14px] font-medium text-[#CC3333] hover:underline">{row.platform}</a>
+                </td>
+                <td class="py-[16px] pr-[16px] align-top text-[14px] text-[#1A1A1A] font-normal leading-[1.5]">{row.bestFor}</td>
+                <td class="py-[16px] pr-[16px] align-top text-[14px] text-[#5C5C5C] font-normal leading-[1.5]">{row.style}</td>
+                <td class="py-[16px] align-top text-[14px] text-[#5C5C5C] font-normal leading-[1.5]">{row.startIf}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] mt-[24px] max-w-[680px] mx-auto text-center">
+        Most brands don't pick one. A common sequence: Weibo for awareness, RedNote for product research, WeChat for retention. We run all of them under one scope of work.
+      </p>
+    </Container>
+  </section>
+
+  <!-- Weibo advertising options -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="max-w-[680px]">
+        <SectionBar />
+        <SectionHeading overline="Weibo advertising options">
+          Weibo ad formats, without the mystery
+        </SectionHeading>
+        <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[#1A1A1A] mt-[16px]">
+          <p>
+            <span class="font-medium">Fan Headlines (粉丝头条).</span> Pins a post to the top of your followers' feeds. The cheapest way to make sure your best content actually gets seen. Good for testing what resonates.
+          </p>
+          <p>
+            <span class="font-medium">Fan Tunnel (粉丝通).</span> Weibo's main performance ad system. Puts your posts in front of non-followers, targeted by demographics, interests, behavior, and lookalike audiences.
+          </p>
+          <p>
+            <span class="font-medium">Display, splash, and search.</span> In-feed display units, full-screen splash ads on app open, search promotion, and hashtag promotion. Premium placements around Hot Search carry premium prices.
+          </p>
+          <p>
+            <span class="font-medium">How billing works.</span> Ad spend goes to Weibo, not to us. It's billed at cost with no markup, and every number shows up in your monthly report with CPM, CPC, CPA, and ROAS.
+          </p>
+        </div>
+        <div class="bg-[#F7F2EE] border-l-[3px] border-[#CC3333] p-[20px] mt-[32px]">
+          <p class="text-[16px] font-normal leading-[1.6] text-[#1A1A1A] m-0">
+            A useful rule: don't buy Fan Tunnel reach until your feed has content worth landing on. Followers gained from ads unfollow within weeks if the account looks empty.
+          </p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Case studies -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="flex items-end justify-between gap-[32px] max-[640px]:flex-col max-[640px]:items-start max-[640px]:gap-[16px] mb-[32px]">
+        <div class="max-w-[560px]">
+          <SectionBar />
+          <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[8px]">
+            Results from the ground
+          </h2>
+          <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
+            Real clients, real numbers, all verifiable in the full case studies.
+          </p>
+        </div>
+        <a href="/work/" class="text-[14px] text-[#CC3333] font-medium shrink-0 hover:underline">All case studies &rarr;</a>
+      </div>
+
+      <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[24px] max-[640px]:gap-[16px]">
+        {caseStudies.map((cs) => (
+          <a href={cs.href} class="bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[8px] p-[24px] max-[640px]:p-[20px] block no-underline transition-colors duration-150 hover:border-[rgba(0,0,0,0.15)]">
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">Case study</p>
+            <h3 class="text-[18px] font-medium leading-[1.3] text-[#1A1A1A] mb-[8px]">{cs.client}</h3>
+            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.5] mb-[12px]">{cs.summary}</p>
+            <span class="text-[14px] text-[#CC3333] font-medium">Read the case study &rarr;</span>
+          </a>
+        ))}
+      </div>
+    </Container>
+  </section>
+
+  <!-- FAQ -->
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="grid grid-cols-[340px_1fr] max-[1024px]:grid-cols-[280px_1fr] max-[768px]:grid-cols-1 gap-[48px] max-[768px]:gap-[32px]">
+        <div>
+          <div class="sticky top-[84px] max-[640px]:static">
+            <SectionBar />
+            <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">FAQ</p>
+            <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#1A1A1A] mb-[16px]">
+              Questions brands ask before hiring a Weibo agency
+            </h2>
+            <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
+              More detail on the platform itself is on our <a href="/platforms/weibo/" class="text-[#CC3333] hover:underline">Weibo marketing page</a>.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          {faqs.map((faq) => (
+            <div class="border-b border-[rgba(0,0,0,0.08)]" data-faq>
+              <button
+                class="w-full flex items-center justify-between py-[20px] text-left bg-transparent border-none cursor-pointer group"
+                data-faq-trigger
+                aria-expanded="false"
+              >
+                <h3 class="text-[16px] font-medium leading-[1.3] text-[#1A1A1A] group-hover:text-[#5C5C5C] transition-colors duration-150 pr-[16px]">{faq.q}</h3>
+                <svg class="w-[16px] h-[16px] shrink-0 text-[#5C5C5C] transition-transform duration-300 faq-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 6l4 4 4-4"/>
+                </svg>
+              </button>
+              <div class="faq-content overflow-hidden" style="height: 0; opacity: 0;">
+                <div class="pb-[20px]">
+                  <p class="text-[14px] text-[#5C5C5C] font-normal leading-[1.6]">
+                    {faq.a}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- CTA: dark section (the one allowed per page) -->
+  <section class="mt-[96px] max-[640px]:mt-[64px] mb-[96px] max-[640px]:mb-[64px]">
+    <Container>
+      <div class="bg-[#1A1A1A] rounded-[12px] py-[48px] px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] max-[640px]:py-[32px] text-center">
+        <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[8px]">
+          Start your Weibo strategy
+        </p>
+        <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[#FFFFFF] mb-[8px]">
+          252 million people open Weibo every day. Your brand should be there.
+        </h2>
+        <p class="text-[14px] text-[rgba(255,255,255,0.6)] font-normal leading-[1.6] max-w-[560px] mx-auto mb-[24px]">
+          A 30-minute call. We'll tell you what your brand can do on Weibo with your current setup, and what it would take. No pitch deck.
+        </p>
+        <Button variant="primary" href="/contact/">Book a call</Button>
+
+        <div class="mt-[40px] pt-[24px] border-t border-[rgba(255,255,255,0.1)]">
+          <p class="text-[13px] text-[rgba(255,255,255,0.4)] font-normal mb-[12px]">See also</p>
+          <div class="flex justify-center gap-[24px] flex-wrap">
+            <a href="/platforms/weibo/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Weibo marketing &rarr;</a>
+            <a href="/wechat-agency/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">WeChat agency &rarr;</a>
+            <a href="/services/market-entry/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">China market entry &rarr;</a>
+            <a href="/platforms/rednote/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">RedNote marketing &rarr;</a>
+            <a href="/platforms/douyin/" class="text-[14px] text-[#CC3333] font-medium transition-colors duration-150 hover:text-[#B02D2D]">Douyin marketing &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <style>
+    .faq-content {
+      transition: height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+    }
+  </style>
+
+  <script>
+    // FAQ accordion
+    document.querySelectorAll('[data-faq]').forEach((item) => {
+      const trigger = item.querySelector('[data-faq-trigger]') as HTMLButtonElement;
+      const content = item.querySelector('.faq-content') as HTMLElement;
+      if (!trigger || !content) return;
+
+      trigger.addEventListener('click', () => {
+        const isOpen = trigger.getAttribute('aria-expanded') === 'true';
+        const chevron = trigger.querySelector('.faq-chevron') as HTMLElement;
+
+        if (isOpen) {
+          content.style.height = content.scrollHeight + 'px';
+          requestAnimationFrame(() => {
+            content.style.height = '0';
+            content.style.opacity = '0';
+          });
+          trigger.setAttribute('aria-expanded', 'false');
+          if (chevron) chevron.style.transform = 'rotate(0deg)';
+        } else {
+          content.style.height = '0';
+          requestAnimationFrame(() => {
+            content.style.height = content.scrollHeight + 'px';
+            content.style.opacity = '1';
+          });
+          trigger.setAttribute('aria-expanded', 'true');
+          if (chevron) chevron.style.transform = 'rotate(180deg)';
+        }
+      });
+    });
+  </script>
+</PageLayout>
