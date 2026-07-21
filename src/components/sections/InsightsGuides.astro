@@ -1,0 +1,132 @@
+---
+import { getCollection } from 'astro:content';
+import Container from '../ui/Container.astro';
+import SectionBar from '../ui/SectionBar.astro';
+
+interface Props {
+  lang?: 'en' | 'fr' | 'zh' | 'de' | 'es';
+  ids: string[];
+}
+
+const { lang = 'en', ids } = Astro.props;
+
+const COLLECTIONS = {
+  en: 'blog',
+  fr: 'blog-fr',
+  zh: 'blog-zh',
+  de: 'blog-de',
+  es: 'blog-es',
+} as const;
+
+const INSIGHTS_BASE = {
+  en: '/insights',
+  fr: '/fr/insights',
+  zh: '/zh/insights',
+  de: '/de/insights',
+  es: '/es/analisis',
+} as const;
+
+const COPY = {
+  en: {
+    overline: 'Insights & guides',
+    heading: "More on China's platforms.",
+    seeAll: 'See all guides and insights',
+    read: 'min of reading',
+  },
+  fr: {
+    overline: 'Analyses et guides',
+    heading: 'Pour aller plus loin sur les plateformes chinoises.',
+    seeAll: 'Voir tous les guides et analyses',
+    read: 'min de lecture',
+  },
+  zh: {
+    overline: '洞察与指南',
+    heading: '更多中国平台的实战解读。',
+    seeAll: '查看全部指南与洞察',
+    read: '分钟阅读',
+  },
+  de: {
+    overline: 'Einblicke & Leitfäden',
+    heading: 'Mehr zu Chinas Plattformen.',
+    seeAll: 'Alle Leitfäden und Einblicke ansehen',
+    read: 'Min. Lesezeit',
+  },
+  es: {
+    overline: 'Análisis y guías',
+    heading: 'Más sobre las plataformas chinas.',
+    seeAll: 'Ver todas las guías y análisis',
+    read: 'min de lectura',
+  },
+} as const;
+
+const copy = COPY[lang];
+const insightsBase = INSIGHTS_BASE[lang];
+
+const all = await getCollection(COLLECTIONS[lang]);
+const byId = new Map(all.map((post) => [post.id, post]));
+const articles = ids
+  .map((id) => byId.get(id))
+  .filter((post): post is NonNullable<typeof post> => Boolean(post))
+  .map((post) => ({
+    category: post.data.category,
+    title: post.data.title,
+    excerpt: post.data.description,
+    featuredImage: post.data.featuredImage,
+    readingTime: `${Math.ceil((post.body || '').split(/\s+/).length / 200)} ${copy.read}`,
+    href: `${insightsBase}/${post.id}/`,
+  }));
+---
+
+{articles.length > 0 && (
+  <section class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="flex items-end justify-between gap-[24px] mb-[24px] max-[640px]:flex-col max-[640px]:items-start max-[640px]:gap-[12px]">
+        <div>
+          <SectionBar />
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">
+            {copy.overline}
+          </p>
+          <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[var(--color-ink)]">
+            {copy.heading}
+          </h2>
+        </div>
+        <a href={`${insightsBase}/`} class="shrink-0 text-[14px] font-medium text-[var(--color-vermillion)] hover:underline whitespace-nowrap">
+          {copy.seeAll} &#8594;
+        </a>
+      </div>
+
+      <div class="grid grid-cols-3 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[24px]">
+        {articles.map((article) => (
+          <a href={article.href} class="block bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[8px] overflow-hidden transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)]">
+            {article.featuredImage ? (
+              <img src={article.featuredImage} alt={article.title} width="800" height="600" class="w-full aspect-[4/3] object-cover bg-[var(--color-warm-gray)]" loading="lazy" decoding="async" />
+            ) : (
+              <div class="w-full aspect-[4/3] bg-[var(--color-warm-gray)] flex items-center justify-center">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="rgba(0,0,0,0.15)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+                  <polyline points="14,2 14,8 20,8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                </svg>
+              </div>
+            )}
+            <div class="p-[20px]">
+              <p class="text-[11px] font-medium tracking-[0.05em] uppercase text-[var(--color-vermillion)] leading-[1.2] mb-[8px]">
+                {article.category}
+              </p>
+              <h3 class="text-[18px] text-[var(--color-ink)] font-medium leading-[1.3] mb-[8px]">
+                {article.title}
+              </h3>
+              <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)] mb-[12px] line-clamp-2">
+                {article.excerpt}
+              </p>
+              <p class="text-[12px] text-[var(--color-stone)] font-normal leading-[1.4]">
+                {article.readingTime}
+              </p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </Container>
+  </section>
+)}

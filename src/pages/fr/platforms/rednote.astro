@@ -5,6 +5,7 @@ import SectionBar from '../../../components/ui/SectionBar.astro';
 import SectionHeading from '../../../components/ui/SectionHeading.astro';
 import Button from '../../../components/ui/Button.astro';
 import UpdatedDate from '../../../components/ui/UpdatedDate.astro';
+import InsightsGuides from '../../../components/sections/InsightsGuides.astro';
 
 const stats = [
   { label: 'Utilisateurs actifs chaque mois', value: '350M+', image: '/images/platforms/rednote-stats/monthly-active-users.webp' },
@@ -577,6 +578,8 @@ const faqs = [
     </Container>
   </section>
 
+
+  <InsightsGuides lang="fr" ids={["kol-vs-koc-china-influencer-guide","content-mix-china","china-social-media-platforms-2026"]} />
   <!-- Getting started — matches homepage HowItWorks -->
   <section class="relative mt-[96px] max-[640px]:mt-[64px] pt-[80px] pb-[80px] max-[1024px]:pt-[64px] max-[1024px]:pb-[64px] max-[640px]:pt-[48px] max-[640px]:pb-[48px] overflow-hidden">
     <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero/rednote-hero.webp')" aria-hidden="true"></div>

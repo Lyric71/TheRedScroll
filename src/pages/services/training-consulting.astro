@@ -6,6 +6,7 @@ import SectionHeading from '../../components/ui/SectionHeading.astro';
 import Button from '../../components/ui/Button.astro';
 import FaqAccordion from '../../components/sections/FaqAccordion.astro';
 import GettingStarted from '../../components/sections/GettingStarted.astro';
+import InsightsGuides from '../../components/sections/InsightsGuides.astro';
 import { faqPageSchema, serviceSchema } from '../../lib/schema';
 
 
@@ -393,6 +394,8 @@ const gettingStartedSteps = [
     </Container>
   </section>
 
+
+  <InsightsGuides ids={["china-social-media-platforms-2026","content-mix-china","what-is-wecom"]} />
   <GettingStarted
     heading="From first call to training delivery in two weeks."
     steps={gettingStartedSteps}

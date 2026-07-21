@@ -6,6 +6,7 @@ import SectionHeading from '../../../components/ui/SectionHeading.astro';
 import Button from '../../../components/ui/Button.astro';
 import FaqAccordion from '../../../components/sections/FaqAccordion.astro';
 import GettingStarted from '../../../components/sections/GettingStarted.astro';
+import InsightsGuides from '../../../components/sections/InsightsGuides.astro';
 
 
 const faqs = [
@@ -265,6 +266,8 @@ const gettingStartedSteps = [
     </Container>
   </section>
 
+
+  <InsightsGuides lang="zh" ids={["ai-content-production-china","content-mix-china","china-social-media-platforms-2026"]} />
   <GettingStarted lang="zh"
     heading="从需求敲定，到首批内容正式上线，两周就够。"
     steps={gettingStartedSteps}

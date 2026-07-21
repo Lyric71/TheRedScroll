@@ -6,6 +6,7 @@ import SectionHeading from '../../components/ui/SectionHeading.astro';
 import Button from '../../components/ui/Button.astro';
 import FaqAccordion from '../../components/sections/FaqAccordion.astro';
 import GettingStarted from '../../components/sections/GettingStarted.astro';
+import InsightsGuides from '../../components/sections/InsightsGuides.astro';
 import { faqPageSchema, serviceSchema } from '../../lib/schema';
 
 
@@ -335,6 +336,8 @@ const gettingStartedSteps = [
     </Container>
   </section>
 
+
+  <InsightsGuides ids={["kol-vs-koc-china-influencer-guide","live-commerce-china-how-it-works","content-mix-china"]} />
   <GettingStarted
     heading="From brief to first influencer posts in two to four weeks."
     steps={gettingStartedSteps}

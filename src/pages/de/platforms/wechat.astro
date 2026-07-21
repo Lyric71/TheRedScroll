@@ -5,6 +5,7 @@ import SectionBar from '../../../components/ui/SectionBar.astro';
 import SectionHeading from '../../../components/ui/SectionHeading.astro';
 import Button from '../../../components/ui/Button.astro';
 import UpdatedDate from '../../../components/ui/UpdatedDate.astro';
+import InsightsGuides from '../../../components/sections/InsightsGuides.astro';
 
 const stats = [
   { label: 'Aktiv pro Monat', value: '1,4 Mrd.+', image: '/images/platforms/wechat-stats/monthly-active-users.webp' },
@@ -341,6 +342,8 @@ const faqs = [
     </Container>
   </section>
 
+
+  <InsightsGuides lang="de" ids={["what-is-wecom","sell-on-wechat","wechat-advertising-formats-costs"]} />
   <section class="relative mt-[96px] max-[640px]:mt-[64px] pt-[80px] pb-[80px] max-[1024px]:pt-[64px] max-[1024px]:pb-[64px] max-[640px]:pt-[48px] max-[640px]:pb-[48px] overflow-hidden">
     <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero/wechat-hero.webp')" aria-hidden="true"></div>
     <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.88]" aria-hidden="true"></div>
