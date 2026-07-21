@@ -1,7 +1,6 @@
 ---
 import '../styles/global.css';
 import '../styles/fonts.css';
-import Analytics from '@vercel/analytics/astro';
 import Header from '../components/global/Header.astro';
 import Footer from '../components/global/Footer.astro';
 import type { Lang } from '../i18n/config';
@@ -263,6 +262,5 @@ const resolvedOgType = ogType ?? (hasArticleSchema ? 'article' : 'website');
     <Header lang={lang} />
     <slot />
     <Footer lang={lang} />
-    <Analytics />
   </body>
 </html>

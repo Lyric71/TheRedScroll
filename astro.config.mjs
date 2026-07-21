@@ -104,9 +104,7 @@ export default defineConfig({
   site: 'https://www.theredscroll.com',
   output: 'static',
   trailingSlash: 'always',
-  adapter: vercel({
-    webAnalytics: { enabled: true },
-  }),
+  adapter: vercel(),
   build: {
     // Inline the (small ~10 KiB) CSS bundle into the HTML head instead of
     // emitting an external stylesheet. Removes a render-blocking request on
