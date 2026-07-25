@@ -15,7 +15,7 @@ const articles = allPosts
     excerpt: post.data.description,
     readingTime: `${Math.ceil(post.body!.split(/\s+/).length / 200)} min`,
     date: new Date(post.data.publishDate).toLocaleDateString('es-ES', { month: 'long', year: 'numeric' }),
-    slug: `/es/analisis/${post.id}`,
+    slug: `/es/analisis/${post.id}/`,
     featuredImage: post.data.featuredImage,
   }));
 

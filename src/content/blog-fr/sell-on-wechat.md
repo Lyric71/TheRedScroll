@@ -1,7 +1,7 @@
 ---
-title: "Vendre sur WeChat : le guide des marques"
+title: "Vendre sur WeChat : le guide pour les marques"
 description: "Le plus grand écosystème de marque de Chine, c'est WeChat. Comptes officiels, Video Accounts, Mini Programs, publicité et WeCom : comment vendre sur les cinq."
-metaTitle: "Vendre sur WeChat : le guide des marques"
+metaTitle: "Vendre sur WeChat : le guide pour les marques"
 metaDescription: "En Chine, c'est sur WeChat que vendent les marques. Comptes officiels, Video Accounts, Mini Programs, publicité et WeCom : transformer l'attention en ventes."
 publishDate: 2026-07-21
 author: "TheRedScroll"
