@@ -148,8 +148,18 @@ const orgSchema = {
     },
   ],
   founder: { '@id': `${siteUrl}/#founder` },
+  // WO-3.3. The @id matches the one TheChinaPath uses in its subOrganization
+  // list, so the two graphs resolve to a single entity instead of two
+  // lookalikes competing for the same knowledge-panel slot.
+  parentOrganization: {
+    '@type': 'Organization',
+    '@id': 'https://www.thechinapath.com#organization',
+    name: 'TheChinaPath',
+    url: 'https://www.thechinapath.com',
+  },
   sameAs: [
     'https://www.linkedin.com/company/theredscroll',
+    'https://www.thechinapath.com',
   ],
 };
 
