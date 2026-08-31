@@ -27,11 +27,14 @@ const CANONICAL_HOSTS = {
   'chinawebfoundry.com': 'https://www.chinawebfoundry.com',
   'hubstudio.ai': 'https://www.hubstudio.ai',
   'beyondbridge.ai': 'https://www.beyondbridge.ai',
+  'bearingbridge.com': 'https://www.bearingbridge.com',
 };
 
 const RETIRED_HOSTS = [
   'compass.bearingbridge.com',
   'beyondcompass.beyondbordergroup.com',
+  // Does not resolve. BeyondBridge is at www.beyondbridge.ai; the group
+  // site is www.bearingbridge.com. They are different companies.
   'beyondbridge.com',
 ];
 
