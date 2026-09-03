@@ -11,12 +11,13 @@ interface Props {
   schema?: Record<string, unknown> | Record<string, unknown>[];
   publishedTime?: string;
   modifiedTime?: string;
+  omitLocales?: Lang[];
 }
 
-const { title, description, canonical, ogImage, lang = 'en', schema, publishedTime, modifiedTime } = Astro.props;
+const { title, description, canonical, ogImage, lang = 'en', schema, publishedTime, modifiedTime, omitLocales } = Astro.props;
 ---
 
-<BaseLayout title={title} description={description} canonical={canonical} ogImage={ogImage} lang={lang} schema={schema} ogType="article" publishedTime={publishedTime} modifiedTime={modifiedTime}>
+<BaseLayout title={title} description={description} canonical={canonical} ogImage={ogImage} lang={lang} schema={schema} ogType="article" publishedTime={publishedTime} modifiedTime={modifiedTime} omitLocales={omitLocales}>
   <main>
     <article>
       <slot />

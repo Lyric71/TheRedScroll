@@ -56,6 +56,8 @@ const blogRoutePatterns = [
   { re: /^\/zh\/insights\/([^/]+)\/?$/, dir: 'blog-zh' },
   { re: /^\/de\/insights\/([^/]+)\/?$/, dir: 'blog-de' },
   { re: /^\/es\/analisis\/([^/]+)\/?$/, dir: 'blog-es' },
+  { re: /^\/industries\/([^/]+)\/?$/, dir: 'industries' },
+  { re: /^\/tools\/([^/]+)\/?$/, dir: 'tools' },
 ];
 
 /** @param {string} urlPath */

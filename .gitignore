@@ -36,3 +36,6 @@ lh-*.json
 .tmp/
 tmp_*
 /*.html
+
+# editorial pipeline console output (regenerable)
+editorial/logs/runs/

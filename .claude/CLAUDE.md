@@ -90,3 +90,23 @@ content collections defined in `src/content/config.ts`.
 - Commit messages: conventional commits (feat:, fix:, chore:, docs:)
 - Branch naming: feature/page-name, fix/description
 - Always run build before pushing
+
+## Editorial System (daily articles, Sept 7 to Dec 4, 2026)
+The article pipeline lives in `editorial/`. When the user says "Draft today's
+article", "Draft brief 04C" or "Publish <slug>", read `editorial/CLAUDE.md`
+and `editorial/SPEC.md` first and follow `editorial/RUNBOOK.md`.
+
+Pipeline, in order, none optional: Chinese deep research with every source
+validated twice, `/createarticle` (house version, iteration 7 is a cadence
+pass, never planted errors), `/content-quality-us` on every article,
+`/generate-image-openai` for the hero image, then `/createblogarticle` only
+when a person asks to publish, then one email to cyril.drouin@gmail.com via
+`editorial/scripts/notify-publish.mjs` (Resend) when the publish is done.
+House SEO ceilings are title 52, meta 152, excerpt 25 words. Hero images go to
+`public/images/blog/<slug>.webp`. Industry pages publish to
+`src/content/industries/`, tool pages to `src/content/tools/` (English only).
+
+Two standing rules from Cyril: when the runbook asks for something the repo
+cannot do, use what the repo has and log the substitution. Every pipeline
+step runs on the most capable model available, never a faster or smaller
+mode; images use gpt-image-2 at high quality.

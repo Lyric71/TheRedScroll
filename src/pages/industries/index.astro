@@ -1,0 +1,55 @@
+---
+import { getCollection } from 'astro:content';
+import PageLayout from '../../layouts/PageLayout.astro';
+import EditorialIndex from '../../components/pages/EditorialIndex.astro';
+
+const SITE_URL = 'https://www.theredscroll.com';
+
+const pages = (await getCollection('industries'))
+  .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime())
+  .map((post) => ({
+    href: `/industries/${post.id}/`,
+    title: post.data.title,
+    excerpt: post.data.description,
+    category: post.data.category,
+    featuredImage: post.data.featuredImage,
+    readingTime: `${Math.ceil((post.body || '').split(/\s+/).length / 200)} min`,
+    date: new Date(post.data.publishDate).toLocaleDateString('en-US', { month: 'long', year: 'numeric' }),
+  }));
+
+const collectionSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': `${SITE_URL}/industries/#collectionpage`,
+  name: 'China Social Media Marketing by Industry',
+  url: `${SITE_URL}/industries/`,
+  description: 'How China social media marketing works in your industry: rules, platforms, budgets and what a package includes.',
+  isPartOf: { '@id': `${SITE_URL}/#website` },
+  publisher: { '@id': `${SITE_URL}/#organization` },
+  inLanguage: 'en',
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListElement: pages.map((p, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `${SITE_URL}${p.href}`,
+      name: p.title,
+    })),
+  },
+};
+---
+
+<PageLayout
+  title="China Social Media Marketing by Industry | TheRedScroll"
+  description="Beauty, fashion, food, travel, B2B, automotive, health and luxury. What changes on WeChat, Xiaohongshu and Douyin when your category changes."
+  schema={collectionSchema}
+  omitLocales={['fr', 'zh', 'es', 'de']}
+>
+  <EditorialIndex
+    overline="Industries"
+    heading="Your category changes the playbook."
+    intro="The rules, the platforms and the budget all shift with the industry. One page per category, written from the accounts we run."
+    items={pages}
+    emptyText="The first industry pages are on their way. Until then, tell us your category and we will walk you through what changes."
+  />
+</PageLayout>

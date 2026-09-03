@@ -1,0 +1,55 @@
+---
+import { getCollection } from 'astro:content';
+import PageLayout from '../../layouts/PageLayout.astro';
+import EditorialIndex from '../../components/pages/EditorialIndex.astro';
+
+const SITE_URL = 'https://www.theredscroll.com';
+
+const pages = (await getCollection('tools'))
+  .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime())
+  .map((post) => ({
+    href: `/tools/${post.id}/`,
+    title: post.data.title,
+    excerpt: post.data.description,
+    category: post.data.category,
+    featuredImage: post.data.featuredImage,
+    readingTime: `${Math.ceil((post.body || '').split(/\s+/).length / 200)} min`,
+    date: new Date(post.data.publishDate).toLocaleDateString('en-US', { month: 'long', year: 'numeric' }),
+  }));
+
+const collectionSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': `${SITE_URL}/tools/#collectionpage`,
+  name: 'China Social Media Planning Tools',
+  url: `${SITE_URL}/tools/`,
+  description: 'Calculators and checklists for planning a China social media budget and launch.',
+  isPartOf: { '@id': `${SITE_URL}/#website` },
+  publisher: { '@id': `${SITE_URL}/#organization` },
+  inLanguage: 'en',
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListElement: pages.map((p, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `${SITE_URL}${p.href}`,
+      name: p.title,
+    })),
+  },
+};
+---
+
+<PageLayout
+  title="China Social Media Planning Tools | TheRedScroll"
+  description="Free calculators and checklists for planning a China social media budget and launch across WeChat, Xiaohongshu and Douyin."
+  schema={collectionSchema}
+  omitLocales={['fr', 'zh', 'es', 'de']}
+>
+  <EditorialIndex
+    overline="Tools"
+    heading="Plan the numbers before you spend them."
+    intro="Calculators and checklists built from the budgets we run every month. No sign-up, no gate."
+    items={pages}
+    emptyText="The first tool is a budget calculator, coming later this year. In the meantime, our pricing page lists what each monthly package covers."
+  />
+</PageLayout>
