@@ -58,8 +58,13 @@ Then it stops. A person reviews the draft (see below) and asks for publication.
 creates `src/content/blog/<slug>.md`, maps the frontmatter to the blog schema,
 converts the plain-text internal references into links, wires the hero image,
 propagates to FR, ZH, DE and ES, updates every listing surface, and runs the
-build. It then runs `deep-translate` on each locale. Claude sets the row to
-`published` with `published_on`.
+build. It then runs `/deep-translate` on each locale, all three passes, FR
+then ZH then DE then ES, per `TRANSLATION_GUIDE.md`. The propagation and the
+deep translation are part of the publish step, never optional, never
+deferred. Claude sets the row to `published` with `published_on`.
+
+Industry and tool pages are the exception: their sections exist in English
+only, so they publish in English until localized sections are built.
 
 Then, in this order, and only when each step passes: `npm run build`,
 `npx astro check`, `git add` of everything the article touched (content in

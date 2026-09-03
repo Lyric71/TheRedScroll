@@ -21,7 +21,7 @@ Every article goes through these steps. None is optional.
 | 1. Draft | `/createarticle` | 13 iterations from the brief to `output/<slug>.md` | `drafted`, `drafted_on` |
 | 2. Quality | `/content-quality-us` | 18-pass loop on the draft, in place | `quality_passed`, `quality_passed_on` |
 | 3. Image | `/generate-image-openai` | Hero image from the feature-image block | `image_ready`, `image_generated_on` |
-| 4. Publish | `/createblogarticle` + build + git | Creates the post in `src/content/blog/`, wires the image, propagates locales, runs `npm run build` and `npx astro check`, commits on main, pushes to origin | `published`, `published_on` |
+| 4. Publish | `/createblogarticle` + `/deep-translate` + build + git | Creates the post in `src/content/blog/`, wires the image, propagates to FR, ZH, DE and ES, runs `/deep-translate` (three passes) on each locale, runs `npm run build` and `npx astro check`, commits on main, pushes to origin | `published`, `published_on` |
 | 5. Notify | `editorial/scripts/notify-publish.mjs` (Resend) | Emails a publish summary to Cyril | (noted in the run log) |
 
 "Draft today's article." runs steps 0 to 3 and stops. Step 4 runs only when a

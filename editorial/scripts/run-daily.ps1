@@ -76,9 +76,13 @@ Publish every reviewed draft that is due.
 Read editorial/CLAUDE.md, editorial/SPEC.md and editorial/RUNBOOK.md first.
 In editorial/schedule.csv, find every row whose status is image_ready and
 whose publish_date is today or earlier. For each one, in date order, run the
-publish step (/createblogarticle on the output file, or the industries /
-tools collection for those templates), then run npm run build and npx astro
-check. When both pass: set the row to published with published_on, then
+publish step: /createblogarticle on the output file (or the industries /
+tools collection for those templates). For insights this includes, without
+exception, the propagation to every live locale (blog-fr, blog-zh, blog-de,
+blog-es, with every listing surface updated) followed by /deep-translate on
+each localized file, all three passes, in this order: FR, ZH, DE, ES. Follow
+TRANSLATION_GUIDE.md. Do not stop after the humanized translation; the native
+rewrite is mandatory. Then run npm run build and npx astro check. When both pass: set the row to published with published_on, then
 git add everything the article touched (the content files in every locale,
 the hero image, the listing surfaces, editorial/output, editorial/logs,
 editorial/schedule.csv, editorial/sources) and commit on main with a
