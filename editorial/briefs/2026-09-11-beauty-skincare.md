@@ -74,7 +74,7 @@ embed images in body copy.
 
 - Table: claims you can make versus claims that get a post removed
 - KOC seeding volume table by launch size
-- Feature image: skincare bottles on a pale surface, top-down, editorial styling, no brand marks
+- Feature image: skincare bottles on a pale surface, top-down, editorial styling, no brand marks. China rule: set the scene in China and show Chinese social platforms on screen (WeChat, Xiaohongshu, Douyin or Weibo interface on a phone, laptop or studio monitor); set in a typical Chinese city, varied from article to article and not only Shanghai, only Chinese people in frame, candid normal-life photo with real-life defects, no AI polish; this rule wins over the subject hint
 
 ## Tables required
 

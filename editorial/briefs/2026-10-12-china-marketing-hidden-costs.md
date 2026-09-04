@@ -78,7 +78,7 @@ embed images in body copy.
 
 - The twelve hidden costs table. This is the whole page.
 - Sample budget: quoted versus actual, side by side
-- Feature image: a receipt curling off the edge of a table, high contrast
+- Feature image: a receipt curling off the edge of a table, high contrast. China rule: set the scene in China and show Chinese social platforms on screen (WeChat, Xiaohongshu, Douyin or Weibo interface on a phone, laptop or studio monitor); set in a typical Chinese city, varied from article to article and not only Shanghai, only Chinese people in frame, candid normal-life photo with real-life defects, no AI polish; this rule wins over the subject hint
 
 ## Tables required
 

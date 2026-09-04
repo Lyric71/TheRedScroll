@@ -135,9 +135,26 @@ Reference:  /images/blog/<slug>.webp
 
 The same folder serves industry and tool pages.
 
-Real candid editorial photography only. No text, no logos, no diagrams, no
-infographics, no UI overlays. Match the subject to a foreign decision-maker,
-not a mainland professional.
+**China rule, permanent (Cyril, Sept 4, 2026).** Every hero image must be
+visibly China-related and must show Chinese social platforms on a screen:
+a phone, laptop or studio monitor running WeChat, Xiaohongshu, Douyin, Weibo,
+WeCom or Bilibili with their recognizable interface, in a China setting.
+Not only Shanghai: rotate through typical Chinese cities and everyday places
+(Chengdu, Hangzhou, Guangzhou, Shenzhen, Wuhan, Xi'an, Chongqing, Nanjing, a
+second-tier city street, a wet market, a mall, a tea house, a small office, a
+livestream studio). Name the place in the prompt and vary it across
+articles.
+The brief's feature-image line is only a subject hint. A generic desk, an
+invoice, a globe, a handshake or a Western office fails the rule and the
+image is regenerated. Chinese characters on the screens are expected.
+
+**People and look, permanent (Cyril, Sept 4, 2026).** Only Chinese people
+in the image, never a Western subject, whatever the article's audience. Not
+a perfect AI render: vivid, candid, normal-life photography with normal-life
+defects (handheld feel, slight motion blur, uneven light, clutter, cables, a
+smudged screen, someone mid-gesture). The prompt must ask for those
+imperfections. No studio polish, no cinematic grade, no diagrams, no
+infographics, no watermark.
 
 The image is generated with the `generate-image-openai` skill in step 3 of
 the pipeline: landscape 3:2, high quality, then converted to webp with sharp

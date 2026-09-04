@@ -79,7 +79,7 @@ embed images in body copy.
 - Four small multiple charts, one per platform, showing distribution not just averages
 - Downloadable data table, CSV
 - Methodology box, visible and prominent
-- Feature image: a grid of small charts printed on paper, overhead, the data-report look
+- Feature image: a grid of small charts printed on paper, overhead, the data-report look. China rule: set the scene in China and show Chinese social platforms on screen (WeChat, Xiaohongshu, Douyin or Weibo interface on a phone, laptop or studio monitor); set in a typical Chinese city, varied from article to article and not only Shanghai, only Chinese people in frame, candid normal-life photo with real-life defects, no AI polish; this rule wins over the subject hint
 
 ## Tables required
 

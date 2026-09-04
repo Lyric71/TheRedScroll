@@ -100,7 +100,7 @@ Pipeline, in order, none optional: Chinese deep research with every source
 validated twice, `/createarticle` (house version, iteration 7 is a cadence
 pass, never planted errors), `/content-quality-us` on every article,
 `/generate-image-openai` for the hero image, then `/createblogarticle` only
-when a person asks to publish, then one email to cyril.drouin@gmail.com via
+when a person asks to publish, then one email to cyril.drouin@outlook.com via
 `editorial/scripts/notify-publish.mjs` (Resend) when the publish is done.
 House SEO ceilings are title 52, meta 152, excerpt 25 words. Hero images go to
 `public/images/blog/<slug>.webp`. Industry pages publish to

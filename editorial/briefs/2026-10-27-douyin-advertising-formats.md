@@ -76,7 +76,7 @@ embed images in body copy.
 - Ad format table: format, objective, cost, verdict
 - Benchmark table by objective
 - Annotated creative example: what makes the first three seconds work
-- Feature image: a vertical video frame with a visible progress bar, abstracted
+- Feature image: a vertical video frame with a visible progress bar, abstracted. China rule: set the scene in China and show Chinese social platforms on screen (WeChat, Xiaohongshu, Douyin or Weibo interface on a phone, laptop or studio monitor); set in a typical Chinese city, varied from article to article and not only Shanghai, only Chinese people in frame, candid normal-life photo with real-life defects, no AI polish; this rule wins over the subject hint
 
 ## Tables required
 

@@ -77,7 +77,7 @@ embed images in body copy.
 - Cost table by activity
 - Live commerce operating cost breakdown table
 - Three budget level cards with expected outcomes
-- Feature image: a small studio lighting setup seen from behind the camera
+- Feature image: a small studio lighting setup seen from behind the camera. China rule: set the scene in China and show Chinese social platforms on screen (WeChat, Xiaohongshu, Douyin or Weibo interface on a phone, laptop or studio monitor); set in a typical Chinese city, varied from article to article and not only Shanghai, only Chinese people in frame, candid normal-life photo with real-life defects, no AI polish; this rule wins over the subject hint
 
 ## Tables required
 

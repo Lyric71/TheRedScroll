@@ -73,7 +73,7 @@ embed images in body copy.
 - The calculator itself: client-side, no login, four platform toggles and three sliders
 - Assumptions table, visible below the tool
 - Shareable result card the user can screenshot
-- Feature image: a slider control rendered oversized and graphically
+- Feature image: a slider control rendered oversized and graphically. China rule: set the scene in China and show Chinese social platforms on screen (WeChat, Xiaohongshu, Douyin or Weibo interface on a phone, laptop or studio monitor); set in a typical Chinese city, varied from article to article and not only Shanghai, only Chinese people in frame, candid normal-life photo with real-life defects, no AI polish; this rule wins over the subject hint
 
 ## Tables required
 

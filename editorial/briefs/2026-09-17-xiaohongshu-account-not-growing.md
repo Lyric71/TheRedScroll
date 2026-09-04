@@ -74,7 +74,7 @@ embed images in body copy.
 
 - Diagnostic table: symptom, likely cause, the test to run
 - Before and after cover image comparison, two real examples
-- Feature image: a flat line on a simple chart, muted palette, no stock-photo frustration poses
+- Feature image: a flat line on a simple chart, muted palette, no stock-photo frustration poses. China rule: set the scene in China and show Chinese social platforms on screen (WeChat, Xiaohongshu, Douyin or Weibo interface on a phone, laptop or studio monitor); set in a typical Chinese city, varied from article to article and not only Shanghai, only Chinese people in frame, candid normal-life photo with real-life defects, no AI polish; this rule wins over the subject hint
 
 ## Tables required
 

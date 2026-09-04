@@ -25,7 +25,10 @@ import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 
 const SITE = 'https://www.theredscroll.com';
-const DEFAULT_TO = 'cyril.drouin@gmail.com';
+// Resend is in testing mode: it only delivers to the account owner's address.
+// Switch to cyril.drouin@gmail.com once a sending domain is verified at
+// resend.com/domains and FROM uses that domain.
+const DEFAULT_TO = 'cyril.drouin@outlook.com';
 const FROM = 'TheRedScroll <onboarding@resend.dev>';
 
 function loadEnv() {

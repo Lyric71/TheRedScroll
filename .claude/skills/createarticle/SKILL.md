@@ -224,14 +224,40 @@ the cadence variant.
 
 ## Image prompt rules
 
+- **China rule, permanent (Cyril, Sept 4, 2026).** Every hero image must be
+  visibly China-related and must show Chinese social platforms on screen:
+  a phone, tablet, laptop or studio monitor running WeChat (微信),
+  Xiaohongshu (小红书), Douyin (抖音), Weibo (微博), WeCom or Bilibili, with
+  their recognizable interface (Xiaohongshu red header and note grid, Douyin
+  vertical video with comment overlay, WeChat green chat or Official Account
+  view, an ad dashboard in the style of WeChat Ads or Ocean Engine). The
+  setting is China, and not only Shanghai: rotate through typical Chinese
+  cities and places (Chengdu, Hangzhou, Guangzhou, Shenzhen, Wuhan, Xi'an,
+  Chongqing, Nanjing, Suzhou, a second-tier city street, a wet market, a
+  mall, a tea house, a small office, a livestream studio, a delivery scooter
+  lane). Name the city or place in the prompt and vary it from one article
+  to the next. Skyline landmarks are optional; everyday street and interior
+  detail matters more. A generic desk with an invoice, a globe, a
+  handshake or a Western office does not pass. The brief's feature-image
+  line is a subject hint only; this rule wins over it.
+- **People rule, permanent (Cyril, Sept 4, 2026).** Any person in the image
+  is Chinese. Only Chinese people, never a Western marketer, founder or
+  tourist, whatever the audience of the article.
+- **Look rule, permanent (Cyril, Sept 4, 2026).** Not a perfect AI render.
+  Vivid, candid, normal-life photography with normal-life defects: a phone
+  or handheld camera feel, slight motion blur, mixed or uneven light, a
+  cluttered desk, cables, a smudged screen, someone mid-gesture, a cropped
+  edge. Write these imperfections into the prompt. No studio polish, no
+  symmetrical composition, no flawless skin, no cinematic color grade.
 - Platform-agnostic, single unbroken block of prose.
-- Hyper-realistic editorial photography. Soft natural lighting, shallow depth
-  of field. Face-focused close-ups for persona shots.
+- Photorealistic, documentary. Natural or office lighting as found, not
+  staged.
 - NO Midjourney parameters, NO section headers, NO commentary.
 - Real-life candid photography only. Never diagrams or infographics.
-- No text, no logos, no UI overlays, no watermark in the image.
-- Match the human subject to the audience (a foreign founder or marketer for
-  "people out of China"; a mainland professional for "Chinese companies").
+- No watermark, no added captions, no logos outside the app interfaces that
+  appear on the screens. Chinese characters on the screens are expected.
+- The audience input does not change the people in the image: they are
+  Chinese in every case (see the people rule).
 
 ## Feature-image block (append, outside the char count)
 
@@ -250,8 +276,10 @@ article's featured image and OG image.
 - Save to:    public/images/blog/<slug>.webp
 - Reference:  /images/blog/<slug>.webp
 - Format:     .webp, landscape 3:2, web-optimized (China CDN friendly)
-- Style rule: real candid editorial photograph only. No text, no logos,
-              no UI overlays, no diagrams or infographics.
+- Style rule: candid normal-life photo with real-life defects, China
+              setting, only Chinese people, Chinese social platforms
+              visible on screen (WeChat, Xiaohongshu, Douyin, Weibo). No
+              AI polish, no diagrams, no infographics, no watermark.
 
 IMAGE PROMPT (use verbatim):
 

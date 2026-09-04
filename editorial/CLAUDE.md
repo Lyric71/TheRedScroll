@@ -91,6 +91,12 @@ iteration 7.
 2. **Image paths.** The site keeps hero images at `public/images/blog/<slug>.webp`
    and references them as `/images/blog/<slug>.webp`. Use that, not
    `images/insights/`. Industry and tool pages use the same folder.
+   **Image content, permanent rule:** every hero is China-related and shows
+   Chinese social platforms on screen (WeChat, Xiaohongshu, Douyin, Weibo)
+   in a typical Chinese city (varied, not only Shanghai), with only Chinese people in frame, shot as candid
+   normal-life photography with real-life defects rather than AI polish.
+   The brief's feature-image line is a subject hint only. See SPEC, Feature
+   image.
 3. **Prices in public copy.** `STYLE_GUIDE.md` section 6.4 is the source of
    truth: never mention specific prices or package tier names in public
    content. That includes every article in this plan, cost pieces included.
@@ -228,7 +234,9 @@ When step 4 finishes, run from the repo root:
 node editorial/scripts/notify-publish.mjs --slug <slug> --title "<title>" --section insights --build passed --log editorial/logs/YYYY-MM-DD.md --todo "<any open item>"
 ```
 
-It sends one email through Resend (key in `.env`) to cyril.drouin@gmail.com
+It sends one email through Resend (key in `.env`) to cyril.drouin@outlook.com
+(the only address Resend's testing mode can deliver to; switch the default in
+the script to gmail once a sending domain is verified)
 with the live URL per locale, the hero image path, build status, open TODOs
 and the run log path. Use `--section industries` or `--section tools` for
 those pages. Add `--dry-run` to preview. If the send fails, say so in the run

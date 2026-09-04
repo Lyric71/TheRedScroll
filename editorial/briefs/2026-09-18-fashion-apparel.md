@@ -73,7 +73,7 @@ embed images in body copy.
 
 - Camper result strip: three numbers, before and after
 - Funnel diagram: discovery to purchase across three platforms
-- Feature image: a rail of clothing shot at an angle, editorial, no logos
+- Feature image: a rail of clothing shot at an angle, editorial, no logos. China rule: set the scene in China and show Chinese social platforms on screen (WeChat, Xiaohongshu, Douyin or Weibo interface on a phone, laptop or studio monitor); set in a typical Chinese city, varied from article to article and not only Shanghai, only Chinese people in frame, candid normal-life photo with real-life defects, no AI polish; this rule wins over the subject hint
 
 ## Tables required
 

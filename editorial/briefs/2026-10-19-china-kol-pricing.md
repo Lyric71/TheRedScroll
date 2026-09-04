@@ -77,7 +77,7 @@ embed images in body copy.
 - Master rate matrix: platform by follower tier. The page's centerpiece.
 - Category multiplier table
 - Fraud checklist: eight signals of inflated accounts
-- Feature image: a ring light and phone on a tripod, off-duty studio setup
+- Feature image: a ring light and phone on a tripod, off-duty studio setup. China rule: set the scene in China and show Chinese social platforms on screen (WeChat, Xiaohongshu, Douyin or Weibo interface on a phone, laptop or studio monitor); set in a typical Chinese city, varied from article to article and not only Shanghai, only Chinese people in frame, candid normal-life photo with real-life defects, no AI polish; this rule wins over the subject hint
 
 ## Tables required
 

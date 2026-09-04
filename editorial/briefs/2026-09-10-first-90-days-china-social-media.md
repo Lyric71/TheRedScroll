@@ -74,7 +74,7 @@ embed images in body copy.
 
 - Gantt-style 90-day timeline, one row per workstream
 - Checklist table: documents required per platform
-- Feature image: a wall calendar with the first two weeks marked, overhead shot
+- Feature image: a wall calendar with the first two weeks marked, overhead shot. China rule: set the scene in China and show Chinese social platforms on screen (WeChat, Xiaohongshu, Douyin or Weibo interface on a phone, laptop or studio monitor); set in a typical Chinese city, varied from article to article and not only Shanghai, only Chinese people in frame, candid normal-life photo with real-life defects, no AI polish; this rule wins over the subject hint
 
 ## Tables required
 

@@ -78,7 +78,7 @@ embed images in body copy.
 - Master cost table, the page's centerpiece
 - KOL tier pricing table: follower band, typical fee, typical reach
 - Three worked-example cards with line-item totals
-- Feature image: a calculator and notebook with handwritten figures, warm neutral tones
+- Feature image: a calculator and notebook with handwritten figures, warm neutral tones. China rule: set the scene in China and show Chinese social platforms on screen (WeChat, Xiaohongshu, Douyin or Weibo interface on a phone, laptop or studio monitor); set in a typical Chinese city, varied from article to article and not only Shanghai, only Chinese people in frame, candid normal-life photo with real-life defects, no AI polish; this rule wins over the subject hint
 
 ## Tables required
 

@@ -76,7 +76,7 @@ embed images in body copy.
 - Cost per outcome comparison table
 - Two worked campaign cards, KOC and KOL, with full line items
 - Budget split diagram: launch versus established
-- Feature image: many small photo prints scattered versus one large print, overhead
+- Feature image: many small photo prints scattered versus one large print, overhead. China rule: set the scene in China and show Chinese social platforms on screen (WeChat, Xiaohongshu, Douyin or Weibo interface on a phone, laptop or studio monitor); set in a typical Chinese city, varied from article to article and not only Shanghai, only Chinese people in frame, candid normal-life photo with real-life defects, no AI polish; this rule wins over the subject hint
 
 ## Tables required
 

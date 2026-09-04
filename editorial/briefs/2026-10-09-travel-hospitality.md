@@ -75,7 +75,7 @@ embed images in body copy.
 
 - Path-to-booking diagram across social and OTA
 - China travel seasonality calendar graphic
-- Feature image: a hotel window view at dawn, no people, no branding
+- Feature image: a hotel window view at dawn, no people, no branding. China rule: set the scene in China and show Chinese social platforms on screen (WeChat, Xiaohongshu, Douyin or Weibo interface on a phone, laptop or studio monitor); set in a typical Chinese city, varied from article to article and not only Shanghai, only Chinese people in frame, candid normal-life photo with real-life defects, no AI polish; this rule wins over the subject hint
 
 ## Tables required
 

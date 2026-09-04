@@ -74,7 +74,7 @@ embed images in body copy.
 
 - Benchmark table: open rate by follower band and sector. The centerpiece asset.
 - Bar chart: open rate by day of week from our sample
-- Feature image: a declining bar chart rendered as a physical object, paper or card
+- Feature image: a declining bar chart rendered as a physical object, paper or card. China rule: set the scene in China and show Chinese social platforms on screen (WeChat, Xiaohongshu, Douyin or Weibo interface on a phone, laptop or studio monitor); set in a typical Chinese city, varied from article to article and not only Shanghai, only Chinese people in frame, candid normal-life photo with real-life defects, no AI polish; this rule wins over the subject hint
 
 ## Tables required
 

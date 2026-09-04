@@ -74,7 +74,7 @@ embed images in body copy.
 
 - Head-to-head comparison table: audience, intent, content, cost, time to first result
 - Decision matrix: product type by price point, recommended platform
-- Feature image: two overlapping circles in the brand palette, geometric, no photography
+- Feature image: two overlapping circles in the brand palette, geometric, no photography. China rule: set the scene in China and show Chinese social platforms on screen (WeChat, Xiaohongshu, Douyin or Weibo interface on a phone, laptop or studio monitor); set in a typical Chinese city, varied from article to article and not only Shanghai, only Chinese people in frame, candid normal-life photo with real-life defects, no AI polish; this rule wins over the subject hint
 
 ## Tables required
 

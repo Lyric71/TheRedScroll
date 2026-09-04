@@ -26,7 +26,10 @@ param(
   [string]$Mode = 'draft',
   # Manual test run: ignore the plan-start date, the weekday guard and, in
   # publish mode, the publish_date filter.
-  [switch]$Force
+  [switch]$Force,
+  # Optional extra instructions appended to the prompt (for example a resume
+  # note after an interrupted run).
+  [string]$Extra = ''
 )
 
 $ErrorActionPreference = 'Stop'
@@ -97,6 +100,10 @@ error in the run log and send the email with --build failed and the error in
 '@
 }
 
+if ($Extra) {
+  $Prompt += "`n`nADDITIONAL INSTRUCTIONS FROM THE OPERATOR: $Extra"
+}
+
 if ($Force) {
   $Prompt += "`n`nMANUAL TEST RUN: ignore the publish_date. Process every row whose status is image_ready (publish mode) or take the oldest not_started row (draft mode). Say in the run log that this was a forced test run."
   $RunLog = Join-Path $RunLogDir "$Stamp-$Mode-forced.txt"
@@ -111,10 +118,23 @@ $PromptFile = Join-Path $RunLogDir "$Stamp-$Mode.prompt.txt"
 [System.IO.File]::WriteAllText($PromptFile, $Prompt, (New-Object System.Text.UTF8Encoding($false)))
 $Claude = (Get-Command claude).Source
 $Cmd = "type `"$PromptFile`" | `"$Claude`" -p --model $Model --dangerously-skip-permissions --output-format text >> `"$RunLog`" 2>&1"
-$ErrorActionPreference = 'Continue'
-& cmd.exe /d /c $Cmd
-$Code = $LASTEXITCODE
-$ErrorActionPreference = 'Stop'
+# Retry on transient API failures (overloaded, rate limited, 5xx). Up to
+# three attempts, five minutes apart. Never fall back to a smaller model.
+$MaxAttempts = 3
+$Attempt = 0
+do {
+  $Attempt++
+  if ($Attempt -gt 1) {
+    "$(Get-Date -Format s) retry $Attempt of $MaxAttempts after a transient API error, waiting 5 minutes" | Out-File $RunLog -Append -Encoding utf8
+    Start-Sleep -Seconds 300
+  }
+  $ErrorActionPreference = 'Continue'
+  & cmd.exe /d /c $Cmd
+  $Code = $LASTEXITCODE
+  $ErrorActionPreference = 'Stop'
+  $Tail = (Get-Content $RunLog -Tail 5 -ErrorAction SilentlyContinue) -join "`n"
+  $Transient = $Code -ne 0 -and $Tail -match 'API Error: (529|500|502|503|504|429)|Overloaded|overloaded_error|rate limit'
+} while ($Transient -and $Attempt -lt $MaxAttempts)
 
 "$(Get-Date -Format s) end $Mode exit $Code" | Out-File $RunLog -Append -Encoding utf8
 exit $Code

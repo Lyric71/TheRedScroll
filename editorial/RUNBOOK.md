@@ -77,7 +77,9 @@ puts the article live.
 
 When the publish finishes, Claude runs `editorial/scripts/notify-publish.mjs`
 from the repo root. It sends one email through Resend to
-cyril.drouin@gmail.com: subject `Published: <title>`, body with the live URL
+cyril.drouin@outlook.com (Resend testing mode delivers only to the account
+owner; verify a domain at resend.com/domains, then change `FROM` and
+`DEFAULT_TO` in the script to use gmail): subject `Published: <title>`, body with the live URL
 per locale, the hero image path, build status, open TODOs and the run log
 path. `RESEND_API_KEY` is already in `.env`. If the send fails, Claude says so
 instead of skipping silently.
@@ -184,16 +186,24 @@ keys and the full model are all here, and a cloud routine has none of them.
 
 | Task | When (Shanghai) | What | Default |
 |---|---|---|---|
-| TheRedScroll Editorial Draft | Mon, Tue, Thu, Fri 07:00 | `run-daily.ps1 -Mode draft`: steps 0 to 3, stops at `image_ready` | enabled |
-| TheRedScroll Editorial Publish | every day 09:00 | `run-daily.ps1 -Mode publish`: publishes every due `image_ready` row, builds, commits, pushes, emails | enabled (Cyril, Sept 3, 2026) |
+| TheRedScroll Editorial Draft | Mon, Tue, Thu, Fri 11:00 | `run-daily.ps1 -Mode draft`: steps 0 to 3, stops at `image_ready` | enabled |
+| TheRedScroll Editorial Publish | every day 13:00 | `run-daily.ps1 -Mode publish`: publishes every due `image_ready` row, builds, commits, pushes, emails | enabled (Cyril, Sept 3, 2026) |
 
 Scripts live in `editorial/scripts/`. `register-tasks.ps1` creates or updates
 both tasks. Each run writes its console output to `logs/runs/<date>-<mode>.txt`
 next to the article run log. The machine has to be on, or asleep with wake
 allowed, at the run time. A missed run fires as soon as the machine is back.
 
-Publishing is fully unattended since Sept 3, 2026: a draft made at 07:00 is
-published at 09:00 the same day unless someone sets its row to `blocked`
+**Sleep kills a run in progress.** On Sept 3, 2026 a publish run was waiting
+out a five-minute retry when the machine went to sleep, and it never resumed.
+A run can take an hour or more, so the machine must stay awake from 11:00
+until the publish finishes. Set the power plan to never sleep on AC, or keep
+the laptop plugged in and the lid open on run days. The runner retries
+transient API errors (overloaded, rate limit, 5xx) up to three times, five
+minutes apart, on the same model.
+
+Publishing is fully unattended since Sept 3, 2026: a draft made at 11:00 is
+published at 13:00 the same day unless someone sets its row to `blocked`
 before then. That two-hour window is the review. To pause publishing:
 
 ```
