@@ -1,23 +1,20 @@
 ---
-title: China Social Media Marketing Cost 2026
-slug: china-social-media-marketing-cost
-description: What China social media marketing costs in 2026, line by line: sourced figures for setup, media, and influencers, plus how agency fees are billed.
-excerpt: Setup, content, media, influencer, and agency fees for China social media marketing in 2026, with sourced platform figures and three realistic monthly budget scenarios explained.
-template: insight
+title: "How much does China social media marketing cost in 2026"
+description: "Five cost lines, four of them public. Verification is cheap, media has a published floor, and the agency fee is the only number you usually can't find."
+metaTitle: "China Social Media Marketing Cost 2026"
+metaDescription: "What China social media marketing costs in 2026, line by line: sourced figures for setup, media, and influencers, plus how agency fees are billed."
+publishDate: 2026-09-04
+author: "TheRedScroll"
+platforms: ["wechat", "rednote", "douyin"]
+category: "Strategy"
+keywords: ["china social media marketing cost", "china marketing budget", "wechat verification fee", "xiaohongshu verification fee", "douyin blue v cost", "wechat moments ads minimum budget", "china kol cost", "china agency fees"]
+featured: true
+featuredImage: "/images/blog/china-social-media-marketing-cost.webp"
 ---
 
-<!-- HERO SECTION -->
-
-# How much does China social media marketing cost in 2026
-
-Five cost lines, four of them public. Verification is cheap, media has a
-published floor, and the agency fee is the only number you usually can't find.
-
-<!-- INTRODUCTION -->
-
-Most China social media marketing cost estimates are a single range with no
+*Most China social media marketing cost estimates are a single range with no
 source behind them. This one is built line by line. Every platform figure
-below comes from the platform's own documentation or a dated trade source.
+below comes from the platform's own documentation or a dated trade source.*
 
 Your money goes to five places: account setup, content, media, influencers,
 and the agency. The table has the sourced figures. The rest of the article
@@ -31,13 +28,11 @@ explains where each one comes from and what it leaves out.
 | WeChat Moments ads, bidding | From 1,000 yuan a day, 30 yuan CPM | Tencent Ads |
 | Nano KOC post on Xiaohongshu | 20 to 60 dollars | Long Advisory, 2026 |
 | Micro KOL campaign on Xiaohongshu | 10,000 to 35,000 dollars | Long Advisory, 2026 |
-| Agency fee | Published on TheRedScroll's pricing page | TheRedScroll |
+| Agency fee | Published on [TheRedScroll's pricing page](/pricing/) | TheRedScroll |
 
 Dollar figures are rounded conversions at roughly seven yuan to the dollar.
 Trust the yuan. Every figure was checked against its source in September
 2026, and the check date sits in each citation.
-
-<!-- SECTION: The five cost lines nobody separates -->
 
 ## What China social media marketing cost covers: the five lines
 
@@ -57,7 +52,7 @@ rewards. No platform price. It costs what the team producing it costs.
 minimum daily budget, a minimum deposit, a starting bid. Those floors are the
 most reliable numbers in this whole subject.
 
-**Influencer fees** go to creators. A small key opinion consumer (KOC) might
+**Influencer fees** go to creators. A small [key opinion consumer (KOC)](/insights/kol-vs-koc-china-influencer-guide/) might
 cost the price of lunch per post. A campaign with a mid-sized key opinion
 leader (KOL) on Xiaohongshu (小红书) costs as much as a car.
 
@@ -71,14 +66,12 @@ Keep those five apart in every proposal you read. When a proposal folds ad
 spend into the agency fee, you can't see what you're paying for. You also
 can't see whether the media is being marked up.
 
-<!-- SECTION: Account setup and verification -->
-
 ## Account setup and verification: one-time costs by platform
 
 The good news first. Verification costs less than most people expect, and the
 platforms publish the fee.
 
-A WeChat (微信) Official Account run by a mainland entity pays a review fee at
+A [WeChat (微信)](/wechat-agency/) Official Account run by a mainland entity pays a review fee at
 each verification. Verified status lasts a year.
 
 > A WeChat Official Account or Service Account pays a one-time review service
@@ -102,7 +95,7 @@ links, and the data dashboard.
 > be renewed through an annual review. A failed review is not refunded.
 > Source: Xiaohongshu (小红书) enterprise account verification guide, platform document, confirmed September 2026; New Rank (新榜), October 2025. https://a.newrank.cn/trade/news/4199
 
-Douyin (抖音) is the cheapest of the three to keep, once the first year is
+[Douyin (抖音)](/douyin-agency/) is the cheapest of the three to keep, once the first year is
 paid.
 
 > Douyin Blue V enterprise verification costs 600 yuan for the first year and
@@ -121,8 +114,6 @@ registration certificate. A signed application letter. Translations stamped
 by a translation company for anything not in Chinese. The Xiaohongshu guide
 adds that overseas entities must verify through the desktop site, not the
 app, and that each review order expires after 30 days.
-
-<!-- SECTION: Content production -->
 
 ## Content production: per post, per video, per campaign
 
@@ -155,15 +146,13 @@ For a sense of how production is priced in the open, TheRedScroll's pricing
 page lists per-item rates for posts, articles, and videos next to its monthly
 packages. That page is the only place those figures appear.
 
-<!-- SECTION: Media spend -->
-
 ## Media spend: minimum viable budgets by platform
 
 This is the cost line with the firmest numbers, because the platforms publish
 them. It's also where an unsourced estimate does the most damage, so every
 figure here is the platform's own.
 
-WeChat Moments ads, the format most foreign brands start with, run on two
+[WeChat Moments ads](/insights/wechat-advertising-formats-costs/), the format most foreign brands start with, run on two
 buying models. Scheduled buys lock inventory in advance at list price. Bidding
 buys compete in real time and start much lower.
 
@@ -191,9 +180,8 @@ you open the account.
 We're not printing a Douyin first-deposit figure. The numbers in circulation
 come from reseller blogs, not from the platform, and they change by agent.
 Ask the agent opening your account for its threshold in writing.
-<!-- TODO: unsourced claim removed. Douyin and Xiaohongshu first-deposit figures (5,000 to 10,000 yuan in reseller blogs) cut for lack of a platform or trade-press source. This section is thinner by one table row of figures. -->
 
-Xiaohongshu ads run through its Jiguang (聚光) platform, and for foreign
+[Xiaohongshu ads](/rednote-agency/) run through its Jiguang (聚光) platform, and for foreign
 advertisers the route changed this year.
 
 > Since February 2, 2026, overseas merchants can no longer open a Jiguang ad
@@ -217,8 +205,6 @@ A minimum viable test, then, is about 1,000 yuan a day on WeChat for as many
 days as you want data. On Douyin or Xiaohongshu, it's whatever first recharge
 your agent requires. Plan on 30 days either way. Anything shorter tells you
 about the creative, not the channel.
-
-<!-- SECTION: Influencer fees -->
 
 ## Influencer fees: KOC, mid-tier, and top-tier
 
@@ -263,8 +249,6 @@ dollars in creator fees, which looks cheap next to one KOL. It isn't cheap in
 labor. Somebody has to find, brief, ship product to, chase, and report on 40
 people. That labor lands in the agency fee.
 
-<!-- SECTION: Agency fees -->
-
 ## Agency fees: retainer, project, and fixed price compared
 
 If you've read this far, you have four of the five lines. The fifth is the
@@ -274,7 +258,6 @@ Here the sourcing runs out, and it's worth saying why. We couldn't find a
 dated, non-agency source that publishes China social media agency fee ranges.
 We won't cite an agency's own blog for a market figure. So this section
 compares the three billing models instead of quoting a market rate.
-<!-- TODO: unsourced claim removed. No third-party market range for China agency retainers found in Chinese or English trade press. Section compares billing models only. -->
 
 **Retainer.** A monthly fee for a team's time, usually described in hours or
 headcount. Scope is elastic. This is the most common model, and the one where
@@ -304,8 +287,6 @@ item, so the unit rate is visible? And what's the minimum term? Six months is
 reasonable for China (verification, warm-up, and the first data cycle eat most
 of it).
 
-<!-- SECTION: Three realistic budgets -->
-
 ## Three realistic budgets: testing, building, scaling
 
 These are budget envelopes, not packages. They show how the five cost lines
@@ -329,21 +310,19 @@ largest lines. Media is third.
 **Scaling, about 15,000 dollars a month.** Three platforms, or two plus a
 store. Media becomes the largest line. A Douyin collaboration at the sourced
 mid-tier range fits every second month. Content includes video at a daily or
-near-daily cadence. Private domain work on WeCom (企业微信) starts, because at
+near-daily cadence. Private domain work on [WeCom (企业微信)](/insights/what-is-wecom/) starts, because at
 this spend retention is cheaper than another month of acquisition.
 
 The split shifts as you grow. At the test level, labor is most of the money.
 At scale, media is. If a proposal at the scaling level still shows the agency
 fee as the biggest line, ask what the media budget is doing.
 
-<!-- SECTION: Why TheRedScroll publishes its prices -->
-
 ## Why TheRedScroll publishes its prices, and where to find them
 
 Everything above is public, sourced, and dated. The one number this article
 doesn't print is TheRedScroll's own, and that's deliberate.
 
-The rate card lives on the pricing page. It lists the monthly packages, what
+The rate card lives on the [pricing page](/pricing/). It lists the monthly packages, what
 each includes, and the per-item rates for content. Ad spend is billed
 separately at cost, with no markup. Contracts run six months minimum, the
 length of a first real data cycle in China.
@@ -353,11 +332,9 @@ seen the number before the call asks better questions on the call. None of
 the 37 agencies we analyzed publish a monthly figure. The rate card is the
 direct route from "how much does this cost" to an answer.
 
-Pre-entry? Read the pricing page, then the services page for what each line
+Pre-entry? Read the pricing page, then the [services page](/services/) for what each line
 of work involves. Already in market? If the proposal you're paying against
 doesn't separate the five lines above, that's the first thing to fix.
-
-<!-- SECTION: FAQ -->
 
 ## Frequently asked questions
 
@@ -401,87 +378,9 @@ reason, not an excuse. In TheRedScroll's April 2026 analysis, 0 out of 37
 agencies published fixed-price packages. A published price moves the scoping
 before the call, where the buyer can compare.
 
-<!-- CTA -->
+## See the full rate card, then book a call
 
-CTA: See the full rate card, then Book a call
-
-<!-- =====================================================================
-FEATURE IMAGE: INSTRUCTION FOR CLAUDE CODE
-
-Generate the feature (hero) image from the prompt below with the
-generate-image-openai skill, convert to webp, then wire it in as the
-article's featured image and OG image.
-
-- Save to:    public/images/blog/china-social-media-marketing-cost.webp
-- Reference:  /images/blog/china-social-media-marketing-cost.webp
-- Format:     .webp, landscape 3:2, web-optimized (China CDN friendly)
-- Style rule: real candid editorial photograph only. No text, no logos,
-              no UI overlays, no diagrams or infographics.
-
-VISUAL CONCEPTS CONSIDERED (iteration 13):
-1. An itemized paper invoice on a wooden desk in warm afternoon light, no
-   faces, a pen and a cup of tea beside it. Chosen: matches the brief, reads
-   as "cost" instantly, no subject to get wrong.
-2. A foreign marketer at a desk with a calculator and a printed budget sheet,
-   phone face down. Rejected: the calculator cliche.
-3. Two people reviewing a proposal across a table in a Shanghai office with
-   window light. Rejected: risks reading as a sales meeting.
-4. Close-up of hands sorting receipts into five piles on a desk. Rejected:
-   too literal about the five cost lines, and fussy at hero crop.
-5. A founder at a laptop in a home office, pen tapping a printed spreadsheet.
-   Rejected: generic startup imagery.
-
-IMAGE PROMPT (use verbatim):
-
-Candid snapshot taken on a phone inside a small, busy Shanghai marketing agency office on a weekday afternoon. Two Chinese colleagues in their late twenties, a woman and a man, lean over a cluttered desk going through a China social media ad budget. The woman points at a laptop screen showing a Chinese advertising dashboard in the style of WeChat Ads and Ocean Engine: green and blue interface, Chinese characters, spend figures in yuan, a bar chart of daily budget. The man holds a phone with the Xiaohongshu app open, red header and a grid of lifestyle notes, screen slightly smudged. A second phone on the desk plays a Douyin video with the comment overlay. Printed cost sheets with handwritten notes in Chinese, a marker, sticky notes, a tangle of charger cables, a half-drunk bubble tea and a paper cup. Uneven mixed light from a fluorescent ceiling and a window, slight motion blur on the man's hand mid-gesture, slightly tilted framing, a cropped chair edge in the foreground, faint noise like a phone camera. Real everyday moment, unposed, imperfect, not a polished render, no watermark, no captions, no logos other than the app interfaces on the screens.
-
-(Third version, Sept 4, 2026, under the permanent rules: Chinese social platforms on screen, only Chinese people, candid normal-life look with real defects, any typical Chinese city. Versions one, invoice on a desk, and two, Western marketer with a Shanghai skyline, were rejected.)
-===================================================================== -->
-
-<!-- SCHEMA
-Type: Article
-FAQPage: yes, 5 questions
-Breadcrumb: Home > Insights > China Social Media Marketing Cost 2026
-Author: TheRedScroll
-datePublished: 2026-09-07
--->
-
-<!-- ASSET BRIEF
-TABLES:
-  1. Answer table (introduction): seven sourced figures, one per cost line,
-     with the source name. Data is in the table as written.
-  2. Verification fees by platform (Account setup section): platform, who
-     pays, fee, validity. Four rows, all sourced in the blockquotes above it.
-  3. Media floors by platform (Media spend section): platform, ad platform,
-     published floor, who sets it. Two Tencent figures, two "set by agent".
-  4. Influencer tiers (Influencer fees section): tier, unit, sourced range,
-     best use. Long Advisory May and June 2026 figures. Top tier left unsourced
-     on purpose.
-  5. Billing models (Agency fees section): retainer, project, fixed price by
-     price visibility, scope, and ad-spend treatment. Qualitative, no figures.
-  Master cost table (brief asset): the five cost lines by platform, one row
-  each, can be derived from tables 2 and 3 plus the Long Advisory ranges. Do
-  not add a TheRedScroll fee row; link to the pricing page instead.
-CHARTS:
-  Stacked bar or simple bar, "share of a typical 6,000-dollar month by cost
-  line" (brief asset). Illustrative allocation only, drawn from the Building
-  scenario: content and agency fee as the two largest bars, media third, KOC
-  seeding fourth, verification a sliver. Label it as an illustrative split,
-  not sourced market data. Vermillion for the media bar only, ink for the rest.
-  Three budget scenario cards (brief asset): 2,000 / 6,000 / 15,000 dollars a
-  month, each listing platforms, content cadence, media, and influencer lines
-  as described in the Three realistic budgets section. Card headers in
-  sentence case. No package names.
-SCREENSHOTS: none
-DOWNLOADS: none
-INTERNAL LINKS:
-  pricing page -> /pricing/
-  services page -> /services/
-  Xiaohongshu (money page, any Xiaohongshu mention in Media spend) -> /rednote-agency/
-  WeChat (money page, first WeChat mention in Account setup) -> /wechat-agency/
-  Douyin (first Douyin mention in Account setup) -> /douyin-agency/
-  KOC and KOL (first mention in The five cost lines) -> /insights/kol-vs-koc-china-influencer-guide/
-  WeChat Moments ads (Media spend) -> /insights/wechat-advertising-formats-costs/
-  WeCom (Three realistic budgets) -> /insights/what-is-wecom/
-CLIENT SIGN-OFF NEEDED: none. No client figures used.
--->
+Every figure above is public and dated, and the one that isn't public
+anywhere else is on TheRedScroll's pricing page. Read it first. Then bring
+the proposal you're comparing it against, and we'll walk through the five
+lines together.

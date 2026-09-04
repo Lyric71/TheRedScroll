@@ -57,6 +57,76 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Bilibili monthly active users and median user age
 -->
 
+### WeChat Official Account verification fee, mainland entity
+- Value: 300 yuan per verification application; verified status valid one year
+- As of: page undated; confirmed September 2026 (platform documentation)
+- Source: Tencent customer service (腾讯客服)
+- URL: https://kf.qq.com/faq/161219JvMNvi161219raieiY.html
+- Verified 1: 2026-09-03, page fetched, 300元/次 and one-year validity confirmed
+- Verified 2: 2026-09-03, re-fetched before draft finished, unchanged
+- Used in: china-social-media-marketing-cost
+- Notes: Platform page carries no date. Cite as "confirmed September 2026". Fee is non-refundable on failure.
+
+### WeChat Official Account verification fee, overseas entity
+- Value: 99 US dollars per verification application; valid one year
+- As of: page undated; confirmed September 2026 (platform documentation)
+- Source: Tencent customer service (腾讯客服), overseas entity verification FAQ
+- URL: https://kf.qq.com/faq/190723aQvMR31907233IF7FV.html
+- Verified 1: 2026-09-03, page fetched, "$99 per time" confirmed, charged regardless of outcome
+- Verified 2: 2026-09-03, re-fetched, unchanged
+- Used in: china-social-media-marketing-cost
+- Notes: Platform page carries no date. Cite as "confirmed September 2026".
+
+### Xiaohongshu enterprise professional account verification fee
+- Value: 600 yuan per application; valid one year; annual review required; not refunded on failure
+- As of: October 2025 (New Rank article); platform PDF undated, confirmed September 2026
+- Source: Xiaohongshu (小红书) enterprise account verification guide (platform PDF on xhscdn), confirmed by New Rank (新榜)
+- URL: https://a.newrank.cn/trade/news/4199 (dated confirmation); https://fe-video-qc.xhscdn.com/picasso-editor/7072d509ee7370545a056b6f9030a926e8879dca.pdf (platform document)
+- Verified 1: 2026-09-03, both fetched; PDF says "认证费用 600 元/次，认证有效期为 1 年，每年需要完成一次年审"; New Rank dated 2025-10-19 says 每年600元
+- Verified 2: 2026-09-03, both re-fetched, unchanged
+- Used in: china-social-media-marketing-cost
+- Notes: PDF also states overseas entities must verify via the desktop site and each order expires after 30 days.
+
+### Douyin enterprise (Blue V) verification fee
+- Value: 600 yuan first year; 120 yuan per year to renew; each period one year
+- As of: May 2022 (Ocean Engine FAQ page date)
+- Source: Ocean Engine (巨量引擎), Douyin enterprise account FAQ
+- URL: https://www.oceanengine.com/faq/douyin-qyh-rzxydsq.html
+- Verified 1: 2026-09-03, fetched, "首年600元，之后每年的续费是120元" confirmed, page dated 2022-05-30
+- Verified 2: 2026-09-03, re-fetched, unchanged
+- Used in: china-social-media-marketing-cost
+- Notes: Older than 12 months but it is the platform's own page and still live. Second Ocean Engine FAQ (2022-05-13) says the same: https://www.oceanengine.com/faq/douyin-qyh-sfmw.html. Recheck before reuse.
+
+### WeChat Moments ads minimum budgets
+- Value: bidding buys from 1,000 yuan daily budget and 30 yuan CPM floor; scheduled buys from 50,000 yuan per placement; local promotion from 1,000 yuan a day
+- As of: page undated, confirmed September 2026; same figures in Tencent's self-serve guide dated February 2016
+- Source: Tencent Ads (腾讯广告) WeChat advertising product page; Tencent (腾讯) Moments ads self-serve guide
+- URL: https://e.qq.com/topic/marketing/industry/weixin/ ; https://wximg.qq.com/wxp/temp/MomentsAdsGuidingBook.pdf
+- Verified 1: 2026-09-03, both fetched; product page says 每日预算1000元起 / CPM单价30元起 / 单次投放总预算5万元起; PDF (自助投放端入门指引_201602) says 不得低于1000元 / 出价须大于30元 / 不得低于5万元
+- Verified 2: 2026-09-03, both re-fetched, unchanged
+- Used in: china-social-media-marketing-cost
+- Notes: Current page is undated; the 2016 PDF supplies the date and shows the floors have held.
+
+### Douyin ad account opening: service fee and agent-set first recharge
+- Value: qualitative. Official channel charges a service fee; agents may open for free but set their own minimum first recharge
+- As of: June 2021 (page date 2021-06-27)
+- Source: Ocean Engine (巨量引擎), account opening FAQ
+- URL: https://www.oceanengine.com/faq/douyin-kaihu-feiyong.html
+- Verified 1: 2026-09-03, fetched, wording confirmed, no figures on page
+- Verified 2: 2026-09-03, re-fetched, unchanged
+- Used in: china-social-media-marketing-cost
+- Notes: No platform figure exists for the first recharge. Reseller blogs say 5,000 to 10,000 yuan; not logged, not citable.
+
+### Xiaohongshu Jiguang ad platform: overseas merchants admitted through authorized agents only
+- Value: since February 2, 2026 overseas merchants apply via an authorized agent (特邀准入), no self-serve opening
+- As of: August 2026 (page updated 2026-08-02)
+- Source: Ziyouxing Studio (自由行Studio), Xiaohongshu Jiguang overseas guide
+- URL: https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
+- Verified 1: 2026-09-03, fetched, policy wording and date confirmed
+- Verified 2: 2026-09-03, re-fetched, unchanged
+- Used in: china-social-media-marketing-cost
+- Notes: Weakest source in the ledger, a third-party studio, not the platform or trade press. Used for the access rule only; its deposit figures (5,000 to 10,000 yuan) were not cited. Replace with a platform announcement if one is found.
+
 ## Regulatory and legal
 
 <!-- Needed from week 1 onward:
@@ -84,6 +154,36 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Double 11 GMV, most recent event
 - China social media manager salary range and employer contribution rates
 -->
+
+### China influencer economy size and KOL rate card gap
+- Value: 117.2 billion yuan (about 16.8 billion US dollars) forecast for 2026; in 2025 official KOL rate cards rose 11.6% while prices actually paid fell 3.4%
+- As of: January 2026 (article dated 2026-01-13)
+- Source: Campaign Asia, reporting R3's 2026 China Social KOLC Governance Whitepaper
+- URL: https://aws1.campaignasia.com/article/hidden-costs-emerge-in-chinas-16-8-billion-influencer-market/506973
+- Verified 1: 2026-09-03, fetched, all three figures and date confirmed
+- Verified 2: 2026-09-03, re-fetched, unchanged
+- Used in: china-social-media-marketing-cost
+- Notes: Original source is R3; cite Campaign Asia as the publisher reporting it.
+
+### Xiaohongshu KOC and micro KOL fee ranges
+- Value: nano KOC (1,000 to 5,000 followers) about 20 to 60 US dollars per post; micro KOL (under 1 million followers) about 10,000 to 35,000 US dollars per campaign
+- As of: June 2026 (article dated 2026-06-15)
+- Source: Long Advisory
+- URL: https://longadvisory.eu/en/kol-vs-koc-marketing-in-china-which-delivers-better-roi/
+- Verified 1: 2026-09-03, fetched, figures and date confirmed
+- Verified 2: 2026-09-03, re-fetched, unchanged
+- Used in: china-social-media-marketing-cost
+- Notes: English-language consultancy source; no Chinese trade-press equivalent with dated per-post ranges was found in this run.
+
+### Average KOL collaboration cost, Xiaohongshu versus Douyin
+- Value: Xiaohongshu 10,000 to 40,000 US dollars; Douyin 25,000 to 65,000 US dollars per collaboration
+- As of: May 2026 (article dated 2026-05-21)
+- Source: Long Advisory
+- URL: https://longadvisory.eu/en/how-much-influencers-cost-in-china-kol-pricing-explained/
+- Verified 1: 2026-09-03, fetched, figures and date confirmed
+- Verified 2: 2026-09-03, re-fetched, unchanged
+- Used in: china-social-media-marketing-cost
+- Notes: Same publisher as above; the two articles give overlapping but not identical ranges for Xiaohongshu. Cite each as written.
 
 ## TheRedScroll first-party data
 
