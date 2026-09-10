@@ -405,6 +405,46 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: china-social-media-marketing-cost
 - Notes: Same publisher as above; the two articles give overlapping but not identical ranges for Xiaohongshu. Cite each as written.
 
+### Xiaohongshu self-serve note boost (薯条): minimum spend and eligibility
+- Value: 75 yuan (750 薯币) minimum per order; no follower threshold; only content published in the last 90 days can be boosted
+- As of: May 2026 (article dated 2026-05-18)
+- Source: Woshipm (人人都是产品经理), author 林卿LinQ.
+- URL: https://www.woshipm.com/share/6397056.html
+- Verified 1: 2026-09-11, fetched, "薯条现在没有粉丝量等账号门槛，只有最低 75 元（750 薯币）的起投门槛" and "仅限投放符合规范，且是近 90 天发布的内容" confirmed
+- Verified 2: 2026-09-11, re-downloaded with curl, both strings and the 2026-05-18 date still on the page
+- Used in: xiaohongshu-marketing-cost
+- Notes: Corroborated by 三节课 via Sohu, 2025-12-23 (https://m.sohu.com/a/968496983_624051), "支持手机端自助投放，最低 75 元起投". The same sources give a 7,500 yuan per-order ceiling; not cited. This is the only self-serve, published ad floor on the platform. The Jiguang (聚光) first recharge and minimum daily budget have no platform or trade-press source and must not be quoted.
+
+### Xiaohongshu Pugongying brand invitations, and daily active user search behavior
+- Value: 27 million brand invitations on Pugongying in 2025, up 34% year on year; 77% of daily active users use search to solve a problem, 75% browse the recommendation feed
+- As of: 2025 full year (article dated 2026-05-29)
+- Source: Huxiu (虎嗅)
+- URL: https://www.huxiu.com/article/4861801.html
+- Verified 1: 2026-09-11, fetched, "2025年，小红书蒲公英平台的品牌邀约量达到2700万次，同比增长34%" and "75%的日活用户浏览推荐内容，77%的日活用户通过搜索解决问题" confirmed
+- Verified 2: 2026-09-11, re-fetched, both strings unchanged
+- Used in: xiaohongshu-marketing-cost
+- Notes: Same article repeats the platform's 400 million MAU and 800 million daily searches, which are already logged above. The 77% search figure is the strongest published basis for search-coverage seeding arithmetic; the platform publishes no seeding volume benchmark.
+
+### Xiaohongshu commercial governance: Community Convention 2.0 and enforcement volumes
+- Value: Community Convention 2.0 launched 19 January 2026, adding an "orderly commerce" (有序经营) section; from March to the end of August 2025 the platform banned over 12 million fake accounts, actioned 13.76 million false marketing notes and cleared over 360 million fake comments
+- As of: January 2026 (article dated 2026-01-20; enforcement period March to August 2025)
+- Source: China Daily (中国日报网)
+- URL: https://cn.chinadaily.com.cn/a/202601/20/WS696eef27a310942cc499bf9f.html
+- Verified 1: 2026-09-11, fetched, "去年3月至8月底，通过系统化、全链路治理，小红书封禁虚假账号超1200万个，处置虚假营销笔记1376万篇，清理虚假评论超3.6亿条" confirmed; "去年" resolves to 2025 for a January 2026 article
+- Verified 2: 2026-09-11, re-downloaded with curl, all four strings plus 社区公约2.0 and 有序经营 still present
+- Used in: xiaohongshu-marketing-cost
+- Notes: Use for the cost of not filing paid notes through Pugongying. The article also gives 534,200 accounts and 4.598 million notes actioned for divisive content since 1 January 2025; not cited. An older enforcement figure (2,456 brands penalized, June to July 2023, 鸟哥笔记 2023-08-09) was found and not used, superseded by this one.
+
+### Xiaohongshu Pugongying marketplace mechanics and creator credit scoring
+- Value: qualitative. Pugongying is billed as a service fee plus commission, or a service fee alone; brands filter creators by category, follower count and price; creators carry a credit rating from Lv0 to Lv3 and above
+- As of: October 2025 (report dated 2025-10-13)
+- Source: Huaxin Securities (华鑫证券), media sector report "小红书，从种草到生活兴趣社区"
+- URL: https://pdf.dfcfw.com/pdf/H301_AP202510121760705963_1.pdf
+- Verified 1: 2026-09-11, PDF downloaded and extracted with pdftotext; "通过服务费+佣金或单纯服务费盈利", "按 垂类、粉丝量、价格等维度" and "Lv0-Lv3+" confirmed
+- Verified 2: 2026-09-11, re-downloaded with curl and re-extracted, unchanged
+- Used in: xiaohongshu-marketing-cost
+- Notes: Broker research, the only one in the ledger. Its Xiaohongshu 2024 revenue figures (over 30 billion yuan total, 21.6 billion of it advertising) are attributed inside the report to a second-hand outlet (外参观察), not to a filing. Chain citation: do not cite those two numbers.
+
 ## TheRedScroll first-party data
 
 Everything here comes from accounts we run. It is cited as ours, with sample
