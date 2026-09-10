@@ -134,7 +134,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://finance.sina.com.cn/jjxw/2026-05-27/doc-inhziqxq9291575.shtml
 - Verified 1: 2026-09-07, fetched, "月活跃用户已突破4亿，日搜索量高达8亿" and date confirmed
 - Verified 2: 2026-09-07, re-fetched before draft finished, unchanged
-- Used in: xiaohongshu-marketing-foreign-brands
+- Used in: xiaohongshu-marketing-foreign-brands, beauty-skincare
 - Notes: Platform's own figure, global and all devices. Pair with the QuestMobile domestic count below when an independent number is asked for.
 
 ### Xiaohongshu domestic monthly active users, QuestMobile
@@ -154,7 +154,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://www.qian-gua.com/information/detail/3149
 - Verified 1: 2026-09-07, fetched, all six figures confirmed, attributed to 小红书官方最新通案
 - Verified 2: 2026-09-07, re-fetched, unchanged
-- Used in: xiaohongshu-marketing-foreign-brands
+- Used in: xiaohongshu-marketing-foreign-brands, beauty-skincare
 - Notes: Qian-gua's 2026 report (2026-05-07, https://www.qian-gua.com/information/detail/3332) shows 350 million+ MAU but its public preview omits the gender, age and city splits. Recheck for a 2026 gender figure before April 2027.
 
 ### Xiaohongshu users seeking purchase advice, WILL 2026 conference
@@ -164,7 +164,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://www.100ec.cn/detail--6655530.html
 - Verified 1: 2026-09-07, fetched, figures and data period confirmed
 - Verified 2: 2026-09-07, re-fetched, unchanged
-- Used in: xiaohongshu-marketing-foreign-brands
+- Used in: xiaohongshu-marketing-foreign-brands, beauty-skincare
 - Notes: The conference theme "种草进入效果化时代" is confirmed on Sina News, 2025-12-24 (https://news.sina.cn/sx/2025-12-24/detail-inhcwtcm9898641.d.html). The platform publishes no share of product-related searches; use this absolute figure instead.
 
 ### Xiaohongshu daily search volume, Q4 2024
@@ -193,8 +193,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Source: Xiaohongshu (小红书) merchant qualification requirements (小红书资质入驻要求, platform PDF)
 - URL: https://picasso-static.xiaohongshu.com/test/8b3bc7324ca06fceea379177f9eed1fa/小红书资质入驻要求.pdf
 - Verified 1: 2026-09-07, downloaded and extracted with pdftotext; strings confirmed
-- Verified 2: 2026-09-07, re-downloaded, unchanged
-- Used in: xiaohongshu-marketing-foreign-brands
+- Verified 2: 2026-09-07, re-downloaded, unchanged; re-checked again 2026-09-10 for beauty-skincare, "进口化妆品备案" and "授权链路不超过3级（美妆品牌不超过2级）" still present
+- Used in: xiaohongshu-marketing-foreign-brands, beauty-skincare
 - Notes: Hosted on a "test" path of the platform CDN; recheck the URL before each reuse. Store-level rules; the account rules are in the entry above.
 
 ### Xiaohongshu Pugongying content cooperation service fee
@@ -204,7 +204,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://www.niaogebiji.com/article-482538-1.html
 - Verified 1: 2026-09-07, fetched, "普通模式收取10%，优效模式收取20%" confirmed
 - Verified 2: 2026-09-07, re-fetched, unchanged
-- Used in: xiaohongshu-marketing-foreign-brands
+- Used in: xiaohongshu-marketing-foreign-brands, beauty-skincare
 - Notes: Older than 12 months. The rule is still applied by the platform, but the Pugongying help center (pgy.xiaohongshu.com) blocks fetches. Replace with a platform page when one can be fetched.
 
 ### WeChat Official Account verification for overseas entities: review time and payment
@@ -254,7 +254,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://www.oceanengine.com/faq/douyin-qyh-zmrzn.html
 - Verified 1: 2026-09-08, fetched (curl), "提交后约2个工作日完成资质审核", "首次付费600元", "续费为120元" confirmed
 - Verified 2: 2026-09-08, re-fetched, unchanged
-- Used in: first-90-days-china-social-media
+- Used in: first-90-days-china-social-media, beauty-skincare
 - Notes: Older than 12 months but the platform's own page and still live; consistent with the fee entry above. A sibling page (2022-05-12, https://www.oceanengine.com/faq/douyin-qyh-zmkn.html) says "1至2天". Recheck before reuse.
 
 ### Douyin enterprise account described as for companies in China
@@ -290,6 +290,66 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: first-90-days-china-social-media
 - Notes: Examination only. Publication, opposition and registration add to the total; do not present 4 months as time to registration.
 
+### China cosmetics classification: special versus ordinary
+- Value: cosmetics for hair dye, perming, spot removal and whitening, sun protection and hair loss prevention, plus any cosmetic claiming a new efficacy, are special cosmetics; all others are ordinary
+- As of: Order published 2020-06-29, in force 2021-01-01 (Article 16)
+- Source: State Council (国务院), Cosmetics Supervision and Administration Regulation (化妆品监督管理条例), Order 727
+- URL: https://www.gov.cn/zhengce/content/2020-06/29/content_5522593.htm
+- Verified 1: 2026-09-10, fetched with curl, "用于染发、烫发、祛斑美白、防晒、防脱发的化妆品以及宣称新功效的化妆品为特殊化妆品" confirmed
+- Verified 2: 2026-09-10, re-fetched, unchanged
+- Used in: beauty-skincare
+- Notes: Article 17 on the same page: special cosmetics need NMPA registration before production or import; imported ordinary cosmetics must be filed with NMPA before import.
+
+### Overseas cosmetics registrant or filer must appoint a domestic legal entity
+- Value: an overseas registrant or filer must appoint a legal entity inside China to handle registration and filing, help with adverse reaction monitoring and carry out recalls
+- As of: Order published 2020-06-29, in force 2021-01-01 (Article 23)
+- Source: State Council (国务院), Cosmetics Supervision and Administration Regulation (化妆品监督管理条例), Order 727
+- URL: https://www.gov.cn/zhengce/content/2020-06/29/content_5522593.htm
+- Verified 1: 2026-09-10, fetched, "境外化妆品注册人、备案人应当指定我国境内的企业法人办理化妆品注册、备案" confirmed
+- Verified 2: 2026-09-10, re-fetched, unchanged
+- Used in: beauty-skincare
+- Notes: The implementing measures (国家市场监督管理总局令第35号, 2021-01-07, in force 2021-05-01, Article 8, https://www.gov.cn/zhengce/zhengceku/2021-01/12/content_5579239.htm) list the five duties of that 境内责任人. Both checks 2026-09-10.
+
+### Cosmetics efficacy claims must be evidenced and the evidence published
+- Value: efficacy claims need sufficient scientific basis, and the registrant or filer must publish a summary of the literature, research data or efficacy evaluation on a website designated by the regulator
+- As of: Order published 2020-06-29, in force 2021-01-01 (Article 22)
+- Source: State Council (国务院), Cosmetics Supervision and Administration Regulation (化妆品监督管理条例), Order 727
+- URL: https://www.gov.cn/zhengce/content/2020-06/29/content_5522593.htm
+- Verified 1: 2026-09-10, fetched, "化妆品的功效宣称应当有充分的科学依据……在国务院药品监督管理部门规定的专门网站公布功效宣称所依据的……摘要，接受社会监督" confirmed
+- Verified 2: 2026-09-10, re-fetched, unchanged
+- Used in: beauty-skincare
+- Notes: Article 37 on the same page bans labels that state or imply a medical effect, or that are false or misleading.
+
+### Cosmetic Efficacy Claim Evaluation Specification, effective date
+- Value: the Specification (化妆品功效宣称评价规范) was issued by NMPA and took effect on May 1, 2021
+- As of: April 2021 (page dated 2021-04-15, quoting the NMPA site 2021-04-09)
+- Source: China Center for Food and Drug International Exchange (中国食品药品国际交流中心), NMPA announcement 2021 No. 50
+- URL: https://www.ccfdie.org/cn/yjxx/hzp/webinfo/2021/04/1614390286444040.htm
+- Verified 1: 2026-09-10, fetched, "于4月8日公布，自2021年5月1日起施行" confirmed
+- Verified 2: 2026-09-10, re-fetched, unchanged
+- Used in: beauty-skincare
+- Notes: nmpa.gov.cn returns HTTP 412 to automated fetches, so the NMPA-affiliated centre's mirror is cited instead of the primary page. The annex listing which claims need a human efficacy trial is not on this mirror; do not cite the 2022-01-01 upload deadline until it is verified on a fetchable page.
+
+### China Advertising Law: banned superlatives, medical language, cited data, penalty
+- Value: Article 9 bans "国家级", "最高级", "最佳"; Article 17 bans disease-treatment references and medical language outside medical, drug and device advertising; Article 11 requires cited data to be true, accurate and sourced; Article 57 sets a fine of 200,000 to 1,000,000 yuan on the advertiser for an Article 9 breach, with licence revocation in serious cases
+- As of: law in force since 2015-09-01, text as amended 2021
+- Source: Advertising Law of the People's Republic of China (中华人民共和国广告法), via the Chinese government portal
+- URL: https://www.gov.cn/guoqing/2021-10/29/content_5647620.htm
+- Verified 1: 2026-09-10, fetched, all four articles read verbatim in Chinese
+- Verified 2: 2026-09-10, re-fetched, unchanged
+- Used in: beauty-skincare
+- Notes: Article 14 (ads must be identifiable, no ads disguised as news) and Article 28 (false or misleading content is false advertising) are on the same page and are the general form of the Order 72 rule below.
+
+### Internet Advertising Measures: seeding notes with a purchase link are advertising
+- Value: promoting goods or services through knowledge sharing, experience sharing or product reviews with a purchase link attached must be conspicuously labelled "广告"; livestream sellers take advertiser duties and livestream room operators and marketing staff take advertising operator, publisher or endorser duties
+- As of: published 2023-02-25, in force 2023-05-01 (Articles 9 and 19)
+- Source: State Administration for Market Regulation (国家市场监督管理总局), Internet Advertising Measures (互联网广告管理办法), Order 72, via the State Council Gazette
+- URL: https://www.gov.cn/gongbao/2023/issue_10506/202306/content_6885261.html
+- Verified 1: 2026-09-10, fetched, "通过知识介绍、体验分享、消费测评等形式推销商品或者服务，并附加购物链接等购买方式的，广告发布者应当显著标明“广告”" and Article 19 confirmed
+- Verified 2: 2026-09-10, re-fetched, unchanged
+- Used in: beauty-skincare
+- Notes: This is the rule behind Xiaohongshu's Pugongying declaration requirement. Article 8 on the same page bans disguised health and wellness content for medical, drug, device and health-food products.
+
 ## Market and industry
 
 <!-- Needed from week 2 onward:
@@ -304,6 +364,16 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Double 11 GMV, most recent event
 - China social media manager salary range and employer contribution rates
 -->
+
+### China cosmetics retail growth, 2025
+- Value: retail sales of cosmetics grew 5.1% in 2025 across units above the designated size, against total retail sales of consumer goods of 501,202 hundred million yuan, up 3.7%
+- As of: 2025 full year (communique published 2026-02-28)
+- Source: National Bureau of Statistics of China (国家统计局), 2025 Statistical Communique on National Economic and Social Development
+- URL: https://www.stats.gov.cn/sj/zxfb/202602/t20260228_1962662.html
+- Verified 1: 2026-09-10, fetched, "化妆品类增长5.1%" and "全年社会消费品零售总额501202亿元，比上年增长3.7%" confirmed
+- Verified 2: 2026-09-10, re-fetched, unchanged
+- Used in: beauty-skincare
+- Notes: The communique gives the growth rate only, not an absolute cosmetics figure. Trade press quotes 4,653 hundred million yuan for 2025; that number is not in the communique and was not cited. "Units above the designated size" (限额以上单位) is a subset of retail, not the whole market.
 
 ### China influencer economy size and KOL rate card gap
 - Value: 117.2 billion yuan (about 16.8 billion US dollars) forecast for 2026; in 2025 official KOL rate cards rose 11.6% while prices actually paid fell 3.4%
@@ -322,7 +392,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://longadvisory.eu/en/kol-vs-koc-marketing-in-china-which-delivers-better-roi/
 - Verified 1: 2026-09-03, fetched, figures and date confirmed
 - Verified 2: 2026-09-03, re-fetched, unchanged
-- Used in: china-social-media-marketing-cost
+- Used in: china-social-media-marketing-cost, beauty-skincare
 - Notes: English-language consultancy source; no Chinese trade-press equivalent with dated per-post ranges was found in this run.
 
 ### Average KOL collaboration cost, Xiaohongshu versus Douyin
@@ -357,7 +427,7 @@ data.
 - Period: current as of 2026-09-08 (src/components/home/HowItWorks.astro)
 - Exclusions: none
 - Cleared for publication: yes, it is on the homepage
-- Used in: first-90-days-china-social-media
+- Used in: first-90-days-china-social-media, beauty-skincare
 - Notes: Cite as TheRedScroll homepage, https://www.theredscroll.com/. No per-platform verification turnaround figure exists in this ledger; brief 01C asked for one and the article used platform-published review times instead.
 
 <!-- Needed:
