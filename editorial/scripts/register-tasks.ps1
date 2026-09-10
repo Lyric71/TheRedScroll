@@ -3,8 +3,8 @@
   Registers (or re-registers) the two Windows scheduled tasks that run the
   editorial pipeline on this machine.
 
-  TheRedScroll Editorial Draft    Mon, Tue, Thu, Fri at 11:00 local (Shanghai)
-  TheRedScroll Editorial Publish  every day at 13:00 local, enabled (Cyril, Sept 3, 2026)
+  TheRedScroll Editorial Draft    Mon, Tue, Thu, Fri at 00:30 local (Shanghai, night)
+  TheRedScroll Editorial Publish  every day at 04:00 local, enabled (Cyril, Sept 3, 2026)
 
   Run from any PowerShell prompt:
     powershell -ExecutionPolicy Bypass -File editorial\scripts\register-tasks.ps1
@@ -15,8 +15,8 @@
   Change the hour by editing $DraftTime / $PublishTime and rerunning.
 #>
 param(
-  [string]$DraftTime = '11:00',
-  [string]$PublishTime = '13:00'
+  [string]$DraftTime = '00:30',
+  [string]$PublishTime = '04:00'
 )
 
 $ErrorActionPreference = 'Stop'

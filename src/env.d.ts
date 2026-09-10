@@ -2,7 +2,7 @@
 
 interface ImportMetaEnv {
   readonly RESEND_API_KEY: string;
-  readonly WAVESPEED_API_KEY: string;
+  readonly OPENAI_API_KEY: string;
 }
 
 interface ImportMeta {

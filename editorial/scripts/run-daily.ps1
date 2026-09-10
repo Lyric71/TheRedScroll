@@ -58,7 +58,7 @@ if ($Mode -eq 'draft' -and -not $Force) {
 }
 
 # Always pull the best available model. Never a faster or smaller mode.
-$Model = 'claude-fable-5-1'
+$Model = 'claude-opus-5'
 
 if ($Mode -eq 'draft') {
   $Prompt = @'

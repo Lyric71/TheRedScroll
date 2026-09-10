@@ -186,8 +186,8 @@ keys and the full model are all here, and a cloud routine has none of them.
 
 | Task | When (Shanghai) | What | Default |
 |---|---|---|---|
-| TheRedScroll Editorial Draft | Mon, Tue, Thu, Fri 11:00 | `run-daily.ps1 -Mode draft`: steps 0 to 3, stops at `image_ready` | enabled |
-| TheRedScroll Editorial Publish | every day 13:00 | `run-daily.ps1 -Mode publish`: publishes every due `image_ready` row, builds, commits, pushes, emails | enabled (Cyril, Sept 3, 2026) |
+| TheRedScroll Editorial Draft | Mon, Tue, Thu, Fri 00:30 | `run-daily.ps1 -Mode draft`: steps 0 to 3, stops at `image_ready` | enabled |
+| TheRedScroll Editorial Publish | every day 04:00 | `run-daily.ps1 -Mode publish`: publishes every due `image_ready` row, builds, commits, pushes, emails | enabled (Cyril, Sept 3, 2026) |
 
 Scripts live in `editorial/scripts/`. `register-tasks.ps1` creates or updates
 both tasks. Each run writes its console output to `logs/runs/<date>-<mode>.txt`
@@ -196,15 +196,15 @@ allowed, at the run time. A missed run fires as soon as the machine is back.
 
 **Sleep kills a run in progress.** On Sept 3, 2026 a publish run was waiting
 out a five-minute retry when the machine went to sleep, and it never resumed.
-A run can take an hour or more, so the machine must stay awake from 11:00
+A run can take an hour or more, so the machine must stay awake from 00:30
 until the publish finishes. Set the power plan to never sleep on AC, or keep
 the laptop plugged in and the lid open on run days. The runner retries
 transient API errors (overloaded, rate limit, 5xx) up to three times, five
 minutes apart, on the same model.
 
-Publishing is fully unattended since Sept 3, 2026: a draft made at 11:00 is
-published at 13:00 the same day unless someone sets its row to `blocked`
-before then. That two-hour window is the review. To pause publishing:
+Publishing is fully unattended since Sept 3, 2026: a draft made at 00:30 is
+published at 04:00 the same day unless someone sets its row to `blocked`
+before then. That window is the review. To pause publishing:
 
 ```
 Disable-ScheduledTask -TaskName 'TheRedScroll Editorial Publish'

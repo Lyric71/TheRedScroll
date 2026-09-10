@@ -2,9 +2,11 @@ import 'dotenv/config';
 import fs from 'fs';
 import path from 'path';
 
-const API_URL = 'https://api.wavespeed.ai/api/v3';
-const MODEL = 'google/nano-banana-2/text-to-image';
-const API_KEY = process.env.WAVESPEED_API_KEY;
+// OpenAI Images (gpt-image-2), called directly. One synchronous request per
+// image: no third-party proxy, no task id, no polling.
+const API_URL = 'https://api.openai.com/v1/images/generations';
+const MODEL = process.env.OPENAI_IMAGE_MODEL ?? 'gpt-image-2';
+const API_KEY = process.env.OPENAI_API_KEY;
 
 const images = [
   // Hero
@@ -40,49 +42,37 @@ async function generateOne({ prompt, output }) {
   console.log(`[START] ${label}`);
 
   try {
-    const submitRes = await fetch(`${API_URL}/${MODEL}`, {
+    const res = await fetch(API_URL, {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${API_KEY}`,
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ prompt, output_format: 'png', quality: '1K' }),
+      body: JSON.stringify({
+        model: MODEL,
+        prompt,
+        size: '1024x1024',
+        quality: 'high',
+        output_format: 'png',
+        n: 1,
+      }),
     });
 
-    const submitData = await submitRes.json();
-    if (submitData.code !== 200 || !submitData.data?.id) {
-      console.error(`[FAIL] ${label}: ${submitData.message || JSON.stringify(submitData)}`);
+    const body = await res.json().catch(() => ({}));
+    if (!res.ok || body.error) {
+      console.error(`[FAIL] ${label}: ${body.error?.message ?? `HTTP ${res.status}`}`);
       return;
     }
 
-    const taskId = submitData.data.id;
-
-    for (let i = 0; i < 120; i++) {
-      await new Promise((r) => setTimeout(r, 1000));
-
-      const statusRes = await fetch(`${API_URL}/predictions/${taskId}/result`, {
-        headers: { 'Authorization': `Bearer ${API_KEY}` },
-      });
-
-      const statusData = await statusRes.json();
-
-      if (statusData.data?.status === 'completed') {
-        const imageUrl = statusData.data.outputs[0];
-        const imgRes = await fetch(imageUrl);
-        const buffer = Buffer.from(await imgRes.arrayBuffer());
-        fs.mkdirSync(path.dirname(output), { recursive: true });
-        fs.writeFileSync(output, buffer);
-        console.log(`[DONE] ${label}`);
-        return;
-      }
-
-      if (statusData.data?.status === 'failed') {
-        console.error(`[FAIL] ${label}: generation failed`);
-        return;
-      }
+    const b64 = body.data?.[0]?.b64_json;
+    if (!b64) {
+      console.error(`[FAIL] ${label}: no image returned`);
+      return;
     }
 
-    console.error(`[TIMEOUT] ${label}`);
+    fs.mkdirSync(path.dirname(output), { recursive: true });
+    fs.writeFileSync(output, Buffer.from(b64, 'base64'));
+    console.log(`[DONE] ${label}`);
   } catch (err) {
     console.error(`[ERROR] ${label}: ${err.message}`);
   }
