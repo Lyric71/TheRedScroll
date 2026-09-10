@@ -151,16 +151,31 @@ image is regenerated. Chinese characters on the screens are expected.
 **People and look, permanent (Cyril, Sept 4, 2026).** Only Chinese people
 in the image, never a Western subject, whatever the article's audience. Not
 a perfect AI render: vivid, candid, normal-life photography with normal-life
-defects (handheld feel, slight motion blur, uneven light, clutter, cables, a
-smudged screen, someone mid-gesture). The prompt must ask for those
-imperfections. No studio polish, no cinematic grade, no diagrams, no
-infographics, no watermark.
+imperfections in the scene (handheld framing, a slight tilt, uneven light,
+clutter, cables, someone mid-gesture, a cropped edge). No studio polish, no
+cinematic grade, no diagrams, no infographics, no watermark.
+
+**Sharpness, permanent (Cyril, Sept 10, 2026).** Candid never means blurry.
+The first three heroes came out soft because their prompts asked for motion
+blur, a smudged screen, sensor noise and shallow depth of field. Every prompt
+must ask for the whole scene in crisp, sharp focus, deep depth of field, fine
+detail and legible screen interfaces, and must say "no motion blur, no soft
+focus, no bokeh, no smudges, no grain or sensor noise, no haze". Never write
+blur, smudge, noise, grain, soft focus, out of focus or shallow depth of field
+into a hero prompt.
 
 The image is generated with the `generate-image-openai` skill in step 3 of
-the pipeline: landscape 3:2, high quality, then converted to webp with sharp
-(quality about 78, max width 2000, no enlargement). Intermediates stay in the
-session scratchpad. The generated image is opened and checked before it is
-saved to the repo.
+the pipeline: landscape 3:2, high quality. It is then converted with
+`node editorial/scripts/convert-hero.mjs <png> <slug>` (webp quality 90, no
+resize, no enlargement). Intermediates stay in the session scratchpad. The
+script writes a 100% centre crop next to the PNG (`<png-name>.crop.png`) and
+scores the full frame and the crop (variance of the Laplacian, floors 120 and
+200). Below either floor it refuses, unless `--force` is given after a person
+has looked. The floors are a backstop only: the three soft Sept 7 to 9 heroes
+score 342 to 1220 on the full frame and 457 to 1686 on the crop, so they pass.
+The gate that counts is the look. Open the whole image and the crop before
+accepting. A soft, smeared or noisy crop (mushy screen text, fuzzy edges) is a
+failed image even when the script passes it: regenerate and rerun.
 
 ### 2. Schema
 

@@ -42,9 +42,14 @@ Publish china-social-media-marketing-cost
    Writes `output/<slug>.md`.
 8. Runs `/content-quality-us` on `output/<slug>.md` (18 passes, in place).
    House SEO ceilings (52 / 152 / 25 words) override the skill's own.
-9. Runs `/generate-image-openai` with the prompt from the feature-image block,
-   checks the image visually, converts it to webp, saves it to
-   `public/images/blog/<slug>.webp`.
+9. Runs `/generate-image-openai` with the prompt from the feature-image block
+   (sharp focus, never blur or noise, see `SPEC.md`), checks the image
+   visually, then runs `node editorial/scripts/convert-hero.mjs <png> <slug>`.
+   It writes a 100% crop (`<png-name>.crop.png`) next to the source, refuses
+   images below its sharpness floors, and otherwise saves
+   `public/images/blog/<slug>.webp` at webp quality 90. Open the image and the
+   crop. If the screens or edges look smeared, regenerate and rerun, even when
+   the script passed it: its floors do not catch the Sept 7 to 9 soft heroes.
 10. Appends new figures to `sources/verified-sources.md` with both check dates.
 11. Updates the `schedule.csv` row: status `image_ready`, with `drafted_on`,
     `quality_passed_on` and `image_generated_on` filled.

@@ -94,7 +94,10 @@ iteration 7.
    **Image content, permanent rule:** every hero is China-related and shows
    Chinese social platforms on screen (WeChat, Xiaohongshu, Douyin, Weibo)
    in a typical Chinese city (varied, not only Shanghai), with only Chinese people in frame, shot as candid
-   normal-life photography with real-life defects rather than AI polish.
+   normal-life photography rather than AI polish, in crisp sharp focus with
+   legible screens. Never ask for motion blur, smudges, noise or shallow
+   depth of field (Cyril, Sept 10, 2026: those made the first heroes blurry).
+   Convert with `editorial/scripts/convert-hero.mjs` and check its 100% crop.
    The brief's feature-image line is a subject hint only. See SPEC, Feature
    image.
 3. **Prices in public copy.** `STYLE_GUIDE.md` section 6.4 is the source of

@@ -244,11 +244,17 @@ the cadence variant.
   is Chinese. Only Chinese people, never a Western marketer, founder or
   tourist, whatever the audience of the article.
 - **Look rule, permanent (Cyril, Sept 4, 2026).** Not a perfect AI render.
-  Vivid, candid, normal-life photography with normal-life defects: a phone
-  or handheld camera feel, slight motion blur, mixed or uneven light, a
-  cluttered desk, cables, a smudged screen, someone mid-gesture, a cropped
-  edge. Write these imperfections into the prompt. No studio polish, no
+  Vivid, candid, normal-life photography with normal-life imperfections in
+  the scene: a phone or handheld framing, a slight tilt, mixed or uneven
+  light, a cluttered desk, cables, someone mid-gesture, a cropped edge.
+  Write these imperfections into the prompt. No studio polish, no
   symmetrical composition, no flawless skin, no cinematic color grade.
+- **Sharpness rule, permanent (Cyril, Sept 10, 2026).** Candid never means
+  blurry. Every prompt asks for the whole scene in crisp, sharp focus, deep
+  depth of field, fine detail and legible screen interfaces, and ends its
+  look sentence with "No motion blur, no soft focus, no bokeh, no smudges,
+  no grain or sensor noise, no haze." Never write blur, smudge, noise,
+  grain, soft focus, out of focus or shallow depth of field into the prompt.
 - Platform-agnostic, single unbroken block of prose.
 - Photorealistic, documentary. Natural or office lighting as found, not
   staged.
