@@ -134,7 +134,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://finance.sina.com.cn/jjxw/2026-05-27/doc-inhziqxq9291575.shtml
 - Verified 1: 2026-09-07, fetched, "月活跃用户已突破4亿，日搜索量高达8亿" and date confirmed
 - Verified 2: 2026-09-07, re-fetched before draft finished, unchanged
-- Used in: xiaohongshu-marketing-foreign-brands, beauty-skincare
+- Used in: xiaohongshu-marketing-foreign-brands, beauty-skincare, xiaohongshu-algorithm
 - Notes: Platform's own figure, global and all devices. Pair with the QuestMobile domestic count below when an independent number is asked for.
 
 ### Xiaohongshu domestic monthly active users, QuestMobile
@@ -164,7 +164,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://www.100ec.cn/detail--6655530.html
 - Verified 1: 2026-09-07, fetched, figures and data period confirmed
 - Verified 2: 2026-09-07, re-fetched, unchanged
-- Used in: xiaohongshu-marketing-foreign-brands, beauty-skincare
+- Used in: xiaohongshu-marketing-foreign-brands, beauty-skincare, xiaohongshu-algorithm
 - Notes: The conference theme "种草进入效果化时代" is confirmed on Sina News, 2025-12-24 (https://news.sina.cn/sx/2025-12-24/detail-inhcwtcm9898641.d.html). The platform publishes no share of product-related searches; use this absolute figure instead.
 
 ### Xiaohongshu daily search volume, Q4 2024
@@ -174,7 +174,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://www.199it.com/archives/1731824.html
 - Verified 1: 2026-09-07, fetched, both figures and attribution confirmed
 - Verified 2: 2026-09-07, re-fetched, unchanged
-- Used in: xiaohongshu-marketing-foreign-brands
+- Used in: xiaohongshu-marketing-foreign-brands, xiaohongshu-algorithm
 - Notes: Trade-press estimate, not a platform release. Superseded for current volume by the platform's 800 million (May 2026); keep for the growth curve.
 
 ### Xiaohongshu enterprise account: eligibility and overseas process
@@ -204,7 +204,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://www.niaogebiji.com/article-482538-1.html
 - Verified 1: 2026-09-07, fetched, "普通模式收取10%，优效模式收取20%" confirmed
 - Verified 2: 2026-09-07, re-fetched, unchanged
-- Used in: xiaohongshu-marketing-foreign-brands, beauty-skincare
+- Used in: xiaohongshu-marketing-foreign-brands, beauty-skincare, xiaohongshu-algorithm
 - Notes: Older than 12 months. The rule is still applied by the platform, but the Pugongying help center (pgy.xiaohongshu.com) blocks fetches. Replace with a platform page when one can be fetched.
 
 ### WeChat Official Account verification for overseas entities: review time and payment
@@ -266,6 +266,36 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-08, re-fetched, unchanged
 - Used in: first-90-days-china-social-media
 - Notes: No platform page states a rule for overseas entities. Use only for "built for companies in China"; do not extend to "overseas companies cannot verify".
+
+### Xiaohongshu home feed pipeline, note freshness and label latency
+- Value: qualitative plus four figures. The home feed runs recall (召回), coarse ranking (粗排) and fine ranking (精排); those modules updated once a day in the first half of 2021 and were rebuilt to minute-level updates. Notes published in the last day account for close to half of home feed exposure. The traditional label pipeline waited about 30 minutes after an item was shown before collecting interaction labels. The timeliness program delivered over 10% more average home feed time per user, over 15% more interactions and close to 50% better new-note efficiency.
+- As of: March 2023 (article dated 2023-03-22; the 2021 baseline is stated in the text)
+- Source: Xiaohongshu technology and intelligent distribution department (小红书技术部 / 智能分发部), authors 青雉 (祁明良) and 大辅 (苏睿龙), published on AIQ (6AIQ)
+- URL: https://www.6aiq.com/article/1679451572481
+- Verified 1: 2026-09-11, fetched with curl and stripped to text; "在2021年上半年，首页推荐的召回、粗排、精排的主要模块都保持在天级更新的状态", "小红书站内“最近一天内发布的新笔记”在首页的曝光占比一直很高，这段时间更是快速增长，几乎占到了一半", "传统的做法往往会在 item 展示后等待30min左右的时间来收集交互 label" and "高时效项目累计提供小红书首页信息流人均时长 10% 以上，同时也带来了交互 15% 以上和新笔记效率近 50% 的提升" all confirmed
+- Verified 2: 2026-09-11, re-fetched with curl, all four strings and the 2023-03-22 date unchanged
+- Used in: xiaohongshu-algorithm
+- Notes: The best source in the ledger for how distribution actually works, because the authors are the platform's own distribution engineers and their affiliations are printed at the foot of the article. AIQ is a republisher; the authorship line is what makes it citable. Older than 12 months, so date it inside the sentence. The original lives on the 小红书技术REDtech CSDN account, which returns an anti-bot stub (HTTP 521) to every fetch method tried. **This entry does not license any traffic pool size.** No platform source publishes one.
+
+### Xiaohongshu daily product purchase-seeking users
+- Value: 39 million users a day show product purchase-seeking behavior, 140 million instances a day; rise100 merchants grew GMV over 2.6x year on year in 2025
+- As of: April 2026 (conference and article both dated 2026-04-08; the GMV figure covers full-year 2025)
+- Source: 36Kr (36氪), reporting Xiaohongshu's GROW merchant conference (小红书电商 GROW 商家大会)
+- URL: https://www.36kr.com/newsflashes/3758099821871879
+- Verified 1: 2026-09-11, fetched with curl, "平台每天有3900万用户产生商品求购行为，主动求购达1.4亿人次" and "4月8日，小红书电商举办GROW商家大会" confirmed, page dated 2026-04-08
+- Verified 2: 2026-09-11, re-fetched with curl, both strings and the date unchanged
+- Used in: xiaohongshu-algorithm
+- Notes: Platform-disclosed at its own conference, reported by a dated trade outlet, which is the strongest chain available for a commercial-intent figure. Pairs with the WILL 2026 entry (about 200 million users a month seeking purchase advice) and measures a different thing: daily behavior, not monthly reach. Do not add the two together.
+
+### Xiaohongshu multimodal content understanding across search and recommendation
+- Value: qualitative. Multimodal understanding of note content runs through the whole of Xiaohongshu's search, recommendation and transaction systems; named application areas are short-video understanding, content quality evaluation, multimodal retrieval, transaction content understanding, 3D digitization and intelligent creation
+- As of: April 2022 (article dated 2022-04-15)
+- Source: QbitAI (量子位), covering the first REDtech livestream produced by the Xiaohongshu technology team
+- URL: https://www.qbitai.com/2022/04/34112.html
+- Verified 1: 2026-09-11, fetched with curl, "对内容的多模态理解贯穿了小红书整个搜索、推荐与交易系统" and "已经在短视频理解、内容质量评价、多模态检索、交易内容理解、三维数字化、智能创作等领域对多模态技术展开了研发应用" confirmed
+- Verified 2: 2026-09-11, re-fetched with curl, both strings and the 2022-04-15 date unchanged
+- Used in: xiaohongshu-algorithm
+- Notes: Four years old, so use it for the architectural claim only (the ranking reads the image, the video frames and the text together) and never for a number. The same page's 200 million MAU figure for October 2021 is superseded by the platform's 400 million and must not be cited.
 
 ## Regulatory and legal
 
@@ -347,7 +377,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://www.gov.cn/gongbao/2023/issue_10506/202306/content_6885261.html
 - Verified 1: 2026-09-10, fetched, "通过知识介绍、体验分享、消费测评等形式推销商品或者服务，并附加购物链接等购买方式的，广告发布者应当显著标明“广告”" and Article 19 confirmed
 - Verified 2: 2026-09-10, re-fetched, unchanged
-- Used in: beauty-skincare
+- Used in: beauty-skincare, xiaohongshu-algorithm
 - Notes: This is the rule behind Xiaohongshu's Pugongying declaration requirement. Article 8 on the same page bans disguised health and wellness content for medical, drug, device and health-food products.
 
 ## Market and industry
@@ -422,7 +452,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://www.huxiu.com/article/4861801.html
 - Verified 1: 2026-09-11, fetched, "2025年，小红书蒲公英平台的品牌邀约量达到2700万次，同比增长34%" and "75%的日活用户浏览推荐内容，77%的日活用户通过搜索解决问题" confirmed
 - Verified 2: 2026-09-11, re-fetched, both strings unchanged
-- Used in: xiaohongshu-marketing-cost
+- Used in: xiaohongshu-marketing-cost, xiaohongshu-algorithm
 - Notes: Same article repeats the platform's 400 million MAU and 800 million daily searches, which are already logged above. The 77% search figure is the strongest published basis for search-coverage seeding arithmetic; the platform publishes no seeding volume benchmark.
 
 ### Xiaohongshu commercial governance: Community Convention 2.0 and enforcement volumes
@@ -432,7 +462,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://cn.chinadaily.com.cn/a/202601/20/WS696eef27a310942cc499bf9f.html
 - Verified 1: 2026-09-11, fetched, "去年3月至8月底，通过系统化、全链路治理，小红书封禁虚假账号超1200万个，处置虚假营销笔记1376万篇，清理虚假评论超3.6亿条" confirmed; "去年" resolves to 2025 for a January 2026 article
 - Verified 2: 2026-09-11, re-downloaded with curl, all four strings plus 社区公约2.0 and 有序经营 still present
-- Used in: xiaohongshu-marketing-cost
+- Used in: xiaohongshu-marketing-cost, xiaohongshu-algorithm
 - Notes: Use for the cost of not filing paid notes through Pugongying. The article also gives 534,200 accounts and 4.598 million notes actioned for divisive content since 1 January 2025; not cited. An older enforcement figure (2,456 brands penalized, June to July 2023, 鸟哥笔记 2023-08-09) was found and not used, superseded by this one.
 
 ### Xiaohongshu Pugongying marketplace mechanics and creator credit scoring
@@ -475,7 +505,11 @@ data.
 - WeChat open rate by follower band and sector (brief 06C)
 - WeCom group retention curve and repeat purchase lift (brief 12B)
 - Engagement rate by platform and sector (brief 13D, the benchmarks report)
-- Xiaohongshu traffic pool progression from a live account (brief 02B)
+- Xiaohongshu traffic pool progression from a live account (brief 02B). Still
+  needed. Brief 02B drafted 2026-09-11 and shipped without it: no first-party
+  figure was estimated, and the article's closing section traces the mechanics
+  instead. Needs a named account, sample period, exclusions and written
+  clearance before it can be added.
 - Ad benchmark ranges: CPC, CPM, cost per lead (briefs 04B, 08B)
 -->
 
