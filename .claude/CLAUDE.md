@@ -104,7 +104,11 @@ when a person asks to publish, then one email to cyril.drouin@outlook.com via
 `editorial/scripts/notify-publish.mjs` (Resend) when the publish is done.
 House SEO ceilings are title 52, meta 152, excerpt 25 words. Hero images go to
 `public/images/blog/<slug>.webp`. Industry pages publish to
-`src/content/industries/`, tool pages to `src/content/tools/` (English only).
+`src/content/industries/`, tool pages to `src/content/tools/`, both with the
+same five-locale propagation as insights (`industries-fr`, `tools-zh` and so
+on). URL segments are localized: `/fr/secteurs/`, `/zh/hangye/`,
+`/de/branchen/`, `/es/sectores/`, and `/fr/outils/`, `/zh/gongju/`,
+`/de/tools/`, `/es/herramientas/`.
 
 Two standing rules from Cyril: when the runbook asks for something the repo
 cannot do, use what the repo has and log the substitution. Every pipeline

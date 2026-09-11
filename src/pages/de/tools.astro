@@ -5,28 +5,28 @@ import EditorialIndex from '../../components/pages/EditorialIndex.astro';
 
 const SITE_URL = 'https://www.theredscroll.com';
 
-const pages = (await getCollection('industries'))
+const pages = (await getCollection('tools-de'))
   .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime())
   .map((post) => ({
-    href: `/industries/${post.id}/`,
+    href: `/de/tools/${post.id}/`,
     title: post.data.title,
     excerpt: post.data.description,
     category: post.data.category,
     featuredImage: post.data.featuredImage,
     readingTime: `${Math.ceil((post.body || '').split(/\s+/).length / 200)} min`,
-    date: new Date(post.data.publishDate).toLocaleDateString('en-US', { month: 'long', year: 'numeric' }),
+    date: new Date(post.data.publishDate).toLocaleDateString('de-DE', { month: 'long', year: 'numeric' }),
   }));
 
 const collectionSchema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  '@id': `${SITE_URL}/industries/#collectionpage`,
-  name: 'China Social Media Marketing by Industry',
-  url: `${SITE_URL}/industries/`,
-  description: 'How China social media marketing works in your industry: rules, platforms, budgets and what a package includes.',
+  '@id': `${SITE_URL}/de/tools/#collectionpage`,
+  name: "Tools für die China-Social-Media-Planung",
+  url: `${SITE_URL}/de/tools/`,
+  description: "Kostenlose Rechner und Checklisten für Budget und Start in China auf WeChat, Xiaohongshu und Douyin.",
   isPartOf: { '@id': `${SITE_URL}/#website` },
   publisher: { '@id': `${SITE_URL}/#organization` },
-  inLanguage: 'en',
+  inLanguage: 'de',
   mainEntity: {
     '@type': 'ItemList',
     itemListElement: pages.map((p, i) => ({
@@ -40,15 +40,17 @@ const collectionSchema = {
 ---
 
 <PageLayout
-  title="China Social Media Marketing by Industry | TheRedScroll"
-  description="Beauty, fashion, food, travel, B2B, automotive, health and luxury. What changes on WeChat, Xiaohongshu and Douyin when your category changes."
+  title={"Tools für die China-Social-Media-Planung | TheRedScroll"}
+  description={"Kostenlose Rechner und Checklisten für Budget und Start in China auf WeChat, Xiaohongshu und Douyin."}
+  lang="de"
   schema={collectionSchema}
 >
   <EditorialIndex
-    overline="Industries"
-    heading="Your category changes the playbook."
-    intro="The rules, the platforms and the budget all shift with the industry. One page per category, written from the accounts we run."
+    lang="de"
+    overline={"Tools"}
+    heading={"Erst rechnen, dann ausgeben."}
+    intro={"Rechner und Checklisten aus den Budgets, die wir jeden Monat verantworten. Ohne Anmeldung, ohne Formular."}
     items={pages}
-    emptyText="The first industry pages are on their way. Until then, tell us your category and we will walk you through what changes."
+    emptyText={"Das erste Tool wird ein Budgetrechner, geplant für dieses Jahr. So lange listet die Preisseite auf, was die monatlichen Pakete abdecken."}
   />
 </PageLayout>

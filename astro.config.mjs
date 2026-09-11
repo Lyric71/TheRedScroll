@@ -57,7 +57,15 @@ const blogRoutePatterns = [
   { re: /^\/de\/insights\/([^/]+)\/?$/, dir: 'blog-de' },
   { re: /^\/es\/analisis\/([^/]+)\/?$/, dir: 'blog-es' },
   { re: /^\/industries\/([^/]+)\/?$/, dir: 'industries' },
+  { re: /^\/fr\/secteurs\/([^/]+)\/?$/, dir: 'industries-fr' },
+  { re: /^\/zh\/hangye\/([^/]+)\/?$/, dir: 'industries-zh' },
+  { re: /^\/de\/branchen\/([^/]+)\/?$/, dir: 'industries-de' },
+  { re: /^\/es\/sectores\/([^/]+)\/?$/, dir: 'industries-es' },
   { re: /^\/tools\/([^/]+)\/?$/, dir: 'tools' },
+  { re: /^\/fr\/outils\/([^/]+)\/?$/, dir: 'tools-fr' },
+  { re: /^\/zh\/gongju\/([^/]+)\/?$/, dir: 'tools-zh' },
+  { re: /^\/de\/tools\/([^/]+)\/?$/, dir: 'tools-de' },
+  { re: /^\/es\/herramientas\/([^/]+)\/?$/, dir: 'tools-es' },
 ];
 
 /** @param {string} urlPath */

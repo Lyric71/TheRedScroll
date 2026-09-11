@@ -68,9 +68,6 @@ then ZH then DE then ES, per `TRANSLATION_GUIDE.md`. The propagation and the
 deep translation are part of the publish step, never optional, never
 deferred. Claude sets the row to `published` with `published_on`.
 
-Industry and tool pages are the exception: their sections exist in English
-only, so they publish in English until localized sections are built.
-
 Then, in this order, and only when each step passes: `npm run build`,
 `npx astro check`, `git add` of everything the article touched (content in
 every locale, hero image, listing surfaces, `editorial/output`, `logs`,
@@ -90,8 +87,13 @@ path. `RESEND_API_KEY` is already in `.env`. If the send fails, Claude says so
 instead of skipping silently.
 
 Industry pages publish into `src/content/industries/` and tool pages into
-`src/content/tools/` (English only, no locale propagation). Their FAQ section
-moves from the body into the `faqs` frontmatter field so the page renders the
+`src/content/tools/`, then propagate to the four localized collections the same
+way insights do: `industries-fr`, `industries-zh`, `industries-de`,
+`industries-es`, and the matching `tools-*`. The URL segment is localized by the
+slug map in `src/i18n/config.ts` (`/fr/secteurs/`, `/zh/hangye/`,
+`/de/branchen/`, `/es/sectores/`; `/fr/outils/`, `/zh/gongju/`, `/de/tools/`,
+`/es/herramientas/`), the article slug stays English. Their FAQ section moves
+from the body into the `faqs` frontmatter field so the page renders the
 accordion and emits FAQPage schema.
 
 Nothing publishes itself. Drafts wait in `output/` until someone says so.
@@ -147,10 +149,10 @@ Do not merge them into one run.
    monthly figure, per-item rate or tier name in any article. Refer to the
    pricing page by name. Brief 04A was renamed accordingly.
 6. `/industries/` and `/tools/` exist since Sept 3, 2026 (collections,
-   listing pages, article template). They are not in the navigation or the
-   footer yet because those menus are shared across five locales and the
-   sections are English only. Add an English-only link when the first page
-   goes live, or leave them reachable from article body links.
+   listing pages, article template) and are localized into all five locales
+   since Sept 11, 2026. Both are reachable from the Insights mega menu in the
+   header, which reads the collections directly: a published page appears in
+   the menu on the next build, in its own locale, with no nav edit.
 
 ## Reviewing a draft
 

@@ -49,7 +49,8 @@ CTA: <label from the brief>
 `template` values: `insight` for `/insights/`, `industry` for `/industries/`,
 `tool` for `/tools/`. All three sections exist. Insights publish into the
 `blog` collections (five locales). Industry and tool pages publish into the
-`industries` and `tools` collections (English only) and render through
+`industries` and `tools` collections, also five locales
+(`industries-fr` / `-zh` / `-de` / `-es`, same for `tools`), and render through
 `src/components/pages/EditorialArticle.astro`.
 
 The publish step (`createblogarticle`) maps this frontmatter onto the blog

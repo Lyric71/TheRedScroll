@@ -253,8 +253,8 @@ log and the final message instead of skipping silently.
 | Finished draft | `output/slug.md` |
 | Hero image | `../public/images/blog/slug.webp` |
 | Published post | `../src/content/blog/slug.md` (plus `blog-fr`, `blog-zh`, `blog-de`, `blog-es`) |
-| Published industry page | `../src/content/industries/slug.md`, live at `/industries/slug/`, English only |
-| Published tool page | `../src/content/tools/slug.md`, live at `/tools/slug/`, English only |
+| Published industry page | `../src/content/industries/slug.md` (plus `industries-fr`, `-zh`, `-de`, `-es`), live at `/industries/slug/`, `/fr/secteurs/slug/`, `/zh/hangye/slug/`, `/de/branchen/slug/`, `/es/sectores/slug/` |
+| Published tool page | `../src/content/tools/slug.md` (plus `tools-fr`, `-zh`, `-de`, `-es`), live at `/tools/slug/`, `/fr/outils/slug/`, `/zh/gongju/slug/`, `/de/tools/slug/`, `/es/herramientas/slug/` |
 | Source ledger | `sources/verified-sources.md` |
 | Site profile cache | `sources/site-profile.md` |
 | Run log | `logs/YYYY-MM-DD.md` |

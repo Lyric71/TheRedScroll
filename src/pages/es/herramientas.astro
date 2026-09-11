@@ -1,0 +1,56 @@
+---
+import { getCollection } from 'astro:content';
+import PageLayout from '../../layouts/PageLayout.astro';
+import EditorialIndex from '../../components/pages/EditorialIndex.astro';
+
+const SITE_URL = 'https://www.theredscroll.com';
+
+const pages = (await getCollection('tools-es'))
+  .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime())
+  .map((post) => ({
+    href: `/es/herramientas/${post.id}/`,
+    title: post.data.title,
+    excerpt: post.data.description,
+    category: post.data.category,
+    featuredImage: post.data.featuredImage,
+    readingTime: `${Math.ceil((post.body || '').split(/\s+/).length / 200)} min`,
+    date: new Date(post.data.publishDate).toLocaleDateString('es-ES', { month: 'long', year: 'numeric' }),
+  }));
+
+const collectionSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': `${SITE_URL}/es/herramientas/#collectionpage`,
+  name: "Herramientas de planificación social en China",
+  url: `${SITE_URL}/es/herramientas/`,
+  description: "Calculadoras y listas de control gratuitas para planificar el presupuesto y el lanzamiento en China en WeChat, Xiaohongshu y Douyin.",
+  isPartOf: { '@id': `${SITE_URL}/#website` },
+  publisher: { '@id': `${SITE_URL}/#organization` },
+  inLanguage: 'es',
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListElement: pages.map((p, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `${SITE_URL}${p.href}`,
+      name: p.title,
+    })),
+  },
+};
+---
+
+<PageLayout
+  title={"Herramientas de planificación en China | TheRedScroll"}
+  description={"Calculadoras y listas de control gratuitas para planificar el presupuesto y el lanzamiento en China en WeChat, Xiaohongshu y Douyin."}
+  lang="es"
+  schema={collectionSchema}
+>
+  <EditorialIndex
+    lang="es"
+    overline={"Herramientas"}
+    heading={"Haga números antes de gastar."}
+    intro={"Calculadoras y listas de control salidas de los presupuestos que gestionamos cada mes. Sin registro, sin formulario."}
+    items={pages}
+    emptyText={"La primera herramienta será una calculadora de presupuesto, prevista para este año. Mientras tanto, la página de precios detalla qué incluye cada paquete mensual."}
+  />
+</PageLayout>

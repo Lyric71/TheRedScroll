@@ -35,8 +35,11 @@ export function hreflangCode(lang: Lang): string {
 }
 
 /**
- * Per-locale slug map: maps English paths to localized paths.
- * Only ES uses Spanish slugs; FR/ZH/DE continue to use English slugs at their prefix.
+ * Per-locale slug maps: map English paths to localized paths.
+ * ES localizes the whole site. FR/ZH/DE localize only the sections added after
+ * TRANSLATION_GUIDE §13 made native slugs mandatory; their older routes keep the
+ * English slug they shipped with, because renaming a live URL costs its ranking
+ * and needs its own redirect plan.
  * Keys must be exact English paths (with leading slash, no trailing slash, no anchors).
  */
 const esSlugMap: Record<string, string> = {
@@ -79,11 +82,42 @@ const esSlugMap: Record<string, string> = {
   '/work/master-martini': '/proyectos/master-martini',
   '/work/mission-foods': '/proyectos/mission-foods',
   '/work/viessmann': '/proyectos/viessmann',
+  '/industries': '/sectores',
+  '/tools': '/herramientas',
 };
 
-const esSlugMapReverse: Record<string, string> = Object.fromEntries(
-  Object.entries(esSlugMap).map(([en, es]) => [es, en])
-);
+/** ZH slugs are toneless pinyin (TRANSLATION_GUIDE §13): 行业 / 工具. */
+const zhSlugMap: Record<string, string> = {
+  '/industries': '/hangye',
+  '/tools': '/gongju',
+};
+
+/** DE keeps "Tools": the German marketing press uses it, and "Werkzeuge" reads
+ *  like hardware. */
+const deSlugMap: Record<string, string> = {
+  '/industries': '/branchen',
+  '/tools': '/tools',
+};
+
+const frSlugMap: Record<string, string> = {
+  '/industries': '/secteurs',
+  '/tools': '/outils',
+};
+
+const slugMaps: Partial<Record<Lang, Record<string, string>>> = {
+  es: esSlugMap,
+  zh: zhSlugMap,
+  de: deSlugMap,
+  fr: frSlugMap,
+};
+
+/** Reverse direction, derived so a map only ever has to be edited in one place. */
+const slugMapsReverse: Partial<Record<Lang, Record<string, string>>> = {};
+for (const [lang, map] of Object.entries(slugMaps) as [Lang, Record<string, string>][]) {
+  slugMapsReverse[lang] = Object.fromEntries(
+    Object.entries(map).map(([en, localized]) => [localized, en])
+  );
+}
 
 /** Return the lang prefix for URLs. English has no prefix. */
 export function langPrefix(lang: Lang): string {
@@ -124,19 +158,22 @@ function mapPath(map: Record<string, string>, key: string): string {
  *  global convention). Normalize before lookup, then restore the trailing
  *  slash if the input had one. */
 function applySlugMap(path: string, lang: Lang): string {
-  if (lang !== 'es') return path;
+  const map = slugMaps[lang];
+  if (!map) return path;
   const [base, tail] = splitTail(path);
   const hadTrailingSlash = base.length > 1 && base.endsWith('/');
   const lookupKey = hadTrailingSlash ? base.slice(0, -1) : base;
-  const mapped = mapPath(esSlugMap, lookupKey);
+  const mapped = mapPath(map, lookupKey);
   return mapped + (hadTrailingSlash ? '/' : '') + tail;
 }
 
-function reverseSlugMap(path: string): string {
+function reverseSlugMap(path: string, lang: Lang): string {
+  const map = slugMapsReverse[lang];
+  if (!map) return path;
   const [base, tail] = splitTail(path);
   const hadTrailingSlash = base.length > 1 && base.endsWith('/');
   const lookupKey = hadTrailingSlash ? base.slice(0, -1) : base;
-  const mapped = mapPath(esSlugMapReverse, lookupKey);
+  const mapped = mapPath(map, lookupKey);
   return mapped + (hadTrailingSlash ? '/' : '') + tail;
 }
 
@@ -168,7 +205,7 @@ export function alternateUrl(currentPath: string, targetLang: Lang): string {
   const match = currentPath.match(/^\/(fr|zh|es|de)(\/.*)?$/);
   const currentLang: Lang = match ? (match[1] as Lang) : 'en';
   const rawStripped = match ? (match[2] || '/') : currentPath;
-  const englishPath = currentLang === 'es' ? reverseSlugMap(rawStripped) : rawStripped;
+  const englishPath = reverseSlugMap(rawStripped, currentLang);
   return localizedPath(englishPath, targetLang);
 }
 

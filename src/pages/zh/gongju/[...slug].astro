@@ -1,12 +1,12 @@
 ---
 import { getCollection } from 'astro:content';
-import BlogLayout from '../../layouts/BlogLayout.astro';
-import EditorialArticle from '../../components/pages/EditorialArticle.astro';
-import { faqPageSchema, serviceSchema, articleSchema } from '../../lib/schema';
-import { missingEditorialLocales } from '../../lib/editorialLocales';
+import BlogLayout from '../../../layouts/BlogLayout.astro';
+import EditorialArticle from '../../../components/pages/EditorialArticle.astro';
+import { faqPageSchema, articleSchema } from '../../../lib/schema';
+import { missingEditorialLocales } from '../../../lib/editorialLocales';
 
 export async function getStaticPaths() {
-  const pages = await getCollection('industries');
+  const pages = await getCollection('tools-zh');
   return pages.map((post) => ({
     params: { slug: post.id },
     props: { post },
@@ -14,19 +14,13 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
-const omitLocales = await missingEditorialLocales('industries', post.id);
+const omitLocales = await missingEditorialLocales('tools', post.id);
 
 const publishedIso = new Date(post.data.publishDate).toISOString();
 const modifiedIso = new Date(post.data.updatedDate ?? post.data.publishDate).toISOString();
-const url = `/industries/${post.id}/`;
+const url = `/zh/gongju/${post.id}/`;
 
 const schema: Record<string, unknown>[] = [
-  serviceSchema({
-    name: post.data.title,
-    description: post.data.metaDescription,
-    url,
-    serviceType: post.data.serviceType ?? 'Social Media Marketing',
-  }),
   articleSchema({
     type: 'Article',
     headline: post.data.title,
@@ -36,6 +30,7 @@ const schema: Record<string, unknown>[] = [
     datePublished: publishedIso,
     dateModified: modifiedIso,
     authorName: post.data.author,
+    inLanguage: 'zh-Hans',
   }),
 ];
 if (post.data.faqs && post.data.faqs.length > 0) {
@@ -47,6 +42,7 @@ if (post.data.faqs && post.data.faqs.length > 0) {
   title={`${post.data.metaTitle} | TheRedScroll`}
   description={post.data.metaDescription}
   ogImage={post.data.featuredImage}
+  lang="zh"
   schema={schema}
   publishedTime={publishedIso}
   modifiedTime={modifiedIso}
@@ -54,8 +50,11 @@ if (post.data.faqs && post.data.faqs.length > 0) {
 >
   <EditorialArticle
     post={post}
-    backHref="/industries/"
-    backLabel="All industries"
-    ctaText="Want to see what this looks like for your brand?"
+    lang="zh"
+    backHref="/zh/gongju/"
+    backLabel={"全部工具"}
+    ctaText={"想让我们用你的品牌数据算一遍？"}
+    tocLabel={"本页目录"}
+    faqSubtitle={"关于这个话题，我们被问得最多的问题。"}
   />
 </BlogLayout>

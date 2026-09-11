@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BlogLayout from '../../layouts/BlogLayout.astro';
 import EditorialArticle from '../../components/pages/EditorialArticle.astro';
 import { faqPageSchema, articleSchema } from '../../lib/schema';
+import { missingEditorialLocales } from '../../lib/editorialLocales';
 
 export async function getStaticPaths() {
   const pages = await getCollection('tools');
@@ -13,6 +14,7 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
+const omitLocales = await missingEditorialLocales('tools', post.id);
 
 const publishedIso = new Date(post.data.publishDate).toISOString();
 const modifiedIso = new Date(post.data.updatedDate ?? post.data.publishDate).toISOString();
@@ -42,7 +44,7 @@ if (post.data.faqs && post.data.faqs.length > 0) {
   schema={schema}
   publishedTime={publishedIso}
   modifiedTime={modifiedIso}
-  omitLocales={['fr', 'zh', 'es', 'de']}
+  omitLocales={omitLocales}
 >
   <EditorialArticle
     post={post}

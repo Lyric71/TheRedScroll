@@ -1,0 +1,56 @@
+---
+import { getCollection } from 'astro:content';
+import PageLayout from '../../layouts/PageLayout.astro';
+import EditorialIndex from '../../components/pages/EditorialIndex.astro';
+
+const SITE_URL = 'https://www.theredscroll.com';
+
+const pages = (await getCollection('industries-de'))
+  .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime())
+  .map((post) => ({
+    href: `/de/branchen/${post.id}/`,
+    title: post.data.title,
+    excerpt: post.data.description,
+    category: post.data.category,
+    featuredImage: post.data.featuredImage,
+    readingTime: `${Math.ceil((post.body || '').split(/\s+/).length / 200)} min`,
+    date: new Date(post.data.publishDate).toLocaleDateString('de-DE', { month: 'long', year: 'numeric' }),
+  }));
+
+const collectionSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': `${SITE_URL}/de/branchen/#collectionpage`,
+  name: "Social-Media-Marketing in China nach Branche",
+  url: `${SITE_URL}/de/branchen/`,
+  description: "Wie Social-Media-Marketing in China in Ihrer Branche funktioniert: Regeln, Plattformen, Budgets und was ein Paket abdeckt.",
+  isPartOf: { '@id': `${SITE_URL}/#website` },
+  publisher: { '@id': `${SITE_URL}/#organization` },
+  inLanguage: 'de',
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListElement: pages.map((p, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `${SITE_URL}${p.href}`,
+      name: p.title,
+    })),
+  },
+};
+---
+
+<PageLayout
+  title={"Social-Media-Marketing in China nach Branche | TheRedScroll"}
+  description={"Beauty, Mode, Lebensmittel, Reisen, B2B, Automobil, Gesundheit und Luxus. Was sich auf WeChat, Xiaohongshu und Douyin je nach Kategorie ändert."}
+  lang="de"
+  schema={collectionSchema}
+>
+  <EditorialIndex
+    lang="de"
+    overline={"Branchen"}
+    heading={"Die Branche ändert das Spielbuch."}
+    intro={"Regeln, Plattformen und Budget verschieben sich mit der Branche. Eine Seite pro Kategorie, geschrieben aus den Accounts, die wir betreuen."}
+    items={pages}
+    emptyText={"Die ersten Branchenseiten sind in Arbeit. Sagen Sie uns so lange Ihre Kategorie, dann erklären wir Ihnen, was sich ändert."}
+  />
+</PageLayout>

@@ -4,7 +4,19 @@ export interface NavItem {
   icon?: string;
   subtitle?: string;
   children?: NavItem[];
+  groups?: NavGroup[];
   viewAllLabel?: string;
+}
+
+/** A labelled column inside a mega menu. `children` renders a flat icon grid
+ *  (Services, Platforms, About); `groups` renders one column per group with its
+ *  own heading and its own "view all" link (Insights). A nav item uses one or
+ *  the other, never both. */
+export interface NavGroup {
+  label: string;
+  href: string;
+  viewAllLabel: string;
+  items: NavItem[];
 }
 
 export const mainNav: NavItem[] = [

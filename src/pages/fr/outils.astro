@@ -1,0 +1,56 @@
+---
+import { getCollection } from 'astro:content';
+import PageLayout from '../../layouts/PageLayout.astro';
+import EditorialIndex from '../../components/pages/EditorialIndex.astro';
+
+const SITE_URL = 'https://www.theredscroll.com';
+
+const pages = (await getCollection('tools-fr'))
+  .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime())
+  .map((post) => ({
+    href: `/fr/outils/${post.id}/`,
+    title: post.data.title,
+    excerpt: post.data.description,
+    category: post.data.category,
+    featuredImage: post.data.featuredImage,
+    readingTime: `${Math.ceil((post.body || '').split(/\s+/).length / 200)} min`,
+    date: new Date(post.data.publishDate).toLocaleDateString('fr-FR', { month: 'long', year: 'numeric' }),
+  }));
+
+const collectionSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': `${SITE_URL}/fr/outils/#collectionpage`,
+  name: "Outils de planification pour le social media en Chine",
+  url: `${SITE_URL}/fr/outils/`,
+  description: "Calculateurs et check-lists gratuits pour préparer un budget et un lancement en Chine sur WeChat, Xiaohongshu et Douyin.",
+  isPartOf: { '@id': `${SITE_URL}/#website` },
+  publisher: { '@id': `${SITE_URL}/#organization` },
+  inLanguage: 'fr',
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListElement: pages.map((p, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `${SITE_URL}${p.href}`,
+      name: p.title,
+    })),
+  },
+};
+---
+
+<PageLayout
+  title={"Outils de planification social media Chine | TheRedScroll"}
+  description={"Calculateurs et check-lists gratuits pour préparer un budget et un lancement en Chine sur WeChat, Xiaohongshu et Douyin."}
+  lang="fr"
+  schema={collectionSchema}
+>
+  <EditorialIndex
+    lang="fr"
+    overline={"Outils"}
+    heading={"Chiffrez avant de dépenser."}
+    intro={"Des calculateurs et des check-lists tirés des budgets que nous pilotons chaque mois. Sans inscription, sans formulaire."}
+    items={pages}
+    emptyText={"Le premier outil sera un calculateur de budget, prévu cette année. En attendant, notre page tarifs détaille ce que couvre chaque forfait mensuel."}
+  />
+</PageLayout>

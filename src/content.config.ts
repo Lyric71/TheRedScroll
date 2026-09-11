@@ -150,7 +150,7 @@ const faq = defineCollection({
 /** Editorial sections created by the Sept to Dec 2026 plan. Same shape as blog
  *  plus optional FAQ pairs (rendered as an accordion and emitted as FAQPage
  *  schema) and an optional service type for the Service schema on industry
- *  pages. English only for now. */
+ *  pages. Published in all five locales, same as blog. */
 const editorialSchema = z.object({
   title: z.string(),
   description: z.string(),
@@ -180,6 +180,22 @@ const tools = defineCollection({
   schema: editorialSchema,
 });
 
+/** Localized editorial content. Translations run longer than the English source,
+ *  so metaDescription gets the same 160-char ceiling the localized blog
+ *  collections already use instead of the English 155. */
+const localizedEditorialSchema = editorialSchema.extend({
+  metaDescription: z.string().max(160),
+});
+
+/** One collection per section per locale. Filenames match the English source,
+ *  exactly like the blog collections: the URL segment is localized by the slug
+ *  map in src/i18n/config.ts, the article slug is not. Written out rather than
+ *  generated so Astro can infer the collection names statically. */
+const localizedEditorial = (section: 'industries' | 'tools', lang: string) =>
+  defineCollection({
+    loader: glob({ pattern: '**/*.md', base: `./src/content/${section}-${lang}` }),
+    schema: localizedEditorialSchema,
+  });
 
 export const collections = {
   services,
@@ -193,4 +209,12 @@ export const collections = {
   faq,
   industries,
   tools,
+  'industries-fr': localizedEditorial('industries', 'fr'),
+  'industries-zh': localizedEditorial('industries', 'zh'),
+  'industries-de': localizedEditorial('industries', 'de'),
+  'industries-es': localizedEditorial('industries', 'es'),
+  'tools-fr': localizedEditorial('tools', 'fr'),
+  'tools-zh': localizedEditorial('tools', 'zh'),
+  'tools-de': localizedEditorial('tools', 'de'),
+  'tools-es': localizedEditorial('tools', 'es'),
 };

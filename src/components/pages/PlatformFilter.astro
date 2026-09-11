@@ -50,16 +50,41 @@ const { allLabel, ariaLabel, platforms } = Astro.props;
   if (filter) {
     const buttons = filter.querySelectorAll<HTMLButtonElement>('button[data-platform]');
     const cards = document.querySelectorAll<HTMLElement>('[data-insight-card]');
+
+    function apply(selected: string) {
+      buttons.forEach((b) =>
+        b.setAttribute('aria-pressed', String((b.dataset.platform ?? 'all') === selected))
+      );
+      cards.forEach((card) => {
+        const cardPlatforms = (card.dataset.platforms ?? '').split(' ');
+        const visible = selected === 'all' || cardPlatforms.includes(selected);
+        card.style.display = visible ? '' : 'none';
+      });
+    }
+
+    /** Only treat the hash as a filter when it names a platform this page has a
+     *  button for, so a heading anchor is never swallowed. */
+    function selectionFromHash(): string {
+      const hash = window.location.hash.replace(/^#/, '');
+      const known = Array.from(buttons).some((b) => b.dataset.platform === hash);
+      return known ? hash : 'all';
+    }
+
     buttons.forEach((button) => {
       button.addEventListener('click', () => {
         const selected = button.dataset.platform ?? 'all';
-        buttons.forEach((b) => b.setAttribute('aria-pressed', String(b === button)));
-        cards.forEach((card) => {
-          const cardPlatforms = (card.dataset.platforms ?? '').split(' ');
-          const visible = selected === 'all' || cardPlatforms.includes(selected);
-          card.style.display = visible ? '' : 'none';
-        });
+        apply(selected);
+        // replaceState, not a hash assignment: keeps the filter shareable without
+        // pushing an entry for every click or jumping the scroll position.
+        const url = selected === 'all'
+          ? window.location.pathname + window.location.search
+          : `${window.location.pathname}${window.location.search}#${selected}`;
+        history.replaceState(null, '', url);
       });
     });
+
+    // Deep links from the Insights mega menu land here.
+    apply(selectionFromHash());
+    window.addEventListener('hashchange', () => apply(selectionFromHash()));
   }
 </script>

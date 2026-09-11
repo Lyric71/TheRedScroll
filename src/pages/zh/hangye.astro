@@ -5,28 +5,28 @@ import EditorialIndex from '../../components/pages/EditorialIndex.astro';
 
 const SITE_URL = 'https://www.theredscroll.com';
 
-const pages = (await getCollection('industries'))
+const pages = (await getCollection('industries-zh'))
   .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime())
   .map((post) => ({
-    href: `/industries/${post.id}/`,
+    href: `/zh/hangye/${post.id}/`,
     title: post.data.title,
     excerpt: post.data.description,
     category: post.data.category,
     featuredImage: post.data.featuredImage,
     readingTime: `${Math.ceil((post.body || '').split(/\s+/).length / 200)} min`,
-    date: new Date(post.data.publishDate).toLocaleDateString('en-US', { month: 'long', year: 'numeric' }),
+    date: new Date(post.data.publishDate).toLocaleDateString('zh-CN', { month: 'long', year: 'numeric' }),
   }));
 
 const collectionSchema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  '@id': `${SITE_URL}/industries/#collectionpage`,
-  name: 'China Social Media Marketing by Industry',
-  url: `${SITE_URL}/industries/`,
-  description: 'How China social media marketing works in your industry: rules, platforms, budgets and what a package includes.',
+  '@id': `${SITE_URL}/zh/hangye/#collectionpage`,
+  name: "中国社交媒体营销：分行业指南",
+  url: `${SITE_URL}/zh/hangye/`,
+  description: "不同行业在中国做社交媒体营销的规则、平台、预算，以及一个服务包里到底包含什么。",
   isPartOf: { '@id': `${SITE_URL}/#website` },
   publisher: { '@id': `${SITE_URL}/#organization` },
-  inLanguage: 'en',
+  inLanguage: 'zh-Hans',
   mainEntity: {
     '@type': 'ItemList',
     itemListElement: pages.map((p, i) => ({
@@ -40,15 +40,17 @@ const collectionSchema = {
 ---
 
 <PageLayout
-  title="China Social Media Marketing by Industry | TheRedScroll"
-  description="Beauty, fashion, food, travel, B2B, automotive, health and luxury. What changes on WeChat, Xiaohongshu and Douyin when your category changes."
+  title={"中国社交媒体营销：分行业指南 | TheRedScroll"}
+  description={"美妆、时尚、食品、旅游、B2B、汽车、健康与奢侈品。类目不同，微信、小红书和抖音上的打法也不同。"}
+  lang="zh"
   schema={collectionSchema}
 >
   <EditorialIndex
-    overline="Industries"
-    heading="Your category changes the playbook."
-    intro="The rules, the platforms and the budget all shift with the industry. One page per category, written from the accounts we run."
+    lang="zh"
+    overline={"行业"}
+    heading={"换个行业，打法就不一样。"}
+    intro={"规则、平台和预算都随行业变化。一个类目一篇，写的都是我们在运营的账号。"}
     items={pages}
-    emptyText="The first industry pages are on their way. Until then, tell us your category and we will walk you through what changes."
+    emptyText={"首批行业页面正在准备。在此之前，告诉我们你的类目，我们直接讲清楚差别在哪。"}
   />
 </PageLayout>

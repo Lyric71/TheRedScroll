@@ -17,6 +17,18 @@ export const ui = {
     'nav.viewAll.services': 'All services',
     'nav.viewAll.platforms': 'All platforms',
     'nav.viewAll.about': 'About the agency',
+    'nav.viewAll.insights': 'All insights',
+    'nav.viewAll.industries': 'All industries',
+    'nav.viewAll.tools': 'All tools',
+
+    // Insights mega menu
+    'nav.insights.platform': 'By platform',
+    'nav.insights.industry': 'By industry',
+    'nav.insights.tools': 'Tools',
+    'nav.insights.industry.empty': 'Industry playbooks',
+    'nav.insights.industry.empty.sub': 'Beauty, fashion, food, B2B',
+    'nav.insights.tools.empty': 'Calculators and checklists',
+    'nav.insights.tools.empty.sub': 'Budget planning, launch checks',
     'nav.openMenu': 'Open menu',
     'nav.closeMenu': 'Close menu',
 
@@ -142,6 +154,18 @@ export const ui = {
     'nav.viewAll.services': 'Tous les services',
     'nav.viewAll.platforms': 'Toutes les plateformes',
     'nav.viewAll.about': 'Découvrir l’agence',
+    'nav.viewAll.insights': 'Toutes les analyses',
+    'nav.viewAll.industries': 'Tous les secteurs',
+    'nav.viewAll.tools': 'Tous les outils',
+
+    // Menu déroulant Analyses
+    'nav.insights.platform': 'Par plateforme',
+    'nav.insights.industry': 'Par secteur',
+    'nav.insights.tools': 'Outils',
+    'nav.insights.industry.empty': 'Guides sectoriels',
+    'nav.insights.industry.empty.sub': 'Beauté, mode, alimentaire, B2B',
+    'nav.insights.tools.empty': 'Calculateurs et check-lists',
+    'nav.insights.tools.empty.sub': 'Budget, préparation du lancement',
     'nav.openMenu': 'Ouvrir le menu',
     'nav.closeMenu': 'Fermer le menu',
 
@@ -267,6 +291,18 @@ export const ui = {
     'nav.viewAll.services': '看全部服务',
     'nav.viewAll.platforms': '看全部平台',
     'nav.viewAll.about': '走进TheRedScroll',
+    'nav.viewAll.insights': '看全部观点',
+    'nav.viewAll.industries': '看全部行业',
+    'nav.viewAll.tools': '看全部工具',
+
+    // 观点下拉菜单
+    'nav.insights.platform': '按平台',
+    'nav.insights.industry': '按行业',
+    'nav.insights.tools': '工具',
+    'nav.insights.industry.empty': '分行业指南',
+    'nav.insights.industry.empty.sub': '美妆、时尚、食品、B2B',
+    'nav.insights.tools.empty': '计算器与清单',
+    'nav.insights.tools.empty.sub': '预算测算、开号准备',
     'nav.openMenu': '打开菜单',
     'nav.closeMenu': '关闭菜单',
 
@@ -390,6 +426,18 @@ export const ui = {
     'nav.viewAll.services': 'Todos los servicios',
     'nav.viewAll.platforms': 'Todas las plataformas',
     'nav.viewAll.about': 'Sobre la agencia',
+    'nav.viewAll.insights': 'Todos los análisis',
+    'nav.viewAll.industries': 'Todos los sectores',
+    'nav.viewAll.tools': 'Todas las herramientas',
+
+    // Menú desplegable de Análisis
+    'nav.insights.platform': 'Por plataforma',
+    'nav.insights.industry': 'Por sector',
+    'nav.insights.tools': 'Herramientas',
+    'nav.insights.industry.empty': 'Guías por sector',
+    'nav.insights.industry.empty.sub': 'Belleza, moda, alimentación, B2B',
+    'nav.insights.tools.empty': 'Calculadoras y listas de control',
+    'nav.insights.tools.empty.sub': 'Presupuesto, preparación del lanzamiento',
     'nav.openMenu': 'Abrir menú',
     'nav.closeMenu': 'Cerrar menú',
 
@@ -515,6 +563,18 @@ export const ui = {
     'nav.viewAll.services': 'Alle Leistungen',
     'nav.viewAll.platforms': 'Alle Plattformen',
     'nav.viewAll.about': 'Über die Agentur',
+    'nav.viewAll.insights': 'Alle Analysen',
+    'nav.viewAll.industries': 'Alle Branchen',
+    'nav.viewAll.tools': 'Alle Tools',
+
+    // Aufklappmenü Analysen
+    'nav.insights.platform': 'Nach Plattform',
+    'nav.insights.industry': 'Nach Branche',
+    'nav.insights.tools': 'Tools',
+    'nav.insights.industry.empty': 'Branchen-Playbooks',
+    'nav.insights.industry.empty.sub': 'Beauty, Mode, Lebensmittel, B2B',
+    'nav.insights.tools.empty': 'Rechner und Checklisten',
+    'nav.insights.tools.empty.sub': 'Budget, Vorbereitung des Starts',
     'nav.openMenu': 'Menü öffnen',
     'nav.closeMenu': 'Menü schließen',
 

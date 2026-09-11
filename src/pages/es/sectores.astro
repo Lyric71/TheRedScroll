@@ -1,0 +1,56 @@
+---
+import { getCollection } from 'astro:content';
+import PageLayout from '../../layouts/PageLayout.astro';
+import EditorialIndex from '../../components/pages/EditorialIndex.astro';
+
+const SITE_URL = 'https://www.theredscroll.com';
+
+const pages = (await getCollection('industries-es'))
+  .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime())
+  .map((post) => ({
+    href: `/es/sectores/${post.id}/`,
+    title: post.data.title,
+    excerpt: post.data.description,
+    category: post.data.category,
+    featuredImage: post.data.featuredImage,
+    readingTime: `${Math.ceil((post.body || '').split(/\s+/).length / 200)} min`,
+    date: new Date(post.data.publishDate).toLocaleDateString('es-ES', { month: 'long', year: 'numeric' }),
+  }));
+
+const collectionSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': `${SITE_URL}/es/sectores/#collectionpage`,
+  name: "Marketing social en China por sector",
+  url: `${SITE_URL}/es/sectores/`,
+  description: "Cómo funciona el marketing social en China en su sector: reglas, plataformas, presupuestos y qué incluye un paquete.",
+  isPartOf: { '@id': `${SITE_URL}/#website` },
+  publisher: { '@id': `${SITE_URL}/#organization` },
+  inLanguage: 'es',
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListElement: pages.map((p, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `${SITE_URL}${p.href}`,
+      name: p.title,
+    })),
+  },
+};
+---
+
+<PageLayout
+  title={"Marketing social en China por sector | TheRedScroll"}
+  description={"Belleza, moda, alimentación, viajes, B2B, automoción, salud y lujo. Qué cambia en WeChat, Xiaohongshu y Douyin según su categoría."}
+  lang="es"
+  schema={collectionSchema}
+>
+  <EditorialIndex
+    lang="es"
+    overline={"Sectores"}
+    heading={"Su sector cambia las reglas."}
+    intro={"Las reglas, las plataformas y el presupuesto cambian con el sector. Una página por categoría, escrita desde las cuentas que gestionamos."}
+    items={pages}
+    emptyText={"Las primeras páginas sectoriales están en camino. Mientras tanto, díganos su categoría y le explicamos qué cambia."}
+  />
+</PageLayout>

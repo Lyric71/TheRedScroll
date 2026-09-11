@@ -5,28 +5,28 @@ import EditorialIndex from '../../components/pages/EditorialIndex.astro';
 
 const SITE_URL = 'https://www.theredscroll.com';
 
-const pages = (await getCollection('industries'))
+const pages = (await getCollection('tools-zh'))
   .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime())
   .map((post) => ({
-    href: `/industries/${post.id}/`,
+    href: `/zh/gongju/${post.id}/`,
     title: post.data.title,
     excerpt: post.data.description,
     category: post.data.category,
     featuredImage: post.data.featuredImage,
     readingTime: `${Math.ceil((post.body || '').split(/\s+/).length / 200)} min`,
-    date: new Date(post.data.publishDate).toLocaleDateString('en-US', { month: 'long', year: 'numeric' }),
+    date: new Date(post.data.publishDate).toLocaleDateString('zh-CN', { month: 'long', year: 'numeric' }),
   }));
 
 const collectionSchema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  '@id': `${SITE_URL}/industries/#collectionpage`,
-  name: 'China Social Media Marketing by Industry',
-  url: `${SITE_URL}/industries/`,
-  description: 'How China social media marketing works in your industry: rules, platforms, budgets and what a package includes.',
+  '@id': `${SITE_URL}/zh/gongju/#collectionpage`,
+  name: "中国社交媒体规划工具",
+  url: `${SITE_URL}/zh/gongju/`,
+  description: "免费的计算器和清单，用于规划微信、小红书和抖音的中国社交媒体预算与上线节奏。",
   isPartOf: { '@id': `${SITE_URL}/#website` },
   publisher: { '@id': `${SITE_URL}/#organization` },
-  inLanguage: 'en',
+  inLanguage: 'zh-Hans',
   mainEntity: {
     '@type': 'ItemList',
     itemListElement: pages.map((p, i) => ({
@@ -40,15 +40,17 @@ const collectionSchema = {
 ---
 
 <PageLayout
-  title="China Social Media Marketing by Industry | TheRedScroll"
-  description="Beauty, fashion, food, travel, B2B, automotive, health and luxury. What changes on WeChat, Xiaohongshu and Douyin when your category changes."
+  title={"中国社交媒体规划工具 | TheRedScroll"}
+  description={"免费的计算器和清单，用于规划微信、小红书和抖音的中国社交媒体预算与上线节奏。"}
+  lang="zh"
   schema={collectionSchema}
 >
   <EditorialIndex
-    overline="Industries"
-    heading="Your category changes the playbook."
-    intro="The rules, the platforms and the budget all shift with the industry. One page per category, written from the accounts we run."
+    lang="zh"
+    overline={"工具"}
+    heading={"先把账算清楚，再花钱。"}
+    intro={"计算器和清单，来自我们每月经手的真实预算。不用注册，不用留资。"}
     items={pages}
-    emptyText="The first industry pages are on their way. Until then, tell us your category and we will walk you through what changes."
+    emptyText={"第一个工具是预算计算器，今年内上线。在此之前，价格页列出了每档月度服务包含的内容。"}
   />
 </PageLayout>

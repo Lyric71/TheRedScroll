@@ -10,27 +10,63 @@ import Container from '../ui/Container.astro';
 import SectionBar from '../ui/SectionBar.astro';
 import KeyFacts from '../sections/KeyFacts.astro';
 import FaqAccordion from '../sections/FaqAccordion.astro';
+import { t } from '../../i18n/ui';
+import { localizedPath } from '../../i18n/config';
+import type { Lang } from '../../i18n/config';
+
+type EditorialEntry =
+  | CollectionEntry<'industries'>
+  | CollectionEntry<'tools'>
+  | CollectionEntry<'industries-fr'>
+  | CollectionEntry<'industries-zh'>
+  | CollectionEntry<'industries-de'>
+  | CollectionEntry<'industries-es'>
+  | CollectionEntry<'tools-fr'>
+  | CollectionEntry<'tools-zh'>
+  | CollectionEntry<'tools-de'>
+  | CollectionEntry<'tools-es'>;
 
 interface Props {
-  post: CollectionEntry<'industries'> | CollectionEntry<'tools'>;
+  post: EditorialEntry;
   backHref: string;
   backLabel: string;
   ctaText?: string;
+  lang?: Lang;
+  /** Labels that have no ui.ts key because they only appear here. */
+  tocLabel?: string;
+  faqSubtitle?: string;
 }
 
-const { post, backHref, backLabel, ctaText = 'Want to grow your brand on China\'s social platforms?' } = Astro.props;
+const dateLocales: Record<Lang, string> = {
+  en: 'en-US',
+  fr: 'fr-FR',
+  zh: 'zh-CN',
+  es: 'es-ES',
+  de: 'de-DE',
+};
+
+const {
+  post,
+  backHref,
+  backLabel,
+  lang = 'en',
+  ctaText = 'Want to grow your brand on China\'s social platforms?',
+  tocLabel = 'On this page',
+  faqSubtitle = 'Straight answers to the questions we hear most on this topic.',
+} = Astro.props;
 const { Content, headings } = await render(post);
 
 const toc = headings.filter((h) => h.depth === 2 || h.depth === 3);
 const hasHeroImage = Boolean(post.data.featuredImage);
 const readingTime = Math.ceil((post.body || '').split(/\s+/).length / 200);
-const formattedDate = new Date(post.data.publishDate).toLocaleDateString('en-US', {
+const formattedDate = new Date(post.data.publishDate).toLocaleDateString(dateLocales[lang], {
   year: 'numeric',
   month: 'long',
   day: 'numeric',
 });
 const faqs = post.data.faqs ?? [];
-const ctaLabel = post.data.cta ?? 'Book a call';
+const ctaLabel = post.data.cta ?? t('cta.bookCall', lang);
+const contactHref = localizedPath('/contact', lang);
 ---
 
 <!-- Hero -->
@@ -92,7 +128,7 @@ const ctaLabel = post.data.cta ?? 'Book a call';
       >
         <span class:list={['font-medium', hasHeroImage ? 'text-[#FFFFFF]' : 'text-[var(--color-ink)]']}>{post.data.author}</span>
         <span class:list={[hasHeroImage ? 'text-[rgba(255,255,255,0.4)]' : 'text-[var(--color-warm-gray)]']}>|</span>
-        <span>{readingTime} min read</span>
+        <span>{readingTime} min {t('common.readingTime', lang)}</span>
         <span class:list={[hasHeroImage ? 'text-[rgba(255,255,255,0.4)]' : 'text-[var(--color-warm-gray)]']}>|</span>
         <span>{formattedDate}</span>
       </div>
@@ -106,9 +142,9 @@ const ctaLabel = post.data.cta ?? 'Book a call';
     <div class="grid grid-cols-[240px_minmax(0,720px)] justify-center gap-[64px] max-[1024px]:block max-[1024px]:max-w-[720px] max-[1024px]:mx-auto">
       {toc.length > 0 && (
         <aside class="max-[1024px]:hidden">
-          <nav aria-label="Table of contents" class="sticky top-[100px]" id="toc">
+          <nav aria-label={tocLabel} class="sticky top-[100px]" id="toc">
             <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-stone)] mb-[16px]">
-              On this page
+              {tocLabel}
             </p>
             <ul class="flex flex-col gap-[2px] border-l-[0.5px] border-[var(--color-border)]">
               {toc.map((h) => (
@@ -142,7 +178,7 @@ const ctaLabel = post.data.cta ?? 'Book a call';
           <p class="text-[16px] font-normal text-[var(--color-ink)] leading-[1.6] mb-[16px]">
             {ctaText}
           </p>
-          <a href="/contact/" class="inline-flex items-center justify-center h-[44px] px-[28px] bg-[var(--color-vermillion)] text-[#FFFFFF] text-[14px] font-medium leading-[1] no-underline rounded-[6px] transition-[background] duration-150 hover:bg-[var(--color-vermillion-hover)] active:scale-[0.98]">
+          <a href={contactHref} class="inline-flex items-center justify-center h-[44px] px-[28px] bg-[var(--color-vermillion)] text-[#FFFFFF] text-[14px] font-medium leading-[1] no-underline rounded-[6px] transition-[background] duration-150 hover:bg-[var(--color-vermillion-hover)] active:scale-[0.98]">
             {ctaLabel}
           </a>
         </div>
@@ -152,7 +188,7 @@ const ctaLabel = post.data.cta ?? 'Book a call';
 </section>
 
 {faqs.length > 0 && (
-  <FaqAccordion faqs={faqs} subtitle="Straight answers to the questions we hear most on this topic." />
+  <FaqAccordion faqs={faqs} subtitle={faqSubtitle} />
 )}
 
 <script>

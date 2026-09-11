@@ -269,7 +269,7 @@ const resolvedOgType = ogType ?? (hasArticleSchema ? 'article' : 'website');
     </script>
   </head>
   <body class="font-sans antialiased text-[var(--color-ink)] bg-[var(--color-white)]">
-    <Header lang={lang} />
+    <Header lang={lang} omitLocales={omitLocales} />
     <slot />
     <Footer lang={lang} />
   </body>

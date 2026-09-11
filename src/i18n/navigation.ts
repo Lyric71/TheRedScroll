@@ -1,10 +1,114 @@
-import type { NavItem } from '../data/navigation';
+import { getCollection } from 'astro:content';
+import type { NavItem, NavGroup } from '../data/navigation';
 import { t } from './ui';
 import { localizedPath } from './config';
 import type { Lang } from './config';
 
+/** Platforms the insights index can filter by. Values match the `platforms`
+ *  enum in the blog schema and the `data-platform` buttons in PlatformFilter. */
+const INSIGHT_PLATFORMS = [
+  { value: 'wechat', label: 'WeChat', subtitle: '微信' },
+  { value: 'rednote', label: 'RedNote', subtitle: '小红书' },
+  { value: 'douyin', label: 'Douyin', subtitle: '抖音' },
+  { value: 'weibo', label: 'Weibo', subtitle: '微博' },
+];
+
+/** English lives in the base collection, every other locale in a suffixed one. */
+function editorialCollection(section: 'industries' | 'tools', lang: Lang) {
+  return (lang === 'en' ? section : `${section}-${lang}`) as 'industries' | 'tools';
+}
+
+/** The header renders on every page, so without this the build would re-read
+ *  both editorial collections a few hundred times. Module scope lives for the
+ *  whole build, and content is static, so one read per section per locale. */
+const editorialCache = new Map<string, Promise<NavItem[]>>();
+
+/** Published pages of one editorial section, newest first, as menu rows. */
+function editorialItems(
+  section: 'industries' | 'tools',
+  lang: Lang,
+  limit: number
+): Promise<NavItem[]> {
+  const key = `${section}:${lang}:${limit}`;
+  const cached = editorialCache.get(key);
+  if (cached) return cached;
+  const pending = loadEditorialItems(section, lang, limit);
+  editorialCache.set(key, pending);
+  return pending;
+}
+
+async function loadEditorialItems(
+  section: 'industries' | 'tools',
+  lang: Lang,
+  limit: number
+): Promise<NavItem[]> {
+  const pages = await getCollection(editorialCollection(section, lang));
+  return pages
+    .sort(
+      (a, b) =>
+        new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime()
+    )
+    .slice(0, limit)
+    .map((page) => ({
+      label: page.data.title,
+      subtitle: page.data.category,
+      href: localizedPath(`/${section}/${page.id}`, lang),
+    }));
+}
+
+/** The three columns under Insights. Platform rows deep-link into the existing
+ *  client-side filter on the insights index; industry and tool rows come from
+ *  the collections, so the menu grows as the editorial plan publishes. */
+async function getInsightsGroups(lang: Lang): Promise<NavGroup[]> {
+  const lp = (path: string) => localizedPath(path, lang);
+  const [industries, tools] = await Promise.all([
+    editorialItems('industries', lang, 8),
+    editorialItems('tools', lang, 8),
+  ]);
+
+  /** A section with nothing published yet says what it is and links to its
+   *  index, rather than leaving a labelled column standing empty. The tools
+   *  section is in that state until its first page (scheduled Nov 30, 2026),
+   *  and any section is while a locale waits on its translations. */
+  const orEmpty = (items: NavItem[], section: 'industry' | 'tools', href: string) =>
+    items.length
+      ? items
+      : [
+          {
+            label: t(`nav.insights.${section}.empty`, lang),
+            subtitle: t(`nav.insights.${section}.empty.sub`, lang),
+            href,
+          },
+        ];
+
+  return [
+    {
+      label: t('nav.insights.platform', lang),
+      href: lp('/insights'),
+      viewAllLabel: t('nav.viewAll.insights', lang),
+      items: INSIGHT_PLATFORMS.map((p) => ({
+        label: p.label,
+        subtitle: p.subtitle,
+        href: `${lp('/insights')}#${p.value}`,
+      })),
+    },
+    {
+      label: t('nav.insights.industry', lang),
+      href: lp('/industries'),
+      viewAllLabel: t('nav.viewAll.industries', lang),
+      items: orEmpty(industries, 'industry', lp('/industries')),
+    },
+    {
+      label: t('nav.insights.tools', lang),
+      href: lp('/tools'),
+      viewAllLabel: t('nav.viewAll.tools', lang),
+      items: orEmpty(tools, 'tools', lp('/tools')),
+    },
+  ];
+}
+
 /** Build localized navigation for the given language. */
-export function getLocalizedNav(lang: Lang): NavItem[] {
+export async function getLocalizedNav(lang: Lang): Promise<NavItem[]> {
   const lp = (path: string) => localizedPath(path, lang);
 
   const serviceChildren: NavItem[] = [
@@ -49,6 +153,11 @@ export function getLocalizedNav(lang: Lang): NavItem[] {
       ],
     },
     { label: t('nav.pricing', lang), href: lp('/pricing') },
-    { label: t('nav.insights', lang), href: lp('/insights') },
+    {
+      label: t('nav.insights', lang),
+      href: lp('/insights'),
+      viewAllLabel: t('nav.viewAll.insights', lang),
+      groups: await getInsightsGroups(lang),
+    },
   ];
 }

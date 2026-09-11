@@ -37,6 +37,8 @@ export interface ServiceSchemaOpts {
   url: string;
   serviceType?: string;
   areaServed?: string[];
+  /** BCP 47 code. Omitted on English pages, where it is the site default. */
+  inLanguage?: string;
 }
 
 export function serviceSchema(opts: ServiceSchemaOpts): Record<string, unknown> {
@@ -49,6 +51,7 @@ export function serviceSchema(opts: ServiceSchemaOpts): Record<string, unknown> 
     serviceType: opts.serviceType ?? opts.name,
     provider: { '@id': ORG_ID },
     areaServed: opts.areaServed ?? ['CN', 'HK'],
+    ...(opts.inLanguage && { inLanguage: opts.inLanguage }),
   };
 }
 
@@ -63,6 +66,8 @@ export interface ArticleSchemaOpts {
    *  Person @id is used instead so the author entity resolves to a real person. */
   authorName?: string;
   type?: 'Article' | 'BlogPosting' | 'NewsArticle';
+  /** BCP 47 code. Omitted on English pages, where it is the site default. */
+  inLanguage?: string;
 }
 
 export function articleSchema(opts: ArticleSchemaOpts): Record<string, unknown> {
@@ -87,6 +92,7 @@ export function articleSchema(opts: ArticleSchemaOpts): Record<string, unknown> 
     ...(opts.dateModified && { dateModified: opts.dateModified }),
     author,
     publisher: { '@id': ORG_ID },
+    ...(opts.inLanguage && { inLanguage: opts.inLanguage }),
   };
 }
 

@@ -27,6 +27,41 @@
       "permanent": true
     },
     {
+      "source": "/fr/industries/:slug*",
+      "destination": "/fr/secteurs/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/zh/industries/:slug*",
+      "destination": "/zh/hangye/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/de/industries/:slug*",
+      "destination": "/de/branchen/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/es/industries/:slug*",
+      "destination": "/es/sectores/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/fr/tools/:slug*",
+      "destination": "/fr/outils/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/zh/tools/:slug*",
+      "destination": "/zh/gongju/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/es/tools/:slug*",
+      "destination": "/es/herramientas/:slug*",
+      "permanent": true
+    },
+    {
       "source": "/sitemap.xml",
       "destination": "/sitemap-index.xml",
       "permanent": true
