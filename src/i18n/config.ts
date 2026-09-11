@@ -36,10 +36,16 @@ export function hreflangCode(lang: Lang): string {
 
 /**
  * Per-locale slug maps: map English paths to localized paths.
- * ES localizes the whole site. FR/ZH/DE localize only the sections added after
- * TRANSLATION_GUIDE §13 made native slugs mandatory; their older routes keep the
- * English slug they shipped with, because renaming a live URL costs its ranking
- * and needs its own redirect plan.
+ *
+ * Every locale localizes every section, per TRANSLATION_GUIDE §13. FR, ZH and
+ * DE were migrated off their original English slugs on 2026-09-11; each old
+ * path has a 301 in vercel.json, so nothing that was linked or indexed breaks.
+ *
+ * A section key covers its children: `mapPath` falls back to the longest
+ * matching parent prefix, so `/insights` → `/decryptages` also moves every
+ * `/insights/<article>` without enumerating articles. Article and case study
+ * slugs themselves stay English in all locales.
+ *
  * Keys must be exact English paths (with leading slash, no trailing slash, no anchors).
  */
 const esSlugMap: Record<string, string> = {
@@ -86,20 +92,108 @@ const esSlugMap: Record<string, string> = {
   '/tools': '/herramientas',
 };
 
-/** ZH slugs are toneless pinyin (TRANSLATION_GUIDE §13): 行业 / 工具. */
+/** ZH slugs are toneless pinyin per TRANSLATION_GUIDE 13. `/ai` keeps its
+ *  spelling: Chinese tech press writes and reads it as "AI". Brand names
+ *  (WeChat, Douyin, RedNote, Weibo, CRM) stay canonical. */
 const zhSlugMap: Record<string, string> = {
+  '/about': '/guanyu-women',
+  '/contact': '/lianxi-women',
+  '/work': '/anli',
+  '/insights': '/guandian',
+  '/services': '/fuwu',
+  '/platforms': '/pingtai',
+  '/pricing': '/jiage',
+  '/thank-you': '/ganxie',
+  '/privacy-policy': '/yinsi-zhengce',
+  '/cookie-policy': '/cookie-zhengce',
+  '/terms-of-service': '/fuwu-tiaokuan',
+  '/services/strategy-campaigns': '/fuwu/celue-huodong',
+  '/services/advertising': '/fuwu/guanggao',
+  '/services/content-production': '/fuwu/neirong-zhizuo',
+  '/services/influencer-marketing': '/fuwu/daren-yingxiao',
+  '/services/market-entry': '/fuwu/shichang-jinru',
+  '/services/crm-private-domain': '/fuwu/crm-siyu',
+  '/services/training-consulting': '/fuwu/peixun-zixun',
+  '/platforms/wechat': '/pingtai/wechat',
+  '/platforms/rednote': '/pingtai/rednote',
+  '/platforms/douyin': '/pingtai/douyin',
+  '/platforms/weibo': '/pingtai/weibo',
+  '/platforms/others': '/pingtai/qita',
+  '/wechat-agency': '/wechat-daili',
+  '/douyin-agency': '/douyin-daili',
+  '/rednote-agency': '/rednote-daili',
+  '/weibo-agency': '/weibo-daili',
   '/industries': '/hangye',
   '/tools': '/gongju',
 };
 
-/** DE keeps "Tools": the German marketing press uses it, and "Werkzeuge" reads
- *  like hardware. */
+/** DE slugs per TRANSLATION_GUIDE 13, with ae/oe/ue for umlauts.
+ *  "Tools" and "Influencer-Marketing" stay: the German marketing press
+ *  uses both, and translating them would read as a back-translation. */
 const deSlugMap: Record<string, string> = {
+  '/about': '/ueber-uns',
+  '/contact': '/kontakt',
+  '/work': '/referenzen',
+  '/insights': '/analysen',
+  '/services': '/leistungen',
+  '/platforms': '/plattformen',
+  '/pricing': '/preise',
+  '/ai': '/ki',
+  '/thank-you': '/danke',
+  '/privacy-policy': '/datenschutz',
+  '/cookie-policy': '/cookie-richtlinie',
+  '/terms-of-service': '/agb',
+  '/services/strategy-campaigns': '/leistungen/strategie-kampagnen',
+  '/services/advertising': '/leistungen/werbung',
+  '/services/content-production': '/leistungen/content-produktion',
+  '/services/influencer-marketing': '/leistungen/influencer-marketing',
+  '/services/market-entry': '/leistungen/markteintritt',
+  '/services/crm-private-domain': '/leistungen/crm-private-domain',
+  '/services/training-consulting': '/leistungen/schulung-beratung',
+  '/platforms/wechat': '/plattformen/wechat',
+  '/platforms/rednote': '/plattformen/rednote',
+  '/platforms/douyin': '/plattformen/douyin',
+  '/platforms/weibo': '/plattformen/weibo',
+  '/platforms/others': '/plattformen/weitere',
+  '/wechat-agency': '/wechat-agentur',
+  '/douyin-agency': '/douyin-agentur',
+  '/rednote-agency': '/rednote-agentur',
+  '/weibo-agency': '/weibo-agentur',
   '/industries': '/branchen',
   '/tools': '/tools',
 };
 
+/** FR slugs per TRANSLATION_GUIDE 13. `/services` keeps its spelling:
+ *  same word in French. Case study slugs are client names and stay
+ *  canonical, so only the `/work` segment around them moves. */
 const frSlugMap: Record<string, string> = {
+  '/about': '/qui-nous-sommes',
+  '/contact': '/nous-contacter',
+  '/work': '/realisations',
+  '/insights': '/decryptages',
+  '/platforms': '/plateformes',
+  '/pricing': '/tarifs',
+  '/ai': '/ia',
+  '/thank-you': '/merci',
+  '/privacy-policy': '/politique-confidentialite',
+  '/cookie-policy': '/politique-cookies',
+  '/terms-of-service': '/conditions-generales',
+  '/services/strategy-campaigns': '/services/strategie-campagnes',
+  '/services/advertising': '/services/publicite',
+  '/services/content-production': '/services/production-de-contenu',
+  '/services/influencer-marketing': '/services/marketing-influence',
+  '/services/market-entry': '/services/entree-marche',
+  '/services/crm-private-domain': '/services/crm-domaine-prive',
+  '/services/training-consulting': '/services/formation-conseil',
+  '/platforms/wechat': '/plateformes/wechat',
+  '/platforms/rednote': '/plateformes/rednote',
+  '/platforms/douyin': '/plateformes/douyin',
+  '/platforms/weibo': '/plateformes/weibo',
+  '/platforms/others': '/plateformes/autres',
+  '/wechat-agency': '/agence-wechat',
+  '/douyin-agency': '/agence-douyin',
+  '/rednote-agency': '/agence-rednote',
+  '/weibo-agency': '/agence-weibo',
   '/industries': '/secteurs',
   '/tools': '/outils',
 };

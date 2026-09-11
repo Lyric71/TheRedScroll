@@ -1,6 +1,6 @@
 # TheRedScroll
 
-Last updated: 2026-07-16
+Last updated: 2026-09-11
 
 > TheRedScroll is a China social media agency based in Shanghai and Hong Kong. We help Western brands grow on WeChat, Douyin, RedNote (Xiaohongshu), Weibo, and 14 other Chinese social platforms, on a fixed scope and a fixed price.
 
@@ -30,6 +30,7 @@ Founded by Cyril Drouin, former CEO of Publicis Commerce and Performance Marketi
 - [Work and case studies](https://www.theredscroll.com/work/): Client projects and results
 - [Insights and guides](https://www.theredscroll.com/insights/): Long-form guides on China social
 - [Industries](https://www.theredscroll.com/industries/): How China social media marketing changes by category
+- [Tools](https://www.theredscroll.com/tools/): Calculators and checklists for planning a China budget and launch
 - [Pricing](https://www.theredscroll.com/pricing/): Fixed-scope, fixed-price model
 - [Contact](https://www.theredscroll.com/contact/): Book a call
 
@@ -44,6 +45,12 @@ Founded by Cyril Drouin, former CEO of Publicis Commerce and Performance Marketi
 - [Why livestream shopping took over China](https://www.theredscroll.com/insights/why-livestream-shopping-took-over-china/): Market context and history (published 2026-04-04)
 - [AI content production in China](https://www.theredscroll.com/insights/ai-content-production-china/): AI-generated visuals and video (published 2026-04-06)
 - [What is WeCom](https://www.theredscroll.com/insights/what-is-wecom/): WeChat Work for private domain CRM (published 2026-04-06)
+- [Douyin marketing for Western brands](https://www.theredscroll.com/insights/douyin-marketing-western-brands/): Account setup, content formats, KOL costs, paid amplification and Douyin Shop (published 2026-07-16)
+- [How to sell on WeChat](https://www.theredscroll.com/insights/sell-on-wechat/): Official Accounts, Video Accounts, Mini Programs, ads and WeCom, and how to sell across all five (published 2026-07-21)
+- [Why your China engagement rate keeps dropping](https://www.theredscroll.com/insights/china-engagement-rate-drop/): What WeChat, Douyin and RedNote changed about what counts, and why brand dashboards missed it (published 2026-07-25)
+- [How much China social media marketing costs in 2026](https://www.theredscroll.com/insights/china-social-media-marketing-cost/): Five cost lines, four of them public, and the one number you usually cannot find (published 2026-09-04)
+- [Xiaohongshu marketing for foreign brands](https://www.theredscroll.com/insights/xiaohongshu-marketing-foreign-brands/): Verifying an account on overseas paperwork, and why ads and stores go through an agent (published 2026-09-08)
+- [The first 90 days of China social media](https://www.theredscroll.com/insights/first-90-days-china-social-media/): Accounts live in two weeks, the Chinese name takes months, the first lead lands after week eight (published 2026-09-10)
 - [Beauty and skincare marketing in China](https://www.theredscroll.com/industries/beauty-skincare/): NMPA filing, claim rules, Xiaohongshu search and KOC seeding for beauty brands (published 2026-09-11)
 
 ## Localized versions

@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import Container from '../ui/Container.astro';
 import SectionBar from '../ui/SectionBar.astro';
+import { localizedPath } from '../../i18n/config';
 
 interface Props {
   lang?: 'en' | 'fr' | 'zh' | 'de' | 'es';
@@ -18,13 +19,9 @@ const COLLECTIONS = {
   es: 'blog-es',
 } as const;
 
-const INSIGHTS_BASE = {
-  en: '/insights',
-  fr: '/fr/insights',
-  zh: '/zh/insights',
-  de: '/de/insights',
-  es: '/es/analisis',
-} as const;
+// Derived from the slug map rather than hardcoded: locale section slugs move
+// (they did on 2026-09-11), and a stale copy here would 404 silently.
+const insightsPath = localizedPath('/insights', lang).replace(/\/$/, '');
 
 const COPY = {
   en: {
@@ -60,7 +57,7 @@ const COPY = {
 } as const;
 
 const copy = COPY[lang];
-const insightsBase = INSIGHTS_BASE[lang];
+const insightsBase = insightsPath;
 
 const all = await getCollection(COLLECTIONS[lang]);
 const byId = new Map(all.map((post) => [post.id, post]));

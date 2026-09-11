@@ -12,7 +12,7 @@ featured: false
 featuredImage: "/images/blog/xiaohongshu-marketing-foreign-brands.webp"
 ---
 
-*市面上谈外国品牌如何做[小红书](/zh/platforms/rednote/)的指南，大多隔着一层。本文写法不同，材料全部来自我们为外国客户实际运营的账号：后台究竟显示什么，哪一类内容会被限流，第一个月又是什么光景。*
+*市面上谈外国品牌如何做[小红书](/zh/pingtai/rednote/)的指南，大多隔着一层。本文写法不同，材料全部来自我们为外国客户实际运营的账号：后台究竟显示什么，哪一类内容会被限流，第一个月又是什么光景。*
 
 有三件事决定后面的一切。小红书更像一个带信息流的搜索引擎，而非一个附带搜索的社区。用户年轻、以女性居多、集中在大城市，并且正处在准备花钱的节点上。至于账号，对外国公司反倒是最省事的一步；真正需要代理商介入的，是广告和店铺。
 
@@ -88,7 +88,7 @@ featuredImage: "/images/blog/xiaohongshu-marketing-foreign-brands.webp"
 
 这一节直接决定预算，所以不绕弯子。
 
-**可以做的**：用本国注册文件开设并认证企业号，发布笔记，回复评论，通过[蒲公英平台投放达人合作](/zh/services/influencer-marketing/)，以及查看完整的数据后台。
+**可以做的**：用本国注册文件开设并认证企业号，发布笔记，回复评论，通过[蒲公英平台投放达人合作](/zh/fuwu/daren-yingxiao/)，以及查看完整的数据后台。
 
 **不能做的**：在海外自助开通广告账户。
 
@@ -181,12 +181,12 @@ featuredImage: "/images/blog/xiaohongshu-marketing-foreign-brands.webp"
 
 平台费用公开且不高。企业认证每年600元，上文已引。蒲公英对达人合作抽10%或20%，同样已引。广告预算则从代理商开聚光账户时设定的首充算起。无论找哪家代理机构，都应要求其按成本结算，并附上平台开具的账单。
 
-内容是前三个月里最大的一笔。每月十几篇中文笔记，还要拍得像真人随手发的，这本身就是一项[实打实的制作工作](/zh/services/content-production/)。KOC档的种草单篇便宜，靠数量累积起量。更高的KOL档，对我们多数客户而言是第二年才需要考虑的事。
+内容是前三个月里最大的一笔。每月十几篇中文笔记，还要拍得像真人随手发的，这本身就是一项[实打实的制作工作](/zh/fuwu/neirong-zhizuo/)。KOC档的种草单篇便宜，靠数量累积起量。更高的KOL档，对我们多数客户而言是第二年才需要考虑的事。
 
 > 小红书上KOL合作的平均成本为1万到4万美元，抖音为2.5万到6.5万美元。
 > 来源：Long Advisory，2026年5月。https://longadvisory.eu/en/how-much-influencers-cost-in-china-kol-pricing-explained/
 
-人力成本是同行指南一律不写的那一项。TheRedScroll在[价格页](/zh/pricing/)公开完整价目表，服务范围固定，广告费单独结算且不加价。若想看全貌，我们的费用主文[2026年在中国做社交媒体营销要花多少钱](/zh/insights/china-social-media-marketing-cost/)逐项拆解了跨平台的五项开支。单就小红书这个平台而言，我们的[RedNote代理服务页](/zh/rednote-agency/)说明了按月服务究竟包含哪些内容。
+人力成本是同行指南一律不写的那一项。TheRedScroll在[价格页](/zh/jiage/)公开完整价目表，服务范围固定，广告费单独结算且不加价。若想看全貌，我们的费用主文[2026年在中国做社交媒体营销要花多少钱](/zh/guandian/china-social-media-marketing-cost/)逐项拆解了跨平台的五项开支。单就小红书这个平台而言，我们的[RedNote代理服务页](/zh/rednote-daili/)说明了按月服务究竟包含哪些内容。
 
 下周的文章讲小红书算法在2026年如何给笔记排序，那是本文所有内容之下的那一层。
 

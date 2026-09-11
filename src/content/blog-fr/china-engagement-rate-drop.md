@@ -266,17 +266,17 @@ un ajout WeCom survivent au prochain revirement de l’algorithme, parce que
 chacun rapproche un lecteur d’une audience qui vous appartient au lieu d’être
 louée.
 
-Notre article sur [WeCom](/fr/insights/what-is-wecom/) détaille le
+Notre article sur [WeCom](/fr/decryptages/what-is-wecom/) détaille le
 fonctionnement de cette couche de domaine privé et la raison pour laquelle ces
 chiffres résistent quand la portée publique se renchérit.
 
 Reste à savoir quoi publier en face : notre article sur
-[le mix de contenu en Chine](/fr/insights/content-mix-china/) s’en charge.
+[le mix de contenu en Chine](/fr/decryptages/content-mix-china/) s’en charge.
 
 Rien de tout cela n’exige davantage de contenu, seulement de noter dans la
 bonne colonne ce que vous publiez déjà.
 
-La même distinction explique pourquoi notre page [Tarifs](/fr/pricing/) affiche
+La même distinction explique pourquoi notre page [Tarifs](/fr/tarifs/) affiche
 un périmètre et un prix fixes, publiés avant le moindre échange.
 
 Une agence rémunérée au volume a tout intérêt à vous en vendre encore, l’année

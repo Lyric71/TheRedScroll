@@ -12,7 +12,7 @@ featured: false
 featuredImage: "/images/blog/xiaohongshu-marketing-foreign-brands.webp"
 ---
 
-*Über das [Xiaohongshu-Marketing (小红书)](/de/platforms/rednote/) ausländischer
+*Über das [Xiaohongshu-Marketing (小红书)](/de/plattformen/rednote/) ausländischer
 Marken wird fast immer von außen geschrieben. Dieser Text stützt sich auf
 Konten, die wir für ausländische Kunden führen: was das Dashboard tatsächlich
 ausweist, was gedrosselt wird und wie der erste Monat wirklich verläuft.*
@@ -152,7 +152,7 @@ Dieser Abschnitt entscheidet über Budgets. Deshalb ohne Umschweife.
 **Sie können** ein Unternehmenskonto mit den Registerunterlagen Ihres
 Heimatlandes eröffnen und verifizieren lassen. Notizen veröffentlichen,
 Kommentare beantworten, eine
-[Creator-Kampagne über Pugongying (蒲公英)](/de/services/influencer-marketing/)
+[Creator-Kampagne über Pugongying (蒲公英)](/de/leistungen/influencer-marketing/)
 aufsetzen, das vollständige Dashboard einsehen: nichts davon bereitet
 Schwierigkeiten.
 
@@ -344,7 +344,7 @@ Selbstkostenpreis in Rechnung stellt, mit der Rechnung der Plattform als Beleg.
 
 Content dominiert die ersten drei Monate. Ein Dutzend Notizen im Monat auf
 Chinesisch, aufgenommen so, dass sie wie von einem echten Menschen wirken, ist
-eine [Produktionsaufgabe](/de/services/content-production/). Creator-Seeding
+eine [Produktionsaufgabe](/de/leistungen/content-produktion/). Creator-Seeding
 auf KOC-Ebene ist je Beitrag günstig und summiert sich über die Menge. Die
 größere KOL-Ebene bleibt für die meisten unserer Kunden eine Entscheidung
 fürs zweite Jahr.
@@ -355,12 +355,12 @@ fürs zweite Jahr.
 
 Bleibt der Personalposten, den kein konkurrierender Leitfaden ausweist.
 TheRedScroll veröffentlicht seine vollständige Preisliste auf der
-[Preisseite](/de/pricing/): fester Leistungsumfang, Werbebudget getrennt
+[Preisseite](/de/preise/): fester Leistungsumfang, Werbebudget getrennt
 abgerechnet und ohne Aufschläge. Unser Grundlagentext,
-[was Social-Media-Marketing in China 2026 kostet](/de/insights/china-social-media-marketing-cost/),
+[was Social-Media-Marketing in China 2026 kostet](/de/analysen/china-social-media-marketing-cost/),
 geht die fünf Kostenposten über alle Plattformen hinweg durch, wenn Sie das
 größere Bild suchen. Zur Plattform selbst beschreibt unsere
-[RedNote-Agenturseite](/de/rednote-agency/), was ein monatliches
+[RedNote-Agenturseite](/de/rednote-agentur/), was ein monatliches
 Xiaohongshu-Mandat umfasst.
 
 Der Text der kommenden Woche behandelt, wie der Xiaohongshu-Algorithmus 2026

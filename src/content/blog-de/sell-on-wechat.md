@@ -173,7 +173,7 @@ rund 6.500 €, für eine einzige Kampagne.
 
 Die vollständige Aufschlüsselung, Format für Format, mit den tatsächlichen Zahlen,
 finden Sie in unserem
-[Leitfaden zu WeChat-Werbeformaten und -Kosten](/de/insights/wechat-advertising-formats-costs/).
+[Leitfaden zu WeChat-Werbeformaten und -Kosten](/de/analysen/wechat-advertising-formats-costs/).
 Fangen Sie dort an, bevor Sie ausgeben.
 
 Auf der Creator-Seite läuft WeChat mehr über Vertrauen als über Glanz. Key Opinion
@@ -211,7 +211,7 @@ Stammkunde. Die meisten der größten Unternehmen Chinas arbeiten längst so.
 Einmal eingerichtet, wird es zum günstigsten Verkaufskanal, den Sie besitzen, still im
 Hintergrund tätig, lange nachdem das Werbebudget aufgebraucht ist. Wie Private-Domain-
 Traffic funktioniert und wie man ihn aufbaut, erläutern wir ausführlich in unserem
-[vollständigen Beitrag zu WeCom](/de/insights/what-is-wecom/). Wenn Bindung Ihre
+[vollständigen Beitrag zu WeCom](/de/analysen/what-is-wecom/). Wenn Bindung Ihre
 Priorität ist, lesen Sie den als Nächstes.
 
 ## Wo Marken danebengreifen

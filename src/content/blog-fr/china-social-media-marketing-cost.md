@@ -30,7 +30,7 @@ pas.
 | Publicités WeChat Moments, aux enchères | À partir de 1 000 yuans par jour, CPM de 30 yuans | Tencent Ads |
 | Publication d’un nano KOC sur Xiaohongshu | 20 à 60 dollars | Long Advisory, 2026 |
 | Campagne avec un micro KOL sur Xiaohongshu | 10 000 à 35 000 dollars | Long Advisory, 2026 |
-| Honoraires d’agence | Publiés sur [la page tarifs de TheRedScroll](/fr/pricing/) | TheRedScroll |
+| Honoraires d’agence | Publiés sur [la page tarifs de TheRedScroll](/fr/tarifs/) | TheRedScroll |
 
 Les montants en dollars sont des conversions arrondies, à environ sept yuans
 pour un dollar. Le chiffre en yuans fait foi. Chaque donnée a été vérifiée
@@ -60,7 +60,7 @@ dépôt minimal, enchère de départ. De tout le dossier, ce sont les
 chiffres les plus sûrs.
 
 **Les cachets d’influenceurs** reviennent aux créateurs. Un petit
-[key opinion consumer (KOC)](/fr/insights/kol-vs-koc-china-influencer-guide/)
+[key opinion consumer (KOC)](/fr/decryptages/kol-vs-koc-china-influencer-guide/)
 se paie parfois le prix d’un déjeuner la publication. Une campagne avec un
 key opinion leader (KOL) de taille intermédiaire sur Xiaohongshu (小红书)
 coûte le prix d’une voiture.
@@ -82,7 +82,7 @@ une marge.
 Commençons par la bonne nouvelle. La vérification coûte moins cher qu’on ne
 le croit, et les plateformes publient leurs tarifs.
 
-Un compte officiel [WeChat (微信)](/fr/wechat-agency/) détenu par une entité
+Un compte officiel [WeChat (微信)](/fr/agence-wechat/) détenu par une entité
 de Chine continentale acquitte des frais d’examen à chaque vérification. Le
 statut vérifié vaut pour un an.
 
@@ -107,7 +107,7 @@ la publicité, aux liens vers la boutique et au tableau de bord des données.
 > un examen annuel. Un examen refusé n’est pas remboursé.
 > Source : guide de vérification des comptes entreprise Xiaohongshu (小红书), document de la plateforme, vérifié en septembre 2026 ; New Rank (新榜), octobre 2025. https://a.newrank.cn/trade/news/4199
 
-Une fois la première année réglée, [Douyin (抖音)](/fr/douyin-agency/)
+Une fois la première année réglée, [Douyin (抖音)](/fr/agence-douyin/)
 est, des trois, le moins cher à entretenir.
 
 > La vérification entreprise Blue V sur Douyin coûte 600 yuans la première
@@ -168,7 +168,7 @@ C’est le poste le mieux documenté : les plateformes publient elles-mêmes
 leurs planchers. C’est aussi celui où une estimation sans source fait
 le plus de dégâts. Chaque montant cité ici est donc celui de la plateforme.
 
-Les [publicités WeChat Moments](/fr/insights/wechat-advertising-formats-costs/),
+Les [publicités WeChat Moments](/fr/decryptages/wechat-advertising-formats-costs/),
 par lesquelles la plupart des marques étrangères commencent, s’achètent de
 deux façons. L’achat programmé réserve l’inventaire à l’avance, au prix
 catalogue. L’achat aux enchères se joue en temps réel et démarre nettement
@@ -202,7 +202,7 @@ circulent proviennent de blogs de revendeurs, pas de la plateforme, et ils
 changent d’un agent à l’autre. Demandez à l’agent qui ouvre votre compte
 de vous confirmer son seuil par écrit.
 
-Les [publicités Xiaohongshu](/fr/rednote-agency/) passent par sa régie
+Les [publicités Xiaohongshu](/fr/agence-rednote/) passent par sa régie
 Jiguang (聚光). Pour les annonceurs étrangers, le parcours a changé cette
 année.
 
@@ -346,7 +346,7 @@ lourds. Le média vient en troisième.
 et une boutique. Le média devient le premier poste. Une collaboration Douyin
 dans la fourchette intermédiaire sourcée trouve sa place un mois sur deux.
 Le contenu comprend de la vidéo au quotidien, ou presque. Le travail sur le
-domaine privé via [WeCom (企业微信)](/fr/insights/what-is-wecom/) démarre,
+domaine privé via [WeCom (企业微信)](/fr/decryptages/what-is-wecom/) démarre,
 car à ce niveau de dépense, fidéliser coûte moins cher qu’un mois
 d’acquisition de plus.
 
@@ -360,7 +360,7 @@ quoi sert le budget média.
 Tout ce qui précède est public, sourcé et daté. Le seul chiffre absent de
 cet article est celui de TheRedScroll, et c’est délibéré.
 
-La grille tarifaire figure sur la [page tarifs](/fr/pricing/). Elle détaille
+La grille tarifaire figure sur la [page tarifs](/fr/tarifs/). Elle détaille
 les forfaits mensuels, leur contenu et les prix à l’unité pour le contenu.
 L’achat média est facturé à part, au coût réel, sans majoration. Les contrats
 courent sur six mois au minimum, le temps d’un premier vrai cycle de données

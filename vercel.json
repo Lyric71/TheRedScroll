@@ -7,7 +7,12 @@
   "redirects": [
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "theredscroll.com" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "theredscroll.com"
+        }
+      ],
       "destination": "https://www.theredscroll.com/:path*",
       "permanent": true
     },
@@ -23,7 +28,7 @@
     },
     {
       "source": "/de/analisis/:slug*",
-      "destination": "/de/insights/:slug*",
+      "destination": "/de/analysen/:slug*",
       "permanent": true
     },
     {
@@ -62,6 +67,441 @@
       "permanent": true
     },
     {
+      "source": "/de/platforms/douyin/:path*",
+      "destination": "/de/plattformen/douyin/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/de/platforms/others/:path*",
+      "destination": "/de/plattformen/weitere/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/de/platforms/rednote/:path*",
+      "destination": "/de/plattformen/rednote/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/de/platforms/wechat/:path*",
+      "destination": "/de/plattformen/wechat/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/de/platforms/weibo/:path*",
+      "destination": "/de/plattformen/weibo/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/de/services/advertising/:path*",
+      "destination": "/de/leistungen/werbung/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/de/services/content-production/:path*",
+      "destination": "/de/leistungen/content-produktion/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/de/services/crm-private-domain/:path*",
+      "destination": "/de/leistungen/crm-private-domain/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/de/services/influencer-marketing/:path*",
+      "destination": "/de/leistungen/influencer-marketing/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/de/services/market-entry/:path*",
+      "destination": "/de/leistungen/markteintritt/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/de/services/strategy-campaigns/:path*",
+      "destination": "/de/leistungen/strategie-kampagnen/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/de/services/training-consulting/:path*",
+      "destination": "/de/leistungen/schulung-beratung/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/fr/platforms/douyin/:path*",
+      "destination": "/fr/plateformes/douyin/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/fr/platforms/others/:path*",
+      "destination": "/fr/plateformes/autres/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/fr/platforms/rednote/:path*",
+      "destination": "/fr/plateformes/rednote/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/fr/platforms/wechat/:path*",
+      "destination": "/fr/plateformes/wechat/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/fr/platforms/weibo/:path*",
+      "destination": "/fr/plateformes/weibo/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/fr/services/advertising/:path*",
+      "destination": "/fr/services/publicite/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/fr/services/content-production/:path*",
+      "destination": "/fr/services/production-de-contenu/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/fr/services/crm-private-domain/:path*",
+      "destination": "/fr/services/crm-domaine-prive/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/fr/services/influencer-marketing/:path*",
+      "destination": "/fr/services/marketing-influence/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/fr/services/market-entry/:path*",
+      "destination": "/fr/services/entree-marche/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/fr/services/strategy-campaigns/:path*",
+      "destination": "/fr/services/strategie-campagnes/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/fr/services/training-consulting/:path*",
+      "destination": "/fr/services/formation-conseil/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/zh/platforms/douyin/:path*",
+      "destination": "/zh/pingtai/douyin/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/zh/platforms/others/:path*",
+      "destination": "/zh/pingtai/qita/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/zh/platforms/rednote/:path*",
+      "destination": "/zh/pingtai/rednote/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/zh/platforms/wechat/:path*",
+      "destination": "/zh/pingtai/wechat/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/zh/platforms/weibo/:path*",
+      "destination": "/zh/pingtai/weibo/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/zh/services/advertising/:path*",
+      "destination": "/zh/fuwu/guanggao/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/zh/services/content-production/:path*",
+      "destination": "/zh/fuwu/neirong-zhizuo/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/zh/services/crm-private-domain/:path*",
+      "destination": "/zh/fuwu/crm-siyu/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/zh/services/influencer-marketing/:path*",
+      "destination": "/zh/fuwu/daren-yingxiao/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/zh/services/market-entry/:path*",
+      "destination": "/zh/fuwu/shichang-jinru/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/zh/services/strategy-campaigns/:path*",
+      "destination": "/zh/fuwu/celue-huodong/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/zh/services/training-consulting/:path*",
+      "destination": "/zh/fuwu/peixun-zixun/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/de/about/:path*",
+      "destination": "/de/ueber-uns/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/de/ai/:path*",
+      "destination": "/de/ki/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/de/contact/:path*",
+      "destination": "/de/kontakt/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/de/cookie-policy/:path*",
+      "destination": "/de/cookie-richtlinie/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/de/douyin-agency/:path*",
+      "destination": "/de/douyin-agentur/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/de/industries/:path*",
+      "destination": "/de/branchen/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/de/insights/:path*",
+      "destination": "/de/analysen/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/de/platforms/:path*",
+      "destination": "/de/plattformen/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/de/pricing/:path*",
+      "destination": "/de/preise/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/de/privacy-policy/:path*",
+      "destination": "/de/datenschutz/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/de/rednote-agency/:path*",
+      "destination": "/de/rednote-agentur/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/de/services/:path*",
+      "destination": "/de/leistungen/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/de/terms-of-service/:path*",
+      "destination": "/de/agb/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/de/thank-you/:path*",
+      "destination": "/de/danke/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/de/wechat-agency/:path*",
+      "destination": "/de/wechat-agentur/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/de/weibo-agency/:path*",
+      "destination": "/de/weibo-agentur/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/de/work/:path*",
+      "destination": "/de/referenzen/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/fr/about/:path*",
+      "destination": "/fr/qui-nous-sommes/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/fr/ai/:path*",
+      "destination": "/fr/ia/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/fr/contact/:path*",
+      "destination": "/fr/nous-contacter/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/fr/cookie-policy/:path*",
+      "destination": "/fr/politique-cookies/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/fr/douyin-agency/:path*",
+      "destination": "/fr/agence-douyin/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/fr/industries/:path*",
+      "destination": "/fr/secteurs/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/fr/insights/:path*",
+      "destination": "/fr/decryptages/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/fr/platforms/:path*",
+      "destination": "/fr/plateformes/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/fr/pricing/:path*",
+      "destination": "/fr/tarifs/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/fr/privacy-policy/:path*",
+      "destination": "/fr/politique-confidentialite/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/fr/rednote-agency/:path*",
+      "destination": "/fr/agence-rednote/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/fr/terms-of-service/:path*",
+      "destination": "/fr/conditions-generales/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/fr/thank-you/:path*",
+      "destination": "/fr/merci/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/fr/tools/:path*",
+      "destination": "/fr/outils/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/fr/wechat-agency/:path*",
+      "destination": "/fr/agence-wechat/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/fr/weibo-agency/:path*",
+      "destination": "/fr/agence-weibo/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/fr/work/:path*",
+      "destination": "/fr/realisations/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/zh/about/:path*",
+      "destination": "/zh/guanyu-women/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/zh/contact/:path*",
+      "destination": "/zh/lianxi-women/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/zh/cookie-policy/:path*",
+      "destination": "/zh/cookie-zhengce/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/zh/douyin-agency/:path*",
+      "destination": "/zh/douyin-daili/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/zh/industries/:path*",
+      "destination": "/zh/hangye/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/zh/insights/:path*",
+      "destination": "/zh/guandian/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/zh/platforms/:path*",
+      "destination": "/zh/pingtai/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/zh/pricing/:path*",
+      "destination": "/zh/jiage/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/zh/privacy-policy/:path*",
+      "destination": "/zh/yinsi-zhengce/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/zh/rednote-agency/:path*",
+      "destination": "/zh/rednote-daili/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/zh/services/:path*",
+      "destination": "/zh/fuwu/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/zh/terms-of-service/:path*",
+      "destination": "/zh/fuwu-tiaokuan/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/zh/thank-you/:path*",
+      "destination": "/zh/ganxie/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/zh/tools/:path*",
+      "destination": "/zh/gongju/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/zh/wechat-agency/:path*",
+      "destination": "/zh/wechat-daili/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/zh/weibo-agency/:path*",
+      "destination": "/zh/weibo-daili/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/zh/work/:path*",
+      "destination": "/zh/anli/:path*",
+      "permanent": true
+    },
+    {
       "source": "/sitemap.xml",
       "destination": "/sitemap-index.xml",
       "permanent": true
@@ -71,24 +511,48 @@
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" },
-        { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" },
-        { "key": "Content-Security-Policy", "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://*.clarity.ms https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://*.clarity.ms https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com; object-src 'none'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://*.clarity.ms https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://*.clarity.ms https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com; object-src 'none'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'"
+        }
       ]
     },
     {
       "source": "/fonts/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/images/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=2592000" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=2592000"
+        }
       ]
     }
   ]

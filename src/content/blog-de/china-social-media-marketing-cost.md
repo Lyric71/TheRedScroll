@@ -29,7 +29,7 @@ des Artikels erklärt, woher jede stammt und was sie ausblendet.
 | WeChat-Moments-Anzeigen, Gebotsverfahren | Ab 1.000 Yuan pro Tag, 30 Yuan CPM | Tencent Ads |
 | Beitrag eines Nano-KOC auf Xiaohongshu | 20 bis 60 Dollar | Long Advisory, 2026 |
 | Kampagne mit einem Mikro-KOL auf Xiaohongshu | 10.000 bis 35.000 Dollar | Long Advisory, 2026 |
-| Agenturhonorar | Veröffentlicht auf [der Preisseite von TheRedScroll](/de/pricing/) | TheRedScroll |
+| Agenturhonorar | Veröffentlicht auf [der Preisseite von TheRedScroll](/de/preise/) | TheRedScroll |
 
 Die Dollarbeträge sind gerundet, umgerechnet zu etwa sieben Yuan je Dollar.
 Maßgeblich ist die Yuan-Zahl. Jede Angabe wurde im September 2026 mit ihrer
@@ -56,7 +56,7 @@ Mindesteinzahlung, ein Startgebot. Verlässlichere Zahlen gibt es im ganzen
 Thema nicht.
 
 **Influencer-Honorare** gehen an Creator. Ein kleiner
-[Key Opinion Consumer (KOC)](/de/insights/kol-vs-koc-china-influencer-guide/)
+[Key Opinion Consumer (KOC)](/de/analysen/kol-vs-koc-china-influencer-guide/)
 kostet je Beitrag vielleicht so viel wie ein Mittagessen. Eine Kampagne mit
 einem mittelgroßen Key Opinion Leader (KOL) auf Xiaohongshu (小红书) kostet
 so viel wie ein Auto.
@@ -78,7 +78,7 @@ wird.
 Zuerst die gute Nachricht. Die Verifizierung kostet weniger, als die meisten
 erwarten, und die Plattformen veröffentlichen die Gebühr.
 
-Ein offizielles [WeChat (微信)](/de/wechat-agency/)-Konto, das ein
+Ein offizielles [WeChat (微信)](/de/wechat-agentur/)-Konto, das ein
 Unternehmen vom chinesischen Festland betreibt, zahlt bei jeder
 Verifizierung eine Prüfgebühr. Der verifizierte Status gilt ein Jahr.
 
@@ -104,7 +104,7 @@ Anzeigen, Shop-Links und dem Daten-Dashboard öffnet.
 > Prüfung verlängert werden. Eine abgelehnte Prüfung wird nicht erstattet.
 > Quelle: Xiaohongshu (小红书), Leitfaden zur Verifizierung von Unternehmenskonten, Plattformdokument, geprüft im September 2026; New Rank (新榜), Oktober 2025. https://a.newrank.cn/trade/news/4199
 
-Nach dem ersten Jahr ist [Douyin (抖音)](/de/douyin-agency/) von den dreien
+Nach dem ersten Jahr ist [Douyin (抖音)](/de/douyin-agentur/) von den dreien
 am günstigsten im Unterhalt.
 
 > Die Blue-V-Unternehmensverifizierung auf Douyin kostet im ersten Jahr 600
@@ -165,7 +165,7 @@ veröffentlichen sie. Zugleich richtet eine unbelegte Schätzung hier den
 größten Schaden an. Deshalb stammt jede Zahl in diesem Abschnitt von der
 Plattform selbst.
 
-[WeChat-Moments-Anzeigen](/de/insights/wechat-advertising-formats-costs/),
+[WeChat-Moments-Anzeigen](/de/analysen/wechat-advertising-formats-costs/),
 das Format, mit dem die meisten ausländischen Marken beginnen, laufen über
 zwei Einkaufsmodelle. Terminierte Buchungen sichern Inventar im Voraus zum
 Listenpreis. Gebotsbuchungen konkurrieren in Echtzeit und beginnen deutlich
@@ -200,7 +200,7 @@ kursierenden Beträge stammen aus Blogs von Wiederverkäufern, nicht von der
 Plattform, und sie unterscheiden sich von Agent zu Agent. Lassen Sie sich
 die Schwelle von dem Agenten, der Ihr Konto eröffnet, schriftlich bestätigen.
 
-[Xiaohongshu-Anzeigen](/de/rednote-agency/) laufen über die eigene Plattform
+[Xiaohongshu-Anzeigen](/de/rednote-agentur/) laufen über die eigene Plattform
 Jiguang (聚光), und für ausländische Werbetreibende hat sich der Weg dorthin
 in diesem Jahr geändert.
 
@@ -345,7 +345,7 @@ Posten. Werbung folgt an dritter Stelle.
 ein Shop. Werbung wird zum größten Posten. Eine Douyin-Kooperation in der
 belegten mittleren Spanne passt in jeden zweiten Monat. Der Content umfasst
 Video in täglicher oder fast täglicher Frequenz. Die Private-Domain-Arbeit
-über [WeCom (企业微信)](/de/insights/what-is-wecom/) beginnt, denn auf diesem
+über [WeCom (企业微信)](/de/analysen/what-is-wecom/) beginnt, denn auf diesem
 Niveau ist Kundenbindung günstiger als ein weiterer Monat Akquise.
 
 Mit dem Wachstum verschiebt sich die Verteilung. Auf der Teststufe geht das
@@ -358,7 +358,7 @@ Posten aus, fragen Sie nach, wofür das Werbebudget eigentlich da ist.
 Alles oben ist öffentlich, belegt und datiert. Die eine Zahl, die dieser
 Artikel nicht nennt, ist die von TheRedScroll selbst. Das ist Absicht.
 
-Die Preisliste steht auf der [Preisseite](/de/pricing/). Sie führt die
+Die Preisliste steht auf der [Preisseite](/de/preise/). Sie führt die
 Monatspakete auf, was jedes enthält und was Content je Stück kostet. Das
 Werbebudget wird getrennt zum Selbstkostenpreis abgerechnet, ohne Aufschlag.
 Verträge laufen mindestens sechs Monate, so lange wie ein erster echter
@@ -371,7 +371,7 @@ Monatsbetrag. Die Preisliste ist der kürzeste Weg von „Was kostet das?“ zu
 einer Antwort.
 
 Noch nicht in China? Lesen Sie die Preisseite, dann die
-[Leistungsseite](/de/services/), um zu sehen, was jede Arbeitslinie umfasst.
+[Leistungsseite](/de/leistungen/), um zu sehen, was jede Arbeitslinie umfasst.
 Schon im Markt? Wenn das Angebot, das Sie gerade bezahlen, die fünf Posten
 oben nicht trennt, ist das der erste Punkt, den Sie ändern sollten.
 

@@ -48,13 +48,13 @@ const contentRoot = fileURLToPath(new URL('./src/content', import.meta.url));
 const buildDate = new Date();
 
 /** Map a URL path to the content-collection markdown file behind it, if any.
- *  Mirrors the route trees: /insights/<slug>/ → blog, /fr/insights/ → blog-fr,
- *  /zh/insights/ → blog-zh, /de/insights/ → blog-de, /es/analisis/ → blog-es. */
+ *  Mirrors the route trees: /insights/<slug>/ → blog, /fr/decryptages/ → blog-fr,
+ *  /zh/guandian/ → blog-zh, /de/analysen/ → blog-de, /es/analisis/ → blog-es. */
 const blogRoutePatterns = [
   { re: /^\/insights\/([^/]+)\/?$/, dir: 'blog' },
-  { re: /^\/fr\/insights\/([^/]+)\/?$/, dir: 'blog-fr' },
-  { re: /^\/zh\/insights\/([^/]+)\/?$/, dir: 'blog-zh' },
-  { re: /^\/de\/insights\/([^/]+)\/?$/, dir: 'blog-de' },
+  { re: /^\/fr\/decryptages\/([^/]+)\/?$/, dir: 'blog-fr' },
+  { re: /^\/zh\/guandian\/([^/]+)\/?$/, dir: 'blog-zh' },
+  { re: /^\/de\/analysen\/([^/]+)\/?$/, dir: 'blog-de' },
   { re: /^\/es\/analisis\/([^/]+)\/?$/, dir: 'blog-es' },
   { re: /^\/industries\/([^/]+)\/?$/, dir: 'industries' },
   { re: /^\/fr\/secteurs\/([^/]+)\/?$/, dir: 'industries-fr' },
@@ -131,10 +131,10 @@ export default defineConfig({
         if (!sitemapLocaleFilter(page)) return false;
         const lowValuePaths = [
           '/thank-you/', '/cookie-policy/', '/terms-of-service/', '/privacy-policy/',
-          '/fr/thank-you/', '/fr/cookie-policy/', '/fr/terms-of-service/', '/fr/privacy-policy/',
-          '/zh/thank-you/', '/zh/cookie-policy/', '/zh/terms-of-service/', '/zh/privacy-policy/',
+          '/fr/merci/', '/fr/politique-cookies/', '/fr/conditions-generales/', '/fr/politique-confidentialite/',
+          '/zh/ganxie/', '/zh/cookie-zhengce/', '/zh/fuwu-tiaokuan/', '/zh/yinsi-zhengce/',
           '/es/gracias/', '/es/politica-cookies/', '/es/terminos-servicio/', '/es/politica-privacidad/',
-          '/de/thank-you/', '/de/cookie-policy/', '/de/terms-of-service/', '/de/privacy-policy/',
+          '/de/danke/', '/de/cookie-richtlinie/', '/de/agb/', '/de/datenschutz/',
         ];
         return !lowValuePaths.some((path) => page.endsWith(path));
       },

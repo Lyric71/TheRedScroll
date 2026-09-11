@@ -106,7 +106,7 @@ featuredImage: "/images/blog/sell-on-wechat.webp"
 > 来源：九枝兰 / Jiuzhilan
 
 我们把这套体系按位置、按形式、连同真实数字都拆开讲过，全收在那篇
-[微信广告形式与费用指南](/zh/insights/wechat-advertising-formats-costs/)里。动手花钱之前，先从那里看起。
+[微信广告形式与费用指南](/zh/guandian/wechat-advertising-formats-costs/)里。动手花钱之前，先从那里看起。
 
 达人这一头，微信靠的是信任，不是花架子。Key Opinion Leader（KOL）那些大号，扛起的是触达。一个受人尊重的公众号，认真写一篇讲你产品的文章，分量极重，因为读者是自己选择留在那里的。更小的声音同样算数。Key Opinion Consumer（KOC），也就是有真实追随者的普通消费者，把推荐传进社群和朋友圈，而那正是硬广永远够不到的地方。有一条规矩通吃：付钱之前先看真实互动，因为粉丝数会注水，一个漂亮的大数字底下，可能是一群死粉。
 
@@ -125,7 +125,7 @@ featuredImage: "/images/blog/sell-on-wechat.webp"
 > 来源：群应用 / WeScrm
 
 搭一次，它就成了你手里最便宜的销售渠道，在广告预算烧尽很久之后，仍在后台悄悄运转。私域流量如何运转、如何搭建，我们在那篇
-[企业微信完整解读](/zh/insights/what-is-wecom/)里讲得很透。若留存是你的重点，下一篇就读它。
+[企业微信完整解读](/zh/guandian/what-is-wecom/)里讲得很透。若留存是你的重点，下一篇就读它。
 
 ## 品牌容易栽在哪儿
 

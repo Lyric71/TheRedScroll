@@ -46,7 +46,7 @@ renouvellement annuel.
 
 Le centre d’aide de Tencent détaille les pièces qu’une entité étrangère doit
 produire pour faire certifier un compte officiel
-[WeChat (微信)](/fr/platforms/wechat/).
+[WeChat (微信)](/fr/plateformes/wechat/).
 
 > Pour certifier un compte WeChat, une entité étrangère doit fournir son
 > certificat d’immatriculation ou sa licence d’exploitation, un scan couleur
@@ -57,7 +57,7 @@ produire pour faire certifier un compte officiel
 > d’une marque déposée.
 > Source : service client Tencent (腾讯客服), pièces à fournir pour la certification d’une entité étrangère, consulté en septembre 2026. https://kf.qq.com/faq/190723Mjey67190723ey6Fbi.html
 
-[Xiaohongshu (小红书)](/fr/platforms/rednote/) réclame un dossier comparable
+[Xiaohongshu (小红书)](/fr/plateformes/rednote/) réclame un dossier comparable
 et y ajoute une exigence sur les traductions.
 
 > Les comptes entreprise Xiaohongshu sont ouverts aux sociétés établies hors
@@ -68,7 +68,7 @@ et y ajoute une exigence sur les traductions.
 > tampon.
 > Source : guide de certification des comptes entreprise Xiaohongshu (小红书), document de la plateforme, consulté en septembre 2026. https://fe-video-qc.xhscdn.com/picasso-editor/7072d509ee7370545a056b6f9030a926e8879dca.pdf
 
-[Douyin (抖音)](/fr/platforms/douyin/) échappe à la règle. Ses pages d’aide
+[Douyin (抖音)](/fr/plateformes/douyin/) échappe à la règle. Ses pages d’aide
 réservent le compte entreprise aux sociétés implantées en Chine.
 
 > La FAQ de Douyin décrit le compte entreprise comme un compte que les
@@ -212,7 +212,7 @@ Deux écueils reviennent chez les équipes de contenu occidentales. L’image
 d’abord : trop léchée, la création mondiale se fait brider sur Xiaohongshu,
 là où une photo prise au téléphone dans un décor chinois réel passe sans
 encombre. Notre guide du
-[marketing Xiaohongshu pour les marques étrangères](/fr/insights/xiaohongshu-marketing-foreign-brands/)
+[marketing Xiaohongshu pour les marques étrangères](/fr/decryptages/xiaohongshu-marketing-foreign-brands/)
 montre à quoi ressemble alors le tableau de bord.
 
 Les validations ensuite. Un contenu soumis au siège, dans un autre fuseau,
@@ -250,7 +250,7 @@ Deux chantiers s’ouvrent alors. Le seeding sur Xiaohongshu (小红书) d’abo
 20 à 40 consommateurs prescripteurs (KOC), des utilisateurs ordinaires
 suivis par quelques milliers de personnes, publient leurs propres notes sur
 le produit via la place de marché des créateurs,
-[Pugongying (蒲公英)](/fr/services/influencer-marketing/) ; une recherche
+[Pugongying (蒲公英)](/fr/services/marketing-influence/) ; une recherche
 dans la catégorie fait alors remonter de vraies personnes qui s’en servent.
 Un test payant ensuite, adossé aux deux ou trois notes déjà éprouvées.
 
@@ -265,9 +265,9 @@ L’ouverture de compte par l’agent relève donc du plan de la semaine 9, et l
 dépôt qu’il fixe relève de l’achat d’espace : facturé au coût réel, facture
 de la plateforme à l’appui. Ce que coûtent le seeding et le test, notre
 guide sur le
-[coût du marketing sur les réseaux sociaux chinois en 2026](/fr/insights/china-social-media-marketing-cost/)
+[coût du marketing sur les réseaux sociaux chinois en 2026](/fr/decryptages/china-social-media-marketing-cost/)
 le détaille. La grille tarifaire de TheRedScroll figure sur sa
-[page tarifs](/fr/pricing/).
+[page tarifs](/fr/tarifs/).
 
 Le premier prospect surgit en général dans cette fenêtre. Quelqu’un a
 cherché la catégorie, lu une note de seeding puis une note de marque, puis
@@ -311,7 +311,7 @@ contenu, sauve la date de la semaine 7.
 
 Aucun de ces trois retards ne se produit en Chine : tous se produisent au
 siège. Notre page de service
-[entrée sur le marché chinois](/fr/services/market-entry/) explique comment
+[entrée sur le marché chinois](/fr/services/entree-marche/) explique comment
 la question de l’entité et les formalités sont prises en charge, si vous
 préférez ne pas les porter vous-même.
 

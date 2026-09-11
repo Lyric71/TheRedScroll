@@ -61,8 +61,8 @@ faqs:
 这就改变了算账方式。一篇 campaign 笔记的有效期大概三天。一篇能在「敏感肌防晒」
 这个词下排上去的笔记，可以带一年的量，因为下一个消费者还会在同一个搜索框里敲
 同样的字。所以预算要围着搜索词做，不是围着 campaign 排期做。我们的
-[RedNote 代理服务页](/zh/rednote-agency/)讲平台怎么落地，
-[面向海外品牌的小红书营销指南](/zh/insights/xiaohongshu-marketing-foreign-brands/)
+[RedNote 代理服务页](/zh/rednote-daili/)讲平台怎么落地，
+[面向海外品牌的小红书营销指南](/zh/guandian/xiaohongshu-marketing-foreign-brands/)
 讲底层的账号搭建。
 
 ## 美妆营销代理在中国发第一篇内容前要核什么
@@ -167,7 +167,7 @@ faqs:
 > 百万粉以下的 micro KOL 合作，每次 campaign 约 1 万到 3.5 万美元。
 > Source: Long Advisory, June 2026. https://longadvisory.eu/en/kol-vs-koc-marketing-in-china-which-delivers-better-roi/
 
-我们的[达人营销服务页](/zh/services/influencer-marketing/)写清楚了 brief、报备
+我们的[达人营销服务页](/zh/fuwu/daren-yingxiao/)写清楚了 brief、报备
 和素材授权怎么处理。
 
 ## 抖音直播带货：什么时候划算，什么时候不划算
@@ -193,7 +193,7 @@ faqs:
 
 只有一种情况值得先上抖音：镜头表现力强、观众九十秒内就能决定的彩妆，价格不高。
 这类产品在还没有任何搜索沉淀时就能卖动。护肤几乎从不这样。我们的
-[抖音平台页](/zh/platforms/douyin/)对这个形式讲得更细。
+[抖音平台页](/zh/pingtai/douyin/)对这个形式讲得更细。
 
 ## 一个美妆服务包包含什么，多少钱
 
@@ -207,18 +207,18 @@ TheRedScroll 采用固定范围、固定价格。广告投放费用单独结算�
 个月，因为美妆的搜索覆盖不可能在八周内建起来。
 
 一个美妆项目通常会用到四项服务。
-[策略、campaign 与数据分析](/zh/services/strategy-campaigns/)负责搜索词研究。
-[内容生产](/zh/services/content-production/)负责笔记。
-[达人营销](/zh/services/influencer-marketing/)负责已报备的创作者合作。
+[策略、campaign 与数据分析](/zh/fuwu/celue-huodong/)负责搜索词研究。
+[内容生产](/zh/fuwu/neirong-zhizuo/)负责笔记。
+[达人营销](/zh/fuwu/daren-yingxiao/)负责已报备的创作者合作。
 备案和境内责任人还没落定时，会用到
-[中国市场进入](/zh/services/market-entry/)。
-[广告投放](/zh/services/advertising/)排在后面，等到有值得放大的东西再上。
+[中国市场进入](/zh/fuwu/shichang-jinru/)。
+[广告投放](/zh/fuwu/guanggao/)排在后面，等到有值得放大的东西再上。
 
 有三件事对美妆预算的影响比服务费本身还大：创作者报价，它跟着你决定要占的词数
 走；功效检测，它是一张实验室发票加一段周期，不是一条营销预算；还有备案材料的
 翻译，慢、枯燥，而且总是被低估。
 
-完整价目表在我们的[价格页](/zh/pricing/)，每个服务包和每个单项报价都公开。
+完整价目表在我们的[价格页](/zh/jiage/)，每个服务包和每个单项报价都公开。
 2026 年 4 月我们扫了一遍市场，这在当时仍然少见。
 
 > 分析的 37 家代理中，0 家提供固定价格服务包。

@@ -171,7 +171,7 @@ emplacements premium. Un achat programmé sur les Moments, par exemple, débute 
 > Source : 九枝兰 / Jiuzhilan
 
 Nous avons tout détaillé, format par format, chiffres réels à l'appui, dans notre
-[guide des formats et coûts de la publicité WeChat](/fr/insights/wechat-advertising-formats-costs/).
+[guide des formats et coûts de la publicité WeChat](/fr/decryptages/wechat-advertising-formats-costs/).
 Commencez par là avant la moindre dépense.
 
 Côté créateurs, WeChat carbure à la confiance plus qu'à l'esbroufe. Les Key Opinion
@@ -209,7 +209,7 @@ plupart des grandes entreprises chinoises fonctionnent déjà ainsi.
 Une fois en place, c'est le canal de vente le moins cher que vous possédiez, à l'œuvre
 en silence bien après l'épuisement du budget publicitaire. Le fonctionnement du domaine
 privé, et la façon de le bâtir, nous les décortiquons dans notre
-[dossier complet sur WeCom](/fr/insights/what-is-wecom/). Si la fidélisation est votre
+[dossier complet sur WeCom](/fr/decryptages/what-is-wecom/). Si la fidélisation est votre
 priorité, enchaînez avec celui-là.
 
 ## Là où les marques se trompent

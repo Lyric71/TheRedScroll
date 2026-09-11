@@ -1,4 +1,5 @@
 ---
+import { localizedPath } from '../../i18n/config';
 import Container from '../ui/Container.astro';
 import Button from '../ui/Button.astro';
 
@@ -25,7 +26,7 @@ const { heading, steps, backgroundImage, crossLinks = [], lang = 'en' } = Astro.
 const overline = lang === 'zh' ? '合作流程' : lang === 'fr' ? 'Pour commencer' : lang === 'es' ? 'Cómo empezamos' : lang === 'de' ? 'So legen wir los' : 'Getting started';
 const bookCall = lang === 'zh' ? '预约通话' : lang === 'fr' ? 'Prendre rendez-vous' : lang === 'es' ? 'Agendar una llamada' : lang === 'de' ? 'Gespräch vereinbaren' : 'Book a call';
 const seeAlso = lang === 'zh' ? '也可以看看' : lang === 'fr' ? 'À voir aussi' : lang === 'es' ? 'Ver también' : lang === 'de' ? 'Auch interessant' : 'See also';
-const contactHref = lang === 'zh' ? '/zh/contact' : lang === 'fr' ? '/fr/contact' : lang === 'es' ? '/es/contacto' : lang === 'de' ? '/de/contact' : '/contact';
+const contactHref = localizedPath('/contact', lang);
 ---
 
 <section class="relative mt-[96px] max-[640px]:mt-[64px] pt-[80px] pb-[80px] max-[1024px]:pt-[64px] max-[1024px]:pb-[64px] max-[640px]:pt-[48px] max-[640px]:pb-[48px] overflow-hidden">

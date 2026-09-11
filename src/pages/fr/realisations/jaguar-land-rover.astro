@@ -1,0 +1,302 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+
+const services = ['Campagne', 'eCommerce', 'Influenceur / KOL', 'Livestream', 'Média', 'Social'];
+const platforms = ['Douyin', 'RedNote', 'WeChat'];
+---
+
+<PageLayout
+  title="Jaguar Land Rover : étude de cas social media en Chine | TheRedScroll"
+  description="Comment Jaguar Land Rover a touché les jeunes consommateurs chinois sur Douyin, RedNote et WeChat. Contenu social, campagnes KOL et résultats UGC."
+  ogImage="/images/clients/Jaguar/jaguar-land-rover-og.jpg"
+  lang="fr"
+>
+
+  <!-- Hero -->
+  <section class="relative w-full min-h-[600px] max-[640px]:min-h-[480px] overflow-hidden">
+    <div
+      class="absolute inset-0 bg-cover bg-center bg-fixed max-[640px]:bg-scroll"
+      style="background-image: url('/images/clients/Jaguar/Jaguar-Land-Rover.avif')"
+      aria-hidden="true"
+    ></div>
+    <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.78]" aria-hidden="true"></div>
+
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[1024px]:pt-[128px] max-[1024px]:pb-[72px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+        Étude de cas
+      </p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[1024px]:text-[40px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        Jaguar Land Rover : capter la nouvelle clientèle chinoise du luxe sur les réseaux sociaux.
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        Jaguar Land Rover voulait atteindre les jeunes acheteurs chinois. Nous avons bâti une stratégie sociale sur Douyin, RedNote et WeChat qui a déplacé la perception de la marque.
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/fr/nous-contacter/">Prendre rendez-vous</Button>
+        <Button variant="secondary-dark" href="#case-study">Lire l’étude de cas</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meta bar -->
+  <section class="border-b border-[rgba(0,0,0,0.08)]">
+    <Container>
+      <div class="flex flex-wrap gap-[32px] max-[640px]:gap-[20px] py-[24px]">
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Le client</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">Jaguar Land Rover</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Secteur</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">Automobile / Luxe</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Services</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {services.map((s) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{s}</span>
+            ))}
+          </div>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">Plateformes</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {platforms.map((p) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{p}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Case study content -->
+  <section id="case-study" class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <!-- Le client -->
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="Le client">Plus d’un siècle de design britannique. En Chine, l’enjeu portait sur les générations.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Jaguar Land Rover fabrique certains des véhicules les plus identifiables au monde : SUV de luxe, voitures de sport, plus d’un siècle de design britannique. Une marque sur laquelle chacun a déjà un avis.
+            </p>
+            <p>
+              En Chine, l’enjeu portait sur les générations. JLR jouissait d’une notoriété solide auprès des acheteurs installés. Les jeunes consommateurs chinois, ceux qui formeront le cœur du marché du luxe automobile d’ici cinq à dix ans, ne s’y intéressaient pas. Ni sur les réseaux sociaux, ni ailleurs.
+            </p>
+            <p>
+              JLR devait s’inviter là où cette audience évolue. Le contenu devait épouser ses usages.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- Social content — full width -->
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <img
+      src="/images/clients/Jaguar/100-JLR-1.webp"
+      alt="Contenu social Jaguar Land Rover pour les plateformes chinoises, dont la série centenaire Range Rover et le calendrier Jaguar héritage"
+      class="w-full"
+      loading="lazy"
+      decoding="async"
+    />
+    <Container>
+      <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+        Contenu social produit pour l’audience chinoise de JLR. Série du centenaire Range Rover et calendrier héritage Jaguar.
+      </p>
+    </Container>
+  </section>
+
+  <!-- Case study content continued -->
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <!-- Notre intervention -->
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="Notre intervention">Installer Jaguar Land Rover dans le fil des jeunes amateurs de luxe.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Nous avons déployé un dispositif de contenu social sur Douyin, RedNote et WeChat. Une seule ligne directrice : installer Jaguar Land Rover dans le fil des jeunes amateurs de luxe en Chine.
+            </p>
+          </div>
+        </div>
+
+        <!-- Visual content -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Le visuel d’abord</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Vidéos courtes et séries photo pour valoriser le design et l’ingénierie JLR. Des contenus calibrés sur les codes de Douyin et RedNote : cinématographiques, rapides, verticaux.
+            </p>
+            <p>
+              L’ensemble tourné et monté en Chine, pour le marché chinois. Aucune adaptation d’une campagne mondiale : du contenu pensé sur place, pour le public local.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- Hero video — full width single row -->
+  <section class="mb-[32px] max-[640px]:mb-[24px]">
+    <video
+      src="/images/clients/Jaguar/JLR-Video-1.mp4"
+      class="w-full"
+      muted
+      loop
+      playsinline
+      autoplay
+    ></video>
+  </section>
+
+  <!-- Douyin video content — full width -->
+  <section class="mb-[48px] max-[640px]:mb-[32px]">
+    <div class="grid grid-cols-3 max-[640px]:grid-cols-1 gap-[16px] px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px]">
+      <video
+        src="/images/clients/Jaguar/JLR-Video-2.mp4"
+        class="w-full rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        muted
+        loop
+        playsinline
+        autoplay
+      ></video>
+      <video
+        src="/images/clients/Jaguar/JLR-Video-3.mp4"
+        class="w-full rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        muted
+        loop
+        playsinline
+        autoplay
+      ></video>
+      <video
+        src="/images/clients/Jaguar/JLR-Video-4.mp4"
+        class="w-full rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        muted
+        loop
+        playsinline
+        autoplay
+      ></video>
+    </div>
+    <Container>
+      <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+        Contenu Douyin : cinématographique, vertical, produit en Chine pour la Chine.
+      </p>
+    </Container>
+  </section>
+
+  <!-- Case study content continued -->
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <!-- Brand storytelling -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Un récit de marque qui a trouvé son public</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Nous avons bâti un contenu narratif autour de l’innovation, de l’aventure et de ce que le luxe contemporain signifie à vingt ou trente ans. Mini-documentaires, coulisses de la fabrication, contenus lifestyle reliant les véhicules à des expériences tangibles.
+            </p>
+            <p>
+              Aucune volonté de rajeunir l’image de JLR. La marque épouse déjà la vision qu’une nouvelle génération se fait de la conduite. Il fallait simplement la rendre visible.
+            </p>
+          </div>
+        </div>
+
+        <!-- UGC -->
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">Le contenu utilisateur a porté l’essentiel</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              Nous avons lancé des défis hashtag et des concours pour inviter les véritables propriétaires et passionnés à produire leurs propres contenus JLR. Roadtrips, trajets urbains, escapades du week-end. Les meilleures publications n’étaient pas les plus léchées : les moments authentiques, un peu bruts, manifestement sincères.
+            </p>
+            <p>
+              Ce type de contenu organique surpasse systématiquement ce qu’un compte de marque peut produire en propre.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- Douyin screenshots — full width -->
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[16px] px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px]">
+      <img
+        src="/images/clients/Jaguar/JLR-3.webp"
+        alt="Vidéos courtes Douyin de Jaguar Land Rover montrant les véhicules en action"
+        class="w-full rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src="/images/clients/Jaguar/JLR-4.webp"
+        alt="Contenu Douyin Jaguar Land Rover avec Defender, Discovery et modèles héritage"
+        class="w-full rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <Container>
+      <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+        Vidéos courtes Douyin : présentations produits, contenus lifestyle et UGC de vrais propriétaires.
+      </p>
+    </Container>
+  </section>
+
+  <!-- Case study content continued -->
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <!-- Ground team -->
+        <div class="mb-[64px] max-[640px]:mb-[48px] bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[32px] max-[640px]:p-[20px]">
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            Notre équipe a tout tenu depuis la Chine : production de contenu, animation de communauté, coordination des KOL, arbitrages hebdomadaires sur ce qui partait en ligne. Des locuteurs natifs qui décident sur le terrain.
+          </p>
+        </div>
+
+        <!-- Les résultats -->
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="Les résultats">D’une marque reconnue à une marque pertinente auprès d’une nouvelle audience.</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              L’engagement progresse sur les trois plateformes. La croissance des abonnés s’accélère, Douyin et RedNote en tête. Les campagnes UGC entretiennent un flux continu de contenu organique, signé par de jeunes consommateurs qui parlent désormais d’eux-mêmes de Jaguar Land Rover.
+            </p>
+            <p>
+              La marque passe de « reconnue » à « pertinente » auprès d’un public entièrement nouveau. Au-delà des compteurs d’abonnés, c’est la bascule qui transforme des prospects en acheteurs futurs.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- CTA -->
+  <section class="pb-[96px] max-[640px]:pb-[64px]">
+    <Container>
+      <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[48px] max-[1024px]:p-[32px] text-center">
+        <SectionHeading overline="À votre tour">Vous voulez faire grandir votre marque auprès de la prochaine génération chinoise ?</SectionHeading>
+        <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)] max-w-[500px] mx-auto mb-[32px]">
+          Périmètre défini. Prix fixe. Équipe sur place.
+        </p>
+        <Button variant="primary" href="/fr/nous-contacter/">Prendre rendez-vous</Button>
+      </div>
+    </Container>
+  </section>
+
+</PageLayout>

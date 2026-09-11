@@ -72,9 +72,9 @@ wert. Eine Note, die auf Chinesisch für "Sonnenschutz für empfindliche Haut"
 rankt, trägt ein Jahr lang, weil die nächste Käuferin dieselben Wörter in
 dasselbe Feld tippt. Bauen Sie das Budget also um Suchbegriffe herum auf, nicht
 um Kampagnentermine. Unsere
-[RedNote-Agenturseite](/de/rednote-agency/) behandelt die Plattform in der
+[RedNote-Agenturseite](/de/rednote-agentur/) behandelt die Plattform in der
 Praxis, und unser Leitfaden zum
-[Xiaohongshu-Marketing für ausländische Marken](/de/insights/xiaohongshu-marketing-foreign-brands/)
+[Xiaohongshu-Marketing für ausländische Marken](/de/analysen/xiaohongshu-marketing-foreign-brands/)
 erklärt den Kontoaufbau darunter.
 
 ## Was eine Beauty-Agentur in China vor dem ersten Beitrag prüft
@@ -205,7 +205,7 @@ Creator-Honorare bewegen die Summe stärker als das Volumen.
 > bei etwa 10.000 bis 35.000 US-Dollar je Kampagne liegt.
 > Source: Long Advisory, June 2026. https://longadvisory.eu/en/kol-vs-koc-marketing-in-china-which-delivers-better-roi/
 
-Unsere [Seite zum Influencer-Marketing](/de/services/influencer-marketing/)
+Unsere [Seite zum Influencer-Marketing](/de/leistungen/influencer-marketing/)
 beschreibt, wie Briefings, Kennzeichnung und Nutzungsrechte gehandhabt werden.
 
 ## Douyin Live Commerce: wann es sich rechnet und wann nicht
@@ -241,7 +241,7 @@ Ein Fall rechtfertigt es, zuerst auf Douyin zu gehen: dekorative Kosmetik, die
 sich vor der Kamera gut zeigt, zu einem Preis, über den eine Zuschauerin in
 neunzig Sekunden entscheidet. Solche Produkte verkaufen sich, bevor sie je eine
 Suchspur aufgebaut haben. Hautpflege verhält sich fast nie so. Unsere
-[Douyin-Plattformseite](/de/platforms/douyin/) geht genauer auf das Format ein.
+[Douyin-Plattformseite](/de/plattformen/douyin/) geht genauer auf das Format ein.
 
 ## Was ein Beauty-Paket enthält und was es kostet
 
@@ -257,13 +257,13 @@ getrennt und ohne Aufschlag abgerechnet. Verträge laufen mindestens sechs
 Monate, weil sich Suchabdeckung in Beauty nicht in acht Wochen aufbaut.
 
 Ein Beauty-Umfang greift meist auf vier Leistungen zu.
-[Strategie, Kampagnen und Analyse](/de/services/strategy-campaigns/) für die
-Begriffsrecherche. [Content-Produktion](/de/services/content-production/) für
-die Notes. [Influencer-Marketing](/de/services/influencer-marketing/) für
+[Strategie, Kampagnen und Analyse](/de/leistungen/strategie-kampagnen/) für die
+Begriffsrecherche. [Content-Produktion](/de/leistungen/content-produktion/) für
+die Notes. [Influencer-Marketing](/de/leistungen/influencer-marketing/) für
 gekennzeichnete Creator-Arbeit.
-[Markteintritt China](/de/services/market-entry/), solange Anmeldung und
+[Markteintritt China](/de/leistungen/markteintritt/), solange Anmeldung und
 inländischer Verantwortlicher offen sind.
-[Werbung](/de/services/advertising/) kommt später, sobald es etwas zu
+[Werbung](/de/leistungen/werbung/) kommt später, sobald es etwas zu
 verstärken gibt.
 
 Drei Posten bewegen ein Beauty-Budget stärker als das Honorar. Creator-Gagen,
@@ -273,7 +273,7 @@ Marketingposition. Und die Übersetzung des Anmeldedossiers, die langsam,
 mühsam und stets unterschätzt ist.
 
 Die vollständige Preisliste steht auf unserer
-[Preisseite](/de/pricing/), jedes Paket und jeder Einzelpreis veröffentlicht.
+[Preisseite](/de/preise/), jedes Paket und jeder Einzelpreis veröffentlicht.
 Als wir den Markt im April 2026 geprüft haben, war das noch ungewöhnlich.
 
 > 0 von 37 untersuchten Agenturen bieten Pakete zum Festpreis an.

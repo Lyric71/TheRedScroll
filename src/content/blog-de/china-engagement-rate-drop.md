@@ -263,15 +263,15 @@ gehört statt gemietet zu sein.
 
 Wie diese Private-Domain-Ebene arbeitet und warum ihre Zahlen halten, wenn
 öffentliche Reichweite teuer wird, steht in unserem Beitrag zu
-[WeCom](/de/insights/what-is-wecom/).
+[WeCom](/de/analysen/what-is-wecom/).
 
 Bleibt die Frage, was Sie dagegen veröffentlichen. Die beantwortet unser Beitrag
-zum [Content-Mix in China](/de/insights/content-mix-china/).
+zum [Content-Mix in China](/de/analysen/content-mix-china/).
 
 Nichts davon verlangt mehr Content, sondern nur, das bereits Veröffentlichte in
 der richtigen Spalte zu bewerten.
 
-Aus demselben Unterschied heraus nennt unsere Seite [Preise](/de/pricing/) einen
+Aus demselben Unterschied heraus nennt unsere Seite [Preise](/de/preise/) einen
 festen Leistungsumfang und einen festen Preis, veröffentlicht, bevor Sie mit
 jemandem sprechen.
 

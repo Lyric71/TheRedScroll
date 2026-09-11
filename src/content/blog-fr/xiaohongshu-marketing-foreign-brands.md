@@ -12,7 +12,7 @@ featured: false
 featuredImage: "/images/blog/xiaohongshu-marketing-foreign-brands.webp"
 ---
 
-*Sur le marketing [Xiaohongshu (小红书)](/fr/platforms/rednote/) des marques
+*Sur le marketing [Xiaohongshu (小红书)](/fr/plateformes/rednote/) des marques
 étrangères, presque tout s’écrit depuis l’extérieur. Ce guide part des comptes
 que nous tenons pour des clients étrangers : ce que dit le tableau de bord, ce
 qui se fait brider, ce à quoi ressemble vraiment le premier mois.*
@@ -151,7 +151,7 @@ C’est la section qui arbitre les budgets. Autant la donner sans détour.
 **Vous pouvez** ouvrir et faire certifier un compte entreprise avec les
 documents d’immatriculation de votre pays. Publier des notes, répondre aux
 commentaires, monter une
-[campagne de créateurs via Pugongying (蒲公英)](/fr/services/influencer-marketing/),
+[campagne de créateurs via Pugongying (蒲公英)](/fr/services/marketing-influence/),
 consulter l’intégralité du tableau de bord : rien de tout cela ne pose
 problème.
 
@@ -341,7 +341,7 @@ facture de la plateforme à l’appui.
 
 Le contenu domine les trois premiers mois. Une douzaine de notes par mois en
 chinois, tournées de manière à paraître faites par une vraie personne, relève
-d’un [travail de production](/fr/services/content-production/). Le seeding au
+d’un [travail de production](/fr/services/production-de-contenu/). Le seeding au
 niveau KOC coûte peu à la publication et se paie au volume. Le niveau KOL,
 plus haut, reste chez la plupart de nos clients une décision de deuxième
 année.
@@ -351,13 +351,13 @@ année.
 > Source : Long Advisory, mai 2026. https://longadvisory.eu/en/how-much-influencers-cost-in-china-kol-pricing-explained/
 
 Reste le coût humain, celui qu’aucun guide concurrent n’imprime. TheRedScroll
-publie sa grille tarifaire complète sur sa [page tarifs](/fr/pricing/) :
+publie sa grille tarifaire complète sur sa [page tarifs](/fr/tarifs/) :
 périmètre fixe, budget média facturé à part et sans majoration. Notre article
 de référence,
-[ce que coûte le marketing sur les réseaux sociaux chinois en 2026](/fr/insights/china-social-media-marketing-cost/),
+[ce que coûte le marketing sur les réseaux sociaux chinois en 2026](/fr/decryptages/china-social-media-marketing-cost/),
 reprend les cinq postes toutes plateformes confondues, pour qui veut la vue
 d’ensemble. Sur la plateforme elle-même, notre
-[page agence RedNote](/fr/rednote-agency/) détaille ce que couvre un
+[page agence RedNote](/fr/agence-rednote/) détaille ce que couvre un
 accompagnement mensuel.
 
 L’article de la semaine prochaine expliquera comment l’algorithme de

@@ -1,0 +1,255 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Container from '../../../components/ui/Container.astro';
+import SectionBar from '../../../components/ui/SectionBar.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import Button from '../../../components/ui/Button.astro';
+
+const services = ['Campaign', '内容制作', 'KOL 项目', '社媒'];
+const platforms = ['小红书', '抖音'];
+
+const stats = [
+  { value: '387万', label: '抖音曝光（目标 100 万）' },
+  { value: '75万', label: '小红书曝光（目标 30 万）' },
+  { value: '3.3%', label: 'ROI，高于行业基准' },
+  { value: '4倍', label: '抖音目标超额完成' },
+];
+---
+
+<PageLayout
+  title="AGE 20's小奶砖中国战役 | TheRedScroll"
+  description="看 AGE 20's 怎么在中国推出“小奶砖”气垫粉底：抖音曝光 387 万，小红书 75 万，产品昵称在用户里自发传开。"
+  ogImage="/images/clients/Age20/Age20-Picture1-scaled.jpg"
+  lang="zh"
+>
+
+  <!-- Hero -->
+  <section class="relative w-full min-h-[600px] max-[640px]:min-h-[480px] overflow-hidden">
+    <div
+      class="absolute inset-0 bg-cover bg-center bg-fixed max-[640px]:bg-scroll"
+      style="background-image: url('/images/clients/Age20/Age20-Picture1-scaled.jpg')"
+      aria-hidden="true"
+    ></div>
+    <div class="absolute inset-0 bg-[#1A1A1A] opacity-[0.72]" aria-hidden="true"></div>
+
+    <div class="relative z-[1] max-w-[800px] mx-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] pt-[160px] pb-[96px] max-[1024px]:pt-[128px] max-[1024px]:pb-[72px] max-[640px]:pt-[112px] max-[640px]:pb-[56px] text-center">
+      <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[#CC3333] mb-[16px]">
+        客户案例
+      </p>
+      <h1 class="text-[#FFFFFF] text-[48px] max-[1024px]:text-[40px] max-[640px]:text-[28px] font-medium leading-[1.15] mb-[16px]">
+        AGE 20's：小奶砖中国战役。
+      </h1>
+      <p class="text-[rgba(255,255,255,0.7)] text-[18px] max-[640px]:text-[16px] font-normal leading-[1.5] mb-[40px]">
+        AGE 20's 要在全球最卷的美妆市场之一推一款粉底。“小奶砖”这场战役，在抖音上直接超目标四倍。
+      </p>
+      <div class="flex items-center justify-center gap-[12px] flex-wrap">
+        <Button variant="primary" href="/zh/lianxi-women/">预约通话</Button>
+        <Button variant="secondary-dark" href="#case-study">看完整案例</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meta bar -->
+  <section class="border-b border-[rgba(0,0,0,0.08)]">
+    <Container>
+      <div class="flex flex-wrap gap-[32px] max-[640px]:gap-[20px] py-[24px]">
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">客户背景</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">AGE 20's</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">行业</p>
+          <p class="text-[14px] font-medium leading-[1.4] text-[var(--color-ink)]">美妆 / 化妆品</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">服务内容</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {services.map((s) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{s}</span>
+            ))}
+          </div>
+        </div>
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[4px]">平台</p>
+          <div class="flex flex-wrap gap-[6px]">
+            {platforms.map((p) => (
+              <span class="text-[12px] font-normal leading-[1.4] text-[var(--color-stone)] bg-[var(--color-rice-paper)] px-[10px] py-[4px] rounded-[4px]">{p}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Case study content -->
+  <section id="case-study" class="mt-[96px] max-[640px]:mt-[64px]">
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <!-- 客户背景 -->
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="客户背景">韩国美妆品牌。饱和市场。只有一次机会把定位立住。</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              AGE 20's 是一个面向职场女性的韩国专业级美妆品牌。这回在国内推的是一款新气垫粉底：“小奶砖”。奶雾哑光妆效、持妆 8 小时、甜品风包装。产品本身够好，切入的角度也够特别。
+            </p>
+            <p>
+              难的是怎么被看见。国内粉底市场已经卷到极致。AGE 20's 需要一场战役，把这款产品立成专业级的高端之选，而不是又一款气垫粉底。这又是个每年都要做的常规项目，今年的动作会成为明年迭代的底子，所以第一年必须把品牌认知打对。
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- Campaign visuals -->
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <div class="flex justify-center gap-[16px] overflow-x-auto px-[48px] max-[1024px]:px-[32px] max-[640px]:px-[20px] max-[640px]:justify-start pb-[8px] scrollbar-hide">
+      <img
+        src="/images/clients/Age20/Age20-Picture1-scaled.jpg"
+        alt="AGE 20's 小奶砖营销主视觉与产品包装"
+        class="w-[280px] max-[640px]:w-[220px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src="/images/clients/Age20/Age20-Picture6.jpg"
+        alt="AGE 20's 小奶砖小红书和抖音社交内容"
+        class="w-[280px] max-[640px]:w-[220px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src="/images/clients/Age20/Age20-Picture11.webp"
+        alt="AGE 20's KOL 营销与用户原创内容成果"
+        class="w-[280px] max-[640px]:w-[220px] shrink-0 rounded-[8px] border border-[rgba(0,0,0,0.08)]"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <Container>
+      <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)] mt-[12px] text-center">
+        AGE 20's“小奶砖”战役：产品视觉、KOL 内容，以及小红书、抖音的社媒素材。
+      </p>
+    </Container>
+  </section>
+
+  <!-- 服务内容 -->
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="服务内容">四阶段的战役，全围着一个过目难忘的名字转。</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              在小红书和抖音上同时跑一场分阶段的战役，“小奶砖”这个身份从头到尾贯穿全程。
+            </p>
+          </div>
+        </div>
+
+        <!-- The name -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">光是名字，就替我们干了大半传播的活</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              我们围绕这个名字做了一整套视觉和语言风格，产品包装是每条内容的主角。给用户一个她们自己记得住、也愿意主动说出口的名字。
+            </p>
+          </div>
+        </div>
+
+        <!-- Four phases -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">四个阶段，每个阶段干的活都不同</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              预热期，在官方账号上把“小奶砖”的视觉世界铺开，让用户先混个眼熟。上市期，切进真实的职场场景：办公室里的女生、会议间隙、通勤路上，在真实环境里把持妆效果验给人看。
+            </p>
+            <p>
+              转化期正好卡在购物高峰，这时候启动 KOL 合作，让种草出现在用户最想下单的那一刻。维护期则把用户自己发的笔记放大，让话题在上市之后继续发酵。
+            </p>
+          </div>
+        </div>
+
+        <!-- Platform content -->
+        <div class="mb-[48px] max-[640px]:mb-[32px]">
+          <h3 class="text-[18px] font-medium leading-[1.3] text-[var(--color-ink)] mb-[12px]">每个平台的内容也各做各的</h3>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              小红书放详细教程和使用前后对比；抖音做办公室快速补妆、职场美妆小技巧。节奏快，视觉强，紧贴每个平台用户真实的使用习惯。
+            </p>
+          </div>
+        </div>
+
+        <!-- HubStudio callout -->
+        <div class="mb-[64px] max-[640px]:mb-[48px] bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[32px] max-[640px]:p-[20px]">
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            HubStudio.ai让内容生产线跑得更顺：产品视觉、社媒素材、创意衍生。出得更快，质感也不打折。
+          </p>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- Stats grid -->
+  <section class="mb-[64px] max-[640px]:mb-[48px]">
+    <Container>
+      <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[16px]">
+        {stats.map((stat) => (
+          <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[24px] text-center">
+            <p class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.2] text-[var(--color-ink)] mb-[4px]">{stat.value}</p>
+            <p class="text-[13px] font-normal leading-[1.4] text-[var(--color-stone)]">{stat.label}</p>
+          </div>
+        ))}
+      </div>
+    </Container>
+  </section>
+
+  <!-- 项目成果 -->
+  <section>
+    <Container>
+      <div class="max-w-[720px] mx-auto">
+
+        <div class="mb-[64px] max-[640px]:mb-[48px]">
+          <SectionBar />
+          <SectionHeading overline="项目成果">昵称在用户里自发传开。放在今天的中国美妆市场，这种事几乎不会自然发生。</SectionHeading>
+          <div class="flex flex-col gap-[16px] text-[16px] font-normal leading-[1.6] text-[var(--color-ink)]">
+            <p>
+              所有目标都被大幅超出：小红书做到 75 万曝光，目标 30 万；抖音累计 387 万曝光，目标 100 万；ROI 做到 3.3%，高于行业基准。
+            </p>
+            <p>
+              但真正起作用的是另一件事：“小奶砖”这个昵称，在用户里自己传开了。消费者开始在自己的笔记里主动用它，没人要求，也没有任何付费推广。我们种进用户心里的认知，成了她们脱口而出的说法。在这么卷的市场里，这种自发传播几乎见不到。
+            </p>
+            <p>
+              AGE 20's 从一个功能型美妆品牌，升级成专业级的高端美妆品牌。这个项目每年都会迭代复用，第一年打下的底子，后面一直在持续产生回报。
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </Container>
+  </section>
+
+  <!-- CTA -->
+  <section class="pb-[96px] max-[640px]:pb-[64px]">
+    <Container>
+      <div class="bg-[var(--color-rice-paper)] rounded-[8px] border border-[rgba(0,0,0,0.08)] p-[48px] max-[1024px]:p-[32px] text-center">
+        <SectionHeading overline="下一个就是你">想在中国社媒上打一场产品上市战役？</SectionHeading>
+        <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-stone)] max-w-[500px] mx-auto mb-[32px]">
+          范围固定，一口价，团队就在本地。
+        </p>
+        <Button variant="primary" href="/zh/lianxi-women/">预约通话</Button>
+      </div>
+    </Container>
+  </section>
+
+  <style>
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+
+</PageLayout>

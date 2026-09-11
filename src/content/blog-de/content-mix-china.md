@@ -80,7 +80,7 @@ Chinas Feeds gewinnt man nicht, indem man sie flutet. Man gewinnt sie mit den we
 
 ## Echt schlägt poliert
 
-Der Reflex der meisten internationalen Marken: den globalen Kreativstandard nach China übertragen. Aufwendige Produktion, perfektes Licht, ein fertiger TV-Spot, zerlegt in vertikale Clips. Auf chinesischen Plattformen kann genau diese Politur zum Nachteil werden. Sie ist zudem langsam und teuer, was den Aufstieg der KI-Content-Produktion in China mit erklärt. Unser Beitrag zur [KI-Content-Produktion in China](/de/insights/ai-content-production-china/) beleuchtet das genauer.
+Der Reflex der meisten internationalen Marken: den globalen Kreativstandard nach China übertragen. Aufwendige Produktion, perfektes Licht, ein fertiger TV-Spot, zerlegt in vertikale Clips. Auf chinesischen Plattformen kann genau diese Politur zum Nachteil werden. Sie ist zudem langsam und teuer, was den Aufstieg der KI-Content-Produktion in China mit erklärt. Unser Beitrag zur [KI-Content-Produktion in China](/de/analysen/ai-content-production-china/) beleuchtet das genauer.
 
 Eine Marke für Lauf-Kopfhörer hat diese Lektion direkt auf RedNote gelernt. Sie verlagerte ihr Budget von Top-Influencern zu gewöhnlichen Läufern und Alltags-Creators. Die Ergebnisse fielen genau andersherum aus, als man erwarten würde.
 
@@ -107,7 +107,7 @@ Auf Douyin liegen Content und Kommerz am dichtesten beieinander. Man entdeckt ei
 > 90,3 Prozent der Kurzvideo-Nutzer sind beim Zuschauen schon auf eine Marke oder ein Produkt gestoßen, das ihnen gefiel, und 72 Prozent haben nach dem Anstoß durch ein Kurzvideo gekauft.
 > Quelle: CBNData, 抖音消费者洞察报告
 
-Deshalb ist hartes Verkaufen auf Douyin reine Verschwendung. Der Weg vom Inhalt zum Kauf ist ohnehin kurz. Schreien hilft nicht. Es braucht Inhalte, die man sehen will, mit dem Kaufknopf griffbereit im Moment der Entscheidung. Unser Beitrag zum [Social Commerce auf Douyin](/de/insights/douyin-social-commerce-profitability/) zeichnet diesen Weg nach.
+Deshalb ist hartes Verkaufen auf Douyin reine Verschwendung. Der Weg vom Inhalt zum Kauf ist ohnehin kurz. Schreien hilft nicht. Es braucht Inhalte, die man sehen will, mit dem Kaufknopf griffbereit im Moment der Entscheidung. Unser Beitrag zum [Social Commerce auf Douyin](/de/analysen/douyin-social-commerce-profitability/) zeichnet diesen Weg nach.
 
 WeChat spielt nach anderen Regeln. Es ist Ihr eigener Raum, der Ort, an dem Sie das bereits gewonnene Publikum halten. Die Öffnungsraten mahnen zum sorgsamen Umgang mit der Aufmerksamkeit.
 

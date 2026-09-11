@@ -80,7 +80,7 @@ On ne conquiert pas les fils chinois en les saturant. On les conquiert avec les 
 
 ## L’authentique l’emporte sur le léché
 
-Le réflexe des marques internationales consiste à transposer en Chine leur standard créatif mondial. Production lourde, lumière parfaite, spot télévisé redécoupé en clips verticaux. Sur les plateformes chinoises, ce vernis peut se retourner contre elles. Il coûte cher et prend du temps, ce qui explique en partie l’essor de la production de contenu par IA dans le pays. Notre article sur la [production de contenu par IA en Chine](/fr/insights/ai-content-production-china/) y est consacré.
+Le réflexe des marques internationales consiste à transposer en Chine leur standard créatif mondial. Production lourde, lumière parfaite, spot télévisé redécoupé en clips verticaux. Sur les plateformes chinoises, ce vernis peut se retourner contre elles. Il coûte cher et prend du temps, ce qui explique en partie l’essor de la production de contenu par IA dans le pays. Notre article sur la [production de contenu par IA en Chine](/fr/decryptages/ai-content-production-china/) y est consacré.
 
 Une marque d’écouteurs de course en a fait l’expérience sur RedNote. Elle a déplacé son budget des grands influenceurs vers des coureurs ordinaires et des créateurs du quotidien. Les résultats ont pris le contre-pied des attentes.
 
@@ -107,7 +107,7 @@ Douyin est l’endroit où contenu et commerce se frôlent le plus. On y découv
 > 90,3 % des utilisateurs de vidéo courte sont déjà tombés sur une marque ou un produit à leur goût en visionnant, et 72 % ont acheté après avoir été convaincus par une vidéo courte.
 > Source : CBNData, 抖音消费者洞察报告
 
-D’où le gâchis de la vente frontale sur Douyin. Le chemin du contenu à l’achat est déjà court. Inutile de hausser le ton. Il faut un contenu que l’on a envie de regarder, avec le bouton d’achat à portée de pouce au moment de la décision. Notre article sur le [commerce social sur Douyin](/fr/insights/douyin-social-commerce-profitability/) détaille ce parcours.
+D’où le gâchis de la vente frontale sur Douyin. Le chemin du contenu à l’achat est déjà court. Inutile de hausser le ton. Il faut un contenu que l’on a envie de regarder, avec le bouton d’achat à portée de pouce au moment de la décision. Notre article sur le [commerce social sur Douyin](/fr/decryptages/douyin-social-commerce-profitability/) détaille ce parcours.
 
 WeChat joue une autre partition. C’est votre espace en propre, celui où vous conservez l’audience déjà gagnée. Les taux d’ouverture rappellent une exigence : respecter l’attention.
 

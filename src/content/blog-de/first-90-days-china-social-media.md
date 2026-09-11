@@ -45,7 +45,7 @@ Plattformen einem ausländischen Unternehmen abverlangen, und dieselben vier
 werden bei jeder Jahresprüfung erneut fällig.
 
 Welche Nachweise eine ausländische Rechtsform für die Verifizierung eines
-[WeChat-Official-Accounts (微信)](/de/platforms/wechat/) braucht, führt das
+[WeChat-Official-Accounts (微信)](/de/plattformen/wechat/) braucht, führt das
 Hilfezentrum von Tencent einzeln auf.
 
 > Für die Verifizierung eines WeChat-Kontos benötigt eine ausländische
@@ -57,7 +57,7 @@ Hilfezentrum von Tencent einzeln auf.
 > Konto nach einer Marke benannt ist.
 > Quelle: Tencent Kundenservice (腾讯客服), Unterlagen zur Verifizierung ausländischer Rechtsformen, geprüft im September 2026. https://kf.qq.com/faq/190723Mjey67190723ey6Fbi.html
 
-[Xiaohongshu (小红书)](/de/platforms/rednote/) verlangt eine Akte derselben
+[Xiaohongshu (小红书)](/de/plattformen/rednote/) verlangt eine Akte derselben
 Art, ergänzt um eine Vorgabe zu Übersetzungen.
 
 > Unternehmenskonten bei Xiaohongshu stehen Firmen außerhalb des
@@ -67,7 +67,7 @@ Art, ergänzt um eine Vorgabe zu Übersetzungen.
 > braucht eine von einem Übersetzungsbüro gestempelte Übersetzung.
 > Quelle: Xiaohongshu (小红书), Leitfaden zur Verifizierung von Unternehmenskonten, Plattformdokument, geprüft im September 2026. https://fe-video-qc.xhscdn.com/picasso-editor/7072d509ee7370545a056b6f9030a926e8879dca.pdf
 
-[Douyin (抖音)](/de/platforms/douyin/) fällt aus dem Rahmen: Die eigenen
+[Douyin (抖音)](/de/plattformen/douyin/) fällt aus dem Rahmen: Die eigenen
 Hilfeseiten behalten das Unternehmenskonto Firmen in China vor.
 
 > Die FAQ von Douyin beschreibt das Unternehmenskonto als ein Konto, das
@@ -214,7 +214,7 @@ Zuerst die Optik: Hochglanzmaterial aus der globalen Produktion drosselt
 Xiaohongshu, ein mit dem Telefon fotografiertes Produkt in echter
 chinesischer Umgebung nicht. Wie das Dashboard dann aussieht, zeigt unser
 Leitfaden zum
-[Xiaohongshu-Marketing für ausländische Marken](/de/insights/xiaohongshu-marketing-foreign-brands/).
+[Xiaohongshu-Marketing für ausländische Marken](/de/analysen/xiaohongshu-marketing-foreign-brands/).
 
 Dann die Freigaben. Ein Beitrag, der die Zentrale in einer anderen Zeitzone
 passieren muss, braucht jedes Mal eine Woche. Die Freigaberegel gehört in
@@ -250,7 +250,7 @@ dorthin gehört das Geld, nicht in neue Beiträge.
 Zwei Vorhaben starten. Zuerst das Seeding auf Xiaohongshu (小红书): 20 bis 40
 Key Opinion Consumers (KOC), gewöhnliche Nutzer mit einigen tausend
 Followern, veröffentlichen über den Creator-Marktplatz der Plattform,
-[Pugongying (蒲公英)](/de/services/influencer-marketing/), eigene Beiträge
+[Pugongying (蒲公英)](/de/leistungen/influencer-marketing/), eigene Beiträge
 zum Produkt; eine Suche in der Kategorie zeigt dann echte Menschen, die es
 benutzen. Dann ein bezahlter Test hinter den zwei oder drei Beiträgen, die
 sich bereits bewährt haben.
@@ -266,9 +266,9 @@ Die Kontoeröffnung durch den Agenten gehört damit in den Plan für Woche 9,
 und die Einlage, die er festlegt, ist Mediabudget: zum Selbstkostenpreis
 abgerechnet, mit der Rechnung der Plattform belegt. Was Seeding und Test
 kosten, behandelt unser Leitfaden dazu,
-[was Social-Media-Marketing in China 2026 kostet](/de/insights/china-social-media-marketing-cost/).
+[was Social-Media-Marketing in China 2026 kostet](/de/analysen/china-social-media-marketing-cost/).
 Die eigene Preisliste von TheRedScroll steht auf der
-[Preisseite](/de/pricing/).
+[Preisseite](/de/preise/).
 
 Die erste Anfrage trifft in der Regel in diesem Fenster ein. Jemand hat die
 Kategorie gesucht, erst einen geseedeten und dann einen Markenbeitrag
@@ -313,7 +313,7 @@ lokaler Zustimmung je Beitrag rettet den Termin in Woche 7.
 Keiner dieser drei Gründe entsteht in China. Alle drei entstehen in der
 Zentrale. Wie die Frage der Rechtsform und die Formalitäten für einen Kunden
 übernommen werden, beschreibt unsere Seite zum
-[Markteintritt in China](/de/services/market-entry/), falls Sie beides nicht
+[Markteintritt in China](/de/leistungen/markteintritt/), falls Sie beides nicht
 selbst tragen wollen.
 
 ## Häufige Fragen

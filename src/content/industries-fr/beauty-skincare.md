@@ -72,9 +72,9 @@ trois jours environ. Une note positionnée sur « crème solaire peau sensible �
 en chinois continue de produire pendant un an, parce que l'acheteur suivant
 tape les mêmes mots dans la même barre. Construisez donc le budget autour des
 termes de recherche, pas autour des dates de campagne. Notre
-[page agence RedNote](/fr/rednote-agency/) traite de la plateforme en pratique,
+[page agence RedNote](/fr/agence-rednote/) traite de la plateforme en pratique,
 et notre guide du
-[marketing Xiaohongshu pour les marques étrangères](/fr/insights/xiaohongshu-marketing-foreign-brands/)
+[marketing Xiaohongshu pour les marques étrangères](/fr/decryptages/xiaohongshu-marketing-foreign-brands/)
 couvre la configuration des comptes qui la sous-tend.
 
 ## Ce qu'une agence beauté vérifie en Chine avant la première publication
@@ -211,7 +211,7 @@ Les cachets des créateurs pèsent plus sur le total que le volume.
 > million d'abonnés se situe autour de 10 000 à 35 000 dollars par campagne.
 > Source: Long Advisory, June 2026. https://longadvisory.eu/en/kol-vs-koc-marketing-in-china-which-delivers-better-roi/
 
-Notre [page marketing d'influence](/fr/services/influencer-marketing/) détaille
+Notre [page marketing d'influence](/fr/services/marketing-influence/) détaille
 la gestion des briefs, de la déclaration et des droits d'usage.
 
 ## Live commerce sur Douyin : quand cela paie et quand cela ne paie pas
@@ -248,7 +248,7 @@ Un cas justifie d'aller sur Douyin en premier : le maquillage, qui se démontre
 bien à la caméra, à un prix qu'un spectateur tranche en quatre-vingt-dix
 secondes. Ces produits se vendent avant même d'avoir construit une empreinte de
 recherche. Le soin ne se comporte presque jamais ainsi. Notre
-[page plateforme Douyin](/fr/platforms/douyin/) détaille le format.
+[page plateforme Douyin](/fr/plateformes/douyin/) détaille le format.
 
 ## Ce que contient un forfait beauté, et ce qu'il coûte
 
@@ -264,13 +264,13 @@ séparément, sans marge. Les contrats courent sur six mois minimum, car la
 couverture de recherche en beauté ne se construit pas en huit semaines.
 
 Un périmètre beauté mobilise en général quatre services.
-[Stratégie, campagnes et analyse](/fr/services/strategy-campaigns/) pour la
-recherche de termes. [Production de contenu](/fr/services/content-production/)
-pour les notes. [Marketing d'influence](/fr/services/influencer-marketing/) pour
+[Stratégie, campagnes et analyse](/fr/services/strategie-campagnes/) pour la
+recherche de termes. [Production de contenu](/fr/services/production-de-contenu/)
+pour les notes. [Marketing d'influence](/fr/services/marketing-influence/) pour
 le travail créateur déclaré.
-[Entrée sur le marché chinois](/fr/services/market-entry/) tant que le dépôt et
+[Entrée sur le marché chinois](/fr/services/entree-marche/) tant que le dépôt et
 le responsable domestique restent ouverts. La
-[publicité](/fr/services/advertising/) vient ensuite, une fois qu'il y a quelque
+[publicité](/fr/services/publicite/) vient ensuite, une fois qu'il y a quelque
 chose à amplifier.
 
 Trois postes font bouger un budget beauté plus que l'honoraire lui-même. Les
@@ -279,7 +279,7 @@ tenir. Les tests d'efficacité, qui sont une facture de laboratoire et un
 calendrier plutôt qu'une ligne marketing. Et la traduction du dossier de dépôt,
 lente, fastidieuse et toujours sous-estimée.
 
-La grille tarifaire complète figure sur notre [page tarifs](/fr/pricing/),
+La grille tarifaire complète figure sur notre [page tarifs](/fr/tarifs/),
 chaque forfait et chaque prix unitaire publiés. Quand nous avons examiné le
 marché en avril 2026, cela restait inhabituel.
 
