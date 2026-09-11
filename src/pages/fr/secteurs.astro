@@ -21,9 +21,9 @@ const collectionSchema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   '@id': `${SITE_URL}/fr/secteurs/#collectionpage`,
-  name: "Le marketing social en Chine par secteur",
+  name: "Le marketing social en Chine, secteur par secteur",
   url: `${SITE_URL}/fr/secteurs/`,
-  description: "Comment le marketing social en Chine fonctionne dans votre secteur : règles, plateformes, budgets et contenu d'un accompagnement.",
+  description: "Ce qui change, secteur par secteur, quand une marque se lance sur les réseaux sociaux chinois : règles, plateformes, budgets et périmètre d'un accompagnement.",
   isPartOf: { '@id': `${SITE_URL}/#website` },
   publisher: { '@id': `${SITE_URL}/#organization` },
   inLanguage: 'fr',
@@ -40,17 +40,17 @@ const collectionSchema = {
 ---
 
 <PageLayout
-  title={"Marketing social en Chine par secteur | TheRedScroll"}
-  description={"Beauté, mode, alimentaire, voyage, B2B, automobile, santé et luxe. Ce qui change sur WeChat, Xiaohongshu et Douyin selon votre catégorie."}
+  title={"Marketing social en Chine, secteur par secteur | TheRedScroll"}
+  description={"Beauté, mode, alimentaire, voyage, B2B, automobile, santé, luxe. Ce que la catégorie change sur WeChat, Xiaohongshu et Douyin."}
   lang="fr"
   schema={collectionSchema}
 >
   <EditorialIndex
     lang="fr"
     overline={"Secteurs"}
-    heading={"Votre secteur change les règles du jeu."}
-    intro={"Les règles, les plateformes et le budget bougent avec le secteur. Une page par catégorie, écrite à partir des comptes que nous pilotons."}
+    heading={"Le secteur commande les règles du jeu."}
+    intro={"Règles, plateformes, budget : tout bouge avec le secteur. Une page par catégorie, écrite depuis les comptes que nous pilotons."}
     items={pages}
-    emptyText={"Les premières pages sectorielles arrivent. En attendant, dites-nous votre secteur et nous vous expliquons ce qui change."}
+    emptyText={"Les premières pages sectorielles arrivent. En attendant, indiquez-nous votre secteur : nous vous dirons ce qui change."}
   />
 </PageLayout>

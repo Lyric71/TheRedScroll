@@ -27,9 +27,9 @@ ist meist falsch, weil niemand ihnen gesagt hat, dass ein Produkt erst die
 Aufsicht passieren muss, bevor eine einzige Bewertung es beim Namen nennen
 darf.*
 
-Beauty in China ist ein Anmeldeproblem, ein Problem der Werbeaussagen und ein
-Suchproblem, in dieser Reihenfolge. Der Inhalt greift erst, wenn die ersten
-beiden geklärt sind. Wir haben gute Launches um ein Quartal rutschen sehen,
+Beauty in China heißt: erst anmelden, dann die Werbeaussagen klären, dann um die
+Suche kämpfen. In dieser Reihenfolge. Solange die ersten beiden offen sind,
+trägt kein Inhalt. Wir haben gute Launches um ein Quartal rutschen sehen,
 weil erst nach der Textfreigabe jemand die Verordnung gelesen hat.
 
 | Hürde | Wer zustimmt | Was sie blockiert, solange sie offen ist |
@@ -46,15 +46,15 @@ sich Chinas Plattformregeln schneller bewegen als die Gesetze.
 
 ## Warum Beauty auf Xiaohongshu gewonnen und verloren wird
 
-Xiaohongshu (小红书) ist der Ort, an den chinesische Käuferinnen gehen, um sich
-zu entscheiden, nicht um unterhalten zu werden.
+Auf Xiaohongshu (小红书) gehen chinesische Käuferinnen, um sich zu entscheiden,
+nicht um sich unterhalten zu lassen.
 
 > Xiaohongshu hat 400 Millionen monatlich aktive Nutzer und 800 Millionen
 > Suchanfragen pro Tag überschritten.
 > Source: Xiaohongshu, Video Creator Trend Observation Report, reported by Beijing Business Today (北京商报) via Sina Finance (新浪财经), May 2026. https://finance.sina.com.cn/jjxw/2026-05-27/doc-inhziqxq9291575.shtml
 
-Der Zuschnitt der Nutzerschaft erklärt, warum Beauty dort landet und nicht
-woanders.
+Warum Beauty dort landet und nicht woanders, erklärt der Zuschnitt der
+Nutzerschaft.
 
 > Das Werbekundenpapier der Plattform nennt ein Verhältnis von Männern zu
 > Frauen von 3 zu 7, eine monatliche Suchdurchdringung von 70 Prozent und die
@@ -67,8 +67,7 @@ Und sie kommen mit einer Frage, nicht mit einer Stimmung.
 > sie öffnen die App etwa 16 Mal am Tag.
 > Source: Xiaohongshu 2026 WILL conference, reported by 100EC (网经社), December 2025. https://www.100ec.cn/detail--6655530.html
 
-Das ändert die Rechnung. Ein Kampagnenbeitrag ist etwa drei Tage lang etwas
-wert. Eine Note, die auf Chinesisch für "Sonnenschutz für empfindliche Haut"
+Das dreht die Rechnung um. Ein Kampagnenbeitrag hält etwa drei Tage. Eine Note, die auf Chinesisch für „Sonnenschutz für empfindliche Haut“
 rankt, trägt ein Jahr lang, weil die nächste Käuferin dieselben Wörter in
 dasselbe Feld tippt. Bauen Sie das Budget also um Suchbegriffe herum auf, nicht
 um Kampagnentermine. Unsere
@@ -79,7 +78,7 @@ erklärt den Kontoaufbau darunter.
 
 ## Was eine Beauty-Agentur in China vor dem ersten Beitrag prüft
 
-China teilt Kosmetik in zwei Klassen, und diese Teilung bestimmt Ihren
+China teilt Kosmetik in zwei Klassen, und diese Einstufung bestimmt Ihren
 Zeitplan.
 
 > Kosmetika zum Färben und Dauerwellen, zur Fleckenentfernung und Aufhellung,
@@ -94,15 +93,15 @@ lediglich angemeldet werden. Ein aufhellendes Serum und ein Reinigungsbalsam
 stehen nicht im selben Zeitplan, und wer beides gemeinsam plant, verfehlt eines
 von beidem.
 
-Allein aus dem Ausland geht es auch nicht.
+Im Alleingang aus dem Ausland geht es ohnehin nicht.
 
 > Ein ausländischer Registrierender oder Anmeldender muss eine juristische
 > Person in China benennen, die Registrierung und Anmeldung übernimmt, bei der
 > Überwachung unerwünschter Wirkungen mitwirkt und Produktrückrufe durchführt.
 > Source: Cosmetics Supervision and Administration Regulation, Article 23, in force January 2021. https://www.gov.cn/zhengce/content/2020-06/29/content_5522593.htm
 
-Dann die Werbeaussagen. An dieser Stelle stolpern gute Marken, denn in China
-bleibt der Beleg hinter einer Aussage nicht intern. Er wird veröffentlicht.
+Dann die Werbeaussagen. Hier stolpern gute Marken, denn in China bleibt der
+Beleg hinter einer Aussage nicht im Haus. Er gehört veröffentlicht.
 
 > Wirkaussagen müssen eine ausreichende wissenschaftliche Grundlage haben, und
 > der Registrierende oder Anmeldende muss eine Zusammenfassung der Literatur,
@@ -119,10 +118,10 @@ eigenes Dokument.
 > Administration erlassen und trat am 1. Mai 2021 in Kraft.
 > Source: China Center for Food and Drug International Exchange (中国食品药品国际交流中心), announcement 2021 No. 50, April 2021. https://www.ccfdie.org/cn/yjxx/hzp/webinfo/2021/04/1614390286444040.htm
 
-Darüber liegt das Werberecht. Es ist unmissverständlich.
+Darüber liegt das Werberecht, und das kennt keine Zwischentöne.
 
-> Werbung darf keine Begriffe wie "auf nationalem Niveau", "höchste Stufe" oder
-> "das Beste" verwenden.
+> Werbung darf keine Begriffe wie „auf nationalem Niveau“, „höchste Stufe“ oder
+> „das Beste“ verwenden.
 > Source: Advertising Law of the People's Republic of China, Article 9, in force since September 2015. https://www.gov.cn/guoqing/2021-10/29/content_5647620.htm
 
 > Außerhalb der Werbung für Medizin, Arzneimittel und Medizinprodukte darf
@@ -185,7 +184,8 @@ und wer eine einzelne landesweite Zahl nennt, rät.
 Die Zahl ergibt sich aus der Suchabdeckung. Wählen Sie die chinesischen
 Begriffe, die eine Käuferin vor der Entscheidung eintippt. Zählen Sie, wie
 viele Notes es braucht, damit Ihre je Begriff den ersten Bildschirm halten.
-Multiplizieren Sie. Das ist der Seeding-Plan, Arithmetik statt Faustregel.
+Multiplizieren Sie. Daraus entsteht der Seeding-Plan: Arithmetik, keine
+Faustregel.
 
 | Größe des Launches | Zu besetzende Suchbegriffe | Notes je Begriff | Wo der Plan landet |
 |---|---|---|---|
@@ -225,7 +225,7 @@ verkaufen, sind genau die, die Artikel 17 des Werberechts verbietet. Ein Host,
 der sagt, ein Serum behandle Akne, hat Ihre Marke gerade zum Werbetreibenden
 hinter einer unzulässigen Aussage gemacht.
 
-Die Verifizierung ist billig. Das Skript richtig zu schreiben, ist es nicht.
+Die Verifizierung kostet fast nichts. Das richtige Skript kostet.
 
 > Die Unternehmensverifizierung bei Douyin kostet 600 Yuan im ersten Jahr und
 > 120 Yuan jährlich zur Verlängerung, die Prüfung dauert etwa zwei Werktage.
@@ -245,7 +245,7 @@ Suchspur aufgebaut haben. Hautpflege verhält sich fast nie so. Unsere
 
 ## Was ein Beauty-Paket enthält und was es kostet
 
-Bauen Sie den Business Case auf Wachstum, nicht auf einen Boom.
+Rechnen Sie mit Wachstum, nicht mit einem Boom.
 
 > Der Einzelhandelsumsatz mit Kosmetik wuchs 2025 um 5,1 Prozent bei den
 > Einheiten oberhalb der festgelegten Größe, gegenüber 3,7 Prozent im gesamten

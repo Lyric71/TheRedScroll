@@ -1,8 +1,8 @@
 ---
 title: "Marketing de belleza y cuidado de la piel en China"
-description: "La belleza es la categoría más saturada de las redes sociales chinas, y la mayoría de las reglas están escritas. El registro va antes que las alegaciones, las alegaciones van antes que el contenido, y la búsqueda decide qué se vende."
+description: "Ninguna categoría está tan disputada como la belleza en las redes sociales chinas, y casi todo en ella lo fija una norma. El registro manda sobre las alegaciones, las alegaciones sobre el contenido, y la búsqueda decide qué se vende."
 metaTitle: "Marketing de belleza en China"
-metaDescription: "Cómo crecen en China las marcas de belleza y cuidado de la piel. Xiaohongshu, reglas de la NMPA, siembra KOC y paquetes a precio cerrado."
+metaDescription: "Lo que hace despegar a una marca de belleza en China: Xiaohongshu, normas de la NMPA, volúmenes de siembra KOC y paquetes a precio cerrado."
 publishDate: 2026-09-11
 author: "TheRedScroll"
 platforms: ["rednote", "douyin"]
@@ -26,10 +26,10 @@ con una fecha de lanzamiento y una presentación llena de ideas de campaña. La
 fecha suele estar equivocada, porque nadie les dijo que un producto tiene que
 pasar por el regulador antes de que una sola reseña pueda nombrarlo.*
 
-La belleza en China es un problema de registro, un problema de alegaciones y un
-problema de búsqueda, por ese orden. El contenido solo funciona cuando los dos
-primeros están resueltos. Hemos visto buenos lanzamientos retrasarse un
-trimestre porque nadie leyó la norma hasta que los textos ya estaban aprobados.
+La belleza en China se juega en tres frentes y por este orden: el registro, las
+alegaciones y la búsqueda. Mientras los dos primeros sigan abiertos, el
+contenido no rinde. Hemos visto buenos lanzamientos retrasarse un trimestre
+porque nadie abrió la norma hasta que los textos ya estaban aprobados.
 
 | Trámite | Quién da el visto bueno | Qué bloquea mientras no se cierra |
 |---|---|---|
@@ -46,15 +46,15 @@ la regulación.
 
 ## Por qué la belleza se gana y se pierde en Xiaohongshu
 
-Xiaohongshu (小红书) es donde las compradoras chinas van a decidir, no a
-entretenerse.
+A Xiaohongshu (小红书) las compradoras chinas no van a entretenerse. Van a
+decidir.
 
 > Xiaohongshu superó los 400 millones de usuarios activos mensuales y los 800
 > millones de búsquedas diarias.
 > Source: Xiaohongshu, Video Creator Trend Observation Report, reported by Beijing Business Today (北京商报) via Sina Finance (新浪财经), May 2026. https://finance.sina.com.cn/jjxw/2026-05-27/doc-inhziqxq9291575.shtml
 
-La composición de la audiencia explica por qué la belleza aterriza ahí y no en
-otro sitio.
+Que la belleza aterrice ahí y no en otro sitio se explica por la composición de
+la audiencia.
 
 > El dosier para anunciantes de la propia plataforma da una proporción de
 > hombres a mujeres de 3 a 7, una penetración mensual de la búsqueda del 70 % y
@@ -67,10 +67,10 @@ Y llegan con una pregunta, no con un estado de ánimo.
 > consejo de compra, y abren la aplicación unas 16 veces al día.
 > Source: Xiaohongshu 2026 WILL conference, reported by 100EC (网经社), December 2025. https://www.100ec.cn/detail--6655530.html
 
-Eso cambia la aritmética. Una publicación de campaña vale algo durante unos tres
-días. Una nota posicionada en chino para "protector solar para piel sensible"
-sigue rindiendo un año, porque la siguiente compradora teclea las mismas
-palabras en la misma casilla. Construya el presupuesto alrededor de términos de
+Eso le da la vuelta a la aritmética. Una publicación de campaña aguanta unos
+tres días. Una nota posicionada en chino para «protector solar para piel
+sensible» sigue rindiendo un año, porque la siguiente compradora teclea las
+mismas palabras en la misma casilla. Construya el presupuesto alrededor de términos de
 búsqueda, no de fechas de campaña. Nuestra
 [página de agencia RedNote](/es/agencia-rednote/) explica la plataforma en la
 práctica, y nuestra guía de
@@ -79,7 +79,8 @@ cubre la configuración de cuentas que hay debajo.
 
 ## Qué comprueba una agencia de belleza en China antes de la primera publicación
 
-China divide los cosméticos en dos, y esa división marca su calendario.
+China divide los cosméticos en dos categorías, y esa clasificación le marca el
+calendario.
 
 > Los cosméticos para teñir y ondular el cabello, para eliminar manchas y
 > blanquear, para la protección solar y contra la caída del cabello, además de
@@ -94,15 +95,15 @@ ante el mismo organismo. Un sérum blanqueador y un bálsamo desmaquillante no
 van en el mismo calendario, y la marca que planifique ambos a la vez fallará en
 uno de los dos.
 
-Tampoco puede hacerlo sola desde fuera.
+Tampoco puede resolverlo por su cuenta desde fuera.
 
 > El registrante o notificante extranjero debe designar una entidad jurídica en
 > China que se ocupe del registro y la notificación, colabore en la vigilancia
 > de reacciones adversas y ejecute las retiradas de producto.
 > Source: Cosmetics Supervision and Administration Regulation, Article 23, in force January 2021. https://www.gov.cn/zhengce/content/2020-06/29/content_5522593.htm
 
-Después vienen las alegaciones. Aquí es donde tropiezan las buenas marcas,
-porque en China la prueba que respalda una alegación no es privada. Se publica.
+Después llegan las alegaciones. Ahí tropiezan las buenas marcas: en China la
+prueba que respalda una alegación no se queda en un cajón. Se publica.
 
 > Las alegaciones de eficacia deben tener base científica suficiente, y el
 > registrante o notificante debe publicar un resumen de la literatura, los datos
@@ -119,10 +120,10 @@ ensayo tiene su propio documento.
 > Productos Médicos y entró en vigor el 1 de mayo de 2021.
 > Source: China Center for Food and Drug International Exchange (中国食品药品国际交流中心), announcement 2021 No. 50, April 2021. https://www.ccfdie.org/cn/yjxx/hzp/webinfo/2021/04/1614390286444040.htm
 
-Encima de todo eso se sitúa la ley de publicidad. Es tajante.
+Por encima de todo ello está la ley de publicidad, que no admite matices.
 
-> La publicidad no puede usar términos como "de nivel nacional", "del máximo
-> nivel" o "el mejor".
+> La publicidad no puede usar términos como «de nivel nacional», «del máximo
+> nivel» o «el mejor».
 > Source: Advertising Law of the People's Republic of China, Article 9, in force since September 2015. https://www.gov.cn/guoqing/2021-10/29/content_5647620.htm
 
 > Fuera de la publicidad médica, farmacéutica y de productos sanitarios, ningún
@@ -187,8 +188,8 @@ cite una cifra nacional única está adivinando.
 
 El número sale de la cobertura de búsqueda. Elija las expresiones en chino que
 teclea una compradora antes de decidir. Cuente cuántas notas hacen falta para
-que las suyas ocupen la primera pantalla en cada una. Multiplique. Ese es el
-plan de siembra, y es aritmética, no una regla general.
+que las suyas ocupen la primera pantalla en cada una. Multiplique. De ahí sale el plan
+de siembra: aritmética, no una regla fija.
 
 | Tamaño del lanzamiento | Términos de búsqueda a ocupar | Notas por término | Dónde acaba el plan |
 |---|---|---|---|
@@ -228,7 +229,7 @@ ante la cámara son justo las que prohíbe el artículo 17 de la ley de publicid
 Una presentadora que dice que un sérum trata el acné acaba de convertir a su
 marca en el anunciante detrás de una alegación ilegal.
 
-Verificarse es barato. Acertar con el guion no lo es.
+Verificarse cuesta poco. Acertar con el guion, no.
 
 > La verificación de empresa en Douyin cuesta 600 yuanes el primer año y 120
 > yuanes anuales de renovación, con una revisión de unos dos días hábiles.
@@ -249,7 +250,7 @@ formato.
 
 ## Qué incluye un paquete de belleza y cuánto cuesta
 
-Construya el caso de negocio sobre el crecimiento, no sobre un pico.
+Levante el argumentario sobre el crecimiento, no sobre un pico.
 
 > Las ventas minoristas de cosmética crecieron un 5,1 % en 2025 en las unidades
 > por encima del tamaño designado, frente a un 3,7 % del comercio minorista
