@@ -229,8 +229,8 @@ who post about products they were sent.
 > approximately 10,000 to 35,000 dollars per campaign.
 > Source: Long Advisory, June 2026. https://longadvisory.eu/en/kol-vs-koc-marketing-in-china-which-delivers-better-roi/
 
-At the top, one collaboration on Douyin costs a multiple of what the same
-brand would pay on Xiaohongshu.
+At the top, one collaboration on Douyin costs a multiple of [what the same
+brand would pay on Xiaohongshu](/insights/xiaohongshu-marketing-cost/).
 
 > Average collaboration costs on Xiaohongshu typically range between 10,000
 > and 40,000 dollars. On Douyin, average collaborations often range between

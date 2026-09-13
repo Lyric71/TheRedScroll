@@ -313,8 +313,8 @@ with the platform's own invoice attached.
 
 Content is the largest line in the first three months. A dozen notes a month
 in Chinese, shot in a way that looks like a real person made them, is a
-[production job](/services/content-production/). Creator seeding at the KOC tier is cheap per post and adds up
-by volume. The bigger KOL tier is a second-year decision for most of our
+[production job](/services/content-production/). [Creator seeding at the KOC tier is cheap per post and adds up
+by volume](/insights/xiaohongshu-marketing-cost/). The bigger KOL tier is a second-year decision for most of our
 clients.
 
 > Average KOL collaboration cost on Xiaohongshu runs 10,000 to 40,000 dollars,

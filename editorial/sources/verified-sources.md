@@ -134,7 +134,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://finance.sina.com.cn/jjxw/2026-05-27/doc-inhziqxq9291575.shtml
 - Verified 1: 2026-09-07, fetched, "月活跃用户已突破4亿，日搜索量高达8亿" and date confirmed
 - Verified 2: 2026-09-07, re-fetched before draft finished, unchanged
-- Used in: xiaohongshu-marketing-foreign-brands, beauty-skincare, xiaohongshu-algorithm
+- Used in: xiaohongshu-marketing-foreign-brands, beauty-skincare, xiaohongshu-algorithm, xiaohongshu-account-not-growing
 - Notes: Platform's own figure, global and all devices. Pair with the QuestMobile domestic count below when an independent number is asked for.
 
 ### Xiaohongshu domestic monthly active users, QuestMobile
@@ -204,7 +204,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://www.niaogebiji.com/article-482538-1.html
 - Verified 1: 2026-09-07, fetched, "普通模式收取10%，优效模式收取20%" confirmed
 - Verified 2: 2026-09-07, re-fetched, unchanged
-- Used in: xiaohongshu-marketing-foreign-brands, beauty-skincare, xiaohongshu-algorithm
+- Used in: xiaohongshu-marketing-foreign-brands, beauty-skincare, xiaohongshu-algorithm, xiaohongshu-account-not-growing
 - Notes: Older than 12 months. The rule is still applied by the platform, but the Pugongying help center (pgy.xiaohongshu.com) blocks fetches. Replace with a platform page when one can be fetched.
 
 ### WeChat Official Account verification for overseas entities: review time and payment
@@ -274,7 +274,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://www.6aiq.com/article/1679451572481
 - Verified 1: 2026-09-11, fetched with curl and stripped to text; "在2021年上半年，首页推荐的召回、粗排、精排的主要模块都保持在天级更新的状态", "小红书站内“最近一天内发布的新笔记”在首页的曝光占比一直很高，这段时间更是快速增长，几乎占到了一半", "传统的做法往往会在 item 展示后等待30min左右的时间来收集交互 label" and "高时效项目累计提供小红书首页信息流人均时长 10% 以上，同时也带来了交互 15% 以上和新笔记效率近 50% 的提升" all confirmed
 - Verified 2: 2026-09-11, re-fetched with curl, all four strings and the 2023-03-22 date unchanged
-- Used in: xiaohongshu-algorithm
+- Used in: xiaohongshu-algorithm, xiaohongshu-account-not-growing
 - Notes: The best source in the ledger for how distribution actually works, because the authors are the platform's own distribution engineers and their affiliations are printed at the foot of the article. AIQ is a republisher; the authorship line is what makes it citable. Older than 12 months, so date it inside the sentence. The original lives on the 小红书技术REDtech CSDN account, which returns an anti-bot stub (HTTP 521) to every fetch method tried. **This entry does not license any traffic pool size.** No platform source publishes one.
 
 ### Xiaohongshu daily product purchase-seeking users
@@ -284,7 +284,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://www.36kr.com/newsflashes/3758099821871879
 - Verified 1: 2026-09-11, fetched with curl, "平台每天有3900万用户产生商品求购行为，主动求购达1.4亿人次" and "4月8日，小红书电商举办GROW商家大会" confirmed, page dated 2026-04-08
 - Verified 2: 2026-09-11, re-fetched with curl, both strings and the date unchanged
-- Used in: xiaohongshu-algorithm
+- Used in: xiaohongshu-algorithm, xiaohongshu-account-not-growing
 - Notes: Platform-disclosed at its own conference, reported by a dated trade outlet, which is the strongest chain available for a commercial-intent figure. Pairs with the WILL 2026 entry (about 200 million users a month seeking purchase advice) and measures a different thing: daily behavior, not monthly reach. Do not add the two together.
 
 ### Xiaohongshu multimodal content understanding across search and recommendation
@@ -294,8 +294,118 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://www.qbitai.com/2022/04/34112.html
 - Verified 1: 2026-09-11, fetched with curl, "对内容的多模态理解贯穿了小红书整个搜索、推荐与交易系统" and "已经在短视频理解、内容质量评价、多模态检索、交易内容理解、三维数字化、智能创作等领域对多模态技术展开了研发应用" confirmed
 - Verified 2: 2026-09-11, re-fetched with curl, both strings and the 2022-04-15 date unchanged
-- Used in: xiaohongshu-algorithm
+- Used in: xiaohongshu-algorithm, xiaohongshu-account-not-growing
 - Notes: Four years old, so use it for the architectural claim only (the ranking reads the image, the video frames and the text together) and never for a number. The same page's 200 million MAU figure for October 2021 is superseded by the platform's 400 million and must not be cited.
+
+### Xiaohongshu Community Commercial Convention, 2022: Pugongying, fake seeding, off-platform deals
+- Value: qualitative. Brands are asked to seek creator cooperation through Pugongying (蒲公英); the platform opposes over-interference in cooperative content and fake seeding (虚假种草); deals should not be steered off platform through profile pages, comments or direct messages
+- As of: May 2022 (article dated 2022-05-06)
+- Source: 21st Century Business Herald (21世纪经济报道)
+- URL: https://m.21jingji.com/article/20220506/herald/8aab5572c0f69554f5722de1364879d2_zaker.html
+- Verified 1: 2026-09-14, fetched; "商家通过蒲公英平台寻求与创作者的内容合作", "反对商家对合作内容过度干预，尤其是虚假种草", "不要在个人页、评论、私信等场景把交易引导到站外" confirmed, date confirmed
+- Verified 2: 2026-09-14, re-fetched before the draft was finished, unchanged
+- Used in: xiaohongshu-account-not-growing
+- Notes: Older than 12 months; date it inside the sentence. Corroborated by Jiemian (界面新闻), 2022-05-07, https://www.jiemian.com/article/7433708.html, which adds that Pugongying takes 10% of the deal. The convention is the origin of the graded enforcement described in the entry below.
+
+### Xiaohongshu enforcement is graded, with an advance reminder and an appeal step; 2021 to 2022 campaign figures
+- Value: qualitative plus three figures. The head of Xiaohongshu's community team (社区生态负责人 银时) said penalties do not jump straight to severe measures: "会有前置的提醒，也有申诉环节". Since December 2021 the platform had banned 81 brands and handled 172,600 notes and 53,600 accounts for violating marketing
+- As of: May 2022 (article dated 2022-05-06)
+- Source: New Rank (新榜) via Tencent News (腾讯新闻)
+- URL: https://news.qq.com/rain/a/20220506A0BBD700
+- Verified 1: 2026-09-14, fetched; quote and the three figures confirmed, date confirmed
+- Verified 2: 2026-09-14, re-fetched before the draft was finished, unchanged
+- Used in: xiaohongshu-account-not-growing
+- Notes: Older than 12 months; date it inside the sentence. The same page describes a 12-point brand violation score with 2-point deductions for minor breaches. Single source, four years old: NOT cited, do not cite until confirmed on a fresher page. Brand-score deductions are confirmed as a current measure by the June 2025 南方都市报 entry below.
+
+### Xiaohongshu violating marketing notice, March 2025: the two behaviors targeted
+- Value: qualitative. The 薯管家 notice names (1) leaving the platform to work with outside agencies that seed large volumes of marketing notes, and (2) organizing comment armies to post or repost specific comments, fake reviews or steer users to off-platform deals. "情节严重者将被永久封号"
+- As of: March 2025 (article dated 2025-03-31)
+- Source: Sina Finance (新浪财经)
+- URL: https://finance.sina.com.cn/tech/2025-03-31/doc-inerpuqn7106647.shtml
+- Verified 1: 2026-09-14, fetched; both behaviors and the permanent-ban sentence confirmed, date confirmed
+- Verified 2: 2026-09-14, re-fetched before the draft was finished, unchanged
+- Used in: xiaohongshu-account-not-growing
+- Notes: Platform notice reported by a dated outlet. Use for what the platform says it targets, not for volumes (see the April 2025 entry).
+
+### Xiaohongshu 2025 crackdown, first round: accounts, notes and comments targeted
+- Value: close to 1 million violating accounts, over 1 million violating marketing notes and over 10 million water-army comments in the first round; focus on black-market groups farming accounts with over 1,000 followers and posting low-quality Pugongying notes; non-compliant Pugongying creators lose their rights, serious cases banned
+- As of: April 2025 (article dated 2025-04-09)
+- Source: Sina Tech (新浪科技)
+- URL: https://finance.sina.com.cn/tech/roll/2025-04-09/doc-inesqrfq6514987.shtml
+- Verified 1: 2026-09-14, fetched; "近100万违规账号，超过100万篇违规营销笔记，和超过1000万条水军评论" confirmed, date confirmed
+- Verified 2: 2026-09-14, re-fetched before the draft was finished, unchanged
+- Used in: xiaohongshu-account-not-growing
+- Notes: These are announced targets for the round ("预计"), not results. For results use the China Daily entry (March to August 2025) or the June 2025 entry below.
+
+### Xiaohongshu enforcement results, November 2024 to February 2025: accounts and brands
+- Value: 3,208,343 violating accounts handled from early November 2024; 1,695 brands penalized for violating marketing since December 2024, across 15 industries (beauty and personal care, food, 3C, local services and others)
+- As of: February 2025 (article dated 2025-02-19; periods stated in the text)
+- Source: TMTPost (钛媒体) via Tencent News (腾讯新闻)
+- URL: https://news.qq.com/rain/a/20250219A064WZ00
+- Verified 1: 2026-09-14, fetched; both figures and periods confirmed, date confirmed
+- Verified 2: 2026-09-14, re-fetched before the draft was finished, unchanged
+- Used in: xiaohongshu-account-not-growing (researched; the article uses the March to August 2025 China Daily figures instead, this entry is logged for reuse)
+- Notes: A "199 brands permanently banned" figure circulates with the 1,695 number in self-media republications (运营研究社 via Tencent News, 2025-04-10). It is not on this page and is not citable until found on a dated outlet.
+
+### Xiaohongshu half-year 2025 results against fake content
+- Value: 3.2 million fake notes handled, 10,000 fake-persona accounts handled, 600,000 low-quality AIGC notes handled, over 10 million batch-fraud black-market accounts banned
+- As of: first half of 2025 (article dated 2025-06-13)
+- Source: The Paper (澎湃新闻) via Tencent News (腾讯新闻)
+- URL: https://news.qq.com/rain/a/20250613A05S3A00
+- Verified 1: 2026-09-14, fetched; all four figures and the period confirmed, date confirmed
+- Verified 2: 2026-09-14, re-fetched before the draft was finished, unchanged
+- Used in: xiaohongshu-account-not-growing (researched; not cited in the body, logged for reuse)
+- Notes: Overlaps in period with the China Daily entry (March to August 2025). Do not add the two together.
+
+### Xiaohongshu enforcement ladder and brand-score deductions, comparative-review governance
+- Value: qualitative. For manipulative comparative reviews (拉踩测评) the platform handles the content and the account behind it "包括但不限于取消商业合作权限、限流、下架、封号等", and "相关品牌作为利益主体也会被连带限流、扣品牌分". New notes governed from the announcement date, existing notes swept two weeks later
+- As of: June 2025 (article dated 2025-06-03)
+- Source: Southern Metropolis Daily (南方都市报) via NetEase (网易)
+- URL: https://m.163.com/dy/article/K1547S8705129QAF.html
+- Verified 1: 2026-09-14, fetched; both quotes confirmed, date and publisher confirmed
+- Verified 2: 2026-09-14, re-fetched before the draft was finished, unchanged
+- Used in: xiaohongshu-account-not-growing
+- Notes: The strongest dated source for "limiting traffic" being an official measure and for brands carrying a score. The scale of the brand score is not on this page. Self-media claims that the platform's official term is 流量异常 rather than 限流 were not confirmed anywhere; this page uses 限流.
+
+### Xiaohongshu AI-hosted account announcement, March 2026: two tiers of treatment
+- Value: qualitative. Occasional use of AI-hosted tools to write or post notes or to interact: graded measures, "警告、限制内容分发等梯度处理措施". Accounts registered, posted and run directly through AI-hosted tools, or whose every public note is AI-posted: "予以封禁处理". Effective immediately (即日起)
+- As of: March 2026 (article dated 2026-03-10)
+- Source: 21st Century Business Herald (21世纪经济报道)
+- URL: https://www.21jingji.com/article/20260310/herald/e3509f333c191c22cc1160c8ab49f7fd.html
+- Verified 1: 2026-09-14, fetched; both tiers, the definition of AI托管 and the date confirmed
+- Verified 2: 2026-09-14, re-fetched before the draft was finished, unchanged
+- Used in: xiaohongshu-account-not-growing
+- Notes: Corroborated by Beijing Daily (北京日报) via Sina Finance, same date, https://finance.sina.com.cn/roll/2026-03-10/doc-inhqphnp6200964.shtml. The platform distinguishes AI-assisted creation (allowed) from AI-hosted operation (banned).
+
+### Xiaohongshu in-app checks for a limited note or account
+- Value: qualitative, UI description. The note boost (薯条) promotion page shows "笔记符合社区规范未达成" on a note the platform will not promote; note appeals run from the app menu through 帮助与客服 to 笔记申诉 and the specific note; searching your own account ID or nickname in the search bar shows whether recent notes are indexed
+- As of: March 2025 (article dated 2025-03-03)
+- Source: Woshipm (人人都是产品经理)
+- URL: https://www.woshipm.com/share/6186730.html
+- Verified 1: 2026-09-14, fetched; all three descriptions confirmed, date confirmed
+- Verified 2: 2026-09-14, re-fetched before the draft was finished, unchanged
+- Used in: xiaohongshu-account-not-growing
+- Notes: Operations press, not platform documentation, used only to describe where the checks sit in the app. The same page says normal notes are indexed in about 10 minutes; NOT cited. The account appeal path (帮助与客服 > 账号申诉 > 开始检测) appears only on Zhihu and was not cited by path.
+
+### Xiaohongshu appeal review time
+- Value: the platform review cycle for an appeal is usually 1 to 3 working days (通常为1至3个工作日)
+- As of: December 2025 (article dated 2025-12-15)
+- Source: New Rank (新榜有赚)
+- URL: https://a.newrank.cn/trade/news/5940
+- Verified 1: 2026-09-14, fetched; sentence and date confirmed
+- Verified 2: 2026-09-14, re-fetched before the draft was finished, unchanged
+- Used in: xiaohongshu-account-not-growing
+- Notes: Trade-press statement, not a platform commitment. The same page says serious or repeated violations may not be restored and may not be appealable.
+
+### Xiaohongshu creator data center: per-note diagnosis and traffic sources
+- Value: qualitative. The data center offers a per-note diagnosis (笔记诊断) with specific suggestions ("点击可以查看具体建议"); reads may come from recommendation, search, shares or the profile page
+- As of: March 2024 (article dated 2024-03-05)
+- Source: Niaoge Biji (鸟哥笔记), author 古牧聊数据
+- URL: https://www.niaogebiji.com/article-666136-1.html
+- Verified 1: 2026-09-14, fetched; both sentences confirmed in the free half of the page, date confirmed
+- Verified 2: 2026-09-14, re-fetched before the draft was finished, unchanged
+- Used in: xiaohongshu-account-not-growing
+- Notes: Page is half paywalled; the cited sentences sit in the free half. Older than 12 months. The same page's creator and note-volume figures (August 2023) are superseded and must not be cited. The platform's own creator service site (creator.xiaohongshu.com) requires login and could not be fetched.
 
 ## Regulatory and legal
 
@@ -452,7 +562,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://www.huxiu.com/article/4861801.html
 - Verified 1: 2026-09-11, fetched, "2025年，小红书蒲公英平台的品牌邀约量达到2700万次，同比增长34%" and "75%的日活用户浏览推荐内容，77%的日活用户通过搜索解决问题" confirmed
 - Verified 2: 2026-09-11, re-fetched, both strings unchanged
-- Used in: xiaohongshu-marketing-cost, xiaohongshu-algorithm
+- Used in: xiaohongshu-marketing-cost, xiaohongshu-algorithm, xiaohongshu-account-not-growing
 - Notes: Same article repeats the platform's 400 million MAU and 800 million daily searches, which are already logged above. The 77% search figure is the strongest published basis for search-coverage seeding arithmetic; the platform publishes no seeding volume benchmark.
 
 ### Xiaohongshu commercial governance: Community Convention 2.0 and enforcement volumes
@@ -462,7 +572,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://cn.chinadaily.com.cn/a/202601/20/WS696eef27a310942cc499bf9f.html
 - Verified 1: 2026-09-11, fetched, "去年3月至8月底，通过系统化、全链路治理，小红书封禁虚假账号超1200万个，处置虚假营销笔记1376万篇，清理虚假评论超3.6亿条" confirmed; "去年" resolves to 2025 for a January 2026 article
 - Verified 2: 2026-09-11, re-downloaded with curl, all four strings plus 社区公约2.0 and 有序经营 still present
-- Used in: xiaohongshu-marketing-cost, xiaohongshu-algorithm
+- Used in: xiaohongshu-marketing-cost, xiaohongshu-algorithm, xiaohongshu-account-not-growing
 - Notes: Use for the cost of not filing paid notes through Pugongying. The article also gives 534,200 accounts and 4.598 million notes actioned for divisive content since 1 January 2025; not cited. An older enforcement figure (2,456 brands penalized, June to July 2023, 鸟哥笔记 2023-08-09) was found and not used, superseded by this one.
 
 ### Xiaohongshu Pugongying marketplace mechanics and creator credit scoring
