@@ -357,8 +357,7 @@ completo. Sobre la plataforma en sí, nuestra
 [página de agencia de RedNote](/es/agencia-rednote/) detalla qué cubre un
 mandato mensual en Xiaohongshu.
 
-El artículo de la semana que viene explicará cómo posiciona las notas el
-algoritmo de Xiaohongshu en 2026, la capa que sostiene todo lo anterior.
+La [guía del algoritmo de Xiaohongshu](/es/analisis/xiaohongshu-algorithm/) explica cómo se seleccionan y ordenan las notas, un proceso que condiciona todo el trabajo anterior.
 
 ## Preguntas frecuentes
 

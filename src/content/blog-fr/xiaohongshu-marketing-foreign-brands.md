@@ -360,9 +360,7 @@ d’ensemble. Sur la plateforme elle-même, notre
 [page agence RedNote](/fr/agence-rednote/) détaille ce que couvre un
 accompagnement mensuel.
 
-L’article de la semaine prochaine expliquera comment l’algorithme de
-Xiaohongshu classe les notes en 2026, soit la couche qui soutient tout ce qui
-précède.
+Le [guide de l’algorithme Xiaohongshu](/fr/decryptages/xiaohongshu-algorithm/) explique comment les notes sont sélectionnées et classées, un mécanisme dont dépend l’ensemble de ce travail.
 
 ## Questions fréquentes
 

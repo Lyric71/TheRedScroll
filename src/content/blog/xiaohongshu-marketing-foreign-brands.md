@@ -328,8 +328,7 @@ marketing costs in 2026](/insights/china-social-media-marketing-cost/), walks th
 if you want the wider picture. For the platform itself, our [RedNote agency
 page](/rednote-agency/) describes what a monthly Xiaohongshu engagement covers.
 
-Next week's piece covers how the Xiaohongshu algorithm ranks notes in 2026,
-which is the layer under everything in this guide.
+Our guide to [how the Xiaohongshu algorithm ranks notes in 2026](/insights/xiaohongshu-algorithm/) covers the layer under everything in this guide.
 
 ## Frequently asked questions
 

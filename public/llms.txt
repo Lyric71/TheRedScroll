@@ -54,6 +54,8 @@ Founded by Cyril Drouin, former CEO of Publicis Commerce and Performance Marketi
 - [Beauty and skincare marketing in China](https://www.theredscroll.com/industries/beauty-skincare/): NMPA filing, claim rules, Xiaohongshu search and KOC seeding for beauty brands (published 2026-09-11)
 - [Xiaohongshu marketing cost in 2026](https://www.theredscroll.com/insights/xiaohongshu-marketing-cost/): Six cost lines, from the 600-yuan verification to KOC seeding, KOL fees, paid boosts and the agency fee, with three worked examples (published 2026-09-14)
 
+- [How the Xiaohongshu algorithm works](https://www.theredscroll.com/insights/xiaohongshu-algorithm/): Published recommendation mechanics, search behavior and four note analytics ratios (published 2026-09-15)
+
 ## Localized versions
 
 - [French](https://www.theredscroll.com/fr/): Site in French

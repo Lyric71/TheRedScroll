@@ -1,20 +1,16 @@
 ---
-title: How the Xiaohongshu Algorithm Works
-slug: xiaohongshu-algorithm
-description: The Xiaohongshu traffic pool model explained: the four signals that decide distribution, why the first hour matters, and how to read your note.
-excerpt: What the platform's own engineers have said about distribution, what nobody publishes, and how to read your note analytics instead of guessing.
-template: insight
+title: "How the Xiaohongshu algorithm works in 2026"
+description: "The platform's own engineering team has described the machine that decides who sees your note. Most of what circulates in English about the Xiaohongshu algorithm is not from them."
+metaTitle: "How the Xiaohongshu Algorithm Works"
+metaDescription: "The Xiaohongshu traffic pool model explained: the four signals that decide distribution, why the first hour matters, and how to read your note."
+publishDate: 2026-09-15
+author: "TheRedScroll"
+platforms: ["rednote"]
+category: "Platforms"
+keywords: ["xiaohongshu algorithm","xiaohongshu traffic pool","rednote algorithm","xiaohongshu search","xiaohongshu note analytics"]
+featured: false
+featuredImage: "/images/blog/xiaohongshu-algorithm.webp"
 ---
-
-<!-- HERO SECTION -->
-
-# How the Xiaohongshu algorithm works in 2026
-
-The platform's own engineering team has described the machine that decides
-who sees your note. Most of what circulates in English about the Xiaohongshu
-algorithm is not from them.
-
-<!-- INTRODUCTION -->
 
 Your note stalled at a few hundred views. Somebody told you it fell out of
 the first traffic pool, and somebody else quoted a scoring formula with
@@ -34,8 +30,6 @@ Two of those six rows say the same thing: nobody publishes it. That is the
 real state of public knowledge about this platform, and it is where most
 guides start filling in numbers of their own. Every source below was checked
 twice in September 2026.
-
-<!-- SECTION: What a traffic pool is -->
 
 ## What a traffic pool actually is
 
@@ -71,8 +65,6 @@ And the competition is large.
 Nobody publishes the rung sizes. Not the platform. Not its engineers, and no
 regulator has ever asked them to. Every ladder you have seen (200, then 2,000, then 20,000) traces
 back to an operator post quoting another operator post. We left it out.
-
-<!-- SECTION: The four signals -->
 
 ## The four things the Xiaohongshu algorithm reads first
 
@@ -121,8 +113,6 @@ engineering talk and in no filing. The Chinese post most often credited with
 it introduces the formula as the version that circulates most widely, which
 is not a source. We do not use it, and we would not price a campaign on it.
 
-<!-- SECTION: The first hour -->
-
 ## Why the first hour matters more than the first day
 
 Because Xiaohongshu (小红书) is built around fresh notes, and because the
@@ -155,8 +145,6 @@ outcome is short, and it is at the start. Answer comments while they arrive.
 Post when the people you want are holding their phones, not when your head
 office is at its desk. Do not publish six notes in a row and then nothing for
 nine days, because each one lands in a market that has already restocked.
-
-<!-- SECTION: Search and feed -->
 
 ## Search and feed are two different machines
 
@@ -205,9 +193,7 @@ And a large share of it is shopping.
 
 The practical consequence: a note can flop in the feed and still earn for a
 year, if it is the best answer to a question people keep asking. Our guide to
-Xiaohongshu marketing for foreign brands covers the account side of this.
-
-<!-- SECTION: What the ranking reads -->
+[Xiaohongshu marketing for foreign brands](/insights/xiaohongshu-marketing-foreign-brands/) covers the account side of this.
 
 ## Tags, titles and covers: what the ranking actually reads
 
@@ -235,8 +221,6 @@ an introduction that clears its throat for four lines has already spent it.
 
 No platform source publishes a keyword density, a title length or a tag
 count. Anyone who quotes one is quoting themselves.
-
-<!-- SECTION: Held back -->
 
 ## The ways a note gets held back without a warning
 
@@ -286,8 +270,6 @@ reports what it actioned in aggregate, six months at a time. Your first
 signal is the analytics panel, which is why the next section is the one that
 matters most.
 
-<!-- SECTION: Reading your own analytics -->
-
 ## How to read your own note analytics
 
 Your account is the only benchmark you can verify. Every market average you
@@ -319,8 +301,6 @@ Track those four on every note for eight weeks and you will know more about
 your own distribution than any published guide can tell you, including this
 one.
 
-<!-- SECTION: Tracing a note -->
-
 ## Tracing one note, from post to plateau
 
 This traces the mechanics, not one of our accounts. We do not publish client
@@ -341,10 +321,8 @@ and telling them apart is most of the job.
 
 For the account setup that sits under all of this, see our guide to
 Xiaohongshu business account setup. For what the work costs once you are
-running, see our Xiaohongshu marketing cost guide. The RedNote agency page
+running, see our [Xiaohongshu marketing cost guide](/insights/xiaohongshu-marketing-cost/). The [RedNote agency page](/rednote-agency/)
 lists what we run for clients on the platform.
-
-<!-- SECTION: FAQ -->
 
 ## Frequently asked questions
 
@@ -372,119 +350,8 @@ gives the system real signals to read. A note that earns search traffic keeps
 earning it for months regardless of when it went up. No platform source
 publishes a best hour to post.
 
-<!-- CTA -->
-
 ## Stop guessing at your own distribution
 
 Send us the account. We will read the last ninety days of note analytics,
 tell you which of the four signals is failing, and show you the search queries
 you are not being pulled for.
-
-CTA: Book a call
-
-<!-- =====================================================================
-FEATURE IMAGE: INSTRUCTION FOR CLAUDE CODE
-
-Generate the feature (hero) image from the prompt below with the
-generate-image-openai skill, convert to webp, then wire it in as the
-article's featured image and OG image.
-
-- Save to:    public/images/blog/xiaohongshu-algorithm.webp
-- Reference:  /images/blog/xiaohongshu-algorithm.webp
-- Format:     .webp, landscape 3:2, web-optimized (China CDN friendly)
-- Style rule: candid normal-life photo with real-life defects, China
-              setting, only Chinese people, Chinese social platforms
-              visible on screen (WeChat, Xiaohongshu, Douyin, Weibo). No
-              AI polish, no diagrams, no infographics, no watermark.
-
-FIVE VISUAL CONCEPTS CONSIDERED (iteration 13):
-
-1. Abstract concentric layered shapes suggesting distribution tiers, the
-   brief's subject hint. Rejected: an abstract render is a diagram, fails
-   the China rule and the photography rule outright.
-2. A Shenzhen content creator at a kitchen table checking a note's
-   analytics panel on her phone the morning after posting, laptop open on
-   the Xiaohongshu creator dashboard. Selected and written below.
-3. A Chongqing bubble tea shop owner filming a note on a phone clamped to a
-   tripod. Rejected: shows production, not distribution, which is what the
-   article is about.
-4. A Nanjing co-working desk with two people arguing over a printed list of
-   search keywords. Rejected: too close to the Xi'an cost-sheet hero used
-   for 02A, and no analytics on screen.
-5. A night market stall in Wuhan with a phone showing the Xiaohongshu search
-   results page. Rejected: strong scene, but the search page alone does not
-   carry the analytics idea the article turns on.
-
-IMAGE PROMPT (use verbatim):
-
-Candid phone snapshot in a small apartment kitchen in Shenzhen early on a weekday morning. A Chinese woman in her late twenties in a loose gray t-shirt sits sideways at a cluttered kitchen table, elbow on the table, holding her phone up close and frowning slightly at it. The phone screen clearly shows a Chinese social app analytics panel in the style of the Xiaohongshu creator dashboard: white background, a red header bar, a line chart trending flat, rows of Chinese labels with small numbers beside them. Her laptop is open beside her at an angle and shows the Xiaohongshu app interface with a grid of lifestyle note thumbnails and Chinese captions, red accents on white. A second older phone lies face up next to a bowl, playing a vertical Douyin video with Chinese comment text scrolling over it. Around them the ordinary mess of a weekday morning: a half-eaten bowl of congee with a spoon resting in it, a stainless steel thermos, a torn courier bag, a pink hair clip, two charger cables running off the table edge, a stack of unopened mail, a potted green plant on the windowsill behind her. Warm morning light from a window on the right mixed with a cool ceiling light, slightly tilted handheld framing, the corner of a refrigerator cropped at the left of the frame. Shot like a recent flagship smartphone photo in good light: the entire scene in crisp, sharp focus, deep depth of field, fine detail in the fabric, the cables, the congee and the table surface, all three screen interfaces sharp and legible. No motion blur, no soft focus, no bokeh, no smudges, no grain or sensor noise, no haze. Real everyday moment, unposed, not a polished studio render, no watermark, no captions. No brand names or logos on the thermos, the bowl, the laptop lid or any object; the only logos allowed are inside the app interfaces on the screens.
-
-(Generated Sept 11, 2026, gpt-image-2 at high quality, 1536x1024. Accepted on
-the first attempt. convert-hero.mjs scored the full frame at 1406.1 and the
-100% crop at 1436.9, against floors of 120 and 200. Both were opened and
-checked: the data center header, the account overview numbers, the seven-day
-trend chart, the Xiaohongshu logo and note grid on the laptop and the vertical
-video on the second phone are all legible with no smearing. City rotation:
-Shanghai, Chengdu, Hangzhou, Guangzhou and Xi'an were used for the first five
-heroes, so this one is Shenzhen. The figures visible on the phone screen are
-scene dressing produced by the image model, not data, and are never referenced
-in the copy.)
-===================================================================== -->
-
-<!-- SCHEMA
-Type: Article
-FAQPage: yes, 3 questions
-Breadcrumb: Home > Insights > How the Xiaohongshu Algorithm Works
-Author: TheRedScroll
-datePublished: 2026-09-15
--->
-
-<!-- ASSET BRIEF
-TABLES:
-  1. Published versus not published (introduction): six reader questions, the
-     published answer where one exists, and the source. Two rows lack
-     published figures. This is the page's centerpiece and the reason it
-     beats a competitor guide. Do not fill the blank rows.
-  2. The four signals (four signals section): signal, what the system reads,
-     what you control, published weight. The last column reads "None" three
-     times on purpose. Keep it.
-  3. Feed versus search (search and feed section): six rows comparing what
-     starts distribution, peak window, decay, what you tune, what it suits
-     and how it fails.
-  4. Note lifecycle (tracing a note section): stage, what is happening, what
-     you see in the dashboard, what a stall at that stage means. Label it as
-     mechanics, not measured data. No view counts anywhere in this table.
-CHARTS:
-  Line chart, "Xiaohongshu daily searches, 2023 to 2026": mid-2023 about 300
-  million, Q4 2024 about 600 million, May 2026 about 800 million. Three
-  points only, no interpolation implied between them, sources labeled per
-  point (Zhou Tian Finance via 199IT for the first two, the platform figure
-  for the third). Ink line, vermillion for the 2026 point only.
-  Do NOT build the five-stage traffic pool escalation diagram the brief asks
-  for. No pool sizes are published, so the diagram would have to invent its
-  own axis. The note lifecycle table replaces it.
-SCREENSHOTS:
-  Annotated creator dashboard view showing the four ratios in the analytics
-  section, with account name, follower count and all absolute numbers
-  removed, not blurred. BLOCKED until client sign-off, see below. Until then
-  ship the section without a screenshot.
-DOWNLOADS: none
-INTERNAL LINKS:
-  "our guide to Xiaohongshu marketing for foreign brands" (search and feed section) -> /insights/xiaohongshu-marketing-foreign-brands/
-  "our guide to Xiaohongshu business account setup" (tracing a note section) -> /insights/xiaohongshu-business-account-setup/
-  "our Xiaohongshu marketing cost guide" (tracing a note section) -> /insights/xiaohongshu-marketing-cost/
-  "The RedNote agency page" (tracing a note section) -> /rednote-agency/
-  IN-LINKS to add on publish: from /insights/xiaohongshu-marketing-foreign-brands/
-  per the brief. Note that /insights/xiaohongshu-business-account-setup/ is
-  brief 03B and is not published yet; if it is still missing at publish time,
-  leave that reference as plain text and wire it when 03B goes live.
-CLIENT SIGN-OFF NEEDED:
-  TODO: client sign-off. Brief 02B asks for a real traffic pool progression
-  and a note traced to 40,000 views from an account we run, plus an annotated
-  analytics screenshot. None of it is in sources/verified-sources.md, which
-  lists "Xiaohongshu traffic pool progression from a live account (brief 02B)"
-  under Needed. No first-party figure was estimated. The article ships
-  complete without it. To add it later, the data pull needs the same
-  treatment as brief 13D: named account, sample period, exclusions and
-  written clearance, logged in the first-party section of the ledger.
--->

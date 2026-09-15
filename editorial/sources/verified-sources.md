@@ -134,7 +134,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://finance.sina.com.cn/jjxw/2026-05-27/doc-inhziqxq9291575.shtml
 - Verified 1: 2026-09-07, fetched, "月活跃用户已突破4亿，日搜索量高达8亿" and date confirmed
 - Verified 2: 2026-09-07, re-fetched before draft finished, unchanged
-- Used in: xiaohongshu-marketing-foreign-brands, beauty-skincare, xiaohongshu-algorithm, xiaohongshu-account-not-growing
+- Used in: xiaohongshu-marketing-foreign-brands, beauty-skincare, xiaohongshu-algorithm, xiaohongshu-account-not-growing, fashion-apparel
 - Notes: Platform's own figure, global and all devices. Pair with the QuestMobile domestic count below when an independent number is asked for.
 
 ### Xiaohongshu domestic monthly active users, QuestMobile
@@ -204,7 +204,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://www.niaogebiji.com/article-482538-1.html
 - Verified 1: 2026-09-07, fetched, "普通模式收取10%，优效模式收取20%" confirmed
 - Verified 2: 2026-09-07, re-fetched, unchanged
-- Used in: xiaohongshu-marketing-foreign-brands, beauty-skincare, xiaohongshu-algorithm, xiaohongshu-account-not-growing
+- Used in: xiaohongshu-marketing-foreign-brands, beauty-skincare, xiaohongshu-algorithm, xiaohongshu-account-not-growing, fashion-apparel
 - Notes: Older than 12 months. The rule is still applied by the platform, but the Pugongying help center (pgy.xiaohongshu.com) blocks fetches. Replace with a platform page when one can be fetched.
 
 ### WeChat Official Account verification for overseas entities: review time and payment
@@ -284,7 +284,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://www.36kr.com/newsflashes/3758099821871879
 - Verified 1: 2026-09-11, fetched with curl, "平台每天有3900万用户产生商品求购行为，主动求购达1.4亿人次" and "4月8日，小红书电商举办GROW商家大会" confirmed, page dated 2026-04-08
 - Verified 2: 2026-09-11, re-fetched with curl, both strings and the date unchanged
-- Used in: xiaohongshu-algorithm, xiaohongshu-account-not-growing
+- Used in: xiaohongshu-algorithm, xiaohongshu-account-not-growing, fashion-apparel
 - Notes: Platform-disclosed at its own conference, reported by a dated trade outlet, which is the strongest chain available for a commercial-intent figure. Pairs with the WILL 2026 entry (about 200 million users a month seeking purchase advice) and measures a different thing: daily behavior, not monthly reach. Do not add the two together.
 
 ### Xiaohongshu multimodal content understanding across search and recommendation
@@ -487,7 +487,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://www.gov.cn/gongbao/2023/issue_10506/202306/content_6885261.html
 - Verified 1: 2026-09-10, fetched, "通过知识介绍、体验分享、消费测评等形式推销商品或者服务，并附加购物链接等购买方式的，广告发布者应当显著标明“广告”" and Article 19 confirmed
 - Verified 2: 2026-09-10, re-fetched, unchanged
-- Used in: beauty-skincare, xiaohongshu-algorithm
+- Used in: beauty-skincare, xiaohongshu-algorithm, fashion-apparel
 - Notes: This is the rule behind Xiaohongshu's Pugongying declaration requirement. Article 8 on the same page bans disguised health and wellness content for medical, drug, device and health-food products.
 
 ## Market and industry
@@ -532,7 +532,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://longadvisory.eu/en/kol-vs-koc-marketing-in-china-which-delivers-better-roi/
 - Verified 1: 2026-09-03, fetched, figures and date confirmed
 - Verified 2: 2026-09-03, re-fetched, unchanged
-- Used in: china-social-media-marketing-cost, beauty-skincare
+- Used in: china-social-media-marketing-cost, beauty-skincare, fashion-apparel
 - Notes: English-language consultancy source; no Chinese trade-press equivalent with dated per-post ranges was found in this run.
 
 ### Average KOL collaboration cost, Xiaohongshu versus Douyin
@@ -562,7 +562,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://www.huxiu.com/article/4861801.html
 - Verified 1: 2026-09-11, fetched, "2025年，小红书蒲公英平台的品牌邀约量达到2700万次，同比增长34%" and "75%的日活用户浏览推荐内容，77%的日活用户通过搜索解决问题" confirmed
 - Verified 2: 2026-09-11, re-fetched, both strings unchanged
-- Used in: xiaohongshu-marketing-cost, xiaohongshu-algorithm, xiaohongshu-account-not-growing
+- Used in: xiaohongshu-marketing-cost, xiaohongshu-algorithm, xiaohongshu-account-not-growing, fashion-apparel
 - Notes: Same article repeats the platform's 400 million MAU and 800 million daily searches, which are already logged above. The 77% search figure is the strongest published basis for search-coverage seeding arithmetic; the platform publishes no seeding volume benchmark.
 
 ### Xiaohongshu commercial governance: Community Convention 2.0 and enforcement volumes
@@ -584,6 +584,106 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-11, re-downloaded with curl and re-extracted, unchanged
 - Used in: xiaohongshu-marketing-cost
 - Notes: Broker research, the only one in the ledger. Its Xiaohongshu 2024 revenue figures (over 30 billion yuan total, 21.6 billion of it advertising) are attributed inside the report to a second-hand outlet (外参观察), not to a filing. Chain citation: do not cite those two numbers.
+
+### China apparel retail growth and online share, 2025
+- Value: retail sales of clothing, footwear, hats and knitwear (服装、鞋帽、针纺织品类) grew 3.2% in 2025 across units above the designated size; total retail sales 501,202 hundred million yuan, up 3.7%; online retail of physical goods 130,923 hundred million yuan, up 5.2%, 26.1% of total retail sales
+- As of: 2025 full year (communique published 2026-02-28)
+- Source: National Bureau of Statistics of China (国家统计局), 2025 Statistical Communique on National Economic and Social Development
+- URL: https://www.stats.gov.cn/sj/zxfb/202602/t20260228_1962662.html
+- Verified 1: 2026-09-15, fetched, "服装、鞋帽、针纺织品类增长3.2%" and "全年实物商品网上零售额130923亿元，比上年增长5.2%，占社会消费品零售总额比重为26.1%" confirmed
+- Verified 2: 2026-09-15, re-fetched with curl before the draft was finished, both strings confirmed after stripping span tags
+- Used in: fashion-apparel
+- Notes: Same page as the cosmetics entry above. "Units above the designated size" (限额以上单位) is a subset of retail. The communique gives the growth rate only, no absolute apparel figure.
+
+### China online clothing sales growth, January to July 2026
+- Value: within online goods retail, clothing (穿类商品) grew 5.8%; total retail sales of consumer goods 287,744 hundred million yuan, up 1.2%; online goods retail 73,965 hundred million yuan, up 4.6%
+- As of: January to July 2026 (release dated 2026-08-17)
+- Source: National Bureau of Statistics of China (国家统计局), January to July 2026 retail sales release
+- URL: https://www.stats.gov.cn/sj/zxfb/202608/t20260817_1965052.html
+- Verified 1: 2026-09-15, fetched, "社会消费品零售总额287744亿元，同比增长1.2%" and "吃类、穿类、用类商品分别增长16.9%、5.8%、1.1%" confirmed
+- Verified 2: 2026-09-15, re-fetched with curl, both strings confirmed after stripping span tags
+- Used in: fashion-apparel
+- Notes: Monthly release; superseded each month. Recheck the period before reuse. The same page gives 限额以上 clothing retail +5.8% for the period, a different measure with the same value.
+
+### Douyin e-commerce GMV growth, August 2024 to July 2025
+- Value: Douyin e-commerce GMV up 34% year on year over the twelve months August 2024 to July 2025; shelf e-commerce (货架电商) GMV up 49%; merchants subsidized over 19 billion yuan year to date at end of August 2025
+- As of: August 2024 to July 2025 (article dated 2025-09-24)
+- Source: 36Kr (36氪), exclusive report on Douyin e-commerce's annual strategy, by 李小霞
+- URL: https://www.36kr.com/p/3480136952077441
+- Verified 1: 2026-09-15, fetched, "过去一年（2024年8月-2025年7月）抖音电商GMV同比增长34%" and "货架电商GMV同比增长49%" confirmed
+- Verified 2: 2026-09-15, re-fetched with curl, both strings confirmed
+- Used in: fashion-apparel
+- Notes: Platform-disclosed growth rate reported by a dated trade outlet. No absolute GMV on the page; do not pair with third-party GMV estimates as if they were disclosed.
+
+### China live commerce transaction scale and users, 2025
+- Value: live commerce transaction scale 69,461 hundred million yuan in 2025, up 30.42%; 660 million users, up 6.45%; average annual spend per user 12,362 yuan
+- As of: 2025 full year (report published 2026-05-07)
+- Source: 100EC (网经社), E-commerce Research Center, China Live Commerce Market Data Report 2025
+- URL: https://www.100ec.cn/detail--6659027.html
+- Verified 1: 2026-09-15, fetched, "2025年直播电商交易规模达到69461亿元，同比增长30.42%" and "2025年直播电商用户规模达6.6亿人" confirmed
+- Verified 2: 2026-09-15, re-fetched (curl with browser headers, then the fetch tool), both strings and the 2026-05-07 date confirmed
+- Used in: fashion-apparel
+- Notes: Research-center estimate from the outlet's own database, not a regulator figure. The per-platform figures on the same page (Douyin 4.4 trillion and so on) are the outlet's estimates and must not be cited as platform disclosures. The site serves a block page to bare curl; send browser headers.
+
+### China live commerce users and penetration, 2024
+- Value: live commerce users close to 600 million; penetration rose from 4.9% in 2019 to 37.8% in 2024; 2024 online retail 15.5 trillion yuan, up 7.2%
+- As of: 2024 (report released 2025-07-27, page dated 2025-07-28)
+- Source: China Federation of Internet Societies (中国网络社会组织联合会) and China International Electronic Commerce Center (中国国际电子商务中心), China New E-commerce Development Report 2025, carried by the Cyberspace Administration of China (网信办)
+- URL: https://www.cac.gov.cn/2025-07/28/c_1755417344368120.htm
+- Verified 1: 2026-09-15, fetched, "直播电商用户规模近6亿，渗透率从2019年的4.9%跃升至2024年的37.8%" confirmed
+- Verified 2: 2026-09-15, re-fetched with curl, string confirmed
+- Used in: fashion-apparel
+- Notes: The strongest chain available for a live commerce user figure: a report co-written by a Ministry of Commerce institute, carried on the regulator's site. Cite with both bodies named.
+
+### China e-commerce return rates, Double 11 2025, and women's wear
+- Value: overall e-commerce return rate 61.5% during Double 11 2025; apparel livestreaming return rate over 80%; women's wear online return rates usually 50% to 60%
+- As of: Double 11 2025 (report dated 2026-01-11)
+- Source: CCTV News (央视新闻) investigation (Weekly Quality Report), carried by Beijing Daily (京报网)
+- URL: https://news.bjd.com.cn/2026/01/11/11517038.shtml
+- Verified 1: 2026-09-15, fetched, "电商综合退货率为61.5%", "服装直播领域退货率超80%" and "女装网购退货率普遍徘徊在50%至60%之间" confirmed, byline 央视网
+- Verified 2: 2026-09-15, re-fetched with curl, all three strings confirmed
+- Used in: fashion-apparel
+- Notes: Reporter investigation; the page names no upstream data body. Cite CCTV as the original reporting and Beijing Daily as the carrier. Same figures on Sina Tech via IT之家 the same day: https://finance.sina.com.cn/tech/digi/2026-01-11/doc-inhfxzzq0608430.shtml
+
+### Apparel return rates: day-to-day rate, women's wear livestream peak, and cost per return
+- Value: day-to-day return rate for clothing on one leading platform about 15% to 20%; women's wear livestream return rate 80% during Double 11 2024, some merchants 90%; each returned women's garment costs about 20 to 32 yuan in combined losses
+- As of: Double 11 2024 and mid 2025 (article dated 2025-06-16)
+- Source: Beijing News (新京报), 有理数 data column
+- URL: https://m.bjnews.com.cn/detail/1750036716129261.html
+- Verified 1: 2026-09-15, fetched, "日常退货率约为15%-20%", "女装直播退货率高达80%" and "每件女装退货会造成约20至32元的综合损耗" confirmed
+- Verified 2: 2026-09-15, re-fetched with curl, all three strings confirmed
+- Used in: fashion-apparel
+- Notes: The same page lists sizing inconsistency, fabric that cannot be judged on screen and no try-on as return causes, qualitatively. No percentage share for sizing exists in a dated primary; do not add one.
+
+### Xiaohongshu 618 fashion industry growth, 2024
+- Value: during 618 2024 (2024-05-01 to 06-30 versus the same period of 2023) fashion industry traffic up 23%, style searches up 125%, fashion orders up 219%
+- As of: 618 2024 (deck dated 2025-04-28)
+- Source: Xiaohongshu (小红书) commercial team, 2025 618 fashion industry closed-loop guide (2025小红书618服饰潮流行业闭环全攻略), data credited to the Xiaohongshu data platform (小红书数据中台), hosted by Shuidi Yanbao (水滴研报)
+- URL: https://www.sdyanbao.com/detail/880590
+- Verified 1: 2026-09-15, fetched, "24年 618服饰行业流量同比增长23%", "风格搜索同比增长125%", "订单量同比增长219%" and the data credit line confirmed
+- Verified 2: 2026-09-15, re-fetched with curl, all three figures confirmed
+- Used in: fashion-apparel
+- Notes: Platform-issued sales deck hosted by a report aggregator, not a platform web page. Cite as the platform's own figure and name the host. Growth rates only, from a low 2023 base for orders; do not present the 219% as a market growth rate.
+
+### Douyin apparel category growth leaders, 2025 autumn and winter report
+- Value: women's wear, men's wear and sports and outdoor lead apparel GMV growth on Douyin, each above 10%; sports and outdoor up 40%
+- As of: 2025 (report hosted 2025-05-06)
+- Source: Douyin E-commerce (抖音电商), 2025 brand apparel autumn and winter trend report (2025抖音电商品牌服饰秋冬趋势报告), hosted by Shuidi Yanbao (水滴研报)
+- URL: https://www.sdyanbao.com/detail/886015
+- Verified 1: 2026-09-15, fetched, "女装/男装/运动户外领跑GMV，增速均超10%" and "运动户外增速跃升40%" confirmed in the preview pages
+- Verified 2: 2026-09-15, re-fetched with curl, both strings confirmed
+- Used in: fashion-apparel
+- Notes: Platform-issued report; only the first ten pages are visible on the host. The period behind the growth rates is not stated on the visible pages; cite as "2025 report" without a measurement period.
+
+### Double 11 2025 all-platform sales and category leaders
+- Value: all-platform sales 16,950 hundred million yuan during Double 11 2025 (2025-10-07 to 11-11 versus 2024-10-14 to 11-11), up 14.2%; sports and outdoor, beauty and apparel had the three highest burst coefficients in phase one
+- As of: Double 11 2025 (article dated 2025-11-19)
+- Source: Jiemian (界面新闻), 一财商学院 column by 陆泓, citing Syntun (星图数据)
+- URL: https://www.jiemian.com/article/13657537.html
+- Verified 1: 2026-09-15, fetched, "16950亿元，同比增长14.2%" and "运动户外、美妆、服饰的爆发系数位居前三" confirmed
+- Verified 2: 2026-09-15, re-fetched with curl, both strings confirmed
+- Used in: fashion-apparel
+- Notes: Syntun is a third-party data house; the comparison windows differ by a week between years, as the article states. The per-platform category growth rates on the page (JD apparel +20.6%, Kuaishou apparel -5.4%) were not used.
 
 ## TheRedScroll first-party data
 
@@ -607,8 +707,19 @@ data.
 - Period: current as of 2026-09-08 (src/components/home/HowItWorks.astro)
 - Exclusions: none
 - Cleared for publication: yes, it is on the homepage
-- Used in: first-90-days-china-social-media, beauty-skincare
+- Used in: first-90-days-china-social-media, beauty-skincare, fashion-apparel
 - Notes: Cite as TheRedScroll homepage, https://www.theredscroll.com/. No per-platform verification turnaround figure exists in this ledger; brief 01C asked for one and the article used platform-published review times instead.
+
+### Camper case study results, as published
+- Value: followers 43,000 to 187,000 in 18 months across WeChat, RedNote (Xiaohongshu) and Weibo; engagement rate 1.2% to 4.7%; 38% of e-commerce traffic from RedNote; same-store sales up 31% year on year; no discount campaigns. Also on the page but not yet used: retention up 22%, purchase frequency 1.3 to 2.1 per customer a year
+- Sample: one client account set (Camper), three platforms
+- Period: 18 months, as stated on the case page (dates not published)
+- Exclusions: none stated on the page
+- Cleared for publication: the figures are already public on /work/camper/ with the client named and its account screenshots; the formal sign-off row below is still pending (brief 02D reused only what the page publishes and left a TODO marker; see logs/2026-09-15.md decision 1)
+- Verified 1: 2026-09-15, live page fetched and src/pages/work/camper.astro read, every figure confirmed
+- Verified 2: 2026-09-15, live page re-fetched with curl, "187K", "4.7%", "38%", "31%" confirmed
+- Used in: fashion-apparel
+- Notes: Cite as "TheRedScroll, Camper case study, September 2026, https://www.theredscroll.com/work/camper/". Industry label on the page: Fashion / Footwear. Platforms on the page: WeChat, RedNote, Weibo (no Douyin).
 
 <!-- Needed:
 
@@ -627,7 +738,7 @@ data.
 
 | Client | Figure | Brief | Cleared |
 |---|---|---|---|
-| Camper | 43K to 187K followers, 31% sales lift, 18 months | 03D, 02D | pending |
+| Camper | 43K to 187K followers, 31% sales lift, 18 months | 03D, 02D | pending. 02D (drafted 2026-09-15) reused only the figures already published on /work/camper/ and carries a TODO: client sign-off marker; formal clearance still wanted before 03D |
 | Viessmann | outcomes to confirm | 06D, 07D | pending |
 | iGuzzini | outcomes to confirm | 06D, 07D | pending |
 | Marriott | outcomes to confirm | 05D | pending |

@@ -13,9 +13,7 @@
  *        [--note "<text>"]
  *
  * Locale URLs are derived from which content files exist for the slug:
- * src/content/blog/<slug>.md -> /insights/<slug>/, blog-fr -> /fr/insights/,
- * blog-zh -> /zh/insights/, blog-de -> /de/insights/, blog-es -> /es/analisis/.
- * Industry and tool pages are English only.
+ * Uses the live localized section routes for insights, industries and tools.
  *
  * RESEND_API_KEY is read from .env.local / .env in the current directory or
  * from the environment. Pass --dry-run to print the email without sending.
@@ -58,20 +56,16 @@ function parseArgs(argv) {
 }
 
 function localeUrls(slug, section) {
-  if (section === 'industries' || section === 'tools') {
-    const file = path.join('src', 'content', section, `${slug}.md`);
-    return existsSync(file) ? [{ lang: 'en', url: `${SITE}/${section}/${slug}/` }] : [];
-  }
-  const map = [
-    { lang: 'en', dir: 'blog', route: `/insights/${slug}/` },
-    { lang: 'fr', dir: 'blog-fr', route: `/fr/insights/${slug}/` },
-    { lang: 'zh', dir: 'blog-zh', route: `/zh/insights/${slug}/` },
-    { lang: 'de', dir: 'blog-de', route: `/de/insights/${slug}/` },
-    { lang: 'es', dir: 'blog-es', route: `/es/analisis/${slug}/` },
-  ];
-  return map
-    .filter((m) => existsSync(path.join('src', 'content', m.dir, `${slug}.md`)))
-    .map((m) => ({ lang: m.lang, url: `${SITE}${m.route}` }));
+  const routes = {
+    insights: { en: '/insights', fr: '/fr/decryptages', zh: '/zh/guandian', de: '/de/analysen', es: '/es/analisis' },
+    industries: { en: '/industries', fr: '/fr/secteurs', zh: '/zh/hangye', de: '/de/branchen', es: '/es/sectores' },
+    tools: { en: '/tools', fr: '/fr/outils', zh: '/zh/gongju', de: '/de/tools', es: '/es/herramientas' },
+  };
+  if (!routes[section]) throw new Error(`Unknown section: ${section}`);
+  const collection = section === 'insights' ? 'blog' : section;
+  return Object.entries(routes[section])
+    .filter(([lang]) => existsSync(path.join('src', 'content', `${collection}${lang === 'en' ? '' : `-${lang}`}`, `${slug}.md`)))
+    .map(([lang, route]) => ({ lang, url: `${SITE}${route}/${slug}/` }));
 }
 
 function esc(s) {

@@ -363,8 +363,7 @@ größere Bild suchen. Zur Plattform selbst beschreibt unsere
 [RedNote-Agenturseite](/de/rednote-agentur/), was ein monatliches
 Xiaohongshu-Mandat umfasst.
 
-Der Text der kommenden Woche behandelt, wie der Xiaohongshu-Algorithmus 2026
-Notizen bewertet, also die Ebene unter allem, was hier steht.
+Wie die Plattform Beiträge auswählt und einordnet, erläutert unser [Leitfaden zum Xiaohongshu-Algorithmus](/de/analysen/xiaohongshu-algorithm/). Von diesen Abläufen hängt die Wirkung der hier beschriebenen Arbeit ab.
 
 ## Häufige Fragen
 
