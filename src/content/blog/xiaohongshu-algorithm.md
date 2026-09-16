@@ -268,7 +268,9 @@ year, seeding (种草) filed properly is the cheaper option.
 Nothing in the published rules promises you a notification. The platform
 reports what it actioned in aggregate, six months at a time. Your first
 signal is the analytics panel, which is why the next section is the one that
-matters most.
+matters most. The in-app checks that confirm a hold, and the six
+other things that stall an account, are in
+[seven reasons a Xiaohongshu account stops growing](/insights/xiaohongshu-account-not-growing/).
 
 ## How to read your own note analytics
 

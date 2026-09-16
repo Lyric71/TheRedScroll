@@ -685,6 +685,84 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: fashion-apparel
 - Notes: Syntun is a third-party data house; the comparison windows differ by a week between years, as the article states. The per-platform category growth rates on the page (JD apparel +20.6%, Kuaishou apparel -5.4%) were not used.
 
+### Xingtu client bill: three named fee lines and the platform service fee
+- Value: the client's cost is itemized as 任务服务费 (creator fee), 服务商服务费 (service provider fee) and 平台服务费 (platform technical fee). The platform service fee charged to the client is 5% of the first two combined on 指派 (assigned), 共创 (co-created), 招募 (recruitment) and 招商短剧 (sponsored drama) tasks, and 10% on 投稿任务 (open-call tasks); 星广联投 is free for a limited period. Payment is 预充值 (prepaid) and the platform does not start service until the balance is in. Non-mainland clients bear remittance fees, FX loss and any local withholding tax.
+- As of: June 2026 (page updated 2026-06-02 14:28:35)
+- Source: Ocean Engine (巨量引擎), Xingtu settlement management rules (巨量星图结算管理规则)
+- URL: https://www.xingtu.cn/help-center/author/133057
+- Verified 1: 2026-09-17, fetched by curl, full Chinese text read, "任务服务费及服务商服务费（若涉及）总额的5%", "总额的10%" and "汇款手续费及结汇产生的汇兑损益" confirmed
+- Verified 2: 2026-09-17, re-fetched, all strings unchanged
+- Used in: china-agency-pricing-models
+- Notes: The strongest published evidence in the ledger that a Chinese platform itemizes the agency fee separately from the creator fee. Reusable for any transparency or billing argument.
+
+### Xingtu creator-side fees: 5% on unbound creators, 3% on creator agencies
+- Value: the platform charges a 5% service fee only to 达人 not bound to an MCN; creators bound to an MCN pay nothing, and since April 3, 2023 the MCN pays the platform a 3% technical service fee
+- As of: August 2026 (page updated 2026-08-23 22:00:02)
+- Source: Ocean Engine (巨量引擎), Xingtu MCN onboarding handbook (巨量星图MCN机构入驻必读手册)
+- URL: https://www.xingtu.cn/help-center/mcn/109107
+- Verified 1: 2026-09-17, fetched by curl, "目前平台只针对未绑定MCN机构的达人收取5%的服务费" and "2023年4月3日起，MCN机构需支付巨量星图平台3%的技术服务费" confirmed
+- Verified 2: 2026-09-17, re-fetched, unchanged
+- Used in: china-agency-pricing-models
+
+### Xingtu deposit arithmetic, platform worked example
+- Value: a creator quoting 10,000 yuan produces a 10,500 yuan task total (10,000 plus a 5% platform fee), and the deposit is 10% of that, so 1,050 yuan
+- As of: September 2026 (page updated 2026-09-04 16:53:26)
+- Source: Ocean Engine (巨量引擎), Xingtu task deposit and price-change rules (任务支付订金&改价功能)
+- URL: https://www.xingtu.cn/help-center/demander/109324
+- Verified 1: 2026-09-17, fetched by curl, "客户共计支付订金应为1050元" confirmed
+- Verified 2: 2026-09-17, re-fetched, unchanged
+- Used in: china-agency-pricing-models
+
+### Tencent Ads rebate policy is set unilaterally, and account credit is non-refundable
+- Value: clause 6.1, Tencent alone sets and adjusts the 返货/返点 (bonus inventory and rebate) policy, which binds the advertiser once notified; clause 3.13, fees already paid for services not yet delivered are not refunded when the advertiser ends the buy; clause 5, the non-cash part of the account (虚拟金, 返货, 信用) is not refundable
+- As of: page carries no publication date; confirmed September 2026; the worked example inside the text is dated 2024
+- Source: Tencent Ads (腾讯广告), advertiser cooperation agreement (腾讯广告-广告主合作协议)
+- URL: https://e.qq.com/contract.html
+- Verified 1: 2026-09-17, fetched by curl, "返货/返点政策", "不予退还" and "不可退款" read verbatim in context
+- Verified 2: 2026-09-17, re-fetched, unchanged
+- Used in: china-agency-pricing-models
+- Notes: Undated page, logged on the same basis as the WeChat Moments budget entry above. Recheck the 2024 example year on reuse; if it moves, the agreement was revised.
+
+### Tencent service provider agreement: the provider holds and answers for the sub-client account
+- Value: a 子客 (sub-client) is a customer introduced by the service provider; the service provider registers and holds the account and is responsible for the sub-client's conduct and breaches; service providers may not compete through 低价 or 返货
+- As of: page carries no publication date; confirmed September 2026; the worked example inside the text is dated 2025
+- Source: Tencent Marketing (腾讯营销), service provider cooperation agreement (腾讯营销服务平台服务商合作协议)
+- URL: https://ad.qq.com/customer_service_cgi/v1/agreement/show?agreement_type=5
+- Verified 1: 2026-09-17, fetched by curl, clauses 1.4, 2.3, 3.13 and section 6 read verbatim
+- Verified 2: 2026-09-17, re-fetched, unchanged
+- Used in: china-agency-pricing-models
+- Notes: The source for "who owns the ad account" in any agency-selection or contract article.
+
+### China Advertising Law: written contract required between advertiser, operator and publisher
+- Value: Article 30 requires advertisers, advertising operators and advertising publishers to conclude written contracts for advertising activity. Article 34 requires operators and publishers to build and keep acceptance, review and archive systems, to verify supporting documents, and to refuse design, production or placement where content does not match those documents
+- As of: law in force since 2015-09-01, text as amended 2021
+- Source: Advertising Law of the People's Republic of China (中华人民共和国广告法), via the Chinese government portal
+- URL: https://www.gov.cn/guoqing/2021-10/29/content_5647620.htm
+- Verified 1: 2026-09-17, fetched, "应当依法订立书面合同" and "承接登记、审核、档案管理制度" confirmed verbatim
+- Verified 2: 2026-09-17, re-fetched, unchanged
+- Used in: china-agency-pricing-models
+- Notes: Same page as the Article 9 / 11 / 17 / 57 entry in the Regulatory section. Article 30 is the written-contract rule; Article 34 is the record-keeping duty that makes compliance checks real billable work.
+
+### China advertising industry revenue and development index, 2025
+- Value: full-year advertising business revenue passed 2 trillion yuan for the first time, at 20,502.1 亿元, up 32.6% year on year; the China advertising industry development index reached 143.3 points, up 11.6%; head enterprises grew 17.1% in Q1 2026
+- As of: 2025 full year (report released 2026-06-23)
+- Source: Xinhua News Agency (新华社), reporting the China Advertising Industry Development Index Report 2026 (中国广告业发展指数报告（2026）) from the State Administration for Market Regulation (国家市场监督管理总局) and China Economic Information Service (中国经济信息社)
+- URL: https://www.news.cn/20260623/6f2c784d1386418ca163ef25f9cf7f4b/c.html
+- Verified 1: 2026-09-17, fetched by curl, "达到20502.1亿元", "同比增长32.6%" and "143.3点，同比增长11.6%" confirmed
+- Verified 2: 2026-09-17, re-fetched, unchanged
+- Used in: china-agency-pricing-models
+- Notes: The 32.6% jump is far above prior-year growth and the news page does not explain the basis. Use it as a size and direction figure, not as an organic growth rate.
+
+### China advertiser budgets and stated challenges, 2026
+- Value: average company marketing budget growth expected at 10% for 2026, up 2 points on 2025 and the first rise in expected growth since 2022; 30% of advertisers expect total spend to rise (up 8 points) and 47% expect it to fall (down from 54%); actual 2025 growth was 8%. Top stated challenges for 2026: results hard to measure 52%, marketing ROI hard to improve 48%, media fragmentation 45%. Under budget pressure, 37% cut their own internal running cost, up 5 points. KOL cooperation is the format most plan to increase, 67%; seeding (种草) platforms lead media increases at 76%
+- As of: January 2026 (published 2026-01-14)
+- Source: China News Service Shanghai (中新网上海), reporting the 2026 China Digital Marketing Trends Report (2026中国数字营销趋势报告) from Miaozhen Marketing Science Institute (秒针营销科学院) with GDMS and Media360 (媒介360)
+- URL: https://www.sh.chinanews.com.cn/chanjing/2026-01-14/144009.shtml
+- Verified 1: 2026-09-17, fetched by curl, full article read; "企业营销预算平均增长10%", "30%的广告主认为...同比提升8个百分点", "47%认为会下降", "效果难测量(52%)", "营销ROI难提升(48%)", "媒介碎片化(45%)", "降低管理成本的比例达到37%" and "KOL合作(67%)" all confirmed
+- Verified 2: 2026-09-17, re-fetched, unchanged
+- Used in: china-agency-pricing-models
+- Notes: Survey of 198 advertisers across more than 20 industries plus 17 marketing scientists. Self-reported intent, not spend data. The 52% measurement figure is the most reusable line for any reporting or transparency article.
+
 ## TheRedScroll first-party data
 
 Everything here comes from accounts we run. It is cited as ours, with sample

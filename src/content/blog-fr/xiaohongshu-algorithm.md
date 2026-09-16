@@ -204,7 +204,7 @@ Pour une marque étrangère, payer directement un créateur hors plateforme cons
 
 Une commission évitée ne mesure pas le risque pris. Le contournement peut laisser une publicité sans déclaration, compliquer l’application du brief et exposer le créateur. Pour les opérations de recommandation (种草), une déclaration correcte fait partie du coût du travail.
 
-Les bilans publics de sanctions sont agrégés. Les règles ne garantissent pas que chaque compte recevra un avertissement. Pour repérer un changement, commencez par les statistiques.
+Les bilans publics de sanctions sont agrégés. Les règles ne garantissent pas que chaque compte recevra un avertissement. Pour repérer un changement, commencez par les statistiques. Les vérifications à mener dans l’application, et les six autres causes d’un compte à l’arrêt, figurent dans [sept raisons qui expliquent un compte Xiaohongshu à l’arrêt](/fr/decryptages/xiaohongshu-account-not-growing/).
 
 ## Quatre rapports à suivre dans votre tableau de bord
 

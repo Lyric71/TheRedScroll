@@ -201,7 +201,7 @@ Daneben gelten die gesetzlichen Vorgaben zur Kennzeichnung von Werbung in China.
 
 Eine umgangene Provision beseitigt das Risiko nicht gemeldeter Werbung nicht. Vorgaben aus dem Briefing sind womöglich schwerer durchzusetzen, und auch der Creator trägt die Folgen. Bei Produktempfehlungen (种草) gehört die ordnungsgemäße Meldung zur Arbeit.
 
-Die Plattform veröffentlicht zusammengefasste Sanktionszahlen. Eine individuelle Benachrichtigung verspricht sie in den öffentlichen Regeln nicht. Veränderungen sollten Marken deshalb zuerst in ihren eigenen Statistiken prüfen.
+Die Plattform veröffentlicht zusammengefasste Sanktionszahlen. Eine individuelle Benachrichtigung verspricht sie in den öffentlichen Regeln nicht. Veränderungen sollten Marken deshalb zuerst in ihren eigenen Statistiken prüfen. Welche Prüfungen in der App eine Sperre bestätigen und welche sechs weiteren Ursachen ein Konto ausbremsen, steht in [sieben Gründe, warum ein Xiaohongshu-Konto nicht mehr wächst](/de/analysen/xiaohongshu-account-not-growing/).
 
 ## Vier Kennzahlen zeigen, wo Beiträge Leser verlieren
 

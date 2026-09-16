@@ -202,7 +202,7 @@ A las reglas de la plataforma se añaden las obligaciones legales de identificar
 
 Una comisión evitada no elimina el riesgo de una publicidad sin declarar. También puede resultar más difícil exigir el cumplimiento del encargo y el creador también queda expuesto. En las recomendaciones de producto (种草), la declaración correcta forma parte del trabajo.
 
-Los informes públicos agrupan las sanciones. Las reglas no garantizan una notificación individual en cada caso. Revise las estadísticas de su cuenta para detectar cambios.
+Los informes públicos agrupan las sanciones. Las reglas no garantizan una notificación individual en cada caso. Revise las estadísticas de su cuenta para detectar cambios. Las comprobaciones dentro de la aplicación que confirman una limitación, y las otras seis causas de una cuenta estancada, están en [siete razones por las que una cuenta de Xiaohongshu deja de crecer](/es/analisis/xiaohongshu-account-not-growing/).
 
 ## Cuatro indicadores para localizar el problema
 
