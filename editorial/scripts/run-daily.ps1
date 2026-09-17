@@ -57,8 +57,8 @@ if ($Mode -eq 'draft' -and -not $Force) {
   }
 }
 
-# Always pull the best available model. Never a faster or smaller mode.
-$Model = 'claude-opus-5'
+# The shared runner uses: Fable, Opus, GPT-6 Astra, then GPT-5.6 Sol.
+$Model = 'fable'
 
 if ($Mode -eq 'draft') {
   $Prompt = @'
@@ -116,25 +116,8 @@ if ($Force) {
 # terminating errors under Stop, which killed earlier runs before they logged.
 $PromptFile = Join-Path $RunLogDir "$Stamp-$Mode.prompt.txt"
 [System.IO.File]::WriteAllText($PromptFile, $Prompt, (New-Object System.Text.UTF8Encoding($false)))
-$Claude = (Get-Command claude).Source
-$Cmd = "type `"$PromptFile`" | `"$Claude`" -p --model $Model --dangerously-skip-permissions --output-format text >> `"$RunLog`" 2>&1"
-# Retry on transient API failures (overloaded, rate limited, 5xx). Up to
-# three attempts, five minutes apart. Never fall back to a smaller model.
-$MaxAttempts = 3
-$Attempt = 0
-do {
-  $Attempt++
-  if ($Attempt -gt 1) {
-    "$(Get-Date -Format s) retry $Attempt of $MaxAttempts after a transient API error, waiting 5 minutes" | Out-File $RunLog -Append -Encoding utf8
-    Start-Sleep -Seconds 300
-  }
-  $ErrorActionPreference = 'Continue'
-  & cmd.exe /d /c $Cmd
-  $Code = $LASTEXITCODE
-  $ErrorActionPreference = 'Stop'
-  $Tail = (Get-Content $RunLog -Tail 5 -ErrorAction SilentlyContinue) -join "`n"
-  $Transient = $Code -ne 0 -and $Tail -match 'API Error: (529|500|502|503|504|429)|Overloaded|overloaded_error|rate limit'
-} while ($Transient -and $Attempt -lt $MaxAttempts)
+$AgentRunner = 'C:\Users\cyril\Project\automation\scripts\Invoke-ProjectAgent.ps1'
+$Code = & $AgentRunner -Repo $Repo -PromptFile $PromptFile -RunLog $RunLog -RunName "TheRedScroll $Mode"
 
 "$(Get-Date -Format s) end $Mode exit $Code" | Out-File $RunLog -Append -Encoding utf8
 exit $Code

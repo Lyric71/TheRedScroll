@@ -84,7 +84,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://a.newrank.cn/trade/news/4199 (dated confirmation); https://fe-video-qc.xhscdn.com/picasso-editor/7072d509ee7370545a056b6f9030a926e8879dca.pdf (platform document)
 - Verified 1: 2026-09-03, both fetched; PDF says "认证费用 600 元/次，认证有效期为 1 年，每年需要完成一次年审"; New Rank dated 2025-10-19 says 每年600元
 - Verified 2: 2026-09-03, both re-fetched, unchanged
-- Used in: china-social-media-marketing-cost
+- Used in: china-social-media-marketing-cost, xiaohongshu-business-account-setup
 - Notes: PDF also states overseas entities must verify via the desktop site and each order expires after 30 days.
 
 ### Douyin enterprise (Blue V) verification fee
@@ -124,7 +124,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
 - Verified 1: 2026-09-03, fetched, policy wording and date confirmed
 - Verified 2: 2026-09-03, re-fetched, unchanged
-- Used in: china-social-media-marketing-cost, first-90-days-china-social-media
+- Used in: china-social-media-marketing-cost, first-90-days-china-social-media, xiaohongshu-business-account-setup
 - Notes: Weakest source in the ledger, a third-party studio, not the platform or trade press. Used for the access rule only; its deposit figures (5,000 to 10,000 yuan) were not cited. Replace with a platform announcement if one is found.
 
 ### Xiaohongshu monthly active users and daily searches, platform figure
@@ -134,7 +134,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://finance.sina.com.cn/jjxw/2026-05-27/doc-inhziqxq9291575.shtml
 - Verified 1: 2026-09-07, fetched, "月活跃用户已突破4亿，日搜索量高达8亿" and date confirmed
 - Verified 2: 2026-09-07, re-fetched before draft finished, unchanged
-- Used in: xiaohongshu-marketing-foreign-brands, beauty-skincare, xiaohongshu-algorithm, xiaohongshu-account-not-growing, fashion-apparel
+- Used in: xiaohongshu-marketing-foreign-brands, beauty-skincare, xiaohongshu-algorithm, xiaohongshu-account-not-growing, fashion-apparel, xiaohongshu-business-account-setup
 - Notes: Platform's own figure, global and all devices. Pair with the QuestMobile domestic count below when an independent number is asked for.
 
 ### Xiaohongshu domestic monthly active users, QuestMobile
@@ -184,7 +184,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://fe-video-qc.xhscdn.com/picasso-editor/7072d509ee7370545a056b6f9030a926e8879dca.pdf
 - Verified 1: 2026-09-07, downloaded and extracted with pdftotext; all strings confirmed
 - Verified 2: 2026-09-07, re-downloaded, unchanged
-- Used in: xiaohongshu-marketing-foreign-brands, first-90-days-china-social-media
+- Used in: xiaohongshu-marketing-foreign-brands, first-90-days-china-social-media, xiaohongshu-business-account-setup
 - Notes: Extends the 600 yuan fee entry above with the process rules. The PDF gives no review duration in days. An older 2019 version of the guide (https://dc.xhscdn.com/62f0c1cfe638eb13c67415419cd6d5c75985fa2b.pdf, 300 yuan era) is superseded; do not cite.
 
 ### Xiaohongshu store qualification for overseas companies
@@ -194,7 +194,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://picasso-static.xiaohongshu.com/test/8b3bc7324ca06fceea379177f9eed1fa/小红书资质入驻要求.pdf
 - Verified 1: 2026-09-07, downloaded and extracted with pdftotext; strings confirmed
 - Verified 2: 2026-09-07, re-downloaded, unchanged; re-checked again 2026-09-10 for beauty-skincare, "进口化妆品备案" and "授权链路不超过3级（美妆品牌不超过2级）" still present
-- Used in: xiaohongshu-marketing-foreign-brands, beauty-skincare
+- Used in: xiaohongshu-marketing-foreign-brands, beauty-skincare, xiaohongshu-business-account-setup
 - Notes: Hosted on a "test" path of the platform CDN; recheck the URL before each reuse. Store-level rules; the account rules are in the entry above.
 
 ### Xiaohongshu Pugongying content cooperation service fee
@@ -763,6 +763,74 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: china-agency-pricing-models
 - Notes: Survey of 198 advertisers across more than 20 industries plus 17 marketing scientists. Self-reported intent, not spend data. The 52% measurement figure is the most reusable line for any reporting or transparency article.
 
+### Xiaohongshu professional account: identities, Blue V and enterprise review time
+- Value: the professional account is the entry ticket for commercial activity on the platform; two identities, personal (real-name verification only) and enterprise (qualification review, carries the Blue V badge); after an enterprise application is submitted a review specialist makes contact within 1 working day and review completes in 4 to 7 working days on average; a single review order is valid for 30 days; personal identity allows up to 2 identities per account, enterprise exactly 1; pro.xiaohongshu.com supports enterprise identity only, personal identity must be done in the app; three benefit groups, community operations, store operations and commercial promotion
+- As of: page undated; confirmed September 2026 (platform documentation)
+- Source: Xiaohongshu (小红书), professional account product operations deck (成为小红书专业号, platform PDF)
+- URL: https://fe-video-qc.xhscdn.com/fe-platform/68e374e4257bd30bc07eed15c06cb8b9a51f971b.pdf
+- Verified 1: 2026-09-18, downloaded (HTTP 200, 4,440,413 bytes) and extracted with pdftotext; "在小红书进行商业活动的入场券", "专业号个人身份只需进行实名认证即可申请成功，专业号企业身份需要提交相关资质进行审核", "1个工作日内审核专员便会与您联系，平均在4-7个工作日可完成审核", "单次审核订单有效期为30天", "1个账号最多可以选择2个身份", "企业身份：1个账号仅能选择1个身份" and "即可拥有蓝v标识" all confirmed
+- Verified 2: 2026-09-18, re-downloaded and re-extracted, unchanged, all seven strings re-confirmed
+- Used in: xiaohongshu-business-account-setup
+- Notes: **This closes the review-time gap flagged in this ledger under the TheRedScroll launch timeline entry.** Brief 01C wanted a per-platform verification turnaround and none existed; this is the platform's own figure. Undated platform document, logged on the same basis as the enterprise guide and the merchant qualification PDF below. Extraction inserts spaces mid-phrase, so string checks need whitespace stripped.
+
+### Xiaohongshu enterprise certification: what is reviewed, by whom, and the account types
+- Value: the platform reviews three things separately, entity qualification (账号资质), account name (账号名称) and verification information (账号认证信息); the official review service partner is 企晟互联网信息服务（上海）有限公司; the applying entity cannot be changed once review starts; two account types, company entity (企业主体) and company employee (企业员工), with 20 employee accounts per entity, raised from an earlier cap of 3; account names may be based on the business licence name, a trademark, a website or a software app and must follow 不侵权、不宽泛、无歧义; if a store is bound later the enterprise account name must match the store name; if every enterprise account under one entity posts seriously violating content that entity is barred from certifying enterprise accounts; the guide recommends certifying a brand-new account rather than converting a personal one; payment is by Alipay QR at the end of the form
+- As of: page undated; confirmed September 2026 (platform documentation)
+- Source: Xiaohongshu (小红书) enterprise account verification guide (小红书企业号认证申请指南, platform PDF)
+- URL: https://fe-video-qc.xhscdn.com/picasso-editor/7072d509ee7370545a056b6f9030a926e8879dca.pdf
+- Verified 1: 2026-09-18, re-downloaded (HTTP 200, 6,422,576 bytes) and extracted; "账号资质、账号名称、账号认证信息三部分审核", "企晟互联网信息服务（上海）有限公司", "不支持在审核过程中更换主体资质", "企业员工号仅支持一个主体认证20个", "不侵权、不宽泛、无歧义", "若需后续绑定店铺，企业号名称需与其店铺名称一致" and "将禁止该主体认证企业号" all confirmed
+- Verified 2: 2026-09-18, re-downloaded and re-extracted, unchanged, all seven strings re-confirmed
+- Used in: xiaohongshu-business-account-setup
+- Notes: Same document as the fee entry and the eligibility entry above. These are additional facts from it, kept separate so the process rules are not buried inside the fee entry. The named review partner is a third party, not the platform; say "a third-party review service partner" in copy rather than promoting the company name.
+
+### Xiaohongshu enterprise certification: barred industries
+- Value: categories that cannot obtain enterprise verification include military and political items, weapons and controlled goods, most medical and health, sexual health, tobacco including e-cigarettes and cigars, fortune telling and superstition, gambling, and a catch-all group covering 微商 social-commerce resellers, counterfeit brands, 代购 buying agents, game account trading, campus lending, franchise recruitment, overseas maternity agencies and private clubs; medical and health is supported only for health supplements and two device types, contact lenses and beauty devices, each needing an extra certificate (health food approval certificate; medical device operating licence plus device registration certificate; CCC certificate or a product test report); finance is limited to members of the central bank and the three regulatory commissions (一行三会), with funds, private equity, trusts, virtual currency and internet finance barred
+- As of: page undated; confirmed September 2026 (platform documentation)
+- Source: Xiaohongshu (小红书) enterprise account verification guide (小红书企业号认证申请指南, platform PDF)
+- URL: https://fe-video-qc.xhscdn.com/picasso-editor/7072d509ee7370545a056b6f9030a926e8879dca.pdf
+- Verified 1: 2026-09-18, downloaded and extracted; "涉军涉政", "烟草制品、电子烟、雪茄等", "封建迷信类", "赌博类", "微商、山寨品牌、代购类", "校园贷、招商加盟", "海外孕产中介", "医疗健康行业仅支持保健品行业、日常医疗器械（仅支持隐形眼镜与美容仪）" and "一行三会" all confirmed
+- Verified 2: 2026-09-18, re-downloaded and re-extracted, unchanged, all nine strings re-confirmed
+- Used in: xiaohongshu-business-account-setup
+- Notes: The two categories foreign brands most often get wrong are health supplements and beauty devices: both are allowed, both need an extra certificate. The detailed per-industry requirements live behind business.xiaohongshu.com/agreement?type=qualification, which returned HTTP 502 on 2026-09-18 and could not be fetched. Recheck that page before any article that needs the full industry matrix.
+
+### Xiaohongshu Jiguang ad qualification: overseas entity documents and trademark rules
+- Value: opening sequence is register the app account and bind a phone, log into Jiguang with that number, choose an advertiser account (广告主账号) or agency account (代理商账号), complete professional account verification, then submit promotion qualifications, then submit creative for review; industry category must match the business scope on the qualification documents; account name is normally the company or store name and needs the trademark certificate if it hits a registered mark; avatar must be the brand logo with no person in it; domestic entities upload the business licence, overseas entities upload BR or CR, Hong Kong companies need both; company registration documents not in Chinese need a Chinese translation stamped with the brand owner's company seal; trademark certificate must not be expired (else a renewal approval certificate); a mark under application needs the acceptance notice and the application must be at least 3 months old from the stamped acceptance date; a mark under transfer is accepted only from the transferee; where the registrant is an overseas company and the applicant is not, only one level of general-distributor authorization is accepted; website entities upload the MIIT filing screenshot, app entities the software copyright certificate
+- As of: page undated; confirmed September 2026 (platform documentation)
+- Source: Xiaohongshu (小红书), Jiguang platform registration and account opening flow (聚光平台注册与开户流程, platform PDF, 7 pages)
+- URL: https://fe-video-qc.xhscdn.com/fe-platform/cc8a5f81ddb6d91d6be9dfb34e62b49b999f234b/%E8%81%9A%E5%85%89%E5%B9%B3%E5%8F%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%BC%80%E6%88%B7%E6%B5%81%E7%A8%8B.pdf
+- Verified 1: 2026-09-18, downloaded (HTTP 200, 928,035 bytes) and extracted; "境内企业上传营业执照，境外企业上传BR/CR", "若为香港公司，则BR和CR都需要", "公司注册文件如不是中文，需提供中文翻译件并加盖品牌方公章", "行业类别：选择行业时须与资质文件中经营范围保持一致", "账号名称一般为公司名称、店铺名称", "头像须为品牌logo，请勿包含人像", "商标注册证不可过期", "申请时间需届满三个月", "认证最多接受一级总代授权" and "若主体为网站，需上传工信部备案截图" all confirmed
+- Verified 2: 2026-09-18, re-downloaded and re-extracted, unchanged, all ten strings re-confirmed
+- Used in: xiaohongshu-business-account-setup
+- Notes: **Two different translation stamps, do not conflate them.** Account verification wants a translation stamped by a translation company (see the eligibility entry above); ad qualification wants the registration document translation stamped with the brand owner's own seal. This document predates the February 2026 invitation-only rule for overseas advertisers (see the Jiguang overseas entry above), so it describes the document set, not current self-serve access. Use both together.
+
+### Xiaohongshu Jiguang: marketing scenarios and shared account balance
+- Value: four marketing scenarios, product seeding (产品种草), product sales (商品销量), lead collection (客资收集) and livestream promotion (直播推广); platform address ad.xiaohongshu.com; the account cash and bonus balance and the account daily budget are shared with the professional account promotion centre, and same-day spend is the sum of both
+- As of: page undated; confirmed September 2026 (platform documentation)
+- Source: Xiaohongshu (小红书), Jiguang platform product manual (聚光平台产品手册, platform PDF)
+- URL: https://fe-video-qc.xhscdn.com/fe-platform/37f82988d0e9273cd645bb819c37a4e0f697bc70.pdf
+- Verified 1: 2026-09-18, downloaded (HTTP 200, 4,533,849 bytes) and extracted; "产品种草、商品销量、客资收集、直播推广四大营销场景", "和专业号推广中心共用" and "ad.xiaohongshu.com" all confirmed
+- Verified 2: 2026-09-18, re-downloaded and re-extracted, unchanged, all three strings re-confirmed
+- Used in: xiaohongshu-business-account-setup
+- Notes: 客资收集 (lead collection) is the objective for service brands with no store; it converts to direct messages or a form. The shared-balance line matters for any article about who controls the ad account. A companion Jiguang FAQ PDF exists on the same CDN but contains live test-account credentials and was deliberately not cited.
+
+### Xiaohongshu store types and the cross-border authorization path
+- Value: three store types, flagship (旗舰店, own brand or an exclusive licence), authorized specialty (专卖店, ordinary licence from the mark holder) and multi-brand collection (集合店); for cross-border trade every brand needs an authorization letter from the brand owner carrying a signature with the signer's job title or a company seal, with a complete authorization chain; without authorization, purchase proof for at least one SKU is required at entry; a cross-border store entering on purchase proof does not submit the trademark certificate; for beauty and personal care, overseas companies may enter with Japanese and Korean brands carrying neither TM nor R marks if they show proof the trademark application was filed; where the trademark holder is an individual who is also the company's legal representative, no authorization proof is needed; domestic entities file the business licence plus a bank account opening permit, overseas entities (including Hong Kong, Macau and Taiwan) file a Business Registration and a Certificate of Incorporation
+- As of: page undated; confirmed September 2026 (platform documentation)
+- Source: Xiaohongshu (小红书) merchant qualification requirements (小红书资质入驻要求, platform PDF)
+- URL: https://picasso-static.xiaohongshu.com/test/8b3bc7324ca06fceea379177f9eed1fa/%E5%B0%8F%E7%BA%A2%E4%B9%A6%E8%B5%84%E8%B4%A8%E5%85%A5%E9%A9%BB%E8%A6%81%E6%B1%82.pdf
+- Verified 1: 2026-09-18, re-downloaded (HTTP 200, 180,418 bytes) and extracted; "跨境贸易：每个品牌须有对应品牌方开具的授权书（签名和签名者的职位或公章）", "入驻时至少提供一个sku的采购凭证", "授权链路不超过3级（美妆品牌不超过2级）", "跨境贸易模式以采购凭证入驻的无需提交", "Business registration" and "Certificate of incorporation" all confirmed
+- Verified 2: 2026-09-18, re-downloaded and re-extracted, unchanged, all six strings re-confirmed
+- Used in: xiaohongshu-business-account-setup
+- Notes: Extends the store qualification entry above with the store types and the cross-border signature rule. Still hosted on a "test" path of the platform CDN; it resolved on 2026-09-18 but recheck the URL before each reuse. **No store deposit (保证金) or technical service fee figure is logged here on purpose:** every number found in Chinese search traces to reseller and agent blogs, not to the platform or a dated trade publication. Do not cite one.
+
+### NOT LOGGED, searched and rejected 2026-09-18 (Xiaohongshu account setup)
+- Jiguang minimum first prepayment (the 5,000 yuan figure): Zhihu and Sohu agent posts only, no platform page and no dated trade publication. Cut from xiaohongshu-business-account-setup.
+- Store deposit amounts by category and the store technical service fee percentage: reseller and agent blogs only. Cut.
+- Daily direct-message limits by account type (10 for personal professional, 20 for enterprise): self-media only. Cut.
+- A follower threshold before applying for an ad account: self-media only, and the platform documents state no threshold. Cut.
+- The "3 working days to first contact, 7 working days for supplementary material" timeline on Sohu and CSDN: superseded by the platform's own 1 working day / 4 to 7 working days figure logged above. Do not cite the self-media version.
+- Logged here so the next article does not spend research time rediscovering that these are unsourceable.
+
 ## TheRedScroll first-party data
 
 Everything here comes from accounts we run. It is cited as ours, with sample
@@ -810,6 +878,13 @@ data.
   instead. Needs a named account, sample period, exclusions and written
   clearance before it can be added.
 - Ad benchmark ranges: CPC, CPM, cost per lead (briefs 04B, 08B)
+- Xiaohongshu business account application outcomes: number of applications
+  submitted, period, count by rejection reason, exclusions (brief 03B). Brief
+  03B asked for rejection reasons "from our own submission history, labeled as
+  ours". Drafted 2026-09-18 without them: nothing was estimated and the
+  rejection section was built entirely on grounds the platform publishes. Needs
+  a sample size, period, exclusions and written clearance before it can be
+  added. See logs/2026-09-18.md.
 -->
 
 ## Client figures requiring sign-off
