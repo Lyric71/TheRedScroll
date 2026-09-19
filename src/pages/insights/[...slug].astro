@@ -110,7 +110,11 @@ const postSchema = articleSchema({
             hasHeroImage ? 'text-[rgba(255,255,255,0.72)] border-[rgba(255,255,255,0.18)]' : 'text-[var(--color-stone)] border-[var(--color-border)]',
           ]}
         >
-          <span class:list={['font-medium', hasHeroImage ? 'text-[#FFFFFF]' : 'text-[var(--color-ink)]']}>{post.data.author}</span>
+          {post.data.column ? (
+            <a href="/insights/ceo-opinion/" class:list={['font-medium hover:underline', hasHeroImage ? 'text-[#FFFFFF]' : 'text-[var(--color-ink)]']}>{post.data.author}, CEO</a>
+          ) : (
+            <span class:list={['font-medium', hasHeroImage ? 'text-[#FFFFFF]' : 'text-[var(--color-ink)]']}>{post.data.author}</span>
+          )}
           <span class:list={[hasHeroImage ? 'text-[rgba(255,255,255,0.4)]' : 'text-[var(--color-warm-gray)]']}>|</span>
           <span>{readingTime} min read</span>
           <span class:list={[hasHeroImage ? 'text-[rgba(255,255,255,0.4)]' : 'text-[var(--color-warm-gray)]']}>|</span>

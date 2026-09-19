@@ -59,6 +59,11 @@ title, cap 60), `metaDescription` (cap 155), `publishDate`, `author`
 "TheRedScroll", `category` (one of Strategy, Platforms, Content),
 `platforms`, `keywords`, `featured`, `featuredImage`.
 
+CEO columns are the one exception to the author rule. A signed opinion piece
+by Cyril takes `author` "Cyril Drouin" and `column: true`, keeps a normal
+`category`, and lists on `/insights/ceo-opinion/` as well as `/insights/`.
+Only set it when Cyril has written or approved the position himself.
+
 Industry and tool pages take the same fields plus three optional ones:
 `faqs` (a list of `q` / `a` pairs, moved out of the body FAQ section so the
 page renders an accordion and emits FAQPage schema), `serviceType` (for the

@@ -1,0 +1,110 @@
+---
+/**
+ * CEO's Opinion: signed columns by Cyril Drouin, i.e. blog posts flagged
+ * `column: true`. A static route, so it wins over the article catch-all at
+ * /insights/[...slug]. Columns are regular insights and still list on
+ * /insights/; this page is a second way in. English only for now, so every
+ * other locale is omitted from hreflang and the language switcher.
+ */
+import { getCollection } from 'astro:content';
+import PageLayout from '../../layouts/PageLayout.astro';
+import EditorialIndex from '../../components/pages/EditorialIndex.astro';
+import Container from '../../components/ui/Container.astro';
+
+const SITE_URL = 'https://www.theredscroll.com';
+
+const columns = (await getCollection('blog', ({ data }) => data.column))
+  .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime())
+  .map((post) => ({
+    href: `/insights/${post.id}/`,
+    title: post.data.title,
+    excerpt: post.data.description,
+    category: post.data.category,
+    featuredImage: post.data.featuredImage,
+    readingTime: `${Math.ceil((post.body || '').split(/\s+/).length / 200)} min`,
+    date: new Date(post.data.publishDate).toLocaleDateString('en-US', { month: 'long', year: 'numeric' }),
+  }));
+
+const collectionSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': `${SITE_URL}/insights/ceo-opinion/#collectionpage`,
+  name: "CEO's Opinion",
+  url: `${SITE_URL}/insights/ceo-opinion/`,
+  description: 'Signed columns from Cyril Drouin, founder and CEO of TheRedScroll, on China social media.',
+  isPartOf: { '@id': `${SITE_URL}/#website` },
+  publisher: { '@id': `${SITE_URL}/#organization` },
+  author: { '@id': `${SITE_URL}/#founder` },
+  inLanguage: 'en',
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListElement: columns.map((c, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `${SITE_URL}${c.href}`,
+      name: c.title,
+    })),
+  },
+};
+---
+
+<PageLayout
+  title="CEO's Opinion: China social media, signed | TheRedScroll"
+  description="Signed columns from Cyril Drouin, founder of TheRedScroll, on what works on WeChat, RedNote, Douyin and Weibo, and what brands get wrong."
+  schema={collectionSchema}
+  omitLocales={['fr', 'zh', 'de', 'es']}
+>
+  <EditorialIndex
+    overline="CEO's Opinion"
+    heading="What our CEO thinks, signed."
+    intro="Columns from Cyril Drouin on China's social platforms. He has spent 20 years on the ground in China. Here he takes a position and puts his name under it."
+    items={columns}
+    emptyText="The first column is on its way. Want his read on your brand before then? Book a call."
+  />
+
+  <!-- The columnist -->
+  <section class="pb-[96px] max-[640px]:pb-[64px]">
+    <Container>
+      <div class="grid grid-cols-[200px_1fr] max-[640px]:grid-cols-1 gap-[32px] max-[640px]:gap-[20px] items-start bg-[var(--color-rice-paper)] rounded-[10px] p-[24px] max-[640px]:p-[20px] max-w-[880px]">
+        <img
+          src="/images/team/Cyil-Drouin.jpg"
+          alt="Cyril Drouin, founder and CEO of TheRedScroll"
+          width="1905"
+          height="2560"
+          class="w-full max-[640px]:max-w-[160px] aspect-[3/4] object-cover object-top rounded-[8px]"
+          loading="lazy"
+          decoding="async"
+        />
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.05em] leading-[1.2] text-[var(--color-vermillion)] mb-[8px]">
+            The columnist
+          </p>
+          <h2 class="text-[28px] max-[640px]:text-[22px] font-medium leading-[1.25] text-[var(--color-ink)] mb-[4px]">
+            Cyril Drouin
+          </h2>
+          <p class="text-[14px] font-normal leading-[1.5] text-[var(--color-stone)] mb-[16px]">Founder and CEO</p>
+          <p class="text-[16px] font-normal leading-[1.6] text-[var(--color-ink)] max-w-[680px] mb-[16px]">
+            25 years in digital, advertising, and commerce. Former CEO of Publicis Commerce and Performance Marketing, China and North Asia. He started TheRedScroll so the people who make the plan are the same people who post the content.
+          </p>
+          <img
+            src="/images/team/Cyril-Drouin-Signature-Transparent.webp"
+            alt="Cyril Drouin signature"
+            width="1408"
+            height="768"
+            class="w-[120px] h-auto mb-[16px]"
+            loading="lazy"
+            decoding="async"
+          />
+          <a
+            href="https://www.linkedin.com/in/cyrildrouin"
+            target="_blank"
+            rel="noopener"
+            class="text-[14px] font-medium text-[var(--color-vermillion)] hover:underline"
+          >
+            Follow him on LinkedIn &rarr;
+          </a>
+        </div>
+      </div>
+    </Container>
+  </section>
+</PageLayout>

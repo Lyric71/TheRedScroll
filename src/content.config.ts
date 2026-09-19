@@ -48,6 +48,8 @@ const blog = defineCollection({
     featured: z.boolean().default(false),
     featuredImage: z.string().optional(),
     keyFacts: z.array(z.string()).optional(),
+    /** A signed CEO column (author "Cyril Drouin"). Lists on /insights/ceo-opinion/. */
+    column: z.boolean().default(false),
   }),
 });
 
@@ -67,6 +69,8 @@ const blogFr = defineCollection({
     featured: z.boolean().default(false),
     featuredImage: z.string().optional(),
     keyFacts: z.array(z.string()).optional(),
+    /** A signed CEO column (author "Cyril Drouin"). Lists on /insights/ceo-opinion/. */
+    column: z.boolean().default(false),
   }),
 });
 
@@ -86,6 +90,8 @@ const blogZh = defineCollection({
     featured: z.boolean().default(false),
     featuredImage: z.string().optional(),
     keyFacts: z.array(z.string()).optional(),
+    /** A signed CEO column (author "Cyril Drouin"). Lists on /insights/ceo-opinion/. */
+    column: z.boolean().default(false),
   }),
 });
 
@@ -105,6 +111,8 @@ const blogDe = defineCollection({
     featured: z.boolean().default(false),
     featuredImage: z.string().optional(),
     keyFacts: z.array(z.string()).optional(),
+    /** A signed CEO column (author "Cyril Drouin"). Lists on /insights/ceo-opinion/. */
+    column: z.boolean().default(false),
   }),
 });
 
@@ -124,6 +132,8 @@ const blogEs = defineCollection({
     featured: z.boolean().default(false),
     featuredImage: z.string().optional(),
     keyFacts: z.array(z.string()).optional(),
+    /** A signed CEO column (author "Cyril Drouin"). Lists on /insights/ceo-opinion/. */
+    column: z.boolean().default(false),
   }),
 });
 

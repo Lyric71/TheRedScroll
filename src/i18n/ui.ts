@@ -20,6 +20,7 @@ export const ui = {
     'nav.viewAll.insights': 'All insights',
     'nav.viewAll.industries': 'All industries',
     'nav.viewAll.tools': 'All tools',
+    'nav.viewAll.ceo': 'All columns',
 
     // Insights mega menu
     'nav.insights.platform': 'By platform',
@@ -29,6 +30,9 @@ export const ui = {
     'nav.insights.industry.empty.sub': 'Beauty, fashion, food, B2B',
     'nav.insights.tools.empty': 'Calculators and checklists',
     'nav.insights.tools.empty.sub': 'Budget planning, launch checks',
+    'nav.insights.ceo': "CEO's Opinion",
+    'nav.insights.ceo.empty': 'First column coming soon',
+    'nav.insights.ceo.empty.sub': 'Signed by Cyril Drouin, our CEO',
     'nav.openMenu': 'Open menu',
     'nav.closeMenu': 'Close menu',
 

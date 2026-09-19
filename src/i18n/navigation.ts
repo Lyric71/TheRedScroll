@@ -56,9 +56,10 @@ async function loadEditorialItems(
     }));
 }
 
-/** The three columns under Insights. Platform rows deep-link into the existing
- *  client-side filter on the insights index; industry and tool rows come from
- *  the collections, so the menu grows as the editorial plan publishes. */
+/** The columns under Insights. Platform rows deep-link into the existing
+ *  client-side filter on the insights index; industry, tool and CEO column
+ *  rows come from the collections, so the menu grows as the editorial plan
+ *  publishes. */
 async function getInsightsGroups(lang: Lang): Promise<NavGroup[]> {
   const lp = (path: string) => localizedPath(path, lang);
   const [industries, tools] = await Promise.all([
@@ -104,7 +105,46 @@ async function getInsightsGroups(lang: Lang): Promise<NavGroup[]> {
       viewAllLabel: t('nav.viewAll.tools', lang),
       items: orEmpty(tools, 'tools', lp('/tools')),
     },
+    // CEO's Opinion exists in English only, so the column appears in the
+    // English menu alone until the page is translated.
+    ...(lang === 'en'
+      ? [
+          {
+            label: t('nav.insights.ceo', lang),
+            href: '/insights/ceo-opinion/',
+            viewAllLabel: t('nav.viewAll.ceo', lang),
+            items: await columnItems(4),
+          },
+        ]
+      : []),
   ];
+}
+
+/** Newest signed CEO columns as menu rows, or one row pointing at the page
+ *  while the first column is still being written. Cached for the build like
+ *  the editorial sections. */
+let columnCache: Promise<NavItem[]> | undefined;
+function columnItems(limit: number): Promise<NavItem[]> {
+  columnCache ??= (async () => {
+    const posts = (await getCollection('blog', ({ data }) => data.column)).sort(
+      (a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime()
+    );
+    if (!posts.length) {
+      return [
+        {
+          label: t('nav.insights.ceo.empty', 'en'),
+          subtitle: t('nav.insights.ceo.empty.sub', 'en'),
+          href: '/insights/ceo-opinion/',
+        },
+      ];
+    }
+    return posts.slice(0, limit).map((post) => ({
+      label: post.data.title,
+      subtitle: post.data.category,
+      href: `/insights/${post.id}/`,
+    }));
+  })();
+  return columnCache;
 }
 
 /** Build localized navigation for the given language. */
