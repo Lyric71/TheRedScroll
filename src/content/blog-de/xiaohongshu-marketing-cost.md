@@ -307,6 +307,8 @@ Selbstkostenpreis abgerechnet. Selten genug, um es eigens zu zählen.
 | Projekt | Je Projekt, im Voraus | Fest je Projekt | Unterschiedlich |
 | Festpreis | Vor dem ersten Gespräch | Fest, veröffentlicht | Zum Selbstkostenpreis |
 
+Welches Modell passt, hängt davon ab, wer das Risiko tragen soll, wenn die Arbeit wächst. [Monatspauschale, Projekt oder Festpreis](/de/analysen/china-agency-pricing-models/) nimmt alle drei auseinander, samt den veröffentlichten Plattformgebühren und den fünf Klauseln, die über den Verbleib Ihres Geldes entscheiden.
+
 TheRedScroll veröffentlicht seine Preisliste auf der [Preisseite](/de/preise/).
 Dort stehen die Stückpreise neben den Monatsumfängen. Verträge laufen
 mindestens sechs Monate, das Werbebudget wird getrennt und ohne Aufschlag

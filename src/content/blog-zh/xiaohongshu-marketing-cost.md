@@ -188,6 +188,8 @@ featuredImage: "/images/blog/xiaohongshu-marketing-cost.webp"
 | 项目制 | 每个项目，事前 | 按项目固定 | 不一定 |
 | 固定价格 | 第一次通话之前 | 固定，公开 | 按成本结算 |
 
+选哪一种，取决于工作量变大时该由谁承担风险。[月费、项目制还是固定价](/zh/guandian/china-agency-pricing-models/)把三种模式逐一拆开，附上平台公开的抽成，以及真正决定你的钱去向的五条合同条款。
+
 TheRedScroll把价目表放在[价格页](/zh/jiage/)上，单件价格列在月度服务范围旁边。合约至少六个月，投放费用单独结算，不加价。数字在那边，不在这里；每一档服务在这个平台上具体覆盖什么，写在[RedNote代理服务页](/zh/rednote-daili/)。
 
 ## 三组算例

@@ -303,6 +303,8 @@ rare pour mériter d’être compté.
 | Projet | Par projet, à l’avance | Fixe par projet | Variable |
 | Prix fixe | Avant le premier appel | Fixe, publié | Facturés au coût |
 
+Le bon modèle dépend de celui qui doit porter le risque quand le travail grossit. [Honoraires mensuels, projet ou prix fixe](/fr/decryptages/china-agency-pricing-models/) démonte les trois, avec les commissions publiées par les plateformes et les cinq clauses qui décident où va vraiment votre argent.
+
 TheRedScroll publie sa grille tarifaire sur sa [page tarifs](/fr/tarifs/).
 Les tarifs à l’unité y côtoient les périmètres mensuels. Les contrats
 courent sur six mois au minimum, et les dépenses publicitaires sont

@@ -311,6 +311,8 @@ Modell in diesem Markt.
 | Projekt | Je Projekt, im Voraus | Fest je Projekt | Unterschiedlich |
 | Festpreis | Vor dem ersten Gespräch | Fest, veröffentlicht | Zum Selbstkostenpreis |
 
+Welches Modell passt, hängt davon ab, wer das Risiko tragen soll, wenn die Arbeit wächst. [Monatspauschale, Projekt oder Festpreis](/de/analysen/china-agency-pricing-models/) nimmt alle drei auseinander, samt den veröffentlichten Plattformgebühren und den fünf Klauseln, die über den Verbleib Ihres Geldes entscheiden.
+
 Welches Modell Sie auch wählen: Drei Fragen trennen ein sauberes Angebot
 von einem aufgeblähten. Wird das Werbebudget getrennt und zum
 Selbstkostenpreis abgerechnet? Ist Content je Stück bepreist, sodass der

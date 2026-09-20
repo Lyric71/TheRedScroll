@@ -312,6 +312,8 @@ facturé au coût réel. De très loin le modèle le plus rare sur ce marché.
 | Projet | Par projet, à l’avance | Fixe par projet | Variable |
 | Prix fixe | Avant le premier appel | Fixe, publié | Facturés au coût réel |
 
+Le bon modèle dépend de celui qui doit porter le risque quand le travail grossit. [Honoraires mensuels, projet ou prix fixe](/fr/decryptages/china-agency-pricing-models/) démonte les trois, avec les commissions publiées par les plateformes et les cinq clauses qui décident où va vraiment votre argent.
+
 Quel que soit le modèle, trois questions distinguent une proposition nette
 d’une proposition gonflée. L’achat média est-il facturé à part, au coût
 réel ? Le contenu est-il tarifé à l’unité, de sorte que le prix unitaire

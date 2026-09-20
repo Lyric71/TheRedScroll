@@ -305,6 +305,8 @@ coste. Con mucho, el modelo más raro de este mercado.
 | Proyecto | Por proyecto, por adelantado | Fijo por proyecto | Varía |
 | Precio fijo | Antes de la primera llamada | Fijo, publicado | Facturada a coste |
 
+Qué modelo conviene depende de quién deba asumir el riesgo cuando el trabajo crece. [Iguala, proyecto o precio cerrado](/es/analisis/china-agency-pricing-models/) desmonta los tres, con las comisiones que publican las plataformas y las cinco cláusulas que deciden adónde va de verdad su dinero.
+
 Elija el modelo que elija, tres preguntas separan una propuesta limpia de
 una inflada. ¿La inversión publicitaria se factura aparte, a coste? ¿El
 contenido se cotiza por unidad, de modo que el precio unitario quede a la

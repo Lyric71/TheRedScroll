@@ -272,6 +272,8 @@ counting.
 | Project | Per project, upfront | Fixed per project | Varies |
 | Fixed price | Before the first call | Fixed, published | Billed at cost |
 
+Which model is right depends on who should carry the risk when the work grows. [Retainer, project or fixed price](/insights/china-agency-pricing-models/) takes each one apart, with the platform fees and the five contract clauses that decide where your money actually lands.
+
 TheRedScroll publishes its rate card on its [pricing page](/pricing/). Per-item rates sit
 next to the monthly scopes. Contracts run six months minimum, and ad spend is
 billed separately with no markup. The figures live there, not here, and what

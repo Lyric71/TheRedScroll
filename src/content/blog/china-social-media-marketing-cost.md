@@ -281,6 +281,8 @@ rarest model in this market by a wide margin.
 | Project | Per project, upfront | Fixed per project | Varies |
 | Fixed price | Before the first call | Fixed, published | Billed at cost |
 
+Which model is right depends on who should carry the risk when the work grows. [Retainer, project or fixed price](/insights/china-agency-pricing-models/) takes each one apart, with the platform fees and the five contract clauses that decide where your money actually lands.
+
 Whichever model you pick, three questions separate a clean proposal from a
 padded one. Is ad spend billed separately, at cost? Is content priced per
 item, so the unit rate is visible? And what's the minimum term? Six months is

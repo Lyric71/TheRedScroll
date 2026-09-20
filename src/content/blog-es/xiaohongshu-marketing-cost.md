@@ -297,6 +297,8 @@ raro que merece la pena contar los casos.
 | Proyecto | Por proyecto, por adelantado | Fijo por proyecto | Varía |
 | Precio fijo | Antes de la primera llamada | Fijo, publicado | Facturada a coste |
 
+Qué modelo conviene depende de quién deba asumir el riesgo cuando el trabajo crece. [Iguala, proyecto o precio cerrado](/es/analisis/china-agency-pricing-models/) desmonta los tres, con las comisiones que publican las plataformas y las cinco cláusulas que deciden adónde va de verdad su dinero.
+
 TheRedScroll publica su lista de tarifas en su [página de precios](/es/precios/).
 Las tarifas por pieza figuran junto a los alcances mensuales. Los contratos
 duran seis meses como mínimo, y la inversión publicitaria se factura aparte,

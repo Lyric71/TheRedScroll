@@ -64,7 +64,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://kf.qq.com/faq/161219JvMNvi161219raieiY.html
 - Verified 1: 2026-09-03, page fetched, 300元/次 and one-year validity confirmed
 - Verified 2: 2026-09-03, re-fetched before draft finished, unchanged
-- Used in: china-social-media-marketing-cost
+- Used in: china-social-media-marketing-cost, chinese-entity-social-media
 - Notes: Platform page carries no date. Cite as "confirmed September 2026". Fee is non-refundable on failure.
 
 ### WeChat Official Account verification fee, overseas entity
@@ -74,7 +74,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://kf.qq.com/faq/190723aQvMR31907233IF7FV.html
 - Verified 1: 2026-09-03, page fetched, "$99 per time" confirmed, charged regardless of outcome
 - Verified 2: 2026-09-03, re-fetched, unchanged
-- Used in: china-social-media-marketing-cost
+- Used in: china-social-media-marketing-cost, chinese-entity-social-media
 - Notes: Platform page carries no date. Cite as "confirmed September 2026".
 
 ### Xiaohongshu enterprise professional account verification fee
@@ -84,7 +84,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://a.newrank.cn/trade/news/4199 (dated confirmation); https://fe-video-qc.xhscdn.com/picasso-editor/7072d509ee7370545a056b6f9030a926e8879dca.pdf (platform document)
 - Verified 1: 2026-09-03, both fetched; PDF says "认证费用 600 元/次，认证有效期为 1 年，每年需要完成一次年审"; New Rank dated 2025-10-19 says 每年600元
 - Verified 2: 2026-09-03, both re-fetched, unchanged
-- Used in: china-social-media-marketing-cost, xiaohongshu-business-account-setup
+- Used in: china-social-media-marketing-cost, xiaohongshu-business-account-setup, chinese-entity-social-media
 - Notes: PDF also states overseas entities must verify via the desktop site and each order expires after 30 days.
 
 ### Douyin enterprise (Blue V) verification fee
@@ -94,7 +94,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://www.oceanengine.com/faq/douyin-qyh-rzxydsq.html
 - Verified 1: 2026-09-03, fetched, "首年600元，之后每年的续费是120元" confirmed, page dated 2022-05-30
 - Verified 2: 2026-09-03, re-fetched, unchanged
-- Used in: china-social-media-marketing-cost
+- Used in: china-social-media-marketing-cost, chinese-entity-social-media
 - Notes: Older than 12 months but it is the platform's own page and still live. Second Ocean Engine FAQ (2022-05-13) says the same: https://www.oceanengine.com/faq/douyin-qyh-sfmw.html. Recheck before reuse.
 
 ### WeChat Moments ads minimum budgets
@@ -124,7 +124,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
 - Verified 1: 2026-09-03, fetched, policy wording and date confirmed
 - Verified 2: 2026-09-03, re-fetched, unchanged
-- Used in: china-social-media-marketing-cost, first-90-days-china-social-media, xiaohongshu-business-account-setup
+- Used in: china-social-media-marketing-cost, first-90-days-china-social-media, xiaohongshu-business-account-setup, chinese-entity-social-media
 - Notes: Weakest source in the ledger, a third-party studio, not the platform or trade press. Used for the access rule only; its deposit figures (5,000 to 10,000 yuan) were not cited. Replace with a platform announcement if one is found.
 
 ### Xiaohongshu monthly active users and daily searches, platform figure
@@ -184,7 +184,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://fe-video-qc.xhscdn.com/picasso-editor/7072d509ee7370545a056b6f9030a926e8879dca.pdf
 - Verified 1: 2026-09-07, downloaded and extracted with pdftotext; all strings confirmed
 - Verified 2: 2026-09-07, re-downloaded, unchanged
-- Used in: xiaohongshu-marketing-foreign-brands, first-90-days-china-social-media, xiaohongshu-business-account-setup
+- Used in: xiaohongshu-marketing-foreign-brands, first-90-days-china-social-media, xiaohongshu-business-account-setup, chinese-entity-social-media
 - Notes: Extends the 600 yuan fee entry above with the process rules. The PDF gives no review duration in days. An older 2019 version of the guide (https://dc.xhscdn.com/62f0c1cfe638eb13c67415419cd6d5c75985fa2b.pdf, 300 yuan era) is superseded; do not cite.
 
 ### Xiaohongshu store qualification for overseas companies
@@ -194,7 +194,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://picasso-static.xiaohongshu.com/test/8b3bc7324ca06fceea379177f9eed1fa/小红书资质入驻要求.pdf
 - Verified 1: 2026-09-07, downloaded and extracted with pdftotext; strings confirmed
 - Verified 2: 2026-09-07, re-downloaded, unchanged; re-checked again 2026-09-10 for beauty-skincare, "进口化妆品备案" and "授权链路不超过3级（美妆品牌不超过2级）" still present
-- Used in: xiaohongshu-marketing-foreign-brands, beauty-skincare, xiaohongshu-business-account-setup
+- Used in: xiaohongshu-marketing-foreign-brands, beauty-skincare, xiaohongshu-business-account-setup, chinese-entity-social-media
 - Notes: Hosted on a "test" path of the platform CDN; recheck the URL before each reuse. Store-level rules; the account rules are in the entry above.
 
 ### Xiaohongshu Pugongying content cooperation service fee
@@ -214,7 +214,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://kf.qq.com/faq/190723aQvMR31907233IF7FV.html
 - Verified 1: 2026-09-08, fetched (curl, full Chinese text), "7-15个工作日内完成审核" and "99美元/次" confirmed
 - Verified 2: 2026-09-08, re-fetched before draft finished, unchanged
-- Used in: first-90-days-china-social-media
+- Used in: first-90-days-china-social-media, chinese-entity-social-media
 - Notes: Same page as the 99 US dollar fee entry above; this entry adds the review time. Cite as "confirmed September 2026".
 
 ### WeChat Official Account verification materials for overseas entities
@@ -224,7 +224,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://kf.qq.com/faq/190723Mjey67190723ey6Fbi.html
 - Verified 1: 2026-09-08, fetched (curl), all six items read verbatim in Chinese and English
 - Verified 2: 2026-09-08, re-fetched, unchanged
-- Used in: first-90-days-china-social-media
+- Used in: first-90-days-china-social-media, chinese-entity-social-media
 - Notes: Individual businesses, governments, other organizations and schools have their own entity document in the same table.
 
 ### WeChat Official Account registration for overseas entities: one account, service account only
@@ -234,7 +234,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://kf.qq.com/faq/180312zQjeYV180312FNNbmA.html
 - Verified 1: 2026-09-08, fetched (curl), "境外主体可以注册1个账号", "境外地区账号暂只支持服务号类型", "认证成功后，账号方可正常使用" confirmed
 - Verified 2: 2026-09-08, re-fetched, unchanged
-- Used in: first-90-days-china-social-media
+- Used in: first-90-days-china-social-media, chinese-entity-social-media
 - Notes: Registration is by company registration location on mp.weixin.qq.com; not every region has an option.
 
 ### WeChat Official Account verification review time, mainland entity
@@ -244,7 +244,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://kf.qq.com/faq/120911VrYVrA1312123qyyqI.html
 - Verified 1: 2026-09-08, fetched, "认证审核时间为1-3个工作日" and "30天（自然天）内必须完成微信认证" confirmed
 - Verified 2: 2026-09-08, re-fetched, unchanged
-- Used in: first-90-days-china-social-media
+- Used in: first-90-days-china-social-media, chinese-entity-social-media
 - Notes: Mainland process; the overseas process is the 7 to 15 working day entry above.
 
 ### Douyin enterprise (Blue V) verification: documents and review time
@@ -254,7 +254,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://www.oceanengine.com/faq/douyin-qyh-zmrzn.html
 - Verified 1: 2026-09-08, fetched (curl), "提交后约2个工作日完成资质审核", "首次付费600元", "续费为120元" confirmed
 - Verified 2: 2026-09-08, re-fetched, unchanged
-- Used in: first-90-days-china-social-media, beauty-skincare
+- Used in: first-90-days-china-social-media, beauty-skincare, chinese-entity-social-media
 - Notes: Older than 12 months but the platform's own page and still live; consistent with the fee entry above. A sibling page (2022-05-12, https://www.oceanengine.com/faq/douyin-qyh-zmkn.html) says "1至2天". Recheck before reuse.
 
 ### Douyin enterprise account described as for companies in China
@@ -264,7 +264,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://www.oceanengine.com/faq/douyin-qyh-kslj.html
 - Verified 1: 2026-09-08, fetched (curl), wording confirmed
 - Verified 2: 2026-09-08, re-fetched, unchanged
-- Used in: first-90-days-china-social-media
+- Used in: first-90-days-china-social-media, chinese-entity-social-media
 - Notes: No platform page states a rule for overseas entities. Use only for "built for companies in China"; do not extend to "overseas companies cannot verify".
 
 ### Xiaohongshu home feed pipeline, note freshness and label latency
@@ -770,7 +770,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://fe-video-qc.xhscdn.com/fe-platform/68e374e4257bd30bc07eed15c06cb8b9a51f971b.pdf
 - Verified 1: 2026-09-18, downloaded (HTTP 200, 4,440,413 bytes) and extracted with pdftotext; "在小红书进行商业活动的入场券", "专业号个人身份只需进行实名认证即可申请成功，专业号企业身份需要提交相关资质进行审核", "1个工作日内审核专员便会与您联系，平均在4-7个工作日可完成审核", "单次审核订单有效期为30天", "1个账号最多可以选择2个身份", "企业身份：1个账号仅能选择1个身份" and "即可拥有蓝v标识" all confirmed
 - Verified 2: 2026-09-18, re-downloaded and re-extracted, unchanged, all seven strings re-confirmed
-- Used in: xiaohongshu-business-account-setup
+- Used in: xiaohongshu-business-account-setup, chinese-entity-social-media
 - Notes: **This closes the review-time gap flagged in this ledger under the TheRedScroll launch timeline entry.** Brief 01C wanted a per-platform verification turnaround and none existed; this is the platform's own figure. Undated platform document, logged on the same basis as the enterprise guide and the merchant qualification PDF below. Extraction inserts spaces mid-phrase, so string checks need whitespace stripped.
 
 ### Xiaohongshu enterprise certification: what is reviewed, by whom, and the account types
@@ -820,7 +820,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://picasso-static.xiaohongshu.com/test/8b3bc7324ca06fceea379177f9eed1fa/%E5%B0%8F%E7%BA%A2%E4%B9%A6%E8%B5%84%E8%B4%A8%E5%85%A5%E9%A9%BB%E8%A6%81%E6%B1%82.pdf
 - Verified 1: 2026-09-18, re-downloaded (HTTP 200, 180,418 bytes) and extracted; "跨境贸易：每个品牌须有对应品牌方开具的授权书（签名和签名者的职位或公章）", "入驻时至少提供一个sku的采购凭证", "授权链路不超过3级（美妆品牌不超过2级）", "跨境贸易模式以采购凭证入驻的无需提交", "Business registration" and "Certificate of incorporation" all confirmed
 - Verified 2: 2026-09-18, re-downloaded and re-extracted, unchanged, all six strings re-confirmed
-- Used in: xiaohongshu-business-account-setup
+- Used in: xiaohongshu-business-account-setup, chinese-entity-social-media
 - Notes: Extends the store qualification entry above with the store types and the cross-border signature rule. Still hosted on a "test" path of the platform CDN; it resolved on 2026-09-18 but recheck the URL before each reuse. **No store deposit (保证金) or technical service fee figure is logged here on purpose:** every number found in Chinese search traces to reseller and agent blogs, not to the platform or a dated trade publication. Do not cite one.
 
 ### NOT LOGGED, searched and rejected 2026-09-18 (Xiaohongshu account setup)
@@ -829,6 +829,135 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Daily direct-message limits by account type (10 for personal professional, 20 for enterprise): self-media only. Cut.
 - A follower threshold before applying for an ad account: self-media only, and the platform documents state no threshold. Cut.
 - The "3 working days to first contact, 7 working days for supplementary material" timeline on Sohu and CSDN: superseded by the platform's own 1 working day / 4 to 7 working days figure logged above. Do not cite the self-media version.
+- Logged here so the next article does not spend research time rediscovering that these are unsourceable.
+
+### Weibo enterprise blue V verification fee
+- Value: 600 yuan, one time, per application, as a review service fee; charged whether or not verification succeeds; government, media, institution, campus and charity blue V accounts are subsidized by the platform
+- As of: page undated; confirmed September 2026 (platform documentation)
+- Source: Sina Weibo customer service (新浪微博客服), 所有官方认证申请都会收费吗
+- URL: https://kefu.weibo.com/faqdetail?id=20004
+- Verified 1: 2026-09-21, fetched by curl, "企业蓝V认证需一次性支付600元/次的认证审核服务费" and "此为认证审核服务的成本费用，不以认证成功为前提" confirmed
+- Verified 2: 2026-09-21, re-fetched, unchanged, both strings re-confirmed
+- Used in: chinese-entity-social-media
+- Notes: Same 600 yuan headline as the Xiaohongshu enterprise fee and the Douyin Blue V first-year fee, but the structures differ: Weibo charges per application with an annual review, Douyin charges 600 then 120 to renew. Do not conflate the three in a comparison table without saying what each covers.
+
+### Weibo enterprise verification: accepted documents assume a mainland entity
+- Value: the nine accepted licence types are all mainland documents (企业营业执照, 个体工商户营业执照, 民办非企业登记证书, 事业单位法人登记证书, 医疗机构执业许可证, 律师事务所执业许可证, 宗教活动场所登记证, 社会团体法人登记证书, 民办学校办学许可证); the company name field must match the business licence; the registration number field takes the 统一社会信用代码; website claims require a 工信部ICP备案截图; only a physical colour company chop is accepted, never an electronic, contract or finance chop; the application letter must be dated within the last 2 months
+- As of: page undated; confirmed September 2026 (platform documentation)
+- Source: Sina Weibo customer service (新浪微博客服), 企业认证审核规则指引条例
+- URL: https://kefu.weibo.com/faqdetail?id=21546
+- Verified 1: 2026-09-21, fetched, "统一社会信用代码", "工信部ICP备案截图", "不支持电子章", "输入与营业执照一致的企业名称" confirmed
+- Verified 2: 2026-09-21, re-fetched, unchanged, all four strings re-confirmed
+- Used in: chinese-entity-social-media
+- Notes: **This is an inference-support entry, not a prohibition.** The page nowhere says an overseas company may not verify. What it establishes is that the self-serve form is built around a mainland unified social credit code, which a foreign company does not hold. Pair it with the entity-change entry below, which is where Weibo actually acknowledges overseas subjects. Do not upgrade this into "Weibo bans overseas entities".
+
+### Weibo entity change: overseas subjects exist and are served by an overseas agent
+- Value: online self-service entity change covers 国内 to 国内 companies only (Hong Kong, Macau and Taiwan excluded); domestic to overseas, overseas to domestic, and overseas to overseas all run offline; overseas to overseas is directed to 认证时为您服务的海外代理商, the overseas agent that handled the original verification; entity-change review takes 1 working day; an account past its annual review must complete that review first
+- As of: page undated; confirmed September 2026 (platform documentation)
+- Source: Sina Weibo customer service (新浪微博客服), 企业主体变更规则及提交流程
+- URL: https://kefu.weibo.com/faqdetail?id=21369
+- Verified 1: 2026-09-21, fetched, "国内企业变更至国内企业", "海外或港澳台地区企业变更至海外企业", "认证时为您服务的海外代理商", "主体变更审核周期为1个工作日" confirmed
+- Verified 2: 2026-09-21, re-fetched, unchanged, all four strings re-confirmed
+- Used in: chinese-entity-social-media
+- Notes: **The most useful Weibo entry in this ledger.** It is the platform's own acknowledgement that overseas-verified enterprise accounts exist and that the route runs through an authorized overseas agent. It also documents a lock-in worth citing in any agency-relationship article: the agent that verified the account is a required party to moving it.
+
+### Weibo non-mainland institution verification route
+- Value: non-mainland institutional subjects apply by email to vhelper@vip.sina.com rather than through the self-serve form; the file is an application form in Chinese, a chopped application letter, a chopped information form, a chopped copy of the 微博公约, the institution registration licence in Chinese or English (other languages need an original plus a translation chopped with the same seal as the licence), the contact's business card or employment proof and ID (passport for overseas contacts, ID card for mainland, Hong Kong and Macau, 台胞证 or residence permit for Taiwan), and an authorization letter if the nickname does not match the licence name
+- As of: page states 更新时间：2026年7月6日
+- Source: Sina Weibo customer service (新浪微博客服), 非大陆机构主体如何申请官方认证
+- URL: https://kefu.weibo.com/faqdetail?id=232
+- Verified 1: 2026-09-21, fetched, the six-item material list, the mailbox and the update date confirmed verbatim
+- Verified 2: 2026-09-21, re-fetched, unchanged, all three re-confirmed
+- Used in: chinese-entity-social-media
+- Notes: **Scope warning, read before reuse.** This is the 机构认证 (institution) route, not the 企业认证 (enterprise) route. The companion page 如何申请机构认证 (https://kefu.weibo.com/faqdetail?id=20074, dated 2026-08-31) defines that scope as fan clubs, sports bodies, museums, galleries, temples, theatres, libraries, concert halls and official game accounts. Do not present this mailbox as the path for an ordinary foreign commercial brand. For a foreign company the documented signal is the entity-change entry above.
+
+### Weibo enterprise verification scope and accounts per licence
+- Value: five enterprise account categories (company, branch or chain, product, recruitment, customer service); 同一营业执照可以申请认证多个企业账号, one business licence may verify several enterprise accounts
+- As of: page undated; confirmed September 2026 (platform documentation)
+- Source: Sina Weibo customer service (新浪微博客服), 企业认证的范围有哪些
+- URL: https://kefu.weibo.com/faqdetail?id=20053
+- Verified 1: 2026-09-21, fetched, the five categories and the multiple-accounts line confirmed
+- Verified 2: 2026-09-21, re-fetched, unchanged
+- Used in: chinese-entity-social-media
+- Notes: Useful contrast figure. WeChat allows an overseas entity exactly one Official Account and Xiaohongshu allows one enterprise identity per account, while Weibo places no stated cap on accounts per licence.
+
+### Weibo account transfer ban
+- Value: 未经微博运营方同意，用户不得擅自买卖、转让、出租任何微博账号或微博昵称. Without Weibo's consent a user may not sell, transfer or rent any Weibo account or nickname
+- As of: page undated; confirmed September 2026 (platform agreement)
+- Source: Sina (新浪), 微博服务使用协议 (Weibo Terms of Use), clause 1.2.2
+- URL: https://weibo.com/signup/v5/protocol
+- Verified 1: 2026-09-21, fetched by curl, clause 1.2.2 read verbatim
+- Verified 2: 2026-09-21, re-fetched, unchanged, clause re-confirmed verbatim
+- Used in: chinese-entity-social-media
+- Notes: Pair with the WeChat clause 6.1 entry below for any article about who owns an account. Weibo's ban is narrower than WeChat's: it bars sale, transfer and rental, and is expressed as subject to Weibo's consent rather than as an absolute prohibition.
+
+### WeChat Official Account ownership, use right and the verification rule
+- Value: ownership of a WeChat Official Account rests with Tencent; on completing registration the user obtains a right of use, and that right belongs to the initial registering subject; where the user information submitted during account qualification review differs from the initial registrant, the right of use passes after a successful review to the subject that passed the qualification review; gifting, lending, renting, transferring and selling the right of use are prohibited (clause 6.1); where Tencent finds the holder is not the initial registering subject it may terminate that party's use of the account without notice (clause 6.3)
+- As of: page undated; confirmed September 2026 (platform agreement)
+- Source: Tencent (腾讯), 微信公众平台服务协议 (WeChat Official Account Platform service agreement), clauses 6.1 and 6.3
+- URL: https://mp.weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=home%2Fagreement_tmpl&token=&type=info
+- Verified 1: 2026-09-21, fetched by curl, "微信公众账号的所有权归腾讯公司所有", "该使用权仅属于初始申请注册主体", "账号资质审核成功之后使用权属于通过资质审核的用户", "账号使用权禁止赠与、借用、租用、转让或售卖" and "腾讯有权在未经通知的情况下终止你使用该账号" all read verbatim
+- Verified 2: 2026-09-21, re-fetched, unchanged, all five strings re-confirmed
+- Used in: chinese-entity-social-media
+- Notes: **The single most important source in this ledger for any agency-relationship or account-ownership article.** The middle limb is the one that matters and the one nobody quotes: the right of use follows the entity that passed the qualification review, not the entity that first registered. An account verified on an agency's licence is the agency's to use as a matter of the agreement. Combined with the outright ban on transfer, there is no clean contractual handover, which is why articles must not promise migration as a remedy. Tencent's own account migration help page could not be fetched on 2026-09-21 (kf.qq.com/faq/170221iQVfuu170221zA3UZZ.html returns 404, the 公众平台专区 index is JavaScript-rendered); every migration fee figure in circulation is self-media. Do not cite one until a platform page is reachable.
+
+### Cross-border e-commerce retail import: transaction limits and the resale ban
+- Value: single transaction limit raised from 2,000 yuan to 5,000 yuan and the annual limit per person from 20,000 yuan to 26,000 yuan; where a single item exceeds the 5,000 yuan transaction limit but falls under the annual limit and is the only item on the order, it may still be imported through the cross-border retail channel with tariff, import VAT and consumption tax charged in full at the goods rate, counting toward the annual total; goods purchased are final goods for the consumer's personal use and may not be resold into the domestic market
+- As of: 成文日期 2018-11-29; effective 2019-01-01
+- Source: Ministry of Finance, General Administration of Customs and State Taxation Administration (财政部 海关总署 税务总局), 关于完善跨境电子商务零售进口税收政策的通知, 财关税〔2018〕49号
+- URL: https://fgk.chinatax.gov.cn/zcfgk/c102416/c5202372/content.html
+- Verified 1: 2026-09-21, fetched from the State Taxation Administration policy database, articles 1, 2 and 3 read verbatim, 成文日期 and effective date confirmed on the page
+- Verified 2: 2026-09-21, re-fetched, unchanged, five strings re-confirmed including "不得进入国内市场再次销售"
+- Used in: chinese-entity-social-media
+- Notes: Older than 12 months but it is the operative regulation and still current on the regulator's own policy database, so the 12-month recheck rule is satisfied by the re-fetch rather than by a newer source. It amends 财关税〔2016〕18号, which still governs everything else. The 商品清单 (permitted goods list) is issued separately and is not in this notice; do not claim a product is eligible on the strength of this entry alone.
+
+### Statutory company registration turnaround
+- Value: the registration authority conducts a formal review; applications that are complete and in the statutory form are confirmed and registered on the spot; where same-day registration is not possible, registration follows within 3 working days, extendable by a further 3 working days with the approval of the registrar's head; incomplete applications get a single consolidated list of what must be corrected
+- As of: State Council Order 746, passed at the 131st executive meeting 2021-04-14, effective 2022-03-01
+- Source: State Council (国务院), 中华人民共和国市场主体登记管理条例 (Regulations on the Registration and Administration of Market Entities), Article 19
+- URL: https://www.gov.cn/gongbao/content/2021/content_5636139.htm
+- Verified 1: 2026-09-21, fetched from the State Council Gazette on gov.cn, Article 19 read verbatim, order number and effective date confirmed
+- Verified 2: 2026-09-21, re-fetched, unchanged, five strings re-confirmed
+- Used in: chinese-entity-social-media
+- Notes: This regulation replaced the old 公司登记管理条例 and four others on 2022-03-01. It is the counter-level timeline only. It says nothing about the notarization and consular legalization that precede it for a foreign investor, which is the part that actually takes weeks. Always cite the two together.
+
+### Company setup registration: committed turnaround and visits, Beijing
+- Value: 办件类型 即办件 (same-day item); 法定办结时限 6 working days; 承诺办结时限 0 working days; 到现场次数 0 (no visit to a counter required); the guide quotes Article 19 of the Market Entity Registration Regulations as its acceptance condition
+- As of: guide VERSION 20260116 (January 2026)
+- Source: Beijing municipal government services (北京市政务服务), 公司设立登记注册（省级权限）办事指南
+- URL: https://banshi.beijing.gov.cn/pubtask/task/1/110000000000/e71f13ba-9a0c-4cf4-983a-88b63ae94337.html
+- Verified 1: 2026-09-21, fetched, the four values and the embedded Article 19 quotation confirmed, guide version string read from the page payload
+- Verified 2: 2026-09-21, re-fetched, unchanged
+- Used in: chinese-entity-social-media
+- Notes: Beijing only. Other cities publish different committed times (a Chengdu guide found in the same search shows a 20 working day statutory limit against a 1 working day commitment). Do not present any single city's figure as national. The national floor is the Article 19 entry above.
+
+### Foreign investment access: the same-treatment principle and the sole-trader bar
+- Value: outside the negative list, foreign investment is administered on the same basis as domestic investment (内外资一致原则); a foreign investor may not act as a 个体工商户 (sole trader), as the investor in a 个人独资企业 (one-person enterprise) or as a member of a farmers' cooperative; where an investment falls inside the list but does not meet its conditions, licensing and company registration are refused; the 2021 edition was repealed on the same date
+- As of: NDRC and MOFCOM Order 23, published 2024-09-06, approved at the NDRC's 10th executive meeting 2024-04-08, effective 2024-11-01
+- Source: National Development and Reform Commission and Ministry of Commerce (国家发展改革委 商务部), 外商投资准入特别管理措施（负面清单）（2024年版）, explanatory notes
+- URL: https://www.gov.cn/zhengce/202409/content_6973047.htm
+- Verified 1: 2026-09-21, fetched from gov.cn, notes 1, 2, 4 and 11 read verbatim, order number and effective date confirmed
+- Verified 2: 2026-09-21, re-fetched, unchanged, four strings re-confirmed
+- Used in: chinese-entity-social-media
+- Notes: **Only the explanatory notes are logged, not the 29 list items.** The gov.cn page carries the notes alone; the list table is in a PDF on ndrc.gov.cn and zfxxgk.ndrc.gov.cn, and both copies have no ToUnicode font map, so pdftotext returns the item numbers with the Chinese stripped. The MOFCOM English PDF download failed on 2026-09-21. The widely reported entries (the 50% foreign shareholding cap on value-added telecom services, and the prohibitions on internet news information services, online publishing and online audiovisual programme services) are therefore NOT logged and were NOT cited. Any article needing the specific items must first obtain a text-layer copy.
+
+### Foreign investor documents: notarization and Chinese consular legalization
+- Value: a foreign investor's subject qualification or identity certificate must be notarized by a notary in its home country and then legalized by the Chinese embassy or consulate in that country; where the home country has no diplomatic relations with China, legalization runs through a third country's embassy there and then through the Chinese embassy in that third country; documents issued by an overseas territory are notarized locally, then legalized by that country's foreign affairs body, then by the Chinese embassy; a foreign natural person holding a PRC permanent residence ID card needs no notarization; Hong Kong, Macau and Taiwan investors follow local notarization arrangements, and a Hong Kong or Macau residence permit or travel permit needs no notarization; foreign-language documents need a translation, either from a translation company (attach a copy of the translation company's business licence stamped with its chop) or from the shareholder company itself (stamped plus signed by an authorized signatory); signatures must be in black pen and personal seals are not accepted
+- As of: page dated 2025-09-02
+- Source: Qianhai Authority, Shenzhen (深圳市前海管理局), 外商投资企业设立流程
+- URL: https://qh.sz.gov.cn/tzqh/tzzn1/wzzr/content/post_10551249.html
+- Verified 1: 2026-09-21, fetched, the notarization and legalization chain, the translation rules and the publication date read verbatim
+- Verified 2: 2026-09-21, re-fetched, unchanged, three strings re-confirmed
+- Used in: chinese-entity-social-media
+- Notes: Qianhai is a special economic zone, so its own access rules follow the 自贸试验区 negative list rather than the national one. The notarization and legalization requirements quoted here are national practice for foreign investor documents, not a Qianhai peculiarity, which is why they are logged. **This is the source for "why a WFOE takes months".** No total setup cost or end-to-end duration is logged anywhere in this ledger, deliberately: see the rejection block below.
+
+### NOT LOGGED, searched and rejected 2026-09-21 (Chinese entity for social media)
+- Total WFOE or foreign-invested company setup cost, in yuan or dollars. Every figure found (odibeian.cn, yichenshangwu.com, hongzhuojituan.com, mtgjzx.com and Sohu reposts) is an incorporation agent quoting its own service fee. No dated professional source publishes a range. Brief 03C asked for "WFOE setup timeline and cost, cite a dated professional source"; the cost half could not be met and was cut. Section 6 of chinese-entity-social-media states plainly that no number is given and why.
+- End-to-end setup duration in weeks or months (the "1 to 2 months" and "FDI approval cycles shortened by 30%" figures). Agent blogs only. Cut. Use the Article 19 entry plus the Qianhai legalization entry instead.
+- WeChat Official Account migration fees (the 300 yuan Tencent review fee, the roughly 480 yuan notary fee, the 200 yuan agent fee). Self-media and agent articles only. Tencent's own migration help page is unreachable, see the WeChat ownership entry above. Cut.
+- The 2024 negative list items on value-added telecom and internet content services. Primary PDFs have no extractable text layer. See the negative list entry above.
+- The Weibo enterprise certification deck on sinaimg.cn (http://www.sinaimg.cn/blog/miniblog/wenjian/qiyerenzheng.pdf): 24 pages, no ToUnicode map, and undated. Not cited.
+- A Weibo overseas verification fee denominated in dollars (the "$1,000 service fee" and "4,000 RMB for Hong Kong companies" figures that appear in search summaries). Traced to离岸 company-formation forums and self-media only, never to Weibo. The only Weibo fee logged is the 600 yuan review service fee from the platform's own FAQ.
 - Logged here so the next article does not spend research time rediscovering that these are unsourceable.
 
 ## TheRedScroll first-party data
