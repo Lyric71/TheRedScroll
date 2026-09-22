@@ -67,6 +67,11 @@ Art, ergänzt um eine Vorgabe zu Übersetzungen.
 > braucht eine von einem Übersetzungsbüro gestempelte Übersetzung.
 > Quelle: Xiaohongshu (小红书), Leitfaden zur Verifizierung von Unternehmenskonten, Plattformdokument, geprüft im September 2026. https://fe-video-qc.xhscdn.com/picasso-editor/7072d509ee7370545a056b6f9030a926e8879dca.pdf
 
+Der Xiaohongshu-Weg endet nicht bei dieser Unterlagenliste. Unser [Leitfaden
+zur Einrichtung eines Xiaohongshu-Unternehmenskontos](/de/analysen/xiaohongshu-business-account-setup/)
+behandelt die Browserpflicht für ausländische Gesellschaften, die drei
+Namensprüfungen und die fünf veröffentlichten Ablehnungsgründe.
+
 [Douyin (抖音)](/de/plattformen/douyin/) fällt aus dem Rahmen: Die eigenen
 Hilfeseiten behalten das Unternehmenskonto Firmen in China vor.
 

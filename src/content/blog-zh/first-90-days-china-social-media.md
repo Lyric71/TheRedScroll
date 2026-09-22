@@ -41,6 +41,8 @@ featuredImage: "/images/blog/first-90-days-china-social-media.webp"
 > 小红书企业号接受中国大陆以外公司的申请。表单需要填写主体信息、申请函、补充材料和运营者信息。非中文或英文的材料，须由翻译公司出具并加盖公章的译件。
 > 来源：小红书企业号认证指南，平台文件，2026年9月核实。https://fe-video-qc.xhscdn.com/picasso-editor/7072d509ee7370545a056b6f9030a926e8879dca.pdf
 
+小红书这条路不止这份材料清单。我们的[小红书企业号开通指南](/zh/guandian/xiaohongshu-business-account-setup/)讲了境外主体只能走网页端这条规定、命名的三道关，以及公开的五个驳回原因。
+
 [抖音](/zh/pingtai/douyin/)是个例外。它自家的帮助页把企业号写成一款给境内公司用的产品。
 
 > 抖音的常见问题页面把企业号描述为中国境内公司可以申请认证的账号。

@@ -68,6 +68,11 @@ et y ajoute une exigence sur les traductions.
 > tampon.
 > Source : guide de certification des comptes entreprise Xiaohongshu (小红书), document de la plateforme, consulté en septembre 2026. https://fe-video-qc.xhscdn.com/picasso-editor/7072d509ee7370545a056b6f9030a926e8879dca.pdf
 
+La voie Xiaohongshu ne s’arrête pas à cette liste de pièces. Notre [guide
+d’ouverture d’un compte entreprise Xiaohongshu](/fr/decryptages/xiaohongshu-business-account-setup/)
+détaille le dépôt obligatoire sur le web pour les entités étrangères, les
+trois tests de nommage et les cinq motifs de refus publiés.
+
 [Douyin (抖音)](/fr/plateformes/douyin/) échappe à la règle. Ses pages d’aide
 réservent le compte entreprise aux sociétés implantées en Chine.
 

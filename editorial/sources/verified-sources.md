@@ -960,6 +960,63 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - A Weibo overseas verification fee denominated in dollars (the "$1,000 service fee" and "4,000 RMB for Hong Kong companies" figures that appear in search summaries). Traced to离岸 company-formation forums and self-media only, never to Weibo. The only Weibo fee logged is the 600 yuan review service fee from the platform's own FAQ.
 - Logged here so the next article does not spend research time rediscovering that these are unsourceable.
 
+### WeChat combined monthly active accounts, end of 2025
+- Value: 1.418 billion combined monthly active accounts for WeChat and WeChat international (微信及WeChat合并月活跃账户数), up 2% year on year
+- As of: 31 December 2025 (results announced 2026-03-18)
+- Source: Tencent Holdings Q4 and full-year 2025 results, reported by Tencent News (腾讯新闻)
+- URL: https://news.qq.com/rain/a/20260318A07APT00
+- Verified 1: 2026-09-22, fetched, "微信及WeChat合并月活跃账户数已达14.18亿" and the 2% year on year figure confirmed, page dated 2026-03-18
+- Verified 2: 2026-09-22, re-fetched with curl, "14.18亿" confirmed unchanged
+- Used in: camper-china-teardown
+- Notes: Corroborated same day on China Fund News (中国基金报), 2026-03-18, https://www.chnfund.com/article/AR1231fcdd-25ff-01cd-2836-3a2015e46b1d ("微信及WeChat合并月活跃用户数进一步增长至14.18亿"). Tencent's own IR announcement was not fetchable directly; both cited pages attribute the figure to the results release. Supersedes the 13.85 billion-era figures from the 2024 annual report; recheck after Tencent's 2026 annual results in March 2027.
+
+### Weibo monthly and daily active users, end of Q4 2025
+- Value: 567 million monthly active users and 252 million daily active users at the end of Q4 2025; full-year 2025 revenue 1.76 billion US dollars
+- As of: 31 December 2025 (earnings release 2026-03-18)
+- Source: Weibo Q4 and full-year 2025 earnings release, reported by 100EC (网经社)
+- URL: https://www.100ec.cn/detail--6657687.html
+- Verified 1: 2026-09-22, fetched, "截至2025年四季度末，微博月活跃用户数量达到 5.67 亿" and "日活跃用户数量为 2.52 亿" confirmed, page dated 2026-03-19
+- Verified 2: 2026-09-22, re-fetched with curl, both strings confirmed unchanged
+- Used in: camper-china-teardown
+- Notes: 100ec.cn serves a JavaScript cookie challenge (HW_CHECK) to a bare curl and returns a 659-byte stub. Sending a Referer of https://www.100ec.cn/ plus an Accept-Language header gets the real page. Note this before re-verifying. Weibo MAU has been declining through 2025 (591m in Q1, 588m Q2, 578m Q3, 567m Q4); always cite the quarter.
+
+### WeChat Channels total user time, 2025
+- Value: 视频号 (Channels) total user time up more than 20% year on year in 2025, credited to a long-sequence model recommendation upgrade
+- As of: full-year 2025 (results reported 2026-03-18)
+- Source: Tencent 2025 annual results, reported by China Fund News (中国基金报)
+- URL: https://www.chnfund.com/article/AR1231fcdd-25ff-01cd-2836-3a2015e46b1d
+- Verified 1: 2026-09-22, fetched, "视频号利用长序列大模型优化推荐，2025年用户时长同比增长超20%" confirmed, page dated 2026-03-18
+- Verified 2: 2026-09-22, re-fetched with curl, "视频号" and the growth sentence confirmed unchanged
+- Used in: camper-china-teardown
+- Notes: Growth rate only. Tencent publishes no absolute Channels user-time or MAU figure, so do not pair this with an invented base. The widely circulated "Channels e-commerce GMV 433 billion yuan, up 74.6%" figure that appears alongside it in search summaries is NOT from the results release and was not logged; treat it as unsourced.
+
+### Xiaohongshu apparel category, first half of 2026
+- Value: commercial note saves (收藏) up more than 60% year on year and interactions up more than 52%; within apparel, clothing and footwear (服饰鞋靴) hold 68.34% of category interaction, jewelry and accessories (珠宝配饰) 22.38%, bags (箱包) 9.28%. Fastest growing seeding-note subcategories: knitwear and sweaters +78%, base layers +68%, silver jewelry +54%
+- As of: January to June 2026 (report published July 2026)
+- Source: Qian-gua Data (千瓜数据), 2026 first-half hot industry data brief for the Xiaohongshu platform (2026上半年热门行业数据简报（小红书平台）), reported by NetEase (网易)
+- URL: https://c.m.163.com/news/a/L29A904P05531DFD.html
+- Verified 1: 2026-09-22, fetched, "商业笔记收藏量同比增长60%+", "互动量增长52%+", "服饰鞋靴以68%+的互动占比占据绝对主力", "珠宝配饰...占22.38%", "箱包...占9.28%" confirmed; report producer printed as 千瓜数据, report title confirmed, page dated 2026-07-20
+- Verified 2: 2026-09-22, re-fetched with curl, "收藏量同比增长60", "互动量增长52" and "服饰鞋靴以68" confirmed unchanged
+- Used in: camper-china-teardown
+- Notes: The precise 68.34% share is printed on the Eastmoney Caifuhao republication, 2026-07-21, https://caifuhao.eastmoney.com/news/20260721151047141817170 ("服饰鞋靴占据68.34%的品类互动量"), which was used to confirm the rounded "68%+" on the NetEase page. **Do not cite qian-gua.com/information/detail/3350 for these figures**: the producer's own page is gated behind a business-consultant QR code and shows only qualitative trend text (Softfit 松弛穿搭, 本命气质穿搭). The NetEase page is the citable URL because it carries both the numbers and the attribution. This is the best dated anchor in the ledger for a footwear or apparel argument, and the saves-versus-interactions gap is the part worth citing.
+
+### Xiaohongshu WILL 2026 conference, commercial scale
+- Value: Xiaohongshu works closely with more than 2,100 brands; the number of merchants using 种草直达 (seeding direct) grew 109% over the 618 period; more than 600 brands from over 60 industries used platform IP collaborations; 2,500+ interest circles; 95 defined human emotions used to tag more than 14 million notes with AI
+- As of: conference 2025-12-22, article 2025-12-23
+- Source: Economic Observer (经济观察网)
+- URL: http://m.eeo.com.cn/2025/1223/774754.shtml
+- Verified 1: 2026-09-22, fetched, "小红书已与2100多个品牌开展深度合作" and "使用种草直达的商家数量较618增长了109%" confirmed, page dated 2025-12-23
+- Verified 2: 2026-09-22, re-fetched with curl, "2100" confirmed unchanged
+- Used in: camper-china-teardown
+- Notes: Same conference as the WILL 2026 entry above (about 200 million users a month seeking purchase advice, 16 app opens a day). This page independently reprints those figures ("每月约有 2 亿用户在小红书寻求购买建议", "每日人均打开 16 次", "每天发布超过 900 万篇笔记、产生 7000 多万条评论"), which cross-confirms the 100EC-sourced entry from a second dated publisher. The 109% growth figure has no stated absolute base; cite it as a growth rate only.
+
+### NOT LOGGED, searched and rejected 2026-09-22 (Camper teardown)
+- "Xiaohongshu seeding delivers 300% to 800% ROI" and "seeding content has a 6 to 12 month search long tail". Ubiquitous in Chinese agency self-media (hashmeta, zjlyb, xiao-ad and similar). Traced to no primary and no dated study. Rejected.
+- The CES 2.0 interaction scoring weights (saves 4 points, comments 3, shares 2, likes 1) and the "30% KOC / 50% mid-tier / 20% head KOL" split presented as a 2026 standard. Agency blogs only. Xiaohongshu publishes no such scoring table or split. Rejected. Tempting because it would directly support a saves-are-the-signal argument; the Qian-gua apparel entry above supports the same argument from a real dated source, so make the claim on that entry alone.
+- A Xiaohongshu offline store-visit (到店) conversion rate. The platform discusses 本地化种草 and store visits qualitatively; the only number nearby (私信留资 +296%) appears with no stated period or base. Rejected. Article 03D therefore claims no platform-published online-to-store conversion rate.
+- A WeChat Official Account open-rate benchmark. Still absent, as recorded for brief 06C. Searched again, still nothing from Tencent. Not used.
+- Camper month-by-month follower series and the two underperforming campaigns. Not on /work/camper/, not in this ledger, not estimated. See the client sign-off table below.
+
 ## TheRedScroll first-party data
 
 Everything here comes from accounts we run. It is cited as ours, with sample
@@ -993,7 +1050,8 @@ data.
 - Cleared for publication: the figures are already public on /work/camper/ with the client named and its account screenshots; the formal sign-off row below is still pending (brief 02D reused only what the page publishes and left a TODO marker; see logs/2026-09-15.md decision 1)
 - Verified 1: 2026-09-15, live page fetched and src/pages/work/camper.astro read, every figure confirmed
 - Verified 2: 2026-09-15, live page re-fetched with curl, "187K", "4.7%", "38%", "31%" confirmed
-- Used in: fashion-apparel
+- Re-verified 2026-09-22 for brief 03D, both checks repeated with curl: "43K → 187K", "4.7%", "1.2%", "38% of all eCommerce traffic" and "31% same-store sales growth" all still on the live page
+- Used in: fashion-apparel, camper-china-teardown
 - Notes: Cite as "TheRedScroll, Camper case study, September 2026, https://www.theredscroll.com/work/camper/". Industry label on the page: Fashion / Footwear. Platforms on the page: WeChat, RedNote, Weibo (no Douyin).
 
 <!-- Needed:
@@ -1020,7 +1078,7 @@ data.
 
 | Client | Figure | Brief | Cleared |
 |---|---|---|---|
-| Camper | 43K to 187K followers, 31% sales lift, 18 months | 03D, 02D | pending. 02D (drafted 2026-09-15) reused only the figures already published on /work/camper/ and carries a TODO: client sign-off marker; formal clearance still wanted before 03D |
+| Camper | 43K to 187K followers, 31% sales lift, 18 months | 03D, 02D | pending. 02D (drafted 2026-09-15) and 03D (drafted 2026-09-22) both reused ONLY the figures already published on /work/camper/ and both carry TODO: client sign-off markers. 03D additionally held out two things the brief asked for, because they are not public and were not estimated: the month-by-month follower series with its three inflection points, and the two underperforming campaigns with their post-mortems. Formal written clearance is now blocking real content, not just a marker. Chase before the 2026-09-25 publish. |
 | Viessmann | outcomes to confirm | 06D, 07D | pending |
 | iGuzzini | outcomes to confirm | 06D, 07D | pending |
 | Marriott | outcomes to confirm | 05D | pending |

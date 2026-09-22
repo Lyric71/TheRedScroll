@@ -360,7 +360,7 @@ d’ensemble. Sur la plateforme elle-même, notre
 [page agence RedNote](/fr/agence-rednote/) détaille ce que couvre un
 accompagnement mensuel.
 
-Le [guide de l’algorithme Xiaohongshu](/fr/decryptages/xiaohongshu-algorithm/) explique comment les notes sont sélectionnées et classées, un mécanisme dont dépend l’ensemble de ce travail.
+Le [guide de l’algorithme Xiaohongshu](/fr/decryptages/xiaohongshu-algorithm/) explique comment les notes sont sélectionnées et classées, un mécanisme dont dépend l’ensemble de ce travail. En amont de tout cela, le compte doit exister : notre [guide d’ouverture d’un compte entreprise Xiaohongshu](/fr/decryptages/xiaohongshu-business-account-setup/) réunit les pièces, les frais du Blue V, les règles de nommage et les délais.
 
 ## Questions fréquentes
 

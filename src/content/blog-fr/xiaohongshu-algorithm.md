@@ -236,7 +236,7 @@ Le tableau suivant décrit un fonctionnement. Il ne retrace aucun compte client�
 
 Un rapport hebdomadaire peut confondre les blocages de sélection initiale et de premières réactions. La correction diffère pourtant : revoir la présentation dans un cas, le contenu dans l’autre. Les distinguer change le travail à entreprendre.
 
-Les formalités sont abordées dans notre guide de création d’un compte professionnel Xiaohongshu. Pour les dépenses courantes, consultez le [guide des coûts du marketing Xiaohongshu](/fr/decryptages/xiaohongshu-marketing-cost/). La [page agence RedNote](/fr/agence-rednote/) détaille les interventions auprès des clients.
+Les formalités sont abordées dans notre [guide d’ouverture d’un compte entreprise Xiaohongshu](/fr/decryptages/xiaohongshu-business-account-setup/). Pour les dépenses courantes, consultez le [guide des coûts du marketing Xiaohongshu](/fr/decryptages/xiaohongshu-marketing-cost/). La [page agence RedNote](/fr/agence-rednote/) détaille les interventions auprès des clients.
 
 ## Questions fréquentes
 

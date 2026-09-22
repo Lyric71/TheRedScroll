@@ -188,7 +188,7 @@ featuredImage: "/images/blog/xiaohongshu-marketing-foreign-brands.webp"
 
 人力成本是同行指南一律不写的那一项。TheRedScroll在[价格页](/zh/jiage/)公开完整价目表，服务范围固定，广告费单独结算且不加价。若想看全貌，我们的费用主文[2026年在中国做社交媒体营销要花多少钱](/zh/guandian/china-social-media-marketing-cost/)逐项拆解了跨平台的五项开支。单就小红书这个平台而言，我们的[RedNote代理服务页](/zh/rednote-daili/)说明了按月服务究竟包含哪些内容。
 
-笔记如何被选中并排序，见[小红书算法解析](/zh/guandian/xiaohongshu-algorithm/)。这些分发机制会影响上述工作的效果。
+笔记如何被选中并排序，见[小红书算法解析](/zh/guandian/xiaohongshu-algorithm/)。这些分发机制会影响上述工作的效果。而在这一切之前，账号得先存在：[小红书企业号开通指南](/zh/guandian/xiaohongshu-business-account-setup/)写了材料清单、蓝V的费用、命名规则和时间。
 
 ## 常见问题
 

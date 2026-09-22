@@ -67,6 +67,12 @@ equivalente y añade una exigencia sobre las traducciones.
 > traducción sellada por una empresa de traducción.
 > Fuente: Xiaohongshu (小红书), guía de verificación de cuentas de empresa, documento de la plataforma, consultado en septiembre de 2026. https://fe-video-qc.xhscdn.com/picasso-editor/7072d509ee7370545a056b6f9030a926e8879dca.pdf
 
+La vía de Xiaohongshu no acaba en esa lista de documentos. Nuestra [guía de
+apertura de una cuenta de empresa en Xiaohongshu](/es/analisis/xiaohongshu-business-account-setup/)
+recoge la obligación de solicitar en el navegador para las entidades
+extranjeras, las tres pruebas de denominación y los cinco motivos de rechazo
+publicados.
+
 [Douyin (抖音)](/es/plataformas/douyin/) se sale de la norma: sus propias
 páginas de ayuda reservan la cuenta de empresa a las compañías radicadas en
 China.

@@ -234,7 +234,7 @@ La tabla describe el funcionamiento, no una campaña de cliente medida. Solo pub
 
 Una selección inicial débil puede parecerse, en el informe semanal, a una falta de respuesta después de abrir la nota. El trabajo cambia: revisar la presentación en el primer caso, el contenido en el segundo. Distinguirlos permite elegir la corrección adecuada.
 
-Nuestra guía de apertura de una cuenta empresarial de Xiaohongshu aborda los requisitos previos. La [guía de costes del marketing en Xiaohongshu](/es/analisis/xiaohongshu-marketing-cost/) detalla los gastos habituales. Las tareas que realizamos para clientes figuran en la [página de agencia RedNote](/es/agencia-rednote/).
+Nuestra [guía de apertura de una cuenta de empresa en Xiaohongshu](/es/analisis/xiaohongshu-business-account-setup/) aborda los requisitos previos. La [guía de costes del marketing en Xiaohongshu](/es/analisis/xiaohongshu-marketing-cost/) detalla los gastos habituales. Las tareas que realizamos para clientes figuran en la [página de agencia RedNote](/es/agencia-rednote/).
 
 ## Preguntas frecuentes
 

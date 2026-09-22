@@ -363,7 +363,7 @@ größere Bild suchen. Zur Plattform selbst beschreibt unsere
 [RedNote-Agenturseite](/de/rednote-agentur/), was ein monatliches
 Xiaohongshu-Mandat umfasst.
 
-Wie die Plattform Beiträge auswählt und einordnet, erläutert unser [Leitfaden zum Xiaohongshu-Algorithmus](/de/analysen/xiaohongshu-algorithm/). Von diesen Abläufen hängt die Wirkung der hier beschriebenen Arbeit ab.
+Wie die Plattform Beiträge auswählt und einordnet, erläutert unser [Leitfaden zum Xiaohongshu-Algorithmus](/de/analysen/xiaohongshu-algorithm/). Von diesen Abläufen hängt die Wirkung der hier beschriebenen Arbeit ab. Vor allem anderen muss das Konto existieren: Unser [Leitfaden zur Einrichtung eines Xiaohongshu-Unternehmenskontos](/de/analysen/xiaohongshu-business-account-setup/) führt die Unterlagen, die Blue-V-Gebühr, die Namensregeln und die Dauer auf.
 
 ## Häufige Fragen
 

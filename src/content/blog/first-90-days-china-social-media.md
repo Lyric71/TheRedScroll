@@ -61,6 +61,11 @@ adds a translation rule.
 > Chinese or English needs a translation stamped by a translation company.
 > Source: Xiaohongshu (小红书) enterprise account verification guide, platform document, confirmed September 2026. https://fe-video-qc.xhscdn.com/picasso-editor/7072d509ee7370545a056b6f9030a926e8879dca.pdf
 
+The Xiaohongshu route has more to it than that document list. Our
+step-by-step guide to [Xiaohongshu business account setup](/insights/xiaohongshu-business-account-setup/)
+covers the desktop-only rule for overseas entities, the three naming tests
+and the five published grounds for rejection.
+
 [Douyin (抖音)](/platforms/douyin/) is the exception. Its own help pages
 describe the enterprise account as a product for companies in China.
 

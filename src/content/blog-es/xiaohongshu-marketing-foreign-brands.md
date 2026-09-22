@@ -357,7 +357,7 @@ completo. Sobre la plataforma en sí, nuestra
 [página de agencia de RedNote](/es/agencia-rednote/) detalla qué cubre un
 mandato mensual en Xiaohongshu.
 
-La [guía del algoritmo de Xiaohongshu](/es/analisis/xiaohongshu-algorithm/) explica cómo se seleccionan y ordenan las notas, un proceso que condiciona todo el trabajo anterior.
+La [guía del algoritmo de Xiaohongshu](/es/analisis/xiaohongshu-algorithm/) explica cómo se seleccionan y ordenan las notas, un proceso que condiciona todo el trabajo anterior. Antes de nada, la cuenta tiene que existir: nuestra [guía de apertura de una cuenta de empresa en Xiaohongshu](/es/analisis/xiaohongshu-business-account-setup/) reúne los documentos, la tasa del Blue V, las reglas de denominación y los plazos.
 
 ## Preguntas frecuentes
 

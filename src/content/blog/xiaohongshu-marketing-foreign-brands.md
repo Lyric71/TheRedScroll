@@ -328,7 +328,10 @@ marketing costs in 2026](/insights/china-social-media-marketing-cost/), walks th
 if you want the wider picture. For the platform itself, our [RedNote agency
 page](/rednote-agency/) describes what a monthly Xiaohongshu engagement covers.
 
-Our guide to [how the Xiaohongshu algorithm ranks notes in 2026](/insights/xiaohongshu-algorithm/) covers the layer under everything in this guide.
+Our guide to [how the Xiaohongshu algorithm ranks notes in 2026](/insights/xiaohongshu-algorithm/) covers the layer under everything in this guide. Before any of it, the
+account itself has to exist: [Xiaohongshu business account setup, step by
+step](/insights/xiaohongshu-business-account-setup/) has the documents, the
+Blue V fee, the naming rules and the timeline.
 
 ## Frequently asked questions
 

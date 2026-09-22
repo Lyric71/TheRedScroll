@@ -200,7 +200,7 @@ featuredImage: "/images/blog/xiaohongshu-algorithm.webp"
 
 初始人群没有扩大，和读者打开后没有进一步互动，在周报上可能都是“涨不动”。前者先查呈现，后者再查内容，必须分开诊断。
 
-账号准备请参考我们的小红书企业账号开设指南。运营支出在[小红书营销费用说明](/zh/guandian/xiaohongshu-marketing-cost/)中展开，[RedNote代理服务页](/zh/rednote-daili/)则列出我们为客户开展的工作。
+账号准备请参考我们的[小红书企业号开通指南](/zh/guandian/xiaohongshu-business-account-setup/)。运营支出在[小红书营销费用说明](/zh/guandian/xiaohongshu-marketing-cost/)中展开，[RedNote代理服务页](/zh/rednote-daili/)则列出我们为客户开展的工作。
 
 ## 常见问题
 

@@ -233,7 +233,7 @@ Die Übersicht zeigt den Mechanismus, keine gemessene Kundenkampagne. Kundenzahl
 
 Im Wochenbericht kann eine schwache Vorauswahl genauso aussehen wie ausbleibende Reaktionen nach dem Öffnen. Die Gegenmaßnahmen unterscheiden sich: einmal die Aufmachung prüfen, einmal den Inhalt. Davon hängt ab, was als Nächstes geändert werden muss.
 
-Die Voraussetzungen beschreibt unser Leitfaden zur Eröffnung eines Xiaohongshu-Geschäftskontos. Laufende Ausgaben erläutert der [Leitfaden zu Xiaohongshu-Marketingkosten](/de/analysen/xiaohongshu-marketing-cost/). Unsere Aufgaben für Kunden stehen auf der [RedNote-Agenturseite](/de/rednote-agentur/).
+Die Voraussetzungen beschreibt unser [Leitfaden zur Einrichtung eines Xiaohongshu-Unternehmenskontos](/de/analysen/xiaohongshu-business-account-setup/). Laufende Ausgaben erläutert der [Leitfaden zu Xiaohongshu-Marketingkosten](/de/analysen/xiaohongshu-marketing-cost/). Unsere Aufgaben für Kunden stehen auf der [RedNote-Agenturseite](/de/rednote-agentur/).
 
 ## Häufige Fragen
 

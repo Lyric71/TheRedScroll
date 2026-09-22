@@ -322,7 +322,7 @@ opposite fixes. One is a packaging problem, the other is a content problem,
 and telling them apart is most of the job.
 
 For the account setup that sits under all of this, see our guide to
-Xiaohongshu business account setup. For what the work costs once you are
+[Xiaohongshu business account setup](/insights/xiaohongshu-business-account-setup/). For what the work costs once you are
 running, see our [Xiaohongshu marketing cost guide](/insights/xiaohongshu-marketing-cost/). The [RedNote agency page](/rednote-agency/)
 lists what we run for clients on the platform.
 
