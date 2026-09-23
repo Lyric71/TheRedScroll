@@ -111,6 +111,8 @@ Première décision : quelle entité dépose le dossier. WeChat (微信) et
 Xiaohongshu (小红书) acceptent une société étrangère ; Douyin (抖音), on l’a
 vu, a été pensé pour une société chinoise. Le point se tranche en semaine 1,
 puisqu’il commande la liste des comptes ouverts en semaine 2.
+[Notre analyse plateforme par plateforme sur la nécessité d’une société chinoise](/fr/decryptages/chinese-entity-social-media/)
+détaille les cas limites, de la voie de l’agent sur Weibo aux comptes détenus par une agence.
 
 Les dossiers partent, le compteur des plateformes s’enclenche. Tencent, lui,
 affiche son délai d’examen pour l’étranger.

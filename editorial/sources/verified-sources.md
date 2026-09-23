@@ -64,7 +64,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://kf.qq.com/faq/161219JvMNvi161219raieiY.html
 - Verified 1: 2026-09-03, page fetched, 300元/次 and one-year validity confirmed
 - Verified 2: 2026-09-03, re-fetched before draft finished, unchanged
-- Used in: china-social-media-marketing-cost, chinese-entity-social-media
+- Re-verified 2026-09-24: re-fetched with curl for 04A, "300元" still on the page (check 1 and check 2, both 2026-09-24).
+- Used in: china-social-media-marketing-cost, chinese-entity-social-media, china-social-media-package-includes
 - Notes: Platform page carries no date. Cite as "confirmed September 2026". Fee is non-refundable on failure.
 
 ### WeChat Official Account verification fee, overseas entity
@@ -74,7 +75,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://kf.qq.com/faq/190723aQvMR31907233IF7FV.html
 - Verified 1: 2026-09-03, page fetched, "$99 per time" confirmed, charged regardless of outcome
 - Verified 2: 2026-09-03, re-fetched, unchanged
-- Used in: china-social-media-marketing-cost, chinese-entity-social-media
+- Re-verified 2026-09-24: re-fetched with curl for 04A, "99美元/次" and "不以认证成功为前提" confirmed (check 1 and check 2, both 2026-09-24).
+- Used in: china-social-media-marketing-cost, chinese-entity-social-media, china-social-media-package-includes
 - Notes: Platform page carries no date. Cite as "confirmed September 2026".
 
 ### Xiaohongshu enterprise professional account verification fee
@@ -84,7 +86,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://a.newrank.cn/trade/news/4199 (dated confirmation); https://fe-video-qc.xhscdn.com/picasso-editor/7072d509ee7370545a056b6f9030a926e8879dca.pdf (platform document)
 - Verified 1: 2026-09-03, both fetched; PDF says "认证费用 600 元/次，认证有效期为 1 年，每年需要完成一次年审"; New Rank dated 2025-10-19 says 每年600元
 - Verified 2: 2026-09-03, both re-fetched, unchanged
-- Used in: china-social-media-marketing-cost, xiaohongshu-business-account-setup, chinese-entity-social-media
+- Re-verified 2026-09-24: re-fetched for 04A: New Rank "每年600元" and date 2025-10-19 confirmed; platform PDF re-downloaded and text extracted, "600 元/次" confirmed (check 1 and check 2, both 2026-09-24).
+- Used in: china-social-media-marketing-cost, xiaohongshu-business-account-setup, chinese-entity-social-media, china-social-media-package-includes
 - Notes: PDF also states overseas entities must verify via the desktop site and each order expires after 30 days.
 
 ### Douyin enterprise (Blue V) verification fee
@@ -94,7 +97,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://www.oceanengine.com/faq/douyin-qyh-rzxydsq.html
 - Verified 1: 2026-09-03, fetched, "首年600元，之后每年的续费是120元" confirmed, page dated 2022-05-30
 - Verified 2: 2026-09-03, re-fetched, unchanged
-- Used in: china-social-media-marketing-cost, chinese-entity-social-media
+- Re-verified 2026-09-24: re-fetched for 04A as the ledger note asked, "首年600元，之后每年的续费是120元" and page date 2022-05-30 still live (check 1 and check 2, both 2026-09-24).
+- Used in: china-social-media-marketing-cost, chinese-entity-social-media, china-social-media-package-includes
 - Notes: Older than 12 months but it is the platform's own page and still live. Second Ocean Engine FAQ (2022-05-13) says the same: https://www.oceanengine.com/faq/douyin-qyh-sfmw.html. Recheck before reuse.
 
 ### WeChat Moments ads minimum budgets
@@ -104,7 +108,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://e.qq.com/topic/marketing/industry/weixin/ ; https://wximg.qq.com/wxp/temp/MomentsAdsGuidingBook.pdf
 - Verified 1: 2026-09-03, both fetched; product page says 每日预算1000元起 / CPM单价30元起 / 单次投放总预算5万元起; PDF (自助投放端入门指引_201602) says 不得低于1000元 / 出价须大于30元 / 不得低于5万元
 - Verified 2: 2026-09-03, both re-fetched, unchanged
-- Used in: china-social-media-marketing-cost
+- Re-verified 2026-09-24: re-fetched for 04A, "每日预算1000元起" confirmed (check 1 and check 2, both 2026-09-24).
+- Used in: china-social-media-marketing-cost, china-social-media-package-includes
 - Notes: Current page is undated; the 2016 PDF supplies the date and shows the floors have held.
 
 ### Douyin ad account opening: service fee and agent-set first recharge
@@ -214,7 +219,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://kf.qq.com/faq/190723aQvMR31907233IF7FV.html
 - Verified 1: 2026-09-08, fetched (curl, full Chinese text), "7-15个工作日内完成审核" and "99美元/次" confirmed
 - Verified 2: 2026-09-08, re-fetched before draft finished, unchanged
-- Used in: first-90-days-china-social-media, chinese-entity-social-media
+- Re-verified 2026-09-24: re-fetched with curl for 04A, "7-15个工作日内完成审核" confirmed (check 1 and check 2, both 2026-09-24).
+- Used in: first-90-days-china-social-media, chinese-entity-social-media, china-social-media-package-includes
 - Notes: Same page as the 99 US dollar fee entry above; this entry adds the review time. Cite as "confirmed September 2026".
 
 ### WeChat Official Account verification materials for overseas entities
@@ -234,7 +240,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://kf.qq.com/faq/180312zQjeYV180312FNNbmA.html
 - Verified 1: 2026-09-08, fetched (curl), "境外主体可以注册1个账号", "境外地区账号暂只支持服务号类型", "认证成功后，账号方可正常使用" confirmed
 - Verified 2: 2026-09-08, re-fetched, unchanged
-- Used in: first-90-days-china-social-media, chinese-entity-social-media
+- Re-verified 2026-09-24: re-fetched with curl for 04A, "境外地区账号暂只支持服务号类型" confirmed (check 1 and check 2, both 2026-09-24).
+- Used in: first-90-days-china-social-media, chinese-entity-social-media, china-social-media-package-includes
 - Notes: Registration is by company registration location on mp.weixin.qq.com; not every region has an option.
 
 ### WeChat Official Account verification review time, mainland entity
@@ -407,6 +414,26 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: xiaohongshu-account-not-growing
 - Notes: Page is half paywalled; the cited sentences sit in the free half. Older than 12 months. The same page's creator and note-volume figures (August 2023) are superseded and must not be cited. The platform's own creator service site (creator.xiaohongshu.com) requires login and could not be fetched.
 
+### WeChat service account: four follower pushes per calendar month
+- Value: a service account (服务号), verified or not, can switch on the follower push notification (群发通知) 4 times per calendar month; the count resets at month end, does not carry over and cannot be increased. A subscription account gets 1 a day. Articles published without the push still show on the account's profile page, with no alert to followers
+- As of: pages undated; confirmed September 2026 (platform documentation)
+- Source: Tencent customer service (腾讯客服), 公众号/服务号的群发规则; corroborated by 微信公众号群发次数说明
+- URL: https://kf.qq.com/faq/120911VrYVrA131025QniAfu.html ; https://kf.qq.com/faq/120911VrYVrA150921mUbeya.html
+- Verified 1: 2026-09-24, both fetched with curl; "服务号（认证用户、非认证用户），每个月（按自然月）可以开启4次【群发通知】", "公众号主页看到文章发表记录", "1个月（按自然月）内可群发4次消息" and "群发次数目前不支持增加" confirmed
+- Verified 2: 2026-09-24, re-fetched before the draft was finished, unchanged
+- Used in: china-social-media-package-includes
+- Notes: Pair with the "overseas entities: service account only" entry. Together they explain why a foreign brand's WeChat cadence is about one pushed article a week. Relevant to briefs 05B (WeChat Official Account setup) and 06C (open-rate benchmark).
+
+### Xiaohongshu professional accounts: no WeChat ID or phone number in auto-replies, from January 7, 2025
+- Value: from January 7, 2025, the auto-reply component and welcome messages of a Xiaohongshu professional account (专业号) may not contain a WeChat ID or phone number; only the social business card (社媒名片) may be used to pass contact details. A service provider told the reporter that accounts which did not remove WeChat IDs would be muted (禁言). Also on the page: 98% of local-services merchants were said at WILL to interact with users through in-app consultation
+- As of: January 2025 (article dated 2025-01-11)
+- Source: Jiemian (界面新闻), reporter 佘晓晨, republished by Sina Tech (新浪科技)
+- URL: https://finance.sina.com.cn/tech/roll/2025-01-12/doc-ineerpnr4074384.shtml
+- Verified 1: 2026-09-24, fetched with curl; "今年1月7日起，小红书专业号后台自动回复组件及欢迎语话术里禁止出现联系微信及联系电话，只能使用社媒名片的方式导流" and "否则会被禁言" confirmed, date 2025年01月11日
+- Verified 2: 2026-09-24, re-fetched before the draft was finished, unchanged
+- Used in: china-social-media-package-includes
+- Notes: Older than 12 months. Cite as a dated rule change ("Since January 7, 2025"), not as the current full DM policy. The mute consequence is a service provider's statement to the reporter, not a platform rule; attribute it that way. Recheck on reuse.
+
 ## Regulatory and legal
 
 <!-- Needed from week 1 onward:
@@ -552,7 +579,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://www.woshipm.com/share/6397056.html
 - Verified 1: 2026-09-11, fetched, "薯条现在没有粉丝量等账号门槛，只有最低 75 元（750 薯币）的起投门槛" and "仅限投放符合规范，且是近 90 天发布的内容" confirmed
 - Verified 2: 2026-09-11, re-downloaded with curl, both strings and the 2026-05-18 date still on the page
-- Used in: xiaohongshu-marketing-cost
+- Re-verified 2026-09-24: re-fetched for 04A, both strings and the 2026-05-18 date confirmed (check 1 and check 2, both 2026-09-24).
+- Used in: xiaohongshu-marketing-cost, china-social-media-package-includes
 - Notes: Corroborated by 三节课 via Sohu, 2025-12-23 (https://m.sohu.com/a/968496983_624051), "支持手机端自助投放，最低 75 元起投". The same sources give a 7,500 yuan per-order ceiling; not cited. This is the only self-serve, published ad floor on the platform. The Jiguang (聚光) first recharge and minimum daily budget have no platform or trade-press source and must not be quoted.
 
 ### Xiaohongshu Pugongying brand invitations, and daily active user search behavior
@@ -692,7 +720,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://www.xingtu.cn/help-center/author/133057
 - Verified 1: 2026-09-17, fetched by curl, full Chinese text read, "任务服务费及服务商服务费（若涉及）总额的5%", "总额的10%" and "汇款手续费及结汇产生的汇兑损益" confirmed
 - Verified 2: 2026-09-17, re-fetched, all strings unchanged
-- Used in: china-agency-pricing-models
+- Re-verified 2026-09-24: re-fetched for 04A, "总额的5%" and "指派" confirmed (check 1 and check 2, both 2026-09-24).
+- Used in: china-agency-pricing-models, china-social-media-package-includes
 - Notes: The strongest published evidence in the ledger that a Chinese platform itemizes the agency fee separately from the creator fee. Reusable for any transparency or billing argument.
 
 ### Xingtu creator-side fees: 5% on unbound creators, 3% on creator agencies
@@ -730,7 +759,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://ad.qq.com/customer_service_cgi/v1/agreement/show?agreement_type=5
 - Verified 1: 2026-09-17, fetched by curl, clauses 1.4, 2.3, 3.13 and section 6 read verbatim
 - Verified 2: 2026-09-17, re-fetched, unchanged
-- Used in: china-agency-pricing-models
+- Re-verified 2026-09-24: re-fetched for 04A (check 1 and check 2, both 2026-09-24). CORRECTION: the agreement says "子客可以自行管理其腾讯平台账户，也可以依法委托第三方（包括但不限于腾讯平台的服务商/代理商等）管理其腾讯平台账户": the sub-client may run its own account or entrust it to the service provider. The text found does not say the provider always registers and holds the sub-client account. The provider does answer for its sub-clients ("甲方不得以投放为子客投放或子客自行管理账户进行投放等任何理由拒绝承担本协议约定的义务"). Cite it that way from now on; 04A does.
+- Used in: china-agency-pricing-models, china-social-media-package-includes
 - Notes: The source for "who owns the ad account" in any agency-selection or contract article.
 
 ### China Advertising Law: written contract required between advertiser, operator and publisher
@@ -838,7 +868,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://kefu.weibo.com/faqdetail?id=20004
 - Verified 1: 2026-09-21, fetched by curl, "企业蓝V认证需一次性支付600元/次的认证审核服务费" and "此为认证审核服务的成本费用，不以认证成功为前提" confirmed
 - Verified 2: 2026-09-21, re-fetched, unchanged, both strings re-confirmed
-- Used in: chinese-entity-social-media
+- Re-verified 2026-09-24: re-fetched with curl for 04A, "600元/次" and "不以认证成功为前提" confirmed (check 1 and check 2, both 2026-09-24).
+- Used in: chinese-entity-social-media, china-social-media-package-includes
 - Notes: Same 600 yuan headline as the Xiaohongshu enterprise fee and the Douyin Blue V first-year fee, but the structures differ: Weibo charges per application with an annual review, Douyin charges 600 then 120 to renew. Do not conflate the three in a comparison table without saying what each covers.
 
 ### Weibo enterprise verification: accepted documents assume a mainland entity
@@ -1017,6 +1048,12 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - A WeChat Official Account open-rate benchmark. Still absent, as recorded for brief 06C. Searched again, still nothing from Tencent. Not used.
 - Camper month-by-month follower series and the two underperforming campaigns. Not on /work/camper/, not in this ledger, not estimated. See the client sign-off table below.
 
+### NOT LOGGED, searched and rejected 2026-09-24 (China social media package)
+- An official Xiaohongshu posting-frequency recommendation for enterprise accounts ("3 to 4 notes a week", "one a day is acceptable", "3 to 5 a day once a note passes 500 views"). New Rank tips page, Zhihu columns, reditorapp and yimeizhushou only. No platform page. Rejected.
+- The R3 influencer rate-card gap via Campaign Asia (entry above) could not be re-checked: the page returned no article body to curl on 2026-09-24. Not used. Recheck with a browser before its next reuse.
+- Long Advisory KOL fee ranges (entries above) deliberately not used: an English-language consultancy selling China marketing advice is close enough to a competitor that the Xingtu platform fee was preferred as the sourced influencer cost.
+- First-party community figures (care hours per month, comment or DM reply-time target, revision rounds, approval turnaround). Not published anywhere on the site. Brief 04A asked for them; cut with a TODO marker. See the first-party section.
+
 ## TheRedScroll first-party data
 
 Everything here comes from accounts we run. It is cited as ours, with sample
@@ -1041,6 +1078,27 @@ data.
 - Cleared for publication: yes, it is on the homepage
 - Used in: first-90-days-china-social-media, beauty-skincare, fashion-apparel
 - Notes: Cite as TheRedScroll homepage, https://www.theredscroll.com/. No per-platform verification turnaround figure exists in this ledger; brief 01C asked for one and the article used platform-published review times instead.
+
+### TheRedScroll entry package scope, as published
+- Value: WeChat 1 article a week (up to 1,500 Chinese characters + 3 images); Weibo 1 post a week (up to 300 + 1 image); Xiaohongshu (RedNote) 1 post a week (up to 500 + 6-image carousel); Douyin 1 video a week, client footage edited and subtitled, up to 60 seconds; competitor study in month 1; content strategy and pillars; monthly editorial calendar; account opening and registration if needed; dedicated account contact; chat support Mon to Fri; monthly performance report; monthly strategy calls. Not included: AI video via HubStudio.ai, brief validation for AI production, brand mention monitoring, competitor activity tracking, monthly sentiment summary. Larger packages: Weibo 3 and 7 a week, Xiaohongshu 3 and 5 a week, Douyin 2 and 4 a week in total, AI video up to 15 seconds, weekly and anytime strategy calls, social listening in the largest only. All packages: six-month minimum, monthly in advance, tax excluded, first content live within 2 weeks of signing. Add-on platforms minimum 4 posts a month each; ad spend paid directly to the platform
+- Sample: n/a (published scope, not measured data)
+- Period: current as of 2026-09-24 (src/pages/pricing.astro and the live /pricing/ page)
+- Exclusions: prices and tier names deliberately not recorded here (STYLE_GUIDE 6.4)
+- Cleared for publication: yes, it is on the pricing page
+- Verified 1: 2026-09-24, live /pricing/ fetched with curl, every deliverable string matched to the source file
+- Verified 2: 2026-09-24, re-fetched before the draft was finished, all 17 strings still present
+- Used in: china-social-media-package-includes
+- Notes: Cite as "TheRedScroll pricing page, September 2026, https://www.theredscroll.com/pricing/". If the pricing page changes, 04A must change with it.
+
+### TheRedScroll community, reporting and account-ownership commitments, as published
+- Value: "We reply to comments, answer direct messages, monitor brand mentions daily" and "a response playbook agreed with you upfront, and same-day escalation when something could spread"; crisis response plan "within hours" (/weibo-agency/). Day-to-day running includes "community replies" and "monthly reporting in plain English"; report covers "follower growth, article reads, engagement, ad spend at cost, and leads or sales where tracking allows"; WeChat account "registered under your company name", client keeps "the account, the followers, and the full content archive" (/wechat-agency/). Monthly reports cover "follower growth, engagement rates, content performance, ad spend efficiency, and competitive benchmarking"; KPIs "reviewed monthly, recalibrated quarterly" (/services/strategy-campaigns/). Reporting "in English with Chinese-language data attached" (/platforms/others/). "We write in Chinese. Not translate." and real-life production "quoted separately" (/services/content-production/)
+- Sample: n/a (published commitments)
+- Period: current as of 2026-09-24
+- Cleared for publication: yes, all on live pages
+- Verified 1: 2026-09-24, each page fetched with curl, every quoted string matched
+- Verified 2: 2026-09-24, re-fetched, unchanged
+- Used in: china-social-media-package-includes
+- Notes: The site publishes NO community care hours and NO reply-time target. The Weibo page's "monitor brand mentions daily" sits beside a pricing table that keeps brand mention monitoring out of the entry package; 04A treats replies and DMs on the client's own accounts as included and monitoring mentions elsewhere as social listening. Flag if the two pages are meant to say something else.
 
 ### Camper case study results, as published
 - Value: followers 43,000 to 187,000 in 18 months across WeChat, RedNote (Xiaohongshu) and Weibo; engagement rate 1.2% to 4.7%; 38% of e-commerce traffic from RedNote; same-store sales up 31% year on year; no discount campaigns. Also on the page but not yet used: retention up 22%, purchase frequency 1.3 to 2.1 per customer a year

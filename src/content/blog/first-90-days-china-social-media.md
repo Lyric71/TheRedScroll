@@ -102,6 +102,8 @@ The first decision is which entity applies. WeChat (微信) and Xiaohongshu
 (小红书) accept an overseas company. Douyin (抖音), as above, is built for a
 Chinese one. Settle this in week one, because it decides which accounts can
 be live in week two.
+[Our platform-by-platform answer on whether you need a Chinese entity](/insights/chinese-entity-social-media/)
+covers the edge cases, from Weibo's agent route to agency-held accounts.
 
 Then the applications go in and the platform clock starts. Tencent publishes
 its overseas review time.

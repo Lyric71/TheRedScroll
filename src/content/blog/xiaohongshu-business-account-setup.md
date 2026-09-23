@@ -288,7 +288,7 @@ trademark chain. Where a mark is held by your overseas parent and the account
 is opened by another company, the platform accepts one level of
 general-distributor authorization and no more. If your structure runs head
 office to regional office to local distributor, the local distributor cannot
-be the account holder. Fix the structure or file the mark locally. [Our China market entry service](/services/market-entry/) exists largely because of problems shaped like this one.
+be the account holder. Fix the structure or file the mark locally. [Our China market entry service](/services/market-entry/) exists largely because of problems shaped like this one. Whether you need a Chinese entity at all, across all four platforms, is a separate question. [Our guide to running social media in China without one](/insights/chinese-entity-social-media/) answers it.
 
 One reason to put up with all of it.
 

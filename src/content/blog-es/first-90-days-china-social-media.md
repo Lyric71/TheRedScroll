@@ -112,6 +112,8 @@ Lo primero es decidir qué entidad presenta la solicitud. WeChat (微信) y
 Xiaohongshu (小红书) aceptan a una empresa extranjera; Douyin (抖音), ya se ha
 visto, está hecho para una china. El asunto se cierra en la semana 1, porque
 de ahí depende qué cuentas podrán estar abiertas en la semana 2.
+[Nuestro análisis, plataforma por plataforma, sobre si hace falta una sociedad china](/es/analisis/chinese-entity-social-media/)
+repasa los casos límite, de la vía del agente en Weibo a las cuentas a nombre de la agencia.
 
 Presentadas las solicitudes, arranca el reloj de la plataforma. Tencent hace
 público su plazo de revisión para el extranjero.
