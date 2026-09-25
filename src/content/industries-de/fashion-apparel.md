@@ -127,6 +127,10 @@ Läden. Und die ersten Monate waren zäh. Die
 [Camper-Fallstudie auf unserer Seite](/de/referenzen/camper/) enthält die
 vollständige Chronologie.
 
+Unsere [ausführliche Analyse des Falls
+Camper](/de/analysen/camper-china-teardown/) geht weiter: die drei Formate, die
+wöchentliche Auswertung und was wir heute ändern würden.
+
 ## Der Weg zur Entdeckung: von Xiaohongshu über Douyin in den Laden
 
 Eine chinesische Kundin tippt selten einen Markennamen ein. Sie tippt das

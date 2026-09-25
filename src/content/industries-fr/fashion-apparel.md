@@ -127,6 +127,10 @@ premiers mois ont été lents. Le
 [dossier Camper sur notre site](/fr/realisations/camper/) donne la chronologie
 complète.
 
+Notre [analyse détaillée du cas Camper](/fr/decryptages/camper-china-teardown/)
+va plus loin : les trois formats, le pilotage hebdomadaire et ce que nous
+changerions aujourd'hui.
+
 ## Le parcours de découverte : de Xiaohongshu à Douyin, puis en magasin
 
 Une acheteuse chinoise tape rarement un nom de marque. Elle tape la tenue.

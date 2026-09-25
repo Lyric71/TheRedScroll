@@ -123,6 +123,10 @@ los primeros meses fueron lentos. El
 [caso Camper en nuestra web](/es/proyectos/camper/) recoge la cronología
 completa.
 
+Nuestro [análisis a fondo del caso Camper](/es/analisis/camper-china-teardown/)
+va más allá: los tres formatos, el seguimiento semanal y lo que hoy
+cambiaríamos.
+
 ## El recorrido de descubrimiento: de Xiaohongshu a Douyin y a la tienda
 
 Una compradora china rara vez teclea un nombre de marca. Teclea el look.

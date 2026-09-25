@@ -117,6 +117,9 @@ follower count of the three and sent the most store traffic. And the first
 months were slow. The [Camper case study on our site](/work/camper/) has the
 full timeline.
 
+Our [Camper teardown](/insights/camper-china-teardown/) goes further: the three
+formats, the weekly reporting and what we would change today.
+
 ## The discovery path: Xiaohongshu to Douyin to store
 
 A Chinese shopper rarely types a brand name. She types the outfit. Autumn
