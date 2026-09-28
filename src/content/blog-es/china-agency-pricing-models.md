@@ -228,7 +228,7 @@ El precio cerrado se gana el sueldo cuando el trabajo se repite. Contenido mensu
 
 ## Lo que cobramos, y por qué lo imprimimos
 
-TheRedScroll publica una tarifa completa en su [página de precios](/es/precios/). Paquetes mensuales y precios por unidad, en abierto, sin formulario.
+TheRedScroll publica una tarifa completa en su [página de precios](/es/precios/). Paquetes mensuales y precios por unidad, en abierto, sin formulario. Nuestro [desglose del paquete básico](/es/analisis/china-social-media-package-includes/) recorre, línea a línea, lo que incluye el más pequeño.
 
 Es poco habitual, y el motivo está en los datos del mercado.
 

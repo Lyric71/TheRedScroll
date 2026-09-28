@@ -228,7 +228,7 @@ Der Festpreis zahlt sich aus, wenn die Arbeit sich wiederholt. Monatlicher Conte
 
 ## Was wir berechnen, und warum wir es drucken
 
-TheRedScroll veröffentlicht eine vollständige Preisliste auf der [Preisseite](/de/preise/). Monatspakete und Einzelpreise, öffentlich, ohne Formular.
+TheRedScroll veröffentlicht eine vollständige Preisliste auf der [Preisseite](/de/preise/). Monatspakete und Einzelpreise, öffentlich, ohne Formular. Was das kleinste davon enthält, listet unsere [Analyse des Einstiegspakets](/de/analysen/china-social-media-package-includes/) Zeile für Zeile auf.
 
 Das ist unüblich, und der Grund steckt in den Marktdaten.
 

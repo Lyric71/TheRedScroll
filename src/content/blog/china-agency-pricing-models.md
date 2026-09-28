@@ -354,7 +354,9 @@ the model saves you an argument every month.
 ## What we charge, and why we print it
 
 TheRedScroll publishes a full rate card on its [pricing page](/pricing/). Monthly packages
-and per-item rates, in public, with no form to fill in.
+and per-item rates, in public, with no form to fill in. Our [walk-through of the
+entry package](/insights/china-social-media-package-includes/) lists what the
+smallest one delivers, line by line.
 
 That is unusual, and the reason is in the market data.
 

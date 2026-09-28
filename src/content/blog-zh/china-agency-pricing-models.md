@@ -228,7 +228,7 @@ featuredImage: "/images/blog/china-agency-pricing-models.webp"
 
 ## 我们怎么收费，以及为什么把它印出来
 
-TheRedScroll在[价格页](/zh/jiage/)上公开完整价目表。月度套餐和单项价格，公开可见，不需要填表。
+TheRedScroll在[价格页](/zh/jiage/)上公开完整价目表。月度套餐和单项价格，公开可见，不需要填表。最基础的一档包含什么，我们在[入门套餐拆解](/zh/guandian/china-social-media-package-includes/)一文中逐行列出。
 
 这并不常见，原因就在市场数据里。
 

@@ -366,7 +366,9 @@ La grille tarifaire figure sur la [page tarifs](/fr/tarifs/). Elle détaille
 les forfaits mensuels, leur contenu et les prix à l’unité pour le contenu.
 L’achat média est facturé à part, au coût réel, sans majoration. Les contrats
 courent sur six mois au minimum, le temps d’un premier vrai cycle de données
-en Chine.
+en Chine. Notre [analyse ligne par ligne du forfait
+d’entrée](/fr/decryptages/china-social-media-package-includes/) détaille ce que
+le plus modeste d’entre eux livre chaque semaine.
 
 Publier ses prix remplit la même fonction que citer ses sources. Un acheteur
 qui connaît le chiffre avant l’appel pose de meilleures questions pendant

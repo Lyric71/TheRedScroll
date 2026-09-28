@@ -358,7 +358,9 @@ La lista de tarifas está en la [página de precios](/es/precios/). Detalla los
 paquetes mensuales, lo que incluye cada uno y las tarifas por unidad del
 contenido. La inversión publicitaria se factura aparte, a coste, sin recargo.
 Los contratos duran seis meses como mínimo, lo que tarda un primer ciclo de
-datos real en China.
+datos real en China. Nuestro [desglose, partida por partida, del paquete
+básico](/es/analisis/china-social-media-package-includes/) muestra lo que el más
+pequeño entrega cada semana.
 
 Publicar el precio cumple la misma función que citar las fuentes. Un
 comprador que ha visto la cifra antes de la llamada hace mejores preguntas

@@ -131,6 +131,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-03, re-fetched, unchanged
 - Used in: china-social-media-marketing-cost, first-90-days-china-social-media, xiaohongshu-business-account-setup, chinese-entity-social-media
 - Notes: Weakest source in the ledger, a third-party studio, not the platform or trade press. Used for the access rule only; its deposit figures (5,000 to 10,000 yuan) were not cited. Replace with a platform announcement if one is found.
+- **CORRECTION 2026-09-28, DO NOT REUSE.** Re-fetched for 04B: the page now shows dateModified 2026-09-18 and reverses the claim. It says the "invitation-only since a certain date, overseas merchants must go through an authorized agent, self-serve channel closed" story could not be found in any official Xiaohongshu document ("未能找到支持该说法的官方文件"), that the Juguang backend offers both an advertiser account and an agency account, that "必须找代理商" is not a platform rule, that the platform charges no opening fee, and that no official minimum first recharge exists ("官方没有公布统一的最低首充标准"; agents quote 2,000 to 10,000 yuan). The seven articles listed under Used in still carry the old claim in all five locales and need a correction pass on request. 04B cites the platform's own documents instead (see the Juguang operations guide and registration entries).
 
 ### Xiaohongshu monthly active users and daily searches, platform figure
 - Value: MAU passed 400 million; daily searches 800 million
@@ -139,7 +140,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://finance.sina.com.cn/jjxw/2026-05-27/doc-inhziqxq9291575.shtml
 - Verified 1: 2026-09-07, fetched, "月活跃用户已突破4亿，日搜索量高达8亿" and date confirmed
 - Verified 2: 2026-09-07, re-fetched before draft finished, unchanged
-- Used in: xiaohongshu-marketing-foreign-brands, beauty-skincare, xiaohongshu-algorithm, xiaohongshu-account-not-growing, fashion-apparel, xiaohongshu-business-account-setup
+- Used in: xiaohongshu-marketing-foreign-brands, beauty-skincare, xiaohongshu-algorithm, xiaohongshu-account-not-growing, fashion-apparel, xiaohongshu-business-account-setup, xiaohongshu-advertising-formats-costs
+- Re-verified 2026-09-28 for 04B: "月活跃用户已突破4亿" and "日搜索量高达8亿" confirmed (check 1 and check 2).
 - Notes: Platform's own figure, global and all devices. Pair with the QuestMobile domestic count below when an independent number is asked for.
 
 ### Xiaohongshu domestic monthly active users, QuestMobile
@@ -209,7 +211,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://www.niaogebiji.com/article-482538-1.html
 - Verified 1: 2026-09-07, fetched, "普通模式收取10%，优效模式收取20%" confirmed
 - Verified 2: 2026-09-07, re-fetched, unchanged
-- Used in: xiaohongshu-marketing-foreign-brands, beauty-skincare, xiaohongshu-algorithm, xiaohongshu-account-not-growing, fashion-apparel
+- Used in: xiaohongshu-marketing-foreign-brands, beauty-skincare, xiaohongshu-algorithm, xiaohongshu-account-not-growing, fashion-apparel, xiaohongshu-advertising-formats-costs
+- Re-verified 2026-09-28 for 04B: "普通模式收取10%" still on the page (check 1 and check 2). Still older than 12 months; the fee rule itself is not re-confirmed by a platform page.
 - Notes: Older than 12 months. The rule is still applied by the platform, but the Pugongying help center (pgy.xiaohongshu.com) blocks fetches. Replace with a platform page when one can be fetched.
 
 ### WeChat Official Account verification for overseas entities: review time and payment
@@ -434,6 +437,65 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: china-social-media-package-includes
 - Notes: Older than 12 months. Cite as a dated rule change ("Since January 7, 2025"), not as the current full DM policy. The mute consequence is a service provider's statement to the reporter, not a platform rule; attribute it that way. Recheck on reuse.
 
+### Xiaohongshu Juguang feed ads: slots, labels, bid modes and one platform case
+- Value: feed ads appear in the discovery feed from slot 6, then every 10 slots; native note ads, product ads in native form and DM ads carry the 赞助 (sponsored) tag, lead-form and non-native product ads carry 广告 (ad); oCPC aims to keep conversion cost within about ±20% of the target and carries over-cost compensation (超成本赔付), Nobid spends a set budget with no cost constraint and no compensation, manual CPC caps the click cost; keyword-interest targeting reaches users who searched related keywords in the past 3 days; case: a medical aesthetics advertiser (某医美客户) collecting leads with keyword targeting of recent searchers ran 7 days at CTR 5.95%, CPC 0.33 yuan, 40 forms, cost per form "far below the industry average" (no figure)
+- As of: May 2022 (PDF metadata creation date 2022-05-06; the text refers to a 2022 feature launch)
+- Source: Xiaohongshu (小红书), Juguang feed product guide (聚光平台|信息流产品介绍, platform PDF)
+- URL: https://fe-video-qc.xhscdn.com/fe-platform/5d013a20d7c3ef6f581dcd33f31933284139756e.pdf
+- Verified 1: 2026-09-28, downloaded (HTTP 200, 2,028,153 bytes) and extracted; "发现页从6 起顺位+10 依次递增", "赞助", "超成本赔付", "±20%", "前三天搜索过的目标人群", "某医美客户", "CPC 为0.33 元", "收集表单40 个" and "5.95%" confirmed
+- Verified 2: 2026-09-28, re-downloaded and re-extracted before the draft was finished, and again after the quality loop, unchanged
+- Used in: xiaohongshu-advertising-formats-costs
+- Notes: A byte-identical copy sits on an agent CDN (cos.jingzhunhuoke.net); cite the platform copy. The 0.33-yuan CPC is one case, never an average. A second case in the same PDF (a home furnishing client, oCPC versus old CPC: CVR +104.65%, CPL -40.56%) is not cited yet.
+
+### Xiaohongshu Juguang operations guide: product matrix and opening flow
+- Value: Juguang's product matrix lists feed, search, live, splash (开屏), brand zone (品专), box (盒子) and non-standard (非标) placements; the direct opening flow is register the app account and bind a phone, professional account verification, choose an identity, submit promotion qualifications, "recharge and start" (充值并开启投放), with no amount stated; the account daily budget is shared with the professional account promotion centre and can be raised by up to 20% on holidays
+- As of: May 2022 (PDF metadata creation date 2022-05-06)
+- Source: Xiaohongshu (小红书) commercial product centre, Juguang operations guide (聚光平台操作说明, platform PDF, 55 pages)
+- URL: https://fe-video-qc.xhscdn.com/fe-platform/a7a8ea23090c625636d68195559a074e18165972/%E8%81%9A%E5%85%89%E5%B9%B3%E5%8F%B0%E6%93%8D%E4%BD%9C%E8%AF%B4%E6%98%8E.pdf
+- Verified 1: 2026-09-28, downloaded (HTTP 200, 8,423,507 bytes) and extracted; "开屏", "品专", "盒子", "非标", "进行专业号认证", "提交推广资质" and "充值并开启投放" confirmed
+- Verified 2: 2026-09-28, re-downloaded and re-extracted twice, unchanged
+- Used in: xiaohongshu-advertising-formats-costs
+- Notes: This is the platform-side proof that no minimum first deposit is published: the flow's money step carries no figure. A companion FAQ PDF on the same CDN contains live test-account credentials and must not be cited.
+
+### Xiaohongshu commercial traffic forms, search ad slots and the filed-note rule
+- Value: five commercial traffic forms (note boosting, search promotion, live-room promotion, product promotion, landing-page promotion); boosted notes appear in the discovery feed from slot 6 then every 10; search ads appear on the keyword results page from slot 3 then every 10, shown as notes; only filed (报备) notes can be boosted through Juguang or the feed account; bidding is CPC
+- As of: April 2024 (article dated 2024-04-15)
+- Source: TopMarketing, author Vic的营销思考 (practitioner column)
+- URL: https://itopmarketing.com/info16378
+- Verified 1: 2026-09-28, fetched, "第3顺位+10依次递增", "第6顺位+10依次递增", "只有报备笔记可以通过聚光平台或信息流账户加热", "竞价CPC" and "2024.04.15" confirmed
+- Verified 2: 2026-09-28, re-fetched twice, unchanged; "也是以报备笔记的形式展现" also confirmed
+- Used in: xiaohongshu-advertising-formats-costs
+- Notes: Trade-media column, not the platform. The feed slot rule matches the platform feed guide above, which corroborates the search slot rule's source. Replace the search slot with a platform page if one is found.
+
+### Xiaohongshu search versus feed budget split, and one keyword planner bid
+- Value: practitioner planning rule, search and feed budgets usually split 1:3 or 1:2 (feed usually three times search); the Juguang keyword planner showed a market bid of 3.47 (yuan per click) for 面霜 (face cream), with a monthly search index of 667,318
+- As of: October 2024 (article dated 2024-10-22)
+- Source: Woshipm (人人都是产品经理), author 江河聊营销
+- URL: https://www.woshipm.com/share/6130476.html
+- Verified 1: 2026-09-28, fetched, "通常搜索和信息流比重在1：3或者1:2", "市场出价 3.47" and "2024-10-22" confirmed
+- Verified 2: 2026-09-28, re-fetched twice, unchanged; "信息流通常是搜索的3倍" also confirmed
+- Used in: xiaohongshu-advertising-formats-costs
+- Notes: A practitioner's rule of thumb and one keyword example, not a platform benchmark. Cite as such. The same article's example budgets (2.2 million yuan a month to take all face cream search ads) are illustrations, not data.
+
+### Xiaohongshu commercial tools: Pugongying modes, Qianfan, and the boost tool on collaboration notes
+- Value: Pugongying runs three cooperation modes (custom, recruitment, co-creation); Qianfan (千帆) is built for merchants with a Xiaohongshu store to promote products and live rooms; the self-serve boost tool (薯条) starts at 75 yuan on mobile and can boost Pugongying collaboration notes and product notes
+- As of: December 2025 (article dated 2025-12-23)
+- Source: Sanjieke (三节课), via Sohu (搜狐)
+- URL: https://m.sohu.com/a/968496983_624051
+- Verified 1: 2026-09-28, fetched, "最低 75 元起投", "支持蒲公英合作笔记、商品笔记加热", "专门为小红书开店商家设计的工具" and "2025-12-23" confirmed
+- Verified 2: 2026-09-28, re-fetched twice, unchanged
+- Used in: xiaohongshu-advertising-formats-costs
+- Notes: Sanjieke is an online training company, not an agency. The article is course marketing and summarizes a platform deck it does not link. Use for tool definitions only.
+
+### NOT LOGGED, searched and rejected 2026-09-28 (Xiaohongshu ad formats and costs)
+- A platform-published Juguang minimum deposit or first recharge. Absent from all four platform PDFs; the help centre (ad.xiaohongshu.com/next_help/...) renders client-side and could not be fetched. 5,000 yuan and "500 to 3,000 yuan opening fee" figures trace to agents. Not cited as a platform figure.
+- A 100-yuan Juguang daily budget floor ("raised from 50 to 100 yuan"). Agent sites only (jingzhunhuoke). Rejected.
+- Industry CPC tables ("beauty 1.8 to 2.5 yuan, jewelry 2.2 to 3.0, education 3.5 to 5.0, local services 1 to 2; 2026 search CPC down 15%"). xilanhua.net, an undated content farm. Rejected.
+- Feed CPM 50 to 100 yuan, banner 20 to 40, topic ads 100+. Sohu self-media and agent pages, no primary. Rejected. It sits well above our own published 10 to 30 yuan; see the first-party entry.
+- Cost per lead by objective. No dated published average; practitioner posts use assumed figures (50 or 100 yuan per DM opener). Rejected.
+- Pugongying content heating (内容加热) caps, 5,000 yuan or 50,000 impressions (Niaoge Biji, 2022-12-22). A closed beta; too old. Rejected.
+- Xiaohongshu 2025 ad revenue (32 billion yuan, 76% of revenue). 36Kr, second-hand from investor sources. Not needed, not logged.
+
 ## Regulatory and legal
 
 <!-- Needed from week 1 onward:
@@ -580,7 +642,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 1: 2026-09-11, fetched, "薯条现在没有粉丝量等账号门槛，只有最低 75 元（750 薯币）的起投门槛" and "仅限投放符合规范，且是近 90 天发布的内容" confirmed
 - Verified 2: 2026-09-11, re-downloaded with curl, both strings and the 2026-05-18 date still on the page
 - Re-verified 2026-09-24: re-fetched for 04A, both strings and the 2026-05-18 date confirmed (check 1 and check 2, both 2026-09-24).
-- Used in: xiaohongshu-marketing-cost, china-social-media-package-includes
+- Used in: xiaohongshu-marketing-cost, china-social-media-package-includes, xiaohongshu-advertising-formats-costs
+- Re-verified 2026-09-28 for 04B: both strings and the 2026-05-18 date confirmed (check 1 and check 2).
 - Notes: Corroborated by 三节课 via Sohu, 2025-12-23 (https://m.sohu.com/a/968496983_624051), "支持手机端自助投放，最低 75 元起投". The same sources give a 7,500 yuan per-order ceiling; not cited. This is the only self-serve, published ad floor on the platform. The Jiguang (聚光) first recharge and minimum daily budget have no platform or trade-press source and must not be quoted.
 
 ### Xiaohongshu Pugongying brand invitations, and daily active user search behavior
@@ -589,8 +652,9 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Source: Huxiu (虎嗅)
 - URL: https://www.huxiu.com/article/4861801.html
 - Verified 1: 2026-09-11, fetched, "2025年，小红书蒲公英平台的品牌邀约量达到2700万次，同比增长34%" and "75%的日活用户浏览推荐内容，77%的日活用户通过搜索解决问题" confirmed
+- Re-verified 2026-09-28 for 04B (check 1 and check 2): first fetch HTTP 502, later fetches HTTP 200. The live wording is "75%日活用户浏览推荐内容，77%日活用户通过搜索解决问题" (no 的); article date 2026-05-29.
 - Verified 2: 2026-09-11, re-fetched, both strings unchanged
-- Used in: xiaohongshu-marketing-cost, xiaohongshu-algorithm, xiaohongshu-account-not-growing, fashion-apparel
+- Used in: xiaohongshu-marketing-cost, xiaohongshu-algorithm, xiaohongshu-account-not-growing, fashion-apparel, xiaohongshu-advertising-formats-costs
 - Notes: Same article repeats the platform's 400 million MAU and 800 million daily searches, which are already logged above. The 77% search figure is the strongest published basis for search-coverage seeding arithmetic; the platform publishes no seeding volume benchmark.
 
 ### Xiaohongshu commercial governance: Community Convention 2.0 and enforcement volumes
@@ -830,7 +894,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://fe-video-qc.xhscdn.com/fe-platform/cc8a5f81ddb6d91d6be9dfb34e62b49b999f234b/%E8%81%9A%E5%85%89%E5%B9%B3%E5%8F%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%BC%80%E6%88%B7%E6%B5%81%E7%A8%8B.pdf
 - Verified 1: 2026-09-18, downloaded (HTTP 200, 928,035 bytes) and extracted; "境内企业上传营业执照，境外企业上传BR/CR", "若为香港公司，则BR和CR都需要", "公司注册文件如不是中文，需提供中文翻译件并加盖品牌方公章", "行业类别：选择行业时须与资质文件中经营范围保持一致", "账号名称一般为公司名称、店铺名称", "头像须为品牌logo，请勿包含人像", "商标注册证不可过期", "申请时间需届满三个月", "认证最多接受一级总代授权" and "若主体为网站，需上传工信部备案截图" all confirmed
 - Verified 2: 2026-09-18, re-downloaded and re-extracted, unchanged, all ten strings re-confirmed
-- Used in: xiaohongshu-business-account-setup
+- Used in: xiaohongshu-business-account-setup, xiaohongshu-advertising-formats-costs
+- Re-verified 2026-09-28 for 04B: "当前账号暂未开通广告投放相关功能", "【广告主账号】或【代理商账号】", "前往合作伙伴平台完成入驻流程" and "境内企业上传营业执照，境外企业上传BR/CR" confirmed (check 1 and check 2). File creation date in the PDF metadata: 2022-05-01, cited as May 2022. Precision: 代理商账号 is the sign-up path for agencies themselves (they go on to the partner platform), not an option an advertiser picks to be served by an agency.
 - Notes: **Two different translation stamps, do not conflate them.** Account verification wants a translation stamped by a translation company (see the eligibility entry above); ad qualification wants the registration document translation stamped with the brand owner's own seal. This document predates the February 2026 invitation-only rule for overseas advertisers (see the Jiguang overseas entry above), so it describes the document set, not current self-serve access. Use both together.
 
 ### Xiaohongshu Jiguang: marketing scenarios and shared account balance
@@ -840,7 +905,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://fe-video-qc.xhscdn.com/fe-platform/37f82988d0e9273cd645bb819c37a4e0f697bc70.pdf
 - Verified 1: 2026-09-18, downloaded (HTTP 200, 4,533,849 bytes) and extracted; "产品种草、商品销量、客资收集、直播推广四大营销场景", "和专业号推广中心共用" and "ad.xiaohongshu.com" all confirmed
 - Verified 2: 2026-09-18, re-downloaded and re-extracted, unchanged, all three strings re-confirmed
-- Used in: xiaohongshu-business-account-setup
+- Used in: xiaohongshu-business-account-setup, xiaohongshu-advertising-formats-costs
+- Re-verified 2026-09-28 for 04B, new strings added: "信息流+搜索的产品双引擎", "信息流产品种草—搜索产品收割", "抢占赛道：...目前仅支持搜索推广", "客资收集：吸引您的目标受众提交销售线索或发起私信咨询", "商品销量：吸引您的目标受众进入您的店铺或购买店铺商品", "精确匹配" / "短语匹配" and "抢排位工具" (check 1 and check 2, both 2026-09-28). The report overview shows total spend, impressions, clicks, click-through rate and average cost per click. PDF metadata creation date 2022-05-06, cited as May 2022.
 - Notes: 客资收集 (lead collection) is the objective for service brands with no store; it converts to direct messages or a form. The shared-balance line matters for any article about who controls the ad account. A companion Jiguang FAQ PDF exists on the same CDN but contains live test-account credentials and was deliberately not cited.
 
 ### Xiaohongshu store types and the cross-border authorization path
@@ -1100,6 +1166,17 @@ data.
 - Used in: china-social-media-package-includes
 - Notes: The site publishes NO community care hours and NO reply-time target. The Weibo page's "monitor brand mentions daily" sits beside a pricing table that keeps brand mention monitoring out of the entry package; 04A treats replies and DMs on the client's own accounts as included and monitoring mentions elsewhere as social listening. Flag if the two pages are meant to say something else.
 
+### TheRedScroll Xiaohongshu ad planning ranges, as published
+- Value: in-feed ads "CPM ¥10 to ¥30", "CPC from ¥0.3", "Min budget ¥5,000", "as of early 2026"; FAQ "RedNote from ¥5,000" and "We recommend ¥15,000 to ¥30,000/month to collect enough data for real optimization"; "Brand zone: dedicated landing page in RedNote search, ¥50,000+"; "Splash ads: full-screen at app open, ¥50,000+"; "Ad spend is billed separately. No markups."; "Weekly reports during active campaigns"; /rednote-agency/: "We run ad accounts on behalf of overseas clients through our local structure, with weekly spend reports"
+- Sample: not published. The page gives no account count
+- Period: "as of early 2026" (page wording); current as of 2026-09-28 (src/pages/services/advertising.astro, src/pages/rednote-agency.astro and both live pages)
+- Exclusions: the page's "roughly 10-20% of Douyin rates" line was not used (no source for the comparison); its KOC and KOL price lines were not used
+- Cleared for publication: yes, on live pages. These are ad-spend planning figures, not our fees, so STYLE_GUIDE 6.4 does not apply
+- Verified 1: 2026-09-28, both live pages fetched with curl, every string matched to the source files
+- Verified 2: 2026-09-28, re-fetched twice, unchanged
+- Used in: xiaohongshu-advertising-formats-costs
+- Notes: Cite as ours, as planning ranges, never as a platform average. **Open question for Cyril:** Chinese agent pages (not citable) put feed CPMs at 50 to 100 yuan, well above our 10 to 30. Confirm the advertising page against real account data. Once a sample size and period exist, add them here and replace the TODO in 04B. If the page changes, 04B changes with it.
+
 ### Camper case study results, as published
 - Value: followers 43,000 to 187,000 in 18 months across WeChat, RedNote (Xiaohongshu) and Weibo; engagement rate 1.2% to 4.7%; 38% of e-commerce traffic from RedNote; same-store sales up 31% year on year; no discount campaigns. Also on the page but not yet used: retention up 22%, purchase frequency 1.3 to 2.1 per customer a year
 - Sample: one client account set (Camper), three platforms
@@ -1123,6 +1200,9 @@ data.
   instead. Needs a named account, sample period, exclusions and written
   clearance before it can be added.
 - Ad benchmark ranges: CPC, CPM, cost per lead (briefs 04B, 08B)
+  Still needed. Brief 04B, drafted 2026-09-28, used the advertising page's
+  published planning ranges labeled as ours, cut cost per lead, and carries a
+  TODO asking for an account count and period. See logs/2026-09-28.md.
 - Xiaohongshu business account application outcomes: number of applications
   submitted, period, count by rejection reason, exclusions (brief 03B). Brief
   03B asked for rejection reasons "from our own submission history, labeled as

@@ -364,7 +364,9 @@ Die Preisliste steht auf der [Preisseite](/de/preise/). Sie führt die
 Monatspakete auf, was jedes enthält und was Content je Stück kostet. Das
 Werbebudget wird getrennt zum Selbstkostenpreis abgerechnet, ohne Aufschlag.
 Verträge laufen mindestens sechs Monate, so lange wie ein erster echter
-Datenzyklus in China.
+Datenzyklus in China. Was das kleinste Paket Woche für Woche liefert, zeigt
+unsere [Analyse des Einstiegspakets, Posten für
+Posten](/de/analysen/china-social-media-package-includes/).
 
 Den Preis zu veröffentlichen erfüllt denselben Zweck wie das Zitieren der
 Quellen. Ein Käufer, der die Zahl vor dem Gespräch kennt, stellt im Gespräch

@@ -327,7 +327,9 @@ doesn't print is TheRedScroll's own, and that's deliberate.
 The rate card lives on the [pricing page](/pricing/). It lists the monthly packages, what
 each includes, and the per-item rates for content. Ad spend is billed
 separately at cost, with no markup. Contracts run six months minimum, the
-length of a first real data cycle in China.
+length of a first real data cycle in China. Our [line-by-line look at the entry
+package](/insights/china-social-media-package-includes/) shows what the smallest
+one delivers each week.
 
 Publishing the price does the same job as citing the sources. A buyer who has
 seen the number before the call asks better questions on the call. None of

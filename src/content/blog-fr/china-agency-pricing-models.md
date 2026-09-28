@@ -228,7 +228,7 @@ Le prix fixe prend toute sa valeur quand le travail se répète. Du contenu mens
 
 ## Nos tarifs, et pourquoi nous les imprimons
 
-TheRedScroll publie une grille tarifaire complète sur sa [page tarifs](/fr/tarifs/). Forfaits mensuels et tarifs à l’unité, en public, sans formulaire à remplir.
+TheRedScroll publie une grille tarifaire complète sur sa [page tarifs](/fr/tarifs/). Forfaits mensuels et tarifs à l’unité, en public, sans formulaire à remplir. Notre [analyse du forfait d’entrée](/fr/decryptages/china-social-media-package-includes/) en passe le plus modeste en revue, ligne par ligne.
 
 C’est inhabituel, et la raison tient dans les chiffres du marché.
 
