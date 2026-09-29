@@ -257,8 +257,8 @@ ihre chinesische Kreation überhaupt trägt, ist das schon das ganze erste
 Experiment. Sechs Beiträge veröffentlichen, jeden mit dem Mindestbetrag
 anschieben, und beobachten, welchen der Feed aufnimmt.
 
-Das große Geld läuft über Jiguang (聚光), die Gebotsplattform hinter Such-
-und Feed-Anzeigen. Für ausländische Werbetreibende hat sich diese Tür in
+Das große Geld läuft über Jiguang (聚光), die Gebotsplattform hinter [Such-
+und Feed-Anzeigen](/de/analysen/xiaohongshu-advertising-formats-costs/). Für ausländische Werbetreibende hat sich diese Tür in
 diesem Jahr verändert.
 
 > Seit dem 2. Februar 2026 können ausländische Händler kein Jiguang-Konto

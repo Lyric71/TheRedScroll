@@ -230,8 +230,8 @@ Seventy-five yuan is about eleven dollars. For a brand still testing whether
 its Chinese creative works, that's the whole first experiment. Publish six
 notes, boost each at the floor, see which one the feed carries.
 
-Serious money goes through Jiguang (聚光), the bidding platform behind search
-and feed ads. For foreign advertisers, that door changed this year.
+Serious money goes through Jiguang (聚光), the bidding platform behind [search
+and feed ads](/insights/xiaohongshu-advertising-formats-costs/). For foreign advertisers, that door changed this year.
 
 > Since 2 February 2026, overseas merchants can no longer open a Jiguang
 > account on their own. They apply through an authorized Xiaohongshu agent,

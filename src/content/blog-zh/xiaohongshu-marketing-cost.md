@@ -160,7 +160,7 @@ featuredImage: "/images/blog/xiaohongshu-marketing-cost.webp"
 
 75元约合11美元。对一个还在测试中文创意行不行的品牌来说，第一轮实验有这些就够了。发六篇笔记，每篇按最低额加热，看信息流把哪一篇带起来。
 
-真正的大钱走聚光，也就是搜索广告和信息流广告背后的竞价平台。对外国广告主来说，这扇门今年变了。
+真正的大钱走聚光，也就是[搜索广告和信息流广告](/zh/guandian/xiaohongshu-advertising-formats-costs/)背后的竞价平台。对外国广告主来说，这扇门今年变了。
 
 > 自2026年2月2日起，境外商家无法自行开通聚光账户，需通过小红书授权代理商申请，由代理商审核资质后提交平台。
 > 来源：自由行Studio，小红书聚光海外开户指南，2026年8月。https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html

@@ -257,7 +257,7 @@ l’expérience initiale. Publiez six notes, poussez chacune au plancher, et reg
 laquelle le fil emporte.
 
 Les vrais budgets passent par Jiguang (聚光), la plateforme d’enchères qui
-alimente les publicités de recherche et de fil. Pour les annonceurs
+alimente [les publicités de recherche et de fil](/fr/decryptages/xiaohongshu-advertising-formats-costs/). Pour les annonceurs
 étrangers, la porte a changé cette année.
 
 > Depuis le 2 février 2026, les marchands étrangers ne peuvent plus ouvrir

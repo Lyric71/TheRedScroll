@@ -252,7 +252,7 @@ experimento. Publique seis notas, impulse cada una al mínimo y mire cuál se
 lleva el feed.
 
 El dinero de verdad pasa por Jiguang (聚光), la plataforma de pujas que hay
-detrás de los anuncios de búsqueda y de feed. Para los anunciantes
+detrás de [los anuncios de búsqueda y de feed](/es/analisis/xiaohongshu-advertising-formats-costs/). Para los anunciantes
 extranjeros, esa puerta cambió este año.
 
 > Desde el 2 de febrero de 2026, los comerciantes extranjeros ya no pueden
