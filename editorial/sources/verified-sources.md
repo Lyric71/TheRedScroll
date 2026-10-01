@@ -245,6 +245,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-08, re-fetched, unchanged
 - Re-verified 2026-09-24: re-fetched with curl for 04A, "境外地区账号暂只支持服务号类型" confirmed (check 1 and check 2, both 2026-09-24).
 - Used in: first-90-days-china-social-media, chinese-entity-social-media, china-social-media-package-includes
+- Re-verified 2026-09-29 for 04D: "境外主体可以注册1个账号" and "境外地区账号暂只支持服务号类型" confirmed at check 1 and check 2. Used in: food-beverage.
 - Notes: Registration is by company registration location on mp.weixin.qq.com; not every region has an option.
 
 ### WeChat Official Account verification review time, mainland entity
@@ -374,7 +375,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://m.163.com/dy/article/K1547S8705129QAF.html
 - Verified 1: 2026-09-14, fetched; both quotes confirmed, date and publisher confirmed
 - Verified 2: 2026-09-14, re-fetched before the draft was finished, unchanged
-- Used in: xiaohongshu-account-not-growing
+- Used in: xiaohongshu-account-not-growing, xiaohongshu-sensitive-words
+- Re-verified 2026-09-29 for 04C (check 1 and check 2): both quotes and 2025-06-03 confirmed.
 - Notes: The strongest dated source for "limiting traffic" being an official measure and for brands carrying a score. The scale of the brand score is not on this page. Self-media claims that the platform's official term is 流量异常 rather than 限流 were not confirmed anywhere; this page uses 限流.
 
 ### Xiaohongshu AI-hosted account announcement, March 2026: two tiers of treatment
@@ -394,7 +396,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://www.woshipm.com/share/6186730.html
 - Verified 1: 2026-09-14, fetched; all three descriptions confirmed, date confirmed
 - Verified 2: 2026-09-14, re-fetched before the draft was finished, unchanged
-- Used in: xiaohongshu-account-not-growing
+- Used in: xiaohongshu-account-not-growing, xiaohongshu-sensitive-words
+- Re-verified 2026-09-29 for 04C (check 1 and check 2): "笔记符合社区规范未达成", "帮助与客服", "笔记申诉" and 2025-03-03 confirmed.
 - Notes: Operations press, not platform documentation, used only to describe where the checks sit in the app. The same page says normal notes are indexed in about 10 minutes; NOT cited. The account appeal path (帮助与客服 > 账号申诉 > 开始检测) appears only on Zhihu and was not cited by path.
 
 ### Xiaohongshu appeal review time
@@ -404,7 +407,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://a.newrank.cn/trade/news/5940
 - Verified 1: 2026-09-14, fetched; sentence and date confirmed
 - Verified 2: 2026-09-14, re-fetched before the draft was finished, unchanged
-- Used in: xiaohongshu-account-not-growing
+- Used in: xiaohongshu-account-not-growing, xiaohongshu-sensitive-words
+- Re-verified 2026-09-29 for 04C (check 1 and check 2): "通常为1至3个工作日" and 2025-12-15 confirmed.
 - Notes: Trade-press statement, not a platform commitment. The same page says serious or repeated violations may not be restored and may not be appealable.
 
 ### Xiaohongshu creator data center: per-note diagnosis and traffic sources
@@ -425,6 +429,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 1: 2026-09-24, both fetched with curl; "服务号（认证用户、非认证用户），每个月（按自然月）可以开启4次【群发通知】", "公众号主页看到文章发表记录", "1个月（按自然月）内可群发4次消息" and "群发次数目前不支持增加" confirmed
 - Verified 2: 2026-09-24, re-fetched before the draft was finished, unchanged
 - Used in: china-social-media-package-includes
+- Re-verified 2026-09-29 for 04D: "每个月（按自然月）可以开启4次" confirmed at check 1 and check 2. Used in: food-beverage.
 - Notes: Pair with the "overseas entities: service account only" entry. Together they explain why a foreign brand's WeChat cadence is about one pushed article a week. Relevant to briefs 05B (WeChat Official Account setup) and 06C (open-rate benchmark).
 
 ### Xiaohongshu professional accounts: no WeChat ID or phone number in auto-replies, from January 7, 2025
@@ -434,7 +439,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://finance.sina.com.cn/tech/roll/2025-01-12/doc-ineerpnr4074384.shtml
 - Verified 1: 2026-09-24, fetched with curl; "今年1月7日起，小红书专业号后台自动回复组件及欢迎语话术里禁止出现联系微信及联系电话，只能使用社媒名片的方式导流" and "否则会被禁言" confirmed, date 2025年01月11日
 - Verified 2: 2026-09-24, re-fetched before the draft was finished, unchanged
-- Used in: china-social-media-package-includes
+- Used in: china-social-media-package-includes, xiaohongshu-sensitive-words
+- Re-verified 2026-09-29 for 04C (check 1 and check 2): rule sentence and 2025年01月11日 confirmed. Still older than 12 months; cited as a dated rule change.
 - Notes: Older than 12 months. Cite as a dated rule change ("Since January 7, 2025"), not as the current full DM policy. The mute consequence is a service provider's statement to the reporter, not a platform rule; attribute it that way. Recheck on reuse.
 
 ### Xiaohongshu Juguang feed ads: slots, labels, bid modes and one platform case
@@ -487,6 +493,64 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: xiaohongshu-advertising-formats-costs
 - Notes: Sanjieke is an online training company, not an agency. The article is course marketing and summarizes a platform deck it does not link. Use for tool definitions only.
 
+### Xiaohongshu trade-diversion rules in force March 12, 2025: what is banned, where purchases should go
+- Value: qualitative. Xiaohongshu's 交易导流违规管理细则 took effect on March 12, 2025. Banned: spreading personal or group contact details or other platforms' accounts or store information; steering users to view, add, give or exchange private-domain or third-party information; posting other platforms' links, codes, screenshots, watermarks, QR codes, mini programs; multi-account coordination to take users off platform. Purchases and service deals on the platform should use the Xiaohongshu store, the live-room cart and the official lead-capture component (官方留资组件). Penalties range up to temporary or permanent account bans. Applies to all users: merchants, buyers and others
+- As of: March 2025 (article dated 2025-03-12)
+- Source: Sanyi Shenghuo (三易生活), original report
+- URL: https://www.3elife.net/Art/internet/202503/12/101166.html
+- Verified 1: 2026-09-29, fetched with curl; "3月12日小红书《交易导流违规管理细则》", "传播个人/社群联系方式或其他平台的账号/店铺信息", "发布其他平台的链接、口令、截图、水印、二维码、小程序等" and "应使用小红书商城、直播间内购物车功能、官方留资组件等方式" confirmed, date 2025年03月12日
+- Verified 2: 2026-09-29, re-fetched twice before the draft was finished, unchanged
+- Used in: xiaohongshu-sensitive-words
+- Notes: Tech trade outlet, original copy. A fuller copy (Zhengguan News, 正观号 "电商观察家") lists penalty points (merchant violation points 10 to 25, account credit 0 to 12 per breach) but is user-uploaded self-media: not cited. 100ec.cn (网经社) has the story behind a JS challenge and could not be fetched. The platform's own notice sits on the 商业广告薯 account and the e-commerce learning centre, neither fetchable.
+
+### Xiaohongshu trade-diversion notice, November 2024: contact details listed, penalties
+- Value: qualitative. The 交易导流商业秩序治理规则公告 (published by the 商业广告薯 account in November 2024) lists directed contact details that may not be pushed, "如手机号、微信、电子邮箱、二维码、银行账号及其他付款方式等", plus third-party platform names and links; covered surfaces include profile pages, notes, comments, product details, store pages, physical parcels, promotion pages, chat tools, customer service, marketing SMS and livestreams; penalties include "限制笔记、直播、商品等曝光，或在搜索结果中不展现", content-posting limits, deposit deductions, store removal and account bans
+- As of: November 2024 (article dated 2024-11-08)
+- Source: Woshipm (人人都是产品经理), author Vic的营销思考 (赵子辰Vic)
+- URL: https://www.woshipm.com/share/6138360.html
+- Verified 1: 2026-09-29, fetched with curl; "交易导流商业秩序治理规则公告", the 定向联系方式 list with 银行账号及其他付款方式 and the exposure and search penalty confirmed, date 2024-11-08
+- Verified 2: 2026-09-29, re-fetched twice before the draft was finished, unchanged
+- Used in: xiaohongshu-sensitive-words
+- Notes: Operations press summarizing a platform notice; attribute it that way. The March 2025 细则 above is the later, fuller rule. Recheck after November 2026 (12 months).
+
+### Xiaohongshu Community Convention 2.0: structure and commerce section
+- Value: qualitative. Launched January 19, 2026; three sections (真诚分享, 友好互动, 有序经营) with 25 principles; the 有序经营 section opposes violating marketing, malicious competition, faked reputation and posing as an ordinary user; "如果你在创作中使用了AI辅助工具，请主动标明"; false-marketing exposure down 60% overall
+- As of: January 2026 (article dated 2026-01-19)
+- Source: Jiemian (界面新闻)
+- URL: https://www.jiemian.com/article/13902901.html
+- Verified 1: 2026-09-29, fetched with curl; "2026年1月19日，小红书上线《社区公约2.0》", "共分为“真诚分享”、“友好互动”和“有序经营”三个板块，共包含25条倡导", "着重对违规营销、恶意竞争、伪造口碑、伪装素人等涉及虚假的问题提出了明确反对", the AI-label sentence and "虚假营销内容曝光整体下降了60%" confirmed
+- Verified 2: 2026-09-29, re-fetched before the draft was finished, unchanged
+- Used in: none yet. Researched for xiaohongshu-sensitive-words; its blockquote was cut in the quality pass as redundant with the Southern Metropolis Daily entry. Logged for reuse
+- Notes: Complements the China Daily entry (same launch, enforcement volumes). Use this one for the structure and the AI-label principle.
+
+### Xiaohongshu content review: machine review plus human review (2020 description)
+- Value: qualitative. Xiaohongshu's head of security business (安全业务负责人 周达) described a "机器审核+人工审核+高展复合" mechanism for content safety, with machine review strengthened through Tencent's 天御 AI
+- As of: September 2020 (report dated 2020-09-11, CSS summit)
+- Source: GeekPark (极客公园)
+- URL: https://www.geekpark.net/news/265755
+- Verified 1: 2026-09-29, fetched with curl; "“机器审核+人工审核+高展复合”机制" and 2020/09/11 confirmed
+- Verified 2: 2026-09-29, re-fetched twice before the draft was finished, unchanged
+- Used in: xiaohongshu-sensitive-words
+- Notes: Six years old. Use for the mechanism only, dated inside the sentence, and say it is the most recent account on record. No fresher platform statement on review mechanics was found; claims of "机器初审+人工复核" as a 2026 rule appear only on Zhihu and agent posts. The same page's Q2 2020 governance figures are stale: do not cite.
+
+### Xiaohongshu notes limited without notice: Shenzhen News Network, December 2025
+- Value: qualitative. In December 2025 Shenzhen News Network (深圳新闻网) said a well-performing note on its Xiaohongshu account was blocked "无理由屏蔽，且未收到任何通知与违规说明", so it could not appeal or adjust in time
+- As of: January 2026 (article dated 2026-01-26)
+- Source: 21st Century Business Herald (21世纪经济报道)
+- URL: https://www.21jingji.com/article/20260126/herald/4cb81c4c08e1e67ccbb0ba87f5bfd1f7.html
+- Verified 1: 2026-09-29, fetched with curl; "一条数据表现较好的内容遭平台无理由屏蔽，且未收到任何通知与违规说明", "导致媒体无法第一时间申诉或调整内容" and "2025年12月份" confirmed, date 2026年01月26
+- Verified 2: 2026-09-29, re-fetched twice before the draft was finished, unchanged
+- Used in: xiaohongshu-sensitive-words
+- Notes: One case, reported as the outlet's complaint. Use it to show that organic limits can come without a reason, never as a rate. The same article also carries other platform figures and a 2025 Lijiang dispute; not used.
+
+### NOT LOGGED, searched and rejected 2026-09-29 (Xiaohongshu sensitive words)
+- An official Xiaohongshu banned-word list: none published. xiaohongshu.com/crown/community/rules and /convention render client-side and return an empty shell to curl. Lists on Zhihu, Yunyingpai (运营派), Qinggua (青瓜传媒) and agent blogs are unsourced compilations.
+- A regulator list of words "of the same or similar meaning" to 最佳: neither the SAMR guideline nor Beijing AMR's 2024 work guideline (beijing.gov.cn, 2024-03-20) and its Q&A names any. 04C labels 第一, 顶级, 极致, 唯一 as "our reading".
+- A 450,000-yuan fine over "最保暖" (a named down-jacket brand): only on a compliance vendor blog (byerisk.com). Not cited.
+- Review times ("minutes by machine, up to 24 hours by a person"): New Rank trade pages with no platform source. Not cited.
+- samr.gov.cn and the Hubei AMR repost of the absolute-terms guideline: HTTP 412 to automated fetches. Jinjiang's repost puts the text in an attachment. The Zhengzhou AMR page carries the full text and is the cited copy.
+- First-party moderated examples (brief 04C): none cleared. TODO left in the draft.
+
 ### NOT LOGGED, searched and rejected 2026-09-28 (Xiaohongshu ad formats and costs)
 - A platform-published Juguang minimum deposit or first recharge. Absent from all four platform PDFs; the help centre (ad.xiaohongshu.com/next_help/...) renders client-side and could not be fetched. 5,000 yuan and "500 to 3,000 yuan opening fee" figures trace to agents. Not cited as a platform figure.
 - A 100-yuan Juguang daily budget floor ("raised from 50 to 100 yuan"). Agent sites only (jingzhunhuoke). Rejected.
@@ -495,6 +559,16 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Cost per lead by objective. No dated published average; practitioner posts use assumed figures (50 or 100 yuan per DM opener). Rejected.
 - Pugongying content heating (内容加热) caps, 5,000 yuan or 50,000 impressions (Niaoge Biji, 2022-12-22). A closed beta; too old. Rejected.
 - Xiaohongshu 2025 ad revenue (32 billion yuan, 76% of revenue). 36Kr, second-hand from investor sources. Not needed, not logged.
+
+### Xiaohongshu Community Norms: notes that copy brand copy, contact details, high-risk selling, detection and penalties
+- Value: qualitative. 4.1.4 lists as content the platform does not encourage notes that 过分参照商家指引或使用过多官方宣传语句 (follow merchant guidance too closely or use too many official promotional lines); 3.2 bans diversion to a person (手机号、微信号、邮箱、地址) or another platform (网址链接、二维码、水印); 3.1.3 high-risk selling such as 医美整形、医疗器械; 3.1.4 代购、转卖、拼单; 6.1 violations are found by 人工排查 or by the 算法系统 catching abnormal data; 6.2 measures include 限制展示范围, 禁止展示, 账号禁言, 账号封禁; appeals via APP-帮助与客服-笔记/账号申诉
+- As of: updated 2021-12-17, in force 2021-12-24 (the version the platform serves in September 2026)
+- Source: Xiaohongshu (小红书), Community Norms (小红书社区规范)
+- URL: https://agree.xiaohongshu.com/h5/terms/ZXXY20221213003/-1
+- Verified 1: 2026-09-29, text read from the page's content API (POST https://oacontract.xiaohongshu.com/oacontract/v1/contract/findContractContent?id=-1&contractNo=ZXXY20221213003), because the page renders client-side; all strings above and both dates confirmed
+- Verified 2: 2026-09-29, API re-fetched before the draft was finished (two timeouts, third attempt complete), "更新时间：2021年12月17日" and the 4.1.4 string unchanged
+- Used in: food-beverage
+- Notes: Platform's own rules page, but dated 2021: say "updated December 2021" in the citation. Community Convention 2.0 (January 2026, see the China Daily entry) sits above these norms and does not replace them. Relevant to 04C (sensitive words) as well.
 
 ## Regulatory and legal
 
@@ -546,7 +620,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://www.gov.cn/zhengce/content/2020-06/29/content_5522593.htm
 - Verified 1: 2026-09-10, fetched, "化妆品的功效宣称应当有充分的科学依据……在国务院药品监督管理部门规定的专门网站公布功效宣称所依据的……摘要，接受社会监督" confirmed
 - Verified 2: 2026-09-10, re-fetched, unchanged
-- Used in: beauty-skincare
+- Used in: beauty-skincare, xiaohongshu-sensitive-words
+- Re-verified 2026-09-29 for 04C (check 1 and check 2): "化妆品的功效宣称应当有充分的科学依据" and "公布功效宣称所依据的" confirmed. New for 04C, same page, Article 43: "化妆品广告不得明示或者暗示产品具有医疗作用，不得含有虚假或者引人误解的内容" (cosmetics ads may not state or imply a medical effect); cited in 04C as Order 727, Article 43, in force January 2021.
 - Notes: Article 37 on the same page bans labels that state or imply a medical effect, or that are false or misleading.
 
 ### Cosmetic Efficacy Claim Evaluation Specification, effective date
@@ -566,7 +641,9 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://www.gov.cn/guoqing/2021-10/29/content_5647620.htm
 - Verified 1: 2026-09-10, fetched, all four articles read verbatim in Chinese
 - Verified 2: 2026-09-10, re-fetched, unchanged
-- Used in: beauty-skincare
+- Used in: beauty-skincare, xiaohongshu-sensitive-words
+- Re-verified 2026-09-29 for 04C (check 1 and check 2): page re-fetched three times with curl; new strings for 04C: Art. 9(1) "使用或者变相使用中华人民共和国的国旗、国歌、国徽，军旗、军歌、军徽", Art. 13 "广告不得贬低其他生产经营者的商品或者服务", Art. 16 "表示功效、安全性的断言或者保证" and "说明治愈率或者有效率", Art. 18 "保健食品广告不得含有下列内容：（一）表示功效、安全性的断言或者保证；（二）涉及疾病预防、治疗功能", Art. 25 "应当对可能存在的风险以及风险责任承担有合理提示或者警示" and "明示或者暗示保本、无风险或者保收益等", plus Arts. 9, 17 and 57 as logged. **Date correction:** the page header gives the text as revised 2015-04-24 and amended "根据2018年10月26日……修正"; it shows no 2021 amendment. 04C cites "as amended October 2018". Earlier articles that say "as amended 2021" cite the right articles, but the date on this page is October 2018; align them on their next edit.
+- Re-verified 2026-09-29 for 04D (food-beverage): Art. 9(3) and Art. 17 strings confirmed at check 1 and check 2; Art. 18 health-food string (保健食品广告应当显著标明“本品不能代替药物”) also confirmed. Used in: food-beverage.
 - Notes: Article 14 (ads must be identifiable, no ads disguised as news) and Article 28 (false or misleading content is false advertising) are on the same page and are the general form of the Order 72 rule below.
 
 ### Internet Advertising Measures: seeding notes with a purchase link are advertising
@@ -576,8 +653,79 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://www.gov.cn/gongbao/2023/issue_10506/202306/content_6885261.html
 - Verified 1: 2026-09-10, fetched, "通过知识介绍、体验分享、消费测评等形式推销商品或者服务，并附加购物链接等购买方式的，广告发布者应当显著标明“广告”" and Article 19 confirmed
 - Verified 2: 2026-09-10, re-fetched, unchanged
-- Used in: beauty-skincare, xiaohongshu-algorithm, fashion-apparel
+- Used in: beauty-skincare, xiaohongshu-algorithm, fashion-apparel, xiaohongshu-sensitive-words
+- Re-verified 2026-09-29 for 04C (check 1 and check 2): "通过知识介绍、体验分享、消费测评等形式推销商品或者服务，并附加购物链接等购买方式的，广告发布者应当显著标明“广告”" and "2023年5月1日起施行" confirmed.
 - Notes: This is the rule behind Xiaohongshu's Pugongying declaration requirement. Article 8 on the same page bans disguised health and wellness content for medical, drug, device and health-food products.
+
+### SAMR enforcement guideline on absolute terms in advertising (2023): scope, carve-outs, leniency
+- Value: qualitative. Covers 国家级, 最高级, 最佳 "以及与其含义相同或者近似的其他用语" (point 2). Not applicable when the term only states service attitude, business philosophy, culture or wishes, or a goal (point 5); or, with no misleading or disparaging effect, when it compares products within one brand, gives usage, timing or storage tips, is a graded term under a national, industry or local standard with a stated basis, is part of a product name, model, trademark or patent, is an official award or title, or states a fact limited by time or place such as sales, revenue or market share (point 6). Claims the advertiser cannot prove are punished (point 7). A first use with minor harm, promptly corrected, may go unpunished (point 9). Generally not minor: efficacy, cure-rate or effective-rate absolutes in medical, medical aesthetics, drug, device, health food and special medical food ads; return or safety absolutes in investment ads; outcome absolutes in education and training ads (point 11)
+- As of: guideline announced 2023-02-25 (SAMR Announcement 2023 No. 6); Zhengzhou repost dated 2023-03-21
+- Source: State Administration for Market Regulation (市场监管总局), 广告绝对化用语执法指南, full text via Zhengzhou Administration for Market Regulation (郑州市市场监督管理局)
+- URL: https://amr.zhengzhou.gov.cn/xwfb/7013209.jhtml
+- Verified 1: 2026-09-29, fetched with curl; "市场监管总局2023年2月25日", "与其含义相同或者近似的其他用语", "仅表明商品经营者的服务态度或者经营理念、企业文化、主观愿望的", "仅用于对同一品牌或同一企业商品进行自我比较的", the point 6(6) time-and-place sentence, "广告主无法证明其真实性的，依照《广告法》有关规定予以查处", "初次在广告中使用绝对化用语，危害后果轻微并及时改正的,可以不予行政处罚" and the point 11(1) sentence confirmed
+- Verified 2: 2026-09-29, re-fetched twice before the draft was finished, all strings unchanged
+- Used in: xiaohongshu-sensitive-words
+- Notes: A government page reposting the SAMR text; the SAMR site itself blocks automated fetches (HTTP 412). Relevant to every beauty, supplement and food brief. Beijing AMR's 2024 work guideline adds local detail on "first offense" (no same-type violation in two years): beijing.gov.cn/zhengce/zhengcefagui/202406/t20240604_3704098.html (fetched 2026-09-29, not cited).
+
+### Advertising Law enforcement cases: Hangzhou nut shop and a 780-yuan health-claim fine
+- Value: a Hangzhou roast-nut shop advertising "杭州最优炒货店" faced a 200,000-yuan fine notice in January 2016; the court cut it to 100,000 yuan (upheld on appeal 2018-09-14). A small food business was fined 200,000 yuan for health-effect claims on a product whose sales before the case totaled 780 yuan (Beijing Chaoyang court judgment, 2022-07-29). Also: "professional reporters" (专业举报人) push regulators to act
+- As of: March 2023 (article dated 2023-03-24)
+- Source: Caijing (财经), 财经E法, reporter 张剑
+- URL: https://www.mycaijing.com/article/detail/488674
+- Verified 1: 2026-09-29, fetched with curl; "杭州最优炒货店", "面临20万元罚款", "对方林富罚款10万元", "罚款20万元，而这款食品的自上架到被查处，销售额仅780元" and "专业举报人" confirmed, date 2023年03月24日
+- Verified 2: 2026-09-29, re-fetched twice before the draft was finished, unchanged
+- Used in: xiaohongshu-sensitive-words
+- Notes: Both cases predate the 2023 guideline; say so if the point is current enforcement. Do not name the shop owner in copy.
+
+### CAC content governance rules: illegal and harmful content, platform review duty
+- Value: qualitative. Content producers must not publish illegal information (Art. 6: against constitutional principles; harming national security; harming national honor and interests; defaming heroes and martyrs; terrorism; ethnic hatred; religious policy and superstition; rumors; obscenity, gambling, violence; insult and defamation) and must resist harmful information (Art. 7: exaggerated titles that do not match the content; hyping scandals; improper comment on natural disasters and major accidents; sexual innuendo; gore; discrimination; vulgarity; content that leads minors to unsafe imitation). Platforms must run post review, comment review, real-time patrols and emergency handling (Art. 9) and act at once on Art. 6 and 7 content (Art. 10)
+- As of: published 2019-12-15, in force 2020-03-01
+- Source: Cyberspace Administration of China (国家互联网信息办公室), Provisions on the Governance of the Online Information Content Ecosystem (网络信息内容生态治理规定), Order 5, via the State Council Gazette 2020 No. 8
+- URL: https://www.gov.cn/gongbao/content/2020/content_5492511.htm
+- Verified 1: 2026-09-29, fetched with curl; eleven strings from Arts. 6, 7, 9 and 10 plus "2020年3月1日起施行" confirmed
+- Verified 2: 2026-09-29, re-fetched twice before the draft was finished, unchanged
+- Used in: xiaohongshu-sensitive-words
+- Notes: Cite the categories, never a list of political words. CAC's own copy is at https://www.cac.gov.cn/2019-12/20/c_1578375159509309.htm (not fetched).
+
+### Price comparison and price fraud rules: the seven-day comparison-price rule
+- Value: a comparison price shown without details must not exceed the seller's lowest transaction price in the same venue in the seven days before the comparison (Art. 16); no false discounts or price comparisons (Art. 19(3)); no inflating the list price just before a discount (Art. 17); online sellers may not show a lower headline price than the detail page (Art. 20)
+- As of: published 2022-04-14, in force 2022-07-01
+- Source: State Administration for Market Regulation (国家市场监督管理总局), Provisions on Clearly Marked Prices and Prohibition of Price Fraud (明码标价和禁止价格欺诈规定), Order 56, via the State Council Gazette 2022 No. 19
+- URL: https://www.gov.cn/gongbao/content/2022/content_5699926.htm
+- Verified 1: 2026-09-29, fetched with curl; "被比较价格应当不高于该经营者在同一经营场所进行价格比较前七日内的最低成交价格", "通过虚假折价、减价或者价格比较等方式销售商品或者提供服务" and "2022年7月1日起施行" confirmed
+- Verified 2: 2026-09-29, re-fetched twice before the draft was finished, unchanged
+- Used in: xiaohongshu-sensitive-words
+- Notes: Relevant to the Double 11 briefs (08D, 10D) and any cost or promotion piece.
+
+### Imported prepackaged food: Chinese label required, or no import; food ads may not claim disease prevention or treatment
+- Value: Article 97: imported prepackaged food and additives must carry a Chinese label (and a Chinese manual where required) stating origin and the name, address and contact of the domestic agent; without it, "不得进口". Article 73: food ads must be true and lawful and "不得涉及疾病预防、治疗功能"
+- As of: Food Safety Law as amended 2025-09-12 (third amendment)
+- Source: Food Safety Law of the People's Republic of China (中华人民共和国食品安全法), via the Ministry of Commerce law database (商务部 中国商务法规, from the National Laws and Regulations Database)
+- URL: https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=104105
+- Verified 1: 2026-09-29, fetched with curl, Article 97 and Article 73 read verbatim, amendment date 2025年9月12日 confirmed
+- Verified 2: 2026-09-29, re-fetched before the draft was finished, all strings unchanged
+- Used in: food-beverage
+- Notes: npc.gov.cn copies are the 2018 and 2021 texts; this is the current one. Article numbers unchanged by the 2025 amendment for 73 and 97.
+
+### Ordinary food cannot claim to treat disease or claim health functions; blue hat for health food
+- Value: ordinary food is not medicine; claims such as "散结节、降尿酸" break Advertising Law Art. 17 and Food Safety Law Art. 73; Food Safety Law Implementing Regulation Art. 38: foods other than health food "不得声称具有保健功能", examples "增免疫、润肠道，先要看看小蓝帽"; cited data needs a source (Advertising Law Art. 11)
+- As of: October 2025 (page dated 2025-10-21)
+- Source: Beijing Administration for Market Regulation (北京市市场监督管理局), 普通食品广告别"翻车"！这些合规红线要记牢
+- URL: https://scjgj.beijing.gov.cn/zwxx/scjgdt/202510/t20251021_4234743.html
+- Verified 1: 2026-09-29, fetched with curl, all strings and the date confirmed
+- Verified 2: 2026-09-29, re-fetched before the draft was finished, unchanged
+- Used in: food-beverage
+- Notes: Regulator guidance page, not the regulation itself; the regulation text (Implementing Regulation Art. 38) is quoted on the page. Page text is short; the illustrations are images.
+
+### GB 7718-2025 prepackaged food labeling standard: in force March 16, 2027; "zero added" wording banned
+- Value: GB 7718-2025 takes effect 2027-03-16 after a two-year transition; "零添加""不添加""不使用" on packs "新国标实施后将被明令禁止"; production date and expiry date in a separate area; eight allergen groups must be emphasized
+- As of: May 2026 (page dated 2026-05-07)
+- Source: Beijing Administration for Market Regulation (北京市市场监督管理局), 找不到生产日期？食品标签要"变脸"！新规这些重点必看
+- URL: https://scjgj.beijing.gov.cn/zwxx/scjgdt/202605/t20260507_4639154.html
+- Verified 1: 2026-09-29, fetched with curl, "2027年3月16日起正式实施" and the zero-added sentence confirmed, date confirmed
+- Verified 2: 2026-09-29, re-fetched before the draft was finished, unchanged
+- Used in: food-beverage
+- Notes: The page gives the publication date as 2025-03-16; search summaries say 2025-03-27. Only the in-force date is cited. The customs standards page (jckspj.customs.gov.cn) returns HTTP 412 to automated fetches. Recheck after March 2027.
 
 ## Market and industry
 
@@ -705,6 +853,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 1: 2026-09-15, fetched, "过去一年（2024年8月-2025年7月）抖音电商GMV同比增长34%" and "货架电商GMV同比增长49%" confirmed
 - Verified 2: 2026-09-15, re-fetched with curl, both strings confirmed
 - Used in: fashion-apparel
+- Re-verified 2026-09-29 for 04D: both strings confirmed at check 1 and check 2. Used in: food-beverage.
 - Notes: Platform-disclosed growth rate reported by a dated trade outlet. No absolute GMV on the page; do not pair with third-party GMV estimates as if they were disclosed.
 
 ### China live commerce transaction scale and users, 2025
@@ -775,6 +924,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 1: 2026-09-15, fetched, "16950亿元，同比增长14.2%" and "运动户外、美妆、服饰的爆发系数位居前三" confirmed
 - Verified 2: 2026-09-15, re-fetched with curl, both strings confirmed
 - Used in: fashion-apparel
+- Re-verified 2026-09-29 for 04D: "16950亿元，同比增长14.2%" confirmed at check 1 and check 2. Used in: food-beverage.
 - Notes: Syntun is a third-party data house; the comparison windows differ by a week between years, as the article states. The per-platform category growth rates on the page (JD apparel +20.6%, Kuaishou apparel -5.4%) were not used.
 
 ### Xingtu client bill: three named fee lines and the platform service fee
@@ -894,7 +1044,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://fe-video-qc.xhscdn.com/fe-platform/cc8a5f81ddb6d91d6be9dfb34e62b49b999f234b/%E8%81%9A%E5%85%89%E5%B9%B3%E5%8F%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%BC%80%E6%88%B7%E6%B5%81%E7%A8%8B.pdf
 - Verified 1: 2026-09-18, downloaded (HTTP 200, 928,035 bytes) and extracted; "境内企业上传营业执照，境外企业上传BR/CR", "若为香港公司，则BR和CR都需要", "公司注册文件如不是中文，需提供中文翻译件并加盖品牌方公章", "行业类别：选择行业时须与资质文件中经营范围保持一致", "账号名称一般为公司名称、店铺名称", "头像须为品牌logo，请勿包含人像", "商标注册证不可过期", "申请时间需届满三个月", "认证最多接受一级总代授权" and "若主体为网站，需上传工信部备案截图" all confirmed
 - Verified 2: 2026-09-18, re-downloaded and re-extracted, unchanged, all ten strings re-confirmed
-- Used in: xiaohongshu-business-account-setup, xiaohongshu-advertising-formats-costs
+- Used in: xiaohongshu-business-account-setup, xiaohongshu-advertising-formats-costs, xiaohongshu-sensitive-words
+- Re-verified 2026-09-29 for 04C (check 1 and check 2): PDF re-downloaded three times (HTTP 200, 928,035 bytes); new strings "提交物料并审核，审核后则可开始投放广告", "若审核不通过，请根据审核意见修改，并再次提交审核请求" and "需符合广告法及其他法律法规" confirmed. 04C uses it inline (no blockquote) for "rejected Juguang creative comes back with review comments".
 - Re-verified 2026-09-28 for 04B: "当前账号暂未开通广告投放相关功能", "【广告主账号】或【代理商账号】", "前往合作伙伴平台完成入驻流程" and "境内企业上传营业执照，境外企业上传BR/CR" confirmed (check 1 and check 2). File creation date in the PDF metadata: 2022-05-01, cited as May 2022. Precision: 代理商账号 is the sign-up path for agencies themselves (they go on to the partner platform), not an option an advertiser picks to be served by an agency.
 - Notes: **Two different translation stamps, do not conflate them.** Account verification wants a translation stamped by a translation company (see the eligibility entry above); ad qualification wants the registration document translation stamped with the brand owner's own seal. This document predates the February 2026 invitation-only rule for overseas advertisers (see the Jiguang overseas entry above), so it describes the document set, not current self-serve access. Use both together.
 
@@ -1065,6 +1216,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 1: 2026-09-22, fetched, "微信及WeChat合并月活跃账户数已达14.18亿" and the 2% year on year figure confirmed, page dated 2026-03-18
 - Verified 2: 2026-09-22, re-fetched with curl, "14.18亿" confirmed unchanged
 - Used in: camper-china-teardown
+- Re-verified 2026-09-29 for 04D: "14.18亿" confirmed at check 1 and check 2. Used in: food-beverage.
 - Notes: Corroborated same day on China Fund News (中国基金报), 2026-03-18, https://www.chnfund.com/article/AR1231fcdd-25ff-01cd-2836-3a2015e46b1d ("微信及WeChat合并月活跃用户数进一步增长至14.18亿"). Tencent's own IR announcement was not fetchable directly; both cited pages attribute the figure to the results release. Supersedes the 13.85 billion-era figures from the 2024 annual report; recheck after Tencent's 2026 annual results in March 2027.
 
 ### Weibo monthly and daily active users, end of Q4 2025
@@ -1120,6 +1272,42 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Long Advisory KOL fee ranges (entries above) deliberately not used: an English-language consultancy selling China marketing advice is close enough to a competitor that the Xingtu platform fee was preferred as the sourced influencer cost.
 - First-party community figures (care hours per month, comment or DM reply-time target, revision rounds, approval turnaround). Not published anywhere on the site. Brief 04A asked for them; cut with a TODO marker. See the first-party section.
 
+### China food imports, 2025: total and from Europe
+- Value: China imported 1,254.4 hundred million US dollars (125.44 billion) of food in 2025, down 0.6%; from Europe 240.5 hundred million (24.05 billion), down 6.3%; from Oceania 190.8 hundred million, up 9.5%; top suppliers Brazil, Thailand, Australia
+- As of: full year 2025 (December 2025 report; PDF created 2026-03-23)
+- Source: Ministry of Commerce (商务部) and China Chamber of Commerce for Import and Export of Foodstuffs (中国食品土畜进出口商会), China Import and Export Monthly Statistical Report: Food, December 2025 (中国进出口月度统计报告 食品 2025年12月)
+- URL: http://wms.mofcom.gov.cn/ncp/shipin_202512.pdf
+- Verified 1: 2026-09-29, PDF downloaded with curl, text extracted with PyMuPDF, "2025年，中国进口食品金额1,254.4亿美元，同比下降0.6%" and the Europe line confirmed
+- Verified 2: 2026-09-29, re-downloaded before the draft was finished, both strings unchanged
+- Used in: food-beverage
+- Notes: Customs-based trade statistics compiled by MOFCOM and CCCFNA. "Food" here is the report's own category; do not compare it with the broader agricultural products total. The fetch needs a 60-second timeout.
+
+### China catering revenue and food retail growth, 2025
+- Value: catering revenue 57,982 hundred million yuan (about 5.8 trillion) in 2025, up 3.2%; retail sales of grain, oil and food at units above designated size up 9.3%, beverages up 1.0%
+- As of: full year 2025 (communique dated 2026-02-28)
+- Source: National Bureau of Statistics of China (国家统计局), 2025 Statistical Communique (2025年国民经济和社会发展统计公报)
+- URL: https://www.stats.gov.cn/sj/zxfbhjd/202602/t20260228_1962662.html
+- Verified 1: 2026-09-29, fetched with curl, "餐饮收入57982亿元，增长3.2%" and "粮油、食品类零售额比上年增长9.3%，饮料类增长1.0%" confirmed
+- Verified 2: 2026-09-29, re-fetched before the draft was finished, unchanged
+- Used in: food-beverage
+- Notes: Same communique as the fashion-apparel clothing entry, different URL path (zxfbhjd, not zxfb); both resolve. "Units above designated size" glossed as "larger retailers".
+
+### Xiaohongshu clean eating topic views, 2025
+- Value: the #干净饮食 (clean eating) topic passed 1.4 billion views ("浏览量达14亿+"); "干净" entered the top 100 food note keywords
+- As of: first three quarters of 2025 (article dated 2025-11-26)
+- Source: Qiangua Data (千瓜数据) with First Food Information (第一食品资讯), 2025 food and drink seeding report (Xiaohongshu), reported by TopMarketing
+- URL: https://www.itopmarketing.com/info21430
+- Verified 1: 2026-09-29, fetched with curl, "热门话题#干净饮食浏览量达14亿+" and the date confirmed
+- Verified 2: 2026-09-29, re-fetched before the draft was finished, unchanged
+- Used in: food-beverage
+- Notes: Third-party data house, attribute as such. The same page's "food audience 150 million+" is credited to unnamed Xiaohongshu public data; NOT cited (chain-cited, original not found).
+
+### NOT LOGGED, searched and rejected 2026-09-29 (Food and beverage marketing)
+- Xiaohongshu "food audience 150 million+" (食品行业人群1.5亿+): Qiangua credits "2025年小红书官方公开数据" with no link. Original not found. Not cited.
+- Douyin food GMV "380 billion yuan, +62% in 2025": bxtdata.com data-vendor page only, no methodology. Rejected.
+- "Recipe tutorials are the most searched food content" and "half of young people learn recipes on Xiaohongshu": self-media and vendor copy (Sina 2021 column, Qiangua). Rejected.
+- China Customs annual press pages and the customs GB 7718-2025 page: HTTP 412 to automated fetches. MOFCOM and Beijing AMR used instead.
+
 ## TheRedScroll first-party data
 
 Everything here comes from accounts we run. It is cited as ours, with sample
@@ -1154,6 +1342,7 @@ data.
 - Verified 1: 2026-09-24, live /pricing/ fetched with curl, every deliverable string matched to the source file
 - Verified 2: 2026-09-24, re-fetched before the draft was finished, all 17 strings still present
 - Used in: china-social-media-package-includes
+- Re-verified 2026-09-29 for 04D on the live /pricing/ page: scope lines, "6-month minimum contract on all packages", "within 2 weeks of contract signing", "Real-life photo & video shoots in China", "KOL & KOC campaigns" and "Paid directly to the platform, not through us" confirmed at check 1 and check 2. No price or tier name used. Used in: food-beverage.
 - Notes: Cite as "TheRedScroll pricing page, September 2026, https://www.theredscroll.com/pricing/". If the pricing page changes, 04A must change with it.
 
 ### TheRedScroll community, reporting and account-ownership commitments, as published
@@ -1222,9 +1411,9 @@ data.
 | Marriott | outcomes to confirm | 05D | pending |
 | Jaguar Land Rover | outcomes to confirm | 09D | pending |
 | JAC Motors | outcomes to confirm | 09D | pending |
-| Langnese | outcomes to confirm | 04D | pending |
-| Master Martini | outcomes to confirm | 04D | pending |
-| Mission Foods | outcomes to confirm | 04D | pending |
+| Langnese | outcomes to confirm | 04D | pending. 04D (drafted 2026-09-29) uses NO figure: the live /work/ page publishes none. Only published qualitative lines are quoted, with TODO: client sign-off markers. The page line "domestic brands cost half as much" is used as our research finding. |
+| Master Martini | outcomes to confirm | 04D | pending. 04D (drafted 2026-09-29) uses NO figure: the live /work/ page publishes none. Only published qualitative lines are quoted, with TODO: client sign-off markers. Note: the work ran on Instagram and Facebook in Malaysia, Hong Kong, Singapore, Indonesia and Thailand, not in mainland China; 04D says so. |
+| Mission Foods | outcomes to confirm | 04D | pending. 04D (drafted 2026-09-29) uses NO figure: the live /work/ page publishes none. Only published qualitative lines are quoted, with TODO: client sign-off markers. |
 
 Do not publish a client figure marked pending. Leave
 `TODO: client sign-off` in the draft and flag it in the run log.

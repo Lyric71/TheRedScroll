@@ -192,7 +192,7 @@ Pour une marque étrangère, payer directement un créateur hors plateforme cons
 > Source : Niaoge Biji (鸟哥笔记), octobre 2022.
 > https://www.niaogebiji.com/article-482538-1.html
 
-À ces règles s’ajoutent les obligations chinoises d’identification de la publicité.
+À ces règles s’ajoutent les [obligations chinoises d’identification de la publicité](/fr/decryptages/xiaohongshu-sensitive-words/).
 
 > Un contenu qui promeut un produit par le partage de connaissances,
 > d’expérience ou un avis, et qui comporte un lien d’achat, est une publicité.

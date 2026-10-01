@@ -190,7 +190,7 @@ Wer als ausländische Marke Creator außerhalb der Plattform bezahlt, geht ein h
 > Quelle: Niaoge Biji (鸟哥笔记), Oktober 2022.
 > https://www.niaogebiji.com/article-482538-1.html
 
-Daneben gelten die gesetzlichen Vorgaben zur Kennzeichnung von Werbung in China.
+Daneben gelten die [gesetzlichen Vorgaben zur Kennzeichnung von Werbung in China](/de/analysen/xiaohongshu-sensitive-words/).
 
 > Wer Produkte durch Wissensvermittlung, Erfahrungsberichte oder Tests
 > bewirbt und einen Kauflink beifügt, muss den Inhalt deutlich als Werbung

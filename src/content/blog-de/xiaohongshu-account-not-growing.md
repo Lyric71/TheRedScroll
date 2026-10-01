@@ -127,7 +127,7 @@ Zwei Punkte sind für eine ausländische Marke wichtig. Die Drosselung der Reich
 | Das Konto drosseln | Jeder neue Beitrag flach, ältere bleiben stabil | Ein Muster über mehrere Beiträge oder Kommentare |
 | Kommerzielle Rechte entziehen | Pugongying-Bestellungen (蒲公英) gehen nicht mehr durch | Nicht gemeldete bezahlte Arbeit, oder ein bezahlter Creator wurde erwischt |
 | Markenpunkte abziehen | Eine Mitteilung an die Marke | Der Beitrag eines Creators über Sie wurde sanktioniert |
-| Einen Beitrag entfernen | Der Beitrag ist weg, eine Mitteilung trifft ein | Eine Aussage, ein Bild oder ein Link hat gegen eine Regel verstoßen |
+| Einen Beitrag entfernen | Der Beitrag ist weg, eine Mitteilung trifft ein | [Eine Aussage, ein Bild oder ein Link hat gegen eine Regel verstoßen](/de/analysen/xiaohongshu-sensitive-words/) |
 | Das Konto sperren | Das Konto kann nicht mehr veröffentlichen oder ist verschwunden | Schwerer oder wiederholter Verstoß |
 
 Nichts in dieser Stufenfolge verspricht Ihnen einen Anruf. Was die Plattform beschreibt, ist ein abgestuftes System mit Vorwarnung und Einspruch, und sie sagt das seit der Handelsvereinbarung von 2022, die es eingeführt hat.

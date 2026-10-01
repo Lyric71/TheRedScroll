@@ -160,7 +160,7 @@ featuredImage: "/images/blog/xiaohongshu-algorithm.webp"
 > 来源：鸟哥笔记，2022年10月。
 > https://www.niaogebiji.com/article-482538-1.html
 
-此外，广告的标识还有监管要求。
+此外，[广告的标识还有监管要求](/zh/guandian/xiaohongshu-sensitive-words/)。
 
 > 以知识介绍、体验分享、消费测评等形式推销商品或服务，并附加购物链接的，应显著标明“广告”。
 > 来源：国家市场监督管理总局《互联网广告管理办法》第九条，2023年5月起施行。

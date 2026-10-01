@@ -251,7 +251,7 @@ own creator marketplace, and the fee is public.
 > Source: Niaoge Biji (鸟哥笔记), October 2022.
 > https://www.niaogebiji.com/article-482538-1.html
 
-Chinese advertising rules point the same way.
+[Chinese advertising rules](/insights/xiaohongshu-sensitive-words/) point the same way.
 
 > Content that promotes a product through knowledge sharing, experience
 > sharing or a product review and attaches a purchase link is advertising,

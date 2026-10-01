@@ -128,7 +128,7 @@ Deux éléments comptent ici pour une marque étrangère. La limitation du trafi
 | Limiter le compte | Toutes les nouvelles notes stagnent, les anciennes tiennent | Une répétition, dans les notes ou dans les commentaires |
 | Retirer les droits commerciaux | Les commandes Pugongying (蒲公英) ne passent plus | Collaboration payante non déclarée, ou créateur rémunéré pris en faute |
 | Retirer des points de score de marque | Un avis adressé à la marque | Une note publiée à votre sujet par un créateur a été sanctionnée |
-| Supprimer une note | La note disparaît, un avis arrive | Une allégation, une image ou un lien a enfreint une règle |
+| Supprimer une note | La note disparaît, un avis arrive | [Une allégation, une image ou un lien a enfreint une règle](/fr/decryptages/xiaohongshu-sensitive-words/) |
 | Bannir le compte | Le compte ne peut plus publier, ou disparaît | Infraction grave ou répétée |
 
 Rien dans cette échelle ne vous promet un coup de téléphone. Ce que la plateforme décrit, en revanche, c’est un système graduel, avec un rappel préalable et une voie de recours, et elle le dit depuis la convention commerciale de 2022 qui l’a instauré.

@@ -190,7 +190,7 @@ Pagar a creadores fuera de la plataforma es un riesgo frecuente entre las marcas
 > Fuente: Niaoge Biji (鸟哥笔记), octubre de 2022.
 > https://www.niaogebiji.com/article-482538-1.html
 
-A las reglas de la plataforma se añaden las obligaciones legales de identificar la publicidad en China.
+A las reglas de la plataforma se añaden las [obligaciones legales de identificar la publicidad en China](/es/analisis/xiaohongshu-sensitive-words/).
 
 > El contenido que promociona productos mediante conocimientos, experiencias
 > o reseñas y adjunta un enlace de compra debe identificarse de forma

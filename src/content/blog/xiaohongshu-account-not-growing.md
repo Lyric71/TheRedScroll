@@ -165,7 +165,7 @@ the note.
 | Limit the account | Every new note flat, older notes still steady | A pattern across notes or comments |
 | Cancel commercial rights | Pugongying (蒲公英) orders stop going through | Undeclared paid work, or a creator you paid was caught |
 | Deduct brand score | A notice to the brand | A creator's note about you was actioned |
-| Take a note down | The note is gone and a notice arrives | A claim, image or link broke a rule |
+| Take a note down | The note is gone and a notice arrives | [A claim, image or link broke a rule](/insights/xiaohongshu-sensitive-words/) |
 | Ban the account | The account cannot post or is gone | Serious or repeated breach |
 
 Nothing in that ladder promises you a phone call. What the platform does

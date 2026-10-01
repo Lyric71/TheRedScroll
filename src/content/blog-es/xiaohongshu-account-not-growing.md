@@ -127,7 +127,7 @@ Ahí hay dos cosas que importan a una marca extranjera. Limitar el tráfico es u
 | Limitar la cuenta | Todas las notas nuevas planas, las antiguas estables | Un patrón repetido en notas o comentarios |
 | Retirar los derechos comerciales | Los pedidos de Pugongying (蒲公英) dejan de pasar | Trabajo pagado sin declarar, o un creador pagado al que pillaron |
 | Descontar puntos de marca | Un aviso dirigido a la marca | Se actuó contra la nota de un creador sobre usted |
-| Retirar una nota | La nota desaparece y llega un aviso | Una afirmación, una imagen o un enlace incumplió una norma |
+| Retirar una nota | La nota desaparece y llega un aviso | [Una afirmación, una imagen o un enlace incumplió una norma](/es/analisis/xiaohongshu-sensitive-words/) |
 | Bloquear la cuenta | La cuenta no puede publicar o ha desaparecido | Incumplimiento grave o repetido |
 
 Nada en esa escala le promete una llamada de teléfono. Lo que sí describe la plataforma es un sistema gradual, con aviso previo y vía de recurso, y lo viene diciendo desde el convenio comercial de 2022 que lo estableció.
