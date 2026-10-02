@@ -4,6 +4,7 @@ description: "There are three models, and this is how agencies in China actually
 metaTitle: "How China Agencies Bill You: 3 Models"
 metaDescription: "Retainer, project fee and fixed price compared for China marketing. Where each one leaks, how ad spend markups work, and the clauses to read first."
 publishDate: 2026-09-21
+updatedDate: 2026-10-02
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "Strategy"
@@ -26,7 +27,7 @@ pick, one thing decides more money than the model does: whose name is on the
 ad account, and who keeps the rebate the platform pays on your spend. The
 paragraphs on where your ad money goes have the contract language.
 
-Every source below was checked twice in September 2026.
+Every source below was checked twice, in September or October 2026.
 
 ## China marketing agency pricing: who carries the risk
 
@@ -117,7 +118,7 @@ The third one is not optional, and it is not the agency being difficult.
 > and keep systems for accepting, checking and archiving advertising business,
 > to verify the supporting documents, and to refuse design, production or
 > placement where the content does not match those documents.
-> Source: Advertising Law of the People's Republic of China (中华人民共和国广告法), Article 34, as amended 2021. https://www.gov.cn/guoqing/2021-10/29/content_5647620.htm
+> Source: Advertising Law of the People's Republic of China (中华人民共和国广告法), Article 34, as amended October 2018. https://www.gov.cn/guoqing/2021-10/29/content_5647620.htm
 
 Document checks and license copies take hours. So does creative that comes
 back rejected. None of it goes in a creative brief, and on a project fee it
@@ -247,15 +248,15 @@ is theirs unless your contract says otherwise. Most contracts don't.
 > buy.
 > Source: Tencent Ads (腾讯广告), advertiser cooperation agreement, confirmed September 2026. https://e.qq.com/contract.html
 
-Foreign brands often cannot hold the account themselves anyway, which is what
-makes the rebate question worth asking early.
+On Xiaohongshu and Douyin, whether you or the agency opens the account is
+your call, which is what makes the rebate question worth asking early.
 
-> Since February 2, 2026, overseas merchants have been admitted to
-> Xiaohongshu's Jiguang (聚光) ad platform only through an authorized agent.
-> There is no self-serve route.
-> Source: Ziyouxing Studio (自由行Studio), August 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
+> Xiaohongshu's Juguang (聚光) ad platform offers two account types at sign-up,
+> advertiser and agency. No official Xiaohongshu document requires an overseas
+> advertiser to go through an agent.
+> Source: Ziyouxing Studio (自由行Studio), Xiaohongshu Juguang guide, updated September 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
 
-Douyin leaves you a choice, and prices it.
+Douyin prices the choice.
 
 > On Douyin, the official channel charges a service fee to open an ad account.
 > Agents may open one for free, and set their own minimum first deposit.
@@ -279,7 +280,7 @@ Chinese law requires the paperwork to exist.
 > The Advertising Law requires advertisers, advertising operators and
 > advertising publishers to conclude written contracts for advertising
 > activity.
-> Source: Advertising Law of the People's Republic of China (中华人民共和国广告法), Article 30, as amended 2021. https://www.gov.cn/guoqing/2021-10/29/content_5647620.htm
+> Source: Advertising Law of the People's Republic of China (中华人民共和国广告法), Article 30, as amended October 2018. https://www.gov.cn/guoqing/2021-10/29/content_5647620.htm
 
 A written contract is the floor, not the finish line. Five clauses decide what
 happens in practice.

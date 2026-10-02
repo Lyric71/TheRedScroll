@@ -4,6 +4,7 @@ description: "Five cost lines, four of them public. Verification is cheap, media
 metaTitle: "China Social Media Marketing Cost 2026"
 metaDescription: "What China social media marketing costs in 2026, line by line: sourced figures for setup, media, and influencers, plus how agency fees are billed."
 publishDate: 2026-09-04
+updatedDate: 2026-10-02
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "Strategy"
@@ -181,29 +182,32 @@ We're not printing a Douyin first-deposit figure. The numbers in circulation
 come from reseller blogs, not from the platform, and they change by agent.
 Ask the agent opening your account for its threshold in writing.
 
-[Xiaohongshu ads](/rednote-agency/) run through its Jiguang (聚光) platform, and for foreign
-advertisers the route changed this year.
+[Xiaohongshu ads](/rednote-agency/) run through its Juguang (聚光) platform.
+Foreign brands often hear they must go through an agent. No official
+Xiaohongshu document says so.
 
-> Since February 2, 2026, overseas merchants can no longer open a Jiguang ad
-> account on their own. They apply through an authorized Xiaohongshu agent,
-> which reviews their qualifications before submitting to the platform.
-> Source: Ziyouxing Studio (自由行Studio), Xiaohongshu Jiguang overseas guide, August 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
+> No official Xiaohongshu document requires overseas advertisers to use an
+> agent. Juguang's sign-up offers two account types, advertiser and agency.
+> Overseas entities have their own industry admission list, and some
+> categories are not yet open to them.
+> Source: Ziyouxing Studio (自由行Studio), Xiaohongshu Juguang guide, updated September 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
 
-So a foreign brand's first Xiaohongshu ad budget is set in conversation with
-the agent, not read off a page. The same guide describes first deposits in
-the low thousands of yuan. That's one observer's account of agent practice,
-not a platform rule, so treat it as guidance.
+So check your category against that list before you plan spend. The same
+guide says the platform publishes no minimum first deposit. Figures quoted in
+the market start in the low thousands of yuan. That's practice, not a
+platform rule, so treat it as guidance.
 
 | Platform | Ad platform | Published floor | Who sets it |
 |---|---|---|---|
 | WeChat Moments, bidding | Tencent Ads | 1,000 yuan a day, 30 yuan CPM | Tencent |
 | WeChat Moments, scheduled | Tencent Ads | 50,000 yuan per placement | Tencent |
 | Douyin | Ocean Engine | Minimum first recharge | The opening agent |
-| Xiaohongshu | Jiguang | Set at account opening | The authorized agent |
+| Xiaohongshu | Juguang | None published | Agreed at account opening |
 
 A minimum viable test, then, is about 1,000 yuan a day on WeChat for as many
-days as you want data. On Douyin or Xiaohongshu, it's whatever first recharge
-your agent requires. Plan on 30 days either way. Anything shorter tells you
+days as you want data. On Douyin, it's whatever first recharge your agent
+requires. On Xiaohongshu, it's the first deposit agreed at account opening.
+Plan on 30 days either way. Anything shorter tells you
 about the creative, not the channel.
 
 ## Influencer fees: KOC, mid-tier, and top-tier
@@ -369,8 +373,9 @@ its pricing page.
 ### What is the minimum budget to test one platform?
 
 On WeChat, Tencent's published floor for bidding Moments ads is 1,000 yuan a
-day with a 30-yuan CPM minimum. On Douyin and Xiaohongshu, the first deposit
-is set by the agent who opens the account. Add native content at the
+day with a 30-yuan CPM minimum. On Douyin, the first deposit is set by the
+agent who opens the account. Xiaohongshu publishes no minimum, but check that
+your category is open to overseas entities. Add native content at the
 platform's minimum cadence and a small KOC batch, then run the test for 30
 days.
 

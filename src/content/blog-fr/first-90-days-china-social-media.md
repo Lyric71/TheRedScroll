@@ -4,6 +4,7 @@ description: "Deux semaines suffisent pour ouvrir les comptes. Protéger le nom 
 metaTitle: "Réseaux sociaux chinois : les 90 premiers jours"
 metaDescription: "Ouverture des comptes, certification, nom chinois, premiers contenus, premiers prospects : le déroulé semaine par semaine d’un lancement en Chine."
 publishDate: 2026-09-10
+updatedDate: 2026-10-02
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "Stratégie"
@@ -261,16 +262,19 @@ le produit via la place de marché des créateurs,
 dans la catégorie fait alors remonter de vraies personnes qui s’en servent.
 Un test payant ensuite, adossé aux deux ou trois notes déjà éprouvées.
 
-Pour une société étrangère, la publicité passe par un agent.
+Pour une société étrangère, le compte publicitaire commence par une
+vérification de catégorie.
 
-> Depuis le 2 février 2026, les marchands étrangers n’accèdent à la régie
-> publicitaire Jiguang de Xiaohongshu que par l’intermédiaire d’un agent
-> agréé, sans ouverture de compte en libre-service.
-> Source : Ziyouxing Studio (自由行Studio), guide Jiguang à l’international pour Xiaohongshu, août 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
+> Aucun document officiel de Xiaohongshu n’oblige un annonceur étranger à
+> passer par un agent. À l’inscription, sa régie Juguang (聚光) propose deux
+> types de compte : annonceur et agence. Les entités étrangères relèvent
+> d’une liste d’admission sectorielle distincte, et certaines catégories ne
+> leur sont pas encore ouvertes.
+> Source : Ziyouxing Studio (自由行Studio), guide Xiaohongshu Juguang, mis à jour en septembre 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
 
-L’ouverture de compte par l’agent relève donc du plan de la semaine 9, et le
-dépôt qu’il fixe relève de l’achat d’espace : facturé au coût réel, facture
-de la plateforme à l’appui. Ce que coûtent le seeding et le test, notre
+La vérification de catégorie et l’ouverture du compte Juguang relèvent donc
+du plan de la semaine 9. Le dépôt relève de l’achat d’espace : facturé au
+coût réel, facture de la plateforme à l’appui. Ce que coûtent le seeding et le test, notre
 guide sur le
 [coût du marketing sur les réseaux sociaux chinois en 2026](/fr/decryptages/china-social-media-marketing-cost/)
 le détaille. La grille tarifaire de TheRedScroll figure sur sa

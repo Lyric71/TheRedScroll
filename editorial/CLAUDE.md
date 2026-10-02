@@ -32,6 +32,47 @@ Step 2 runs on all 52 articles, not only the six high-stakes ones the original
 plan named. Step 3 uses the `generate-image-openai` skill only, never the
 older `scripts/generate-image.mjs` in this repo.
 
+## No TODO leaves a run (standing rule, Cyril, Oct 2, 2026)
+
+A publishing job never leaves a TODO behind. That covers every step: the
+research, the draft, the quality pass, the image, the publish run and the
+notification email. No TODO marker, no "open items", no "for a person" list,
+no "flag for Cyril", no "Phase 2" deferral, no "offer to propagate". Every
+item a run finds is closed inside that run:
+
+- **A missing or unverified fact** is researched to the source standard in
+  this file and `SPEC.md`, or the claim is cut. Never a TODO marker in a
+  body, table, caption, comment block or frontmatter.
+- **An existing page the new piece contradicts** (an older article or a site
+  page, in any locale) is fixed in the same run, in every locale, with
+  `updatedDate` set on each content file whose body changed.
+- **A brief or spec the research proved wrong** is amended at the source in
+  `briefs/` or in this folder, including any later brief that repeats the
+  error.
+- **A missing link, slug or asset** is created when the destination can be
+  verified; otherwise the settled fallback in `SPEC.md` ("Settled
+  fallbacks") applies and the gap is not raised again. Link wiring and
+  factual corrections made by a pipeline run apply to every live locale:
+  this overrides the single-locale default in `TRANSLATION_GUIDE.md` for
+  pipeline runs only.
+- **A future watch item** (a page to recheck, a source that was down) goes
+  into the repo's own mechanism: a dated note on the entry in
+  `sources/verified-sources.md`, or a row note in `schedule.csv`. Never the
+  email, never a list at the end of the log.
+
+The run log records what was found and how each item was closed, under
+"Items found and closed". It has no "Open items" section. The notification
+email has no TODO or open items section, and `notify-publish.mjs` refuses to
+send if asked to carry one. `node editorial/scripts/check-no-todo.mjs` fails
+on any marker in `src/content`, runs inside `npm run build`, and the publish
+step runs it on `output/<slug>.md` before anything moves.
+
+**If something cannot be closed without Cyril's decision, the run stops
+before publishing.** The draft run sets the row to `blocked` with the reason
+in `notes`; the publish run leaves the row where it is, does not commit or
+push, and sends the email with `--build failed` and the reason in `--note`,
+written as a stop, not as a TODO. It never publishes with a TODO attached.
+
 ## Project wins over runbook
 
 When `RUNBOOK.md` or `SPEC.md` asks for something this repo cannot do, use
@@ -83,6 +124,11 @@ If a draft ever contains planted errors, the skill was ignored. Rerun
 iteration 7.
 
 ## Three smaller conflicts, already decided
+
+(Further settled decisions, so they are not raised again: the Oxford comma is
+always used, per `STYLE_GUIDE.md` 4.9; editorial articles keep the English
+slug in every locale, per `RUNBOOK.md`, and that is not flagged; the full
+list of settled fallbacks is in `SPEC.md`.)
 
 1. **SEO ceilings.** `content-quality-us` says title under 60 and meta under
    156. The house ceilings are tighter: title 52, meta 152, excerpt 25 words.
@@ -181,9 +227,15 @@ fixed-price packages (TheRedScroll competitive analysis, April 2026)."
 Camper, Marriott, Jaguar Land Rover, Viessmann, iGuzzini, JAC Motors, Langnese,
 Master Martini, Mission Foods, Age20s, Blue Insurance.
 
-Client figures must be cleared before publication. If a brief asks for a client
-number you cannot verify in `sources/verified-sources.md`, flag it in your log
-and leave a `TODO: client sign-off` marker rather than guessing.
+Client figures, settled (Oct 2, 2026): a client figure or line may be used
+only as it is published on that client's live case study page on this site
+(`/work/<client>/`), quoted, cited to that page and dated. Publication on the
+site, with the client named, is the clearance. Anything the page does not
+publish (a monthly series, a campaign post-mortem, an unpublished outcome) is
+not used and not estimated, and the article stands without it. No marker, no
+sign-off chase in the log or the email. If a brief cannot stand without an
+unpublished client figure, the draft run sets the row to `blocked` with that
+reason before anything is written.
 
 ## Audience
 
@@ -234,14 +286,17 @@ differentiator, for readers and for AI answer engines. It is not optional.
 When step 4 finishes, run from the repo root:
 
 ```
-node editorial/scripts/notify-publish.mjs --slug <slug> --title "<title>" --section insights --build passed --log editorial/logs/YYYY-MM-DD.md --todo "<any open item>"
+node editorial/scripts/notify-publish.mjs --slug <slug> --title "<title>" --section insights --build passed --log editorial/logs/YYYY-MM-DD.md --note "<commit hash>"
 ```
 
 It sends one email through Resend (key in `.env`) to cyril.drouin@outlook.com
 (the only address Resend's testing mode can deliver to; switch the default in
 the script to gmail once a sending domain is verified)
-with the live URL per locale, the hero image path, build status, open TODOs
-and the run log path. Use `--section industries` or `--section tools` for
+with the live URL per locale, the hero image path, build status and the run
+log path. The email has no TODO or open items section: every item was closed
+before the publish, or the publish did not happen (see "No TODO leaves a
+run"). The script refuses `--todo` and any `--note` that reads like an open
+item list. Use `--section industries` or `--section tools` for
 those pages. Add `--dry-run` to preview. If the send fails, say so in the run
 log and the final message instead of skipping silently.
 

@@ -4,6 +4,7 @@ description: "Trois modèles, et voilà comment les agences facturent réellemen
 metaTitle: "Comment les agences en Chine vous facturent"
 metaDescription: "Honoraires mensuels, forfait projet ou prix fixe : où chacun dérape, ce que publient les plateformes sur le média, les clauses à lire avant de signer."
 publishDate: 2026-09-21
+updatedDate: 2026-10-02
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "Stratégie"
@@ -22,7 +23,7 @@ La tarification des agences en Chine se ramène à trois formes. Presque toutes 
 
 Le budget média est une question à part, et la plus coûteuse. Quel que soit le modèle retenu, une chose pèse plus lourd que le modèle lui-même : le nom qui figure sur le compte publicitaire, et celui qui empoche la remise que la plateforme verse sur vos investissements. Les paragraphes consacrés à la destination de votre argent média en citent les clauses.
 
-Toutes les sources citées ici ont fait l’objet de deux vérifications en septembre 2026.
+Toutes les sources citées ici ont fait l’objet de deux vérifications, en septembre ou en octobre 2026.
 
 ## Tarifs des agences en Chine : qui porte le risque
 
@@ -75,7 +76,7 @@ La dérive du périmètre a ses formes propres en Chine, et elle piège les marq
 Le troisième point n’a rien d’optionnel, et l’agence n’y met pas de mauvaise volonté.
 
 > La loi sur la publicité impose aux opérateurs et aux diffuseurs publicitaires de mettre en place et de tenir des systèmes d’acceptation, de contrôle et d’archivage des dossiers publicitaires, de vérifier les justificatifs, et de refuser la conception, la production ou la diffusion lorsque le contenu ne correspond pas à ces justificatifs.
-> Source : loi sur la publicité de la République populaire de Chine (中华人民共和国广告法), article 34, dans sa version modifiée de 2021. https://www.gov.cn/guoqing/2021-10/29/content_5647620.htm
+> Source : loi sur la publicité de la République populaire de Chine (中华人民共和国广告法), article 34, dans sa version modifiée en octobre 2018. https://www.gov.cn/guoqing/2021-10/29/content_5647620.htm
 
 Les contrôles de documents et les copies de licences prennent des heures. Une création qui revient refusée aussi. Rien de tout cela ne figure dans un brief créatif, et sur un forfait projet, cela ressort plus tard sous forme d’avenant.
 
@@ -156,12 +157,12 @@ Les remises vont à qui détient le compte publicitaire. Si c’est votre agence
 > Le même contrat précise que la part non monétaire d’un compte publicitaire, dotations et crédits compris, n’est pas remboursable, et que les sommes déjà versées pour des prestations non encore délivrées ne sont pas restituées si l’annonceur met fin à l’achat.
 > Source : Tencent Ads (腾讯广告), contrat de coopération annonceur, vérifié en septembre 2026. https://e.qq.com/contract.html
 
-De toute manière, les marques étrangères peuvent rarement détenir le compte elles-mêmes, et c’est ce qui rend la question des remises urgente.
+Sur Xiaohongshu comme sur Douyin, c’est à vous de décider qui ouvre le compte, vous ou l’agence. Raison de plus pour poser tôt la question des remises.
 
-> Depuis le 2 février 2026, les marchands étrangers n’accèdent à Jiguang (聚光), la plateforme publicitaire de Xiaohongshu, que par l’intermédiaire d’un agent agréé. Il n’existe pas de voie en libre-service.
-> Source : Ziyouxing Studio (自由行Studio), août 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
+> Juguang (聚光), la plateforme publicitaire de Xiaohongshu, propose deux types de compte à l’inscription : annonceur et agence. Aucun document officiel de Xiaohongshu n’oblige un annonceur étranger à passer par un agent.
+> Source : Ziyouxing Studio (自由行Studio), guide Juguang de Xiaohongshu, mis à jour en septembre 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
 
-Douyin laisse le choix, et l’affiche.
+Douyin, lui, met un prix sur ce choix.
 
 > Sur Douyin, le canal officiel facture des frais de service pour l’ouverture d’un compte publicitaire. Les agents peuvent en ouvrir un gratuitement et fixent eux-mêmes le premier dépôt minimum.
 > Source : Ocean Engine (巨量引擎), FAQ sur l’ouverture de compte, juin 2021. https://www.oceanengine.com/faq/douyin-kaihu-feiyong.html
@@ -179,7 +180,7 @@ Une agence qui refuse de répondre aux trois par écrit vient d’y répondre.
 Le droit chinois impose que le contrat existe.
 
 > La loi sur la publicité impose aux annonceurs, aux opérateurs et aux diffuseurs publicitaires de conclure des contrats écrits pour toute activité publicitaire.
-> Source : loi sur la publicité de la République populaire de Chine (中华人民共和国广告法), article 30, dans sa version modifiée de 2021. https://www.gov.cn/guoqing/2021-10/29/content_5647620.htm
+> Source : loi sur la publicité de la République populaire de Chine (中华人民共和国广告法), article 30, dans sa version modifiée en octobre 2018. https://www.gov.cn/guoqing/2021-10/29/content_5647620.htm
 
 Un contrat écrit est le plancher, pas la ligne d’arrivée. Cinq clauses décident de ce qui se passe réellement.
 

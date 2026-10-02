@@ -49,7 +49,7 @@ summary or conclusion section. End on the CTA.
 3. What an overseas entity can do on Xiaohongshu
 4. Douyin and Weibo: the stricter cases
 5. Cross-border e-commerce as a route in
-6. What a WFOE actually costs and how long it takes
+6. What setting up a Chinese company involves and how long it takes (no dated professional source publishes a WFOE cost; do not promise one) (Amended 2026-10-02: research proved the original line wrong. See editorial/CLAUDE.md, "No TODO leaves a run".)
 7. The middle path: an agency-held account, and its risks
 8. A decision tree
 
@@ -61,7 +61,7 @@ still current, reuse the logged citation instead of researching again. If you
 find a new figure, append it to that ledger before you finish.
 
 - Platform registration requirements for overseas entities, cite each platform's documentation, dated
-- WFOE setup timeline and cost, cite a dated professional source
+- WFOE setup timeline, cite a dated professional source. No dated source publishes a cost: state that plainly rather than estimate. (Amended 2026-10-02: research proved the original line wrong. See editorial/CLAUDE.md, "No TODO leaves a run".)
 - Add a clear line: this is general information, not legal advice
 
 **If a figure cannot be sourced, cut the claim.** Do not estimate, do not
@@ -98,7 +98,7 @@ Final section only. CTA label: **Book a call**
 | Field | Ceiling | Draft value |
 |---|---|---|
 | Title | 52 chars | Do You Need a Chinese Entity for Social? (40 chars) |
-| Meta description | 152 chars | Whether a foreign brand needs a Chinese entity for WeChat, Xiaohongshu, Douyin and Weibo, what the alternatives are, and what a WFOE really costs. (146 chars) |
+| Meta description | 152 chars | Whether a foreign brand needs a Chinese entity for WeChat, Xiaohongshu, Douyin and Weibo, what each platform accepts, and where the real limits sit. (150 chars, amended 2026-10-02 to the published meta) |
 | Excerpt | 25 words | generate in the SEO iteration |
 
 The draft values above are approved. Use them unless the finished article

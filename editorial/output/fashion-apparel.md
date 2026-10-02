@@ -106,8 +106,6 @@ it looks ran for three days.
 > smallest of the three audiences, and same-store sales grew 31% year on year.
 > Source: TheRedScroll, Camper case study, September 2026. https://www.theredscroll.com/work/camper/
 
-<!-- TODO: client sign-off. Every Camper figure above is copied from the live case study page at /work/camper/. The ledger row for Camper (briefs 03D and 02D) is still marked pending. Set the schedule row to blocked before the 2026-09-18 publish run if formal clearance is wanted first. -->
-
 Two details matter more than the headline. Xiaohongshu had the smallest
 follower count of the three and sent the most store traffic. And the first
 months were slow. The Camper case study on our site has the full timeline.
@@ -457,9 +455,8 @@ INTERNAL LINKS:
   pricing page (Package and cost) -> /pricing/
   INBOUND (brief): from /work/camper/ -> /industries/fashion-apparel/, on
   an existing phrase in the outcome section, at publish time.
-CLIENT SIGN-OFF NEEDED: Camper. Figures used: 43,000 to 187,000 followers in
+CLIENT FIGURES: Camper. Figures used: 43,000 to 187,000 followers in
   18 months; engagement 1.2% to 4.7%; 38% of e-commerce traffic from
   Xiaohongshu; same-store sales +31% year on year; no discount campaigns.
-  All are already published on /work/camper/. The ledger row for Camper
-  (03D, 02D) is marked pending; see logs/2026-09-15.md decision 1.
+  All quoted as published on /work/camper/ (SPEC, settled fallbacks).
 -->

@@ -4,6 +4,7 @@ description: "Seis partidas. Tres se apoyan en una cifra que publica la platafor
 metaTitle: "Marketing en Xiaohongshu: lo que cuesta en 2026"
 metaDescription: "Verificación, contenido, seeding KOC, honorarios KOL, publicidad y agencia: el coste real del marketing en Xiaohongshu en 2026, con tres presupuestos."
 publishDate: 2026-09-14
+updatedDate: 2026-10-02
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Estrategia"
@@ -22,7 +23,7 @@ partida por partida, y cada cifra lleva su fuente y su fecha.*
 | 2. Producción de contenido | Sin tarifa de plataforma, más un 10 % de comisión del mercado oficial | Niaoge Biji, 2022 |
 | 3. Seeding KOC | 20 a 60 dólares por publicación | Long Advisory, 2026 |
 | 4. Honorarios KOL | 10.000 a 35.000 dólares por campaña | Long Advisory, 2026 |
-| 5. Publicidad | Desde 75 yuanes en autoservicio; el depósito publicitario lo fija su agente | Woshipm, 2026 |
+| 5. Publicidad | Desde 75 yuanes en autoservicio; sin depósito publicitario mínimo publicado | Woshipm, 2026 |
 | 6. Tarifa de agencia | Publicada en [la página de precios de TheRedScroll](/es/precios/) | TheRedScroll |
 
 Los importes en dólares son conversiones redondeadas, a unos siete yuanes
@@ -49,7 +50,7 @@ Barato por unidad, caro de coordinar.
 colaboración. Es la partida que devora los presupuestos de lanzamiento.
 
 **La publicidad** es dinero que va a la plataforma, por la herramienta de
-impulso en autoservicio o por Jiguang (聚光), su plataforma de anuncios.
+impulso en autoservicio o por Juguang (聚光), su plataforma de anuncios.
 
 Queda **la tarifa de agencia**, que cubre estrategia, textos en chino,
 selección de creadores, gestión de anuncios e informes.
@@ -251,20 +252,23 @@ sabe si su creatividad en chino funciona, ese es todo el primer
 experimento. Publique seis notas, impulse cada una al mínimo y mire cuál se
 lleva el feed.
 
-El dinero de verdad pasa por Jiguang (聚光), la plataforma de pujas que hay
-detrás de [los anuncios de búsqueda y de feed](/es/analisis/xiaohongshu-advertising-formats-costs/). Para los anunciantes
-extranjeros, esa puerta cambió este año.
+El dinero de verdad pasa por Juguang (聚光), la plataforma de pujas que hay
+detrás de [los anuncios de búsqueda y de feed](/es/analisis/xiaohongshu-advertising-formats-costs/). A los anunciantes
+extranjeros se les repite que el agente es obligatorio. Ningún documento
+oficial de Xiaohongshu lo exige.
 
-> Desde el 2 de febrero de 2026, los comerciantes extranjeros ya no pueden
-> abrir una cuenta de Jiguang por su cuenta. La solicitan a través de un
-> agente autorizado por Xiaohongshu, que revisa sus cualificaciones antes de
-> trasladarlas a la plataforma.
-> Fuente: Ziyouxing Studio (自由行Studio), guía de Jiguang de Xiaohongshu para anunciantes extranjeros, agosto de 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
+> Ningún documento oficial de Xiaohongshu obliga a un anunciante extranjero a
+> recurrir a un agente. Al registrarse, Juguang ofrece dos tipos de cuenta:
+> anunciante y agencia. Las entidades extranjeras tienen su propia lista de
+> admisión por sectores, y algunas categorías aún no están abiertas para
+> ellas.
+> Fuente: Ziyouxing Studio (自由行Studio), guía de Xiaohongshu Juguang, actualizada en septiembre de 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
 
-No publicamos ninguna cifra de primer depósito, y desconfíe de quien lo haga.
-Los números que circulan salen de blogs de revendedores, cambian de un
-agente a otro y la plataforma no los publica. Exija por escrito su umbral al
-agente que le abra la cuenta, antes de firmar nada.
+Así que compruebe su categoría antes de planificar el gasto. No publicamos
+ninguna cifra de primer depósito, y desconfíe de quien lo haga. Los números
+que circulan salen de blogs de revendedores, cambian de un agente a otro y la
+plataforma no los publica. Si un agente le abre la cuenta, exíjale su umbral
+por escrito antes de firmar nada.
 
 Tampoco hay una referencia publicada de CPC o CPM en Xiaohongshu. Las pujas
 dependen de su objetivo y de su competencia. El único coste por clic que
@@ -319,8 +323,8 @@ Pugongying. Las seis mejores notas, impulsadas al mínimo de 75 yuanes. Entre
 plataforma y creadores, el trimestre sale por unos 600 a 1.500 dólares.
 
 **Un mes de trabajo normal.** Cuarenta notas KOC en diez consultas, 800 a 2.400
-dólares más el 10 % de comisión, e inversión continua en Jiguang hasta donde
-permita el mínimo de su agente. Todavía sin KOL. En este escalón aprende qué
+dólares más el 10 % de comisión, e inversión continua en Juguang a partir
+del primer depósito pactado al abrir la cuenta. Todavía sin KOL. En este escalón aprende qué
 consultas convierten.
 
 **Un trimestre de lanzamiento.** Una campaña con un micro KOL, 10.000 a
@@ -364,7 +368,7 @@ marcas que aceptan el primer presupuesto pagan la inflación de todo el
 mercado.
 
 **Comprar alcance antes de que la creatividad funcione.** Poner dinero de
-Jiguang en una nota que no ha despegado de forma orgánica es pagar caro la
+Juguang en una nota que no ha despegado de forma orgánica es pagar caro la
 lectura de una mala nota. El impulso de 75 yuanes existe precisamente para
 evitarlo.
 
@@ -387,10 +391,11 @@ dar instrucciones y perseguir a cada creador.
 
 Setenta y cinco yuanes, unos once dólares, pagan un pedido en la herramienta
 de impulso en autoservicio, y solo para una nota publicada en los últimos 90
-días. La plataforma de pujas Jiguang (聚光) se rige por otras reglas: desde
-febrero de 2026, los anunciantes extranjeros abren la cuenta a través de un
-agente autorizado, y es ese agente quien fija el primer depósito. Consiga la
-cifra por escrito antes de firmar.
+días. La plataforma de pujas Juguang (聚光), en cambio, no publica
+ningún depósito inicial mínimo. Ninguna norma oficial obliga a un anunciante
+extranjero a recurrir a un agente, pero algunas categorías aún no están
+abiertas a las entidades extranjeras: compruebe antes la suya. Si un agente
+le abre la cuenta, consiga su cifra por escrito antes de firmar.
 
 ### ¿Cuánto cuesta la verificación Blue V?
 

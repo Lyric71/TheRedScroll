@@ -4,6 +4,7 @@ description: "在中国，一款食品要卖两次：先卖给吃它的消费者
 metaTitle: "食品饮料品牌的中国社交营销"
 metaDescription: "食品饮料品牌如何在中国打开局面：零售与餐饮两条线、标签与宣称红线、食谱内容、抖音冲动消费，以及全年六个销售旺季。"
 publishDate: 2026-10-02
+updatedDate: 2026-10-02
 author: "TheRedScroll"
 platforms: ["rednote", "douyin", "wechat"]
 category: "行业"
@@ -98,7 +99,7 @@ faqs:
 “最佳”。
 
 > 广告不得使用“国家级”“最高级”“最佳”等用语。
-> Source: Advertising Law of the People's Republic of China (中华人民共和国广告法), Article 9, text as amended 2021. https://www.gov.cn/guoqing/2021-10/29/content_5647620.htm
+> Source: Advertising Law of the People's Republic of China (中华人民共和国广告法), Article 9, text as amended October 2018. https://www.gov.cn/guoqing/2021-10/29/content_5647620.htm
 
 以下是客户问得最多的几类宣称，以及合规之后还能保留的说法。
 

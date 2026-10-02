@@ -37,7 +37,7 @@ They override any conflicting rule inside the skill.
 
 ## The angle
 
-Anchored to three real clients: Langnese, Master Martini and Mission Foods. Covers both the consumer side and the foodservice B2B side, which nobody else separates. GMA publishes F&B content weekly, so this page has to be more useful than a blog post.
+Anchored to three real clients: Langnese, Master Martini and Mission Foods. Master Martini is an Instagram and Facebook case in Malaysia, Hong Kong, Singapore, Indonesia and Thailand, not a mainland China or WeChat case; use it for the recipe-led foodservice approach and say where it ran. Client lines only as published on each /work/ page. (Amended 2026-10-02: research proved the original line wrong. See editorial/CLAUDE.md, "No TODO leaves a run".) Covers both the consumer side and the foodservice B2B side, which nobody else separates. GMA publishes F&B content weekly, so this page has to be more useful than a blog post.
 
 ## Section outline
 

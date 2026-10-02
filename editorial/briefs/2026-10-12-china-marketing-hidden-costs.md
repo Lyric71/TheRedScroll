@@ -46,7 +46,7 @@ summary or conclusion section. End on the CTA.
 
 1. Why proposals leave these out
 2. Verification and annual renewal fees
-3. Ad account deposits you do not get back quickly
+3. Ad account deposits you do not get back quickly (Xiaohongshu, Douyin and WeChat publish no minimum first deposit; cite the platforms' refund and balance rules, e.g. Tencent's advertiser agreement, never agent figures) (Amended 2026-10-02: research proved the original line wrong. See editorial/CLAUDE.md, "No TODO leaves a run".)
 4. Translation and transcreation, which is not the same as translation
 5. Trademark registration before you can verify
 6. ICP filing if you touch a website

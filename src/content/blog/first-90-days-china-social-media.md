@@ -4,6 +4,7 @@ description: "Accounts can be live in two weeks. The Chinese name takes months t
 metaTitle: "Your First 90 Days on Chinese Social Media"
 metaDescription: "A realistic week-by-week timetable for launching a brand on Chinese social media, including verification waits, localization and first results."
 publishDate: 2026-09-10
+updatedDate: 2026-10-02
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "Strategy"
@@ -242,15 +243,17 @@ marketplace, [Pugongying (蒲公英)](/services/influencer-marketing/), so that
 a search for the category returns real people using it. The second is a paid
 test behind the two or three notes that already proved themselves.
 
-For a foreign company, the ads go through an agent.
+For a foreign company, the ad account starts with a category check.
 
-> Since February 2, 2026, overseas merchants gain access to Xiaohongshu's
-> Jiguang ad platform only through an authorized agent, with no self-serve
-> account opening.
-> Source: Ziyouxing Studio (自由行Studio), Xiaohongshu Jiguang overseas guide, August 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
+> No official Xiaohongshu document requires overseas advertisers to use an
+> agent. Its ad platform, Juguang (聚光), offers two account types at
+> sign-up, advertiser and agency. Overseas entities have their own industry
+> admission list, and some categories are not yet open to them.
+> Source: Ziyouxing Studio (自由行Studio), Xiaohongshu Juguang guide, updated September 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
 
-So the agent's account opening belongs in the week 9 plan, and the deposit
-it sets is ad spend, billed at cost with the platform's invoice attached.
+So the category check and the Juguang account opening belong in the week 9
+plan. The deposit is ad spend, billed at cost with the platform's invoice
+attached.
 What the seeding and the test cost is covered in our guide to
 [how much China social media marketing costs in 2026](/insights/china-social-media-marketing-cost/).
 TheRedScroll's own rate card is on its [pricing page](/pricing/).

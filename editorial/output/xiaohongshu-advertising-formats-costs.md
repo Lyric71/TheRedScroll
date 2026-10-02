@@ -288,9 +288,6 @@ A contested search term costs far more per click.
 > (face cream).
 > Source: Woshipm (人人都是产品经理), October 2024. https://www.woshipm.com/share/6130476.html
 
-<!-- TODO: unsourced claim removed. Cost per lead by objective cut: no dated published average exists; the platform case says only that its cost per form was far below the industry average. -->
-<!-- TODO: first-party sample. The in-feed CPM and CPC ranges are as published on /services/advertising/ ("as of early 2026"). SPEC asks for sample size and period for first-party figures; the page gives neither. Supply the account count and date range, or keep the "our planning range" label. -->
-
 Cost per lead turns mostly on your category and on how fast someone answers
 the DM, and nobody publishes an average. Your own is easy to find:
 after two weeks, divide spend by forms or DMs in Juguang's report, which also
@@ -438,7 +435,7 @@ INTERNAL LINKS:
   "the RedNote agency page" (minimum budgets section) -> /rednote-agency/
   IN-LINK to add on publish: from /insights/xiaohongshu-marketing-cost/, per
   the brief (its Paid section is the natural anchor).
-CLIENT SIGN-OFF NEEDED: none. No client figures used. First-party planning
-  ranges from /services/advertising/ need a sample size and period (see the
-  TODO in the benchmarks section).
+CLIENT FIGURES: none. No client figures used. The planning ranges are quoted
+  as published on /services/advertising/ and labeled as our planning figures,
+  not measured data (SPEC, settled fallbacks).
 -->

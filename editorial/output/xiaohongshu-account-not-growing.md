@@ -488,7 +488,7 @@ INTERNAL LINKS:
   account stops growing". Note that /insights/xiaohongshu-marketing-cost/
   is brief 02A (image_ready, publishes 2026-09-14) and should be live by the
   time this page publishes; if not, leave that reference as plain text.
-CLIENT SIGN-OFF NEEDED: none. No client figure is used. The brief allows
+CLIENT FIGURES: none. No client figure is used. The brief allows
   benchmark figures only from our own account set; sources/verified-sources.md
   holds no Xiaohongshu first-party figure, so the article carries no
   benchmark and says so in the self-audit section.

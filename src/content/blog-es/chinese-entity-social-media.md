@@ -4,6 +4,7 @@ description: "Por lo general no, al menos para empezar. Tres de las cuatro grand
 metaTitle: "Redes sociales en China: ¿hace falta sociedad china?"
 metaDescription: "WeChat, Xiaohongshu, Douyin y Weibo: qué admite cada plataforma de una marca extranjera sin sociedad china y dónde están los verdaderos límites."
 publishDate: 2026-09-24
+updatedDate: 2026-10-02
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Estrategia"
@@ -12,7 +13,7 @@ featured: false
 featuredImage: "/images/blog/chinese-entity-social-media.webp"
 ---
 
-Es la pregunta que encalla más de una primera reunión comercial. Las respuestas que circulan por internet se contradicen, y muchas han quedado sencillamente obsoletas: solo en febrero de 2026, Xiaohongshu cambió las condiciones de acceso de los anunciantes extranjeros a su plataforma publicitaria. Lo esencial cabe en pocas líneas, plataforma por plataforma, contrastado con lo que cada una publica.
+Es la pregunta que encalla más de una primera reunión comercial. Las respuestas que circulan por internet se contradicen. Lo esencial cabe en pocas líneas, plataforma por plataforma, contrastado con lo que cada una publica.
 
 | Plataforma | Qué establece la plataforma | Qué debe presentar | Tasa de verificación |
 |---|---|---|---|
@@ -25,7 +26,7 @@ Dos matices antes de entrar en detalle. Tener una cuenta no equivale a poder sac
 
 Este artículo tiene carácter meramente informativo y no constituye asesoramiento jurídico. La estructura societaria, la fiscalidad y las normas de importación dependen de las circunstancias de cada empresa, y conviene que un abogado habilitado en China las revise antes de asumir cualquier compromiso.
 
-Todas las fuentes de este artículo se comprobaron dos veces en septiembre de 2026.
+Todas las fuentes de este artículo se comprobaron dos veces, en septiembre u octubre de 2026.
 
 ## Qué puede hacer una entidad extranjera en WeChat
 
@@ -67,12 +68,12 @@ El plazo de revisión está publicado, algo poco habitual.
 > Tras presentar una solicitud de empresa, un revisor se pone en contacto en 1 día laborable, y la revisión se completa en 4 a 7 días laborables de media. Cada orden de revisión es válida 30 días.
 > Fuente: Xiaohongshu (小红书), guía de producto de la cuenta profesional, documentación de la plataforma, comprobada en septiembre de 2026. https://fe-video-qc.xhscdn.com/fe-platform/68e374e4257bd30bc07eed15c06cb8b9a51f971b.pdf
 
-La brecha se abre después. Tener la cuenta a nombre de una entidad extranjera no plantea problemas. Comprar publicidad en ella es harina de otro costal: desde principios de 2026, la puerta del autoservicio está cerrada. La plataforma no ha anunciado este cambio, de modo que la cita siguiente procede de una guía especializada y no de la documentación oficial, y es la fuente más endeble de este artículo. Tómela como un motivo para preguntar a su agencia qué acceso tiene realmente, no como un veredicto.
+Comprar publicidad es otro paso, con reglas propias para las empresas extranjeras. La fuente aquí es una guía especializada, no la documentación oficial de la plataforma.
 
-> Desde el 2 de febrero de 2026, los comerciantes extranjeros solo acceden a la plataforma publicitaria Jiguang a través de un agente autorizado, sin apertura de cuenta en autoservicio.
-> Fuente: Ziyouxing Studio (自由行Studio), guía de Jiguang de Xiaohongshu para el extranjero, agosto de 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
+> Juguang (聚光), la plataforma publicitaria de Xiaohongshu, ofrece al registrarse una cuenta de anunciante y una cuenta de agencia. Ningún documento oficial de Xiaohongshu obliga a un anunciante extranjero a pasar por un agente. Las entidades extranjeras tienen su propia lista de admisión por sectores, y algunas categorías todavía no están abiertas para ellas.
+> Fuente: Ziyouxing Studio (自由行Studio), guía de Juguang de Xiaohongshu, actualizada en septiembre de 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
 
-La misma frontera recorre todas las plataformas que analiza este artículo. La publicación orgánica está a su alcance. Es la difusión de pago la que exige una presencia en China continental, propia o ajena.
+Así que coteje su categoría con esa lista antes de planificar inversión en medios. Recurrir a una agencia es una decisión comercial, no una condición de acceso.
 
 Puestas una junto a otra, las dos plataformas más transparentes muestran que la desventaja del extranjero es menor de lo que suelen dar a entender las agencias.
 
@@ -83,9 +84,9 @@ Puestas una junto a otra, las dos plataformas más transparentes muestran que la
 | Tasa de WeChat | 300 yuanes al año | 99 dólares al año |
 | Documentación en Xiaohongshu | Licencia de actividad | BR o CR, traducción sellada |
 | Dónde se solicita en Xiaohongshu | Aplicación o web | Solo web |
-| Publicidad en Xiaohongshu | Autoservicio | A través de un agente autorizado |
+| Publicidad en Xiaohongshu | Reglas sectoriales habituales | Lista aparte, algunas categorías cerradas |
 
-Ninguna de estas filas impide un lanzamiento. Suponen un par de semanas en WeChat y una llamada para anunciarse en Xiaohongshu, algo muy distinto de tener que constituir una sociedad.
+Ninguna de estas filas impide un lanzamiento. Suponen un par de semanas en WeChat y una comprobación de categoría para anunciarse en Xiaohongshu, algo muy distinto de tener que constituir una sociedad.
 
 ## Douyin y Weibo: donde el asunto se complica
 
@@ -216,14 +217,14 @@ Una agencia incapaz de responder a las tres por escrito ya está dando una respu
 |---|---|---|
 | Está sondeando la demanda, aún sin ingresos en China | Cuenta de servicio de WeChat y Xiaohongshu, ambas a nombre de su propia entidad | No |
 | Vende a consumidores, sin existencias en China continental | Importación minorista transfronteriza, dentro de los límites de 5.000 y 26.000 yuanes | No |
-| Se dispone a comprar publicidad en Xiaohongshu | Su propia cuenta, publicidad a través de un agente autorizado | No |
+| Se dispone a comprar publicidad en Xiaohongshu | Su propia cuenta, tras revisar la lista para entidades extranjeras | No, si su categoría está abierta |
 | Douyin es central en sus planes | Presupuestar una entidad en China continental | Probablemente sí |
 | Contrata en el país, factura en yuanes, tiene existencias | Una sociedad en China continental | Sí |
 | Una agencia le ofrece una cuenta con su licencia | Obtener antes las tres respuestas contractuales | No, pero lea la cláusula 6.1 |
 
 La tabla se resume en una idea sencilla: la cuestión de la entidad es una cuestión de calendario. La mayoría de las marcas extranjeras deberían lanzarse con su propia entidad, comprobar qué despierta el interés de su público y constituir una sociedad en China continental cuando la publicidad, la contratación o las existencias la hagan rentable. [Nuestra guía de los primeros 90 días en las redes sociales chinas](/es/analisis/first-90-days-china-social-media/) describe cómo es ese lanzamiento en la práctica.
 
-Una última advertencia. Las normas de acceso de las plataformas cambian más deprisa que el derecho de sociedades, y lo hacen sin previo aviso: el giro publicitario de Xiaohongshu en febrero de 2026 es el ejemplo más reciente, y nunca figuró en comunicado de prensa alguno. Todo lo que recoge este artículo se contrastó con los documentos originales en septiembre de 2026. Consulte la versión vigente antes de presentar cualquier documento.
+Una última advertencia. Las normas de acceso de las plataformas cambian más deprisa que el derecho de sociedades. Todo lo que recoge este artículo se contrastó con los documentos originales en septiembre y octubre de 2026. Consulte la versión vigente antes de presentar cualquier documento.
 
 ## Preguntas frecuentes
 
@@ -233,7 +234,7 @@ Sí. Tencent dispone de un procedimiento documentado de registro y verificación
 
 ### ¿Qué distingue una cuenta extranjera de una de China continental?
 
-Sobre todo la rapidez, la escala y lo que se puede contratar. En WeChat, una entidad de China continental obtiene la verificación en 1 a 3 días laborables, frente a 7 a 15. En Weibo, el formulario de autoservicio exige un código unificado de crédito social que solo tienen las empresas de China continental, y una misma licencia china puede amparar varias cuentas de empresa. La diferencia más marcada está en la publicidad: desde febrero de 2026, los anunciantes extranjeros en Xiaohongshu deben pasar por un agente autorizado.
+Sobre todo la rapidez, la escala y lo que se puede contratar. En WeChat, una entidad de China continental obtiene la verificación en 1 a 3 días laborables, frente a 7 a 15. En Weibo, el formulario de autoservicio exige un código unificado de crédito social que solo tienen las empresas de China continental, y una misma licencia china puede amparar varias cuentas de empresa. La diferencia más marcada está en la publicidad: Xiaohongshu aplica a los anunciantes extranjeros una lista de admisión por sectores propia, y algunas categorías todavía no están abiertas para ellos.
 
 ### ¿Es segura una cuenta a nombre de la agencia?
 

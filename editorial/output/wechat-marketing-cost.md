@@ -523,10 +523,8 @@ TABLES:
      the page these can render as three cards, one per column, with the
      same rows. No agency figure in any card: each points to the rate card.
 CHARTS: none. No sourced series exists to chart.
-SCREENSHOTS: optional. A WeChat Official Account profile with the follow
-  button and a Mini Program card, and a WeCom customer list. Capture from a
-  test or client account with written permission; blur names, avatars and
-  any third-party brand. Annotations in English, ink and vermillion only.
+SCREENSHOTS: none. The pipeline cannot capture live accounts; the tables
+  carry the comparison (SPEC, settled fallbacks).
 DOWNLOADS: none
 INTERNAL LINKS:
   "our WeChat advertising guide" (advertising section) -> /insights/wechat-advertising-formats-costs/
@@ -537,10 +535,9 @@ INTERNAL LINKS:
   "Our WeChat agency page" (agency fees section) -> /wechat-agency/
   IN-LINKS to add on publish, per the brief: from the cost pillar
   /insights/china-social-media-marketing-cost/ (its WeChat setup and Media
-  spend sections) and from /insights/wechat-advertising-formats-costs/.
-  Note for the publish step: /insights/wechat-advertising-formats-costs/
-  (April 2026) gives WeChat local promotion at 300 yuan a day; Tencent's
-  product page says 1,000 yuan a day, which this article uses. Correct the
-  older article or flag it when adding the in-link.
-CLIENT SIGN-OFF NEEDED: none. No client figures used.
+  spend sections) and from /insights/wechat-advertising-formats-costs/, in
+  every locale where the source page exists. The older advertising article's
+  local promotion floor was corrected to Tencent's 1,000 yuan a day on
+  2026-10-02, so the two pages agree.
+CLIENT FIGURES: none. No client figures used.
 -->

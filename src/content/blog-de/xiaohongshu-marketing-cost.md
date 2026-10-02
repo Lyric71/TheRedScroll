@@ -4,6 +4,7 @@ description: "Sechs Kostenposten. Für drei gibt es eine Zahl von der Plattform 
 metaTitle: "Xiaohongshu-Marketing: die Kosten 2026"
 metaDescription: "Verifizierung, Content, KOC-Seeding, KOL-Honorare, Werbebudget, Agenturhonorar: was Xiaohongshu-Marketing 2026 wirklich kostet, mit drei Rechenbeispielen."
 publishDate: 2026-09-14
+updatedDate: 2026-10-02
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Strategie"
@@ -23,7 +24,7 @@ trägt Quelle und Datum.*
 | 2. Content-Produktion | Kein Plattformpreis, dazu 10 % Marktplatzgebühr | Niaoge Biji, 2022 |
 | 3. KOC-Seeding | 20 bis 60 Dollar je Beitrag | Long Advisory, 2026 |
 | 4. KOL-Honorare | 10.000 bis 35.000 Dollar je Kampagne | Long Advisory, 2026 |
-| 5. Werbung | Ab 75 Yuan im Self-Service; die Einzahlung fürs Werbekonto legt Ihr Agent fest | Woshipm, 2026 |
+| 5. Werbung | Ab 75 Yuan im Self-Service; keine veröffentlichte Mindesteinzahlung fürs Werbekonto | Woshipm, 2026 |
 | 6. Agenturhonorar | Veröffentlicht auf [der Preisseite von TheRedScroll](/de/preise/) | TheRedScroll |
 
 Die Dollarbeträge sind gerundet, umgerechnet zu etwa sieben Yuan je Dollar.
@@ -51,7 +52,7 @@ Je Stück billig, in der Koordination teuer.
 Dieser Posten ist es, der Launch-Budgets verschlingt.
 
 **Werbung** ist Geld an die Plattform, entweder über das
-Self-Service-Boost-Tool oder über Jiguang (聚光), die Anzeigenplattform.
+Self-Service-Boost-Tool oder über Juguang (聚光), die Anzeigenplattform.
 
 Bleibt **das Agenturhonorar** für Strategie, chinesische Texte,
 Creator-Auswahl, Anzeigensteuerung und Reporting.
@@ -257,22 +258,24 @@ ihre chinesische Kreation überhaupt trägt, ist das schon das ganze erste
 Experiment. Sechs Beiträge veröffentlichen, jeden mit dem Mindestbetrag
 anschieben, und beobachten, welchen der Feed aufnimmt.
 
-Das große Geld läuft über Jiguang (聚光), die Gebotsplattform hinter [Such-
-und Feed-Anzeigen](/de/analysen/xiaohongshu-advertising-formats-costs/). Für ausländische Werbetreibende hat sich diese Tür in
-diesem Jahr verändert.
+Das große Geld läuft über Juguang (聚光), die Gebotsplattform hinter [Such-
+und Feed-Anzeigen](/de/analysen/xiaohongshu-advertising-formats-costs/). Ausländischen Werbetreibenden wird oft erzählt,
+ohne Agenten gehe es nicht. Ein offizielles Dokument von Xiaohongshu verlangt
+das nicht.
 
-> Seit dem 2. Februar 2026 können ausländische Händler kein Jiguang-Konto
-> mehr selbst eröffnen. Sie beantragen es über einen autorisierten
-> Xiaohongshu-Agenten, der ihre Unterlagen prüft, bevor er sie bei der
-> Plattform einreicht.
-> Quelle: Ziyouxing Studio (自由行Studio), Leitfaden zu Xiaohongshu Jiguang für das Ausland, August 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
+> Kein offizielles Dokument von Xiaohongshu schreibt ausländischen
+> Werbetreibenden einen Agenten vor. Bei der Registrierung bietet Juguang zwei
+> Kontotypen an: Werbetreibender und Agentur. Für ausländische Unternehmen
+> gilt eine eigene Branchenliste, und manche Kategorien stehen ihnen noch
+> nicht offen.
+> Quelle: Ziyouxing Studio (自由行Studio), Leitfaden zu Xiaohongshu Juguang, aktualisiert im September 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
 
-Eine Zahl für die Ersteinzahlung drucken wir nicht, und wer es tut, dem
-sollten Sie misstrauen. Die kursierenden Beträge stammen aus Blogs von
-Wiederverkäufern, weichen je nach Agent voneinander ab und werden von der
-Plattform nirgends veröffentlicht. Lassen Sie sich die Schwelle von dem
-Agenten, der Ihr Konto eröffnet, schriftlich geben, bevor Sie irgendetwas
-unterschreiben.
+Prüfen Sie also Ihre Kategorie, bevor Sie ein Budget planen. Eine Zahl für
+die Ersteinzahlung drucken wir nicht, und wer es tut, dem sollten Sie
+misstrauen. Die kursierenden Beträge stammen aus Blogs von Wiederverkäufern,
+weichen je nach Agent voneinander ab und werden von der Plattform nirgends
+veröffentlicht. Eröffnet ein Agent Ihr Konto, lassen Sie sich seine Schwelle
+schriftlich geben, bevor Sie irgendetwas unterschreiben.
 
 Einen veröffentlichten Richtwert für CPC oder CPM auf Xiaohongshu gibt es
 ebenso wenig. Die Gebote hängen von Ihrem Ziel und Ihrem Wettbewerb ab. Der
@@ -328,8 +331,8 @@ besten Beiträge mit dem Mindestbetrag von 75 Yuan anschieben. Plattform und
 Creator zusammen kosten im Quartal rund 600 bis 1.500 Dollar.
 
 **Ein laufender Monat.** Vierzig KOC-Beiträge zu zehn Suchbegriffen, 800
-bis 2.400 Dollar plus 10 % Gebühr, dazu laufendes Jiguang-Budget in der
-Höhe, die die Untergrenze Ihres Agenten zulässt. Noch kein KOL. Auf dieser
+bis 2.400 Dollar plus 10 % Gebühr, dazu laufendes Juguang-Budget ab der
+bei der Kontoeröffnung vereinbarten Ersteinzahlung. Noch kein KOL. Auf dieser
 Stufe lernen Sie, welche Suchbegriffe konvertieren.
 
 **Ein Launch-Quartal.** Eine Mikro-KOL-Kampagne für 10.000 bis 35.000
@@ -371,7 +374,7 @@ Ein versteckter Beitrag kostet das volle Creator-Honorar und bringt nichts.
 oben. Marken, die das erste Angebot annehmen, bezahlen die Inflation des
 ganzen Marktes.
 
-**Reichweite kaufen, bevor die Kreation trägt.** Jiguang-Geld für einen
+**Reichweite kaufen, bevor die Kreation trägt.** Juguang-Geld für einen
 Beitrag, der sich organisch nicht bewährt hat, kauft teuer die Erkenntnis,
 dass der Beitrag schlecht ist. Genau dafür gibt es den 75-Yuan-Boost.
 
@@ -395,10 +398,11 @@ gesondert.
 
 Fünfundsiebzig Yuan, etwa elf Dollar, kaufen einen Auftrag im
 Self-Service-Boost-Tool, und zwar nur für einen Beitrag aus den letzten 90
-Tagen. Die Gebotsplattform Jiguang (聚光) folgt anderen Regeln: Seit Februar
-2026 eröffnen ausländische Werbetreibende ihr Konto über einen autorisierten
-Agenten, und dieser Agent legt die Ersteinzahlung fest. Lassen Sie sich die
-Zahl schriftlich geben, bevor Sie unterschreiben.
+Tagen. Die Gebotsplattform Juguang (聚光) veröffentlicht keine
+Mindesteinzahlung. Keine offizielle Regel zwingt ausländische Werbetreibende
+zu einem Agenten, doch manche Kategorien stehen ausländischen Unternehmen
+noch nicht offen. Prüfen Sie daher zuerst Ihre. Eröffnet ein Agent das
+Konto, lassen Sie sich seine Zahl schriftlich geben, bevor Sie unterschreiben.
 
 ### Was kostet die Blue-V-Verifizierung?
 

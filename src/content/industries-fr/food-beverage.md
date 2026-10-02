@@ -4,6 +4,7 @@ description: "En Chine, un produit alimentaire se vend deux fois : au consommate
 metaTitle: "Marketing alimentaire et boissons en Chine"
 metaDescription: "Comment les marques alimentaires percent en Chine : distribution et restauration, étiquetage, allégations, recettes, Douyin et temps forts de l'année."
 publishDate: 2026-10-02
+updatedDate: 2026-10-02
 author: "TheRedScroll"
 platforms: ["rednote", "douyin", "wechat"]
 category: "Secteur"
@@ -125,7 +126,7 @@ national », « niveau le plus élevé » et « meilleur » de toute annonce.
 
 > Une publicité ne peut employer ni « 国家级 » (niveau national), ni « 最高级 »
 > (niveau le plus élevé), ni « 最佳 » (le meilleur).
-> Source: Advertising Law of the People's Republic of China (中华人民共和国广告法), Article 9, text as amended 2021. https://www.gov.cn/guoqing/2021-10/29/content_5647620.htm
+> Source: Advertising Law of the People's Republic of China (中华人民共和国广告法), Article 9, text as amended October 2018. https://www.gov.cn/guoqing/2021-10/29/content_5647620.htm
 
 Voici les allégations sur lesquelles nos clients nous interrogent le plus
 souvent, et ce qu'il en reste une fois la réglementation appliquée.

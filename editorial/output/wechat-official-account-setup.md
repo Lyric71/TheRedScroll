@@ -196,8 +196,6 @@ breaks the naming rules gets sent back for a change.
 The documents list points to the rest: a phone bill that doesn't belong to the
 named contact, and a brand name without the trademark paper behind it.
 
-<!-- TODO: first-party data. The brief asks for rejection reasons from our own submission history. No count, period or breakdown is published on the site or logged in the ledger. Add them here, labeled as ours with sample size and period, once cleared. -->
-
 Then plan for next year. Verification is not a one-time fee.
 
 > If the annual review lapses or fails, the account loses its verification
@@ -465,23 +463,9 @@ TABLES:
      only. No TheRedScroll price, per-item rate or tier name.
 CHARTS:
   None. The page is a procedure, not a trend.
-SCREENSHOTS:
-  Six to eight numbered screenshots of the overseas registration flow on
-  mp.weixin.qq.com, matching steps 1 to 8: (1) the 立即注册 button on the
-  platform home page; (2) the registration-region and account-type screen
-  with the overseas region selected and only 服务号 available; (3) the account
-  information form; (4) the 信息登记 (information registration) screen;
-  (5) the verification entry under settings, with the service agreement;
-  (6) the document upload screen; (7) the naming-rule confirmation; (8) the
-  invoice and payment screen. Capture from a test or client account only
-  with written clearance. Blur the email address, the account name if it is
-  a client's, the contact person's name, phone number and ID, and any order
-  number. Do not show a fee amount on screen; the body carries the fee with
-  its citation.
-DOWNLOADS:
-  Optional, ungated: the document checklist (table 2 plus the five common
-  items from the Documents blockquote) as a one-page PDF. Same copy, no new
-  claims.
+SCREENSHOTS: none. The pipeline cannot capture a live registration flow, so
+  the numbered steps and table 2 carry it in text (SPEC, settled fallbacks).
+DOWNLOADS: none (SPEC, settled fallbacks).
 INTERNAL LINKS:
   "our WeChat agency page" (Step by step, menu section, cost section)
     -> /wechat-agency/
@@ -492,9 +476,9 @@ INTERNAL LINKS:
   "CTA: Book a call" -> /contact/
   IN-LINKS to add on publish, per the brief: from the WeChat cost page
     (/insights/wechat-marketing-cost/, publishing 2026-10-05),
-    /insights/what-is-wecom/ and /insights/sell-on-wechat/. EN only unless
-    a locale pass is approved separately.
-CLIENT SIGN-OFF NEEDED: none for the copy. No client named, no client
-  figure used. The registration screenshots need clearance from whoever owns
-  the account they are taken from.
+    /insights/what-is-wecom/ and /insights/sell-on-wechat/, in every locale
+    where the source page exists.
+CLIENT FIGURES: none. No client named, no client figure used. Rejection
+  reasons come from Tencent's published grounds only; none of our own are
+  logged in the ledger (SPEC, settled fallbacks).
 -->

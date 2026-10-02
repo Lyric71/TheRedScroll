@@ -4,6 +4,7 @@ description: "In den meisten Fällen nicht, jedenfalls nicht zum Start. Drei der
 metaTitle: "Social Media in China: Gesellschaft vor Ort nötig?"
 metaDescription: "WeChat, Xiaohongshu, Douyin, Weibo: Was jede Plattform ausländischen Marken ohne chinesische Gesellschaft erlaubt und wo die echten Grenzen liegen."
 publishDate: 2026-09-24
+updatedDate: 2026-10-02
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Strategie"
@@ -12,7 +13,7 @@ featured: false
 featuredImage: "/images/blog/chinese-entity-social-media.webp"
 ---
 
-An dieser Frage scheitert so manches erste Gespräch. Die Antworten im Netz widersprechen einander, viele sind schlicht überholt: Allein im Februar 2026 hat Xiaohongshu den Zugang ausländischer Werbekunden neu geregelt. Deshalb hier das Wesentliche, Plattform für Plattform, abgeglichen mit dem, was die Betreiber selbst veröffentlichen.
+An dieser Frage scheitert so manches erste Gespräch. Die Antworten im Netz widersprechen einander. Deshalb hier das Wesentliche, Plattform für Plattform, abgeglichen mit dem, was die Betreiber selbst veröffentlichen.
 
 | Plattform | Was die Plattform festlegt | Was Sie einreichen | Verifizierungsgebühr |
 |---|---|---|---|
@@ -25,7 +26,7 @@ Zwei Einschränkungen vorweg. Ein Konto zu besitzen heißt noch lange nicht, all
 
 Dieser Beitrag dient der allgemeinen Information und ersetzt keine Rechtsberatung. Gesellschaftsstruktur, Steuern und Einfuhrregeln hängen von den Verhältnissen Ihres Unternehmens ab. Ein in China zugelassener Anwalt sollte sie prüfen, bevor Sie sich binden.
 
-Alle Quellen dieses Beitrags wurden im September 2026 zweimal geprüft.
+Alle Quellen dieses Beitrags wurden im September oder Oktober 2026 zweimal geprüft.
 
 ## Was eine ausländische Gesellschaft auf WeChat darf
 
@@ -67,12 +68,12 @@ Die Prüfdauer ist sogar veröffentlicht, was Seltenheitswert hat.
 > Nach Einreichung eines Unternehmensantrags meldet sich innerhalb von 1 Arbeitstag ein Prüfer, und die Prüfung ist im Schnitt nach 4 bis 7 Arbeitstagen abgeschlossen. Ein einzelner Prüfauftrag gilt 30 Tage.
 > Quelle: Xiaohongshu (小红书), Produktleitfaden professionelles Konto, Plattformdokumentation, bestätigt im September 2026. https://fe-video-qc.xhscdn.com/fe-platform/68e374e4257bd30bc07eed15c06cb8b9a51f971b.pdf
 
-Danach geht die Schere auf. Das Konto darf durchaus auf eine ausländische Gesellschaft laufen. Werbung darüber zu schalten steht auf einem anderen Blatt: Seit Anfang 2026 ist der Weg in Selbstbedienung versperrt. Die Plattform selbst hat diese Änderung nicht bekanntgemacht. Das folgende Zitat stammt deshalb aus einem Fachleitfaden und nicht aus der Plattformdokumentation, und es ist die schwächste Quelle dieses Beitrags. Verstehen Sie es als Anlass, Ihre Agentur zu fragen, welchen Zugang sie tatsächlich hat, nicht als letztes Wort.
+Werbung zu schalten ist ein eigener Schritt, mit eigenen Regeln für ausländische Gesellschaften. Die Quelle dafür ist ein Fachleitfaden, keine Plattformdokumentation.
 
-> Seit dem 2. Februar 2026 werden ausländische Händler nur noch über einen autorisierten Agenten zur Werbeplattform Jiguang zugelassen, eine Kontoeröffnung in Selbstbedienung gibt es nicht mehr.
-> Quelle: Ziyouxing Studio (自由行Studio), Xiaohongshu-Jiguang-Leitfaden für das Ausland, August 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
+> Juguang (聚光), die Werbeplattform von Xiaohongshu, bietet bei der Registrierung ein Werbetreibenden- und ein Agenturkonto an. Kein offizielles Dokument von Xiaohongshu verpflichtet ausländische Werbetreibende, über einen Agenten zu gehen. Für ausländische Gesellschaften gilt eine eigene Branchenliste zur Zulassung, und einige Kategorien sind für sie noch nicht geöffnet.
+> Quelle: Ziyouxing Studio (自由行Studio), Leitfaden zu Xiaohongshu Juguang, aktualisiert im September 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
 
-Dieselbe Trennlinie verläuft durch jede Plattform in diesem Beitrag. Organische Inhalte dürfen Sie veröffentlichen. Erst bei bezahlter Reichweite kommt es auf eine Präsenz auf dem Festland an, ob die eigene oder die eines Dritten.
+Gleichen Sie Ihre Kategorie also mit dieser Liste ab, bevor Sie bezahlte Reichweite einplanen. Eine Agentur zu beauftragen, ist eine kaufmännische Entscheidung, keine Zulassungsbedingung.
 
 Auf den beiden Plattformen, die am meisten offenlegen, fällt der Nachteil der ausländischen Gesellschaft kleiner aus, als die meisten Agenturen glauben machen.
 
@@ -83,9 +84,9 @@ Auf den beiden Plattformen, die am meisten offenlegen, fällt der Nachteil der a
 | WeChat-Gebühr | 300 Yuan im Jahr | 99 US-Dollar im Jahr |
 | Xiaohongshu-Unterlagen | Gewerbelizenz | BR oder CR, gestempelte Übersetzung |
 | Xiaohongshu-Antrag | App oder Desktop | Nur Desktop |
-| Xiaohongshu-Werbung | Selbstbedienung | Über einen autorisierten Agenten |
+| Xiaohongshu-Werbung | Reguläre Branchenregeln | Eigene Liste, einige Kategorien geschlossen |
 
-Keine dieser Zeilen steht einem Markteintritt im Weg. Sie kosten ein paar Wochen auf WeChat und einen Anruf, wenn es um Xiaohongshu-Werbung geht. Das ist etwas grundlegend anderes als die Pflicht, eine Gesellschaft zu gründen.
+Keine dieser Zeilen steht einem Markteintritt im Weg. Sie kosten ein paar Wochen auf WeChat und einen Blick auf die Branchenliste, wenn es um Xiaohongshu-Werbung geht. Das ist etwas grundlegend anderes als die Pflicht, eine Gesellschaft zu gründen.
 
 ## Douyin und Weibo: Hier wird es schwieriger
 
@@ -216,14 +217,14 @@ Eine Agentur, die nicht alle drei schriftlich beantworten kann, hat damit bereit
 |---|---|---|
 | Sie testen die Nachfrage, noch ohne Umsatz in China | WeChat Service Account und Xiaohongshu, beide auf Ihre eigene Gesellschaft | Nein |
 | Sie verkaufen an Verbraucher, ohne Lager auf dem Festland | Grenzüberschreitender Einzelhandelsimport, innerhalb der Grenzen von 5.000 und 26.000 Yuan | Nein |
-| Sie wollen Werbung auf Xiaohongshu schalten | Ihr eigenes Konto, Werbung über einen autorisierten Agenten | Nein |
+| Sie wollen Werbung auf Xiaohongshu schalten | Ihr eigenes Konto, nach Abgleich mit der Branchenliste für ausländische Gesellschaften | Nein, sofern Ihre Kategorie offen ist |
 | Douyin steht im Zentrum der Planung | Eine Gesellschaft auf dem Festland einkalkulieren | Wahrscheinlich ja |
 | Sie stellen vor Ort ein, fakturieren in Yuan, halten Lager | Eine Gesellschaft auf dem Festland | Ja |
 | Eine Agentur bietet Ihnen ein Konto auf ihre Lizenz an | Zuerst die drei Vertragsfragen klären | Nein, aber lesen Sie Klausel 6.1 |
 
 Unterm Strich lässt sich die Tabelle auf einen Satz bringen. Die Frage nach der Gesellschaft ist eine Frage des Zeitpunkts. Die meisten ausländischen Marken sollten mit ihrer eigenen Gesellschaft starten, herausfinden, worauf ihr Publikum anspricht, und eine Gesellschaft auf dem Festland erst eintragen, wenn Werbung, Personal oder Lagerbestand sie rentabel machen. [Unser Leitfaden zu den ersten 90 Tagen in chinesischen sozialen Medien](/de/analysen/first-90-days-china-social-media/) zeigt, wie ein solcher Start konkret aussieht.
 
-Ein Vorbehalt zu alledem. Die Zugangsregeln der Plattformen ändern sich schneller als das Gesellschaftsrecht, und zwar ohne Vorankündigung: Die Umstellung der Xiaohongshu-Werbung im Februar 2026 ist das jüngste Beispiel, eine Pressemitteilung dazu gab es nie. Alle Angaben wurden im September 2026 an den Originaldokumenten geprüft. Sehen Sie sich den aktuellen Stand an, bevor Sie etwas einreichen.
+Ein Vorbehalt zu alledem. Die Zugangsregeln der Plattformen ändern sich schneller als das Gesellschaftsrecht. Alle Angaben wurden im September und Oktober 2026 an den Originaldokumenten geprüft. Sehen Sie sich den aktuellen Stand an, bevor Sie etwas einreichen.
 
 ## Häufige Fragen
 
@@ -233,7 +234,7 @@ Ja. Tencent unterhält ein dokumentiertes Registrierungs- und Verifizierungsverf
 
 ### Worin unterscheidet sich ein ausländisches Konto von einem Festlandkonto?
 
-Vor allem in Tempo, Umfang und in dem, was sich zukaufen lässt. Eine Gesellschaft vom Festland wird auf WeChat in 1 bis 3 Arbeitstagen verifiziert, nicht in 7 bis 15. Auf Weibo verlangt das Selbstbedienungsformular einen einheitlichen Sozialkreditcode, über den nur Festlandunternehmen verfügen, und eine einzige Festlandlizenz kann mehrere Unternehmenskonten tragen. Am schärfsten fällt der Unterschied bei den Werbeplattformen aus: Ausländische Werbekunden auf Xiaohongshu müssen seit Februar 2026 über einen autorisierten Agenten gehen.
+Vor allem in Tempo, Umfang und in dem, was sich zukaufen lässt. Eine Gesellschaft vom Festland wird auf WeChat in 1 bis 3 Arbeitstagen verifiziert, nicht in 7 bis 15. Auf Weibo verlangt das Selbstbedienungsformular einen einheitlichen Sozialkreditcode, über den nur Festlandunternehmen verfügen, und eine einzige Festlandlizenz kann mehrere Unternehmenskonten tragen. Am schärfsten fällt der Unterschied bei den Werbeplattformen aus: Xiaohongshu führt für ausländische Werbekunden eine eigene Branchenliste zur Zulassung, und einige Kategorien sind für sie noch nicht geöffnet.
 
 ### Ist ein Konto auf die Agentur sicher?
 

@@ -497,12 +497,7 @@ INTERNAL LINKS:
     from /insights/xiaohongshu-marketing-foreign-brands/ and from
     /insights/first-90-days-china-social-media/, EN only unless a locale pass
     is approved separately.
-CLIENT SIGN-OFF NEEDED:
-  None used. TODO: client sign-off. The brief's "Statistics to source"
-  section asks for rejection reasons drawn from our own submission history,
-  labeled as ours. No such entry exists in sources/verified-sources.md and
-  nothing was estimated. The rejection section is built entirely on grounds
-  the platform publishes. To add the first-party version later, the ledger
-  needs: number of applications submitted, period, the count by rejection
-  reason, exclusions and written clearance. See logs/2026-09-18.md.
+CLIENT FIGURES: none. The brief asked for rejection reasons from our own
+  submission history; none are logged in the ledger, so the rejection section
+  stands on the grounds the platform publishes (SPEC, settled fallbacks).
 -->

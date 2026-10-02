@@ -37,7 +37,7 @@ They override any conflicting rule inside the skill.
 
 ## The angle
 
-BINGO answers cost questions inside a 27-question FAQ. A dedicated page beats a buried FAQ answer every time. We already have a WeChat ad formats article to link from, so this page inherits relevance.
+Competitors bury cost answers inside long FAQs. A dedicated page beats a buried FAQ answer every time. Never name a competitor agency. (Amended 2026-10-02: research proved the original line wrong. See editorial/CLAUDE.md, "No TODO leaves a run".) We already have a WeChat ad formats article to link from, so this page inherits relevance.
 
 ## Section outline
 
@@ -62,7 +62,7 @@ still current, reuse the logged citation instead of researching again. If you
 find a new figure, append it to that ledger before you finish.
 
 - Official Account verification fee, cite Tencent documentation
-- Ad account deposit, cite the platform
+- Ad account deposit: Tencent publishes no first deposit; account opening is free (腾讯广告免费开户) and the daily budget floors are on the Tencent Ads product page. Say so; never use agent figures. (Amended 2026-10-02: research proved the original line wrong. See editorial/CLAUDE.md, "No TODO leaves a run".)
 - Moments ad daily minimum, cite the platform or a dated agency source
 - Our pricing page, referenced by name only. Never quote monthly figures, per-item rates or tier names (STYLE_GUIDE.md 6.4)
 
@@ -78,7 +78,7 @@ embed images in body copy.
 - Master WeChat cost table
 - Mini Program cost tiers table: simple, commerce, custom
 - Three worked budget cards
-- Feature image: a QR code printed on card stock, shallow focus. China rule: set the scene in China and show Chinese social platforms on screen (WeChat, Xiaohongshu, Douyin or Weibo interface on a phone, laptop or studio monitor); set in a typical Chinese city, varied from article to article and not only Shanghai, only Chinese people in frame, candid normal-life photo in crisp sharp focus with legible screens (never blur, smudges or noise), no AI polish; this rule wins over the subject hint
+- Feature image: a QR code printed on card stock, the whole frame in sharp focus (amended 2026-10-02: "shallow focus" contradicted the sharpness rule). China rule: set the scene in China and show Chinese social platforms on screen (WeChat, Xiaohongshu, Douyin or Weibo interface on a phone, laptop or studio monitor); set in a typical Chinese city, varied from article to article and not only Shanghai, only Chinese people in frame, candid normal-life photo in crisp sharp focus with legible screens (never blur, smudges or noise), no AI polish; this rule wins over the subject hint
 
 ## Tables required
 

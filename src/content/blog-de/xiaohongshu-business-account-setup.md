@@ -4,6 +4,7 @@ description: "Für ein verifiziertes Xiaohongshu-Unternehmenskonto brauchen Sie 
 metaTitle: "Xiaohongshu-Unternehmenskonto einrichten"
 metaDescription: "Xiaohongshu-Unternehmenskonto für ausländische Firmen: Unterlagen, Blue-V-Verifizierung, Gebühren, Ablehnungsgründe und Prüfdauer."
 publishDate: 2026-09-22
+updatedDate: 2026-10-02
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Plattformen"
@@ -27,7 +28,7 @@ Das sollte bereitliegen, bevor Sie anfangen.
 
 Die Gebühr ist klein, die Prüfung nicht. Rechnen Sie mit vier bis sieben Arbeitstagen für einen sauberen Antrag und mit mehr beim ersten Versuch. Denn die Plattform kontrolliert Ihre Gesellschaft, Ihren Kontonamen und Ihre Verifizierungsangaben getrennt, und jeder dieser drei Punkte reicht, damit die Akte zurückkommt.
 
-Alle Quellen dieses Beitrags wurden im September 2026 zweimal geprüft.
+Alle Quellen dieses Beitrags wurden im September oder Oktober 2026 zweimal geprüft.
 
 ## Schritt 1: den Kontotyp festlegen, bevor Sie etwas registrieren
 
@@ -69,7 +70,7 @@ Bei einer Gesellschaft auf dem Festland heißt das: die Gewerbelizenz mit der ei
 > Incorporation hoch. Hongkonger Gesellschaften brauchen beides.
 > Registerunterlagen, die nicht auf Chinesisch vorliegen, benötigen eine
 > chinesische Übersetzung mit dem Firmenstempel des Markeninhabers.
-> Quelle: Xiaohongshu (小红书), Leitfaden zur Registrierung und Kontoeröffnung auf der Jiguang-Plattform, Plattformdokumentation, bestätigt im September 2026. https://fe-video-qc.xhscdn.com/fe-platform/cc8a5f81ddb6d91d6be9dfb34e62b49b999f234b/%E8%81%9A%E5%85%89%E5%B9%B3%E5%8F%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%BC%80%E6%88%B7%E6%B5%81%E7%A8%8B.pdf
+> Quelle: Xiaohongshu (小红书), Leitfaden zur Registrierung und Kontoeröffnung auf der Juguang-Plattform, Plattformdokumentation, bestätigt im September 2026. https://fe-video-qc.xhscdn.com/fe-platform/cc8a5f81ddb6d91d6be9dfb34e62b49b999f234b/%E8%81%9A%E5%85%89%E5%B9%B3%E5%8F%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%BC%80%E6%88%B7%E6%B5%81%E7%A8%8B.pdf
 
 Beachten Sie die zwei verschiedenen Stempel. Für die Kontoverifizierung braucht ein Dokument in einer anderen Sprache als Chinesisch oder Englisch eine Übersetzung mit dem Stempel eines Übersetzungsbüros. Für die Werbequalifikation trägt die Übersetzung der Registerunterlage den eigenen Stempel des Markeninhabers. Das sind zwei Anforderungen, und sie ersetzen einander nicht. Lassen Sie beide Fassungen in einem Durchgang anfertigen.
 
@@ -81,7 +82,7 @@ Passt der Wunschname auf eine eingetragene Marke, laden Sie die Urkunde hoch. F�
 > benötigt den Empfangsbescheid, und die Anmeldung muss mindestens drei
 > Monate zurückliegen, gerechnet ab dem gestempelten Empfangsdatum. Eine
 > Marke in Übertragung wird nur von der empfangenden Gesellschaft akzeptiert.
-> Quelle: Xiaohongshu (小红书), Leitfaden zur Registrierung und Kontoeröffnung auf der Jiguang-Plattform, Plattformdokumentation, bestätigt im September 2026. https://fe-video-qc.xhscdn.com/fe-platform/cc8a5f81ddb6d91d6be9dfb34e62b49b999f234b/%E8%81%9A%E5%85%89%E5%B9%B3%E5%8F%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%BC%80%E6%88%B7%E6%B5%81%E7%A8%8B.pdf
+> Quelle: Xiaohongshu (小红书), Leitfaden zur Registrierung und Kontoeröffnung auf der Juguang-Plattform, Plattformdokumentation, bestätigt im September 2026. https://fe-video-qc.xhscdn.com/fe-platform/cc8a5f81ddb6d91d6be9dfb34e62b49b999f234b/%E8%81%9A%E5%85%89%E5%B9%B3%E5%8F%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%BC%80%E6%88%B7%E6%B5%81%E7%A8%8B.pdf
 
 Diese Dreimonatsregel erwischt Marken, die eine chinesische Marke anmelden und in derselben Woche Konten eröffnen wollen. Haben Sie noch nicht angemeldet, melden Sie jetzt an und lesen Sie in der Wartezeit [unseren Leitfaden zum Xiaohongshu-Marketing für ausländische Marken](/de/analysen/xiaohongshu-marketing-foreign-brands/).
 
@@ -149,7 +150,7 @@ Marken, die eine Leistung und kein Produkt verkaufen, haben keinen Shop. Sie hab
 
 ## Schritt 5: das Werbekonto anbinden
 
-Bezahlte Reichweite auf Xiaohongshu (小红书) läuft über Jiguang (聚光). Damit anzufangen, geht nicht. Das professionelle Konto muss bestehen und verifiziert sein, bevor die Werbeplattform mit Ihnen spricht.
+Bezahlte Reichweite auf Xiaohongshu (小红书) läuft über Juguang (聚光). Damit anzufangen, geht nicht. Das professionelle Konto muss bestehen und verifiziert sein, bevor die Werbeplattform mit Ihnen spricht.
 
 > Die Reihenfolge lautet: das App-Konto registrieren und eine Telefonnummer
 > hinterlegen, sich mit dieser Nummer auf der Werbeplattform anmelden, ein
@@ -157,7 +158,7 @@ Bezahlte Reichweite auf Xiaohongshu (小红书) läuft über Jiguang (聚光). D
 > professionellen Kontos abschließen und danach die Werbequalifikationen auf
 > der Werbeplattform einreichen. Die Kreation wird erst geprüft, wenn die
 > Qualifikationen durch sind.
-> Quelle: Xiaohongshu (小红书), Leitfaden zur Registrierung und Kontoeröffnung auf der Jiguang-Plattform, Plattformdokumentation, bestätigt im September 2026. https://fe-video-qc.xhscdn.com/fe-platform/cc8a5f81ddb6d91d6be9dfb34e62b49b999f234b/%E8%81%9A%E5%85%89%E5%B9%B3%E5%8F%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%BC%80%E6%88%B7%E6%B5%81%E7%A8%8B.pdf
+> Quelle: Xiaohongshu (小红书), Leitfaden zur Registrierung und Kontoeröffnung auf der Juguang-Plattform, Plattformdokumentation, bestätigt im September 2026. https://fe-video-qc.xhscdn.com/fe-platform/cc8a5f81ddb6d91d6be9dfb34e62b49b999f234b/%E8%81%9A%E5%85%89%E5%B9%B3%E5%8F%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%BC%80%E6%88%B7%E6%B5%81%E7%A8%8B.pdf
 
 Zwei kleine Anforderungen bringen an dieser Stelle Anträge zu Fall. Ihre Branchenkategorie muss zum Geschäftszweck auf Ihren Registerunterlagen passen, nicht zu der Kategorie, die Sie am treffendsten finden. Und Ihr Profilbild muss das Markenlogo sein, ohne Person darauf.
 
@@ -165,17 +166,14 @@ Zwei kleine Anforderungen bringen an dieser Stelle Anträge zu Fall. Ihre Branch
 > Produktverkauf, Lead-Erfassung und Livestream-Werbung. Kontoguthaben und
 > Tagesbudget des Kontos sind mit dem Promotionscenter des professionellen
 > Kontos geteilt.
-> Quelle: Xiaohongshu (小红书), Produkthandbuch der Jiguang-Plattform, Plattformdokumentation, bestätigt im September 2026. https://fe-video-qc.xhscdn.com/fe-platform/37f82988d0e9273cd645bb819c37a4e0f697bc70.pdf
+> Quelle: Xiaohongshu (小红书), Produkthandbuch der Juguang-Plattform, Plattformdokumentation, bestätigt im September 2026. https://fe-video-qc.xhscdn.com/fe-platform/37f82988d0e9273cd645bb819c37a4e0f697bc70.pdf
 
-Dann die Regel, die 2026 für ausländische Werbetreibende alles verändert hat.
+Bleibt die Frage, die ausländische Werbetreibende am häufigsten stellen: Braucht man für Anzeigen eine Agentur?
 
-> Seit dem 2. Februar 2026 sind ausländische Händler von der
-> Selbstbedienungseröffnung auf der Werbeplattform Jiguang zu einer Zulassung
-> per Einladung gewechselt. Sie müssen den Einladungsweg über eine von
-> Xiaohongshu autorisierte Agentur nehmen.
-> Quelle: Ziyouxing Studio (自由行Studio), Jiguang-Leitfaden für Xiaohongshu im Ausland, aktualisiert im August 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
+> Juguang bietet bei der Registrierung zwei Kontoarten an, Werbetreibender und Agentur. Kein offizielles Dokument von Xiaohongshu verpflichtet ausländische Werbetreibende, über einen Agenten zu gehen. Für ausländische Gesellschaften gilt allerdings eine eigene Branchenliste zur Zulassung, auf der einige Kategorien als noch nicht geöffnet markiert sind.
+> Quelle: Ziyouxing Studio (自由行Studio), Leitfaden zu Xiaohongshu Juguang, aktualisiert im September 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
 
-Eine ausländische Gesellschaft eröffnet ihr Werbekonto also nicht mehr selbst. Eine autorisierte Agentur reicht für sie ein. [Unsere RedNote-Agenturseite](/de/rednote-agentur/) erklärt, wie das auf unserer Seite abläuft. Planen Sie es ein, denn eine Marke, die bezahlte Unterstützung budgetiert und dann einen Mittler braucht, verliert einen Monat.
+Gleichen Sie Ihre Kategorie also mit dieser Liste ab, bevor Sie Mediabudget einplanen. Eine Agentur zu beauftragen, ist eine kaufmännische Entscheidung, keine Zulassungsbedingung. [Unsere RedNote-Agenturseite](/de/rednote-agentur/) erklärt, was wir übernehmen, wenn Sie sich dafür entscheiden.
 
 ## Die fünf Gründe für eine Ablehnung
 
@@ -218,7 +216,7 @@ Weniger, als Sie erwarten, und mehr, als die Plattform an einer einzigen Stelle 
 
 Verifizieren können Sie. Der Unternehmensleitfaden nennt ausländische Gesellschaften sowie solche aus Hongkong, Macau und Taiwan als zugelassen, und die Unterlagenliste der Werbeplattform hat eine Spalte für Sie. Was sich ändert, ist der Weg.
 
-Sie beantragen im Browser, niemals in der App. Sie legen eine Business Registration oder ein Certificate of Incorporation vor statt einer Gewerbelizenz, und beides, wenn Sie eine Hongkonger Gesellschaft sind. Sie fügen Übersetzungen mit dem jeweils richtigen Stempel bei. Sie verkaufen über den grenzüberschreitenden Shopweg statt über einen inländischen. Und seit Februar 2026 erreichen Sie die Werbeplattform über eine autorisierte Agentur, statt das Konto selbst zu eröffnen.
+Sie beantragen im Browser, niemals in der App. Sie legen eine Business Registration oder ein Certificate of Incorporation vor statt einer Gewerbelizenz, und beides, wenn Sie eine Hongkonger Gesellschaft sind. Sie fügen Übersetzungen mit dem jeweils richtigen Stempel bei. Sie verkaufen über den grenzüberschreitenden Shopweg statt über einen inländischen. Und bevor Sie Werbung buchen, gleichen Sie Ihre Branche mit einer eigenen Zulassungsliste für ausländische Gesellschaften ab.
 
 Wirklich weh tut das Fehlen einer chinesischen Gesellschaft bei der Markenkette. Hält Ihre Muttergesellschaft im Ausland die Marke und eröffnet eine andere Gesellschaft das Konto, akzeptiert die Plattform eine Stufe Generalvertretervollmacht und keine weitere. Läuft Ihre Struktur von der Zentrale über das Regionalbüro zum lokalen Händler, kann dieser Händler nicht Kontoinhaber sein. Ändern Sie die Struktur oder melden Sie die Marke vor Ort an. [Unsere Leistung China-Markteintritt](/de/leistungen/markteintritt/) gibt es größtenteils wegen Problemen dieser Form. Ob Sie auf den vier großen Plattformen überhaupt eine chinesische Gesellschaft brauchen, ist eine eigene Frage. [Unsere Analyse zu Social Media in China ohne Gesellschaft vor Ort](/de/analysen/chinese-entity-social-media/) beantwortet sie Plattform für Plattform.
 

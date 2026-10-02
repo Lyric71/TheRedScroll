@@ -4,6 +4,7 @@ description: "账号两周可以上线，中文名的商标却要等上几个月
 metaTitle: "外国品牌落地中国社交媒体：头90天"
 metaDescription: "开户、认证、起中文名、内容排期、第一批线索：外国品牌进入中国社交媒体的头90天，按周拆开来看。"
 publishDate: 2026-09-10
+updatedDate: 2026-10-02
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "策略"
@@ -136,12 +137,12 @@ featuredImage: "/images/blog/first-90-days-china-social-media.webp"
 
 两件事同时铺开。一是小红书的种草：20到40位关键意见消费者（KOC），也就是有几千粉丝的普通用户，通过平台的达人交易平台[蒲公英](/zh/fuwu/daren-yingxiao/)发自己关于产品的笔记，让品类搜索结果里出现真实的使用者。二是在那两三条已经跑出来的笔记后面做一轮付费测试。
 
-对海外公司来说，广告必须走代理商。
+对海外公司来说，开广告账户之前，先要核对类目。
 
-> 自2026年2月2日起，海外商家只能通过授权代理商接入小红书聚光广告平台，不再支持自助开户。
-> 来源：自由行Studio，小红书聚光海外投放指南，2026年8月。https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
+> 小红书没有任何官方文件要求境外广告主必须通过代理商投放。聚光广告平台开户时提供「广告主账号」和「代理商账号」两种身份。境外主体另有一份行业准入清单，部分类目暂未向其开放。
+> 来源：自由行Studio，小红书聚光开户指南，2026年9月更新。https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
 
-代理商开户这一步因此要写进第9周的计划，而它设的预存款属于广告费，按实际成本结算，附上平台发票。种草和测试各要花多少，我们在[2026年中国社交媒体营销的成本](/zh/guandian/china-social-media-marketing-cost/)一文里算过；TheRedScroll自己的价目表，放在[价格页](/zh/jiage/)上。
+核对类目、开通聚光账户，这两步因此要写进第9周的计划。预存款属于广告费，按实际成本结算，附上平台发票。种草和测试各要花多少，我们在[2026年中国社交媒体营销的成本](/zh/guandian/china-social-media-marketing-cost/)一文里算过；TheRedScroll自己的价目表，放在[价格页](/zh/jiage/)上。
 
 第一条线索一般就出现在这个窗口。有人搜了品类，先看到一条种草笔记，再看到一条品牌笔记，随后给账号或主页里的企业微信联系人留了言。躺在收件箱里的时候，它看着并不起眼。
 

@@ -34,11 +34,19 @@ the house ceiling afterward.
 ## Sources
 - New figures added to the ledger:
 
-## Flags
-- TODO: client sign-off items:
+## Items found and closed
+Every gap this run met, and how it was closed inside the run (researched,
+cut, older page fixed in every locale, brief amended, link created, settled
+fallback applied, watch note added to the ledger). No "Open items" section,
+no "for Cyril" list: an item only Cyril can close stops the run instead (row
+set to `blocked`, reason in `notes`). See `CLAUDE.md`, "No TODO leaves a run".
+- Client figures used (each quoted from its /work/<client>/ page, or none):
+- Claims cut and why:
 - Competitors dropped from a listicle and why:
-- Conflicts between the brief and the live site:
+- Brief corrections made (file, what changed, later briefs amended):
+- Older pages corrected (file, locales, what changed):
 - Section template missing (industries / tools):
+- `check-no-todo.mjs` on the draft: pass
 
 ## SEO counts (after the quality pass)
 | Field | Chars or words | Ceiling | Pass |
@@ -50,6 +58,6 @@ the house ceiling afterward.
 ## Publish (fill in when step 4 runs)
 - Locales created:
 - Build:
-- Resend email sent to cyril.drouin@gmail.com: yes / no (reason)
+- Resend email sent to cyril.drouin@outlook.com: yes / no (reason)
 - Model used for each step (must be the most capable available):
 - Runbook substitutions (what the repo could not do, what was used instead):

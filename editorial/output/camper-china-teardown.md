@@ -48,12 +48,6 @@ Every source on this page was checked twice in September 2026. We review it
 each quarter, because the Xiaohongshu audience and commerce figures move
 faster than an article does.
 
-<!-- TODO: client sign-off. Every Camper figure in this article is copied from
-the live case study page at /work/camper/, which publishes them with the
-client named. The ledger row for Camper (briefs 02D and 03D) is still marked
-pending for formal written clearance. Nothing beyond what that page publishes
-appears here. -->
-
 <!-- SECTION: Month zero -->
 
 ## Where the account was in month zero
@@ -169,11 +163,6 @@ were slow, growth picked up after that, and 18 months later the number was
 inflection points. The monthly series isn't cleared for publication, and we
 don't estimate client numbers.
 
-<!-- TODO: client sign-off. The month-by-month follower series and the three
-inflection points requested by brief 03D are not on the public case page and
-are not in sources/verified-sources.md. They are not estimated here. The
-follower growth chart in the asset brief is blocked on the same clearance. -->
-
 What is worth explaining is why slow first months are the normal shape, not a
 warning sign. Distribution on Xiaohongshu runs on recency.
 
@@ -224,12 +213,6 @@ fast, and the chart looks like a spike followed by nothing.
 Campaign-level post-mortems for this account aren't cleared for publication,
 so none appear here. We're not going to reverse-engineer them from the three
 patterns above either, which is what most teardowns quietly do.
-
-<!-- TODO: client sign-off. Brief 03D asks for the two Camper campaigns that
-underperformed and the reasons. Neither is published on /work/camper/ nor
-logged in sources/verified-sources.md. Per SPEC exception 2 the specifics are
-left out rather than estimated. Request clearance for the two campaign
-post-mortems before publication, then extend this section. -->
 
 <!-- SECTION: From followers to sales -->
 
@@ -467,13 +450,8 @@ INTERNAL LINKS:
   fashion and apparel industry page -> /industries/fashion-apparel/
   pricing page -> /pricing/
 
-CLIENT SIGN-OFF NEEDED:
-  Camper. Every Camper figure used here is already public on /work/camper/,
-  and nothing beyond that page is used. The ledger row for Camper (briefs 02D
-  and 03D) is still marked pending for formal written clearance. Two items
-  requested by brief 03D are held out entirely for lack of clearance: the
-  month-by-month follower series with its three inflection points, and the
-  two underperforming campaigns with their post-mortems. Obtain clearance
-  before publication, then decide whether to extend the article with those
-  two sections.
+CLIENT FIGURES: Camper. Every figure is quoted as published on /work/camper/
+  and nothing beyond that page is used (SPEC, settled fallbacks). The
+  month-by-month series and the two campaign post-mortems the brief asked for
+  are not public, so they are not in the article.
 -->

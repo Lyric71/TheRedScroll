@@ -66,11 +66,6 @@ China when we started. Our consumer research in tier-one and tier-two cities
 found a hard problem. Shoppers in tier-two cities did not see why imported honey
 should cost more, when domestic brands cost half as much.
 
-<!-- TODO: client sign-off. "Domestic brands cost half as much" and every other
-Langnese line in this article is copied from the live case study at
-/work/langnese/. The ledger row for Langnese (brief 04D) is still marked
-pending. No outcome figure is published on the page, so none is used here. -->
-
 Our answer was not a louder "German quality" message. It was new reasons to buy,
 tied to real use. Young professionals got honey in their coffee and smoothies.
 Parents got a natural sweetener. Home cooks got honey as an ingredient. The full
@@ -234,12 +229,6 @@ and workshops did the rest, and product inquiries and orders increased. You can
 read how it ran in the Master Martini case study. The platform was different.
 The chefs were not, and neither was what they wanted: technique they could use
 the next morning.
-
-<!-- TODO: client sign-off. Master Martini lines are copied from /work/master-martini/.
-The page publishes no numbers, and the work ran outside mainland China on
-Instagram and Facebook. Brief 04D anchors the WeChat section on this client;
-the site wins (SPEC exception 4), so the article presents it as the method,
-not as a China result. -->
 
 The same method carries to WeChat. Publish the technique first. Send chefs to a
 live demo on WeChat Channels (视频号). Then hand distributors a one-page spec sheet
@@ -432,17 +421,8 @@ INTERNAL LINKS:
   INBOUND (brief): from /work/langnese/, /work/master-martini/ and
   /work/mission-foods/ -> /industries/food-beverage/, on an existing phrase
   in each outcome section, at publish time.
-CLIENT SIGN-OFF NEEDED: Langnese, Master Martini, Mission Foods. No figures
-  used. Lines drawn from the live case study pages: Langnese (German honey
-  brand with distribution already in place, consumer research in tier-one
-  and tier-two cities, "domestic brands cost half as much", the use-case
-  groups, "recipe integration and daily routines", "quick demonstrations
-  of new use cases", trial and single-serve formats); Master Martini
-  (supplier since 1982, Instagram and Facebook in Malaysia, Hong Kong,
-  Singapore, Indonesia and Thailand, recipe content as the backbone, live
-  chef sessions on "ratios, temperatures, timing", UGC contests, workshops,
-  inquiries and orders increased); Mission Foods (corn chips new to most
-  Chinese shoppers, Gen Z, dipping sauce and hotpot pairings, Halloween
-  spike in followers and engagement across three platforms). The ledger
-  marks all three "outcomes to confirm, pending".
+CLIENT FIGURES: Langnese, Master Martini, Mission Foods. No figures used.
+  Every client line is quoted as published on its live case study page
+  (/work/langnese/, /work/master-martini/, /work/mission-foods/), and nothing
+  beyond those pages is used (SPEC, settled fallbacks).
 -->

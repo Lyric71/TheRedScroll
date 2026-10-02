@@ -4,6 +4,7 @@ description: "收费模式只有三种。月费买的是时间，项目制买的
 metaTitle: "中国代理商的三种收费模式"
 metaDescription: "月费、项目制与固定价的比较：每种模式漏在哪里，平台公开的媒体抽成是多少，签约前必须先读的五条合同条款。"
 publishDate: 2026-09-21
+updatedDate: 2026-10-02
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "策略"
@@ -22,7 +23,7 @@ featuredImage: "/images/blog/china-agency-pricing-models.webp"
 
 媒体投放是另一个问题，也是更贵的那个。无论选哪种模式，有一件事比模式本身更能决定钱的去向：广告账户开在谁的名下，以及平台按投放额返的点归谁。关于媒体费用去向的那几段，附了合同原文条款。
 
-本文所有来源均在2026年9月完成两次核对。
+本文所有来源均已核对两次，时间在2026年9月至10月之间。
 
 ## 中国代理商收费：风险由谁承担
 
@@ -75,7 +76,7 @@ featuredImage: "/images/blog/china-agency-pricing-models.webp"
 第三条没得选，也不是代理商在为难你。
 
 > 广告法要求广告经营者、广告发布者建立并健全广告业务的承接登记、审核、档案管理制度，核对广告证明文件，对内容与证明文件不符的，不得设计、制作、代理、发布。
-> 来源：中华人民共和国广告法第三十四条，2021年修正。https://www.gov.cn/guoqing/2021-10/29/content_5647620.htm
+> 来源：中华人民共和国广告法第三十四条，2018年10月修正。https://www.gov.cn/guoqing/2021-10/29/content_5647620.htm
 
 核验文件、留存执照复印件，都要耗时间；被打回来的创意也一样。这些都不会出现在创意需求说明里，而在项目制下，它们会晚一步以变更单的形式浮出来。
 
@@ -156,12 +157,12 @@ featuredImage: "/images/blog/china-agency-pricing-models.webp"
 > 同一份协议写明，广告账户中的非现金部分，包括赠送资源与授信额度，不予退还；广告主终止投放的，已支付但尚未消耗的服务费用亦不退回。
 > 来源：腾讯广告广告主合作协议，2026年9月核实。https://e.qq.com/contract.html
 
-何况外国品牌本来就往往持不了账户，这正是返点问题要尽早问的原因。
+在小红书和抖音，账户是自己开还是交给代理商开，由你决定。这正是返点问题要尽早问的原因。
 
-> 自2026年2月2日起，境外商家只能通过授权代理商接入小红书的广告投放平台聚光，没有自助开户的通道。
-> 来源：自由行Studio，2026年8月。https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
+> 小红书的广告投放平台聚光在开户时提供两种账号身份：广告主账号和代理商账号。小红书官方文件中并没有境外广告主必须通过代理商开户的规定。
+> 来源：自由行Studio，小红书聚光开户指南，2026年9月更新。https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
 
-抖音给了你选择，也给了价码。
+抖音则给这个选择标了价。
 
 > 在抖音，官方渠道开广告账户收取服务费。代理商可以免费开户，并自行设定首次最低充值金额。
 > 来源：巨量引擎开户常见问题，2021年6月。https://www.oceanengine.com/faq/douyin-kaihu-feiyong.html
@@ -179,7 +180,7 @@ featuredImage: "/images/blog/china-agency-pricing-models.webp"
 中国法律要求这份合同必须存在。
 
 > 广告法要求广告主、广告经营者、广告发布者之间在广告活动中依法订立书面合同。
-> 来源：中华人民共和国广告法第三十条，2021年修正。https://www.gov.cn/guoqing/2021-10/29/content_5647620.htm
+> 来源：中华人民共和国广告法第三十条，2018年10月修正。https://www.gov.cn/guoqing/2021-10/29/content_5647620.htm
 
 书面合同是底线，不是终点。真正决定实际走向的，是五条条款。
 

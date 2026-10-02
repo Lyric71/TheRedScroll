@@ -413,6 +413,6 @@ INTERNAL LINKS:
   China Market Entry (What a beauty package includes) -> /services/market-entry/
   Advertising (What a beauty package includes) -> /services/advertising/
   pricing page (What a beauty package includes) -> /pricing/
-CLIENT SIGN-OFF NEEDED: none. No client figure used. The Pugongying order
+CLIENT FIGURES: none. No client figure used. The Pugongying order
   screenshot above needs permission from whichever client account is used.
 -->

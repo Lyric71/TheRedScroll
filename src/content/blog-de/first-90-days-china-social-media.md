@@ -4,6 +4,7 @@ description: "In zwei Wochen stehen die Konten. Der chinesische Markenname brauc
 metaTitle: "Chinas soziale Netzwerke: die ersten 90 Tage"
 metaDescription: "Konten, Verifizierung, chinesischer Name, erste Inhalte, erste Anfragen: der Ablauf eines Markenstarts in China, Woche für Woche aufgeschlüsselt."
 publishDate: 2026-09-10
+updatedDate: 2026-10-02
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "Strategie"
@@ -262,16 +263,19 @@ zum Produkt; eine Suche in der Kategorie zeigt dann echte Menschen, die es
 benutzen. Dann ein bezahlter Test hinter den zwei oder drei Beiträgen, die
 sich bereits bewährt haben.
 
-Für ein ausländisches Unternehmen läuft die Werbung über einen Agenten.
+Für ein ausländisches Unternehmen beginnt das Werbekonto mit einer Prüfung
+der Kategorie.
 
-> Seit dem 2. Februar 2026 erhalten ausländische Händler nur noch über einen
-> autorisierten Agenten Zugang zur Werbeplattform Jiguang von Xiaohongshu,
-> eine Kontoeröffnung in Eigenregie ist nicht mehr möglich.
-> Quelle: Ziyouxing Studio (自由行Studio), Leitfaden zu Jiguang für ausländische Werbetreibende, August 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
+> Kein offizielles Dokument von Xiaohongshu schreibt ausländischen
+> Werbetreibenden einen Agenten vor. Die Werbeplattform Juguang (聚光) bietet
+> bei der Registrierung zwei Kontotypen an: Werbetreibender und Agentur. Für
+> ausländische Unternehmen gilt eine eigene Branchenliste, und manche
+> Kategorien stehen ihnen noch nicht offen.
+> Quelle: Ziyouxing Studio (自由行Studio), Leitfaden zu Xiaohongshu Juguang, aktualisiert im September 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
 
-Die Kontoeröffnung durch den Agenten gehört damit in den Plan für Woche 9,
-und die Einlage, die er festlegt, ist Mediabudget: zum Selbstkostenpreis
-abgerechnet, mit der Rechnung der Plattform belegt. Was Seeding und Test
+Die Prüfung der Kategorie und die Eröffnung des Juguang-Kontos gehören damit
+in den Plan für Woche 9. Die Einlage ist Mediabudget: zum
+Selbstkostenpreis abgerechnet, mit der Rechnung der Plattform belegt. Was Seeding und Test
 kosten, behandelt unser Leitfaden dazu,
 [was Social-Media-Marketing in China 2026 kostet](/de/analysen/china-social-media-marketing-cost/).
 Die eigene Preisliste von TheRedScroll steht auf der

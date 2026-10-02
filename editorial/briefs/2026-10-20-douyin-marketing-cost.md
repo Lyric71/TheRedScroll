@@ -61,7 +61,7 @@ Every figure below needs a dated, linked source in blockquote format. Check
 still current, reuse the logged citation instead of researching again. If you
 find a new figure, append it to that ledger before you finish.
 
-- Ad minimums and deposit, cite the platform
+- Ad minimums and deposit, cite the platform. Research on 2026-09-03 found no platform or trade-press source for a Douyin first deposit (only reseller blogs): if that still holds, say no figure is published and cut it. (Amended 2026-10-02: research proved the original line wrong. See editorial/CLAUDE.md, "No TODO leaves a run".)
 - Douyin DAU, cite ByteDance reporting, dated
 - Production costs from our own quotes, labeled as ours
 

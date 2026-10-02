@@ -115,6 +115,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-09-24: re-fetched for 04A, "每日预算1000元起" confirmed (check 1 and check 2, both 2026-09-24).
 - Used in: china-social-media-marketing-cost, china-social-media-package-includes
 - Re-verified 2026-10-01 for 05A: product page "每日预算1000元起", "CPM单价30元起", "单次投放总预算5万元起", "1000元/天即可起投" and the 2016 PDF "不得低于1000元", "出价须大于30元", "5万元起", "第5个自然日起至第28个自然日" confirmed. New detail on the same page logged as its own entry below (bidding closed in core and key cities; free account opening) at check 1 and check 2. Used in: wechat-marketing-cost.
+- Re-verified 2026-10-02: "本地推广广告不受5万元单次投放门槛限制，1000元/天即可起投" and "每日预算1000元起" confirmed at check 1 and check 2. Used in: wechat-advertising-formats-costs (local promotion corrected from 300 to 1,000 yuan a day, all five locales).
 - Notes: Current page is undated; the 2016 PDF supplies the date and shows the floors have held.
 
 ### Douyin ad account opening: service fee and agent-set first recharge
@@ -127,16 +128,18 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: china-social-media-marketing-cost
 - Notes: No platform figure exists for the first recharge. Reseller blogs say 5,000 to 10,000 yuan; not logged, not citable.
 
-### Xiaohongshu Jiguang ad platform: overseas merchants admitted through authorized agents only
-- Value: since February 2, 2026 overseas merchants apply via an authorized agent (特邀准入), no self-serve opening
+### Xiaohongshu Juguang ad platform: no official agent-only rule for overseas advertisers (corrected 2026-10-02)
+- Value (current, from the 2026-09-18 update): no official Xiaohongshu document supports "overseas merchants must go through an authorized agent" ("未能找到支持该说法的官方文件"); the Juguang sign-up offers an advertiser account (广告主账号) and an agency account (代理商账号); using a service provider is a commercial choice, not an admission condition; overseas entities have their own industry admission list, with some categories 暂未开放
+- Value (retracted, do not reuse): since February 2, 2026 overseas merchants apply via an authorized agent (特邀准入), no self-serve opening
 - As of: August 2026 (page updated 2026-08-02)
-- Source: Ziyouxing Studio (自由行Studio), Xiaohongshu Jiguang overseas guide
+- Source: Ziyouxing Studio (自由行Studio), Xiaohongshu Juguang overseas guide
 - URL: https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
 - Verified 1: 2026-09-03, fetched, policy wording and date confirmed
 - Verified 2: 2026-09-03, re-fetched, unchanged
 - Used in: china-social-media-marketing-cost, first-90-days-china-social-media, xiaohongshu-business-account-setup, chinese-entity-social-media
 - Notes: Weakest source in the ledger, a third-party studio, not the platform or trade press. Used for the access rule only; its deposit figures (5,000 to 10,000 yuan) were not cited. Replace with a platform announcement if one is found.
-- **CORRECTION 2026-09-28, DO NOT REUSE.** Re-fetched for 04B: the page now shows dateModified 2026-09-18 and reverses the claim. It says the "invitation-only since a certain date, overseas merchants must go through an authorized agent, self-serve channel closed" story could not be found in any official Xiaohongshu document ("未能找到支持该说法的官方文件"), that the Juguang backend offers both an advertiser account and an agency account, that "必须找代理商" is not a platform rule, that the platform charges no opening fee, and that no official minimum first recharge exists ("官方没有公布统一的最低首充标准"; agents quote 2,000 to 10,000 yuan). The seven articles listed under Used in still carry the old claim in all five locales and need a correction pass on request. 04B cites the platform's own documents instead (see the Juguang operations guide and registration entries).
+- **CORRECTION 2026-09-28, DO NOT REUSE.** Re-fetched for 04B: the page now shows dateModified 2026-09-18 and reverses the claim. It says the "invitation-only since a certain date, overseas merchants must go through an authorized agent, self-serve channel closed" story could not be found in any official Xiaohongshu document ("未能找到支持该说法的官方文件"), that the Juguang backend offers both an advertiser account and an agency account, that "必须找代理商" is not a platform rule, that the platform charges no opening fee, and that no official minimum first recharge exists ("官方没有公布统一的最低首充标准"; agents quote 2,000 to 10,000 yuan). 04B cites the platform's own documents instead (see the Juguang operations guide and registration entries).
+- **CLOSED 2026-10-02.** Re-fetched 2026-10-02 (check 1 and check 2 on the corrected wording). The retracted agent-only claim was removed from all seven articles (china-social-media-marketing-cost, first-90-days-china-social-media, xiaohongshu-marketing-foreign-brands, xiaohongshu-marketing-cost, china-agency-pricing-models, xiaohongshu-business-account-setup, chinese-entity-social-media) in all five locales, each with updatedDate 2026-10-02, and from the RedNote agency and platform pages, which no longer say Juguang requires a Chinese entity. Where a line was needed it now cites the corrected wording above.
 
 ### Xiaohongshu monthly active users and daily searches, platform figure
 - Value: MAU passed 400 million; daily searches 800 million
@@ -233,6 +236,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Notes: Same page as the 99 US dollar fee entry above; this entry adds the review time. Cite as "confirmed September 2026".
 
 - Re-verified 2026-10-01 for 05B: "7-15个工作日内完成审核" and the card list confirmed at check 1 and check 2. Used in: wechat-official-account-setup.
+- Re-verified 2026-10-02: "境外主体账号认证在支付费用后，在用户提交完整的资质后7-15个工作日内完成审核" confirmed at check 1 and check 2. Used on the site pages /wechat-agency/ and /platforms/wechat/ (all five locales), which said "1 to 2 weeks" and now give Tencent's 7 to 15 working days for an overseas company and four weeks from contract to first post.
 ### WeChat Official Account verification materials for overseas entities
 - Value: company registration certificate or business license; contact person's ID, both sides, color scan; application letter (simplified Chinese, traditional Chinese or English template); operation authorization letter (same three languages); contact person's phone bill, or a stamped office phone bill or bank statement; trademark registration or authorization if the account is named after a trademark
 - As of: page undated; confirmed September 2026 (platform documentation)
@@ -563,7 +567,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - A 450,000-yuan fine over "最保暖" (a named down-jacket brand): only on a compliance vendor blog (byerisk.com). Not cited.
 - Review times ("minutes by machine, up to 24 hours by a person"): New Rank trade pages with no platform source. Not cited.
 - samr.gov.cn and the Hubei AMR repost of the absolute-terms guideline: HTTP 412 to automated fetches. Jinjiang's repost puts the text in an attachment. The Zhengzhou AMR page carries the full text and is the cited copy.
-- First-party moderated examples (brief 04C): none cleared. TODO left in the draft.
+- First-party moderated examples (brief 04C): none logged. Cut; the rewrite section stands on published rules (SPEC, settled fallbacks).
 
 ### NOT LOGGED, searched and rejected 2026-09-28 (Xiaohongshu ad formats and costs)
 - A platform-published Juguang minimum deposit or first recharge. Absent from all four platform PDFs; the help centre (ad.xiaohongshu.com/next_help/...) renders client-side and could not be fetched. 5,000 yuan and "500 to 3,000 yuan opening fee" figures trace to agents. Not cited as a platform figure.
@@ -650,7 +654,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 
 ### China Advertising Law: banned superlatives, medical language, cited data, penalty
 - Value: Article 9 bans "国家级", "最高级", "最佳"; Article 17 bans disease-treatment references and medical language outside medical, drug and device advertising; Article 11 requires cited data to be true, accurate and sourced; Article 57 sets a fine of 200,000 to 1,000,000 yuan on the advertiser for an Article 9 breach, with licence revocation in serious cases
-- As of: law in force since 2015-09-01, text as amended 2021
+- As of: law in force since 2015-09-01; the cited page carries the text as amended 2018-10-26 (corrected 2026-10-02, it had been logged as 2021)
 - Source: Advertising Law of the People's Republic of China (中华人民共和国广告法), via the Chinese government portal
 - URL: https://www.gov.cn/guoqing/2021-10/29/content_5647620.htm
 - Verified 1: 2026-09-10, fetched, all four articles read verbatim in Chinese
@@ -658,6 +662,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: beauty-skincare, xiaohongshu-sensitive-words
 - Re-verified 2026-09-29 for 04C (check 1 and check 2): page re-fetched three times with curl; new strings for 04C: Art. 9(1) "使用或者变相使用中华人民共和国的国旗、国歌、国徽，军旗、军歌、军徽", Art. 13 "广告不得贬低其他生产经营者的商品或者服务", Art. 16 "表示功效、安全性的断言或者保证" and "说明治愈率或者有效率", Art. 18 "保健食品广告不得含有下列内容：（一）表示功效、安全性的断言或者保证；（二）涉及疾病预防、治疗功能", Art. 25 "应当对可能存在的风险以及风险责任承担有合理提示或者警示" and "明示或者暗示保本、无风险或者保收益等", plus Arts. 9, 17 and 57 as logged. **Date correction:** the page header gives the text as revised 2015-04-24 and amended "根据2018年10月26日……修正"; it shows no 2021 amendment. 04C cites "as amended October 2018". Earlier articles that say "as amended 2021" cite the right articles, but the date on this page is October 2018; align them on their next edit.
 - Re-verified 2026-09-29 for 04D (food-beverage): Art. 9(3) and Art. 17 strings confirmed at check 1 and check 2; Art. 18 health-food string (保健食品广告应当显著标明“本品不能代替药物”) also confirmed. Used in: food-beverage.
+- Re-verified 2026-10-02: the page preamble ends "根据2018年10月26日第十三届全国人民代表大会常务委员会第六次会议《关于修改〈中华人民共和国野生动物保护法〉等十五部法律的决定》修正", so citations of this URL say "as amended October 2018" (fixed in china-agency-pricing-models and food-beverage, all five locales). The law was amended again on 2021-04-29 (NPCSC decision amending eight laws, checked on zh.wikisource.org): that decision deleted the publication registration duty in Art. 29, removed the registration certificate penalty from Arts. 55, 57 and 58, and deleted Art. 60. The articles cited on the site (9, 11, 13, 14, 17, 18, 28, 30, 34 and the 57 fine and licence revocation) read the same in the current text.
 - Notes: Article 14 (ads must be identifiable, no ads disguised as news) and Article 28 (false or misleading content is false advertising) are on the same page and are the general form of the Order 72 rule below.
 
 ### Internet Advertising Measures: seeding notes with a purchase link are advertising
@@ -806,7 +811,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-09-24: re-fetched for 04A, both strings and the 2026-05-18 date confirmed (check 1 and check 2, both 2026-09-24).
 - Used in: xiaohongshu-marketing-cost, china-social-media-package-includes, xiaohongshu-advertising-formats-costs
 - Re-verified 2026-09-28 for 04B: both strings and the 2026-05-18 date confirmed (check 1 and check 2).
-- Notes: Corroborated by 三节课 via Sohu, 2025-12-23 (https://m.sohu.com/a/968496983_624051), "支持手机端自助投放，最低 75 元起投". The same sources give a 7,500 yuan per-order ceiling; not cited. This is the only self-serve, published ad floor on the platform. The Jiguang (聚光) first recharge and minimum daily budget have no platform or trade-press source and must not be quoted.
+- Notes: Corroborated by 三节课 via Sohu, 2025-12-23 (https://m.sohu.com/a/968496983_624051), "支持手机端自助投放，最低 75 元起投". The same sources give a 7,500 yuan per-order ceiling; not cited. This is the only self-serve, published ad floor on the platform. The Juguang (聚光) first recharge and minimum daily budget have no platform or trade-press source and must not be quoted.
 
 ### Xiaohongshu Pugongying brand invitations, and daily active user search behavior
 - Value: 27 million brand invitations on Pugongying in 2025, up 34% year on year; 77% of daily active users use search to solve a problem, 75% browse the recommendation feed
@@ -994,7 +999,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 
 ### China Advertising Law: written contract required between advertiser, operator and publisher
 - Value: Article 30 requires advertisers, advertising operators and advertising publishers to conclude written contracts for advertising activity. Article 34 requires operators and publishers to build and keep acceptance, review and archive systems, to verify supporting documents, and to refuse design, production or placement where content does not match those documents
-- As of: law in force since 2015-09-01, text as amended 2021
+- As of: law in force since 2015-09-01; the cited page carries the text as amended 2018-10-26 (corrected 2026-10-02, it had been logged as 2021)
 - Source: Advertising Law of the People's Republic of China (中华人民共和国广告法), via the Chinese government portal
 - URL: https://www.gov.cn/guoqing/2021-10/29/content_5647620.htm
 - Verified 1: 2026-09-17, fetched, "应当依法订立书面合同" and "承接登记、审核、档案管理制度" confirmed verbatim
@@ -1052,28 +1057,28 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: xiaohongshu-business-account-setup
 - Notes: The two categories foreign brands most often get wrong are health supplements and beauty devices: both are allowed, both need an extra certificate. The detailed per-industry requirements live behind business.xiaohongshu.com/agreement?type=qualification, which returned HTTP 502 on 2026-09-18 and could not be fetched. Recheck that page before any article that needs the full industry matrix.
 
-### Xiaohongshu Jiguang ad qualification: overseas entity documents and trademark rules
-- Value: opening sequence is register the app account and bind a phone, log into Jiguang with that number, choose an advertiser account (广告主账号) or agency account (代理商账号), complete professional account verification, then submit promotion qualifications, then submit creative for review; industry category must match the business scope on the qualification documents; account name is normally the company or store name and needs the trademark certificate if it hits a registered mark; avatar must be the brand logo with no person in it; domestic entities upload the business licence, overseas entities upload BR or CR, Hong Kong companies need both; company registration documents not in Chinese need a Chinese translation stamped with the brand owner's company seal; trademark certificate must not be expired (else a renewal approval certificate); a mark under application needs the acceptance notice and the application must be at least 3 months old from the stamped acceptance date; a mark under transfer is accepted only from the transferee; where the registrant is an overseas company and the applicant is not, only one level of general-distributor authorization is accepted; website entities upload the MIIT filing screenshot, app entities the software copyright certificate
+### Xiaohongshu Juguang ad qualification: overseas entity documents and trademark rules
+- Value: opening sequence is register the app account and bind a phone, log into Juguang with that number, choose an advertiser account (广告主账号) or agency account (代理商账号), complete professional account verification, then submit promotion qualifications, then submit creative for review; industry category must match the business scope on the qualification documents; account name is normally the company or store name and needs the trademark certificate if it hits a registered mark; avatar must be the brand logo with no person in it; domestic entities upload the business licence, overseas entities upload BR or CR, Hong Kong companies need both; company registration documents not in Chinese need a Chinese translation stamped with the brand owner's company seal; trademark certificate must not be expired (else a renewal approval certificate); a mark under application needs the acceptance notice and the application must be at least 3 months old from the stamped acceptance date; a mark under transfer is accepted only from the transferee; where the registrant is an overseas company and the applicant is not, only one level of general-distributor authorization is accepted; website entities upload the MIIT filing screenshot, app entities the software copyright certificate
 - As of: page undated; confirmed September 2026 (platform documentation)
-- Source: Xiaohongshu (小红书), Jiguang platform registration and account opening flow (聚光平台注册与开户流程, platform PDF, 7 pages)
+- Source: Xiaohongshu (小红书), Juguang platform registration and account opening flow (聚光平台注册与开户流程, platform PDF, 7 pages)
 - URL: https://fe-video-qc.xhscdn.com/fe-platform/cc8a5f81ddb6d91d6be9dfb34e62b49b999f234b/%E8%81%9A%E5%85%89%E5%B9%B3%E5%8F%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%BC%80%E6%88%B7%E6%B5%81%E7%A8%8B.pdf
 - Verified 1: 2026-09-18, downloaded (HTTP 200, 928,035 bytes) and extracted; "境内企业上传营业执照，境外企业上传BR/CR", "若为香港公司，则BR和CR都需要", "公司注册文件如不是中文，需提供中文翻译件并加盖品牌方公章", "行业类别：选择行业时须与资质文件中经营范围保持一致", "账号名称一般为公司名称、店铺名称", "头像须为品牌logo，请勿包含人像", "商标注册证不可过期", "申请时间需届满三个月", "认证最多接受一级总代授权" and "若主体为网站，需上传工信部备案截图" all confirmed
 - Verified 2: 2026-09-18, re-downloaded and re-extracted, unchanged, all ten strings re-confirmed
 - Used in: xiaohongshu-business-account-setup, xiaohongshu-advertising-formats-costs, xiaohongshu-sensitive-words
 - Re-verified 2026-09-29 for 04C (check 1 and check 2): PDF re-downloaded three times (HTTP 200, 928,035 bytes); new strings "提交物料并审核，审核后则可开始投放广告", "若审核不通过，请根据审核意见修改，并再次提交审核请求" and "需符合广告法及其他法律法规" confirmed. 04C uses it inline (no blockquote) for "rejected Juguang creative comes back with review comments".
 - Re-verified 2026-09-28 for 04B: "当前账号暂未开通广告投放相关功能", "【广告主账号】或【代理商账号】", "前往合作伙伴平台完成入驻流程" and "境内企业上传营业执照，境外企业上传BR/CR" confirmed (check 1 and check 2). File creation date in the PDF metadata: 2022-05-01, cited as May 2022. Precision: 代理商账号 is the sign-up path for agencies themselves (they go on to the partner platform), not an option an advertiser picks to be served by an agency.
-- Notes: **Two different translation stamps, do not conflate them.** Account verification wants a translation stamped by a translation company (see the eligibility entry above); ad qualification wants the registration document translation stamped with the brand owner's own seal. This document predates the February 2026 invitation-only rule for overseas advertisers (see the Jiguang overseas entry above), so it describes the document set, not current self-serve access. Use both together.
+- Notes: **Two different translation stamps, do not conflate them.** Account verification wants a translation stamped by a translation company (see the eligibility entry above); ad qualification wants the registration document translation stamped with the brand owner's own seal. This document predates the February 2026 invitation-only rule for overseas advertisers (see the Juguang overseas entry above), so it describes the document set, not current self-serve access. Use both together.
 
-### Xiaohongshu Jiguang: marketing scenarios and shared account balance
+### Xiaohongshu Juguang: marketing scenarios and shared account balance
 - Value: four marketing scenarios, product seeding (产品种草), product sales (商品销量), lead collection (客资收集) and livestream promotion (直播推广); platform address ad.xiaohongshu.com; the account cash and bonus balance and the account daily budget are shared with the professional account promotion centre, and same-day spend is the sum of both
 - As of: page undated; confirmed September 2026 (platform documentation)
-- Source: Xiaohongshu (小红书), Jiguang platform product manual (聚光平台产品手册, platform PDF)
+- Source: Xiaohongshu (小红书), Juguang platform product manual (聚光平台产品手册, platform PDF)
 - URL: https://fe-video-qc.xhscdn.com/fe-platform/37f82988d0e9273cd645bb819c37a4e0f697bc70.pdf
 - Verified 1: 2026-09-18, downloaded (HTTP 200, 4,533,849 bytes) and extracted; "产品种草、商品销量、客资收集、直播推广四大营销场景", "和专业号推广中心共用" and "ad.xiaohongshu.com" all confirmed
 - Verified 2: 2026-09-18, re-downloaded and re-extracted, unchanged, all three strings re-confirmed
 - Used in: xiaohongshu-business-account-setup, xiaohongshu-advertising-formats-costs
 - Re-verified 2026-09-28 for 04B, new strings added: "信息流+搜索的产品双引擎", "信息流产品种草—搜索产品收割", "抢占赛道：...目前仅支持搜索推广", "客资收集：吸引您的目标受众提交销售线索或发起私信咨询", "商品销量：吸引您的目标受众进入您的店铺或购买店铺商品", "精确匹配" / "短语匹配" and "抢排位工具" (check 1 and check 2, both 2026-09-28). The report overview shows total spend, impressions, clicks, click-through rate and average cost per click. PDF metadata creation date 2022-05-06, cited as May 2022.
-- Notes: 客资收集 (lead collection) is the objective for service brands with no store; it converts to direct messages or a form. The shared-balance line matters for any article about who controls the ad account. A companion Jiguang FAQ PDF exists on the same CDN but contains live test-account credentials and was deliberately not cited.
+- Notes: 客资收集 (lead collection) is the objective for service brands with no store; it converts to direct messages or a form. The shared-balance line matters for any article about who controls the ad account. A companion Juguang FAQ PDF exists on the same CDN but contains live test-account credentials and was deliberately not cited.
 
 ### Xiaohongshu store types and the cross-border authorization path
 - Value: three store types, flagship (旗舰店, own brand or an exclusive licence), authorized specialty (专卖店, ordinary licence from the mark holder) and multi-brand collection (集合店); for cross-border trade every brand needs an authorization letter from the brand owner carrying a signature with the signer's job title or a company seal, with a complete authorization chain; without authorization, purchase proof for at least one SKU is required at entry; a cross-border store entering on purchase proof does not submit the trademark certificate; for beauty and personal care, overseas companies may enter with Japanese and Korean brands carrying neither TM nor R marks if they show proof the trademark application was filed; where the trademark holder is an individual who is also the company's legal representative, no authorization proof is needed; domestic entities file the business licence plus a bank account opening permit, overseas entities (including Hong Kong, Macau and Taiwan) file a Business Registration and a Certificate of Incorporation
@@ -1086,7 +1091,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Notes: Extends the store qualification entry above with the store types and the cross-border signature rule. Still hosted on a "test" path of the platform CDN; it resolved on 2026-09-18 but recheck the URL before each reuse. **No store deposit (保证金) or technical service fee figure is logged here on purpose:** every number found in Chinese search traces to reseller and agent blogs, not to the platform or a dated trade publication. Do not cite one.
 
 ### NOT LOGGED, searched and rejected 2026-09-18 (Xiaohongshu account setup)
-- Jiguang minimum first prepayment (the 5,000 yuan figure): Zhihu and Sohu agent posts only, no platform page and no dated trade publication. Cut from xiaohongshu-business-account-setup.
+- Juguang minimum first prepayment (the 5,000 yuan figure): Zhihu and Sohu agent posts only, no platform page and no dated trade publication. Cut from xiaohongshu-business-account-setup.
 - Store deposit amounts by category and the store technical service fee percentage: reseller and agent blogs only. Cut.
 - Daily direct-message limits by account type (10 for personal professional, 20 for enterprise): self-media only. Cut.
 - A follower threshold before applying for an ad account: self-media only, and the platform documents state no threshold. Cut.
@@ -1281,13 +1286,13 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - The CES 2.0 interaction scoring weights (saves 4 points, comments 3, shares 2, likes 1) and the "30% KOC / 50% mid-tier / 20% head KOL" split presented as a 2026 standard. Agency blogs only. Xiaohongshu publishes no such scoring table or split. Rejected. Tempting because it would directly support a saves-are-the-signal argument; the Qian-gua apparel entry above supports the same argument from a real dated source, so make the claim on that entry alone.
 - A Xiaohongshu offline store-visit (到店) conversion rate. The platform discusses 本地化种草 and store visits qualitatively; the only number nearby (私信留资 +296%) appears with no stated period or base. Rejected. Article 03D therefore claims no platform-published online-to-store conversion rate.
 - A WeChat Official Account open-rate benchmark. Still absent, as recorded for brief 06C. Searched again, still nothing from Tencent. Not used.
-- Camper month-by-month follower series and the two underperforming campaigns. Not on /work/camper/, not in this ledger, not estimated. See the client sign-off table below.
+- Camper month-by-month follower series and the two underperforming campaigns. Not on /work/camper/, not in this ledger, not estimated, not used (settled: client figures only as published on /work/<client>/).
 
 ### NOT LOGGED, searched and rejected 2026-09-24 (China social media package)
 - An official Xiaohongshu posting-frequency recommendation for enterprise accounts ("3 to 4 notes a week", "one a day is acceptable", "3 to 5 a day once a note passes 500 views"). New Rank tips page, Zhihu columns, reditorapp and yimeizhushou only. No platform page. Rejected.
 - The R3 influencer rate-card gap via Campaign Asia (entry above) could not be re-checked: the page returned no article body to curl on 2026-09-24. Not used. Recheck with a browser before its next reuse.
 - Long Advisory KOL fee ranges (entries above) deliberately not used: an English-language consultancy selling China marketing advice is close enough to a competitor that the Xingtu platform fee was preferred as the sourced influencer cost.
-- First-party community figures (care hours per month, comment or DM reply-time target, revision rounds, approval turnaround). Not published anywhere on the site. Brief 04A asked for them; cut with a TODO marker. See the first-party section.
+- First-party community figures (care hours per month, comment or DM reply-time target, revision rounds, approval turnaround). Not published anywhere on the site. Brief 04A asked for them; cut (SPEC, settled fallbacks). The article says we do not publish those two numbers.
 
 ### China food imports, 2025: total and from Europe
 - Value: China imported 1,254.4 hundred million US dollars (125.44 billion) of food in 2025, down 0.6%; from Europe 240.5 hundred million (24.05 billion), down 6.3%; from Oceania 190.8 hundred million, up 9.5%; top suppliers Brazil, Thailand, Australia
@@ -1453,7 +1458,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Production cost of one WeChat article in yuan. No dated source. Not cited.
 - Agency retainer ranges for WeChat. None from a dated non-competitor source (same finding as 03A and 04A).
 - WeChat Pay "0.2% via a service provider" rates. Service-provider sales pages only. Not cited.
-- The older /insights/wechat-advertising-formats-costs/ article (April 2026) gives local promotion at 300 yuan a day and cites Zhihu, Yiban and Niaoge Biji without dates. Tencent's page says 1,000 yuan a day. Its figures are not ledger entries and were not reused.
+- The older /insights/wechat-advertising-formats-costs/ article (April 2026) gives local promotion at 300 yuan a day and cites Zhihu, Yiban and Niaoge Biji without dates. Tencent's page says 1,000 yuan a day. Its figures are not ledger entries and were not reused. Closed 2026-10-02: that article now gives 1,000 yuan a day from Tencent, in all five locales, and its unsourced 3 to 5 km radius was cut.
 
 ### WeChat verification privileges by account type
 - Value: verification costs 300 yuan per application with a one-year term (government bodies and some organizations exempt). A verified 公众号 (former subscription account) gets custom-menu external links and plain-text menu replies, some developer interfaces, advertiser access, cards, multi-agent customer service and the V badge. A verified 服务号 (service account) gets all advanced developer interfaces, can apply for WeChat Pay, plus advertiser access, cards, multi-agent service and the V badge. Personal accounts cannot be verified. Government and media 公众号 can apply for WeChat Pay after verification. The verification entity must match the account's current entity, or review may fail
@@ -1534,7 +1539,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: wechat-official-account-setup
 
 ### NOT LOGGED, searched and rejected 2026-10-01 (WeChat Official Account setup)
-- Rejection reasons from our own submission history (brief 05B). Not on the site, not in this ledger. Cut with a TODO: first-party data marker. Needs a count, period and breakdown before it can be added to the first-party section.
+- Rejection reasons from our own submission history (brief 05B). Not on the site, not in this ledger. Cut; the article stands on Tencent's published grounds (SPEC, settled fallbacks).
 - "Service accounts can push six times a month after verification" (CSDN, fesshe.com generated articles, 2025 to 2026). Tencent's push-rules page says four, and "群发次数目前不支持增加". Rejected.
 - Custom menu limits (three top-level, five sub-items): repeated everywhere, not on the current Tencent service-account menu pages. Not cited.
 - The Mini Program verification guide's failure reasons (developers.weixin.qq.com/miniprogram/product/renzheng.html, section 十二). Mini Program rules; not applied to Official Accounts.
@@ -1551,7 +1556,7 @@ data.
 - Sample: <n accounts / n posts>
 - Period: <start to end>
 - Exclusions: <what was left out and why>
-- Cleared for publication: <yes / no / client sign-off pending>
+- Cleared for publication: <yes, published on <site page> / no, not used>
 - Used in: <slug>
 ```
 
@@ -1597,14 +1602,14 @@ data.
 - Verified 1: 2026-09-28, both live pages fetched with curl, every string matched to the source files
 - Verified 2: 2026-09-28, re-fetched twice, unchanged
 - Used in: xiaohongshu-advertising-formats-costs
-- Notes: Cite as ours, as planning ranges, never as a platform average. **Open question for Cyril:** Chinese agent pages (not citable) put feed CPMs at 50 to 100 yuan, well above our 10 to 30. Confirm the advertising page against real account data. Once a sample size and period exist, add them here and replace the TODO in 04B. If the page changes, 04B changes with it.
+- Notes: Cite as ours, as planning ranges, never as a platform average. Settled 2026-10-02: these are published planning figures, not measured data, so no sample size applies; 04B labels them as our planning ranges as published on /services/advertising/ and never as a platform average or account results. Higher CPMs on Chinese agent pages are not citable and were not used. If the advertising page changes, 04B changes with it, in every locale.
 
 ### Camper case study results, as published
 - Value: followers 43,000 to 187,000 in 18 months across WeChat, RedNote (Xiaohongshu) and Weibo; engagement rate 1.2% to 4.7%; 38% of e-commerce traffic from RedNote; same-store sales up 31% year on year; no discount campaigns. Also on the page but not yet used: retention up 22%, purchase frequency 1.3 to 2.1 per customer a year
 - Sample: one client account set (Camper), three platforms
 - Period: 18 months, as stated on the case page (dates not published)
 - Exclusions: none stated on the page
-- Cleared for publication: the figures are already public on /work/camper/ with the client named and its account screenshots; the formal sign-off row below is still pending (brief 02D reused only what the page publishes and left a TODO marker; see logs/2026-09-15.md decision 1)
+- Cleared for publication: the figures are already public on /work/camper/ with the client named and its account screenshots; publication on the site is the clearance (settled 2026-10-02, see the client figures table below)
 - Verified 1: 2026-09-15, live page fetched and src/pages/work/camper.astro read, every figure confirmed
 - Verified 2: 2026-09-15, live page re-fetched with curl, "187K", "4.7%", "38%", "31%" confirmed
 - Re-verified 2026-09-22 for brief 03D, both checks repeated with curl: "43K → 187K", "4.7%", "1.2%", "38% of all eCommerce traffic" and "31% same-store sales growth" all still on the live page
@@ -1616,40 +1621,37 @@ data.
 - WeChat open rate by follower band and sector (brief 06C)
 - WeCom group retention curve and repeat purchase lift (brief 12B)
 - Engagement rate by platform and sector (brief 13D, the benchmarks report)
-- Xiaohongshu traffic pool progression from a live account (brief 02B). Still
-  needed. Brief 02B drafted 2026-09-11 and shipped without it: no first-party
-  figure was estimated, and the article's closing section traces the mechanics
-  instead. Needs a named account, sample period, exclusions and written
-  clearance before it can be added.
-- Ad benchmark ranges: CPC, CPM, cost per lead (briefs 04B, 08B)
-  Still needed. Brief 04B, drafted 2026-09-28, used the advertising page's
-  published planning ranges labeled as ours, cut cost per lead, and carries a
-  TODO asking for an account count and period. See logs/2026-09-28.md.
-- Xiaohongshu business account application outcomes: number of applications
-  submitted, period, count by rejection reason, exclusions (brief 03B). Brief
-  03B asked for rejection reasons "from our own submission history, labeled as
-  ours". Drafted 2026-09-18 without them: nothing was estimated and the
-  rejection section was built entirely on grounds the platform publishes. Needs
-  a sample size, period, exclusions and written clearance before it can be
-  added. See logs/2026-09-18.md.
+- Ad benchmark ranges: CPC, CPM, cost per lead (brief 08B). Brief 04B used
+  the advertising page's published planning ranges labeled as ours and cut
+  cost per lead (settled fallback).
+
+Closed 2026-10-02, not wanted again: the 02B traffic pool progression and the
+03B rejection reasons. Both articles stand on platform sources (SPEC,
+settled fallbacks). A brief that needs one of the open lines above uses it
+only once it is logged here with value, sample, period and clearance;
+otherwise the fallback applies, and a brief that cannot stand without it is
+set to blocked by its draft run.
 -->
 
-## Client figures requiring sign-off
+## Client figures
 
-| Client | Figure | Brief | Cleared |
+Settled 2026-10-02 (see `CLAUDE.md`, named clients): a client figure or line
+is used only as published on that client's live `/work/<client>/` page,
+quoted and cited to the page. Publication on the site, with the client named,
+is the clearance. Anything the page does not publish is not used and not
+estimated. No marker, no separate sign-off chase.
+
+| Client | Case study page | Brief | Used |
 |---|---|---|---|
-| Camper | 43K to 187K followers, 31% sales lift, 18 months | 03D, 02D | pending. 02D (drafted 2026-09-15) and 03D (drafted 2026-09-22) both reused ONLY the figures already published on /work/camper/ and both carry TODO: client sign-off markers. 03D additionally held out two things the brief asked for, because they are not public and were not estimated: the month-by-month follower series with its three inflection points, and the two underperforming campaigns with their post-mortems. Formal written clearance is now blocking real content, not just a marker. Chase before the 2026-09-25 publish. |
-| Viessmann | outcomes to confirm | 06D, 07D | pending |
-| iGuzzini | outcomes to confirm | 06D, 07D | pending |
-| Marriott | outcomes to confirm | 05D | pending |
-| Jaguar Land Rover | outcomes to confirm | 09D | pending |
-| JAC Motors | outcomes to confirm | 09D | pending |
-| Langnese | outcomes to confirm | 04D | pending. 04D (drafted 2026-09-29) uses NO figure: the live /work/ page publishes none. Only published qualitative lines are quoted, with TODO: client sign-off markers. The page line "domestic brands cost half as much" is used as our research finding. |
-| Master Martini | outcomes to confirm | 04D | pending. 04D (drafted 2026-09-29) uses NO figure: the live /work/ page publishes none. Only published qualitative lines are quoted, with TODO: client sign-off markers. Note: the work ran on Instagram and Facebook in Malaysia, Hong Kong, Singapore, Indonesia and Thailand, not in mainland China; 04D says so. |
-| Mission Foods | outcomes to confirm | 04D | pending. 04D (drafted 2026-09-29) uses NO figure: the live /work/ page publishes none. Only published qualitative lines are quoted, with TODO: client sign-off markers. |
-
-Do not publish a client figure marked pending. Leave
-`TODO: client sign-off` in the draft and flag it in the run log.
+| Camper | /work/camper/ (43K to 187K followers, 31% sales lift, 18 months) | 02D, 03D | Published figures only, quoted from the page. The monthly series and the two campaign post-mortems are not public and are not used. |
+| Viessmann | /work/ page if published | 06D, 07D | Only what the page publishes |
+| iGuzzini | /work/ page if published | 06D, 07D | Only what the page publishes |
+| Marriott | /work/ page if published | 05D | Only what the page publishes |
+| Jaguar Land Rover | /work/ page if published | 09D | Only what the page publishes |
+| JAC Motors | /work/ page if published | 09D | Only what the page publishes |
+| Langnese | /work/langnese/ | 04D | No figure (the page publishes none). Qualitative lines quoted from the page; "domestic brands cost half as much" is quoted as the page's research finding. |
+| Master Martini | /work/master-martini/ | 04D | No figure. Qualitative lines quoted from the page. The work ran on Instagram and Facebook in Malaysia, Hong Kong, Singapore, Indonesia and Thailand, not in mainland China; 04D says so and brief 04D was amended. |
+| Mission Foods | /work/mission-foods/ | 04D | No figure. Qualitative lines quoted from the page. |
 
 ## Retired
 

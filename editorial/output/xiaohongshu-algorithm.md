@@ -478,13 +478,7 @@ INTERNAL LINKS:
   per the brief. Note that /insights/xiaohongshu-business-account-setup/ is
   brief 03B and is not published yet; if it is still missing at publish time,
   leave that reference as plain text and wire it when 03B goes live.
-CLIENT SIGN-OFF NEEDED:
-  TODO: client sign-off. Brief 02B asks for a real traffic pool progression
-  and a note traced to 40,000 views from an account we run, plus an annotated
-  analytics screenshot. None of it is in sources/verified-sources.md, which
-  lists "Xiaohongshu traffic pool progression from a live account (brief 02B)"
-  under Needed. No first-party figure was estimated. The article ships
-  complete without it. To add it later, the data pull needs the same
-  treatment as brief 13D: named account, sample period, exclusions and
-  written clearance, logged in the first-party section of the ledger.
+CLIENT FIGURES: none. The brief asked for a traffic pool progression from an
+  account we run; none is logged in the ledger, so the closing section traces
+  the published mechanics instead (SPEC, settled fallbacks).
 -->

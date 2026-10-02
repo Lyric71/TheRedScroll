@@ -110,6 +110,15 @@ on). URL segments are localized: `/fr/secteurs/`, `/zh/hangye/`,
 `/de/branchen/`, `/es/sectores/`, and `/fr/outils/`, `/zh/gongju/`,
 `/de/tools/`, `/es/herramientas/`.
 
+No publishing job leaves a TODO behind (Cyril, Oct 2, 2026): no TODO marker,
+no "open items", no "for a person" list, no deferral, in any draft, page, log
+or email. Every item a run finds is closed inside the run (research or cut,
+fix the older page it contradicts in every locale, amend the brief, apply the
+settled fallback in `editorial/SPEC.md`); an item only Cyril can close stops
+the run before publishing. `npm run check:todo` (also run by `npm run build`)
+fails on any marker in `src/content`. Full rule: `editorial/CLAUDE.md`, "No
+TODO leaves a run".
+
 Two standing rules from Cyril: when the runbook asks for something the repo
 cannot do, use what the repo has and log the substitution. Every pipeline
 step runs on the most capable model available, never a faster or smaller

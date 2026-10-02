@@ -4,6 +4,7 @@ description: "Six cost lines. Three carry a figure the platform or its marketpla
 metaTitle: "Xiaohongshu Marketing Cost in 2026"
 metaDescription: "What Xiaohongshu marketing costs in 2026: verification, content, KOC seeding, KOL fees, ad spend and agency fees, with three worked examples."
 publishDate: 2026-09-14
+updatedDate: 2026-10-02
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Strategy"
@@ -22,7 +23,7 @@ sourced and dated.*
 | 2. Content production | No platform rate, plus a 10% marketplace fee | Niaoge Biji, 2022 |
 | 3. KOC seeding | 20 to 60 dollars per post | Long Advisory, 2026 |
 | 4. KOL fees | 10,000 to 35,000 dollars per campaign | Long Advisory, 2026 |
-| 5. Paid | From 75 yuan self-serve; ad deposit set by your agent | Woshipm, 2026 |
+| 5. Paid | From 75 yuan self-serve; no published ad deposit minimum | Woshipm, 2026 |
 | 6. Agency fee | Published on [TheRedScroll's pricing page](/pricing/) | TheRedScroll |
 
 Dollar figures are rounded at roughly seven yuan to the dollar. Trust the
@@ -47,7 +48,7 @@ expensive in coordination.
 line that swallows a launch budget.
 
 **Paid** is money to the platform, through the self-serve boost tool or the
-Jiguang (聚光) ad platform.
+Juguang (聚光) ad platform.
 
 Last, **the agency fee**, covering strategy, Chinese copy, creator sourcing,
 ad operations and reporting.
@@ -230,18 +231,21 @@ Seventy-five yuan is about eleven dollars. For a brand still testing whether
 its Chinese creative works, that's the whole first experiment. Publish six
 notes, boost each at the floor, see which one the feed carries.
 
-Serious money goes through Jiguang (聚光), the bidding platform behind [search
-and feed ads](/insights/xiaohongshu-advertising-formats-costs/). For foreign advertisers, that door changed this year.
+Serious money goes through Juguang (聚光), the bidding platform behind [search
+and feed ads](/insights/xiaohongshu-advertising-formats-costs/). Foreign advertisers often hear they must go through an agent. No
+official Xiaohongshu document says so.
 
-> Since 2 February 2026, overseas merchants can no longer open a Jiguang
-> account on their own. They apply through an authorized Xiaohongshu agent,
-> which reviews their qualifications before submitting to the platform.
-> Source: Ziyouxing Studio (自由行Studio), Xiaohongshu Jiguang overseas guide, August 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
+> No official Xiaohongshu document requires overseas advertisers to use an
+> agent. Juguang's sign-up offers two account types, advertiser and agency.
+> Overseas entities have their own industry admission list, and some
+> categories are not yet open to them.
+> Source: Ziyouxing Studio (自由行Studio), Xiaohongshu Juguang guide, updated September 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
 
-We're not printing a first-deposit figure, and you should be wary of anyone
-who does. The numbers in circulation come from reseller blogs, vary by agent,
-and aren't published by the platform. Ask the agent opening your account for
-its threshold in writing, before you sign anything.
+So check your category before you plan spend. We're not printing a
+first-deposit figure, and you should be wary of anyone who does. The numbers
+in circulation come from reseller blogs, vary by agent, and aren't published
+by the platform. If an agent opens your account, get its threshold in
+writing before you sign anything.
 
 No published Xiaohongshu CPC or CPM benchmark exists either. Bids move with
 your objective and your competition. The only cost per click that matters is
@@ -292,8 +296,8 @@ fees, plus the 10% Pugongying service fee. Boost the six best notes at the
 dollars for the quarter.
 
 **A working month.** Forty KOC notes across ten queries, 800 to 2,400 dollars
-plus the 10% fee, and continuous Jiguang spend at whatever your agent's floor
-allows. No KOL yet. This is the level where you learn which queries convert.
+plus the 10% fee, and continuous Juguang spend from the first deposit agreed
+at account opening. No KOL yet. This is the level where you learn which queries convert.
 
 **A launch quarter.** One micro KOL campaign at 10,000 to 35,000 dollars. Wrap
 it in 100 KOC notes at 2,000 to 6,000 dollars, to hold the search results the
@@ -328,7 +332,7 @@ A hidden note costs the full creator fee and returns nothing.
 **Paying the rate card.** See the 11.6% against the 3.4% above. Brands that
 accept the first quote pay for the whole market's inflation.
 
-**Buying reach before the creative works.** Jiguang money spent on a note that
+**Buying reach before the creative works.** Juguang money spent on a note that
 has not proven itself organically buys an expensive read of a bad note. The
 75-yuan boost exists for exactly this reason.
 
@@ -350,10 +354,11 @@ chasing each creator.
 ### What is the minimum ad budget on Xiaohongshu?
 
 Seventy-five yuan, about eleven dollars, buys one order on the self-serve
-boost tool, and only for a note published in the last 90 days. The Jiguang
-(聚光) bidding platform is different: since February 2026 overseas advertisers
-open accounts through an authorized agent, and that agent sets the first
-deposit. Get the figure in writing before you sign.
+boost tool, and only for a note published in the last 90 days. The Juguang
+(聚光) bidding platform publishes no minimum first deposit. No official rule
+requires overseas advertisers to use an agent, but some categories are not
+yet open to overseas entities, so check yours first. If an agent opens the
+account, get its figure in writing before you sign.
 
 ### How much does Blue V verification cost?
 

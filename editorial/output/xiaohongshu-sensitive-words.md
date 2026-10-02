@@ -276,9 +276,6 @@ it describes what to write.
 | 扫码进群 (scan to join our group)             | QR code to another platform                        | The official lead-capture tool or business card             |
 | 震惊 (shocking) in a title                    | Exaggerated title, Article 7                       | What the note actually shows                                |
 
-TODO: first-party sample. The brief asks for examples from our own moderated
-posts, labeled as ours. None are cleared yet, so none are shown.
-
 <!-- SECTION: Limited note -->
 
 ## What to do when a note is already limited
@@ -431,7 +428,7 @@ INTERNAL LINKS:
   IN-LINKS to add on publish, per the brief: from
   /insights/xiaohongshu-algorithm/ and /insights/xiaohongshu-account-not-growing/
   (its reason 4, shadow limits, is the natural anchor).
-CLIENT SIGN-OFF NEEDED: none. No client figures used. The brief asked for
-  examples from our own moderated posts: none exist in cleared form. See
-  the TODO in the rewrite section.
+CLIENT FIGURES: none. No client figures used. The brief asked for examples
+  from our own moderated posts; none are logged in the ledger, so the rewrite
+  section stands on published rules (SPEC, settled fallbacks).
 -->

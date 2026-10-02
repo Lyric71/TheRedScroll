@@ -4,6 +4,7 @@ description: "WeChat advertising runs across Moments, Official Accounts, Channel
 metaTitle: "WeChat ads: every format and what they cost"
 metaDescription: "WeChat has six ad formats and three pricing models. Here is what each placement costs and how international brands should plan their first campaign."
 publishDate: 2026-04-05
+updatedDate: 2026-10-02
 author: "TheRedScroll"
 platforms: ["wechat"]
 category: "Platforms"
@@ -79,7 +80,7 @@ This is where a lot of brands get tripped up. The minimums depend entirely on yo
 |---|---|
 | Scheduled buy | 50,000 yuan per campaign (around $7,000) |
 | Bidding buy | 1,000 yuan top-up, 1,000 yuan per day budget |
-| Local promotion | 300 yuan per day (around $42) |
+| Local promotion | 1,000 yuan per day (around $140), no 50,000 yuan threshold |
 
 The 50,000 yuan scheduled buy is designed for larger brand pushes. You lock in guaranteed impressions 1-28 days in advance. Think product launches, seasonal campaigns, or major events. It is a "pay now, guarantee eyeballs" model.
 
@@ -87,7 +88,10 @@ The 50,000 yuan scheduled buy is designed for larger brand pushes. You lock in g
 
 For international brands testing the waters, the bidding model at 1,000 yuan per day is the most practical starting point. You control daily spend, adjust targeting in real time, and only pay for impressions or clicks that actually happen.
 
-Local promotion at 300 yuan per day is the cheapest entry point but only works for geo-targeted campaigns within 3-5 km of a physical location. Good for restaurants, retail stores, or event venues. Not useful for national brand campaigns.
+Local promotion starts at 1,000 yuan per day (around $140). That's the same daily floor as bidding, so it isn't a cheaper way in. What it skips is the 50,000 yuan scheduled buy threshold. It only works for campaigns aimed at people near a physical location. Good for restaurants, retail stores, or event venues. Not useful for national brand campaigns.
+
+> Local promotion ads are exempt from the 50,000 yuan threshold and start at 1,000 yuan per day.
+> Source: Tencent Ads (腾讯广告), WeChat ads product page, confirmed October 2026. https://e.qq.com/topic/marketing/industry/weixin/
 
 ![A WeChat Official Account article with a banner ad at the bottom of the page](/images/blog/wechat-article-ad.webp)
 

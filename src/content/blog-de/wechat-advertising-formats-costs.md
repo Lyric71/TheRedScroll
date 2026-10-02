@@ -4,6 +4,7 @@ description: "Auf WeChat reicht die Werbung von Moments über Official Accounts 
 metaTitle: "WeChat-Werbung: Formate und Preise"
 metaDescription: "Sechs Werbeplätze, drei Preismodelle. Kosten je Format und konkrete Hinweise für die erste WeChat-Kampagne."
 publishDate: 2026-04-05
+updatedDate: 2026-10-02
 author: "TheRedScroll"
 platforms: ["wechat"]
 category: "Plattformen"
@@ -79,7 +80,7 @@ An dieser Stelle staunen Marken oft. Die Mindestbeträge hängen vollständig vo
 |---|---|
 | Direkteinkauf | 50.000 Yuan pro Kampagne (rund 6.500 €) |
 | Bietverfahren | 1.000 Yuan Aufladung, 1.000 Yuan Tagesbudget |
-| Lokale Werbung | 300 Yuan pro Tag (rund 40 €) |
+| Lokale Werbung | 1.000 Yuan pro Tag (rund 130 €), ohne die Schwelle von 50.000 Yuan |
 
 Die 50.000 Yuan im Direkteinkauf gelten als Format für Großoperationen. Hier reserviert man garantierte Einblendungen zwischen einem und 28 Tagen im Voraus: Produkteinführungen, saisonale Kampagnen, Veranstaltungen. Man zahlt, die Sichtbarkeit ist gesichert.
 
@@ -87,7 +88,10 @@ Die 50.000 Yuan im Direkteinkauf gelten als Format für Großoperationen. Hier r
 
 Wer das Terrain antastet, fährt mit dem Bietverfahren zu 1.000 Yuan Tagesbudget weit zugänglicher. Das Tagesbudget bleibt unter Kontrolle, das Targeting lässt sich in Echtzeit anpassen, gezahlt wird nur für tatsächlich ausgespielte Einblendungen oder Klicks.
 
-Die lokale Werbung zu 300 Yuan pro Tag ist die günstigste Option, deckt aber nur einen Radius von 3 bis 5 Kilometern um einen physischen Standort ab. Restaurants, Geschäfte, Veranstaltungsorte. Für nationale Bekanntheit ist das nicht das richtige Format.
+Die lokale Werbung beginnt bei 1.000 Yuan pro Tag (rund 130 €) und liegt damit genau auf der Untergrenze des Bietverfahrens. Ein günstigerer Einstieg ist sie also nicht. Ihr Vorteil liegt woanders: Die Schwelle von 50.000 Yuan, die für den Direkteinkauf gilt, entfällt. Dafür erreicht sie nur Menschen in der Nähe eines physischen Standorts. Restaurants, Geschäfte, Veranstaltungsorte. Für nationale Bekanntheit ist das nicht das richtige Format.
+
+> Lokale Werbeanzeigen starten ab 1.000 Yuan pro Tag, die Schwelle von 50.000 Yuan gilt für sie nicht.
+> Quelle: Tencent Ads (腾讯广告), Produktseite WeChat-Werbung, geprüft im Oktober 2026. https://e.qq.com/topic/marketing/industry/weixin/
 
 ![Ein WeChat-Artikel in einem Official Account mit einer Werbebannerplatzierung am Seitenende](/images/blog/wechat-article-ad.webp)
 

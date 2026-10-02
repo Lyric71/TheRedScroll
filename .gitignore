@@ -37,5 +37,6 @@ lh-*.json
 tmp_*
 /*.html
 
-# editorial pipeline console output (regenerable)
+# editorial pipeline console output and scratch intermediates (regenerable)
 editorial/logs/runs/
+editorial/logs/scratch/

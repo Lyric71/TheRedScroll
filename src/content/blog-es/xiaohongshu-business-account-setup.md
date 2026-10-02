@@ -4,6 +4,7 @@ description: "Para verificar una cuenta de empresa en Xiaohongshu no hace falta 
 metaTitle: "Cuenta de empresa en Xiaohongshu: guía"
 metaDescription: "Abrir una cuenta de empresa en Xiaohongshu desde el extranjero: documentos, verificación Blue V, tasas, motivos de rechazo y plazos de revisión."
 publishDate: 2026-09-22
+updatedDate: 2026-10-02
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Plataformas"
@@ -27,7 +28,7 @@ Esto conviene tenerlo listo antes de empezar.
 
 La tasa es modesta; la revisión, no. Calcule de cuatro a siete días laborables para un expediente limpio, y más para un primer intento: la plataforma comprueba por separado su entidad, el nombre de la cuenta y los datos de verificación, y cualquiera de los tres basta para devolverle el expediente.
 
-Todas las fuentes de este artículo se comprobaron dos veces en septiembre de 2026.
+Todas las fuentes de este artículo se comprobaron dos veces, en septiembre u octubre de 2026.
 
 ## Paso 1: elegir el tipo de cuenta antes de registrar nada
 
@@ -68,7 +69,7 @@ Para una sociedad continental eso significa la licencia de actividad con el cód
 > Incorporation. Las sociedades de Hong Kong necesitan ambos. Los documentos
 > de registro que no estén en chino requieren una traducción al chino sellada
 > con el sello de la sociedad titular de la marca.
-> Fuente: Xiaohongshu (小红书), guía de registro y apertura de cuenta en la plataforma Jiguang, documentación de la plataforma, comprobada en septiembre de 2026. https://fe-video-qc.xhscdn.com/fe-platform/cc8a5f81ddb6d91d6be9dfb34e62b49b999f234b/%E8%81%9A%E5%85%89%E5%B9%B3%E5%8F%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%BC%80%E6%88%B7%E6%B5%81%E7%A8%8B.pdf
+> Fuente: Xiaohongshu (小红书), guía de registro y apertura de cuenta en la plataforma Juguang, documentación de la plataforma, comprobada en septiembre de 2026. https://fe-video-qc.xhscdn.com/fe-platform/cc8a5f81ddb6d91d6be9dfb34e62b49b999f234b/%E8%81%9A%E5%85%89%E5%B9%B3%E5%8F%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%BC%80%E6%88%B7%E6%B5%81%E7%A8%8B.pdf
 
 Fíjese en que son dos sellos distintos. Para la verificación de la cuenta, un documento en un idioma que no sea chino ni inglés necesita una traducción con el sello de una empresa de traducción. Para la cualificación publicitaria, la traducción del documento de registro lleva el sello del propio titular de la marca. Son dos exigencias y no se sustituyen entre sí. Encargue las dos versiones de una sola vez.
 
@@ -80,7 +81,7 @@ Si el nombre que quiere coincide con una marca registrada, sube el certificado. 
 > exige la notificación de admisión, y la solicitud debe tener al menos tres
 > meses contados desde la fecha de admisión sellada. Una marca en cesión solo
 > se acepta de la sociedad que la recibe.
-> Fuente: Xiaohongshu (小红书), guía de registro y apertura de cuenta en la plataforma Jiguang, documentación de la plataforma, comprobada en septiembre de 2026. https://fe-video-qc.xhscdn.com/fe-platform/cc8a5f81ddb6d91d6be9dfb34e62b49b999f234b/%E8%81%9A%E5%85%89%E5%B9%B3%E5%8F%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%BC%80%E6%88%B7%E6%B5%81%E7%A8%8B.pdf
+> Fuente: Xiaohongshu (小红书), guía de registro y apertura de cuenta en la plataforma Juguang, documentación de la plataforma, comprobada en septiembre de 2026. https://fe-video-qc.xhscdn.com/fe-platform/cc8a5f81ddb6d91d6be9dfb34e62b49b999f234b/%E8%81%9A%E5%85%89%E5%B9%B3%E5%8F%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%BC%80%E6%88%B7%E6%B5%81%E7%A8%8B.pdf
 
 Esa regla de los tres meses atrapa a las marcas que registran en China y quieren abrir cuentas la misma semana. Si aún no ha registrado, hágalo ya y lea mientras espera [nuestra guía de marketing en Xiaohongshu para marcas extranjeras](/es/analisis/xiaohongshu-marketing-foreign-brands/).
 
@@ -147,7 +148,7 @@ Las marcas que venden un servicio y no un producto no tienen tienda. Tienen capt
 
 ## Paso 5: vincular la cuenta publicitaria
 
-La promoción de pago en Xiaohongshu (小红书) va por Jiguang (聚光). No se puede empezar por ahí. La cuenta profesional tiene que existir y estar verificada antes de que la plataforma publicitaria le hable.
+La promoción de pago en Xiaohongshu (小红书) va por Juguang (聚光). No se puede empezar por ahí. La cuenta profesional tiene que existir y estar verificada antes de que la plataforma publicitaria le hable.
 
 > La secuencia es: registrar la cuenta en la aplicación y vincular un número
 > de teléfono, entrar en la plataforma publicitaria con ese número, elegir una
@@ -155,7 +156,7 @@ La promoción de pago en Xiaohongshu (小红书) va por Jiguang (聚光). No se 
 > la cuenta profesional y presentar después las cualificaciones de promoción
 > en la plataforma publicitaria. La creatividad se revisa cuando las
 > cualificaciones han pasado.
-> Fuente: Xiaohongshu (小红书), guía de registro y apertura de cuenta en la plataforma Jiguang, documentación de la plataforma, comprobada en septiembre de 2026. https://fe-video-qc.xhscdn.com/fe-platform/cc8a5f81ddb6d91d6be9dfb34e62b49b999f234b/%E8%81%9A%E5%85%89%E5%B9%B3%E5%8F%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%BC%80%E6%88%B7%E6%B5%81%E7%A8%8B.pdf
+> Fuente: Xiaohongshu (小红书), guía de registro y apertura de cuenta en la plataforma Juguang, documentación de la plataforma, comprobada en septiembre de 2026. https://fe-video-qc.xhscdn.com/fe-platform/cc8a5f81ddb6d91d6be9dfb34e62b49b999f234b/%E8%81%9A%E5%85%89%E5%B9%B3%E5%8F%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%BC%80%E6%88%B7%E6%B5%81%E7%A8%8B.pdf
 
 Dos exigencias menores tumban solicitudes en este punto. Su categoría sectorial tiene que coincidir con el objeto social que figura en sus documentos de registro, no con la categoría que a usted le parece más ajustada. Y su avatar tiene que ser el logotipo de la marca, sin ninguna persona.
 
@@ -163,17 +164,14 @@ Dos exigencias menores tumban solicitudes en este punto. Su categoría sectorial
 > zhongcao (种草), la venta de producto, la captación de contactos y la
 > promoción de directos. El saldo de la cuenta y el presupuesto diario se
 > comparten con el centro de promoción de la cuenta profesional.
-> Fuente: Xiaohongshu (小红书), manual de producto de la plataforma Jiguang, documentación de la plataforma, comprobada en septiembre de 2026. https://fe-video-qc.xhscdn.com/fe-platform/37f82988d0e9273cd645bb819c37a4e0f697bc70.pdf
+> Fuente: Xiaohongshu (小红书), manual de producto de la plataforma Juguang, documentación de la plataforma, comprobada en septiembre de 2026. https://fe-video-qc.xhscdn.com/fe-platform/37f82988d0e9273cd645bb819c37a4e0f697bc70.pdf
 
-Y después, la regla que en 2026 lo cambió todo para los anunciantes extranjeros.
+Queda la pregunta que más repiten los anunciantes extranjeros: ¿hace falta una agencia para comprar publicidad?
 
-> Desde el 2 de febrero de 2026, los comerciantes extranjeros pasaron de la
-> apertura de cuenta en autoservicio en la plataforma publicitaria Jiguang a
-> una admisión por invitación. Deben entrar por el canal de invitación, a
-> través de una agencia autorizada por Xiaohongshu.
-> Fuente: Ziyouxing Studio (自由行Studio), guía de Jiguang para Xiaohongshu en el exterior, actualizada en agosto de 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
+> Al registrarse, Juguang ofrece dos tipos de cuenta: anunciante y agencia. Ningún documento oficial de Xiaohongshu obliga a un anunciante extranjero a pasar por un agente. Las entidades extranjeras sí tienen una lista de admisión por sectores propia, en la que algunas categorías figuran como todavía no abiertas.
+> Fuente: Ziyouxing Studio (自由行Studio), guía de Juguang de Xiaohongshu, actualizada en septiembre de 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
 
-Una entidad extranjera ya no abre sola su cuenta publicitaria. Una agencia autorizada presenta por ella. [Nuestra página de agencia RedNote](/es/agencia-rednote/) explica cómo funciona eso de nuestro lado. Téngalo previsto: una marca que presupuesta acompañamiento de pago y descubre luego que necesita un intermediario pierde un mes.
+Así que coteje su categoría con esa lista antes de planificar cualquier inversión en medios. Recurrir a una agencia es una decisión comercial, no una condición de acceso. [Nuestra página de agencia RedNote](/es/agencia-rednote/) explica de qué nos encargamos si opta por ello.
 
 ## Los cinco motivos de rechazo de una solicitud
 
@@ -217,7 +215,7 @@ Menos de lo que imagina, y más de lo que la plataforma reconoce en un solo siti
 
 Puede verificar. La guía de empresa cita a las sociedades extranjeras y a las de Hong Kong, Macao y Taiwán entre las elegibles, y la lista de documentos de la plataforma publicitaria le dedica una columna. Lo que cambia es el itinerario.
 
-Solicita en la web, nunca en la aplicación. Presenta un Business Registration o un Certificate of Incorporation en lugar de una licencia de actividad, y los dos si es una sociedad de Hong Kong. Añade traducciones con el sello que corresponde en cada caso. Vende por la vía transfronteriza en vez de por una tienda continental. Y desde febrero de 2026 llega a la plataforma publicitaria a través de una agencia autorizada, en lugar de abrir la cuenta usted mismo.
+Solicita en la web, nunca en la aplicación. Presenta un Business Registration o un Certificate of Incorporation en lugar de una licencia de actividad, y los dos si es una sociedad de Hong Kong. Añade traducciones con el sello que corresponde en cada caso. Vende por la vía transfronteriza en vez de por una tienda continental. Y antes de comprar publicidad, coteja su categoría con una lista de admisión aparte, reservada a las entidades extranjeras.
 
 Donde la ausencia de sociedad china muerde de verdad es en la cadena de la marca. Cuando la marca la tiene su matriz extranjera y la cuenta la abre otra sociedad, la plataforma admite un nivel de autorización de distribuidor general y ni uno más. Si su estructura va de la sede a la oficina regional y de ahí al distribuidor local, ese distribuidor no puede ser el titular de la cuenta. Arregle la estructura o registre la marca en China. [Nuestro servicio de entrada en el mercado chino](/es/servicios/entrada-mercado/) existe en buena medida por problemas de esta forma. Si hace falta o no una sociedad china en las cuatro grandes plataformas es otra cuestión, que [nuestro análisis sobre las redes sociales en China sin sociedad local](/es/analisis/chinese-entity-social-media/) resuelve plataforma por plataforma.
 

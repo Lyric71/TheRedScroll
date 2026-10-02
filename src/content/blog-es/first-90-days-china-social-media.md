@@ -4,6 +4,7 @@ description: "Las cuentas se abren en dos semanas. El nombre chino tarda meses e
 metaTitle: "Redes sociales chinas: los primeros 90 días"
 metaDescription: "Cuentas, verificación, nombre chino, primeros contenidos y primeros contactos: el recorrido de un lanzamiento en China, semana a semana."
 publishDate: 2026-09-10
+updatedDate: 2026-10-02
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "Estrategia"
@@ -261,16 +262,19 @@ mercado de creadores de la plataforma,
 categoría devuelve entonces a personas reales usándolo. Después, una prueba
 de pago detrás de las dos o tres notas que ya han demostrado algo.
 
-Para una empresa extranjera, la publicidad pasa por un agente.
+Para una empresa extranjera, la cuenta publicitaria empieza por comprobar
+la categoría.
 
-> Desde el 2 de febrero de 2026, los comerciantes extranjeros solo acceden a
-> la plataforma publicitaria Jiguang de Xiaohongshu a través de un agente
-> autorizado, sin apertura de cuenta en autoservicio.
-> Fuente: Ziyouxing Studio (自由行Studio), guía de Jiguang para anunciantes extranjeros en Xiaohongshu, agosto de 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
+> Ningún documento oficial de Xiaohongshu obliga a un anunciante extranjero a
+> recurrir a un agente. Al registrarse, su plataforma publicitaria Juguang
+> (聚光) ofrece dos tipos de cuenta: anunciante y agencia. Las entidades
+> extranjeras tienen su propia lista de admisión por sectores, y algunas
+> categorías aún no están abiertas para ellas.
+> Fuente: Ziyouxing Studio (自由行Studio), guía de Xiaohongshu Juguang, actualizada en septiembre de 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
 
-La apertura de cuenta por parte del agente entra, por tanto, en el plan de la
-semana 9, y el depósito que fije es inversión publicitaria: facturada a coste
-y con la factura de la plataforma adjunta. Lo que cuestan el seeding y la
+La comprobación de la categoría y la apertura de la cuenta en Juguang entran,
+por tanto, en el plan de la semana 9. El depósito es inversión publicitaria:
+facturada a coste y con la factura de la plataforma adjunta. Lo que cuestan el seeding y la
 prueba lo tratamos en nuestra guía sobre
 [cuánto cuesta el marketing en redes sociales chinas en 2026](/es/analisis/china-social-media-marketing-cost/).
 La tarifa propia de TheRedScroll está en su [página de precios](/es/precios/).

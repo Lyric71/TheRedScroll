@@ -205,13 +205,16 @@ Everything the designer and developer need, in one block.
 ```
 <!-- ASSET BRIEF
 TABLES: <list, with the data each needs>
-CHARTS: <type, axes, data source, what it must show>
-SCREENSHOTS: <what to capture, what to blur>
-DOWNLOADS: <file, format, gate or no gate>
+CHARTS: <none, or a chart the publish step can build from a sourced table>
+SCREENSHOTS: <none, unless the run itself can capture it; see Settled fallbacks>
+DOWNLOADS: <none, unless the run itself produces the file>
 INTERNAL LINKS: <anchor text> -> <url>, one per line
-CLIENT SIGN-OFF NEEDED: <any client figure used>
+CLIENT FIGURES: <none, or each figure with the /work/<client>/ page it is quoted from>
 -->
 ```
+
+The asset brief lists what the publish step will wire, not work for someone
+else later. Nothing in it is left "for a designer" or "to chase".
 
 ## SEO
 
@@ -261,7 +264,7 @@ the image step.
 | `quality_passed` | content-quality-us finished on the file |
 | `image_ready` | hero image checked and saved to `public/images/blog/` |
 | `published` | createblogarticle finished, build passed, Resend email sent |
-| `blocked` | stopped on one of the four flag conditions, see `notes` |
+| `blocked` | stopped because an item needs Cyril's decision, reason in `notes` (see "When to stop") |
 
 ## Definition of done (steps 0 to 3)
 
@@ -272,6 +275,7 @@ Verify each by counting or checking, not by assuming.
 - [ ] Zero em dashes. Search the file for the character.
 - [ ] Zero exclamation marks.
 - [ ] Zero deliberate typos or planted errors.
+- [ ] Zero TODO markers and no open items: `node editorial/scripts/check-no-todo.mjs editorial/output/<slug>.md` passes, and every gap found is closed in the run log under "Items found and closed".
 - [ ] No summary or conclusion section. File ends on the CTA plus comment blocks.
 - [ ] No "why work with us" framing.
 - [ ] No banned words from `STYLE_GUIDE.md`.
@@ -290,18 +294,49 @@ Verify each by counting or checking, not by assuming.
 - [ ] `schedule.csv` row updated with status and the three dates.
 - [ ] `logs/YYYY-MM-DD.md` written.
 
-## When to stop and ask
+## When to stop, and the settled fallbacks
 
-Draft without pausing, with four exceptions. In each case, write the draft up
-to that point, leave a clear marker, and flag it in the log.
+Draft without pausing. Every gap a run meets is closed inside the run (see
+`CLAUDE.md`, "No TODO leaves a run"). These fallbacks are settled. Apply them,
+record in the run log what was found and how it was closed, and do not raise
+the same gap again in a log, a draft or an email.
 
-1. **A required figure cannot be sourced.** Cut the claim, mark
-   `TODO: unsourced claim removed`, and say which section is now thinner.
-2. **A client number is needed and is not in the ledger.** Mark
-   `TODO: client sign-off` and leave the sentence incomplete rather than
-   estimating.
-3. **A competitor claim in a listicle cannot be verified on their live site.**
-   Drop that competitor from the list rather than publishing an unsourced
-   claim about a named company. This one is not negotiable.
-4. **The brief conflicts with what the site actually says.** The site wins.
-   Note the conflict so the brief can be corrected.
+1. **A required figure cannot be sourced.** Cut the claim. The article says
+   only what is sourced, and where it helps the reader it says plainly that
+   no published figure exists. No marker in the file.
+2. **A client figure is needed.** Use only what the client's live
+   `/work/<client>/` page publishes, quoted and cited to that page (see
+   `CLAUDE.md`, named clients). Anything else is cut. No marker.
+3. **A first-party figure is needed** (our own account data, submission
+   history, moderated posts, delivery hours). Use it only if it is logged in
+   the ledger's first-party section with value, sample, period and
+   clearance. A figure published on one of our own site pages may be quoted
+   as published there, labeled as ours and as a planning or published
+   figure, never as measured data. Otherwise the section is built on
+   platform and regulator sources and the first-party angle is dropped. No
+   marker.
+4. **A competitor claim in a listicle cannot be verified on their live
+   site.** Drop that competitor from the list. Not negotiable.
+5. **The brief conflicts with what the site or the research shows.** The
+   site and the sources win. Amend the brief file in `briefs/` in the same
+   run, and every later brief that repeats the same error.
+6. **The new piece contradicts an existing page** (an older article or a
+   site page). Fix the existing page in the same run, in every locale, with
+   `updatedDate` on each content file whose body changed.
+7. **A screenshot, chart, flowchart or download the brief asks for cannot be
+   produced by the run.** It is not produced and not left for a designer.
+   The article carries the same information as text or a table. List it as
+   none in the asset brief.
+8. **An in-link from an older page.** Add it in every locale where the
+   source page and the target both exist, as part of the publish.
+9. **A cited source is older than 12 months.** Allowed when no newer source
+   exists and the date is in the citation, so the reader can judge it.
+10. **A source is down at check time.** Do not cite it. If a later brief may
+    need it, add a dated recheck note on its ledger entry.
+
+**Stop only when the article cannot stand without a decision from Cyril**
+(for example a brief whose whole point is an unpublished client result). The
+draft run sets the row to `blocked` with the reason in `notes` and stops. The
+publish run never publishes a row with an unclosed item: it leaves the row,
+does not commit or push, and emails the stop reason. Nothing ships with a
+TODO attached.

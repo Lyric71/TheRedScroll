@@ -529,5 +529,5 @@ INTERNAL LINKS:
     from /insights/china-social-media-marketing-cost/ and from
     /insights/xiaohongshu-marketing-cost/, EN only unless a locale pass is
     approved separately.
-CLIENT SIGN-OFF NEEDED: none. No client figures used, no client named.
+CLIENT FIGURES: none. No client figures used, no client named.
 -->

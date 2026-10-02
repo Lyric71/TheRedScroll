@@ -1,13 +1,14 @@
 ---
 title: "Xiaohongshu marketing for foreign brands: the complete 2026 guide"
-description: "Xiaohongshu is where Chinese shoppers check before they buy. A foreign brand can verify an account with its own overseas paperwork. Ads and stores go through an agent."
+description: "Xiaohongshu is where Chinese shoppers check before they buy. A foreign brand can verify an account with its own overseas paperwork. Some ad categories are still closed to overseas firms."
 metaTitle: "Xiaohongshu Marketing for Foreign Brands"
 metaDescription: "How foreign brands actually grow on Xiaohongshu in 2026. Account types, content formats, the search layer, KOC seeding and what a first 90 days costs."
 publishDate: 2026-09-08
+updatedDate: 2026-10-02
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Platforms"
-keywords: ["xiaohongshu marketing foreign brands", "xiaohongshu marketing", "rednote marketing", "xiaohongshu enterprise account", "xiaohongshu blue v", "xiaohongshu search", "koc seeding xiaohongshu", "pugongying", "jiguang ads"]
+keywords: ["xiaohongshu marketing foreign brands", "xiaohongshu marketing", "rednote marketing", "xiaohongshu enterprise account", "xiaohongshu blue v", "xiaohongshu search", "koc seeding xiaohongshu", "pugongying", "juguang ads"]
 featured: false
 featuredImage: "/images/blog/xiaohongshu-marketing-foreign-brands.webp"
 ---
@@ -19,13 +20,13 @@ month looks like.*
 
 Start with the three facts that decide your plan. Xiaohongshu is a search
 engine with a feed attached. Its users skew young, female, urban, and about
-to spend money. And the account is the easy part for a foreign company; the
-ads and the store are where an agent comes in.
+to spend money. And the account is the easy part for a foreign company. Ads
+depend on your category, and a store has its own paperwork.
 
 | Question | Short answer | Where it's covered |
 |---|---|---|
 | Can we open an account from abroad? | Yes, an enterprise professional account with overseas documents | Account types, entity rules |
-| Can we run ads from abroad? | Only through an authorized agent since February 2026 | Entity rules |
+| Can we run ads from abroad? | No official rule requires an agent, but some categories are closed to overseas entities | Entity rules |
 | What content gets reach? | Image notes and short video built for search, not for the feed | Content that works |
 | Do we need influencers? | Small creators first, paid promotion later | KOC seeding versus paid |
 | What does it cost? | Verification fee is public; the rest is content and people | What it costs |
@@ -143,17 +144,18 @@ This is the section that decides budgets, so here is the plain version.
 registration documents. You can post notes, reply to comments, run a
 [Pugongying (蒲公英) creator campaign](/services/influencer-marketing/), and read the full dashboard.
 
-**You cannot** open a self-serve ad account from abroad.
+**You can** advertise, if your category is open to overseas entities. Ads
+run through Juguang (聚光), the platform's ad system.
 
-> Since February 2, 2026, overseas merchants gain access to Xiaohongshu's
-> Jiguang ad platform only through an authorized agent, with no self-serve
-> account opening.
-> Source: Ziyouxing Studio (自由行Studio), Xiaohongshu Jiguang overseas guide, August 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
+> No official Xiaohongshu document requires overseas advertisers to use an
+> agent. Juguang's sign-up offers two account types, advertiser and agency.
+> Overseas entities have their own industry admission list, and some
+> categories are not yet open to them.
+> Source: Ziyouxing Studio (自由行Studio), Xiaohongshu Juguang guide, updated September 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
 
-Jiguang (聚光) is the platform's ad platform. An agent opens the account on
-your behalf, sets the first deposit (the platform publishes no minimum, the
-agent does), and usually runs the campaigns. That is where a China-based
-agency earns its place in your first year.
+So check the category before you plan spend. Whether you then hire an agency
+is a commercial choice, not an entry rule. The platform publishes no minimum
+first deposit.
 
 **You can sell**, but the store has its own paperwork. The merchant
 qualification rules treat overseas companies as a separate category.
@@ -272,7 +274,7 @@ later, which is where the next stage of the plan needs it.
 Seeding earns its keep at launch, when nobody has searched for your brand
 name yet and you need 20 to 40 real notes so a search for your category
 returns real people using your product. Paid comes after that. Once the
-dashboard shows which notes convert, Jiguang (聚光) budget behind those
+dashboard shows which notes convert, Juguang (聚光) budget behind those
 notes pushes them higher in the results for the queries that matter.
 
 The mistake we see most is the reverse order. A brand pays for a big KOL
@@ -290,7 +292,7 @@ account.
 | 1 to 2 | Chinese brand name chosen, enterprise account verified on the desktop site, translated documents filed | Blue V badge, dashboard live |
 | 3 to 4 | Title bank built from autocomplete, first 12 notes published, three a week | Feed traffic only, a few hundred impressions each |
 | 5 to 8 | First 20 to 40 KOC notes seeded through Pugongying, comments answered daily | Brand name starts to appear in autocomplete |
-| 9 to 12 | Best notes identified from the search split, Jiguang account opened through an agent, first paid push | Search overtakes feed as the top source |
+| 9 to 12 | Best notes identified from the search split, category checked, Juguang account opened, first paid push | Search overtakes feed as the top source |
 
 Three notes on the table. The Chinese name comes first because everything
 else depends on it. Comments get answered daily because a reply counts as
@@ -307,9 +309,9 @@ run the account.
 
 Platform fees are public and small. The enterprise verification is 600 yuan
 a year, quoted above. Pugongying (蒲公英) takes 10 or 20 percent of creator
-deals, also quoted above. Ad spend has a first deposit set by the agent who
-opens the Jiguang (聚光) account. Ask any agency to bill it to you at cost,
-with the platform's own invoice attached.
+deals, also quoted above. Ad spend on Juguang (聚光) has no published minimum
+first deposit. If an agency runs it, ask it to bill you at cost, with the
+platform's own invoice attached.
 
 Content is the largest line in the first three months. A dozen notes a month
 in Chinese, shot in a way that looks like a real person made them, is a
@@ -341,8 +343,8 @@ Yes. The platform's enterprise account guide accepts overseas companies and
 companies from Hong Kong, Macau, and Taiwan, using their home registration
 documents. Verification runs through the desktop site, costs 600 yuan a year,
 and needs stamped translations for documents not in Chinese or English. Ads
-and stores are the parts that need an agent or extra paperwork, not the
-account itself.
+depend on whether your category is open to overseas entities, and a store
+needs extra paperwork.
 
 ### Is Xiaohongshu the same as RedNote?
 

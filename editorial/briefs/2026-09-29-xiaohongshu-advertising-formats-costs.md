@@ -61,8 +61,8 @@ Every figure below needs a dated, linked source in blockquote format. Check
 still current, reuse the logged citation instead of researching again. If you
 find a new figure, append it to that ledger before you finish.
 
-- Ad account minimum deposit, cite the platform
-- CPC and CPM ranges, from our own managed accounts, labeled as ours, plus one external dated source
+- Ad account minimum deposit: Xiaohongshu publishes none (researched 2026-09-03, 2026-09-11 and 2026-09-28; Juguang has no official minimum first recharge). Say so; never use agent or reseller figures. (Amended 2026-10-02: research proved the original line wrong. See editorial/CLAUDE.md, "No TODO leaves a run".)
+- CPC and CPM ranges: no dated external source publishes an average. Use our planning ranges only as published on /services/advertising/, labeled as our planning figures, never as measured data or a platform average (SPEC, settled fallbacks). (Amended 2026-10-02: research proved the original line wrong. See editorial/CLAUDE.md, "No TODO leaves a run".)
 
 **If a figure cannot be sourced, cut the claim.** Do not estimate, do not
 hedge, do not write "industry sources suggest". A missing number is better

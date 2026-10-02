@@ -4,6 +4,7 @@ description: "Sur WeChat, la publicité se décline en Moments, comptes officiel
 metaTitle: "Publicité WeChat : formats et tarifs"
 metaDescription: "Six emplacements publicitaires, trois modèles tarifaires. Coûts par format et conseils concrets pour lancer une première campagne WeChat."
 publishDate: 2026-04-05
+updatedDate: 2026-10-02
 author: "TheRedScroll"
 platforms: ["wechat"]
 category: "Plateformes"
@@ -79,7 +80,7 @@ C’est souvent à ce stade que les marques déchantent. Les montants minimums d
 |---|---|
 | Achat programmé | 50 000 yuans par campagne (environ 6 500 €) |
 | Achat aux enchères | 1 000 yuans de rechargement, 1 000 yuans de budget quotidien |
-| Promotion locale | 300 yuans par jour (environ 40 €) |
+| Promotion locale | 1 000 yuans par jour (environ 130 €), sans le seuil de 50 000 yuans |
 
 Les 50 000 yuans de l’achat programmé correspondent au format taillé pour les grandes opérations. On réserve des impressions garanties entre un et 28 jours à l’avance : lancements produit, campagnes saisonnières, événements. Vous payez, la visibilité est garantie.
 
@@ -87,7 +88,10 @@ Les 50 000 yuans de l’achat programmé correspondent au format taillé pour le
 
 Pour tâter le terrain, le mode enchères à 1 000 yuans par jour est bien plus accessible. Vous gardez la main sur votre budget quotidien, vous ajustez le ciblage en temps réel, et vous ne payez que les impressions ou les clics réellement servis.
 
-La promotion locale à 300 yuans par jour constitue l’option la moins coûteuse, mais elle ne couvre qu’un rayon de 3 à 5 km autour d’un point de vente physique. Restaurants, boutiques, lieux d’événements. Pour une notoriété d’envergure nationale, ce n’est pas le bon format.
+Comptez 1 000 yuans par jour (environ 130 €) pour la promotion locale, soit exactement le plancher quotidien des enchères. Ce n’est donc pas une porte d’entrée moins chère. Son intérêt est ailleurs : elle échappe au seuil de 50 000 yuans imposé à l’achat programmé. En contrepartie, elle ne cible que les personnes situées à proximité d’un point de vente physique. Restaurants, boutiques, lieux d’événements. Pour une notoriété d’envergure nationale, ce n’est pas le bon format.
+
+> Les publicités de promotion locale échappent au seuil de 50 000 yuans et démarrent à 1 000 yuans par jour.
+> Source : Tencent Ads (腾讯广告), page produit de la publicité WeChat, vérifiée en octobre 2026. https://e.qq.com/topic/marketing/industry/weixin/
 
 ![Un article de compte officiel WeChat avec une bannière publicitaire en bas de page](/images/blog/wechat-article-ad.webp)
 

@@ -4,6 +4,7 @@ description: "Food in China is sold twice: once to the shopper who eats it, once
 metaTitle: "Food and Beverage Marketing in China"
 metaDescription: "How food and beverage brands grow in China. Retail and foodservice strategies, labeling rules, recipe content, Douyin commerce and seasonal peaks."
 publishDate: 2026-10-02
+updatedDate: 2026-10-02
 author: "TheRedScroll"
 platforms: ["rednote", "douyin", "wechat"]
 category: "Industry"
@@ -106,7 +107,7 @@ Superlatives are the third trap. The Advertising Law bans "national level",
 
 > Ads may not use "国家级" (national level), "最高级" (highest level) or
 > "最佳" (best).
-> Source: Advertising Law of the People's Republic of China (中华人民共和国广告法), Article 9, text as amended 2021. https://www.gov.cn/guoqing/2021-10/29/content_5647620.htm
+> Source: Advertising Law of the People's Republic of China (中华人民共和国广告法), Article 9, text as amended October 2018. https://www.gov.cn/guoqing/2021-10/29/content_5647620.htm
 
 These are the claims clients ask us about most. Here's what survives.
 

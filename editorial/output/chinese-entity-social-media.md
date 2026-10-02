@@ -578,7 +578,7 @@ INTERNAL LINKS:
     from /insights/first-90-days-china-social-media/ and from
     /insights/xiaohongshu-business-account-setup/, EN only unless a locale
     pass is approved separately.
-CLIENT SIGN-OFF NEEDED:
+CLIENT FIGURES:
   None. No client figure and no first-party data is used anywhere in this
   article. Nothing is pending.
 LEGAL:

@@ -4,6 +4,7 @@ description: "Tres modelos, y así es como facturan de verdad las agencias en Ch
 metaTitle: "Cómo le facturan las agencias en China"
 metaDescription: "Iguala, tarifa por proyecto o precio cerrado: dónde falla cada modelo, qué publican las plataformas sobre medios y qué cláusulas leer antes de firmar."
 publishDate: 2026-09-21
+updatedDate: 2026-10-02
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "Estrategia"
@@ -22,7 +23,7 @@ Las tarifas de las agencias en China adoptan tres formas. Casi todas las propues
 
 La inversión en medios es otra cuestión, y la cara. Elija el modelo que elija, hay algo que decide más dinero que el propio modelo: a nombre de quién está la cuenta publicitaria y quién se queda con el descuento que la plataforma paga sobre su inversión. Los párrafos sobre adónde va su dinero de medios citan el texto del contrato.
 
-Todas las fuentes que siguen se comprobaron dos veces en septiembre de 2026.
+Todas las fuentes que siguen se comprobaron dos veces, en septiembre u octubre de 2026.
 
 ## Tarifas de las agencias en China: quién asume el riesgo
 
@@ -75,7 +76,7 @@ La expansión del alcance tiene formas propias en China, y atrapa a las marcas e
 El tercer punto no es opcional, y la agencia no se está poniendo difícil.
 
 > La Ley de Publicidad obliga a los operadores y difusores publicitarios a establecer y mantener sistemas de aceptación, revisión y archivo de los encargos publicitarios, a verificar los documentos justificativos y a rechazar el diseño, la producción o la difusión cuando el contenido no se corresponda con esos documentos.
-> Fuente: Ley de Publicidad de la República Popular China (中华人民共和国广告法), artículo 34, en su redacción de 2021. https://www.gov.cn/guoqing/2021-10/29/content_5647620.htm
+> Fuente: Ley de Publicidad de la República Popular China (中华人民共和国广告法), artículo 34, en su redacción de octubre de 2018. https://www.gov.cn/guoqing/2021-10/29/content_5647620.htm
 
 Comprobar documentos y guardar copias de licencias lleva horas. Una creatividad devuelta, también. En un briefing creativo no aparece nada de eso, y con una tarifa por proyecto aflora más tarde en forma de anexo.
 
@@ -156,12 +157,12 @@ Los descuentos van a quien tenga la cuenta publicitaria. Si es su agencia, el de
 > El mismo contrato establece que la parte no dineraria de una cuenta publicitaria, incluidos el inventario de bonificación y el crédito, no es reembolsable, y que los importes ya pagados por servicios aún no prestados no se devuelven si el anunciante interrumpe la compra.
 > Fuente: Tencent Ads (腾讯广告), contrato de colaboración con anunciantes, comprobado en septiembre de 2026. https://e.qq.com/contract.html
 
-De todos modos, las marcas extranjeras rara vez pueden tener la cuenta a su nombre, y eso es lo que hace urgente la pregunta del descuento.
+En Xiaohongshu y en Douyin, abrir la cuenta usted mismo o dejar que la abra la agencia es decisión suya. Por eso conviene plantear pronto la pregunta del descuento.
 
-> Desde el 2 de febrero de 2026, los comerciantes extranjeros solo acceden a Jiguang (聚光), la plataforma publicitaria de Xiaohongshu, a través de un agente autorizado. No existe una vía de autoservicio.
-> Fuente: Ziyouxing Studio (自由行Studio), agosto de 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
+> Juguang (聚光), la plataforma publicitaria de Xiaohongshu, ofrece dos tipos de cuenta en el registro: anunciante y agencia. Ningún documento oficial de Xiaohongshu obliga a un anunciante extranjero a pasar por un agente.
+> Fuente: Ziyouxing Studio (自由行Studio), guía de Juguang de Xiaohongshu, actualizada en septiembre de 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
 
-Douyin le deja elegir, y lo cuantifica.
+Douyin, además, le pone precio a esa elección.
 
 > En Douyin, el canal oficial cobra una comisión de servicio por abrir una cuenta publicitaria. Los agentes pueden abrirla gratis y fijan por su cuenta el primer depósito mínimo.
 > Fuente: Ocean Engine (巨量引擎), preguntas frecuentes sobre apertura de cuenta, junio de 2021. https://www.oceanengine.com/faq/douyin-kaihu-feiyong.html
@@ -179,7 +180,7 @@ Una agencia que no responda las tres por escrito ya las ha respondido.
 La ley china exige que el contrato exista.
 
 > La Ley de Publicidad obliga a anunciantes, operadores publicitarios y difusores publicitarios a formalizar contratos escritos para la actividad publicitaria.
-> Fuente: Ley de Publicidad de la República Popular China (中华人民共和国广告法), artículo 30, en su redacción de 2021. https://www.gov.cn/guoqing/2021-10/29/content_5647620.htm
+> Fuente: Ley de Publicidad de la República Popular China (中华人民共和国广告法), artículo 30, en su redacción de octubre de 2018. https://www.gov.cn/guoqing/2021-10/29/content_5647620.htm
 
 Un contrato escrito es el suelo, no el techo. Cinco cláusulas deciden lo que ocurre en la práctica.
 

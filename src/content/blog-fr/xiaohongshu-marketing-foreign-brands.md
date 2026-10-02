@@ -1,13 +1,14 @@
 ---
 title: "Xiaohongshu pour les marques étrangères : le guide complet 2026"
-description: "En Chine, on se renseigne sur Xiaohongshu avant d’acheter. Une marque étrangère peut y faire certifier son compte avec ses propres documents. Restent la publicité et la boutique, qui exigent un agent."
+description: "En Chine, on se renseigne sur Xiaohongshu avant d’acheter. Une marque étrangère peut y faire certifier son compte avec ses propres documents. Certaines catégories publicitaires restent fermées aux sociétés étrangères."
 metaTitle: "Xiaohongshu : le guide des marques étrangères"
 metaDescription: "Comment une marque étrangère s’installe sur Xiaohongshu en 2026 : types de comptes, formats de notes, recherche, seeding KOC et coût des 90 premiers jours."
 publishDate: 2026-09-08
+updatedDate: 2026-10-02
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Plateformes"
-keywords: ["marketing Xiaohongshu marques étrangères", "marketing Xiaohongshu", "marketing RedNote", "compte entreprise Xiaohongshu", "Blue V Xiaohongshu", "recherche Xiaohongshu", "seeding KOC Xiaohongshu", "Pugongying", "publicité Jiguang"]
+keywords: ["marketing Xiaohongshu marques étrangères", "marketing Xiaohongshu", "marketing RedNote", "compte entreprise Xiaohongshu", "Blue V Xiaohongshu", "recherche Xiaohongshu", "seeding KOC Xiaohongshu", "Pugongying", "publicité Juguang"]
 featured: false
 featuredImage: "/images/blog/xiaohongshu-marketing-foreign-brands.webp"
 ---
@@ -20,13 +21,13 @@ qui se fait brider, ce à quoi ressemble vraiment le premier mois.*
 Trois constats commandent tout le reste. Xiaohongshu tient du moteur de
 recherche bien plus que du réseau social. Son public est jeune, féminin,
 citadin, et sur le point d’acheter. Le compte, lui, est la partie simple pour
-une entreprise étrangère : la publicité et la boutique, elles, réclament un
-agent.
+une entreprise étrangère. La publicité dépend de votre catégorie, et la
+boutique a ses propres formalités.
 
 | Question | Réponse courte | Où le lire |
 |---|---|---|
 | Peut-on ouvrir un compte depuis l’étranger ? | Oui, un compte professionnel entreprise avec des documents étrangers | Types de comptes, règles d’entité |
-| Peut-on acheter de la publicité depuis l’étranger ? | Uniquement via un agent agréé depuis février 2026 | Règles d’entité |
+| Peut-on acheter de la publicité depuis l’étranger ? | Aucune règle officielle n’impose d’agent, mais certaines catégories restent fermées aux entités étrangères | Règles d’entité |
 | Quel contenu obtient de la portée ? | Des notes photo et de courtes vidéos conçues pour la recherche, pas pour le fil | Le contenu qui fonctionne |
 | Faut-il des influenceurs ? | Les petits créateurs d’abord, la promotion payante ensuite | Seeding KOC ou payant |
 | Combien cela coûte-t-il ? | Les frais de certification sont publics ; le reste, c’est du contenu et des personnes | Ce que cela coûte |
@@ -155,18 +156,20 @@ commentaires, monter une
 consulter l’intégralité du tableau de bord : rien de tout cela ne pose
 problème.
 
-**Vous ne pouvez pas** ouvrir un compte publicitaire en libre-service depuis
-l’étranger.
+**Vous pouvez** faire de la publicité, si votre catégorie est ouverte aux
+entités étrangères. Les campagnes passent par Juguang (聚光), la régie de la
+plateforme.
 
-> Depuis le 2 février 2026, les commerçants étrangers n’accèdent à la
-> plateforme publicitaire Jiguang de Xiaohongshu que par un agent agréé, sans
-> ouverture de compte en libre-service.
-> Source : Ziyouxing Studio (自由行Studio), guide Jiguang de Xiaohongshu pour l’étranger, août 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
+> Aucun document officiel de Xiaohongshu n’oblige un annonceur étranger à
+> passer par un agent. À l’inscription, Juguang propose deux types de
+> compte : annonceur et agence. Les entités étrangères relèvent d’une liste
+> d’admission sectorielle distincte, et certaines catégories ne leur sont pas
+> encore ouvertes.
+> Source : Ziyouxing Studio (自由行Studio), guide Xiaohongshu Juguang, mis à jour en septembre 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
 
-Jiguang (聚光) est la régie de la plateforme. L’agent ouvre le compte en votre
-nom, fixe le premier dépôt (la plateforme ne publie aucun minimum ; l’agent,
-si) et pilote généralement les campagnes. C’est précisément là qu’une agence
-installée en Chine justifie sa place la première année.
+Vérifiez donc la catégorie avant de bâtir un budget. Recourir ensuite à une
+agence relève d’un choix commercial, pas d’une condition d’accès. La
+plateforme ne publie aucun premier dépôt minimal.
 
 **Vendre, vous le pouvez aussi**, mais la boutique traîne ses propres
 formalités. Les règles de qualification rangent les sociétés étrangères dans
@@ -298,7 +301,7 @@ Le seeding se justifie au lancement, quand nul n’a encore cherché votre marqu
 et qu’il vous faut 20 à 40 notes réelles pour qu’une recherche sur la
 catégorie renvoie de vraies personnes tenant votre produit. Le payant vient
 après. Dès que le tableau de bord désigne les notes qui convertissent, un
-budget Jiguang (聚光) placé derrière elles les pousse dans les résultats des
+budget Juguang (聚光) placé derrière elles les pousse dans les résultats des
 requêtes qui comptent.
 
 L’erreur la plus courante consiste à inverser cet ordre. La marque paie
@@ -316,7 +319,7 @@ de recherche pour dépasser celui du fil sur un compte neuf.
 | 1 à 2 | Nom de marque chinois choisi, compte entreprise certifié sur le site de bureau, documents traduits déposés | Badge Blue V, tableau de bord actif |
 | 3 à 4 | Réserve de titres bâtie à partir de la saisie semi-automatique, 12 premières notes publiées, trois par semaine | Trafic de fil seulement, quelques centaines d’impressions par note |
 | 5 à 8 | 20 à 40 premières notes KOC semées via Pugongying, commentaires traités chaque jour | Le nom de la marque commence à apparaître dans la saisie semi-automatique |
-| 9 à 12 | Meilleures notes repérées grâce à la part de recherche, compte Jiguang ouvert par un agent, première poussée payante | La recherche dépasse le fil comme première source |
+| 9 à 12 | Meilleures notes repérées grâce à la part de recherche, catégorie vérifiée, compte Juguang ouvert, première poussée payante | La recherche dépasse le fil comme première source |
 
 Trois remarques sur ce tableau. Le nom chinois ouvre la marche parce que tout
 en dépend. Les commentaires se traitent quotidiennement parce qu’une réponse
@@ -334,15 +337,15 @@ créateurs, et les personnes qui tiennent le compte.
 
 Les frais de plateforme sont publics et modestes. La certification entreprise
 revient à 600 yuans par an, citée plus haut. Pugongying (蒲公英) prélève 10 ou
-20 % des contrats de créateurs, cités plus haut également. Le budget
-publicitaire s’ouvre sur un premier dépôt que fixe l’agent chargé du compte
-Jiguang (聚光). Exigez de toute agence qu’elle vous le refacture au coût, la
-facture de la plateforme à l’appui.
+20 % des contrats de créateurs, cités plus haut également. Sur Juguang
+(聚光), le budget publicitaire ne connaît aucun premier dépôt minimal publié.
+Si une agence le pilote, exigez qu’elle vous le refacture au coût, la facture
+de la plateforme à l’appui.
 
 Le contenu domine les trois premiers mois. Une douzaine de notes par mois en
 chinois, tournées de manière à paraître faites par une vraie personne, relève
-d’un [travail de production](/fr/services/production-de-contenu/). Le seeding au
-niveau KOC coûte peu à la publication et se paie au volume. Le niveau KOL,
+d’un [travail de production](/fr/services/production-de-contenu/). [Le seeding au
+niveau KOC coûte peu à la publication et se paie au volume](/fr/decryptages/xiaohongshu-marketing-cost/). Le niveau KOL,
 plus haut, reste chez la plupart de nos clients une décision de deuxième
 année.
 
@@ -370,8 +373,9 @@ Oui. Le guide des comptes entreprise accepte les sociétés étrangères ainsi q
 celles de Hong Kong, Macao et Taïwan, sur la foi de leurs documents
 d’immatriculation d’origine. La certification passe par le site de bureau,
 coûte 600 yuans par an et exige des traductions tamponnées pour tout document
-qui n’est ni en chinois ni en anglais. Ce sont la publicité et la boutique qui
-réclament un agent ou des formalités supplémentaires, pas le compte.
+qui n’est ni en chinois ni en anglais. La publicité dépend de l’ouverture de
+votre catégorie aux entités étrangères, et la boutique exige des formalités
+supplémentaires.
 
 ### Xiaohongshu et RedNote, est-ce la même chose ?
 

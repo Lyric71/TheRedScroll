@@ -4,6 +4,7 @@ description: "Six postes de dépense. Trois s’appuient sur un chiffre publié 
 metaTitle: "Marketing Xiaohongshu : les coûts réels en 2026"
 metaDescription: "Vérification, contenu, seeding KOC, cachets KOL, publicité, honoraires d’agence : le coût réel du marketing Xiaohongshu en 2026, avec trois budgets chiffrés."
 publishDate: 2026-09-14
+updatedDate: 2026-10-02
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Stratégie"
@@ -22,7 +23,7 @@ dépense poste par poste, et chaque chiffre porte sa source et sa date.*
 | 2. Production de contenu | Pas de tarif de plateforme, plus 10 % de commission sur la place de marché | Niaoge Biji, 2022 |
 | 3. Seeding KOC | 20 à 60 dollars la publication | Long Advisory, 2026 |
 | 4. Cachets KOL | 10 000 à 35 000 dollars la campagne | Long Advisory, 2026 |
-| 5. Publicité | 75 yuans minimum en libre-service ; dépôt publicitaire fixé par votre agent | Woshipm, 2026 |
+| 5. Publicité | 75 yuans minimum en libre-service ; aucun dépôt publicitaire minimal publié | Woshipm, 2026 |
 | 6. Honoraires d’agence | Publiés sur [la page tarifs de TheRedScroll](/fr/tarifs/) | TheRedScroll |
 
 Les montants en dollars sont des conversions arrondies, à sept yuans pour un
@@ -49,7 +50,7 @@ Peu cher à l’unité, coûteux à coordonner.
 collaboration. C’est le poste qui avale les budgets de lancement.
 
 **La publicité** revient à la plateforme, via l’outil de boost en
-libre-service ou via Jiguang (聚光), sa régie.
+libre-service ou via Juguang (聚光), sa régie.
 
 Restent **les honoraires d’agence**, qui couvrent la stratégie, la
 rédaction en chinois, la sélection des créateurs, le pilotage des campagnes
@@ -256,20 +257,23 @@ cherche encore à savoir si sa création chinoise fonctionne, c’est toute
 l’expérience initiale. Publiez six notes, poussez chacune au plancher, et regardez
 laquelle le fil emporte.
 
-Les vrais budgets passent par Jiguang (聚光), la plateforme d’enchères qui
-alimente [les publicités de recherche et de fil](/fr/decryptages/xiaohongshu-advertising-formats-costs/). Pour les annonceurs
-étrangers, la porte a changé cette année.
+Les vrais budgets passent par Juguang (聚光), la plateforme d’enchères qui
+alimente [les publicités de recherche et de fil](/fr/decryptages/xiaohongshu-advertising-formats-costs/). On répète
+volontiers aux annonceurs étrangers qu’un agent est obligatoire. Aucun
+document officiel de Xiaohongshu ne l’impose.
 
-> Depuis le 2 février 2026, les marchands étrangers ne peuvent plus ouvrir
-> seuls de compte Jiguang. Ils passent par un agent agréé par Xiaohongshu,
-> qui vérifie leurs qualifications avant de transmettre le dossier à la
-> plateforme.
-> Source : Ziyouxing Studio (自由行Studio), guide Jiguang Xiaohongshu pour les annonceurs étrangers, août 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
+> Aucun document officiel de Xiaohongshu n’oblige un annonceur étranger à
+> passer par un agent. À l’inscription, Juguang propose deux types de
+> compte : annonceur et agence. Les entités étrangères relèvent d’une liste
+> d’admission sectorielle distincte, et certaines catégories ne leur sont pas
+> encore ouvertes.
+> Source : Ziyouxing Studio (自由行Studio), guide Xiaohongshu Juguang, mis à jour en septembre 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
 
-Nous ne publions aucun montant de premier dépôt, et méfiez-vous de qui le
-fait. Les chiffres en circulation sortent de blogs de revendeurs, changent
-d’un agent à l’autre et n’émanent pas de la plateforme. Exigez de l’agent
-qui ouvre votre compte son seuil par écrit, avant toute signature.
+Vérifiez donc votre catégorie avant de bâtir un budget. Nous ne publions
+aucun montant de premier dépôt, et méfiez-vous de qui le fait. Les chiffres
+en circulation sortent de blogs de revendeurs, changent d’un agent à l’autre
+et n’émanent pas de la plateforme. Si un agent ouvre votre compte, exigez son
+seuil par écrit, avant toute signature.
 
 Pas de référentiel publié non plus pour le CPC ou le CPM sur Xiaohongshu.
 Les enchères dépendent de votre objectif et de vos concurrents.
@@ -326,8 +330,8 @@ meilleures notes poussées au plancher de 75 yuans. Plateforme et créateurs
 réunis, le trimestre revient à 600 à 1 500 dollars environ.
 
 **Un mois de croisière.** Quarante notes KOC sur dix requêtes, 800 à 2 400
-dollars plus les 10 % de commission, et une dépense Jiguang continue, au
-niveau qu’autorise le plancher de votre agent. Toujours pas de KOL. C’est à
+dollars plus les 10 % de commission, et une dépense Juguang continue, à
+partir du premier dépôt convenu à l’ouverture du compte. Toujours pas de KOL. C’est à
 ce palier que vous apprenez quelles requêtes convertissent.
 
 **Un trimestre de lancement.** Une campagne avec un micro KOL, 10 000 à
@@ -369,7 +373,7 @@ Les marques qui acceptent le premier devis paient l’inflation de tout le
 marché.
 
 **Acheter de la portée avant que la création ait fait ses preuves.** Miser de
-l’argent Jiguang sur une note qui n’a pas percé en organique, c’est payer au
+l’argent Juguang sur une note qui n’a pas percé en organique, c’est payer au
 prix fort la lecture d’une mauvaise note. Le boost à 75 yuans existe
 précisément pour l’éviter.
 
@@ -392,10 +396,11 @@ vers la Chine, et le temps passé à briefer puis relancer chaque créateur.
 
 Soixante-quinze yuans, onze dollars environ, paient une commande sur l’outil
 de boost en libre-service, et seulement pour une note publiée depuis moins
-de 90 jours. La plateforme d’enchères Jiguang (聚光) obéit à d’autres
-règles : depuis février 2026, les annonceurs étrangers ouvrent leur compte
-par l’intermédiaire d’un agent agréé, et c’est lui qui fixe le premier
-dépôt. Obtenez le chiffre par écrit avant de signer.
+de 90 jours. La plateforme d’enchères Juguang (聚光), elle, ne publie
+aucun premier dépôt minimal. Aucune règle officielle n’oblige un annonceur
+étranger à passer par un agent, mais certaines catégories ne sont pas encore
+ouvertes aux entités étrangères : vérifiez d’abord la vôtre. Si un agent
+ouvre le compte, obtenez son chiffre par écrit avant de signer.
 
 ### Combien coûte la vérification Blue V ?
 

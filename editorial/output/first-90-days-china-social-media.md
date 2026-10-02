@@ -436,6 +436,6 @@ INTERNAL LINKS:
   Douyin (first mention, Before week one) -> /platforms/douyin/
   Pugongying (Weeks 9 to 12) -> /services/influencer-marketing/
   homepage (FAQ 1, "the timeline on our homepage") -> /
-CLIENT SIGN-OFF NEEDED: none. No client figure used. The dashboard
+CLIENT FIGURES: none. No client figure used. The dashboard
   screenshot above needs permission from whichever client account is used.
 -->

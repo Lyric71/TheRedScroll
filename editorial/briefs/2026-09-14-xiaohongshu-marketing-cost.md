@@ -37,7 +37,7 @@ They override any conflicting rule inside the skill.
 
 ## The angle
 
-GMA publishes KOC and KOL ranges on their agency page. We can beat them by being more specific and better sourced, then adding the number they will never publish: what an agency charges to run it. Cite their figures openly. Confidence reads as authority.
+Agencies publish KOC and KOL ranges without sources. We beat them by being more specific and better sourced, then pointing to the number they never publish: what an agency charges to run it, which lives on our pricing page. Never name or cite a competitor agency; use the approved "0 out of 37" form. (Amended 2026-10-02: research proved the original line wrong. See editorial/CLAUDE.md, "No TODO leaves a run".)
 
 ## Section outline
 
@@ -63,7 +63,7 @@ find a new figure, append it to that ledger before you finish.
 
 - Blue V annual verification fee, cite platform documentation
 - KOC and KOL fee bands, cite Campaign Asia and Long Advisory, dated
-- Ad account minimum deposit, cite the platform
+- Ad account minimum deposit: Xiaohongshu publishes none (researched 2026-09-03, 2026-09-11 and 2026-09-28; Juguang has no official minimum first recharge). Say so; never use agent or reseller figures. (Amended 2026-10-02: research proved the original line wrong. See editorial/CLAUDE.md, "No TODO leaves a run".)
 - Our pricing page, referenced by name only. Never quote monthly figures, per-item rates or tier names (STYLE_GUIDE.md 6.4)
 
 **If a figure cannot be sourced, cut the claim.** Do not estimate, do not

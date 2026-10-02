@@ -4,6 +4,7 @@ description: "Drei Modelle gibt es, und so rechnen Agenturen in China wirklich a
 metaTitle: "Wie Agenturen in China abrechnen"
 metaDescription: "Monatspauschale, Projekthonorar oder Festpreis: wo jedes Modell schwächelt, was die Plattformen zu Mediakosten offenlegen, welche Klauseln zählen."
 publishDate: 2026-09-21
+updatedDate: 2026-10-02
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "Strategie"
@@ -22,7 +23,7 @@ Agenturpreise in China gibt es in drei Ausprägungen. Fast jedes Angebot, das Si
 
 Das Mediabudget ist eine eigene Frage, und die teurere. Welches Modell Sie auch wählen, eines entscheidet über mehr Geld als das Modell selbst: auf wessen Namen das Werbekonto läuft und wer den Rabatt behält, den die Plattform auf Ihre Spendings zahlt. Die Abschnitte dazu, wohin Ihr Mediageld fließt, zitieren den Vertragstext.
 
-Alle Quellen unten wurden im September 2026 zweifach geprüft.
+Alle Quellen unten wurden im September oder Oktober 2026 zweifach geprüft.
 
 ## Agenturpreise in China: Wer trägt das Risiko
 
@@ -75,7 +76,7 @@ Ausufernde Leistungsumfänge haben in China eigene Formen, und sie erwischen aus
 Der dritte Punkt ist nicht optional, und die Agentur stellt sich dabei nicht quer.
 
 > Das Werbegesetz verpflichtet Werbebetreiber und Werbeveröffentlicher, Systeme zur Annahme, Prüfung und Archivierung von Werbeaufträgen einzurichten und zu unterhalten, die Nachweisdokumente zu prüfen und Gestaltung, Produktion oder Ausspielung abzulehnen, wenn der Inhalt diesen Dokumenten nicht entspricht.
-> Quelle: Werbegesetz der Volksrepublik China (中华人民共和国广告法), Artikel 34, in der Fassung von 2021. https://www.gov.cn/guoqing/2021-10/29/content_5647620.htm
+> Quelle: Werbegesetz der Volksrepublik China (中华人民共和国广告法), Artikel 34, in der Fassung vom Oktober 2018. https://www.gov.cn/guoqing/2021-10/29/content_5647620.htm
 
 Dokumentenprüfungen und Lizenzkopien kosten Stunden. Zurückgewiesene Kreation ebenso. Im Kreativbriefing steht nichts davon, und beim Projekthonorar taucht es später als Nachtrag wieder auf.
 
@@ -156,12 +157,12 @@ Rabatte fließen an den, der das Werbekonto hält. Ist das Ihre Agentur, gehört
 > Derselbe Vertrag hält fest, dass der nicht in bar geleistete Teil eines Werbekontos, einschließlich Bonusvolumen und Guthaben, nicht erstattungsfähig ist und dass bereits gezahlte Beträge für noch nicht erbrachte Leistungen nicht zurückfließen, wenn der Werbetreibende die Buchung beendet.
 > Quelle: Tencent Ads (腾讯广告), Kooperationsvertrag für Werbetreibende, geprüft im September 2026. https://e.qq.com/contract.html
 
-Ausländische Marken können das Konto ohnehin selten selbst halten, und genau deshalb lohnt die Rabattfrage früh.
+Bei Xiaohongshu wie bei Douyin entscheiden Sie selbst, ob Sie das Konto eröffnen oder die Agentur. Genau deshalb lohnt die Rabattfrage früh.
 
-> Seit dem 2. Februar 2026 werden ausländische Händler zu Xiaohongshus Werbeplattform Jiguang (聚光) nur noch über einen autorisierten Agenten zugelassen. Einen Selbstbedienungsweg gibt es nicht.
-> Quelle: Ziyouxing Studio (自由行Studio), August 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
+> Xiaohongshus Werbeplattform Juguang (聚光) bietet bei der Registrierung zwei Kontoarten an: Werbetreibender und Agentur. Kein offizielles Dokument von Xiaohongshu verpflichtet ausländische Werbetreibende, den Weg über einen Agenten zu gehen.
+> Quelle: Ziyouxing Studio (自由行Studio), Leitfaden zu Xiaohongshu Juguang, aktualisiert im September 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
 
-Douyin lässt Ihnen die Wahl und beziffert sie.
+Douyin beziffert diese Wahl sogar.
 
 > Bei Douyin berechnet der offizielle Weg eine Servicegebühr für die Eröffnung eines Werbekontos. Agenten dürfen eines kostenlos eröffnen und setzen die Mindesterstaufladung selbst fest.
 > Quelle: Ocean Engine (巨量引擎), FAQ zur Kontoeröffnung, Juni 2021. https://www.oceanengine.com/faq/douyin-kaihu-feiyong.html
@@ -179,7 +180,7 @@ Eine Agentur, die alle drei Fragen nicht schriftlich beantwortet, hat sie damit 
 Das chinesische Recht verlangt, dass der Vertrag existiert.
 
 > Das Werbegesetz verpflichtet Werbetreibende, Werbebetreiber und Werbeveröffentlicher, für Werbetätigkeit schriftliche Verträge abzuschließen.
-> Quelle: Werbegesetz der Volksrepublik China (中华人民共和国广告法), Artikel 30, in der Fassung von 2021. https://www.gov.cn/guoqing/2021-10/29/content_5647620.htm
+> Quelle: Werbegesetz der Volksrepublik China (中华人民共和国广告法), Artikel 30, in der Fassung vom Oktober 2018. https://www.gov.cn/guoqing/2021-10/29/content_5647620.htm
 
 Ein schriftlicher Vertrag ist die Untergrenze, nicht das Ergebnis. Fünf Klauseln entscheiden, was in der Praxis passiert.
 

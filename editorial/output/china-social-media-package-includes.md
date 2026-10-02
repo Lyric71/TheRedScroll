@@ -165,8 +165,6 @@ answers, plus a list of what gets escalated to you.
 > Source: TheRedScroll Weibo agency page, September 2026.
 > https://www.theredscroll.com/weibo-agency/
 
-<!-- TODO: unsourced claim removed. The brief asks for community hours per month and a reply-time target. Neither is published on the site or in the ledger, so neither was estimated. Add both here once they are published. -->
-
 What we don't publish is an hours figure or a reply-time target. We'd rather
 leave that gap than print a number we haven't committed to in public.
 
@@ -435,7 +433,7 @@ INTERNAL LINKS:
     /insights/china-social-media-marketing-cost/ and
     /insights/china-agency-pricing-models/, EN only unless a locale pass is
     approved separately.
-CLIENT SIGN-OFF NEEDED: none for the copy. No client named, no client figure
+CLIENT FIGURES: none for the copy. No client named, no client figure
   used. The optional report screenshot needs clearance from the client whose
   report it is.
 -->

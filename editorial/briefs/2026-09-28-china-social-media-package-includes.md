@@ -60,8 +60,9 @@ Every figure below needs a dated, linked source in blockquote format. Check
 still current, reuse the logged citation instead of researching again. If you
 find a new figure, append it to that ledger before you finish.
 
-- All figures from our own delivery scopes: content volumes, hours, response
-  times, report contents. Cite them as ours.
+- Figures from our own delivery scopes only as published on our site pages
+  (content volumes, report contents). The site publishes no community hours
+  and no reply-time target: say so, do not estimate. (Amended 2026-10-02: research proved the original line wrong. See editorial/CLAUDE.md, "No TODO leaves a run".)
 - Never the monthly price, a per-item rate or a tier name. STYLE_GUIDE.md 6.4.
   Send the reader to the pricing page by name for the number.
 - No external stats needed. The page's authority comes from specificity.

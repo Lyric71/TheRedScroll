@@ -9,8 +9,13 @@
  *   node editorial/scripts/notify-publish.mjs --slug <slug> --title "<title>"
  *        [--section insights|industries|tools] [--to <email>]
  *        [--image /images/blog/<slug>.webp] [--build passed|failed]
- *        [--log editorial/logs/YYYY-MM-DD.md] [--todo "<text>"]...
- *        [--note "<text>"]
+ *        [--log editorial/logs/YYYY-MM-DD.md] [--note "<text>"]
+ *
+ * The email never carries a TODO or an open item. A publish run closes every
+ * item it finds before it publishes, or it stops without publishing (see
+ * editorial/CLAUDE.md, "No TODO leaves a run"). The script refuses to send
+ * when it is given --todo, --open, --followup, or a --note that reads like
+ * an open item list.
  *
  * Locale URLs are derived from which content files exist for the slug:
  * Uses the live localized section routes for insights, industries and tools.
@@ -40,16 +45,22 @@ function loadEnv() {
   }
 }
 
+// Options that used to carry open items into the email. They are refused,
+// not ignored, so a run that tries to defer work fails loudly.
+const REFUSED_OPTIONS = ['todo', 'todos', 'open', 'open-item', 'open-items', 'followup', 'follow-up'];
+const OPEN_ITEM_PATTERN = /\b(TODO|FIXME|TBD)\b|open items?|for a person|phase 2|follow[ -]?ups?\b/i;
+
 function parseArgs(argv) {
-  const out = { todo: [] };
+  const out = { refused: [] };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (!a.startsWith('--')) continue;
     const key = a.slice(2);
     if (key === 'dry-run') { out.dryRun = true; continue; }
+    if (REFUSED_OPTIONS.includes(key)) out.refused.push(key);
     const val = argv[i + 1];
     if (val === undefined || val.startsWith('--')) { out[key] = true; continue; }
-    if (key === 'todo') out.todo.push(val); else out[key] = val;
+    out[key] = val;
     i++;
   }
   return out;
@@ -79,6 +90,16 @@ async function main() {
     console.error('Usage: node editorial/scripts/notify-publish.mjs --slug <slug> --title "<title>" [options]');
     process.exit(2);
   }
+  if (args.refused.length) {
+    console.error(`Refused: --${args.refused.join(', --')}. The publish email carries no TODO or open item.`);
+    console.error('Close the item inside the run, or stop before publishing. See editorial/CLAUDE.md, "No TODO leaves a run".');
+    process.exit(2);
+  }
+  if (args.note && OPEN_ITEM_PATTERN.test(String(args.note))) {
+    console.error('Refused: --note reads like an open item (TODO, FIXME, TBD, open items, follow up, for a person, Phase 2).');
+    console.error('Close the item inside the run, or stop before publishing. See editorial/CLAUDE.md, "No TODO leaves a run".');
+    process.exit(2);
+  }
   const section = args.section || 'insights';
   const to = args.to || DEFAULT_TO;
   const urls = localeUrls(args.slug, section);
@@ -98,7 +119,6 @@ async function main() {
     `Build: ${args.build || 'not reported'}`,
     `Run log: ${args.log || 'not reported'}`,
   ];
-  if (args.todo.length) lines.push('', 'Open TODOs:', ...args.todo.map((t) => `  - ${t}`));
   if (args.note) lines.push('', `Note: ${args.note}`);
   const text = lines.join('\n');
 
@@ -117,7 +137,6 @@ async function main() {
     <tr><td style="padding:8px 0;color:#5C5C5C;border-bottom:0.5px solid #E8E0D8;">Build</td><td style="padding:8px 0;border-bottom:0.5px solid #E8E0D8;">${esc(args.build || 'not reported')}</td></tr>
     <tr><td style="padding:8px 0;color:#5C5C5C;">Run log</td><td style="padding:8px 0;">${esc(args.log || 'not reported')}</td></tr>
   </table>
-  ${args.todo.length ? `<p style="font-size:14px;margin:24px 0 8px;color:#5C5C5C;">Open TODOs</p><ul style="font-size:14px;line-height:1.6;margin:0;padding-left:20px;">${args.todo.map((t) => `<li>${esc(t)}</li>`).join('')}</ul>` : ''}
   ${args.note ? `<p style="font-size:14px;line-height:1.6;margin:24px 0 0;">${esc(args.note)}</p>` : ''}
 </div>`;
 

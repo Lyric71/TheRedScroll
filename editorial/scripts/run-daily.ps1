@@ -41,6 +41,23 @@ $RunLogDir = Join-Path $Repo 'editorial\logs\runs'
 New-Item -ItemType Directory -Force $RunLogDir | Out-Null
 $RunLog = Join-Path $RunLogDir "$Stamp-$Mode.txt"
 
+# One run per mode at a time. Relaunch-MissedTasks.ps1 started a second
+# session while the first was still working (2026-09-29, 2026-10-01,
+# 2026-10-02). The lock file holds the owner's PID; a live owner means this
+# start is skipped (noted in a separate file, so the live run log is left
+# alone), and a stale lock (owner gone) is taken over.
+$LockFile = Join-Path $RunLogDir "$Mode.lock"
+if (Test-Path $LockFile) {
+  $Owner = Get-Content $LockFile -ErrorAction SilentlyContinue | Select-Object -First 1
+  $OwnerProc = $null
+  if ($Owner -match '^\d+$') { $OwnerProc = Get-Process -Id ([int]$Owner) -ErrorAction SilentlyContinue }
+  if ($OwnerProc -and $OwnerProc.ProcessName -match 'powershell|pwsh') {
+    "$(Get-Date -Format s) $Mode run already in progress (pid $Owner), second start skipped" |
+      Out-File (Join-Path $RunLogDir "$Stamp-$Mode.skipped.txt") -Append -Encoding utf8
+    exit 0
+  }
+}
+
 # The plan starts Sept 7, 2026. Nothing runs before that.
 $PlanStart = Get-Date '2026-09-07'
 if (-not $Force -and (Get-Date).Date -lt $PlanStart) {
@@ -71,12 +88,27 @@ finished draft, /generate-image-openai for the hero image. Update
 editorial/schedule.csv and write the run log. Stop at image_ready. Do not
 publish. Do not commit. This run is unattended: never ask a question, decide
 from the specs and note the decision in the run log.
+
+No TODO leaves this run (editorial/CLAUDE.md, "No TODO leaves a run"). Close
+every item you find inside the run: research it or cut the claim, fix any
+older page the draft contradicts in every locale, amend the brief (and later
+briefs repeating the error), apply the settled fallbacks in SPEC.md. No TODO
+marker in the draft, no "Open items" or "for Cyril" list in the log;
+node editorial/scripts/check-no-todo.mjs editorial/output/<slug>.md must
+pass. If an item can only be closed by Cyril, set the row to blocked with the
+reason in notes instead of image_ready.
 '@
 } else {
   $Prompt = @'
 Publish every reviewed draft that is due.
 
 Read editorial/CLAUDE.md, editorial/SPEC.md and editorial/RUNBOOK.md first.
+No TODO leaves this run (editorial/CLAUDE.md, "No TODO leaves a run"): before
+publishing a row, node editorial/scripts/check-no-todo.mjs on its output file
+must pass and every item in its draft log must be closed; close what you can
+in this run (in-links and corrections to older pages in every locale), and do
+not publish a row with an item only Cyril can close. Never pass --todo to the
+notify script and never put an open item in --note.
 In editorial/schedule.csv, find every row whose status is image_ready and
 whose publish_date is today or earlier. For each one, in date order, run the
 publish step: /createblogarticle on the output file (or the industries /
@@ -117,7 +149,12 @@ if ($Force) {
 $PromptFile = Join-Path $RunLogDir "$Stamp-$Mode.prompt.txt"
 [System.IO.File]::WriteAllText($PromptFile, $Prompt, (New-Object System.Text.UTF8Encoding($false)))
 $AgentRunner = 'C:\Users\cyril\Project\automation\scripts\Invoke-ProjectAgent.ps1'
-$Code = & $AgentRunner -Repo $Repo -PromptFile $PromptFile -RunLog $RunLog -RunName "TheRedScroll $Mode"
+Set-Content -Path $LockFile -Value $PID -Encoding ascii
+try {
+  $Code = & $AgentRunner -Repo $Repo -PromptFile $PromptFile -RunLog $RunLog -RunName "TheRedScroll $Mode"
+} finally {
+  Remove-Item $LockFile -Force -ErrorAction SilentlyContinue
+}
 
 "$(Get-Date -Format s) end $Mode exit $Code" | Out-File $RunLog -Append -Encoding utf8
 exit $Code

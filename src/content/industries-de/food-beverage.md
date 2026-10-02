@@ -4,6 +4,7 @@ description: "In China wird ein Lebensmittel zweimal verkauft: an die Kundschaft
 metaTitle: "Lebensmittel- und Getränkemarketing in China"
 metaDescription: "Wie Lebensmittelmarken in China wachsen: Handel und Gastronomie, Kennzeichnungsregeln, Rezeptinhalte, Douyin und die wichtigsten Saisonspitzen."
 publishDate: 2026-10-02
+updatedDate: 2026-10-02
 author: "TheRedScroll"
 platforms: ["rednote", "douyin", "wechat"]
 category: "Branche"
@@ -121,7 +122,7 @@ Niveau“, „höchstes Niveau“ und „beste“ in jeder Form von Werbung.
 
 > Werbung darf die Begriffe „国家级“ (nationales Niveau), „最高级“ (höchstes
 > Niveau) und „最佳“ (beste) nicht verwenden.
-> Source: Advertising Law of the People's Republic of China (中华人民共和国广告法), Article 9, text as amended 2021. https://www.gov.cn/guoqing/2021-10/29/content_5647620.htm
+> Source: Advertising Law of the People's Republic of China (中华人民共和国广告法), Article 9, text as amended October 2018. https://www.gov.cn/guoqing/2021-10/29/content_5647620.htm
 
 Nach diesen Aussagen fragen uns Kunden am häufigsten. Übrig bleibt Folgendes.
 

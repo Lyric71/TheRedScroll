@@ -59,11 +59,18 @@ Then it stops. A person reviews the draft (see below) and asks for publication.
 
 ## Publishing a reviewed draft
 
+Before anything moves, `node editorial/scripts/check-no-todo.mjs
+editorial/output/<slug>.md` must pass, and every item the draft log found must
+already be closed (see `CLAUDE.md`, "No TODO leaves a run"). A draft with an
+open item is closed in this run or, if only Cyril can close it, not published.
+
 `Publish <slug>` runs `/createblogarticle` on `output/<slug>.md`. That skill
 creates `src/content/blog/<slug>.md`, maps the frontmatter to the blog schema,
 converts the plain-text internal references into links, wires the hero image,
 propagates to FR, ZH, DE and ES, updates every listing surface, and runs the
-build. It then runs `/deep-translate` on each locale, all three passes, FR
+build. It also adds the in-links the asset brief names, in every locale where
+the source page exists, and fixes any older page the new piece contradicts,
+in every locale. It then runs `/deep-translate` on each locale, all three passes, FR
 then ZH then DE then ES, per `TRANSLATION_GUIDE.md`. The propagation and the
 deep translation are part of the publish step, never optional, never
 deferred. Claude sets the row to `published` with `published_on`.
@@ -82,8 +89,9 @@ from the repo root. It sends one email through Resend to
 cyril.drouin@outlook.com (Resend testing mode delivers only to the account
 owner; verify a domain at resend.com/domains, then change `FROM` and
 `DEFAULT_TO` in the script to use gmail): subject `Published: <title>`, body with the live URL
-per locale, the hero image path, build status, open TODOs and the run log
-path. `RESEND_API_KEY` is already in `.env`. If the send fails, Claude says so
+per locale, the hero image path, build status and the run log path. No TODO
+or open items section: the script refuses `--todo` and any note that reads
+like one. `RESEND_API_KEY` is already in `.env`. If the send fails, Claude says so
 instead of skipping silently.
 
 Industry pages publish into `src/content/industries/` and tool pages into
@@ -131,7 +139,7 @@ Do not merge them into one run.
 
 | Brief | Publishes | Start | Why |
 |---|---|---|---|
-| 03D Camper teardown | Sept 25 | Week 1 | Client figures need sign-off before drafting. |
+| 03D Camper teardown | Sept 25 | Week 1 | Published Sept 25 on the figures /work/camper/ publishes (settled fallback). |
 | 13A Budget calculator | Nov 30 | Week 11 | Needs build time, not just copy. |
 | 13D Benchmarks report | Dec 4 | Week 11 | Needs a data pull across managed accounts. |
 
@@ -142,7 +150,8 @@ Do not merge them into one run.
 2. Seed `sources/verified-sources.md` with any platform figures you already
    trust. Every one you add now is one Claude does not research later. Each
    seeded entry still needs its two check dates.
-3. Get Camper sign-off started. Brief 03D publishes in week 3.
+3. Client figures: settled on Oct 2, 2026. Articles quote only what each
+   client's live `/work/<client>/` page publishes. No separate sign-off.
 4. `OPENAI_API_KEY` and `RESEND_API_KEY` are in `.env` at the repo root
    (added Sept 3, 2026). Nothing else to configure for images or email.
 5. Pricing rule, decided Sept 3, 2026: `STYLE_GUIDE.md` 6.4 wins. No
@@ -173,9 +182,9 @@ mainland-professional subject when the reader is a foreign marketer.
 
 | Problem | What to do |
 |---|---|
-| A figure cannot be sourced in Chinese or English | Claude cuts the claim and marks it. Decide whether the section still stands. |
+| A figure cannot be sourced in Chinese or English | Claude cuts the claim. No marker. If the section cannot stand without it, Claude sets the row to `blocked` with the reason. |
 | A source fails check 2 (page changed or gone) | Claude fixes the blockquote or cuts the claim. Never ship a citation that failed re-fetch. |
-| A client number is missing | Claude leaves `TODO: client sign-off`. Chase it, do not guess. |
+| A client number is missing | Claude uses only what `/work/<client>/` publishes and cuts the rest. No marker, nothing to chase. |
 | A competitor claim cannot be verified | Claude drops that competitor from the listicle. Correct behavior. Leave it. |
 | Claude planted a typo | It ignored `CLAUDE.md` and the house skill. Point at the conflict section and rerun iteration 7. |
 | The draft reads generic | The angle field was skipped. Rerun with `Reread the angle in the brief and rewrite.` |
@@ -183,6 +192,7 @@ mainland-professional subject when the reader is a foreign marketer.
 | Image generation fails | Check `OPENAI_API_KEY` in `.env`. Retry once with a lightly reworded prompt. Row stays at `quality_passed`. |
 | Image has text, a logo or a wrong subject | Regenerate. Never wire in an unchecked image. |
 | The quality pass loosened the SEO fields past 52 / 152 | The skill's own ceilings leaked through. Recount and trim. |
+| A run left a TODO, an open item or a "for Cyril" list | It ignored `CLAUDE.md`, "No TODO leaves a run". Close each item (research or cut, fix the contradicted page, amend the brief), then rerun. `npm run build` fails on any marker in `src/content`. |
 | No publish email arrived | Run the notify script again with `--dry-run` to see the payload, then without it. Check `RESEND_API_KEY` in `.env`. |
 
 ## Automating it

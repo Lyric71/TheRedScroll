@@ -258,8 +258,6 @@ We're not printing a first-deposit figure, and you should be wary of anyone
 who does. The numbers in circulation come from reseller blogs, vary by agent,
 and aren't published by the platform. Ask the agent opening your account for
 its threshold in writing, before you sign anything.
-<!-- TODO: unsourced claim removed. Jiguang first-recharge and minimum-daily-budget figures cut: only agent and reseller blogs state them. Xiaohongshu CPC and CPM benchmark ranges also cut, no dated source publishes a platform or industry average. This section carries the two published floors instead. -->
-
 No published Xiaohongshu CPC or CPM benchmark exists either. Bids move with
 your objective and your competition. The only cost per click that matters is
 the one your own account produces in its first month.
@@ -490,5 +488,5 @@ INTERNAL LINKS:
   "Douyin" (FAQ, Is Xiaohongshu cheaper than Douyin) -> /douyin-agency/
   IN-LINKS to add on publish: from /insights/china-social-media-marketing-cost/
   and from /insights/xiaohongshu-marketing-foreign-brands/, per the brief.
-CLIENT SIGN-OFF NEEDED: none. No client figures used.
+CLIENT FIGURES: none. No client figures used.
 -->

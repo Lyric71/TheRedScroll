@@ -191,8 +191,6 @@ you open the account.
 We're not printing a Douyin first-deposit figure. The numbers in circulation
 come from reseller blogs, not from the platform, and they change by agent.
 Ask the agent opening your account for its threshold in writing.
-<!-- TODO: unsourced claim removed. Douyin and Xiaohongshu first-deposit figures (5,000 to 10,000 yuan in reseller blogs) cut for lack of a platform or trade-press source. This section is thinner by one table row of figures. -->
-
 Xiaohongshu ads run through its Jiguang (聚光) platform, and for foreign
 advertisers the route changed this year.
 
@@ -274,8 +272,6 @@ Here the sourcing runs out, and it's worth saying why. We couldn't find a
 dated, non-agency source that publishes China social media agency fee ranges.
 We won't cite an agency's own blog for a market figure. So this section
 compares the three billing models instead of quoting a market rate.
-<!-- TODO: unsourced claim removed. No third-party market range for China agency retainers found in Chinese or English trade press. Section compares billing models only. -->
-
 **Retainer.** A monthly fee for a team's time, usually described in hours or
 headcount. Scope is elastic. This is the most common model, and the one where
 the number is hardest to get before a proposal. Ad spend usually runs through
@@ -485,5 +481,5 @@ INTERNAL LINKS:
   KOC and KOL (first mention in The five cost lines) -> /insights/kol-vs-koc-china-influencer-guide/
   WeChat Moments ads (Media spend) -> /insights/wechat-advertising-formats-costs/
   WeCom (Three realistic budgets) -> /insights/what-is-wecom/
-CLIENT SIGN-OFF NEEDED: none. No client figures used.
+CLIENT FIGURES: none. No client figures used.
 -->

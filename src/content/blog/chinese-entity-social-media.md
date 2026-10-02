@@ -4,6 +4,7 @@ description: "Usually not, at least to start. Three of the four platforms that m
 metaTitle: "Do You Need a Chinese Entity for Social?"
 metaDescription: "Whether a foreign brand needs a Chinese entity for WeChat, Xiaohongshu, Douyin and Weibo, what each platform accepts, and where the real limits sit."
 publishDate: 2026-09-24
+updatedDate: 2026-10-02
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Strategy"
@@ -13,9 +14,8 @@ featuredImage: "/images/blog/chinese-entity-social-media.webp"
 ---
 
 This is the question that stops the first sales call. The answers online
-contradict each other, and a lot of them are simply out of date: Xiaohongshu
-changed how overseas advertisers get access in February 2026 alone. So here is
-the short version, per platform, checked against what each one publishes.
+contradict each other. So here is the short version, per platform, checked
+against what each one publishes.
 
 | Platform | What the platform publishes | What you file | Verification fee |
 |---|---|---|---|
@@ -33,7 +33,7 @@ This article is general information, not legal advice. Entity structure,
 tax and import rules turn on facts about your own business, and a China
 qualified lawyer should see them before you commit.
 
-Every source below was checked twice in September 2026.
+Every source below was checked twice, in September or October 2026.
 
 ## What an overseas entity can do on WeChat
 
@@ -100,21 +100,17 @@ Review time is published, which is rare.
 > on average. A single review order is valid for 30 days.
 > Source: Xiaohongshu (小红书), professional account product guide, platform documentation, confirmed September 2026. https://fe-video-qc.xhscdn.com/fe-platform/68e374e4257bd30bc07eed15c06cb8b9a51f971b.pdf
 
-Then the gap opens. You can hold the account offshore. Buying ads against it
-is a different matter, and since early 2026 the self-serve door has been
-closed. The platform has not published this change itself, so the citation
-below is a specialist trade guide rather than platform documentation, and it
-is the weakest source on this page. Treat it as a reason to ask your agency
-what access it actually has, not as the final word.
+Buying ads is a separate step, with its own rules for overseas companies.
+The source here is a trade guide rather than platform documentation.
 
-> Since February 2, 2026, overseas merchants are admitted to the Jiguang ad
-> platform through an authorized agent only, with no self-serve account
-> opening.
-> Source: Ziyouxing Studio (自由行Studio), Xiaohongshu Jiguang overseas guide, August 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
+> Juguang (聚光), Xiaohongshu's ad platform, offers an advertiser account and
+> an agency account at sign-up. No official Xiaohongshu document requires an
+> overseas advertiser to go through an agent. Overseas entities have their own
+> industry admission list, and some categories are not yet open to them.
+> Source: Ziyouxing Studio (自由行Studio), Xiaohongshu Juguang guide, updated September 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
 
-The same split runs through every platform on this page. Organic publishing
-is open to you. Paid distribution is where a mainland footprint, yours or
-somebody else's, starts to matter.
+So check your category against that list before you plan paid media. Using an
+agency is a commercial choice, not an entry rule.
 
 Side by side, on the two platforms that publish the most, the offshore
 penalty is smaller than most agencies imply.
@@ -126,10 +122,10 @@ penalty is smaller than most agencies imply.
 | WeChat fee | 300 yuan a year | 99 US dollars a year |
 | Xiaohongshu filing | Business license | BR or CR, stamped translation |
 | Xiaohongshu where you apply | App or desktop | Desktop only |
-| Xiaohongshu ads | Self-serve | Through an authorized agent |
+| Xiaohongshu ads | Standard industry rules | Separate list, some categories closed |
 
 None of those rows stops a launch. They cost you a couple of weeks on WeChat
-and a phone call on Xiaohongshu ads, which is a very different thing from
+and a category check on Xiaohongshu ads, which is a very different thing from
 needing a company.
 
 ## Douyin and Weibo: where it gets harder
@@ -366,7 +362,7 @@ An agency that cannot answer all three in writing is telling you something.
 |---|---|---|
 | Testing demand, no revenue in China yet | WeChat service account plus Xiaohongshu, both on your own entity | No |
 | Selling to consumers, no mainland stock | Cross-border retail import, inside the 5,000 and 26,000 yuan limits | No |
-| Ready to buy Xiaohongshu ads | Your own account, ads through an authorized agent | No |
+| Ready to buy Xiaohongshu ads | Your own account, after checking the overseas industry list | Not if your category is open |
 | Douyin is central to the plan | Budget for a mainland entity | Likely yes |
 | Hiring locally, invoicing in yuan, holding stock | A mainland company | Yes |
 | Offered an account on an agency's license | Get the three contract answers first | No, but read clause 6.1 |
@@ -377,10 +373,8 @@ learn what the audience responds to, and register a mainland company when
 advertising, hiring or stock makes it pay for itself. [Our guide to the first 90 days on Chinese social](/insights/first-90-days-china-social-media/) sets out what that launch actually looks like.
 
 One caution on all of the above. Platform access rules move faster than
-company law does, and they move without announcements: the Xiaohongshu ad
-change in February 2026 is the recent example, and it never appeared in a
-press release. Everything here was verified against the source documents in
-September 2026. Check the current page before you file anything.
+company law does. Everything here was verified against the source documents in
+September and October 2026. Check the current page before you file anything.
 
 ## Common questions
 
@@ -398,8 +392,8 @@ Mainly speed, scale and what you can buy. A mainland entity on WeChat is
 verified in 1 to 3 working days rather than 7 to 15. On Weibo the self-serve
 form expects a unified social credit code that only a mainland company has,
 and one mainland license can carry several enterprise accounts. Ad platforms
-are the sharpest difference, with overseas advertisers on Xiaohongshu routed
-through an authorized agent since February 2026.
+are the sharpest difference. Xiaohongshu keeps a separate industry admission
+list for overseas advertisers, and some categories are not yet open to them.
 
 ### Is an agency-held account safe?
 

@@ -4,6 +4,7 @@ description: "You do not need a Chinese company to open a verified Xiaohongshu b
 metaTitle: "Xiaohongshu Business Account Setup Guide"
 metaDescription: "Step-by-step Xiaohongshu business account setup for foreign companies: documents, Blue V verification, fees, rejection reasons and timeline."
 publishDate: 2026-09-22
+updatedDate: 2026-10-02
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Platforms"
@@ -34,7 +35,7 @@ clean application and longer than that for a first attempt, because the
 platform checks your entity, your account name and your verification details
 as three separate things, and any one of them can send the file back.
 
-Every source below was checked twice in September 2026.
+Every source below was checked twice, in September or October 2026.
 
 ## Step 1: pick the account type before you register anything
 
@@ -87,7 +88,7 @@ documents instead.
 > Business Registration or a Certificate of Incorporation. Hong Kong companies
 > need both. Registration documents that are not in Chinese need a Chinese
 > translation stamped with the brand owner's company seal.
-> Source: Xiaohongshu (小红书), Jiguang platform registration and account opening guide, platform documentation, confirmed September 2026. https://fe-video-qc.xhscdn.com/fe-platform/cc8a5f81ddb6d91d6be9dfb34e62b49b999f234b/%E8%81%9A%E5%85%89%E5%B9%B3%E5%8F%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%BC%80%E6%88%B7%E6%B5%81%E7%A8%8B.pdf
+> Source: Xiaohongshu (小红书), Juguang platform registration and account opening guide, platform documentation, confirmed September 2026. https://fe-video-qc.xhscdn.com/fe-platform/cc8a5f81ddb6d91d6be9dfb34e62b49b999f234b/%E8%81%9A%E5%85%89%E5%B9%B3%E5%8F%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%BC%80%E6%88%B7%E6%B5%81%E7%A8%8B.pdf
 
 Note the two different stamps. For account verification, a document in a
 language other than Chinese or English needs a translation carrying a
@@ -108,7 +109,7 @@ certificate. That certificate has rules of its own.
 > needs the acceptance notice, and the application must be at least three
 > months old counted from the stamped acceptance date. A mark under transfer
 > is accepted only from the company receiving it.
-> Source: Xiaohongshu (小红书), Jiguang platform registration and account opening guide, platform documentation, confirmed September 2026. https://fe-video-qc.xhscdn.com/fe-platform/cc8a5f81ddb6d91d6be9dfb34e62b49b999f234b/%E8%81%9A%E5%85%89%E5%B9%B3%E5%8F%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%BC%80%E6%88%B7%E6%B5%81%E7%A8%8B.pdf
+> Source: Xiaohongshu (小红书), Juguang platform registration and account opening guide, platform documentation, confirmed September 2026. https://fe-video-qc.xhscdn.com/fe-platform/cc8a5f81ddb6d91d6be9dfb34e62b49b999f234b/%E8%81%9A%E5%85%89%E5%B9%B3%E5%8F%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%BC%80%E6%88%B7%E6%B5%81%E7%A8%8B.pdf
 
 That three-month rule catches brands who file a Chinese trademark and try to
 open accounts the same week. If you have not filed yet, file now and read [our Xiaohongshu marketing guide for foreign brands](/insights/xiaohongshu-marketing-foreign-brands/) while you wait.
@@ -195,7 +196,7 @@ into direct messages or a form. That is Step 5.
 
 ## Step 5: link the ad account
 
-Paid promotion on Xiaohongshu (小红书) runs through Jiguang (聚光). You cannot
+Paid promotion on Xiaohongshu (小红书) runs through Juguang (聚光). You cannot
 open it first. The professional account has to exist and be verified before
 the ad platform will talk to you.
 
@@ -204,7 +205,7 @@ the ad platform will talk to you.
 > account, complete professional account verification, then submit promotion
 > qualifications in the ad platform. Creative is reviewed after the
 > qualifications pass.
-> Source: Xiaohongshu (小红书), Jiguang platform registration and account opening guide, platform documentation, confirmed September 2026. https://fe-video-qc.xhscdn.com/fe-platform/cc8a5f81ddb6d91d6be9dfb34e62b49b999f234b/%E8%81%9A%E5%85%89%E5%B9%B3%E5%8F%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%BC%80%E6%88%B7%E6%B5%81%E7%A8%8B.pdf
+> Source: Xiaohongshu (小红书), Juguang platform registration and account opening guide, platform documentation, confirmed September 2026. https://fe-video-qc.xhscdn.com/fe-platform/cc8a5f81ddb6d91d6be9dfb34e62b49b999f234b/%E8%81%9A%E5%85%89%E5%B9%B3%E5%8F%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%BC%80%E6%88%B7%E6%B5%81%E7%A8%8B.pdf
 
 Two small requirements at this stage catch people out. Your industry category
 has to match the business scope written on your registration documents, not
@@ -215,19 +216,20 @@ logo, with no person in it.
 > sales, lead collection and livestream promotion. The account balance and the
 > account daily budget are shared with the professional account promotion
 > center.
-> Source: Xiaohongshu (小红书), Jiguang platform product manual, platform documentation, confirmed September 2026. https://fe-video-qc.xhscdn.com/fe-platform/37f82988d0e9273cd645bb819c37a4e0f697bc70.pdf
+> Source: Xiaohongshu (小红书), Juguang platform product manual, platform documentation, confirmed September 2026. https://fe-video-qc.xhscdn.com/fe-platform/37f82988d0e9273cd645bb819c37a4e0f697bc70.pdf
 
-Then the rule that changed everything for foreign advertisers in 2026.
+Then the question foreign advertisers ask most: do you need an agency to buy
+ads?
 
-> Since February 2, 2026, overseas merchants moved from self-service account
-> opening on the Jiguang ad platform to invitation-only admission. They must
-> go through the invitation channel via a Xiaohongshu-authorized agency.
-> Source: Ziyouxing Studio (自由行Studio), Xiaohongshu Jiguang overseas guide, updated August 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
+> Juguang's sign-up offers two account identities, advertiser and agency. No
+> official Xiaohongshu document requires an overseas advertiser to go through
+> an agent. Overseas entities do face a separate industry admission list, and
+> some categories on it are marked not yet open.
+> Source: Ziyouxing Studio (自由行Studio), Xiaohongshu Juguang guide, updated September 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
 
-If you are an overseas entity, you no longer open an ad account by yourself.
-An authorized agency submits for you. [Our RedNote agency page](/rednote-agency/) explains how
-that works on our side. Plan for it, because a brand that budgets for paid
-support and then discovers it needs an intermediary loses a month.
+So check your category against the overseas list before you plan any media.
+Using an agency is a commercial choice, not an entry rule. [Our RedNote agency page](/rednote-agency/)
+explains what we take on if you choose one.
 
 ## The five reasons applications get rejected
 
@@ -280,8 +282,8 @@ You apply on the desktop site, never the app. You file a Business Registration
 or a Certificate of Incorporation instead of a business license, and both if
 you are a Hong Kong company. You add translations with the right stamp on
 each. You sell through the cross-border store route rather than a domestic
-one. And since February 2026 you reach the ad platform through an authorized
-agency rather than opening the account yourself.
+one. And before you buy ads, you check your category against a separate
+industry list for overseas entities.
 
 The place where the absence of a Chinese company genuinely bites is the
 trademark chain. Where a mark is held by your overseas parent and the account

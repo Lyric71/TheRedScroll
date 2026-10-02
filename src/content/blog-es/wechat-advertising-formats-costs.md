@@ -4,6 +4,7 @@ description: "La publicidad en WeChat se reparte entre Moments, Cuentas Oficiale
 metaTitle: "Anuncios en WeChat: formatos y precios"
 metaDescription: "WeChat tiene seis formatos de anuncio y tres modelos de precio. Cuánto cuesta cada emplazamiento y cómo plantear la primera campaña en China."
 publishDate: 2026-04-05
+updatedDate: 2026-10-02
 author: "TheRedScroll"
 platforms: ["wechat"]
 category: "Plataformas"
@@ -79,7 +80,7 @@ Aquí es donde tropieza buena parte de las marcas. Los mínimos dependen por ent
 |---|---|
 | Compra programada | 50.000 yuanes por campaña (unos 7.000 dólares) |
 | Compra por puja | 1.000 yuanes de carga inicial, 1.000 yuanes diarios de presupuesto |
-| Promoción local | 300 yuanes al día (unos 42 dólares) |
+| Promoción local | 1.000 yuanes al día (unos 140 dólares), sin el umbral de 50.000 yuanes |
 
 La compra programada de 50.000 yuanes está pensada para grandes empujones de marca: se reservan impresiones garantizadas con entre 1 y 28 días de antelación. Lanzamientos, campañas de temporada, grandes eventos. Un «pago ahora y me garantizan las miradas».
 
@@ -87,7 +88,10 @@ La compra programada de 50.000 yuanes está pensada para grandes empujones de ma
 
 Para una marca extranjera que tantea el terreno, la puja a 1.000 yuanes diarios es el punto de partida más práctico. Se controla el gasto diario, se afina la segmentación sobre la marcha y solo se paga por las impresiones o los clics que de verdad ocurren.
 
-La promoción local a 300 yuanes al día es la puerta más barata, pero solo sirve para campañas geolocalizadas a 3-5 km de un local físico. Vale para restaurantes, tiendas o salas de eventos. No para una campaña nacional de marca.
+La promoción local arranca en 1.000 yuanes al día (unos 140 dólares), el mismo suelo diario que la puja, así que no abre una puerta más barata. Su baza es otra: no está sujeta al umbral de 50.000 yuanes de la compra programada. Eso sí, solo sirve para campañas dirigidas a quien está cerca de un local físico. Vale para restaurantes, tiendas o salas de eventos. No para una campaña nacional de marca.
+
+> Los anuncios de promoción local no están sujetos al umbral de 50.000 yuanes y parten de 1.000 yuanes al día.
+> Fuente: Tencent Ads (腾讯广告), página de producto de publicidad en WeChat, comprobada en octubre de 2026. https://e.qq.com/topic/marketing/industry/weixin/
 
 ![Un artículo de Cuenta Oficial de WeChat con un banner al pie de la página](/images/blog/wechat-article-ad.webp)
 

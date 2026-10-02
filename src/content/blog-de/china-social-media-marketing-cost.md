@@ -4,6 +4,7 @@ description: "Fünf Kostenposten, vier davon öffentlich. Die Verifizierung ist 
 metaTitle: "Social-Media-Marketing in China: Kosten 2026"
 metaDescription: "Verifizierung, Werbung, Influencer, Agentur: die Kosten für Social-Media-Marketing in China 2026, Posten für Posten, mit belegten Zahlen und Quellen."
 publishDate: 2026-09-04
+updatedDate: 2026-10-02
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "Strategie"
@@ -201,32 +202,34 @@ Plattform, und sie unterscheiden sich von Agent zu Agent. Lassen Sie sich
 die Schwelle von dem Agenten, der Ihr Konto eröffnet, schriftlich bestätigen.
 
 [Xiaohongshu-Anzeigen](/de/rednote-agentur/) laufen über die eigene Plattform
-Jiguang (聚光), und für ausländische Werbetreibende hat sich der Weg dorthin
-in diesem Jahr geändert.
+Juguang (聚光). Ausländischen Marken wird oft erzählt, ohne Agenten gehe es
+nicht. Ein offizielles Dokument von Xiaohongshu verlangt das nicht.
 
-> Seit dem 2. Februar 2026 können ausländische Händler kein
-> Jiguang-Werbekonto mehr selbst eröffnen. Sie beantragen es über einen
-> autorisierten Xiaohongshu-Agenten, der ihre Unterlagen prüft, bevor er sie
-> bei der Plattform einreicht.
-> Quelle: Ziyouxing Studio (自由行Studio), Leitfaden zu Xiaohongshu Jiguang für ausländische Werbetreibende, August 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
+> Kein offizielles Dokument von Xiaohongshu schreibt ausländischen
+> Werbetreibenden einen Agenten vor. Bei der Registrierung bietet Juguang zwei
+> Kontotypen an: Werbetreibender und Agentur. Für ausländische Unternehmen
+> gilt eine eigene Branchenliste, und manche Kategorien stehen ihnen noch
+> nicht offen.
+> Quelle: Ziyouxing Studio (自由行Studio), Leitfaden zu Xiaohongshu Juguang, aktualisiert im September 2026. https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
 
-Das erste Xiaohongshu-Werbebudget einer ausländischen Marke wird also mit
-dem Agenten ausgehandelt, nicht von einer Seite abgelesen. Derselbe Leitfaden
-beschreibt erste Einzahlungen im niedrigen vierstelligen Yuan-Bereich. Das
-ist die Beobachtung eines Einzelnen zur Praxis der Agenten, keine
-Plattformregel, also nur ein Anhaltspunkt.
+Prüfen Sie also zuerst, ob Ihre Kategorie auf dieser Liste steht, bevor Sie
+ein Budget planen. Laut demselben Leitfaden veröffentlicht die Plattform keine
+Mindesteinzahlung. Die am Markt genannten Beträge beginnen im niedrigen
+vierstelligen Yuan-Bereich. Das ist gängige Praxis, keine Plattformregel,
+also nur ein Anhaltspunkt.
 
 | Plattform | Werbeplattform | Veröffentlichte Untergrenze | Wer sie festlegt |
 |---|---|---|---|
 | WeChat Moments, Gebotsverfahren | Tencent Ads | 1.000 Yuan pro Tag, 30 Yuan CPM | Tencent |
 | WeChat Moments, terminiert | Tencent Ads | 50.000 Yuan je Platzierung | Tencent |
 | Douyin | Ocean Engine | Mindesteinzahlung | Der eröffnende Agent |
-| Xiaohongshu | Jiguang | Bei Kontoeröffnung festgelegt | Der autorisierte Agent |
+| Xiaohongshu | Juguang | Keine | Bei Kontoeröffnung vereinbart |
 
 Der kleinste sinnvolle Test kostet auf WeChat also rund 1.000 Yuan pro
-Tag, so viele Tage lang, wie Sie Daten brauchen. Auf Douyin oder Xiaohongshu
-ist es die Mindesteinzahlung, die Ihr Agent verlangt. Planen Sie in beiden
-Fällen 30 Tage ein. Alles Kürzere sagt etwas über die Kreation aus, nicht über
+Tag, so viele Tage lang, wie Sie Daten brauchen. Auf Douyin ist es die
+Mindesteinzahlung, die Ihr Agent verlangt, auf Xiaohongshu die bei der
+Kontoeröffnung vereinbarte erste Einzahlung. Planen Sie in beiden Fällen 30
+Tage ein. Alles Kürzere sagt etwas über die Kreation aus, nicht über
 den Kanal.
 
 ## Influencer-Honorare: KOC, mittlere Ebene und Spitze
@@ -253,8 +256,8 @@ Followerzahl, die über Produkte posten, die man ihnen geschickt hat.
 > verlangen etwa 10.000 bis 35.000 Dollar je Kampagne.
 > Quelle: Long Advisory, Juni 2026. https://longadvisory.eu/en/kol-vs-koc-marketing-in-china-which-delivers-better-roi/
 
-An der Spitze kostet eine Kooperation auf Douyin ein Vielfaches dessen, was
-dieselbe Marke auf Xiaohongshu zahlen würde.
+An der Spitze kostet eine Kooperation auf Douyin ein Vielfaches dessen, [was
+dieselbe Marke auf Xiaohongshu zahlen würde](/de/analysen/xiaohongshu-marketing-cost/).
 
 > Die durchschnittlichen Kosten einer Zusammenarbeit auf Xiaohongshu liegen
 > in der Regel zwischen 10.000 und 40.000 Dollar. Auf Douyin bewegen sich
@@ -411,8 +414,9 @@ wie auf der Preisseite angegeben.
 
 Auf WeChat liegt Tencents veröffentlichte Untergrenze für Moments-Anzeigen
 im Gebotsverfahren bei 1.000 Yuan pro Tag mit einem CPM-Minimum von 30 Yuan.
-Auf Douyin und Xiaohongshu legt der Agent, der das Konto eröffnet, die
-erste Einzahlung fest. Rechnen Sie nativen Content in der Mindestfrequenz
+Auf Douyin legt der Agent, der das Konto eröffnet, die erste Einzahlung
+fest. Xiaohongshu nennt kein Minimum. Klären Sie aber vorher, ob Ihre
+Kategorie für ausländische Unternehmen geöffnet ist. Rechnen Sie nativen Content in der Mindestfrequenz
 der Plattform und eine kleine KOC-Reihe hinzu, und lassen Sie den Test 30
 Tage laufen.
 

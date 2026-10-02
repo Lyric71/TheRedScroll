@@ -481,7 +481,7 @@ INTERNAL LINKS:
   how the Xiaohongshu algorithm ranks notes in 2026 (What it costs, last paragraph) -> /insights/xiaohongshu-algorithm/ (brief 02B, publishes 2026-09-15; wire only once live, otherwise leave as plain text)
   Pugongying creator campaign (Entity rules) -> /services/influencer-marketing/
   production job (What it costs) -> /services/content-production/
-CLIENT SIGN-OFF NEEDED: none. The Guangzhou sidewalk anecdote names no
+CLIENT FIGURES: none. The Guangzhou sidewalk anecdote names no
   client and quotes no figure. The screenshot above needs permission from
   whichever client account is used.
 -->
