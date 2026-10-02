@@ -6,8 +6,8 @@ on every run.
 **Refresh on the first working day of each month.** Ask Claude:
 `Fetch theredscroll.com and refresh sources/site-profile.md.`
 
-Last refreshed: 2026-09-03
-Next refresh due: 2026-10-01
+Last refreshed: 2026-10-01
+Next refresh due: 2026-11-02
 
 ## Positioning
 
@@ -37,11 +37,19 @@ wedge.
 
 ## Live page inventory, English
 
-48 pages as of 2026-09-03.
+63 pages as of 2026-10-01 (48 on 2026-09-03). The count covers core
+pages, services, platforms, money pages, case studies, published articles
+and published industry and tool pages. It leaves out `/thank-you/`, the
+three legal pages and the `/industries/` and `/tools/` listing pages.
 
-**Core**
+**Core (10)**
 `/` `/about/` `/ai/` `/contact/` `/pricing/` `/insights/` `/platforms/`
-`/services/` `/work/`
+`/services/` `/work/` `/insights/ceo-opinion/`
+
+`/insights/ceo-opinion/` is new since 2026-09-03 (added 2026-09-19). It
+lists signed CEO columns, meaning blog posts with `column: true`. None is
+published yet, so the page and its menu column show a "first column coming
+soon" placeholder. English only.
 
 **Services (7)**
 `/services/strategy-campaigns/` `/services/advertising/`
@@ -62,7 +70,8 @@ wedge.
 `/work/master-martini/` `/work/mission-foods/` `/work/age20s/`
 `/work/blue-insurance/`
 
-**Existing articles (12)**
+**Existing articles (24)**
+The original twelve:
 `/insights/china-social-media-platforms-2026/`
 `/insights/sell-on-wechat/`
 `/insights/what-is-wecom/`
@@ -76,14 +85,39 @@ wedge.
 `/insights/why-livestream-shopping-took-over-china/`
 `/insights/ai-content-production-china/`
 
-**New sections this plan creates**
-`/industries/` (8 pages) and `/tools/` (1 page). Both sections exist as of
-2026-09-03 with empty collections. The first published page in each fills
-the listing.
+Published by this plan since 2026-09-03:
+`/insights/xiaohongshu-marketing-foreign-brands/`
+`/insights/china-social-media-marketing-cost/`
+`/insights/first-90-days-china-social-media/`
+`/insights/xiaohongshu-marketing-cost/`
+`/insights/xiaohongshu-algorithm/`
+`/insights/xiaohongshu-account-not-growing/`
+`/insights/china-agency-pricing-models/`
+`/insights/xiaohongshu-business-account-setup/`
+`/insights/chinese-entity-social-media/`
+`/insights/camper-china-teardown/`
+`/insights/china-social-media-package-includes/`
+`/insights/xiaohongshu-advertising-formats-costs/`
+
+Categories in use: Strategy (13), Platforms (10), Content (1). No article
+has `column: true` yet.
+
+**Industry pages (2 of 8 planned)**
+`/industries/beauty-skincare/` (published 2026-09-11)
+`/industries/fashion-apparel/` (published 2026-09-18)
+
+Both are live in all five locales: `/fr/secteurs/`, `/zh/hangye/`,
+`/de/branchen/`, `/es/sectores/`.
+
+**Tool pages (0 of 1 planned)**
+`src/content/tools/` is still empty, and so are `tools-fr`, `tools-zh`,
+`tools-de` and `tools-es`. A comment in `src/i18n/navigation.ts` schedules
+the first tool page for 2026-11-30. Until then the Tools menu column shows a
+placeholder that links to `/tools/`.
 
 ## Existing article shapes worth matching
 
-Two of the twelve already rank in English search. Copy their shape.
+Two of the original twelve already rank in English search. Copy their shape.
 
 - `/insights/what-is-wecom/` ranks around position 6 for WeCom setup queries.
   Operational how-to. Numbered steps. Document lists.
@@ -159,3 +193,39 @@ Checked against `src/` on install. The repo wins over the crawl.
 - **Pages** match the inventory above: 7 services, 5 platform pages, 4 money
   pages, 11 case studies, plus about, ai, contact, pricing, insights,
   thank-you and the legal pages.
+
+## Corrections against the repo, 2026-10-01
+
+Monthly refresh. Checked against `src/` first, then the live site. The repo
+wins over the crawl.
+
+- **Page inventory** rose from 48 to 63. New pages are
+  `/insights/ceo-opinion/`, twelve articles and two industry pages. Nothing
+  was removed. Services (7), platforms (5), money pages (4) and case studies
+  (11) are unchanged.
+- **Industries and tools are now in the navigation.** Since 2026-09-11 the
+  Insights mega menu has four columns: By platform, By industry, Tools and
+  CEO's Opinion (the last one in English only). The menu reads the
+  collections, so new pages appear in it on publish. The footer still does
+  not link to `/industries/` or `/tools/`.
+- **Industries and tools are no longer English only.** Locale collections
+  `industries-fr`, `industries-zh`, `industries-de`, `industries-es` and the
+  four `tools-*` collections are in `src/content.config.ts`, with routes
+  under `/fr/secteurs/`, `/zh/hangye/`, `/de/branchen/`, `/es/sectores/`,
+  `/fr/outils/`, `/zh/gongju/`, `/de/tools/` and `/es/herramientas/`.
+  Hreflang is no longer blanket-suppressed. Each page leaves out only the
+  locales it is missing (`missingEditorialLocales` in `src/lib/`).
+- **Blog schema** gained `column` (boolean, default false) in every blog
+  collection. It marks a signed CEO column for `/insights/ceo-opinion/`.
+- **Unchanged:** the seven service names, the four money pages, the hero
+  headline, sub and tagline, "Book a call" as the CTA, the 30-minute
+  discovery call and "Live in 2 weeks" process, 18+ platforms, the RedNote
+  money page title and the footer sister brands.
+- **Live site** was reachable on 2026-10-01. The homepage H1, hero lines,
+  CTAs and menu match the repo. `/pricing/` H1 is still "Fixed scope. Fixed
+  price. No surprises." Its section headings are unchanged in shape. No
+  figures or tier names were copied. The `/insights/` fetch listed 21 cards.
+  The three it missed (`kol-vs-koc-china-influencer-guide`,
+  `live-commerce-china-how-it-works`, `why-livestream-shopping-took-over-china`)
+  are in the repo, and a spot check confirmed the first one loads live.
+  The likely cause is the fetch truncating the listing.

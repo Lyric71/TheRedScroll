@@ -66,8 +66,10 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-03, re-fetched before draft finished, unchanged
 - Re-verified 2026-09-24: re-fetched with curl for 04A, "300元" still on the page (check 1 and check 2, both 2026-09-24).
 - Used in: china-social-media-marketing-cost, chinese-entity-social-media, china-social-media-package-includes
+- Re-verified 2026-10-01 for 05A: "300元/次", "一年内有效" and "不予退还" confirmed at check 1 and check 2. Used in: wechat-marketing-cost.
 - Notes: Platform page carries no date. Cite as "confirmed September 2026". Fee is non-refundable on failure.
 
+- Re-verified 2026-10-01 for 05B: "300元/次", "不予退还" and "保留一年" confirmed at check 1 and check 2. Used in: wechat-official-account-setup.
 ### WeChat Official Account verification fee, overseas entity
 - Value: 99 US dollars per verification application; valid one year
 - As of: page undated; confirmed September 2026 (platform documentation)
@@ -77,8 +79,10 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-03, re-fetched, unchanged
 - Re-verified 2026-09-24: re-fetched with curl for 04A, "99美元/次" and "不以认证成功为前提" confirmed (check 1 and check 2, both 2026-09-24).
 - Used in: china-social-media-marketing-cost, chinese-entity-social-media, china-social-media-package-includes
+- Re-verified 2026-10-01 for 05A: "99美元/次" confirmed at check 1 and check 2. Used in: wechat-marketing-cost.
 - Notes: Platform page carries no date. Cite as "confirmed September 2026".
 
+- Re-verified 2026-10-01 for 05B: "99美元/次" and "不以认证成功为前提" confirmed at check 1 and check 2. Used in: wechat-official-account-setup.
 ### Xiaohongshu enterprise professional account verification fee
 - Value: 600 yuan per application; valid one year; annual review required; not refunded on failure
 - As of: October 2025 (New Rank article); platform PDF undated, confirmed September 2026
@@ -110,6 +114,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-03, both re-fetched, unchanged
 - Re-verified 2026-09-24: re-fetched for 04A, "每日预算1000元起" confirmed (check 1 and check 2, both 2026-09-24).
 - Used in: china-social-media-marketing-cost, china-social-media-package-includes
+- Re-verified 2026-10-01 for 05A: product page "每日预算1000元起", "CPM单价30元起", "单次投放总预算5万元起", "1000元/天即可起投" and the 2016 PDF "不得低于1000元", "出价须大于30元", "5万元起", "第5个自然日起至第28个自然日" confirmed. New detail on the same page logged as its own entry below (bidding closed in core and key cities; free account opening) at check 1 and check 2. Used in: wechat-marketing-cost.
 - Notes: Current page is undated; the 2016 PDF supplies the date and shows the floors have held.
 
 ### Douyin ad account opening: service fee and agent-set first recharge
@@ -224,8 +229,10 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-08, re-fetched before draft finished, unchanged
 - Re-verified 2026-09-24: re-fetched with curl for 04A, "7-15个工作日内完成审核" confirmed (check 1 and check 2, both 2026-09-24).
 - Used in: first-90-days-china-social-media, chinese-entity-social-media, china-social-media-package-includes
+- Re-verified 2026-10-01 for 05A: "7-15个工作日内完成审核" confirmed at check 1 and check 2. Used in: wechat-marketing-cost.
 - Notes: Same page as the 99 US dollar fee entry above; this entry adds the review time. Cite as "confirmed September 2026".
 
+- Re-verified 2026-10-01 for 05B: "7-15个工作日内完成审核" and the card list confirmed at check 1 and check 2. Used in: wechat-official-account-setup.
 ### WeChat Official Account verification materials for overseas entities
 - Value: company registration certificate or business license; contact person's ID, both sides, color scan; application letter (simplified Chinese, traditional Chinese or English template); operation authorization letter (same three languages); contact person's phone bill, or a stamped office phone bill or bank statement; trademark registration or authorization if the account is named after a trademark
 - As of: page undated; confirmed September 2026 (platform documentation)
@@ -236,6 +243,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: first-90-days-china-social-media, chinese-entity-social-media
 - Notes: Individual businesses, governments, other organizations and schools have their own entity document in the same table.
 
+- Re-verified 2026-10-01 for 05B: all six items, the five entity-type documents (个体户注册登记证, 《企业注册证》或《商业许可证书》, 政府组织成立运作文件, 社团/组织成立运作文件, 学校成立文件、办学资质) and the stamped office bill or bank statement fallback confirmed at check 1 and check 2. Used in: wechat-official-account-setup.
 ### WeChat Official Account registration for overseas entities: one account, service account only
 - Value: an overseas entity may register one Official Account; overseas regions support the service account type only; the account is usable only after verification
 - As of: page undated; confirmed September 2026 (platform documentation)
@@ -246,8 +254,10 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-09-24: re-fetched with curl for 04A, "境外地区账号暂只支持服务号类型" confirmed (check 1 and check 2, both 2026-09-24).
 - Used in: first-90-days-china-social-media, chinese-entity-social-media, china-social-media-package-includes
 - Re-verified 2026-09-29 for 04D: "境外主体可以注册1个账号" and "境外地区账号暂只支持服务号类型" confirmed at check 1 and check 2. Used in: food-beverage.
+- Re-verified 2026-10-01 for 05A: "境外主体可以注册1个账号", "暂只支持服务号类型" and "认证成功后，账号方可正常使用" confirmed at check 1 and check 2. Used in: wechat-marketing-cost.
 - Notes: Registration is by company registration location on mp.weixin.qq.com; not every region has an option.
 
+- Re-verified 2026-10-01 for 05B, with two strings not logged before: "个人微信号（包括境内和境外）可以关注境外主体资质在公众平台注册的服务号" (any WeChat user, mainland or overseas, can follow) and "若其他地区无对应的注册选项，请您后续留意平台开放的注册区域" (unlisted regions cannot register yet). Check 1 and check 2 both 2026-10-01. Used in: wechat-official-account-setup.
 ### WeChat Official Account verification review time, mainland entity
 - Value: review in 1 to 3 working days; verification must be completed within 30 calendar days of registration; payment-based registration verification succeeds within 1 working day
 - As of: page undated; confirmed September 2026 (platform documentation)
@@ -256,8 +266,10 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 1: 2026-09-08, fetched, "认证审核时间为1-3个工作日" and "30天（自然天）内必须完成微信认证" confirmed
 - Verified 2: 2026-09-08, re-fetched, unchanged
 - Used in: first-90-days-china-social-media, chinese-entity-social-media
+- Re-verified 2026-10-01 for 05A: "认证审核时间为1-3个工作日" confirmed at check 1 and check 2. Used in: wechat-marketing-cost.
 - Notes: Mainland process; the overseas process is the 7 to 15 working day entry above.
 
+- Re-verified 2026-10-01 for 05B: "认证审核时间为1-3个工作日" and "30天（自然天）内必须完成微信认证" confirmed at check 1 and check 2. Used in: wechat-official-account-setup.
 ### Douyin enterprise (Blue V) verification: documents and review time
 - Value: business license and application letter (sole traders add the legal representative's ID, both sides); 600 yuan first year, 120 yuan renewal, one year validity; about two working days to review once submitted; four account states (trial, opened, verified, certified)
 - As of: May 2022 (page dated 2022-05-27)
@@ -430,8 +442,10 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-24, re-fetched before the draft was finished, unchanged
 - Used in: china-social-media-package-includes
 - Re-verified 2026-09-29 for 04D: "每个月（按自然月）可以开启4次" confirmed at check 1 and check 2. Used in: food-beverage.
+- Re-verified 2026-10-01 for 05A: "每个月（按自然月）可以开启4次" and "每月月底0点更新，次数不会累加" confirmed on the first URL. CORRECTION for reuse: "群发次数目前不支持增加" (cannot be increased) is on the second URL (150921mUbeya), not the first; 05A cites the first URL and says "unused pushes do not carry over" at check 1 and check 2. Used in: wechat-marketing-cost.
 - Notes: Pair with the "overseas entities: service account only" entry. Together they explain why a foreign brand's WeChat cadence is about one pushed article a week. Relevant to briefs 05B (WeChat Official Account setup) and 06C (open-rate benchmark).
 
+- Re-verified 2026-10-01 for 05B: the page now says "公众号（认证用户、非认证用户），每天可以开启1次【群发通知】" (the former subscription account is called 公众号) and "每个月（按自然月）可以开启4次" for the 服务号, at check 1 and check 2. Used in: wechat-official-account-setup.
 ### Xiaohongshu professional accounts: no WeChat ID or phone number in auto-replies, from January 7, 2025
 - Value: from January 7, 2025, the auto-reply component and welcome messages of a Xiaohongshu professional account (专业号) may not contain a WeChat ID or phone number; only the social business card (社媒名片) may be used to pass contact details. A service provider told the reporter that accounts which did not remove WeChat IDs would be muted (禁言). Also on the page: 98% of local-services merchants were said at WILL to interact with users through in-app consultation
 - As of: January 2025 (article dated 2025-01-11)
@@ -964,6 +978,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 1: 2026-09-17, fetched by curl, "返货/返点政策", "不予退还" and "不可退款" read verbatim in context
 - Verified 2: 2026-09-17, re-fetched, unchanged
 - Used in: china-agency-pricing-models
+- Re-verified 2026-10-01 for 05A: "返货/返点政策" and "不可退" confirmed at check 1 and check 2. Used in: wechat-marketing-cost.
 - Notes: Undated page, logged on the same basis as the WeChat Moments budget entry above. Recheck the 2024 example year on reuse; if it moves, the agreement was revised.
 
 ### Tencent service provider agreement: the provider holds and answers for the sub-client account
@@ -1149,6 +1164,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: chinese-entity-social-media
 - Notes: **The single most important source in this ledger for any agency-relationship or account-ownership article.** The middle limb is the one that matters and the one nobody quotes: the right of use follows the entity that passed the qualification review, not the entity that first registered. An account verified on an agency's licence is the agency's to use as a matter of the agreement. Combined with the outright ban on transfer, there is no clean contractual handover, which is why articles must not promise migration as a remedy. Tencent's own account migration help page could not be fetched on 2026-09-21 (kf.qq.com/faq/170221iQVfuu170221zA3UZZ.html returns 404, the 公众平台专区 index is JavaScript-rendered); every migration fee figure in circulation is self-media. Do not cite one until a platform page is reachable.
 
+- Re-verified 2026-10-01 for 05B: "微信公众账号的所有权归腾讯公司所有", "账号资质审核成功之后使用权属于通过资质审核的用户" and "账号使用权禁止赠与、借用、租用、转让或售卖" confirmed at check 1 and check 2. Used in: wechat-official-account-setup.
 ### Cross-border e-commerce retail import: transaction limits and the resale ban
 - Value: single transaction limit raised from 2,000 yuan to 5,000 yuan and the annual limit per person from 20,000 yuan to 26,000 yuan; where a single item exceeds the 5,000 yuan transaction limit but falls under the annual limit and is the only item on the order, it may still be imported through the cross-border retail channel with tariff, import VAT and consumption tax charged in full at the goods rate, counting toward the annual total; goods purchased are final goods for the consumer's personal use and may not be resold into the domestic market
 - As of: 成文日期 2018-11-29; effective 2019-01-01
@@ -1217,6 +1233,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-22, re-fetched with curl, "14.18亿" confirmed unchanged
 - Used in: camper-china-teardown
 - Re-verified 2026-09-29 for 04D: "14.18亿" confirmed at check 1 and check 2. Used in: food-beverage.
+- Re-verified 2026-10-01 for 05A: "14.18亿" and "同比增长2％" confirmed at check 1 and check 2. Used in: wechat-marketing-cost.
 - Notes: Corroborated same day on China Fund News (中国基金报), 2026-03-18, https://www.chnfund.com/article/AR1231fcdd-25ff-01cd-2836-3a2015e46b1d ("微信及WeChat合并月活跃用户数进一步增长至14.18亿"). Tencent's own IR announcement was not fetchable directly; both cited pages attribute the figure to the results release. Supersedes the 13.85 billion-era figures from the 2024 annual report; recheck after Tencent's 2026 annual results in March 2027.
 
 ### Weibo monthly and daily active users, end of Q4 2025
@@ -1308,6 +1325,220 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - "Recipe tutorials are the most searched food content" and "half of young people learn recipes on Xiaohongshu": self-media and vendor copy (Sina 2021 column, Qiangua). Rejected.
 - China Customs annual press pages and the customs GB 7718-2025 page: HTTP 412 to automated fetches. MOFCOM and Beijing AMR used instead.
 
+### WeChat Moments bidding closed in core and key cities; free account opening
+- Value: on Tencent's WeChat ads page, Moments bidding buys (竞价购买) are "仅开放其他城市（核心与重点城市不支持）" (open only in other cities; core and key cities not supported) and "仅适用于图文广告形态" (image-and-text format only); scheduled buys are "向所有城市开放" (open to all cities); the page advertises "腾讯广告免费开户" (free account opening)
+- As of: page undated, confirmed October 2026; the 2016 self-serve guide already said "部分城市不支持竞价购买"
+- Source: Tencent Ads (腾讯广告), WeChat advertising product page
+- URL: https://e.qq.com/topic/marketing/industry/weixin/
+- Verified 1: 2026-10-01, fetched with curl, all four strings confirmed
+- Verified 2: 2026-10-01, re-fetched before the draft was finished, unchanged
+- Used in: wechat-marketing-cost
+- Notes: The page does not list which cities are core or key. Do not name them in copy. Practical reading used in 05A: reach in the core group means the scheduled route, from 50,000 yuan per placement. No first recharge (ad account deposit) figure is on any Tencent page found; see the NOT LOGGED block below.
+
+### WeChat Mini Program verification, overseas entity: fee and review time
+- Value: 99 US dollars per verification application, charged whether or not it succeeds; review within 7 to 15 working days after complete documents; payment by WeChat Pay or bank card (Visa, Master)
+- As of: page undated; confirmed October 2026 (platform documentation)
+- Source: Tencent customer service (腾讯客服), 境外小程序认证问题汇总
+- URL: https://kf.qq.com/faq/190712yYfY7v190712u2YjQ3.html
+- Verified 1: 2026-10-01, fetched with curl, "99美元/次", "无论认证成功或失败" and "7-15个工作日内完成审核" confirmed
+- Verified 2: 2026-10-01, re-fetched, unchanged
+- Used in: wechat-marketing-cost
+- Notes: The search-summary claim that overseas Mini Programs need no annual review traces to agent pages only. Not logged.
+
+### WeChat Mini Program quick registration through a verified account; separate annual review
+- Value: a verified Official Account or service account can quick-register and verify a Mini Program: mainland entities pay no 300-yuan fee, overseas entities no 99-dollar fee; the Mini Program's first verification period matches the account's; later annual reviews (年审) are applied for separately in the Mini Program back end
+- As of: page undated; confirmed October 2026 (platform documentation)
+- Source: Tencent customer service (腾讯客服), 公众号/服务号快速注册并认证小程序
+- URL: https://kf.qq.com/faq/170705YVZFZZ170705eyI7Rr.html
+- Verified 1: 2026-10-01, fetched with curl, "无需支付300元认证费用", "无需支付99美元认证费用" and "后续小程序认证年审需要在小程序后台独立申请" confirmed
+- Verified 2: 2026-10-01, re-fetched, unchanged
+- Used in: wechat-marketing-cost
+- Notes: The scheduled 2026-10-01 draft run (05B) found the Mini Program verification guide at developers.weixin.qq.com/miniprogram/product/renzheng.html (annual review within a year or status ends). It is the Mini Program guide, not the Official Account one; cite it for Mini Programs only. Not used in 05A.
+
+### WeChat Pay merchant fees: no application fee, 0.6% to 1% per transaction
+- Value: applying for WeChat Pay carries no application fee; merchants pay a service fee on each transaction, generally 0.6% to 1% depending on business category; the company application asks for a business license (营业执照) and a corporate bank account (对公银行账户)
+- As of: page undated; confirmed October 2026 (platform documentation)
+- Source: WeChat Pay (微信支付), merchant onboarding guide (线下场所; the Mini Program guide carries the same wording)
+- URL: https://pay.weixin.qq.com/static/applyment_guide/applyment_detail_store.shtml
+- Verified 1: 2026-10-01, fetched with curl, "不收取任何申请费用", "0.6%-1%不等", "营业执照" and "对公银行账户" confirmed; same strings on applyment_detail_miniapp.shtml
+- Verified 2: 2026-10-01, re-fetched, unchanged
+- Used in: wechat-marketing-cost
+- Notes: Domestic merchant onboarding. Cross-border WeChat Pay for overseas merchants is a different program and was not researched.
+
+### WeChat Mini Program phone-number quick verification component: paid since August 28, 2023
+- Value: from August 28, 2023, 0.03 yuan per successful call of the phone-number quick verification component; 1,000 free trial calls per Mini Program account
+- As of: policy date 2023-08-28 on the documentation page; confirmed October 2026
+- Source: WeChat Open Platform (微信开放文档), getPhoneNumber documentation
+- URL: https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/getPhoneNumber.html
+- Verified 1: 2026-10-01, fetched with curl, "自2023年8月28日起", "收费0.03元" and "1000次体验额度" confirmed
+- Verified 2: 2026-10-01, re-fetched, unchanged
+- Used in: wechat-marketing-cost
+- Notes: Older than 12 months as a policy date, but the live documentation still states it. Package prices live in the Official Account Platform payment console (login only).
+
+### WeChat Store (微信小店): opening cost, deposit and technical service fee
+- Value: opening a WeChat Store account is free; new merchants can trial with zero deposit in more than 3,000 categories; a technical service fee is charged on each settled transaction, 1% to 5% in most categories; new merchants pay 1% on early sales (within 90 days of the first order and 180 days of opening, on the first 1 million yuan, or 1.5 million in key categories); no monthly or annual fee
+- As of: August 2026 (page "最后更新：2026-08-24")
+- Source: Tencent Marketing (腾讯营销), WeChat Store FAQ
+- URL: https://e.qq.com/faq/wechat-store/growth/faq-zcjc-008/
+- Verified 1: 2026-10-01, fetched with curl, "开通微信小店账号本身不收费", "超过三千个类目", "1%–5%", "不收月租或年费" and "2026-08-24" confirmed
+- Verified 2: 2026-10-01, re-fetched, unchanged
+- Used in: wechat-marketing-cost
+
+### WeCom verification fees and annual review
+- Value: 300 yuan review fee per application for companies and other for-profit bodies, not refunded on failure; member-scale fee 2,700 yuan (1,001 to 10,000 members) or 29,700 yuan (over 10,000), refunded if the review fails; government and non-profit bodies exempt; verification renewed by annual review at the same fees
+- As of: page undated; confirmed October 2026 (platform documentation)
+- Source: WeCom help center (企业微信帮助中心), 认证费用及年审说明
+- URL: https://open.work.weixin.qq.com/help2/pc/18372
+- Verified 1: 2026-10-01, fetched with curl, "人民币300元/次", "2700元", "29,700元", "每年都需要进行年审", "同首次认证费用" and "不支持退费" confirmed
+- Verified 2: 2026-10-01, re-fetched, unchanged
+- Used in: wechat-marketing-cost
+- Notes: Mainland process. The overseas WeCom verification page (entry below) states no fee; do not apply the 300 yuan to overseas companies.
+
+- Re-verified 2026-10-01 for 05B (scheduled draft run): "300元/次", "2700元/次", "29,700元/次", "同首次认证费用", "互通外部联系人规模限制为100人" and "无法继续添加和邀请更多客户" confirmed at check 1 and check 2. Used in: wechat-official-account-setup, cited as the mainland route only.
+### WeCom overseas company verification: documents, review time, unsupported functions
+- Value: a WeCom registered as an overseas company verifies with its full name, short name and a company registration certificate or business license; review usually 1 to 3 working days; some functions are not supported, including external payment collection (对外收款), enterprise payment, conversation archiving (会话内容存档), red envelopes and the third-party app marketplace (第三方应用市场)
+- As of: page undated; confirmed October 2026 (platform documentation)
+- Source: WeCom help center (企业微信帮助中心), 什么是境外企业验证
+- URL: https://open.work.weixin.qq.com/help2/pc/16535
+- Verified 1: 2026-10-01, fetched with curl, "1-3个工作日", "对外收款", "会话内容存档" and "第三方应用市场" confirmed
+- Verified 2: 2026-10-01, re-fetched, unchanged
+- Used in: wechat-marketing-cost
+
+- Re-verified 2026-10-01 for 05B: "企业全称、企业简称", "《企业注册证》或者《商业许可证书》", "审核时间一般是1-3个工作日", "对外收款", "会话内容存档" and "第三方应用市场" confirmed at check 1 and check 2. The help-center JSON carries an update time of 2026-06-29, so 05B cites the page as June 2026. Used in: wechat-official-account-setup.
+### WeCom external contact capacity: 2,000 free, annual tiers, 100 for unverified companies
+- Value: each company gets 2,000 external contacts free; beyond that it buys a capacity tier, valid one year; an unverified company is limited to 100 customers
+- As of: page undated; confirmed October 2026 (platform documentation)
+- Source: WeCom help center (企业微信帮助中心), 「外部联系人规模」如何购买？有什么注意事项？
+- URL: https://open.work.weixin.qq.com/help2/pc/21326
+- Verified 1: 2026-10-01, fetched with curl, "免费获得2000位外部联系人规模", "有效期一年" and "只能添加100个客户" confirmed
+- Verified 2: 2026-10-01, re-fetched, unchanged
+- Used in: wechat-marketing-cost
+- Notes: The page shows no prices to curl. Prices: entry below.
+
+### WeCom external contact capacity prices at launch, May 2023
+- Value: from May 19, 2023; 5,000 contacts 500 yuan a year; 20,000 contacts 2,000 yuan a year
+- As of: April 2023 (article dated 2023-04-25)
+- Source: Sanyi Shenghuo (三易生活) via Tencent News (腾讯新闻), reporting WeCom's adjustment notice and price page
+- URL: https://news.qq.com/rain/a/20230425A07YD600
+- Verified 1: 2026-10-01, fetched with curl, "2023年5月19日", "5000人费用为500元/年" and "2万人费用为2000元/" confirmed
+- Verified 2: 2026-10-01, re-fetched, unchanged
+- Used in: wechat-marketing-cost
+- Notes: Older than 12 months. Cite only as launch prices, with the date. Jiemian (界面新闻) carries the same tiers plus 1 million contacts at 100,000 yuan a year (jiemian.com/article/9572696.html, self-media column); not cited.
+
+### WeCom interface licenses for third-party tools, priced per account per year
+- Value: tiered per account per year; basic account 5 yuan and interconnect (customer-contact) account 50 yuan for 1 to 5 accounts; 4 and 40 for 6 to 200; 3 and 30 for 201 to 500; 2 and 20 for 501 to 1,000; 1 and 10 for 1,001 to 10,000; above that negotiated. Paid by the service provider and collected from the client; 90-day free trial after an app is installed
+- As of: pricing in force since May 16, 2022 (stated on the page); WeCom developer documentation on the license structure last updated 2023-08-04
+- Source: Tencent HiFlow (腾讯云HiFlow), WeCom app pricing; structure confirmed by WeCom developer center (企业微信开发者中心), 接口调用许可 概述与指引
+- URL: https://hiflow.tencent.com/docs/applications/qiwei-agent-app-shoufeishuoming/ ; https://developer.work.weixin.qq.com/document/path/95652
+- Verified 1: 2026-10-01, both fetched with curl; HiFlow "2022年5月16日", "1-5 5元/帐号/年 50元/帐号/年", "1001-10000 1元/帐号/年 10元/帐号/年", "90天的接口许可免费试用期" and "向客户代收" confirmed; developer doc "基础账号 与 互通账号" and "服务商向企业微信支付许可费用" confirmed
+- Verified 2: 2026-10-01, HiFlow re-fetched, unchanged
+- Used in: wechat-marketing-cost
+- Notes: Older than 12 months; cited with the 2022 date. The 05B draft run found WeCom's own notice at open.work.weixin.qq.com/wwopen/common/readDocument/38829; prefer it on reuse once both checks are logged against it.
+
+- Re-verified 2026-10-01 for 05B against WeCom's own notice, https://open.work.weixin.qq.com/wwopen/common/readDocument/38829 (面向服务商进行收费模式调整的说明): "2022年5月16日", "5元/账号/年", "50元/账号/年" and "免费调用企业微信接口90天" confirmed at check 1 and check 2. 05B cites this Tencent URL instead of HiFlow. Used in: wechat-official-account-setup.
+### WeChat Channels feed ads at launch, 2022: contract minimum and CPM by city tier
+- Value: Channels native feed ads launched July 18, 2022; contract buys then had a minimum budget of 10,000 yuan ("预算最低可设置1w"), CPM 100 yuan (core cities), 75 (key cities), 50 (other cities); bidding required whitelist access
+- As of: September 2022 (article dated 2022-09-15)
+- Source: Niaoge Biji (鸟哥笔记), author 云略
+- URL: https://www.niaogebiji.com/article-186733-1.html
+- Verified 1: 2026-10-01, fetched with curl, "2022-09-15", "7 月 18 日", "预算最低可设置1w", "核心城市100元/千次曝光", "重点城市75元/千次曝光" and "其他城市50元/千次曝光" confirmed
+- Verified 2: 2026-10-01, re-fetched, unchanged
+- Used in: wechat-marketing-cost
+- Notes: Launch-era and older than 12 months. Use only as "at launch", with the date, never as a current floor. The author is a Channels data vendor, not a social media agency.
+
+### NOT LOGGED, searched and rejected 2026-10-01 (WeChat marketing cost)
+- Tencent Ads minimum first recharge (ad account deposit). Brief 05A asked for it from the platform. Tencent's pages say only that opening is free. The 1,000 / 5,000 / 10,000-yuan first-recharge figures are on agent sites (tengxundsp.com, ggyzd.com, gvo2010.com) and Sohu or Zhihu self-media. Not cited.
+- Current Channels ad minimums and Official Account ad CPC floors (2026 Sohu and Toutiao self-media: "500 yuan to start", "average CPM 32.7 yuan"). No primary. Rejected.
+- Mini Program build price ranges by complexity. Developer price lists only; 36Kr's piece is from the 2017 to 2018 launch period; a Chaozhou government tender (105,000 yuan, build plus three years of operation) refused automated fetches. Not cited. 05A's tiers table describes what moves the quote instead.
+- Production cost of one WeChat article in yuan. No dated source. Not cited.
+- Agency retainer ranges for WeChat. None from a dated non-competitor source (same finding as 03A and 04A).
+- WeChat Pay "0.2% via a service provider" rates. Service-provider sales pages only. Not cited.
+- The older /insights/wechat-advertising-formats-costs/ article (April 2026) gives local promotion at 300 yuan a day and cites Zhihu, Yiban and Niaoge Biji without dates. Tencent's page says 1,000 yuan a day. Its figures are not ledger entries and were not reused.
+
+### WeChat verification privileges by account type
+- Value: verification costs 300 yuan per application with a one-year term (government bodies and some organizations exempt). A verified 公众号 (former subscription account) gets custom-menu external links and plain-text menu replies, some developer interfaces, advertiser access, cards, multi-agent customer service and the V badge. A verified 服务号 (service account) gets all advanced developer interfaces, can apply for WeChat Pay, plus advertiser access, cards, multi-agent service and the V badge. Personal accounts cannot be verified. Government and media 公众号 can apply for WeChat Pay after verification. The verification entity must match the account's current entity, or review may fail
+- As of: page undated; confirmed October 2026 (platform documentation)
+- Source: Tencent customer service (腾讯客服), 微信认证后有哪些特权
+- URL: https://kf.qq.com/faq/1612197nEJNR161219BB7Jne.html
+- Verified 1: 2026-10-01, fetched with curl, "全部高级开发接口", "可申请开通微信支付功能", "可以申请广告主功能", "可以申请多客服功能", "期限： 1 年", "机关与媒体类订阅号认证后可申请微信支付", "个人类型公众号/服务号暂时不支持微信认证" and "填写的认证主体与账号当前主体信息保持一致，否则可能无法通过审核" confirmed
+- Verified 2: 2026-10-01, re-fetched before the draft was finished, unchanged
+- Used in: wechat-official-account-setup
+- Notes: The fee table on this page still says 订阅号. The account-type comparison in 05B is built from this page plus the push-rules page.
+
+### WeChat verification annual review: what lapses
+- Value: if the annual review expires or fails, the V badge on the account name is removed; a 公众号 can no longer add external links to its custom menu; a 服务号 loses payment, authorization and other advanced interfaces; the red-envelope cover platform registered by the account can no longer be logged into
+- As of: page undated; confirmed October 2026 (platform documentation)
+- Source: Tencent customer service (腾讯客服), 微信认证年审到期或失败哪些功能会受影响
+- URL: https://kf.qq.com/faq/120911VrYVrA140716FBraQJ.html
+- Verified 1: 2026-10-01, fetched with curl, "认证名称加“V”被取消", "公众号不可在自定义菜单插入外链" and "服务号支付功能、授权等高级接口将被停用" confirmed
+- Verified 2: 2026-10-01, re-fetched, unchanged
+- Used in: wechat-official-account-setup
+- Notes: The Official Account source for the annual review. Do not cite developers.weixin.qq.com/miniprogram/product/renzheng.html for this: that page is the Mini Program verification guide.
+
+### WeChat verification: entity review and name review are separate
+- Value: verification checks the account entity's qualifications and the account name separately; passing the entity review opens cards, multi-agent service, menu links and (for service accounts) all advanced interfaces; passing the name review completes verification and adds the badge; business domains, advertiser access and quick Mini Program registration need both
+- As of: page undated; confirmed October 2026 (platform documentation)
+- Source: Tencent customer service (腾讯客服), 微信认证分为资质审核和名称审核的说明
+- URL: https://kf.qq.com/faq/170213JfiEv21702132AN7F3.html
+- Verified 1: 2026-10-01, fetched with curl, "账号主体资质和账号名称两部分审核", "账号名称审核成功：则完成完整的微信认证" and "申请广告主功能、快速注册小程序需要同时通过资质审核及名称审核" confirmed
+- Verified 2: 2026-10-01, re-fetched, unchanged
+- Used in: wechat-official-account-setup
+
+### WeChat Official Account verification steps
+- Value: two entry points in mp.weixin.qq.com; steps: agree to the 微信公众平台认证服务协议, fill in documents by entity type, accept the naming rules (a reviewer contacts the applicant if the name breaks them), fill in invoice details or choose no invoice, pay by scanning a WeChat code
+- As of: page undated; confirmed October 2026 (platform documentation)
+- Source: Tencent customer service (腾讯客服), 公众号/服务号微信认证申请方法
+- URL: https://kf.qq.com/faq/161219Uj6jQF161219FB3Iz2.html
+- Verified 1: 2026-10-01, fetched with curl, "《微信公众平台认证服务协议》", "同意命名规则", "会有审核人员与你沟通修改", "填写发票" and "使用微信扫一扫二维码完成支付" confirmed
+- Verified 2: 2026-10-01, re-fetched, unchanged
+- Used in: wechat-official-account-setup (named in prose; the step list follows it)
+- Notes: Mainland page. The overseas page (190723aQvMR31907233IF7FV) adds card payment.
+
+### WeChat Official Account migration: rules, fee, timing, what moves
+- Value: an overseas-entity account may migrate to a mainland China account or to an account in the same overseas region; mainland to overseas and overseas to a different overseas region are not supported; a 公众号 (former subscription account) cannot migrate to a 服务号; when all followers move, the target account must have no more than 1,000 followers; different-entity migration costs a 300 yuan review fee, not refunded; the application letter must be notarized (no lawyer attestation), usually 1 to 2 working days; review usually 1 to 3 working days; both admins confirm within 15 days; followers get one day to unfollow; data moves in 1 to 3 days. What moves: original-content protection, the comment feature and the violation record, plus optionally all followers, article materials and the WeChat ID. Account A is then reclaimed; account B keeps its own entity
+- As of: page undated; confirmed October 2026 (platform documentation)
+- Source: Tencent customer service (腾讯客服), 账号迁移流程指引
+- URL: https://kf.qq.com/faq/170221uQ7Vz2170221ZzIZv6.html
+- Verified 1: 2026-10-01, fetched with curl, "支持境外主体账号发起迁移至中国大陆地区主体账号，或发起迁移至境外同一国家或地区主体账号", "暂不支持境内主体账号迁移至境外主体账号", "暂不支持公众号（即原订阅号）迁移至服务号", "目标账号的关注用户数必须不超过1000", "异主体账号迁移需支付审核服务费用人民币300元", "印鉴公证", "审核时间一般为1-3个工作日" and "1天内有选择是否取关的权利" confirmed
+- Verified 2: 2026-10-01, re-fetched, unchanged, plus "将A账号的原创保护功能和留言管理功能、违规记录、全部关注用户（可选）、文章素材（可选）、微信号（可选）迁移至B账号", "A账号被回收" and "但主体还是B"
+- Used in: wechat-official-account-setup
+- Notes: **Supersedes the Tencent half of the 2026-09-21 rejection** ("migration fees; Tencent's own migration help page is unreachable"). The old URL (170221iQVfuu170221zA3UZZ) is still dead; this one is live. A mobile copy at kf.qq.com/touch/wxappfaq/170120a6rqEN170120ZVVrU7.html says the whole migration usually takes 7 to 10 days. The notary and agent fees in circulation remain uncited. Search summaries claiming overseas accounts cannot migrate are wrong per this page.
+
+### Subscription account renamed Official Account, November 2024
+- Value: WeChat renamed 订阅号 (subscription account) to 公众号 (Official Account) in November 2024, across the app and the platform; Tencent's developer docs now read "公众号（原订阅号）与服务号" and describe the 服务号 as giving companies and organizations stronger business service and user tools
+- As of: November 2024 (Woshipm article dated 2024-12-18); Tencent docs undated, confirmed October 2026
+- Source: Woshipm (人人都是产品经理); WeChat Open Docs (微信开放文档), 服务号介绍
+- URL: https://www.woshipm.com/share/6158064.html ; https://developers.weixin.qq.com/doc/service/guide/
+- Verified 1: 2026-10-01, both fetched with curl; "2024-12-18" and "终于在2024年11月正式更名为“公众号”" confirmed; docs "已升级为公众号（原订阅号）与服务号文档" and "服务号给企业和组织提供更强大的业务服务与用户管理能力" confirmed
+- Verified 2: 2026-10-01, both re-fetched, unchanged
+- Used in: wechat-official-account-setup
+- Notes: The Woshipm piece is older than 12 months but dates a one-off event, and Tencent's own pages corroborate the rename. In body copy, "Official Account" now names two things: the umbrella product and the former subscription account. Say which.
+
+### WeChat service account customer service messages: send windows
+- Value: after a user sends a message, the account may send 5 customer service messages within 48 hours; after a user follows, scans a QR code or taps certain menu types, 3 messages within 1 minute
+- As of: page undated; confirmed October 2026 (platform documentation)
+- Source: WeChat Open Docs (微信开放文档), 客服消息介绍 (service account)
+- URL: https://developers.weixin.qq.com/doc/service/guide/product/kf/intro.html
+- Verified 1: 2026-10-01, fetched with curl, "用户发送消息 5条 48小时" and "关注服务号 3条 1分钟" confirmed
+- Verified 2: 2026-10-01, re-fetched, unchanged
+- Used in: wechat-official-account-setup
+- Notes: The same docs describe personalized menus (个性化菜单) by follower group, https://developers.weixin.qq.com/doc/service/guide/product/menu/intro.html, checked twice on 2026-10-01 ("让公众号的不同用户群体看到不一样的自定义菜单"), named in 05B prose without a blockquote. The "three top-level, five sub-items" menu limit is not on the current service-account menu pages; not cited.
+
+### WeChat Pay cross-border program for overseas merchants
+- Value: open in 49 countries and regions; merchant model (direct contract) only in Hong Kong, the UK and Singapore; institution model elsewhere; applicants need a legal overseas entity and their own URL or app; settlement in foreign currency once a vendor's turnover reaches 800 US dollars, bought on T+1; WeChat Pay overseas partners can apply for an Official Account through a whitelist
+- As of: page undated; confirmed October 2026 (platform documentation)
+- Source: WeChat Pay (微信支付), cross-border merchant FAQ
+- URL: https://act.weixin.qq.com/static/merchant_overseas/faq_en.html
+- Verified 1: 2026-10-01, fetched with curl, "Merchant Model (only in HongKong China, UK and Singapore)", "Institution Model", "reaches 800 USD" and "Owning a legal overseas entity" confirmed
+- Verified 2: 2026-10-01, re-fetched, unchanged
+- Used in: wechat-official-account-setup
+
+### NOT LOGGED, searched and rejected 2026-10-01 (WeChat Official Account setup)
+- Rejection reasons from our own submission history (brief 05B). Not on the site, not in this ledger. Cut with a TODO: first-party data marker. Needs a count, period and breakdown before it can be added to the first-party section.
+- "Service accounts can push six times a month after verification" (CSDN, fesshe.com generated articles, 2025 to 2026). Tencent's push-rules page says four, and "群发次数目前不支持增加". Rejected.
+- Custom menu limits (three top-level, five sub-items): repeated everywhere, not on the current Tencent service-account menu pages. Not cited.
+- The Mini Program verification guide's failure reasons (developers.weixin.qq.com/miniprogram/product/renzheng.html, section 十二). Mini Program rules; not applied to Official Accounts.
+
 ## TheRedScroll first-party data
 
 Everything here comes from accounts we run. It is cited as ours, with sample
@@ -1343,6 +1574,7 @@ data.
 - Verified 2: 2026-09-24, re-fetched before the draft was finished, all 17 strings still present
 - Used in: china-social-media-package-includes
 - Re-verified 2026-09-29 for 04D on the live /pricing/ page: scope lines, "6-month minimum contract on all packages", "within 2 weeks of contract signing", "Real-life photo & video shoots in China", "KOL & KOC campaigns" and "Paid directly to the platform, not through us" confirmed at check 1 and check 2. No price or tier name used. Used in: food-beverage.
+- Re-verified 2026-10-01 for 05A: on the live /pricing/ page "up to 1,500 Chinese characters + 3 images", "Real-life photo & video shoots in China", "Paid directly to the platform, not through us" and "membership Mini Programs. Custom quote" confirmed. No price or tier name used at check 1 and check 2. Used in: wechat-marketing-cost.
 - Notes: Cite as "TheRedScroll pricing page, September 2026, https://www.theredscroll.com/pricing/". If the pricing page changes, 04A must change with it.
 
 ### TheRedScroll community, reporting and account-ownership commitments, as published
@@ -1353,6 +1585,7 @@ data.
 - Verified 1: 2026-09-24, each page fetched with curl, every quoted string matched
 - Verified 2: 2026-09-24, re-fetched, unchanged
 - Used in: china-social-media-package-includes
+- Re-verified 2026-10-01 for 05A: on the live /wechat-agency/ page "registered under your company name" and "the full content archive" confirmed. Referenced by name only, no quote at check 1 and check 2. Used in: wechat-marketing-cost.
 - Notes: The site publishes NO community care hours and NO reply-time target. The Weibo page's "monitor brand mentions daily" sits beside a pricing table that keeps brand mention monitoring out of the entry package; 04A treats replies and DMs on the client's own accounts as included and monitoring mentions elsewhere as social listening. Flag if the two pages are meant to say something else.
 
 ### TheRedScroll Xiaohongshu ad planning ranges, as published
