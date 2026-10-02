@@ -74,8 +74,8 @@ if ($Mode -eq 'draft' -and -not $Force) {
   }
 }
 
-# The shared runner uses: Fable, Opus, GPT-6 Astra, then GPT-5.6 Sol.
-$Model = 'fable'
+# The shared runner uses: Opus 5.5, then Fable, GPT-6 Astra and GPT-5.6 Sol as fallbacks.
+$Model = 'claude-opus-5-5'
 
 if ($Mode -eq 'draft') {
   $Prompt = @'
