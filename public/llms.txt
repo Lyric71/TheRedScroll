@@ -1,6 +1,6 @@
 # TheRedScroll
 
-Last updated: 2026-10-02
+Last updated: 2026-10-05
 
 > TheRedScroll is a China social media agency based in Shanghai and Hong Kong. We help Western brands grow on WeChat, Douyin, RedNote (Xiaohongshu), Weibo, and 14 other Chinese social platforms, on a fixed scope and a fixed price.
 
@@ -65,6 +65,7 @@ Founded by Cyril Drouin, former CEO of Publicis Commerce and Performance Marketi
 - [Xiaohongshu advertising cost: every ad format, and when it works](https://www.theredscroll.com/insights/xiaohongshu-advertising-formats-costs/): Feed ads, search ads, the self-serve boost, KOL amplification, store and lead ads, and splash and brand zone on Juguang, with sourced cost figures and the order to buy them in (published 2026-09-29)
 - [Xiaohongshu banned words: what gets notes hidden and what to say instead](https://www.theredscroll.com/insights/xiaohongshu-sensitive-words/): The six kinds of wording that get Xiaohongshu notes limited or removed (superlatives, health claims, prices and promised returns, competitor comparisons, contact details, political topics), the Chinese law or platform rule behind each, a rewrite table and how to recover a limited note (published 2026-10-01)
 - [Food and beverage marketing in China](https://www.theredscroll.com/industries/food-beverage/): Retail shoppers versus foodservice buyers, the health and label claims Chinese regulators ban (GB 7718-2025 from March 2027), recipe content on Xiaohongshu, Douyin impulse sales, WeChat for chefs and the six peaks in the food calendar (published 2026-10-02)
+- [WeChat marketing cost: account, ads, Mini Program, and WeCom](https://www.theredscroll.com/insights/wechat-marketing-cost/): What Tencent charges and what you set yourself: Official Account verification (99 US dollars a year from overseas), content, Moments ad floors and the core-city bidding rule, Channels, Mini Program and WeChat Pay fees, WeCom licensing, agency fee models and three worked budgets (published 2026-10-05)
 
 ## Localized versions
 

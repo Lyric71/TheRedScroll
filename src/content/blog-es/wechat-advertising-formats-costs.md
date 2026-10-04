@@ -4,7 +4,7 @@ description: "La publicidad en WeChat se reparte entre Moments, Cuentas Oficiale
 metaTitle: "Anuncios en WeChat: formatos y precios"
 metaDescription: "WeChat tiene seis formatos de anuncio y tres modelos de precio. Cuánto cuesta cada emplazamiento y cómo plantear la primera campaña en China."
 publishDate: 2026-04-05
-updatedDate: 2026-10-02
+updatedDate: 2026-10-05
 author: "TheRedScroll"
 platforms: ["wechat"]
 category: "Plataformas"
@@ -23,7 +23,10 @@ Eso hace que la publicidad en WeChat afine más que la de casi cualquier platafo
 
 > WeChat no es la plataforma del alcance viral. Es la de dar con la persona justa, en el momento justo, con un contenido que encaja ahí.
 
-Toda la publicidad de WeChat pasa por Tencent Ads. Para lanzar cualquier campaña hace falta una Cuenta Oficial verificada. Sin cuenta, no hay anuncios. Y verificarla exige una entidad mercantil china o un representante local autorizado.
+Toda la publicidad de WeChat pasa por Tencent Ads. Para lanzar cualquier campaña hace falta una Cuenta Oficial verificada. Sin cuenta, no hay anuncios. Eso sí, una empresa registrada fuera de China continental puede verificar ella misma una cuenta de servicio, por 99 dólares estadounidenses por solicitud.
+
+> Una entidad extranjera abona 99 dólares estadounidenses por solicitud de verificación, tanto si la revisión prospera como si no.
+> Fuente: servicio de atención al cliente de Tencent (腾讯客服), preguntas frecuentes sobre la verificación de entidades extranjeras, comprobada en septiembre de 2026. https://kf.qq.com/faq/190723aQvMR31907233IF7FV.html
 
 ## Los seis emplazamientos publicitarios
 
@@ -52,9 +55,14 @@ Es el modelo más habitual en Moments y en campañas de marca. Las tarifas cambi
 
 | Rango de ciudad | CPM en compra programada | Horquilla CPM en puja |
 |---|---|---|
-| Núcleo (Pekín, Shanghái) | En torno a 150 yuanes por mil | 100-300 yuanes por mil |
-| Clave (Cantón, Shenzhen, Chengdu, Hangzhou y otras 18) | En torno a 100 yuanes por mil | 60-200 yuanes por mil |
+| Núcleo (Pekín, Shanghái) | En torno a 150 yuanes por mil | Sin puja |
+| Clave (Cantón, Shenzhen, Chengdu, Hangzhou y otras 18) | En torno a 100 yuanes por mil | Sin puja |
 | Estándar (resto de ciudades) | En torno a 50 yuanes por mil | 30-200 yuanes por mil |
+
+La puja solo está abierta en las ciudades del rango estándar. En las ciudades núcleo y clave, Moments se compra de forma programada.
+
+> Las compras de Moments por puja solo están abiertas en el resto de ciudades; las ciudades núcleo y clave quedan excluidas. La puja se aplica únicamente al formato de imagen y texto.
+> Fuente: Tencent Ads (腾讯广告), página de producto de publicidad en WeChat, comprobada en octubre de 2026. https://e.qq.com/topic/marketing/industry/weixin/
 
 El vídeo cuesta entre un 30 y un 50 % más que la imagen a igualdad de impresiones. Para hacerse una idea: el CPM de tráfico de pago en Douyin vía Ocean Engine ronda los 30-60 yuanes, pero ahí se amplifica contenido ya existente, no se compra un emplazamiento nativo en el feed. El CPM de Moments es más alto porque se paga un hueco dentro de un feed social personal, con mucha más confianza detrás.
 
@@ -79,14 +87,15 @@ Aquí es donde tropieza buena parte de las marcas. Los mínimos dependen por ent
 | Método de compra | Mínimo |
 |---|---|
 | Compra programada | 50.000 yuanes por campaña (unos 7.000 dólares) |
-| Compra por puja | 1.000 yuanes de carga inicial, 1.000 yuanes diarios de presupuesto |
+| Compra por puja | 1.000 yuanes diarios de presupuesto, CPM de 30 yuanes; solo ciudades estándar |
 | Promoción local | 1.000 yuanes al día (unos 140 dólares), sin el umbral de 50.000 yuanes |
 
-La compra programada de 50.000 yuanes está pensada para grandes empujones de marca: se reservan impresiones garantizadas con entre 1 y 28 días de antelación. Lanzamientos, campañas de temporada, grandes eventos. Un «pago ahora y me garantizan las miradas».
+La compra programada de 50.000 yuanes está pensada para grandes empujones de marca: se reservan impresiones garantizadas con entre 5 y 28 días de antelación. Lanzamientos, campañas de temporada, grandes eventos. Un «pago ahora y me garantizan las miradas».
 
-> Fuentes: Niaoge Biji, Digitaling
+> Una compra programada no puede ser inferior a 50.000 yuanes y reserva el tráfico con entre 5 y 28 días de antelación. El presupuesto diario de una campaña por puja no puede bajar de 1.000 yuanes.
+> Fuente: Tencent (腾讯), guía de autoservicio de los anuncios de Moments, febrero de 2016. https://wximg.qq.com/wxp/temp/MomentsAdsGuidingBook.pdf
 
-Para una marca extranjera que tantea el terreno, la puja a 1.000 yuanes diarios es el punto de partida más práctico. Se controla el gasto diario, se afina la segmentación sobre la marcha y solo se paga por las impresiones o los clics que de verdad ocurren.
+Para una marca extranjera que tantea el terreno, la puja a 1.000 yuanes diarios es el punto de partida más práctico, siempre que su público esté fuera de las ciudades núcleo y clave. Se controla el gasto diario, se afina la segmentación sobre la marcha y solo se paga por las impresiones o los clics que de verdad ocurren. [Nuestro desglose del coste del marketing en WeChat](/es/analisis/wechat-marketing-cost/) sitúa estos mínimos junto a las tasas de la cuenta, el Mini Program y WeCom.
 
 La promoción local arranca en 1.000 yuanes al día (unos 140 dólares), el mismo suelo diario que la puja, así que no abre una puerta más barata. Su baza es otra: no está sujeta al umbral de 50.000 yuanes de la compra programada. Eso sí, solo sirve para campañas dirigidas a quien está cerca de un local físico. Vale para restaurantes, tiendas o salas de eventos. No para una campaña nacional de marca.
 

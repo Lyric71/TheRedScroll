@@ -106,7 +106,7 @@ paid.
 | Platform | Who pays | Fee | Valid for |
 |---|---|---|---|
 | WeChat Official Account | Mainland entity | 300 yuan per application | One year |
-| WeChat Official Account | Overseas entity | 99 dollars per application | One year |
+| [WeChat Official Account](/insights/wechat-marketing-cost/) | Overseas entity | 99 dollars per application | One year |
 | Xiaohongshu professional account | Any enterprise | 600 yuan per application | One year, annual review |
 | Douyin enterprise account | Any enterprise | 600 yuan first year, then 120 yuan | One year |
 
@@ -199,7 +199,7 @@ platform rule, so treat it as guidance.
 
 | Platform | Ad platform | Published floor | Who sets it |
 |---|---|---|---|
-| WeChat Moments, bidding | Tencent Ads | 1,000 yuan a day, 30 yuan CPM | Tencent |
+| [WeChat Moments, bidding](/insights/wechat-marketing-cost/) | Tencent Ads | 1,000 yuan a day, 30 yuan CPM | Tencent |
 | WeChat Moments, scheduled | Tencent Ads | 50,000 yuan per placement | Tencent |
 | Douyin | Ocean Engine | Minimum first recharge | The opening agent |
 | Xiaohongshu | Juguang | None published | Agreed at account opening |

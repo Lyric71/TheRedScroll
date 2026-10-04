@@ -4,7 +4,7 @@ description: "Auf WeChat reicht die Werbung von Moments über Official Accounts 
 metaTitle: "WeChat-Werbung: Formate und Preise"
 metaDescription: "Sechs Werbeplätze, drei Preismodelle. Kosten je Format und konkrete Hinweise für die erste WeChat-Kampagne."
 publishDate: 2026-04-05
-updatedDate: 2026-10-02
+updatedDate: 2026-10-05
 author: "TheRedScroll"
 platforms: ["wechat"]
 category: "Plattformen"
@@ -23,7 +23,10 @@ Das Targeting ist feiner als auf den meisten anderen Plattformen. Die kreative L
 
 > WeChat ist nicht die Plattform der Viralität. Es ist der Ort, an dem man die richtigen Menschen im richtigen Kontext erreicht, mit Inhalten, die sich natürlich einfügen.
 
-Alles läuft über Tencent Ads. Voraussetzung: ein verifizierter Official Account. Ohne Account keine Kampagne. Und diese Verifizierung setzt eine chinesische Geschäftseinheit oder einen zugelassenen lokalen Vertreter voraus.
+Alles läuft über Tencent Ads. Voraussetzung: ein verifizierter Official Account. Ohne Account keine Kampagne. Eine außerhalb des chinesischen Festlands registrierte Gesellschaft kann einen Service-Account allerdings auf eigenen Namen verifizieren lassen, für 99 US-Dollar je Antrag.
+
+> Eine ausländische Gesellschaft zahlt 99 US-Dollar je Verifizierungsantrag, unabhängig davon, ob die Prüfung erfolgreich verläuft.
+> Quelle: Tencent-Kundenservice (腾讯客服), FAQ zur Verifizierung ausländischer Gesellschaften, geprüft im September 2026. https://kf.qq.com/faq/190723aQvMR31907233IF7FV.html
 
 ## Die sechs Werbeplätze
 
@@ -52,9 +55,14 @@ Das verbreitetste Modell für Moments und Bekanntheitskampagnen. Die Tarife schw
 
 | Stadtrang | CPM im Direkteinkauf | CPM im Bieten |
 |---|---|---|
-| Hauptstädte (Peking, Shanghai) | rund 150 Yuan pro tausend | 100 bis 300 Yuan pro tausend |
-| Schlüsselstädte (Guangzhou, Shenzhen, Chengdu, Hangzhou und 18 weitere) | rund 100 Yuan pro tausend | 60 bis 200 Yuan pro tausend |
+| Hauptstädte (Peking, Shanghai) | rund 150 Yuan pro tausend | Kein Bietverfahren |
+| Schlüsselstädte (Guangzhou, Shenzhen, Chengdu, Hangzhou und 18 weitere) | rund 100 Yuan pro tausend | Kein Bietverfahren |
 | Übrige Städte | rund 50 Yuan pro tausend | 30 bis 200 Yuan pro tausend |
+
+Das Bietverfahren steht nur in den übrigen Städten offen. In Haupt- und Schlüsselstädten wird Moments im Direkteinkauf gebucht.
+
+> Käufe im Bietverfahren sind bei Moments nur in den übrigen Städten möglich; Haupt- und Schlüsselstädte werden nicht unterstützt. Das Bietverfahren gilt ausschließlich für das Bild-Text-Format.
+> Quelle: Tencent Ads (腾讯广告), Produktseite WeChat-Werbung, geprüft im Oktober 2026. https://e.qq.com/topic/marketing/industry/weixin/
 
 Video kostet bei gleichem Einblendungsvolumen 30 bis 50 Prozent mehr als Bild. Zur Einordnung: Der CPM für bezahlte Douyin-Reichweite über Ocean Engine bewegt sich zwischen 30 und 60 Yuan, betrifft jedoch die Verstärkung bestehender Inhalte, nicht eine native Platzierung im persönlichen Feed. Der höhere Moments-CPM rechtfertigt sich, weil man einen Platz in einem intimen sozialen Feed kauft, mit Vertrauenssignalen, die anderswo nicht zu haben sind.
 
@@ -79,14 +87,15 @@ An dieser Stelle staunen Marken oft. Die Mindestbeträge hängen vollständig vo
 | Einkaufsmodus | Mindestanforderung |
 |---|---|
 | Direkteinkauf | 50.000 Yuan pro Kampagne (rund 6.500 €) |
-| Bietverfahren | 1.000 Yuan Aufladung, 1.000 Yuan Tagesbudget |
+| Bietverfahren | 1.000 Yuan Tagesbudget, 30 Yuan CPM; nur übrige Städte |
 | Lokale Werbung | 1.000 Yuan pro Tag (rund 130 €), ohne die Schwelle von 50.000 Yuan |
 
-Die 50.000 Yuan im Direkteinkauf gelten als Format für Großoperationen. Hier reserviert man garantierte Einblendungen zwischen einem und 28 Tagen im Voraus: Produkteinführungen, saisonale Kampagnen, Veranstaltungen. Man zahlt, die Sichtbarkeit ist gesichert.
+Die 50.000 Yuan im Direkteinkauf gelten als Format für Großoperationen. Hier reserviert man garantierte Einblendungen zwischen 5 und 28 Tagen im Voraus: Produkteinführungen, saisonale Kampagnen, Veranstaltungen. Man zahlt, die Sichtbarkeit ist gesichert.
 
-> Quelle: Niaoge Biji, Digitaling
+> Ein Direkteinkauf darf 50.000 Yuan nicht unterschreiten und reserviert Reichweite 5 bis 28 Tage im Voraus. Das Tagesbudget im Bietverfahren darf 1.000 Yuan nicht unterschreiten.
+> Quelle: Tencent (腾讯), Self-Service-Leitfaden für Moments-Anzeigen, Februar 2016. https://wximg.qq.com/wxp/temp/MomentsAdsGuidingBook.pdf
 
-Wer das Terrain antastet, fährt mit dem Bietverfahren zu 1.000 Yuan Tagesbudget weit zugänglicher. Das Tagesbudget bleibt unter Kontrolle, das Targeting lässt sich in Echtzeit anpassen, gezahlt wird nur für tatsächlich ausgespielte Einblendungen oder Klicks.
+Wer das Terrain antastet, fährt mit dem Bietverfahren zu 1.000 Yuan Tagesbudget weit zugänglicher, sofern die Zielgruppe außerhalb der Haupt- und Schlüsselstädte lebt. Das Tagesbudget bleibt unter Kontrolle, das Targeting lässt sich in Echtzeit anpassen, gezahlt wird nur für tatsächlich ausgespielte Einblendungen oder Klicks. [Unsere Aufstellung der Kosten für WeChat-Marketing](/de/analysen/wechat-marketing-cost/) stellt diese Schwellen neben die Gebühren für Konto, Mini Program und WeCom.
 
 Die lokale Werbung beginnt bei 1.000 Yuan pro Tag (rund 130 €) und liegt damit genau auf der Untergrenze des Bietverfahrens. Ein günstigerer Einstieg ist sie also nicht. Ihr Vorteil liegt woanders: Die Schwelle von 50.000 Yuan, die für den Direkteinkauf gilt, entfällt. Dafür erreicht sie nur Menschen in der Nähe eines physischen Standorts. Restaurants, Geschäfte, Veranstaltungsorte. Für nationale Bekanntheit ist das nicht das richtige Format.
 

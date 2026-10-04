@@ -4,7 +4,7 @@ description: "WeChat advertising runs across Moments, Official Accounts, Channel
 metaTitle: "WeChat ads: every format and what they cost"
 metaDescription: "WeChat has six ad formats and three pricing models. Here is what each placement costs and how international brands should plan their first campaign."
 publishDate: 2026-04-05
-updatedDate: 2026-10-02
+updatedDate: 2026-10-05
 author: "TheRedScroll"
 platforms: ["wechat"]
 category: "Platforms"
@@ -23,7 +23,10 @@ That makes WeChat advertising more precise than most platforms. It also means th
 
 > WeChat is not the platform for viral reach. It is the platform for reaching the right people, in the right context, with content that belongs there.
 
-All WeChat advertising runs through the Tencent Ads platform. You need a verified WeChat Official Account to run any ads. No account, no campaigns. And verification requires a Chinese business entity or an authorized local representative.
+All WeChat advertising runs through the Tencent Ads platform. You need a verified WeChat Official Account to run any ads. No account, no campaigns. A company registered outside mainland China can verify a service account in its own name, for 99 US dollars per application.
+
+> An overseas entity pays 99 US dollars per verification application, charged whether or not the review succeeds.
+> Source: Tencent customer service (腾讯客服), overseas entity verification FAQ, confirmed September 2026. https://kf.qq.com/faq/190723aQvMR31907233IF7FV.html
 
 ## The six ad placements
 
@@ -52,9 +55,14 @@ The most common model for Moments ads and brand campaigns. Rates vary by city ti
 
 | City tier | Scheduled CPM | Bidding CPM range |
 |---|---|---|
-| Core (Beijing, Shanghai) | Around 150 yuan per thousand | 100-300 yuan per thousand |
-| Key (Guangzhou, Shenzhen, Chengdu, Hangzhou and 18 others) | Around 100 yuan per thousand | 60-200 yuan per thousand |
+| Core (Beijing, Shanghai) | Around 150 yuan per thousand | Not open to bidding |
+| Key (Guangzhou, Shenzhen, Chengdu, Hangzhou and 18 others) | Around 100 yuan per thousand | Not open to bidding |
 | Standard (all other cities) | Around 50 yuan per thousand | 30-200 yuan per thousand |
+
+Bidding is open only in the standard group. In core and key cities, Moments ads are bought on schedule.
+
+> Moments bidding buys are open only in other cities; core and key cities are not supported. Bidding applies to the image-and-text format only.
+> Source: Tencent Ads (腾讯广告), WeChat advertising product page, confirmed October 2026. https://e.qq.com/topic/marketing/industry/weixin/
 
 Video ads cost roughly 30-50% more than image ads at the same impression level. For context, Douyin's paid traffic CPM through Ocean Engine runs 30-60 yuan, but that is for amplification of existing content, not native feed placement. WeChat Moments CPM is higher because you are buying placement inside a personal social feed with much higher trust signals.
 
@@ -79,14 +87,15 @@ This is where a lot of brands get tripped up. The minimums depend entirely on yo
 | Buying method | Minimum |
 |---|---|
 | Scheduled buy | 50,000 yuan per campaign (around $7,000) |
-| Bidding buy | 1,000 yuan top-up, 1,000 yuan per day budget |
+| Bidding buy | 1,000 yuan per day budget, 30 yuan CPM; standard cities only |
 | Local promotion | 1,000 yuan per day (around $140), no 50,000 yuan threshold |
 
-The 50,000 yuan scheduled buy is designed for larger brand pushes. You lock in guaranteed impressions 1-28 days in advance. Think product launches, seasonal campaigns, or major events. It is a "pay now, guarantee eyeballs" model.
+The 50,000 yuan scheduled buy is designed for larger brand pushes. You lock in guaranteed impressions 5 to 28 days in advance. Think product launches, seasonal campaigns, or major events. It is a "pay now, guarantee eyeballs" model.
 
-> Source: Niaoge Biji, Digitaling
+> A scheduled buy may not be set below 50,000 yuan, and it books traffic 5 to 28 days ahead. A bidding campaign's daily budget may not be set below 1,000 yuan.
+> Source: Tencent (腾讯), WeChat Moments ads self-serve guide, February 2016. https://wximg.qq.com/wxp/temp/MomentsAdsGuidingBook.pdf
 
-For international brands testing the waters, the bidding model at 1,000 yuan per day is the most practical starting point. You control daily spend, adjust targeting in real time, and only pay for impressions or clicks that actually happen.
+For international brands testing the waters, the bidding model at 1,000 yuan per day is the most practical starting point, as long as the audience sits outside the core and key cities. You control daily spend, adjust targeting in real time, and only pay for impressions or clicks that actually happen. Our [WeChat marketing cost breakdown](/insights/wechat-marketing-cost/) sets these floors next to the account, Mini Program, and WeCom fees.
 
 Local promotion starts at 1,000 yuan per day (around $140). That's the same daily floor as bidding, so it isn't a cheaper way in. What it skips is the 50,000 yuan scheduled buy threshold. It only works for campaigns aimed at people near a physical location. Good for restaurants, retail stores, or event venues. Not useful for national brand campaigns.
 

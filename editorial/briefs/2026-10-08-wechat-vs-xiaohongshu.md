@@ -61,7 +61,11 @@ still current, reuse the logged citation instead of researching again. If you
 find a new figure, append it to that ledger before you finish.
 
 - User base and behavior figures for both platforms, each with a dated external source
-- Cost comparison drawn from our own two cost pages
+- Cost comparison: the platform fees our two cost pages cite, each taken from
+  its original Tencent or Xiaohongshu source, never from our own articles
+  (SPEC, Citations), and no TheRedScroll price or tier name (STYLE_GUIDE 6.4);
+  the pricing page is referred to by name (amended 2026-10-05 by the 05C
+  draft run)
 
 **If a figure cannot be sourced, cut the claim.** Do not estimate, do not
 hedge, do not write "industry sources suggest". A missing number is better
@@ -74,7 +78,7 @@ embed images in body copy.
 
 - Head-to-head comparison table: audience, intent, content, cost, time to first result
 - Decision matrix: product type by price point, recommended platform
-- Feature image: two overlapping circles in the brand palette, geometric, no photography. China rule: set the scene in China and show Chinese social platforms on screen (WeChat, Xiaohongshu, Douyin or Weibo interface on a phone, laptop or studio monitor); set in a typical Chinese city, varied from article to article and not only Shanghai, only Chinese people in frame, candid normal-life photo in crisp sharp focus with legible screens (never blur, smudges or noise), no AI polish; this rule wins over the subject hint
+- Feature image: subject hint, two platforms side by side (amended 2026-10-05: the earlier "geometric, no photography" hint contradicted the permanent photo rule in SPEC). China rule: set the scene in China and show Chinese social platforms on screen (WeChat, Xiaohongshu, Douyin or Weibo interface on a phone, laptop or studio monitor); set in a typical Chinese city, varied from article to article and not only Shanghai, only Chinese people in frame, candid normal-life photo in crisp sharp focus with legible screens (never blur, smudges or noise), no AI polish; this rule wins over the subject hint
 
 ## Tables required
 

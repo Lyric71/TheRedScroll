@@ -114,7 +114,7 @@ de mantener de las tres.
 | Plataforma | Quién paga | Tasa | Validez |
 |---|---|---|---|
 | Cuenta oficial de WeChat | Entidad continental | 300 yuanes por solicitud | Un año |
-| Cuenta oficial de WeChat | Entidad extranjera | 99 dólares por solicitud | Un año |
+| [Cuenta oficial de WeChat](/es/analisis/wechat-marketing-cost/) | Entidad extranjera | 99 dólares por solicitud | Un año |
 | Cuenta profesional de Xiaohongshu | Cualquier empresa | 600 yuanes por solicitud | Un año, revisión anual |
 | Cuenta de empresa de Douyin | Cualquier empresa | 600 yuanes el primer año, luego 120 yuanes | Un año |
 
@@ -218,7 +218,7 @@ orientación.
 
 | Plataforma | Plataforma publicitaria | Mínimo publicado | Quién lo fija |
 |---|---|---|---|
-| WeChat Moments, puja | Tencent Ads | 1.000 yuanes al día, CPM de 30 yuanes | Tencent |
+| [WeChat Moments, puja](/es/analisis/wechat-marketing-cost/) | Tencent Ads | 1.000 yuanes al día, CPM de 30 yuanes | Tencent |
 | WeChat Moments, programado | Tencent Ads | 50.000 yuanes por emplazamiento | Tencent |
 | Douyin | Ocean Engine | Depósito inicial mínimo | El agente que abre la cuenta |
 | Xiaohongshu | Juguang | Ninguno | Se pacta al abrir la cuenta |

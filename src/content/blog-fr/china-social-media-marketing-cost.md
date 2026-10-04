@@ -119,7 +119,7 @@ est, des trois, le moins cher à entretenir.
 | Plateforme | Qui paie | Tarif | Validité |
 |---|---|---|---|
 | Compte officiel WeChat | Entité continentale | 300 yuans par demande | Un an |
-| Compte officiel WeChat | Entité étrangère | 99 dollars par demande | Un an |
+| [Compte officiel WeChat](/fr/decryptages/wechat-marketing-cost/) | Entité étrangère | 99 dollars par demande | Un an |
 | Compte professionnel Xiaohongshu | Toute entreprise | 600 yuans par demande | Un an, examen annuel |
 | Compte entreprise Douyin | Toute entreprise | 600 yuans la première année, puis 120 yuans | Un an |
 
@@ -222,7 +222,7 @@ pour un ordre de grandeur.
 
 | Plateforme | Régie publicitaire | Plancher publié | Qui le fixe |
 |---|---|---|---|
-| WeChat Moments, enchères | Tencent Ads | 1 000 yuans par jour, CPM de 30 yuans | Tencent |
+| [WeChat Moments, enchères](/fr/decryptages/wechat-marketing-cost/) | Tencent Ads | 1 000 yuans par jour, CPM de 30 yuans | Tencent |
 | WeChat Moments, programmé | Tencent Ads | 50 000 yuans par emplacement | Tencent |
 | Douyin | Ocean Engine | Premier dépôt minimal | L’agent qui ouvre le compte |
 | Xiaohongshu | Juguang | Aucun | Convenu à l’ouverture du compte |

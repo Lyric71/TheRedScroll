@@ -75,7 +75,7 @@ featuredImage: "/images/blog/china-social-media-marketing-cost.webp"
 | 平台 | 缴费方 | 费用 | 有效期 |
 |---|---|---|---|
 | 微信公众号 | 内地主体 | 每次申请300元 | 一年 |
-| 微信公众号 | 境外主体 | 每次申请99美元 | 一年 |
+| [微信公众号](/zh/guandian/wechat-marketing-cost/) | 境外主体 | 每次申请99美元 | 一年 |
 | 小红书专业号 | 任何企业 | 每次申请600元 | 一年，需年审 |
 | 抖音企业号 | 任何企业 | 首年600元，此后120元 | 一年 |
 
@@ -125,7 +125,7 @@ featuredImage: "/images/blog/china-social-media-marketing-cost.webp"
 
 | 平台 | 投放平台 | 公开门槛 | 由谁设定 |
 |---|---|---|---|
-| 朋友圈广告，竞价 | 腾讯广告 | 每天1000元，CPM 30元 | 腾讯 |
+| [朋友圈广告，竞价](/zh/guandian/wechat-marketing-cost/) | 腾讯广告 | 每天1000元，CPM 30元 | 腾讯 |
 | 朋友圈广告，排期 | 腾讯广告 | 每个投放位5万元 | 腾讯 |
 | 抖音 | 巨量引擎 | 首充最低金额 | 开户代理商 |
 | 小红书 | 聚光 | 未公布 | 开户时商定 |

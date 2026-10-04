@@ -83,6 +83,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Notes: Platform page carries no date. Cite as "confirmed September 2026".
 
 - Re-verified 2026-10-01 for 05B: "99美元/次" and "不以认证成功为前提" confirmed at check 1 and check 2. Used in: wechat-official-account-setup.
+- Re-verified 2026-10-05 by the 05A publish run: re-fetched, "99美元" and "不以认证成功为前提" confirmed. Used in: wechat-advertising-formats-costs (all five locales; replaces the unsourced claim that verification needs a Chinese entity or a local representative).
 ### Xiaohongshu enterprise professional account verification fee
 - Value: 600 yuan per application; valid one year; annual review required; not refunded on failure
 - As of: October 2025 (New Rank article); platform PDF undated, confirmed September 2026
@@ -117,6 +118,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-10-01 for 05A: product page "每日预算1000元起", "CPM单价30元起", "单次投放总预算5万元起", "1000元/天即可起投" and the 2016 PDF "不得低于1000元", "出价须大于30元", "5万元起", "第5个自然日起至第28个自然日" confirmed. New detail on the same page logged as its own entry below (bidding closed in core and key cities; free account opening) at check 1 and check 2. Used in: wechat-marketing-cost.
 - Re-verified 2026-10-02: "本地推广广告不受5万元单次投放门槛限制，1000元/天即可起投" and "每日预算1000元起" confirmed at check 1 and check 2. Used in: wechat-advertising-formats-costs (local promotion corrected from 300 to 1,000 yuan a day, all five locales).
 - Notes: Current page is undated; the 2016 PDF supplies the date and shows the floors have held.
+- Re-verified 2026-10-05 for 05C: "每日预算1000元起" and "单次投放总预算5万元起" confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
+- Re-verified 2026-10-05 by the 05A publish run: product page "每日预算1000元起" and "单次投放总预算5万元起", 2016 PDF "不得低于1000元", "第5个自然日" and "第28个自然日" confirmed. Used in: wechat-advertising-formats-costs (all five locales; scheduled window corrected from 1-28 to 5 to 28 days, and the undated "Niaoge Biji, Digitaling" source line replaced by the 2016 guide; the unsourced 1,000-yuan top-up cut).
 
 ### Douyin ad account opening: service fee and agent-set first recharge
 - Value: qualitative. Official channel charges a service fee; agents may open for free but set their own minimum first recharge
@@ -151,6 +154,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: xiaohongshu-marketing-foreign-brands, beauty-skincare, xiaohongshu-algorithm, xiaohongshu-account-not-growing, fashion-apparel, xiaohongshu-business-account-setup, xiaohongshu-advertising-formats-costs
 - Re-verified 2026-09-28 for 04B: "月活跃用户已突破4亿" and "日搜索量高达8亿" confirmed (check 1 and check 2).
 - Notes: Platform's own figure, global and all devices. Pair with the QuestMobile domestic count below when an independent number is asked for.
+- Re-verified 2026-10-05 for 05C: "月活跃用户已突破4亿" and "日搜索量高达8亿" confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
 
 ### Xiaohongshu domestic monthly active users, QuestMobile
 - Value: 242 million MAU in mainland China, May 2025, up 13.2% year on year
@@ -171,6 +175,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-07, re-fetched, unchanged
 - Used in: xiaohongshu-marketing-foreign-brands, beauty-skincare
 - Notes: Qian-gua's 2026 report (2026-05-07, https://www.qian-gua.com/information/detail/3332) shows 350 million+ MAU but its public preview omits the gender, age and city splits. Recheck for a 2026 gender figure before April 2027.
+- Re-verified 2026-10-05 for 05C: "据小红书官方最新通案", "男女比例达3:7", "95后占比50%", "一二线城市用户占比50%" and the 2025-04-24 date (older than 12 months; no newer platform split found on 2026-10-05, settled fallback 9) confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
 
 ### Xiaohongshu users seeking purchase advice, WILL 2026 conference
 - Value: about 200 million users a month seek purchase advice; users open the app 16 times a day; 9 million+ notes and 70 million+ comments a day
@@ -181,6 +186,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-07, re-fetched, unchanged
 - Used in: xiaohongshu-marketing-foreign-brands, beauty-skincare, xiaohongshu-algorithm
 - Notes: The conference theme "种草进入效果化时代" is confirmed on Sina News, 2025-12-24 (https://news.sina.cn/sx/2025-12-24/detail-inhcwtcm9898641.d.html). The platform publishes no share of product-related searches; use this absolute figure instead.
+- Re-verified 2026-10-05 for 05C: on the corroborating Economic Observer URL cited in 05C (http://m.eeo.com.cn/2025/1223/774754.shtml), "每月约有 2 亿用户在小红书寻求购买建议" and "每日人均打开 16 次" confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
 
 ### Xiaohongshu daily search volume, Q4 2024
 - Value: about 600 million searches a day in Q4 2024; 300 million in mid-2023
@@ -201,6 +207,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-07, re-downloaded, unchanged
 - Used in: xiaohongshu-marketing-foreign-brands, first-90-days-china-social-media, xiaohongshu-business-account-setup, chinese-entity-social-media
 - Notes: Extends the 600 yuan fee entry above with the process rules. The PDF gives no review duration in days. An older 2019 version of the guide (https://dc.xhscdn.com/62f0c1cfe638eb13c67415419cd6d5c75985fa2b.pdf, 300 yuan era) is superseded; do not cite.
+- Re-verified 2026-10-05 for 05C: the platform PDF, downloaded twice and extracted with pdftotext: "小红书企业号支持中国境内企业、中国境外及港澳台企业进行线上认证申请", "海外主体或年审、更名认证，需通过PC端操作", "600元/次", "认证有效期为1年" and "每年需要完成一次年审" confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
 
 ### Xiaohongshu store qualification for overseas companies
 - Value: overseas companies (incl. HK, Macau, Taiwan) file a business registration and certificate of incorporation; cross-border trade needs a brand authorization letter per brand with a complete chain, or purchase proof for at least one SKU without authorization; imported cosmetics need the CFDA import cosmetics filing; authorization chains capped at 3 levels (2 for beauty)
@@ -237,6 +244,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 
 - Re-verified 2026-10-01 for 05B: "7-15个工作日内完成审核" and the card list confirmed at check 1 and check 2. Used in: wechat-official-account-setup.
 - Re-verified 2026-10-02: "境外主体账号认证在支付费用后，在用户提交完整的资质后7-15个工作日内完成审核" confirmed at check 1 and check 2. Used on the site pages /wechat-agency/ and /platforms/wechat/ (all five locales), which said "1 to 2 weeks" and now give Tencent's 7 to 15 working days for an overseas company and four weeks from contract to first post.
+- Re-verified 2026-10-05 for 05C: "99美元/次", "不以认证成功为前提" and "7-15个工作日内完成审核" confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
+
 ### WeChat Official Account verification materials for overseas entities
 - Value: company registration certificate or business license; contact person's ID, both sides, color scan; application letter (simplified Chinese, traditional Chinese or English template); operation authorization letter (same three languages); contact person's phone bill, or a stamped office phone bill or bank statement; trademark registration or authorization if the account is named after a trademark
 - As of: page undated; confirmed September 2026 (platform documentation)
@@ -262,6 +271,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Notes: Registration is by company registration location on mp.weixin.qq.com; not every region has an option.
 
 - Re-verified 2026-10-01 for 05B, with two strings not logged before: "个人微信号（包括境内和境外）可以关注境外主体资质在公众平台注册的服务号" (any WeChat user, mainland or overseas, can follow) and "若其他地区无对应的注册选项，请您后续留意平台开放的注册区域" (unlisted regions cannot register yet). Check 1 and check 2 both 2026-10-01. Used in: wechat-official-account-setup.
+- Re-verified 2026-10-05 for 05C: "境外主体可以注册1个账号", "境外地区账号暂只支持服务号类型" and "认证成功后，账号方可正常使用" confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
+
 ### WeChat Official Account verification review time, mainland entity
 - Value: review in 1 to 3 working days; verification must be completed within 30 calendar days of registration; payment-based registration verification succeeds within 1 working day
 - As of: page undated; confirmed September 2026 (platform documentation)
@@ -303,6 +314,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-11, re-fetched with curl, all four strings and the 2023-03-22 date unchanged
 - Used in: xiaohongshu-algorithm, xiaohongshu-account-not-growing
 - Notes: The best source in the ledger for how distribution actually works, because the authors are the platform's own distribution engineers and their affiliations are printed at the foot of the article. AIQ is a republisher; the authorship line is what makes it citable. Older than 12 months, so date it inside the sentence. The original lives on the 小红书技术REDtech CSDN account, which returns an anti-bot stub (HTTP 521) to every fetch method tried. **This entry does not license any traffic pool size.** No platform source publishes one.
+- Re-verified 2026-10-05 for 05C: "最近一天内发布的新笔记" and "几乎占到了一半" confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
 
 ### Xiaohongshu daily product purchase-seeking users
 - Value: 39 million users a day show product purchase-seeking behavior, 140 million instances a day; rise100 merchants grew GMV over 2.6x year on year in 2025
@@ -450,6 +462,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Notes: Pair with the "overseas entities: service account only" entry. Together they explain why a foreign brand's WeChat cadence is about one pushed article a week. Relevant to briefs 05B (WeChat Official Account setup) and 06C (open-rate benchmark).
 
 - Re-verified 2026-10-01 for 05B: the page now says "公众号（认证用户、非认证用户），每天可以开启1次【群发通知】" (the former subscription account is called 公众号) and "每个月（按自然月）可以开启4次" for the 服务号, at check 1 and check 2. Used in: wechat-official-account-setup.
+- Re-verified 2026-10-05 for 05C: "每个月（按自然月）可以开启4次" and "每天可以开启1次" confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
+
 ### Xiaohongshu professional accounts: no WeChat ID or phone number in auto-replies, from January 7, 2025
 - Value: from January 7, 2025, the auto-reply component and welcome messages of a Xiaohongshu professional account (专业号) may not contain a WeChat ID or phone number; only the social business card (社媒名片) may be used to pass contact details. A service provider told the reporter that accounts which did not remove WeChat IDs would be muted (禁言). Also on the page: 98% of local-services merchants were said at WILL to interact with users through in-app consultation
 - As of: January 2025 (article dated 2025-01-11)
@@ -520,6 +534,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-29, re-fetched twice before the draft was finished, unchanged
 - Used in: xiaohongshu-sensitive-words
 - Notes: Tech trade outlet, original copy. A fuller copy (Zhengguan News, 正观号 "电商观察家") lists penalty points (merchant violation points 10 to 25, account credit 0 to 12 per breach) but is user-uploaded self-media: not cited. 100ec.cn (网经社) has the story behind a JS challenge and could not be fetched. The platform's own notice sits on the 商业广告薯 account and the e-commerce learning centre, neither fetchable.
+- Re-verified 2026-10-05 for 05C: "3月12日小红书《交易导流违规管理细则》", "传播个人/社群联系方式或其他平台的账号/店铺信息" and "应使用小红书商城、直播间内购物车功能、官方留资组件等方式" (older than 12 months; cited as a dated rule) confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
 
 ### Xiaohongshu trade-diversion notice, November 2024: contact details listed, penalties
 - Value: qualitative. The 交易导流商业秩序治理规则公告 (published by the 商业广告薯 account in November 2024) lists directed contact details that may not be pushed, "如手机号、微信、电子邮箱、二维码、银行账号及其他付款方式等", plus third-party platform names and links; covered surfaces include profile pages, notes, comments, product details, store pages, physical parcels, promotion pages, chat tools, customer service, marketing SMS and livestreams; penalties include "限制笔记、直播、商品等曝光，或在搜索结果中不展现", content-posting limits, deposit deductions, store removal and account bans
@@ -812,6 +827,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: xiaohongshu-marketing-cost, china-social-media-package-includes, xiaohongshu-advertising-formats-costs
 - Re-verified 2026-09-28 for 04B: both strings and the 2026-05-18 date confirmed (check 1 and check 2).
 - Notes: Corroborated by 三节课 via Sohu, 2025-12-23 (https://m.sohu.com/a/968496983_624051), "支持手机端自助投放，最低 75 元起投". The same sources give a 7,500 yuan per-order ceiling; not cited. This is the only self-serve, published ad floor on the platform. The Juguang (聚光) first recharge and minimum daily budget have no platform or trade-press source and must not be quoted.
+- Re-verified 2026-10-05 for 05C: "没有粉丝量等账号门槛", "最低 75 元（750 薯币）的起投门槛" and "近 90 天发布的内容" confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
 
 ### Xiaohongshu Pugongying brand invitations, and daily active user search behavior
 - Value: 27 million brand invitations on Pugongying in 2025, up 34% year on year; 77% of daily active users use search to solve a problem, 75% browse the recommendation feed
@@ -823,6 +839,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-11, re-fetched, both strings unchanged
 - Used in: xiaohongshu-marketing-cost, xiaohongshu-algorithm, xiaohongshu-account-not-growing, fashion-apparel, xiaohongshu-advertising-formats-costs
 - Notes: Same article repeats the platform's 400 million MAU and 800 million daily searches, which are already logged above. The 77% search figure is the strongest published basis for search-coverage seeding arithmetic; the platform publishes no seeding volume benchmark.
+- Re-verified 2026-10-05 for 05C: "75%日活用户浏览推荐内容，77%日活用户通过搜索解决问题" (first check-2 fetch failed transiently; three retries returned HTTP 200 with the string) confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
 
 ### Xiaohongshu commercial governance: Community Convention 2.0 and enforcement volumes
 - Value: Community Convention 2.0 launched 19 January 2026, adding an "orderly commerce" (有序经营) section; from March to the end of August 2025 the platform banned over 12 million fake accounts, actioned 13.76 million false marketing notes and cleared over 360 million fake comments
@@ -1240,6 +1257,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-09-29 for 04D: "14.18亿" confirmed at check 1 and check 2. Used in: food-beverage.
 - Re-verified 2026-10-01 for 05A: "14.18亿" and "同比增长2％" confirmed at check 1 and check 2. Used in: wechat-marketing-cost.
 - Notes: Corroborated same day on China Fund News (中国基金报), 2026-03-18, https://www.chnfund.com/article/AR1231fcdd-25ff-01cd-2836-3a2015e46b1d ("微信及WeChat合并月活跃用户数进一步增长至14.18亿"). Tencent's own IR announcement was not fetchable directly; both cited pages attribute the figure to the results release. Supersedes the 13.85 billion-era figures from the 2024 annual report; recheck after Tencent's 2026 annual results in March 2027.
+- Re-verified 2026-10-05 for 05C: "14.18亿" and "同比增长2" confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
 
 ### Weibo monthly and daily active users, end of Q4 2025
 - Value: 567 million monthly active users and 252 million daily active users at the end of Q4 2025; full-year 2025 revenue 1.76 billion US dollars
@@ -1339,6 +1357,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-01, re-fetched before the draft was finished, unchanged
 - Used in: wechat-marketing-cost
 - Notes: The page does not list which cities are core or key. Do not name them in copy. Practical reading used in 05A: reach in the core group means the scheduled route, from 50,000 yuan per placement. No first recharge (ad account deposit) figure is on any Tencent page found; see the NOT LOGGED block below.
+- Re-verified 2026-10-05 for 05C: "仅开放其他城市", "核心与重点城市不支持" and "向所有城市开放" confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
+- Re-verified 2026-10-05 by the 05A publish run: "仅开放其他城市" and "核心与重点城市不支持" confirmed. Used in: wechat-advertising-formats-costs (all five locales; its CPM table gave bidding ranges for core and key cities, now marked closed to bidding).
 
 ### WeChat Mini Program verification, overseas entity: fee and review time
 - Value: 99 US dollars per verification application, charged whether or not it succeeds; review within 7 to 15 working days after complete documents; payment by WeChat Pay or bank card (Visa, Master)
@@ -1419,6 +1439,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-01, re-fetched, unchanged
 - Used in: wechat-marketing-cost
 - Notes: The page shows no prices to curl. Prices: entry below.
+- Re-verified 2026-10-05 for 05C: "免费获得2000位外部联系人规模", "有效期一年" and "只能添加100个客户" confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
 
 ### WeCom external contact capacity prices at launch, May 2023
 - Value: from May 19, 2023; 5,000 contacts 500 yuan a year; 20,000 contacts 2,000 yuan a year
@@ -1450,6 +1471,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-01, re-fetched, unchanged
 - Used in: wechat-marketing-cost
 - Notes: Launch-era and older than 12 months. Use only as "at launch", with the date, never as a current floor. The author is a Channels data vendor, not a social media agency.
+- Re-verified 2026-10-05 by the 05A publish run: "预算最低可设置1w", "核心城市100元", "重点城市75元", "其他城市50元" and "2022-09-15" confirmed. Used in: /services/advertising/ Channels card, all five locales (replaces an unsourced "CPM ¥2 to ¥13", shown as euros on FR, DE and ES), labeled "at launch in 2022".
 
 ### NOT LOGGED, searched and rejected 2026-10-01 (WeChat marketing cost)
 - Tencent Ads minimum first recharge (ad account deposit). Brief 05A asked for it from the platform. Tencent's pages say only that opening is free. The 1,000 / 5,000 / 10,000-yuan first-recharge figures are on agent sites (tengxundsp.com, ggyzd.com, gvo2010.com) and Sohu or Zhihu self-media. Not cited.
@@ -1543,6 +1565,53 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - "Service accounts can push six times a month after verification" (CSDN, fesshe.com generated articles, 2025 to 2026). Tencent's push-rules page says four, and "群发次数目前不支持增加". Rejected.
 - Custom menu limits (three top-level, five sub-items): repeated everywhere, not on the current Tencent service-account menu pages. Not cited.
 - The Mini Program verification guide's failure reasons (developers.weixin.qq.com/miniprogram/product/renzheng.html, section 十二). Mini Program rules; not applied to Official Accounts.
+
+### WeChat Search monthly active users and its share of new Official Account followers, 2022
+- Value: WeChat Search (搜一搜) reached 800 million monthly active users in 2022, with search volume up 54% year on year; search contributed 27% of new Official Account followers and 20% of new Mini Program daily active users
+- As of: 2022 full year (disclosed at WeChat Open Class PRO 2023; article dated 2023-01-10)
+- Source: WeChat Search team at WeChat Open Class PRO 2023 (2023微信公开课PRO), reported by 199IT on Sina Tech (新浪科技)
+- URL: https://finance.sina.com.cn/tech/roll/2023-01-10/doc-imxztfeh2280083.shtml
+- Verified 1: 2026-10-05, fetched with curl; "2022年微信搜一搜月活跃用户已达8亿", "微信搜一搜对公众号新增粉丝贡献占比达到27%" and the date 2023年01月10日 confirmed
+- Verified 2: 2026-10-05, re-fetched before the draft was finished, unchanged
+- Used in: wechat-vs-xiaohongshu
+- Notes: The platform team's own disclosure, older than 12 months. Tencent has published no later Search MAU or follower-source split (searched 2026-10-05); cite with the year, under settled fallback 9. Same figures on Beijing Daily (xinwen.bjd.com.cn) and Chengdu Business Daily. Recheck for a newer WeChat Open Class figure each January.
+
+### WeChat Mini Program user time, Q4 2025
+- Value: Mini Program (小程序) user time grew more than 20% year on year in Q4 2025; the AI Mini Program growth plan drew more than 10,000 developers
+- As of: Q4 2025 (results announced 2026-03-18)
+- Source: Tencent Holdings 2025 annual results, reported by China Fund News (中国基金报)
+- URL: https://www.chnfund.com/article/AR1231fcdd-25ff-01cd-2836-3a2015e46b1d
+- Verified 1: 2026-10-05, fetched with curl; "小程序2025年第四季度用户时长同比增长超20%" confirmed, page dated 2026-03-18
+- Verified 2: 2026-10-05, re-fetched before the draft was finished, unchanged
+- Used in: wechat-vs-xiaohongshu
+- Notes: Growth rate only, same page as the Channels user-time entry. This release gives no Mini Program DAU; the "800 million daily users" figure in search summaries is not on the results coverage and is not logged.
+
+### Xiaohongshu KOS (employee accounts): companies, accounts and monthly leads, August 2026
+- Value: more than 40,000 company accounts run KOS (Key Opinion Sales, 企业员工号) on Xiaohongshu; employee accounts passed 400,000; more than 6 million leads (留资) a month come through KOS
+- As of: August 2026 (data source 小红书数据中台, period 2026.8; article dated 2026-09-17)
+- Source: Xiaohongshu (小红书) 2026 KOS guide (《2026小红书宝藏KOS实战指南》), reported by Huaxia Morning News (华夏早报) on ifeng (凤凰网)
+- URL: https://baby.ifeng.com/c/8wUkh912dXd
+- Verified 1: 2026-10-05, fetched with curl; "在小红书经营KOS的企业账号数已超4万", "KOS员工号账号数突破40万", "每月通过KOS产生的留资量超600万条", "数据周期:2026.8" and 2026年09月17日 confirmed
+- Verified 2: 2026-10-05, re-fetched before the draft was finished, unchanged
+- Used in: wechat-vs-xiaohongshu
+- Notes: Same figures and data period on Tencent News (品牌议题, 2026-09-20, news.qq.com/rain/a/20260920A07F8700). The platform does not split the leads into B2B and B2C; never present them as B2B leads. Agency claims of "300万+ companies" or "8,000+ companies, 2 million leads a month" conflict with this platform figure and are not logged.
+
+### LinkedIn's China exit: social features, then the job app, August 2023
+- Value: in May 2023 LinkedIn, which had closed its social networking features in China two years earlier, announced that its China job app (领英职场) would stop service on August 9, 2023, including the app, the desktop site and the WeChat Mini Program
+- As of: May 2023 (article dated 2023-05-09)
+- Source: China National Radio (央广网), reporter 万玉航
+- URL: https://tech.cnr.cn/ycbd/20230509/t20230509_526245629.shtml
+- Verified 1: 2026-10-05, fetched with curl; "已在两年前关闭中国区社交网络功能", "2023年8月9日起正式停止服务" and the 2023-05-09 date confirmed
+- Verified 2: 2026-10-05, re-fetched before the draft was finished, unchanged
+- Used in: wechat-vs-xiaohongshu
+- Notes: A dated event, older than 12 months, cited with its date (settled fallback 9). LinkedIn's own help page (linkedin.com/help/linkedin/answer/a557005) states the stop date but shows only a relative "last updated" date, so CNR is the citable dated source.
+
+### NOT LOGGED, searched and rejected 2026-10-05 (WeChat or Xiaohongshu)
+- Share of Official Account reads from algorithmic recommendation ("45.9%", "50% to 70%"): Zhihu, jzl.com and yiban.io self-media, no Tencent source. Not cited.
+- Xiaohongshu 2025 gender split 71.98% / 28.02% (Qian-gua active user report via Sohu and Douban reposts): self-media summaries of a gated report; the official brief's 3:7 says the same. Not logged separately.
+- 36Kr, "站在2025年底，小红书商业正跨过一个新门槛": blocked by a ByteDance security check for every fetch method. Not cited.
+- WeCom "connects more than ten million companies" and Mini Program "800 million daily users": search summaries only, not on the results coverage fetched. Not cited.
+- Xiaohongshu B2B share of users or leads: no platform or trade-press figure exists.
 
 ## TheRedScroll first-party data
 

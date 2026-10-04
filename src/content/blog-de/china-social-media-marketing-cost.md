@@ -116,7 +116,7 @@ am günstigsten im Unterhalt.
 | Plattform | Wer zahlt | Gebühr | Gültig für |
 |---|---|---|---|
 | WeChat Official Account | Festlandunternehmen | 300 Yuan je Antrag | Ein Jahr |
-| WeChat Official Account | Ausländisches Unternehmen | 99 Dollar je Antrag | Ein Jahr |
+| [WeChat Official Account](/de/analysen/wechat-marketing-cost/) | Ausländisches Unternehmen | 99 Dollar je Antrag | Ein Jahr |
 | Xiaohongshu-Unternehmenskonto | Jedes Unternehmen | 600 Yuan je Antrag | Ein Jahr, jährliche Prüfung |
 | Douyin-Unternehmenskonto | Jedes Unternehmen | 600 Yuan im ersten Jahr, dann 120 Yuan | Ein Jahr |
 
@@ -220,7 +220,7 @@ also nur ein Anhaltspunkt.
 
 | Plattform | Werbeplattform | Veröffentlichte Untergrenze | Wer sie festlegt |
 |---|---|---|---|
-| WeChat Moments, Gebotsverfahren | Tencent Ads | 1.000 Yuan pro Tag, 30 Yuan CPM | Tencent |
+| [WeChat Moments, Gebotsverfahren](/de/analysen/wechat-marketing-cost/) | Tencent Ads | 1.000 Yuan pro Tag, 30 Yuan CPM | Tencent |
 | WeChat Moments, terminiert | Tencent Ads | 50.000 Yuan je Platzierung | Tencent |
 | Douyin | Ocean Engine | Mindesteinzahlung | Der eröffnende Agent |
 | Xiaohongshu | Juguang | Keine | Bei Kontoeröffnung vereinbart |
