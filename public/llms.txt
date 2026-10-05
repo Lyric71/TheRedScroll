@@ -1,6 +1,6 @@
 # TheRedScroll
 
-Last updated: 2026-10-05
+Last updated: 2026-10-06
 
 > TheRedScroll is a China social media agency based in Shanghai and Hong Kong. We help Western brands grow on WeChat, Douyin, RedNote (Xiaohongshu), Weibo, and 14 other Chinese social platforms, on a fixed scope and a fixed price.
 
@@ -66,6 +66,7 @@ Founded by Cyril Drouin, former CEO of Publicis Commerce and Performance Marketi
 - [Xiaohongshu banned words: what gets notes hidden and what to say instead](https://www.theredscroll.com/insights/xiaohongshu-sensitive-words/): The six kinds of wording that get Xiaohongshu notes limited or removed (superlatives, health claims, prices and promised returns, competitor comparisons, contact details, political topics), the Chinese law or platform rule behind each, a rewrite table and how to recover a limited note (published 2026-10-01)
 - [Food and beverage marketing in China](https://www.theredscroll.com/industries/food-beverage/): Retail shoppers versus foodservice buyers, the health and label claims Chinese regulators ban (GB 7718-2025 from March 2027), recipe content on Xiaohongshu, Douyin impulse sales, WeChat for chefs and the six peaks in the food calendar (published 2026-10-02)
 - [WeChat marketing cost: account, ads, Mini Program, and WeCom](https://www.theredscroll.com/insights/wechat-marketing-cost/): What Tencent charges and what you set yourself: Official Account verification (99 US dollars a year from overseas), content, Moments ad floors and the core-city bidding rule, Channels, Mini Program and WeChat Pay fees, WeCom licensing, agency fee models and three worked budgets (published 2026-10-05)
+- [WeChat Official Account setup for foreign companies in 2026](https://www.theredscroll.com/insights/wechat-official-account-setup/): How a company registered outside China opens and verifies its one service account: account types and push limits, the overseas document checklist, the eight registration steps, the 99 US dollar verification and its 7 to 15 working days, what the overseas account cannot do, migration to a mainland account, menus and the 48-hour message window, and WeCom's overseas and mainland routes (published 2026-10-06)
 
 ## Localized versions
 

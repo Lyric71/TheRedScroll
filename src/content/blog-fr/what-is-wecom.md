@@ -4,6 +4,7 @@ description: "WeCom est la plateforme de communication professionnelle de Tencen
 metaTitle: "WeCom : le guide des marques en Chine"
 metaDescription: "WeCom est l’outil professionnel de Tencent, intégré à WeChat. Fonctionnement, trafic privé et raisons d’en faire une priorité lorsqu’on vise la Chine."
 publishDate: 2026-04-06
+updatedDate: 2026-10-06
 author: "TheRedScroll"
 platforms: ["wechat"]
 category: "Plateformes"
@@ -91,9 +92,19 @@ Le marché du trafic privé en Chine continue d’ailleurs sa progression, aigui
 
 ## Se lancer
 
-La marche à suivre suppose de disposer d’une entité commerciale chinoise vérifiée, ou de passer par un représentant local agréé. Les marques internationales s’appuient généralement sur une équipe locale ou une agence pour piloter l’inscription, configurer les intégrations CRM et former leurs équipes.
+Nul besoin d’une société chinoise pour démarrer. Un WeCom créé hors de Chine continentale peut être certifié au titre de société étrangère, avec des fonctions en moins.
 
-La plateforme, en soi, est gratuite. Le véritable investissement consiste à bâtir les processus qui transforment les contacts en chiffre d’affaires. Et à former ceux qui les feront tourner au quotidien.
+> Un WeCom de société étrangère se certifie sur présentation de la raison sociale complète, d’un nom abrégé et d’un certificat d’immatriculation ou d’une licence commerciale ; l’examen prend en général 1 à 3 jours ouvrés. Certaines fonctions ne sont pas proposées, dont l’encaissement externe, l’archivage des conversations et la place de marché des applications tierces.
+> Source : centre d’aide WeCom (企业微信), certification des sociétés étrangères, juin 2026. https://open.work.weixin.qq.com/help2/pc/16535
+
+Une société de Chine continentale dispose de toutes les fonctions, mais paie sa certification.
+
+> Pour une société de Chine continentale, la certification WeCom coûte 300 yuans de frais d’examen par demande, non remboursables, et l’examen annuel coûte autant que le premier.
+> Source : centre d’aide WeCom (企业微信), confirmé en octobre 2026. https://open.work.weixin.qq.com/help2/pc/18372
+
+Les marques internationales s’appuient généralement sur une équipe locale ou une agence pour piloter l’inscription, configurer les intégrations CRM et former leurs équipes. [Notre guide d’ouverture d’un compte officiel WeChat](/fr/decryptages/wechat-official-account-setup/) détaille les deux filières.
+
+Les frais restent modestes. Le véritable investissement consiste à bâtir les processus qui transforment les contacts en chiffre d’affaires. Et à former ceux qui les feront tourner au quotidien.
 
 ## Le point clé
 

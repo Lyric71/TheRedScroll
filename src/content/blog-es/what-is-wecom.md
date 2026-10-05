@@ -4,6 +4,7 @@ description: "WeCom es la herramienta de comunicación profesional de Tencent de
 metaTitle: "WeCom: guía para marcas en China"
 metaDescription: "WeCom es la herramienta profesional de Tencent integrada en WeChat. Funciones, tráfico privado y por qué toda marca en China lo necesita."
 publishDate: 2026-04-06
+updatedDate: 2026-10-06
 author: "TheRedScroll"
 platforms: ["wechat"]
 category: "Plataformas"
@@ -91,9 +92,19 @@ Y el mercado chino del tráfico privado sigue creciendo, empujado por lo caro qu
 
 ## Cómo empezar
 
-Poner WeCom en marcha exige una entidad mercantil china verificada, o pasar por un representante local autorizado. Lo habitual es que una marca extranjera se apoye en un equipo local o en una agencia para el registro, las integraciones con el CRM y la formación de los equipos.
+Para empezar no hace falta una sociedad china. Un WeCom creado fuera de China continental puede verificarse como empresa extranjera, con algunas funciones menos.
 
-La herramienta, en sí, es gratuita. La inversión de verdad está en montar los procesos que convierten un contacto en facturación. Y en formar a quien los va a manejar cada día.
+> Un WeCom de empresa extranjera se verifica con la razón social completa, un nombre abreviado y un certificado de registro mercantil o una licencia comercial; la revisión suele tardar de 1 a 3 días hábiles. Algunas funciones no están disponibles, entre ellas el cobro externo, el archivo de conversaciones y el mercado de aplicaciones de terceros.
+> Fuente: centro de ayuda de WeCom (企业微信), verificación de empresas extranjeras, junio de 2026. https://open.work.weixin.qq.com/help2/pc/16535
+
+Una sociedad de China continental accede a todas las funciones, pero paga la verificación.
+
+> Para una empresa de China continental, la verificación de WeCom conlleva una tasa de revisión de 300 yuanes por solicitud, no reembolsable, y la revisión anual cuesta lo mismo que la primera.
+> Fuente: centro de ayuda de WeCom (企业微信), comprobado en octubre de 2026. https://open.work.weixin.qq.com/help2/pc/18372
+
+Lo habitual es que una marca extranjera se apoye en un equipo local o en una agencia para el registro, las integraciones con el CRM y la formación de los equipos. [Nuestra guía para abrir una cuenta oficial de WeChat](/es/analisis/wechat-official-account-setup/) detalla ambas vías.
+
+Las tasas son modestas. La inversión de verdad está en montar los procesos que convierten un contacto en facturación. Y en formar a quien los va a manejar cada día.
 
 ## Lo esencial
 

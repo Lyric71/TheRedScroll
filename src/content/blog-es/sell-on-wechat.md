@@ -4,6 +4,7 @@ description: "El mayor ecosistema de marca de China es WeChat. Cuentas Oficiales
 metaTitle: "Cómo vender en WeChat: una guía para marcas"
 metaDescription: "En WeChat es donde venden las marcas en China. Cómo Cuentas Oficiales, Video Accounts, Mini Programas, publicidad y WeCom convierten atención en ventas."
 publishDate: 2026-07-21
+updatedDate: 2026-10-06
 author: "TheRedScroll"
 platforms: ["wechat"]
 category: "Plataformas"
@@ -59,9 +60,10 @@ ya está hecha por usted.
 | Tipo de cuenta | Para quién | Qué obtiene |
 | --- | --- | --- |
 | Cuenta de Servicio | Empresas extranjeras (o sea, usted) | 4 envíos al mes, WeChat Pay, menús, API |
-| Cuenta de Suscripción | Editores y creadores locales | Publicaciones diarias, pero sin avisos push |
+| Cuenta de Suscripción (hoy «cuenta oficial») | Editores y creadores de China continental, cerrada a empresas extranjeras | Un aviso push al día |
 
-Casi toda marca internacional lleva una Cuenta de Servicio. Cuatro envíos al mes, nada
+Casi toda marca internacional lleva una Cuenta de Servicio. Los documentos y la
+verificación, paso a paso, están en [nuestra guía para abrir una cuenta oficial de WeChat](/es/analisis/wechat-official-account-setup/). Cuatro envíos al mes, nada
 más, así que cada uno tiene que ganarse su sitio. A finales de 2024, Tencent metió las
 publicaciones de las Cuentas de Servicio en una carpeta aparte, lo que recortó sin
 ruido cuánta gente las ve por defecto. El listón subió, y el contenido flojo no tarda
@@ -232,9 +234,14 @@ por debajo.
 Un par de cosas que las marcas nos plantean antes de empezar.
 
 **¿Necesito una empresa china para estar en WeChat?**
-Para una Cuenta de Servicio verificada y WeChat Pay, hace falta una entidad mercantil
-china o un representante local autorizado. Resuelva eso primero. Sin ello no funciona
+Para la cuenta, no. Una empresa registrada fuera de China continental puede abrir y
+verificar una Cuenta de Servicio a su propio nombre, por 99 dólares estadounidenses
+por solicitud. WeChat Pay es otro asunto: una empresa extranjera cobra a través del
+programa transfronterizo de Tencent. Resuelva primero la cuenta. Sin ella no funciona
 nada más.
+
+> Las entidades extranjeras pagan 99 dólares estadounidenses por solicitud de verificación. La revisión concluye en un plazo de 7 a 15 días hábiles desde la presentación de la documentación completa.
+> Fuente: servicio de atención al cliente de Tencent (腾讯客服), preguntas frecuentes sobre la verificación de entidades extranjeras, comprobado en octubre de 2026. https://kf.qq.com/faq/190723aQvMR31907233IF7FV.html
 
 **¿Puede ganar una marca pequeña sin un gran presupuesto de publicidad?**
 Sí. Muchas lo logran con dominio privado y comunidad en vez de con mucho gasto. Contenido

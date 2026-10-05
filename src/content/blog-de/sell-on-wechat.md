@@ -4,6 +4,7 @@ description: "Chinas größtes Marken-Ökosystem ist WeChat. Official Accounts, 
 metaTitle: "Auf WeChat verkaufen: Leitfaden für Marken"
 metaDescription: "Auf WeChat verkaufen Marken in China. Wie Official Accounts, Video Accounts, Mini Programs, Werbung und WeCom Aufmerksamkeit in echte Verkäufe verwandeln."
 publishDate: 2026-07-21
+updatedDate: 2026-10-06
 author: "TheRedScroll"
 platforms: ["wechat"]
 category: "Plattformen"
@@ -60,9 +61,10 @@ gibt zwei Typen, und die Wahl ist Ihnen bereits abgenommen.
 | Kontotyp | Für wen | Was Sie bekommen |
 | --- | --- | --- |
 | Service Account | Ausländische Unternehmen (also Sie) | 4 Sendungen pro Monat, WeChat Pay, Menüs, APIs |
-| Subscription Account | Lokale Verlage und Creator | Tägliche Beiträge, aber keine Push-Hinweise |
+| Subscription Account (heute „Official Account“) | Verlage und Creator vom Festland, für ausländische Unternehmen nicht offen | Ein Push-Hinweis am Tag |
 
-Fast jede internationale Marke betreibt einen Service Account. Vier Sendungen pro
+Fast jede internationale Marke betreibt einen Service Account. Unterlagen und
+Verifizierung Schritt für Schritt erklärt [unser Leitfaden zur Einrichtung eines WeChat Official Account](/de/analysen/wechat-official-account-setup/). Vier Sendungen pro
 Monat, mehr nicht, also muss sich jede ihren Platz verdienen. Ende 2024 verstaute
 Tencent die Beiträge der Service Accounts in einem eigenen Ordner, was ihre
 Standardreichweite stillschweigend beschnitt. Die Latte liegt seither höher, und
@@ -232,9 +234,14 @@ wurde, klingt fremd, und er bleibt hinter den Erwartungen.
 Ein paar Dinge, die Marken uns vor dem Start stellen.
 
 **Brauche ich ein chinesisches Unternehmen, um WeChat zu betreiben?**
-Für einen verifizierten Service Account und WeChat Pay brauchen Sie eine chinesische
-Geschäftseinheit oder einen zugelassenen lokalen Vertreter. Klären Sie das zuerst.
-Ohne das läuft nichts weiter.
+Für das Konto nicht. Ein außerhalb des chinesischen Festlands eingetragenes
+Unternehmen kann einen Service Account auf eigenen Namen eröffnen und verifizieren
+lassen, für 99 US-Dollar je Antrag. WeChat Pay ist eine eigene Frage: Ausländische
+Unternehmen kassieren über Tencents grenzüberschreitendes Programm. Klären Sie
+zuerst das Konto. Ohne das läuft nichts weiter.
+
+> Ausländische Gesellschaften zahlen 99 US-Dollar je Verifizierungsantrag. Die Prüfung ist binnen 7 bis 15 Arbeitstagen nach Eingang vollständiger Unterlagen abgeschlossen.
+> Quelle: Tencent-Kundenservice (腾讯客服), FAQ zur Verifizierung ausländischer Gesellschaften, bestätigt im Oktober 2026. https://kf.qq.com/faq/190723aQvMR31907233IF7FV.html
 
 **Kann eine kleinere Marke ohne großes Werbebudget gewinnen?**
 Ja. Viele schaffen es über Private Domain und Community statt über hohen Einsatz.

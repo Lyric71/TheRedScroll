@@ -62,7 +62,9 @@ find a new figure, append it to that ledger before you finish.
 
 - Chinese outbound travel volume or recovery figure, cite a dated source
 - Share of travelers researching on social before booking, cite a dated source
-- Marriott engagement outcomes from our own case study
+- Marriott outcomes as published on /work/marriott/ (amended 2026-10-05: the
+  page publishes no engagement figure; quote its published lines only, per
+  the settled client-figure rule)
 
 **If a figure cannot be sourced, cut the claim.** Do not estimate, do not
 hedge, do not write "industry sources suggest". A missing number is better
@@ -73,9 +75,12 @@ than an unsourced one.
 Describe each of these in the handoff block at the end of the file. Do not
 embed images in body copy.
 
-- Path-to-booking diagram across social and OTA
+- Path-to-booking across social and OTA, carried as the intro table and the
+  research-path section (amended 2026-10-05, settled fallback 7)
 - China travel seasonality calendar graphic
-- Feature image: a hotel window view at dawn, no people, no branding. China rule: set the scene in China and show Chinese social platforms on screen (WeChat, Xiaohongshu, Douyin or Weibo interface on a phone, laptop or studio monitor); set in a typical Chinese city, varied from article to article and not only Shanghai, only Chinese people in frame, candid normal-life photo in crisp sharp focus with legible screens (never blur, smudges or noise), no AI polish; this rule wins over the subject hint
+- Feature image: a hotel window view at dawn, no branding (amended
+  2026-10-05: "no people" removed, the hero rule allows Chinese people in
+  frame). China rule: set the scene in China and show Chinese social platforms on screen (WeChat, Xiaohongshu, Douyin or Weibo interface on a phone, laptop or studio monitor); set in a typical Chinese city, varied from article to article and not only Shanghai, only Chinese people in frame, candid normal-life photo in crisp sharp focus with legible screens (never blur, smudges or noise), no AI polish; this rule wins over the subject hint
 
 ## Tables required
 

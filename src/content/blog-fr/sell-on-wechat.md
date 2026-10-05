@@ -4,6 +4,7 @@ description: "Le plus grand écosystème de marque de Chine, c'est WeChat. Compt
 metaTitle: "Vendre sur WeChat : le guide pour les marques"
 metaDescription: "En Chine, c'est sur WeChat que vendent les marques. Comptes officiels, Video Accounts, Mini Programs, publicité et WeCom : transformer l'attention en ventes."
 publishDate: 2026-07-21
+updatedDate: 2026-10-06
 author: "TheRedScroll"
 platforms: ["wechat"]
 category: "Plateformes"
@@ -59,9 +60,10 @@ types, et le choix est déjà tranché pour vous.
 | Type de compte | Pour qui | Ce que vous obtenez |
 | --- | --- | --- |
 | Compte de service | Les entreprises étrangères (donc vous) | 4 envois par mois, WeChat Pay, menus, API |
-| Compte d'abonnement | Éditeurs et créateurs locaux | Publications quotidiennes, mais pas d'alerte push |
+| Compte d’abonnement (devenu « compte officiel ») | Éditeurs et créateurs chinois, fermé aux sociétés étrangères | Une alerte push par jour |
 
-Presque toutes les marques internationales optent pour un compte de service. Quatre
+Presque toutes les marques internationales optent pour un compte de service. Pièces
+à fournir et certification, étape par étape : tout figure dans [notre guide d’ouverture d’un compte officiel WeChat](/fr/decryptages/wechat-official-account-setup/). Quatre
 envois par mois, pas un de plus : chacun doit mériter sa place. Fin 2024, Tencent a
 relégué les publications des comptes de service dans un dossier à part, rognant en
 silence leur audience par défaut. La barre a monté, et les contenus creux disparaissent
@@ -230,8 +232,14 @@ et ses résultats s'en ressentent.
 Quelques points que les marques nous soumettent avant de se lancer.
 
 **Faut-il une société chinoise pour être présent sur WeChat ?**
-Pour un compte de service vérifié et WeChat Pay, il faut une entité commerciale chinoise
-ou un représentant local agréé. Réglez ce point d'abord. Rien d'autre ne tourne sans lui.
+Pas pour le compte. Une société immatriculée hors de Chine continentale peut ouvrir
+et faire certifier un compte de service à son propre nom, pour 99 dollars américains
+par demande. WeChat Pay relève d’un autre circuit : une société étrangère encaisse par
+le programme transfrontalier de Tencent. Réglez d’abord la question du compte. Rien
+d’autre ne tourne sans lui.
+
+> Les entités étrangères acquittent 99 dollars américains par demande de certification. L’examen est bouclé en 7 à 15 jours ouvrés après le dépôt d’un dossier complet.
+> Source : service client de Tencent (腾讯客服), FAQ sur la certification des entités étrangères, confirmé en octobre 2026. https://kf.qq.com/faq/190723aQvMR31907233IF7FV.html
 
 **Une petite marque peut-elle percer sans gros budget publicitaire ?**
 Oui. Beaucoup y parviennent par le domaine privé et la communauté plutôt que par la

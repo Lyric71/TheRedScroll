@@ -4,6 +4,7 @@ description: "China's biggest brand ecosystem is WeChat. Official Accounts, Vide
 metaTitle: "How to sell on WeChat: a guide for brands"
 metaDescription: "WeChat is where brands sell in China. How Official Accounts, Video Accounts, Mini Programs, ads, and WeCom turn attention into real sales."
 publishDate: 2026-07-21
+updatedDate: 2026-10-06
 author: "TheRedScroll"
 platforms: ["wechat"]
 category: "Platforms"
@@ -59,9 +60,10 @@ to it. There are two types, and the choice is made for you.
 | Account type | Who it is for | What you get |
 | --- | --- | --- |
 | Service Account | Foreign companies (this is you) | 4 pushes a month, WeChat Pay, menus, APIs |
-| Subscription Account | Local publishers and creators | Daily posts, but no push alerts |
+| Subscription Account (now called Official Account) | Mainland publishers and creators, not open to overseas companies | One push alert a day |
 
-Nearly every international brand runs a Service Account. Four pushes a month is
+Nearly every international brand runs a Service Account. Our [WeChat Official
+Account setup guide](/insights/wechat-official-account-setup/) covers the documents and verification step by step. Four pushes a month is
 all you get, so each one has to earn its place. In late 2024 Tencent tucked
 Service Account posts into their own folder, which quietly cut how many people
 see them by default. That raised the bar, and thin content tends to sink out of
@@ -225,9 +227,14 @@ foreign, and it underperforms.
 A few things brands ask us before they start.
 
 **Do I need a Chinese company to run WeChat?**
-For a verified Service Account and WeChat Pay, you need a Chinese business entity
-or an authorized local representative. Sort this out first. Nothing else runs
-without it.
+Not for the account. A company registered outside mainland China can open and
+verify one Service Account in its own name, for 99 US dollars per application.
+WeChat Pay is separate: an overseas company collects through Tencent's
+cross-border program. Sort out the account first. Nothing else runs without it.
+
+> Overseas entities pay 99 US dollars per verification application. Review is
+> completed within 7 to 15 working days after complete documents are submitted.
+> Source: Tencent customer service (腾讯客服), overseas entity verification FAQ, confirmed October 2026. https://kf.qq.com/faq/190723aQvMR31907233IF7FV.html
 
 **Can a smaller brand win without a big ad budget?**
 Yes. Plenty do it on private domain and community instead of heavy spend.

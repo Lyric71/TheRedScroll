@@ -67,7 +67,7 @@ Une autre différence pèse plus lourd que le tarif : l’entité étrangère n�
 > En Chine continentale, l’examen d’une certification prend de 1 à 3 jours ouvrés.
 > Source : service client de Tencent (腾讯客服), délais d’examen des inscriptions, confirmé en septembre 2026. https://kf.qq.com/faq/120911VrYVrA1312123qyyqI.html
 
-Pour la plupart de nos lecteurs, le compte revient donc à 99 dollars américains par an. Inscrivez la date de renouvellement dans un agenda partagé : une certification échue est un tracas parfaitement évitable.
+Pour la plupart de nos lecteurs, le compte revient donc à 99 dollars américains par an. Inscrivez la date de renouvellement dans un agenda partagé : une certification échue est un tracas parfaitement évitable. Pièces à fournir, étapes de l’examen, limites du compte étranger : [notre guide d’ouverture d’un compte officiel WeChat](/fr/decryptages/wechat-official-account-setup/) détaille la procédure.
 
 ## Production de contenu : ce qui détermine le prix d’un article
 

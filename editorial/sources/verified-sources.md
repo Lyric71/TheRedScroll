@@ -70,6 +70,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Notes: Platform page carries no date. Cite as "confirmed September 2026". Fee is non-refundable on failure.
 
 - Re-verified 2026-10-01 for 05B: "300元/次", "不予退还" and "保留一年" confirmed at check 1 and check 2. Used in: wechat-official-account-setup.
+- Re-verified 2026-10-06 for 06A: "300元/次", "一年内有效" and "不予退还" confirmed at check 1 and check 2. Used in: china-marketing-hidden-costs.
+
 ### WeChat Official Account verification fee, overseas entity
 - Value: 99 US dollars per verification application; valid one year
 - As of: page undated; confirmed September 2026 (platform documentation)
@@ -84,6 +86,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 
 - Re-verified 2026-10-01 for 05B: "99美元/次" and "不以认证成功为前提" confirmed at check 1 and check 2. Used in: wechat-official-account-setup.
 - Re-verified 2026-10-05 by the 05A publish run: re-fetched, "99美元" and "不以认证成功为前提" confirmed. Used in: wechat-advertising-formats-costs (all five locales; replaces the unsourced claim that verification needs a Chinese entity or a local representative).
+- Re-verified 2026-10-06 for 06A: "99美元/次" and "不以认证成功为前提" confirmed at check 1 and check 2. Used in: china-marketing-hidden-costs.
+
 ### Xiaohongshu enterprise professional account verification fee
 - Value: 600 yuan per application; valid one year; annual review required; not refunded on failure
 - As of: October 2025 (New Rank article); platform PDF undated, confirmed September 2026
@@ -94,6 +98,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-09-24: re-fetched for 04A: New Rank "每年600元" and date 2025-10-19 confirmed; platform PDF re-downloaded and text extracted, "600 元/次" confirmed (check 1 and check 2, both 2026-09-24).
 - Used in: china-social-media-marketing-cost, xiaohongshu-business-account-setup, chinese-entity-social-media, china-social-media-package-includes
 - Notes: PDF also states overseas entities must verify via the desktop site and each order expires after 30 days.
+- Re-verified 2026-10-06 for 06A: New Rank "每年600元" confirmed; platform PDF re-downloaded and extracted, "600元/次", "每年需要完成一次年审", "若认证审核失败，审核费用不予退还" and "翻译件并加盖翻译公司公章" (non-Chinese, non-English documents) confirmed at check 1 and check 2. Used in: china-marketing-hidden-costs.
 
 ### Douyin enterprise (Blue V) verification fee
 - Value: 600 yuan first year; 120 yuan per year to renew; each period one year
@@ -105,6 +110,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-09-24: re-fetched for 04A as the ledger note asked, "首年600元，之后每年的续费是120元" and page date 2022-05-30 still live (check 1 and check 2, both 2026-09-24).
 - Used in: china-social-media-marketing-cost, chinese-entity-social-media, china-social-media-package-includes
 - Notes: Older than 12 months but it is the platform's own page and still live. Second Ocean Engine FAQ (2022-05-13) says the same: https://www.oceanengine.com/faq/douyin-qyh-sfmw.html. Recheck before reuse.
+- Re-verified 2026-10-06 for 06A: "首年600元" and "120元" confirmed, page date 2022-05-30 still live at check 1 and check 2. Used in: china-marketing-hidden-costs.
 
 ### WeChat Moments ads minimum budgets
 - Value: bidding buys from 1,000 yuan daily budget and 30 yuan CPM floor; scheduled buys from 50,000 yuan per placement; local promotion from 1,000 yuan a day
@@ -120,6 +126,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Notes: Current page is undated; the 2016 PDF supplies the date and shows the floors have held.
 - Re-verified 2026-10-05 for 05C: "每日预算1000元起" and "单次投放总预算5万元起" confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
 - Re-verified 2026-10-05 by the 05A publish run: product page "每日预算1000元起" and "单次投放总预算5万元起", 2016 PDF "不得低于1000元", "第5个自然日" and "第28个自然日" confirmed. Used in: wechat-advertising-formats-costs (all five locales; scheduled window corrected from 1-28 to 5 to 28 days, and the undated "Niaoge Biji, Digitaling" source line replaced by the 2016 guide; the unsourced 1,000-yuan top-up cut).
+- Re-verified 2026-10-06 for 06A: "每日预算1000元起" and "免费开户" confirmed at check 1 and check 2. Used in: china-marketing-hidden-costs.
 
 ### Douyin ad account opening: service fee and agent-set first recharge
 - Value: qualitative. Official channel charges a service fee; agents may open for free but set their own minimum first recharge
@@ -229,6 +236,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: xiaohongshu-marketing-foreign-brands, beauty-skincare, xiaohongshu-algorithm, xiaohongshu-account-not-growing, fashion-apparel, xiaohongshu-advertising-formats-costs
 - Re-verified 2026-09-28 for 04B: "普通模式收取10%" still on the page (check 1 and check 2). Still older than 12 months; the fee rule itself is not re-confirmed by a platform page.
 - Notes: Older than 12 months. The rule is still applied by the platform, but the Pugongying help center (pgy.xiaohongshu.com) blocks fetches. Replace with a platform page when one can be fetched.
+- Re-verified 2026-10-06 for 06A: "普通模式收取10%" confirmed; still older than 12 months, cited with its October 2022 date at check 1 and check 2. Used in: china-marketing-hidden-costs.
 
 ### WeChat Official Account verification for overseas entities: review time and payment
 - Value: review completed within 7 to 15 working days after complete documents are submitted; 99 US dollars per application, charged regardless of outcome; payment by WeChat Pay or card (Visa, MasterCard, Amex, UnionPay, JCB, Diners, Discover); review outsourced to one of two third-party firms
@@ -245,6 +253,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-10-01 for 05B: "7-15个工作日内完成审核" and the card list confirmed at check 1 and check 2. Used in: wechat-official-account-setup.
 - Re-verified 2026-10-02: "境外主体账号认证在支付费用后，在用户提交完整的资质后7-15个工作日内完成审核" confirmed at check 1 and check 2. Used on the site pages /wechat-agency/ and /platforms/wechat/ (all five locales), which said "1 to 2 weeks" and now give Tencent's 7 to 15 working days for an overseas company and four weeks from contract to first post.
 - Re-verified 2026-10-05 for 05C: "99美元/次", "不以认证成功为前提" and "7-15个工作日内完成审核" confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
+- Re-verified 2026-10-06 for 06A: "7-15个工作日内完成审核" confirmed at check 1 and check 2. Used in: china-marketing-hidden-costs.
+- Re-used 2026-10-06 by the 05B publish run: "99美元" and "7-15个工作日内完成审核" confirmed at check 1 and check 2 (curl, two fetches). Now also cited on sell-on-wechat (FAQ, all five locales), which wrongly said a verified Service Account needs a Chinese entity.
 
 ### WeChat Official Account verification materials for overseas entities
 - Value: company registration certificate or business license; contact person's ID, both sides, color scan; application letter (simplified Chinese, traditional Chinese or English template); operation authorization letter (same three languages); contact person's phone bill, or a stamped office phone bill or bank statement; trademark registration or authorization if the account is named after a trademark
@@ -257,6 +267,9 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Notes: Individual businesses, governments, other organizations and schools have their own entity document in the same table.
 
 - Re-verified 2026-10-01 for 05B: all six items, the five entity-type documents (个体户注册登记证, 《企业注册证》或《商业许可证书》, 政府组织成立运作文件, 社团/组织成立运作文件, 学校成立文件、办学资质) and the stamped office bill or bank statement fallback confirmed at check 1 and check 2. Used in: wechat-official-account-setup.
+- Re-verified 2026-10-06 for 06A: the trademark registration or authorization line ("商标") confirmed; used in prose for the trademark section at check 1 and check 2. Used in: china-marketing-hidden-costs.
+- Re-used 2026-10-06 by the 05B publish run: "联系人" and "商标" confirmed at check 1 and check 2. The /wechat-agency/ FAQ (all five locales) said "legal representative's ID" and "proof of brand ownership"; it now names the contact person's ID, the application letter and the trademark certificate when the account carries a brand name.
+
 ### WeChat Official Account registration for overseas entities: one account, service account only
 - Value: an overseas entity may register one Official Account; overseas regions support the service account type only; the account is usable only after verification
 - As of: page undated; confirmed September 2026 (platform documentation)
@@ -535,6 +548,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: xiaohongshu-sensitive-words
 - Notes: Tech trade outlet, original copy. A fuller copy (Zhengguan News, 正观号 "电商观察家") lists penalty points (merchant violation points 10 to 25, account credit 0 to 12 per breach) but is user-uploaded self-media: not cited. 100ec.cn (网经社) has the story behind a JS challenge and could not be fetched. The platform's own notice sits on the 商业广告薯 account and the e-commerce learning centre, neither fetchable.
 - Re-verified 2026-10-05 for 05C: "3月12日小红书《交易导流违规管理细则》", "传播个人/社群联系方式或其他平台的账号/店铺信息" and "应使用小红书商城、直播间内购物车功能、官方留资组件等方式" (older than 12 months; cited as a dated rule) confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
+- Re-verified 2026-10-05 for 05D: "3月12日小红书《交易导流违规管理细则》" and "应使用小红书商城、直播间内购物车功能、官方留资组件等方式" confirmed at check 1 and check 2. Used in: travel-hospitality.
 
 ### Xiaohongshu trade-diversion notice, November 2024: contact details listed, penalties
 - Value: qualitative. The 交易导流商业秩序治理规则公告 (published by the 商业广告薯 account in November 2024) lists directed contact details that may not be pushed, "如手机号、微信、电子邮箱、二维码、银行账号及其他付款方式等", plus third-party platform names and links; covered surfaces include profile pages, notes, comments, product details, store pages, physical parcels, promotion pages, chat tools, customer service, marketing SMS and livestreams; penalties include "限制笔记、直播、商品等曝光，或在搜索结果中不展现", content-posting limits, deposit deductions, store removal and account bans
@@ -625,6 +639,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-08, re-fetched (curl --compressed), unchanged
 - Used in: first-90-days-china-social-media
 - Notes: Examination only. Publication, opposition and registration add to the total; do not present 4 months as time to registration.
+- Re-verified 2026-10-06 for 06A: "商标注册平均审查周期稳定在4个月" confirmed at check 1 and check 2. Used in: china-marketing-hidden-costs.
 
 ### China cosmetics classification: special versus ordinary
 - Value: cosmetics for hair dye, perming, spot removal and whitening, sun protection and hair loss prevention, plus any cosmetic claiming a new efficacy, are special cosmetics; all others are ordinary
@@ -679,6 +694,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-09-29 for 04D (food-beverage): Art. 9(3) and Art. 17 strings confirmed at check 1 and check 2; Art. 18 health-food string (保健食品广告应当显著标明“本品不能代替药物”) also confirmed. Used in: food-beverage.
 - Re-verified 2026-10-02: the page preamble ends "根据2018年10月26日第十三届全国人民代表大会常务委员会第六次会议《关于修改〈中华人民共和国野生动物保护法〉等十五部法律的决定》修正", so citations of this URL say "as amended October 2018" (fixed in china-agency-pricing-models and food-beverage, all five locales). The law was amended again on 2021-04-29 (NPCSC decision amending eight laws, checked on zh.wikisource.org): that decision deleted the publication registration duty in Art. 29, removed the registration certificate penalty from Arts. 55, 57 and 58, and deleted Art. 60. The articles cited on the site (9, 11, 13, 14, 17, 18, 28, 30, 34 and the 57 fine and licence revocation) read the same in the current text.
 - Notes: Article 14 (ads must be identifiable, no ads disguised as news) and Article 28 (false or misleading content is false advertising) are on the same page and are the general form of the Order 72 rule below.
+- Re-verified 2026-10-06 for 06A: "最佳" and "二十万元以上一百万元以下" confirmed (Arts. 9 and 57) at check 1 and check 2. Used in: china-marketing-hidden-costs.
 
 ### Internet Advertising Measures: seeding notes with a purchase link are advertising
 - Value: promoting goods or services through knowledge sharing, experience sharing or product reviews with a purchase link attached must be conspicuously labelled "广告"; livestream sellers take advertiser duties and livestream room operators and marketing staff take advertising operator, publisher or endorser duties
@@ -690,6 +706,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: beauty-skincare, xiaohongshu-algorithm, fashion-apparel, xiaohongshu-sensitive-words
 - Re-verified 2026-09-29 for 04C (check 1 and check 2): "通过知识介绍、体验分享、消费测评等形式推销商品或者服务，并附加购物链接等购买方式的，广告发布者应当显著标明“广告”" and "2023年5月1日起施行" confirmed.
 - Notes: This is the rule behind Xiaohongshu's Pugongying declaration requirement. Article 8 on the same page bans disguised health and wellness content for medical, drug, device and health-food products.
+- Re-verified 2026-10-05 for 05D: "广告发布者应当显著标明“广告”" and "2023年5月1日起施行" confirmed at check 1 and check 2. Used in: travel-hospitality.
+- Re-verified 2026-10-06 for 06A: "显著标明“广告”" confirmed; used in prose, no blockquote at check 1 and check 2. Used in: china-marketing-hidden-costs.
 
 ### SAMR enforcement guideline on absolute terms in advertising (2023): scope, carve-outs, leniency
 - Value: qualitative. Covers 国家级, 最高级, 最佳 "以及与其含义相同或者近似的其他用语" (point 2). Not applicable when the term only states service attitude, business philosophy, culture or wishes, or a goal (point 5); or, with no misleading or disparaging effect, when it compares products within one brand, gives usage, timing or storage tips, is a graded term under a national, industry or local standard with a stated basis, is part of a product name, model, trademark or patent, is an official award or title, or states a fact limited by time or place such as sales, revenue or market share (point 6). Claims the advertiser cannot prove are punished (point 7). A first use with minor harm, promptly corrected, may go unpunished (point 9). Generally not minor: efficacy, cure-rate or effective-rate absolutes in medical, medical aesthetics, drug, device, health food and special medical food ads; return or safety absolutes in investment ads; outcome absolutes in education and training ads (point 11)
@@ -710,6 +728,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-29, re-fetched twice before the draft was finished, unchanged
 - Used in: xiaohongshu-sensitive-words
 - Notes: Both cases predate the 2023 guideline; say so if the point is current enforcement. Do not name the shop owner in copy.
+- Re-verified 2026-10-06 for 06A: "780元" confirmed; cited with its March 2023 date at check 1 and check 2. Used in: china-marketing-hidden-costs.
 
 ### CAC content governance rules: illegal and harmful content, platform review duty
 - Value: qualitative. Content producers must not publish illegal information (Art. 6: against constitutional principles; harming national security; harming national honor and interests; defaming heroes and martyrs; terrorism; ethnic hatred; religious policy and superstition; rumors; obscenity, gambling, violence; insult and defamation) and must resist harmful information (Art. 7: exaggerated titles that do not match the content; hyping scandals; improper comment on natural disasters and major accidents; sexual innuendo; gore; discrimination; vulgarity; content that leads minors to unsafe imitation). Platforms must run post review, comment review, real-time patrols and emergency handling (Art. 9) and act at once on Art. 6 and 7 content (Art. 10)
@@ -761,6 +780,73 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: food-beverage
 - Notes: The page gives the publication date as 2025-03-16; search summaries say 2025-03-27. Only the in-force date is cited. The customs standards page (jckspj.customs.gov.cn) returns HTTP 412 to automated fetches. Recheck after March 2027.
 
+### Trademark filing and renewal fees, CNIPA
+- Value: filing (受理商标注册费) 300 yuan on paper or 270 yuan online per class, covering 10 goods or services; each extra item 30 yuan on paper or 27 yuan online; renewal 500 yuan on paper or 450 yuan online; opposition 500 or 450 yuan
+- As of: fee schedule in force since 2019-07-01 (stated on the page)
+- Source: China National Intellectual Property Administration Trademark Office (国家知识产权局商标局), 规费清单
+- URL: https://sbj.cnipa.gov.cn/sbj/sbsq/sfbz/
+- Verified 1: 2026-10-06, fetched with curl, "300元（限定本类10个商品", "270元（限定本类10个商品", "每个商品加收27元", "受理商标续展注册费" and "自2019年7月1日起实施" confirmed
+- Verified 2: 2026-10-06, re-fetched before the draft was finished, unchanged
+- Used in: china-marketing-hidden-costs
+- Notes: Official fees only. Trademark agency fees are not published by any neutral source and are not cited.
+
+### Trademark Law: foreign applicants need an agent; opposition window; ten-year term
+- Value: foreigners and foreign companies must file through a lawfully established trademark agency (Art. 18); examination within nine months of filing (Art. 28); three months for opposition after preliminary approval is published (Art. 33); a registered mark lasts ten years from registration (Art. 39)
+- As of: law as amended 2019-04-23
+- Source: Trademark Law of the People's Republic of China (商标法), via the MOFCOM law database (商务部 全球法规网, from 北大法宝)
+- URL: https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=66979
+- Verified 1: 2026-10-06, fetched with curl, "应当委托依法设立的商标代理机构", "九个月内审查完毕", "自公告之日起三个月内" and "注册商标的有效期为十年" confirmed
+- Verified 2: 2026-10-06, re-fetched, unchanged
+- Used in: china-marketing-hidden-costs
+- Notes: A revised Trademark Law was adopted in June 2026 and takes effect 2027-01-01 (next entry). Article numbers change under the revision (the ten-year term becomes Art. 43). Recheck note for 2027-01-01: move any citation of this entry to the revised text and its new article numbers.
+
+### Revised Trademark Law, 2026: in force January 1, 2027; ten-year term kept
+- Value: the revised law takes effect 2027-01-01; marks registered before then stay valid; the ten-year term is kept (Art. 43); renewal within 12 months before expiry plus a six-month grace period (Art. 44)
+- As of: published 2026-06-26
+- Source: China National Intellectual Property Administration (国家知识产权局), 中华人民共和国商标法 (2026年修订); same text on the NPC site (中国人大网)
+- URL: https://www.cnipa.gov.cn/art/2026/6/26/art_95_206942.html
+- Verified 1: 2026-10-06, fetched with curl, "本法自2027年1月1日起施行" and "注册商标的有效期为十年" confirmed
+- Verified 2: 2026-10-06, re-fetched, unchanged
+- Used in: china-marketing-hidden-costs
+
+### ICP filing for websites: required, 20 working days, 10,000-yuan fine, no fee
+- Value: a non-commercial internet information service in mainland China must be filed (Art. 5); the provincial communications administration files it within 20 working days of a complete application (Art. 12); running unfiled brings an order to correct and a 10,000-yuan fine (Art. 22); filing can be done through the access provider (Art. 8); the ministry's service guide lists the filing as 不收费 (no fee)
+- As of: Order 33 (2005) as amended by Order 68 (2024-01-18); page dated 2024-02-02; service guide 2025
+- Source: Ministry of Industry and Information Technology (工业和信息化部), 非经营性互联网信息服务备案管理办法; MIIT government services guide (工业和信息化部政务服务), 非经营性互联网信息服务备案
+- URL: https://www.miit.gov.cn/gyhxxhb/jgsj/cyzcyfgs/bmgz/xxtxl/art/2024/art_84a0cfa0ebd049bbbe751dca9a008e56.html ; https://ythzxfw.miit.gov.cn/bssx/alx/dxhhlw/art/2025/art_88c400fc83904008bcf5b11bc08ec18f.html
+- Verified 1: 2026-10-06, both fetched with curl, "未经备案，不得在中华人民共和国境内", "二十个工作日内予以备案", "并处一万元罚款", "令第68号" and "不收费" confirmed
+- Verified 2: 2026-10-06, both re-fetched, unchanged
+- Used in: china-marketing-hidden-costs
+- Notes: Mainland hosting prices are vendor pages only; not cited.
+
+### National Common Language and Script Law, 2025 revision: ads and product packaging in standard Chinese
+- Value: Art. 15: broadcasting, online audiovisual programs, public facilities, signboards and advertising (招牌、广告用字), company names, and the names, packaging and instructions of goods sold in China (在境内销售的商品的名称、包装、说明) use the national common language and script as the base; Art. 25: market regulators supervise the wording of goods and ads
+- As of: revised 2025-12-27, in force 2026-01-01
+- Source: National Common Language and Script Law (国家通用语言文字法), Xinhua full text via Sina Finance (新浪财经)
+- URL: https://finance.sina.com.cn/roll/2025-12-27/doc-inhefuwc6921440.shtml
+- Verified 1: 2026-10-06, fetched with curl, "招牌、广告用字", "在境内销售的商品的名称、包装、说明" and "自2026年1月1日起施行" confirmed
+- Verified 2: 2026-10-06, re-fetched, unchanged
+- Used in: china-marketing-hidden-costs
+- Notes: The Xinhua page (news.cn/politics/leaders/20251227/efcb1aa00e6b474bb500758409326b37/c.html) renders only the presidential order to curl; the Sina copy carries the full text.
+
+### Customs Tariff Law: duty exemption for samples of no commercial value
+- Value: Art. 32: imports exempt from duty include advertising goods and samples of no commercial value (无商业价值的广告品和货样); in force 2024-12-01; the Import and Export Tariff Regulations repealed the same day
+- As of: adopted 2024-04-26, in force 2024-12-01
+- Source: Customs Tariff Law of the People's Republic of China (关税法), via the Chinese government portal (中国政府网)
+- URL: https://www.gov.cn/yaowen/liebiao/202404/content_6947843.htm
+- Verified 1: 2026-10-06, fetched with curl, "无商业价值的广告品和货样" and "本法自2024年12月1日起施行" confirmed
+- Verified 2: 2026-10-06, re-fetched, unchanged
+- Used in: china-marketing-hidden-costs (in prose)
+
+### Phone numbers registered under real identity; foreigners by passport
+- Value: telephone users register real identity information; a foreign citizen's passport is an accepted document; in force 2013-09-01
+- As of: Order 25, 2013-07-16
+- Source: Ministry of Industry and Information Technology (工业和信息化部), 电话用户真实身份信息登记规定, via the State Council Gazette 2013 No. 24
+- URL: https://www.gov.cn/gongbao/content/2013/content_2473882.htm
+- Verified 1: 2026-10-06, fetched with curl, "外国公民护照" and "2013年9月1日起施行" confirmed
+- Verified 2: 2026-10-06, re-fetched, unchanged
+- Used in: china-marketing-hidden-costs (in prose)
+
 ## Market and industry
 
 <!-- Needed from week 2 onward:
@@ -805,6 +891,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-03, re-fetched, unchanged
 - Used in: china-social-media-marketing-cost, beauty-skincare, fashion-apparel
 - Notes: English-language consultancy source; no Chinese trade-press equivalent with dated per-post ranges was found in this run.
+- Re-verified 2026-10-06 for 06A: "USD 20 to USD 60 per post" and the 06/15/2026 date confirmed at check 1 and check 2. Used in: china-marketing-hidden-costs.
 
 ### Average KOL collaboration cost, Xiaohongshu versus Douyin
 - Value: Xiaohongshu 10,000 to 40,000 US dollars; Douyin 25,000 to 65,000 US dollars per collaboration
@@ -973,6 +1060,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-09-24: re-fetched for 04A, "总额的5%" and "指派" confirmed (check 1 and check 2, both 2026-09-24).
 - Used in: china-agency-pricing-models, china-social-media-package-includes
 - Notes: The strongest published evidence in the ledger that a Chinese platform itemizes the agency fee separately from the creator fee. Reusable for any transparency or billing argument.
+- Re-verified 2026-10-06 for 06A: "总额的5%" and "总额的10%" confirmed; cut from the final 06A draft in the length trim, not cited. Check 1 and check 2 both 2026-10-06.
 
 ### Xingtu creator-side fees: 5% on unbound creators, 3% on creator agencies
 - Value: the platform charges a 5% service fee only to 达人 not bound to an MCN; creators bound to an MCN pay nothing, and since April 3, 2023 the MCN pays the platform a 3% technical service fee
@@ -1002,6 +1090,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: china-agency-pricing-models
 - Re-verified 2026-10-01 for 05A: "返货/返点政策" and "不可退" confirmed at check 1 and check 2. Used in: wechat-marketing-cost.
 - Notes: Undated page, logged on the same basis as the WeChat Moments budget entry above. Recheck the 2024 example year on reuse; if it moves, the agreement was revised.
+- Re-verified 2026-10-06 for 06A: "返货/返点政策", "不予退还" and "不可退" confirmed at check 1 and check 2. Used in: china-marketing-hidden-costs.
 
 ### Tencent service provider agreement: the provider holds and answers for the sub-client account
 - Value: a 子客 (sub-client) is a customer introduced by the service provider; the service provider registers and holds the account and is responsible for the sub-client's conduct and breaches; service providers may not compete through 低价 or 返货
@@ -1023,6 +1112,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-17, re-fetched, unchanged
 - Used in: china-agency-pricing-models
 - Notes: Same page as the Article 9 / 11 / 17 / 57 entry in the Regulatory section. Article 30 is the written-contract rule; Article 34 is the record-keeping duty that makes compliance checks real billable work.
+- Re-verified 2026-10-06 for 06A: "应当依法订立书面合同" confirmed; Art. 30 cited in prose at check 1 and check 2. Used in: china-marketing-hidden-costs.
 
 ### China advertising industry revenue and development index, 2025
 - Value: full-year advertising business revenue passed 2 trillion yuan for the first time, at 20,502.1 亿元, up 32.6% year on year; the China advertising industry development index reached 143.3 points, up 11.6%; head enterprises grew 17.1% in Q1 2026
@@ -1085,6 +1175,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-09-29 for 04C (check 1 and check 2): PDF re-downloaded three times (HTTP 200, 928,035 bytes); new strings "提交物料并审核，审核后则可开始投放广告", "若审核不通过，请根据审核意见修改，并再次提交审核请求" and "需符合广告法及其他法律法规" confirmed. 04C uses it inline (no blockquote) for "rejected Juguang creative comes back with review comments".
 - Re-verified 2026-09-28 for 04B: "当前账号暂未开通广告投放相关功能", "【广告主账号】或【代理商账号】", "前往合作伙伴平台完成入驻流程" and "境内企业上传营业执照，境外企业上传BR/CR" confirmed (check 1 and check 2). File creation date in the PDF metadata: 2022-05-01, cited as May 2022. Precision: 代理商账号 is the sign-up path for agencies themselves (they go on to the partner platform), not an option an advertiser picks to be served by an agency.
 - Notes: **Two different translation stamps, do not conflate them.** Account verification wants a translation stamped by a translation company (see the eligibility entry above); ad qualification wants the registration document translation stamped with the brand owner's own seal. This document predates the February 2026 invitation-only rule for overseas advertisers (see the Juguang overseas entry above), so it describes the document set, not current self-serve access. Use both together.
+- Re-verified 2026-10-06 for 06A: PDF re-downloaded and extracted, "中文翻译件并加盖品牌方公章", "申请时间需届满三个月" and "商标注册证不可过期" confirmed at check 1 and check 2. Used in: china-marketing-hidden-costs.
 
 ### Xiaohongshu Juguang: marketing scenarios and shared account balance
 - Value: four marketing scenarios, product seeding (产品种草), product sales (商品销量), lead collection (客资收集) and livestream promotion (直播推广); platform address ad.xiaohongshu.com; the account cash and bonus balance and the account daily budget are shared with the professional account promotion centre, and same-day spend is the sum of both
@@ -1096,6 +1187,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: xiaohongshu-business-account-setup, xiaohongshu-advertising-formats-costs
 - Re-verified 2026-09-28 for 04B, new strings added: "信息流+搜索的产品双引擎", "信息流产品种草—搜索产品收割", "抢占赛道：...目前仅支持搜索推广", "客资收集：吸引您的目标受众提交销售线索或发起私信咨询", "商品销量：吸引您的目标受众进入您的店铺或购买店铺商品", "精确匹配" / "短语匹配" and "抢排位工具" (check 1 and check 2, both 2026-09-28). The report overview shows total spend, impressions, clicks, click-through rate and average cost per click. PDF metadata creation date 2022-05-06, cited as May 2022.
 - Notes: 客资收集 (lead collection) is the objective for service brands with no store; it converts to direct messages or a form. The shared-balance line matters for any article about who controls the ad account. A companion Juguang FAQ PDF exists on the same CDN but contains live test-account credentials and was deliberately not cited.
+- Re-verified 2026-10-06 for 06A: PDF re-downloaded and extracted, "和专业号推广中心共用" confirmed; used in prose at check 1 and check 2. Used in: china-marketing-hidden-costs.
 
 ### Xiaohongshu store types and the cross-border authorization path
 - Value: three store types, flagship (旗舰店, own brand or an exclusive licence), authorized specialty (专卖店, ordinary licence from the mark holder) and multi-brand collection (集合店); for cross-border trade every brand needs an authorization letter from the brand owner carrying a signature with the signer's job title or a company seal, with a complete authorization chain; without authorization, purchase proof for at least one SKU is required at entry; a cross-border store entering on purchase proof does not submit the trademark certificate; for beauty and personal care, overseas companies may enter with Japanese and Korean brands carrying neither TM nor R marks if they show proof the trademark application was filed; where the trademark holder is an individual who is also the company's legal representative, no authorization proof is needed; domestic entities file the business licence plus a bank account opening permit, overseas entities (including Hong Kong, Macau and Taiwan) file a Business Registration and a Certificate of Incorporation
@@ -1125,6 +1217,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-09-24: re-fetched with curl for 04A, "600元/次" and "不以认证成功为前提" confirmed (check 1 and check 2, both 2026-09-24).
 - Used in: chinese-entity-social-media, china-social-media-package-includes
 - Notes: Same 600 yuan headline as the Xiaohongshu enterprise fee and the Douyin Blue V first-year fee, but the structures differ: Weibo charges per application with an annual review, Douyin charges 600 then 120 to renew. Do not conflate the three in a comparison table without saying what each covers.
+- Re-verified 2026-10-06 for 06A: "600元/次" and "不以认证成功为前提" confirmed; the page states no renewal fee at check 1 and check 2. Used in: china-marketing-hidden-costs.
 
 ### Weibo enterprise verification: accepted documents assume a mainland entity
 - Value: the nine accepted licence types are all mainland documents (企业营业执照, 个体工商户营业执照, 民办非企业登记证书, 事业单位法人登记证书, 医疗机构执业许可证, 律师事务所执业许可证, 宗教活动场所登记证, 社会团体法人登记证书, 民办学校办学许可证); the company name field must match the business licence; the registration number field takes the 统一社会信用代码; website claims require a 工信部ICP备案截图; only a physical colour company chop is accepted, never an electronic, contract or finance chop; the application letter must be dated within the last 2 months
@@ -1135,6 +1228,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-21, re-fetched, unchanged, all four strings re-confirmed
 - Used in: chinese-entity-social-media
 - Notes: **This is an inference-support entry, not a prohibition.** The page nowhere says an overseas company may not verify. What it establishes is that the self-serve form is built around a mainland unified social credit code, which a foreign company does not hold. Pair it with the entity-change entry below, which is where Weibo actually acknowledges overseas subjects. Do not upgrade this into "Weibo bans overseas entities".
+- Re-verified 2026-10-06 for 06A: "工信部ICP备案截图" confirmed; used in prose for the ICP section at check 1 and check 2. Used in: china-marketing-hidden-costs.
 
 ### Weibo entity change: overseas subjects exist and are served by an overseas agent
 - Value: online self-service entity change covers 国内 to 国内 companies only (Hong Kong, Macau and Taiwan excluded); domestic to overseas, overseas to domestic, and overseas to overseas all run offline; overseas to overseas is directed to 认证时为您服务的海外代理商, the overseas agent that handled the original verification; entity-change review takes 1 working day; an account past its annual review must complete that review first
@@ -1389,6 +1483,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-01, re-fetched, unchanged
 - Used in: wechat-marketing-cost
 - Notes: Domestic merchant onboarding. Cross-border WeChat Pay for overseas merchants is a different program and was not researched.
+- Re-verified 2026-10-06 for 06A: "0.6%-1%不等" and "不收取任何申请费用" confirmed at check 1 and check 2. Used in: china-marketing-hidden-costs.
 
 ### WeChat Mini Program phone-number quick verification component: paid since August 28, 2023
 - Value: from August 28, 2023, 0.03 yuan per successful call of the phone-number quick verification component; 1,000 free trial calls per Mini Program account
@@ -1408,6 +1503,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 1: 2026-10-01, fetched with curl, "开通微信小店账号本身不收费", "超过三千个类目", "1%–5%", "不收月租或年费" and "2026-08-24" confirmed
 - Verified 2: 2026-10-01, re-fetched, unchanged
 - Used in: wechat-marketing-cost
+- Re-verified 2026-10-06 for 06A: "1%–5%" and "不收月租或年费" confirmed at check 1 and check 2. Used in: china-marketing-hidden-costs.
 
 ### WeCom verification fees and annual review
 - Value: 300 yuan review fee per application for companies and other for-profit bodies, not refunded on failure; member-scale fee 2,700 yuan (1,001 to 10,000 members) or 29,700 yuan (over 10,000), refunded if the review fails; government and non-profit bodies exempt; verification renewed by annual review at the same fees
@@ -1420,6 +1516,9 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Notes: Mainland process. The overseas WeCom verification page (entry below) states no fee; do not apply the 300 yuan to overseas companies.
 
 - Re-verified 2026-10-01 for 05B (scheduled draft run): "300元/次", "2700元/次", "29,700元/次", "同首次认证费用", "互通外部联系人规模限制为100人" and "无法继续添加和邀请更多客户" confirmed at check 1 and check 2. Used in: wechat-official-account-setup, cited as the mainland route only.
+- Re-verified 2026-10-06 for 06A: "300元/次" and "每年都需要进行年审" confirmed; not cited in the final 06A draft. Check 1 and check 2 both 2026-10-06.
+- Re-used 2026-10-06 by the 05B publish run: "人民币300元/次" and "年审" confirmed at check 1 and check 2. Now cited on what-is-wecom (all five locales) as the mainland route, replacing "the platform itself is free".
+
 ### WeCom overseas company verification: documents, review time, unsupported functions
 - Value: a WeCom registered as an overseas company verifies with its full name, short name and a company registration certificate or business license; review usually 1 to 3 working days; some functions are not supported, including external payment collection (对外收款), enterprise payment, conversation archiving (会话内容存档), red envelopes and the third-party app marketplace (第三方应用市场)
 - As of: page undated; confirmed October 2026 (platform documentation)
@@ -1430,6 +1529,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: wechat-marketing-cost
 
 - Re-verified 2026-10-01 for 05B: "企业全称、企业简称", "《企业注册证》或者《商业许可证书》", "审核时间一般是1-3个工作日", "对外收款", "会话内容存档" and "第三方应用市场" confirmed at check 1 and check 2. The help-center JSON carries an update time of 2026-06-29, so 05B cites the page as June 2026. Used in: wechat-official-account-setup.
+- Re-used 2026-10-06 by the 05B publish run: "对外收款", "会话内容存档", "第三方应用市场" and "1-3个工作日" confirmed at check 1 and check 2. Now cited on what-is-wecom (all five locales), which wrongly said WeCom requires a verified Chinese entity.
 ### WeCom external contact capacity: 2,000 free, annual tiers, 100 for unverified companies
 - Value: each company gets 2,000 external contacts free; beyond that it buys a capacity tier, valid one year; an unverified company is limited to 100 customers
 - As of: page undated; confirmed October 2026 (platform documentation)
@@ -1501,6 +1601,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-01, re-fetched, unchanged
 - Used in: wechat-official-account-setup
 - Notes: The Official Account source for the annual review. Do not cite developers.weixin.qq.com/miniprogram/product/renzheng.html for this: that page is the Mini Program verification guide.
+- Re-verified 2026-10-06 for 06A: "认证名称加“V”被取消" and "服务号支付功能、授权等高级接口将被停用" confirmed; used in prose at check 1 and check 2. Used in: china-marketing-hidden-costs.
 
 ### WeChat verification: entity review and name review are separate
 - Value: verification checks the account entity's qualifications and the account name separately; passing the entity review opens cards, multi-agent service, menu links and (for service accounts) all advanced interfaces; passing the name review completes verification and adds the badge; business domains, advertiser access and quick Mini Program registration need both
@@ -1613,6 +1714,276 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - WeCom "connects more than ten million companies" and Mini Program "800 million daily users": search summaries only, not on the results coverage fetched. Not cited.
 - Xiaohongshu B2B share of users or leads: no platform or trade-press figure exists.
 
+### Mainland residents' outbound trips, 2025
+- Value: 148.36 million outbound trips by mainland residents in 2025, up 20.8%; inbound visitors 154.50 million, up 17.1%
+- As of: full year 2025 (bulletin dated 2026-06-02)
+- Source: Ministry of Culture and Tourism (文化和旅游部), 2025 Culture and Tourism Development Statistical Bulletin (2025年文化和旅游发展统计公报)
+- URL: https://zwgk.mct.gov.cn/zfxxgkml/tjxx/202606/t20260602_966073.html
+- Verified 1: 2026-10-05, fetched with curl, "内地居民出境旅游14836万人次，同比增长20.8%" and the bulletin title confirmed
+- Verified 2: 2026-10-05, re-fetched before the draft was finished, unchanged
+- Used in: travel-hospitality
+- Notes: Mirror on gov.cn (https://www.gov.cn/lianbo/202606/content_7070917.htm). The SCIO briefing of 2026-09-24 gives the rounded "1.48亿" (Jiemian, https://www.jiemian.com/article/15136651.html).
+
+### Outbound travel in 2025 close to the 2019 level, China Tourism Academy
+- Value: qualitative. 2025 outbound trips "接近2019年水平" (close to the 2019 level). 2019 baseline 155 million (China Tourism Academy, https://www.ctaweb.org.cn/gongzuodongtai/7320.html, not cited in 05D)
+- As of: 2025, report 中国出境旅游发展年度报告2025-2026 (article dated 2026-05-26)
+- Source: China Tourism Academy (中国旅游研究院), via China Tourism News (中国旅游新闻网)
+- URL: https://www.ctnews.com.cn/dongtai/m/content/2026-05/26/content_187728.html
+- Verified 1: 2026-10-05, fetched, "2025年中国出境旅游人数接近2019年水平" confirmed
+- Verified 2: 2026-10-05, re-fetched, unchanged
+- Used in: travel-hospitality
+
+### Border crossings, January to August 2026
+- Value: 499 million crossings checked, up 8.7%; mainland residents 242 million
+- As of: January to August 2026 (release dated 2026-09-10)
+- Source: National Immigration Administration (国家移民管理局)
+- URL: https://www.nia.gov.cn/n741440/n741567/c1800846/content.html
+- Verified 1: 2026-10-05, fetched, "累计查验出入境人员4.99亿人次，同比上升8.7%" and "其中内地居民2.42亿人次" confirmed
+- Verified 2: 2026-10-05, re-fetched, unchanged
+- Used in: travel-hospitality
+- Notes: Full year 2025 for comparison: 697 million crossings, up 14.2%, mainland residents 335 million (NIA, 2026-01-28, https://www.nia.gov.cn/n741440/n741567/c1762355/content.html, not cited in 05D). H1 2026: 369 million, up 10.8% (NIA, 2026-07-10). Recheck for the full-year 2026 release in late January 2027.
+
+### Xiaohongshu travel-interest users, guide checking and travel searches
+- Value: 230 million+ monthly travel-interest users; over 80% of them check travel guides on the app; 2.4 billion+ travel searches
+- As of: Xiaohongshu commercial data center, November to December 2025 (article dated 2026-01-27)
+- Source: TravelDaily (环球旅讯), reporting Xiaohongshu commercial data (小红书商业数据中台)
+- URL: https://www.traveldaily.cn/article/189197
+- Verified 1: 2026-10-05, fetched, "月活2.3亿+旅行兴趣用户中", "超80%的用户会在这里查攻略", "产生24亿+次旅行搜索" and "小红书商业数据中台，2025年11月至12月" confirmed
+- Verified 2: 2026-10-05, re-fetched, unchanged
+- Used in: travel-hospitality; also the travel cards on /rednote-agency/ and /platforms/rednote/ in all five locales (replaced the unsourced "64%" line on 2026-10-05)
+- Notes: The 80% is a share of Xiaohongshu's travel-interest users, not of all Chinese travelers. Word it that way every time. Trade publication reporting platform data.
+
+### Xiaohongshu: destinations chosen by interest, guides found through search
+- Value: 69% of users choose a destination based on interest; 57% of travel guides are found through search
+- As of: Fliggy and Xiaohongshu May Day 2026 travel report (article dated 2026-05-05)
+- Source: Economic Information Daily (经济参考报, Xinhua)
+- URL: http://jjckb.xinhuanet.com/20260505/d27f01393793428cab7f47751ad4500a/c.html
+- Verified 1: 2026-10-05, fetched, "69%的用户基于兴趣决定出行目的地" and "57%的旅游攻略获取来源于搜索" confirmed
+- Verified 2: 2026-10-05, re-fetched, unchanged
+- Used in: travel-hospitality
+- Notes: Same 69% line on Securities Times (人民财讯), 2026-05-05, https://www.stcn.com/article/detail/3894255.html.
+
+### Douyin hotel and travel content: plays, searches, live-room hotel orders
+- Value: hotel and travel videos 402.5 billion+ plays; 67.7 billion+ searches for hotel and travel content; 32% of users ordered hotel stays through a live room; 60%+ of order users repurchased within 30 or 90 days
+- As of: Douyin 2026 trend report (article dated 2026-06-18)
+- Source: China Tourism News (中国旅游报)
+- URL: https://www.ctnews.com.cn/dongtai/content/2026-06/18/content_188669.html
+- Verified 1: 2026-10-05, fetched, "抖音酒旅相关视频播放量超4025亿次", "用户搜索酒旅相关内容超677亿次" and "32%的用户通过直播间下单酒店消费" confirmed
+- Verified 2: 2026-10-05, re-fetched, unchanged
+- Used in: travel-hospitality
+- Notes: Also checked twice on 2026-10-05, not cited in 05D: Douyin hotel and travel group-buy orders up 42% in 2025, hotel and homestay orders up 63% (China Economic Net, 2025-12-25, http://finance.ce.cn/home/jrzq/dc/202512/t20251225_2666295.shtml).
+
+### Trip.com outbound hotel and air bookings versus 2019, Q3 2025
+- Value: outbound hotel and air bookings above 140% of the same period of 2019
+- As of: Q3 2025 results (article dated 2025-11-18)
+- Source: Trip.com Group (携程集团) results, via Cover News (封面新闻) on Sina Finance
+- URL: https://finance.sina.com.cn/roll/2025-11-18/doc-infxusin2963029.shtml
+- Verified 1: 2026-10-05, fetched, "出境酒店和机票预订已全面超越2019年同期140%水平" confirmed
+- Verified 2: 2026-10-05, re-fetched, unchanged
+- Used in: travel-hospitality
+- Notes: Latest published outbound-versus-2019 figure; the Q2 2026 release gives none. English: SEC 6-K of 2025-11-17. Q2 2026 (Yicai via Sina, 2026-09-16, https://finance.sina.cn/2026-09-16/detail-inirykph3377339.d.html, checked twice, not cited): accommodation revenue 6.6 billion yuan, up 6%; international platform revenue up over 50%; a one-time SAMR anti-monopoly penalty of about 5.2 billion yuan booked in the quarter.
+
+### Trip.com Q2 2026 call: outbound growth slowed, short-haul and visa-free share up
+- Value: qualitative. Higher oil prices and airfares held back overall outbound growth; short-haul and visa-free destinations took a larger share of outbound demand
+- As of: Q2 2026 earnings call (article dated 2026-09-16)
+- Source: Southern Metropolis Daily (南方都市报)
+- URL: https://m.mp.oeeee.com/a/BAAFRD0000202609161667171.html
+- Verified 1: 2026-10-05, fetched, "油价和机票价格上涨抑制了出境游的整体增速" and "短途及免签目的地在出境游需求中的份额占比有所提升" confirmed
+- Verified 2: 2026-10-05, re-fetched, unchanged
+- Used in: travel-hospitality
+
+### Dianping Must-Stay hotel list, 2026
+- Value: 1,418 hotels in 205 cities; 91 more cities than the year before; 12 themes
+- As of: released 2026-04-08 (article dated 2026-04-09)
+- Source: Xinhua (新华网), tech channel
+- URL: http://www.news.cn/tech/20260409/339749bc1a894f48850f1ed0cf71ffee/c.html
+- Verified 1: 2026-10-05, fetched, "共205城1418家酒店入选" and "将榜单拆分为12大主题" confirmed
+- Verified 2: 2026-10-05, re-fetched, unchanged
+- Used in: travel-hospitality
+- Notes: The copy reads like a Dianping release carried by Xinhua. Cite the list facts only, not any traffic effect.
+
+### Marriott and Meituan joint membership, May 2025
+- Value: Meituan Black Diamond or Dianping LV8 members become Marriott Bonvoy Gold members; Marriott Bonvoy has 600+ hotels in Greater China
+- As of: announced May 2025 (article dated 2025-05-28)
+- Source: Xinhua (新华网), tech channel
+- URL: http://www.news.cn/tech/20250528/1dc160bcd48d41bbbd7f468f79f1e01f/c.html
+- Verified 1: 2026-10-05, fetched, "万豪国际与美团宣布达成合作，将发布联合会员", "美团黑钻或大众点评LV8会员将直接成为万豪金卡会员" and "万豪旅享家大中华区已拥有超600家酒店" confirmed
+- Verified 2: 2026-10-05, re-fetched, unchanged
+- Used in: travel-hospitality
+- Notes: Marriott's own deal, not TheRedScroll work. Never present it as ours.
+
+### Dianping overseas: cities covered and annual visits
+- Value: overseas pages cover 3,000+ cities with 110 million+ visits a year; nearly 1.5 million Chinese travelers left 3 million+ reviews of overseas restaurants
+- As of: article dated 2026-08-31
+- Source: China Business Journal (中国经营报), via Tencent News (腾讯新闻)
+- URL: https://news.qq.com/rain/a/20260831A09BFG00
+- Verified 1: 2026-10-05, fetched, "大众点评境外站点已覆盖全球超过3000座城市，年访问人次突破1.1亿" confirmed
+- Verified 2: 2026-10-05, re-fetched, unchanged
+- Used in: travel-hospitality
+
+### Alibaba and Marriott joint venture, 2017: Fliggy flagship store
+- Value: on August 7, 2017 Alibaba and Marriott formed a joint venture to run the Fliggy Marriott flagship store, Marriott's Chinese website and its Chinese app
+- As of: 2017-08-07
+- Source: 21st Century Business Herald (21世纪经济报道)
+- URL: https://m.21jingji.com/article/20170807/herald/ed8d29edc61f6058e2b7eb78abeeec32.html
+- Verified 1: 2026-10-05, fetched, "8月7日，阿里巴巴宣布与万豪国际集团成立合资公司" and "合资公司将运营飞猪万豪旗舰店、万豪中文官网、万豪无线端中文App" confirmed
+- Verified 2: 2026-10-05, re-fetched, unchanged
+- Used in: travel-hospitality
+- Notes: Older than 12 months; a dated event, cited with its date (settled fallback 9). Say "in 2017"; no current source confirms the venture's present scope.
+
+### Online travel rules: no false promotion, no induced or substituted reviews
+- Value: online travel operators may not run false promotion (Art. 12) and may not mislead, induce, substitute for or force travelers' reviews (Art. 13); in force October 1, 2020
+- As of: Ministry of Culture and Tourism Order 4 (在线旅游经营服务管理暂行规定), published 2020-08-20
+- Source: Ministry of Culture and Tourism (文化和旅游部), via the State Council portal (中国政府网)
+- URL: https://www.gov.cn/zhengce/2020-08/20/content_5712506.htm
+- Verified 1: 2026-10-05, fetched, "不得进行虚假宣传", "不得误导、引诱、替代或者强制旅游者做出评价" and "自2020年10月1日起施行" confirmed
+- Verified 2: 2026-10-05, re-fetched, unchanged
+- Used in: travel-hospitality
+- Notes: A rule in force; older than 12 months, cited with its date (fallback 9).
+
+### MCT and CAC joint campaign against illegal online tour selling, April 2026
+- Value: qualitative. Joint campaign announced April 27, 2026, focused on online traffic, private-domain customer acquisition and offline group formation; removal of exaggerated or deceptive tour products
+- As of: 2026-04-28
+- Source: Xinhua (新华社), via CCTV (央视网)
+- URL: https://news.cctv.com/2026/04/28/ARTIiKuNsbQ5J0fkVe8Yy8k0260427.shtml
+- Verified 1: 2026-10-05, fetched, "联合开展非法网络招徕专项整治" and "重点围绕线上引流、私域获客、线下成团" confirmed
+- Verified 2: 2026-10-05, re-fetched, unchanged
+- Used in: travel-hospitality
+
+### Xiaohongshu AI-faked content notice, September 2026: lodging and tourism a priority
+- Value: qualitative. Notice on AI-made fake content (医美、民宿 and others); cultural tourism and lodging, medical aesthetics, education and property covered first; invented store visits, stays and treatments targeted; nearly 120,000 fake notes removed June to August 2026
+- As of: 2026-09-03
+- Source: Dazhong Net (大众网)
+- URL: https://www.dzwww.com/news/yw/202609/t20260903_18082859.htm
+- Verified 1: 2026-10-05, fetched, "关于AI制作医美、民宿等虚假内容治理公告", "文旅住宿、医疗医美、教育、房产等品类优先覆盖" and "杜撰探店、住宿、就医、美容等使用体验等内容" confirmed
+- Verified 2: 2026-10-05, re-fetched, unchanged
+- Used in: travel-hospitality
+- Notes: The 120,000 count was not string-checked on this page (spacing differs on the Sina copy); do not cite it without a fresh check.
+
+### National Day and Mid-Autumn holiday 2025: domestic trips
+- Value: eight-day holiday; 888 million domestic trips; spending 809.006 billion yuan
+- As of: 2025-10-09
+- Source: Ministry of Culture and Tourism (文化和旅游部)
+- URL: https://www.mct.gov.cn/whzx/whyw/202510/t20251009_962532.htm
+- Verified 1: 2026-10-05, fetched, "国庆中秋假日8天" and "全国国内出游8.88亿人次" confirmed
+- Verified 2: 2026-10-05, re-fetched, unchanged
+- Used in: travel-hospitality
+- Notes: Same holiday cross-border: 2.043 million a day, up 11.5%; mainland residents 9.165 million (NIA, 2025-10-09, https://www.nia.gov.cn/n741440/n741567/c1745818/content.html; checked twice on 2026-10-05, not cited). Recheck 2026-10-09: the 2026 National Day results (MCT and NIA) are due the day after the holiday ends on October 8; a later article cites the actual figures instead of the forecast below.
+
+### National Day 2026 border crossing forecast
+- Value: 2.15 million crossings a day expected over the 2026 National Day holiday; single-day peak above 2.4 million; Mid-Autumn forecast 2.25 million a day (the two holidays are separate in 2026)
+- As of: 2026-09-22
+- Source: National Immigration Administration (国家移民管理局)
+- URL: https://www.nia.gov.cn/n897453/c1810872/content.html
+- Verified 1: 2026-10-05, fetched, "国庆节假期日均将达215万人次" and "单日最高通关量预计将突破240万人次" confirmed
+- Verified 2: 2026-10-05, re-fetched, unchanged
+- Used in: travel-hospitality
+- Notes: A forecast; cite as such. Superseded by the actual figures when NIA publishes them (expected 2026-10-09). Mid-Autumn 2026 actual: 2.236 million a day (NIA, 2026-09-28).
+
+### Spring Festival 2026: domestic trips and border crossings
+- Value: nine-day holiday; 596 million domestic trips (MCT); 17.796 million crossings, 1.977 million a day, mainland residents 9.514 million (NIA)
+- As of: 2026-02-24
+- Source: National Immigration Administration (国家移民管理局); Ministry of Culture and Tourism (文化和旅游部)
+- URL: https://www.nia.gov.cn/n741440/n741567/c1766817/content.html (cited); https://www.mct.gov.cn/whzx/whyw/202602/t20260224_964790.htm
+- Verified 1: 2026-10-05, both fetched, "日均197.7万人次", "内地居民出入境951.4万人次", "春节假日9天" and "全国国内出游5.96亿人次" confirmed
+- Verified 2: 2026-10-05, the NIA page re-fetched, unchanged (the MCT page re-fetched too, unchanged; not cited in 05D)
+- Used in: travel-hospitality (NIA figures)
+
+### Xiaohongshu 2026 interest travel report: experience travel searches
+- Value: experience-type travel searches up 48% period on period; county-level travel search growth 2.8 times the travel category
+- As of: data to September 2026 (article dated 2026-09-24)
+- Source: China Daily (中国日报网)
+- URL: https://cn.chinadaily.com.cn/a/202609/24/WS6ab4fa33e4b09a165c78ca4b.html
+- Verified 1: 2026-10-05, fetched, "“体验型”旅游搜索环比增长48%" and "是旅游品类整体增速的2.8倍" confirmed
+- Verified 2: 2026-10-05, re-fetched, unchanged
+- Used in: travel-hospitality
+- Notes: "Period on period" (环比); the base period is not stated. Do not call it year on year.
+
+### NOT LOGGED, searched and rejected 2026-10-05 (Travel and hospitality)
+- "64% of Chinese travelers use RedNote for trip planning" (our /rednote-agency/ and /platforms/rednote/ pages, five locales): no source says it. Closest original: Bigdata-Research (比达咨询) 2020 H1, 63.7% of surveyed users used Xiaohongshu as a travel decision platform (China Daily, 2020-07-09). Six years old, a user survey, not travelers. Replaced on all ten pages on 2026-10-05 with the TravelDaily entry above.
+- "130 million people a month plan outbound trips on Xiaohongshu" (cn.dailyeconomic.com, 2026-05-22): PR-wire site, no mainstream outlet. Not cited.
+- Dragon Trail outbound survey (RedNote 53%): a travel marketing agency, snippet only. Not cited.
+- Dianping Must-Stay 2025 "listed hotels' traffic up about 15%" (Jiemian, 2025-04-10): ad markers on the page. Not cited.
+- Meituan hotel room nights or hotel revenue: not in Meituan's Q2 2026 release. Not cited.
+- Douyin local services 2025 GTV (Huxiu, 850 billion yuan): not an official release. Not cited.
+- Fliggy May Day 2026 outbound bookings up 50% as of April 20 (Securities Times, 2026-04-20): passed check 1, cut in the quality pass for length; not used.
+- Fliggy Golden Week 2026 day-one figures (TechWeb, 2026-10-01): preliminary, one day. Not cited.
+- Xiaohongshu travel KOL fee ranges: no dated Chinese primary source. Not cited.
+
+### Tencent Ads refund rules: ads offline, original route, 175 to 360 days, invoices returned
+- Value: refunds are of balances topped up by WeChat Pay, online banking or bank transfer; all ads must be offline before applying; money returns by the original route; recharges older than 175 to 360 days may not return that way, over 360 days by bank transfer only, over 10 months by bank transfer; if the refund exceeds the uninvoiced part of total top-ups, invoices must be returned first; failed online applications go by email to AMS_JS@tencent.com
+- As of: page undated; confirmed October 2026 (platform documentation)
+- Source: Tencent customer service (腾讯客服), 广告主如何申请退款
+- URL: https://kf.qq.com/faq/170214jyaU3y170214eEFJRb.html
+- Verified 1: 2026-10-06, fetched with curl, "原路退回", "175天至360天" and "请确认你的广告已全部下线" confirmed
+- Verified 2: 2026-10-06, re-fetched, unchanged
+- Used in: china-marketing-hidden-costs
+
+### Ocean Engine marketing platform agreement: prepaid, refund conditions, non-cash and credit not refundable
+- Value: the service is prepaid (预付特定金额); a cash refund requires no live ad units or orders, a completed refund application, and no open disputes or compensation claims; non-cash balance (grants, red packets, coupons) and credit lines are not refundable (5.4); the agreement also says the minimum top-up is set and published by the platform (no figure printed)
+- As of: updated December 2025, in force 2026-01-01
+- Source: Ocean Engine (巨量引擎), 巨量营销平台服务协议
+- URL: https://sf1-cdn-tos.douyinstatic.com/obj/ies-hotsoon-draft/account_center/ee525166-d060-401d-9d2f-83359617acf0.html
+- Verified 1: 2026-10-06, fetched with curl, "预付特定金额", "账户内无在投投放单元", "授信额度不可退款" and "生效时间：2026年" confirmed
+- Verified 2: 2026-10-06, re-fetched, unchanged
+- Used in: china-marketing-hidden-costs
+- Notes: The minimum top-up clause was not used: no figure, and the cost pillar cites the 2021 FAQ on agent-set first recharges.
+
+### Ocean Engine balance refund: closes the account, freezes cash, clears grants
+- Value: applying for a balance refund closes the advertiser account and freezes the cash balance; grant balance cannot be spent and is cleared once approved; stages run about 1 to 2 working days each (material review, refundable-amount review, payment)
+- As of: page undated; confirmed October 2026 (platform documentation)
+- Source: Ocean Engine (巨量引擎), 如何退款 help page
+- URL: https://www.oceanengine.com/help/622
+- Verified 1: 2026-10-06, fetched with curl, "将关闭对应广告主账户", "冻结现金余额" and "现金及赠款余额进行清空" confirmed
+- Verified 2: 2026-10-06, re-fetched, unchanged
+- Used in: china-marketing-hidden-costs (in prose)
+
+### WeChat Official Account admin and operator identity rules
+- Value: an admin's ID number and phone number can each bind at most 5 accounts; the admin is verified by scanning with a WeChat linked to the admin's own bank card (no charge); operator WeChat IDs must have a bound phone and bank card; at most 25 long-term and short-term operators per account; from 2026-05-13 new personal-entity accounts cannot bind operators
+- As of: pages undated; the operator page carries a 2026-05-13 rule; confirmed October 2026
+- Source: Tencent customer service (腾讯客服), 管理员信息如何填写 and 如何绑定长期/短期运营者微信号
+- URL: https://kf.qq.com/faq/120911VrYVrA1510137JRRZr.html ; https://kf.qq.com/faq/120911VrYVrA141211FbEnq2.html
+- Verified 1: 2026-10-06, both fetched with curl, "一个身份证号码只能绑定5个公众账号", "一个手机号码只能绑定5个公众账号", "绑定了管理员本人银行卡的微信", "已经绑定手机号、绑定了银行卡的微信号" and "2026年5月13日起" confirmed
+- Verified 2: 2026-10-06, both re-fetched, unchanged
+- Used in: china-marketing-hidden-costs
+- Notes: Mainland admin form (身份证). The overseas route asks for the contact person's ID and phone bill (see the overseas materials entry).
+
+### Xiaohongshu e-commerce commission by category, and the 2025 fee-waiver plan
+- Value: base technical service fee (commission) mostly 2% to 5% by category: women's wear, personal care and pets 5%, beauty 4%, fresh produce 2%, hotel and travel 5.2%, local services 5.7%; plan for 2025-09-01 to 2026-08-31 waived it on a merchant's first 1 million yuan of paid sales, keeping a 0.6% payment channel cost; stores under one entity share the 1 million
+- As of: August 2025 (article dated 2025-08-26)
+- Source: Beijing Business Today (北京商报)
+- URL: https://www.bbtnews.com.cn/2025/0826/567573.shtml
+- Verified 1: 2026-10-06, fetched with curl, "多集中在2%—5%", "美妆为4%" and "仅保留0.6%的支付渠道成本" confirmed
+- Verified 2: 2026-10-06, re-fetched, unchanged
+- Used in: china-marketing-hidden-costs
+- Notes: The waiver ended early (next entry). Category rates are as reported in 2025; recheck before reuse.
+
+### Xiaohongshu ended the fee-waiver plan on May 15, 2026
+- Value: Xiaohongshu announced the 百万免佣 plan would end on 2026-05-15, three months before its scheduled end; replaced by a growth-task program (百万跃迁计划) for "good goods" merchants
+- As of: May 2026 (article dated 2026-05-13)
+- Source: Dianshangpai (电商派), e-commerce trade publication, reporter 吴昕
+- URL: https://www.pai.com.cn/p/01krfdjkafdas1jcgj6y1senh1
+- Verified 1: 2026-10-06, fetched with curl, "将于5月15日正式终止" and "2026-05-13" confirmed
+- Verified 2: 2026-10-06, re-fetched, unchanged
+- Used in: china-marketing-hidden-costs
+- Notes: Trade-press report of a platform notice shown as an image credited to 小红书电商学习中心. Replace with the platform notice if a fetchable copy turns up.
+
+### Douyin e-commerce 2026 merchant plan: 0.6% technical fee via Qianchuan Chengfang, 3-day settlement
+- Value: orders through the 千川·乘方 product get the technical service fee cut to 0.6%; fee-free scope extended to all categories and from shelf to content scenes; settlement as short as 3 days after confirmed receipt
+- As of: January 2026 (article dated 2026-01-08)
+- Source: Sina Finance (新浪财经)
+- URL: https://finance.sina.com.cn/roll/2026-01-08/doc-inhfqtyp3810727.shtml
+- Verified 1: 2026-10-06, fetched with curl, "技术服务费将减免至0.6%", "千川·乘方" and "账期最短可降至订单确认收货后3天" confirmed
+- Verified 2: 2026-10-06, re-fetched, unchanged
+- Used in: china-marketing-hidden-costs
+- Notes: Douyin base commission rates by category were found only on Sohu self-media; not logged.
+
+### NOT LOGGED, searched and rejected 2026-10-06 (China marketing hidden costs)
+- Xiaohongshu Juguang balance refund rule: agent pages and one consumer complaint (Sina Heimao) only; no platform page found. Not cited.
+- Personal parcel limit of 2,000 yuan per parcel and the 50-yuan duty waiver (Ministry of Finance tariff department, 2024-11-29, https://gss.mof.gov.cn/gzdt/zhengcejiedu/202411/t20241129_3948545.htm; Customs Announcement 2024 No. 176 via MOFCOM): passed check 1 on 2026-10-06, but it governs personal-use items, not company samples sent to creators. Not cited.
+- Douyin category commission rates (apparel 6%, beauty 7% and so on): Sohu self-media. Not cited.
+- Translation or transcreation rates, legal review fees, trademark agency fees, mainland hosting prices, SIM card costs, and rush-fee market rates: no dated non-vendor source. The article says no published figure exists.
+
 ## TheRedScroll first-party data
 
 Everything here comes from accounts we run. It is cited as ours, with sample
@@ -1650,6 +2021,8 @@ data.
 - Re-verified 2026-09-29 for 04D on the live /pricing/ page: scope lines, "6-month minimum contract on all packages", "within 2 weeks of contract signing", "Real-life photo & video shoots in China", "KOL & KOC campaigns" and "Paid directly to the platform, not through us" confirmed at check 1 and check 2. No price or tier name used. Used in: food-beverage.
 - Re-verified 2026-10-01 for 05A: on the live /pricing/ page "up to 1,500 Chinese characters + 3 images", "Real-life photo & video shoots in China", "Paid directly to the platform, not through us" and "membership Mini Programs. Custom quote" confirmed. No price or tier name used at check 1 and check 2. Used in: wechat-marketing-cost.
 - Notes: Cite as "TheRedScroll pricing page, September 2026, https://www.theredscroll.com/pricing/". If the pricing page changes, 04A must change with it.
+- Re-verified 2026-10-05 for 05D on the live /pricing/ page: "6-month minimum contract on all packages", "within 2 weeks of contract signing", "Real-life photo & video shoots in China", "KOL & KOC campaigns", "Paid directly to the platform, not through us" and the add-on platform line "Meituan / Dianping" confirmed at check 1 and check 2. No price or tier name used. Used in: travel-hospitality.
+- Re-verified 2026-10-06 for 06A: on the live /pricing/ page "Custom quote", "2-3 weeks from brief approval", "Minimum 4 posts/month per platform", "Paid directly to the platform, not through us" and "6-month minimum contract" confirmed; no price or tier name used at check 1 and check 2. Used in: china-marketing-hidden-costs.
 
 ### TheRedScroll community, reporting and account-ownership commitments, as published
 - Value: "We reply to comments, answer direct messages, monitor brand mentions daily" and "a response playbook agreed with you upfront, and same-day escalation when something could spread"; crisis response plan "within hours" (/weibo-agency/). Day-to-day running includes "community replies" and "monthly reporting in plain English"; report covers "follower growth, article reads, engagement, ad spend at cost, and leads or sales where tracking allows"; WeChat account "registered under your company name", client keeps "the account, the followers, and the full content archive" (/wechat-agency/). Monthly reports cover "follower growth, engagement rates, content performance, ad spend efficiency, and competitive benchmarking"; KPIs "reviewed monthly, recalibrated quarterly" (/services/strategy-campaigns/). Reporting "in English with Chinese-language data attached" (/platforms/others/). "We write in Chinese. Not translate." and real-life production "quoted separately" (/services/content-production/)
@@ -1685,6 +2058,17 @@ data.
 - Used in: fashion-apparel, camper-china-teardown
 - Notes: Cite as "TheRedScroll, Camper case study, September 2026, https://www.theredscroll.com/work/camper/". Industry label on the page: Fashion / Footwear. Platforms on the page: WeChat, RedNote, Weibo (no Douyin).
 
+### Marriott case study, as published
+- Value: no figure. Published lines: "over 9,000 properties across 30 brands"; "The vehicle was Alibaba's Super Brand Day. Marriott had never run one"; an "exclusive Marriott black card with global privileges"; "WeChat, Weibo, and travel KOLs built anticipation weeks before launch"; "Influencer content kept energy up through the campaign window"; "By the time Super Brand Day arrived, the audience was primed"; people could "buy the card and sign up for Bonvoy in the same transaction"; "Marriott's first Super Brand Day generated millions in sales on Tmall"; "Hundreds of thousands of new Bonvoy members signed up". Platforms on the page: WeChat, Weibo, Tmall. Industry label: Hospitality / Travel
+- Sample: one client campaign (Marriott's first Super Brand Day)
+- Period: not published on the page
+- Exclusions: no exact sales or member figure and no engagement rate are published; none is used or estimated
+- Cleared for publication: yes, on /work/marriott/ with the client named (settled 2026-10-02)
+- Verified 1: 2026-10-05, live page fetched with curl, every line matched; src/pages/work/marriott.astro read
+- Verified 2: 2026-10-05, re-fetched before the draft was finished, unchanged
+- Used in: travel-hospitality
+- Notes: Cite as "our Marriott case study", https://www.theredscroll.com/work/marriott/. The page has no date; quote it as published.
+
 <!-- Needed:
 
 - WeChat open rate by follower band and sector (brief 06C)
@@ -1715,7 +2099,7 @@ estimated. No marker, no separate sign-off chase.
 | Camper | /work/camper/ (43K to 187K followers, 31% sales lift, 18 months) | 02D, 03D | Published figures only, quoted from the page. The monthly series and the two campaign post-mortems are not public and are not used. |
 | Viessmann | /work/ page if published | 06D, 07D | Only what the page publishes |
 | iGuzzini | /work/ page if published | 06D, 07D | Only what the page publishes |
-| Marriott | /work/ page if published | 05D | Only what the page publishes |
+| Marriott | /work/marriott/ (no figure; "millions in sales on Tmall", "Hundreds of thousands of new Bonvoy members") | 05D | No figure. Published lines quoted from the page (see the first-party entry). The 2017 Fliggy joint venture and the 2025 Meituan membership are Marriott's own deals, cited to 21st Century Business Herald and Xinhua, never as our work. |
 | Jaguar Land Rover | /work/ page if published | 09D | Only what the page publishes |
 | JAC Motors | /work/ page if published | 09D | Only what the page publishes |
 | Langnese | /work/langnese/ | 04D | No figure (the page publishes none). Qualitative lines quoted from the page; "domestic brands cost half as much" is quoted as the page's research finding. |

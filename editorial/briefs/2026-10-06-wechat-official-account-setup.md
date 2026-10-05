@@ -46,7 +46,7 @@ summary or conclusion section. End on the CTA.
 
 1. Subscription, Service and overseas accounts compared
 2. The document checklist, by entity type
-3. Step by step: the registration flow with screenshots
+3. Step by step: the registration flow (no screenshots, settled fallback 7)
 4. Verification: fee, timeline, what gets rejected
 5. What an overseas account cannot do
 6. Migrating from overseas to mainland later
@@ -63,7 +63,10 @@ find a new figure, append it to that ledger before you finish.
 
 - Account type capabilities, cite Tencent documentation
 - Verification fee, cite Tencent
-- Rejection reasons from our own submission history
+- Rejection reasons, from Tencent's published grounds (amended 2026-10-06:
+  no submission history is logged in the ledger's first-party section, so
+  settled fallback 3 applies; the section stands on Tencent's entity-match
+  and naming rules and the documents list)
 
 **If a figure cannot be sourced, cut the claim.** Do not estimate, do not
 hedge, do not write "industry sources suggest". A missing number is better
@@ -75,7 +78,9 @@ Describe each of these in the handoff block at the end of the file. Do not
 embed images in body copy.
 
 - Account type comparison table, three columns
-- Numbered registration screenshots, six to eight
+- Numbered registration steps, eight, carried as a numbered list and the
+  document table (amended 2026-10-06, settled fallback 7: the pipeline
+  cannot capture a live registration flow)
 - Feature image: a smartphone showing a clean account profile page, held, neutral background. China rule: set the scene in China and show Chinese social platforms on screen (WeChat, Xiaohongshu, Douyin or Weibo interface on a phone, laptop or studio monitor); set in a typical Chinese city, varied from article to article and not only Shanghai, only Chinese people in frame, candid normal-life photo in crisp sharp focus with legible screens (never blur, smudges or noise), no AI polish; this rule wins over the subject hint
 
 ## Tables required
@@ -99,7 +104,7 @@ Final section only. CTA label: **Book a call**
 | Field | Ceiling | Draft value |
 |---|---|---|
 | Title | 52 chars | WeChat Official Account Setup for Foreigners (44 chars) |
-| Meta description | 152 chars | How to register a WeChat Official Account as a foreign company in 2026: account types, documents, verification fees, rejection reasons and overseas (147 chars) |
+| Meta description | 152 chars | How a foreign company registers a WeChat Official Account in 2026: account types, documents, verification fees, review times and overseas limits. (145 chars; amended 2026-10-06, the original ended mid-phrase and promised first-party rejection reasons) |
 | Excerpt | 25 words | generate in the SEO iteration |
 
 The draft values above are approved. Use them unless the finished article

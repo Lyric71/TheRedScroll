@@ -37,7 +37,7 @@ They override any conflicting rule inside the skill.
 
 ## The angle
 
-The most shareable piece in the cost cluster. Every buyer who has been burned once will read it, and it makes fixed price feel like the safe choice without us having to argue for it. Twelve cost lines, each with a real number.
+The most shareable piece in the cost cluster. Every buyer who has been burned once will read it, and it makes fixed price feel like the safe choice without us having to argue for it. Twelve cost lines, each with a real number where one is published. Four lines (transcreation, legal review, rush fees, out-of-scope work) have no published market rate; the article says so plainly (SPEC settled fallback 1). (Amended 2026-10-06 by the 06A draft run: research found no dated non-vendor rate for those four.)
 
 ## Section outline
 
@@ -55,7 +55,7 @@ summary or conclusion section. End on the CTA.
 9. Local phone numbers and identity verification
 10. Platform commission on social commerce
 11. Rush fees and out-of-scope requests
-12. The twelve costs in one table, with ranges
+12. Quoted versus actual: a sample first year (Amended 2026-10-06: the twelve-cost table moved to the introduction, as SPEC requires for cost pages; this last section carries the brief's "Sample budget: quoted versus actual" asset, built only from sourced figures)
 
 ## Statistics to source
 
@@ -64,7 +64,7 @@ Every figure below needs a dated, linked source in blockquote format. Check
 still current, reuse the logged citation instead of researching again. If you
 find a new figure, append it to that ledger before you finish.
 
-- Each cost line needs its own dated source: platform documentation, a regulator, or our own invoices labeled as ours
+- Each cost line needs its own dated source: platform documentation, a regulator, or a dated trade publication. No invoice figures are logged in the ledger's first-party section, so none are used (SPEC settled fallback 3; amended 2026-10-06)
 - Trademark registration timeline and fee, cite CNIPA or a professional source
 
 **If a figure cannot be sourced, cut the claim.** Do not estimate, do not

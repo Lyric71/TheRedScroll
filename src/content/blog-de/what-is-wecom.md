@@ -4,6 +4,7 @@ description: "WeCom ist Tencents professionelle Kommunikationsplattform, eingebe
 metaTitle: "WeCom: Der Leitfaden für Marken in China"
 metaDescription: "WeCom ist Tencents Geschäftswerkzeug, integriert in WeChat. Funktionsweise, Private Traffic und warum es im China-Marketing Priorität verdient."
 publishDate: 2026-04-06
+updatedDate: 2026-10-06
 author: "TheRedScroll"
 platforms: ["wechat"]
 category: "Plattformen"
@@ -91,9 +92,19 @@ Der Markt für Private Traffic in China wächst weiter, getrieben vom Anstieg de
 
 ## Loslegen
 
-Der Weg setzt eine verifizierte chinesische Geschäftseinheit voraus, alternativ einen zugelassenen lokalen Vertreter. Internationale Marken stützen sich in der Regel auf ein lokales Team oder eine Agentur, um Anmeldung, CRM-Integrationen und Mitarbeiterschulung zu steuern.
+Eine chinesische Gesellschaft braucht es für den Start nicht. Ein WeCom, das außerhalb des chinesischen Festlands eingerichtet wird, lässt sich als ausländisches Unternehmen verifizieren, mit einigen Funktionen weniger.
 
-Die Plattform selbst ist kostenlos. Die eigentliche Investition besteht darin, die Prozesse aufzubauen, die Kontakte in Umsatz umwandeln, und die Mitarbeiter zu schulen, die sie täglich tragen.
+> Ein WeCom für ein ausländisches Unternehmen wird mit vollständigem Firmennamen, Kurznamen und Handelsregisterbescheinigung oder Gewerbeerlaubnis verifiziert; die Prüfung dauert in der Regel 1 bis 3 Arbeitstage. Einige Funktionen fehlen, darunter externes Inkasso, Gesprächsarchivierung und der Marktplatz für Apps von Drittanbietern.
+> Quelle: WeCom-Hilfecenter (企业微信), Verifizierung ausländischer Unternehmen, Juni 2026. https://open.work.weixin.qq.com/help2/pc/16535
+
+Eine Gesellschaft auf dem Festland erhält den vollen Funktionsumfang, zahlt aber für die Verifizierung.
+
+> Für eine Gesellschaft auf dem Festland kostet die WeCom-Verifizierung eine Prüfgebühr von 300 Yuan je Antrag, ohne Erstattung; die jährliche Prüfung kostet so viel wie die erste.
+> Quelle: WeCom-Hilfecenter (企业微信), bestätigt im Oktober 2026. https://open.work.weixin.qq.com/help2/pc/18372
+
+Internationale Marken stützen sich in der Regel auf ein lokales Team oder eine Agentur, um Anmeldung, CRM-Integrationen und Mitarbeiterschulung zu steuern. Beide Wege beschreibt [unser Leitfaden zur Einrichtung eines WeChat Official Account](/de/analysen/wechat-official-account-setup/).
+
+Die Gebühren sind gering. Die eigentliche Investition besteht darin, die Prozesse aufzubauen, die Kontakte in Umsatz umwandeln, und die Mitarbeiter zu schulen, die sie täglich tragen.
 
 ## Der Kernpunkt
 

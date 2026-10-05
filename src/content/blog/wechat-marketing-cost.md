@@ -87,7 +87,8 @@ entity gets one account, and only one type.
 
 For most readers of this page, then, the account costs 99 US dollars a year.
 Put the renewal date in a shared calendar. Lapsed verification is an avoidable
-mess.
+mess. For the documents, the review steps and what an overseas account can't
+do, see [our WeChat Official Account setup guide](/insights/wechat-official-account-setup/).
 
 ## Content production: what drives the cost of an article
 

@@ -67,7 +67,7 @@ Pesa más, sin embargo, otra diferencia: la entidad extranjera solo obtiene una 
 > En China continental, la revisión de una verificación tarda de 1 a 3 días laborables.
 > Fuente: servicio de atención al cliente de Tencent (腾讯客服), plazos de revisión del registro, comprobada en septiembre de 2026. https://kf.qq.com/faq/120911VrYVrA1312123qyyqI.html
 
-Para la mayoría de nuestros lectores, la cuenta cuesta, por tanto, 99 dólares estadounidenses al año. Conviene anotar la fecha de renovación en un calendario compartido: una verificación caducada es un quebradero de cabeza perfectamente evitable.
+Para la mayoría de nuestros lectores, la cuenta cuesta, por tanto, 99 dólares estadounidenses al año. Conviene anotar la fecha de renovación en un calendario compartido: una verificación caducada es un quebradero de cabeza perfectamente evitable. Qué documentos se exigen, cómo transcurre la revisión y qué no permite una cuenta extranjera: todo está en [nuestra guía para abrir una cuenta oficial de WeChat](/es/analisis/wechat-official-account-setup/).
 
 ## Producción de contenido: de qué depende el precio de un artículo
 

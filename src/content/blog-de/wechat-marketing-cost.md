@@ -67,7 +67,7 @@ Schwerer als die Gebühr wiegt ein zweiter Unterschied: Eine ausländische Gesel
 > Auf dem Festland dauert die Prüfung einer Verifizierung 1 bis 3 Arbeitstage.
 > Quelle: Tencent-Kundenservice (腾讯客服), Prüfzeiten für Registrierungen, bestätigt im September 2026. https://kf.qq.com/faq/120911VrYVrA1312123qyyqI.html
 
-Für die meisten Leser dieses Beitrags kostet das Konto also 99 US-Dollar im Jahr. Das Verlängerungsdatum gehört in einen gemeinsamen Kalender, denn eine abgelaufene Verifizierung ist ein Ärgernis, das sich leicht vermeiden lässt.
+Für die meisten Leser dieses Beitrags kostet das Konto also 99 US-Dollar im Jahr. Das Verlängerungsdatum gehört in einen gemeinsamen Kalender, denn eine abgelaufene Verifizierung ist ein Ärgernis, das sich leicht vermeiden lässt. Welche Unterlagen nötig sind, wie die Prüfung abläuft und was ein Auslandskonto nicht kann, zeigt [unser Leitfaden zur Einrichtung eines WeChat Official Account](/de/analysen/wechat-official-account-setup/).
 
 ## Content-Produktion: Wovon der Preis eines Artikels abhängt
 

@@ -4,6 +4,7 @@ description: "WeCom is Tencent's enterprise communication platform inside the We
 metaTitle: "What is WeCom? A guide for brands in China"
 metaDescription: "WeCom is Tencent's business tool inside WeChat. Learn what it does, how private domain traffic works, and why brands in China need it."
 publishDate: 2026-04-06
+updatedDate: 2026-10-06
 author: "TheRedScroll"
 platforms: ["wechat"]
 category: "Platforms"
@@ -93,9 +94,19 @@ The private domain traffic market in China continues to expand rapidly as public
 
 ## What it takes to get started
 
-Setting up WeCom requires a verified Chinese business entity or an authorized local representative. International brands typically work with a local team or agency to handle registration, configure CRM integrations, and train staff on workflows.
+You don't need a Chinese company to start. A WeCom set up from outside mainland China can be verified as an overseas company, with fewer functions.
 
-The platform itself is free. The real investment is building the workflows that turn contacts into revenue, and training your team to actually run them.
+> An overseas-company WeCom verifies with its full name, short name and a company registration certificate or business license, and review usually takes 1 to 3 working days. Some functions are not supported, including external payment collection, conversation archiving and the third-party app marketplace.
+> Source: WeCom help center (企业微信), overseas company verification, June 2026. https://open.work.weixin.qq.com/help2/pc/16535
+
+A mainland company gets the full feature set and pays to verify.
+
+> For a mainland company, WeCom verification costs a 300 yuan review fee per application, not refunded, and the annual review costs the same as the first.
+> Source: WeCom help center (企业微信), confirmed October 2026. https://open.work.weixin.qq.com/help2/pc/18372
+
+International brands typically work with a local team or agency to handle registration, configure CRM integrations, and train staff on workflows. Our [WeChat Official Account setup guide](/insights/wechat-official-account-setup/) covers both routes.
+
+The fees are small. The real investment is building the workflows that turn contacts into revenue, and training your team to actually run them.
 
 ## The bottom line
 
