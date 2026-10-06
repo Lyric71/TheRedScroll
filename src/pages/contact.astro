@@ -16,6 +16,14 @@ const budgets = [
   '15,000 to 30,000 USD',
   'Over 30,000 USD',
 ];
+
+const sources = [
+  { value: 'google', label: 'Google or another search engine' },
+  { value: 'ai', label: 'An AI assistant (ChatGPT, Gemini, Claude, Perplexity…)' },
+  { value: 'exhibition', label: 'An exhibition or a trade show' },
+  { value: 'referral', label: 'A referral, someone recommended us' },
+  { value: 'other', label: 'Somewhere else' },
+];
 ---
 
 <BaseLayout
@@ -41,10 +49,10 @@ const budgets = [
           </p>
         </div>
 
-        <div class="grid grid-cols-[1fr_1fr] max-[1024px]:grid-cols-1 gap-[64px] max-[640px]:gap-[48px] items-start">
+        <div class="flex flex-col gap-[48px] max-[640px]:gap-[32px]">
 
-          <!-- Left: Contact form card -->
-          <div class="bg-[#FFFFFF] rounded-[10px] p-[32px] max-[640px]:p-[20px] max-[1024px]:order-1">
+          <!-- Contact form card -->
+          <div class="bg-[#FFFFFF] rounded-[10px] p-[32px] max-[640px]:p-[20px]">
             <h2 class="text-[18px] text-[#1A1A1A] font-medium leading-[1.3] mb-[24px]">Tell us about your project</h2>
 
             <form id="contact-form" class="flex flex-col gap-[16px]">
@@ -81,7 +89,7 @@ const budgets = [
               <!-- Services -->
               <fieldset class="border-0 p-0 m-0">
                 <legend class="block text-[13px] font-normal text-[#5C5C5C] mb-[8px]">Services you're interested in</legend>
-                <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-x-[12px] gap-y-[8px]">
+                <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-x-[12px] gap-y-[8px]">
                   {services.map((service) => (
                     <label class="flex items-center gap-[8px] text-[13px] font-normal text-[#1A1A1A] leading-[1.4] cursor-pointer">
                       <input type="checkbox" name="services" value={service} class="w-[16px] h-[16px] accent-[#CC3333] cursor-pointer flex-shrink-0" />
@@ -94,7 +102,7 @@ const budgets = [
               <!-- Platforms -->
               <fieldset class="border-0 p-0 m-0">
                 <legend class="block text-[13px] font-normal text-[#5C5C5C] mb-[8px]">Platforms you're interested in</legend>
-                <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-x-[12px] gap-y-[8px]">
+                <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-x-[12px] gap-y-[8px]">
                   {platforms.map((platform) => (
                     <label class="flex items-center gap-[8px] text-[13px] font-normal text-[#1A1A1A] leading-[1.4] cursor-pointer">
                       <input type="checkbox" name="platforms" value={platform} class="w-[16px] h-[16px] accent-[#CC3333] cursor-pointer flex-shrink-0" />
@@ -107,7 +115,7 @@ const budgets = [
               <!-- Budget -->
               <fieldset class="border-0 p-0 m-0">
                 <legend class="block text-[13px] font-normal text-[#5C5C5C] mb-[8px]">Estimated budget</legend>
-                <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-x-[12px] gap-y-[8px]">
+                <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-x-[12px] gap-y-[8px]">
                   {budgets.map((budget) => (
                     <label class="flex items-center gap-[8px] text-[13px] font-normal text-[#1A1A1A] leading-[1.4] cursor-pointer">
                       <input type="radio" name="budget" value={budget} class="w-[16px] h-[16px] accent-[#CC3333] cursor-pointer flex-shrink-0" />
@@ -122,6 +130,23 @@ const budgets = [
                 <label class="block text-[13px] font-normal text-[#5C5C5C] mb-[4px]">Tell us about your project <span class="text-[#CC3333]">*</span></label>
                 <textarea name="message" required rows="5" class="block w-full px-[12px] py-[12px] text-[14px] font-normal text-[#1A1A1A] bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[6px] outline-none transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)] focus:border-[#1A1A1A] placeholder:text-[#5C5C5C] placeholder:opacity-60 resize-vertical leading-[1.5] min-h-[120px]" placeholder="What are your goals in China? Timing, audience, anything we should know."></textarea>
               </div>
+
+              <!-- Source -->
+              <fieldset class="border-0 p-0 m-0">
+                <legend class="block text-[13px] font-normal text-[#5C5C5C] mb-[8px]">How did you hear about us? <span class="text-[#CC3333]">*</span></legend>
+                <div class="grid grid-cols-2 max-[640px]:grid-cols-1 gap-x-[12px] gap-y-[8px]">
+                  {sources.map((source) => (
+                    <label class="flex items-center gap-[8px] text-[13px] font-normal text-[#1A1A1A] leading-[1.4] cursor-pointer">
+                      <input type="radio" name="source" value={source.value} required class="w-[16px] h-[16px] accent-[#CC3333] cursor-pointer flex-shrink-0" />
+                      <span>{source.label}</span>
+                    </label>
+                  ))}
+                </div>
+                <div id="source-detail-wrap" class="hidden mt-[12px]">
+                  <label for="source-detail" class="block text-[13px] font-normal text-[#5C5C5C] mb-[4px]">Which one? (optional)</label>
+                  <input type="text" name="sourceDetail" id="source-detail" maxlength="120" disabled class="block w-full h-[44px] px-[12px] text-[14px] font-normal text-[#1A1A1A] bg-[#FFFFFF] border-[0.5px] border-[rgba(0,0,0,0.08)] rounded-[6px] outline-none transition-[border-color] duration-150 hover:border-[rgba(0,0,0,0.15)] focus:border-[#1A1A1A] placeholder:text-[#5C5C5C] placeholder:opacity-60" placeholder="The name, so we can thank them" />
+                </div>
+              </fieldset>
 
               <!-- Honeypot — hidden from humans, bots fill it -->
               <div class="absolute opacity-0 h-0 w-0 overflow-hidden" aria-hidden="true" tabindex="-1">
@@ -148,10 +173,10 @@ const budgets = [
             </form>
           </div>
 
-          <!-- Right: Contact info -->
-          <div class="max-[1024px]:order-2">
+          <!-- Contact info -->
+          <div class="grid grid-cols-4 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[32px]">
             <!-- Email -->
-            <div class="mb-[32px]">
+            <div>
               <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333] mb-[8px]">Email</p>
               <a href="mailto:hello@beyondbordergroup.com" class="text-[16px] text-[#FFFFFF] font-medium transition-colors duration-150 hover:text-[rgba(255,255,255,0.6)] break-all">
                 hello@beyondbordergroup.com
@@ -159,7 +184,7 @@ const budgets = [
             </div>
 
             <!-- Response time -->
-            <div class="mb-[32px]">
+            <div>
               <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333] mb-[8px]">Response time</p>
               <p class="text-[14px] text-[#FFFFFF] font-normal leading-[1.6]">
                 Within 24 hours, Monday to Friday
@@ -167,7 +192,7 @@ const budgets = [
             </div>
 
             <!-- Shanghai office -->
-            <div class="mb-[32px]">
+            <div>
               <p class="text-[11px] font-medium uppercase tracking-[0.05em] text-[#CC3333] mb-[8px]">Shanghai, China</p>
               <p class="text-[14px] text-[#FFFFFF] font-normal leading-[1.6]">
                 Trinity Plaza, 19th floor, Changshou Road 868, Putuo district, Shanghai, China
@@ -209,6 +234,21 @@ const budgets = [
 
   generateCaptcha();
 
+  const sourceDetailWrap = document.getElementById('source-detail-wrap');
+  const sourceDetailInput = document.getElementById('source-detail') as HTMLInputElement;
+  const sourcesWithDetail = ['referral', 'exhibition', 'other'];
+
+  // Reveal the optional detail only for the answers that name someone or somewhere
+  function syncSourceDetail() {
+    const picked = form?.querySelector<HTMLInputElement>('input[name="source"]:checked')?.value ?? '';
+    const show = sourcesWithDetail.includes(picked);
+    sourceDetailWrap?.classList.toggle('hidden', !show);
+    if (sourceDetailInput) sourceDetailInput.disabled = !show;
+  }
+
+  syncSourceDetail();
+  form?.addEventListener('change', syncSourceDetail);
+
   form?.addEventListener('submit', async (e) => {
     e.preventDefault();
     if (!status || !submitBtn) return;
@@ -235,6 +275,8 @@ const budgets = [
       email: data.get('email'),
       company: data.get('company'),
       message: composedMessage,
+      source: data.get('source'),
+      sourceDetail: data.get('sourceDetail'),
       honeypot: data.get('website_url'),
       captcha: data.get('captcha'),
       captchaAnswer: data.get('captcha_answer'),
