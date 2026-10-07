@@ -4,6 +4,7 @@ description: "Wie viel WeChat-Marketing kostet, entscheiden Marken weitgehend se
 metaTitle: "WeChat-Marketing: was es kostet, Posten für Posten"
 metaDescription: "Verifizierung des Official Account, Inhalte, Werbung in Moments und Channels, Mini Program, WeCom-Lizenzen, Agentur: was WeChat-Marketing kostet."
 publishDate: 2026-10-05
+updatedDate: 2026-10-06
 author: "TheRedScroll"
 platforms: ["wechat"]
 category: "Strategie"
@@ -21,7 +22,7 @@ Die folgende Tabelle schlüsselt jeden Posten auf: was Tencent verlangt und wer 
 | Official Account | 99 US-Dollar je Verifizierung (ausländische Gesellschaft) | Niemand | Jährlich |
 | Inhalte | Nichts | Eigenes Team oder Agentur | Monatlich |
 | Moments-Werbung | Ab 1.000 Yuan am Tag oder 50.000 Yuan je Buchung | Sie, über das Budget | Je Kampagne |
-| Mini Program | 99 US-Dollar je Verifizierung (ausländische Gesellschaft) | Ihr Entwickler | Entwicklung, danach jährlich |
+| Mini Program | 99 US-Dollar je Verifizierung (ausländische Gesellschaft) | Ihr Entwickler | Entwicklung, einmalige Verifizierung |
 | Umsätze über WeChat Pay | 0,6 bis 1 Prozent je Transaktion | Niemand | Bei jedem Verkauf |
 | WeCom | 300 Yuan für die Verifizierung (Festland); 2.000 Kontakte kostenlos | Ihr Softwareanbieter | Jährlich |
 | Agenturhonorar | Nichts | Die Agentur | Monatlich |
@@ -35,7 +36,7 @@ Zunächst zur Reichweite, um die es überhaupt geht.
 
 Erreichbar ist dieses Publikum über vier Produkte, die jeweils eigens abgerechnet werden. Veröffentlicht wird über einen Official Account (公众号), Werbung kauft man über Tencent Ads (腾讯广告). Wer verkaufen will, braucht ein Mini Program (小程序), also einen Shop oder eine App innerhalb von WeChat. Und in WeCom (企业微信) betreuen Mitarbeiter ihre Kunden im direkten Austausch.
 
-Alle vier gleich zum Start einzurichten, ist unnötig. Die meisten Marken beginnen mit Konto und Inhalten. Werbung folgt, sobald das Konto etwas vorzuweisen hat, das Mini Program erst, wenn der Verkauf ansteht.
+Alle vier gleich zum Start einzurichten, ist unnötig. Die meisten Marken beginnen mit Konto und Inhalten. Werbung folgt, sobald das Konto etwas vorzuweisen hat, das Mini Program erst, wenn der Verkauf ansteht. Ob zuerst WeChat oder Xiaohongshu das Budget erhalten sollte, klärt [unser Vergleich WeChat oder Xiaohongshu](/de/analysen/wechat-vs-xiaohongshu/).
 
 ## Official Account: Verifizierungsgebühr, Verlängerung und der Weg für ausländische Gesellschaften
 
@@ -133,17 +134,28 @@ Einen Überblick über alle Formate bietet [unser Leitfaden zur WeChat-Werbung](
 
 Ein Mini Program (小程序) verursacht zweierlei Kosten: geringe, veröffentlichte Plattformgebühren und die Entwicklung, deren Preis derjenige nennt, der den Code schreibt.
 
-Zunächst die Verifizierung. Ausländische Unternehmen zahlen dieselben 99 US-Dollar wie für das Konto.
+Zunächst die Verifizierung. Ausländische Unternehmen zahlen dieselben 99 US-Dollar wie für das Konto, allerdings nur einmal: Eine jährliche Verlängerung gibt es für ausländische Mini Programs derzeit nicht.
 
 > Jede Verifizierung eines Mini Program aus dem Ausland kostet 99 US-Dollar je Antrag, auch wenn sie scheitert. Die Prüfung dauert nach Eingang vollständiger Unterlagen 7 bis 15 Arbeitstage.
 > Quelle: Tencent-Kundenservice (腾讯客服), FAQ zur Verifizierung von Mini Programs im Ausland, bestätigt im Oktober 2026. https://kf.qq.com/faq/190712yYfY7v190712u2YjQ3.html
 
-Es gibt allerdings eine Abkürzung. Ein verifizierter Service-Account kann ein Mini Program registrieren und verifizieren, ohne ein zweites Mal zu zahlen, freilich nur für die erste Periode.
+> Mini Programs ausländischer Gesellschaften brauchen derzeit weder eine Registrierung (备案) noch eine Jahresprüfung.
+> Quelle: Tencents Team für Mini Programs im Ausland (小程序境外专项), WeChat Open Community, August 2025. https://developers.weixin.qq.com/community/minigame/doc/00044a834b47f83e94c35fbee6b809
 
-> Ein verifizierter Service-Account kann ein Mini Program per Schnellregistrierung anlegen und spart dabei die 300 Yuan, die Gesellschaften vom Festland zahlen, beziehungsweise die 99 Dollar für ausländische Gesellschaften. Die erste Verifizierungsperiode des Mini Program folgt der des Kontos; die Jahresprüfung wird danach gesondert beantragt.
+Es gibt allerdings eine Abkürzung. Ein verifizierter Service-Account kann ein Mini Program registrieren und verifizieren, ohne ein zweites Mal zu zahlen.
+
+> Ein verifizierter Service-Account kann ein Mini Program per Schnellregistrierung anlegen und spart dabei die 300 Yuan, die Gesellschaften vom Festland zahlen, beziehungsweise die 99 Dollar für ausländische Gesellschaften.
 > Quelle: Tencent-Kundenservice (腾讯客服), FAQ zur Schnellregistrierung, bestätigt im Oktober 2026. https://kf.qq.com/faq/170705YVZFZZ170705eyI7Rr.html
 
-Bleibt die Entwicklung. Keine unabhängige, datierte Quelle veröffentlicht Preise nach Komplexität. Sämtliche Spannen, auf die wir gestoßen sind, stammten von Entwicklern, die solche Projekte verkaufen. Die Tabelle zeigt deshalb, was das Angebot bestimmt und welche Gebühren hinzukommen.
+Bleibt die Entwicklung. Preislisten von Entwicklern sind Verkaufsunterlagen, deshalb lässt dieser Beitrag sie außen vor. Zuschlagsbekanntmachungen öffentlicher Ausschreibungen sind datiert und unabhängig, und sie zeigen die Spanne.
+
+> Die Zhejiang Economic and Trade Polytechnic zahlte 199.800 Yuan für ein Mini Program mit Vorlesungsinhalten.
+> Quelle: China Government Procurement Network (中国政府采购网), Zuschlagsbekanntmachung, November 2025. http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202511/t20251120_25730500.htm
+
+> Die chinesische Seeschifffahrtsbehörde zahlte 2,288 Millionen Yuan für ihr Mini Program Haishitong.
+> Quelle: China Government Procurement Network (中国政府采购网), Zuschlagsbekanntmachung, Mai 2025. http://www.ccgp.gov.cn/cggg/zygg/zbgg/202505/t20250516_24611552.htm
+
+Das sind öffentliche Aufträge, keine privaten Angebote, und keiner davon betrifft einen Shop oder ein Treueprogramm. Die Tabelle zeigt deshalb, was ein Angebot bestimmt und welche Gebühren hinzukommen.
 
 | Stufe | Funktionen | Was den Preis bestimmt | Zusätzliche Plattformgebühren |
 |---|---|---|---|
@@ -158,7 +170,12 @@ Wer verkauft, zahlt auf jede Bestellung eine Gebühr über WeChat Pay (微信支
 > WeChat Pay erhebt keine Antragsgebühr. Händler zahlen je Transaktion eine Servicegebühr, in der Regel 0,6 bis 1 Prozent je nach Geschäftskategorie. Für den Antrag sind eine Gewerbelizenz und ein Geschäftskonto erforderlich.
 > Quelle: WeChat Pay (微信支付), Leitfaden zur Händleranmeldung, bestätigt im Oktober 2026. https://pay.weixin.qq.com/static/applyment_guide/applyment_detail_store.shtml
 
-Gemeint ist eine chinesische Gewerbelizenz. Wer keine Gesellschaft auf dem Festland hat, sollte zuerst [unseren Leitfaden zur chinesischen Gesellschaft für Social Media](/de/analysen/chinese-entity-social-media/) lesen.
+Gemeint ist eine chinesische Gewerbelizenz. Eine ausländische Gesellschaft kann in ihrem Mini Program trotzdem kassieren, und zwar über das grenzüberschreitende WeChat Pay, mit einer Händler-ID auf denselben Firmennamen. Die Servicegebühr veröffentlicht Tencent auf seinen grenzüberschreitenden Seiten nicht; man sollte sie sich schriftlich geben lassen.
+
+> Ausländische Händler-IDs haben die Zahlung in Mini Programs standardmäßig freigeschaltet. Das Mini Program muss derselben Gesellschaft gehören wie die Händler-ID.
+> Quelle: WeChat Pay (微信支付), FAQ zum grenzüberschreitenden Bezahlen, Februar 2025. https://pay.weixin.qq.com/doc/global/v2/en/4013665012
+
+Wer über eine Gesellschaft auf dem Festland verkaufen will, sollte zuerst [unseren Leitfaden zur chinesischen Gesellschaft für Social Media](/de/analysen/chinese-entity-social-media/) lesen.
 
 Manche Marken sparen sich die Entwicklung und eröffnen stattdessen einen WeChat Store (微信小店).
 
@@ -242,7 +259,7 @@ Fügt man die Bausteine für ein ausländisches Unternehmen zusammen, ergeben si
 | Official Account | 99 US-Dollar im Jahr | 99 US-Dollar im Jahr | 99 US-Dollar im Jahr |
 | Inhalte | 4 Artikel im Monat | 4 Artikel im Monat | 4 Artikel im Monat, dazu Produktinhalte |
 | Werbung | Keine | Moments-Auktion, 30.000 Yuan für 30 Tage an der Schwelle | Nach Umsatzzielen |
-| Mini Program | Keines | Keines | Entwicklungsangebot, danach jährliche Verifizierung |
+| Mini Program | Keines | Keines | Entwicklungsangebot, einmalige Verifizierung (Ausland) |
 | Verkaufsgebühren | Keine | Keine | 0,6 bis 1 Prozent über WeChat Pay oder 1 bis 5 Prozent über den WeChat Store |
 | WeCom | Optional | 2.000 Kontakte kostenlos | Verifizierung, Kontaktstufen, Softwareplätze |
 | Agentur | Leistungsumfang Inhalte, siehe Preisliste | Leistungsumfang Inhalte und Werbung, siehe Preisliste | Voller Leistungsumfang, siehe Preisliste |
@@ -251,16 +268,16 @@ Das Präsenzbudget besteht im Wesentlichen aus Inhalten. Tencents Anteil beschr�
 
 Mit dem Wachstum kommt das Mediabudget ins Spiel. Eine Moments-Auktion (朋友圈) an der Schwelle, einen Monat lang jeden Tag, kostet 30.000 Yuan. Dabei gilt die Städteregel: Sitzen Ihre Käufer in Kernstädten, beginnt die Terminbuchung bei 50.000 Yuan.
 
-Mit dem Verkauf ändert sich die Rechnung abermals: zuerst die Entwicklung, dann eine Gebühr auf jeden Umsatz. Bei 100.000 Yuan Umsatz behält WeChat Pay (微信支付) 600 bis 1.000 Yuan ein. Ein WeChat Store (微信小店) nimmt bei demselben Umsatz 1.000 bis 5.000 Yuan, erspart aber die Entwicklung. Zehntausend Logins per Telefonnummer kosten, nach den 1.000 kostenlosen, 300 Yuan.
+Mit dem Verkauf ändert sich die Rechnung abermals: zuerst die Entwicklung, dann eine Gebühr auf jeden Umsatz. Bei 100.000 Yuan Umsatz behält WeChat Pay (微信支付) zum Festlandtarif 600 bis 1.000 Yuan ein. Ein WeChat Store (微信小店) nimmt bei demselben Umsatz 1.000 bis 5.000 Yuan, erspart aber die Entwicklung. Zehntausend Logins per Telefonnummer kosten, nach den 1.000 kostenlosen, 300 Yuan.
 
-Wer bereits ein Konto betreibt, sollte vor zusätzlichen Ausgaben eines klären: wann welche Verifizierung ausläuft. Konto, Mini Program und WeCom können jeweils zu einem anderen Termin fällig werden.
+Wer bereits ein Konto betreibt, sollte vor zusätzlichen Ausgaben eines klären: wann welche Verifizierung ausläuft. Konto und ein WeCom vom Festland werden jährlich verlängert, jedes zu seinem eigenen Termin. Ein ausländisches Mini Program wird derzeit nur einmal verifiziert.
 
 ## Die Kosten, die überraschen
 
 Keiner dieser Posten ist groß. Jeder wird leicht übersehen, bis er zu Buche schlägt.
 
 - **Gescheiterte Verifizierungen werden nicht erstattet.** Sind die Unterlagen fehlerhaft, sind die 99 Dollar oder 300 Yuan verloren. Es lohnt sich, gleich beim ersten Mal sorgfältig zu sein.
-- **Drei Produkte, drei Verlängerungen.** Konto, Mini Program und WeCom werden jährlich verifiziert, jedes nach eigenem Kalender.
+- **Jede Verlängerung folgt ihrem eigenen Kalender.** Das Konto wird jährlich verifiziert, ebenso ein WeCom vom Festland. Ein ausländisches Mini Program wird derzeit nur einmal verifiziert.
 - **Der günstige Werbeweg spart die Kernstädte aus.** Die Moments-Auktion ist in Tencents Kern- und Schlüsselstädten geschlossen.
 - **Werbeguthaben ist eine Einbahnstraße.** Bonusguthaben und Rückvergütungen in einem Tencent-Werbekonto werden nicht erstattet. Klären Sie, wem sie zustehen.
 - **Erfolg hat bei WeCom seinen Preis.** Jenseits von 2.000 Kontakten wird jedes Jahr Kapazität zugekauft.
@@ -280,4 +297,4 @@ Ein Konto bei Tencent Ads zu eröffnen, kostet nichts. Per Auktion gekaufte Mome
 
 ### Was kostet die Entwicklung eines WeChat Mini Program?
 
-Keine unabhängige, datierte Quelle veröffentlicht Entwicklungspreise, und die Angebote schwanken mit dem Umfang. Ein einfaches Mini Program für eine Marke kostet weit weniger als eines mit Bezahlvorgang oder Mitgliedschaftsfunktion. Fest sind dagegen die Plattformgebühren. Ein ausländisches Unternehmen zahlt 99 US-Dollar im Jahr für die Verifizierung, 0,6 bis 1 Prozent auf jeden Verkauf über WeChat Pay und 0,03 Yuan je Login per Telefonnummer.
+Die Angebote schwanken mit dem Umfang. Zuschlagsbekanntmachungen öffentlicher Ausschreibungen aus den Jahren 2025 und 2026 reichen von 199.800 Yuan für ein einfaches Mini Program mit Inhalten bis zu mehr als 2 Millionen für eine Plattform mit vielen Funktionen. Die Plattformgebühren sind gering. Ein ausländisches Unternehmen zahlt einmalig 99 US-Dollar für die Verifizierung, auf jeden Verkauf die Servicegebühr des grenzüberschreitenden WeChat Pay und 0,03 Yuan je Login per Telefonnummer.

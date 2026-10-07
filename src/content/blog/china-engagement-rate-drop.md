@@ -4,6 +4,7 @@ description: "Engagement fell across China's platforms in 2025. The audience did
 metaTitle: "Why your China engagement rate keeps dropping"
 metaDescription: "Your China engagement rate fell because WeChat, Douyin, and RedNote changed what they score in 2025. Here is what to measure instead."
 publishDate: 2026-07-25
+updatedDate: 2026-10-08
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Strategy"
@@ -56,9 +57,10 @@ A lot of brands read that as a content problem. It is closer to a plumbing
 problem. Push stopped being the main door into a WeChat article a while
 back.
 
-> One finance account recorded 45.9% of its traffic arriving through
-> social recommendation, passing subscription push for the first time.
-> Source: 极致了数据 / Jizhile Data, 2025
+> On 36Kr's consumer account, recommendation's share of reads rose from
+> 24.3% in August 2023 to 45.9% in March 2025, overtaking the push as its
+> biggest source.
+> Source: 36Kr (36氪), March 2025
 
 Once you know that, the scoring makes sense. Several figures below come
 from 极致了数据 / Jizhile Data, a Hangzhou monitoring firm. We cross-check

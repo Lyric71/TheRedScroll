@@ -116,6 +116,9 @@ de ahí depende qué cuentas podrán estar abiertas en la semana 2.
 [Nuestro análisis, plataforma por plataforma, sobre si hace falta una sociedad china](/es/analisis/chinese-entity-social-media/)
 repasa los casos límite, de la vía del agente en Weibo a las cuentas a nombre de la agencia.
 
+La otra decisión de la semana 1 es qué plataforma va delante.
+[Nuestra comparativa entre WeChat y Xiaohongshu](/es/analisis/wechat-vs-xiaohongshu/) propone una regla según el tipo de producto, el nivel de precio y el modelo de venta.
+
 Presentadas las solicitudes, arranca el reloj de la plataforma. Tencent hace
 público su plazo de revisión para el extranjero.
 

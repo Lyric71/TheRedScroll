@@ -47,7 +47,7 @@ summary or conclusion section. End on the CTA.
 1. What a Mini Program is, in one paragraph
 2. Three cases where you should not build one
 3. The four types: content, commerce, service, loyalty
-4. Build cost by type, with real ranges
+4. Build cost by type, with real ranges (commerce and loyalty builds have no public award; the article says so, settled fallback 1; amended 2026-10-06)
 5. Maintenance, hosting and the annual cost nobody budgets
 6. Mini Program versus a mobile site in China
 7. How Mini Programs get discovered, which is the real problem
@@ -61,7 +61,7 @@ still current, reuse the logged citation instead of researching again. If you
 find a new figure, append it to that ledger before you finish.
 
 - Mini Program user or transaction figures, cite Tencent's own reporting, dated
-- Build cost ranges from our own quotes, labeled as ours
+- Build cost ranges: no first-party Mini Program quote is logged in the ledger, and the pricing page lists membership Mini Programs only as a custom quote, so the article uses dated award notices on the China Government Procurement Network (中国政府采购网) and Tencent's own CloudBase and WeDa price pages, labeled as public contracts, never as our quotes (amended 2026-10-06 by the 06B draft run, SPEC settled fallback 3)
 
 **If a figure cannot be sourced, cut the claim.** Do not estimate, do not
 hedge, do not write "industry sources suggest". A missing number is better
@@ -72,8 +72,8 @@ than an unsourced one.
 Describe each of these in the handoff block at the end of the file. Do not
 embed images in body copy.
 
-- Build cost table by type and complexity
-- Decision flowchart: should you build one
+- Build cost table by type: lowest and highest public award per type, each award cited (amended 2026-10-06: built from award notices, not from our quotes)
+- Decision flowchart: should you build one. Carried as a decision table in the three-cases section; no flowchart is produced (amended 2026-10-06, SPEC settled fallback 7)
 - Feature image: a phone showing a simple app interface, held at an angle. China rule: set the scene in China and show Chinese social platforms on screen (WeChat, Xiaohongshu, Douyin or Weibo interface on a phone, laptop or studio monitor); set in a typical Chinese city, varied from article to article and not only Shanghai, only Chinese people in frame, candid normal-life photo in crisp sharp focus with legible screens (never blur, smudges or noise), no AI polish; this rule wins over the subject hint
 
 ## Tables required

@@ -4,6 +4,7 @@ description: "WeChat marketing cost is mostly yours to set. Tencent's own fees a
 metaTitle: "WeChat Marketing Cost: The Full Breakdown"
 metaDescription: "What WeChat marketing costs: Official Account verification, content, Moments and Channels ads, Mini Program builds, WeCom licensing, and agency fees."
 publishDate: 2026-10-05
+updatedDate: 2026-10-06
 author: "TheRedScroll"
 platforms: ["wechat"]
 category: "Strategy"
@@ -24,7 +25,7 @@ in October 2026. Already running an account? Use it as an audit.
 | Official Account | 99 US dollars per verification (overseas)          | Nobody              | Every year         |
 | Content          | Nothing                                            | Your team or agency | Every month        |
 | Moments ads      | From 1,000 yuan a day, or 50,000 per booking       | You set the budget  | Per campaign       |
-| Mini Program     | 99 US dollars per verification (overseas)          | Your developer      | Build, then yearly |
+| Mini Program     | 99 US dollars per verification (overseas)          | Your developer      | Build; verify once |
 | WeChat Pay sales | 0.6% to 1% of each transaction                     | Nobody              | Every sale         |
 | WeCom            | 300 yuan to verify (mainland); 2,000 contacts free | Your tool provider  | Every year         |
 | Agency fees      | Nothing                                            | The agency          | Every month        |
@@ -45,7 +46,9 @@ customers one to one.
 
 You don't need all four on day one. Most brands open with the account and
 content. Ads come once the account has something worth showing. A Mini Program
-comes when they're ready to sell.
+comes when they're ready to sell. Still deciding whether WeChat or Xiaohongshu
+gets the first budget? [Our WeChat vs Xiaohongshu guide](/insights/wechat-vs-xiaohongshu/)
+gives the decision rule.
 
 ## Official Account: verification fee, renewal, and the overseas route
 
@@ -185,25 +188,39 @@ A Mini Program (小程序) has two kinds of cost: small, published platform fees
 and a build quoted by whoever writes the code.
 
 Verification first. Overseas companies pay the same 99 US dollars as for the
-account.
+account, but only once: for now, an overseas Mini Program has no yearly
+renewal.
 
 > Every overseas Mini Program verification costs 99 US dollars per
 > application, charged whether or not it succeeds. Review takes 7 to 15
 > working days after complete documents are submitted.
 > Source: Tencent customer service (腾讯客服), overseas Mini Program verification FAQ, confirmed October 2026. https://kf.qq.com/faq/190712yYfY7v190712u2YjQ3.html
 
+> Overseas Mini Programs currently need neither filing nor an annual review.
+> Source: Tencent overseas Mini Program team (小程序境外专项), WeChat Open Community, August 2025. https://developers.weixin.qq.com/community/minigame/doc/00044a834b47f83e94c35fbee6b809
+
 There is a shortcut. A verified service account can register and verify a Mini
-Program without paying again, but only for the first period.
+Program without paying again.
 
 > A verified service account can quick-register a Mini Program with no
 > 300-yuan fee for mainland entities and no 99-dollar fee for overseas ones.
-> The Mini Program's first verification period matches the account's; after
-> that, its annual review is applied for separately.
 > Source: Tencent customer service (腾讯客服), quick registration FAQ, confirmed October 2026. https://kf.qq.com/faq/170705YVZFZZ170705eyI7Rr.html
 
-Then the build. No dated, independent source publishes build prices by
-complexity. The ranges we found all came from developers selling builds. The
-table below shows what moves the quote instead, and which fees come on top.
+Then the build. Developer price lists are sales material, so this page leaves
+them out. Public award notices are dated and independent, and they show the
+range.
+
+> Zhejiang Economic and Trade Polytechnic paid 199,800 yuan for a lecture
+> Mini Program.
+> Source: China Government Procurement Network (中国政府采购网), award notice, November 2025. http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202511/t20251120_25730500.htm
+
+> The Maritime Safety Administration paid 2.288 million yuan for its
+> "Haishitong" Mini Program.
+> Source: China Government Procurement Network (中国政府采购网), award notice, May 2025. http://www.ccgp.gov.cn/cggg/zygg/zbgg/202505/t20250516_24611552.htm
+
+Those are public contracts, not private quotes, and none of them prices a shop
+or a loyalty build. The table below shows what moves a quote, and which fees
+come on top.
 
 | Tier     | What it does                            | What moves the quote               | Platform fees on top                          |
 |----------|-----------------------------------------|------------------------------------|-----------------------------------------------|
@@ -221,7 +238,16 @@ Selling adds a fee on every order, paid through WeChat Pay (微信支付).
 > application asks for a business license and a corporate bank account.
 > Source: WeChat Pay (微信支付), merchant onboarding guide, confirmed October 2026. https://pay.weixin.qq.com/static/applyment_guide/applyment_detail_store.shtml
 
-That business license is a Chinese one. If you don't have a mainland entity,
+That business license is a Chinese one. An overseas company can still take
+payment in its Mini Program through cross-border WeChat Pay, with the merchant
+ID in the same company's name. Tencent's cross-border pages don't publish its
+service charge, so get the rate in writing.
+
+> Overseas merchant IDs come with Mini Program payment switched on. The Mini
+> Program must belong to the same company as the merchant ID.
+> Source: WeChat Pay (微信支付), cross-border payment FAQ, February 2025. https://pay.weixin.qq.com/doc/global/v2/en/4013665012
+
+If you'd rather sell through a mainland entity,
 read [our guide to setting up a Chinese entity for social media](/insights/chinese-entity-social-media/) first.
 
 Some brands skip the build and open a WeChat Store (微信小店) instead.
@@ -343,7 +369,7 @@ points to a rate card rather than a number, because rates differ.
 | Official Account      | 99 US dollars a year             | 99 US dollars a year                                  | 99 US dollars a year                                    |
 | Content               | 4 pushed articles a month        | 4 pushed articles a month                             | 4 pushed articles a month, plus product content         |
 | Ads                   | None                             | Moments bidding, 30,000 yuan for 30 days at the floor | Set by sales targets                                    |
-| Mini Program          | None                             | None                                                  | Build quote, then a yearly verification                 |
+| Mini Program          | None                             | None                                                  | Build quote; verification once (overseas)               |
 | Sales fees            | None                             | None                                                  | 0.6% to 1% via WeChat Pay, or 1% to 5% via WeChat Store |
 | WeCom                 | Optional                         | 2,000 contacts free                                   | Verification, contact tiers, tool seats                 |
 | Agency                | Content scope, see the rate card | Content and ads scope, see the rate card              | Full scope, see the rate card                           |
@@ -355,14 +381,15 @@ every day for a month, is 30,000 yuan. Remember the city rule: if your buyers
 are in core cities, the scheduled route starts at 50,000 yuan a booking.
 
 Selling changes the math again: a build up front, then a fee on every sale. On
-100,000 yuan of sales, WeChat Pay (微信支付) takes 600 to 1,000 yuan. A WeChat
+100,000 yuan of sales, WeChat Pay (微信支付) takes 600 to 1,000 yuan at the
+mainland rate. A WeChat
 Store (微信小店) takes 1,000 to 5,000 yuan on the same sales, but you skip the
 build. Ten thousand phone-number logins, after the 1,000 free ones, cost 300
 yuan.
 
 If you already run an account, check one thing before you add spend: when each
-verification renews. The account, the Mini Program, and WeCom can each run on
-a different date.
+verification renews. The account and a mainland WeCom renew every year, each
+on its own date. An overseas Mini Program, for now, verifies once.
 
 ## The costs that surprise people
 
@@ -370,8 +397,8 @@ None of these is large. Each is easy to miss until it bites.
 
 - **Failed verifications are not refunded.** The 99 dollars or 300 yuan is
   gone if your documents are wrong. Get them right the first time.
-- **Three products, three renewals.** The account, the Mini Program, and
-  WeCom each verify every year, on their own clocks.
+- **Renewals run on their own clocks.** The account verifies every year, and
+  so does a mainland WeCom. An overseas Mini Program, for now, verifies once.
 - **The cheap ad route skips core cities.** Moments bidding is closed in
   Tencent's core and key city groups.
 - **Ad credit is one-way.** Bonus credit and rebates in a Tencent ad account
@@ -404,8 +431,8 @@ ask before you plan.
 
 ### How much does a WeChat Mini Program cost to build?
 
-No independent, dated source publishes build prices, and quotes vary with
-scope. A simple brand Mini Program costs far less than one with checkout or
-membership. The platform fees are fixed. An overseas company pays 99 US
-dollars a year to verify, 0.6% to 1% on each WeChat Pay sale, and 0.03 yuan
-per phone-number login.
+Quotes vary with scope. Public award notices from 2025 and 2026 run from
+199,800 yuan for a simple content Mini Program to over 2 million for a
+multi-function one. The platform fees are small. An overseas company pays 99
+US dollars once to verify, a cross-border WeChat Pay service charge on each
+sale, and 0.03 yuan per phone-number login.

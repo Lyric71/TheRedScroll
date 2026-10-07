@@ -127,6 +127,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-10-05 for 05C: "每日预算1000元起" and "单次投放总预算5万元起" confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
 - Re-verified 2026-10-05 by the 05A publish run: product page "每日预算1000元起" and "单次投放总预算5万元起", 2016 PDF "不得低于1000元", "第5个自然日" and "第28个自然日" confirmed. Used in: wechat-advertising-formats-costs (all five locales; scheduled window corrected from 1-28 to 5 to 28 days, and the undated "Niaoge Biji, Digitaling" source line replaced by the 2016 guide; the unsourced 1,000-yuan top-up cut).
 - Re-verified 2026-10-06 for 06A: "每日预算1000元起" and "免费开户" confirmed at check 1 and check 2. Used in: china-marketing-hidden-costs.
+- Re-verified 2026-10-08 for 06C: "每日预算1000元起", "单次投放总预算5万元起" and "免费开户" confirmed at check 1 and check 2; the same page says Moments ads can promote an Official Account with a one-tap follow ("在朋友圈推广公众号，让“关注”一键直达"), confirmed at both checks. Used in: wechat-open-rate-benchmark.
 
 ### Douyin ad account opening: service fee and agent-set first recharge
 - Value: qualitative. Official channel charges a service fee; agents may open for free but set their own minimum first recharge
@@ -285,6 +286,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 
 - Re-verified 2026-10-01 for 05B, with two strings not logged before: "个人微信号（包括境内和境外）可以关注境外主体资质在公众平台注册的服务号" (any WeChat user, mainland or overseas, can follow) and "若其他地区无对应的注册选项，请您后续留意平台开放的注册区域" (unlisted regions cannot register yet). Check 1 and check 2 both 2026-10-01. Used in: wechat-official-account-setup.
 - Re-verified 2026-10-05 for 05C: "境外主体可以注册1个账号", "境外地区账号暂只支持服务号类型" and "认证成功后，账号方可正常使用" confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
+- Re-verified 2026-10-08 for 06C: "境外主体可以注册1个账号" and "境外地区账号暂只支持服务号类型" confirmed at check 1 and check 2. Used in: wechat-open-rate-benchmark.
 
 ### WeChat Official Account verification review time, mainland entity
 - Value: review in 1 to 3 working days; verification must be completed within 30 calendar days of registration; payment-based registration verification succeeds within 1 working day
@@ -476,6 +478,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 
 - Re-verified 2026-10-01 for 05B: the page now says "公众号（认证用户、非认证用户），每天可以开启1次【群发通知】" (the former subscription account is called 公众号) and "每个月（按自然月）可以开启4次" for the 服务号, at check 1 and check 2. Used in: wechat-official-account-setup.
 - Re-verified 2026-10-05 for 05C: "每个月（按自然月）可以开启4次" and "每天可以开启1次" confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
+- Re-verified 2026-10-08 for 06C: "每个月（按自然月）可以开启4次" and "每天可以开启1次" confirmed at check 1 and check 2; the same page now also states "标题上限为64个字节（即32个汉字）" (push title limit 64 bytes, 32 Chinese characters), confirmed at both checks. Used in: wechat-open-rate-benchmark.
 
 ### Xiaohongshu professional accounts: no WeChat ID or phone number in auto-replies, from January 7, 2025
 - Value: from January 7, 2025, the auto-reply component and welcome messages of a Xiaohongshu professional account (专业号) may not contain a WeChat ID or phone number; only the social business card (社媒名片) may be used to pass contact details. A service provider told the reporter that accounts which did not remove WeChat IDs would be muted (禁言). Also on the page: 98% of local-services merchants were said at WILL to interact with users through in-app consultation
@@ -818,6 +821,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-06, both re-fetched, unchanged
 - Used in: china-marketing-hidden-costs
 - Notes: Mainland hosting prices are vendor pages only; not cited.
+- Re-verified 2026-10-06 for 06B (Order 68 page): "未经备案，不得在中华人民共和国境内" and "并处一万元罚款" confirmed at check 1 and check 2. Used in: wechat-mini-program-cost.
 
 ### National Common Language and Script Law, 2025 revision: ads and product packaging in standard Chinese
 - Value: Art. 15: broadcasting, online audiovisual programs, public facilities, signboards and advertising (招牌、广告用字), company names, and the names, packaging and instructions of goods sold in China (在境内销售的商品的名称、包装、说明) use the national common language and script as the base; Art. 25: market regulators supervise the wording of goods and ads
@@ -1352,6 +1356,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-10-01 for 05A: "14.18亿" and "同比增长2％" confirmed at check 1 and check 2. Used in: wechat-marketing-cost.
 - Notes: Corroborated same day on China Fund News (中国基金报), 2026-03-18, https://www.chnfund.com/article/AR1231fcdd-25ff-01cd-2836-3a2015e46b1d ("微信及WeChat合并月活跃用户数进一步增长至14.18亿"). Tencent's own IR announcement was not fetchable directly; both cited pages attribute the figure to the results release. Supersedes the 13.85 billion-era figures from the 2024 annual report; recheck after Tencent's 2026 annual results in March 2027.
 - Re-verified 2026-10-05 for 05C: "14.18亿" and "同比增长2" confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
+- Re-verified 2026-10-08 for 06C: "14.18亿" and "同比增长2" confirmed at check 1 and check 2. Tencent's Q2 2026 results coverage (Tencent News, 2026-08-12) carries no MAU figure, so this is still the newest. Used in: wechat-open-rate-benchmark.
 
 ### Weibo monthly and daily active users, end of Q4 2025
 - Value: 567 million monthly active users and 252 million daily active users at the end of Q4 2025; full-year 2025 revenue 1.76 billion US dollars
@@ -1372,6 +1377,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-22, re-fetched with curl, "视频号" and the growth sentence confirmed unchanged
 - Used in: camper-china-teardown
 - Notes: Growth rate only. Tencent publishes no absolute Channels user-time or MAU figure, so do not pair this with an invented base. The widely circulated "Channels e-commerce GMV 433 billion yuan, up 74.6%" figure that appears alongside it in search summaries is NOT from the results release and was not logged; treat it as unsourced.
+- Re-verified 2026-10-08 for 06C: "视频号利用长序列大模型优化推荐，2025年用户时长同比增长超20%" confirmed at check 1 and check 2. Used in: wechat-open-rate-benchmark.
 
 ### Xiaohongshu apparel category, first half of 2026
 - Value: commercial note saves (收藏) up more than 60% year on year and interactions up more than 52%; within apparel, clothing and footwear (服饰鞋靴) hold 68.34% of category interaction, jewelry and accessories (珠宝配饰) 22.38%, bags (箱包) 9.28%. Fastest growing seeding-note subcategories: knitwear and sweaters +78%, base layers +68%, silver jewelry +54%
@@ -1453,6 +1459,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Notes: The page does not list which cities are core or key. Do not name them in copy. Practical reading used in 05A: reach in the core group means the scheduled route, from 50,000 yuan per placement. No first recharge (ad account deposit) figure is on any Tencent page found; see the NOT LOGGED block below.
 - Re-verified 2026-10-05 for 05C: "仅开放其他城市", "核心与重点城市不支持" and "向所有城市开放" confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
 - Re-verified 2026-10-05 by the 05A publish run: "仅开放其他城市" and "核心与重点城市不支持" confirmed. Used in: wechat-advertising-formats-costs (all five locales; its CPM table gave bidding ranges for core and key cities, now marked closed to bidding).
+- Re-verified 2026-10-08 for 06C: "仅开放其他城市（核心与重点城市不支持）" confirmed at check 1 and check 2. Used in: wechat-open-rate-benchmark (bidding floor stated for cities outside the core and key tiers).
 
 ### WeChat Mini Program verification, overseas entity: fee and review time
 - Value: 99 US dollars per verification application, charged whether or not it succeeds; review within 7 to 15 working days after complete documents; payment by WeChat Pay or bank card (Visa, Master)
@@ -1462,7 +1469,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 1: 2026-10-01, fetched with curl, "99美元/次", "无论认证成功或失败" and "7-15个工作日内完成审核" confirmed
 - Verified 2: 2026-10-01, re-fetched, unchanged
 - Used in: wechat-marketing-cost
-- Notes: The search-summary claim that overseas Mini Programs need no annual review traces to agent pages only. Not logged.
+- Notes: The search-summary claim that overseas Mini Programs need no annual review traces to agent pages only. Not logged. (Superseded 2026-10-06: Tencent's overseas Mini Program team says so itself; see "Overseas Mini Programs: no filing, no annual review".)
+- Re-verified 2026-10-06 for 06B: "99美元/次", "一次性费用", "无论认证成功或失败" and "7-15个工作日内完成审核" confirmed at check 1 and check 2. The page states no validity term or annual review. Tencent's overseas Mini Program team says overseas Mini Programs currently need no annual review (entry "Overseas Mini Programs: no filing, no annual review" below), so never call the overseas verification yearly. Used in: wechat-mini-program-cost. wechat-marketing-cost called it "yearly" and was corrected in all five locales on 2026-10-06.
 
 ### WeChat Mini Program quick registration through a verified account; separate annual review
 - Value: a verified Official Account or service account can quick-register and verify a Mini Program: mainland entities pay no 300-yuan fee, overseas entities no 99-dollar fee; the Mini Program's first verification period matches the account's; later annual reviews (年审) are applied for separately in the Mini Program back end
@@ -1473,6 +1481,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-01, re-fetched, unchanged
 - Used in: wechat-marketing-cost
 - Notes: The scheduled 2026-10-01 draft run (05B) found the Mini Program verification guide at developers.weixin.qq.com/miniprogram/product/renzheng.html (annual review within a year or status ends). It is the Mini Program guide, not the Official Account one; cite it for Mini Programs only. Not used in 05A.
+- Re-verified 2026-10-06 for 06B: "无需支付99美元认证费用", "无需支付300元认证费用" and "一个月可以复用资质注册5个小程序" confirmed at check 1 and check 2 (five Mini Programs a month for an overseas service account). The page's later-annual-review line conflicts with the overseas team's 2025 statement; cite this page for the fee waiver only, never for an overseas annual review. wechat-marketing-cost dropped that sentence from its blockquote in all five locales on 2026-10-06. Used in: wechat-mini-program-cost.
 
 ### WeChat Pay merchant fees: no application fee, 0.6% to 1% per transaction
 - Value: applying for WeChat Pay carries no application fee; merchants pay a service fee on each transaction, generally 0.6% to 1% depending on business category; the company application asks for a business license (营业执照) and a corporate bank account (对公银行账户)
@@ -1484,6 +1493,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: wechat-marketing-cost
 - Notes: Domestic merchant onboarding. Cross-border WeChat Pay for overseas merchants is a different program and was not researched.
 - Re-verified 2026-10-06 for 06A: "0.6%-1%不等" and "不收取任何申请费用" confirmed at check 1 and check 2. Used in: china-marketing-hidden-costs.
+- Re-verified 2026-10-06 for 06B on the Mini Program guide, https://pay.weixin.qq.com/static/applyment_guide/applyment_detail_miniapp.shtml: "0.6%-1%不等", "不收取任何申请费用", "营业执照" and "对公银行账户" confirmed at check 1 and check 2. Mainland rate only; never quote it to an overseas company. Used in: wechat-mini-program-cost.
 
 ### WeChat Mini Program phone-number quick verification component: paid since August 28, 2023
 - Value: from August 28, 2023, 0.03 yuan per successful call of the phone-number quick verification component; 1,000 free trial calls per Mini Program account
@@ -1494,6 +1504,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-01, re-fetched, unchanged
 - Used in: wechat-marketing-cost
 - Notes: Older than 12 months as a policy date, but the live documentation still states it. Package prices live in the Official Account Platform payment console (login only).
+- Re-verified 2026-10-06 for 06B: "自2023年8月28日起", "收费0.03元" and "1000次体验额度" confirmed at check 1 and check 2. Used in: wechat-mini-program-cost.
 
 ### WeChat Store (微信小店): opening cost, deposit and technical service fee
 - Value: opening a WeChat Store account is free; new merchants can trial with zero deposit in more than 3,000 categories; a technical service fee is charged on each settled transaction, 1% to 5% in most categories; new merchants pay 1% on early sales (within 90 days of the first order and 180 days of opening, on the first 1 million yuan, or 1.5 million in key categories); no monthly or annual fee
@@ -1504,6 +1515,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-01, re-fetched, unchanged
 - Used in: wechat-marketing-cost
 - Re-verified 2026-10-06 for 06A: "1%–5%" and "不收月租或年费" confirmed at check 1 and check 2. Used in: china-marketing-hidden-costs.
+- Re-verified 2026-10-06 for 06B: "开通微信小店账号本身不收费", "1%–5%" and "2026-08-24" confirmed at check 1 and check 2. WeChat Store is open only to entities registered in mainland China (entry "WeChat Store entry rules" below). Used in: wechat-mini-program-cost.
 
 ### WeCom verification fees and annual review
 - Value: 300 yuan review fee per application for companies and other for-profit bodies, not refunded on failure; member-scale fee 2,700 yuan (1,001 to 10,000 members) or 29,700 yuan (over 10,000), refunded if the review fails; government and non-profit bodies exempt; verification renewed by annual review at the same fees
@@ -1660,6 +1672,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 1: 2026-10-01, fetched with curl, "Merchant Model (only in HongKong China, UK and Singapore)", "Institution Model", "reaches 800 USD" and "Owning a legal overseas entity" confirmed
 - Verified 2: 2026-10-01, re-fetched, unchanged
 - Used in: wechat-official-account-setup
+- Re-verified 2026-10-06 for 06B: "Settlement Amount = Gross Turnover - WeChat Pay Service Charge" and "reaches 800 USD" confirmed at check 1 and check 2. The page names a service charge but publishes no rate; neither do the cross-border docs checked for 06B. Say so; never apply the domestic 0.6% to 1%. Used in: wechat-mini-program-cost.
 
 ### NOT LOGGED, searched and rejected 2026-10-01 (WeChat Official Account setup)
 - Rejection reasons from our own submission history (brief 05B). Not on the site, not in this ledger. Cut; the article stands on Tencent's published grounds (SPEC, settled fallbacks).
@@ -1676,6 +1689,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-05, re-fetched before the draft was finished, unchanged
 - Used in: wechat-vs-xiaohongshu
 - Notes: The platform team's own disclosure, older than 12 months. Tencent has published no later Search MAU or follower-source split (searched 2026-10-05); cite with the year, under settled fallback 9. Same figures on Beijing Daily (xinwen.bjd.com.cn) and Chengdu Business Daily. Recheck for a newer WeChat Open Class figure each January.
+- Re-verified 2026-10-06 for 06B: "对小程序的新增日活跃用户贡献占比达到20%" and 2023年01月10日 confirmed at check 1 and check 2. Used in: wechat-mini-program-cost (the 20% share of new Mini Program daily users, cited with its year).
+- Re-verified 2026-10-08 for 06C: "2022年微信搜一搜月活跃用户已达8亿", "微信搜一搜对公众号新增粉丝贡献占比达到27%" and 2023年01月10日 confirmed at check 1 and check 2. Used in: wechat-open-rate-benchmark.
 
 ### WeChat Mini Program user time, Q4 2025
 - Value: Mini Program (小程序) user time grew more than 20% year on year in Q4 2025; the AI Mini Program growth plan drew more than 10,000 developers
@@ -1686,6 +1701,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-05, re-fetched before the draft was finished, unchanged
 - Used in: wechat-vs-xiaohongshu
 - Notes: Growth rate only, same page as the Channels user-time entry. This release gives no Mini Program DAU; the "800 million daily users" figure in search summaries is not on the results coverage and is not logged.
+- Re-verified 2026-10-06 for 06B: "小程序2025年第四季度用户时长同比增长超20%" and 2026-03-18 confirmed at check 1 and check 2. Tencent's Q1 2026 (2026-05-13) and Q2 2026 (2026-08-12) releases carry no Mini Program figure, so this is still the newest Tencent number. Recheck after the 2026 annual results in March 2027. Used in: wechat-mini-program-cost.
 
 ### Xiaohongshu KOS (employee accounts): companies, accounts and monthly leads, August 2026
 - Value: more than 40,000 company accounts run KOS (Key Opinion Sales, 企业员工号) on Xiaohongshu; employee accounts passed 400,000; more than 6 million leads (留资) a month come through KOS
@@ -1708,7 +1724,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Notes: A dated event, older than 12 months, cited with its date (settled fallback 9). LinkedIn's own help page (linkedin.com/help/linkedin/answer/a557005) states the stop date but shows only a relative "last updated" date, so CNR is the citable dated source.
 
 ### NOT LOGGED, searched and rejected 2026-10-05 (WeChat or Xiaohongshu)
-- Share of Official Account reads from algorithmic recommendation ("45.9%", "50% to 70%"): Zhihu, jzl.com and yiban.io self-media, no Tencent source. Not cited.
+- Share of Official Account reads from algorithmic recommendation ("45.9%", "50% to 70%"): Zhihu, jzl.com and yiban.io self-media, no Tencent source. Not cited. CORRECTION 2026-10-08: the original of "45.9%" is 36Kr's own March 2025 article on its consumer account, now logged above as "WeChat Official Account open rate history and the shift to recommendation, 36Kr March 2025"; it is one account's share, not a platform figure. The "50% to 70%" line still has no original.
 - Xiaohongshu 2025 gender split 71.98% / 28.02% (Qian-gua active user report via Sohu and Douban reposts): self-media summaries of a gated report; the official brief's 3:7 says the same. Not logged separately.
 - 36Kr, "站在2025年底，小红书商业正跨过一个新门槛": blocked by a ByteDance security check for every fetch method. Not cited.
 - WeCom "connects more than ten million companies" and Mini Program "800 million daily users": search summaries only, not on the results coverage fetched. Not cited.
@@ -1984,6 +2000,285 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Douyin category commission rates (apparel 6%, beauty 7% and so on): Sohu self-media. Not cited.
 - Translation or transcreation rates, legal review fees, trademark agency fees, mainland hosting prices, SIM card costs, and rush-fee market rates: no dated non-vendor source. The article says no published figure exists.
 
+### WeChat Mini Program: definition, mainland verification fee, Official Account linking limits
+- Value: "a new way to connect users and services" found and shared easily inside WeChat; a mainland company verifies by paying a 300-yuan fee (or by a corporate bank transfer); an Official Account can link 10 same-entity and 3 other-entity Mini Programs, 13 new links a month; article cards and links need no linking
+- As of: page undated; confirmed October 2026 (platform documentation)
+- Source: WeChat Open Docs (微信开放文档), 小程序产品定位及功能介绍
+- URL: https://developers.weixin.qq.com/miniprogram/introduction/
+- Verified 1: 2026-10-06, fetched with curl, "微信小程序是一种全新的连接用户与服务的方式", "需支付300元认证费", "公众号可关联10个同主体，3个非同主体小程序" and "图文消息中可直接使用小程序卡片、链接、图片素材，无需关联小程序" confirmed
+- Verified 2: 2026-10-06, re-fetched before the draft was finished, unchanged
+- Used in: wechat-mini-program-cost
+- Notes: The page does not say "no download". That wording is Zhang Xiaolong's at launch (next entry).
+
+### Mini Programs need no download; no entry point of their own (Zhang Xiaolong, December 2016)
+- Value: Zhang Xiaolong confirmed the January 9, 2017 launch; Mini Programs "无须下载安装"; "它没有入口，启动来自扫描二维码"; "只要扫一扫或者搜一下就能启动"
+- As of: December 2016 (article dated 2016-12-29)
+- Source: Beijing Youth Daily (北京青年报) via People's Daily Online (人民网)
+- URL: http://media.people.com.cn/n1/2016/1229/c40606-28984508.html
+- Verified 1: 2026-10-06, fetched with curl (GB2312 page decoded), "无须下载安装", "它没有入口，启动来自扫描二维码", "只要扫一扫或者搜一下就能启动", "将于2017年1月9日正式上线" and "2016年12月29日" confirmed
+- Verified 2: 2026-10-06, re-fetched, unchanged
+- Used in: wechat-mini-program-cost
+- Notes: Older than 12 months; a dated launch statement (settled fallback 9). The "no entry point" line is the reporter's account of Zhang's explanation at WeChat Open Class; attribute it as "Zhang Xiaolong explained".
+
+### Mini Programs abroad: 100 countries, 5 billion cross-border uses, H2 2025 transactions up 70% (WeChat Open Class PRO 2026)
+- Value: Mini Program services cover 100 countries and regions; cross-border and overseas users used Mini Programs more than 5 billion times in 2025; transaction value through Mini Programs in H2 2025 up more than 70% year on year; WeChat cross-border payment covers 78 countries and regions and 36 currencies
+- As of: 2025 (WeChat Open Class PRO, January 15, 2026; article dated 2026-01-20)
+- Source: Sina Tech (新浪科技), reporting the WeChat Open Class (微信公开课) account
+- URL: https://finance.sina.com.cn/tech/2026-01-20/doc-inhhyfuv7357415.shtml
+- Verified 1: 2026-10-06, fetched with curl, "小程序服务已覆盖全球100个国家和地区", "2025年全球跨境与境外用户使用小程序次数突破50亿次", "2025下半年通过小程序完成的交易金额同比增长超7成" and "2026年01月20日" confirmed
+- Verified 2: 2026-10-06, re-fetched, unchanged
+- Used in: wechat-mini-program-cost
+- Notes: Cross-border and overseas segment only, growth rates not totals. Same figures on 36Kr via Tencent News (news.qq.com/rain/a/20260115A07T8H00, 2026-01-15) and Southern Metropolis Daily via Tencent News (2026-01-18, which adds overseas active Mini Program merchants up more than 30%). The kf.qq.com cross-border FAQ's "64 countries, 26 currencies" is stale against these; do not use it.
+
+### WeChat Store entry rules: mainland-registered entities only
+- Value: WeChat Store (微信小店) accepts companies and sole traders legally registered in mainland China; a legal representative from Hong Kong, Macau, Taiwan or abroad is accepted; up to 30 stores per business license
+- As of: rules revised 2026-06-10, in force 2026-06-17
+- Source: WeChat Store (微信小店), 微信小店入驻规则
+- URL: https://store.weixin.qq.com/chengzhang/webdoc/wiki/2063/9c63c672daee8eca/growth_center_rule_for_store
+- Verified 1: 2026-10-06, fetched with curl, "入驻主体应为中国大陆地区合法注册的企业实体" and "2026年06月17日" confirmed
+- Verified 2: 2026-10-06, re-fetched, unchanged
+- Used in: wechat-mini-program-cost
+- Notes: An overseas company cannot open a WeChat Store; its China-registered subsidiary can.
+
+### WeChat Mini Program search does not index web-view content
+- Value: WeChat's Mini Program search "does not index any content in a web-view"; pages must open directly by URL; set a clear title and thumbnail
+- As of: page undated; confirmed October 2026 (platform documentation)
+- Source: WeChat Open Docs (微信开放文档), 小程序搜索优化指南
+- URL: https://developers.weixin.qq.com/miniprogram/dev/framework/search/seo.html
+- Verified 1: 2026-10-06, fetched with curl, "我们不收录 web-view 中的任何内容" and "设置一个清晰的标题和页面缩略图" confirmed
+- Verified 2: 2026-10-06, re-fetched, unchanged
+- Used in: wechat-mini-program-cost
+- Notes: Crawl guidance, not a list of ranking factors. Do not present it as one.
+
+### Mini Program service categories for overseas entities
+- Value: overseas entities choose from a separate, shorter category list; overseas education is information display only ("不支持提供在线视频课程播放/直播、课程产品销售"); local retail covers sales in the entity's own market; cross-border e-commerce needs an agreement naming a mainland company as jointly liable and a consumer-protection plan; goods must be on the 2019 cross-border import list; no medicines, medical devices or alcohol
+- As of: page undated; confirmed October 2026 (platform documentation; the page says categories change with policy)
+- Source: WeChat Open Docs (微信开放文档), 小程序开放的服务类目
+- URL: https://developers.weixin.qq.com/miniprogram/product/material.html
+- Verified 1: 2026-10-06, fetched with curl, "境外主体小程序开放的服务类目", "不支持提供在线视频课程播放/直播、课程产品销售", "与境内企业的委托协议" and "暂不支持跨境销售药品、医疗器械、酒类商品" confirmed
+- Verified 2: 2026-10-06, re-fetched, unchanged
+- Used in: wechat-mini-program-cost
+- Notes: The overseas list has no news or information category; do not claim an overseas company can run any content Mini Program.
+
+### Mini Program card and coupon features need verification
+- Value: wx.addCard (cards and coupons) works only in verified Mini Programs (or culture-interaction mini games)
+- As of: page undated; confirmed October 2026 (platform documentation)
+- Source: WeChat Open Docs (微信开放文档), wx.addCard
+- URL: https://developers.weixin.qq.com/miniprogram/dev/api/open-api/card/wx.addCard.html
+- Verified 1: 2026-10-06, fetched with curl, "只有通过认证的小程序" confirmed
+- Verified 2: 2026-10-06, re-fetched, unchanged
+- Used in: wechat-mini-program-cost
+- Notes: No statement on overseas eligibility for cards was found. Not claimed.
+
+### WeChat Mini Program build and operation prices: public award notices, 2025 to 2026
+- Value (award amounts, yuan): content: Zhejiang Economic and Trade Polytechnic lecture Mini Program 199,800 (2025-11-20); Kunshan People's Congress legislative-feedback Mini Program 310,000, delivered in a month (2025-09-01); Yunyang District, Shiyan, smart tourism Mini Program 500,000 with one year of service (2026-08-12). Service or booking: Ningyang County First People's Hospital patient Mini Program 282,000, 60 days (2026-01-20); Beijing Children's Hospital 1,497,300, three months, two-year warranty (2025-02-11). Multi-function: China-Japan Friendship Hospital follow-up Mini Program 999,800 (2025-10-16); Maritime Safety Administration "Haishitong" 2,288,000 (2025-05-16). Feature work: Xinjiang maternal and child hospital 43,500 (2026-08-28); Feixiang District, Handan, expansion 525,000 (2025-07-16). Operation: Caidian District, Wuhan, tourism Mini Program and Official Account, 585,000 for one year (2025-09-22)
+- As of: notice dates as listed
+- Source: China Government Procurement Network (中国政府采购网), award and transaction notices
+- URL: http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202511/t20251120_25730500.htm ; http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202509/t20250901_25266514.htm ; http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202608/t20260812_27120718.htm ; http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202601/t20260120_26093602.htm ; http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202502/t20250211_24152021.htm ; http://www.ccgp.gov.cn/cggg/zygg/zbgg/202510/t20251016_25514047.htm ; http://www.ccgp.gov.cn/cggg/zygg/zbgg/202505/t20250516_24611552.htm ; http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202608/t20260828_27225391.htm ; http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202507/t20250716_24975725.htm ; http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202509/t20250922_25390184.htm
+- Verified 1: 2026-10-06, each notice fetched with curl, project name, amount with unit and notice date confirmed (logs/scratch/06B/check1.txt, check1b.txt)
+- Verified 2: 2026-10-06, each re-fetched, unchanged (check2.txt; Kunshan, which is not cited, in check2c.txt)
+- Used in: wechat-mini-program-cost (all except Kunshan); wechat-marketing-cost (Zhejiang and Maritime Safety Administration, all five locales, from 2026-10-06)
+- Notes: Public contracts, not private quotes; always say so. The https versions of three notices returned a 1.6 KB block page to curl; the http URLs serve the notice. The 06B research read 21 build and feature awards in total (content 4, service 8, multi-function 5, feature work 4); the full list with exact strings is in logs/scratch/06B/B/notes.md. No public award prices a commerce or membership Mini Program (ccgp title search 2025-01-01 to 2026-10-06). Excluded: Zhejiang International Maritime College (815,000, bought as goods, scope unknown).
+
+### Tencent CloudBase and WeDa plan prices
+- Value: CloudBase (云开发) plans personal 19.9 yuan a month (marked a limited-time offer), standard 199, enterprise 999, enterprise advanced on request; a free trial environment expires on day 15 after the Mini Program goes live; WeDa (微搭) low-code is sold inside the same plans (3, 10 and 50 publishable apps)
+- As of: CloudBase price document updated 2026-08-31; WeDa price document updated 2026-09-03
+- Source: Tencent Cloud (腾讯云), CloudBase price document; WeDa price document
+- URL: https://cloud.tencent.com/document/product/876/75213 ; https://cloud.tencent.com/document/product/1301/122385
+- Verified 1: 2026-10-06, both fetched with curl, "19.9（限时优惠）", "199", "999" and "上线后第15天" (CloudBase); "个人版、标准版、企业版、企业高级版", "19.9（限时优惠）", "可发布应用数" and "2026-09-03" (WeDa) confirmed
+- Verified 2: 2026-10-06, both re-fetched, unchanged
+- Used in: wechat-mini-program-cost
+- Notes: Recheck on reuse: the 19.9 price is promotional with no end date on the page. The WeChat-side CloudBase billing page (developers.weixin.qq.com/miniprogram/dev/wxcloud/billing/price.html) shows a different base package at 19.9 yuan a month ("原价 39 元"); not cited.
+
+### WeChat Mini Program verification guide: one-year status and annual review (mainland)
+- Value: verified status is kept for one year from approval; to keep it, the annual review must be started and completed within the year, or verification ends and advanced features are withdrawn; reminder three months before expiry; failed verification fees are not refunded
+- As of: page undated; confirmed October 2026 (platform documentation)
+- Source: WeChat Open Docs (微信开放文档), 微信认证指引
+- URL: https://developers.weixin.qq.com/miniprogram/product/renzheng.html
+- Verified 1: 2026-10-06, fetched with curl, "账号审核成功状态将会被保留一年", "一年内发起并完成年审认证" and "认证高级功能的申请、使用权将被取消" confirmed
+- Verified 2: 2026-10-06, re-fetched, unchanged
+- Used in: wechat-mini-program-cost
+- Notes: The general (mainland) guide; it has no overseas section. The fee amount is not on this page (300 yuan comes from the introduction page). Whether each annual review is charged is not stated; do not claim a renewal fee.
+
+### Overseas Mini Programs: no filing, no annual review; overseas status follows the entity; domains registered abroad cannot be filed
+- Value: "目前境外主体的小程序无需备案和年审"; a Mini Program is overseas or domestic by its operating entity, not its server location; domains registered in China must be filed, domains registered abroad need not (cannot) be filed; unfiled links may be unstable or restricted inside a Mini Program; Tencent recommends native Mini Program features, which need no business domain or filing
+- As of: August 2025 (created 2025-08-18 14:58 Beijing time)
+- Source: Tencent overseas Mini Program team (小程序境外专项), WeChat Open Community (微信开放社区), 境外小程序备案、ICP域名备案相关问题
+- URL: https://developers.weixin.qq.com/community/minigame/doc/00044a834b47f83e94c35fbee6b809
+- Verified 1: 2026-10-06, fetched with curl through Tencent's public JSON endpoint for the same document (https://developers.weixin.qq.com/community/ngi/doc/detail/00044a834b47f83e94c35fbee6b809), "目前境外主体的小程序无需备案和年审", "依据其运营主体资质判定，与服务器位置无关", "境外注册域名无需（也无法）备案", "未备案的链接在小程序内访问可能出现不稳定的情况或者访问受限", "小程序平台推荐使用小程序原生能力进行开发" and CreateTime 1755500320 confirmed
+- Verified 2: 2026-10-06, JSON endpoint re-fetched, unchanged
+- Used in: wechat-mini-program-cost; wechat-marketing-cost (all five locales, from 2026-10-06)
+- Notes: A Tencent staff post on Tencent's developer community, not the formal docs tree. "目前" means "for now": cite as "currently". Recheck note, 2026-10-06: a bare curl of the page URL from this machine was redirected to a community login gate (/community/error/emergency?forceLogin=true); the JSON endpoint served the full text. Recheck the page URL and the rule before any reuse. Supersedes the 2024-11-18 community post that gave quick-registered overseas Mini Programs a later annual review, and the note on the overseas verification entry that the claim traced only to agent pages.
+
+### Overseas Mini Programs: verify within 45 days of registering
+- Value: after registering, an overseas entity must complete WeChat verification within 45 days, and the Mini Program can go live only after it passes; overseas entities may register as companies, sole traders, governments, schools and other organizations; no filing, no annual review, verification once
+- As of: November 2024 (created 2024-11-20, updated 2024-11-26)
+- Source: WeChat Open Community (微信开放社区), 境外主体小程序开发上线指南 > 境外主体注册认证
+- URL: https://developers.weixin.qq.com/community/business/doc/0006eaf7f14ae8155172387406b80d
+- Verified 1: 2026-10-06, fetched with curl through the JSON endpoint (https://developers.weixin.qq.com/community/ngi/doc/detail/0006eaf7f14ae8155172387406b80d), "境外主体还需在45天内完成微信认证流程" and "境外主体小程序账号无需备案，也无需年审" confirmed
+- Verified 2: 2026-10-06, re-fetched, unchanged
+- Used in: wechat-mini-program-cost
+- Notes: Same login-gate recheck note as the entry above.
+
+### Overseas entities: first code review goes to local cyberspace review, about seven days
+- Value: non-individual accounts get 3 expedited reviews a calendar year, normally within 2 hours; certain domestic categories and an overseas entity's first code submission go to the local cyberspace administration for review, about 7 days, no expediting
+- As of: July 2022 (announcement created 2019-11-01, updated 2022-07-26)
+- Source: WeChat Open Community (微信开放社区), announcement 小程序加急审核流程上线
+- URL: https://developers.weixin.qq.com/community/develop/doc/00002a9e18cdc0a04669375a95b001
+- Verified 1: 2026-10-06, fetched with curl through the JSON endpoint (https://developers.weixin.qq.com/community/ngi/doc/detail/00002a9e18cdc0a04669375a95b001), "选择海外主体后首次提交代码审核，需报属地网信部门复核，预计审核时长7天左右" confirmed
+- Verified 2: 2026-10-06, re-fetched, unchanged
+- Used in: wechat-mini-program-cost
+- Notes: Older than 12 months; a rule still posted (settled fallback 9). The standard (non-expedited) review time is not in any formal Tencent doc found; not cited.
+
+### Mini Program filing (备案): required before launch since September 2023; review times
+- Value: from September 1, 2023, a new Mini Program must complete filing before it can go live; live ones had until March 31, 2024, with removal from April 1, 2024 (Tencent's notice of August 9, 2023, reported by Beijing Daily); platform first review 1 to 2 working days, provincial communications administration 1 to 20 working days; the filing number stays valid until canceled; Tencent's filing docs list no fee
+- As of: notice 2023-08-09 (article 2023-08-10); filing FAQ undated, confirmed October 2026
+- Source: Beijing Daily (北京日报); WeChat Open Docs (微信开放文档), 小程序备案常见问答
+- URL: https://xinwen.bjd.com.cn/content/s64d42e11e4b03d11a64e6373.html ; https://developers.weixin.qq.com/miniprogram/product/record/record_faq.html
+- Verified 1: 2026-10-06, both fetched with curl, "自2023年9月1日起，微信小程序须完成备案后才可上架", "2024年3月31日前完成备案", "1-20个工作日" and "备案号都是长期有效的" confirmed
+- Verified 2: 2026-10-06, both re-fetched, unchanged
+- Used in: wechat-mini-program-cost
+- Notes: Legal basis: MIIT notice 工信部信管〔2023〕105号 (2023-07-21, published 2023-08-04, https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2023/art_920db564162e4312916a01bed6540ad8.html), checked once by the research agent; not cited. Do not write "filing is free"; write "Tencent's filing docs list no fee".
+
+### Mini Program network rules: configured domains only, ICP-filed
+- Value: a Mini Program may only talk to server domains set in advance; https and wss only; no IP addresses; domains must have an ICP filing; TLS 1.2 or higher
+- As of: page undated; confirmed October 2026 (platform documentation)
+- Source: WeChat Open Docs (微信开放文档), 网络
+- URL: https://developers.weixin.qq.com/miniprogram/dev/framework/ability/network.html
+- Verified 1: 2026-10-06, fetched with curl, "域名必须经过 ICP 备案" and "只可以跟指定的域名进行网络通信" confirmed
+- Verified 2: 2026-10-06, re-fetched, unchanged
+- Used in: wechat-mini-program-cost
+- Notes: For overseas entities, pair with the overseas team's domain note (entry above): domains registered abroad cannot be filed.
+
+### Cross-border WeChat Pay for Mini Programs: on by default, same entity; direct mode in three markets
+- Value: overseas merchant IDs have Mini Program Payment enabled by default; the Mini Program AppID must share the merchant ID's entity; direct mode only in Hong Kong, Singapore and the UK; Tencent recommends the institution mode
+- As of: FAQ updated 2025-02-19; access-mode page updated 2025-02-18
+- Source: WeChat Pay (微信支付), cross-border developer docs (English)
+- URL: https://pay.weixin.qq.com/doc/global/v2/en/4013665012 ; https://pay.weixin.qq.com/doc/global/v2/en/4013662658
+- Verified 1: 2026-10-06, both fetched with curl, "Mini Program Payment is enabled by default", "associate with the Mini Program APPID that shares the same subject with the merchant ID", "only available in Hong Kong, Singapore, and the UK" and "recommended that merchants choose the institution mode" confirmed
+- Verified 2: 2026-10-06, both re-fetched, unchanged
+- Used in: wechat-mini-program-cost; wechat-marketing-cost (all five locales, from 2026-10-06)
+- Notes: No service-charge rate is published on these pages or the cross-border merchant FAQ. The 2025-12-31 Chinese setup page says direct mode is open "仅在香港及英国"; the English page lists Singapore too. Cite the English page as published, and recheck both on reuse.
+
+### WeChat external link rules, October 2025
+- Value: the rules cover any link outside WeChat's own domains shared inside WeChat; links to sites without the legal filing are a listed violation (2.18.4); induced or forced downloads are banned (2.3); H5 games and quizzes are banned (2.5)
+- As of: updated and in force 2025-10-23
+- Source: WeChat (微信), 微信外部链接内容管理规范
+- URL: https://weixin.qq.com/cgi-bin/readtemplate?t=weixin_external_links_content_management_specification
+- Verified 1: 2026-10-06, fetched with curl, "生效日期：2025年10月23日", "未按照法律法规规定履行备案手续" and "H5游戏、测试类内容" confirmed
+- Verified 2: 2026-10-06, re-fetched, unchanged
+- Used in: wechat-mini-program-cost
+
+### Mini Program entry scenes and codes
+- Value: WeChat logs each Mini Program visit by entry scene, about 230 IDs, including search results (1053), Mini Program codes (1047), Official Account articles (1058) and menus, Channels links (1184) and the recently used bar (1089); Mini Program codes never expire
+- As of: pages undated; confirmed October 2026 (platform documentation)
+- Source: WeChat Open Docs (微信开放文档), 场景值列表; 获取小程序码
+- URL: https://developers.weixin.qq.com/miniprogram/dev/reference/scene-list.html ; https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/qr-code.html
+- Verified 1: 2026-10-06, both fetched with curl, "搜一搜的结果页", "扫描小程序码", "视频号链接打开小程序", "公众号文章", "「最近使用」栏" and "所有生成的小程序码永久有效" confirmed
+- Verified 2: 2026-10-06, both re-fetched, unchanged
+- Used in: wechat-mini-program-cost
+- Notes: The scene list still carries "nearby Mini Programs" (1026, not deprecated); only its ad slot (1068) is marked deprecated. Do not claim the nearby list was discontinued. No Tencent figure gives the share of visits by entry scene.
+
+### NOT LOGGED, searched and rejected 2026-10-06 (WeChat Mini Program cost)
+- Tencent Q1 and Q2 2026 results: no Mini Program figure in either release.
+- "Mini Program DAU 850 million, annual GMV 9.5 trillion yuan" (weiyangx, Sohu, CSDN, an agency blog) and search summaries of "Q1 2026 WeChat Search queries up 25%" or "AI Mini Programs up 40%": not traceable to Tencent. Not cited.
+- 36Kr and Huxiu, "从20万跌到2万" (2026-02-25): developers quoting their own prices under nicknames. Fails the non-vendor test. Not cited.
+- A commerce or membership Mini Program build price: no public award; developer price lists only. The article says so (settled fallback 1).
+- The "annual review lapse cuts search after X days" timeline: user-posted copies of a dashboard notice, two conflicting versions. Not cited.
+- "Mini Program verification became yearly in January 2024": self-media and vendor pages only.
+- CNNIC 57th report (2026-02-05): no Mini Program line.
+- First-party Mini Program build quotes (brief 06B): none logged. Settled fallback 3; brief amended; brief 07B's matching request amended.
+
+### WeChat Official Account open-rate bands for brand accounts, KAWO 2022
+- Value: open rate by post-performance percentile band, former subscription account / service account: poor (bottom 20%) under 0.7% / under 1.5%; low (20th to 40th) 0.7% to 1.3% / 1.5% to 2.8%; average (40th to 60th) 1.3% to 2.2% / 2.8% to 4.1%; good (60th to 80th) 2.2% to 4% / 4.1% to 6.8%; great (80th to 95th) 4% to 7.8% / 6.8% to 14.9%; excellent (top 5%) above 7.8% / above 14.9%. Bands are April to July 2022 averages. Sample: about 15,000 brand posts, January 1, 2021 to July 1, 2022. No reliable correlation between follower count (under 10,000; 10,000 to 100,000; over 100,000) and open rate. Open rate defined as reads from the push message divided by recipients. Both account types trended slowly down over the 18 months
+- As of: April to July 2022 (published 2022-12-11 in Chinese, 2022-12-28 in English)
+- Source: KAWO (科握), 品牌公众号推文打开率达到多少算表现好？ / What Is a Good WeChat OA Open Rate?
+- URL: https://kawo.com/cn/%E5%8D%9A%E5%AE%A2/%E5%93%81%E7%89%8C%E5%85%AC%E4%BC%97%E5%8F%B7%E6%8E%A8%E6%96%87%E6%89%93%E5%BC%80%E7%8E%87%E5%9F%BA%E5%87%86%E7%BA%BF ; https://kawo.com/en/blog/open-rate-benchmark-for-brands-wechat-oa
+- Verified 1: 2026-10-08, both fetched with curl; "2022年12月11日", "15000篇推文", "2021年1月1日到2022年7月1日", "打开率与关注账号人数的相关性太低", "2022年4月-7月", "依旧呈一个缓慢下降的趋势", every band string ("服务号在1.5%-2.8%间", "一般的订阅号1.3%-2.2%，服务号2.8%-4.1%" and the rest, in the page's image alt text) and the definition "公众号打开率=公众号消息来源阅读次数/推文送达人数" confirmed; English page "28 Dec 2022", "around 15,000 articles", "No clear correlation between the follower number and open rate"
+- Verified 2: 2026-10-08, both re-fetched before the draft was finished (check2 and again after the quality pass, check2b), unchanged
+- Used in: wechat-open-rate-benchmark
+- Notes: KAWO is a Shanghai social media software company (a data vendor), not a social media agency; the sample is brand accounts connected to its software. Older than 12 months; no newer public brand benchmark was found on 2026-10-08, so cite with the year (fallback 9) and present the bands as a ceiling. The band table is an image on the page; its text is in the image alt attribute, which is what the check reads. The follower-band figures in the same article are question marks in the chart, by design: KAWO found no link. Recheck for a newer KAWO or NewRank brand benchmark before 13D (December 2026).
+
+### WeChat weekly usage, read sources and timing, KAWO 2019
+- Value: in a study of 20 million data points on more than 500,000 WeChat and Weibo posts (August 2016 to July 2019), "WeChat usage is more consistent throughout the week and only a little lower on Weekends"; "5pm and 11pm are clearly the best two publish windows of the day"; most accounts got 68% of reads from the push, the rest from Moments shares (10%), chats (3%), history (4%) and others (11%); accounts under 2,000 followers got more of their reads from sharing; service accounts can contact users 4 times a month
+- As of: August 2016 to July 2019 (published 2019-10-15)
+- Source: KAWO (科握), 2019 WeChat & Weibo Data Insights
+- URL: https://kawo.com/en/blog/2019-wechat-weibo-data-insights
+- Verified 1: 2026-10-08, fetched with curl; "15 Oct 2019", "500,000 posts", the weekly-usage sentence, "5pm and 11pm", "68%" and the small-account sentence confirmed
+- Verified 2: 2026-10-08, re-fetched before the draft was finished, unchanged
+- Used in: wechat-open-rate-benchmark (weekly usage and publishing windows only)
+- Notes: Seven years old and from KAWO's own client base ("might not be representative of Weibo and WeChat overall", the page says). It is the only dated day-of-week data found; cite with the period (fallback 9). The read-source split predates the 2021 feed change and the 2025 Recommend button, so it is not used as a current split.
+
+### WeChat Official Account open rate history and the shift to recommendation, 36Kr March 2025
+- Value: average Official Account open rate "曾高达10%" in 2017, down to 1% to 2% around 2020; on 36Kr's consumer account (36氪未来消费) the share of reads from recommendation (推荐) rose from 24.3% in a week of August 2023 to 45.9% in a week of March 2025, making recommendation its biggest source ahead of the push; on 36Kr's main account recommendation was 2.2% of reads; "Recommend" (推荐) replaced "Wow" (在看) in January 2025; more than 20 million Official Account creators; "轻订阅，重推荐" (light on subscription, heavy on recommendation) described as the core of WeChat's recent distribution changes
+- As of: March 2025 (article dated 2025-03-19 on 36Kr, 2025-03-18 on the Tencent News mirror)
+- Source: 36Kr (36氪), Wang Yuchan (王毓婵), "朋友推荐"权重上升，公众号小号的春天来了
+- URL: https://eu.36kr.com/zh/p/3211329723614340 ; mirror https://news.qq.com/rain/a/20250318A0852200
+- Verified 1: 2026-10-08, both fetched with curl; "2017年，微信公众号文章的平均打开率曾高达10%", "2020年前后快速下降到了1-2%", "从2023年8月的24.3%，上升到了2025年3月的45.9%", "仅占2.2%", "“推荐”功能在今年1月由“在看”进化而来", "超2000万的公众号创作者", "轻订阅，重推荐" confirmed
+- Verified 2: 2026-10-08, re-fetched before the draft was finished, unchanged
+- Used in: wechat-open-rate-benchmark; china-engagement-rate-drop (all five locales, from 2026-10-08, replacing a Jizhile attribution); content-mix-china (all five locales, from 2026-10-08, the 10% and 1% to 2% line)
+- Notes: The account figures are 36Kr's own back-end data for two of its accounts, not a platform average; say so. The 10% and 1% to 2% open-rate line is 36Kr's statement with no further source named. The same article says 10w+ articles rose by 39,000 on 2023, which conflicts with NewRank's own 53,300; neither delta is used. 36kr.com itself serves a Volcano Engine security check to curl; the eu.36kr.com copy on 36Kr's own domain and the Tencent News mirror both serve the text. This is the original of the "45.9%" figure the 2026-10-05 run could only find second-hand (see the correction under that NOT LOGGED block).
+
+### Official Account articles and 100,000-read articles, 2024, NewRank
+- Value: more than 444 million Official Account articles in 2024 (超4.44亿篇); 307,800 passed 100,000 reads (30.78万篇), 53,300 more than in 2023; from NewRank's daily-monitored sample of about a million accounts (百万级公众号样本库)
+- As of: full year 2024 (article dated 2025-01-19)
+- Source: NewRank (新榜), 微信2024复盘：百万粉视频号数量翻倍，日产超324篇公众号原创10万+
+- URL: https://www.newrank.cn/article/detail/29573
+- Verified 1: 2026-10-08, fetched with curl; "2025-01-19", "2024年公众号累计产出超4.44亿篇文章", "有30.78万篇阅读量达到10万+", "百万级公众号样本库" confirmed
+- Verified 2: 2026-10-08, re-fetched before the draft was finished, unchanged
+- Used in: wechat-open-rate-benchmark
+- Notes: NewRank's sample, not a Tencent total. Recheck for the 2025 review (NewRank publishes it each January).
+
+### Official Account feed history, Friends ♡ module and Channels ranking signals, NewRank March 2025
+- Value: the feed went to cards in 2018; in 2021 a recommended block (推荐内容) appeared and folded part of subscribed content; the timeline was broken up; a "Friends ♡" (朋友推荐) module was in test in March 2025; on one NewRank article with more than 100,000 reads (《收手吧阿祖，你398元的英语课卖不动了》), there were 1,010 shares, 134 likes and 34 ♡, and friend recommendation produced 0.02% of reads; at WeChat Open Class 2025 the Channels team said share, like and comment rates carry high weight in Channels recommendation
+- As of: March 2025 (article dated 2025-03-21)
+- Source: NewRank (新榜), "朋友推荐"杀入信息流！公众号要从微信好友那里"薅流量"
+- URL: https://newrank.cn/article/detail/30626
+- Verified 1: 2026-10-08, fetched with curl; "2025-03-21", "2021年，公众号信息流中开始出现“推荐内容”板块，折叠部分订阅内容", "信息流的时间轴被打乱", "仅有0.02%", "收手吧阿祖，你398元的英语课卖不动了", "转发率、点赞率、评论率等是视频号推荐算法中占比较高的指标" confirmed
+- Verified 2: 2026-10-08, re-fetched before the draft was finished, unchanged
+- Used in: wechat-open-rate-benchmark
+- Notes: The Channels signal line is NewRank reporting the Channels team at a closed-door event; quote it as reported. The ♡ count is one article, not a platform rate. NewRank contacted WeChat about the Friends module and had no reply at publication.
+
+### WeChat star (星标) pins an account in the folded feed; article stars added April 2025
+- Value: starring an account on its profile pins it at the top of the folded Official Account feed; from April 2025 single articles can be starred too
+- As of: April 2025 (article dated 2025-04-04)
+- Source: Bianews (鞭牛士), via Tencent News (腾讯新闻)
+- URL: https://news.qq.com/rain/a/20250404A02VOP00
+- Verified 1: 2026-10-08, fetched with curl; "2025-04-04", "微信公众号新增「星标」功能", "相当于在公众号折叠栏置顶" confirmed
+- Verified 2: 2026-10-08, re-fetched before the draft was finished, unchanged
+- Used in: wechat-open-rate-benchmark
+- Notes: A tech outlet's hands-on report, not a Tencent notice. No Tencent help page on starring was found.
+
+### WeChat rules against clickbait titles, 2024
+- Value: February 28, 2024 notice on exaggerated marketing titles (关于规范公众号标题夸大营销的公告): use accurate, clear titles; articles and accounts that inflate or impersonate official notices are handled by severity. May 30, 2024 notice: violation types include impersonating official notices (混淆官方类), inflammatory titles (煽动蛊惑类), exaggerated health or lifestyle claims, misleading titles about public figures, and evasion of review with spaces, rare characters or symbols (对抗类); the platform will keep patrolling
+- As of: February and May 2024
+- Source: WeChat Official Platform operations center (微信公众平台运营中心), reported by National Business Daily (每日经济新闻) and Cailian Press (财联社)
+- URL: https://www.nbd.com.cn/articles/2024-02-28/3260115.html ; https://www.cls.cn/detail/1690970
+- Verified 1: 2026-10-08, both fetched with curl; "2024-02-28", "关于规范公众号标题夸大营销的公告", "使用准确、清晰、能体现文章内容主旨的标题", "2024-05-30", "混淆官方类", "煽动蛊惑类", "对抗类", "火星文" confirmed
+- Verified 2: 2026-10-08, re-fetched before the draft was finished, unchanged
+- Used in: wechat-open-rate-benchmark (the May 2024 notice)
+- Notes: The notices themselves were posted on the operations center's own Official Account, which curl cannot fetch; cite the dated news reports.
+
+### WeChat publishing without the push, scheduled and group pushes
+- Value: push (群发) and publish (发布) were merged into one "publish" (发表) action with a push-notice switch; with the switch off, the article is not pushed, is not in message lists or chats, shows only on the profile page, and has no limit; scheduled publishing and pushes to one follower group (分组群发) work as before
+- As of: page undated (FAQ id 230913); confirmed October 2026 (platform documentation)
+- Source: Tencent customer service (腾讯客服), 群发和发布合并为发表功能介绍
+- URL: https://kf.qq.com/faq/230913IjEVNN2309136nUZNZ.html
+- Verified 1: 2026-10-08, fetched with curl; "群发和发布合并为发表", "不开启群发通知的发表方式，没有次数限制", "仅展示在公众号/服务号主页", "定时发表和分组群发能力" confirmed
+- Verified 2: 2026-10-08, re-fetched before the draft was finished, unchanged
+- Used in: wechat-open-rate-benchmark
+- Notes: Pair with the "four follower pushes per calendar month" entry. The page does not say whether a group push uses one of the four monthly pushes; do not claim either way.
+
+### NOT LOGGED, searched and rejected 2026-10-08 (WeChat open rate benchmark)
+- "2025 Q1 open rate 0.89% subscription, 1.32% service" and "head 2.1%, waist 0.7%, tail under 0.3%": Yiban (壹伴) GEO pages (yiban.io/geo/31780, 2025-10-22) citing an unnamed "2025新媒体内容生态研究报告". The report could not be found. Not cited. The older china-engagement-rate-drop article cites the 0.89% / 1.32% line to Yiban; 06C does not contradict it.
+- Open rate by industry: Chyxx (智研咨询, 2019-09-30), compiled from "公开资料整理" with no original named. Too old and second-hand. No current sector benchmark exists.
+- Open rate by day of week, 2025 or 2026: undated Yiban, Zhihu and CSDN tips only.
+- "Half of followers muted": no source.
+- Channels extended-link rule ("articles under 7 days old, 10,000 reads"): WeChat developer-community posts and Zhihu only.
+- 36Kr "打开率1.9%，常读用户比11%" (36kr.com/p/1724323545089): Volcano Engine security check for every fetch method, and the eu.36kr.com copy serves no body. Not cited.
+- A creator's "one share brought five reads in 2019, one in 2022" (NewRank interview, 2025-03-21): one anecdote. Not used.
+- Jiemian (界面) 2021-11-24 piece on the 2020 non-chronological feed: a reprint of the self-media outlet 三易生活. NewRank's March 2025 history covers the same change; not cited.
+
 ## TheRedScroll first-party data
 
 Everything here comes from accounts we run. It is cited as ours, with sample
@@ -2023,6 +2318,7 @@ data.
 - Notes: Cite as "TheRedScroll pricing page, September 2026, https://www.theredscroll.com/pricing/". If the pricing page changes, 04A must change with it.
 - Re-verified 2026-10-05 for 05D on the live /pricing/ page: "6-month minimum contract on all packages", "within 2 weeks of contract signing", "Real-life photo & video shoots in China", "KOL & KOC campaigns", "Paid directly to the platform, not through us" and the add-on platform line "Meituan / Dianping" confirmed at check 1 and check 2. No price or tier name used. Used in: travel-hospitality.
 - Re-verified 2026-10-06 for 06A: on the live /pricing/ page "Custom quote", "2-3 weeks from brief approval", "Minimum 4 posts/month per platform", "Paid directly to the platform, not through us" and "6-month minimum contract" confirmed; no price or tier name used at check 1 and check 2. Used in: china-marketing-hidden-costs.
+- Re-verified 2026-10-06 for 06B: on the live /pricing/ page "membership Mini Programs. Custom quote" confirmed at check 1 and check 2. Referenced by name only; no price or tier name used. Used in: wechat-mini-program-cost.
 
 ### TheRedScroll community, reporting and account-ownership commitments, as published
 - Value: "We reply to comments, answer direct messages, monitor brand mentions daily" and "a response playbook agreed with you upfront, and same-day escalation when something could spread"; crisis response plan "within hours" (/weibo-agency/). Day-to-day running includes "community replies" and "monthly reporting in plain English"; report covers "follower growth, article reads, engagement, ad spend at cost, and leads or sales where tracking allows"; WeChat account "registered under your company name", client keeps "the account, the followers, and the full content archive" (/wechat-agency/). Monthly reports cover "follower growth, engagement rates, content performance, ad spend efficiency, and competitive benchmarking"; KPIs "reviewed monthly, recalibrated quarterly" (/services/strategy-campaigns/). Reporting "in English with Chinese-language data attached" (/platforms/others/). "We write in Chinese. Not translate." and real-life production "quoted separately" (/services/content-production/)
@@ -2071,12 +2367,15 @@ data.
 
 <!-- Needed:
 
-- WeChat open rate by follower band and sector (brief 06C)
 - WeCom group retention curve and repeat purchase lift (brief 12B)
 - Engagement rate by platform and sector (brief 13D, the benchmarks report)
 - Ad benchmark ranges: CPC, CPM, cost per lead (brief 08B). Brief 04B used
   the advertising page's published planning ranges labeled as ours and cut
   cost per lead (settled fallback).
+
+Closed 2026-10-08, not wanted again: the 06C WeChat open rate by follower band
+and sector. 06C stands on KAWO 2022 and platform sources (fallback 3), and the
+research showed follower band does not predict open rate.
 
 Closed 2026-10-02, not wanted again: the 02B traffic pool progression and the
 03B rejection reasons. Both articles stand on platform sources (SPEC,

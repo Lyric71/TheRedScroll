@@ -55,7 +55,9 @@ ad operations and reporting.
 
 Keep them apart on every proposal you read. A quote that merges creator fees
 into the agency fee hides both. [Our guide to China social media marketing cost](/insights/china-social-media-marketing-cost/)
-does the same exercise across WeChat, Douyin and Weibo.
+does the same exercise across WeChat, Douyin and Weibo. Whether Xiaohongshu
+or WeChat should come first is a separate call, and
+[our WeChat vs Xiaohongshu guide](/insights/wechat-vs-xiaohongshu/) gives the decision rule.
 
 ## Account and verification: the fixed costs
 

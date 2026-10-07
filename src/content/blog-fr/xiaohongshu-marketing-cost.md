@@ -59,7 +59,8 @@ et le reporting.
 Dans chaque proposition que vous lisez, tenez ces six postes séparés. Un
 devis qui noie les cachets des créateurs dans les honoraires d’agence masque
 les deux. [Notre guide sur le coût du marketing social en Chine](/fr/decryptages/china-social-media-marketing-cost/)
-applique la même grille à WeChat, Douyin et Weibo.
+applique la même grille à WeChat, Douyin et Weibo. Reste à savoir qui, de Xiaohongshu ou de WeChat, doit passer en premier :
+[notre comparatif WeChat ou Xiaohongshu](/fr/decryptages/wechat-vs-xiaohongshu/) tranche la question.
 
 ## Compte et vérification : les coûts fixes
 

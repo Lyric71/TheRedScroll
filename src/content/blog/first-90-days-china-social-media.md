@@ -106,6 +106,10 @@ be live in week two.
 [Our platform-by-platform answer on whether you need a Chinese entity](/insights/chinese-entity-social-media/)
 covers the edge cases, from Weibo's agent route to agency-held accounts.
 
+The other week-one call is which platform leads.
+[Our WeChat vs Xiaohongshu guide](/insights/wechat-vs-xiaohongshu/) gives a decision
+rule by product type, price point and sales model.
+
 Then the applications go in and the platform clock starts. Tencent publishes
 its overseas review time.
 

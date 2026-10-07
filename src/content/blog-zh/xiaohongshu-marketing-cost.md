@@ -42,7 +42,7 @@ featuredImage: "/images/blog/xiaohongshu-marketing-cost.webp"
 
 最后是**代理服务费**，覆盖策略、中文文案、创作者筛选、广告运营和数据报告。
 
-读任何一份报价单，都把这六项分开看。把创作者费用揉进代理服务费的报价，两项都看不清楚。[我们的中国社交媒体营销费用指南](/zh/guandian/china-social-media-marketing-cost/)对微信、抖音和微博做了同样的拆解。
+读任何一份报价单，都把这六项分开看。把创作者费用揉进代理服务费的报价，两项都看不清楚。[我们的中国社交媒体营销费用指南](/zh/guandian/china-social-media-marketing-cost/)对微信、抖音和微博做了同样的拆解。至于小红书和微信该先做哪个，[我们的《微信还是小红书》一文](/zh/guandian/wechat-vs-xiaohongshu/)给出了判断方法。
 
 ## 账号与认证：固定成本
 

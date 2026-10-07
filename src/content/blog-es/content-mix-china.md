@@ -4,6 +4,7 @@ description: "El reparto de 80 % de valor y 20 % de venta nació en feeds donde 
 metaTitle: "La regla del 80/20 no funciona en China"
 metaDescription: "La regla del 80/20 fracasa en las plataformas chinas, donde el contenido es la tienda. Cómo se reparte bien el contenido en RedNote, Douyin y WeChat."
 publishDate: 2026-07-13
+updatedDate: 2026-10-08
 author: "TheRedScroll"
 platforms: ["rednote", "douyin", "wechat", "weibo"]
 category: "Estrategia"
@@ -111,8 +112,8 @@ De ahí que la venta agresiva sea un despilfarro en Douyin. El camino del conten
 
 WeChat juega en otra liga. Es su espacio propio, el lugar donde conserva la audiencia ya ganada. Las tasas de apertura recuerdan una obligación: respetar la atención de la gente.
 
-> Las tasas de apertura de las publicaciones de cuentas oficiales de WeChat se mueven normalmente entre el 3 % y el 8 %, y la mayoría de las cuentas queda por debajo del 5 %.
-> Fuente: CSDN, datos de operación de cuentas oficiales de WeChat
+> La tasa media de apertura de los artículos de cuentas oficiales de WeChat llegó al 10 % en 2017 y cayó al 1 o 2 % hacia 2020.
+> Fuente: 36Kr (36氪), marzo de 2025
 
 Si la mayoría no llega a abrir una publicación concreta, cada mensaje de WeChat debe ganarse el sitio. Aquí es donde rinde el contenido largo y útil de verdad: una guía que merece la lectura, un aviso de servicio necesario, un grupo privado que da motivos para quedarse. Un punto más de venta directa encaja bien, porque quien abrió el mensaje ya eligió.
 

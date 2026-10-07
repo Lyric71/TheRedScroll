@@ -111,8 +111,11 @@ Zuerst ist zu klären, welche Rechtsform den Antrag stellt. WeChat (微信) und
 Xiaohongshu (小红书) akzeptieren ein ausländisches Unternehmen; Douyin (抖音)
 ist, wie beschrieben, auf ein chinesisches zugeschnitten. Der Punkt gehört in
 Woche 1, denn von ihm hängt ab, welche Konten in Woche 2 stehen können.
-[Unsere Analyse, Plattform für Plattform, ob Sie eine chinesische Gesellschaft brauchen](/de/analysen/chinese-entity-social-media/),
+[Unsere Analyse, Plattform für Plattform, ob Sie eine chinesische Gesellschaft brauchen](/de/analysen/chinese-entity-social-media/)
 behandelt die Grenzfälle, vom Agentenweg bei Weibo bis zum Konto auf die Agentur.
+
+Die zweite Entscheidung der ersten Woche betrifft die Frage, welche Plattform vorangeht.
+[Unser Vergleich WeChat oder Xiaohongshu](/de/analysen/wechat-vs-xiaohongshu/) liefert dafür eine Entscheidungsregel nach Produkttyp, Preisniveau und Vertriebsmodell.
 
 Sind die Anträge raus, läuft die Uhr der Plattform. Ihre Prüfdauer für das
 Ausland legt Tencent offen.

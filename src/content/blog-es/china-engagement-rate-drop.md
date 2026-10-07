@@ -4,6 +4,7 @@ description: "La interacción se desplomó en las plataformas chinas en 2025. El
 metaTitle: "Por qué cae la interacción en China"
 metaDescription: "Las plataformas chinas reescribieron su puntuación en 2025. Por qué cae la tasa de interacción y qué conviene medir ahora en el informe mensual."
 publishDate: 2026-07-25
+updatedDate: 2026-10-08
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Estrategia"
@@ -55,10 +56,10 @@ Muchas marcas lo toman por un problema de contenido. Está más bien en las
 cañerías: hace tiempo que el aviso push dejó de ser la puerta principal de un
 artículo en WeChat.
 
-> Una cuenta del sector financiero registró que el 45,9 % de su tráfico llegaba
-> por recomendación social, por delante del envío a los suscriptores por primera
-> vez.
-> Fuente: 极致了数据 / Jizhile Data, 2025
+> En la cuenta de consumo de 36Kr, la cuota de lecturas llegadas por
+> recomendación pasó del 24,3 % en agosto de 2023 al 45,9 % en marzo de 2025
+> y adelantó al envío a los suscriptores.
+> Fuente: 36Kr (36氪), marzo de 2025
 
 Asumido ese desplazamiento, la puntuación se vuelve legible. Varias de las
 cifras que siguen proceden de 极致了数据 / Jizhile Data, una firma de seguimiento

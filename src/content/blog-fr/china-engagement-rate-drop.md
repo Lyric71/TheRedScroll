@@ -4,6 +4,7 @@ description: "L’engagement a reculé sur toutes les plateformes chinoises en 2
 metaTitle: "Pourquoi votre engagement recule en Chine"
 metaDescription: "Votre engagement chinois recule parce que WeChat, Douyin et RedNote ont changé leur grille de notation en 2025. Ce qu’il faut mesurer désormais."
 publishDate: 2026-07-25
+updatedDate: 2026-10-08
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Stratégie"
@@ -57,9 +58,10 @@ Beaucoup de marques y voient un problème éditorial. La panne est ailleurs, dan
 tuyauterie : la notification n’est plus depuis longtemps la porte
 d’entrée principale d’un article WeChat.
 
-> Un compte spécialisé dans la finance a vu 45,9 % de son trafic arriver par la
-> recommandation sociale, devant la diffusion aux abonnés pour la première fois.
-> Source : 极致了数据 / Jizhile Data, 2025
+> Sur le compte consommation de 36Kr, la part des lectures venues de la
+> recommandation est passée de 24,3 % en août 2023 à 45,9 % en mars 2025, au
+> point de devancer la diffusion aux abonnés.
+> Source : 36Kr (36氪), mars 2025
 
 Ce déplacement admis, la grille de notation s’éclaire. Plusieurs
 chiffres qui suivent proviennent de 极致了数据 / Jizhile Data, société de suivi

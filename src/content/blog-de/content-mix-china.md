@@ -4,6 +4,7 @@ description: "Die Aufteilung in 80 Prozent Mehrwert und 20 Prozent Verkauf stamm
 metaTitle: "Die 80/20-Content-Regel scheitert in China"
 metaDescription: "Auf Chinas Plattformen ist der Content das Geschäft, die 80/20-Regel greift nicht. Der richtige Mix für RedNote, Douyin und WeChat, mit Zahlen belegt."
 publishDate: 2026-07-13
+updatedDate: 2026-10-08
 author: "TheRedScroll"
 platforms: ["rednote", "douyin", "wechat", "weibo"]
 category: "Strategie"
@@ -111,8 +112,8 @@ Deshalb ist hartes Verkaufen auf Douyin reine Verschwendung. Der Weg vom Inhalt 
 
 WeChat spielt nach anderen Regeln. Es ist Ihr eigener Raum, der Ort, an dem Sie das bereits gewonnene Publikum halten. Die Öffnungsraten mahnen zum sorgsamen Umgang mit der Aufmerksamkeit.
 
-> Die Öffnungsraten von Beiträgen offizieller WeChat-Konten liegen üblicherweise zwischen 3 und 8 Prozent, die meisten Konten bleiben unter 5 Prozent.
-> Quelle: CSDN, Betriebsdaten offizieller WeChat-Konten
+> Die durchschnittliche Öffnungsrate von Artikeln offizieller WeChat-Konten lag 2017 noch bei bis zu 10 Prozent und fiel bis etwa 2020 auf 1 bis 2 Prozent.
+> Quelle: 36Kr (36氪), März 2025
 
 Wenn die meisten Abonnenten einen Beitrag nie öffnen, muss sich jede WeChat-Nachricht ihren Platz verdienen. Hier zahlt sich längerer, wirklich nützlicher Inhalt aus: ein Leitfaden, der die Lektüre lohnt, eine Service-Information, die man braucht, eine private Gruppe, die einen Grund zum Bleiben gibt. Etwas mehr direkter Verkauf ist hier vertretbar, denn wer den Beitrag öffnet, hat sich bereits für Sie entschieden.
 

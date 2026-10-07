@@ -58,7 +58,8 @@ selección de creadores, gestión de anuncios e informes.
 En cada propuesta que lea, mantenga esas seis partidas separadas. Un
 presupuesto que disuelve los honorarios de los creadores en la tarifa de
 agencia esconde ambos. [Nuestra guía sobre el coste del marketing en redes sociales chinas](/es/analisis/china-social-media-marketing-cost/)
-aplica el mismo ejercicio a WeChat, Douyin y Weibo.
+aplica el mismo ejercicio a WeChat, Douyin y Weibo. Si duda entre empezar por Xiaohongshu o por WeChat,
+[nuestra comparativa entre WeChat y Xiaohongshu](/es/analisis/wechat-vs-xiaohongshu/) ofrece la regla para decidir.
 
 ## Cuenta y verificación: los costes fijos
 

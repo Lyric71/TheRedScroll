@@ -63,7 +63,7 @@ find a new figure, append it to that ledger before you finish.
 
 - Ad minimums and deposit, cite the platform. Research on 2026-09-03 found no platform or trade-press source for a Douyin first deposit (only reseller blogs): if that still holds, say no figure is published and cut it. (Amended 2026-10-02: research proved the original line wrong. See editorial/CLAUDE.md, "No TODO leaves a run".)
 - Douyin DAU, cite ByteDance reporting, dated
-- Production costs from our own quotes, labeled as ours
+- Production costs from our own quotes, labeled as ours, only if they are logged in the ledger's first-party section with value, sample, period and clearance by the draft run; otherwise build the section on dated market sources and drop the first-party angle (amended 2026-10-06 by the 06B draft run: brief 06B made the same request and no quote was logged; SPEC settled fallback 3)
 
 **If a figure cannot be sourced, cut the claim.** Do not estimate, do not
 hedge, do not write "industry sources suggest". A missing number is better

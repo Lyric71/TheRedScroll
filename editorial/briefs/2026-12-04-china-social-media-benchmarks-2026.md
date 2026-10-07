@@ -46,7 +46,7 @@ summary or conclusion section. End on the CTA.
 
 1. Method: sample size, period, how each metric is defined
 2. Headline benchmarks: engagement rate by platform
-3. WeChat: open rate and read rate by follower band
+3. WeChat: open rate and read rate by account type (service versus former subscription account), with total reads and read sources beside open rate (amended 2026-10-08 by the 06C run: KAWO's 2022 study of about 15,000 brand posts found no reliable link between follower band and open rate, and open rate counts push reads only; see the 06C ledger entries)
 4. Xiaohongshu: engagement and save rate by sector
 5. Douyin: completion rate and engagement by video length
 6. Weibo: interaction rate and the campaign effect

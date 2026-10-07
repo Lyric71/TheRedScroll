@@ -115,6 +115,9 @@ puisqu’il commande la liste des comptes ouverts en semaine 2.
 [Notre analyse plateforme par plateforme sur la nécessité d’une société chinoise](/fr/decryptages/chinese-entity-social-media/)
 détaille les cas limites, de la voie de l’agent sur Weibo aux comptes détenus par une agence.
 
+L’autre décision de la semaine 1 porte sur la plateforme de tête.
+[Notre comparatif WeChat ou Xiaohongshu](/fr/decryptages/wechat-vs-xiaohongshu/) propose une règle de décision selon le type de produit, le niveau de prix et le mode de vente.
+
 Les dossiers partent, le compteur des plateformes s’enclenche. Tencent, lui,
 affiche son délai d’examen pour l’étranger.
 

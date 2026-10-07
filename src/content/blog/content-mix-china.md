@@ -4,6 +4,7 @@ description: "The old split of 80% value and 20% selling was built for feeds whe
 metaTitle: "The 80/20 content rule does not work in China"
 metaDescription: "The 80/20 content rule fails on China's platforms, where content is the store. What the right mix looks like on RedNote, Douyin, and WeChat."
 publishDate: 2026-07-13
+updatedDate: 2026-10-08
 author: "TheRedScroll"
 platforms: ["rednote", "douyin", "wechat", "weibo"]
 category: "Strategy"
@@ -111,8 +112,8 @@ That is why hard selling is such a waste on Douyin. The path from content to pur
 
 WeChat plays a different game. It is your owned space, the place you keep the audience you already earned. Open rates tell you to respect people's attention.
 
-> Open rates on WeChat Official Account posts typically run between 3% and 8%, and most accounts sit below 5%.
-> Source: CSDN, WeChat Official Account operations data
+> The average open rate of WeChat Official Account articles was as high as 10% in 2017 and fell to 1% to 2% around 2020.
+> Source: 36Kr (36氪), March 2025
 
 With most people never opening a given post, every WeChat message has to earn its place. This is where longer, genuinely useful content pays off: a guide worth reading, a service update people need, a private group that gives members a reason to stay. A little more direct selling is fine here, because the people who opened it already chose you.
 

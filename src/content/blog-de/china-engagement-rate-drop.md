@@ -4,6 +4,7 @@ description: "2025 sind die Interaktionszahlen auf Chinas Plattformen gefallen. 
 metaTitle: "Engagement-Rate China: warum sie weiter sinkt"
 metaDescription: "Chinas Plattformen haben 2025 ihre Bewertung umgebaut. Warum die Engagement-Rate fällt und welche Kennzahlen im Reporting jetzt zählen."
 publishDate: 2026-07-25
+updatedDate: 2026-10-08
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Strategie"
@@ -54,9 +55,10 @@ nicht gebrochen.
 Viele Marken halten das für ein Content-Problem. Es liegt eher an den Leitungen:
 Push ist längst nicht mehr die Haupttür in einen WeChat-Artikel.
 
-> Ein Finanzkonto verzeichnete 45,9 Prozent seines Traffics über soziale
-> Empfehlungen und lag damit erstmals vor der Zustellung an die Abonnenten.
-> Quelle: 极致了数据 / Jizhile Data, 2025
+> Beim Verbraucherkonto von 36Kr stieg der Anteil der Lesezugriffe über
+> Empfehlungen von 24,3 Prozent im August 2023 auf 45,9 Prozent im März 2025
+> und überholte damit die Zustellung an die Abonnenten.
+> Quelle: 36Kr (36氪), März 2025
 
 Erst mit dieser Verschiebung im Kopf wird die Bewertung lesbar. Mehrere der
 folgenden Zahlen stammen von 极致了数据 / Jizhile Data, einem Monitoring-Haus aus
