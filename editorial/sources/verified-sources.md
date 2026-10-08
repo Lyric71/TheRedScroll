@@ -238,6 +238,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-09-28 for 04B: "普通模式收取10%" still on the page (check 1 and check 2). Still older than 12 months; the fee rule itself is not re-confirmed by a platform page.
 - Notes: Older than 12 months. The rule is still applied by the platform, but the Pugongying help center (pgy.xiaohongshu.com) blocks fetches. Replace with a platform page when one can be fetched.
 - Re-verified 2026-10-06 for 06A: "普通模式收取10%" confirmed; still older than 12 months, cited with its October 2022 date at check 1 and check 2. Used in: china-marketing-hidden-costs.
+- 2026-10-08 (07A): a platform-level source now exists for the 10% fee: Pugongying help center, custom order doc updated 2026-09-22 (entry "Pugongying custom order: fixed price plus a 10% platform fee, from the platform"). Prefer it for the 10% figure. The premium mode (优效模式) still appears in current Pugongying docs, but no current page states its rate, so the 20% stays cited only with its October 2022 date.
 
 ### WeChat Official Account verification for overseas entities: review time and payment
 - Value: review completed within 7 to 15 working days after complete documents are submitted; 99 US dollars per application, charged regardless of outcome; payment by WeChat Pay or card (Visa, MasterCard, Amex, UnionPay, JCB, Diners, Discover); review outsourced to one of two third-party firms
@@ -620,6 +621,144 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: food-beverage
 - Notes: Platform's own rules page, but dated 2021: say "updated December 2021" in the citation. Community Convention 2.0 (January 2026, see the China Daily entry) sits above these norms and does not replace them. Relevant to 04C (sensitive words) as well.
 
+### WeCom scale: companies connected and WeChat users served daily, August 2025
+- Value: WeCom connects more than 14 million real companies and organizations; companies serve more than 750 million WeChat users a day through it (Tencent vice president Huang Tieming, WeCom 5.0 launch)
+- As of: August 20, 2025
+- Source: Xinhua (新华网); corroborated by Yicai (第一财经), same day, https://www.yicai.com/news/102783091.html
+- URL: http://www.news.cn/tech/20250820/fbe9a69fd7a742629cf8275238bb7b91/c.html
+- Verified 1: 2026-10-08, fetched with curl (logs/scratch/06D/check.py, tag c1); "超过1400万真实的企业与组织", "服务的微信用户数超过7.5亿" and 2025-08-20 confirmed; Yicai "接入企业超1400万" and "每日服务7.5亿微信用户" confirmed
+- Verified 2: 2026-10-08, re-fetched before the draft was finished (tag c2) and again after the quality pass (tag c2b), unchanged
+- Used in: b2b-china-social-teardown
+- Notes: Slightly older than 12 months at use; no newer official WeCom figure was found (settled fallback 9, cite with the date). Matches what-is-wecom and the CRM service page (14 million, 750 million). Recheck at the next WeCom launch event (usually August).
+
+### Xiaohongshu: 89% of users search it first before buying home appliances and home furnishing, 2024
+- Value: 89% of users search Xiaohongshu first when buying home appliances and home furnishing products; home content searches up 4.5 times in three years; seeding cut the decision cycle from an industry average of 45 days to under 20 (platform claim)
+- As of: March 2024 (Xiaohongshu 2024 home-living methodology, 「2024家生活行业方法论」)
+- Source: Baixing Jiadian (百姓家电网), via Sina Tech (新浪科技)
+- URL: https://finance.sina.com.cn/tech/roll/2024-03-19/doc-inanweuq9235781.shtml
+- Verified 1: 2026-10-08, fetched with curl (logs/scratch/06D/check.py, tag c1); "89%", "会优先选择在小红书上进行搜索", "4.5倍", "45天缩短至不到20天" and 2024年03月19日 confirmed
+- Verified 2: 2026-10-08, re-fetched before the draft was finished (tag c2) and again after the quality pass (tag c2b), unchanged
+- Used in: b2b-china-social-teardown (the 89% line only)
+- Notes: Older than 12 months; cited with the year (fallback 9). The 45-to-20-day line is a platform marketing claim; not used.
+
+### Xiaohongshu home-renovation notes and searches, 2024 living trends report
+- Value: home-renovation notes up 87.3% and related searches up 403% over two years (Xiaohongshu 2024 居住趋势); iResearch 2024: 79.5% of home buyers use both online and offline channels
+- As of: November 2024
+- Source: Jiemian (界面新闻)
+- URL: https://www.jiemian.com/article/12013686.html
+- Verified 1: 2026-10-08, fetched with curl (logs/scratch/06D/check.py, tag c1); "家居家装内容的笔记数量增长了87.3%", "相关品类的搜索量增加了403%" and "79.5%的家装家居消费者选择线上+线下的购买渠道" confirmed, page dated 2024/11/21
+- Verified 2: 2026-10-08, re-fetched before the draft was finished (tag c2) and again after the quality pass (tag c2b), unchanged
+- Used in: none yet (cut from 06D for length in the quality pass)
+- Notes: Older than 12 months; cite with the date.
+
+### Xiaohongshu 2026 living trends: "circulation" searches
+- Value: searches for "动线" (home circulation planning) up 75%; new notes on "去家务化" up 131%; pet-friendly and child-friendly searches up 680% and 500% (Xiaohongshu 2026 居住趋势, launched April 22, 2026)
+- As of: April 2026
+- Source: China Daily (中国日报网), reprinting Bandao (半岛网)
+- URL: https://cnews.chinadaily.com.cn/a/202604/24/WS69ead141a310942cc49a92c0.html
+- Verified 1: 2026-10-08, fetched with curl (logs/scratch/06D/check.py, tag c1); "“动线”相关的搜索次数提升了75%" confirmed, page dated 2026-04-24
+- Verified 2: 2026-10-08, re-fetched before the draft was finished (tag c2) and again after the quality pass (tag c2b), unchanged
+- Used in: none yet
+- Notes: Available for home, design and renovation briefs.
+
+### Xingtu creator quoting rules: integration versus custom, length, monthly price changes
+- Value: creators list two prices, integration (植入视频) and custom (定制视频), custom must cost more; longer videos must cost more; one immediate price change a month, other changes take effect on the 1st of the next month; a price under 50% of the platform's suggested price may not take effect
+- As of: August 2026 (page updated 2026-08-19 10:53:52)
+- Source: Ocean Engine (巨量引擎), Xingtu help center (巨量星图帮助中心)
+- URL: https://www.xingtu.cn/help-center/author/113055
+- Verified 1: 2026-10-08, fetched with curl in the 07A run, strings below confirmed
+- Verified 2: 2026-10-08, re-fetched at iteration 8 and again after the quality pass, unchanged; "每月有一次改价且立即生效的机会", "修改价格后次月1号生效", "报价设置需遵循视频时间越长价格越高原则", "若报价低于建议报价的50%则可能无法生效"
+- Used in: china-kol-pricing
+- Notes: The old 1-20s / 21-60s / 60s+ price bands quoted on agency pages are not on the current page. Do not cite them.
+
+### Xingtu task types: fixed price, billed on results, prepaid
+- Value: assigned tasks are CPT (fixed price); open-call (投稿) tasks are billed on results after the video goes live; Xingtu is prepaid
+- As of: July 2026 (page updated 2026-07-09 15:43:57)
+- Source: Ocean Engine (巨量引擎), Xingtu help center
+- URL: https://www.xingtu.cn/help-center/demander/109046
+- Verified 1: 2026-10-08, fetched with curl in the 07A run, strings below confirmed
+- Verified 2: 2026-10-08, re-fetched at iteration 8 and again after the quality pass, unchanged; "以CPT（按时长付费）的方式进行合作", "视频发布后按效果计费", "巨量星图目前属于预付费模式"
+- Used in: china-kol-pricing
+- Notes: Check 2 on 2026-10-08: the first fetch returned a page without the update timestamp; an immediate retry returned the full page.
+
+### Xingtu ad-use authorization fee and the creator's copyright
+- Value: ad-use authorization on assigned tasks is free by default; the client may add a one-off fee from 20 yuan up to 50% of the task amount, and the 5% platform fee applies to it; the creator's authorization is long-term; copyright in an ordered video stays with the creator
+- As of: June 2026 (page updated 2026-06-09 17:11:09); copyright page May 2026 (updated 2026-05-19 10:16:05)
+- Source: Ocean Engine (巨量引擎), Xingtu help center
+- URL: https://www.xingtu.cn/help-center/demander/139122 and https://www.xingtu.cn/help-center/demander/109120
+- Verified 1: 2026-10-08, fetched with curl in the 07A run, strings below confirmed
+- Verified 2: 2026-10-08, re-fetched at iteration 8 and again after the quality pass, unchanged; "默认选项为免费授权", "一口价授权费金额最低不低于20元，最高不高于任务金额的50%", "此处为投广的期限，不是达人素材授权的期限，达人授权长期有效", "素材授权费部分也需支付5%平台服务费", "下单后达人制作视频的版权归达人所有"
+- Used in: china-kol-pricing
+- Notes: The site's influencer page FAQ says a separate licensing payment 'can add 30 to 50% on top'; consistent with this 50% cap, not changed.
+
+### Xingtu invoices carry 6% VAT
+- Value: Xingtu invoices are tax-inclusive at 6% VAT
+- As of: June 2026 (page updated 2026-06-02 13:23:13)
+- Source: Ocean Engine (巨量引擎), Xingtu help center
+- URL: https://www.xingtu.cn/help-center/demander/130343
+- Verified 1: 2026-10-08, fetched with curl in the 07A run, strings below confirmed
+- Verified 2: 2026-10-08, re-fetched at iteration 8 and again after the quality pass, unchanged; "发票含税，税率为6%"
+- Used in: china-kol-pricing
+- Notes: Check 2: same timestamp-less first fetch as 109046, passed on retry.
+
+### Xingtu open-call and recruitment tasks: volume formats and the 0.8 payout
+- Value: open-call (投稿) task is one-to-many, paid on natural plays (CPM); recruitment (招募) task is built for bulk hiring of mid-tier creators and KOCs, 1,000 to 50 million followers; for system-dispatched creators the creator is paid the client's bid times 0.8 and the service provider keeps the difference
+- As of: May 2026 (open-call, updated 2026-05-19); August 2026 (recruitment, updated 2026-08-23)
+- Source: Ocean Engine (巨量引擎), Xingtu help center and service provider help center
+- URL: https://www.xingtu.cn/help-center/author/109207 and https://www.xingtu.cn/help-center/facilitator/140778
+- Verified 1: 2026-10-08, fetched with curl in the 07A run, strings below confirmed
+- Verified 2: 2026-10-08, re-fetched at iteration 8 and again after the quality pass, unchanged; "投稿任务是一种一对多的任务模式", "按视频自然播放量结算", "为满足客户对于中腰部达人及KOC的批量招募需求", "1000粉-5000万粉", "达人结算单价=客户出价*0.8"
+- Used in: china-kol-pricing
+- Notes: The 0.8 rule applies to one task mode only. Do not present 20% as a general agency fee.
+
+### Xingtu creator rules and campaign report: follower inflation and natural traffic
+- Value: creators with serious follower inflation (刷量) on their main account are blocked from taking orders (rules first effective 2023-04-13, revised 2025-10-20); the campaign report can exclude marketing traffic to show natural-traffic metrics and defines completion rate
+- As of: October 2025 (rules revision); June 2026 (report page updated 2026-06-09)
+- Source: Ocean Engine (巨量引擎), Xingtu creator rules and help center
+- URL: https://www.xingtu.cn/help-center/author/134035 and https://www.xingtu.cn/help-center/demander/115182
+- Verified 1: 2026-10-08, fetched with curl in the 07A run, strings below confirmed
+- Verified 2: 2026-10-08, re-fetched at iteration 8 and again after the quality pass, unchanged; "主端账号粉丝量刷量严重", "封禁达人接单权限", "2025年10月20日最新修订生效", "排除营销流量", "查看自然流量下的相关数据指标", "完播率"
+- Used in: china-kol-pricing
+
+### Douyin commercial cooperation authorization agreement, 2026
+- Value: qualitative. Worldwide, non-exclusive right of online dissemination; the creator cannot revoke it during the term; the term can be set to permanent; replaces the 2023 Qianchuan version
+- As of: June 2026 (published 2026-06-18, effective 2026-06-22)
+- Source: Douyin and Ocean Engine (抖音／巨量引擎), 商业合作授权协议
+- URL: https://lf9-cdn-tos.draftstatic.com/obj/ies-hotsoon-draft/account_center/1071a9ba-ffbd-42e8-961f-457385bf210d.html
+- Verified 1: 2026-10-08, fetched with curl in the 07A run, strings below confirmed
+- Verified 2: 2026-10-08, re-fetched at iteration 8 and again after the quality pass, unchanged; "公布时间：【2026】年【6】月【18】日", "授权期限内创作者不可撤销授权", "全球范围内、非独家的信息网络传播权利", "设定的期限为“永久”"
+- Used in: china-kol-pricing
+
+### Pugongying custom order: fixed price plus a 10% platform fee, from the platform
+- Value: creator's fixed price plus a 10% platform service fee (10,000 plus 1,000 = 11,000); default content-only mode; published notes cannot be deleted for 30 days; creators set their own fixed price and list separate prices for image and video notes; the celebrity mode charges no 10% fee; negotiated price 80% to 150% of the listed price, fee 10% of the agreed price; note protection period 30, 45, 60 days or custom 30 to 365
+- As of: September 2026 (custom order doc updated 2026-09-22 17:54:18, version 2026.04; other docs updated 2026-08-30 to 2026-10-02)
+- Source: Xiaohongshu Pugongying help center (小红书蒲公英帮助中心)
+- URL: https://pgy.xiaohongshu.com/help/home
+- Verified 1: 2026-10-08, fetched with curl in the 07A run, strings below confirmed
+- Verified 2: 2026-10-08, re-fetched at iteration 8 and again after the quality pass, unchanged; "默认普通模式，仅提供内容合作服务，收取 10% 服务费", "如创作者一口价报价为 10,000，需额外支付 1,000 平台服务费，总计需支付 11,000", "正式发布的笔记 30 天内不可删除", "博主（K）自主报价，一口价结算", "不收取10%服务费", "图文 / 视频笔记一口价", "平台 TR 10%", "改价幅度为报价的 80%～150%", "品牌与博主协商价格的 10%", "可选：30天，45天，60天，自定义，自定义时长在：30天～365天"
+- Used in: china-kol-pricing
+- Notes: The help center renders with JavaScript. Text read from the platform's own document endpoint, https://pgy.xiaohongshu.com/api/pgy/help/doc?shortcutId=<id>&role=4, shortcutIds eb3150fa550d424459f8838a77c7e433 (custom order), 365934c681f69e354bd38835492e1e8f (trade modes), 97e5a307cc23aeefc7295c76926088c6 (cooperation guide), 32d3922730ccd391216e57b54861f3e8 (price change), e748ef4c760584b31219d823e7bfe10a (protection period). Cite the readable help-center URL. This is the platform-level source the Niaoge Biji 2022 entry asked for, for the 10% fee. The premium mode (优效模式) still appears in current docs but no current page states its rate.
+
+### Pugongying content boost CPM and ad-material authorization
+- Value: brand boost of cooperation notes (内容加热) raised from 15 to 25 yuan CPM, migration completed 2026-01-23, old 5,000-yuan-per-note cap removed; to run a note as a Juguang ad the brand ticks 'use as ad material' at order and the creator accepting the order is the authorization; smart-creative tools cannot be switched on later if not enabled at order
+- As of: September 2026 (boost doc updated 2026-09-20 20:41:33); August 2026 (authorization doc updated 2026-08-30 00:34:17)
+- Source: Xiaohongshu Pugongying help center (小红书蒲公英帮助中心)
+- URL: https://pgy.xiaohongshu.com/help/home
+- Verified 1: 2026-10-08, fetched with curl in the 07A run, strings below confirmed
+- Verified 2: 2026-10-08, re-fetched at iteration 8 and again after the quality pass, unchanged; "CPM从15元调整为25元", "2026年1月23日", "我希望该笔记可以作为广告素材进行后续投放", "博主接受订单即为默认授权", "如果在蒲公英平台发起合作时未启用智能创意，后续在聚光平台进行投放时将无法使用智能创意功能"
+- Used in: china-kol-pricing
+- Notes: shortcutIds da9e48ae271a1da33022122af1f0d56a (boost) and c5a96960d8fbff7cb5e3412f3283be58 (authorization), same endpoint as above. Supersedes the rejected Niaoge 2022-12-22 boost caps. The 'cannot later' rule covers smart creative only, not ad use in general.
+
+### WeChat creator marketplace (互选): fees, quoting, reuse and exclusivity
+- Value: one-to-one deals pay a 5% platform fee (creator paid 500 yuan, client pays 525); from April 1, 2026, new recruitment tasks pay 10% (Channels) or 20% (Official Accounts); an Official Account's price is the creator's pre-tax take-home and the last change of the previous month sets this month's price; in-feed boost of a creator video valid one year without consent, wider ad use one year with the creator's consent; if exclusivity is agreed, the creator posts only that advertiser's content for the agreed period
+- As of: September 2026 (fee doc updated 2026-09-30 20:10:27; reuse doc 2026-09-20; quote doc 2026-06-29; creator rules 2026-04-29)
+- Source: Tencent Marketing (腾讯营销), creator marketplace help center (腾讯营销互选平台帮助中心)
+- URL: https://huxuan.qq.com/trade/free/help_detail?post_ids=13088 (also post_ids 7611, 8435, 12642)
+- Verified 1: 2026-10-08, fetched with curl in the 07A run, strings below confirmed
+- Verified 2: 2026-10-08, re-fetched at iteration 8 and again after the quality pass, unchanged; "2026年4月1日起，新创建的任务收取10%的平台服务费", "2026年4月1日起，新创建的任务收取20%的平台服务费", "如达人结算金额为500元，客户需支付525元", "创作者设置的价格为订单税前到手价", "以流量主上月最后一次修改的报价，作为本月的报价", "内容助推有效期为1年，无需达人同意授权", "互选推广有效期为1年，需获得达人同意授权方可开启，授权无期限", "信守排他：若约定排他性合作，须在约定期限内仅发布该广告主内容"
+- Used in: china-kol-pricing
+- Notes: Pages render with JavaScript; text read from https://huxuan.qq.com/cgi-bin/advertiser/get_content_posts?post_ids=<id>, which carries updated_at. No pinyin in copy: call it WeChat's creator marketplace (互选). No exclusivity price is published.
+
 ## Regulatory and legal
 
 <!-- Needed from week 1 onward:
@@ -711,6 +850,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Notes: This is the rule behind Xiaohongshu's Pugongying declaration requirement. Article 8 on the same page bans disguised health and wellness content for medical, drug, device and health-food products.
 - Re-verified 2026-10-05 for 05D: "广告发布者应当显著标明“广告”" and "2023年5月1日起施行" confirmed at check 1 and check 2. Used in: travel-hospitality.
 - Re-verified 2026-10-06 for 06A: "显著标明“广告”" confirmed; used in prose, no blockquote at check 1 and check 2. Used in: china-marketing-hidden-costs.
+- Re-verified 2026-10-08 for 07A: Article 9 wording and "自2023年5月1日起施行" confirmed at check 1 and check 2. Used in: china-kol-pricing.
 
 ### SAMR enforcement guideline on absolute terms in advertising (2023): scope, carve-outs, leniency
 - Value: qualitative. Covers 国家级, 最高级, 最佳 "以及与其含义相同或者近似的其他用语" (point 2). Not applicable when the term only states service attitude, business philosophy, culture or wishes, or a goal (point 5); or, with no misleading or disparaging effect, when it compares products within one brand, gives usage, timing or storage tips, is a graded term under a national, industry or local standard with a stated basis, is part of a product name, model, trademark or patent, is an official award or title, or states a fact limited by time or place such as sales, revenue or market share (point 6). Claims the advertiser cannot prove are punished (point 7). A first use with minor harm, promptly corrected, may go unpunished (point 9). Generally not minor: efficacy, cure-rate or effective-rate absolutes in medical, medical aesthetics, drug, device, health food and special medical food ads; return or safety absolutes in investment ads; outcome absolutes in education and training ads (point 11)
@@ -851,6 +991,45 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-06, re-fetched, unchanged
 - Used in: china-marketing-hidden-costs (in prose)
 
+### Anti-Unfair Competition Law, 2025 revision: fake transactions, fines and open rebates
+- Value: Article 9 bars helping another business mislead through organized fake transactions or fake reviews; Article 25 fines up to 1 million yuan, 1 to 2 million in serious cases; Article 8 allows discounts and commissions only if paid openly and booked truthfully; in force 2025-10-15
+- As of: revised 2025-06-27, in force 2025-10-15 (page dated 2026-05-20)
+- Source: China National Intellectual Property Administration (国家知识产权局), law text from the NPC (中国人大网)
+- URL: https://www.cnipa.gov.cn/art/2026/5/20/art_104_206437.html
+- Verified 1: 2026-10-08, fetched with curl in the 07A run, strings below confirmed
+- Verified 2: 2026-10-08, re-fetched at iteration 8 and again after the quality pass, unchanged; "经营者不得通过组织虚假交易、虚假评价等方式，帮助其他经营者进行虚假或者引人误解的商业宣传", "本法自2025年10月15日起施行", "处一百万元以下的罚款", "可以以明示方式向交易相对方支付折扣，或者向中间人支付佣金"
+- Used in: china-kol-pricing
+- Notes: The law does not name follower buying (刷量); courts apply Article 9 to it (see the Putuo case). Say 'courts treat it as false promotion', not 'the law bans fake followers by name'.
+
+### CAC crackdown on paid posters and faked traffic, 2024 to 2025
+- Value: since 2024 the campaign against paid posters and 刷量控评 closed or delisted 400+ sites, removed 4.82 million items and dealt with 2.39 million accounts and shops and 52,000 groups
+- As of: December 2025 (dated 2025-12-31)
+- Source: Cyberspace Administration of China (中央网信办)
+- URL: https://www.cac.gov.cn/2025-12/31/c_1768821889918450.htm
+- Verified 1: 2026-10-08, fetched with curl in the 07A run, strings below confirmed
+- Verified 2: 2026-10-08, re-fetched at iteration 8 and again after the quality pass, unchanged; "刷量控评", "处置账号和商家店铺239万个"
+- Used in: china-kol-pricing
+
+### Putuo court: follower-boost seller pays Sina Weibo's operator 2 million yuan
+- Value: a company selling Weibo follower and read boosts and its legal representative were ordered to pay 2 million yuan jointly (plus 200,000 joint liability for a third defendant); the court held data truth means the real will of real users, not only real accounts
+- As of: October 2024 (article dated 2024-10-08)
+- Source: Shanghai High People's Court (上海市高级人民法院网)
+- URL: https://www.hshfy.sh.cn/shfy/web/xxnr.jsp?pa=aaWQ9MTAyMDM5MzI0MCZ4aD0xJmxtZG09bG01MTkPdcssz
+- Verified 1: 2026-10-08, fetched with curl in the 07A run, strings below confirmed
+- Verified 2: 2026-10-08, re-fetched at iteration 8 and again after the quality pass, unchanged; "共同赔偿原告200万元", "数据的真实性并非仅指其“量”的真实性，更应当是指其“质”的真实性"
+- Used in: china-kol-pricing
+- Notes: Page is GB18030-encoded; decode accordingly. Older than 12 months at next reuse after October 2025; still the clearest ruling, cite with its date.
+
+### Ningxiang court: livestream sales floor missed, 98,507.41 yuan refunded
+- Value: a brand paid a culture company 100,000 yuan for a Douyin livestreamer with a million followers and a 550,000 yuan sales floor; sales were 8,209.26 yuan; the court ordered 98,507.41 yuan refunded under the contract's 1:5.5 formula and told brands not to pick creators on follower count alone
+- As of: August 2026 (article dated 2026-08-26; contract August 26 to October 25, 2025)
+- Source: Red Star News (红星新闻), on Sina (手机新浪网)
+- URL: https://finance.sina.cn/tech/2026-08-26/detail-iniprytk0877893.d.html
+- Verified 1: 2026-10-08, fetched with curl in the 07A run, strings below confirmed
+- Verified 2: 2026-10-08, re-fetched at iteration 8 and again after the quality pass, unchanged; "实际销售额仅8209.26元", "退还营销推广费98507.41元", "不要仅凭粉丝数量、网红热度决定合作"
+- Used in: china-kol-pricing
+- Notes: A missed sales guarantee, not a fake-data case. The defendant is the culture company, not the creator.
+
 ## Market and industry
 
 <!-- Needed from week 2 onward:
@@ -885,6 +1064,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-03, re-fetched, unchanged
 - Used in: china-social-media-marketing-cost
 - Notes: Original source is R3; cite Campaign Asia as the publisher reporting it.
+- Re-verified 2026-10-08 for 07A: the aws1 URL returns the full article to curl again; "shot up by 11.6% but the actual prices paid by advertisers were down by 3.4%" and "forecast to reach RMB117.2 billion" confirmed at check 1 and check 2. Correction to the Value line: the Campaign Asia sentence gives no year for 117.2 billion. The 2026 year is corroborated by Long Advisory (2026-06-15, "RMB 117.2 billion (USD 16.8 billion) in 2026"), and R3's own Chinese release puts 2025 above 108.5 billion (Pangjing entry), so the articles that say "for 2026" stand. The influencer service page said "by the end of 2025" (and "euros" in FR, DE and ES): corrected in all five locales on 2026-10-08.
 
 ### Xiaohongshu KOC and micro KOL fee ranges
 - Value: nano KOC (1,000 to 5,000 followers) about 20 to 60 US dollars per post; micro KOL (under 1 million followers) about 10,000 to 35,000 US dollars per campaign
@@ -896,6 +1076,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: china-social-media-marketing-cost, beauty-skincare, fashion-apparel
 - Notes: English-language consultancy source; no Chinese trade-press equivalent with dated per-post ranges was found in this run.
 - Re-verified 2026-10-06 for 06A: "USD 20 to USD 60 per post" and the 06/15/2026 date confirmed at check 1 and check 2. Used in: china-marketing-hidden-costs.
+- Re-verified 2026-10-08 for 07A: "approximately USD 20 to USD 60 per post", "often through incentives or product gifting", "approximately USD 10,000 to USD 35,000 per campaign" and "06/15/2026" confirmed at check 1 and check 2. Used in: china-kol-pricing.
 
 ### Average KOL collaboration cost, Xiaohongshu versus Douyin
 - Value: Xiaohongshu 10,000 to 40,000 US dollars; Douyin 25,000 to 65,000 US dollars per collaboration
@@ -906,6 +1087,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-03, re-fetched, unchanged
 - Used in: china-social-media-marketing-cost
 - Notes: Same publisher as above; the two articles give overlapping but not identical ranges for Xiaohongshu. Cite each as written.
+- Re-verified 2026-10-08 for 07A: both ranges and "If brands require influencers to avoid working with competitors for a certain period, pricing can increase substantially" confirmed at check 1 and check 2 (date 05/21/2026). Used in: china-kol-pricing (exclusivity line only).
 
 ### Xiaohongshu self-serve note boost (薯条): minimum spend and eligibility
 - Value: 75 yuan (750 薯币) minimum per order; no follower threshold; only content published in the last 90 days can be boosted
@@ -941,6 +1123,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-11, re-downloaded with curl, all four strings plus 社区公约2.0 and 有序经营 still present
 - Used in: xiaohongshu-marketing-cost, xiaohongshu-algorithm, xiaohongshu-account-not-growing
 - Notes: Use for the cost of not filing paid notes through Pugongying. The article also gives 534,200 accounts and 4.598 million notes actioned for divisive content since 1 January 2025; not cited. An older enforcement figure (2,456 brands penalized, June to July 2023, 鸟哥笔记 2023-08-09) was found and not used, superseded by this one.
+- Re-verified 2026-10-08 for 07A: "封禁虚假账号超1200万个", "处置虚假营销笔记1376万篇" and "清理虚假评论超3.6亿条" confirmed at check 1 and check 2. Used in: china-kol-pricing.
 
 ### Xiaohongshu Pugongying marketplace mechanics and creator credit scoring
 - Value: qualitative. Pugongying is billed as a service fee plus commission, or a service fee alone; brands filter creators by category, follower count and price; creators carry a credit rating from Lv0 to Lv3 and above
@@ -1065,6 +1248,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: china-agency-pricing-models, china-social-media-package-includes
 - Notes: The strongest published evidence in the ledger that a Chinese platform itemizes the agency fee separately from the creator fee. Reusable for any transparency or billing argument.
 - Re-verified 2026-10-06 for 06A: "总额的5%" and "总额的10%" confirmed; cut from the final 06A draft in the length trim, not cited. Check 1 and check 2 both 2026-10-06.
+- Re-verified 2026-10-08 for 07A: "任务服务费及服务商服务费（若涉及）总额的5%", "总额的10%" and "服务商服务费" confirmed at check 1 and check 2. Used in: china-kol-pricing.
 
 ### Xingtu creator-side fees: 5% on unbound creators, 3% on creator agencies
 - Value: the platform charges a 5% service fee only to 达人 not bound to an MCN; creators bound to an MCN pay nothing, and since April 3, 2023 the MCN pays the platform a 3% technical service fee
@@ -1357,6 +1541,17 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Notes: Corroborated same day on China Fund News (中国基金报), 2026-03-18, https://www.chnfund.com/article/AR1231fcdd-25ff-01cd-2836-3a2015e46b1d ("微信及WeChat合并月活跃用户数进一步增长至14.18亿"). Tencent's own IR announcement was not fetchable directly; both cited pages attribute the figure to the results release. Supersedes the 13.85 billion-era figures from the 2024 annual report; recheck after Tencent's 2026 annual results in March 2027.
 - Re-verified 2026-10-05 for 05C: "14.18亿" and "同比增长2" confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
 - Re-verified 2026-10-08 for 06C: "14.18亿" and "同比增长2" confirmed at check 1 and check 2. Tencent's Q2 2026 results coverage (Tencent News, 2026-08-12) carries no MAU figure, so this is still the newest. Used in: wechat-open-rate-benchmark.
+- CORRECTION 2026-10-08 (06D run): the line above is wrong. Tencent's Q2 2026 results do carry the figure, 1.439 billion at the end of June 2026, logged in the next entry. The 1.418 billion figure stays correct as an end-of-2025 number and the articles that cite it date it that way, so none needs changing; new articles cite the Q2 2026 entry.
+
+### WeChat combined monthly active accounts, Q2 2026
+- Value: 1.439 billion combined monthly active accounts for WeChat and WeChat international, up 2% year on year and 0.5% quarter on quarter
+- As of: 30 June 2026 (results announced 2026-08-12)
+- Source: Tencent Holdings Q2 2026 results, reported by Jiemian (界面新闻) via 21st Century Business Herald (21财经)
+- URL: https://m.21jingji.com/article/20260812/herald/0c6b89715bfa13d4ecf96e41a685bdcd.html
+- Verified 1: 2026-10-08, fetched with curl (logs/scratch/06D/check.py, tag c1); "合并月活跃账户数达14.39亿" and the 2026-08-12 date confirmed
+- Verified 2: 2026-10-08, re-fetched before the draft was finished (tag c2) and again after the quality pass (tag c2b), unchanged
+- Used in: b2b-china-social-teardown
+- Notes: The research agent also found "1,439" in Tencent's own Q2 2026 results PDF. Recheck after the Q3 2026 results (November 2026).
 
 ### Weibo monthly and daily active users, end of Q4 2025
 - Value: 567 million monthly active users and 252 million daily active users at the end of Q4 2025; full-year 2025 revenue 1.76 billion US dollars
@@ -1552,6 +1747,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: wechat-marketing-cost
 - Notes: The page shows no prices to curl. Prices: entry below.
 - Re-verified 2026-10-05 for 05C: "免费获得2000位外部联系人规模", "有效期一年" and "只能添加100个客户" confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
+- Re-verified 2026-10-08 for 06D: same three strings confirmed at check 1 and check 2. Used in: b2b-china-social-teardown.
 
 ### WeCom external contact capacity prices at launch, May 2023
 - Value: from May 19, 2023; 5,000 contacts 500 yuan a year; 20,000 contacts 2,000 yuan a year
@@ -1712,6 +1908,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-05, re-fetched before the draft was finished, unchanged
 - Used in: wechat-vs-xiaohongshu
 - Notes: Same figures and data period on Tencent News (品牌议题, 2026-09-20, news.qq.com/rain/a/20260920A07F8700). The platform does not split the leads into B2B and B2C; never present them as B2B leads. Agency claims of "300万+ companies" or "8,000+ companies, 2 million leads a month" conflict with this platform figure and are not logged.
+- Re-verified 2026-10-08 for 06D: "在小红书经营KOS的企业账号数已超4万", "每月通过KOS产生的留资量超600万条" and "2026.8" confirmed at check 1 and check 2. Used in: b2b-china-social-teardown (with the line that the platform does not split B2B and consumer leads).
 
 ### LinkedIn's China exit: social features, then the job app, August 2023
 - Value: in May 2023 LinkedIn, which had closed its social networking features in China two years earlier, announced that its China job app (领英职场) would stop service on August 9, 2023, including the app, the desktop site and the WeChat Mini Program
@@ -1722,12 +1919,14 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-05, re-fetched before the draft was finished, unchanged
 - Used in: wechat-vs-xiaohongshu
 - Notes: A dated event, older than 12 months, cited with its date (settled fallback 9). LinkedIn's own help page (linkedin.com/help/linkedin/answer/a557005) states the stop date but shows only a relative "last updated" date, so CNR is the citable dated source.
+- Re-verified 2026-10-08 for 06D: "已在两年前关闭中国区社交网络功能" and "2023年8月9日起正式停止服务" confirmed at check 1 and check 2. Used in: b2b-china-social-teardown.
 
 ### NOT LOGGED, searched and rejected 2026-10-05 (WeChat or Xiaohongshu)
 - Share of Official Account reads from algorithmic recommendation ("45.9%", "50% to 70%"): Zhihu, jzl.com and yiban.io self-media, no Tencent source. Not cited. CORRECTION 2026-10-08: the original of "45.9%" is 36Kr's own March 2025 article on its consumer account, now logged above as "WeChat Official Account open rate history and the shift to recommendation, 36Kr March 2025"; it is one account's share, not a platform figure. The "50% to 70%" line still has no original.
 - Xiaohongshu 2025 gender split 71.98% / 28.02% (Qian-gua active user report via Sohu and Douban reposts): self-media summaries of a gated report; the official brief's 3:7 says the same. Not logged separately.
 - 36Kr, "站在2025年底，小红书商业正跨过一个新门槛": blocked by a ByteDance security check for every fetch method. Not cited.
 - WeCom "connects more than ten million companies" and Mini Program "800 million daily users": search summaries only, not on the results coverage fetched. Not cited.
+  CORRECTION 2026-10-08: WeCom's own scale figure is now logged under Platform figures, "WeCom scale: companies connected and WeChat users served daily, August 2025" (Xinhua and Yicai: 14 million companies and organizations, 750 million WeChat users a day). The "ten million" line remains unsourced.
 - Xiaohongshu B2B share of users or leads: no platform or trade-press figure exists.
 
 ### Mainland residents' outbound trips, 2025
@@ -1884,7 +2083,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 1: 2026-10-05, fetched, "国庆中秋假日8天" and "全国国内出游8.88亿人次" confirmed
 - Verified 2: 2026-10-05, re-fetched, unchanged
 - Used in: travel-hospitality
-- Notes: Same holiday cross-border: 2.043 million a day, up 11.5%; mainland residents 9.165 million (NIA, 2025-10-09, https://www.nia.gov.cn/n741440/n741567/c1745818/content.html; checked twice on 2026-10-05, not cited). Recheck 2026-10-09: the 2026 National Day results (MCT and NIA) are due the day after the holiday ends on October 8; a later article cites the actual figures instead of the forecast below.
+- Notes: Same holiday cross-border: 2.043 million a day, up 11.5%; mainland residents 9.165 million (NIA, 2025-10-09, https://www.nia.gov.cn/n741440/n741567/c1745818/content.html; checked twice on 2026-10-05, not cited). Recheck 2026-10-09 done at the 05D publish: NIA published the 2026 National Day results on 2026-10-08 (entry "National Day 2026 border crossings, actual" below), and travel-hospitality now cites them instead of the forecast. MCT had not published its 2026 National Day domestic-trip figure on 2026-10-09 (searched mct.gov.cn and Chinese news); recheck 2026-10-12 before any article cites 2026 domestic holiday trips. This 2025 entry stays valid as a dated 2025 figure.
 
 ### National Day 2026 border crossing forecast
 - Value: 2.15 million crossings a day expected over the 2026 National Day holiday; single-day peak above 2.4 million; Mid-Autumn forecast 2.25 million a day (the two holidays are separate in 2026)
@@ -1893,8 +2092,18 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - URL: https://www.nia.gov.cn/n897453/c1810872/content.html
 - Verified 1: 2026-10-05, fetched, "国庆节假期日均将达215万人次" and "单日最高通关量预计将突破240万人次" confirmed
 - Verified 2: 2026-10-05, re-fetched, unchanged
+- Used in: none since 2026-10-09 (travel-hospitality cited it in the draft; replaced at publish by the actual figures below)
+- Notes: A forecast; superseded. Do not cite. The actual daily average (2.209 million) came in above the forecast, and the actual single-day peak (2.397 million on October 4) stayed just under the forecast "above 2.4 million". Mid-Autumn 2026 actual: 2.236 million a day (NIA, 2026-09-28).
+
+### National Day 2026 border crossings, actual
+- Value: 15.462 million crossings over the 2026 National Day holiday; 2.209 million a day, up 6.7% year on year; single-day peak 2.397 million on October 4; mainland residents outbound 4.444 million, up 9.3%; foreign nationals inbound 682,000 (505,000 visa-free)
+- As of: 2026-10-08
+- Source: National Immigration Administration (国家移民管理局)
+- URL: https://www.nia.gov.cn/n741440/n741567/c1815006/content.html
+- Verified 1: 2026-10-09, fetched, "共保障1546.2万人次中外人员出入境，日均220.9万人次，较去年同期增长6.7%" and "内地居民出境444.4万人次，较去年同期增长9.3%" confirmed, page dated 2026-10-08
+- Verified 2: 2026-10-09, re-fetched before the commit, all five strings and the date unchanged
 - Used in: travel-hospitality
-- Notes: A forecast; cite as such. Superseded by the actual figures when NIA publishes them (expected 2026-10-09). Mid-Autumn 2026 actual: 2.236 million a day (NIA, 2026-09-28).
+- Notes: The 2026 holiday is National Day only (Mid-Autumn fell on September 25 and is reported separately). Wire copies (China News, Guangming) carry the same figures; cite NIA.
 
 ### Spring Festival 2026: domestic trips and border crossings
 - Value: nine-day holiday; 596 million domestic trips (MCT); 17.796 million crossings, 1.977 million a day, mainland residents 9.514 million (NIA)
@@ -2279,6 +2488,147 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - A creator's "one share brought five reads in 2019, one in 2022" (NewRank interview, 2025-03-21): one anecdote. Not used.
 - Jiemian (界面) 2021-11-24 piece on the 2020 non-chronological feed: a reprint of the self-media outlet 三易生活. NewRank's March 2025 history covers the same change; not cited.
 
+### Gas wall-hung boilers, China, H1 2026: project channel down, retail 76.1% of domestic sales
+- Value: domestic sales 710,000 units, down 5.9%; project (engineering) channel 170,000, down 29.1%; retail 76.1% of domestic sales; condensing boilers 290,000, up 46.5%, about 40% penetration; retail growth driven by replacing coal-to-gas units installed eight to ten years earlier
+- As of: first half of 2026 (article dated 2026-08-17)
+- Source: ChinaIOL (产业在线), official WeChat account, 燃气壁挂炉半年报：冷凝炉逆势高增，结构化调整延续
+- URL: https://mp.weixin.qq.com/s/-CDxCuHn7BtOUHzeRt86-Q
+- Verified 1: 2026-10-08, fetched with curl (logs/scratch/06D/check.py, tag c1); "71万台", "冷凝炉内销量", "46.5%", "76.1%", "40%" and createTime 2026-08-17 confirmed
+- Verified 2: 2026-10-08, re-fetched before the draft was finished (tag c2) and again after the quality pass (tag c2b), unchanged
+- Used in: b2b-china-social-teardown
+- Notes: The page prints the retail volume as "54.万台" (a typo on the source); do not quote the retail unit count. The date is in the page script (createTime), not the visible text. Corroborated a year earlier by ChinaIOL on Sina Finance, 2025-08-14 (https://cj.sina.com.cn/articles/view/2279829263/87e36f0f00101rc44): H1 2025 domestic 750,000, down 3.6%; retail 510,000, up 9.2%, 68% share (checked twice 2026-10-08).
+
+### Online home lighting sales, 2023: Taobao and Tmall, JD, Douyin
+- Value: Taobao and Tmall home lighting 22.5 billion yuan, up 6.8%; JD 8.7 billion, down 5.5%; Douyin 3.1 billion, up 105.6%; September to December is peak season, when many households renovate
+- As of: 2023 data, published December 31, 2024 (report by 知行咨询)
+- Source: China Association of Lighting Industry (中国照明电器协会), 看！家装灯饰照明行业研究报告
+- URL: http://www.cali-light.com/index/index/newsart/id/26336.html
+- Verified 1: 2026-10-08, fetched with curl (logs/scratch/06D/check.py, tag c1); "淘系家装灯饰照明大盘增速6.8%，规模225亿", "抖音家装灯饰照明大盘增速105%，规模31亿", "无主灯类灯饰" and 2024/12/31 confirmed
+- Verified 2: 2026-10-08, re-fetched before the draft was finished (tag c2) and again after the quality pass (tag c2b), unchanged
+- Used in: b2b-china-social-teardown
+- Notes: Older than 12 months; no newer dated lighting split by platform was found (fallback 9). The page gives Douyin growth as both 105% and 105.6%; 105.6% is the summary figure.
+
+### China MRO industrial purchasing, 2024: size and digital share
+- Value: MRO purchasing market 3.7 trillion yuan in 2024; digital purchasing penetration under 10% (the report says 9.8% in one chapter and 9.5% in another); the mainstream model is still request-for-quote, with buyers sourcing, comparing prices and verifying suppliers themselves
+- As of: 2024 data, white paper dated November 2025
+- Source: KPMG China (毕马威), 中国工业品电商高质量发展白皮书
+- URL: https://assets.kpmg.com/content/dam/kpmgsites/cn/pdf/zh/2025/11/china-s-industrial-e-commerce-high-quality-development-white-paper-2025.pdf
+- Verified 1: 2026-10-08, fetched with curl (logs/scratch/06D/check.py, tag c1) and pdftotext; "3.7万亿元", "2024年仅为9.8%", "渗透率达到9.5%", "仍以传统“询报价”机制为主", "采购人员往往通过渠道与平台自行寻源、比价及验真" and "毕马威2025年11月" confirmed
+- Verified 2: 2026-10-08, re-fetched before the draft was finished (tag c2) and again after the quality pass (tag c2b), unchanged
+- Used in: b2b-china-social-teardown
+- Notes: Quote the digital share as "under a tenth" because the report contradicts itself (9.8% and 9.5%). This is the citable China B2B buyer-behavior source for 07D. No citable survey of which social channels Chinese B2B buyers use exists (see the NOT LOGGED block below).
+
+### Carrier completes the Viessmann Climate Solutions acquisition, January 2024
+- Value: Carrier completed the acquisition (dated Jan. 2, 2024); Viessmann brings a distinctive installer and service channel model and 12,000 employees
+- As of: January 2, 2024
+- Source: Carrier China (开利), 开利集团完成对菲斯曼气候解决方案业务的收购; same text on Viessmann China (viessmann.cn/zh/company/News/carrier-viessmann.html) and ChinaIOL (2024-01-04)
+- URL: https://www.carrier.com/commercial/zh/cn/news/news-article/carrier-completes-acquisition-of-viessmann-climate-solutions.html
+- Verified 1: 2026-10-08, fetched with curl (logs/scratch/06D/check.py, tag c1); "12000名卓越成员", "与众不同的安装及服务渠道模式" and "1月.2,2024" confirmed
+- Verified 2: 2026-10-08, re-fetched before the draft was finished (tag c2) and again after the quality pass (tag c2b), unchanged
+- Used in: b2b-china-social-teardown
+- Notes: A dated company event; cite with its date. Client context only, never as our work. The article writes "Viessmann's climate business" (STYLE_GUIDE bans "solutions" outside proper names).
+
+### Viessmann China dealer conference 2026, and the dealer channel
+- Value: nearly 200 Viessmann dealers at the 2026 China dealer conference (Beijing, March 26 to 27, 2026); Carrier has more than 200 multi-brand stores and channel outlets in China; Viessmann's 2025 retail result in China was a record; plan to deepen work with home-improvement and gas-utility channel companies, coal-to-gas areas. Dealer page: authorized dealers are the local experts for advice, sales, installation and service; product line includes household gas wall-hung boilers
+- As of: March 30, 2026 (conference article); dealer page undated, confirmed October 2026
+- Source: Viessmann China (菲斯曼)
+- URL: https://www.viessmann.cn/zh/company/News/News12111.html and https://www.viessmann.cn/zh/Dealer-Partner.html
+- Verified 1: 2026-10-08, fetched with curl (logs/scratch/06D/check.py, tag c1); "近二百位菲斯曼全国合作伙伴", "二百多家遍布全国的多品牌协同门店", "菲斯曼2025年在中国的零售业绩", "深化家装及燃气渠道企业的专业合作" and 发布时间：2026年3月30日 confirmed; dealer page "您身边咨询、销售、安装和服务的专家" and "家用燃气壁挂炉" confirmed
+- Verified 2: 2026-10-08, re-fetched before the draft was finished (tag c2) and again after the quality pass (tag c2b), unchanged
+- Used in: b2b-china-social-teardown (conference article)
+- Notes: The client's own channel facts, cited to the client; never presented as results of our program. The page calls dealers 合作伙伴; the article says "dealers" (STYLE_GUIDE banned word).
+
+### iGuzzini in China: architectural lighting, Shanghai developer deal, October 2024
+- Value: iGuzzini (依古姿妮), headquartered in Recanati, Italy, called an international leader in architectural lighting, active in more than 20 countries on five continents; strategic deal with Shanghai developer Haitai (海泰地产) for its North Bund project, homes and public spaces
+- As of: October 26, 2024
+- Source: China News Service Shanghai (中新网上海)
+- URL: https://www.sh.chinanews.com.cn/bdrd/2024-10-26/129729.shtml
+- Verified 1: 2026-10-08, fetched with curl (logs/scratch/06D/check.py, tag c1) (page is GB2312, decoded as gb18030); "iGuzzini依古姿妮", "建筑照明领域的国际领导者" and "业务遍布五大洲20多个国家" confirmed
+- Verified 2: 2026-10-08, re-fetched before the draft was finished (tag c2) and again after the quality pass (tag c2b), unchanged
+- Used in: b2b-china-social-teardown
+- Notes: The client's own deal, never our work. Older than 12 months; cited with the date. Fagerhult's December 2018 release confirms founding in 1959 and Recanati (found by research, not cited).
+
+### NOT LOGGED, searched and rejected 2026-10-08 (B2B buyers, home heating, lighting)
+- Share of Chinese B2B buyers using WeChat, Xiaohongshu, Douyin or search when researching suppliers: no citable survey exists. The 2025 China B2B marketing white paper (市场易 and 圆禹: 7.55 channels per firm, 30% on WeCom, 20% on Xiaohongshu) surveys marketers, not buyers, and survives only on a report-aggregator page with no year (hanghangsou.com); the 2024 edition is on Digitaling, a reposted WeChat article. Not cited.
+- Number of designers active on Xiaohongshu: no dated figure. Search growth for southern heating (南方供暖, 地暖) on Xiaohongshu or Douyin: no dated source.
+- Consumers choosing lighting through designers or contractors: no dated data.
+- 36Kr research on cross-border B2B buying: foreign buyers of Chinese exports, wrong population; blocked by a security check.
+- Vendor B2B WeCom papers (致趣百川, 径硕) and KAWO B2B posts: undated or self-media. Gartner rep-free buying figures: global, not China.
+- Logged so 07D and later briefs do not spend research time rediscovering this.
+
+### R3 2026 KOLC governance white paper: list prices up, paid prices down
+- Value: in 2025 KOL list prices (刊例价) rose 11.6% while actual net prices fell 3.4%, a 15% gap; R3 expected the 2025 market to pass 108.5 billion yuan; cost layers run from platform or MCN rate card to negotiated price to actual total cost
+- As of: January 2026 (article dated 2026-01-09; release late December 2025)
+- Source: Pangjing (胖鲸), reporting R3 (R3胜三)
+- URL: https://pangjing.cn/6106244-2/
+- Verified 1: 2026-10-08, fetched with curl in the 07A run, strings below confirmed
+- Verified 2: 2026-10-08, re-fetched at iteration 8 and again after the quality pass, unchanged; "2025 年 KOL 市场的刊例价上涨了 11.6%", "下降了 3.4%", "15% 的“剪刀差”", "预计 2025 年市场规模将突破 1,085 亿人民币", "从平台/MCN 的刊例价，到谈判后的名义成交价"
+- Used in: china-kol-pricing
+- Notes: Chinese-language original of the Campaign Asia entry above. Prefer this URL for the gap; it also dates the market figure (2025, above 108.5 billion).
+
+### Ebiquity: China social KOL market 2025 and tier cost directions by platform
+- Value: 2025 market 93 billion yuan, 58% of global KOL spend; head KOLs 5.8% of orders; like-for-like cost up about 8% in 2025, quotes usually up more than 8% a year; Douyin and WeChat head and mid-tier costs up; Xiaohongshu head down, mid, tail and KOC up sharply; Bilibili every KOL tier up
+- As of: September 2025 (article dated 2025-09-01)
+- Source: Campaign China (Campaign中国), reporting Ebiquity (思媒思智)
+- URL: https://www.campaignchina.com/article/ebiquity%E6%9C%80%E6%96%B0%E8%B0%83%E7%A0%94%EF%BC%9A2025%E5%B9%B4%E4%B8%AD%E5%9B%BD%E7%A4%BE%E4%BA%A4kol%E8%90%A5%E9%94%80%E5%B8%82%E5%9C%BA%E5%B0%86%E5%8D%A0%E5%85%A8%E7%90%83kol%E6%8A%95%E8%B5%84%E7%9A%8458/504529
+- Verified 1: 2026-10-08, fetched with curl in the 07A run, strings below confirmed
+- Verified 2: 2026-10-08, re-fetched at iteration 8 and again after the quality pass, unchanged; "2025年中国社交KOL营销市场规模将达到930亿元人民币", "2025年广告主在头部KOL上的订单量占比仅为5.8%", "抖音和微信 ：头部及腰部KOL成本普遍上涨", "小红书 ：头部KOL成本下降，而中尾部和KOC成本大幅上升", "B 站 ：各层级KOL价格成本均见上涨", "KOL报价缺乏透明机制，年度涨幅普遍高于8%"
+- Used in: china-kol-pricing
+- Notes: Market-size figures differ by definition across sources (Topklout 84bn, Ebiquity 93bn, R3 above 108.5bn for 2025). Never mix them in one sentence; label each.
+
+### Topklout: 2025 KOL spend and its tier and category mix
+- Value: 2025 KOL spend 84 billion yuan, down about 4% (90bn 2023, 87.3bn 2024); head KOLs 13.1% of placements and 20.5% of spend, mid and tail 86.8% of placements; Xiaohongshu tail near 20% of spend; Douyin 3C up 4.1 points and auto up 3.6 points of spend
+- As of: June 2026 (article dated 2026.06.30)
+- Source: TopMarketing, reporting Topklout (克劳锐)
+- URL: https://www.itopmarketing.com/info22850
+- Verified 1: 2026-10-08, fetched with curl in the 07A run, strings below confirmed
+- Verified 2: 2026-10-08, re-fetched at iteration 8 and again after the quality pass, unchanged; "840亿，这是2025年KOL整体投放市场的规模，较2024年微降了约4%", "头部仅占13.1%，而腰尾部合计高达86.8%；金额占比上，头部为20.5%", "小红书尾部金额占比逼近20%", "抖音数码3C投放金额增长4.1个百分点，汽车增长3.6个百分点"
+- Used in: china-kol-pricing
+- Notes: Topklout is owned by Tianxiaxiu (天下秀), a listed influencer-marketing company (its 2025 annual report lists it). The 36Kr copy fails with curl.
+
+### QuestMobile 2024: sponsored-post unit prices by creator category
+- Value: Douyin: looks, auto and finance creators lead soft-ad unit price and income; Xiaohongshu: beauty creators face the most competition and their average price is relatively low; creators under 500,000 followers (mostly under 100,000) carry most brand placements
+- As of: September 2024 (article dated 2024-09-24; data January to July 2024)
+- Source: QuestMobile, its own account on Digitaling (数英)
+- URL: https://www.digitaling.com/articles/1268336.html
+- Verified 1: 2026-10-08, fetched with curl in the 07A run, strings below confirmed
+- Verified 2: 2026-10-08, re-fetched at iteration 8 and again after the quality pass, unchanged; "颜值、汽车和金融财经领域KOL其软广单价和收入领先", "颜值、亲子萌娃、搞笑类KOL商业软广平均收入方面领先，美妆类KOL竞争较充分，均价相对较低", "50万以下粉丝量级的达人是品牌投放主力，尤其聚焦10万粉丝量级以下达人"
+- Used in: china-kol-pricing
+- Notes: Averages across all creator sizes in a category, not a tier-controlled multiplier. Older than 12 months after September 2025: cite with its 2024 date. It is why the site's 'beauty and luxury command roughly 50% more' line was removed on 2026-10-08.
+
+### NewRank listing filing: brands swap head KOLs for cheaper KOCs
+- Value: 2025: worked with 38,100 creators for 126 clients, 84,000 placements; brand clients increasingly swap head KOLs for cheaper KOCs, shrinking deal size; content marketing gross margin about 9.6%
+- As of: May 2026 (article dated 2026-05-10, filing 2026-04-30)
+- Source: Yema Caijing (野马财经), on Tencent News (腾讯新闻), on NewRank's (新榜) listing filing
+- URL: https://news.qq.com/rain/a/20260510A06KQ900
+- Verified 1: 2026-10-08, fetched with curl in the 07A run, strings below confirmed
+- Verified 2: 2026-10-08, re-fetched at iteration 8 and again after the quality pass, unchanged; "新榜的品牌方越来越爱用便宜的 KOC （中小达人）替代头部KOL，单笔投放金额缩水", "2025年内容营销解决方案毛利率约为9.6%"
+- Used in: china-kol-pricing
+- Notes: The KOC line is the reporter's reading of the filing; attribute it to Yema Caijing. The filing PDF itself was not found on HKEX.
+
+### Tianxiaxiu 2025: influencer-marketing revenue, gross margin and platform rebates
+- Value: influencer-marketing revenue 3.904 billion yuan at an 18.95% gross margin (WEIQ platform business 3.700 billion at 17.77%); the self-serve platform charges a percentage technical service fee; a broker notes its gross margin relies on rebate (返点) policies from platforms such as Douyin and Kuaishou
+- As of: 2025 full year (annual report dated 2026-04-09); broker note March 2025 (2025-03-26)
+- Source: Tianxiaxiu (天下秀) 2025 annual report, Shanghai Stock Exchange filing; Kaiyuan Securities (开源证券)
+- URL: http://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2026/2026-4/2026-04-10/12074579.PDF and https://pdf.dfcfw.com/pdf/H3_AP202503261647745482_1.pdf
+- Verified 1: 2026-10-08, fetched with curl in the 07A run, strings below confirmed
+- Verified 2: 2026-10-08, re-fetched at iteration 8 and again after the quality pass, unchanged; "红人营销行业", "18.95", "收取一定比例的平台技术服务费", "毛利端较为依赖抖音、快手", "返点政策"
+- Used in: china-kol-pricing
+- Notes: A gross margin, not a fee quote. Never present it as what agencies charge.
+
+### NOT LOGGED, searched and rejected 2026-10-08 (China KOL pricing)
+- 2025-26 yuan creator prices by follower tier from a dated Chinese publisher (Xingtu, Pugongying, Weibo, Bilibili, Kuaishou). Broker reports with tier tables are 2020-21; every newer table sits on undated agency or self-media pages. Not cited. 07A uses our published planning ranges plus Long Advisory.
+- A tier-controlled category multiplier ("beauty costs more than travel"). No platform, data firm or broker publishes one. Rejected.
+- An exclusivity premium in percent. Agency blogs only. Rejected.
+- An agency or service-provider fee range in percent from a neutral, dated source. None found; the intermediary layer is shown through Xingtu's service-provider line, the 0.8 payout rule and Tianxiaxiu's filed margin.
+- MCN-to-brand rebates and KOC product-for-post rates. No dated, allowed source.
+- Weibo 微任务 30% fee: platform page has no date. Kuaishou 5% fee: 2020 trade press only. Bilibili 花火 fee: not found. Not cited.
+- Totem "mid-tier prices up 15-20%" and a Topklout tier-price line: in search summaries only, not on any fetched page. Rejected.
+- Miaozhen 2025 white paper tier definitions (pdf.dfcfw.com H3_AP202503071644144674): read from PDF layout, not checked visually. Not used.
+- Frost & Sullivan 180.9 billion yuan (2025) in a Hong Kong listing draft (draft, subject to change, broadest definition). Not used.
+- QuestMobile per-post averages (Douyin 39.7k, Xiaohongshu 10.8k yuan, 2024) via an adquan columnist; QuestMobile shows them only in images. Not used.
+- Long Advisory's per-tier US dollar table (Micro to Mega) is an image only; text check impossible. Not used; its text ranges are.
+
 ## TheRedScroll first-party data
 
 Everything here comes from accounts we run. It is cited as ours, with sample
@@ -2365,6 +2715,28 @@ data.
 - Used in: travel-hospitality
 - Notes: Cite as "our Marriott case study", https://www.theredscroll.com/work/marriott/. The page has no date; quote it as published.
 
+### Viessmann case study, as published
+- Value: no figure. Published lines: "Heating technology since 1917"; "Now part of Carrier"; "They had Tmall and JD stores already"; "But traffic was thin"; Douyin short videos about warmer homes and lower bills, product demos and livestreams to the Tmall store; "Douyin quickly became one of Viessmann's biggest sources of new online buyers"; RedNote reviews, installation guides, homeowner stories, KOL and KOC seeding, a "best heating system" search; WeCom pre-sale questions "in Chinese, in real time" ("What size system do I need?"), the same thread as the service channel; "One conversation from first question to long-term client"; "Our team ran it from China"; "Within roughly two years, Viessmann's online revenue in China was growing month over month. Tmall and JD went from new storefronts to real, consistent sales channels"; offline retail, distributors and service partners plugged into the same loop. Platforms on the page: Douyin, RedNote, WeCom, Tmall, JD. Industry label: Climate systems
+- Sample: one client program (Viessmann China)
+- Period: "roughly two years", dates not published
+- Exclusions: no revenue, lead, follower or engagement figure is published; none is used or estimated
+- Cleared for publication: yes, on /work/viessmann/ with the client named (settled 2026-10-02)
+- Verified 1: 2026-10-08, fetched with curl (logs/scratch/06D/check.py, tag c1); live page matched line by line against src/pages/work/viessmann.astro
+- Verified 2: 2026-10-08, re-fetched before the draft was finished (tag c2) and again after the quality pass (tag c2b), unchanged
+- Used in: b2b-china-social-teardown
+- Notes: Cite as "TheRedScroll, Viessmann case study, October 2026, https://www.theredscroll.com/work/viessmann/". The page has no date; the citation month is the check month.
+
+### iGuzzini case study, as published
+- Value: no figure. Published lines: architectural lighting "since 1959"; "Architects knew iGuzzini. Consumers didn't."; "Nobody scrolls RedNote looking for pendant lamps"; "Most people buy lighting through a contractor or a designer they trust"; "WeChat was home base" (project showcases, designer collaborations, launches); RedNote with "interior designers, architects, and renovation KOLs" plus design-focused KOCs; "Weibo gave us broader reach"; livestreams showing pieces in real rooms and answering questions live; "Over 24 months, iGuzzini went from a name known only in trade circles to a brand Chinese luxury consumers actually recognized"; "Tmall sales backed it up. Good numbers, steady growth."; people bought because they'd been "following on WeChat, or saved a post on RedNote weeks earlier"; the page calls it turning "a B2B brand into a luxury household name". Platforms on the page: WeChat, RedNote, Weibo, Tmall. Industry label: Luxury lighting / Design
+- Sample: one client program (iGuzzini China)
+- Period: 24 months, dates not published
+- Exclusions: no sales, lead, follower or engagement figure is published; none is used or estimated
+- Cleared for publication: yes, on /work/iguzzini/ with the client named (settled 2026-10-02)
+- Verified 1: 2026-10-08, fetched with curl (logs/scratch/06D/check.py, tag c1); live page matched line by line against src/pages/work/iguzzini.astro
+- Verified 2: 2026-10-08, re-fetched before the draft was finished (tag c2) and again after the quality pass (tag c2b), unchanged
+- Used in: b2b-china-social-teardown
+- Notes: Cite as "TheRedScroll, iGuzzini case study, October 2026, https://www.theredscroll.com/work/iguzzini/". The page also credits HubStudio.ai for content production; not used.
+
 <!-- Needed:
 
 - WeCom group retention curve and repeat purchase lift (brief 12B)
@@ -2385,6 +2757,17 @@ otherwise the fallback applies, and a brief that cannot stand without it is
 set to blocked by its draft run.
 -->
 
+### TheRedScroll indicative creator-fee ranges, as published
+- Value: Xiaohongshu nano-KOCs under 5K 100 to 500 yuan a post or product exchange only; micro-KOCs 5K to 20K 500 to 3,000; mid-tier KOLs 20K to 100K 3,000 to 15,000; top-tier 100K+ 15,000 to 80,000+; video notes 20 to 30% more than photo notes. Douyin under 50K 1,000 to 5,000 a video; 50K to 500K 5,000 to 30,000; 500K+ 30,000 to 200,000+; live commerce hosts base fee plus 20 to 40% commission. WeChat Official Account KOLs 5,000 to 50,000+ an article, about 1 yuan a view; Channels KOLs 3,000 to 20,000 a video
+- Sample: n/a (published planning ranges: "These ranges reflect Q1 2026 benchmarks. Not quotes.")
+- Period: Q1 2026, as stated on the page; current as of 2026-10-08 (src/pages/services/influencer-marketing.astro and the live page)
+- Exclusions: the page's "Beauty and luxury KOLs command roughly 50% more" line was not used and was removed from the page in all five locales on 2026-10-08 (unsourced, and QuestMobile's 2024 data points the other way)
+- Cleared for publication: yes, on a live page. These are creator fees, not our fees, so STYLE_GUIDE 6.4 does not apply (same ruling as the ad planning ranges, settled 2026-10-02)
+- Verified 1: 2026-10-08, live page fetched with curl, every range string matched
+- Verified 2: 2026-10-08, re-fetched twice (iteration 8 and after the quality pass), unchanged
+- Used in: china-kol-pricing
+- Notes: Cite as ours, as planning ranges, never as measured data or a market average. If the service page changes, 07A changes with it, in every locale.
+
 ## Client figures
 
 Settled 2026-10-02 (see `CLAUDE.md`, named clients): a client figure or line
@@ -2396,8 +2779,8 @@ estimated. No marker, no separate sign-off chase.
 | Client | Case study page | Brief | Used |
 |---|---|---|---|
 | Camper | /work/camper/ (43K to 187K followers, 31% sales lift, 18 months) | 02D, 03D | Published figures only, quoted from the page. The monthly series and the two campaign post-mortems are not public and are not used. |
-| Viessmann | /work/ page if published | 06D, 07D | Only what the page publishes |
-| iGuzzini | /work/ page if published | 06D, 07D | Only what the page publishes |
+| Viessmann | /work/viessmann/ (no figure; "roughly two years", Douyin to Tmall, RedNote search proof, WeCom pre-sale and service) | 06D, 07D | No figure. Published lines quoted from the page (see the first-party entry). The client's own channel facts (dealers, the Carrier deal) are cited to Viessmann China and Carrier, never as our work. |
+| iGuzzini | /work/iguzzini/ (no figure; "Over 24 months", WeChat home base, RedNote designers, Weibo, livestreams, Tmall) | 06D, 07D | No figure. Published lines quoted from the page (see the first-party entry). The 2024 Haitai developer deal is iGuzzini's own, cited to China News Service. |
 | Marriott | /work/marriott/ (no figure; "millions in sales on Tmall", "Hundreds of thousands of new Bonvoy members") | 05D | No figure. Published lines quoted from the page (see the first-party entry). The 2017 Fliggy joint venture and the 2025 Meituan membership are Marriott's own deals, cited to 21st Century Business Herald and Xinhua, never as our work. |
 | Jaguar Land Rover | /work/ page if published | 09D | Only what the page publishes |
 | JAC Motors | /work/ page if published | 09D | Only what the page publishes |

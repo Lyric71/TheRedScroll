@@ -39,6 +39,8 @@ They override any conflicting rule inside the skill.
 
 Sekkei owns this query with a dedicated industry page. We contest it with better proof: two named B2B clients and a real lead-flow model. Their page is generic. Ours has a teardown behind it, published last week.
 
+Amended 2026-10-08 by the 06D draft run (settled fallbacks 2 and 5): the Viessmann and iGuzzini case pages publish no figure and describe trade-channel brands reaching the end buyer (homeowner, consumer), with sales on Tmall, JD, in WeCom chats or through distributors. Present them that way, not as B2B lead-generation results. The "lead-flow model" is the four-step flow in the 06D teardown (Douyin or Xiaohongshu content raises the question, the buyer adds the brand in WeCom, the sale closes on Tmall, JD or through distributors, the same WeCom thread handles service), quoted from /work/viessmann/.
+
 ## Section outline
 
 Follow this order. Rename headings into plain reader language. Do not add a
@@ -60,8 +62,8 @@ Every figure below needs a dated, linked source in blockquote format. Check
 still current, reuse the logged citation instead of researching again. If you
 find a new figure, append it to that ledger before you finish.
 
-- China B2B digital buying behavior, cite a dated source
-- Client outcomes from Viessmann and iGuzzini
+- China B2B digital buying behavior, cite a dated source (amended 2026-10-08: logged in the ledger, KPMG China, November 2025, MRO purchasing 3.7 trillion yuan in 2024, digital under a tenth, request-for-quote still the main model; no citable survey of the social channels Chinese B2B buyers use exists, fallback 1)
+- Client outcomes from Viessmann and iGuzzini (amended 2026-10-08: neither /work/ page publishes a figure; quote their published lines only, settled fallback 2)
 
 **If a figure cannot be sourced, cut the claim.** Do not estimate, do not
 hedge, do not write "industry sources suggest". A missing number is better

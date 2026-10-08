@@ -205,7 +205,8 @@ Everything the designer and developer need, in one block.
 ```
 <!-- ASSET BRIEF
 TABLES: <list, with the data each needs>
-CHARTS: <none, or a chart the publish step can build from a sourced table>
+CHARTS: none (the site has no chart component and body copy takes no HTML;
+        a chart's data goes in a table, settled fallback 7, Oct 9, 2026)
 SCREENSHOTS: <none, unless the run itself can capture it; see Settled fallbacks>
 DOWNLOADS: <none, unless the run itself produces the file>
 INTERNAL LINKS: <anchor text> -> <url>, one per line

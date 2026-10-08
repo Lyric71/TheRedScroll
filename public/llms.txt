@@ -1,6 +1,6 @@
 # TheRedScroll
 
-Last updated: 2026-10-08
+Last updated: 2026-10-09
 
 > TheRedScroll is a China social media agency based in Shanghai and Hong Kong. We help Western brands grow on WeChat, Douyin, RedNote (Xiaohongshu), Weibo, and 14 other Chinese social platforms, on a fixed scope and a fixed price.
 
@@ -68,6 +68,7 @@ Founded by Cyril Drouin, former CEO of Publicis Commerce and Performance Marketi
 - [WeChat marketing cost: account, ads, Mini Program, and WeCom](https://www.theredscroll.com/insights/wechat-marketing-cost/): What Tencent charges and what you set yourself: Official Account verification (99 US dollars a year from overseas), content, Moments ad floors and the core-city bidding rule, Channels, Mini Program and WeChat Pay fees, WeCom licensing, agency fee models and three worked budgets (published 2026-10-05)
 - [WeChat Official Account setup for foreign companies in 2026](https://www.theredscroll.com/insights/wechat-official-account-setup/): How a company registered outside China opens and verifies its one service account: account types and push limits, the overseas document checklist, the eight registration steps, the 99 US dollar verification and its 7 to 15 working days, what the overseas account cannot do, migration to a mainland account, menus and the 48-hour message window, and WeCom's overseas and mainland routes (published 2026-10-06)
 - [WeChat vs Xiaohongshu: which one to launch on first](https://www.theredscroll.com/insights/wechat-vs-xiaohongshu/): Which platform a foreign brand should lead with in China: what each platform is for (retention versus discovery), five conditions that point to Xiaohongshu and five that point to WeChat, why B2B leads with WeChat and WeCom, platform fees for one platform versus both, a month-by-month launch order, and a decision table by product type and price point (published 2026-10-08)
+- [Travel and hospitality marketing in China](https://www.theredscroll.com/industries/travel-hospitality/): How Chinese travelers research on Xiaohongshu and Douyin and book on Trip.com, Fliggy, Meituan and Dianping, why the Chinese hotel name must match the OTA listing, travel KOL rules, the holiday calendar, and destination versus property plans (published 2026-10-09)
 
 ## Localized versions
 
