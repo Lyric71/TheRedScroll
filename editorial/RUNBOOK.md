@@ -1,18 +1,20 @@
 # Daily runbook
 
-One article per working day, Monday through Friday except Wednesday.
-Fifty-two articles, September 7 to December 4, 2026.
+Fifty-two articles, dated September 7 to December 4, 2026. One draft a day,
+every day, and every finished draft publishes at the next publish run
+(04:00). `publish_date` orders the queue; it never gates a run (`CLAUDE.md`,
+"The queue order").
 
 ## The daily command
 
 Open Claude Code at the repo root (or in `editorial/`) and paste:
 
 ```
-Draft today's article.
+Draft the next article.
 ```
 
-That is the whole prompt. `CLAUDE.md` tells Claude what "today's article"
-means. If you want a specific one:
+That is the whole prompt. `CLAUDE.md` ("The queue order") tells Claude what
+"the next article" means. If you want a specific one:
 
 ```
 Draft brief 04C.
@@ -27,8 +29,12 @@ Publish china-social-media-marketing-cost
 ## What Claude does, in order
 
 1. Reads `CLAUDE.md` and `SPEC.md`.
-2. Finds today's row in `schedule.csv`. If today has no row, takes the oldest
-   row with status `not_started` and says so.
+2. Picks the row in `schedule.csv`: a row an interrupted run left at
+   `drafted` or `quality_passed` first, else the earliest `not_started` row
+   in `publish_date` order, whatever its date. It skips only a `blocked` row
+   and a Timely row before the day ahead of its `publish_date`; a Timely row
+   whose day has come goes first. It ends without drafting only when no
+   draftable row is left.
 3. Reads that brief file in `briefs/`.
 4. Reads `sources/site-profile.md` instead of fetching the site, unless the
    profile is more than a month old.
@@ -104,15 +110,20 @@ slug map in `src/i18n/config.ts` (`/fr/secteurs/`, `/zh/hangye/`,
 from the body into the `faqs` frontmatter field so the page renders the
 accordion and emits FAQPage schema.
 
-Nothing publishes itself. Drafts wait in `output/` until someone says so.
+Outside the scheduled publish run (see "Automating it"), nothing publishes
+itself.
 
 ## Weekly rhythm
 
-| Day | Slot | Job |
+The slots set each brief's job and its place in the queue. They do not set
+the drafting day: the draft run takes the next row every day, and the publish
+run publishes every finished draft whatever its date.
+
+| Day in the plan | Slot | Job |
 |---|---|---|
 | Monday | A | The money question. Cost and pricing. Ends by sending the reader to the pricing page, never quoting it. |
 | Tuesday | B | Platform depth. Feeds a money page. |
-| Wednesday | - | No draft. Review and publish Monday and Tuesday. |
+| Wednesday | - | No slot in the plan. The draft and publish runs still run. |
 | Thursday | C | Audience piece. Pre-entry on odd weeks, in-market on even weeks. |
 | Friday | D | Vertical page or teardown. The link earners. |
 
@@ -125,7 +136,7 @@ only and accept a slower build.
 |---|---|---|
 | Sept 25 to 27 | Mid-Autumn Festival | China-side review finishes Thursday Sept 24. |
 | Oct 1 to 7 | National Day Golden Week | Four slots fall inside it: Oct 1, 2, 5 and 6. Draft all four during the week of Sept 28 and schedule them. |
-| Nov 11 | Double 11 | Brief 08D is the countdown, published Oct 30. Brief 10D is the results piece and must publish within 48 hours of the event. |
+| Nov 11 | Double 11 | Brief 08D is the countdown, published Oct 30. Brief 10D is the results piece and must publish within 48 hours of the event. Both rows are `content_type` Timely: drafted no earlier than the day before their `publish_date`, published no earlier than it (`CLAUDE.md`, "The queue order"). |
 | Dec 12 | Double 12 | Falls after the plan ends. Add it to week 14 if the cadence continues. |
 
 To batch the Golden Week four:
@@ -203,11 +214,19 @@ keys and the full model are all here, and a cloud routine has none of them.
 
 | Task | When (Shanghai) | What | Default |
 |---|---|---|---|
-| TheRedScroll Editorial Draft | Mon, Tue, Thu, Fri 00:30 | `run-daily.ps1 -Mode draft`: steps 0 to 3, stops at `image_ready` | enabled |
-| TheRedScroll Editorial Publish | every day 04:00 | `run-daily.ps1 -Mode publish`: publishes every due `image_ready` row, builds, commits, pushes, emails | enabled (Cyril, Sept 3, 2026) |
+| TheRedScroll Editorial Draft | every day 00:30 | `run-daily.ps1 -Mode draft`: steps 0 to 3 on the next row in the queue, stops at `image_ready`, then `check-queue.mjs` | enabled |
+| TheRedScroll Editorial Publish | every day 04:00 | `run-daily.ps1 -Mode publish`: publishes every `image_ready` row whatever its `publish_date` (a Timely row on or after its date), builds, commits, pushes, emails | enabled (Cyril, Sept 3, 2026) |
+
+`publish_date` never gates either run, so neither ends on "nothing due" while
+a draftable or finished row exists. After each draft run,
+`check-queue.mjs` mails Cyril (once a day at most) when drafting stalls two
+days with briefs waiting, a finished draft sits at `image_ready` two days, or
+a week or less of briefs is left. Preview it with
+`node editorial/scripts/check-queue.mjs --dry-run`.
 
 Scripts live in `editorial/scripts/`. `register-tasks.ps1` creates or updates
-both tasks. Each run writes its console output to `logs/runs/<date>-<mode>.txt`
+both tasks; the live tasks run through the automation retry wrapper, so
+re-register through `automation/scripts/Register-ProjectTasks.ps1`. Each run writes its console output to `logs/runs/<date>-<mode>.txt`
 next to the article run log. The machine has to be on, or asleep with wake
 allowed, at the run time. A missed run fires as soon as the machine is back.
 

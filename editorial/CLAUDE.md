@@ -1,8 +1,8 @@
 # TheRedScroll editorial system
 
 You are drafting articles for **theredscroll.com**, a China social media agency
-with offices in Shanghai and Hong Kong. One article per working day, from a
-brief file in `briefs/`. Every path in this folder is relative to
+with offices in Shanghai and Hong Kong. One article per draft run, every day,
+from a brief file in `briefs/`. Every path in this folder is relative to
 `editorial/` at the repo root.
 
 Read this file and `SPEC.md` before every draft. **These two files override any
@@ -24,9 +24,37 @@ Every article goes through these steps. None is optional.
 | 4. Publish | `/createblogarticle` + `/deep-translate` + build + git | Creates the post in `src/content/blog/`, wires the image, propagates to FR, ZH, DE and ES, runs `/deep-translate` (three passes) on each locale, runs `npm run build` and `npx astro check`, commits on main, pushes to origin | `published`, `published_on` |
 | 5. Notify | `editorial/scripts/notify-publish.mjs` (Resend) | Emails a publish summary to Cyril | (noted in the run log) |
 
-"Draft today's article." runs steps 0 to 3 and stops. Step 4 runs only when a
-person says "Publish <slug>" after reviewing the draft. Step 5 follows step 4
-automatically. Nothing publishes itself.
+"Draft the next article." (the older "Draft today's article." means the same)
+runs steps 0 to 3 on the next row in the queue and stops. Step 4 runs when a
+person says "Publish <slug>", or in the scheduled publish run, which takes
+every `image_ready` row (see `RUNBOOK.md`, "Automating it"). Step 5 follows
+step 4 automatically.
+
+## The queue order (standing rule, Cyril, Oct 10, 2026)
+
+`publish_date` in `schedule.csv` orders the queue. It never gates a run, in
+either mode. Waiting on it left five finished drafts unpublished and the draft
+task idle three days a week (fixed Oct 10, 2026).
+
+- **Drafting** first finishes a row an interrupted run left at `drafted` or
+  `quality_passed`, else takes the earliest `not_started` row in
+  `publish_date` order, whatever its date. A future date is never a reason to
+  skip a row or end the run. "No row to draft, end the run" holds only when
+  the queue is truly empty.
+- **Publishing** takes every `image_ready` row, whatever its date, in
+  `publish_date` order, one commit per row.
+- **Non-date stops stay:** a `blocked` row is never drafted or published.
+- **The one date exception is `content_type` Timely**, a piece tied to a real
+  event (08D, the Double 11 countdown; 10D, the Double 11 results). A Timely
+  row is drafted no earlier than the day before its `publish_date` (once that
+  day comes it goes first) and published no earlier than that date. Until
+  then the runs skip it and take the next row. A new event-bound brief gets
+  `content_type` Timely; seasonal or evergreen pieces do not.
+
+`editorial/scripts/check-queue.mjs` runs after every draft run and mails Cyril
+once a day at most when drafting stalls two days with briefs waiting, a
+finished draft sits at `image_ready` two days, or a week or less of briefs is
+left. It reports facts, never an open items list.
 
 Step 2 runs on all 52 articles, not only the six high-stakes ones the original
 plan named. Step 3 uses the `generate-image-openai` skill only, never the
@@ -304,7 +332,7 @@ log and the final message instead of skipping silently.
 
 | What | Where |
 |---|---|
-| Today's brief | `briefs/YYYY-MM-DD-slug.md` |
+| The row's brief | `briefs/YYYY-MM-DD-slug.md` (the date is the row's `publish_date`, a queue position) |
 | Finished draft | `output/slug.md` |
 | Hero image | `../public/images/blog/slug.webp` |
 | Published post | `../src/content/blog/slug.md` (plus `blog-fr`, `blog-zh`, `blog-de`, `blog-es`) |

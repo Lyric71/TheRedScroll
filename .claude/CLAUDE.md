@@ -92,8 +92,11 @@ content collections defined in `src/content/config.ts`.
 - Always run build before pushing
 
 ## Editorial System (daily articles, Sept 7 to Dec 4, 2026)
-The article pipeline lives in `editorial/`. When the user says "Draft today's
-article", "Draft brief 04C" or "Publish <slug>", read `editorial/CLAUDE.md`
+The article pipeline lives in `editorial/`. `publish_date` in
+`editorial/schedule.csv` orders the queue and never gates a run (only
+`content_type` Timely rows wait for their date). When the user says "Draft the
+next article" (or the older "Draft today's article"), "Draft brief 04C" or
+"Publish <slug>", read `editorial/CLAUDE.md`
 and `editorial/SPEC.md` first and follow `editorial/RUNBOOK.md`.
 
 Pipeline, in order, none optional: Chinese deep research with every source

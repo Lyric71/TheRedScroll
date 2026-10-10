@@ -3,7 +3,9 @@
 Fifty-two article briefs and the specs Claude Code drafts them from. Lives
 in `editorial/` inside the TheRedScroll repo so the pipeline can publish
 straight into `src/content/blog/`.
-September 7 to December 4, 2026. One article per working day.
+Dated September 7 to December 4, 2026. One draft a day, every day:
+`publish_date` orders the queue and never gates a run (`CLAUDE.md`, "The
+queue order").
 
 ## Start here
 
@@ -30,7 +32,7 @@ logs/                     one run log per article, TEMPLATE.md to copy
 ## The daily command
 
 ```
-Draft today's article.
+Draft the next article.
 ```
 
 ## The pipeline

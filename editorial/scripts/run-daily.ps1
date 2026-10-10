@@ -9,11 +9,21 @@
   none of those.
 
   Modes:
-    draft    "Draft today's article."  Steps 0 to 3 of the pipeline. Stops at
-             image_ready. Runs Mon, Tue, Thu, Fri.
+    draft    "Draft the next article."  Steps 0 to 3 of the pipeline on the
+             next not_started row in publish_date order, whatever its date.
+             Stops at image_ready. Runs every day. Then check-queue.mjs
+             emails Cyril when drafting or publishing stalls or a week or
+             less of briefs is left.
     publish  Publishes every row in editorial/schedule.csv whose status is
-             image_ready and whose publish_date is today or earlier, then
-             sends the Resend email. Enabled: publishes two hours after the draft.
+             image_ready, whatever its publish_date, in publish_date order,
+             then sends the Resend email. Runs every day at 04:00.
+
+  publish_date orders the queue. It never gates a run, in either mode:
+  waiting on it left five finished drafts unpublished and the draft task
+  idle three days a week (fixed 2026-10-10). The one exception is a
+  content_type Timely row (a countdown or results piece tied to a real
+  event, Double 11): it is drafted no earlier than the day before its
+  publish_date and published no earlier than that date.
 
   Output of each run is written to editorial/logs/runs/<date>-<mode>.txt.
   Register with editorial/scripts/register-tasks.ps1.
@@ -24,8 +34,7 @@
 param(
   [ValidateSet('draft', 'publish')]
   [string]$Mode = 'draft',
-  # Manual test run: ignore the plan-start date, the weekday guard and, in
-  # publish mode, the publish_date filter.
+  # Manual test run: ignore the plan-start date.
   [switch]$Force,
   # Optional extra instructions appended to the prompt (for example a resume
   # note after an interrupted run).
@@ -65,24 +74,24 @@ if (-not $Force -and (Get-Date).Date -lt $PlanStart) {
   exit 0
 }
 
-# Skip weekends and Wednesday for drafting. The schedule has no rows there.
-if ($Mode -eq 'draft' -and -not $Force) {
-  $Dow = (Get-Date).DayOfWeek
-  if ($Dow -in 'Saturday', 'Sunday', 'Wednesday') {
-    "$(Get-Date -Format s) no draft on $Dow" | Out-File $RunLog -Encoding utf8
-    exit 0
-  }
-}
-
 # The shared runner uses: Opus 5.5, then Fable, GPT-6 Astra and GPT-5.6 Sol as fallbacks.
 $Model = 'claude-opus-5-5'
 
 if ($Mode -eq 'draft') {
   $Prompt = @'
-Draft today's article.
+Draft the next article.
 
 Read editorial/CLAUDE.md, editorial/SPEC.md and editorial/RUNBOOK.md first and
-follow them exactly. Run steps 0 to 3 of the pipeline: Chinese deep research
+follow them exactly. Take ONE row from editorial/schedule.csv. If a row stopped
+at drafted or quality_passed (an interrupted run), finish that one. Otherwise
+take the earliest row in publish_date order whose status is not_started,
+WHATEVER ITS PUBLISH_DATE: that column orders the queue, it is not a release
+date, and a future date is never a reason to skip a row or end the run. Skip
+only a blocked row and a held Timely row: a row whose content_type is Timely
+(a countdown or results piece tied to a real event) is drafted no earlier than
+the day before its publish_date, and once that day has come it goes first. If
+no draftable row is left at all, record that the queue is empty (or holds only
+Timely rows waiting for their day) and end. Run steps 0 to 3 of the pipeline: Chinese deep research
 with every source validated twice, /createarticle, /content-quality-us on the
 finished draft, /generate-image-openai for the hero image. Update
 editorial/schedule.csv and write the run log. Stop at image_ready. Do not
@@ -100,7 +109,7 @@ reason in notes instead of image_ready.
 '@
 } else {
   $Prompt = @'
-Publish every reviewed draft that is due.
+Publish every finished draft.
 
 Read editorial/CLAUDE.md, editorial/SPEC.md and editorial/RUNBOOK.md first.
 No TODO leaves this run (editorial/CLAUDE.md, "No TODO leaves a run"): before
@@ -109,9 +118,13 @@ must pass and every item in its draft log must be closed; close what you can
 in this run (in-links and corrections to older pages in every locale), and do
 not publish a row with an item only Cyril can close. Never pass --todo to the
 notify script and never put an open item in --note.
-In editorial/schedule.csv, find every row whose status is image_ready and
-whose publish_date is today or earlier. For each one, in date order, run the
-publish step: /createblogarticle on the output file (or the industries /
+In editorial/schedule.csv, find every row whose status is image_ready,
+WHATEVER ITS PUBLISH_DATE: that column orders the queue, it is not a release
+date, and a future date is never a reason to leave a finished draft
+unpublished. The one exception: a row whose content_type is Timely (a
+countdown or results piece tied to a real event) publishes on its
+publish_date or later, never before. A blocked row is never published. For
+each row, in publish_date order, one commit per row, run the publish step: /createblogarticle on the output file (or the industries /
 tools collection for those templates). For insights this includes, without
 exception, the propagation to every live locale (blog-fr, blog-zh, blog-de,
 blog-es, with every listing surface updated) followed by /deep-translate on
@@ -137,7 +150,7 @@ if ($Extra) {
 }
 
 if ($Force) {
-  $Prompt += "`n`nMANUAL TEST RUN: ignore the publish_date. Process every row whose status is image_ready (publish mode) or take the oldest not_started row (draft mode). Say in the run log that this was a forced test run."
+  $Prompt += "`n`nMANUAL TEST RUN: say in the run log that this was a forced test run."
   $RunLog = Join-Path $RunLogDir "$Stamp-$Mode-forced.txt"
 }
 
@@ -157,4 +170,17 @@ try {
 }
 
 "$(Get-Date -Format s) end $Mode exit $Code" | Out-File $RunLog -Append -Encoding utf8
+
+# The runner, not the model, says when the pipeline stops producing: a mail
+# once a day when drafting stalls, a finished draft sits unpublished, or a
+# week or less of briefs is left. Never fails the run.
+if ($Mode -eq 'draft') {
+  try {
+    $Queue = & cmd.exe /c "node editorial\scripts\check-queue.mjs 2>&1"
+    "$(Get-Date -Format s) queue: $($Queue -join ' ')" | Out-File $RunLog -Append -Encoding utf8
+  } catch {
+    "$(Get-Date -Format s) queue check failed: $($_.Exception.Message)" | Out-File $RunLog -Append -Encoding utf8
+  }
+}
+
 exit $Code
