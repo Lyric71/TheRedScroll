@@ -215,6 +215,9 @@ first surfaces creators who are cheap for a reason.
 | Platform average collaboration | Per collaboration | 10,000 to 40,000 dollars | Reach at a single moment |
 | Top tier and celebrity | Per post | No dated source found | Launch moments |
 
+For rates across Xiaohongshu, Douyin and WeChat side by side, see
+[our China KOL pricing guide](/insights/china-kol-pricing/).
+
 ## Paid: what the platform lets you spend
 
 Creator fees are the big number. Paid is the one people get wrong, because they

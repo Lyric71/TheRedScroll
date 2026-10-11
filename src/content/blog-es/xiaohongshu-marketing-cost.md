@@ -232,6 +232,8 @@ creadores que son baratos por algo.
 | Colaboración media en la plataforma | La colaboración | 10.000 a 40.000 dólares | Alcance en un momento concreto |
 | Primer nivel y celebridades | La publicación | Sin fuente fechada | Momentos de lanzamiento |
 
+Para comparar las tarifas de Xiaohongshu, Douyin y WeChat, consulte [nuestro análisis de los precios de los KOL en China](/es/analisis/china-kol-pricing/).
+
 ## Publicidad: lo que la plataforma le deja gastar
 
 Los honorarios de los creadores son la cifra grande. La publicidad es la que

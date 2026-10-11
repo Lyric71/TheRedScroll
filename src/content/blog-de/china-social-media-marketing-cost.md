@@ -278,6 +278,8 @@ wirkt. Gemessen an der Arbeit ist es das nicht. Jemand muss 40 Leute finden,
 briefen, beliefern, nachfassen und auswerten. Diese Arbeit landet im
 Agenturhonorar.
 
+Tarife nach Plattform und Follower-Stufe, die zusätzlichen Gebühren und die Hebel, mit denen sich ein Angebot drücken lässt, zeigt [unsere Analyse der KOL-Preise in China](/de/analysen/china-kol-pricing/).
+
 ## Agenturhonorare: Retainer, Projekt und Festpreis im Vergleich
 
 Wer bis hierher gelesen hat, kennt vier der fünf Posten. Der fünfte ist der

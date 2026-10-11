@@ -238,6 +238,8 @@ nach oben, die aus gutem Grund billig sind.
 | Durchschnittliche Zusammenarbeit auf der Plattform | Je Zusammenarbeit | 10.000 bis 40.000 Dollar | Reichweite zu einem bestimmten Zeitpunkt |
 | Spitze und Prominente | Je Beitrag | Keine datierte Quelle gefunden | Launch-Momente |
 
+Einen Vergleich der Tarife auf Xiaohongshu, Douyin und WeChat bietet [unsere Analyse der KOL-Preise in China](/de/analysen/china-kol-pricing/).
+
 ## Werbung: was die Plattform Sie ausgeben lässt
 
 Die Creator-Honorare sind die große Zahl. Die Werbung ist die, bei der man

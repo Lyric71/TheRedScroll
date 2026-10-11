@@ -236,6 +236,8 @@ bon marché pour une bonne raison.
 | Collaboration moyenne sur la plateforme | La collaboration | 10 000 à 40 000 dollars | De la portée à un instant donné |
 | Têtes d’affiche et célébrités | La publication | Aucune source datée | Les temps forts d’un lancement |
 
+Pour comparer les tarifs de Xiaohongshu, Douyin et WeChat, consultez [notre décryptage des tarifs des KOL en Chine](/fr/decryptages/china-kol-pricing/).
+
 ## Publicité : ce que la plateforme vous laisse dépenser
 
 Les cachets des créateurs font le gros de la note. La publicité, elle, est le

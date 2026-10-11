@@ -279,6 +279,8 @@ temps de travail, c’est une tout autre affaire. Il faut trouver, briefer,
 livrer, relancer et suivre 40 personnes. Et ce travail-là finit dans les
 honoraires d’agence.
 
+Les tarifs par plateforme et par palier d’abonnés, les frais qui s’y ajoutent et les leviers pour faire baisser un devis figurent dans [notre décryptage des tarifs des KOL en Chine](/fr/decryptages/china-kol-pricing/).
+
 ## Honoraires d’agence : forfait mensuel, projet et prix fixe comparés
 
 Si vous êtes arrivé jusqu’ici, vous tenez quatre postes sur cinq. Le

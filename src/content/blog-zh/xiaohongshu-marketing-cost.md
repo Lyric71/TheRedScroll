@@ -148,6 +148,8 @@ featuredImage: "/images/blog/xiaohongshu-marketing-cost.webp"
 | 平台平均合作 | 每次合作 | 1万至4万美元 | 某一时点的曝光 |
 | 头部与明星 | 每篇 | 未找到有日期的来源 | 上市节点 |
 
+小红书、抖音和微信的报价对比，见[我们的中国KOL报价指南](/zh/guandian/china-kol-pricing/)。
+
 ## 投放：平台允许你花多少
 
 创作者费用是大头。投放却是最容易算错的一项，因为大家默认它和Meta是一个玩法。

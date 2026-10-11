@@ -276,6 +276,8 @@ solo KOL. En horas de trabajo no lo son. Alguien tiene que localizar,
 informar, enviar producto, perseguir y hacer seguimiento de 40 personas. Y ese
 trabajo acaba en la tarifa de agencia.
 
+Las tarifas por plataforma y nivel de seguidores, los cargos que se suman y las palancas para rebajar un presupuesto están en [nuestro análisis de los precios de los KOL en China](/es/analisis/china-kol-pricing/).
+
 ## Tarifas de agencia: retainer, proyecto y precio fijo, comparados
 
 Si ha llegado hasta aquí, ya tiene cuatro de las cinco partidas. La quinta es

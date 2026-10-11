@@ -254,6 +254,9 @@ dollars in creator fees, which looks cheap next to one KOL. It isn't cheap in
 labor. Somebody has to find, brief, ship product to, chase, and report on 40
 people. That labor lands in the agency fee.
 
+Rates by platform and follower tier, the fees billed on top and the levers that
+bring a quote down are in [our China KOL pricing guide](/insights/china-kol-pricing/).
+
 ## Agency fees: retainer, project, and fixed price compared
 
 If you've read this far, you have four of the five lines. The fifth is the
