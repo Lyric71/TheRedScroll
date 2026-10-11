@@ -301,6 +301,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-10-01 for 05B, with two strings not logged before: "个人微信号（包括境内和境外）可以关注境外主体资质在公众平台注册的服务号" (any WeChat user, mainland or overseas, can follow) and "若其他地区无对应的注册选项，请您后续留意平台开放的注册区域" (unlisted regions cannot register yet). Check 1 and check 2 both 2026-10-01. Used in: wechat-official-account-setup.
 - Re-verified 2026-10-05 for 05C: "境外主体可以注册1个账号", "境外地区账号暂只支持服务号类型" and "认证成功后，账号方可正常使用" confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
 - Re-verified 2026-10-08 for 06C: "境外主体可以注册1个账号" and "境外地区账号暂只支持服务号类型" confirmed at check 1 and check 2. Used in: wechat-open-rate-benchmark.
+- Re-verified 2026-10-12 for 07D: "境外主体可以注册1个账号", "境外地区账号暂只支持服务号类型" and "认证成功后，账号方可正常使用" confirmed at check 1 and check 2. Used in: b2b-industrial.
 
 ### WeChat Official Account verification review time, mainland entity
 - Value: review in 1 to 3 working days; verification must be completed within 30 calendar days of registration; payment-based registration verification succeeds within 1 working day
@@ -495,6 +496,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-10-01 for 05B: the page now says "公众号（认证用户、非认证用户），每天可以开启1次【群发通知】" (the former subscription account is called 公众号) and "每个月（按自然月）可以开启4次" for the 服务号, at check 1 and check 2. Used in: wechat-official-account-setup.
 - Re-verified 2026-10-05 for 05C: "每个月（按自然月）可以开启4次" and "每天可以开启1次" confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
 - Re-verified 2026-10-08 for 06C: "每个月（按自然月）可以开启4次" and "每天可以开启1次" confirmed at check 1 and check 2; the same page now also states "标题上限为64个字节（即32个汉字）" (push title limit 64 bytes, 32 Chinese characters), confirmed at both checks. Used in: wechat-open-rate-benchmark.
+- Re-verified 2026-10-12 for 07D: "每个月（按自然月）可以开启4次" and "次数不会累加" confirmed at check 1 and check 2. Used in: b2b-industrial.
 
 ### Xiaohongshu professional accounts: no WeChat ID or phone number in auto-replies, from January 7, 2025
 - Value: from January 7, 2025, the auto-reply component and welcome messages of a Xiaohongshu professional account (专业号) may not contain a WeChat ID or phone number; only the social business card (社媒名片) may be used to pass contact details. A service provider told the reporter that accounts which did not remove WeChat IDs would be muted (禁言). Also on the page: 98% of local-services merchants were said at WILL to interact with users through in-app consultation
@@ -647,6 +649,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Notes: Slightly older than 12 months at use; no newer official WeCom figure was found (settled fallback 9, cite with the date). Matches what-is-wecom and the CRM service page (14 million, 750 million). Recheck at the next WeCom launch event (usually August).
 - Re-verified 2026-10-11 by the 2026-10-11 publish run: "企业微信已接入超过1400万真实的企业与组织" and "服务的微信用户数超过7.5亿" confirmed at check 1 and check 2. Used in: sell-on-wechat, all five locales (replaces an undated "80% of Fortune 500" vendor citation).
 - Re-verified 2026-10-11 for 07C: both strings confirmed at check 1 and check 2. Used in: choose-china-social-platforms.
+- Re-verified 2026-10-12 for 07D: "超过1400万真实的企业与组织" and "服务的微信用户数超过7.5亿" confirmed at check 1 and check 2. Used in: b2b-industrial.
 
 ### Xiaohongshu: 89% of users search it first before buying home appliances and home furnishing, 2024
 - Value: 89% of users search Xiaohongshu first when buying home appliances and home furnishing products; home content searches up 4.5 times in three years; seeding cut the decision cycle from an industry average of 45 days to under 20 (platform claim)
@@ -871,6 +874,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-11, re-fetched (tags c2, c2b), unchanged
 - Used in: choose-china-social-platforms; also /platforms/others/ (371M, 113 min), all five locales, corrected 2026-10-11
 - Notes: The 26.5 is a spoken management figure, not in the press release; attribute it to the earnings call. Same results line on Economic Observer, 2026-08-27 (eeo.com.cn/2026/0827/1013715.shtml).
+- Re-verified 2026-10-12 for 07D: "月均活跃用户增至3.71亿" confirmed at check 1 and check 2 on stcn.com. The 26.5 average age passed check 1 and check 2 on Tencent News but was cut from the final draft for length. Used in: b2b-industrial (371 million only).
 
 ### Kuaishou app users, Q2 2026
 - Value: 412 million average DAU and 797 million average MAU (a record) in Q2 2026; exact 412.3 million (up 0.8%) and 797.3 million (up 11.5%)
@@ -909,6 +913,56 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Weibo trending-topic reach: no dated allowed source.
 - Zhihu monthly users: Zhihu stopped disclosing user scale in 2025 ("2024年MAU跌回9900万，到2025年，知乎干脆不再披露用户规模数据", Jiemian, 2026-04-30, https://www.jiemian.com/article/14373105.html, one check only); Q2 2026 reports 13.1 million average monthly subscribing members (company release on Yahoo Finance, 2026-08-26). Not cited. Note, 2026-10-11: /platforms/others/ gives Zhihu "~83M" with no date. No 2025 or 2026 Zhihu user count exists to set against it, and choose-china-social-platforms gives Zhihu no figure, so nothing on the site contradicts it.
 - Douyin Global Purchase brand count: newest is "3000+ brands" from 2023 (China Daily, 2024-01-03). Too old for current use.
+
+### WeCom customer reassignment: departed and active employees
+- Value: a company can pull the customer list of every departed employee and reassign those customers to other staff (developer API); a company can move an active employee's customers and customer groups to a colleague, and the customer and the new member become contacts automatically after 24 hours (help center)
+- As of: developer page last updated 2023-12-01; help-center document time 2026-09-02 (unix 1788323015 in the page JSON)
+- Source: WeCom developer center (企业微信开发者中心), 获取待分配的离职成员列表; WeCom help center (企业微信帮助中心), 如何使用在职继承分配成员的客户
+- URL: https://developer.work.weixin.qq.com/document/path/92124 ; https://open.work.weixin.qq.com/help2/pc/14704
+- Verified 1: 2026-10-12, fetched with curl (session scratch check.py, tag c1); "获取所有离职成员的客户列表", "重新分配给其他企业成员", "最后更新：2023/12/01"; "企业可以将在职成员的客户和客户群分配给其他成员继续提供服务" and "24小时后自动成为联系人" confirmed
+- Verified 2: 2026-10-12, re-fetched before the draft was finished (tag c2) and after the quality pass (tag c2b), unchanged
+- Used in: b2b-industrial
+- Notes: The help center's Chinese page for departed-employee reassignment (help2/pc/17941) is the education (学员) variant, so the developer page is cited for departed employees. Supports the CRM service page line that WeCom contacts stay with the company when a rep leaves.
+
+### Zhihu content and creators, Q2 2026
+- Value: about 993 million pieces of content in total; 81.5 million content creators in total; AI-related professional content up about 37% year on year; 13.11 million average monthly subscribing members; marketing services revenue 199 million yuan, 28.8% of revenue
+- As of: Q2 2026 (results reported 2026-08-26)
+- Source: Zhihu Q2 2026 results, reported by Sina Tech (新浪科技); subscriber figure corroborated by Guandian (观点网), 2026-08-26, https://www.guandian.cn/article/20260826/591891.html
+- URL: https://finance.sina.com.cn/tech/it/2026-08-26/doc-iniprums2390218.shtml
+- Verified 1: 2026-10-12, fetched with curl (tag c1); "知乎累计内容量约9.93亿条", "累计拥有8150万名内容创作者" and 2026年08月26日 confirmed (the research agent also confirmed "月均订阅会员为1311万" and "营销服务收入为1.99亿元，占比28.8%")
+- Verified 2: 2026-10-12, re-fetched (tags c2, c2b), unchanged
+- Used in: b2b-industrial (content and creators only)
+- Notes: Zhihu has disclosed no monthly active users since 2025 and no institutional-account count; do not quote a Zhihu MAU. /platforms/others/ still shows an undated "~83M"; no article sets a dated Zhihu MAU against it.
+
+### Zhihu most cited content community in Chinese AI assistants, QbitAI test, May 2025
+- Value: 30 questions put to seven assistants (DeepSeek, Doubao, Kimi, Yuanbao, Wenxin, Qwen, Metaso), three times each, 630 valid answers; nearly half of AI answers cited content communities; Zhihu was the most cited Chinese content community at 29.9%, ahead of Bilibili at 7.6%; on professional-knowledge questions Zhihu rose to 35.3%
+- As of: May 21, 2025
+- Source: QbitAI think tank (量子位智库), AI智能助手的SEO策略变革研究报告
+- URL: https://www.qbitai.com/2025/05/285761.html
+- Verified 1: 2026-10-12, fetched with curl (tag c1); "知乎在中文内容社区中被引频率最高，达到29.9%", "远超第二名B站的7.6%", "实验共获取有效数据630条", "量子位智库共设计30个问题" and 2025-05-21 confirmed
+- Verified 2: 2026-10-12, re-fetched (tags c2, c2b), unchanged
+- Used in: b2b-industrial
+- Notes: A trade-press lab test, not a census: always state the sample. Older than 12 months; no newer neutral test found (fallback 9). A Sina "AI模型信源偏好" piece (2026-08-18) claiming DeepSeek cites Zhihu about 25% is a GEO vendor advertorial; not logged.
+
+### Bilibili 2025 ESG report: professional-knowledge learners and daily tech viewers
+- Value: 230 million users learned professional knowledge on Bilibili in 2025; about 16 million users watch technology videos on Bilibili every day (2024 report: 220 million and 15 million+)
+- As of: calendar 2025 (report approved 2026-04-13)
+- Source: Bilibili (哔哩哔哩) 2025 environmental, social and governance report (traditional Chinese PDF)
+- URL: https://ir.bilibili.com/media/vj4brykg/bilibili-2025%E7%92%B0%E5%A2%83-%E7%A4%BE%E6%9C%83%E5%8F%8A%E7%AE%A1%E6%B2%BB%E5%A0%B1%E5%91%8A.pdf
+- Verified 1: 2026-10-12, fetched with curl and pdftotext (tag c1); "在B站學習專業知識的用戶數量2.3億", "每天在B站觀看科技相關視頻的用戶數量~1,600萬" and "2026年4月13日" confirmed (whitespace-insensitive)
+- Verified 2: 2026-10-12, re-fetched (tags c2, c2b), unchanged
+- Used in: b2b-industrial
+- Notes: Company's own report. No dated source measures engineers or B2B buyers on Bilibili or Zhihu (see NOT LOGGED, 2026-10-12).
+
+### Ocean Engine Feiyu CRM: what it does, and the WeCom add
+- Value: Ocean Engine describes Feiyu (飞鱼CRM) as its sales-lead tool, assigning, following up, cleaning and tagging leads, importing Ocean Engine ad data and connecting to other CRM systems; version 4.1.9 (2022-07-15) added one-tap adding to WeCom
+- As of: listing confirmed October 2026; version history to 2024-12-12
+- Source: Ocean Engine (巨量引擎), Feiyu CRM listing on the Apple App Store (China), developer Ocean Engine Co., Ltd.
+- URL: https://apps.apple.com/cn/app/id1428346102
+- Verified 1: 2026-10-12, fetched with curl (tag c1); "飞鱼是巨量引擎旗下的销售线索管理工具", "实现销售线索的分配、回访、自动清洗和标记", "与其他CRM系统进行对接", "支持一键添加企业微信" and "2022/07/15" confirmed
+- Verified 2: 2026-10-12, re-fetched (tags c2, c2b), unchanged
+- Used in: b2b-industrial
+- Notes: The research agent first dated the WeCom feature to 4.1.8; the history puts it in 4.1.9, July 2022. The description has no date of its own, so cite the listing as confirmed October 2026. School.oceanengine.com pages render by script and show no text to curl.
 
 ## Regulatory and legal
 
@@ -988,6 +1042,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-10-02: the page preamble ends "根据2018年10月26日第十三届全国人民代表大会常务委员会第六次会议《关于修改〈中华人民共和国野生动物保护法〉等十五部法律的决定》修正", so citations of this URL say "as amended October 2018" (fixed in china-agency-pricing-models and food-beverage, all five locales). The law was amended again on 2021-04-29 (NPCSC decision amending eight laws, checked on zh.wikisource.org): that decision deleted the publication registration duty in Art. 29, removed the registration certificate penalty from Arts. 55, 57 and 58, and deleted Art. 60. The articles cited on the site (9, 11, 13, 14, 17, 18, 28, 30, 34 and the 57 fine and licence revocation) read the same in the current text.
 - Notes: Article 14 (ads must be identifiable, no ads disguised as news) and Article 28 (false or misleading content is false advertising) are on the same page and are the general form of the Order 72 rule below.
 - Re-verified 2026-10-06 for 06A: "最佳" and "二十万元以上一百万元以下" confirmed (Arts. 9 and 57) at check 1 and check 2. Used in: china-marketing-hidden-costs.
+- Re-verified 2026-10-12 for 07D: Art. 11 "广告使用数据、统计资料、调查结果、文摘、引用语等引证内容的，应当真实、准确，并表明出处" and "根据2018年10月26日" confirmed at check 1 and check 2. Used in: b2b-industrial (Art. 11, as amended October 2018).
 
 ### Internet Advertising Measures: seeding notes with a purchase link are advertising
 - Value: promoting goods or services through knowledge sharing, experience sharing or product reviews with a purchase link attached must be conspicuously labelled "广告"; livestream sellers take advertiser duties and livestream room operators and marketing staff take advertising operator, publisher or endorser duties
@@ -1180,6 +1235,35 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-08, re-fetched at iteration 8 and again after the quality pass, unchanged; "实际销售额仅8209.26元", "退还营销推广费98507.41元", "不要仅凭粉丝数量、网红热度决定合作"
 - Used in: china-kol-pricing
 - Notes: A missed sales guarantee, not a fake-data case. The defendant is the culture company, not the creator.
+
+### China national standards: total and five-year output, 2021 to 2025
+- Value: 48,000 national standards in total at the end of the 14th Five-Year Plan period; 13,000 made or revised in 2021 to 2025
+- As of: January 29, 2026 (SAMR press conference on quality)
+- Source: State Administration for Market Regulation (市场监管总局), reported by China News Service (中国新闻网)
+- URL: https://www.chinanews.com.cn/cj/2026/01-29/10561626.shtml
+- Verified 1: 2026-10-12, fetched with curl (tag c1); "国家标准总数达4.8万项", "制修订国家标准1.3万项" and 2026-01-29 confirmed
+- Verified 2: 2026-10-12, re-fetched (tags c2, c2b), unchanged
+- Used in: b2b-industrial
+- Notes: Newer pace figures found and not cited (one check each): 2,800+ national standards issued in 2026 to late August (China News Service, 2026-08-24); a 2026 to 2030 plan of at least 20,000, including 1,000 mandatory (China News Service, 2026-09-20). The mandatory and recommended split on openstd.samr.gov.cn is an undated live counter; not citable.
+
+### Standardization Law, Article 17: mandatory standard texts published free
+- Value: the texts of mandatory standards must be made public free of charge; the state promotes free publication of recommended standards
+- As of: law as revised November 4, 2017
+- Source: China National Institute of Standardization (中国标准化研究院), statute text of the Standardization Law (标准化法)
+- URL: https://www.cnis.ac.cn/bzhzs/flfg/201812/t20181229_31982.html
+- Verified 1: 2026-10-12, fetched with curl (tag c1); "第十七条强制性标准文本应当免费向社会公开" and "2017年11月4日第十二届全国人民代表大会常务委员会第三十次会议修订" confirmed
+- Verified 2: 2026-10-12, re-fetched (tags c2, c2b), unchanged
+- Used in: b2b-industrial
+
+### Foreign-invested companies in China's standards work, end of 2024
+- Value: members from foreign-invested companies sat on 837 national technical committees for standardization, 61% of all committees, at the end of 2024; foreign-invested companies can join every stage (project proposal, drafting, public comment, review); SAMR said it would support foreign experts in group-standard drafting
+- As of: end of 2024 (State Council policy briefing, February 20, 2025)
+- Source: SAMR (市场监管总局) official Zhou Weijun, reported by China News Service (中国新闻网)
+- URL: https://www.chinanews.com.cn/cj/2025/02-20/10371510.shtml
+- Verified 1: 2026-10-12, fetched with curl (tag c1); "外资企业委员共参加了837个全国专业标准化技术委员会的工作", "占技术委员会总数的61%", "截至2024年底", "参与标准立项、组织制定、征求意见、审查等各个环节" and 2025-02-20 confirmed
+- Verified 2: 2026-10-12, re-fetched (tags c2, c2b), unchanged
+- Used in: b2b-industrial
+- Notes: Older than 12 months; no newer count found (fallback 9). Group standards: more than 120,000 from 8,000+ associations on the national platform (CNIS, 2026-04-23, cnis.ac.cn/bydt/zhxw/202604/t20260423_62831.html, one check only); not cited.
 
 ## Market and industry
 
@@ -1713,6 +1797,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: b2b-china-social-teardown
 - Notes: The research agent also found "1,439" in Tencent's own Q2 2026 results PDF. Recheck after the Q3 2026 results (November 2026).
 - Re-verified 2026-10-11 for 07C: "合并月活跃账户数达14.39亿" confirmed at check 1 and check 2 (logs/scratch/07C/check.py, tags c1, c2, c2b). Used in: choose-china-social-platforms. Q1 2026 was 1.432 billion (Securities Times, 2026-05-13, https://www.stcn.com/article/detail/3907294.html, "截至3月31日，微信及WeChat的合并月活跃账户数达14.32亿"), which matches the platforms guide; not cited.
+- Re-verified 2026-10-12 for 07D: "合并月活跃账户数达14.39亿" confirmed at check 1 and check 2. Used in: b2b-industrial.
 
 ### Weibo monthly and daily active users, end of Q4 2025
 - Value: 567 million monthly active users and 252 million daily active users at the end of Q4 2025; full-year 2025 revenue 1.76 billion US dollars
@@ -1900,6 +1985,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 
 - Re-verified 2026-10-01 for 05B: "企业全称、企业简称", "《企业注册证》或者《商业许可证书》", "审核时间一般是1-3个工作日", "对外收款", "会话内容存档" and "第三方应用市场" confirmed at check 1 and check 2. The help-center JSON carries an update time of 2026-06-29, so 05B cites the page as June 2026. Used in: wechat-official-account-setup.
 - Re-used 2026-10-06 by the 05B publish run: "对外收款", "会话内容存档", "第三方应用市场" and "1-3个工作日" confirmed at check 1 and check 2. Now cited on what-is-wecom (all five locales), which wrongly said WeCom requires a verified Chinese entity.
+- Re-verified 2026-10-12 for 07D: "1-3个工作日", "对外收款", "会话内容存档" and "第三方应用市场" confirmed at check 1 and check 2; cited as June 2026. Used in: b2b-industrial.
+
 ### WeCom external contact capacity: 2,000 free, annual tiers, 100 for unverified companies
 - Value: each company gets 2,000 external contacts free; beyond that it buys a capacity tier, valid one year; an unverified company is limited to 100 customers
 - As of: page undated; confirmed October 2026 (platform documentation)
@@ -1911,6 +1998,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Notes: The page shows no prices to curl. Prices: entry below.
 - Re-verified 2026-10-05 for 05C: "免费获得2000位外部联系人规模", "有效期一年" and "只能添加100个客户" confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
 - Re-verified 2026-10-08 for 06D: same three strings confirmed at check 1 and check 2. Used in: b2b-china-social-teardown.
+- Re-verified 2026-10-12 for 07D: "免费获得2000位外部联系人规模" and "只能添加100个客户" confirmed at check 1 and check 2. Used in: b2b-industrial.
 
 ### WeCom external contact capacity prices at launch, May 2023
 - Value: from May 19, 2023; 5,000 contacts 500 yuan a year; 20,000 contacts 2,000 yuan a year
@@ -2050,6 +2138,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Notes: The platform team's own disclosure, older than 12 months. Tencent has published no later Search MAU or follower-source split (searched 2026-10-05); cite with the year, under settled fallback 9. Same figures on Beijing Daily (xinwen.bjd.com.cn) and Chengdu Business Daily. Recheck for a newer WeChat Open Class figure each January.
 - Re-verified 2026-10-06 for 06B: "对小程序的新增日活跃用户贡献占比达到20%" and 2023年01月10日 confirmed at check 1 and check 2. Used in: wechat-mini-program-cost (the 20% share of new Mini Program daily users, cited with its year).
 - Re-verified 2026-10-08 for 06C: "2022年微信搜一搜月活跃用户已达8亿", "微信搜一搜对公众号新增粉丝贡献占比达到27%" and 2023年01月10日 confirmed at check 1 and check 2. Used in: wechat-open-rate-benchmark.
+- Re-verified 2026-10-12 for 07D: "2022年微信搜一搜月活跃用户已达8亿", "微信搜一搜对公众号新增粉丝贡献占比达到27%" and 2023年01月10日 confirmed at check 1 and check 2. Used in: b2b-industrial.
 
 ### WeChat Mini Program user time, Q4 2025
 - Value: Mini Program (小程序) user time grew more than 20% year on year in Q4 2025; the AI Mini Program growth plan drew more than 10,000 developers
@@ -2085,6 +2174,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Notes: A dated event, older than 12 months, cited with its date (settled fallback 9). LinkedIn's own help page (linkedin.com/help/linkedin/answer/a557005) states the stop date but shows only a relative "last updated" date, so CNR is the citable dated source.
 - Re-verified 2026-10-08 for 06D: "已在两年前关闭中国区社交网络功能" and "2023年8月9日起正式停止服务" confirmed at check 1 and check 2. Used in: b2b-china-social-teardown.
 - Re-verified 2026-10-11 for 07C: both strings confirmed at check 1 and check 2. Used in: choose-china-social-platforms.
+- Re-verified 2026-10-12 for 07D: "已在两年前关闭中国区社交网络功能" and "2023年8月9日起正式停止服务" confirmed at check 1 and check 2. Used in: b2b-industrial.
 
 ### NOT LOGGED, searched and rejected 2026-10-05 (WeChat or Xiaohongshu)
 - Share of Official Account reads from algorithmic recommendation ("45.9%", "50% to 70%"): Zhihu, jzl.com and yiban.io self-media, no Tencent source. Not cited. CORRECTION 2026-10-08: the original of "45.9%" is 36Kr's own March 2025 article on its consumer account, now logged above as "WeChat Official Account open rate history and the shift to recommendation, 36Kr March 2025"; it is one account's share, not a platform figure. The "50% to 70%" line still has no original.
@@ -2687,6 +2777,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-08, re-fetched before the draft was finished (tag c2) and again after the quality pass (tag c2b), unchanged
 - Used in: b2b-china-social-teardown
 - Notes: Quote the digital share as "under a tenth" because the report contradicts itself (9.8% and 9.5%). This is the citable China B2B buyer-behavior source for 07D. No citable survey of which social channels Chinese B2B buyers use exists (see the NOT LOGGED block below).
+- Re-verified 2026-10-12 for 07D: "3.7万亿元", "仍以传统“询报价”机制为主", "采购人员往往通过渠道与平台自行寻源、比价及验真" and "毕马威2025年11月" confirmed at check 1 and check 2. Used in: b2b-industrial.
 
 ### Carrier completes the Viessmann Climate Solutions acquisition, January 2024
 - Value: Carrier completed the acquisition (dated Jan. 2, 2024); Viessmann brings a distinctive installer and service channel model and 12,000 employees
@@ -2840,6 +2931,54 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Host pay for 2024 graduates (MyCOS via a Tencent News creator account), china.com self-media return rates, 36Kr return rates (search summary only), East Buy HKEX filings (PDF unreadable): rejected.
 - 36kr.com sometimes returns a JavaScript shell to curl; the two QuestMobile pages passed check 1, check 2 and the post-quality re-fetch on 2026-10-11.
 
+### China exhibition industry, 2025: exhibitions held, area, world share
+- Value: 4,095 economic and trade exhibitions in 2025, 159 million square meters in total, up 6.53% and 2.5%, both records; China's 13.6622 million square meters of indoor exhibition space ranks first in the world, 30.9% of the global total
+- As of: 2025 (CCPIT 中国展览经济发展报告2025, released January 23, 2026)
+- Source: China Council for the Promotion of International Trade (中国贸促会), report reported by Xinhua (新华社) on ccpit.org; same figures in China Securities Journal via CNR, 2026-01-24
+- URL: https://www.ccpit.org/a/20260124/20260124af3c.html
+- Verified 1: 2026-10-12, fetched with curl (tag c1); "共举办经贸类展会4095项", "展览总面积达1.59亿平方米", "同比分别增长6.53%和2.5%", "占全球总量的30.9%" and 2026-01-24 confirmed
+- Verified 2: 2026-10-12, re-fetched (tags c2, c2b), unchanged; "位居第一" confirmed in the c2 and c2b fetches
+- Used in: b2b-industrial
+
+### China International Import Expo: 2025 results and 2026 dates and registration
+- Value: 8th CIIE (2025): 4,108 exhibitors from 138 countries and regions, 460,000+ registered visitors, 83.49 billion US dollars intended deals on an annual basis; 9th CIIE: November 5 to 10, 2026, National Exhibition and Convention Center (Shanghai), trade visitors register on the website, app or Mini Program, WeCom help desk, online buyer and supplier hall
+- As of: 2025-11-10 (Xinhua); 2026-05-28 (CIIE notice)
+- Source: Xinhua (新华网); China International Import Expo (中国国际进口博览会) official site
+- URL: http://www.news.cn/world/20251110/1fd60ca4e4e34f38a244fcbb3a3ed96d/c.html ; https://www.ciie.org/zbh/bqgffb/20260529/61291.html
+- Verified 1: 2026-10-12, fetched with curl (tag c1); "来自138个国家和地区的4108家企业参展", "注册观众超过46万人", 2025-11-10; "将于2026年11月5日至10日在国家会展中心（上海）举办", "进博会官网（www.ciie.org）、APP或小程序", "扫码添加企微客服" and 2026年05月28日 confirmed
+- Verified 2: 2026-10-12, re-fetched (tags c2, c2b), unchanged
+- Used in: b2b-industrial
+- Notes: Watch, dated 2026-10-12: the 9th CIIE closes November 10, 2026. On the next edit of b2b-industrial after that date, replace the 2025 results with the 2026 results if Xinhua or the CIIE site has published them, in every locale.
+
+### CIIE 2025 on Douyin: online tour visits and comments, day one
+- Value: on the first day of the 8th CIIE, the Douyin online expo tour drew more than 8 million visits and more than 2 million comments; Douyin e-commerce livestreams tied to the expo drew more than 170 million views
+- As of: report linked from a ciie.org page dated 2025-12-19
+- Source: China International Import Expo Bureau (中国国际进口博览局) and People's Daily Online Opinion Data Center (人民网舆情数据中心), CIIE 2025 media coverage and influence report (PDF)
+- URL: https://www.ciie.org/resource/static/zbh/default/assets-2025/download/PDF/CIIE2025MediaCoverageAndInfluenceReport_cn.pdf
+- Verified 1: 2026-10-12, fetched with curl and pdftotext (tag c1); "访问量突破800万人次，互动评论超200万条" confirmed
+- Verified 2: 2026-10-12, re-fetched (tags c2, c2b), unchanged
+- Used in: b2b-industrial (visits and comments only)
+
+### China International Industry Fair 2026 dates
+- Value: 26th CIIF scheduled for October 12 to 16, 2026, National Exhibition and Convention Center (Shanghai)
+- As of: 2026-09-24
+- Source: People's Daily Online Shanghai (人民网)
+- URL: http://sh.people.com.cn/n2/2026/0924/c134768-41707053.html
+- Verified 1: 2026-10-12, fetched with curl (tag c1); "10月12日至16日，第26届中国国际工业博览会将在国家会展中心（上海）启幕" confirmed
+- Verified 2: 2026-10-12, re-fetched (tags c2, c2b), unchanged
+- Used in: b2b-industrial
+- Notes: Watch, dated 2026-10-12: CIIF 2026 closes October 16, 2026. A later brief that needs CIIF figures cites the 2026 closing results once Xinhua or People's Daily publishes them, with both checks. The 2025 edition line (224,000 trade visitors from 133 countries and regions, 3,000+ exhibitors; The Paper via Sina Finance, 2025-09-27) passed check 1 only and was cut from the draft.
+
+### Other trade show figures checked once for 07D, not cited
+- GILE 2026 with GEBT: 2,802 exhibitors, 210,128 visitors from 164 countries and regions, 210,000 sqm (Guangzhou Guangya Messe Frankfurt, 2026-06-25, http://gile.gymf.com.cn/newslist/exponews/80376). Canton Fair 139th: 314,000 overseas buyers, 25.7 billion US dollars intended deals (Xinhua via People's Daily, 2026-05-06); 140th in three phases, October 15 to November 4, 2026 (MOFCOM Kenya office, 2026-07-13). Canton Fair app: 553,000 users at the 139th (CCTV via Beijing Daily, 2026-05-06). All passed check 1 on 2026-10-12; cut from the 07D draft for length, so not checked a second time. A later brief that uses one runs both checks first.
+
+### NOT LOGGED, searched and rejected 2026-10-12 (B2B and industrial)
+- Engineers or technical buyers on Zhihu or Bilibili for work learning: no dated survey (CNNIC 57th report has no platform or job split). "82%的技术工程师通过短视频学习设备知识" traces to an agency blog.
+- Zhihu institutional accounts, Bilibili enterprise accounts: no company figure (Feigua "1万+蓝V" is about 2020, third party).
+- Ocean Engine, WeChat Channels or Xiaohongshu figures for industrial or B2B lead generation: agency pages only (Sohu, cnblogs, nowcoder). Ocean Engine's 2025 search white paper lines on Beijing Daily (2025-11-25) give no period or base and cover consumer search. The Douyin 2025 tech-content report (China News Service, 2026-01-12) covers consumer tech.
+- WeCom count of manufacturing companies: none published by Tencent.
+- Canton Fair WeChat registration claims: guide and agency sites only.
+
 ## TheRedScroll first-party data
 
 Everything here comes from accounts we run. It is cited as ours, with sample
@@ -2881,6 +3020,7 @@ data.
 - Re-verified 2026-10-06 for 06A: on the live /pricing/ page "Custom quote", "2-3 weeks from brief approval", "Minimum 4 posts/month per platform", "Paid directly to the platform, not through us" and "6-month minimum contract" confirmed; no price or tier name used at check 1 and check 2. Used in: china-marketing-hidden-costs.
 - Re-verified 2026-10-06 for 06B: on the live /pricing/ page "membership Mini Programs. Custom quote" confirmed at check 1 and check 2. Referenced by name only; no price or tier name used. Used in: wechat-mini-program-cost.
 - Re-verified 2026-10-11 for 07B on the live /pricing/ page: "Client-provided footage edited and subtitled by us", "Real-life photo & video shoots in China", "Paid directly to the platform, not through us" and "6-month minimum contract" confirmed at check 1 and check 2. Named only, no price or tier name. Used in: douyin-marketing-cost.
+- Re-verified 2026-10-12 for 07D: on the live /pricing/ page "WeCom setup, WeChat CRM integration, community management, private traffic funnels, membership Mini Programs. Custom quote.", "6-month minimum contract", "Paid directly to the platform, not through us", "within 2 weeks of contract signing" and "at per-post rates" confirmed at check 1 and check 2. Scope described, no price or tier name. The article writes "running customer groups" for "community management" (STYLE_GUIDE banned word). Used in: b2b-industrial.
 
 ### TheRedScroll community, reporting and account-ownership commitments, as published
 - Value: "We reply to comments, answer direct messages, monitor brand mentions daily" and "a response playbook agreed with you upfront, and same-day escalation when something could spread"; crisis response plan "within hours" (/weibo-agency/). Day-to-day running includes "community replies" and "monthly reporting in plain English"; report covers "follower growth, article reads, engagement, ad spend at cost, and leads or sales where tracking allows"; WeChat account "registered under your company name", client keeps "the account, the followers, and the full content archive" (/wechat-agency/). Monthly reports cover "follower growth, engagement rates, content performance, ad spend efficiency, and competitive benchmarking"; KPIs "reviewed monthly, recalibrated quarterly" (/services/strategy-campaigns/). Reporting "in English with Chinese-language data attached" (/platforms/others/). "We write in Chinese. Not translate." and real-life production "quoted separately" (/services/content-production/)
@@ -2938,6 +3078,7 @@ data.
 - Verified 2: 2026-10-08, re-fetched before the draft was finished (tag c2) and again after the quality pass (tag c2b), unchanged
 - Used in: b2b-china-social-teardown
 - Notes: Cite as "TheRedScroll, Viessmann case study, October 2026, https://www.theredscroll.com/work/viessmann/". The page has no date; the citation month is the check month.
+- Re-verified 2026-10-12 for 07D: live /work/viessmann/ fetched at check 1, check 2 and after the quality pass; "One conversation from first question to long-term client", "Within roughly two years", "online revenue in China was growing month over month" and "What size system do I need?" confirmed. Used in: b2b-industrial.
 
 ### iGuzzini case study, as published
 - Value: no figure. Published lines: architectural lighting "since 1959"; "Architects knew iGuzzini. Consumers didn't."; "Nobody scrolls RedNote looking for pendant lamps"; "Most people buy lighting through a contractor or a designer they trust"; "WeChat was home base" (project showcases, designer collaborations, launches); RedNote with "interior designers, architects, and renovation KOLs" plus design-focused KOCs; "Weibo gave us broader reach"; livestreams showing pieces in real rooms and answering questions live; "Over 24 months, iGuzzini went from a name known only in trade circles to a brand Chinese luxury consumers actually recognized"; "Tmall sales backed it up. Good numbers, steady growth."; people bought because they'd been "following on WeChat, or saved a post on RedNote weeks earlier"; the page calls it turning "a B2B brand into a luxury household name". Platforms on the page: WeChat, RedNote, Weibo, Tmall. Industry label: Luxury lighting / Design
@@ -2969,6 +3110,7 @@ only once it is logged here with value, sample, period and clearance;
 otherwise the fallback applies, and a brief that cannot stand without it is
 set to blocked by its draft run.
 -->
+- Re-verified 2026-10-12 for 07D: live /work/iguzzini/ fetched at check 1, check 2 and after the quality pass; "Over 24 months, iGuzzini went from a name known only in trade circles" and "actually recognized" confirmed. Used in: b2b-industrial.
 
 ### TheRedScroll indicative creator-fee ranges, as published
 - Value: Xiaohongshu nano-KOCs under 5K 100 to 500 yuan a post or product exchange only; micro-KOCs 5K to 20K 500 to 3,000; mid-tier KOLs 20K to 100K 3,000 to 15,000; top-tier 100K+ 15,000 to 80,000+; video notes 20 to 30% more than photo notes. Douyin under 50K 1,000 to 5,000 a video; 50K to 500K 5,000 to 30,000; 500K+ 30,000 to 200,000+; live commerce hosts base fee plus 20 to 40% commission. WeChat Official Account KOLs 5,000 to 50,000+ an article, about 1 yuan a view; Channels KOLs 3,000 to 20,000 a video

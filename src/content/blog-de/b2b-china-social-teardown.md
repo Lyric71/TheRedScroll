@@ -177,7 +177,7 @@ Xiaohongshu weist diese Leads nicht getrennt nach B2B und Konsumenten aus. Teste
 
 ### Funktioniert B2B-Marketing in Chinas sozialen Netzwerken?
 
-Ja, sofern ein Endnutzer über das Produkt mitentscheidet. Viessmann und iGuzzini verkaufen über Fachkanäle, und beide nutzten soziale Netzwerke, um den Hausbesitzer oder Konsumenten hinter dem Auftrag zu erreichen. Bei reiner Beschaffung, etwa Teilen für eine Fertigungslinie, läuft der Einkauf weiterhin über Angebotsanfragen. Dort stützen soziale Netzwerke die Glaubwürdigkeit, statt Aufträge zu erzeugen.
+Ja, sofern ein Endnutzer über das Produkt mitentscheidet. Viessmann und iGuzzini verkaufen über Fachkanäle, und beide nutzten soziale Netzwerke, um den Hausbesitzer oder Konsumenten hinter dem Auftrag zu erreichen. Bei reiner Beschaffung, etwa Teilen für eine Fertigungslinie, läuft der Einkauf weiterhin über Angebotsanfragen. Dort stützen soziale Netzwerke die Glaubwürdigkeit, statt Aufträge zu erzeugen. [Unser Leitfaden zu B2B- und Industriemarketing](/de/branchen/b2b-industrial/) behandelt diesen Beschaffungsfall, von WeChat-Artikeln bis zu Fachmessen.
 
 ### Welche Plattform eignet sich für B2B in China am besten?
 

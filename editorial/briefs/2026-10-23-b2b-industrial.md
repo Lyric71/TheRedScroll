@@ -74,7 +74,7 @@ than an unsourced one.
 Describe each of these in the handoff block at the end of the file. Do not
 embed images in body copy.
 
-- Lead flow diagram: content to WeCom to CRM
+- Lead flow diagram: content to WeCom to CRM (amended 2026-10-12 by the 07D draft run, settled fallback 7: the site has no chart component and body copy takes no HTML, so the flow is a markdown table setting the Viessmann four steps beside a procurement sale, with the CRM step in prose)
 - Table: B2B content type by funnel stage and platform
 - Feature image: a technical drawing or blueprint detail, monochrome. China rule: set the scene in China and show Chinese social platforms on screen (WeChat, Xiaohongshu, Douyin or Weibo interface on a phone, laptop or studio monitor); set in a typical Chinese city, varied from article to article and not only Shanghai, only Chinese people in frame, candid normal-life photo in crisp sharp focus with legible screens (never blur, smudges or noise), no AI polish; this rule wins over the subject hint
 

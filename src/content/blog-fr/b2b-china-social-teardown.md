@@ -177,7 +177,7 @@ Xiaohongshu ne distingue pas les contacts B2B des contacts grand public. Faites 
 
 ### Le marketing B2B fonctionne-t-il sur les réseaux sociaux chinois ?
 
-Oui, dès lors qu’un utilisateur final participe au choix du produit. Viessmann et iGuzzini vendent toutes deux par des circuits professionnels, et toutes deux ont utilisé les réseaux sociaux pour atteindre le propriétaire ou le consommateur derrière la commande. Pour les achats purement industriels, comme les pièces d’une ligne de production, la demande de devis reste la règle ; les réseaux sociaux y soutiennent la crédibilité plus qu’ils ne génèrent la commande.
+Oui, dès lors qu’un utilisateur final participe au choix du produit. Viessmann et iGuzzini vendent toutes deux par des circuits professionnels, et toutes deux ont utilisé les réseaux sociaux pour atteindre le propriétaire ou le consommateur derrière la commande. Pour les achats purement industriels, comme les pièces d’une ligne de production, la demande de devis reste la règle ; les réseaux sociaux y soutiennent la crédibilité plus qu’ils ne génèrent la commande. [Notre guide du marketing B2B et industriel](/fr/secteurs/b2b-industrial/) traite ce cas des achats industriels, des articles WeChat aux salons professionnels.
 
 ### Quelle plateforme privilégier pour le B2B en Chine ?
 

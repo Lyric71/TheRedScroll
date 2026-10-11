@@ -279,7 +279,7 @@ It works when an end user helps choose the product. Viessmann and iGuzzini both
 sell through trade channels, and both used social to reach the homeowner or
 consumer behind the order. For pure procurement, such as parts for a factory
 line, buying still runs on request-for-quote. There, social supports credibility
-rather than creating the order.
+rather than creating the order. Our [B2B and industrial marketing guide](/industries/b2b-industrial/) covers that procurement case, from WeChat articles to trade shows.
 
 ### Which platform is best for B2B in China?
 

@@ -177,7 +177,7 @@ Xiaohongshu no distingue entre contactos B2B y de consumo. Pruebe la herramienta
 
 ### ¿Funciona el marketing B2B en las redes sociales chinas?
 
-Funciona cuando un usuario final participa en la elección del producto. Viessmann e iGuzzini venden por canales profesionales, y ambas usaron las redes para llegar al propietario o al consumidor que hay detrás del pedido. En las compras puramente industriales, como las piezas de una línea de producción, la compra sigue pasando por la petición de oferta; ahí, las redes refuerzan la credibilidad más que generar el pedido.
+Funciona cuando un usuario final participa en la elección del producto. Viessmann e iGuzzini venden por canales profesionales, y ambas usaron las redes para llegar al propietario o al consumidor que hay detrás del pedido. En las compras puramente industriales, como las piezas de una línea de producción, la compra sigue pasando por la petición de oferta; ahí, las redes refuerzan la credibilidad más que generar el pedido. [Nuestra guía de marketing B2B e industrial](/es/sectores/b2b-industrial/) aborda ese caso de compra industrial, desde los artículos de WeChat hasta las ferias del sector.
 
 ### ¿Qué plataforma conviene más para el B2B en China?
 
