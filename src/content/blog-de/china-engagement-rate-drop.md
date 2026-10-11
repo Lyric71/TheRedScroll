@@ -79,6 +79,8 @@ außerhalb der Liste den Artikel überhaupt sieht. Wer doppelt so oft
 veröffentlicht, um die Öffnungsrate zu heben, streicht die Decke, während die
 Tür verschlossen bleibt.
 
+Welche Öffnungsrate für den Service-Account einer Marke normal ist und wie sich die Gesamtaufrufe steigern lassen, zeigt [unsere Analyse der WeChat-Öffnungsrate](/de/analysen/wechat-open-rate-benchmark/).
+
 ## Douyin hat die Uhr gedehnt
 
 2025 hat Douyin (抖音) an einer Stellschraube gedreht, an der seither viele

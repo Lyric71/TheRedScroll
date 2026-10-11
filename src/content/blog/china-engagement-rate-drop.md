@@ -80,6 +80,9 @@ whether a person outside the list ever sees the article at all. So the
 brand that publishes twice as often to lift its open rate is working on
 the ceiling while the door stays shut.
 
+What counts as a normal open rate for a brand service account, and how to
+lift total reads, is in [our WeChat open rate benchmark](/insights/wechat-open-rate-benchmark/).
+
 ## Douyin stretched the clock
 
 Douyin (抖音) changed something in 2025 that broke a lot of monthly

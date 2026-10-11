@@ -70,6 +70,8 @@ featuredImage: "/images/blog/wechat-marketing-cost.webp"
 
 对本文多数读者而言，账号本身的成本就是每年99美元。续期日期最好记进共享日历，认证一旦过期，平白多出一堆麻烦。要备哪些材料、审核怎么走、境外账号有哪些限制，详见[我们的境外公司注册微信公众号指南](/zh/guandian/wechat-official-account-setup/)。
 
+账号运转起来之后，服务号的打开率多少算正常，可参考[我们关于微信打开率基准的文章](/zh/guandian/wechat-open-rate-benchmark/)。
+
 ## 内容制作：一篇推文的成本由什么决定
 
 腾讯不就内容收费，这部分开销全由品牌承担。

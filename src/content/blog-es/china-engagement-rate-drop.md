@@ -78,6 +78,8 @@ planes de WeChat que heredamos: el resto de la puntuación decide si alguien
 ajeno a la lista llega a ver el artículo. Publicar el doble para levantar la
 apertura equivale a pintar el techo con la puerta cerrada.
 
+Qué tasa de apertura es normal para la cuenta de servicio de una marca, y cómo aumentar las lecturas totales, lo explica [nuestro análisis de la tasa de apertura en WeChat](/es/analisis/wechat-open-rate-benchmark/).
+
 ## Douyin ha alargado el reloj
 
 En 2025 Douyin (抖音) tocó una pieza que dejó inservibles muchos informes

@@ -82,6 +82,8 @@ extérieur à la liste voit un jour l’article. Publier deux fois plus pour rel
 son taux d’ouverture revient donc à repeindre le plafond pendant que la porte
 reste close.
 
+Ce qu’est un taux d’ouverture normal pour le compte de service d’une marque, et comment relever le total des lectures : [notre décryptage des taux d’ouverture sur WeChat](/fr/decryptages/wechat-open-rate-benchmark/) y répond.
+
 ## Douyin a rallongé l’horloge
 
 Douyin (抖音) a modifié en 2025 un paramètre qui a rendu caducs bien des

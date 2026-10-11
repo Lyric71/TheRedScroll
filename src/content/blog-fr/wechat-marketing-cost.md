@@ -70,6 +70,8 @@ Une autre différence pèse plus lourd que le tarif : l’entité étrangère n�
 
 Pour la plupart de nos lecteurs, le compte revient donc à 99 dollars américains par an. Inscrivez la date de renouvellement dans un agenda partagé : une certification échue est un tracas parfaitement évitable. Pièces à fournir, étapes de l’examen, limites du compte étranger : [notre guide d’ouverture d’un compte officiel WeChat](/fr/decryptages/wechat-official-account-setup/) détaille la procédure.
 
+Une fois le compte lancé, [notre décryptage des taux d’ouverture sur WeChat](/fr/decryptages/wechat-open-rate-benchmark/) indique ce qu’est un taux d’ouverture normal pour un compte de service.
+
 ## Production de contenu : ce qui détermine le prix d’un article
 
 Tencent ne prélève rien sur le contenu. La facture vous revient en entier.

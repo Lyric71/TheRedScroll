@@ -70,6 +70,8 @@ Pesa más, sin embargo, otra diferencia: la entidad extranjera solo obtiene una 
 
 Para la mayoría de nuestros lectores, la cuenta cuesta, por tanto, 99 dólares estadounidenses al año. Conviene anotar la fecha de renovación en un calendario compartido: una verificación caducada es un quebradero de cabeza perfectamente evitable. Qué documentos se exigen, cómo transcurre la revisión y qué no permite una cuenta extranjera: todo está en [nuestra guía para abrir una cuenta oficial de WeChat](/es/analisis/wechat-official-account-setup/).
 
+Una vez en marcha la cuenta, [nuestro análisis de la tasa de apertura en WeChat](/es/analisis/wechat-open-rate-benchmark/) muestra qué tasa de apertura es normal en una cuenta de servicio.
+
 ## Producción de contenido: de qué depende el precio de un artículo
 
 Tencent no cobra nada por el contenido. La factura corre íntegramente a cargo de la marca.

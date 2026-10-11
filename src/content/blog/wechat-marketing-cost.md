@@ -93,6 +93,9 @@ Put the renewal date in a shared calendar. Lapsed verification is an avoidable
 mess. For the documents, the review steps and what an overseas account can't
 do, see [our WeChat Official Account setup guide](/insights/wechat-official-account-setup/).
 
+Once the account runs, [our WeChat open rate benchmark](/insights/wechat-open-rate-benchmark/) shows what a
+normal open rate looks like for a service account.
+
 ## Content production: what drives the cost of an article
 
 Tencent charges nothing for content. You pay for all of it.

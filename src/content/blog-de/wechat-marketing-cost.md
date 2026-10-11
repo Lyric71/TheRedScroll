@@ -70,6 +70,8 @@ Schwerer als die Gebühr wiegt ein zweiter Unterschied: Eine ausländische Gesel
 
 Für die meisten Leser dieses Beitrags kostet das Konto also 99 US-Dollar im Jahr. Das Verlängerungsdatum gehört in einen gemeinsamen Kalender, denn eine abgelaufene Verifizierung ist ein Ärgernis, das sich leicht vermeiden lässt. Welche Unterlagen nötig sind, wie die Prüfung abläuft und was ein Auslandskonto nicht kann, zeigt [unser Leitfaden zur Einrichtung eines WeChat Official Account](/de/analysen/wechat-official-account-setup/).
 
+Sobald das Konto läuft, zeigt [unsere Analyse der WeChat-Öffnungsrate](/de/analysen/wechat-open-rate-benchmark/), welche Öffnungsrate für einen Service-Account normal ist.
+
 ## Content-Produktion: Wovon der Preis eines Artikels abhängt
 
 Für Inhalte verlangt Tencent nichts. Die Kosten trägt die Marke vollständig selbst.
