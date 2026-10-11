@@ -4,6 +4,7 @@ description: "El 53 % de los anunciantes chinos ya crea con IA. Así está rehac
 metaTitle: "Contenido con IA para el mercado chino"
 metaDescription: "El 53 % de los anunciantes chinos ya produce con IA. Cómo el AIGC reescribe el marketing en Douyin, WeChat y RedNote."
 publishDate: 2026-04-06
+updatedDate: 2026-10-11
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Contenido"
@@ -12,11 +13,14 @@ featured: true
 featuredImage: "/images/blog/aigc-content-factory.webp"
 ---
 
-*Uno de cada dos anunciantes chinos ya se apoya en la inteligencia artificial para producir lo que publica. Y el mercado no ha hecho más que empezar: de los 25.700 millones de yuanes de 2025, las previsiones apuntan a 276.700 millones en 2028, según Weiboyi y la Asociación China de Publicidad. Toca entender qué significa para una marca.*
+*Uno de cada dos anunciantes chinos ya se apoya en la inteligencia artificial para producir lo que publica. Y el mercado chino del AIGC no ha hecho más que empezar: las previsiones lo sitúan en 276.700 millones de yuanes en 2028, según Weiboyi y el Comité de Marketing con IA de la Asociación China de Publicidad Comercial (mayo de 2025). Toca entender qué significa para una marca.*
 
 ## Las cifras detrás del giro
 
-En 2025, el contenido generado por inteligencia artificial facturó en China 25.700 millones de yuanes, según el informe que firman Weiboyi y la Asociación China de Publicidad. La misma fuente proyecta 276.700 millones para 2028. Pocas industrias crecen hoy a ese ritmo.
+El mercado chino del contenido generado por inteligencia artificial (AIGC) está llamado a crecer deprisa. Y el marketing es uno de los primeros terrenos donde aterriza el dinero.
+
+> Las previsiones sitúan el mercado chino del AIGC en 276.700 millones de yuanes en 2028. Solo el marketing con IA debía alcanzar los 66.900 millones en 2025.
+> Fuente: Weiboyi (微播易) y el Comité de Marketing con IA de la Asociación China de Publicidad Comercial (中国商务广告协会AI营销委员会), mayo de 2025. https://m.bjnews.com.cn/detail/1747829414129325.html
 
 El balance de marketing con IA que publicó Douban en 2026 lo confirma: el 53,1 % de los anunciantes del país ya teje el AIGC en su producción creativa, y casi uno de cada cinco confía a la máquina más de la mitad de su producción de vídeo. En 2025 las campañas apoyadas en IA se duplicaron y rozan ya una quinta parte del mercado (el 19,2 % de toda la actividad de marketing). El tiempo de los experimentos terminó.
 
@@ -26,11 +30,10 @@ El balance de marketing con IA que publicó Douban en 2026 lo confirma: el 53,1 
 
 **Velocidad.** En cuestión de segundos, una sola de estas herramientas genera 240 piezas en distintos formatos.
 
-> Un vídeo de un minuto que antes costaba decenas de miles de yuanes de producción sale hoy por unos 500.
+> Según la guía de marketing con IA de Weiboyi para 2025, la IA puede dejar un vídeo corto de un minuto en apenas 500 yuanes.
+> Fuente: Weiboyi (微播易) y el Comité de Marketing con IA de la Asociación China de Publicidad Comercial (中国商务广告协会AI营销委员会), mayo de 2025. https://m.bjnews.com.cn/detail/1747829414129325.html
 
-> Fuente: Beijing News, citando el informe de Weiboyi
-
-Un desplome así cambia las cuentas de lo que es rentable, sea cual sea el tamaño de la marca.
+Un coste así cambia las cuentas de lo que es rentable, sea cual sea el tamaño de la marca.
 
 ![Una herramienta de generación de contenido con IA mostrando una cuadrícula de imágenes de estilo de vida de producto para selección por lotes](/images/blog/aigc-batch-grid.webp)
 

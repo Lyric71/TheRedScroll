@@ -4,6 +4,7 @@ description: "Nearly 600 million Chinese consumers buy through livestreams. Here
 metaTitle: "Why livestream shopping works so well in China"
 metaDescription: "China's livestream e-commerce market hit 5.8 trillion yuan in 2024. Here are the five reasons Chinese shoppers prefer buying through livestreams."
 publishDate: 2026-04-04
+updatedDate: 2026-10-11
 author: "TheRedScroll"
 platforms: ["douyin", "rednote"]
 category: "Strategy"
@@ -22,9 +23,13 @@ How big is it? iResearch puts the market at 5.8 trillion yuan in 2024. User pene
 
 > Source: CIECC, Livestream E-commerce High-Quality Development Report 2024
 
-And this is not passive viewing. According to iiMedia Research, 79.32% of short video and livestream users have made a purchase through the platform. Over 55% of regular viewers buy at least once a month. Only 15.5% of viewers say they watch purely for entertainment with no purchase intent.
+And this is not passive viewing. According to iiMedia Research, 79.32% of short video and livestream users spend money on those platforms. A 2020 China Consumers Association survey found that 55.2% of regular livestream shoppers buy at least once a month.
 
-> Source: iiMedia Research; China Consumers Association
+> 79.32% of short video and livestream users spend money on those platforms; shopping is 51.80% of that spending.
+> Source: iiMedia Research (艾媒咨询), 2025 China Short Video and Livestream Consumer Behavior Survey, May 2025. https://www.iimedia.cn/c400/105682.html
+
+> 55.2% of regular livestream shoppers buy at least once a month, and 90.8% buy at least once every three months.
+> Source: China Consumers Association (中国消费者协会), Livestream E-commerce Shopping Consumer Satisfaction Survey (5,333 respondents, February 2020), March 2020, carried in full by 100EC (网经社). https://www.100ec.cn/detail--6550827.html
 
 That is not a trend. It is a fundamental shift in how Chinese consumers shop.
 
@@ -34,9 +39,12 @@ The easy explanation is "it is entertaining." And sure, that is part of it. But 
 
 ### 1. They can see the product for real
 
-Anyone who has ever bought something online based on a photo knows the feeling when it arrives and looks nothing like the listing. Livestreaming cuts through that. The host holds the product, demonstrates it, tries it on, tests it live. According to iiMedia Research survey data, 59.89% of livestream shoppers say the main reason they prefer livestreaming over traditional e-commerce is that product presentation is more direct and authentic.
+Anyone who has ever bought something online based on a photo knows the feeling when it arrives and looks nothing like the listing. Livestreaming cuts through that. The host holds the product, demonstrates it, tries it on, tests it live.
 
-The China Consumers Association found that the top three reasons consumers prefer livestream shopping, accounting for 83.9% of responses combined, are: the ability to create an immersive buying atmosphere, stronger interactivity, and the fact that products appear more real and tangible.
+A 2020 China Consumers Association survey found three reasons behind 83.9% of the preference for livestream shopping: the rush-to-buy atmosphere of a live room, stronger social interaction, and products that look more real and direct.
+
+> Three reasons together account for 83.9% of the preference for livestream shopping: a rush-to-buy atmosphere, stronger social interaction, and more real, direct products.
+> Source: China Consumers Association (中国消费者协会), Livestream E-commerce Shopping Consumer Satisfaction Survey (5,333 respondents, February 2020), March 2020, carried in full by 100EC (网经社). https://www.100ec.cn/detail--6550827.html
 
 ### 2. They get answers instantly
 
@@ -48,21 +56,23 @@ In a livestream, shoppers type questions into the chat and the host responds in 
 
 ### 3. The prices are genuinely lower
 
-This is not just perception. Brands offer livestream-exclusive discounts, bundle deals, and limited-time coupons that are not available on the regular product page. During the 2024 618 festival, livestream e-commerce sales reached 206.8 billion yuan, up 12.1% year-over-year. A large portion of that growth came from price-conscious shoppers waiting for livestream-only deals.
+This is not just perception. Brands offer livestream-exclusive discounts, bundle deals, and limited-time coupons that are not available on the regular product page. During the 2024 618 festival, livestream e-commerce sales reached 206.8 billion yuan, by Syntun's count.
 
-> Source: iiMedia Research
+> Livestream e-commerce sales reached 206.8 billion yuan during the 2024 618 festival, with Douyin first among livestream platforms.
+> Source: Securities Daily (证券日报), reporting Syntun (星图数据) data, June 2024. https://finance.sina.com.cn/jjxw/2024-06-19/doc-inazhrmx7169177.shtml
 
 ### 4. They trust the host
 
 The best livestream hosts in China are not salespeople. They are educators and trusted advisors. Oriental Selection built its brand around former teachers who explain products with humor, depth, and genuine expertise. Viewers come back to the same host not just for deals but because the relationship feels personal.
 
-According to the China Consumers Association survey, nearly 70% of livestream shoppers say they will buy a product if the host recommends it and they like it. Another 22.7% say they will buy in most cases when the host recommends something. Try getting those numbers from a product detail page.
+According to a 2020 China Consumers Association survey, nearly 70% of livestream shoppers say they will buy a product if the host recommends it and they like it. Another 22.7% say they will buy in most cases when the host recommends something. Try getting those numbers from a product detail page.
+
+> Nearly 70% of respondents said they buy when a host recommends something they like; 22.7% said they buy in most cases when a host recommends it.
+> Source: China Consumers Association (中国消费者协会), Livestream E-commerce Shopping Consumer Satisfaction Survey (5,333 respondents, February 2020), March 2020, carried in full by 100EC (网经社). https://www.100ec.cn/detail--6550827.html
 
 ### 5. Social proof is happening live
 
-When hundreds of people buy the same product in real time and the chat fills with "just ordered" and "already received mine from last time," it changes how you feel about pressing the buy button yourself. Research from Tsinghua University found that the "purchase atmosphere" in a livestream room, created by visible real-time transactions and peer comments, is a distinct driver of impulse buying behavior. Flash sales, countdown timers, and visible purchase volume create a fear-of-missing-out dynamic that static e-commerce simply cannot generate.
-
-> Source: Tsinghua SEM, Research on Livestream Consumer Behavior Impulse Formation Mechanisms
+When hundreds of people buy the same product in real time and the chat fills with "just ordered" and "already received mine from last time," it changes how you feel about pressing the buy button yourself. Flash sales, countdown timers, and visible purchase volume create a fear-of-missing-out dynamic that static e-commerce simply cannot generate.
 
 ![A young woman discovering beauty products through a RedNote livestream on her bed](/images/blog/livestream-rednote-bed.webp)
 
@@ -70,14 +80,15 @@ When hundreds of people buy the same product in real time and the chat fills wit
 
 | Demographic | Data |
 |---|---|
-| Age | 80%+ are millennials or Gen Z (born after 1980) |
+| Age | 80%+ were born in the 1980s or 1990s |
 | Gender | 64.6% female, 35.4% male |
-| Location | 47.6% in tier-one cities; significant growth in tier 3-4 |
-| Frequency | 55.2% buy at least once a month; 90.8% within any 3-month period |
-| Viewing habits | 69.57% are long-term active viewers; average 4-5 sessions per day |
+| Location | 47.6% in first-tier cities |
+| Frequency | 55.2% buy at least once a month; 90.8% at least once in three months |
+| Viewing habits | 69.57% are long-term active viewers; 4 to 5 views a day is the most common band (43.82%) |
 | Shopping intent | 52.5% browse with a general idea; 32% have a specific purchase target |
 
-> Source: iiMedia Research; China Consumers Association
+> Age, gender and city: iiMedia survey of livestream shoppers. Viewing habits: iiMedia survey of short video and livestream users. Frequency and shopping intent: China Consumers Association survey of 5,333 livestream shoppers, February 2020.
+> Source: iiMedia Research (艾媒咨询), June 2025 and May 2025; China Consumers Association (中国消费者协会), March 2020, via 100EC (网经社). https://www.iimedia.cn/c1088/106477.html ; https://www.iimedia.cn/c400/105682.html ; https://www.100ec.cn/detail--6550827.html
 
 One thing worth noting: the audience is getting older. Silver economy consumers (age 50+) are now the fastest-growing segment, with spending growing at a compound rate of 20.9% per year over the past three years.
 

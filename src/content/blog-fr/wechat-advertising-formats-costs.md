@@ -4,7 +4,7 @@ description: "Sur WeChat, la publicité se décline en Moments, comptes officiel
 metaTitle: "Publicité WeChat : formats et tarifs"
 metaDescription: "Six emplacements publicitaires, trois modèles tarifaires. Coûts par format et conseils concrets pour lancer une première campagne WeChat."
 publishDate: 2026-04-05
-updatedDate: 2026-10-05
+updatedDate: 2026-10-11
 author: "TheRedScroll"
 platforms: ["wechat"]
 category: "Plateformes"
@@ -51,34 +51,29 @@ Le bon choix dépend de ce qu’on est prêt à investir et de l’objectif rech
 
 ### CPM : paiement aux 1 000 impressions
 
-C’est le modèle le plus répandu pour les Moments et les campagnes de notoriété. Les tarifs fluctuent en fonction du rang de la ville et du mode d’achat retenu.
+C’est le modèle le plus répandu pour les Moments et les campagnes de notoriété. Les tarifs fluctuent en fonction du rang de la ville et du mode d’achat retenu. Tencent facture l’achat programmé selon sa grille tarifaire, qu’il ne publie pas.
 
-| Rang de la ville | CPM en achat programmé | CPM en enchère |
+| Rang de la ville | Achat programmé | Achat aux enchères |
 |---|---|---|
-| Villes principales (Pékin, Shanghai) | Autour de 150 yuans pour mille | Enchères non ouvertes |
-| Villes clés (Canton, Shenzhen, Chengdu, Hangzhou et 18 autres) | Autour de 100 yuans pour mille | Enchères non ouvertes |
-| Villes secondaires (toutes les autres) | Autour de 50 yuans pour mille | 30 à 200 yuans pour mille |
+| Villes principales | CPM de la grille tarifaire, à partir de 50 000 yuans par placement | Enchères non ouvertes |
+| Villes clés | CPM de la grille tarifaire, à partir de 50 000 yuans par placement | Enchères non ouvertes |
+| Autres villes | CPM de la grille tarifaire, à partir de 50 000 yuans par placement | À partir de 30 yuans de CPM et de 1 000 yuans par jour |
 
-Les enchères ne sont ouvertes que dans les villes secondaires. Dans les villes principales et les villes clés, Moments s’achète en programmé.
+Les enchères ne sont ouvertes que dans les autres villes. Dans les villes principales et les villes clés, Moments s’achète en programmé.
 
 > Les achats Moments aux enchères ne sont ouverts que dans les autres villes ; les villes principales et clés en sont exclues. L’enchère ne s’applique qu’au format image et texte.
 > Source : Tencent Ads (腾讯广告), page produit de la publicité WeChat, vérifiée en octobre 2026. https://e.qq.com/topic/marketing/industry/weixin/
 
-La vidéo coûte 30 à 50 % de plus que l’image à volume d’impressions équivalent. Point de comparaison : le CPM du trafic payant Douyin via Ocean Engine oscille entre 30 et 60 yuans, mais il s’agit d’amplification de contenu existant, et non d’un placement natif dans un fil personnel. Si le CPM des Moments se situe plus haut, c’est parce que l’on achète une place dans un fil social intime, avec des signaux de confiance sans équivalent.
-
-> Source : Zhihu, références sectorielles
-
 ### CPC : paiement au clic
 
-C’est le format privilégié pour les encarts dans les articles et pour les bannières Mini Programs. Le prix plancher est bas : 0,5 yuan environ pour un clic en bas d’article. Dans les Moments, c’est une autre paire de manches : de 2 à 20 yuans selon la finesse du ciblage et la pression concurrentielle sur l’audience visée. Point de comparaison : Baidu Search facture en moyenne entre 2 et 15 yuans par clic. La différence ? Un clic WeChat provient d’un contexte social, là où un clic Baidu naît d’une recherche active. On ne devrait donc pas les évaluer à la même aune.
+C’est le format privilégié pour les encarts dans les articles et pour les bannières Mini Programs. Le prix plancher est bas : l’enchère de chaque annonce démarre à 0,5 yuan le clic. Au-delà, vous payez l’enchère de l’annonce suivante, pondérée par le score de qualité des deux annonces, plus 0,01 yuan. Une annonce mieux notée paie donc moins cher le même clic. Un clic WeChat naît d’un contexte social, pas d’une recherche. De quoi revoir ce que vaut réellement un clic.
 
-> Source : Yiban, Zhihu
+> Les publicités WeChat se facturent au clic, et l’enchère de chaque annonce démarre à 0,5 yuan. Chaque clic coûte l’enchère de l’annonce suivante multipliée par son score de qualité, divisée par le score de qualité de cette annonce, plus 0,01 yuan.
+> Source : service client de Tencent (腾讯客服), FAQ annonceurs « Comment les publicités sont facturées », vérifiée en octobre 2026. https://kf.qq.com/faq/170522aAN3A3170522BBBNZZ.html
 
 ### oCPM : l’enchère pilotée par l’IA
 
-Vous fixez un coût de conversion cible, et le système ajuste l’enchère en temps réel pour atteindre les utilisateurs les plus enclins à passer à l’acte. En 2025, les nouveaux outils d’enchère IA de Tencent ont abaissé les coûts de 10 à 15 % par rapport aux enchères manuelles. En pratique, la plupart des annonceurs WeChat basculent sur l’oCPM dès qu’ils disposent de suffisamment de données de conversion. Comptez quelques semaines pour que l’algorithme ait de quoi se nourrir. Ensuite, il bat le mode manuel de manière récurrente.
-
-> Source : Yiban
+Vous fixez un coût de conversion cible, et le système ajuste l’enchère en temps réel pour atteindre les utilisateurs les plus enclins à passer à l’acte. L’algorithme a besoin de données de conversion pour apprendre. Démarrez en CPM ou en CPC, puis passez à l’oCPM une fois que les conversions affluent.
 
 ## Le budget minimum (celui qui fait tiquer)
 
@@ -87,7 +82,7 @@ C’est souvent à ce stade que les marques déchantent. Les montants minimums d
 | Mode d’achat | Minimum requis |
 |---|---|
 | Achat programmé | 50 000 yuans par campagne (environ 6 500 €) |
-| Achat aux enchères | 1 000 yuans de budget quotidien, CPM de 30 yuans ; villes secondaires uniquement |
+| Achat aux enchères | 1 000 yuans de budget quotidien, CPM de 30 yuans ; autres villes uniquement |
 | Promotion locale | 1 000 yuans par jour (environ 130 €), sans le seuil de 50 000 yuans |
 
 Les 50 000 yuans de l’achat programmé correspondent au format taillé pour les grandes opérations. On réserve des impressions garanties entre 5 et 28 jours à l’avance : lancements produit, campagnes saisonnières, événements. Vous payez, la visibilité est garantie.
@@ -106,15 +101,9 @@ Comptez 1 000 yuans par jour (environ 130 €) pour la promotion locale, soit ex
 
 ## Ce qu’on oublie de vous dire
 
-**La validation créative est stricte.** Et chronophage. WeChat refuse catégoriquement les affirmations exagérées, les statistiques non sourcées, les promesses santé dépourvues de certification gouvernementale, ainsi que toute incitation au partage ou au transfert. Prévoyez un à deux jours ouvrés. À défaut de l’inscrire dans votre rétroplanning, vous risquez de manquer votre fenêtre de lancement.
+**La validation créative est stricte.** Et chronophage. WeChat refuse catégoriquement les affirmations exagérées, les statistiques non sourcées, les promesses santé dépourvues de certification gouvernementale, ainsi que toute incitation au partage ou au transfert. Inscrivez le temps de validation dans votre rétroplanning, faute de quoi vous risquez de manquer votre fenêtre de lancement.
 
 **Vos annonces entrent en concurrence avec de vraies personnes.** Ce n’est pas une bannière sur un site web. Votre publicité s’intercale entre la photo du fils d’un ami et les vacances d’un collègue. Si elle jure, personne ne s’y arrêtera.
-
-**Trois changements de visuel par mois, pas un de plus.** Chaque modification repasse par le circuit de validation. Mieux vaut avoir ses créations prêtes en amont.
-
-**Le prime time se paie cher.** Enchérir entre 19 h et 21 h coûte 20 à 40 % plus cher qu’en heures creuses. Si le budget est serré, testez d’abord les créneaux de journée.
-
-> Source : Aiyong Tech
 
 ## En bref
 

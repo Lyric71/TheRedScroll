@@ -14,10 +14,10 @@ featuredImage: "/images/blog/douyin-shoppable-video.webp"
 keyFacts:
   - "Laut QuestMobile zählte Douyin im Juni 2026 rund 1,03 Milliarden monatlich aktive Nutzer. Ocean Engine nennt weiterhin mehr als 600 Millionen pro Tag."
   - "2025 näherte sich das E-Commerce-GMV von Douyin vier Billionen Yuan, ein Zuwachs von mehr als 30 Prozent gegenüber dem Vorjahr. Quelle: LatePost, November 2025."
-  - "Über Ocean Engine fällt der CPM auf 30 bis 60 Yuan, gegenüber 200 bis 300 Yuan für organischen KOL-Content. Quelle: Qinggua Media, Digitaling, Ebrun, Youzan."
+  - "Am Double 11 2025 erreichte die Retourenquote im chinesischen E-Commerce insgesamt 61,5 Prozent. Quelle: CCTV News über Beijing Daily, Januar 2026."
   - "Ein Top-KOL kostet in China 500.000 bis fünf Millionen Yuan je Beitrag, ein KOC meist 200 bis 5.000 Yuan."
-  - "Neue Händler im Douyin Shop zahlen im ersten Monat keine Provision. Quelle: Ebrun, zitiert in Sina Finance."
-  - "Am Double 11 2025 entfielen 40 Prozent des Live-Commerce-GMV auf das Marken-Livestreaming, acht Punkte mehr als 2024. Quelle: 100EC.cn."
+  - "2026 senkt Douyin Shop für Läden, die monatliche Aufgaben erfüllen, die Gebühr auf Produktkarten-Bestellungen in der Douyin Mall per Erstattung auf 0,6 Prozent, bei grenzüberschreitender Ware auf 1 Prozent. Quelle: Douyin E-commerce Learning Center, Oktober 2026."
+  - "Am Double 11 2025 entfielen 40 Prozent des Live-Commerce-GMV auf das Marken-Livestreaming, acht Punkte mehr als 2024. Quelle: 100EC, November 2025."
 ---
 
 *Was auf TikTok zieht, verpufft auf Douyin. Dieser Leitfaden zeigt, was stattdessen trägt.*
@@ -32,7 +32,7 @@ In China ist Douyin längst kein bloßer Videofeed mehr, sondern eine der wirkun
 
 Den Unterschied macht der Handel. Das E-Commerce-GMV von Douyin näherte sich 2025 der Marke von vier Billionen Yuan, ein Zuwachs von mehr als 30 Prozent gegenüber dem Vorjahr.
 
-> Quelle: LatePost, November 2025.
+> Quelle: LatePost (晚点LatePost), veröffentlicht von China.com (中华网), November 2025. https://finance.china.com/TMT/13004688/20251121/49009672.html
 
 Aus Sicht einer Marke stellt sich der Vergleich so dar:
 
@@ -75,9 +75,10 @@ Früh fallen drei Entscheidungen an.
 
 **Das offizielle Konto.** Der verifizierte Auftritt der Marke. Hier liegen die Videos, die Livestreams und die eigene Followerschaft.
 
-**Der Shop.** Ein Douyin Shop macht den Verkauf innerhalb der App möglich. Neue Händler zahlen im ersten Monat keine Provision, was erste Tests verbilligt.
+**Der Shop.** Ein Douyin Shop macht den Verkauf innerhalb der App möglich. 2026 bekommen Shops, die monatliche Aufgaben erfüllen, den Großteil der Gebühr auf Produktkarten-Bestellungen erstattet. Das verbilligt erste Tests.
 
-> Quelle: Ebrun, zitiert in Sina Finance.
+> 2026 sinkt die Gebühr auf Produktkarten-Bestellungen in der Douyin Mall per Erstattung auf 0,6 Prozent für inländische und 1 Prozent für grenzüberschreitende Ware. Voraussetzung: Der Shop meldet sich an und erfüllt monatliche Aufgaben. Bestellungen aus Livestreams und Kurzvideos sind ausgenommen.
+> Quelle: Douyin E-commerce Learning Center (抖音电商学习中心), Rückvergütungsregeln 2026 für Produktkarten, aktualisiert im Oktober 2026. https://school.jinritemai.com/doudian/web/article/aJcQ5pzG2Vk4
 
 **Das Werbekonto.** Bezahlte Reichweite läuft über Ocean Engine, die Werbeplattform von ByteDance. Sie verlangt eine gesonderte Verifizierung.
 
@@ -97,7 +98,8 @@ Drei Formate belohnt Douyin stärker als alle anderen.
 
 Eine Entwicklung lohnt besondere Aufmerksamkeit: Das Livestreaming der Marken selbst legt kräftig zu. Am Double 11 2025 entfielen 40 Prozent des gesamten Live-Commerce-GMV auf das Marken-Livestreaming, acht Punkte mehr als 2024.
 
-> Quelle: 100EC.cn.
+> Am Double 11 2025 entfielen 40 Prozent des Live-Commerce-GMV auf das Livestreaming der Marken selbst, acht Prozentpunkte mehr als 2024.
+> Quelle: 100EC (网经社), E-commerce Research Center, November 2025. https://www.100ec.cn/detail--6654028.html
 
 Für eine westliche Marke bedeutet das: Sie muss ihr Publikum nicht bei jedem Schritt teuer einkaufen. Sie kann einen eigenen Live-Raum betreiben, ihre Botschaft selbst steuern und dabei bessere Margen halten. Das kostet allerdings echtes Geld: Studio, Moderation, Produktion und ein Werbebudget, um Zuschauer heranzuführen.
 
@@ -111,9 +113,10 @@ Die Vergütung folgt der jeweiligen Stufe. Top-KOLs kombinieren ein festes Honor
 
 Die Sätze richten sich nach der Kategorie. Für Beauty und Hautpflege liegen sie bei 10 bis 25 Prozent, für Mode bei 8 bis 15 Prozent, für Elektronik bei 3 bis 8 Prozent.
 
-Die beste Rendite bringt derzeit die Mitte der Pyramide. Am Shopping-Festival Double 11 trugen Moderatoren der mittleren Ebene 45 Prozent des gesamten Live-Commerce-GMV bei, bei einem durchschnittlichen ROI von 1:8 je Session.
+Die beste Rendite bringt derzeit die Mitte der Pyramide. Beim Double 11 2025 trugen Moderatoren der mittleren Ebene 45 Prozent zum Live-Commerce-GMV bei, bei einem durchschnittlichen ROI von 1:8 je Session.
 
-> Quelle: 100EC.cn, Double 11 2025 Data Report.
+> Beim Double 11 2025 trugen Moderatoren der mittleren Ebene mit einem Jahresumsatz von 100 Millionen bis 1 Milliarde Yuan 45 Prozent zum Live-Commerce-GMV bei, bei einem durchschnittlichen ROI von 1:8 je Session.
+> Quelle: 100EC (网经社), November 2025. https://www.100ec.cn/detail--6654028.html
 
 ![Douyin-KOL filmt einen Produkttest in ihrer Wohnung](/images/blog/douyin-kol-showcase.webp)
 
@@ -123,21 +126,24 @@ Eine Warnung: Gekaufte Follower gehören in diesem Markt weiter zum Alltag. Für
 
 Einen Festpreis gibt es nicht, doch die Kostentreiber lassen sich klar benennen.
 
-**Reichweite kostet Geld.** Der CPM für organischen KOL-Content liegt bei 200 bis 300 Yuan. Über Ocean Engine sinkt er auf 30 bis 60 Yuan, doch für spürbaren Absatz braucht es Volumen.
+**Reichweite kostet Geld.** Reichweite kaufen Sie über Ocean Engine ein, und für spürbaren Absatz braucht es Volumen.
 
-**Influencer-Content trägt sich selten von allein.** Ohne bezahlten Schub liegt der ROI von KOL-Content in den meisten Kategorien unter 0,3. Für jeden Yuan, den eine Marke in Influencer-Content steckt, fließen unmittelbar weniger als 30 Fen zurück.
+**Retouren zehren an der Marge.** Am Double 11 2025 erreichte die Retourenquote im chinesischen E-Commerce insgesamt 61,5 Prozent, bei Mode-Livestreams lag sie über 80 Prozent. Jedes zurückgeschickte Teil Damenbekleidung kostet in der Summe etwa 20 bis 32 Yuan, die Werbeausgaben nicht eingerechnet.
 
-**Retouren zehren an der Marge.** In der Mode liegt die Retourenquote im Schnitt bei rund 65 Prozent. Jede Rücksendung schlägt mit etwa acht Yuan für Verpackung und Neuversand zu Buche, die Werbeausgaben nicht eingerechnet.
+> Am Double 11 2025 lag die Retourenquote im chinesischen E-Commerce insgesamt bei 61,5 Prozent, im Mode-Livestreaming bei mehr als 80 Prozent. Jedes zurückgeschickte Teil Damenbekleidung verursacht Verluste von zusammen etwa 20 bis 32 Yuan.
+> Quelle: CCTV News (央视新闻), veröffentlicht von Beijing Daily (京报网), Januar 2026; Beijing News (新京报), Juni 2025. https://news.bjd.com.cn/2026/01/11/11517038.shtml ; https://m.bjnews.com.cn/detail/1750036716129261.html
 
-**Plattformgebühren summieren sich.** Technische Servicegebühren machen 2 bis 5 Prozent aus, Influencer-Provisionen 20 bis 50 Prozent. Dazu kommen Versandversicherung, Kautionen und Werbebudget.
+**Plattformgebühren summieren sich.** Die technische Grundgebühr von Douyin liegt 2026 bei 5 Prozent für Bekleidung und 4 Prozent für Gesichtspflege, für grenzüberschreitende Bekleidung bei 6 Prozent. Creator-Provisionen in offenen Plänen legt der Händler selbst fest, zwischen 5 und 50 Prozent. Dazu kommen Versandversicherung, Kautionen und Werbebudget.
 
-> Quelle: Qinggua Media, Digitaling, Ebrun, Youzan.
+> Die technische Grundgebühr von Douyin beträgt 2026 für Bekleidung 5 Prozent, für Gesichtspflege 4 Prozent und für grenzüberschreitende Bekleidung 6 Prozent. Offene Creator-Provisionen setzen die Händler zwischen 5 und 50 Prozent an.
+> Quelle: Douyin E-commerce Learning Center (抖音电商学习中心), Gebührentabellen mit Stand Juli 2026 und Affiliate-Regeln mit Geltung ab August 2026. https://school.jinritemai.com/doudian/web/article/aHijyoJA6hvb ; https://school.jinritemai.com/doudian/web/article/aHMYyFoqESKn ; https://school.jinritemai.com/doudian/web/article/112620
 
-Die Plattform senkt allerdings die Einstiegshürde. 2025 legte Douyin neun Förderprogramme für Händler auf. In fast 100 Kategorien gelten inzwischen ermäßigte oder gar keine Provisionen. Bis August 2025 hatte Douyin mehr als 19 Milliarden Yuan an Subventionen an die Händler ausgeschüttet.
+Die Plattform senkt allerdings die Einstiegshürde. Anfang 2025 legte Douyin neun Förderprogramme für Händler auf. Nach eigenen Angaben ersparten sie den Händlern im selben Jahr mehr als 32 Milliarden Yuan. Für 2026 dehnte Douyin den Provisionsverzicht auf alle Kategorien aus und beziffert die Einsparungen im zweiten Quartal auf mehr als 10 Milliarden Yuan.
 
-> Quelle: 36Kr.
+> Nach Angaben von Douyin haben die neun Förderprogramme, die Anfang 2025 erstmals starteten, den Händlern im vergangenen Jahr mehr als 32 Milliarden Yuan erspart. Die Neuauflage für 2026 dehnt den Provisionsverzicht auf alle Kategorien aus, von Produktkarten bis zu Inhalten, und senkt die Werbekosten direkt bei berechtigten Bestellungen. Die Einsparungen im zweiten Quartal 2026 beziffert Douyin auf mehr als 10 Milliarden Yuan.
+> Quelle: China National Radio (央广网), Januar 2026; Securities Times (证券时报) über Sina Finance (新浪财经), Juli 2026. https://www.cnr.cn/mspd/zhsh/20260108/t20260108_527487292.shtml ; https://finance.sina.cn/stock/jdts/2026-07-14/detail-inihtvuk5362765.d.html?oid=800&vt=4&cid=76993&node_id=76993
 
-Beim Budget hilft Nüchternheit. Im ersten Jahr verdienen die meisten Marken auf Douyin nichts. Bluemoon, eine der größten Haushaltsmarken Chinas, spannte laut einer Analyse auf Zhihu mehr als 3.000 Influencer ein und versenkte 40 Millionen Yuan in bezahlte Reichweite. Die Rechnung ging nie auf.
+Beim Budget hilft Nüchternheit. Im ersten Jahr verdienen die meisten Marken auf Douyin nichts.
 
 Das ist kein Argument gegen Douyin, sondern eines dafür, die Zahlen vor dem Start durchzurechnen.
 

@@ -4,6 +4,7 @@ description: "KOLs create awareness. KOCs build trust. How to combine both, what
 metaTitle: "KOL vs KOC China: influencer guide"
 metaDescription: "KOL or KOC? Commission models, fake follower risks, and the pyramid approach that works. A practical guide for brands in China."
 publishDate: 2026-04-03
+updatedDate: 2026-10-11
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Strategy"
@@ -46,7 +47,7 @@ An MCN insider told Rancaijing that only 10-20% of the KOLs managed by his compa
 
 > CCTV News investigated this supply chain in 2019 and documented how cheap it is to manufacture fake engagement on Chinese social platforms.
 
-Creating a fake 100,000+ view count on a post can cost under 1,000 yuan. For brands investing tens of thousands per campaign, the risk of partnering with inflated accounts is not theoretical. It happens all the time in this market.
+Creating a fake 100,000+ view count on a post can cost under 1,000 yuan. For brands investing tens of thousands per campaign, the risk of booking inflated accounts is not theoretical. It happens all the time in this market.
 
 This is why verification matters more than raw numbers. Engagement rate, comment quality, audience demographics, and purchasing behavior data tell you far more than the follower count on someone's profile page.
 
@@ -60,11 +61,12 @@ Perfect Diary helped popularize this strategy around 2020-2021. According to dat
 
 Each layer does a different job. Top KOLs set the conversation and generate initial buzz. Mid-tier creators go deeper in specific product niches. KOCs push authentic content across communities and give hesitant buyers the final nudge.
 
-The model has evolved since then. In 2025, the mid-tier layer has become the most important. During the Double 11 shopping festival, mid-tier hosts with annual sales of 1-10 billion yuan contributed 45% of total live commerce GMV, with an average single-session ROI of 1:8.
+The model has evolved since then. In 2025, the mid-tier layer has become the most important.
 
-> Source: 100EC.cn, 2025 Double 11 Data Report
+> During Double 11 2025, mid-tier hosts with annual sales of 100 million to 1 billion yuan contributed 45% of live commerce GMV, with an average single-session ROI of 1:8. Top hosts with annual sales above 1 billion yuan saw their share fall from 32% in 2024 to 30%.
+> Source: 100EC (网经社), November 2025. https://www.100ec.cn/detail--6654028.html
 
-Meanwhile, the market share of top-tier mega KOLs dipped from 32% to 30%, reflecting a deliberate push by platforms toward decentralized traffic distribution.
+100EC puts that shift down to platforms spreading traffic away from the top, and to brands wary of leaning on a few big names.
 
 Right now, the middle of the pyramid is where the best return sits.
 
@@ -93,11 +95,10 @@ Commission rates range by category. Beauty and skincare sit at 10-25%. Fashion a
 
 One of the biggest shifts in 2025 is that brands are building their own livestream operations instead of relying entirely on external KOLs.
 
-During the 2025 Double 11, brand self-broadcasting accounted for 40% of total live commerce GMV, up 8 points from 2024. Companies like Anta, L'Oreal, and Xiaomi have in-house livestream teams of 50+ people running daily broadcasts.
+> During Double 11 2025, brand self-broadcasting accounted for 40% of live commerce GMV, up 8 points from 2024. Anta, L'Oreal and Xiaomi have built daily and sale-event self-broadcasting operations, and self-broadcasting teams generally exceed 50 people.
+> Source: 100EC (网经社), November 2025. https://www.100ec.cn/detail--6654028.html
 
-> Source: 100EC.cn
-
-Some brands now generate more revenue from self-broadcasting than from all their KOL partnerships combined.
+Some brands now generate more revenue from self-broadcasting than from all their KOL deals combined.
 
 For international brands, this means you have options. You do not need to start with expensive KOL deals. You can build a self-broadcasting operation that gives you control over messaging, better margins, and a direct channel to your audience. The tradeoff is that it takes real investment: studio, hosts, content production, and ad spend to drive viewers.
 

@@ -4,6 +4,7 @@ description: "Les KOL bâtissent la notoriété, les KOC installent la confiance
 metaTitle: "KOL contre KOC en Chine : guide des influenceurs"
 metaDescription: "KOL ou KOC ? Modèles de rémunération, risque de faux abonnés et stratégie pyramidale qui fonctionne. Guide pratique pour les marques en Chine."
 publishDate: 2026-04-03
+updatedDate: 2026-10-11
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Stratégie"
@@ -60,11 +61,12 @@ C’est Perfect Diary qui a popularisé cette architecture autour de 2020-2021. 
 
 Le haut de la pyramide amorce la conversation. Les intermédiaires creusent le sujet dans des niches bien identifiées. Les KOC, eux, diffusent du contenu plus brut au sein de leurs communautés et finissent de convaincre les hésitants.
 
-Le modèle a évolué depuis. En 2025, c’est la strate intermédiaire qui fait clairement la différence. Lors du festival Double 11, les animateurs affichant un chiffre d’affaires annuel compris entre 1 et 10 milliards de yuans ont pesé 45 % du volume total de ventes en direct, avec un ROI moyen de 1 pour 8 par session.
+Le modèle a évolué depuis. En 2025, c’est la strate intermédiaire qui fait clairement la différence.
 
-> Source : 100EC.cn, rapport données Double 11 2025
+> Au Double 11 2025, les animateurs intermédiaires, dont les ventes annuelles se situent entre 100 millions et 1 milliard de yuans, ont pesé 45 % du GMV des ventes en direct, avec un ROI moyen de 1:8 par session. La part des grands animateurs, au-delà de 1 milliard de yuans de ventes annuelles, est passée de 32 % en 2024 à 30 %.
+> Source : 100EC (网经社), novembre 2025. https://www.100ec.cn/detail--6654028.html
 
-Les méga-KOL, eux, voient leur part glisser de 32 à 30 %. Les plateformes, délibérément, décentralisent la distribution du trafic.
+100EC attribue ce glissement aux plateformes, qui détournent le trafic des têtes d’affiche, et aux marques, peu disposées à dépendre de quelques grands noms.
 
 Aujourd’hui, le meilleur rendement se niche au cœur de la pyramide.
 
@@ -93,9 +95,8 @@ Côté commissions, les taux varient d’une catégorie à l’autre : beauté e
 
 L’une des tendances les plus nettes de 2025 : les marques montent leurs propres opérations de vente en direct plutôt que de s’en remettre intégralement à des KOL extérieurs.
 
-Au Double 11 2025, la diffusion en propre pesait 40 % du volume total des ventes en direct. Huit points de plus qu’en 2024. Anta, L’Oréal, Xiaomi : toutes alignent des équipes internes de plus de 50 personnes, à l’antenne chaque jour.
-
-> Source : 100EC.cn
+> Au Double 11 2025, la diffusion en propre des marques a pesé 40 % du GMV des ventes en direct, soit 8 points de plus qu’en 2024. Anta, L’Oréal et Xiaomi ont bâti leurs propres dispositifs de diffusion, au quotidien comme pendant les temps forts commerciaux. Leurs équipes dépassent en général 50 personnes.
+> Source : 100EC (网经社), novembre 2025. https://www.100ec.cn/detail--6654028.html
 
 Certaines marques tirent désormais davantage de revenus de leurs propres directs que de l’ensemble de leurs collaborations KOL.
 

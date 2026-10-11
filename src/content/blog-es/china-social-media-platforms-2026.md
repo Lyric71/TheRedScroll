@@ -33,11 +33,11 @@ Esta guía repasa las plataformas que importan. Primero las cuatro grandes, a fo
 
 El mercado publicitario de internet en China sigue creciendo, pero el crecimiento fácil se acabó. Las marcas ya no persiguen alcance a secas, sino precisión. El dinero va al vídeo corto, al comercio electrónico y a las redes sociales.
 
-La IA lo impregna todo. El mercado chino de AIGC rondó los 25.700 millones de yuanes en 2025, unos 3.500 millones de dólares, y crece a más del 50 % anual. Más de la mitad de los anunciantes chinos ya usa IA en algún punto de su trabajo creativo.
+La IA lo impregna todo. Las previsiones sitúan el mercado chino de AIGC en 276.700 millones de yuanes en 2028, y solo el marketing con IA debía alcanzar los 66.900 millones en 2025. Más de la mitad de los anunciantes chinos ya usa IA en algún punto de su trabajo creativo.
 
-> 2025年中国AIGC核心产业规模约257亿元，预计2027年迎来增速拐点。
+> 中国AIGC市场规模将在2028年攀升至2767亿元。AI营销行业2025年预计市场规模达669亿元。
 >
-> La industria central de AIGC en China rondó los 25.700 millones de yuanes en 2025, con un punto de inflexión en el crecimiento previsto para 2027. Fuente: 量子位智库 / QbitAI Think Tank, 2025.
+> El mercado chino de AIGC llegará a 276.700 millones de yuanes en 2028, según las previsiones, y el sector del marketing con IA debía alcanzar los 66.900 millones en 2025. Fuente: 微播易 / Weiboyi y 中国商务广告协会AI营销委员会 / Comité de Marketing con IA de la Asociación China de Publicidad Comercial, mayo de 2025.
 
 ![Diagrama del modelo de circuito cerrado: descubrimiento, contenido y pago dentro de una sola app](/images/blog/closed-loop-diagram.webp)
 

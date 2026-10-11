@@ -33,11 +33,11 @@ This guide walks through the platforms that matter. The big four first, in depth
 
 China's internet ad market keeps growing, but the easy growth is over. Brands now chase precision, not just reach. Short video, e-commerce, and social are where the money goes.
 
-AI sits inside all of it. China's AIGC market reached about 25.7 billion RMB in 2025, roughly 3.5 billion US dollars, and is growing past 50% a year. Over half of Chinese advertisers now use AI somewhere in their creative work.
+AI sits inside all of it. China's AIGC market is forecast to reach 276.7 billion RMB by 2028, and AI marketing alone was expected to reach 66.9 billion RMB in 2025. Over half of Chinese advertisers now use AI somewhere in their creative work.
 
-> 2025年中国AIGC核心产业规模约257亿元，预计2027年迎来增速拐点。
+> 中国AIGC市场规模将在2028年攀升至2767亿元。AI营销行业2025年预计市场规模达669亿元。
 >
-> China's core AIGC industry reached about 25.7 billion RMB in 2025, with a growth inflection point expected in 2027. Source: 量子位智库 / QbitAI Think Tank, 2025.
+> China's AIGC market is forecast to reach 276.7 billion RMB by 2028, and the AI marketing sector was expected to reach 66.9 billion RMB in 2025. Source: 微播易 / Weiboyi and 中国商务广告协会AI营销委员会 / China Commercial Advertising Association AI Marketing Committee, May 2025.
 
 ![Diagram of the closed-loop model: discovery to content to checkout inside one app](/images/blog/closed-loop-diagram.webp)
 

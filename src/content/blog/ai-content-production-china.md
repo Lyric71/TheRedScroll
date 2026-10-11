@@ -4,6 +4,7 @@ description: "Over 53% of Chinese advertisers use AI for creative content. Here 
 metaTitle: "AI content production for China's platforms"
 metaDescription: "Over 53% of Chinese advertisers use AI for content production. How AIGC is reshaping social media marketing on Douyin, WeChat, and RedNote."
 publishDate: 2026-04-06
+updatedDate: 2026-10-11
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Content"
@@ -12,11 +13,14 @@ featured: true
 featuredImage: "/images/blog/aigc-content-factory.webp"
 ---
 
-*More than half of Chinese advertisers already use AI to create content. The market is on track to grow more than tenfold by 2028, from 25.7 billion yuan in 2025 to 276.7 billion yuan (Weiboyi and China Advertising Association). Here is what that means for your brand.*
+*More than half of Chinese advertisers already use AI to create content, and China's AIGC market is forecast to reach 276.7 billion yuan by 2028 (Weiboyi and the China Commercial Advertising Association's AI Marketing Committee, May 2025). Here is what that means for your brand.*
 
 ## The numbers behind the shift
 
-China's AI-Generated Content (AIGC) market reached 25.7 billion yuan in 2025, according to a joint report by Weiboyi and the China Advertising Association. By 2028, industry forecasts put that number at 276.7 billion yuan. That is a pace of growth most industries would not come close to matching.
+China's market for AI-generated content (AIGC) is set to grow fast, and marketing is one of the first places the money is landing.
+
+> China's AIGC market is forecast to reach 276.7 billion yuan by 2028, and the AI marketing sector alone was expected to reach 66.9 billion yuan in 2025.
+> Source: Weiboyi (微播易) and the China Commercial Advertising Association AI Marketing Committee (中国商务广告协会AI营销委员会), May 2025. https://m.bjnews.com.cn/detail/1747829414129325.html
 
 Industry data cited in Douban's 2026 AI marketing review shows that 53.1% of Chinese advertisers now use AIGC in creative production. Nearly 20% rely on AI for more than half of their video workflow. AI-driven marketing campaigns doubled year-over-year in 2025 and now represent 19.2% of all marketing activity tracked in China. This is not a test phase anymore.
 
@@ -26,11 +30,10 @@ So where are the gains showing up?
 
 **Speed.** AI tools can generate 240 pieces of multi-format content in seconds.
 
-> A one-minute short video that used to cost tens of thousands of yuan in production fees can now be made for as little as 500 yuan.
+> Weiboyi's 2025 AI marketing guide says AI can bring the cost of a one-minute short video down to as little as 500 yuan.
+> Source: Weiboyi (微播易) and the China Commercial Advertising Association AI Marketing Committee (中国商务广告协会AI营销委员会), May 2025. https://m.bjnews.com.cn/detail/1747829414129325.html
 
-> Source: Beijing News, citing Weiboyi report
-
-That kind of cost reduction changes what is economically possible for brands of any size.
+A cost at that level changes what is economically possible for brands of any size.
 
 ![An AI content generation tool displaying a grid of product lifestyle images for batch selection](/images/blog/aigc-batch-grid.webp)
 

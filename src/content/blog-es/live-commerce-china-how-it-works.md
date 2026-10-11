@@ -17,15 +17,15 @@ featuredImage: "/images/blog/live-commerce-purchase.webp"
 
 ## De qué tamaño hablamos
 
-En 2023, el live commerce chino movió 4,9 billones de yuanes en transacciones, más de un 35 % por encima del año anterior.
+En 2025, el live commerce chino movió unos 6,95 billones de yuanes en transacciones, un 30,42 % más que el año anterior. Llega ya a 660 millones de usuarios.
 
-Para 2025, las previsiones colocaban el comercio minorista en línea en 16,65 billones de yuanes, y el directo como el segmento que más tira.
+> El volumen de transacciones del live commerce chino alcanzó los 6.946.100 millones de yuanes en 2025, un 30,42 % más, con 660 millones de usuarios.
+> Fuente: 100EC (网经社), Informe de datos del mercado chino del live commerce 2025, mayo de 2026. https://www.100ec.cn/detail--6659027.html
 
-> Fuente: iiMedia Research, Informe sectorial del livestream e-commerce chino 2025
+En el Doble 11 de 2025, las sesiones de directos divulgativos crecieron un 180 % interanual. El espectador aguantó de media 28 minutos por sesión, y la conversión en esas emisiones llegó al 9,2 %.
 
-En el Doble 11 de 2025, los directos divulgativos crecieron un 180 % interanual. El espectador aguantó de media 28 minutos por sesión, y la conversión en esas emisiones llegó al 9,2 %.
-
-> Fuente: 100EC.cn, Informe de datos Doble 11 2025
+> En el Doble 11 de 2025, las sesiones de directo divulgativo crecieron un 180 % interanual, la permanencia media del espectador llegó a 28 minutos y la conversión subió al 9,2 %.
+> Fuente: 100EC (网经社), Informe de análisis de datos del Doble 11 de 2025: comercio electrónico en directo, noviembre de 2025. https://www.100ec.cn/detail--6654028.html
 
 Navegar por una tienda en línea al uso convierte entre el 0,5 y el 1,5 %. El directo va, por tanto, seis veces más rápido.
 
@@ -37,9 +37,8 @@ El espectador compra durante el directo, no después. Un presentador de confianz
 
 La conversión del live commerce suele oscilar entre el 3 y el 8 %. Los mejores presentadores rozan a menudo el 10-15 %. Una reseña en vídeo corto convierte entre el 1,5 y el 3 %; una publicación en redes, entre el 0,5 y el 1,5 %.
 
-> En el Doble 11 de 2025, la belleza arrasó. Los directos «centrados en los ingredientes», con presentadores formados en medicina o química, dispararon un 55 % las ventas de cosmética de eficacia.
-
-> Fuente: 100EC.cn, Informe de datos Doble 11 2025
+> En el Doble 11 de 2025, los presentadores formados en medicina o química que desgranaban los ingredientes dispararon un 55 % las ventas de cosmética de eficacia.
+> Fuente: 100EC (网经社), Informe de análisis de datos del Doble 11 de 2025: comercio electrónico en directo, noviembre de 2025. https://www.100ec.cn/detail--6654028.html
 
 Esa diferencia entre canales explica de sobra por qué el live commerce manda hoy en cómo se vende, de verdad, un producto a través de influencers en China.
 
@@ -51,9 +50,10 @@ El live commerce se apoya en tres actores: marketplaces, influencers y MCN.
 
 **Los influencers** crean el contenido y conducen los directos. Los hay desde mega-KOL con decenas de millones de seguidores hasta microcreadores con entre 10.000 y 100.000.
 
-**Las MCN** (Multi-Channel Networks) se sitúan en medio. Reclutan a los influencers, negocian con las marcas, vigilan el cumplimiento normativo y coordinan las campañas. Manejan, según se estima, entre el 70 y el 80 % de los influencers de gama media-alta. En 2024, su mercado alcanzó los 63.600 millones de yuanes.
+**Las MCN** (Multi-Channel Networks) se sitúan en medio. Reclutan a los influencers, negocian con las marcas, vigilan el cumplimiento normativo y coordinan las campañas. En 2024, su mercado alcanzó los 63.600 millones de yuanes.
 
-> Fuente: iiMedia Research
+> El mercado chino de las MCN alcanzó los 63.600 millones de yuanes en 2024.
+> Fuente: iiMedia Research (艾媒咨询), análisis del tamaño del mercado de la industria MCN en China, septiembre de 2025. https://www.iimedia.cn/c1088/107089.html
 
 Los microinfluencers suelen ir por libre. Pero, para una marca que monta campañas de pago de live commerce a escala real, lo normal es trabajar con una MCN.
 
@@ -83,15 +83,12 @@ Plataformas como Taobao Union y Douyin Select Alliance automatizan el seguimient
 
 La IA no está reemplazando al presentador del directo. Pero sí está reescribiendo lo que pasa antes y durante la emisión.
 
-Según un informe de Chinabaogao, una presentadora de belleza con una videoteca de contenido generado por IA detrás recortó su explicación por producto de 5 a 2,5 minutos. Su conversión de GMV subió un 40 %.
-
 El tiempo se va en preparar el guion. Un solo directo que cubre 80 productos pide unas 24 horas de escritura. La IA ya saca argumentarios, comprobaciones de cumplimiento y variantes creativas en una fracción de ese tiempo. Casi todos los datos apuntan a que la mayoría de las salas de directo activas en China usa ya IA para, al menos, parte de la preparación.
 
 Los presentadores digitales también cuentan. El avatar de JD.com condujo un directo de 24 horas de productos de salud y alcanzó una conversión del 22,6 %. Rinden mejor en el turno de noche y en demostraciones estandarizadas. El prime time sigue siendo de los humanos.
 
-> Solo en Kuaishou, los recursos creativos generados con IA se consumen ya a más de 30 millones al día.
-
-> Fuente: CIECC, Informe sobre el desarrollo de calidad del livestream e-commerce
+> Solo en Kuaishou, la inversión publicitaria en creatividades de marketing generadas con IA rondó los 4.000 millones de yuanes en el cuarto trimestre de 2025.
+> Fuente: Securities Daily (证券日报), sobre los resultados del cuarto trimestre de 2025 de Kuaishou (快手), marzo de 2026. https://finance.sina.com.cn/jjxw/2026-03-26/doc-inhshtew0328817.shtml
 
 El patrón se repite por todo el sector: la IA pone volumen y velocidad; las personas, la confianza.
 
@@ -103,11 +100,15 @@ Casi todas las marcas extranjeras tratan el live commerce como un experimento su
 
 Casi nunca sale. El live commerce es un sistema, no un evento. Pide una parrilla constante, el presentador que encaja con la categoría, un surtido bien elegido y publicidad de pago que de verdad lleve gente a la sala.
 
-El listón de inversión también ha subido. En el Doble 11 de 2025, las marcas pusieron de media 250.000 yuanes por gran directo, frente a los 150.000 del año anterior. Iluminación profesional, sonido y diseño de plató son ya lo estándar.
+El listón de inversión también ha subido. En el Doble 11 de 2025, las marcas gastaron de media 250.000 yuanes en producir cada gran directo, frente a los 150.000 de 2024. Iluminación profesional, sonido y diseño de plató son ya lo estándar.
 
-> Fuente: 100EC.cn
+> El coste medio de producción de un gran directo de marca pasó de 150.000 yuanes en 2024 a 250.000 en el Doble 11 de 2025.
+> Fuente: 100EC (网经社), Informe de análisis de datos del Doble 11 de 2025: comercio electrónico en directo, noviembre de 2025. https://www.100ec.cn/detail--6654028.html
 
 Y está la deriva hacia la emisión propia. Los directos llevados por la propia marca supusieron el 40 % del GMV total del live commerce en el Doble 11 de 2025, ocho puntos más que el año anterior. Anta, L'Oréal o Xiaomi ya tienen equipos internos de más de 50 personas emitiendo a diario. Algunas ingresan más por sus propios directos que por todas sus colaboraciones con KOL externos juntas.
+
+> Las emisiones propias de las marcas se llevaron el 40 % del GMV del directo en el Doble 11 de 2025, 8 puntos más que en 2024. En marcas como Anta, L'Oréal o Xiaomi, esos equipos suelen superar las 50 personas. Y los directos propios de algunas ya venden más que sus colaboraciones con creadores.
+> Fuente: 100EC (网经社), Informe de análisis de datos del Doble 11 de 2025: comercio electrónico en directo, noviembre de 2025. https://www.100ec.cn/detail--6654028.html
 
 Si lo trata como un proyecto de segunda, tendrá resultados de segunda.
 

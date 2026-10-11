@@ -14,10 +14,10 @@ featuredImage: "/images/blog/douyin-shoppable-video.webp"
 keyFacts:
   - "Douyin had about 1.03 billion monthly active users in June 2026, per QuestMobile. Ocean Engine still cites more than 600 million daily."
   - "Douyin's e-commerce GMV was on track to pass 4 trillion RMB in 2025, growing more than 30% year on year. Source: LatePost, November 2025."
-  - "Paid amplification through Ocean Engine brings CPM down to 30-60 yuan, versus 200-300 yuan for organic KOL content. Source: Qinggua Media, Digitaling, Ebrun, Youzan."
+  - "China's overall e-commerce return rate hit 61.5% during Double 11 2025. Source: CCTV News via Beijing Daily, January 2026."
   - "Top KOLs in China can cost 500,000 to 5 million yuan per post. KOCs typically cost 200 to 5,000 yuan per post."
-  - "New Douyin Shop merchants get full commission waivers in month one. Source: Ebrun, cited in Sina Finance."
-  - "Brand self-broadcasting reached 40% of live commerce GMV during the 2025 Double 11, up 8 points from 2024. Source: 100EC.cn."
+  - "In 2026, Douyin Shop refunds the fee on Douyin Mall product-card orders down to 0.6%, or 1% for cross-border goods, for shops that complete monthly tasks. Source: Douyin E-commerce Learning Center, October 2026."
+  - "Brand self-broadcasting reached 40% of live commerce GMV during the 2025 Double 11, up 8 points from 2024. Source: 100EC, November 2025."
 ---
 
 *Your TikTok playbook will not work on Douyin. Here is what will.*
@@ -32,7 +32,7 @@ Inside China, Douyin is something bigger than a video feed. It is one of the mos
 
 The commerce is what sets it apart. Douyin's e-commerce GMV was on track to pass 4 trillion RMB in 2025, growing more than 30% year on year.
 
-> Source: LatePost, November 2025.
+> Source: LatePost (晚点LatePost), carried by China.com (中华网), November 2025. https://finance.china.com/TMT/13004688/20251121/49009672.html
 
 Here is how the two apps compare for a brand.
 
@@ -75,9 +75,10 @@ Three account decisions matter early.
 
 **The official account.** This is your verified brand home. It holds your videos, your livestreams, and your follower base.
 
-**The shop.** A Douyin Shop lets you sell inside the app. New merchants get full commission waivers in month one, which lowers the cost of testing.
+**The shop.** A Douyin Shop lets you sell inside the app. In 2026, shops that complete monthly tasks get most of the fee on product-card orders refunded, which lowers the cost of testing.
 
-> Source: Ebrun, cited in Sina Finance.
+> In 2026, shops that sign up and complete monthly tasks get the fee on Douyin Mall product-card orders refunded down to 0.6% for domestic goods and 1% for cross-border goods. Livestream and short-video orders do not qualify.
+> Source: Douyin E-commerce Learning Center (抖音电商学习中心), 2026 product-card rebate policy, updated October 2026. https://school.jinritemai.com/doudian/web/article/aJcQ5pzG2Vk4
 
 **The ad account.** Paid traffic on Douyin runs through Ocean Engine, ByteDance's ad platform. It needs its own verification.
 
@@ -97,7 +98,8 @@ Douyin rewards three formats above the rest.
 
 One shift worth knowing: brand self-broadcasting is growing fast. During the 2025 Double 11, brand self-broadcasting accounted for 40% of total live commerce GMV, up 8 points from 2024.
 
-> Source: 100EC.cn.
+> During Double 11 2025, brand self-broadcasting accounted for 40% of live commerce GMV, up 8 percentage points from 2024.
+> Source: 100EC (网经社), E-commerce Research Center, November 2025. https://www.100ec.cn/detail--6654028.html
 
 For a Western brand, that means you do not have to rent every audience. You can build your own live room, control your message, and keep better margins. The tradeoff is real investment: studio, hosts, content production, and ad spend to drive viewers.
 
@@ -111,9 +113,10 @@ Payment models vary by tier. Top KOLs charge a flat fee plus a sales commission.
 
 Commission rates depend on category. Beauty and skincare sit at 10-25%. Fashion at 8-15%. Electronics at 3-8%.
 
-Right now, the middle of the pyramid is where the best return sits. During the Double 11 shopping festival, mid-tier hosts contributed 45% of total live commerce GMV, with an average single-session ROI of 1:8.
+Right now, the middle of the pyramid is where the best return sits. During Double 11 2025, mid-tier hosts contributed 45% of live commerce GMV, with an average single-session ROI of 1:8.
 
-> Source: 100EC.cn, 2025 Double 11 Data Report.
+> During Double 11 2025, mid-tier hosts with annual sales of 100 million to 1 billion yuan contributed 45% of live commerce GMV, with an average single-session ROI of 1:8.
+> Source: 100EC (网经社), November 2025. https://www.100ec.cn/detail--6654028.html
 
 ![A Douyin KOL filming a product review in her apartment](/images/blog/douyin-kol-showcase.webp)
 
@@ -123,21 +126,24 @@ One warning: fake followers are still common in this market. Creating a fake 100
 
 There is no fixed price, but the cost drivers are clear.
 
-**Traffic is paid.** CPM for organic KOL content runs 200-300 yuan. Paid amplification via Ocean Engine drops that to 30-60 yuan, but you need real volume to move product.
+**Traffic is paid.** Expect to buy reach through Ocean Engine, and you need real volume to move product.
 
-**Influencer content rarely pays for itself alone.** KOL content ROI without a paid boost is now below 0.3 for most categories. For every yuan a brand puts into influencer content, the direct return is less than 30 cents.
+**Returns eat margin.** During Double 11 2025, China's overall e-commerce return rate hit 61.5%, and apparel livestreams topped 80%. Each returned women's garment costs about 20 to 32 yuan in combined losses, before the ad money.
 
-**Returns eat margin.** In fashion, returns average around 65%. Each return costs around 8 yuan in packaging and reshipping, before the ad money.
+> China's overall e-commerce return rate was 61.5% during Double 11 2025, and apparel livestreaming returns topped 80%. Each returned women's garment costs about 20 to 32 yuan in combined losses.
+> Source: CCTV News (央视新闻), carried by Beijing Daily (京报网), January 2026; Beijing News (新京报), June 2025. https://news.bjd.com.cn/2026/01/11/11517038.shtml ; https://m.bjnews.com.cn/detail/1750036716129261.html
 
-**Platform fees stack.** Technical service fees run 2-5%. Influencer commissions run 20-50%. Add shipping insurance, deposits, and ad spend on top.
+**Platform fees stack.** Douyin's 2026 base technical service fee is 5% for apparel and 4% for facial care, or 6% for cross-border apparel. Creator commissions on open plans run 5% to 50%, set by the merchant. Add shipping insurance, deposits, and ad spend on top.
 
-> Source: Qinggua Media, Digitaling, Ebrun, Youzan.
+> Douyin's 2026 base technical service fee is 5% for apparel and 4% for facial care, and 6% for cross-border apparel. Merchants set open creator commissions between 5% and 50%.
+> Source: Douyin E-commerce Learning Center (抖音电商学习中心), fee schedules updated July 2026 and affiliate rules effective August 2026. https://school.jinritemai.com/doudian/web/article/aHijyoJA6hvb ; https://school.jinritemai.com/doudian/web/article/aHMYyFoqESKn ; https://school.jinritemai.com/doudian/web/article/112620
 
-The platform is lowering the cost floor, though. Douyin introduced nine merchant support policies in 2025. Nearly 100 categories now have reduced or zero commissions. As of August 2025, Douyin had pushed over 19 billion yuan in subsidies back to merchants.
+The platform is lowering the cost floor, though. Douyin launched nine merchant support policies in early 2025 and says they saved merchants more than 32 billion yuan that year. For 2026, it extended commission waivers to every category and put second-quarter savings at more than 10 billion yuan.
 
-> Source: 36Kr.
+> Douyin says the nine merchant support policies it first launched in early 2025 saved merchants more than 32 billion yuan over the past year. Its 2026 upgrade extends commission waivers to all categories, from product cards to content, and cuts ad fees directly on eligible orders. Douyin put second-quarter 2026 savings at more than 10 billion yuan.
+> Source: China National Radio (央广网), January 2026; Securities Times (证券时报) via Sina Finance (新浪财经), July 2026. https://www.cnr.cn/mspd/zhsh/20260108/t20260108_527487292.shtml ; https://finance.sina.cn/stock/jdts/2026-07-14/detail-inihtvuk5362765.d.html?oid=800&vt=4&cid=76993&node_id=76993
 
-Budget expectations should stay honest. Most brands do not make money on Douyin in year one. According to an analysis published on Zhihu, Bluemoon, one of China's biggest household brands, worked with over 3,000 influencers and spent 40 million yuan on paid traffic. The ROI never balanced.
+Budget expectations should stay honest. Most brands do not make money on Douyin in year one.
 
 That is not a reason to skip Douyin. It is a reason to plan the numbers before you start.
 

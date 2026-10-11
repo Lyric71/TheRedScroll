@@ -4,7 +4,7 @@ description: "La publicidad en WeChat se reparte entre Moments, Cuentas Oficiale
 metaTitle: "Anuncios en WeChat: formatos y precios"
 metaDescription: "WeChat tiene seis formatos de anuncio y tres modelos de precio. Cuánto cuesta cada emplazamiento y cómo plantear la primera campaña en China."
 publishDate: 2026-04-05
-updatedDate: 2026-10-05
+updatedDate: 2026-10-11
 author: "TheRedScroll"
 platforms: ["wechat"]
 category: "Plataformas"
@@ -51,34 +51,29 @@ WeChat maneja tres modelos de precio. El que conviene depende, sobre todo, de cu
 
 ### CPM: pago por cada 1.000 impresiones
 
-Es el modelo más habitual en Moments y en campañas de marca. Las tarifas cambian según el nivel de la ciudad y la modalidad de compra.
+Es el modelo más habitual en Moments y en campañas de marca. Las tarifas cambian según el nivel de la ciudad y la modalidad de compra. La compra programada se paga según la tarifa oficial de Tencent, que no se publica.
 
-| Rango de ciudad | CPM en compra programada | Horquilla CPM en puja |
+| Rango de ciudad | Compra programada | Compra por puja |
 |---|---|---|
-| Núcleo (Pekín, Shanghái) | En torno a 150 yuanes por mil | Sin puja |
-| Clave (Cantón, Shenzhen, Chengdu, Hangzhou y otras 18) | En torno a 100 yuanes por mil | Sin puja |
-| Estándar (resto de ciudades) | En torno a 50 yuanes por mil | 30-200 yuanes por mil |
+| Ciudades núcleo | CPM de tarifa oficial, desde 50.000 yuanes por emplazamiento | Sin puja |
+| Ciudades clave | CPM de tarifa oficial, desde 50.000 yuanes por emplazamiento | Sin puja |
+| Resto de ciudades | CPM de tarifa oficial, desde 50.000 yuanes por emplazamiento | Desde 30 yuanes de CPM y 1.000 yuanes al día |
 
-La puja solo está abierta en las ciudades del rango estándar. En las ciudades núcleo y clave, Moments se compra de forma programada.
+La puja solo está abierta en el resto de ciudades. En las ciudades núcleo y clave, Moments se compra de forma programada.
 
 > Las compras de Moments por puja solo están abiertas en el resto de ciudades; las ciudades núcleo y clave quedan excluidas. La puja se aplica únicamente al formato de imagen y texto.
 > Fuente: Tencent Ads (腾讯广告), página de producto de publicidad en WeChat, comprobada en octubre de 2026. https://e.qq.com/topic/marketing/industry/weixin/
 
-El vídeo cuesta entre un 30 y un 50 % más que la imagen a igualdad de impresiones. Para hacerse una idea: el CPM de tráfico de pago en Douyin vía Ocean Engine ronda los 30-60 yuanes, pero ahí se amplifica contenido ya existente, no se compra un emplazamiento nativo en el feed. El CPM de Moments es más alto porque se paga un hueco dentro de un feed social personal, con mucha más confianza detrás.
-
-> Fuente: Zhihu, referentes del sector
-
 ### CPC: pago por clic
 
-Habitual en los anuncios de artículo de las Cuentas Oficiales y en los banners de Mini Programa. El suelo es bajo: los del pie del artículo arrancan en torno a 0,5 yuanes por clic. El CPC de Moments es otro cantar: va de 2 a 20 yuanes según lo fina que sea la segmentación y cuántas marcas pujen por el mismo público. Para comparar, los anuncios de búsqueda en Baidu rondan los 2-15 yuanes por clic. La diferencia: el clic de WeChat llega en un contexto social, no de búsqueda. Y eso cambia el valor que conviene darle.
+Habitual en los anuncios de artículo de las Cuentas Oficiales y en los banners de Mini Programa. El suelo es bajo: la puja de cada anuncio arranca en 0,5 yuanes por clic. Por encima de ese suelo, se paga la puja del anuncio siguiente, ponderada por la calidad de ambos anuncios, más 0,01 yuanes. Un anuncio mejor paga menos por el mismo clic. El clic de WeChat llega en un contexto social, no de búsqueda. Y eso cambia el valor que conviene darle.
 
-> Fuentes: Yiban, Zhihu
+> Los anuncios de WeChat se cobran por clic, y la puja de cada anuncio parte de 0,5 yuanes. Cada clic cuesta la puja del anuncio siguiente multiplicada por su índice de calidad, dividida por el índice de calidad de este anuncio, más 0,01 yuanes.
+> Fuente: servicio de atención al cliente de Tencent (腾讯客服), preguntas frecuentes para anunciantes «Cómo se cobran los anuncios», comprobada en octubre de 2026. https://kf.qq.com/faq/170522aAN3A3170522BBBNZZ.html
 
 ### oCPM: puja inteligente
 
-El modelo de WeChat apoyado en IA. Se fija un coste de conversión objetivo y el sistema mueve la puja en tiempo real para llegar a quien tiene más papeletas de pasar a la acción. En 2025, Tencent añadió herramientas de puja con IA que recortan los costes entre un 10 y un 15 % frente a la puja manual. En cuanto hay datos de conversión suficientes, casi todos los anunciantes terminan pasándose a oCPM. Cuesta unas semanas reunir los datos que el algoritmo necesita, pero a partir de ahí gana a la puja manual una y otra vez.
-
-> Fuente: Yiban
+El modelo de WeChat apoyado en IA. Se fija un coste de conversión objetivo y el sistema mueve la puja en tiempo real para llegar a quien tiene más papeletas de pasar a la acción. Necesita datos de conversión para aprender. Arranque en CPM o CPC y pase a oCPM cuando las conversiones empiecen a llegar.
 
 ## Mínimo de inversión: lo que de verdad hace falta para empezar
 
@@ -87,7 +82,7 @@ Aquí es donde tropieza buena parte de las marcas. Los mínimos dependen por ent
 | Método de compra | Mínimo |
 |---|---|
 | Compra programada | 50.000 yuanes por campaña (unos 7.000 dólares) |
-| Compra por puja | 1.000 yuanes diarios de presupuesto, CPM de 30 yuanes; solo ciudades estándar |
+| Compra por puja | 1.000 yuanes diarios de presupuesto, CPM de 30 yuanes; solo en el resto de ciudades |
 | Promoción local | 1.000 yuanes al día (unos 140 dólares), sin el umbral de 50.000 yuanes |
 
 La compra programada de 50.000 yuanes está pensada para grandes empujones de marca: se reservan impresiones garantizadas con entre 5 y 28 días de antelación. Lanzamientos, campañas de temporada, grandes eventos. Un «pago ahora y me garantizan las miradas».
@@ -106,15 +101,9 @@ La promoción local arranca en 1.000 yuanes al día (unos 140 dólares), el mism
 
 ## Lo que nadie le cuenta
 
-**La revisión creativa es estricta y lenta.** WeChat tumba anuncios con afirmaciones infladas, estadísticas sin verificar, promesas de salud sin certificación oficial o cualquier llamada a compartir o reenviar. La revisión se lleva uno o dos días laborables. Métalo en el calendario, o se quedará sin ventana de lanzamiento.
+**La revisión creativa es estricta y lenta.** WeChat tumba anuncios con afirmaciones infladas, estadísticas sin verificar, promesas de salud sin certificación oficial o cualquier llamada a compartir o reenviar. Reserve en el calendario el tiempo de la revisión, o se quedará sin ventana de lanzamiento.
 
 **En Moments, su anuncio compite con personas de carne y hueso.** No es el banner de una web: aparece entre la foto del hijo de alguien y las vacaciones de un compañero de trabajo. Si no parece algo que publicaría una persona, el usuario lo pasa de largo en medio segundo.
-
-**Cada cambio de creatividad vuelve a revisión.** En Moments puede renovar la creatividad hasta tres veces al mes, pero cada cambio pasa otra vez por el filtro. Planifíquela desde el principio.
-
-**Las horas punta cuestan más.** Pujar en la franja de máxima audiencia de la noche (de 19:00 a 21:00) sale entre un 20 y un 40 % más caro que en horas valle. Si el presupuesto aprieta, pruebe primero los huecos de día.
-
-> Fuente: Aiyong Tech
 
 ## En resumen
 

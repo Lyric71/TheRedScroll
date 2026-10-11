@@ -33,11 +33,11 @@ featuredImage: "/images/blog/hero-china-platforms.webp"
 
 中国互联网广告盘子还在涨，但躺着挣钱的日子过去了。品牌如今拼的是精准，不再只是覆盖面。钱往三处走：短视频、电商、社交。
 
-AI已经渗透进这一切。2025年中国AIGC市场规模约257亿元人民币，折合约35亿美元，年增速超过50%。一半以上的中国广告主，已经在创意环节用上了AI。
+AI已经渗透进这一切。中国AIGC市场规模预计在2028年达到2767亿元人民币，单是AI营销一项，2025年规模就预计达669亿元人民币。一半以上的中国广告主，已经在创意环节用上了AI。
 
-> 2025年中国AIGC核心产业规模约257亿元，预计2027年迎来增速拐点。
+> 中国AIGC市场规模将在2028年攀升至2767亿元。AI营销行业2025年预计市场规模达669亿元。
 >
-> 来源：量子位智库（QbitAI Think Tank），2025年。
+> 来源：微播易（Weiboyi）、中国商务广告协会AI营销委员会（China Commercial Advertising Association AI Marketing Committee），2025年5月。
 
 ![闭环模式示意图：从发现、内容到结账，全在同一个App里完成](/images/blog/closed-loop-diagram.webp)
 

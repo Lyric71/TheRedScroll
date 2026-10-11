@@ -4,6 +4,7 @@ description: "Cerca de 600 millones de consumidores chinos compran por livestrea
 metaTitle: "Por qué triunfa el livestream shopping en China"
 metaDescription: "El livestream e-commerce chino alcanzó los 5,8 billones de yuanes en 2024. Cinco razones por las que el consumidor chino se decanta por comprar en directo."
 publishDate: 2026-04-04
+updatedDate: 2026-10-11
 author: "TheRedScroll"
 platforms: ["douyin", "rednote"]
 category: "Estrategia"
@@ -22,9 +23,13 @@ El livestream shopping ya es la norma en China. Es como compra hoy una parte eno
 
 > Fuente: CIECC, Informe sobre el desarrollo de calidad del livestream e-commerce 2024
 
-Y no es un consumo pasivo. Según iiMedia Research, el 79,32 % de los usuarios de vídeo corto y livestream ha comprado dentro de la plataforma. Más del 55 % de los espectadores habituales compra al menos una vez al mes. Solo el 15,5 % dice mirar por puro entretenimiento, sin intención de comprar.
+Y no es un consumo pasivo. Según iiMedia Research, el 79,32 % de los usuarios de vídeo corto y livestream gasta dinero en esas plataformas. Y una encuesta de 2020 de la Asociación China de Consumidores halló que el 55,2 % de los compradores habituales en directo compra al menos una vez al mes.
 
-> Fuentes: iiMedia Research; Asociación China de Consumidores
+> El 79,32 % de los usuarios de vídeo corto y livestream gasta dinero en esas plataformas, y las compras suponen el 51,80 % de ese gasto.
+> Fuente: iiMedia Research (艾媒咨询), Encuesta 2025 sobre el comportamiento de consumo en vídeo corto y livestream en China, mayo de 2025. https://www.iimedia.cn/c400/105682.html
+
+> El 55,2 % de los compradores habituales en directo compra al menos una vez al mes, y el 90,8 %, al menos una vez cada tres meses.
+> Fuente: Asociación China de Consumidores (中国消费者协会), Encuesta de satisfacción del consumidor en las compras por livestream e-commerce (5.333 encuestados, febrero de 2020), marzo de 2020, reproducida íntegra por 100EC (网经社). https://www.100ec.cn/detail--6550827.html
 
 No es una moda. Es un cambio de fondo en cómo compran los chinos.
 
@@ -34,9 +39,12 @@ La respuesta fácil es «porque entretiene». Y algo hay de eso. Pero, si todo f
 
 ### 1. Ven el producto de verdad
 
-Cualquiera que haya comprado por internet a partir de una foto conoce el chasco de abrir el paquete y encontrarse algo que no se parece en nada al anuncio. El livestream corta eso de raíz. El presentador coge el producto, lo enseña, lo prueba, lo mide en directo. Según la encuesta de iiMedia Research, el 59,89 % de los compradores en livestream dice que lo prefiere al e-commerce clásico, sobre todo, porque la presentación del producto resulta más directa y creíble.
+Cualquiera que haya comprado por internet a partir de una foto conoce el chasco de abrir el paquete y encontrarse algo que no se parece en nada al anuncio. El livestream corta eso de raíz. El presentador coge el producto, lo enseña, lo prueba, lo mide en directo.
 
-La Asociación China de Consumidores apunta que las tres razones de fondo, que suman el 83,9 % de las respuestas, son estas: un ambiente de compra que envuelve, más interacción y la sensación de que el producto se ve más real y tangible.
+Una encuesta de 2020 de la Asociación China de Consumidores encontró tres razones detrás del 83,9 % de la preferencia por comprar en directo: la fiebre de compra que se vive en la sala, una interacción social más intensa y unos productos que se ven más reales y directos.
+
+> Tres razones explican, juntas, el 83,9 % de la preferencia por comprar en directo: la fiebre de compra, una interacción social más intensa y unos productos más reales y directos.
+> Fuente: Asociación China de Consumidores (中国消费者协会), Encuesta de satisfacción del consumidor en las compras por livestream e-commerce (5.333 encuestados, febrero de 2020), marzo de 2020, reproducida íntegra por 100EC (网经社). https://www.100ec.cn/detail--6550827.html
 
 ### 2. Obtienen respuesta al instante
 
@@ -48,21 +56,23 @@ En un directo, el comprador suelta sus preguntas en el chat y el presentador con
 
 ### 3. Los precios son, de verdad, más bajos
 
-No es solo una impresión. Las marcas reservan para el directo descuentos exclusivos, packs y cupones limitados que no aparecen en la ficha de producto de siempre. En la edición de 2024 del 618, las ventas en livestream llegaron a los 206.800 millones de yuanes, un 12,1 % más que el año anterior. Buena parte de ese empuje vino de compradores con el precio en la cabeza, al acecho de las ofertas que solo salen en directo.
+No es solo una impresión. Las marcas reservan para el directo descuentos exclusivos, packs y cupones limitados que no aparecen en la ficha de producto de siempre. En la edición de 2024 del 618, las ventas en livestream llegaron a los 206.800 millones de yuanes, según el recuento de Syntun.
 
-> Fuente: iiMedia Research
+> Las ventas del livestream e-commerce alcanzaron los 206.800 millones de yuanes en el 618 de 2024, con Douyin a la cabeza de las plataformas de directo.
+> Fuente: Securities Daily (证券日报), con datos de Syntun (星图数据), junio de 2024. https://finance.sina.com.cn/jjxw/2024-06-19/doc-inazhrmx7169177.shtml
 
 ### 4. Confían en el presentador
 
 Los mejores presentadores de China no son vendedores. Son divulgadores, asesores de confianza. Oriental Selection levantó su marca con antiguos profesores que explican el producto con humor, con fondo y con conocimiento de verdad. El espectador vuelve al mismo presentador no solo por la oferta, sino porque la relación se siente personal.
 
-Según esa misma encuesta, cerca del 70 % de los compradores en livestream dice que compra un producto si el presentador lo recomienda y le convence. Otro 22,7 % asegura que compra casi siempre que el presentador propone algo. A ver quién saca esas cifras de una ficha de producto.
+Según una encuesta de 2020 de la Asociación China de Consumidores, cerca del 70 % de los compradores en livestream dice que compra un producto si el presentador lo recomienda y le convence. Otro 22,7 % asegura que compra casi siempre que el presentador propone algo. A ver quién saca esas cifras de una ficha de producto.
+
+> Cerca del 70 % de los encuestados dijo comprar cuando el presentador recomienda algo que le gusta. Un 22,7 % compra casi siempre que el presentador se lo recomienda.
+> Fuente: Asociación China de Consumidores (中国消费者协会), Encuesta de satisfacción del consumidor en las compras por livestream e-commerce (5.333 encuestados, febrero de 2020), marzo de 2020, reproducida íntegra por 100EC (网经社). https://www.100ec.cn/detail--6550827.html
 
 ### 5. La prueba social ocurre en directo
 
-Cuando cientos de personas compran el mismo producto a la vez y el chat se llena de «acabo de pedirlo» o «el mío ya llegó», darle al botón de comprar cuesta mucho menos. Un estudio de la Universidad Tsinghua demostró que la «atmósfera de compra» de una sala de directo, fabricada con las transacciones a la vista y los comentarios entre iguales, es un motor propio de la compra por impulso. Las ventas relámpago, las cuentas atrás y el volumen de pedidos a la vista crean un miedo a quedarse fuera que el e-commerce estático no logra reproducir.
-
-> Fuente: Tsinghua SEM, Investigación sobre mecanismos de formación del impulso de compra en el consumidor de livestream
+Cuando cientos de personas compran el mismo producto a la vez y el chat se llena de «acabo de pedirlo» o «el mío ya llegó», darle al botón de comprar cuesta mucho menos. Las ventas relámpago, las cuentas atrás y el volumen de pedidos a la vista crean un miedo a quedarse fuera que el e-commerce estático no logra reproducir.
 
 ![Una joven descubriendo productos de belleza a través de un livestream de RedNote desde la cama](/images/blog/livestream-rednote-bed.webp)
 
@@ -70,14 +80,15 @@ Cuando cientos de personas compran el mismo producto a la vez y el chat se llena
 
 | Variable | Datos |
 |---|---|
-| Edad | Más del 80 % son millennials o Gen Z (nacidos después de 1980) |
+| Edad | Más del 80 % nació en los años ochenta o noventa |
 | Género | 64,6 % mujeres, 35,4 % hombres |
-| Geografía | 47,6 % en ciudades de primer nivel; fuerte crecimiento en niveles 3 y 4 |
-| Frecuencia | El 55,2 % compra al menos una vez al mes; el 90,8 % en cualquier ventana de tres meses |
-| Hábito | El 69,57 % son espectadores activos a largo plazo; media de 4-5 sesiones al día |
+| Geografía | 47,6 % en ciudades de primer nivel |
+| Frecuencia | El 55,2 % compra al menos una vez al mes; el 90,8 %, al menos una vez cada tres meses |
+| Hábito | El 69,57 % son espectadores activos a largo plazo; la franja más común es de 4 a 5 visionados al día (43,82 %) |
 | Intención de compra | El 52,5 % navega con una idea general; el 32 % tiene un objetivo de compra concreto |
 
-> Fuentes: iiMedia Research; Asociación China de Consumidores
+> Edad, género y geografía: encuesta de iiMedia a compradores en livestream. Hábito: encuesta de iiMedia a usuarios de vídeo corto y livestream. Frecuencia e intención de compra: encuesta de la Asociación China de Consumidores a 5.333 compradores en livestream, febrero de 2020.
+> Fuente: iiMedia Research (艾媒咨询), junio y mayo de 2025; Asociación China de Consumidores (中国消费者协会), marzo de 2020, vía 100EC (网经社). https://www.iimedia.cn/c1088/106477.html ; https://www.iimedia.cn/c400/105682.html ; https://www.100ec.cn/detail--6550827.html
 
 Conviene anotar un detalle: el público envejece. Los consumidores de la economía plateada (los mayores de 50) son hoy el segmento que más crece, con un gasto que avanza a un ritmo compuesto del 20,9 % anual en los últimos tres años.
 

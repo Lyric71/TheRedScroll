@@ -33,11 +33,11 @@ Dieser Leitfaden führt durch die Plattformen, auf die es ankommt. Zuerst die gr
 
 Chinas Markt für Online-Werbung wächst weiter, doch das einfache Wachstum ist vorbei. Marken jagen heute Präzision, nicht mehr bloß Reichweite. Das Geld fließt in Kurzvideo, E-Commerce und soziale Netzwerke.
 
-KI durchdringt alles. Chinas AIGC-Markt erreichte 2025 rund 25,7 Milliarden RMB, etwa 3,5 Milliarden US-Dollar, und wächst um mehr als 50 Prozent im Jahr. Über die Hälfte der chinesischen Werbetreibenden setzt KI inzwischen irgendwo in der kreativen Arbeit ein.
+KI durchdringt alles. Chinas AIGC-Markt soll bis 2028 auf 276,7 Milliarden RMB wachsen. Allein für das KI-Marketing wurden 2025 rund 66,9 Milliarden RMB erwartet. Über die Hälfte der chinesischen Werbetreibenden setzt KI inzwischen irgendwo in der kreativen Arbeit ein.
 
-> 2025年中国AIGC核心产业规模约257亿元，预计2027年迎来增速拐点。
+> 中国AIGC市场规模将在2028年攀升至2767亿元。AI营销行业2025年预计市场规模达669亿元。
 >
-> Chinas AIGC-Kernindustrie erreichte 2025 rund 25,7 Milliarden RMB, ein Wendepunkt im Wachstum wird für 2027 erwartet. Quelle: 量子位智库 / QbitAI Think Tank, 2025.
+> Chinas AIGC-Markt soll bis 2028 auf 276,7 Milliarden RMB steigen. Für den Sektor KI-Marketing wurden 2025 rund 66,9 Milliarden RMB erwartet. Quelle: 微播易 / Weiboyi und 中国商务广告协会AI营销委员会 / KI-Marketing-Komitee der China Commercial Advertising Association, Mai 2025.
 
 ![Diagramm des geschlossenen Modells: von der Entdeckung über den Inhalt bis zur Kasse innerhalb einer App](/images/blog/closed-loop-diagram.webp)
 

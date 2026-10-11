@@ -4,6 +4,7 @@ description: "Über 53 % der chinesischen Werbetreibenden produzieren ihre Inhal
 metaTitle: "KI-Content auf Chinas Plattformen"
 metaDescription: "Mehr als jeder zweite Werbetreibende in China nutzt KI für seine Inhalte. Wie AIGC das Marketing auf Douyin, WeChat und RedNote neu prägt."
 publishDate: 2026-04-06
+updatedDate: 2026-10-11
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Content"
@@ -12,11 +13,14 @@ featured: true
 featuredImage: "/images/blog/aigc-content-factory.webp"
 ---
 
-*Mehr als jeder zweite chinesische Werbetreibende produziert seine Inhalte bereits mit Hilfe von KI. Der Markt dürfte sich bis 2028 mehr als verzehnfachen, von 25,7 Milliarden Yuan im Jahr 2025 auf 276,7 Milliarden Yuan (Weiboyi und Chinesischer Werbeverband). Ihre Marke dürfte den Anschluss verpasst haben.*
+*Mehr als jeder zweite chinesische Werbetreibende produziert seine Inhalte bereits mit Hilfe von KI. Bis 2028 soll Chinas AIGC-Markt auf 276,7 Milliarden Yuan anwachsen (Weiboyi und das KI-Marketing-Komitee der China Commercial Advertising Association, Mai 2025). Ihre Marke dürfte den Anschluss verpasst haben.*
 
 ## Die Zahlen
 
-25,7 Milliarden Yuan. Auf diese Größe beziffert eine Erhebung von Weiboyi und dem chinesischen Werbeverband den Markt für KI-generierte Inhalte (AIGC) in China im Jahr 2025. Die Hochrechnung bis 2028: 276,7 Milliarden Yuan. Eine Verzehnfachung in knapp drei Jahren. Wenige Branchen verzeichnen eine vergleichbare Kurve.
+Der Markt für KI-generierte Inhalte (AIGC) wächst in China rasant. Das Marketing zählt zu den ersten Feldern, in die das Geld fließt.
+
+> Chinas AIGC-Markt soll bis 2028 auf 276,7 Milliarden Yuan wachsen. Allein für das KI-Marketing wurde für 2025 ein Volumen von 66,9 Milliarden Yuan erwartet.
+> Quelle: Weiboyi (微播易) und das KI-Marketing-Komitee der China Commercial Advertising Association (中国商务广告协会AI营销委员会), Mai 2025. https://m.bjnews.com.cn/detail/1747829414129325.html
 
 Das ergänzt der KI-Marketing-Bericht 2026 von Douban um die fehlenden Konturen. 53,1 Prozent der chinesischen Werbetreibenden haben AIGC in ihre kreative Produktion eingebunden. Jeder Fünfte setzt sie für mehr als die Hälfte seiner Videos ein. KI-gesteuerte Kampagnen haben sich 2025 verdoppelt und stehen damit für 19,2 Prozent aller Marketingaktivitäten des Landes. Die Phase des Experimentierens liegt längst hinter uns.
 
@@ -26,11 +30,10 @@ Im Kern drei Dimensionen.
 
 **Tempo.** Bis zu 240 Inhalte in mehreren Formaten, produziert in Sekunden.
 
-> Ein Kurzvideo von einer Minute, gestern noch mit mehreren zehntausend Yuan kalkuliert, kostet heute kaum 500 Yuan.
+> Laut dem KI-Marketing-Leitfaden 2025 von Weiboyi lassen sich die Kosten eines einminütigen Kurzvideos mit KI auf nur noch 500 Yuan drücken.
+> Quelle: Weiboyi (微播易) und das KI-Marketing-Komitee der China Commercial Advertising Association (中国商务广告协会AI营销委员会), Mai 2025. https://m.bjnews.com.cn/detail/1747829414129325.html
 
-> Quelle: Beijing News, mit Verweis auf den Weiboyi-Bericht
-
-Für eine Marke mittlerer Größe verschiebt dieses neue Kosten-Nutzen-Verhältnis das gesamte Bild. Formate, die bisher unerreichbar waren, rücken auf einmal in den Bereich des Machbaren.
+Ein Kostenniveau wie dieses verschiebt für Marken jeder Größe das gesamte Bild. Formate, die bisher unerreichbar waren, rücken auf einmal in den Bereich des Machbaren.
 
 ![Ein KI-Werkzeug zur Inhaltserzeugung zeigt eine Rasteransicht produzierter Bilder zur Stapelauswahl](/images/blog/aigc-batch-grid.webp)
 

@@ -4,6 +4,7 @@ description: "Los KOL dan notoriedad; los KOC, confianza. Cómo combinarlos, qu�
 metaTitle: "KOL o KOC en China: guía para marcas"
 metaDescription: "¿KOL o KOC? Comisiones, seguidores falsos y el modelo de pirámide que funciona. Guía práctica para marcas en China."
 publishDate: 2026-04-03
+updatedDate: 2026-10-11
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Estrategia"
@@ -60,11 +61,12 @@ Perfect Diary la puso de moda entre 2020 y 2021. Según GrowthBox, su inversión
 
 Cada capa hace algo distinto. Los KOL top abren la conversación y disparan el primer pico de atención. Los de gama media entran a fondo en nichos concretos de producto. Y los KOC llenan las comunidades de contenido auténtico y dan al comprador indeciso el empujón final.
 
-Desde entonces el modelo ha cambiado. En 2025, la capa intermedia se ha vuelto la pieza clave. En el Doble 11, los presentadores de gama media con ventas anuales de entre 1.000 y 10.000 millones de yuanes aportaron el 45 % del GMV total del live commerce, con un ROI medio por sesión de 1:8.
+Desde entonces el modelo ha cambiado. En 2025, la capa intermedia se ha vuelto la pieza clave.
 
-> Fuente: 100EC.cn, Informe de datos Doble 11 2025
+> En el Doble 11 de 2025, los presentadores de gama media, con ventas anuales de entre 100 y 1.000 millones de yuanes, aportaron el 45 % del GMV del live commerce, con un ROI medio por sesión de 1:8. Los grandes presentadores, con más de 1.000 millones en ventas anuales, vieron caer su cuota del 32 % de 2024 al 30 %.
+> Fuente: 100EC (网经社), noviembre de 2025. https://www.100ec.cn/detail--6654028.html
 
-Mientras, la cuota de los mega-KOL bajó del 32 % al 30 %: las plataformas empujan a propósito hacia un reparto del tráfico más descentralizado.
+100EC lo atribuye a dos causas: las plataformas reparten el tráfico lejos de la cima y las marcas recelan de depender de unos pocos nombres grandes.
 
 Hoy, el mejor retorno está en el centro de la pirámide.
 
@@ -93,9 +95,8 @@ Las comisiones cambian según la categoría. Belleza y cuidado de la piel se mue
 
 Uno de los grandes giros de 2025: las marcas montan su propio livestream en vez de depender por completo de KOL externos.
 
-En el Doble 11 de 2025, la emisión propia supuso el 40 % del GMV total del live commerce, ocho puntos más que en 2024. Anta, L'Oréal o Xiaomi tienen equipos internos de livestream de más de 50 personas emitiendo a diario.
-
-> Fuente: 100EC.cn
+> En el Doble 11 de 2025, la emisión propia de las marcas supuso el 40 % del GMV del live commerce, ocho puntos más que en 2024. Anta, L'Oréal y Xiaomi han montado su emisión propia, a diario y en las grandes campañas, y esos equipos suelen superar las 50 personas.
+> Fuente: 100EC (网经社), noviembre de 2025. https://www.100ec.cn/detail--6654028.html
 
 Algunas marcas ya ingresan más por sus propios directos que por todas sus colaboraciones con KOL juntas.
 

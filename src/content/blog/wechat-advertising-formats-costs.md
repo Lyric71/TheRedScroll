@@ -4,7 +4,7 @@ description: "WeChat advertising runs across Moments, Official Accounts, Channel
 metaTitle: "WeChat ads: every format and what they cost"
 metaDescription: "WeChat has six ad formats and three pricing models. Here is what each placement costs and how international brands should plan their first campaign."
 publishDate: 2026-04-05
-updatedDate: 2026-10-05
+updatedDate: 2026-10-11
 author: "TheRedScroll"
 platforms: ["wechat"]
 category: "Platforms"
@@ -51,34 +51,29 @@ WeChat uses three pricing models. The right one depends mostly on how much you w
 
 ### CPM: pay per 1,000 impressions
 
-The most common model for Moments ads and brand campaigns. Rates vary by city tier and by how you buy.
+The most common model for Moments ads and brand campaigns. Rates vary by city tier and by how you buy. Tencent prices scheduled buys at its rate card, which it does not publish.
 
-| City tier | Scheduled CPM | Bidding CPM range |
+| City tier | Scheduled buy | Bidding buy |
 |---|---|---|
-| Core (Beijing, Shanghai) | Around 150 yuan per thousand | Not open to bidding |
-| Key (Guangzhou, Shenzhen, Chengdu, Hangzhou and 18 others) | Around 100 yuan per thousand | Not open to bidding |
-| Standard (all other cities) | Around 50 yuan per thousand | 30-200 yuan per thousand |
+| Core cities | Rate-card CPM, from 50,000 yuan per placement | Not open to bidding |
+| Key cities | Rate-card CPM, from 50,000 yuan per placement | Not open to bidding |
+| Other cities | Rate-card CPM, from 50,000 yuan per placement | From 30 yuan CPM and 1,000 yuan a day |
 
-Bidding is open only in the standard group. In core and key cities, Moments ads are bought on schedule.
+Bidding is open only in other cities. In core and key cities, Moments ads are bought on schedule.
 
 > Moments bidding buys are open only in other cities; core and key cities are not supported. Bidding applies to the image-and-text format only.
 > Source: Tencent Ads (腾讯广告), WeChat advertising product page, confirmed October 2026. https://e.qq.com/topic/marketing/industry/weixin/
 
-Video ads cost roughly 30-50% more than image ads at the same impression level. For context, Douyin's paid traffic CPM through Ocean Engine runs 30-60 yuan, but that is for amplification of existing content, not native feed placement. WeChat Moments CPM is higher because you are buying placement inside a personal social feed with much higher trust signals.
-
-> Source: Zhihu, industry benchmarks
-
 ### CPC: pay per click
 
-Common for Official Account article ads and Mini Program banners. The floor is low: article-bottom ads start at around 0.5 yuan per click. But Moments CPC is a different story, running 2-20 yuan depending on how tight your targeting is and how many other brands are bidding for the same audience. For comparison, Baidu search ads average 2-15 yuan per click. The difference is that WeChat clicks come from users in a social context, not a search context. That changes how you should think about what a click is worth.
+Common for Official Account article ads and Mini Program banners. The floor is low: each ad's bid starts at 0.5 yuan per click. Above that floor, you pay the next ad's bid weighted by both ads' quality scores, plus 0.01 yuan. A better ad pays less for the same click. WeChat clicks come from users in a social context, not a search context. That changes how you should think about what a click is worth.
 
-> Source: Yiban, Zhihu
+> WeChat ads bill per click, and each ad's bid starts at 0.5 yuan. Each click costs the next ad's bid times its quality score, divided by this ad's quality score, plus 0.01 yuan.
+> Source: Tencent customer service (腾讯客服), advertiser FAQ "How ads are charged", confirmed October 2026. https://kf.qq.com/faq/170522aAN3A3170522BBBNZZ.html
 
 ### oCPM: smart bidding
 
-WeChat's AI-powered model. You set a target conversion cost and the system adjusts your bid in real time to reach users most likely to take action. In 2025, Tencent added new AI bidding tools that cut costs by an estimated 10-15% compared to manual bidding. Once you have enough conversion data flowing in, most advertisers on WeChat gradually shift to oCPM. It takes a few weeks to build up the data the algorithm needs, but after that it tends to outperform manual bidding consistently.
-
-> Source: Yiban
+WeChat's AI-powered model. You set a target conversion cost and the system adjusts your bid in real time to reach users most likely to take action. It needs conversion data to learn. Start on CPM or CPC, then move to oCPM once conversions are flowing in.
 
 ## Minimum spend: what you actually need to start
 
@@ -87,7 +82,7 @@ This is where a lot of brands get tripped up. The minimums depend entirely on yo
 | Buying method | Minimum |
 |---|---|
 | Scheduled buy | 50,000 yuan per campaign (around $7,000) |
-| Bidding buy | 1,000 yuan per day budget, 30 yuan CPM; standard cities only |
+| Bidding buy | 1,000 yuan per day budget, 30 yuan CPM; other cities only |
 | Local promotion | 1,000 yuan per day (around $140), no 50,000 yuan threshold |
 
 The 50,000 yuan scheduled buy is designed for larger brand pushes. You lock in guaranteed impressions 5 to 28 days in advance. Think product launches, seasonal campaigns, or major events. It is a "pay now, guarantee eyeballs" model.
@@ -106,15 +101,9 @@ Local promotion starts at 1,000 yuan per day (around $140). That's the same dail
 
 ## Practical things nobody tells you
 
-**Creative review is strict and slow.** WeChat rejects ads with exaggerated claims, unverified statistics, health promises without government certification, or anything that encourages sharing or forwarding. Review takes 1-2 business days. Build that into your campaign timeline or you will miss your launch window.
+**Creative review is strict and slow.** WeChat rejects ads with exaggerated claims, unverified statistics, health promises without government certification, or anything that encourages sharing or forwarding. Build review time into your campaign timeline or you will miss your launch window.
 
 **Moments ads compete with real people.** This is not a banner on a website. Your ad shows up between photos of someone's kid and their coworker's vacation. If it does not look and feel like something a person would actually post, people will scroll past in half a second.
-
-**One creative swap per campaign.** WeChat allows you to update your Moments ad creative up to three times per month, but each change goes through review again. Plan your creative upfront.
-
-**Peak hours cost more.** Bidding during evening prime time (7-9 PM) costs 20-40% more than off-peak. If your budget is tight, test daytime slots first.
-
-> Source: Aiyong Tech
 
 ## The bottom line
 

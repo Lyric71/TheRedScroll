@@ -1,9 +1,10 @@
 ---
 title: "Douyin social commerce: hard to profit, still the best way in"
-description: "Most brands lose money on Douyin in year one. But no other platform gives you access to 800 million Chinese consumers this fast."
+description: "Most brands lose money on Douyin in year one. But no other platform gives you access to more than a billion monthly users this fast."
 metaTitle: "Is Douyin profitable? What brands need to know"
 metaDescription: "Most brands lose money on Douyin. High ad costs, return rates above 60%, thin ROI. But it is still the fastest way to test the China market."
 publishDate: 2026-04-06
+updatedDate: 2026-10-11
 author: "TheRedScroll"
 platforms: ["douyin"]
 category: "Platforms"
@@ -18,7 +19,9 @@ featuredImage: "/images/blog/douyin-control-room.webp"
 
 > Most brands do not make money on Douyin in year one. That includes major Chinese companies with serious budgets.
 
-According to an analysis published on Zhihu, Bluemoon, one of the country's biggest household brands, worked with over 3,000 influencers and spent 40 million yuan on paid traffic. The ROI never balanced. Baixiang, a noodle brand that blew up as a "patriotic" favorite, had the same issue. Lots of investment, not much coming back.
+Even the specialists run thin margins. Yowant, a listed live commerce company, lifted its social commerce gross margin from 2.08% to 5.53% in 2025.
+
+> Source: Yowant (遥望科技), 2025 annual report, Shenzhen Stock Exchange, April 2026. https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-04-28/c6762ed2-b22f-4e6a-93c3-681d924ba0ed.PDF
 
 So what is going on? A few things.
 
@@ -26,12 +29,15 @@ So what is going on? A few things.
 
 | Cost driver | What it looks like |
 |---|---|
-| Ad spend | Getting traffic means paying for it. CPM for organic KOL content runs 200-300 yuan. Paid amplification via Ocean Engine drops to 30-60 yuan, but you need a lot of volume to move product. |
-| Content ROI | KOL content ROI without paid boost is now below 0.3 for most categories. For every yuan a brand puts into influencer content, the direct return is less than 30 cents. |
-| Return rates | In fashion, returns average around 65%. One brand owner reported that 6-7 out of every 10 orders come back as returns. Each costs around 8 yuan in packaging and reshipping, and that is before the ad money. |
-| Platform fees | Technical service fees: 2-5%. Influencer commissions: 20-50%. Plus shipping insurance, deposits, and ad spend on top. |
+| Ad spend | Getting traffic means paying for it. Expect to buy reach through Ocean Engine, and you need a lot of volume to move product. |
+| Return rates | During Double 11 2025, China's overall e-commerce return rate hit 61.5%, and apparel livestreams topped 80%. Each returned women's garment costs about 20 to 32 yuan in combined losses, and that is before the ad money. |
+| Platform fees | Base technical service fees in 2026: 5% for apparel, 4% for facial care, 6% for cross-border apparel. Creator commissions on open plans: 5% to 50%, set by the merchant. Plus shipping insurance, deposits, and ad spend on top. |
 
-> Source: Qinggua Media, Digitaling, Ebrun, Youzan
+> China's overall e-commerce return rate was 61.5% during Double 11 2025, and apparel livestreaming returns topped 80%. Each returned women's garment costs about 20 to 32 yuan in combined losses.
+> Source: CCTV News (央视新闻), carried by Beijing Daily (京报网), January 2026; Beijing News (新京报), June 2025. https://news.bjd.com.cn/2026/01/11/11517038.shtml ; https://m.bjnews.com.cn/detail/1750036716129261.html
+
+> Douyin's 2026 base technical service fee is 5% for apparel and 4% for facial care, and 6% for cross-border apparel. Merchants set open creator commissions between 5% and 50%.
+> Source: Douyin E-commerce Learning Center (抖音电商学习中心), fee schedules updated July 2026 and affiliate rules effective August 2026. https://school.jinritemai.com/doudian/web/article/aHijyoJA6hvb ; https://school.jinritemai.com/doudian/web/article/aHMYyFoqESKn ; https://school.jinritemai.com/doudian/web/article/112620
 
 ![A consumer watching a Douyin livestream shopping session on her phone](/images/blog/douyin-phone-buyer.webp)
 
@@ -39,17 +45,20 @@ So what is going on? A few things.
 
 All of that said, Douyin remains the fastest way into China's consumer market with the lowest upfront commitment.
 
-**Compared to Tmall Global,** where brands need ICP filing support, bonded warehouse logistics, deposits, and ongoing annual fees before a single product ships, Douyin lets you start with content. A few short videos, a small KOL seeding campaign, and a basic Douyin Shop. That is it. New merchants get full commission waivers in month one.
+**Compared to Tmall Global,** where brands need ICP filing support, bonded warehouse logistics, deposits, and ongoing annual fees before a single product ships, Douyin lets you start with content. A few short videos, a small KOL seeding campaign, and a basic Douyin Shop. That is it. In 2026, shops that complete monthly tasks also get the fee on Douyin Mall product-card orders cut to 0.6%, or 1% for cross-border goods.
 
-> Source: Ebrun, cited in Sina Finance
+> In 2026, shops that sign up and complete monthly tasks get the fee on Douyin Mall product-card orders refunded down to 0.6% for domestic goods and 1% for cross-border goods. Livestream and short-video orders do not qualify.
+> Source: Douyin E-commerce Learning Center (抖音电商学习中心), 2026 product-card rebate policy, updated October 2026. https://school.jinritemai.com/doudian/web/article/aJcQ5pzG2Vk4
 
-**The reach is unmatched.** 800 million daily active users. Douyin's GMV reached approximately 3.5 trillion yuan in 2024, growing 35% year-over-year, and now holds roughly 24% of China's e-commerce market.
+**The reach is unmatched.** Douyin had about 1.03 billion monthly active users in June 2026. Its e-commerce GMV reached about 3.43 trillion yuan in 2024, up 35%, and grew more than 30% in the first ten months of 2025.
 
-> Source: Sina Finance, citing Goldman Sachs forecast
+> Douyin had about 1.03 billion monthly active users in June 2026, per QuestMobile. Douyin e-commerce GMV was about 3.43 trillion yuan in 2024, up 35%. It grew more than 30% in the first ten months of 2025, on track to pass 4 trillion yuan.
+> Source: Sina Finance (新浪财经), reporting QuestMobile, August 2026; 21st Century Business Herald (21世纪经济报道), January 2026. https://finance.sina.com.cn/tech/discovery/2026-08-04/doc-inimcxxp2069391.shtml ; https://www.21jingji.com/article/20260130/herald/50ea314a64d44c9664cf2c6a0132a9cc.html
 
-**The platform is lowering the cost floor.** Douyin introduced nine merchant support policies in 2025. Nearly 100 categories now have reduced or zero commissions. Ad spend refunds apply to fully returned orders. As of August 2025, Douyin had pushed over 19 billion yuan in subsidies back to merchants.
+**The platform is lowering the cost floor.** Douyin launched nine merchant support policies in early 2025 and says they saved merchants more than 32 billion yuan that year. For 2026, it extended commission waivers to every category and now cuts ad fees directly on eligible orders. It put second-quarter 2026 savings at more than 10 billion yuan.
 
-> Source: 36Kr
+> Douyin says the nine merchant support policies it first launched in early 2025 saved merchants more than 32 billion yuan over the past year. Its 2026 upgrade extends commission waivers to all categories, from product cards to content, and cuts ad fees directly on eligible orders. Douyin put second-quarter 2026 savings at more than 10 billion yuan.
+> Source: China National Radio (央广网), January 2026; Securities Times (证券时报) via Sina Finance (新浪财经), July 2026. https://www.cnr.cn/mspd/zhsh/20260108/t20260108_527487292.shtml ; https://finance.sina.cn/stock/jdts/2026-07-14/detail-inihtvuk5362765.d.html?oid=800&vt=4&cid=76993&node_id=76993
 
 **The real value is market intelligence.** Even if you do not profit in month three, you walk away with live consumer feedback on your product, pricing, and positioning.
 

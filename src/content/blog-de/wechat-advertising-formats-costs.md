@@ -4,7 +4,7 @@ description: "Auf WeChat reicht die Werbung von Moments über Official Accounts 
 metaTitle: "WeChat-Werbung: Formate und Preise"
 metaDescription: "Sechs Werbeplätze, drei Preismodelle. Kosten je Format und konkrete Hinweise für die erste WeChat-Kampagne."
 publishDate: 2026-04-05
-updatedDate: 2026-10-05
+updatedDate: 2026-10-11
 author: "TheRedScroll"
 platforms: ["wechat"]
 category: "Plattformen"
@@ -51,34 +51,29 @@ Die Wahl hängt von Einsatzbereitschaft und Ziel ab.
 
 ### CPM: Bezahlung je 1.000 Einblendungen
 
-Das verbreitetste Modell für Moments und Bekanntheitskampagnen. Die Tarife schwanken nach Stadtrang und Einkaufsmodus.
+Das verbreitetste Modell für Moments und Bekanntheitskampagnen. Die Tarife schwanken nach Stadtrang und Einkaufsmodus. Im Direkteinkauf gilt die Preisliste von Tencent, und die veröffentlicht der Konzern nicht.
 
-| Stadtrang | CPM im Direkteinkauf | CPM im Bieten |
+| Stadtrang | Direkteinkauf | Bietverfahren |
 |---|---|---|
-| Hauptstädte (Peking, Shanghai) | rund 150 Yuan pro tausend | Kein Bietverfahren |
-| Schlüsselstädte (Guangzhou, Shenzhen, Chengdu, Hangzhou und 18 weitere) | rund 100 Yuan pro tausend | Kein Bietverfahren |
-| Übrige Städte | rund 50 Yuan pro tausend | 30 bis 200 Yuan pro tausend |
+| Hauptstädte | CPM nach Preisliste, ab 50.000 Yuan je Platzierung | Kein Bietverfahren |
+| Schlüsselstädte | CPM nach Preisliste, ab 50.000 Yuan je Platzierung | Kein Bietverfahren |
+| Übrige Städte | CPM nach Preisliste, ab 50.000 Yuan je Platzierung | Ab 30 Yuan CPM und 1.000 Yuan am Tag |
 
 Das Bietverfahren steht nur in den übrigen Städten offen. In Haupt- und Schlüsselstädten wird Moments im Direkteinkauf gebucht.
 
 > Käufe im Bietverfahren sind bei Moments nur in den übrigen Städten möglich; Haupt- und Schlüsselstädte werden nicht unterstützt. Das Bietverfahren gilt ausschließlich für das Bild-Text-Format.
 > Quelle: Tencent Ads (腾讯广告), Produktseite WeChat-Werbung, geprüft im Oktober 2026. https://e.qq.com/topic/marketing/industry/weixin/
 
-Video kostet bei gleichem Einblendungsvolumen 30 bis 50 Prozent mehr als Bild. Zur Einordnung: Der CPM für bezahlte Douyin-Reichweite über Ocean Engine bewegt sich zwischen 30 und 60 Yuan, betrifft jedoch die Verstärkung bestehender Inhalte, nicht eine native Platzierung im persönlichen Feed. Der höhere Moments-CPM rechtfertigt sich, weil man einen Platz in einem intimen sozialen Feed kauft, mit Vertrauenssignalen, die anderswo nicht zu haben sind.
-
-> Quelle: Zhihu, Branchenwerte
-
 ### CPC: Bezahlung je Klick
 
-Das bevorzugte Modell für Article Ads und Mini-Program-Banner. Die Untergrenze ist niedrig: rund 0,5 Yuan pro Klick am Artikelende. In den Moments sieht es anders aus: 2 bis 20 Yuan, je nach Targeting-Tiefe und Wettbewerb um die Zielgruppe. Zur Einordnung: Baidu Search verrechnet im Schnitt 2 bis 15 Yuan pro Klick. Der Unterschied? Ein WeChat-Klick kommt aus einem sozialen Kontext, ein Baidu-Klick aus aktiver Suche. Beide lassen sich nicht über einen Kamm scheren.
+Das bevorzugte Modell für Article Ads und Mini-Program-Banner. Die Untergrenze ist niedrig: Jedes Gebot beginnt bei 0,5 Yuan pro Klick. Darüber zahlen Sie das Gebot der nächstplatzierten Anzeige, gewichtet mit den Qualitätswerten beider Anzeigen, plus 0,01 Yuan. Wer die bessere Anzeige schaltet, zahlt für denselben Klick weniger. Ein WeChat-Klick entsteht im sozialen Umfeld, nicht in einer Suche. Das verändert die Rechnung, was ein Klick wert ist.
 
-> Quelle: Yiban, Zhihu
+> WeChat-Anzeigen werden pro Klick abgerechnet, jedes Gebot beginnt bei 0,5 Yuan. Ein Klick kostet das Gebot der nächsten Anzeige mal deren Qualitätswert, geteilt durch den Qualitätswert der eigenen Anzeige, plus 0,01 Yuan.
+> Quelle: Tencent-Kundenservice (腾讯客服), FAQ für Werbekunden „Wie Anzeigen abgerechnet werden“, geprüft im Oktober 2026. https://kf.qq.com/faq/170522aAN3A3170522BBBNZZ.html
 
 ### oCPM: KI-gesteuertes Bieten
 
-Sie setzen einen Ziel-Konversionspreis, das System passt das Gebot in Echtzeit an, um die Nutzer mit der höchsten Abschlusswahrscheinlichkeit zu erreichen. 2025 haben die neuen KI-Biet-Werkzeuge von Tencent die Kosten gegenüber manuellem Bieten um 10 bis 15 Prozent gesenkt. In der Praxis wechseln die meisten WeChat-Werber auf oCPM, sobald genügend Konversionsdaten vorliegen. Rechnen Sie mit einigen Wochen, bis der Algorithmus Material zum Lernen hat. Anschließend schlägt er den manuellen Modus regelmäßig.
-
-> Quelle: Yiban
+Sie setzen einen Ziel-Konversionspreis, das System passt das Gebot in Echtzeit an, um die Nutzer mit der höchsten Abschlusswahrscheinlichkeit zu erreichen. Zum Lernen braucht das System Konversionsdaten. Starten Sie deshalb mit CPM oder CPC und wechseln Sie auf oCPM, sobald Konversionen eingehen.
 
 ## Das Mindestbudget (das viele aufhorchen lässt)
 
@@ -106,15 +101,9 @@ Die lokale Werbung beginnt bei 1.000 Yuan pro Tag (rund 130 €) und liegt damit
 
 ## Was man Ihnen selten sagt
 
-**Die kreative Freigabe ist streng.** Und zeitaufwendig. WeChat lehnt überzogene Aussagen, unbelegte Statistiken, Gesundheitsversprechen ohne behördliche Zertifizierung sowie jede Aufforderung zum Teilen oder Weiterleiten kategorisch ab. Planen Sie ein bis zwei Werktage ein. Wer das nicht im Zeitplan hat, riskiert das Startfenster.
+**Die kreative Freigabe ist streng.** Und zeitaufwendig. WeChat lehnt überzogene Aussagen, unbelegte Statistiken, Gesundheitsversprechen ohne behördliche Zertifizierung sowie jede Aufforderung zum Teilen oder Weiterleiten kategorisch ab. Wer die Prüfzeit nicht im Zeitplan hat, riskiert das Startfenster.
 
 **Ihre Anzeigen konkurrieren mit echten Menschen.** Es ist kein Werbebanner auf einer Website. Ihre Anzeige steht zwischen dem Foto vom Sohn eines Freundes und dem Urlaub eines Kollegen. Wenn sie nicht ins Bild passt, wird sie übersehen.
-
-**Drei Motivwechsel pro Monat, nicht mehr.** Jede Änderung läuft erneut durch die Freigabe. Halten Sie Ihre Motive im Voraus bereit.
-
-**Die Hauptzeit kostet.** Gebote zwischen 19 und 21 Uhr liegen 20 bis 40 Prozent über den Tagesrandstunden. Bei knappem Budget zuerst die Tagesfenster testen.
-
-> Quelle: Aiyong Tech
 
 ## Kurz und bündig
 

@@ -4,6 +4,7 @@ description: "KOL bauen Bekanntheit auf, KOC schaffen Vertrauen. Wie Sie beide k
 metaTitle: "KOL gegen KOC in China: Influencer-Guide"
 metaDescription: "KOL oder KOC? Vergütungsmodelle, Risiko gefälschter Follower und die Pyramidenstrategie, die funktioniert. Praxisleitfaden für Marken in China."
 publishDate: 2026-04-03
+updatedDate: 2026-10-11
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Strategie"
@@ -56,15 +57,16 @@ Auf Werkzeugseite liefern Pugongying auf Xiaohongshu und Xingtu auf Douyin Authe
 
 Was in China funktioniert, ruht auf einer Schichtung. Im Fachjargon spricht man vom „Pyramidenmodell“.
 
-Perfect Diary hat diese Architektur um 2020–2021 populär gemacht. Daten von GrowthBox zufolge verteilte die Marke ihre Influencer-Investitionen auf Xiaohongshu damals so: 1 Prominenter, 1 Spitzen-KOL, 3 hochrangige Creator, 46 Mittelfeld-Stimmen, 100 Aufsteiger und 150 KOC.
+Perfect Diary hat diese Architektur um 2020 bis 2021 populär gemacht. Daten von GrowthBox zufolge verteilte die Marke ihre Influencer-Investitionen auf Xiaohongshu damals so: 1 Prominenter, 1 Spitzen-KOL, 3 hochrangige Creator, 46 Mittelfeld-Stimmen, 100 Aufsteiger und 150 KOC.
 
 Die Spitze der Pyramide stößt das Gespräch an. Das Mittelfeld vertieft das Thema in klar umrissenen Nischen. Die KOC verbreiten rohere Inhalte in ihren Communities und überzeugen die letzten Zögerer.
 
-Das Modell hat sich weiterentwickelt. 2025 ist die mittlere Schicht klar der Hebel. Beim Double 11-Festival standen Hosts mit Jahresumsätzen zwischen 1 und 10 Milliarden Yuan für 45 Prozent des gesamten Live-Verkaufsvolumens, bei einem durchschnittlichen ROI von 1 zu 8 pro Sitzung.
+Das Modell hat sich weiterentwickelt. 2025 ist die mittlere Schicht klar der Hebel.
 
-> Quelle: 100EC.cn, Datenbericht Double 11 2025
+> Am Double 11 2025 standen Hosts der mittleren Ebene mit Jahresumsätzen zwischen 100 Millionen und 1 Milliarde Yuan für 45 Prozent des Live-Commerce-GMV, bei einem durchschnittlichen ROI von 1:8 je Sitzung. Der Anteil der Top-Hosts mit mehr als 1 Milliarde Yuan Jahresumsatz sank von 32 Prozent im Jahr 2024 auf 30 Prozent.
+> Quelle: 100EC (网经社), November 2025. https://www.100ec.cn/detail--6654028.html
 
-Die Mega-KOL gehen von 32 auf 30 Prozent zurück. Die Plattformen verteilen die Reichweite bewusst breiter.
+100EC führt die Verschiebung auf zwei Gründe zurück: Die Plattformen lenken Reichweite von der Spitze weg, und die Marken scheuen die Abhängigkeit von wenigen großen Namen.
 
 Der beste Ertrag steckt heute in der Mitte der Pyramide.
 
@@ -93,9 +95,8 @@ Bei den Provisionen variieren die Sätze nach Kategorie: Beauty und Pflege 10 bi
 
 Einer der klarsten Trends 2025: Marken bauen eigene Live-Sendungen auf, statt sich vollständig auf externe KOL zu verlassen.
 
-Beim Double 11 2025 stand der markeneigene Livestream für 40 Prozent des gesamten Live-Verkaufsvolumens. Acht Punkte mehr als 2024. Anta, L'Oréal, Xiaomi stellen interne Teams von über 50 Personen, täglich auf Sendung.
-
-> Quelle: 100EC.cn
+> Am Double 11 2025 stand der markeneigene Livestream für 40 Prozent des Live-Commerce-GMV, acht Punkte mehr als 2024. Anta, L'Oréal und Xiaomi senden inzwischen selbst, im Alltag wie zu den großen Verkaufsaktionen. Ihre Teams zählen in der Regel mehr als 50 Personen.
+> Quelle: 100EC (网经社), November 2025. https://www.100ec.cn/detail--6654028.html
 
 Manche Marken erzielen heute über ihre eigenen Livestreams mehr Umsatz als über sämtliche KOL-Kooperationen zusammen.
 

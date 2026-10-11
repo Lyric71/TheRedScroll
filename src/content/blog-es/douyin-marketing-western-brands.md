@@ -14,10 +14,10 @@ featuredImage: "/images/blog/douyin-shoppable-video.webp"
 keyFacts:
   - "Douyin sumaba unos 1.030 millones de usuarios activos al mes en junio de 2026, según QuestMobile. Ocean Engine sigue hablando de más de 600 millones al día."
   - "El comercio electrónico de Douyin rozaba los 4 billones de yuanes en 2025, con un alza superior al 30 % interanual. Fuente: LatePost, noviembre de 2025."
-  - "La publicidad de pago en Ocean Engine baja el CPM a 30-60 yuanes, lejos de los 200-300 del contenido orgánico de KOL. Fuente: Qinggua Media, Digitaling, Ebrun, Youzan."
+  - "La tasa de devolución del comercio electrónico chino llegó al 61,5 % en el Double 11 de 2025. Fuente: CCTV News vía Beijing Daily, enero de 2026."
   - "Un gran KOL chino cobra entre 500.000 y 5 millones de yuanes por publicación. El KOC se mueve entre 200 y 5.000 yuanes."
-  - "Quien abre tienda nueva en Douyin Shop no paga comisión durante el primer mes. Fuente: Ebrun, citado en Sina Finance."
-  - "La retransmisión propia de las marcas copó el 40 % del GMV del comercio en directo en el Double 11 de 2025, 8 puntos más que un año antes. Fuente: 100EC.cn."
+  - "En 2026, Douyin Shop reembolsa la tarifa de los pedidos por ficha de producto de Douyin Mall hasta dejarla en el 0,6 %, o en el 1 % para productos transfronterizos, a las tiendas que cumplen sus tareas mensuales. Fuente: Douyin E-commerce Learning Center, octubre de 2026."
+  - "La retransmisión propia de las marcas copó el 40 % del GMV del comercio en directo en el Double 11 de 2025, 8 puntos más que un año antes. Fuente: 100EC, noviembre de 2025."
 ---
 
 *Lo que le funciona en TikTok no le sirve en Douyin. Aquí tiene lo que sí da resultado.*
@@ -32,7 +32,7 @@ Dentro de China, Douyin va mucho más allá de un muro de vídeos. Es uno de los
 
 Lo que marca la diferencia es el comercio. Su facturación de comercio electrónico apuntaba a rebasar los 4 billones de yuanes en 2025, con un crecimiento por encima del 30 % interanual.
 
-> Fuente: LatePost, noviembre de 2025.
+> Fuente: LatePost (晚点LatePost), publicado por China.com (中华网), noviembre de 2025. https://finance.china.com/TMT/13004688/20251121/49009672.html
 
 Así quedan las dos aplicaciones frente a frente para una marca.
 
@@ -75,9 +75,10 @@ Al arrancar pesan tres decisiones sobre las cuentas.
 
 **La cuenta oficial.** Es su casa de marca, ya verificada. Ahí viven los vídeos, los directos y la comunidad de seguidores.
 
-**La tienda.** Douyin Shop le deja vender dentro de la aplicación. Quien abre tienda nueva no paga comisión el primer mes, lo que rebaja el coste de la fase de prueba.
+**La tienda.** Douyin Shop le deja vender dentro de la aplicación. En 2026, las tiendas que cumplen sus tareas mensuales recuperan la mayor parte de la tarifa de los pedidos por ficha de producto, lo que rebaja el coste de la fase de prueba.
 
-> Fuente: Ebrun, citado en Sina Finance.
+> En 2026, las tiendas que se inscriben y cumplen sus tareas mensuales recuperan la tarifa de los pedidos por ficha de producto de Douyin Mall hasta dejarla en el 0,6 % para los productos nacionales y en el 1 % para los transfronterizos. Los pedidos de directos y de vídeos cortos quedan fuera.
+> Fuente: Douyin E-commerce Learning Center (抖音电商学习中心), política de reembolsos de 2026 para las fichas de producto, actualizada en octubre de 2026. https://school.jinritemai.com/doudian/web/article/aJcQ5pzG2Vk4
 
 **La cuenta de anuncios.** En Douyin, el tráfico de pago pasa por Ocean Engine, la plataforma publicitaria de ByteDance. Requiere su propia verificación.
 
@@ -97,7 +98,8 @@ Douyin premia tres formatos por encima de los demás.
 
 Un giro que conviene vigilar: la retransmisión propia de las marcas crece a toda velocidad. En el Double 11 de 2025 supuso el 40 % del GMV total del comercio en directo, 8 puntos más que en 2024.
 
-> Fuente: 100EC.cn.
+> En el Double 11 de 2025, la retransmisión propia de las marcas supuso el 40 % del GMV del comercio en directo, 8 puntos porcentuales más que en 2024.
+> Fuente: 100EC (网经社), centro de investigación del comercio electrónico, noviembre de 2025. https://www.100ec.cn/detail--6654028.html
 
 Para una marca occidental, la lectura es clara: no hace falta alquilar cada audiencia. Puede montar su propia sala de directo, gobernar su mensaje y proteger mejor el margen. A cambio, toca invertir de verdad: plató, presentadores, producción de contenido y gasto en anuncios para atraer espectadores.
 
@@ -111,9 +113,10 @@ El modelo de pago cambia según el escalón. El gran KOL cobra una tarifa fija m
 
 Las comisiones dependen de la categoría. Belleza y cosmética se mueven en el 10-25 %. Moda, en el 8-15 %. Electrónica, en el 3-8 %.
 
-Hoy, el mejor retorno está en el tramo medio de la pirámide. Durante el Double 11, los presentadores de nivel medio aportaron el 45 % del GMV total del comercio en directo, con un ROI medio por sesión de 1:8.
+Hoy, el mejor retorno está en el tramo medio de la pirámide. En el Double 11 de 2025, los presentadores de nivel medio aportaron el 45 % del GMV del comercio en directo, con un ROI medio por sesión de 1:8.
 
-> Fuente: 100EC.cn, informe de datos del Double 11 de 2025.
+> En el Double 11 de 2025, los presentadores de nivel medio, con ventas anuales de entre 100 y 1.000 millones de yuanes, aportaron el 45 % del GMV del comercio en directo, con un ROI medio por sesión de 1:8.
+> Fuente: 100EC (网经社), noviembre de 2025. https://www.100ec.cn/detail--6654028.html
 
 ![Una KOL de Douyin graba la reseña de un producto en su casa](/images/blog/douyin-kol-showcase.webp)
 
@@ -123,21 +126,24 @@ Un aviso: los seguidores falsos siguen campando por este mercado. Inflar una pub
 
 No hay una tarifa cerrada, pero las palancas de coste están a la vista.
 
-**El tráfico se paga.** El CPM del contenido orgánico de KOL ronda los 200-300 yuanes. La publicidad de pago en Ocean Engine lo rebaja a 30-60, aunque para mover producto hace falta volumen de verdad.
+**El tráfico se paga.** Cuente con comprar alcance en Ocean Engine, y para mover producto hace falta volumen de verdad.
 
-**El contenido de creadores rara vez se sostiene solo.** Sin empuje de pago, el ROI del contenido de KOL ya no llega a 0,3 en casi ninguna categoría. Por cada yuan que una marca pone en contenido de creadores, recupera de forma directa menos de 30 céntimos.
+**Las devoluciones se comen el margen.** En el Double 11 de 2025, la tasa de devolución del comercio electrónico chino llegó al 61,5 %, y en los directos de ropa pasó del 80 %. Cada prenda de mujer devuelta deja de 20 a 32 yuanes en pérdidas, y eso antes de sumar la publicidad.
 
-**Las devoluciones se comen el margen.** En moda se devuelve, de media, en torno al 65 %. Cada devolución cuesta unos 8 yuanes de embalaje y reenvío, y eso antes de sumar la publicidad.
+> La tasa de devolución del comercio electrónico chino fue del 61,5 % en el Double 11 de 2025, y en los directos de ropa superó el 80 %. Cada prenda de mujer devuelta acumula de 20 a 32 yuanes en pérdidas.
+> Fuente: CCTV News (央视新闻), publicado por Beijing Daily (京报网), enero de 2026; Beijing News (新京报), junio de 2025. https://news.bjd.com.cn/2026/01/11/11517038.shtml ; https://m.bjnews.com.cn/detail/1750036716129261.html
 
-**Las comisiones se acumulan.** La tasa técnica va del 2 al 5 %. La comisión del creador, del 20 al 50 %. Y encima, seguro de envío, fianzas y gasto en anuncios.
+**Las comisiones se acumulan.** En 2026, la tasa técnica básica de Douyin es del 5 % en ropa, del 4 % en cuidado facial y del 6 % en ropa transfronteriza. La comisión de los creadores en los planes abiertos va del 5 al 50 %, y la fija el comerciante. Y encima, seguro de envío, fianzas y gasto en anuncios.
 
-> Fuente: Qinggua Media, Digitaling, Ebrun, Youzan.
+> La tasa técnica básica de Douyin en 2026 es del 5 % para la ropa y del 4 % para el cuidado facial, y del 6 % para la ropa transfronteriza. El comerciante fija la comisión abierta de los creadores entre el 5 y el 50 %.
+> Fuente: Douyin E-commerce Learning Center (抖音电商学习中心), baremos de tarifas actualizados en julio de 2026 y normas de afiliación vigentes desde agosto de 2026. https://school.jinritemai.com/doudian/web/article/aHijyoJA6hvb ; https://school.jinritemai.com/doudian/web/article/aHMYyFoqESKn ; https://school.jinritemai.com/doudian/web/article/112620
 
-La plataforma, eso sí, está bajando el suelo de coste. En 2025, Douyin lanzó nueve medidas de apoyo al comerciante. Cerca de un centenar de categorías ya disfrutan de comisiones reducidas o a cero. Hasta agosto de 2025, la aplicación había devuelto a sus comerciantes más de 19.000 millones de yuanes en ayudas.
+La plataforma, eso sí, está bajando el suelo de coste. Douyin lanzó nueve medidas de apoyo al comerciante a principios de 2025 y asegura que ese año les ahorraron más de 32.000 millones de yuanes. Para 2026 extendió la exención de comisiones a todas las categorías, y cifra el ahorro del segundo trimestre en más de 10.000 millones.
 
-> Fuente: 36Kr.
+> Douyin afirma que las nueve medidas de apoyo al comerciante que lanzó a principios de 2025 les ahorraron más de 32.000 millones de yuanes en el último año. La versión de 2026 extiende la exención de comisiones a todas las categorías, de las fichas de producto al contenido, y rebaja directamente el gasto publicitario de los pedidos que cumplen los requisitos. Douyin cifró el ahorro del segundo trimestre de 2026 en más de 10.000 millones de yuanes.
+> Fuente: China National Radio (央广网), enero de 2026; Securities Times (证券时报) vía Sina Finance (新浪财经), julio de 2026. https://www.cnr.cn/mspd/zhsh/20260108/t20260108_527487292.shtml ; https://finance.sina.cn/stock/jdts/2026-07-14/detail-inihtvuk5362765.d.html?oid=800&vt=4&cid=76993&node_id=76993
 
-Con el presupuesto, mejor no engañarse. Casi ninguna marca gana dinero en Douyin durante el primer año. Según un análisis publicado en Zhihu, Bluemoon, uno de los mayores fabricantes chinos de productos para el hogar, trabajó con más de 3.000 creadores y volcó 40 millones de yuanes en tráfico de pago. Las cuentas nunca le salieron.
+Con el presupuesto, mejor no engañarse. Casi ninguna marca gana dinero en Douyin durante el primer año.
 
 No es razón para descartar Douyin. Es razón para echar los números antes de empezar.
 

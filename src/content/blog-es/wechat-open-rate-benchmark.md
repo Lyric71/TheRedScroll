@@ -207,7 +207,7 @@ Este es el orden que seguimos cuando heredamos una cuenta de WeChat (微信). So
 | 3 | Añadir una pieza útil y fácil de compartir; pedir a los lectores que marquen la cuenta con estrella | Reenvíos y nuevos seguidores |
 | 4 | Montar un vídeo de Channels a partir del mejor artículo; probar un anuncio pequeño en Moments | Lecturas totales y origen de los seguidores |
 
-Juzgue el mes por las lecturas totales y por los nuevos seguidores que se quedan, no solo por la tasa de apertura. [Nuestra página de agencia WeChat](/es/agencia-wechat/) explica cómo gestionamos las cuentas semana a semana, y [nuestro servicio de Estrategia, campañas y analítica](/es/servicios/estrategia-campanas/) se ocupa de los informes. [Nuestra página de precios](/es/precios/) detalla qué incluye cada paquete en WeChat. Para una visión de conjunto de todas las plataformas, lea [nuestro análisis sobre por qué su tasa de interacción en China no deja de caer](/es/analisis/china-engagement-rate-drop/).
+Juzgue el mes por las lecturas totales y por los nuevos seguidores que se quedan, no solo por la tasa de apertura. [Nuestra página de agencia WeChat](/es/agencia-wechat/) explica cómo llevamos las cuentas semana a semana, y [nuestro servicio de Estrategia, campañas y analítica](/es/servicios/estrategia-campanas/) se ocupa de los informes. [Nuestra página de precios](/es/precios/) detalla qué incluye cada paquete en WeChat. Para una visión de conjunto de todas las plataformas, lea [nuestro análisis sobre por qué su tasa de interacción en China no deja de caer](/es/analisis/china-engagement-rate-drop/).
 
 ## Preguntas frecuentes
 

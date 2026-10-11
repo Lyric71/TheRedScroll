@@ -4,7 +4,7 @@ description: "Die Aufteilung in 80 Prozent Mehrwert und 20 Prozent Verkauf stamm
 metaTitle: "Die 80/20-Content-Regel scheitert in China"
 metaDescription: "Auf Chinas Plattformen ist der Content das Geschäft, die 80/20-Regel greift nicht. Der richtige Mix für RedNote, Douyin und WeChat, mit Zahlen belegt."
 publishDate: 2026-07-13
-updatedDate: 2026-10-08
+updatedDate: 2026-10-11
 author: "TheRedScroll"
 platforms: ["rednote", "douyin", "wechat", "weibo"]
 category: "Strategie"
@@ -23,7 +23,7 @@ China folgt einer anderen Logik. Auf RedNote (小红书), Douyin (抖音) und We
 | -------------------------------- | --------------------------------------------------- |
 | Inhalt und Einkauf getrennt      | Der Kauf findet in der App statt, ohne Sie          |
 | 80 % Mehrwert, 20 % Werbung      | Eine Quote, auf die niemand reagiert                |
-| Die Markengeschichte zuerst      | Sie beginnen mit dem sechstwichtigsten Kaufkriterium |
+| Die Markengeschichte zuerst      | Sie stellen voran, was Käufer hinter das Produkt reihen |
 | Polierte Kreation gewinnt        | Mehr bezahlen, schlechter verkaufen                 |
 | Eine Quote für alle Plattformen  | Ein RedNote-Plan im Douyin-Feed                     |
 
@@ -47,46 +47,38 @@ Diese beiden Zahlen nebeneinander ergeben die gesamte Strategie. Die Menschen se
 
 ## Wie der richtige Mix wirklich aussieht
 
-Vergessen Sie die glatte 80/20-Formel. Auf RedNote gleicht die Quote, bei der die meisten Agenturen landen, eher einer Pyramide mit drei Ebenen. Sortiert wird danach, wer die Inhalte erstellt, nicht danach, wie werblich ein Beitrag ist.
+Vergessen Sie die glatte 80/20-Formel. Auf RedNote gleicht der Mix eher einer Pyramide mit drei Ebenen. Sortiert wird danach, wer die Inhalte erstellt, nicht danach, wie werblich ein Beitrag ist.
 
-> Der leistungsstärkste RedNote-Content-Mix 2026 liegt bei etwa 6:3:1. Rund 60 Prozent alltägliche KOC- und Nutzerbeiträge, 30 Prozent Rezensionen mittelgroßer KOL, 10 Prozent Inhalte des Markenkontos.
-> Quelle: Hashmeta, 2026
-
-Die Logik liegt auf der Hand. Die unteren 60 Prozent erzeugen echte Mundpropaganda, weil sie nicht wie die Marke klingen, die über sich selbst spricht. Die mittleren 30 Prozent liefern fachliche Glaubwürdigkeit. Nur die oberen 10 Prozent, das offizielle Konto, erinnern noch an klassische Markenkommunikation.
+Die Logik liegt auf der Hand. Die breite Basis aus Alltagsnutzern und KOC erzeugt echte Mundpropaganda, weil sie nicht wie die Marke klingt, die über sich selbst spricht. Die Ebene der mittelgroßen KOL liefert fachliche Glaubwürdigkeit. Nur die schmale Spitze, das offizielle Konto, erinnert noch an klassische Markenkommunikation.
 
 Wie schwer das wiegt, zeigt die Rolle von RedNote in der Kaufentscheidung. Dort scrollt niemand, um Zeit totzuschlagen. Dorthin geht man, um zu entscheiden.
 
-> Auf RedNote stammen rund 90 Prozent der Inhalte von gewöhnlichen Nutzern, etwa 60 Prozent der Nutzer suchen aktiv in der App, und die täglichen Suchanfragen erreichen knapp 300 Millionen.
-> Quelle: 新榜 / Newrank, mit Verweis auf RedNote-Daten
+> RedNote meldet mehr als 400 Millionen monatlich aktive Nutzer und über 800 Millionen Suchanfragen am Tag. 77 Prozent der täglich aktiven Nutzer greifen zur Suche, um ein Problem zu lösen.
+> Quelle: Huxiu (虎嗅), Mai 2026. https://www.huxiu.com/article/4861801.html
 
-Wenn 60 Prozent der Nutzer suchen, warten sie nicht darauf, von einer Anzeige unterbrochen zu werden. Sie wollen eine Antwort. Ihr Content muss diese Antwort sein.
+Wenn 77 Prozent der täglichen Nutzer suchen, warten sie nicht darauf, von einer Anzeige unterbrochen zu werden. Sie wollen eine Antwort. Ihr Content muss diese Antwort sein.
 
 ## Das Produkt zuerst, die Markengeschichte danach
 
 Viele westliche Inhalte bauen auf die Markenerzählung: der Weg des Gründers, die Mission, die Werte. In manchen Märkten verfängt das. Auf den chinesischen Plattformen, auf denen tatsächlich gekauft wird, selten.
 
-Eine Nielsen-IQ-Studie zu den Treibern von Kaufentscheidungen auf RedNote ordnet die Prioritäten so, dass sich der Plan neu sortiert.
+Eine NielsenIQ-Umfrage unter RedNote-Nutzern aus dem Jahr 2023 ordnet die Kaufprioritäten so, dass sich der Plan neu sortiert.
 
-> Nielsen IQ nennt als wichtigste Faktoren für Kaufentscheidungen auf RedNote Produktqualität, emotionalen Wert, Preis-Leistungs-Verhältnis, Produktinnovation und öffentlichen Ruf. Die Marke folgt auf Platz sechs, der Preis auf Platz sieben.
-> Quelle: 新榜 / Newrank, mit Verweis auf Nielsen IQ
+> In einer NielsenIQ-Umfrage unter 2.036 Verbrauchern im Januar 2023 setzten RedNote-Nutzer die Produktqualität auf Platz eins ihrer Kaufkriterien, das Preis-Leistungs-Verhältnis auf Platz drei. Den Kernnutzen eines Produkts stellten sie über Trends und über den Zusatzwert der Marke.
+> Quelle: NielsenIQ (尼尔森IQ), berichtet von Sina Tech (新浪科技), März 2023. https://finance.sina.com.cn/tech/roll/2023-03-21/doc-imymqezn0012477.shtml
 
-Ihr Markenname steht an sechster Stelle der Dinge, die die Menschen beschäftigen. Was das Produkt leistet, wie es sich im Alltag anfühlt, ob es ein echtes Problem löst: All das rangiert davor. Aus dem, was früher generischer „Mehrwert“ war, sollten deshalb überwiegend Produktinhalte werden, die tatsächlich nützlich sind. Keine Imagefilme. Keine Lifestyle-Collagen mit Logo in der Ecke.
+Ihr Markenname ist nicht das Erste, worauf die Menschen schauen. Was das Produkt leistet, wie es sich im Alltag anfühlt, ob es ein echtes Problem löst: All das rangiert davor. Aus dem, was früher generischer „Mehrwert“ war, sollten deshalb überwiegend Produktinhalte werden, die tatsächlich nützlich sind. Keine Imagefilme. Keine Lifestyle-Collagen mit Logo in der Ecke.
 
-In der Branche kursiert dazu ein Satz.
+Eine Führungskraft von RedNote brachte es 2022 auf den Punkt.
 
-> Ein einziger starker, positiver, herausragender Inhalt kann zehntausend gewöhnliche, austauschbare Beiträge aufwiegen.
-> Quelle: CBNData, mit Verweis auf 花知晓 / Flower Knows
+> Ein einziger positiver, herausragender Beitrag kann zehntausend austauschbare, gewöhnliche Beiträge aufwiegen, sagte Xiguan (熙官), Leiter des Geschäftsbereichs Konsumwachstum bei RedNote.
+> Quelle: CBNData (第一财经商业数据中心), Juni 2022. https://www.cbndata.com/information/246481
 
 Chinas Feeds gewinnt man nicht, indem man sie flutet. Man gewinnt sie mit den wenigen Beiträgen, die Nutzer tatsächlich speichern, suchen und in einen Kauf verwandeln.
 
 ## Echt schlägt poliert
 
 Der Reflex der meisten internationalen Marken: den globalen Kreativstandard nach China übertragen. Aufwendige Produktion, perfektes Licht, ein fertiger TV-Spot, zerlegt in vertikale Clips. Auf chinesischen Plattformen kann genau diese Politur zum Nachteil werden. Sie ist zudem langsam und teuer, was den Aufstieg der KI-Content-Produktion in China mit erklärt. Unser Beitrag zur [KI-Content-Produktion in China](/de/analysen/ai-content-production-china/) beleuchtet das genauer.
-
-Eine Marke für Lauf-Kopfhörer hat diese Lektion direkt auf RedNote gelernt. Sie verlagerte ihr Budget von Top-Influencern zu gewöhnlichen Läufern und Alltags-Creators. Die Ergebnisse fielen genau andersherum aus, als man erwarten würde.
-
-> Eine Sport-Kopfhörer-Marke stellte fest, dass gewöhnliche Läufer und Creator jenseits der Spitzenklasse überzeugender waren als Top-Influencer mit plumper Werbung. Ihr Return on Investment auf RedNote erreichte das 1,7-Fache des Kategoriedurchschnitts.
-> Quelle: 知乎 / Zhihu
 
 Warum gewinnt der rauere Content? Weil er wie ein echter Mensch wirkt, der eine echte Erfahrung teilt, und nicht wie eine Marke, die Aufmerksamkeit einkauft. Wir beobachten dasselbe bei den Konten, die wir aus Shanghai betreuen: Die mit dem Handy gefilmte Rezension bei normalem Licht schlägt oft den Studiospot, der ein Vielfaches gekostet hat. Das eine klingt nach dem Rat eines Freundes. Das andere nach einem Verkaufsgespräch.
 
@@ -105,8 +97,8 @@ So weit das Grundmuster. In der Praxis zerfällt es nach Plattformen. Jede zieht
 
 Auf Douyin liegen Content und Kommerz am dichtesten beieinander. Man entdeckt ein Produkt und kauft es im selben Scroll.
 
-> 90,3 Prozent der Kurzvideo-Nutzer sind beim Zuschauen schon auf eine Marke oder ein Produkt gestoßen, das ihnen gefiel, und 72 Prozent haben nach dem Anstoß durch ein Kurzvideo gekauft.
-> Quelle: CBNData, 抖音消费者洞察报告
+> Für den Douyin Creator Business Environment Insight Report 2023 gaben 90,3 Prozent der befragten Nutzer von Kurzvideo-Plattformen an, beim Ansehen von Videos oder Livestreams schon auf eine Marke oder ein Produkt gestoßen zu sein, das sie interessierte. 72 Prozent hatten nach dem Anstoß durch ein Kurzvideo gekauft.
+> Quelle: DT Research Institute (DT研究院) und Douyin Creator Business (抖音创作者经营), berichtet von DT Business Observation (DT商业观察) auf CBNData, Oktober 2023. https://www.cbndata.com/information/284755
 
 Deshalb ist hartes Verkaufen auf Douyin reine Verschwendung. Der Weg vom Inhalt zum Kauf ist ohnehin kurz. Schreien hilft nicht. Es braucht Inhalte, die man sehen will, mit dem Kaufknopf griffbereit im Moment der Entscheidung. Unser Beitrag zum [Social Commerce auf Douyin](/de/analysen/douyin-social-commerce-profitability/) zeichnet diesen Weg nach.
 
@@ -121,7 +113,7 @@ Wenn die meisten Abonnenten einen Beitrag nie öffnen, muss sich jede WeChat-Nac
 
 Verabschieden Sie sich zuerst von der Vorstellung, „Mehrwert“ und „Verkauf“ seien Gegensätze. In China ist Ihr bester Verkaufsinhalt meist Ihr nützlichster Inhalt. Ein Tutorial, in dem Ihr Produkt ein echtes Problem löst, erledigt beide Aufgaben zugleich.
 
-Danach sollte die Quote von der Plattform ausgehen, nicht von der Gewohnheit. RedNote lebt von echten Nutzerrezensionen und produktnahen Beiträgen. Douyin lebt von nativen Kurzvideos, die man freiwillig zu Ende sieht. WeChat belohnt Tieferes, näher am Service als an der Durchsage. Weibo ist der Ort, wenn ein Name schnell die Runde machen soll, und dort darf die Markenstimme lauter werden. Unter all dem gilt: Verlagern Sie das Gewicht zu Creators und echten Nutzern. Die 6:3:1-Struktur auf RedNote ist ein vernünftiger Ausgangspunkt, denn das meiste, dem chinesische Nutzer vertrauen und wonach sie suchen, stammt von Menschen außerhalb der Marke.
+Danach sollte die Quote von der Plattform ausgehen, nicht von der Gewohnheit. RedNote lebt von echten Nutzerrezensionen und produktnahen Beiträgen. Douyin lebt von nativen Kurzvideos, die man freiwillig zu Ende sieht. WeChat belohnt Tieferes, näher am Service als an der Durchsage. Weibo ist der Ort, wenn ein Name schnell die Runde machen soll, und dort darf die Markenstimme lauter werden. Unter all dem gilt: Verlagern Sie das Gewicht zu Creators und echten Nutzern. Auf RedNote ist eine Pyramide mit echten Nutzern an der Basis und Ihrem eigenen Konto an der Spitze ein vernünftiger Ausgangspunkt, denn das meiste, dem chinesische Nutzer vertrauen und wonach sie suchen, stammt von Menschen außerhalb der Marke.
 
 Achten Sie schließlich auf die richtigen Signale. Ein gespeicherter Beitrag oder eine Suche sagt mehr als ein Like, die Kommentare sagen noch mehr. Wer speichert, steht meist kurz vor dem Kauf. Ein einzelnes Like bedeutet selten etwas. Bestehen werden die Marken, die ihren Mix auch Monate nach dem Start weiter justieren, auf Plattformen, auf denen Algorithmus und Publikum in Bewegung bleiben.
 

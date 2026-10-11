@@ -139,6 +139,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-10-06 for 06A: "每日预算1000元起" and "免费开户" confirmed at check 1 and check 2. Used in: china-marketing-hidden-costs.
 - Re-verified 2026-10-08 for 06C: "每日预算1000元起", "单次投放总预算5万元起" and "免费开户" confirmed at check 1 and check 2; the same page says Moments ads can promote an Official Account with a one-tap follow ("在朋友圈推广公众号，让“关注”一键直达"), confirmed at both checks. Used in: wechat-open-rate-benchmark.
 - Re-verified 2026-10-11 by the 2026-10-11 publish run (sell-on-wechat source repair): "单次投放总预算5万元起" and "每日预算1000元起" confirmed at check 1 and check 2. Used in: sell-on-wechat, all five locales (replaces an undated Jiuzhilan agency citation).
+- Used 2026-10-11 in wechat-advertising-formats-costs (all five locales) for the rewritten CPM table: scheduled buys at rate card from 50,000 yuan per placement; bidding from 30 yuan CPM and 1,000 yuan a day in other cities only. City names are not listed.
 
 ### Douyin ad account opening: service fee and agent-set first recharge
 - Value: qualitative. Official channel charges a service fee; agents may open for free but set their own minimum first recharge
@@ -783,6 +784,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-11, re-fetched at iteration 8 (tag c2) and again after the quality pass (tag c2b), unchanged; "抖音以102928.07的成绩排名第二", "微信6月MAU（MAU指月活跃用户数，以万为单位）", "2026年08月04日"; "抖音超6亿日活用户", "巨量引擎给出的解题思路是", "2026-01-30"
 - Used in: douyin-marketing-cost; also china-social-media-platforms-2026 and douyin-marketing-western-brands (corrected 2026-10-11, all five locales)
 - Notes: No allowed source supports "750 million daily active users" (the Douyin money page until 2026-10-11) or "750 to 766 million MAU, 587 million daily" (two articles until 2026-10-11); both replaced in all five locales. ByteDance itself has published nothing newer than "over 600 million" (Yicai 2020-09-15, Zhang Nan; Yicai 2022-05-31, Wei Wenwen). LatePost (2025-06-25) says more than 800 million a day on QuestMobile's basis: that is the source of the "800 million daily" line in douyin-social-commerce-profitability, which is consistent with the platform's "over 600 million" and was left as is. QuestMobile March 2026: 1,009.0027 million (Sina, 2026-04-29).
+- Re-verified 2026-10-11 for douyin-social-commerce-profitability, where it replaces "800 million daily active users" in all five locales.
 
 ### Douyin enterprise account: overseas-entity route listed, 2026; verification agreement terms
 - Value: the Douyin Enterprise Account Help Center lists "港澳台/海外主体自助入驻" (self-service onboarding for Hong Kong, Macau, Taiwan and overseas entities, created 2026-08-18, updated 2026-08-19) and "抖音企业机构账号海外/跨境主体认证审核规则" (review rules for overseas and cross-border entities, 2026-05-18); both bodies sit behind a Feishu login. The verification agreement (updated 2025-12-16) says the fee is as shown on the application page, is owed whether or not verification succeeds, and review starts within 15 working days. A foreign trademark used on an account needs a Chinese or Madrid registration certificate (rules dated 2024-07-04)
@@ -813,6 +815,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-11, re-fetched at iteration 8 (tag c2) and again after the quality pass (tag c2b), unchanged; "技术服务费=结算基数×技术服务费费率", "特定渠道范围包括抖音商城APP、豆包", "服饰内衣|服装|/|/|/|5.00%|5.00%", "面部洗护|/|/|4.00%|5.20%", "基础保证金应缴额/元|500|2,000|5,000", "开店主体公司需为海外或港澳台实体公司，不得为境内注册公司", "需按基础保证金应缴金额*10倍进行缴纳", "售后期≤30天的类目|订单确认收货的3天后"
 - Used in: douyin-marketing-cost (the rebate, 0-yuan entry, return insurance and cross-border fee row were cut from the final draft; the rebate, 0-yuan entry and insurance docs got their check 2 by separate re-fetch, tag c2x, 2026-10-11)
 - Notes: Pages are a JavaScript app; text read from https://school.jinritemai.com/api/eschool/v2/library/article/detail?id=<id>&need_content=true. Four docs (rates, settlement, cross-border fees, the affiliate explainer) carry their date only as the platform's update_timestamp, accepted like the Xingtu and Pugongying update times. The table gives two separate rates; never print one combined "commission" figure. The Douyin Pay agreement (version 202601) publishes no payment-channel rate. Return-shipping insurance is optional (payout up to 24 yuan on small items, rules revised 2026-10-08).
+- Re-verified 2026-10-11 for the douyin-marketing-western-brands and douyin-social-commerce-profitability fixes: aJcQ5pzG2Vk4 "国内商品技术服务费率返佣后为0.6%，②跨境商品技术服务费率返佣后为1%" (updated 2026-10-01); aHijyoJA6hvb "服饰内衣|服装|/|/|/|5.00%|5.00%", "面部洗护|/|/|4.00%|5.20%"; aHMYyFoqESKn "服饰内衣|服装|/|/|/|6.00%|4.00%". All confirmed at check 1 and check 2. The "0-yuan entry" trial excludes 全球购 merchants (aHibaVrJVc8f section 1.2), so it is not used for Western-brand articles.
 
 ### Douyin Select Alliance (精选联盟): commission range and creator platform fee by rating, August 2026
 - Value: merchants set open commission rates of 5% to 50% (targeted plans 5% to 80%, team-leader plans up to 90% combined); creators pay the platform 10% (A, B+, B ratings), 20% (C) or 40% (D) of their commission; commissions settle 15 days after confirmed receipt; published 2026-07-30, effective 2026-08-05
@@ -823,6 +826,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-11, re-fetched at iteration 8 (tag c2) and again after the quality pass (tag c2b), unchanged; "A级：X=10%", "C级：X=20%", "D级：X=40%", "5%-50%", "平台在每一笔有效推广订单到达确认收货的15天后对推广费或团长服务费进行结算", "于2026年7月30日公示，调整部分预计8月5日生效"
 - Used in: douyin-marketing-cost; also live-commerce-china-how-it-works ("roughly a 10% service fee" corrected 2026-10-11, all five locales)
 - Notes: Ebrun (2026-04-03) describes the earlier flat 10% creator fee; superseded from August 5, 2026.
+- Re-verified 2026-10-11: "5%-50%", "于2026年7月30日公示，调整部分预计8月5日生效". Used in douyin-marketing-western-brands and douyin-social-commerce-profitability (all five locales).
 
 ## Regulatory and legal
 
@@ -1179,6 +1183,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: xiaohongshu-marketing-cost, xiaohongshu-algorithm, xiaohongshu-account-not-growing, fashion-apparel, xiaohongshu-advertising-formats-costs
 - Notes: Same article repeats the platform's 400 million MAU and 800 million daily searches, which are already logged above. The 77% search figure is the strongest published basis for search-coverage seeding arithmetic; the platform publishes no seeding volume benchmark.
 - Re-verified 2026-10-05 for 05C: "75%日活用户浏览推荐内容，77%日活用户通过搜索解决问题" (first check-2 fetch failed transiently; three retries returned HTTP 200 with the string) confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
+- Re-verified 2026-10-11 for content-mix-china: "77%日活用户通过搜索解决问题" and "小红书官宣月活突破4亿、日均搜索超8亿次" (article 2026-05-29) confirmed at check 1 and check 2. Used in: content-mix-china (all five locales).
 
 ### Xiaohongshu commercial governance: Community Convention 2.0 and enforcement volumes
 - Value: Community Convention 2.0 launched 19 January 2026, adding an "orderly commerce" (有序经营) section; from March to the end of August 2025 the platform banned over 12 million fake accounts, actioned 13.76 million false marketing notes and cleared over 360 million fake comments
@@ -1241,6 +1246,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-15, re-fetched (curl with browser headers, then the fetch tool), both strings and the 2026-05-07 date confirmed
 - Used in: fashion-apparel
 - Notes: Research-center estimate from the outlet's own database, not a regulator figure. The per-platform figures on the same page (Douyin 4.4 trillion and so on) are the outlet's estimates and must not be cited as platform disclosures. The site serves a block page to bare curl; send browser headers.
+- Re-verified 2026-10-11: "2025年直播电商交易规模达到69461亿元，同比增长30.42%" and "用户规模达6.6亿人" confirmed (one block page, retry worked). Used in live-commerce-china-how-it-works (all five locales), replacing the 4.9 trillion yuan 2023 figure, which was iResearch's and not iiMedia's, and the unsourced 16.65 trillion projection.
 
 ### China live commerce users and penetration, 2024
 - Value: live commerce users close to 600 million; penetration rose from 4.9% in 2019 to 37.8% in 2024; 2024 online retail 15.5 trillion yuan, up 7.2%
@@ -1261,6 +1267,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-15, re-fetched with curl, all three strings confirmed
 - Used in: fashion-apparel
 - Notes: Reporter investigation; the page names no upstream data body. Cite CCTV as the original reporting and Beijing Daily as the carrier. Same figures on Sina Tech via IT之家 the same day: https://finance.sina.com.cn/tech/digi/2026-01-11/doc-inhfxzzq0608430.shtml
+- Re-verified 2026-10-11, all strings confirmed at check 1 and check 2. Used in douyin-marketing-western-brands and douyin-social-commerce-profitability (all five locales), replacing the unsourced "fashion returns around 65%" and "8 yuan per return".
 
 ### Apparel return rates: day-to-day rate, women's wear livestream peak, and cost per return
 - Value: day-to-day return rate for clothing on one leading platform about 15% to 20%; women's wear livestream return rate 80% during Double 11 2024, some merchants 90%; each returned women's garment costs about 20 to 32 yuan in combined losses
@@ -1271,6 +1278,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-15, re-fetched with curl, all three strings confirmed
 - Used in: fashion-apparel
 - Notes: The same page lists sizing inconsistency, fabric that cannot be judged on screen and no try-on as return causes, qualitatively. No percentage share for sizing exists in a dated primary; do not add one.
+- Re-verified 2026-10-11, "每件女装退货会造成约20至32元的综合损耗" and 2025-06-16 confirmed at check 1 and check 2. Used in douyin-marketing-western-brands and douyin-social-commerce-profitability (all five locales).
 
 ### Xiaohongshu 618 fashion industry growth, 2024
 - Value: during 618 2024 (2024-05-01 to 06-30 versus the same period of 2023) fashion industry traffic up 23%, style searches up 125%, fashion orders up 219%
@@ -2718,6 +2726,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-11, re-fetched at iteration 8 (tag c2) and again after the quality pass (tag c2b), unchanged; "2023年收入区间一般在2.5万元-5万元", "缩水到1.5万元-2万元左右", "京津冀新媒体运营0.85短视频运营0.73", "国内电商运营0.97", "达播费比至少35%以上", "付费流量占比能到30%以上", "头部主播向商家收取的专场费用，大概100万-300万元", "其自播费比基本在40%-50%", "至少50%以上毛利", "社交电商业务整体毛利率由上年的2.08%提升至5.53%"
 - Used in: douyin-marketing-cost
 - Notes: The 30% paid-traffic figure is a share of traffic, not of sales. Cailian Press figures are sourced interviews, not survey data. Yowant's "media resources" cost line is mostly ad-agency buying; do not use it as a traffic-to-GMV ratio. No dated allowed source gives a studio build cost, per-slot fee norms, or a Qianchuan share of GMV.
+- Yowant margin also used 2026-10-11 in douyin-social-commerce-profitability (all five locales), replacing the Zhihu Bluemoon and Baixiang anecdote.
 
 ### Douyin audience, return parcels, a creator tender and a listed brand's channel view
 - Value: October 2025, 22.2% of Douyin users aged 51 or older; Xiaohongshu 54.2% under 30, 37.2% first-tier and new-first-tier (QuestMobile); Douyin app lower-tier (third-tier and below) MAU over 500 million (QuestMobile, July 2026); Douyin e-commerce is 10% to 20% of national e-commerce return parcels (100EC data via 21st Century Business Herald, May 2026); Fuling Zhacai budgeted 805,000 yuan for at least 500 Douyin creator videos with sales of at least 3.8 times production fees (tender, June 2026); Zhongjing Foods treats Douyin and Kuaishou as launch windows aiming to break even with a slight profit (April 2024); 9 to 12 of every 100 videos a user sees are e-commerce content from trade and paid pools (LatePost, September 2025)
@@ -2946,6 +2955,165 @@ set to blocked by its draft run.
 - "80% of Fortune 500 companies in China use WeCom" (WeScrm, a vendor): Tencent's own line is "80%国内500强已开通企业微信" (China top 500, opened), on the 2019 WeCom launch page, superseded by the 2025 scale figure. Not cited.
 - Blancpain "integrated WeCom with its CRM", cited to an undated "Tencent Official, WeCom 4.0 launch report": WeCom 4.0 launched 2022-01-11 (ifanr), but no Tencent or press page tying Blancpain to it was found. Cut from what-is-wecom, all five locales.
 - QuestMobile "949 million, nearly 70 times a month" (October 2024) and the 890 / 878 / 864 million category split: superseded by the June 2026 and May 2025 figures. Not reused.
+
+### Douyin short-video seeding: brand discovery and purchase after seeding, 2023 survey
+- Value: 90.3% of short-video platform users have come across a brand or product that interested them while watching videos or livestreams; 32.1% say they are often seeded; 72% have bought something after short-video seeding; 75.5% have ordered while watching a livestream
+- As of: 2023 (article dated 2023-10-08)
+- Source: DT Research Institute (DT研究院) and Douyin Creator Business (抖音创作者经营), 2023 Douyin Creator Business Environment Insight Report (2023抖音创作者商业环境洞察报告), reported by DT Business Observation (DT商业观察) on CBNData
+- URL: https://www.cbndata.com/information/284755
+- Verified 1: 2026-10-11, fetched with curl, "90.3%的短视频平台用户，都在刷视频或看直播时，遇到过感兴趣的品牌或产品", "72%的人曾因刷到短视频的种草而购买商品", report title and "2023年10月8日" confirmed
+- Verified 2: 2026-10-11, re-fetched, all strings unchanged
+- Used in: content-mix-china (all five locales)
+- Notes: Survey co-published with Douyin's creator business, so not independent of the platform. Previously cited as "CBNData, 抖音消费者洞察报告" with no date; that is the CBNData headline, not the report title. Older than 12 months; no newer edition found on 2026-10-11.
+
+### Xiaohongshu executive: one standout post outweighs ten thousand look-alike posts (2022 quote)
+- Value: quote, "1篇正面的爆文可以抵1万篇同质化的普通文章"
+- As of: June 2022 (article dated 2022-06-02)
+- Source: CBNData (第一财经商业数据中心), 2022 New Consumption livestream talk series; speaker Xiguan (熙官), general manager of Xiaohongshu consumer growth business
+- URL: https://www.cbndata.com/information/246481
+- Verified 1: 2026-10-11, fetched with curl, quote, "小红书消费成长业务总经理熙官" and "2022年6月2日" confirmed
+- Verified 2: 2026-10-11, re-fetched, unchanged
+- Used in: content-mix-china (all five locales)
+- Notes: The speaker is the Xiaohongshu executive, not Flower Knows (花知晓); Flower Knows co-founder 杨子枫 was a fellow panelist. The article had misattributed the quote to the brand; corrected 2026-10-11.
+
+### NielsenIQ survey of Xiaohongshu users: buying factors, January 2023
+- Value: product quality is the first buying factor and value for money the third; respondents rank a product's core value above trends and brand added value; 57% will pay more for products that raise quality of life; survey of 2,036 consumers, January 2023
+- As of: January 2023 (article dated 2023-03-21)
+- Source: NielsenIQ (尼尔森IQ), Xiaohongshu post-pandemic consumer psychology survey, reported by Sina Tech (新浪科技)
+- URL: https://finance.sina.com.cn/tech/roll/2023-03-21/doc-imymqezn0012477.shtml
+- Verified 1: 2026-10-11, fetched with curl, "“产品品质”是消费者考虑的首要因素，“性价比”则位居第三", "2023年1月对全国2036名消费者进行的在线调研", "产品的核心价值比当下的流行趋势、品牌附加价值更加重要" and "2023年03月21日" confirmed
+- Verified 2: 2026-10-11, re-fetched, unchanged
+- Used in: content-mix-china (all five locales)
+- Notes: The full ranking is only in a chart image; the text states first and third place only. Never cite "brand ranked sixth, price ranked seventh". Older than 12 months; no newer Xiaohongshu-specific ranking found on 2026-10-11.
+
+### Weiboyi AI marketing guide: one-minute short video from 500 yuan, AIGC market 2028 forecast, May 2025
+- Value: a one-minute short video costs as little as 500 yuan with AI; China AIGC market 276.7 billion yuan by 2028; AI marketing sector 66.9 billion yuan expected in 2025
+- As of: May 2025 (release dated 2025-05-20 on Morketing, 2025-05-21 on Beijing News client)
+- Source: Weiboyi (微播易) and China Commercial Advertising Association AI Marketing Committee (中国商务广告协会AI营销委员会), 2025 AI Marketing New Paradigm Application Guide (2025年AI营销新范式应用指南)
+- URL: https://m.bjnews.com.cn/detail/1747829414129325.html
+- Verified 1: 2026-10-11, fetched with curl, "1分钟短视频成本低至500元", "微播易联合中国商务广告协会AI营销委员会发布《2025年AI营销新范式应用指南》", "中国AIGC市场规模将在2028年攀升至2767亿元", "AI营销行业2025年预计市场规模达669亿元" and "2025-05-21" confirmed
+- Verified 2: 2026-10-11, re-fetched, unchanged; "257亿" absent both times
+- Used in: ai-content-production-china, china-social-media-platforms-2026 (all five locales)
+- Notes: Vendor report carried as a company-news press release (企业资讯, from 日照新闻网), not Beijing News reporting; cite the report authors, never "Beijing News". A copy is at http://morketing.com/detail/27361 (2025-05-20). "Used to cost tens of thousands of yuan" is NOT on either page. The co-author is the China Commercial Advertising Association, not the China Advertising Association (中国广告协会); corrected 2026-10-11. No copy states a 2025 AIGC market size: use only 276.7 billion yuan (2028 forecast) and 66.9 billion yuan (AI marketing sector, 2025 expected).
+
+### Double 11 2025 live commerce (100EC): host tiers, ROI, self-broadcasting, production cost, content formats
+- Value: mid-tier hosts (annual sales 100 million to 1 billion yuan) 45% of live commerce GMV, average single-session ROI 1:8; top hosts (above 1 billion yuan) share down from 32% in 2024 to 30%; brand self-broadcasting 40% of GMV, up 8 points on 2024; self-broadcast teams generally over 50 people (Anta, L'Oreal, Xiaomi named); some brands' self-broadcast GMV exceeds creator GMV; average production cost of one major brand livestream 150,000 yuan (2024) to 250,000 yuan; knowledge-based livestream sessions +180%, average dwell 28 minutes, conversion 9.2%; ingredient-focused hosts with medical or chemistry backgrounds drove efficacy skincare sales +55%
+- As of: Double 11 2025 (report published 2025-11-14)
+- Source: 100EC (网经社), E-commerce Research Center, 2025 Double 11 Data Analysis and Insight Report: Livestream E-commerce (2025“双11”大促数据分析与洞察报告：直播电商篇)
+- URL: https://www.100ec.cn/detail--6654028.html
+- Verified 1: 2026-10-11, fetched with curl (browser UA, Referer https://www.100ec.cn/ and Accept-Language zh-CN), "腰部主播（年带货额1-10亿）成为增长主力军，贡献了45%的GMV", "单场直播ROI（投资回报率）平均达到1:8", "超头部主播（年带货额10亿以上）的市场份额从2024年的32%下降至30%", "品牌自播的崛起更为亮眼，GMV占比达到40%，较2024年提升8个百分点", "自播团队规模普遍超过50人", "部分品牌自播GMV已超过达人合作GMV", "品牌方平均为一场重要直播投入的制作成本从2024年的15万元提升至25万元", "知识型直播场次同比增长 180%", "用户平均停留时长达到28分钟", "转化率提升至 9.2%", "带动功效性护肤品销售增长55%", "2025年11月14日" confirmed
+- Verified 2: 2026-10-11, re-fetched, byte-identical
+- Used in: kol-vs-koc-china-influencer-guide, douyin-marketing-western-brands, live-commerce-china-how-it-works (all five locales)
+- Notes: Research-center estimates from 100EC's own 电数宝 database across all platforms, not platform disclosures. 1-10亿 is 100 million to 1 billion yuan; kol-vs-koc had said "1-10 billion yuan" (corrected 2026-10-11). 250,000 yuan is production cost per major livestream, not total spend. The site serves a JS stub to bare curl; send the headers above.
+
+### Douyin merchant support policies: 2025 savings, 2026 upgrade, Q2 2026 savings
+- Value: the nine merchant support policies, first launched in early 2025, saved merchants more than 32 billion yuan over the past year (platform data); the 2026 upgrade extends commission waivers to all categories and from product cards to content, and directly waives ad fees on eligible orders; Q2 2026 savings more than 10 billion yuan
+- As of: 2025 full year (CNR 2026-01-08); Q2 2026 (2026-07-14)
+- Source: China National Radio (央广网); Securities Times (证券时报) via Sina Finance (新浪财经)
+- URL: https://www.cnr.cn/mspd/zhsh/20260108/t20260108_527487292.shtml ; https://finance.sina.cn/stock/jdts/2026-07-14/detail-inihtvuk5362765.d.html?oid=800&vt=4&cid=76993&node_id=76993
+- Verified 1: 2026-10-11, fetched with curl; "九大商家扶持政策是抖音电商2025年初首次推出的扶商计划", "累计为商家节省成本超过320亿元", "免佣范围在原有基础上扩展至全类目，适用场景由货架场商品卡进一步覆盖至内容场", "对符合条件的订单直接减免推广费", "2026-01-08"; "（来源：证券时报）", "该季度平台累计为商家节省经营成本超百亿元" confirmed
+- Verified 2: 2026-10-11, re-fetched, unchanged
+- Used in: douyin-marketing-western-brands, douyin-social-commerce-profitability (all five locales)
+- Notes: Savings figures are platform-disclosed. They supersede 36Kr's "超190亿元 subsidies by end of August 2025" (2025-09-24, over 12 months old and a different measure). CNR (2025-07-09, https://ent.cnr.cn/chuanmei/20250709/t20250709_527253374.shtml) shows the month-one waiver was a time-limited March 2025 offer for brand-new merchants, not a standing rule.
+
+### Douyin e-commerce GMV, 2024 and January to October 2025
+- Value: about 3.43 trillion yuan in 2024, up 35% (disclosed by ByteDance e-commerce head Kang Zeyu at a February 2025 all-hands); GMV up more than 30% in the first ten months of 2025, on track to pass 4 trillion yuan (LatePost)
+- As of: 2024; January to October 2025 (article dated 2026-01-30)
+- Source: 21st Century Business Herald (21世纪经济报道), by Lei Chen
+- URL: https://www.21jingji.com/article/20260130/herald/50ea314a64d44c9664cf2c6a0132a9cc.html
+- Verified 1: 2026-10-11, fetched with curl, "抖音电商2024年GMV达到约3.43万亿元，同比增长35%", "2025年前十个月的GMV增速超过30%，全年有望突破4万亿元大关", "2026年01月30日" confirmed
+- Verified 2: 2026-10-11, re-fetched, unchanged
+- Used in: douyin-social-commerce-profitability (all five locales)
+- Notes: 36Kr (2025-09-24) gives about 3.5 trillion and 30% for 2024; the 21jingji figure is the internally disclosed one; do not mix the two. The same page's Goldman Sachs 24% share has no report date; not cited. The LatePost original is carried by China.com, 2025-11-21: https://finance.china.com/TMT/13004688/20251121/49009672.html, now cited in douyin-marketing-western-brands for the 4 trillion line.
+
+### China MCN market size, 2024
+- Value: 63.6 billion yuan (636亿元) in 2024; forecast 101 billion yuan in 2029
+- As of: 2024 (page dated 2025-09-04)
+- Source: iiMedia Research (艾媒咨询)
+- URL: https://www.iimedia.cn/c1088/107089.html
+- Verified 1: 2026-10-11, fetched with curl, "2024年市场规模达到636亿元" and 2025-09-04 confirmed
+- Verified 2: 2026-10-11, re-fetched, unchanged
+- Used in: live-commerce-china-how-it-works (all five locales)
+- Notes: Research-house estimate. The page gives no share of creators signed to MCNs; the "70-80% of mid-to-top influencers" line was cut.
+
+### Kuaishou ad spend on AIGC marketing creative, Q4 2025
+- Value: about 4 billion yuan in Q4 2025 (AIGC营销素材消耗约40亿元); Kuaishou online marketing revenue 23.6 billion yuan in the quarter
+- As of: Q4 2025 (results 2026-03-25, article 2026-03-26)
+- Source: Securities Daily (证券日报), on Kuaishou (快手) results, carried by Sina Finance
+- URL: https://finance.sina.com.cn/jjxw/2026-03-26/doc-inhshtew0328817.shtml
+- Verified 1: 2026-10-11, fetched with curl, "AIGC营销素材消耗约40亿元", "2025年第四季度，快手线上营销服务收入达到236亿元", "2026年03月26日" confirmed
+- Verified 2: 2026-10-11, re-fetched, unchanged
+- Used in: live-commerce-china-how-it-works (all five locales)
+- Notes: Quarterly total, not daily; do not divide. Replaces the Q4 2024 "over 30 million yuan a day" earnings-call figure. ir.kuaishou.com returns 403 to curl.
+
+### iiMedia 2025 short video and livestream consumer behavior survey
+- Value: 79.32% of short video/livestream users spend on the platform, shopping 51.80% of spend; 69.57% long-term active viewers; 4 to 5 views a day the largest band at 43.82%
+- As of: May 2025 (page dated 2025-05-03)
+- Source: iiMedia Research (艾媒咨询), 2025年中国短视频/直播市场消费行为调查数据
+- URL: https://www.iimedia.cn/c400/105682.html
+- Verified 1: 2026-10-11, fetched with curl, "79.32%的短视频/直播用户在平台产生消费行为", "购物类消费以51.80%的占比", "69.57%的短视频/直播用户为长期活跃观看群体", "4-5次区间，占比达43.82%", "2025-05-03" confirmed
+- Verified 2: 2026-10-11, re-fetched, unchanged
+- Used in: why-livestream-shopping-took-over-china (all five locales)
+- Notes: "Consumption" (消费行为) is not only purchases. 43.82% is the modal band, not an average.
+
+### iiMedia livestream shopper profile, June 2025
+- Value: 64.6% female, 35.4% male; born in the 1980s or 1990s over 80% combined; first-tier cities 47.6%
+- As of: June 2025 (page dated 2025-06-12)
+- Source: iiMedia Research (艾媒咨询)
+- URL: https://www.iimedia.cn/c1088/106477.html
+- Verified 1: 2026-10-11, fetched with curl, "男性比例占35.4%，女性占比为64.6%", "80后、90后是购物主力军，占比总和超过80%", "一线城市以47.6%的占比领先", "2025-06-12" confirmed
+- Verified 2: 2026-10-11, re-fetched, unchanged
+- Used in: why-livestream-shopping-took-over-china (all five locales)
+- Notes: Not CCA data (the CCA 2020 sample was 58.1% male). The page says nothing about tier 3-4 growth.
+
+### China Consumers Association livestream shopping survey, 2020
+- Value: 55.2% of regular users buy at least monthly, 90.8% at least once in three months; 52.5% semi-clear target, 32.0% clear target, 15.5% no clear target (buy as a pastime); three reasons (rush-buying atmosphere, sociality and interaction, more real and direct products) 83.9% combined; nearly 70% buy when a host recommends something they like, 22.7% buy in most cases on a host's recommendation; 5,333 respondents, fieldwork February 2020
+- As of: February 2020 fieldwork, released 2020-03-31 (100EC carry dated 2020-04-01)
+- Source: China Consumers Association (中国消费者协会), 直播电商购物消费者满意度在线调查报告, full text carried by 100EC (网经社)
+- URL: https://www.100ec.cn/detail--6550827.html
+- Verified 1: 2026-10-11, fetched with curl, "为55.2%", "占比高达90.8%", "有52.5%的受访消费者", "32.0%的消费者是有明确购物目标", "这三种原因共占比83.9%", "近七成受访者认为当主播推荐时，如果喜欢就会购买", "22.7%的消费者认为如果主播推荐，大多情况下会购买", "样本5333份", "2020年2月组织", "2020年04月01日" confirmed
+- Verified 2: 2026-10-11, re-fetched, unchanged
+- Used in: why-livestream-shopping-took-over-china (all five locales)
+- Notes: Older than 12 months; always cite with 2020. cca.cn would not connect. The 15.5% means buyers with no clear target, not "watch with no purchase intent".
+
+### Livestream e-commerce sales during 618, 2024
+- Value: 206.8 billion yuan (2068亿元) livestream e-commerce sales; Douyin first among livestream platforms; all-channel total 742.8 billion yuan
+- As of: 618 2024; article 2024-06-19
+- Source: Securities Daily (证券日报), reporting Syntun (星图数据), carried by Sina Finance
+- URL: https://finance.sina.com.cn/jjxw/2024-06-19/doc-inazhrmx7169177.shtml
+- Verified 1: 2026-10-11, fetched with curl, "直播电商累积销售额达2068亿元", "抖音仍排名直播电商平台榜首", "2024年06月19日" confirmed
+- Verified 2: 2026-10-11, re-fetched, unchanged
+- Used in: why-livestream-shopping-took-over-china (all five locales)
+- Notes: Older than 12 months; cite with the date. "Up 12.1%" is not in this article; not cited.
+
+### WeChat ads per-click billing: 0.5 yuan opening bid, second-price formula
+- Value: billing is CPC; each ad's bid starts at 0.5 yuan; cost per click = (next ad's bid x next ad's quality score) / this ad's quality score + 0.01 yuan
+- As of: undated platform FAQ, confirmed live October 2026
+- Source: Tencent customer service (腾讯客服), advertiser FAQ 投放广告如何收费
+- URL: https://kf.qq.com/faq/170522aAN3A3170522BBBNZZ.html
+- Verified 1: 2026-10-11, fetched with curl, "微信广告投放计费方式是CPC方式", "每条广告出价起步价格是0.5元", "本条广告质量度｝+ 0.01元" confirmed
+- Verified 2: 2026-10-11, re-fetched, unchanged
+- Used in: wechat-advertising-formats-costs (all five locales)
+- Notes: Logged on the same basis as the other undated Tencent pages; cite "confirmed October 2026". Recheck on reuse.
+
+### NOT LOGGED, searched and rejected 2026-10-11 (corpus citation repair)
+- "About 90% of RedNote content comes from regular users", "60% of users search, close to 300 million daily searches": agency and self-media only, or superseded by Huxiu 2026. Rejected; content-mix-china cites Huxiu May 2026.
+- "NielsenIQ: brand ranked sixth, price seventh": chart image only. Rejected.
+- "A sports earphone brand's RedNote ROI was 1.7 times the category average": Zhihu only. Cut from content-mix-china.
+- "RedNote content mix 6:3:1" (Hashmeta, agency blog): no dated original in Chinese searches. Cut; the pyramid is described without percentages.
+- "A one-minute video used to cost tens of thousands of yuan": not in the Weiboyi release. Cut.
+- "China's AIGC market reached 25.7 billion yuan in 2025" (257亿): not in the Weiboyi release nor on QbitAI's dated 2025 page; traced to 2023-era forecasts. Cut from ai-content-production-china and china-social-media-platforms-2026, both rewritten to the 2028 forecast and the 2025 AI-marketing figure.
+- Douyin CPM 200-300 yuan for organic KOL content versus 30-60 via Ocean Engine; KOL content ROI below 0.3; fashion returns around 65% and 8 yuan per return: Qinggua Media, agency blogs and Zhihu only. Cut or replaced.
+- "New merchants get full commission waivers in month one": no standing rule. Replaced with the 2026 product-card rebate.
+- "Nearly 100 categories with reduced or zero commission" and "19 billion yuan subsidies by August 2025": unconfirmed plan, or over 12 months old and superseded. Not used.
+- Goldman Sachs "24% of China's e-commerce market": no report date on any carrier. Cut.
+- Bluemoon (3,000 influencers, 40 million yuan) and Baixiang anecdotes, "analysis published on Zhihu": Zhihu only. Cut from douyin-marketing-western-brands and douyin-social-commerce-profitability.
+- "MCNs manage 70-80% of mid-to-top influencers": no dated source. Cut.
+- "Live commerce 4.9 trillion yuan in 2023" (iResearch, mislabelled iiMedia) and "online retail 16.65 trillion by 2025": replaced with 100EC 2025 figures.
+- Chinabaogao beauty-host anecdote (explanation time halved, conversion up 40%): report aggregator, no dated original. Cut from live-commerce-china-how-it-works.
+- "618 2024 livestream sales up 12.1%", "59.89% say presentation is more direct" (iiMedia): not on the dated pages. Cut.
+- "Tsinghua research on purchase atmosphere and impulse buying": the paper is by Jiangsu University of Science and Technology authors in 信息系统学报 No. 29, about purchase intention, undated. Cut.
+- WeChat video ads "30-50% more than image", Moments CPC "2-20 yuan", Baidu CPC "2-15 yuan", "AI bidding cut costs 10-15%" (Yiban), "evening peak 20-40% more" (Aiyong Tech), Moments scheduled CPM 150/100/50 by city tier, "review takes 1-2 business days", "one creative swap per campaign": agency, vendor or Zhihu only, or contradicted. Cut from wechat-advertising-formats-costs.
 
 ## Client figures
 
