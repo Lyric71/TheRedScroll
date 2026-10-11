@@ -4,7 +4,7 @@ description: "Las cuentas se abren en dos semanas. El nombre chino tarda meses e
 metaTitle: "Redes sociales chinas: los primeros 90 días"
 metaDescription: "Cuentas, verificación, nombre chino, primeros contenidos y primeros contactos: el recorrido de un lanzamiento en China, semana a semana."
 publishDate: 2026-09-10
-updatedDate: 2026-10-02
+updatedDate: 2026-10-11
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "Estrategia"
@@ -74,8 +74,8 @@ recoge la obligación de solicitar en el navegador para las entidades
 extranjeras, las tres pruebas de denominación y los cinco motivos de rechazo
 publicados.
 
-[Douyin (抖音)](/es/plataformas/douyin/) se sale de la norma: sus propias
-páginas de ayuda reservan la cuenta de empresa a las compañías radicadas en
+[Douyin (抖音)](/es/plataformas/douyin/) es el caso complicado: sus páginas
+de ayuda públicas reservan la cuenta de empresa a las compañías radicadas en
 China.
 
 > Las preguntas frecuentes de Douyin describen la cuenta de empresa como una
@@ -87,14 +87,23 @@ China.
 > después, y la revisión tarda unos dos días hábiles.
 > Fuente: Ocean Engine (巨量引擎), preguntas frecuentes sobre la verificación Blue V de Douyin, mayo de 2022. https://www.oceanengine.com/faq/douyin-qyh-zmrzn.html
 
-A una marca que todavía no ha entrado le quedan dos caminos: abrir Douyin
-desde una entidad china de la que ya disponga, o aplazar la plataforma. Es
-una cuestión que se resuelve con la agencia antes de fijar fecha de
-lanzamiento. Nunca después.
+Desde 2026, el centro de ayuda de Douyin recoge además una vía de
+autoservicio para entidades extranjeras. Documentos, tasa y plazo de
+revisión solo se ven tras iniciar sesión.
+
+> El centro de ayuda de la cuenta de empresa de Douyin recoge una guía de
+> alta en autoservicio para entidades de Hong Kong, Macao, Taiwán y el
+> extranjero, actualizada el 19 de agosto de 2026.
+> Fuente: centro de ayuda de la cuenta de empresa de Douyin (抖音企业号帮助中心), agosto de 2026. https://renzheng.douyin.com/support/content/227771?graphId=412&mappingType=2&spaceId=77
+
+A una marca que todavía no ha entrado le quedan tres caminos: probar esa vía
+extranjera, abrir Douyin desde una entidad china de la que ya disponga, o
+aplazar la plataforma. Es una cuestión que se resuelve con la agencia antes
+de fijar fecha de lanzamiento. Nunca después.
 
 | Documento | Cuenta oficial de WeChat | Cuenta de empresa de Xiaohongshu | Cuenta de empresa de Douyin |
 |---|---|---|---|
-| Certificado de registro mercantil | Se acepta el certificado extranjero | Se acepta el certificado extranjero | Licencia de actividad china |
+| Certificado de registro mercantil | Se acepta el certificado extranjero | Se acepta el certificado extranjero | Licencia de actividad china (vía extranjera no pública) |
 | Identidad del contacto o del operador | Ambas caras, escaneo en color | Datos del operador en el formulario | Documento del representante legal para autónomos |
 | Carta de solicitud | Plantilla en chino o inglés | Plantilla de la plataforma | Plantilla de la plataforma |
 | Carta de autorización de explotación | Obligatoria | No figura | No figura |
@@ -111,8 +120,9 @@ otra y apenas pesa.
 
 Lo primero es decidir qué entidad presenta la solicitud. WeChat (微信) y
 Xiaohongshu (小红书) aceptan a una empresa extranjera; Douyin (抖音), ya se ha
-visto, está hecho para una china. El asunto se cierra en la semana 1, porque
-de ahí depende qué cuentas podrán estar abiertas en la semana 2.
+visto, está hecho para una china, y su vía extranjera no es pública. El
+asunto se cierra en la semana 1, porque de ahí depende qué cuentas podrán
+estar abiertas en la semana 2.
 [Nuestro análisis, plataforma por plataforma, sobre si hace falta una sociedad china](/es/analisis/chinese-entity-social-media/)
 repasa los casos límite, de la vía del agente en Weibo a las cuentas a nombre de la agencia.
 
@@ -347,8 +357,9 @@ documento de identidad del contacto escaneado en color por ambas caras, una
 carta de solicitud firmada junto con una carta de autorización de
 explotación, y una factura telefónica o un extracto bancario a nombre del
 contacto. Xiaohongshu (小红书) añade una traducción sellada para todo lo que
-no esté en chino o en inglés. Douyin (抖音) exige una licencia de actividad
-china.
+no esté en chino o en inglés. Douyin (抖音) exige en sus páginas públicas una licencia de
+actividad china. Los requisitos de su vía para empresas extranjeras solo pueden
+consultarse tras iniciar sesión.
 
 ### ¿Cuándo se ven los primeros resultados?
 

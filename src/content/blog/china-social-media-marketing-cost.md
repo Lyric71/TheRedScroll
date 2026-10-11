@@ -183,6 +183,9 @@ We're not printing a Douyin first-deposit figure. The numbers in circulation
 come from reseller blogs, not from the platform, and they change by agent.
 Ask the agent opening your account for its threshold in writing.
 
+Every other Douyin cost line, from video production to live commerce, is
+priced in [our Douyin marketing cost guide](/insights/douyin-marketing-cost/).
+
 [Xiaohongshu ads](/rednote-agency/) run through its Juguang (聚光) platform.
 Foreign brands often hear they must go through an agent. No official
 Xiaohongshu document says so.

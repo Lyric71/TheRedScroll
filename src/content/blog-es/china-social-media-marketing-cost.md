@@ -200,6 +200,8 @@ circulan salen de blogs de revendedores, no de la plataforma, y cambian de
 un agente a otro. Pida por escrito su umbral al agente que le abra la
 cuenta.
 
+Las demás partidas de Douyin, de la producción de vídeo a la venta en directo, tienen precio en [nuestro análisis del coste del marketing en Douyin](/es/analisis/douyin-marketing-cost/).
+
 Los [anuncios de Xiaohongshu](/es/agencia-rednote/) pasan por su plataforma
 Juguang (聚光). A las marcas extranjeras se les repite que el agente es
 obligatorio. Ningún documento oficial de Xiaohongshu lo exige.

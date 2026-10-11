@@ -4,6 +4,7 @@ description: "Live commerce is China's highest-converting sales channel. Here is
 metaTitle: "Live commerce in China explained"
 metaDescription: "Live commerce drives 65-70% of influencer sales in China. Conversion rates, commissions, MCNs, and what brands should know before spending."
 publishDate: 2026-04-02
+updatedDate: 2026-10-11
 author: "TheRedScroll"
 platforms: ["douyin"]
 category: "Strategy"
@@ -76,7 +77,7 @@ Rates vary by product category:
 | Electronics and tech | 3-8% |
 | Luxury goods | 5-15% (plus fixed fees) |
 
-Platforms like Taobao Union and Douyin Select Alliance automate the tracking and payouts. They take roughly a 10% service fee on commissions.
+Platforms like Taobao Union and Douyin Select Alliance automate the tracking and payouts. They take a cut of each commission. Douyin's Select Alliance charges creators 10%, or 20% to 40% for low-rated creators since August 2026.
 
 ## AI behind the scenes
 

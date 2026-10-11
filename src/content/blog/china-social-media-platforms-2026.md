@@ -4,6 +4,7 @@ description: "WeChat, Douyin, RedNote, Weibo, and a dozen more Chinese platforms
 metaTitle: "China Social Media Platforms: 2026 Brand Guide"
 metaDescription: "A 2026 guide to China's social media platforms for foreign brands. Real user numbers, commerce features, and where to start. From the ground."
 publishDate: 2026-06-30
+updatedDate: 2026-10-11
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Platforms"
@@ -78,7 +79,7 @@ If you sell to other businesses, WeChat is still your strongest channel. Chinese
 
 Most people know Douyin as the app TikTok was built from. Inside China it is something bigger: one of the most powerful sales engines in the world.
 
-Industry roundups put Douyin at roughly 750 to 766 million monthly active users, with around 587 million daily. People open it to be entertained and leave having bought something. The recommendation engine pushes content by interest, so a small brand with the right clip can reach a huge audience fast.
+QuestMobile counted about 1.03 billion monthly active users on the Douyin app in June 2026, and Ocean Engine, ByteDance's ad platform, still tells advertisers it has more than 600 million daily. People open it to be entertained and leave having bought something. The recommendation engine pushes content by interest, so a small brand with the right clip can reach a huge audience fast.
 
 What sets Douyin apart from Western short video is the checkout. Product links sit inside the video. Live shopping runs all day. A viewer goes from watching to buying in seconds, never leaving the feed.
 

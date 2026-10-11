@@ -4,6 +4,7 @@ description: "La vente en direct est devenue le canal le plus performant de Chin
 metaTitle: "La vente en direct en Chine, décryptée"
 metaDescription: "La vente en direct génère 65 à 70 % des ventes d’influenceurs en Chine. Taux de conversion, commissions, MCN : voici ce qu’il faut en retenir."
 publishDate: 2026-04-02
+updatedDate: 2026-10-11
 author: "TheRedScroll"
 platforms: ["douyin"]
 category: "Stratégie"
@@ -72,7 +73,7 @@ Taux par catégorie :
 | Électronique et technologie | 3-8 % |
 | Produits de luxe | 5-15 % (plus forfait fixe) |
 
-Taobao Union et Douyin Select Alliance automatisent le suivi et les versements. Prélèvement : environ 10 % de frais de service.
+Taobao Union et Douyin Select Alliance automatisent le suivi et les versements. Chaque commission y laisse sa part. Depuis août 2026, Douyin Select Alliance prélève 10 % sur celle des créateurs, et 20 à 40 % sur celle des moins bien notés.
 
 ## L’IA en coulisses
 

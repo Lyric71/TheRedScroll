@@ -4,6 +4,7 @@ description: "WeChat, Douyin, RedNote, Weibo et une dizaine d’autres plateform
 metaTitle: "Réseaux sociaux chinois : guide 2026 des marques"
 metaDescription: "Le guide 2026 des réseaux sociaux chinois pour les marques étrangères. Chiffres réels, ressorts de la vente et conseils pour démarrer. Vu du terrain."
 publishDate: 2026-06-30
+updatedDate: 2026-10-11
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Plateformes"
@@ -78,7 +79,7 @@ Si vous vendez à d’autres entreprises, WeChat reste votre canal le plus puiss
 
 La plupart des gens connaissent Douyin comme l’application dont est née TikTok. En Chine, c’est tout autre chose : l’un des moteurs de vente les plus puissants du monde.
 
-Les bilans sectoriels situent Douyin entre 750 et 766 millions d’utilisateurs actifs mensuels, et près de 587 millions par jour. On l’ouvre pour se divertir, on le quitte après avoir acheté. Le moteur de recommandation pousse le contenu par centre d’intérêt : une petite marque, avec le bon clip, touche vite une audience énorme.
+En juin 2026, QuestMobile recensait environ 1,03 milliard d’utilisateurs actifs mensuels sur l’appli Douyin. Ocean Engine, la régie publicitaire de ByteDance, en revendique toujours plus de 600 millions par jour auprès des annonceurs. On ouvre Douyin pour se divertir, on le quitte après avoir acheté. Le moteur de recommandation pousse le contenu par centre d’intérêt : une petite marque, avec le bon clip, touche vite une audience énorme.
 
 Ce qui sépare Douyin de la vidéo courte occidentale, c’est le paiement. Les liens produits sont logés dans la vidéo. Les ventes en direct tournent toute la journée. Le spectateur passe du visionnage à l’achat en quelques secondes, sans jamais quitter le fil.
 

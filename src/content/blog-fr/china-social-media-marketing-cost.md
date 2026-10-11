@@ -204,6 +204,8 @@ circulent proviennent de blogs de revendeurs, pas de la plateforme, et ils
 changent d’un agent à l’autre. Demandez à l’agent qui ouvre votre compte
 de vous confirmer son seuil par écrit.
 
+Tous les autres postes de Douyin, de la production vidéo au live commerce, sont chiffrés dans [notre décryptage du coût du marketing sur Douyin](/fr/decryptages/douyin-marketing-cost/).
+
 Les [publicités Xiaohongshu](/fr/agence-rednote/) passent par sa régie
 Juguang (聚光). On répète volontiers aux marques étrangères qu’un agent est
 obligatoire. Aucun document officiel de Xiaohongshu ne l’impose.

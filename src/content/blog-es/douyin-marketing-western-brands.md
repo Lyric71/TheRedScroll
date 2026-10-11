@@ -4,6 +4,7 @@ description: "Douyin no es TikTok. Verificación, formatos que rinden, tarifas d
 metaTitle: "Douyin para marcas occidentales: guía de marketing"
 metaDescription: "Vender en Douyin desde Occidente: alta de la cuenta, contenido que funciona, tarifas de KOL, publicidad y Douyin Shop. Guía práctica, sin humo."
 publishDate: 2026-07-16
+updatedDate: 2026-10-11
 author: "TheRedScroll"
 platforms: ["douyin"]
 category: "Estrategia"
@@ -11,7 +12,7 @@ keywords: ["marketing en Douyin", "Douyin para marcas occidentales", "Douyin vs 
 featured: false
 featuredImage: "/images/blog/douyin-shoppable-video.webp"
 keyFacts:
-  - "Douyin reúne entre 750 y 766 millones de usuarios activos al mes, y cerca de 587 millones cada día, según datos del sector."
+  - "Douyin sumaba unos 1.030 millones de usuarios activos al mes en junio de 2026, según QuestMobile. Ocean Engine sigue hablando de más de 600 millones al día."
   - "El comercio electrónico de Douyin rozaba los 4 billones de yuanes en 2025, con un alza superior al 30 % interanual. Fuente: LatePost, noviembre de 2025."
   - "La publicidad de pago en Ocean Engine baja el CPM a 30-60 yuanes, lejos de los 200-300 del contenido orgánico de KOL. Fuente: Qinggua Media, Digitaling, Ebrun, Youzan."
   - "Un gran KOL chino cobra entre 500.000 y 5 millones de yuanes por publicación. El KOC se mueve entre 200 y 5.000 yuanes."
@@ -27,7 +28,7 @@ Para una marca occidental, el marketing en Douyin se juega en tres frentes. Veri
 
 Douyin (抖音) es la aplicación de la que nació TikTok. Ambas son de ByteDance. Pero funcionan como productos separados: público distinto, contenido distinto y herramientas de negocio distintas.
 
-Dentro de China, Douyin va mucho más allá de un muro de vídeos. Es uno de los mayores motores de venta del planeta. Los recuentos del sector le atribuyen entre 750 y 766 millones de usuarios activos al mes, con unos 587 millones al día.
+Dentro de China, Douyin va mucho más allá de un muro de vídeos. Es uno de los mayores motores de venta del planeta. QuestMobile le atribuyó unos 1.030 millones de usuarios activos al mes en junio de 2026. Ocean Engine, la plataforma publicitaria de ByteDance, sigue prometiendo a los anunciantes más de 600 millones de usuarios diarios.
 
 Lo que marca la diferencia es el comercio. Su facturación de comercio electrónico apuntaba a rebasar los 4 billones de yuanes en 2025, con un crecimiento por encima del 30 % interanual.
 
@@ -139,6 +140,8 @@ La plataforma, eso sí, está bajando el suelo de coste. En 2025, Douyin lanzó 
 Con el presupuesto, mejor no engañarse. Casi ninguna marca gana dinero en Douyin durante el primer año. Según un análisis publicado en Zhihu, Bluemoon, uno de los mayores fabricantes chinos de productos para el hogar, trabajó con más de 3.000 creadores y volcó 40 millones de yuanes en tráfico de pago. Las cuentas nunca le salieron.
 
 No es razón para descartar Douyin. Es razón para echar los números antes de empezar.
+
+El detalle de cada uno de estos costes, con una fuente fechada para cada cifra, está en [nuestro análisis del coste del marketing en Douyin](/es/analisis/douyin-marketing-cost/).
 
 ## Cómo funcionan Douyin Shop y el social commerce
 

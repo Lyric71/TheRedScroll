@@ -1,10 +1,10 @@
 ---
 title: "Redes sociales en China: ¿hace falta una sociedad china?"
-description: "Por lo general no, al menos para empezar. Tres de las cuatro grandes plataformas pueden verificar a una empresa registrada fuera de China continental. Dos exponen sus reglas con claridad. La tercera obliga a pasar por un agente."
+description: "Por lo general no, al menos para empezar. WeChat y Xiaohongshu verifican a empresas extranjeras con reglas publicadas. Weibo obliga a pasar por un agente. Douyin ya recoge una vía para el extranjero, pero solo muestra los detalles tras iniciar sesión."
 metaTitle: "Redes sociales en China: ¿hace falta sociedad china?"
 metaDescription: "WeChat, Xiaohongshu, Douyin y Weibo: qué admite cada plataforma de una marca extranjera sin sociedad china y dónde están los verdaderos límites."
 publishDate: 2026-09-24
-updatedDate: 2026-10-02
+updatedDate: 2026-10-11
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Estrategia"
@@ -20,7 +20,7 @@ Es la pregunta que encalla más de una primera reunión comercial. Las respuesta
 | WeChat (微信) | Admite entidades extranjeras, una sola cuenta | Certificado de registro, cartas selladas | 99 dólares al año |
 | Xiaohongshu (小红书) | Admite entidades extranjeras de forma expresa | BR o CR, traducción al chino sellada | 600 yuanes al año |
 | Weibo (微博) | Entidades extranjeras solo a través de un agente | Fuera del formulario de autoservicio | 600 yuanes |
-| Douyin (抖音) | Ninguna regla, ni a favor ni en contra | Una licencia de actividad de China continental | 600 yuanes el primer año |
+| Douyin (抖音) | Una vía para el extranjero, detalles tras iniciar sesión | Licencia de China continental en las páginas públicas | 600 yuanes el primer año (China continental) |
 
 Dos matices antes de entrar en detalle. Tener una cuenta no equivale a poder sacarle todo el partido, y la diferencia aflora en la publicidad. Sobre todo, la pregunta rara vez admite un sí o un no. Es una cuestión de calendario: en los seis primeros meses, casi nada exige una sociedad en China continental.
 
@@ -92,7 +92,7 @@ Ninguna de estas filas impide un lanzamiento. Suponen un par de semanas en WeCha
 
 Es en estas dos plataformas donde los artículos de blog más tajantes se equivocan, y en sentidos opuestos.
 
-Douyin (抖音) no publica ninguna regla sobre entidades extranjeras. Publica una descripción y una lista de documentos que presupone una licencia de China continental.
+Douyin (抖音) recoge ya una vía para entidades extranjeras, pero no publica los detalles. Sus páginas públicas siguen ofreciendo solo una descripción y una lista de documentos que presupone una licencia de China continental.
 
 > Las preguntas frecuentes de la plataforma describen la cuenta de empresa de Douyin como una cuenta para empresas de la región de China.
 > Fuente: Ocean Engine (巨量引擎), preguntas frecuentes sobre la cuenta de empresa de Douyin, mayo de 2022. https://www.oceanengine.com/faq/douyin-qyh-kslj.html
@@ -100,7 +100,12 @@ Douyin (抖音) no publica ninguna regla sobre entidades extranjeras. Publica un
 > La verificación de empresa en Douyin exige una licencia de actividad y una carta de solicitud, cuesta 600 yuanes el primer año y 120 yuanes al año por la renovación, y la revisión de requisitos se completa unos 2 días laborables después de la presentación.
 > Fuente: Ocean Engine (巨量引擎), preguntas frecuentes sobre la verificación de empresa en Douyin, mayo de 2022. https://www.oceanengine.com/faq/douyin-qyh-zmrzn.html
 
-Esa lista de documentos es reveladora. Ninguna página de Ocean Engine prohíbe a una empresa extranjera presentar la solicitud. Ninguna se lo permite, tampoco. Douyin queda así en tierra de nadie: no está cerrado, simplemente no está escrito. Si Douyin ocupa un lugar central en sus planes, presupueste una entidad en China continental y deje de buscar una norma que no existe.
+Esas páginas son de 2022. En 2026, el centro de ayuda de empresas de Douyin incorporó dos entradas: una guía de alta en autoservicio para entidades extranjeras y un reglamento de revisión propio para solicitantes extranjeros y transfronterizos.
+
+> El centro de ayuda de la cuenta de empresa de Douyin recoge una guía de alta en autoservicio para entidades de Hong Kong, Macao, Taiwán y el extranjero, actualizada el 19 de agosto de 2026, y un reglamento de revisión de la verificación para entidades extranjeras y transfronterizas, fechado el 18 de mayo de 2026.
+> Fuente: centro de ayuda de la cuenta de empresa de Douyin (抖音企业号帮助中心), agosto de 2026. https://renzheng.douyin.com/support/content/227771?graphId=412&mappingType=2&spaceId=77
+
+Ambos documentos exigen iniciar sesión, así que los papeles, la tasa y el plazo de revisión de esa vía no son públicos. Sobre el papel, Douyin ya no está cerrado a una empresa extranjera. Pero sigue siendo opaco. Si Douyin ocupa un lugar central en sus planes, pida a su agencia que explore la vía extranjera antes de presupuestar una entidad en China continental.
 
 Weibo (微博) publica mucho sobre verificación, pero lo que interesa a las marcas extranjeras está enterrado en una página dedicada a otro asunto. Conviene empezar por el formulario, concebido para una empresa de China continental.
 
@@ -121,10 +126,10 @@ Weibo prevé además una vía por correo electrónico, pero no está pensada par
 
 | | Douyin (抖音) | Weibo (微博) |
 |---|---|---|
-| Regla publicada para el extranjero | No | Solo en las normas de cambio de entidad |
-| Vía para una marca extranjera | Sin regular | Un agente extranjero autorizado |
-| Tasa | 600 yuanes, luego 120 al año | 600 yuanes por solicitud |
-| Revisión | Unos 2 días laborables | 1 día laborable para un cambio de entidad |
+| Regla publicada para el extranjero | Recogida desde 2026, tras iniciar sesión | Solo en las normas de cambio de entidad |
+| Vía para una marca extranjera | Alta en autoservicio para el extranjero, detalles no públicos | Un agente extranjero autorizado |
+| Tasa | 600 yuanes, luego 120 al año (FAQ para China continental) | 600 yuanes por solicitud |
+| Revisión | Unos 2 días laborables (FAQ para China continental) | 1 día laborable para un cambio de entidad |
 | Cuentas por licencia | No se indica | Varias con una misma licencia |
 
 ## El comercio electrónico transfronterizo, otra puerta de entrada
@@ -218,7 +223,7 @@ Una agencia incapaz de responder a las tres por escrito ya está dando una respu
 | Está sondeando la demanda, aún sin ingresos en China | Cuenta de servicio de WeChat y Xiaohongshu, ambas a nombre de su propia entidad | No |
 | Vende a consumidores, sin existencias en China continental | Importación minorista transfronteriza, dentro de los límites de 5.000 y 26.000 yuanes | No |
 | Se dispone a comprar publicidad en Xiaohongshu | Su propia cuenta, tras revisar la lista para entidades extranjeras | No, si su categoría está abierta |
-| Douyin es central en sus planes | Presupuestar una entidad en China continental | Probablemente sí |
+| Douyin es central en sus planes | Primero la vía extranjera de Douyin; si falla, una entidad en China continental | Quizá |
 | Contrata en el país, factura en yuanes, tiene existencias | Una sociedad en China continental | Sí |
 | Una agencia le ofrece una cuenta con su licencia | Obtener antes las tres respuestas contractuales | No, pero lea la cláusula 6.1 |
 

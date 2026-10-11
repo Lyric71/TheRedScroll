@@ -321,6 +321,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-08, re-fetched, unchanged
 - Used in: first-90-days-china-social-media, beauty-skincare, chinese-entity-social-media
 - Notes: Older than 12 months but the platform's own page and still live; consistent with the fee entry above. A sibling page (2022-05-12, https://www.oceanengine.com/faq/douyin-qyh-zmkn.html) says "1至2天". Recheck before reuse.
+- Re-verified 2026-10-11 for 07B: "提交后约2个工作日完成资质审核", "并支付600元的审核费用" and the 2022-05-27 date confirmed at check 1 and check 2. Used in: douyin-marketing-cost. Since 2026 an overseas-entity route is listed separately (see the 2026 entry in this section).
 
 ### Douyin enterprise account described as for companies in China
 - Value: qualitative. The platform's FAQ describes the enterprise account as "面向中国地区企业可以申请认证的账号"
@@ -331,6 +332,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-08, re-fetched, unchanged
 - Used in: first-90-days-china-social-media, chinese-entity-social-media
 - Notes: No platform page states a rule for overseas entities. Use only for "built for companies in China"; do not extend to "overseas companies cannot verify".
+- Superseded in part 2026-10-11: the help center now lists an overseas-entity route (see "Douyin enterprise account: overseas-entity route listed, 2026"). Still cite this page only for its 2022 description.
 
 ### Xiaohongshu home feed pipeline, note freshness and label latency
 - Value: qualitative plus four figures. The home feed runs recall (召回), coarse ranking (粗排) and fine ranking (精排); those modules updated once a day in the first half of 2021 and were rebuilt to minute-level updates. Notes published in the last day account for close to half of home feed exposure. The traditional label pipeline waited about 30 minutes after an item was shown before collecting interaction labels. The timeliness program delivered over 10% more average home feed time per user, over 15% more interactions and close to 50% better new-note efficiency.
@@ -682,6 +684,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-08, re-fetched at iteration 8 and again after the quality pass, unchanged; "每月有一次改价且立即生效的机会", "修改价格后次月1号生效", "报价设置需遵循视频时间越长价格越高原则", "若报价低于建议报价的50%则可能无法生效"
 - Used in: china-kol-pricing
 - Notes: The old 1-20s / 21-60s / 60s+ price bands quoted on agency pages are not on the current page. Do not cite them.
+- Re-verified 2026-10-11 for 07B: "若报价低于建议报价的50%则可能无法生效" and 2026-08-19 confirmed at check 1 and check 2. Used in: douyin-marketing-cost.
 
 ### Xingtu task types: fixed price, billed on results, prepaid
 - Value: assigned tasks are CPT (fixed price); open-call (投稿) tasks are billed on results after the video goes live; Xingtu is prepaid
@@ -770,6 +773,56 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-08, re-fetched at iteration 8 and again after the quality pass, unchanged; "2026年4月1日起，新创建的任务收取10%的平台服务费", "2026年4月1日起，新创建的任务收取20%的平台服务费", "如达人结算金额为500元，客户需支付525元", "创作者设置的价格为订单税前到手价", "以流量主上月最后一次修改的报价，作为本月的报价", "内容助推有效期为1年，无需达人同意授权", "互选推广有效期为1年，需获得达人同意授权方可开启，授权无期限", "信守排他：若约定排他性合作，须在约定期限内仅发布该广告主内容"
 - Used in: china-kol-pricing
 - Notes: Pages render with JavaScript; text read from https://huxuan.qq.com/cgi-bin/advertiser/get_content_posts?post_ids=<id>, which carries updated_at. No pinyin in copy: call it WeChat's creator marketplace (互选). No exclusivity price is published.
+
+### Douyin users: QuestMobile monthly actives, June 2026, and Ocean Engine's daily-active line
+- Value: Douyin app MAU 102,928.07 ten-thousands (about 1.03 billion) in June 2026, second to WeChat (115,372.11); Ocean Engine's January 2026 pitch says "抖音超6亿日活用户" (more than 600 million daily active users)
+- As of: June 2026 (Sina Finance article 2026-08-04); January 2026 (China Daily online, 2026-01-30)
+- Source: Sina Finance (新浪财经), Kuaikeji (快科技) reporting QuestMobile's H1 2026 ranking; China Daily online (中国日报网), reprinted from Eastday (东方网)
+- URL: https://finance.sina.com.cn/tech/discovery/2026-08-04/doc-inimcxxp2069391.shtml ; https://caijing.chinadaily.com.cn/a/202601/30/WS697c3a1aa310942cc499d74d.html
+- Verified 1: 2026-10-11, fetched with curl in the 07B run (logs/scratch/07B/check.py, tag c1), strings below confirmed
+- Verified 2: 2026-10-11, re-fetched at iteration 8 (tag c2) and again after the quality pass (tag c2b), unchanged; "抖音以102928.07的成绩排名第二", "微信6月MAU（MAU指月活跃用户数，以万为单位）", "2026年08月04日"; "抖音超6亿日活用户", "巨量引擎给出的解题思路是", "2026-01-30"
+- Used in: douyin-marketing-cost; also china-social-media-platforms-2026 and douyin-marketing-western-brands (corrected 2026-10-11, all five locales)
+- Notes: No allowed source supports "750 million daily active users" (the Douyin money page until 2026-10-11) or "750 to 766 million MAU, 587 million daily" (two articles until 2026-10-11); both replaced in all five locales. ByteDance itself has published nothing newer than "over 600 million" (Yicai 2020-09-15, Zhang Nan; Yicai 2022-05-31, Wei Wenwen). LatePost (2025-06-25) says more than 800 million a day on QuestMobile's basis: that is the source of the "800 million daily" line in douyin-social-commerce-profitability, which is consistent with the platform's "over 600 million" and was left as is. QuestMobile March 2026: 1,009.0027 million (Sina, 2026-04-29).
+
+### Douyin enterprise account: overseas-entity route listed, 2026; verification agreement terms
+- Value: the Douyin Enterprise Account Help Center lists "港澳台/海外主体自助入驻" (self-service onboarding for Hong Kong, Macau, Taiwan and overseas entities, created 2026-08-18, updated 2026-08-19) and "抖音企业机构账号海外/跨境主体认证审核规则" (review rules for overseas and cross-border entities, 2026-05-18); both bodies sit behind a Feishu login. The verification agreement (updated 2025-12-16) says the fee is as shown on the application page, is owed whether or not verification succeeds, and review starts within 15 working days. A foreign trademark used on an account needs a Chinese or Madrid registration certificate (rules dated 2024-07-04)
+- As of: August 2026 (route), December 2025 (agreement), July 2024 (trademark rule)
+- Source: Douyin Enterprise Account Help Center (抖音企业号帮助中心)
+- URL: https://renzheng.douyin.com/support/content/227771?graphId=412&mappingType=2&spaceId=77 ; https://renzheng.douyin.com/support/content/208562?graphId=412&mappingType=2&spaceId=77 ; https://renzheng.douyin.com/support/content/123631?graphId=412&mappingType=2&spaceId=77 ; https://renzheng.douyin.com/support/content/141500?graphId=412&mappingType=2&spaceId=77
+- Verified 1: 2026-10-11, fetched with curl in the 07B run (logs/scratch/07B/check.py, tag c1), strings below confirmed
+- Verified 2: 2026-10-11, re-fetched at iteration 8 (tag c2) and again after the quality pass (tag c2b), unchanged; "港澳台/海外主体自助入驻", "2026-08-19 01:08:04", "抖音企业机构账号海外/跨境主体认证审核规则", "2026-05-18 11:47:06", "具体费用标准以认证申请页面公示为准", "相关费用不以认证成功为前提", "15 个工作日内展开认证审核工作", "如为国外商标，需提供国内商标注册证或马德里商标注册证"
+- Used in: douyin-marketing-cost; also chinese-entity-social-media and first-90-days-china-social-media (corrected 2026-10-11, all five locales)
+- Notes: The pages are a single-page app; text read from the platform's knowledge API, https://renzheng.douyin.com/support/backend/content/knowledge/detail?knowledgeId=<id>&graphId=412&spaceId=77 (carries createTime and modifyTime). Cite only that the route and rulebook exist, with their dates; the documents, fee and review time for the overseas route are not public. This supersedes the 2022-based reading in the entry "Douyin enterprise account described as for companies in China". Recheck note, 2026-10-11: if the overseas guide becomes readable without a login, log its documents, fee and review time and update chinese-entity-social-media, first-90-days-china-social-media and douyin-marketing-cost in every locale.
+
+### Ocean Engine ad floors: search budget minimums, oCPM bid floor, TopView list prices (2020), DOU+ order range
+- Value: search 极速智投 7-day steady mode budget at least 2,000 yuan, custom schedule daily budget at least 100 yuan (changelog 2024-09-20); oCPC and oCPM bid floor 0.01 yuan (changelog 2023-05-17); Q4 2020 national rate card: TopView first-refresh CPT 52,800,000 yuan a day, splash rotation 3,600,000 yuan a day per rotation, TopView CPM 320 yuan in core cities, orders from 200,000 yuan net, list prices before discount; DOU+ order budget 10,000 to 500,000,000 fen (100 yuan to 5 million yuan); DOU+ is prepaid and its minimums are set and published by Douyin (agreement published 2026-09-04)
+- As of: September 2024; May 2023; fourth quarter of 2020; March 2025 (SDK file last commit 2025-03-13); September 2026 (DOU+ agreement)
+- Source: Ocean Engine open platform changelog (巨量引擎开放平台); Ocean Engine (巨量引擎) Q4 2020 rate card PDF; Ocean Engine Marketing API SDK (GitHub, oceanengine/ad_open_sdk_go); Douyin (抖音) DOU+ service agreement
+- URL: https://open.oceanengine.com/changelog/1810687227706499 ; https://open.oceanengine.com/changelog/1766128186823680 ; https://lf3-ttcdn-tos.pstatp.com/obj/cognition-public/attachment_pdf_31204ca42bb9640459f1ace869f45701.pdf ; https://github.com/oceanengine/ad_open_sdk_go/blob/master/models/model_douplus_order_create_v3_0_request.go ; https://lf3-cdn-tos.draftstatic.com/obj/ies-hotsoon-draft/douplus/service.html
+- Verified 1: 2026-10-11, fetched with curl in the 07B run (logs/scratch/07B/check.py, tag c1), strings below confirmed
+- Verified 2: 2026-10-11, re-fetched at iteration 8 (tag c2) and again after the quality pass (tag c2b), unchanged; "搜索极速智投-7日稳投，预算设置需>=2000", "日预算设置>=100元", "出价下限为0.01元", "52,800,000 元/天", "核心城市：320 元/CPM", "购满净价20万起售", "数值需为10,000-500,000,000之间的10的倍数", "单位：人民币（分）", "2025-03-13T09:29:04Z", "“DOU+”服务采用预付费方式"
+- Used in: douyin-marketing-cost (search, TopView and DOU+ order range; the 0.01-yuan floor and the DOU+ agreement were cut from the final draft; their check 2 was a separate re-fetch, tag c2x, 2026-10-11)
+- Notes: Changelogs read from https://open.oceanengine.com/skiff/api/doc/client/node/get/?language=CHINESE&identify_key=a8b595247f7f356aac802941ae82ab9e090ba4b3850bce8504b69d7007771e1b&doc_id=<id>; the changelog title is its date. The 2020 card is the only dated official Douyin price list found (a 2023 Q2 card on 巨量学 is behind a permission wall); cite it with its date (fallback 9). Undated live API docs (account daily budget 1,000 yuan, unit budget 300 yuan under OCPM, Qianchuan daily budget 300 yuan, keyword bids 0.2 to 999 yuan) are not citable. The old DOU+ agreement URL (douplus/fd2807f0-...) now serves a different document; use service.html.
+
+### Douyin Shop 2026: technical service fee, deposits, cross-border entry, settlement
+- Value: fee = settlement base x rate, a base rate plus an extra channel rate on Douyin Mall app and Doubao orders, refunded with the order (rules effective 2026-09-30); 2026 base / channel rates: apparel 5% / 5%, facial care 4% / 5.2%, supplements 3% / 3.9%, snack food 2% / 2.6%, cross-border apparel 6% / 4%; product-card orders rebated to an effective 0.6% (domestic) or 1% (cross-border) in 2026; base deposit 500 / 2,000 / 5,000 yuan by last month's GMV, none for "0-yuan entry" shops; 0-yuan entry trial capped at 200 orders and 10,000 yuan, payout 21 days after receipt, no campaigns or affiliate program; cross-border (全球购) needs an overseas or Hong Kong, Macau or Taiwan company, a mainland agent with joint liability and an offshore corporate account, and mainland companies cannot open it (revised 2026-07-15); cross-border deposits paid in yuan, after-sales deposit 2 times the base, 10 times for high-risk sellers (2025-06-05); payout 3 days after confirmed receipt where the after-sales period is 30 days or less
+- As of: September and October 2026 (rules, deposit, rebate); July 2026 (rates, cross-border entry); June 2025 (cross-border deposit)
+- Source: Douyin E-commerce Learning Center (抖音电商学习中心), platform rules
+- URL: https://school.jinritemai.com/doudian/web/article/ followed by 106833, aHijyoJA6hvb, aHMYyFoqESKn, aJcQ5pzG2Vk4, 101830, aHibaVrJVc8f, 108056, 107821, 111412
+- Verified 1: 2026-10-11, fetched with curl in the 07B run (logs/scratch/07B/check.py, tag c1), strings below confirmed
+- Verified 2: 2026-10-11, re-fetched at iteration 8 (tag c2) and again after the quality pass (tag c2b), unchanged; "技术服务费=结算基数×技术服务费费率", "特定渠道范围包括抖音商城APP、豆包", "服饰内衣|服装|/|/|/|5.00%|5.00%", "面部洗护|/|/|4.00%|5.20%", "基础保证金应缴额/元|500|2,000|5,000", "开店主体公司需为海外或港澳台实体公司，不得为境内注册公司", "需按基础保证金应缴金额*10倍进行缴纳", "售后期≤30天的类目|订单确认收货的3天后"
+- Used in: douyin-marketing-cost (the rebate, 0-yuan entry, return insurance and cross-border fee row were cut from the final draft; the rebate, 0-yuan entry and insurance docs got their check 2 by separate re-fetch, tag c2x, 2026-10-11)
+- Notes: Pages are a JavaScript app; text read from https://school.jinritemai.com/api/eschool/v2/library/article/detail?id=<id>&need_content=true. Four docs (rates, settlement, cross-border fees, the affiliate explainer) carry their date only as the platform's update_timestamp, accepted like the Xingtu and Pugongying update times. The table gives two separate rates; never print one combined "commission" figure. The Douyin Pay agreement (version 202601) publishes no payment-channel rate. Return-shipping insurance is optional (payout up to 24 yuan on small items, rules revised 2026-10-08).
+
+### Douyin Select Alliance (精选联盟): commission range and creator platform fee by rating, August 2026
+- Value: merchants set open commission rates of 5% to 50% (targeted plans 5% to 80%, team-leader plans up to 90% combined); creators pay the platform 10% (A, B+, B ratings), 20% (C) or 40% (D) of their commission; commissions settle 15 days after confirmed receipt; published 2026-07-30, effective 2026-08-05
+- As of: August 2026 (page updated 2026-08-08)
+- Source: Douyin E-commerce Learning Center (抖音电商学习中心), 精选联盟推广费/服务费结算规则
+- URL: https://school.jinritemai.com/doudian/web/article/112620
+- Verified 1: 2026-10-11, fetched with curl in the 07B run (logs/scratch/07B/check.py, tag c1), strings below confirmed
+- Verified 2: 2026-10-11, re-fetched at iteration 8 (tag c2) and again after the quality pass (tag c2b), unchanged; "A级：X=10%", "C级：X=20%", "D级：X=40%", "5%-50%", "平台在每一笔有效推广订单到达确认收货的15天后对推广费或团长服务费进行结算", "于2026年7月30日公示，调整部分预计8月5日生效"
+- Used in: douyin-marketing-cost; also live-commerce-china-how-it-works ("roughly a 10% service fee" corrected 2026-10-11, all five locales)
+- Notes: Ebrun (2026-04-03) describes the earlier flat 10% creator fee; superseded from August 5, 2026.
 
 ## Regulatory and legal
 
@@ -1100,6 +1153,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: china-social-media-marketing-cost
 - Notes: Same publisher as above; the two articles give overlapping but not identical ranges for Xiaohongshu. Cite each as written.
 - Re-verified 2026-10-08 for 07A: both ranges and "If brands require influencers to avoid working with competitors for a certain period, pricing can increase substantially" confirmed at check 1 and check 2 (date 05/21/2026). Used in: china-kol-pricing (exclusivity line only).
+- Re-verified 2026-10-11 for 07B: "Average collaborations on Douyin often range between 25,000 USD and 65,000 USD", the Xiaohongshu range and 05/21/2026 confirmed at check 1 and check 2. Used in: douyin-marketing-cost.
 
 ### Xiaohongshu self-serve note boost (薯条): minimum spend and eligibility
 - Value: 75 yuan (750 薯币) minimum per order; no follower threshold; only content published in the last 90 days can be boosted
@@ -1261,6 +1315,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Notes: The strongest published evidence in the ledger that a Chinese platform itemizes the agency fee separately from the creator fee. Reusable for any transparency or billing argument.
 - Re-verified 2026-10-06 for 06A: "总额的5%" and "总额的10%" confirmed; cut from the final 06A draft in the length trim, not cited. Check 1 and check 2 both 2026-10-06.
 - Re-verified 2026-10-08 for 07A: "任务服务费及服务商服务费（若涉及）总额的5%", "总额的10%" and "服务商服务费" confirmed at check 1 and check 2. Used in: china-kol-pricing.
+- Re-verified 2026-10-11 for 07B: "任务服务费及服务商服务费（若涉及）总额的5%" and the 10% line confirmed at check 1 and check 2. Used in: douyin-marketing-cost.
 
 ### Xingtu creator-side fees: 5% on unbound creators, 3% on creator agencies
 - Value: the platform charges a 5% service fee only to 达人 not bound to an MCN; creators bound to an MCN pay nothing, and since April 3, 2023 the MCN pays the platform a 3% technical service fee
@@ -2166,6 +2221,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-06, re-fetched, unchanged
 - Used in: china-marketing-hidden-costs
 - Notes: The minimum top-up clause was not used: no figure, and the cost pillar cites the 2021 FAQ on agent-set first recharges.
+- Re-verified 2026-10-11 for 07B: "本协议项下服务费用采用预先支付的方式", "OCPM（按优化后千次展示收费）" and "最低金额由巨量营销平台确定并公布" confirmed at check 1 and check 2. Used in: douyin-marketing-cost (prepaid, billing modes, minimum top-up set by the platform with no figure published).
 
 ### Ocean Engine balance refund: closes the account, freezes cash, clears grants
 - Value: applying for a balance refund closes the advertiser account and freezes the cash balance; grant balance cannot be spent and is cleared once approved; stages run about 1 to 2 working days each (material review, refundable-amount review, payment)
@@ -2643,6 +2699,45 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - QuestMobile per-post averages (Douyin 39.7k, Xiaohongshu 10.8k yuan, 2024) via an adquan columnist; QuestMobile shows them only in images. Not used.
 - Long Advisory's per-tier US dollar table (Micro to Mega) is an image only; text check impossible. Not used; its text ranges are.
 
+### Short-video production prices in public award notices, 2025 to 2026
+- Value: Beijing Development and Reform Commission paid 245,000 yuan (budget 250,000) for at least 50 original videos, at least 4 a month, to June 30, 2026 (about 4,900 yuan a video at most, derived); a Nanjing university college's 2026 framework award priced promotional film at 7,500 to 10,000 yuan per finished minute and AI promotional video at 3,000 to 8,000 yuan per minute; a Henan institute paid 597,000 yuan for one animated science film and 10 short videos (2025); Guangzhou's culture and tourism bureau paid 958,000 yuan for one year of running its official Douyin account (2025)
+- As of: June 2025 (Beijing award); April 2026 (Nanjing); July 2025 (Henan); September 2025 (Guangzhou)
+- Source: China National Instruments Import and Export Group (中国仪器进出口集团) award notice for the Beijing commission; Nanjing University of Finance and Economics Hongshan College (南京财经大学红山学院); Henan Government Procurement (河南省政府采购网); Guangzhou Culture, Radio, TV and Tourism Bureau (广州市文化广电旅游局)
+- URL: https://bid.cnic.com.cn/fjggs/15679.jhtml ; https://hs.nufe.edu.cn/2026/0328/c347a26378/page.htm ; https://pingdingshan.zfcg.henan.gov.cn/cmsweb81e27e/nas/webfile2024//henan/cgxx/jggg/webinfo/2025/07/15/1810996.htm ; https://wglj.gz.gov.cn/tzgg/zbcg/content/post_10433047.html
+- Verified 1: 2026-10-11, fetched with curl in the 07B run (logs/scratch/07B/check.py, tag c1), strings below confirmed
+- Verified 2: 2026-10-11, re-fetched at iteration 8 (tag c2) and again after the quality pass (tag c2b), unchanged; "“发展北京”视频号原创视频制作成交公告", "245000元", "全年原创视频制作不少于50条，每月不少于4条", "10000元/分钟", "7500元/分钟", "3000元/分钟"; Henan check 2 by separate re-fetch (tag c2x), Guangzhou at c2, both 2026-10-11, both cut from the final draft
+- Used in: douyin-marketing-cost (Beijing and Nanjing; Henan and Guangzhou cut in the length trim)
+- Notes: Government buyers, not brands: a neutral reference, never a market average. Douyin publishes no posting-frequency guidance (help center, updated 2026-01-09, says only that users are usually active after 19:00).
+
+### Douyin live commerce operating costs: host pay, operations pay, fee ratios, margins
+- Value: womenswear hosts with 1 to 2 years' experience earned 25,000 to 50,000 yuan a month in 2023, about 15,000 to 20,000 by April 2025, one host's hourly rate down to about 400 yuan (Cailian Press, interviews); Q4 2025 advertised pay around Beijing: short-video operations 7,300, new-media operations 8,500, e-commerce operations 9,700 yuan a month (CALSS); with mid-tier or larger creators the fee ratio (slot fee, commission, paid traffic) is at least 35% of sales, paid traffic can be more than 30% of traffic at big sessions, top hosts charge 1 to 3 million yuan for a dedicated session, big hosts' commission generally 20% or more, own-store ratios 10+ points lower, one food merchant at 40% to 50% (Ebrun, July 2025); MCNs ask merchants to pay traffic separately since 2025 and a provider says merchants need at least 50% gross margin (Ebrun, April 2026); Yowant's social e-commerce gross margin rose from 2.08% to 5.53% in 2025 (annual report)
+- As of: April 2025; February 2026 (Q4 2025 data); July 2025; April 2026; April 2026 (Yowant annual report dated 2026-04-28)
+- Source: Cailian Press (财联社); China Academy of Labour and Social Security Sciences (中国劳动和社会保障科学研究院); Ebrun (亿邦动力) via Sina Tech and Sina; Yowant (遥望科技) 2025 annual report, Shenzhen Stock Exchange
+- URL: https://www.cls.cn/detail/1992813 ; https://www.calss.net.cn/p1/kybgList/20260224/44935.html ; https://finance.sina.com.cn/tech/roll/2025-07-16/doc-inffsfyq6067212.shtml ; https://finance.sina.cn/tech/2026-04-03/detail-inhtferc8897819.d.html?vt=4 ; https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-04-28/c6762ed2-b22f-4e6a-93c3-681d924ba0ed.PDF
+- Verified 1: 2026-10-11, fetched with curl in the 07B run (logs/scratch/07B/check.py, tag c1), strings below confirmed
+- Verified 2: 2026-10-11, re-fetched at iteration 8 (tag c2) and again after the quality pass (tag c2b), unchanged; "2023年收入区间一般在2.5万元-5万元", "缩水到1.5万元-2万元左右", "京津冀新媒体运营0.85短视频运营0.73", "国内电商运营0.97", "达播费比至少35%以上", "付费流量占比能到30%以上", "头部主播向商家收取的专场费用，大概100万-300万元", "其自播费比基本在40%-50%", "至少50%以上毛利", "社交电商业务整体毛利率由上年的2.08%提升至5.53%"
+- Used in: douyin-marketing-cost
+- Notes: The 30% paid-traffic figure is a share of traffic, not of sales. Cailian Press figures are sourced interviews, not survey data. Yowant's "media resources" cost line is mostly ad-agency buying; do not use it as a traffic-to-GMV ratio. No dated allowed source gives a studio build cost, per-slot fee norms, or a Qianchuan share of GMV.
+
+### Douyin audience, return parcels, a creator tender and a listed brand's channel view
+- Value: October 2025, 22.2% of Douyin users aged 51 or older; Xiaohongshu 54.2% under 30, 37.2% first-tier and new-first-tier (QuestMobile); Douyin app lower-tier (third-tier and below) MAU over 500 million (QuestMobile, July 2026); Douyin e-commerce is 10% to 20% of national e-commerce return parcels (100EC data via 21st Century Business Herald, May 2026); Fuling Zhacai budgeted 805,000 yuan for at least 500 Douyin creator videos with sales of at least 3.8 times production fees (tender, June 2026); Zhongjing Foods treats Douyin and Kuaishou as launch windows aiming to break even with a slight profit (April 2024); 9 to 12 of every 100 videos a user sees are e-commerce content from trade and paid pools (LatePost, September 2025)
+- As of: December 2025; July 2026; May 2026; June 2026; April 2024; September 2025
+- Source: QuestMobile on 36Kr (36氪); 21st Century Business Herald (21世纪经济报道); Chongqing Fuling Zhacai Group (涪陵榨菜); LatePost (晚点LatePost) via Sina Finance
+- URL: https://www.36kr.com/p/3597577937502473 ; https://www.36kr.com/p/3884935514648839 ; https://www.21jingji.com/article/20260519/405e1b01c27de014f97f27670fe0cb1c.html ; https://www.flzc.com/html/text/4e25c8cc173f8ade8949b9d1a6d364b3.html ; https://www.21jingji.com/article/20240411/herald/2c9861b61345c86a8bdcd2a409a45f4e.html ; https://finance.sina.com.cn/stock/t/2025-09-08/doc-infpuwrf4417383.shtml
+- Verified 1: 2026-10-11, fetched with curl in the 07B run (logs/scratch/07B/check.py, tag c1), strings below confirmed
+- Verified 2: 2026-10-11, re-fetched at iteration 8 (tag c2) and again after the quality pass (tag c2b), unchanged; "抖音、快手51岁及以上用户占比分别达到22.2%、22.6%", "微博、小红书、哔哩哔哩30岁以下用户占比分别为58.6%、54.2%、66.5%", "抖音APP下沉市场月活跃用户规模超5亿", "抖音电商日均退货量占全国电商逆向件的10%至20%", "80.5万元（大写：捌拾万零伍仟元整）", "≥该批次总制作费×3.8倍", "对此要求就是做到保持盈亏平衡，稍有利润", "大约会看到 9-12 个来自 M2、M3 流量池的电商内容"
+- Used in: douyin-marketing-cost
+- Notes: Fuling Zhacai is a tender budget, not an award; 1,610 yuan a video is a derived ceiling. Zhongjing Foods is older than 12 months; cite with its 2024 date. No allowed 2025 to 2026 source gives Douyin's gender split or a Douyin search MAU.
+
+### NOT LOGGED, searched and rejected 2026-10-11 (Douyin marketing cost)
+- Douyin ad first deposit (10,000 yuan direct, 3,000 to 5,000 via agent): agency, reseller and self-media pages only. Still no platform figure; the 2026 agreement says the platform sets and publishes it.
+- "750 million daily active users" and "750 to 766 million MAU, 587 million daily": no allowed source. "Q1 2026 DAU 8.3 or 9.8 亿": aggregator snippets only.
+- Undated Ocean Engine API docs (account daily budget 1,000 yuan, OCPM unit budget 300, Qianchuan daily budget 300, keyword bids 0.2 to 999): strings verified, no date. Not cited.
+- Douyin CPM or CPC levels 2025 to 2026, Qianchuan share of GMV, studio build cost, slot-fee norms, Douyin gender split, Douyin search MAU (7.6 亿, 53 亿 daily searches): no dated allowed source.
+- 2025 to 2026 Douyin creator prices by follower tier from a dated Chinese publisher: none (jiemian 2021 data too old; agency tables undated).
+- Host pay for 2024 graduates (MyCOS via a Tencent News creator account), china.com self-media return rates, 36Kr return rates (search summary only), East Buy HKEX filings (PDF unreadable): rejected.
+- 36kr.com sometimes returns a JavaScript shell to curl; the two QuestMobile pages passed check 1, check 2 and the post-quality re-fetch on 2026-10-11.
+
 ## TheRedScroll first-party data
 
 Everything here comes from accounts we run. It is cited as ours, with sample
@@ -2683,6 +2778,7 @@ data.
 - Re-verified 2026-10-05 for 05D on the live /pricing/ page: "6-month minimum contract on all packages", "within 2 weeks of contract signing", "Real-life photo & video shoots in China", "KOL & KOC campaigns", "Paid directly to the platform, not through us" and the add-on platform line "Meituan / Dianping" confirmed at check 1 and check 2. No price or tier name used. Used in: travel-hospitality.
 - Re-verified 2026-10-06 for 06A: on the live /pricing/ page "Custom quote", "2-3 weeks from brief approval", "Minimum 4 posts/month per platform", "Paid directly to the platform, not through us" and "6-month minimum contract" confirmed; no price or tier name used at check 1 and check 2. Used in: china-marketing-hidden-costs.
 - Re-verified 2026-10-06 for 06B: on the live /pricing/ page "membership Mini Programs. Custom quote" confirmed at check 1 and check 2. Referenced by name only; no price or tier name used. Used in: wechat-mini-program-cost.
+- Re-verified 2026-10-11 for 07B on the live /pricing/ page: "Client-provided footage edited and subtitled by us", "Real-life photo & video shoots in China", "Paid directly to the platform, not through us" and "6-month minimum contract" confirmed at check 1 and check 2. Named only, no price or tier name. Used in: douyin-marketing-cost.
 
 ### TheRedScroll community, reporting and account-ownership commitments, as published
 - Value: "We reply to comments, answer direct messages, monitor brand mentions daily" and "a response playbook agreed with you upfront, and same-day escalation when something could spread"; crisis response plan "within hours" (/weibo-agency/). Day-to-day running includes "community replies" and "monthly reporting in plain English"; report covers "follower growth, article reads, engagement, ad spend at cost, and leads or sales where tracking allows"; WeChat account "registered under your company name", client keeps "the account, the followers, and the full content archive" (/wechat-agency/). Monthly reports cover "follower growth, engagement rates, content performance, ad spend efficiency, and competitive benchmarking"; KPIs "reviewed monthly, recalibrated quarterly" (/services/strategy-campaigns/). Reporting "in English with Chinese-language data attached" (/platforms/others/). "We write in Chinese. Not translate." and real-life production "quoted separately" (/services/content-production/)
@@ -2705,6 +2801,7 @@ data.
 - Verified 2: 2026-09-28, re-fetched twice, unchanged
 - Used in: xiaohongshu-advertising-formats-costs
 - Notes: Cite as ours, as planning ranges, never as a platform average. Settled 2026-10-02: these are published planning figures, not measured data, so no sample size applies; 04B labels them as our planning ranges as published on /services/advertising/ and never as a platform average or account results. Higher CPMs on Chinese agent pages are not citable and were not used. If the advertising page changes, 04B changes with it, in every locale.
+- Douyin line added 2026-10-11 for 07B: /services/advertising/ publishes "Douyin in-feed from ¥1,000/day", "CPC from ¥0.2. CPM ¥10 to ¥50." and TopView "Minimum ¥200,000+." (the last matches the Q4 2020 rate card's 200,000-yuan net minimum for TopView CPM orders), confirmed on the live page at check 1 and check 2. Quoted as our planning ranges, never a platform average. Used in: douyin-marketing-cost.
 
 ### Camper case study results, as published
 - Value: followers 43,000 to 187,000 in 18 months across WeChat, RedNote (Xiaohongshu) and Weibo; engagement rate 1.2% to 4.7%; 38% of e-commerce traffic from RedNote; same-store sales up 31% year on year; no discount campaigns. Also on the page but not yet used: retention up 22%, purchase frequency 1.3 to 2.1 per customer a year
@@ -2781,6 +2878,7 @@ set to blocked by its draft run.
 - Verified 2: 2026-10-08, re-fetched twice (iteration 8 and after the quality pass), unchanged
 - Used in: china-kol-pricing
 - Notes: Cite as ours, as planning ranges, never as measured data or a market average. If the service page changes, 07A changes with it, in every locale.
+- Re-verified 2026-10-11 for 07B: the three Douyin tiers and "Base fee plus 20 to 40% commission on sales" confirmed on the live page at check 1 and check 2. Used in: douyin-marketing-cost.
 
 ### WeChat Mini Program transaction volume, Q3 2024
 - Value: more than 2 trillion yuan in the quarter, up by double digits year over year ("十几个百分点")

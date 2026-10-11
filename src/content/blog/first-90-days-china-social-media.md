@@ -4,7 +4,7 @@ description: "Accounts can be live in two weeks. The Chinese name takes months t
 metaTitle: "Your First 90 Days on Chinese Social Media"
 metaDescription: "A realistic week-by-week timetable for launching a brand on Chinese social media, including verification waits, localization and first results."
 publishDate: 2026-09-10
-updatedDate: 2026-10-02
+updatedDate: 2026-10-11
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "Strategy"
@@ -67,7 +67,7 @@ step-by-step guide to [Xiaohongshu business account setup](/insights/xiaohongshu
 covers the desktop-only rule for overseas entities, the three naming tests
 and the five published grounds for rejection.
 
-[Douyin (抖音)](/platforms/douyin/) is the exception. Its own help pages
+[Douyin (抖音)](/platforms/douyin/) is the hard one. Its public help pages
 describe the enterprise account as a product for companies in China.
 
 > Douyin's FAQ describes the enterprise account as an account that companies
@@ -79,13 +79,21 @@ describe the enterprise account as a product for companies in China.
 > after that, and takes about two working days to review.
 > Source: Ocean Engine (巨量引擎), Douyin Blue V verification FAQ, May 2022. https://www.oceanengine.com/faq/douyin-qyh-zmrzn.html
 
-So a pre-entry brand opens Douyin through a mainland entity it already has,
-or leaves it for a later phase. Ask your agency which applies before the
-launch date is set.
+Since 2026, Douyin's help center has also listed a self-service route for
+overseas entities. Its documents, fee and review time sit behind a login.
+
+> Douyin's enterprise account help center lists a self-service onboarding
+> guide for Hong Kong, Macau, Taiwan and overseas entities, updated August 19,
+> 2026.
+> Source: Douyin Enterprise Account Help Center (抖音企业号帮助中心), August 2026. https://renzheng.douyin.com/support/content/227771?graphId=412&mappingType=2&spaceId=77
+
+So a pre-entry brand tests that overseas route, opens Douyin through a
+mainland entity it already has, or leaves it for a later phase. Ask your
+agency which applies before the launch date is set.
 
 | Document | WeChat Official Account | Xiaohongshu enterprise account | Douyin enterprise account |
 |---|---|---|---|
-| Company registration certificate | Overseas certificate accepted | Overseas certificate accepted | Chinese business license |
+| Company registration certificate | Overseas certificate accepted | Overseas certificate accepted | Chinese business license (overseas route not public) |
 | Contact or operator ID | Both sides, color scan | Operator details on the form | Legal representative ID for sole traders |
 | Application letter | Chinese or English template | Platform template | Platform template |
 | Operation authorization letter | Required | Not listed | Not listed |
@@ -101,7 +109,7 @@ Everything else is platform-specific and small.
 
 The first decision is which entity applies. WeChat (微信) and Xiaohongshu
 (小红书) accept an overseas company. Douyin (抖音), as above, is built for a
-Chinese one. Settle this in week one, because it decides which accounts can
+Chinese one, and its overseas route is not public. Settle this in week one, because it decides which accounts can
 be live in week two.
 [Our platform-by-platform answer on whether you need a Chinese entity](/insights/chinese-entity-social-media/)
 covers the edge cases, from Weibo's agent route to agency-held accounts.
@@ -323,7 +331,8 @@ contact person's ID scanned in color on both sides, a signed application
 letter plus an operation authorization letter, and a phone bill or bank
 statement tied to the contact person. Xiaohongshu (小红书) adds a stamped
 translation for anything not in Chinese or English. Douyin (抖音) asks for a
-Chinese business license.
+Chinese business license on its public pages. The papers for its overseas
+route sit behind a login.
 
 ### When should I expect the first results?
 

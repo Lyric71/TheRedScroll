@@ -4,6 +4,7 @@ description: "Douyin n’est pas TikTok. Ouverture de compte, formats de contenu
 metaTitle: "Douyin pour les marques occidentales : le guide complet"
 metaDescription: "Douyin n’est pas TikTok : ouverture de compte, contenu qui marche, coûts KOL, publicité Ocean Engine et Douyin Shop. Le guide des marques occidentales."
 publishDate: 2026-07-16
+updatedDate: 2026-10-11
 author: "TheRedScroll"
 platforms: ["douyin"]
 category: "Stratégie"
@@ -11,7 +12,7 @@ keywords: ["marketing Douyin", "Douyin marques occidentales", "Douyin vs TikTok"
 featured: false
 featuredImage: "/images/blog/douyin-shoppable-video.webp"
 keyFacts:
-  - "Douyin réunit de 750 à 766 millions d’utilisateurs actifs par mois et près de 587 millions par jour, selon les synthèses sectorielles."
+  - "En juin 2026, Douyin comptait environ 1,03 milliard d’utilisateurs actifs par mois, selon QuestMobile. Ocean Engine revendique toujours plus de 600 millions d’utilisateurs par jour."
   - "Le GMV e-commerce de Douyin devait franchir les 4 000 milliards de yuans en 2025, en hausse de plus de 30 % sur un an. Source : LatePost, novembre 2025."
   - "L’amplification payante via Ocean Engine ramène le CPM à 30-60 yuans, contre 200-300 yuans pour un contenu KOL organique. Source : Qinggua Media, Digitaling, Ebrun, Youzan."
   - "En Chine, un KOL de premier plan facture de 500 000 à 5 millions de yuans la publication. Un KOC coûte en général de 200 à 5 000 yuans."
@@ -27,7 +28,7 @@ Pour une marque occidentale, tout se joue en trois temps. Passer la vérificatio
 
 Douyin (抖音), c’est l’application dont TikTok est issu. Les deux sont nées chez ByteDance. Mais elles n’ont plus rien en commun : utilisateurs, contenus, outils commerciaux, tout diffère.
 
-En Chine, Douyin déborde très largement le fil vidéo. C’est l’une des machines de vente les plus redoutables au monde. Les synthèses sectorielles lui prêtent de 750 à 766 millions d’utilisateurs actifs par mois, et près de 587 millions par jour.
+En Chine, Douyin déborde très largement le fil vidéo. C’est l’une des machines de vente les plus redoutables au monde. QuestMobile lui attribuait environ 1,03 milliard d’utilisateurs actifs mensuels en juin 2026. Ocean Engine, la régie publicitaire de ByteDance, en revendique toujours plus de 600 millions par jour auprès des annonceurs.
 
 Sa vraie singularité, c’est le commerce. Le GMV de son activité e-commerce devait dépasser les 4 000 milliards de yuans en 2025, en progression de plus de 30 % sur un an.
 
@@ -139,6 +140,8 @@ La plateforme abaisse malgré tout le plancher de coût. Douyin a lancé neuf me
 Restez lucide sur le budget. La plupart des marques ne gagnent pas d’argent sur Douyin la première année. Selon une analyse publiée sur Zhihu, Bluemoon, l’une des plus grandes marques d’entretien domestique du pays, a collaboré avec plus de 3 000 influenceurs et englouti 40 millions de yuans en trafic payant. Le ROI n’a jamais atteint l’équilibre.
 
 Ce n’est pas une raison de bouder Douyin. C’est une raison de poser les chiffres avant de se lancer.
+
+Pour le détail de chacun de ces coûts, avec une source datée pour chaque chiffre, consultez [notre décryptage du coût du marketing sur Douyin](/fr/decryptages/douyin-marketing-cost/).
 
 ## Comment fonctionnent Douyin Shop et le commerce social ?
 

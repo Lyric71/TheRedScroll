@@ -4,6 +4,7 @@ description: "Live Commerce ist Chinas leistungsstärkster Kanal geworden. Eine 
 metaTitle: "Live Commerce in China verstanden"
 metaDescription: "Live Commerce generiert 65 bis 70 % der Influencer-Verkäufe in China. Conversion-Raten, Provisionen, MCN: Das Wesentliche im Überblick."
 publishDate: 2026-04-02
+updatedDate: 2026-10-11
 author: "TheRedScroll"
 platforms: ["douyin"]
 category: "Strategie"
@@ -72,7 +73,7 @@ Provisionssätze nach Kategorie:
 | Elektronik und Technologie | 3–8 % |
 | Luxus | 5–15 % (zuzüglich Festpauschale) |
 
-Taobao Union und Douyin Select Alliance automatisieren die Nachverfolgung und Auszahlungen. Servicegebühr: rund 10 Prozent.
+Taobao Union und Douyin Select Alliance automatisieren die Nachverfolgung und Auszahlungen. Dafür behalten sie einen Teil jeder Provision ein. Bei Douyin Select Alliance zahlen Creator seit August 2026 10 Prozent, schlecht bewertete 20 bis 40 Prozent.
 
 ## KI im Hintergrund
 

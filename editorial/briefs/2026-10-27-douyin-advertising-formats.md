@@ -62,7 +62,7 @@ still current, reuse the logged citation instead of researching again. If you
 find a new figure, append it to that ledger before you finish.
 
 - Ad format specifications, cite the platform
-- Benchmark ranges from our own managed accounts, labeled as ours
+- Benchmark ranges from our own managed accounts, labeled as ours, only if they are logged in the ledger's first-party section with value, sample, period and clearance by the draft run; otherwise use the planning ranges published on /services/advertising/, labeled as ours and as planning figures (04B precedent), plus the dated platform floors logged by the 07B run (search 极速智投 budgets, oCPM bid floor, DOU+ order range, the Q4 2020 Ocean Engine rate card as the only dated official price list), and cut cost per order if no dated source exists (amended 2026-10-11 by the 07B draft run: no Douyin CPM, CPC or cost-per-order benchmark has a dated allowed source; SPEC settled fallbacks 1 and 3)
 
 **If a figure cannot be sourced, cut the claim.** Do not estimate, do not
 hedge, do not write "industry sources suggest". A missing number is better

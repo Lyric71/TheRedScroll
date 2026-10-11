@@ -202,6 +202,8 @@ kursierenden Beträge stammen aus Blogs von Wiederverkäufern, nicht von der
 Plattform, und sie unterscheiden sich von Agent zu Agent. Lassen Sie sich
 die Schwelle von dem Agenten, der Ihr Konto eröffnet, schriftlich bestätigen.
 
+Alle übrigen Douyin-Kostenposten, von der Videoproduktion bis zum Live-Commerce, beziffert [unsere Analyse der Douyin-Marketing-Kosten](/de/analysen/douyin-marketing-cost/).
+
 [Xiaohongshu-Anzeigen](/de/rednote-agentur/) laufen über die eigene Plattform
 Juguang (聚光). Ausländischen Marken wird oft erzählt, ohne Agenten gehe es
 nicht. Ein offizielles Dokument von Xiaohongshu verlangt das nicht.

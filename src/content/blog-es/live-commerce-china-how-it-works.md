@@ -4,6 +4,7 @@ description: "El live commerce es el canal que más convierte en China. Cómo se
 metaTitle: "Live commerce en China, al detalle"
 metaDescription: "El live commerce mueve el 65-70 % de las ventas de influencer en China. Conversión, comisiones, MCN y lo que conviene saber antes de invertir."
 publishDate: 2026-04-02
+updatedDate: 2026-10-11
 author: "TheRedScroll"
 platforms: ["douyin"]
 category: "Estrategia"
@@ -76,7 +77,7 @@ Las tasas varían por categoría de producto:
 | Electrónica y tech | 3-8 % |
 | Lujo | 5-15 % (más fijos) |
 
-Plataformas como Taobao Union y Douyin Select Alliance automatizan el seguimiento y los pagos, y se llevan en torno a un 10 % de tasa de servicio sobre las comisiones.
+Plataformas como Taobao Union y Douyin Select Alliance automatizan el seguimiento y los pagos, y se quedan con una parte de cada comisión. Desde agosto de 2026, Douyin Select Alliance cobra a los creadores un 10 %, que sube al 20 % o al 40 % si su calificación es baja.
 
 ## La IA, entre bastidores
 

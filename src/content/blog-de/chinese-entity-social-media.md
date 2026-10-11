@@ -1,10 +1,10 @@
 ---
 title: "Social Media in China: Braucht es dafür eine chinesische Gesellschaft?"
-description: "In den meisten Fällen nicht, jedenfalls nicht zum Start. Drei der vier maßgeblichen Plattformen verifizieren auch Unternehmen, die außerhalb Festlandchinas eingetragen sind. Zwei legen ihre Regeln offen. Die dritte verweist auf einen Agenten."
+description: "In den meisten Fällen nicht, jedenfalls nicht zum Start. WeChat und Xiaohongshu verifizieren ausländische Unternehmen nach veröffentlichten Regeln. Weibo verweist auf einen Agenten. Douyin nennt inzwischen einen Weg für das Ausland, verbirgt die Einzelheiten aber hinter einem Login."
 metaTitle: "Social Media in China: Gesellschaft vor Ort nötig?"
 metaDescription: "WeChat, Xiaohongshu, Douyin, Weibo: Was jede Plattform ausländischen Marken ohne chinesische Gesellschaft erlaubt und wo die echten Grenzen liegen."
 publishDate: 2026-09-24
-updatedDate: 2026-10-02
+updatedDate: 2026-10-11
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Strategie"
@@ -20,7 +20,7 @@ An dieser Frage scheitert so manches erste Gespräch. Die Antworten im Netz wide
 | WeChat (微信) | Ausländische Gesellschaften zugelassen, ein Konto | Registrierungsnachweis, gestempelte Schreiben | 99 US-Dollar im Jahr |
 | Xiaohongshu (小红书) | Ausländische Gesellschaften ausdrücklich zugelassen | BR oder CR, gestempelte chinesische Übersetzung | 600 Yuan im Jahr |
 | Weibo (微博) | Ausländische Gesellschaften nur über einen Agenten | Nicht über das Selbstbedienungsformular | 600 Yuan |
-| Douyin (抖音) | Keine Regel, weder dafür noch dagegen | Eine Gewerbelizenz vom Festland | 600 Yuan im ersten Jahr |
+| Douyin (抖音) | Ein Auslandsweg, Einzelheiten hinter einem Login | Festlandlizenz laut den öffentlichen Seiten | 600 Yuan im ersten Jahr (Festland) |
 
 Zwei Einschränkungen vorweg. Ein Konto zu besitzen heißt noch lange nicht, alle seine Funktionen nutzen zu dürfen, und bei der Werbung wird das sichtbar. Vor allem aber lässt sich die Frage selten mit Ja oder Nein beantworten. Sie ist eine Frage des Zeitpunkts: In den ersten sechs Monaten erfordert kaum etwas eine Gesellschaft auf dem Festland.
 
@@ -92,7 +92,7 @@ Keine dieser Zeilen steht einem Markteintritt im Weg. Sie kosten ein paar Wochen
 
 Bei diesen beiden Plattformen irren die selbstgewissen Blogbeiträge, und zwar in entgegengesetzte Richtungen.
 
-Douyin (抖音) veröffentlicht keinerlei Regel für ausländische Gesellschaften. Veröffentlicht sind lediglich eine Beschreibung und eine Unterlagenliste, die eine Lizenz vom Festland voraussetzt.
+Douyin (抖音) nennt inzwischen einen Weg für ausländische Gesellschaften, legt die Einzelheiten aber nicht offen. Öffentlich zugänglich sind weiterhin nur eine Beschreibung und eine Unterlagenliste, die eine Lizenz vom Festland voraussetzt.
 
 > Die FAQ der Plattform beschreibt das Douyin-Unternehmenskonto als Konto für Unternehmen in der Region China.
 > Quelle: Ocean Engine (巨量引擎), FAQ zum Douyin-Unternehmenskonto, Mai 2022. https://www.oceanengine.com/faq/douyin-qyh-kslj.html
@@ -100,7 +100,12 @@ Douyin (抖音) veröffentlicht keinerlei Regel für ausländische Gesellschafte
 > Die Douyin-Unternehmensverifizierung verlangt eine Gewerbelizenz und ein Antragsschreiben, kostet im ersten Jahr 600 Yuan und 120 Yuan jährlich für die Verlängerung, und die Qualifikationsprüfung ist etwa 2 Arbeitstage nach Einreichung abgeschlossen.
 > Quelle: Ocean Engine (巨量引擎), FAQ zur Douyin-Unternehmensverifizierung, Mai 2022. https://www.oceanengine.com/faq/douyin-qyh-zmrzn.html
 
-Die Unterlagenliste ist das eigentliche Indiz. Keine Seite bei Ocean Engine verbietet einem ausländischen Unternehmen den Antrag. Keine erlaubt ihn ausdrücklich. Douyin ist daher als ungeregelt zu betrachten: nicht verschlossen, nur nicht festgeschrieben. Steht Douyin im Zentrum Ihrer Planung, kalkulieren Sie eine Gesellschaft auf dem Festland ein und suchen Sie nicht länger nach einer Regel, die es nicht gibt.
+Diese Seiten stammen aus dem Jahr 2022. Seit 2026 führt das Hilfecenter für Douyin-Unternehmenskonten zwei neue Einträge: einen Leitfaden zur Selbstregistrierung ausländischer Gesellschaften und ein eigenes Prüfregelwerk für ausländische und grenzüberschreitende Antragsteller.
+
+> Das Hilfecenter für Douyin-Unternehmenskonten führt einen Leitfaden zur Selbstregistrierung für Gesellschaften aus Hongkong, Macau, Taiwan und dem Ausland, aktualisiert am 19. August 2026, sowie ein Regelwerk zur Verifizierungsprüfung ausländischer und grenzüberschreitender Gesellschaften vom 18. Mai 2026.
+> Quelle: Douyin-Hilfecenter für Unternehmenskonten (抖音企业号帮助中心), August 2026. https://renzheng.douyin.com/support/content/227771?graphId=412&mappingType=2&spaceId=77
+
+Beide Dokumente liegen hinter einem Login. Welche Unterlagen, welche Gebühr und welche Prüfdauer für diesen Weg gelten, ist deshalb nicht öffentlich. Auf dem Papier ist Douyin für ausländische Unternehmen nicht mehr verschlossen. Durchschaubar ist es trotzdem nicht. Steht Douyin im Zentrum Ihrer Planung, lassen Sie Ihre Agentur zuerst den Auslandsweg erproben, bevor Sie eine Gesellschaft auf dem Festland einkalkulieren.
 
 Weibo (微博) äußert sich ausführlich zur Verifizierung, doch was ausländische Marken wissen müssen, steht versteckt auf einer Seite, die von etwas ganz anderem handelt. Zunächst zum Formular selbst, das auf ein Unternehmen vom Festland zugeschnitten ist.
 
@@ -121,10 +126,10 @@ Weibo kennt zwar einen gesonderten Weg per E-Mail, doch der ist nicht für gewö
 
 | | Douyin (抖音) | Weibo (微博) |
 |---|---|---|
-| Regel für das Ausland veröffentlicht | Nein | Nur in den Regeln zum Gesellschaftswechsel |
-| Weg für eine ausländische Marke | Ungeregelt | Ein autorisierter ausländischer Agent |
-| Gebühr | 600 Yuan, danach 120 im Jahr | 600 Yuan je Antrag |
-| Prüfung | Etwa 2 Arbeitstage | 1 Arbeitstag für einen Gesellschaftswechsel |
+| Regel für das Ausland veröffentlicht | Seit 2026 gelistet, hinter einem Login | Nur in den Regeln zum Gesellschaftswechsel |
+| Weg für eine ausländische Marke | Selbstregistrierung für das Ausland, Einzelheiten nicht öffentlich | Ein autorisierter ausländischer Agent |
+| Gebühr | 600 Yuan, danach 120 im Jahr (Festland-FAQ) | 600 Yuan je Antrag |
+| Prüfung | Etwa 2 Arbeitstage (Festland-FAQ) | 1 Arbeitstag für einen Gesellschaftswechsel |
 | Konten je Lizenz | Nicht angegeben | Mehrere auf eine Lizenz |
 
 ## Grenzüberschreitender E-Commerce als Einstieg
@@ -218,7 +223,7 @@ Eine Agentur, die nicht alle drei schriftlich beantworten kann, hat damit bereit
 | Sie testen die Nachfrage, noch ohne Umsatz in China | WeChat Service Account und Xiaohongshu, beide auf Ihre eigene Gesellschaft | Nein |
 | Sie verkaufen an Verbraucher, ohne Lager auf dem Festland | Grenzüberschreitender Einzelhandelsimport, innerhalb der Grenzen von 5.000 und 26.000 Yuan | Nein |
 | Sie wollen Werbung auf Xiaohongshu schalten | Ihr eigenes Konto, nach Abgleich mit der Branchenliste für ausländische Gesellschaften | Nein, sofern Ihre Kategorie offen ist |
-| Douyin steht im Zentrum der Planung | Eine Gesellschaft auf dem Festland einkalkulieren | Wahrscheinlich ja |
+| Douyin steht im Zentrum der Planung | Zuerst Douyins Auslandsweg, bei Misserfolg eine Gesellschaft auf dem Festland | Vielleicht |
 | Sie stellen vor Ort ein, fakturieren in Yuan, halten Lager | Eine Gesellschaft auf dem Festland | Ja |
 | Eine Agentur bietet Ihnen ein Konto auf ihre Lizenz an | Zuerst die drei Vertragsfragen klären | Nein, aber lesen Sie Klausel 6.1 |
 

@@ -4,7 +4,7 @@ description: "In zwei Wochen stehen die Konten. Der chinesische Markenname brauc
 metaTitle: "Chinas soziale Netzwerke: die ersten 90 Tage"
 metaDescription: "Konten, Verifizierung, chinesischer Name, erste Inhalte, erste Anfragen: der Ablauf eines Markenstarts in China, Woche für Woche aufgeschlüsselt."
 publishDate: 2026-09-10
-updatedDate: 2026-10-02
+updatedDate: 2026-10-11
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "Strategie"
@@ -73,8 +73,8 @@ zur Einrichtung eines Xiaohongshu-Unternehmenskontos](/de/analysen/xiaohongshu-b
 behandelt die Browserpflicht für ausländische Gesellschaften, die drei
 Namensprüfungen und die fünf veröffentlichten Ablehnungsgründe.
 
-[Douyin (抖音)](/de/plattformen/douyin/) fällt aus dem Rahmen: Die eigenen
-Hilfeseiten behalten das Unternehmenskonto Firmen in China vor.
+[Douyin (抖音)](/de/plattformen/douyin/) ist der schwierige Fall: Die
+öffentlichen Hilfeseiten behalten das Unternehmenskonto Firmen in China vor.
 
 > Die FAQ von Douyin beschreibt das Unternehmenskonto als ein Konto, das
 > Firmen in China verifizieren lassen können.
@@ -85,14 +85,23 @@ Hilfeseiten behalten das Unternehmenskonto Firmen in China vor.
 > Yuan jährlich, und die Prüfung dauert rund zwei Arbeitstage.
 > Quelle: Ocean Engine (巨量引擎), FAQ zur Blue-V-Verifizierung bei Douyin, Mai 2022. https://www.oceanengine.com/faq/douyin-qyh-zmrzn.html
 
-Einer Marke vor dem Markteintritt bleiben damit zwei Wege: Douyin über eine
-chinesische Rechtsform eröffnen, die sie ohnehin hält, oder die Plattform
-vertagen. Diese Frage klärt man mit der Agentur, bevor ein Starttermin
-steht. Nicht danach.
+Seit 2026 führt das Hilfecenter von Douyin zudem einen Weg zur
+Selbstregistrierung für ausländische Gesellschaften. Unterlagen, Gebühr und
+Prüfdauer sind erst nach dem Login einsehbar.
+
+> Das Hilfecenter für Douyin-Unternehmenskonten führt einen Leitfaden zur
+> Selbstregistrierung für Gesellschaften aus Hongkong, Macau, Taiwan und
+> dem Ausland, aktualisiert am 19. August 2026.
+> Quelle: Douyin-Hilfecenter für Unternehmenskonten (抖音企业号帮助中心), August 2026. https://renzheng.douyin.com/support/content/227771?graphId=412&mappingType=2&spaceId=77
+
+Einer Marke vor dem Markteintritt bleiben damit drei Wege: diesen
+Auslandsweg testen, Douyin über eine chinesische Rechtsform eröffnen, die
+sie ohnehin hält, oder die Plattform vertagen. Diese Frage klärt man mit der
+Agentur, bevor ein Starttermin steht. Nicht danach.
 
 | Unterlage | WeChat Official Account | Xiaohongshu Unternehmenskonto | Douyin Unternehmenskonto |
 |---|---|---|---|
-| Registerbescheinigung | Ausländische Bescheinigung akzeptiert | Ausländische Bescheinigung akzeptiert | Chinesische Gewerbeerlaubnis |
+| Registerbescheinigung | Ausländische Bescheinigung akzeptiert | Ausländische Bescheinigung akzeptiert | Chinesische Gewerbeerlaubnis (Auslandsweg nicht öffentlich) |
 | Ausweis der Kontaktperson oder des Betreibers | Beide Seiten, Farbscan | Betreiberangaben im Formular | Ausweis des gesetzlichen Vertreters bei Einzelunternehmen |
 | Antragsschreiben | Vorlage auf Chinesisch oder Englisch | Vorlage der Plattform | Vorlage der Plattform |
 | Betriebsvollmacht | Erforderlich | Nicht aufgeführt | Nicht aufgeführt |
@@ -109,8 +118,9 @@ von Plattform zu Plattform verschieden aus und wiegt kaum.
 
 Zuerst ist zu klären, welche Rechtsform den Antrag stellt. WeChat (微信) und
 Xiaohongshu (小红书) akzeptieren ein ausländisches Unternehmen; Douyin (抖音)
-ist, wie beschrieben, auf ein chinesisches zugeschnitten. Der Punkt gehört in
-Woche 1, denn von ihm hängt ab, welche Konten in Woche 2 stehen können.
+ist, wie beschrieben, auf ein chinesisches zugeschnitten, und sein Auslandsweg
+ist nicht öffentlich dokumentiert. Der Punkt gehört in Woche 1, denn von ihm
+hängt ab, welche Konten in Woche 2 stehen können.
 [Unsere Analyse, Plattform für Plattform, ob Sie eine chinesische Gesellschaft brauchen](/de/analysen/chinese-entity-social-media/)
 behandelt die Grenzfälle, vom Agentenweg bei Weibo bis zum Konto auf die Agentur.
 
@@ -348,7 +358,9 @@ der Kontaktperson als Farbscan beider Seiten, ein unterschriebenes
 Antragsschreiben samt Betriebsvollmacht sowie eine Telefonrechnung oder ein
 Kontoauszug, der auf die Kontaktperson läuft. Xiaohongshu (小红书) verlangt
 zusätzlich eine gestempelte Übersetzung für alles, was weder chinesisch noch
-englisch ist. Douyin (抖音) fordert eine chinesische Gewerbeerlaubnis.
+englisch ist. Douyin (抖音) verlangt auf seinen öffentlichen Seiten eine chinesische
+Gewerbeerlaubnis. Die Unterlagen für den Weg ausländischer Unternehmen sind erst
+nach dem Einloggen einsehbar.
 
 ### Wann sind die ersten Ergebnisse zu erwarten?
 

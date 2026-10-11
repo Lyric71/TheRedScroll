@@ -4,7 +4,7 @@ description: "Deux semaines suffisent pour ouvrir les comptes. Protéger le nom 
 metaTitle: "Réseaux sociaux chinois : les 90 premiers jours"
 metaDescription: "Ouverture des comptes, certification, nom chinois, premiers contenus, premiers prospects : le déroulé semaine par semaine d’un lancement en Chine."
 publishDate: 2026-09-10
-updatedDate: 2026-10-02
+updatedDate: 2026-10-11
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "Stratégie"
@@ -74,8 +74,8 @@ d’ouverture d’un compte entreprise Xiaohongshu](/fr/decryptages/xiaohongshu-
 détaille le dépôt obligatoire sur le web pour les entités étrangères, les
 trois tests de nommage et les cinq motifs de refus publiés.
 
-[Douyin (抖音)](/fr/plateformes/douyin/) échappe à la règle. Ses pages d’aide
-réservent le compte entreprise aux sociétés implantées en Chine.
+[Douyin (抖音)](/fr/plateformes/douyin/) est le cas épineux. Ses pages d’aide
+publiques réservent le compte entreprise aux sociétés implantées en Chine.
 
 > La FAQ de Douyin décrit le compte entreprise comme un compte que les
 > sociétés établies en Chine peuvent faire certifier.
@@ -86,14 +86,23 @@ réservent le compte entreprise aux sociétés implantées en Chine.
 > par an, et l’examen prend environ deux jours ouvrés.
 > Source : Ocean Engine (巨量引擎), FAQ sur la certification Blue V de Douyin, mai 2022. https://www.oceanengine.com/faq/douyin-qyh-zmrzn.html
 
-Une marque qui n’est pas encore implantée ouvrira donc Douyin depuis une
-entité chinoise dont elle dispose déjà, ou repoussera la plateforme à plus
-tard. Cette question se règle avec l’agence avant d’annoncer une date de
-lancement. Jamais après.
+Depuis 2026, le centre d’aide de Douyin affiche aussi une procédure en
+libre-service pour les entités étrangères. Pièces, frais et délai d’examen
+ne sont consultables qu’après connexion.
+
+> Le centre d’aide du compte entreprise Douyin répertorie un guide
+> d’inscription en libre-service pour les entités de Hong Kong, Macao,
+> Taïwan et de l’étranger, mis à jour le 19 août 2026.
+> Source : centre d’aide du compte entreprise Douyin (抖音企业号帮助中心), août 2026. https://renzheng.douyin.com/support/content/227771?graphId=412&mappingType=2&spaceId=77
+
+Une marque qui n’est pas encore implantée a donc trois options : tester
+cette voie étrangère, ouvrir Douyin depuis une entité chinoise dont elle
+dispose déjà, ou repousser la plateforme à plus tard. Cette question se
+règle avec l’agence avant d’annoncer une date de lancement. Jamais après.
 
 | Pièce | Compte officiel WeChat | Compte entreprise Xiaohongshu | Compte entreprise Douyin |
 |---|---|---|---|
-| Certificat d’immatriculation | Certificat étranger accepté | Certificat étranger accepté | Licence d’exploitation chinoise |
+| Certificat d’immatriculation | Certificat étranger accepté | Certificat étranger accepté | Licence d’exploitation chinoise (voie étrangère non publique) |
 | Identité du contact ou de l’exploitant | Recto et verso, scan couleur | Coordonnées de l’exploitant sur le formulaire | Pièce du représentant légal pour un entrepreneur individuel |
 | Lettre de demande | Modèle en chinois ou en anglais | Modèle de la plateforme | Modèle de la plateforme |
 | Lettre d’autorisation d’exploitation | Exigée | Non mentionnée | Non mentionnée |
@@ -110,8 +119,9 @@ et ne pèse guère.
 
 Première décision : quelle entité dépose le dossier. WeChat (微信) et
 Xiaohongshu (小红书) acceptent une société étrangère ; Douyin (抖音), on l’a
-vu, a été pensé pour une société chinoise. Le point se tranche en semaine 1,
-puisqu’il commande la liste des comptes ouverts en semaine 2.
+vu, a été pensé pour une société chinoise, et sa voie étrangère n’est pas
+documentée publiquement. Le point se tranche en semaine 1, puisqu’il
+commande la liste des comptes ouverts en semaine 2.
 [Notre analyse plateforme par plateforme sur la nécessité d’une société chinoise](/fr/decryptages/chinese-entity-social-media/)
 détaille les cas limites, de la voie de l’agent sur Weibo aux comptes détenus par une agence.
 
@@ -348,8 +358,9 @@ pièce d’identité du contact scannée en couleur recto et verso, une lettre d
 demande signée accompagnée d’une lettre d’autorisation d’exploitation, une
 facture téléphonique ou un relevé bancaire au nom du contact. Xiaohongshu
 (小红书) y ajoute une traduction tamponnée pour toute pièce qui n’est ni en
-chinois ni en anglais. Douyin (抖音) réclame une licence d’exploitation
-chinoise.
+chinois ni en anglais. Douyin (抖音) réclame, sur ses pages publiques, une
+licence d’exploitation chinoise. Les pièces exigées pour sa procédure réservée
+aux entités étrangères ne sont visibles qu’après connexion.
 
 ### Quand attendre les premiers résultats ?
 

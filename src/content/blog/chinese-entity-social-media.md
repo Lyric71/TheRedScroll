@@ -1,10 +1,10 @@
 ---
 title: "Do you need a Chinese entity to run social media in China?"
-description: "Usually not, at least to start. Three of the four platforms that matter can verify a company registered outside the mainland. Two of them publish the rules plainly. The third routes you through an agent."
+description: "Usually not, at least to start. WeChat and Xiaohongshu verify overseas companies under published rules. Weibo routes you through an agent. Douyin now lists an overseas route but keeps the details behind a login."
 metaTitle: "Do You Need a Chinese Entity for Social?"
 metaDescription: "Whether a foreign brand needs a Chinese entity for WeChat, Xiaohongshu, Douyin and Weibo, what each platform accepts, and where the real limits sit."
 publishDate: 2026-09-24
-updatedDate: 2026-10-02
+updatedDate: 2026-10-11
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Strategy"
@@ -22,7 +22,7 @@ against what each one publishes.
 | WeChat (微信) | Overseas entities accepted, one account | Registration certificate, chopped letters | 99 US dollars a year |
 | Xiaohongshu (小红书) | Overseas entities accepted by name | BR or CR, stamped Chinese translation | 600 yuan a year |
 | Weibo (微博) | Overseas entities go through an agent | Not the self-serve form | 600 yuan |
-| Douyin (抖音) | No rule either way | A mainland business license | 600 yuan first year |
+| Douyin (抖音) | An overseas route, details behind a login | Mainland license on the public pages | 600 yuan first year (mainland) |
 
 Two caveats before the detail. An account is not the same thing as
 everything an account can do, and advertising is where that shows. Second,
@@ -133,9 +133,9 @@ needing a company.
 These two are where the confident blog posts get it wrong, in opposite
 directions.
 
-Douyin (抖音) does not publish a rule for overseas entities at all. What it
-publishes is a description, and a document list that assumes a mainland
-license.
+Douyin (抖音) now lists a route for overseas entities, but it does not publish
+the details. Its public pages still offer a description and a document list
+that assume a mainland license.
 
 > The platform's FAQ describes the Douyin enterprise account as an account
 > for companies in the China region.
@@ -147,10 +147,20 @@ license.
 > submission.
 > Source: Ocean Engine (巨量引擎), Douyin enterprise verification FAQ, May 2022. https://www.oceanengine.com/faq/douyin-qyh-zmrzn.html
 
-That document list is the tell. No page on Ocean Engine says an overseas
-company may not apply. No page says it may, either. So treat Douyin as
-undocumented. Not closed, just unwritten. If Douyin is central to the plan,
-budget for a mainland entity and stop hunting for a rule that does not exist.
+Those pages date from 2022. In 2026, Douyin's enterprise help center added
+two entries: a self-service onboarding guide for overseas entities and a
+separate review rulebook for overseas and cross-border applicants.
+
+> Douyin's enterprise account help center lists a self-service onboarding
+> guide for Hong Kong, Macau, Taiwan and overseas entities, updated August 19,
+> 2026, and a verification review rulebook for overseas and cross-border
+> entities, dated May 18, 2026.
+> Source: Douyin Enterprise Account Help Center (抖音企业号帮助中心), August 2026. https://renzheng.douyin.com/support/content/227771?graphId=412&mappingType=2&spaceId=77
+
+Both documents sit behind a login, so the papers, fee and review time for
+that route are not public. Douyin is no longer closed to an overseas company
+on paper. It is opaque. If Douyin is central to the plan, have your agency
+walk the overseas route before you budget for a mainland entity.
 
 Weibo (微博) publishes plenty about verification, but the part foreign brands
 need is buried in a page about something else. Start with the form itself,
@@ -192,10 +202,10 @@ July 6, 2026.
 
 | | Douyin (抖音) | Weibo (微博) |
 |---|---|---|
-| Overseas rule published | No | Only inside the entity-change rules |
-| Route for a foreign brand | Undocumented | An authorized overseas agent |
-| Fee | 600 yuan, then 120 a year | 600 yuan per application |
-| Review | About 2 working days | 1 working day for an entity change |
+| Overseas rule published | Listed since 2026, behind a login | Only inside the entity-change rules |
+| Route for a foreign brand | Self-service overseas route, details not public | An authorized overseas agent |
+| Fee | 600 yuan, then 120 a year (mainland FAQ) | 600 yuan per application |
+| Review | About 2 working days (mainland FAQ) | 1 working day for an entity change |
 | Accounts per license | Not stated | Several on one license |
 
 ## Cross-border e-commerce as a route in
@@ -363,7 +373,7 @@ An agency that cannot answer all three in writing is telling you something.
 | Testing demand, no revenue in China yet | WeChat service account plus Xiaohongshu, both on your own entity | No |
 | Selling to consumers, no mainland stock | Cross-border retail import, inside the 5,000 and 26,000 yuan limits | No |
 | Ready to buy Xiaohongshu ads | Your own account, after checking the overseas industry list | Not if your category is open |
-| Douyin is central to the plan | Budget for a mainland entity | Likely yes |
+| Douyin is central to the plan | Douyin's overseas route first, a mainland entity if it fails | Maybe |
 | Hiring locally, invoicing in yuan, holding stock | A mainland company | Yes |
 | Offered an account on an agency's license | Get the three contract answers first | No, but read clause 6.1 |
 
