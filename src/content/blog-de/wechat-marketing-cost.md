@@ -285,6 +285,8 @@ Keiner dieser Posten ist groß. Jeder wird leicht übersehen, bis er zu Buche sc
 - **Logins sind nicht umsonst.** Jede Anmeldung per Telefonnummer kostet 0,03 Yuan.
 - **Pushes sind begrenzt.** Ein Service-Account benachrichtigt seine Follower viermal im Monat. Weitere Artikel erscheinen zwar im Profil, eine Benachrichtigung erhält aber niemand.
 
+[Unsere Analyse der versteckten Kosten im China-Marketing](/de/analysen/china-marketing-hidden-costs/) führt zwölf solcher Posten auf WeChat, Xiaohongshu, Douyin und Weibo auf.
+
 ## FAQ
 
 ### Was kostet ein WeChat Official Account im Jahr?

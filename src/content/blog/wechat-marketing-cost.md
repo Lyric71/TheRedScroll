@@ -411,6 +411,9 @@ None of these is large. Each is easy to miss until it bites.
 - **Pushes are capped.** A service account alerts followers four times a
   month. Extra articles still appear on the profile, but nobody is notified.
 
+[Our guide to China marketing hidden costs](/insights/china-marketing-hidden-costs/) lists twelve
+lines like these across WeChat, Xiaohongshu, Douyin and Weibo.
+
 ## FAQ
 
 ### How much does a WeChat Official Account cost per year?

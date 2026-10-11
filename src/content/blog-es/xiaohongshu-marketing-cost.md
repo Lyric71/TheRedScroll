@@ -59,7 +59,8 @@ En cada propuesta que lea, mantenga esas seis partidas separadas. Un
 presupuesto que disuelve los honorarios de los creadores en la tarifa de
 agencia esconde ambos. [Nuestra guía sobre el coste del marketing en redes sociales chinas](/es/analisis/china-social-media-marketing-cost/)
 aplica el mismo ejercicio a WeChat, Douyin y Weibo. Si duda entre empezar por Xiaohongshu o por WeChat,
-[nuestra comparativa entre WeChat y Xiaohongshu](/es/analisis/wechat-vs-xiaohongshu/) ofrece la regla para decidir.
+[nuestra comparativa entre WeChat y Xiaohongshu](/es/analisis/wechat-vs-xiaohongshu/) ofrece la regla para decidir. Los costes que una propuesta suele omitir se recogen en
+[nuestro análisis de los costes ocultos del marketing en China](/es/analisis/china-marketing-hidden-costs/).
 
 ## Cuenta y verificación: los costes fijos
 

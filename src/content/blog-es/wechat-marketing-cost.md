@@ -285,6 +285,8 @@ Ninguno es elevado. Todos pasan fácilmente inadvertidos hasta que salen caros.
 - **Iniciar sesión no es gratis.** Cada acceso con número de teléfono cuesta 0,03 yuanes.
 - **Los envíos tienen tope.** Una cuenta de servicio solo avisa a sus seguidores cuatro veces al mes. Los artículos adicionales siguen apareciendo en el perfil, pero sin notificación alguna.
 
+[Nuestro análisis de los costes ocultos del marketing en China](/es/analisis/china-marketing-hidden-costs/) recoge doce partidas de este tipo en WeChat, Xiaohongshu, Douyin y Weibo.
+
 ## Preguntas frecuentes
 
 ### ¿Cuánto cuesta al año una cuenta oficial de WeChat?

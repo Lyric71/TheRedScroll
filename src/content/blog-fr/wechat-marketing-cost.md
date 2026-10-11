@@ -285,6 +285,8 @@ Aucun n’est élevé. Tous passent aisément inaperçus, jusqu’au jour où la
 - **La connexion n’est pas gratuite.** Chaque connexion par numéro de téléphone coûte 0,03 yuan.
 - **Les envois sont plafonnés.** Un compte de service ne notifie ses abonnés que quatre fois par mois. Les articles supplémentaires s’affichent toujours sur le profil, mais sans aucune notification.
 
+[Notre décryptage des coûts cachés du marketing en Chine](/fr/decryptages/china-marketing-hidden-costs/) recense douze postes de ce type, sur WeChat, Xiaohongshu, Douyin et Weibo.
+
 ## FAQ
 
 ### Combien coûte un compte officiel WeChat par an ?

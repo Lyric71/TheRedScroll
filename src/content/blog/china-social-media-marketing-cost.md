@@ -65,7 +65,8 @@ reporting. Most agencies won't put a number on this line.
 
 Keep those five apart in every proposal you read. When a proposal folds ad
 spend into the agency fee, you can't see what you're paying for. You also
-can't see whether the media is being marked up.
+can't see whether the media is being marked up. The lines that never reach the
+proposal at all are in [our guide to China marketing hidden costs](/insights/china-marketing-hidden-costs/).
 
 ## Account setup and verification: one-time costs by platform
 

@@ -72,6 +72,16 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-10-01 for 05B: "300元/次", "不予退还" and "保留一年" confirmed at check 1 and check 2. Used in: wechat-official-account-setup.
 - Re-verified 2026-10-06 for 06A: "300元/次", "一年内有效" and "不予退还" confirmed at check 1 and check 2. Used in: china-marketing-hidden-costs.
 
+### WeChat verification annual review (年审), all Official Accounts
+- Value: WeChat verification (微信认证) must be reviewed every year (微信认证每年都需要进行年审); the next review date shows in the account back end and a reminder comes three months before expiry. The page states the rule for 微信公众平台 verification in general, with no exception for overseas entities.
+- As of: page undated; confirmed October 2026 (platform documentation)
+- Source: Tencent customer service (腾讯客服), 微信认证年审方法
+- URL: https://kf.qq.com/faq/161220M73amA161220bQzYbu.html
+- Verified 1: 2026-10-11, fetched with curl by the 2026-10-11 publish run, "微信认证每年都需要进行年审" and "认证到期前3个月" confirmed
+- Verified 2: 2026-10-11, re-fetched, "微信认证每年都需要进行年审" unchanged
+- Used in: china-marketing-hidden-costs (backs the "one year, annual review" cells for an overseas Official Account; the 99-dollar fee page says the fee is paid per application, and an annual review is an application)
+- Notes: Applies to Official Accounts and service accounts. Overseas Mini Programs are the exception (entry "Overseas Mini Programs: no filing, no annual review"); never apply this page to them.
+
 ### WeChat Official Account verification fee, overseas entity
 - Value: 99 US dollars per verification application; valid one year
 - As of: page undated; confirmed September 2026 (platform documentation)

@@ -76,7 +76,8 @@ plupart des agences se refusent à chiffrer ce poste.
 Dans chaque proposition que vous lisez, gardez ces cinq postes bien
 distincts. Dès qu’une agence noie l’achat média dans ses honoraires, vous
 ne savez plus ce que vous payez. Ni si les médias vous sont refacturés avec
-une marge.
+une marge. Les postes qui n’apparaissent jamais dans une proposition sont
+recensés dans [notre décryptage des coûts cachés du marketing en Chine](/fr/decryptages/china-marketing-hidden-costs/).
 
 ## Ouverture et vérification des comptes : les frais uniques par plateforme
 

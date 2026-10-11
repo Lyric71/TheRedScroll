@@ -58,6 +58,8 @@ into the agency fee hides both. [Our guide to China social media marketing cost]
 does the same exercise across WeChat, Douyin and Weibo. Whether Xiaohongshu
 or WeChat should come first is a separate call, and
 [our WeChat vs Xiaohongshu guide](/insights/wechat-vs-xiaohongshu/) gives the decision rule.
+The costs a proposal tends to leave out are in
+[our guide to China marketing hidden costs](/insights/china-marketing-hidden-costs/).
 
 ## Account and verification: the fixed costs
 

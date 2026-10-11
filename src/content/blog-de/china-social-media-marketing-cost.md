@@ -72,7 +72,8 @@ Posten keine Zahl.
 Halten Sie diese fünf Posten in jedem Angebot auseinander. Rechnet ein
 Angebot das Werbebudget ins Agenturhonorar ein, sehen Sie nicht mehr, wofür
 Sie zahlen. Und ebenso wenig, ob die Werbung mit Aufschlag weiterberechnet
-wird.
+wird. Welche Posten in einem Angebot gar nicht erst auftauchen, zeigt
+[unsere Analyse der versteckten Kosten im China-Marketing](/de/analysen/china-marketing-hidden-costs/).
 
 ## Kontoeinrichtung und Verifizierung: einmalige Kosten je Plattform
 

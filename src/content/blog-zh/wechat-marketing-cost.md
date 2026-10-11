@@ -285,6 +285,8 @@ featuredImage: "/images/blog/wechat-marketing-cost.webp"
 - **登录也要钱。**手机号登录每次0.03元。
 - **推送有上限。**服务号每月只能向粉丝群发四次。多发的文章仍会出现在主页上，但粉丝不会收到通知。
 
+[我们关于中国营销隐性成本的文章](/zh/guandian/china-marketing-hidden-costs/)梳理了微信、小红书、抖音和微博上12笔类似的开支。
+
 ## 常见问题
 
 ### 微信公众号一年要花多少钱？

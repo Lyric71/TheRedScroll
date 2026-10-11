@@ -61,7 +61,8 @@ Halten Sie diese sechs Posten in jedem Angebot auseinander, das auf Ihren
 Tisch kommt. Wer Creator-Honorare ins Agenturhonorar einrechnet, macht
 beide unkenntlich. [Unser Leitfaden zu den Kosten für Social-Media-Marketing in China](/de/analysen/china-social-media-marketing-cost/)
 nimmt WeChat, Douyin und Weibo auf dieselbe Weise auseinander. Ob Xiaohongshu oder WeChat den Anfang machen sollte,
-beantwortet [unser Vergleich WeChat oder Xiaohongshu](/de/analysen/wechat-vs-xiaohongshu/).
+beantwortet [unser Vergleich WeChat oder Xiaohongshu](/de/analysen/wechat-vs-xiaohongshu/). Welche Kosten in Angeboten meist fehlen,
+zeigt [unsere Analyse der versteckten Kosten im China-Marketing](/de/analysen/china-marketing-hidden-costs/).
 
 ## Konto und Verifizierung: die Fixkosten
 

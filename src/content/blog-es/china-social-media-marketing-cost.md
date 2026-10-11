@@ -70,7 +70,8 @@ comunidad e informes. La mayoría de las agencias no le pone cifra.
 
 Mantenga esas cinco partidas separadas en cada propuesta que lea. En cuanto
 una agencia mezcla la inversión publicitaria con su tarifa, usted deja de
-saber qué está pagando. Ni si la publicidad lleva recargo.
+saber qué está pagando. Ni si la publicidad lleva recargo. Las partidas que nunca llegan a la
+propuesta se recogen en [nuestro análisis de los costes ocultos del marketing en China](/es/analisis/china-marketing-hidden-costs/).
 
 ## Apertura y verificación de cuentas: costes únicos por plataforma
 
