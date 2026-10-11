@@ -4,7 +4,7 @@ description: "WeCom es la herramienta de comunicación profesional de Tencent de
 metaTitle: "WeCom: guía para marcas en China"
 metaDescription: "WeCom es la herramienta profesional de Tencent integrada en WeChat. Funciones, tráfico privado y por qué toda marca en China lo necesita."
 publishDate: 2026-04-06
-updatedDate: 2026-10-06
+updatedDate: 2026-10-11
 author: "TheRedScroll"
 platforms: ["wechat"]
 category: "Plataformas"
@@ -68,19 +68,11 @@ En el último año, el equipo de WeCom ha sacado doce actualizaciones de versió
 
 ![Una publicación de marca de WeCom apareciendo de forma natural en el feed de Moments de un cliente](/images/blog/wecom-moments-scroll.webp)
 
-Blancpain, por poner un caso, ha enlazado WeCom con su CRM para reunir en un mismo sistema el programa de fidelización, las cuentas oficiales y la atención al cliente en boutique. La clase de montaje que convierte una presencia china antes dispersa en algo que rinde con el tiempo.
-
-> Fuente: Tencent Oficial, informe de lanzamiento de WeCom 4.0
-
 ## El tráfico privado: el concepto que cambia todo
 
 Fuera de China, casi ningún profesional del marketing usa esta expresión. Dentro, está en el centro de cualquier conversación sobre crecimiento.
 
 **El tráfico público** es la publicidad de pago y los feeds algorítmicos de Douyin o RedNote. Se paga por existir. Cierras el grifo y la visibilidad se evapora.
-
-> Captar a un cliente nuevo en las grandes plataformas costaba unas pocas decenas de yuanes en 2018; hoy, varios cientos.
-
-> Fuente: Tencent News, citando el informe Jiazi Guangnian, octubre de 2024
 
 **El tráfico privado** son los canales que la marca tiene en propiedad: grupos de WeChat, Mini Programas, cuentas oficiales, contactos de WeCom. Una vez el cliente está ahí, la marca le llega directamente. Sin pagar publicidad. Sin que un algoritmo decida quién ve qué.
 

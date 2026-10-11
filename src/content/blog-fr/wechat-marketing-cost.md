@@ -187,6 +187,8 @@ Une dépense minime prend souvent les développeurs de court : chaque connexion 
 > Depuis le 28 août 2023, le composant de vérification rapide du numéro de téléphone est payant : 0,03 yuan par appel réussi, au-delà de 1 000 appels d’essai gratuits par Mini Program.
 > Source : WeChat Open Platform (微信开放文档), documentation du composant numéro de téléphone, août 2023. https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/getPhoneNumber.html
 
+[Notre guide sur le coût d’un mini-programme WeChat](/fr/decryptages/wechat-mini-program-cost/) détaille le prix du développement par type, d’après 21 avis d’attribution publics, et recense trois cas où mieux vaut s’abstenir.
+
 ## WeCom : licences, déploiement et coût humain
 
 Voilà pour la vente. Le dialogue individuel avec les clients relève, lui, d’une autre facture.
@@ -299,4 +301,4 @@ L’ouverture d’un compte Tencent Ads est gratuite. Les publicités Moments ac
 
 ### Combien coûte le développement d’un Mini Program WeChat ?
 
-Les devis varient selon le périmètre. Les avis d’attribution publics de 2025 et 2026 vont de 199 800 yuans pour un Mini Program de contenu simple à plus de 2 millions pour une plateforme multifonction. Les frais de plateforme restent modestes. Une société étrangère acquitte 99 dollars américains une seule fois pour la certification, la commission de WeChat Pay transfrontalier sur chaque vente, et 0,03 yuan par connexion via numéro de téléphone.
+Les devis varient selon le périmètre. Les avis d’attribution publics de 2025 et 2026 vont de 199 800 yuans pour un Mini Program de contenu simple à plus de 2 millions pour une plateforme multifonction. Les frais de plateforme restent modestes. Une société étrangère acquitte 99 dollars américains une seule fois pour la certification, la commission de WeChat Pay transfrontalier sur chaque vente, et 0,03 yuan par connexion via numéro de téléphone. [Notre guide sur le coût d’un mini-programme WeChat](/fr/decryptages/wechat-mini-program-cost/) en donne le détail par type.

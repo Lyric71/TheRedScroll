@@ -266,6 +266,10 @@ each time.
 > Mini Program.
 > Source: WeChat Open Platform (微信开放文档), phone number component documentation, August 2023. https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/getPhoneNumber.html
 
+[Our WeChat Mini Program cost guide](/insights/wechat-mini-program-cost/) breaks the build
+price down by type, from 21 public award notices, and lists three cases where
+you should not build one.
+
 ## WeCom: licensing, setup, and the people cost
 
 That covers selling. Talking to customers one by one is a separate bill.
@@ -438,4 +442,5 @@ Quotes vary with scope. Public award notices from 2025 and 2026 run from
 199,800 yuan for a simple content Mini Program to over 2 million for a
 multi-function one. The platform fees are small. An overseas company pays 99
 US dollars once to verify, a cross-border WeChat Pay service charge on each
-sale, and 0.03 yuan per phone-number login.
+sale, and 0.03 yuan per phone-number login. [Our Mini Program cost guide](/insights/wechat-mini-program-cost/) gives the full
+breakdown by type.

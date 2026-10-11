@@ -4,7 +4,7 @@ description: "WeCom is Tencent's enterprise communication platform inside the We
 metaTitle: "What is WeCom? A guide for brands in China"
 metaDescription: "WeCom is Tencent's business tool inside WeChat. Learn what it does, how private domain traffic works, and why brands in China need it."
 publishDate: 2026-04-06
-updatedDate: 2026-10-06
+updatedDate: 2026-10-11
 author: "TheRedScroll"
 platforms: ["wechat"]
 category: "Platforms"
@@ -68,10 +68,6 @@ Over the past year, the WeCom team shipped 12 version updates and more than 1,70
 
 ![A WeCom brand post appearing naturally in a customer's WeChat Moments feed](/images/blog/wecom-moments-scroll.webp)
 
-Brands like Blancpain already use WeCom integrated with their CRM to connect loyalty programs, Official Accounts, and in-store clienteling into one system. That is the kind of setup that turns a scattered China presence into something that actually compounds.
-
-> Source: Tencent Official, WeCom 4.0 launch report
-
 ## Private domain traffic: the concept that changes everything
 
 Private domain traffic is not a term most marketers outside China use. But it is central to how brands in China think about growth.
@@ -79,10 +75,6 @@ Private domain traffic is not a term most marketers outside China use. But it is
 Here is the short version:
 
 **Public traffic** is paid ads and algorithm-driven feeds on Douyin or RedNote. You pay for eyeballs. When you stop paying, they are gone.
-
-> Customer acquisition costs on major internet platforms have climbed from tens of yuan per new customer in 2018 to hundreds of yuan today.
-
-> Source: Tencent News, citing Jiazi Guangnian report, October 2024
 
 **Private domain traffic** is the channels you own. WeChat groups, Mini Programs, Official Accounts, WeCom contacts. Once customers are there, you reach them directly. No ad spend. No algorithm deciding who sees your message.
 

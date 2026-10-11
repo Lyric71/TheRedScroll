@@ -4,7 +4,7 @@ description: "China's biggest brand ecosystem is WeChat. Official Accounts, Vide
 metaTitle: "How to sell on WeChat: a guide for brands"
 metaDescription: "WeChat is where brands sell in China. How Official Accounts, Video Accounts, Mini Programs, ads, and WeCom turn attention into real sales."
 publishDate: 2026-07-21
-updatedDate: 2026-10-06
+updatedDate: 2026-10-11
 author: "TheRedScroll"
 platforms: ["wechat"]
 category: "Platforms"
@@ -23,19 +23,18 @@ repeat order six months later.
 In the third quarter of 2024, transactions running through WeChat Mini Programs
 passed a level most national economies never see.
 
-> WeChat Mini Program transaction volume passed 2 trillion yuan in a single
-> quarter (Q3 2024), up by double digits year over year.
-> Source: 腾讯新闻 / Tencent News
+> Transactions through WeChat Mini Programs passed 2 trillion yuan in the
+> third quarter of 2024, up by double digits year over year.
+> Source: Sina Tech (新浪科技), reporting Tencent's Q3 2024 results, November 2024. https://finance.sina.com.cn/tech/2024-11-13/doc-incvxhxn5496627.shtml
 
 That is not a niche channel. It is a shopping mall the size of a country, and
 the audience inside it is enormous.
 
-> WeChat Mini Programs reached 949 million users as of October 2024, opened
-> close to 70 times a month on average.
-> Source: QuestMobile / 贵士移动
+> WeChat Mini Programs had 962 million monthly active users in June 2026.
+> Source: QuestMobile, 2026 panoramic ecosystem traffic half-year report, August 2026. https://www.questmobile.cn/research/report/2087076371092336642/
 
 This guide covers the five parts of WeChat that move product, with
-current 2024 figures throughout. Read them in order. Each one feeds the next.
+dated figures throughout. Read them in order. Each one feeds the next.
 
 ## The five moves, at a glance
 
@@ -94,25 +93,28 @@ WeChat's social graph. When someone likes a clip, their friends can see it. That
 is reach beyond your own followers, spreading through the relationships people
 already have.
 
-The audience skews a particular way, and it matters for who should lean in.
+The people buying through WeChat's own store skew a particular way, and it
+matters for who should lean in.
 
-> On WeChat Video Accounts, women make up about 63% of viewers, and users aged
-> 25 and over account for 97.7%.
-> Source: 知乎 / Zhihu
+> At WeChat Open Class in January 2025, WeChat reported that 97.7% of WeChat
+> Store shoppers were 25 or older, and that women outnumbered men about six
+> to four.
+> Source: NewRank (新榜), January 2025. https://www.newrank.cn/article/detail/29440
 
 So this is an older, calmer audience. They come for useful, grounded content:
 explainers, product demos, short interviews, quiet human stories. Scale is hard
 to pin down, because Tencent keeps the official number to itself.
 
-> Third-party industry estimates put WeChat Video Accounts near 600 million daily
-> active users. Tencent does not release an official figure.
-> Source: 中国短视频行业报告 / China Short Video Industry Report (third-party estimate)
+> Total time spent on WeChat Video Accounts rose more than 20% year over year
+> in 2025, Tencent reported.
+> Source: China Fund News (中国基金报), reporting Tencent's 2025 annual results, March 2026. https://www.chnfund.com/article/AR1231fcdd-25ff-01cd-2836-3a2015e46b1d
 
 Whatever the exact figure, the base keeps expanding, and fast.
 
-> The number of Video Accounts with over one million followers roughly doubled
-> across 2024.
-> Source: 新榜 / Newrank
+> By January 10, 2025, at least 1,288 Video Accounts had more than one
+> million followers, more than double the 2023 count, by NewRank's tally of
+> accounts listed on WeChat's creator marketplace.
+> Source: NewRank (新榜), January 2025. https://www.newrank.cn/article/detail/29573
 
 A few things that work. Hook people in the first two seconds, because drop-off
 is instant. Add Chinese captions, since plenty of people watch on mute. Post two
@@ -129,18 +131,19 @@ to cart, and pay with WeChat Pay, all without leaving the app.
 
 We saw the scale of what moves through them. The user base is just as big.
 
-> Life-service, mobile-shopping, and finance Mini Programs each drew more than
-> 860 million monthly active users in 2024.
-> Source: 数英 / Digitaling
+> In May 2025, life-service and finance Mini Programs on WeChat drew 932
+> million and 913 million monthly active users, and shopping Mini Programs
+> drew 826 million.
+> Source: QuestMobile, reported by Adquan (广告门), July 2025. https://www.adquan.com/article/353706
 
 Most brands underestimate what comes next. Mini Programs are not just for
 selling once. They are the best retention tool on the platform. Sync your membership
 here, add points and tiers, give people a reason to come back. The luxury houses
 figured this out early, and the growth they pulled from it was steep.
 
-> In 2024, monthly active users on the Hermès and Cartier WeChat Mini Programs
-> grew 704% and 2,551% year over year.
-> Source: 数英 / Digitaling
+> QuestMobile's 2024 WeChat Mini Program report found monthly active users of
+> the Hermès and Cartier Mini Programs up 704% and 2,551% year over year.
+> Source: QuestMobile (its Tencent News account), December 2024. https://news.qq.com/rain/a/20241210A029UC00
 
 **Keep it fast and simple.** A slow store loses people before they buy, and in
 our work the drop-off shows up fastest right here, at load time. Strip the
@@ -151,7 +154,8 @@ the register. Scanning a code to open a store is second nature here.
 
 For B2B, the same tool does a different job. Build a product catalog, a quote
 calculator, or a booking form that drops a lead straight to your sales team. The
-friction stays low, which is the whole point.
+friction stays low, which is the whole point. Before you commission one,
+[our guide to WeChat Mini Program cost](/insights/wechat-mini-program-cost/) shows what a build really costs and when to skip it.
 
 ## 4. Buy reach with ads and creators
 
@@ -163,11 +167,11 @@ WeChat's ad system runs across Moments, Official Accounts, Video Accounts, Mini
 Programs, and Search, and each placement does a different job at a different
 price. Budgets start small on bidding buys and climb fast for premium placements.
 A Moments scheduled buy, for instance, starts at 50,000 yuan, about 7,000
-dollars, for a single campaign.
+dollars, for a single booking.
 
-> A WeChat Moments scheduled ad buy starts at roughly 50,000 yuan (around
-> 7,000 dollars) per campaign.
-> Source: 九枝兰 / Jiuzhilan
+> A WeChat Moments scheduled buy starts at a total budget of 50,000 yuan
+> (around 7,000 dollars) per booking.
+> Source: Tencent Ads (腾讯广告), WeChat advertising product page, confirmed October 2026. https://e.qq.com/topic/marketing/industry/weixin/
 
 We covered the full breakdown, format by format, with the actual numbers, in our
 [guide to WeChat advertising formats and costs](/insights/wechat-advertising-formats-costs/).
@@ -184,12 +188,7 @@ inflated and a big number can hide a dead audience.
 
 ## 5. Keep customers with WeCom and private domain
 
-Winning a customer is the expensive part. The margin is in keeping them. And in
-China's open web, that first sale keeps getting more expensive.
-
-> The cost of acquiring a new customer through public channels has climbed from
-> tens of yuan to several hundred yuan since 2018.
-> Source: 甲子光年 / Jiazi Guangnian
+Winning a customer is the expensive part. The margin is in keeping them.
 
 That is the whole case for private domain, your own owned audience of followers
 and members you can reach again and again at almost no cost. The tool for it is
@@ -199,11 +198,12 @@ advisor like they would a friend, and now you have a direct line.
 The playbook is not complicated. Bring new followers over with an incentive, tag
 them by interest and what they have bought, then use that line for order updates,
 after-sales help, and the occasional well-timed offer that is not spam. Do it
-right and a one-time buyer becomes a regular. Most of China's biggest companies already run
+right and a one-time buyer becomes a regular. Millions of Chinese companies already run
 this way.
 
-> More than 80% of Fortune 500 companies operating in China have adopted WeCom.
-> Source: 群应用 / WeScrm
+> WeCom connects more than 14 million companies and organizations, and they
+> serve more than 750 million WeChat users through it every day.
+> Source: Xinhua (新华网), August 2025. http://www.news.cn/tech/20250820/fbe9a69fd7a742629cf8275238bb7b91/c.html
 
 Set it up once and it becomes the cheapest sales channel you own, working
 quietly in the background long after the ad budget is spent. We go deep on how

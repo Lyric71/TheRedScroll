@@ -187,6 +187,8 @@ Un pequeño cargo suele coger desprevenidos a los desarrolladores: cada inicio d
 > Desde el 28 de agosto de 2023, el componente de verificación rápida del número de teléfono es de pago: 0,03 yuanes por llamada correcta, una vez agotadas las 1.000 llamadas de prueba gratuitas por Mini Program.
 > Fuente: WeChat Open Platform (微信开放文档), documentación del componente de número de teléfono, agosto de 2023. https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/getPhoneNumber.html
 
+[Nuestra guía sobre el coste de un miniprograma de WeChat](/es/analisis/wechat-mini-program-cost/) desglosa el precio del desarrollo por tipo, a partir de 21 adjudicaciones públicas, y recoge tres casos en los que no conviene construir uno.
+
 ## WeCom: licencias, puesta en marcha y coste de personal
 
 Hasta aquí la venta. La conversación individual con cada cliente es otra factura.
@@ -299,4 +301,4 @@ Abrir una cuenta en Tencent Ads es gratuito. Los anuncios de Moments por subasta
 
 ### ¿Cuánto cuesta desarrollar un Mini Program de WeChat?
 
-Los presupuestos varían según el alcance. Los anuncios de adjudicación pública de 2025 y 2026 van de 199.800 yuanes por un Mini Program de contenido sencillo a más de 2 millones por una plataforma multifunción. Las tasas de plataforma son modestas. Una empresa extranjera paga 99 dólares estadounidenses una sola vez por la verificación, la comisión de WeChat Pay transfronterizo en cada venta y 0,03 yuanes por cada inicio de sesión con número de teléfono.
+Los presupuestos varían según el alcance. Los anuncios de adjudicación pública de 2025 y 2026 van de 199.800 yuanes por un Mini Program de contenido sencillo a más de 2 millones por una plataforma multifunción. Las tasas de plataforma son modestas. Una empresa extranjera paga 99 dólares estadounidenses una sola vez por la verificación, la comisión de WeChat Pay transfronterizo en cada venta y 0,03 yuanes por cada inicio de sesión con número de teléfono. [Nuestra guía sobre el coste de un miniprograma de WeChat](/es/analisis/wechat-mini-program-cost/) ofrece el desglose completo por tipo.

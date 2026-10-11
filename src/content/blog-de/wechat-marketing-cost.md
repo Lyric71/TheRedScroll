@@ -187,6 +187,8 @@ Ein kleiner Posten erwischt Entwickler oft auf dem falschen Fuß: Jeder Login pe
 > Seit dem 28. August 2023 ist die Komponente zur Schnellverifizierung der Telefonnummer kostenpflichtig: 0,03 Yuan je erfolgreichem Aufruf, nach 1.000 kostenlosen Testaufrufen je Mini Program.
 > Quelle: WeChat Open Platform (微信开放文档), Dokumentation der Telefonnummer-Komponente, August 2023. https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/getPhoneNumber.html
 
+[Unser Leitfaden zu den Kosten eines WeChat Mini Program](/de/analysen/wechat-mini-program-cost/) schlüsselt den Entwicklungspreis anhand von 21 öffentlichen Zuschlägen nach Typ auf und nennt drei Fälle, in denen Sie besser verzichten.
+
 ## WeCom: Lizenzen, Einrichtung und Personalkosten
 
 So viel zum Verkauf. Das Gespräch mit dem einzelnen Kunden steht auf einer eigenen Rechnung.
@@ -299,4 +301,4 @@ Ein Konto bei Tencent Ads zu eröffnen, kostet nichts. Per Auktion gekaufte Mome
 
 ### Was kostet die Entwicklung eines WeChat Mini Program?
 
-Die Angebote schwanken mit dem Umfang. Zuschlagsbekanntmachungen öffentlicher Ausschreibungen aus den Jahren 2025 und 2026 reichen von 199.800 Yuan für ein einfaches Mini Program mit Inhalten bis zu mehr als 2 Millionen für eine Plattform mit vielen Funktionen. Die Plattformgebühren sind gering. Ein ausländisches Unternehmen zahlt einmalig 99 US-Dollar für die Verifizierung, auf jeden Verkauf die Servicegebühr des grenzüberschreitenden WeChat Pay und 0,03 Yuan je Login per Telefonnummer.
+Die Angebote schwanken mit dem Umfang. Zuschlagsbekanntmachungen öffentlicher Ausschreibungen aus den Jahren 2025 und 2026 reichen von 199.800 Yuan für ein einfaches Mini Program mit Inhalten bis zu mehr als 2 Millionen für eine Plattform mit vielen Funktionen. Die Plattformgebühren sind gering. Ein ausländisches Unternehmen zahlt einmalig 99 US-Dollar für die Verifizierung, auf jeden Verkauf die Servicegebühr des grenzüberschreitenden WeChat Pay und 0,03 Yuan je Login per Telefonnummer. Die vollständige Aufschlüsselung nach Typ liefert [unser Leitfaden zu den Kosten eines WeChat Mini Program](/de/analysen/wechat-mini-program-cost/).

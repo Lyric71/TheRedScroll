@@ -138,6 +138,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-10-05 by the 05A publish run: product page "每日预算1000元起" and "单次投放总预算5万元起", 2016 PDF "不得低于1000元", "第5个自然日" and "第28个自然日" confirmed. Used in: wechat-advertising-formats-costs (all five locales; scheduled window corrected from 1-28 to 5 to 28 days, and the undated "Niaoge Biji, Digitaling" source line replaced by the 2016 guide; the unsourced 1,000-yuan top-up cut).
 - Re-verified 2026-10-06 for 06A: "每日预算1000元起" and "免费开户" confirmed at check 1 and check 2. Used in: china-marketing-hidden-costs.
 - Re-verified 2026-10-08 for 06C: "每日预算1000元起", "单次投放总预算5万元起" and "免费开户" confirmed at check 1 and check 2; the same page says Moments ads can promote an Official Account with a one-tap follow ("在朋友圈推广公众号，让“关注”一键直达"), confirmed at both checks. Used in: wechat-open-rate-benchmark.
+- Re-verified 2026-10-11 by the 2026-10-11 publish run (sell-on-wechat source repair): "单次投放总预算5万元起" and "每日预算1000元起" confirmed at check 1 and check 2. Used in: sell-on-wechat, all five locales (replaces an undated Jiuzhilan agency citation).
 
 ### Douyin ad account opening: service fee and agent-set first recharge
 - Value: qualitative. Official channel charges a service fee; agents may open for free but set their own minimum first recharge
@@ -640,6 +641,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-08, re-fetched before the draft was finished (tag c2) and again after the quality pass (tag c2b), unchanged
 - Used in: b2b-china-social-teardown
 - Notes: Slightly older than 12 months at use; no newer official WeCom figure was found (settled fallback 9, cite with the date). Matches what-is-wecom and the CRM service page (14 million, 750 million). Recheck at the next WeCom launch event (usually August).
+- Re-verified 2026-10-11 by the 2026-10-11 publish run: "企业微信已接入超过1400万真实的企业与组织" and "服务的微信用户数超过7.5亿" confirmed at check 1 and check 2. Used in: sell-on-wechat, all five locales (replaces an undated "80% of Fortune 500" vendor citation).
 
 ### Xiaohongshu: 89% of users search it first before buying home appliances and home furnishing, 2024
 - Value: 89% of users search Xiaohongshu first when buying home appliances and home furnishing products; home content searches up 4.5 times in three years; seeding cut the decision cycle from an industry average of 45 days to under 20 (platform claim)
@@ -1583,6 +1585,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: camper-china-teardown
 - Notes: Growth rate only. Tencent publishes no absolute Channels user-time or MAU figure, so do not pair this with an invented base. The widely circulated "Channels e-commerce GMV 433 billion yuan, up 74.6%" figure that appears alongside it in search summaries is NOT from the results release and was not logged; treat it as unsourced.
 - Re-verified 2026-10-08 for 06C: "视频号利用长序列大模型优化推荐，2025年用户时长同比增长超20%" confirmed at check 1 and check 2. Used in: wechat-open-rate-benchmark.
+- Re-verified 2026-10-11 by the 2026-10-11 publish run: "视频号利用长序列大模型优化推荐，2025年用户时长同比增长超20%" confirmed at check 1 and check 2. Used in: sell-on-wechat, all five locales (replaces an undated third-party "600 million daily users" estimate).
 
 ### Xiaohongshu apparel category, first half of 2026
 - Value: commercial note saves (收藏) up more than 60% year on year and interactions up more than 52%; within apparel, clothing and footwear (服饰鞋靴) hold 68.34% of category interaction, jewelry and accessories (珠宝配饰) 22.38%, bags (箱包) 9.28%. Fastest growing seeding-note subcategories: knitwear and sweaters +78%, base layers +68%, silver jewelry +54%
@@ -2328,6 +2331,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-06, JSON endpoint re-fetched, unchanged
 - Used in: wechat-mini-program-cost; wechat-marketing-cost (all five locales, from 2026-10-06)
 - Notes: A Tencent staff post on Tencent's developer community, not the formal docs tree. "目前" means "for now": cite as "currently". Recheck note, 2026-10-06: a bare curl of the page URL from this machine was redirected to a community login gate (/community/error/emergency?forceLogin=true); the JSON endpoint served the full text. Recheck the page URL and the rule before any reuse. Supersedes the 2024-11-18 community post that gave quick-registered overseas Mini Programs a later annual review, and the note on the overseas verification entry that the claim traced only to agent pages.
+- Re-verified 2026-10-11 by the 06B publish run: the page URL still redirects curl to the community login gate; the JSON endpoint still serves "目前境外主体的小程序无需备案和年审" (check 1 and check 2). The rule stands for the published wechat-mini-program-cost.
 
 ### Overseas Mini Programs: verify within 45 days of registering
 - Value: after registering, an overseas entity must complete WeChat verification within 45 days, and the Mini Program can go live only after it passes; overseas entities may register as companies, sole traders, governments, schools and other organizations; no filing, no annual review, verification once
@@ -2777,6 +2781,73 @@ set to blocked by its draft run.
 - Verified 2: 2026-10-08, re-fetched twice (iteration 8 and after the quality pass), unchanged
 - Used in: china-kol-pricing
 - Notes: Cite as ours, as planning ranges, never as measured data or a market average. If the service page changes, 07A changes with it, in every locale.
+
+### WeChat Mini Program transaction volume, Q3 2024
+- Value: more than 2 trillion yuan in the quarter, up by double digits year over year ("十几个百分点")
+- As of: Q3 2024 (results announced 2024-11-13)
+- Source: Tencent Holdings Q3 2024 results, reported by Sina Tech (新浪科技)
+- URL: https://finance.sina.com.cn/tech/2024-11-13/doc-incvxhxn5496627.shtml
+- Verified 1: 2026-10-11, fetched with curl; "第三季度，小程序交易额超2万亿元，同比增长十几个百分点" and 2024年11月13日 confirmed
+- Verified 2: 2026-10-11, re-fetched, unchanged
+- Used in: sell-on-wechat (all five locales)
+- Notes: Older than 12 months; Tencent's later releases (2025 annual, Q1 and Q2 2026) give Mini Program growth rates only, no absolute transaction figure (settled fallback 9). Same text on Tencent News (钛媒体), news.qq.com/rain/a/20241113A06HK700.
+
+### WeChat Mini Program monthly active users, June 2026, QuestMobile
+- Value: 962 million WeChat Mini Program MAU; 1.023 billion across all Mini Program platforms
+- As of: June 2026 (report dated 2026-08-11)
+- Source: QuestMobile, 2026 全景生态流量半年报告
+- URL: https://www.questmobile.cn/research/report/2087076371092336642/
+- Verified 1: 2026-10-11, fetched with curl; "2026年6月，小程序整体月活跃用户规模已达10.23亿，其中微信小程序作为生态核心支撑，其月活跃用户规模已达9.62亿" and 2026-08-11 confirmed
+- Verified 2: 2026-10-11, re-fetched, unchanged
+- Used in: sell-on-wechat (all five locales)
+- Notes: Supersedes QuestMobile's 949 million (October 2024) and 946 million (May 2025). No per-user frequency in this report; the "nearly 70 times a month" line is October 2024 only and is no longer used. Recheck at QuestMobile's 2026 annual report (early 2027).
+
+### WeChat Store shoppers: 97.7% aged 25 or older, women about six in ten, 2024
+- Value: 97.7% of WeChat Store (微信小店) users aged 25 or older; male to female about 4:6
+- As of: 2024 (WeChat Open Class, January 2025; article dated 2025-01-10)
+- Source: NewRank (新榜), 今年依然闭门的微信公开课在聊什么？现场同行跟我们分享了10个要点
+- URL: https://www.newrank.cn/article/detail/29440
+- Verified 1: 2026-10-11, fetched with curl; "从微信小店的使用人群分布来看，25岁以上用户是主力，占比达97.7%；男女用户占比接近4:6" and 2025-01-10 confirmed
+- Verified 2: 2026-10-11, re-fetched, unchanged
+- Used in: sell-on-wechat (all five locales)
+- Notes: Closed-door event; NewRank reports from attendees' slide photos. A 2025-01-11 repost on Sina Finance gives the same 97.7% for Channels users with "女性占比达63%"; the base and share conflict, so cite as WeChat Store shoppers, about six in ten women, never "63% of Channels viewers". Older than 12 months; no 2026 Open Class demographic found (fallback 9).
+
+### Video Accounts with more than one million followers, January 2025, NewRank
+- Value: at least 1,288 accounts above one million followers ("相比2023年增长2.6倍"); counts only accounts listed on the 互选 creator marketplace
+- As of: January 10, 2025 (article dated 2025-01-19)
+- Source: NewRank (新榜), 微信2024复盘：百万粉视频号数量翻倍，日产超324篇公众号原创10万+
+- URL: https://www.newrank.cn/article/detail/29573
+- Verified 1: 2026-10-11, fetched with curl; "截至2025年1月10日，视频号至少有1288个账号粉丝量超过100万，相比2023年增长2.6倍", "不包括未入驻账号" and 2025-01-19 confirmed
+- Verified 2: 2026-10-11, re-fetched, unchanged
+- Used in: sell-on-wechat (all five locales)
+- Notes: "增长2.6倍" is ambiguous (2.6x or 3.6x); write "more than double". NewRank's 2025 review (newrank.cn/article/detail/33668) has no follower count, so this is the newest (fallback 9).
+
+### WeChat Mini Program category MAU, May 2025, QuestMobile
+- Value: WeChat Mini Program MAU 946 million; life services 932 million, finance 913 million, mobile shopping 826 million
+- As of: May 2025 (article dated 2025-07-15)
+- Source: QuestMobile 2025 全景生态流量半年报告, reported by Adquan (广告门)
+- URL: https://www.adquan.com/article/353706
+- Verified 1: 2026-10-11, fetched with curl; "截止到5月份，微信小程序月活跃用户规模达到9.46亿，生活服务、金融理财、移动购物、出行服务、移动视频位居前五，月活用户量分别为9.32亿、9.13亿、8.26亿" and 2025-07-15 confirmed
+- Verified 2: 2026-10-11, re-fetched, unchanged
+- Used in: sell-on-wechat (all five locales)
+- Notes: Older than 12 months; QuestMobile's December 2025 and June 2026 reports give no category split in text (fallback 9). Supersedes the October 2024 split (890 / 878 / 864 million).
+
+### Hermès and Cartier WeChat Mini Program MAU growth, 2024, QuestMobile
+- Value: monthly active users up 704% (Hermès) and 2,551% (Cartier) year over year
+- As of: 2024 (QuestMobile 2024 WeChat Mini Program annual report, published 2024-12-10)
+- Source: QuestMobile, its own Tencent News account
+- URL: https://news.qq.com/rain/a/20241210A029UC00
+- Verified 1: 2026-10-11, fetched with curl; "爱马仕、卡地亚微信小程序月活跃用户规模同比增长704%、2551%", media "QuestMobile", pubtime 2024-12-10 confirmed
+- Verified 2: 2026-10-11, re-fetched, unchanged
+- Used in: sell-on-wechat (all five locales)
+- Notes: Same text on Digitaling (QuestMobile's own account), digitaling.com/articles/1295685.html. Not on digitaling.com/articles/1048977.html. No newer luxury Mini Program figure found (fallback 9).
+
+### NOT LOGGED, searched and rejected 2026-10-11 (sell-on-wechat and what-is-wecom source repair)
+- WeChat Channels "near 600 million daily active users": third-party estimate, no original, undated. Tencent publishes no Channels user count. Cut from sell-on-wechat.
+- "Customer acquisition cost from tens to hundreds of yuan since 2018" (Jiazi Guangnian): the report was not found; only second-hand ("据甲子光年报告统计", woshipm 2024). Beijing News 2019-06-13 (JD.com cost per new customer, a reporter's estimate) is a platform's own cost and seven years old; Beijing Business Today 2024-07-14 relies on pseudonymous merchants. Cut from sell-on-wechat and what-is-wecom, all five locales.
+- "80% of Fortune 500 companies in China use WeCom" (WeScrm, a vendor): Tencent's own line is "80%国内500强已开通企业微信" (China top 500, opened), on the 2019 WeCom launch page, superseded by the 2025 scale figure. Not cited.
+- Blancpain "integrated WeCom with its CRM", cited to an undated "Tencent Official, WeCom 4.0 launch report": WeCom 4.0 launched 2022-01-11 (ifanr), but no Tencent or press page tying Blancpain to it was found. Cut from what-is-wecom, all five locales.
+- QuestMobile "949 million, nearly 70 times a month" (October 2024) and the 890 / 878 / 864 million category split: superseded by the June 2026 and May 2025 figures. Not reused.
 
 ## Client figures
 
