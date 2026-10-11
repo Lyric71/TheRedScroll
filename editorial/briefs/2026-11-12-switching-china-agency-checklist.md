@@ -98,7 +98,7 @@ Final section only. CTA label: **Book a call**
 | Field | Ceiling | Draft value |
 |---|---|---|
 | Title | 52 chars | Switching China Agencies: A Checklist (37 chars) |
-| Meta description | 152 chars | How to leave a China marketing agency without losing your accounts: ownership rules, ad deposits, content assets, KOL relationships and a 30-day (144 chars) |
+| Meta description | 152 chars | How to leave a China marketing agency without losing your accounts: ownership rules, ad deposits, content assets, KOL ties, and a 30-day plan. (142 chars; completed 2026-10-11 by the 07C draft run, the earlier value was cut off mid-phrase) |
 | Excerpt | 25 words | generate in the SEO iteration |
 
 The draft values above are approved. Use them unless the finished article

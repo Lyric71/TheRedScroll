@@ -175,6 +175,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-09-28 for 04B: "月活跃用户已突破4亿" and "日搜索量高达8亿" confirmed (check 1 and check 2).
 - Notes: Platform's own figure, global and all devices. Pair with the QuestMobile domestic count below when an independent number is asked for.
 - Re-verified 2026-10-05 for 05C: "月活跃用户已突破4亿" and "日搜索量高达8亿" confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
+- Re-verified 2026-10-11 for 07C: "月活跃用户已突破4亿，日搜索量高达8亿" and 2026年05月27日 confirmed at check 1 and check 2. Used in: choose-china-social-platforms.
 
 ### Xiaohongshu domestic monthly active users, QuestMobile
 - Value: 242 million MAU in mainland China, May 2025, up 13.2% year on year
@@ -645,6 +646,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: b2b-china-social-teardown
 - Notes: Slightly older than 12 months at use; no newer official WeCom figure was found (settled fallback 9, cite with the date). Matches what-is-wecom and the CRM service page (14 million, 750 million). Recheck at the next WeCom launch event (usually August).
 - Re-verified 2026-10-11 by the 2026-10-11 publish run: "企业微信已接入超过1400万真实的企业与组织" and "服务的微信用户数超过7.5亿" confirmed at check 1 and check 2. Used in: sell-on-wechat, all five locales (replaces an undated "80% of Fortune 500" vendor citation).
+- Re-verified 2026-10-11 for 07C: both strings confirmed at check 1 and check 2. Used in: choose-china-social-platforms.
 
 ### Xiaohongshu: 89% of users search it first before buying home appliances and home furnishing, 2024
 - Value: 89% of users search Xiaohongshu first when buying home appliances and home furnishing products; home content searches up 4.5 times in three years; seeding cut the decision cycle from an industry average of 45 days to under 20 (platform claim)
@@ -785,6 +787,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: douyin-marketing-cost; also china-social-media-platforms-2026 and douyin-marketing-western-brands (corrected 2026-10-11, all five locales)
 - Notes: No allowed source supports "750 million daily active users" (the Douyin money page until 2026-10-11) or "750 to 766 million MAU, 587 million daily" (two articles until 2026-10-11); both replaced in all five locales. ByteDance itself has published nothing newer than "over 600 million" (Yicai 2020-09-15, Zhang Nan; Yicai 2022-05-31, Wei Wenwen). LatePost (2025-06-25) says more than 800 million a day on QuestMobile's basis: that is the source of the "800 million daily" line in douyin-social-commerce-profitability, which is consistent with the platform's "over 600 million" and was left as is. QuestMobile March 2026: 1,009.0027 million (Sina, 2026-04-29).
 - Re-verified 2026-10-11 for douyin-social-commerce-profitability, where it replaces "800 million daily active users" in all five locales.
+- Re-verified 2026-10-11 for 07C: "抖音以102928.07的成绩排名第二" and "微信6月MAU（MAU指月活跃用户数，以万为单位）达115372.11" confirmed at check 1 and check 2. The Sina page sits on the Sina Tech channel with an editor credit and no outside source line; the March 2026 figure (100900.27万, 1.009 billion) is on Sina Tech credited to Kuaikeji (快科技), 2026-04-29, https://finance.sina.com.cn/tech/discovery/2026-04-29/doc-inhwckrh8029807.shtml, if a credited reprint is ever needed. Used in: choose-china-social-platforms.
 
 ### Douyin enterprise account: overseas-entity route listed, 2026; verification agreement terms
 - Value: the Douyin Enterprise Account Help Center lists "港澳台/海外主体自助入驻" (self-service onboarding for Hong Kong, Macau, Taiwan and overseas entities, created 2026-08-18, updated 2026-08-19) and "抖音企业机构账号海外/跨境主体认证审核规则" (review rules for overseas and cross-border entities, 2026-05-18); both bodies sit behind a Feishu login. The verification agreement (updated 2025-12-16) says the fee is as shown on the application page, is owed whether or not verification succeeds, and review starts within 15 working days. A foreign trademark used on an account needs a Chinese or Madrid registration certificate (rules dated 2024-07-04)
@@ -816,6 +819,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: douyin-marketing-cost (the rebate, 0-yuan entry, return insurance and cross-border fee row were cut from the final draft; the rebate, 0-yuan entry and insurance docs got their check 2 by separate re-fetch, tag c2x, 2026-10-11)
 - Notes: Pages are a JavaScript app; text read from https://school.jinritemai.com/api/eschool/v2/library/article/detail?id=<id>&need_content=true. Four docs (rates, settlement, cross-border fees, the affiliate explainer) carry their date only as the platform's update_timestamp, accepted like the Xingtu and Pugongying update times. The table gives two separate rates; never print one combined "commission" figure. The Douyin Pay agreement (version 202601) publishes no payment-channel rate. Return-shipping insurance is optional (payout up to 24 yuan on small items, rules revised 2026-10-08).
 - Re-verified 2026-10-11 for the douyin-marketing-western-brands and douyin-social-commerce-profitability fixes: aJcQ5pzG2Vk4 "国内商品技术服务费率返佣后为0.6%，②跨境商品技术服务费率返佣后为1%" (updated 2026-10-01); aHijyoJA6hvb "服饰内衣|服装|/|/|/|5.00%|5.00%", "面部洗护|/|/|4.00%|5.20%"; aHMYyFoqESKn "服饰内衣|服装|/|/|/|6.00%|4.00%". All confirmed at check 1 and check 2. The "0-yuan entry" trial excludes 全球购 merchants (aHibaVrJVc8f section 1.2), so it is not used for Western-brand articles.
+- Re-verified 2026-10-11 for 07C: 108056 "需拥有海外或中国香港、中国澳门、中国台湾地区注册公司实体", "需拥有中国大陆境内的连带责任承担的主体，即境内代理人" and "本规范于2021年2月19日首次生效，于2026年7月15日最新修订生效" confirmed at check 1 and check 2. Used in: choose-china-social-platforms (cross-border entry line only).
 
 ### Douyin Select Alliance (精选联盟): commission range and creator platform fee by rating, August 2026
 - Value: merchants set open commission rates of 5% to 50% (targeted plans 5% to 80%, team-leader plans up to 90% combined); creators pay the platform 10% (A, B+, B ratings), 20% (C) or 40% (D) of their commission; commissions settle 15 days after confirmed receipt; published 2026-07-30, effective 2026-08-05
@@ -827,6 +831,84 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: douyin-marketing-cost; also live-commerce-china-how-it-works ("roughly a 10% service fee" corrected 2026-10-11, all five locales)
 - Notes: Ebrun (2026-04-03) describes the earlier flat 10% creator fee; superseded from August 5, 2026.
 - Re-verified 2026-10-11: "5%-50%", "于2026年7月30日公示，调整部分预计8月5日生效". Used in douyin-marketing-western-brands and douyin-social-commerce-profitability (all five locales).
+
+### Users of several content apps at once, October 2025, QuestMobile
+- Value: in October 2025, 39.8% of users of the typical new-media apps (Douyin, Kuaishou, Weibo, Xiaohongshu, Bilibili) used three or more of them; deduplicated active users of those apps 1.149 billion
+- As of: October 2025 (report published 2025-12-16)
+- Source: QuestMobile 2025 new media ecosystem report, reported by 36Kr (36氪); same paragraph on Guanggaomen (广告门), posted by QuestMobile
+- URL: https://www.36kr.com/p/3597577937502473 ; https://www.adquan.com/article/357522
+- Verified 1: 2026-10-11, fetched with curl (logs/scratch/07C/check.py, tag c1); "39.8%的用户使用三个及以上新媒体平台", "典型新媒体平台APP去重活跃用户规模及月人均使用时长分别为11.49亿" and "2025年12月16日" confirmed; adquan "2025-12-16" confirmed
+- Verified 2: 2026-10-11, re-fetched at iteration 8 (tag c2) and after the quality pass (tag c2b), unchanged
+- Used in: choose-china-social-platforms
+- Notes: Panel data, not a survey. WeChat is not among the five apps. No pairwise overlap (Douyin and Xiaohongshu) is in any page text; the 2024 "20.4%" and "80.5%" overlap lines exist only in chart images and are not logged.
+
+### Kuaishou users in third-tier cities and below, October 2025, QuestMobile
+- Value: 56.3% of Kuaishou users live in third-tier cities or below
+- As of: October 2025 (published 2025-12-16)
+- Source: QuestMobile, reported by DoNews
+- URL: https://www.donews.com/news/detail/1/6308940.html
+- Verified 1: 2026-10-11, fetched with curl (tag c1); "快手三线及以下城市用户占比达到56.3%" confirmed, with the Weibo, Xiaohongshu and Bilibili city-tier line
+- Verified 2: 2026-10-11, re-fetched (tags c2, c2b), unchanged
+- Used in: choose-china-social-platforms
+- Notes: Same QuestMobile report as the 36Kr entry above; QuestMobile's own page (questmobile.com.cn/research/report/2000767092954075138/) carries the date but the figures sit in images.
+
+### Weibo monthly and daily active users, June 2026 (Q2 2026)
+- Value: 561 million monthly active users and 254 million average daily active users in June 2026
+- As of: June 2026 (results released 2026-08-19)
+- Source: Weibo Q2 2026 results, Sina Finance (新浪财经); Yicai (第一财经) the same day; HKEX filing 2026-08-19 (its Chinese font extracts garbled, so match on the press pages)
+- URL: https://finance.sina.com.cn/stock/usstock/c/2026-08-19/doc-ininvwqk8304798.shtml ; https://m.yicai.com/news/103324908.html
+- Verified 1: 2026-10-11, fetched with curl (tag c1); "2026年6月的月活跃用户数为5.61亿", "2026年6月的日均活跃用户数为2.54亿" and 2026年08月19日 confirmed; Yicai "截至二季度末，微博的月活跃用户达到5.61亿，日活跃用户达到2.54亿" confirmed
+- Verified 2: 2026-10-11, re-fetched (tags c2, c2b), unchanged
+- Used in: choose-china-social-platforms; also /weibo-agency/ and /platforms/weibo/ (561M and 254M, June 2026) and china-social-media-platforms-2026, all five locales, corrected 2026-10-11
+- Notes: Sina is Weibo's parent; Yicai and 21st Century Business Herald (2026-08-19) carry the same figures independently. The June 2025 figure (588 million) is not in the text of these pages; compare with the Q4 2025 entry (567 million) instead. Recheck after the Q3 2026 results (November 2026).
+
+### Bilibili users, Q2 2026: monthly, daily, time spent, average age
+- Value: 117 million average DAU (up 7%), 371 million average MAU, 113 minutes a day per user (up 8 minutes) in Q2 2026; users average about 26.5 years old (management, earnings call)
+- As of: Q2 2026 (results 2026-08-27; call reported 2026-08-28)
+- Source: Bilibili Q2 2026 results, Securities Times (证券时报); earnings call reported by Xinwen Chenbao (新闻晨报) on Tencent News; English confirmation from the Motley Fool call transcript (2026-08-31)
+- URL: https://www.stcn.com/article/detail/4143348.html ; https://news.qq.com/rain/a/20260828A07Q5P00 ; https://www.fool.com/earnings/call-transcripts/2026/08/31/bilibili-bili-q2-2026-earnings-call-transcript/
+- Verified 1: 2026-10-11, fetched with curl (tag c1); "二季度，B站日均活跃用户1.17亿，同比增长7%；月均活跃用户增至3.71亿；用户日均使用时长较去年同期增长8分钟至113分钟", "B站用户平均年龄约26.5岁" and "The average age of Bilibili user now is 26.5 years old" confirmed
+- Verified 2: 2026-10-11, re-fetched (tags c2, c2b), unchanged
+- Used in: choose-china-social-platforms; also /platforms/others/ (371M, 113 min), all five locales, corrected 2026-10-11
+- Notes: The 26.5 is a spoken management figure, not in the press release; attribute it to the earnings call. Same results line on Economic Observer, 2026-08-27 (eeo.com.cn/2026/0827/1013715.shtml).
+
+### Kuaishou app users, Q2 2026
+- Value: 412 million average DAU and 797 million average MAU (a record) in Q2 2026; exact 412.3 million (up 0.8%) and 797.3 million (up 11.5%)
+- As of: Q2 2026 (results released 2026-08-19)
+- Source: Kuaishou Q2 2026 results, Securities Times (证券时报, 人民财讯); exact figures in the company release on Economic Daily News (經濟日報), Taiwan
+- URL: https://www.stcn.com/article/detail/4086579.html ; https://money.udn.com/money/story/123828/9701633
+- Verified 1: 2026-10-11, fetched with curl (tag c1); "快手应用平均日活跃用户达到4.12亿，平均月活跃用户达到7.97亿，创历史新高" confirmed (the udn page was checked by the research agent the same day)
+- Verified 2: 2026-10-11, re-fetched (tags c2, c2b), unchanged
+- Used in: choose-china-social-platforms; also /platforms/others/ (797M), all five locales, corrected 2026-10-11
+
+### Douyin search: searches after watching versus user-initiated, Ocean Engine 2025
+- Value: 53% of Douyin searches come after watching a video (看后搜), 47% are user-initiated
+- As of: Ocean Engine 2025 search white paper (article dated 2025-11-25; no data period stated)
+- Source: Ocean Engine (巨量引擎), syndicated release reported by China Daily online (中国日报网, C财经, credited 东方网); same text on Beijing Daily (京报网), 2025-11-25
+- URL: https://caijing.chinadaily.com.cn/a/202511/25/WS69252082a310942cc499329e.html
+- Verified 1: 2026-10-11, fetched with curl (tag c1); "53%的看后搜与47%的主动搜索共同构成双轮驱动" and 2025-11-25 confirmed
+- Verified 2: 2026-10-11, re-fetched (tags c2, c2b), unchanged
+- Used in: choose-china-social-platforms
+- Notes: The platform's own release, not reporting. Still no allowed source for a Douyin search MAU (7.6亿) or 53亿 daily searches.
+
+### Xiaohongshu luxury: official stores, conversion span, 2025 searches
+- Value: more than 30 luxury brands run official stores on Xiaohongshu; a luxury buyer's conversion span can exceed 90 days; 250 billion searches on Xiaohongshu in 2025, nearly 90% user-initiated; more than 70 luxury brands used 种草直达 in 2025
+- As of: 2025 platform data (article dated 2026-06-01)
+- Source: Xiaohongshu (小红书) data, reported by Luxe.co (华丽志), byline 刘瑞雪
+- URL: https://luxe.co/post/468870
+- Verified 1: 2026-10-11, fetched with curl (tag c1); "共有30余个奢侈品牌在小红书开设官方店铺", "奢侈品消费者的转化跨度可能超过90天", "2025年，小红书全年搜索总次数2500亿次，近90%的搜索由用户主动发起" and 2026-06-01 confirmed
+- Verified 2: 2026-10-11, re-fetched (tags c2, c2b), unchanged
+- Used in: choose-china-social-platforms (the 30 stores and 90 days lines)
+- Notes: Reads as a feature tied to Xiaohongshu's 2026 luxury summit, with images supplied by the platform; cite as Xiaohongshu data reported by Luxe.co.
+
+### NOT LOGGED, searched and rejected 2026-10-11 (choose China platforms)
+- B2B buyers or B2B accounts on Douyin or Ocean Engine: agency and self-media only. Ocean Engine "线索商家数量增长58%" (Sina via 中关村在线, 2025-01-09) covers every lead-gen merchant in 2024, not B2B.
+- Average number of platforms a brand runs: no neutral source. "近八成品牌选择多平台组合投放" is a Weiboyi report in Jiemian's sponsored 商讯 column (2026-05-26); Topklout's "抖音与小红书两者合计近65%" is author-submitted on TopMarketing (2026-06-30). Both are KOL sellers. Not used.
+- Tmall Global "2415个海外新品牌" (2025): only on Sina's ToB corporate-news channel (finance.sina.com.cn/tob/2026-01-27/doc-inhithne5772830.shtml), no outlet byline. Not used.
+- Xiaohongshu "50% of tier-1 and tier-2 high-net-worth people" (Luxe.co, 2025-05-21): no period or definition. Tencent Ads "1.03亿奢侈品R0": platform ad copy. Xiaohongshu x Vogue Business "43%": self-media reposts only. Two Sina summit pieces (2026-06-02) are labeled AI-generated. Not used.
+- Weibo trending-topic reach: no dated allowed source.
+- Zhihu monthly users: Zhihu stopped disclosing user scale in 2025 ("2024年MAU跌回9900万，到2025年，知乎干脆不再披露用户规模数据", Jiemian, 2026-04-30, https://www.jiemian.com/article/14373105.html, one check only); Q2 2026 reports 13.1 million average monthly subscribing members (company release on Yahoo Finance, 2026-08-26). Not cited. Note, 2026-10-11: /platforms/others/ gives Zhihu "~83M" with no date. No 2025 or 2026 Zhihu user count exists to set against it, and choose-china-social-platforms gives Zhihu no figure, so nothing on the site contradicts it.
+- Douyin Global Purchase brand count: newest is "3000+ brands" from 2023 (China Daily, 2024-01-03). Too old for current use.
 
 ## Regulatory and legal
 
@@ -1184,6 +1266,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Notes: Same article repeats the platform's 400 million MAU and 800 million daily searches, which are already logged above. The 77% search figure is the strongest published basis for search-coverage seeding arithmetic; the platform publishes no seeding volume benchmark.
 - Re-verified 2026-10-05 for 05C: "75%日活用户浏览推荐内容，77%日活用户通过搜索解决问题" (first check-2 fetch failed transiently; three retries returned HTTP 200 with the string) confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
 - Re-verified 2026-10-11 for content-mix-china: "77%日活用户通过搜索解决问题" and "小红书官宣月活突破4亿、日均搜索超8亿次" (article 2026-05-29) confirmed at check 1 and check 2. Used in: content-mix-china (all five locales).
+- Re-verified 2026-10-11 for 07C: "77%日活用户通过搜索解决问题" confirmed at check 1 and check 2. Used in: choose-china-social-platforms.
 
 ### Xiaohongshu commercial governance: Community Convention 2.0 and enforcement volumes
 - Value: Community Convention 2.0 launched 19 January 2026, adding an "orderly commerce" (有序经营) section; from March to the end of August 2025 the platform banned over 12 million fake accounts, actioned 13.76 million false marketing notes and cleared over 360 million fake comments
@@ -1396,6 +1479,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-17, re-fetched, unchanged
 - Used in: china-agency-pricing-models
 - Notes: Survey of 198 advertisers across more than 20 industries plus 17 marketing scientists. Self-reported intent, not spend data. The 52% measurement figure is the most reusable line for any reporting or transparency article.
+- Re-verified 2026-10-11 for 07C: exact wording of the media lines on this page: "互联网端资源投资方面，种草平台以76%的增投比例位居第一，短视频以56%位居第二，AI原生应用以47%位居第三" and "视频号(微信)的增投率为41%，微信及朋友圈为35%"; also "媒介碎片化(45%)", "198位营销广告主" and 2026年01月14日 (page is GB2312). All confirmed at check 1 and check 2. Used in: choose-china-social-platforms (76%, 56%, 41%, 45%). The page names no individual seeding platform; never write "Xiaohongshu 76%". Sohu reposts that print "种草平台（56%）、短视频（47%）" are shifted by one rank and wrong.
 
 ### Xiaohongshu professional account: identities, Blue V and enterprise review time
 - Value: the professional account is the entry ticket for commercial activity on the platform; two identities, personal (real-name verification only) and enterprise (qualification review, carries the Blue V badge); after an enterprise application is submitted a review specialist makes contact within 1 working day and review completes in 4 to 7 working days on average; a single review order is valid for 30 days; personal identity allows up to 2 identities per account, enterprise exactly 1; pro.xiaohongshu.com supports enterprise identity only, personal identity must be done in the app; three benefit groups, community operations, store operations and commercial promotion
@@ -1461,6 +1545,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-18, re-downloaded and re-extracted, unchanged, all six strings re-confirmed
 - Used in: xiaohongshu-business-account-setup, chinese-entity-social-media
 - Notes: Extends the store qualification entry above with the store types and the cross-border signature rule. Still hosted on a "test" path of the platform CDN; it resolved on 2026-09-18 but recheck the URL before each reuse. **No store deposit (保证金) or technical service fee figure is logged here on purpose:** every number found in Chinese search traces to reseller and agent blogs, not to the platform or a dated trade publication. Do not cite one.
+- Re-verified 2026-10-11 for 07C: PDF re-downloaded (HTTP 200) and "跨境贸易：每个品牌须有对应品牌方开具的授权书" and "Certificate of incorporation" confirmed at check 1 and check 2. Used in: choose-china-social-platforms.
 
 ### NOT LOGGED, searched and rejected 2026-09-18 (Xiaohongshu account setup)
 - Juguang minimum first prepayment (the 5,000 yuan figure): Zhihu and Sohu agent posts only, no platform page and no dated trade publication. Cut from xiaohongshu-business-account-setup.
@@ -1627,6 +1712,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-08, re-fetched before the draft was finished (tag c2) and again after the quality pass (tag c2b), unchanged
 - Used in: b2b-china-social-teardown
 - Notes: The research agent also found "1,439" in Tencent's own Q2 2026 results PDF. Recheck after the Q3 2026 results (November 2026).
+- Re-verified 2026-10-11 for 07C: "合并月活跃账户数达14.39亿" confirmed at check 1 and check 2 (logs/scratch/07C/check.py, tags c1, c2, c2b). Used in: choose-china-social-platforms. Q1 2026 was 1.432 billion (Securities Times, 2026-05-13, https://www.stcn.com/article/detail/3907294.html, "截至3月31日，微信及WeChat的合并月活跃账户数达14.32亿"), which matches the platforms guide; not cited.
 
 ### Weibo monthly and daily active users, end of Q4 2025
 - Value: 567 million monthly active users and 252 million daily active users at the end of Q4 2025; full-year 2025 revenue 1.76 billion US dollars
@@ -1637,6 +1723,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-22, re-fetched with curl, both strings confirmed unchanged
 - Used in: camper-china-teardown
 - Notes: 100ec.cn serves a JavaScript cookie challenge (HW_CHECK) to a bare curl and returns a 659-byte stub. Sending a Referer of https://www.100ec.cn/ plus an Accept-Language header gets the real page. Note this before re-verifying. Weibo MAU has been declining through 2025 (591m in Q1, 588m Q2, 578m Q3, 567m Q4); always cite the quarter.
+- Re-verified 2026-10-11 for 07C: "截至2025年四季度末，微博月活跃用户数量达到 5.67 亿" and "日活跃用户数量为 2.52 亿" confirmed at check 1 and check 2 (curl with the 100ec Referer). Used in: choose-china-social-platforms, as the comparison point for Q2 2026. Superseded as the current Weibo figure by the Q2 2026 entry; the site pages that quoted 567 and 252 million as current were moved to 561 and 254 million (June 2026) in all five locales on 2026-10-11.
 
 ### WeChat Channels total user time, 2025
 - Value: 视频号 (Channels) total user time up more than 20% year on year in 2025, credited to a long-sequence model recommendation upgrade
@@ -1985,6 +2072,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: wechat-vs-xiaohongshu
 - Notes: Same figures and data period on Tencent News (品牌议题, 2026-09-20, news.qq.com/rain/a/20260920A07F8700). The platform does not split the leads into B2B and B2C; never present them as B2B leads. Agency claims of "300万+ companies" or "8,000+ companies, 2 million leads a month" conflict with this platform figure and are not logged.
 - Re-verified 2026-10-08 for 06D: "在小红书经营KOS的企业账号数已超4万", "每月通过KOS产生的留资量超600万条" and "2026.8" confirmed at check 1 and check 2. Used in: b2b-china-social-teardown (with the line that the platform does not split B2B and consumer leads).
+- Re-verified 2026-10-11 for 07C: "在小红书经营KOS的企业账号数已超4万", "每月通过KOS产生的留资量超600万条" and "2026.8" confirmed at check 1 and check 2. Used in: choose-china-social-platforms (with the line that the platform does not split business and consumer leads).
 
 ### LinkedIn's China exit: social features, then the job app, August 2023
 - Value: in May 2023 LinkedIn, which had closed its social networking features in China two years earlier, announced that its China job app (领英职场) would stop service on August 9, 2023, including the app, the desktop site and the WeChat Mini Program
@@ -1996,6 +2084,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: wechat-vs-xiaohongshu
 - Notes: A dated event, older than 12 months, cited with its date (settled fallback 9). LinkedIn's own help page (linkedin.com/help/linkedin/answer/a557005) states the stop date but shows only a relative "last updated" date, so CNR is the citable dated source.
 - Re-verified 2026-10-08 for 06D: "已在两年前关闭中国区社交网络功能" and "2023年8月9日起正式停止服务" confirmed at check 1 and check 2. Used in: b2b-china-social-teardown.
+- Re-verified 2026-10-11 for 07C: both strings confirmed at check 1 and check 2. Used in: choose-china-social-platforms.
 
 ### NOT LOGGED, searched and rejected 2026-10-05 (WeChat or Xiaohongshu)
 - Share of Official Account reads from algorithmic recommendation ("45.9%", "50% to 70%"): Zhihu, jzl.com and yiban.io self-media, no Tencent source. Not cited. CORRECTION 2026-10-08: the original of "45.9%" is 36Kr's own March 2025 article on its consumer account, now logged above as "WeChat Official Account open rate history and the shift to recommendation, 36Kr March 2025"; it is one account's share, not a platform figure. The "50% to 70%" line still has no original.
@@ -2043,6 +2132,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-05, re-fetched, unchanged
 - Used in: travel-hospitality; also the travel cards on /rednote-agency/ and /platforms/rednote/ in all five locales (replaced the unsourced "64%" line on 2026-10-05)
 - Notes: The 80% is a share of Xiaohongshu's travel-interest users, not of all Chinese travelers. Word it that way every time. Trade publication reporting platform data.
+- Re-verified 2026-10-11 for 07C: "月活2.3亿+旅行兴趣用户中", "超80%的用户会在这里查攻略" and "小红书商业数据中台，2025年11月至12月" confirmed at check 1 and check 2. Used in: choose-china-social-platforms.
 
 ### Xiaohongshu: destinations chosen by interest, guides found through search
 - Value: 69% of users choose a destination based on interest; 57% of travel guides are found through search
@@ -2063,6 +2153,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-05, re-fetched, unchanged
 - Used in: travel-hospitality
 - Notes: Also checked twice on 2026-10-05, not cited in 05D: Douyin hotel and travel group-buy orders up 42% in 2025, hotel and homestay orders up 63% (China Economic Net, 2025-12-25, http://finance.ce.cn/home/jrzq/dc/202512/t20251225_2666295.shtml).
+- Re-verified 2026-10-11 for 07C: "32%的用户通过直播间下单酒店消费" confirmed at check 1 and check 2. Used in: choose-china-social-platforms.
 
 ### Trip.com outbound hotel and air bookings versus 2019, Q3 2025
 - Value: outbound hotel and air bookings above 140% of the same period of 2019
@@ -2325,6 +2416,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-06, re-fetched, unchanged
 - Used in: wechat-mini-program-cost
 - Notes: An overseas company cannot open a WeChat Store; its China-registered subsidiary can.
+- Re-verified 2026-10-11 for 07C: "入驻主体应为中国大陆地区合法注册的企业实体" and "2026年06月17日" confirmed at check 1 and check 2. Used in: choose-china-social-platforms.
 
 ### WeChat Mini Program search does not index web-view content
 - Value: WeChat's Mini Program search "does not index any content in a web-view"; pages must open directly by URL; set a clear title and thumbnail
@@ -2737,6 +2829,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-11, re-fetched at iteration 8 (tag c2) and again after the quality pass (tag c2b), unchanged; "抖音、快手51岁及以上用户占比分别达到22.2%、22.6%", "微博、小红书、哔哩哔哩30岁以下用户占比分别为58.6%、54.2%、66.5%", "抖音APP下沉市场月活跃用户规模超5亿", "抖音电商日均退货量占全国电商逆向件的10%至20%", "80.5万元（大写：捌拾万零伍仟元整）", "≥该批次总制作费×3.8倍", "对此要求就是做到保持盈亏平衡，稍有利润", "大约会看到 9-12 个来自 M2、M3 流量池的电商内容"
 - Used in: douyin-marketing-cost
 - Notes: Fuling Zhacai is a tender budget, not an award; 1,610 yuan a video is a derived ceiling. Zhongjing Foods is older than 12 months; cite with its 2024 date. No allowed 2025 to 2026 source gives Douyin's gender split or a Douyin search MAU.
+- Re-verified 2026-10-11 for 07C: "抖音、快手51岁及以上用户占比分别达到22.2%、22.6%", "微博、小红书、哔哩哔哩30岁以下用户占比分别为58.6%、54.2%、66.5%", "微博、小红书、哔哩哔哩一线与新一线城市用户占比分别为36.6%、37.2%、38.5%" (36Kr, 2025-12-16) and "抖音APP下沉市场月活跃用户规模超5亿" (36Kr, 2026-07-07) confirmed at check 1 and check 2. Used in: choose-china-social-platforms (age, city-tier and lower-tier lines).
 
 ### NOT LOGGED, searched and rejected 2026-10-11 (Douyin marketing cost)
 - Douyin ad first deposit (10,000 yuan direct, 3,000 to 5,000 via agent): agency, reseller and self-media pages only. Still no platform figure; the 2026 agreement says the platform sets and publishes it.

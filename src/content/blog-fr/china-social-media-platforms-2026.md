@@ -4,7 +4,7 @@ description: "WeChat, Douyin, RedNote, Weibo et une dizaine d’autres plateform
 metaTitle: "Réseaux sociaux chinois : guide 2026 des marques"
 metaDescription: "Le guide 2026 des réseaux sociaux chinois pour les marques étrangères. Chiffres réels, ressorts de la vente et conseils pour démarrer. Vu du terrain."
 publishDate: 2026-06-30
-updatedDate: 2026-10-11
+updatedDate: 2026-10-12
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Plateformes"
@@ -131,7 +131,7 @@ Pour beaucoup de marques grand public étrangères, RedNote est la première por
 
 Si WeChat est privé et RedNote personnel, Weibo est public. La plateforme tient du croisement entre X et Instagram : une scène ouverte taillée pour la conversation.
 
-Elle réunit encore plus de 580 millions d’utilisateurs actifs mensuels, dont près de 60 % de moins de 30 ans. On y va pour l’actualité chaude, les sujets tendance, les potins de stars et les avis tranchés. Le contenu est public et partageable, ce qui fait de Weibo l’endroit où amplifier un moment.
+Elle réunit encore 561 millions d’utilisateurs actifs mensuels (juin 2026), dont près de 60 % de moins de 30 ans. On y va pour l’actualité chaude, les sujets tendance, les potins de stars et les avis tranchés. Le contenu est public et partageable, ce qui fait de Weibo l’endroit où amplifier un moment.
 
 Weibo glisse peu à peu d’une plateforme purement « tendance » vers quelque chose de plus proche du quotidien, avec des dizaines de cercles d’intérêt verticaux : divertissement, sport, ACG, lifestyle. Fêtes et temps forts saisonniers offrent aux marques des pics récurrents à saisir.
 
@@ -213,7 +213,7 @@ Chez TheRedScroll, c’est la ligne que nous tenons. L’IA produit. Les humains
 
 Si vous entrez en Chine, inutile d’être partout à la fois. Il vous faut les deux ou trois bonnes plateformes, bien configurées, avec un contenu pensé pour chacune.
 
-Un point de départ simple pour la plupart des marques grand public : un compte officiel WeChat vérifié comme socle, RedNote pour la découverte et la confiance, Douyin pour la portée et la vente. Les marques B2B partent souvent plutôt de WeChat et Toutiao, avec Zhihu et Bilibili pour la crédibilité.
+Un point de départ simple pour la plupart des marques grand public : un compte officiel WeChat vérifié comme socle, RedNote pour la découverte et la confiance, Douyin pour la portée et la vente. Les marques B2B partent plutôt de WeChat et de WeCom, avec RedNote, Zhihu ou Bilibili pour asseoir leur crédibilité. [Notre guide pour choisir vos trois premières plateformes](/fr/decryptages/choose-china-social-platforms/) ramène ce choix à quatre questions et à une grille de notation.
 
 Le budget suit l’ambition. Un test sur une seule plateforme coûte bien moins qu’un programme multiplateforme complet adossé à des KOL et à du média payant. Ce qui pèse sur le chiffre est simple : le nombre de plateformes que vous tenez, le volume de contenu que vous publiez, et ce que vous mettez par-dessus en publicités et en créateurs.
 

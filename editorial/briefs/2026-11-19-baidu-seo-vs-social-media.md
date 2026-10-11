@@ -97,7 +97,7 @@ Final section only. CTA label: **Book a call**
 | Field | Ceiling | Draft value |
 |---|---|---|
 | Title | 52 chars | Do You Need Baidu SEO If You Do Social? (39 chars) |
-| Meta description | 152 chars | When Baidu SEO matters more than social media in China, when it does not, the B2B exception, in-platform search, and what a minimum Baidu presence (146 chars) |
+| Meta description | 152 chars | When Baidu SEO matters more than social media in China, when it does not, the B2B exception, in-platform search, and a minimum Baidu setup. (139 chars; completed 2026-10-11 by the 07C draft run, the earlier value was cut off mid-phrase) |
 | Excerpt | 25 words | generate in the SEO iteration |
 
 The draft values above are approved. Use them unless the finished article

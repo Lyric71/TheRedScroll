@@ -4,7 +4,7 @@ description: "WeChat, Douyin, RedNote, Weibo, and a dozen more Chinese platforms
 metaTitle: "China Social Media Platforms: 2026 Brand Guide"
 metaDescription: "A 2026 guide to China's social media platforms for foreign brands. Real user numbers, commerce features, and where to start. From the ground."
 publishDate: 2026-06-30
-updatedDate: 2026-10-11
+updatedDate: 2026-10-12
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Platforms"
@@ -131,7 +131,7 @@ For a lot of foreign consumer brands, RedNote is the first door into China. Wort
 
 If WeChat is private and RedNote is personal, Weibo is public. It works like a mix of X and Instagram, an open stage built for conversation.
 
-It still draws more than 580 million monthly active users, with close to 60% under 30. People go there for breaking news, trending topics, celebrity talk, and hot takes. Content is public and shareable, which makes Weibo the place to amplify a moment.
+It still draws 561 million monthly active users (June 2026), with close to 60% under 30. People go there for breaking news, trending topics, celebrity talk, and hot takes. Content is public and shareable, which makes Weibo the place to amplify a moment.
 
 Weibo has been shifting from a pure "what's hot" platform toward something more like daily life, with dozens of vertical interest circles spanning entertainment, sports, ACG, and lifestyle. Holiday and seasonal moments give brands recurring spikes to ride.
 
@@ -213,7 +213,7 @@ At TheRedScroll, that is the line we hold. AI produces. People decide. Every pub
 
 If you are entering China, you do not need to be everywhere at once. You need the right two or three platforms, set up correctly, with content built for each one.
 
-A simple starting mix for most consumer brands: a verified WeChat Official Account for your base, RedNote for discovery and trust, and Douyin for reach and sales. B2B brands often lead with WeChat and Toutiao instead, with Zhihu and Bilibili for credibility.
+A simple starting mix for most consumer brands: a verified WeChat Official Account for your base, RedNote for discovery and trust, and Douyin for reach and sales. B2B brands often lead with WeChat and WeCom instead, with RedNote, Zhihu, or Bilibili for credibility. [Our guide to picking your first three platforms](/insights/choose-china-social-platforms/) turns that choice into four questions and a scoring table.
 
 Budget follows ambition. A single-platform test costs far less than a full multi-platform program with KOLs and paid media behind it. What drives the number is simple: how many platforms you run, how much content you publish, and how much you put into ads and creators on top.
 

@@ -98,7 +98,7 @@ Final section only. CTA label: **Book a call**
 | Field | Ceiling | Draft value |
 |---|---|---|
 | Title | 52 chars | Double 11 on Chinese Social: The Countdown (42 chars) |
-| Meta description | 152 chars | A Double 11 social plan for foreign brands, whether you have six weeks or two: presale, content, live commerce slots, budget allocation and the (143 chars) |
+| Meta description | 152 chars | A Double 11 social plan for foreign brands, with six weeks or two to go: presale, content, live commerce slots, and the budget split. (133 chars; completed 2026-10-11 by the 07C draft run, the earlier value was cut off mid-phrase) |
 | Excerpt | 25 words | generate in the SEO iteration |
 
 The draft values above are approved. Use them unless the finished article

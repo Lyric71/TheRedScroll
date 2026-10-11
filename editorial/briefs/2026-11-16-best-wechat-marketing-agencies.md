@@ -98,7 +98,7 @@ Final section only. CTA label: **See the full rate card**
 | Field | Ceiling | Draft value |
 |---|---|---|
 | Title | 52 chars | Best WeChat Marketing Agencies in 2026 (38 chars) |
-| Meta description | 152 chars | WeChat agencies compared on Mini Program capability, WeCom and CRM depth, content operations and published pricing, with the questions to ask before (148 chars) |
+| Meta description | 152 chars | WeChat agencies compared on Mini Program skills, WeCom and CRM depth, content operations, and published pricing, plus the questions to ask. (139 chars; completed 2026-10-11 by the 07C draft run, the earlier value was cut off mid-phrase) |
 | Excerpt | 25 words | generate in the SEO iteration |
 
 The draft values above are approved. Use them unless the finished article

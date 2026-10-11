@@ -100,7 +100,7 @@ Final section only. CTA label: **Book a call**
 | Field | Ceiling | Draft value |
 |---|---|---|
 | Title | 52 chars | GEO in China: Get Cited by DeepSeek (35 chars) |
-| Meta description | 152 chars | How brands get cited by China's AI search layer. How DeepSeek, Doubao, Qwen and Baidu AI source answers, the five signals that matter, and a working (148 chars) |
+| Meta description | 152 chars | How brands get cited by China's AI search: how DeepSeek, Doubao, Qwen, and Baidu AI source answers, the five signals that matter, and a plan. (141 chars; completed 2026-10-11 by the 07C draft run, the earlier value was cut off mid-phrase) |
 | Excerpt | 25 words | generate in the SEO iteration |
 
 The draft values above are approved. Use them unless the finished article

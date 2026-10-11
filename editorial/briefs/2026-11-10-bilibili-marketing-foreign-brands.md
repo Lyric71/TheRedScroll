@@ -97,7 +97,7 @@ Final section only. CTA label: **Book a call**
 | Field | Ceiling | Draft value |
 |---|---|---|
 | Title | 52 chars | Bilibili for Foreign Brands: Cost and Fit (41 chars) |
-| Meta description | 152 chars | Who Bilibili reaches in 2026, why long-form video works there, how UP host partnerships differ from KOL deals, ad costs and which sectors should skip (149 chars) |
+| Meta description | 152 chars | Who Bilibili reaches in 2026, why long-form video works there, how UP host deals differ from KOL deals, ad costs, and who should skip it. (137 chars; completed 2026-10-11 by the 07C draft run, the earlier value was cut off mid-phrase) |
 | Excerpt | 25 words | generate in the SEO iteration |
 
 The draft values above are approved. Use them unless the finished article

@@ -98,7 +98,7 @@ Final section only. CTA label: **Book a call**
 | Field | Ceiling | Draft value |
 |---|---|---|
 | Title | 52 chars | China Market Entry: A Six-Month Timeline (40 chars) |
-| Meta description | 152 chars | A six-month China market entry timeline across three parallel tracks: legal and trademark, platform verification, and brand localization, with board (148 chars) |
+| Meta description | 152 chars | A six-month China market entry timeline across three parallel tracks: legal and trademark, platform verification, and brand localization. (137 chars; completed 2026-10-11 by the 07C draft run, the earlier value was cut off mid-phrase) |
 | Excerpt | 25 words | generate in the SEO iteration |
 
 The draft values above are approved. Use them unless the finished article

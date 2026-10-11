@@ -96,7 +96,7 @@ Final section only. CTA label: **Email me this estimate, then Book a call**
 | Field | Ceiling | Draft value |
 |---|---|---|
 | Title | 52 chars | China Social Media Budget Calculator (36 chars) |
-| Meta description | 152 chars | Estimate a China social media budget across WeChat, Xiaohongshu, Douyin and Weibo. Content, seeding, ad spend and agency fees, with published (141 chars) |
+| Meta description | 152 chars | Estimate a China social media budget across WeChat, Xiaohongshu, Douyin, and Weibo: content, seeding, ad spend, and agency fees. (128 chars; completed 2026-10-11 by the 07C draft run, the earlier value was cut off mid-phrase) |
 | Excerpt | 25 words | generate in the SEO iteration |
 
 The draft values above are approved. Use them unless the finished article

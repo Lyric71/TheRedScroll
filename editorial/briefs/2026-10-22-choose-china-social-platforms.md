@@ -98,7 +98,7 @@ Final section only. CTA label: **Book a call**
 | Field | Ceiling | Draft value |
 |---|---|---|
 | Title | 52 chars | How to Pick Your First China Platforms (38 chars) |
-| Meta description | 152 chars | A scoring framework for choosing China social platforms: four questions on discovery, price point, sales model and buyer type, plus four ready (142 chars) |
+| Meta description | 152 chars | A scoring framework for choosing China social platforms: four questions on discovery, price point, sales model, and buyer type, plus four shortlists. (149 chars; amended 2026-10-11 by the 07C draft run: the earlier value was cut off after "plus four ready") |
 | Excerpt | 25 words | generate in the SEO iteration |
 
 The draft values above are approved. Use them unless the finished article

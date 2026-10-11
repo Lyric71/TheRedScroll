@@ -98,7 +98,7 @@ Final section only. CTA label: **Book a call**
 | Field | Ceiling | Draft value |
 |---|---|---|
 | Title | 52 chars | China Social Commerce Platforms Compared (40 chars) |
-| Meta description | 152 chars | Xiaohongshu store, Douyin Shop and WeChat store compared on requirements, commission, fulfilment and cross-border rules, with a decision matrix by (146 chars) |
+| Meta description | 152 chars | Xiaohongshu store, Douyin Shop, and WeChat Store compared on requirements, commission, fulfillment, and cross-border rules, with a decision matrix. (147 chars; completed 2026-10-11 by the 07C draft run, the earlier value was cut off mid-phrase) |
 | Excerpt | 25 words | generate in the SEO iteration |
 
 The draft values above are approved. Use them unless the finished article

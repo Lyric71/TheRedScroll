@@ -102,7 +102,7 @@ Final section only. CTA label: **Download the data, then Book a call**
 | Field | Ceiling | Draft value |
 |---|---|---|
 | Title | 52 chars | China Social Media Benchmarks 2026 (34 chars) |
-| Meta description | 152 chars | Engagement benchmarks for WeChat, Xiaohongshu, Douyin and Weibo by sector, from live managed accounts, with full methodology and a downloadable data (148 chars) |
+| Meta description | 152 chars | Engagement benchmarks for WeChat, Xiaohongshu, Douyin, and Weibo by sector, from live managed accounts, with the full methodology. (130 chars; completed 2026-10-11 by the 07C draft run, the earlier value was cut off mid-phrase) |
 | Excerpt | 25 words | generate in the SEO iteration |
 
 The draft values above are approved. Use them unless the finished article

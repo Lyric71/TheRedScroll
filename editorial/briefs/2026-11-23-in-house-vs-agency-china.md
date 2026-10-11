@@ -99,7 +99,7 @@ Final section only. CTA label: **See the full rate card**
 | Field | Ceiling | Draft value |
 |---|---|---|
 | Title | 52 chars | In-House or Agency for China Social? (36 chars) |
-| Meta description | 152 chars | A full year-one cost model comparing an in-house China social team against agency packages, including salaries, tooling, ramp time and the break-even (149 chars) |
+| Meta description | 152 chars | A year-one cost model comparing an in-house China social team with an agency: salaries, tooling, ramp time, and the break-even point. (133 chars; completed 2026-10-11 by the 07C draft run, the earlier value was cut off mid-phrase) |
 | Excerpt | 25 words | generate in the SEO iteration |
 
 The draft values above are approved. Use them unless the finished article

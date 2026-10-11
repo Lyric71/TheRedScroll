@@ -1,6 +1,6 @@
 # TheRedScroll
 
-Last updated: 2026-10-11
+Last updated: 2026-10-12
 
 > TheRedScroll is a China social media agency based in Shanghai and Hong Kong. We help Western brands grow on WeChat, Douyin, RedNote (Xiaohongshu), Weibo, and 14 other Chinese social platforms, on a fixed scope and a fixed price.
 
@@ -75,6 +75,7 @@ Founded by Cyril Drouin, former CEO of Publicis Commerce and Performance Marketi
 - [B2B China social media case study: Viessmann and iGuzzini](https://www.theredscroll.com/insights/b2b-china-social-teardown/): How two trade-channel brands (a heating maker sold through dealers, a lighting maker specified by architects) used Douyin, Xiaohongshu, WeChat, Weibo and WeCom to reach the household behind the order, the one-job-per-platform setup, the WeCom handoff from question to sale and service, why it took about two years, and what we would do differently; quotes only what the two public case studies publish (published 2026-10-11)
 - [China KOL pricing in 2026: rates by platform and tier](https://www.theredscroll.com/insights/china-kol-pricing/): Planning ranges for Chinese KOLs and KOCs on Xiaohongshu, Douyin and WeChat by follower tier, how each marketplace (Xingtu, Pugongying, WeChat creator marketplace) sets and changes prices, what category does and does not do to price, platform fees, ad-use rights and exclusivity, KOC seeding, four negotiation levers, eight fraud signals and what sits between the brand and the creator (published 2026-10-11)
 - [Douyin marketing cost in 2026: what you pay and what a package should include](https://www.theredscroll.com/insights/douyin-marketing-cost/): Seven Douyin cost lines with a dated source each: Blue V verification fees and the overseas-entity route, video production priced from public procurement awards, Ocean Engine prepayment, search, TopView and DOU+ floors, live commerce host pay, staff wages and cost ratios, Xingtu creator fees and Select Alliance commissions, Douyin Shop technical service fees, deposits and returns, three budget tiers and six things a package must state (published 2026-10-11)
+- [Which China social media platform to start on: how to pick your first three](https://www.theredscroll.com/insights/choose-china-social-platforms/): Why most foreign brands start on three China platforms with WeChat as the base, four questions that pick the other two (search or discovery, premium or mass market, direct sales or a distributor, consumer or committee buyer), store entry rules for foreign companies on Douyin, Xiaohongshu and WeChat, a scoring table with two worked examples, four common shortlists and the year-two candidates with Q2 2026 user figures (published 2026-10-12)
 
 ## Localized versions
 

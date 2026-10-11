@@ -98,7 +98,7 @@ Final section only. CTA label: **Book a call**
 | Field | Ceiling | Draft value |
 |---|---|---|
 | Title | 52 chars | Health and Supplements Marketing in China (41 chars) |
-| Meta description | 152 chars | How supplement brands market in China. Blue Hat registration versus cross-border, what claims each route allows, where buyers research and package (146 chars) |
+| Meta description | 152 chars | How supplement brands market in China: Blue Hat registration versus cross-border, the claims each route allows, and where buyers research. (138 chars; completed 2026-10-11 by the 07C draft run, the earlier value was cut off mid-phrase) |
 | Excerpt | 25 words | generate in the SEO iteration |
 
 The draft values above are approved. Use them unless the finished article
