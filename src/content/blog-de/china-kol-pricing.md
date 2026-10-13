@@ -186,7 +186,7 @@ Die offene Ausschreibung folgt am unteren Marktende derselben Logik: ein Briefin
 > Auf Xiaohongshu (小红书) entfallen auf kleine Creator inzwischen fast 20 Prozent der KOL-Ausgaben.
 > Quelle: TopMarketing, Bericht über Topklout (克劳锐), Juni 2026. https://www.itopmarketing.com/info22850
 
-Den Trend sollten Sie dennoch beobachten: Ebiquity verzeichnete 2025 stark steigende KOC-Kosten auf Xiaohongshu.
+Den Trend sollten Sie dennoch beobachten: Ebiquity verzeichnete 2025 stark steigende KOC-Kosten auf Xiaohongshu. [Unser Kostenvergleich KOL gegen KOC](/de/analysen/kol-vs-koc-cost-roi/) rechnet eine Seeding-Runde mit 40 KOC-Beiträgen gegen einen einzigen Beitrag eines Top-KOL.
 
 ## Vier Verhandlungshebel, die funktionieren
 

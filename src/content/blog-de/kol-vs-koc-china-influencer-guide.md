@@ -104,7 +104,7 @@ Für internationale Marken ist dieser Weg eine Prüfung wert. Es braucht nicht z
 
 ## Budget kalkulieren
 
-Alles hängt vom Startpunkt ab.
+Alles hängt vom Startpunkt ab. [Unser Kostenvergleich KOL gegen KOC](/de/analysen/kol-vs-koc-cost-roi/) stellt ein KOC-Seeding-Budget und ein Budget für einen Top-KOL nebeneinander.
 
 **Erstkontakt mit China.** Beginnen Sie mit KOC-Platzierungen auf Xiaohongshu. Produktsendungen, organische Bewertungen, kurze unaufgeregte Videos. Sie bauen eine Belegbasis auf, bevor Sie eine Stufe höher gehen. Das ist zugleich der günstigste Weg, herauszufinden, welche Botschaften wirklich greifen.
 

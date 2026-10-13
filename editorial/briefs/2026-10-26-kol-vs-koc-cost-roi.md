@@ -62,7 +62,15 @@ still current, reuse the logged citation instead of researching again. If you
 find a new figure, append it to that ledger before you finish.
 
 - Fee bands, cite the same sources as the KOL pricing page for consistency
-- Worked campaign figures from our own engagements, labeled as ours
+- Worked campaign figures from our own engagements, labeled as ours.
+  Amended 2026-10-13 (08A draft run, SPEC fallbacks 3 and 5): the ledger's
+  first-party section holds no measured campaign figure and no /work/ page
+  publishes a KOL or KOC cost or result. The two worked campaigns are
+  planning arithmetic built from the creator ranges published on
+  /services/influencer-marketing/ and the platforms' published fees,
+  labeled as such, never as results. The return side uses published,
+  dated outcomes only. No source publishes CPE or CPM by creator tier in
+  text, so the article says so instead of quoting one.
 
 **If a figure cannot be sourced, cut the claim.** Do not estimate, do not
 hedge, do not write "industry sources suggest". A missing number is better
@@ -74,8 +82,10 @@ Describe each of these in the handoff block at the end of the file. Do not
 embed images in body copy.
 
 - Cost per outcome comparison table
-- Two worked campaign cards, KOC and KOL, with full line items
-- Budget split diagram: launch versus established
+- Two worked campaign cards, KOC and KOL, with full line items (amended
+  2026-10-13, fallback 7: markdown tables, the site has no card component)
+- Budget split diagram: launch versus established (amended 2026-10-13,
+  fallback 7: a markdown table, the site has no chart component)
 - Feature image: many small photo prints scattered versus one large print, overhead. China rule: set the scene in China and show Chinese social platforms on screen (WeChat, Xiaohongshu, Douyin or Weibo interface on a phone, laptop or studio monitor); set in a typical Chinese city, varied from article to article and not only Shanghai, only Chinese people in frame, candid normal-life photo in crisp sharp focus with legible screens (never blur, smudges or noise), no AI polish; this rule wins over the subject hint
 
 ## Tables required

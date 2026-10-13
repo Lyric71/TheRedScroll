@@ -186,7 +186,7 @@ La convocatoria abierta sigue la misma lógica en la franja baja del mercado: un
 > En Xiaohongshu (小红书), los creadores de nivel bajo acaparan ya cerca del 20 % del gasto en KOL.
 > Fuente: TopMarketing, sobre datos de Topklout (克劳锐), junio de 2026. https://www.itopmarketing.com/info22850
 
-No pierda de vista la tendencia: Ebiquity constató que los costes de los KOC en Xiaohongshu subieron con fuerza en 2025.
+No pierda de vista la tendencia: Ebiquity constató que los costes de los KOC en Xiaohongshu subieron con fuerza en 2025. [Nuestra comparativa de costes entre KOL y KOC](/es/analisis/kol-vs-koc-cost-roi/) enfrenta una ronda de seeding de 40 publicaciones de KOC a una sola publicación de un KOL de primer nivel.
 
 ## Cuatro palancas de negociación que funcionan
 

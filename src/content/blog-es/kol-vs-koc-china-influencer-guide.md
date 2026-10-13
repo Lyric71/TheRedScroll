@@ -104,7 +104,7 @@ Para una marca extranjera, eso abre opciones. No hay por qué empezar con acuerd
 
 ## Cómo pensar el presupuesto
 
-La mezcla adecuada depende de dónde se arranque.
+La mezcla adecuada depende de dónde se arranque. [Nuestra comparativa de costes entre KOL y KOC](/es/analisis/kol-vs-koc-cost-roi/) pone lado a lado un presupuesto de seeding con KOC y otro para un KOL de primer nivel.
 
 Las que llegan por primera vez a China suelen rendir mejor empezando con seeding de KOC en Xiaohongshu. Envío de producto, reseñas sinceras, vídeos cortos auténticos. Levantar una base de prueba orgánica antes de gastar fuerte en KOL. Es, además, la forma más barata de ver qué mensaje cala.
 

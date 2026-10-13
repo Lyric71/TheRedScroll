@@ -262,7 +262,8 @@ fits. Brands are shifting money toward the small end.
 > Source: TopMarketing, reporting Topklout (克劳锐), June 2026. https://www.itopmarketing.com/info22850
 
 Watch the trend, though. Ebiquity found Xiaohongshu KOC costs rising sharply in
-2025.
+2025. [Our KOL vs KOC cost comparison](/insights/kol-vs-koc-cost-roi/) prices a 40-note seeding round
+against one top-tier post.
 
 ## Four negotiation levers that work
 

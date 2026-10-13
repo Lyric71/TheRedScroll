@@ -1,6 +1,6 @@
 # TheRedScroll
 
-Last updated: 2026-10-12
+Last updated: 2026-10-14
 
 > TheRedScroll is a China social media agency based in Shanghai and Hong Kong. We help Western brands grow on WeChat, Douyin, RedNote (Xiaohongshu), Weibo, and 14 other Chinese social platforms, on a fixed scope and a fixed price.
 
@@ -77,6 +77,7 @@ Founded by Cyril Drouin, former CEO of Publicis Commerce and Performance Marketi
 - [Douyin marketing cost in 2026: what you pay and what a package should include](https://www.theredscroll.com/insights/douyin-marketing-cost/): Seven Douyin cost lines with a dated source each: Blue V verification fees and the overseas-entity route, video production priced from public procurement awards, Ocean Engine prepayment, search, TopView and DOU+ floors, live commerce host pay, staff wages and cost ratios, Xingtu creator fees and Select Alliance commissions, Douyin Shop technical service fees, deposits and returns, three budget tiers and six things a package must state (published 2026-10-11)
 - [Which China social media platform to start on: how to pick your first three](https://www.theredscroll.com/insights/choose-china-social-platforms/): Why most foreign brands start on three China platforms with WeChat as the base, four questions that pick the other two (search or discovery, premium or mass market, direct sales or a distributor, consumer or committee buyer), store entry rules for foreign companies on Douyin, Xiaohongshu and WeChat, a scoring table with two worked examples, four common shortlists and the year-two candidates with Q2 2026 user figures (published 2026-10-12)
 - [B2B and industrial marketing in China](https://www.theredscroll.com/industries/b2b-industrial/): How B2B and industrial suppliers win leads in China: request-for-quote buying, a WeChat service account run as a pipeline, WeCom for the sales handoff and contact ownership, Chinese standards and white papers as content, Zhihu and Bilibili for technical buyers, the Import Expo and Industry Fair as content shoots, and measuring a 12-month sales cycle by WeCom contacts by source (published 2026-10-12)
+- [KOL vs KOC cost in China: what you pay and what comes back](https://www.theredscroll.com/insights/kol-vs-koc-cost-roi/): KOL and KOC cost and return compared on Xiaohongshu and Douyin: planning rates per post by follower tier, why no cost per engagement by tier is published and how to compute your own, the 25 yuan Pugongying boost price as a yardstick, a 40-note KOC seeding budget and a top-tier KOL budget side by side, the launch creator mix, the established-account split, where KOLs still pay, briefing both and labeling paid notes (published 2026-10-14)
 
 ## Localized versions
 

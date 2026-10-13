@@ -104,7 +104,7 @@ For international brands, this means you have options. You do not need to start 
 
 ## How to think about budget
 
-The right mix depends on where you are.
+The right mix depends on where you are. [Our KOL vs KOC cost comparison](/insights/kol-vs-koc-cost-roi/) works through a KOC seeding budget and a top-tier KOL budget side by side.
 
 Brands entering China for the first time usually get the best results starting with KOC seeding on Xiaohongshu. Product gifting, honest reviews, authentic short videos. Build a base of organic proof before spending big on KOLs. This is also the cheapest way to test what messaging resonates.
 

@@ -176,6 +176,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Notes: Platform's own figure, global and all devices. Pair with the QuestMobile domestic count below when an independent number is asked for.
 - Re-verified 2026-10-05 for 05C: "月活跃用户已突破4亿" and "日搜索量高达8亿" confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
 - Re-verified 2026-10-11 for 07C: "月活跃用户已突破4亿，日搜索量高达8亿" and 2026年05月27日 confirmed at check 1 and check 2. Used in: choose-china-social-platforms.
+- Re-verified 2026-10-13 for 08A: "月活跃用户已突破4亿，日搜索量高达8亿" confirmed at check 1, check 2 and after the quality pass. Used in: kol-vs-koc-cost-roi.
 
 ### Xiaohongshu domestic monthly active users, QuestMobile
 - Value: 242 million MAU in mainland China, May 2025, up 13.2% year on year
@@ -731,6 +732,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-08, re-fetched at iteration 8 and again after the quality pass, unchanged; "投稿任务是一种一对多的任务模式", "按视频自然播放量结算", "为满足客户对于中腰部达人及KOC的批量招募需求", "1000粉-5000万粉", "达人结算单价=客户出价*0.8"
 - Used in: china-kol-pricing
 - Notes: The 0.8 rule applies to one task mode only. Do not present 20% as a general agency fee.
+- Re-verified 2026-10-13 for 08A: "为满足客户对于中腰部达人及KOC的批量招募需求", "1000粉-5000万粉" and "达人结算单价=客户出价*0.8" confirmed at check 1, check 2 and after the quality pass. Used in: kol-vs-koc-cost-roi.
 
 ### Xingtu creator rules and campaign report: follower inflation and natural traffic
 - Value: creators with serious follower inflation (刷量) on their main account are blocked from taking orders (rules first effective 2023-04-13, revised 2025-10-20); the campaign report can exclude marketing traffic to show natural-traffic metrics and defines completion rate
@@ -759,6 +761,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-08, re-fetched at iteration 8 and again after the quality pass, unchanged; "默认普通模式，仅提供内容合作服务，收取 10% 服务费", "如创作者一口价报价为 10,000，需额外支付 1,000 平台服务费，总计需支付 11,000", "正式发布的笔记 30 天内不可删除", "博主（K）自主报价，一口价结算", "不收取10%服务费", "图文 / 视频笔记一口价", "平台 TR 10%", "改价幅度为报价的 80%～150%", "品牌与博主协商价格的 10%", "可选：30天，45天，60天，自定义，自定义时长在：30天～365天"
 - Used in: china-kol-pricing
 - Notes: The help center renders with JavaScript. Text read from the platform's own document endpoint, https://pgy.xiaohongshu.com/api/pgy/help/doc?shortcutId=<id>&role=4, shortcutIds eb3150fa550d424459f8838a77c7e433 (custom order), 365934c681f69e354bd38835492e1e8f (trade modes), 97e5a307cc23aeefc7295c76926088c6 (cooperation guide), 32d3922730ccd391216e57b54861f3e8 (price change), e748ef4c760584b31219d823e7bfe10a (protection period). Cite the readable help-center URL. This is the platform-level source the Niaoge Biji 2022 entry asked for, for the 10% fee. The premium mode (优效模式) still appears in current docs but no current page states its rate.
+- Re-verified 2026-10-13 for 08A: "收取 10% 服务费", "总计需支付 11,000" and "80%～150%" confirmed on the doc endpoints at check 1, check 2 and after the quality pass. Used in: kol-vs-koc-cost-roi.
 
 ### Pugongying content boost CPM and ad-material authorization
 - Value: brand boost of cooperation notes (内容加热) raised from 15 to 25 yuan CPM, migration completed 2026-01-23, old 5,000-yuan-per-note cap removed; to run a note as a Juguang ad the brand ticks 'use as ad material' at order and the creator accepting the order is the authorization; smart-creative tools cannot be switched on later if not enabled at order
@@ -769,6 +772,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-08, re-fetched at iteration 8 and again after the quality pass, unchanged; "CPM从15元调整为25元", "2026年1月23日", "我希望该笔记可以作为广告素材进行后续投放", "博主接受订单即为默认授权", "如果在蒲公英平台发起合作时未启用智能创意，后续在聚光平台进行投放时将无法使用智能创意功能"
 - Used in: china-kol-pricing
 - Notes: shortcutIds da9e48ae271a1da33022122af1f0d56a (boost) and c5a96960d8fbff7cb5e3412f3283be58 (authorization), same endpoint as above. Supersedes the rejected Niaoge 2022-12-22 boost caps. The 'cannot later' rule covers smart creative only, not ad use in general.
+- Re-verified 2026-10-13 for 08A: "CPM从15元调整为25元" and "2026年1月23日" confirmed at check 1, check 2 and after the quality pass. The worked budgets use 25 yuan per 1,000 impressions. Used in: kol-vs-koc-cost-roi.
 
 ### WeChat creator marketplace (互选): fees, quoting, reuse and exclusivity
 - Value: one-to-one deals pay a 5% platform fee (creator paid 500 yuan, client pays 525); from April 1, 2026, new recruitment tasks pay 10% (Channels) or 20% (Official Accounts); an Official Account's price is the creator's pre-tax take-home and the last change of the previous month sets this month's price; in-feed boost of a creator video valid one year without consent, wider ad use one year with the creator's consent; if exclusivity is agreed, the creator posts only that advertiser's content for the agreed period
@@ -1057,6 +1061,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-10-05 for 05D: "广告发布者应当显著标明“广告”" and "2023年5月1日起施行" confirmed at check 1 and check 2. Used in: travel-hospitality.
 - Re-verified 2026-10-06 for 06A: "显著标明“广告”" confirmed; used in prose, no blockquote at check 1 and check 2. Used in: china-marketing-hidden-costs.
 - Re-verified 2026-10-08 for 07A: Article 9 wording and "自2023年5月1日起施行" confirmed at check 1 and check 2. Used in: china-kol-pricing.
+- Re-verified 2026-10-13 for 08A: "广告发布者应当显著标明“广告”" confirmed at check 1, check 2 and after the quality pass. Used in: kol-vs-koc-cost-roi.
 
 ### SAMR enforcement guideline on absolute terms in advertising (2023): scope, carve-outs, leniency
 - Value: qualitative. Covers 国家级, 最高级, 最佳 "以及与其含义相同或者近似的其他用语" (point 2). Not applicable when the term only states service attitude, business philosophy, culture or wishes, or a goal (point 5); or, with no misleading or disparaging effect, when it compares products within one brand, gives usage, timing or storage tips, is a graded term under a national, industry or local standard with a stated basis, is part of a product name, model, trademark or patent, is an official award or title, or states a fact limited by time or place such as sales, revenue or market share (point 6). Claims the advertiser cannot prove are punished (point 7). A first use with minor harm, promptly corrected, may go unpunished (point 9). Generally not minor: efficacy, cure-rate or effective-rate absolutes in medical, medical aesthetics, drug, device, health food and special medical food ads; return or safety absolutes in investment ads; outcome absolutes in education and training ads (point 11)
@@ -1351,6 +1356,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-10-05 for 05C: "75%日活用户浏览推荐内容，77%日活用户通过搜索解决问题" (first check-2 fetch failed transiently; three retries returned HTTP 200 with the string) confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
 - Re-verified 2026-10-11 for content-mix-china: "77%日活用户通过搜索解决问题" and "小红书官宣月活突破4亿、日均搜索超8亿次" (article 2026-05-29) confirmed at check 1 and check 2. Used in: content-mix-china (all five locales).
 - Re-verified 2026-10-11 for 07C: "77%日活用户通过搜索解决问题" confirmed at check 1 and check 2. Used in: choose-china-social-platforms.
+- Re-verified 2026-10-13 for 08A: "77%日活用户通过搜索解决问题" confirmed at check 1 and check 2; the post-quality fetch first returned a 568-byte error page, a retry returned the full page with the string. New use, same page: "一个只有 5000 粉的博主，如果粉丝都是某款产品的精准用户，商业价值可能比一个百万粉的泛娱乐博主还要高" (玄霜, Xiaohongshu creator commercialization lead, on an official case) confirmed at check 1, check 2 and after the quality pass. Used in: kol-vs-koc-cost-roi.
 
 ### Xiaohongshu commercial governance: Community Convention 2.0 and enforcement volumes
 - Value: Community Convention 2.0 launched 19 January 2026, adding an "orderly commerce" (有序经营) section; from March to the end of August 2025 the platform banned over 12 million fake accounts, actioned 13.76 million false marketing notes and cleared over 360 million fake comments
@@ -2826,6 +2832,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-08, re-fetched at iteration 8 and again after the quality pass, unchanged; "2025 年 KOL 市场的刊例价上涨了 11.6%", "下降了 3.4%", "15% 的“剪刀差”", "预计 2025 年市场规模将突破 1,085 亿人民币", "从平台/MCN 的刊例价，到谈判后的名义成交价"
 - Used in: china-kol-pricing
 - Notes: Chinese-language original of the Campaign Asia entry above. Prefer this URL for the gap; it also dates the market figure (2025, above 108.5 billion).
+- Re-verified 2026-10-13 for 08A: "刊例价上涨了 11.6%" and "下降了 3.4%" confirmed at check 1, check 2 and after the quality pass. Used in: kol-vs-koc-cost-roi.
 
 ### Ebiquity: China social KOL market 2025 and tier cost directions by platform
 - Value: 2025 market 93 billion yuan, 58% of global KOL spend; head KOLs 5.8% of orders; like-for-like cost up about 8% in 2025, quotes usually up more than 8% a year; Douyin and WeChat head and mid-tier costs up; Xiaohongshu head down, mid, tail and KOC up sharply; Bilibili every KOL tier up
@@ -2836,6 +2843,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-08, re-fetched at iteration 8 and again after the quality pass, unchanged; "2025年中国社交KOL营销市场规模将达到930亿元人民币", "2025年广告主在头部KOL上的订单量占比仅为5.8%", "抖音和微信 ：头部及腰部KOL成本普遍上涨", "小红书 ：头部KOL成本下降，而中尾部和KOC成本大幅上升", "B 站 ：各层级KOL价格成本均见上涨", "KOL报价缺乏透明机制，年度涨幅普遍高于8%"
 - Used in: china-kol-pricing
 - Notes: Market-size figures differ by definition across sources (Topklout 84bn, Ebiquity 93bn, R3 above 108.5bn for 2025). Never mix them in one sentence; label each.
+- Re-verified 2026-10-13 for 08A: the Xiaohongshu tier line (split by a strong tag in the HTML) and "小红书的达人生态以长尾和业余爱好者为主，占比超85%" (new use: over 85% of Xiaohongshu creators are long-tail and amateur) confirmed at check 1, check 2 and after the quality pass. Used in: kol-vs-koc-cost-roi.
 
 ### Topklout: 2025 KOL spend and its tier and category mix
 - Value: 2025 KOL spend 84 billion yuan, down about 4% (90bn 2023, 87.3bn 2024); head KOLs 13.1% of placements and 20.5% of spend, mid and tail 86.8% of placements; Xiaohongshu tail near 20% of spend; Douyin 3C up 4.1 points and auto up 3.6 points of spend
@@ -2846,6 +2854,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-08, re-fetched at iteration 8 and again after the quality pass, unchanged; "840亿，这是2025年KOL整体投放市场的规模，较2024年微降了约4%", "头部仅占13.1%，而腰尾部合计高达86.8%；金额占比上，头部为20.5%", "小红书尾部金额占比逼近20%", "抖音数码3C投放金额增长4.1个百分点，汽车增长3.6个百分点"
 - Used in: china-kol-pricing
 - Notes: Topklout is owned by Tianxiaxiu (天下秀), a listed influencer-marketing company (its 2025 annual report lists it). The 36Kr copy fails with curl.
+- Re-verified 2026-10-13 for 08A: the head 13.1% / 20.5% line and "小红书尾部金额占比逼近20%" confirmed at check 1, check 2 and after the quality pass. The page also says "抖音尾部KOL占据了72.7%的投放次数" (checked once, not cited). Used in: kol-vs-koc-cost-roi.
 
 ### QuestMobile 2024: sponsored-post unit prices by creator category
 - Value: Douyin: looks, auto and finance creators lead soft-ad unit price and income; Xiaohongshu: beauty creators face the most competition and their average price is relatively low; creators under 500,000 followers (mostly under 100,000) carry most brand placements
@@ -2866,6 +2875,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-08, re-fetched at iteration 8 and again after the quality pass, unchanged; "新榜的品牌方越来越爱用便宜的 KOC （中小达人）替代头部KOL，单笔投放金额缩水", "2025年内容营销解决方案毛利率约为9.6%"
 - Used in: china-kol-pricing
 - Notes: The KOC line is the reporter's reading of the filing; attribute it to Yema Caijing. The filing PDF itself was not found on HKEX.
+- Re-verified 2026-10-13 for 08A: the KOC line (split by an inline card comment in the page source) confirmed at check 1, check 2 and after the quality pass. Used in: kol-vs-koc-cost-roi.
 
 ### Tianxiaxiu 2025: influencer-marketing revenue, gross margin and platform rebates
 - Value: influencer-marketing revenue 3.904 billion yuan at an 18.95% gross margin (WEIQ platform business 3.700 billion at 17.77%); the self-serve platform charges a percentage technical service fee; a broker notes its gross margin relies on rebate (返点) policies from platforms such as Douyin and Kuaishou
@@ -2978,6 +2988,117 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Ocean Engine, WeChat Channels or Xiaohongshu figures for industrial or B2B lead generation: agency pages only (Sohu, cnblogs, nowcoder). Ocean Engine's 2025 search white paper lines on Beijing Daily (2025-11-25) give no period or base and cover consumer search. The Douyin 2025 tech-content report (China News Service, 2026-01-12) covers consumer tech.
 - WeCom count of manufacturing companies: none published by Tencent.
 - Canton Fair WeChat registration claims: guide and agency sites only.
+
+### Xiaohongshu KFS method: creator notes, feed ads, search ads; piling up creators does not always work
+- Value: qualitative. Xiaohongshu Inspiration Marketing (小红书灵感营销) set out KFS: K (creator content), F (feed ads for precise reach), S (search ads to capture searches); "just piling up creators and notes does not always work"; 55% of users tend to browse, 45% search actively
+- As of: November 2022 (article dated 2022-11-17)
+- Source: GeekPark (极客公园), on a Xiaohongshu Inspiration Marketing report co-published with 引力传媒
+- URL: https://www.geekpark.net/news/311320
+- Verified 1: 2026-10-13, fetched with curl, "KFS 内容营销组合策略" and "只是堆达人、铺笔记并不总是行之有效" confirmed
+- Verified 2: 2026-10-13, re-fetched at iteration 8 and after the quality pass, unchanged
+- Used in: kol-vs-koc-cost-roi
+- Notes: Older than 12 months; no newer platform text on KFS found (fallback 9). No platform source gives a KFS budget ratio (3:5:2 and similar exist only on agency and self-media pages): never quote one.
+
+### Xiaohongshu launch creator mix: about 10% head, 40% mid-tier, 50% lower tier (platform sales executive, 2025)
+- Value: during a launch, head creators about 10% (set the tone), mid-tier 40% (seeding efficiency), lower tier 50% (density); a creator count, not a budget share
+- As of: May 2025 (article dated 2025-05-12)
+- Source: Modern Home Appliances (现代家电网), quoting 齐凯, Xiaohongshu senior direct-client sales executive (小红书高级直客经理), at the 3rd China Kitchen Industry Summit
+- URL: https://m.xdjd.cn/mArticle/542102/0/129936A75789/Article.aspx
+- Verified 1: 2026-10-13, fetched with curl, "头部达人比例可以为10%左右，主要定调造网红款；中腰部达人可以占比40%，提升种草效率；腰尾部达人可占50%，通过高密度炒热关注氛围" and "高级直客经理" confirmed
+- Verified 2: 2026-10-13, re-fetched at iteration 8 and after the quality pass, unchanged
+- Used in: kol-vs-koc-cost-roi
+- Notes: Said for home appliances; the article presents it as a platform staffer's launch guidance, not a rule. The only dated platform-voice split found.
+
+### Xiaohongshu 2024: seeding orders up 95%, earning creators up 200%
+- Value: 2024 seeding orders +95%, creators earning money +200%; 4,700 MCNs, over 220,000 creators under them
+- As of: March 2025 (article dated 2025-03-24)
+- Source: Sina Tech (新浪科技), via Ebrun (亿邦动力), original by Kasi Data (卡思数据), quoting 玄霜
+- URL: https://finance.sina.com.cn/tech/roll/2025-03-24/doc-ineqtsmu3611362.shtml
+- Verified 1: 2026-10-13, fetched with curl, "2024年，种草订单数量增长95%，作者变现人数增加200%" and the date confirmed
+- Verified 2: 2026-10-13, re-fetched at iteration 8 and after the quality pass, unchanged
+- Used in: kol-vs-koc-cost-roi
+
+### Vaseline seeding budget reallocation, Xiaohongshu WILL 2025 conference
+- Value: after a test, one audience's share of seeding budget raised from 0.7% to 17%; in-store cost down 80% during a big sale; over 50 million yuan GMV in the first 100 days
+- As of: December 2024 (article dated 2024-12-19, conference named 2025 WILL)
+- Source: Caijing (财经网) via Sina Tech (新浪科技), quoting Xiaohongshu CMO 之恒
+- URL: https://finance.sina.com.cn/tech/roll/2024-12-19/doc-inczyxct6797065.shtml
+- Verified 1: 2026-10-13, fetched with curl, "种草预算从测投期间的0.7%提升至17%" and "进店成本降低80%" confirmed
+- Verified 2: 2026-10-13, re-fetched at iteration 8 and after the quality pass, unchanged
+- Used in: kol-vs-koc-cost-roi
+- Notes: A platform-presented case, not independent. Supports "test, then reallocate", not KOC versus KOL. Older than 12 months (fallback 9).
+
+### Xingtu creator content and A3 audience: 43% share; a hit adds 30 times the A3 at 16 times lower cost
+- Value: Xingtu creator content 43% of brands' A3 audience; a hit video contributes 30 times more A3 than a non-hit, 11 times the flow rate, 16 times lower A3 acquisition cost; creator footage scales in ads at more than twice other footage
+- As of: December 2023 (article dated 2023-12-03)
+- Source: Morketing, via Tencent News (腾讯新闻), on the 2023 Xingtu creator festival (巨量星图达人节)
+- URL: https://news.qq.com/rain/a/20231203A01OOA00
+- Verified 1: 2026-10-13, fetched with curl, "巨量星图达人内容对品牌A3人群贡献占比达到了43%", "它比非爆文内容对于A3的贡献高30倍" and "A3获取成本低16倍" confirmed
+- Verified 2: 2026-10-13, re-fetched at iteration 8 and after the quality pass, unchanged
+- Used in: kol-vs-koc-cost-roi
+- Notes: About hits, not tiers. Older than 12 months; no newer Xingtu A3 figure found (fallback 9).
+
+### Ocean Engine 2025 search white paper: boosted Xingtu seeding videos lift search after viewing 49%
+- Value: Xingtu seeding videos with boost and search-term placement lift search-after-viewing 49% over non-Xingtu content, 7 times with a search widget; the Xingtu-to-search-to-brand-zone path lifts orders from seeding traffic 37%
+- As of: November 2025 (article dated 2025-11-25)
+- Source: Beijing Daily (京报网), on Ocean Engine's (巨量引擎) 2025 search white paper
+- URL: https://news.bjd.com.cn/2025/11/25/11425198.shtml
+- Verified 1: 2026-10-13, fetched with curl, "看后搜率较非星图内容提升49%，有搜索组件挂载时提升达7倍" confirmed
+- Verified 2: 2026-10-13, re-fetched at iteration 8 and after the quality pass, unchanged
+- Used in: kol-vs-koc-cost-roi
+- Notes: Same text on Adquan, 2025-11-24. Platform's own white paper.
+
+### Xingtu sponsored posts: up 19% in a year, from creators above 10,000 followers up 58%
+- Value: over the year to February 2025, Xingtu natural posts +10%, sponsored posts +19%, sponsored posts by creators with 10,000+ followers +58%; 星广联投 helped 35,000 creators earn on Xingtu for the first time
+- As of: February 2025 (article dated 2025-02-28)
+- Source: Sina Tech (新浪科技), source 36Kr (36氪), on the 2025 Xingtu creator festival
+- URL: https://finance.sina.com.cn/tech/roll/2025-02-28/doc-inemzuik9845090.shtml
+- Verified 1: 2026-10-13, fetched with curl, "商单投稿量增长19%，其中万粉以上商单投稿增长58%" and "36氪" confirmed
+- Verified 2: 2026-10-13, re-fetched at iteration 8 and after the quality pass, unchanged
+- Used in: kol-vs-koc-cost-roi
+
+### Weiboyi 2026: Xiaohongshu KOLs lead on engagement and price per thousand followers; Bilibili and Douyin better on CPE and CPM
+- Value: qualitative platform comparison, no tier numbers in text; tail creators keep rising and are the commercial mainstay
+- As of: May 2026 (article dated 2026-05-26)
+- Source: Weiboyi (微播易), 2026 social platform KOL report, its own account on Digitaling (数英); also Adquan 2026-05-27
+- URL: https://www.digitaling.com/articles/1509312.html
+- Verified 1: 2026-10-13, fetched with curl, "小红书KOL在完播率、互动率、千粉单价上均显著领先" and "B站、抖音在CPE、CPM上更具性价比" confirmed
+- Verified 2: 2026-10-13, re-fetched at iteration 8 and after the quality pass, unchanged
+- Used in: kol-vs-koc-cost-roi
+- Notes: Weiboyi is a creator-marketing platform; cite as a data report, never as a platform fact. The full PDF's CPE and CPM numbers cannot be tied to labels in text: not usable.
+
+### Weiboyi and China Advertising Association 2025: Xiaohongshu image-note KOLs 35% cheaper per thousand followers than video
+- Value: Xiaohongshu image-note KOL cost per thousand followers 35% below video; tail and amateur over 85% of Xiaohongshu creators; brands cut head share and raise mid-tier and below
+- As of: May 2025 (article dated 2025.05.19)
+- Source: Weiboyi (微播易) with the China Advertising Association (中国广告协会), posted on TopMarketing
+- URL: https://www.itopmarketing.com/info20096
+- Verified 1: 2026-10-13, fetched with curl, "小红书图文KOL千粉成本比视频低35%" and the date confirmed
+- Verified 2: 2026-10-13, re-fetched at iteration 8 and after the quality pass, unchanged
+- Used in: kol-vs-koc-cost-roi
+
+### Miaozhen 2025 trends: 74% of advertisers focus on KOL content, 47% brand livestreams, 37% amateur creators
+- Value: share of advertisers naming each as a 2025 social media focus: KOL content 74%, brand livestreams 47%, amateur-creator (KOC) marketing 37%
+- As of: December 2024 (post dated 2024-12-26)
+- Source: Miaozhen (秒针系统), 2025 China digital marketing trends report, its own site
+- URL: https://www.miaozhen.com/all-reports/industryinsight/9653.html
+- Verified 1: 2026-10-13, fetched with curl, "分别有74%、47%以及37%的广告主将其作为重点" confirmed
+- Verified 2: 2026-10-13, re-fetched at iteration 8 and after the quality pass, unchanged
+- Used in: kol-vs-koc-cost-roi
+- Notes: The 2026 edition's KOC lines appear only on reposts, not on miaozhen.com: not used.
+
+### Other figures checked once for 08A, not cited
+- Topklout (克劳锐) own Tencent News account, 2024-07-22 (news.qq.com/rain/a/20240722A026WE00): Xiaohongshu mid-tier creators (Topklout: 100,000 to 500,000 followers) average over 1,700 engagements a post, engagement 20%+ above platform average (2023 data). Cut from 08A because Topklout's mid-tier is KOL size, not KOC. One check only: not publishable without a second.
+- Economic Observer (经济观察网), 2020-11-21: Perfect Diary's prospectus, over 15,000 KOLs including 800+ with over a million followers. One check only; the pyramid ratio on that page is from an unnamed analyst.
+
+### NOT LOGGED, searched and rejected 2026-10-13 (KOL vs KOC cost and return)
+- CPE, CPM or engagement rate by follower tier in page text from an allowed source. Qiangua (千瓜) pages are image-only; Weiboyi's 2026 PDF numbers have no extractable labels; Topklout's "mid-tier engagement 6.3% above head" sits in search snippets and on a non-allowed repost; QuestMobile's "Douyin CPE 2.0 vs Xiaohongshu 10.7 yuan" appears only in a self-media listicle. 08A says no tier figure is published.
+- KFS budget ratios (3:5:2, 3:4:3, 5:3:2, 2:4:4): agency and self-media pages only. Rejected.
+- Platform-published uplift from K plus F plus S: only agency case studies (PuPu Supermarket on Digitaling 1229598, MINISO credited to 微思敦). Rejected.
+- 亿善咨询 KOC ROI 1:5.8 versus KOL 1:4.2: Zhihu, unknown firm. Rejected.
+- CPE thresholds ("S-grade CPE 8 yuan or less", "10 to 20 yuan normal"): practitioner posts, no data source. Rejected.
+- "Hit note costs 50,000 yuan+ with 100,000-follower creators" (Xiaohongshu commercial products lead, WILL 2023): only in a Sina Kandian self-media transcript. Not cited.
+- "62% of viral notes from accounts under 10,000 followers": self-media, no named original. Rejected.
+- Miaozhen 2026 "KOC/KOS deployment up 16 points", "below mid-tier creators supply 64% of content": reposts only, not on miaozhen.com. Rejected.
 
 ## TheRedScroll first-party data
 
@@ -3123,6 +3244,7 @@ set to blocked by its draft run.
 - Used in: china-kol-pricing
 - Notes: Cite as ours, as planning ranges, never as measured data or a market average. If the service page changes, 07A changes with it, in every locale.
 - Re-verified 2026-10-11 for 07B: the three Douyin tiers and "Base fee plus 20 to 40% commission on sales" confirmed on the live page at check 1 and check 2. Used in: douyin-marketing-cost.
+- Re-verified 2026-10-13 for 08A: every Xiaohongshu range, "Video notes cost 20 to 30% more than photo notes", the Douyin top tier and the FAQ lines "Seeding campaign: 20 to 50 KOCs" and "Hero product launch: one top-tier creator supported by 10 to 15 KOCs" confirmed on the live page at check 1, check 2 and after the quality pass. Used in: kol-vs-koc-cost-roi (also the two worked budgets, labeled as planning arithmetic).
 
 ### WeChat Mini Program transaction volume, Q3 2024
 - Value: more than 2 trillion yuan in the quarter, up by double digits year over year ("十几个百分点")

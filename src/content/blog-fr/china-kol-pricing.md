@@ -186,7 +186,7 @@ L’appel ouvert suit la même logique au bas du marché : un brief, une multitu
 > Sur Xiaohongshu (小红书), les créateurs de bas de tableau captent désormais près de 20 % des dépenses KOL.
 > Source : TopMarketing, d’après Topklout (克劳锐), juin 2026. https://www.itopmarketing.com/info22850
 
-Gardez toutefois un œil sur la tendance : Ebiquity a constaté une forte hausse des coûts des KOC sur Xiaohongshu en 2025.
+Gardez toutefois un œil sur la tendance : Ebiquity a constaté une forte hausse des coûts des KOC sur Xiaohongshu en 2025. [Notre comparatif des coûts KOL et KOC](/fr/decryptages/kol-vs-koc-cost-roi/) chiffre une vague de seeding de 40 publications de KOC face à une seule publication de KOL de premier plan.
 
 ## Quatre leviers de négociation qui fonctionnent
 

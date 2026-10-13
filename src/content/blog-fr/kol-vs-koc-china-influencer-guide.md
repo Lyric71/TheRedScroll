@@ -104,7 +104,7 @@ Pour les marques internationales, la piste mérite qu’on s’y arrête. Inutil
 
 ## Penser son budget
 
-Tout dépend du point de départ.
+Tout dépend du point de départ. [Notre comparatif des coûts KOL et KOC](/fr/decryptages/kol-vs-koc-cost-roi/) met côte à côte un budget de seeding auprès de KOC et un budget consacré à un KOL de premier plan.
 
 **Première arrivée en Chine.** Commencez par du placement KOC sur Xiaohongshu. Envois de produits, avis organiques, vidéos courtes et sans fioritures. Vous bâtissez une base de preuves avant de monter en gamme. C’est aussi la manière la moins coûteuse de tester les messages qui accrochent vraiment.
 
