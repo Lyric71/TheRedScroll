@@ -121,6 +121,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: china-social-media-marketing-cost, chinese-entity-social-media, china-social-media-package-includes
 - Notes: Older than 12 months but it is the platform's own page and still live. Second Ocean Engine FAQ (2022-05-13) says the same: https://www.oceanengine.com/faq/douyin-qyh-sfmw.html. Recheck before reuse.
 - Re-verified 2026-10-06 for 06A: "首年600元" and "120元" confirmed, page date 2022-05-30 still live at check 1 and check 2. Used in: china-marketing-hidden-costs.
+- Recheck note 2026-10-14 (08B run): this URL returned HTTP 404 on 2026-10-14, as did every page under oceanengine.com/faq/ and /baike/, while the site header still linked to both sections. Not cited by 08B. Archived copies exist for the zmrzn (2026-05-16), kslj (2026-05-16) and kaihu-feiyong (2026-02-14) pages on web.archive.org; none for rzxydsq. Any run that reuses this entry re-fetches it first and, if it is still down, replaces the citation in every locale that carries it (fallback 10).
 
 ### WeChat Moments ads minimum budgets
 - Value: bidding buys from 1,000 yuan daily budget and 30 yuan CPM floor; scheduled buys from 50,000 yuan per placement; local promotion from 1,000 yuan a day
@@ -150,6 +151,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-03, re-fetched, unchanged
 - Used in: china-social-media-marketing-cost
 - Notes: No platform figure exists for the first recharge. Reseller blogs say 5,000 to 10,000 yuan; not logged, not citable.
+- Recheck note 2026-10-14 (08B run): this URL returned HTTP 404 on 2026-10-14, as did every page under oceanengine.com/faq/ and /baike/, while the site header still linked to both sections. Not cited by 08B. Archived copies exist for the zmrzn (2026-05-16), kslj (2026-05-16) and kaihu-feiyong (2026-02-14) pages on web.archive.org; none for rzxydsq. Any run that reuses this entry re-fetches it first and, if it is still down, replaces the citation in every locale that carries it (fallback 10).
 
 ### Xiaohongshu Juguang ad platform: no official agent-only rule for overseas advertisers (corrected 2026-10-02)
 - Value (current, from the 2026-09-18 update): no official Xiaohongshu document supports "overseas merchants must go through an authorized agent" ("未能找到支持该说法的官方文件"); the Juguang sign-up offers an advertiser account (广告主账号) and an agency account (代理商账号); using a service provider is a commercial choice, not an admission condition; overseas entities have their own industry admission list, with some categories 暂未开放
@@ -326,6 +328,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: first-90-days-china-social-media, beauty-skincare, chinese-entity-social-media
 - Notes: Older than 12 months but the platform's own page and still live; consistent with the fee entry above. A sibling page (2022-05-12, https://www.oceanengine.com/faq/douyin-qyh-zmkn.html) says "1至2天". Recheck before reuse.
 - Re-verified 2026-10-11 for 07B: "提交后约2个工作日完成资质审核", "并支付600元的审核费用" and the 2022-05-27 date confirmed at check 1 and check 2. Used in: douyin-marketing-cost. Since 2026 an overseas-entity route is listed separately (see the 2026 entry in this section).
+- Recheck note 2026-10-14 (08B run): this URL returned HTTP 404 on 2026-10-14, as did every page under oceanengine.com/faq/ and /baike/, while the site header still linked to both sections. Not cited by 08B. Archived copies exist for the zmrzn (2026-05-16), kslj (2026-05-16) and kaihu-feiyong (2026-02-14) pages on web.archive.org; none for rzxydsq. Any run that reuses this entry re-fetches it first and, if it is still down, replaces the citation in every locale that carries it (fallback 10).
 
 ### Douyin enterprise account described as for companies in China
 - Value: qualitative. The platform's FAQ describes the enterprise account as "面向中国地区企业可以申请认证的账号"
@@ -337,6 +340,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: first-90-days-china-social-media, chinese-entity-social-media
 - Notes: No platform page states a rule for overseas entities. Use only for "built for companies in China"; do not extend to "overseas companies cannot verify".
 - Superseded in part 2026-10-11: the help center now lists an overseas-entity route (see "Douyin enterprise account: overseas-entity route listed, 2026"). Still cite this page only for its 2022 description.
+- Recheck note 2026-10-14 (08B run): this URL returned HTTP 404 on 2026-10-14, as did every page under oceanengine.com/faq/ and /baike/, while the site header still linked to both sections. Not cited by 08B. Archived copies exist for the zmrzn (2026-05-16), kslj (2026-05-16) and kaihu-feiyong (2026-02-14) pages on web.archive.org; none for rzxydsq. Any run that reuses this entry re-fetches it first and, if it is still down, replaces the citation in every locale that carries it (fallback 10).
 
 ### Xiaohongshu home feed pipeline, note freshness and label latency
 - Value: qualitative plus four figures. The home feed runs recall (召回), coarse ranking (粗排) and fine ranking (精排); those modules updated once a day in the first half of 2021 and were rebuilt to minute-level updates. Notes published in the last day account for close to half of home feed exposure. The traditional label pipeline waited about 30 minutes after an item was shown before collecting interaction labels. The timeliness program delivered over 10% more average home feed time per user, over 15% more interactions and close to 50% better new-note efficiency.
@@ -815,6 +819,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-11, re-fetched at iteration 8 (tag c2) and again after the quality pass (tag c2b), unchanged; "搜索极速智投-7日稳投，预算设置需>=2000", "日预算设置>=100元", "出价下限为0.01元", "52,800,000 元/天", "核心城市：320 元/CPM", "购满净价20万起售", "数值需为10,000-500,000,000之间的10的倍数", "单位：人民币（分）", "2025-03-13T09:29:04Z", "“DOU+”服务采用预付费方式"
 - Used in: douyin-marketing-cost (search, TopView and DOU+ order range; the 0.01-yuan floor and the DOU+ agreement were cut from the final draft; their check 2 was a separate re-fetch, tag c2x, 2026-10-11)
 - Notes: Changelogs read from https://open.oceanengine.com/skiff/api/doc/client/node/get/?language=CHINESE&identify_key=a8b595247f7f356aac802941ae82ab9e090ba4b3850bce8504b69d7007771e1b&doc_id=<id>; the changelog title is its date. The 2020 card is the only dated official Douyin price list found (a 2023 Q2 card on 巨量学 is behind a permission wall); cite it with its date (fallback 9). Undated live API docs (account daily budget 1,000 yuan, unit budget 300 yuan under OCPM, Qianchuan daily budget 300 yuan, keyword bids 0.2 to 999 yuan) are not citable. The old DOU+ agreement URL (douplus/fd2807f0-...) now serves a different document; use service.html.
+- Re-verified 2026-10-14 for 08B: "搜索极速智投-7日稳投，预算设置需>=2000", "日预算设置>=100元", "52,800,000 元/天", "核心城市：320 元/CPM", "购满净价20万起售", the DOU+ SDK range and its 2025-03-13 commit confirmed at check 1, check 2 and after the quality pass. New strings from the same Q4 2020 card (spec sheet pages): "时长10~60s", "竖版视频尺寸540*960" (TopView), "前3s样式" and "抖音TopView 3s后样式", "首帧视频黑屏面积不得超过60%" (in-feed), "启动画面+推荐流", "静态3秒 动态4秒" (splash). Used in: douyin-advertising-formats.
 
 ### Douyin Shop 2026: technical service fee, deposits, cross-border entry, settlement
 - Value: fee = settlement base x rate, a base rate plus an extra channel rate on Douyin Mall app and Doubao orders, refunded with the order (rules effective 2026-09-30); 2026 base / channel rates: apparel 5% / 5%, facial care 4% / 5.2%, supplements 3% / 3.9%, snack food 2% / 2.6%, cross-border apparel 6% / 4%; product-card orders rebated to an effective 0.6% (domestic) or 1% (cross-border) in 2026; base deposit 500 / 2,000 / 5,000 yuan by last month's GMV, none for "0-yuan entry" shops; 0-yuan entry trial capped at 200 orders and 10,000 yuan, payout 21 days after receipt, no campaigns or affiliate program; cross-border (全球购) needs an overseas or Hong Kong, Macau or Taiwan company, a mainland agent with joint liability and an offshore corporate account, and mainland companies cannot open it (revised 2026-07-15); cross-border deposits paid in yuan, after-sales deposit 2 times the base, 10 times for high-risk sellers (2025-06-05); payout 3 days after confirmed receipt where the after-sales period is 30 days or less
@@ -898,6 +903,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-11, re-fetched (tags c2, c2b), unchanged
 - Used in: choose-china-social-platforms
 - Notes: The platform's own release, not reporting. Still no allowed source for a Douyin search MAU (7.6亿) or 53亿 daily searches.
+- Re-verified 2026-10-14 for 08B: "53%的看后搜与47%的主动搜索共同构成双轮驱动" and 2025-11-25 confirmed at check 1, check 2 and after the quality pass. Used in: douyin-advertising-formats.
 
 ### Xiaohongshu luxury: official stores, conversion span, 2025 searches
 - Value: more than 30 luxury brands run official stores on Xiaohongshu; a luxury buyer's conversion span can exceed 90 days; 250 billion searches on Xiaohongshu in 2025, nearly 90% user-initiated; more than 70 luxury brands used 种草直达 in 2025
@@ -1047,6 +1053,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Notes: Article 14 (ads must be identifiable, no ads disguised as news) and Article 28 (false or misleading content is false advertising) are on the same page and are the general form of the Order 72 rule below.
 - Re-verified 2026-10-06 for 06A: "最佳" and "二十万元以上一百万元以下" confirmed (Arts. 9 and 57) at check 1 and check 2. Used in: china-marketing-hidden-costs.
 - Re-verified 2026-10-12 for 07D: Art. 11 "广告使用数据、统计资料、调查结果、文摘、引用语等引证内容的，应当真实、准确，并表明出处" and "根据2018年10月26日" confirmed at check 1 and check 2. Used in: b2b-industrial (Art. 11, as amended October 2018).
+- Re-verified 2026-10-14 for 08B: "使用“国家级”、“最高级”、“最佳”等用语", "二十万元以上一百万元以下" and "根据2018年10月26日" confirmed at check 1, check 2 and after the quality pass. Used in: douyin-advertising-formats.
 
 ### Internet Advertising Measures: seeding notes with a purchase link are advertising
 - Value: promoting goods or services through knowledge sharing, experience sharing or product reviews with a purchase link attached must be conspicuously labelled "广告"; livestream sellers take advertiser duties and livestream room operators and marketing staff take advertising operator, publisher or endorser duties
@@ -1062,6 +1069,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-10-06 for 06A: "显著标明“广告”" confirmed; used in prose, no blockquote at check 1 and check 2. Used in: china-marketing-hidden-costs.
 - Re-verified 2026-10-08 for 07A: Article 9 wording and "自2023年5月1日起施行" confirmed at check 1 and check 2. Used in: china-kol-pricing.
 - Re-verified 2026-10-13 for 08A: "广告发布者应当显著标明“广告”" confirmed at check 1, check 2 and after the quality pass. Used in: kol-vs-koc-cost-roi.
+- Re-verified 2026-10-14 for 08B: "显著标明“广告”" and "自2023年5月1日起施行" confirmed; new Article 10 strings "确保一键关闭" and "关闭广告须经两次以上点击" (pop-up and app-start splash ads must close in one click) confirmed at check 1, check 2 and after the quality pass. Used in: douyin-advertising-formats.
 
 ### SAMR enforcement guideline on absolute terms in advertising (2023): scope, carve-outs, leniency
 - Value: qualitative. Covers 国家级, 最高级, 最佳 "以及与其含义相同或者近似的其他用语" (point 2). Not applicable when the term only states service attitude, business philosophy, culture or wishes, or a goal (point 5); or, with no misleading or disparaging effect, when it compares products within one brand, gives usage, timing or storage tips, is a graded term under a national, industry or local standard with a stated basis, is part of a product name, model, trademark or patent, is an official award or title, or states a fact limited by time or place such as sales, revenue or market share (point 6). Claims the advertiser cannot prove are punished (point 7). A first use with minor harm, promptly corrected, may go unpunished (point 9). Generally not minor: efficacy, cure-rate or effective-rate absolutes in medical, medical aesthetics, drug, device, health food and special medical food ads; return or safety absolutes in investment ads; outcome absolutes in education and training ads (point 11)
@@ -2417,6 +2425,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: china-marketing-hidden-costs
 - Notes: The minimum top-up clause was not used: no figure, and the cost pillar cites the 2021 FAQ on agent-set first recharges.
 - Re-verified 2026-10-11 for 07B: "本协议项下服务费用采用预先支付的方式", "OCPM（按优化后千次展示收费）" and "最低金额由巨量营销平台确定并公布" confirmed at check 1 and check 2. Used in: douyin-marketing-cost (prepaid, billing modes, minimum top-up set by the platform with no figure published).
+- Re-verified 2026-10-14 for 08B: "本协议项下服务费用采用预先支付的方式", "OCPM（按优化后千次展示收费）" and "最低金额由巨量营销平台确定并公布" confirmed at check 1, check 2 and after the quality pass. Used in: douyin-advertising-formats.
 
 ### Ocean Engine balance refund: closes the account, freezes cash, clears grants
 - Value: applying for a balance refund closes the advertiser account and freezes the cash balance; grant balance cannot be spent and is cleared once approved; stages run about 1 to 2 working days each (material review, refundable-amount review, payment)
@@ -3165,6 +3174,7 @@ data.
 - Used in: xiaohongshu-advertising-formats-costs
 - Notes: Cite as ours, as planning ranges, never as a platform average. Settled 2026-10-02: these are published planning figures, not measured data, so no sample size applies; 04B labels them as our planning ranges as published on /services/advertising/ and never as a platform average or account results. Higher CPMs on Chinese agent pages are not citable and were not used. If the advertising page changes, 04B changes with it, in every locale.
 - Douyin line added 2026-10-11 for 07B: /services/advertising/ publishes "Douyin in-feed from ¥1,000/day", "CPC from ¥0.2. CPM ¥10 to ¥50." and TopView "Minimum ¥200,000+." (the last matches the Q4 2020 rate card's 200,000-yuan net minimum for TopView CPM orders), confirmed on the live page at check 1 and check 2. Quoted as our planning ranges, never a platform average. Used in: douyin-marketing-cost.
+- Re-verified 2026-10-14 for 08B: "Douyin in-feed from ¥1,000/day", "CPC from ¥0.2. CPM ¥10 to ¥50.", "Minimum ¥200,000+." and "Ad spend is billed separately. No markups." confirmed on the live page at check 1, check 2 and after the quality pass. Quoted as our planning ranges for media spend, never a platform average. Used in: douyin-advertising-formats.
 
 ### Camper case study results, as published
 - Value: followers 43,000 to 187,000 in 18 months across WeChat, RedNote (Xiaohongshu) and Weibo; engagement rate 1.2% to 4.7%; 38% of e-commerce traffic from RedNote; same-store sales up 31% year on year; no discount campaigns. Also on the page but not yet used: retention up 22%, purchase frequency 1.3 to 2.1 per customer a year
@@ -3471,6 +3481,114 @@ set to blocked by its draft run.
 - "618 2024 livestream sales up 12.1%", "59.89% say presentation is more direct" (iiMedia): not on the dated pages. Cut.
 - "Tsinghua research on purchase atmosphere and impulse buying": the paper is by Jiangsu University of Science and Technology authors in 信息系统学报 No. 29, about purchase intention, undated. Cut.
 - WeChat video ads "30-50% more than image", Moments CPC "2-20 yuan", Baidu CPC "2-15 yuan", "AI bidding cut costs 10-15%" (Yiban), "evening peak 20-40% more" (Aiyong Tech), Moments scheduled CPM 150/100/50 by city tier, "review takes 1-2 business days", "one creative swap per campaign": agency, vendor or Zhihu only, or contradicted. Cut from wechat-advertising-formats-costs.
+
+### Ocean Engine bidding platform renamed 巨量营销, December 2025
+- Value: from 2025-12-22 the bidding platform 巨量广告 is 巨量营销 (Ocean Engine Marketing); the "ad" level is renamed "unit" (单元); the 原生互动 objective became 内容营销
+- As of: changelog dated 2025-12-23
+- Source: Ocean Engine open platform (巨量引擎开放平台), changelog
+- URL: https://open.oceanengine.com/changelog/1852282960952776
+- Verified 1: 2026-10-14, fetched through the skiff doc API with curl (logs/scratch/08B/check.py, tag c1); "2025年12月22日起，巨量广告平台升级为", "巨量广告：更新为巨量营销", "「广告」更新为「单元」" confirmed
+- Verified 2: 2026-10-14, re-fetched at iteration 8 (tag c2) and after the quality pass (tag c2b), unchanged
+- Used in: douyin-advertising-formats
+- Notes: Changelogs are read from https://open.oceanengine.com/skiff/api/doc/client/node/get/?language=CHINESE&identify_key=a8b595247f7f356aac802941ae82ab9e090ba4b3850bce8504b69d7007771e1b&doc_id=<id>; the changelog title is its date.
+
+### Qianchuan platform agreement 2026: in-app shop boost is a Qianchuan entry, billing modes, minimum top-up
+- Value: 小店随心推 inside the Douyin app is listed as a Qianchuan entry point; bidding fees by CPC, OCPC, CPM or OCPM; the minimum top-up is set and published by Qianchuan (no figure in the agreement)
+- As of: updated 2025-12-22, in force 2026-01-01
+- Source: Qianchuan (巨量千川), 巨量千川平台服务协议
+- URL: https://lf3-cdn-tos.draftstatic.com/obj/ies-hotsoon-draft/qianchuan/a96a6a25-17d8-4083-9529-0c79102aa0b9.html
+- Verified 1: 2026-10-14, fetched with curl (tag c1); "生效时间：2026年【1 】月【1】日", "抖音app内的小店随心推", "OCPM（按优化后千次展示收费）", "最低金额由巨量千川确定并公布" confirmed
+- Verified 2: 2026-10-14, re-fetched (tags c2, c2b), unchanged
+- Used in: douyin-advertising-formats
+- Notes: No allowed source gives a current 随心推 minimum order (only a 2022 repost on Digitaling and agency pages).
+
+### Qianchuan team moved into Douyin E-commerce, March 2025; 千川·乘方 launch
+- Value: the Qianchuan team formally joined Douyin E-commerce in March 2025; 千川·乘方 launched at the 2025 Qianchuan conference with the technical service fee cut to 0.6% on its orders
+- As of: article dated 2025-12-15
+- Source: Xinhua Finance (新华财经), via Sina Finance
+- URL: https://finance.sina.com.cn/jjxw/2025-12-15/doc-inhavwnp4307756.shtml
+- Verified 1: 2026-10-14, fetched with curl (tag c1); "转自：新华财经", "今年3月，巨量千川团队正式并入抖音电商", "2025年12月15日" confirmed
+- Verified 2: 2026-10-14, re-fetched (tags c2, c2b), unchanged
+- Used in: douyin-advertising-formats (the March 2025 move only)
+
+### Douyin splash ad display time and billing (Ocean Engine help, 2020)
+- Value: splash (开屏) shows 3 seconds static, 4 seconds animated, 5 seconds video; billed by CPM
+- As of: help page updated 2020-05-15 (platform timestamp in the page data)
+- Source: Ocean Engine help center (巨量引擎帮助中心), 我的广告会如何展现
+- URL: https://www.oceanengine.com/help/guanggao-zhanxian
+- Verified 1: 2026-10-14, fetched with curl (tag c1); "静态3秒、动态4秒、视频5秒", "按CPM计费", "2020-05-15 00:06:05" confirmed
+- Verified 2: 2026-10-14, re-fetched (tags c2, c2b), unchanged
+- Used in: douyin-advertising-formats
+- Notes: Older than 12 months; the Q4 2020 rate card gives the same timings and no newer dated spec exists (fallback 9). The live /resource/douyin/screen page describes TopView's 3-second full-screen opening and 10 to 60 seconds of video but carries no date: not logged as a source.
+
+### Qianchuan omni-channel promotion (全域推广): launch, ROI definition, mutual exclusion
+- Value: 商品全域推广 launched and 直播全域推广 upgraded on 2024-05-14; for live, overall payment ROI = the room's total GMV during the campaign divided by spend; running it pauses every other plan promoting that live room (brand contract plans excepted)
+- As of: launch event 2024-05-14; agreement updated 2024-06-14
+- Source: 36Kr (36氪) newsflash; Qianchuan (巨量千川), “全域推广”产品功能服务协议
+- URL: https://m.36kr.com/newsflashes/2775491039724416 ; https://lf26-cdn-tos.draftstatic.com/obj/ies-hotsoon-draft/qianchuan/dfa2a6ab-7eab-4074-a04f-ce528885576d.html
+- Verified 1: 2026-10-14, fetched with curl (tag c1; 36Kr with a mobile user agent, the desktop URL serves a bot check); "5月14日，巨量千川举办产品年度升级发布会", "“商品全域推广”全新发布、“直播全域推广”进阶升级", "更新时间：【2024】年【6】月【14】日", "推直播 - 整体支付ROI = 全域推广投放期间直播间整体GMV / 全域推广消耗金额", "关联该抖音号的直播间互斥计划/订单将被暂停" confirmed
+- Verified 2: 2026-10-14, re-fetched (tags c2, c2b), unchanged
+- Used in: douyin-advertising-formats
+- Notes: Also checked twice (c1, c2), cut from the final draft for length: Ebrun original report, 2024-05-14 (https://m.ebrun.com/548736.html), "投放巨量千川商家的总GMV占比抖音电商GMV的90%" and "使用全域推广的抖音电商商家GMV提升20%" (platform figures; the 90% is the GMV of merchants who advertise, not ad-driven GMV). No allowed source dates the retirement of 标准推广 or gives 全域推广's share of spend.
+
+### Douyin search: conversion versus feed and first-screen viewing (Ocean Engine 2025 search white paper)
+- Value: search traffic converts 90% better than recommended-feed traffic; 72% of users view only the first screen; active search growing 37%; AI search 300 million PV a day
+- As of: article dated 2025-11-25
+- Source: Beijing Daily (京报网), on Ocean Engine's 2025 search white paper (2025巨量引擎搜索经营白皮书)
+- URL: https://news.bjd.com.cn/2025/11/25/11425198.shtml
+- Verified 1: 2026-10-14, fetched with curl (tag c1); "搜索转化效率较推荐流量高出90%", "72%的用户仅浏览首屏", "2025-11-25" confirmed
+- Verified 2: 2026-10-14, re-fetched (tags c2, c2b), unchanged
+- Used in: douyin-advertising-formats (90% and 72% only)
+- Notes: The platform's own figures relayed by the press; attribute them to Ocean Engine. Checked once only and not logged as a source: Kuai Keji (快科技, 2025-12-16) reporting the platform's "平台短视频日均激发搜索达1.1亿次" at the 2025 Qianchuan conference (https://news.mydrivers.com/1/1092/1092889.htm), cut at iteration 4 before check 2; re-check both times before any use.
+
+### Ocean Engine bidding: strategies, oCPM definition, learning status, cost guarantee API, one-click boost (changelogs 2020 to 2025)
+- Value: 2023-02-01 bid and billing set at project level, strategies 放量投放 (max delivery) and 控制成本上限 (cost cap), billing CPM, CPC, oCPM, oCPC; 2023-06-26 稳定成本 (stable cost) always accelerated, 最优成本 for even pacing; 2025-09-16 oCPM labeled "目标转化出价-按展示付费", 7-day ROI coefficient; 2022-12-07 learning_phase status; 2024-06-27 project cost guarantee status and payout amount in the API; 2020-05-08 一键起量 "花费可控的激进提价工具"
+- As of: changelog dates as listed
+- Source: Ocean Engine open platform (巨量引擎开放平台), changelog
+- URL: https://open.oceanengine.com/changelog/1756250989174795 ; /1769750815636488 ; /1843402376347850 ; /1751541589934215 ; /1802994108997770 ; /1740034645231629
+- Verified 1: 2026-10-14, fetched through the skiff doc API (tag c1); "广告投放升级版新增项目出价和计费方式", "CONSERVATIVE放量投放", "UPPER_CONTROL控制成本上限", "稳定成本策略默认加速投放", "竞价策略-最优成本", "目标转化出价-按展示付费", "7日ROI系数", "新增返回参数learning_phase用于披露广告学习期状态", "赔付金额", "一键起量给广告主提供一个花费可控的激进提价工具" confirmed
+- Verified 2: 2026-10-14, re-fetched (tags c2, c2b), unchanged
+- Used in: douyin-advertising-formats
+- Notes: No allowed, dated page gives the learning-period thresholds, what resets learning, the eCPM formula or the main platform's own guarantee thresholds (its rules center page returns no text). Do not state them.
+
+### Qianchuan cost guarantee rules: cost bidding and ROI bidding, revised December 2025
+- Value: cost bidding: window from first delivery to 24:00 on the third natural day; at least 6 conversions (2 in search); cost more than 20% over the bid (1.2 times); bid or targeting edited at most twice a day; paid as ad credit valid one year; smart boost tools (一键起量 and others) excluded; oCPM bills per impression. ROI bidding: pays when actual ROI is below 80% of target; ROI target or targeting edited at most twice a day
+- As of: first in force 2021-06-01 and 2022-01-28; latest revision 2025-12-22
+- Source: Douyin E-commerce Learning Center (抖音电商学习中心), 【巨量千川】标准投放成本保障规则 and its ROI version
+- URL: https://school.jinritemai.com/doudian/web/articlev0/aHMNDfneBP7r ; https://school.jinritemai.com/doudian/web/article/aHQbPJNKixFy
+- Verified 1: 2026-10-14, read through the article API (tag c1); "于2025年【12】月【22】日最新修订", "转化数量应大于或等于6个", "搜索场景下，转化数量应大于或等于2个", "出价或定向任意一个的修改次数不超过两次", "对所有满足成本保障条件的超成本20%的计划进行核算并发放赠款", "至之后第三个自然日的24：00", "计费模式为oCPM的投放计划，是按展示付费", "其使用期限为自发放之日起1年", "不适用成本保障规则"; "实际ROI小于目标ROI*80%", "支付ROI目标值或定向任意一个的修改次数不超过两次" confirmed
+- Verified 2: 2026-10-14, re-fetched (tags c2, c2b), unchanged
+- Used in: douyin-advertising-formats
+- Notes: The rules name the qualifying conditions, not the payout amount; say "compensated in ad credit", not "refunded in full". The 巨量本地推 version (2024-02-04, draftstatic.com) gives the formula actual spend minus bid times conversions; not cited.
+
+### Ocean Engine and Qianchuan creative quality rules: low-quality patterns (2026) and penalties (2022)
+- Value: Ocean Engine user experience risk rules list 内容创作低质, 画质不清晰, 素材样式单一 (slideshow, PPT-style), 大篇幅文字; Qianchuan's notice sorts low-quality content into four classes with penalties 减少违规内容展现、限制投放、下线涉及违规行为的广告计划 and 计划消耗减缓
+- As of: Ocean Engine rules modified 2026-01-15 (created 2023-08-24); Qianchuan notice 2022-05-31, updated 2022-08-11, still live
+- Source: Ocean Engine rules center (巨量广告规则中心), 《用户体验类风险规则》; Douyin E-commerce Learning Center, 《巨量千川-低质内容治理公告》
+- URL: https://support.oceanengine.com/support/content/137617?spaceId=171 ; https://school.jinritemai.com/doudian/web/articlev0/aHVMP6peVA36
+- Verified 1: 2026-10-14, read through the rules center knowledge API (support.oceanengine.com/support/backend/content/knowledge/detail?knowledgeId=<id>&spaceId=171, carries createTime and modifyTime) and the Learning Center article API (tag c1); all strings above and "2026-01-15 18:44:39" confirmed
+- Verified 2: 2026-10-14, re-fetched (tags c2, c2b), unchanged
+- Used in: douyin-advertising-formats
+- Notes: The Qianchuan notice is older than 12 months; cite it with its date beside the 2026 rules (fallback 9).
+
+### Ocean Engine native ads and overseas-advertiser review rule changes
+- Value: native ads run from the advertiser's own Douyin account and keep follows, DMs and profile visits; Ocean Engine says this "可以最大化提升广告转化" (no figure). The rules center lists 境外广告主禁止投放要求-审核规则调整 (2026-02-10) and 境外广告主投放限制要求-审核规则调整 (2026-07-13)
+- As of: native ads manual modified 2022-12-08; rule changes dated as listed
+- Source: Ocean Engine help (巨量帮助), 新版「原生广告」投放说明手册; Ocean Engine rules center (巨量广告规则中心)
+- URL: https://support.oceanengine.com/support/content/130523 ; https://support.oceanengine.com/support/content/206252?spaceId=171 ; https://support.oceanengine.com/support/content/211775?spaceId=171
+- Verified 1: 2026-10-14, read through the knowledge API (tag c1); "客户使用抖音号发布", "可以最大化提升广告转化", "2022-12-08 20:31:19"; titles containing "境外广告主" with createTime 2026-02-10 and 2026-07-13 confirmed
+- Verified 2: 2026-10-14, re-fetched (tags c2, c2b), unchanged
+- Used in: douyin-advertising-formats
+- Notes: The two overseas rule bodies are Feishu embeds the API does not return; cite only that the changes were posted and when, never what they require.
+
+### NOT LOGGED, searched and rejected 2026-10-14 (08B, douyin-advertising-formats)
+- Learning-period thresholds (about 20 conversions in 3 days), what resets learning, the eCPM formula: Zhihu, CSDN, Tencent Cloud community and agency sites only. Not cited.
+- "72% of users decide by second 3", "2.8-second average dwell": unnamed report on Sohu and Tencent Cloud community. Not cited.
+- Duplicate-creative (同质化) thresholds ("90% overlap"), first-run creative rewards: self-media only; the 2022 Qianchuan limits notice (aHYCbjGEshyy) is offline. Not cited.
+- Retirement of Qianchuan 标准推广 (2025-05-22 products, 2025-12-29 live): Sohu, vendor and agency pages; Ebrun 578944 is bylined by a data-tool vendor; Ebrun 575256 is a contributed column. PingWest 2025-03-18 ("100% migration within 2025", "over 70% of shops") reads as a press-release column; not used.
+- Hashtag challenge still sold in 2025 or 2026 and its price; reserved brand in-feed and search brand zone pricing; any TopView or in-feed spec newer than 2020; Douyin search MAU: no dated allowed source.
+- Douyin CPM, CPC or cost per order for 2025 or 2026 (including "Qianchuan average CPM 80 to 120 yuan"): self-media and agency posts only. Cut; the article says no platform figure exists.
+- Native ads "+20% to 30% volume": Zhihu only.
 
 ## Client figures
 

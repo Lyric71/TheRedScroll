@@ -170,6 +170,9 @@ are planning figures, not a platform average.
 > yuan and CPM of 10 to 50 yuan.
 > Source: TheRedScroll, advertising page, checked October 2026. https://www.theredscroll.com/services/advertising/
 
+[Our Douyin advertising guide](/insights/douyin-advertising-formats/) covers what each format is for, how oCPM
+bidding and the cost guarantee work, and the creative rules that decide delivery.
+
 ## Live commerce: studio, host and the hidden operating cost
 
 Nobody publishes a dated price for a Douyin (抖音) live studio. The people cost is

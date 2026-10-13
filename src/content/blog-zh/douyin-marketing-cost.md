@@ -128,6 +128,8 @@ TopView的数字是2020年未打折的刊例价，此后再无公开的新价目
 > TheRedScroll按每天1000元起规划抖音信息流，CPC 0.2元起，CPM 10至50元。
 > 来源：TheRedScroll，广告服务页面，2026年10月查阅。https://www.theredscroll.com/services/advertising/
 
+[我们的抖音广告指南](/zh/guandian/douyin-advertising-formats/)讲清了每种广告形式的用途、oCPM出价与成本保障的规则，以及决定投放能否跑量的素材规范。
+
 ## 直播带货：直播间、主播与隐性运营成本
 
 抖音直播间的搭建费用，没有带日期的公开数字。人力成本倒是公开的，而且在走低。

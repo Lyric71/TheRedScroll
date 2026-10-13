@@ -37,7 +37,7 @@ They override any conflicting rule inside the skill.
 
 ## The angle
 
-Completes the ad-format trio alongside WeChat and Xiaohongshu. Focus on the bidding model, which is where most foreign advertisers lose money, and on the creative rules that decide whether a spend works at all.
+Completes the ad-format trio alongside WeChat and Xiaohongshu. Use the current product names: Ocean Engine's bidding platform 巨量广告 was renamed 巨量营销 (Ocean Engine Marketing) on 2025-12-22, and Qianchuan (巨量千川), the e-commerce and live-room ad system, moved into Douyin E-commerce in March 2025 (amended 2026-10-14 by the 08B draft run). Focus on the bidding model, which is where most foreign advertisers lose money, and on the creative rules that decide whether a spend works at all.
 
 ## Section outline
 
@@ -75,7 +75,7 @@ embed images in body copy.
 
 - Ad format table: format, objective, cost, verdict
 - Benchmark table by objective
-- Annotated creative example: what makes the first three seconds work
+- Annotated creative example: what makes the first three seconds work, carried as a table of our working checklist (amended 2026-10-14 by the 08B draft run: Ocean Engine publishes no figure or rule on the first three seconds on any allowed, dated page; the section rests on the 2020 spec sheet's "first 3s" TopView style and first-frame rule, the splash timings and the 2026 low-quality creative rules, and the example is a table, not an image; SPEC settled fallbacks 1 and 7)
 - Feature image: a vertical video frame with a visible progress bar, abstracted. China rule: set the scene in China and show Chinese social platforms on screen (WeChat, Xiaohongshu, Douyin or Weibo interface on a phone, laptop or studio monitor); set in a typical Chinese city, varied from article to article and not only Shanghai, only Chinese people in frame, candid normal-life photo in crisp sharp focus with legible screens (never blur, smudges or noise), no AI polish; this rule wins over the subject hint
 
 ## Tables required

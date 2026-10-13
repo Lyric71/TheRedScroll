@@ -128,6 +128,8 @@ Las cifras del TopView son precios de tarifa de 2020, sin descuentos, y no hay n
 > TheRedScroll planifica el feed de Douyin desde 1.000 yuanes al día, con un CPC desde 0,2 yuanes y un CPM de 10 a 50 yuanes.
 > Fuente: TheRedScroll, página de publicidad, consultada en octubre de 2026. https://www.theredscroll.com/services/advertising/
 
+[Nuestra guía de publicidad en Douyin](/es/analisis/douyin-advertising-formats/) explica para qué sirve cada formato, cómo funcionan las pujas oCPM y la garantía de coste, y qué normas creativas deciden la difusión.
+
 ## Venta en directo: estudio, presentador y coste operativo oculto
 
 Nadie publica un precio fechado para un estudio de directo en Douyin (抖音). El coste de personal, en cambio, es público, y va a la baja.
