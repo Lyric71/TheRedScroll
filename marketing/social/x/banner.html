@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<style>
+  @font-face { font-family: "Inter"; font-weight: 400; src: url("../../../public/fonts/inter-400.woff2") format("woff2"); }
+  @font-face { font-family: "Inter"; font-weight: 500; src: url("../../../public/fonts/inter-500.woff2") format("woff2"); }
+
+  /* DESIGN_GUIDE.md: the dark hero (Style A). Ink ground, white headline,
+     vermillion only for the brand, weights 400 and 500, no gradient, no shadow. */
+  :root { --ink: #1A1A1A; --vermillion: #CC3333; --rice: #F7F2EE; --dark-body: rgba(255, 255, 255, 0.6); }
+  html, body { margin: 0; width: 1500px; height: 500px; overflow: hidden; }
+  body { position: relative; background: var(--ink); color: #fff; font-family: "Inter", sans-serif; }
+
+  /* The one decoration the guide allows: the brand name as a watermark. */
+  .watermark {
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    font-weight: 500; font-size: 220px; letter-spacing: -0.02em; white-space: nowrap;
+    color: #fff; opacity: 0.03; user-select: none;
+  }
+
+  /* Copy: upper left, ends above the avatar zone (y > 320 at x < 420). */
+  .copy { position: absolute; left: 92px; top: 36px; width: 960px; }
+  .lockup { display: block; height: 76px; width: auto; margin-left: -16px; }
+  h1 { margin: 14px 0 0; font-weight: 500; font-size: 54px; line-height: 1.15; letter-spacing: -0.015em; }
+  .sub { margin: 16px 0 0; font-weight: 400; font-size: 24px; color: var(--dark-body); }
+
+  .mark { position: absolute; right: 110px; top: 70px; width: 270px; }
+</style></head>
+<body>
+  <div class="watermark" aria-hidden="true">TheRedScroll</div>
+
+  <div class="copy">
+    <svg class="lockup" viewBox="0 0 320 72" xmlns="http://www.w3.org/2000/svg">
+      <g transform="translate(12,6)">
+        <rect x="0" y="0" width="38" height="58" rx="6" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+        <rect x="0" y="0" width="38" height="14" rx="6" fill="#CC3333"/>
+        <rect x="0" y="8" width="38" height="6" fill="#CC3333"/>
+        <line x1="8" y1="24" x2="30" y2="24" stroke="rgba(255,255,255,0.2)" stroke-width="0.8" stroke-linecap="round"/>
+        <line x1="8" y1="32" x2="26" y2="32" stroke="rgba(255,255,255,0.2)" stroke-width="0.8" stroke-linecap="round"/>
+        <line x1="8" y1="40" x2="22" y2="40" stroke="rgba(255,255,255,0.2)" stroke-width="0.8" stroke-linecap="round"/>
+        <path d="M38 46 Q44 46 44 52 Q44 58 38 58" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"/>
+      </g>
+      <text x="68" y="42" font-family="Inter" font-size="24" font-weight="500"><tspan fill="#FFFFFF">The</tspan><tspan fill="#CC3333">Red</tspan><tspan fill="#FFFFFF">Scroll</tspan></text>
+    </svg>
+    <h1>We don’t talk about China’s platforms.<br>We post on them.</h1>
+    <p class="sub">WeChat. Douyin. RedNote. Weibo. And 14 more.</p>
+  </div>
+
+  <!-- The dark mark from public/images/logo/theredscroll-logo-5B-dark.svg, unchanged, drawn large. -->
+  <svg class="mark" viewBox="-1 -1 46.5 60.5" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="38" height="58" rx="6" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <rect x="0" y="0" width="38" height="14" rx="6" fill="#CC3333"/>
+    <rect x="0" y="8" width="38" height="6" fill="#CC3333"/>
+    <line x1="8" y1="24" x2="30" y2="24" stroke="rgba(255,255,255,0.2)" stroke-width="0.8" stroke-linecap="round"/>
+    <line x1="8" y1="32" x2="26" y2="32" stroke="rgba(255,255,255,0.2)" stroke-width="0.8" stroke-linecap="round"/>
+    <line x1="8" y1="40" x2="22" y2="40" stroke="rgba(255,255,255,0.2)" stroke-width="0.8" stroke-linecap="round"/>
+    <path d="M38 46 Q44 46 44 52 Q44 58 38 58" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"/>
+  </svg>
+</body></html>

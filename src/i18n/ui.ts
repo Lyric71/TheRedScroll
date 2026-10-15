@@ -72,6 +72,7 @@ export const ui = {
 
     // Footer
     'footer.tagline': 'We grow your brand on China\'s social platforms. More followers. More engagement. More conversions. Fixed scope. Fixed price. No surprises.',
+    'footer.followX': 'Follow TheRedScroll on X',
     'footer.services': 'Services',
     'footer.discover': 'Discover',
     'footer.connect': 'Connect',
@@ -209,6 +210,7 @@ export const ui = {
 
     // Footer
     'footer.tagline': 'Nous développons votre marque sur les réseaux sociaux chinois. Plus d’abonnés, plus d’engagement, plus de ventes. Périmètre défini, prix fixe, aucune surprise.',
+    'footer.followX': 'Suivre TheRedScroll sur X',
     'footer.services': 'Services',
     'footer.discover': 'Explorer',
     'footer.connect': 'Nous écrire',
@@ -344,6 +346,7 @@ export const ui = {
 
     // Footer
     'footer.tagline': '在中国社媒上，我们帮你把品牌做大。粉丝、互动、转化，一起往上走。范围透明，一口价，账单后面没有任何夹带。',
+    'footer.followX': '在 X 上关注 TheRedScroll',
     'footer.services': '服务',
     'footer.discover': '逛一逛',
     'footer.connect': '联系我们',
@@ -481,6 +484,7 @@ export const ui = {
 
     // Footer
     'footer.tagline': 'Hacemos crecer su marca en las redes sociales de China. Más seguidores, más conversación, más ventas. Circuito cerrado, precio fijo y cero sorpresas.',
+    'footer.followX': 'Siga a TheRedScroll en X',
     'footer.services': 'Servicios',
     'footer.discover': 'Descubrir',
     'footer.connect': 'Contacto',
@@ -618,6 +622,7 @@ export const ui = {
 
     // Footer
     'footer.tagline': 'Wir bringen Ihre Marke auf Chinas Social-Media-Plattformen nach vorn. Mehr Follower. Mehr Interaktion. Mehr Umsatz. Klarer Leistungsumfang. Festpreis. Keine Überraschungen.',
+    'footer.followX': 'TheRedScroll auf X folgen',
     'footer.services': 'Leistungen',
     'footer.discover': 'Entdecken',
     'footer.connect': 'Kontakt',
