@@ -4,7 +4,7 @@ description: "Douyin no es TikTok. Verificación, formatos que rinden, tarifas d
 metaTitle: "Douyin para marcas occidentales: guía de marketing"
 metaDescription: "Vender en Douyin desde Occidente: alta de la cuenta, contenido que funciona, tarifas de KOL, publicidad y Douyin Shop. Guía práctica, sin humo."
 publishDate: 2026-07-16
-updatedDate: 2026-10-11
+updatedDate: 2026-10-15
 author: "TheRedScroll"
 platforms: ["douyin"]
 category: "Estrategia"
@@ -120,7 +120,12 @@ Hoy, el mejor retorno está en el tramo medio de la pirámide. En el Double 11 d
 
 ![Una KOL de Douyin graba la reseña de un producto en su casa](/images/blog/douyin-kol-showcase.webp)
 
-Un aviso: los seguidores falsos siguen campando por este mercado. Inflar una publicación por encima de las 100.000 visualizaciones falsas cuesta menos de 1.000 yuanes, un montaje que CCTV News ya destapó en 2019. Fiche a los creadores a través de Xingtu, la plataforma oficial de Douyin, que aporta datos sobre la autenticidad de la audiencia. Y revise la calidad de la interacción antes de firmar nada.
+Un aviso: en este mercado, la interacción falsa sale baratísima.
+
+> Una red de interacciones falsas desarticulada por la policía de Liangshan, en Sichuan, ofrecía 100.000 reproducciones de vídeo por 98 yuanes.
+> Fuente: CCTV.cn (央视网), a partir de Chengdu Economic Daily (成都商报), febrero de 2025. https://news.cctv.cn/2025/02/11/ARTItQYvuvUQRKmqz2bMjWFY250211.shtml
+
+Fiche a los creadores a través de Xingtu, la plataforma oficial de Douyin, que aporta datos sobre la autenticidad de la audiencia. Y revise la calidad de la interacción antes de firmar nada.
 
 ## Cuánto cuesta hacer marketing en Douyin
 

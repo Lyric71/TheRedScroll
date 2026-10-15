@@ -4,7 +4,7 @@ description: "Douyin ist nicht TikTok. Verifizierung, Content-Formate, KOL-Koste
 metaTitle: "Douyin-Marketing für westliche Marken: der Praxisleitfaden"
 metaDescription: "So verkaufen westliche Marken auf Douyin: Verifizierung, passende Inhalte, KOL-Kosten, Werbung über Ocean Engine und Douyin Shop. Aus der Praxis."
 publishDate: 2026-07-16
-updatedDate: 2026-10-11
+updatedDate: 2026-10-15
 author: "TheRedScroll"
 platforms: ["douyin"]
 category: "Strategie"
@@ -120,7 +120,12 @@ Die beste Rendite bringt derzeit die Mitte der Pyramide. Beim Double 11 2025 tru
 
 ![Douyin-KOL filmt einen Produkttest in ihrer Wohnung](/images/blog/douyin-kol-showcase.webp)
 
-Eine Warnung: Gekaufte Follower gehören in diesem Markt weiter zum Alltag. Für unter 1.000 Yuan lassen sich mehr als 100.000 gefälschte Aufrufe unter einen Beitrag setzen, ein Geschäft, das CCTV News schon 2019 dokumentierte. Buchen Sie Influencer über Xingtu, die offizielle Plattform von Douyin, die Daten zur Echtheit des Publikums ausweist. Und prüfen Sie die Qualität des Engagements, bevor eine Unterschrift fällt.
+Eine Warnung: Gekaufte Interaktion ist in diesem Markt spottbillig.
+
+> Ein von der Polizei in Liangshan (Sichuan) zerschlagener Ring für gekaufte Interaktion bot 100.000 Videoaufrufe für 98 Yuan an.
+> Quelle: CCTV.cn (央视网), nach Chengdu Economic Daily (成都商报), Februar 2025. https://news.cctv.cn/2025/02/11/ARTItQYvuvUQRKmqz2bMjWFY250211.shtml
+
+Buchen Sie Influencer über Xingtu, die offizielle Plattform von Douyin, die Daten zur Echtheit des Publikums ausweist. Und prüfen Sie die Qualität des Engagements, bevor eine Unterschrift fällt.
 
 ## Was kostet Douyin-Marketing?
 

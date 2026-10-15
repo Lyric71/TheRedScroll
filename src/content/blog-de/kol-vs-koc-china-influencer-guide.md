@@ -4,7 +4,7 @@ description: "KOL bauen Bekanntheit auf, KOC schaffen Vertrauen. Wie Sie beide k
 metaTitle: "KOL gegen KOC in China: Influencer-Guide"
 metaDescription: "KOL oder KOC? Vergütungsmodelle, Risiko gefälschter Follower und die Pyramidenstrategie, die funktioniert. Praxisleitfaden für Marken in China."
 publishDate: 2026-04-03
-updatedDate: 2026-10-11
+updatedDate: 2026-10-15
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Strategie"
@@ -16,7 +16,7 @@ keyFacts:
   - "KOC steht für Key Opinion Consumer: Alltagsnutzer mit 1.000 bis 100.000 Followern, eingesetzt für Vertrauen und Kaufabschluss."
   - "Top-KOL in China kosten 500.000 bis 5 Millionen Yuan pro Post; KOC liegen meist bei 200 bis 5.000 Yuan pro Post."
   - "Perfect Diary baute sein Wachstum auf, indem es bei jeder Produkteinführung 1 Spitzen-KOL, 10 mittlere KOL und 1.000 KOC parallel aktivierte."
-  - "Gefälschte Follower und Interaktion durch Bots sind in China weiterhin verbreitet. Vor jedem Vertrag mit iiMedia, CCTV News und Plattform-Analysen gegenprüfen."
+  - "Laut Miaozhen waren 2022 im Schnitt 53,2 Prozent der Follower eines KOL ungültig. Vor jedem Vertrag die Daten des Creators auf Pugongying oder Xingtu prüfen."
 ---
 
 *Wer auf den falschen KOL setzt, verbrennt sein Budget. Wer KOC ohne Plan streut, garantiert sich die Unsichtbarkeit. Es kommt auf die Dosierung an.*
@@ -43,11 +43,17 @@ Die chinesische Gen Z ist gegenüber gesponserten Inhalten besonders wachsam gew
 
 Die ganze Branche weiß davon. Wenige sprechen es laut aus.
 
-Ein MCN-Verantwortlicher hat gegenüber Rancaijing eingeräumt: In seiner Agentur verfügten nur 10 bis 20 Prozent der unter Vertrag stehenden KOL über organisch aufgebautes Publikum. Beim Rest? Bezahlte Verstärkung, die die Zähler künstlich aufbläst.
+Als ein Datenanbieter zuletzt nachgemessen hat, war mehr als die Hälfte der Follower eines typischen KOL kein echtes, aktives Publikum.
 
-> CCTV News hat diesen Markt 2019 nachgezeichnet und dokumentiert, wie mühelos sich fingierte Interaktion auf chinesischen Plattformen erzeugen lässt.
+> 2022 waren 53,2 Prozent der Follower eines durchschnittlichen KOL ungültige Konten, so Miaozhen.
+> Quelle: Miaozhen (秒针系统), März 2023. https://www.miaozhen.com/all-reports/marketingeffiency/806.html
 
-Einen Post über die 100.000-Aufrufe-Schwelle zu schieben kostet zuweilen unter 1.000 Yuan. Für eine Marke, die mehrere zehntausend Yuan in eine Kampagne steckt, ist das Risiko alles andere als abstrakt. Es kommt permanent vor.
+Gefälschte Zahlen sind zudem billig zu haben.
+
+> Ein von der Polizei in Liangshan (Sichuan) zerschlagener Ring für gekaufte Interaktion bot 100.000 Videoaufrufe für 98 Yuan und 10.000 Likes für 248 Yuan an.
+> Quelle: CCTV.cn (央视网), nach Chengdu Economic Daily (成都商报), Februar 2025. https://news.cctv.cn/2025/02/11/ARTItQYvuvUQRKmqz2bMjWFY250211.shtml
+
+Für eine Marke, die mehrere zehntausend Yuan in eine Kampagne steckt, ist das Risiko alles andere als abstrakt.
 
 Was wirklich zählt: Interaktionsrate, Kommentarqualität, demografische Zusammensetzung des Publikums und reales Kaufverhalten. Die Follower-Zahl ganz oben im Profil sagt wenig aus.
 

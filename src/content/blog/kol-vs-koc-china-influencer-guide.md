@@ -4,7 +4,7 @@ description: "KOLs create awareness. KOCs build trust. How to combine both, what
 metaTitle: "KOL vs KOC China: influencer guide"
 metaDescription: "KOL or KOC? Commission models, fake follower risks, and the pyramid approach that works. A practical guide for brands in China."
 publishDate: 2026-04-03
-updatedDate: 2026-10-11
+updatedDate: 2026-10-15
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Strategy"
@@ -16,7 +16,7 @@ keyFacts:
   - "KOC stands for Key Opinion Consumer: everyday users with 1,000 to 100,000 followers, used for trust and conversion."
   - "Top-tier KOLs in China can cost 500,000 to 5 million yuan per post; KOCs typically cost 200 to 5,000 yuan per post."
   - "Perfect Diary built its growth by stacking 1 head KOL, 10 mid-tier KOLs, and 1,000 KOCs around each launch."
-  - "Fake followers and bot engagement are still common in China. Verify with iiMedia, CCTV News, and platform analytics before signing any contract."
+  - "Miaozhen found 53.2% of the average KOL's followers were invalid in 2022. Check a creator's data on Pugongying or Xingtu before signing any contract."
 ---
 
 *Spend too much on the wrong KOL and you burn your budget. Spread too thin across KOCs and nobody notices. Here is how to get the balance right.*
@@ -43,11 +43,17 @@ Younger consumers are especially skeptical. Gen Z audiences in China increasingl
 
 This is the part most people in the industry know about but do not discuss openly enough.
 
-An MCN insider told Rancaijing that only 10-20% of the KOLs managed by his company had completely organic reach. The rest relied on paid amplification to inflate their metrics.
+The last time a data firm measured it, more than half of a typical KOL's followers were not real, active users.
 
-> CCTV News investigated this supply chain in 2019 and documented how cheap it is to manufacture fake engagement on Chinese social platforms.
+> In 2022, 53.2% of the average KOL's followers were invalid, Miaozhen found.
+> Source: Miaozhen (秒针系统), March 2023. https://www.miaozhen.com/all-reports/marketingeffiency/806.html
 
-Creating a fake 100,000+ view count on a post can cost under 1,000 yuan. For brands investing tens of thousands per campaign, the risk of booking inflated accounts is not theoretical. It happens all the time in this market.
+Faking the numbers is also cheap.
+
+> A paid-posting ring broken up by police in Liangshan, Sichuan, advertised 100,000 video plays for 98 yuan and 10,000 likes for 248 yuan.
+> Source: CCTV.cn (央视网), carrying Chengdu Economic Daily (成都商报), February 2025. https://news.cctv.cn/2025/02/11/ARTItQYvuvUQRKmqz2bMjWFY250211.shtml
+
+For brands investing tens of thousands per campaign, the risk of booking inflated accounts is not theoretical.
 
 This is why verification matters more than raw numbers. Engagement rate, comment quality, audience demographics, and purchasing behavior data tell you far more than the follower count on someone's profile page.
 

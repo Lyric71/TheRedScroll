@@ -4,7 +4,7 @@ description: "Douyin n’est pas TikTok. Ouverture de compte, formats de contenu
 metaTitle: "Douyin pour les marques occidentales : le guide complet"
 metaDescription: "Douyin n’est pas TikTok : ouverture de compte, contenu qui marche, coûts KOL, publicité Ocean Engine et Douyin Shop. Le guide des marques occidentales."
 publishDate: 2026-07-16
-updatedDate: 2026-10-11
+updatedDate: 2026-10-15
 author: "TheRedScroll"
 platforms: ["douyin"]
 category: "Stratégie"
@@ -120,7 +120,12 @@ En ce moment, c’est le milieu de la pyramide qui rend le mieux. Au Double 11 2
 
 ![Une KOL Douyin filme un test produit dans son appartement](/images/blog/douyin-kol-showcase.webp)
 
-Une mise en garde : les faux abonnés restent monnaie courante sur ce marché. Gonfler un compteur au-delà de 100 000 vues sur une publication peut coûter moins de 1 000 yuans, une filière que CCTV News documentait déjà en 2019. Réservez vos influenceurs via Xingtu, la plateforme officielle de Douyin, qui livre des données sur l’authenticité de l’audience. Contrôlez la qualité de l’engagement avant de signer.
+Une mise en garde : sur ce marché, le faux engagement se vend à prix cassé.
+
+> Un réseau de faux engagement démantelé par la police de Liangshan, dans le Sichuan, proposait 100 000 lectures vidéo pour 98 yuans.
+> Source : CCTV.cn (央视网), reprenant Chengdu Economic Daily (成都商报), février 2025. https://news.cctv.cn/2025/02/11/ARTItQYvuvUQRKmqz2bMjWFY250211.shtml
+
+Réservez vos influenceurs via Xingtu, la plateforme officielle de Douyin, qui livre des données sur l’authenticité de l’audience. Contrôlez la qualité de l’engagement avant de signer.
 
 ## Combien coûte le marketing sur Douyin ?
 

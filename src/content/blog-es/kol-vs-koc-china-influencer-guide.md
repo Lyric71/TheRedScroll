@@ -4,7 +4,7 @@ description: "Los KOL dan notoriedad; los KOC, confianza. Cómo combinarlos, qu�
 metaTitle: "KOL o KOC en China: guía para marcas"
 metaDescription: "¿KOL o KOC? Comisiones, seguidores falsos y el modelo de pirámide que funciona. Guía práctica para marcas en China."
 publishDate: 2026-04-03
-updatedDate: 2026-10-11
+updatedDate: 2026-10-15
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Estrategia"
@@ -16,7 +16,7 @@ keyFacts:
   - "KOC son las siglas de Key Opinion Consumer: usuarios corrientes de entre 1.000 y 100.000 seguidores, ideales para confianza y conversión."
   - "En China, un KOL de primer nivel cobra entre 500.000 y 5 millones de yuanes por publicación; un KOC, entre 200 y 5.000."
   - "Perfect Diary creció apilando, en cada lanzamiento, 1 KOL de cabecera, 10 KOL intermedios y 1.000 KOC."
-  - "Los seguidores falsos y la interacción inflada siguen al orden del día en China. Verifique con iiMedia, CCTV News y la analítica de la plataforma antes de firmar nada."
+  - "Según Miaozhen, en 2022 el 53,2 % de los seguidores del KOL medio no eran válidos. Revise los datos del creador en Pugongying o Xingtu antes de firmar nada."
 ---
 
 *Si carga el presupuesto en el KOL equivocado, lo quema. Si lo reparte en exceso entre KOC, no se entera nadie. Dónde está el equilibrio.*
@@ -43,11 +43,17 @@ Los jóvenes desconfían más que nadie. La Gen Z china mira cada vez con más r
 
 Esto lo sabe casi todo el sector, aunque se hable menos de lo que se debería.
 
-Un directivo de un MCN le contó a Rancaijing que apenas entre el 10 y el 20 % de los KOL que gestiona su empresa tenía un alcance del todo orgánico. El resto tiraba de amplificación de pago para hinchar sus métricas.
+La última vez que una firma de datos lo midió, más de la mitad de los seguidores de un KOL típico no eran usuarios reales ni activos.
 
-> La CCTV destapó esta cadena en 2019 y dejó por escrito lo barato que sale fabricar interacción falsa en las redes chinas.
+> En 2022, el 53,2 % de los seguidores del KOL medio eran cuentas no válidas, según Miaozhen.
+> Fuente: Miaozhen (秒针系统), marzo de 2023. https://www.miaozhen.com/all-reports/marketingeffiency/806.html
 
-Inflar un post por encima de las 100.000 visualizaciones falsas cuesta menos de 1.000 yuanes. Para una marca que pone decenas de miles por campaña, el peligro de firmar con cuentas hinchadas no es teórico. Pasa a diario en este mercado.
+Falsear las cifras, además, sale barato.
+
+> Una red de interacciones falsas desarticulada por la policía de Liangshan, en Sichuan, anunciaba 100.000 reproducciones de vídeo por 98 yuanes y 10.000 «me gusta» por 248 yuanes.
+> Fuente: CCTV.cn (央视网), a partir de Chengdu Economic Daily (成都商报), febrero de 2025. https://news.cctv.cn/2025/02/11/ARTItQYvuvUQRKmqz2bMjWFY250211.shtml
+
+Para una marca que pone decenas de miles por campaña, el peligro de firmar con cuentas hinchadas no es teórico.
 
 Por eso verificar importa más que el número a secas. La tasa de interacción, la calidad de los comentarios, el perfil de la audiencia y los datos de compra cuentan muchísimo más que los seguidores que figuran en el perfil.
 

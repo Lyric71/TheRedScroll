@@ -4,7 +4,7 @@ description: "Les KOL bâtissent la notoriété, les KOC installent la confiance
 metaTitle: "KOL contre KOC en Chine : guide des influenceurs"
 metaDescription: "KOL ou KOC ? Modèles de rémunération, risque de faux abonnés et stratégie pyramidale qui fonctionne. Guide pratique pour les marques en Chine."
 publishDate: 2026-04-03
-updatedDate: 2026-10-11
+updatedDate: 2026-10-15
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Stratégie"
@@ -16,7 +16,7 @@ keyFacts:
   - "KOC signifie Key Opinion Consumer : utilisateurs ordinaires (1 000 à 100 000 abonnés), mobilisés pour la confiance et la conversion."
   - "Les KOL de premier rang en Chine se monnaient entre 500 000 et 5 millions de yuans par publication ; un KOC coûte généralement entre 200 et 5 000 yuans."
   - "Perfect Diary a construit sa croissance en empilant 1 KOL de tête, 10 KOL intermédiaires et 1 000 KOC à chaque lancement produit."
-  - "Les faux abonnés et l’engagement automatisé restent répandus en Chine. Vérifiez via iiMedia, CCTV News et les statistiques des plateformes avant tout contrat."
+  - "En 2022, Miaozhen a mesuré 53,2 % d’abonnés invalides chez le KOL moyen. Vérifiez les données du créateur sur Pugongying ou Xingtu avant tout contrat."
 ---
 
 *Miser gros sur le mauvais KOL, c’est un budget qui part en fumée. S’éparpiller sur des KOC sans feuille de route, c’est la garantie de l’invisibilité. Tout l’enjeu tient au dosage.*
@@ -43,11 +43,17 @@ La génération Z chinoise est devenue particulièrement rétive au contenu spon
 
 Tout le milieu est au courant. Rares sont ceux qui en parlent à voix haute.
 
-Un responsable de MCN l’a admis devant Rancaijing : dans son agence, seuls 10 à 20 % des KOL sous contrat disposaient d’une audience réellement organique. Pour les autres ? De l’amplification payante, pour grossir artificiellement les compteurs.
+La dernière fois qu’un institut de mesure s’est penché sur la question, plus de la moitié des abonnés d’un KOL type n’étaient ni réels ni actifs.
 
-> CCTV News a remonté cette filière en 2019 et documenté la facilité avec laquelle on fabrique de l’interaction fictive sur les plateformes sociales chinoises.
+> En 2022, 53,2 % des abonnés du KOL moyen étaient des comptes invalides, selon Miaozhen.
+> Source : Miaozhen (秒针系统), mars 2023. https://www.miaozhen.com/all-reports/marketingeffiency/806.html
 
-Faire franchir à un post la barre des 100 000 vues coûte parfois moins de 1 000 yuans. Pour une marque qui engage des dizaines de milliers de yuans sur une campagne, le risque n’a rien d’abstrait. Cela se produit en permanence.
+Truquer les compteurs, en outre, ne coûte presque rien.
+
+> Un réseau de faux engagement démantelé par la police de Liangshan, dans le Sichuan, affichait ses tarifs : 100 000 lectures vidéo pour 98 yuans, 10 000 « j’aime » pour 248 yuans.
+> Source : CCTV.cn (央视网), reprenant Chengdu Economic Daily (成都商报), février 2025. https://news.cctv.cn/2025/02/11/ARTItQYvuvUQRKmqz2bMjWFY250211.shtml
+
+Pour une marque qui engage des dizaines de milliers de yuans sur une campagne, le risque n’a rien d’abstrait.
 
 Ce qui compte vraiment : le taux d’interaction, la qualité des commentaires, la composition démographique de l’audience et les données comportementales d’achat. Le chiffre affiché en haut du profil, lui, ne vaut pas grand-chose.
 

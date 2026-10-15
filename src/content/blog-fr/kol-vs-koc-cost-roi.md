@@ -217,6 +217,8 @@ Au KOL, une seule idée. Donnez-lui la vérité du produit et le message unique,
 
 Aux KOC, l’inverse : de la diversité. Quarante notes qui répètent la même phrase sentent l’achat, et les lecteurs ne s’y trompent pas. Confiez à chaque créateur un angle propre : un usage, une question d’acheteur, une comparaison, une routine. Exigez de vraies photos.
 
+[Notre guide consacré aux campagnes KOL qui font des vues sans ventes](/fr/decryptages/kol-campaign-no-roi/) montre ce que coûte un brief trop scripté, et comment auditer le résultat.
+
 Dans les deux cas, passez par la place de marché. Pugongying (蒲公英), celle des créateurs de Xiaohongshu, laisse le prix évoluer avant la commande.
 
 > Un créateur Pugongying peut ajuster le prix d’une commande entre 80 % et 150 % du prix affiché. Les frais de 10 % s’appliquent au prix convenu.

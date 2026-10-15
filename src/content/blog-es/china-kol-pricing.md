@@ -239,6 +239,8 @@ Las normas de Xingtu impiden aceptar encargos a los creadores cuya cuenta princi
 
 Una señal aislada no prueba un fraude, pero dos o tres a la vez bastan para frenar el acuerdo.
 
+Si la campaña ya se ha emitido y no ha vendido nada, [nuestra guía para auditar una campaña con KOL sin retorno](/es/analisis/kol-campaign-no-roi/) muestra, publicación por publicación, dónde se rompió la cadena.
+
 ## Qué cobra una agencia por llevar una campaña con KOL
 
 Queda una última pregunta: ¿quién se interpone entre usted y el creador? Xingtu (巨量星图) reserva un hueco a un intermediario y le pone nombre: la tarifa de un proveedor de servicios figura en la factura como línea aparte. En los encargos de reclutamiento, como se vio en el apartado sobre los KOC, el creador recibe el 80 % de la puja del cliente.

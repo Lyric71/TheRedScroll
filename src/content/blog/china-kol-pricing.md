@@ -344,6 +344,9 @@ these eight signals before you sign:
 
 No single signal proves fraud. Two or three together should stop the deal.
 
+If a campaign has already run and sold nothing, [our KOL campaign audit guide](/insights/kol-campaign-no-roi/)
+shows how to find where it broke, post by post.
+
 ## What an agency charges to run a KOL campaign
 
 Last question: who sits between you and the creator? Xingtu (巨量星图) leaves room

@@ -575,6 +575,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Notes: Tech trade outlet, original copy. A fuller copy (Zhengguan News, 正观号 "电商观察家") lists penalty points (merchant violation points 10 to 25, account credit 0 to 12 per breach) but is user-uploaded self-media: not cited. 100ec.cn (网经社) has the story behind a JS challenge and could not be fetched. The platform's own notice sits on the 商业广告薯 account and the e-commerce learning centre, neither fetchable.
 - Re-verified 2026-10-05 for 05C: "3月12日小红书《交易导流违规管理细则》", "传播个人/社群联系方式或其他平台的账号/店铺信息" and "应使用小红书商城、直播间内购物车功能、官方留资组件等方式" (older than 12 months; cited as a dated rule) confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
 - Re-verified 2026-10-05 for 05D: "3月12日小红书《交易导流违规管理细则》" and "应使用小红书商城、直播间内购物车功能、官方留资组件等方式" confirmed at check 1 and check 2. Used in: travel-hospitality.
+- Watch note 2026-10-15 (08C run): Xiaohongshu revised the 细则 effective 2026-09-18 (rules center, https://school.xiaohongshu.com/rule/detail/17/119931, see the purchase path entry below). The 2025 bans these articles quote (contact details, other platforms' accounts, links, codes, QR codes, mini programs) are still in the 2026 text, so wechat-vs-xiaohongshu, xiaohongshu-sensitive-words and travel-hospitality stay accurate as dated statements. The 2025 line on using the store, cart and lead form is not in the 2026 text: a run that reuses this entry cites the 2026 revision for the current rule and keeps this entry only for the March 2025 wording, with its date.
 
 ### Xiaohongshu trade-diversion notice, November 2024: contact details listed, penalties
 - Value: qualitative. The 交易导流商业秩序治理规则公告 (published by the 商业广告薯 account in November 2024) lists directed contact details that may not be pushed, "如手机号、微信、电子邮箱、二维码、银行账号及其他付款方式等", plus third-party platform names and links; covered surfaces include profile pages, notes, comments, product details, store pages, physical parcels, promotion pages, chat tools, customer service, marketing SMS and livestreams; penalties include "限制笔记、直播、商品等曝光，或在搜索结果中不展现", content-posting limits, deposit deductions, store removal and account bans
@@ -746,6 +747,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 1: 2026-10-08, fetched with curl in the 07A run, strings below confirmed
 - Verified 2: 2026-10-08, re-fetched at iteration 8 and again after the quality pass, unchanged; "主端账号粉丝量刷量严重", "封禁达人接单权限", "2025年10月20日最新修订生效", "排除营销流量", "查看自然流量下的相关数据指标", "完播率"
 - Used in: china-kol-pricing
+- Re-verified 2026-10-15 for 08C: both pages fetched at check 1 ("主端账号粉丝量刷量严重", "2025年10月20日最新修订生效", "排除营销流量"); the article cites the report page through the new Xingtu measurement entry below, which logs its 2026-06-09 strings.
 
 ### Douyin commercial cooperation authorization agreement, 2026
 - Value: qualitative. Worldwide, non-exclusive right of online dissemination; the creator cannot revoke it during the term; the term can be set to permanent; replaces the 2023 Qianchuan version
@@ -1248,6 +1250,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-08, re-fetched at iteration 8 and again after the quality pass, unchanged; "实际销售额仅8209.26元", "退还营销推广费98507.41元", "不要仅凭粉丝数量、网红热度决定合作"
 - Used in: china-kol-pricing
 - Notes: A missed sales guarantee, not a fake-data case. The defendant is the culture company, not the creator.
+- Re-verified 2026-10-15 for 08C: "实际销售额仅8209.26元", "退还营销推广费98507.41元", "不要仅凭粉丝数量、网红热度决定合作" and the contract advice "明确保底销售额、有效订单核算标准、退费比例" (new use) confirmed at check 1, check 2 and after the quality pass. Used in: kol-campaign-no-roi.
 
 ### China national standards: total and five-year output, 2021 to 2025
 - Value: 48,000 national standards in total at the end of the 14th Five-Year Plan period; 13,000 made or revised in 2021 to 2025
@@ -3540,6 +3543,7 @@ set to blocked by its draft run.
 - Verified 2: 2026-10-14, re-fetched (tags c2, c2b), unchanged
 - Used in: douyin-advertising-formats (90% and 72% only)
 - Notes: The platform's own figures relayed by the press; attribute them to Ocean Engine. Checked once only and not logged as a source: Kuai Keji (快科技, 2025-12-16) reporting the platform's "平台短视频日均激发搜索达1.1亿次" at the 2025 Qianchuan conference (https://news.mydrivers.com/1/1092/1092889.htm), cut at iteration 4 before check 2; re-check both times before any use.
+- Re-verified 2026-10-15 for 08C: "约35%用户购买前会搜索2-3次" (new string, about 35% of users search two or three times before buying) and "看后搜率较非星图内容提升49%" confirmed at check 1 and check 2; the 35% line was cut from kol-campaign-no-roi after the quality pass, so it is logged here for reuse with two checks.
 
 ### Ocean Engine bidding: strategies, oCPM definition, learning status, cost guarantee API, one-click boost (changelogs 2020 to 2025)
 - Value: 2023-02-01 bid and billing set at project level, strategies 放量投放 (max delivery) and 控制成本上限 (cost cap), billing CPM, CPC, oCPM, oCPC; 2023-06-26 稳定成本 (stable cost) always accelerated, 最优成本 for even pacing; 2025-09-16 oCPM labeled "目标转化出价-按展示付费", 7-day ROI coefficient; 2022-12-07 learning_phase status; 2024-06-27 project cost guarantee status and payout amount in the API; 2020-05-08 一键起量 "花费可控的激进提价工具"
@@ -3589,6 +3593,135 @@ set to blocked by its draft run.
 - Hashtag challenge still sold in 2025 or 2026 and its price; reserved brand in-feed and search brand zone pricing; any TopView or in-feed spec newer than 2020; Douyin search MAU: no dated allowed source.
 - Douyin CPM, CPC or cost per order for 2025 or 2026 (including "Qianchuan average CPM 80 to 120 yuan"): self-media and agency posts only. Cut; the article says no platform figure exists.
 - Native ads "+20% to 30% volume": Zhihu only.
+
+### Miaozhen: average KOL had 53.2% invalid followers in 2022 (latest published share)
+- Value: 53.2% invalid followers for the average KOL in 2022 (down 1.6 points on 2021); auto KOLs 54.2%, mother-and-baby KOLs 52.7%
+- As of: 2022 data (report page dated 2023-03-22)
+- Source: Miaozhen (秒针系统), its own site, 《2022流量实效现状及2023实操建议》
+- URL: https://www.miaozhen.com/all-reports/marketingeffiency/806.html
+- Verified 1: 2026-10-15, fetched with curl (logs/scratch/08C/check.py, tag c1); "KOL平均无效粉丝占比53.2%" and "2023-03-22" confirmed
+- Verified 2: 2026-10-15, re-fetched at iteration 8 (tag c2) and after the quality pass (tag c2b), unchanged
+- Used in: kol-campaign-no-roi; kol-vs-koc-china-influencer-guide (all five locales, replacing an unsourced Rancaijing claim, 2026-10-15)
+- Notes: The latest share figure published; Miaozhen stopped the series after the 2022 data. "无效粉丝" includes inactive accounts as well as bots and bought followers: write "invalid", never "bought". Older than 12 months (fallback 9): always date it. The 2021 edition (54.8% KOL invalid followers, 43% abnormal social traffic, Sina Tech 2022-03-17, https://finance.sina.com.cn/tech/2022-03-17/doc-imcwiwss6621212.shtml) passed check 1 only.
+
+### Fake engagement price list, Liangshan police case (CCTV.cn, February 2025)
+- Value: a paid-posting ring advertised 10,000 likes for 248 yuan and 100,000 video plays for 98 yuan; 27 suspects arrested in more than 10 provinces
+- As of: February 2025 (article dated 2025-02-11)
+- Source: CCTV.cn (央视网), carrying Chengdu Economic Daily (成都商报) / Red Star News, from Liangshan police (四川凉山公安)
+- URL: https://news.cctv.cn/2025/02/11/ARTItQYvuvUQRKmqz2bMjWFY250211.shtml
+- Verified 1: 2026-10-15, fetched with curl (tag c1); "刷10万次播放/98元", "1万个点赞/248元", "四川凉山公安成功侦破一系列", "来源：成都商报", "2025年02月11日" confirmed
+- Verified 2: 2026-10-15, re-fetched after the quality pass (tag c2b), unchanged
+- Used in: kol-vs-koc-china-influencer-guide and douyin-marketing-western-brands (all five locales, replacing "under 1,000 yuan for 100,000+ views, CCTV 2019", 2026-10-15). Cut from kol-campaign-no-roi in the quality pass
+- Notes: One ring's advertised price list as quoted by police and the reporter; short-video plays, not Xiaohongshu note views. Older than 12 months from February 2026: date it.
+
+### Ji'an court: agency's topic plays not counted as brand exposure; bought likes rejected (October 2026)
+- Value: a Jiangxi brand hired an agency for 727,000 yuan; the agency claimed 15.752 million plays of a related topic; the court went by the brand films' own exposure (38,900); likes the agency bought after losing the first trial were not counted ("刷出的流量不予认可"); its claim for the remaining 507,000 yuan failed on appeal at the Ji'an Intermediate People's Court
+- As of: October 2026 (article dated 2026-10-08)
+- Source: New Rule of Law Daily (新法治报), Jiangxi, e-paper
+- URL: https://newspaper.jxnews.com.cn/xfzb/html/2026-10/08/content_3308_195719.htm
+- Verified 1: 2026-10-15, fetched with curl (tag c1); "刷出的流量不予认可", "曝光量仅3.89万次", "1575.2万次", "批量推流", "剩余服务费50.7万元" confirmed
+- Verified 2: 2026-10-15, re-fetched at iteration 8 (tag c2, adding "项目总价72.7万元" and "相关话题播放量达1575.2万次") and after the quality pass (tag c2b), unchanged
+- Used in: kol-campaign-no-roi
+- Notes: The party that inflated the numbers was a promotion agency, not a creator, and the agency sued the brand. Parties anonymized; judgment not online. Mirror: Phoenix Jiangxi (凤凰网江西), https://jx.ifeng.com/c/8x1euV2KjUG.
+
+### Xiaohongshu interaction-cheating notice, September 2026
+- Value: August 22 to September 20 (2026): 76,000 accounts and 357,000 notes handled for interaction cheating; 170 million fake follows and 980 million fake likes and saves cleared
+- As of: September 2026 (announcement 2026-09-23)
+- Source: Xiaohongshu Pugongying help center (小红书蒲公英帮助中心), 《关于互动作弊行为的治理公告》
+- URL: https://pgy.xiaohongshu.com/help/home (JSON: https://pgy.xiaohongshu.com/api/pgy/help/doc?shortcutId=cdf229e526f64dcf3375462b89eb63e8&role=4)
+- Verified 1: 2026-10-15, fetched (tag c1); "处置参与互动作弊的账号7.6万个", "处置存在互动作弊的笔记35.7万篇", "虚假点赞和收藏9.8亿次", "8月22日至9月20日" confirmed
+- Verified 2: 2026-10-15, re-fetched at iteration 8 (tag c2, adding "清理虚假关注1.7亿次") and after the quality pass (tag c2b), unchanged
+- Used in: kol-campaign-no-roi
+- Notes: The platform text gives no year; the doc's edit stamps and Guandian (观点网, 2026-09-23, "小红书9月23日发布互动作弊专项治理公告", https://www.guandian.cn/article/20260923/606180.html) date it. Guandian is used only for the date, never cited. Does not overlap the China Daily March to August 2025 figures.
+
+### Xiaohongshu brand trust system, January 2026: undeclared creator deals
+- Value: qualitative. The brand score was replaced by a brand trust system with special governance from 2026-01-12; targets include paid water-army content and creator deals made off the official platform (水下接单); measures include intervening in brand content traffic and a risk warning shown to users who search the brand
+- As of: January 2026 (in-text date)
+- Source: Xiaohongshu Pugongying help center (小红书蒲公英帮助中心), 《关于下线品牌分和建设品牌信任体系的公告》
+- URL: https://pgy.xiaohongshu.com/help/home (shortcutId 1627df51a4c861f13e462aa2067d6c15)
+- Verified 1: 2026-10-15 (tag c1); "2026年1月12日", "水下接单类", "用户搜索品牌内容时，为用户进行风险提示" confirmed
+- Verified 2: 2026-10-15, re-fetched (tags c2, c2b), unchanged
+- Used in: kol-campaign-no-roi
+- Notes: Supersedes the "brand score" language in the June 2025 Southern Metropolis Daily entry for anything after January 2026.
+
+### Xingtu measurement: report windows, traffic split, custom report, product seeding windows, the 2024 cart-only admission
+- Value: (a) task report: plays and likes update for at most 45 days after a video goes live; "search after viewing" is a brand search as the viewer's next action; store visits count within 15 days of watching (page modified 2026-06-09); (b) traffic split into marketing and non-marketing traffic; plays rising after the split mean a high DOU+ share (2026-06-08); (c) custom report updates T+1 and stops 45 days after creation; compares the reached audience with the creator's followers (2026-08-22); (d) product seeding attribution windows 1, 3, 7, 14 or 30 days (2026-06-11); (e) March 2024: the old report counted only cart orders, so seeding value was underestimated; one view rarely leads to a cart purchase
+- As of: June to August 2026 (page modification times); (e) 2024-03-07
+- Source: Ocean Engine (巨量引擎), Xingtu help center (巨量星图帮助中心)
+- URL: https://www.xingtu.cn/help-center/demander/115182 ; /142935 ; /119060 ; /140449 ; /133677
+- Verified 1: 2026-10-15 (tag c1); "最长更新至发布后的45天", "看后搜统计的是看视频后下一个行为为搜索品牌相关词的行为", "在看完视频后的15 天内，进入品牌店铺的次数", "拆分成营销和非营销流量", "说明这个达人dou+投放比例较高", "数据T+1更新，在创建45天之后停止更新", "判断投后画像是否符合选人阶段对达人用户画像的预期", "1/3/7/14/30天", "只统计了挂载小店购物车组件的内容对应的商城转化订单，导致星图种草价值被低估", "用户看一次视频就点击购物车下单的概率较小" confirmed
+- Verified 2: 2026-10-15, re-fetched (tags c2, c2b), unchanged
+- Used in: kol-campaign-no-roi
+- Notes: The 115182 page gives the return-search (回搜) window two ways (1/7/15 and 7/14 days): never quote one. The 140449 page's "7-day ROI 2+, 30-day ROI 5+" are unnamed showcase cases: never cite them as benchmarks. (e) is older than 12 months; cite with its date.
+
+### Purchase path rules: Xingtu widgets and off-Douyin rejection; Pugongying comment widget; Xiaohongshu ad-note link; trade-diversion revision 2026
+- Value: (a) Xingtu: one add-on widget per task, not changeable after the video is published (page modified 2026-06-08); (b) from 2025-03-14 Xingtu rejects at pre-review videos that steer users off Douyin (modified 2025-12-24); (c) Pugongying comment widget pinned first in the comments, opens a search results page, product page or store page; products and stores must be Xiaohongshu store (小红书商城) ones; cannot be added to a published note (blocks 2026-04); (d) Xiaohongshu's direct-to-purchase link (种草直达) works only on ad notes (Jiemian, 2025-05-08); (e) Xiaohongshu revised 《交易导流违规管理细则》 effective 2026-09-18; penalties now include suspending business cooperation and Pugongying order-taking rights
+- As of: as stated per item
+- Source: Ocean Engine Xingtu help center (/109142, /144149); Xiaohongshu Pugongying help center (shortcutId 427c41f230c5074a99a070e0abcc55ed); Jiemian (界面新闻); Xiaohongshu e-commerce rules center (小红书电商学习中心)
+- URL: https://www.xingtu.cn/help-center/demander/109142 ; https://www.xingtu.cn/help-center/demander/144149 ; https://pgy.xiaohongshu.com/help/home ; https://www.jiemian.com/article/12752238.html ; https://school.xiaohongshu.com/rule/detail/17/119931 (POST https://school.xiaohongshu.com/api/edith/governance/inform/rule/query_article_detail, body {"articleId":119931})
+- Verified 1: 2026-10-15 (tag c1); "每个任务仅可添加一个附加组件", "视频发布后无法修改", "2025年3月14日开始对涉及以上内容的视频在预审环节进行驳回", "固定展示在蒲公英笔记评论区首位，支持跳转搜索结果页/商品详情页/店铺页", "已经发布的笔记不支持再进行组件的挂接", "适用店铺类型：小红书商城店铺", "该功能目前只针对广告笔记，并非社区全部笔记都可以跳转", "关于修订《交易导流违规管理细则》的公示通知", "2026年09月18日", "商业权益处置：包括但不限于暂停或关闭商业合作权限、蒲公英接单权限" confirmed
+- Verified 2: 2026-10-15, re-fetched (tags c2, c2b), unchanged
+- Used in: kol-campaign-no-roi
+- Notes: The comment widget doc does not say a brand without a Xiaohongshu store can use the search version; do not claim it. The 2026 trade-diversion text keeps the 2025 bans on third-party contact details and links but no longer carries the 2025 line on using the store, cart and lead form.
+
+### Attribution windows: Pugongying Taobao and JD links, audience analysis, data center, creator square; WeChat 互选
+- Value: Pugongying's Taobao link (小红星) reports at 15-day and 30-day attribution; its JD link (小红盟) offers 15, 30 and 60-day attribution and requires a JD 京准通 advertiser; AIPS audience analysis capped at 60 days, 30 to 45 suggested, with a natural-traffic-only switch; the note data center mixes natural and promoted traffic, has a viewer profile to judge the match with target buyers, and a 90-day default trend; the creator-square guide (v2026.04) says to favor creators with a low past cost per store visit for a sales goal; WeChat 互选 orders use click attribution that cannot be changed after the order is created
+- As of: Pugongying blocks April 2026, docs republished 2026-10-13; 互选 page updated 2026-08-13
+- Source: Xiaohongshu Pugongying help center (小红书蒲公英帮助中心); Tencent 互选 help center (腾讯营销互选平台)
+- URL: https://pgy.xiaohongshu.com/help/home (shortcutIds 90fa020aec66ee015b8bbbe8c169faa0, 54d1c33461ce533851933b3e3862a911, 837ce03ac0162bb5491f7f06315644b2, eafd60db4c1fa8e45830f5297d223f31, fcd9c98c29152a7826a676350f63bef9) ; https://huxuan.qq.com/trade/free/help_detail?post_ids=8348
+- Verified 1: 2026-10-15 (tag c1); "15日归因", "30日归因", "核心竞争力：全域归因、15/30/60天归因、成本可算", "最长分析周期不超过60天", "仅统计蒲公英自然流量带来的用户", "包含自然流量和推广流量", "评估笔记触达人群与品牌目标人群匹配度", "优先选历史合作笔记进店成本低、进店量高的博主", "归因方式：选择归因方式为（点击归因）", "但无法修改推广目标、无法修改转化归因" confirmed
+- Verified 2: 2026-10-15, re-fetched (tags c2, c2b, adding "参与商家要求：京准通商家" and "分析周期最长60天，建议选择30-45天获得充分数据"), unchanged
+- Used in: kol-campaign-no-roi
+- Notes: Pugongying docs are read through https://pgy.xiaohongshu.com/api/pgy/help/doc?shortcutId=<id>&role=4 (menu: /api/pgy/help/menu?role=4); cite as "Xiaohongshu Pugongying help center, <month of check>". No WeChat or Douyin A3 lookback window in days is published. The 小红星 budget minimum differs between the platform doc (50,000 yuan) and Huaxi Securities (0): quote neither.
+
+### Xiaohongshu decision cycles: robot vacuum 45 to 60 days, body oil 60 to 90 (WILL conference, December 2024)
+- Value: Xiaohongshu CMO 之恒: judge seeding by ROI over the buyer's decision cycle; a robot vacuum's return turned at about 45 to 60 days; a body oil its brand thought was a 7-day decision took many buyers 60 to 90 days
+- As of: December 2024 (article dated 2024-12-20)
+- Source: Huxiu (虎嗅), via Sina (新浪)
+- URL: https://finance.sina.com.cn/wm/2024-12-20/doc-ineacsym5596846.shtml
+- Verified 1: 2026-10-15 (tag c1); "其实是会在45天-60天左右发生拐点", "品牌认为这款产品的决策周期7天即可", "发现许多用户的决策周期长达60-90天", "2024年12月20日" confirmed
+- Verified 2: 2026-10-15, re-fetched (tags c2, c2b), unchanged
+- Used in: kol-campaign-no-roi
+- Notes: Platform-presented cases, older than 12 months (fallback 9, no newer platform figure found). Same-day versions on Adquan (face serum 29 days) and Growthbox (inflection day 30 vs day 7) passed check 1 only.
+
+### Creative that reads as an ad: Xingtu placement rules (November 2025) and Pugongying low-quality clean-up (October 2025)
+- Value: from 2025-11-12 Xingtu bars four abrupt placements (no lead-in, a stock interrupting line, a placement unrelated to the story, brand footage over half the frame); from 2025-10-01 Xiaohongshu runs a clean-up of stiff ad insertion and templated notes, with penalties including author-only or follower-only visibility and limited traffic
+- As of: Xingtu page modified 2026-06-15; Pugongying notice in-text date 2025-10-01
+- Source: Ocean Engine Xingtu help center (/147608); Xiaohongshu Pugongying help center (shortcutId a76a1444fd620a8f78d662829ae736a0)
+- URL: https://www.xingtu.cn/help-center/demander/147608 ; https://pgy.xiaohongshu.com/help/home
+- Verified 1: 2026-10-15 (tag c1); "自2025年11月12 日开始", "零帧起手", "生硬打断", "超过画面占比1/2", "平台于2025年10月1日起开展专项治理", "生硬广告植入或同质化模板", "笔记仅个人可见、粉丝可见、限制流量等" confirmed
+- Verified 2: 2026-10-15, re-fetched (tags c2, c2b), unchanged
+- Used in: kol-campaign-no-roi
+
+### iiMedia 2026 seeding survey: review videos lead, advertorials last; real need the top trigger
+- Value: creator review videos the most common seeding route (61.49%), soft-sell advertorials last (24.91%); a real existing need the top reason people got seeded (49.10%), "did not notice it was an ad" last (32.85%)
+- As of: June 2026 (pages dated 2026-06-01 and 2026-06-16)
+- Source: iiMedia Research (艾媒咨询), iimedia.cn
+- URL: https://www.iimedia.cn/c1094/111612.html ; https://www.iimedia.cn/c1094/112164.html
+- Verified 1: 2026-10-15 (tag c1); "以61.49%的占比高居榜首", "以24.91%位列最末", "以49.10%的占比高居榜首", "以32.85%位列最末" confirmed
+- Verified 2: 2026-10-15, re-fetched (tags c2, c2b), unchanged
+- Used in: kol-campaign-no-roi
+- Notes: Multi-select; no sample size on the pages. The 49.10% measures reasons for getting seeded, not for buying.
+
+### Product fit: NielsenIQ 2026 outlook, Douyin small creators' share of sales, cosmetics domestic share, "wrong battlefield"
+- Value: only about 20% of consumers buy because of low-price promotions; most match price to core value (NielsenIQ via China Daily, 2025-12-02); creators under 1 million followers made over 85% of creator-driven sales on Douyin in 2025 (The Beijing News, 2026-01-15); domestic brands 57.37% of China's cosmetics market in 2025 (Xinhua from China Consumer News, 2026-02-03); Xiaohongshu WILL 2026: a cream sold as a face cream in a crowded category found its market as a primer, "原来不是产品不好而是战场选错" (Beijing Business Today, 2025-12-23)
+- As of: as stated per item
+- Source: NielsenIQ (尼尔森IQ) via China Daily (中国日报网); The Beijing News (新京报); Xinhua (新华网); Beijing Business Today (北京商报)
+- URL: https://cn.chinadaily.com.cn/a/202512/02/WS692eb055a310942cc4994948.html ; https://m.bjnews.com.cn/detail/1768473381129936.html ; https://www.news.cn/fashion/20260203/fb1fcc73fb41483ebc1f41fa296a5ec9/c.html ; https://www.bbtnews.com.cn/2025/1223/579681.shtml
+- Verified 1: 2026-10-15 (tag c1); "仅有两成左右的消费者因低价促销购物", "大部分消费者更看重价格与产品核心价值和功能的匹配度", "粉丝量在100万以下的中小达人在达人带货中的成交额占比超过85%", "国货品牌以57.37%的份额站稳市场主导地位", "原来不是产品不好而是战场选错" confirmed
+- Verified 2: 2026-10-15, re-fetched (tags c2, c2b, adding "大量专业化妆师把它当作妆前乳使用"), unchanged
+- Used in: kol-campaign-no-roi
+- Notes: The 57.37% is cosmetics only. The page names the brand (Bobbi Brown); the article does not.
+
+### Other figures checked once for 08C, not cited
+- Customs: 2025 cosmetics imports 115.71 billion yuan, down 0.3%, fourth straight fall (36Kr / 聚美丽, 2026-01-15, m.36kr.com/p/3639247658929539); Ocean Engine: 25% of a brand's 60-day A3 audience buys within 15 days (GeekPark, 2023-10-30, geekpark.net/news/326681). Both passed check 1 on 2026-10-15 and were cut at iteration 4 before check 2; a later brief re-runs both checks.
+- Also passed check 1 only (lane notes in logs/scratch/08C/research-a.md, -b.md, -c.md): Xiaohongshu 1.799 million accounts in a month (Huxiu 2026-08-26), CAC June 2026 campaign on faked follower counts, police 2026 Clean Net 190+ cases (21jingji 2026-09-17), People's Daily 500-yuan views offer (2025-06-03), Xingtu task-video fraud ban (2024-12-01), Douyin Q1 2025 2.6 million accounts, IT Cosmetics exit (Sina 2026-09-03), China Consumers Association quality survey (The Paper 2025-03-14), JD 红京 7/15/30-day windows (NetEase 2026-01-21), 小绿星 (Ebrun 2025-08-08), Xiaohongshu AI fake notes (Ebrun via Sina 2026-09-29).
+
+### NOT LOGGED, searched and rejected 2026-10-15 (08C, kol-campaign-no-roi)
+- A 2025 or 2026 share of fake or invalid followers: none published (Miaozhen stopped after the 2022 data); "8 stars, fake share up to 80%" in search snippets only.
+- Rancaijing's "only 10-20% of KOLs do not buy traffic" (2019): only on Rancaijing's Sohu account, seven years old, one anonymous blogger, and misquoted on the site as "an MCN insider ... completely organic reach". Removed from kol-vs-koc-china-influencer-guide in all locales.
+- "CCTV News investigated this supply chain in 2019" and "under 1,000 yuan for 100,000+ views": CCTV's 2019 reports covered Weibo celebrity data; CCTV's 2018 figure was 2,000 yuan for 100,000 WeChat reads. Replaced with the dated 2025 CCTV.cn price list in both older articles, all locales.
+- A Douyin A3 audience lifespan; a WeChat 互选 lookback window in days; Xingtu's return-search window (stated two ways); "20% to 40% of Douyin-seeded purchases happen off Douyin" (星立方 page now empty); "63% decide 15 to 30 days after the first note"; "follower overlap 40% + engagement 5% + conversion 1.5%"; "micro KOL 4.2% vs 1.1% engagement"; platform showcase lifts (小红星 +100% to 1000%, comment widget search +530%, Xingtu 7-day ROI 2+ and 30-day ROI 5+); the 小红星 budget minimum; Weibo 微任务 report fields (undated). Not cited.
 
 ## Client figures
 

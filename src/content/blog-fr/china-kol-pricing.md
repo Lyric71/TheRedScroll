@@ -239,6 +239,8 @@ Les règles de Xingtu privent de commandes les créateurs dont le compte princip
 
 Aucun signal isolé ne prouve une fraude. Deux ou trois à la fois justifient de suspendre l’affaire.
 
+Si une campagne a déjà tourné sans rien vendre, [notre guide pour auditer une campagne KOL sans retour sur investissement](/fr/decryptages/kol-campaign-no-roi/) montre, publication par publication, où la chaîne a cédé.
+
 ## Ce que facture une agence pour piloter une campagne KOL
 
 Reste une dernière question : qui s’interpose entre vous et le créateur ? Xingtu (巨量星图) fait une place à un intermédiaire, et le désigne : la facture fait apparaître les honoraires d’un prestataire sur une ligne distincte. Dans les missions de recrutement, on l’a vu dans la partie sur les KOC, le créateur touche 80 % de l’offre du client.

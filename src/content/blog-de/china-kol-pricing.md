@@ -239,6 +239,8 @@ Nach den Xingtu-Regeln dürfen Creator, deren Hauptkonto stark aufgeblähte Foll
 
 Ein einzelnes Signal beweist keinen Betrug. Treten zwei oder drei gemeinsam auf, sollten Sie den Abschluss stoppen.
 
+Ist eine Kampagne bereits gelaufen und hat nichts verkauft, zeigt [unser Leitfaden zum Audit einer KOL-Kampagne ohne ROI](/de/analysen/kol-campaign-no-roi/) Beitrag für Beitrag, wo die Kette gerissen ist.
+
 ## Was eine Agentur für eine KOL-Kampagne verlangt
 
 Bleibt die Frage, wer zwischen Ihnen und dem Creator steht. Xingtu (巨量星图) sieht eine Zwischenebene ausdrücklich vor und benennt sie: Die Gebühr eines Dienstleisters erscheint auf der Rechnung als eigene Zeile. Bei Rekrutierungsaufträgen erhält der Creator, wie im Abschnitt zu KOCs gezeigt, 80 Prozent des Kundengebots.

@@ -304,6 +304,9 @@ KOCs need the opposite: a range. Forty notes saying the same sentence look
 bought, and readers notice. Give each creator a different angle: a use case, a
 question buyers ask, a comparison, a routine. Ask for real photos.
 
+[Our guide to a KOL campaign with views and no ROI](/insights/kol-campaign-no-roi/) shows what a
+scripted brief costs, and how to audit the result.
+
 On both, use the marketplace. Pugongying (蒲公英), Xiaohongshu's creator
 marketplace, lets the price move before you order.
 

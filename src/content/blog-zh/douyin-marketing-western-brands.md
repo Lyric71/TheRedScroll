@@ -4,7 +4,7 @@ description: "抖音不等于TikTok。企业认证、内容形态、KOL报价、
 metaTitle: "海外品牌怎么做抖音：一份落地实战手册"
 metaDescription: "海外品牌进抖音，从企业认证、跑得动的内容、KOL报价，到投流和抖音小店，这份手册把每一步、每一笔花销和该躲的坑都讲透。"
 publishDate: 2026-07-16
-updatedDate: 2026-10-11
+updatedDate: 2026-10-15
 author: "TheRedScroll"
 platforms: ["douyin"]
 category: "策略"
@@ -120,7 +120,12 @@ KOL，全称Key Opinion Leader，意见领袖，就是那些粉丝百万级、�
 
 ![一位抖音KOL在自家公寓里录产品测评](/images/blog/douyin-kol-showcase.webp)
 
-提个醒：刷量在这个市场里依旧成片。一条看着10万+播放的视频，背后不到1000元就能买来，这条产业链央视新闻早在2019年就掀开过。投放走星图，抖音的官方平台，那里能查到受众真实性数据。签约之前，先把互动质量核一遍。
+提个醒：在这个市场，刷量便宜得很。
+
+> 四川凉山警方打掉的一个“网络水军”团伙，刷10万次播放只要98元。
+> 来源：央视网，转载自成都商报，2025年2月。https://news.cctv.cn/2025/02/11/ARTItQYvuvUQRKmqz2bMjWFY250211.shtml
+
+投放走星图，抖音的官方平台，那里能查到受众真实性数据。签约之前，先把互动质量核一遍。
 
 ## 做抖音要花多少钱
 

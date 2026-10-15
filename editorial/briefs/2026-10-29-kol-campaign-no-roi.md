@@ -61,8 +61,8 @@ Every figure below needs a dated, linked source in blockquote format. Check
 still current, reuse the logged citation instead of researching again. If you
 find a new figure, append it to that ledger before you finish.
 
-- Follower fraud prevalence figures, cite a dated industry source
-- Attribution window guidance from our own campaign practice
+- Follower fraud prevalence figures, cite a dated industry source (amended 2026-10-15 by the 08C draft run: no 2025 or 2026 share of fake or invalid followers exists on an allowed, dated page; Miaozhen's 2022 figure, 53.2% invalid followers for the average KOL, published March 2023, is the latest and is cited with its date next to Xiaohongshu's September 2026 enforcement figures and the October 2026 Ji'an court case; SPEC settled fallbacks 1 and 9)
+- Attribution window guidance from the platforms' own published windows, with our reading rule stated as advice (amended 2026-10-15 by the 08C draft run: the ledger's first-party section holds no campaign attribution data, so the section rests on Xingtu's 1 to 30-day product seeding windows, Pugongying's Taobao and JD links at 15, 30 and 60 days, its audience analysis capped at 60 days, WeChat 互选 click attribution and Xiaohongshu's decision-cycle cases; SPEC settled fallback 3)
 
 **If a figure cannot be sourced, cut the claim.** Do not estimate, do not
 hedge, do not write "industry sources suggest". A missing number is better
@@ -74,7 +74,7 @@ Describe each of these in the handoff block at the end of the file. Do not
 embed images in body copy.
 
 - Post-campaign audit checklist table
-- Diagram: the four broken links between a view and a sale
+- The four broken links between a view and a sale, carried as a table (amended 2026-10-15 by the 08C draft run: the site has no chart component and body copy takes no HTML; SPEC settled fallback 7)
 - Feature image: a full auditorium seen from the stage, empty seats in the front row. China rule: set the scene in China and show Chinese social platforms on screen (WeChat, Xiaohongshu, Douyin or Weibo interface on a phone, laptop or studio monitor); set in a typical Chinese city, varied from article to article and not only Shanghai, only Chinese people in frame, candid normal-life photo in crisp sharp focus with legible screens (never blur, smudges or noise), no AI polish; this rule wins over the subject hint
 
 ## Tables required

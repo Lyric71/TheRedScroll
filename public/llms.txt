@@ -1,6 +1,6 @@
 # TheRedScroll
 
-Last updated: 2026-10-14
+Last updated: 2026-10-15
 
 > TheRedScroll is a China social media agency based in Shanghai and Hong Kong. We help Western brands grow on WeChat, Douyin, RedNote (Xiaohongshu), Weibo, and 14 other Chinese social platforms, on a fixed scope and a fixed price.
 
@@ -79,6 +79,7 @@ Founded by Cyril Drouin, former CEO of Publicis Commerce and Performance Marketi
 - [B2B and industrial marketing in China](https://www.theredscroll.com/industries/b2b-industrial/): How B2B and industrial suppliers win leads in China: request-for-quote buying, a WeChat service account run as a pipeline, WeCom for the sales handoff and contact ownership, Chinese standards and white papers as content, Zhihu and Bilibili for technical buyers, the Import Expo and Industry Fair as content shoots, and measuring a 12-month sales cycle by WeCom contacts by source (published 2026-10-12)
 - [KOL vs KOC cost in China: what you pay and what comes back](https://www.theredscroll.com/insights/kol-vs-koc-cost-roi/): KOL and KOC cost and return compared on Xiaohongshu and Douyin: planning rates per post by follower tier, why no cost per engagement by tier is published and how to compute your own, the 25 yuan Pugongying boost price as a yardstick, a 40-note KOC seeding budget and a top-tier KOL budget side by side, the launch creator mix, the established-account split, where KOLs still pay, briefing both and labeling paid notes (published 2026-10-14)
 - [Douyin advertising: formats, bidding and what actually converts](https://www.theredscroll.com/insights/douyin-advertising-formats/): How Douyin ads are sold through Ocean Engine Marketing, Qianchuan and the brand reservation book; in-feed, search, live-room, DOU+, Brand Takeover and TopView with dated costs; the three-second opening and the 2026 low-quality creative rules; oCPM bidding, strategies, the learning phase and the Qianchuan cost guarantee (two edits a day, to midnight on day three); Advertising Law and labeling rules; benchmarks and three budget mistakes (published 2026-10-14)
+- [Your KOL campaign got views and no ROI. Here is the fix.](https://www.theredscroll.com/insights/kol-campaign-no-roi/): Why China KOL campaigns on Xiaohongshu and Douyin deliver views without sales: the four links from view to order, wrong audience and the Hunan follower-count ruling, missing purchase paths under the 2026 trade-diversion rules and Xingtu pre-review, ad-like briefs and the 2025 creative crackdowns, inflated numbers and natural-traffic checks, attribution windows by platform tool, product fit, an eight-step afternoon audit and how to set up the next campaign (published 2026-10-15)
 
 ## Localized versions
 

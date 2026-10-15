@@ -217,6 +217,8 @@ Einem KOL gibt man eine einzige Idee mit: die Wahrheit über das Produkt und die
 
 KOCs brauchen das Gegenteil, nämlich Vielfalt. Vierzig Notes mit demselben Satz wirken gekauft, und die Leser bemerken es. Geben Sie jedem Creator einen eigenen Zugang vor: einen Anwendungsfall, eine typische Käuferfrage, einen Vergleich, eine Routine. Bestehen Sie auf echten Fotos.
 
+Was ein zu eng geschriebenes Briefing kostet und wie man das Ergebnis prüft, zeigt [unser Leitfaden zu KOL-Kampagnen mit Reichweite, aber ohne Umsatz](/de/analysen/kol-campaign-no-roi/).
+
 In beiden Fällen führt der Weg über den Marktplatz. Pugongying (蒲公英), der Creator-Marktplatz von Xiaohongshu, lässt den Preis vor der Bestellung noch beweglich.
 
 > Ein Pugongying-Creator kann den Preis eines Auftrags auf 80 bis 150 Prozent des Listenpreises anpassen. Die Gebühr von 10 Prozent fällt auf den vereinbarten Preis an.

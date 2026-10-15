@@ -4,7 +4,7 @@ description: "Douyin is not TikTok. Account setup, content formats, KOL costs, p
 metaTitle: "Douyin marketing for Western brands: guide"
 metaDescription: "How Western brands market on Douyin. Account setup, content that works, KOL costs, ads, and Douyin Shop. A practical guide from the ground."
 publishDate: 2026-07-16
-updatedDate: 2026-10-11
+updatedDate: 2026-10-15
 author: "TheRedScroll"
 platforms: ["douyin"]
 category: "Strategy"
@@ -120,7 +120,12 @@ Right now, the middle of the pyramid is where the best return sits. During Doubl
 
 ![A Douyin KOL filming a product review in her apartment](/images/blog/douyin-kol-showcase.webp)
 
-One warning: fake followers are still common in this market. Creating a fake 100,000+ view count on a post can cost under 1,000 yuan, a supply chain CCTV News documented back in 2019. Book influencers through Xingtu, Douyin's official platform, which provides audience authenticity data. Verify engagement quality before you sign anything.
+One warning: fake engagement is cheap in this market.
+
+> A paid-posting ring broken up by police in Liangshan, Sichuan, advertised 100,000 video plays for 98 yuan.
+> Source: CCTV.cn (央视网), carrying Chengdu Economic Daily (成都商报), February 2025. https://news.cctv.cn/2025/02/11/ARTItQYvuvUQRKmqz2bMjWFY250211.shtml
+
+Book influencers through Xingtu, Douyin's official platform, which provides audience authenticity data. Verify engagement quality before you sign anything.
 
 ## What does Douyin marketing cost?
 
