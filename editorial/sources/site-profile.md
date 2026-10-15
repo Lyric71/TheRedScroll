@@ -32,8 +32,7 @@ no markups.
 `STYLE_GUIDE.md` 6.4 forbids prices and tier names in public content. Articles
 refer to the pricing page by name only.
 
-No competitor in the market publishes a monthly retainer figure. This is the
-wedge.
+The approved April 2026 competitive benchmark describes that historical sample, not every agency in the market. A software subscription price is not an agency service retainer. Current comparisons state exactly which pages were checked.
 
 ## Live page inventory, English
 

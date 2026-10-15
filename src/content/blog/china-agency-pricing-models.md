@@ -4,7 +4,7 @@ description: "There are three models, and this is how agencies in China actually
 metaTitle: "How China Agencies Bill You: 3 Models"
 metaDescription: "Retainer, project fee and fixed price compared for China marketing. Where each one leaks, how ad spend markups work, and the clauses to read first."
 publishDate: 2026-09-21
-updatedDate: 2026-10-02
+updatedDate: 2026-10-16
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "Strategy"
@@ -364,9 +364,8 @@ That is unusual, and the reason is in the market data.
 > 0 out of 37 agencies analyzed offer fixed-price packages.
 > Source: TheRedScroll competitive analysis, April 2026.
 
-Not one competitor publishes a monthly retainer figure either. An industry
-where nobody prints a price is one where every price gets negotiated against
-what the buyer looks able to pay. Publishing takes that away.
+Without a published price, every quote gets negotiated against what the
+buyer looks able to pay. Publishing takes that away.
 
 The rest of the position follows from it. Fixed scope. Fixed price. Six-month
 minimum contract, because three months of China social data tells you nothing.
@@ -393,9 +392,9 @@ media be invoiced at cost.
 
 ### What is a typical retainer for a China social media agency?
 
-There is no published answer, because almost nobody publishes. A TheRedScroll
+No dated source publishes a market-wide answer. A TheRedScroll
 competitive analysis in April 2026 found 0 out of 37 agencies analyzed
-offering fixed-price packages, and none printing a monthly retainer figure.
+offering fixed-price packages.
 Our own rate card is on the [pricing page](/pricing/). Treat any range you are quoted
 elsewhere as an opening position rather than a market rate.
 

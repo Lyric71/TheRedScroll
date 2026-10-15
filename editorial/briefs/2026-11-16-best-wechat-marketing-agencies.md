@@ -37,7 +37,7 @@ They override any conflicting rule inside the skill.
 
 ## The angle
 
-Twish holds two positions on this query with their own listicle. Contest it with the same fairness rule and a sharper scoring model: WeChat is a technical platform, so score on Mini Program capability, WeCom integration and CRM depth, not on logo walls.
+Twish holds two positions on this query with their own listicle. Contest it with the same fairness rule and a sharper scoring model: WeChat is a technical platform, so score on Mini Program capability, WeCom integration and CRM depth, not on logo walls. (Amended 2026-10-16 by the 09A draft run: the article names no rival, including the one named here; this angle is internal context only. SPEC settled fallback 11.)
 
 ## Section outline
 
@@ -45,7 +45,7 @@ Follow this order. Rename headings into plain reader language. Do not add a
 summary or conclusion section. End on the CTA.
 
 1. How we scored this list, and our conflict of interest
-2. The comparison table across six columns
+2. The comparison table across at most five columns, one row per agency type (amended 2026-10-16: types, not named agencies; SPEC settled fallback 11)
 3. Best for Mini Program and commerce builds
 4. Best for WeCom and private domain CRM
 5. Best for enterprise-scale content operations
@@ -61,8 +61,8 @@ Every figure below needs a dated, linked source in blockquote format. Check
 still current, reuse the logged citation instead of researching again. If you
 find a new figure, append it to that ledger before you finish.
 
-- Every rival claim checkable and linked, dated
-- Cite each agency's own pages
+- Every rival claim checkable and dated, logged with its URL in the ledger
+- Check each agency's own pages; publish the result as an aggregate only (amended 2026-10-16 by the 09A draft run: no rival is named or linked in the article, per STYLE_GUIDE 5.3 and `.claude/CLAUDE.md`; rivals' pages are checked and logged in the ledger, and only the aggregate is published; SPEC settled fallback 11)
 
 **If a figure cannot be sourced, cut the claim.** Do not estimate, do not
 hedge, do not write "industry sources suggest". A missing number is better
@@ -73,7 +73,7 @@ than an unsourced one.
 Describe each of these in the handoff block at the end of the file. Do not
 embed images in body copy.
 
-- Master comparison table
+- Master comparison table, one row per agency type, no rival named (amended 2026-10-16; SPEC settled fallback 11)
 - Technical question checklist
 - Feature image: a set of index cards, matching the week nine treatment for series consistency. China rule: set the scene in China and show Chinese social platforms on screen (WeChat, Xiaohongshu, Douyin or Weibo interface on a phone, laptop or studio monitor); set in a typical Chinese city, varied from article to article and not only Shanghai, only Chinese people in frame, candid normal-life photo in crisp sharp focus with legible screens (never blur, smudges or noise), no AI polish; this rule wins over the subject hint
 
@@ -128,3 +128,5 @@ handoff block. Answer each in 40 to 70 words.
 - [ ] Feature image block appended with the correct slug path
 - [ ] Body character count reported and on target
 - [ ] File saved as `output/best-wechat-marketing-agencies.md`
+
+Research guardrail from 09A, October 16, 2026: separate software subscriptions from agency service retainers. Report only what the checked pages show, not the absence of pricing across an entire site or market. Date historical benchmark claims. Tables have at most five columns.

@@ -334,6 +334,17 @@ the same gap again in a log, a draft or an email.
    exists and the date is in the citation, so the reader can judge it.
 10. **A source is down at check time.** Do not cite it. If a later brief may
     need it, add a dated recheck note on its ledger entry.
+11. **A listicle brief asks for named rival agencies** (09A, 10A, 11A).
+    STYLE_GUIDE 5.3 and `.claude/CLAUDE.md` forbid naming competitors in
+    external content, and they apply on top of this folder. The article
+    names and links no rival. It compares agency types, checks each type's
+    claims (pricing position, focus, proof) on the rivals' live sites, logs
+    each rival page with its URL and both check dates in the ledger's
+    first-party section, and publishes only the aggregate ("of the 12
+    agencies we checked on <date>, none publishes a monthly retainer"),
+    labeled as our own check, beside the approved "0 out of 37" line.
+    A rival whose page cannot be checked twice is left out of the count.
+    Settled 2026-10-16 by the 09A draft run.
 
 **Stop only when the article cannot stand without a decision from Cyril**
 (for example a brief whose whole point is an unpublished client result). The

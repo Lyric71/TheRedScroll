@@ -4,7 +4,7 @@ description: "Trois modèles, et voilà comment les agences facturent réellemen
 metaTitle: "Comment les agences en Chine vous facturent"
 metaDescription: "Honoraires mensuels, forfait projet ou prix fixe : où chacun dérape, ce que publient les plateformes sur le média, les clauses à lire avant de signer."
 publishDate: 2026-09-21
-updatedDate: 2026-10-02
+updatedDate: 2026-10-16
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "Stratégie"
@@ -236,7 +236,7 @@ C’est inhabituel, et la raison tient dans les chiffres du marché.
 > 0 agence sur 37 analysées propose des offres à prix fixe.
 > Source : analyse concurrentielle TheRedScroll, avril 2026.
 
-Aucun concurrent ne publie non plus de montant d’honoraires mensuels. Un secteur où personne n’imprime de prix est un secteur où chaque prix se négocie en fonction de ce que l’acheteur semble pouvoir payer. Publier retire cette carte du jeu.
+Sans prix publié, chaque devis se négocie en fonction de ce que l’acheteur semble pouvoir payer. Publier retire cette carte du jeu.
 
 Le reste de la position en découle. Périmètre fixe. Prix fixe. Contrat de six mois minimum, parce que trois mois de données sociales chinoises ne vous apprennent rien. Média facturé à part, au coût réel, sans marge, ce qui n’a de sens que parce que les justificatifs des plateformes cités plus haut montrent ce qu’est réellement ce coût.
 
@@ -252,7 +252,7 @@ Certaines, oui, et aucune source datée ne publie de taux type : traitez donc to
 
 ### Quel est le montant type d’honoraires mensuels pour une agence social media en Chine ?
 
-Il n’existe pas de réponse publiée, parce que presque personne ne publie. Une analyse concurrentielle TheRedScroll d’avril 2026 relevait 0 agence sur 37 analysées proposant des offres à prix fixe, et aucune imprimant un montant d’honoraires mensuels. Notre propre grille est sur la [page tarifs](/fr/tarifs/). Toute fourchette qu’on vous annonce ailleurs est une position de départ, pas un tarif de marché.
+Aucune source datée ne donne de réponse valable pour l’ensemble du marché. Une analyse concurrentielle TheRedScroll d’avril 2026 relevait 0 agence sur 37 analysées proposant des offres à prix fixe. Notre propre grille est sur la [page tarifs](/fr/tarifs/). Toute fourchette qu’on vous annonce ailleurs est une position de départ, pas un tarif de marché.
 
 ### Le prix fixe vaut-il mieux que des honoraires mensuels ?
 

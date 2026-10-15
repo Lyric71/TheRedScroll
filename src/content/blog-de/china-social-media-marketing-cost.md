@@ -4,7 +4,7 @@ description: "Fünf Kostenposten, vier davon öffentlich. Die Verifizierung ist 
 metaTitle: "Social-Media-Marketing in China: Kosten 2026"
 metaDescription: "Verifizierung, Werbung, Influencer, Agentur: die Kosten für Social-Media-Marketing in China 2026, Posten für Posten, mit belegten Zahlen und Quellen."
 publishDate: 2026-09-04
-updatedDate: 2026-10-02
+updatedDate: 2026-10-16
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "Strategie"
@@ -378,9 +378,14 @@ Posten](/de/analysen/china-social-media-package-includes/).
 
 Den Preis zu veröffentlichen erfüllt denselben Zweck wie das Zitieren der
 Quellen. Ein Käufer, der die Zahl vor dem Gespräch kennt, stellt im Gespräch
-bessere Fragen. Keine der 37 analysierten Agenturen veröffentlicht einen
-Monatsbetrag. Die Preisliste ist der kürzeste Weg von „Was kostet das?“ zu
+bessere Fragen. Im April 2026 bot keine der 37 analysierten Agenturen
+Festpreispakete an. Die Preisliste ist der kürzeste Weg von „Was kostet das?“ zu
 einer Antwort.
+
+Sie vergleichen Agenturen nicht nur über den Preis? Unser [Leitfaden zum
+Vergleich von Social-Media-Agenturen für China](/de/analysen/china-social-media-agencies-compared/)
+zeigt, wofür sich welcher Agenturtyp eignet und welche Nachweise Sie vor der
+Unterschrift verlangen sollten.
 
 Noch nicht in China? Lesen Sie die Preisseite, dann die
 [Leistungsseite](/de/leistungen/), um zu sehen, was jede Arbeitslinie umfasst.
@@ -430,8 +435,8 @@ Tage laufen.
 Weil Retainer dehnbar sind und der Umfang erst nach dem ersten Gespräch
 festgelegt wird. Eine veröffentlichte Zahl würde die Agentur binden, bevor
 sie die Arbeit kennt. Das ist ein Grund, keine Entschuldigung. In der
-Analyse von TheRedScroll vom April 2026 veröffentlichten 0 von 37 Agenturen
-Festpreispakete. Ein veröffentlichter Preis verlegt die Festlegung des
+Analyse von TheRedScroll vom April 2026 boten 0 von 37 Agenturen
+Festpreispakete an. Ein veröffentlichter Preis verlegt die Festlegung des
 Umfangs vor das Gespräch, dorthin, wo der Käufer vergleichen kann.
 
 ## Sehen Sie sich die vollständige Preisliste an, dann vereinbaren Sie ein Gespräch

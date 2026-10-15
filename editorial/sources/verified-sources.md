@@ -383,6 +383,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: xiaohongshu-account-not-growing
 - Notes: Older than 12 months; date it inside the sentence. Corroborated by Jiemian (界面新闻), 2022-05-07, https://www.jiemian.com/article/7433708.html, which adds that Pugongying takes 10% of the deal. The convention is the origin of the graded enforcement described in the entry below.
 
+- Re-verified 2026-10-16 for 09A: web fetch at research check 1 and separate refetch at createarticle iteration 8 both confirmed May 6, 2022 date and creator cooperation / fake-seeding wording. Cite historical guidance only, not a 2026 rule. Source contains direct interview with platform representative. The current 2026 Pugongying guide was inaccessible on refetch and excluded; dated watch note: recheck its official help page before future use.
+
 ### Xiaohongshu enforcement is graded, with an advance reminder and an appeal step; 2021 to 2022 campaign figures
 - Value: qualitative plus three figures. The head of Xiaohongshu's community team (社区生态负责人 银时) said penalties do not jump straight to severe measures: "会有前置的提醒，也有申诉环节". Since December 2021 the platform had banned 81 brands and handled 172,600 notes and 53,600 accounts for violating marketing
 - As of: May 2022 (article dated 2022-05-06)
@@ -3722,6 +3724,44 @@ set to blocked by its draft run.
 - Rancaijing's "only 10-20% of KOLs do not buy traffic" (2019): only on Rancaijing's Sohu account, seven years old, one anonymous blogger, and misquoted on the site as "an MCN insider ... completely organic reach". Removed from kol-vs-koc-china-influencer-guide in all locales.
 - "CCTV News investigated this supply chain in 2019" and "under 1,000 yuan for 100,000+ views": CCTV's 2019 reports covered Weibo celebrity data; CCTV's 2018 figure was 2,000 yuan for 100,000 WeChat reads. Replaced with the dated 2025 CCTV.cn price list in both older articles, all locales.
 - A Douyin A3 audience lifespan; a WeChat 互选 lookback window in days; Xingtu's return-search window (stated two ways); "20% to 40% of Douyin-seeded purchases happen off Douyin" (星立方 page now empty); "63% decide 15 to 30 days after the first note"; "follower overlap 40% + engagement 5% + conversion 1.5%"; "micro KOL 4.2% vs 1.1% engagement"; platform showcase lifts (小红星 +100% to 1000%, comment widget search +530%, Xingtu 7-day ROI 2+ and 30-day ROI 5+); the 小红星 budget minimum; Weibo 微任务 report fields (undated). Not cited.
+
+
+### 09A selected-page agency audit, October 16, 2026
+- Value: none of four selected agency pages displayed a monthly social media service retainer. This is a page-level observation, not site-wide absence, a performance ranking, or a claim about all agencies.
+- Sample: four purposefully selected agency home/China pages covering network, search, creator campaigns, and commerce. Excludes TheRedScroll, software subscriptions, blogs, directory rankings, private quotes, and inaccessible pages.
+- Period: October 16, 2026. Undated commercial pages observed on this date; no publication date invented.
+- Cleared for publication: aggregate only under SPEC fallback 11. Rival names and URLs stay in this internal ledger. The public citation identifies TheRedScroll and the audit date; the no-rival-link rule overrides public rival URL citation.
+- Evidence: Dentsu China https://www.dentsu.com/cn/zh (network and integrated-service positioning); Nanjing Marketing Group https://nanjingmarketinggroup.com/cn (Baidu advertising, localization, China lead generation); Alarice https://alarice.com.hk/ (creator campaigns and creator assessment); AgencyChina https://agencychina.com/ (store operations, social, research, distribution introductions).
+- Verified 1: 2026-10-16, each fetched HTTP 200; service text and lack of a monthly service-retainer figure on the selected page inspected. Captures: logs/scratch/09A/{dentsu,nmg,alarice,agencychina}-c1.txt with response metadata.
+- Verified 2: 2026-10-16, each independently fetched HTTP 200 at createarticle iteration 8. Captured text unchanged, category and pricing observations confirmed. Matching -c2 files retained.
+- Used in: china-social-media-agencies-compared.
+- Limits: public descriptions establish what is offered, not delivery quality or assigned staffing. No inferred team sizes, price rankings, certification, client results, or undisclosed fees used. Agency types overlap. Smaller first commitments are buying advice, not a sampled market-price claim.
+
+### 09A software price scope counterexample
+- URL: https://walkthechat.com/pricing/
+- Value: the fetched pricing page describes a monthly WeChat shop software subscription including payment, products, coupons, and flash sales. It does not establish a comparable monthly social media service retainer.
+- Verified 1: 2026-10-16, web fetch returned the pricing page and included scope.
+- Verified 2: 2026-10-16, web refetch at iteration 8 returned the same scope. Direct requests returned 403; web extraction succeeded twice. Excluded from the four-page count.
+- Used in: internal evidence for the software-versus-agency-service distinction only. Rival name, URL, amount, and tier name excluded from public copy.
+
+### 09A historical competitive benchmark, as published
+- Value: approved wording: 0 out of 37 agencies analyzed offer fixed-price packages (TheRedScroll competitive analysis, April 2026).
+- Sample: 37 agencies in TheRedScroll's April 2026 analysis. Original underlying audit was not independently rerun in 09A.
+- Period: April 2026, not October 2026.
+- URL: https://www.theredscroll.com/
+- Cleared for publication: yes, live homepage and STYLE_GUIDE 6.3. Used as a first-party published historical statement, not an independent census.
+- Verified 1: 2026-10-16, HTTP 200, April 2026, 37 agencies, and fixed scope/fixed price wording confirmed.
+- Verified 2: 2026-10-16, HTTP 200 refetch at iteration 8, unchanged.
+- Used in: china-social-media-agencies-compared.
+
+### 09A published scope and contract terms
+- URL: https://www.theredscroll.com/pricing/
+- Value: public rate card with deliverables, six-month minimum contract, media billed separately with no markup, and custom scope available. Prices and package names not used.
+- Verified 1: 2026-10-16, HTTP 200, confirmed against live page and repository pricing source.
+- Verified 2: 2026-10-16, HTTP 200 refetch at iteration 8, unchanged.
+- Cleared for publication: yes, published terms, not measured outcomes.
+- Additional URL: https://www.theredscroll.com/services/market-entry/; fetched twice on 2026-10-16, HTTP 200 both times. Confirmed social-launch scope excludes distributor selection, flagship store opening, and website construction.
+- Used in: china-social-media-agencies-compared.
 
 ## Client figures
 

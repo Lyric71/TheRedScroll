@@ -4,7 +4,7 @@ description: "Tres modelos, y así es como facturan de verdad las agencias en Ch
 metaTitle: "Cómo le facturan las agencias en China"
 metaDescription: "Iguala, tarifa por proyecto o precio cerrado: dónde falla cada modelo, qué publican las plataformas sobre medios y qué cláusulas leer antes de firmar."
 publishDate: 2026-09-21
-updatedDate: 2026-10-02
+updatedDate: 2026-10-16
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "Estrategia"
@@ -236,7 +236,7 @@ Es poco habitual, y el motivo está en los datos del mercado.
 > 0 de las 37 agencias analizadas ofrecen paquetes a precio cerrado.
 > Fuente: análisis competitivo de TheRedScroll, abril de 2026.
 
-Ningún competidor publica tampoco una cifra de iguala mensual. Un sector donde nadie imprime precios es un sector donde cada precio se negocia según lo que el comprador aparente poder pagar. Publicar retira esa carta de la mesa.
+Sin un precio publicado, cada presupuesto se negocia según lo que el comprador aparente poder pagar. Publicar retira esa carta de la mesa.
 
 El resto de la postura se sigue de ahí. Alcance cerrado. Precio cerrado. Contrato de seis meses como mínimo, porque tres meses de datos sociales chinos no le dicen nada. Medios facturados aparte, a coste, sin margen, lo que solo significa algo porque los justificantes de plataforma de más arriba muestran cuál es ese coste.
 
@@ -252,7 +252,7 @@ Algunas sí, y ninguna fuente fechada publica una tarifa habitual, así que trat
 
 ### ¿Cuál es la iguala habitual de una agencia de redes sociales en China?
 
-No hay respuesta publicada, porque casi nadie publica. Un análisis competitivo de TheRedScroll de abril de 2026 encontró 0 de 37 agencias analizadas que ofrecieran paquetes a precio cerrado, y ninguna que imprimiera una cifra de iguala mensual. Nuestra propia tarifa está en la [página de precios](/es/precios/). Cualquier horquilla que le den en otro sitio es una posición de partida, no un precio de mercado.
+Ninguna fuente fechada ofrece una respuesta válida para todo el mercado. Un análisis competitivo de TheRedScroll de abril de 2026 encontró 0 de 37 agencias analizadas que ofrecieran paquetes a precio cerrado. Nuestra propia tarifa está en la [página de precios](/es/precios/). Cualquier horquilla que le den en otro sitio es una posición de partida, no un precio de mercado.
 
 ### ¿Es mejor el precio cerrado que una iguala?
 

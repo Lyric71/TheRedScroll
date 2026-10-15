@@ -203,7 +203,9 @@ Write for humans first. Always.
 - **No "why work with us" paragraph.** No agency self-promotion framing.
 - **No fabricated figures.** If it cannot be sourced, cut the claim.
 - **No competitor names.** Listicles verify claims on the competitor's live
-  site or drop the competitor. Aggregate data ("0 out of 37") is fine.
+  site or drop the competitor. Aggregate data ("0 out of 37") is fine. A
+  listicle names no rival either: it compares agency types and publishes
+  the checked result as an aggregate (`SPEC.md`, settled fallback 11).
 - **No markdown links in body copy.** Internal references are plain-text names.
   The publish step converts them to links.
 - **No HTML in body copy.** HTML comments for section labels are the exception.
@@ -242,8 +244,7 @@ Eighteen platforms are covered in total.
 Fixed scope. Fixed price. No surprises. Ad spend billed separately with no
 markups. Six-month minimum contract.
 
-TheRedScroll publishes a full rate card on its pricing page. **No competitor
-in the market publishes a monthly retainer figure.** That is the wedge behind
+TheRedScroll publishes a full rate card on its pricing page. **Use the dated April 2026 benchmark below, not a claim about every agency in the market.** That is the wedge behind
 this whole editorial plan: we are the ones who publish, so every cost article
 sends the reader to the pricing page by name. The figures themselves never
 appear in an article (see conflict 3 above). When citing the competitive

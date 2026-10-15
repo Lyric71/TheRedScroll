@@ -4,7 +4,7 @@ description: "Five cost lines, four of them public. Verification is cheap, media
 metaTitle: "China Social Media Marketing Cost 2026"
 metaDescription: "What China social media marketing costs in 2026, line by line: sourced figures for setup, media, and influencers, plus how agency fees are billed."
 publishDate: 2026-09-04
-updatedDate: 2026-10-02
+updatedDate: 2026-10-16
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "Strategy"
@@ -343,9 +343,13 @@ package](/insights/china-social-media-package-includes/) shows what the smallest
 one delivers each week.
 
 Publishing the price does the same job as citing the sources. A buyer who has
-seen the number before the call asks better questions on the call. None of
-the 37 agencies we analyzed publish a monthly figure. The rate card is the
+seen the number before the call asks better questions on the call. In April 2026, 0 out of
+37 agencies we analyzed offered fixed-price packages. The rate card is the
 direct route from "how much does this cost" to an answer.
+
+Comparing agencies on more than price? Our guide to [comparing China social
+media agencies](/insights/china-social-media-agencies-compared/) sets out what each agency
+type fits and the proof to request before you sign.
 
 Pre-entry? Read the pricing page, then the [services page](/services/) for what each line
 of work involves. Already in market? If the proposal you're paying against
@@ -391,7 +395,7 @@ days.
 Because retainers are elastic and scoping happens after the first call, so a
 published number would lock the agency in before it knows the work. That's a
 reason, not an excuse. In TheRedScroll's April 2026 analysis, 0 out of 37
-agencies published fixed-price packages. A published price moves the scoping
+agencies offered fixed-price packages. A published price moves the scoping
 before the call, where the buyer can compare.
 
 ## See the full rate card, then book a call

@@ -4,7 +4,7 @@ description: "Drei Modelle gibt es, und so rechnen Agenturen in China wirklich a
 metaTitle: "Wie Agenturen in China abrechnen"
 metaDescription: "Monatspauschale, Projekthonorar oder Festpreis: wo jedes Modell schwächelt, was die Plattformen zu Mediakosten offenlegen, welche Klauseln zählen."
 publishDate: 2026-09-21
-updatedDate: 2026-10-02
+updatedDate: 2026-10-16
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "Strategie"
@@ -236,7 +236,7 @@ Das ist unüblich, und der Grund steckt in den Marktdaten.
 > 0 von 37 analysierten Agenturen bieten Pakete zum Festpreis an.
 > Quelle: Wettbewerbsanalyse von TheRedScroll, April 2026.
 
-Eine monatliche Pauschale beziffert ebenfalls kein Wettbewerber öffentlich. Eine Branche, in der niemand Preise druckt, ist eine Branche, in der jeder Preis danach verhandelt wird, wie zahlungsfähig der Käufer wirkt. Wer veröffentlicht, nimmt dieses Spiel aus dem Raum.
+Ohne veröffentlichten Preis wird jedes Angebot danach verhandelt, wie zahlungsfähig der Käufer wirkt. Wer veröffentlicht, nimmt dieses Spiel aus dem Raum.
 
 Der Rest der Position folgt daraus. Fester Umfang. Fester Preis. Mindestens sechs Monate Vertragslaufzeit, denn drei Monate chinesischer Social-Daten sagen nichts. Media getrennt abgerechnet, zum Einkaufspreis, ohne Aufschlag, was nur deshalb etwas bedeutet, weil die Plattformbelege oben zeigen, wie hoch dieser Preis tatsächlich ist.
 
@@ -252,7 +252,7 @@ Manche tun es, und keine datierte Quelle veröffentlicht einen üblichen Satz. B
 
 ### Was ist eine übliche Monatspauschale für eine Social-Media-Agentur in China?
 
-Darauf gibt es keine veröffentlichte Antwort, weil fast niemand veröffentlicht. Eine Wettbewerbsanalyse von TheRedScroll fand im April 2026 unter 37 analysierten Agenturen 0, die Pakete zum Festpreis anbieten, und keine, die eine Monatspauschale beziffert. Unsere eigene Preisliste steht auf der [Preisseite](/de/preise/). Jede Spanne, die Ihnen anderswo genannt wird, ist eine Eröffnungsposition, kein Marktpreis.
+Eine datierte Quelle mit einer Antwort für den gesamten Markt gibt es nicht. Eine Wettbewerbsanalyse von TheRedScroll fand im April 2026 unter 37 analysierten Agenturen 0, die Pakete zum Festpreis anbieten. Unsere eigene Preisliste steht auf der [Preisseite](/de/preise/). Jede Spanne, die Ihnen anderswo genannt wird, ist eine Eröffnungsposition, kein Marktpreis.
 
 ### Ist ein Festpreis besser als eine Monatspauschale?
 

@@ -4,7 +4,7 @@ description: "Cinq postes de dépense, dont quatre sont publics. La vérificatio
 metaTitle: "Marketing sur les réseaux chinois : les coûts 2026"
 metaDescription: "Vérification, médias, influenceurs, agence : le coût du marketing sur les réseaux sociaux chinois en 2026, poste par poste, avec des chiffres sourcés."
 publishDate: 2026-09-04
-updatedDate: 2026-10-02
+updatedDate: 2026-10-16
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "Stratégie"
@@ -379,9 +379,14 @@ le plus modeste d’entre eux livre chaque semaine.
 
 Publier ses prix remplit la même fonction que citer ses sources. Un acheteur
 qui connaît le chiffre avant l’appel pose de meilleures questions pendant
-l’appel. Aucune des 37 agences analysées ne publie de montant mensuel. La
+l’appel. En avril 2026, aucune des 37 agences analysées ne proposait de forfait à prix fixe. La
 grille tarifaire est le chemin le plus court entre « combien ça coûte » et
 une réponse.
+
+Vous comparez des agences sur autre chose que le prix ? Notre [guide pour
+comparer les agences social media en Chine](/fr/decryptages/china-social-media-agencies-compared/)
+détaille à quoi sert chaque type d’agence et quelles preuves exiger avant de
+signer.
 
 Pas encore présent en Chine ? Lisez la page tarifs, puis la
 [page services](/fr/services/) pour comprendre ce que recouvre chaque ligne
@@ -429,7 +434,7 @@ petite série de KOC, puis laissez le test tourner 30 jours.
 Parce que les forfaits mensuels sont élastiques et que le cadrage intervient
 après le premier appel : un chiffre publié engagerait l’agence avant qu’elle
 ne connaisse le travail. C’est une raison, pas une excuse. Dans l’analyse
-TheRedScroll d’avril 2026, 0 agence sur 37 publiait des forfaits à prix
+TheRedScroll d’avril 2026, 0 agence sur 37 proposait des forfaits à prix
 fixe. Un prix publié avance le cadrage avant l’appel, là où l’acheteur peut
 comparer.
 

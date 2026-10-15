@@ -4,7 +4,7 @@ description: "Cinco partidas de gasto, cuatro de ellas públicas. Verificar es b
 metaTitle: "Marketing en redes chinas: lo que cuesta en 2026"
 metaDescription: "Verificación, publicidad, influencers y agencia: el coste del marketing en redes sociales chinas en 2026, partida por partida y con cifras contrastadas."
 publishDate: 2026-09-04
-updatedDate: 2026-10-02
+updatedDate: 2026-10-16
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "Estrategia"
@@ -373,9 +373,14 @@ pequeño entrega cada semana.
 
 Publicar el precio cumple la misma función que citar las fuentes. Un
 comprador que ha visto la cifra antes de la llamada hace mejores preguntas
-durante la llamada. Ninguna de las 37 agencias analizadas publica una cifra
-mensual. La lista de tarifas es el camino más corto entre «cuánto cuesta
+durante la llamada. En abril de 2026, ninguna de las 37 agencias analizadas ofrecía
+paquetes a precio fijo. La lista de tarifas es el camino más corto entre «cuánto cuesta
 esto» y una respuesta.
+
+¿Compara agencias por algo más que el precio? Nuestra [guía para comparar
+agencias de redes sociales en China](/es/analisis/china-social-media-agencies-compared/)
+explica para qué sirve cada tipo de agencia y qué pruebas pedir antes de
+firmar.
 
 ¿Todavía no ha entrado en China? Lea la página de precios y después la
 [página de servicios](/es/servicios/), que explica qué implica cada línea de
@@ -424,7 +429,7 @@ de KOC, y deje correr la prueba 30 días.
 Porque los retainers son elásticos y el alcance se define después de la
 primera llamada, así que una cifra publicada ataría a la agencia antes de
 conocer el trabajo. Es una razón, no una excusa. En el análisis de
-TheRedScroll de abril de 2026, 0 de 37 agencias publicaban paquetes a precio
+TheRedScroll de abril de 2026, 0 de 37 agencias ofrecían paquetes a precio
 fijo. Un precio publicado adelanta la definición del alcance a antes de la
 llamada, donde el comprador puede comparar.
 
