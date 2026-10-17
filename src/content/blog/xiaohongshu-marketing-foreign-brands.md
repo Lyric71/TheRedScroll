@@ -1,10 +1,10 @@
 ---
 title: "Xiaohongshu marketing for foreign brands: the complete 2026 guide"
-description: "Xiaohongshu is where Chinese shoppers check before they buy. A foreign brand can verify an account with its own overseas paperwork. Some ad categories are still closed to overseas firms."
+description: "Xiaohongshu is where Chinese shoppers check before they buy. A foreign brand in a region the platform has opened can verify an account with its own overseas paperwork. Some ad categories are still closed to overseas firms."
 metaTitle: "Xiaohongshu Marketing for Foreign Brands"
 metaDescription: "How foreign brands actually grow on Xiaohongshu in 2026. Account types, content formats, the search layer, KOC seeding and what a first 90 days costs."
 publishDate: 2026-09-08
-updatedDate: 2026-10-02
+updatedDate: 2026-10-17
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Platforms"
@@ -20,12 +20,13 @@ month looks like.*
 
 Start with the three facts that decide your plan. Xiaohongshu is a search
 engine with a feed attached. Its users skew young, female, urban, and about
-to spend money. And the account is the easy part for a foreign company. Ads
+to spend money. And for a foreign company in a region the platform has opened, the account is
+the easy part. Ads
 depend on your category, and a store has its own paperwork.
 
 | Question | Short answer | Where it's covered |
 |---|---|---|
-| Can we open an account from abroad? | Yes, an enterprise professional account with overseas documents | Account types, entity rules |
+| Can we open an account from abroad? | Yes, from a region the platform has opened, with overseas documents | Account types, entity rules |
 | Can we run ads from abroad? | No official rule requires an agent, but some categories are closed to overseas entities | Entity rules |
 | What content gets reach? | Image notes and short video built for search, not for the feed | Content that works |
 | Do we need influencers? | Small creators first, paid promotion later | KOC seeding versus paid |
@@ -33,8 +34,8 @@ depend on your category, and a store has its own paperwork.
 
 Every figure below comes from the platform's own numbers or a dated trade
 source, and the citation sits under it. Where a number doesn't exist, the
-guide says so instead of guessing. All sources were checked in September
-2026.
+guide says so instead of guessing. All sources were checked in September or
+October 2026.
 
 ## Xiaohongshu is a search engine first and a social network second
 
@@ -125,6 +126,11 @@ platform's own guide describes.
 > after 30 days.
 > Source: Xiaohongshu (小红书) enterprise account verification guide, platform document, confirmed September 2026; New Rank (新榜), October 2025. https://a.newrank.cn/trade/news/4199
 
+> Xiaohongshu's current verification rules support overseas companies by the
+> regions and industries the platform has opened. They name mainland China,
+> Hong Kong, Singapore, and Malaysia.
+> Source: Xiaohongshu Juguang help center (小红书聚光帮助中心), enterprise professional account verification rules, updated October 2026. https://ad.xiaohongshu.com/next_help/docs/195c5fe505c71b4b0335a2fe0d61d8e0
+
 The same guide has three details foreign teams miss. Overseas entities verify
 through the desktop site, not the app. Any document not in Chinese or
 English needs a translation stamped by a translation company. And the account
@@ -141,7 +147,7 @@ them for months. A note that only got feed traffic is done in three days.
 This is the section that decides budgets, so here is the plain version.
 
 **You can** open and verify an enterprise account with your home-country
-registration documents. You can post notes, reply to comments, run a
+registration documents, if your region is open. You can post notes, reply to comments, run a
 [Pugongying (蒲公英) creator campaign](/services/influencer-marketing/), and read the full dashboard.
 
 **You can** advertise, if your category is open to overseas entities. Ads
@@ -339,9 +345,10 @@ Blue V fee, the naming rules and the timeline.
 
 ### Can a foreign company open a Xiaohongshu account without a Chinese entity?
 
-Yes. The platform's enterprise account guide accepts overseas companies and
-companies from Hong Kong, Macau, and Taiwan, using their home registration
-documents. Verification runs through the desktop site, costs 600 yuan a year,
+Yes, if your company is registered in a region the platform has opened. The
+enterprise account guide accepts overseas companies and companies from Hong
+Kong, Macau, and Taiwan, using their home registration documents, and the
+current rules name Hong Kong, Singapore, and Malaysia. Verification runs through the desktop site, costs 600 yuan a year,
 and needs stamped translations for documents not in Chinese or English. Ads
 depend on whether your category is open to overseas entities, and a store
 needs extra paperwork.
@@ -356,7 +363,8 @@ to people who found the app through Western news coverage.
 
 ### How long does Blue V verification take?
 
-The platform does not publish a review time. Its guide gives each
+The platform's current rules say review generally takes three working days,
+longer for complex files, extra documents, or holidays. Its guide gives each
 verification order a 30-day window and does not refund a failed review. In
 our experience, a mainland company with clean documents is verified within
 days. An overseas company usually takes two to three weeks, because stamped

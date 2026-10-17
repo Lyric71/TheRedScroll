@@ -4,6 +4,7 @@ description: "Conviene empezar por Xiaohongshu (小红书) si el consumidor chin
 metaTitle: "WeChat o Xiaohongshu: por dónde empezar en China"
 metaDescription: "WeChat o Xiaohongshu para una marca extranjera: qué papel cumple cada una, cinco criterios para decidir, la excepción del B2B y cuánto cuestan las dos."
 publishDate: 2026-10-08
+updatedDate: 2026-10-17
 author: "TheRedScroll"
 platforms: ["wechat", "rednote"]
 category: "Plataformas"
@@ -152,6 +153,9 @@ Queda la cuestión del dinero. En pocas palabras: una segunda plataforma añade 
 
 > Las cuentas de empresa de Xiaohongshu admiten sociedades de China continental, extranjeras y de Hong Kong, Macao y Taiwán. La verificación cuesta 600 yuanes por solicitud y tiene validez de un año, sujeta a una revisión anual. Las empresas extranjeras la solicitan desde la versión de escritorio de la web.
 > Fuente: guía de verificación de cuentas de empresa de Xiaohongshu (小红书), documento de la plataforma, comprobado en octubre de 2026. https://fe-video-qc.xhscdn.com/picasso-editor/7072d509ee7370545a056b6f9030a926e8879dca.pdf
+
+> Las normas de verificación vigentes de Xiaohongshu admiten a las empresas extranjeras en función de las regiones y los sectores que la plataforma ha abierto. Citan China continental, Hong Kong, Singapur y Malasia.
+> Fuente: normas de verificación de la cuenta profesional de empresa, centro de ayuda de Juguang de Xiaohongshu (小红书聚光帮助中心), documento de la plataforma, actualizado en octubre de 2026. https://ad.xiaohongshu.com/next_help/docs/195c5fe505c71b4b0335a2fe0d61d8e0
 
 > Los anuncios de Moments comprados por puja parten de un presupuesto diario de 1.000 yuanes, pero la puja solo está disponible fuera de las ciudades principales y prioritarias de Tencent. Las compras programadas, posibles en todas las ciudades, parten de 50.000 yuanes por emplazamiento.
 > Fuente: Tencent Ads (腾讯广告), página de producto de la publicidad en WeChat, comprobado en octubre de 2026. https://e.qq.com/topic/marketing/industry/weixin/

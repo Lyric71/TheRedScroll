@@ -1,10 +1,10 @@
 ---
 title: "Xiaohongshu pour les marques étrangères : le guide complet 2026"
-description: "En Chine, on se renseigne sur Xiaohongshu avant d’acheter. Une marque étrangère peut y faire certifier son compte avec ses propres documents. Certaines catégories publicitaires restent fermées aux sociétés étrangères."
+description: "En Chine, on se renseigne sur Xiaohongshu avant d’acheter. Une marque étrangère issue d’une région ouverte par la plateforme peut y faire certifier son compte avec ses propres documents. Certaines catégories publicitaires restent fermées aux sociétés étrangères."
 metaTitle: "Xiaohongshu : le guide des marques étrangères"
 metaDescription: "Comment une marque étrangère s’installe sur Xiaohongshu en 2026 : types de comptes, formats de notes, recherche, seeding KOC et coût des 90 premiers jours."
 publishDate: 2026-09-08
-updatedDate: 2026-10-02
+updatedDate: 2026-10-17
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Plateformes"
@@ -21,12 +21,13 @@ qui se fait brider, ce à quoi ressemble vraiment le premier mois.*
 Trois constats commandent tout le reste. Xiaohongshu tient du moteur de
 recherche bien plus que du réseau social. Son public est jeune, féminin,
 citadin, et sur le point d’acheter. Le compte, lui, est la partie simple pour
-une entreprise étrangère. La publicité dépend de votre catégorie, et la
+une entreprise étrangère, du moins si elle relève d’une région que la plateforme
+a ouverte. La publicité dépend de votre catégorie, et la
 boutique a ses propres formalités.
 
 | Question | Réponse courte | Où le lire |
 |---|---|---|
-| Peut-on ouvrir un compte depuis l’étranger ? | Oui, un compte professionnel entreprise avec des documents étrangers | Types de comptes, règles d’entité |
+| Peut-on ouvrir un compte depuis l’étranger ? | Oui, depuis une région ouverte par la plateforme, avec des documents étrangers | Types de comptes, règles d’entité |
 | Peut-on acheter de la publicité depuis l’étranger ? | Aucune règle officielle n’impose d’agent, mais certaines catégories restent fermées aux entités étrangères | Règles d’entité |
 | Quel contenu obtient de la portée ? | Des notes photo et de courtes vidéos conçues pour la recherche, pas pour le fil | Le contenu qui fonctionne |
 | Faut-il des influenceurs ? | Les petits créateurs d’abord, la promotion payante ensuite | Seeding KOC ou payant |
@@ -35,7 +36,7 @@ boutique a ses propres formalités.
 Chaque chiffre cité ici provient des données de la plateforme ou d’une source
 professionnelle datée, et la référence figure juste dessous. Quand le chiffre
 n’existe pas, le guide le dit plutôt que de l’inventer. Toutes les sources ont
-été vérifiées en septembre 2026.
+été vérifiées en septembre ou en octobre 2026.
 
 ## Xiaohongshu est d’abord un moteur de recherche, ensuite un réseau social
 
@@ -132,6 +133,11 @@ de la plateforme.
 > chaque commande expire au bout de 30 jours.
 > Source : guide de certification des comptes entreprise Xiaohongshu (小红书), document de la plateforme, vérifié en septembre 2026 ; New Rank (新榜), octobre 2025. https://a.newrank.cn/trade/news/4199
 
+> Les règles de certification en vigueur admettent les sociétés étrangères
+> selon les régions et les secteurs que la plateforme a ouverts. Elles citent
+> la Chine continentale, Hong Kong, Singapour et la Malaisie.
+> Source : centre d’aide Xiaohongshu Juguang (小红书聚光帮助中心), règles de certification des comptes professionnels entreprise, mises à jour en octobre 2026. https://ad.xiaohongshu.com/next_help/docs/195c5fe505c71b4b0335a2fe0d61d8e0
+
 Le même guide glisse trois détails qui échappent régulièrement aux équipes
 étrangères. Les entités étrangères se certifient depuis le site de bureau, non
 depuis l’application. Tout document qui n’est ni en chinois ni en anglais
@@ -150,7 +156,8 @@ nourrie au seul fil est morte au bout de trois jours.
 C’est la section qui arbitre les budgets. Autant la donner sans détour.
 
 **Vous pouvez** ouvrir et faire certifier un compte entreprise avec les
-documents d’immatriculation de votre pays. Publier des notes, répondre aux
+documents d’immatriculation de votre pays, à condition que votre région soit
+ouverte. Publier des notes, répondre aux
 commentaires, monter une
 [campagne de créateurs via Pugongying (蒲公英)](/fr/services/marketing-influence/),
 consulter l’intégralité du tableau de bord : rien de tout cela ne pose
@@ -369,9 +376,11 @@ Le [guide de l’algorithme Xiaohongshu](/fr/decryptages/xiaohongshu-algorithm/)
 
 ### Une entreprise étrangère peut-elle ouvrir un compte Xiaohongshu sans entité chinoise ?
 
-Oui. Le guide des comptes entreprise accepte les sociétés étrangères ainsi que
-celles de Hong Kong, Macao et Taïwan, sur la foi de leurs documents
-d’immatriculation d’origine. La certification passe par le site de bureau,
+Oui, si votre société est immatriculée dans une région que la plateforme a
+ouverte. Le guide des comptes entreprise accepte les sociétés étrangères ainsi
+que celles de Hong Kong, Macao et Taïwan, sur la foi de leurs documents
+d’immatriculation d’origine, et les règles en vigueur citent Hong Kong,
+Singapour et la Malaisie. La certification passe par le site de bureau,
 coûte 600 yuans par an et exige des traductions tamponnées pour tout document
 qui n’est ni en chinois ni en anglais. La publicité dépend de l’ouverture de
 votre catégorie aux entités étrangères, et la boutique exige des formalités
@@ -388,7 +397,9 @@ presse occidentale.
 
 ### Combien de temps prend la certification Blue V ?
 
-La plateforme ne publie aucun délai d’examen. Son guide accorde à chaque
+Selon les règles en vigueur de la plateforme, l’examen prend en général trois
+jours ouvrés, davantage pour un dossier complexe, en cas de pièces
+complémentaires ou pendant les jours fériés. Son guide accorde à chaque
 demande une fenêtre de 30 jours et ne rembourse pas un refus. D’expérience,
 une société continentale au dossier propre obtient sa certification en
 quelques jours ; une société étrangère compte plutôt deux à trois semaines,

@@ -4,7 +4,7 @@ description: "Deux semaines suffisent pour ouvrir les comptes. Protéger le nom 
 metaTitle: "Réseaux sociaux chinois : les 90 premiers jours"
 metaDescription: "Ouverture des comptes, certification, nom chinois, premiers contenus, premiers prospects : le déroulé semaine par semaine d’un lancement en Chine."
 publishDate: 2026-09-10
-updatedDate: 2026-10-11
+updatedDate: 2026-10-17
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "Stratégie"
@@ -36,7 +36,7 @@ bord. Rien là d’anormal.
 
 Chacun des délais cités plus bas provient des pages d’aide d’une plateforme,
 de l’office chinois des marques ou de notre propre processus, et la source
-suit le chiffre. Toutes ont été vérifiées en septembre 2026.
+suit le chiffre. Toutes ont été vérifiées en septembre ou en octobre 2026.
 
 ## Avant la semaine 1 : quatre pièces à réunir
 
@@ -69,6 +69,11 @@ et y ajoute une exigence sur les traductions.
 > tampon.
 > Source : guide de certification des comptes entreprise Xiaohongshu (小红书), document de la plateforme, consulté en septembre 2026. https://fe-video-qc.xhscdn.com/picasso-editor/7072d509ee7370545a056b6f9030a926e8879dca.pdf
 
+> Les règles de certification en vigueur admettent les sociétés étrangères
+> selon les régions et les secteurs que la plateforme a ouverts. Elles citent
+> la Chine continentale, Hong Kong, Singapour et la Malaisie.
+> Source : centre d’aide Xiaohongshu Juguang (小红书聚光帮助中心), règles de certification des comptes professionnels entreprise, mises à jour en octobre 2026. https://ad.xiaohongshu.com/next_help/docs/195c5fe505c71b4b0335a2fe0d61d8e0
+
 La voie Xiaohongshu ne s’arrête pas à cette liste de pièces. Notre [guide
 d’ouverture d’un compte entreprise Xiaohongshu](/fr/decryptages/xiaohongshu-business-account-setup/)
 détaille le dépôt obligatoire sur le web pour les entités étrangères, les
@@ -92,8 +97,8 @@ ne sont consultables qu’après connexion.
 
 > Le centre d’aide du compte entreprise Douyin répertorie un guide
 > d’inscription en libre-service pour les entités de Hong Kong, Macao,
-> Taïwan et de l’étranger, mis à jour le 19 août 2026.
-> Source : centre d’aide du compte entreprise Douyin (抖音企业号帮助中心), août 2026. https://renzheng.douyin.com/support/content/227771?graphId=412&mappingType=2&spaceId=77
+> Taïwan et de l’étranger, mis à jour le 13 octobre 2026.
+> Source : centre d’aide du compte entreprise Douyin (抖音企业号帮助中心), octobre 2026. https://renzheng.douyin.com/support/content/227771?graphId=412&mappingType=2&spaceId=77
 
 Une marque qui n’est pas encore implantée a donc trois options : tester
 cette voie étrangère, ouvrir Douyin depuis une entité chinoise dont elle
@@ -102,7 +107,7 @@ règle avec l’agence avant d’annoncer une date de lancement. Jamais après.
 
 | Pièce | Compte officiel WeChat | Compte entreprise Xiaohongshu | Compte entreprise Douyin |
 |---|---|---|---|
-| Certificat d’immatriculation | Certificat étranger accepté | Certificat étranger accepté | Licence d’exploitation chinoise (voie étrangère non publique) |
+| Certificat d’immatriculation | Certificat étranger accepté | Certificat étranger accepté, régions ouvertes uniquement | Licence d’exploitation chinoise (voie étrangère non publique) |
 | Identité du contact ou de l’exploitant | Recto et verso, scan couleur | Coordonnées de l’exploitant sur le formulaire | Pièce du représentant légal pour un entrepreneur individuel |
 | Lettre de demande | Modèle en chinois ou en anglais | Modèle de la plateforme | Modèle de la plateforme |
 | Lettre d’autorisation d’exploitation | Exigée | Non mentionnée | Non mentionnée |
@@ -117,9 +122,9 @@ et ne pèse guère.
 
 ## Semaines 1 et 2 : ouvrir depuis l’étranger
 
-Première décision : quelle entité dépose le dossier. WeChat (微信) et
-Xiaohongshu (小红书) acceptent une société étrangère ; Douyin (抖音), on l’a
-vu, a été pensé pour une société chinoise, et sa voie étrangère n’est pas
+Première décision : quelle entité dépose le dossier. WeChat (微信) accepte
+une société étrangère, Xiaohongshu (小红书) aussi, pourvu qu’elle relève d’une
+région que la plateforme a ouverte ; Douyin (抖音), on l’a vu, a été pensé pour une société chinoise, et sa voie étrangère n’est pas
 documentée publiquement. Le point se tranche en semaine 1, puisqu’il
 commande la liste des comptes ouverts en semaine 2.
 [Notre analyse plateforme par plateforme sur la nécessité d’une société chinoise](/fr/decryptages/chinese-entity-social-media/)
@@ -153,8 +158,13 @@ compte par entité, et ce compte sera nécessairement un compte de service.
 > ouvert. Le compte devient exploitable une fois la certification obtenue.
 > Source : service client Tencent (腾讯客服), inscription d’un compte de service pour une entité étrangère, consulté en septembre 2026. https://kf.qq.com/faq/180312zQjeYV180312FNNbmA.html
 
-Xiaohongshu, de son côté, ne communique aucun délai. Elle publie une
-échéance, un tarif et l’endroit où déposer.
+Xiaohongshu, de son côté, publie un délai d’examen, une échéance, un tarif
+et l’endroit où déposer.
+
+> Selon les règles de certification en vigueur, l’examen prend en général
+> trois jours ouvrés, davantage pour un dossier complexe, en cas de pièces
+> complémentaires ou pendant les jours fériés.
+> Source : centre d’aide Xiaohongshu Juguang (小红书聚光帮助中心), règles de certification des comptes professionnels entreprise, mises à jour en octobre 2026. https://ad.xiaohongshu.com/next_help/docs/195c5fe505c71b4b0335a2fe0d61d8e0
 
 > La certification entreprise de Xiaohongshu coûte 600 yuans par dossier,
 > vaut un an avec un contrôle annuel, et chaque commande expire au bout de
@@ -206,7 +216,8 @@ l’enregistrement. Le nom se choisit donc en semaine 3, se dépose en semaine
 tout : les deux guides cités plus haut admettent un nom de compte aligné sur
 la raison sociale ou sur une marque déposée. Sans dépôt chinois, une marque
 ouvre donc sous sa raison sociale et porte son nom chinois dans le profil et
-dans les contenus, le temps que le dossier chemine.
+dans les contenus, le temps que le dossier chemine. [Notre calendrier d’entrée sur le marché chinois en six mois](/fr/decryptages/china-market-entry-timeline/)
+détaille, mois par mois, le volet marque à côté des comptes et des contenus.
 
 La localisation de ces deux semaines touche aussi le profil : une
 présentation qui sonne comme une marque chinoise, et non comme un slogan

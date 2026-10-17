@@ -1,10 +1,10 @@
 ---
 title: "Xiaohongshu business account setup for foreign companies, step by step"
-description: "You do not need a Chinese company to open a verified Xiaohongshu business account. You do need the right documents in the right order, and you need to start on a desktop browser rather than the app."
+description: "If your company sits in a region the platform has opened, you do not need a Chinese company to open a verified Xiaohongshu business account. You do need the right documents in the right order, and you need to start on a desktop browser rather than the app."
 metaTitle: "Xiaohongshu Business Account Setup Guide"
 metaDescription: "Step-by-step Xiaohongshu business account setup for foreign companies: documents, Blue V verification, fees, rejection reasons and timeline."
 publishDate: 2026-09-22
-updatedDate: 2026-10-02
+updatedDate: 2026-10-17
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Platforms"
@@ -14,8 +14,9 @@ featuredImage: "/images/blog/xiaohongshu-business-account-setup.webp"
 ---
 
 Xiaohongshu (小红书), also called RedNote, accepts applications from overseas
-companies directly. The platform says so in its own verification guide.
-Eligibility isn't what trips foreign brands up. The paperwork is, along with a
+companies directly, from the regions it has opened. Its current rules name
+Hong Kong, Singapore, and Malaysia. For a company in an open region,
+eligibility isn't what trips foreign brands up. The paperwork is, along with a
 set of naming rules most companies read too late, and a review that quietly
 runs three separate checks on a single application.
 
@@ -30,8 +31,8 @@ Here is what to have ready before you start.
 | Where you apply | App or desktop | Desktop only |
 | Verification fee | 600 yuan a year | 600 yuan a year |
 
-The fee is small. The review is not. Budget four to seven working days for a
-clean application and longer than that for a first attempt, because the
+The fee is small. The review is not. The platform says three working days
+for a clean application. Budget longer than that for a first attempt, because the
 platform checks your entity, your account name and your verification details
 as three separate things, and any one of them can send the file back.
 
@@ -144,6 +145,11 @@ that wastes the most time.
 > entities, annual reviews and name changes have to be done on the desktop
 > site. A single review order is valid for 30 days.
 > Source: Xiaohongshu (小红书), enterprise account verification guide, platform documentation, confirmed September 2026. https://fe-video-qc.xhscdn.com/picasso-editor/7072d509ee7370545a056b6f9030a926e8879dca.pdf
+
+> Xiaohongshu's current verification rules support overseas companies by the
+> regions and industries the platform has opened. They name mainland China,
+> Hong Kong, Singapore, and Malaysia.
+> Source: Xiaohongshu Juguang help center (小红书聚光帮助中心), enterprise professional account verification rules, updated October 2026. https://ad.xiaohongshu.com/next_help/docs/195c5fe505c71b4b0335a2fe0d61d8e0
 
 So if you are outside China, ignore the app entirely for this step. Go to the
 business platform in a desktop browser. Teams that start in the app reach the
@@ -274,8 +280,9 @@ account.
 
 Less than you would expect, and more than the platform admits in one place.
 
-You can verify. The enterprise guide names overseas and Hong Kong, Macau and
-Taiwan companies as eligible, and the ad platform's document list has a column
+You can verify, if your company sits in a region the platform has opened.
+The enterprise guide names overseas and Hong Kong, Macau and Taiwan companies
+as eligible, the current rules name Hong Kong, Singapore, and Malaysia, and the ad platform's document list has a column
 for you. What changes is the route.
 
 You apply on the desktop site, never the app. You file a Business Registration
@@ -302,11 +309,11 @@ One reason to put up with all of it.
 
 The platform publishes its own review times, which is rarer than it should be.
 
-> After an enterprise professional account application is submitted, a review
-> specialist makes contact within one working day, and review is completed in
-> four to seven working days on average. A single review order is valid for
-> 30 days.
-> Source: Xiaohongshu (小红书), professional account product guide, platform documentation, confirmed September 2026. https://fe-video-qc.xhscdn.com/fe-platform/68e374e4257bd30bc07eed15c06cb8b9a51f971b.pdf
+> Xiaohongshu's current verification rules say review generally takes three
+> working days, longer for complex files, extra documents, or holidays.
+> Source: Xiaohongshu Juguang help center (小红书聚光帮助中心), enterprise professional account verification rules, updated October 2026. https://ad.xiaohongshu.com/next_help/docs/195c5fe505c71b4b0335a2fe0d61d8e0
+
+A single review order stays valid for 30 days.
 
 Add your own preparation time in front of that. Getting certified translations
 made, chasing an authorization letter through a head office and confirming
@@ -331,8 +338,10 @@ full rate card on [our pricing page](/pricing/), which is unusual in this market
 
 ### Can I open a Xiaohongshu business account without a Chinese company?
 
-Yes. Xiaohongshu (小红书) names overseas companies and Hong Kong, Macau and
-Taiwan companies as eligible in its enterprise verification guide. You apply on
+Yes, if your company is registered in a region the platform has opened.
+Xiaohongshu (小红书) names overseas companies and Hong Kong, Macau and Taiwan
+companies as eligible in its enterprise verification guide, and its current
+rules name Hong Kong, Singapore, and Malaysia. You apply on
 the desktop business site rather than the app, and you file a Business
 Registration or Certificate of Incorporation instead of a mainland business
 license. Hong Kong companies file both. Any document not in Chinese needs a
@@ -342,8 +351,8 @@ stamped translation.
 
 Verification costs 600 yuan per application. It is valid for one year from
 approval, and an annual review keeps it live. The fee is not refunded if the
-application fails. The platform says a reviewer makes contact within one
-working day and that review takes four to seven working days on average. Your
+application fails. The platform says review generally takes three working
+days, longer for complex files, extra documents, or holidays. Your
 review order expires after 30 days.
 
 ### Why was my Xiaohongshu application rejected?

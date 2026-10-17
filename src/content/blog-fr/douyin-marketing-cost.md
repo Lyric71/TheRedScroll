@@ -4,6 +4,7 @@ description: "Animer Douyin coûte en général plus cher que Xiaohongshu ou WeC
 metaTitle: "Coût du marketing Douyin : le budget à prévoir"
 metaDescription: "Ce que coûte le marketing sur Douyin en 2026 : production vidéo, minimums publicitaires, live commerce, cachets des KOL et trois niveaux de budget réalistes."
 publishDate: 2026-10-11
+updatedDate: 2026-10-17
 author: "TheRedScroll"
 platforms: ["douyin"]
 category: "Stratégie"
@@ -62,8 +63,8 @@ Attention à deux pièges. Les frais restent dus si la certification échoue. Et
 
 Pour une marque étrangère, tout se joue sur l’entité. Les FAQ de Douyin de 2022 réservaient le compte d’entreprise aux sociétés établies en Chine. En 2026, le centre d’aide a ouvert une voie distincte.
 
-> Le centre d’aide des comptes d’entreprise Douyin propose un guide d’ouverture en libre-service pour les entités étrangères, hongkongaises, macanaises et taïwanaises, mis à jour le 19 août 2026. Il recense aussi un règlement d’examen pour les entités étrangères et transfrontalières.
-> Source : centre d’aide des comptes d’entreprise Douyin (抖音企业号帮助中心), août 2026. https://renzheng.douyin.com/support/content/227771?graphId=412&mappingType=2&spaceId=77
+> Le centre d’aide des comptes d’entreprise Douyin propose un guide d’ouverture en libre-service pour les entités étrangères, hongkongaises, macanaises et taïwanaises, mis à jour le 13 octobre 2026. Il recense aussi un règlement d’examen pour les entités étrangères et transfrontalières.
+> Source : centre d’aide des comptes d’entreprise Douyin (抖音企业号帮助中心), octobre 2026. https://renzheng.douyin.com/support/content/227771?graphId=412&mappingType=2&spaceId=77
 
 Ces deux documents exigent une connexion. Les pièces à fournir, les frais et le délai d’examen de cette voie ne sont donc pas publics.
 

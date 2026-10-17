@@ -1,10 +1,10 @@
 ---
 title: "Xiaohongshu-Unternehmenskonto: der Weg für ausländische Firmen"
-description: "Für ein verifiziertes Xiaohongshu-Unternehmenskonto brauchen Sie keine chinesische Gesellschaft. Sie brauchen die richtigen Unterlagen in der richtigen Reihenfolge, und Sie fangen im Browser an, nicht in der App."
+description: "Sitzt Ihr Unternehmen in einer Region, die die Plattform freigegeben hat, brauchen Sie für ein verifiziertes Xiaohongshu-Unternehmenskonto keine chinesische Gesellschaft. Sie brauchen die richtigen Unterlagen in der richtigen Reihenfolge, und Sie fangen im Browser an, nicht in der App."
 metaTitle: "Xiaohongshu-Unternehmenskonto einrichten"
 metaDescription: "Xiaohongshu-Unternehmenskonto für ausländische Firmen: Unterlagen, Blue-V-Verifizierung, Gebühren, Ablehnungsgründe und Prüfdauer."
 publishDate: 2026-09-22
-updatedDate: 2026-10-02
+updatedDate: 2026-10-17
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Plattformen"
@@ -13,7 +13,7 @@ featured: false
 featuredImage: "/images/blog/xiaohongshu-business-account-setup.webp"
 ---
 
-Xiaohongshu (小红书), auch RedNote genannt, nimmt Anträge ausländischer Unternehmen unmittelbar an. Der eigene Verifizierungsleitfaden der Plattform sagt das ausdrücklich. Wer ein Xiaohongshu-Unternehmenskonto einrichten will, scheitert deshalb selten an der Zulassung. Es sind die Unterlagen, dazu ein Regelwerk für den Kontonamen, das die meisten Marken zu spät lesen, und eine Prüfung, die im Hintergrund drei getrennte Kontrollen auf einen einzigen Antrag ansetzt.
+Xiaohongshu (小红书), auch RedNote genannt, nimmt Anträge ausländischer Unternehmen unmittelbar an, sofern sie aus einer Region kommen, die die Plattform freigegeben hat. Die aktuellen Regeln nennen Hongkong, Singapur und Malaysia. Wer dort sitzt und ein Xiaohongshu-Unternehmenskonto einrichten will, scheitert selten an der Zulassung. Es sind die Unterlagen, dazu ein Regelwerk für den Kontonamen, das die meisten Marken zu spät lesen, und eine Prüfung, die im Hintergrund drei getrennte Kontrollen auf einen einzigen Antrag ansetzt.
 
 Das sollte bereitliegen, bevor Sie anfangen.
 
@@ -26,7 +26,7 @@ Das sollte bereitliegen, bevor Sie anfangen.
 | Wo Sie beantragen | App oder Browser | Nur im Browser |
 | Verifizierungsgebühr | 600 Yuan im Jahr | 600 Yuan im Jahr |
 
-Die Gebühr ist klein, die Prüfung nicht. Rechnen Sie mit vier bis sieben Arbeitstagen für einen sauberen Antrag und mit mehr beim ersten Versuch. Denn die Plattform kontrolliert Ihre Gesellschaft, Ihren Kontonamen und Ihre Verifizierungsangaben getrennt, und jeder dieser drei Punkte reicht, damit die Akte zurückkommt.
+Die Gebühr ist klein, die Prüfung nicht. Für einen sauberen Antrag nennt die Plattform drei Arbeitstage. Beim ersten Versuch sollten Sie mehr einplanen. Denn die Plattform kontrolliert Ihre Gesellschaft, Ihren Kontonamen und Ihre Verifizierungsangaben getrennt, und jeder dieser drei Punkte reicht, damit die Akte zurückkommt.
 
 Alle Quellen dieses Beitrags wurden im September oder Oktober 2026 zweimal geprüft.
 
@@ -109,6 +109,12 @@ Ausländische Unternehmen beantragen anders als chinesische, und dieses Detail k
 > Gesellschaften, jährliche Prüfungen und Namensänderungen müssen über die
 > Website laufen. Ein Prüfauftrag gilt 30 Tage.
 > Quelle: Xiaohongshu (小红书), Leitfaden zur Verifizierung von Unternehmenskonten, Plattformdokumentation, bestätigt im September 2026. https://fe-video-qc.xhscdn.com/picasso-editor/7072d509ee7370545a056b6f9030a926e8879dca.pdf
+
+> Die aktuellen Verifizierungsregeln von Xiaohongshu lassen ausländische
+> Unternehmen nur aus den Regionen und Branchen zu, die die Plattform
+> freigegeben hat. Genannt werden Festlandchina, Hongkong, Singapur und
+> Malaysia.
+> Quelle: Xiaohongshu-Juguang-Hilfecenter (小红书聚光帮助中心), Regeln zur Verifizierung professioneller Unternehmenskonten, aktualisiert im Oktober 2026. https://ad.xiaohongshu.com/next_help/docs/195c5fe505c71b4b0335a2fe0d61d8e0
 
 Sitzen Sie außerhalb Chinas, lassen Sie die App für diesen Schritt also ganz beiseite. Gehen Sie im Browser auf die Unternehmensplattform. Teams, die in der App beginnen, erreichen den Zahlungsbildschirm, zahlen und stellen dann fest, dass der Ablauf ihre Unterlagen nicht annimmt.
 
@@ -214,7 +220,7 @@ Es gibt außerdem eine Sanktion, die die ganze Gesellschaft trifft und nicht ein
 
 Weniger, als Sie erwarten, und mehr, als die Plattform an einer einzigen Stelle zugibt.
 
-Verifizieren können Sie. Der Unternehmensleitfaden nennt ausländische Gesellschaften sowie solche aus Hongkong, Macau und Taiwan als zugelassen, und die Unterlagenliste der Werbeplattform hat eine Spalte für Sie. Was sich ändert, ist der Weg.
+Verifizieren können Sie, sofern Ihre Gesellschaft in einer Region sitzt, die die Plattform freigegeben hat. Der Unternehmensleitfaden nennt ausländische Gesellschaften sowie solche aus Hongkong, Macau und Taiwan als zugelassen, die aktuellen Regeln nennen Hongkong, Singapur und Malaysia, und die Unterlagenliste der Werbeplattform hat eine Spalte für Sie. Was sich ändert, ist der Weg.
 
 Sie beantragen im Browser, niemals in der App. Sie legen eine Business Registration oder ein Certificate of Incorporation vor statt einer Gewerbelizenz, und beides, wenn Sie eine Hongkonger Gesellschaft sind. Sie fügen Übersetzungen mit dem jeweils richtigen Stempel bei. Sie verkaufen über den grenzüberschreitenden Shopweg statt über einen inländischen. Und bevor Sie Werbung buchen, gleichen Sie Ihre Branche mit einer eigenen Zulassungsliste für ausländische Gesellschaften ab.
 
@@ -230,11 +236,12 @@ Ein Grund, das alles auszuhalten.
 
 Die Plattform veröffentlicht ihre eigenen Prüfzeiten, was seltener vorkommt, als es sollte.
 
-> Nach Einreichung eines Antrags auf ein professionelles Unternehmenskonto
-> meldet sich eine Prüfkraft innerhalb eines Arbeitstags, und die Prüfung ist
-> im Schnitt in vier bis sieben Arbeitstagen abgeschlossen. Ein Prüfauftrag
-> gilt 30 Tage.
-> Quelle: Xiaohongshu (小红书), Produktleitfaden professionelles Konto, Plattformdokumentation, bestätigt im September 2026. https://fe-video-qc.xhscdn.com/fe-platform/68e374e4257bd30bc07eed15c06cb8b9a51f971b.pdf
+> Nach den aktuellen Verifizierungsregeln von Xiaohongshu dauert die Prüfung
+> in der Regel drei Arbeitstage, bei komplexen Unterlagen, nachgeforderten
+> Dokumenten oder Feiertagen länger.
+> Quelle: Xiaohongshu-Juguang-Hilfecenter (小红书聚光帮助中心), Regeln zur Verifizierung professioneller Unternehmenskonten, aktualisiert im Oktober 2026. https://ad.xiaohongshu.com/next_help/docs/195c5fe505c71b4b0335a2fe0d61d8e0
+
+Ein einzelner Prüfauftrag bleibt 30 Tage gültig.
 
 Rechnen Sie Ihre eigene Vorbereitungszeit davor. Beglaubigte Übersetzungen anfertigen zu lassen, eine Vollmacht durch die Zentrale zu treiben und zu klären, welche Gesellschaft tatsächlich beantragt, dauert jeweils länger als die Prüfung selbst. Zwei bis drei Wochen von der Entscheidung bis zum verifizierten Konto sind für einen Erstantrag ein realistischer Plan. [Unser Leitfaden zu den ersten 90 Tagen in chinesischen sozialen Medien](/de/analysen/first-90-days-china-social-media/) zeigt, wo dieser Schritt in einem Start sitzt.
 
@@ -249,11 +256,11 @@ Was eine Agentur für die Einrichtung berechnet, ist eine andere Frage. Wir ver�
 
 ### Kann ich ein Xiaohongshu-Unternehmenskonto ohne chinesische Gesellschaft eröffnen?
 
-Ja. Xiaohongshu (小红书) nennt in seinem Leitfaden zur Unternehmensverifizierung ausländische Gesellschaften sowie solche aus Hongkong, Macau und Taiwan als zugelassen. Sie beantragen im Browser auf der Unternehmensplattform statt in der App, und Sie legen eine Business Registration oder ein Certificate of Incorporation vor statt einer Gewerbelizenz vom Festland. Hongkonger Gesellschaften legen beides vor. Jedes Dokument, das nicht auf Chinesisch vorliegt, braucht eine gestempelte Übersetzung.
+Ja, sofern Ihre Gesellschaft in einer Region eingetragen ist, die die Plattform freigegeben hat. Xiaohongshu (小红书) nennt in seinem Leitfaden zur Unternehmensverifizierung ausländische Gesellschaften sowie solche aus Hongkong, Macau und Taiwan als zugelassen, und die aktuellen Regeln nennen Hongkong, Singapur und Malaysia. Sie beantragen im Browser auf der Unternehmensplattform statt in der App, und Sie legen eine Business Registration oder ein Certificate of Incorporation vor statt einer Gewerbelizenz vom Festland. Hongkonger Gesellschaften legen beides vor. Jedes Dokument, das nicht auf Chinesisch vorliegt, braucht eine gestempelte Übersetzung.
 
 ### Was kostet die Blue-V-Verifizierung und wie lange dauert sie?
 
-Die Verifizierung kostet 600 Yuan je Antrag. Sie gilt ein Jahr ab der Freigabe, und eine jährliche Prüfung hält sie aktiv. Bei Ablehnung wird die Gebühr nicht zurückerstattet. Die Plattform gibt an, dass sich eine Prüfkraft innerhalb eines Arbeitstags meldet und die Prüfung im Schnitt vier bis sieben Arbeitstage dauert. Ihr Prüfauftrag verfällt nach 30 Tagen.
+Die Verifizierung kostet 600 Yuan je Antrag. Sie gilt ein Jahr ab der Freigabe, und eine jährliche Prüfung hält sie aktiv. Bei Ablehnung wird die Gebühr nicht zurückerstattet. Nach Angaben der Plattform dauert die Prüfung in der Regel drei Arbeitstage, bei komplexen Unterlagen, nachgeforderten Dokumenten oder Feiertagen länger. Ihr Prüfauftrag verfällt nach 30 Tagen.
 
 ### Warum wurde mein Xiaohongshu-Antrag abgelehnt?
 

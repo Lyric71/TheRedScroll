@@ -1,10 +1,10 @@
 ---
 title: "Compte entreprise Xiaohongshu : le parcours pour une société étrangère"
-description: "Aucune société chinoise n’est exigée pour faire certifier un compte entreprise Xiaohongshu. Ce qu’il faut, ce sont les bons documents dans le bon ordre, et un départ sur la version web plutôt que dans l’application."
+description: "Si votre entreprise est établie dans une région que la plateforme a ouverte, aucune société chinoise n’est exigée pour faire certifier un compte entreprise Xiaohongshu. Ce qu’il faut, ce sont les bons documents dans le bon ordre, et un départ sur la version web plutôt que dans l’application."
 metaTitle: "Compte entreprise Xiaohongshu : mode d’emploi"
 metaDescription: "Ouvrir un compte entreprise Xiaohongshu depuis l’étranger : documents, certification Blue V, frais, motifs de refus et délais de validation."
 publishDate: 2026-09-22
-updatedDate: 2026-10-02
+updatedDate: 2026-10-17
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Plateformes"
@@ -13,7 +13,7 @@ featured: false
 featuredImage: "/images/blog/xiaohongshu-business-account-setup.webp"
 ---
 
-Xiaohongshu (小红书), que l’on appelle aussi RedNote, instruit les demandes des sociétés étrangères sans intermédiaire obligatoire. Son propre guide de certification le dit noir sur blanc. Ouvrir un compte entreprise Xiaohongshu ne bute donc pas sur l’éligibilité, mais sur les pièces à fournir, sur des règles de nommage que la plupart des marques découvrent trop tard, et sur un examen qui déclenche discrètement trois contrôles distincts pour un seul dossier.
+Xiaohongshu (小红书), que l’on appelle aussi RedNote, instruit sans intermédiaire obligatoire les demandes des sociétés étrangères, à condition qu’elles relèvent d’une région ouverte par la plateforme. Ses règles en vigueur citent Hong Kong, Singapour et la Malaisie. Pour une société établie dans une région ouverte, ouvrir un compte entreprise Xiaohongshu ne bute pas sur l’éligibilité, mais sur les pièces à fournir, sur des règles de nommage que la plupart des marques découvrent trop tard, et sur un examen qui déclenche discrètement trois contrôles distincts pour un seul dossier.
 
 Voilà ce qu’il faut réunir avant de commencer.
 
@@ -26,7 +26,7 @@ Voilà ce qu’il faut réunir avant de commencer.
 | Où déposer | Application ou web | Web uniquement |
 | Frais de certification | 600 yuans par an | 600 yuans par an |
 
-Les frais sont modestes. L’examen, lui, ne l’est pas. Comptez quatre à sept jours ouvrés pour un dossier propre, davantage pour une première tentative : la plateforme vérifie séparément votre entité, le nom du compte et les informations de certification, et chacun de ces trois points suffit à vous renvoyer le dossier.
+Les frais sont modestes. L’examen, lui, ne l’est pas. La plateforme annonce trois jours ouvrés pour un dossier propre. Prévoyez davantage pour une première tentative : Xiaohongshu vérifie séparément votre entité, le nom du compte et les informations de certification, et chacun de ces trois points suffit à vous renvoyer le dossier.
 
 Chaque source de cet article a fait l’objet de deux vérifications, en septembre ou en octobre 2026.
 
@@ -108,6 +108,11 @@ Les sociétés étrangères ne déposent pas par le même canal que les chinoise
 > examens annuels et les changements de nom passent obligatoirement par la
 > version web. Un ordre d’examen vaut 30 jours.
 > Source : Xiaohongshu (小红书), guide de certification du compte entreprise, documentation de la plateforme, confirmé en septembre 2026. https://fe-video-qc.xhscdn.com/picasso-editor/7072d509ee7370545a056b6f9030a926e8879dca.pdf
+
+> Les règles de certification en vigueur admettent les sociétés étrangères
+> selon les régions et les secteurs que la plateforme a ouverts. Elles citent
+> la Chine continentale, Hong Kong, Singapour et la Malaisie.
+> Source : centre d’aide Juguang de Xiaohongshu (小红书聚光帮助中心), règles de certification du compte professionnel entreprise, mises à jour en octobre 2026. https://ad.xiaohongshu.com/next_help/docs/195c5fe505c71b4b0335a2fe0d61d8e0
 
 Si vous opérez depuis l’étranger, oubliez donc l’application pour cette étape. Rendez-vous sur la plateforme entreprise depuis un navigateur. Les équipes qui commencent dans l’application atteignent l’écran de paiement, paient, puis découvrent que le parcours n’accepte pas leurs documents.
 
@@ -213,7 +218,7 @@ Une sanction frappe par ailleurs la société entière, et non un seul compte.
 
 Moins que vous ne le pensez, et plus que la plateforme ne le reconnaît en un seul endroit.
 
-Vous pouvez être certifié. Le guide entreprise cite les sociétés étrangères et celles de Hong Kong, Macao et Taïwan parmi les éligibles, et la liste de documents de la plateforme publicitaire vous consacre une colonne. Ce qui change, c’est l’itinéraire.
+Vous pouvez être certifié, si votre société est établie dans une région que la plateforme a ouverte. Le guide entreprise cite les sociétés étrangères et celles de Hong Kong, Macao et Taïwan parmi les éligibles, les règles en vigueur nomment Hong Kong, Singapour et la Malaisie, et la liste de documents de la plateforme publicitaire vous consacre une colonne. Ce qui change, c’est l’itinéraire.
 
 Vous déposez sur le web, jamais dans l’application. Vous produisez un Business Registration ou un Certificate of Incorporation au lieu d’une licence d’exploitation, et les deux si vous êtes hongkongais. Vous ajoutez des traductions avec le bon cachet sur chacune. Vous vendez par la voie transfrontalière plutôt que par une boutique continentale. Et avant d’acheter de la publicité, vous vérifiez votre catégorie dans une liste d’admission distincte, propre aux entités étrangères.
 
@@ -229,11 +234,12 @@ Une raison de supporter tout cela.
 
 La plateforme publie ses propres délais d’examen, ce qui reste plus rare qu’il ne le devrait.
 
-> Après le dépôt d’une demande de compte professionnel entreprise, un
-> spécialiste de l’examen prend contact dans le jour ouvré, et l’examen
-> s’achève en quatre à sept jours ouvrés en moyenne. Un ordre d’examen vaut
-> 30 jours.
-> Source : Xiaohongshu (小红书), guide produit du compte professionnel, documentation de la plateforme, confirmé en septembre 2026. https://fe-video-qc.xhscdn.com/fe-platform/68e374e4257bd30bc07eed15c06cb8b9a51f971b.pdf
+> Selon les règles de certification en vigueur, l’examen prend en général
+> trois jours ouvrés, davantage pour un dossier complexe, en cas de pièces
+> complémentaires ou pendant les jours fériés.
+> Source : centre d’aide Juguang de Xiaohongshu (小红书聚光帮助中心), règles de certification du compte professionnel entreprise, mises à jour en octobre 2026. https://ad.xiaohongshu.com/next_help/docs/195c5fe505c71b4b0335a2fe0d61d8e0
+
+Un ordre d’examen reste valable 30 jours.
 
 Ajoutez votre propre temps de préparation en amont. Faire établir des traductions certifiées, obtenir une lettre d’autorisation d’un siège et confirmer quelle entité dépose réellement prennent tous plus de temps que l’examen lui-même. Deux à trois semaines entre la décision et le compte certifié : voilà un plan réaliste pour une première demande. [Notre guide des 90 premiers jours sur les réseaux sociaux chinois](/fr/decryptages/first-90-days-china-social-media/) situe cette étape dans un lancement.
 
@@ -248,11 +254,11 @@ Ce que facture une agence pour conduire l’ouverture est une autre question. No
 
 ### Peut-on ouvrir un compte entreprise Xiaohongshu sans société chinoise ?
 
-Oui. Xiaohongshu (小红书) cite les sociétés étrangères et celles de Hong Kong, Macao et Taïwan parmi les éligibles dans son guide de certification entreprise. Le dépôt se fait sur la plateforme entreprise en version web et non dans l’application, et vous fournissez un Business Registration ou un Certificate of Incorporation au lieu d’une licence d’exploitation continentale. Les sociétés hongkongaises fournissent les deux. Tout document qui n’est pas en chinois exige une traduction avec cachet.
+Oui, si votre société est immatriculée dans une région que la plateforme a ouverte. Xiaohongshu (小红书) cite les sociétés étrangères et celles de Hong Kong, Macao et Taïwan parmi les éligibles dans son guide de certification entreprise, et ses règles en vigueur nomment Hong Kong, Singapour et la Malaisie. Le dépôt se fait sur la plateforme entreprise en version web et non dans l’application, et vous fournissez un Business Registration ou un Certificate of Incorporation au lieu d’une licence d’exploitation continentale. Les sociétés hongkongaises fournissent les deux. Tout document qui n’est pas en chinois exige une traduction avec cachet.
 
 ### Combien coûte la certification Blue V et combien de temps prend-elle ?
 
-La certification coûte 600 yuans par demande. Elle vaut un an à compter de la validation, et un examen annuel la maintient active. Les frais ne sont pas remboursés en cas de refus. La plateforme indique qu’un examinateur prend contact dans le jour ouvré et que l’examen demande quatre à sept jours ouvrés en moyenne. Votre ordre d’examen expire au bout de 30 jours.
+La certification coûte 600 yuans par demande. Elle vaut un an à compter de la validation, et un examen annuel la maintient active. Les frais ne sont pas remboursés en cas de refus. La plateforme indique que l’examen prend en général trois jours ouvrés, davantage pour un dossier complexe, en cas de pièces complémentaires ou pendant les jours fériés. Votre ordre d’examen expire au bout de 30 jours.
 
 ### Pourquoi ma demande Xiaohongshu a-t-elle été refusée ?
 

@@ -4,7 +4,7 @@ description: "Por lo general no, al menos para empezar. WeChat y Xiaohongshu ver
 metaTitle: "Redes sociales en China: ¿hace falta sociedad china?"
 metaDescription: "WeChat, Xiaohongshu, Douyin y Weibo: qué admite cada plataforma de una marca extranjera sin sociedad china y dónde están los verdaderos límites."
 publishDate: 2026-09-24
-updatedDate: 2026-10-11
+updatedDate: 2026-10-17
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Estrategia"
@@ -18,7 +18,7 @@ Es la pregunta que encalla más de una primera reunión comercial. Las respuesta
 | Plataforma | Qué establece la plataforma | Qué debe presentar | Tasa de verificación |
 |---|---|---|---|
 | WeChat (微信) | Admite entidades extranjeras, una sola cuenta | Certificado de registro, cartas selladas | 99 dólares al año |
-| Xiaohongshu (小红书) | Admite entidades extranjeras de forma expresa | BR o CR, traducción al chino sellada | 600 yuanes al año |
+| Xiaohongshu (小红书) | Admite entidades extranjeras de las regiones abiertas | BR o CR, traducción al chino sellada | 600 yuanes al año |
 | Weibo (微博) | Entidades extranjeras solo a través de un agente | Fuera del formulario de autoservicio | 600 yuanes |
 | Douyin (抖音) | Una vía para el extranjero, detalles tras iniciar sesión | Licencia de China continental en las páginas públicas | 600 yuanes el primer año (China continental) |
 
@@ -56,17 +56,22 @@ Operar en WeChat desde el extranjero cuesta, por tanto, unas dos semanas de espe
 
 ## Qué puede hacer una entidad extranjera en Xiaohongshu
 
-Xiaohongshu (小红书), a la que la web también llama RedNote, admite de forma expresa a las empresas extranjeras. Su guía de verificación de empresas las enumera en la misma frase que a las de China continental, Hong Kong, Macao y Taiwán.
+Xiaohongshu (小红书), a la que la web también llama RedNote, admite de forma expresa a las empresas extranjeras, aunque no de todas partes. Su guía de verificación de empresas las enumera en la misma frase que a las de China continental, Hong Kong, Macao y Taiwán. Sus normas vigentes acotan esa apertura a las regiones que la plataforma ha habilitado.
 
 > La verificación de cuentas de empresa está abierta a empresas de China continental, extranjeras y de Hong Kong, Macao y Taiwán. La tasa es de 600 yuanes por solicitud, válida un año, con una revisión anual. Las entidades extranjeras completan la verificación, las revisiones anuales y los cambios de nombre solo en la versión web.
 > Fuente: Xiaohongshu (小红书), guía de verificación de la cuenta de empresa, documentación de la plataforma, comprobada en septiembre de 2026. https://fe-video-qc.xhscdn.com/picasso-editor/7072d509ee7370545a056b6f9030a926e8879dca.pdf
+
+> Las normas de verificación vigentes de Xiaohongshu admiten a las empresas extranjeras en función de las regiones y los sectores que la plataforma ha abierto. Citan China continental, Hong Kong, Singapur y Malasia.
+> Fuente: centro de ayuda de Juguang de Xiaohongshu (小红书聚光帮助中心), normas de verificación de la cuenta profesional de empresa, documentación de la plataforma, actualizadas en octubre de 2026. https://ad.xiaohongshu.com/next_help/docs/195c5fe505c71b4b0335a2fe0d61d8e0
+
+Si su empresa está registrada en otro país, compruebe que su región figura entre las abiertas antes de contar con Xiaohongshu en sus planes.
 
 En lugar de una licencia china, las empresas extranjeras aportan un Business Registration o un Certificate of Incorporation; las de Hong Kong, ambos. Todo documento redactado en un idioma distinto del chino requiere una traducción con el sello de una empresa de traducción. [Nuestra guía paso a paso para abrir una cuenta de empresa en Xiaohongshu](/es/analisis/xiaohongshu-business-account-setup/) repasa con detalle cada pantalla y los motivos de rechazo.
 
 El plazo de revisión está publicado, algo poco habitual.
 
-> Tras presentar una solicitud de empresa, un revisor se pone en contacto en 1 día laborable, y la revisión se completa en 4 a 7 días laborables de media. Cada orden de revisión es válida 30 días.
-> Fuente: Xiaohongshu (小红书), guía de producto de la cuenta profesional, documentación de la plataforma, comprobada en septiembre de 2026. https://fe-video-qc.xhscdn.com/fe-platform/68e374e4257bd30bc07eed15c06cb8b9a51f971b.pdf
+> Según las normas de verificación vigentes de Xiaohongshu, la revisión suele durar tres días laborables, y algo más si el expediente es complejo, si se pide documentación adicional o si hay festivos de por medio.
+> Fuente: centro de ayuda de Juguang de Xiaohongshu (小红书聚光帮助中心), normas de verificación de la cuenta profesional de empresa, documentación de la plataforma, actualizadas en octubre de 2026. https://ad.xiaohongshu.com/next_help/docs/195c5fe505c71b4b0335a2fe0d61d8e0
 
 Comprar publicidad es otro paso, con reglas propias para las empresas extranjeras. La fuente aquí es una guía especializada, no la documentación oficial de la plataforma.
 
@@ -102,8 +107,8 @@ Douyin (抖音) recoge ya una vía para entidades extranjeras, pero no publica l
 
 Esas páginas son de 2022. En 2026, el centro de ayuda de empresas de Douyin incorporó dos entradas: una guía de alta en autoservicio para entidades extranjeras y un reglamento de revisión propio para solicitantes extranjeros y transfronterizos.
 
-> El centro de ayuda de la cuenta de empresa de Douyin recoge una guía de alta en autoservicio para entidades de Hong Kong, Macao, Taiwán y el extranjero, actualizada el 19 de agosto de 2026, y un reglamento de revisión de la verificación para entidades extranjeras y transfronterizas, fechado el 18 de mayo de 2026.
-> Fuente: centro de ayuda de la cuenta de empresa de Douyin (抖音企业号帮助中心), agosto de 2026. https://renzheng.douyin.com/support/content/227771?graphId=412&mappingType=2&spaceId=77
+> El centro de ayuda de la cuenta de empresa de Douyin recoge una guía de alta en autoservicio para entidades de Hong Kong, Macao, Taiwán y el extranjero, actualizada el 13 de octubre de 2026, y un reglamento de revisión de la verificación para entidades extranjeras y transfronterizas, fechado el 18 de mayo de 2026.
+> Fuente: centro de ayuda de la cuenta de empresa de Douyin (抖音企业号帮助中心), octubre de 2026. https://renzheng.douyin.com/support/content/227771?graphId=412&mappingType=2&spaceId=77
 
 Ambos documentos exigen iniciar sesión, así que los papeles, la tasa y el plazo de revisión de esa vía no son públicos. Sobre el papel, Douyin ya no está cerrado a una empresa extranjera. Pero sigue siendo opaco. Si Douyin ocupa un lugar central en sus planes, pida a su agencia que explore la vía extranjera antes de presupuestar una entidad en China continental.
 
@@ -220,14 +225,14 @@ Una agencia incapaz de responder a las tres por escrito ya está dando una respu
 
 | Su situación | Por dónde empezar | ¿Hace falta entidad? |
 |---|---|---|
-| Está sondeando la demanda, aún sin ingresos en China | Cuenta de servicio de WeChat y Xiaohongshu, ambas a nombre de su propia entidad | No |
+| Está sondeando la demanda, aún sin ingresos en China | Cuenta de servicio de WeChat y Xiaohongshu (si su región está abierta), ambas a nombre de su propia entidad | No |
 | Vende a consumidores, sin existencias en China continental | Importación minorista transfronteriza, dentro de los límites de 5.000 y 26.000 yuanes | No |
 | Se dispone a comprar publicidad en Xiaohongshu | Su propia cuenta, tras revisar la lista para entidades extranjeras | No, si su categoría está abierta |
 | Douyin es central en sus planes | Primero la vía extranjera de Douyin; si falla, una entidad en China continental | Quizá |
 | Contrata en el país, factura en yuanes, tiene existencias | Una sociedad en China continental | Sí |
 | Una agencia le ofrece una cuenta con su licencia | Obtener antes las tres respuestas contractuales | No, pero lea la cláusula 6.1 |
 
-La tabla se resume en una idea sencilla: la cuestión de la entidad es una cuestión de calendario. La mayoría de las marcas extranjeras deberían lanzarse con su propia entidad, comprobar qué despierta el interés de su público y constituir una sociedad en China continental cuando la publicidad, la contratación o las existencias la hagan rentable. [Nuestra guía de los primeros 90 días en las redes sociales chinas](/es/analisis/first-90-days-china-social-media/) describe cómo es ese lanzamiento en la práctica.
+La tabla se resume en una idea sencilla: la cuestión de la entidad es una cuestión de calendario. La mayoría de las marcas extranjeras deberían lanzarse con su propia entidad, comprobar qué despierta el interés de su público y constituir una sociedad en China continental cuando la publicidad, la contratación o las existencias la hagan rentable. [Nuestra guía de los primeros 90 días en las redes sociales chinas](/es/analisis/first-90-days-china-social-media/) describe cómo es ese lanzamiento en la práctica. [Nuestro calendario de entrada en el mercado chino en seis meses](/es/analisis/china-market-entry-timeline/) sitúa en paralelo la marca, las cuentas y los contenidos para un informe al consejo.
 
 Una última advertencia. Las normas de acceso de las plataformas cambian más deprisa que el derecho de sociedades. Todo lo que recoge este artículo se contrastó con los documentos originales en septiembre y octubre de 2026. Consulte la versión vigente antes de presentar cualquier documento.
 

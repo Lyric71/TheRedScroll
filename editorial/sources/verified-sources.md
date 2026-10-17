@@ -233,6 +233,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: xiaohongshu-marketing-foreign-brands, first-90-days-china-social-media, xiaohongshu-business-account-setup, chinese-entity-social-media
 - Notes: Extends the 600 yuan fee entry above with the process rules. The PDF gives no review duration in days. An older 2019 version of the guide (https://dc.xhscdn.com/62f0c1cfe638eb13c67415419cd6d5c75985fa2b.pdf, 300 yuan era) is superseded; do not cite.
 - Re-verified 2026-10-05 for 05C: the platform PDF, downloaded twice and extracted with pdftotext: "小红书企业号支持中国境内企业、中国境外及港澳台企业进行线上认证申请", "海外主体或年审、更名认证，需通过PC端操作", "600元/次", "认证有效期为1年" and "每年需要完成一次年审" confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
+- Re-verified 2026-10-17 for 09C: PDF re-downloaded and extracted (pdftotext -enc UTF-8), "600元/次", "单次审核订单有效期为30天", "海外主体或年审、更名认证，需通过PC端操作" and "每年需要完成一次年审" confirmed at check 1, check 2 and after the quality pass. Used in: china-market-entry-timeline. Eligibility is now qualified by the 2026 rules (entry "Xiaohongshu enterprise verification rules, 2026"): overseas companies by opened region and industry.
 
 ### Xiaohongshu store qualification for overseas companies
 - Value: overseas companies (incl. HK, Macau, Taiwan) file a business registration and certificate of incorporation; cross-border trade needs a brand authorization letter per brand with a complete chain, or purchase proof for at least one SKU without authorization; imported cosmetics need the CFDA import cosmetics filing; authorization chains capped at 3 levels (2 for beauty)
@@ -274,6 +275,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-10-05 for 05C: "99美元/次", "不以认证成功为前提" and "7-15个工作日内完成审核" confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
 - Re-verified 2026-10-06 for 06A: "7-15个工作日内完成审核" confirmed at check 1 and check 2. Used in: china-marketing-hidden-costs.
 - Re-used 2026-10-06 by the 05B publish run: "99美元" and "7-15个工作日内完成审核" confirmed at check 1 and check 2 (curl, two fetches). Now also cited on sell-on-wechat (FAQ, all five locales), which wrongly said a verified Service Account needs a Chinese entity.
+- Re-verified 2026-10-17 for 09C: "7-15个工作日内完成审核", "99美元/次" and "不以认证成功为前提" confirmed at check 1, check 2 and after the quality pass. Used in: china-market-entry-timeline.
 
 ### WeChat Official Account verification materials for overseas entities
 - Value: company registration certificate or business license; contact person's ID, both sides, color scan; application letter (simplified Chinese, traditional Chinese or English template); operation authorization letter (same three languages); contact person's phone bill, or a stamped office phone bill or bank statement; trademark registration or authorization if the account is named after a trademark
@@ -306,6 +308,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-10-05 for 05C: "境外主体可以注册1个账号", "境外地区账号暂只支持服务号类型" and "认证成功后，账号方可正常使用" confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
 - Re-verified 2026-10-08 for 06C: "境外主体可以注册1个账号" and "境外地区账号暂只支持服务号类型" confirmed at check 1 and check 2. Used in: wechat-open-rate-benchmark.
 - Re-verified 2026-10-12 for 07D: "境外主体可以注册1个账号", "境外地区账号暂只支持服务号类型" and "认证成功后，账号方可正常使用" confirmed at check 1 and check 2. Used in: b2b-industrial.
+- Re-verified 2026-10-17 for 09C: "境外主体可以注册1个账号", "境外地区账号暂只支持服务号类型" and "认证成功后，账号方可正常使用" confirmed at check 1, check 2 and after the quality pass. Used in: china-market-entry-timeline.
 
 ### WeChat Official Account verification review time, mainland entity
 - Value: review in 1 to 3 working days; verification must be completed within 30 calendar days of registration; payment-based registration verification succeeds within 1 working day
@@ -814,6 +817,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-11, re-fetched at iteration 8 (tag c2) and again after the quality pass (tag c2b), unchanged; "港澳台/海外主体自助入驻", "2026-08-19 01:08:04", "抖音企业机构账号海外/跨境主体认证审核规则", "2026-05-18 11:47:06", "具体费用标准以认证申请页面公示为准", "相关费用不以认证成功为前提", "15 个工作日内展开认证审核工作", "如为国外商标，需提供国内商标注册证或马德里商标注册证"
 - Used in: douyin-marketing-cost; also chinese-entity-social-media and first-90-days-china-social-media (corrected 2026-10-11, all five locales)
 - Notes: The pages are a single-page app; text read from the platform's knowledge API, https://renzheng.douyin.com/support/backend/content/knowledge/detail?knowledgeId=<id>&graphId=412&spaceId=77 (carries createTime and modifyTime). Cite only that the route and rulebook exist, with their dates; the documents, fee and review time for the overseas route are not public. This supersedes the 2022-based reading in the entry "Douyin enterprise account described as for companies in China". Recheck note, 2026-10-11: if the overseas guide becomes readable without a login, log its documents, fee and review time and update chinese-entity-social-media, first-90-days-china-social-media and douyin-marketing-cost in every locale.
+- Re-verified 2026-10-17 for 09C through the knowledge API: 227771 "港澳台/海外主体自助入驻" now modifyTime 2026-10-13 01:12:21 (body still a Feishu doc behind login); 123631 agreement modifyTime 2026-01-09, "15 个工作日内展开认证审核工作" and "具体费用标准以认证申请页面公示为准"; 141500 (2024-07-04) "如为国外商标，需提供国内商标注册证或马德里商标注册证". All at check 1, check 2 and after the quality pass. Used in: china-market-entry-timeline (cited with the new dates).
+- Note 2026-10-17 (09C publish run): the onboarding guide date printed as "updated August 19, 2026" (source month August 2026) in chinese-entity-social-media, douyin-marketing-cost and first-90-days-china-social-media was moved to the current "updated October 13, 2026" (source month October 2026) in all five locales, updatedDate 2026-10-17. The review rulebook date (208562, 2026-05-18) stands on its two 2026-10-11 checks above.
 
 ### Ocean Engine ad floors: search budget minimums, oCPM bid floor, TopView list prices (2020), DOU+ order range
 - Value: search 极速智投 7-day steady mode budget at least 2,000 yuan, custom schedule daily budget at least 100 yuan (changelog 2024-09-20); oCPC and oCPM bid floor 0.01 yuan (changelog 2023-05-17); Q4 2020 national rate card: TopView first-refresh CPT 52,800,000 yuan a day, splash rotation 3,600,000 yuan a day per rotation, TopView CPM 320 yuan in core cities, orders from 200,000 yuan net, list prices before discount; DOU+ order budget 10,000 to 500,000,000 fen (100 yuan to 5 million yuan); DOU+ is prepaid and its minimums are set and published by Douyin (agreement published 2026-09-04)
@@ -1095,6 +1100,45 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: b2b-industrial
 - Notes: The research agent first dated the WeCom feature to 4.1.8; the history puts it in 4.1.9, July 2022. The description has no date of its own, so cite the listing as confirmed October 2026. School.oceanengine.com pages render by script and show no text to curl.
 
+### WeChat verification naming: only China-registered (R) marks; pending marks only through self-chosen wording
+- Value: naming a verified Official Account after a trademark requires an R mark registered with China's trademark office (只能使用中国商标局注册的商标R商标，不得使用境外注册商标); the R mark must be valid; a TM mark that has passed preliminary examination can only be used through the self-chosen naming route (只能通过自选词汇方式命名)
+- As of: page undated; confirmed October 2026 (platform documentation)
+- Source: Tencent customer service (腾讯客服), 公众平台微信认证商标命名规则
+- URL: https://kf.qq.com/touch/sappfaq/150722EVNrui150722zUVVNR.html
+- Verified 1: 2026-10-17, fetched with curl in the 09C run (session check.py, tag c1); "只能使用中国商标局注册的商标R商标，不得使用境外注册商标" and "只能通过自选词汇方式命名" confirmed
+- Verified 2: 2026-10-17, re-fetched at iteration 8 (tag c2) and again after the quality pass (tag c2b), unchanged
+- Used in: china-market-entry-timeline
+- Notes: The desktop /faq/ URL for this page returns 404; cite the /touch/sappfaq/ URL. The page states the verification naming rules in general and does not say whether the overseas-entity route applies them identically; cite it as "Tencent's naming rules for verified accounts", never as an overseas-only rule.
+
+### WeChat name-squatting complaint: 7 working days to review, 7 days to appeal, then the name is released
+- Value: a trademark, company name, institution name or personal name gives a right to complain about an account using that name; WeChat reviews within 7 working days; the other side may appeal within 7 days; if the appeal fails the name is released
+- As of: page undated; confirmed October 2026 (platform documentation)
+- Source: Tencent customer service (腾讯客服), 微信公众平台侵权投诉方式
+- URL: https://kf.qq.com/faq/120911VrYVrA161026ammAjA.html
+- Verified 1: 2026-10-17, fetched with curl in the 09C run (session check.py, tag c1); "微信团队会在7个工作日内进行审核", "投诉人有名称使用权，如商标、企业名、机构名称及个人姓名" and "被投诉人7天内可以申诉，如果申诉无效，则名称占用将释放" confirmed
+- Verified 2: 2026-10-17, re-fetched at iteration 8 (tag c2) and again after the quality pass (tag c2b), unchanged
+- Used in: china-market-entry-timeline
+
+### Xiaohongshu enterprise verification rules, 2026: overseas entities by opened region and industry; review generally 3 working days
+- Value: the rules cover mainland, Hong Kong, Singapore and Malaysia entities "and other regions the platform has opened" (适用范围：中国大陆主体、香港主体、新加坡主体、马来西亚主体等平台已开放准入地区); overseas and Hong Kong, Macau, Taiwan companies are supported 按开放地区及行业规则支持, with entry rules published for Hong Kong (8.2), Singapore (8.3) and Malaysia (8.4); review generally takes 3 working days (一般为 3个工作日), longer for complex qualifications, supplementary documents, holidays or system checks; an own trademark is proven by the registration certificate or an acceptance notice meeting platform requirements (或符合平台要求的商标注册申请受理通知书); a foreign mark by its foreign registration certificate (境外商标注册证); qualification changes in force 2026-06-30 (执行时间：2026.6.30)
+- As of: October 2026 (doc updateTime 2026-10-12; changes in force 2026-06-30)
+- Source: Xiaohongshu Juguang help center (小红书聚光帮助中心), 【变更】专业号认证规则规范
+- URL: https://ad.xiaohongshu.com/next_help/docs/195c5fe505c71b4b0335a2fe0d61d8e0 (text read from https://ad.xiaohongshu.com/api/light/help/doc/content?shortcutId=195c5fe505c71b4b0335a2fe0d61d8e0)
+- Verified 1: 2026-10-17, fetched with curl in the 09C run (session check.py, tag c1); all nine strings above confirmed in the raw JSON
+- Verified 2: 2026-10-17, re-fetched at iteration 8 (tag c2) and again after the quality pass (tag c2b), unchanged
+- Used in: china-market-entry-timeline; also chinese-entity-social-media, xiaohongshu-business-account-setup, xiaohongshu-marketing-foreign-brands, first-90-days-china-social-media and wechat-vs-xiaohongshu, plus /rednote-agency/ and /platforms/rednote/ (corrected 2026-10-17, all five locales)
+- Notes: **Supersedes** the review time in the entry "Xiaohongshu professional account: identities, Blue V and enterprise review time" (4 to 7 working days, undated deck) and qualifies every older line saying Xiaohongshu admits overseas companies without limit. Do not write "only Hong Kong, Singapore and Malaysia": the scope says 等 (and other opened regions). Write "by the regions it has opened; the rules name ...".
+
+### Xiaohongshu Juguang for overseas entities: every industry by invitation; qualification review about 48 hours
+- Value: 境外主体全量行业均为定邀行业，暂不支持自助准入，请联系平台销售、运营进行申请; advertiser qualification review 预计审核 48小时; overseas entities advertising to non-mainland regions follow the cross-border policy, joint mainland and non-mainland campaigns follow both
+- As of: February 2026 (doc updateTime 2026-02-06; blocks dated 2025-12-22 to 2026-02-06)
+- Source: Xiaohongshu Juguang help center (小红书聚光帮助中心), 跨境业务入驻规范
+- URL: https://ad.xiaohongshu.com/next_help/docs/27223a333b21567c31a8c7c8a60fbddb (text read from the doc content API, shortcutId 27223a333b21567c31a8c7c8a60fbddb)
+- Verified 1: 2026-10-17, fetched with curl in the 09C run (session check.py, tag c1); "跨境业务入驻规范", "预计审核 48小时" and "境外主体全量行业均为定邀行业，暂不支持自助准入，请联系平台销售、运营进行申请" confirmed in the raw JSON
+- Verified 2: 2026-10-17, re-fetched at iteration 8 (tag c2) and again after the quality pass (tag c2b), unchanged
+- Used in: china-market-entry-timeline
+- Notes: Invitation through the platform's own sales or operations team, not an agent requirement, so it does not revive the retracted agent-only claim (entry "Xiaohongshu Juguang ad platform: no official agent-only rule"). Older articles that say some categories are closed to overseas entities remain accurate and were not changed.
+
 ## Regulatory and legal
 
 <!-- Needed from week 1 onward:
@@ -1118,6 +1162,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: first-90-days-china-social-media
 - Notes: Examination only. Publication, opposition and registration add to the total; do not present 4 months as time to registration.
 - Re-verified 2026-10-06 for 06A: "商标注册平均审查周期稳定在4个月" confirmed at check 1 and check 2. Used in: china-marketing-hidden-costs.
+- Re-verified 2026-10-17 for 09C: "商标注册平均审查周期稳定在4个月" confirmed at check 1 (not cited; the People's Daily July 2026 restatement is cited instead).
 
 ### China cosmetics classification: special versus ordinary
 - Value: cosmetics for hair dye, perming, spot removal and whitening, sun protection and hair loss prevention, plus any cosmetic claiming a new efficacy, are special cosmetics; all others are ordinary
@@ -1138,6 +1183,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-10, re-fetched, unchanged
 - Used in: beauty-skincare
 - Notes: The implementing measures (国家市场监督管理总局令第35号, 2021-01-07, in force 2021-05-01, Article 8, https://www.gov.cn/zhengce/zhengceku/2021-01/12/content_5579239.htm) list the five duties of that 境内责任人. Both checks 2026-09-10.
+- Re-verified 2026-10-17 for 09C: "境外化妆品注册人、备案人应当指定我国境内的企业法人办理化妆品注册、备案" confirmed at check 1, check 2 and after the quality pass. Used in: china-market-entry-timeline.
 
 ### Cosmetics efficacy claims must be evidenced and the evidence published
 - Value: efficacy claims need sufficient scientific basis, and the registrant or filer must publish a summary of the literature, research data or efficacy evaluation on a website designated by the regulator
@@ -1399,6 +1445,96 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-12, re-fetched (tags c2, c2b), unchanged
 - Used in: b2b-industrial
 - Notes: Older than 12 months; no newer count found (fallback 9). Group standards: more than 120,000 from 8,000+ associations on the national platform (CNIS, 2026-04-23, cnis.ac.cn/bydt/zhxw/202604/t20260423_62831.html, one check only); not cited.
+
+### Trademark examination period, newest restatement: 4 months (SCIO press conference, July 2026)
+- Value: average trademark examination period held at 4 months; 2,055,000 marks registered in H1 2026; priority, fast-track and deferred examination to be combined
+- As of: July 2026 (People's Daily, 2026-07-30, on the 2026-07-29 SCIO press conference)
+- Source: People's Daily (人民日报), 确保知识产权强国建设取得决定性进展
+- URL: https://paper.people.com.cn/rmrb/pc/content/202607/30/content_30171963.html
+- Verified 1: 2026-10-17, fetched with curl in the 09C run (research agent and session check.py tag c1, http); "2026年07月30日" and "商标注册平均审查周期稳定在4个月" confirmed
+- Verified 2: 2026-10-17, re-fetched over https at iteration 8 (c2) and after the quality pass (c2b), unchanged
+- Used in: china-market-entry-timeline
+- Notes: Newer than the CNIPA work report entry (January 2026), same figure. Examination only, never time to registration.
+
+### Trademark review cycles, CNIPA 2023 data: opposition 10 months, refusal review 7, complex review 11, typical registration 7, Madrid under 4
+- Value: 商标异议平均审查周期压缩至10个月; 驳回复审、评审复杂案件平均审理周期分别稳定在7个月、11个月; 一般情形商标注册周期稳定在7个月; Madrid designations of China examined in under 4 months on average
+- As of: 2023 data, published 2024-01-16
+- Source: CNIPA Trademark Office (国家知识产权局商标局), 2023年商标局工作"成绩单"
+- URL: https://sbj.cnipa.gov.cn/gzdt/2026/0828/50967.html
+- Verified 1: 2026-10-17, fetched with curl in the 09C run (session check.py, tag c1); "发布时间：2024-01-16" and the four strings above confirmed
+- Verified 2: 2026-10-17, re-fetched at iteration 8 (tag c2) and again after the quality pass (tag c2b), unchanged
+- Used in: china-market-entry-timeline
+- Notes: The newest CNIPA figures for these steps (fallback 9). Cite as 2023 figures. Recheck for a 2024 or 2025 cycle release before reuse.
+
+### Bad-faith trademark filings struck down: over 200,000 in H1 2023 and in H1 2024
+- Value: 2023年上半年、2024年上半年全国打击商标恶意注册均超20万件; 1,273,000 misleading marks refused since 2023
+- As of: July 2026 (CNIPA repost of Xinhua, 2026-07-02)
+- Source: CNIPA (国家知识产权局), reposting Xinhua (新华网), 新修订的商标法看点聚焦
+- URL: https://www.cnipa.gov.cn/art/2026/7/2/art_55_207044.html
+- Verified 1: 2026-10-17, fetched with curl in the 09C run (session check.py, tag c1); "发布时间：2026-07-02" and "2023年上半年、2024年上半年全国打击商标恶意注册均超20万件" confirmed
+- Verified 2: 2026-10-17, re-fetched at iteration 8 (tag c2) and again after the quality pass (tag c2b), unchanged
+- Used in: china-market-entry-timeline
+- Notes: No full-year 2025 or 2026 total is published by an allowed source (NOT LOGGED, 2026-10-17).
+
+### Trademark Law 2019 text on CNIPA: agent rule, 9-month examination, 3-month opposition, 15-day review request, first to file
+- Value: foreign applicants file through a lawfully established agency (Art. 18, "应当委托依法设立的商标代理机构办理"); examination within 9 months (Art. 28); opposition within 3 months of publication (Art. 33); refusal review requested within 15 days, decided within 9 months plus 3 (Art. 34); first filer wins (Art. 31); opposition decided within 12 months plus 6 (Art. 35)
+- As of: law as amended 2019-04-23; CNIPA page 2019-07-30
+- Source: CNIPA (国家知识产权局), 中华人民共和国商标法(2019年修正)
+- URL: https://www.cnipa.gov.cn/art/2019/7/30/art_95_28179.html
+- Verified 1: 2026-10-17, fetched with curl in the 09C run (session check.py, tag c1); "发布时间：2019-07-30", "自收到商标注册申请文件之日起九个月内审查完毕", "对初步审定公告的商标，自公告之日起三个月内", "可以自收到通知之日起十五日内向商标评审委员会申请复审", "商标评审委员会应当自收到申请之日起九个月内做出决定", "初步审定并公告申请在先的商标" and "应当委托依法设立的商标代理机构办理" confirmed
+- Verified 2: 2026-10-17, re-fetched at iteration 8 (tag c2) and again after the quality pass (tag c2b), unchanged
+- Used in: china-market-entry-timeline
+- Notes: Same law as the MOFCOM entry above; the regulator's copy is preferred. In force until 2026-12-31. Recheck note for 2027-01-01: move citations to the 2026 revision and its article numbers (examination 32, first to file 35, opposition 36, review 37).
+
+### Revised Trademark Law 2026: opposition window cut to 2 months; filings with no intent to use refused (re-verified with new strings)
+- Value: 对初步审定公告的商标，自公告之日起二个月内 (Art. 36); 9-month examination kept (Art. 32); 不以使用为目的，且明显超出正常生产经营需要申请商标注册的，不予注册 (Art. 19); in force 2027-01-01
+- As of: published 2026-06-26
+- Source: CNIPA (国家知识产权局), 中华人民共和国商标法(2026年修订)
+- URL: https://www.cnipa.gov.cn/art/2026/6/26/art_95_206942.html
+- Verified 1: 2026-10-17, fetched with curl in the 09C run (session check.py, tag c1); "发布时间：2026-06-26", the two strings above, "本法自2027年1月1日起施行" and "自收到商标注册申请文件之日起九个月内审查完毕" confirmed
+- Verified 2: 2026-10-17, re-fetched at iteration 8 (tag c2) and again after the quality pass (tag c2b), unchanged
+- Used in: china-market-entry-timeline
+- Notes: Extends the earlier 2026 revision entry (ten-year term) with the timing and bad-faith articles.
+
+### Draft transition measures for the revised Trademark Law: opposition window decided by publication date
+- Value: marks published for preliminary approval before 2027-01-01 keep the 3-month window (old Art. 33); later ones follow the revised Art. 36 (2 months); for Madrid marks the WIPO publication date decides; comments until November 12
+- As of: September 2026 (notice 2026-09-28); DRAFT, not final
+- Source: CNIPA (国家知识产权局), 关于就《施行修订后的商标法相关业务处理办法（征求意见稿）》公开征求意见的通知, with attachment 1 (.doc)
+- URL: https://www.cnipa.gov.cn/art/2026/9/28/art_75_208337.html ; attachment https://www.cnipa.gov.cn/module/download/downfile.jsp?classid=0&showname=a.doc&filename=b1f8d377f03f452b8f7ae861814048c2.doc
+- Verified 1: 2026-10-17, fetched with curl in the 09C run (session check.py, tag c1); notice: "发布时间：2026-09-28", "施行修订后的商标法相关业务处理办法（征求意见稿）", "可以在11月12日前"; attachment (UTF-16 text of the Word file): "对于2027年1月1日以前刊发初步审定公告的商标注册申请，异议期限的计算适用修订前的商标法第三十三条" and "异议期限的计算适用修订后的商标法第三十六条" confirmed
+- Verified 2: 2026-10-17, re-fetched at iteration 8 (tag c2) and again after the quality pass (tag c2b), unchanged
+- Used in: china-market-entry-timeline (cited as a draft)
+- Recheck note 2026-10-17: the final measures are expected after the comment period closes on 2026-11-12. The next run that cites the opposition window re-checks CNIPA for the final text and updates china-market-entry-timeline in every locale if the rule changed.
+
+### Madrid designation of China: 18 months to refuse (Protocol-only office of origin), 12 months (Agreement and Protocol)
+- Value: 原属局为纯议定书缔约方指定中国的领土延伸申请，驳回期限为通知日期起18个月; 12 months when the office of origin is party to both; CNIPA issues no registration certificate for a Madrid designation (it sends WIPO a statement of grant of protection)
+- As of: October 2022 (FAQ dated 2022-10-15); WIPO declarations list updated 2026-10-08 confirms the 18 months (not cited)
+- Source: CNIPA Trademark Office (国家知识产权局商标局), 马德里商标国际注册申请常见问题回答
+- URL: https://sbj.cnipa.gov.cn/gjzn/2026/0830/53720.html
+- Verified 1: 2026-10-17, fetched with curl in the 09C run (session check.py, tag c1); "发布时间：2022-10-15" and both refusal-period strings confirmed
+- Verified 2: 2026-10-17, re-fetched at iteration 8 (tag c2) and again after the quality pass (tag c2b), unchanged
+- Used in: china-market-entry-timeline
+- Notes: Older than 12 months but the regulator's current FAQ and confirmed by WIPO in October 2026 (fallback 9).
+
+### China public holidays 2026: Spring Festival February 15 to 23 (9 days), National Day October 1 to 7
+- Value: 2月15日至23日放假调休，共9天 (make-up workdays Feb 14 and Feb 28); 10月1日至7日放假调休，共7天; 国办发明电〔2025〕7号
+- As of: November 2025 (notice published 2025-11-04)
+- Source: State Council General Office (国务院办公厅), 关于2026年部分节假日安排的通知, on gov.cn
+- URL: https://www.gov.cn/zhengce/content/202511/content_7047090.htm
+- Verified 1: 2026-10-17, fetched with curl in the 09C run (session check.py, tag c1); "国办发明电〔2025〕7号" and the two holiday strings confirmed
+- Verified 2: 2026-10-17, re-fetched at iteration 8 (tag c2) and again after the quality pass (tag c2b), unchanged
+- Used in: china-market-entry-timeline
+- Recheck note 2026-10-17: the 2027 holiday notice was not yet published (gov.cn policy library search, 2026-10-17; past notices came out between late October and early December). When it is out, log it here; any article giving holiday dates for planning cites the newer notice.
+
+### Cosmetics registration and filing measures (SAMR Order 35): ordinary filing completes on submission; special registration review 90 working days
+- Value: 提交备案资料后即完成备案 (ordinary cosmetics); 技术审评机构应当自收到申请资料之日起90个工作日内 complete technical review of special cosmetics; 技术审评机构收到补充资料后审评时限重新计算
+- As of: Order 35, 2021-01-07, in force 2021-05-01
+- Source: State Administration for Market Regulation (国家市场监督管理总局), 化妆品注册备案管理办法, on gov.cn
+- URL: https://www.gov.cn/zhengce/zhengceku/2021-01/12/content_5579239.htm
+- Verified 1: 2026-10-17, fetched with curl in the 09C run (session check.py, tag c1); "国家市场监督管理总局令第35号" and the three strings above confirmed
+- Verified 2: 2026-10-17, re-fetched at iteration 8 (tag c2) and again after the quality pass (tag c2b), unchanged
+- Used in: china-market-entry-timeline
+- Notes: Older than 12 months; the regulation in force (fallback 9). nmpa.gov.cn returns HTTP 412 to automated fetches; the gov.cn copy is the primary.
 
 ## Market and industry
 
@@ -1710,6 +1846,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-18, re-downloaded and re-extracted, unchanged, all seven strings re-confirmed
 - Used in: xiaohongshu-business-account-setup, chinese-entity-social-media
 - Notes: **This closes the review-time gap flagged in this ledger under the TheRedScroll launch timeline entry.** Brief 01C wanted a per-platform verification turnaround and none existed; this is the platform's own figure. Undated platform document, logged on the same basis as the enterprise guide and the merchant qualification PDF below. Extraction inserts spaces mid-phrase, so string checks need whitespace stripped.
+- Superseded in part 2026-10-17 (09C run): the 4 to 7 working day review time is replaced by the platform's current rules ("一般为 3个工作日", entry "Xiaohongshu enterprise verification rules, 2026"). The review-time citations of this deck were replaced in chinese-entity-social-media and xiaohongshu-business-account-setup in all five locales. Its account-type lines may still be cited.
 
 ### Xiaohongshu enterprise certification: what is reviewed, by whom, and the account types
 - Value: the platform reviews three things separately, entity qualification (账号资质), account name (账号名称) and verification information (账号认证信息); the official review service partner is 企晟互联网信息服务（上海）有限公司; the applying entity cannot be changed once review starts; two account types, company entity (企业主体) and company employee (企业员工), with 20 employee accounts per entity, raised from an earlier cap of 3; account names may be based on the business licence name, a trademark, a website or a software app and must follow 不侵权、不宽泛、无歧义; if a store is bound later the enterprise account name must match the store name; if every enterprise account under one entity posts seriously violating content that entity is barred from certifying enterprise accounts; the guide recommends certifying a brand-new account rather than converting a personal one; payment is by Alipay QR at the end of the form
@@ -1743,6 +1880,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-09-28 for 04B: "当前账号暂未开通广告投放相关功能", "【广告主账号】或【代理商账号】", "前往合作伙伴平台完成入驻流程" and "境内企业上传营业执照，境外企业上传BR/CR" confirmed (check 1 and check 2). File creation date in the PDF metadata: 2022-05-01, cited as May 2022. Precision: 代理商账号 is the sign-up path for agencies themselves (they go on to the partner platform), not an option an advertiser picks to be served by an agency.
 - Notes: **Two different translation stamps, do not conflate them.** Account verification wants a translation stamped by a translation company (see the eligibility entry above); ad qualification wants the registration document translation stamped with the brand owner's own seal. This document predates the February 2026 invitation-only rule for overseas advertisers (see the Juguang overseas entry above), so it describes the document set, not current self-serve access. Use both together.
 - Re-verified 2026-10-06 for 06A: PDF re-downloaded and extracted, "中文翻译件并加盖品牌方公章", "申请时间需届满三个月" and "商标注册证不可过期" confirmed at check 1 and check 2. Used in: china-marketing-hidden-costs.
+- Re-verified 2026-10-17 for 09C: "申请时间需届满三个月", "商标注册证不可过期" and "受理通知书" confirmed at check 1, check 2 and after the quality pass. Used in: china-market-entry-timeline.
 
 ### Xiaohongshu Juguang: marketing scenarios and shared account balance
 - Value: four marketing scenarios, product seeding (产品种草), product sales (商品销量), lead collection (客资收集) and livestream promotion (直播推广); platform address ad.xiaohongshu.com; the account cash and bonus balance and the account daily budget are shared with the professional account promotion centre, and same-day spend is the sum of both
@@ -1808,6 +1946,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-21, re-fetched, unchanged, all four strings re-confirmed
 - Used in: chinese-entity-social-media
 - Notes: **The most useful Weibo entry in this ledger.** It is the platform's own acknowledgement that overseas-verified enterprise accounts exist and that the route runs through an authorized overseas agent. It also documents a lock-in worth citing in any agency-relationship article: the agent that verified the account is a required party to moving it.
+- Re-verified 2026-10-17 for 09C: "认证时为您服务的海外代理商" confirmed at check 1, check 2 and after the quality pass. Used in: china-market-entry-timeline.
 
 ### Weibo non-mainland institution verification route
 - Value: non-mainland institutional subjects apply by email to vhelper@vip.sina.com rather than through the self-serve form; the file is an application form in Chinese, a chopped application letter, a chopped information form, a chopped copy of the 微博公约, the institution registration licence in Chinese or English (other languages need an original plus a translation chopped with the same seal as the licence), the contact's business card or employment proof and ID (passport for overseas contacts, ID card for mainland, Hong Kong and Macau, 台胞证 or residence permit for Taiwan), and an authorization letter if the nickname does not match the licence name
@@ -3805,6 +3944,7 @@ set to blocked by its draft run.
 - Verified 2: 2026-10-15, re-fetched (tags c2, c2b), unchanged
 - Used in: kol-campaign-no-roi
 - Notes: Platform-presented cases, older than 12 months (fallback 9, no newer platform figure found). Same-day versions on Adquan (face serum 29 days) and Growthbox (inflection day 30 vs day 7) passed check 1 only.
+- Re-verified 2026-10-17 for 09C: "其实是会在45天-60天左右发生拐点", "发现许多用户的决策周期长达60-90天" and "2024年12月20日" confirmed at check 1, check 2 and after the quality pass. Used in: china-market-entry-timeline.
 
 ### Creative that reads as an ad: Xingtu placement rules (November 2025) and Pugongying low-quality clean-up (October 2025)
 - Value: from 2025-11-12 Xingtu bars four abrupt placements (no lead-in, a stock interrupting line, a placement unrelated to the story, brand footage over half the frame); from 2025-10-01 Xiaohongshu runs a clean-up of stiff ad insertion and templated notes, with penalties including author-only or follower-only visibility and limited traffic
@@ -3883,6 +4023,25 @@ set to blocked by its draft run.
 - Cleared for publication: yes, published terms, not measured outcomes.
 - Additional URL: https://www.theredscroll.com/services/market-entry/; fetched twice on 2026-10-16, HTTP 200 both times. Confirmed social-launch scope excludes distributor selection, flagship store opening, and website construction.
 - Used in: china-social-media-agencies-compared.
+
+### TheRedScroll published entry timelines: about four weeks to a publishing WeChat account; "Live in 30 days"
+- Value: "Most clients go from signed contract to a live, publishing account in about four weeks" (/platforms/wechat/ FAQ); "Live in 30 days. Accounts verified, first content published, commerce infrastructure ready to take orders." (/services/market-entry/)
+- Sample: n/a (published planning statements, not measured data)
+- Period: live pages confirmed 2026-10-17 (check 1, check 2 and after the quality pass)
+- Exclusions: none
+- Cleared for publication: yes, published on /platforms/wechat/ and /services/market-entry/
+- Used in: china-market-entry-timeline
+- Notes: Quote as published and label as our planning figures, never as measured averages (fallback 3). Still no measured per-platform turnaround in this ledger.
+
+### NOT LOGGED, searched and rejected 2026-10-17 (09C, china-market-entry-timeline)
+- Filing-to-certificate "about 12 months", "6 to 9 months" review, "opposition 10 to 14 months", "4.5 months to certificate": law-firm and trademark-agent blogs only. CNIPA's own cycle figures are used instead.
+- Full-year 2025 or 2026 bad-faith crackdown totals: no allowed source.
+- A regulator rule that foreign brands must file a Chinese-character mark: none exists (2014 Regulations say only that filings are in Chinese and a foreign-word mark states its meaning). Given as our advice only.
+- "The revised Trademark Law took effect in July 2026": wrong, the law says 2027-01-01.
+- Weibo first enterprise Blue V review time: no platform page publishes one. kefu id=19938 (3 to 7 working days, updated 2025-02-24) covers creator and overseas personal verification, not companies.
+- Douyin enterprise review "1 to 3 working days": self-media and vendor pages only.
+- Month 4 to 6 benchmarks (cold-start length, search-share build-up, follower or lead benchmarks for new brand accounts): no official or trade-press figure. "24 hours of Shutiao, over 8% interaction" appears only on agency and self-media pages.
+- Third-party 2027 Spring Festival dates: estimates, not the State Council notice.
 
 ## Client figures
 

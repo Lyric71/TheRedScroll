@@ -1,10 +1,10 @@
 ---
 title: "Xiaohongshu para marcas extranjeras: la guía completa de 2026"
-description: "En China uno se informa en Xiaohongshu antes de comprar. Una marca extranjera puede verificar su cuenta con sus propios documentos registrales. Algunas categorías publicitarias siguen cerradas a las empresas extranjeras."
+description: "En China uno se informa en Xiaohongshu antes de comprar. Una marca extranjera puede verificar su cuenta con sus propios documentos registrales si procede de una región que la plataforma ha abierto. Algunas categorías publicitarias siguen cerradas a las empresas extranjeras."
 metaTitle: "Xiaohongshu: guía para marcas extranjeras"
 metaDescription: "Cómo se asientan las marcas extranjeras en Xiaohongshu en 2026: tipos de cuenta, formatos, búsqueda, seeding con KOC y lo que cuestan los primeros 90 días."
 publishDate: 2026-09-08
-updatedDate: 2026-10-02
+updatedDate: 2026-10-17
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Plataformas"
@@ -21,12 +21,13 @@ contenido se frena y cómo transcurre el primer mes.*
 Tres hechos ordenan todo lo demás. Xiaohongshu se parece más a un buscador con
 un feed acoplado que a una red social con buscador. Su público es joven,
 mayoritariamente femenino, urbano, y está a punto de gastar. La cuenta, en
-cambio, es la parte sencilla para una empresa extranjera. La publicidad
+cambio, es la parte sencilla para una empresa extranjera, siempre que proceda de
+una región que la plataforma haya abierto. La publicidad
 depende de su categoría, y la tienda tiene su propio papeleo.
 
 | Pregunta | Respuesta breve | Dónde se trata |
 |---|---|---|
-| ¿Podemos abrir una cuenta desde el extranjero? | Sí, una cuenta profesional de empresa con documentos extranjeros | Tipos de cuenta, reglas de entidad |
+| ¿Podemos abrir una cuenta desde el extranjero? | Sí, desde una región que la plataforma haya abierto, con documentos extranjeros | Tipos de cuenta, reglas de entidad |
 | ¿Podemos anunciarnos desde el extranjero? | Ninguna norma oficial exige un agente, pero algunas categorías siguen cerradas a las entidades extranjeras | Reglas de entidad |
 | ¿Qué contenido consigue alcance? | Notas de imagen y vídeo pensadas para la búsqueda, no para el feed | Contenido que funciona |
 | ¿Necesitamos influencers? | Primero creadores pequeños, la promoción de pago después | Seeding con KOC o pago |
@@ -35,7 +36,7 @@ depende de su categoría, y la tienda tiene su propio papeleo.
 Cada cifra de este artículo procede de los datos de la propia plataforma o de
 una fuente sectorial fechada, y la referencia va justo debajo. Donde no existe
 un dato, la guía lo dice en lugar de inventarlo. Todas las fuentes se
-comprobaron en septiembre de 2026.
+comprobaron en septiembre u octubre de 2026.
 
 ## Xiaohongshu es antes un buscador que una red social
 
@@ -132,6 +133,11 @@ guía de la plataforma.
 > caduca a los 30 días.
 > Fuente: guía de verificación de cuentas de empresa de Xiaohongshu (小红书), documento de la plataforma, comprobado en septiembre de 2026; New Rank (新榜), octubre de 2025. https://a.newrank.cn/trade/news/4199
 
+> Las normas de verificación vigentes de Xiaohongshu admiten a las compañías
+> extranjeras en función de las regiones y los sectores que la plataforma ha
+> abierto. Citan China continental, Hong Kong, Singapur y Malasia.
+> Fuente: normas de verificación de la cuenta profesional de empresa, centro de ayuda de Juguang de Xiaohongshu (小红书聚光帮助中心), documento de la plataforma, actualizado en octubre de 2026. https://ad.xiaohongshu.com/next_help/docs/195c5fe505c71b4b0335a2fe0d61d8e0
+
 Esa misma guía guarda tres detalles que los equipos extranjeros pasan por
 alto. Las entidades extranjeras se verifican desde el sitio de escritorio, no
 desde la aplicación. Todo documento que no esté en chino o en inglés necesita
@@ -150,7 +156,7 @@ tráfico de feed está agotada en tres días.
 Esta es la sección que decide presupuestos, de modo que va sin rodeos.
 
 **Puede** abrir y verificar una cuenta de empresa con los documentos
-registrales de su país. Publicar notas, responder comentarios, lanzar una
+registrales de su país, siempre que su región esté abierta. Publicar notas, responder comentarios, lanzar una
 [campaña de creadores vía Pugongying (蒲公英)](/es/servicios/marketing-influencia/)
 y consultar el panel completo: nada de eso plantea problemas.
 
@@ -366,9 +372,10 @@ La [guía del algoritmo de Xiaohongshu](/es/analisis/xiaohongshu-algorithm/) exp
 
 ### ¿Puede una empresa extranjera abrir una cuenta de Xiaohongshu sin entidad china?
 
-Sí. La guía de cuentas de empresa admite compañías extranjeras y compañías de
-Hong Kong, Macao y Taiwán a partir de sus documentos registrales de origen. La
-verificación se hace desde el sitio de escritorio, cuesta 600 yuanes al año y
+Sí, si su compañía está registrada en una región que la plataforma haya
+abierto. La guía de cuentas de empresa admite compañías extranjeras y compañías
+de Hong Kong, Macao y Taiwán a partir de sus documentos registrales de origen,
+y las normas vigentes nombran Hong Kong, Singapur y Malasia. La verificación se hace desde el sitio de escritorio, cuesta 600 yuanes al año y
 exige traducciones selladas para los documentos que no estén en chino o en
 inglés. La publicidad depende de que su categoría esté
 abierta a las entidades extranjeras, y la tienda exige papeleo adicional.
@@ -383,7 +390,9 @@ quien descubrió la aplicación por la prensa occidental.
 
 ### ¿Cuánto tarda la verificación Blue V?
 
-La plataforma no publica plazo de revisión. Su guía concede a cada pedido una
+Según las normas vigentes de la plataforma, la revisión suele durar tres días
+laborables, y algo más si el expediente es complejo, si se pide documentación
+adicional o si coincide con festivos. Su guía concede a cada pedido una
 ventana de 30 días y no reembolsa una revisión denegada. Por experiencia, una
 empresa continental con la documentación en regla se verifica en pocos días;
 una extranjera suele tardar de dos a tres semanas, porque las traducciones

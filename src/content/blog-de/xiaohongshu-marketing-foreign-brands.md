@@ -1,10 +1,10 @@
 ---
 title: "Xiaohongshu für ausländische Marken: der Leitfaden 2026"
-description: "In China informiert man sich auf Xiaohongshu, bevor man kauft. Eine ausländische Marke kann ihr Konto mit den eigenen Registerunterlagen verifizieren lassen. Manche Werbekategorien bleiben ausländischen Firmen noch verschlossen."
+description: "In China informiert man sich auf Xiaohongshu, bevor man kauft. Eine ausländische Marke aus einer freigegebenen Region kann ihr Konto mit den eigenen Registerunterlagen verifizieren lassen. Manche Werbekategorien bleiben ausländischen Firmen noch verschlossen."
 metaTitle: "Xiaohongshu: Leitfaden für ausländische Marken"
 metaDescription: "Wie ausländische Marken 2026 auf Xiaohongshu Fuß fassen: Kontotypen, Beitragsformate, die Suchebene, KOC-Seeding und was die ersten 90 Tage kosten."
 publishDate: 2026-09-08
-updatedDate: 2026-10-02
+updatedDate: 2026-10-17
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Plattformen"
@@ -21,13 +21,13 @@ ausweist, was gedrosselt wird und wie der erste Monat wirklich verläuft.*
 Drei Befunde bestimmen den weiteren Plan. Xiaohongshu ist eher eine
 Suchmaschine mit angehängtem Feed als ein soziales Netzwerk mit Suchfunktion.
 Das Publikum ist jung, überwiegend weiblich, städtisch und steht kurz vor dem
-Kauf. Das Konto wiederum ist für ein ausländisches Unternehmen der leichte
-Teil. Bei der Werbung entscheidet die Kategorie, und der Shop bringt eigene
+Kauf. Das Konto wiederum ist für ein ausländisches Unternehmen aus einer
+freigegebenen Region der leichte Teil. Bei der Werbung entscheidet die Kategorie, und der Shop bringt eigene
 Formalitäten mit.
 
 | Frage | Kurze Antwort | Wo es steht |
 |---|---|---|
-| Können wir ein Konto aus dem Ausland eröffnen? | Ja, ein Unternehmenskonto mit ausländischen Unterlagen | Kontotypen, Regeln zur Rechtsform |
+| Können wir ein Konto aus dem Ausland eröffnen? | Ja, aus einer freigegebenen Region und mit ausländischen Unterlagen | Kontotypen, Regeln zur Rechtsform |
 | Können wir aus dem Ausland Werbung schalten? | Keine offizielle Regel verlangt einen Agenten, doch manche Kategorien sind für ausländische Unternehmen gesperrt | Regeln zur Rechtsform |
 | Welche Inhalte bekommen Reichweite? | Bild- und Videobeiträge, gebaut für die Suche, nicht für den Feed | Inhalte, die funktionieren |
 | Brauchen wir Influencer? | Zuerst kleine Creator, bezahlte Verbreitung später | KOC-Seeding oder bezahlte Reichweite |
@@ -36,7 +36,7 @@ Formalitäten mit.
 Jede Zahl in diesem Text stammt aus den Angaben der Plattform selbst oder aus
 einer datierten Fachquelle, und der Beleg steht unmittelbar darunter. Wo es
 keine Zahl gibt, sagt der Leitfaden das, statt zu schätzen. Alle Quellen
-wurden im September 2026 geprüft.
+wurden im September oder Oktober 2026 geprüft.
 
 ## Xiaohongshu ist zuerst eine Suchmaschine und erst danach ein soziales Netzwerk
 
@@ -133,6 +133,12 @@ der Leitfaden der Plattform beschreibt.
 > jeder Auftrag verfällt nach 30 Tagen.
 > Quelle: Xiaohongshu (小红书), Leitfaden zur Verifizierung von Unternehmenskonten, Plattformdokument, geprüft im September 2026; New Rank (新榜), Oktober 2025. https://a.newrank.cn/trade/news/4199
 
+> Die aktuellen Verifizierungsregeln von Xiaohongshu lassen ausländische
+> Unternehmen nur aus den Regionen und Branchen zu, die die Plattform
+> freigegeben hat. Genannt werden Festlandchina, Hongkong, Singapur und
+> Malaysia.
+> Quelle: Xiaohongshu-Juguang-Hilfecenter (小红书聚光帮助中心), Regeln zur Verifizierung professioneller Unternehmenskonten, aktualisiert im Oktober 2026. https://ad.xiaohongshu.com/next_help/docs/195c5fe505c71b4b0335a2fe0d61d8e0
+
 Derselbe Leitfaden enthält drei Details, die ausländische Teams regelmäßig
 übersehen. Ausländische Rechtsträger verifizieren sich über die
 Desktop-Seite, nicht über die App. Jedes Dokument, das weder auf Chinesisch
@@ -152,7 +158,8 @@ welche. Eine Notiz, die allein vom Feed lebt, ist nach drei Tagen erledigt.
 Dieser Abschnitt entscheidet über Budgets. Deshalb ohne Umschweife.
 
 **Sie können** ein Unternehmenskonto mit den Registerunterlagen Ihres
-Heimatlandes eröffnen und verifizieren lassen. Notizen veröffentlichen,
+Heimatlandes eröffnen und verifizieren lassen, sofern Ihre Region freigegeben
+ist. Notizen veröffentlichen,
 Kommentare beantworten, eine
 [Creator-Kampagne über Pugongying (蒲公英)](/de/leistungen/influencer-marketing/)
 aufsetzen, das vollständige Dashboard einsehen: nichts davon bereitet
@@ -374,9 +381,11 @@ Wie die Plattform Beiträge auswählt und einordnet, erläutert unser [Leitfaden
 
 ### Kann ein ausländisches Unternehmen ohne chinesische Gesellschaft ein Xiaohongshu-Konto eröffnen?
 
-Ja. Der Leitfaden für Unternehmenskonten lässt ausländische Unternehmen sowie
-Unternehmen aus Hongkong, Macau und Taiwan mit ihren heimischen
-Registerunterlagen zu. Die Verifizierung läuft über die Desktop-Seite, kostet
+Ja, sofern Ihr Unternehmen in einer Region eingetragen ist, die die Plattform
+freigegeben hat. Der Leitfaden für Unternehmenskonten lässt ausländische
+Unternehmen sowie Unternehmen aus Hongkong, Macau und Taiwan mit ihren
+heimischen Registerunterlagen zu, und die aktuellen Regeln nennen Hongkong,
+Singapur und Malaysia. Die Verifizierung läuft über die Desktop-Seite, kostet
 600 Yuan im Jahr und verlangt gestempelte Übersetzungen für Dokumente, die
 weder auf Chinesisch noch auf Englisch vorliegen. Bei der Werbung kommt es
 darauf an, ob Ihre Kategorie für ausländische Unternehmen geöffnet ist, und
@@ -393,7 +402,9 @@ in der Planung Xiaohongshu und RedNote im Gespräch mit Menschen, die die App
 
 ### Wie lange dauert die Blue-V-Verifizierung?
 
-Eine Bearbeitungszeit veröffentlicht die Plattform nicht. Ihr Leitfaden räumt
+Nach den aktuellen Regeln der Plattform dauert die Prüfung in der Regel drei
+Arbeitstage, bei komplexen Unterlagen, nachgeforderten Dokumenten oder
+Feiertagen länger. Ihr Leitfaden räumt
 jedem Verifizierungsauftrag ein Fenster von 30 Tagen ein und erstattet eine
 abgelehnte Prüfung nicht. Nach unserer Erfahrung ist ein Unternehmen vom
 Festland mit sauberen Unterlagen binnen weniger Tage verifiziert; ein

@@ -4,6 +4,7 @@ description: "Operar Douyin suele salir más caro que Xiaohongshu o WeChat. Al p
 metaTitle: "Coste del marketing en Douyin: qué presupuestar"
 metaDescription: "Cuánto cuesta el marketing en Douyin en 2026: producción de vídeo, mínimos publicitarios, venta en directo, tarifas de KOL y tres niveles de presupuesto."
 publishDate: 2026-10-11
+updatedDate: 2026-10-17
 author: "TheRedScroll"
 platforms: ["douyin"]
 category: "Estrategia"
@@ -62,8 +63,8 @@ Hay dos trampas. La primera: la tarifa se cobra aunque la verificación no prosp
 
 Para una marca extranjera, todo depende de la entidad. Las preguntas frecuentes de Douyin de 2022 presentaban la cuenta de empresa como un producto para sociedades establecidas en China. En 2026, su centro de ayuda abrió una vía aparte.
 
-> El centro de ayuda de las cuentas de empresa de Douyin ofrece una guía de apertura en autoservicio para entidades extranjeras y de Hong Kong, Macao y Taiwán, actualizada el 19 de agosto de 2026. Recoge además una norma de revisión para entidades extranjeras y transfronterizas.
-> Fuente: centro de ayuda de las cuentas de empresa de Douyin (抖音企业号帮助中心), agosto de 2026. https://renzheng.douyin.com/support/content/227771?graphId=412&mappingType=2&spaceId=77
+> El centro de ayuda de las cuentas de empresa de Douyin ofrece una guía de apertura en autoservicio para entidades extranjeras y de Hong Kong, Macao y Taiwán, actualizada el 13 de octubre de 2026. Recoge además una norma de revisión para entidades extranjeras y transfronterizas.
+> Fuente: centro de ayuda de las cuentas de empresa de Douyin (抖音企业号帮助中心), octubre de 2026. https://renzheng.douyin.com/support/content/227771?graphId=412&mappingType=2&spaceId=77
 
 Ambos documentos exigen iniciar sesión, de modo que los requisitos, las tarifas y el plazo de revisión de esta vía no son públicos.
 

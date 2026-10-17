@@ -4,7 +4,7 @@ description: "Accounts can be live in two weeks. The Chinese name takes months t
 metaTitle: "Your First 90 Days on Chinese Social Media"
 metaDescription: "A realistic week-by-week timetable for launching a brand on Chinese social media, including verification waits, localization and first results."
 publishDate: 2026-09-10
-updatedDate: 2026-10-11
+updatedDate: 2026-10-17
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "Strategy"
@@ -34,7 +34,7 @@ The first month of posts looks weak in the dashboard, and that's normal.
 
 Every wait below comes from a platform's own help pages, the trademark
 office, or our own process, and each is cited where it appears. All sources
-were checked in September 2026.
+were checked in September or October 2026.
 
 ## Before week one: the four documents to have ready
 
@@ -62,6 +62,11 @@ adds a translation rule.
 > Chinese or English needs a translation stamped by a translation company.
 > Source: Xiaohongshu (小红书) enterprise account verification guide, platform document, confirmed September 2026. https://fe-video-qc.xhscdn.com/picasso-editor/7072d509ee7370545a056b6f9030a926e8879dca.pdf
 
+> Xiaohongshu's current verification rules support overseas companies by the
+> regions and industries the platform has opened. They name mainland China,
+> Hong Kong, Singapore, and Malaysia.
+> Source: Xiaohongshu Juguang help center (小红书聚光帮助中心), enterprise professional account verification rules, updated October 2026. https://ad.xiaohongshu.com/next_help/docs/195c5fe505c71b4b0335a2fe0d61d8e0
+
 The Xiaohongshu route has more to it than that document list. Our
 step-by-step guide to [Xiaohongshu business account setup](/insights/xiaohongshu-business-account-setup/)
 covers the desktop-only rule for overseas entities, the three naming tests
@@ -83,9 +88,9 @@ Since 2026, Douyin's help center has also listed a self-service route for
 overseas entities. Its documents, fee and review time sit behind a login.
 
 > Douyin's enterprise account help center lists a self-service onboarding
-> guide for Hong Kong, Macau, Taiwan and overseas entities, updated August 19,
+> guide for Hong Kong, Macau, Taiwan and overseas entities, updated October 13,
 > 2026.
-> Source: Douyin Enterprise Account Help Center (抖音企业号帮助中心), August 2026. https://renzheng.douyin.com/support/content/227771?graphId=412&mappingType=2&spaceId=77
+> Source: Douyin Enterprise Account Help Center (抖音企业号帮助中心), October 2026. https://renzheng.douyin.com/support/content/227771?graphId=412&mappingType=2&spaceId=77
 
 So a pre-entry brand tests that overseas route, opens Douyin through a
 mainland entity it already has, or leaves it for a later phase. Ask your
@@ -93,7 +98,7 @@ agency which applies before the launch date is set.
 
 | Document | WeChat Official Account | Xiaohongshu enterprise account | Douyin enterprise account |
 |---|---|---|---|
-| Company registration certificate | Overseas certificate accepted | Overseas certificate accepted | Chinese business license (overseas route not public) |
+| Company registration certificate | Overseas certificate accepted | Overseas certificate accepted, opened regions only | Chinese business license (overseas route not public) |
 | Contact or operator ID | Both sides, color scan | Operator details on the form | Legal representative ID for sole traders |
 | Application letter | Chinese or English template | Platform template | Platform template |
 | Operation authorization letter | Required | Not listed | Not listed |
@@ -107,8 +112,8 @@ Everything else is platform-specific and small.
 
 ## Weeks 1 to 2: how to start social media marketing in China from abroad
 
-The first decision is which entity applies. WeChat (微信) and Xiaohongshu
-(小红书) accept an overseas company. Douyin (抖音), as above, is built for a
+The first decision is which entity applies. WeChat (微信) accepts an overseas
+company, and Xiaohongshu (小红书) does from the regions it has opened. Douyin (抖音), as above, is built for a
 Chinese one, and its overseas route is not public. Settle this in week one, because it decides which accounts can
 be live in week two.
 [Our platform-by-platform answer on whether you need a Chinese entity](/insights/chinese-entity-social-media/)
@@ -142,8 +147,12 @@ account, and it has to be a service account.
 > becomes usable after verification.
 > Source: Tencent customer service (腾讯客服), overseas entity service account registration, confirmed September 2026. https://kf.qq.com/faq/180312zQjeYV180312FNNbmA.html
 
-Xiaohongshu publishes no review time. What it publishes is a deadline, a fee,
-and a rule about where to apply.
+Xiaohongshu publishes a review time, a deadline, a fee, and a rule about
+where to apply.
+
+> Xiaohongshu's current verification rules say review generally takes three
+> working days, longer for complex files, extra documents, or holidays.
+> Source: Xiaohongshu Juguang help center (小红书聚光帮助中心), enterprise professional account verification rules, updated October 2026. https://ad.xiaohongshu.com/next_help/docs/195c5fe505c71b4b0335a2fe0d61d8e0
 
 > Xiaohongshu enterprise verification costs 600 yuan per application, is
 > valid for one year with an annual review, and each order expires after 30
@@ -191,7 +200,8 @@ day 90. The accounts launch under it anyway. Both platform guides quoted
 above let an account name follow the registered company name or a trademark,
 so a brand without a Chinese trademark launches on its registered name and
 carries the Chinese name in the profile and the content until the filing
-clears.
+clears. [Our six-month China market entry timeline](/insights/china-market-entry-timeline/)
+maps the trademark track month by month, beside the accounts and the content.
 
 Localization in these two weeks also covers the profile: a bio that reads
 like a Chinese brand statement rather than a translated tagline, a customer

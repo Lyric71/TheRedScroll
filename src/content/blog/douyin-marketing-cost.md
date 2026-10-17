@@ -4,6 +4,7 @@ description: "Douyin usually costs more to run than Xiaohongshu or WeChat. At on
 metaTitle: "Douyin Marketing Cost: What to Budget"
 metaDescription: "What Douyin marketing costs in 2026: video production, ad minimums, live commerce operating costs, KOL fees and three realistic budget levels."
 publishDate: 2026-10-11
+updatedDate: 2026-10-17
 author: "TheRedScroll"
 platforms: ["douyin"]
 category: "Strategy"
@@ -82,9 +83,9 @@ describe the enterprise account as one for companies in China. In 2026 its help
 center added a separate route.
 
 > Douyin's enterprise help center lists a self-service onboarding guide for
-> overseas, Hong Kong, Macau and Taiwan entities, updated August 19, 2026. It
+> overseas, Hong Kong, Macau and Taiwan entities, updated October 13, 2026. It
 > also lists a review rulebook for overseas and cross-border entities.
-> Source: Douyin Enterprise Account Help Center (抖音企业号帮助中心), August 2026. https://renzheng.douyin.com/support/content/227771?graphId=412&mappingType=2&spaceId=77
+> Source: Douyin Enterprise Account Help Center (抖音企业号帮助中心), October 2026. https://renzheng.douyin.com/support/content/227771?graphId=412&mappingType=2&spaceId=77
 
 Both documents sit behind a login, so the papers, fee and review time for that
 route aren't public.

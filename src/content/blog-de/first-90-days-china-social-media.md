@@ -4,7 +4,7 @@ description: "In zwei Wochen stehen die Konten. Der chinesische Markenname brauc
 metaTitle: "Chinas soziale Netzwerke: die ersten 90 Tage"
 metaDescription: "Konten, Verifizierung, chinesischer Name, erste Inhalte, erste Anfragen: der Ablauf eines Markenstarts in China, Woche für Woche aufgeschlüsselt."
 publishDate: 2026-09-10
-updatedDate: 2026-10-11
+updatedDate: 2026-10-17
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "Strategie"
@@ -36,7 +36,7 @@ Ungewöhnlich ist daran nichts.
 
 Jede Wartezeit weiter unten stammt aus den Hilfeseiten einer Plattform, vom
 chinesischen Markenamt oder aus unserem eigenen Ablauf; die Quelle steht
-jeweils direkt bei der Zahl. Geprüft wurden sie sämtlich im September 2026.
+jeweils direkt bei der Zahl. Geprüft wurden sie sämtlich im September oder Oktober 2026.
 
 ## Vor Woche 1: vier Unterlagen, die bereitliegen sollten
 
@@ -68,6 +68,12 @@ Art, ergänzt um eine Vorgabe zu Übersetzungen.
 > braucht eine von einem Übersetzungsbüro gestempelte Übersetzung.
 > Quelle: Xiaohongshu (小红书), Leitfaden zur Verifizierung von Unternehmenskonten, Plattformdokument, geprüft im September 2026. https://fe-video-qc.xhscdn.com/picasso-editor/7072d509ee7370545a056b6f9030a926e8879dca.pdf
 
+> Die aktuellen Verifizierungsregeln von Xiaohongshu lassen ausländische
+> Unternehmen nur aus den Regionen und Branchen zu, die die Plattform
+> freigegeben hat. Genannt werden Festlandchina, Hongkong, Singapur und
+> Malaysia.
+> Quelle: Xiaohongshu-Juguang-Hilfecenter (小红书聚光帮助中心), Regeln zur Verifizierung professioneller Unternehmenskonten, aktualisiert im Oktober 2026. https://ad.xiaohongshu.com/next_help/docs/195c5fe505c71b4b0335a2fe0d61d8e0
+
 Der Xiaohongshu-Weg endet nicht bei dieser Unterlagenliste. Unser [Leitfaden
 zur Einrichtung eines Xiaohongshu-Unternehmenskontos](/de/analysen/xiaohongshu-business-account-setup/)
 behandelt die Browserpflicht für ausländische Gesellschaften, die drei
@@ -91,8 +97,8 @@ Prüfdauer sind erst nach dem Login einsehbar.
 
 > Das Hilfecenter für Douyin-Unternehmenskonten führt einen Leitfaden zur
 > Selbstregistrierung für Gesellschaften aus Hongkong, Macau, Taiwan und
-> dem Ausland, aktualisiert am 19. August 2026.
-> Quelle: Douyin-Hilfecenter für Unternehmenskonten (抖音企业号帮助中心), August 2026. https://renzheng.douyin.com/support/content/227771?graphId=412&mappingType=2&spaceId=77
+> dem Ausland, aktualisiert am 13. Oktober 2026.
+> Quelle: Douyin-Hilfecenter für Unternehmenskonten (抖音企业号帮助中心), Oktober 2026. https://renzheng.douyin.com/support/content/227771?graphId=412&mappingType=2&spaceId=77
 
 Einer Marke vor dem Markteintritt bleiben damit drei Wege: diesen
 Auslandsweg testen, Douyin über eine chinesische Rechtsform eröffnen, die
@@ -101,7 +107,7 @@ Agentur, bevor ein Starttermin steht. Nicht danach.
 
 | Unterlage | WeChat Official Account | Xiaohongshu Unternehmenskonto | Douyin Unternehmenskonto |
 |---|---|---|---|
-| Registerbescheinigung | Ausländische Bescheinigung akzeptiert | Ausländische Bescheinigung akzeptiert | Chinesische Gewerbeerlaubnis (Auslandsweg nicht öffentlich) |
+| Registerbescheinigung | Ausländische Bescheinigung akzeptiert | Ausländische Bescheinigung akzeptiert, nur aus freigegebenen Regionen | Chinesische Gewerbeerlaubnis (Auslandsweg nicht öffentlich) |
 | Ausweis der Kontaktperson oder des Betreibers | Beide Seiten, Farbscan | Betreiberangaben im Formular | Ausweis des gesetzlichen Vertreters bei Einzelunternehmen |
 | Antragsschreiben | Vorlage auf Chinesisch oder Englisch | Vorlage der Plattform | Vorlage der Plattform |
 | Betriebsvollmacht | Erforderlich | Nicht aufgeführt | Nicht aufgeführt |
@@ -116,9 +122,9 @@ von Plattform zu Plattform verschieden aus und wiegt kaum.
 
 ## Woche 1 und 2: der Start aus dem Ausland
 
-Zuerst ist zu klären, welche Rechtsform den Antrag stellt. WeChat (微信) und
-Xiaohongshu (小红书) akzeptieren ein ausländisches Unternehmen; Douyin (抖音)
-ist, wie beschrieben, auf ein chinesisches zugeschnitten, und sein Auslandsweg
+Zuerst ist zu klären, welche Rechtsform den Antrag stellt. WeChat (微信)
+akzeptiert ein ausländisches Unternehmen, Xiaohongshu (小红书) eines aus den
+Regionen, die es freigegeben hat; Douyin (抖音) ist, wie beschrieben, auf ein chinesisches zugeschnitten, und sein Auslandsweg
 ist nicht öffentlich dokumentiert. Der Punkt gehört in Woche 1, denn von ihm
 hängt ab, welche Konten in Woche 2 stehen können.
 [Unsere Analyse, Plattform für Plattform, ob Sie eine chinesische Gesellschaft brauchen](/de/analysen/chinese-entity-social-media/)
@@ -152,8 +158,13 @@ Rechtsform, und dieses Konto ist zwingend ein Service-Account.
 > Typ Service-Account. Nutzbar wird das Konto nach der Verifizierung.
 > Quelle: Tencent Kundenservice (腾讯客服), Registrierung eines Service-Accounts für ausländische Rechtsformen, geprüft im September 2026. https://kf.qq.com/faq/180312zQjeYV180312FNNbmA.html
 
-Xiaohongshu wiederum nennt keine Prüfdauer, sondern eine Frist, eine Gebühr
-und den Ort, an dem der Antrag zu stellen ist.
+Xiaohongshu wiederum nennt eine Prüfdauer, eine Frist, eine Gebühr und den
+Ort, an dem der Antrag zu stellen ist.
+
+> Nach den aktuellen Verifizierungsregeln von Xiaohongshu dauert die Prüfung
+> in der Regel drei Arbeitstage, bei komplexen Unterlagen, nachgeforderten
+> Dokumenten oder Feiertagen länger.
+> Quelle: Xiaohongshu-Juguang-Hilfecenter (小红书聚光帮助中心), Regeln zur Verifizierung professioneller Unternehmenskonten, aktualisiert im Oktober 2026. https://ad.xiaohongshu.com/next_help/docs/195c5fe505c71b4b0335a2fe0d61d8e0
 
 > Die Unternehmensverifizierung bei Xiaohongshu kostet 600 Yuan je Antrag,
 > gilt ein Jahr mit jährlicher Prüfung, und jeder Auftrag verfällt nach 30
@@ -207,7 +218,8 @@ erst deutlich nach Tag 90 geschützt sein. Die Konten starten trotzdem. Beide
 oben zitierten Leitfäden lassen einen Kontonamen zu, der der eingetragenen
 Firma oder einer Marke folgt: Ohne chinesische Anmeldung startet eine Marke
 unter ihrem eingetragenen Namen und führt den chinesischen Namen so lange im
-Profil und in den Inhalten, bis die Anmeldung durch ist.
+Profil und in den Inhalten, bis die Anmeldung durch ist. [Unser Sechsmonatsplan für den Markteintritt in China](/de/analysen/china-market-entry-timeline/)
+zeigt den Markenstrang Monat für Monat, neben den Konten und den Inhalten.
 
 Zur Lokalisierung dieser beiden Wochen zählt auch das Profil selbst: eine
 Beschreibung, die nach chinesischer Marke klingt und nicht nach übersetztem

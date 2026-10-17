@@ -4,7 +4,7 @@ description: "Le plus souvent, non, du moins au démarrage. WeChat et Xiaohongsh
 metaTitle: "Réseaux sociaux en Chine : une société locale ?"
 metaDescription: "WeChat, Xiaohongshu, Douyin, Weibo : ce que chaque plateforme accepte d’une marque étrangère sans société chinoise, et où se situent les vraies limites."
 publishDate: 2026-09-24
-updatedDate: 2026-10-11
+updatedDate: 2026-10-17
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Stratégie"
@@ -18,7 +18,7 @@ La question surgit dès le premier rendez-vous commercial, et elle le fait souve
 | Plateforme | Ce que dit la plateforme | Pièces à fournir | Frais de certification |
 |---|---|---|---|
 | WeChat (微信) | Entités étrangères admises, un seul compte | Certificat d’immatriculation, lettres revêtues du cachet | 99 dollars par an |
-| Xiaohongshu (小红书) | Entités étrangères admises en toutes lettres | BR ou CR, traduction chinoise tamponnée | 600 yuans par an |
+| Xiaohongshu (小红书) | Entités étrangères des régions ouvertes | BR ou CR, traduction chinoise tamponnée | 600 yuans par an |
 | Weibo (微博) | Entités étrangères via un agent | Hors du formulaire en libre-service | 600 yuans |
 | Douyin (抖音) | Une voie pour l’étranger, détail accessible après connexion | Licence chinoise sur les pages publiques | 600 yuans la première année (Chine continentale) |
 
@@ -56,17 +56,22 @@ Sur WeChat, rester à l’étranger se paie donc d’une quinzaine de jours d’
 
 ## Ce qu’une entité étrangère peut faire sur Xiaohongshu
 
-Xiaohongshu (小红书), que le site désigne aussi sous le nom de RedNote, admet explicitement les sociétés étrangères. Son guide de certification des entreprises les cite d’un même souffle avec celles de Chine continentale, de Hong Kong, de Macao et de Taïwan.
+Xiaohongshu (小红书), que le site désigne aussi sous le nom de RedNote, admet explicitement les sociétés étrangères, mais pas d’où qu’elles viennent. Son guide de certification des entreprises les cite d’un même souffle avec celles de Chine continentale, de Hong Kong, de Macao et de Taïwan. Ses règles en vigueur limitent pourtant cet accueil aux régions que la plateforme a ouvertes.
 
 > La certification des comptes entreprise est ouverte aux sociétés de Chine continentale, aux sociétés étrangères et à celles de Hong Kong, Macao et Taïwan. Les frais s’élèvent à 600 yuans par demande, valables un an, avec un réexamen annuel. Les entités étrangères effectuent la certification, les réexamens annuels et les changements de nom uniquement sur la version web.
 > Source : Xiaohongshu (小红书), guide de certification du compte entreprise, documentation de la plateforme, confirmé en septembre 2026. https://fe-video-qc.xhscdn.com/picasso-editor/7072d509ee7370545a056b6f9030a926e8879dca.pdf
+
+> Les règles de certification en vigueur admettent les sociétés étrangères selon les régions et les secteurs que la plateforme a ouverts. Elles citent la Chine continentale, Hong Kong, Singapour et la Malaisie.
+> Source : centre d’aide Juguang de Xiaohongshu (小红书聚光帮助中心), règles de certification du compte professionnel entreprise, mises à jour en octobre 2026. https://ad.xiaohongshu.com/next_help/docs/195c5fe505c71b4b0335a2fe0d61d8e0
+
+Une société immatriculée ailleurs doit donc s’assurer que sa région est ouverte avant de bâtir le moindre plan autour de Xiaohongshu.
 
 À la place d’une licence chinoise, une société étrangère fournit un Business Registration ou un Certificate of Incorporation ; une société hongkongaise fournit les deux. Tout document rédigé dans une autre langue que le chinois doit être traduit et porter le cachet d’une société de traduction. [Notre guide pas à pas pour ouvrir un compte entreprise Xiaohongshu](/fr/decryptages/xiaohongshu-business-account-setup/) détaille les écrans et les motifs de refus.
 
 Fait rare, le délai d’examen est publié.
 
-> Après le dépôt d’une demande entreprise, un examinateur prend contact sous 1 jour ouvré, et l’examen s’achève en 4 à 7 jours ouvrés en moyenne. Un ordre d’examen reste valable 30 jours.
-> Source : Xiaohongshu (小红书), guide produit du compte professionnel, documentation de la plateforme, confirmé en septembre 2026. https://fe-video-qc.xhscdn.com/fe-platform/68e374e4257bd30bc07eed15c06cb8b9a51f971b.pdf
+> Selon les règles de certification en vigueur, l’examen prend en général trois jours ouvrés, davantage pour un dossier complexe, en cas de pièces complémentaires ou pendant les jours fériés.
+> Source : centre d’aide Juguang de Xiaohongshu (小红书聚光帮助中心), règles de certification du compte professionnel entreprise, mises à jour en octobre 2026. https://ad.xiaohongshu.com/next_help/docs/195c5fe505c71b4b0335a2fe0d61d8e0
 
 Acheter de la publicité est une autre étape, avec ses propres règles pour les sociétés étrangères. La source citée ici est un guide spécialisé, non la documentation officielle de la plateforme.
 
@@ -102,8 +107,8 @@ Douyin (抖音) affiche désormais une voie pour les entités étrangères, sans
 
 Ces pages datent de 2022. En 2026, le centre d’aide entreprise de Douyin s’est enrichi de deux rubriques : un guide d’inscription en libre-service pour les entités étrangères et un règlement d’examen distinct pour les candidats étrangers et transfrontaliers.
 
-> Le centre d’aide du compte entreprise Douyin répertorie un guide d’inscription en libre-service pour les entités de Hong Kong, Macao, Taïwan et de l’étranger, mis à jour le 19 août 2026, ainsi qu’un règlement d’examen de la certification pour les entités étrangères et transfrontalières, daté du 18 mai 2026.
-> Source : centre d’aide du compte entreprise Douyin (抖音企业号帮助中心), août 2026. https://renzheng.douyin.com/support/content/227771?graphId=412&mappingType=2&spaceId=77
+> Le centre d’aide du compte entreprise Douyin répertorie un guide d’inscription en libre-service pour les entités de Hong Kong, Macao, Taïwan et de l’étranger, mis à jour le 13 octobre 2026, ainsi qu’un règlement d’examen de la certification pour les entités étrangères et transfrontalières, daté du 18 mai 2026.
+> Source : centre d’aide du compte entreprise Douyin (抖音企业号帮助中心), octobre 2026. https://renzheng.douyin.com/support/content/227771?graphId=412&mappingType=2&spaceId=77
 
 Les deux documents ne s’ouvrent qu’après connexion : les pièces, les frais et le délai d’examen de cette voie ne sont donc pas rendus publics. Sur le papier, Douyin n’est plus fermé aux sociétés étrangères. Il reste opaque. Si Douyin occupe une place centrale dans votre plan, demandez à votre agence d’explorer la voie étrangère avant de budgéter une entité en Chine continentale.
 
@@ -220,14 +225,14 @@ Une agence incapable de répondre aux trois par écrit en dit déjà long.
 
 | Votre situation | Par où commencer | Faut-il une entité ? |
 |---|---|---|
-| Vous testez la demande, sans chiffre d’affaires en Chine | Compte de service WeChat et Xiaohongshu, tous deux au nom de votre propre entité | Non |
+| Vous testez la demande, sans chiffre d’affaires en Chine | Compte de service WeChat et Xiaohongshu (si votre région est ouverte), tous deux au nom de votre propre entité | Non |
 | Vous vendez aux consommateurs, sans stock en Chine continentale | Importation de détail transfrontalière, dans les limites de 5 000 et 26 000 yuans | Non |
 | Vous êtes prêt à acheter de la publicité sur Xiaohongshu | Votre propre compte, après vérification de la liste réservée aux entités étrangères | Non, si votre catégorie est ouverte |
 | Douyin est au cœur du plan | D’abord la voie étrangère de Douyin, une entité en Chine continentale en cas d’échec | Peut-être |
 | Vous recrutez sur place, facturez en yuans, détenez du stock | Une société en Chine continentale | Oui |
 | Une agence vous propose un compte sur sa licence | Obtenir d’abord les trois réponses contractuelles | Non, mais lisez la clause 6.1 |
 
-Le message de ce tableau est simple. La question de l’entité est une question de calendrier. La plupart des marques étrangères ont intérêt à se lancer au nom de leur propre entité, à observer ce qui fait réagir leur public, puis à immatriculer une société en Chine continentale lorsque la publicité, les recrutements ou le stock la rentabilisent. [Notre guide des 90 premiers jours sur les réseaux sociaux chinois](/fr/decryptages/first-90-days-china-social-media/) décrit concrètement ce lancement.
+Le message de ce tableau est simple. La question de l’entité est une question de calendrier. La plupart des marques étrangères ont intérêt à se lancer au nom de leur propre entité, à observer ce qui fait réagir leur public, puis à immatriculer une société en Chine continentale lorsque la publicité, les recrutements ou le stock la rentabilisent. [Notre guide des 90 premiers jours sur les réseaux sociaux chinois](/fr/decryptages/first-90-days-china-social-media/) décrit concrètement ce lancement. [Notre calendrier d’entrée sur le marché chinois en six mois](/fr/decryptages/china-market-entry-timeline/) aligne, pour un dossier de conseil d’administration, les volets marque, comptes et contenus.
 
 Dernière mise en garde : les règles d’accès des plateformes changent plus vite que le droit des sociétés. Tout ce qui figure ici a été vérifié sur les documents sources en septembre et en octobre 2026. Consultez la version en vigueur avant de déposer quoi que ce soit.
 

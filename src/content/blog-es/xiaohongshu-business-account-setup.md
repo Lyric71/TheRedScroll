@@ -1,10 +1,10 @@
 ---
 title: "Cuenta de empresa en Xiaohongshu: el camino para una firma extranjera"
-description: "Para verificar una cuenta de empresa en Xiaohongshu no hace falta una sociedad china. Hacen falta los documentos correctos en el orden correcto, y empezar en el navegador y no en la aplicación."
+description: "Si su empresa está en una región que la plataforma ha abierto, no hace falta una sociedad china para verificar una cuenta de empresa en Xiaohongshu. Hacen falta los documentos correctos en el orden correcto, y empezar en el navegador y no en la aplicación."
 metaTitle: "Cuenta de empresa en Xiaohongshu: guía"
 metaDescription: "Abrir una cuenta de empresa en Xiaohongshu desde el extranjero: documentos, verificación Blue V, tasas, motivos de rechazo y plazos de revisión."
 publishDate: 2026-09-22
-updatedDate: 2026-10-02
+updatedDate: 2026-10-17
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Plataformas"
@@ -13,7 +13,7 @@ featured: false
 featuredImage: "/images/blog/xiaohongshu-business-account-setup.webp"
 ---
 
-Xiaohongshu (小红书), conocida también como RedNote, admite solicitudes de empresas extranjeras sin intermediario obligatorio. Lo dice su propia guía de verificación. Abrir una cuenta de empresa en Xiaohongshu no encalla, por tanto, en la elegibilidad: encalla en los documentos, en unas reglas de denominación que casi nadie lee a tiempo y en una revisión que lanza en silencio tres controles distintos sobre un solo expediente.
+Xiaohongshu (小红书), conocida también como RedNote, admite solicitudes de empresas extranjeras sin intermediario obligatorio, siempre que procedan de una región que la plataforma haya abierto. Sus normas vigentes citan Hong Kong, Singapur y Malasia. Para una empresa de una región abierta, abrir una cuenta de empresa en Xiaohongshu no encalla en la elegibilidad: encalla en los documentos, en unas reglas de denominación que casi nadie lee a tiempo y en una revisión que lanza en silencio tres controles distintos sobre un solo expediente.
 
 Esto conviene tenerlo listo antes de empezar.
 
@@ -26,7 +26,7 @@ Esto conviene tenerlo listo antes de empezar.
 | Dónde se solicita | Aplicación o navegador | Solo navegador |
 | Tasa de verificación | 600 yuanes al año | 600 yuanes al año |
 
-La tasa es modesta; la revisión, no. Calcule de cuatro a siete días laborables para un expediente limpio, y más para un primer intento: la plataforma comprueba por separado su entidad, el nombre de la cuenta y los datos de verificación, y cualquiera de los tres basta para devolverle el expediente.
+La tasa es modesta; la revisión, no. La plataforma habla de tres días laborables para un expediente limpio. Calcule más para un primer intento, porque se comprueban por separado su entidad, el nombre de la cuenta y los datos de verificación, y cualquiera de los tres basta para devolverle el expediente.
 
 Todas las fuentes de este artículo se comprobaron dos veces, en septiembre u octubre de 2026.
 
@@ -108,6 +108,11 @@ Las empresas extranjeras solicitan por otra vía que las chinas, y ese detalle e
 > cambios de nombre han de hacerse en la web. Cada orden de revisión vale 30
 > días.
 > Fuente: Xiaohongshu (小红书), guía de verificación de la cuenta de empresa, documentación de la plataforma, comprobada en septiembre de 2026. https://fe-video-qc.xhscdn.com/picasso-editor/7072d509ee7370545a056b6f9030a926e8879dca.pdf
+
+> Las normas de verificación vigentes de Xiaohongshu admiten a las empresas
+> extranjeras en función de las regiones y los sectores que la plataforma ha
+> abierto. Citan China continental, Hong Kong, Singapur y Malasia.
+> Fuente: centro de ayuda de Juguang de Xiaohongshu (小红书聚光帮助中心), normas de verificación de la cuenta profesional de empresa, documentación de la plataforma, actualizadas en octubre de 2026. https://ad.xiaohongshu.com/next_help/docs/195c5fe505c71b4b0335a2fe0d61d8e0
 
 Si opera desde fuera de China, olvide la aplicación en este paso. Entre en la plataforma de empresa desde un navegador. Los equipos que empiezan en la aplicación llegan a la pantalla de pago, pagan y descubren después que el flujo no acepta sus documentos.
 
@@ -213,7 +218,7 @@ Existe además una sanción que alcanza a toda la sociedad y no a una cuenta.
 
 Menos de lo que imagina, y más de lo que la plataforma reconoce en un solo sitio.
 
-Puede verificar. La guía de empresa cita a las sociedades extranjeras y a las de Hong Kong, Macao y Taiwán entre las elegibles, y la lista de documentos de la plataforma publicitaria le dedica una columna. Lo que cambia es el itinerario.
+Puede verificar, si su sociedad está registrada en una región que la plataforma haya abierto. La guía de empresa cita a las sociedades extranjeras y a las de Hong Kong, Macao y Taiwán entre las elegibles, las normas vigentes nombran Hong Kong, Singapur y Malasia, y la lista de documentos de la plataforma publicitaria le dedica una columna. Lo que cambia es el itinerario.
 
 Solicita en la web, nunca en la aplicación. Presenta un Business Registration o un Certificate of Incorporation en lugar de una licencia de actividad, y los dos si es una sociedad de Hong Kong. Añade traducciones con el sello que corresponde en cada caso. Vende por la vía transfronteriza en vez de por una tienda continental. Y antes de comprar publicidad, coteja su categoría con una lista de admisión aparte, reservada a las entidades extranjeras.
 
@@ -229,11 +234,12 @@ Una razón para aguantar todo esto.
 
 La plataforma publica sus propios plazos de revisión, algo más raro de lo que debería ser.
 
-> Tras presentar una solicitud de cuenta profesional de empresa, un
-> especialista de revisión contacta en el plazo de un día laborable y la
-> revisión se completa en cuatro a siete días laborables de media. Cada orden
-> de revisión vale 30 días.
-> Fuente: Xiaohongshu (小红书), guía de producto de la cuenta profesional, documentación de la plataforma, comprobada en septiembre de 2026. https://fe-video-qc.xhscdn.com/fe-platform/68e374e4257bd30bc07eed15c06cb8b9a51f971b.pdf
+> Según las normas de verificación vigentes de Xiaohongshu, la revisión suele
+> durar tres días laborables, y algo más si el expediente es complejo, si se
+> pide documentación adicional o si hay festivos de por medio.
+> Fuente: centro de ayuda de Juguang de Xiaohongshu (小红书聚光帮助中心), normas de verificación de la cuenta profesional de empresa, documentación de la plataforma, actualizadas en octubre de 2026. https://ad.xiaohongshu.com/next_help/docs/195c5fe505c71b4b0335a2fe0d61d8e0
+
+Cada orden de revisión sigue vigente 30 días.
 
 Sume delante su propio tiempo de preparación. Encargar traducciones juradas, sacar una carta de autorización de una sede y confirmar qué entidad solicita en realidad llevan todos más tiempo que la revisión. De dos a tres semanas entre la decisión y la cuenta verificada es un plan realista para una primera solicitud. [Nuestra guía de los primeros 90 días en las redes sociales chinas](/es/analisis/first-90-days-china-social-media/) sitúa este paso dentro de un lanzamiento.
 
@@ -248,11 +254,11 @@ Lo que cobra una agencia por llevar la apertura es otra cuestión. Publicamos un
 
 ### ¿Se puede abrir una cuenta de empresa en Xiaohongshu sin sociedad china?
 
-Sí. Xiaohongshu (小红书) cita a las sociedades extranjeras y a las de Hong Kong, Macao y Taiwán entre las elegibles en su guía de verificación de empresa. La solicitud se hace en la plataforma de empresa desde el navegador y no en la aplicación, y presenta un Business Registration o un Certificate of Incorporation en lugar de una licencia de actividad continental. Las sociedades de Hong Kong presentan los dos. Todo documento que no esté en chino necesita traducción sellada.
+Sí, si su sociedad está registrada en una región que la plataforma haya abierto. Xiaohongshu (小红书) cita a las sociedades extranjeras y a las de Hong Kong, Macao y Taiwán entre las elegibles en su guía de verificación de empresa, y sus normas vigentes nombran Hong Kong, Singapur y Malasia. La solicitud se hace en la plataforma de empresa desde el navegador y no en la aplicación, y presenta un Business Registration o un Certificate of Incorporation en lugar de una licencia de actividad continental. Las sociedades de Hong Kong presentan los dos. Todo documento que no esté en chino necesita traducción sellada.
 
 ### ¿Cuánto cuesta la verificación Blue V y cuánto tarda?
 
-Cuesta 600 yuanes por solicitud. Vale un año desde la aprobación y se mantiene activa con una revisión anual. Si la solicitud se rechaza, la tasa no se devuelve. La plataforma indica que un revisor contacta en un día laborable y que la revisión tarda de cuatro a siete días laborables de media. Su orden de revisión caduca a los 30 días.
+Cuesta 600 yuanes por solicitud. Vale un año desde la aprobación y se mantiene activa con una revisión anual. Si la solicitud se rechaza, la tasa no se devuelve. La plataforma indica que la revisión suele durar tres días laborables, y algo más si el expediente es complejo, si se pide documentación adicional o si coincide con festivos. Su orden de revisión caduca a los 30 días.
 
 ### ¿Por qué me rechazaron la solicitud en Xiaohongshu?
 

@@ -4,6 +4,7 @@ description: "Launch on Xiaohongshu (小红书) first if Chinese buyers don't kn
 metaTitle: "WeChat or Xiaohongshu: Which to Launch First"
 metaDescription: "WeChat versus Xiaohongshu for foreign brands. What each platform is for, five conditions that point to each, the B2B exception, and what both cost."
 publishDate: 2026-10-08
+updatedDate: 2026-10-17
 author: "TheRedScroll"
 platforms: ["wechat", "rednote"]
 category: "Platforms"
@@ -227,6 +228,11 @@ published them when we checked on October 5, 2026.
 > yuan per application and is valid for one year, with an annual review.
 > Overseas companies apply on the desktop site.
 > Source: Xiaohongshu (小红书) enterprise account verification guide, platform document, confirmed October 2026. https://fe-video-qc.xhscdn.com/picasso-editor/7072d509ee7370545a056b6f9030a926e8879dca.pdf
+
+> Xiaohongshu's current verification rules support overseas companies by the
+> regions and industries the platform has opened. They name mainland China,
+> Hong Kong, Singapore, and Malaysia.
+> Source: Xiaohongshu Juguang help center (小红书聚光帮助中心), enterprise professional account verification rules, updated October 2026. https://ad.xiaohongshu.com/next_help/docs/195c5fe505c71b4b0335a2fe0d61d8e0
 
 > Moments ads bought by bidding start at a 1,000-yuan daily budget, but bidding
 > is open only outside Tencent's core and key cities. Scheduled buys, open in

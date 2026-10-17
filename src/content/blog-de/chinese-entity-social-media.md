@@ -4,7 +4,7 @@ description: "In den meisten Fällen nicht, jedenfalls nicht zum Start. WeChat u
 metaTitle: "Social Media in China: Gesellschaft vor Ort nötig?"
 metaDescription: "WeChat, Xiaohongshu, Douyin, Weibo: Was jede Plattform ausländischen Marken ohne chinesische Gesellschaft erlaubt und wo die echten Grenzen liegen."
 publishDate: 2026-09-24
-updatedDate: 2026-10-11
+updatedDate: 2026-10-17
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Strategie"
@@ -18,7 +18,7 @@ An dieser Frage scheitert so manches erste Gespräch. Die Antworten im Netz wide
 | Plattform | Was die Plattform festlegt | Was Sie einreichen | Verifizierungsgebühr |
 |---|---|---|---|
 | WeChat (微信) | Ausländische Gesellschaften zugelassen, ein Konto | Registrierungsnachweis, gestempelte Schreiben | 99 US-Dollar im Jahr |
-| Xiaohongshu (小红书) | Ausländische Gesellschaften ausdrücklich zugelassen | BR oder CR, gestempelte chinesische Übersetzung | 600 Yuan im Jahr |
+| Xiaohongshu (小红书) | Ausländische Gesellschaften aus freigegebenen Regionen | BR oder CR, gestempelte chinesische Übersetzung | 600 Yuan im Jahr |
 | Weibo (微博) | Ausländische Gesellschaften nur über einen Agenten | Nicht über das Selbstbedienungsformular | 600 Yuan |
 | Douyin (抖音) | Ein Auslandsweg, Einzelheiten hinter einem Login | Festlandlizenz laut den öffentlichen Seiten | 600 Yuan im ersten Jahr (Festland) |
 
@@ -56,17 +56,22 @@ Wer auf WeChat mit einer ausländischen Gesellschaft auftritt, zahlt also mit ru
 
 ## Was eine ausländische Gesellschaft auf Xiaohongshu darf
 
-Xiaohongshu (小红书), auf der Website auch RedNote genannt, lässt ausländische Unternehmen ausdrücklich zu. Der Leitfaden zur Unternehmensverifizierung nennt Gesellschaften vom Festland, aus dem Ausland sowie aus Hongkong, Macau und Taiwan in einem Atemzug.
+Xiaohongshu (小红书), auf der Website auch RedNote genannt, lässt ausländische Unternehmen ausdrücklich zu, wenn auch nicht aus jedem Land. Der Leitfaden zur Unternehmensverifizierung nennt Gesellschaften vom Festland, aus dem Ausland sowie aus Hongkong, Macau und Taiwan in einem Atemzug. Die aktuellen Regeln beschränken das auf die Regionen, die die Plattform freigegeben hat.
 
 > Die Verifizierung von Unternehmenskonten steht Unternehmen vom Festland, aus dem Ausland sowie aus Hongkong, Macau und Taiwan offen. Die Gebühr beträgt 600 Yuan je Antrag, gilt ein Jahr und setzt eine jährliche Prüfung voraus. Ausländische Gesellschaften erledigen Verifizierung, Jahresprüfung und Umbenennung nur auf der Desktop-Website.
 > Quelle: Xiaohongshu (小红书), Leitfaden zur Verifizierung von Unternehmenskonten, Plattformdokumentation, bestätigt im September 2026. https://fe-video-qc.xhscdn.com/picasso-editor/7072d509ee7370545a056b6f9030a926e8879dca.pdf
+
+> Die aktuellen Verifizierungsregeln von Xiaohongshu lassen ausländische Unternehmen nur aus den Regionen und Branchen zu, die die Plattform freigegeben hat. Genannt werden Festlandchina, Hongkong, Singapur und Malaysia.
+> Quelle: Xiaohongshu-Juguang-Hilfecenter (小红书聚光帮助中心), Regeln zur Verifizierung professioneller Unternehmenskonten, aktualisiert im Oktober 2026. https://ad.xiaohongshu.com/next_help/docs/195c5fe505c71b4b0335a2fe0d61d8e0
+
+Wer seinen Sitz anderswo hat, sollte sich vergewissern, dass seine Region freigegeben ist, bevor er mit Xiaohongshu plant.
 
 Anstelle einer Lizenz vom Festland reichen ausländische Unternehmen eine Business Registration oder ein Certificate of Incorporation ein, Hongkonger Gesellschaften beides. Dokumente, die nicht auf Chinesisch abgefasst sind, brauchen eine Übersetzung mit dem Stempel eines Übersetzungsbüros. [Unser Schritt-für-Schritt-Leitfaden zum Xiaohongshu-Unternehmenskonto](/de/analysen/xiaohongshu-business-account-setup/) erklärt die einzelnen Masken und die Ablehnungsgründe im Detail.
 
 Die Prüfdauer ist sogar veröffentlicht, was Seltenheitswert hat.
 
-> Nach Einreichung eines Unternehmensantrags meldet sich innerhalb von 1 Arbeitstag ein Prüfer, und die Prüfung ist im Schnitt nach 4 bis 7 Arbeitstagen abgeschlossen. Ein einzelner Prüfauftrag gilt 30 Tage.
-> Quelle: Xiaohongshu (小红书), Produktleitfaden professionelles Konto, Plattformdokumentation, bestätigt im September 2026. https://fe-video-qc.xhscdn.com/fe-platform/68e374e4257bd30bc07eed15c06cb8b9a51f971b.pdf
+> Nach den aktuellen Verifizierungsregeln von Xiaohongshu dauert die Prüfung in der Regel drei Arbeitstage, bei komplexen Unterlagen, nachgeforderten Dokumenten oder Feiertagen länger.
+> Quelle: Xiaohongshu-Juguang-Hilfecenter (小红书聚光帮助中心), Regeln zur Verifizierung professioneller Unternehmenskonten, aktualisiert im Oktober 2026. https://ad.xiaohongshu.com/next_help/docs/195c5fe505c71b4b0335a2fe0d61d8e0
 
 Werbung zu schalten ist ein eigener Schritt, mit eigenen Regeln für ausländische Gesellschaften. Die Quelle dafür ist ein Fachleitfaden, keine Plattformdokumentation.
 
@@ -102,8 +107,8 @@ Douyin (抖音) nennt inzwischen einen Weg für ausländische Gesellschaften, le
 
 Diese Seiten stammen aus dem Jahr 2022. Seit 2026 führt das Hilfecenter für Douyin-Unternehmenskonten zwei neue Einträge: einen Leitfaden zur Selbstregistrierung ausländischer Gesellschaften und ein eigenes Prüfregelwerk für ausländische und grenzüberschreitende Antragsteller.
 
-> Das Hilfecenter für Douyin-Unternehmenskonten führt einen Leitfaden zur Selbstregistrierung für Gesellschaften aus Hongkong, Macau, Taiwan und dem Ausland, aktualisiert am 19. August 2026, sowie ein Regelwerk zur Verifizierungsprüfung ausländischer und grenzüberschreitender Gesellschaften vom 18. Mai 2026.
-> Quelle: Douyin-Hilfecenter für Unternehmenskonten (抖音企业号帮助中心), August 2026. https://renzheng.douyin.com/support/content/227771?graphId=412&mappingType=2&spaceId=77
+> Das Hilfecenter für Douyin-Unternehmenskonten führt einen Leitfaden zur Selbstregistrierung für Gesellschaften aus Hongkong, Macau, Taiwan und dem Ausland, aktualisiert am 13. Oktober 2026, sowie ein Regelwerk zur Verifizierungsprüfung ausländischer und grenzüberschreitender Gesellschaften vom 18. Mai 2026.
+> Quelle: Douyin-Hilfecenter für Unternehmenskonten (抖音企业号帮助中心), Oktober 2026. https://renzheng.douyin.com/support/content/227771?graphId=412&mappingType=2&spaceId=77
 
 Beide Dokumente liegen hinter einem Login. Welche Unterlagen, welche Gebühr und welche Prüfdauer für diesen Weg gelten, ist deshalb nicht öffentlich. Auf dem Papier ist Douyin für ausländische Unternehmen nicht mehr verschlossen. Durchschaubar ist es trotzdem nicht. Steht Douyin im Zentrum Ihrer Planung, lassen Sie Ihre Agentur zuerst den Auslandsweg erproben, bevor Sie eine Gesellschaft auf dem Festland einkalkulieren.
 
@@ -220,14 +225,14 @@ Eine Agentur, die nicht alle drei schriftlich beantworten kann, hat damit bereit
 
 | Ihre Lage | Wo Sie ansetzen | Gesellschaft nötig? |
 |---|---|---|
-| Sie testen die Nachfrage, noch ohne Umsatz in China | WeChat Service Account und Xiaohongshu, beide auf Ihre eigene Gesellschaft | Nein |
+| Sie testen die Nachfrage, noch ohne Umsatz in China | WeChat Service Account und Xiaohongshu (sofern Ihre Region freigegeben ist), beide auf Ihre eigene Gesellschaft | Nein |
 | Sie verkaufen an Verbraucher, ohne Lager auf dem Festland | Grenzüberschreitender Einzelhandelsimport, innerhalb der Grenzen von 5.000 und 26.000 Yuan | Nein |
 | Sie wollen Werbung auf Xiaohongshu schalten | Ihr eigenes Konto, nach Abgleich mit der Branchenliste für ausländische Gesellschaften | Nein, sofern Ihre Kategorie offen ist |
 | Douyin steht im Zentrum der Planung | Zuerst Douyins Auslandsweg, bei Misserfolg eine Gesellschaft auf dem Festland | Vielleicht |
 | Sie stellen vor Ort ein, fakturieren in Yuan, halten Lager | Eine Gesellschaft auf dem Festland | Ja |
 | Eine Agentur bietet Ihnen ein Konto auf ihre Lizenz an | Zuerst die drei Vertragsfragen klären | Nein, aber lesen Sie Klausel 6.1 |
 
-Unterm Strich lässt sich die Tabelle auf einen Satz bringen. Die Frage nach der Gesellschaft ist eine Frage des Zeitpunkts. Die meisten ausländischen Marken sollten mit ihrer eigenen Gesellschaft starten, herausfinden, worauf ihr Publikum anspricht, und eine Gesellschaft auf dem Festland erst eintragen, wenn Werbung, Personal oder Lagerbestand sie rentabel machen. [Unser Leitfaden zu den ersten 90 Tagen in chinesischen sozialen Medien](/de/analysen/first-90-days-china-social-media/) zeigt, wie ein solcher Start konkret aussieht.
+Unterm Strich lässt sich die Tabelle auf einen Satz bringen. Die Frage nach der Gesellschaft ist eine Frage des Zeitpunkts. Die meisten ausländischen Marken sollten mit ihrer eigenen Gesellschaft starten, herausfinden, worauf ihr Publikum anspricht, und eine Gesellschaft auf dem Festland erst eintragen, wenn Werbung, Personal oder Lagerbestand sie rentabel machen. [Unser Leitfaden zu den ersten 90 Tagen in chinesischen sozialen Medien](/de/analysen/first-90-days-china-social-media/) zeigt, wie ein solcher Start konkret aussieht. [Unser Sechsmonatsplan für den Markteintritt in China](/de/analysen/china-market-entry-timeline/) stellt Marke, Konten und Inhalte für die Vorlage an den Vorstand nebeneinander.
 
 Ein Vorbehalt zu alledem. Die Zugangsregeln der Plattformen ändern sich schneller als das Gesellschaftsrecht. Alle Angaben wurden im September und Oktober 2026 an den Originaldokumenten geprüft. Sehen Sie sich den aktuellen Stand an, bevor Sie etwas einreichen.
 

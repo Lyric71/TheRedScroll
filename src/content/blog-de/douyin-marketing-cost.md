@@ -4,6 +4,7 @@ description: "Douyin ist im laufenden Betrieb meist teurer als Xiaohongshu oder 
 metaTitle: "Douyin-Marketing-Kosten: Was Sie einplanen sollten"
 metaDescription: "Was Douyin-Marketing 2026 kostet: Videoproduktion, Werbe-Mindestbeträge, Betriebskosten im Live-Commerce, KOL-Honorare und drei realistische Budgetstufen."
 publishDate: 2026-10-11
+updatedDate: 2026-10-17
 author: "TheRedScroll"
 platforms: ["douyin"]
 category: "Strategie"
@@ -62,8 +63,8 @@ Die Sache hat zwei Haken. Die Gebühr ist auch fällig, wenn die Verifizierung s
 
 Für eine ausländische Marke entscheidet die Rechtseinheit. Die Douyin-FAQ von 2022 beschreiben das Unternehmenskonto als Angebot für in China registrierte Firmen. 2026 hat das Hilfecenter einen eigenen Weg geschaffen.
 
-> Das Hilfecenter für Douyin-Unternehmenskonten bietet eine Anleitung zur Selbsteröffnung für ausländische Rechtseinheiten sowie für Einheiten aus Hongkong, Macau und Taiwan, aktualisiert am 19. August 2026. Zudem führt es eine Prüfordnung für ausländische und grenzüberschreitende Einheiten.
-> Quelle: Hilfecenter für Douyin-Unternehmenskonten (抖音企业号帮助中心), August 2026. https://renzheng.douyin.com/support/content/227771?graphId=412&mappingType=2&spaceId=77
+> Das Hilfecenter für Douyin-Unternehmenskonten bietet eine Anleitung zur Selbsteröffnung für ausländische Rechtseinheiten sowie für Einheiten aus Hongkong, Macau und Taiwan, aktualisiert am 13. Oktober 2026. Zudem führt es eine Prüfordnung für ausländische und grenzüberschreitende Einheiten.
+> Quelle: Hilfecenter für Douyin-Unternehmenskonten (抖音企业号帮助中心), Oktober 2026. https://renzheng.douyin.com/support/content/227771?graphId=412&mappingType=2&spaceId=77
 
 Beide Dokumente sind nur nach Anmeldung einsehbar. Unterlagen, Gebühren und Prüfdauer für diesen Weg sind daher nicht öffentlich.
 

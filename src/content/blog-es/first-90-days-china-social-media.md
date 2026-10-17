@@ -4,7 +4,7 @@ description: "Las cuentas se abren en dos semanas. El nombre chino tarda meses e
 metaTitle: "Redes sociales chinas: los primeros 90 días"
 metaDescription: "Cuentas, verificación, nombre chino, primeros contenidos y primeros contactos: el recorrido de un lanzamiento en China, semana a semana."
 publishDate: 2026-09-10
-updatedDate: 2026-10-11
+updatedDate: 2026-10-17
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "Estrategia"
@@ -36,7 +36,7 @@ Nada de ello resulta anómalo.
 
 Cada plazo que aparece más abajo procede de las páginas de ayuda de una
 plataforma, de la oficina china de marcas o de nuestro propio proceso, y la
-fuente acompaña al dato. Todas se comprobaron en septiembre de 2026.
+fuente acompaña al dato. Todas se comprobaron en septiembre u octubre de 2026.
 
 ## Antes de la semana 1: cuatro documentos que conviene tener a mano
 
@@ -68,6 +68,11 @@ equivalente y añade una exigencia sobre las traducciones.
 > traducción sellada por una empresa de traducción.
 > Fuente: Xiaohongshu (小红书), guía de verificación de cuentas de empresa, documento de la plataforma, consultado en septiembre de 2026. https://fe-video-qc.xhscdn.com/picasso-editor/7072d509ee7370545a056b6f9030a926e8879dca.pdf
 
+> Las normas de verificación vigentes de Xiaohongshu admiten a las compañías
+> extranjeras en función de las regiones y los sectores que la plataforma ha
+> abierto. Citan China continental, Hong Kong, Singapur y Malasia.
+> Fuente: centro de ayuda de Juguang de Xiaohongshu (小红书聚光帮助中心), normas de verificación de la cuenta profesional de empresa, documento de la plataforma, actualizado en octubre de 2026. https://ad.xiaohongshu.com/next_help/docs/195c5fe505c71b4b0335a2fe0d61d8e0
+
 La vía de Xiaohongshu no acaba en esa lista de documentos. Nuestra [guía de
 apertura de una cuenta de empresa en Xiaohongshu](/es/analisis/xiaohongshu-business-account-setup/)
 recoge la obligación de solicitar en el navegador para las entidades
@@ -93,8 +98,8 @@ revisión solo se ven tras iniciar sesión.
 
 > El centro de ayuda de la cuenta de empresa de Douyin recoge una guía de
 > alta en autoservicio para entidades de Hong Kong, Macao, Taiwán y el
-> extranjero, actualizada el 19 de agosto de 2026.
-> Fuente: centro de ayuda de la cuenta de empresa de Douyin (抖音企业号帮助中心), agosto de 2026. https://renzheng.douyin.com/support/content/227771?graphId=412&mappingType=2&spaceId=77
+> extranjero, actualizada el 13 de octubre de 2026.
+> Fuente: centro de ayuda de la cuenta de empresa de Douyin (抖音企业号帮助中心), octubre de 2026. https://renzheng.douyin.com/support/content/227771?graphId=412&mappingType=2&spaceId=77
 
 A una marca que todavía no ha entrado le quedan tres caminos: probar esa vía
 extranjera, abrir Douyin desde una entidad china de la que ya disponga, o
@@ -103,7 +108,7 @@ de fijar fecha de lanzamiento. Nunca después.
 
 | Documento | Cuenta oficial de WeChat | Cuenta de empresa de Xiaohongshu | Cuenta de empresa de Douyin |
 |---|---|---|---|
-| Certificado de registro mercantil | Se acepta el certificado extranjero | Se acepta el certificado extranjero | Licencia de actividad china (vía extranjera no pública) |
+| Certificado de registro mercantil | Se acepta el certificado extranjero | Se acepta el certificado extranjero, solo de regiones abiertas | Licencia de actividad china (vía extranjera no pública) |
 | Identidad del contacto o del operador | Ambas caras, escaneo en color | Datos del operador en el formulario | Documento del representante legal para autónomos |
 | Carta de solicitud | Plantilla en chino o inglés | Plantilla de la plataforma | Plantilla de la plataforma |
 | Carta de autorización de explotación | Obligatoria | No figura | No figura |
@@ -118,8 +123,9 @@ otra y apenas pesa.
 
 ## Semanas 1 y 2: arrancar desde el extranjero
 
-Lo primero es decidir qué entidad presenta la solicitud. WeChat (微信) y
-Xiaohongshu (小红书) aceptan a una empresa extranjera; Douyin (抖音), ya se ha
+Lo primero es decidir qué entidad presenta la solicitud. WeChat (微信) acepta
+a una empresa extranjera, y Xiaohongshu (小红书) también, si procede de una de
+las regiones que tiene abiertas; Douyin (抖音), ya se ha
 visto, está hecho para una china, y su vía extranjera no es pública. El
 asunto se cierra en la semana 1, porque de ahí depende qué cuentas podrán
 estar abiertas en la semana 2.
@@ -154,8 +160,13 @@ una sola cuenta por entidad, y esa cuenta será por fuerza de servicio.
 > servicio. La cuenta queda operativa una vez obtenida la verificación.
 > Fuente: servicio de atención al cliente de Tencent (腾讯客服), registro de una cuenta de servicio para entidades extranjeras, consultado en septiembre de 2026. https://kf.qq.com/faq/180312zQjeYV180312FNNbmA.html
 
-Xiaohongshu, en cambio, no publica plazo alguno de revisión, sino un
-vencimiento, una tasa y el lugar donde hay que presentar la solicitud.
+Xiaohongshu también publica un plazo de revisión, además de un vencimiento,
+una tasa y el lugar donde hay que presentar la solicitud.
+
+> Según las normas de verificación vigentes de Xiaohongshu, la revisión suele
+> durar tres días laborables, y algo más si el expediente es complejo, si se
+> pide documentación adicional o si hay festivos de por medio.
+> Fuente: centro de ayuda de Juguang de Xiaohongshu (小红书聚光帮助中心), normas de verificación de la cuenta profesional de empresa, documento de la plataforma, actualizado en octubre de 2026. https://ad.xiaohongshu.com/next_help/docs/195c5fe505c71b4b0335a2fe0d61d8e0
 
 > La verificación de empresa de Xiaohongshu cuesta 600 yuanes por solicitud,
 > tiene una vigencia de un año con revisión anual, y cada pedido caduca a
@@ -207,7 +218,8 @@ quedará protegido hasta bastante después del día 90. Las cuentas se lanzan
 igualmente: las dos guías citadas admiten que el nombre de la cuenta siga a
 la razón social registrada o a una marca, de modo que una marca sin registro
 chino sale con su razón social y lleva el nombre chino en el perfil y en los
-contenidos mientras se resuelve la solicitud.
+contenidos mientras se resuelve la solicitud. [Nuestro calendario de entrada en el mercado chino en seis meses](/es/analisis/china-market-entry-timeline/)
+desglosa mes a mes el frente de la marca, junto a las cuentas y los contenidos.
 
 La localización de estas dos semanas alcanza también al perfil: una
 descripción que suene a marca china y no a lema traducido; un contacto de

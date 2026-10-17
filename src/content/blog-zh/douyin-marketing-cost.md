@@ -4,6 +4,7 @@ description: "抖音的运营成本通常高于小红书和微信。按一份公
 metaTitle: "抖音营销费用：预算怎么做"
 metaDescription: "2026年做抖音营销要花多少钱：视频制作、广告投放门槛、直播带货运营成本、达人费用，以及三个现实可行的预算档位。"
 publishDate: 2026-10-11
+updatedDate: 2026-10-17
 author: "TheRedScroll"
 platforms: ["douyin"]
 category: "策略"
@@ -62,8 +63,8 @@ featuredImage: "/images/blog/douyin-marketing-cost.webp"
 
 对外国品牌而言，关键是主体。抖音2022年的常见问题把企业号定位为面向在华注册企业。到了2026年，帮助中心新开了一条独立通道。
 
-> 抖音企业号帮助中心上线了境外及港澳台主体自助开户指南，2026年8月19日更新，另列有一份境外及跨境主体审核规范。
-> 来源：抖音企业号帮助中心，2026年8月。https://renzheng.douyin.com/support/content/227771?graphId=412&mappingType=2&spaceId=77
+> 抖音企业号帮助中心上线了境外及港澳台主体自助开户指南，2026年10月13日更新，另列有一份境外及跨境主体审核规范。
+> 来源：抖音企业号帮助中心，2026年10月。https://renzheng.douyin.com/support/content/227771?graphId=412&mappingType=2&spaceId=77
 
 这两份文件都须登录查看，这条通道要哪些材料、收多少钱、审多久，外界都无从得知。
 

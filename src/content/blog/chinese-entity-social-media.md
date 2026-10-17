@@ -4,7 +4,7 @@ description: "Usually not, at least to start. WeChat and Xiaohongshu verify over
 metaTitle: "Do You Need a Chinese Entity for Social?"
 metaDescription: "Whether a foreign brand needs a Chinese entity for WeChat, Xiaohongshu, Douyin and Weibo, what each platform accepts, and where the real limits sit."
 publishDate: 2026-09-24
-updatedDate: 2026-10-11
+updatedDate: 2026-10-17
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Strategy"
@@ -20,7 +20,7 @@ against what each one publishes.
 | Platform | What the platform publishes | What you file | Verification fee |
 |---|---|---|---|
 | WeChat (微信) | Overseas entities accepted, one account | Registration certificate, chopped letters | 99 US dollars a year |
-| Xiaohongshu (小红书) | Overseas entities accepted by name | BR or CR, stamped Chinese translation | 600 yuan a year |
+| Xiaohongshu (小红书) | Overseas entities from opened regions | BR or CR, stamped Chinese translation | 600 yuan a year |
 | Weibo (微博) | Overseas entities go through an agent | Not the self-serve form | 600 yuan |
 | Douyin (抖音) | An overseas route, details behind a login | Mainland license on the public pages | 600 yuan first year (mainland) |
 
@@ -79,14 +79,24 @@ dollars instead of yuan. Annoying, and survivable.
 ## What an overseas entity can do on Xiaohongshu
 
 Xiaohongshu (小红书), which the site also calls RedNote, admits overseas
-companies by name. Its enterprise verification guide lists mainland, overseas
-and Hong Kong, Macau and Taiwan companies as eligible in the same breath.
+companies by name, though not from everywhere. Its enterprise verification
+guide lists mainland, overseas and Hong Kong, Macau and Taiwan companies as
+eligible in the same breath. Its current rules narrow that to the regions it
+has opened.
 
 > Enterprise account verification is open to mainland, overseas and Hong
 > Kong, Macau and Taiwan companies. The fee is 600 yuan per application,
 > valid one year, with an annual review. Overseas entities complete
 > verification, annual reviews and renames on the desktop site only.
 > Source: Xiaohongshu (小红书), enterprise account verification guide, platform documentation, confirmed September 2026. https://fe-video-qc.xhscdn.com/picasso-editor/7072d509ee7370545a056b6f9030a926e8879dca.pdf
+
+> Xiaohongshu's current verification rules support overseas companies by the
+> regions and industries the platform has opened. They name mainland China,
+> Hong Kong, Singapore, and Malaysia.
+> Source: Xiaohongshu Juguang help center (小红书聚光帮助中心), enterprise professional account verification rules, updated October 2026. https://ad.xiaohongshu.com/next_help/docs/195c5fe505c71b4b0335a2fe0d61d8e0
+
+A company registered somewhere else should confirm that its region is open
+before it plans around Xiaohongshu.
 
 Overseas companies file a Business Registration or a Certificate of
 Incorporation instead of a mainland license, and Hong Kong companies file
@@ -95,10 +105,9 @@ a translation company's stamp. [Our step-by-step Xiaohongshu business account se
 
 Review time is published, which is rare.
 
-> After an enterprise application is submitted, a review specialist makes
-> contact within 1 working day, and review completes in 4 to 7 working days
-> on average. A single review order is valid for 30 days.
-> Source: Xiaohongshu (小红书), professional account product guide, platform documentation, confirmed September 2026. https://fe-video-qc.xhscdn.com/fe-platform/68e374e4257bd30bc07eed15c06cb8b9a51f971b.pdf
+> Xiaohongshu's current verification rules say review generally takes three
+> working days, longer for complex files, extra documents, or holidays.
+> Source: Xiaohongshu Juguang help center (小红书聚光帮助中心), enterprise professional account verification rules, updated October 2026. https://ad.xiaohongshu.com/next_help/docs/195c5fe505c71b4b0335a2fe0d61d8e0
 
 Buying ads is a separate step, with its own rules for overseas companies.
 The source here is a trade guide rather than platform documentation.
@@ -152,10 +161,10 @@ two entries: a self-service onboarding guide for overseas entities and a
 separate review rulebook for overseas and cross-border applicants.
 
 > Douyin's enterprise account help center lists a self-service onboarding
-> guide for Hong Kong, Macau, Taiwan and overseas entities, updated August 19,
+> guide for Hong Kong, Macau, Taiwan and overseas entities, updated October 13,
 > 2026, and a verification review rulebook for overseas and cross-border
 > entities, dated May 18, 2026.
-> Source: Douyin Enterprise Account Help Center (抖音企业号帮助中心), August 2026. https://renzheng.douyin.com/support/content/227771?graphId=412&mappingType=2&spaceId=77
+> Source: Douyin Enterprise Account Help Center (抖音企业号帮助中心), October 2026. https://renzheng.douyin.com/support/content/227771?graphId=412&mappingType=2&spaceId=77
 
 Both documents sit behind a login, so the papers, fee and review time for
 that route are not public. Douyin is no longer closed to an overseas company
@@ -370,7 +379,7 @@ An agency that cannot answer all three in writing is telling you something.
 
 | If this is you | Where to begin | Entity needed |
 |---|---|---|
-| Testing demand, no revenue in China yet | WeChat service account plus Xiaohongshu, both on your own entity | No |
+| Testing demand, no revenue in China yet | WeChat service account plus Xiaohongshu (if your region is open), both on your own entity | No |
 | Selling to consumers, no mainland stock | Cross-border retail import, inside the 5,000 and 26,000 yuan limits | No |
 | Ready to buy Xiaohongshu ads | Your own account, after checking the overseas industry list | Not if your category is open |
 | Douyin is central to the plan | Douyin's overseas route first, a mainland entity if it fails | Maybe |
@@ -380,7 +389,7 @@ An agency that cannot answer all three in writing is telling you something.
 Read that table one way and it says something simple. Entity questions are
 timing questions. Most foreign brands should launch on their own entity,
 learn what the audience responds to, and register a mainland company when
-advertising, hiring or stock makes it pay for itself. [Our guide to the first 90 days on Chinese social](/insights/first-90-days-china-social-media/) sets out what that launch actually looks like.
+advertising, hiring or stock makes it pay for itself. [Our guide to the first 90 days on Chinese social](/insights/first-90-days-china-social-media/) sets out what that launch actually looks like. [Our six-month China market entry timeline](/insights/china-market-entry-timeline/) lays the trademark, account and content tracks side by side for a board paper.
 
 One caution on all of the above. Platform access rules move faster than
 company law does. Everything here was verified against the source documents in

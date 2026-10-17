@@ -27,7 +27,7 @@ They override any conflicting rule inside the skill.
 
 | Field | Value |
 |---|---|
-| Working H1 | China market entry on social: the realistic six-month timeline |
+| Working H1 | China market entry timeline: the realistic six months on social (amended 2026-10-17 by the 09C draft run: the earlier working H1, "China market entry on social: the realistic six-month timeline", did not carry the primary query, which SPEC requires in the H1) |
 | Slug | `/insights/china-market-entry-timeline/` |
 | Output file | `output/china-market-entry-timeline.md` |
 | Primary query | `china market entry timeline` |
@@ -62,7 +62,7 @@ still current, reuse the logged citation instead of researching again. If you
 find a new figure, append it to that ledger before you finish.
 
 - Trademark registration timeline in China, cite CNIPA or a professional source, dated
-- Verification timelines from our own records
+- Verification timelines: platform-published review times (Tencent, Xiaohongshu, Douyin, Weibo help centers), plus the planning timelines our own site pages publish, labeled as ours (amended 2026-10-17 by the 09C draft run: no per-platform turnaround from our own accounts is logged in the ledger's first-party section, settled fallback 3)
 
 **If a figure cannot be sourced, cut the claim.** Do not estimate, do not
 hedge, do not write "industry sources suggest". A missing number is better
@@ -73,7 +73,7 @@ than an unsourced one.
 Describe each of these in the handoff block at the end of the file. Do not
 embed images in body copy.
 
-- Three-track Gantt chart across six months. The centerpiece.
+- Three-track Gantt chart across six months. The centerpiece. Carried as a markdown table in the introduction (settled fallback 7; amended 2026-10-17)
 - Board-ready milestone table
 - Feature image: a wall planner with three colored tracks, overhead. China rule: set the scene in China and show Chinese social platforms on screen (WeChat, Xiaohongshu, Douyin or Weibo interface on a phone, laptop or studio monitor); set in a typical Chinese city, varied from article to article and not only Shanghai, only Chinese people in frame, candid normal-life photo in crisp sharp focus with legible screens (never blur, smudges or noise), no AI polish; this rule wins over the subject hint
 

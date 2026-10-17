@@ -4,6 +4,7 @@ description: "中国消费者尚不认识你、且习惯购前做功课，宜先
 metaTitle: "微信还是小红书：外国品牌入华先做哪个平台"
 metaDescription: "微信与小红书分工有何不同？外国品牌如何用五项条件判断先做哪个平台，B2B为何例外，两个平台各需多少投入。"
 publishDate: 2026-10-08
+updatedDate: 2026-10-17
 author: "TheRedScroll"
 platforms: ["wechat", "rednote"]
 category: "平台"
@@ -152,6 +153,9 @@ featuredImage: "/images/blog/wechat-vs-xiaohongshu.webp"
 
 > 小红书企业号接受中国内地企业、境外企业以及港澳台企业。认证费用为每次申请600元，有效期一年，需年审。境外企业需在电脑端网页申请。
 > 来源：小红书企业号认证指南，平台文件，2026年10月核实。https://fe-video-qc.xhscdn.com/picasso-editor/7072d509ee7370545a056b6f9030a926e8879dca.pdf
+
+> 境外企业认证按平台已开放的地区及行业规则受理，适用范围包括中国大陆、香港、新加坡、马来西亚等已开放准入地区的主体。
+> 来源：小红书聚光帮助中心，《【变更】专业号认证规则规范》，平台文件，2026年10月更新。https://ad.xiaohongshu.com/next_help/docs/195c5fe505c71b4b0335a2fe0d61d8e0
 
 > 朋友圈广告竞价购买的日预算起点为1000元，但竞价仅在腾讯核心城市和重点城市以外开放。排期购买在所有城市开放，起价为每个广告位5万元。
 > 来源：腾讯广告，微信广告产品页，2026年10月核实。https://e.qq.com/topic/marketing/industry/weixin/
