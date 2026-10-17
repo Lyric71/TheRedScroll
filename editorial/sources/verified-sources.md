@@ -179,6 +179,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-10-05 for 05C: "月活跃用户已突破4亿" and "日搜索量高达8亿" confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
 - Re-verified 2026-10-11 for 07C: "月活跃用户已突破4亿，日搜索量高达8亿" and 2026年05月27日 confirmed at check 1 and check 2. Used in: choose-china-social-platforms.
 - Re-verified 2026-10-13 for 08A: "月活跃用户已突破4亿，日搜索量高达8亿" confirmed at check 1, check 2 and after the quality pass. Used in: kol-vs-koc-cost-roi.
+- Re-verified 2026-10-17 for 09B: "月活跃用户已突破4亿，日搜索量高达8亿" and 2026年05月27日 confirmed at check 1, check 2 and after the quality pass (logs/scratch/09B/check.py, tags c1, c2, c2b). Used in: weibo-2026-worth-it.
 
 ### Xiaohongshu domestic monthly active users, QuestMobile
 - Value: 242 million MAU in mainland China, May 2025, up 13.2% year on year
@@ -877,6 +878,122 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-11, re-fetched (tags c2, c2b), unchanged
 - Used in: choose-china-social-platforms; also /weibo-agency/ and /platforms/weibo/ (561M and 254M, June 2026) and china-social-media-platforms-2026, all five locales, corrected 2026-10-11
 - Notes: Sina is Weibo's parent; Yicai and 21st Century Business Herald (2026-08-19) carry the same figures independently. The June 2025 figure (588 million) is not in the text of these pages; compare with the Q4 2025 entry (567 million) instead. Recheck after the Q3 2026 results (November 2026).
+- Re-verified 2026-10-17 for 09B: "2026年6月的月活跃用户数为5.61亿", "2026年6月的日均活跃用户数为2.54亿" and 2026年08月19日 (Sina); Yicai line unchanged confirmed at check 1, check 2 and after the quality pass (logs/scratch/09B/check.py, tags c1, c2, c2b). Used in: weibo-2026-worth-it.
+
+### Weibo Q4 and full-year 2025 results: ad revenue, users, feed switch, AI search, ad strategy
+- Value: 2025 advertising revenue 1.5 billion US dollars (107.42 亿元) of 1.76 billion total; 567 million MAU and 252 million DAU at end of Q4 2025; home page switched to a recommendation feed in late July 2025 ("微博于2025年7月下旬完成首页核心产品架构切换，正式上线以推荐流为主的全新首页"; with the feed as the core distribution scene, content can break past follow relationships); AI search 智搜 MAU passed 80 million in December 2025; Weibo calls itself AI model makers' first-choice platform for launches, explainers and word of mouth; "随着越来越多的品牌客户有意加强在明星与品牌营销方面的投入"
+- As of: Q4 and full year 2025 (results released 2026-03-18)
+- Source: Weibo Q4 and full-year 2025 results, reported by Sina Tech (新浪科技)
+- URL: https://finance.sina.com.cn/tech/2026-03-18/doc-inhrmayp7470775.shtml
+- Verified 1: 2026-10-17, fetched with curl (logs/scratch/09B/check.py, tag c1); "其中广告营收达到15亿美元", "截至四季度末，微博的月活跃用户达到5.67亿，日活跃用户达到2.52亿", the feed-switch line, "随着推荐流成为核心分发场景", "突破原有关注关系的限制", "12月，智搜MAU突破 8000 万", "成为AI厂商发布新品、技术科普与用户口碑建设的首选平台" and 2026年03月18日 confirmed
+- Verified 2: 2026-10-17, re-fetched at iteration 8 (tag c2) and after the quality pass (tag c2b), unchanged
+- Used in: weibo-2026-worth-it
+- Notes: Sina is Weibo's parent, so the AI-launch and celebrity lines are company statements; the article labels them as Weibo's own claims. Same 567 million as the 100EC entry (2026-03-19). The /platforms/weibo/ stat "Ad revenue (FY2025) $1.5B" matches this entry.
+
+### Weibo Q2 2026 advertising revenue and ad categories
+- Value: Q2 2026 advertising and marketing revenue 381 million US dollars, down 1% from 383.4 million; decline from mobile phone and online game advertisers, partly offset by internet services and automotive; Alibaba ad revenue 39.2 million, up 10%; celebrity marketing one of the directions pushed in Q2 ("明星营销是二季度持续重点推进的方向之一"); management expects ad budget competition to stay intense in the second half
+- As of: Q2 2026 (results released 2026-08-19)
+- Source: The Paper (澎湃新闻), republished by 21st Century Business Herald (21财经); total and ad revenue also on Yicai (第一财经) the same day
+- URL: https://m.21jingji.com/article/20260819/herald/aa73a001934288af9e21e49f5b527807.html ; https://m.yicai.com/news/103324908.html
+- Verified 1: 2026-10-17, fetched with curl (tag c1); "微博第二季度的广告及营销收入为3.81亿美元，较去年同期的3.834亿美元下降1%", "主要由于手机及网络游戏板块的广告需求同比呈下降趋势，该减少部分被互联网服务及汽车板块的广告收入增加", "明星营销是二季度持续重点推进的方向之一", "来源：澎湃新闻" and 2026-08-19 confirmed; Yicai "广告营收3.81亿美元" confirmed
+- Verified 2: 2026-10-17, re-fetched (tags c2, c2b), unchanged
+- Used in: weibo-2026-worth-it
+- Notes: Recheck after the Q3 2026 results (November 2026), with the MAU entry above.
+
+### Weibo hot search ranking basis and real-time list rules (platform help center)
+- Value: the hot search list is ranked on search heat, topic discussion participation and interaction with posts on the search results page (updated 2026-03-12; the page links to the full hot search rules); the real-time list updates every minute, ranks keywords by short-term search volume, sets a quality bar for searching users and runs monitoring against manipulation (updated 2024-10-18)
+- As of: March 2026 and October 2024 (update dates on the pages)
+- Source: Weibo customer service (微博客服), 热搜榜的排序规则 and 实时热搜榜的上榜规则
+- URL: https://kefu.weibo.com/faqdetail?id=20023 ; https://kefu.weibo.com/faqdetail?id=20020
+- Verified 1: 2026-10-17, fetched with curl (tag c1); "热搜榜排序是系统根据", "搜索热度、相关话题讨论参与度以及搜索结果页微博的互动情况综合判断进行排序的", "更新时间：2026年3月12日"; "微博实时热搜榜每1分钟更新一次，按照短时间内的搜索量进行排序", "为了防止恶意刷榜行为，存在监测机制", "更新时间：2024年10月18日" confirmed
+- Verified 2: 2026-10-17, re-fetched (tags c2, c2b), unchanged
+- Used in: weibo-2026-worth-it
+
+### Weibo hot search rules, 2021: heat formula, top 50, two labeled ad slots
+- Value: heat = (search heat + discussion heat + spread heat) x interaction rate, computed every minute, top 50 shown; two ad slots outside the ranking, under the 3rd and 6th entries, commercial ads labeled 商; no commercial sale inside the ranking
+- As of: August 2021 (rules published 2021-08-23); the help center page above (updated 2026-03-12) still links to them
+- Source: Weibo hot search rules, reported by The Paper (澎湃新闻)
+- URL: https://www.thepaper.cn/newsDetail_forward_14166759
+- Verified 1: 2026-10-17, fetched with curl (tag c1); "（搜索热度+讨论热度+传播热度）×互动率", "每分钟计算一次，取前50名展示", "一个在第3位热搜词之下，一个在第6位热搜词之下" and 2021-08-23 confirmed
+- Verified 2: 2026-10-17, re-fetched (tags c2, c2b), unchanged
+- Used in: weibo-2026-worth-it
+- Notes: Older than 12 months (fallback 9): cite with its date and say the rules date from 2021. The 2025 and 2026 changes below adjust ranking inputs and the top-ten mix; neither page mentions the ad slots.
+
+### Weibo hot search top ten split into three groups, November 2025
+- Value: on November 28, 2025 Weibo announced a main-list upgrade: the top ten split into public affairs, vertical topics and entertainment works, about 30% each; hot topics from the society, entertainment, sports, ACG and tech boards can enter the top-ten candidate pool once they meet ranking, heat and content standards
+- As of: November 2025 (article dated 2025-11-29)
+- Source: Xinhua (新华网)
+- URL: http://www.news.cn/tech/20251129/5cee901ca12643bda875ee04d323b5a6/c.html
+- Verified 1: 2026-10-17, fetched with curl (tag c1); "微博发布《微博热搜主榜优化升级公告》", "明确划分社会时政、垂直热点、文娱作品三大类内容，每类占比约30%", "在满足排名、热度与内容标准后，可进入主榜头版候选池" and 2025-11-29 confirmed
+- Verified 2: 2026-10-17, re-fetched (tags c2, c2b), unchanged
+- Used in: weibo-2026-worth-it
+
+### Weibo Q1 2026 hot search report: category shares and removals
+- Value: January to March 2026, entertainment, social and vertical topics took 31%, 31% and 38% of the main hot search list (entertainment share down 23%); about 40 mismatched entries removed a day and 80 look-alike posts down-weighted a day; new ranking dimensions for public attention, field attention and content quality
+- As of: Q1 2026 (report published 2026-05-21)
+- Source: Weibo 2026 Q1 hot search report, reported by Cover News (封面新闻), reporter 付文超, on Sina Tech
+- URL: https://finance.sina.com.cn/tech/roll/2026-05-21/doc-inhysaik9066055.shtml
+- Verified 1: 2026-10-17, fetched with curl (tag c1); "文娱热点、社会热点与垂直热点占比分别为31%、31%、38%", "日均剔除" (40) and 2026年05月21日 confirmed; outlet credit 封面新闻 confirmed in the byline
+- Verified 2: 2026-10-17, re-fetched (tags c2, c2b), unchanged
+- Used in: weibo-2026-worth-it
+
+### China's algorithmic recommendation rules, article 14: no manipulated rankings or controlled hot search
+- Value: providers may not use algorithms to block information, over-recommend, manipulate rankings or search result order, or control hot search or featured lists to sway online opinion or evade oversight; in force March 1, 2022
+- As of: published 2022-01-04, in force 2022-03-01
+- Source: Cyberspace Administration of China (国家互联网信息办公室) and three ministries, 互联网信息服务算法推荐管理规定, on cac.gov.cn
+- URL: https://www.cac.gov.cn/2022-01/04/c_1642894606364259.htm
+- Verified 1: 2026-10-17, fetched with curl (tag c1); "不得利用算法屏蔽信息、过度推荐、操纵榜单或者检索结果排序、控制热搜或者精选等干预信息呈现" and "自2022年3月1日起施行" confirmed
+- Verified 2: 2026-10-17, re-fetched (tags c2, c2b), unchanged
+- Used in: weibo-2026-worth-it
+- Notes: The August 2021 page on the same site is the consultation draft (its article 13 wording differs). Cite the final 2022 text only.
+
+### Weibo commercial posts and the Weirenwu marketplace
+- Value: a post counts as commercial if it @-tags a brand account or adds a brand hashtag, links to another e-commerce platform, or shows a product logo or product in an image or video (spoken ads too); the system identifies commercial posts automatically; Weirenwu (微任务, weirenwu.weibo.com) is Weibo's self-media commercial content marketplace; creators set prices there and the prices are reviewed before advertisers can order; a creator outside the incentive scheme publishes commercial posts through Weirenwu
+- As of: November 2024 (update date on the page)
+- Source: Weibo customer service (微博客服), 商业博文激励任务
+- URL: https://kefu.weibo.com/faqdetail?id=21382
+- Verified 1: 2026-10-17, fetched with curl (tag c1); "博文中出现以下任一情况均判定为商业博文", "文案中@ 商业/品牌官微", "微任务（ weirenwu.weibo.com ）是微博自媒体商业内容交易平台", "当您发布商业博文时需通过微任务进行发布", "系统将自动识别", "价格审核通过后，等待广告主下单" and "更新时间：2024年11月5日" confirmed
+- Verified 2: 2026-10-17, re-fetched (tags c2, c2b), unchanged
+- Used in: weibo-2026-worth-it
+- Notes: The page is written for creators with 100,000 to 500,000 followers; the commercial-post definition and the Weirenwu description apply generally. Weirenwu's own agreement states a 30% platform service fee but carries no date: still not cited.
+
+### Celebrity endorsement guidance, 2022: what celebrities may not endorse
+- Value: celebrities may not recommend or vouch for goods or services they have not used, and may not endorse tobacco and e-cigarettes, off-campus tutoring, medical services, drugs, medical devices, health food or special medical purpose formula food
+- As of: November 2022 (guidance issued by SAMR, CAC and five other bodies; page dated 2022-11-02)
+- Source: State Administration for Market Regulation, Cyberspace Administration of China and five other regulators (市场监管总局、中央网信办等七部门), 关于进一步规范明星广告代言活动的指导意见, on cac.gov.cn
+- URL: https://www.cac.gov.cn/2022-11/02/c_1669013796039375.htm
+- Verified 1: 2026-10-17, fetched with curl (tag c1); "不得为未使用过的商品（未接受过的服务）作推荐、证明", the banned-category sentence and 2022年11月02日 confirmed
+- Verified 2: 2026-10-17, re-fetched (tags c2, c2b), unchanged
+- Used in: weibo-2026-worth-it
+- Notes: Older than 12 months; still in force as far as any newer source shows. Cite with its date (fallback 9).
+
+### CAC fan-circle notice, 2021: all celebrity ranking lists canceled
+- Value: the CAC's notice on fan-circle chaos ordered all ranking lists of individual celebrities or groups canceled, among ten measures
+- As of: August 2021 (Xinhua report dated 2021-08-27)
+- Source: Xinhua (新华网), reporting the Cyberspace Administration of China (中央网信办) notice
+- URL: http://www.xinhuanet.com/2021-08/27/c_1127801497.htm
+- Verified 1: 2026-10-17, fetched with curl (tag c1); "取消所有涉明星艺人个人或组合的排行榜单" and 2021-08-27 confirmed
+- Verified 2: 2026-10-17, re-fetched (tags c2, c2b), unchanged
+- Used in: weibo-2026-worth-it
+- Notes: The news.cn/legal mirror of the same report returned 404 on 2026-10-17; use the xinhuanet.com URL.
+
+### Weibo institution verification covers celebrity fan clubs and studios
+- Value: Weibo's institution verification (机构认证) scope lists official celebrity support groups, celebrity (official) fan clubs, celebrity studios, sports teams and clubs, museums, galleries, temples, theatres, libraries, concert halls and official game accounts
+- As of: August 2026 (page dated 2026-08-31)
+- Source: Weibo customer service (微博客服), 如何申请机构认证
+- URL: https://kefu.weibo.com/faqdetail?id=20074
+- Verified 1: 2026-10-17, fetched with curl (tag c1); "明星官方后援会、明星（官方）粉丝团、明星工作室" and 2026年8月31日 confirmed
+- Verified 2: 2026-10-17, re-fetched (tags c2, c2b), unchanged
+- Used in: weibo-2026-worth-it
+- Notes: Already noted under the non-mainland institution entry as a scope warning; this entry logs it as a citable fact in its own right.
+
+### NOT LOGGED, searched and rejected 2026-10-17 (Weibo in 2026)
+- Weibo ad prices: Fans Tunnel (粉丝通) CPM and CPE floors and the "5,600 yuan first deposit including a 600 yuan opening fee": ad-reseller pages (csfxlm.com) and Zhihu only. Cut.
+- Fan Headlines (粉丝头条) billing by exposure and its 24-hour self-serve limit: platform FAQ (kefu.weibo.com/faqdetail?id=21354) carries no update date. Not cited.
+- "Over 42% of users open hot search first in a breaking event" and the 2026 Q1 "当事人回应" growth figures: Tencent News author page (万能的大叔, 2026-05-25), a self-media write-up. The Cover News report above is the citable version of that report and does not carry the 42% line. Cut.
+- "Media-hosted share of the hot search top ten rose from 41% to 65% by December 2024": Sina's wm channel (2025-01-04), no outlet byline. Cut.
+- Weibo 2025 hot search trend report category shares: two reposts disagree (Sohu 2026-02-12 gives entertainment 39%, social 28%; search summaries give social 39%, entertainment 28%). Not used.
+- Weibo creator and celebrity rates by tier: still no dated allowed source (see the 08A and 07A blocks).
 
 ### Bilibili users, Q2 2026: monthly, daily, time spent, average age
 - Value: 117 million average DAU (up 7%), 371 million average MAU, 113 minutes a day per user (up 8 minutes) in Q2 2026; users average about 26.5 years old (management, earnings call)
@@ -1669,6 +1786,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: chinese-entity-social-media, china-social-media-package-includes
 - Notes: Same 600 yuan headline as the Xiaohongshu enterprise fee and the Douyin Blue V first-year fee, but the structures differ: Weibo charges per application with an annual review, Douyin charges 600 then 120 to renew. Do not conflate the three in a comparison table without saying what each covers.
 - Re-verified 2026-10-06 for 06A: "600元/次" and "不以认证成功为前提" confirmed; the page states no renewal fee at check 1 and check 2. Used in: china-marketing-hidden-costs.
+- Re-verified 2026-10-17 for 09B: "企业蓝V认证需一次性支付600元/次的认证审核服务费" and "不以认证成功为前提" confirmed at check 1, check 2 and after the quality pass (logs/scratch/09B/check.py, tags c1, c2, c2b). Used in: weibo-2026-worth-it. The same run corrected the "$1,000 one-time fee" on /weibo-agency/ and /platforms/weibo/ in all five locales to this figure.
 
 ### Weibo enterprise verification: accepted documents assume a mainland entity
 - Value: the nine accepted licence types are all mainland documents (企业营业执照, 个体工商户营业执照, 民办非企业登记证书, 事业单位法人登记证书, 医疗机构执业许可证, 律师事务所执业许可证, 宗教活动场所登记证, 社会团体法人登记证书, 民办学校办学许可证); the company name field must match the business licence; the registration number field takes the 统一社会信用代码; website claims require a 工信部ICP备案截图; only a physical colour company chop is accepted, never an electronic, contract or finance chop; the application letter must be dated within the last 2 months
@@ -1789,6 +1907,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - The 2024 negative list items on value-added telecom and internet content services. Primary PDFs have no extractable text layer. See the negative list entry above.
 - The Weibo enterprise certification deck on sinaimg.cn (http://www.sinaimg.cn/blog/miniblog/wenjian/qiyerenzheng.pdf): 24 pages, no ToUnicode map, and undated. Not cited.
 - A Weibo overseas verification fee denominated in dollars (the "$1,000 service fee" and "4,000 RMB for Hong Kong companies" figures that appear in search summaries). Traced to离岸 company-formation forums and self-media only, never to Weibo. The only Weibo fee logged is the 600 yuan review service fee from the platform's own FAQ.
+  - Note 2026-10-17 (09B): the "$1,000 one-time fee" was still printed on /weibo-agency/ (three places) and /platforms/weibo/ (three places) in all five locales. Replaced in every locale with the 600 yuan per application review fee from kefu id=20004.
 - Logged here so the next article does not spend research time rediscovering that these are unsourceable.
 
 ### WeChat combined monthly active accounts, end of 2025
@@ -2945,6 +3064,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: douyin-marketing-cost
 - Notes: Fuling Zhacai is a tender budget, not an award; 1,610 yuan a video is a derived ceiling. Zhongjing Foods is older than 12 months; cite with its 2024 date. No allowed 2025 to 2026 source gives Douyin's gender split or a Douyin search MAU.
 - Re-verified 2026-10-11 for 07C: "抖音、快手51岁及以上用户占比分别达到22.2%、22.6%", "微博、小红书、哔哩哔哩30岁以下用户占比分别为58.6%、54.2%、66.5%", "微博、小红书、哔哩哔哩一线与新一线城市用户占比分别为36.6%、37.2%、38.5%" (36Kr, 2025-12-16) and "抖音APP下沉市场月活跃用户规模超5亿" (36Kr, 2026-07-07) confirmed at check 1 and check 2. Used in: choose-china-social-platforms (age, city-tier and lower-tier lines).
+- Re-verified 2026-10-17 for 09B: "微博、小红书、哔哩哔哩30岁以下用户占比分别为58.6%、54.2%、66.5%" and "微博、小红书、哔哩哔哩一线与新一线城市用户占比分别为36.6%、37.2%、38.5%" (36Kr, 2025-12-16) confirmed at check 1, check 2 and after the quality pass (logs/scratch/09B/check.py, tags c1, c2, c2b). Used in: weibo-2026-worth-it.
 
 ### NOT LOGGED, searched and rejected 2026-10-11 (Douyin marketing cost)
 - Douyin ad first deposit (10,000 yuan direct, 3,000 to 5,000 via agent): agency, reseller and self-media pages only. Still no platform figure; the 2026 agreement says the platform sets and publishes it.
@@ -3753,6 +3873,7 @@ set to blocked by its draft run.
 - Verified 1: 2026-10-16, HTTP 200, April 2026, 37 agencies, and fixed scope/fixed price wording confirmed.
 - Verified 2: 2026-10-16, HTTP 200 refetch at iteration 8, unchanged.
 - Used in: china-social-media-agencies-compared.
+- Re-verified 2026-10-17 for 09B: homepage HTTP 200, "37" and "April 2026" confirmed at check 1, check 2 and after the quality pass. Used in: weibo-2026-worth-it (approved form, cited to the homepage).
 
 ### 09A published scope and contract terms
 - URL: https://www.theredscroll.com/pricing/
@@ -3775,7 +3896,7 @@ estimated. No marker, no separate sign-off chase.
 |---|---|---|---|
 | Camper | /work/camper/ (43K to 187K followers, 31% sales lift, 18 months) | 02D, 03D | Published figures only, quoted from the page. The monthly series and the two campaign post-mortems are not public and are not used. |
 | Viessmann | /work/viessmann/ (no figure; "roughly two years", Douyin to Tmall, RedNote search proof, WeCom pre-sale and service) | 06D, 07D | No figure. Published lines quoted from the page (see the first-party entry). The client's own channel facts (dealers, the Carrier deal) are cited to Viessmann China and Carrier, never as our work. |
-| iGuzzini | /work/iguzzini/ (no figure; "Over 24 months", WeChat home base, RedNote designers, Weibo, livestreams, Tmall) | 06D, 07D | No figure. Published lines quoted from the page (see the first-party entry). The 2024 Haitai developer deal is iGuzzini's own, cited to China News Service. |
+| iGuzzini | /work/iguzzini/ (no figure; "Over 24 months", WeChat home base, RedNote designers, Weibo, livestreams, Tmall) | 06D, 07D, 09B | No figure. Published lines quoted from the page (see the first-party entry). 09B quotes "Weibo gave us broader reach..." as published, checked 2026-10-17 at check 1, check 2 and after the quality pass. The 2024 Haitai developer deal is iGuzzini's own, cited to China News Service. |
 | Marriott | /work/marriott/ (no figure; "millions in sales on Tmall", "Hundreds of thousands of new Bonvoy members") | 05D | No figure. Published lines quoted from the page (see the first-party entry). The 2017 Fliggy joint venture and the 2025 Meituan membership are Marriott's own deals, cited to 21st Century Business Herald and Xinhua, never as our work. |
 | Jaguar Land Rover | /work/ page if published | 09D | Only what the page publishes |
 | JAC Motors | /work/ page if published | 09D | Only what the page publishes |

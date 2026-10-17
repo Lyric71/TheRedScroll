@@ -4,6 +4,7 @@ description: "Drei Plattformen statt einer. WeChat bildet für fast jede Marke d
 metaTitle: "Social Media in China: die ersten drei Plattformen wählen"
 metaDescription: "Ein Punkteraster für Chinas soziale Plattformen: vier Fragen zu Auffindbarkeit, Preisniveau, Vertriebsweg und Käufertyp, dazu vier typische Kombinationen."
 publishDate: 2026-10-12
+updatedDate: 2026-10-17
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Strategie"
@@ -228,7 +229,7 @@ Eine vierte Plattform lohnt sich erst, wenn die ersten drei planmäßig veröffe
 > Weibo hatte im Juni 2026 561 Millionen monatlich und 254 Millionen täglich aktive Nutzer.
 > Quelle: Quartalszahlen von Weibo für das zweite Quartal 2026, zitiert von Sina Finance (新浪财经), August 2026. https://finance.sina.com.cn/stock/usstock/c/2026-08-19/doc-ininvwqk8304798.shtml
 
-Ende 2025 waren es noch 567 Millionen. Für öffentlichkeitswirksame Momente taugt Weibo weiterhin. Man sollte nur wissen, dass das Publikum schrumpft, wenn auch langsam.
+Ende 2025 waren es noch 567 Millionen. Für öffentlichkeitswirksame Momente taugt Weibo weiterhin. Man sollte nur wissen, dass das Publikum schrumpft, wenn auch langsam. [Unsere Analyse zu Weibo im Jahr 2026](/de/analysen/weibo-2026-worth-it/) zeigt, wann sich ein Budget lohnt und wann man besser verzichtet.
 
 > Weibo hatte zum Ende des vierten Quartals 2025 567 Millionen monatlich aktive Nutzer.
 > Quelle: Quartalszahlen von Weibo für das vierte Quartal 2025, zitiert von 100EC (网经社), März 2026. https://www.100ec.cn/detail--6657687.html

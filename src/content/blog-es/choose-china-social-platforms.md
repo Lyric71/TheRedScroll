@@ -4,6 +4,7 @@ description: "Mejor tres plataformas que una. WeChat sirve de base a casi cualqu
 metaTitle: "Redes sociales en China: cómo elegir las tres primeras"
 metaDescription: "Un sistema de puntos para elegir redes sociales en China: cuatro preguntas sobre descubrimiento, precio, canal de venta y comprador, y cuatro combinaciones."
 publishDate: 2026-10-12
+updatedDate: 2026-10-17
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Estrategia"
@@ -228,7 +229,7 @@ Añada una cuarta plataforma solo cuando las tres primeras cumplan su calendario
 > Weibo tenía 561 millones de usuarios activos mensuales y 254 millones de usuarios activos diarios en junio de 2026.
 > Fuente: resultados del segundo trimestre de 2026 de Weibo, citados por Sina Finance (新浪财经), agosto de 2026. https://finance.sina.com.cn/stock/usstock/c/2026-08-19/doc-ininvwqk8304798.shtml
 
-A finales de 2025 eran 567 millones. Weibo sigue siendo útil para los grandes momentos públicos, siempre que se tenga presente que su audiencia mengua, aunque despacio.
+A finales de 2025 eran 567 millones. Weibo sigue siendo útil para los grandes momentos públicos, siempre que se tenga presente que su audiencia mengua, aunque despacio. [Nuestro análisis sobre Weibo en 2026](/es/analisis/weibo-2026-worth-it/) explica cuándo merece un presupuesto y cuándo conviene prescindir de él.
 
 > Weibo tenía 567 millones de usuarios activos mensuales al cierre del cuarto trimestre de 2025.
 > Fuente: resultados del cuarto trimestre de 2025 de Weibo, citados por 100EC (网经社), marzo de 2026. https://www.100ec.cn/detail--6657687.html

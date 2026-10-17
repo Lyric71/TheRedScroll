@@ -4,6 +4,7 @@ description: "首批宜选三个平台，而非一个。微信几乎是所有品
 metaTitle: "外国品牌如何选定首批中国社交平台"
 metaDescription: "一套中国社交平台选择框架：从发现路径、价格定位、销售模式和决策方式四个问题打分，并给出四种常见平台组合。"
 publishDate: 2026-10-12
+updatedDate: 2026-10-17
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "策略"
@@ -228,7 +229,7 @@ featuredImage: "/images/blog/choose-china-social-platforms.webp"
 > 2026年6月，微博月活跃用户为5.61亿，日活跃用户为2.54亿。
 > 来源：微博2026年第二季度财报，新浪财经报道，2026年8月。https://finance.sina.com.cn/stock/usstock/c/2026-08-19/doc-ininvwqk8304798.shtml
 
-这一数字低于2025年底的5.67亿。微博仍适合承接公共话题和热点事件，只是要心中有数：它的受众正在缓慢流失。
+这一数字低于2025年底的5.67亿。微博仍适合承接公共话题和热点事件，只是要心中有数：它的受众正在缓慢流失。微博何时值得投入预算、何时可以暂缓，详见[我们的微博2026年度分析](/zh/guandian/weibo-2026-worth-it/)。
 
 > 截至2025年第四季度末，微博月活跃用户为5.67亿。
 > 来源：微博2025年第四季度财报，网经社报道，2026年3月。https://www.100ec.cn/detail--6657687.html

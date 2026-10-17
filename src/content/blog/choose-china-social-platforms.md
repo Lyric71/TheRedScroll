@@ -4,6 +4,7 @@ description: "Pick three platforms, not one. WeChat is the base for almost every
 metaTitle: "How to Pick Your First China Platforms"
 metaDescription: "A scoring framework for choosing China social platforms: four questions on discovery, price point, sales model, and buyer type, plus four shortlists."
 publishDate: 2026-10-12
+updatedDate: 2026-10-17
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Strategy"
@@ -316,7 +317,8 @@ usual candidates.
 > Source: Weibo Q2 2026 results, reported by Sina Finance (新浪财经), August 2026. https://finance.sina.com.cn/stock/usstock/c/2026-08-19/doc-ininvwqk8304798.shtml
 
 The figure is down from 567 million at the end of 2025. Weibo still works for
-public moments. Just know the audience is shrinking, slowly.
+public moments. Just know the audience is shrinking, slowly. [Our Weibo 2026 guide](/insights/weibo-2026-worth-it/)
+shows when it earns a budget and when to skip it.
 
 > Weibo had 567 million monthly active users at the end of the fourth quarter
 > of 2025.
