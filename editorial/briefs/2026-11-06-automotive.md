@@ -60,7 +60,9 @@ still current, reuse the logged citation instead of researching again. If you
 find a new figure, append it to that ledger before you finish.
 
 - China EV share of new car sales, cite CAAM or a dated industry source
-- Client outcomes from our own case studies
+- Client lines as published on /work/jaguar-land-rover/ and /work/jac-motors/
+  (amended 2026-10-18 by the 09D draft run: neither page publishes a result
+  figure, so the article quotes their published lines only; settled fallback 2)
 
 **If a figure cannot be sourced, cut the claim.** Do not estimate, do not
 hedge, do not write "industry sources suggest". A missing number is better
@@ -71,7 +73,9 @@ than an unsourced one.
 Describe each of these in the handoff block at the end of the file. Do not
 embed images in body copy.
 
-- Buyer journey diagram: awareness to test drive to dealer
+- Buyer journey diagram: awareness to test drive to dealer (amended
+  2026-10-18: carried as a markdown table with the content-by-stage table,
+  settled fallback 7; the site has no chart component)
 - Table: content type by funnel stage
 - Feature image: a car detail, headlight or wheel arch, studio lighting, no visible badge. China rule: set the scene in China and show Chinese social platforms on screen (WeChat, Xiaohongshu, Douyin or Weibo interface on a phone, laptop or studio monitor); set in a typical Chinese city, varied from article to article and not only Shanghai, only Chinese people in frame, candid normal-life photo in crisp sharp focus with legible screens (never blur, smudges or noise), no AI polish; this rule wins over the subject hint
 
@@ -114,7 +118,7 @@ handoff block. Answer each in 40 to 70 words.
 
 ## Calendar note for this week
 
-Double 11 campaigns are live this week. Slot A publishes anyway. It targets a research query, not a seasonal one.
+Double 11 campaigns are live this week. This slot publishes anyway. It targets a research query, not a seasonal one.
 
 ## Definition of done
 

@@ -662,6 +662,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-10-11 by the 2026-10-11 publish run: "企业微信已接入超过1400万真实的企业与组织" and "服务的微信用户数超过7.5亿" confirmed at check 1 and check 2. Used in: sell-on-wechat, all five locales (replaces an undated "80% of Fortune 500" vendor citation).
 - Re-verified 2026-10-11 for 07C: both strings confirmed at check 1 and check 2. Used in: choose-china-social-platforms.
 - Re-verified 2026-10-12 for 07D: "超过1400万真实的企业与组织" and "服务的微信用户数超过7.5亿" confirmed at check 1 and check 2. Used in: b2b-industrial.
+- Re-verified 2026-10-18 for 09D (check 1 and check 2 passed); cut from the automotive draft in the quality pass as not car-specific. Not used in automotive.
 
 ### Xiaohongshu: 89% of users search it first before buying home appliances and home furnishing, 2024
 - Value: 89% of users search Xiaohongshu first when buying home appliances and home furnishing products; home content searches up 4.5 times in three years; seeding cut the decision cycle from an industry average of 45 days to under 20 (platform claim)
@@ -904,6 +905,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-17, re-fetched (tags c2, c2b), unchanged
 - Used in: weibo-2026-worth-it
 - Notes: Recheck after the Q3 2026 results (November 2026), with the MAU entry above.
+- Re-verified 2026-10-18 for 09D: "该减少部分被互联网服务及汽车板块的广告收入增加" and "较去年同期的3.834亿美元下降1%" confirmed at check 1, check 2 and after the quality pass. Used in: automotive.
 
 ### Weibo hot search ranking basis and real-time list rules (platform help center)
 - Value: the hot search list is ranked on search heat, topic discussion participation and interaction with posts on the search results page (updated 2026-03-12; the page links to the full hot search rules); the real-time list updates every minute, ranks keywords by short-term search volume, sets a quality bar for searching users and runs monitoring against manipulation (updated 2024-10-18)
@@ -1030,6 +1032,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: choose-china-social-platforms
 - Notes: The platform's own release, not reporting. Still no allowed source for a Douyin search MAU (7.6亿) or 53亿 daily searches.
 - Re-verified 2026-10-14 for 08B: "53%的看后搜与47%的主动搜索共同构成双轮驱动" and 2025-11-25 confirmed at check 1, check 2 and after the quality pass. Used in: douyin-advertising-formats.
+- Re-verified 2026-10-18 for 09D (check 1 and check 2 passed); cut from the automotive draft in the quality pass. Not used in automotive.
 
 ### Xiaohongshu luxury: official stores, conversion span, 2025 searches
 - Value: more than 30 luxury brands run official stores on Xiaohongshu; a luxury buyer's conversion span can exceed 90 days; 250 billion searches on Xiaohongshu in 2025, nearly 90% user-initiated; more than 70 luxury brands used 种草直达 in 2025
@@ -1059,6 +1062,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-12, re-fetched before the draft was finished (tag c2) and after the quality pass (tag c2b), unchanged
 - Used in: b2b-industrial
 - Notes: The help center's Chinese page for departed-employee reassignment (help2/pc/17941) is the education (学员) variant, so the developer page is cited for departed employees. Supports the CRM service page line that WeCom contacts stay with the company when a rep leaves.
+- Re-verified 2026-10-18 for 09D: "企业可以将在职成员的客户和客户群分配给其他成员继续提供服务" and "24小时后自动成为联系人" confirmed at check 1, check 2 and after the quality pass. Used in: automotive (active-employee reassignment only).
 
 ### Zhihu content and creators, Q2 2026
 - Value: about 993 million pieces of content in total; 81.5 million content creators in total; AI-related professional content up about 37% year on year; 13.11 million average monthly subscribing members; marketing services revenue 199 million yuan, 28.8% of revenue
@@ -1099,6 +1103,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-12, re-fetched (tags c2, c2b), unchanged
 - Used in: b2b-industrial
 - Notes: The research agent first dated the WeCom feature to 4.1.8; the history puts it in 4.1.9, July 2022. The description has no date of its own, so cite the listing as confirmed October 2026. School.oceanengine.com pages render by script and show no text to curl.
+- Re-verified 2026-10-18 for 09D: "飞鱼是巨量引擎旗下的销售线索管理工具" and "支持一键添加企业微信" confirmed at check 1, check 2 and after the quality pass. Used in: automotive (same citation form as b2b-industrial).
 
 ### WeChat verification naming: only China-registered (R) marks; pending marks only through self-chosen wording
 - Value: naming a verified Official Account after a trademark requires an R mark registered with China's trademark office (只能使用中国商标局注册的商标R商标，不得使用境外注册商标); the R mark must be valid; a TM mark that has passed preliminary examination can only be used through the self-chosen naming route (只能通过自选词汇方式命名)
@@ -3127,6 +3132,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: china-kol-pricing
 - Notes: Topklout is owned by Tianxiaxiu (天下秀), a listed influencer-marketing company (its 2025 annual report lists it). The 36Kr copy fails with curl.
 - Re-verified 2026-10-13 for 08A: the head 13.1% / 20.5% line and "小红书尾部金额占比逼近20%" confirmed at check 1, check 2 and after the quality pass. The page also says "抖音尾部KOL占据了72.7%的投放次数" (checked once, not cited). Used in: kol-vs-koc-cost-roi.
+- Re-verified 2026-10-18 for 09D: "抖音数码3C投放金额增长4.1个百分点，汽车增长3.6个百分点" confirmed at check 1, check 2 and after the quality pass. Used in: automotive (car brands raised their share of Douyin creator spend by 3.6 points).
 
 ### QuestMobile 2024: sponsored-post unit prices by creator category
 - Value: Douyin: looks, auto and finance creators lead soft-ad unit price and income; Xiaohongshu: beauty creators face the most competition and their average price is relatively low; creators under 500,000 followers (mostly under 100,000) carry most brand placements
@@ -3372,6 +3378,145 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - "Hit note costs 50,000 yuan+ with 100,000-follower creators" (Xiaohongshu commercial products lead, WILL 2023): only in a Sina Kandian self-media transcript. Not cited.
 - "62% of viral notes from accounts under 10,000 followers": self-media, no named original. Rejected.
 - Miaozhen 2026 "KOC/KOS deployment up 16 points", "below mid-tier creators supply 64% of content": reposts only, not on miaozhen.com. Rejected.
+
+### China vehicle and new energy vehicle sales, 2025 full year (CAAM)
+- Value: 34.40 million vehicles sold (+9.4%), production 34.531 million; new energy vehicles 16.49 million sold (+28.2%); NEV share 47.9% of new vehicle sales, up 7 percentage points; exports 7.098 million (+21.1%); domestic sales without exports 27.302 million, about level with 2017
+- As of: 2025 full year (CAAM release, January 2026)
+- Source: China Association of Automobile Manufacturers (中国汽车工业协会), reported by Xinhua (新华社, 2026-01-14), National Business Daily (每日经济新闻) via Sina (2026-01-15) and China Economic Net (中国经济网, 2026-01-15)
+- URL: https://www.news.cn/fortune/20260114/cbbd861081c349d8ae238167ca418fa3/c.html ; https://finance.sina.com.cn/roll/2026-01-15/doc-inhhiusf6561699.shtml ; http://auto.ce.cn/auto/gundong/202601/t20260115_2703088.shtml
+- Verified 1: 2026-10-18, fetched with curl in the 09D run (session check.py, tag c1); Xinhua "2025年，我国汽车产销分别完成3453.1万辆和3440万辆" and "新能源汽车产销分别完成1662.6万辆和1649万辆，同比分别增长29%和28.2%"; NBD "新能源汽车新车销量达到汽车新车总销量的47.9%，较去年同期提高7个百分点"; CE "新能源汽车新车销量达到汽车总销量的47.9%", "2025年，中国汽车出口达到709.8万辆，同比增长21.1%" and "如果剔除出口数据，2025年汽车国内销量为2730.2万辆，与2017年基本持平。" confirmed
+- Verified 2: 2026-10-18, re-fetched at iteration 8 (tag c2) and again after the quality pass (tag c2b), unchanged
+- Used in: automotive
+- Notes: The two outlets word the 47.9% differently ("汽车新车总销量" on NBD, "汽车总销量" on CE); match each to its own URL. caam.org.cn carries no usable text for this release; cite the reports. The domestic-sales line is a quotation on the CE page; cite CE, not CAAM directly.
+
+### China new energy vehicle share, September 2026 and January to September (CAAM)
+- Value: NEV sales 1.823 million in September 2026 (+13.6%); 61.6% of new vehicle sales, the third month above 60% and a record; January to September NEV sales 12.472 million (+11.1%), cumulative share 53.6%
+- As of: September 2026 (CAAM release, 2026-10-12)
+- Source: China Association of Automobile Manufacturers, reported by Xinhua on People's Daily Online (人民网); second outlet Securities Times (证券时报)
+- URL: http://finance.people.com.cn/n1/2026/1012/c1004-40813068.html ; https://www.stcn.com/article/detail/4212154.html
+- Verified 1: 2026-10-18, fetched with curl (tag c1; People's Daily timed out once and passed on retry); "新能源汽车月度新车销量占比连续三个月突破60%，9月再创新高，达到61.6%。" and "新能源汽车新车销量累计占比进一步上升至53.6%。" confirmed; STCN "新能源汽车新车销量累计占比上升至53.6%" confirmed
+- Verified 2: 2026-10-18, re-fetched (tags c2, c2b), unchanged
+- Used in: automotive
+- Notes: CAAM counts factory sales of all vehicles, exports included. Never mix with CPCA's domestic passenger-car retail penetration (next entry). Recheck when CAAM releases October data (around 2026-11-11).
+
+### China new energy passenger car retail penetration, September 2026 (CPCA)
+- Value: NEV retail penetration 67.0%, wholesale 65.4%, both records; passenger-car retail 1.618 million, down 28.0% year on year
+- As of: September 2026 (CPCA data, 2026-10-12)
+- Source: China Passenger Car Association (乘联会, 全国乘用车市场信息联席会), reported by China News Service (中新网)
+- URL: https://www.chinanews.com.cn/cj/2026/10-12/10712022.shtml
+- Verified 1: 2026-10-18, fetched with curl (tag c1); "9月全国新能源乘用车零售渗透率攀升至67.0%，批发渗透率达65.4%，均创历史新高。" and "2026年9月全国乘用车市场零售161.8万辆，同比下降28.0%" confirmed
+- Verified 2: 2026-10-18, re-fetched (tags c2, c2b), unchanged
+- Used in: automotive
+- Notes: Domestic passenger-car retail only. cpcaauto.com returns 403 to scripts ("请使用浏览器访问本站"); cite China News Service.
+
+### McKinsey 2026 China auto consumer report: replacement demand, narrower brand consideration
+- Value: replacement buying (换购) is now the main source of demand; the number of brands buyers consider narrowed for the first time
+- As of: report released 2026-05-12 (《2026麦肯锡中国汽车消费者洞察》)
+- Source: China Securities Journal (中国证券报·中证网), 2026-05-13
+- URL: https://www.cs.com.cn/ssgs/01/2026/05/13/detail_2026051310011332.html
+- Verified 1: 2026-10-18, fetched with curl (tag c1); "中国乘用车市场全面进入存量时代，换购成为需求主力", "消费者选车考虑品牌数量首次收窄" and "《2026麦肯锡中国汽车消费者洞察》" confirmed
+- Verified 2: 2026-10-18, re-fetched (tags c2, c2b), unchanged
+- Used in: automotive
+- Notes: Qualitative findings only; the page gives no research-channel shares. Cite as reported by China Securities Journal.
+
+### MIIT on car price wars, May 2025
+- Value: disorderly price wars are a typical form of "involution" competition; price wars have "no winners"; MIIT will step up action against involution in the car industry
+- As of: 2025-05-31
+- Source: Xinhua (新华社), reporting the Ministry of Industry and Information Technology (工业和信息化部)
+- URL: http://www.news.cn/fortune/20250531/890321bef3b34359a59a84f141c637ff/c.html
+- Verified 1: 2026-10-18, fetched with curl (tag c1); "“价格战”没有赢家，更没有未来。" and "工业和信息化部将加大汽车行业“内卷式”竞争整治力度" confirmed
+- Verified 2: 2026-10-18, re-fetched (tags c2, c2b), unchanged
+- Used in: automotive
+- Notes: Older than 12 months at use; the dated policy statement (fallback 9). The SAMR price conduct guidelines (Xinhua, 2026-02-12, https://www.news.cn/fortune/20260212/57c06f93332f412dad0c8cab420429d8/c.html, "市场监管总局发布《汽车行业价格行为合规指南》") passed check 1 but were cut from the draft because the article did not need them.
+
+### J.D. Power China: buyers arrive decided (2025 SSI) and decide fast (2026 PXI)
+- Value: 2025 SSI: 76.4% of shoppers already had a clear brand or model in mind when shopping, up 7 points from 2024. 2026 PXI (9,093 owners who bought June 2025 to January 2026): the largest group of NEV buyers decided within 1 to 2 weeks; the largest group of gasoline car buyers within 1 week
+- As of: SSI released 2025-07-24; PXI released 2026-06-18
+- Source: J.D. Power China (君迪), official press releases
+- URL: https://china.jdpower.com/press-releases/2025-china-sales-satisfaction-index-ssi-study ; https://china.jdpower.com/zh-hans/press-releases/2026nianzhongguogouchekehutiyanzhishuyanjiu
+- Verified 1: 2026-10-18, fetched with curl (tag c1); "76.4% of shoppers already had a clear brand/model in mind when shopping"; "新能源购车决策周期在1-2周内的客户占比最高", "传统能源车决策周期在1周内客户占比最高" and "2026年的研究基于2025年6月至2026年1月期间购买新车的9,093名车主的反馈。" confirmed
+- Verified 2: 2026-10-18, re-fetched (tags c2, c2b), unchanged
+- Used in: automotive
+- Notes: "Largest group", never "most buyers", for the decision cycle. The PXI headline contains an em dash; never quote it.
+
+### Douyin Life Services car white paper: research before the visit, order sources, 2025
+- Value: about 75% of 2025 car buyers locked in brand, model and store through short video, live streams and search before visiting; Douyin car orders: 35% from live streams, 34% from in-app search, 13% offline QR scans, 12% shelf, 6% short video; 670,000 car orders redeemed in 2025
+- As of: 2025 data, white paper reported 2026-04-24
+- Source: Douyin Life Services (抖音生活服务) white paper, reported by IT Home (IT之家)
+- URL: https://www.ithome.com/0/943/223.htm
+- Verified 1: 2026-10-18, fetched with curl (tag c1); "约 75% 的购车用户会在到店前，通过短视频、直播和搜索提前锁定想看的品牌、车型和门店", "约 35% 的汽车订单来自直播，34% 来自站内搜索，13% 来自线下扫码，12% 来自货架场景，6% 来自短视频内容。" and "2025 年全年，抖音生活服务汽车行业总核销订单量达 67 万台。" confirmed (IT Home puts spaces around numbers)
+- Verified 2: 2026-10-18, re-fetched (tags c2, c2b), unchanged
+- Used in: automotive
+- Notes: The platform's own claim, as reported. The 75% covers short video, live and search generally, not Douyin only; never write "on Douyin". A copy sits on China Daily's partner channel (sponsored-style), not cited.
+
+### Autohome and Dongchedi mobile daily users
+- Value: Autohome (汽车之家) 76.5 million mobile daily users in June 2026, stable with slight growth (QuestMobile); Dongchedi (懂车帝) over 10 million mobile daily users, and 6 of every 10 serious car shoppers use it (2025)
+- As of: June 2026 (Xinhua, 2026-08-21); July 2025 (Securities Times, 2025-07-13)
+- Source: Xinhua (新华网); Securities Times (证券时报), second copy Chutian Metropolis Daily (楚天都市报)
+- URL: http://www.news.cn/tech/20260821/882cec1424c84a2c8a74cf683ac1799e/c.html ; https://www.stcn.com/article/detail/2545107.html ; https://www.ctdsb.net/c1666_202507/2482722.html
+- Verified 1: 2026-10-18, fetched with curl (tag c1); "6月移动端日均用户量达7,650万，同比稳中有升"; "懂车帝移动端日活突破1000万" and "每10个深度购车用户，就有6个在用懂车帝" confirmed (the STCN copy drops a comma; the Chutian copy has it)
+- Verified 2: 2026-10-18, re-fetched (tags c2, c2b), unchanged
+- Used in: automotive
+- Notes: Dongchedi's 5.1亿 on the same page counts car-interest users across ByteDance apps, not Dongchedi users; not used. The STCN page does not say who owns Dongchedi; Jiemian (entry below) describes Judongche as Dongchedi plus Douyin's car business.
+
+### Douyin car audience, stores, leads and the September 2026 lead rule (Judongche)
+- Value: 510 million car-interest users among 700 million daily users (2026-02); over 30,200 active car stores in 2025 and over 810,000 car sales leads a day; Judongche (巨懂车) combines Dongchedi and Douyin's car business; Dongche Cloud Store (懂车云店) is the back-end tool 4S stores use to stream and collect buyer details; from 2026-09-01 brands and merchants can no longer hand-enter WeChat IDs on leads, live stream lead and quote cards require an SMS code the merchant cannot switch off, and the notice blames large numbers of fake leads in merchant-entered WeChat IDs; Jiemian notes more users may drop out midway
+- As of: 2026-02-02 (summit report); 2026-09-15 (Jiemian)
+- Source: Eastday (东方网) on China Daily (中国日报网); Jiemian (界面新闻, column 电厂); second copy Huxiu (虎嗅)
+- URL: https://caijing.chinadaily.com.cn/a/202602/02/WS69807502a310942cc499de73.html ; https://www.jiemian.com/article/15098787.html ; https://www.huxiu.com/article/4891366.html
+- Verified 1: 2026-10-18, fetched with curl (tag c1); "7亿日活用户中覆盖5.1亿汽车兴趣用户"; "2025年抖音活跃汽车门店超过3.02万家，抖音每天产生的汽车销售线索超过81万条。", "巨懂车是融合懂车帝与抖音汽车业务", "懂车云店则是4S店在抖音开直播、收集客户信息时使用的后台工具", "从9月1日起，所有品牌和商家都不能再手动补录微信号。", "还要再输入一次短信验证码，商家不能关闭这一步", "商家自行录入的微信中存在大量虚假线索" and "多一步验证就意味着更多用户可能中途退出" confirmed; Huxiu "3.02万" confirmed
+- Verified 2: 2026-10-18, re-fetched (tags c2, c2b), unchanged
+- Used in: automotive
+- Notes: Platform figures, as reported. The same Jiemian page quotes streamers on lead costs (about 70 yuan rising to 500 in some sessions) and lead counts cut "四成、甚至七成": anecdote, not used. Recheck the lead rule before any later article cites it.
+
+### Xiaohongshu car audience and car searches
+- Value: 200 million+ car-interest users; 350 million MAU in July 2025, 50% born after 1995 (Xiaohongshu data platform, 2025-08); about 400 million car-related searches a month, 60% of about 300 million monthly users interested in cars (2025-04)
+- As of: July 2025; April 2025
+- Source: China Business Journal (中国经营报) via Sina, 2025-08-04; LatePost (晚点LatePost) on 163, 2025-04-28; Gasgoo (盖世汽车), 2025-05-06, confirms the 400 million
+- URL: https://finance.sina.com.cn/jjxw/2025-08-04/doc-infiuumz0399380.shtml ; https://www.163.com/dy/article/JU8EPNCN0531M1CO.html ; https://i.gasgoo.com/news/70424539.html
+- Verified 1: 2026-10-18, fetched with curl (tag c1); "截至2025年7月，小红书有3.5亿名月活用户，其中有50%是95后", "2亿+的规模"; "其中 60% 人群对汽车感兴趣", "小红书每月会产生约 4 亿次汽车相关内容的搜索"; Gasgoo "月均搜索量高达 4 亿次" confirmed
+- Verified 2: 2026-10-18, re-fetched (tags c2, c2b), unchanged
+- Used in: automotive
+- Notes: Platform's own figures; the 350 million MAU is older than the 400 million+ in the May 2026 entry above, so cite it only with its July 2025 date. No 2026 car-specific Xiaohongshu figure from an allowed page (the 2026 car report's numbers sit in a PDF not fetched).
+
+### China car dealers 2025: losses, 4S network, direct sales (CADA survey)
+- Value: 23.5% of dealers profitable, 20.8% break-even, 55.7% losing money (up 14 points); new car, after-sales and finance gross profit contributions -25.5%, 80.8% and 24.3%; 32,432 4S stores at end-2025 (-1.4%); 26,260 independent NEV outlets (+21%); among NEV sales outlets, agency plus company-owned direct sales exceed half
+- As of: 2025, survey released 2026-03-18
+- Source: China Automobile Dealers Association (中国汽车流通协会), reported by China Consumer News via China Economic Net (中国经济网, 2026-03-25) and Caixin (财新, 2026-03-20)
+- URL: http://m.ce.cn/qc/gd/202603/t20260325_2856106.shtml ; https://companies.caixin.com/2026-03-20/102425425.html
+- Verified 1: 2026-10-18, fetched with curl (tag c1); "汽车经销商盈利比例从2024年的39.3%收窄至23.5%，持平比例为20.8%，亏损比例为55.7%。", "新车、售后和金融保险的毛利贡献分别为-25.5%、80.8%和24.3%", "截至2025年底，国内汽车4S店网络规模为32432家，较2024年收缩1.4%", "2025年，新能源独立渠道网络数量26260家，较上年增长约21%。" and "代理与直营所组成的直接销售模式规模占比过半，超过了传统的授权经销模式。"; Caixin "亏损比例达55.7%，同比提升14个百分点" and the 2026-03-18 release confirmed
+- Verified 2: 2026-10-18, re-fetched (tags c2, c2b), unchanged
+- Used in: automotive
+- Notes: The 26,260 and direct-sales share trace to a single China Consumer News original. "About 1,800 dealers closed in H1 2026" (China Youth Daily, no primary source named) is not logged.
+
+### CADA dealer inventory warning index, September 2026
+- Value: 63.2%, up 8.7 points year on year and 0.9 points month on month, above the 50% boom-bust line; dealers cite continued falls in foot traffic and leads and longer times to close
+- As of: September 2026 (released 2026-09-30)
+- Source: China Automobile Dealers Association (中国汽车流通协会)
+- URL: https://www.cada.cn/Data/info_85_10576.html
+- Verified 1: 2026-10-18, fetched with curl (tag c1); "2026年9月汽车经销商库存预警指数为63.2%，同比上升8.7个百分点", "客流与线索持续下滑，成交周期拉长", "以50%作为荣枯线" and "库存预警指数位于荣枯线之上" confirmed
+- Verified 2: 2026-10-18, re-fetched (tags c2, c2b), unchanged
+- Used in: automotive
+- Notes: Monthly series; recheck before reuse (October index due end of October 2026).
+
+### Carmaker apps and WeChat Channels: the brands' own channels
+- Value: carmakers build direct channels through official apps and WeChat Mini Programs; June 2026 official app MAU: BYD 15.835 million, Great Wall 4.325 million, Geely Galaxy 2.764 million (QuestMobile). WeChat Channels (视频号): carmaker account opening 100%, over 70% of carmakers stream live, dealer accounts up 735% and dealer posts up 259% year on year (2024, "public data")
+- As of: June 2026 (DoNews, 2026-08-11); November 2024 (China Auto News, 2024-11-08)
+- Source: QuestMobile, reported by DoNews; China Auto News (中国汽车报) on Tencent News
+- URL: https://www.donews.com/news/detail/1/6666159.html ; https://news.qq.com/rain/a/20241108A0796C00
+- Verified 1: 2026-10-18, fetched with curl (tag c1); "车企持续发力自有私域阵地，通过官方APP和微信小程序直连用户", "比亚迪、长城汽车、吉利银河官方APP月活用户分别为1583.5万、432.5万、276.4万"; "汽车主机厂视频号开通率已达100%" and "经销商视频号数量同比增长735%" confirmed (Tencent News text read from the page's embedded JSON)
+- Verified 2: 2026-10-18, re-fetched (tags c2, c2b), unchanged
+- Used in: automotive
+- Notes: The Channels figures are older than 12 months; cite with "by late 2024" (fallback 9). No newer allowed source found. Yiche's 580 million "全景生态用户" on the DoNews page is an ecosystem figure, not app users; not used.
+
+### NOT LOGGED, searched and rejected 2026-10-18 (automotive)
+- Share of dealer leads from Douyin or live streaming: no allowed source ("30% from live streaming" from AI briefs; 67 to 200 yuan cost per lead and "15% to 20% of sales" from self-media; the 2023 Douyin dealer guide is platform sales material).
+- About 1,800 authorized dealers closed in H1 2026: China Youth Daily states it with no primary source; self-media copies credit 全国工商联汽车经销商商会.
+- NIO and Li Auto direct-sales lines (FY2025 Form 20-F): sec.gov returns HTTP 403 to scripted fetches, so two checks cannot be logged. Recheck note: if a later brief needs them, fetch from the companies' IR sites instead.
+- A WeCom case with a figure for a named car brand: SCRM vendor blogs only.
+- Xiaohongshu share of women among car users ("67%"): vendor pages only.
+- Ocean Engine (巨量算数) car content figures for 2025 or 2026: self-media only.
+- NIO app user numbers: not in the 20-F; 2021 blog figures only.
 
 ## TheRedScroll first-party data
 
@@ -4057,8 +4202,8 @@ estimated. No marker, no separate sign-off chase.
 | Viessmann | /work/viessmann/ (no figure; "roughly two years", Douyin to Tmall, RedNote search proof, WeCom pre-sale and service) | 06D, 07D | No figure. Published lines quoted from the page (see the first-party entry). The client's own channel facts (dealers, the Carrier deal) are cited to Viessmann China and Carrier, never as our work. |
 | iGuzzini | /work/iguzzini/ (no figure; "Over 24 months", WeChat home base, RedNote designers, Weibo, livestreams, Tmall) | 06D, 07D, 09B | No figure. Published lines quoted from the page (see the first-party entry). 09B quotes "Weibo gave us broader reach..." as published, checked 2026-10-17 at check 1, check 2 and after the quality pass. The 2024 Haitai developer deal is iGuzzini's own, cited to China News Service. |
 | Marriott | /work/marriott/ (no figure; "millions in sales on Tmall", "Hundreds of thousands of new Bonvoy members") | 05D | No figure. Published lines quoted from the page (see the first-party entry). The 2017 Fliggy joint venture and the 2025 Meituan membership are Marriott's own deals, cited to 21st Century Business Herald and Xinhua, never as our work. |
-| Jaguar Land Rover | /work/ page if published | 09D | Only what the page publishes |
-| JAC Motors | /work/ page if published | 09D | Only what the page publishes |
+| Jaguar Land Rover | /work/jaguar-land-rover/ (no figure; "In China, the problem was age.", Douyin, RedNote and WeChat, content shot in China, UGC hashtag challenges) | 09D | No figure (the page publishes none). Three published lines quoted in automotive, checked 2026-10-18 at check 1, check 2 and after the quality pass. |
+| JAC Motors | /work/jac-motors/ (no result figure; client fact "over 10 million vehicles sold worldwide"; WeChat, RedNote, Weibo; J-Bot in six Olympic versions reposted by JAC's international teams) | 09D | No result figure. The 10 million is the client's own fact, quoted from the page. Five published lines quoted in automotive, checked 2026-10-18 at check 1, check 2 and after the quality pass. |
 | Langnese | /work/langnese/ | 04D | No figure (the page publishes none). Qualitative lines quoted from the page; "domestic brands cost half as much" is quoted as the page's research finding. |
 | Master Martini | /work/master-martini/ | 04D | No figure. Qualitative lines quoted from the page. The work ran on Instagram and Facebook in Malaysia, Hong Kong, Singapore, Indonesia and Thailand, not in mainland China; 04D says so and brief 04D was amended. |
 | Mission Foods | /work/mission-foods/ | 04D | No figure. Qualitative lines quoted from the page. |
