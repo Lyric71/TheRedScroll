@@ -4,7 +4,7 @@ description: "Pick three platforms, not one. WeChat is the base for almost every
 metaTitle: "How to Pick Your First China Platforms"
 metaDescription: "A scoring framework for choosing China social platforms: four questions on discovery, price point, sales model, and buyer type, plus four shortlists."
 publishDate: 2026-10-12
-updatedDate: 2026-10-17
+updatedDate: 2026-10-20
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Strategy"
@@ -280,8 +280,8 @@ your buyers live. Kuaishou fits buyers in smaller cities. If yours compare
 before they buy, take Xiaohongshu instead.
 
 **B2B.** WeChat and WeCom carry the sales conversation. Xiaohongshu staff
-accounts answer questions in public. Bilibili suits engineers who watch long
-explainers. Douyin suits a product that shows well in 30 seconds.
+accounts answer questions in public. Bilibili suits a product that needs a careful
+demonstration, once you check that the creator reaches your buyers. Douyin suits a product that shows well in 30 seconds.
 
 Travel is the clearest case of all. Chinese travelers plan their trips on
 Xiaohongshu, and many book hotels through Douyin live rooms.
@@ -328,8 +328,11 @@ shows when it earns a budget and when to skip it.
 > the second quarter of 2026, with 113 minutes of use a day.
 > Source: Bilibili Q2 2026 results, reported by Securities Times (证券时报), August 2026. https://www.stcn.com/article/detail/4143348.html
 
-> Bilibili's users average about 26.5 years old.
-> Source: Bilibili Q2 2026 earnings call, reported by Xinwen Chenbao (新闻晨报), August 2026. https://news.qq.com/rain/a/20260828A07Q5P00
+> The average age of Bilibili's active users was 26.5 in Q2 2026.
+> Source: Bilibili Q2 2026 investor presentation, August 2026, page 7. https://ir.bilibili.com/media/xx5dzckf/q2-2026-bilibili-inc-investor-presentation.pdf
+
+Bilibili carries short video as well as long explainers. [Our Bilibili marketing guide](/insights/bilibili-marketing-foreign-brands/)
+shows who watches, how to brief creators, and what to budget.
 
 > The Kuaishou app averaged 412 million daily and 797 million monthly active
 > users in the second quarter of 2026.

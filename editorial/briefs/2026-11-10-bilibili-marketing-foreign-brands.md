@@ -37,7 +37,7 @@ They override any conflicting rule inside the skill.
 
 ## The angle
 
-Seven of the ten rivals cover Bilibili and we do not. It feeds our neglected platforms page. The angle is long-form: Bilibili is the only Chinese platform where a twenty-minute video works, which changes what a brand should make.
+Seven of the ten rivals cover Bilibili and we do not. It feeds our neglected platforms page. The angle is long-form: Bilibili supports detailed creator-led explanations, but it also carries short video. Test whether the subject earns a longer treatment; do not claim exclusive support for twenty-minute videos.
 
 ## Section outline
 
@@ -45,10 +45,10 @@ Follow this order. Rename headings into plain reader language. Do not add a
 summary or conclusion section. End on the CTA.
 
 1. Who is actually on Bilibili in 2026
-2. The long-form advantage: why twenty minutes works here
+2. The long-form opportunity: earn the running time
 3. Content categories where brands genuinely belong
-4. The UP host relationship, which is not a KOL relationship
-5. Ads: formats, minimums and typical costs
+4. The UP creator relationship: expertise, creative freedom, and commercial scope
+5. Ads: sourced formats and quote checks; omit numerical minimums or typical costs without eligible evidence
 6. The bullet comment culture and how brands get it wrong
 7. Which sectors should be on Bilibili and which should not
 8. What a Bilibili program costs
@@ -73,7 +73,7 @@ Describe each of these in the handoff block at the end of the file. Do not
 embed images in body copy.
 
 - Sector fit table: strong, situational, skip
-- Content format table with typical length and cost
+- Content format table with explicitly editorial length choices and cost drivers, not unsourced market averages
 - Feature image: a long horizontal video timeline graphic, abstract. China rule: set the scene in China and show Chinese social platforms on screen (WeChat, Xiaohongshu, Douyin or Weibo interface on a phone, laptop or studio monitor); set in a typical Chinese city, varied from article to article and not only Shanghai, only Chinese people in frame, candid normal-life photo in crisp sharp focus with legible screens (never blur, smudges or noise), no AI polish; this rule wins over the subject hint
 
 ## Tables required
@@ -96,8 +96,8 @@ Final section only. CTA label: **Book a call**
 
 | Field | Ceiling | Draft value |
 |---|---|---|
-| Title | 52 chars | Bilibili for Foreign Brands: Cost and Fit (41 chars) |
-| Meta description | 152 chars | Who Bilibili reaches in 2026, why long-form video works there, how UP host deals differ from KOL deals, ad costs, and who should skip it. (137 chars; completed 2026-10-11 by the 07C draft run, the earlier value was cut off mid-phrase) |
+| Title | 52 chars | Bilibili marketing: cost and fit for foreign brands |
+| Meta description | 152 chars | Bilibili marketing for foreign brands: audience, creator deals, ad formats, and the costs to check before you commit. |
 | Excerpt | 25 words | generate in the SEO iteration |
 
 The draft values above are approved. Use them unless the finished article
@@ -131,3 +131,7 @@ Double 11 falls on Wednesday Nov 11. Slot D is written on the Thursday and publi
 - [ ] Feature image block appended with the correct slug path
 - [ ] Body character count reported and on target
 - [ ] File saved as `output/bilibili-marketing-foreign-brands.md`
+
+## Research correction, October 20, 2026
+
+Issuer filings support 371 million Q2 2026 MAU, 26.5 average active-user age, and 113 minutes of daily use, not per session. UP creator and influencer are overlapping descriptions. No eligible current universal ad minimum or creator rate range was validated; explain quote scope instead. Original issuer sources and both checks are recorded in the run log and source ledger.

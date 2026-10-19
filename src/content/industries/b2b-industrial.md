@@ -4,7 +4,7 @@ description: "In China, a B2B supplier's home base is WeChat (微信), and its s
 metaTitle: "B2B and Industrial Marketing in China"
 metaDescription: "How B2B and industrial brands generate leads in China. WeChat pipelines, WeCom handoff, technical content, and measuring a 12-month sales cycle."
 publishDate: 2026-10-12
-updatedDate: 2026-10-12
+updatedDate: 2026-10-20
 author: "TheRedScroll"
 platforms: ["wechat", "douyin", "rednote"]
 category: "Industry"
@@ -231,7 +231,7 @@ It also feeds Chinese AI assistants, on a small test.
 > 29.9%, far ahead of Bilibili at 7.6%. The test logged 630 valid answers.
 > Source: QbitAI think tank (量子位智库), May 2025. https://www.qbitai.com/2025/05/285761.html
 
-Bilibili (哔哩哔哩) is long video, and a lot of it is learning.
+Bilibili (哔哩哔哩) is best known for long video, and a lot of it is learning.
 
 > 230 million users learned professional knowledge on Bilibili in 2025, and
 > about 16 million watch technology videos every day.

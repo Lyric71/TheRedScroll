@@ -4,7 +4,7 @@ description: "WeChat, Douyin, RedNote, Weibo, and a dozen more Chinese platforms
 metaTitle: "China Social Media Platforms: 2026 Brand Guide"
 metaDescription: "A 2026 guide to China's social media platforms for foreign brands. Real user numbers, commerce features, and where to start. From the ground."
 publishDate: 2026-06-30
-updatedDate: 2026-10-12
+updatedDate: 2026-10-20
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Platforms"
@@ -143,11 +143,14 @@ That is the core four. For most brands they carry the bulk of the work. But depe
 
 ## Bilibili (哔哩哔哩): Gen Z, depth, and trust
 
-Bilibili is where young, educated China spends its time. About two-thirds of its users are under 30. On some peak days nearly 90% are under 35.
+Bilibili reaches a young adult audience, but platform-wide age figures do not establish the audience for a particular creator.
+
+> The average age of Bilibili’s active users was 26.5 in Q2 2026.
+> Source: Bilibili Q2 2026 investor presentation, August 2026, page 7. https://ir.bilibili.com/media/xx5dzckf/q2-2026-bilibili-inc-investor-presentation.pdf
 
 It started out built around anime and gaming culture, and it still owns that world. But it has grown into tech, science, education, lifestyle, and more. Its signature is the danmu, bullet comments that scroll across the screen and create a shared viewing experience few platforms can match.
 
-Bilibili's strength is depth. Creators make long, careful videos, and viewers trust them. That makes it strong for brands that can teach something or tell a story worth sitting through. Even B2B technical firms use deep-dive videos to reach young engineers and decision-makers. Nobody goes viral and sells out overnight on Bilibili. What you build there is credibility, and that takes longer.
+Detailed explanations can make Bilibili useful for brands with something to demonstrate. It also carries short video. For B2B content, verify that the selected creator reaches relevant buyers; an audience interested in technology is not automatically a purchasing audience. Define the next step and measure inquiries or sales separately from views.
 
 ## Kuaishou (快手): grassroots reach and trust commerce
 

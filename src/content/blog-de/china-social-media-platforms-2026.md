@@ -4,7 +4,7 @@ description: "WeChat, Douyin, RedNote, Weibo und ein Dutzend weiterer chinesisch
 metaTitle: "Chinas Social-Media-Plattformen 2026"
 metaDescription: "Ein Leitfaden 2026 zu Chinas Social-Media-Plattformen für ausländische Marken. Echte Nutzerzahlen, Commerce-Funktionen und der richtige Einstieg. Vor Ort."
 publishDate: 2026-06-30
-updatedDate: 2026-10-12
+updatedDate: 2026-10-20
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Plattformen"
@@ -143,11 +143,14 @@ Das sind die vier zentralen. Für die meisten Marken tragen sie den Großteil de
 
 ## Bilibili (哔哩哔哩): Gen Z, Tiefe und Vertrauen
 
-Bilibili ist der Ort, an dem das junge, gebildete China seine Zeit verbringt. Etwa zwei Drittel der Nutzer sind unter 30. An manchen Spitzentagen sind fast 90 Prozent unter 35.
+Bilibili erreicht viele junge Erwachsene. Das Durchschnittsalter der gesamten Plattform sagt allerdings wenig darüber aus, wen ein bestimmter Creator erreicht.
+
+> Die aktiven Nutzer von Bilibili waren im zweiten Quartal 2026 im Schnitt 26,5 Jahre alt.
+> Quelle: Bilibili, Investorenpräsentation zum Q2 2026, August 2026, Seite 7. https://ir.bilibili.com/media/xx5dzckf/q2-2026-bilibili-inc-investor-presentation.pdf
 
 Es entstand rund um Anime- und Gaming-Kultur und beherrscht diese Welt bis heute. Doch es ist in Technik, Wissenschaft, Bildung, Lifestyle und mehr hineingewachsen. Sein Markenzeichen sind die Danmu, Bullet-Kommentare, die über den Bildschirm laufen und ein gemeinsames Seherlebnis schaffen, wie es kaum eine andere Plattform bietet.
 
-Bilibilis Stärke ist die Tiefe. Creator machen lange, sorgfältige Videos, und die Zuschauer vertrauen ihnen. Das macht es stark für Marken, die etwas erklären oder eine Geschichte erzählen können, für die man sitzen bleibt. Selbst technische B2B-Firmen nutzen ausführliche Videos, um junge Ingenieure und Entscheider zu erreichen. Niemand geht auf Bilibili über Nacht viral und verkauft aus. Was man dort aufbaut, ist Glaubwürdigkeit, und das dauert länger.
+Ausführliche Erklärungen können Bilibili für Marken interessant machen, deren Produkte sich gut vorführen lassen. Daneben gibt es Kurzvideos. Bei B2B-Inhalten muss geprüft werden, ob ein Creator die relevanten Käufer erreicht. Technikinteresse allein belegt noch keine Einkaufsverantwortung. Anfragen und Verkäufe sollten getrennt von Videoaufrufen erfasst werden.
 
 ## Kuaishou (快手): Reichweite an der Basis und Trust Commerce
 

@@ -4,7 +4,7 @@ description: "En Chine, un fournisseur B2B s'appuie sur WeChat (微信), et ses 
 metaTitle: "Marketing B2B et industriel en Chine"
 metaDescription: "Comment les marques B2B et industrielles décrochent des contacts en Chine : WeChat comme tunnel, relais sur WeCom, contenus techniques, mesure sur 12 mois."
 publishDate: 2026-10-12
-updatedDate: 2026-10-12
+updatedDate: 2026-10-20
 author: "TheRedScroll"
 platforms: ["wechat", "douyin", "rednote"]
 category: "Secteur"
@@ -170,7 +170,7 @@ Il alimente aussi les assistants d'IA chinois, à en croire un test mené à pet
 > Lors d'un test de 30 questions soumises à sept assistants d'IA chinois, parmi lesquels DeepSeek, Doubao et Yuanbao, Zhihu était la communauté de contenu la plus citée, avec 29,9 %, loin devant Bilibili (7,6 %). Le test a retenu 630 réponses valides.
 > Source: QbitAI think tank (量子位智库), May 2025. https://www.qbitai.com/2025/05/285761.html
 
-Bilibili (哔哩哔哩), c'est la vidéo longue, et une large part relève de l'apprentissage.
+Bilibili (哔哩哔哩) est surtout connu pour la vidéo longue, et une large part relève de l'apprentissage.
 
 > En 2025, 230 millions d'utilisateurs ont acquis des connaissances professionnelles sur Bilibili, et environ 16 millions y regardent chaque jour des vidéos technologiques.
 > Source: Bilibili (哔哩哔哩) 2025 ESG report, April 2026. https://ir.bilibili.com/media/vj4brykg/bilibili-2025%E7%92%B0%E5%A2%83-%E7%A4%BE%E6%9C%83%E5%8F%8A%E7%AE%A1%E6%B2%BB%E5%A0%B1%E5%91%8A.pdf

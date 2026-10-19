@@ -4,7 +4,7 @@ description: "Mejor tres plataformas que una. WeChat sirve de base a casi cualqu
 metaTitle: "Redes sociales en China: cómo elegir las tres primeras"
 metaDescription: "Un sistema de puntos para elegir redes sociales en China: cuatro preguntas sobre descubrimiento, precio, canal de venta y comprador, y cuatro combinaciones."
 publishDate: 2026-10-12
-updatedDate: 2026-10-17
+updatedDate: 2026-10-20
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Estrategia"
@@ -203,7 +203,7 @@ Si se aplica la tabla a cuatro perfiles de empresa frecuentes, salen estas cuatr
 
 **Gran consumo.** Douyin pone el volumen. El tercer puesto depende de dónde vivan sus compradores: Kuaishou si están en ciudades más pequeñas, Xiaohongshu si comparan antes de comprar.
 
-**B2B.** WeChat y WeCom sostienen la conversación comercial. Las cuentas de empleados en Xiaohongshu responden preguntas en público. Bilibili llega a los ingenieros que ven explicaciones largas. Douyin sirve para productos que se lucen en 30 segundos.
+**B2B.** WeChat y WeCom sostienen la conversación comercial. Las cuentas de empleados en Xiaohongshu responden preguntas en público. Bilibili encaja con productos que piden una demostración cuidada, siempre que se compruebe que el creador llega a sus compradores. Douyin sirve para productos que se lucen en 30 segundos.
 
 El turismo ofrece el ejemplo más nítido. Los viajeros chinos preparan sus viajes en Xiaohongshu, y muchos reservan hotel en las retransmisiones en directo de Douyin.
 
@@ -237,8 +237,10 @@ A finales de 2025 eran 567 millones. Weibo sigue siendo útil para los grandes m
 > Bilibili registró una media de 371 millones de usuarios activos mensuales y 117 millones de usuarios activos diarios en el segundo trimestre de 2026, con un uso de 113 minutos al día.
 > Fuente: resultados del segundo trimestre de 2026 de Bilibili, citados por Securities Times (证券时报), agosto de 2026. https://www.stcn.com/article/detail/4143348.html
 
-> La edad media de los usuarios de Bilibili ronda los 26,5 años.
-> Fuente: conferencia de resultados del segundo trimestre de 2026 de Bilibili, citada por Xinwen Chenbao (新闻晨报), agosto de 2026. https://news.qq.com/rain/a/20260828A07Q5P00
+> Los usuarios activos de Bilibili tenían una edad media de 26,5 años en el segundo trimestre de 2026.
+> Fuente: Bilibili, presentación para inversores del T2 de 2026, agosto de 2026, página 7. https://ir.bilibili.com/media/xx5dzckf/q2-2026-bilibili-inc-investor-presentation.pdf
+
+En Bilibili no solo hay explicaciones largas: también circulan vídeos cortos. [Nuestra guía de marketing en Bilibili](/es/analisis/bilibili-marketing-foreign-brands/) explica quién la ve, cómo plantear el encargo a los creadores y qué presupuesto prever.
 
 > La aplicación Kuaishou registró una media de 412 millones de usuarios activos diarios y 797 millones de usuarios activos mensuales en el segundo trimestre de 2026.
 > Fuente: resultados del segundo trimestre de 2026 de Kuaishou, citados por Securities Times (证券时报), agosto de 2026. https://www.stcn.com/article/detail/4086579.html

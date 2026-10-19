@@ -1012,6 +1012,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 1: 2026-10-11, fetched with curl (tag c1); "二季度，B站日均活跃用户1.17亿，同比增长7%；月均活跃用户增至3.71亿；用户日均使用时长较去年同期增长8分钟至113分钟", "B站用户平均年龄约26.5岁" and "The average age of Bilibili user now is 26.5 years old" confirmed
 - Verified 2: 2026-10-11, re-fetched (tags c2, c2b), unchanged
 - Used in: choose-china-social-platforms; also /platforms/others/ (371M, 113 min), all five locales, corrected 2026-10-11
+- Superseded for the age figure 2026-10-20: the Tencent News page returned only a title at the 10B draft run, and the issuer Q2 2026 investor deck (page 7) carries the 26.5 average active-user age; see "Bilibili 10B original issuer sources" below. choose-china-social-platforms cites the deck in every locale since 2026-10-20.
 - Notes: The 26.5 is a spoken management figure, not in the press release; attribute it to the earnings call. Same results line on Economic Observer, 2026-08-27 (eeo.com.cn/2026/0827/1013715.shtml).
 - Re-verified 2026-10-12 for 07D: "月均活跃用户增至3.71亿" confirmed at check 1 and check 2 on stcn.com. The 26.5 average age passed check 1 and check 2 on Tencent News but was cut from the final draft for length. Used in: b2b-industrial (371 million only).
 
@@ -1095,6 +1096,35 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-12, re-fetched (tags c2, c2b), unchanged
 - Used in: b2b-industrial
 - Notes: Company's own report. No dated source measures engineers or B2B buyers on Bilibili or Zhihu (see NOT LOGGED, 2026-10-12).
+
+### Bilibili 10B original issuer sources: audience, formats, and price scope
+- Values: 371 million MAU and 113 minutes average daily use in Q2 2026; average active-user age 26.5 (Q2 deck, page 7, footnote 2 = 26Q2). Daily use is not a session. Gen Z+ in company documents means 1985-2009, so do not substitute the narrower ordinary Gen Z meaning.
+- Sources and dates: Bilibili Q2 results and investor deck, August 2026 (results August 27).
+- URLs: https://ir.bilibili.com/media/i5yhufw4/hkex-eps_20260827_12302715_0-1.pdf ; https://ir.bilibili.com/media/xx5dzckf/q2-2026-bilibili-inc-investor-presentation.pdf
+- Verified 1: 2026-10-20. Chinese-first search and Securities Times report led to original issuer documents. Downloaded PDFs; 371 million, 113 minutes, August 27 date, 26.5 age, and Q2 footnote checked; investor slide visually inspected.
+- Verified 2: 2026-10-20. Independent HTTP 200 re-download at createarticle iteration 8; all claim strings and period unchanged. Audit: logs/scratch/10B/c2-validation.json.
+- Used in: bilibili-marketing-foreign-brands; factual corrections to china-social-media-platforms-2026 and /platforms/others/ in every locale, October 20; age citation in choose-china-social-platforms, every locale, moved here from Tencent News on 2026-10-20 (publish run).
+- Supersedes the earlier age-entry limitation: the 26.5 figure is present in the original Q2 investor deck, not only an earnings-call report. The Tencent News URL returned only a title in this run; use the issuer deck for future citations.
+
+### Bilibili 2025 Chinese ESG report: learning and Huahuo creator orders
+- Values: 230 million users learned professional knowledge in 2025; Huahuo creator commercial orders listed as an income channel. This does not measure professional buyers or engineers.
+- Source: Bilibili 2025 environmental, social, and governance report, April 2026; pages 4 and 20. Issuer report downloaded through HKEX.
+- URL: https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0416/2026041601383_c.pdf
+- Verified 1: 2026-10-20. Chinese PDF fetched; 2.3 億, 學習專業知識, 2025, and 花火 checked. Page 4 visually inspected; page 20 creator-channel text checked.
+- Verified 2: 2026-10-20. Independently re-fetched at iteration 8, HTTP 200; all cited content unchanged.
+- Used in: bilibili-marketing-foreign-brands. Alternate original-host copy of the already logged ESG report.
+
+### Bilibili annual report: advertising formats, case-by-case prices, short video, bullet comments
+- Values: qualitative. Brand, performance, and native advertising; feeds, below-video placements, app-opening placements, creator integrations. Prices depend on format, duration, targeting, and placement. Story Mode is short-form video. Bullet comments are context-based comments across the video screen.
+- Source: Bilibili 2025 annual report on Form 20-F, April 2026. Printed pages 1 and 85 (PDF pages 4 and 88) plus Story Mode passage.
+- URL: https://ir.bilibili.com/media/uclpt3pv/2025-annual-report-on-form-20-f-1.pdf
+- Verified 1: 2026-10-20. Original issuer PDF downloaded after Chinese-first research; wording checked and advertising page visually inspected.
+- Verified 2: 2026-10-20. Independent iteration-8 HTTP 200 re-fetch; case-by-case basis, Story Mode, context-based, native advertising, and adjacent details unchanged.
+- Used in: bilibili-marketing-foreign-brands; short-video correction to additional-platforms pages in all five locales.
+
+### NOT LOGGED, searched and rejected 2026-10-20 (Bilibili marketing for foreign brands)
+- No current universal opening deposit, daily ad minimum, typical CPM/CPC, or creator rate range passed the source standard. Reseller bilibili-ad.com is not the platform. Numerical claims cut; brief 10B uses quote scope and editorial format choices.
+- Official Huahuo launch/explainer URLs https://e.bilibili.com/observe/observe_1.html and https://e.bilibili.com/observe/observe_40.html were readable via web fetch but returned 412 to direct requests. They do not establish current minimums. If needed by a later brief, recheck their publication dates and current policy before citing price rules.
 
 ### Ocean Engine Feiyu CRM: what it does, and the WeCom add
 - Value: Ocean Engine describes Feiyu (飞鱼CRM) as its sales-lead tool, assigning, following up, cleaning and tagging leads, importing Ocean Engine ad data and connecting to other CRM systems; version 4.1.9 (2022-07-15) added one-tap adding to WeCom

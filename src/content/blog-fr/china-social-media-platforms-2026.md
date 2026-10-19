@@ -4,7 +4,7 @@ description: "WeChat, Douyin, RedNote, Weibo et une dizaine d’autres plateform
 metaTitle: "Réseaux sociaux chinois : guide 2026 des marques"
 metaDescription: "Le guide 2026 des réseaux sociaux chinois pour les marques étrangères. Chiffres réels, ressorts de la vente et conseils pour démarrer. Vu du terrain."
 publishDate: 2026-06-30
-updatedDate: 2026-10-12
+updatedDate: 2026-10-20
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Plateformes"
@@ -143,11 +143,14 @@ Voilà pour les quatre grandes. Pour la plupart des marques, elles portent l’e
 
 ## Bilibili (哔哩哔哩) : la génération Z, la profondeur et la confiance
 
-Bilibili, c’est là que la jeunesse instruite de Chine passe son temps. Environ deux tiers de ses utilisateurs ont moins de 30 ans. Les jours de pointe, près de 90 % ont moins de 35 ans.
+Bilibili touche un public de jeunes adultes. L’âge moyen à l’échelle de la plateforme ne suffit toutefois pas à cerner les abonnés d’un créateur.
+
+> Au deuxième trimestre 2026, les utilisateurs actifs de Bilibili avaient en moyenne 26,5 ans.
+> Source : Bilibili, présentation investisseurs du T2 2026, août 2026, page 7. https://ir.bilibili.com/media/xx5dzckf/q2-2026-bilibili-inc-investor-presentation.pdf
 
 La plateforme s’est construite autour de la culture animé et jeu vidéo, et elle règne toujours sur ce monde. Mais elle a débordé vers la tech, la science, l’éducation, le lifestyle et le reste. Sa signature, ce sont les danmu, ces commentaires qui défilent en travers de l’écran et créent une expérience partagée que peu de plateformes égalent.
 
-La force de Bilibili, c’est la profondeur. Les créateurs réalisent des vidéos longues et soignées, et les spectateurs leur font confiance. La plateforme convient donc aux marques capables d’enseigner quelque chose ou de raconter une histoire qui mérite qu’on s’y attarde. Même des entreprises techniques B2B y misent sur des vidéos fouillées pour atteindre de jeunes ingénieurs et décideurs. Personne ne devient viral et n’écoule tout son stock du jour au lendemain sur Bilibili. Ce qu’on y construit, c’est de la crédibilité, et cela prend du temps.
+Bilibili peut convenir aux marques qui ont un produit à expliquer ou une démonstration à proposer. Les formats courts y ont aussi leur place. En B2B, il faut vérifier que le créateur retenu touche des acheteurs pertinents : s’intéresser à la technologie ne signifie pas disposer d’un budget d’achat. Les demandes commerciales et les ventes se mesurent séparément des vues.
 
 ## Kuaishou (快手) : portée populaire et commerce de confiance
 

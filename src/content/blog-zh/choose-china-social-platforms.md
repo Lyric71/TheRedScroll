@@ -4,7 +4,7 @@ description: "首批宜选三个平台，而非一个。微信几乎是所有品
 metaTitle: "外国品牌如何选定首批中国社交平台"
 metaDescription: "一套中国社交平台选择框架：从发现路径、价格定位、销售模式和决策方式四个问题打分，并给出四种常见平台组合。"
 publishDate: 2026-10-12
-updatedDate: 2026-10-17
+updatedDate: 2026-10-20
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "策略"
@@ -203,7 +203,7 @@ featuredImage: "/images/blog/choose-china-social-platforms.webp"
 
 **大众消费。**抖音负责走量。第三席取决于买家的城市分布：快手适合低线城市的买家；如果你的买家习惯比较后再下单，就换成小红书。
 
-**B2B。**微信和企业微信承载销售沟通，小红书员工账号负责公开答疑。哔哩哔哩适合爱看长篇讲解的工程师，抖音则适合30秒内就能讲明白的产品。
+**B2B。**微信和企业微信承载销售沟通，小红书员工账号负责公开答疑。哔哩哔哩适合需要细致演示的产品，前提是先核实UP主的观众确实是你的买家；抖音则适合30秒内就能讲明白的产品。
 
 旅游行业的路径最为清晰。中国游客在小红书上做攻略，不少人在抖音直播间下单订酒店。
 
@@ -237,8 +237,10 @@ featuredImage: "/images/blog/choose-china-social-platforms.webp"
 > 2026年第二季度，哔哩哔哩平均月活跃用户3.71亿，日活跃用户1.17亿，用户日均使用时长113分钟。
 > 来源：哔哩哔哩2026年第二季度财报，证券时报报道，2026年8月。https://www.stcn.com/article/detail/4143348.html
 
-> 哔哩哔哩用户平均年龄约为26.5岁。
-> 来源：哔哩哔哩2026年第二季度财报电话会，新闻晨报报道，2026年8月。https://news.qq.com/rain/a/20260828A07Q5P00
+> 2026年第二季度，哔哩哔哩活跃用户的平均年龄为26.5岁。
+> 来源：哔哩哔哩2026年第二季度投资者演示材料，2026年8月，第7页。https://ir.bilibili.com/media/xx5dzckf/q2-2026-bilibili-inc-investor-presentation.pdf
+
+哔哩哔哩并非只有长篇讲解，短视频同样有一席之地。观众是谁、怎样给UP主写合作简报、预算怎么定，详见[我们的哔哩哔哩营销指南](/zh/guandian/bilibili-marketing-foreign-brands/)。
 
 > 2026年第二季度，快手应用平均日活跃用户4.12亿，月活跃用户7.97亿。
 > 来源：快手2026年第二季度财报，证券时报报道，2026年8月。https://www.stcn.com/article/detail/4086579.html
