@@ -45,7 +45,7 @@ Follow this order. Rename headings into plain reader language. Do not add a
 summary or conclusion section. End on the CTA.
 
 1. How we scored this list, and our own conflict of interest
-2. The comparison table: agency type, focus, pricing transparency, proof, best for (amended 2026-10-16: types, not named agencies; SPEC settled fallback 11)
+2. The comparison table: agency type, focus, pricing transparency, proof, best for (amended 2026-10-16: types, not named agencies; SPEC settled fallback 11) (amended 2026-10-19 by the 10A draft run: the pricing and proof columns say what to ask each type for, because the page check is per agency, not per type, and supports no type-level pricing claim; "platform certification" means the dated 2026 Pugongying agency list in the Pugongying help center, which is in Chinese under Chinese legal names, so no English agency brand can be matched to it from its pages)
 3. Best for a beauty or fashion launch
 4. Best for KOC seeding at volume
 5. Best for B2B on Xiaohongshu

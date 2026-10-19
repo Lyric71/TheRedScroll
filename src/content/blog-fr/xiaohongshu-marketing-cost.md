@@ -4,7 +4,7 @@ description: "Six postes de dépense. Trois s’appuient sur un chiffre publié 
 metaTitle: "Marketing Xiaohongshu : les coûts réels en 2026"
 metaDescription: "Vérification, contenu, seeding KOC, cachets KOL, publicité, honoraires d’agence : le coût réel du marketing Xiaohongshu en 2026, avec trois budgets chiffrés."
 publishDate: 2026-09-14
-updatedDate: 2026-10-02
+updatedDate: 2026-10-20
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Stratégie"
@@ -318,7 +318,9 @@ Les tarifs à l’unité y côtoient les périmètres mensuels. Les contrats
 courent sur six mois au minimum, et les dépenses publicitaires sont
 facturées à part, sans majoration. Les chiffres sont là-bas, pas ici. Ce que
 chaque périmètre couvre sur cette plateforme est détaillé sur
-[la page agence RedNote](/fr/agence-rednote/).
+[la page agence RedNote](/fr/agence-rednote/). Pour comparer d’autres agences,
+[notre guide des agences Xiaohongshu](/fr/decryptages/best-xiaohongshu-marketing-agencies/) propose quatre vérifications à
+mener soi-même.
 
 ## Trois budgets chiffrés
 

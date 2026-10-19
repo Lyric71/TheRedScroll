@@ -4,6 +4,7 @@ description: "Choisissez d’abord l’agence en fonction du travail que votre m
 metaTitle: "Agences social media en Chine : bien les comparer"
 metaDescription: "Comparer les agences social media en Chine selon leur périmètre, leurs prix et leurs preuves, puis tester leur proposition avant de signer."
 publishDate: 2026-10-16
+updatedDate: 2026-10-20
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "Stratégie"
@@ -81,7 +82,7 @@ Sur Xiaohongshu (小红书), également appelé RedNote, demandez au candidat de
 > La convention commerciale publiée par Xiaohongshu en 2022 encourageait les collaborations avec les créateurs par le biais de sa plateforme officielle et condamnait les fausses recommandations.
 > Source : 21st Century Business Herald (21世纪经济报道), mai 2022. https://m.21jingji.com/article/20220506/herald/8aab5572c0f69554f5722de1364879d2_zaker.html
 
-Ce texte, qui date de 2022, invite à examiner de près le processus de collaboration. Elle ne dispense pas de vérifier les règles en vigueur avant toute réservation. Pour départager les candidats, demandez un exemple de bon de commande et le circuit de validation que l’agence entend suivre.
+Ce texte, qui date de 2022, invite à examiner de près le processus de collaboration. Elle ne dispense pas de vérifier les règles en vigueur avant toute réservation. Pour départager les candidats, demandez un exemple de bon de commande et le circuit de validation que l’agence entend suivre. [Notre guide des agences Xiaohongshu](/fr/decryptages/best-xiaohongshu-marketing-agencies/) explique comment vérifier la présence d’un candidat sur la liste d’agences de la plateforme.
 
 Penchez-vous ensuite sur l’économie de l’opération. Distinguez le travail de l’agence des rémunérations des créateurs, des échantillons, des frais d’envoi et de la promotion payante. Demandez qui pourra réutiliser les contenus, sur quels supports et jusqu’à quelle date. Une publication réussie perd beaucoup de son intérêt si vous n’avez pas le droit de l’exploiter en publicité.
 

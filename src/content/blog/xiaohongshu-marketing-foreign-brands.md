@@ -4,7 +4,7 @@ description: "Xiaohongshu is where Chinese shoppers check before they buy. A for
 metaTitle: "Xiaohongshu Marketing for Foreign Brands"
 metaDescription: "How foreign brands actually grow on Xiaohongshu in 2026. Account types, content formats, the search layer, KOC seeding and what a first 90 days costs."
 publishDate: 2026-09-08
-updatedDate: 2026-10-17
+updatedDate: 2026-10-20
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Platforms"
@@ -161,7 +161,8 @@ run through Juguang (聚光), the platform's ad system.
 
 So check the category before you plan spend. Whether you then hire an agency
 is a commercial choice, not an entry rule. The platform publishes no minimum
-first deposit.
+first deposit. If you do hire one, [our guide to the best Xiaohongshu marketing agencies](/insights/best-xiaohongshu-marketing-agencies/)
+lists six questions to ask before you sign.
 
 **You can sell**, but the store has its own paperwork. The merchant
 qualification rules treat overseas companies as a separate category.

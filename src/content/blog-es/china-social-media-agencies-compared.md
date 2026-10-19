@@ -4,6 +4,7 @@ description: "Primero, elija la agencia en función del trabajo que necesita su 
 metaTitle: "Agencias de redes sociales en China: cómo compararlas"
 metaDescription: "Cómo comparar agencias de redes sociales en China por alcance, precio y pruebas, elegir el tipo de agencia adecuado y examinar su oferta antes de firmar."
 publishDate: 2026-10-16
+updatedDate: 2026-10-20
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "Estrategia"
@@ -81,7 +82,7 @@ En Xiaohongshu (小红书), también conocida como RedNote, pida al candidato qu
 > La convención comercial que Xiaohongshu publicó en 2022 promovía las colaboraciones con creadores a través de su plataforma oficial y rechazaba las recomendaciones falsas.
 > Fuente: 21st Century Business Herald (21世纪经济报道), mayo de 2022. https://m.21jingji.com/article/20220506/herald/8aab5572c0f69554f5722de1364879d2_zaker.html
 
-Ese texto, de 2022, justifica que se examine con lupa el proceso de colaboración. No exime de revisar las normas vigentes antes de cerrar ninguna reserva. Para decidir entre candidatos, pida un ejemplo de orden de pedido y los pasos de aprobación que la agencia piensa seguir.
+Ese texto, de 2022, justifica que se examine con lupa el proceso de colaboración. No exime de revisar las normas vigentes antes de cerrar ninguna reserva. Para decidir entre candidatos, pida un ejemplo de orden de pedido y los pasos de aprobación que la agencia piensa seguir. [Nuestra guía de agencias de Xiaohongshu](/es/analisis/best-xiaohongshu-marketing-agencies/) explica cómo comprobar si una candidata figura en la lista de agencias de la plataforma.
 
 Después, haga números. Separe el trabajo de la agencia de los honorarios de los creadores, las muestras, los envíos y la promoción de pago. Pregunte quién podrá reutilizar el contenido, en qué canales y hasta cuándo. Una publicación de éxito pierde buena parte de su valor si no puede emplearla en publicidad.
 

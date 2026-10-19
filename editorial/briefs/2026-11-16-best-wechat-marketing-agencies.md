@@ -45,7 +45,7 @@ Follow this order. Rename headings into plain reader language. Do not add a
 summary or conclusion section. End on the CTA.
 
 1. How we scored this list, and our conflict of interest
-2. The comparison table across at most five columns, one row per agency type (amended 2026-10-16: types, not named agencies; SPEC settled fallback 11)
+2. The comparison table across at most five columns, one row per agency type (amended 2026-10-16: types, not named agencies; SPEC settled fallback 11) (amended 2026-10-19 by the 10A draft run: state per-type pricing or proof only as what to ask for, never as a type-level fact, because the page check is per agency; if the brief's certification criterion is used, look for a dated platform list on the platform's own help pages first, and never claim a named or unnamed rival is or is not listed without its Chinese legal name)
 3. Best for Mini Program and commerce builds
 4. Best for WeCom and private domain CRM
 5. Best for enterprise-scale content operations

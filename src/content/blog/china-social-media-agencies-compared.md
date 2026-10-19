@@ -4,6 +4,7 @@ description: "Choose an agency for the work your brand needs, then compare the f
 metaTitle: "Best China Social Media Agencies: Compare the Fit"
 metaDescription: "Compare the best China social media agencies by scope, pricing, and proof. Find the right agency type and test its proposal before signing."
 publishDate: 2026-10-16
+updatedDate: 2026-10-20
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "Strategy"
@@ -152,7 +153,8 @@ cooperation is recorded and which platform process applies today.
 That dated guidance is a reason to examine the cooperation process. It is
 not a substitute for checking current platform rules before booking.
 For your shortlist, ask to see a sample order record and the approval
-steps the agency proposes to use.
+steps the agency proposes to use. [Our Xiaohongshu agency guide](/insights/best-xiaohongshu-marketing-agencies/)
+shows how to check a candidate against the platform's own agency list.
 
 Then inspect the economics. Separate the agency’s work from creator fees,
 product samples, shipping, and paid promotion. Ask who can reuse the

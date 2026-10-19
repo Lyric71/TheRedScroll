@@ -4,7 +4,7 @@ description: "Sechs Kostenposten. Für drei gibt es eine Zahl von der Plattform 
 metaTitle: "Xiaohongshu-Marketing: die Kosten 2026"
 metaDescription: "Verifizierung, Content, KOC-Seeding, KOL-Honorare, Werbebudget, Agenturhonorar: was Xiaohongshu-Marketing 2026 wirklich kostet, mit drei Rechenbeispielen."
 publishDate: 2026-09-14
-updatedDate: 2026-10-02
+updatedDate: 2026-10-20
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Strategie"
@@ -321,6 +321,8 @@ Dort stehen die Stückpreise neben den Monatsumfängen. Verträge laufen
 mindestens sechs Monate, das Werbebudget wird getrennt und ohne Aufschlag
 abgerechnet. Die Zahlen stehen dort, nicht hier. Was jeder Umfang auf dieser
 Plattform abdeckt, beschreibt [die RedNote-Agenturseite](/de/rednote-agentur/).
+Wer andere Agenturen vergleichen will, findet in [unserem Leitfaden zu Xiaohongshu-Agenturen](/de/analysen/best-xiaohongshu-marketing-agencies/)
+vier Prüfungen, die sich selbst vornehmen lassen.
 
 ## Drei Rechenbeispiele
 

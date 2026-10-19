@@ -4,7 +4,7 @@ description: "In China informiert man sich auf Xiaohongshu, bevor man kauft. Ein
 metaTitle: "Xiaohongshu: Leitfaden für ausländische Marken"
 metaDescription: "Wie ausländische Marken 2026 auf Xiaohongshu Fuß fassen: Kontotypen, Beitragsformate, die Suchebene, KOC-Seeding und was die ersten 90 Tage kosten."
 publishDate: 2026-09-08
-updatedDate: 2026-10-17
+updatedDate: 2026-10-20
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Plattformen"
@@ -179,7 +179,8 @@ Anbieters.
 Prüfen Sie also die Kategorie, bevor Sie ein Budget planen. Ob Sie danach eine
 Agentur beauftragen, ist eine kaufmännische Entscheidung, keine
 Zugangsvoraussetzung. Eine Mindesteinzahlung veröffentlicht die Plattform
-nicht.
+nicht. Wer eine Agentur beauftragt, findet in [unserem Vergleich der besten Xiaohongshu-Agenturen](/de/analysen/best-xiaohongshu-marketing-agencies/)
+sechs Fragen für die Zeit vor der Unterschrift.
 
 **Verkaufen dürfen Sie ebenfalls**, nur bringt der Shop eigene Formalitäten
 mit. Die Qualifikationsregeln für Händler führen ausländische Unternehmen als

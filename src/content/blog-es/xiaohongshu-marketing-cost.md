@@ -4,7 +4,7 @@ description: "Seis partidas. Tres se apoyan en una cifra que publica la platafor
 metaTitle: "Marketing en Xiaohongshu: lo que cuesta en 2026"
 metaDescription: "Verificación, contenido, seeding KOC, honorarios KOL, publicidad y agencia: el coste real del marketing en Xiaohongshu en 2026, con tres presupuestos."
 publishDate: 2026-09-14
-updatedDate: 2026-10-02
+updatedDate: 2026-10-20
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Estrategia"
@@ -312,6 +312,8 @@ Las tarifas por pieza figuran junto a los alcances mensuales. Los contratos
 duran seis meses como mínimo, y la inversión publicitaria se factura aparte,
 sin recargo. Las cifras están allí, no aquí. Lo que cubre cada alcance en
 esta plataforma se detalla en [la página de la agencia RedNote](/es/agencia-rednote/).
+Para comparar otras agencias, [nuestra guía de agencias de Xiaohongshu](/es/analisis/best-xiaohongshu-marketing-agencies/) propone
+cuatro comprobaciones que puede hacer usted mismo.
 
 ## Tres presupuestos resueltos
 

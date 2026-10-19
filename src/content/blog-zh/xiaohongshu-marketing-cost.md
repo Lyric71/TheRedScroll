@@ -4,7 +4,7 @@ description: "六个费用项。三项有平台或官方交易平台公布的数
 metaTitle: "2026年小红书营销费用全拆解"
 metaDescription: "认证、内容、KOC种草、KOL费用、投放、代理服务费：2026年在小红书做营销究竟要花多少钱，逐项拆开，附三组算例。"
 publishDate: 2026-09-14
-updatedDate: 2026-10-02
+updatedDate: 2026-10-20
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "策略"
@@ -193,7 +193,7 @@ featuredImage: "/images/blog/xiaohongshu-marketing-cost.webp"
 
 选哪一种，取决于工作量变大时该由谁承担风险。[月费、项目制还是固定价](/zh/guandian/china-agency-pricing-models/)把三种模式逐一拆开，附上平台公开的抽成，以及真正决定你的钱去向的五条合同条款。
 
-TheRedScroll把价目表放在[价格页](/zh/jiage/)上，单件价格列在月度服务范围旁边。合约至少六个月，投放费用单独结算，不加价。数字在那边，不在这里；每一档服务在这个平台上具体覆盖什么，写在[RedNote代理服务页](/zh/rednote-daili/)。
+TheRedScroll把价目表放在[价格页](/zh/jiage/)上，单件价格列在月度服务范围旁边。合约至少六个月，投放费用单独结算，不加价。数字在那边，不在这里；每一档服务在这个平台上具体覆盖什么，写在[RedNote代理服务页](/zh/rednote-daili/)。若要比较其他代理商，[我们的小红书代理商选择指南](/zh/guandian/best-xiaohongshu-marketing-agencies/)给出了四项可以自己核查的标准。
 
 ## 三组算例
 

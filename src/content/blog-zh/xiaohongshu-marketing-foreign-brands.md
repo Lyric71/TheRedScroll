@@ -4,7 +4,7 @@ description: "中国消费者下单之前，先上小红书查一查。外国品
 metaTitle: "外国品牌小红书营销指南（2026）"
 metaDescription: "外国品牌2026年如何在小红书立足：账号类型、笔记形式、搜索机制、KOC种草，以及前90天的成本构成，每个数字均注明出处。"
 publishDate: 2026-09-08
-updatedDate: 2026-10-17
+updatedDate: 2026-10-20
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "平台"
@@ -99,7 +99,7 @@ featuredImage: "/images/blog/xiaohongshu-marketing-foreign-brands.webp"
 > 小红书没有任何官方文件要求境外广告主必须通过代理商投放。聚光开户时提供「广告主账号」和「代理商账号」两种身份。境外主体另有一份行业准入清单，部分类目暂未向其开放。
 > 来源：自由行Studio，《小红书聚光开户指南》，2026年9月更新。https://zyxstudio.net/articles/xiaohongshu-jiguang-guide.html
 
-所以，做预算之前先核对类目。之后要不要找服务商，是商业选择，不是准入条件。平台不公布最低首充标准。
+所以，做预算之前先核对类目。之后要不要找服务商，是商业选择，不是准入条件。平台不公布最低首充标准。如果决定找代理商，[我们的小红书代理商选择指南](/zh/guandian/best-xiaohongshu-marketing-agencies/)列出了签约前要问的六个问题。
 
 **卖货也可以做**，只是另有一套手续。商家入驻的资质规则，把海外企业单列为一类。
 

@@ -4,6 +4,7 @@ description: "Erst die Agentur nach der Aufgabe wählen, die Ihre Marke lösen m
 metaTitle: "Social-Media-Agenturen für China richtig vergleichen"
 metaDescription: "Social-Media-Agenturen für China nach Umfang, Preis und Nachweisen vergleichen, den passenden Agenturtyp wählen und das Angebot vor Vertragsschluss prüfen."
 publishDate: 2026-10-16
+updatedDate: 2026-10-20
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "Strategie"
@@ -81,7 +82,7 @@ Lassen Sie sich für Xiaohongshu (小红书), auch RedNote genannt, ein bezahlte
 > Die Handelskonvention, die Xiaohongshu 2022 veröffentlichte, förderte Kooperationen über die offizielle Creator-Plattform und richtete sich gegen gefälschte Empfehlungen.
 > Quelle: 21st Century Business Herald (21世纪经济报道), Mai 2022. https://m.21jingji.com/article/20220506/herald/8aab5572c0f69554f5722de1364879d2_zaker.html
 
-Die Vorgabe stammt von 2022. Sie ist Anlass, das Kooperationsverfahren genau zu prüfen, ersetzt aber nicht den Blick auf die aktuellen Plattformregeln vor jeder Buchung. Lassen Sie sich für die Auswahl einen Musterauftrag und die geplanten Freigabeschritte zeigen.
+Die Vorgabe stammt von 2022. Sie ist Anlass, das Kooperationsverfahren genau zu prüfen, ersetzt aber nicht den Blick auf die aktuellen Plattformregeln vor jeder Buchung. Lassen Sie sich für die Auswahl einen Musterauftrag und die geplanten Freigabeschritte zeigen. [Unser Leitfaden zu Xiaohongshu-Agenturen](/de/analysen/best-xiaohongshu-marketing-agencies/) erklärt, wie Sie einen Kandidaten mit der Agenturliste der Plattform abgleichen.
 
 Dann geht es um die Wirtschaftlichkeit. Trennen Sie die Agenturleistung von Creator-Honoraren, Produktmustern, Versand und bezahlter Reichweite. Fragen Sie, wer die Inhalte weiterverwenden darf, in welchen Kanälen und bis wann. Ein erfolgreicher Beitrag verliert viel von seinem Wert, wenn Sie ihn nicht in der Werbung einsetzen dürfen.
 

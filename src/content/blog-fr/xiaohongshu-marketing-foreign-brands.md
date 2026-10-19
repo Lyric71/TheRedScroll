@@ -4,7 +4,7 @@ description: "En Chine, on se renseigne sur Xiaohongshu avant d’acheter. Une m
 metaTitle: "Xiaohongshu : le guide des marques étrangères"
 metaDescription: "Comment une marque étrangère s’installe sur Xiaohongshu en 2026 : types de comptes, formats de notes, recherche, seeding KOC et coût des 90 premiers jours."
 publishDate: 2026-09-08
-updatedDate: 2026-10-17
+updatedDate: 2026-10-20
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Plateformes"
@@ -176,7 +176,9 @@ plateforme.
 
 Vérifiez donc la catégorie avant de bâtir un budget. Recourir ensuite à une
 agence relève d’un choix commercial, pas d’une condition d’accès. La
-plateforme ne publie aucun premier dépôt minimal.
+plateforme ne publie aucun premier dépôt minimal. Si vous faites appel à une
+agence, [notre guide des meilleures agences Xiaohongshu](/fr/decryptages/best-xiaohongshu-marketing-agencies/)
+recense six questions à lui poser avant de signer.
 
 **Vendre, vous le pouvez aussi**, mais la boutique traîne ses propres
 formalités. Les règles de qualification rangent les sociétés étrangères dans

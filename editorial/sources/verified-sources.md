@@ -180,6 +180,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-10-11 for 07C: "月活跃用户已突破4亿，日搜索量高达8亿" and 2026年05月27日 confirmed at check 1 and check 2. Used in: choose-china-social-platforms.
 - Re-verified 2026-10-13 for 08A: "月活跃用户已突破4亿，日搜索量高达8亿" confirmed at check 1, check 2 and after the quality pass. Used in: kol-vs-koc-cost-roi.
 - Re-verified 2026-10-17 for 09B: "月活跃用户已突破4亿，日搜索量高达8亿" and 2026年05月27日 confirmed at check 1, check 2 and after the quality pass (logs/scratch/09B/check.py, tags c1, c2, c2b). Used in: weibo-2026-worth-it.
+- Re-verified 2026-10-19 for 10A: "月活跃用户已突破4亿" and "日搜索量高达8亿" confirmed at check 1 and check 2. Used in: best-xiaohongshu-marketing-agencies.
 
 ### Xiaohongshu domestic monthly active users, QuestMobile
 - Value: 242 million MAU in mainland China, May 2025, up 13.2% year on year
@@ -775,6 +776,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: china-kol-pricing
 - Notes: The help center renders with JavaScript. Text read from the platform's own document endpoint, https://pgy.xiaohongshu.com/api/pgy/help/doc?shortcutId=<id>&role=4, shortcutIds eb3150fa550d424459f8838a77c7e433 (custom order), 365934c681f69e354bd38835492e1e8f (trade modes), 97e5a307cc23aeefc7295c76926088c6 (cooperation guide), 32d3922730ccd391216e57b54861f3e8 (price change), e748ef4c760584b31219d823e7bfe10a (protection period). Cite the readable help-center URL. This is the platform-level source the Niaoge Biji 2022 entry asked for, for the 10% fee. The premium mode (优效模式) still appears in current docs but no current page states its rate.
 - Re-verified 2026-10-13 for 08A: "收取 10% 服务费", "总计需支付 11,000" and "80%～150%" confirmed on the doc endpoints at check 1, check 2 and after the quality pass. Used in: kol-vs-koc-cost-roi.
+- Re-verified 2026-10-19 for 10A: "收取 10% 服务费" and "总计需支付 11,000" confirmed on the doc endpoint at check 1 and check 2. Used in: best-xiaohongshu-marketing-agencies.
 
 ### Pugongying content boost CPM and ad-material authorization
 - Value: brand boost of cooperation notes (内容加热) raised from 15 to 25 yuan CPM, migration completed 2026-01-23, old 5,000-yuan-per-note cap removed; to run a note as a Juguang ad the brand ticks 'use as ad material' at order and the creator accepting the order is the authorization; smart-creative tools cannot be switched on later if not enabled at order
@@ -1133,6 +1135,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-17, re-fetched at iteration 8 (tag c2) and again after the quality pass (tag c2b), unchanged
 - Used in: china-market-entry-timeline; also chinese-entity-social-media, xiaohongshu-business-account-setup, xiaohongshu-marketing-foreign-brands, first-90-days-china-social-media and wechat-vs-xiaohongshu, plus /rednote-agency/ and /platforms/rednote/ (corrected 2026-10-17, all five locales)
 - Notes: **Supersedes** the review time in the entry "Xiaohongshu professional account: identities, Blue V and enterprise review time" (4 to 7 working days, undated deck) and qualifies every older line saying Xiaohongshu admits overseas companies without limit. Do not write "only Hong Kong, Singapore and Malaysia": the scope says 等 (and other opened regions). Write "by the regions it has opened; the rules name ...".
+- Re-verified 2026-10-19 for 10A: the 适用范围 string and "一般为 3个工作日" confirmed at check 1 and check 2. Used in: best-xiaohongshu-marketing-agencies (worded "and other regions it has opened").
 
 ### Xiaohongshu Juguang for overseas entities: every industry by invitation; qualification review about 48 hours
 - Value: 境外主体全量行业均为定邀行业，暂不支持自助准入，请联系平台销售、运营进行申请; advertiser qualification review 预计审核 48小时; overseas entities advertising to non-mainland regions follow the cross-border policy, joint mainland and non-mainland campaigns follow both
@@ -1143,6 +1146,65 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-17, re-fetched at iteration 8 (tag c2) and again after the quality pass (tag c2b), unchanged
 - Used in: china-market-entry-timeline
 - Notes: Invitation through the platform's own sales or operations team, not an agent requirement, so it does not revive the retracted agent-only claim (entry "Xiaohongshu Juguang ad platform: no official agent-only rule"). Older articles that say some categories are closed to overseas entities remain accurate and were not changed.
+- Re-verified 2026-10-19 for 10A: "跨境业务入驻规范" and the 定邀 sentence confirmed on the doc content API at check 1 and check 2. Used in: best-xiaohongshu-marketing-agencies.
+
+### Xiaohongshu 2026 Pugongying agency list: 149 companies
+- Value: 149 agencies, sorted by name, each with a company introduction and contact details (148 name a contact person, one gives an email only); all listed in Chinese under company names ending 公司 or 集团
+- As of: October 2026 (doc updateTime 2026-10-14; content blocks dated 2026-05-20 to 2026-08-14)
+- Source: Xiaohongshu Pugongying help center (小红书蒲公英帮助中心), 《2026年小红书蒲公英代理商名单》, under 新手指引
+- URL: https://pgy.xiaohongshu.com/help/home (text read from https://pgy.xiaohongshu.com/api/pgy/help/doc?shortcutId=19930f0589f6dfc10b8d1db1b927e0b5&role=4; the help menu is at /api/pgy/help/menu?role=4)
+- Verified 1: 2026-10-19, fetched with curl (10A check.py, tag c1); "2026年小红书蒲公英代理商名单", "代理商按名称首字母排序", entry 149 智云众（北京）信息技术有限公司 confirmed
+- Verified 2: 2026-10-19, re-fetched at iteration 8 (tag c2), unchanged
+- Used in: best-xiaohongshu-marketing-agencies
+- Notes: A separate live directory page (https://pgy.xiaohongshu.com/solar/agent-list, JSON at /api/solar/agent/get_all_agent) showed 73 agencies with licence labels (蒲公英框架合作代理商, 整合营销代理商, 蒲公英代理商, 广告代理商, 蒲公英服务商) on 2026-10-19. It carries no date and was not cited; use the dated 2026 list. The list covers Pugongying (creator orders) only, not Juguang ad agencies. English agency brand names cannot be matched to the Chinese legal names from their pages; never claim that a named firm is or is not listed without its Chinese legal name.
+
+### Pugongying agency authorization: the brand approves, can end it at any time
+- Value: an agency may invite or order creators in a brand's name only with that brand's authorization in Pugongying (我的工作台 → 功能管理 → 授权关系管理); the brand approves an agency request or grants one itself, sets an end date or permanent, and can stop or change it at any time; stopping takes effect at once and blocks new orders only, orders already created are unaffected; the agency needs Pugongying access, a valid main account and a paid platform deposit (保证金)
+- As of: August 2026 (doc updateTime 2026-10-13; block dated 2026-08-13)
+- Source: Xiaohongshu Pugongying help center, 《代理商品牌授权关系管理功能手册》
+- URL: https://pgy.xiaohongshu.com/help/home (shortcutId 7ce9f2962771ded1a0b584f82775fad0)
+- Verified 1: 2026-10-19 (tag c1); "品牌可随时中止或修改授权", "只有获得品牌明确同意的代理，才能以该品牌名义发起合作", "已缴纳平台保证金", "中止授权：立即生效，代理商无法再使用该品牌" confirmed
+- Verified 2: 2026-10-19 (tag c2), unchanged
+- Used in: best-xiaohongshu-marketing-agencies
+- Notes: The doc tells brands to file authorizations "于3月31日前" with no year; that deadline is not cited.
+
+### Pugongying client conduct rules: no implied special relationship with the platform; deposit deductions for agencies
+- Value: clients on Pugongying, explicitly including agencies, may not imply any authorization, agency, endorsement, sponsorship, recommendation or other special relationship with the platform beyond their actual cooperation; may not move creator deals or payments off the platform; may not fake interaction; penalties range from a message to ending cooperation, including deducting the deposit (agencies only)
+- As of: July 2026 (doc updateTime 2026-09-20; blocks 2026-05-21 to 2026-07-31)
+- Source: Xiaohongshu Pugongying help center, 《蒲公英客户履约管理规范》
+- URL: https://pgy.xiaohongshu.com/help/home (shortcutId b8a3b668ea612abfa016ead5a5cd1321)
+- Verified 1: 2026-10-19 (tag c1); "包括但不限于商品或服务的经营者及/或其代理商等主体", "暗示其与平台、平台运营主体或其关联公司之间存在超出实际合作范围的授权、代理、背书、赞助、推荐或其他特殊合作关系", "扣除保证金（仅限代理商）", "绕过平台进行线下交易" confirmed
+- Verified 2: 2026-10-19 (tag c2), unchanged
+- Used in: best-xiaohongshu-marketing-agencies
+
+### Pugongying trade modes 2026: nine modes, budget guidance, batch orders, trial recruitment
+- Value: nine trade modes (version 2026.04). Budget guidance: high budget custom order, then seeding-plus-sales, then celebrity reach; mid budget batch order, then trial recruitment, then super player; low budget trial recruitment, then store-visit recruitment. Custom order: creator sets a fixed price. Batch order (批量商单): one brief, creators apply, brand picks; 2 to 100 creators per recruitment; creators with 1k or more followers who have Pugongying on; fixed-price settlement; creators may set a 30-day offer at 50% to 100% of their listed price. Trial recruitment (众测招募): consumer goods only, creators under 150,000 followers, brand sets the price, fixed or by reads. Celebrity reach (星粉直达) "暂不支持境外客户下单"
+- As of: version 2026.04; overview doc updateTime 2026-10-15 (blocks 2026-04-17 to 2026-06-12); batch order doc updateTime 2026-10-10 (block 2026-04-17)
+- Source: Xiaohongshu Pugongying help center, 《交易模式总览》 and 《批量商单》
+- URL: https://pgy.xiaohongshu.com/help/home (shortcutIds 365934c681f69e354bd38835492e1e8f, becb34b400e29cc70616d86f42001738)
+- Verified 1: 2026-10-19 (tag c1); "版本 2026.04", "蒲公英平台目前提供 9 种交易模式", "低预算 · 追求覆盖", "粉丝 15w 以下的蒲公英博主", "品牌（B）定价 — 一口价结算 或 按阅读效果结算", "博主（K）自主报价，一口价结算", "单次招募最低不少于2人，最高不超过100人", "满足粉丝量级1k以上且开通蒲公英合作的博主", "优惠区间在博主广场报价的50%-100%", "按照博主一口价方式进行结算" confirmed
+- Verified 2: 2026-10-19 (tag c2), unchanged
+- Used in: best-xiaohongshu-marketing-agencies
+- Notes: The 10% platform fee is documented for custom orders (see the custom order entry); no doc read here states the fee for batch orders or trial recruitment, so it is not claimed for them. The overview also prints celebrity reach package prices (90,000 to 300,000 yuan by fan tier); not used.
+
+### Pugongying crackdown on side-by-side "test and run down" comparison content, July 30, 2026
+- Value: qualitative. Xiaohongshu's commercial governance department (商业治理部) launched a special action against "横向测评 + 暗中拉踩" content that inflates a rival's flaws in apparently neutral multi-brand tests; brands and creators given 7 calendar days to fix or delete such content
+- As of: July 2026 (signed 2026-07-30; doc updateTime 2026-10-18)
+- Source: Xiaohongshu Pugongying help center, 《关于开展"不当竞争-横测暗踩营销行为"专项治理行动的通知》
+- URL: https://pgy.xiaohongshu.com/help/home (shortcutId c539345cd7e593c991a230bb26b116e0)
+- Verified 1: 2026-10-19 (tag c1); "横向测评 + 暗中拉踩", "商业治理部 2026 年 7 月 30 日", "[7]个自然日内完成整改" confirmed
+- Verified 2: 2026-10-19 (tag c2), unchanged
+- Used in: best-xiaohongshu-marketing-agencies
+
+### Pugongying brand onboarding: log in with the professional account; 600-yuan review, not refunded, yearly review
+- Value: a brand logs in to Pugongying with its Xiaohongshu professional account; review fee 600 yuan per application, not refunded on failure; the identity is valid one year and needs a yearly review; one entity may hold up to 3 professional accounts (2 for enterprise accounts verified after 2023-09-10)
+- As of: September 2026 (doc updateTime 2026-10-13; blocks 2026-04-16 to 2026-09-18)
+- Source: Xiaohongshu Pugongying help center, 《品牌入驻操作指南》
+- URL: https://pgy.xiaohongshu.com/help/home (shortcutId c4e10279f2ce851959aa47e3eca8f449)
+- Verified 1: 2026-10-19 (tag c1); "使用专业号登录小红书蒲公英", "审核费用为 600 元/次", "每年需要完成一次年审", "如若未通过，审核费用不做退还" confirmed
+- Verified 2: 2026-10-19 (tag c2), unchanged
+- Used in: best-xiaohongshu-marketing-agencies
+- Notes: A dated platform source for the 600-yuan fee, consistent with the older "enterprise professional account verification fee" entry (platform PDF undated, New Rank 2025-10-19).
 
 ## Regulatory and legal
 
@@ -1200,6 +1262,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: beauty-skincare, xiaohongshu-sensitive-words
 - Re-verified 2026-09-29 for 04C (check 1 and check 2): "化妆品的功效宣称应当有充分的科学依据" and "公布功效宣称所依据的" confirmed. New for 04C, same page, Article 43: "化妆品广告不得明示或者暗示产品具有医疗作用，不得含有虚假或者引人误解的内容" (cosmetics ads may not state or imply a medical effect); cited in 04C as Order 727, Article 43, in force January 2021.
 - Notes: Article 37 on the same page bans labels that state or imply a medical effect, or that are false or misleading.
+- Re-verified 2026-10-19 for 10A: "化妆品的功效宣称应当有充分的科学依据" and "公布功效宣称所依据的" confirmed at check 1 and check 2. Used in: best-xiaohongshu-marketing-agencies.
 
 ### Cosmetic Efficacy Claim Evaluation Specification, effective date
 - Value: the Specification (化妆品功效宣称评价规范) was issued by NMPA and took effect on May 1, 2021
@@ -1613,6 +1676,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-09-28 for 04B: both strings and the 2026-05-18 date confirmed (check 1 and check 2).
 - Notes: Corroborated by 三节课 via Sohu, 2025-12-23 (https://m.sohu.com/a/968496983_624051), "支持手机端自助投放，最低 75 元起投". The same sources give a 7,500 yuan per-order ceiling; not cited. This is the only self-serve, published ad floor on the platform. The Juguang (聚光) first recharge and minimum daily budget have no platform or trade-press source and must not be quoted.
 - Re-verified 2026-10-05 for 05C: "没有粉丝量等账号门槛", "最低 75 元（750 薯币）的起投门槛" and "近 90 天发布的内容" confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
+- Re-verified 2026-10-19 for 10A: "最低 75 元（750 薯币）的起投门槛" and "近 90 天发布的内容" confirmed at check 1 and check 2. Used in: best-xiaohongshu-marketing-agencies.
 
 ### Xiaohongshu Pugongying brand invitations, and daily active user search behavior
 - Value: 27 million brand invitations on Pugongying in 2025, up 34% year on year; 77% of daily active users use search to solve a problem, 75% browse the recommendation feed
@@ -2444,6 +2508,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Notes: Same figures and data period on Tencent News (品牌议题, 2026-09-20, news.qq.com/rain/a/20260920A07F8700). The platform does not split the leads into B2B and B2C; never present them as B2B leads. Agency claims of "300万+ companies" or "8,000+ companies, 2 million leads a month" conflict with this platform figure and are not logged.
 - Re-verified 2026-10-08 for 06D: "在小红书经营KOS的企业账号数已超4万", "每月通过KOS产生的留资量超600万条" and "2026.8" confirmed at check 1 and check 2. Used in: b2b-china-social-teardown (with the line that the platform does not split B2B and consumer leads).
 - Re-verified 2026-10-11 for 07C: "在小红书经营KOS的企业账号数已超4万", "每月通过KOS产生的留资量超600万条" and "2026.8" confirmed at check 1 and check 2. Used in: choose-china-social-platforms (with the line that the platform does not split business and consumer leads).
+- Re-verified 2026-10-19 for 10A: "在小红书经营KOS的企业账号数已超4万", "每月通过KOS产生的留资量超600万条" and "2026.8" confirmed at check 1 and check 2. Used in: best-xiaohongshu-marketing-agencies (with the line that the platform does not split business and consumer leads).
 
 ### LinkedIn's China exit: social features, then the job app, August 2023
 - Value: in May 2023 LinkedIn, which had closed its social networking features in China two years earlier, announced that its China job app (领英职场) would stop service on August 9, 2023, including the app, the desktop site and the WeChat Mini Program
@@ -3596,6 +3661,7 @@ data.
 - Re-verified 2026-09-22 for brief 03D, both checks repeated with curl: "43K → 187K", "4.7%", "1.2%", "38% of all eCommerce traffic" and "31% same-store sales growth" all still on the live page
 - Used in: fashion-apparel, camper-china-teardown
 - Notes: Cite as "TheRedScroll, Camper case study, September 2026, https://www.theredscroll.com/work/camper/". Industry label on the page: Fashion / Footwear. Platforms on the page: WeChat, RedNote, Weibo (no Douyin).
+- Re-verified 2026-10-19 for 10A: "187K", "38%" and "31%" confirmed on the live /work/camper/ page at check 1 and check 2. Used in: best-xiaohongshu-marketing-agencies.
 
 ### Marriott case study, as published
 - Value: no figure. Published lines: "over 9,000 properties across 30 brands"; "The vehicle was Alibaba's Super Brand Day. Marriott had never run one"; an "exclusive Marriott black card with global privileges"; "WeChat, Weibo, and travel KOLs built anticipation weeks before launch"; "Influencer content kept energy up through the campaign window"; "By the time Super Brand Day arrived, the audience was primed"; people could "buy the card and sign up for Bonvoy in the same transaction"; "Marriott's first Super Brand Day generated millions in sales on Tmall"; "Hundreds of thousands of new Bonvoy members signed up". Platforms on the page: WeChat, Weibo, Tmall. Industry label: Hospitality / Travel
@@ -4039,6 +4105,7 @@ set to blocked by its draft run.
 - Verified 2: 2026-10-15, re-fetched at iteration 8 (tag c2, adding "清理虚假关注1.7亿次") and after the quality pass (tag c2b), unchanged
 - Used in: kol-campaign-no-roi
 - Notes: The platform text gives no year; the doc's edit stamps and Guandian (观点网, 2026-09-23, "小红书9月23日发布互动作弊专项治理公告", https://www.guandian.cn/article/20260923/606180.html) date it. Guandian is used only for the date, never cited. Does not overlap the China Daily March to August 2025 figures.
+- Re-verified 2026-10-19 for 10A: all five strings confirmed at check 1 and check 2. Used in: best-xiaohongshu-marketing-agencies.
 
 ### Xiaohongshu brand trust system, January 2026: undeclared creator deals
 - Value: qualitative. The brand score was replaced by a brand trust system with special governance from 2026-01-12; targets include paid water-army content and creator deals made off the official platform (水下接单); measures include intervening in brand content traffic and a risk warning shown to users who search the brand
@@ -4049,6 +4116,7 @@ set to blocked by its draft run.
 - Verified 2: 2026-10-15, re-fetched (tags c2, c2b), unchanged
 - Used in: kol-campaign-no-roi
 - Notes: Supersedes the "brand score" language in the June 2025 Southern Metropolis Daily entry for anything after January 2026.
+- Re-verified 2026-10-19 for 10A: "2026年1月12日", "水下接单类" and the search risk-warning string confirmed at check 1 and check 2. Used in: best-xiaohongshu-marketing-agencies.
 
 ### Xingtu measurement: report windows, traffic split, custom report, product seeding windows, the 2024 cart-only admission
 - Value: (a) task report: plays and likes update for at most 45 days after a video goes live; "search after viewing" is a brand search as the viewer's next action; store visits count within 15 days of watching (page modified 2026-06-09); (b) traffic split into marketing and non-marketing traffic; plays rising after the split mean a high DOU+ share (2026-06-08); (c) custom report updates T+1 and stops 45 days after creation; compares the reached audience with the creator's followers (2026-08-22); (d) product seeding attribution windows 1, 3, 7, 14 or 30 days (2026-06-11); (e) March 2024: the old report counted only cart orders, so seeding value was underestimated; one view rarely leads to a cart purchase
@@ -4069,6 +4137,7 @@ set to blocked by its draft run.
 - Verified 2: 2026-10-15, re-fetched (tags c2, c2b), unchanged
 - Used in: kol-campaign-no-roi
 - Notes: The comment widget doc does not say a brand without a Xiaohongshu store can use the search version; do not claim it. The 2026 trade-diversion text keeps the 2025 bans on third-party contact details and links but no longer carries the 2025 line on using the store, cart and lead form.
+- Re-verified 2026-10-19 for 10A: item (e) "关于修订《交易导流违规管理细则》的公示通知", "2026年09月18日" and the 商业权益处置 string confirmed at check 1 and check 2 (POST endpoint). Used in: best-xiaohongshu-marketing-agencies.
 
 ### Attribution windows: Pugongying Taobao and JD links, audience analysis, data center, creator square; WeChat 互选
 - Value: Pugongying's Taobao link (小红星) reports at 15-day and 30-day attribution; its JD link (小红盟) offers 15, 30 and 60-day attribution and requires a JD 京准通 advertiser; AIPS audience analysis capped at 60 days, 30 to 45 suggested, with a natural-traffic-only switch; the note data center mixes natural and promoted traffic, has a viewer profile to judge the match with target buyers, and a 90-day default trend; the creator-square guide (v2026.04) says to favor creators with a low past cost per store visit for a sales goal; WeChat 互选 orders use click attribution that cannot be changed after the order is created
@@ -4159,6 +4228,7 @@ set to blocked by its draft run.
 - Verified 2: 2026-10-16, HTTP 200 refetch at iteration 8, unchanged.
 - Used in: china-social-media-agencies-compared.
 - Re-verified 2026-10-17 for 09B: homepage HTTP 200, "37" and "April 2026" confirmed at check 1, check 2 and after the quality pass. Used in: weibo-2026-worth-it (approved form, cited to the homepage).
+- Re-verified 2026-10-19 for 10A: homepage HTTP 200, "37" and "April 2026" confirmed at check 1 and check 2. Used in: best-xiaohongshu-marketing-agencies (approved form).
 
 ### 09A published scope and contract terms
 - URL: https://www.theredscroll.com/pricing/
@@ -4168,6 +4238,7 @@ set to blocked by its draft run.
 - Cleared for publication: yes, published terms, not measured outcomes.
 - Additional URL: https://www.theredscroll.com/services/market-entry/; fetched twice on 2026-10-16, HTTP 200 both times. Confirmed social-launch scope excludes distributor selection, flagship store opening, and website construction.
 - Used in: china-social-media-agencies-compared.
+- Re-verified 2026-10-19 for 10A: /pricing/ "6-month minimum contract" and "Paid directly to the platform, not through us" confirmed at check 1 and check 2; no price or tier name used. /rednote-agency/ "Pugongying" (creator campaigns run through Pugongying) confirmed. Used in: best-xiaohongshu-marketing-agencies.
 
 ### TheRedScroll published entry timelines: about four weeks to a publishing WeChat account; "Live in 30 days"
 - Value: "Most clients go from signed contract to a live, publishing account in about four weeks" (/platforms/wechat/ FAQ); "Live in 30 days. Accounts verified, first content published, commerce infrastructure ready to take orders." (/services/market-entry/)
@@ -4188,6 +4259,23 @@ set to blocked by its draft run.
 - Month 4 to 6 benchmarks (cold-start length, search-share build-up, follower or lead benchmarks for new brand accounts): no official or trade-press figure. "24 hours of Shutiao, over 8% interaction" appears only on agency and self-media pages.
 - Third-party 2027 Spring Festival dates: estimates, not the State Council notice.
 
+### 10A selected-page agency check, October 19, 2026 (Xiaohongshu agencies)
+- Value: nine agencies selling Xiaohongshu work to foreign brands in English, one Xiaohongshu service page each plus one agency's pricing page (10 pages). Price: one page set starting prices for two one-off packages (setup, pilot) and "custom" for campaigns; one described its monthly fee in words with no figure; none showed a fixed monthly fee for a defined scope of ongoing Xiaohongshu work; seven showed no fee (one page's "$2,000/month" is an ad-spend recommendation, not a fee). Named clients: five named at least one client brand; one more listed foreign brands' Xiaohongshu success stories without presenting them as clients. Official status: two claimed official Xiaohongshu partner status; neither named the program. Team location: four gave a mainland city for an office or team (three Shanghai, one Shanghai and Shenzhen); one said "based in China" with no city; two listed offices only outside the mainland; two did not say where the team works today (one gave only its founding city). Combined: no agency showed both a price figure and a named client on the checked pages
+- Sample: Twish https://twishchinamarketing.com/xiaohongshu-services/ and https://twishchinamarketing.com/china-marketing-pricing/; Gentlemen Marketing Agency https://marketingtochina.com/xiaohongshu-agency-china/; Comms8 https://www.comms8.com/little-red-book-marketing; Lotus Social Agency https://www.lotussocialagency.com/platforms/rednote-xiaohongshu-marketing-agency; Red Ant Asia https://redantasia.com/xiaohongshu-marketing-services; BINGO Digi https://www.bingo-digi.com/xiaohongshu/; Nobody Digital https://www.nobodydigital.co/rednote-xiaohongshu-marketing/; The Influencer Marketing Factory https://theinfluencermarketingfactory.com/rednote-influencer-marketing-agency/; Shanghai Jungle https://shanghaijungle.com/xiaohongshu-marketing-foreign-brands. Picked from English search results for the brief's queries to cover different agency types. Excludes TheRedScroll
+- Period: 2026-10-19 (undated commercial pages, observed on this date; no publication date invented)
+- Cleared for publication: aggregate only, under SPEC fallback 11. Names and URLs stay in this ledger
+- Verified 1: 2026-10-19, all 10 pages HTTP 200 (logs/scratch/10A/fetch.py c1); each observation string matched and fee figures scanned by rival_check.py c1 (twish: "Starting Point $299", "Starting Point $2,500", "Starting Point Custom", Shanghai address; gma: "Shanghai-based team", "starts from a few thousand dollars per month", "Selected case studies"; comms8: London address, "Schneider Electric", "Nestle"; lotus: "A team based in China"; redant: "Our China HQ is in Shanghai", Lush testimonial; bingo: "Xiaohongshu Official Partner", Pepsi and Tom Ford cases, Pingliang Road address; nobody: no fee, no location; imf: Miami, "Unilever"; sjungle: "official Little Red Book Partner", "Founded in Shanghai", "Foreign brands winning on Little Red Book")
+- Verified 2: 2026-10-19, all 10 pages re-fetched at createarticle iteration 8 (fetch.py c2, rival_check.py c2), every observation unchanged
+- Used in: best-xiaohongshu-marketing-agencies
+- Limits: page-level observations on one date. Not site-wide absence, not private quotes, not delivery quality, not a ranking. No firm is matched to the Pugongying 2026 list (English brand names cannot be matched to Chinese legal names from the pages). The starting prices for one-off packages do not contradict the dated April 2026 "0 out of 37 agencies analyzed offer fixed-price packages" line, which is a separate benchmark cited with its date.
+
+### NOT LOGGED, searched and rejected 2026-10-19 (10A, best-xiaohongshu-marketing-agencies)
+- A market monthly retainer range for Xiaohongshu agencies: no platform, regulator or dated trade source publishes one. The FAQ says so plainly.
+- "小红书官方认证头部代理商" and "TOP代理商" lists (adquan 358142, Sohu, 163 self-media, cnblogs, China.com): agency-written marketing, not the platform; not cited. Digitaling PR pieces on single agencies' awards: about named rivals, not cited.
+- "Official overseas agent" lists for Juguang cross-border advertising: no fetchable platform page found; the partner platform (partner.xiaohongshu.com) is login-only.
+- The undated live agent directory (73 agencies, licence labels): superseded by the dated 2026 list, not cited.
+- Pugongying celebrity reach package prices: off topic for this piece.
+
 ## Client figures
 
 Settled 2026-10-02 (see `CLAUDE.md`, named clients): a client figure or line
@@ -4198,7 +4286,7 @@ estimated. No marker, no separate sign-off chase.
 
 | Client | Case study page | Brief | Used |
 |---|---|---|---|
-| Camper | /work/camper/ (43K to 187K followers, 31% sales lift, 18 months) | 02D, 03D | Published figures only, quoted from the page. The monthly series and the two campaign post-mortems are not public and are not used. |
+| Camper | /work/camper/ (43K to 187K followers, 31% sales lift, 18 months) | 02D, 03D, 10A | Published figures only, quoted from the page. The monthly series and the two campaign post-mortems are not public and are not used. |
 | Viessmann | /work/viessmann/ (no figure; "roughly two years", Douyin to Tmall, RedNote search proof, WeCom pre-sale and service) | 06D, 07D | No figure. Published lines quoted from the page (see the first-party entry). The client's own channel facts (dealers, the Carrier deal) are cited to Viessmann China and Carrier, never as our work. |
 | iGuzzini | /work/iguzzini/ (no figure; "Over 24 months", WeChat home base, RedNote designers, Weibo, livestreams, Tmall) | 06D, 07D, 09B | No figure. Published lines quoted from the page (see the first-party entry). 09B quotes "Weibo gave us broader reach..." as published, checked 2026-10-17 at check 1, check 2 and after the quality pass. The 2024 Haitai developer deal is iGuzzini's own, cited to China News Service. |
 | Marriott | /work/marriott/ (no figure; "millions in sales on Tmall", "Hundreds of thousands of new Bonvoy members") | 05D | No figure. Published lines quoted from the page (see the first-party entry). The 2017 Fliggy joint venture and the 2025 Meituan membership are Marriott's own deals, cited to 21st Century Business Herald and Xinhua, never as our work. |

@@ -4,7 +4,7 @@ description: "Six cost lines. Three carry a figure the platform or its marketpla
 metaTitle: "Xiaohongshu Marketing Cost in 2026"
 metaDescription: "What Xiaohongshu marketing costs in 2026: verification, content, KOC seeding, KOL fees, ad spend and agency fees, with three worked examples."
 publishDate: 2026-09-14
-updatedDate: 2026-10-02
+updatedDate: 2026-10-20
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Strategy"
@@ -289,6 +289,8 @@ TheRedScroll publishes its rate card on its [pricing page](/pricing/). Per-item 
 next to the monthly scopes. Contracts run six months minimum, and ad spend is
 billed separately with no markup. The figures live there, not here, and what
 each scope covers on this platform is set out on [the RedNote agency page](/rednote-agency/).
+To compare other agencies, [our Xiaohongshu agency guide](/insights/best-xiaohongshu-marketing-agencies/) sets out
+four checks you can run yourself.
 
 ## Three worked examples
 

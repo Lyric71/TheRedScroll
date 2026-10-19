@@ -4,7 +4,7 @@ description: "En China uno se informa en Xiaohongshu antes de comprar. Una marca
 metaTitle: "Xiaohongshu: guía para marcas extranjeras"
 metaDescription: "Cómo se asientan las marcas extranjeras en Xiaohongshu en 2026: tipos de cuenta, formatos, búsqueda, seeding con KOC y lo que cuestan los primeros 90 días."
 publishDate: 2026-09-08
-updatedDate: 2026-10-17
+updatedDate: 2026-10-20
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Plataformas"
@@ -173,7 +173,9 @@ de Xiaohongshu.
 
 Así que compruebe la categoría antes de planificar el gasto. Contratar después
 una agencia es una decisión comercial, no una condición de acceso. La
-plataforma no publica ningún depósito inicial mínimo.
+plataforma no publica ningún depósito inicial mínimo. Si decide contratar una
+agencia, [nuestra guía de las mejores agencias de Xiaohongshu](/es/analisis/best-xiaohongshu-marketing-agencies/)
+reúne seis preguntas que conviene hacerle antes de firmar.
 
 **Vender también puede**, solo que la tienda trae su propio papeleo. Las
 reglas de cualificación mercantil sitúan a las compañías extranjeras en una
