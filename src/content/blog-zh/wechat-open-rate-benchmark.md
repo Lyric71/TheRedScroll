@@ -4,6 +4,7 @@ description: "就品牌微信服务号而言，2022年的平均打开率在2.8%�
 metaTitle: "微信公众号打开率基准：如今多少才算正常"
 metaDescription: "按账号类型梳理微信打开率基准，解析阅读为何从推送转向推荐，拆解打开率偏低的五大常见原因，并给出30天改进方案。"
 publishDate: 2026-10-11
+updatedDate: 2026-10-21
 author: "TheRedScroll"
 platforms: ["wechat"]
 category: "平台"
@@ -208,6 +209,8 @@ featuredImage: "/images/blog/wechat-open-rate-benchmark.webp"
 | 4 | 为最好的文章剪一条视频号视频；小额测试朋友圈广告 | 总阅读量与粉丝来源 |
 
 评判这一个月，看的是总阅读量和留得住的新粉丝，而不只是打开率。[我们的微信代理页面](/zh/wechat-daili/)介绍了我们每周如何运营账号，[我们的策略、活动与数据分析服务](/zh/fuwu/celue-huodong/)负责数据报告。[我们的价格页面](/zh/jiage/)列明了各套餐在微信上的服务内容。想从全平台视角看问题，可以读[我们关于中国社媒互动率为何持续下滑的文章](/zh/guandian/china-engagement-rate-drop/)。
+
+如果复盘后决定换代理商，先查清[更换前需要收回哪些权限和资产](/zh/guandian/switching-china-agency-checklist/)，确保账号继续由品牌掌握。
 
 ## 常见问题
 

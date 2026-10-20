@@ -4,6 +4,7 @@ description: "Most stalled accounts were never penalized. Something plainer went
 metaTitle: "Why Your Xiaohongshu Account Stopped Growing"
 metaDescription: "Diagnose a stalled Xiaohongshu account: shadow limits, wrong tags, weak covers, broken seeding. Seven causes and a 30-minute self-audit."
 publishDate: 2026-09-17
+updatedDate: 2026-10-21
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Platforms"
@@ -331,6 +332,8 @@ question is strategic, not tactical. That is what our
 [Strategy, Campaigns and Analytics service](/services/strategy-campaigns/) is
 for. The [RedNote agency page](/rednote-agency/) lists what we run for
 clients on the platform.
+
+If the audit leads you to change agencies, use [the handover checklist for switching China agencies](/insights/switching-china-agency-checklist/) before you give notice.
 
 ## Frequently asked questions
 

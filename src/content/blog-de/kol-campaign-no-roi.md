@@ -4,6 +4,7 @@ description: "Bleibt der Umsatz trotz hoher Aufrufzahlen aus, ist die Kette vom 
 metaTitle: "KOL-Kampagne: viele Aufrufe, kein Umsatz"
 metaDescription: "Warum KOL-Kampagnen in China Reichweite, aber keinen Umsatz bringen: sechs Ursachen, ein Audit an einem Nachmittag und der richtige Aufbau der nächsten Runde."
 publishDate: 2026-10-15
+updatedDate: 2026-10-21
 author: "TheRedScroll"
 platforms: ["rednote", "douyin"]
 category: "Strategie"
@@ -225,6 +226,8 @@ Ist die Tabelle ausgefüllt, sortieren Sie die Creator nach Kosten pro Shopbesuc
 > Quelle: Hilfecenter von Xiaohongshu Pugongying (小红书蒲公英帮助中心), April 2026. https://pgy.xiaohongshu.com/help/home
 
 Wir würden uns vom unteren Drittel trennen und das nächste Briefing an das obere Drittel vergeben.
+
+Soll nach der Auswertung eine andere Agentur übernehmen, lesen Sie, [wie Sie beim Wechsel Ihre Konten behalten](/de/analysen/switching-china-agency-checklist/). Sichern Sie auch die Creator-Aufträge und die vereinbarten Nutzungsrechte.
 
 ## Die nächste Kampagne so aufsetzen, dass sie messbar wird
 

@@ -4,6 +4,7 @@ description: "Pour le compte de service WeChat (微信) d’une marque, la moyen
 metaTitle: "Taux d’ouverture WeChat : quelles références en 2026"
 metaDescription: "Les taux d’ouverture de référence sur WeChat par type de compte, le basculement vers la recommandation, cinq causes courantes et un plan sur 30 jours."
 publishDate: 2026-10-11
+updatedDate: 2026-10-21
 author: "TheRedScroll"
 platforms: ["wechat"]
 category: "Plateformes"
@@ -208,6 +209,8 @@ Voici l’ordre que nous suivons lorsque nous reprenons un compte WeChat (微信
 | 4 | Tirer une vidéo Channels du meilleur article ; tester une petite campagne Moments | Total des lectures et origine des abonnés |
 
 Jugez le mois sur le total des lectures et sur les nouveaux abonnés qui restent, pas sur le seul taux d’ouverture. [Notre page agence WeChat](/fr/agence-wechat/) explique comment nous pilotons les comptes semaine après semaine, et [notre service Stratégie, campagnes et analyse](/fr/services/strategie-campagnes/) couvre le volet reporting. [Notre page tarifs](/fr/tarifs/) détaille le contenu de chaque forfait sur WeChat. Pour une vue d’ensemble de toutes les plateformes, lisez [notre décryptage sur la baisse de votre taux d’engagement en Chine](/fr/decryptages/china-engagement-rate-drop/).
+
+Si vous décidez de changer d’agence après cet examen, vérifiez [les accès et les droits à sécuriser avant le départ](/fr/decryptages/switching-china-agency-checklist/) pour conserver la maîtrise du compte.
 
 ## FAQ
 

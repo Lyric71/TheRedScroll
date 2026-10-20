@@ -4,6 +4,7 @@ description: "Die meisten stagnierenden Konten wurden nie sanktioniert. Die Ursa
 metaTitle: "Xiaohongshu-Konto wächst nicht mehr"
 metaDescription: "Stagnierendes Xiaohongshu-Konto: Reichweitensperre, falsche Wörter, schwache Titelbilder, gestopptes Seeding. Sieben Ursachen, eine Diagnose."
 publishDate: 2026-09-17
+updatedDate: 2026-10-21
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Plattformen"
@@ -243,6 +244,8 @@ Das Creator-Dashboard von Xiaohongshu (小红书) bietet ein weiteres Werkzeug, 
 Das eigene Konto ist der einzige überprüfbare Maßstab. Wir veröffentlichen für diese Plattform keine Marktdurchschnitte zu Aufrufen oder Followerwachstum, weil keine Quelle der Plattform solche Werte veröffentlicht und weil eine Agentur, die einen nennt, dessen Herkunft nicht belegen kann.
 
 Besteht das Konto jede Zeile der Diagnose und wächst trotzdem nicht, ist die Frage strategisch und nicht taktisch. Dafür gibt es unsere Leistung [Strategie, Kampagnen und Analyse](/de/leistungen/strategie-kampagnen/). Die [RedNote-Agenturseite](/de/rednote-agentur/) führt auf, was wir auf der Plattform für Kunden übernehmen.
+
+Führt die Diagnose zu einem Agenturwechsel, prüfen Sie vor der Kündigung [die Checkliste für die Übergabe in China](/de/analysen/switching-china-agency-checklist/).
 
 ## Häufige Fragen
 

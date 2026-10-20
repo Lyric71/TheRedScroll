@@ -4,7 +4,7 @@ description: "Usually not, at least to start. WeChat and Xiaohongshu verify over
 metaTitle: "Do You Need a Chinese Entity for Social?"
 metaDescription: "Whether a foreign brand needs a Chinese entity for WeChat, Xiaohongshu, Douyin and Weibo, what each platform accepts, and where the real limits sit."
 publishDate: 2026-09-24
-updatedDate: 2026-10-17
+updatedDate: 2026-10-21
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Strategy"
@@ -421,6 +421,8 @@ use an account follows the entity that passed verification, and transferring
 that right is prohibited, so an account verified on your agency's license is
 not straightforwardly yours to take. Fix it in the contract before launch,
 and name the verifying entity in writing.
+
+Before ending an existing arrangement, use [the handover checklist](/insights/switching-china-agency-checklist/) to distinguish an admin change from a permitted account migration.
 
 ## Talk it through before you register anything
 

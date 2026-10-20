@@ -4,7 +4,7 @@ import BlogLayout from '../../layouts/BlogLayout.astro';
 import Container from '../../components/ui/Container.astro';
 import SectionBar from '../../components/ui/SectionBar.astro';
 import KeyFacts from '../../components/sections/KeyFacts.astro';
-import { articleSchema } from '../../lib/schema';
+import { articleSchema, faqPageSchema } from '../../lib/schema';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -46,10 +46,10 @@ const postSchema = articleSchema({
 ---
 
 <BlogLayout
-  title={`${post.data.title} | TheRedScroll`}
+  title={`${post.data.metaTitle} | TheRedScroll`}
   description={post.data.metaDescription}
   ogImage={post.data.featuredImage}
-  schema={postSchema}
+  schema={[postSchema, ...(post.data.faqs?.length ? [faqPageSchema(post.data.faqs)] : [])]}
   publishedTime={publishedIso}
   modifiedTime={modifiedIso}
 >
@@ -64,7 +64,7 @@ const postSchema = articleSchema({
       <>
         <img
           src={post.data.featuredImage}
-          alt={post.data.title}
+          alt={post.data.featuredImageAlt ?? post.data.title}
           class="absolute inset-0 -z-20 w-full h-full object-cover"
           loading="eager"
         />
@@ -280,6 +280,7 @@ const postSchema = articleSchema({
     margin: 32px 0;
   }
   .prose-article blockquote p {
+    overflow-wrap: anywhere;
     font-size: 14px;
     color: var(--color-stone);
     margin-bottom: 0;

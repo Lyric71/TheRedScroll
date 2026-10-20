@@ -4,6 +4,7 @@ description: "Si las visualizaciones no se traducen en ventas, la cadena que va 
 metaTitle: "Campañas con KOL: mucho alcance, cero ventas"
 metaDescription: "Por qué una campaña con KOL en China genera alcance pero no ventas: seis causas, una auditoría que se hace en una tarde y cómo plantear la siguiente ronda."
 publishDate: 2026-10-15
+updatedDate: 2026-10-21
 author: "TheRedScroll"
 platforms: ["rednote", "douyin"]
 category: "Estrategia"
@@ -225,6 +226,8 @@ Con la tabla completa, ordene a los creadores por coste por visita a la tienda. 
 > Fuente: centro de ayuda de Xiaohongshu Pugongying (小红书蒲公英帮助中心), abril de 2026. https://pgy.xiaohongshu.com/help/home
 
 Nosotros prescindiríamos del tercio inferior y encargaríamos el siguiente briefing al tercio superior.
+
+Si el balance aconseja cambiar de agencia, consulte [cómo preparar el relevo sin perder sus cuentas](/es/analisis/switching-china-agency-checklist/). Recupere también los pedidos a creadores y sus permisos de uso.
 
 ## Cómo plantear la próxima campaña para poder medirla
 

@@ -4,6 +4,7 @@ description: "For a brand's WeChat (微信) service account, 2.8% to 4.1% was an
 metaTitle: "WeChat Open Rate Benchmarks: What Is Normal Now"
 metaDescription: "WeChat open rate benchmarks by account type, why reads moved from the push to recommendation, five common causes of a low rate, and a 30-day fix plan."
 publishDate: 2026-10-11
+updatedDate: 2026-10-21
 author: "TheRedScroll"
 platforms: ["wechat"]
 category: "Platforms"
@@ -292,6 +293,8 @@ alone. [Our WeChat agency page](/wechat-agency/) explains how we run accounts we
 pricing page](/pricing/) lists what each package includes on WeChat. For the wider picture
 across platforms, see [our piece on why your China engagement rate keeps
 dropping](/insights/china-engagement-rate-drop/).
+
+If you decide to replace the agency after this review, check [what to secure before you change agencies](/insights/switching-china-agency-checklist/) so account access stays with your team.
 
 ## FAQ
 

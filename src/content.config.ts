@@ -47,6 +47,8 @@ const blog = defineCollection({
     keywords: z.array(z.string()),
     featured: z.boolean().default(false),
     featuredImage: z.string().optional(),
+    featuredImageAlt: z.string().optional(),
+    faqs: z.array(z.object({ q: z.string(), a: z.string() })).optional(),
     keyFacts: z.array(z.string()).optional(),
     /** A signed CEO column (author "Cyril Drouin"). Lists on /insights/ceo-opinion/. */
     column: z.boolean().default(false),
@@ -68,6 +70,8 @@ const blogFr = defineCollection({
     keywords: z.array(z.string()),
     featured: z.boolean().default(false),
     featuredImage: z.string().optional(),
+    featuredImageAlt: z.string().optional(),
+    faqs: z.array(z.object({ q: z.string(), a: z.string() })).optional(),
     keyFacts: z.array(z.string()).optional(),
     /** A signed CEO column (author "Cyril Drouin"). Lists on /insights/ceo-opinion/. */
     column: z.boolean().default(false),
@@ -89,6 +93,8 @@ const blogZh = defineCollection({
     keywords: z.array(z.string()),
     featured: z.boolean().default(false),
     featuredImage: z.string().optional(),
+    featuredImageAlt: z.string().optional(),
+    faqs: z.array(z.object({ q: z.string(), a: z.string() })).optional(),
     keyFacts: z.array(z.string()).optional(),
     /** A signed CEO column (author "Cyril Drouin"). Lists on /insights/ceo-opinion/. */
     column: z.boolean().default(false),
@@ -110,6 +116,8 @@ const blogDe = defineCollection({
     keywords: z.array(z.string()),
     featured: z.boolean().default(false),
     featuredImage: z.string().optional(),
+    featuredImageAlt: z.string().optional(),
+    faqs: z.array(z.object({ q: z.string(), a: z.string() })).optional(),
     keyFacts: z.array(z.string()).optional(),
     /** A signed CEO column (author "Cyril Drouin"). Lists on /insights/ceo-opinion/. */
     column: z.boolean().default(false),
@@ -131,6 +139,8 @@ const blogEs = defineCollection({
     keywords: z.array(z.string()),
     featured: z.boolean().default(false),
     featuredImage: z.string().optional(),
+    featuredImageAlt: z.string().optional(),
+    faqs: z.array(z.object({ q: z.string(), a: z.string() })).optional(),
     keyFacts: z.array(z.string()).optional(),
     /** A signed CEO column (author "Cyril Drouin"). Lists on /insights/ceo-opinion/. */
     column: z.boolean().default(false),

@@ -4,6 +4,7 @@ description: "Beim WeChat-Service-Account (微信) einer Marke lag die durchschn
 metaTitle: "WeChat-Öffnungsrate: Was heute als normal gilt"
 metaDescription: "Benchmarks für die WeChat-Öffnungsrate nach Kontotyp, die Verschiebung vom Push zur Empfehlung, fünf häufige Ursachen und ein 30-Tage-Plan."
 publishDate: 2026-10-11
+updatedDate: 2026-10-21
 author: "TheRedScroll"
 platforms: ["wechat"]
 category: "Plattformen"
@@ -208,6 +209,8 @@ In dieser Reihenfolge gehen wir vor, wenn wir ein WeChat-Konto (微信) überneh
 | 4 | Zum besten Artikel ein Channels-Video schneiden; eine kleine Moments-Anzeige testen | Gesamtaufrufe und Herkunft der Follower |
 
 Bewerten Sie den Monat nach den Gesamtaufrufen und nach neuen Followern, die bleiben, nicht allein nach der Öffnungsrate. [Unsere WeChat-Agenturseite](/de/wechat-agentur/) erklärt, wie wir Konten Woche für Woche betreuen, und [unser Service Strategie, Kampagnen und Analytics](/de/leistungen/strategie-kampagnen/) übernimmt das Reporting. [Unsere Preisseite](/de/preise/) zeigt, was jedes Paket auf WeChat umfasst. Den Blick über alle Plattformen bietet [unsere Analyse, warum Ihre Engagement-Rate in China immer weiter sinkt](/de/analysen/china-engagement-rate-drop/).
+
+Entscheiden Sie sich nach dieser Prüfung für einen Wechsel, klären Sie zuerst, [welche Zugänge und Rechte Sie vor der Kündigung sichern sollten](/de/analysen/switching-china-agency-checklist/). So bleibt das Konto unter Ihrer Kontrolle.
 
 ## FAQ
 

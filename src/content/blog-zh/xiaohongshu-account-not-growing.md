@@ -4,6 +4,7 @@ description: "多数停滞的账号并没有被处罚。原因往往更朴素，
 metaTitle: "小红书账号为什么停止增长"
 metaDescription: "限流、买家词、封面、种草停投：小红书账号停止增长的七个原因，每条附五分钟自查，另有一套三十分钟诊断流程。"
 publishDate: 2026-09-17
+updatedDate: 2026-10-21
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "平台"
@@ -213,6 +214,8 @@ featuredImage: "/images/blog/xiaohongshu-account-not-growing.webp"
 自己的账号，是唯一能核实的参照。我们不公布这个平台上浏览量或粉丝增长的行业均值，因为平台方并没有公布任何一项；代理商引用的均值，也拿不出出处。
 
 如果自查每一项都过关，账号仍然不增长，那就是战略问题，不是战术问题。这正是我们[策略、营销活动与数据分析](/zh/fuwu/celue-huodong/)服务要处理的。[RedNote代理服务页](/zh/rednote-daili/)列出了我们为客户开展的具体工作。
+
+如果自查后决定更换代理商，请在发出通知前对照[中国代理商交接清单](/zh/guandian/switching-china-agency-checklist/)，先核实账号和资产归属。
 
 ## 常见问题
 

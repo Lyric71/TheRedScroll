@@ -4,6 +4,7 @@ description: "Quand les vues ne se transforment pas en ventes, c’est que la ch
 metaTitle: "Campagne KOL : des vues, mais pas de ventes"
 metaDescription: "Pourquoi une campagne KOL en Chine fait de l’audience sans vendre : six causes, un audit mené en un après-midi et la méthode pour bâtir la suivante."
 publishDate: 2026-10-15
+updatedDate: 2026-10-21
 author: "TheRedScroll"
 platforms: ["rednote", "douyin"]
 category: "Stratégie"
@@ -225,6 +226,8 @@ Une fois le tableau rempli, classez les créateurs selon leur coût par visite e
 > Source : centre d’aide de Xiaohongshu Pugongying (小红书蒲公英帮助中心), avril 2026. https://pgy.xiaohongshu.com/help/home
 
 Pour notre part, nous écarterions le tiers le moins performant et confierions le prochain brief au tiers de tête.
+
+Si le bilan conduit à remplacer l’agence, notre guide explique [comment préparer la passation sans perdre vos comptes](/fr/decryptages/switching-china-agency-checklist/). Récupérez aussi les commandes aux créateurs et leurs autorisations d’utilisation.
 
 ## Préparer la prochaine campagne pour pouvoir la mesurer
 

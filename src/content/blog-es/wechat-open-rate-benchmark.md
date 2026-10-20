@@ -4,6 +4,7 @@ description: "En la cuenta de servicio de WeChat (微信) de una marca, la tasa 
 metaTitle: "Tasa de apertura en WeChat: qué es normal hoy"
 metaDescription: "Referencias de tasa de apertura en WeChat por tipo de cuenta, el giro del envío a la recomendación, cinco causas habituales y un plan de 30 días."
 publishDate: 2026-10-11
+updatedDate: 2026-10-21
 author: "TheRedScroll"
 platforms: ["wechat"]
 category: "Plataformas"
@@ -208,6 +209,8 @@ Este es el orden que seguimos cuando heredamos una cuenta de WeChat (微信). So
 | 4 | Montar un vídeo de Channels a partir del mejor artículo; probar un anuncio pequeño en Moments | Lecturas totales y origen de los seguidores |
 
 Juzgue el mes por las lecturas totales y por los nuevos seguidores que se quedan, no solo por la tasa de apertura. [Nuestra página de agencia WeChat](/es/agencia-wechat/) explica cómo llevamos las cuentas semana a semana, y [nuestro servicio de Estrategia, campañas y analítica](/es/servicios/estrategia-campanas/) se ocupa de los informes. [Nuestra página de precios](/es/precios/) detalla qué incluye cada paquete en WeChat. Para una visión de conjunto de todas las plataformas, lea [nuestro análisis sobre por qué su tasa de interacción en China no deja de caer](/es/analisis/china-engagement-rate-drop/).
+
+Si decide sustituir a la agencia tras esta revisión, compruebe [qué accesos y derechos debe asegurar antes de salir](/es/analisis/switching-china-agency-checklist/) para conservar el control de la cuenta.
 
 ## Preguntas frecuentes
 

@@ -310,6 +310,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-10-08 for 06C: "境外主体可以注册1个账号" and "境外地区账号暂只支持服务号类型" confirmed at check 1 and check 2. Used in: wechat-open-rate-benchmark.
 - Re-verified 2026-10-12 for 07D: "境外主体可以注册1个账号", "境外地区账号暂只支持服务号类型" and "认证成功后，账号方可正常使用" confirmed at check 1 and check 2. Used in: b2b-industrial.
 - Re-verified 2026-10-17 for 09C: "境外主体可以注册1个账号", "境外地区账号暂只支持服务号类型" and "认证成功后，账号方可正常使用" confirmed at check 1, check 2 and after the quality pass. Used in: china-market-entry-timeline.
+- Re-verified 2026-10-21 for 10C: "境外主体可以注册1个账号", "境外地区账号暂只支持服务号类型" and "认证成功后，账号方可正常使用" confirmed at check 1 (tag c1), check 2 (tag c2) and after the quality pass (tag c2b). Used in: switching-china-agency-checklist.
 
 ### WeChat Official Account verification review time, mainland entity
 - Value: review in 1 to 3 working days; verification must be completed within 30 calendar days of registration; payment-based registration verification succeeds within 1 working day
@@ -725,6 +726,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-08, re-fetched at iteration 8 and again after the quality pass, unchanged; "默认选项为免费授权", "一口价授权费金额最低不低于20元，最高不高于任务金额的50%", "此处为投广的期限，不是达人素材授权的期限，达人授权长期有效", "素材授权费部分也需支付5%平台服务费", "下单后达人制作视频的版权归达人所有"
 - Used in: china-kol-pricing
 - Notes: The site's influencer page FAQ says a separate licensing payment 'can add 30 to 50% on top'; consistent with this 50% cap, not changed.
+- Re-verified 2026-10-21 for 10C: "下单后达人制作视频的版权归达人所有", "默认选项为免费授权" and "达人授权长期有效" confirmed at check 1 (tag c1), check 2 (tag c2) and after the quality pass (tag c2b). Used in: switching-china-agency-checklist.
 
 ### Xingtu invoices carry 6% VAT
 - Value: Xingtu invoices are tax-inclusive at 6% VAT
@@ -1066,6 +1068,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: b2b-industrial
 - Notes: The help center's Chinese page for departed-employee reassignment (help2/pc/17941) is the education (学员) variant, so the developer page is cited for departed employees. Supports the CRM service page line that WeCom contacts stay with the company when a rep leaves.
 - Re-verified 2026-10-18 for 09D: "企业可以将在职成员的客户和客户群分配给其他成员继续提供服务" and "24小时后自动成为联系人" confirmed at check 1, check 2 and after the quality pass. Used in: automotive (active-employee reassignment only).
+- Re-verified 2026-10-21 for 10C: "企业可以将在职成员的客户和客户群分配给其他成员继续提供服务" and "24小时后自动成为联系人" (active employees; the departed-employee page was re-fetched too, "重新分配给其他企业成员") confirmed at check 1 (tag c1), check 2 (tag c2) and after the quality pass (tag c2b). Used in: switching-china-agency-checklist.
 
 ### Zhihu content and creators, Q2 2026
 - Value: about 993 million pieces of content in total; 81.5 million content creators in total; AI-related professional content up about 37% year on year; 13.11 million average monthly subscribing members; marketing services revenue 199 million yuan, 28.8% of revenue
@@ -1197,6 +1200,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-19 (tag c2), unchanged
 - Used in: best-xiaohongshu-marketing-agencies
 - Notes: The doc tells brands to file authorizations "于3月31日前" with no year; that deadline is not cited.
+- Re-verified 2026-10-21 for 10C: "品牌可随时中止或修改授权", "只有获得品牌明确同意的代理，才能以该品牌名义发起合作" and "中止授权：立即生效，代理商无法再使用该品牌" on the doc endpoint confirmed at check 1 (tag c1), check 2 (tag c2) and after the quality pass (tag c2b). Used in: switching-china-agency-checklist.
 
 ### Pugongying client conduct rules: no implied special relationship with the platform; deposit deductions for agencies
 - Value: clients on Pugongying, explicitly including agencies, may not imply any authorization, agency, endorsement, sponsorship, recommendation or other special relationship with the platform beyond their actual cooperation; may not move creator deals or payments off the platform; may not fake interaction; penalties range from a message to ending cooperation, including deducting the deposit (agencies only)
@@ -1235,6 +1239,39 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-19 (tag c2), unchanged
 - Used in: best-xiaohongshu-marketing-agencies
 - Notes: A dated platform source for the 600-yuan fee, consistent with the older "enterprise professional account verification fee" entry (platform PDF undated, New Rank 2025-10-19).
+
+### WeChat Official Account admin change and account recovery
+- Value: on a company (enterprise, media, government or other organization) account, changing the admin starts with a scan by the current admin's WeChat; the new admin's ID name, ID number and phone are then entered and verified by SMS and a scan from the new admin's real-name WeChat. Where the current admin cannot verify, the account recovery process (找回账号) replaces the operator's ID details, the email and the admin WeChat together, not one at a time
+- As of: pages undated; confirmed October 2026 (platform documentation)
+- Source: Tencent customer service (腾讯客服), 公众号/服务号管理员信息修改方法 and 公众平台账号找回能修改哪些信息
+- URL: https://kf.qq.com/faq/120911VrYVrA150527bmIVJZ.html ; https://kf.qq.com/faq/17073173YNnq170731eMJV3Y.html
+- Verified 1: 2026-10-21, fetched with curl (logs/scratch/10C/check.py, tag c1); "用原管理员微信扫码验证后，可重新填写身份证姓名、身份证号码、手机号", "第二步：原管理员微信号扫码验证", "找回成功后，公众号的运营者身份证信息信息、邮箱、管理员微信号会一起被修改替换" confirmed
+- Verified 2: 2026-10-21, re-fetched at iteration 8 (tag c2) and after the quality pass (tag c2b), unchanged
+- Used in: switching-china-agency-checklist
+- Notes: The recovery page does not say who may apply; the article presents recovery only for the case where the client's company is the verified entity.
+
+### WeChat follower list: OpenIDs unique to each account
+- Value: the follower list API (getFans) returns a list of OpenIDs, encrypted WeChat IDs, each unique to one user for one account; up to 10,000 per call
+- As of: page undated; confirmed October 2026 (platform documentation)
+- Source: WeChat Open Docs (微信开放文档), 获取关注用户列表 (service account API)
+- URL: https://developers.weixin.qq.com/doc/service/api/usermanage/userinfo/api_getfans.html
+- Verified 1: 2026-10-21, fetched with curl (tag c1); "获取关注用户列表", "每个用户对每个公众号的OpenID是唯一的", "一次拉取调用最多拉取10000个关注者的OpenID" confirmed
+- Verified 2: 2026-10-21, re-fetched (tags c2, c2b), unchanged
+- Used in: switching-china-agency-checklist (why followers cannot be exported to another account)
+
+### Douyin enterprise account agreement: account limited to the account entity, no transfer without platform approval
+- Value: clause 3.11, the account is for the account entity only; gifting, lending, renting, transferring, selling or otherwise licensing it to others in any form without the platform's recognition or consent is prohibited; the platform may suspend or end service where use breaks the law or platform rules
+- As of: published online 2026-07-29, effective 2026-08-05
+- Source: Douyin (抖音), 抖音企业机构账号用户服务协议
+- URL: https://lf26-cdn-tos.draftstatic.com/obj/ies-hotsoon-draft/douyin_agreement/b482fa28-25db-4b0a-8840-2a4a1882cd35.html
+- Verified 1: 2026-10-21, fetched with curl (tag c1); "抖音企业机构账号用户服务协议", "生效日期：2026年8月5日", "您的账号仅限账号主体使用，禁止以任何形式未经平台认可或同意赠与、借用、出租、转让、售卖或以其他方式许可他人使用该账号" confirmed
+- Verified 2: 2026-10-21, re-fetched (tags c2, c2b), unchanged
+- Used in: switching-china-agency-checklist (prose)
+- Notes: The personal user agreement (clause 3.4, updated 2026-02-13, https://www.douyin.com/draft/douyin_agreement/douyin_agreement_user.html) words it as "仅限您本人使用"; brand accounts fall under this enterprise agreement, so cite this one.
+
+### NOT LOGGE2026-10-21, searched and rejected 2026-10-21 (switching China agencies)
+- Agency-to-agency ad account moves (巨量引擎 账户平移, 腾讯广告 转户 / 更换服务商): described only by agency and reseller pages (for example ggyzd.com); no Tencent or Ocean Engine page states a general rule. Not cited; 10C says neither platform publishes one.
+- Xiaohongshu user agreement account clause ("账号仅限您本人使用"): agree.xiaohongshu.com and xiaohongshu.com/terms render only through JavaScript; readable copies are third-party mirrors (elawcn.com, lawinsider.com). Not cited. The 2021 professional account agreement PDF (fe-video-qc.xhscdn.com) was read and has no transfer clause. Recheck note 2026-10-21: if a fetchable platform copy appears, log it for the next account-ownership piece.
 
 ## Regulatory and legal
 
@@ -1634,6 +1671,16 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: china-market-entry-timeline
 - Notes: Older than 12 months; the regulation in force (fallback 9). nmpa.gov.cn returns HTTP 412 to automated fetches; the gov.cn copy is the primary.
 
+### China Copyright Law, Article 19: commissioned works belong to the maker unless the contract says otherwise
+- Value: for a commissioned work, copyright ownership is agreed by contract between the commissioning party and the commissioned party; where the contract has no clear term or there is no contract, copyright belongs to the commissioned party (受托人)
+- As of: law as amended 2020-11-11 (in force 2021-06-01), text as published by the National Copyright Administration, March 2021
+- Source: National Copyright Administration (国家版权局), 中华人民共和国著作权法
+- URL: https://www.ncac.gov.cn/xxfb/flfg/flfg_532/202103/t20210309_50530.html
+- Verified 1: 2026-10-21, fetched with curl (tag c1); "受委托创作的作品，著作权的归属由委托人和受托人通过合同约定。合同未作明确约定或者没有订立合同的，著作权属于受托人" and "2020年11月11日" confirmed
+- Verified 2: 2026-10-21, re-fetched (tags c2, c2b), unchanged
+- Used in: switching-china-agency-checklist
+- Notes: Older than 12 months but it is the operative statute on the regulator's own site (fallback 9). Article 18 (works for hire) sits beside it and was not used.
+
 ## Market and industry
 
 <!-- Needed from week 2 onward:
@@ -1892,6 +1939,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-10-01 for 05A: "返货/返点政策" and "不可退" confirmed at check 1 and check 2. Used in: wechat-marketing-cost.
 - Notes: Undated page, logged on the same basis as the WeChat Moments budget entry above. Recheck the 2024 example year on reuse; if it moves, the agreement was revised.
 - Re-verified 2026-10-06 for 06A: "返货/返点政策", "不予退还" and "不可退" confirmed at check 1 and check 2. Used in: china-marketing-hidden-costs.
+- Re-verified 2026-10-21 for 10C: "返货/返点政策", "不予退还" and "不可退" confirmed at check 1 (tag c1), check 2 (tag c2) and after the quality pass (tag c2b). Used in: switching-china-agency-checklist.
 
 ### Tencent service provider agreement: the provider holds and answers for the sub-client account
 - Value: a 子客 (sub-client) is a customer introduced by the service provider; the service provider registers and holds the account and is responsible for the sub-client's conduct and breaches; service providers may not compete through 低价 or 返货
@@ -1903,6 +1951,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-09-24: re-fetched for 04A (check 1 and check 2, both 2026-09-24). CORRECTION: the agreement says "子客可以自行管理其腾讯平台账户，也可以依法委托第三方（包括但不限于腾讯平台的服务商/代理商等）管理其腾讯平台账户": the sub-client may run its own account or entrust it to the service provider. The text found does not say the provider always registers and holds the sub-client account. The provider does answer for its sub-clients ("甲方不得以投放为子客投放或子客自行管理账户进行投放等任何理由拒绝承担本协议约定的义务"). Cite it that way from now on; 04A does.
 - Used in: china-agency-pricing-models, china-social-media-package-includes
 - Notes: The source for "who owns the ad account" in any agency-selection or contract article.
+- Re-verified 2026-10-21 for 10C: "子客可以自行管理其腾讯平台账户，也可以依法委托第三方" confirmed at check 1 (tag c1), check 2 (tag c2) and after the quality pass (tag c2b). Used in: switching-china-agency-checklist.
 
 ### China Advertising Law: written contract required between advertiser, operator and publisher
 - Value: Article 30 requires advertisers, advertising operators and advertising publishers to conclude written contracts for advertising activity. Article 34 requires operators and publishers to build and keep acceptance, review and archive systems, to verify supporting documents, and to refuse design, production or placement where content does not match those documents
@@ -2046,6 +2095,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: chinese-entity-social-media
 - Notes: **The most useful Weibo entry in this ledger.** It is the platform's own acknowledgement that overseas-verified enterprise accounts exist and that the route runs through an authorized overseas agent. It also documents a lock-in worth citing in any agency-relationship article: the agent that verified the account is a required party to moving it.
 - Re-verified 2026-10-17 for 09C: "认证时为您服务的海外代理商" confirmed at check 1, check 2 and after the quality pass. Used in: china-market-entry-timeline.
+- Re-verified 2026-10-21 for 10C: "国内企业变更至国内企业", "认证时为您服务的海外代理商" and "主体变更审核周期为1个工作日" confirmed at check 1 (tag c1), check 2 (tag c2) and after the quality pass (tag c2b). Used in: switching-china-agency-checklist.
 
 ### Weibo non-mainland institution verification route
 - Value: non-mainland institutional subjects apply by email to vhelper@vip.sina.com rather than through the self-serve form; the file is an application form in Chinese, a chopped application letter, a chopped information form, a chopped copy of the 微博公约, the institution registration licence in Chinese or English (other languages need an original plus a translation chopped with the same seal as the licence), the contact's business card or employment proof and ID (passport for overseas contacts, ID card for mainland, Hong Kong and Macau, 台胞证 or residence permit for Taiwan), and an authorization letter if the nickname does not match the licence name
@@ -2076,6 +2126,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-09-21, re-fetched, unchanged, clause re-confirmed verbatim
 - Used in: chinese-entity-social-media
 - Notes: Pair with the WeChat clause 6.1 entry below for any article about who owns an account. Weibo's ban is narrower than WeChat's: it bars sale, transfer and rental, and is expressed as subject to Weibo's consent rather than as an absolute prohibition.
+- Re-verified 2026-10-21 for 10C: "不得擅自买卖、转让、出租任何微博账号或微博昵称" confirmed at check 1 (tag c1), check 2 (tag c2) and after the quality pass (tag c2b). Used in: switching-china-agency-checklist.
 
 ### WeChat Official Account ownership, use right and the verification rule
 - Value: ownership of a WeChat Official Account rests with Tencent; on completing registration the user obtains a right of use, and that right belongs to the initial registering subject; where the user information submitted during account qualification review differs from the initial registrant, the right of use passes after a successful review to the subject that passed the qualification review; gifting, lending, renting, transferring and selling the right of use are prohibited (clause 6.1); where Tencent finds the holder is not the initial registering subject it may terminate that party's use of the account without notice (clause 6.3)
@@ -2088,6 +2139,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Notes: **The single most important source in this ledger for any agency-relationship or account-ownership article.** The middle limb is the one that matters and the one nobody quotes: the right of use follows the entity that passed the qualification review, not the entity that first registered. An account verified on an agency's licence is the agency's to use as a matter of the agreement. Combined with the outright ban on transfer, there is no clean contractual handover, which is why articles must not promise migration as a remedy. Tencent's own account migration help page could not be fetched on 2026-09-21 (kf.qq.com/faq/170221iQVfuu170221zA3UZZ.html returns 404, the 公众平台专区 index is JavaScript-rendered); every migration fee figure in circulation is self-media. Do not cite one until a platform page is reachable.
 
 - Re-verified 2026-10-01 for 05B: "微信公众账号的所有权归腾讯公司所有", "账号资质审核成功之后使用权属于通过资质审核的用户" and "账号使用权禁止赠与、借用、租用、转让或售卖" confirmed at check 1 and check 2. Used in: wechat-official-account-setup.
+- Re-verified 2026-10-21 for 10C: "微信公众账号的所有权归腾讯公司所有", "账号资质审核成功之后使用权属于通过资质审核的用户", "账号使用权禁止赠与、借用、租用、转让或售卖" and "腾讯有权在未经通知的情况下终止你使用该账号" confirmed at check 1 (tag c1), check 2 (tag c2) and after the quality pass (tag c2b). Used in: switching-china-agency-checklist.
+
 ### Cross-border e-commerce retail import: transaction limits and the resale ban
 - Value: single transaction limit raised from 2,000 yuan to 5,000 yuan and the annual limit per person from 20,000 yuan to 26,000 yuan; where a single item exceeds the 5,000 yuan transaction limit but falls under the annual limit and is the only item on the order, it may still be imported through the cross-border retail channel with tariff, import VAT and consumption tax charged in full at the goods rate, counting toward the annual total; goods purchased are final goods for the consumer's personal use and may not be resold into the domestic market
 - As of: 成文日期 2018-11-29; effective 2019-01-01
@@ -2466,6 +2519,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-01, re-fetched, unchanged, plus "将A账号的原创保护功能和留言管理功能、违规记录、全部关注用户（可选）、文章素材（可选）、微信号（可选）迁移至B账号", "A账号被回收" and "但主体还是B"
 - Used in: wechat-official-account-setup
 - Notes: **Supersedes the Tencent half of the 2026-09-21 rejection** ("migration fees; Tencent's own migration help page is unreachable"). The old URL (170221iQVfuu170221zA3UZZ) is still dead; this one is live. A mobile copy at kf.qq.com/touch/wxappfaq/170120a6rqEN170120ZVVrU7.html says the whole migration usually takes 7 to 10 days. The notary and agent fees in circulation remain uncited. Search summaries claiming overseas accounts cannot migrate are wrong per this page.
+- Re-verified 2026-10-21 for 10C: "暂不支持境内主体账号迁移至境外主体账号", "暂不支持公众号（即原订阅号）迁移至服务号", "目标账号的关注用户数必须不超过1000", "异主体账号迁移需支付审核服务费用人民币300元" and "A账号被回收" confirmed at check 1 (tag c1), check 2 (tag c2) and after the quality pass (tag c2b). The mobile copy noted above is now cited too: "账号迁移一般花费7-10天内" (preparation and notary stage included) and "对申请公函在公证机关进行印鉴公证", same three checks, https://kf.qq.com/touch/wxappfaq/170120a6rqEN170120ZVVrU7.html. Used in: switching-china-agency-checklist.
 
 ### Subscription account renamed Official Account, November 2024
 - Value: WeChat renamed 订阅号 (subscription account) to 公众号 (Official Account) in November 2024, across the app and the platform; Tencent's developer docs now read "公众号（原订阅号）与服务号" and describe the 服务号 as giving companies and organizations stronger business service and user tools
@@ -2777,6 +2831,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 1: 2026-10-06, fetched with curl, "原路退回", "175天至360天" and "请确认你的广告已全部下线" confirmed
 - Verified 2: 2026-10-06, re-fetched, unchanged
 - Used in: china-marketing-hidden-costs
+- Re-verified 2026-10-21 for 10C: "原路退回", "175天至360天" and "请确认你的广告已全部下线" confirmed at check 1 (tag c1), check 2 (tag c2) and after the quality pass (tag c2b). The article draws the plain consequence that a refund of an agency-paid top-up returns to the agency, presented as an inference from "原路退回". Used in: switching-china-agency-checklist.
 
 ### Ocean Engine marketing platform agreement: prepaid, refund conditions, non-cash and credit not refundable
 - Value: the service is prepaid (预付特定金额); a cash refund requires no live ad units or orders, a completed refund application, and no open disputes or compensation claims; non-cash balance (grants, red packets, coupons) and credit lines are not refundable (5.4); the agreement also says the minimum top-up is set and published by the platform (no figure printed)
@@ -2789,6 +2844,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Notes: The minimum top-up clause was not used: no figure, and the cost pillar cites the 2021 FAQ on agent-set first recharges.
 - Re-verified 2026-10-11 for 07B: "本协议项下服务费用采用预先支付的方式", "OCPM（按优化后千次展示收费）" and "最低金额由巨量营销平台确定并公布" confirmed at check 1 and check 2. Used in: douyin-marketing-cost (prepaid, billing modes, minimum top-up set by the platform with no figure published).
 - Re-verified 2026-10-14 for 08B: "本协议项下服务费用采用预先支付的方式", "OCPM（按优化后千次展示收费）" and "最低金额由巨量营销平台确定并公布" confirmed at check 1, check 2 and after the quality pass. Used in: douyin-advertising-formats.
+- Re-verified 2026-10-21 for 10C: "预付特定金额", "账户内无在投投放单元", "授信额度不可退款" and "生效时间：2026年" confirmed at check 1 (tag c1), check 2 (tag c2) and after the quality pass (tag c2b). Used in: switching-china-agency-checklist.
 
 ### Ocean Engine balance refund: closes the account, freezes cash, clears grants
 - Value: applying for a balance refund closes the advertiser account and freezes the cash balance; grant balance cannot be spent and is cleared once approved; stages run about 1 to 2 working days each (material review, refundable-amount review, payment)
@@ -2798,6 +2854,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 1: 2026-10-06, fetched with curl, "将关闭对应广告主账户", "冻结现金余额" and "现金及赠款余额进行清空" confirmed
 - Verified 2: 2026-10-06, re-fetched, unchanged
 - Used in: china-marketing-hidden-costs (in prose)
+- Re-verified 2026-10-21 for 10C: "将关闭对应广告主账户", "冻结现金余额", "现金及赠款余额进行清空" and "退款信息审核确认阶段：退款专员提交，1-2个工作日" confirmed at check 1 (tag c1), check 2 (tag c2) and after the quality pass (tag c2b). Used in: switching-china-agency-checklist.
 
 ### WeChat Official Account admin and operator identity rules
 - Value: an admin's ID number and phone number can each bind at most 5 accounts; the admin is verified by scanning with a WeChat linked to the admin's own bank card (no charge); operator WeChat IDs must have a bound phone and bank card; at most 25 long-term and short-term operators per account; from 2026-05-13 new personal-entity accounts cannot bind operators
@@ -4330,3 +4387,7 @@ estimated. No marker, no separate sign-off chase.
 
 <!-- Move entries here when they go stale rather than deleting them, with the
 date retired and what replaced them. Published articles still cite these. -->
+
+### 10C publication recheck, 2026-10-21
+
+All 22 entries in the 10C source-check script fetched again during publication: HTTP 200 and all claim strings passed. Captures: editorial/logs/scratch/10C/chk/publish/. Reconfirmed Tencent migration, admin identity and phone verification, OpenID scope, refund routes, Copyright Law Article 19, and the platform agreements. The published FAQ no longer treats a missing general ad-transfer rule as a prohibition or promises a refund; administrator changes include the full verification step. No new numeric claim added.

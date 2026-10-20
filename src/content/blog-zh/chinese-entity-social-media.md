@@ -4,7 +4,7 @@ description: "多数情况下不必，至少起步阶段不必。微信和小红
 metaTitle: "做中国社交媒体，必须有中国公司吗？"
 metaDescription: "没有中国主体，外国品牌能否做微信、小红书、抖音和微博？逐一拆解各平台接受什么主体，以及真正的门槛在哪里。"
 publishDate: 2026-09-24
-updatedDate: 2026-10-17
+updatedDate: 2026-10-21
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "策略"
@@ -249,6 +249,8 @@ featuredImage: "/images/blog/chinese-entity-social-media.webp"
 ### 挂在代理商名下的账号安全吗？
 
 可行，但并非天然安全。根据微信协议，账号使用权归通过认证的主体所有，且禁止转让，因此用代理商执照认证的账号，并不是你想收回就能收回的。上线之前就应在合同中约定清楚，并以书面形式写明认证主体。
+
+结束现有合作之前，可对照[代理商交接清单](/zh/guandian/switching-china-agency-checklist/)，区分管理员变更与符合平台条件的账号迁移。
 
 ## 注册任何主体之前，先聊一聊
 

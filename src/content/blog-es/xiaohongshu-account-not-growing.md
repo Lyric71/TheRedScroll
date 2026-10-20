@@ -4,6 +4,7 @@ description: "La mayoría de las cuentas estancadas nunca fueron sancionadas. La
 metaTitle: "Su cuenta de Xiaohongshu ya no crece"
 metaDescription: "Cuenta de Xiaohongshu estancada: limitación de alcance, palabras equivocadas, portadas débiles, siembra interrumpida. Siete causas y un diagnóstico."
 publishDate: 2026-09-17
+updatedDate: 2026-10-21
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Plataformas"
@@ -242,6 +243,8 @@ El panel del creador de Xiaohongshu (小红书) ofrece una herramienta más que 
 Su propia cuenta es la única referencia verificable. No publicamos medias de mercado de visitas ni de crecimiento de seguidores en esta plataforma, porque ninguna fuente de la plataforma las publica y porque una agencia que cite una no puede enseñarle de dónde sale.
 
 Si el diagnóstico supera todas las filas y la cuenta sigue sin crecer, la pregunta es estratégica, no táctica. De eso se ocupa nuestro servicio de [estrategia, campañas y análisis](/es/servicios/estrategia-campanas/). La [página de agencia RedNote](/es/agencia-rednote/) detalla lo que llevamos para nuestros clientes en la plataforma.
+
+Si el diagnóstico le lleva a cambiar de proveedor, consulte [la lista de entrega para cambiar de agencia en China](/es/analisis/switching-china-agency-checklist/) antes de comunicar la rescisión.
 
 ## Preguntas frecuentes
 

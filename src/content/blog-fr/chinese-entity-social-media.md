@@ -4,7 +4,7 @@ description: "Le plus souvent, non, du moins au démarrage. WeChat et Xiaohongsh
 metaTitle: "Réseaux sociaux en Chine : une société locale ?"
 metaDescription: "WeChat, Xiaohongshu, Douyin, Weibo : ce que chaque plateforme accepte d’une marque étrangère sans société chinoise, et où se situent les vraies limites."
 publishDate: 2026-09-24
-updatedDate: 2026-10-17
+updatedDate: 2026-10-21
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Stratégie"
@@ -249,6 +249,8 @@ La rapidité, l’échelle et ce que l’on peut acheter. Sur WeChat, une entit�
 ### Un compte détenu par une agence est-il sûr ?
 
 Il est viable, pas sûr par nature. Selon le contrat WeChat, le droit d’usage d’un compte suit l’entité qui a obtenu la certification, et sa cession est interdite : un compte certifié sur la licence de votre agence ne vous revient donc pas simplement. Réglez la question par contrat avant le lancement, en faisant nommer par écrit l’entité certifiée.
+
+Avant de résilier un contrat existant, consultez [la liste de contrôle de la passation](/fr/decryptages/switching-china-agency-checklist/). Elle distingue le remplacement d’un administrateur d’une migration autorisée.
 
 ## En parler avant d’immatriculer quoi que ce soit
 

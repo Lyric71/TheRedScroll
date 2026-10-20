@@ -4,6 +4,7 @@ description: "La plupart des comptes qui stagnent n’ont jamais été sanctionn
 metaTitle: "Compte Xiaohongshu qui ne progresse plus"
 metaDescription: "Compte Xiaohongshu à l’arrêt : bridage, mots des acheteurs, couvertures, seeding interrompu. Sept causes et un diagnostic en trente minutes."
 publishDate: 2026-09-17
+updatedDate: 2026-10-21
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Plateformes"
@@ -244,6 +245,8 @@ Le tableau de bord créateur de Xiaohongshu (小红书) offre un outil de plus, 
 Votre propre compte reste le seul point de comparaison vérifiable. Nous ne publions pas de moyennes de marché pour les vues ou la progression des abonnés sur cette plateforme : aucune source de la plateforme n’en publie, et une agence qui en cite une ne peut pas vous montrer d’où elle sort.
 
 Si le diagnostic passe toutes les lignes et que le compte ne progresse toujours pas, la question devient stratégique, plus tactique. C’est l’objet de notre service [Stratégie, campagnes et analyse](/fr/services/strategie-campagnes/). La [page agence RedNote](/fr/agence-rednote/) détaille ce que nous menons pour nos clients sur la plateforme.
+
+Si ce diagnostic vous conduit à changer de prestataire, consultez [la liste de contrôle pour une passation d’agence en Chine](/fr/decryptages/switching-china-agency-checklist/) avant d’envoyer votre préavis.
 
 ## Questions fréquentes
 

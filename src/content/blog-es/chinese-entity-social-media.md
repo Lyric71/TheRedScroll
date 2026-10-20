@@ -4,7 +4,7 @@ description: "Por lo general no, al menos para empezar. WeChat y Xiaohongshu ver
 metaTitle: "Redes sociales en China: ¿hace falta sociedad china?"
 metaDescription: "WeChat, Xiaohongshu, Douyin y Weibo: qué admite cada plataforma de una marca extranjera sin sociedad china y dónde están los verdaderos límites."
 publishDate: 2026-09-24
-updatedDate: 2026-10-17
+updatedDate: 2026-10-21
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Estrategia"
@@ -249,6 +249,8 @@ Sobre todo la rapidez, la escala y lo que se puede contratar. En WeChat, una ent
 ### ¿Es segura una cuenta a nombre de la agencia?
 
 Es viable, pero no segura de por sí. Según el contrato de WeChat, el derecho de uso de una cuenta sigue a la entidad que superó la verificación, y su transferencia está prohibida, de modo que una cuenta verificada con la licencia de su agencia no es suya sin más. Déjelo atado en el contrato antes del lanzamiento y haga constar por escrito cuál es la entidad verificada.
+
+Antes de terminar una colaboración existente, revise [la lista de comprobación del traspaso](/es/analisis/switching-china-agency-checklist/). Distingue el cambio de administrador de una migración permitida por la plataforma.
 
 ## Hable con nosotros antes de registrar nada
 

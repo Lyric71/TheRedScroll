@@ -4,6 +4,7 @@ description: "Views without sales mean the chain from post to purchase broke. Lo
 metaTitle: "KOL Campaign Got Views, No Sales? Fix It"
 metaDescription: "Six reasons China KOL campaigns deliver reach without revenue, how to audit a finished campaign in an afternoon, and how to structure the next one."
 publishDate: 2026-10-15
+updatedDate: 2026-10-21
 author: "TheRedScroll"
 platforms: ["rednote", "douyin"]
 category: "Strategy"
@@ -312,6 +313,8 @@ Pugongying tells brands to choose on exactly that when the goal is sales.
 > Source: Xiaohongshu Pugongying help center (小红书蒲公英帮助中心), April 2026. https://pgy.xiaohongshu.com/help/home
 
 We'd drop the bottom third and give the top third the next brief.
+
+If the review leads to an agency change, see [how to switch China agencies without losing your accounts](/insights/switching-china-agency-checklist/). Secure the creator order history and usage rights before the handover.
 
 ## How to set up the next campaign so you can measure it
 

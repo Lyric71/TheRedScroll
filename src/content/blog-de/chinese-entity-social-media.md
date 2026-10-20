@@ -4,7 +4,7 @@ description: "In den meisten Fällen nicht, jedenfalls nicht zum Start. WeChat u
 metaTitle: "Social Media in China: Gesellschaft vor Ort nötig?"
 metaDescription: "WeChat, Xiaohongshu, Douyin, Weibo: Was jede Plattform ausländischen Marken ohne chinesische Gesellschaft erlaubt und wo die echten Grenzen liegen."
 publishDate: 2026-09-24
-updatedDate: 2026-10-17
+updatedDate: 2026-10-21
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Strategie"
@@ -249,6 +249,8 @@ Vor allem in Tempo, Umfang und in dem, was sich zukaufen lässt. Eine Gesellscha
 ### Ist ein Konto auf die Agentur sicher?
 
 Es ist gangbar, aber nicht von vornherein sicher. Nach dem WeChat-Vertrag folgt das Nutzungsrecht der Gesellschaft, die die Verifizierung bestanden hat, und dieses Recht darf nicht übertragen werden. Ein auf die Lizenz Ihrer Agentur verifiziertes Konto können Sie also nicht ohne Weiteres an sich ziehen. Regeln Sie das vor dem Start vertraglich und lassen Sie die verifizierende Gesellschaft schriftlich benennen.
+
+Vor dem Ende einer bestehenden Zusammenarbeit hilft [die Übergabecheckliste](/de/analysen/switching-china-agency-checklist/), einen Administratorwechsel von einer zulässigen Kontomigration zu unterscheiden.
 
 ## Sprechen Sie mit uns, bevor Sie etwas eintragen lassen
 

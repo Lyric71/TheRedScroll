@@ -27,7 +27,7 @@ They override any conflicting rule inside the skill.
 
 | Field | Value |
 |---|---|
-| Working H1 | Switching China agencies: the handover checklist |
+| Working H1 | Change your China marketing agency: the handover checklist (amended 2026-10-21, see SEO) |
 | Slug | `/insights/switching-china-agency-checklist/` |
 | Output file | `output/switching-china-agency-checklist.md` |
 | Primary query | `change china marketing agency` |
@@ -97,7 +97,7 @@ Final section only. CTA label: **Book a call**
 
 | Field | Ceiling | Draft value |
 |---|---|---|
-| Title | 52 chars | Switching China Agencies: A Checklist (37 chars) |
+| Title | 52 chars | Change Your China Marketing Agency: The Checklist (49 chars; amended 2026-10-21 by the 10C draft run so the title and H1 carry the primary query, as SPEC requires; the earlier value, Switching China Agencies: A Checklist, did not) |
 | Meta description | 152 chars | How to leave a China marketing agency without losing your accounts: ownership rules, ad deposits, content assets, KOL ties, and a 30-day plan. (142 chars; completed 2026-10-11 by the 07C draft run, the earlier value was cut off mid-phrase) |
 | Excerpt | 25 words | generate in the SEO iteration |
 

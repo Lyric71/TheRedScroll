@@ -4,6 +4,7 @@ description: "有播放、无销量，意味着从内容到成交的链路在某
 metaTitle: "KOL投放有声量没销量，问题出在哪"
 metaDescription: "中国KOL投放为何叫好不叫座：六大断点，一个下午复盘一场已结案投放的方法，以及下一轮投放的搭建思路。"
 publishDate: 2026-10-15
+updatedDate: 2026-10-21
 author: "TheRedScroll"
 platforms: ["rednote", "douyin"]
 category: "策略"
@@ -225,6 +226,8 @@ KOL投放没有回报，必有原因，也一定查得出来。我们在上海�
 > 来源：小红书蒲公英帮助中心，2026年4月。https://pgy.xiaohongshu.com/help/home
 
 换作我们，会淘汰排名垫底的三分之一，把下一份简报交给前三分之一。
+
+如果复盘结果指向更换代理商，可参阅[更换代理商时如何保住账号](/zh/guandian/switching-china-agency-checklist/)。交接前也要收齐达人订单与内容使用授权。
 
 ## 下一轮投放如何搭建，才能算得清账
 
