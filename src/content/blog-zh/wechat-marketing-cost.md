@@ -4,7 +4,7 @@ description: "微信营销花多少，主动权大多在品牌自己手里。腾
 metaTitle: "微信营销费用逐项拆解"
 metaDescription: "公众号认证、内容制作、朋友圈与视频号广告、小程序开发、企业微信许可、代理服务费：微信营销究竟花多少钱，逐项拆解，附三组预算测算。"
 publishDate: 2026-10-05
-updatedDate: 2026-10-06
+updatedDate: 2026-10-22
 author: "TheRedScroll"
 platforms: ["wechat"]
 category: "策略"
@@ -290,6 +290,8 @@ featuredImage: "/images/blog/wechat-marketing-cost.webp"
 - **推送有上限。**服务号每月只能向粉丝群发四次。多发的文章仍会出现在主页上，但粉丝不会收到通知。
 
 [我们关于中国营销隐性成本的文章](/zh/guandian/china-marketing-hidden-costs/)梳理了微信、小红书、抖音和微博上12笔类似的开支。
+
+比较报价时，可用[微信代理商选择指南](/zh/guandian/best-wechat-marketing-agencies/)核查小程序开发、企微许可及账号授权，明确各项费用对应的工作。
 
 ## 常见问题
 

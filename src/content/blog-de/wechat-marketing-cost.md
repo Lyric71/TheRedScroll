@@ -4,7 +4,7 @@ description: "Wie viel WeChat-Marketing kostet, entscheiden Marken weitgehend se
 metaTitle: "WeChat-Marketing: was es kostet, Posten für Posten"
 metaDescription: "Verifizierung des Official Account, Inhalte, Werbung in Moments und Channels, Mini Program, WeCom-Lizenzen, Agentur: was WeChat-Marketing kostet."
 publishDate: 2026-10-05
-updatedDate: 2026-10-06
+updatedDate: 2026-10-22
 author: "TheRedScroll"
 platforms: ["wechat"]
 category: "Strategie"
@@ -290,6 +290,8 @@ Keiner dieser Posten ist groß. Jeder wird leicht übersehen, bis er zu Buche sc
 - **Pushes sind begrenzt.** Ein Service-Account benachrichtigt seine Follower viermal im Monat. Weitere Artikel erscheinen zwar im Profil, eine Benachrichtigung erhält aber niemand.
 
 [Unsere Analyse der versteckten Kosten im China-Marketing](/de/analysen/china-marketing-hidden-costs/) führt zwölf solcher Posten auf WeChat, Xiaohongshu, Douyin und Weibo auf.
+
+Unser [Leitfaden zur Auswahl einer WeChat-Agentur](/de/analysen/best-wechat-marketing-agencies/) zeigt, welche Fragen zu Entwicklung, WeCom-Lizenzen und Kontozugriff beim Angebotsvergleich wichtig sind.
 
 ## FAQ
 

@@ -4,7 +4,7 @@ description: "Choisissez d’abord l’agence en fonction du travail que votre m
 metaTitle: "Agences social media en Chine : bien les comparer"
 metaDescription: "Comparer les agences social media en Chine selon leur périmètre, leurs prix et leurs preuves, puis tester leur proposition avant de signer."
 publishDate: 2026-10-16
-updatedDate: 2026-10-20
+updatedDate: 2026-10-22
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "Stratégie"
@@ -168,6 +168,8 @@ Partez du problème à résoudre et retenez les types d’agences capables de mo
 ### Que doit contenir la proposition d’une agence en Chine ?
 
 Une proposition doit désigner les responsables du travail et définir les éléments de preuve qui vous seront remis. Exigez les livrables, les étapes de validation, l’accès aux comptes, la définition des indicateurs et le montant total de l’engagement. Séparez les coûts externes des honoraires de l’agence. Prévoyez une procédure écrite pour les modifications et un plan de réversibilité clair pour la fin de la relation.
+
+Pour une mission sur WeChat, notre [comparatif des agences WeChat](/fr/decryptages/best-wechat-marketing-agencies/) détaille les compétences en Mini Programs, WeCom et droits d’accès.
 
 ## Consulter la grille tarifaire complète
 

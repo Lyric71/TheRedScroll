@@ -4,6 +4,7 @@ description: "Ob eine Xiaohongshu-Agentur taugt, lässt sich an vier Punkten sel
 metaTitle: "Die besten Xiaohongshu-Agenturen 2026 im Vergleich"
 metaDescription: "Xiaohongshu-Agenturen im Vergleich: veröffentlichte Preise, genannte Kunden, Plattformliste, Standort des Teams. Dazu sechs Fragen vor der Unterschrift."
 publishDate: 2026-10-20
+updatedDate: 2026-10-22
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Strategie"
@@ -233,6 +234,8 @@ Fragen Sie nach dem Namen des Kunden, dem Zeitraum und der genauen Rolle der Age
 ### Braucht man eine Agentur mit Team in Festlandchina?
 
 Für das Schreiben ja: Notes müssen sich lesen, als stammten sie von chinesischen Nutzern. Eine Agentur mit Sitz im Ausland kommt in Frage, wenn sie ihre Autoren in China benennt. Bei den Formalitäten kommt es darauf an, wo Ihr Unternehmen eingetragen ist. Xiaohongshu verifiziert Unternehmen aus Festlandchina, Hongkong, Singapur, Malaysia und weiteren freigegebenen Regionen, in der Regel binnen drei Arbeitstagen. Werbekonten erhalten ausländische Unternehmen nur auf Einladung.
+
+Umfasst Ihr Auftrag auch WeChat, hilft unser [WeChat-Agenturvergleich](/de/analysen/best-wechat-marketing-agencies/) bei der Prüfung von Entwicklung, WeCom und Kontrolle über die Konten.
 
 ## Die vollständige Preisliste
 

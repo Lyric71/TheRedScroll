@@ -4,7 +4,7 @@ description: "Primero, elija la agencia en función del trabajo que necesita su 
 metaTitle: "Agencias de redes sociales en China: cómo compararlas"
 metaDescription: "Cómo comparar agencias de redes sociales en China por alcance, precio y pruebas, elegir el tipo de agencia adecuado y examinar su oferta antes de firmar."
 publishDate: 2026-10-16
-updatedDate: 2026-10-20
+updatedDate: 2026-10-22
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "Estrategia"
@@ -168,6 +168,8 @@ Parta del problema que hay que resolver y elija los tipos de agencia que puedan 
 ### ¿Qué debe incluir la propuesta de una agencia en China?
 
 Una propuesta debe identificar a los responsables del trabajo y definir las pruebas que usted recibirá. Exija los entregables, los pasos de aprobación, el acceso a las cuentas, la definición de los indicadores y el compromiso de pago completo. Separe los costes externos de los honorarios de la agencia. Incluya un procedimiento escrito para los cambios y un plan de traspaso claro para el final de la relación.
+
+Para los encargos de WeChat, nuestra [comparativa de agencias de WeChat](/es/analisis/best-wechat-marketing-agencies/) explica cómo comprobar Mini Programs, WeCom y los accesos a las cuentas.
 
 ## Consulte la tarifa completa
 

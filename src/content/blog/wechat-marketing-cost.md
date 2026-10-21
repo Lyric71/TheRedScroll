@@ -4,7 +4,7 @@ description: "WeChat marketing cost is mostly yours to set. Tencent's own fees a
 metaTitle: "WeChat Marketing Cost: The Full Breakdown"
 metaDescription: "What WeChat marketing costs: Official Account verification, content, Moments and Channels ads, Mini Program builds, WeCom licensing, and agency fees."
 publishDate: 2026-10-05
-updatedDate: 2026-10-06
+updatedDate: 2026-10-22
 author: "TheRedScroll"
 platforms: ["wechat"]
 category: "Strategy"
@@ -420,6 +420,8 @@ None of these is large. Each is easy to miss until it bites.
 
 [Our guide to China marketing hidden costs](/insights/china-marketing-hidden-costs/) lists twelve
 lines like these across WeChat, Xiaohongshu, Douyin and Weibo.
+
+When comparing quotes, our [guide to choosing a WeChat agency](/insights/best-wechat-marketing-agencies/) explains how to check Mini Program development, WeCom licenses, and account access.
 
 ## FAQ
 

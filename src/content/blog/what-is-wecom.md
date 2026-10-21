@@ -4,7 +4,7 @@ description: "WeCom is Tencent's enterprise communication platform inside the We
 metaTitle: "What is WeCom? A guide for brands in China"
 metaDescription: "WeCom is Tencent's business tool inside WeChat. Learn what it does, how private domain traffic works, and why brands in China need it."
 publishDate: 2026-04-06
-updatedDate: 2026-10-11
+updatedDate: 2026-10-22
 author: "TheRedScroll"
 platforms: ["wechat"]
 category: "Platforms"
@@ -99,6 +99,8 @@ A mainland company gets the full feature set and pays to verify.
 International brands typically work with a local team or agency to handle registration, configure CRM integrations, and train staff on workflows. Our [WeChat Official Account setup guide](/insights/wechat-official-account-setup/) covers both routes.
 
 The fees are small. The real investment is building the workflows that turn contacts into revenue, and training your team to actually run them.
+
+Before hiring a provider, use our [WeChat agency comparison](/insights/best-wechat-marketing-agencies/) to check its WeCom skills, license costs, and approach to customer data.
 
 ## The bottom line
 

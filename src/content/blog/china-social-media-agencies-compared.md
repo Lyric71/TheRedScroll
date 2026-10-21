@@ -4,7 +4,7 @@ description: "Choose an agency for the work your brand needs, then compare the f
 metaTitle: "Best China Social Media Agencies: Compare the Fit"
 metaDescription: "Compare the best China social media agencies by scope, pricing, and proof. Find the right agency type and test its proposal before signing."
 publishDate: 2026-10-16
-updatedDate: 2026-10-20
+updatedDate: 2026-10-22
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "Strategy"
@@ -327,6 +327,8 @@ define the evidence you’ll receive. Ask for deliverables, approval steps, acco
 access, reporting definitions, and the full payment commitment. Separate
 outside costs from the agency fee. Include a written process for changes
 and a clear handover plan for when the relationship ends.
+
+For WeChat work, our [comparison of WeChat agency types](/insights/best-wechat-marketing-agencies/) covers Mini Program skills, WeCom, and account access.
 
 ## See the full rate card
 

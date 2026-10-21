@@ -4,6 +4,7 @@ description: "Judge a Xiaohongshu agency on four things you can check yourself. 
 metaTitle: "Best Xiaohongshu Marketing Agencies 2026"
 metaDescription: "Xiaohongshu agencies compared on published pricing, named case studies, certification and team location, plus six questions to ask before you sign."
 publishDate: 2026-10-20
+updatedDate: 2026-10-22
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Strategy"
@@ -354,6 +355,8 @@ it depends on where your company is registered. Xiaohongshu verifies businesses
 from the mainland, Hong Kong, Singapore, Malaysia and other opened regions,
 generally within three working days. Ad accounts for overseas companies are by
 invitation.
+
+If your brief also includes WeChat, use our [WeChat agency comparison](/insights/best-wechat-marketing-agencies/) to check development skills, WeCom, and account control.
 
 ## See the full rate card
 

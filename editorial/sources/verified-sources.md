@@ -311,6 +311,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-10-12 for 07D: "境外主体可以注册1个账号", "境外地区账号暂只支持服务号类型" and "认证成功后，账号方可正常使用" confirmed at check 1 and check 2. Used in: b2b-industrial.
 - Re-verified 2026-10-17 for 09C: "境外主体可以注册1个账号", "境外地区账号暂只支持服务号类型" and "认证成功后，账号方可正常使用" confirmed at check 1, check 2 and after the quality pass. Used in: china-market-entry-timeline.
 - Re-verified 2026-10-21 for 10C: "境外主体可以注册1个账号", "境外地区账号暂只支持服务号类型" and "认证成功后，账号方可正常使用" confirmed at check 1 (tag c1), check 2 (tag c2) and after the quality pass (tag c2b). Used in: switching-china-agency-checklist.
+- Re-verified 2026-10-22 for 11A: "境外主体可以注册1个账号" and "境外地区账号暂只支持服务号类型" confirmed at check 1 (tag c1), check 2 (tag c2) and after the quality pass (tag c2b). Used in: best-wechat-marketing-agencies.
 
 ### WeChat Official Account verification review time, mainland entity
 - Value: review in 1 to 3 working days; verification must be completed within 30 calendar days of registration; payment-based registration verification succeeds within 1 working day
@@ -665,6 +666,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-10-11 for 07C: both strings confirmed at check 1 and check 2. Used in: choose-china-social-platforms.
 - Re-verified 2026-10-12 for 07D: "超过1400万真实的企业与组织" and "服务的微信用户数超过7.5亿" confirmed at check 1 and check 2. Used in: b2b-industrial.
 - Re-verified 2026-10-18 for 09D (check 1 and check 2 passed); cut from the automotive draft in the quality pass as not car-specific. Not used in automotive.
+- Re-verified 2026-10-22 for 11A: "超过1400万真实的企业与组织" and "服务的微信用户数超过7.5亿" confirmed at check 1 (tag c1), check 2 (tag c2) and after the quality pass (tag c2b). Used in: best-wechat-marketing-agencies.
 
 ### Xiaohongshu: 89% of users search it first before buying home appliances and home furnishing, 2024
 - Value: 89% of users search Xiaohongshu first when buying home appliances and home furnishing products; home content searches up 4.5 times in three years; seeding cut the decision cycle from an industry average of 45 days to under 20 (platform claim)
@@ -800,6 +802,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-08, re-fetched at iteration 8 and again after the quality pass, unchanged; "2026年4月1日起，新创建的任务收取10%的平台服务费", "2026年4月1日起，新创建的任务收取20%的平台服务费", "如达人结算金额为500元，客户需支付525元", "创作者设置的价格为订单税前到手价", "以流量主上月最后一次修改的报价，作为本月的报价", "内容助推有效期为1年，无需达人同意授权", "互选推广有效期为1年，需获得达人同意授权方可开启，授权无期限", "信守排他：若约定排他性合作，须在约定期限内仅发布该广告主内容"
 - Used in: china-kol-pricing
 - Notes: Pages render with JavaScript; text read from https://huxuan.qq.com/cgi-bin/advertiser/get_content_posts?post_ids=<id>, which carries updated_at. No pinyin in copy: call it WeChat's creator marketplace (互选). No exclusivity price is published.
+- Re-verified 2026-10-22 for 11A: (post 13088, JSON endpoint) "2026年4月1日起，新创建的任务收取10%的平台服务费", "2026年4月1日起，新创建的任务收取20%的平台服务费" and "如达人结算金额为500元，客户需支付525元" confirmed at check 1 (tag c1), check 2 (tag c2) and after the quality pass (tag c2b). Used in: best-wechat-marketing-agencies.
 
 ### Douyin users: QuestMobile monthly actives, June 2026, and Ocean Engine's daily-active line
 - Value: Douyin app MAU 102,928.07 ten-thousands (about 1.03 billion) in June 2026, second to WeChat (115,372.11); Ocean Engine's January 2026 pitch says "抖音超6亿日活用户" (more than 600 million daily active users)
@@ -1069,6 +1072,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Notes: The help center's Chinese page for departed-employee reassignment (help2/pc/17941) is the education (学员) variant, so the developer page is cited for departed employees. Supports the CRM service page line that WeCom contacts stay with the company when a rep leaves.
 - Re-verified 2026-10-18 for 09D: "企业可以将在职成员的客户和客户群分配给其他成员继续提供服务" and "24小时后自动成为联系人" confirmed at check 1, check 2 and after the quality pass. Used in: automotive (active-employee reassignment only).
 - Re-verified 2026-10-21 for 10C: "企业可以将在职成员的客户和客户群分配给其他成员继续提供服务" and "24小时后自动成为联系人" (active employees; the departed-employee page was re-fetched too, "重新分配给其他企业成员") confirmed at check 1 (tag c1), check 2 (tag c2) and after the quality pass (tag c2b). Used in: switching-china-agency-checklist.
+- Re-verified 2026-10-22 for 11A: "企业可以将在职成员的客户和客户群分配给其他成员继续提供服务" and "24小时后自动成为联系人" confirmed at check 1 (tag c1), check 2 (tag c2) and after the quality pass (tag c2b). Used in: best-wechat-marketing-agencies.
 
 ### Zhihu content and creators, Q2 2026
 - Value: about 993 million pieces of content in total; 81.5 million content creators in total; AI-related professional content up about 37% year on year; 13.11 million average monthly subscribing members; marketing services revenue 199 million yuan, 28.8% of revenue
@@ -1272,6 +1276,42 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 ### NOT LOGGE2026-10-21, searched and rejected 2026-10-21 (switching China agencies)
 - Agency-to-agency ad account moves (巨量引擎 账户平移, 腾讯广告 转户 / 更换服务商): described only by agency and reseller pages (for example ggyzd.com); no Tencent or Ocean Engine page states a general rule. Not cited; 10C says neither platform publishes one.
 - Xiaohongshu user agreement account clause ("账号仅限您本人使用"): agree.xiaohongshu.com and xiaohongshu.com/terms render only through JavaScript; readable copies are third-party mirrors (elawcn.com, lawinsider.com). Not cited. The 2021 professional account agreement PDF (fe-video-qc.xhscdn.com) was read and has no transfer clause. Recheck note 2026-10-21: if a fetchable platform copy appears, log it for the next account-ownership piece.
+
+### WeChat third-party platform authorization: up to 15 providers, exclusive permission sets, only the brand can end it
+- Value: a brand authorizes its Official Account, service account, Mini Program, WeChat Store, Channels assistant and other accounts to a service provider's third-party platform; one account can authorize up to 15 providers at once; a mutually exclusive permission set goes to one provider only; the provider cannot end the authorization on its own, only the brand can (Mini Program admin: Settings, Third-party settings, Remove authorization; Official Account admin: Authorization management; or the Official Account Platform security assistant (公众平台安全助手) inside WeChat, which lists the authorized third parties)
+- As of: how_to_service last edited 2026-06-25; permission-set page last edited 2026-06-30; authorization operations page undated, confirmed October 2026
+- Source: WeChat Open Docs (微信开放文档), 第三方平台 如何完成商家授权; 权限集说明; 授权相关操作
+- URL: https://developers.weixin.qq.com/doc/oplatform/Third-party_Platforms/2.0/getting_started/how_to_service.html ; https://developers.weixin.qq.com/doc/oplatform/Third-party_Platforms/2.0/product/third_party_authority_instructions.html ; https://developers.weixin.qq.com/doc/oplatform/Third-party_Platforms/2.0/operation/authorization/authorization_management.html
+- Verified 1: 2026-10-22, fetched with curl (logs/scratch/11A/check.py, tag c1); "一个账号最多同时授权给 15 个服务商", "服务商无法单方面解除授权，需商家才可以解除授权", "微信小店、带货助手、视频号助手等账号授权给服务商的第三方平台账号", "最后一次编辑于 2026-06-25"; "权限集互斥指的是该权限集只可同时授权给一个第三方平台", "最后一次编辑于 2026-06-30"; "服务商无法单方面解除授权，需由商家操作解除", "设置 - 第三方设置 - 解除授权", "授权管理 - 查看平台详情 - 取消授权", "公众平台安全助手", "授权第三方列表" confirmed
+- Verified 2: 2026-10-22, re-fetched at iteration 8 (tag c2) and after the quality pass (tag c2b), unchanged
+- Used in: best-wechat-marketing-agencies
+- Notes: The WeChat docs CDN serves two variants of these pages, and one leaves out the "最后一次编辑于" line. check.py retries until the date line is present. WeChat publishes no fetchable dated list of approved agencies (searched 2026-10-22). These rules are the platform's own way to see and end an agency's access.
+
+### WeChat Mini Programs built by providers: templates pushed in bulk; the merchant loses version control while development is authorized
+- Value: providers build from Mini Program templates; one template can be submitted to "千千万万" merchant Mini Programs and updated in bulk; up to 200 code templates; once a merchant authorizes development to a provider, the merchant can no longer manage versions or domain settings in the Official Account Platform; authorized Mini Programs use only the provider's registered server and business domains
+- As of: last edited 2026-06-30
+- Source: WeChat Open Docs (微信开放文档), 如何代商家开发小程序
+- URL: https://developers.weixin.qq.com/doc/oplatform/Third-party_Platforms/2.0/product/how_to_dev.html
+- Verified 1: 2026-10-22 (tag c1); "一个小程序模板可以批量提交给千千万万的商家小程序", "商家登录公众平台也将无法进行版本管理、域名配置等操作", "最多可以有 200 个代码模板", "只能使用第三方平台在微信开放平台登记的服务器域名和业务域名", "最后一次编辑于 2026-06-30" confirmed
+- Verified 2: 2026-10-22 (tags c2, c2b), unchanged
+- Used in: best-wechat-marketing-agencies
+- Notes: Same two-variant CDN behavior as above. The page does not say what happens to deployed code after the authorization ends, so never claim it.
+
+### WeCom service providers: standard third-party apps versus custom apps built for a company
+- Value: WeCom providers serve companies through standard third-party apps (标准的、统一的应用服务) or custom-built apps developed on the company's behalf (自建应用代开发, 灵活的、定制的应用服务); a delisted app stays usable for companies already authorized
+- As of: last updated 2024-06-21 (older than 12 months; no newer version found, settled fallback 9, cite with the date)
+- Source: WeCom developer center (企业微信开发者中心), 企业微信应用接入指引
+- URL: https://developer.work.weixin.qq.com/document/path/90568
+- Verified 1: 2026-10-22 (tag c1); "服务商可通过第三方标准应用模式，向企业提供标准的、统一的应用服务", "通过自建应用代开发模式，为企业提供灵活的、定制的应用服务", "最后更新：2024/06/21" confirmed
+- Verified 2: 2026-10-22 (tags c2, c2b), unchanged
+- Used in: best-wechat-marketing-agencies
+
+### NOT LOGGED, searched and rejected 2026-10-22 (11A, best-wechat-marketing-agencies)
+- "腾讯广告核心服务商" and "企业微信官方认可服务商" lists for 2026 (Sohu, cnblogs, CSDN, vendor "geo" pages): agency-written rankings, not the platform. Not cited. A claim that core providers need "three years of agency experience and 5 million yuan a year" traces to a single Sohu page.
+- A dated Tencent or WeChat list of approved agencies to match rivals against: none fetchable.
+- A market monthly retainer range for WeChat agencies: no platform, regulator or dated trade source publishes one.
+- WeChat and Mini Program monthly active users: available in this ledger but left out of 11A on purpose. /wechat-agency/ and /platforms/wechat/ carry an older Mini Program user figure, and the agency comparison does not need either number.
+- Quick registration of enterprise Mini Programs through the legal representative's face scan (Fast_Registration_Interface_document.html): mainland legal persons only, page undated. Not cited.
 
 ## Regulatory and legal
 
@@ -1952,6 +1992,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: china-agency-pricing-models, china-social-media-package-includes
 - Notes: The source for "who owns the ad account" in any agency-selection or contract article.
 - Re-verified 2026-10-21 for 10C: "子客可以自行管理其腾讯平台账户，也可以依法委托第三方" confirmed at check 1 (tag c1), check 2 (tag c2) and after the quality pass (tag c2b). Used in: switching-china-agency-checklist.
+- Re-verified 2026-10-22 for 11A: "子客可以自行管理其腾讯平台账户，也可以依法委托第三方" and "服务商/代理商" confirmed at check 1 (tag c1), check 2 (tag c2) and after the quality pass (tag c2b). Used in: best-wechat-marketing-agencies.
 
 ### China Advertising Law: written contract required between advertiser, operator and publisher
 - Value: Article 30 requires advertisers, advertising operators and advertising publishers to conclude written contracts for advertising activity. Article 34 requires operators and publishers to build and keep acceptance, review and archive systems, to verify supporting documents, and to refuse design, production or placement where content does not match those documents
@@ -2140,6 +2181,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 
 - Re-verified 2026-10-01 for 05B: "微信公众账号的所有权归腾讯公司所有", "账号资质审核成功之后使用权属于通过资质审核的用户" and "账号使用权禁止赠与、借用、租用、转让或售卖" confirmed at check 1 and check 2. Used in: wechat-official-account-setup.
 - Re-verified 2026-10-21 for 10C: "微信公众账号的所有权归腾讯公司所有", "账号资质审核成功之后使用权属于通过资质审核的用户", "账号使用权禁止赠与、借用、租用、转让或售卖" and "腾讯有权在未经通知的情况下终止你使用该账号" confirmed at check 1 (tag c1), check 2 (tag c2) and after the quality pass (tag c2b). Used in: switching-china-agency-checklist.
+- Re-verified 2026-10-22 for 11A: "微信公众账号的所有权归腾讯公司所有", "账号资质审核成功之后使用权属于通过资质审核的用户" and "账号使用权禁止赠与、借用、租用、转让或售卖" confirmed at check 1 (tag c1), check 2 (tag c2) and after the quality pass (tag c2b). Used in: best-wechat-marketing-agencies.
 
 ### Cross-border e-commerce retail import: transaction limits and the resale ban
 - Value: single transaction limit raised from 2,000 yuan to 5,000 yuan and the annual limit per person from 20,000 yuan to 26,000 yuan; where a single item exceeds the 5,000 yuan transaction limit but falls under the annual limit and is the only item on the order, it may still be imported through the cross-border retail channel with tariff, import VAT and consumption tax charged in full at the goods rate, counting toward the annual total; goods purchased are final goods for the consumer's personal use and may not be resold into the domestic market
@@ -2332,6 +2374,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-10-05 for 05C: "仅开放其他城市", "核心与重点城市不支持" and "向所有城市开放" confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
 - Re-verified 2026-10-05 by the 05A publish run: "仅开放其他城市" and "核心与重点城市不支持" confirmed. Used in: wechat-advertising-formats-costs (all five locales; its CPM table gave bidding ranges for core and key cities, now marked closed to bidding).
 - Re-verified 2026-10-08 for 06C: "仅开放其他城市（核心与重点城市不支持）" confirmed at check 1 and check 2. Used in: wechat-open-rate-benchmark (bidding floor stated for cities outside the core and key tiers).
+- Re-verified 2026-10-22 for 11A: "每日预算1000元起", "单次投放总预算5万元起" and "仅开放其他城市（核心与重点城市不支持）" confirmed at check 1 (tag c1), check 2 (tag c2) and after the quality pass (tag c2b). Used in: best-wechat-marketing-agencies.
 
 ### WeChat Mini Program verification, overseas entity: fee and review time
 - Value: 99 US dollars per verification application, charged whether or not it succeeds; review within 7 to 15 working days after complete documents; payment by WeChat Pay or bank card (Visa, Master)
@@ -2343,6 +2386,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: wechat-marketing-cost
 - Notes: The search-summary claim that overseas Mini Programs need no annual review traces to agent pages only. Not logged. (Superseded 2026-10-06: Tencent's overseas Mini Program team says so itself; see "Overseas Mini Programs: no filing, no annual review".)
 - Re-verified 2026-10-06 for 06B: "99美元/次", "一次性费用", "无论认证成功或失败" and "7-15个工作日内完成审核" confirmed at check 1 and check 2. The page states no validity term or annual review. Tencent's overseas Mini Program team says overseas Mini Programs currently need no annual review (entry "Overseas Mini Programs: no filing, no annual review" below), so never call the overseas verification yearly. Used in: wechat-mini-program-cost. wechat-marketing-cost called it "yearly" and was corrected in all five locales on 2026-10-06.
+- Re-verified 2026-10-22 for 11A: "99美元/次", "无论认证成功或失败" and "7-15个工作日内完成审核" confirmed at check 1 (tag c1), check 2 (tag c2) and after the quality pass (tag c2b). Used in: best-wechat-marketing-agencies.
 
 ### WeChat Mini Program quick registration through a verified account; separate annual review
 - Value: a verified Official Account or service account can quick-register and verify a Mini Program: mainland entities pay no 300-yuan fee, overseas entities no 99-dollar fee; the Mini Program's first verification period matches the account's; later annual reviews (年审) are applied for separately in the Mini Program back end
@@ -2354,6 +2398,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: wechat-marketing-cost
 - Notes: The scheduled 2026-10-01 draft run (05B) found the Mini Program verification guide at developers.weixin.qq.com/miniprogram/product/renzheng.html (annual review within a year or status ends). It is the Mini Program guide, not the Official Account one; cite it for Mini Programs only. Not used in 05A.
 - Re-verified 2026-10-06 for 06B: "无需支付99美元认证费用", "无需支付300元认证费用" and "一个月可以复用资质注册5个小程序" confirmed at check 1 and check 2 (five Mini Programs a month for an overseas service account). The page's later-annual-review line conflicts with the overseas team's 2025 statement; cite this page for the fee waiver only, never for an overseas annual review. wechat-marketing-cost dropped that sentence from its blockquote in all five locales on 2026-10-06. Used in: wechat-mini-program-cost.
+- Re-verified 2026-10-22 for 11A: "无需支付99美元认证费用" and "无需支付300元认证费用" (cited for the fee waiver only) confirmed at check 1 (tag c1), check 2 (tag c2) and after the quality pass (tag c2b). Used in: best-wechat-marketing-agencies.
 
 ### WeChat Pay merchant fees: no application fee, 0.6% to 1% per transaction
 - Value: applying for WeChat Pay carries no application fee; merchants pay a service fee on each transaction, generally 0.6% to 1% depending on business category; the company application asks for a business license (营业执照) and a corporate bank account (对公银行账户)
@@ -2415,6 +2460,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-10-01 for 05B: "企业全称、企业简称", "《企业注册证》或者《商业许可证书》", "审核时间一般是1-3个工作日", "对外收款", "会话内容存档" and "第三方应用市场" confirmed at check 1 and check 2. The help-center JSON carries an update time of 2026-06-29, so 05B cites the page as June 2026. Used in: wechat-official-account-setup.
 - Re-used 2026-10-06 by the 05B publish run: "对外收款", "会话内容存档", "第三方应用市场" and "1-3个工作日" confirmed at check 1 and check 2. Now cited on what-is-wecom (all five locales), which wrongly said WeCom requires a verified Chinese entity.
 - Re-verified 2026-10-12 for 07D: "1-3个工作日", "对外收款", "会话内容存档" and "第三方应用市场" confirmed at check 1 and check 2; cited as June 2026. Used in: b2b-industrial.
+- Re-verified 2026-10-22 for 11A: "1-3个工作日", "对外收款", "会话内容存档" and "第三方应用市场" confirmed at check 1 (tag c1), check 2 (tag c2) and after the quality pass (tag c2b). Used in: best-wechat-marketing-agencies.
 
 ### WeCom external contact capacity: 2,000 free, annual tiers, 100 for unverified companies
 - Value: each company gets 2,000 external contacts free; beyond that it buys a capacity tier, valid one year; an unverified company is limited to 100 customers
@@ -2428,6 +2474,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Re-verified 2026-10-05 for 05C: "免费获得2000位外部联系人规模", "有效期一年" and "只能添加100个客户" confirmed at check 1 and check 2. Used in: wechat-vs-xiaohongshu.
 - Re-verified 2026-10-08 for 06D: same three strings confirmed at check 1 and check 2. Used in: b2b-china-social-teardown.
 - Re-verified 2026-10-12 for 07D: "免费获得2000位外部联系人规模" and "只能添加100个客户" confirmed at check 1 and check 2. Used in: b2b-industrial.
+- Re-verified 2026-10-22 for 11A: "免费获得2000位外部联系人规模", "有效期一年" and "只能添加100个客户" confirmed at check 1 (tag c1), check 2 (tag c2) and after the quality pass (tag c2b). Used in: best-wechat-marketing-agencies.
 
 ### WeCom external contact capacity prices at launch, May 2023
 - Value: from May 19, 2023; 5,000 contacts 500 yuan a year; 20,000 contacts 2,000 yuan a year
@@ -2450,6 +2497,8 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Notes: Older than 12 months; cited with the 2022 date. The 05B draft run found WeCom's own notice at open.work.weixin.qq.com/wwopen/common/readDocument/38829; prefer it on reuse once both checks are logged against it.
 
 - Re-verified 2026-10-01 for 05B against WeCom's own notice, https://open.work.weixin.qq.com/wwopen/common/readDocument/38829 (面向服务商进行收费模式调整的说明): "2022年5月16日", "5元/账号/年", "50元/账号/年" and "免费调用企业微信接口90天" confirmed at check 1 and check 2. 05B cites this Tencent URL instead of HiFlow. Used in: wechat-official-account-setup.
+- Re-verified 2026-10-22 for 11A: readDocument/38829 "2022年5月16日", "5元/账号/年", "50元/账号/年", "许可账号按企业维度累进阶梯计费" and "10元/账号/年" confirmed at check 1 (tag c1), check 2 (tag c2) and after the quality pass (tag c2b). Used in: best-wechat-marketing-agencies.
+
 ### WeChat Channels feed ads at launch, 2022: contract minimum and CPM by city tier
 - Value: Channels native feed ads launched July 18, 2022; contract buys then had a minimum budget of 10,000 yuan ("预算最低可设置1w"), CPM 100 yuan (core cities), 75 (key cities), 50 (other cities); bidding required whitelist access
 - As of: September 2022 (article dated 2022-09-15)
@@ -2982,6 +3031,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Verified 2: 2026-10-06, each re-fetched, unchanged (check2.txt; Kunshan, which is not cited, in check2c.txt)
 - Used in: wechat-mini-program-cost (all except Kunshan); wechat-marketing-cost (Zhejiang and Maritime Safety Administration, all five locales, from 2026-10-06)
 - Notes: Public contracts, not private quotes; always say so. The https versions of three notices returned a 1.6 KB block page to curl; the http URLs serve the notice. The 06B research read 21 build and feature awards in total (content 4, service 8, multi-function 5, feature work 4); the full list with exact strings is in logs/scratch/06B/B/notes.md. No public award prices a commerce or membership Mini Program (ccgp title search 2025-01-01 to 2026-10-06). Excluded: Zhejiang International Maritime College (815,000, bought as goods, scope unknown).
+- Re-verified 2026-10-22 for 11A: Zhejiang Economic and Trade Polytechnic "199800" (2025-11-20) and the Haishitong award "228.8000000（万元）", "2025年05月16日" (buyer 中华人民共和国广东海事局本级; project 交通运输部海事局海事通微信小程序建设项目); cited as public contracts, not private quotes, confirmed at check 1 (tag c1), check 2 (tag c2) and after the quality pass (tag c2b). Used in: best-wechat-marketing-agencies.
 
 ### Tencent CloudBase and WeDa plan prices
 - Value: CloudBase (云开发) plans personal 19.9 yuan a month (marked a limited-time offer), standard 199, enterprise 999, enterprise advanced on request; a free trial environment expires on day 15 after the Mini Program goes live; WeDa (微搭) low-code is sold inside the same plans (3, 10 and 50 publishable apps)
@@ -3013,6 +3063,7 @@ trust. Suggested starting set, all needed in weeks 1 to 5:
 - Used in: wechat-mini-program-cost; wechat-marketing-cost (all five locales, from 2026-10-06)
 - Notes: A Tencent staff post on Tencent's developer community, not the formal docs tree. "目前" means "for now": cite as "currently". Recheck note, 2026-10-06: a bare curl of the page URL from this machine was redirected to a community login gate (/community/error/emergency?forceLogin=true); the JSON endpoint served the full text. Recheck the page URL and the rule before any reuse. Supersedes the 2024-11-18 community post that gave quick-registered overseas Mini Programs a later annual review, and the note on the overseas verification entry that the claim traced only to agent pages.
 - Re-verified 2026-10-11 by the 06B publish run: the page URL still redirects curl to the community login gate; the JSON endpoint still serves "目前境外主体的小程序无需备案和年审" (check 1 and check 2). The rule stands for the published wechat-mini-program-cost.
+- Re-verified 2026-10-22 for 11A: (JSON endpoint) "目前境外主体的小程序无需备案和年审" and "依据其运营主体资质判定，与服务器位置无关" confirmed at check 1 (tag c1), check 2 (tag c2) and after the quality pass (tag c2b). Used in: best-wechat-marketing-agencies.
 
 ### Overseas Mini Programs: verify within 45 days of registering
 - Value: after registering, an overseas entity must complete WeChat verification within 45 days, and the Mini Program can go live only after it passes; overseas entities may register as companies, sole traders, governments, schools and other organizations; no filing, no annual review, verification once
@@ -3772,6 +3823,7 @@ data.
 - Used in: b2b-china-social-teardown
 - Notes: Cite as "TheRedScroll, Viessmann case study, October 2026, https://www.theredscroll.com/work/viessmann/". The page has no date; the citation month is the check month.
 - Re-verified 2026-10-12 for 07D: live /work/viessmann/ fetched at check 1, check 2 and after the quality pass; "One conversation from first question to long-term client", "Within roughly two years", "online revenue in China was growing month over month" and "What size system do I need?" confirmed. Used in: b2b-industrial.
+- Re-verified 2026-10-22 for 11A: "Our team handled that through WeCom, in Chinese, in real time" and "After the sale, that same thread became the service channel" (quoted as published) confirmed at check 1 (tag c1), check 2 (tag c2) and after the quality pass (tag c2b). Used in: best-wechat-marketing-agencies.
 
 ### iGuzzini case study, as published
 - Value: no figure. Published lines: architectural lighting "since 1959"; "Architects knew iGuzzini. Consumers didn't."; "Nobody scrolls RedNote looking for pendant lamps"; "Most people buy lighting through a contractor or a designer they trust"; "WeChat was home base" (project showcases, designer collaborations, launches); RedNote with "interior designers, architects, and renovation KOLs" plus design-focused KOCs; "Weibo gave us broader reach"; livestreams showing pieces in real rooms and answering questions live; "Over 24 months, iGuzzini went from a name known only in trade circles to a brand Chinese luxury consumers actually recognized"; "Tmall sales backed it up. Good numbers, steady growth."; people bought because they'd been "following on WeChat, or saved a post on RedNote weeks earlier"; the page calls it turning "a B2B brand into a luxury household name". Platforms on the page: WeChat, RedNote, Weibo, Tmall. Industry label: Luxury lighting / Design
@@ -3804,6 +3856,7 @@ otherwise the fallback applies, and a brief that cannot stand without it is
 set to blocked by its draft run.
 -->
 - Re-verified 2026-10-12 for 07D: live /work/iguzzini/ fetched at check 1, check 2 and after the quality pass; "Over 24 months, iGuzzini went from a name known only in trade circles" and "actually recognized" confirmed. Used in: b2b-industrial.
+- Re-verified 2026-10-22 for 11A: "WeChat was home base" and "Over 24 months, iGuzzini went from a name known only in trade circles to a brand Chinese luxury consumers actually recognized" (quoted as published) confirmed at check 1 (tag c1), check 2 (tag c2) and after the quality pass (tag c2b). Used in: best-wechat-marketing-agencies.
 
 ### TheRedScroll indicative creator-fee ranges, as published
 - Value: Xiaohongshu nano-KOCs under 5K 100 to 500 yuan a post or product exchange only; micro-KOCs 5K to 20K 500 to 3,000; mid-tier KOLs 20K to 100K 3,000 to 15,000; top-tier 100K+ 15,000 to 80,000+; video notes 20 to 30% more than photo notes. Douyin under 50K 1,000 to 5,000 a video; 50K to 500K 5,000 to 30,000; 500K+ 30,000 to 200,000+; live commerce hosts base fee plus 20 to 40% commission. WeChat Official Account KOLs 5,000 to 50,000+ an article, about 1 yuan a view; Channels KOLs 3,000 to 20,000 a video
@@ -4316,6 +4369,7 @@ set to blocked by its draft run.
 - Used in: china-social-media-agencies-compared.
 - Re-verified 2026-10-17 for 09B: homepage HTTP 200, "37" and "April 2026" confirmed at check 1, check 2 and after the quality pass. Used in: weibo-2026-worth-it (approved form, cited to the homepage).
 - Re-verified 2026-10-19 for 10A: homepage HTTP 200, "37" and "April 2026" confirmed at check 1 and check 2. Used in: best-xiaohongshu-marketing-agencies (approved form).
+- Re-verified 2026-10-22 for 11A: homepage HTTP 200, "37" and "April 2026" confirmed at check 1 (tag c1), check 2 (tag c2) and after the quality pass (tag c2b). Used in: best-wechat-marketing-agencies.
 
 ### 09A published scope and contract terms
 - URL: https://www.theredscroll.com/pricing/
@@ -4326,6 +4380,7 @@ set to blocked by its draft run.
 - Additional URL: https://www.theredscroll.com/services/market-entry/; fetched twice on 2026-10-16, HTTP 200 both times. Confirmed social-launch scope excludes distributor selection, flagship store opening, and website construction.
 - Used in: china-social-media-agencies-compared.
 - Re-verified 2026-10-19 for 10A: /pricing/ "6-month minimum contract" and "Paid directly to the platform, not through us" confirmed at check 1 and check 2; no price or tier name used. /rednote-agency/ "Pugongying" (creator campaigns run through Pugongying) confirmed. Used in: best-xiaohongshu-marketing-agencies.
+- Re-verified 2026-10-22 for 11A: /pricing/ "6-month minimum contract" and "Paid directly to the platform, not through us"; /wechat-agency/ "Official Account setup, content, advertising, Mini Programs, and CRM", "WeCom CRM and private domain traffic" and "Run from Shanghai and Hong Kong"; no price or tier name used; confirmed at check 1 (tag c1), check 2 (tag c2) and after the quality pass (tag c2b). Used in: best-wechat-marketing-agencies.
 
 ### TheRedScroll published entry timelines: about four weeks to a publishing WeChat account; "Live in 30 days"
 - Value: "Most clients go from signed contract to a live, publishing account in about four weeks" (/platforms/wechat/ FAQ); "Live in 30 days. Accounts verified, first content published, commerce infrastructure ready to take orders." (/services/market-entry/)
@@ -4363,6 +4418,16 @@ set to blocked by its draft run.
 - The undated live agent directory (73 agencies, licence labels): superseded by the dated 2026 list, not cited.
 - Pugongying celebrity reach package prices: off topic for this piece.
 
+### 11A selected-page agency check, October 22, 2026 (WeChat agencies)
+- Value: nine agencies selling WeChat work to foreign brands in English, one WeChat service page each (9 pages). Price: one page gave a Mini Program build price range ($5,000 to $50,000+) and described its monthly content fee in words, with no figure. None showed a monthly fee figure for ongoing WeChat work. One gave ad-budget figures (ad deposit, daily budget, test budget), which are ad spend, not fees. Seven showed no fee. Named clients: four named at least one client brand in page text. One showed results by industry with no names. One listed famous brands' WeChat programs as examples, not as clients. One showed logos as images only and a testimonial with no company. Mini Programs: six said they build or develop them; two mentioned them only to connect or plan; one did not mention them. WeCom: five offered WeCom setup or operation, and three of those also build Mini Programs. Overseas WeCom limits (conversation archiving, third-party app marketplace): mentioned on none. Official status: one page claimed official WeChat partner and agency status without naming a program. Team location: eight gave a mainland city (five Shanghai; one Shanghai and Guangzhou among six cities; one Shanghai and Shenzhen with a Hong Kong head office; one Nanjing). One said based in China, with no city. Combined: no page showed both a price figure and a named client
+- Sample: Twish https://twishchinamarketing.com/wechat-marketing-agency/; Gentlemen Marketing Agency https://marketingtochina.com/platforms/wechat/; Digital Crew https://www.digitalcrew.agency/chinese-marketing-agency/wechat-agency/; The WeChat Agency https://www.thewechatagency.com/platforms/wechat/mini-programs; Lotus Social Agency https://www.lotussocialagency.com/platforms/wechat-marketing-agency; BINGO Digi https://www.bingo-digi.com/wechat/; Red Ant Asia https://redantasia.com/wechat-marketing-services; Shanghai Jungle https://shanghaijungle.com/wechat-foreign-brands-crm-mini-programs; Nanjing Marketing Group https://nanjingmarketinggroup.com/solutions/wechat-marketing-service. Picked from English search results for the brief's queries to cover different agency types. Excludes TheRedScroll
+- Period: 2026-10-22 (undated commercial pages, observed on this date)
+- Cleared for publication: aggregate only, under SPEC fallback 11. Names and URLs stay in this ledger
+- Verified 1: 2026-10-22, all 9 pages HTTP 200 (logs/scratch/11A/fetch.py c1). Each observation string and each absence matched by rival_check.py c1 (twish: "We set up WeCom", Shanghai address, "Health Wellness"; gma: "Mini-Program development ranges from $5,000 to $50,000+", "can start from a few thousand USD per month", Shanghai address; dcrew: "We build and integrate WeChat Mini Programs", "Longchamp", city list; twa: "our team handles the full Mini Program lifecycle", "WeCom follow-up", "Team members in Shanghai, Hong Kong", "Trusted by 80+"; lotus: "Based in China for local coordination", "WeCom and relationship journeys"; bingo: "WeChat Official Partner", "official WeChat agency", "Build Mini Programs", "WeCom CRM & Customer Follow-up", Toyota, Minute Maid, Pingliang Road, "initial pre-deposit of roughly 7,000 RMB"; redant: "We build tailored sub-applications", "Charlotte Tilbury", "Our China HQ is in Shanghai"; sjungle: "Mini Program Development E-commerce store", "Enterprise WeChat CRM Contact management", "Founded in Shanghai", "Foreign brands winning on WeChat"; nmg: "Conestoga College", "Bar Codes Talk", Nanjing address; no "archiv" on any page)
+- Verified 2: 2026-10-22, all 9 pages re-fetched at createarticle iteration 8 (fetch.py c2, rival_check.py c2), every observation unchanged
+- Used in: best-wechat-marketing-agencies
+- Limits: page-level observations on one date. Not site-wide absence, not private quotes, not delivery quality, not a ranking. One rival page says an overseas company must open WeChat ads through a certified mainland agency. That is the rival's own claim, it is at odds with the Tencent sub-client clause (a client may run its own account or entrust a provider), and it is not repeated.
+
 ## Client figures
 
 Settled 2026-10-02 (see `CLAUDE.md`, named clients): a client figure or line
@@ -4374,8 +4439,8 @@ estimated. No marker, no separate sign-off chase.
 | Client | Case study page | Brief | Used |
 |---|---|---|---|
 | Camper | /work/camper/ (43K to 187K followers, 31% sales lift, 18 months) | 02D, 03D, 10A | Published figures only, quoted from the page. The monthly series and the two campaign post-mortems are not public and are not used. |
-| Viessmann | /work/viessmann/ (no figure; "roughly two years", Douyin to Tmall, RedNote search proof, WeCom pre-sale and service) | 06D, 07D | No figure. Published lines quoted from the page (see the first-party entry). The client's own channel facts (dealers, the Carrier deal) are cited to Viessmann China and Carrier, never as our work. |
-| iGuzzini | /work/iguzzini/ (no figure; "Over 24 months", WeChat home base, RedNote designers, Weibo, livestreams, Tmall) | 06D, 07D, 09B | No figure. Published lines quoted from the page (see the first-party entry). 09B quotes "Weibo gave us broader reach..." as published, checked 2026-10-17 at check 1, check 2 and after the quality pass. The 2024 Haitai developer deal is iGuzzini's own, cited to China News Service. |
+| Viessmann | /work/viessmann/ (no figure; "roughly two years", Douyin to Tmall, RedNote search proof, WeCom pre-sale and service) | 06D, 07D, 11A | No figure. Published lines quoted from the page (see the first-party entry). The client's own channel facts (dealers, the Carrier deal) are cited to Viessmann China and Carrier, never as our work. |
+| iGuzzini | /work/iguzzini/ (no figure; "Over 24 months", WeChat home base, RedNote designers, Weibo, livestreams, Tmall) | 06D, 07D, 09B, 11A | No figure. Published lines quoted from the page (see the first-party entry). 09B quotes "Weibo gave us broader reach..." as published, checked 2026-10-17 at check 1, check 2 and after the quality pass. The 2024 Haitai developer deal is iGuzzini's own, cited to China News Service. |
 | Marriott | /work/marriott/ (no figure; "millions in sales on Tmall", "Hundreds of thousands of new Bonvoy members") | 05D | No figure. Published lines quoted from the page (see the first-party entry). The 2017 Fliggy joint venture and the 2025 Meituan membership are Marriott's own deals, cited to 21st Century Business Herald and Xinhua, never as our work. |
 | Jaguar Land Rover | /work/jaguar-land-rover/ (no figure; "In China, the problem was age.", Douyin, RedNote and WeChat, content shot in China, UGC hashtag challenges) | 09D | No figure (the page publishes none). Three published lines quoted in automotive, checked 2026-10-18 at check 1, check 2 and after the quality pass. |
 | JAC Motors | /work/jac-motors/ (no result figure; client fact "over 10 million vehicles sold worldwide"; WeChat, RedNote, Weibo; J-Bot in six Olympic versions reposted by JAC's international teams) | 09D | No result figure. The 10 million is the client's own fact, quoted from the page. Five published lines quoted in automotive, checked 2026-10-18 at check 1, check 2 and after the quality pass. |

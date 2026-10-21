@@ -4,6 +4,7 @@ description: "Une agence Xiaohongshu se juge sur quatre points que chacun peut v
 metaTitle: "Meilleures agences Xiaohongshu 2026 : le comparatif"
 metaDescription: "Agences Xiaohongshu : prix publiés, références clients, présence sur la liste officielle, implantation de l’équipe. Et six questions avant de signer."
 publishDate: 2026-10-20
+updatedDate: 2026-10-22
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Stratégie"
@@ -233,6 +234,8 @@ Demandez le nom du client, les dates et le rôle exact de l’agence, puis solli
 ### Faut-il une agence dotée d’une équipe en Chine continentale ?
 
 Pour l’écriture, oui : les notes doivent se lire comme si un utilisateur chinois les avait rédigées. Une agence implantée à l’étranger peut convenir si elle nomme ses rédacteurs en Chine. Pour les démarches, tout dépend du pays d’immatriculation de votre société. Xiaohongshu certifie les entreprises de Chine continentale, de Hong Kong, de Singapour, de Malaisie et d’autres régions ouvertes, en général sous trois jours ouvrés. Pour une société étrangère, l’ouverture d’un compte publicitaire se fait sur invitation.
+
+Si votre projet comprend aussi WeChat, consultez notre [comparatif des agences WeChat](/fr/decryptages/best-wechat-marketing-agencies/) pour examiner leurs compétences techniques et le contrôle des comptes.
 
 ## Consulter la grille tarifaire complète
 

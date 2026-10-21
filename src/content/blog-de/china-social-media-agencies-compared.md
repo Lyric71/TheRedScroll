@@ -4,7 +4,7 @@ description: "Erst die Agentur nach der Aufgabe wählen, die Ihre Marke lösen m
 metaTitle: "Social-Media-Agenturen für China richtig vergleichen"
 metaDescription: "Social-Media-Agenturen für China nach Umfang, Preis und Nachweisen vergleichen, den passenden Agenturtyp wählen und das Angebot vor Vertragsschluss prüfen."
 publishDate: 2026-10-16
-updatedDate: 2026-10-20
+updatedDate: 2026-10-22
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "Strategie"
@@ -168,6 +168,8 @@ Gehen Sie von dem Problem aus, das gelöst werden soll, und wählen Sie Agenturt
 ### Was gehört in das Angebot einer China-Agentur?
 
 Ein Angebot sollte die Verantwortlichen benennen und festlegen, welche Nachweise Sie erhalten. Verlangen Sie Leistungen, Freigabeschritte, Kontozugriff, Kennzahldefinitionen und die gesamte Zahlungsverpflichtung. Externe Kosten sind vom Agenturhonorar zu trennen. Vereinbaren Sie ein schriftliches Änderungsverfahren und einen klaren Übergabeplan für das Ende der Zusammenarbeit.
+
+Für WeChat-Aufträge erläutert unser [Vergleich der WeChat-Agenturtypen](/de/analysen/best-wechat-marketing-agencies/), wie sich Mini-Program-Kenntnisse, WeCom und Kontozugriffe prüfen lassen.
 
 ## Die vollständige Preisliste
 

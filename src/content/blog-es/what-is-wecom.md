@@ -4,7 +4,7 @@ description: "WeCom es la herramienta de comunicación profesional de Tencent de
 metaTitle: "WeCom: guía para marcas en China"
 metaDescription: "WeCom es la herramienta profesional de Tencent integrada en WeChat. Funciones, tráfico privado y por qué toda marca en China lo necesita."
 publishDate: 2026-04-06
-updatedDate: 2026-10-11
+updatedDate: 2026-10-22
 author: "TheRedScroll"
 platforms: ["wechat"]
 category: "Plataformas"
@@ -97,6 +97,8 @@ Una sociedad de China continental accede a todas las funciones, pero paga la ver
 Lo habitual es que una marca extranjera se apoye en un equipo local o en una agencia para el registro, las integraciones con el CRM y la formación de los equipos. [Nuestra guía para abrir una cuenta oficial de WeChat](/es/analisis/wechat-official-account-setup/) detalla ambas vías.
 
 Las tasas son modestas. La inversión de verdad está en montar los procesos que convierten un contacto en facturación. Y en formar a quien los va a manejar cada día.
+
+Antes de contratar un proveedor, nuestra [comparativa de agencias de WeChat](/es/analisis/best-wechat-marketing-agencies/) permite revisar sus conocimientos de WeCom, las licencias y el tratamiento de los datos de clientes.
 
 ## Lo esencial
 

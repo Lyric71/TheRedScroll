@@ -4,6 +4,7 @@ description: "Una agencia de Xiaohongshu se juzga por cuatro aspectos que usted 
 metaTitle: "Las mejores agencias de Xiaohongshu en 2026"
 metaDescription: "Agencias de Xiaohongshu: precios publicados, clientes con nombre, presencia en la lista oficial y sede del equipo. Y seis preguntas antes de firmar."
 publishDate: 2026-10-20
+updatedDate: 2026-10-22
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Estrategia"
@@ -233,6 +234,8 @@ Pida el nombre del cliente, las fechas y el papel exacto de la agencia, y solici
 ### ¿Hace falta una agencia con equipo en China continental?
 
 Para la redacción, sí: las notas deben leerse como si las hubiera escrito un usuario chino. Una agencia con sede en el extranjero puede servir si identifica a sus redactores en China. Para los trámites, todo depende de dónde esté registrada su empresa. Xiaohongshu verifica a empresas de China continental, Hong Kong, Singapur, Malasia y otras regiones habilitadas, normalmente en tres días hábiles. Las cuentas publicitarias de empresas extranjeras se abren solo por invitación.
+
+Si el encargo también incluye WeChat, consulte nuestra [comparativa de agencias de WeChat](/es/analisis/best-wechat-marketing-agencies/) para revisar desarrollo, WeCom y control de las cuentas.
 
 ## Consulte la tarifa completa
 

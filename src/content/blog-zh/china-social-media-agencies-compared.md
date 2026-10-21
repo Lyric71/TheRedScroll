@@ -4,7 +4,7 @@ description: "先按品牌要做的事选代理商，再算清这件事的全部
 metaTitle: "中国社交媒体代理商怎么选：按需求比适配"
 metaDescription: "从服务范围、收费方式和交付证据三方面比较中国社交媒体代理商：找准适合的代理商类型，签约前把对方方案逐项核实。"
 publishDate: 2026-10-16
-updatedDate: 2026-10-20
+updatedDate: 2026-10-22
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin"]
 category: "策略"
@@ -168,6 +168,8 @@ TheRedScroll在[价格页](/zh/jiage/)公开了完整价目表，阅读时请同
 ### 中国代理商的提案应包含哪些内容？
 
 提案应写明由谁负责，也应界定你将拿到哪些交付证据。要求列出交付物、审批步骤、账号权限、报告口径和全部付款承诺。外部成本要与代理费分开列示。还应写明变更的书面流程，以及合作结束时清晰的交接方案。
+
+如果项目涉及微信，可参照[微信代理商比较指南](/zh/guandian/best-wechat-marketing-agencies/)，核实小程序开发、企业微信服务及账号权限。
 
 ## 查看完整价目表
 
