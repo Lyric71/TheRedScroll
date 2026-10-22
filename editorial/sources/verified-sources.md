@@ -4456,3 +4456,83 @@ date retired and what replaced them. Published articles still cite these. -->
 ### 10C publication recheck, 2026-10-21
 
 All 22 entries in the 10C source-check script fetched again during publication: HTTP 200 and all claim strings passed. Captures: editorial/logs/scratch/10C/chk/publish/. Reconfirmed Tencent migration, admin identity and phone verification, OpenID scope, refund routes, Copyright Law Article 19, and the platform agreements. The published FAQ no longer treats a missing general ad-transfer rule as a prohibition or promises a refund; administrator changes include the full verification step. No new numeric claim added.
+
+## China generative engine optimization: 11B, October 23, 2026
+
+### QuestMobile native-app usage, June 2026
+- Claim: Doubao 382 million, Qwen 167 million, DeepSeek 129 million active users in June 2026. Native-app usage, not AI-search market shares or unique combined reach.
+- Source: QuestMobile研究院, 2026年AI应用市场发展半年报; published July 14, 2026
+- URL: https://www.questmobile.com.cn/research/report/2076954943839809537/
+- Verified 1: 2026-10-23, HTTP 200, content and date inspected; logs/scratch/11B/questmobile-c1a.txt.
+- Verified 2: 2026-10-23, fresh HTTP 200 at createarticle iteration 8, claim unchanged; logs/scratch/11B/questmobile-c2.txt.
+- Used in: china-generative-engine-optimization.
+
+### DeepSeek own search engine and filtering statement
+- Claim: Provider says both web and API search use its own engine and filter SEO cheating, GEO manipulation, and low-quality AI content. A provider statement, not independent evidence of filtering performance.
+- Source: DeepSeek 更新日志; October 17, 2026
+- URL: https://api-docs.deepseek.com/zh-cn/updates/
+- Verified 1: 2026-10-23, HTTP 200, content and date inspected; logs/scratch/11B/deepseek-update-c1a.txt.
+- Verified 2: 2026-10-23, fresh HTTP 200 at createarticle iteration 8, claim unchanged; logs/scratch/11B/deepseek-update-c2.txt.
+- Used in: china-generative-engine-optimization.
+
+### DeepSeek search and fetch separation
+- Claim: Search returns structured results; Fetch returns a page as Markdown. Guide corroborates the dated release, not cited with an invented publication date.
+- Source: DeepSeek 网页搜索与抓取; undated guide linked by the October 17, 2026 release
+- URL: https://api-docs.deepseek.com/zh-cn/guides/search/
+- Verified 1: 2026-10-23, HTTP 200, content and date inspected; logs/scratch/11B/deepseek-c1a.txt.
+- Verified 2: 2026-10-23, fresh HTTP 200 at createarticle iteration 8, claim unchanged; logs/scratch/11B/deepseek-c2.txt.
+- Used in: china-generative-engine-optimization.
+
+### Doubao developer search sources are product-specific
+- Claim: Doubao Search Custom and the online-content plugin are different tools. The plugin source douyin is Douyin Encyclopedia. No promise of all-video retrieval and no consumer-app sourcing inference.
+- Source: Volcano Engine 火山引擎, 联网搜索工具; updated October 14, 2026
+- URL: https://docs.volcengine.com/docs/ark/web-search?lang=zh
+- Verified 1: 2026-10-23, HTTP 200, content and date inspected; logs/scratch/11B/doubao-c1a.txt.
+- Verified 2: 2026-10-23, fresh HTTP 200 at createarticle iteration 8, claim unchanged; logs/scratch/11B/doubao-c2retry.txt.
+- Used in: china-generative-engine-optimization.
+
+### Qwen search activation and interface-specific citations
+- Claim: Enabling search differs from forcing search. Source and citation options vary by API interface. Does not prove consumer-app behavior or publisher ranking factors.
+- Source: Alibaba Cloud 阿里云, 联网搜索; last-modified October 18, 2026 in publisher HTML metadata
+- URL: https://help.aliyun.com/zh/model-studio/web-search/
+- Verified 1: 2026-10-23, HTTP 200, content and date inspected; logs/scratch/11B/qwen-c1a.txt.
+- Verified 2: 2026-10-23, fresh HTTP 200 at createarticle iteration 8, claim unchanged; logs/scratch/11B/qwen-c2.txt.
+- Used in: china-generative-engine-optimization.
+
+### Baidu search-based answers and domain filters
+- Claim: Historical developer guide separates search retrieval from model answer generation and documents source-domain filtering. Used only as an architecture example. Older than 12 months under SPEC fallback 9; no newer version of this exact guide found.
+- Source: Baidu 百度, 百度AI搜索应用搭建; May 26, 2025
+- URL: https://ai.baidu.com/ai-doc/AppBuilder/im8fqgsu6
+- Verified 1: 2026-10-23, HTTP 200, content and date inspected; logs/scratch/11B/baidu-c1a.txt.
+- Verified 2: 2026-10-23, fresh HTTP 200 at createarticle iteration 8, claim unchanged; logs/scratch/11B/baidu-c2.txt.
+- Used in: china-generative-engine-optimization.
+
+### TheRedScroll live robots policy, observed October 23, 2026
+- Claim: Wildcard group permits public paths except /api/; named bot groups are separate. Observed policy only, not proof of bot compliance, access, indexing, or citations.
+- Source: TheRedScroll first-party public-file inspection
+- URL: https://www.theredscroll.com/robots.txt
+- Verified 1: 2026-10-23, HTTP 200, content and date inspected; logs/scratch/11B/robots-c1a.txt.
+- Verified 2: 2026-10-23, fresh HTTP 200 at createarticle iteration 8, claim unchanged; logs/scratch/11B/robots-c2.txt.
+- Used in: china-generative-engine-optimization.
+
+### TheRedScroll public IndexNow key and local configuration
+- Claim: Public key matches public/ key file. Local .github/workflows/indexnow.yml and scripts/indexnow-deploy.mjs configure change-based URL submission after deployment. No workflow history, delivery success, or AI citation uplift asserted.
+- Source: TheRedScroll first-party inspection, October 23, 2026
+- URL: https://www.theredscroll.com/2025f93e911e587ed9023d01cec1ce56.txt
+- Verified 1: 2026-10-23, HTTP 200, content and date inspected; logs/scratch/11B/key-c1a.txt.
+- Verified 2: 2026-10-23, fresh HTTP 200 at createarticle iteration 8, claim unchanged; logs/scratch/11B/key-c2.txt.
+- Used in: china-generative-engine-optimization.
+
+### TheRedScroll live article structured data
+- Claim: The Bilibili article emits Organization, Person, BreadcrumbList, and BlogPosting. Proof of output only, not proof that any Chinese AI tool consumes it.
+- Source: TheRedScroll first-party live-HTML inspection, October 23, 2026
+- URL: https://www.theredscroll.com/insights/bilibili-marketing-foreign-brands/
+- Verified 1: 2026-10-23, HTTP 200, content and date inspected; logs/scratch/11B/site-blog-c1a.html.
+- Verified 2: 2026-10-23, fresh HTTP 200 at createarticle iteration 8, claim unchanged; logs/scratch/11B/site-blog-c2.html.
+- Used in: china-generative-engine-optimization.
+
+### Rejected claims and dated fetch notes
+- October 23, 2026: no evidence for five universal citation signals, blanket JSON-LD consumption by Chinese assistants, a China-wide advantage for directories/listicles, named crawler allowlists as citation guarantees, or technical setup as measured citation uplift. Claims cut or reframed as editorial advice; brief and site-profile cache corrected.
+- The Doubao English locale and one Chinese fetch returned a navigation shell. A fresh Chinese-language retry returned the full identical document and passed check 2. Future uses must inspect content, not merely HTTP 200.
+- DeepSeek December 10, 2024 API-search-unavailable statement is superseded by the October 17, 2026 release. Not used.
+- IndexNow FAQ was fetched twice as background but has no visible publication date; it is not cited. Article uses dated first-party configuration observations without inferring downstream delivery.

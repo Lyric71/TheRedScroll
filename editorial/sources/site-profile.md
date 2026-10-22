@@ -133,10 +133,13 @@ articles. Organization, Person, ContactPoint and PostalAddress site-wide.
 
 `robots.txt` explicitly allows GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot,
 anthropic-ai, PerplexityBot, Perplexity-User, Google-Extended,
-Applebot-Extended and CCBot. IndexNow is live.
+Applebot-Extended and CCBot. IndexNow is configured in the repository's deployment
+workflow; the public key file resolves. These observations do not establish
+successful submission history or an effect on AI citations (checked October 23, 2026).
 
-This is better AI-search hygiene than any of the ten competitors. Article 11B
-on GEO uses our own setup as its worked example.
+Article 11B uses this configuration as an inspectable worked example. No
+competitor comparison, universal schema-consumption claim, or citation uplift
+is established by these files alone (corrected October 23, 2026).
 
 ## Naming
 

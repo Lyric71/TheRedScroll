@@ -4,7 +4,7 @@ description: "Pick three platforms, not one. WeChat is the base for almost every
 metaTitle: "How to Pick Your First China Platforms"
 metaDescription: "A scoring framework for choosing China social platforms: four questions on discovery, price point, sales model, and buyer type, plus four shortlists."
 publishDate: 2026-10-12
-updatedDate: 2026-10-20
+updatedDate: 2026-10-23
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Strategy"
@@ -347,6 +347,8 @@ money that way.
 
 [Our platforms page](/platforms/) covers all 18 platforms we run. [The pricing page](/pricing/) also lists
 the add-on platforms you can bolt on later.
+
+AI answers need a separate check from social-platform selection. Our [guide to China generative engine optimization](/insights/china-generative-engine-optimization/) explains how to inspect sources and distinguish an accurate citation from a brand mention.
 
 ## Frequently asked questions
 

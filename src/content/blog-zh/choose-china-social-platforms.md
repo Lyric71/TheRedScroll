@@ -4,7 +4,7 @@ description: "首批宜选三个平台，而非一个。微信几乎是所有品
 metaTitle: "外国品牌如何选定首批中国社交平台"
 metaDescription: "一套中国社交平台选择框架：从发现路径、价格定位、销售模式和决策方式四个问题打分，并给出四种常见平台组合。"
 publishDate: 2026-10-12
-updatedDate: 2026-10-20
+updatedDate: 2026-10-23
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "策略"
@@ -251,6 +251,8 @@ featuredImage: "/images/blog/choose-china-social-platforms.webp"
 > 来源：秒针营销科学院，中新网报道，2026年1月。https://www.sh.chinanews.com.cn/chanjing/2026-01-14/144009.shtml
 
 [我们的平台页面](/zh/pingtai/)介绍了我们运营的全部18个平台，[价格页面](/zh/jiage/)也列出了日后可以追加的附加平台。
+
+选定社交平台后，AI答案仍需单独核查。[中国GEO指南](/zh/guandian/china-generative-engine-optimization/)说明如何检查来源，区分有据的准确引用与单纯的品牌提及。
 
 ## 常见问题
 

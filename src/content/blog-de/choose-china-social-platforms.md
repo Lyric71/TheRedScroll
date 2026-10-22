@@ -4,7 +4,7 @@ description: "Drei Plattformen statt einer. WeChat bildet für fast jede Marke d
 metaTitle: "Social Media in China: die ersten drei Plattformen wählen"
 metaDescription: "Ein Punkteraster für Chinas soziale Plattformen: vier Fragen zu Auffindbarkeit, Preisniveau, Vertriebsweg und Käufertyp, dazu vier typische Kombinationen."
 publishDate: 2026-10-12
-updatedDate: 2026-10-20
+updatedDate: 2026-10-23
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Strategie"
@@ -251,6 +251,8 @@ Für Marken, die bereits auf WeChat aktiv sind, liegt WeChat Channels (视频号
 > Quelle: Miaozhen Marketing Science Institute (秒针营销科学院), zitiert von China News Service (中新网), Januar 2026. https://www.sh.chinanews.com.cn/chanjing/2026-01-14/144009.shtml
 
 [Unsere Plattformseite](/de/plattformen/) stellt alle 18 Plattformen vor, auf denen wir arbeiten. [Die Preisseite](/de/preise/) führt zudem die Zusatzplattformen auf, die sich später ergänzen lassen.
+
+KI-Antworten sind unabhängig von der Auswahl sozialer Plattformen zu prüfen. Unser [Leitfaden zu GEO in China](/de/analysen/china-generative-engine-optimization/) erläutert, wie Quellen kontrolliert werden und sich ein belegtes Zitat von einer bloßen Markenerwähnung unterscheidet.
 
 ## Häufige Fragen
 

@@ -27,7 +27,7 @@ They override any conflicting rule inside the skill.
 
 | Field | Value |
 |---|---|
-| Working H1 | GEO in China: how brands get cited by DeepSeek, Doubao, Qwen and Baidu AI |
+| Working H1 | China generative engine optimization: how to earn useful citations |
 | Slug | `/insights/china-generative-engine-optimization/` |
 | Output file | `output/china-generative-engine-optimization.md` |
 | Primary query | `china generative engine optimization` |
@@ -37,7 +37,7 @@ They override any conflicting rule inside the skill.
 
 ## The angle
 
-Second pillar of the plan. A dozen agencies now compete here, but almost all of them write about ChatGPT with a China label. Ours is about the Chinese models specifically, and it can cite something none of them can: our own robots.txt, IndexNow setup and schema, published as a working example.
+Second pillar of the plan. Distinguish Chinese consumer apps, model families, and developer search services using primary Chinese documentation. Use our own robots.txt, IndexNow configuration, and emitted schema as an inspectable example, not as proof of citation performance or superiority over competitors. Research correction, October 23, 2026: no universal ranking formula or citation guarantee was established.
 
 ## Section outline
 
@@ -47,10 +47,10 @@ summary or conclusion section. End on the CTA.
 1. Why China's AI search layer is a separate problem
 2. The models that matter: DeepSeek, Doubao, Qwen, ERNIE and Baidu AI
 3. How each one sources its answers
-4. What gets a brand cited: the five signals
-5. Structured data that Chinese crawlers actually read
+4. Five editorial checks, explicitly not proven ranking signals
+5. Structured data: what the implementation proves and what provider documentation does not establish
 6. The Chinese-language content problem: translation is not enough
-7. Third-party citation: why directories and listicles matter more here
+7. Third-party citation: judge sources by evidence, without claiming directories or listicles have greater weight in China
 8. Measuring AI visibility without a paid tool
 9. A working checklist, using our own site as the example
 
@@ -75,7 +75,7 @@ Describe each of these in the handoff block at the end of the file. Do not
 embed images in body copy.
 
 - Table: model, how it sources answers, what to optimize
-- Five-signal diagram
+- Five-check table (SPEC fallback 7; no diagram)
 - Working checklist table the reader can apply
 - Feature image: a citation bracket rendered large and typographically, no robot imagery. China rule: set the scene in China and show Chinese social platforms on screen (WeChat, Xiaohongshu, Douyin or Weibo interface on a phone, laptop or studio monitor); set in a typical Chinese city, varied from article to article and not only Shanghai, only Chinese people in frame, candid normal-life photo in crisp sharp focus with legible screens (never blur, smudges or noise), no AI polish; this rule wins over the subject hint
 
@@ -99,8 +99,8 @@ Final section only. CTA label: **Book a call**
 
 | Field | Ceiling | Draft value |
 |---|---|---|
-| Title | 52 chars | GEO in China: Get Cited by DeepSeek (35 chars) |
-| Meta description | 152 chars | How brands get cited by China's AI search: how DeepSeek, Doubao, Qwen, and Baidu AI source answers, the five signals that matter, and a plan. (141 chars; completed 2026-10-11 by the 07C draft run, the earlier value was cut off mid-phrase) |
+| Title | 52 chars | China generative engine optimization: a guide (45 chars; corrected October 23, 2026, to match the evidence-led scope and primary query) |
+| Meta description | 152 chars | China generative engine optimization: check how AI tools find sources, publish useful Chinese answers, and track accurate citations to your brand. (146 chars; corrected October 23, 2026, to remove unsupported five-signal framing) |
 | Excerpt | 25 words | generate in the SEO iteration |
 
 The draft values above are approved. Use them unless the finished article

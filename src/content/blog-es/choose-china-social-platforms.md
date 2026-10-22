@@ -4,7 +4,7 @@ description: "Mejor tres plataformas que una. WeChat sirve de base a casi cualqu
 metaTitle: "Redes sociales en China: cómo elegir las tres primeras"
 metaDescription: "Un sistema de puntos para elegir redes sociales en China: cuatro preguntas sobre descubrimiento, precio, canal de venta y comprador, y cuatro combinaciones."
 publishDate: 2026-10-12
-updatedDate: 2026-10-20
+updatedDate: 2026-10-23
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Estrategia"
@@ -251,6 +251,8 @@ Para las marcas que ya están en WeChat, WeChat Channels (视频号) es la cuart
 > Fuente: Miaozhen Marketing Science Institute (秒针营销科学院), citado por China News Service (中新网), enero de 2026. https://www.sh.chinanews.com.cn/chanjing/2026-01-14/144009.shtml
 
 [Nuestra página de plataformas](/es/plataformas/) repasa las 18 plataformas en las que trabajamos. [La página de precios](/es/precios/) recoge además las plataformas adicionales que podrá incorporar más adelante.
+
+Las respuestas de IA requieren una comprobación distinta de la elección de redes sociales. La [guía de GEO en China](/es/analisis/china-generative-engine-optimization/) explica cómo revisar las fuentes y distinguir una cita exacta de una simple mención de marca.
 
 ## Preguntas frecuentes
 
