@@ -4595,3 +4595,86 @@ All 22 entries in the 10C source-check script fetched again during publication: 
 - No category-wide evidence for Baidu usually winning B2B. Brief corrected; article offers a conditional test.
 - No comparable 2026 WeChat daily query total established. Historical Tencent growth retains its period.
 - Baidu Search Resource Platform https://ziyuan.baidu.com/doc/ fetched twice successfully; undated landing page used as background only. No login-only feature availability or ranking guarantee claimed.
+
+
+## Health supplements: 11D, October 25, 2026
+
+### Food Safety Law, September 2025
+- Value: First-import health foods generally need registration; qualifying vitamin/mineral nutrient supplements use filing. Article 78 limits labels to the product record. Current text amended September 2025.
+- Source: Food Safety Law, September 2025
+- URL: https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=104105
+- Verified 1: 2026-10-25, HTTP 200, claim strings and source date confirmed; archived c1 response.
+- Verified 2: 2026-10-25, fresh HTTP 200, all claim strings and source date confirmed; archived c2 response.
+- Used in: health-supplements.
+
+### Health Food Registration and Filing Measures, February 2016
+- Value: Article 16: 60 working days technical review, possible 20-day extension. Article 19: supplementary materials restart review. Article 22: overseas inspection/testing time depends on circumstances. Article 27 excludes inspection, verification testing, and re-review from specified limits. Never a total launch duration.
+- Source: Health Food Registration and Filing Measures, February 2016
+- URL: https://www.samr.gov.cn/zt/ndzt/2019n/bjspjsqjxcjwljxyjsckpxc/zcfg/art/2023/art_fca01dd2bbed437282f7ffd4d056f481.html
+- Verified 1: 2026-10-25, HTTP 200, claim strings and source date confirmed; archived c1 response.
+- Verified 2: 2026-10-25, fresh HTTP 200, all claim strings and source date confirmed; archived c2 response.
+- Used in: health-supplements.
+
+### MOFCOM Notice 486, November 2018
+- Value: Notice 486 scope requires listed products, personal use, and compliant retail-import transactions. First-import licensing/registration/filing exemption; no resale. Risk notice, Chinese electronic label information, quality/recall and consumer duties. This also corrects blanket cosmetics-import claims in beauty-skincare, all locales.
+- Source: MOFCOM Notice 486, November 2018
+- URL: https://cws.mofcom.gov.cn/gztz/art/2018/art_b7becbacb58a4d0d8bf17b91a168f044.html
+- Verified 1: 2026-10-25, web fetch read complete notice and date; local transport failure logged.
+- Verified 2: 2026-10-25, fresh HTTP 200, all claim strings and source date confirmed; archived c2 response.
+- Used in: health-supplements.
+
+### MOFCOM positive-list amendment, February 2022
+- Value: 2022 amendment effective March 1 modifies tariff codes and remarks as well as adding goods. Not proof of eligibility for any specific formula; check applicable list and exact code.
+- Source: MOFCOM positive-list amendment, February 2022
+- URL: https://www.mofcom.gov.cn/zwgk/zcfb/art/2022/art_7256ee87a5b54b8f9660b4f9dfce848c.html
+- Verified 1: 2026-10-25, HTTP 200, claim strings and source date confirmed; archived c1 response.
+- Verified 2: 2026-10-25, fresh HTTP 200, all claim strings and source date confirmed; archived c2 response.
+- Used in: health-supplements.
+
+### Advertising Law, amended April 2021
+- Value: Current 2021 text, Articles 2, 17, 18: health-food ads cannot claim prevention/treatment, promise efficacy/safety, imply necessity for health, or use endorsers. Small creators are not exempt from the endorser definition.
+- Source: Advertising Law, amended April 2021
+- URL: https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2023/art_5474cf75173c45d6a0379730fb4e8d97.html
+- Verified 1: 2026-10-25, HTTP 200, claim strings and source date confirmed; archived c1 response.
+- Verified 2: 2026-10-25, fresh HTTP 200, all claim strings and source date confirmed; archived c2 response.
+- Used in: health-supplements and the xiaohongshu-sensitive-words correction, all five locales. Publish recheck 2026-10-25 confirmed Articles 2 and 18 on the live primary source.
+
+### SAMR Internet Advertising Measures, February 2023
+- Value: Articles 7/8/9/19: prior review for health-food internet ads; approved content governs; disguised wellness advertising banned, and related shopping/contact details barred on same page or simultaneously; linked promotional reviews labeled as ads; livestream duties apply.
+- Source: SAMR Internet Advertising Measures, February 2023
+- URL: https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2023/art_d93a579afd45413e8576e4623fab348f.html
+- Verified 1: 2026-10-25, HTTP 200, claim strings and source date confirmed; archived c1 response.
+- Verified 2: 2026-10-25, fresh HTTP 200, all claim strings and source date confirmed; archived c2 response.
+- Used in: health-supplements.
+
+### SAMR Order 21, December 2019
+- Value: Order 21 Article 7: health-food advertising stays within registered/filed record and instructions; prominent warning, mark, suitable and unsuitable audience information.
+- Source: SAMR Order 21, December 2019
+- URL: https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2023/art_4ca076ac0eeb4a9e9204e0cee26e359b.html
+- Verified 1: 2026-10-25, HTTP 200, claim strings and source date confirmed; archived c1 response.
+- Verified 2: 2026-10-25, fresh HTTP 200, all claim strings and source date confirmed; archived c2 response.
+- Used in: health-supplements.
+
+### SAMR enforcement notice, April 2026
+- Value: Notice signed April 10 and published April 29, 2026 targets ordinary-food health claims, exaggerated effects, fake reviews, misleading endorsements, and failures of platform checks. Cited as a dated enforcement notice, not a new law.
+- Source: SAMR enforcement notice, April 2026
+- URL: https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/tssps/art/2026/art_6634fa5970974be2b469f49a269b9578.html
+- Verified 1: 2026-10-25, HTTP 200, claim strings and source date confirmed; archived c1 response.
+- Verified 2: 2026-10-25, fresh HTTP 200, all claim strings and source date confirmed; archived c2 response.
+- Used in: health-supplements.
+
+### iiMedia Research, January 2026
+- Value: iiMedia original estimate: 2025 broad 保健品 market 3775亿元 = 377.5 billion yuan. Not an official census or supplement-only segment; no forecast used.
+- Source: iiMedia Research, January 2026
+- URL: https://www.iimedia.cn/c1094/109207.html
+- Verified 1: 2026-10-25, HTTP 200, claim strings and source date confirmed; archived c1 response.
+- Verified 2: 2026-10-25, fresh HTTP 200, all claim strings and source date confirmed; archived c2 response.
+- Used in: health-supplements.
+
+### SAMR proposed ad-review revision, May 2026
+- Value: May 15, 2026 consultation proposes ad-review adjustments. Not cited as enacted permission. Dated watch note: check for final enacted successor before reusing Order 21; this run found the proposal, not a verified final replacement.
+- Source: SAMR proposed ad-review revision, May 2026
+- URL: https://www.samr.gov.cn/xw/sj/art/2026/art_2a6b29c610e4450b8f11409fe4e02c3a.html
+- Verified 1: 2026-10-25, HTTP 200, claim strings and source date confirmed; archived c1 response.
+- Verified 2: 2026-10-25, fresh HTTP 200, all claim strings and source date confirmed; archived c2 response.
+- Used in: research context only, not article body.

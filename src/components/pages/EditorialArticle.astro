@@ -58,7 +58,11 @@ const { Content, headings } = await render(post);
 
 const toc = headings.filter((h) => h.depth === 2 || h.depth === 3);
 const hasHeroImage = Boolean(post.data.featuredImage);
-const readingTime = Math.ceil((post.body || '').split(/\s+/).length / 200);
+const articleBody = post.body || '';
+const readingTime = Math.max(1, Math.ceil(lang === 'zh'
+  ? (articleBody.match(/\p{Script=Han}/gu) || []).length / 400
+    + articleBody.replace(/\p{Script=Han}/gu, '').split(/\s+/).filter(Boolean).length / 200
+  : articleBody.split(/\s+/).filter(Boolean).length / 200));
 const formattedDate = new Date(post.data.publishDate).toLocaleDateString(dateLocales[lang], {
   year: 'numeric',
   month: 'long',
@@ -106,7 +110,7 @@ const contactHref = localizedPath('/contact', lang);
       </div>
       <h1
         class:list={[
-          'text-[42px] max-[1024px]:text-[36px] max-[640px]:text-[28px] font-medium leading-[1.15] tracking-[-0.01em] mb-[20px]',
+          'text-[42px] max-[1024px]:text-[36px] max-[640px]:text-[28px] font-medium leading-[1.15] tracking-[-0.01em] mb-[20px] hyphens-auto [overflow-wrap:anywhere]',
           hasHeroImage ? 'text-[#FFFFFF]' : 'text-[var(--color-ink)]',
         ]}
       >
@@ -293,6 +297,7 @@ const contactHref = localizedPath('/contact', lang);
   }
   .prose-article a {
     color: var(--color-vermillion);
+    overflow-wrap: anywhere;
     text-decoration: none;
     transition: text-decoration 0.15s ease;
   }

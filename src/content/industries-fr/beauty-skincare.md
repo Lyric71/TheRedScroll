@@ -4,6 +4,7 @@ description: "Aucune catégorie n'est plus disputée que la beauté sur les rés
 metaTitle: "Marketing beauté et soins en Chine"
 metaDescription: "Ce qui fait décoller une marque de beauté en Chine : stratégie Xiaohongshu, règles NMPA, volumes de seeding KOC et forfaits à prix fixe."
 publishDate: 2026-09-11
+updatedDate: 2026-10-25
 author: "TheRedScroll"
 platforms: ["rednote", "douyin"]
 category: "Secteur"
@@ -14,26 +15,25 @@ featured: false
 featuredImage: "/images/blog/beauty-skincare.webp"
 faqs:
   - q: "Un dépôt NMPA est-il obligatoire avant de commercialiser un soin en Chine ?"
-    a: "Oui. Un cosmétique ordinaire importé doit être déposé auprès de l'Administration nationale des produits médicaux avant de franchir la frontière. Un cosmétique spécial, blanchissant, solaire ou antichute, doit être enregistré avant même de pouvoir y entrer. S'y ajoute l'obligation de désigner une entité juridique établie en Chine comme responsable domestique. Et si un contenu cite un produit non déposé, c'est la marque qui répond, pas le créateur."
+    a: "Pour une importation classique, les cosmétiques ordinaires doivent faire l’objet d’un dépôt NMPA, les cosmétiques spéciaux d’un enregistrement. Les achats transfrontaliers au détail éligibles, réservés à un usage personnel, bénéficient d’une exemption distincte. Vérifiez le produit et le circuit retenu avant de fixer le lancement. Cette exemption ne vaut ni autorisation publicitaire ni admission sur une plateforme."
   - q: "Combien de publications KOC un lancement beauté exige-t-il ?"
     a: "Aucun indice de référence n'existe : tout chiffre unique mérite la méfiance. Le volume se déduit de la recherche. Relevez les expressions chinoises tapées avant l'achat, puis le nombre de notes qu'il faut pour tenir le premier écran sur chacune. Un produit phare sur une ville se chiffre en dizaines. Une gamme nationale se chiffre en plusieurs dizaines, étalées dans le temps plutôt que tirées en rafale."
   - q: "Quelle plateforme pèse le plus pour la beauté en Chine ?"
     a: "Xiaohongshu, et de loin. Tout ce dont la beauté dépend s'y concentre : l'audience féminine, le réflexe de recherche, le trafic de conseil à l'achat. Ses notes continuent d'ailleurs à produire longtemps après la fin d'une campagne. Douyin vend davantage en une heure, mais oublie plus vite. WeChat, lui, retient les clients déjà acquis. Sauf raison précise de faire autrement, commencez par Xiaohongshu."
 ---
 
-*La plupart des marques poussent la porte d'une agence beauté en Chine avec une
-date de lancement et un dossier bourré d'idées de campagne. Elle est presque
-toujours fausse : personne ne les a prévenues qu'un produit doit franchir le
-régulateur avant qu'un seul avis puisse le citer.*
+*Avant de fixer un lancement beauté en Chine, vérifiez le circuit d’importation
+et la catégorie du produit. Les formalités du commerce classique diffèrent de
+celles des achats transfrontaliers éligibles. Les allégations et l’admission sur
+une plateforme se vérifient séparément.*
 
-En Chine, la beauté se joue sur trois terrains, et dans cet ordre : le dépôt,
-les allégations, la recherche. Tant que les deux premiers restent ouverts, le
-contenu ne produit rien. Nous avons vu de bons lancements glisser d'un trimestre
-faute d'avoir ouvert la réglementation avant de valider les textes.
+Commencez par le circuit de vente, puis examinez les allégations et préparez les
+contenus. Le tableau ci-dessous concerne les importations classiques. Il ne pose
+pas d’interdiction générale de citer un produit non déposé.
 
 | Étape | Qui donne son accord | Ce qu'elle bloque tant qu'elle n'est pas franchie |
 |---|---|---|
-| Dépôt ou enregistrement du produit | Administration nationale des produits médicaux | L'importation légale, et le droit de citer le produit |
+| Dépôt ou enregistrement du produit | Administration nationale des produits médicaux | L’importation par le circuit classique |
 | Responsable domestique | Vous le désignez, le régulateur l'enregistre | Le dépôt lui-même |
 | Preuve des allégations | Vous, publiée sur le site du régulateur | Chaque promesse d'efficacité, dans chaque publication |
 | Comptes vérifiés et boutique | Xiaohongshu, Douyin, WeChat | La portée payante, la boutique, les briefs créateurs |
@@ -67,12 +67,11 @@ Et ils arrivent avec une question en tête, pas avec une humeur.
 > conseil d'achat, et ouvrent l'application une quinzaine de fois par jour.
 > Source: Xiaohongshu 2026 WILL conference, reported by 100EC (网经社), December 2025. https://www.100ec.cn/detail--6655530.html
 
-Le calcul change du tout au tout. Une publication de campagne vaut trois jours.
-Une note bien placée sur « crème solaire peau sensible » en chinois rapporte
-pendant un an, parce que l'acheteur suivant tapera les mêmes mots dans
-la même barre. D'où la règle : bâtissez le budget sur des termes de recherche,
-pas sur un calendrier de campagnes. Notre
-[page agence RedNote](/fr/agence-rednote/) décrit la plateforme en pratique, et
+Construisez le budget autour des questions recherchées et mesurez la durée
+pendant laquelle chaque note attire des visites pertinentes. Aucune durée fixe
+n’est établie ici pour les publications de campagne ou les notes bien classées.
+
+Notre [page agence RedNote](/fr/agence-rednote/) décrit la plateforme en pratique, et
 notre guide du
 [marketing Xiaohongshu pour les marques étrangères](/fr/decryptages/xiaohongshu-marketing-foreign-brands/)
 détaille la configuration des comptes qui la sous-tend.
@@ -88,7 +87,14 @@ votre calendrier.
 > spéciaux. Tout le reste est ordinaire.
 > Source: State Council, Cosmetics Supervision and Administration Regulation (化妆品监督管理条例), Order 727, Article 16, in force January 2021. https://www.gov.cn/zhengce/content/2020-06/29/content_5522593.htm
 
-Un cosmétique spécial doit être enregistré auprès de l'Administration nationale
+Les règles de dépôt et d’enregistrement ci-dessous concernent les importations
+classiques. Les achats transfrontaliers au détail éligibles, destinés à un usage
+personnel, suivent un cadre distinct.
+
+> Les importations transfrontalières au détail éligibles sont exemptées des formalités de première importation, de dépôt ou d’enregistrement. Les produits sont réservés à un usage personnel et ne peuvent être revendus.
+> Source: Ministry of Commerce, Notice 486, November 2018. https://cws.mofcom.gov.cn/gztz/art/2018/art_b7becbacb58a4d0d8bf17b91a168f044.html
+
+Dans le circuit d’importation classique, un cosmétique spécial doit être enregistré auprès de l'Administration nationale
 des produits médicaux (国家药监局) avant toute production ou importation. Un
 cosmétique ordinaire importé se contente d'un dépôt auprès du même organisme.
 Un sérum blanchissant et un baume démaquillant ne suivent donc pas le même
@@ -143,9 +149,9 @@ inscrite dans la loi elle-même.
 
 | À proscrire | Ce qui coince | Ce qui passe |
 |---|---|---|
-| Répare la barrière cutanée | Se lit comme un effet médical, loi sur la publicité art. 17 | Conçu pour les peaux qui réagissent vite |
+| Traite l’eczéma | Allégation thérapeutique, loi sur la publicité art. 17 | Supprimer la promesse médicale et justifier toute allégation cosmétique |
 | Meilleure crème solaire du Japon | Superlatif interdit, loi sur la publicité art. 9 | L'indice SPF, et le lieu du test |
-| Blanchissant, sur un produit non déposé | Le blanchiment relève des cosmétiques spéciaux, règlement art. 16 | La texture, le fini, le mode d'emploi, jusqu'à l'enregistrement |
+| Allégation blanchissante sans l’enregistrement requis | Les cosmétiques spéciaux importés par le circuit classique doivent être enregistrés | Régler la conformité du produit avant sa promotion ; parler de texture ne remplace pas l’enregistrement |
 | 97 % des utilisatrices ont vu un résultat | Les données citées doivent être vraies et sourcées, loi art. 11 | Le même chiffre, avec la taille du panel, la date et le laboratoire |
 | Cliniquement prouvé, sans rien de déposé | Le résumé des preuves est public, règlement art. 22 | Le test nommé, et un renvoi vers le résumé publié |
 
@@ -167,19 +173,12 @@ créateurs de la plateforme. Elle se paie.
 > premium, qui ajoute une promotion par la plateforme.
 > Source: Niaoge Biji (鸟哥笔记), October 2022. https://www.niaogebiji.com/article-482538-1.html
 
-La beauté traîne en outre une contrainte administrative que la plupart des
-catégories ignorent.
+Vérifiez les justificatifs et les règles de catégorie en vigueur dans la
+boutique avant de réserver des créateurs. Une exemption douanière ne garantit
+pas l’admission sur une plateforme. La demande doit correspondre au produit, au
+vendeur et au circuit de vente.
 
-> Pour le commerce transfrontalier sur Xiaohongshu, les cosmétiques importés
-> exigent le dépôt d'importation, et les chaînes d'autorisation de marque sont
-> limitées à trois niveaux, deux pour la beauté.
-> Source: Xiaohongshu merchant qualification requirements (小红书资质入驻要求), platform documentation, confirmed September 2026. https://picasso-static.xiaohongshu.com/test/8b3bc7324ca06fceea379177f9eed1fa/小红书资质入驻要求.pdf
-
-Deux niveaux pour la beauté, donc. Imaginons que votre produit entre en Chine
-par un distributeur, qui revend à une société de négoce, laquelle livre la
-boutique : cela fait trois. La demande d'ouverture est rejetée, et aucun budget
-créateur ne rattrapera cela. Vérifiez la chaîne documentaire avant de réserver
-le moindre créateur.
+Une gamme qui comprend des compléments alimentaires exige un examen distinct avant de reprendre un brief beauté. Notre guide du [marketing des compléments en Chine](/fr/secteurs/health-supplements/) détaille les circuits d’entrée et les restrictions sur les recommandations publicitaires des aliments de santé.
 
 ## Combien de publications KOC un lancement demande vraiment
 
@@ -202,12 +201,8 @@ appartiennent : vos termes, le niveau de concurrence sur chacun, votre budget.
 Deux marques d'une même sous-catégorie peuvent atterrir à un facteur trois l'une
 de l'autre sans que ni l'une ni l'autre se trompe.
 
-Les cachets des créateurs pèsent d'ailleurs plus lourd que le volume.
-
-> Les comptes nano KOC de 1 000 à 5 000 abonnés se situent autour de 20 à 60
-> dollars américains par publication, tandis qu'un travail micro KOL sous le
-> million d'abonnés se situe autour de 10 000 à 35 000 dollars par campagne.
-> Source: Long Advisory, June 2026. https://longadvisory.eu/en/kol-vs-koc-marketing-in-china-which-delivers-better-roi/
+Les honoraires des créateurs varient selon le brief, les droits d’usage et la
+diffusion. Demandez un devis détaillé sur ce périmètre.
 
 Notre [page marketing d'influence](/fr/services/marketing-influence/) précise
 comment se traitent les briefs, la déclaration et les droits d'usage.
@@ -229,12 +224,9 @@ devant la caméra sont précisément ceux que l'article 17 de la loi sur la
 publicité interdit. Un animateur qui affirme qu'un sérum traite l'acné vient de
 faire de votre marque l'annonceur derrière une allégation illégale.
 
-La vérification coûte trois fois rien. Le script, lui, se paie.
-
-> La vérification entreprise sur Douyin coûte 600 yuans la première année et
-> 120 yuans par an en renouvellement, avec un examen en deux jours ouvrés
-> environ.
-> Source: Ocean Engine (巨量引擎), Douyin enterprise account FAQ, May 2022. https://www.oceanengine.com/faq/douyin-qyh-zmrzn.html
+Vérifiez le circuit d’ouverture du compte et les conditions de certification en
+vigueur. La certification du compte ne vaut pas validation du script
+publicitaire.
 
 Le live commerce devient rentable pour une marque de beauté quand trois
 conditions sont déjà réunies : une boutique capable d'encaisser la commande, une

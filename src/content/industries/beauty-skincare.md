@@ -4,6 +4,7 @@ description: "Beauty is the most crowded category on Chinese social media, and m
 metaTitle: "Beauty and Skincare Marketing in China"
 metaDescription: "How beauty and skincare brands grow in China. Xiaohongshu strategy, NMPA claim rules, KOC seeding volumes and fixed-price packages."
 publishDate: 2026-09-11
+updatedDate: 2026-10-25
 author: "TheRedScroll"
 platforms: ["rednote", "douyin"]
 category: "Industry"
@@ -14,26 +15,25 @@ featured: false
 featuredImage: "/images/blog/beauty-skincare.webp"
 faqs:
   - q: "Do I need NMPA filing before marketing a skincare product in China?"
-    a: "Yes. Imported ordinary cosmetics must be filed with the National Medical Products Administration before import. Special cosmetics such as whitening, sunscreen and anti hair loss products must be registered before they can be imported at all. You also need a legal entity inside China named as the domestic responsible person. Content naming an unfiled product is the brand's problem, not the creator's."
+    a: "For general-trade imports, ordinary cosmetics require NMPA filing and special cosmetics require registration. Qualifying cross-border retail imports for personal use have a separate exemption from first-import requirements. Check the exact product and route before setting a launch date. That exemption does not approve advertising claims or guarantee platform admission."
   - q: "How many KOC posts does a beauty launch need?"
     a: "There is no published benchmark, so treat any single number with suspicion. The figure comes out of search. Count the Chinese phrases a buyer types before choosing, then count the notes needed for yours to hold the first screen on each. One hero product in one city usually plans in the dozens. A national range plans in the high dozens, sustained rather than in a burst."
   - q: "Which platform matters most for beauty in China?"
     a: "Xiaohongshu, by a wide margin. It carries the female skew, the search behavior and the purchase-advice traffic that beauty depends on, and its notes keep earning long after a campaign ends. Douyin sells more in a single hour and forgets faster. WeChat holds the customers you already have. Start on Xiaohongshu unless you have a specific reason not to."
 ---
 
-*Most brands arrive at a beauty marketing agency in China with a launch date
-and a deck full of campaign ideas. The launch date is usually wrong, because
-nobody told them a product has to clear the regulator before a single review
-can name it.*
+*Before setting a China beauty launch date, confirm the import route and product
+classification. General-trade requirements differ from those for qualifying
+cross-border retail imports. Claims and platform admission need separate
+checks.*
 
-Beauty in China is a filing problem, a claims problem and a search problem,
-in that order. The content only works once the first two are settled. We have
-watched good launches slip a quarter because nobody read the regulation until
-the copy was already approved.
+Start with the sales route, then check the claims and plan the content. The
+table below covers general-trade imports. It does not establish a blanket ban on
+mentioning an unfiled product.
 
 | Gate | Who says yes | What it blocks until it is done |
 |---|---|---|
-| Product filing or registration | National Medical Products Administration | Legal import, and naming the product in copy |
+| Product filing or registration | National Medical Products Administration | General-trade import clearance |
 | Domestic responsible person | You appoint one, the regulator records it | The filing itself |
 | Claim evidence | You, published on the regulator's site | Every efficacy line in every post |
 | Verified accounts and store | Xiaohongshu, Douyin, WeChat | Paid reach, the shop, creator briefs |
@@ -64,11 +64,11 @@ And they arrive with a question rather than a mood.
 > and users open the app around 16 times a day.
 > Source: Xiaohongshu 2026 WILL conference, reported by 100EC (网经社), December 2025. https://www.100ec.cn/detail--6655530.html
 
-That changes the arithmetic. A campaign post is worth something for about three
-days. A note ranking for "sensitive skin sunscreen" in Chinese keeps earning for
-a year, because the next shopper types the same words into the same box. So
-build the budget around search terms, not campaign dates. Our
-[RedNote Agency page](/rednote-agency/) covers the platform in practice, and our
+Build the budget around relevant search questions and measure how long each note
+keeps attracting qualified visits. A fixed lifespan for campaign posts or ranked
+notes is not established here.
+
+Our [RedNote Agency page](/rednote-agency/) covers the platform in practice, and our
 guide to
 [Xiaohongshu marketing for foreign brands](/insights/xiaohongshu-marketing-foreign-brands/)
 covers the account setup underneath it.
@@ -82,7 +82,14 @@ China splits cosmetics in two, and the split decides your timeline.
 > efficacy, are special cosmetics. Everything else is ordinary.
 > Source: State Council, Cosmetics Supervision and Administration Regulation (化妆品监督管理条例), Order 727, Article 16, in force January 2021. https://www.gov.cn/zhengce/content/2020-06/29/content_5522593.htm
 
-Special cosmetics have to be registered with the National Medical Products
+For general-trade imports, the registration and filing rules below apply.
+Qualifying cross-border retail imports for personal use follow a separate
+framework.
+
+> Qualifying cross-border retail imports are exempt from first-import licensing, registration, or filing requirements. They are for personal use and may not be resold.
+> Source: Ministry of Commerce, Notice 486, November 2018. https://cws.mofcom.gov.cn/gztz/art/2018/art_b7becbacb58a4d0d8bf17b91a168f044.html
+
+For general-trade imports, special cosmetics have to be registered with the National Medical Products
 Administration (国家药监局) before they can be produced or imported. Imported
 ordinary cosmetics only have to be filed with the same body. A whitening
 serum and a cleansing balm are not on the same schedule, and a brand that
@@ -132,9 +139,9 @@ Neither rule is enforced gently, and the fine is written into the law itself.
 
 | Do not write | Why it fails | What works instead |
 |---|---|---|
-| Repairs the skin barrier | Reads as a medical effect, Advertising Law 17 | Made for skin that reacts easily |
+| Treats eczema | Disease-treatment claim, Advertising Law 17 | Remove the medical claim; substantiate any cosmetic efficacy claim |
 | Best sunscreen in Japan | Superlative banned outright, Advertising Law 9 | The SPF number, and where it was tested |
-| Whitening, on an unfiled product | Whitening is a special cosmetic, Regulation 16 | Texture, finish and how it is used, until registration lands |
+| Whitening claim without required registration | General-trade special cosmetics require registration | Resolve product eligibility before promotion; a texture claim does not replace registration |
 | 97% of users saw results | Cited data must be true and sourced, Advertising Law 11 | The same figure with panel size, date and testing house |
 | Clinically proven, with nothing filed | The evidence summary is public, Regulation 22 | The named test, and a pointer to the published summary |
 
@@ -156,17 +163,11 @@ creator marketplace. It has a price.
 > mode that adds platform promotion.
 > Source: Niaoge Biji (鸟哥笔记), October 2022. https://www.niaogebiji.com/article-482538-1.html
 
-Beauty carries a paperwork rule most categories do not.
+Check the store’s current category rules and documentary requirements before
+booking creators. Customs exemptions do not guarantee platform admission. Match
+the application to the exact product, seller, and trade route.
 
-> For cross-border trade on Xiaohongshu, imported cosmetics require the
-> import cosmetics filing, and brand authorization chains are capped at three
-> levels, or two for beauty.
-> Source: Xiaohongshu merchant qualification requirements (小红书资质入驻要求), platform documentation, confirmed September 2026. https://picasso-static.xiaohongshu.com/test/8b3bc7324ca06fceea379177f9eed1fa/小红书资质入驻要求.pdf
-
-Two levels, for beauty specifically. Say your product reaches China through a
-distributor, who sells to a trading company, who sells to the store. That's
-three. The store application fails, and no amount of creator spend fixes it.
-Check the paperwork chain before anyone books a creator.
+If your range includes food supplements, review them separately before copying a beauty creator brief. Our [health supplement marketing guide](/industries/health-supplements/) explains the product routes and the restrictions on health-food endorsements.
 
 ## How many KOC posts a launch actually needs
 
@@ -188,12 +189,8 @@ Treat that as planning arithmetic, not a benchmark. The inputs are yours: your
 terms, how contested each one is, your budget. Two brands in the same
 subcategory can land three times apart and both be right.
 
-Creator fees move the total more than volume does.
-
-> Nano KOC accounts with 1,000 to 5,000 followers run about 20 to 60 US
-> dollars per post, while micro KOL work under 1 million followers runs about
-> 10,000 to 35,000 US dollars per campaign.
-> Source: Long Advisory, June 2026. https://longadvisory.eu/en/kol-vs-koc-marketing-in-china-which-delivers-better-roi/
+Creator fees vary with the agreed brief, usage rights, and distribution. Request
+itemized quotes for the actual scope.
 
 Our [Influencer Marketing service page](/services/influencer-marketing/) sets
 out how briefs, declaration and usage rights are handled.
@@ -214,11 +211,8 @@ on camera are the words Article 17 of the Advertising Law forbids. A host who
 says a serum treats acne has just made your brand the advertiser behind an
 illegal claim.
 
-Verification is cheap. Getting the script right is not.
-
-> Douyin enterprise verification costs 600 yuan for the first year and 120
-> yuan a year to renew, with review in about two working days.
-> Source: Ocean Engine (巨量引擎), Douyin enterprise account FAQ, May 2022. https://www.oceanengine.com/faq/douyin-qyh-zmrzn.html
+Confirm the account route and current verification requirements before launch.
+Account verification does not approve the advertising script.
 
 Live commerce pays for beauty brands with three things already in place: a
 store that can take the order, enough search coverage that viewers who leave

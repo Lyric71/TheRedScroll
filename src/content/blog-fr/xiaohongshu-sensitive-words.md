@@ -1,9 +1,10 @@
 ---
 title: "Mots interdits sur Xiaohongshu : ce qui condamne une note, et ce qu’il faut écrire à la place"
-description: "Six familles de formulations suffisent à faire masquer une note de marque. La plupart relèvent du droit chinois plus que des règles de l’application, et toutes se reformulent sans risque."
+description: "Six catégories de formulations exposent les notes de marque à des restrictions. Certaines allégations doivent disparaître, même reformulées."
 metaTitle: "Xiaohongshu : les mots qui font disparaître une note"
 metaDescription: "Superlatifs, allégations santé, coordonnées WeChat : ce qui fait brider ou supprimer une note Xiaohongshu, la règle en cause et ce qu’il faut écrire."
 publishDate: 2026-10-01
+updatedDate: 2026-10-25
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Plateformes"
@@ -82,7 +83,10 @@ Les cosmétiques sont en outre soumis à un texte propre.
 > La publicité pour un cosmétique ne peut ni affirmer ni suggérer un effet thérapeutique, et ne doit être ni mensongère ni trompeuse.
 > Source : Conseil des affaires de l’État (国务院), règlement sur la supervision et l’administration des cosmétiques, décret n° 727, article 43, en vigueur depuis janvier 2021. https://www.gov.cn/zhengce/content/2020-06/29/content_5522593.htm
 
-La publicité pour les compléments alimentaires de santé (保健食品) ne peut ni garantir une efficacité ni évoquer la moindre maladie (article 18). La clémence réservée aux superlatifs s’arrête également à cette frontière : d’après les lignes directrices de 2023, une allégation d’efficacité absolue portant sur un médicament, la médecine esthétique (医疗美容) ou un complément de santé ne saurait, en règle générale, être tenue pour mineure.
+> Pour les aliments de santé (保健食品), sont interdites les garanties d’efficacité ou de sécurité, les promesses de prévention ou de traitement d’une maladie et les recommandations publicitaires de tiers.
+> Source : loi sur la publicité, articles 2 et 18, modification d’avril 2021. https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2023/art_5474cf75173c45d6a0379730fb4e8d97.html
+
+Les lignes directrices de 2023 précisent aussi que les allégations absolues d’efficacité relatives aux médicaments, à la médecine esthétique (医疗美容) ou aux aliments de santé ne constituent généralement pas des infractions mineures.
 
 Un dossier suffit à mesurer la sévérité du dispositif.
 
@@ -90,6 +94,8 @@ Un dossier suffit à mesurer la sévérité du dispositif.
 > Source : Caijing (财经), mars 2023. https://www.mycaijing.com/article/detail/488674
 
 Les mots qui font tomber une note : « soigner » (治疗), « guérir » (治愈), « anti-inflammatoire » (消炎), « efficace à 100 % » (100%有效). Parlez plutôt de la texture et de la composition. Toute allégation d’efficacité d’un cosmétique doit s’appuyer sur des preuves scientifiques, dont une synthèse doit être rendue publique (décret n° 727, article 22).
+
+Notre guide du [marketing des compléments alimentaires](/fr/secteurs/health-supplements/) distingue les formalités d’enregistrement, de dépôt et d’importation transfrontalière des autorisations publicitaires. Il explique aussi pourquoi la mention « publicité » ne lève pas l’interdiction d’une recommandation par un créateur.
 
 ## Prix, rendements promis et ventes hors de l’application
 
@@ -145,16 +151,16 @@ La publicité est soumise à un interdit supplémentaire : l’article 9 de la l
 
 ## Alternatives aux mots interdits sur Xiaohongshu : le tableau de réécriture
 
-Gardez ce tableau sous la main lorsque vous rédigez pour Xiaohongshu (小红书). Lorsque l’alternative est en chinois, c’est la formulation à publier telle quelle. Lorsqu’elle est en français, elle indique ce qu’il faut écrire.
+Ce tableau propose des pistes de révision, sans valider une publicité. Chaque exemple suppose de vérifier la catégorie du produit, les preuves et les autorisations requises. Changer un mot ne rend pas licite une promesse interdite.
 
-| Formulation à risque | Ce qui pose problème | Alternative sûre |
+| Formulation à risque | Ce qui pose problème | Révision à vérifier |
 |---|---|---|
 | 全网最好用的面霜 (la meilleure crème du web) | Superlatif, article 9 | 比我们上一代更滋润 (plus riche que notre formule précédente) |
 | 行业第一 (numéro un du secteur) | Équivaut à « le meilleur », et difficile à prouver | Meilleure vente de notre boutique en août 2026, chiffres à l’appui |
 | 国家级品质 (qualité de niveau national) | Terme cité à l’article 9 | La norme ou le grade atteint, et l’organisme qui l’a fixé |
 | 治疗痘痘 (soigne l’acné) | Allégation médicale, article 17 | La texture et les ingrédients, pas le résultat |
 | 消炎修复 (anti-inflammatoire, réparateur) | Vocabulaire médical | 舒缓 (apaisant), seulement si des preuves d’efficacité sont publiées |
-| 100%有效 (efficace à 100 %) | Garantie d’efficacité invérifiable | Vos propres résultats de test, avec la taille de l’échantillon et la date |
+| 100%有效 (efficace à 100 %) | Garantie d’efficacité invérifiable | Supprimer la garantie ; pour les aliments de santé, respecter le dossier produit et l’autorisation publicitaire requise |
 | 原价599，现价299 (avant 599, maintenant 299) | Illicite si le prix de 599 n’a pas été pratiqué dans les sept derniers jours | Le prix actuel seul, ou un prix réellement pratiqué récemment |
 | 稳赚不赔 (gain garanti) | Rendement promis, article 25 | L’énoncé du risque, sans promesse |
 | 比某品牌好用多了 (bien meilleur que la marque X) | Dénigrement, article 13 | Une comparaison avec votre produit précédent |

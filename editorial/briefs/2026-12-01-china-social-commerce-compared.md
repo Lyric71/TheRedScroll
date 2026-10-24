@@ -132,3 +132,7 @@ Week 13 produces the two assets the whole quarter has been building toward. Both
 - [ ] Feature image block appended with the correct slug path
 - [ ] Body character count reported and on target
 - [ ] File saved as `output/china-social-commerce-compared.md`
+
+## Cross-border scope clarification, October 25, 2026
+
+Positive-list eligibility and personal-use retail-import exemptions are separate from advertising permission and platform category admission. Do not imply that every imported product needs first-import registration or that a cross-border shop can resell its stock domestically. Check each product code and applicable remarks; use the Notice 486 entry in verified-sources.md.

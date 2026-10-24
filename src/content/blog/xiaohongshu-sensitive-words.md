@@ -1,9 +1,10 @@
 ---
 title: "Xiaohongshu banned words: what gets notes hidden and what to say instead"
-description: "Six kinds of wording get brand notes hidden. Most come from Chinese law, not from the app, and every one has a safe rewrite."
+description: "Six kinds of wording can put brand notes at risk. Chinese law and platform rules both matter. Some claims must be removed, not rephrased."
 metaTitle: "Xiaohongshu Words That Get Posts Hidden"
-metaDescription: "The words and claims that get Xiaohongshu notes limited or removed, why they fail under China advertising law and safe alternatives you can use"
+metaDescription: "The words and claims that get Xiaohongshu notes limited or removed, why they fail under China advertising law and what to check before rewriting"
 publishDate: 2026-10-01
+updatedDate: 2026-10-25
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Platforms"
@@ -129,10 +130,10 @@ Cosmetics get a second rule on top of that one.
 > Regulation, Order 727, Article 43, in force January 2021.
 > https://www.gov.cn/zhengce/content/2020-06/29/content_5522593.htm
 
-Health food (保健食品) ads may not promise efficacy or mention disease at all
-(Article 18). The leniency on superlatives stops here, too. Absolute efficacy
-claims for medicine, medical aesthetics (医疗美容) or health food are generally
-not minor, the 2023 guideline says.
+> Health food (保健食品) ads may not guarantee efficacy or safety, claim disease prevention or treatment, or use endorsers.
+> Source: Advertising Law, Articles 2 and 18, amended April 2021. https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2023/art_5474cf75173c45d6a0379730fb4e8d97.html
+
+The 2023 guideline also says absolute efficacy claims for medicine, medical aesthetics (医疗美容), or health food are generally not minor violations.
 
 One case shows how little it takes.
 
@@ -144,6 +145,8 @@ Words that trip this: treat (治疗), cure (治愈), anti-inflammatory (消炎),
 "works every time" (100%有效). Describe the texture and what's in
 it. A cosmetic's efficacy claim needs scientific backing, and a
 summary of that evidence must be published (Order 727, Article 22).
+
+For supplements, our [health supplement marketing guide](/industries/health-supplements/) separates registration, filing, and cross-border import rules from advertising permission. It also explains why a creator’s testimonial can remain prohibited even when labeled as an ad.
 
 ## Prices, promised returns and paying off the app
 
@@ -236,20 +239,18 @@ well meant.
 Ads have one more ban. Article 9 of the Advertising Law (广告法) forbids the
 national flag, anthem or emblem, or the military flag, in any ad.
 
-## Safe alternatives to Xiaohongshu banned words: the rewrite table
+## Rewriting Xiaohongshu claims: checks before publication
 
-Keep this table open while you write for Xiaohongshu (小红书). Where the
-alternative is in Chinese, that's the wording to post. Where it's in English,
-it describes what to write.
+Treat this table as editing guidance, not approved advertising copy. Check the product category, evidence, and required approvals before using any example. A different word cannot make a prohibited promise lawful.
 
-| Risky phrase                                  | Why it fails                                       | Safe alternative                                            |
+| Risky phrase                                  | Why it fails                                       | Revision to check                                            |
 |-----------------------------------------------|----------------------------------------------------|-------------------------------------------------------------|
 | 全网最好用的面霜 (the best face cream online) | Superlative, Article 9                             | 比我们上一代更滋润 (richer than our last formula)           |
 | 行业第一 (No. 1 in the industry)              | Reads as "best," and hard to prove                 | Top seller in our store, August 2026, with the data on file |
 | 国家级品质 (national-level quality)           | Named in Article 9                                 | The standard or grade you meet, and who set it              |
 | 治疗痘痘 (treats acne)                        | Medical claim, Article 17                          | Texture and ingredients, not outcomes                       |
 | 消炎修复 (anti-inflammatory, repairs)         | Medical terms                                      | 舒缓 (soothing), only with published efficacy evidence      |
-| 100%有效 (works every time)                   | Efficacy guarantee, no proof                       | Your own test result, with sample size and date             |
+| 100%有效 (works every time)                   | Efficacy guarantee, no proof                       | Remove the guarantee; health-food claims must match the product record and required ad approval |
 | 原价599，现价299 (was 599, now 299)           | Fails if 599 wasn't charged in the last seven days | The current price alone, or a real recent one               |
 | 稳赚不赔 (guaranteed profit)                  | Promised return, Article 25                        | The risk, stated. No promise                                |
 | 比某品牌好用多了 (much better than Brand X)   | Disparagement, Article 13                          | A comparison with your own earlier product                  |

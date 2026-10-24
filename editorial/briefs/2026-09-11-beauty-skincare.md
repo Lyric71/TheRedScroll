@@ -59,7 +59,7 @@ Every figure below needs a dated, linked source in blockquote format. Check
 still current, reuse the logged citation instead of researching again. If you
 find a new figure, append it to that ledger before you finish.
 
-- NMPA cosmetics filing requirement for imported products, cite the regulation
+- NMPA cosmetics filing and registration requirements for general-trade imports, with the separate eligible cross-border personal-use exemption
 - China beauty market size or growth, cite Statista or a dated industry source
 - Prohibited claim examples under China advertising law, cite the law
 
@@ -127,3 +127,7 @@ handoff block. Answer each in 40 to 70 words.
 - [ ] Feature image block appended with the correct slug path
 - [ ] Body character count reported and on target
 - [ ] File saved as `output/beauty-skincare.md`
+
+## Source correction, October 25, 2026
+
+Distinguish general-trade import requirements from Notice 486 exemptions for eligible cross-border retail imports. Product eligibility, advertising claims, and store admission are separate. Do not assert that any unfiled product is forbidden to be mentioned, or that changing a whitening claim to texture substitutes for required registration. The five live locales were corrected. Unsupported fixed post lifetimes, a rival-sourced fee claim, and an obsolete universal verification fee were cut during the same review.

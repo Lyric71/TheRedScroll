@@ -4,6 +4,7 @@ description: "Beauty ist die dichteste Kategorie in Chinas sozialen Medien, und 
 metaTitle: "Beauty-Marketing in China"
 metaDescription: "Wie Beauty- und Hautpflegemarken in China wachsen. Xiaohongshu-Strategie, NMPA-Regeln für Werbeaussagen, KOC-Seeding-Volumen und Pakete zum Festpreis."
 publishDate: 2026-09-11
+updatedDate: 2026-10-25
 author: "TheRedScroll"
 platforms: ["rednote", "douyin"]
 category: "Branche"
@@ -14,27 +15,25 @@ featured: false
 featuredImage: "/images/blog/beauty-skincare.webp"
 faqs:
   - q: "Brauche ich eine NMPA-Anmeldung, bevor ich ein Hautpflegeprodukt in China bewerbe?"
-    a: "Ja. Importierte gewöhnliche Kosmetika müssen vor der Einfuhr bei der National Medical Products Administration angemeldet werden. Spezialkosmetika wie Aufhellungs-, Sonnenschutz- und Anti-Haarausfall-Produkte müssen registriert sein, bevor sie überhaupt eingeführt werden dürfen. Zusätzlich brauchen Sie eine juristische Person in China, die als inländischer Verantwortlicher benannt wird. Inhalte, die ein nicht angemeldetes Produkt nennen, sind das Problem der Marke, nicht das des Creators."
+    a: "Beim regulären Import müssen gewöhnliche Kosmetika bei der NMPA angemeldet und Spezialkosmetika registriert werden. Für zulässige grenzüberschreitende Einzelhandelsimporte zum Eigenbedarf gilt eine gesonderte Ausnahme. Prüfen Sie Produkt und Vertriebsweg, bevor Sie einen Starttermin festlegen. Die Ausnahme erlaubt weder automatisch Werbeaussagen noch garantiert sie die Zulassung auf einer Plattform."
   - q: "Wie viele KOC-Beiträge braucht ein Beauty-Launch?"
     a: "Es gibt keinen veröffentlichten Richtwert, misstrauen Sie also jeder einzelnen Zahl. Das Volumen ergibt sich aus der Suche. Zählen Sie die chinesischen Begriffe, die Käuferinnen vor der Entscheidung eingeben, und dann die Notes, die nötig sind, damit Ihre je Begriff den ersten Bildschirm halten. Ein Heldenprodukt in einer Stadt plant man im Bereich einiger Dutzend. Eine landesweite Range plant man im hohen zweistelligen Bereich, dauerhaft statt im Stoß."
   - q: "Welche Plattform zählt für Beauty in China am meisten?"
     a: "Xiaohongshu, mit deutlichem Abstand. Dort bündeln sich der weibliche Nutzerschwerpunkt, das Suchverhalten und der Kaufberatungs-Traffic, von dem Beauty lebt, und die Notes tragen noch lange nach Kampagnenende. Douyin verkauft in einer einzigen Stunde mehr und vergisst schneller. WeChat hält die Kundinnen, die Sie schon haben. Beginnen Sie mit Xiaohongshu, sofern nichts konkret dagegenspricht."
 ---
 
-*Die meisten Marken kommen mit einem Launch-Termin und einer Präsentation
-voller Kampagnenideen zu einer Beauty-Marketing-Agentur in China. Der Termin
-ist meist falsch, weil niemand ihnen gesagt hat, dass ein Produkt erst die
-Aufsicht passieren muss, bevor eine einzige Bewertung es beim Namen nennen
-darf.*
+*Klären Sie vor dem Beauty-Launch in China den Importweg und die
+Produktkategorie. Für den regulären Import gelten andere Anforderungen als für
+zulässige grenzüberschreitende Einzelhandelskäufe. Werbeaussagen und
+Plattformzulassung müssen gesondert geprüft werden.*
 
-Beauty in China heißt: erst anmelden, dann die Werbeaussagen klären, dann um die
-Suche kämpfen. In dieser Reihenfolge. Solange die ersten beiden offen sind,
-trägt kein Inhalt. Wir haben gute Launches um ein Quartal rutschen sehen,
-weil erst nach der Textfreigabe jemand die Verordnung gelesen hat.
+Zuerst kommt der Vertriebsweg, dann die Prüfung der Werbeaussagen und die
+Content-Planung. Die folgende Tabelle betrifft reguläre Importe. Daraus folgt
+kein pauschales Verbot, ein nicht angemeldetes Produkt zu erwähnen.
 
 | Hürde | Wer zustimmt | Was sie blockiert, solange sie offen ist |
 |---|---|---|
-| Produktanmeldung oder Registrierung | National Medical Products Administration | Den legalen Import und das Nennen des Produkts im Text |
+| Produktanmeldung oder Registrierung | National Medical Products Administration | Die Zulassung zum regulären Import |
 | Inländischer Verantwortlicher | Sie benennen ihn, die Aufsicht trägt ihn ein | Die Anmeldung selbst |
 | Nachweis der Werbeaussage | Sie, veröffentlicht auf der Seite der Aufsicht | Jede Wirkaussage in jedem Beitrag |
 | Verifizierte Konten und Shop | Xiaohongshu, Douyin, WeChat | Bezahlte Reichweite, den Shop, Creator-Briefings |
@@ -67,11 +66,11 @@ Und sie kommen mit einer Frage, nicht mit einer Stimmung.
 > sie öffnen die App etwa 16 Mal am Tag.
 > Source: Xiaohongshu 2026 WILL conference, reported by 100EC (网经社), December 2025. https://www.100ec.cn/detail--6655530.html
 
-Das dreht die Rechnung um. Ein Kampagnenbeitrag hält etwa drei Tage. Eine Note, die auf Chinesisch für „Sonnenschutz für empfindliche Haut“
-rankt, trägt ein Jahr lang, weil die nächste Käuferin dieselben Wörter in
-dasselbe Feld tippt. Bauen Sie das Budget also um Suchbegriffe herum auf, nicht
-um Kampagnentermine. Unsere
-[RedNote-Agenturseite](/de/rednote-agentur/) behandelt die Plattform in der
+Richten Sie das Budget an relevanten Suchfragen aus. Messen Sie, wie lange jede
+Note qualifizierte Besuche bringt. Eine feste Wirkungsdauer für
+Kampagnenbeiträge oder gut platzierte Notes ist hier nicht belegt.
+
+Unsere [RedNote-Agenturseite](/de/rednote-agentur/) behandelt die Plattform in der
 Praxis, und unser Leitfaden zum
 [Xiaohongshu-Marketing für ausländische Marken](/de/analysen/xiaohongshu-marketing-foreign-brands/)
 erklärt den Kontoaufbau darunter.
@@ -86,7 +85,14 @@ Zeitplan.
 > Wirkaussage sind Spezialkosmetika. Alles andere ist gewöhnlich.
 > Source: State Council, Cosmetics Supervision and Administration Regulation (化妆品监督管理条例), Order 727, Article 16, in force January 2021. https://www.gov.cn/zhengce/content/2020-06/29/content_5522593.htm
 
-Spezialkosmetika müssen bei der National Medical Products Administration
+Die folgenden Anmelde- und Registrierungspflichten betreffen reguläre Importe.
+Für zulässige grenzüberschreitende Einzelhandelsimporte zum Eigenbedarf gilt ein
+gesonderter Rahmen.
+
+> Zulässige grenzüberschreitende Einzelhandelsimporte sind von Genehmigungs-, Anmelde- oder Registrierungspflichten für die erstmalige Einfuhr ausgenommen. Sie dienen dem Eigenbedarf und dürfen nicht weiterverkauft werden.
+> Source: Ministry of Commerce, Notice 486, November 2018. https://cws.mofcom.gov.cn/gztz/art/2018/art_b7becbacb58a4d0d8bf17b91a168f044.html
+
+Beim regulären Import müssen Spezialkosmetika bei der National Medical Products Administration
 (国家药监局) registriert sein, bevor sie hergestellt oder eingeführt werden
 dürfen. Importierte gewöhnliche Kosmetika müssen bei derselben Behörde
 lediglich angemeldet werden. Ein aufhellendes Serum und ein Reinigungsbalsam
@@ -140,9 +146,9 @@ selbst.
 
 | Nicht schreiben | Warum es scheitert | Was stattdessen trägt |
 |---|---|---|
-| Repariert die Hautbarriere | Liest sich als medizinische Wirkung, Werberecht Art. 17 | Gemacht für Haut, die schnell reagiert |
+| Behandelt Ekzeme | Aussage zur Krankheitsbehandlung, Werberecht Art. 17 | Die medizinische Aussage streichen und kosmetische Wirkaussagen belegen |
 | Bester Sonnenschutz Japans | Superlativ ausdrücklich verboten, Werberecht Art. 9 | Der SPF-Wert und wo geprüft wurde |
-| Aufhellend, bei nicht angemeldetem Produkt | Aufhellung ist Spezialkosmetik, Verordnung Art. 16 | Textur, Finish und Anwendung, bis die Registrierung steht |
+| Aufhellende Wirkung ohne erforderliche Registrierung | Spezialkosmetika brauchen beim regulären Import eine Registrierung | Produktzulassung vor der Werbung klären; Aussagen zur Textur ersetzen keine Registrierung |
 | 97 Prozent sahen ein Ergebnis | Zitierte Daten müssen wahr und belegt sein, Werberecht Art. 11 | Dieselbe Zahl mit Panelgröße, Datum und Prüfinstitut |
 | Klinisch bewiesen, ohne Anmeldung | Die Belegzusammenfassung ist öffentlich, Verordnung Art. 22 | Der benannte Test und ein Verweis auf die veröffentlichte Zusammenfassung |
 
@@ -164,17 +170,12 @@ Creator-Marktplatz. Der hat seinen Preis.
 > Prozent im Premiummodus, der eine Bewerbung durch die Plattform ergänzt.
 > Source: Niaoge Biji (鸟哥笔记), October 2022. https://www.niaogebiji.com/article-482538-1.html
 
-Beauty trägt eine Nachweispflicht, die die meisten Kategorien nicht kennen.
+Prüfen Sie die aktuellen Kategorieanforderungen und Nachweise des Shops, bevor
+Sie Creator buchen. Eine zollrechtliche Ausnahme garantiert keine
+Plattformzulassung. Der Antrag muss zum konkreten Produkt, Verkäufer und
+Vertriebsweg passen.
 
-> Im grenzüberschreitenden Handel auf Xiaohongshu benötigen importierte
-> Kosmetika die Einfuhranmeldung, und Markenautorisierungsketten sind auf drei
-> Stufen begrenzt, bei Beauty auf zwei.
-> Source: Xiaohongshu merchant qualification requirements (小红书资质入驻要求), platform documentation, confirmed September 2026. https://picasso-static.xiaohongshu.com/test/8b3bc7324ca06fceea379177f9eed1fa/小红书资质入驻要求.pdf
-
-Zwei Stufen, speziell für Beauty. Angenommen, Ihr Produkt erreicht China über
-einen Distributor, der an ein Handelshaus verkauft, das an den Shop verkauft.
-Das sind drei. Der Shop-Antrag scheitert, und kein Creator-Budget repariert
-das. Prüfen Sie die Nachweiskette, bevor jemand einen Creator bucht.
+Enthält das Sortiment auch Nahrungsergänzungsmittel, müssen diese vor der Übernahme eines Beauty-Briefings gesondert geprüft werden. Der Leitfaden zum [Marketing für Nahrungsergänzungsmittel in China](/de/branchen/health-supplements/) erläutert die Einfuhrwege und die Grenzen für Empfehlungen in Gesundheitslebensmittelwerbung.
 
 ## Wie viele KOC-Beiträge ein Launch wirklich braucht
 
@@ -198,12 +199,8 @@ sind Ihre eigenen: Ihre Begriffe, wie umkämpft jeder ist, Ihr Budget. Zwei
 Marken derselben Unterkategorie können um den Faktor drei auseinanderliegen und
 beide richtig liegen.
 
-Creator-Honorare bewegen die Summe stärker als das Volumen.
-
-> Nano-KOC-Konten mit 1.000 bis 5.000 Followern liegen bei etwa 20 bis 60
-> US-Dollar je Beitrag, während Micro-KOL-Arbeit unter einer Million Followern
-> bei etwa 10.000 bis 35.000 US-Dollar je Kampagne liegt.
-> Source: Long Advisory, June 2026. https://longadvisory.eu/en/kol-vs-koc-marketing-in-china-which-delivers-better-roi/
+Creator-Honorare hängen vom Briefing, den Nutzungsrechten und der Verbreitung
+ab. Holen Sie auf dieser Grundlage aufgeschlüsselte Angebote ein.
 
 Unsere [Seite zum Influencer-Marketing](/de/leistungen/influencer-marketing/)
 beschreibt, wie Briefings, Kennzeichnung und Nutzungsrechte gehandhabt werden.
@@ -225,11 +222,9 @@ verkaufen, sind genau die, die Artikel 17 des Werberechts verbietet. Ein Host,
 der sagt, ein Serum behandle Akne, hat Ihre Marke gerade zum Werbetreibenden
 hinter einer unzulässigen Aussage gemacht.
 
-Die Verifizierung kostet fast nichts. Das richtige Skript kostet.
-
-> Die Unternehmensverifizierung bei Douyin kostet 600 Yuan im ersten Jahr und
-> 120 Yuan jährlich zur Verlängerung, die Prüfung dauert etwa zwei Werktage.
-> Source: Ocean Engine (巨量引擎), Douyin enterprise account FAQ, May 2022. https://www.oceanengine.com/faq/douyin-qyh-zmrzn.html
+Prüfen Sie vor dem Start den Kontoantrag und die aktuellen
+Verifizierungsbedingungen. Eine Kontoverifizierung ist keine Freigabe des
+Werbeskripts.
 
 Live Commerce rechnet sich für Beauty-Marken, wenn drei Dinge bereits stehen:
 ein Shop, der die Bestellung annehmen kann, genug Suchabdeckung, damit

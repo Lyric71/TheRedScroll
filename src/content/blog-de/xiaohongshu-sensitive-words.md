@@ -1,9 +1,10 @@
 ---
 title: "Verbotene Wörter auf Xiaohongshu: was Beiträge unsichtbar macht und wie Sie es besser formulieren"
-description: "Sechs Arten von Formulierungen genügen, damit Markenbeiträge verschwinden. Die meisten Grenzen zieht das chinesische Recht, nicht die App, und für jede gibt es eine unbedenkliche Alternative."
+description: "Sechs Arten von Aussagen gefährden Markenbeiträge. Chinesisches Recht und Plattformregeln setzen Grenzen. Manche Aussagen müssen vollständig entfallen."
 metaTitle: "Xiaohongshu: Wörter, die Beiträge unsichtbar machen"
 metaDescription: "Superlative, Heilversprechen, WeChat-Kontakte: welche Formulierungen Xiaohongshu-Beiträge drosseln oder löschen, welche Regel greift und was hilft."
 publishDate: 2026-10-01
+updatedDate: 2026-10-25
 author: "TheRedScroll"
 platforms: ["rednote"]
 category: "Plattformen"
@@ -82,7 +83,10 @@ Für Kosmetik kommt eine eigene Vorschrift hinzu.
 > Kosmetikwerbung darf eine medizinische Wirkung weder behaupten noch nahelegen und darf weder unwahr noch irreführend sein.
 > Quelle: Staatsrat (国务院), Verordnung über die Aufsicht und Verwaltung von Kosmetika, Verordnung Nr. 727, Artikel 43, in Kraft seit Januar 2021. https://www.gov.cn/zhengce/content/2020-06/29/content_5522593.htm
 
-Werbung für Gesundheitslebensmittel (保健食品) darf weder eine Wirkung zusichern noch Krankheiten erwähnen (Artikel 18). Auch die Nachsicht bei Superlativen endet an dieser Stelle. Laut der Leitlinie von 2023 gelten absolute Wirkversprechen für Arzneimittel, ästhetische Medizin (医疗美容) oder Gesundheitslebensmittel in aller Regel nicht als geringfügig.
+> Bei Gesundheitslebensmitteln (保健食品) sind Garantien für Wirkung oder Sicherheit, Aussagen zur Krankheitsvorbeugung oder -behandlung und Empfehlungen durch Werbeträger verboten.
+> Quelle: Werbegesetz, Artikel 2 und 18, geändert im April 2021. https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2023/art_5474cf75173c45d6a0379730fb4e8d97.html
+
+Laut der Leitlinie von 2023 gelten absolute Wirkversprechen für Arzneimittel, ästhetische Medizin (医疗美容) oder Gesundheitslebensmittel zudem in der Regel nicht als geringfügig.
 
 Wie wenig es braucht, zeigt ein einziger Fall.
 
@@ -90,6 +94,8 @@ Wie wenig es braucht, zeigt ein einziger Fall.
 > Quelle: Caijing (财经), März 2023. https://www.mycaijing.com/article/detail/488674
 
 Typische Auslöser sind „behandeln“ (治疗), „heilen“ (治愈), „entzündungshemmend“ (消炎) und „wirkt garantiert“ (100%有效). Beschreiben Sie stattdessen Textur und Inhaltsstoffe. Wer für ein Kosmetikprodukt eine Wirkung reklamiert, braucht wissenschaftliche Belege und muss eine Zusammenfassung davon veröffentlichen (Verordnung Nr. 727, Artikel 22).
+
+Unser Leitfaden zum [Marketing für Nahrungsergänzungsmittel](/de/branchen/health-supplements/) trennt Registrierung, Anmeldung und grenzüberschreitende Einfuhr von der Werbeerlaubnis. Er erläutert auch, warum eine persönliche Creator-Empfehlung trotz Werbekennzeichnung verboten bleiben kann.
 
 ## Preise, Renditeversprechen und Zahlungen an der App vorbei
 
@@ -145,16 +151,16 @@ Für Werbung gilt ein zusätzliches Verbot: Artikel 9 des Werbegesetzes (广告�
 
 ## Alternativen zu verbotenen Wörtern auf Xiaohongshu: die Umformulierungstabelle
 
-Halten Sie diese Tabelle griffbereit, wenn Sie für Xiaohongshu (小红书) schreiben. Steht die Alternative auf Chinesisch, können Sie sie so veröffentlichen. Steht sie auf Deutsch, beschreibt sie, was Sie schreiben sollten.
+Die Tabelle hilft bei der Überarbeitung, enthält aber keine freigegebenen Anzeigentexte. Prüfen Sie Produktkategorie, Belege und erforderliche Genehmigungen vor der Verwendung. Eine verbotene Aussage wird durch andere Wörter nicht zulässig.
 
-| Riskante Formulierung | Das Problem | Unbedenkliche Alternative |
+| Riskante Formulierung | Das Problem | Zu prüfende Überarbeitung |
 |---|---|---|
 | 全网最好用的面霜 (die beste Gesichtscreme im Netz) | Superlativ, Artikel 9 | 比我们上一代更滋润 (reichhaltiger als unsere bisherige Rezeptur) |
 | 行业第一 (Nummer eins der Branche) | Gleichbedeutend mit „der Beste“ und schwer zu belegen | Meistverkauft in unserem Shop im August 2026, mit hinterlegten Zahlen |
 | 国家级品质 (Qualität auf staatlichem Niveau) | In Artikel 9 ausdrücklich genannt | Die erfüllte Norm oder Güteklasse und die Stelle, die sie festgelegt hat |
 | 治疗痘痘 (behandelt Akne) | Medizinische Aussage, Artikel 17 | Textur und Inhaltsstoffe statt Ergebnisse |
 | 消炎修复 (entzündungshemmend, regenerierend) | Medizinisches Vokabular | 舒缓 (beruhigend), nur mit veröffentlichten Wirksamkeitsbelegen |
-| 100%有效 (wirkt garantiert) | Unbelegte Wirkgarantie | Eigene Testergebnisse mit Stichprobengröße und Datum |
+| 100%有效 (wirkt garantiert) | Unbelegte Wirkgarantie | Garantie streichen; bei Gesundheitslebensmitteln Produktunterlagen und vorgeschriebene Werbefreigabe beachten |
 | 原价599，现价299 (statt 599 jetzt 299) | Unzulässig, wenn 599 in den letzten sieben Tagen nicht verlangt wurde | Nur der aktuelle Preis oder ein tatsächlich verlangter jüngerer Preis |
 | 稳赚不赔 (sicherer Gewinn) | Renditeversprechen, Artikel 25 | Ein klarer Hinweis auf das Risiko, ohne Versprechen |
 | 比某品牌好用多了 (viel besser als Marke X) | Herabsetzung, Artikel 13 | Ein Vergleich mit dem eigenen Vorgängerprodukt |
