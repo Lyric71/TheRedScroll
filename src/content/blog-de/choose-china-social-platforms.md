@@ -4,7 +4,7 @@ description: "Drei Plattformen statt einer. WeChat bildet für fast jede Marke d
 metaTitle: "Social Media in China: die ersten drei Plattformen wählen"
 metaDescription: "Ein Punkteraster für Chinas soziale Plattformen: vier Fragen zu Auffindbarkeit, Preisniveau, Vertriebsweg und Käufertyp, dazu vier typische Kombinationen."
 publishDate: 2026-10-12
-updatedDate: 2026-10-23
+updatedDate: 2026-10-24
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Strategie"
@@ -19,12 +19,14 @@ WeChat (微信) bindet die Kunden, die Sie bereits gewonnen haben. Die beiden ü
 
 | Frage | Antwort A | Spricht für | Antwort B | Spricht für |
 |---|---|---|---|---|
-| Wie finden Käufer zu Ihnen? | Sie suchen gezielt | Xiaohongshu | Sie sehen es und kaufen | Douyin, Kuaishou |
+| Wie finden Käufer zu Ihnen? | Sie suchen Verbrauchererfahrungen | Xiaohongshu | Sie sehen es und kaufen | Douyin, Kuaishou |
 | Wo liegt Ihr Preisniveau? | Premium | Xiaohongshu | Massenmarkt | Douyin, Kuaishou |
 | Wer verkauft in China? | Sie selbst, direkt | Douyin | Ein Distributor | Xiaohongshu |
 | Wer entscheidet über den Kauf? | Ein einzelner Verbraucher | Xiaohongshu, Douyin | Ein Gremium | WeChat und WeCom |
 
 Ein Punkteraster weiter unten übersetzt diese Antworten in Zahlen; das dauert rund fünf Minuten. Sämtliche Zahlen dieses Beitrags wurden im Oktober 2026 an der Quelle überprüft.
+
+Dieser Leitfaden vergleicht soziale Plattformen. Für technische Fragen und die Lieferantenprüfung hilft unser [Vergleich von Baidu-SEO und Social Media](/de/analysen/baidu-seo-vs-social-media/), Suche und Website gesondert zu beurteilen.
 
 ## Warum drei Plattformen, und nicht eine oder acht
 
@@ -66,7 +68,7 @@ Andere werden zufällig entdeckt. Niemand sucht nach einem Snack, von dem er noc
 
 Sie wissen nicht, zu welcher Gruppe Sie gehören? Geben Sie Ihre Produktkategorie in die Suchleiste von Xiaohongshu (小红书) ein. Stellen dort bereits echte Nutzer Fragen dazu, gehören Sie zur ersten.
 
-Gesuchte Produkte sind auf Xiaohongshu richtig. Für chinesische Verbraucher ist die App Suchmaschine und Bewertungsportal in einem.
+Xiaohongshu lohnt einen Suchtest, wenn Verbraucher vor dem Kauf hilfreiche Erfahrungsberichte suchen. Dieser Leitfaden vergleicht soziale Plattformen. Bei technischen Fragen oder der Lieferantensuche sind Baidu (百度) und die eigene Website gesondert zu prüfen. Sehen Sie sich die Ergebnisse für Ihre Produktkategorie an, bevor Sie das Budget verteilen.
 
 > Xiaohongshu hat die Marke von 400 Millionen monatlich aktiven Nutzern überschritten und verzeichnet 800 Millionen Suchanfragen am Tag.
 > Quelle: Trendbericht von Xiaohongshu (小红书) zu Video-Creatorn, zitiert von Beijing Business Today (北京商报), Mai 2026. https://finance.sina.com.cn/jjxw/2026-05-27/doc-inhziqxq9291575.shtml

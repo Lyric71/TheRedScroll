@@ -4,6 +4,7 @@ description: "China generative engine optimization starts with accurate Chinese 
 metaTitle: "China generative engine optimization: a guide"
 metaDescription: "China generative engine optimization: check how AI tools find sources, publish useful Chinese answers, and track accurate citations to your brand."
 publishDate: 2026-10-23
+updatedDate: 2026-10-24
 author: "TheRedScroll"
 category: "Strategy"
 platforms: ["wechat", "rednote"]
@@ -37,6 +38,8 @@ An API is a software interface developers use to request a service. Its
 settings can differ from the options shown in a consumer app.
 
 
+
+Choosing where to invest before testing AI answers? Our [Baidu SEO vs social media guide](/insights/baidu-seo-vs-social-media/) starts with buyer questions and separates website search from discovery and in-app search.
 
 ## Why China generative engine optimization needs its own checks
 

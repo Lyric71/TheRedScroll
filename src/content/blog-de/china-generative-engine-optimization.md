@@ -7,6 +7,7 @@ category: "Strategie"
 keywords: ["GEO in China","chinesische KI-Suche","Markenzitate prüfen","DeepSeek","Doubao","Qwen"]
 featuredImageAlt: "In einem Büro in Suzhou prüft eine Redakteurin Unterlagen am Laptop. Auf dem Smartphone daneben ist ein WeChat-Artikel geöffnet."
 publishDate: 2026-10-23
+updatedDate: 2026-10-24
 author: "TheRedScroll"
 platforms: ["wechat","rednote"]
 featured: false
@@ -28,6 +29,8 @@ Ein Assistent kann eine Marke nennen und dennoch einen veralteten Produktnamen o
 Die Dokumente erklären solche Unterschiede, liefern jedoch keine allgemeine Rankingformel. Vor dem Einstieg in China sollte eine Marke eine verlässliche Seite mit lokalen Fakten schaffen. Wer dort bereits verkauft, sollte zuerst die Antworten seiner Käufer untersuchen und erst dann weitere Inhalte beauftragen.
 
 Eine API ist eine Schnittstelle, über die Software einen Dienst anfordert. Entwickler können dort andere Einstellungen vorfinden als Nutzer einer gewöhnlichen App.
+
+Steht vor dem Test von KI-Antworten noch die Kanalwahl an, hilft unser [Vergleich von Baidu-SEO und Social Media](/de/analysen/baidu-seo-vs-social-media/). Er setzt bei Kaufanliegen an und unterscheidet Websuche, Entdeckung und Suche innerhalb von Apps.
 
 ## GEO in China muss an chinesischen Kaufanliegen ansetzen
 

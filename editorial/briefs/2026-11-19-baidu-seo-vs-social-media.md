@@ -27,7 +27,7 @@ They override any conflicting rule inside the skill.
 
 | Field | Value |
 |---|---|
-| Working H1 | Do you need Baidu SEO if you are already doing social? |
+| Working H1 | Baidu SEO vs social media: which comes first? |
 | Slug | `/insights/baidu-seo-vs-social-media/` |
 | Output file | `output/baidu-seo-vs-social-media.md` |
 | Primary query | `baidu seo vs social media` |
@@ -47,9 +47,9 @@ summary or conclusion section. End on the CTA.
 1. Two different demand types: searched and discovered
 2. When Baidu matters more than social
 3. When social matters more than Baidu
-4. The B2B case, where Baidu usually wins
+4. The B2B case: test technical and supplier queries, without claiming a universal Baidu advantage
 5. In-platform search: Xiaohongshu and WeChat as search engines
-6. What a minimum viable Baidu presence costs
+6. Scope and price a minimum Baidu presence; no universal minimum was verified, so use a deliverables table rather than an invented rate
 7. The website and ICP filing question
 8. How to decide in one afternoon
 
@@ -73,7 +73,7 @@ Describe each of these in the handoff block at the end of the file. Do not
 embed images in body copy.
 
 - Decision table: category type, primary channel, secondary
-- Diagram: the two demand types and where each is captured
+- Table: the two demand types and where each is captured (SPEC fallback 7)
 - Feature image: a search field rendered typographically, oversized. China rule: set the scene in China and show Chinese social platforms on screen (WeChat, Xiaohongshu, Douyin or Weibo interface on a phone, laptop or studio monitor); set in a typical Chinese city, varied from article to article and not only Shanghai, only Chinese people in frame, candid normal-life photo in crisp sharp focus with legible screens (never blur, smudges or noise), no AI polish; this rule wins over the subject hint
 
 ## Tables required
@@ -97,8 +97,15 @@ Final section only. CTA label: **Book a call**
 | Field | Ceiling | Draft value |
 |---|---|---|
 | Title | 52 chars | Do You Need Baidu SEO If You Do Social? (39 chars) |
-| Meta description | 152 chars | When Baidu SEO matters more than social media in China, when it does not, the B2B exception, in-platform search, and a minimum Baidu setup. (139 chars; completed 2026-10-11 by the 07C draft run, the earlier value was cut off mid-phrase) |
+| Meta description | 152 chars | When Baidu SEO matters more than social media in China, how B2B buyers change the choice, and what a minimum search presence needs. |
 | Excerpt | 25 words | generate in the SEO iteration |
+
+Research correction, October 24, 2026: no category-wide evidence established
+that Baidu usually wins B2B. Statcounter September 2026 is measured web
+referral share, not all queries. The verified Tencent figure is historical
+2022 search growth, not 2026 daily volume. Keep metric scopes distinct.
+Chinese-language content and mainland hosting are separate decisions; apply
+the host's documented filing conditions. The source diagram is a table.
 
 The draft values above are approved. Use them unless the finished article
 makes them inaccurate, in which case rewrite within the same ceilings and note

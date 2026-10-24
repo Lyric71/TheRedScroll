@@ -4,7 +4,7 @@ description: "Pick three platforms, not one. WeChat is the base for almost every
 metaTitle: "How to Pick Your First China Platforms"
 metaDescription: "A scoring framework for choosing China social platforms: four questions on discovery, price point, sales model, and buyer type, plus four shortlists."
 publishDate: 2026-10-12
-updatedDate: 2026-10-23
+updatedDate: 2026-10-24
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Strategy"
@@ -24,7 +24,7 @@ of Xiaohongshu (小红书), Douyin (抖音), Kuaishou (快手), Bilibili (哔哩
 
 | Question                  | Answer A          | Points to           | Answer B            | Points to        |
 |---------------------------|-------------------|---------------------|---------------------|------------------|
-| How do buyers find you?   | They search first | Xiaohongshu         | They see it and buy | Douyin, Kuaishou |
+| How do buyers find you?   | They seek consumer reviews | Xiaohongshu         | They see it and buy | Douyin, Kuaishou |
 | What is your price point? | Premium           | Xiaohongshu         | Mass market         | Douyin, Kuaishou |
 | Who sells it in China?    | You, direct       | Douyin              | A distributor       | Xiaohongshu      |
 | Who signs off on the buy? | One consumer      | Xiaohongshu, Douyin | A committee         | WeChat and WeCom |
@@ -32,6 +32,8 @@ of Xiaohongshu (小红书), Douyin (抖音), Kuaishou (快手), Bilibili (哔哩
 The scoring table further down turns these answers into numbers. It takes
 about five minutes. Every figure in this article was checked against its
 source in October 2026.
+
+This guide compares social channels. For technical questions and supplier checks, use our [Baidu SEO vs social media guide](/insights/baidu-seo-vs-social-media/) to assess search and your website separately.
 
 ## Why three platforms, and not one or eight
 
@@ -95,8 +97,11 @@ Not sure which camp you're in? Type your product category into the search bar
 on Xiaohongshu (小红书). If real users are already asking about it, you're in the
 first.
 
-Searched products belong on Xiaohongshu. Chinese shoppers use it the way many
-Western shoppers use Google plus a review site.
+For consumer questions supported by useful reviews, Xiaohongshu is worth a
+search test. This guide compares social platforms. It does not replace a
+separate assessment of Baidu (百度) and your website for technical questions
+or supplier research. Check the actual results for your category before
+assigning the budget.
 
 > Xiaohongshu passed 400 million monthly active users, with 800 million
 > searches a day.

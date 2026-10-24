@@ -49,7 +49,7 @@ summary or conclusion section. End on the CTA.
 3. Ad account deposits you do not get back quickly (Xiaohongshu, Douyin and WeChat publish no minimum first deposit; cite the platforms' refund and balance rules, e.g. Tencent's advertiser agreement, never agent figures) (Amended 2026-10-02: research proved the original line wrong. See editorial/CLAUDE.md, "No TODO leaves a run".)
 4. Translation and transcreation, which is not the same as translation
 5. Trademark registration before you can verify
-6. ICP filing if you touch a website
+6. ICP filing for mainland-hosted websites; Chinese-language content alone does not trigger this hosting requirement (clarified October 24, 2026)
 7. Legal review of claims under advertising law
 8. Product sampling and shipping for KOC seeding
 9. Local phone numbers and identity verification

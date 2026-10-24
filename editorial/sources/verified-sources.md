@@ -4536,3 +4536,62 @@ All 22 entries in the 10C source-check script fetched again during publication: 
 - The Doubao English locale and one Chinese fetch returned a navigation shell. A fresh Chinese-language retry returned the full identical document and passed check 2. Future uses must inspect content, not merely HTTP 200.
 - DeepSeek December 10, 2024 API-search-unavailable statement is superseded by the October 17, 2026 release. Not used.
 - IndexNow FAQ was fetched twice as background but has no visible publication date; it is not cited. Article uses dated first-party configuration observations without inferring downstream delivery.
+
+## October 24, 2026: 11C Baidu SEO versus social media
+
+### Baidu referral share, China, September 2026
+- Value: 46.65% of measured search-engine referrals, all platforms, China.
+- Source: Statcounter Global Stats, September 2026.
+- URL: https://gs.statcounter.com/search-engine-market-share/all/china/#monthly-202609-202609-bar
+- Method URL: https://gs.statcounter.com/faq
+- Verified 1: 2026-10-24, both HTTP 200; September 2026 and 46.65% confirmed. Method measures referred page views on participating websites, not queries or users; zero-click searches are excluded.
+- Verified 2: 2026-10-24, fresh HTTP 200 for both at CreateArticle iteration 8; value and definition unchanged.
+- Evidence: logs/scratch/2026-10-24-11C/c1-statcounter.*, c2-statcounter.*, c1-methodology.*, c2-methodology.*.
+- Used in: baidu-seo-vs-social-media.
+- Notes: This cannot be compared directly with in-app query totals. The FAQ is undated supporting methodology, accessed October 24, not a separately dated release. September data may still be revised under Statcounter's 45-day policy; recheck the specified month before future reuse.
+
+### Xiaohongshu search volume, May 2026, re-verification
+- Value: 800 million daily searches. Reuses the existing May 2026 ledger entry, with its exact report attribution.
+- Source: Xiaohongshu Video Creator Trend Observation Report, reported by Beijing Business Today (北京商报), May 27, 2026.
+- URL: https://finance.sina.com.cn/jjxw/2026-05-27/doc-inhziqxq9291575.shtml
+- Verified 1: 2026-10-24, HTTP 200; 日搜索量高达8亿, report name, and May 27 date confirmed.
+- Verified 2: 2026-10-24, fresh HTTP 200 at iteration 8, byte-identical response and unchanged wording.
+- Evidence: logs/scratch/2026-10-24-11C/c1-xiaohongshu.*, c2-xiaohongshu.*.
+- Used in: baidu-seo-vs-social-media.
+- Notes: The original report was sought; no independently fetchable original located. Attribution remains platform report as reported by the named publication, not a claim of directly reviewing its PDF. No 2026 daily WeChat count inferred from this figure.
+
+### Tencent original WeChat Search handbook: historical growth
+- Value: WeChat Search query volume grew 54% year over year in 2022.
+- Source: Tencent Advertising (腾讯广告), 微信搜索营销手册, May 2023, page 5. PDF metadata created May 5, 2023; page cites 2023 WeChat Open Class PRO and explicitly labels the growth period 2022.
+- URL: https://file.tencentads.com/files/pdf/2023/5/d4b2cd8e42b4418890d0092c90fc8838.pdf
+- Verified 1: 2026-10-24, HTTP 200 direct fetch after web-tool timeout. Extracted and visually inspected page 5: 2022年微信搜一搜搜索量较上年同比增长54%.
+- Verified 2: 2026-10-24, fresh HTTP 200 at iteration 8; PDF SHA-256 4066a9bbb8ab7e3c69908d890f501e80f81e3b589b059da50491e80c685298b5 unchanged.
+- Evidence: logs/scratch/2026-10-24-11C/c1-tencent.pdf, c2-tencent.pdf, tencent-evidence.png.
+- Used in: baidu-seo-vs-social-media.
+- Notes: Historical context under fallback 9, not 2026 size or daily volume. Original platform source supplements the older press-source entry for the same 2022 disclosure.
+
+### Ordinary website hosting and ICP filing
+- Claim: Alibaba Cloud mainland nodes require filing; its Hong Kong and overseas nodes do not require that hosting filing. Chinese language alone is not a hosting-location condition.
+- Source: Alibaba Cloud (阿里云), 备案服务器检查, September 23, 2026.
+- URL: https://help.aliyun.com/zh/icp-filing/basic-icp-service/user-guide/icp-filing-server-access-information-check
+- Verified 1: 2026-10-24, HTTP 200; mainland requirement and 中国香港、海外等节点，则无需备案 confirmed. Embedded lastModifiedTime 1790148393000 is September 23, 2026.
+- Verified 2: 2026-10-24, fresh HTTP 200 at iteration 8, same rule and metadata date.
+- Evidence: logs/scratch/2026-10-24-11C/c1-aliyun.*, c2-aliyun.*.
+- Used in: baidu-seo-vs-social-media.
+- Notes: Ordinary website hosting scope only. Not an exemption from app filings, regulated-service licensing, ad destination checks, or an SEO guarantee.
+
+### MIIT filing rules, re-verification for 11C
+- Claim: Covered mainland noncommercial internet information services require filing before operating; providers may act through the access provider.
+- Source: MIIT (工业和信息化部), revised Order 33, February 2, 2024.
+- URL: https://www.miit.gov.cn/gyhxxhb/jgsj/cyzcyfgs/bmgz/xxtxl/art/2024/art_84a0cfa0ebd049bbbe751dca9a008e56.html
+- Verified 1: 2026-10-24, HTTP 200, Articles 5 and 8 and revision/publication date confirmed.
+- Verified 2: 2026-10-24, fresh HTTP 200 at iteration 8; byte-identical response.
+- Evidence: logs/scratch/2026-10-24-11C/c1-miit.*, c2-miit.*.
+- Used in: baidu-seo-vs-social-media.
+- Notes: Paired with current host guidance. Older law date retained explicitly; no ranking, ad eligibility, or universal foreign-company filing route inferred.
+
+### 11C research exclusions, October 24, 2026
+- No defensible universal organic Baidu SEO minimum established. Paid-search rates and vendor offers were excluded; the article prices a scope without fabricated market figures.
+- No category-wide evidence for Baidu usually winning B2B. Brief corrected; article offers a conditional test.
+- No comparable 2026 WeChat daily query total established. Historical Tencent growth retains its period.
+- Baidu Search Resource Platform https://ziyuan.baidu.com/doc/ fetched twice successfully; undated landing page used as background only. No login-only feature availability or ranking guarantee claimed.

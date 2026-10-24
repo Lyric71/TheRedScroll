@@ -4,7 +4,7 @@ description: "Mieux vaut trois plateformes qu’une seule. WeChat sert de socle 
 metaTitle: "Réseaux sociaux en Chine : choisir ses trois plateformes"
 metaDescription: "Une grille pour choisir vos réseaux sociaux en Chine : quatre questions sur la découverte, le prix, le mode de vente et l’acheteur, plus quatre combinaisons."
 publishDate: 2026-10-12
-updatedDate: 2026-10-23
+updatedDate: 2026-10-24
 author: "TheRedScroll"
 platforms: ["wechat", "rednote", "douyin", "weibo"]
 category: "Stratégie"
@@ -19,12 +19,14 @@ WeChat (微信) fidélise les clients gagnés. Les deux autres places reviennent
 
 | Question | Réponse A | Plateforme indiquée | Réponse B | Plateforme indiquée |
 |---|---|---|---|---|
-| Comment les acheteurs vous trouvent-ils ? | Ils commencent par chercher | Xiaohongshu | Ils voient, puis achètent | Douyin, Kuaishou |
+| Comment les acheteurs vous trouvent-ils ? | Ils cherchent des avis de consommateurs | Xiaohongshu | Ils voient, puis achètent | Douyin, Kuaishou |
 | Quel est votre niveau de prix ? | Haut de gamme | Xiaohongshu | Grande consommation | Douyin, Kuaishou |
 | Qui vend en Chine ? | Vous, en direct | Douyin | Un distributeur | Xiaohongshu |
 | Qui valide l’achat ? | Un consommateur | Xiaohongshu, Douyin | Un comité | WeChat et WeCom |
 
 Plus bas, une grille de notation convertit ces réponses en points. L’exercice prend cinq minutes environ. Tous les chiffres de cet article ont été vérifiés à la source en octobre 2026.
+
+Ce guide porte sur les réseaux sociaux. Pour les questions techniques et la vérification des fournisseurs, notre [comparatif Baidu et réseaux sociaux](/fr/decryptages/baidu-seo-vs-social-media/) aide à évaluer séparément la recherche et le site de la marque.
 
 ## Pourquoi trois plateformes, ni une ni huit
 
@@ -66,7 +68,7 @@ D’autres se découvrent par hasard. Nul ne recherche un biscuit dont il ignore
 
 Dans quel camp êtes-vous ? Saisissez votre catégorie de produit dans la barre de recherche de Xiaohongshu (小红书). Si de vrais utilisateurs s’y interrogent déjà à son sujet, vous êtes dans le premier.
 
-Les produits que l’on recherche ont leur place sur Xiaohongshu. Pour les consommateurs chinois, elle tient lieu à la fois de Google et de site d’avis.
+Xiaohongshu mérite un test lorsque les consommateurs cherchent des retours d’expérience utiles avant d’acheter. Ce guide compare les réseaux sociaux. Pour les questions techniques ou la recherche de fournisseurs, il faut aussi évaluer Baidu (百度) et le site de la marque. Examinez les résultats dans votre catégorie avant de répartir le budget.
 
 > Xiaohongshu a franchi le cap des 400 millions d’utilisateurs actifs mensuels, avec 800 millions de recherches quotidiennes.
 > Source : rapport de Xiaohongshu (小红书) sur les tendances des créateurs vidéo, cité par Beijing Business Today (北京商报), mai 2026. https://finance.sina.com.cn/jjxw/2026-05-27/doc-inhziqxq9291575.shtml

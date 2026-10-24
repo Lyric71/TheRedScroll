@@ -7,6 +7,7 @@ category: "Stratégie"
 keywords: ["GEO en Chine","sources des IA chinoises","citations de marque","DeepSeek","Doubao","Qwen"]
 featuredImageAlt: "À Suzhou, une éditrice vérifie des documents sur son ordinateur, à côté d’un téléphone ouvert sur un article WeChat."
 publishDate: 2026-10-23
+updatedDate: 2026-10-24
 author: "TheRedScroll"
 platforms: ["wechat","rednote"]
 featured: false
@@ -28,6 +29,8 @@ Voir apparaître sa marque ne suffit pas. L’assistant peut reprendre une ancie
 La documentation permet de distinguer ces fonctions, pas de calculer un classement. Une marque qui prépare son arrivée en Chine gagnera d’abord à établir une page de référence locale fiable. Une marque déjà implantée doit examiner les réponses reçues par ses acheteurs avant d’étoffer son calendrier éditorial.
 
 Une API permet à un logiciel de demander un service. Les développeurs peuvent y trouver des réglages absents de l’application grand public.
+
+Avant de tester les réponses d’IA, il faut parfois décider où investir. Notre [comparatif Baidu et réseaux sociaux](/fr/decryptages/baidu-seo-vs-social-media/) part des questions d’achat et distingue recherche web, découverte et recherche dans les applications.
 
 ## Le GEO en Chine se vérifie sur les usages locaux
 
